@@ -190,12 +190,13 @@ $kendo-stepper-optional-label-font-style: italic !default;
 /// @group stepper
 $kendo-stepper-progressbar-size: map.get( $kendo-spacing, 0.5 ) !default;
 
-/// The property name of the stepper transition.
-/// @group stepper
+/// @deprecated Use `$kendo-stepper-content-transition` instead.
 $kendo-stepper-content-transition-property: none !default;
-/// The duration of the stepper transition.
-/// @group stepper
+/// @deprecated Use `$kendo-stepper-content-transition` instead.
 $kendo-stepper-content-transition-duration: 300ms !default;
-/// The timing funtion of the stepper transition.
-/// @group stepper
+/// @deprecated Use `$kendo-stepper-content-transition` instead.
 $kendo-stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms !default;
+
+/// The transition of the stepper content.
+/// @group stepper
+$kendo-stepper-content-transition: k-motion(medium-2, ease-in-out, none) !default;

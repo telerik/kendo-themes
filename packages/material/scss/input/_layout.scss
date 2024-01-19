@@ -80,7 +80,7 @@
             inset: -1px;
             opacity: 0;
             transform: scaleX(0);
-            transition: opacity .3s, transform .3s;
+            @include kendo-motion(medium-2, ease, opacity, transform);
             pointer-events: none;
         }
 

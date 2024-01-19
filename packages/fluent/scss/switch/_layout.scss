@@ -73,7 +73,7 @@
         flex-flow: row nowrap;
         flex: 1 0 auto;
         position: relative;
-        transition: all 100ms ease-in-out;
+        @include kendo-motion(short-2, ease-in-out, all);
     }
 
 
@@ -83,7 +83,7 @@
         height: 0;
         overflow: visible;
         position: absolute;
-        transition: inset-inline-start 100ms ease-in-out;
+        @include kendo-motion(short-2, ease-in-out, inset-inline-start);
         top: 50%;
     }
     .k-switch-thumb {
@@ -94,7 +94,7 @@
         display: block;
         position: absolute;
         transform: translate( -50%, -50% );
-        transition: all 100ms ease-in-out;
+        @include kendo-motion(short-2, ease-in-out, all);
     }
 
 

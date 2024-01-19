@@ -45,8 +45,6 @@ $kendo-letter-spacing: normal !default;
 
 // $kendo-scrollbar-width: 17px !default;
 
-// Default transition
-$kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out, opacity .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out !default;
 
 @mixin core-styles() {
     :root {
@@ -71,7 +69,5 @@ $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, bord
 
         --kendo-letter-spacing: #{$kendo-letter-spacing};
 
-
-        --kendo-transition: #{$kendo-transition};
     }
 }

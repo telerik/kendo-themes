@@ -47,7 +47,7 @@
         position: relative;
         overflow: hidden;
         outline: 0;
-        transition: color 200ms ease-out 0s;
+        @include kendo-motion(short-4, ease-out, color);
 
         * {
             pointer-events: none;

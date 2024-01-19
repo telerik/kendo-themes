@@ -172,6 +172,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-transition</td>
+    <td>List</td>
+    <td><code>k-motion(short-4, ease-in-out, color, background-color, border-color, box-shadow)</code></td>
+    <td><code>color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), background-color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), border-color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), box-shadow var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transition used across all components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -228,6 +238,56 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.<br /> @group list</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-transition-duration</td>
+    <td>Number</td>
+    <td><code>.3s</code></td>
+    <td><code>0.3s</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-scrollview-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-transition-timing-function</td>
+    <td>String</td>
+    <td><code>ease-in-out</code></td>
+    <td><code>ease-in-out</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-scrollview-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-property</td>
+    <td>String</td>
+    <td><code>height</code></td>
+    <td><code>height</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-duration</td>
+    <td>Number</td>
+    <td><code>300ms</code></td>
+    <td><code>300ms</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-timing-function</td>
+    <td>List</td>
+    <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
+    <td><code>cubic-bezier(0.4, 0, 0.2, 1) 0ms</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
     </td>
 </tr>
 </tbody>
@@ -2256,8 +2316,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-transition</td>
     <td>List</td>
-    <td><code>box-shadow 280ms cubic-bezier( .4, 0, .2, 1 )</code></td>
-    <td><code>box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)</code></td>
+    <td><code>k-motion(medium-2, ease-in-out, box-shadow)</code></td>
+    <td><code>(box-shadow var(--kendo-global-duration, var(--kendo-motion-medium-2, 0.3s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)),)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box-shadow transition of the Button.</div></div>
@@ -7522,8 +7582,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-floating-label-transition</td>
     <td>List</td>
-    <td><code>.15s cubic-bezier( .4, 0, .2, 1 )</code></td>
-    <td><code>0.15s cubic-bezier(0.4, 0, 0.2, 1)</code></td>
+    <td><code>k-motion(short-3, ease-in-out, transform, color, top, inset-inline-start)</code></td>
+    <td><code>transform var(--kendo-global-duration, var(--kendo-motion-short-3, 0.15s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), color var(--kendo-global-duration, var(--kendo-motion-short-3, 0.15s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), top var(--kendo-global-duration, var(--kendo-motion-short-3, 0.15s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), inset-inline-start var(--kendo-global-duration, var(--kendo-motion-short-3, 0.15s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Floating Label.</div></div>
@@ -14193,23 +14253,13 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-transition-duration</td>
-    <td>Number</td>
-    <td><code>.3s</code></td>
-    <td><code>0.3s</code></td>
+    <td>$kendo-scrollview-transition</td>
+    <td>List</td>
+    <td><code>k-motion( medium-2, ease-in-out, all )</code></td>
+    <td><code>(all var(--kendo-global-duration, var(--kendo-motion-medium-2, 0.3s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)),)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the ScrollView transition.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-transition-timing-function</td>
-    <td>String</td>
-    <td><code>ease-in-out</code></td>
-    <td><code>ease-in-out</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the ScrollView transition.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the ScrollView.</div></div>
     </td>
 </tr>
 </tbody>

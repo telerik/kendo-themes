@@ -95,6 +95,6 @@
 
     .k-circular-progressbar-arc {
         stroke: var( --kendo-circular-progressbar-arc-stroke, #{$kendo-circular-progressbar-arc-stroke} );
-        transition: stroke .5s ease;
+        @include kendo-motion(long-2, ease, stroke);
     }
 }

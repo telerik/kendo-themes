@@ -6,7 +6,7 @@
     // Datetime selector
     .k-datetime-selector {
         display: flex;
-        transition: transform .2s;
+        @include kendo-motion(short-4, ease-in, transform);
     }
 
     // Wrap

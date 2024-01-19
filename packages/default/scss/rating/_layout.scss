@@ -41,7 +41,7 @@
             margin: 0;
             outline: 0;
             overflow: hidden;
-            transition: color 200ms ease-out 0s;
+            @include kendo-motion(short-4, ease-out, color);
 
             * {
                 pointer-events: none;

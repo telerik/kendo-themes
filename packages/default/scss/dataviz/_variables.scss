@@ -111,7 +111,7 @@ $kendo-chart-area-opacity: .6 !default;
 $kendo-chart-area-inactive-opacity: .1 !default;
 $kendo-chart-line-inactive-opacity: .3 !default;
 
-$kendo-chart-tooltip-transition: left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1) !default;
+$kendo-chart-tooltip-transition: k-motion(medium-2, decelerate-out, left, top) !default;
 
 $kendo-chart-bg: $kendo-component-bg !default;
 $kendo-chart-text: $kendo-component-text !default;

@@ -71,9 +71,7 @@
             position: relative;
             z-index: 1;
             overflow: visible;
-            transition-property: color, background-color, border-color;
-            transition-duration: .4s;
-            transition-timing-function: ease-in-out;
+            @include kendo-motion(medium-4, ease-in-out, color, background-color, border-color);
 
             &::before {
                 @include border-radius( var( --kendo-stepper-indicator-border-radius, #{$kendo-stepper-indicator-border-radius} ) );
@@ -110,7 +108,7 @@
         .k-step.k-disabled {
             .k-step-indicator {
                 border: 0;
-                
+
                 &::after {
                     display: none;
                 }
@@ -251,7 +249,7 @@
         .k-step-content {
             height: 0;
             overflow: hidden;
-            transition: $kendo-stepper-content-transition-property $kendo-stepper-content-transition-duration $kendo-stepper-content-transition-timing-function;
+            transition: $kendo-stepper-content-transition;
         }
 
         .k-step-current .k-step-content {

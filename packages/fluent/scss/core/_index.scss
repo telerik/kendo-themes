@@ -7,6 +7,10 @@
 @use "./elevation" as *;
 @forward "./elevation/legacy";
 
+// Motion
+@use "./motion" as *;
+@forward "./motion/legacy";
+
 // Variables
 @forward "./variables";
 

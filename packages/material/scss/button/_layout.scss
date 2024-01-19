@@ -12,7 +12,7 @@
 
         &::before {
             display: block;
-            transition: opacity .4s cubic-bezier( .25, .8, .25, 1 );
+            transition: opacity var(--kendo-motion-medium-4, .4s) cubic-bezier( .25, .8, .25, 1 );
         }
         &::after {
             display: none !important; // stylelint-disable-line declaration-no-important

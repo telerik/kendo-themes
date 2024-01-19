@@ -88,9 +88,11 @@ $kendo-scrollview-pager-light-bg: rgba( $kendo-color-white, .4 ) !default;
 /// @group scrollview
 $kendo-scrollview-pager-dark-bg: rgba( $kendo-color-black, .4 ) !default;
 
-/// The duration of the ScrollView transition.
-/// @group scrollview
+/// @deprecated Use `$kendo-scrollview-transition` instead.
 $kendo-scrollview-transition-duration: .3s !default;
-/// The timing function of the ScrollView transition.
-/// @group scrollview
+/// @deprecated Use `$kendo-scrollview-transition` instead.
 $kendo-scrollview-transition-timing-function: ease-in-out !default;
+
+/// The transition of the ScrollView.
+/// @group scrollview
+$kendo-scrollview-transition: k-motion( medium-2, ease-in-out, all ) !default;

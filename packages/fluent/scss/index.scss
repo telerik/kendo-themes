@@ -343,6 +343,9 @@
     @include kendo-elevation--styles();
     @include elevation--styles-legacy();
 
+    // Motion
+    @include kendo-motion--styles();
+
     // Typography and utils
     @include typography-styles();
     @include utils-styles();

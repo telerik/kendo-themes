@@ -109,7 +109,7 @@
             max-width: 100%;
             margin: var( --kendo-chat-bubble-spacing, #{ $kendo-chat-bubble-spacing } ) 0 0;
             position: relative;
-            transition: margin .2s ease-in-out;
+            @include kendo-motion(short-4, ease-in-out, margin);
             outline: none;
         }
 
@@ -127,14 +127,14 @@
             opacity: 0;
             top: 50%;
             transform: translateY(-50%);
-            transition: opacity .2s ease-in-out;
+            @include kendo-motion(short-4, ease-in-out, opacity);
         }
         .k-message-status {
             margin-block-start: var( --kendo-chat-bubble-spacing, #{ $kendo-chat-bubble-spacing } );
             height: 0;
             overflow: hidden;
             top: 100%;
-            transition: height .2s ease-in-out;
+            @include kendo-motion(short-4, ease-in-out, height);
         }
 
 
@@ -236,9 +236,7 @@
         user-select: none;
         display: inline-block;
         flex: 0 0 auto;
-        transition-property: color, background-color, border-color;
-        transition-duration: .2s;
-        transition-timing-function: ease-in-out;
+        @include kendo-motion(short-4, ease-in-out, color, background-color, border-color);
         outline: none;
     }
 

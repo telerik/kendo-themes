@@ -633,7 +633,7 @@ The following table lists the available variables for customization.
     <td>$kendo-button-transition</td>
     <td>List</td>
     <td><code>$kendo-transition</code></td>
-    <td><code>color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out</code></td>
+    <td><code>color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), background-color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), border-color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), box-shadow var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transition of the Button.</div></div>

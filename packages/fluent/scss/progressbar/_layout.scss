@@ -226,7 +226,7 @@
 
         > .k-progressbar-value,
         > .k-progressbar-value > .k-progress-status-wrap {
-            transition: width .1s ease-in-out;
+            @include kendo-motion(short-2, ease-in-out, width);
         }
     }
 

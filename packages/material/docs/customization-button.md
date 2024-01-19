@@ -632,8 +632,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-transition</td>
     <td>List</td>
-    <td><code>box-shadow 280ms cubic-bezier( .4, 0, .2, 1 )</code></td>
-    <td><code>box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)</code></td>
+    <td><code>k-motion(medium-2, ease-in-out, box-shadow)</code></td>
+    <td><code>(box-shadow var(--kendo-global-duration, var(--kendo-motion-medium-2, 0.3s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)),)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box-shadow transition of the Button.</div></div>

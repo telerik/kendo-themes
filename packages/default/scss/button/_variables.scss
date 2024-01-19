@@ -254,4 +254,4 @@ $kendo-flat-button-focus-ring-opacity: .12 !default;
 
 /// The color transition of the flat Button.
 /// @group button
-$kendo-button-transition: color .2s ease-in-out !default;
+$kendo-button-transition: k-motion(short-4, ease-in-out, color) !default;

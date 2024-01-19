@@ -203,7 +203,7 @@
                 margin-block: calc( var( --kendo-timeline-icon-spacing, #{ $kendo-timeline-icon-spacing } ) * -1);
                 margin-inline: 0;
                 transform: rotate(90deg);
-                transition: transform .2s ease-in-out;
+                @include kendo-motion(short-4, ease-in-out, transform);
             }
 
             &.k-collapsed {
@@ -355,7 +355,7 @@
                 z-index: 2;
 
                 .k-timeline-scrollable-wrap {
-                    transition: transform 1s ease-in-out;
+                    @include kendo-motion(extra-long-4, ease-in-out, transform);
                 }
             }
 
