@@ -3057,6 +3057,596 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Chat
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-chat-padding-x</td>
+    <td>Number</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-padding-y</td>
+    <td>Number</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-width</td>
+    <td>Number</td>
+    <td><code>500px</code></td>
+    <td><code>500px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-height</td>
+    <td>Number</td>
+    <td><code>600px</code></td>
+    <td><code>600px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-item-spacing-x</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing between the items of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-item-spacing-y</td>
+    <td>Number</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing between the items of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-list-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-chat-padding-x</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat message list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-list-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-chat-padding-y</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat message list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-list-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-chat-item-spacing-y</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat message list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-timestamp-font-size</td>
+    <td>String</td>
+    <td><code>smaller</code></td>
+    <td><code>smaller</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat timestamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-timestamp-line-height</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat timestamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-timestamp-transform</td>
+    <td>String</td>
+    <td><code>uppercase</code></td>
+    <td><code>uppercase</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the Chat timestamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-timestamp-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: #6c757d"></span><code>#6c757d</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat timestamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-timestamp-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat timestamp.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-padding-x</td>
+    <td>Number</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat bubble message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-padding-y</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat bubble message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-spacing</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat bubble message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-line-height</td>
+    <td>Number</td>
+    <td><code>1.25</code></td>
+    <td><code>1.25</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat bubble message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-border-radius</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chat bubble message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-border-radius-sm</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chat small bubble message</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-avatar-size</td>
+    <td>Number</td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Chat Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-avatar-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-chat-item-spacing-x</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat Avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-toolbar-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-toolbar-md-padding-x</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-toolbar-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-toolbar-md-padding-y</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-toolbar-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-toolbar-md-spacing</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-toolbar-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-toolbar-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-toolbar-text</td>
+    <td>Color</td>
+    <td><code>$kendo-toolbar-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-toolbar-border</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-padding-x</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-padding-y</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-spacing</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-chat-bubble-line-height</code></td>
+    <td><code>1.25</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-app-bg</code></td>
+    <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-text</td>
+    <td>Color</td>
+    <td><code>$kendo-app-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-border</td>
+    <td>Color</td>
+    <td><code>$kendo-app-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-button-bg</code></td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span><code>#e4e7eb</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-text</td>
+    <td>Color</td>
+    <td><code>$kendo-button-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-border</td>
+    <td>Color</td>
+    <td><code>$kendo-chat-bubble-bg</code></td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span><code>#e4e7eb</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Chat bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-hover-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Chat bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-bubble-selected-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Chat bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat alt bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-text</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-chat-alt-bubble-bg ))</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat alt bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-border</td>
+    <td>Color</td>
+    <td><code>$kendo-chat-alt-bubble-bg</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat alt bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Chat alt bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-hover-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Chat alt bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-alt-bubble-selected-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Chat alt bubble.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-bg</td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-border</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-hover-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-hover-border</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Chat quick reply.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Checkbox
 
 <table class="theme-variables">
@@ -11087,6 +11677,466 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Orgchart
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-orgchart-spacer</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 6 )</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing index of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-spacer</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-padding-y</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-gap</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-spacer</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-group-gap</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-spacer</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-container-gap</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-spacer</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-spacer</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-node-group-padding-y</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-border-radius</td>
+    <td>Number</td>
+    <td><code>$kendo-border-radius-md</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-base-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-text</td>
+    <td>Color</td>
+    <td><code>$kendo-base-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-border</td>
+    <td>Color</td>
+    <td><code>$kendo-base-border</code></td>
+    <td><span class="color-preview" style="background-color: #e4e5e6"></span><code>#e4e5e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-focus-border</td>
+    <td>Null</td>
+    <td><code>$kendo-card-focus-border</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-focus-shadow</td>
+    <td>String</td>
+    <td><code>$kendo-card-focus-shadow</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 4px 10px rgba(0, 0, 0, 0.1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-title-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-lg</code></td>
+    <td><code>1.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-title-margin-bottom</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-orgchart-spacer, 4 )</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart node group title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-title-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-sm</code></td>
+    <td><code>1.25</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-subtitle-margin-bottom</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-spacer</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart node group subtitle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-subtitle-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group subtitle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-node-group-subtitle-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: #6c757d"></span><code>#6c757d</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-width</td>
+    <td>Number</td>
+    <td><code>300px</code></td>
+    <td><code>300px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the OrgChart Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-card-padding-y</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-orgchart-card-padding-y</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-border-width</td>
+    <td>Number</td>
+    <td><code>$kendo-card-border-width</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-shadow</td>
+    <td>Null</td>
+    <td><code>$kendo-card-shadow</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the OrgChart Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-focus-shadow</td>
+    <td>String</td>
+    <td><code>$kendo-card-focus-shadow</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 4px 10px rgba(0, 0, 0, 0.1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-title-margin-bottom</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart Card title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-title-font-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart Card title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-subtitle-margin-bottom</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart Card subtitle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-subtitle-font-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart Card subtitle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-body-border-width</td>
+    <td>List</td>
+    <td><code>2px 0 0</code></td>
+    <td><code>2px 0 0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart Card body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-body-border-color</td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart Card body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-body-vbox-margin-right</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-orgchart-spacer, 2 )</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The right margin of the OrgChart Card body title wrap.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-card-body-vbox-min-height</td>
+    <td>Number</td>
+    <td><code>$kendo-card-avatar-size</code></td>
+    <td><code>45px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min height of the OrgChart Card body title wrap.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-line-size</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the OrgChart connecting line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-line-fill</td>
+    <td>Color</td>
+    <td><code>$kendo-base-border</code></td>
+    <td><span class="color-preview" style="background-color: #e4e5e6"></span><code>#e4e5e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fill color of the OrgChart connecting line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-orgchart-line-v-height</td>
+    <td>Number</td>
+    <td><code>25px</code></td>
+    <td><code>25px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the OrgChart connecting line.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Pager
 
 <table class="theme-variables">
@@ -14435,6 +15485,916 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Splitter
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-splitter-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-splitbar-size</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-drag-handle-length</td>
+    <td>Number</td>
+    <td><code>20px</code></td>
+    <td><code>20px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The length of the Splitter drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-drag-handle-thickness</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thickness of the Splitter drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-drag-icon-margin</td>
+    <td>Number</td>
+    <td><code>7px</code></td>
+    <td><code>7px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Splitter drag handle icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-collapse-icon-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the collapse icon in the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-collapse-icon-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, .5 )</code></td>
+    <td><code>0.125rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the collapse icon in the Splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-base-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Splitter split bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-text</td>
+    <td>Color</td>
+    <td><code>$kendo-base-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Splitter split bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-hover-bg</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-shade( $kendo-splitbar-bg, .5 ))</code></td>
+    <td><span class="color-preview" style="background-color: #eeeff0"></span><code>#eeeff0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the Splitter split bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-splitbar-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the Splitter split bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-selected-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-selected-bg</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the Splitter split bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-selected-text</td>
+    <td>Color</td>
+    <td><code>$kendo-selected-text</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the Splitter split bar.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Stepper
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-stepper-margin-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin the Stepper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-margin-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin the Stepper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding the Stepper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding the Stepper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-margin-x</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-padding-x</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-padding-y</td>
+    <td>Number</td>
+    <td><code>5px</code></td>
+    <td><code>5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-border-width</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Stepper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-inline-content-padding-x</td>
+    <td>Number</td>
+    <td><code>20px</code></td>
+    <td><code>20px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Stepper content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-inline-content-padding-y</td>
+    <td>Number</td>
+    <td><code>10px</code></td>
+    <td><code>10px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Stepper content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-width</td>
+    <td>Number</td>
+    <td><code>28px</code></td>
+    <td><code>28px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-height</td>
+    <td>Number</td>
+    <td><code>$kendo-stepper-indicator-width</code></td>
+    <td><code>28px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-border-radius</td>
+    <td>Number</td>
+    <td><code>50%</code></td>
+    <td><code>50%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-focus-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the focused Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-focus-size</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the focused Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-focus-offset</td>
+    <td>Number</td>
+    <td><code>3px</code></td>
+    <td><code>3px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Stepper's focused indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-focus-calc-offset</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} )</code></td>
+    <td><code>calc(1px + 3px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated offset of the Stepper's focused indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-hover-bg</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-stepper-indicator-bg ))</code></td>
+    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-hover-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-disabled-text</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), $kendo-disabled-text)</code></td>
+    <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Stepper indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-text</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-stepper-indicator-done-bg ))</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-border</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-bg</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-hover-bg</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-stepper-indicator-done-bg ))</code></td>
+    <td><span class="color-preview" style="background-color: #0c65e9"></span><code>#0c65e9</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's hovered done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's hovered done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-hover-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's hovered done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-disabled-bg</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .6 ), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
+    <td><span class="color-preview" style="background-color: #6ea8fe"></span><code>#6ea8fe</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's disabled done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-disabled-text</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-stepper-indicator-done-bg ))</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-done-disabled-border</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-disabled-bg</code></td>
+    <td><span class="color-preview" style="background-color: #6ea8fe"></span><code>#6ea8fe</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled done indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-bg</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-text</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-text</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-border</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-border</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-hover-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-hover-bg</code></td>
+    <td><span class="color-preview" style="background-color: #0c65e9"></span><code>#0c65e9</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's hovered current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-hover-text</td>
+    <td>Null</td>
+    <td><code>$kendo-stepper-indicator-done-hover-text</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's hovered current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-hover-border</td>
+    <td>Null</td>
+    <td><code>$kendo-stepper-indicator-done-hover-border</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's hovered current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-disabled-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-disabled-bg</code></td>
+    <td><span class="color-preview" style="background-color: #6ea8fe"></span><code>#6ea8fe</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's disabled current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-disabled-text</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-disabled-text</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-indicator-current-disabled-border</td>
+    <td>Color</td>
+    <td><code>$kendo-stepper-indicator-done-disabled-border</code></td>
+    <td><span class="color-preview" style="background-color: #6ea8fe"></span><code>#6ea8fe</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled current indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-success-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-success</code></td>
+    <td><span class="color-preview" style="background-color: #198754"></span><code>#198754</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-error-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-error</code></td>
+    <td><span class="color-preview" style="background-color: #dc3545"></span><code>#dc3545</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-disabled-text</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), $kendo-disabled-text)</code></td>
+    <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-optional-label-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: #6c757d"></span><code>#6c757d</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the optional Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-optional-label-opacity</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the optional Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-optional-label-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>0.875rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the optional Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-optional-label-font-style</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-progressbar-size</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Stepper ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-progressbar-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-progressbar-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-progressbar-fill-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Stepper ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-progressbar-fill-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Stepper ProgressBar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-property</td>
+    <td>String</td>
+    <td><code>height</code></td>
+    <td><code>height</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The property name of the Stepper transition.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-duration</td>
+    <td>Number</td>
+    <td><code>300ms</code></td>
+    <td><code>300ms</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the Stepper transition.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-timing-function</td>
+    <td>List</td>
+    <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
+    <td><code>cubic-bezier(0.4, 0, 0.2, 1) 0ms</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the Stepper transition.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Switch
 
 <table class="theme-variables">
@@ -15683,6 +17643,776 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip focused content</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Taskboard
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-taskboard-spacer</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing index of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-toolbar-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-toolbar-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-toolbar-padding-y</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-toolbar-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-toolbar-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-toolbar-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-toolbar-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the TaskBoard Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-content-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-content-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-content-padding-y</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-container-spacing-y</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer * .75</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the TaskBoard column container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-container-padding-y</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-container-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer * .75</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard column container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-columns-container-gap</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard columns container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-width</td>
+    <td>Number</td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-border-radius</td>
+    <td>Number</td>
+    <td><code>$kendo-border-radius-sm</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-bg</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $gray-900, $gray-100 ))</code></td>
+    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-border</td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-focus-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-focus-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-focus-border</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-base-border, 2.5 ))</code></td>
+    <td><span class="color-preview" style="background-color: #b6b7b8"></span><code>#b6b7b8</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TaskBoard column.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-header-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer * .75</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-header-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-column-header-padding-y</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-header-gap</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-taskboard-spacer, 4 )</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-header-actions-gap</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column header actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-header-font-weight</td>
+    <td>Number</td>
+    <td><code>500</code></td>
+    <td><code>500</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the TaskBoard column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-header-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-header-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-cards-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer * .25</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column Card wrapper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-cards-padding-x</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard column Card wrapper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-column-cards-gap</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer * .75</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column Card wrapper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-width</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-column-width</code></td>
+    <td><code>320px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard pane.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-header-padding-y</td>
+    <td>Number</td>
+    <td><code>( $kendo-taskboard-spacer * .75 )</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-header-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard pane header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-header-font-weight</td>
+    <td>Number</td>
+    <td><code>500</code></td>
+    <td><code>500</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the TaskBoard pane header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-header-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-header-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard pane header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-content-padding-y</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-content-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard pane content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-actions-padding-y</td>
+    <td>Number</td>
+    <td><code>( $kendo-taskboard-spacer * .75 )</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-pane-actions-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard pane actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-spacer</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-card-padding-y</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-border-width</td>
+    <td>Number</td>
+    <td><code>$kendo-card-border-width</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-border-radius</td>
+    <td>Number</td>
+    <td><code>$kendo-card-border-radius</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-card-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-text</td>
+    <td>Color</td>
+    <td><code>$kendo-card-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-border</td>
+    <td>Color</td>
+    <td><code>$kendo-card-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-shadow</td>
+    <td>Null</td>
+    <td><code>$kendo-card-shadow</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-category-border-width</td>
+    <td>Number</td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard Card category.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-hover-border</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-taskboard-card-border, 10% ))</code></td>
+    <td><span class="color-preview" style="background-color: #c8cbcf"></span><code>#c8cbcf</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-focus-border</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-taskboard-card-border, 18% ))</code></td>
+    <td><span class="color-preview" style="background-color: #b6b9bd"></span><code>#b6b9bd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-focus-shadow</td>
+    <td>String</td>
+    <td><code>$kendo-card-focus-shadow</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 4px 10px rgba(0, 0, 0, 0.1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-selected-border</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-tint( $kendo-color-primary-lighter, 8 ))</code></td>
+    <td><span class="color-preview" style="background-color: #b6d3fe"></span><code>#b6d3fe</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the selected TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-selected-shadow</td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected TaskBoard Card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-header-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard Card header text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-header-focus-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary-darker</code></td>
+    <td><span class="color-preview" style="background-color: #0b5cd5"></span><code>#0b5cd5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-card-header-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary-darker</code></td>
+    <td><span class="color-preview" style="background-color: #0b5cd5"></span><code>#0b5cd5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-drag-placeholder-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard Card placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-drag-placeholder-border-radius</td>
+    <td>Number</td>
+    <td><code>$kendo-taskboard-card-border-radius</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-drag-placeholder-bg</td>
+    <td>Color</td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .1 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span><code>rgba(0, 0, 0, 0.1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Card placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-taskboard-drag-placeholder-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Card placeholder.</div></div>
     </td>
 </tr>
 </tbody>
@@ -17532,6 +20262,126 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Window.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Wizard
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-wizard-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-x * 1.25</code></td>
+    <td><code>1.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-wizard-padding-x</code></td>
+    <td><code>1.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-content-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-x * 2</code></td>
+    <td><code>2rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-content-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-y * 4</code></td>
+    <td><code>2rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-buttons-margin-x</td>
+    <td>Number</td>
+    <td><code>10px</code></td>
+    <td><code>10px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Wizard's Button container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-border-width</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Wizard.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-wizard-step-focus-border</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of the focused Wizard step.</div></div>
     </td>
 </tr>
 </tbody>
