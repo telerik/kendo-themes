@@ -80,7 +80,7 @@
     // Ripple
     .k-ripple-container {
         .k-radio::after {
-            background: $kendo-radio-checked-bg;
+            background: $kendo-radio-ripple-bg;
             opacity: $kendo-radio-ripple-opacity;
         }
     }
