@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-nouvelle",
   "description": "A css variables heavy theme for Kendo UI",
-  "version": "7.2.0",
+  "version": "7.2.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -54,8 +54,8 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "2.1.0",
-    "@progress/kendo-theme-core": "7.2.0",
-    "@progress/kendo-theme-utils": "7.2.0"
+    "@progress/kendo-theme-core": "7.2.1-dev.0",
+    "@progress/kendo-theme-utils": "7.2.1-dev.0"
   },
   "directories": {
     "doc": "docs"
