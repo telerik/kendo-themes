@@ -24,52 +24,11 @@
 
     </style>
     <div id="test-area" class="k-d-grid k-bg-gray-100">
-        <span>Default</span>
+        <span>normal</span>
         <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                 <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
-                                    </svg>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-current k-focus" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">2</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-last k-step-optional" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">3</span>
-                            </span>
-                            <span class="k-step-label">
-                                <span class="k-step-label-optional">(Optional)</span>
-                            </span>
-                        </a>
-                    </li>
-                </ol>
-                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
-                    <span class="k-progress-status-wrap k-progress-start"></span>
-                    <div class="k-progressbar-value k-selected">
-                        <span class="k-progress-status-wrap k-progress-start"></span>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <span>^ + label</span>
-        <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
-                <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done" style="max-width: 33.333%;">
+                    <li class="k-step k-step-done k-step-first" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
@@ -83,7 +42,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-current k-focus" style="max-width: 33.333%;">
+                    <li class="k-step k-step-current" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">2</span>
@@ -112,18 +71,18 @@
                 </div>
             </nav>
         </section>
-        <span>^ only labels</span>
+        <span></span>
         <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                 <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done" style="max-width: 33.333%;">
+                    <li class="k-step k-step-done k-step-first" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-label">
                                 <span class="k-step-text">Account Info</span>
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-current k-focus" style="max-width: 33.333%;">
+                    <li class="k-step k-step-current" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-label">
                                 <span class="k-step-text">Personal Info</span>
@@ -147,52 +106,11 @@
             </nav>
         </section>
         <hr>
-        <span>Hover</span>
+        <span>disabled</span>
         <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                 <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-hover" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
-                                    </svg>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-current k-focus k-hover" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">2</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-last k-step-optional k-hover" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">3</span>
-                            </span>
-                            <span class="k-step-label">
-                                <span class="k-step-label-optional">(Optional)</span>
-                            </span>
-                        </a>
-                    </li>
-                </ol>
-                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
-                    <span class="k-progress-status-wrap k-progress-start"></span>
-                    <div class="k-progressbar-value k-selected">
-                        <span class="k-progress-status-wrap k-progress-start"></span>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <span>^ + label</span>
-        <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
-                <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-hover" style="max-width: 33.333%;">
+                    <li class="k-step k-step-done k-step-first k-disabled" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
@@ -206,7 +124,89 @@
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-current k-focus k-hover" style="max-width: 33.333%;">
+                    <li class="k-step k-step-current k-disabled" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">2</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Personal Info</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-disabled" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">3</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Payment Details</span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
+                    <span class="k-progress-status-wrap k-progress-start"></span>
+                    <div class="k-progressbar-value k-selected">
+                        <span class="k-progress-status-wrap k-progress-start"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <span></span>
+        <section class="col-4">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
+                    <li class="k-step k-step-done k-step-first k-disabled" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Account Info</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-disabled" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Personal Info</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-disabled" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Payment Details</span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
+                    <span class="k-progress-status-wrap k-progress-start"></span>
+                    <div class="k-progressbar-value k-selected">
+                        <span class="k-progress-status-wrap k-progress-start"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <hr>
+        <span>hover</span>
+        <section class="col-4">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
+                    <li class="k-step k-step-done k-step-first k-hover" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Account Info</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-hover" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">2</span>
@@ -235,18 +235,18 @@
                 </div>
             </nav>
         </section>
-        <span>^ only labels</span>
+        <span></span>
         <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                 <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-hover" style="max-width: 33.333%;">
+                    <li class="k-step k-step-done k-step-first k-hover" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-label">
                                 <span class="k-step-text">Account Info</span>
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-current k-focus k-hover" style="max-width: 33.333%;">
+                    <li class="k-step k-step-current k-hover" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-label">
                                 <span class="k-step-text">Personal Info</span>
@@ -269,52 +269,12 @@
                 </div>
             </nav>
         </section>
-        <span>Focus</span>
+        <hr>
+        <span>focus</span>
         <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                 <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-focus" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
-                                    </svg>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-current k-focus" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">2</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-last k-step-optional k-focus" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">3</span>
-                            </span>
-                            <span class="k-step-label">
-                                <span class="k-step-label-optional">(Optional)</span>
-                            </span>
-                        </a>
-                    </li>
-                </ol>
-                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
-                    <span class="k-progress-status-wrap k-progress-start"></span>
-                    <div class="k-progressbar-value k-selected">
-                        <span class="k-progress-status-wrap k-progress-start"></span>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <span>^ + label</span>
-        <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
-                <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-focus" style="max-width: 33.333%;">
+                    <li class="k-step k-step-done k-step-first k-focus" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
@@ -357,11 +317,11 @@
                 </div>
             </nav>
         </section>
-        <span>^ only labels</span>
+        <span></span>
         <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                 <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-focus" style="max-width: 33.333%;">
+                    <li class="k-step k-step-done k-step-first k-focus" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-label">
                                 <span class="k-step-text">Account Info</span>
@@ -392,52 +352,11 @@
             </nav>
         </section>
         <hr>
-        <span>Disabled</span>
+        <span>invalid</span>
         <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                 <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-disabled" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
-                                    </svg>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-current k-focus k-disabled" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">2</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-last k-step-optional k-disabled" style="max-width: 33.333%;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">3</span>
-                            </span>
-                            <span class="k-step-label">
-                                <span class="k-step-label-optional">(Optional)</span>
-                            </span>
-                        </a>
-                    </li>
-                </ol>
-                <div class="k-progressbar k-disabled k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
-                    <span class="k-progress-status-wrap k-progress-start"></span>
-                    <div class="k-progressbar-value k-selected">
-                        <span class="k-progress-status-wrap k-progress-start"></span>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <span>^ + label</span>
-        <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
-                <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-disabled" style="max-width: 33.333%;">
+                    <li class="k-step k-step-done k-step-first k-step-error" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
@@ -448,31 +367,46 @@
                             </span>
                             <span class="k-step-label">
                                 <span class="k-step-text">Account Info</span>
+                                <span class="k-icon k-svg-icon k-svg-i-warning-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                                    </svg>
+                                </span>
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-current k-focus k-disabled" style="max-width: 33.333%;">
+                    <li class="k-step k-step-current k-step-error" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">2</span>
                             </span>
                             <span class="k-step-label">
                                 <span class="k-step-text">Personal Info</span>
+                                <span class="k-icon k-svg-icon k-svg-i-warning-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                                    </svg>
+                                </span>
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-last k-disabled" style="max-width: 33.333%;">
+                    <li class="k-step k-step-last k-step-error" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">3</span>
                             </span>
                             <span class="k-step-label">
                                 <span class="k-step-text">Payment Details</span>
+                                <span class="k-icon k-svg-icon k-svg-i-warning-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                                    </svg>
+                                </span>
                             </span>
                         </a>
                     </li>
                 </ol>
-                <div class="k-progressbar k-disabled k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
+                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
                     <span class="k-progress-status-wrap k-progress-start"></span>
                     <div class="k-progressbar-value k-selected">
                         <span class="k-progress-status-wrap k-progress-start"></span>
@@ -480,33 +414,48 @@
                 </div>
             </nav>
         </section>
-        <span>^ only labels</span>
+        <span></span>
         <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
                 <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
-                    <li class="k-step k-step-first k-step-done k-disabled" style="max-width: 33.333%;">
+                    <li class="k-step k-step-done k-step-first k-step-error" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-label">
                                 <span class="k-step-text">Account Info</span>
+                                <span class="k-icon k-svg-icon k-svg-i-warning-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                                    </svg>
+                                </span>
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-current k-focus k-disabled" style="max-width: 33.333%;">
+                    <li class="k-step k-step-current k-step-error" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-label">
                                 <span class="k-step-text">Personal Info</span>
+                                <span class="k-icon k-svg-icon k-svg-i-warning-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                                    </svg>
+                                </span>
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-last k-disabled" style="max-width: 33.333%;">
+                    <li class="k-step k-step-last k-step-error" style="max-width: 33.333%;">
                         <a href="#" class="k-step-link">
                             <span class="k-step-label">
                                 <span class="k-step-text">Payment Details</span>
+                                <span class="k-icon k-svg-icon k-svg-i-warning-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 480c123.7 0 224-100.3 224-224S379.7 32 256 32 32 132.3 32 256s100.3 224 224 224m-32-352h64v160h-64zm0 256v-64h64v64z"></path>
+                                    </svg>
+                                </span>
                             </span>
                         </a>
                     </li>
                 </ol>
-                <div class="k-progressbar k-disabled k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
+                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
                     <span class="k-progress-status-wrap k-progress-start"></span>
                     <div class="k-progressbar-value k-selected">
                         <span class="k-progress-status-wrap k-progress-start"></span>
@@ -514,6 +463,119 @@
                 </div>
             </nav>
         </section>
+        <hr>
+        <span>valid</span>
+        <section class="col-4">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
+                    <li class="k-step k-step-done k-step-first k-step-success" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-svg-icon k-svg-i-check">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Account Info</span>
+                                <span class="k-icon k-svg-icon k-svg-i-check-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-step-success" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">2</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Personal Info</span>
+                                <span class="k-icon k-svg-icon k-svg-i-check-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-step-success" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">3</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Payment Details</span>
+                                <span class="k-icon k-svg-icon k-svg-i-check-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
+                    <span class="k-progress-status-wrap k-progress-start"></span>
+                    <div class="k-progressbar-value k-selected">
+                        <span class="k-progress-status-wrap k-progress-start"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <span></span>
+        <section class="col-4">
+            <nav class="k-stepper" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column: 1 / -1;">
+                    <li class="k-step k-step-done k-step-first k-step-success" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Account Info</span>
+                                <span class="k-icon k-svg-icon k-svg-i-check-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-step-success" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Personal Info</span>
+                                <span class="k-icon k-svg-icon k-svg-i-check-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-step-success" style="max-width: 33.333%;">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Payment Details</span>
+                                <span class="k-icon k-svg-icon k-svg-i-check-circle">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m-32 352L96 256l45-45 83 83 147-147 45 45z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 50;">
+                    <span class="k-progress-status-wrap k-progress-start"></span>
+                    <div class="k-progressbar-value k-selected">
+                        <span class="k-progress-status-wrap k-progress-start"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <hr>
     </div>
 </body>
 </html>
