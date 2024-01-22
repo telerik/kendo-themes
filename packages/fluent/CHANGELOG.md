@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.1.1-dev.0...v7.2.0-dev.0) (2024-01-22)
+
+
+### Bug Fixes
+
+* **ripple:** wrong ripple position in fluent ([00e6836](https://github.com/telerik/kendo-themes/commit/00e683656f2e38d71754de97ee1e299b76516204))
+
+
+
+
+
 ## [7.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.1.0...v7.1.1-dev.0) (2024-01-18)
 
 
