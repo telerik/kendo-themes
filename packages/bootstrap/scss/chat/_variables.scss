@@ -1,72 +1,187 @@
 // Chat
+
+/// The horizontal padding of the Chat.
+/// @group chat
 $kendo-chat-padding-x: 16px !default;
+/// The vertical padding of the Chat.
+/// @group chat
 $kendo-chat-padding-y: 16px !default;
+/// The width of the Chat.
+/// @group chat
 $kendo-chat-width: 500px !default;
+/// The height of the Chat.
+/// @group chat
 $kendo-chat-height: 600px !default;
+/// The border width of the Chat.
+/// @group chat
 $kendo-chat-border-width: 1px !default;
+/// The font family of the Chat.
+/// @group chat
 $kendo-chat-font-family: $kendo-font-family !default;
+/// The font size of the Chat.
+/// @group chat
 $kendo-chat-font-size: $kendo-font-size-md !default;
+/// The line height of the Chat.
+/// @group chat
 $kendo-chat-line-height: $kendo-line-height-md !default;
 
+/// The horizontal spacing between the items of the Chat.
+/// @group chat
 $kendo-chat-item-spacing-x: 8px !default;
+/// The vertical spacing between the items of the Chat.
+/// @group chat
 $kendo-chat-item-spacing-y: 16px !default;
 
+/// The horizontal padding of the Chat message list.
+/// @group chat
 $kendo-chat-message-list-padding-x: $kendo-chat-padding-x !default;
+/// The vertical padding of the Chat message list.
+/// @group chat
 $kendo-chat-message-list-padding-y: $kendo-chat-padding-y !default;
+/// The spacing of the Chat message list.
+/// @group chat
 $kendo-chat-message-list-spacing: $kendo-chat-item-spacing-y !default;
 
+/// The font size of the Chat timestamp.
+/// @group chat
 $kendo-chat-timestamp-font-size: smaller !default;
+/// The line height of the Chat timestamp.
+/// @group chat
 $kendo-chat-timestamp-line-height: null !default;
+/// The text transform of the Chat timestamp.
+/// @group chat
 $kendo-chat-timestamp-transform: uppercase !default;
+/// The text color of the Chat timestamp.
+/// @group chat
 $kendo-chat-timestamp-text: $kendo-subtle-text !default;
+/// The background color of the Chat timestamp.
+/// @group chat
 $kendo-chat-timestamp-bg: null !default;
 
+/// The horizontal padding of the Chat bubble message.
+/// @group chat
 $kendo-chat-bubble-padding-x: 16px !default;
+/// The vertical padding of the Chat bubble message.
+/// @group chat
 $kendo-chat-bubble-padding-y: 8px !default;
+/// The spacing of the Chat bubble message.
+/// @group chat
 $kendo-chat-bubble-spacing: 2px !default;
+/// The line height of the Chat bubble message.
+/// @group chat
 $kendo-chat-bubble-line-height: 1.25 !default;
 
+/// The border radius of the Chat bubble message.
+/// @group chat
 $kendo-chat-bubble-border-radius: 12px !default;
+/// The border radius of the Chat small bubble message
+/// @group chat
 $kendo-chat-bubble-border-radius-sm: 2px !default;
 
+/// The size of the Chat Avatar.
+/// @group chat
 $kendo-chat-avatar-size: 32px !default;
+/// The spacing of the Chat Avatar.
+/// @group chat
 $kendo-chat-avatar-spacing: $kendo-chat-item-spacing-x !default;
 
+/// The horizontal padding of the Chat Toolbar.
+/// @group chat
 $kendo-chat-toolbar-padding-x: $kendo-toolbar-md-padding-x !default;
+/// The vertical padding of the Chat Toolbar.
+/// @group chat
 $kendo-chat-toolbar-padding-y: $kendo-toolbar-md-padding-y !default;
+/// The spacing of the Chat Toolbar.
+/// @group chat
 $kendo-chat-toolbar-spacing: $kendo-toolbar-md-spacing !default;
+/// The background color of the Chat Toolbar.
+/// @group chat
 $kendo-chat-toolbar-bg: $kendo-toolbar-bg !default;
+/// The text color of the Chat Toolbar.
+/// @group chat
 $kendo-chat-toolbar-text: $kendo-toolbar-text !default;
+/// The border color of the Chat Toolbar.
+/// @group chat
 $kendo-chat-toolbar-border: inherit !default;
 
+/// The horizontal padding of the Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-padding-x: 12px !default;
+/// The vertical padding of the Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-padding-y: 8px !default;
+/// The spacing of the Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-spacing: 8px !default;
+/// The line height of the Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-line-height: $kendo-chat-bubble-line-height !default;
 
 
+/// The background color of the Chat.
+/// @group chat
 $kendo-chat-bg: $kendo-app-bg !default;
+/// The text color of the Chat.
+/// @group chat
 $kendo-chat-text: $kendo-app-text !default;
+/// The border color of the Chat.
+/// @group chat
 $kendo-chat-border: $kendo-app-border !default;
 
+/// The background color of the Chat bubble.
+/// @group chat
 $kendo-chat-bubble-bg: $kendo-button-bg !default;
+/// The text color of the Chat bubble.
+/// @group chat
 $kendo-chat-bubble-text: $kendo-button-text !default;
+/// The border color of the Chat bubble.
+/// @group chat
 $kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;
+/// The box shadow of the Chat bubble.
+/// @group chat
 $kendo-chat-bubble-shadow: none !default;
+/// The shadow of the hovered Chat bubble.
+/// @group chat
 $kendo-chat-bubble-hover-shadow: none !default;
+/// The shadow of the selected Chat bubble.
+/// @group chat
 $kendo-chat-bubble-selected-shadow: none !default;
 
+/// The background color of the Chat alt bubble.
+/// @group chat
 $kendo-chat-alt-bubble-bg: $kendo-color-primary !default;
+/// The text color of the Chat alt bubble.
+/// @group chat
 $kendo-chat-alt-bubble-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-chat-alt-bubble-bg )) !default;
+/// The border color of the Chat alt bubble.
+/// @group chat
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
+/// The shadow of the Chat alt bubble.
+/// @group chat
 $kendo-chat-alt-bubble-shadow: none !default;
+/// The shadow of the hovered Chat alt bubble.
+/// @group chat
 $kendo-chat-alt-bubble-hover-shadow: none !default;
+/// The shadow of the selected Chat alt bubble.
+/// @group chat
 $kendo-chat-alt-bubble-selected-shadow: none !default;
 
+/// The background color of the Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-bg: transparent !default;
+/// The text color of the Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-text: $kendo-color-primary !default;
+/// The border color of the Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-border: $kendo-color-primary !default;
 
+/// The background color of the hovered Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-hover-bg: $kendo-color-primary !default;
+/// The text color of the hovered Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-hover-text: $kendo-color-primary-contrast !default;
+/// The border color of the hovered Chat quick reply.
+/// @group chat
 $kendo-chat-quick-reply-hover-border: $kendo-color-primary !default;

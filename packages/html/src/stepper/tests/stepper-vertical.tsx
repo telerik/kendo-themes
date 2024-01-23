@@ -1,5 +1,5 @@
+import { Step, StepList, StepperVertical } from '..';
 import { Button } from '../../button';
-import { Icon } from '../../icon';
 import { ProgressBarNormal } from '../../progressbar';
 
 
@@ -27,128 +27,37 @@ export default () =>(
             <span>Label</span>
 
             <section>
-                <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateRows: "repeat(3, 1fr)" }}>
-                    <ol className="k-step-list k-step-list-vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-current k-focus" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <span className="k-step-indicator-text">2</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-last" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <span className="k-step-indicator-text">3</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ol>
-                    <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="40" />
-                </nav>
+                <StepperVertical />
             </section>
             <section>
-                <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateRows: "repeat(3, 1fr)" }}>
-                    <ol className="k-step-list k-step-list-vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-success" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <span className="k-step-indicator-text">1</span>
-                                </span>
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Account Info with too long text</span>
-                                    <Icon icon="check-circle"></Icon>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-current k-focus k-step-error" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <span className="k-step-indicator-text">2</span>
-                                </span>
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Personal Info</span>
-                                    <Icon className="k-validation-icon" icon="warning-circle"></Icon>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-last k-step-optional" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link" >
-                                <span className="k-step-indicator">
-                                    <span className="k-step-indicator-text">3</span>
-                                </span>
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Payment Details</span>
-                                    <span className="k-step-label-optional">(Optional)</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ol>
+                <StepperVertical>
+                    <StepList orientation="vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
+                        <Step first done valid text="1" label="Account Info with too long label" style={{ maxHeight: "33.333%" }}/>
+                        <Step current focus invalid text="2" label="Personal Info" style={{ maxHeight: "33.333%" }}/>
+                        <Step last optional text="3" label="Payment Details" style={{ maxHeight: "33.333%" }}/>
+                    </StepList>
                     <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="40" />
-                </nav>
+                </StepperVertical>
             </section>
             <section>
-                <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateRows: "repeat(3, 1fr)" }}>
-                    <ol className="k-step-list k-step-list-vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" icon="lock"></Icon>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-current k-focus" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" icon="user"></Icon>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-last" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" icon="track-changes"></Icon>
-                                </span>
-                            </a>
-                        </li>
-                    </ol>
+                <StepperVertical>
+                    <StepList orientation="vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
+                        <Step first done icon="lock" style={{ maxHeight: "33.333%" }}/>
+                        <Step current focus icon="user" style={{ maxHeight: "33.333%" }}/>
+                        <Step last optional icon="track-changes" style={{ maxHeight: "33.333%" }}/>
+                    </StepList>
                     <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="40" />
-                </nav>
+                </StepperVertical>
             </section>
             <section>
-                <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateRows: "repeat(3, 1fr)" }}>
-                    <ol className="k-step-list k-step-list-vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Account Info</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-current k-focus" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Personal Info</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-last" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Payment Details</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ol>
+                <StepperVertical>
+                    <StepList orientation="vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
+                        <Step first done label="Account Info" style={{ maxHeight: "33.333%" }}/>
+                        <Step current focus label="Personal Info" style={{ maxHeight: "33.333%" }}/>
+                        <Step last optional label="Payment Details" style={{ maxHeight: "33.333%" }}/>
+                    </StepList>
                     <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="40" />
-                </nav>
+                </StepperVertical>
             </section>
 
             <hr />
@@ -156,51 +65,26 @@ export default () =>(
             <span className="col-4">Content Between Steps</span>
 
             <section className="col-4">
-                <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateRows: "repeat(3, 1fr)" }}>
-                    <ol className="k-step-list k-step-list-vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-success" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <span className="k-step-indicator-text">1</span>
-                                </span>
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Account Info</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-step k-step-current k-focus" style={{ height: 'auto' }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <span className="k-step-indicator-text">2</span>
-                                </span>
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Personal Info</span>
-                                </span>
-                            </a>
-                            <div className="k-step-content" style={{ height: "140px" }}>
-                                <div className="content">
+                <StepperVertical>
+                    <StepList orientation="vertical" style={{ gridRowStart: "1", gridRowEnd: "-1" }}>
+                        <Step done first text="1" label="Account Info" style={{ maxHeight: "33.333%" }}/>
+                        <Step current focus text="2" label="Personal Info" style={{ height: "auto" }}
+                            stepContent={
+                                <>
+                                    <div className="content">
                                     This is the first step of your wizard with inline content.
-                                </div>
-                                <div className="navigation">
-                                    <Button>Close</Button>
-                                    {" "}<span>Step 2 of 3</span>{" "}
-                                    <Button>Next</Button>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="k-step k-step-last" style={{ maxHeight: "33.333%" }}>
-                            <a href="#" className="k-step-link">
-                                <span className="k-step-indicator">
-                                    <span className="k-step-indicator-text">3</span>
-                                </span>
-                                <span className="k-step-label">
-                                    <span className="k-step-text">Payment Details</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ol>
+                                    </div>
+                                    <div className="navigation">
+                                        <Button>Close</Button>
+                                        {" "}<span>Step 2 of 3</span>{" "}
+                                        <Button>Next</Button>
+                                    </div>
+                                </>
+                            }/>
+                        <Step last text="3" label="Payment Details" style={{ maxHeight: "33.333%" }}/>
+                    </StepList>
                     <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="30" />
-                </nav>
+                </StepperVertical>
             </section>
         </div>
     </>

@@ -1,10 +1,10 @@
+import { FileManagerToolbar } from '.';
 import { classNames, stateClassNames, States } from '../misc';
 import { Button } from '../button';
 import { ButtonGroup } from '../button-group';
 import { SplitButton } from '../split-button';
 import { Switch } from '../switch';
 import { Searchbox } from '../searchbox';
-import FileManagerToolbar from './filemanager-toolbar.spec';
 
 const FILEMANAGER_CLASSNAME = 'k-filemanager';
 
@@ -54,7 +54,7 @@ export const FileManager = (
 ) => {
     const {
         disabled,
-        toolbar,
+        toolbar = defaultProps.toolbar,
     } = props;
 
     return (

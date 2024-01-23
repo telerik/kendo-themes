@@ -20,11 +20,11 @@ export const FileManagerToolbar = (
 
     return (
         <Toolbar
+            {...other}
             className={classNames(
                 props.className,
                 FILEMANAGERTOOLBAR_CLASSNAME,
             )}
-            {...other}
         >
             {children}
         </Toolbar>

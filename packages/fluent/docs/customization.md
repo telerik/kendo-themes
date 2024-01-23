@@ -4935,7 +4935,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow transition of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow transition of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -4945,7 +4945,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text of links in the bubble of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the Chat bubble links.</div></div>
     </td>
 </tr>
 <tr>
@@ -4955,7 +4955,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of links in the bubble of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat bubble links.</div></div>
     </td>
 </tr>
 <tr>
@@ -4965,7 +4965,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -4975,7 +4975,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -4985,7 +4985,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">the width of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -4995,7 +4995,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5005,7 +5005,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5015,7 +5015,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5025,7 +5025,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5035,7 +5035,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5045,7 +5045,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the chat typeing indicator dot in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Chat typing indicator dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -5055,7 +5055,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the chat typeing indicator dot in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat typing indicator dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -5065,7 +5065,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing between items of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing between the items of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5075,7 +5075,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing between items of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing between the items of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5085,7 +5085,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of message list of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat message list.</div></div>
     </td>
 </tr>
 <tr>
@@ -5095,7 +5095,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of message list of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat message list.</div></div>
     </td>
 </tr>
 <tr>
@@ -5105,7 +5105,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of message list of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat message list.</div></div>
     </td>
 </tr>
 <tr>
@@ -5115,7 +5115,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the timestap.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat timestamp.</div></div>
     </td>
 </tr>
 <tr>
@@ -5125,7 +5125,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the timestamp.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat timestamp.</div></div>
     </td>
 </tr>
 <tr>
@@ -5135,7 +5135,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">the text transform of the timestamp.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the Chat timestamp.</div></div>
     </td>
 </tr>
 <tr>
@@ -5145,7 +5145,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of the timestamp.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat timestamp.</div></div>
     </td>
 </tr>
 <tr>
@@ -5155,7 +5155,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">the background of the timestamp.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat timestamp.</div></div>
     </td>
 </tr>
 <tr>
@@ -5165,7 +5165,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the bubble message.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat bubble message.</div></div>
     </td>
 </tr>
 <tr>
@@ -5175,7 +5175,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the bubble message.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat bubble message.</div></div>
     </td>
 </tr>
 <tr>
@@ -5185,7 +5185,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the bubble message.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat bubble message.</div></div>
     </td>
 </tr>
 <tr>
@@ -5195,7 +5195,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the bubble message.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat bubble message.</div></div>
     </td>
 </tr>
 <tr>
@@ -5205,7 +5205,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the scroll button in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat scroll button.</div></div>
     </td>
 </tr>
 <tr>
@@ -5215,7 +5215,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the card deck scrollbar in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Chat Card deck scrollbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5225,7 +5225,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the bubble message.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chat bubble message.</div></div>
     </td>
 </tr>
 <tr>
@@ -5235,7 +5235,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the small bubble message</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Chat small bubble message</div></div>
     </td>
 </tr>
 <tr>
@@ -5245,7 +5245,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the avatar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Chat Avatar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5255,7 +5255,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the avatar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat Avatar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5265,7 +5265,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the toolbar in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5275,7 +5275,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the toolbar in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5285,7 +5285,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the toolbar in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5295,7 +5295,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the toolbar in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5305,7 +5305,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of the toolbar in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5315,7 +5315,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the toolbar in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -5325,7 +5325,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5335,7 +5335,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5345,7 +5345,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5355,7 +5355,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5365,7 +5365,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5375,7 +5375,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5385,7 +5385,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat.</div></div>
     </td>
 </tr>
 <tr>
@@ -5395,7 +5395,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5405,7 +5405,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of the bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5415,7 +5415,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5425,7 +5425,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Chat bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5435,7 +5435,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover shadow of the bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Chat bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5445,7 +5445,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected shadow of the bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Chat bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5455,7 +5455,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the alt bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat alt bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5465,7 +5465,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of the alt bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat alt bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5475,7 +5475,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the alt bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat alt bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5485,7 +5485,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the alt bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Chat alt bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5495,7 +5495,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover shadow of the alt bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Chat alt bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5505,7 +5505,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected shadow of the alt bubble in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Chat alt bubble.</div></div>
     </td>
 </tr>
 <tr>
@@ -5515,7 +5515,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5525,7 +5525,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5535,7 +5535,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5545,7 +5545,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background of quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5555,7 +5555,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Chat quick reply.</div></div>
     </td>
 </tr>
 <tr>
@@ -5565,7 +5565,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border of quick reply in the chat.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Chat quick reply.</div></div>
     </td>
 </tr>
 </tbody>
@@ -18818,7 +18818,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing index of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing index of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18828,7 +18828,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18838,7 +18838,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18848,7 +18848,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18858,7 +18858,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18868,7 +18868,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18878,7 +18878,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18888,7 +18888,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18898,7 +18898,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18908,7 +18908,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the orgchart node.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node.</div></div>
     </td>
 </tr>
 <tr>
@@ -18918,7 +18918,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the orgchart group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18928,7 +18928,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the orgchart node container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node container.</div></div>
     </td>
 </tr>
 <tr>
@@ -18938,7 +18938,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18948,7 +18948,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18958,7 +18958,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18968,7 +18968,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18978,7 +18978,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18988,7 +18988,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18998,7 +18998,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -19008,7 +19008,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus border color of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -19018,7 +19018,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -19028,7 +19028,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the orgchart node group title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the OrgChart node group title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19038,7 +19038,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart node group title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19048,7 +19048,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart node group title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19058,7 +19058,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the orgchart node group subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the OrgChart node group subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -19068,7 +19068,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart node group subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -19078,7 +19078,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart node group subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -19088,7 +19088,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the orgchart card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the OrgChart Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -19098,7 +19098,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the orgchart card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -19108,7 +19108,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the orgchart card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the OrgChart Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -19118,7 +19118,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the orgchart card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -19128,7 +19128,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the orgchart card title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the OrgChart Card title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19138,7 +19138,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart card title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart Card title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19148,7 +19148,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart card title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart Card title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19158,7 +19158,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the orgchart card subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the OrgChart Card subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -19168,7 +19168,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart card subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart Card subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -19178,7 +19178,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart card subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart Card subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -19188,7 +19188,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the orgchart card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart Card body.</div></div>
     </td>
 </tr>
 <tr>
@@ -19198,7 +19198,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the orgchart card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart Card body.</div></div>
     </td>
 </tr>
 <tr>
@@ -19208,7 +19208,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top border width of the orgchart card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top border width of the OrgChart Card body.</div></div>
     </td>
 </tr>
 <tr>
@@ -19218,7 +19218,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the orgchart card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart Card body.</div></div>
     </td>
 </tr>
 <tr>
@@ -19228,7 +19228,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the orgchart card body title wrap.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the OrgChart Card body title wrap.</div></div>
     </td>
 </tr>
 <tr>
@@ -19238,7 +19238,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Min height of the orgchart card body title wrap.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min height of the OrgChart Card body title wrap.</div></div>
     </td>
 </tr>
 <tr>
@@ -19248,7 +19248,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the orgchart connecting line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the OrgChart connecting line.</div></div>
     </td>
 </tr>
 <tr>
@@ -19258,7 +19258,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Fill color of the orgchart connecting line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fill color of the OrgChart connecting line.</div></div>
     </td>
 </tr>
 <tr>
@@ -19268,7 +19268,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the orgchart connecting line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the OrgChart connecting line.</div></div>
     </td>
 </tr>
 </tbody>
@@ -25043,7 +25043,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25053,7 +25053,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25063,7 +25063,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25073,7 +25073,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25083,7 +25083,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25093,7 +25093,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25103,7 +25103,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25113,7 +25113,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>
@@ -25123,7 +25123,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Length of the splitter drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The length of the Splitter drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -25133,7 +25133,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">thickness of the splitter drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thickness of the Splitter drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -25143,7 +25143,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin of the splitter drag handle icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Splitter drag handle icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -25153,7 +25153,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the collapse icon in the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the collapse icon in the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25163,7 +25163,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the collapse icon in the splitter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the collapse icon in the Splitter.</div></div>
     </td>
 </tr>
 <tr>
@@ -25173,7 +25173,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>
@@ -25183,7 +25183,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>
@@ -25193,7 +25193,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>
@@ -25203,7 +25203,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>
@@ -25213,7 +25213,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>
@@ -25223,7 +25223,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected text color of the splitter splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the Splitter split bar.</div></div>
     </td>
 </tr>
 <tr>
@@ -25233,7 +25233,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the splitter static splitbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Splitter static split bar.</div></div>
     </td>
 </tr>
 </tbody>
@@ -26273,7 +26273,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the stepper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Stepper.</div></div>
     </td>
 </tr>
 <tr>
@@ -26313,7 +26313,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the stepper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper.</div></div>
     </td>
 </tr>
 <tr>
@@ -26323,7 +26323,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the stepper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper.</div></div>
     </td>
 </tr>
 <tr>
@@ -26333,7 +26333,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the stepper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper.</div></div>
     </td>
 </tr>
 <tr>
@@ -26343,7 +26343,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin the Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26353,7 +26353,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding the Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26363,7 +26363,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding the Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26373,7 +26373,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding the stepper content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Stepper content.</div></div>
     </td>
 </tr>
 <tr>
@@ -26383,7 +26383,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding the stepper content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Stepper content.</div></div>
     </td>
 </tr>
 <tr>
@@ -26393,7 +26393,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26403,7 +26403,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26413,7 +26413,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26423,7 +26423,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26433,7 +26433,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border width of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the focused Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26443,7 +26443,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus size of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the focused Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26453,7 +26453,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus offset of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Stepper's focused indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26463,7 +26463,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus calculated offset of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated offset of the Stepper's focused indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26473,7 +26473,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26483,7 +26483,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26493,7 +26493,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26503,7 +26503,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26513,7 +26513,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26523,7 +26523,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26533,7 +26533,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26543,7 +26543,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26553,7 +26553,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the stepper indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Stepper indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26563,7 +26563,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26573,7 +26573,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26583,7 +26583,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26593,7 +26593,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's hovered done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26603,7 +26603,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's hovered done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26613,7 +26613,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's hovered done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26623,7 +26623,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's disabled done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26633,7 +26633,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26643,7 +26643,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the stepper done indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled done indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26653,7 +26653,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26663,7 +26663,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26673,7 +26673,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26683,7 +26683,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Hover background color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's hovered current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26693,7 +26693,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Hover text color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's hovered current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26703,7 +26703,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Hover border color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's hovered current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26713,7 +26713,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Disabled background color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper's disabled current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26723,7 +26723,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Disabled text color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper's disabled current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26733,7 +26733,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Disabled border color of the stepper current indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Stepper's disabled current indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -26743,7 +26743,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26753,7 +26753,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26763,7 +26763,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The error text color of the Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26773,7 +26773,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26783,7 +26783,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26793,7 +26793,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the stepper label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the disabled Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26803,7 +26803,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the stepper optional label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the optional Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26813,7 +26813,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the stepper optional label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the optional Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26823,7 +26823,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the stepper optional label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -26833,7 +26833,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the stepper progress bar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Stepper ProgressBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -26843,7 +26843,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The property name of the stepper transition.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The property name of the Stepper transition.</div></div>
     </td>
 </tr>
 <tr>
@@ -26853,7 +26853,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the stepper transition.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the Stepper transition.</div></div>
     </td>
 </tr>
 <tr>
@@ -26863,7 +26863,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing funtion of the stepper transition.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the Stepper transition.</div></div>
     </td>
 </tr>
 </tbody>
@@ -28325,7 +28325,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing index of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing index of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28335,7 +28335,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28345,7 +28345,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border style of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28355,7 +28355,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28365,7 +28365,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28375,7 +28375,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28385,7 +28385,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28395,7 +28395,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28405,7 +28405,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28415,7 +28415,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28425,7 +28425,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the task board.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard.</div></div>
     </td>
 </tr>
 <tr>
@@ -28435,7 +28435,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard content.</div></div>
     </td>
 </tr>
 <tr>
@@ -28445,7 +28445,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard content.</div></div>
     </td>
 </tr>
 <tr>
@@ -28455,7 +28455,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical spacing of the task board column container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the TaskBoard column container.</div></div>
     </td>
 </tr>
 <tr>
@@ -28465,7 +28465,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board column container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column container.</div></div>
     </td>
 </tr>
 <tr>
@@ -28475,7 +28475,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board column container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard column container.</div></div>
     </td>
 </tr>
 <tr>
@@ -28485,7 +28485,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the task board columns container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard columns container.</div></div>
     </td>
 </tr>
 <tr>
@@ -28495,7 +28495,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28505,7 +28505,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28515,7 +28515,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28525,7 +28525,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28535,7 +28535,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28545,7 +28545,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28555,7 +28555,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus background color of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28565,7 +28565,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus text color of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28575,7 +28575,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus border color of the task board column.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TaskBoard column.</div></div>
     </td>
 </tr>
 <tr>
@@ -28585,7 +28585,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board column header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28595,7 +28595,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board column header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard column header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28605,7 +28605,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the task board column header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28615,7 +28615,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing  of the task board column header actions.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column header actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -28625,7 +28625,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the task board column header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the TaskBoard column header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28635,7 +28635,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Text color of the task board column header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard column header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28645,7 +28645,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board column cards wrapper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard column Card wrapper.</div></div>
     </td>
 </tr>
 <tr>
@@ -28655,7 +28655,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board column cards wrapper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard column Card wrapper.</div></div>
     </td>
 </tr>
 <tr>
@@ -28665,7 +28665,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the task board column cards wrapper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the TaskBoard column Card wrapper.</div></div>
     </td>
 </tr>
 <tr>
@@ -28675,7 +28675,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the task board pane.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the TaskBoard pane.</div></div>
     </td>
 </tr>
 <tr>
@@ -28685,7 +28685,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board pane</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane.</div></div>
     </td>
 </tr>
 <tr>
@@ -28695,7 +28695,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board pane.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard pane.</div></div>
     </td>
 </tr>
 <tr>
@@ -28705,7 +28705,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the task board pane.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard pane.</div></div>
     </td>
 </tr>
 <tr>
@@ -28715,7 +28715,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the task board pane.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard pane.</div></div>
     </td>
 </tr>
 <tr>
@@ -28725,7 +28725,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the task board pane.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard pane.</div></div>
     </td>
 </tr>
 <tr>
@@ -28735,7 +28735,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the task board pane.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard pane.</div></div>
     </td>
 </tr>
 <tr>
@@ -28745,7 +28745,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board pane header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28755,7 +28755,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board pane header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard pane header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28765,7 +28765,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the task board pane header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the TaskBoard pane header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28775,7 +28775,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the task board pane header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the TaskBoard pane header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28785,7 +28785,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the task board pane header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard pane header.</div></div>
     </td>
 </tr>
 <tr>
@@ -28795,7 +28795,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board pane content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane content.</div></div>
     </td>
 </tr>
 <tr>
@@ -28805,7 +28805,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board pane content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard pane content.</div></div>
     </td>
 </tr>
 <tr>
@@ -28815,7 +28815,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board pane actions.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard pane actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -28825,7 +28825,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board pane actions.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard pane actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -28835,7 +28835,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the task board card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TaskBoard Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -28845,7 +28845,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the task board card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TaskBoard Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -28855,7 +28855,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the task board card category.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard Card category.</div></div>
     </td>
 </tr>
 <tr>
@@ -28865,7 +28865,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the task board card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TaskBoard Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -28875,7 +28875,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected border of the task board card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the selected TaskBoard Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -28885,7 +28885,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected shadow of the task board card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected TaskBoard Card.</div></div>
     </td>
 </tr>
 <tr>
@@ -28895,7 +28895,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the task board card title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the TaskBoard Card title.</div></div>
     </td>
 </tr>
 <tr>
@@ -28905,7 +28905,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the task board card title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the TaskBoard Card title.</div></div>
     </td>
 </tr>
 <tr>
@@ -28915,7 +28915,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the task board card placeholder.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TaskBoard Card placeholder.</div></div>
     </td>
 </tr>
 <tr>
@@ -28925,7 +28925,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the task board card placeholder.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card placeholder.</div></div>
     </td>
 </tr>
 <tr>
@@ -28935,7 +28935,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the task board card placeholder.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Card placeholder.</div></div>
     </td>
 </tr>
 <tr>
@@ -28945,7 +28945,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the task board card placeholder.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Card placeholder.</div></div>
     </td>
 </tr>
 </tbody>
@@ -31745,7 +31745,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the wizard.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Wizard.</div></div>
     </td>
 </tr>
 <tr>
@@ -31755,7 +31755,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the wizard.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard.</div></div>
     </td>
 </tr>
 <tr>
@@ -31765,7 +31765,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the wizard.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard.</div></div>
     </td>
 </tr>
 <tr>
@@ -31775,7 +31775,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the wizard.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Wizard.</div></div>
     </td>
 </tr>
 <tr>
@@ -31785,7 +31785,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the wizard.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Wizard.</div></div>
     </td>
 </tr>
 <tr>
@@ -31795,7 +31795,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the wizard.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Wizard.</div></div>
     </td>
 </tr>
 <tr>
@@ -31805,7 +31805,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the wizard steps.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard steps.</div></div>
     </td>
 </tr>
 <tr>
@@ -31815,7 +31815,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the wizard steps.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard steps.</div></div>
     </td>
 </tr>
 <tr>
@@ -31825,7 +31825,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the wizard content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard content.</div></div>
     </td>
 </tr>
 <tr>
@@ -31835,7 +31835,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the wizard content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard content.</div></div>
     </td>
 </tr>
 <tr>
@@ -31845,7 +31845,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the wizard content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Wizard content.</div></div>
     </td>
 </tr>
 <tr>
@@ -31855,7 +31855,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the wizard content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Wizard content.</div></div>
     </td>
 </tr>
 <tr>
@@ -31865,7 +31865,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the wizard buttons container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Wizard's Button container.</div></div>
     </td>
 </tr>
 <tr>
@@ -31875,7 +31875,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the wizard buttons container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Wizard Button container.</div></div>
     </td>
 </tr>
 <tr>
@@ -31885,7 +31885,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline of the focused wizard step.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of the focused Wizard step.</div></div>
     </td>
 </tr>
 </tbody>

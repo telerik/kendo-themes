@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.0...v7.2.1-dev.0) (2024-01-22)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+# [7.2.0](https://github.com/telerik/kendo-themes/compare/v7.2.0-dev.0...v7.2.0) (2024-01-22)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+# [7.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.1.1-dev.0...v7.2.0-dev.0) (2024-01-22)
+
+
+### Bug Fixes
+
+* **radio:** radio ripple is not visible in material ([ebbc6e2](https://github.com/telerik/kendo-themes/commit/ebbc6e2119ab069fe9830ff0db3f9820c2dc3578))
+
+
+
+
+
 ## [7.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.1.0...v7.1.1-dev.0) (2024-01-18)
 
 

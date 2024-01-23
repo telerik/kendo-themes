@@ -43,6 +43,7 @@ export * from './coloreditor/index';
 export * from './captcha/index';
 export * from './colorpicker/index';
 export * from './combobox/index';
+export * from './calendar/index';
 export * from './dateinput/index';
 export * from './datepicker/index';
 export * from './timepicker/index';
@@ -82,10 +83,10 @@ export * from './appbar/index';
 export * from './bottom-nav/index';
 export * from './breadcrumb/index';
 export * from './pager/index';
-// export * from './stepper/index';
+export * from './stepper/index';
 // export * from './tabstrip/index';
 export * from './treeview/index';
-// export * from './wizard/index';
+export * from './wizard/index';
 
 // Layout & containers
 export * from './card/index';
@@ -103,7 +104,7 @@ export * from './listview/index';
 // export * from './treelist/index';
 export * from './filter/index';
 export * from './filemanager/index';
-// export * from './taskboard/index';
+export * from './taskboard/index';
 
 // Misc
 // export * from './adaptive/index''

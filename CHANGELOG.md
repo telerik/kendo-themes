@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.0...v7.2.1-dev.0) (2024-01-22)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [7.2.0](https://github.com/telerik/kendo-themes/compare/v7.2.0-dev.0...v7.2.0) (2024-01-22)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [7.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.1.1-dev.0...v7.2.0-dev.0) (2024-01-22)
+
+
+### Bug Fixes
+
+* **radio:** radio ripple is not visible in material ([ebbc6e2](https://github.com/telerik/kendo-themes/commit/ebbc6e2119ab069fe9830ff0db3f9820c2dc3578))
+* **ripple:** wrong ripple position in fluent ([00e6836](https://github.com/telerik/kendo-themes/commit/00e683656f2e38d71754de97ee1e299b76516204))
+
+
+### Features
+
+* **html:** add grid spec ([909baeb](https://github.com/telerik/kendo-themes/commit/909baebc9e60e87500e6261bbbfbfc3123337789))
+
+
+
+
+
 ## [7.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.1.0...v7.1.1-dev.0) (2024-01-18)
 
 
