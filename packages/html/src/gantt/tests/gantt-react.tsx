@@ -1,8 +1,10 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
-import { Toolbar } from '../../toolbar';
-
+import { Gantt, GanttHeaderToolbar, GanttContent, GanttColumnsTable, GanttTaskDot, GanttTask } from '../../gantt';
+import { TreeList } from '../../treelist';
+import { GridHeaderCell } from '../../grid';
+import { Table, TableThead, TableRow, TableTbody, TableTd } from '../../table';
 
 const styles = `
     .k-gantt {
@@ -15,8 +17,8 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area">
 
-            <div className="k-gantt">
-                <Toolbar className="k-gantt-toolbar k-gantt-header">
+            <Gantt headerToolbar={(
+                <GanttHeaderToolbar>
                     <span className="k-spacer"></span>
                     <span className="k-gantt-views">
                         <div className="k-gantt-views-wrapper">
@@ -32,151 +34,152 @@ export default () =>(
                             </select>
                         </div>
                     </span>
-                </Toolbar>
-                <div className="k-gantt-content">
-                    <div className="k-grid k-grid-md k-treelist-scrollable">
-                        <table className="k-table k-table-md k-table-layout-fixed" style={{ width: "4500px" }}>
+                </GanttHeaderToolbar>
+            )}>
+                <GanttContent>
+                    <TreeList className="k-treelist-scrollable">
+                        <Table size="medium" className="k-table-layout-fixed" style={{ width: "4500px" }}>
                             <colgroup>
                                 <col style={{ width: "100px" }} />
                                 <col style={{ width: "200px" }} />
                                 <col style={{ width: "4200px" }} />
                             </colgroup>
-                            <thead className="k-table-thead k-grid-header">
-                                <tr className="k-table-row">
-                                    <th colSpan={2} rowSpan={1} className="k-table-th k-header k-grid-header-sticky" style={{ left: '0px', right: '0px', borderRightWidth: "1px; top: 0px" }}><a className="k-link">summary</a></th>
-                                    <th colSpan={1} rowSpan={2} className="k-table-th k-header" style={{ top: '0px' }}>
-                                        <table className="k-table k-table-md">
-                                            <tbody className="k-table-tbody">
-                                                <tr className="k-table-row">
-                                                    <td colSpan={7} className="k-table-td k-header k-nonwork-hour">Sun, 6/1 - Sun, 6/8</td>
-                                                    <td colSpan={7} className="k-table-td k-header k-nonwork-hour">Sun, 6/8 - Sun, 6/15</td>
-                                                    <td colSpan={7} className="k-table-td k-header k-nonwork-hour">Sun, 6/15 - Sun, 6/22</td>
-                                                    <td colSpan={7} className="k-table-td k-header k-nonwork-hour">Sun, 6/22 - Sun, 6/29</td>
-                                                    <td colSpan={7} className="k-table-td k-header k-nonwork-hour">Sun, 6/29 - Sun, 7/6</td>
-                                                    <td colSpan={7} className="k-table-td k-header k-nonwork-hour">Sun, 7/6 - Sun, 7/13</td>
-                                                </tr>
-                                                <tr className="k-table-row">
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sun, 6/1</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Mon, 6/2</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Tue, 6/3</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Wed, 6/4</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Thu, 6/5</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Fri, 6/6</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sat, 6/7</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sun, 6/8</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Mon, 6/9</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Tue, 6/10</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Wed, 6/11</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Thu, 6/12</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Fri, 6/13</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sat, 6/14</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sun, 6/15</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Mon, 6/16</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Tue, 6/17</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Wed, 6/18</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Thu, 6/19</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Fri, 6/20</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sat, 6/21</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sun, 6/22</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Mon, 6/23</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Tue, 6/24</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Wed, 6/25</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Thu, 6/26</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Fri, 6/27</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sat, 6/28</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sun, 6/29</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Mon, 6/30</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Tue, 7/1</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Wed, 7/2</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Thu, 7/3</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Fri, 7/4</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sat, 7/5</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sun, 7/6</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Mon, 7/7</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Tue, 7/8</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Wed, 7/9</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Thu, 7/10</td>
-                                                    <td colSpan={1} className="k-table-td k-header">Fri, 7/11</td>
-                                                    <td colSpan={1} className="k-table-td k-header k-nonwork-hour">Sat, 7/12</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </th>
-                                </tr>
-                                <tr className="k-table-row">
-                                    <th colSpan={1} rowSpan={1} className="k-table-th k-header k-grid-header-sticky" style={{ left: '0px', right: "200px; top: 37px" }}>
+                            <TableThead className="k-grid-header">
+                                <TableRow>
+                                    <GridHeaderCell colspan={2} rowspan={1} sticky style={{ left: '0px', right: '0px', borderRightWidth: "1px; top: 0px" }}><a className="k-link">summary</a></GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={2} style={{ top: '0px' }}>
+                                        <Table size="medium">
+                                            <TableTbody>
+                                                <TableRow>
+                                                    <TableTd colspan={7} className="k-header k-nonwork-hour">Sun, 6/1 - Sun, 6/8</TableTd>
+                                                    <TableTd colspan={7} className="k-header k-nonwork-hour">Sun, 6/8 - Sun, 6/15</TableTd>
+                                                    <TableTd colspan={7} className="k-header k-nonwork-hour">Sun, 6/15 - Sun, 6/22</TableTd>
+                                                    <TableTd colspan={7} className="k-header k-nonwork-hour">Sun, 6/22 - Sun, 6/29</TableTd>
+                                                    <TableTd colspan={7} className="k-header k-nonwork-hour">Sun, 6/29 - Sun, 7/6</TableTd>
+                                                    <TableTd colspan={7} className="k-header k-nonwork-hour">Sun, 7/6 - Sun, 7/13</TableTd>
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sun, 6/1</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Mon, 6/2</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Tue, 6/3</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Wed, 6/4</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Thu, 6/5</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Fri, 6/6</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sat, 6/7</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sun, 6/8</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Mon, 6/9</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Tue, 6/10</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Wed, 6/11</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Thu, 6/12</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Fri, 6/13</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sat, 6/14</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sun, 6/15</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Mon, 6/16</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Tue, 6/17</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Wed, 6/18</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Thu, 6/19</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Fri, 6/20</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sat, 6/21</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sun, 6/22</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Mon, 6/23</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Tue, 6/24</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Wed, 6/25</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Thu, 6/26</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Fri, 6/27</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sat, 6/28</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sun, 6/29</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Mon, 6/30</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Tue, 7/1</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Wed, 7/2</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Thu, 7/3</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Fri, 7/4</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sat, 7/5</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sun, 7/6</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Mon, 7/7</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Tue, 7/8</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Wed, 7/9</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Thu, 7/10</TableTd>
+                                                    <TableTd colspan={1} className="k-header">Fri, 7/11</TableTd>
+                                                    <TableTd colspan={1} className="k-header k-nonwork-hour">Sat, 7/12</TableTd>
+                                                </TableRow>
+                                            </TableTbody>
+                                        </Table>
+                                    </GridHeaderCell>
+                                </TableRow>
+                                <TableRow>
+                                    <GridHeaderCell colspan={1} rowspan={1} sticky style={{ left: '0px', right: "200px; top: 37px" }}>
                                         <a className="k-link">id title</a>
-                                    </th>
-                                    <th colSpan={1} rowSpan={1} className="k-table-th k-header k-grid-header-sticky" style={{ left: "100px", right: '0px', borderRightWidth: "1px; top: 37px" }}>
+                                    </GridHeaderCell>
+                                    <GridHeaderCell colspan={1} rowspan={1} sticky style={{ left: "100px", right: '0px', borderRightWidth: "1px; top: 37px" }}>
                                         <a className="k-link">title</a>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody className="k-table-tbody">
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                    </GridHeaderCell>
+                                </TableRow>
+                            </TableThead>
+                            <TableTbody>
+                                <TableRow className="k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                         7
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Software validation, research and implementation
-                                    </td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-summary" style={{ left: "83px", top: "15px", width: "4000px" }}>
+                                    </TableTd>
+                                    <TableTd>
+                                        <GanttTask type="summary" style={{ left: "83px", top: "15px", width: "4000px" }}>
                                             <div className="k-task-summary-progress" style={{ width: "1828px" }}>
                                                 <div className="k-task-summary-complete"></div>
                                             </div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />18
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Project Kickoff
-                                    </td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-milestone" style={{ left: "77px", top: "13px" }}>
+                                    </TableTd>
+                                    <TableTd>
+                                        <GanttTask type="milestone" style={{ left: "77px", top: "13px" }}>
                                             <div className="k-task-milestone-content"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                         11
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
+                                    </TableTd>
+                                    <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Research
-                                    </td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-summary" style={{ left: "83px", top: "15px", width: "500px" }}>
+                                    </TableTd>
+                                    <TableTd>
+                                        <GanttTask type="summary" style={{ left: "83px", top: "15px", width: "500px" }}>
                                             <div className="k-task-summary-progress" style={{ width: "288px" }}>
                                                 <div className="k-task-summary-complete"></div>
                                             </div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className=" k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />19
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
+                                    </TableTd>
+                                    <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Validation with Customers
-                                    </td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "83px", top: "8px", width: "200px" }}>
+                                    </TableTd>
+                                    <TableTd >
+                                        <GanttTask type="single" style={{ left: "83px", top: "8px", width: "200px" }}>
                                             <div className="k-task-complete" style={{ width: '50px' }}></div>
                                             <div className="k-task-content">Validation with Customers</div>
                                             <span className="k-task-actions">
@@ -187,22 +190,22 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />20
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Market Research
-                                    </td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "83px", top: "8px", width: "200px" }}>
+                                    </TableTd>
+                                    <TableTd>
+                                        <GanttTask type="single" style={{ left: "83px", top: "8px", width: "200px" }}>
                                             <div className="k-task-complete" style={{ width: '50px' }}></div>
                                             <div className="k-task-content">Market Research</div>
                                             <span className="k-task-actions">
@@ -213,22 +216,22 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />39
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
+                                    </TableTd>
+                                    <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Functional and Technical Specification
-                                    </td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "283px", top: "8px", width: "300px" }}>
+                                    </TableTd>
+                                    <TableTd>
+                                        <GanttTask type="single" style={{ left: "283px", top: "8px", width: "300px" }}>
                                             <div className="k-task-complete" style={{ width: "198px" }}></div>
                                             <div className="k-task-content">Functional and Technical Specification</div>
                                             <span className="k-task-actions">
@@ -239,37 +242,37 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                         12
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Design</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-summary" style={{ left: "783px", top: "15px", width: "500px" }}>
+                                    </TableTd>
+                                    <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Design</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="summary" style={{ left: "783px", top: "15px", width: "500px" }}>
                                             <div className="k-task-summary-progress" style={{ width: "300px" }}>
                                                 <div className="k-task-summary-complete"></div>
                                             </div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />22
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>UI Design</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "783px", top: "8px", width: "200px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>UI Design</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="single" style={{ left: "783px", top: "8px", width: "200px" }}>
                                             <div className="k-task-complete" style={{ width: "112px" }}></div>
                                             <div className="k-task-content">UI Design</div>
                                             <span className="k-task-actions">
@@ -280,20 +283,20 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row k-selected" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-selected" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />23
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>HTML Prototype</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "983px", top: "8px", width: "300px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>HTML Prototype</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="single" style={{ left: "983px", top: "8px", width: "300px" }}>
                                             <div className="k-task-complete" style={{ width: "192px" }}></div>
                                             <div className="k-task-content">HTML Prototype</div>
                                             <span className="k-task-actions">
@@ -304,37 +307,37 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                         13
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Implementation</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-summary" style={{ left: "983px", top: "15px", width: "2100px" }}>
+                                    </TableTd>
+                                    <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Implementation</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="summary" style={{ left: "983px", top: "15px", width: "2100px" }}>
                                             <div className="k-task-summary-progress" style={{ width: "1617px" }}>
                                                 <div className="k-task-summary-complete"></div>
                                             </div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />24
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Prototype</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "983px", top: "8px", width: "600px" }}>
+                                    </TableTd>
+                                    <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Prototype</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="single" style={{ left: "983px", top: "8px", width: "600px" }}>
                                             <div className="k-task-complete" style={{ width: "462px" }}></div>
                                             <div className="k-task-content">Prototype</div>
                                             <span className="k-task-actions">
@@ -345,20 +348,20 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />26
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Architecture</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "1583px", top: "8px", width: "100px" }}>
+                                    </TableTd>
+                                    <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Architecture</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="single" style={{ left: "1583px", top: "8px", width: "100px" }}>
                                             <div className="k-task-complete" style={{ width: "82px" }}></div>
                                             <div className="k-task-content">Architecture</div>
                                             <span className="k-task-actions">
@@ -369,20 +372,20 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />27
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Data Layer</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "1683px", top: "8px", width: "600px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Data Layer</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="single" style={{ left: "1683px", top: "8px", width: "600px" }}>
                                             <div className="k-task-complete" style={{ width: "300px" }}></div>
                                             <div className="k-task-content">Data Layer</div>
                                             <span className="k-task-actions">
@@ -393,22 +396,22 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />29
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         UI and Interaction
-                                    </td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "2583px", top: "8px", width: "500px" }}>
+                                    </TableTd>
+                                    <TableTd >
+                                        <GanttTask type="single" style={{ left: "2583px", top: "8px", width: "500px" }}>
                                             <div className="k-task-complete" style={{ width: "300px" }}></div>
                                             <div className="k-task-content">UI and Interaction</div>
                                             <span className="k-task-actions">
@@ -419,20 +422,20 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />28
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Unit Tests</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-single" style={{ left: "1683px", top: "8px", width: "900px" }}>
+                                    </TableTd>
+                                    <TableTd className=" k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Unit Tests</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="single" style={{ left: "1683px", top: "8px", width: "900px" }}>
                                             <div className="k-task-complete" style={{ width: "612px" }}></div>
                                             <div className="k-task-content">Unit Tests</div>
                                             <span className="k-task-actions">
@@ -443,78 +446,78 @@ export default () =>(
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                             <div className="k-task-draghandle"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-right" />
                                         14
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Testing</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-summary" style={{ left: "2883px", top: "15px", width: "500px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Testing</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="summary" style={{ left: "2883px", top: "15px", width: "500px" }}>
                                             <div className="k-task-summary-progress" style={{ width: "260px" }}>
                                                 <div className="k-task-summary-complete"></div>
                                             </div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-right" />
                                         30
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Documentation</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-summary" style={{ left: "2183px", top: "15px", width: "1200px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Documentation</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="summary" style={{ left: "2183px", top: "15px", width: "1200px" }}>
                                             <div className="k-task-summary-progress" style={{ width: "168px" }}>
                                                 <div className="k-task-summary-complete"></div>
                                             </div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-right" />
                                         31
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Demos</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-summary" style={{ left: "2883px", top: "15px", width: "1200px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Demos</TableTd>
+                                    <TableTd >
+                                        <GanttTask type="summary" style={{ left: "2883px", top: "15px", width: "1200px" }}>
                                             <div className="k-task-summary-progress" style={{ width: "984px" }}>
                                                 <div className="k-task-summary-complete"></div>
                                             </div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
-                                    <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                                <TableRow className="k-table-row k-master-row" style={{ height: "40px" }}>
+                                    <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />17
-                                    </td>
-                                    <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Release</td>
-                                    <td className="k-table-td">
-                                        <div className="k-task k-task-milestone" style={{ left: "4077px", top: "13px" }}>
+                                    </TableTd>
+                                    <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Release</TableTd>
+                                    <TableTd>
+                                        <GanttTask type="milestone" style={{ left: "4077px", top: "13px" }}>
                                             <div className="k-task-milestone-content"></div>
-                                            <div className="k-task-dot k-task-start"></div>
-                                            <div className="k-task-dot k-task-end"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                            <GanttTaskDot />
+                                            <GanttTaskDot position="end" />
+                                        </GanttTask>
+                                    </TableTd>
+                                </TableRow>
+                            </TableTbody>
+                        </Table>
                         <svg className="k-gantt-dependencies-svg">
                             <polyline points="391,135 401,135 401,155 373,155 373,214 379,214 379,216 382,214 379,212 379,214"></polyline>
                             <polyline points="1283,374 1293,374 1293,394 1273,394 1273,414 1279,414 1279,416 1282,414 1279,412 1279,414"></polyline>
@@ -532,57 +535,57 @@ export default () =>(
                             <polyline points="2883,614 1973,614 1973,654 1979,654 1979,656 1982,654 1979,652 1979,654"></polyline>
                             <polyline points="383,94 373,94 373,114 893,114 893,174 887,174 887,172 884,174 887,176 887,174"></polyline>
                         </svg>
-                        <table className="k-table k-table-md k-gantt-columns" style={{ top: "74px", left: "300px", width: "4200px", height: "760px" }}>
-                            <tbody className="k-table-tbody">
-                                <tr className="k-table-row">
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td"></td>
-                                    <td colSpan={1} className="k-table-td k-nonwork-hour"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+                        <GanttColumnsTable style={{ top: "74px", left: "300px", width: "4200px", height: "760px" }}>
+                            <TableTbody>
+                                <TableRow>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} ></TableTd>
+                                    <TableTd colspan={1} className="k-nonwork-hour"></TableTd>
+                                </TableRow>
+                            </TableTbody>
+                        </GanttColumnsTable>
+                    </TreeList>
+                </GanttContent>
+            </Gantt>
         </div>
     </>
 );
