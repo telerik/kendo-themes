@@ -11,10 +11,10 @@
     <div id="test-area" class="k-d-grid">
         <section>
             <span>jQuery</span>
-            <div id="treelist" class="k-treelist k-grid k-grid-md k-grid-display-block" style="height: 650px;">
+            <div id="treelist" class="k-treelist k-grid-display-block k-grid k-grid-md" style="height: 650px;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-table k-table-md k-grid-header-table">
+                        <table class="k-grid-header-table k-table k-table-md">
                             <colgroup>
                                 <col>
                                 <col>
@@ -22,12 +22,12 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-table-th k-header k-filterable" rowspan="1">
+                                    <th rowspan="1" class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Name</span>
                                             </span>
-                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -36,12 +36,12 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-filterable" rowspan="1" data-index="1">
+                                    <th rowspan="1" data-index="1" class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Position</span>
                                             </span>
-                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -50,12 +50,12 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th data-title="Hire Date" class="k-table-th k-header k-filterable" rowspan="1">
+                                    <th rowspan="1" class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Hire Date</span>
                                             </span>
-                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -69,160 +69,162 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-content k-auto-scrollable" style="display: block; height: 591px;">
-                    <table class="k-table k-table-md k-grid-table">
-                        <colgroup>
-                            <col>
-                            <col>
-                            <col>
-                        </colgroup>
-                        <tbody class="k-table-tbody">
-                            <tr class="k-table-row k-treelist-group">
-                                <td class="k-table-td" style="white-space: nowrap;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M256 352 128 160h256z"></path>
-                                        </svg>
-                                    </span>Daryl Sweeney
-                                </td>
-                                <td class="k-table-td">CEO</td>
-                                <td class="k-table-td">February 7, 2012</td>
-                            </tr>
-                            <tr class="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                <td class="k-table-td" style="white-space: nowrap;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M352 256 160 384V128z"></path>
-                                        </svg>
-                                    </span>Guy Wooten
-                                </td>
-                                <td class="k-table-td">Chief Technical Officer</td>
-                                <td class="k-table-td">March 3, 2010</td>
-                            </tr>
-                            <tr class="k-table-row k-treelist-group">
-                                <td class="k-table-td" style="white-space: nowrap;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M352 256 160 384V128z"></path>
-                                        </svg>
-                                    </span>Priscilla Frank
-                                </td>
-                                <td class="k-table-td">Chief Product Officer</td>
-                                <td class="k-table-td">November 30, 2014</td>
-                            </tr>
-                            <tr class="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                <td class="k-table-td" style="white-space: nowrap;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M256 352 128 160h256z"></path>
-                                        </svg>
-                                    </span>Anika Vega
-                                </td>
-                                <td class="k-table-td">Chief Process Officer</td>
-                                <td class="k-table-td">February 25, 2010</td>
-                            </tr>
-                            <tr class="k-table-row k-treelist-group">
-                                <td class="k-table-td" style="white-space: nowrap;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M352 256 160 384V128z"></path>
-                                        </svg>
-                                    </span>Vernon Ballard
-                                </td>
-                                <td class="k-table-td">Director Facilities</td>
-                                <td class="k-table-td">June 26, 2015</td>
-                            </tr>
-                            <tr class="k-table-row k-footer-template">
-                                <td class="k-table-td k-focus">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>7 employee(s)
-                                </td>
-                                <td class="k-table-td"></td>
-                                <td class="k-table-td">Last employee hired on July 30, 2015</td>
-                            </tr>
-                            <tr class="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                <td class="k-table-td" style="white-space: nowrap;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M352 256 160 384V128z"></path>
-                                        </svg>
-                                    </span>Nevada Hart
-                                </td>
-                                <td class="k-table-td">Chief Financial Officer</td>
-                                <td class="k-table-td">August 17, 2015</td>
-                            </tr>
-                            <tr class="k-table-row k-treelist-group">
-                                <td class="k-table-td" style="white-space: nowrap;">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M352 256 160 384V128z"></path>
-                                        </svg>
-                                    </span>Hunter Fry
-                                </td>
-                                <td class="k-table-td">General Counsel</td>
-                                <td class="k-table-td">February 12, 2011</td>
-                            </tr>
-                            <tr class="k-table-row k-footer-template">
-                                <td class="k-table-td">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>98 employee(s)
-                                </td>
-                                <td class="k-table-td"></td>
-                                <td class="k-table-td">Last employee hired on August 17, 2015</td>
-                            </tr>
-                            <tr class="k-table-row k-footer-template">
-                                <td class="k-table-td">
-                                    <span class="k-treelist-toggle k-icon k-svg-icon">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                    </span>99 employee(s)
-                                </td>
-                                <td class="k-table-td"></td>
-                                <td class="k-table-td">Last employee hired on August 17, 2015</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="k-grid-container">
+                    <div class="k-auto-scrollable k-grid-content" style="display: block; height: 591px;">
+                        <table class="k-grid-table k-table k-table-md">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody class="k-table-tbody">
+                                <tr class="k-treelist-group k-table-row">
+                                    <td class="k-table-td" style="white-space: nowrap;">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>Daryl Sweeney
+                                    </td>
+                                    <td class="k-table-td">CEO</td>
+                                    <td class="k-table-td">February 7, 2012</td>
+                                </tr>
+                                <tr class="k-alt k-treelist-group k-table-row k-table-alt-row">
+                                    <td class="k-table-td" style="white-space: nowrap;">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M352 256 160 384V128z"></path>
+                                            </svg>
+                                        </span>Guy Wooten
+                                    </td>
+                                    <td class="k-table-td">Chief Technical Officer</td>
+                                    <td class="k-table-td">March 3, 2010</td>
+                                </tr>
+                                <tr class="k-treelist-group k-table-row">
+                                    <td class="k-table-td" style="white-space: nowrap;">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M352 256 160 384V128z"></path>
+                                            </svg>
+                                        </span>Priscilla Frank
+                                    </td>
+                                    <td class="k-table-td">Chief Product Officer</td>
+                                    <td class="k-table-td">November 30, 2014</td>
+                                </tr>
+                                <tr class="k-treelist-group k-alt k-table-row k-table-alt-row">
+                                    <td class="k-table-td" style="white-space: nowrap;">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>Anika Vega
+                                    </td>
+                                    <td class="k-table-td">Chief Process Officer</td>
+                                    <td class="k-table-td">February 25, 2010</td>
+                                </tr>
+                                <tr class="k-treelist-group k-table-row">
+                                    <td class="k-table-td" style="white-space: nowrap;">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M352 256 160 384V128z"></path>
+                                            </svg>
+                                        </span>Vernon Ballard
+                                    </td>
+                                    <td class="k-table-td">Director Facilities</td>
+                                    <td class="k-table-td">June 26, 2015</td>
+                                </tr>
+                                <tr class="k-footer-template k-table-row">
+                                    <td class="k-focus k-table-td">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>7 employee(s)
+                                    </td>
+                                    <td class="k-table-td"></td>
+                                    <td class="k-table-td">Last employee hired on July 30, 2015</td>
+                                </tr>
+                                <tr class="k-alt k-treelist-group k-table-row k-table-alt-row">
+                                    <td class="k-table-td" style="white-space: nowrap;">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M352 256 160 384V128z"></path>
+                                            </svg>
+                                        </span>Nevada Hart
+                                    </td>
+                                    <td class="k-table-td">Chief Financial Officer</td>
+                                    <td class="k-table-td">August 17, 2015</td>
+                                </tr>
+                                <tr class="k-treelist-group k-table-row">
+                                    <td class="k-table-td" style="white-space: nowrap;">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M352 256 160 384V128z"></path>
+                                            </svg>
+                                        </span>Hunter Fry
+                                    </td>
+                                    <td class="k-table-td">General Counsel</td>
+                                    <td class="k-table-td">February 12, 2011</td>
+                                </tr>
+                                <tr class="k-footer-template k-table-row">
+                                    <td class="k-table-td">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>98 employee(s)
+                                    </td>
+                                    <td class="k-table-td"></td>
+                                    <td class="k-table-td">Last employee hired on August 17, 2015</td>
+                                </tr>
+                                <tr class="k-footer-template k-table-row">
+                                    <td class="k-table-td">
+                                        <span class="k-treelist-toggle k-icon k-svg-icon">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
+                                        </span>99 employee(s)
+                                    </td>
+                                    <td class="k-table-td"></td>
+                                    <td class="k-table-td">Last employee hired on August 17, 2015</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <span>Angular</span>
-            <div class="k-grid k-grid-md k-treelist" style="height: 410px;">
+            <div class="k-treelist k-grid k-grid-md" style="height: 410px;">
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-table k-table-md k-grid-header-table">
+                            <table class="k-grid-header-table k-table k-table-md">
                                 <colgroup>
                                     <col style="width: 250px;">
                                     <col style="width: 180px;">
@@ -230,21 +232,21 @@
                                 </colgroup>
                                 <thead class="k-table-thead">
                                     <tr class="k-table-row">
-                                        <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Name</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">Title</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">hireDate</span>
@@ -257,9 +259,9 @@
                         </div>
                     </div>
                     <div class="k-grid-container">
-                        <div class="k-grid-content k-virtual-content">
+                        <div class="k-virtual-content k-grid-content">
                             <div class="k-grid-table-wrap">
-                                <table class="k-table k-table-md k-grid-table">
+                                <table class="k-grid-table k-table k-table-md">
                                     <colgroup>
                                         <col style="width: 250px;">
                                         <col style="width: 180px;">
@@ -277,7 +279,7 @@
                                             <td colspan="1" class="k-table-td">Chief Executive Officer</td>
                                             <td colspan="1" class="k-table-td">1/15/2019</td>
                                         </tr>
-                                        <tr class="k-table-row k-table-alt-row k-alt">
+                                        <tr class="k-alt k-table-row k-table-alt-row">
                                             <td colspan="1" class="k-table-td">
                                                 <span class="k-treelist-toggle k-icon k-svg-icon">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
@@ -308,8 +310,8 @@
                                             <td colspan="1" class="k-table-td">VP, Engineering</td>
                                             <td colspan="1" class="k-table-td">4/13/2019</td>
                                         </tr>
-                                        <tr class="k-table-row k-footer">
-                                            <td class="k-table-td k-focus">
+                                        <tr class="k-footer k-table-row">
+                                            <td class="k-focus k-table-td">
                                                 <span class="k-treelist-toggle k-icon k-svg-icon">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                 </span>
@@ -323,7 +325,7 @@
                                             <td class="k-table-td"></td>
                                             <td class="k-table-td">Last employee hired on 10/21/2019</td>
                                         </tr>
-                                        <tr class="k-table-row k-table-alt-row k-alt">
+                                        <tr class="k-alt k-table-row k-table-alt-row">
                                             <td colspan="1" class="k-table-td">
                                                 <span class="k-treelist-toggle k-icon k-svg-icon">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
@@ -337,7 +339,7 @@
                                             <td colspan="1" class="k-table-td">Chief Product Officer</td>
                                             <td colspan="1" class="k-table-td">4/22/2019</td>
                                         </tr>
-                                        <tr class="k-footer">
+                                        <tr class="k-footer k-table-row">
                                             <td class="k-table-td">
                                                 <span class="k-treelist-toggle k-icon k-svg-icon">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
@@ -349,7 +351,7 @@
                                             <td class="k-table-td"></td>
                                             <td class="k-table-td">Last employee hired on 10/21/2019</td>
                                         </tr>
-                                        <tr class="k-table-row k-footer">
+                                        <tr class="k-footer k-table-row">
                                             <td class="k-table-td">
                                                 <span class="k-treelist-toggle k-icon k-svg-icon">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
