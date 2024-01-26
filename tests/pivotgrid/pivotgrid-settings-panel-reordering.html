@@ -915,30 +915,32 @@
         </section>
         <div class="k-animation-container k-animation-container-shown">
             <div class="k-child-animation-container">
-                <div class="k-column-menu k-grid-columnmenu-popup k-popup">
-                    <div class="k-columnmenu-item-wrapper">
-                        <div class="k-columnmenu-item">
-                            <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                                </svg>
-                            </span>Sort ascending
+                <div class="k-grid-columnmenu-popup k-popup">
+                    <div class="k-column-menu">
+                        <div class="k-columnmenu-item-wrapper">
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
+                                    </svg>
+                                </span>Sort ascending
+                            </div>
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon k-svg-icon k-svg-i-sort-desc-small">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
+                                    </svg>
+                                </span>Sort descending
+                            </div>
                         </div>
-                        <div class="k-columnmenu-item">
-                            <span class="k-icon k-svg-icon k-svg-i-sort-desc-small">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
-                                </svg>
-                            </span>Sort descending
-                        </div>
-                        <div class="k-columnmen-item-wrapper">
+                        <div class="k-columnmenu-item-wrapper">
                             <div class="k-expander">
                                 <div class="k-columnmenu-item">
                                     <span class="k-icon k-svg-icon k-svg-i-grid-layout">
                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M32 32h96v96H32zm128 0v96h320V32zM32 288h96v-96H32zm128 0h320v-96H160zM32 448h96v-96H32zm128 0h320v-96H160z"></path>
                                         </svg>
-                                    </span>Include Fields<span class="k-spacer"></span>
+                                    </span>Include fields<span class="k-spacer"></span>
                                     <span class="k-expander-indicator">
                                         <span class="k-icon k-svg-icon k-svg-i-chevron-down">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -950,33 +952,33 @@
                             </div>
                         </div>
                         <div class="k-columnmenu-item-wrapper">
-                            <div class="k-columnmenu-item k-disabled">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
+                            <div class="k-disabled k-columnmenu-item">
+                                <span class="k-icon k-svg-icon k-svg-i-columns">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="m160 256 192-128v256z"></path>
+                                        <path d="M64 32h96v448H64zm128 448h96V32h-96zM320 32v448h96V32z"></path>
                                     </svg>
-                                </span>Move Previous
+                                </span>Move to Columns
                             </div>
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                <span class="k-icon k-svg-icon k-svg-i-rows">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M352 256 160 384V128z"></path>
-                                    </svg>
-                                </span>Move Next
-                            </div>
-                            <div class="k-columnmenu-item">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M256 352 128 160h256z"></path>
+                                        <path d="M480 64v96H32V64zM32 192v96h448v-96zm448 128H32v96h448z"></path>
                                     </svg>
                                 </span>Move to Rows
                             </div>
-                            <div class="k-columnmenu-item">
-                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-to-bottom">
+                            <div class="k-disabled k-columnmenu-item">
+                                <span class="k-icon k-svg-icon k-svg-i-arrow-left">
                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M384 128 256 320 128 128zM128 352h256v-32H128z"></path>
+                                        <path d="M288 128v96h128v64l-128 .001V384L96 256.001z"></path>
                                     </svg>
-                                </span>Move to Values
+                                </span>Move previous
+                            </div>
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon k-svg-icon k-svg-i-arrow-right">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M224 384v-96H96v-64h128v-96l192 128z"></path>
+                                    </svg>
+                                </span>Move next
                             </div>
                         </div>
                     </div>
