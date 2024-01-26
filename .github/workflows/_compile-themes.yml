@@ -39,6 +39,10 @@ jobs:
         run: |
           npm run sass
 
+      - name: Build XAML assets
+        run: |
+          npm run build:xaml
+
       - name: Build swatch for a11y tests
         run: |
           npm run dist:swatches
@@ -61,3 +65,14 @@ jobs:
         with:
           name: themes
           path: themes.tar
+
+      - name: Pack XAML Themes
+        run: |
+          tar -cf xaml.tar \
+            dist/xaml
+
+      - name: Upload xaml
+        uses: actions/upload-artifact@v3
+        with:
+          name: xaml
+          path: xaml.tar
