@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.1](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.0...v7.2.1-dev.1) (2024-01-29)
+
+
+### Bug Fixes
+
+* **fluent:** columnmenu should use the same elevation level as popup ([b4b4741](https://github.com/telerik/kendo-themes/commit/b4b4741bdb62262cfed7c219cf68b92b1d060ddd))
+
+
+
+
+
 ## [7.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.0...v7.2.1-dev.0) (2024-01-22)
 
 **Note:** Version bump only for package kendo-themes.repo
