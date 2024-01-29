@@ -58,6 +58,11 @@
             display: inline-flex;
         }
 
+        // Splitter
+        .k-gantt-splitter {
+            border-width: 0;
+        }
+
         // React gantt
         .k-treelist-scrollable {
             width: 100%;
