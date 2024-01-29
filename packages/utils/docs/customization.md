@@ -6140,49 +6140,49 @@ This is equivalent to `max-width: fit-content;`.
 
 
 
-### `.k-zindex-0`
+### `.k-z-0`
 
 This is equivalent to `z-index: 0;`.
 
 
 
 
-### `.k-zindex-10`
+### `.k-z-10`
 
 This is equivalent to `z-index: 10;`.
 
 
 
 
-### `.k-zindex-20`
+### `.k-z-20`
 
 This is equivalent to `z-index: 20;`.
 
 
 
 
-### `.k-zindex-30`
+### `.k-z-30`
 
 This is equivalent to `z-index: 30;`.
 
 
 
 
-### `.k-zindex-40`
+### `.k-z-40`
 
 This is equivalent to `z-index: 40;`.
 
 
 
 
-### `.k-zindex-50`
+### `.k-z-50`
 
 This is equivalent to `z-index: 50;`.
 
 
 
 
-### `.k-zindex-auto`
+### `.k-z-auto`
 
 This is equivalent to `z-index: auto;`.
 
