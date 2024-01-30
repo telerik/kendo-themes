@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.2](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.1...v7.2.1-dev.2) (2024-01-30)
+
+
+### Bug Fixes
+
+* **gantt:** remove gantt splitter double border ([05a7ecf](https://github.com/telerik/kendo-themes/commit/05a7ecfd7c8de01d19beccb3a34ebcf856de1f60))
+
+
+
+
+
 ## [7.2.1-dev.1](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.0...v7.2.1-dev.1) (2024-01-29)
 
 **Note:** Version bump only for package @progress/kendo-theme-default
