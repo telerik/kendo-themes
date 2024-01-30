@@ -27,18 +27,21 @@ export const SliderTick = (
         label = defaultProps.label,
         orientation,
         large,
-        text
+        text,
+        ...other
     } = props;
 
     return (
-        <li className={classNames(
-            props.className,
-            SLIDER_TICK_CLASSNAME,
-            {
-                [`k-tick-${orientation}`]: orientation,
-                'k-tick-large': large
-            }
-        )} style={style} >
+        <li
+            {...other}
+            className={classNames(
+                props.className,
+                SLIDER_TICK_CLASSNAME,
+                {
+                    [`k-tick-${orientation}`]: orientation,
+                    'k-tick-large': large
+                }
+            )} style={style} >
             {label && <span className="k-label">{text}</span>}
         </li>
     );

@@ -52,7 +52,8 @@ export const Slider = (
         focus,
         active,
         trackStyle,
-        dir
+        dir,
+        ...other
     } = props;
 
     let iconIncrease;
@@ -67,19 +68,21 @@ export const Slider = (
     }
 
     return (
-        <div className={classNames(
-            SLIDER_CLASSNAME,
-            props.className,
-            stateClassNames(SLIDER_CLASSNAME, {
-                readonly,
-                disabled
-            }),
-            {
-                [`k-slider-${orientation}`]: orientation,
-                'k-colorgradient-slider': type === 'gradient',
-                'k-range-slider': type === 'range'
-            }
-        )} dir={dir} >
+        <div
+            {...other}
+            className={classNames(
+                SLIDER_CLASSNAME,
+                props.className,
+                stateClassNames(SLIDER_CLASSNAME, {
+                    readonly,
+                    disabled
+                }),
+                {
+                    [`k-slider-${orientation}`]: orientation,
+                    'k-colorgradient-slider': type === 'gradient',
+                    'k-range-slider': type === 'range'
+                }
+            )} dir={dir} >
             { showButtons && <Button className="k-button-decrease" rounded="full" icon={iconDecrease} /> }
             <div className="k-slider-track-wrap">
                 {
