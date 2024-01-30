@@ -24449,7 +24449,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default slider size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24459,7 +24459,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default slider track wrap size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider's track wrap.</div></div>
     </td>
 </tr>
 <tr>
@@ -24469,7 +24469,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the slider.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24479,7 +24479,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the slider.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24489,7 +24489,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the slider.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24499,7 +24499,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the slider.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24509,7 +24509,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the slider.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24519,7 +24519,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24529,7 +24529,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24539,7 +24539,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24549,7 +24549,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24559,7 +24559,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24569,7 +24569,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24579,7 +24579,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24589,7 +24589,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24599,7 +24599,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selection background color of the slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider's track selection.</div></div>
     </td>
 </tr>
 <tr>
@@ -24609,7 +24609,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24619,7 +24619,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border width of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border width of the Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24629,7 +24629,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24639,7 +24639,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active transition scale of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition scale of the active Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24649,7 +24649,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active size of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the active Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24659,7 +24659,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24669,7 +24669,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24679,7 +24679,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24689,7 +24689,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24699,7 +24699,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24709,7 +24709,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24719,7 +24719,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24729,7 +24729,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover gradient of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the hovered Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24739,7 +24739,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active background color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24749,7 +24749,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active text color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24759,7 +24759,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active border color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24769,7 +24769,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active gradient of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the active Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24779,7 +24779,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24789,7 +24789,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24799,7 +24799,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24809,7 +24809,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus gradient of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the focused Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24819,7 +24819,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled slider.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24829,7 +24829,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Slider track.</div></div>
     </td>
 </tr>
 <tr>
@@ -24839,7 +24839,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selection background color of the disabled slider track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Slider's track selection.</div></div>
     </td>
 </tr>
 <tr>
@@ -24849,7 +24849,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24859,7 +24859,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the slider.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24869,7 +24869,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function function.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -24879,7 +24879,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the Slider thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -24889,7 +24889,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the slider thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the Slider thumb.</div></div>
     </td>
 </tr>
 </tbody>
@@ -29424,7 +29424,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29434,7 +29434,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29444,7 +29444,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding between the items in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding between the Timeline's track items.</div></div>
     </td>
 </tr>
 <tr>
@@ -29454,7 +29454,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29464,7 +29464,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29474,7 +29474,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29484,7 +29484,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal mobile spacing of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the mobile Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29494,7 +29494,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical mobile spacing of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the mobile Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29504,7 +29504,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The track arrow width of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline track arrow.</div></div>
     </td>
 </tr>
 <tr>
@@ -29514,7 +29514,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The track arrow height of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline track arrow.</div></div>
     </td>
 </tr>
 <tr>
@@ -29524,7 +29524,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
@@ -29534,7 +29534,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the wrapper of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the Timeline's track wrapper.</div></div>
     </td>
 </tr>
 <tr>
@@ -29544,7 +29544,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
@@ -29554,7 +29554,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
@@ -29564,7 +29564,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom offset of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
@@ -29574,7 +29574,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left offset of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
@@ -29584,7 +29584,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The right of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The right offset of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
@@ -29594,7 +29594,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
@@ -29604,7 +29604,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Timeline track.</div></div>
     </td>
 </tr>
 <tr>
@@ -29614,7 +29614,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inset block end of the arrow in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block end inset of the Timeline arrow.</div></div>
     </td>
 </tr>
 <tr>
@@ -29624,7 +29624,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background of the arrow in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Timeline arrow.</div></div>
     </td>
 </tr>
 <tr>
@@ -29634,7 +29634,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text of the arrow in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Timeline arrow.</div></div>
     </td>
 </tr>
 <tr>
@@ -29644,7 +29644,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the arrow in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Timeline arrow.</div></div>
     </td>
 </tr>
 <tr>
@@ -29654,7 +29654,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the track event in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Timeline track event.</div></div>
     </td>
 </tr>
 <tr>
@@ -29664,7 +29664,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29674,7 +29674,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29684,7 +29684,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29694,7 +29694,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29704,7 +29704,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29714,7 +29714,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min widht of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29724,7 +29724,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The max width of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29734,7 +29734,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The max width of the mobile flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the mobile Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29744,7 +29744,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min width of the horizontal flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the horizontal Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29754,7 +29754,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29764,7 +29764,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29774,7 +29774,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the flag callout in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline's flag callout.</div></div>
     </td>
 </tr>
 <tr>
@@ -29784,7 +29784,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the flag callout in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline's flag callout.</div></div>
     </td>
 </tr>
 <tr>
@@ -29794,7 +29794,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset bottom of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom offset of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29804,7 +29804,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the flag in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline flag.</div></div>
     </td>
 </tr>
 <tr>
@@ -29814,7 +29814,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the card header in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline's Card header.</div></div>
     </td>
 </tr>
 <tr>
@@ -29824,7 +29824,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of the card header in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline's Card header.</div></div>
     </td>
 </tr>
 <tr>
@@ -29834,7 +29834,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the card body scroll in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the Timeline's Card body scroll.</div></div>
     </td>
 </tr>
 <tr>
@@ -29844,7 +29844,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the card body scroll of the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline's Card body scroll.</div></div>
     </td>
 </tr>
 <tr>
@@ -29854,7 +29854,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover of the card scroll thumb in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Timeline's hovered card scroll thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -29864,7 +29864,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text of the date body in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Timeline date body.</div></div>
     </td>
 </tr>
 <tr>
@@ -29874,7 +29874,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the date in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline date.</div></div>
     </td>
 </tr>
 <tr>
@@ -29884,7 +29884,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the date in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline date.</div></div>
     </td>
 </tr>
 <tr>
@@ -29894,7 +29894,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29904,7 +29904,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical dates timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical Timeline date.</div></div>
     </td>
 </tr>
 <tr>
@@ -29914,7 +29914,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the vertical timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the vertical Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29924,7 +29924,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile Timeline.</div></div>
     </td>
 </tr>
 <tr>
@@ -29934,7 +29934,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile dates in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile Timeline date.</div></div>
     </td>
 </tr>
 <tr>
@@ -29944,7 +29944,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the circle in the timeline</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline circle.</div></div>
     </td>
 </tr>
 <tr>
@@ -29954,7 +29954,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the circle in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline circle.</div></div>
     </td>
 </tr>
 <tr>
@@ -29964,7 +29964,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the circle in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline circle.</div></div>
     </td>
 </tr>
 <tr>
@@ -29974,7 +29974,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the events in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline event.</div></div>
     </td>
 </tr>
 <tr>
@@ -29984,7 +29984,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the events in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline event.</div></div>
     </td>
 </tr>
 <tr>
@@ -29994,7 +29994,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min height of the events in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the Timeline event.</div></div>
     </td>
 </tr>
 <tr>
@@ -30004,7 +30004,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the icons in the timeline.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Timeline icons.</div></div>
     </td>
 </tr>
 </tbody>
