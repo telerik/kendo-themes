@@ -1,114 +1,83 @@
 import { Button } from '../../button';
+import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '..';
 
 
-export default () =>(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <div className="k-widget k-tabstrip k-header k-tabstrip-top">
-                    <div className="k-tabstrip-items-wrapper k-hstack">
-                        <ul className="k-reset k-tabstrip-items">
-                            <li className="k-item k-first k-active k-tabstrip-dragging">
-                                <span className="k-link">First</span>
-                            </li>
-                            <li className="k-item">
-                                <span className="k-link">Closable</span>
+                <TabStrip>
+                    <TabStripItemsWrapper orientation="horizontal">
+                        <TabStripItems>
+                            <TabStripItem first active dragging value="First" />
+                            <TabStripItem value="Closable">
                                 <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </li>
-                            <li className="k-item k-focus">
-                                <span className="k-link">Focused</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="k-tabstrip-content k-active k-focus">
+                            </TabStripItem>
+                            <TabStripItem last focus value="Focused" />
+                        </TabStripItems>
+                    </TabStripItemsWrapper>
+                    <TabStripContent active focus>
                         <div>Top sortable</div>
-                    </div>
-                </div>
+                    </TabStripContent>
+                </TabStrip>
             </section>
 
             <section>
-                <div className="k-widget k-tabstrip k-header k-tabstrip-bottom">
-                    <div className="k-tabstrip-content k-active">
+                <TabStrip position="bottom">
+                    <TabStripContent active>
                         <div>Bottom sortable</div>
-                    </div>
-                    <div className="k-tabstrip-items-wrapper k-hstack">
-                        <ul className="k-reset k-tabstrip-items">
-                            <li className="k-item k-first k-active k-tabstrip-dragging">
-                                <span className="k-link">First</span>
-                            </li>
-                            <li className="k-item">
-                                <span className="k-link">Closable</span>
+                    </TabStripContent>
+                    <TabStripItemsWrapper orientation="horizontal">
+                        <TabStripItems>
+                            <TabStripItem first active dragging value="First" />
+                            <TabStripItem value="Closable">
                                 <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </li>
-                            <li className="k-item k-focus">
-                                <span className="k-link">Focused</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                            </TabStripItem>
+                            <TabStripItem last focus value="Focused" />
+                        </TabStripItems>
+                    </TabStripItemsWrapper>
+                </TabStrip>
             </section>
 
             <section>
-                <div className="k-widget k-tabstrip k-header k-tabstrip-left">
-                    <div className="k-tabstrip-items-wrapper k-vstack">
-                        <ul className="k-reset k-tabstrip-items">
-                            <li className="k-item k-first k-active k-tabstrip-dragging">
-                                <span className="k-link">Active</span>
-                            </li>
-                            <li className="k-item">
-                                <span className="k-link">Normal</span>
-                            </li>
-                            <li className="k-item k-hover">
-                                <span className="k-link">Hover</span>
-                            </li>
-                            <li className="k-item k-focus">
-                                <span className="k-link">Focused</span>
-                            </li>
-                            <li className="k-item">
-                                <span className="k-link">Closable</span>
+                <TabStrip position="left">
+                    <TabStripItemsWrapper orientation="vertical">
+                        <TabStripItems>
+                            <TabStripItem first active dragging value="Active" />
+                            <TabStripItem value="Normal" />
+                            <TabStripItem hover value="Hover" />
+                            <TabStripItem focus value="Focused" />
+                            <TabStripItem value="Closable">
                                 <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </li>
-                            <li className="k-item k-last k-disabled">
-                                <span className="k-link">Disabled</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="k-tabstrip-content k-active">
+                            </TabStripItem>
+                            <TabStripItem last disabled value="Disabled" />
+                        </TabStripItems>
+                    </TabStripItemsWrapper>
+                    <TabStripContent active>
                         <div>Left orientation</div>
-                    </div>
-                </div>
+                    </TabStripContent>
+                </TabStrip>
             </section>
 
             <section>
-                <div className="k-widget k-tabstrip k-header k-tabstrip-right">
-                    <div className="k-tabstrip-items-wrapper k-vstack">
-                        <ul className="k-reset k-tabstrip-items">
-                            <li className="k-item k-first k-active k-tabstrip-dragging">
-                                <span className="k-link">Active</span>
-                            </li>
-                            <li className="k-item">
-                                <span className="k-link">Normal</span>
-                            </li>
-                            <li className="k-item k-hover">
-                                <span className="k-link">Hover</span>
-                            </li>
-                            <li className="k-item k-focus">
-                                <span className="k-link">Focused</span>
-                            </li>
-                            <li className="k-item">
-                                <span className="k-link">Closable</span>
+                <TabStrip position="right">
+                    <TabStripItemsWrapper orientation="vertical">
+                        <TabStripItems>
+                            <TabStripItem first active dragging value="Active" />
+                            <TabStripItem value="Normal" />
+                            <TabStripItem hover value="Hover" />
+                            <TabStripItem focus value="Focused" />
+                            <TabStripItem value="Closable">
                                 <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </li>
-                            <li className="k-item k-last k-disabled">
-                                <span className="k-link">Disabled</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="k-tabstrip-content k-active">
+                            </TabStripItem>
+                            <TabStripItem last disabled value="Disabled" />
+                        </TabStripItems>
+                    </TabStripItemsWrapper>
+                    <TabStripContent active>
                         <div>Right orientation</div>
-                    </div>
-                </div>
+                    </TabStripContent>
+                </TabStrip>
             </section>
 
         </div>
