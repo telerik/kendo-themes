@@ -1,4 +1,4 @@
-import { MenuList, MenuItem } from '../../menu';
+import { MenuList, MenuListItem } from '../../menu';
 import { Popup } from '../../popup';
 
 
@@ -27,12 +27,12 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList size="small">
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Focus & Active" active focus></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
+                        <MenuListItem first text="Normal"></MenuListItem>
+                        <MenuListItem text="Hover" hover></MenuListItem>
+                        <MenuListItem text="Focus" focus></MenuListItem>
+                        <MenuListItem text="Active" active></MenuListItem>
+                        <MenuListItem text="Focus & Active" active focus></MenuListItem>
+                        <MenuListItem last text="Disabled" disabled></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -40,12 +40,12 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Focus & Active" active focus></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
+                        <MenuListItem first text="Normal"></MenuListItem>
+                        <MenuListItem text="Hover" hover></MenuListItem>
+                        <MenuListItem text="Focus" focus></MenuListItem>
+                        <MenuListItem text="Active" active></MenuListItem>
+                        <MenuListItem text="Focus & Active" active focus></MenuListItem>
+                        <MenuListItem last text="Disabled" disabled></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -53,12 +53,12 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList size="large">
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Focus & Active" active focus></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
+                        <MenuListItem first text="Normal"></MenuListItem>
+                        <MenuListItem text="Hover" hover></MenuListItem>
+                        <MenuListItem text="Focus" focus></MenuListItem>
+                        <MenuListItem text="Active" active></MenuListItem>
+                        <MenuListItem text="Focus & Active" active focus></MenuListItem>
+                        <MenuListItem last text="Disabled" disabled></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -67,9 +67,9 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList size="small">
-                        <MenuItem text="Normal" showArrow></MenuItem>
-                        <MenuItem text="No arrow"></MenuItem>
-                        <MenuItem text="With icon" icon="folder" showArrow></MenuItem>
+                        <MenuListItem first text="Normal" showArrow></MenuListItem>
+                        <MenuListItem text="No arrow"></MenuListItem>
+                        <MenuListItem last text="With icon" icon="folder" showArrow></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -77,9 +77,9 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Normal" showArrow></MenuItem>
-                        <MenuItem text="No arrow"></MenuItem>
-                        <MenuItem text="With icon" icon="folder" showArrow></MenuItem>
+                        <MenuListItem first text="Normal" showArrow></MenuListItem>
+                        <MenuListItem text="No arrow"></MenuListItem>
+                        <MenuListItem last text="With icon" icon="folder" showArrow></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -87,9 +87,9 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList size="large">
-                        <MenuItem text="Normal" showArrow></MenuItem>
-                        <MenuItem text="No arrow"></MenuItem>
-                        <MenuItem text="With icon" icon="folder" showArrow></MenuItem>
+                        <MenuListItem first text="Normal" showArrow></MenuListItem>
+                        <MenuListItem text="No arrow"></MenuListItem>
+                        <MenuListItem last text="With icon" icon="folder" showArrow></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -98,9 +98,9 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList size="small">
-                        <MenuItem text="Normal" showArrow arrowIconName="chevron-right"></MenuItem>
-                        <MenuItem text="No arrow"></MenuItem>
-                        <MenuItem text="With icon" icon="folder" showArrow arrowIconName="chevron-right"></MenuItem>
+                        <MenuListItem first text="Normal" showArrow arrowIconName="chevron-right"></MenuListItem>
+                        <MenuListItem text="No arrow"></MenuListItem>
+                        <MenuListItem last text="With icon" icon="folder" showArrow arrowIconName="chevron-right"></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -108,9 +108,9 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Normal" showArrow arrowIconName="chevron-right"></MenuItem>
-                        <MenuItem text="No arrow"></MenuItem>
-                        <MenuItem text="With icon" icon="folder" showArrow arrowIconName="chevron-right"></MenuItem>
+                        <MenuListItem first text="Normal" showArrow arrowIconName="chevron-right"></MenuListItem>
+                        <MenuListItem text="No arrow"></MenuListItem>
+                        <MenuListItem last text="With icon" icon="folder" showArrow arrowIconName="chevron-right"></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -118,9 +118,9 @@ export default () =>(
             <section>
                 <Popup className="k-menu-popup">
                     <MenuList size="large">
-                        <MenuItem text="Normal" showArrow arrowIconName="chevron-right"></MenuItem>
-                        <MenuItem text="No arrow"></MenuItem>
-                        <MenuItem text="With icon" icon="folder" showArrow arrowIconName="chevron-right"></MenuItem>
+                        <MenuListItem first text="Normal" showArrow arrowIconName="chevron-right"></MenuListItem>
+                        <MenuListItem text="No arrow"></MenuListItem>
+                        <MenuListItem last text="With icon" icon="folder" showArrow arrowIconName="chevron-right"></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>

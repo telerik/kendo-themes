@@ -1,4 +1,4 @@
-import { MenuItem, MenuList } from '../../menu';
+import { MenuListItem, MenuList } from '../../menu';
 import { Popup } from '../../popup';
 
 
@@ -21,17 +21,17 @@ export default () =>(
             <section className="wrap">
                 <Popup className="k-menu-popup">
                     <MenuList className="k-context-menu">
-                        <MenuItem text="Item 1" selected showArrow></MenuItem>
-                        <MenuItem text="Item 2"></MenuItem>
-                        <MenuItem text="Item 3"></MenuItem>
+                        <MenuListItem text="Item 1" selected showArrow></MenuListItem>
+                        <MenuListItem text="Item 2"></MenuListItem>
+                        <MenuListItem text="Item 3"></MenuListItem>
                     </MenuList>
                 </Popup>
 
 
                 <Popup className="k-menu-popup" offset={{ left: "100%", top: 0 }}>
                     <MenuList className="k-context-menu">
-                        <MenuItem text="Item 1.1"></MenuItem>
-                        <MenuItem text="Item 1.2"></MenuItem>
+                        <MenuListItem text="Item 1.1"></MenuListItem>
+                        <MenuListItem text="Item 1.2"></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>

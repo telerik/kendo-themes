@@ -1,4 +1,4 @@
-import { MenuItem, MenuSeparator, MenuList } from '../../menu';
+import { MenuListItem, MenuSeparator, MenuList } from '../../menu';
 import { ToolbarPopup } from '../../toolbar';
 
 
@@ -20,29 +20,29 @@ export default () =>(
             <section>
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Item 1"></MenuItem>
-                        <MenuItem text="Item 2"></MenuItem>
-                        <MenuItem text="Item 3"></MenuItem>
+                        <MenuListItem text="Item 1"></MenuListItem>
+                        <MenuListItem text="Item 2"></MenuListItem>
+                        <MenuListItem text="Item 3"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
             <section>
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Item 1" icon="plus"></MenuItem>
-                        <MenuItem text="Item 2" icon="plus"></MenuItem>
-                        <MenuItem text="Item 3" icon="plus"></MenuItem>
+                        <MenuListItem text="Item 1" icon="plus"></MenuListItem>
+                        <MenuListItem text="Item 2" icon="plus"></MenuListItem>
+                        <MenuListItem text="Item 3" icon="plus"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
             <section>
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Item 1"></MenuItem>
-                        <MenuItem text="Item 2"></MenuItem>
-                        <MenuItem text="Item 3"></MenuItem>
+                        <MenuListItem text="Item 1"></MenuListItem>
+                        <MenuListItem text="Item 2"></MenuListItem>
+                        <MenuListItem text="Item 3"></MenuListItem>
                         <MenuSeparator></MenuSeparator>
-                        <MenuItem text="Item after separator" icon="plus"></MenuItem>
+                        <MenuListItem text="Item after separator" icon="plus"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
@@ -51,29 +51,29 @@ export default () =>(
             <section className="k-rtl" dir="rtl">
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Item 1"></MenuItem>
-                        <MenuItem text="Item 2"></MenuItem>
-                        <MenuItem text="Item 3"></MenuItem>
+                        <MenuListItem text="Item 1"></MenuListItem>
+                        <MenuListItem text="Item 2"></MenuListItem>
+                        <MenuListItem text="Item 3"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
             <section className="k-rtl" dir="rtl">
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Item 1" icon="plus"></MenuItem>
-                        <MenuItem text="Item 2" icon="plus"></MenuItem>
-                        <MenuItem text="Item 3" icon="plus"></MenuItem>
+                        <MenuListItem text="Item 1" icon="plus"></MenuListItem>
+                        <MenuListItem text="Item 2" icon="plus"></MenuListItem>
+                        <MenuListItem text="Item 3" icon="plus"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
             <section className="k-rtl" dir="rtl">
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Item 1"></MenuItem>
-                        <MenuItem text="Item 2"></MenuItem>
-                        <MenuItem text="Item 3"></MenuItem>
+                        <MenuListItem text="Item 1"></MenuListItem>
+                        <MenuListItem text="Item 2"></MenuListItem>
+                        <MenuListItem text="Item 3"></MenuListItem>
                         <MenuSeparator></MenuSeparator>
-                        <MenuItem text="Item after separator" icon="plus"></MenuItem>
+                        <MenuListItem text="Item after separator" icon="plus"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>

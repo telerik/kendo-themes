@@ -1,5 +1,5 @@
+import { Menu, MenuItem } from '..';
 import { Button } from '../../button';
-import { Icon } from '../../icon';
 
 
 const style = `
@@ -18,111 +18,29 @@ export default () =>(
             <span>Vertical Scrolling Menu</span>
 
             <section>
-                <ul id="menu" className="k-widget k-reset k-header k-menu k-menu-vertical">
-                    <li className="k-item k-menu-item k-disabled k-first">
-                        <span className="k-link k-menu-link">
-                            <span className="k-menu-link-text">Disabled</span>
-                        </span>
-                    </li>
-                    <li className="k-item k-menu-item">
-                        <span className="k-link k-menu-link">
-                            <span className="k-menu-link-text">Normal</span>
-                        </span>
-                    </li>
-                    <li className="k-item k-menu-item k-hover">
-                        <span className="k-link k-menu-link">
-                            <span className="k-menu-link-text">Hover</span>
-                            <span className="k-menu-expand-arrow">
-                                <Icon icon="caret-alt-right"></Icon>
-                            </span>
-                        </span>
-                    </li>
-                    <li className="k-item k-menu-item k-active">
-                        <span className="k-link k-menu-link">
-                            <span className="k-menu-link-text">Active</span>
-                            <span className="k-menu-expand-arrow">
-                                <Icon icon="caret-alt-right"></Icon>
-                            </span>
-                        </span>
-                    </li>
-                    <li className="k-item k-menu-item k-focus">
-                        <span className="k-link k-menu-link">
-                            <span className="k-menu-link-text">Focus</span>
-                        </span>
-                    </li>
-                    <li className="k-item k-menu-item">
-                        <span className="k-link k-menu-link">
-                            <Icon icon="folder"></Icon>
-                            <span className="k-menu-link-text">Normal with icon</span>
-                            <span className="k-menu-expand-arrow">
-                                <Icon icon="caret-alt-right"></Icon>
-                            </span>
-                        </span>
-                    </li>
-                    <li className="k-item k-menu-item k-hover">
-                        <span className="k-link k-menu-link">
-                            <Icon icon="folder"></Icon>
-                            <span className="k-menu-link-text">Hover with icon</span>
-                            <span className="k-menu-expand-arrow">
-                                <Icon icon="caret-alt-right"></Icon>
-                            </span>
-                        </span>
-                    </li>
-                    <li className="k-item k-menu-item k-active">
-                        <span className="k-link k-menu-link">
-                            <Icon icon="folder"></Icon>
-                            <span className="k-menu-link-text">Active with icon</span>
-                            <span className="k-menu-expand-arrow">
-                                <Icon icon="caret-alt-right"></Icon>
-                            </span>
-                        </span>
-                    </li>
-                    <li className="k-item k-menu-item k-focus">
-                        <span className="k-link k-menu-link">
-                            <Icon icon="folder"></Icon>
-                            <span className="k-menu-link-text">Focus with icon</span>
-                            <span className="k-menu-expand-arrow">
-                                <Icon icon="caret-alt-right"></Icon>
-                            </span>
-                        </span>
-                    </li>
-                </ul>
+                <Menu orientation="vertical">
+                    <MenuItem first text="Disabled" disabled></MenuItem>
+                    <MenuItem text="Normal"></MenuItem>
+                    <MenuItem text="Hover" hover showArrow></MenuItem>
+                    <MenuItem text="Active" active showArrow></MenuItem>
+                    <MenuItem text="Focus" focus></MenuItem>
+                    <MenuItem text="Normal with icon" icon="folder" showArrow></MenuItem>
+                    <MenuItem text="Hover with icon" icon="folder" hover showArrow></MenuItem>
+                    <MenuItem text="Active with icon" icon="folder" active showArrow></MenuItem>
+                    <MenuItem last text="Focus with icon" icon="folder" focus showArrow></MenuItem>
+                </Menu>
             </section>
 
             <section>
                 <div className="k-menu-scroll-wrapper vertical">
-                    <ul id="menu" className="k-widget k-reset k-header k-menu k-menu-vertical" style={{ height: "150px" }} >
-                        <li className="k-item k-menu-item k-first">
-                            <span className="k-link k-menu-link">
-                                <span className="k-menu-link-text">Item 1</span>
-                            </span>
-                        </li>
-                        <li className="k-item k-menu-item">
-                            <span className="k-link k-menu-link">
-                                <span className="k-menu-link-text">Item 2</span>
-                            </span>
-                        </li>
-                        <li className="k-item k-menu-item">
-                            <span className="k-link k-menu-link">
-                                <span className="k-menu-link-text">Item 3</span>
-                            </span>
-                        </li>
-                        <li className="k-item k-menu-item">
-                            <span className="k-link k-menu-link">
-                                <span className="k-menu-link-text">Item 4</span>
-                            </span>
-                        </li>
-                        <li className="k-item k-menu-item k-last">
-                            <span className="k-link k-menu-link">
-                                <span className="k-menu-link-text">Item 5</span>
-                            </span>
-                        </li>
-                        <li className="k-item k-menu-item k-last">
-                            <span className="k-link k-menu-link">
-                                <span className="k-menu-link-text">Item 6</span>
-                            </span>
-                        </li>
-                    </ul>
+                    <Menu orientation="vertical" style={{ height: "150px" }} >
+                        <MenuItem first text="Item 1"></MenuItem>
+                        <MenuItem text="Item 2"></MenuItem>
+                        <MenuItem text="Item 3"></MenuItem>
+                        <MenuItem text="Item 4"></MenuItem>
+                        <MenuItem text="Item 5"></MenuItem>
+                        <MenuItem last text="Item 6"></MenuItem>
+                    </Menu>
                     <Button icon="caret-alt-up" className="k-menu-scroll-button k-scroll-up"></Button>
                     <Button icon="caret-alt-down" className="k-menu-scroll-button k-scroll-down"></Button>
                 </div>
