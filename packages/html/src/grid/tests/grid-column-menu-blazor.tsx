@@ -1,12 +1,12 @@
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
+import { GridWithColumnMenu, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
-            <Grid className="telerik-blazor">
+            <GridWithColumnMenu className="telerik-blazor" pager={false}>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable role="grid">
@@ -73,10 +73,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithColumnMenu>
 
             <h3>Sortable</h3>
-            <Grid className="telerik-blazor">
+            <GridWithColumnMenu className="telerik-blazor" pager={false}>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable role="grid">
@@ -143,10 +143,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithColumnMenu>
 
             <h3>Sortable & Resizable</h3>
-            <Grid className="telerik-blazor">
+            <GridWithColumnMenu className="telerik-blazor" pager={false}>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable role="grid">
@@ -213,7 +213,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithColumnMenu>
 
         </div>
     </>

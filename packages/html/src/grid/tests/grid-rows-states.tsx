@@ -1,5 +1,5 @@
 import { Checkbox } from '../../checkbox';
-import { Grid, GridTable } from '../../grid';
+import { GridNormal, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTh, TableTd } from '../../table';
 
 
@@ -21,7 +21,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Grid className="k-grid-no-scrollbar">
+                <GridNormal pager={false} groupingHeader={false} className="k-grid-no-scrollbar">
                     <GridTable>
                         <colgroup>
                             <col style={{ width: '50px' }} /><col /><col className="k-sorted" /><col /><col />
@@ -149,7 +149,7 @@ export default () =>(
                             </TableRow>
                         </TableTbody>
                     </GridTable>
-                </Grid>
+                </GridNormal>
                 <div className="k-marquee"><div className="k-marquee-color"></div></div>
             </section>
 

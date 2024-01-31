@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable , GridToolbar } from '../../grid';
+import { GridWithEditRow, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable , GridToolbar } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -9,7 +9,7 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Edit Row</h3>
-            <Grid className="telerik-blazor" toolbar={(
+            <GridWithEditRow className="telerik-blazor" toolbar={(
                 <GridToolbar>
                     <Button icon="plus">Add</Button>
                 </GridToolbar>
@@ -86,9 +86,9 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithEditRow>
             <h3>New Row</h3>
-            <Grid className="telerik-blazor" toolbar={(
+            <GridWithEditRow className="telerik-blazor" toolbar={(
                 <GridToolbar>
                     <Button icon="plus">Add</Button>
                 </GridToolbar>
@@ -181,7 +181,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithEditRow>
         </div>
     </>
 );

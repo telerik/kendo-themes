@@ -1,11 +1,11 @@
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell } from '../../grid';
+import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell } from '../../grid';
 import { TableThead, TableRow } from '../../table';
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <span>LTR</span>
-            <Grid className="test-grid k-grid-display-block k-grid-no-scrollbar" style={{ height: "300px", width: "800px" }}>
+            <GridNormal pager={false} groupingHeader={false} className="test-grid k-grid-display-block k-grid-no-scrollbar" style={{ height: "300px", width: "800px" }}>
                 <GridHeader>
                     <div className="k-grid-header-wrap k-auto-scrollable">
                         <GridHeaderTable>
@@ -39,11 +39,11 @@ export default () =>(
                         </GridHeaderTable>
                     </div>
                 </GridHeader>
-            </Grid>
+            </GridNormal>
 
             <span>RTL</span>
             <div className="k-rtl k-d-flex k-justify-content-end">
-                <Grid className="test-grid k-grid-display-block k-grid-no-scrollbar" style={{ height: "300px", width: "800px" }}>
+                <GridNormal pager={false} groupingHeader={false} className="test-grid k-grid-display-block k-grid-no-scrollbar" style={{ height: "300px", width: "800px" }}>
                     <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <GridHeaderTable>
@@ -77,7 +77,7 @@ export default () =>(
                             </GridHeaderTable>
                         </div>
                     </GridHeader>
-                </Grid>
+                </GridNormal>
             </div>
 
         </div>

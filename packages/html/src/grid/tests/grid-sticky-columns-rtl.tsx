@@ -1,6 +1,6 @@
 import { Icon } from '../../icon';
 import { Chip, ChipList, ChipAction } from '../../chip';
-import { Grid, GridGroupingHeader, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridPager } from '../../grid';
+import { GridWithStickyColumns, GridGroupingHeader, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridPager } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 const styles = `
@@ -14,7 +14,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <p>React Grid - Sticky columns - RTL</p>
-            <Grid className="k-rtl" style={{ height: "700px", width: "500px" }} groupingHeader={(
+            <GridWithStickyColumns className="k-rtl" style={{ height: "700px", width: "500px" }} groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>shipName</Chip>
@@ -147,7 +147,7 @@ export default () =>(
                         <div className="k-height-container"><div></div></div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithStickyColumns>
         </div>
     </>
 );

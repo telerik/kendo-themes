@@ -1,6 +1,6 @@
 import { Button } from '../../button';
 import { Searchbox } from '../../searchbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
+import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
 import { TableRow, TableThead, TableTbody, TableTd } from '../../table';
 
 export default () =>(
@@ -10,7 +10,7 @@ export default () =>(
             <span className="col-2">Resizing Row / Hover</span>
 
             <section className="col-2">
-                <Grid className="k-grid-display-block" toolbar={(
+                <GridNormal pager={false} groupingHeader={false} className="k-grid-display-block" toolbar={(
                     <GridToolbar>
                         <Button className="k-toolbar-button" icon="plus">Add new record</Button>
                         <span className="k-spacer"></span>
@@ -83,13 +83,13 @@ export default () =>(
                             </span>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span className="col-2">Resizing Row / Drag</span>
 
             <section className="col-2">
-                <Grid className="k-grid-display-block" toolbar={(
+                <GridNormal pager={false} groupingHeader={false} className="k-grid-display-block" toolbar={(
                     <GridToolbar>
                         <Button className="k-toolbar-button" icon="plus">Add new record</Button>
                         <span className="k-spacer"></span>
@@ -162,7 +162,7 @@ export default () =>(
                             </span>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
         </div>
     </>

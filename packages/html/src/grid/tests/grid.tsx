@@ -1,6 +1,6 @@
 import { Icon } from '../../icon';
 import { SkeletonNormal } from '../../skeleton';
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
+import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -11,7 +11,7 @@ export default () =>(
             <span className="col-2">jQuery grid</span>
 
             <section className="col-2">
-                <Grid className="k-grid-no-scrollbar" pager={( <GridPager /> )}>
+                <GridNormal _renderAriaRoot={false} groupingHeader={false} className="k-grid-no-scrollbar">
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -62,13 +62,13 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span className="col-2">jQuery -- fixed height, hierarchy, filter menu, sort icon</span>
 
             <section className="col-2">
-                <Grid className="k-grid-no-scrollbar" style={{ height: "250px" }}>
+                <GridNormal _renderAriaRoot={false} groupingHeader={false} className="k-grid-no-scrollbar" style={{ height: "250px" }} pager={false}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -128,12 +128,12 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span>Drag column</span>
             <section className="col-2">
-                <Grid id="grid" data-role="grid" className="k-grid-display-block">
+                <GridNormal _renderAriaRoot={false} groupingHeader={false} id="grid" data-role="grid" className="k-grid-display-block" pager={false}>
                     <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <GridHeaderTable>
@@ -175,7 +175,7 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
         </div>
     </>

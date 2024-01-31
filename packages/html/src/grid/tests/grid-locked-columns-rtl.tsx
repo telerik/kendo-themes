@@ -1,6 +1,6 @@
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
+import { GridWithLockedColumns, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd, TableTfoot } from '../../table';
 
 const styles = `
@@ -19,7 +19,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <span>Angular Grid with locked columns, Grouping and Multiline headers</span>
-            <Grid dir="rtl" className="k-grid-lockedcolumns grid-styling-overrides" style={{ height: "700px" }}>
+            <GridWithLockedColumns dir="rtl" className="grid-styling-overrides" style={{ height: "700px" }}>
                 <GridHeader>
                     <div className="k-grid-header-locked" style={{ width: "582px" }}>
                         <GridHeaderTable style={{ width: "582px" }}>
@@ -259,7 +259,7 @@ export default () =>(
                         </GridFooterTable>
                     </div>
                 </GridFooter>
-            </Grid>
+            </GridWithLockedColumns>
         </div>
     </>
 );
