@@ -1,13 +1,11 @@
-import { Chip, ChipAction, ChipList } from '../../chip';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 import { Popup } from '../../popup';
 import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { FormNormal, FormField } from '../../form';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar, GridPager } from '../../grid';
 import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuExpander, ColumnMenuNormal } from '../../column-menu';
+import { GridWithColumnMenu } from '../../grid';
 
 
 const styles = `
@@ -33,89 +31,8 @@ export default () =>(
         <div id="test-area">
 
             <section>
-                <Grid className="k-grid-no-scrollbar" toolbar={(
-                    <GridToolbar>
-                        <ChipList>
-                            <Chip text="Units in Stock" icon="sort-asc-small" actions={
-                                <>
-                                    <ChipAction type="more"/>
-                                    <ChipAction type="remove"/>
-                                </>
-                            } />
-                            <Chip text="Category" icon="sort-desc-small" actions={
-                                <>
-                                    <ChipAction type="more"/>
-                                    <ChipAction type="remove"/>
-                                </>
-                            } />
-                        </ChipList>
-                    </GridToolbar>
-                )} pager={(
-                    <GridPager refresh={false} />
-                )}>
-                    <GridHeader>
-                        <div className="k-grid-header-wrap">
-                            <GridHeaderTable>
-                                <colgroup>
-                                    <col />
-                                    <col />
-                                    <col />
-                                </colgroup>
-                                <TableThead>
-                                    <TableRow>
-                                        <GridHeaderCell sortable menu="column" columnTitle="Product Id"></GridHeaderCell>
-                                        <GridHeaderCell sortable menu="column" columnTitle="Unit Price"></GridHeaderCell>
-                                        <GridHeaderCell sortable menu="column" columnTitle="Discontinued"></GridHeaderCell>
-                                        <GridHeaderCell sortable menu="column" columnTitle="Category"></GridHeaderCell>
-                                    </TableRow>
-                                </TableThead>
-                            </GridHeaderTable>
-                        </div>
-                    </GridHeader>
-                    <GridContainer>
-                        <GridContent>
-                            <GridTable>
-                                <colgroup>
-                                    <col />
-                                    <col />
-                                    <col />
-                                </colgroup>
-                                <TableTbody>
-                                    <TableRow className="k-master-row">
-                                        <TableTd>Chef Anton's Gumbo</TableTd>
-                                        <TableTd>21.35</TableTd>
-                                        <TableTd>0</TableTd>
-                                        <TableTd>Condiments</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-alt" alt>
-                                        <TableTd>Alice Mutton</TableTd>
-                                        <TableTd>39</TableTd>
-                                        <TableTd>0</TableTd>
-                                        <TableTd>Meat/Poultry</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-master-row">
-                                        <TableTd>Singaporean Hokkien Fried Mee</TableTd>
-                                        <TableTd>123.79</TableTd>
-                                        <TableTd>1</TableTd>
-                                        <TableTd>Meat/Poultry</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-alt" alt>
-                                        <TableTd>Gorgonzola Telino</TableTd>
-                                        <TableTd>12.5</TableTd>
-                                        <TableTd>0</TableTd>
-                                        <TableTd>Meat/Poultry</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-master-row">
-                                        <TableTd>Perth Pasties</TableTd>
-                                        <TableTd>32.8</TableTd>
-                                        <TableTd>0</TableTd>
-                                        <TableTd>Meat/Poultry</TableTd>
-                                    </TableRow>
-                                </TableTbody>
-                            </GridTable>
-                        </GridContent>
-                    </GridContainer>
-                </Grid>
+                <GridWithColumnMenu className="k-grid-no-scrollbar">
+                </GridWithColumnMenu>
             </section>
 
             <Popup className="k-grid-columnmenu-popup">

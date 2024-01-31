@@ -1,6 +1,5 @@
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, } from '../../grid';
+import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, } from '../../grid';
 import { TableRow, TableThead } from '../../table';
-
 
 const styles = `
     .section {
@@ -18,7 +17,7 @@ export default () =>(
         <div id="test-area">
             <div className="sections-wrapper">
                 <div className="section">
-                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} _renderAriaRoot={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -33,11 +32,11 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
                 <div className="section k-rtl">
-                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} _renderAriaRoot={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -52,7 +51,7 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
             </div>
@@ -60,7 +59,7 @@ export default () =>(
             <div className="sections-wrapper">
 
                 <div className="section">
-                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} _renderAriaRoot={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -75,11 +74,11 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
                 <div className="section k-rtl">
-                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} _renderAriaRoot={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -94,7 +93,7 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
             </div>
@@ -102,7 +101,7 @@ export default () =>(
             <div className="sections-wrapper">
 
                 <div className="section">
-                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} _renderAriaRoot={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -117,11 +116,11 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
                 <div className="section k-rtl">
-                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} _renderAriaRoot={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -136,7 +135,7 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
             </div>
@@ -144,7 +143,7 @@ export default () =>(
             <div className="sections-wrapper">
 
                 <div className="section">
-                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} _renderAriaRoot={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -159,11 +158,11 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
                 <div className="section k-rtl">
-                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} _renderAriaRoot={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -178,7 +177,7 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
             </div>
@@ -186,7 +185,7 @@ export default () =>(
             {/* Angular Specific */}
             <div className="sections-wrapper">
                 <div className="section">
-                    <Grid className="k-grid-no-scrollbar" _renderAriaRoot style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} className="k-grid-no-scrollbar" style={{ height: "60px" }}>
                         {/* add padding-left or -right for scrollbar width */}
                         <GridHeader>
                             <div className="k-grid-header-wrap">
@@ -202,12 +201,12 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
 
                 {/* Angular Specific */}
                 <div className="section">
-                    <Grid className="k-grid-no-scrollbar" _renderAriaRoot dir="rtl" style={{ height: "60px" }}>
+                    <GridNormal pager={false} groupingHeader={false} className="k-grid-no-scrollbar" dir="rtl" style={{ height: "60px" }}>
                         {/* add padding-left or -right for scrollbar width */}
                         <GridHeader>
                             <div className="k-grid-header-wrap">
@@ -223,7 +222,7 @@ export default () =>(
                                 </GridHeaderTable>
                             </div>
                         </GridHeader>
-                    </Grid>
+                    </GridNormal>
                 </div>
             </div>
 

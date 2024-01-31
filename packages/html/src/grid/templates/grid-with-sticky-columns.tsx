@@ -17,10 +17,10 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-grid-content-sticky" rowspan={1} colspan={1} columnTitle="Product Name" style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}></GridHeaderCell>
+                                    <GridHeaderCell className="k-grid-header-sticky" rowspan={1} colspan={1} columnTitle="Product Name" style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Units In Stock"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Price"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-content-sticky" rowspan={1} colspan={1} columnTitle="Units on Order" style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}></GridHeaderCell>
+                                    <GridHeaderCell className="k-grid-header-sticky" rowspan={1} colspan={1} columnTitle="Units on Order" style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Reorder Level"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>

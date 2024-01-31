@@ -8,7 +8,7 @@ import { MultiSelect } from '../../multiselect';
 import { NumericTextbox } from '../../numerictextbox';
 import { Switch } from '../../switch';
 import { TimePicker } from '../../timepicker';
-import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable } from '../../grid';
+import { GridWithEditRow, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -16,7 +16,7 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <Grid _renderAriaRoot className="k-grid-no-scrollbar">
+            <GridWithEditRow toolbar={false} className="k-grid-no-scrollbar">
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -78,9 +78,9 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithEditRow>
 
-            <Grid _renderAriaRoot className="k-grid-no-scrollbar">
+            <GridWithEditRow toolbar={false} className="k-grid-no-scrollbar">
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -142,9 +142,9 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithEditRow>
 
-            <Grid _renderAriaRoot className="k-grid-no-scrollbar">
+            <GridWithEditRow toolbar={false} className="k-grid-no-scrollbar">
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -195,7 +195,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithEditRow>
         </div>
     </>
 );

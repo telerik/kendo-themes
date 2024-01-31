@@ -1,12 +1,13 @@
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
+import { GridWithFilterMenu, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
-            <Grid dir="ltr" _renderAriaRoot>
+            <GridWithFilterMenu pager={false} dir="ltr">
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -67,10 +68,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithFilterMenu>
 
             <h3>Sortable</h3>
-            <Grid dir="ltr" _renderAriaRoot>
+            <GridWithFilterMenu pager={false} dir="ltr" >
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -131,10 +132,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithFilterMenu>
 
             <h3>Sortable &amp; Resizable</h3>
-            <Grid dir="ltr" _renderAriaRoot>
+            <GridWithFilterMenu pager={false} dir="ltr">
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -195,7 +196,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithFilterMenu>
         </div>
     </>
 );

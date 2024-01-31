@@ -3,7 +3,7 @@ import { Checkbox } from '../../checkbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
+import { GridWithFilterRow, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTh, TableTd } from '../../table';
 
 
@@ -11,7 +11,7 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Base</h3>
-            <Grid className="telerik-blazor">
+            <GridWithFilterRow className="telerik-blazor" pager={false}>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable role="grid">
@@ -127,10 +127,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithFilterRow>
 
             <h3>With Toolbar</h3>
-            <Grid className="telerik-blazor" toolbar={(
+            <GridWithFilterRow className="telerik-blazor" pager={false} toolbar={(
                 <GridToolbar>
                     <Button icon="plus">Add</Button>
                 </GridToolbar>
@@ -250,7 +250,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithFilterRow>
         </div>
     </>
 );

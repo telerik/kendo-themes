@@ -1,5 +1,5 @@
 import { Checkbox } from '../../checkbox';
-import { Grid, GridHeader, GridHeaderTable, GridContainer, GridContent, GridTable, GridHeaderCell } from '../../grid';
+import { GridNormal, GridHeader, GridHeaderTable, GridContainer, GridContent, GridTable, GridHeaderCell } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -8,7 +8,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <span>Basic Grid</span>
             <section>
-                <Grid style={{ height: "500px" }} _renderAriaRoot>
+                <GridNormal groupingHeader={false} pager={false} style={{ height: "500px" }}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -166,7 +166,7 @@ export default () =>(
                             </div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
         </div>

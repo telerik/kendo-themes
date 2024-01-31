@@ -1,11 +1,11 @@
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
+import { GridWithMultiColumnHeaders, GridWithLockedColumns, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <Grid _renderAriaRoot className="k-grid-lockedcolumns k-grid-no-scrollbar" style={{ height: "300px" }}>
+            <GridWithLockedColumns className="k-grid-no-scrollbar" style={{ height: "300px" }}>
                 <GridHeader>
                     <div className="k-grid-header-locked" style={{ width: "300px" }}>
                         <GridHeaderTable>
@@ -98,58 +98,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithLockedColumns>
 
             <div className="k-rtl">
-                <Grid className="k-grid-no-scrollbar" style={{ height: "200px" }}>
-                    <GridHeader>
-                        <div className="k-grid-header-wrap k-auto-scrollable">
-                            <GridHeaderTable>
-                                <colgroup>
-                                    <col style={{ width: "160px" }} />
-                                    <col style={{ width: "160px" }} />
-                                    <col style={{ width: "160px" }} />
-                                    <col style={{ width: "160px" }} />
-                                    <col style={{ width: "160px" }} />
-                                    <col />
-                                </colgroup>
-                                <TableThead>
-                                    <TableRow>
-                                        <GridHeaderCell className="k-filterable" scope="col" rowspan={3} columnTitle="Company" menu="column"></GridHeaderCell>
-                                        <GridHeaderCell scope="col" colspan={5} columnTitle="Contact Info"></GridHeaderCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <GridHeaderCell className="k-filterable k-first" scope="col" rowspan={2} columnTitle="First Name" menu="column"></GridHeaderCell>
-                                        <GridHeaderCell className="k-filterable" scope="col" rowspan={2} columnTitle="Last Name" menu="column"></GridHeaderCell>
-                                        <GridHeaderCell scope="col" colspan={2} columnTitle="Location"></GridHeaderCell>
-                                        <GridHeaderCell className="k-filterable" scope="col" rowspan={2} columnTitle="Phone" menu="column"></GridHeaderCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <GridHeaderCell className="k-filterable k-first" scope="col" columnTitle="Country" menu="column"></GridHeaderCell>
-                                        <GridHeaderCell className="k-filterable" scope="col" columnTitle="City" menu="column"></GridHeaderCell>
-                                    </TableRow>
-                                </TableThead>
-                            </GridHeaderTable>
-                            <div className="k-resize-handle" style={{ top: '0px', left: "417px", height: "89px", width: "9px" }}>
-                                <div className="k-resize-handle-inner"></div>
-                            </div>
-                        </div>
-                    </GridHeader>
-                    <GridContent className="k-auto-scrollable">
-                        <GridTable style={{ height: 'auto' }}>
-                            <colgroup>
-                                <col style={{ width: "160px" }} />
-                                <col style={{ width: "160px" }} />
-                                <col style={{ width: "160px" }} />
-                                <col style={{ width: "160px" }} />
-                                <col style={{ width: "160px" }} />
-                                <col />
-                            </colgroup>
-                            <TableTbody></TableTbody>
-                        </GridTable>
-                    </GridContent>
-                </Grid>
-
+                <GridWithMultiColumnHeaders headerWrapClassName="k-auto-scrollable" contentClassName="k-auto-scrollable" className="k-grid-no-scrollbar" />
             </div>
 
         </div>

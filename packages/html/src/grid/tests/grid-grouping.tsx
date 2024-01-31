@@ -1,9 +1,9 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
-import { Chip, ChipList, ChipAction } from '../../chip';
-import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
+import { GridNormal, GridWithGrouping, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
 import { TableThead, TableRow, TableTd, TableTbody } from '../../table';
+
 
 const styles = `
     .k-grouping-header .k-grouping-dropclue {
@@ -22,7 +22,7 @@ export default () =>(
             <span>angular no grouping</span>
             <span>jquery no grouping</span>
 
-            <Grid _renderAriaRoot className="k-grid-no-scrollbar" toolbar={(
+            <GridNormal pager={false} className="k-grid-no-scrollbar" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -43,10 +43,10 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
+                                    <GridHeaderCell columnTitle="ID"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Price"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Available"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Units"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Category"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -61,19 +61,25 @@ export default () =>(
                                 </colgroup>
                                 <TableTbody>
                                     <TableRow>
+                                        <TableTd>1</TableTd>
                                         <TableTd>Chai</TableTd>
-                                        <TableTd>30</TableTd>
-                                        <TableTd>false</TableTd>
-                                        <TableTd>15</TableTd>
+                                        <TableTd>$18.00</TableTd>
+                                        <TableTd>Beverages</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-alt" alt>
+                                        <TableTd>2</TableTd>
+                                        <TableTd>Chang</TableTd>
+                                        <TableTd>$19.00</TableTd>
+                                        <TableTd>Beverages</TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridNormal>
 
-            <Grid className="k-grid-no-scrollbar" toolbar={(
+            <GridNormal _renderAriaRoot={false} pager={false} className="k-grid-no-scrollbar" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -94,10 +100,10 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
+                                    <GridHeaderCell columnTitle="ID"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Price"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Available"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Units"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Category"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -111,21 +117,27 @@ export default () =>(
                             </colgroup>
                             <TableTbody>
                                 <TableRow>
+                                    <TableTd>1</TableTd>
                                     <TableTd>Chai</TableTd>
-                                    <TableTd>30</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>15</TableTd>
+                                    <TableTd>$18.00</TableTd>
+                                    <TableTd>Beverages</TableTd>
+                                </TableRow>
+                                <TableRow className="k-alt" alt>
+                                    <TableTd>2</TableTd>
+                                    <TableTd>Chang</TableTd>
+                                    <TableTd>$19.00</TableTd>
+                                    <TableTd>Beverages</TableTd>
                                 </TableRow>
                             </TableTbody>
                         </GridTable>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridNormal>
 
             <span>angular with grouping</span>
             <span>jquery with grouping</span>
 
-            <Grid _renderAriaRoot className="k-grid-no-scrollbar" toolbar={(
+            <GridWithGrouping className="k-grid-no-scrollbar" contentClassName="k-virtual-content" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -134,72 +146,9 @@ export default () =>(
                         <Button icon="underline"></Button>
                     </ButtonGroup>
                 </GridToolbar>
-            )}
-            groupingHeader={(
-                <GridGroupingHeader dropClue>
-                    <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                        <Chip icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
-                    </ChipList>
-                </GridGroupingHeader>
-            )}>
-                <GridHeader>
-                    <div className="k-grid-header-wrap">
-                        <GridHeaderTable>
-                            <colgroup>
-                                <col className="k-group-col"/><col /><col /><col /><col />
-                            </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell className="k-group-cell"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Price"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Discontinued"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Units"></GridHeaderCell>
-                                </TableRow>
-                            </TableThead>
-                        </GridHeaderTable>
-                    </div>
-                </GridHeader>
-                <GridContainer>
-                    <GridContent className="k-virtual-content">
-                        <div className="k-grid-table-wrap">
-                            <GridTable>
-                                <colgroup>
-                                    <col className="k-group-col" /><col /><col /><col /><col />
-                                </colgroup>
-                                <TableTbody>
-                                    <TableRow className="k-table-group-row k-grouping-row">
-                                        <TableTd colspan={5}>
-                                            <p className="k-reset">
-                                                <Icon icon="caret-alt-right"></Icon>
-                                                Price: 19
-                                            </p>
-                                        </TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-table-group-row k-grouping-row">
-                                        <TableTd colspan={5}>
-                                            <p className="k-reset">
-                                                <Icon icon="caret-alt-down"></Icon>
-                                                Price: 30
-                                            </p>
-                                        </TableTd>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableTd className="k-table-group-td k-group-cell"></TableTd>
-                                        <TableTd>Chai</TableTd>
-                                        <TableTd>30</TableTd>
-                                        <TableTd>false</TableTd>
-                                        <TableTd>15</TableTd>
-                                    </TableRow>
-                                </TableTbody>
-                            </GridTable>
-                        </div>
-                    </GridContent>
-                </GridContainer>
-            </Grid>
+            )}/>
 
-            <Grid className="k-grid-no-scrollbar k-grid-display-block" toolbar={(
+            <GridWithGrouping _renderAriaRoot={false} className="k-grid-no-scrollbar k-grid-display-block" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -208,68 +157,7 @@ export default () =>(
                         <Button icon="underline"></Button>
                     </ButtonGroup>
                 </GridToolbar>
-            )}
-            groupingHeader={(
-                <GridGroupingHeader dropClue>
-                    <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                        <Chip icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
-                    </ChipList>
-                </GridGroupingHeader>
-            )}>
-                <GridHeader>
-                    <div className="k-grid-header-wrap">
-                        <GridHeaderTable>
-                            <colgroup>
-                                <col className="k-group-col" /><col /><col /><col /><col />
-                            </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell className="k-group-cell" scope="col"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Price"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Available"></GridHeaderCell>
-                                    <GridHeaderCell columnTitle="Units"></GridHeaderCell>
-                                </TableRow>
-                            </TableThead>
-                        </GridHeaderTable>
-                    </div>
-                </GridHeader>
-                <GridContainer>
-                    <GridContent>
-                        <GridTable>
-                            <colgroup>
-                                <col className="k-group-col" /><col /><col /><col /><col />
-                            </colgroup>
-                            <TableTbody>
-                                <TableRow className="k-table-group-row k-grouping-row">
-                                    <TableTd colspan={5}>
-                                        <p className="k-reset">
-                                            <Icon icon="caret-alt-right" />
-                                            Price: 19
-                                        </p>
-                                    </TableTd>
-                                </TableRow>
-                                <TableRow className="k-table-group-row k-grouping-row">
-                                    <TableTd colspan={5}>
-                                        <p className="k-reset">
-                                            <Icon icon="caret-alt-down" />
-                                            Price: 30
-                                        </p>
-                                    </TableTd>
-                                </TableRow>
-                                <TableRow>
-                                    <TableTd className="k-table-group-td k-group-cell"></TableTd>
-                                    <TableTd>Chai</TableTd>
-                                    <TableTd>30</TableTd>
-                                    <TableTd>false</TableTd>
-                                    <TableTd>15</TableTd>
-                                </TableRow>
-                            </TableTbody>
-                        </GridTable>
-                    </GridContent>
-                </GridContainer>
-            </Grid>
+            )}/>
 
             <span>angular grid drag clue</span>
             <span>jquery grid drag clue</span>

@@ -1,6 +1,6 @@
 import { Icon } from '../../icon';
 import { SkeletonNormal } from '../../skeleton';
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
+import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -9,7 +9,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <span>jQuery grid</span>
             <section>
-                <Grid className="k-grid-no-scrollbar" dir="rtl" pager={(<GridPager dir="rtl"/>)}>
+                <GridNormal _renderAriaRoot={false} className="k-grid-no-scrollbar" dir="rtl" pager={(<GridPager dir="rtl"/>)} groupingHeader={false}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -60,12 +60,12 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span>jQuery -- fixed height, hierarchy, filter menu, sort icon</span>
             <section>
-                <Grid className="k-grid-no-scrollbar" style={{ height: "250px" }} dir="rtl">
+                <GridNormal _renderAriaRoot={false} className="k-grid-no-scrollbar" style={{ height: "250px" }} dir="rtl" pager={false} groupingHeader={false}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -125,7 +125,7 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
         </div>
     </>

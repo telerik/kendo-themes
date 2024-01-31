@@ -1,11 +1,10 @@
 import { WindowNormal } from '../../window';
 import { NumericTextbox } from '../../numerictextbox';
 import { DropdownList } from '../../dropdownlist';
-import { Toolbar } from '../../toolbar';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
-import { Icon } from '../../icon';
-
+import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from "../../grid";
+import { TableRow, TableTbody, TableTd, TableThead } from '../../table';
 
 const styles = `
     .k-window {
@@ -46,126 +45,113 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <div className="k-grid k-grid-md k-grid-no-scrollbar">
-                                <Toolbar className="k-grid-toolbar">
+                            <Grid _renderAriaRoot className="k-grid-no-scrollbar" toolbar={(
+                                <GridToolbar className="k-grid-toolbar">
                                     <Button icon="plus">Add</Button>
                                     <Button icon="minus">Remove</Button>
-                                </Toolbar>
-                                <div className="k-grid-header">
+                                </GridToolbar>
+                            )}>
+                                <GridHeader>
                                     <div className="k-grid-header-wrap">
-                                        <table className="k-table k-table-md k-grid-header-table">
+                                        <GridHeaderTable>
                                             <colgroup>
                                                 <col style={{ width: "42px" }}/>
                                                 <col/>
                                                 <col/>
                                             </colgroup>
-                                            <thead className="k-table-thead">
-                                                <tr className="k-table-row">
-                                                    <th className="k-table-th k-header">
+                                            <TableThead>
+                                                <TableRow>
+                                                    <GridHeaderCell>
                                                         <span className="k-checkbox-wrap">
                                                             <Checkbox />
                                                         </span>
                                                         <label className="k-checkbox-label"></label>
-                                                    </th>
-                                                    <th className="k-table-th k-header k-filterable">
-                                                        <span className="k-cell-inner">
-                                                            <span className="k-link">
-                                                                <span className="k-column-title">Resources</span>
-                                                                <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
-                                                            </span>
-                                                            <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a></div>
-                                                        </span>
-                                                    </th>
-                                                    <th className="k-table-th k-header k-filterable">
-                                                        <span className="k-cell-inner">
-                                                            <span className="k-link">
-                                                                <span className="k-column-title">Units</span>
-                                                                <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
-                                                            </span>
-                                                            <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a></div>
-                                                        </span>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                        </table>
+                                                    </GridHeaderCell>
+                                                    <GridHeaderCell menu="filter" columnTitle="Resources" sortable></GridHeaderCell>
+                                                    <GridHeaderCell menu="filter" columnTitle="Units" sortable></GridHeaderCell>
+                                                </TableRow>
+                                            </TableThead>
+                                        </GridHeaderTable>
                                     </div>
-                                </div>
-                                <div className="k-grid-content">
-                                    <table className="k-table k-table-md k-grid-table">
-                                        <colgroup>
-                                            <col style={{ width: "42px" }}/>
-                                            <col/>
-                                            <col/>
-                                        </colgroup>
-                                        <tbody className="k-table-tbody">
-                                            <tr className="k-table-row">
-                                                <td className="k-table-td">
-                                                    <span className="k-checkbox-wrap">
-                                                        <Checkbox />
-                                                        <label className="k-checkbox-label"></label>
-                                                    </span>
-                                                </td>
-                                                <td className="k-table-td">
-                                                    <DropdownList placeholder="-Select resource-"/>
-                                                </td>
-                                                <td className="k-table-td">
-                                                    <NumericTextbox value="40"/>
-                                                </td>
-                                            </tr>
-                                            <tr className="k-table-row k-table-alt-row k-alt">
-                                                <td className="k-table-td">
-                                                    <span className="k-checkbox-wrap">
-                                                        <Checkbox />
-                                                        <label className="k-checkbox-label"></label>
-                                                    </span>
-                                                </td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                            </tr>
-                                            <tr className="k-table-row">
-                                                <td className="k-table-td">
-                                                    <span className="k-checkbox-wrap">
-                                                        <Checkbox />
-                                                        <label className="k-checkbox-label"></label>
-                                                    </span>
-                                                </td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                            </tr>
-                                            <tr className="k-table-row k-table-alt-row k-alt">
-                                                <td className="k-table-td">
-                                                    <span className="k-checkbox-wrap">
-                                                        <Checkbox />
-                                                        <label className="k-checkbox-label"></label>
-                                                    </span>
-                                                </td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                            </tr>
-                                            <tr className="k-table-row">
-                                                <td className="k-table-td">
-                                                    <span className="k-checkbox-wrap">
-                                                        <Checkbox />
-                                                        <label className="k-checkbox-label"></label>
-                                                    </span>
-                                                </td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                            </tr>
-                                            <tr className="k-table-row k-table-alt-row k-alt">
-                                                <td className="k-table-td">
-                                                    <span className="k-checkbox-wrap">
-                                                        <Checkbox />
-                                                        <label className="k-checkbox-label"></label>
-                                                    </span>
-                                                </td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                                <td className="k-table-td">Grid Cell</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                                </GridHeader>
+                                <GridContainer>
+                                    <GridContent>
+                                        <GridTable>
+                                            <colgroup>
+                                                <col style={{ width: "42px" }}/>
+                                                <col className="k-sorted"/>
+                                                <col className="k-sorted"/>
+                                            </colgroup>
+                                            <TableTbody>
+                                                <TableRow>
+                                                    <TableTd>
+                                                        <span className="k-checkbox-wrap">
+                                                            <Checkbox />
+                                                            <label className="k-checkbox-label"></label>
+                                                        </span>
+                                                    </TableTd>
+                                                    <TableTd>
+                                                        <DropdownList placeholder="-Select resource-"/>
+                                                    </TableTd>
+                                                    <TableTd>
+                                                        <NumericTextbox value="40"/>
+                                                    </TableTd>
+                                                </TableRow>
+                                                <TableRow className="k-alt" alt>
+                                                    <TableTd>
+                                                        <span className="k-checkbox-wrap">
+                                                            <Checkbox />
+                                                            <label className="k-checkbox-label"></label>
+                                                        </span>
+                                                    </TableTd>
+                                                    <TableTd>Grid Cell</TableTd>
+                                                    <TableTd>Grid Cell</TableTd>
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableTd>
+                                                        <span className="k-checkbox-wrap">
+                                                            <Checkbox />
+                                                            <label className="k-checkbox-label"></label>
+                                                        </span>
+                                                    </TableTd>
+                                                    <TableTd>Grid Cell</TableTd>
+                                                    <TableTd>Grid Cell</TableTd>
+                                                </TableRow>
+                                                <TableRow className="k-alt" alt>
+                                                    <TableTd>
+                                                        <span className="k-checkbox-wrap">
+                                                            <Checkbox />
+                                                            <label className="k-checkbox-label"></label>
+                                                        </span>
+                                                    </TableTd>
+                                                    <TableTd>Grid Cell</TableTd>
+                                                    <TableTd>Grid Cell</TableTd>
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableTd>
+                                                        <span className="k-checkbox-wrap">
+                                                            <Checkbox />
+                                                            <label className="k-checkbox-label"></label>
+                                                        </span>
+                                                    </TableTd>
+                                                    <TableTd className="k-table-td">Grid Cell</TableTd>
+                                                    <TableTd className="k-table-td">Grid Cell</TableTd>
+                                                </TableRow>
+                                                <TableRow className="k-alt" alt>
+                                                    <TableTd className="k-table-td">
+                                                        <span className="k-checkbox-wrap">
+                                                            <Checkbox />
+                                                            <label className="k-checkbox-label"></label>
+                                                        </span>
+                                                    </TableTd>
+                                                    <TableTd>Grid Cell</TableTd>
+                                                    <TableTd>Grid Cell</TableTd>
+                                                </TableRow>
+                                            </TableTbody>
+                                        </GridTable>
+                                    </GridContent>
+                                </GridContainer>
+                            </Grid>
                         </div>
                     </div>
                 </WindowNormal>

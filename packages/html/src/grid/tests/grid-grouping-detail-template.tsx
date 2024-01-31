@@ -2,7 +2,7 @@ import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
 import { Chip, ChipList, ChipAction } from '../../chip';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridGroupingHeader } from '../../grid';
+import { GridWithGrouping, GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridGroupingHeader } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -10,10 +10,7 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <span>Base</span>
-            <Grid _renderAriaRoot dir="ltr" groupingHeader={(
-
-                <GridGroupingHeader dropHint="Drag a column header and drop it here to group by that column" />
-            )}>
+            <GridNormal dir="ltr" pager={false}>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -84,10 +81,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridNormal>
 
             <span>Single Group</span>
-            <Grid _renderAriaRoot dir="ltr"groupingHeader={(
+            <GridWithGrouping dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
@@ -185,10 +182,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithGrouping>
 
             <span>Two Groups</span>
-            <Grid _renderAriaRoot dir="ltr"groupingHeader={(
+            <GridWithGrouping dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
@@ -310,9 +307,9 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithGrouping>
             <span>Expanded Template</span>
-            <Grid _renderAriaRoot dir="ltr"groupingHeader={(
+            <GridWithGrouping dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
@@ -446,7 +443,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithGrouping>
         </div>
     </>
 );
