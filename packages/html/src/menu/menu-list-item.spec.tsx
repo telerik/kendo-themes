@@ -1,19 +1,20 @@
 import { Icon } from '../icon';
 import { classNames, stateClassNames, States } from '../misc';
 
-export const MENUITEM_CLASSNAME = `k-menu-item`;
+export const MENULISTITEM_CLASSNAME = `k-menu-item`;
 
 const states = [
     States.hover,
     States.focus,
     States.active,
+    States.selected,
     States.disabled
 ];
 
 const options = {};
 
 
-export type KendoMenuItemProps = {
+export type KendoMenuListItemProps = {
     text?: string;
     icon?: string;
     first?: boolean;
@@ -25,21 +26,22 @@ export type KendoMenuItemProps = {
     popup?: JSX.Element;
 };
 
-export type KendoMenuItemState = { [K in (typeof states)[number]]?: boolean };
+export type KendoMenuListItemState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
     dir: 'ltr'
-};
+} as const;
 
-export const MenuItem = (
-    props: KendoMenuItemProps &
-        KendoMenuItemState &
+export const MenuListItem = (
+    props: KendoMenuListItemProps &
+        KendoMenuListItemState &
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
         hover,
         focus,
         active,
+        selected,
         disabled,
         icon,
         text,
@@ -59,7 +61,7 @@ export const MenuItem = (
         children.forEach( child => {
             const component = child.type;
 
-            if (component === 'MenuItemContent') {
+            if (component === 'MenuListItemContent') {
                 contentTemplate.props.children.push( child );
                 return;
             }
@@ -80,13 +82,11 @@ export const MenuItem = (
             {...other}
             className={classNames(
                 props.className,
-                MENUITEM_CLASSNAME, //TODO Unify MenuItem & MenuListItem states
+                MENULISTITEM_CLASSNAME, //TODO Unify MenuItem & MenuListItem states
                 "k-item",
-                stateClassNames(MENUITEM_CLASSNAME, {
+                stateClassNames(MENULISTITEM_CLASSNAME, {
                     focus,
-                    disabled,
-                    hover,
-                    active,
+                    disabled
                 }),
                 {
                     ["k-first"]: first,
@@ -96,7 +96,13 @@ export const MenuItem = (
             <span
 
                 className={classNames(
-                    "k-link k-menu-link"
+                    "k-link k-menu-link",
+                    stateClassNames("k-menu-link", {
+                        hover,
+                        active,
+                        selected,
+                        disabled
+                    }),
                 )}>
                 {icon && <Icon className="k-menu-link-icon" icon={icon} />}
                 <span className="k-menu-link-text">{text}</span>
@@ -108,9 +114,9 @@ export const MenuItem = (
     );
 };
 
-MenuItem.states = states;
-MenuItem.options = options;
-MenuItem.className = MENUITEM_CLASSNAME;
-MenuItem.defaultProps = defaultProps;
+MenuListItem.states = states;
+MenuListItem.options = options;
+MenuListItem.className = MENULISTITEM_CLASSNAME;
+MenuListItem.defaultProps = defaultProps;
 
-export default MenuItem;
+export default MenuListItem;

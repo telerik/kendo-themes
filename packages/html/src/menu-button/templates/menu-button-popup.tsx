@@ -1,5 +1,5 @@
 import MenuButton from "../menu-button.spec";
-import { MenuList, MenuItem } from '../../menu';
+import { MenuList, MenuListItem } from '../../menu';
 
 export const MenuButtonPopup = (props) => (
     <MenuButton
@@ -7,9 +7,9 @@ export const MenuButtonPopup = (props) => (
         opened={true}
         popup={
             <MenuList>
-                <MenuItem text="Menu Item"></MenuItem>
-                <MenuItem text="Menu Item"></MenuItem>
-                <MenuItem text="Menu Item"></MenuItem>
+                <MenuListItem text="Menu Item"></MenuListItem>
+                <MenuListItem text="Menu Item"></MenuListItem>
+                <MenuListItem text="Menu Item"></MenuListItem>
             </MenuList>
         }
         {...props}

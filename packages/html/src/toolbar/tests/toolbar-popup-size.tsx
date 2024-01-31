@@ -1,4 +1,4 @@
-import { MenuItem, MenuSeparator, MenuList } from '../../menu';
+import { MenuListItem, MenuSeparator, MenuList } from '../../menu';
 import { ToolbarPopup } from '../../toolbar';
 
 
@@ -22,11 +22,11 @@ export default () =>(
                 <section>
                     <ToolbarPopup className="k-menu-popup">
                         <MenuList size={size}>
-                            <MenuItem text="Item 1"></MenuItem>
-                            <MenuItem text="Item 2"></MenuItem>
-                            <MenuItem text="Item 3"></MenuItem>
+                            <MenuListItem text="Item 1"></MenuListItem>
+                            <MenuListItem text="Item 2"></MenuListItem>
+                            <MenuListItem text="Item 3"></MenuListItem>
                             <MenuSeparator></MenuSeparator>
-                            <MenuItem text="Item after separator" icon="plus"></MenuItem>
+                            <MenuListItem text="Item after separator" icon="plus"></MenuListItem>
                         </MenuList>
                     </ToolbarPopup>
                 </section>

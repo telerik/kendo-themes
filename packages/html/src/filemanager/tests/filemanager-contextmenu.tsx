@@ -1,5 +1,5 @@
 import { FileManagerNormal } from '../../filemanager';
-import { MenuItem, MenuList } from '../../menu';
+import { MenuListItem, MenuList } from '../../menu';
 import { Popup } from '../../popup';
 
 
@@ -23,8 +23,8 @@ export default () =>(
 
             <Popup id="filemanager-context-menu" className="k-menu-popup k-context-menu-popup">
                 <MenuList>
-                    <MenuItem text="Rename" icon="pencil"></MenuItem>
-                    <MenuItem text="Delete" icon="trash"></MenuItem>
+                    <MenuListItem text="Rename" icon="pencil"></MenuListItem>
+                    <MenuListItem text="Delete" icon="trash"></MenuListItem>
                 </MenuList>
             </Popup>
 

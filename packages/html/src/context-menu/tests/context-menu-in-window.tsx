@@ -1,5 +1,5 @@
 import { WindowNormal } from '../../window';
-import { MenuItem, MenuList } from '../../menu';
+import { MenuListItem, MenuList } from '../../menu';
 import { Popup } from '../../popup';
 
 
@@ -30,12 +30,12 @@ export default () =>(
                 </WindowNormal>
                 <Popup className="k-menu-popup">
                     <MenuList className="k-context-menu">
-                        <MenuItem text="Item 1" showArrow></MenuItem>
-                        <MenuItem text="Item 2" showArrow></MenuItem>
-                        <MenuItem text="Item 3" showArrow></MenuItem>
-                        <MenuItem text="Item 4" showArrow></MenuItem>
-                        <MenuItem text="Item 5" showArrow></MenuItem>
-                        <MenuItem text="Item 6" showArrow></MenuItem>
+                        <MenuListItem text="Item 1" showArrow></MenuListItem>
+                        <MenuListItem text="Item 2" showArrow></MenuListItem>
+                        <MenuListItem text="Item 3" showArrow></MenuListItem>
+                        <MenuListItem text="Item 4" showArrow></MenuListItem>
+                        <MenuListItem text="Item 5" showArrow></MenuListItem>
+                        <MenuListItem text="Item 6" showArrow></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
