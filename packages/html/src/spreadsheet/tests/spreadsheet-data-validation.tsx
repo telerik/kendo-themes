@@ -3,7 +3,7 @@ import { Button } from '../../button';
 import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
-import { Checkbox } from '../../checkbox';
+import { CheckboxWithLabelAfter } from '../../checkbox';
 import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 
 
@@ -33,8 +33,7 @@ export default () =>(
                         <FormField label="Min" editor={ <Textbox placeholder="Placeholder" /> } />
                         <FormField editor={
                             <>
-                                <Checkbox/>
-                                <label className="k-checkbox-label">Ignore blank</label>
+                                <CheckboxWithLabelAfter>Ignore blank</CheckboxWithLabelAfter>
                             </>
                         } />
                         <FormField label="On invalid data" editor={
@@ -49,8 +48,7 @@ export default () =>(
                         }/>
                         <FormField editor={
                             <>
-                                <Checkbox/>
-                                <label className="k-checkbox-label">Show hint</label>
+                                <CheckboxWithLabelAfter>Show hint</CheckboxWithLabelAfter>
                             </>
                         } />
                     </FormNormal>

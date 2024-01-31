@@ -8,7 +8,7 @@ const options = {};
 
 export type KendoMenuProps = {
     orientation?: 'horizontal' | 'vertical';
-    header?: boolean;
+    header?: boolean | null;
 };
 
 const defaultProps = {

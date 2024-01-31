@@ -9,7 +9,7 @@ const options = {};
 export type KendoTabStripProps = {
     position?: "top" | "bottom" | "left" | "right";
     scrollable?: boolean;
-    header?: boolean;
+    header?: boolean | null;
 };
 
 const defaultProps = {
@@ -25,7 +25,7 @@ export const TabStrip = (
         scrollable,
         children,
         position = defaultProps.position,
-        header = defaultProps.header,
+        header,
         ...other
     } = props;
 

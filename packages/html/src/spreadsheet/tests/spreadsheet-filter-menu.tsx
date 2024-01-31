@@ -4,6 +4,7 @@ import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 import { AnimationContainer } from '../../animation-container';
+import { ColumnMenuItem, ColumnMenuItemWrapper } from '../..';
 
 
 const style = `
@@ -22,34 +23,34 @@ export default () =>(
             <section>
                 <AnimationContainer>
                     <div className="k-spreadsheet-filter-menu k-column-menu k-popup k-group k-reset">
-                        <div className="k-columnmenu-item-wrapper">
-                            <div className="k-columnmenu-item">
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuItem>
                                 <Icon icon="sort-asc-small"></Icon>Sort range A to Z
-                            </div>
-                            <div className="k-columnmenu-item">
+                            </ColumnMenuItem>
+                            <ColumnMenuItem>
                                 <Icon icon="sort-desc-small"></Icon>Sort range Z to A
-                            </div>
-                        </div>
-                        <div className="k-columnmenu-item-wrapper">
+                            </ColumnMenuItem>
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
                             <div className="k-spreadsheet-condition-filter k-expander">
-                                <div className="k-columnmenu-item">
+                                <ColumnMenuItem>
                                     Filter by condition
                                     <span className="k-spacer"></span>
                                     <span className="k-expander-indicator">
                                         <Icon icon="chevron-down" />
                                     </span>
-                                </div>
+                                </ColumnMenuItem>
                             </div>
-                        </div>
-                        <div className="k-columnmenu-item-wrapper">
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
                             <div className="k-expander">
-                                <div className="k-columnmenu-item">
+                                <ColumnMenuItem>
                                     Filter by value
                                     <span className="k-spacer"></span>
                                     <span className="k-expander-indicator">
                                         <Icon icon="chevron-up" />
                                     </span>
-                                </div>
+                                </ColumnMenuItem>
                                 <div className="k-columnmenu-item-content">
                                     <Searchbox placeholder="Search..." />
                                     <div className="k-spreadsheet-value-treeview-wrapper">
@@ -75,7 +76,7 @@ export default () =>(
                                     </ActionButtons>
                                 </div>
                             </div>
-                        </div>
+                        </ColumnMenuItemWrapper>
                     </div>
                 </AnimationContainer>
             </section>
