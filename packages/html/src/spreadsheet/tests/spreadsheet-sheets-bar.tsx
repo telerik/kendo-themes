@@ -1,10 +1,12 @@
 import { Button } from "../../button";
-import { MenuList, MenuItem, MenuSeparator } from "../../menu";
+import { MenuList, MenuListItem, MenuSeparator } from "../../menu";
 import { MenuButton } from "../../menu-button";
 import { WindowNormal } from "../../window";
 import { Popup } from "../../popup";
 import { FormNormal, FormField } from "../../form";
 import { Textbox } from "../../textbox";
+import { SpreadsheetNormal, SpreadsheetSheetsBar } from "..";
+import { TabStripItem } from "../..";
 
 const style = `
     #test-area {
@@ -36,57 +38,43 @@ export default () =>(
 
             <span>Sheets Bar</span>
             <section>
-                <div style={{ width: '100%', height: 'auto' }} className="k-spreadsheet">
-                    <div className="k-spreadsheet-sheets-bar">
-                        <Button className="k-spreadsheet-sheet-add" fillMode="flat" icon="plus" />
-                        <Button className="k-spreadsheet-sheets-menu" fillMode="flat" icon="menu" />
-                        <div className="k-spreadsheet-sheets k-tabstrip k-tabstrip-bottom k-tabstrip-scrollable">
-                            <div className="k-tabstrip-items-wrapper k-vstack">
-                                <ul className="k-reset k-tabstrip-items">
-                                    <li className="k-item k-first">
-                                        <span className="k-link">Sheet 1</span>
-                                        <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                                    </li>
-                                    <li className="k-item">
-                                        <span className="k-link">Sheet 2</span>
-                                        <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                                    </li>
-                                    <li className="k-item k-active">
-                                        <span className="k-link">Sheet 3</span>
-                                        <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                                    </li>
-                                    <li className="k-item k-focus">
-                                        <span className="k-link">Sheet 4</span>
-                                        <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                                    </li>
-                                    <li className="k-item">
-                                        <span className="k-link">Sheet 5</span>
-                                        <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                                    </li>
-                                    <li className="k-item k-last k-disabled">
-                                        <span className="k-link">Sheet 6</span>
-                                        <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                                    </li>
-                                </ul>
-                                <Button className="k-tabstrip-prev" fillMode="flat" icon="caret-alt-left" rounded={null} size={null} />
-                                <Button className="k-tabstrip-next" fillMode="flat" icon="caret-alt-right" rounded={null} size={null} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <SpreadsheetNormal style={{ width: '100%', height: 'auto' }}>
+                    <SpreadsheetSheetsBar tabStripItems={
+                        <>
+                            <TabStripItem first value="Sheet 1">
+                                <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                            </TabStripItem>
+                            <TabStripItem value="Sheet 2">
+                                <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                            </TabStripItem>
+                            <TabStripItem active value="Sheet 3">
+                                <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                            </TabStripItem>
+                            <TabStripItem focus value="Sheet 4">
+                                <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                            </TabStripItem>
+                            <TabStripItem value="Sheet 5">
+                                <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                            </TabStripItem>
+                            <TabStripItem last disabled value="Sheet 6">
+                                <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
+                            </TabStripItem>
+                        </>
+                    } />
+                </SpreadsheetNormal>
             </section>
 
             <span>Sheets Bar ContextMenu</span>
             <section>
                 <Popup id="spreadsheet-context-menu-sheets" className="k-menu-popup k-context-menu-popup">
                     <MenuList className="k-context-menu">
-                        <MenuItem text="Delete" icon="trash"></MenuItem>
-                        <MenuItem text="Duplicate" icon="copy"></MenuItem>
-                        <MenuItem text="Rename" icon="pencil"></MenuItem>
-                        <MenuItem text="Hide" icon="eye-slash"></MenuItem>
+                        <MenuListItem text="Delete" icon="trash"></MenuListItem>
+                        <MenuListItem text="Duplicate" icon="copy"></MenuListItem>
+                        <MenuListItem text="Rename" icon="pencil"></MenuListItem>
+                        <MenuListItem text="Hide" icon="eye-slash"></MenuListItem>
                         <MenuSeparator></MenuSeparator>
-                        <MenuItem text="Move Right" icon="arrow-right"></MenuItem>
-                        <MenuItem text="Move Left" icon="arrow-left"></MenuItem>
+                        <MenuListItem text="Move Right" icon="arrow-right"></MenuListItem>
+                        <MenuListItem text="Move Left" icon="arrow-left"></MenuListItem>
                     </MenuList>
                 </Popup>
             </section>
@@ -100,7 +88,7 @@ export default () =>(
                     </>
                 }>
                     <FormNormal formButtons={null}>
-                        <FormField label="Rename sheet" editor={ <Textbox placeholder="Sheet name"/> }></FormField>
+                        <FormField label="Rename sheet" editor={<Textbox placeholder="Sheet name" />}></FormField>
                     </FormNormal>
                 </WindowNormal>
             </section>
