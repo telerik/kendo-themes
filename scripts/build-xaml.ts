@@ -46,8 +46,11 @@ interface Swatch {
         const paletteMap = await parseKendoPalettesFile(_palettesPath);
 
         const resourceDictionary = await parseSwatchesAndCreateResourceDictionary(_swatchesPath, name, "Main", paletteMap);
-
         await fs.writeFile(join(xamlDist, name, "Swatches", "Main.xaml"), resourceDictionary);
+
+        // And darkness for all
+        const resourceDictionaryDark = await parseSwatchesAndCreateResourceDictionary(_swatchesPath, name, "MainDark", paletteMap, lightToDark);
+        await fs.writeFile(join(xamlDist, name, "Swatches", "Main-Dark.xaml"), resourceDictionaryDark);
     }
 
     // await fs.writeFile(
@@ -55,6 +58,166 @@ interface Swatch {
     //     JSON.stringify(themesCatalog, null, "  "));
 
 })().catch(console.error);
+
+function lightToDark(color: string): string {
+    const rgb: RGB = rgbFromHEXString(color);
+    const hsl = rgbToHsl(rgb);
+    const flippedHSL: HSL = {
+        hue: hsl.hue,
+        saturation: hsl.saturation,
+        luminosity: 1 - hsl.luminosity, // 0.5 - hsl.luminosity
+    };
+
+    const flippedRGB = hslToRgb(flippedHSL);
+    return rgbToHEXString(flippedRGB);
+}
+
+/**
+ * Convert a single color channel (0 - 255) into double hex digits ("00" to "FF")
+ */
+function colorHEX(channel: number) {
+    let hex = Math.round(channel).toString(16);
+    if (hex.length == 1) {
+        hex = "0" + hex;
+    }
+    return hex.toUpperCase();
+}
+
+/**
+ * Parse a "#RRGGBB" string to {@link RGB} structure.
+ * @param color
+ */
+function rgbFromHEXString(color: string) {
+    return {
+        red: Number.parseInt(color.substring(1, 3), 16),
+        green: Number.parseInt(color.substring(3, 5), 16),
+        blue: Number.parseInt(color.substring(5, 7), 16),
+    };
+}
+
+/**
+ * Convert {@link RGB} structure to "#RRGGBB" string
+ */
+function rgbToHEXString(rgb: RGB): string {
+    return `#${colorHEX(rgb.red)}${colorHEX(rgb.green)}${colorHEX(rgb.blue)}`;
+}
+
+interface RGB {
+    /**
+     * Red component 0 - 255.
+     */
+    red: number;
+
+    /**
+     * Green component 0 - 255.
+     */
+    green: number;
+
+    /**
+     * Blue component 0 - 255.
+     */
+    blue: number;
+}
+
+interface HSL {
+    /**
+     * Hue, color on a color wheel 0 - 360 degree.
+     */
+    hue: number;
+
+    /**
+     * Saturation percentage 0 to 1
+     */
+    saturation: number;
+
+    /**
+     * Luminosity percentage 0 to 1
+     */
+    luminosity: number;
+}
+
+function rgbToHsl(rgb: RGB): HSL {
+    const red = rgb.red / 255.0;
+    const green = rgb.green / 255.0;
+    const blue = rgb.blue / 255.0;
+
+    const max = Math.max(Math.max(red, green), blue);
+    const min = Math.min(Math.min(red, green), blue);
+
+    const delta = max - min;
+
+    let hue = 0.0;
+    let saturation = 0.0;
+    let luminosity = 0.0;
+
+    if (delta > 0) {
+        if (max == red) {
+            hue = ((green - blue) / delta);
+            if (hue < 0) {
+                hue = hue + 6;
+            }
+        } if (max == green) {
+            hue = ((blue - red) / delta) + 2;
+        } else if (max == blue) {
+            hue = ((red - green) / delta) + 4;
+        }
+        hue = hue * 60;
+    }
+
+    luminosity = (max + min) / 2.0;
+
+    if (delta != 0) {
+        saturation = delta / (1 - Math.abs(2 * luminosity - 1));
+    }
+
+    return { hue, saturation, luminosity };
+}
+
+// https://stackoverflow.com/questions/2353211/hsl-to-rgb-color-conversion
+function hslToRgb(hsv: HSL): RGB {
+    const hue = hsv.hue / 360.0;
+    const { saturation, luminosity } = hsv;
+
+    let red, green, blue;
+    if (saturation === 0) {
+        red = luminosity;
+        green = luminosity;
+        blue = luminosity;
+    } else {
+        const q = luminosity < 0.5 ? luminosity * (1 + saturation) : luminosity + saturation - luminosity * saturation;
+        const p = 2.0 * luminosity - q;
+        red = hueToRgb(p, q, hue + 1 / 3);
+        green = hueToRgb(p, q, hue);
+        blue = hueToRgb(p, q, hue - 1 / 3);
+    }
+
+    red *= Math.round(255);
+    green *= Math.round(255);
+    blue *= Math.round(255);
+
+    function hueToRgb(p: number, q: number, _t: number): number {
+        let t = _t;
+        if (t < 0) {
+            t += 1;
+        }
+        if (t > 1) {
+            t -= 1;
+        }
+        if (t < 1 / 6) {
+            return p + (q - p) * 6 * t;
+        }
+        if (t < 1 / 2) {
+            return q;
+        }
+        if (t < 2 / 3) {
+            return p + (q - p) * (2 / 3 - t) * 6;
+        }
+
+        return p;
+    }
+
+    return { red, green, blue };
+}
 
 async function parseKendoPalettesFile(_palettesPath: string): Promise<{ [paletteName: string]: { [colorName: string]: string; }; }> {
     const paletteMap: { [paletteName: string]: { [colorName: string]: string; }; } = {};
@@ -106,11 +269,12 @@ async function parseKendoPalettesFile(_palettesPath: string): Promise<{ [palette
     return paletteMap;
 }
 
-async function parseSwatchesAndCreateResourceDictionary(
+async function parseSwatchesAndCreateResourceDictionary( // eslint-disable-line max-params
         _swatchesPath: string,
         themeName: string,
         swatchName: string,
-        paletteMap: { [paletteName: string]: { [colorName: string]: string; }; }) {
+        paletteMap: { [paletteName: string]: { [colorName: string]: string; }; },
+        colorFilter: (color: string) => string = (color) => color) {
     const swatches = await fs.readFile(_swatchesPath, "utf-8");
 
     const defaultColorsStartRegEx = /^\$_default-colors\s*:\s*\(\s*$/mg;
@@ -162,7 +326,8 @@ async function parseSwatchesAndCreateResourceDictionary(
                 const paletteName = result[3].trim();
                 const peletteColorKey = result[4].trim();
 
-                const colorValue = paletteMap[paletteName][peletteColorKey].toUpperCase();
+                let colorValue = paletteMap[paletteName][peletteColorKey].toUpperCase();
+                colorValue = colorFilter(colorValue);
 
                 const line = `    <Color x:Key="${kendoToRadColorNaming(colorKey)}">${colorValue}</Color>`;
                 console.log(line);
@@ -192,10 +357,7 @@ async function parseSwatchesAndCreateResourceDictionary(
                             console.log("Expected opacity for rgba filter.");
                         }
                         const opacity = Number.parseFloat(filterArg);
-                        let alpha = Math.round(opacity * 255).toString(16);
-                        if (alpha.length == 1) {
-                            alpha = "0" + alpha;
-                        }
+                        const alpha = colorHEX(opacity * 255);
                         colorValue = (colorValue[0] + alpha + colorValue.substring(1)).toUpperCase();
                         break;
                     default:
@@ -203,6 +365,7 @@ async function parseSwatchesAndCreateResourceDictionary(
                         continue;
                 }
 
+                colorValue = colorFilter(colorValue);
                 const line = `    <Color x:Key="${kendoToRadColorNaming(colorKey)}">${colorValue}</Color>`;
                 console.log(line);
                 rd += line + "\n";
