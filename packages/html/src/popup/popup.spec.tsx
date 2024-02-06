@@ -13,6 +13,7 @@ export type KendoPopupProps = {
         top: number | string;
         left: number | string;
     };
+    animationStyle?: React.CSSProperties;
 };
 
 const defaultProps = {
@@ -27,6 +28,7 @@ export const Popup = (
     const {
         offset,
         positionMode,
+        animationStyle,
         ...other
     } = props;
 
@@ -35,6 +37,7 @@ export const Popup = (
         <AnimationContainer
             positionMode={positionMode}
             offset={offset}
+            animationStyle={animationStyle}
         >
             <div {...other} className={classNames(props.className, POPUP_CLASSNAME)}>
                 {props.children}
