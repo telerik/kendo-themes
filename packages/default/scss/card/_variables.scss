@@ -65,7 +65,7 @@ $kendo-card-focus-shadow: null !default;
 $kendo-card-header-padding-x: $kendo-card-padding-x !default;
 /// The vertical padding of the Card header.
 /// @group card
-$kendo-card-header-padding-y: $kendo-card-padding-y !default;
+$kendo-card-header-padding-y: spacing(4) !default;
 /// The bottom border width of the Card header.
 /// @group card
 $kendo-card-header-border-width: 1px !default;
