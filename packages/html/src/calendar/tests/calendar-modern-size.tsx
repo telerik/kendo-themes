@@ -1,7 +1,7 @@
-import { Calendar } from '../../calendar';
+import { CalendarCentury, CalendarDecade, CalendarNormal, CalendarWithWeeks, CalendarYear } from '../../calendar';
 
 
-export default () =>(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
@@ -10,23 +10,25 @@ export default () =>(
             <span>large</span>
 
             <section>
-                <Calendar calendarView="month" size="small"></Calendar>
+                <CalendarNormal size="small"/>
             </section>
             <section>
-                <Calendar calendarView="month" showOtherMonth size="medium"></Calendar>
+                <CalendarNormal size="medium" showOtherMonth/>
             </section>
             <section>
-                <Calendar calendarView="month" showOtherMonth showWeek size="large"></Calendar>
+                <CalendarWithWeeks size="large" showOtherMonth/>
             </section>
 
             <section>
-                <Calendar calendarView="year" calendarHeaderText="2019" size="small"></Calendar>
+                <CalendarYear size="small"/>
             </section>
+
             <section>
-                <Calendar calendarView="decade" calendarHeaderText="2020 - 2029" size="medium"></Calendar>
+                <CalendarDecade />
             </section>
+
             <section>
-                <Calendar calendarView="century" calendarHeaderText="2000 - 2099" size="large"></Calendar>
+                <CalendarCentury size= "large"/>
             </section>
         </div>
 

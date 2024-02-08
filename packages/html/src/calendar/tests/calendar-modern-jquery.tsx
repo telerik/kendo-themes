@@ -1,22 +1,24 @@
-import { Calendar } from '../../calendar';
+import { CalendarCentury, CalendarDecade, CalendarNormal, CalendarWithWeeks, CalendarYear } from '../../calendar';
 
 
-export default () =>(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
             <span>jquery modern month</span>
-            <span>jquery modern weekdays</span>
-            <span>jquery modern week number with selected range</span>
+            <span>jquery modern week number</span>
+            <span>jquery modern week number with footer</span>
 
             <section>
-                <Calendar calendarView="month" showOtherMonth></Calendar>
+                <CalendarNormal showOtherMonth />
             </section>
+
             <section>
-                <Calendar calendarView="month" showOtherMonth showWeek></Calendar>
+                <CalendarWithWeeks showOtherMonth/>
             </section>
+
             <section>
-                <Calendar className="k-calendar-range" calendarView="month" showOtherMonth showWeek selectedRange></Calendar>
+                <CalendarWithWeeks showOtherMonth showCalendarFooter/>
             </section>
 
             <span>jquery modern year</span>
@@ -24,17 +26,17 @@ export default () =>(
             <span>jquery modern century</span>
 
             <section>
-                <Calendar calendarView="year" calendarHeaderText="2019"></Calendar>
+                <CalendarYear />
             </section>
 
             <section>
-                <Calendar calendarView="decade" calendarHeaderText="2020 - 2029"></Calendar>
+                <CalendarDecade />
             </section>
 
             <section>
-                <Calendar calendarView="century" calendarHeaderText="2000 - 2099"></Calendar>
+                <CalendarCentury />
             </section>
+
         </div>
-
     </>
 );

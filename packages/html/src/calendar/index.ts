@@ -5,3 +5,8 @@ export * from './calendar-footer';
 export * from './calendar-table';
 export * from './calendar-table-head';
 export * from './calendar-view';
+export * from './templates/calendar-century';
+export * from './templates/calendar-decade';
+export * from './templates/calendar-normal';
+export * from './templates/calendar-with-weeks';
+export * from './templates/calendar-year';

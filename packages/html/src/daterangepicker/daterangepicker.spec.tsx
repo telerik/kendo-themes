@@ -2,7 +2,7 @@ import { classNames, stateClassNames, States, Size, Roundness, FillMode } from '
 import { DateInput } from '../dateinput';
 import { FloatingLabel } from '../floating-label';
 import { Button } from '../button';
-import { MultiViewCalendar } from '../multiviewcalendar';
+import { MultiViewCalendarNormal } from '../multiviewcalendar';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
@@ -94,7 +94,7 @@ export const DateRangePicker = (
             </span>
             { opened &&
                 <Popup className="k-calendar-container k-daterangepicker-popup">
-                    <MultiViewCalendar dir={dir} />
+                    <MultiViewCalendarNormal dir={dir} />
                 </Popup>
             }
             { adaptive &&
@@ -105,7 +105,7 @@ export const DateRangePicker = (
                         subTitle="DD / MM / YY">
                     </ActionSheetHeader>
                     <div className="k-scrollable-wrap">
-                        <MultiViewCalendar size="large" calendarView="month" orientation="vertical" showCalendarCaption />
+                        <MultiViewCalendarNormal size="large" orientation="vertical" calendarCaption="October 2021" />
                     </div>
                 </ActionSheet>
             }

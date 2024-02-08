@@ -1,5 +1,5 @@
 import { classNames } from '../misc';
-import { CalendarTable } from '../calendar';
+import { CalendarTable } from './calendar-table';
 
 const className = `k-calendar-view`;
 
@@ -7,10 +7,6 @@ export type KendoCalendarViewProps = {
     orientation?: 'vertical' | 'horizontal',
     calendarView?: 'month' | 'year' | 'decade' | 'century';
     viewsCount?: number;
-    showWeek?: boolean;
-    showOtherMonth?: boolean;
-    showCalendarCaption?: boolean;
-    selectedRange?: boolean;
 };
 
 const defaultProps = {
@@ -27,10 +23,6 @@ export const CalendarView = (
         orientation = defaultProps.orientation,
         calendarView = defaultProps.calendarView,
         viewsCount = defaultProps.viewsCount,
-        showWeek,
-        showOtherMonth,
-        showCalendarCaption,
-        selectedRange,
         ...other
     } = props;
 
@@ -48,14 +40,11 @@ export const CalendarView = (
                     'k-vstack': orientation === 'vertical',
                 }
             )}>
+
             {[ ...Array(viewsCount) ].map((_e, i) =>
-                <CalendarTable key={i}
-                    calendarView={calendarView}
-                    showWeek={showWeek}
-                    showOtherMonth={showOtherMonth}
-                    showCalendarCaption={showCalendarCaption}
-                    selectedRange={selectedRange}
-                />
+                <CalendarTable key={i}>
+                    {props.children}
+                </CalendarTable>
             )}
         </div>
     );
