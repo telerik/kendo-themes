@@ -10,7 +10,7 @@ import {
 } from '../input';
 import { Button } from '../button';
 import { Popup } from '../popup';
-import { Calendar } from '../calendar';
+import { CalendarNormal } from '../calendar';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
 export const DATEPICKER_CLASSNAME = `k-datepicker`;
@@ -130,7 +130,7 @@ export const DatePicker = (
             </Input>
             { opened &&
                 <Popup className="k-calendar-container k-datepicker-popup">
-                    <Calendar dir={dir} />
+                    <CalendarNormal dir={dir} />
                 </Popup>
             }
             { adaptive &&
@@ -140,7 +140,7 @@ export const DatePicker = (
                         title="Select Dates"
                         subTitle="DD / MM / YY">
                     </ActionSheetHeader>
-                    <Calendar size="large"></Calendar>
+                    <CalendarNormal size="large"></CalendarNormal>
                 </ActionSheet>
             }
         </>

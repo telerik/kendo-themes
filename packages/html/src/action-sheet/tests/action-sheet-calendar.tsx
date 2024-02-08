@@ -1,5 +1,5 @@
 import { ActionSheet, ActionSheetHeader } from '../../action-sheet';
-import { Calendar } from '../../calendar';
+import { CalendarNormal } from '../../calendar';
 
 
 const styles = `
@@ -29,7 +29,7 @@ export default () =>(
                     <ActionSheetHeader actions={[ 'x' ]}>
                         <div className="k-text-center">Select date</div>
                     </ActionSheetHeader>
-                    <Calendar size="large" />
+                    <CalendarNormal size="large" />
                 </ActionSheet>
             </section>
 
@@ -38,7 +38,7 @@ export default () =>(
                     <ActionSheetHeader actions={[ 'x' ]}>
                         <div className="k-text-center">Select date</div>
                     </ActionSheetHeader>
-                    <Calendar size="large" />
+                    <CalendarNormal size="large" />
                 </ActionSheet>
             </section>
         </div>

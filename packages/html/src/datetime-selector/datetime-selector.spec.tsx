@@ -1,7 +1,7 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
 import { ButtonGroup } from '../button-group';
-import { Calendar } from '../calendar';
+import { CalendarNormal } from '../calendar';
 import { TimeSelector, TimeSelectorHeader } from '../time-selector';
 import { classNames, optionClassNames, Size } from '../misc';
 
@@ -76,7 +76,7 @@ export const DateTimeSelector = (
                     </>
                     : <>
                         <div className="k-datetime-calendar-wrap">
-                            <Calendar size={size} showOtherMonth dir={dir}></Calendar>
+                            <CalendarNormal size={size} showOtherMonth dir={dir}></CalendarNormal>
                         </div>
                         <div className="k-datetime-time-wrap"></div>
                     </>

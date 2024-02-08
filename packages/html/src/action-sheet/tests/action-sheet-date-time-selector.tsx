@@ -1,6 +1,6 @@
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
 import { Button } from '../../button';
-import { Calendar } from '../../calendar';
+import { CalendarNormal } from '../../calendar';
 import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
 
 
@@ -44,8 +44,7 @@ export default () =>(
                         <div className="k-datetime-selector">
                             <div className="k-datetime-calendar-wrap">
 
-                                <Calendar calendarView="month" size="large" showOtherMonth></Calendar>
-
+                                <CalendarNormal size="large" showOtherMonth />
                             </div>
                             <div className="k-datetime-time-wrap">
                             </div>

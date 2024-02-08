@@ -19,9 +19,9 @@ export type KendoMultiViewCalendarProps = KendoMultiViewCalendarOptions & {
     viewsCount?: number;
     orientation?: 'horizontal' | 'vertical';
     showCalendarFooter?: boolean;
+    calendarCaption?: string;
+    showTableHead?: boolean;
     showWeek?: boolean;
-    showOtherMonth?: boolean;
-    showCalendarCaption?: boolean;
     dir?: 'ltr' | 'rtl';
 };
 
@@ -45,8 +45,6 @@ export const MultiViewCalendar = (
         viewsCount = defaultProps.viewsCount,
         showCalendarFooter,
         showWeek,
-        showOtherMonth,
-        showCalendarCaption,
         dir,
         ...other
     } = props;
@@ -65,9 +63,6 @@ export const MultiViewCalendar = (
             orientation={orientation}
             showCalendarFooter={showCalendarFooter}
             showWeek={showWeek}
-            showOtherMonth={showOtherMonth}
-            showCalendarCaption={showCalendarCaption}
-            selectedRange={true}
             dir={dir}
         />
     );

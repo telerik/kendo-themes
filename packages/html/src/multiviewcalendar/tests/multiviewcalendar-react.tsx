@@ -1,23 +1,23 @@
-import { MultiViewCalendar } from '../../multiviewcalendar';
+import { MultiViewCalendarNormal, MultiViewCalendarWithWeeks, MultiViewCalendarYear } from '../../multiviewcalendar';
 
 
-export default () =>(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid">
 
             <span>Month View</span>
             <section>
-                <MultiViewCalendar calendarView="month"></MultiViewCalendar>
+                <MultiViewCalendarNormal />
             </section>
 
             <span>Month View with Week Numbers</span>
             <section>
-                <MultiViewCalendar calendarView="month" showWeek></MultiViewCalendar>
+                <MultiViewCalendarWithWeeks showOtherMonth />
             </section>
 
             <span>Year View</span>
             <section>
-                <MultiViewCalendar calendarView="year" calendarHeaderText="2021 - 2022"></MultiViewCalendar>
+                <MultiViewCalendarYear calendarHeaderText="2021 - 2022"/>
             </section>
 
         </div>

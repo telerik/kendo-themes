@@ -1,24 +1,24 @@
-import { Calendar } from '../../calendar';
+import { CalendarCentury, CalendarDecade, CalendarNormal, CalendarWithWeeks, CalendarYear } from '../../calendar';
 
 
-export default () =>(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
             <span>angular modern month</span>
             <span>angular modern week number</span>
-            <span>angular modern week number with selected range</span>
+            <span>angular modern week number with footer</span>
 
             <section>
-                <Calendar calendarView="month" showOtherMonth></Calendar>
+                <CalendarNormal showOtherMonth />
             </section>
 
             <section>
-                <Calendar calendarView="month" showOtherMonth showWeek></Calendar>
+                <CalendarWithWeeks showOtherMonth/>
             </section>
 
             <section>
-                <Calendar className="k-calendar-range" calendarView="month" showOtherMonth showWeek selectedRange></Calendar>
+                <CalendarWithWeeks showOtherMonth showCalendarFooter/>
             </section>
 
             <span>angular modern year</span>
@@ -26,15 +26,15 @@ export default () =>(
             <span>angular modern century</span>
 
             <section>
-                <Calendar calendarView="year" calendarHeaderText="2019"></Calendar>
+                <CalendarYear />
             </section>
 
             <section>
-                <Calendar calendarView="decade" calendarHeaderText="2020 - 2029"></Calendar>
+                <CalendarDecade />
             </section>
 
             <section>
-                <Calendar calendarView="century" calendarHeaderText="2000 - 2099"></Calendar>
+                <CalendarCentury />
             </section>
 
         </div>
