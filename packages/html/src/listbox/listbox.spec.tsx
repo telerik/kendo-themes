@@ -70,8 +70,8 @@ export const ListBox = (
                         const actionsIconMap = {
                             "left": dir !== "rtl" ? "caret-alt-left" : "caret-alt-right",
                             "right": dir !== 'rtl' ? "caret-alt-right" : "caret-alt-left",
-                            "forward": dir !== 'rtl' ? "forward" : "rewind",
-                            "rewind": dir !== 'rtl' ? "rewind" : "forward",
+                            "to": dir !== 'rtl' ? "caret-double-alt-right" : "caret-double-alt-left",
+                            "from": dir !== 'rtl' ? "caret-double-alt-left" : "caret-double-alt-right",
                             "up": "caret-alt-up",
                             "down": "caret-alt-down",
                             "x": "x"
