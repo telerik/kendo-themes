@@ -10,8 +10,8 @@
     "utils",
     "css variables"
   ],
-  "main": "dist/index.css",
-  "sass": "scss/index.scss",
+  "main": "dist/all.css",
+  "sass": "scss/all.scss",
   "files": [
     "dist/",
     "scss/",
