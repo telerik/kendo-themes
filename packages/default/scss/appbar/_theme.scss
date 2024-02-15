@@ -6,7 +6,10 @@
     .k-appbar-bottom {
         @include box-shadow( $kendo-appbar-bottom-box-shadow );
     }
-
+    .k-appbar-base {
+        color: $kendo-appbar-base-text;
+        background-color: $kendo-appbar-base-bg;
+    }
 
     // AppBar theme colors
     @each $name, $color in $kendo-theme-colors {
