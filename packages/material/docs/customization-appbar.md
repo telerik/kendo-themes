@@ -168,6 +168,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-appbar-base-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-base-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AppBar based on base color.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-appbar-base-text</td>
+    <td>Color</td>
+    <td><code>$kendo-base-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar based on base color.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-appbar-box-shadow</td>
     <td>String</td>
     <td><code>$box-shadow-depth-4</code></td>
