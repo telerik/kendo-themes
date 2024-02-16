@@ -9,7 +9,7 @@ import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { TimePicker } from '../../timepicker';
 import { Grid, GridHeader, GridHeaderTable, GridWithFilterRow } from '../../grid';
-import { TableThead, TableRow, TableTh } from '../../table';
+import { TableThead, TableRow, TableTd } from '../../table';
 
 export default () =>(
     <>
@@ -25,7 +25,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <ColorPicker />
@@ -33,7 +33,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -54,7 +54,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Autocomplete placeholder="Autocomplete..." />
@@ -62,7 +62,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -81,7 +81,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Combobox placeholder="Combobox..." />
@@ -89,7 +89,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -108,7 +108,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DropdownList placeholder="DropdownList..." />
@@ -116,7 +116,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -135,7 +135,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <NumericTextbox placeholder="Numeric..." />
@@ -143,7 +143,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -162,7 +162,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Textbox placeholder="Textbox..." />
@@ -170,7 +170,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -191,7 +191,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DatePicker placeholder="Datepicker..." />
@@ -199,7 +199,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -218,7 +218,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <TimePicker placeholder="TimePicker..." />
@@ -226,7 +226,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
@@ -245,7 +245,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DateTimePicker placeholder="DateTimePicker..." />
@@ -253,7 +253,7 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>

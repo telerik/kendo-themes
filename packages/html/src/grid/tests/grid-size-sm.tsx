@@ -8,7 +8,7 @@ import { SkeletonNormal } from '../../skeleton';
 import { Textbox } from '../../textbox';
 import { TooltipNormal } from '../../tooltip';
 import { GridNormal, GridHeader, GridGroupingHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager, GridToolbar } from '../../grid';
-import { TableTh, TableTd, TableThead, TableRow, TableTbody } from '../../table';
+import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
 const styles = `
@@ -101,12 +101,12 @@ export default () =>(
                                         <GridHeaderCell columnTitle="Sorted" menu="filter" sortable></GridHeaderCell>
                                     </TableRow>
                                     <TableRow className="k-filter-row">
-                                        <TableTh>
+                                        <TableTd>
                                             <div className="k-filtercell">
                                                 <div className="k-filltercell-wrapper"></div>
                                             </div>
-                                        </TableTh>
-                                        <TableTh>
+                                        </TableTd>
+                                        <TableTd>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <NumericTextbox showClearButton={false} />
@@ -117,8 +117,8 @@ export default () =>(
                                                     </div>
                                                 </div>
                                             </div>
-                                        </TableTh>
-                                        <TableTh>
+                                        </TableTd>
+                                        <TableTd>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <Textbox showClearButton={false} value="p" />
@@ -129,8 +129,8 @@ export default () =>(
                                                     </div>
                                                 </div>
                                             </div>
-                                        </TableTh>
-                                        <TableTh>
+                                        </TableTd>
+                                        <TableTd>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <Textbox showClearButton={false} value="p" />
@@ -141,8 +141,8 @@ export default () =>(
                                                     </div>
                                                 </div>
                                             </div>
-                                        </TableTh>
-                                        <TableTh>
+                                        </TableTd>
+                                        <TableTd>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <Textbox showClearButton={false} value="p" />
@@ -153,12 +153,12 @@ export default () =>(
                                                     </div>
                                                 </div>
                                             </div>
-                                        </TableTh>
-                                        <TableTh>
+                                        </TableTd>
+                                        <TableTd>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper"></div>
                                             </div>
-                                        </TableTh>
+                                        </TableTd>
                                     </TableRow>
                                 </TableThead>
                             </GridHeaderTable>
