@@ -1,10 +1,10 @@
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
+import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export default () =>(
     <>
         <div id="test-area">
-            <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "350px" }}>
+            <GridNormal _renderAriaRoot={false} pager={false} groupingHeader={false} className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "350px" }}>
                 <GridHeader>
                     <div className="k-grid-header-wrap k-auto-scrollable">
                         <GridHeaderTable>
@@ -41,9 +41,9 @@ export default () =>(
                         <div className="k-grid-content-expander" style={{ width: "982px" }}></div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridNormal>
             <h4>Angular Grid</h4>
-            <Grid _renderAriaRoot>
+            <GridNormal pager={false} groupingHeader={false} >
                 <GridHeader style={{ padding: "0px 16px 0px 0px" }}>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -80,7 +80,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridNormal>
         </div>
     </>
 );

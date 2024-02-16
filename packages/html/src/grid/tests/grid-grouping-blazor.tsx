@@ -2,7 +2,7 @@ import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
 import { Chip, ChipList, ChipAction } from '../../chip';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridGroupingHeader, GridContainer, GridContent, GridTable } from '../../grid';
+import { GridWithGrouping, GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, GridGroupingHeader, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -10,9 +10,7 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Base</h3>
-            <Grid className="telerik-blazor" groupingHeader={(
-                <GridGroupingHeader dropHint="Drag a column header and drop it here to group by that column"/>
-            )}>
+            <GridNormal className="telerik-blazor" pager={false}>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -84,9 +82,9 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridNormal>
             <h3>Single Group</h3>
-            <Grid className="telerik-blazor" groupingHeader={(
+            <GridWithGrouping className="telerik-blazor" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
@@ -185,9 +183,9 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithGrouping>
             <h3>Two Groups</h3>
-            <Grid className="telerik-blazor" groupingHeader={(
+            <GridWithGrouping className="telerik-blazor" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
@@ -310,7 +308,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithGrouping>
         </div>
     </>
 );

@@ -3,7 +3,7 @@ import { Checkbox } from '../../checkbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
+import { GridWithFilterRow, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -11,7 +11,7 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Base</h3>
-            <Grid dir="ltr" _renderAriaRoot>
+            <GridWithFilterRow dir="ltr" pager={false}>
                 <GridHeader>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
@@ -101,10 +101,10 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithFilterRow>
 
             <h3>With Toolbar</h3>
-            <Grid dir="ltr" _renderAriaRoot toolbar={(
+            <GridWithFilterRow dir="ltr" pager={false } toolbar={(
                 <GridToolbar>
                     <Button icon="plus">Add</Button>
                 </GridToolbar>
@@ -198,7 +198,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithFilterRow>
         </div>
     </>
 );

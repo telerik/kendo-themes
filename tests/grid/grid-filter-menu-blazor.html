@@ -10,341 +10,347 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
         <div class="telerik-blazor k-grid k-grid-md">
-            <div class="k-grid-header">
-                <div class="k-grid-header-wrap">
-                    <table role="grid" class="k-grid-header-table k-table k-table-md">
-                        <colgroup>
-                            <col style="width: 65px;">
-                            <col>
-                            <col>
-                        </colgroup>
-                        <thead class="k-table-thead">
-                            <tr class="k-table-row">
-                                <th colspan="1" class="k-header k-table-th">
-                                    <span class="k-checkbox-wrap">
-                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                    </span>
-                                </th>
-                                <th colspan="1" class="k-header k-filterable k-table-th">
-                                    <span class="k-cell-inner">
-                                        <span class="k-link">
-                                            <span class="k-column-title">Name</span>
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table role="grid" class="k-grid-header-table k-table k-table-md">
+                            <colgroup>
+                                <col style="width: 65px;">
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th colspan="1" class="k-header k-table-th">
+                                        <span class="k-checkbox-wrap">
+                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                         </span>
-                                        <a href="#" class="k-grid-header-menu k-grid-filter-menu">
-                                            <span class="k-icon k-svg-icon k-svg-i-filter">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
-                                                </svg>
+                                    </th>
+                                    <th colspan="1" class="k-header k-filterable k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Name</span>
                                             </span>
-                                        </a>
-                                    </span>
-                                </th>
-                                <th colspan="1" class="k-header k-table-th">
-                                    <span class="k-cell-inner">
-                                        <span class="k-link">
-                                            <span class="k-column-title">Command</span>
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
+                                                <span class="k-icon k-svg-icon k-svg-i-filter">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
                                         </span>
-                                    </span>
-                                </th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-            <div class="k-grid-container">
-                <div class="k-virtual-content k-grid-content">
-                    <div class="k-pos-relative">
-                        <div class="k-virtual-position">
-                            <table role="grid" class="k-grid-table k-table k-table-md" style="height: auto;">
-                                <colgroup>
-                                    <col style="width: 65px;">
-                                    <col>
-                                    <col>
-                                </colgroup>
-                                <tbody class="k-table-tbody">
-                                    <tr class="k-master-row k-table-row">
-                                        <td colspan="0" class="k-table-td">
-                                            <span>
-                                                <span class="k-checkbox-wrap">
-                                                    <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                                                </span>
+                                    </th>
+                                    <th colspan="1" class="k-header k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Command</span>
                                             </span>
-                                        </td>
-                                        <td colspan="0" class="k-table-td">Product1</td>
-                                        <td colspan="0" class="k-command-cell k-table-td">
-                                            <span>
-                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="k-button-text">Delete</span>
-                                                </button>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                        <td colspan="0" class="k-table-td">
-                                            <span>
-                                                <span class="k-checkbox-wrap">
-                                                    <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                                                </span>
-                                            </span>
-                                        </td>
-                                        <td colspan="0" class="k-table-td">Product2</td>
-                                        <td colspan="0" class="k-command-cell k-table-td">
-                                            <span>
-                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="k-button-text">Delete</span>
-                                                </button>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
-                    <div class="k-height-container">
-                        <div></div>
+                </div>
+                <div class="k-grid-container">
+                    <div class="k-virtual-content k-grid-content">
+                        <div class="k-pos-relative">
+                            <div class="k-virtual-position">
+                                <table role="grid" class="k-grid-table k-table k-table-md" style="height: auto;">
+                                    <colgroup>
+                                        <col style="width: 65px;">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-master-row k-table-row">
+                                            <td colspan="0" class="k-table-td">
+                                                <span>
+                                                    <span class="k-checkbox-wrap">
+                                                        <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
+                                                    </span>
+                                                </span>
+                                            </td>
+                                            <td colspan="0" class="k-table-td">Product1</td>
+                                            <td colspan="0" class="k-command-cell k-table-td">
+                                                <span>
+                                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="k-button-text">Delete</span>
+                                                    </button>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                            <td colspan="0" class="k-table-td">
+                                                <span>
+                                                    <span class="k-checkbox-wrap">
+                                                        <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
+                                                    </span>
+                                                </span>
+                                            </td>
+                                            <td colspan="0" class="k-table-td">Product2</td>
+                                            <td colspan="0" class="k-command-cell k-table-td">
+                                                <span>
+                                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="k-button-text">Delete</span>
+                                                    </button>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-height-container">
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <h3>Sortable</h3>
         <div class="telerik-blazor k-grid k-grid-md">
-            <div class="k-grid-header">
-                <div class="k-grid-header-wrap">
-                    <table role="grid" class="k-grid-header-table k-table k-table-md">
-                        <colgroup>
-                            <col style="width: 65px;">
-                            <col>
-                            <col>
-                        </colgroup>
-                        <thead class="k-table-thead">
-                            <tr class="k-table-row">
-                                <th colspan="1" class="k-header k-table-th">
-                                    <span class="k-checkbox-wrap">
-                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                    </span>
-                                </th>
-                                <th colspan="1" class="k-header k-filterable k-sorted k-table-th">
-                                    <span class="k-cell-inner">
-                                        <span class="k-link">
-                                            <span class="k-column-title">Name</span>
-                                            <span class="k-sort-icon">
-                                                <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table role="grid" class="k-grid-header-table k-table k-table-md">
+                            <colgroup>
+                                <col style="width: 65px;">
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th colspan="1" class="k-header k-table-th">
+                                        <span class="k-checkbox-wrap">
+                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                        </span>
+                                    </th>
+                                    <th colspan="1" class="k-header k-filterable k-sorted k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Name</span>
+                                                <span class="k-sort-icon">
+                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
+                                                <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
+                                                        <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
                                                     </svg>
                                                 </span>
+                                            </a>
+                                        </span>
+                                    </th>
+                                    <th colspan="1" class="k-header k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Command</span>
                                             </span>
                                         </span>
-                                        <a href="#" class="k-grid-header-menu k-grid-filter-menu">
-                                            <span class="k-icon k-svg-icon k-svg-i-filter">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </span>
-                                </th>
-                                <th colspan="1" class="k-header k-table-th">
-                                    <span class="k-cell-inner">
-                                        <span class="k-link">
-                                            <span class="k-column-title">Command</span>
-                                        </span>
-                                    </span>
-                                </th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-            <div class="k-grid-container">
-                <div class="k-virtual-content k-grid-content">
-                    <div class="k-pos-relative">
-                        <div class="k-virtual-position">
-                            <table role="grid" class="k-grid-table k-table k-table-md" style="height: auto;">
-                                <colgroup>
-                                    <col style="width: 65px;">
-                                    <col class="k-sorted">
-                                    <col>
-                                </colgroup>
-                                <tbody class="k-table-tbody">
-                                    <tr class="k-master-row k-table-row">
-                                        <td colspan="0" class="k-table-td">
-                                            <span>
-                                                <span class="k-checkbox-wrap">
-                                                    <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                                                </span>
-                                            </span>
-                                        </td>
-                                        <td colspan="0" class="k-table-td">Product1</td>
-                                        <td colspan="0" class="k-command-cell k-table-td">
-                                            <span>
-                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="k-button-text">Delete</span>
-                                                </button>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                        <td colspan="0" class="k-table-td">
-                                            <span>
-                                                <span class="k-checkbox-wrap">
-                                                    <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                                                </span>
-                                            </span>
-                                        </td>
-                                        <td colspan="0" class="k-table-td">Product2</td>
-                                        <td colspan="0" class="k-command-cell k-table-td">
-                                            <span>
-                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="k-button-text">Delete</span>
-                                                </button>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
-                    <div class="k-height-container">
-                        <div></div>
+                </div>
+                <div class="k-grid-container">
+                    <div class="k-virtual-content k-grid-content">
+                        <div class="k-pos-relative">
+                            <div class="k-virtual-position">
+                                <table role="grid" class="k-grid-table k-table k-table-md" style="height: auto;">
+                                    <colgroup>
+                                        <col style="width: 65px;">
+                                        <col class="k-sorted">
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-master-row k-table-row">
+                                            <td colspan="0" class="k-table-td">
+                                                <span>
+                                                    <span class="k-checkbox-wrap">
+                                                        <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
+                                                    </span>
+                                                </span>
+                                            </td>
+                                            <td colspan="0" class="k-table-td">Product1</td>
+                                            <td colspan="0" class="k-command-cell k-table-td">
+                                                <span>
+                                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="k-button-text">Delete</span>
+                                                    </button>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                            <td colspan="0" class="k-table-td">
+                                                <span>
+                                                    <span class="k-checkbox-wrap">
+                                                        <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
+                                                    </span>
+                                                </span>
+                                            </td>
+                                            <td colspan="0" class="k-table-td">Product2</td>
+                                            <td colspan="0" class="k-command-cell k-table-td">
+                                                <span>
+                                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="k-button-text">Delete</span>
+                                                    </button>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-height-container">
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <h3>Sortable &amp; Resizable</h3>
         <div class="telerik-blazor k-grid k-grid-md">
-            <div class="k-grid-header">
-                <div class="k-grid-header-wrap">
-                    <table role="grid" class="k-grid-header-table k-table k-table-md">
-                        <colgroup>
-                            <col style="width: 65px;">
-                            <col>
-                            <col>
-                        </colgroup>
-                        <thead class="k-table-thead">
-                            <tr class="k-table-row">
-                                <th colspan="1" class="k-header k-touch-action-none k-table-th">
-                                    <span class="k-checkbox-wrap">
-                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                    </span>
-                                    <span class="k-column-resizer k-touch-action-none"></span>
-                                </th>
-                                <th colspan="1" class="k-header k-filterable k-sorted k-touch-action-none k-table-th">
-                                    <span class="k-cell-inner">
-                                        <span class="k-link">
-                                            <span class="k-column-title">Name</span>
-                                            <span class="k-sort-icon">
-                                                <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table role="grid" class="k-grid-header-table k-table k-table-md">
+                            <colgroup>
+                                <col style="width: 65px;">
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th colspan="1" class="k-header k-touch-action-none k-table-th">
+                                        <span class="k-checkbox-wrap">
+                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th colspan="1" class="k-header k-filterable k-sorted k-touch-action-none k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Name</span>
+                                                <span class="k-sort-icon">
+                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
+                                                <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
+                                                        <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
                                                     </svg>
                                                 </span>
+                                            </a>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th colspan="1" class="k-header k-touch-action-none k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Command</span>
                                             </span>
                                         </span>
-                                        <a href="#" class="k-grid-header-menu k-grid-filter-menu">
-                                            <span class="k-icon k-svg-icon k-svg-i-filter">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </span>
-                                    <span class="k-column-resizer k-touch-action-none"></span>
-                                </th>
-                                <th colspan="1" class="k-header k-touch-action-none k-table-th">
-                                    <span class="k-cell-inner">
-                                        <span class="k-link">
-                                            <span class="k-column-title">Command</span>
-                                        </span>
-                                    </span>
-                                    <span class="k-column-resizer k-touch-action-none"></span>
-                                </th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-            <div class="k-grid-container">
-                <div class="k-virtual-content k-grid-content">
-                    <div class="k-pos-relative">
-                        <div class="k-virtual-position">
-                            <table role="grid" class="k-grid-table k-table k-table-md" style="height: auto;">
-                                <colgroup>
-                                    <col style="width: 65px;">
-                                    <col class="k-sorted">
-                                    <col>
-                                </colgroup>
-                                <tbody class="k-table-tbody">
-                                    <tr class="k-master-row k-table-row">
-                                        <td colspan="0" class="k-table-td">
-                                            <span>
-                                                <span class="k-checkbox-wrap">
-                                                    <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                                                </span>
-                                            </span>
-                                        </td>
-                                        <td colspan="0" class="k-table-td">Product1</td>
-                                        <td colspan="0" class="k-command-cell k-table-td">
-                                            <span>
-                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="k-button-text">Delete</span>
-                                                </button>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                        <td colspan="0" class="k-table-td">
-                                            <span>
-                                                <span class="k-checkbox-wrap">
-                                                    <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
-                                                </span>
-                                            </span>
-                                        </td>
-                                        <td colspan="0" class="k-table-td">Product2</td>
-                                        <td colspan="0" class="k-command-cell k-table-td">
-                                            <span>
-                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="k-button-text">Delete</span>
-                                                </button>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
-                    <div class="k-height-container">
-                        <div></div>
+                </div>
+                <div class="k-grid-container">
+                    <div class="k-virtual-content k-grid-content">
+                        <div class="k-pos-relative">
+                            <div class="k-virtual-position">
+                                <table role="grid" class="k-grid-table k-table k-table-md" style="height: auto;">
+                                    <colgroup>
+                                        <col style="width: 65px;">
+                                        <col class="k-sorted">
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-master-row k-table-row">
+                                            <td colspan="0" class="k-table-td">
+                                                <span>
+                                                    <span class="k-checkbox-wrap">
+                                                        <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
+                                                    </span>
+                                                </span>
+                                            </td>
+                                            <td colspan="0" class="k-table-td">Product1</td>
+                                            <td colspan="0" class="k-command-cell k-table-td">
+                                                <span>
+                                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="k-button-text">Delete</span>
+                                                    </button>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                            <td colspan="0" class="k-table-td">
+                                                <span>
+                                                    <span class="k-checkbox-wrap">
+                                                        <input class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md" type="checkbox">
+                                                    </span>
+                                                </span>
+                                            </td>
+                                            <td colspan="0" class="k-table-td">Product2</td>
+                                            <td colspan="0" class="k-command-cell k-table-td">
+                                                <span>
+                                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="k-button-text">Delete</span>
+                                                    </button>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-height-container">
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>

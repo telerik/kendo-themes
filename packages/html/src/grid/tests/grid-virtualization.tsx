@@ -1,5 +1,5 @@
 import { SkeletonNormal } from "../../skeleton";
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable } from '../../grid';
+import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export default () =>(
@@ -9,7 +9,7 @@ export default () =>(
             <span className="col-2">Grid with Virtualization</span>
 
             <section className="col-2">
-                <Grid className="k-grid-virtual" style={{ height: "220px", width: "500px" }} >
+                <GridNormal pager={false} groupingHeader={false} className="k-grid-virtual" style={{ height: "220px", width: "500px" }} >
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -423,13 +423,13 @@ export default () =>(
                             <div className="k-virtual-scroller-size" style={{ height: "30000px" }}></div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span className="col-2">Grid with Virtualization RTL</span>
 
             <section className="col-2">
-                <Grid className="k-grid-virtual" dir="rtl" style={{ height: "220px", width: "500px" }} >
+                <GridNormal pager={false} groupingHeader={false} className="k-grid-virtual" dir="rtl" style={{ height: "220px", width: "500px" }} >
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -843,7 +843,7 @@ export default () =>(
                             <div className="k-virtual-scroller-size" style={{ height: "30000px" }}></div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
         </div>

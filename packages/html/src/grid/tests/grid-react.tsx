@@ -1,5 +1,5 @@
 import { Icon } from '../../icon';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
+import { GridNormal, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
 import { TableRow, TableThead, TableTbody, TableTfoot, TableTd } from '../../table';
 
 export default () =>(
@@ -8,7 +8,7 @@ export default () =>(
             <span>Interaction States</span>
 
             <section>
-                <Grid style={{ height: "500px" }} _renderAriaRoot>
+                <GridNormal style={{ height: "500px" }} groupingHeader={false} pager={false}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable style={{ width: "1180px" }}>
@@ -268,7 +268,7 @@ export default () =>(
                             </GridFooterTable>
                         </div>
                     </GridFooter>
-                </Grid>
+                </GridNormal>
             </section>
         </div>
     </>

@@ -1,9 +1,8 @@
 import { WindowNormal } from '../../window';
 import { DropdownList } from '../../dropdownlist';
-import { Toolbar } from '../../toolbar';
 import { Button } from '../../button';
-import { Icon } from '../../icon';
-
+import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from "../../grid";
+import { TableRow, TableTbody, TableTd, TableThead } from '../../table';
 
 const styles = `
     .k-window {
@@ -45,60 +44,49 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <div className="k-grid k-grid-md k-grid-no-scrollbar">
-                                <Toolbar className="k-grid-toolbar">
+                            <Grid _renderAriaRoot className="k-grid-no-scrollbar" toolbar={(
+                                <GridToolbar className="k-grid-toolbar">
                                     <Button icon="plus">Add</Button>
                                     <Button icon="minus">Remove</Button>
-                                </Toolbar>
-                                <div className="k-grid-header">
+                                </GridToolbar>
+                            )}>
+                                <GridHeader>
                                     <div className="k-grid-header-wrap">
-                                        <table className="k-table k-table-md k-grid-header-table">
+                                        <GridHeaderTable>
                                             <colgroup>
                                                 <col/>
                                                 <col/>
                                             </colgroup>
-                                            <thead className="k-table-thead">
-                                                <tr className="k-table-row">
-                                                    <th className="k-table-th k-header">
-                                                        <span className="k-cell-inner">
-                                                            <span className="k-link">
-                                                                <span className="k-column-title">Name</span>
-                                                                <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
-                                                            </span>
-                                                        </span>
-                                                    </th>
-                                                    <th className="k-table-th k-header">
-                                                        <span className="k-cell-inner">
-                                                            <span className="k-link">
-                                                                <span className="k-column-title">Type</span>
-                                                                <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
-                                                            </span>
-                                                        </span>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                        </table>
+                                            <TableThead>
+                                                <TableRow>
+                                                    <GridHeaderCell columnTitle="Name" sortable></GridHeaderCell>
+                                                    <GridHeaderCell columnTitle="Type" sortable></GridHeaderCell>
+                                                </TableRow>
+                                            </TableThead>
+                                        </GridHeaderTable>
                                     </div>
-                                </div>
-                                <div className="k-grid-content">
-                                    <table className="k-table k-table-md k-grid-table">
-                                        <colgroup>
-                                            <col/>
-                                            <col/>
-                                        </colgroup>
-                                        <tbody className="k-table-tbody">
-                                            <tr className="k-table-row">
-                                                <td className="k-table-td">
-                                                    <DropdownList placeholder="-Select task-"/>
-                                                </td>
-                                                <td className="k-table-td">
-                                                    <DropdownList placeholder="Finish-Start"/>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                                </GridHeader>
+                                <GridContainer>
+                                    <GridContent>
+                                        <GridTable>
+                                            <colgroup>
+                                                <col className="k-sorted"/>
+                                                <col className="k-sorted"/>
+                                            </colgroup>
+                                            <TableTbody>
+                                                <TableRow>
+                                                    <TableTd>
+                                                        <DropdownList placeholder="-Select task-"/>
+                                                    </TableTd>
+                                                    <TableTd>
+                                                        <DropdownList placeholder="Finish-Start"/>
+                                                    </TableTd>
+                                                </TableRow>
+                                            </TableTbody>
+                                        </GridTable>
+                                    </GridContent>
+                                </GridContainer>
+                            </Grid>
                         </div>
                     </div>
                 </WindowNormal>

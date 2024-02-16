@@ -7,8 +7,9 @@ import { Searchbox } from "../../searchbox";
 import { SplitButton } from "../../split-button";
 import { Splitter, SplitterPane } from "../../splitter";
 import { Switch } from "../../switch";
-import { Table, TableThead, TableRow, TableTh, TableTbody, TableTd } from "../../table";
+import { TableThead, TableRow, TableTbody, TableTd } from "../../table";
 import { TreeviewItem } from "../../treeview";
+import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from "../../grid";
 
 export const FileManagerGrid = (props) => (
     <FileManager toolbar={
@@ -52,10 +53,10 @@ export const FileManagerGrid = (props) => (
                         </BreadcrumbContainer>
                     </FileManagerBreadcrumb>
 
-                    <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
-                        <div className="k-grid-header">
+                    <Grid _renderAriaRoot className="k-filemanager-grid k-grid-display-block k-editable">
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <Table className="k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                         <col />
@@ -63,62 +64,43 @@ export const FileManagerGrid = (props) => (
                                     </colgroup>
                                     <TableThead>
                                         <TableRow>
-                                            <TableTh className="k-header k-sorted">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Name</span>
-                                                        <span className="k-sort-icon">
-                                                            <Icon icon="sort-asc-small" />
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                            </TableTh>
-                                            <TableTh className="k-header">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Date Created</span>
-                                                    </span>
-                                                </span>
-                                            </TableTh>
-                                            <TableTh className="k-header">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">File Size</span>
-                                                    </span>
-                                                </span>
-                                            </TableTh>
+                                            <GridHeaderCell columnTitle="Name" sortable></GridHeaderCell>
+                                            <GridHeaderCell columnTitle="Date Created"></GridHeaderCell>
+                                            <GridHeaderCell columnTitle="File Size"></GridHeaderCell>
                                         </TableRow>
                                     </TableThead>
-                                </Table>
+                                </GridHeaderTable>
 
                             </div>
-                        </div>
-                        <div className="k-grid-content k-auto-scrollable">
-                            <Table className="k-table-md k-grid-table k-selectable">
-                                <colgroup>
-                                    <col className="k-sorted" />
-                                    <col />
-                                    <col />
-                                </colgroup>
-                                <TableTbody>
-                                    <TableRow>
-                                        <TableTd>
-                                            <FilePreview name="Folder" icon="folder" />
-                                        </TableTd>
-                                        <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
-                                        <TableTd>0</TableTd>
-                                    </TableRow>
-                                    <TableRow alt>
-                                        <TableTd>
-                                            <FilePreview name="file.png" icon="file" />
-                                        </TableTd>
-                                        <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
-                                        <TableTd>73289</TableTd>
-                                    </TableRow>
-                                </TableTbody>
-                            </Table>
-                        </div>
-                    </div>
+                        </GridHeader>
+                        <GridContainer>
+                            <GridContent className="k-auto-scrollable">
+                                <GridTable className="k-selectable">
+                                    <colgroup>
+                                        <col className="k-sorted" />
+                                        <col />
+                                        <col />
+                                    </colgroup>
+                                    <TableTbody>
+                                        <TableRow>
+                                            <TableTd>
+                                                <FilePreview name="Folder" icon="folder" />
+                                            </TableTd>
+                                            <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
+                                            <TableTd>0</TableTd>
+                                        </TableRow>
+                                        <TableRow alt>
+                                            <TableTd>
+                                                <FilePreview name="file.png" icon="file" />
+                                            </TableTd>
+                                            <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
+                                            <TableTd>73289</TableTd>
+                                        </TableRow>
+                                    </TableTbody>
+                                </GridTable>
+                            </GridContent>
+                        </GridContainer>
+                    </Grid>
                 </SplitterPane>
             </Splitter>
         </>

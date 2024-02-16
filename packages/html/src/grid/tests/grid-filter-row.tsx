@@ -8,7 +8,7 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { TimePicker } from '../../timepicker';
-import { Grid, GridHeader, GridHeaderTable } from '../../grid';
+import { Grid, GridHeader, GridHeaderTable, GridWithFilterRow } from '../../grid';
 import { TableThead, TableRow, TableTh } from '../../table';
 
 export default () =>(
@@ -260,6 +260,10 @@ export default () =>(
                         </div>
                     </GridHeader>
                 </Grid>
+            </div>
+
+            <div className="k-col-span-full">
+                <GridWithFilterRow></GridWithFilterRow>
             </div>
 
         </div>

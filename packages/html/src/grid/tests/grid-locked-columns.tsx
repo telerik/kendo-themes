@@ -1,8 +1,7 @@
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
+import { GridWithLockedColumns, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridFooter, GridFooterTable } from '../../grid';
 import { TableThead, TableTbody, TableTfoot, TableRow, TableTd } from '../../table';
-
 
 const styles = `
     /* These overrides are needed for the "Angular Grid with locked columns, Grouping and Multiline headers" example ->
@@ -19,142 +18,10 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
-            <Grid className="k-grid-display-block k-reordable k-grid-lockedcolumns">
-                <GridHeader>
-                    <div className="k-grid-header-locked" style={{ width: "400px" }}>
-                        <GridHeaderTable>
-                            <colgroup>
-                                <col style={{ width: "150px" }} />
-                                <col style={{ width: "300px" }} />
-                            </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Order ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Ship Name"></GridHeaderCell>
-                                </TableRow>
-                            </TableThead>
-                        </GridHeaderTable>
-                    </div>
-                    <div className="k-grid-header-wrap k-auto-scrollable" style={{ width: "581px" }}>
-                        <GridHeaderTable>
-                            <colgroup>
-                                <col style={{ width: "300px" }} />
-                                <col style={{ width: "300px" }} />
-                                <col style={{ width: "400px" }} />
-                            </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Ship Country"></GridHeaderCell>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Ship City"></GridHeaderCell>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Ship Address"></GridHeaderCell>
-                                </TableRow>
-                            </TableThead>
-                        </GridHeaderTable>
-                        <div className="k-resize-handle" style={{ top: '0px', left: "595.5px", height: "37px", width: "9px" }}>
-                            <div className="k-resize-handle-inner"></div>
-                        </div>
-                    </div>
-                </GridHeader>
-                <GridContainer>
-                    <div className="k-grid-content-locked" style={{ width: "400px", height: "303px" }}>
-                        <GridTable>
-                            <colgroup>
-                                <col style={{ width: "150px" }} />
-                                <col style={{ width: "300px" }} />
-                            </colgroup>
-                            <TableTbody>
-                                <TableRow>
-                                    <TableTd>10248</TableTd>
-                                    <TableTd>Vins et alcools Chevalier</TableTd>
-                                </TableRow>
-                                <TableRow className="k-alt" alt>
-                                    <TableTd>10249</TableTd>
-                                    <TableTd>Toms Spezialitäten</TableTd>
-                                </TableRow>
-                                <TableRow>
-                                    <TableTd>10250</TableTd>
-                                    <TableTd>Hanari Carnes</TableTd>
-                                </TableRow>
-                                <TableRow className="k-alt" alt hover>
-                                    <TableTd>10251</TableTd>
-                                    <TableTd>Victuailles en stock (Hovered)</TableTd>
-                                </TableRow>
-                                <TableRow selected>
-                                    <TableTd>10252</TableTd>
-                                    <TableTd>Suprêmes délices (Selected)</TableTd>
-                                </TableRow>
-                                <TableRow className="k-alt" alt selected hover>
-                                    <TableTd>10253</TableTd>
-                                    <TableTd>Hanari (Selected and Hovered)</TableTd>
-                                </TableRow>
-                                <TableRow>
-                                    <TableTd>10254</TableTd>
-                                    <TableTd>Chop-suey Chinese</TableTd>
-                                </TableRow>
-                                <TableRow className="k-alt" alt>
-                                    <TableTd>10255</TableTd>
-                                    <TableTd>Richter Supermarkt</TableTd>
-                                </TableRow>
-                            </TableTbody>
-                        </GridTable>
-                    </div>
-                    <GridContent className="k-auto-scrollable" style={{ width: "605px", height: "320px" }}>
-                        <GridTable style={{ width: "1000px" }}>
-                            <colgroup>
-                                <col style={{ width: "300px" }} />
-                                <col style={{ width: "300px" }} />
-                                <col style={{ width: "400px" }} />
-                            </colgroup>
-                            <TableTbody>
-                                <TableRow>
-                                    <TableTd>France</TableTd>
-                                    <TableTd>Reims</TableTd>
-                                    <TableTd>59 rue de l&apos;Abbaye</TableTd>
-                                </TableRow>
-                                <TableRow className="k-alt" alt>
-                                    <TableTd>Germany</TableTd>
-                                    <TableTd>Münster</TableTd>
-                                    <TableTd>Luisenstr. 48</TableTd>
-                                </TableRow>
-                                <TableRow>
-                                    <TableTd>Brazil</TableTd>
-                                    <TableTd>Rio de Janeiro</TableTd>
-                                    <TableTd>Rua do Paço, 67</TableTd>
-                                </TableRow>
-                                <TableRow className="k-alt" alt hover>
-                                    <TableTd>France</TableTd>
-                                    <TableTd>Lyon</TableTd>
-                                    <TableTd>2, rue du Commerce</TableTd>
-                                </TableRow>
-                                <TableRow selected>
-                                    <TableTd>Belgium</TableTd>
-                                    <TableTd>Charleroi</TableTd>
-                                    <TableTd>Boulevard Tirou, 255</TableTd>
-                                </TableRow>
-                                <TableRow className="k-alt" alt selected hover>
-                                    <TableTd>Brazil</TableTd>
-                                    <TableTd>Rio de Janeiro</TableTd>
-                                    <TableTd>Rua do Paço, 67</TableTd>
-                                </TableRow>
-                                <TableRow>
-                                    <TableTd>Switzerland</TableTd>
-                                    <TableTd>Bern</TableTd>
-                                    <TableTd>Hauptstr. 31</TableTd>
-                                </TableRow>
-                                <TableRow className="k-alt" alt>
-                                    <TableTd>Switzerland</TableTd>
-                                    <TableTd>Genève</TableTd>
-                                    <TableTd>Starenweg 5</TableTd>
-                                </TableRow>
-                            </TableTbody>
-                        </GridTable>
-                    </GridContent>
-                </GridContainer>
-            </Grid>
-
+            <GridWithLockedColumns headerWrapClassName="k-auto-scrollable" contentClassName="k-auto-scrollable" className="k-grid-display-block k-reordable" />
             <div>
                 <span>jQuery Grid - Frozen columns and sorting</span>
-                <Grid style={{ width: "1000px", height: "200px" }} className="k-grid-display-block k-grid-lockedcolumns">
+                <GridWithLockedColumns _renderAriaRoot={false} style={{ width: "1000px", height: "200px" }} className="k-grid-display-block">
                     <GridHeader>
                         <div className="k-grid-header-locked" style={{ width: "400px" }}>
                             <GridHeaderTable>
@@ -239,12 +106,12 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridWithLockedColumns>
             </div>
 
             <div>
                 <span>Angular Grid with locked columns, Grouping and Multiline headers</span>
-                <Grid className="k-grid-lockedcolumns grid-styling-overrides" style={{ height: "430px" }}>
+                <GridWithLockedColumns className="grid-styling-overrides" style={{ height: "430px" }}>
                     <GridHeader>
                         <div className="k-grid-header-locked" style={{ width: "582px" }}>
                             <GridHeaderTable>
@@ -484,7 +351,7 @@ export default () =>(
                             </GridFooterTable>
                         </div>
                     </GridFooter>
-                </Grid>
+                </GridWithLockedColumns>
             </div>
         </div>
     </>

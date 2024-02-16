@@ -4,7 +4,7 @@ import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
 import { Popup } from '../../popup';
 import { SkeletonNormal } from '../../skeleton';
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
+import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -15,7 +15,7 @@ export default () =>(
             <span className="col-3">Angular grid</span>
 
             <section className="col-3">
-                <Grid className="k-grid-no-scrollbar" _renderAriaRoot pager={( <GridPager/> )} >
+                <GridNormal className="k-grid-no-scrollbar" groupingHeader={false}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -68,12 +68,12 @@ export default () =>(
                             </div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span className="col-3">Angular -- fixed height, hierarchy, filter menu, sort icon</span>
             <section className="col-3">
-                <Grid className="k-grid-no-scrollbar" _renderAriaRoot style={{ height: "240px" }}>
+                <GridNormal className="k-grid-no-scrollbar" style={{ height: "240px" }} pager={false} groupingHeader={false}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -149,12 +149,12 @@ export default () =>(
                             </div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span className="col-3">Angular -- standalone column chooser</span>
             <section className="col-2">
-                <Grid _renderAriaRoot toolbar={(
+                <GridNormal pager={false} groupingHeader={false} toolbar={(
                     <div className="k-toolbar k-grid-toolbar">
                         <div className="k-spacer"></div>
                         <div className="k-grid-column-chooser">
@@ -213,7 +213,7 @@ export default () =>(
                             </div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
             <section className="col-1">
                 <Popup>

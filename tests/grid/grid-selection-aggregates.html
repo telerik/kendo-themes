@@ -9,93 +9,103 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-        <span class="col-2">Grid with selection aggregates container</span>
+        <span class="col-2">Base State</span>
         <section class="col-2">
             <div class="k-grid-no-scrollbar k-grid k-grid-md">
-                <div class="k-grid-header">
-                    <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table k-table-md">
-                            <colgroup>
-                                <col style="width: 100px;">
-                                <col>
-                            </colgroup>
-                            <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">100px</span>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table k-table-md">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Product Name</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">no width</span>
+                                        </th>
+                                        <th class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Units In Stock</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
+                                        </th>
+                                        <th class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Discontinued</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Units in Order</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-content">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col style="width: 100px;">
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">1</td>
-                                    <td class="k-table-td">Row</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-selected k-table-td">2</td>
-                                    <td class="k-selected k-table-td">Alt row</td>
-                                </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-selected k-table-td">3</td>
-                                    <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-selected k-table-td">4</td>
-                                    <td class="k-table-td">
-                                        <span class="k-skeleton k-skeleton-text"></span>
-                                    </td>
-                                </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">5</td>
-                                    <td class="k-table-td">
-                                        <span class="k-skeleton k-skeleton-text"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <table class="k-grid-table k-table k-table-md">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row">
+                                        <td class="k-table-td">Chai</td>
+                                        <td class="k-table-td">39</td>
+                                        <td class="k-table-td">false</td>
+                                        <td class="k-table-td">0</td>
+                                    </tr>
+                                    <tr class="k-alt k-table-row k-table-alt-row">
+                                        <td class="k-table-td">Chang</td>
+                                        <td class="k-table-td">17</td>
+                                        <td class="k-table-td">false</td>
+                                        <td class="k-table-td">40</td>
+                                    </tr>
+                                    <tr class="k-table-row">
+                                        <td class="k-table-td">Aniseed Syrup</td>
+                                        <td class="k-table-td">13</td>
+                                        <td class="k-table-td">false</td>
+                                        <td class="k-table-td">70</td>
+                                    </tr>
+                                    <tr class="k-alt k-table-row k-table-alt-row">
+                                        <td class="k-table-td">Chef Anton's Cajun Seasoning</td>
+                                        <td class="k-table-td">53</td>
+                                        <td class="k-table-td">false</td>
+                                        <td class="k-table-td">0</td>
+                                    </tr>
+                                    <tr class="k-table-row">
+                                        <td class="k-table-td">Chef Anton's Gumbo Mix</td>
+                                        <td class="k-table-td">0</td>
+                                        <td class="k-table-td">true</td>
+                                        <td class="k-table-td">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="k-selection-aggregates k-grid-selection-aggregates">
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Sum: </span>
-                        <span class="k-selection-aggregates-item-value">9.00</span>
-                    </div>
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Avg: </span>
-                        <span class="k-selection-aggregates-item-value">3.00</span>
-                    </div>
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Min: </span>
-                        <span class="k-selection-aggregates-item-value">2.00</span>
-                    </div>
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Max: </span>
-                        <span class="k-selection-aggregates-item-value">4.00</span>
-                    </div>
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Count: </span>
-                        <span class="k-selection-aggregates-item-value">4</span>
+                    <div class="k-selection-aggregates k-grid-selection-aggregates">
+                        <div class="k-selection-aggregates-item">
+                            <span class="k-selection-aggregates-item-text">Count:</span>
+                            <span class="k-selection-aggregates-item-value">0</span>
+                        </div>
                     </div>
                 </div>
                 <div class="k-grid-pager k-pager k-pager-md">
@@ -178,108 +188,134 @@
                 </div>
             </div>
         </section>
-        <span class="col-2">Grid with selection aggregates container (RTL)</span>
-        <section class="col-2 k-rtl">
+        <span class="col-2">Aggregated</span>
+        <section class="col-2">
             <div class="k-grid-no-scrollbar k-grid k-grid-md">
-                <div class="k-grid-header">
-                    <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table k-table-md">
-                            <colgroup>
-                                <col style="width: 100px;">
-                                <col>
-                            </colgroup>
-                            <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">100px</span>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table k-table-md">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Product Name</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                    <th class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">no width</span>
+                                        </th>
+                                        <th class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Units In Stock</span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
+                                        </th>
+                                        <th class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Discontinued</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th class="k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Units in Order</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <table class="k-grid-table k-table k-table-md">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row">
+                                        <td class="k-selected k-table-td">Chai</td>
+                                        <td class="k-selected k-table-td">39</td>
+                                        <td class="k-table-td">false</td>
+                                        <td class="k-table-td">0</td>
+                                    </tr>
+                                    <tr class="k-alt k-table-row k-table-alt-row">
+                                        <td class="k-selected k-table-td">Chang</td>
+                                        <td class="k-selected k-table-td">17</td>
+                                        <td class="k-table-td">false</td>
+                                        <td class="k-table-td">40</td>
+                                    </tr>
+                                    <tr class="k-table-row">
+                                        <td class="k-selected k-table-td">Aniseed Syrup</td>
+                                        <td class="k-selected k-table-td">13</td>
+                                        <td class="k-table-td">false</td>
+                                        <td class="k-table-td">70</td>
+                                    </tr>
+                                    <tr class="k-alt k-table-row k-table-alt-row">
+                                        <td class="k-selected k-table-td">Chef Anton's Cajun Seasoning</td>
+                                        <td class="k-selected k-table-td">53</td>
+                                        <td class="k-table-td">false</td>
+                                        <td class="k-table-td">0</td>
+                                    </tr>
+                                    <tr class="k-table-row">
+                                        <td class="k-table-td">Chef Anton's Gumbo Mix</td>
+                                        <td class="k-table-td">0</td>
+                                        <td class="k-table-td">true</td>
+                                        <td class="k-table-td">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-selection-aggregates k-grid-selection-aggregates">
+                        <div class="k-selection-aggregates-item">
+                            <span class="k-selection-aggregates-item-text">Sum:</span>
+                            <span class="k-selection-aggregates-item-value">122.00</span>
+                        </div>
+                        <div class="k-selection-aggregates-item">
+                            <span class="k-selection-aggregates-item-text">Avg:</span>
+                            <span class="k-selection-aggregates-item-value">30.50</span>
+                        </div>
+                        <div class="k-selection-aggregates-item">
+                            <span class="k-selection-aggregates-item-text">Min:</span>
+                            <span class="k-selection-aggregates-item-value">13</span>
+                        </div>
+                        <div class="k-selection-aggregates-item">
+                            <span class="k-selection-aggregates-item-text">Max:</span>
+                            <span class="k-selection-aggregates-item-value">53</span>
+                        </div>
+                        <div class="k-selection-aggregates-item">
+                            <span class="k-selection-aggregates-item-text">Count:</span>
+                            <span class="k-selection-aggregates-item-value">8</span>
+                        </div>
                     </div>
                 </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-content">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col style="width: 100px;">
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">1</td>
-                                    <td class="k-table-td">Row</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-selected k-table-td">2</td>
-                                    <td class="k-selected k-table-td">Alt row</td>
-                                </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-selected k-table-td">3</td>
-                                    <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-selected k-table-td">4</td>
-                                    <td class="k-table-td">
-                                        <span class="k-skeleton k-skeleton-text"></span>
-                                    </td>
-                                </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">5</td>
-                                    <td class="k-table-td">
-                                        <span class="k-skeleton k-skeleton-text"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="k-selection-aggregates k-grid-selection-aggregates">
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Sum: </span>
-                        <span class="k-selection-aggregates-item-value">9.00</span>
-                    </div>
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Avg: </span>
-                        <span class="k-selection-aggregates-item-value">3.00</span>
-                    </div>
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Min: </span>
-                        <span class="k-selection-aggregates-item-value">2.00</span>
-                    </div>
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Max: </span>
-                        <span class="k-selection-aggregates-item-value">4.00</span>
-                    </div>
-                    <div class="k-selection-aggregates-item">
-                        <span class="k-selection-aggregates-item-text">Count: </span>
-                        <span class="k-selection-aggregates-item-value">4</span>
-                    </div>
-                </div>
-                <div dir="rtl" class="k-grid-pager k-pager k-pager-md">
+                <div class="k-grid-pager k-pager k-pager-md">
                     <div class="k-pager-numbers-wrap">
                         <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-disabled k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
+                                    <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
                                 </svg>
                             </span>
                         </button>
                         <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-disabled k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M352 256 160 384V128z"></path>
+                                    <path d="m160 256 192-128v256z"></path>
                                 </svg>
                             </span>
                         </button>
@@ -307,16 +343,16 @@
                             <option>99</option>
                         </select>
                         <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-left">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m160 256 192-128v256z"></path>
+                                    <path d="M352 256 160 384V128z"></path>
                                 </svg>
                             </span>
                         </button>
                         <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-right">
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M352 384 160 256l192-128zM128 128v256h32V128z"></path>
+                                    <path d="m128 128 192 128-192 128zm224 256V128h-32v256z"></path>
                                 </svg>
                             </span>
                         </button>

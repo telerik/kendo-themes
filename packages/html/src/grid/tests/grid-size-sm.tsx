@@ -7,7 +7,7 @@ import { NumericTextbox } from '../../numerictextbox';
 import { SkeletonNormal } from '../../skeleton';
 import { Textbox } from '../../textbox';
 import { TooltipNormal } from '../../tooltip';
-import { Grid, GridHeader, GridGroupingHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager, GridToolbar } from '../../grid';
+import { GridNormal, GridHeader, GridGroupingHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager, GridToolbar } from '../../grid';
 import { TableTh, TableTd, TableThead, TableRow, TableTbody } from '../../table';
 
 
@@ -28,7 +28,7 @@ export default () =>(
             <span className="col-2">Grid</span>
 
             <section className="col-2">
-                <Grid size="small" className="k-grid-no-scrollbar" pager={( <GridPager size="small" /> )}>
+                <GridNormal size="small" className="k-grid-no-scrollbar" groupingHeader={false} pager={( <GridPager size="small" /> )}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable size="small">
@@ -79,12 +79,12 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span className="col-2">Filtering</span>
             <section className="col-2">
-                <Grid size="small" className="k-grid-no-scrollbar" style={{ height: "150px" }}>
+                <GridNormal size="small" className="k-grid-no-scrollbar" pager={false} groupingHeader={false} style={{ height: "150px" }}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable size="small">
@@ -204,12 +204,12 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span>Editing</span>
             <section className="col-2">
-                <Grid size="small" className="k-grid-no-scrollbar" toolbar={(
+                <GridNormal size="small" className="k-grid-no-scrollbar" pager={false} groupingHeader={false} toolbar={(
                     <GridToolbar>
                         <Button icon="plus">Add new record</Button>
                     </GridToolbar>
@@ -282,12 +282,12 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <span>Grouping</span>
             <section className="col-2">
-                <Grid size="small" className="k-grid-no-scrollbar" groupingHeader={(
+                <GridNormal size="small" className="k-grid-no-scrollbar" pager={false} groupingHeader={(
                     <GridGroupingHeader dropClue>
                         <ChipList size="small">
                             <Chip size="small" icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
@@ -347,7 +347,7 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
         </div>
     </>

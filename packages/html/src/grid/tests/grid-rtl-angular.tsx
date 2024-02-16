@@ -1,6 +1,6 @@
 import { Icon } from '../../icon';
 import { SkeletonNormal } from '../../skeleton';
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
+import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export default () =>(
@@ -10,7 +10,7 @@ export default () =>(
             <span className="col-2">Angular grid</span>
 
             <section className="col-2">
-                <Grid className="k-grid-no-scrollbar" dir="rtl" _renderAriaRoot pager={( <GridPager dir="rtl" /> )} >
+                <GridNormal className="k-grid-no-scrollbar" dir="rtl" pager={( <GridPager dir="rtl" /> )} groupingHeader={false} >
                     {/* add padding-left or -right for scrollbar width */}
                     <GridHeader>
                         <div className="k-grid-header-wrap">
@@ -68,13 +68,13 @@ export default () =>(
                             </div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
                 <div className="k-marquee"><div className="k-marquee-color"></div></div>
             </section>
 
             <span className="col-2">Angular -- fixed height, hierarchy, filter menu, sort icon</span>
             <section className="col-2">
-                <Grid className="k-grid-no-scrollbar" _renderAriaRoot style={{ height: "250px" }} dir="rtl">
+                <GridNormal groupingHeader={false} pager={false} className="k-grid-no-scrollbar" style={{ height: "250px" }} dir="rtl">
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -137,7 +137,7 @@ export default () =>(
                             </div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
         </div>

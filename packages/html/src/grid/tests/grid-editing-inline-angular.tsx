@@ -1,14 +1,14 @@
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
+import { GridWithEditRow, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Edit Row</h3>
-            <Grid dir="ltr" _renderAriaRoot toolbar={(
+            <GridWithEditRow dir="ltr" toolbar={(
                 <GridToolbar>
                     <Button icon="plus">Add</Button>
                 </GridToolbar>
@@ -75,9 +75,9 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithEditRow>
             <h3>New Row</h3>
-            <Grid dir="ltr" _renderAriaRoot toolbar={(
+            <GridWithEditRow dir="ltr" toolbar={(
                 <GridToolbar>
                     <Button icon="plus">Add</Button>
                 </GridToolbar>
@@ -154,7 +154,7 @@ export default () =>(
                         </div>
                     </GridContent>
                 </GridContainer>
-            </Grid>
+            </GridWithEditRow>
         </div>
     </>
 );

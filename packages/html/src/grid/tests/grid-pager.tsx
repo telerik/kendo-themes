@@ -1,4 +1,4 @@
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
+import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -10,7 +10,7 @@ export default () =>(
             <span>Angular grid</span>
 
             <section>
-                <Grid className="k-grid-no-scrollbar" pager={( <GridPager className="k-focus" /> )}>
+                <GridNormal _renderAriaRoot={false} groupingHeader={false} className="k-grid-no-scrollbar" pager={( <GridPager className="k-focus" /> )}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -47,11 +47,11 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <section>
-                <Grid className="k-grid-no-scrollbar" _renderAriaRoot pager={( <GridPager className="k-focus" /> )}>
+                <GridNormal className="k-grid-no-scrollbar" groupingHeader={false} pager={( <GridPager className="k-focus" /> )}>
                     {/* add padding-left or -right for scrollbar width */}
                     <GridHeader>
                         <div className="k-grid-header-wrap">
@@ -95,7 +95,7 @@ export default () =>(
                             </div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
 
@@ -103,7 +103,10 @@ export default () =>(
             <span>Angular grid pager top</span>
 
             <section>
-                <Grid className="k-grid-no-scrollbar" pagerPosition="top" pager={ <GridPager className="k-grid-pager-top" /> }>
+                <GridNormal className="k-grid-no-scrollbar"
+                    _renderAriaRoot={false} groupingHeader={false}
+                    pagerPosition="top" pager={ <GridPager className="k-grid-pager-top" />
+                    }>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -140,11 +143,14 @@ export default () =>(
                             </GridTable>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
             <section>
-                <Grid className="k-grid-no-scrollbar" _renderAriaRoot pagerPosition="top" pager={ <GridPager className="k-grid-pager-top" /> }>
+                <GridNormal className="k-grid-no-scrollbar"
+                    groupingHeader={false} pagerPosition="top"
+                    pager={ <GridPager className="k-grid-pager-top" />
+                    }>
                     {/* add padding-left or -right for scrollbar width */}
                     <GridHeader>
                         <div className="k-grid-header-wrap">
@@ -188,7 +194,7 @@ export default () =>(
                             </div>
                         </GridContent>
                     </GridContainer>
-                </Grid>
+                </GridNormal>
             </section>
 
         </div>
