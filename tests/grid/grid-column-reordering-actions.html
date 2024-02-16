@@ -21,202 +21,101 @@
     <div id="test-area">
         <section>
             <div class="k-grid-no-scrollbar k-grid k-grid-md">
-                <div class="k-grid-toolbar k-toolbar k-toolbar-md">
-                    <div class="k-chip-list k-chip-list-md">
-                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
-                            <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-asc-small">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                                </svg>
-                            </span>
-                            <span class="k-chip-content">
-                                <span class="k-chip-label k-text-ellipsis">Units in Stock</span>
-                            </span>
-                            <span class="k-chip-actions">
-                                <span class="k-chip-action k-chip-more-action">
-                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                                <span class="k-chip-action k-chip-remove-action">
-                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
-                            <span class="k-chip-icon k-icon k-svg-icon k-icon-sm k-svg-i-sort-desc-small">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
-                                </svg>
-                            </span>
-                            <span class="k-chip-content">
-                                <span class="k-chip-label k-text-ellipsis">Category</span>
-                            </span>
-                            <span class="k-chip-actions">
-                                <span class="k-chip-action k-chip-more-action">
-                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-more-vertical">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                                <span class="k-chip-action k-chip-remove-action">
-                                    <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </span>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap">
+                            <table class="k-grid-header-table k-table k-table-md">
+                                <colgroup>
+                                    <col style="width: 100px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 150px;">
+                                </colgroup>
+                                <thead class="k-table-thead">
+                                    <tr class="k-table-row">
+                                        <th colspan="1" rowspan="1" class="k-filterable k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">ID</span>
+                                                </span>
+                                                <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                                    <span class="k-icon k-svg-icon k-svg-i-more-vertical">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" class="k-filterable k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Name</span>
+                                                </span>
+                                                <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                                    <span class="k-icon k-svg-icon k-svg-i-more-vertical">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </span>
+                                        </th>
+                                        <th colspan="1" rowspan="1" class="k-filterable k-header k-table-th">
+                                            <span class="k-cell-inner">
+                                                <span class="k-link">
+                                                    <span class="k-column-title">Category</span>
+                                                </span>
+                                                <a href="#" class="k-grid-header-menu k-grid-column-menu">
+                                                    <span class="k-icon k-svg-icon k-svg-i-more-vertical">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
-                </div>
-                <div class="k-grid-header">
-                    <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table k-table-md">
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th class="k-header k-sorted k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Product Id</span>
-                                                <span class="k-sort-icon">
-                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
-                                                <span class="k-icon k-svg-icon k-svg-i-more-vertical">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
-                                                    </svg>
-                                                </span>
-                                            </a>
-                                        </span>
-                                    </th>
-                                    <th class="k-header k-sorted k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Unit Price</span>
-                                                <span class="k-sort-icon">
-                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
-                                                <span class="k-icon k-svg-icon k-svg-i-more-vertical">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
-                                                    </svg>
-                                                </span>
-                                            </a>
-                                        </span>
-                                    </th>
-                                    <th class="k-header k-sorted k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Discontinued</span>
-                                                <span class="k-sort-icon">
-                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
-                                                <span class="k-icon k-svg-icon k-svg-i-more-vertical">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
-                                                    </svg>
-                                                </span>
-                                            </a>
-                                        </span>
-                                    </th>
-                                    <th class="k-header k-sorted k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">Category</span>
-                                                <span class="k-sort-icon">
-                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <a href="#" class="k-grid-header-menu k-grid-column-menu">
-                                                <span class="k-icon k-svg-icon k-svg-i-more-vertical">
-                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                        <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48m0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48m0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48"></path>
-                                                    </svg>
-                                                </span>
-                                            </a>
-                                        </span>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-content">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">Chef Anton's Gumbo</td>
-                                    <td class="k-table-td">21.35</td>
-                                    <td class="k-table-td">0</td>
-                                    <td class="k-table-td">Condiments</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-table-td">Alice Mutton</td>
-                                    <td class="k-table-td">39</td>
-                                    <td class="k-table-td">0</td>
-                                    <td class="k-table-td">Meat/Poultry</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">Singaporean Hokkien Fried Mee</td>
-                                    <td class="k-table-td">123.79</td>
-                                    <td class="k-table-td">1</td>
-                                    <td class="k-table-td">Meat/Poultry</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-table-td">Gorgonzola Telino</td>
-                                    <td class="k-table-td">12.5</td>
-                                    <td class="k-table-td">0</td>
-                                    <td class="k-table-td">Meat/Poultry</td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">Perth Pasties</td>
-                                    <td class="k-table-td">32.8</td>
-                                    <td class="k-table-td">0</td>
-                                    <td class="k-table-td">Meat/Poultry</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content">
+                            <table class="k-grid-table k-table k-table-md">
+                                <colgroup>
+                                    <col style="width: 100px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 150px;">
+                                </colgroup>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-td">1</td>
+                                        <td class="k-table-td">Chai</td>
+                                        <td class="k-table-td">Beverages</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                        <td class="k-table-td">2</td>
+                                        <td class="k-table-td">Chang</td>
+                                        <td class="k-table-td">Beverages</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-td">3</td>
+                                        <td class="k-table-td">Aniseed Syrup</td>
+                                        <td class="k-table-td">Condiments</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                        <td class="k-table-td">4</td>
+                                        <td class="k-table-td">Chef Anton's Cajun Seasoning</td>
+                                        <td class="k-table-td">Condiments</td>
+                                    </tr>
+                                    <tr class="k-master-row k-table-row">
+                                        <td class="k-table-td">5</td>
+                                        <td class="k-table-td">Grandma's Boysenberry Spread</td>
+                                        <td class="k-table-td">Condiments</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="k-grid-pager k-pager k-pager-md">

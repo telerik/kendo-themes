@@ -115,88 +115,92 @@
                                 </li>
                             </ol>
                         </nav>
-                        <div class="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
-                            <div class="k-grid-header">
-                                <div class="k-grid-header-wrap k-auto-scrollable">
-                                    <table class="k-table-md k-grid-header-table k-table">
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <thead class="k-table-thead">
-                                            <tr class="k-table-row">
-                                                <th class="k-header k-sorted k-table-th">
-                                                    <span class="k-cell-inner">
-                                                        <span class="k-link">
-                                                            <span class="k-column-title">Name</span>
-                                                            <span class="k-sort-icon">
-                                                                <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                        <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                                                                    </svg>
+                        <div class="k-filemanager-grid k-grid-display-block k-editable k-grid k-grid-md">
+                            <div class="k-grid-aria-root">
+                                <div class="k-grid-header">
+                                    <div class="k-grid-header-wrap k-auto-scrollable">
+                                        <table class="k-grid-header-table k-table k-table-md">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead class="k-table-thead">
+                                                <tr class="k-table-row">
+                                                    <th class="k-header k-sorted k-table-th">
+                                                        <span class="k-cell-inner">
+                                                            <span class="k-link">
+                                                                <span class="k-column-title">Name</span>
+                                                                <span class="k-sort-icon">
+                                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                            <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
+                                                                        </svg>
+                                                                    </span>
                                                                 </span>
                                                             </span>
                                                         </span>
-                                                    </span>
-                                                </th>
-                                                <th class="k-header k-table-th">
-                                                    <span class="k-cell-inner">
-                                                        <span class="k-link">
-                                                            <span class="k-column-title">Date Created</span>
+                                                    </th>
+                                                    <th class="k-header k-table-th">
+                                                        <span class="k-cell-inner">
+                                                            <span class="k-link">
+                                                                <span class="k-column-title">Date Created</span>
+                                                            </span>
                                                         </span>
-                                                    </span>
-                                                </th>
-                                                <th class="k-header k-table-th">
-                                                    <span class="k-cell-inner">
-                                                        <span class="k-link">
-                                                            <span class="k-column-title">File Size</span>
+                                                    </th>
+                                                    <th class="k-header k-table-th">
+                                                        <span class="k-cell-inner">
+                                                            <span class="k-link">
+                                                                <span class="k-column-title">File Size</span>
+                                                            </span>
                                                         </span>
-                                                    </span>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                    </table>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="k-grid-content k-auto-scrollable">
-                                <table class="k-table-md k-grid-table k-selectable k-table">
-                                    <colgroup>
-                                        <col class="k-sorted">
-                                        <col>
-                                        <col>
-                                    </colgroup>
-                                    <tbody class="k-table-tbody">
-                                        <tr class="k-table-row">
-                                            <td class="k-table-td">
-                                                <span class="k-file-preview">
-                                                    <span class="k-file-icon k-icon k-svg-icon k-svg-i-folder">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-file-name">Folder</span>
-                                            </td>
-                                            <td class="k-table-td">13/12/2019 at 12:22:04 PM</td>
-                                            <td class="k-table-td">0</td>
-                                        </tr>
-                                        <tr class="k-table-row k-table-alt-row k-selected">
-                                            <td class="k-table-td">
-                                                <span class="k-file-preview">
-                                                    <span class="k-file-icon k-icon k-svg-icon k-svg-i-file">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-file-name">file.png</span>
-                                            </td>
-                                            <td class="k-table-td">13/12/2019 at 12:22:04 PM</td>
-                                            <td class="k-table-td">73289</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="k-grid-container">
+                                    <div class="k-auto-scrollable k-grid-content">
+                                        <table class="k-selectable k-grid-table k-table k-table-md">
+                                            <colgroup>
+                                                <col class="k-sorted">
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="k-table-tbody">
+                                                <tr class="k-table-row">
+                                                    <td class="k-table-td">
+                                                        <span class="k-file-preview">
+                                                            <span class="k-file-icon k-icon k-svg-icon k-svg-i-folder">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-file-name">Folder</span>
+                                                    </td>
+                                                    <td class="k-table-td">13/12/2019 at 12:22:04 PM</td>
+                                                    <td class="k-table-td">0</td>
+                                                </tr>
+                                                <tr class="k-table-row k-table-alt-row k-selected">
+                                                    <td class="k-table-td">
+                                                        <span class="k-file-preview">
+                                                            <span class="k-file-icon k-icon k-svg-icon k-svg-i-file">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-file-name">file.png</span>
+                                                    </td>
+                                                    <td class="k-table-td">13/12/2019 at 12:22:04 PM</td>
+                                                    <td class="k-table-td">73289</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -316,88 +320,92 @@
                                 </li>
                             </ol>
                         </nav>
-                        <div class="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
-                            <div class="k-grid-header">
-                                <div class="k-grid-header-wrap k-auto-scrollable">
-                                    <table class="k-table-md k-grid-header-table k-table">
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <thead class="k-table-thead">
-                                            <tr class="k-table-row">
-                                                <th class="k-header k-sorted k-table-th">
-                                                    <span class="k-cell-inner">
-                                                        <span class="k-link">
-                                                            <span class="k-column-title">Name</span>
-                                                            <span class="k-sort-icon">
-                                                                <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
-                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                        <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
-                                                                    </svg>
+                        <div class="k-filemanager-grid k-grid-display-block k-editable k-grid k-grid-md">
+                            <div class="k-grid-aria-root">
+                                <div class="k-grid-header">
+                                    <div class="k-grid-header-wrap k-auto-scrollable">
+                                        <table class="k-grid-header-table k-table k-table-md">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead class="k-table-thead">
+                                                <tr class="k-table-row">
+                                                    <th class="k-header k-sorted k-table-th">
+                                                        <span class="k-cell-inner">
+                                                            <span class="k-link">
+                                                                <span class="k-column-title">Name</span>
+                                                                <span class="k-sort-icon">
+                                                                    <span class="k-icon k-svg-icon k-svg-i-sort-asc-small">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                            <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
+                                                                        </svg>
+                                                                    </span>
                                                                 </span>
                                                             </span>
                                                         </span>
-                                                    </span>
-                                                </th>
-                                                <th class="k-header k-table-th">
-                                                    <span class="k-cell-inner">
-                                                        <span class="k-link">
-                                                            <span class="k-column-title">Date Created</span>
+                                                    </th>
+                                                    <th class="k-header k-table-th">
+                                                        <span class="k-cell-inner">
+                                                            <span class="k-link">
+                                                                <span class="k-column-title">Date Created</span>
+                                                            </span>
                                                         </span>
-                                                    </span>
-                                                </th>
-                                                <th class="k-header k-table-th">
-                                                    <span class="k-cell-inner">
-                                                        <span class="k-link">
-                                                            <span class="k-column-title">File Size</span>
+                                                    </th>
+                                                    <th class="k-header k-table-th">
+                                                        <span class="k-cell-inner">
+                                                            <span class="k-link">
+                                                                <span class="k-column-title">File Size</span>
+                                                            </span>
                                                         </span>
-                                                    </span>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                    </table>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="k-grid-content k-auto-scrollable">
-                                <table class="k-table-md k-grid-table k-selectable k-table">
-                                    <colgroup>
-                                        <col class="k-sorted">
-                                        <col>
-                                        <col>
-                                    </colgroup>
-                                    <tbody class="k-table-tbody">
-                                        <tr class="k-table-row">
-                                            <td class="k-table-td">
-                                                <span class="k-file-preview">
-                                                    <span class="k-file-icon k-icon k-svg-icon k-svg-i-folder">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-file-name">Folder</span>
-                                            </td>
-                                            <td class="k-table-td">13/12/2019 at 12:22:04 PM</td>
-                                            <td class="k-table-td">0</td>
-                                        </tr>
-                                        <tr class="k-table-row k-table-alt-row">
-                                            <td class="k-table-td">
-                                                <span class="k-file-preview">
-                                                    <span class="k-file-icon k-icon k-svg-icon k-svg-i-file">
-                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                            <path d="M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                                <span class="k-file-name">file.png</span>
-                                            </td>
-                                            <td class="k-table-td">13/12/2019 at 12:22:04 PM</td>
-                                            <td class="k-table-td">73289</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="k-grid-container">
+                                    <div class="k-auto-scrollable k-grid-content">
+                                        <table class="k-selectable k-grid-table k-table k-table-md">
+                                            <colgroup>
+                                                <col class="k-sorted">
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="k-table-tbody">
+                                                <tr class="k-table-row">
+                                                    <td class="k-table-td">
+                                                        <span class="k-file-preview">
+                                                            <span class="k-file-icon k-icon k-svg-icon k-svg-i-folder">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-file-name">Folder</span>
+                                                    </td>
+                                                    <td class="k-table-td">13/12/2019 at 12:22:04 PM</td>
+                                                    <td class="k-table-td">0</td>
+                                                </tr>
+                                                <tr class="k-table-row k-table-alt-row">
+                                                    <td class="k-table-td">
+                                                        <span class="k-file-preview">
+                                                            <span class="k-file-icon k-icon k-svg-icon k-svg-i-file">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-file-name">file.png</span>
+                                                    </td>
+                                                    <td class="k-table-td">13/12/2019 at 12:22:04 PM</td>
+                                                    <td class="k-table-td">73289</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
