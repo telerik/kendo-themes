@@ -88,7 +88,7 @@
                     }
                 }
             }
-            
+
         }
 
         .k-grid-pager:focus,
@@ -178,7 +178,8 @@
             }
         }
 
-        .k-table-thead > .k-table-row:not(:only-child) > .k-table-th {
+        .k-table-thead > .k-table-row:not(:only-child) > .k-table-th,
+        .k-table-thead > .k-table-row:not(:only-child) > .k-table-td {
             border-inline-start-color: $kendo-grid-border;
 
             &.k-grid-header-sticky {
