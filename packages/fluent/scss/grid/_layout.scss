@@ -349,7 +349,8 @@
         position: relative;
         overflow: hidden;
 
-        .k-table-row:not(:only-child) .k-table-th {
+        .k-table-row:not(:only-child) .k-table-th,
+        .k-table-row:not(:only-child) .k-table-td:nth-child(n+2) {
             border-inline-start-width: 1px;
         }
     }
@@ -394,13 +395,13 @@
             z-index: 1;
             cursor: default;
 
-            &:first-child {
-                border-inline-start-width: 0;
-            }
-
             &.k-first {
                 border-inline-start-width: var( --kendo-grid-header-first-border-width, #{$kendo-grid-header-first-border-width} );
             }
+        }
+
+        .k-table-row .k-table-th:first-child:not(.k-first) {
+            border-inline-start-width: 0;
         }
 
         .k-table-th > .k-link {
