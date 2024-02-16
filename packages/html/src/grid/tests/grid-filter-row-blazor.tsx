@@ -4,7 +4,7 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { GridWithFilterRow, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTh, TableTd } from '../../table';
+import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
 export default () =>(
@@ -31,12 +31,12 @@ export default () =>(
                                     <GridHeaderCell colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                                 <TableRow className="k-filter-row">
-                                    <TableTh>
+                                    <TableTd>
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper"></div>
                                         </div>
-                                    </TableTh>
-                                    <TableTh>
+                                    </TableTd>
+                                    <TableTd>
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
                                                 <NumericTextbox />
@@ -47,8 +47,8 @@ export default () =>(
                                                 </div>
                                             </div>
                                         </div>
-                                    </TableTh>
-                                    <TableTh>
+                                    </TableTd>
+                                    <TableTd>
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
                                                 <Textbox showClearButton={false} value="p" />
@@ -59,12 +59,12 @@ export default () =>(
                                                 </div>
                                             </div>
                                         </div>
-                                    </TableTh>
-                                    <TableTh>
+                                    </TableTd>
+                                    <TableTd>
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper"></div>
                                         </div>
-                                    </TableTh>
+                                    </TableTd>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -154,12 +154,12 @@ export default () =>(
                                     <GridHeaderCell colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                                 <TableRow className="k-filter-row">
-                                    <TableTh>
+                                    <TableTd>
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper"></div>
                                         </div>
-                                    </TableTh>
-                                    <TableTh>
+                                    </TableTd>
+                                    <TableTd>
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
                                                 <NumericTextbox />
@@ -170,8 +170,8 @@ export default () =>(
                                                 </div>
                                             </div>
                                         </div>
-                                    </TableTh>
-                                    <TableTh>
+                                    </TableTd>
+                                    <TableTd>
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper">
                                                 <Textbox showClearButton={false} value="p" />
@@ -182,12 +182,12 @@ export default () =>(
                                                 </div>
                                             </div>
                                         </div>
-                                    </TableTh>
-                                    <TableTh>
+                                    </TableTd>
+                                    <TableTd>
                                         <div className="k-filtercell">
                                             <div className="k-filtercell-wrapper"></div>
                                         </div>
-                                    </TableTh>
+                                    </TableTd>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
