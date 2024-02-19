@@ -227,10 +227,9 @@ $kendo-valid-shadow: null !default;
 $kendo-disabled-bg: functions.k-get-theme-color-var(neutral-20) !default;
 $kendo-disabled-text: functions.k-get-theme-color-var(neutral-90) !default;
 $kendo-disabled-border: transparent !default;
+$kendo-disabled-border: null !default;
+$kendo-disabled-filter: null !default;
 
-// Loading
-$kendo-loading-bg: $kendo-component-bg !default;
-$kendo-loading-text: currentColor !default;
 
 $kendo-theme-colors: (
     primary: (
