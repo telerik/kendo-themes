@@ -124,3 +124,6 @@ $kendo-loading-text: currentColor !default;
 /// The opacity of the Loading indicator.
 /// @group loading
 $kendo-loading-opacity: .3 !default;
+/// The z-index of the Loading indicator.
+/// @group loading
+$kendo-zindex-loading: 100 !default;
