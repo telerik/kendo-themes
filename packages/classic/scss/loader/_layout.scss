@@ -3,4 +3,5 @@
 
 @mixin kendo-loader--layout() {
     @include kendo-loader--layout-base();
+    @include kendo-loading--layout-base()
 }
