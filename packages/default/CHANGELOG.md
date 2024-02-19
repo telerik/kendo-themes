@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.5](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.4...v7.2.1-dev.5) (2024-02-19)
+
+
+### Bug Fixes
+
+* **spreadsheet:** file icon overlaps elements in export to pdf popup ([79d2879](https://github.com/telerik/kendo-themes/commit/79d28798604ef11878826d5e03ede7e0657ddd9e))
+
+
+
+
+
 ## [7.2.1-dev.4](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.3...v7.2.1-dev.4) (2024-02-12)
 
 **Note:** Version bump only for package @progress/kendo-theme-default
