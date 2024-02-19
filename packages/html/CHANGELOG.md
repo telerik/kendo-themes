@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.5](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.4...v7.2.1-dev.5) (2024-02-19)
+
+
+### Bug Fixes
+
+* **listbox:** transfer actions to use correct icon ([182e7fe](https://github.com/telerik/kendo-themes/commit/182e7fea6924c52900c1d6ee11d6ff91ac955fd8))
+
+
+
+
+
 ## [7.2.1-dev.4](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.3...v7.2.1-dev.4) (2024-02-12)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
