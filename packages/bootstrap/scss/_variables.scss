@@ -157,6 +157,7 @@ $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, bord
 
 // Disabled mixin variables
 $kendo-disabled-bg: null !default;
+$kendo-disabled-text: null !default;
 $kendo-disabled-border: null !default;
 $kendo-disabled-filter: grayscale(.1) !default;
 $kendo-disabled-opacity: .65 !default;

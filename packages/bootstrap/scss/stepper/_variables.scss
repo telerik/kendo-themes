@@ -103,7 +103,7 @@ $kendo-stepper-indicator-hover-border: null !default;
 $kendo-stepper-indicator-disabled-bg: null !default;
 /// The text color of the disabled Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), $kendo-disabled-text) !default;
+$kendo-stepper-indicator-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), #8f8f8f ) !default;
 /// The border color of the disabled Stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-disabled-border: null !default;
@@ -182,7 +182,7 @@ $kendo-stepper-label-error-text: $kendo-color-error !default;
 $kendo-stepper-label-hover-text: null !default;
 /// The text color of the disabled Stepper label.
 /// @group stepper
-$kendo-stepper-label-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), $kendo-disabled-text) !default;
+$kendo-stepper-label-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), #8f8f8f ) !default;
 
 /// The text color of the optional Stepper label.
 /// @group stepper
