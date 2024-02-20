@@ -29,9 +29,7 @@ export type KendoListViewProps = {
 export type KendoListViewState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    pagerPosition: 'bottom',
-    layout: 'flex',
-    flexDirection: 'row'
+    pagerPosition: 'bottom'
 };
 
 export const ListView = (
@@ -45,8 +43,8 @@ export const ListView = (
         pageable,
         pagerPosition = defaultProps.pagerPosition,
         bordered,
-        layout = defaultProps.layout,
-        flexDirection = defaultProps.flexDirection,
+        layout,
+        flexDirection,
         flexWrap,
         gridColumns,
         loading,

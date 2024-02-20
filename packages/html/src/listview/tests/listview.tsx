@@ -19,9 +19,7 @@ export default () =>(
                 <ListViewNormal
                     header
                     footer
-                    pageable
-                    layout="flex"
-                    flexDirection="col">
+                    pageable>
                     <ListViewItem><div>Listview Item</div></ListViewItem>
                     <ListViewItem><div>Listview Item</div></ListViewItem>
                     <ListViewItem><div>Listview Item</div></ListViewItem>
@@ -33,9 +31,7 @@ export default () =>(
                 <span>ListViewItem - states</span>
                 <ListViewNormal
                     header
-                    footer
-                    layout="flex"
-                    flexDirection="col">
+                    footer>
                     <ListViewItem><div>Listview Item</div></ListViewItem>
                     <ListViewItem focus><div>Focus Item</div></ListViewItem>
                     <ListViewItem selected><div>Selected Item</div></ListViewItem>
