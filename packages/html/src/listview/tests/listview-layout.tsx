@@ -16,7 +16,7 @@ export default () =>(
 
             <section>
                 <span>Flex layout - row</span>
-                <ListViewNormal>
+                <ListViewNormal layout="flex" flexDirection="row">
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>
@@ -26,7 +26,7 @@ export default () =>(
 
             <section>
                 <span>Flex layout - row reverse</span>
-                <ListViewNormal flexDirection="row-reverse">
+                <ListViewNormal layout="flex" flexDirection="row-reverse">
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>
@@ -36,7 +36,7 @@ export default () =>(
 
             <section>
                 <span>Flex layout - column</span>
-                <ListViewNormal flexDirection="col">
+                <ListViewNormal layout="flex" flexDirection="col">
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>
@@ -46,7 +46,7 @@ export default () =>(
 
             <section>
                 <span>Flex layout - column reverse</span>
-                <ListViewNormal flexDirection="col-reverse">
+                <ListViewNormal layout="flex" flexDirection="col-reverse">
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>

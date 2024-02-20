@@ -26,6 +26,8 @@ export const FileManagerListView = (
                 FILEMANAGERLISTVIEW_CLASSNAME,
                 "k-selectable",
             )}
+            layout="flex"
+            flexDirection="row"
             flexWrap="wrap"
             {...other}
         >
