@@ -97,6 +97,31 @@
                 "@typescript-eslint/no-explicit-any": "off",
                 "@typescript-eslint/no-non-null-assertion": "off"
             }
+        },
+        {
+            "files": [
+                "scripts/build-xaml.ts"
+            ],
+            "extends": [
+                "plugin:@typescript-eslint/eslint-recommended",
+                "plugin:@typescript-eslint/recommended"
+            ],
+            "parser": "@typescript-eslint/parser",
+            "plugins": [
+                "@typescript-eslint"
+            ],
+            "rules": {
+                "@typescript-eslint/no-empty-function": "off",
+                "@typescript-eslint/no-explicit-any": "off",
+                "@typescript-eslint/no-non-null-assertion": "off",
+                "no-cond-assign": "off",
+                "no-console": "off",
+                "no-constant-condition": "off",
+                "indent": "off",
+                "space-before-function-paren": "off",
+                "no-case-declarations": "off",
+                "eqeqeq": "off"
+            }
         }
     ]
 }
