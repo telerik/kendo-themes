@@ -10,10 +10,10 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
-            <div class="k-widget k-tabstrip k-header k-tabstrip-top" dir="rtl">
+            <div dir="rtl" class="k-tabstrip k-tabstrip-top k-header">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-reset k-tabstrip-items">
-                        <li class="k-item k-first k-active">
+                    <ul class="k-tabstrip-items k-reset">
+                        <li class="k-item k-active k-first">
                             <span class="k-link">Active</span>
                         </li>
                         <li class="k-item">
@@ -22,17 +22,20 @@
                         <li class="k-item k-hover">
                             <span class="k-link">Hover</span>
                         </li>
-                        <li class="k-item k-last k-disabled">
+                        <li class="k-item k-tabstrip-dragging">
+                            <span class="k-link">Dragging</span>
+                        </li>
+                        <li class="k-item k-disabled k-last">
                             <span class="k-link">Disabled</span>
                         </li>
                     </ul>
                 </div>
                 <div class="k-tabstrip-content k-active">
                     <div class="k-tabstrip-wrapper">
-                        <div class="k-widget k-header k-tabstrip k-tabstrip-left" dir="rtl">
+                        <div dir="rtl" class="k-tabstrip k-tabstrip-left k-header">
                             <div class="k-tabstrip-items-wrapper k-vstack">
                                 <ul class="k-tabstrip-items k-reset">
-                                    <li class="k-active k-item k-tab-on-top k-first">
+                                    <li class="k-tab-on-top k-item k-active k-first">
                                         <span class="k-link">Inner Tab 1</span>
                                     </li>
                                     <li class="k-item k-last">
@@ -40,20 +43,20 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="k-tabstrip-content k-active" style="display: block; margin-left: 128px; min-height: 68px;">Left orientation inside Top orientation</div>
+                            <div class="k-tabstrip-content" style="display: block; margin-left: 128px; min-height: 68px;">Left orientation inside Top orientation</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="k-widget k-tabstrip k-header k-tabstrip-bottom" dir="rtl">
+            <div dir="rtl" class="k-tabstrip k-tabstrip-bottom k-header">
                 <div class="k-tabstrip-content k-active">
                     <div>Bottom orientation</div>
                 </div>
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-reset k-tabstrip-items">
-                        <li class="k-item k-first k-active">
+                    <ul class="k-tabstrip-items k-reset">
+                        <li class="k-item k-active k-first">
                             <span class="k-link">Active</span>
                         </li>
                         <li class="k-item">
@@ -62,7 +65,10 @@
                         <li class="k-item k-hover">
                             <span class="k-link">Hover</span>
                         </li>
-                        <li class="k-item k-last k-disabled">
+                        <li class="k-item k-tabstrip-dragging">
+                            <span class="k-link">Dragging</span>
+                        </li>
+                        <li class="k-item k-disabled k-last">
                             <span class="k-link">Disabled</span>
                         </li>
                     </ul>
@@ -70,10 +76,10 @@
             </div>
         </section>
         <section>
-            <div class="k-widget k-tabstrip k-header k-tabstrip-left" dir="rtl">
+            <div dir="rtl" class="k-tabstrip k-tabstrip-left k-header">
                 <div class="k-tabstrip-items-wrapper k-vstack">
-                    <ul class="k-reset k-tabstrip-items">
-                        <li class="k-item k-first k-active">
+                    <ul class="k-tabstrip-items k-reset">
+                        <li class="k-item k-active k-first">
                             <span class="k-link">Active</span>
                         </li>
                         <li class="k-item">
@@ -95,7 +101,10 @@
                                 </span>
                             </button>
                         </li>
-                        <li class="k-item k-last k-disabled">
+                        <li class="k-item k-tabstrip-dragging">
+                            <span class="k-link">Dragging</span>
+                        </li>
+                        <li class="k-item k-disabled k-last">
                             <span class="k-link">Disabled</span>
                         </li>
                     </ul>
@@ -106,10 +115,10 @@
             </div>
         </section>
         <section>
-            <div class="k-widget k-tabstrip k-header k-tabstrip-right" dir="rtl">
+            <div dir="rtl" class="k-tabstrip k-tabstrip-right k-header">
                 <div class="k-tabstrip-items-wrapper k-vstack">
-                    <ul class="k-reset k-tabstrip-items">
-                        <li class="k-item k-first k-active">
+                    <ul class="k-tabstrip-items k-reset">
+                        <li class="k-item k-active k-first">
                             <span class="k-link">Active</span>
                         </li>
                         <li class="k-item">
@@ -131,7 +140,10 @@
                                 </span>
                             </button>
                         </li>
-                        <li class="k-item k-last k-disabled">
+                        <li class="k-item k-tabstrip-dragging">
+                            <span class="k-link">Dragging</span>
+                        </li>
+                        <li class="k-item k-disabled k-last">
                             <span class="k-link">Disabled</span>
                         </li>
                     </ul>
