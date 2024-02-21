@@ -16,7 +16,8 @@ $kendo-auto-bootstrap: true !default;
 
 
 // Spacing
-$kendo-spacing: (
+
+/* $kendo-spacing: (
     0: 0,
     1px: 1px,
     0.5: 2px,
@@ -51,13 +52,13 @@ $kendo-spacing: (
     22: 88px,
     23: 92px,
     24: 96px
-) !default;
+) !default; */
 
 
 /// Icon size.
 /// @group common
 $kendo-icon-size: 16px !default;
-/// xtra small icon size.
+/// Extra small icon size.
 /// @group common
 $kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
 /// Small icon size.
@@ -79,46 +80,27 @@ $kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
 /// @group common
 $kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
-$kendo-icon-spacing: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
+// $kendo-icon-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+// $kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
 
-/// Horizontal padding.
-/// @group common
-$kendo-padding-x: 8px !default;
-/// Vertical padding.
-/// @group common
-$kendo-padding-y: 4px !default;
-/// Small horizontal padding.
-/// @group common
-$kendo-padding-sm-x: k-map-get( $kendo-spacing, 1 ) !default;
-/// Small vertical padding.
-/// @group common
-$kendo-padding-sm-y: k-map-get( $kendo-spacing, 0.5 ) !default;
-/// Medium horizontal padding.
-/// @group common
-$kendo-padding-md-x: k-map-get( $kendo-spacing, 2 ) !default;
-/// Medium vertical padding.
-/// @group common
-$kendo-padding-md-y: k-map-get( $kendo-spacing, 1 ) !default;
-/// Large horizontal padding.
-/// @group common
-$kendo-padding-lg-x: k-map-get( $kendo-spacing, 3 ) !default;
-/// Large vertical padding.
-/// @group common
-$kendo-padding-lg-y: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-icon-spacing: k-spacing(1) !default;
+@debug $kendo-icon-spacing;
+$kendo-icon-padding: k-spacing(1) !default;
+
+
 
 /// Border radius for all components.
 /// @group common
-$kendo-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-border-radius: spacing(1) !default;
 /// Small border radius.
 /// @group common
-$kendo-border-radius-sm: $kendo-border-radius - k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-border-radius-sm: $kendo-border-radius - spacing(0.5) !default;
 /// Medium border radius.
 /// @group common
 $kendo-border-radius-md: $kendo-border-radius !default;
 /// Large border radius.
 /// @group common
-$kendo-border-radius-lg: $kendo-border-radius + k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-border-radius-lg: $kendo-border-radius + spacing(0.5) !default;
 
 $kendo-border-radii: (
     DEFAULT: $kendo-border-radius-md,

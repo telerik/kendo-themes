@@ -3,13 +3,20 @@ $wcag-min-contrast-ratio: 4.5 !default;
 // Color System
 @import "./color-system/_swatch.scss";
 
+// Spacing System
+// @import "./spacing-system/index.import.scss";
+// @import "./spacing-system/variables.scss";
+
+
+@import "@progress/kendo-theme-core/scss/index.import.scss";
+
 // Variables
 @import "../_variables.scss";
 
 // Elevation
 @import "./elevation/index.import.scss";
 
-@import "@progress/kendo-theme-core/scss/index.import.scss";
+// @import "../../../core/scss/spacing-system/index.import.scss";
 
 // Backward compatibility
 @import "./color-system/_swatch-legacy.scss";
@@ -20,4 +27,7 @@ $wcag-min-contrast-ratio: 4.5 !default;
 
     // Elevation System
     @include kendo-elevation--styles();
+
+    // Spacing System
+    @include kendo-spacing--styles();
 }

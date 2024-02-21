@@ -3,68 +3,40 @@
 
 $_default-spacing: (
     0: 0,
-    0.25: 1px,
-    0.5: 2px,
-    0.75: 3px,
-    1: 4px,
-    1.25: 5px,
-    1.5: 6px,
-    1.75: 7px,
-    2: 8px,
-    2.25: 9px,
-    2.5: 10px,
-    2.75: 11px,
-    3: 12px,
-    3.25: 13px,
-    3.5: 14px,
-    3.75: 15px,
-    4: 16px,
-    4.25: 17px,
-    4.5: 18px,
-    4.75: 19px,
-    5: 20px,
-    5.25: 21px,
-    5.5: 22px,
-    5.75: 23px,
-    6: 24px,
-    6.5: 26px,
-    7: 28px,
-    7.5: 30px,
-    8: 32px,
-    8.5: 34px,
-    9: 36px,
-    9.5: 38px,
-    10: 40px,
-    10.5: 42px,
-    11: 44px,
-    11.5: 46px,
-    12: 48px,
-    13: 52px,
-    14: 56px,
-    15: 60px,
-    16: 64px,
-    17: 68px,
-    18: 72px,
-    19: 76px,
-    20: 80px,
-    21: 84px,
-    22: 88px,
-    23: 92px,
-    24: 96px,
-    25: 104px,
-    26: 112px,
-    27: 120,
-    28: 128,
-    29: 136,
-    30: 144,
-    31: 152,
-    32: 160,
-    33: 168px,
-    34: 176px,
-    35: 184px,
-    36: 192px
+    1px: 1px,
+    0.5: .125rem,
+    1: .25rem,
+    1.5: .375rem,
+    2: .5rem,
+    2.5: .625rem,
+    3: .75rem,
+    3.5: .875rem,
+    4: 1rem,
+    4.5: 1.125rem,
+    5: 1.25rem,
+    5.5: 1.375rem,
+    6: 1.5rem,
+    6.5: 1.625rem,
+    7: 1.75rem,
+    7.5: 1.875rem,
+    8: 2rem,
+    9: 2.25rem,
+    10: 2.5rem,
+    11: 2.75rem,
+    12: 3rem,
+    13: 3.25rem,
+    14: 3.5rem,
+    15: 3.75rem,
+    16: 4rem,
+    17: 4.25rem,
+    18: 4.5rem,
+    19: 4.75rem,
+    20: 5rem,
+    21: 5.25rem,
+    22: 5.5rem,
+    23: 5.75rem,
+    24: 6rem
 ) !default;
-
 
 /// The global default Spacing map.
 /// @group spacing
@@ -91,7 +63,7 @@ $kendo-spacing: k-map-merge($_default-spacing, $kendo-spacing) !default;
 
 
 // Generate a CSS variable for each value in the Spacing map
-@mixin kendo-spacing-styles() {
+@mixin kendo-spacing--styles() {
     :root {
         @each $step, $spacing in $kendo-spacing {
             $_step: k-escape-class-name( $step );
@@ -102,10 +74,10 @@ $kendo-spacing: k-map-merge($_default-spacing, $kendo-spacing) !default;
 
 /// Horizontal padding.
 /// @group common
-$kendo-padding-x: 8px !default;
+$kendo-padding-x: k-spacing(2) !default;
 /// Vertical padding.
 /// @group common
-$kendo-padding-y: 4px !default;
+$kendo-padding-y: k-spacing(1) !default;
 /// Small horizontal padding.
 /// @group common
 $kendo-padding-sm-x: k-spacing(1) !default;

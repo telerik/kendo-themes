@@ -1,4 +1,6 @@
 @import "./core/functions/index.import.scss";
+@import "./core/spacing-system/index.import.scss";
+
 
 // Options
 $kendo-enable-rounded: true !default;
@@ -14,46 +16,6 @@ $kendo-use-input-spinner-icon-offset: false !default;
 
 $kendo-auto-bootstrap: true !default;
 
-
-// Spacing
-$kendo-spacing: (
-    0: 0,
-    1px: 1px,
-    0.5: .125rem,
-    1: .25rem,
-    1.5: .375rem,
-    2: .5rem,
-    2.5: .625rem,
-    3: .75rem,
-    3.5: .875rem,
-    4: 1rem,
-    4.5: 1.125rem,
-    5: 1.25rem,
-    5.5: 1.375rem,
-    6: 1.5rem,
-    6.5: 1.625rem,
-    7: 1.75rem,
-    7.5: 1.875rem,
-    8: 2rem,
-    9: 2.25rem,
-    10: 2.5rem,
-    11: 2.75rem,
-    12: 3rem,
-    13: 3.25rem,
-    14: 3.5rem,
-    15: 3.75rem,
-    16: 4rem,
-    17: 4.25rem,
-    18: 4.5rem,
-    19: 4.75rem,
-    20: 5rem,
-    21: 5.25rem,
-    22: 5.5rem,
-    23: 5.75rem,
-    24: 6rem
-) !default;
-
-
 // Icons
 $kendo-icon-size: 16px !default;
 
@@ -65,18 +27,21 @@ $kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
 $kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
 $kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
-$kendo-icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-icon-spacing: k-spacing(2) !default;
+$kendo-icon-padding: k-spacing(1) !default;
 
 // Metrics
-$kendo-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-padding-sm-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-padding-sm-y: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-padding-md-x: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-padding-md-y: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-padding-lg-x: k-map-get( $kendo-spacing, 6 ) !default;
-$kendo-padding-lg-y: k-map-get( $kendo-spacing, 3 ) !default;
+
+$kendo-padding-sm-x: k-spacing(2) !default;
+$kendo-padding-sm-y: k-spacing(1) !default;
+$kendo-padding-md-x: k-spacing(4) !default;
+$kendo-padding-md-y: k-spacing(2) !default;
+$kendo-padding-lg-x: k-spacing(6) !default;
+$kendo-padding-lg-y: k-spacing(3) !default;
+
+$kendo-padding-x: k-spacing(4) !default;
+$kendo-padding-y: k-spacing(4) !default;
+@debug $kendo-padding-y;
 
 /// Border radius for all components.
 $kendo-border-radius: $border-radius !default;

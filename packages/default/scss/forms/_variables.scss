@@ -78,13 +78,13 @@ $kendo-form-hint-margin-top: 4px !default;
 
 /// The row spacing of the small Form.
 /// @group form
-$kendo-form-sm-rows-spacing: k-map-get( $kendo-spacing, 2.5 ) !default;
+$kendo-form-sm-rows-spacing: k-spacing(2.5) !default;
 /// The row spacing of the medium Form.
 /// @group form
-$kendo-form-md-rows-spacing: k-map-get( $kendo-spacing, 3.5 ) !default;
+$kendo-form-md-rows-spacing: k-spacing(3.5) !default;
 /// The row spacing of the large Form.
 /// @group form
-$kendo-form-lg-rows-spacing: k-map-get( $kendo-spacing, 4.5 ) !default;
+$kendo-form-lg-rows-spacing: k-spacing(4.5) !default;
 
 /// The margin of the Form separator.
 /// @group form

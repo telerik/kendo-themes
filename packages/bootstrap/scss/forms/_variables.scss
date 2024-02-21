@@ -1,6 +1,7 @@
 @import "../input/_variables.scss";
 @import "../tooltip/_variables.scss";
 @import "../typography/_variables.scss";
+@import "../core/spacing-system/index.import.scss";
 @import "../window/_variables.scss";
 
 
@@ -8,7 +9,7 @@
 
 /// The padding of the inline Form.
 /// @group form
-$kendo-form-spacer: $kendo-padding-md-x * 2 !default;
+$kendo-form-spacer: 10px !default;
 
 /// The font size of the Form.
 /// @group form
@@ -78,7 +79,7 @@ $kendo-form-hint-margin-top: 4px !default;
 
 /// The row spacing of the small Form.
 /// @group form
-$kendo-form-sm-rows-spacing: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-form-sm-rows-spacing: k-spacing(4) !default;
 /// The row spacing of the medium Form.
 /// @group form
 $kendo-form-md-rows-spacing: $kendo-form-sm-rows-spacing !default;
