@@ -23,7 +23,7 @@ const commonConfig = {
     }
     await Promise.allSettled(
         [
-            { ...commonConfig, format: "esm", target: "esnext", outdir: "./dist/esm" },
+            { ...commonConfig, format: "esm", target: "esnext", outdir: "./dist/esm", outExtension: { ".js": ".mjs" } },
             {
                 ...commonConfig,
                 format: "cjs",
