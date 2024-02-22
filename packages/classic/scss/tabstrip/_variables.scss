@@ -3,9 +3,9 @@ $kendo-tabstrip-wrapper-padding-x: 0px !default;
 $kendo-tabstrip-wrapper-padding-y: 0px !default;
 $kendo-tabstrip-wrapper-border-width: 0px !default;
 
-$kendo-tabstrip-font-family: $kendo-font-family !default;
-$kendo-tabstrip-font-size: $kendo-font-size-md !default;
-$kendo-tabstrip-line-height: $kendo-line-height-md !default;
+$kendo-tabstrip-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-tabstrip-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-tabstrip-line-height: var( --kendo-line-height, normal )!default;
 $kendo-tabstrip-border-width: 1px !default;
 
 $kendo-tabstrip-wrapper-bg: null !default;
