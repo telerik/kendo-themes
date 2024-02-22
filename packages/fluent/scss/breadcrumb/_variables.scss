@@ -28,13 +28,13 @@ $kendo-breadcrumb-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-breadcrumb-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the small breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-sm-font-size: var( --kendo-font-size-md, inherit ) !default;
+$kendo-breadcrumb-sm-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the medium breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-md-font-size: var( --kendo-font-size-md, inherit ) !default;
+$kendo-breadcrumb-md-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the large breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-font-size: var( --kendo-font-size-md, inherit ) !default;
+$kendo-breadcrumb-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// The line height used along with the $kendo-font-size variable of the Breadcrumb.
 /// @group breadcrumb

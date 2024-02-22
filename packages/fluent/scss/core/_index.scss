@@ -7,6 +7,8 @@
 @use "./elevation" as *;
 @forward "./elevation/legacy";
 
+@use "./typography/" as *;
+
 // Variables
 @forward "./variables";
 
@@ -46,7 +48,12 @@
     $kendo-loading-text: $kendo-loading-text !default,
     // Elevation
     $_default-elevation: $kendo-elevation,
-    $kendo-elevation: $kendo-elevation !default
+    $kendo-elevation: $kendo-elevation !default,
+    // Typography
+    $kendo-letter-spacing: $kendo-letter-spacing !default,
+    $kendo-font-family: $kendo-font-family !default,
+    $kendo-font-sizes: $kendo-font-sizes !default,
+    $kendo-line-heights: $kendo-line-heights !default,
 );
 
 @forward "./color-system/swatch-legacy";

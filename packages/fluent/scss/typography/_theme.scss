@@ -2,6 +2,13 @@
 @use "./_variables.scss" as *;
 
 @mixin kendo-typography--theme() {
+    .k-body {
+        @include fill(
+            var( --kendo-body-text, initial ),
+            var( --kendo-body-bg, initial )
+        );
+    }
+
     // Code snippet
     .k-pre,
     .k-code {
