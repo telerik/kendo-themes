@@ -7,7 +7,6 @@
 @import "./_gradient.scss";
 @import "./_hide-scrollbar.scss";
 @import "./_import-once.scss";
-@import "./_typography.scss";
 
 @mixin background-image( $background-image: null ) {
     @if $background-image {
