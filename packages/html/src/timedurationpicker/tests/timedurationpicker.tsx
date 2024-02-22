@@ -72,13 +72,6 @@ export default () =>(
             </div>
 
             <div>
-                <TimeDurationPicker value="Valid Focus" valid focus />
-            </div>
-            <div dir="rtl">
-                <TimeDurationPicker value="Valid Focus" valid focus />
-            </div>
-
-            <div>
                 <TimeDurationPicker value="Loading..." loading />
             </div>
             <div dir="rtl">
