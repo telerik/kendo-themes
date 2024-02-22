@@ -26,13 +26,13 @@ $kendo-color-gradient-padding-x: $kendo-color-gradient-padding-y !default;
 $kendo-color-gradient-gap: $kendo-color-gradient-spacer !default;
 /// The font family of the ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-font-family: $kendo-font-family !default;
+$kendo-color-gradient-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-font-size: $kendo-font-size-md !default;
+$kendo-color-gradient-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-line-height: $kendo-line-height-md !default;
+$kendo-color-gradient-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the ColorGradient.
 /// @group cologradient
 $kendo-color-gradient-text: $kendo-component-text !default;
@@ -136,7 +136,7 @@ $kendo-color-gradient-input-label-text: $kendo-subtle-text !default;
 
 /// The font weight of the ColorGradient contrast ratio text.
 /// @group cologradient
-$kendo-color-gradient-contrast-ratio-font-weight: $kendo-font-weight-bold !default;
+$kendo-color-gradient-contrast-ratio-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group cologradient
 $kendo-color-gradient-contrast-spacer: k-math-div( $kendo-color-gradient-spacer, 2 ) !default;

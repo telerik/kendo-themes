@@ -38,15 +38,15 @@ $kendo-chip-lg-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// The font size of the Chip.
 /// @group chip
-$kendo-chip-font-size: $kendo-font-size-md !default;
+$kendo-chip-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the small Chip.
 /// @group chip
-$kendo-chip-sm-font-size: $kendo-font-size-sm !default;
+$kendo-chip-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font size of the medium Chip.
 /// @group chip
-$kendo-chip-md-font-size: $kendo-font-size-md !default;
+$kendo-chip-md-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the large Chip.
-$kendo-chip-lg-font-size: $kendo-font-size-md !default;
+$kendo-chip-lg-font-size: var( --kendo-font-size, inherit )  !default;
 
 /// The Chip's line height that is related to the $kendo-font-size.
 /// @group chip

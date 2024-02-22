@@ -12,7 +12,7 @@ $kendo-form-spacer: $kendo-padding-md-x * 2 !default;
 
 /// The font size of the Form.
 /// @group form
-$kendo-form-font-size: $kendo-font-size-md !default;
+$kendo-form-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the Form.
 /// @group form
 $kendo-form-line-height: $input-btn-line-height !default;
@@ -21,10 +21,10 @@ $kendo-form-line-height: $input-btn-line-height !default;
 $kendo-form-line-height-em: calc( #{$kendo-form-line-height} * 1em ) !default;
 /// The line height of the small Form.
 /// @group form
-$kendo-form-sm-line-height: $kendo-line-height-sm !default;
+$kendo-form-sm-line-height: var( --kendo-line-height-sm, normal ) !default;
 /// The line height of the large Form.
 /// @group form
-$kendo-form-lg-line-height: $kendo-line-height-lg !default;
+$kendo-form-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The margin of the Form fieldset.
 /// @group form
@@ -53,7 +53,7 @@ $kendo-form-legend-border-color: $kendo-component-border !default;
 $kendo-form-legend-width: 100% !default;
 /// The font size of the Form legend.
 /// @group form
-$kendo-form-legend-font-size: $kendo-font-size-sm !default;
+$kendo-form-legend-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The text capitalization of the Form legend.
 /// @group form
 $kendo-form-legend-text-transform: uppercase !default;
@@ -68,7 +68,7 @@ $kendo-form-button-margin-x: 8px !default;
 
 /// The font size of the Form hint.
 /// @group form
-$kendo-form-hint-font-size: $kendo-font-size-xs !default;
+$kendo-form-hint-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The font style of the Form hint.
 /// @group form
 $kendo-form-hint-font-style: normal !default;
@@ -124,7 +124,7 @@ $kendo-forms-invalid-color: $kendo-color-error !default;
 $kendo-label-optional-margin-x: 6px !default;
 /// The font size of the optional label in the Form.
 /// @group form
-$kendo-label-optional-font-size: $kendo-font-size-xs !default;
+$kendo-label-optional-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The font style of the optional label in the Form.
 /// @group form
 $kendo-label-optional-font-style: italic !default;

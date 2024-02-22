@@ -8,13 +8,13 @@ $kendo-file-manager-spacer: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-file-manager-border-width: 1px !default;
 /// The font family of the FileManager.
 /// @group filemanager
-$kendo-file-manager-font-family: $kendo-font-family !default;
+$kendo-file-manager-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the FileManager.
 /// @group filemanager
-$kendo-file-manager-font-size: $kendo-font-size-md !default;
+$kendo-file-manager-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the FileManager.
 /// @group filemanager
-$kendo-file-manager-line-height: $kendo-line-height-md !default;
+$kendo-file-manager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the FileManager.
 /// @group filemanager
 $kendo-file-manager-bg: $kendo-component-bg !default;

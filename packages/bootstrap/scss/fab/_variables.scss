@@ -8,13 +8,13 @@ $kendo-fab-border-width: 1px !default;
 $kendo-fab-border-radius: k-math-div( $kendo-border-radius, 2 ) !default;
 /// The font family of the FAB.
 /// @group floating-action-button
-$kendo-fab-font-family: $kendo-font-family !default;
+$kendo-fab-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the FAB.
 /// @group floating-action-button
-$kendo-fab-font-size: $kendo-font-size-md !default;
+$kendo-fab-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the FAB.
 /// @group floating-action-button
-$kendo-fab-line-height: $kendo-line-height-md !default;
+$kendo-fab-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal padding of the FAB.
 /// @group floating-action-button
@@ -73,7 +73,7 @@ $kendo-fab-item-text-border-width: 1px !default;
 $kendo-fab-item-text-border-radius: 4px !default;
 /// The font size of the FAB item text.
 /// @group floating-action-button
-$kendo-fab-item-text-font-size: $kendo-font-size-xs !default;
+$kendo-fab-item-text-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The line height of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-line-height: 14px !default;

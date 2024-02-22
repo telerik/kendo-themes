@@ -21,13 +21,13 @@ $kendo-wizard-buttons-margin-x: 10px !default;
 $kendo-wizard-border-width: 0px !default;
 /// The font size of the Wizard.
 /// @group wizard
-$kendo-wizard-font-size: $kendo-font-size-md !default;
+$kendo-wizard-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the Wizard.
 /// @group wizard
-$kendo-wizard-line-height: $kendo-line-height-md !default;
+$kendo-wizard-line-height: var( --kendo-line-height, normal ) !default;
 /// The font family of the Wizard.
 /// @group wizard
-$kendo-wizard-font-family: $kendo-font-family !default;
+$kendo-wizard-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The outline of the focused Wizard step.
 /// @group wizard
