@@ -15,9 +15,9 @@ $kendo-adaptive-menu-item-border: $kendo-component-border !default;
 $kendo-adaptive-menu-title-text: $kendo-component-text !default;
 
 $kendo-adaptive-border-width: 1px !default;
-$kendo-adaptive-font-family: $kendo-font-family !default;
-$kendo-adaptive-font-size: $kendo-font-size-md !default;
-$kendo-adaptive-line-height: $kendo-line-height-md !default;
+$kendo-adaptive-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-adaptive-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-adaptive-line-height: var( --kendo-line-height, normal ) !default;
 
 // Adaptive Grid
 $kendo-adaptive-grid-sort-text: $kendo-color-primary !default;

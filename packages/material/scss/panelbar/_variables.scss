@@ -6,14 +6,8 @@ $kendo-panelbar-padding-x: 0px !default;
 /// The vertical padding of the PanelBar.
 /// @group panelbar
 $kendo-panelbar-padding-y: 0px !default;
-/// The font family of the PanelBar.
-/// @group panelbar
-$kendo-panelbar-font-family: $kendo-font-family !default;
-/// The font size of the PanelBar.
-/// @group panelbar
-$kendo-panelbar-font-size: $kendo-font-size-md !default;
-/// The line height of the PanelBar.
-/// @group panelbar
+$kendo-panelbar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-panelbar-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-panelbar-line-height: k-math-div( 20, 14 ) !default;
 /// The width of the border around the PanelBar.
 /// @group panelbar

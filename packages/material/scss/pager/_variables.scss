@@ -53,13 +53,13 @@ $kendo-pager-lg-item-group-spacing: k-map-get( $kendo-spacing, 2.5 ) !default;
 $kendo-pager-border-width: 1px !default;
 /// The font family of the Pager.
 /// @group pager
-$kendo-pager-font-family: $kendo-font-family !default;
+$kendo-pager-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Pager.
 /// @group pager
-$kendo-pager-font-size: $kendo-font-size-md !default;
+$kendo-pager-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Pager.
 /// @group pager
-$kendo-pager-line-height: $kendo-line-height-md !default;
+$kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the Pager.
 /// @group pager
 $kendo-pager-bg: $kendo-component-bg !default;

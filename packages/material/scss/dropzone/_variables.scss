@@ -15,10 +15,10 @@ $kendo-dropzone-min-height: 220px !default;
 
 /// The font family of the DropZone.
 /// @group dropzone
-$kendo-dropzone-font-family: $kendo-font-family !default;
+$kendo-dropzone-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the DropZone.
 /// @group dropzone
-$kendo-dropzone-font-size: $kendo-font-size-md !default;
+$kendo-dropzone-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the DropZone.
 /// @group dropzone
 $kendo-dropzone-line-height: k-math-div( 20, 14 ) !default;
@@ -55,7 +55,7 @@ $kendo-dropzone-hint-text: null !default;
 
 /// The font size of the DropZone note.
 /// @group dropzone
-$kendo-dropzone-note-font-size: $kendo-font-size-sm !default;
+$kendo-dropzone-note-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The spacing below the DropZone note.
 /// @group dropzone
 $kendo-dropzone-note-spacing: null !default;

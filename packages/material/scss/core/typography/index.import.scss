@@ -1,0 +1,120 @@
+/// The base font size across all components.
+/// @group typography
+$kendo-font-size: 0.875rem !default;
+/// The extra extra small font size across all components.
+/// @group typography
+$kendo-font-size-xs: 0.625rem !default;
+/// The small font size across all components.
+/// @group typography
+$kendo-font-size-sm: 0.75rem !default;
+/// The medium font size across all components.
+/// @group typography
+$kendo-font-size-md: $kendo-font-size !default;
+/// The large font size across all components.
+/// @group typography
+$kendo-font-size-lg: 1rem !default;
+/// The extra large font size across all components.
+/// @group typography
+$kendo-font-size-xl: 1.25rem !default;
+
+/// The base line height across all components.
+/// @group typography
+$kendo-line-height: k-math-div( 28, 14 ) !default;
+/// The extra small line height across all components.
+/// @group typography
+$kendo-line-height-xs: 1 !default;
+/// The small line height across all components.
+/// @group typography
+$kendo-line-height-sm: 1.2 !default;
+/// The medium line height across all components.
+/// @group typography
+$kendo-line-height-md: $kendo-line-height !default;
+/// The large line height across all components.
+/// @group typography
+$kendo-line-height-lg: 1.5 !default;
+/// The base line height in ems across all components.
+/// @group typography
+$kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
+
+/// The base letter spacing across all components.
+/// @group typography
+$kendo-letter-spacing: null !default;
+/// The tightest letter spacing across all components.
+/// @group typography
+$kendo-letter-spacing-tightest: -2.5px !default;
+/// Slightly looser than the tighter letter spacing across all components.
+/// @group typography
+$kendo-letter-spacing-tighter: -1.5px !default;
+/// Moderately tight letter spacing across all components.
+/// @group typography
+$kendo-letter-spacing-tight: -.5px !default;
+/// The normal letter spacing across all components.
+/// @group typography
+$kendo-letter-spacing-normal: 0px !default;
+/// Wide letter spacing across all components
+/// @group typography
+$kendo-letter-spacing-wide: .15px !default;
+/// Slightly wider than the wide letter spacing across all components.
+/// @group typography
+$kendo-letter-spacing-wider: .25px !default;
+/// The widest letter spacing across all components.
+/// @group typography
+$kendo-letter-spacing-widest: .35px !default;
+
+/// The sans-serif font family across all components.
+/// @group typography
+$kendo-font-family-sans-serif: Roboto, "Helvetica Neue", sans-serif !default;
+/// The monospace font family across all components.
+/// @group typography
+$kendo-font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+/// The base font family across all components.
+/// @group typography
+$kendo-font-family: $kendo-font-family-sans-serif !default;
+
+$_default-font-sizes: (
+    xs: $kendo-font-size-xs,
+    sm: $kendo-font-size-sm,
+    md: $kendo-font-size-md,
+    lg: $kendo-font-size-lg,
+    xl: $kendo-font-size-xl
+) !default;
+
+$_default-line-heights: (
+    xs: $kendo-line-height-xs,
+    sm: $kendo-line-height-sm,
+    md: $kendo-line-height-md,
+    lg: $kendo-line-height-lg,
+) !default;
+
+$_default-letter-spacings: (
+    tightest: $kendo-letter-spacing-tightest,
+    tighter: $kendo-letter-spacing-tighter,
+    tight: $kendo-letter-spacing-tight,
+    normal: $kendo-letter-spacing-normal,
+    wide: $kendo-letter-spacing-wide,
+    wider: $kendo-letter-spacing-wider,
+    widest: $kendo-letter-spacing-widest
+) !default;
+
+$_default-font-families: (
+    sans-serif: $kendo-font-family-sans-serif,
+    monospace: $kendo-font-family-monospace
+) !default;
+
+/// The font sizes map
+/// @group typography
+$kendo-font-sizes: $_default-font-sizes !default;
+
+/// The line heights map
+/// @group typography
+$kendo-line-heights: $_default-line-heights !default;
+
+/// The letter spacings map
+/// @group typography
+$kendo-letter-spacings: $_default-letter-spacings !default;
+
+/// The font families map
+/// @group typography
+$kendo-font-families: $_default-font-families !default;
+
+@import "@progress/kendo-theme-core/scss/typography/index.import.scss";

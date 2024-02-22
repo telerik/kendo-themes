@@ -25,14 +25,14 @@
 
         th,
         td {
-            font-size: $kendo-font-size-sm;
+            font-size: var( --kendo-font-size-sm, inherit );
         }
     }
 
 
     // Times header
     .k-scheduler-times {
-        font-size: $kendo-font-size-sm;
+        font-size: var( --kendo-font-size-sm, inherit );
     }
 
 
@@ -66,11 +66,11 @@
         .k-event-delete {
             border-radius: 50%;
             display: inline-block;
-            font-size: $kendo-font-size-sm;
+            font-size: var( --kendo-font-size-sm, inherit );
             line-height: normal;
 
             .k-icon {
-                padding: calc( #{$kendo-font-size-md} - #{$kendo-font-size-sm} );
+                padding: calc( var( --kendo-font-size, inherit) - var( --kendo-font-size-sm, inherit) );
                 box-sizing: content-box;
                 vertical-align: unset;
             }

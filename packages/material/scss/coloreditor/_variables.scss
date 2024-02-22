@@ -15,13 +15,13 @@ $kendo-color-editor-border-width: 1px !default;
 $kendo-color-editor-border-radius: $kendo-border-radius-md !default;
 /// The font family of the ColorEditor.
 /// @group coloreditor
-$kendo-color-editor-font-family: $kendo-font-family !default;
+$kendo-color-editor-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ColorEditor.
 /// @group coloreditor
-$kendo-color-editor-font-size: $kendo-font-size-md !default;
+$kendo-color-editor-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the ColorEditor.
 /// @group coloreditor
-$kendo-color-editor-line-height: $kendo-line-height-md !default;
+$kendo-color-editor-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the ColorEditor.
 /// @group coloreditor
 $kendo-color-editor-text: $kendo-component-text !default;

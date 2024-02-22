@@ -17,13 +17,13 @@ $kendo-chat-height: 600px !default;
 $kendo-chat-border-width: 1px !default;
 /// The font family of the Chat.
 /// @group chat
-$kendo-chat-font-family: $kendo-font-family !default;
+$kendo-chat-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Chat.
 /// @group chat
-$kendo-chat-font-size: $kendo-font-size-md !default;
+$kendo-chat-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the Chat.
 /// @group chat
-$kendo-chat-line-height: $kendo-line-height-md !default;
+$kendo-chat-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal spacing between the items of the Chat.
 /// @group chat

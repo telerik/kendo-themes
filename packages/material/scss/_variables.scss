@@ -147,61 +147,6 @@ $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
 $kendo-zindex-loading: 100 !default;
 
-
-// Typography
-
-/// Base font size across all components.
-/// @group typography
-$kendo-font-size: 14px !default;
-$kendo-font-size-xs: 10px !default;
-$kendo-font-size-sm: 12px !default;
-$kendo-font-size-md: 14px !default;
-$kendo-font-size-lg: 16px !default;
-$kendo-font-size-xl: 20px !default;
-
-$kendo-font-sizes: (
-    xs: $kendo-font-size-xs,
-    sm: $kendo-font-size-sm,
-    md: $kendo-font-size-md,
-    lg: $kendo-font-size-lg,
-    xl: $kendo-font-size-xl
-) !default;
-
-/// Font family for text.
-/// @group typography
-$kendo-font-family-sans-serif: Roboto, "Helvetica Neue", sans-serif !default;
-
-/// Font family across all components.
-/// @group typography
-$kendo-font-family: Roboto, "Helvetica Neue", sans-serif !default;
-
-/// Font family for monospaced text. Used for styling the code.
-/// @group typography
-$kendo-font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
-
-/// Font family across all components.
-/// @group typography
-$kendo-font-family: Roboto, "Helvetica Neue", sans-serif !default;
-
-/// Line height used along with $kendo-font-size.
-/// @group typography
-$kendo-line-height: k-math-div( 28, 14 ) !default;
-$kendo-line-height-xs: 1 !default;
-$kendo-line-height-sm: 1.2 !default;
-$kendo-line-height-md: $kendo-line-height !default;
-$kendo-line-height-lg: 1.5 !default;
-$kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
-
-// Font weight
-$kendo-font-weight-light: 300 !default;
-$kendo-font-weight-normal: 400 !default;
-$kendo-font-weight-medium: 500 !default;
-$kendo-font-weight-semibold: 600 !default;
-$kendo-font-weight-bold: 700 !default;
-
-// Letter Spacing
-$kendo-letter-spacing: null !default;
-
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
 // Disabled mixin variables

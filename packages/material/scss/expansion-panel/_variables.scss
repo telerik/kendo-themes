@@ -8,13 +8,13 @@ $kendo-expander-spacing-y: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-expander-border-width: 1px !default;
 /// The font family of the ExpansionPanel.
 /// @group expander
-$kendo-expander-font-family: $kendo-font-family !default;
+$kendo-expander-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ExpansionPanel.
 /// @group expander
-$kendo-expander-font-size: $kendo-font-size-md !default;
+$kendo-expander-font-size: var( --kendo-font-size, inherit ) !default;
 /// The hine height of the ExpansionPanel.
 /// @group expander
-$kendo-expander-line-height: $kendo-line-height-md !default;
+$kendo-expander-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The text color of the ExpansionPanel.
 /// @group expander
