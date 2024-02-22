@@ -20,13 +20,13 @@ $kendo-appbar-border-width: 0px !default;
 $kendo-appbar-zindex: 1000 !default;
 /// The font family of the AppBar.
 /// @group appbar
-$kendo-appbar-font-family: $kendo-font-family !default;
+$kendo-appbar-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the AppBar.
 /// @group appbar
-$kendo-appbar-font-size: $kendo-font-size-md !default;
+$kendo-appbar-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the AppBar.
 /// @group appbar
-$kendo-appbar-line-height: $kendo-line-height-md !default;
+$kendo-appbar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The spacing between the AppBar sections.
 /// @group appbar

@@ -5,10 +5,10 @@
 $kendo-upload-border-width: 1px !default;
 /// The font family of the Upload.
 /// @group upload
-$kendo-upload-font-family: $kendo-font-family !default;
+$kendo-upload-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Upload.
 /// @group upload
-$kendo-upload-font-size: $kendo-font-size-md !default;
+$kendo-upload-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Upload.
 /// @group upload
 $kendo-upload-line-height: k-math-div( 20, 14 ) !default;

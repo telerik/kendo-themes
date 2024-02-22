@@ -34,13 +34,13 @@ $kendo-stepper-inline-content-padding-y: 10px !default;
 
 // The font size of the Stepper.
 /// @group stepper
-$kendo-stepper-font-size: $kendo-font-size-md !default;
+$kendo-stepper-font-size: var( --kendo-font-size, inherit ) !default;
 // The line height of the Stepper.
 /// @group stepper
 $kendo-stepper-line-height: k-math-div( 20, 14 ) !default;
 // The font family of the Stepper.
 /// @group stepper
-$kendo-stepper-font-family: $kendo-font-family !default;
+$kendo-stepper-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The background color of the Stepper.
 /// @group stepper
@@ -192,7 +192,7 @@ $kendo-stepper-optional-label-text: $kendo-subtle-text !default;
 $kendo-stepper-optional-label-opacity: null !default;
 /// The font size of the optional Stepper label.
 /// @group stepper
-$kendo-stepper-optional-label-font-size: $kendo-font-size-sm !default;
+$kendo-stepper-optional-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font style of the optional Stepper label.
 /// @group stepper
 $kendo-stepper-optional-label-font-style: null !default;

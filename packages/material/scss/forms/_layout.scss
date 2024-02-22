@@ -10,7 +10,7 @@
         padding: 0;
         margin: 0;
         width: auto;
-        font-size: $kendo-font-size-sm;
+        font-size: var( --kendo-font-size-sm, inherit );
         line-height: 1;
         text-align: inherit;
         display: block;

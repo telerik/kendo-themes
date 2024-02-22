@@ -19,10 +19,10 @@ $kendo-card-border-radius: $kendo-border-radius-md !default;
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
 /// The font family of the Card.
 /// @group card
-$kendo-card-font-family: $kendo-font-family !default;
+$kendo-card-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Card.
 /// @group card
-$kendo-card-font-size: $kendo-font-size-md !default;
+$kendo-card-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the Card.
 /// @group card
 $kendo-card-line-height: k-math-div( 20, 14 ) !default;
@@ -112,7 +112,7 @@ $kendo-card-title-margin-bottom: 12px !default;
 $kendo-card-title-font-size: $kendo-h5-font-size !default;
 /// The font family of the Card title.
 /// @group card
-$kendo-card-title-font-family: $kendo-font-family !default;
+$kendo-card-title-font-family: var( --kendo-font-family, inherit ) !default;
 /// The line height of the Card title.
 /// @group card
 $kendo-card-title-line-height: 1.25 !default;
@@ -128,10 +128,10 @@ $kendo-card-title-letter-spacing: null !default;
 $kendo-card-subtitle-margin-bottom: 12px !default;
 /// The font size of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-size: $kendo-font-size-md !default;
+$kendo-card-subtitle-font-size: var( --kendo-font-size, inherit )  !default;
 /// The font family of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-family: $kendo-font-family !default;
+$kendo-card-subtitle-font-family: var( --kendo-font-family, inherit ) !default;
 /// The line height of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-line-height: k-math-div( 20, 14 ) !default;

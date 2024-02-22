@@ -18,10 +18,10 @@ $kendo-notification-border-width: 0px !default;
 $kendo-notification-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 /// The font family of the Notification.
 /// @group notification
-$kendo-notification-font-family: $kendo-font-family !default;
+$kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Notification.
 /// @group notification
-$kendo-notification-font-size: $kendo-font-size-md !default;
+$kendo-notification-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Notification.
 /// @group notification
 $kendo-notification-line-height: k-math-div( 20, 14 ) !default;
