@@ -10,13 +10,13 @@ $kendo-window-border-width: 1px !default;
 $kendo-window-border-radius: $kendo-border-radius-md !default;
 /// The font family of the Window.
 /// @group window
-$kendo-window-font-family: $kendo-font-family !default;
+$kendo-window-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Window.
 /// @group window
-$kendo-window-font-size: $kendo-font-size-md !default;
+$kendo-window-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the Window.
 /// @group window
-$kendo-window-line-height: $kendo-line-height-md !default;
+$kendo-window-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal padding of the Window titlebar.
 /// @group window
@@ -33,7 +33,7 @@ $kendo-window-titlebar-border-style: solid !default;
 
 /// The font size of the title of the Window.
 /// @group window
-$kendo-window-title-font-size: $kendo-font-size-lg !default;
+$kendo-window-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The line height of the title of the Window.
 /// @group window
 $kendo-window-title-line-height: 1.5 !default;

@@ -5,13 +5,13 @@
 $kendo-pdf-viewer-border-width: 1px !default;
 /// The font family of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-font-family: $kendo-font-family !default;
+$kendo-pdf-viewer-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-font-size: $kendo-font-size-md !default;
+$kendo-pdf-viewer-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-line-height: $kendo-line-height-md !default;
+$kendo-pdf-viewer-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the PDFViewer.
 /// @group pdf-viewer

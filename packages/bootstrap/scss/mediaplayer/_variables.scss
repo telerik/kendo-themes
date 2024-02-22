@@ -1,8 +1,8 @@
 // Media player
 $kendo-media-player-border-width: 1px !default;
-$kendo-media-player-font-family: $kendo-font-family !default;
-$kendo-media-player-font-size: $kendo-font-size-md !default;
-$kendo-media-player-line-height: $kendo-line-height-md !default;
+$kendo-media-player-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-media-player-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-media-player-line-height: var( --kendo-line-height, normal ) !default;
 
 $kendo-media-player-bg: $kendo-component-bg !default;
 $kendo-media-player-text: $kendo-component-text !default;
