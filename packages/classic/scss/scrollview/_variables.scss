@@ -5,13 +5,13 @@
 $kendo-scrollview-border-width: 1px !default;
 /// The font family of the ScrollView.
 /// @group scrollview
-$kendo-scrollview-font-family: $kendo-font-family !default;
+$kendo-scrollview-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ScrollView.
 /// @group scrollview
-$kendo-scrollview-font-size: $kendo-font-size-md !default;
+$kendo-scrollview-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the ScrollView.
 /// @group scrollview
-$kendo-scrollview-line-height: $kendo-line-height-md !default;
+$kendo-scrollview-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The text color of the ScrollView.
 /// @group scrollview

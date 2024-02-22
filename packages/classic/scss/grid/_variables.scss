@@ -1,8 +1,8 @@
 // Grid
 $kendo-grid-border-width: 1px !default;
-$kendo-grid-font-family: $kendo-font-family !default;
-$kendo-grid-font-size: $kendo-font-size-md !default;
-$kendo-grid-line-height: $kendo-line-height-md !default;
+$kendo-grid-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-grid-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-grid-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Horizontal padding of the grid.
 /// @group grid
@@ -224,12 +224,12 @@ $kendo-grid-selection-aggregates-spacing: k-map-get( $kendo-spacing, 2 ) !defaul
 $kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
 /// Font weight of the selection aggregates container
 /// @group grid
-$kendo-grid-selection-aggregates-font-weight: $kendo-font-weight-bold !default;
+$kendo-grid-selection-aggregates-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
 $kendo-grid-sorted-icon-spacing: calc( #{$kendo-padding-md-x} - 1px ) !default;
 $kendo-grid-sorted-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( k-contrast-color( $kendo-grid-bg ), .02 )) !default;
 $kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
-$kendo-grid-sorting-index-font-size: $kendo-font-size-sm !default;
+$kendo-grid-sorting-index-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
 $kendo-grid-sorting-index-spacing-y: k-math-div( $kendo-icon-spacing, 2 ) !default;
 $kendo-grid-sorting-index-spacing-x: -$kendo-grid-sorting-index-spacing-y !default;
@@ -288,8 +288,8 @@ $kendo-grid-column-menu-items-wrap-padding-y: k-map-get( $kendo-spacing, 1.5 ) !
 $kendo-grid-column-menu-group-header-padding-x: $kendo-menu-popup-md-item-padding-x !default;
 $kendo-grid-column-menu-group-header-padding-y: $kendo-menu-popup-md-item-padding-y !default;
 
-$kendo-grid-column-menu-group-header-font-size: $kendo-font-size-sm !default;
-$kendo-grid-column-menu-group-header-line-height: $kendo-line-height-md !default;
+$kendo-grid-column-menu-group-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-grid-column-menu-group-header-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-grid-column-menu-group-header-text-transform: null !default;
 $kendo-grid-column-menu-group-header-border-bottom-width: 1px !default;
 
