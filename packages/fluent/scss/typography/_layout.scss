@@ -17,6 +17,15 @@
     }
 
     .k-body {
+        @include typography(
+            var( --kendo-font-size, inherit ),
+            var( --kendo-font-family, inherit ),
+            var( --kendo-line-height, normal ),
+            var( --kendo-font-weight, normal ),
+            var( --kendo-letter-spacing, normal ),
+        );
+        margin: 0;
+
         p {
             margin: var( --kendo-paragraph-margin, #{$kendo-paragraph-margin});
         }

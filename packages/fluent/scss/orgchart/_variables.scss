@@ -76,7 +76,7 @@ $kendo-orgchart-node-group-title-margin-y: 0px !default;
 $kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
 /// The line height of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-md, normal ) !default;
+$kendo-orgchart-node-group-title-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The vertical margin of the OrgChart node group subtitle.
 /// @group orgchart
@@ -119,7 +119,7 @@ $kendo-orgchart-card-subtitle-margin-y: 0px !default;
 $kendo-orgchart-card-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The line height of the OrgChart Card subtitle.
 /// @group orgchart
-$kendo-orgchart-card-subtitle-line-height: var( --kendo-line-height-md, inherit ) !default;
+$kendo-orgchart-card-subtitle-line-height: var( --kendo-line-height, inherit ) !default;
 
 /// The vertical padding of the OrgChart Card body.
 /// @group orgchart
