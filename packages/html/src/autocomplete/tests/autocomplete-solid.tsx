@@ -39,13 +39,6 @@ export default () =>(
             <div dir="rtl">
                 <AutocompleteNormal value="invalid focus" invalid focus />
             </div>
-
-            <div>
-                <AutocompleteNormal value="valid focus" valid focus />
-            </div>
-            <div dir="rtl">
-                <AutocompleteNormal value="valid focus" valid focus />
-            </div>
         </div>
     </>
 );
