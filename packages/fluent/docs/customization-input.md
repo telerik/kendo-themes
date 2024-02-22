@@ -1431,26 +1431,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-valid-border</td>
-    <td></td>
-    <td><code>var( --kendo-valid-border, #{$kendo-valid-border} )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the valid Input components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-valid-text</td>
-    <td></td>
-    <td><code>var( --kendo-valid-text, #{$kendo-valid-text} )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the valid Input components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-placeholder-text</td>
     <td></td>
     <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
