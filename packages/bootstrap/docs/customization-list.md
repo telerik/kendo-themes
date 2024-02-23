@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-list-font-family</td>
-    <td>List</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the List components.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-font-weight</td>
-    <td>Number</td>
-    <td><code>$kendo-font-weight-bold</code></td>
-    <td><code>700</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-bold, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the List header.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-font-weight</td>
-    <td>Number</td>
-    <td><code>$kendo-font-weight-bold</code></td>
-    <td><code>700</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-bold, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of a List group item.</div></div>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
         group-item-line-height: null
     )
 )</code></td>
-    <td><code>(sm: (font-size: 0.875rem, line-height: 1.4285714286, header-padding-x: 1rem, header-padding-y: 0.25rem, header-font-size: null, header-line-height: null, item-padding-x: 1rem, item-padding-y: 0.25rem, item-font-size: null, item-line-height: null, group-item-padding-x: 1rem, group-item-padding-y: 0.125rem, group-item-font-size: null, group-item-line-height: null), md: (font-size: 1rem, line-height: 1.5, header-padding-x: 1rem, header-padding-y: 0.25rem, header-font-size: null, header-line-height: null, item-padding-x: 1rem, item-padding-y: 0.25rem, item-font-size: null, item-line-height: null, group-item-padding-x: 1rem, group-item-padding-y: 0.25rem, group-item-font-size: null, group-item-line-height: null), lg: (font-size: 1rem, line-height: 1.5, header-padding-x: 1rem, header-padding-y: 0.5rem, header-font-size: null, header-line-height: null, item-padding-x: 1rem, item-padding-y: 0.5rem, item-font-size: null, item-line-height: null, group-item-padding-x: 1rem, group-item-padding-y: 0.375rem, group-item-font-size: null, group-item-line-height: null))</code></td>
+    <td><code>(sm: (font-size: var(--kendo-font-size-sm, inherit), line-height: 1.4285714286, header-padding-x: 1rem, header-padding-y: 0.25rem, header-font-size: null, header-line-height: null, item-padding-x: 1rem, item-padding-y: 0.25rem, item-font-size: null, item-line-height: null, group-item-padding-x: 1rem, group-item-padding-y: 0.125rem, group-item-font-size: null, group-item-line-height: null), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), header-padding-x: 1rem, header-padding-y: 0.25rem, header-font-size: null, header-line-height: null, item-padding-x: 1rem, item-padding-y: 0.25rem, item-font-size: null, item-line-height: null, group-item-padding-x: 1rem, group-item-padding-y: 0.25rem, group-item-font-size: null, group-item-line-height: null), lg: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), header-padding-x: 1rem, header-padding-y: 0.5rem, header-font-size: null, header-line-height: null, item-padding-x: 1rem, item-padding-y: 0.5rem, item-font-size: null, item-line-height: null, group-item-padding-x: 1rem, group-item-padding-y: 0.375rem, group-item-font-size: null, group-item-line-height: null))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.</div></div>

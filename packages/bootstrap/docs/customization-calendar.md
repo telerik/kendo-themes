@@ -38,36 +38,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-font-family</td>
-    <td>List</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td><code>1.5</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Calendar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-cell-size</td>
     <td>Number</td>
     <td><code>38px</code></td>
@@ -239,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-calendar-cell-line-height</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-calendar-line-height</code></td>
-    <td><code>1.5</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the cells in the Calendar.</div></div>
@@ -295,26 +265,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the header cells in the Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-header-cell-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-sm</code></td>
-    <td><code>0.875rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the header cells in the Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-header-cell-line-height</td>
-    <td>Number</td>
-    <td><code>2</code></td>
-    <td><code>2</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the header cells in the Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -818,36 +768,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-sm-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-sm-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td><code>1.5</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-sm-cell-size</td>
-    <td>Number</td>
-    <td><code>34px</code></td>
-    <td><code>34px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the small Calendar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-sm-cell-padding-x</td>
     <td>Number</td>
     <td><code>.125rem</code></td>
@@ -868,36 +788,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-md-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-md-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td><code>1.5</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-md-cell-size</td>
-    <td>Number</td>
-    <td><code>38px</code></td>
-    <td><code>38px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the medium Calendar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-md-cell-padding-x</td>
     <td>Number</td>
     <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
@@ -915,36 +805,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the medium Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-lg-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-lg</code></td>
-    <td><code>1.25rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-lg-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-lg</code></td>
-    <td><code>2</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-lg-cell-size</td>
-    <td>Number</td>
-    <td><code>42px</code></td>
-    <td><code>42px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the large Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -993,7 +853,7 @@ The following table lists the available variables for customization.
         cell-padding-y: $kendo-calendar-lg-cell-padding-x
     )
 )</code></td>
-    <td><code>(sm: (font-size: 1rem, line-height: 1.5, cell-size: 34px, cell-padding-x: 0.125rem, cell-padding-y: 0.125rem), md: (font-size: 1rem, line-height: 1.5, cell-size: 38px, cell-padding-x: 0.25rem, cell-padding-y: 0.25rem), lg: (font-size: 1.25rem, line-height: 2, cell-size: 42px, cell-padding-x: 0.25rem, cell-padding-y: 0.25rem))</code></td>
+    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-size: 34px, cell-padding-x: 0.125rem, cell-padding-y: 0.125rem), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-size: 38px, cell-padding-x: 0.25rem, cell-padding-y: 0.25rem), lg: (font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal), cell-size: 42px, cell-padding-x: 0.25rem, cell-padding-y: 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes Map of the Calendar.</div></div>

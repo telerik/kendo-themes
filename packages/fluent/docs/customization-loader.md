@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-container-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>

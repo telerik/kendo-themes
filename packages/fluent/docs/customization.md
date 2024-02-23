@@ -72,46 +72,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-font-size</td>
-    <td></td>
-    <td><code>14px</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-family</td>
-    <td></td>
-    <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-line-height</td>
-    <td></td>
-    <td><code>math.div( 20, 14 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight</td>
-    <td></td>
-    <td><code>400</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-box-shadow-depth-1</td>
     <td></td>
     <td><code>var( --kendo-elevation-1, none )</code></td>
@@ -1590,7 +1550,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, 1rem )</code></td>
+    <td><code>var( --kendo-font-size, 1rem )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1600,7 +1560,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-line-height</td>
     <td></td>
-    <td><code>var( --kendo-line-height-md, normal )</code></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1847,7 +1807,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-sm-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1857,7 +1817,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-md-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1867,7 +1827,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-lg-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3659,36 +3619,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-sm-font-size</td>
-    <td></td>
-    <td><code>$kendo-font-size-sm</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-sm-line-height</td>
-    <td></td>
-    <td><code>$kendo-line-height-sm</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-sm-cell-size</td>
-    <td></td>
-    <td><code>24px</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the small calendar cell.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-sm-cell-padding-x</td>
     <td></td>
     <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
@@ -3706,46 +3636,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the small Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-sm-cell-font-size</td>
-    <td></td>
-    <td><code>$kendo-font-size-sm</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the small Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-md-font-size</td>
-    <td></td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-md-line-height</td>
-    <td></td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-md-cell-size</td>
-    <td></td>
-    <td><code>28px</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the medium calendar cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -3769,46 +3659,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-md-cell-font-size</td>
-    <td></td>
-    <td><code>$kendo-font-size-sm</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the medium Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-lg-font-size</td>
-    <td></td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-lg-line-height</td>
-    <td></td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-lg-cell-size</td>
-    <td></td>
-    <td><code>32px</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the large calendar cell.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-calendar-lg-cell-padding-x</td>
     <td></td>
     <td><code>map.get( $kendo-spacing, 1 )</code></td>
@@ -3826,16 +3676,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the large Calendar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-lg-cell-font-size</td>
-    <td></td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the large Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -17595,7 +17435,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-container-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18373,7 +18213,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18383,7 +18223,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-line-height</td>
     <td></td>
-    <td><code>var( --kendo-line-height-md, 30px )</code></td>
+    <td><code>var( --kendo-line-height, 30px )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19279,7 +19119,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-title-line-height</td>
     <td></td>
-    <td><code>var( --kendo-line-height-md, normal )</code></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19409,7 +19249,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-card-subtitle-line-height</td>
     <td></td>
-    <td><code>var( --kendo-line-height-md, inherit )</code></td>
+    <td><code>var( --kendo-line-height, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28636,7 +28476,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29146,7 +28986,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-card-title-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, 1rem )</code></td>
+    <td><code>var( --kendo-font-size, 1rem )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31298,23 +31138,163 @@ The following table lists the available variables for customizing the Fluent the
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-enable-typography</td>
+    <td>$kendo-font-size</td>
     <td></td>
-    <td><code>false</code></td>
+    <td><code>0.875rem</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global typography styles for the Kendo Default theme.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font size across all components.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-font-family-monospace</td>
+    <td>$kendo-font-size-xs</td>
     <td></td>
-    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td><code>0.625rem</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for monospaced text. Used for styling the code.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra extra small font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-sm</td>
+    <td></td>
+    <td><code>0.75rem</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-md</td>
+    <td></td>
+    <td><code>$kendo-font-size</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-lg</td>
+    <td></td>
+    <td><code>1rem</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-xl</td>
+    <td></td>
+    <td><code>1.25rem</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height</td>
+    <td></td>
+    <td><code>math.div( 20, 14 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-xs</td>
+    <td></td>
+    <td><code>1</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-sm</td>
+    <td></td>
+    <td><code>1.25</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-md</td>
+    <td></td>
+    <td><code>$kendo-line-height</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-lg</td>
+    <td></td>
+    <td><code>1.5</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-em</td>
+    <td></td>
+    <td><code>calc( #{$kendo-line-height} * 1em)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height in ems across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing</td>
+    <td></td>
+    <td><code>normal</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-family</td>
+    <td></td>
+    <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-sizes</td>
+    <td></td>
+    <td><code>$_default-font-sizes</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-heights</td>
+    <td></td>
+    <td><code>$_default-line-heights</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
     </td>
 </tr>
 </tbody>

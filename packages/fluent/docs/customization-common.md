@@ -68,46 +68,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-font-size</td>
-    <td></td>
-    <td><code>14px</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-family</td>
-    <td></td>
-    <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-line-height</td>
-    <td></td>
-    <td><code>math.div( 20, 14 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-weight</td>
-    <td></td>
-    <td><code>400</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-box-shadow-depth-1</td>
     <td></td>
     <td><code>var( --kendo-elevation-1, none )</code></td>

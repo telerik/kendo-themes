@@ -1903,35 +1903,35 @@ This is equivalent to `float: none;`.
 
 
 
-### `.k-font-xs`
+### `.k-font-size-xs`
 
 This is equivalent to `font-size: 10px;`.
 
 
 
 
-### `.k-font-sm`
+### `.k-font-size-sm`
 
 This is equivalent to `font-size: 12px;`.
 
 
 
 
-### `.k-font-md`
+### `.k-font-size-md`
 
 This is equivalent to `font-size: 14px;`.
 
 
 
 
-### `.k-font-lg`
+### `.k-font-size-lg`
 
 This is equivalent to `font-size: 16px;`.
 
 
 
 
-### `.k-font-xl`
+### `.k-font-size-xl`
 
 This is equivalent to `font-size: 20px;`.
 

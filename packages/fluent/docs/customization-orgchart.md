@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-title-line-height</td>
     <td></td>
-    <td><code>var( --kendo-line-height-md, normal )</code></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-card-subtitle-line-height</td>
     <td></td>
-    <td><code>var( --kendo-line-height-md, inherit )</code></td>
+    <td><code>var( --kendo-line-height, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
