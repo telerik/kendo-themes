@@ -303,9 +303,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-avatar-font-family</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-font-family</code></td>
-    <td><code>null</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the avatar.</div></div>
@@ -390,9 +390,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-badge-font-family</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-font-family</code></td>
-    <td><code>null</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the badge.</div></div>
@@ -645,9 +645,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-bottom-nav-font-family</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-font-family</code></td>
-    <td><code>null</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the bottom navigation.</div></div>
@@ -805,9 +805,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-font-family</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-font-family</code></td>
-    <td><code>null</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Breadcrumb.</div></div>
@@ -1160,9 +1160,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-captcha-font-family</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-font-family</code></td>
-    <td><code>null</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Captcha.</div></div>
@@ -4515,9 +4515,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-font-family</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>

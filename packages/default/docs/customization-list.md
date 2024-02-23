@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-list-font-family</td>
     <td>String</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>inherit</code></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the List components.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-font-weight</td>
-    <td>Number</td>
-    <td><code>$kendo-font-weight-bold</code></td>
-    <td><code>700</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-bold, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the List header.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-font-weight</td>
-    <td>Number</td>
-    <td><code>$kendo-font-weight-bold</code></td>
-    <td><code>700</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
+    <td><code>var(--kendo-font-weight-bold, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of a List group item.</div></div>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
         group-item-line-height: null
     )
 )</code></td>
-    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, header-padding-x: 8px, header-padding-y: 2px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 2px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 2px, group-item-font-size: null, group-item-line-height: null), md: (font-size: 14px, line-height: 1.4285714286, header-padding-x: 8px, header-padding-y: 4px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 4px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 4px, group-item-font-size: null, group-item-line-height: null), lg: (font-size: 16px, line-height: 1.5, header-padding-x: 8px, header-padding-y: 6px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 8px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 6px, group-item-font-size: null, group-item-line-height: null))</code></td>
+    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), header-padding-x: 8px, header-padding-y: 2px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 2px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 2px, group-item-font-size: null, group-item-line-height: null), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), header-padding-x: 8px, header-padding-y: 4px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 4px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 4px, group-item-font-size: null, group-item-line-height: null), lg: (font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal), header-padding-x: 8px, header-padding-y: 6px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 8px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 6px, group-item-font-size: null, group-item-line-height: null))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.</div></div>

@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-line-height</td>
     <td></td>
-    <td><code>var( --kendo-line-height-md, 30px )</code></td>
+    <td><code>var( --kendo-line-height, 30px )</code></td>
     <td></td>
 </tr>
 <tr>

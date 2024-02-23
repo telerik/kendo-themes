@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-badge-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-xs</code></td>
-    <td><code>10px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes of the Badge.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-badge-sm-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-xs</code></td>
-    <td><code>10px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Badge.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-badge-md-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-xs</code></td>
-    <td><code>10px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-xs, inherit )!default</code></td>
+    <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Badge.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-badge-lg-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-xs</code></td>
-    <td><code>10px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-xs, inherit )</code></td>
+    <td><code>var(--kendo-font-size-xs, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Badge.</div></div>
@@ -273,7 +273,7 @@ The following table lists the available variables for customization.
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 2px, padding-y: 2px, font-size: 10px, line-height: 1, min-width: calc(1em + 4px + 2px)), md: (padding-x: 4px, padding-y: 4px, font-size: 10px, line-height: 1, min-width: calc(1em + 8px + 2px)), lg: (padding-x: 6px, padding-y: 6px, font-size: 10px, line-height: 1, min-width: calc(1em + 12px + 2px)))</code></td>
+    <td><code>(sm: (padding-x: 2px, padding-y: 2px, font-size: var(--kendo-font-size-xs, inherit), line-height: 1, min-width: calc(1em + 4px + 2px)), md: (padding-x: 4px, padding-y: 4px, font-size: var(--kendo-font-size-xs, inherit), line-height: 1, min-width: calc(1em + 8px + 2px)), lg: (padding-x: 6px, padding-y: 6px, font-size: var(--kendo-font-size-xs, inherit), line-height: 1, min-width: calc(1em + 12px + 2px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>

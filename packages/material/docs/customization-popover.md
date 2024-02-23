@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-popover-font-family</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-card-font-family</code></td>
-    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Popover.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-popover-font-size</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-font-size</code></td>
-    <td><code>14px</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Popover.</div></div>
