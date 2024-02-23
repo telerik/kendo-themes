@@ -1,7 +1,7 @@
 import { Button } from "../..";
 import Dialog from "../dialog.spec";
 
-export const DialogNormal = (props) => (
+export const DialogNonModal = (props) => (
     <Dialog
         title="Title"
         children={
@@ -16,11 +16,7 @@ export const DialogNormal = (props) => (
             </>
         }
         actions={[ 'x' ]}
+        modal={false}
         {...props}
     />
 );
-
-/**
- * @deprecated This template has been moved to DialogNormal. Please update your code accordingly.
- */
-export const DialogModal = DialogNormal;

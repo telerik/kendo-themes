@@ -14,7 +14,10 @@ const options = {
     ],
 };
 
-const defaultProps = {};
+const defaultProps = {
+    actionButtonsAlign: "stretched",
+    modal: true
+} as const;
 
 export type KendoDialogOptions = {
   themeColor?: (typeof options.themeColor)[number] | null;
@@ -25,6 +28,7 @@ export type KendoDialogProps = KendoDialogOptions & {
     actions?: string[];
     actionButtons?: JSX.Element;
     actionButtonsAlign?: "start" | "end" | "center" | "stretched";
+    modal?: boolean;
 };
 
 export const Dialog = (
@@ -36,21 +40,25 @@ export const Dialog = (
         actions,
         themeColor,
         actionButtons,
-        actionButtonsAlign,
+        actionButtonsAlign = defaultProps.actionButtonsAlign,
+        modal = defaultProps.modal,
         ...other
     } = props;
 
     return (
-        <div
-            {...other}
-            className={classNames(
-                props.className,
-                DIALOG_CLASSNAME,
-                "k-window",
-                optionClassNames(DIALOG_CLASSNAME, { themeColor })
-            )}>
+        <div className="k-dialog-wrapper">
+            { modal &&
+            <div className="k-overlay"></div>}
+            <div
+                {...other}
+                className={classNames(
+                    props.className,
+                    DIALOG_CLASSNAME,
+                    "k-window",
+                    optionClassNames(DIALOG_CLASSNAME, { themeColor })
+                )}>
 
-            {(title !== undefined || actions) &&
+                {(title !== undefined || actions) &&
                 <div className="k-window-titlebar k-dialog-titlebar">
                     {title !== undefined && <span className="k-window-title k-dialog-title">{title}</span>}
                     {actions && <>
@@ -61,15 +69,16 @@ export const Dialog = (
                         </div>
                     </>}
                 </div>
-            }
-            <div className="k-window-content k-dialog-content">
-                {props.children}
-            </div>
-            {actionButtons &&
+                }
+                <div className="k-window-content k-dialog-content">
+                    {props.children}
+                </div>
+                {actionButtons &&
                 <ActionButtons alignment={actionButtonsAlign} className="k-window-actions k-dialog-actions">
                     {actionButtons}
                 </ActionButtons>
-            }
+                }
+            </div>
         </div>
     );
 };
