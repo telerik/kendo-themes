@@ -10,103 +10,127 @@
 <body id="app" class="k-body">
     <style>
         .k-dialog {
-            position: relative;
+            width: 270px
+        }
+        section {
+            height: 250px;
+            transform: translate(0, 0);
         }
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <div class="k-dialog k-window">
-            <div class="k-window-titlebar k-dialog-titlebar">
-                <span class="k-window-title k-dialog-title">Title</span>
-                <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                            </svg>
-                        </span>
-                    </button>
+        <section>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-dialog k-window k-dialog-default">
+                    <div class="k-window-titlebar k-dialog-titlebar">
+                        <span class="k-window-title k-dialog-title">Title</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content">Dialog with default theme color</div>
+                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Action</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                            <span class="k-button-text">Primary</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="k-window-content k-dialog-content">Dialog with default theme color</div>
-            <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                    <span class="k-button-text">Action</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                    <span class="k-button-text">Primary</span>
-                </button>
-            </div>
-        </div>
-        <div class="k-dialog k-window k-dialog-primary">
-            <div class="k-window-titlebar k-dialog-titlebar">
-                <span class="k-window-title k-dialog-title">Title</span>
-                <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                            </svg>
-                        </span>
-                    </button>
+        </section>
+        <section>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-dialog k-window k-dialog-primary">
+                    <div class="k-window-titlebar k-dialog-titlebar">
+                        <span class="k-window-title k-dialog-title">Title</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content">Dialog with primary theme color</div>
+                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Action</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                            <span class="k-button-text">Primary</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="k-window-content k-dialog-content">Dialog with primary theme color</div>
-            <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                    <span class="k-button-text">Action</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                    <span class="k-button-text">Primary</span>
-                </button>
-            </div>
-        </div>
-        <div class="k-dialog k-window k-dialog-dark">
-            <div class="k-window-titlebar k-dialog-titlebar">
-                <span class="k-window-title k-dialog-title">Title</span>
-                <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                            </svg>
-                        </span>
-                    </button>
+        </section>
+        <section>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-dialog k-window k-dialog-light">
+                    <div class="k-window-titlebar k-dialog-titlebar">
+                        <span class="k-window-title k-dialog-title">Title</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content">Dialog with light theme color</div>
+                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Action</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                            <span class="k-button-text">Primary</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="k-window-content k-dialog-content">Dialog with dark theme color</div>
-            <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                    <span class="k-button-text">Action</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                    <span class="k-button-text">Primary</span>
-                </button>
-            </div>
-        </div>
-        <div class="k-dialog k-window k-dialog-light">
-            <div class="k-window-titlebar k-dialog-titlebar">
-                <span class="k-window-title k-dialog-title">Title</span>
-                <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                            </svg>
-                        </span>
-                    </button>
+        </section>
+        <section>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-dialog k-window k-dialog-dark">
+                    <div class="k-window-titlebar k-dialog-titlebar">
+                        <span class="k-window-title k-dialog-title">Title</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content">Dialog with dark theme color</div>
+                    <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Action</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                            <span class="k-button-text">Primary</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="k-window-content k-dialog-content">Dialog with light theme color</div>
-            <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                    <span class="k-button-text">Action</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                    <span class="k-button-text">Primary</span>
-                </button>
-            </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
