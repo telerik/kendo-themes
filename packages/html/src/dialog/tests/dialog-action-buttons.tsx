@@ -1,4 +1,3 @@
-import { Button } from '../../button';
 import { DialogNormal } from '../../dialog';
 
 
@@ -7,6 +6,11 @@ const styles = `
         position: relative;
         width: 300px;
     }
+
+    section {
+        height: 250px;
+        transform: translate( 0, 0 );
+    }
 `;
 
 export default () =>(
@@ -14,41 +18,29 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <DialogNormal title="Title" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
+            <section>
+                <DialogNormal actionButtonsAlign="start">
                 Action Buttons at start position
-            </DialogNormal>
+                </DialogNormal>
+            </section>
 
-            <DialogNormal title="Title" actions={[ 'x' ]} actionButtonsAlign="center" actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
+            <section>
+                <DialogNormal actionButtonsAlign="center">
                 Action Buttons at center position
-            </DialogNormal>
+                </DialogNormal>
+            </section>
 
-            <DialogNormal title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
+            <section>
+                <DialogNormal actionButtonsAlign="end">
                 Action Buttons at end position
-            </DialogNormal>
+                </DialogNormal>
+            </section>
 
-            <DialogNormal title="Title" actions={[ 'x' ]} actionButtonsAlign="stretched" actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
+            <section>
+                <DialogNormal>
                 Action Buttons with stretched position
-            </DialogNormal>
+                </DialogNormal>
+            </section>
 
         </div>
     </>
