@@ -1,11 +1,21 @@
 import DropdownTree from "../dropdowntree.spec";
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
+import { Icon, Textbox } from "../..";
 
-export const DropdownTreePopup = (props) => (
+export const DropdownTreeFiltering = (props) => (
     <DropdownTree
         opened={true}
-        popup={
+        popup={(
             <>
+                <div className="k-list-filter">
+                    <Textbox
+                        prefix={
+                            <>
+                                <Icon icon="search" />
+                            </>
+                        }
+                    />
+                </div>
                 <Treeview dir={props.dir}>
                     <TreeviewItem top text="Root 1" />
                     <TreeviewItem bottom text="Root 2" expanded>
@@ -21,7 +31,7 @@ export const DropdownTreePopup = (props) => (
                     </TreeviewItem>
                 </Treeview>
             </>
-        }
+        )}
         {...props}
     />
 );

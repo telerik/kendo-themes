@@ -1,4 +1,4 @@
-import { DropdownTreePopup } from '../../dropdowntree';
+import { DropdownTreePopup, DropdownTreeFiltering } from '../../dropdowntree';
 
 const styles = `
     #test-area {
@@ -23,6 +23,13 @@ export default () =>(
             </div>
             <div>
                 <DropdownTreePopup value="Opened" dir="rtl" />
+            </div>
+
+            <div>
+                <DropdownTreeFiltering value="Filtering" />
+            </div>
+            <div>
+                <DropdownTreeFiltering value="Filtering" dir="rtl" />
             </div>
 
         </div>
