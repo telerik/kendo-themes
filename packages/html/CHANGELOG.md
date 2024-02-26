@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.6](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.5...v7.2.1-dev.6) (2024-02-26)
+
+
+### Bug Fixes
+
+* **html:** consolidate grid filter row rendering with a11y spec ([4fcce30](https://github.com/telerik/kendo-themes/commit/4fcce30d0aa666fe7e4fd19b6bc977a4b1aabb0d))
+
+
+
+
+
 ## [7.2.1-dev.5](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.4...v7.2.1-dev.5) (2024-02-19)
 
 
