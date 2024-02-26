@@ -70,23 +70,6 @@
             }
         }
 
-        // Valid
-        &.k-valid {
-            @include fill( $border: $kendo-input-valid-border );
-
-            .k-input-validation-icon {
-                color: $kendo-valid-text;
-            }
-
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-            &:focus-within {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-        }
-
         // Prefix & Suffix
         .k-input-prefix {
             color: $kendo-input-prefix-text;
@@ -175,23 +158,6 @@
                 @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
-
-        // Valid
-        &.k-valid {
-            @include fill( $border: $kendo-input-valid-border );
-
-            .k-input-validation-icon {
-                color: $kendo-valid-text;
-            }
-
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-            &:focus-within {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-        }
     }
 
 
@@ -274,23 +240,6 @@
             }
             &:focus-within {
                 @include focus-indicator( $kendo-input-invalid-shadow );
-            }
-        }
-
-        // Valid
-        &.k-valid {
-            @include fill( $border: $kendo-input-valid-border );
-
-            .k-input-validation-icon {
-                color: $kendo-valid-text;
-            }
-
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-            &:focus-within {
-                @include focus-indicator( $kendo-input-valid-shadow );
             }
         }
 
@@ -388,23 +337,6 @@
                 @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
-
-        // Valid
-        &.k-valid {
-            @include fill( $border: $kendo-input-valid-border );
-
-            .k-input-validation-icon {
-                color: $kendo-valid-text;
-            }
-
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-            &:focus-within {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-        }
     }
 
 
@@ -474,23 +406,6 @@
             }
             &:focus-within {
                 @include focus-indicator( $kendo-input-invalid-shadow );
-            }
-        }
-
-        // Valid
-        &.k-valid {
-            @include fill( $border: $kendo-input-valid-border );
-
-            .k-input-validation-icon {
-                color: $kendo-valid-text;
-            }
-
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-            &:focus-within {
-                @include focus-indicator( $kendo-input-valid-shadow );
             }
         }
 
@@ -586,23 +501,6 @@
             }
             &:focus-within {
                 @include focus-indicator( $kendo-input-invalid-shadow );
-            }
-        }
-
-        // Valid
-        &.k-valid {
-            @include fill( $border: $kendo-input-valid-border );
-
-            .k-input-validation-icon {
-                color: $kendo-valid-text;
-            }
-
-            &:focus,
-            &.k-focus {
-                @include focus-indicator( $kendo-input-valid-shadow );
-            }
-            &:focus-within {
-                @include focus-indicator( $kendo-input-valid-shadow );
             }
         }
     }

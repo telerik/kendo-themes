@@ -39,13 +39,6 @@ export default () =>(
             <div dir="rtl">
                 <DropdownGridNormal value="invalid focus" invalid focus />
             </div>
-
-            <div>
-                <DropdownGridNormal value="valid focus" valid focus />
-            </div>
-            <div dir="rtl">
-                <DropdownGridNormal value="valid focus" valid focus />
-            </div>
         </div>
     </>
 );

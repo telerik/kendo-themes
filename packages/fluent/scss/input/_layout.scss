@@ -144,11 +144,6 @@
         &:invalid {
             box-shadow: none;
         }
-
-        // Valid
-        &:valid {
-            box-shadow: none;
-        }
     }
     span.k-input-inner {
         white-space: nowrap;
@@ -450,7 +445,6 @@
 
         }
 
-        &.k-valid,
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {

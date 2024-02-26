@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.6](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.5...v7.2.1-dev.6) (2024-02-26)
+
+
+### Bug Fixes
+
+* **grid:** missing grid filtercell start border ([b5992ac](https://github.com/telerik/kendo-themes/commit/b5992aca530b529a0696b35f4733d04221392f2e))
+
+
+
+
+
 ## [7.2.1-dev.5](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.4...v7.2.1-dev.5) (2024-02-19)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
