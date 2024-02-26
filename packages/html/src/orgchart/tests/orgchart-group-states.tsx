@@ -18,9 +18,9 @@ export default () =>(
                     <OrgchartGroupVertical width="100%" height="431px">
                         <OrgchartGroup justifyContent="around">
                             <OrgchartNodeGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical" { ...{ [state]: true } }>
-                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
                             </OrgchartNodeGroup>
                         </OrgchartGroup>
                     </OrgchartGroupVertical>

@@ -20,6 +20,7 @@ export type KendoOrgchartNodeProps = {
 
 const defaultProps = {
     buttonIcon: 'plus',
+    details: true,
 };
 
 export const OrgchartNode = (
@@ -29,7 +30,7 @@ export const OrgchartNode = (
     const {
         title,
         subtitle,
-        details,
+        details = defaultProps.details,
         color,
         lineBottom,
         lineTop,
