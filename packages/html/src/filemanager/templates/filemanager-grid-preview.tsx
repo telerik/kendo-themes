@@ -38,7 +38,7 @@ export const FileManagerGridPreview = (props) => (
             <Splitter className="k-filemanager-splitter">
                 <SplitterPane className="k-filemanager-navigation" collapsible scrollable flexBasis="25%">
                     <FileManagerTreeview>
-                        <TreeviewItem text="Folder" />
+                        <TreeviewItem top text="Folder" />
                     </FileManagerTreeview>
                 </SplitterPane>
 

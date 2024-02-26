@@ -127,15 +127,15 @@ export default () =>(
                                     <div className="k-column-list-wrapper">
                                         <div className="k-column-list">
                                             <Treeview>
-                                                <TreeviewItem showCheckbox hasChildren text="Account" />
+                                                <TreeviewItem top showCheckbox hasChildren text="Account" />
                                                 <TreeviewItem showCheckbox hasChildren text="Customer" />
                                                 <TreeviewItem showCheckbox expanded text="Date">
                                                     <TreeviewGroup>
-                                                        <TreeviewItem showCheckbox hasChildren text="Date.Calendar" />
-                                                        <TreeviewItem showCheckbox expanded text="Date.Calendar Quarter of Year">
+                                                        <TreeviewItem top showCheckbox hasChildren text="Date.Calendar" />
+                                                        <TreeviewItem bottom showCheckbox expanded text="Date.Calendar Quarter of Year">
                                                             <TreeviewGroup>
-                                                                <TreeviewItem showCheckbox hasChildren text="(All)" />
-                                                                <TreeviewItem showCheckbox hasChildren text="Calendar Quarter of Year" />
+                                                                <TreeviewItem top showCheckbox hasChildren text="(All)" />
+                                                                <TreeviewItem bottom showCheckbox hasChildren text="Calendar Quarter of Year" />
                                                             </TreeviewGroup>
                                                         </TreeviewItem>
                                                     </TreeviewGroup>
@@ -143,7 +143,7 @@ export default () =>(
                                                 <TreeviewItem showCheckbox hasChildren text="Delivery date" />
                                                 <TreeviewItem showCheckbox hasChildren text="Department" />
                                                 <TreeviewItem showCheckbox hasChildren text="Country" />
-                                                <TreeviewItem showCheckbox hasChildren text="Region" />
+                                                <TreeviewItem bottom showCheckbox hasChildren text="Region" />
                                             </Treeview>
                                         </div>
                                     </div>

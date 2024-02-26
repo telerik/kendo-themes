@@ -14,16 +14,16 @@ export const DropdownTreePopup = (props) => (
                     </span>
                 </div>
                 <Treeview>
-                    <TreeviewItem text="Root 1" />
-                    <TreeviewItem text="Root 2" expanded>
+                    <TreeviewItem top text="Root 1" />
+                    <TreeviewItem bottom text="Root 2" expanded>
                         <TreeviewGroup>
-                            <TreeviewItem text="Child 2.1" expanded>
+                            <TreeviewItem top text="Child 2.1" expanded>
                                 <TreeviewGroup>
-                                    <TreeviewItem text="Child 2.1.1" />
+                                    <TreeviewItem top text="Child 2.1.1" />
                                 </TreeviewGroup>
                             </TreeviewItem>
                             <TreeviewItem text="Child 2.2" />
-                            <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more ..." />
+                            <TreeviewItem bottom leafClassName="k-treeview-load-more-button" text="Load more ..." />
                         </TreeviewGroup>
                     </TreeviewItem>
                 </Treeview>
