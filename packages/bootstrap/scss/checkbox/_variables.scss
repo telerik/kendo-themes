@@ -101,7 +101,7 @@ $kendo-checkbox-indeterminate-border: $kendo-checkbox-checked-border !default;
 $kendo-checkbox-focus-border: if($kendo-enable-color-system, k-color( primary-emphasis ), k-try-tint( $kendo-color-primary, 50% )) !default;
 /// The box shadow of the focused CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-shadow: 0 0 0 .25rem if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 )) !default;
+$kendo-checkbox-focus-shadow: 0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 )) !default;
 /// The border color of the focused and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-focus-checked-border: $kendo-checkbox-checked-border !default;

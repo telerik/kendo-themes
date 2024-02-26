@@ -60,7 +60,7 @@ $kendo-orgchart-node-group-bg: if($kendo-enable-color-system, k-color( surface )
 $kendo-orgchart-node-group-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// The border color of the OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-orgchart-node-group-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// The border color of the focused OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
@@ -146,7 +146,7 @@ $kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;
 $kendo-orgchart-line-size: 1px !default;
 /// The fill color of the OrgChart connecting line.
 /// @group orgchart
-$kendo-orgchart-line-text: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-orgchart-line-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// The height of the OrgChart connecting line.
 /// @group orgchart
 $kendo-orgchart-line-v-height: 25px !default;

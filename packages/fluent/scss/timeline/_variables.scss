@@ -65,7 +65,7 @@ $kendo-timeline-track-end-calc: calc( #{ $kendo-timeline-track-arrow-width } - 2
 $kendo-timeline-track-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The border color of the Timeline track.
 /// @group timeline
-$kendo-timeline-track-border-color: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-timeline-track-border-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The block end inset of the Timeline arrow.
 /// @group timeline
@@ -138,7 +138,7 @@ $kendo-timeline-card-header-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-timeline-card-header-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// The border of the Timeline's Card body scroll.
 /// @group timeline
-$kendo-timeline-card-body-scroll-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-timeline-card-body-scroll-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// The background color of the Timeline's Card body scroll.
 /// @group timeline
 $kendo-timeline-card-body-scroll-bg: var( --kendo-component-bg, initial ) !default;

@@ -41,7 +41,7 @@ $kendo-upload-dropzone-text: if($kendo-enable-color-system, k-color( subtle ), k
 $kendo-upload-dropzone-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The border color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-upload-dropzone-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// The background color of the hovered Upload dropzone.
 /// @group upload
 $kendo-upload-dropzone-hover-bg: var( --kendo-hover-bg, inherit ) !default;

@@ -28,7 +28,7 @@ $kendo-expander-bg: if($kendo-enable-color-system, k-color( surface ), k-get-the
 $kendo-expander-border: var( --kendo-component-border, initial ) !default;
 /// The box shadow of the ExpansionPanel.
 /// @group expander
-$kendo-expander-shadow: inset 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-expander-shadow: inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The background color of the expanded ExpansionPanel.
 /// @group expander

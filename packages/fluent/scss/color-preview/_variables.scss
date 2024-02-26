@@ -14,10 +14,10 @@ $kendo-color-preview-bg: transparent !default;
 $kendo-color-preview-text: inherit !default;
 /// Border color of the color preview.
 /// @group color-preview
-$kendo-color-preview-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
+$kendo-color-preview-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 )) !default;
 /// Hover Border color of the color preview.
 /// @group color-preview
-$kendo-color-preview-hover-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
+$kendo-color-preview-hover-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 )) !default;
 
 /// Background color of the color preview when no color is selected.
 /// @group color-preview

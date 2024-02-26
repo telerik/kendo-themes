@@ -34,7 +34,7 @@ $kendo-drawer-content-padding-y: var( --kendo-padding-y, #{$kendo-padding-md-y} 
 $kendo-drawer-scrollbar-width: 7px !default;
 /// Scrollbar color of the drawer.
 /// @group drawer
-$kendo-drawer-scrollbar-color: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 )) !default;
+$kendo-drawer-scrollbar-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 )) !default;
 /// Scrollbar background of the drawer.
 /// @group drawer
 $kendo-drawer-scrollbar-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-40 )) !default;
@@ -43,7 +43,7 @@ $kendo-drawer-scrollbar-bg: if($kendo-enable-color-system, k-color( base-subtle 
 $kendo-drawer-scrollbar-radius: 20px !default;
 /// Scrollbar hover color of the drawer.
 /// @group drawer
-$kendo-drawer-scrollbar-hover-color: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .6 ), k-get-theme-color-var( neutral-110 )) !default;
+$kendo-drawer-scrollbar-hover-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), k-get-theme-color-var( neutral-110 )) !default;
 
 /// Horizontal padding of the drawer item.
 /// @group drawer

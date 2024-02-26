@@ -68,7 +68,7 @@ $kendo-switch-off-track-focus-border: if($kendo-enable-color-system, k-color( pr
 $kendo-switch-off-track-focus-gradient: null !default;
 /// The ring around the track when the focused Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-ring: .25rem solid if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 )) !default;
+$kendo-switch-off-track-focus-ring: .25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 )) !default;
 
 /// The background of the track when the disabled Switch is not checked.
 /// @group switch
@@ -150,7 +150,7 @@ $kendo-switch-on-track-focus-border: null !default;
 $kendo-switch-on-track-focus-gradient: null !default;
 /// The ring around the track when the focused Switch is checked.
 /// @group switch
-$kendo-switch-on-track-focus-ring: .25rem solid if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-switch-on-track-border, .25 )) !default;
+$kendo-switch-on-track-focus-ring: .25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-switch-on-track-border, .25 )) !default;
 
 /// The background of the track when the disabled Switch is checked.
 /// @group switch

@@ -26,7 +26,7 @@ $kendo-gantt-border: var( --kendo-component-border, inherit ) !default;
 
 /// Background color of the gantt non-working days.
 /// @group gantt
-$kendo-gantt-nonwork-bg: rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), $kendo-color-black), .04 ) !default;
+$kendo-gantt-nonwork-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( $kendo-color-black, .04 )) !default;
 /// Text color of the gantt non-working days.
 /// @group gantt
 $kendo-gantt-nonwork-text: inherit !default;

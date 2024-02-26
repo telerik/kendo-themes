@@ -107,7 +107,7 @@ $kendo-checkbox-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 $kendo-checkbox-focus-checked-border: null !default;
 /// The box shadow of the focused and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-checked-shadow: 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( primary, true ), .3 ), rgba( $kendo-color-primary, .3 )) !default;
+$kendo-checkbox-focus-checked-shadow: 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 30%, transparent), rgba( $kendo-color-primary, .3 )) !default;
 
 /// The background color of the disabled CheckBox.
 /// @group checkbox

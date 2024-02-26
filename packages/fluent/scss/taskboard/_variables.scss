@@ -202,7 +202,7 @@ $kendo-taskboard-drag-placeholder-border-width: 1px !default;
 $kendo-taskboard-drag-placeholder-border-radius: $kendo-card-border-radius !default;
 /// The background color of the TaskBoard Card placeholder.
 /// @group taskboard
-$kendo-taskboard-drag-placeholder-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .23 ), k-get-theme-color-var( neutral-50 )) !default;
+$kendo-taskboard-drag-placeholder-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 23%, transparent), k-get-theme-color-var( neutral-50 )) !default;
 /// The border color of the TaskBoard Card placeholder.
 /// @group taskboard
 $kendo-taskboard-drag-placeholder-border: var( --kendo-component-border, inherit ) !default;

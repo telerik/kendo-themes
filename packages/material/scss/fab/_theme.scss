@@ -104,8 +104,8 @@
         .k-fab-item-text,
         .k-fab-item-icon {
             @include box-shadow($kendo-fab-item-disabled-shadow);
-            background-color: if($kendo-enable-color-system, rgba( k-color( base, true ), .6 ), k-try-tint( $kendo-fab-item-bg, 8 ));
-            color: if($kendo-enable-color-system, rgba( k-color( on-base, true ), .6 ), k-try-tint( $kendo-fab-item-text, 8 ));
+            background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( base ) 60%, transparent), k-try-tint( $kendo-fab-item-bg, 8 ));
+            color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 60%, transparent), k-try-tint( $kendo-fab-item-text, 8 ));
         }
     }
 

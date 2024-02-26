@@ -323,7 +323,7 @@ $kendo-picker-solid-disabled-text: $kendo-disabled-text !default;
 
 /// The background color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-solid-disabled-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .09 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-picker-solid-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The border color of the disabled solid Picker components.
 /// @group input

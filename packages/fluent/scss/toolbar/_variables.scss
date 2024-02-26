@@ -57,7 +57,7 @@ $kendo-toolbar-border: var( --kendo-component-border, initial ) !default;
 
 /// The color of the separator border of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-separator-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
+$kendo-toolbar-separator-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 )) !default;
 
 /// The width of the input in the Toolbar.
 /// @group toolbar

@@ -239,7 +239,7 @@
             }
             &:focus,
             &.k-focus {
-                box-shadow: inset 0 0 0 2px rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), $kendo-color-black), .1 );
+                box-shadow: inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 10%, transparent), rgba( $kendo-color-black, .1 ));
             }
             &.k-active {
                 @include fill(

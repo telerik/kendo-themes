@@ -49,7 +49,7 @@ $kendo-color-gradient-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 
 /// The border color of the focused ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-focus-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .1 ), k-get-theme-color-var( neutral-20 )) !default;
+$kendo-color-gradient-focus-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 )) !default;
 /// The box shadow of the focused ColorGradient.
 /// @group cologradient
 $kendo-color-gradient-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
@@ -68,7 +68,7 @@ $kendo-color-gradient-canvas-spacing: math.div( $kendo-color-gradient-spacer, 2 
 $kendo-color-gradient-canvas-rectangle-height: 180px !default;
 /// The border color of the ColorGradient canvas hsv rectangle.
 /// @group cologradient
-$kendo-color-gradient-canvas-rectangle-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-color-gradient-canvas-rectangle-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group cologradient
 $kendo-color-gradient-canvas-draghandle-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
@@ -84,7 +84,7 @@ $kendo-color-gradient-slider-border-radius: var( --kendo-border-radius-md, #{$ke
 $kendo-color-gradient-slider-border-width: if($kendo-enable-color-system, 0, 1px) !default;
 /// The color of the border around the ColorGradient slider.
 /// @group cologradient
-$kendo-color-gradient-slider-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-color-gradient-slider-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The height of the ColorGradient vertical slider.
 /// @group cologradient

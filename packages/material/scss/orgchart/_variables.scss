@@ -65,7 +65,7 @@ $kendo-orgchart-node-group-border: $kendo-base-border !default;
 $kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
 /// The shadow of the focused OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-focus-shadow: 0 2px 4px -1px rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .2 ), 0 4px 5px 0 rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .14 ), 0 1px 10px 0 rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .12 ) !default;
+$kendo-orgchart-node-group-focus-shadow: 0 2px 4px -1px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $elevation, .2 )), 0 4px 5px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 14%, transparent), rgba( $elevation, .14 )), 0 1px 10px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 12%, transparent), rgba( $elevation, .12 )) !default;
 
 /// The font size of the OrgChart node group title.
 /// @group orgchart

@@ -12,7 +12,7 @@ $kendo-gantt-treelist-bg: null !default;
 $kendo-gantt-treelist-text: null !default;
 $kendo-gantt-treelist-border: null !default;
 
-$kendo-gantt-nonwork-bg: if($kendo-enable-color-system, rgba( k-color( on-base, true ), .03 ), rgba( k-contrast-color( $kendo-gantt-bg ), .025 )) !default;
+$kendo-gantt-nonwork-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 3%, transparent), rgba( k-contrast-color( $kendo-gantt-bg ), .025 )) !default;
 $kendo-gantt-nonwork-text: null !default;
 $kendo-gantt-nonwork-border: null !default;
 

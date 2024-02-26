@@ -122,7 +122,7 @@ $kendo-table-alt-row-border: null !default;
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .08 ), rgba( k-contrast-color( $kendo-table-bg ), .07 )) !default;
+$kendo-table-hover-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .07 )) !default;
 /// Text color of hovered rows in table.
 /// @group table
 $kendo-table-hover-text: null !default;
@@ -147,7 +147,7 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .12 ), rgba( k-contrast-color( $kendo-table-bg ), .04 )) !default;
+$kendo-table-selected-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 12%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .04 )) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: null !default;

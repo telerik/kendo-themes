@@ -67,10 +67,10 @@ $kendo-progressbar-vertical-status-offset: calc( (#{$kendo-progressbar-font-size
 
 /// The background color of the disabled ProgressBar.
 /// @group progressbar
-$kendo-progressbar-disabled-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .06 ), k-get-theme-color-var( neutral-20 )) !default;
+$kendo-progressbar-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), k-get-theme-color-var( neutral-20 )) !default;
 /// The text color of the disabled ProgressBar.
 /// @group progressbar
-$kendo-progressbar-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 )) !default;
+$kendo-progressbar-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 )) !default;
 /// The border color of the disabled ProgressBar.
 /// @group progressbar
 $kendo-progressbar-disabled-border: $kendo-progressbar-disabled-bg !default;
