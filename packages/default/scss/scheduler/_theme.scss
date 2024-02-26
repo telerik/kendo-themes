@@ -67,7 +67,7 @@
 
     .k-scheduler-layout td.k-selected,
     .k-scheduler-layout .k-scheduler-cell.k-selected {
-        background-color: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-selected-bg, .25));
+        background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25));
     }
 
     .k-scheduler-layout-flex {
@@ -184,7 +184,7 @@
 
         // Selected
         .k-scheduler-content tr.k-selected {
-            background-color: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-selected-bg, .25));
+            background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25));
         }
         .k-scheduler-content tr.k-selected .k-scheduler-datecolumn,
         .k-scheduler-content tr.k-selected .k-scheduler-groupcolumn {

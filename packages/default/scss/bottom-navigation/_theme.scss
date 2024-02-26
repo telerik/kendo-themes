@@ -4,13 +4,13 @@
     @each $name, $color in $kendo-theme-colors {
         .k-bottom-nav-solid-#{$name} {
             @include fill(
-                $color: if($kendo-enable-color-system, rgba( k-color( on-#{$name}, true ), .65 ), k-true-mix( $color, k-contrast-legacy( $color ), 35%)),
+                $color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-#{$name} ) 65%, transparent), k-true-mix( $color, k-contrast-legacy( $color ), 35%)),
                 $bg: $color
             );
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: if($kendo-enable-color-system, rgba( k-color( on-#{$name}, true ), .125 ), rgba(k-true-mix( $color, k-contrast-legacy( $color ), 35%), .2)));
+                @include fill( $bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-#{$name} ) 12.5%, transparent), rgba(k-true-mix( $color, k-contrast-legacy( $color ), 35%), .2)));
             }
 
             .k-bottom-nav-item.k-selected {
@@ -34,7 +34,7 @@
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .05), rgba($kendo-bottom-nav-flat-text, .05)) );
+                @include fill( $bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 5%, transparent), rgba($kendo-bottom-nav-flat-text, .05)) );
             }
 
             .k-bottom-nav-item.k-selected {

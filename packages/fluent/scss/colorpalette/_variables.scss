@@ -34,7 +34,7 @@ $kendo-color-palette-tile-focus-outline: if($kendo-enable-color-system, k-color(
 $kendo-color-palette-tile-focus-shadow: inset 0 0 0 2px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The outline color of the ColorPalette hovered tile.
 /// @group colorpalette
-$kendo-color-palette-tile-hover-outline: if($kendo-enable-color-system, rgba( k-color( border, true ), .1 ), k-get-theme-color-var( neutral-20 )) !default;
+$kendo-color-palette-tile-hover-outline: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 )) !default;
 /// The shadow of the ColorPalette hovered tile.
 /// @group colorpalette
 $kendo-color-palette-tile-hover-shadow: inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;

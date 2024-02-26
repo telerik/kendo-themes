@@ -94,10 +94,10 @@ $kendo-radio-focus-outline-offset: 2px !default;
 $kendo-radio-disabled-bg: $kendo-radio-bg !default;
 /// The color of the disabled RadioButton.
 /// @group radio
-$kendo-radio-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
+$kendo-radio-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 )) !default;
 /// The border color of the disabled RadioButton.
 /// @group radio
-$kendo-radio-disabled-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
+$kendo-radio-disabled-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 )) !default;
 
 /// The background color of the disabled and checked RadioButton.
 /// @group radio

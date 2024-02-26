@@ -110,7 +110,7 @@
         color-on-subtle: k-color( #{$color}-on-subtle ),
         on-color: k-color( on-#{$color} ),
         color-on-surface: k-color( #{$color}-on-surface ),
-        on-color-disabled: rgba( k-color( on-#{$color}, true ), .46)
+        on-color-disabled: color-mix(in srgb, k-color( on-#{$color} ) 46%, transparent)
     );
 
     @return if( k-map-has-key( $map, $name ), k-map-get( $map, $name ), $name );

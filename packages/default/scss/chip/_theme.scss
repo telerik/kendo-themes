@@ -36,7 +36,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( $name, true ), .16 ), rgba( $color, .16 )) );
+                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( $name ) 16%, transparent), rgba( $color, .16 )) );
                 }
 
                 &:hover,
@@ -90,7 +90,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( $name, true ), .16 ), if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 ))) );
+                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( $name ) 16%, transparent), if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 ))) );
                 }
 
                 &:hover,
@@ -116,7 +116,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( $name, true ), .16 ), if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 ))) );
+                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( $name ) 16%, transparent), if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 ))) );
                 }
 
                 &:hover,

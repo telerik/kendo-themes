@@ -119,7 +119,7 @@ $kendo-stepper-indicator-done-hover-border: $kendo-stepper-indicator-done-hover-
 
 /// The background color of the Stepper's disabled done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-disabled-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .22 ), k-get-theme-color-var( primary-30 )) !default;
+$kendo-stepper-indicator-done-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 22%, transparent), k-get-theme-color-var( primary-30 )) !default;
 /// The text color of the Stepper's disabled done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-disabled-text: var( --kendo-disabled-text, initial ) !default;

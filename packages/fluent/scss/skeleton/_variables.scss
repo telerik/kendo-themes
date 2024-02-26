@@ -17,7 +17,7 @@ $kendo-skeleton-circle-border-radius: 9999px !default;
 
 /// The background color of the Skeleton item.
 /// @group skeleton
-$kendo-skeleton-item-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .23 ), k-get-theme-color-var( neutral-50 )) !default;
+$kendo-skeleton-item-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 23%, transparent), k-get-theme-color-var( neutral-50 )) !default;
 /// The background color of the Skeleton wave animation.
 /// @group skeleton
 $kendo-skeleton-wave-bg: if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-20 )) !default;

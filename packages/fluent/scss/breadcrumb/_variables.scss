@@ -60,7 +60,7 @@ $kendo-breadcrumb-text: get-theme-color-var( neutral-130 ) !default;
 $kendo-breadcrumb-border: transparent !default;
 /// The box shadow of the focused breadcrumb
 /// @group breadcrumb
-$kendo-breadcrumb-focus-shadow: 0 0 0 1px if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-breadcrumb-focus-shadow: 0 0 0 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The horizontal padding of the Breadcrumb link
 /// @group breadcrumb

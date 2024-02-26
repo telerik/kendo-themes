@@ -258,7 +258,7 @@ $kendo-list-item-selected-hover-text: if($kendo-enable-color-system, k-color( on
 $kendo-list-item-disabled-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The text color of the disabled List items.
 /// @group list
-$kendo-list-item-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 )) !default;
+$kendo-list-item-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 )) !default;
 
 /// The background color of the List group items.
 /// @group list

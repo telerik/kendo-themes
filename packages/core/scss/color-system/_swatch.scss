@@ -177,15 +177,11 @@ $_default-colors: (
 $kendo-colors: $_default-colors !default;
 $kendo-colors: k-map-merge($_default-colors, $kendo-colors);
 
-@function k-color($key, $rgb: false) {
+@function k-color($key) {
     $_color: k-map-get($kendo-colors, $key);
 
     @if ($_color) {
-        @if ($rgb) {
-            @return var(--kendo-color-#{$key}-rgb, k-hex-to-rgb($_color));
-        } @else {
-            @return var(--kendo-color-#{$key}, $_color);
-        }
+        @return var(--kendo-color-#{$key}, $_color);
     } @else {
         @error "Color Variable \`#{$key}\` does not exists in the color collection.";
     }
@@ -196,7 +192,6 @@ $kendo-colors: k-map-merge($_default-colors, $kendo-colors);
         @each $key, $value in $kendo-colors {
             @if($value) {
                 --kendo-color-#{$key}: #{$value};
-                --kendo-color-#{$key}-rgb: #{k-hex-to-rgb($value)};
             }
         }
     }

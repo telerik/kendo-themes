@@ -113,7 +113,7 @@ $kendo-dock-manager-dock-preview-border-style: dashed !default;
 $kendo-dock-manager-dock-preview-border-radius: var( --kendo-border-radius-md, 0) !default;
 /// The background color of the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .2 ), color-mix(in srgb, k-get-theme-color-var( primary-100 ) 20%, transparent)) !default;
+$kendo-dock-manager-dock-preview-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 20%, transparent), color-mix(in srgb, k-get-theme-color-var( primary-100 ) 20%, transparent)) !default;
 /// The border color of the dropping area in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-dock-preview-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

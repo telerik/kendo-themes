@@ -401,7 +401,7 @@ $kendo-grid-sticky-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-grid-sticky-text: $kendo-grid-text !default;
 /// Border color of the grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .8 ), k-get-theme-color-var( neutral-90 )) !default;
+$kendo-grid-sticky-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 80%, transparent), k-get-theme-color-var( neutral-90 )) !default;
 /// Alt background color of the grid sticky cell.
 /// @group grid
 $kendo-grid-sticky-alt-bg: $kendo-grid-sticky-bg !default;
@@ -574,7 +574,7 @@ $kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo
 
 /// Background color of the grid row resize indicator
 /// @group grid
-$kendo-grid-row-resizer-hover-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 )) !default;
+$kendo-grid-row-resizer-hover-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 )) !default;
 /// Active background color of the grid row indicator
 /// @group grid
 $kendo-grid-row-resizer-active-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

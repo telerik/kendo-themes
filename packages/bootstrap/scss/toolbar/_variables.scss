@@ -82,7 +82,7 @@ $kendo-toolbar-input-width: 10em !default;
 
 /// The box shadow of the focused Toolbar item.
 /// @group toolbar
-$kendo-toolbar-item-shadow: 0 0 0 .25rem if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 )) !default;
+$kendo-toolbar-item-shadow: 0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 )) !default;
 
 /// Border width of the flat Toolbar.
 /// @group toolbar

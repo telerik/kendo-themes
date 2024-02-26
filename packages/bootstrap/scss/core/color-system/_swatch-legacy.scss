@@ -49,7 +49,7 @@
     $kendo-invalid-bg: null;
     $kendo-invalid-text: $kendo-color-error;
     $kendo-invalid-border: $kendo-color-error;
-    $kendo-invalid-shadow: 0 0 0 .25rem rgba( k-color( error, true ), .25 );
+    $kendo-invalid-shadow: 0 0 0 .25rem color-mix(in srgb, k-color( error ) 25%, transparent);
 
     $kendo-theme-colors: (
         "primary": $kendo-color-primary,

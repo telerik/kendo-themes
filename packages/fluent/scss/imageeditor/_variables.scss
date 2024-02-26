@@ -10,7 +10,7 @@ $kendo-image-editor-bg: var( --kendo-component-bg, inherit ) !default;
 $kendo-image-editor-text: var( --kendo-component-text, inherit ) !default;
 /// Border color of the imageeditor.
 /// @group imageeditor
-$kendo-image-editor-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-image-editor-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// Vertical margin of the imageeditor.
 /// @group imageeditor
 $kendo-image-editor-margin-y: 0 !default;
@@ -39,7 +39,7 @@ $kendo-image-editor-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// Imageeditor content background color.
 /// @group imageeditor
-$kendo-image-editor-content-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .23 ), k-get-theme-color-var( neutral-50 )) !default;
+$kendo-image-editor-content-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 23%, transparent), k-get-theme-color-var( neutral-50 )) !default;
 /// Imageeditor content text color.
 /// @group imageeditor
 $kendo-image-editor-content-text: inherit !default;

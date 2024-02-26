@@ -36,10 +36,10 @@ $kendo-timeline-track-arrow-height: 30px !default;
 
 /// The background color of the disabled Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-disabled-bg: if($kendo-enable-color-system, rgba( k-color( base-subtle, true ), .6 ), k-true-mix($kendo-button-bg, $kendo-body-bg, 65%)) !default;
+$kendo-timeline-track-arrow-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( base-subtle ) 60%, transparent), k-true-mix($kendo-button-bg, $kendo-body-bg, 65%)) !default;
 /// The text color of the disabled Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-base, true ), .6 ), k-true-mix($kendo-button-text, $kendo-body-bg, 65%)) !default;
+$kendo-timeline-track-arrow-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 60%, transparent), k-true-mix($kendo-button-text, $kendo-body-bg, 65%)) !default;
 /// The border color of the disabled Timeline track arrow.
 /// @group timeline
 $kendo-timeline-track-arrow-disabled-border: if($kendo-enable-color-system, k-color( border ), k-true-mix(#000000, $kendo-body-bg, 4.8%)) !default;

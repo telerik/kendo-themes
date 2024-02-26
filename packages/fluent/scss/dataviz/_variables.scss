@@ -127,10 +127,10 @@ $kendo-chart-inactive-bg: var( --kendo-disabled-bg, initial ) !default;
 
 /// The color of the chart component major grid lines.
 /// @group charts
-$kendo-chart-major-lines: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-chart-major-lines: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// The color of the chart component minor grid lines.
 /// @group charts
-$kendo-chart-minor-lines: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-chart-minor-lines: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The opacity of the chart area.
 /// @group charts

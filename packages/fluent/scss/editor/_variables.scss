@@ -47,7 +47,7 @@ $kendo-editor-selected-text: if($kendo-enable-color-system, k-color( app-surface
 $kendo-editor-selected-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The highlighted background color of the Editor.
 /// @group editor
-$kendo-editor-highlighted-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .55 ), k-get-theme-color-var( primary-60 )) !default;
+$kendo-editor-highlighted-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 55%, transparent), k-get-theme-color-var( primary-60 )) !default;
 
 /// The size of the Editor's resize handle.
 /// @group editor

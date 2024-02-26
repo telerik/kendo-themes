@@ -152,7 +152,7 @@ $kendo-chat-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-c
 $kendo-chat-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// The border color of the Chat.
 /// @group chat
-$kendo-chat-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-chat-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The background color of the Chat bubble.
 /// @group chat

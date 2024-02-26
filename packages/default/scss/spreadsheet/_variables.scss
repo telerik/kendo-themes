@@ -94,7 +94,7 @@ $kendo-spreadsheet-view-font-size: $kendo-spreadsheet-font-size !default;
 
 /// The background color of the Spreadsheet selection.
 /// @group spreadsheet
-$kendo-spreadsheet-selection-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-selected-bg, .25)) !default;
+$kendo-spreadsheet-selection-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25)) !default;
 /// The text color of the Spreadsheet selection.
 /// @group spreadsheet
 $kendo-spreadsheet-selection-text: null !default;
@@ -117,7 +117,7 @@ $kendo-spreadsheet-single-selection-border: $kendo-spreadsheet-bg !default;
 
 /// The background color of the Spreadsheet partial selection.
 /// @group spreadsheet
-$kendo-spreadsheet-partial-selection-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-selected-bg, .25)) !default;
+$kendo-spreadsheet-partial-selection-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25)) !default;
 
 /// The background color of the Spreadsheet active cell.
 /// @group spreadsheet
@@ -128,7 +128,7 @@ $kendo-spreadsheet-active-cell-shadow: inset 0 0 0 1px $kendo-selected-bg !defau
 
 /// The background color of the Spreadsheet auto fill.
 /// @group spreadsheet
-$kendo-spreadsheet-auto-fill-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-selected-bg, .25)) !default;
+$kendo-spreadsheet-auto-fill-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25)) !default;
 /// The text color of the Spreadsheet auto fill.
 /// @group spreadsheet
 $kendo-spreadsheet-auto-fill-text: null !default;
@@ -256,7 +256,7 @@ $kendo-spreadsheet-drawing-outline-style: solid !default;
 $kendo-spreadsheet-drawing-outline-width: 2px !default;
 /// The background color of the Spreadsheet drawing anchor.
 /// @group spreadsheet
-$kendo-spreadsheet-drawing-anchor-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-selected-bg, .25)) !default;
+$kendo-spreadsheet-drawing-anchor-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25)) !default;
 
 /// The vertical spacing of the Spreadsheet DropZone.
 /// @group spreadsheet
