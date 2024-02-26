@@ -1,5 +1,5 @@
 import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
+import { IconButtonGroup } from '../../button-group';
 
 
 const styles = `
@@ -8,7 +8,7 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
@@ -17,121 +17,16 @@ export default () =>(
             <span>medium</span>
             <span>large</span>
 
-            <span>null</span>
-            <span>
-                <ButtonGroup>
-                    <Button size="small" rounded={null} icon="bold"></Button>
-                    <Button size="small" rounded={null} icon="italic"></Button>
-                    <Button size="small" rounded={null} icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="medium" rounded={null} icon="bold"></Button>
-                    <Button size="medium" rounded={null} icon="italic"></Button>
-                    <Button size="medium" rounded={null} icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="large" rounded={null} icon="bold"></Button>
-                    <Button size="large" rounded={null} icon="italic"></Button>
-                    <Button size="large" rounded={null} icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-
-            <span>small</span>
-            <span>
-                <ButtonGroup>
-                    <Button size="small" rounded="small" icon="bold"></Button>
-                    <Button size="small" rounded="small" icon="italic"></Button>
-                    <Button size="small" rounded="small" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="medium" rounded="small" icon="bold"></Button>
-                    <Button size="medium" rounded="small" icon="italic"></Button>
-                    <Button size="medium" rounded="small" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="large" rounded="small" icon="bold"></Button>
-                    <Button size="large" rounded="small" icon="italic"></Button>
-                    <Button size="large" rounded="small" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-
-            <span>medium</span>
-            <span>
-                <ButtonGroup>
-                    <Button size="small" rounded="medium" icon="bold"></Button>
-                    <Button size="small" rounded="medium" icon="italic"></Button>
-                    <Button size="small" rounded="medium" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="medium" rounded="medium" icon="bold"></Button>
-                    <Button size="medium" rounded="medium" icon="italic"></Button>
-                    <Button size="medium" rounded="medium" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="large" rounded="medium" icon="bold"></Button>
-                    <Button size="large" rounded="medium" icon="italic"></Button>
-                    <Button size="large" rounded="medium" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-
-            <span>large</span>
-            <span>
-                <ButtonGroup>
-                    <Button size="small" rounded="large" icon="bold"></Button>
-                    <Button size="small" rounded="large" icon="italic"></Button>
-                    <Button size="small" rounded="large" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="medium" rounded="large" icon="bold"></Button>
-                    <Button size="medium" rounded="large" icon="italic"></Button>
-                    <Button size="medium" rounded="large" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="large" rounded="large" icon="bold"></Button>
-                    <Button size="large" rounded="large" icon="italic"></Button>
-                    <Button size="large" rounded="large" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-
-            <span>full</span>
-            <span>
-                <ButtonGroup>
-                    <Button size="small" rounded="full" icon="bold"></Button>
-                    <Button size="small" rounded="full" icon="italic"></Button>
-                    <Button size="small" rounded="full" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="medium" rounded="full" icon="bold"></Button>
-                    <Button size="medium" rounded="full" icon="italic"></Button>
-                    <Button size="medium" rounded="full" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
-            <span>
-                <ButtonGroup>
-                    <Button size="large" rounded="full" icon="bold"></Button>
-                    <Button size="large" rounded="full" icon="italic"></Button>
-                    <Button size="large" rounded="full" icon="underline"></Button>
-                </ButtonGroup>
-            </span>
+            {[ "null", ...Button.options.rounded ].map((rounded: any) => (
+                <>
+                    <span>{rounded}</span>
+                    {Button.options.size.map((size) => (
+                        <span>
+                            <IconButtonGroup size={size} rounded={rounded}/>
+                        </span>
+                    ))}
+                </>
+            ))}
         </div>
-
     </>
 );
