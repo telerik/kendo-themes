@@ -55,9 +55,9 @@ export default () =>(
                                     <Searchbox placeholder="Search..." />
                                     <div className="k-spreadsheet-value-treeview-wrapper">
                                         <Treeview>
-                                            <TreeviewItem text="All" showCheckbox expanded>
+                                            <TreeviewItem top text="All" showCheckbox expanded>
                                                 <TreeviewGroup>
-                                                    <TreeviewItem text="$14.87" showCheckbox checked />
+                                                    <TreeviewItem top text="$14.87" showCheckbox checked />
                                                     <TreeviewItem text="$21.10" showCheckbox />
                                                     <TreeviewItem text="$16.79" showCheckbox />
                                                     <TreeviewItem text="$11.39" showCheckbox />
@@ -65,7 +65,7 @@ export default () =>(
                                                     <TreeviewItem text="$13.19" showCheckbox />
                                                     <TreeviewItem text="$41.94" showCheckbox />
                                                     <TreeviewItem text="$23.95" showCheckbox />
-                                                    <TreeviewItem text="$16.16" showCheckbox />
+                                                    <TreeviewItem bottom text="$16.16" showCheckbox />
                                                 </TreeviewGroup>
                                             </TreeviewItem>
                                         </Treeview>
