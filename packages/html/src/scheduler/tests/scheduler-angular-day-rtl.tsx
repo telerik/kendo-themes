@@ -11,9 +11,9 @@ export default () =>(
                 <Toolbar className="k-scheduler-toolbar">
                     <div className="k-toolbar-group">
                         <ButtonGroup className="k-scheduler-navigation">
-                            <Button>Today</Button>
+                            <Button className="k-group-start">Today</Button>
                             <Button icon="caret-alt-right"></Button>
-                            <Button icon="caret-alt-left"></Button>
+                            <Button className="k-group-end" icon="caret-alt-left"></Button>
                         </ButtonGroup>
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                             Monday, June 24, 2013
@@ -21,11 +21,11 @@ export default () =>(
                     </div>
                     <span className="k-spacer"></span>
                     <ButtonGroup className="k-scheduler-views">
-                        <Button selected>Day</Button>
+                        <Button className="k-group-start" selected>Day</Button>
                         <Button>Week</Button>
                         <Button>Month</Button>
                         <Button>Timeline</Button>
-                        <Button>Agenda</Button>
+                        <Button className="k-group-start">Agenda</Button>
                     </ButtonGroup>
                 </Toolbar>
                 <div style={{ display: "block" }}>

@@ -24,15 +24,15 @@ const defaultToolbarItems = ([
     <DropdownList value="Font Size" fillMode="flat" />,
     <ToolbarSeparator></ToolbarSeparator>,
     <ButtonGroup fillMode="flat">
-        <Button icon="font-grow" fillMode="flat"></Button>
-        <Button icon="font-shrink" fillMode="flat"></Button>
+        <Button className="k-group-start" icon="font-grow" fillMode="flat"></Button>
+        <Button className="k-group-end" icon="font-shrink" fillMode="flat"></Button>
     </ButtonGroup>,
     <ToolbarSeparator></ToolbarSeparator>,
     <ButtonGroup fillMode="flat">
-        <Button icon="bold" fillMode="flat"></Button>
+        <Button className="k-group-start" icon="bold" fillMode="flat"></Button>
         <Button icon="italic" fillMode="flat"></Button>
         <Button icon="underline" fillMode="flat"></Button>
-        <Button icon="strikethrough" fillMode="flat"></Button>
+        <Button className="k-group-end" icon="strikethrough" fillMode="flat"></Button>
     </ButtonGroup>,
     <ToolbarItem>
         <ColorPicker value="red" valueIconName="foreground-color" fillMode="flat" />

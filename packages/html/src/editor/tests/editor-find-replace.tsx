@@ -134,10 +134,10 @@ export default () =>(
                 <EditorNormal style={{ height: "150px" }}>
                     <EditorToolbar resizable>
                         <ButtonGroup>
-                            <Button icon="bold"></Button>
+                            <Button className="k-group-start" icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
-                            <Button icon="binoculars" selected></Button>
+                            <Button className="k-group-end" icon="binoculars" selected></Button>
                         </ButtonGroup>
                     </EditorToolbar>
                     <EditorContent>

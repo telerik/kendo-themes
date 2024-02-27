@@ -18,9 +18,9 @@ export default () =>(
                             <Button size={size} className="k-toggle-button">Toggle</Button>
                             <ToolbarSeparator></ToolbarSeparator>
                             <ButtonGroup>
-                                <Button size={size} icon="align-left">Left</Button>
+                                <Button className="k-group-start" size={size} icon="align-left">Left</Button>
                                 <Button size={size} icon="align-center">Center</Button>
-                                <Button size={size} icon="align-right">Right</Button>
+                                <Button className="k-group-end" size={size} icon="align-right">Right</Button>
                             </ButtonGroup>
                             <ToolbarSeparator></ToolbarSeparator>
                             <Button size={size} themeColor="primary">Primary</Button>

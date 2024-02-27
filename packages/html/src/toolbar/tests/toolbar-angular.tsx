@@ -24,10 +24,10 @@ export default () =>(
                         <ToolbarSeparator></ToolbarSeparator>
                     </div>
                     <ButtonGroup>
-                        <Button icon="align-left"></Button>
+                        <Button className="k-group-start" icon="align-left"></Button>
                         <Button icon="align-center"></Button>
                         <Button icon="align-right"></Button>
-                        <Button icon="align-justify"></Button>
+                        <Button className="k-group-end" icon="align-justify"></Button>
                     </ButtonGroup>
                 </ToolbarAngularNormal>
             </section>
@@ -42,10 +42,10 @@ export default () =>(
                     <SplitButton>Split button</SplitButton>
                     <MenuButton text="Menu button"></MenuButton>
                     <ButtonGroup>
-                        <Button icon="align-left">Left</Button>
+                        <Button className="k-group-start" icon="align-left">Left</Button>
                         <Button icon="align-center">Center</Button>
                         <Button icon="align-right">Right</Button>
-                        <Button icon="align-justify">Justify</Button>
+                        <Button className="k-group-end" icon="align-justify">Justify</Button>
                     </ButtonGroup>
                 </ToolbarAngularNormal>
             </section>
@@ -55,10 +55,10 @@ export default () =>(
                     <SplitButton>Split button</SplitButton>
                     <MenuButton text="Menu button"></MenuButton>
                     <ButtonGroup>
-                        <Button icon="align-left">Left</Button>
+                        <Button className="k-group-start" icon="align-left">Left</Button>
                         <Button icon="align-center">Center</Button>
                         <Button icon="align-right">Right</Button>
-                        <Button icon="align-justify">Justify</Button>
+                        <Button className="k-group-end" icon="align-justify">Justify</Button>
                     </ButtonGroup>
                 </ToolbarAngularNormal>
             </section>
