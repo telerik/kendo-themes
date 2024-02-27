@@ -15,9 +15,9 @@ export default () =>(
                             <div id="scheduler" className="k-widget k-scheduler k-scheduler-mobile">
                                 <Toolbar className="k-scheduler-toolbar">
                                     <ButtonGroup className="k-scheduler-tools">
-                                        <Button className="k-pdf" icon="file-pdf"></Button>
+                                        <Button className="k-pdf k-group-start" icon="file-pdf"></Button>
                                         <Button className="k-nav-calendar" icon="calendar"></Button>
-                                        <Button className="k-create-event" icon="plus"></Button>
+                                        <Button className="k-create-event k-group-end" icon="plus"></Button>
                                     </ButtonGroup>
                                     <span className="k-spacer"></span>
                                     <select className="k-views-dropdown k-picker k-picker-solid k-dropdown-list k-dropdown k-rounded-md">

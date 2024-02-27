@@ -9,19 +9,19 @@ export default () =>(
             <div id="scheduler" className="k-widget k-scheduler">
                 <Toolbar className="k-scheduler-toolbar">
                     <ButtonGroup className="k-scheduler-navigation">
-                        <Button>Today</Button>
+                        <Button className="k-group-start">Today</Button>
                         <Button icon="caret-alt-left"></Button>
-                        <Button icon="caret-alt-right"></Button>
+                        <Button className="k-group-end" icon="caret-alt-right"></Button>
                     </ButtonGroup>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         2021
                     </Button>
                     <span className="k-spacer"></span>
                     <ButtonGroup className="k-scheduler-views">
-                        <Button>Day</Button>
+                        <Button className="k-group-start">Day</Button>
                         <Button>Week</Button>
                         <Button>Month</Button>
-                        <Button selected>Year</Button>
+                        <Button className="k-group-end" selected>Year</Button>
                     </ButtonGroup>
                 </Toolbar>
 

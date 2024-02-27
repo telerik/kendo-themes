@@ -23,9 +23,9 @@ export default () =>(
                     <span className="k-gantt-views">
                         <div className="k-gantt-views-wrapper">
                             <ButtonGroup className="k-gantt-views">
-                                <Button>Day</Button>
+                                <Button className="k-group-start">Day</Button>
                                 <Button selected>Week</Button>
-                                <Button>Month</Button>
+                                <Button className="k-group-end">Month</Button>
                             </ButtonGroup>
                             <select className="k-picker k-picker-solid k-dropdown-list k-dropdown k-views-dropdown k-rounded-md">
                                 <option value="day">Day</option>
