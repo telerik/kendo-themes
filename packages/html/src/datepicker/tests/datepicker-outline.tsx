@@ -40,13 +40,6 @@ export default () =>(
             <div dir="rtl">
                 <DatePickerNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
-
-            <div>
-                <DatePickerNormal value="valid focus" fillMode="outline" valid focus />
-            </div>
-            <div dir="rtl">
-                <DatePickerNormal value="valid focus" fillMode="outline" valid focus />
-            </div>
         </div>
     </>
 );

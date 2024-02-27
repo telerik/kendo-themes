@@ -38,13 +38,6 @@ export default () =>(
             <div dir="rtl">
                 <SearchboxNormal fillMode="outline" value="invalid focus" invalid focus />
             </div>
-
-            <div>
-                <SearchboxNormal fillMode="outline" value="valid focus" valid focus />
-            </div>
-            <div dir="rtl">
-                <SearchboxNormal fillMode="outline" value="valid focus" valid focus />
-            </div>
         </div>
     </>
 );

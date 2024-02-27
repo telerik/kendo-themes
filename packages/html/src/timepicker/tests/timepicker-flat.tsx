@@ -40,13 +40,6 @@ export default () =>(
             <div dir="rtl">
                 <TimePickerNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
-
-            <div>
-                <TimePickerNormal value="valid focus" fillMode="flat" valid focus />
-            </div>
-            <div dir="rtl">
-                <TimePickerNormal value="valid focus" fillMode="flat" valid focus />
-            </div>
         </div>
     </>
 );
