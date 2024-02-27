@@ -1,3 +1,5 @@
+@import "@progress/kendo-theme-core/scss/index.import.scss";
+
 /// This is equivalent to `font-weight: 100;`.
 /// @example font-weight: 100;
 /// @name .k-font-thin
@@ -55,11 +57,10 @@
 @mixin kendo-utils--typography--font-weight() {
 
     // Font weight utility classes
-    $kendo-utils-font-weight: k-map-get( $kendo-utils, "font-weight" ) !default;
-    @include generate-utils( font, font-weight, $kendo-utils-font-weight );
+    @include generate-utils( font, font-weight, $kendo-font-weights, $css-var: "font" );
 
 
     // Legacy aliases
-    @include generate-utils( font-weight, font-weight, $kendo-utils-font-weight );
+    @include generate-utils( font-weight, font-weight, $kendo-font-weights, $css-var: "font-weight" );
 
 }

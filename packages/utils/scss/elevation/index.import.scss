@@ -1,5 +1,5 @@
 @import "@progress/kendo-theme-core/scss/elevation/index.import.scss";
 
 @mixin kendo-utils--elevation {
-    @include generate-utils(elevation, box-shadow, $kendo-elevation, $css-var: 'elevation');
+    @include generate-utils(elevation, box-shadow, $kendo-elevation, $css-var: "elevation");
 }
