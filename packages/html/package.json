@@ -18,6 +18,7 @@
   },
   "files": [
     "dist/**/*.js",
+    "dist/**/*.mjs",
     "dist/**/*.d.ts",
     "dist/**/*.js.map",
     "src/**/**.ts",
