@@ -1,0 +1,8 @@
+@import "@progress/kendo-theme-core/scss/index.import.scss";
+
+@mixin kendo-utils--typography--line-height() {
+
+    // Line height utility classes
+    @include generate-utils( line-height, line-height, $kendo-line-heights, $css-var: "line-height" );
+
+}

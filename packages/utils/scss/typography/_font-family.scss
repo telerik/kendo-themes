@@ -1,0 +1,8 @@
+@import "@progress/kendo-theme-core/scss/index.import.scss";
+
+@mixin kendo-utils--typography--font-family() {
+
+    // Font family utility classes
+    @include generate-utils( font-family, font-family, $kendo-font-families, $css-var: "font-family" );
+
+}
