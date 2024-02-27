@@ -74,17 +74,17 @@ export default () =>(
                     </Layout>
                     <Layout orientation="horizontal">
                         <div className="k-flex k-text-left">
-                            <Typography type="display-4">SOF</Typography>
+                            <Typography type="h3">SOF</Typography>
                             <div>
                                 6 Dec 2017<br />
                                 10:30
                             </div>
                         </div>
-                        <Typography type="display-4" className="k-flex k-text-center">
+                        <Typography type="h2" className="k-flex k-text-center">
                             ✈️
                         </Typography>
                         <div className="k-flex k-text-right">
-                            <Typography type="display-4">LON</Typography>
+                            <Typography type="h3">LON</Typography>
                             <div>
                                 6 Dec 2017<br />
                                 12:30
@@ -94,17 +94,17 @@ export default () =>(
                     <hr className="k-hr" />
                     <Layout orientation="horizontal">
                         <div className="k-flex k-text-left">
-                            <Typography type="display-4">LON</Typography>
+                            <Typography type="h3">LON</Typography>
                             <div>
                                 12 Dec 2017<br />
                                 18:30
                             </div>
                         </div>
-                        <Typography type="display-4" className="k-flex k-text-center">
+                        <Typography type="h2" className="k-flex k-text-center">
                             ✈️
                         </Typography>
                         <div className="k-flex k-text-right">
-                            <Typography type="display-4">SOF</Typography>
+                            <Typography type="h3">SOF</Typography>
                             <div>
                                 12 Dec 2017<br />
                                 22:30
