@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1-dev.7](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.6...v7.2.1-dev.7) (2024-02-28)
+
+
+### Bug Fixes
+
+* **html:** include mjs files in npm package ([eeef577](https://github.com/telerik/kendo-themes/commit/eeef57736daadf73bf12f99bb8a6d1fed40ba4f4))
+* remove k-valid state styles ([571a863](https://github.com/telerik/kendo-themes/commit/571a86394b5615b0a99242917febd761a02d952f))
+
+
+
+
+
 ## [7.2.1-dev.6](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.5...v7.2.1-dev.6) (2024-02-26)
 
 
