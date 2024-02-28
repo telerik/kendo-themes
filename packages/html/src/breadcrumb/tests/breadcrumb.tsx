@@ -1,152 +1,67 @@
-import { BreadcrumbAdaptive, BreadcrumbContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbNormal, BreadcrumbRoot, BreadcrumbRootAdaptive, BreadcrumbRootItemContainer } from '..';
+import { BreadcrumbCollapsingAuto, BreadcrumbCollapsingNone, BreadcrumbCollapsingWrap, BreadcrumbContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink } from '..';
 import { Icon } from '../../icon';
 
 const styles = `
     #test-area {
-        grid-template-columns: 80px repeat(2, 1fr);
+        grid-template-columns: 80px 500px;
     }
 `;
 
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <span></span>
-            <span>Collapsing with root item</span>
-            <span>Collapsing without root item</span>
+            <span>Collapsing</span>
 
             <span>none</span>
             <div>
-                <BreadcrumbRoot collapsing="none" size="large" />
-            </div>
-
-            <div>
-                <BreadcrumbNormal collapsing="none" size="large" />
+                <BreadcrumbCollapsingNone size="large" />
             </div>
 
 
             <span>auto</span>
             <div>
-                <BreadcrumbRootAdaptive size="large" />
+                <BreadcrumbCollapsingAuto size="large" />
             </div>
 
+            <span>auto - overflow</span>
             <div>
-                <BreadcrumbAdaptive size="large" />
-            </div>
-
-            <span>wrap</span>
-            <div>
-                <BreadcrumbRoot collapsing="wrap" size="large">
-                    <BreadcrumbRootItemContainer>
+                <BreadcrumbCollapsingAuto size="large">
+                    <BreadcrumbContainer collapsing="auto">
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icontext>
                                 <Icon icon="home" />
-                                <BreadcrumbItemText text="Start item"></BreadcrumbItemText>
+                                <BreadcrumbItemText text="Home"></BreadcrumbItemText>
                             </BreadcrumbLink>
+                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" icon="chevron-right" size="xsmall" />
                         </BreadcrumbItem>
-                    </BreadcrumbRootItemContainer>
-                    <BreadcrumbContainer collapsing="wrap">
+                        <BreadcrumbItem></BreadcrumbItem>
+                        <BreadcrumbItem></BreadcrumbItem>
                         <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 01"></BreadcrumbItemText>
-                            </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
                             <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 02"></BreadcrumbItemText>
+                                <BreadcrumbItemText text="Fourth item "></BreadcrumbItemText>
                             </BreadcrumbLink>
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
                             <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 03"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 04"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 05"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem last>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 06"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem last>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 07"></BreadcrumbItemText>
+                                <BreadcrumbItemText text="Fifth item "></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbContainer>
-                </BreadcrumbRoot>
-            </div>
-            <div>
-                <BreadcrumbNormal collapsing="wrap" size="large">
-                    <BreadcrumbContainer collapsing="wrap">
-                        <BreadcrumbItem>
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 01"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 02"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 03"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem last>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 04"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 05"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 06"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 07"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbItem last>
-                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
-                            <BreadcrumbLink>
-                                <BreadcrumbItemText text="Item 08"></BreadcrumbItemText>
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                    </BreadcrumbContainer>
-                </BreadcrumbNormal>
+                </BreadcrumbCollapsingAuto>
             </div>
 
+            <span>wrap - overflow</span>
+            <div>
+                <BreadcrumbCollapsingWrap size="large" />
+            </div>
         </div>
     </>
 );

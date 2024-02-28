@@ -1,5 +1,5 @@
 import { Icon } from '../../icon';
-import { Breadcrumb, BreadcrumbContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbRoot, BreadcrumbRootItemContainer } from '..';
+import { Breadcrumb, BreadcrumbCollapsingWrap, BreadcrumbContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbRootItemContainer } from '..';
 
 export default () =>(
     <>
@@ -10,7 +10,7 @@ export default () =>(
             <div>large</div>
 
             {Breadcrumb.options.size.map( (size) => (
-                <BreadcrumbRoot collapsing="wrap" size={size}>
+                <BreadcrumbCollapsingWrap size={size}>
                     <BreadcrumbRootItemContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icontext focus>
@@ -33,7 +33,7 @@ export default () =>(
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbContainer>
-                </BreadcrumbRoot>
+                </BreadcrumbCollapsingWrap>
             ))}
         </div>
     </>
