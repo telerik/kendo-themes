@@ -9,11 +9,11 @@ const style = `
         height: 300px;
     }
 
-    .k-slider {
+    .slider-normal {
         --kendo-slider-start: 0;
         --kendo-slider-end: 60;
     }
-    .k-range-slider {
+    .slider-range {
         --kendo-slider-start: 20;
         --kendo-slider-end: 60;
     }
@@ -31,8 +31,8 @@ export default () =>(
 
 
             <section>
-                <SliderNormal>
-                    <SliderTick label large text="0"/>
+                <SliderNormal className="slider-normal">
+                    <SliderTick className="k-first" label large text="0"/>
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
@@ -52,11 +52,11 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
-                    <SliderTick label large text="100"/>
+                    <SliderTick className="k-last" label large text="100"/>
                 </SliderNormal>
             </section>
             <section>
-                <SliderRange>
+                <SliderRange className="slider-range">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -81,7 +81,7 @@ export default () =>(
                 </SliderRange>
             </section>
             <section dir="rtl">
-                <SliderNormal dir="rtl">
+                <SliderNormal className="slider-normal" dir="rtl">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -106,7 +106,7 @@ export default () =>(
                 </SliderNormal>
             </section>
             <section dir="rtl">
-                <SliderRange dir="rtl">
+                <SliderRange className="slider-range" dir="rtl">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -133,7 +133,7 @@ export default () =>(
 
 
             <section>
-                <SliderVertical>
+                <SliderVertical className="slider-normal">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -158,7 +158,7 @@ export default () =>(
                 </SliderVertical>
             </section>
             <section>
-                <SliderRangeVertical>
+                <SliderRangeVertical className="slider-range">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -183,7 +183,7 @@ export default () =>(
                 </SliderRangeVertical>
             </section>
             <section dir="rtl">
-                <SliderVertical dir="rtl">
+                <SliderVertical className="slider-normal" dir="rtl">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -208,7 +208,7 @@ export default () =>(
                 </SliderVertical>
             </section>
             <section dir="rtl">
-                <SliderRangeVertical dir="rtl">
+                <SliderRangeVertical dir="rtl" className="slider-range">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />

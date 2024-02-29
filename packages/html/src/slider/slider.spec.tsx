@@ -80,7 +80,6 @@ export const Slider = (
                 {
                     [`k-slider-${orientation}`]: orientation,
                     'k-colorgradient-slider': type === 'gradient',
-                    'k-range-slider': type === 'range'
                 }
             )} dir={dir} >
             { showButtons && <Button className="k-button-decrease" rounded="full" icon={iconDecrease} /> }
