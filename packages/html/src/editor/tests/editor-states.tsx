@@ -1,6 +1,4 @@
-import { Editor, EditorContent, EditorToolbar, EditorNormal } from '../../editor';
-import { Button } from '../../button';
-import { ButtonGroup } from '../../button-group';
+import { Editor, EditorNormal } from '../../editor';
 
 
 const styles = `
@@ -25,16 +23,7 @@ export default () =>(
                 <section>
                     <div>{state}</div>
                     <EditorNormal { ...{ [state]: true }} >
-                        <EditorToolbar resizable>
-                            <ButtonGroup>
-                                <Button className="k-group-start" icon="undo"></Button>
-                                <Button className="k-group-end" icon="redo"></Button>
-                            </ButtonGroup>
-                            <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
-                        </EditorToolbar>
-                        <EditorContent>
-                            <p className="ProseMirror">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia obcaecati dignissimos beatae ipsam voluptatem pariatur consectetur culpa asperiores veniam?</p>
-                        </EditorContent>
+                        <p className="ProseMirror">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia obcaecati dignissimos beatae ipsam voluptatem pariatur consectetur culpa asperiores veniam?</p>
                     </EditorNormal>
                 </section>
             ))}

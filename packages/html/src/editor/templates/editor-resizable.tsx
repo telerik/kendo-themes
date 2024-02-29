@@ -2,8 +2,9 @@ import { Editor } from '..';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 
-export const EditorNormal = (props) => (
+export const EditorResizable = (props) => (
     <Editor
+        resizable
         toolbarItems={[
             <ButtonGroup>
                 <Button className="k-group-start" disabled icon="undo"></Button>

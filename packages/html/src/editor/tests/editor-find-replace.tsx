@@ -2,7 +2,7 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroup } from '../../checkbox';
 import { Textbox } from '../../textbox';
-import { EditorNormal, EditorContent, EditorToolbar } from '../../editor';
+import { EditorNormal } from '../../editor';
 import { WindowNormal } from '../../window';
 import { ButtonGroup } from '../../button-group';
 import { FormField, FormNormal } from '../../form';
@@ -131,18 +131,17 @@ export default () =>(
             <span></span>
 
             <section>
-                <EditorNormal style={{ height: "150px" }}>
-                    <EditorToolbar resizable>
+                <EditorNormal style={{ height: "150px" }}
+                    toolbarItems={[
                         <ButtonGroup>
                             <Button className="k-group-start" icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                             <Button className="k-group-end" icon="binoculars" selected></Button>
                         </ButtonGroup>
-                    </EditorToolbar>
-                    <EditorContent>
-                        <div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div>
-                    </EditorContent>
+                    ]}
+                >
+                    <div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div>
                 </EditorNormal>
             </section>
         </div>
