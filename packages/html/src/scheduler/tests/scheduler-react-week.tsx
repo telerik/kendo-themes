@@ -18,20 +18,20 @@ export default () =>(
             <div className="k-widget k-scheduler k-scheduler-flex" style={{ height: "900px" }}>
                 <Toolbar className="k-scheduler-toolbar">
                     <ButtonGroup className="k-scheduler-navigation">
-                        <Button>Today</Button>
+                        <Button className="k-group-start">Today</Button>
                         <Button icon="caret-alt-left"></Button>
-                        <Button icon="caret-alt-right"></Button>
+                        <Button className="k-group-end" icon="caret-alt-right"></Button>
                     </ButtonGroup>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         Sunday, June 21, 2020 - Saturday, June 27, 2020
                     </Button>
                     <span className="k-spacer"></span>
                     <ButtonGroup className="k-scheduler-views">
-                        <Button>Day</Button>
+                        <Button className="k-group-start">Day</Button>
                         <Button selected>Week</Button>
                         <Button>Month</Button>
                         <Button>Timeline</Button>
-                        <Button>Agenda</Button>
+                        <Button className="k-group-end">Agenda</Button>
                     </ButtonGroup>
                 </Toolbar>
                 <div className="k-scheduler-layout k-scheduler-layout-flex k-scheduler-day-view">

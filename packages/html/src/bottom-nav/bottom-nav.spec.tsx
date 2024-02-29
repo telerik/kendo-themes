@@ -31,6 +31,7 @@ export type KendoBottomNavProps = KendoBottomNavOptions & {
     flow?: string;
     border?: boolean;
     dir?: 'ltr' | 'rtl';
+    positionMode?: 'fixed' | 'sticky' | 'absolute';
 };
 
 export type KendoBottomNavState = { [K in (typeof states)[number]]?: boolean };
@@ -53,6 +54,7 @@ export const BottomNav = (
         themeColor = defaultProps.themeColor,
         flow = defaultProps.flow,
         border = defaultProps.border,
+        positionMode,
         dir
     } = props;
 
@@ -67,6 +69,7 @@ export const BottomNav = (
             {
                 [`k-bottom-nav-item-flow-${flow}`]: flow,
                 'k-bottom-nav-border': border,
+                [`k-pos-${positionMode}`]: positionMode,
             },
             stateClassNames(BOTTOM_NAV_CLASSNAME, {
                 disabled,

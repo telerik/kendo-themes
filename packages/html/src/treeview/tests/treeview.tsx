@@ -11,26 +11,26 @@ export default () =>(
 
             <section>
                 <TreeviewNormal>
-                    <TreeviewItem text="Normal" />
+                    <TreeviewItem top text="Normal" />
                     <TreeviewItem text="Hover" hover />
                     <TreeviewItem text="Focus" focus/>
                     <TreeviewItem text="Selected" selected/>
                     <TreeviewItem text="Selected focus" selected focus/>
                     <TreeviewItem text="Disabled" disabled/>
                     <TreeviewItem text="Disabled focus" disabled focus/>
-                    <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..."/>
+                    <TreeviewItem bottom leafClassName="k-treeview-load-more-button" text="Load more..."/>
                 </TreeviewNormal>
             </section>
             <section>
                 <TreeviewNormal dir="rtl">
-                    <TreeviewItem text="Normal" />
+                    <TreeviewItem top text="Normal" />
                     <TreeviewItem text="Hover" hover />
                     <TreeviewItem text="Focus" focus/>
                     <TreeviewItem text="Selected" selected/>
                     <TreeviewItem text="Selected focus" selected focus/>
                     <TreeviewItem text="Disabled" disabled/>
                     <TreeviewItem text="Disabled focus" disabled focus/>
-                    <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..." hover />
+                    <TreeviewItem bottom leafClassName="k-treeview-load-more-button" text="Load more..." hover />
                 </TreeviewNormal>
             </section>
             <section>

@@ -56,11 +56,11 @@ export default () =>(
                         <div className="k-recurrence-editor">
                             <FormField label="Repeat" editor={
                                 <ButtonGroup stretched className="k-scheduler-recurrence-repeat">
-                                    <Button>Never</Button>
+                                    <Button className="k-group-start">Never</Button>
                                     <Button selected >Daily</Button>
                                     <Button>Weekly</Button>
                                     <Button>Monthly</Button>
-                                    <Button>Yearly</Button>
+                                    <Button className="k-group-end">Yearly</Button>
                                 </ButtonGroup>
                             }/>
                             <div className="k-recur-view">

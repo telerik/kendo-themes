@@ -13,8 +13,8 @@ export const FilterNormal = (props) => (
             <FilterToolbar>
                 <Toolbar>
                     <ButtonGroup>
-                        <Button selected>And</Button>
-                        <Button>Or</Button>
+                        <Button className="k-group-start" selected>And</Button>
+                        <Button className="k-group-end">Or</Button>
                     </ButtonGroup>
                     <Button icon="filter-add-expression">Add Expression</Button>
                     <Button icon="filter-add-group">Add Group</Button>

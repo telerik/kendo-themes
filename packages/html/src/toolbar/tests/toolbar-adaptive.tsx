@@ -28,9 +28,9 @@ export default () =>(
 
                 <ToolbarResizable size="large" >
                     <ButtonGroup>
-                        <Button size="large" icon="align-left">Left</Button>
+                        <Button className="k-group-start" size="large" icon="align-left">Left</Button>
                         <Button size="large" icon="align-center">Center</Button>
-                        <Button size="large" icon="align-right">Right</Button>
+                        <Button className="k-group-end" size="large" icon="align-right">Right</Button>
                     </ButtonGroup>
                     <Button size="large" icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </ToolbarResizable>

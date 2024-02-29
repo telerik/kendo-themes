@@ -30,7 +30,7 @@ export default () =>(
                         <div className="k-text-center">Select value</div>
                     </ActionSheetHeader>
                     <Treeview size="large">
-                        <TreeviewItem text="Normal" />
+                        <TreeviewItem top text="Normal" />
                         <TreeviewItem text="Hover" hover />
                         <TreeviewItem text="Focus" focus/>
                         <TreeviewItem text="Selected" selected/>
@@ -41,7 +41,7 @@ export default () =>(
                         <TreeviewItem text="Normal Content" />
                         <TreeviewItem text="Normal Content" />
                         <TreeviewItem text="Normal Content" />
-                        <TreeviewItem text="Normal Content" />
+                        <TreeviewItem bottom text="Normal Content" />
                     </Treeview>
                 </ActionSheet>
             </section>
@@ -52,7 +52,7 @@ export default () =>(
                         <div className="k-text-center">Select time</div>
                     </ActionSheetHeader>
                     <Treeview size="large">
-                        <TreeviewItem text="Normal" />
+                        <TreeviewItem top text="Normal" />
                         <TreeviewItem text="Hover" hover />
                         <TreeviewItem text="Focus" focus/>
                         <TreeviewItem text="Selected" selected/>
@@ -71,7 +71,7 @@ export default () =>(
                         <TreeviewItem text="Normal Content" />
                         <TreeviewItem text="Normal Content" />
                         <TreeviewItem text="Normal Content" />
-                        <TreeviewItem text="Normal Content" />
+                        <TreeviewItem bottom text="Normal Content" />
                     </Treeview>
                 </ActionSheet>
             </section>

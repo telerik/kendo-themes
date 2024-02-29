@@ -19,7 +19,7 @@ export const TimelineTrackWrap = (
                 props.className,
                 TIMELINETRACKWRAP_CLASSNAME
             )}>
-            <Button className="k-timeline-arrow k-timeline-arrow-left" rounded="full" icon="caret-alt-left" />
+            <Button className="k-timeline-arrow k-timeline-arrow-left" rounded="full" icon="caret-alt-left" disabled />
             <Button className="k-timeline-arrow k-timeline-arrow-right" rounded="full" icon="caret-alt-right" />
             <TimelineTrack>
                 {props.children}

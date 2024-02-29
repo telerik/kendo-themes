@@ -60,8 +60,8 @@ export const ColorEditor = (
                 <div className="k-coloreditor-header-actions k-hstack">
                     { group &&
                         <ButtonGroup>
-                            <Button fillMode="flat" icon="droplet-slider" selected={ view === 'gradient' }></Button>
-                            <Button fillMode="flat" icon="palette" selected={ view === 'palette' }></Button>
+                            <Button className="k-group-start" fillMode="flat" icon="droplet-slider" selected={ view === 'gradient' }></Button>
+                            <Button className="k-group-end" fillMode="flat" icon="palette" selected={ view === 'palette' }></Button>
                         </ButtonGroup>
                     }
                 </div>

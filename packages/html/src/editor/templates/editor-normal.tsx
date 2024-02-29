@@ -7,8 +7,8 @@ export const EditorNormal = (props) => (
         <>
             <EditorToolbar resizable>
                 <ButtonGroup>
-                    <Button icon="undo"></Button>
-                    <Button icon="redo"></Button>
+                    <Button className="k-group-start" icon="undo"></Button>
+                    <Button className="k-group-end" icon="redo"></Button>
                 </ButtonGroup>
                 <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
             </EditorToolbar>
