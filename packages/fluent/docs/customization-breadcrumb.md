@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>0 0 0 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>

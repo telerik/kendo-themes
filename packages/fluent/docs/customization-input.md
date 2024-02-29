@@ -840,7 +840,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-solid-disabled-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .09 ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>

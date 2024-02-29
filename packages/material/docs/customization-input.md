@@ -285,7 +285,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .44 ), rgba( $kendo-component-border, .38 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( $kendo-component-border, .38 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -405,7 +405,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .03 ), k-try-shade( $kendo-component-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), k-try-shade( $kendo-component-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .27 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 27%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-disabled-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .03 ), rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.06)"></span><code>rgba(0, 0, 0, 0.06)</code></td>
 </tr>
 <tr>

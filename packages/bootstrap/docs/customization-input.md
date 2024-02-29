@@ -475,7 +475,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-base-text, .5 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-base-text, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(33, 37, 41, 0.5)"></span><code>rgba(33, 37, 41, 0.5)</code></td>
 </tr>
 <tr>

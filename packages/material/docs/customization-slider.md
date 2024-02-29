@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 11px if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>0 0 0 11px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><code>0 0 0 11px rgba(63, 81, 181, 0.25)</code></td>
 </tr>
 <tr>

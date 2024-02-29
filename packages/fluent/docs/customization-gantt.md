@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-nonwork-bg</td>
     <td></td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), $kendo-color-black), .04 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( $kendo-color-black, .04 ))</code></td>
     <td></td>
 </tr>
 <tr>

@@ -408,7 +408,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .13 ), k-get-theme-color-var( primary-20 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 13%, transparent), k-get-theme-color-var( primary-20 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -438,7 +438,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-hover-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .26 ), k-get-theme-color-var( primary-30 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 26%, transparent), k-get-theme-color-var( primary-30 ))</code></td>
     <td></td>
 </tr>
 <tr>

@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-focus-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px -1px rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .2 ), 0 4px 5px 0 rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .14 ), 0 1px 10px 0 rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .12 )</code></td>
+    <td><code>0 2px 4px -1px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $elevation, .2 )), 0 4px 5px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 14%, transparent), rgba( $elevation, .14 )), 0 1px 10px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 12%, transparent), rgba( $elevation, .12 ))</code></td>
     <td><code>0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>

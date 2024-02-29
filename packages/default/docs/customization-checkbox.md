@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-focus-checked-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, rgba( k-color( primary, true ), .3 ), rgba( $kendo-color-primary, .3 ))</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 30%, transparent), rgba( $kendo-color-primary, .3 ))</code></td>
     <td><code>0 0 0 2px rgba(255, 99, 88, 0.3)</code></td>
 </tr>
 <tr>

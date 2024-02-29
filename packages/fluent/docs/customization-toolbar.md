@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-separator-border</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>

@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-focus-ring</td>
     <td>List</td>
-    <td><code>.25rem solid if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>.25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><code>0.25rem solid rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -464,7 +464,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-focus-ring</td>
     <td>List</td>
-    <td><code>.25rem solid if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-switch-on-track-border, .25 ))</code></td>
+    <td><code>.25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-switch-on-track-border, .25 ))</code></td>
     <td><code>0.25rem solid rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>

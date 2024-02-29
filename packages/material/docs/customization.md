@@ -3086,7 +3086,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .08 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -3096,7 +3096,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .04 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -3836,7 +3836,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .54 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 54%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
 </tr>
 <tr>
@@ -6129,7 +6129,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .16 ), rgba( $kendo-color-primary, .16 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 16%, transparent), rgba( $kendo-color-primary, .16 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.16)"></span><code>rgba(63, 81, 181, 0.16)</code></td>
 </tr>
 <tr>
@@ -9042,7 +9042,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-grid-row-resizer-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .2 ), rgba( k-contrast-color( $kendo-grid-bg ), .24 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 20%, transparent), rgba( k-contrast-color( $kendo-grid-bg ), .24 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.24)"></span><code>rgba(0, 0, 0, 0.24)</code></td>
 </tr>
 <tr>
@@ -9347,7 +9347,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .44 ), rgba( $kendo-component-border, .38 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( $kendo-component-border, .38 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -9467,7 +9467,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .03 ), k-try-shade( $kendo-component-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), k-try-shade( $kendo-component-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
 </tr>
 <tr>
@@ -9477,7 +9477,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .27 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 27%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -9487,7 +9487,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .03 ), rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.06)"></span><code>rgba(0, 0, 0, 0.06)</code></td>
 </tr>
 <tr>
@@ -11827,7 +11827,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-node-group-focus-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px -1px rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .2 ), 0 4px 5px 0 rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .14 ), 0 1px 10px 0 rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .12 )</code></td>
+    <td><code>0 2px 4px -1px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $elevation, .2 )), 0 4px 5px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 14%, transparent), rgba( $elevation, .14 )), 0 1px 10px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 12%, transparent), rgba( $elevation, .12 ))</code></td>
     <td><code>0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
@@ -15425,7 +15425,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .2 ), rgba( $kendo-color-inverse, .2 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $kendo-color-inverse, .2 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.2)"></span><code>rgba(66, 66, 66, 0.2)</code></td>
 </tr>
 <tr>
@@ -15735,7 +15735,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 11px if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>0 0 0 11px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><code>0 0 0 11px rgba(63, 81, 181, 0.25)</code></td>
 </tr>
 <tr>
@@ -16425,7 +16425,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-selection-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.25)"></span><code>rgba(63, 81, 181, 0.25)</code></td>
 </tr>
 <tr>
@@ -16525,7 +16525,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-auto-fill-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.25)"></span><code>rgba(63, 81, 181, 0.25)</code></td>
 </tr>
 <tr>
@@ -16565,7 +16565,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-auto-fill-punch-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( app-surface, true ), .5 ), rgba( $kendo-component-bg, .5 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 50%, transparent), rgba( $kendo-component-bg, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.5)"></span><code>rgba(255, 255, 255, 0.5)</code></td>
 </tr>
 <tr>
@@ -16925,7 +16925,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-drawing-anchor-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( secondary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( secondary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(229, 26, 95, 0.25)"></span><code>rgba(229, 26, 95, 0.25)</code></td>
 </tr>
 <tr>
@@ -17275,7 +17275,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .32 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -17355,7 +17355,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .6 ), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
     <td><span class="color-preview" style="background-color: #8c97d3"></span><code>#8c97d3</code></td>
 </tr>
 <tr>
@@ -17515,7 +17515,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-label-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .32 ), k-map-get( $theme, disabled-text ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), k-map-get( $theme, disabled-text ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -17729,7 +17729,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-off-track-bg</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .38 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 38%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .38 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -17979,7 +17979,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .54 ), rgba( $kendo-color-primary, .54 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 54%, transparent), rgba( $kendo-color-primary, .54 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.54)"></span><code>rgba(63, 81, 181, 0.54)</code></td>
 </tr>
 <tr>
@@ -18508,7 +18508,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .08 ), rgba( k-contrast-color( $kendo-table-bg ), .07 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .07 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span><code>rgba(0, 0, 0, 0.07)</code></td>
 </tr>
 <tr>
@@ -18578,7 +18578,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .12 ), rgba( k-contrast-color( $kendo-table-bg ), .04 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 12%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -21139,7 +21139,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .07 ), rgba( $kendo-treeview-text, .07 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span><code>rgba(0, 0, 0, 0.07)</code></td>
 </tr>
 <tr>

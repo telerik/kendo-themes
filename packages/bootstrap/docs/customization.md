@@ -1410,7 +1410,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .25 ), rgba( $kendo-breadcrumb-text, .25 ))</code></td>
+    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 25%, transparent), rgba( $kendo-breadcrumb-text, .25 ))</code></td>
     <td><code>inset 0 0 0 3px rgba(33, 37, 41, 0.25)</code></td>
 </tr>
 <tr>
@@ -2097,7 +2097,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem if($kendo-enable-color-system, rgba( k-color( border, true ), .5), rgba( $kendo-button-border, .5 ))</code></td>
+    <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 50%, transparent), rgba( $kendo-button-border, .5 ))</code></td>
     <td><code>0 0 0 0.25rem rgba(228, 231, 235, 0.5)</code></td>
 </tr>
 <tr>
@@ -3037,7 +3037,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .08 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -3047,7 +3047,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .04 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -3897,7 +3897,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-checkbox-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -6070,7 +6070,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .16 ), rgba( $kendo-color-primary, .16 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 16%, transparent), rgba( $kendo-color-primary, .16 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(13, 110, 253, 0.16)"></span><code>rgba(13, 110, 253, 0.16)</code></td>
 </tr>
 <tr>
@@ -7470,7 +7470,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-filter-toolbar-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -9033,7 +9033,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-grid-row-resizer-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .2 ), rgba( k-contrast-color( $kendo-grid-bg ), .12 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 20%, transparent), rgba( k-contrast-color( $kendo-grid-bg ), .12 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
@@ -9528,7 +9528,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-base-text, .5 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-base-text, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(33, 37, 41, 0.5)"></span><code>rgba(33, 37, 41, 0.5)</code></td>
 </tr>
 <tr>
@@ -10287,7 +10287,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .15 ), rgba( $kendo-list-text, .15 ))</code></td>
+    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-list-text, .15 ))</code></td>
     <td><code>inset 0 0 0 3px rgba(33, 37, 41, 0.15)</code></td>
 </tr>
 <tr>
@@ -10687,7 +10687,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(13, 110, 253, 0.25)"></span><code>rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -10737,7 +10737,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-listview-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .15 ), rgba( $kendo-listview-text, .15 ))</code></td>
+    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-listview-text, .15 ))</code></td>
     <td><code>inset 0 0 0 3px rgba(33, 37, 41, 0.15)</code></td>
 </tr>
 <tr>
@@ -12517,7 +12517,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-pager-item-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 3px if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-color-primary, .25))</code></td>
+    <td><code>0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-color-primary, .25))</code></td>
     <td><code>0 0 0 3px rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -13199,7 +13199,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-picker-outline-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-picker-outline-text, .5 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-picker-outline-text, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(33, 37, 41, 0.5)"></span><code>rgba(33, 37, 41, 0.5)</code></td>
 </tr>
 <tr>
@@ -13339,7 +13339,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-picker-flat-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .08 ), rgba( $kendo-button-text, .08 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( $kendo-button-text, .08 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(33, 37, 41, 0.08)"></span><code>rgba(33, 37, 41, 0.08)</code></td>
 </tr>
 <tr>
@@ -15335,7 +15335,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .2 ), rgba( $kendo-color-inverse, .2 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $kendo-color-inverse, .2 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(33, 37, 41, 0.2)"></span><code>rgba(33, 37, 41, 0.2)</code></td>
 </tr>
 <tr>
@@ -15645,7 +15645,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 3px if($kendo-enable-color-system, rgba( k-color( primary, true ), .5 ), rgba( $kendo-color-primary, .5 ))</code></td>
+    <td><code>0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 50%, transparent), rgba( $kendo-color-primary, .5 ))</code></td>
     <td><code>0 0 0 3px rgba(13, 110, 253, 0.5)</code></td>
 </tr>
 <tr>
@@ -16335,7 +16335,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-spreadsheet-selection-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(13, 110, 253, 0.25)"></span><code>rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -16405,7 +16405,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-spreadsheet-partial-selection-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(13, 110, 253, 0.25)"></span><code>rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -16435,7 +16435,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-spreadsheet-auto-fill-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(13, 110, 253, 0.25)"></span><code>rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -16835,7 +16835,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-spreadsheet-drawing-anchor-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(13, 110, 253, 0.25)"></span><code>rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -17185,7 +17185,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
 </tr>
 <tr>
@@ -17265,7 +17265,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .6 ), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
     <td><span class="color-preview" style="background-color: #6ea8fe"></span><code>#6ea8fe</code></td>
 </tr>
 <tr>
@@ -17425,7 +17425,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-stepper-label-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
 </tr>
 <tr>
@@ -17759,7 +17759,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-switch-off-track-focus-ring</td>
     <td>List</td>
-    <td><code>.25rem solid if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>.25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><code>0.25rem solid rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -18009,7 +18009,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-switch-on-track-focus-ring</td>
     <td>List</td>
-    <td><code>.25rem solid if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-switch-on-track-border, .25 ))</code></td>
+    <td><code>.25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-switch-on-track-border, .25 ))</code></td>
     <td><code>0.25rem solid rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -18388,7 +18388,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-table-alt-row-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .05 ), rgba( k-contrast-color( $kendo-table-bg ), .04 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 5%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -18418,7 +18418,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .09 ), rgba( k-contrast-color( $kendo-table-bg ), .08 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .08 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -18488,7 +18488,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(13, 110, 253, 0.25)"></span><code>rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -19558,7 +19558,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .1 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 10%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .1 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span><code>rgba(0, 0, 0, 0.1)</code></td>
 </tr>
 <tr>
@@ -19818,7 +19818,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( base-subtle, true ), .65 ), k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( base-subtle ) 65%, transparent), k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% ))</code></td>
     <td><span class="color-preview" style="background-color: #edeff2"></span><code>#edeff2</code></td>
 </tr>
 <tr>
@@ -19828,7 +19828,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .65 ), k-true-mix( $kendo-button-text, $kendo-body-bg, 65% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 65%, transparent), k-true-mix( $kendo-button-text, $kendo-body-bg, 65% ))</code></td>
     <td><span class="color-preview" style="background-color: #6f7174"></span><code>#6f7174</code></td>
 </tr>
 <tr>
@@ -19838,7 +19838,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .15 ), k-true-mix( $kendo-button-border, $kendo-body-bg, 65% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 15%, transparent), k-true-mix( $kendo-button-border, $kendo-body-bg, 65% ))</code></td>
     <td><span class="color-preview" style="background-color: #edeff2"></span><code>#edeff2</code></td>
 </tr>
 <tr>
@@ -20478,7 +20478,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
@@ -21129,7 +21129,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .15 ), rgba( $kendo-treeview-text, .15 ))</code></td>
+    <td><code>inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-treeview-text, .15 ))</code></td>
     <td><code>inset 0 0 0 2px rgba(33, 37, 41, 0.15)</code></td>
 </tr>
 <tr>
