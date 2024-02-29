@@ -5,8 +5,12 @@ import { UploadNormal } from '../../upload';
 
 const styles = `
     .k-dialog {
-        width: 100%;
-        position: relative;
+        width: 430px;
+    }
+
+    section {
+        height: 250px;
+        transform: translate( 0, 0 );
     }
 `;
 
@@ -27,7 +31,6 @@ export default () =>(
                 </DialogNormal>
 
             </section>
-            <span>{' '}</span>
 
             {/* Move/Copy Dialog */}
             <section>

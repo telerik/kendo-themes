@@ -1,9 +1,13 @@
-import { Button } from '../../button';
 import { DialogNormal } from '../../dialog';
 
 const styles = `
     .k-dialog {
-        position: relative;
+        width: 270px
+    }
+
+    section {
+        height: 250px;
+        transform: translate( 0, 0 );
     }
 `;
 
@@ -12,60 +16,46 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <DialogNormal title="Title
+            <section>
+                <DialogNormal title="Title
                         g y p
-                        t d l" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
-                Dialog content template
-            </DialogNormal>
+                        t d l" actionButtonsAlign="end"
+                />
+            </section>
 
-            <DialogNormal title="Cursive
+            <section>
+                <DialogNormal title="Cursive
                         g y p
-                        t d l" actionButtonsAlign="end" actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
+                        t d l" actionButtonsAlign="end" actions={null}>
                 Dialog without titlebar actions
-            </DialogNormal>
+                </DialogNormal>
+            </section>
 
-            <DialogNormal title="" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
+            <section>
+                <DialogNormal title={null} actionButtonsAlign="end" >
                 Dialog with empty title and actions
-            </DialogNormal>
+                </DialogNormal>
+            </section>
 
-            <DialogNormal title="">
+            <section>
+                <DialogNormal title={null} actionButtons={null} actions={null} >
                 Dialog with empty title and no actions
-            </DialogNormal>
+                </DialogNormal>
+            </section>
 
-            <DialogNormal actionButtonsAlign="end" actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
+            <section>
+                <DialogNormal title={undefined} actionButtonsAlign="end" actions={null} >
                 Dialog without title
-            </DialogNormal>
+                </DialogNormal>
+            </section>
 
-            <DialogNormal title="Scrolling" actions={[ 'x' ]} actionButtonsAlign="end" style={{ height: "170px" }} actionButtons={
-                <>
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
-                </>
-            }>
-                <p>Dialog content template with long text and vertical scrolling.</p>
-                <p>Dialog content template with long text and vertical scrolling.</p>
-                <p>Dialog content template with long text and vertical scrolling.</p>
-            </DialogNormal>
+            <section>
+                <DialogNormal title="Scrolling" actionButtonsAlign="end" style={{ height: "170px" }} >
+                    <p>Dialog content template with long text and vertical scrolling.</p>
+                    <p>Dialog content template with long text and vertical scrolling.</p>
+                    <p>Dialog content template with long text and vertical scrolling.</p>
+                </DialogNormal>
+            </section>
 
         </div>
     </>
