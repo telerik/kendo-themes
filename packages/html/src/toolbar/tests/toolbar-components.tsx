@@ -35,16 +35,16 @@ export default () =>(
             <section>
                 <ToolbarNormal>
                     <ButtonGroup>
-                        <Button icon="align-left">Normal</Button>
+                        <Button className="k-group-start" icon="align-left">Normal</Button>
                         <Button icon="align-center" hover>Hover</Button>
                         <Button icon="align-right" focus>Focus</Button>
                         <Button icon="bold" active>Active</Button>
                         <Button icon="bold" selected>Selected</Button>
-                        <Button icon="italic" disabled>Disabled</Button>
+                        <Button className="k-group-end" icon="italic" disabled>Disabled</Button>
                     </ButtonGroup>
                     <ButtonGroup>
-                        <Button>Adjacent</Button>
-                        <Button>Button group</Button>
+                        <Button className="k-group-start">Adjacent</Button>
+                        <Button className="k-group-end">Button group</Button>
                     </ButtonGroup>
                 </ToolbarNormal>
             </section>

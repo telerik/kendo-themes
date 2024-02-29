@@ -28,6 +28,8 @@ export type KendoTreeviewItemProps = {
     icon?: string;
     showCheckbox?: boolean;
     checked?: boolean;
+    top?: boolean;
+    bottom?: boolean;
     dir?: 'ltr' | 'rtl';
 };
 
@@ -52,6 +54,8 @@ export const TreeviewItem = (
         focus,
         selected,
         disabled,
+        top,
+        bottom,
         dir,
         ...other
     } = props;
@@ -90,7 +94,13 @@ export const TreeviewItem = (
                 TREEVIEWITEM_CLASSNAME
             )}
         >
-            <span className="k-treeview-mid">
+            <span className={classNames(
+                {
+                    ["k-treeview-top"]: top,
+                    ["k-treeview-bot"]: bottom,
+                    ["k-treeview-mid"]: !top && !bottom,
+                }
+            )}>
                 {_hasChildren && (
                     <span
                         className={classNames(

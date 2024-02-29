@@ -58,17 +58,17 @@ export default () =>(
                                 <Button icon="download"></Button>
                                 <ToolbarSeparator></ToolbarSeparator>
                                 <ButtonGroup>
-                                    <Button icon="cut"></Button>
+                                    <Button className="k-group-start" icon="cut"></Button>
                                     <Button icon="copy"></Button>
-                                    <Button icon="clipboard"></Button>
+                                    <Button className="k-group-end" icon="clipboard"></Button>
                                 </ButtonGroup>
                                 <ToolbarSeparator></ToolbarSeparator>
                                 <DropdownList value="Arial" />
                                 <Combobox placeholder="12" />
                                 <ButtonGroup>
-                                    <Button icon="bold"></Button>
+                                    <Button className="k-group-start" icon="bold"></Button>
                                     <Button icon="italic"></Button>
-                                    <Button icon="underline"></Button>
+                                    <Button className="k-group-end" icon="underline"></Button>
                                 </ButtonGroup>
                                 <ToolbarSeparator></ToolbarSeparator>
                                 <MenuButton icon="foreground-color" showArrow></MenuButton>
@@ -80,8 +80,8 @@ export default () =>(
                                 <Button icon="text-wrap"></Button>
                                 <ToolbarSeparator></ToolbarSeparator>
                                 <ButtonGroup>
-                                    <Button icon="decimal-decrease"></Button>
-                                    <Button icon="decimal-increase"></Button>
+                                    <Button className="k-group-start" icon="decimal-decrease"></Button>
+                                    <Button className="k-group-end" icon="decimal-increase"></Button>
                                 </ButtonGroup>
                                 <ToolbarSeparator></ToolbarSeparator>
                                 <Button icon="filter"></Button>

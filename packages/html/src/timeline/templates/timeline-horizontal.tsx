@@ -13,7 +13,7 @@ export const TimelineHorizontal = (props) => (
                         <TimelineDateWrap date="Jan 14, 2015"></TimelineDateWrap>
                         <TimelineCircle></TimelineCircle>
                     </TimelineTrackItem>
-                    <TimelineTrackItem>
+                    <TimelineTrackItem focus>
                         <TimelineDateWrap date="Jun 1, 2015"></TimelineDateWrap>
                         <TimelineCircle></TimelineCircle>
                     </TimelineTrackItem>

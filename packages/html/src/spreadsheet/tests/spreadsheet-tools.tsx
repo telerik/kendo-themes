@@ -99,8 +99,8 @@ export default () => (
                     toolbarItems={[
                         <Button icon="custom-format" fillMode="flat"></Button>,
                         <ButtonGroup fillMode="flat">
-                            <Button icon="decimal-decrease" fillMode="flat"></Button>
-                            <Button icon="decimal-increase" fillMode="flat"></Button>
+                            <Button className="k-group-start" icon="decimal-decrease" fillMode="flat"></Button>
+                            <Button className="k-group-end" icon="decimal-increase" fillMode="flat"></Button>
                         </ButtonGroup>,
                         <ToolbarSeparator></ToolbarSeparator>,
                         <Button icon="apply-format" fillMode="flat"></Button>

@@ -26,13 +26,13 @@ const defaultToolbar =
             <Button>New Folder</Button>
             <Button>Upload</Button>
             <ButtonGroup>
-                <Button icon="sort-asc-small"></Button>
-                <Button icon="sort-desc-small"></Button>
+                <Button className="k-group-start" icon="sort-asc-small"></Button>
+                <Button className="k-group-end" icon="sort-desc-small"></Button>
             </ButtonGroup>
             <SplitButton text="Sort By" />
             <ButtonGroup>
-                <Button icon="grid-layout"></Button>
-                <Button icon="grid"></Button>
+                <Button className="k-group-start" icon="grid-layout"></Button>
+                <Button className="k-group-end" icon="grid"></Button>
             </ButtonGroup>
             <div className="k-spacer"></div>
             <div className="k-filemanager-details-toggle">

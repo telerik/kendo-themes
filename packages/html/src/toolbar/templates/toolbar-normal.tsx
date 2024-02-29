@@ -11,9 +11,9 @@ export const ToolbarNormal = (props) => (
             <MenuButton text="Menu button"></MenuButton>
             <SplitButton>Split button</SplitButton>
             <ButtonGroup>
-                <Button icon="align-left">Left</Button>
+                <Button className="k-group-start" icon="align-left">Left</Button>
                 <Button icon="align-center">Center</Button>
-                <Button icon="align-right">Right</Button>
+                <Button className="k-group-end" icon="align-right">Right</Button>
             </ButtonGroup>
         </>
     ]}

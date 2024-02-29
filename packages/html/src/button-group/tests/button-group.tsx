@@ -11,42 +11,36 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
                 <div>
                     <ButtonGroup>
-                        <Button className="k-group-start">Button</Button>
-                        <Button hover>Hover</Button>
-                        <Button focus>Focus</Button>
-                        <Button active>Active</Button>
-                        <Button selected>Selected</Button>
-                        <Button selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" disabled>Disabled</Button>
+                        <Button className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
                 <div>
                     <ButtonGroup fillMode="outline">
-                        <Button className="k-group-start" fillMode="outline">Button</Button>
-                        <Button fillMode="outline" hover>Hover</Button>
-                        <Button fillMode="outline" focus>Focus</Button>
-                        <Button fillMode="outline" active>Active</Button>
-                        <Button fillMode="outline" selected>Selected</Button>
-                        <Button fillMode="outline" selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" fillMode="outline" disabled>Disabled</Button>
+                        <Button fillMode="outline" className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button fillMode="outline" {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button fillMode="outline" className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
                 <div>
                     <ButtonGroup fillMode="flat">
-                        <Button className="k-group-start" fillMode="flat">Button</Button>
-                        <Button fillMode="flat" hover>Hover</Button>
-                        <Button fillMode="flat" focus>Focus</Button>
-                        <Button fillMode="flat" active>Active</Button>
-                        <Button fillMode="flat" selected>Selected</Button>
-                        <Button fillMode="flat" selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" fillMode="flat" disabled>Disabled</Button>
+                        <Button fillMode="flat" className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button fillMode="flat" {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button fillMode="flat" className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
             </section>
@@ -54,35 +48,29 @@ export default () =>(
             <section style={{ backgroundColor: "#787878", color: "#fff" }}>
                 <div>
                     <ButtonGroup>
-                        <Button className="k-group-start">Button</Button>
-                        <Button hover>Hover</Button>
-                        <Button focus>Focus</Button>
-                        <Button active>Active</Button>
-                        <Button selected>Selected</Button>
-                        <Button selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" disabled>Disabled</Button>
+                        <Button className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
                 <div>
                     <ButtonGroup fillMode="outline">
-                        <Button className="k-group-start" fillMode="outline">Button</Button>
-                        <Button fillMode="outline" hover>Hover</Button>
-                        <Button fillMode="outline" focus>Focus</Button>
-                        <Button fillMode="outline" active>Active</Button>
-                        <Button fillMode="outline" selected>Selected</Button>
-                        <Button fillMode="outline" selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" fillMode="outline" disabled>Disabled</Button>
+                        <Button fillMode="outline" className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button fillMode="outline" {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button fillMode="outline" className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
                 <div>
                     <ButtonGroup fillMode="flat">
-                        <Button className="k-group-start" fillMode="flat">Button</Button>
-                        <Button fillMode="flat" hover>Hover</Button>
-                        <Button fillMode="flat" focus>Focus</Button>
-                        <Button fillMode="flat" active>Active</Button>
-                        <Button fillMode="flat" selected>Selected</Button>
-                        <Button fillMode="flat" selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" fillMode="flat" disabled>Disabled</Button>
+                        <Button fillMode="flat" className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button fillMode="flat" {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button fillMode="flat" className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
             </section>
@@ -90,35 +78,29 @@ export default () =>(
             <section style={{ color: "#ff00ff" }}>
                 <div>
                     <ButtonGroup>
-                        <Button className="k-group-start">Button</Button>
-                        <Button hover>Hover</Button>
-                        <Button focus>Focus</Button>
-                        <Button active>Active</Button>
-                        <Button selected>Selected</Button>
-                        <Button selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" disabled>Disabled</Button>
+                        <Button className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
                 <div>
                     <ButtonGroup fillMode="outline">
-                        <Button className="k-group-start" fillMode="outline">Button</Button>
-                        <Button fillMode="outline" hover>Hover</Button>
-                        <Button fillMode="outline" focus>Focus</Button>
-                        <Button fillMode="outline" active>Active</Button>
-                        <Button fillMode="outline" selected>Selected</Button>
-                        <Button fillMode="outline" selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" fillMode="outline" disabled>Disabled</Button>
+                        <Button fillMode="outline" className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button fillMode="outline" {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button fillMode="outline" className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
                 <div>
                     <ButtonGroup fillMode="flat">
-                        <Button className="k-group-start" fillMode="flat">Button</Button>
-                        <Button fillMode="flat" hover>Hover</Button>
-                        <Button fillMode="flat" focus>Focus</Button>
-                        <Button fillMode="flat" active>Active</Button>
-                        <Button fillMode="flat" selected>Selected</Button>
-                        <Button fillMode="flat" selected focus>Selected + Focus</Button>
-                        <Button className="k-group-end" fillMode="flat" disabled>Disabled</Button>
+                        <Button fillMode="flat" className="k-group-start">normal</Button>
+                        {Button.states.map((state) => (
+                            <Button fillMode="flat" {...{ [state]: true }}>{state}</Button>
+                        ))}
+                        <Button fillMode="flat" className="k-group-end" selected focus>selected + focus</Button>
                     </ButtonGroup>
                 </div>
             </section>

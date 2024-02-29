@@ -1,6 +1,6 @@
 import { Icon } from '../../icon';
 import { Textbox } from '../../textbox';
-import { BreadcrumbContainer, BreadcrumbInputContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbNormal, BreadcrumbRoot, BreadcrumbRootItemContainer } from '..';
+import { BreadcrumbCollapsingAuto, BreadcrumbCollapsingWrap, BreadcrumbContainer, BreadcrumbInputContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbRootItemContainer } from '..';
 
 
 export default () =>(
@@ -12,7 +12,7 @@ export default () =>(
             <span>Text items</span>
 
             <div>
-                <BreadcrumbRoot collapsing="wrap" style={{ width: "400px" }}>
+                <BreadcrumbCollapsingWrap style={{ width: "400px" }}>
                     <BreadcrumbRootItemContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon>
@@ -44,11 +44,11 @@ export default () =>(
                         ))
                         }
                     </BreadcrumbContainer>
-                </BreadcrumbRoot>
+                </BreadcrumbCollapsingWrap>
             </div>
 
             <div>
-                <BreadcrumbRoot collapsing="wrap" style={{ width: "400px" }}>
+                <BreadcrumbCollapsingWrap style={{ width: "400px" }}>
                     <BreadcrumbRootItemContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon>
@@ -77,13 +77,13 @@ export default () =>(
                         ))
                         }
                     </BreadcrumbContainer>
-                </BreadcrumbRoot>
+                </BreadcrumbCollapsingWrap>
             </div>
 
             <span className="k-colspan-all k-col-span-full">Icon & Image items</span>
 
             <div>
-                <BreadcrumbRoot collapsing="wrap" style={{ width: "400px" }}>
+                <BreadcrumbCollapsingWrap style={{ width: "400px" }}>
                     <BreadcrumbRootItemContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon>
@@ -112,14 +112,14 @@ export default () =>(
                         ))
                         }
                     </BreadcrumbContainer>
-                </BreadcrumbRoot>
+                </BreadcrumbCollapsingWrap>
             </div>
 
             <span className="k-colspan-all k-col-span-full">Navigation Mode</span>
 
             {[ "normal", ...BreadcrumbLink.states ].map((state) => (
                 <div>
-                    <BreadcrumbNormal>
+                    <BreadcrumbCollapsingAuto>
                         <BreadcrumbContainer>
                             <BreadcrumbItem root>
                                 <BreadcrumbLink root icon {...{ [state]: true }}>
@@ -145,7 +145,7 @@ export default () =>(
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                         </BreadcrumbContainer>
-                    </BreadcrumbNormal>
+                    </BreadcrumbCollapsingAuto>
                 </div>
             ))
             }
@@ -153,7 +153,7 @@ export default () =>(
             <span className="k-colspan-all k-col-span-full">Edit Mode</span>
 
             <div>
-                <BreadcrumbNormal focus>
+                <BreadcrumbCollapsingAuto focus>
                     <BreadcrumbContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon>
@@ -179,15 +179,15 @@ export default () =>(
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbContainer>
-                </BreadcrumbNormal>
+                </BreadcrumbCollapsingAuto>
             </div>
 
             <div>
-                <BreadcrumbNormal>
+                <BreadcrumbCollapsingAuto>
                     <BreadcrumbInputContainer>
                         <Textbox showClearButton={false} value="First item/Second item/Third item" />
                     </BreadcrumbInputContainer>
-                </BreadcrumbNormal>
+                </BreadcrumbCollapsingAuto>
             </div>
         </div>
     </>

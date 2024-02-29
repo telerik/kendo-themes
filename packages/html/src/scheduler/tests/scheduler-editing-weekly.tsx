@@ -68,11 +68,11 @@ export default () =>(
                         <FormField label="Repeat" editor={
                             <div className="k-recurrence-editor">
                                 <ButtonGroup stretched className="k-scheduler-recurrence-repeat">
-                                    <Button>Never</Button>
+                                    <Button className="k-group-start">Never</Button>
                                     <Button>Daily</Button>
                                     <Button selected >Weekly</Button>
                                     <Button>Monthly</Button>
-                                    <Button>Yearly</Button>
+                                    <Button className="k-group-end">Yearly</Button>
                                 </ButtonGroup>
                                 <div className="k-recur-view">
                                     <div className="k-scheduler-recurrence-interval-editor">
@@ -84,13 +84,13 @@ export default () =>(
                                         }/>
                                         <FormField label="Repeat on:" editor={
                                             <ButtonGroup stretched>
-                                                <Button>Sun</Button>
+                                                <Button className="k-group-start">Sun</Button>
                                                 <Button selected >Mon</Button>
                                                 <Button>Tue</Button>
                                                 <Button>Wed</Button>
                                                 <Button>Thu</Button>
                                                 <Button>Fri</Button>
-                                                <Button>Sat</Button>
+                                                <Button className="k-group-end">Sat</Button>
                                             </ButtonGroup>
                                         } />
                                     </div>
