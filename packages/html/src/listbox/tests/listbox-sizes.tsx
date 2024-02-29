@@ -1,4 +1,3 @@
-import { ListItem } from '../../list';
 import { ListBox, ListBoxNormal } from '../../listbox';
 
 
@@ -21,14 +20,7 @@ export default () =>(
                 <>
                     <div>
                         <span>{size}</span>
-                        <ListBoxNormal size={size} actions={[ 'up', 'down', 'left', 'right' ]}>
-                            <ListItem>List item 1</ListItem>
-                            <ListItem>List item 2</ListItem>
-                            <ListItem>List item 3</ListItem>
-                            <ListItem>List item 4</ListItem>
-                            <ListItem>List item 5</ListItem>
-                            <ListItem>List item 6</ListItem>
-                        </ListBoxNormal>
+                        <ListBoxNormal size={size} actions={[ 'up', 'down', 'left', 'right' ]} />
                     </div>
                 </>
             ))}

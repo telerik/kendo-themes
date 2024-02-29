@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import List from '../list/list.spec';
+import { List } from '../list';
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
 export const LISTBOX_CLASSNAME = `k-listbox`;
@@ -77,8 +77,7 @@ export const ListBox = (
                             "x": "x"
                         };
 
-                        return <Button icon={actionsIconMap[action]} size={size} />;
-
+                        return <Button key={action} icon={actionsIconMap[action]} size={size} />;
                     })}
                 </div>
             )}
@@ -86,9 +85,7 @@ export const ListBox = (
                 'k-list-scroller',
                 'k-selectable'
             )}>
-                <List size={size}>
-                    {children}
-                </List>
+                <List size={size} children={children} />
             </div>
         </div>
     );
