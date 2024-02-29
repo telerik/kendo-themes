@@ -74,8 +74,8 @@ export default () =>(
                                     label="Orientation:"
                                     editor={
                                         <ButtonGroup>
-                                            <Button selected>Portrait</Button>
-                                            <Button>Landscape</Button>
+                                            <Button className="k-group-start" selected>Portrait</Button>
+                                            <Button className="k-group-end">Landscape</Button>
                                         </ButtonGroup>
                                     }
                                 />

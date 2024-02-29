@@ -26,9 +26,9 @@ export default () =>(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
-                        <Button icon="bold"></Button>
+                        <Button className="k-group-start" icon="bold"></Button>
                         <Button icon="italic"></Button>
-                        <Button icon="underline"></Button>
+                        <Button className="k-group-end" icon="underline"></Button>
                     </ButtonGroup>
                 </GridToolbar>
             )}
@@ -83,9 +83,9 @@ export default () =>(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
-                        <Button icon="bold"></Button>
+                        <Button className="k-group-start" icon="bold"></Button>
                         <Button icon="italic"></Button>
-                        <Button icon="underline"></Button>
+                        <Button className="k-group-end" icon="underline"></Button>
                     </ButtonGroup>
                 </GridToolbar>
             )}
@@ -141,9 +141,9 @@ export default () =>(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
-                        <Button icon="bold"></Button>
+                        <Button className="k-group-start" icon="bold"></Button>
                         <Button icon="italic"></Button>
-                        <Button icon="underline"></Button>
+                        <Button className="k-group-end" icon="underline"></Button>
                     </ButtonGroup>
                 </GridToolbar>
             )}/>
@@ -152,9 +152,9 @@ export default () =>(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
-                        <Button icon="bold"></Button>
+                        <Button className="k-group-start" icon="bold"></Button>
                         <Button icon="italic"></Button>
-                        <Button icon="underline"></Button>
+                        <Button className="k-group-end" icon="underline"></Button>
                     </ButtonGroup>
                 </GridToolbar>
             )}/>

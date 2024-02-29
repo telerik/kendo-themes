@@ -32,20 +32,20 @@ export default () =>(
             <div className="k-widget k-scheduler">
                 <Toolbar className="k-scheduler-toolbar">
                     <ButtonGroup className="k-scheduler-navigation">
-                        <Button>Today</Button>
+                        <Button className="k-group-start">Today</Button>
                         <Button icon="caret-alt-left"></Button>
-                        <Button icon="caret-alt-right"></Button>
+                        <Button className="k-group-end" icon="caret-alt-right"></Button>
                     </ButtonGroup>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         June, 2013
                     </Button>
                     <span className="k-spacer"></span>
                     <ButtonGroup className="k-scheduler-views">
-                        <Button>Day</Button>
+                        <Button className="k-group-start">Day</Button>
                         <Button>Week</Button>
                         <Button selected>Month</Button>
                         <Button>Timeline</Button>
-                        <Button>Agenda</Button>
+                        <Button className="k-group-end">Agenda</Button>
                     </ButtonGroup>
                 </Toolbar>
                 <table className="k-scheduler-layout k-scheduler-monthview k-scrollbar-v">

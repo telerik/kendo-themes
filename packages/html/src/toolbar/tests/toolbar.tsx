@@ -19,9 +19,9 @@ export default () =>(
                     <Button className="k-toggle-button">Toggle</Button>
                     <ToolbarSeparator></ToolbarSeparator>
                     <ButtonGroup>
-                        <Button icon="align-left">Left</Button>
+                        <Button className="k-group-start" icon="align-left">Left</Button>
                         <Button icon="align-center">Center</Button>
-                        <Button icon="align-right">Right</Button>
+                        <Button className="k-group-end" icon="align-right">Right</Button>
                     </ButtonGroup>
                     <ToolbarSeparator></ToolbarSeparator>
                     <Button themeColor="primary">Primary</Button>
@@ -43,9 +43,9 @@ export default () =>(
                     <Button className="k-toggle-button">Toggle</Button>
                     <ToolbarSeparator></ToolbarSeparator>
                     <ButtonGroup>
-                        <Button icon="align-left">Left</Button>
+                        <Button className="k-group-start" icon="align-left">Left</Button>
                         <Button icon="align-center">Center</Button>
-                        <Button icon="align-right">Right</Button>
+                        <Button className="k-group-end" icon="align-right">Right</Button>
                     </ButtonGroup>
                     <ToolbarSeparator></ToolbarSeparator>
                     <Button themeColor="primary">Primary</Button>
@@ -109,8 +109,8 @@ export default () =>(
                     <MenuButton disabled focus text="Menu button"></MenuButton>
                     <SplitButton disabled focus>Split button</SplitButton>
                     <ButtonGroup>
-                        <Button icon="align-left" disabled focus>Button 1</Button>
-                        <Button icon="align-center" disabled>Button 2</Button>
+                        <Button className="k-group-start" icon="align-left" disabled focus>Button 1</Button>
+                        <Button className="k-group-end" icon="align-center" disabled>Button 2</Button>
                     </ButtonGroup>
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} disabled focus></Button>
                 </ToolbarResizable>

@@ -10,102 +10,113 @@
 <body id="app" class="k-body">
     <style>
         .k-dialog {
-            width: 100%;
-            position: relative;
+            width: 430px;
+        }
+        section {
+            height: 250px;
+            transform: translate(0, 0);
         }
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
-            <div class="k-filemanager-upload-dialog k-dialog k-window">
-                <div class="k-window-titlebar k-dialog-titlebar">
-                    <span class="k-window-title k-dialog-title">Upload Files</span>
-                    <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                        <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="k-window-content k-dialog-content">
-                    <div class="k-upload k-upload-async k-upload-empty">
-                        <div class="k-upload-dropzone k-dropzone">
-                            <div class="k-upload-button-wrap">
-                                <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                    <span class="k-button-text">Select files...</span>
-                                </button>
-                                <input id="upload-input" class="k-hidden">
-                            </div>
-                            <span class="k-dropzone-hint">Drop files here to upload</span>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-filemanager-upload-dialog k-dialog k-window">
+                    <div class="k-window-titlebar k-dialog-titlebar">
+                        <span class="k-window-title k-dialog-title">Upload Files</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions k-dialog-actions">
-                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                        <span class="k-button-text">Upload</span>
-                    </button>
-                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                        <span class="k-button-text">Cancel</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <span> </span>
-        <section>
-            <div class="k-dialog k-window">
-                <div class="k-window-titlebar k-dialog-titlebar">
-                    <span class="k-window-title k-dialog-title">Confirm</span>
-                    <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                        <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                </svg>
-                            </span>
+                    <div class="k-window-content k-dialog-content">
+                        <div class="k-upload k-upload-async k-upload-empty">
+                            <div class="k-upload-dropzone k-dropzone">
+                                <div class="k-upload-button-wrap">
+                                    <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Select files...</span>
+                                    </button>
+                                    <input id="upload-input" class="k-hidden">
+                                </div>
+                                <span class="k-dropzone-hint">Drop files here to upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-actions k-actions-start k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                            <span class="k-button-text">Upload</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Cancel</span>
                         </button>
                     </div>
-                </div>
-                <div class="k-window-content k-dialog-content">
-                    <p>Do you want to move or copy?</p>
-                </div>
-                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions k-dialog-actions">
-                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                        <span class="k-button-text">Confirm</span>
-                    </button>
-                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                        <span class="k-button-text">Cancel</span>
-                    </button>
                 </div>
             </div>
         </section>
         <section>
-            <div class="k-dialog k-window">
-                <div class="k-window-titlebar k-dialog-titlebar">
-                    <span class="k-window-title k-dialog-title">Confirm</span>
-                    <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
-                        <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                </svg>
-                            </span>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-dialog k-window">
+                    <div class="k-window-titlebar k-dialog-titlebar">
+                        <span class="k-window-title k-dialog-title">Confirm</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content">
+                        <p>Do you want to move or copy?</p>
+                    </div>
+                    <div class="k-actions k-actions-start k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                            <span class="k-button-text">Confirm</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Cancel</span>
                         </button>
                     </div>
                 </div>
-                <div class="k-window-content k-dialog-content">
-                    <p>Are you sure you want to delete this file?</p>
-                    <p>You can't undo this action.</p>
-                </div>
-                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions k-dialog-actions">
-                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                        <span class="k-button-text">Confirm</span>
-                    </button>
-                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                        <span class="k-button-text">Cancel</span>
-                    </button>
+            </div>
+        </section>
+        <section>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-dialog k-window">
+                    <div class="k-window-titlebar k-dialog-titlebar">
+                        <span class="k-window-title k-dialog-title">Confirm</span>
+                        <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                            <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="k-window-content k-dialog-content">
+                        <p>Are you sure you want to delete this file?</p>
+                        <p>You can't undo this action.</p>
+                    </div>
+                    <div class="k-actions k-actions-start k-actions-horizontal k-window-actions k-dialog-actions">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                            <span class="k-button-text">Confirm</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Cancel</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

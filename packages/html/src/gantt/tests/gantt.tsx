@@ -38,9 +38,9 @@ export default () =>(
                                 <option value="month">Month</option>
                             </select>
                             <ButtonGroup className="k-gantt-views">
-                                <Button className="k-view-day">Day</Button>
+                                <Button className="k-view-day k-group-start">Day</Button>
                                 <Button className="k-view-week" selected>Week</Button>
-                                <Button className="k-view-month">Month</Button>
+                                <Button className="k-view-month k-group-end">Month</Button>
                             </ButtonGroup>
                         </div>
                     </GanttHeaderToolbar>

@@ -122,6 +122,7 @@ export const ScrollView = (
                     </div>
                 }
             </div>
+            <div className="k-sr-only"></div>
         </div>
     );
 };
