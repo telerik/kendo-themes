@@ -29,9 +29,8 @@ export type KendoColorEditorState = { [K in (typeof states)[number]]?: boolean }
 
 const defaultProps = {
     view: 'gradient',
-    currentColor: 'fuchsia',
     palette: PALETTEPRESETS.office
-};
+} as const;
 
 export const ColorEditor = (
     props: KendoColorEditorProps &
@@ -41,7 +40,7 @@ export const ColorEditor = (
     const {
         view = defaultProps.view,
         color,
-        currentColor = defaultProps.currentColor,
+        currentColor,
         focus,
         focusView,
         dir,
@@ -59,7 +58,7 @@ export const ColorEditor = (
             <div className="k-coloreditor-header k-hstack">
                 <div className="k-coloreditor-header-actions k-hstack">
                     { group &&
-                        <ButtonGroup>
+                        <ButtonGroup fillMode="flat">
                             <Button className="k-group-start" fillMode="flat" icon="droplet-slider" selected={ view === 'gradient' }></Button>
                             <Button className="k-group-end" fillMode="flat" icon="palette" selected={ view === 'palette' }></Button>
                         </ButtonGroup>

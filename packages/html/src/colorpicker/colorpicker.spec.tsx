@@ -123,7 +123,7 @@ export const ColorPicker = (
                 />
             </Picker>
             { opened && popup &&
-                <Popup className="k-color-picker-popup">
+                <Popup className="k-colorpicker-popup">
                     {popup}
                 </Popup>
             }

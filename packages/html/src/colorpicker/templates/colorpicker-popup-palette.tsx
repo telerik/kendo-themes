@@ -1,17 +1,18 @@
 import { ColorEditor } from "../../coloreditor";
 import { ColorPicker } from "..";
 
-export const ColorPickerPopupPalette = (props: any) => (
+export const ColorPickerPopupPalette = ({ value = "fuchsia", color = "fuchsia", currentColor = "fuchsia", ...other }: any) => (
     <ColorPicker
-        value="fuchsia"
+        value={value}
         opened
         popup={
             <ColorEditor
                 group
                 view="palette"
-                color="rgba(0,0,0, 0.5)"
+                color={color}
+                currentColor={currentColor}
             />
         }
-        {...props}
+        {...other}
     />
 );

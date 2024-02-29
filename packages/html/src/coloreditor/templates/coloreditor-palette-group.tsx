@@ -4,6 +4,7 @@ export const ColorEditorPaletteGroup = (props) => (
     <ColorEditor
         view="palette"
         group
+        currentColor="fuchsia"
         {...props}
     />
 );
