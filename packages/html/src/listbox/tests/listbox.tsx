@@ -1,4 +1,3 @@
-import { ListItem } from '../../list';
 import { ListBoxNormal } from '../../listbox';
 
 const styles = `
@@ -23,23 +22,9 @@ export default () =>(
 
             {actionPositions.map(position => (
                 <>
-                    <ListBoxNormal actionsPosition={position} actions={[ 'up', 'down', 'left', 'right', 'to', 'from', 'x' ]}>
-                        <ListItem>List item 1</ListItem>
-                        <ListItem>List item 2</ListItem>
-                        <ListItem>List item 3</ListItem>
-                        <ListItem>List item 4</ListItem>
-                        <ListItem>List item 5</ListItem>
-                        <ListItem>List item 6</ListItem>
-                    </ListBoxNormal>
+                    <ListBoxNormal actionsPosition={position} />
 
-                    <ListBoxNormal actionsPosition={position} actions={[ 'up', 'down', 'left', 'right', 'to', 'from', 'x' ]} dir="rtl">
-                        <ListItem>List item 1</ListItem>
-                        <ListItem>List item 2</ListItem>
-                        <ListItem>List item 3</ListItem>
-                        <ListItem>List item 4</ListItem>
-                        <ListItem>List item 5</ListItem>
-                        <ListItem>List item 6</ListItem>
-                    </ListBoxNormal>
+                    <ListBoxNormal actionsPosition={position} dir="rtl" />
                 </>
             ))}
         </div>
