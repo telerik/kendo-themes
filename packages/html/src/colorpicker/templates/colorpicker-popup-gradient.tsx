@@ -1,15 +1,17 @@
 import { ColorEditor } from "../../coloreditor";
 import { ColorPicker } from "..";
 
-export const ColorPickerPopupGradient = (props: any) => (
+export const ColorPickerPopupGradient = ({ value, color, currentColor, ...other }: any) => (
     <ColorPicker
+        value={value}
         opened
         popup={
             <ColorEditor
                 group
-                color="rgba(0,0,0, 0.5)"
+                color={color}
+                currentColor={currentColor}
             />
         }
-        {...props}
+        {...other}
     />
 );
