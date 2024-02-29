@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .2 ), rgba( $kendo-color-inverse, .2 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $kendo-color-inverse, .2 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.2)"></span><code>rgba(66, 66, 66, 0.2)</code></td>
 </tr>
 <tr>

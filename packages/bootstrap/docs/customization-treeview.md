@@ -435,7 +435,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .15 ), rgba( $kendo-treeview-text, .15 ))</code></td>
+    <td><code>inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-treeview-text, .15 ))</code></td>
     <td><code>inset 0 0 0 2px rgba(33, 37, 41, 0.15)</code></td>
 </tr>
 <tr>

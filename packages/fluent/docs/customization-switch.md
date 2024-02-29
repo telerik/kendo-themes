@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-disabled-border</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -284,7 +284,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-disabled-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -304,7 +304,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-disabled-border</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -404,7 +404,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-disabled-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -514,7 +514,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-disabled-border</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .06 ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
     <td></td>
 </tr>
 <tr>

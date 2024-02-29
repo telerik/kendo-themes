@@ -760,7 +760,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .1 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 10%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .1 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span><code>rgba(0, 0, 0, 0.1)</code></td>
 </tr>
 <tr>

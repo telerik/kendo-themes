@@ -640,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .23 ), k-get-theme-color-var( neutral-50 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 23%, transparent), k-get-theme-color-var( neutral-50 ))</code></td>
     <td></td>
 </tr>
 <tr>

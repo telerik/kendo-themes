@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-titlebar-bg</td>
     <td></td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), $kendo-color-black), .4 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 40%, transparent), rgba( $kendo-color-black, .4 ))</code></td>
     <td></td>
 </tr>
 <tr>

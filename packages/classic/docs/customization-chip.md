@@ -305,7 +305,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .16 ), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 16%, transparent), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .16 ), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 16%, transparent), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>

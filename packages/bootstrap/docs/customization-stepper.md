@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .6 ), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
     <td><span class="color-preview" style="background-color: #6ea8fe"></span><code>#6ea8fe</code></td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-label-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .65 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
 </tr>
 <tr>

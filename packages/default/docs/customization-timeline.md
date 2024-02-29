@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( base-subtle, true ), .6 ), k-true-mix($kendo-button-bg, $kendo-body-bg, 65%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( base-subtle ) 60%, transparent), k-true-mix($kendo-button-bg, $kendo-body-bg, 65%))</code></td>
     <td><span class="color-preview" style="background-color: #f9f9f9"></span><code>#f9f9f9</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .6 ), k-true-mix($kendo-button-text, $kendo-body-bg, 65%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 60%, transparent), k-true-mix($kendo-button-text, $kendo-body-bg, 65%))</code></td>
     <td><span class="color-preview" style="background-color: #848484"></span><code>#848484</code></td>
 </tr>
 <tr>

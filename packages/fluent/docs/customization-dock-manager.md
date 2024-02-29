@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .2 ), color-mix(in srgb, k-get-theme-color-var( primary-100 ) 20%, transparent))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 20%, transparent), color-mix(in srgb, k-get-theme-color-var( primary-100 ) 20%, transparent))</code></td>
     <td></td>
 </tr>
 <tr>

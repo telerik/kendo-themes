@@ -522,7 +522,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem if($kendo-enable-color-system, rgba( k-color( border, true ), .5), rgba( $kendo-button-border, .5 ))</code></td>
+    <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 50%, transparent), rgba( $kendo-button-border, .5 ))</code></td>
     <td><code>0 0 0 0.25rem rgba(228, 231, 235, 0.5)</code></td>
 </tr>
 <tr>

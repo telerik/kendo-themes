@@ -259,7 +259,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-alt-row-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .05 ), rgba( k-contrast-legacy( $kendo-table-bg ), .04 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 5%, transparent), rgba( k-contrast-legacy( $kendo-table-bg ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -289,7 +289,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .11 ), k-color-darken($kendo-table-bg, 7%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 11%, transparent), k-color-darken($kendo-table-bg, 7%))</code></td>
     <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
@@ -359,7 +359,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-selected-bg, .25))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25))</code></td>
     <td><span class="color-preview" style="background-color: rgba(255, 99, 88, 0.25)"></span><code>rgba(255, 99, 88, 0.25)</code></td>
 </tr>
 <tr>

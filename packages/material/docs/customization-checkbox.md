@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .54 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 54%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
 </tr>
 <tr>

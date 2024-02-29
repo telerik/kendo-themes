@@ -2177,7 +2177,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 4px 0 if($kendo-enable-color-system, rgba( k-color( border, true ), .75), rgba( $kendo-button-border, .75 ))</code></td>
+    <td><code>0 0 4px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 75%, transparent), rgba( $kendo-button-border, .75 ))</code></td>
     <td><code>0 0 4px 0 rgba(202, 202, 202, 0.75)</code></td>
 </tr>
 <tr>
@@ -3117,7 +3117,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .08 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -3127,7 +3127,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>Color</td>
-    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .04 )</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -3997,7 +3997,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-checkbox-focus-checked-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, rgba( k-color( primary, true ), .3 ), rgba( $kendo-color-primary, .3 ))</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 30%, transparent), rgba( $kendo-color-primary, .3 ))</code></td>
     <td><code>0 0 0 2px rgba(243, 88, 0, 0.3)</code></td>
 </tr>
 <tr>
@@ -4512,7 +4512,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .16 ), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 16%, transparent), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
@@ -4622,7 +4622,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .16 ), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 16%, transparent), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
@@ -6280,7 +6280,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .16 ), rgba( $kendo-color-primary, .16 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 16%, transparent), rgba( $kendo-color-primary, .16 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.16)"></span><code>rgba(243, 88, 0, 0.16)</code></td>
 </tr>
 <tr>
@@ -9223,7 +9223,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-grid-row-resizer-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .2 ), rgba( k-contrast-color( $kendo-grid-bg ), .12 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 20%, transparent), rgba( k-contrast-color( $kendo-grid-bg ), .12 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
@@ -9718,7 +9718,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-button-text, .5))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-button-text, .5))</code></td>
     <td><span class="color-preview" style="background-color: rgba(39, 39, 39, 0.5)"></span><code>rgba(39, 39, 39, 0.5)</code></td>
 </tr>
 <tr>
@@ -9748,7 +9748,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-input-outline-hover-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .8 ), rgba( $kendo-button-text, .8))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 80%, transparent), rgba( $kendo-button-text, .8))</code></td>
     <td><span class="color-preview" style="background-color: rgba(39, 39, 39, 0.8)"></span><code>rgba(39, 39, 39, 0.8)</code></td>
 </tr>
 <tr>
@@ -10877,7 +10877,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span><code>rgba(243, 88, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -13389,7 +13389,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-picker-outline-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-picker-outline-text, .5))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-picker-outline-text, .5))</code></td>
     <td><span class="color-preview" style="background-color: rgba(39, 39, 39, 0.5)"></span><code>rgba(39, 39, 39, 0.5)</code></td>
 </tr>
 <tr>
@@ -13529,7 +13529,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-picker-flat-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .04 ), rgba( $kendo-button-text, .04 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( $kendo-button-text, .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(39, 39, 39, 0.04)"></span><code>rgba(39, 39, 39, 0.04)</code></td>
 </tr>
 <tr>
@@ -13549,7 +13549,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-picker-flat-hover-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), rgba( $kendo-button-border, .16 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), rgba( $kendo-button-border, .16 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(202, 202, 202, 0.16)"></span><code>rgba(202, 202, 202, 0.16)</code></td>
 </tr>
 <tr>
@@ -15525,7 +15525,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .2 ), rgba( $kendo-color-inverse, .2 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $kendo-color-inverse, .2 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(64, 64, 64, 0.2)"></span><code>rgba(64, 64, 64, 0.2)</code></td>
 </tr>
 <tr>
@@ -15835,7 +15835,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 4px 0 if($kendo-enable-color-system, rgba( k-color( primary, true ), .75 ), rgba( $kendo-slider-draghandle-border, .75 ))</code></td>
+    <td><code>0 0 4px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 75%, transparent), rgba( $kendo-slider-draghandle-border, .75 ))</code></td>
     <td><code>0 0 4px 0 rgba(204, 74, 0, 0.75)</code></td>
 </tr>
 <tr>
@@ -16525,7 +16525,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-spreadsheet-selection-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span><code>rgba(243, 88, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -16595,7 +16595,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-spreadsheet-partial-selection-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span><code>rgba(243, 88, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -16625,7 +16625,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-spreadsheet-auto-fill-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span><code>rgba(243, 88, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -17025,7 +17025,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-spreadsheet-drawing-anchor-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span><code>rgba(243, 88, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -17375,7 +17375,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .6 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: #8d8d8d"></span><code>#8d8d8d</code></td>
 </tr>
 <tr>
@@ -17455,7 +17455,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .6 ), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60% ))</code></td>
     <td><span class="color-preview" style="background-color: #f89b66"></span><code>#f89b66</code></td>
 </tr>
 <tr>
@@ -17615,7 +17615,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-stepper-label-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .6 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: #8d8d8d"></span><code>#8d8d8d</code></td>
 </tr>
 <tr>
@@ -17949,7 +17949,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-switch-off-track-focus-ring</td>
     <td>List</td>
-    <td><code>0 0 3px 1px rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .25 )</code></td>
+    <td><code>0 0 3px 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 25%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 ))</code></td>
     <td><code>0 0 3px 1px rgba(0, 0, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -18199,7 +18199,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-switch-on-track-focus-ring</td>
     <td>List</td>
-    <td><code>0 0 3px 1px rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .25 )</code></td>
+    <td><code>0 0 3px 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 25%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 ))</code></td>
     <td><code>0 0 3px 1px rgba(0, 0, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -18578,7 +18578,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-table-alt-row-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .05 ), k-try-shade( $kendo-table-bg, .5 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 5%, transparent), k-try-shade( $kendo-table-bg, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
 </tr>
 <tr>
@@ -18608,7 +18608,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .11 ), k-try-shade( $kendo-table-bg, 1 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 11%, transparent), k-try-shade( $kendo-table-bg, 1 ))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
@@ -18678,7 +18678,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span><code>rgba(243, 88, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -20008,7 +20008,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( base, true ), .6 ), k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( base ) 60%, transparent), k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% ))</code></td>
     <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
 </tr>
 <tr>
@@ -20018,7 +20018,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .6 ), k-true-mix( $kendo-button-text, $kendo-body-bg, 65% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 60%, transparent), k-true-mix( $kendo-button-text, $kendo-body-bg, 65% ))</code></td>
     <td><span class="color-preview" style="background-color: #737373"></span><code>#737373</code></td>
 </tr>
 <tr>
@@ -20028,7 +20028,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .15 ), k-true-mix( #000000, $kendo-body-bg, 4.8% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 15%, transparent), k-true-mix( #000000, $kendo-body-bg, 4.8% ))</code></td>
     <td><span class="color-preview" style="background-color: #f3f3f3"></span><code>#f3f3f3</code></td>
 </tr>
 <tr>

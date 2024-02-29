@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .25 ), rgba( $kendo-breadcrumb-text, .25 ))</code></td>
+    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 25%, transparent), rgba( $kendo-breadcrumb-text, .25 ))</code></td>
     <td><code>inset 0 0 0 3px rgba(33, 37, 41, 0.25)</code></td>
 </tr>
 <tr>

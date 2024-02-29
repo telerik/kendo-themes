@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-text</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-checked-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-text</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color( neutral, 60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color( neutral, 60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-border</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>

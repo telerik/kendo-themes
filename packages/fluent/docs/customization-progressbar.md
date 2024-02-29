@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-disabled-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .06 ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-disabled-text</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
     <td></td>
 </tr>
 <tr>

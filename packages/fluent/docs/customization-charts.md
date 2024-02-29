@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>

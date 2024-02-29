@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-selection-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.25)"></span><code>rgba(63, 81, 181, 0.25)</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-auto-fill-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.25)"></span><code>rgba(63, 81, 181, 0.25)</code></td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-auto-fill-punch-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( app-surface, true ), .5 ), rgba( $kendo-component-bg, .5 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 50%, transparent), rgba( $kendo-component-bg, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.5)"></span><code>rgba(255, 255, 255, 0.5)</code></td>
 </tr>
 <tr>
@@ -800,7 +800,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-drawing-anchor-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( secondary, true ), .25 ), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( secondary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(229, 26, 95, 0.25)"></span><code>rgba(229, 26, 95, 0.25)</code></td>
 </tr>
 <tr>
