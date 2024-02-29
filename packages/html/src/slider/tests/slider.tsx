@@ -7,15 +7,15 @@ const style = `
         align-items: center;
     }
 
-    .k-slider-0 {
+    .slider-0 {
         --kendo-slider-start: 0;
         --kendo-slider-end: 0;
     }
-    .k-slider-50 {
+    .slider-50 {
         --kendo-slider-start: 0;
         --kendo-slider-end: 50;
     }
-    .k-slider-100 {
+    .slider-100 {
         --kendo-slider-start: 0;
         --kendo-slider-end: 100;
     }
@@ -34,28 +34,28 @@ export default () =>(
                 <>
                     <span>{state}</span>
                     <section>
-                        <SliderNormal { ...{ [state]: true }} className="k-slider-0" />
+                        <SliderNormal { ...{ [state]: true }} className="slider-0" />
                     </section>
 
                     <section>
-                        <SliderNormal { ...{ [state]: true }} className="k-slider-50" />
+                        <SliderNormal { ...{ [state]: true }} className="slider-50" />
                     </section>
 
                     <section>
-                        <SliderNormal { ...{ [state]: true }} className="k-slider-100" />
+                        <SliderNormal { ...{ [state]: true }} className="slider-100" />
                     </section>
                 </>
             ))}
 
             <span>RTL</span>
             <section>
-                <SliderNormal className="k-slider-0" dir="rtl" />
+                <SliderNormal className="slider-0" dir="rtl" />
             </section>
             <section>
-                <SliderNormal className="k-slider-50" dir="rtl" />
+                <SliderNormal className="slider-50" dir="rtl" />
             </section>
             <section>
-                <SliderNormal className="k-slider-100" dir="rtl" />
+                <SliderNormal className="slider-100" dir="rtl" />
             </section>
         </div>
     </>

@@ -10,15 +10,6 @@ const style = `
         height: 300px;
     }
 
-    .k-slider {
-        --kendo-slider-start: 0;
-        --kendo-slider-end: 60;
-    }
-    .k-range-slider {
-        --kendo-slider-start: 20;
-        --kendo-slider-end: 60;
-    }
-
     .k-slider-items {
         position: relative;
     }
