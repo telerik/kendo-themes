@@ -1,25 +1,40 @@
+import { EditorContent, EditorToolbar } from '..';
 import { classNames, stateClassNames, States } from '../misc';
 
 export const EDITOR_CLASSNAME = `k-editor`;
 
 const states = [
     States.readonly,
-    States.disabled
+    States.disabled,
+    States.focus
 ];
 
 const options = {};
 
-const defaultProps = {};
+export type KendoEditorProps = {
+    toolbarItems?: JSX.Element[] | JSX.Element;
+    resizable?: boolean;
+    toolbarResizable?: boolean;
+};
+
+const defaultProps = {
+    toolbarResizable: false
+};
 
 export type KendoEditorState = { [K in (typeof states)[number]]?: boolean };
 
 export const Editor = (
     props: KendoEditorState &
+        KendoEditorProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
         readonly,
         disabled,
+        focus,
+        toolbarItems,
+        toolbarResizable = defaultProps.toolbarResizable,
+        resizable,
         ...other
     } = props;
 
@@ -33,8 +48,21 @@ export const Editor = (
                     readonly,
                     disabled,
                 }),
+                {
+                    [`${EDITOR_CLASSNAME}-resizable`]: resizable
+                }
             )}>
-            {props.children}
+            <EditorToolbar resizable={toolbarResizable}>
+                {toolbarItems}
+            </EditorToolbar>
+            <EditorContent
+                className={classNames(
+                    stateClassNames(EDITOR_CLASSNAME, {
+                        focus,
+                    }),
+                )}>
+                {props.children}
+            </EditorContent>
         </div>
     );
 };

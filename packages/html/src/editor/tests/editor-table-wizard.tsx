@@ -1,3 +1,4 @@
+import { Popup } from '../..';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
@@ -13,6 +14,14 @@ import { WindowNormal } from '../../window';
 const styles = `
     .k-window {
         width: 100%;
+        position: relative;
+    }
+
+    .k-animation-container {
+        width: 166px;
+        height: 254px;
+        overflow: visible;
+        display: inline-block;
         position: relative;
     }
 `;
@@ -267,6 +276,50 @@ export default () =>(
                         />
                     </FormNormal>
                 </WindowNormal>
+            </section>
+
+            <section>
+                <Popup className="k-ct-popup k-group k-reset" style={{ display: "block", position: "absolute", width: '100%' }}>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled k-selected"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <span className="k-ct-cell k-disabled"></span>
+                    <div className="k-status">Create a 3 x 5 table</div>
+                    <div>
+                        <Button icon="table-wizard">Table Wizard</Button>
+                    </div>
+                </Popup>
             </section>
         </div>
     </>

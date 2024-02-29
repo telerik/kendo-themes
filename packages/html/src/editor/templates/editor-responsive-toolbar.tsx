@@ -2,8 +2,9 @@ import { Editor } from '..';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 
-export const EditorNormal = (props) => (
-    <Editor
+export const EditorResponsiveToolbar = (props) => (
+    <Editor toolbarResizable
+        style={{ width: "482px" }}
         toolbarItems={[
             <ButtonGroup>
                 <Button className="k-group-start" disabled icon="undo"></Button>
@@ -23,12 +24,13 @@ export const EditorNormal = (props) => (
                 <Button className="k-group-start" icon="indent"></Button>
                 <Button className="k-group-end" icon="outdent"></Button>
             </ButtonGroup>,
-            <ButtonGroup>
+            <ButtonGroup className="k-hidden">
                 <Button className="k-group-start" icon="align-left"></Button>
                 <Button icon="align-center"></Button>
                 <Button icon="align-right"></Button>
                 <Button className="k-group-end" icon="align-justify"></Button>
-            </ButtonGroup>
+            </ButtonGroup>,
+            <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
         ]}
         children={
             <>
