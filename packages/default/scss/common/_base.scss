@@ -94,12 +94,12 @@
                 $kendo-component-header-border,
                 $kendo-component-header-gradient
             );
-            padding-inline: k-map-get( $kendo-spacing, 2 );
-            padding-block: k-map-get( $kendo-spacing, 1 );
+            padding-inline: k-spacing(2);
+            padding-block: k-spacing(1);
         }
         > .k-content {
-            padding-inline: k-map-get( $kendo-spacing, 2 );
-            padding-block: k-map-get( $kendo-spacing, 1 );
+            padding-inline: k-spacing(2);
+            padding-block: k-spacing(1);
         }
     }
     .k-content {
@@ -141,7 +141,7 @@
 @include exports( "common/misc/hr" ) {
 
     .k-hr {
-        margin: k-map-get( $kendo-spacing, 4 ) auto;
+        margin: k-spacing(4) auto;
         padding: 0;
         height: 0;
         border-width: 1px 0 0;

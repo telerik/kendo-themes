@@ -2,7 +2,7 @@
 
 /// The spacing index of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-spacer: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-orgchart-spacer: k-spacing(6) !default;
 /// The vertical padding of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-padding-y: $kendo-orgchart-spacer !default;
@@ -72,7 +72,7 @@ $kendo-orgchart-node-group-focus-shadow: k-elevation(1) !default;
 $kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The bottom margin of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-margin-bottom: k-math-div( $kendo-orgchart-spacer, 3 ) !default;
+$kendo-orgchart-node-group-title-margin-bottom: calc( #{$kendo-orgchart-spacer} / 3 ) !default;
 /// The line height of the OrgChart node group title.
 /// @group orgchart
 $kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-sm, normal ) !default;
@@ -108,14 +108,14 @@ $kendo-orgchart-card-focus-shadow: k-elevation(1) !default;
 
 /// The bottom margin of the OrgChart Card title.
 /// @group orgchart
-$kendo-orgchart-card-title-margin-bottom: 0px !default;
+$kendo-orgchart-card-title-margin-bottom: k-spacing(0) !default;
 /// The font size of the OrgChart Card title.
 /// @group orgchart
 $kendo-orgchart-card-title-font-size: null !default;
 
 /// The bottom margin of the OrgChart Card subtitle.
 /// @group orgchart
-$kendo-orgchart-card-subtitle-margin-bottom: 0px !default;
+$kendo-orgchart-card-subtitle-margin-bottom: k-spacing(0) !default;
 /// The font size of the OrgChart Card subtitle.
 /// @group orgchart
 $kendo-orgchart-card-subtitle-font-size: null !default;

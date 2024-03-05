@@ -82,22 +82,22 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                width: ( $kendo-loader-sm-segment-size * 3 );
-                height: ( $kendo-loader-sm-segment-size * 1.5 );
+                width: calc( #{$kendo-loader-sm-segment-size} * 3 );
+                height: calc( #{$kendo-loader-sm-segment-size} * 1.5 );
             }
         }
 
         &.k-loader-md {
             .k-loader-canvas {
-                width: ( $kendo-loader-md-segment-size * 3 );
-                height: ( $kendo-loader-md-segment-size * 1.5 );
+                width: calc( #{$kendo-loader-md-segment-size} * 3 );
+                height: calc( #{$kendo-loader-md-segment-size} * 1.5 );
             }
         }
 
         &.k-loader-lg {
             .k-loader-canvas {
-                width: ( $kendo-loader-lg-segment-size * 3 );
-                height: ( $kendo-loader-lg-segment-size * 1.5 );
+                width: calc( #{$kendo-loader-lg-segment-size} * 3 );
+                height: calc( #{$kendo-loader-lg-segment-size} * 1.5 );
             }
         }
     }
@@ -161,7 +161,7 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                margin: k-math-div( $kendo-loader-sm-segment-size, 2 );
+                margin: calc( #{$kendo-loader-sm-segment-size} / 2 );
                 width: calc( #{$kendo-loader-sm-spinner-3-width} - #{$kendo-loader-sm-segment-size} );
                 height: calc( #{$kendo-loader-sm-spinner-3-height} - #{$kendo-loader-sm-segment-size} );
             }
@@ -169,7 +169,7 @@
 
         &.k-loader-md {
             .k-loader-canvas {
-                margin: k-math-div( $kendo-loader-md-segment-size, 2 );
+                margin: calc( #{ $kendo-loader-md-segment-size} / 2 );
                 width: calc( #{$kendo-loader-md-spinner-3-width} - #{$kendo-loader-md-segment-size} );
                 height: calc( #{$kendo-loader-md-spinner-3-height} - #{$kendo-loader-md-segment-size} );
             }
@@ -177,7 +177,7 @@
 
         &.k-loader-lg {
             .k-loader-canvas {
-                margin: k-math-div( $kendo-loader-lg-segment-size, 2 );
+                margin: calc( #{$kendo-loader-lg-segment-size} / 2 );
                 width: calc( #{$kendo-loader-lg-spinner-3-width} - #{$kendo-loader-lg-segment-size} );
                 height: calc( #{$kendo-loader-lg-spinner-3-height} - #{$kendo-loader-lg-segment-size} );
             }

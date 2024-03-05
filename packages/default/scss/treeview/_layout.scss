@@ -27,7 +27,7 @@
 
     // Treeview filter
     .k-treeview-filter {
-        padding: k-map-get( $kendo-spacing, 2 );
+        padding: k-spacing(2);
         display: block;
         position: relative;
         flex: none;

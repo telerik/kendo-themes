@@ -140,7 +140,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: k-map-get( $kendo-spacing, 1 );
+        gap: k-spacing(1);
 
         .k-radio-label {
             margin: 0;

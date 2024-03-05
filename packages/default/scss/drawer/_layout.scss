@@ -139,8 +139,8 @@
         cursor: pointer;
 
         > .k-drawer-link {
-            margin-block: (-$kendo-drawer-item-padding-y);
-            margin-inline: (-$kendo-drawer-item-padding-x);
+            margin-block: calc( #{$kendo-drawer-item-padding-y} * -1 );
+            margin-inline: calc( #{$kendo-drawer-item-padding-x} * -1 );
             padding-block: $kendo-drawer-item-padding-y;
             padding-inline: $kendo-drawer-item-padding-x;
             color: inherit;
@@ -177,7 +177,7 @@
         // Hierarchy items
         @for $i from 1 through $kendo-drawer-item-level-count {
             &.k-level-#{$i} {
-                padding-inline-start: ( $i + 1) * $kendo-drawer-item-level-padding-x;
+                padding-inline-start: calc(( #{$i} + 1) * #{$kendo-drawer-item-level-padding-x}) ;
             }
         }
     }

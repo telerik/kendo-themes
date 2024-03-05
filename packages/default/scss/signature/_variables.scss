@@ -6,10 +6,10 @@ $kendo-signature-lg-min-height: 110px !default;
 $kendo-signature-maximized-width: 750px !default;
 $kendo-signature-maximized-height: 252px !default;
 
-$kendo-signature-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-signature-sm-padding-x: k-map-get( $kendo-spacing, 0.5 ) !default;
-$kendo-signature-md-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-signature-lg-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-signature-padding-x: k-spacing(1) !default;
+$kendo-signature-sm-padding-x: k-spacing(0.5) !default;
+$kendo-signature-md-padding-x: k-spacing(1) !default;
+$kendo-signature-lg-padding-x: k-spacing(2) !default;
 
 $kendo-signature-padding-y: $kendo-signature-padding-x !default;
 $kendo-signature-sm-padding-y: $kendo-signature-sm-padding-x !default;
@@ -45,5 +45,5 @@ $kendo-signature-sizes: (
     )
 ) !default;
 
-$kendo-signature-actions-gap: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-signature-actions-gap: k-spacing(1) !default;
 $kendo-signature-maximized-line-width: 3px !default;

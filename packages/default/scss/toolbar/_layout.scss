@@ -133,7 +133,7 @@
 
             // Remove once we decide to not size empty containers
             &::before {
-                margin-inline-start: -$_spacing;
+                margin-inline-start: calc( #{$_spacing} * -1 );
             }
 
             > * > label {
@@ -194,7 +194,7 @@
         }
 
         .k-separator {
-            margin: k-map-get( $kendo-spacing, 1 ) 0;
+            margin: k-spacing(1) 0;
         }
 
         // Group

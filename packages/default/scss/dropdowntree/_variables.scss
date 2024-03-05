@@ -2,7 +2,7 @@
 
 /// The horizontal padding of the DropdownTree popup
 /// @group dropdowntree
-$kendo-dropdowntree-popup-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropdowntree-popup-padding-x: k-spacing(2) !default;
 /// The vertical padding of the DropdownTree popup
 /// @group dropdowntree
-$kendo-dropdowntree-popup-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropdowntree-popup-padding-y: k-spacing(2) !default;

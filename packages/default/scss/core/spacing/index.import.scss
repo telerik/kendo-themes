@@ -1,0 +1,29 @@
+@import "@progress/kendo-theme-core/scss/spacing/index.import.scss";
+
+$kendo-icon-spacing: k-spacing(1) !default;
+$kendo-icon-padding: k-spacing(1) !default;
+
+/// Horizontal padding.
+/// @group common
+$kendo-padding-x: k-spacing(2) !default;
+/// Vertical padding.
+/// @group common
+$kendo-padding-y: k-spacing(1) !default;
+/// Small horizontal padding.
+/// @group common
+$kendo-padding-sm-x: k-spacing(1) !default;
+/// Small vertical padding.
+/// @group common
+$kendo-padding-sm-y: k-spacing(0.5) !default;
+/// Medium horizontal padding.
+/// @group common
+$kendo-padding-md-x: k-spacing(2) !default;
+/// Medium vertical padding.
+/// @group common
+$kendo-padding-md-y: k-spacing(1) !default;
+/// Large horizontal padding.
+/// @group common
+$kendo-padding-lg-x: k-spacing(3) !default;
+/// Large vertical padding.
+/// @group common
+$kendo-padding-lg-y: k-spacing(1.5) !default;

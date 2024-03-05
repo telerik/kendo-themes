@@ -112,7 +112,7 @@
 
         .k-alert-error {
             font-size: var( --kendo-font-size-sm, inherit );
-            margin-top: $kendo-padding-md-y * 2;
+            margin-top: calc( #{$kendo-padding-md-y} * 2 );
         }
 
         .k-field-info {
@@ -242,7 +242,7 @@
         fieldset {
             border-width: 1px 0 0;
             border-style: solid;
-            margin: ($kendo-form-spacer * 2) 0;
+            margin: calc( #{$kendo-form-spacer} * 2 ) 0;
             padding: 0;
 
             &:first-child:first-of-type {
@@ -259,7 +259,7 @@
             text-align: start;
             font-weight: 600;
             line-height: 1;
-            margin-bottom: $kendo-padding-lg-y * 2;
+            margin-bottom: calc( #{$kendo-padding-lg-y} * 2 );
             text-transform: uppercase;
             padding: 0 $kendo-padding-md-x 0 0;
             width: auto;
@@ -269,7 +269,7 @@
             display: flex;
             align-items: flex-start;
             text-align: start;
-            margin-bottom: $kendo-padding-lg-y * 2;
+            margin-bottom: calc( #{$kendo-padding-lg-y} * 2 );
 
             > span:not(.k-widget) {
                 width: $kendo-inline-form-element-width;
@@ -291,7 +291,7 @@
 
             .k-alert-error {
                 font-size: var( --kendo-font-size-sm, inherit );
-                margin-top: $kendo-padding-md-y * 2;
+                margin-top: calc( #{$kendo-padding-md-y} * 2 );
             }
 
             .k-field-info {
@@ -323,12 +323,12 @@
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
         // TODO: refactor
-        margin: k-map-get( $kendo-spacing, 4 ) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
+        margin: k-spacing(4) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
     }
 
 
     .k-edit-label {
-        margin: 0 0 k-map-get( $kendo-spacing, 4 ) 0;
+        margin: 0 0 k-spacing(4) 0;
         // TODO: do we need the input variable?
         padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
         width: 30%;
@@ -338,7 +338,7 @@
         clear: both;
     }
     .k-edit-field {
-        margin: 0 0 k-map-get( $kendo-spacing, 4 ) 0;
+        margin: 0 0 k-spacing(4) 0;
         width: 65%;
         float: right;
         clear: right;
@@ -364,11 +364,11 @@
 
         .k-radio-label,
         .k-checkbox-label {
-            margin-right: k-map-get( $kendo-spacing, 4 );
+            margin-right: k-spacing(4);
         }
 
         > .k-reset > li + li {
-            margin-top: k-map-get( $kendo-spacing, 2 );
+            margin-top: k-spacing(2);
         }
 
         .k-reset .k-widget {

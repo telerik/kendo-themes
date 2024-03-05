@@ -101,7 +101,7 @@
     }
 
     .k-treelist-toggle {
-        margin-block: -$kendo-icon-padding;
+        margin-block: calc( #{$kendo-icon-padding} * -1 );
         padding: $kendo-icon-padding;
         box-sizing: content-box;
         cursor: pointer;

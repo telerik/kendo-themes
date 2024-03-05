@@ -348,7 +348,7 @@
     .k-pane-wrapper { // stylelint-disable-line
 
         .k-appbar {
-            padding: k-map-get( $kendo-spacing, 1 );
+            padding: k-spacing(1);
         }
 
         .k-list-title,
@@ -372,15 +372,15 @@
             }
         }
         .k-listgroup + .k-listgroup {
-            margin-top: k-map-get( $kendo-spacing, 4 );
+            margin-top: k-spacing(4);
         }
 
         // Column menu
         .k-column-menu {
-            padding: k-map-get( $kendo-spacing, 2 );
+            padding: k-spacing(2);
             display: flex;
             flex-flow: column nowrap;
-            gap: k-map-get( $kendo-spacing, 2 );
+            gap: k-spacing(2);
 
             .k-filter-item .k-filterable * {
                 pointer-events: none;
@@ -392,16 +392,16 @@
             }
 
             .k-listgroup {
-                margin-inline: -#{k-map-get( $kendo-spacing, 2 )};
+                margin-inline: calc( #{k-spacing(2)} * -1 );
             }
         }
 
         // Filter menu
         .k-filter-menu {
-            padding: k-map-get( $kendo-spacing, 2 );
+            padding: k-spacing(2);
             display: flex;
             flex-flow: column nowrap;
-            gap: k-map-get( $kendo-spacing, 2 );
+            gap: k-spacing(2);
 
             .k-list-title {
                 padding: 0;
@@ -421,7 +421,7 @@
             }
 
             .k-listgroup {
-                margin-inline: -#{k-map-get( $kendo-spacing, 2 )};
+                margin-inline: calc( #{k-spacing(2)} * -1 );
             }
         }
 

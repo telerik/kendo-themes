@@ -14,23 +14,23 @@ $kendo-stepper-padding-x: null !default;
 $kendo-stepper-padding-y: null !default;
 /// The horizontal margin the Stepper label.
 /// @group stepper
-$kendo-stepper-label-margin-x: 12px !default;
+$kendo-stepper-label-margin-x: k-spacing(3) !default;
 /// The horizontal padding the Stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-x: 12px !default;
+$kendo-stepper-label-padding-x: k-spacing(3) !default;
 /// The vertical padding the Stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-y: 5px !default;
+$kendo-stepper-label-padding-y: calc( #{k-spacing(2.5)} / 2 ) !default;
 /// The width of the border around the Stepper.
 /// @group stepper
 $kendo-stepper-border-width: 0px !default;
 
 /// The horizontal padding of the Stepper content.
 /// @group stepper
-$kendo-stepper-inline-content-padding-x: 20px !default;
+$kendo-stepper-inline-content-padding-x: k-spacing(5) !default;
 /// The vertical padding of the Stepper content.
 /// @group stepper
-$kendo-stepper-inline-content-padding-y: 10px !default;
+$kendo-stepper-inline-content-padding-y: k-spacing(2.5) !default;
 
 // The font size of the Stepper.
 /// @group stepper

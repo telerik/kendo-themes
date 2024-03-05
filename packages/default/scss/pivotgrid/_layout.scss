@@ -282,11 +282,11 @@
             margin-inline: $kendo-pivotgrid-configurator-fields-margin-x;
             display: flex;
             flex-direction: column;
-            gap: k-math-div( $kendo-pivotgrid-spacer, 2 );
+            gap: calc( #{$kendo-pivotgrid-spacer} / 2 );
         }
 
         .k-select-all .k-checkbox {
-            margin-inline-end: k-map-get( $kendo-spacing, 1 );
+            margin-inline-end: k-spacing(1);
         }
 
         .k-fields-list-wrapper {
@@ -299,7 +299,7 @@
         }
 
         .k-settings-description {
-            margin-top: k-map-get( $kendo-spacing, 4 );
+            margin-top: k-spacing(4);
             text-align: center;
         }
 
@@ -354,7 +354,7 @@
         align-items: center;
 
         .k-icon {
-            margin-right: k-map-get( $kendo-spacing, 2 );
+            margin-right: k-spacing(2);
         }
         .k-dropdown-list {
             max-width: 100px;
@@ -578,7 +578,7 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-start;
-        gap: k-map-get( $kendo-spacing, 2 );
+        gap: k-spacing(2);
 
         > .k-pivotgrid-configurator-panel {
             max-width: 320px;
@@ -597,11 +597,11 @@
         }
 
         .k-pivotgrid-configurator-content {
-            padding: k-map-get( $kendo-spacing, 4 );
+            padding: k-spacing(4);
             max-height: 100%;
             display: flex;
             flex-flow: column nowrap;
-            gap: k-map-get( $kendo-spacing, 4 );
+            gap: k-spacing(4);
             overflow-x: hidden;
             overflow-y: auto;
         }
@@ -609,24 +609,24 @@
         .k-pivotgrid-targets {
             display: flex;
             flex-flow: column nowrap;
-            gap: k-map-get( $kendo-spacing, 4 );
+            gap: k-spacing(4);
         }
 
         .k-pivotgrid-configurator-section {
             display: flex;
             flex-flow: column nowrap;
-            gap: k-map-get( $kendo-spacing, 2 );
+            gap: k-spacing(2);
         }
 
         .k-column-fields {
             margin: 0;
-            padding: k-map-get( $kendo-spacing, 1 );
+            padding: k-spacing(1);
             max-height: 200px;
             border-width: 1px;
             border-style: solid;
             display: flex;
             flex-flow: row wrap;
-            gap: k-map-get( $kendo-spacing, 1 );
+            gap: k-spacing(1);
             overflow-x: hidden;
             overflow-y: auto;
 
@@ -638,7 +638,7 @@
 
     // PivotGrid toggle icon
     .k-pivotgrid-toggle {
-        margin-block: -$kendo-icon-padding;
+        margin-block: calc( #{$kendo-icon-padding} * -1 );
         padding: $kendo-icon-padding;
         box-sizing: content-box;
         cursor: pointer;

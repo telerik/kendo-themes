@@ -43,7 +43,7 @@
         .k-icon-wrapper-host:not(:only-child) &,
         &:not(:only-child) {
             margin-inline-end: $kendo-fab-icon-spacing;
-            margin-inline-start: -$kendo-fab-icon-spacing;
+            margin-inline-start: calc( #{$kendo-fab-icon-spacing} * -1 );
         }
     }
 
@@ -83,7 +83,7 @@
 
     .k-fab-item {
         list-style-type: none;
-        margin-block-end: k-map-get( $kendo-spacing, 2 );
+        margin-block-end: k-spacing(2);
         outline: none;
         white-space: nowrap;
         display: flex;
@@ -96,7 +96,7 @@
 
             .k-fab-item-text {
                 // Needed for fab item positioning in RTL
-                margin-right: k-map-get( $kendo-spacing, 2 );
+                margin-right: k-spacing(2);
             }
         }
         &.k-text-left {
@@ -104,7 +104,7 @@
 
             .k-fab-item-text {
                 // Needed for fab item positioning in RTL
-                margin-left: k-map-get( $kendo-spacing, 2 );
+                margin-left: k-spacing(2);
             }
         }
     }

@@ -429,12 +429,12 @@
             line-height: $_line-height;
 
             .k-input-values {
-                padding: k-math-div( $_padding-y, 2 );
-                gap: k-math-div( $_padding-y, 2 );
+                padding: calc( #{$_padding-y} /2 );
+                gap: calc( #{$_padding-y} / 2 );
             }
             .k-input-values > .k-searchbar,
             .k-input-values > .k-input-inner {
-                margin: - k-math-div( $_padding-y, 2 );
+                margin: calc( calc( #{$_padding-y} / 2 ) * -1 );
             }
 
             .k-input-inner {

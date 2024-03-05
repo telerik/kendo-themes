@@ -97,7 +97,7 @@
 
     .k-scrollview-nav > .k-link {
         margin-block: 0;
-        margin-inline: k-math-div( $kendo-scrollview-pager-item-spacing, 2 );
+        margin-inline: calc( #{$kendo-scrollview-pager-item-spacing} / 2 );
         padding: 0;
         width: $kendo-scrollview-pagebutton-size;
         height: $kendo-scrollview-pagebutton-size;

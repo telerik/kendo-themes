@@ -88,7 +88,7 @@
             @for $i from 1 through $kendo-panelbar-item-level-count {
                 &.k-level-#{$i} {
                     .k-link {
-                        padding-left: ( $kendo-panelbar-item-padding-x * $i );
+                        padding-left: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
                     }
                 }
             }
@@ -127,7 +127,7 @@
                     &.k-level-#{$i} {
                         .k-link {
                             padding-left: $kendo-panelbar-item-padding-x;
-                            padding-right: ( $kendo-panelbar-item-padding-x * $i );
+                            padding-right: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
                         }
                     }
                 }

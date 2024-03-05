@@ -239,7 +239,7 @@
 
         .k-table-#{$size} .k-table-list .k-table-group-td > span {
             padding-block: 0;
-            padding-inline: k-math-div( $_cell-padding-x, 2 );
+            padding-inline: calc( #{$_cell-padding-x} / 2 );
         }
 
         .k-table-#{$size} .k-table-list .k-table-group-row::before {

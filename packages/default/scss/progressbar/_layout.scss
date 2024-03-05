@@ -73,7 +73,7 @@
     }
     .k-progress-status {
         padding-block: 0;
-        padding-inline: k-map-get( $kendo-spacing, 2 );
+        padding-inline: k-spacing(2);
         min-width: 10px;
         text-align: center;
         display: inline-block;
