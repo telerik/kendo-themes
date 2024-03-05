@@ -16,7 +16,7 @@
 
     // Horizontal line
     .k-hr {
-        margin-block: k-map-get( $kendo-spacing, 4 );
+        margin-block: k-spacing(4);
         padding: 0;
         height: 0;
         border-width: 1px 0 0;
