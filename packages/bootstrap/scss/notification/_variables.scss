@@ -2,7 +2,7 @@
 
 /// The row-gap between the elements in the Notification group.
 /// @group notification
-$kendo-notification-group-gap: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-notification-group-gap: k-spacing(3) !default;
 
 /// The horizontal padding of the Notification.
 /// @group notification

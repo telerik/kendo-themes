@@ -8,8 +8,8 @@ $kendo-media-player-bg: $kendo-component-bg !default;
 $kendo-media-player-text: $kendo-component-text !default;
 $kendo-media-player-border: $kendo-component-border !default;
 
-$kendo-media-player-titlebar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-media-player-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
+$kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
 $kendo-media-player-titlebar-bg: null !default;
 $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
 $kendo-media-player-titlebar-border: null !default;

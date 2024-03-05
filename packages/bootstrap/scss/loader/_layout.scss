@@ -19,7 +19,7 @@
     }
 
     .k-loading-image::before {
-        border-width: k-map-get( $kendo-spacing, 1 );
+        border-width: k-spacing(1);
     }
 
 }

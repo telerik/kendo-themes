@@ -247,7 +247,7 @@ $kendo-input-clear-value-hover-opacity: 1 !default;
 
 /// The vertical margin of the clear value icon.
 /// @group input
-$kendo-input-values-margin-y: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-input-values-margin-y: k-spacing(0.5) !default;
 /// The horizontal margin of the clear value icon.
 /// @group input
 $kendo-input-values-margin-x: $kendo-input-values-margin-y !default;

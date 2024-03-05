@@ -20,7 +20,7 @@
     }
 
     .k-spreadsheet-filter {
-        padding: k-map-get( $kendo-spacing, 1 );
+        padding: k-spacing(1);
     }
 
 }

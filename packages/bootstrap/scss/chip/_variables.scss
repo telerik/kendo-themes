@@ -8,33 +8,33 @@
 $kendo-chip-border-width: 1px !default;
 /// The spacing between the text and the icons of the Chip.
 /// @group chip
-$kendo-chip-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-spacing: k-spacing(1) !default;
 
 /// The horizontal padding of the Chip.
 /// @group chip
-$kendo-chip-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the small Chip.
 /// @group chip
-$kendo-chip-sm-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-sm-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-md-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the large Chip.
 /// @group chip
-$kendo-chip-lg-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-lg-padding-x: k-spacing(1) !default;
 
 /// The vertical padding of the Chip.
 /// @group chip
-$kendo-chip-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-padding-y: k-spacing(1) !default;
 /// The vertical padding of the small Chip.
 /// @group chip
-$kendo-chip-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-chip-sm-padding-y: k-spacing(0.5) !default;
 /// The vertical padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-md-padding-y: k-spacing(1) !default;
 /// The vertical padding of the large Chip.
 /// @group chip
-$kendo-chip-lg-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-chip-lg-padding-y: k-spacing(1.5) !default;
 
 /// The font size of the Chip.
 /// @group chip
@@ -63,8 +63,8 @@ $kendo-chip-lg-line-height: $kendo-chip-line-height !default;
 
 /// The calculated height of the Chip.
 /// @group chip
-$kendo-chip-calc-size: calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} ) !default;
-$kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height * 1em} + #{$kendo-chip-sm-padding-y * 2} + #{$kendo-chip-border-width * 2} ) !default;
+$kendo-chip-calc-size: calc( #{$kendo-chip-line-height * 1em} + calc( #{$kendo-chip-padding-y} * 2 ) + #{$kendo-chip-border-width * 2} ) !default;
+$kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height * 1em} + calc( #{$kendo-chip-sm-padding-y} * 2 ) + #{$kendo-chip-border-width * 2} ) !default;
 
 
 /// The map with the sizes of the Chip.
@@ -173,7 +173,7 @@ $kendo-chip-outline-selected-text: $kendo-chip-outline-hover-text !default;
 /// The sizes of the Chip list.
 /// @group chip
 $kendo-chip-list-sizes: (
-    sm: k-map-get( $kendo-spacing, 1 ),
-    md: k-map-get( $kendo-spacing, 1 ),
-    lg: k-map-get( $kendo-spacing, 1 )
+    sm: k-spacing(1),
+    md: k-spacing(1),
+    lg: k-spacing(1)
 ) !default;

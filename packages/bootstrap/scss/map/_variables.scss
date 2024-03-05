@@ -12,13 +12,13 @@ $kendo-map-bg: $kendo-component-bg !default;
 $kendo-map-text: $kendo-component-text !default;
 $kendo-map-border: $kendo-component-border !default;
 
-$kendo-map-navigator-margin: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-map-navigator-padding: 2px !default;
-$kendo-map-navigator-width: calc( #{$kendo-icon-size * 3} + #{$kendo-map-navigator-padding * 2} ) !default;
+$kendo-map-navigator-margin: k-spacing(4) !default;
+$kendo-map-navigator-padding: k-spacing(0.5) !default;
+$kendo-map-navigator-width: calc( calc( #{$kendo-icon-size} * 3 ) + calc( #{$kendo-map-navigator-padding} * 2 ) ) !default;
 $kendo-map-navigator-height: $kendo-map-navigator-width !default;
 $kendo-map-navigator-border-width: 1px !default;
 
-$kendo-map-zoom-control-margin: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-map-zoom-control-margin: k-spacing(4) !default;
 $kendo-map-zoom-control-button-padding-x: $kendo-button-padding-y !default;
 $kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding-x !default;
 

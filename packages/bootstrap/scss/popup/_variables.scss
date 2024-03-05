@@ -20,10 +20,10 @@ $kendo-popup-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Horizontal padding of the popup content.
 /// @group popup
-$kendo-popup-content-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-popup-content-padding-x: k-spacing(2) !default;
 /// Vertical padding of the popup content.
 /// @group popup
-$kendo-popup-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-popup-content-padding-y: k-spacing(2) !default;
 
 /// Background color of the popup.
 /// @group popup
