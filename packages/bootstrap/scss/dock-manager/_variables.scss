@@ -10,10 +10,10 @@ $kendo-dock-manager-border: $kendo-base-border !default;
 
 /// The vertical padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dock-manager-pane-header-padding-y: k-spacing(2) !default;
 /// The horizontal padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-dock-manager-pane-header-padding-x: k-spacing(4) !default;
 /// The width of the border around the pane header in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-pane-header-border-width: $kendo-dock-manager-border-width !default;
@@ -48,11 +48,11 @@ $kendo-dock-manager-pane-title-font-weight: var( --kendo-font-weight-normal, nor
 $kendo-dock-manager-pane-content-padding-x: $kendo-dock-manager-pane-header-padding-x !default;
 /// The vertical padding of the pane content in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dock-manager-pane-content-padding-y: k-spacing(2) !default;
 
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-tabbed-pane-padding-y: k-map-get( $kendo-spacing, 3.5 ) !default;
+$kendo-dock-manager-tabbed-pane-padding-y: k-spacing(3.5) !default;
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-tabbed-pane-padding-x: $kendo-dock-manager-pane-content-padding-y !default;
@@ -69,7 +69,7 @@ $kendo-dock-manager-unpinned-container-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.0
 
 /// The padding of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-padding: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-dock-indicator-padding: k-spacing(1.5) !default;
 /// The background color of the dock indicator in the DockManager component.
 /// @group dock-manager
 $kendo-dock-indicator-bg: $kendo-component-bg !default;

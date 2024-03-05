@@ -11,15 +11,15 @@ $kendo-image-editor-font-family: var( --kendo-font-family, inherit ) !default;
 
 $kendo-image-editor-content-border-width: 1px !default;
 
-$kendo-image-editor-action-pane-padding-y: k-map-get( $kendo-spacing, 8 ) !default;
-$kendo-image-editor-action-pane-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-image-editor-action-pane-padding-y: k-spacing(8) !default;
+$kendo-image-editor-action-pane-padding-x: k-spacing(4) !default;
 $kendo-image-editor-action-pane-width: if( $kendo-image-editor-content-border-width == null, 240px, calc( 240px + #{$kendo-image-editor-content-border-width} ) ) !default;
 
 $kendo-image-editor-crop-border-width: 1px !default;
 $kendo-image-editor-crop-border-style: dashed !default;
 
-$kendo-image-editor-resize-handle-margin-x: 1px !default;
-$kendo-image-editor-resize-handle-margin-y: 1px !default;
+$kendo-image-editor-resize-handle-margin-x: k-spacing(1px) !default;
+$kendo-image-editor-resize-handle-margin-y: k-spacing(1px) !default;
 $kendo-image-editor-resize-handle-border-width: 0 2px 2px 0 !default;
 $kendo-image-editor-resize-handle-size: 15px !default;
 

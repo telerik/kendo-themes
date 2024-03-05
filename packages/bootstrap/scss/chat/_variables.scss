@@ -2,10 +2,10 @@
 
 /// The horizontal padding of the Chat.
 /// @group chat
-$kendo-chat-padding-x: 16px !default;
+$kendo-chat-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Chat.
 /// @group chat
-$kendo-chat-padding-y: 16px !default;
+$kendo-chat-padding-y: k-spacing(4) !default;
 /// The width of the Chat.
 /// @group chat
 $kendo-chat-width: 500px !default;
@@ -27,10 +27,10 @@ $kendo-chat-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal spacing between the items of the Chat.
 /// @group chat
-$kendo-chat-item-spacing-x: 8px !default;
+$kendo-chat-item-spacing-x: k-spacing(2) !default;
 /// The vertical spacing between the items of the Chat.
 /// @group chat
-$kendo-chat-item-spacing-y: 16px !default;
+$kendo-chat-item-spacing-y: k-spacing(4) !default;
 
 /// The horizontal padding of the Chat message list.
 /// @group chat
@@ -60,13 +60,13 @@ $kendo-chat-timestamp-bg: null !default;
 
 /// The horizontal padding of the Chat bubble message.
 /// @group chat
-$kendo-chat-bubble-padding-x: 16px !default;
+$kendo-chat-bubble-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Chat bubble message.
 /// @group chat
-$kendo-chat-bubble-padding-y: 8px !default;
+$kendo-chat-bubble-padding-y: k-spacing(2) !default;
 /// The spacing of the Chat bubble message.
 /// @group chat
-$kendo-chat-bubble-spacing: 2px !default;
+$kendo-chat-bubble-spacing: k-spacing(0.5) !default;
 /// The line height of the Chat bubble message.
 /// @group chat
 $kendo-chat-bubble-line-height: 1.25 !default;
@@ -106,13 +106,13 @@ $kendo-chat-toolbar-border: inherit !default;
 
 /// The horizontal padding of the Chat quick reply.
 /// @group chat
-$kendo-chat-quick-reply-padding-x: 12px !default;
+$kendo-chat-quick-reply-padding-x: k-spacing(3) !default;
 /// The vertical padding of the Chat quick reply.
 /// @group chat
-$kendo-chat-quick-reply-padding-y: 8px !default;
+$kendo-chat-quick-reply-padding-y: k-spacing(2) !default;
 /// The spacing of the Chat quick reply.
 /// @group chat
-$kendo-chat-quick-reply-spacing: 8px !default;
+$kendo-chat-quick-reply-spacing: k-spacing(2) !default;
 /// The line height of the Chat quick reply.
 /// @group chat
 $kendo-chat-quick-reply-line-height: $kendo-chat-bubble-line-height !default;

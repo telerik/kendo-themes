@@ -1,2 +1,2 @@
 // DateTime
-$kendo-datetime-width: calc( #{$kendo-calendar-cell-size * 8} + #{$kendo-infinite-calendar-view-padding-x * 2}) !default;
+$kendo-datetime-width: calc( calc( #{$kendo-calendar-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 )) !default;

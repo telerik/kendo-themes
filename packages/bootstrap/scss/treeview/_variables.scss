@@ -34,38 +34,38 @@ $kendo-treeview-indent: 24px !default;
 
 /// The horizontal padding of the TreeView items.
 /// @group treeview
-$kendo-treeview-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-treeview-item-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the small TreeView items.
 /// @group treeview
-$kendo-treeview-sm-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-sm-item-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium TreeView items.
 /// @group treeview
-$kendo-treeview-md-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-treeview-md-item-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the large TreeView items.
 /// @group treeview
-$kendo-treeview-lg-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-treeview-lg-item-padding-x: k-spacing(3) !default;
 /// The vertical padding of the TreeView items.
 /// @group treeview
-$kendo-treeview-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-item-padding-y: k-spacing(1) !default;
 /// The vertical padding of the small TreeView items.
 /// @group treeview
-$kendo-treeview-sm-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-sm-item-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium TreeView items.
 /// @group treeview
-$kendo-treeview-md-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-md-item-padding-y: k-spacing(1) !default;
 /// The vertical padding of the large TreeView items.
 /// @group treeview
-$kendo-treeview-lg-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-lg-item-padding-y: k-spacing(2) !default;
 /// The border width of the TreeView items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0px !default;
 /// The border radius of the TreeView items.
 /// @group treeview
-$kendo-treeview-item-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-item-border-radius: k-spacing(1) !default;
 
 /// The horizontal padding of the checkbox in the small TreeView.
 /// @group treeview
-$kendo-treeview-sm-checkbox-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-sm-checkbox-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the checkbox in the medium TreeView.
 /// @group treeview
 $kendo-treeview-md-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x !default;
@@ -74,7 +74,7 @@ $kendo-treeview-md-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x !de
 $kendo-treeview-lg-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x !default;
 /// The vertical padding of the checkbox in the small TreeView.
 /// @group treeview
-$kendo-treeview-sm-checkbox-padding-y: k-map-get( $kendo-spacing, .5 ) !default;
+$kendo-treeview-sm-checkbox-padding-y: k-spacing(0.5) !default;
 /// The vertical padding of the checkbox in the medium TreeView.
 /// @group treeview
 $kendo-treeview-md-checkbox-padding-y: null !default;

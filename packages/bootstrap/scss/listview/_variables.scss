@@ -2,10 +2,10 @@
 
 /// The horizontal padding of the ListView.
 /// @group listview
-$kendo-listview-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-listview-padding-x: k-spacing(1) !default;
 /// The vertical padding of the ListView.
 /// @group listview
-$kendo-listview-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-listview-padding-y: k-spacing(1) !default;
 /// The width of the border around bordered ListView.
 /// @group listview
 $kendo-listview-border-width: 1px !default;
@@ -31,10 +31,10 @@ $kendo-listview-border: $kendo-component-border !default;
 
 /// The horizontal padding of the ListView items.
 /// @group listview
-$kendo-listview-item-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-listview-item-padding-x: k-spacing(1) !default;
 /// The vertical padding of the ListView items.
 /// @group listview
-$kendo-listview-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-listview-item-padding-y: k-spacing(1) !default;
 
 /// The text color of the selected ListView items.
 /// @group listview

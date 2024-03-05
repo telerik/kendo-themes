@@ -2,10 +2,10 @@
 
 /// The horizontal padding of the DropZone.
 /// @group dropzone
-$kendo-dropzone-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-padding-x: k-spacing(2) !default;
 /// The vertical padding of the DropZone.
 /// @group dropzone
-$kendo-dropzone-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-padding-y: k-spacing(2) !default;
 /// The border width of the DropZone.
 /// @group dropzone
 $kendo-dropzone-border-width: 1px !default;
@@ -35,7 +35,7 @@ $kendo-dropzone-border: $kendo-component-border !default;
 
 /// The spacing below the DropZone icon.
 /// @group dropzone
-$kendo-dropzone-icon-spacing: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-dropzone-icon-spacing: k-spacing(6) !default;
 /// The text color of the DropZone icon.
 /// @group dropzone
 $kendo-dropzone-icon-text: if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-dropzone-text, 8 )) !default;
@@ -48,7 +48,7 @@ $kendo-dropzone-icon-hover-text: $kendo-color-primary !default;
 $kendo-dropzone-hint-font-size: null !default;
 /// The spacing below the DropZone hint.
 /// @group dropzone
-$kendo-dropzone-hint-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-hint-spacing: k-spacing(2) !default;
 /// The text color of the DropZone hint.
 /// @group dropzone
 $kendo-dropzone-hint-text: null !default;

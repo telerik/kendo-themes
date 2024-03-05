@@ -4,7 +4,7 @@
 
 /// The spacer of the ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-spacer: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-color-gradient-spacer: k-spacing(4) !default;
 
 /// The width of the ColorGradient.
 /// @group cologradient
@@ -55,7 +55,7 @@ $kendo-color-gradient-focus-shadow: null !default;
 $kendo-color-gradient-canvas-border-radius: $kendo-border-radius-md !default;
 /// The spacing between the items of the ColorGradient canvas.
 /// @group cologradient
-$kendo-color-gradient-canvas-gap: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-color-gradient-canvas-gap: k-spacing(3) !default;
 /// The height the ColorGradient canvas hsv rectangle.
 /// @group cologradient
 $kendo-color-gradient-canvas-rectangle-height: 180px !default;
@@ -126,10 +126,10 @@ $kendo-color-gradient-canvas-draghandle-margin-x: - k-math-div( $kendo-color-gra
 $kendo-color-gradient-input-width: 56px !default;
 /// The spacing between the ColorGradient inputs.
 /// @group cologradient
-$kendo-color-gradient-input-gap: k-math-div( $kendo-color-gradient-spacer, 2 ) !default;
+$kendo-color-gradient-input-gap: calc( #{$kendo-color-gradient-spacer} / 2 ) !default;
 /// The spacing between the ColorGradient inputs and their labels.
 /// @group cologradient
-$kendo-color-gradient-input-label-gap: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-color-gradient-input-label-gap: k-spacing(1) !default;
 /// The text color of the ColorGradient input labels.
 /// @group cologradient
 $kendo-color-gradient-input-label-text: $kendo-subtle-text !default;
@@ -139,4 +139,4 @@ $kendo-color-gradient-input-label-text: $kendo-subtle-text !default;
 $kendo-color-gradient-contrast-ratio-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group cologradient
-$kendo-color-gradient-contrast-spacer: k-math-div( $kendo-color-gradient-spacer, 2 ) !default;
+$kendo-color-gradient-contrast-spacer: calc( #{$kendo-color-gradient-spacer} / 2 ) !default;
