@@ -1,6 +1,6 @@
 // Tabstrip
-$kendo-tabstrip-wrapper-padding-x: 0px !default;
-$kendo-tabstrip-wrapper-padding-y: 0px !default;
+$kendo-tabstrip-wrapper-padding-x: k-spacing(0) !default;
+$kendo-tabstrip-wrapper-padding-y: k-spacing(0) !default;
 $kendo-tabstrip-wrapper-border-width: 0px !default;
 
 $kendo-tabstrip-font-family: var( --kendo-font-family, inherit ) !default;
@@ -24,10 +24,10 @@ $kendo-tabstrip-border: $kendo-component-border !default;
 
 /// Horizontal padding of tabs
 /// @group tabstrip
-$kendo-tabstrip-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-tabstrip-item-padding-x: k-spacing(2) !default;
 /// Vertical padding of tabs
 /// @group tabstrip
-$kendo-tabstrip-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-tabstrip-item-padding-y: k-spacing(1) !default;
 /// Width of border around tabs
 /// @group tabstrip
 $kendo-tabstrip-item-border-width: 1px !default;
@@ -36,7 +36,7 @@ $kendo-tabstrip-item-border-width: 1px !default;
 $kendo-tabstrip-item-border-radius: $kendo-border-radius-md !default;
 /// Spacing between tabs
 /// @group tabstrip
-$kendo-tabstrip-item-gap: 0 !default;
+$kendo-tabstrip-item-gap: k-spacing(0) !default;
 
 /// Background color of tabs
 /// @group tabstrip
@@ -93,10 +93,10 @@ $kendo-tabstrip-indicator-color: null !default;
 
 /// Horizontal padding of tabstrip content
 /// @group tabstrip
-$kendo-tabstrip-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-content-padding-x: k-spacing(4) !default;
 /// Vertical padding of tabstrip content
 /// @group tabstrip
-$kendo-tabstrip-content-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-content-padding-y: k-spacing(4) !default;
 /// Width of border around tabstrip content
 /// @group tabstrip
 $kendo-tabstrip-content-border-width: 1px !default;

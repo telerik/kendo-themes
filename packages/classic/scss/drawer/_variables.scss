@@ -38,7 +38,7 @@ $kendo-drawer-scrollbar-hover-color: rgba( 156, 156, 156, 1 ) !default;
 
 /// The horizontal padding of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-drawer-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-y: $kendo-padding-md-x !default;
@@ -58,10 +58,11 @@ $kendo-drawer-item-level-count: 5 !default;
 
 /// The horizontal padding of the Drawer icon.
 /// @group drawer
-$kendo-drawer-icon-padding-x: 0 !default;
+$kendo-drawer-icon-padding-x: k-spacing(0) !default;
+
 /// The vertical padding of the Drawer icon.
 /// @group drawer
-$kendo-drawer-icon-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-drawer-icon-padding-y: k-spacing(1) !default;
 
 /// The initial width of the mini Drawer.
 /// @group drawer

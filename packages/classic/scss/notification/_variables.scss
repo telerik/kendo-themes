@@ -3,14 +3,14 @@
 
 /// The row-gap between the elements in the Notification group.
 /// @group notification
-$kendo-notification-group-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-notification-group-gap: k-spacing(2) !default;
 
 /// The horizontal padding of the Notification.
 /// @group notification
-$kendo-notification-padding-x: 8px !default;
+$kendo-notification-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Notification.
 /// @group notification
-$kendo-notification-padding-y: 4px !default;
+$kendo-notification-padding-y: k-spacing(1) !default;
 /// The width of the border around the Notification.
 /// @group notification
 $kendo-notification-border-width: 1px !default;

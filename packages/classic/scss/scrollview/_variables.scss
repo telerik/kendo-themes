@@ -47,13 +47,13 @@ $kendo-scrollview-pagebutton-shadow: 0 0 0 2px rgba( black, .13 ) !default;
 $kendo-scrollview-pager-offset: 0 !default;
 /// The spacing between the ScrollView pager items.
 /// @group scrollview
-$kendo-scrollview-pager-item-spacing: 20px !default;
+$kendo-scrollview-pager-item-spacing: k-spacing(5) !default;
 /// The border width of the ScrollView pager items.
 /// @group scrollview
 $kendo-scrollview-pager-item-border-width: 0px !default;
 /// The height of the ScrollView pager.
 /// @group scrollview
-$kendo-scrollview-pager-height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} ) !default;
+$kendo-scrollview-pager-height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + calc( #{$kendo-scrollview-pager-item-spacing} * 2 ) ) !default;
 
 /// The text color of the highlight over the tapped ScrollView navigation arrows.
 /// @group scrollview

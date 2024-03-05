@@ -7,7 +7,7 @@
 $kendo-window-border-width: 1px !default;
 /// The border radius of the Window.
 /// @group window
-$kendo-window-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-window-border-radius: k-spacing(1) !default;
 /// The font family of the Window.
 /// @group window
 $kendo-window-font-family: var( --kendo-font-family, inherit ) !default;
@@ -20,10 +20,10 @@ $kendo-window-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal padding of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-window-titlebar-padding-x: k-spacing(3) !default;
 /// The vertical padding of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-window-titlebar-padding-y: k-spacing(2) !default;
 /// The width of the border of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border-width: 0 0 1px !default;
@@ -50,10 +50,10 @@ $kendo-window-action-hover-opacity: null !default;
 
 /// The horizontal padding of the content of the Window.
 /// @group window
-$kendo-window-inner-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-window-inner-padding-x: k-spacing(3) !default;
 /// The vertical padding of the content of the Window.
 /// @group window
-$kendo-window-inner-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-window-inner-padding-y: k-spacing(3) !default;
 
 /// The horizontal padding of the Window action buttons.
 /// @group window
