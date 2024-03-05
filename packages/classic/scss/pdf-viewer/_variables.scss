@@ -48,7 +48,7 @@ $kendo-pdf-viewer-canvas-border: null !default;
 
 /// The spacing of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-spacing: 30px !default;
+$kendo-pdf-viewer-page-spacing: k-spacing(7.5) !default;
 
 /// The background color of the PDFViewer page.
 /// @group pdf-viewer
@@ -68,7 +68,7 @@ $kendo-pdf-viewer-page-shadow: k-elevation(3) !default;
 $kendo-pdf-viewer-search-panel-padding-x: $kendo-toolbar-md-padding-x !default;
 /// The vertical padding of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-pdf-viewer-search-panel-padding-y: k-spacing(3) !default;
 /// The spacing of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-spacing: $kendo-toolbar-md-spacing !default;
@@ -77,7 +77,7 @@ $kendo-pdf-viewer-search-panel-spacing: $kendo-toolbar-md-spacing !default;
 $kendo-pdf-viewer-search-panel-border-width: 1px !default;
 /// The border radius of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-pdf-viewer-search-panel-border-radius: k-spacing(1) !default;
 /// The background color of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-bg: $kendo-component-bg !default;

@@ -23,10 +23,10 @@ $kendo-calendar-border: $kendo-component-border !default;
 
 /// The horizontal padding of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-header-padding-x: k-spacing(1) !default;
 /// The vertical padding of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-header-padding-y: k-spacing(1) !default;
 
 /// The border width of the header in the Calendar.
 /// @group calendar
@@ -54,14 +54,14 @@ $kendo-calendar-nav-gap: null !default;
 
 /// The horizontal padding of the footer in the Calendar.
 /// @group calendar
-$kendo-calendar-footer-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-calendar-footer-padding-x: k-spacing(4) !default;
 /// The vertical padding of the footer in the Calendar.
 /// @group calendar
-$kendo-calendar-footer-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-calendar-footer-padding-y: k-spacing(2) !default;
 
 /// The horizontal padding of the cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-cell-padding-x: k-spacing(1) !default;
 /// The vertical padding of the cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-padding-y: $kendo-calendar-cell-padding-x !default;
@@ -101,10 +101,11 @@ $kendo-calendar-header-cell-opacity: null !default;
 
 /// The horizontal padding of the caption in the Calendar.
 /// @group calendar
-$kendo-calendar-caption-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-calendar-caption-padding-x: k-spacing(2) !default;
 /// The vertical padding of the caption in the Calendar.
 /// @group calendar
-$kendo-calendar-caption-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-caption-padding-y: k-spacing(1) !default;
+
 /// The height of the caption in the Calendar.
 /// @group calendar
 $kendo-calendar-caption-height: $kendo-calendar-cell-size !default;
@@ -128,9 +129,10 @@ $kendo-calendar-view-width: ($kendo-calendar-cell-size * 8) !default;
 /// The height of the Calendar view.
 /// @group calendar
 $kendo-calendar-view-height: ($kendo-calendar-cell-size * 7) !default;
+
 /// The gap between the items in the Calendar view.
 /// @group calendar
-$kendo-calendar-view-gap: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-calendar-view-gap: k-spacing(4) !default;
 
 /// The background color of the weekend cells in the Calendar.
 /// @group calendar
@@ -241,20 +243,19 @@ $kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
 /// @group calendar
 $kendo-calendar-navigation-hover-text: $kendo-link-hover-text !default;
 
-
 /// The horizontal padding of the header in the Infinite Calendar.
 /// @group calendar
-$kendo-infinite-calendar-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-infinite-calendar-header-padding-x: k-spacing(4) !default;
 // The vertical padding of the header in the Infinite Calendar.
 /// @group calendar
-$kendo-infinite-calendar-header-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-infinite-calendar-header-padding-y: k-spacing(2) !default;
 
 /// The horizontal padding of the Calendar view in the Infinite Calendar.
-/// @group calen
-$kendo-infinite-calendar-view-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+/// @group calendar
+$kendo-infinite-calendar-view-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Calendar view in the Infinite Calendar.
 /// @group calendar
-$kendo-infinite-calendar-view-padding-y: 0px !default;
+$kendo-infinite-calendar-view-padding-y: k-spacing(0) !default;
 
 /// The height of the Calendar view in the Infinite Calendar.
 /// @group calendar
@@ -268,32 +269,35 @@ $kendo-infinite-calendar-view-height: ( $kendo-calendar-cell-size * 9 ) !default
 $kendo-calendar-sm-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-calendar-sm-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-calendar-sm-cell-size: 28px !default;
+
 /// The horizontal padding of the cells in the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-cell-padding-x: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-calendar-sm-cell-padding-x: k-spacing(0.5) !default;
 /// The vertical padding of the cells in the small Calendar.
 /// @group calendar
-$kendo-calendar-sm-cell-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-calendar-sm-cell-padding-y: k-spacing(0.5) !default;
 
 $kendo-calendar-md-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-calendar-md-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-calendar-md-cell-size: 32px !default;
+
 /// The horizontal padding of the cells in the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-cell-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-md-cell-padding-x: k-spacing(1) !default;
 /// The vertical padding of the cells in the medium Calendar.
 /// @group calendar
-$kendo-calendar-md-cell-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-md-cell-padding-y: k-spacing(1) !default;
 
 $kendo-calendar-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-calendar-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 $kendo-calendar-lg-cell-size: 40px !default;
+
 /// The horizontal padding of the cells in the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-cell-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-calendar-lg-cell-padding-x: k-spacing(2) !default;
 /// The vertical padding of the cells in the large Calendar.
 /// @group calendar
-$kendo-calendar-lg-cell-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-calendar-lg-cell-padding-y: k-spacing(2) !default;
 
 /// The sizes Map of the Calendar.
 /// @group calendar

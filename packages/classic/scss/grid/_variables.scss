@@ -51,15 +51,15 @@ $kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
 $kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
 /// Vertical padding of the grid edit cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-y: 3px !default;
+$kendo-grid-edit-cell-padding-y: calc( #{k-spacing(1.5)} / 2 ) !default;
 
 $kendo-grid-group-drop-hint-size: 6px !default;
 $kendo-grid-group-drop-hint-line-size: k-math-div( $kendo-grid-group-drop-hint-size, 3) !default;
 $kendo-grid-group-drop-hint-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 $kendo-grid-group-drop-hint-top: 3px !default;
 
-$kendo-grid-sm-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-grid-sm-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-grid-sm-padding-x: k-spacing(2) !default;
+$kendo-grid-sm-padding-y: k-spacing(1) !default;
 $kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-header-padding-y: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-grouping-header-padding-x: $kendo-grid-sm-padding-x !default;
@@ -69,7 +69,7 @@ $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-x !default;
 $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
-$kendo-grid-sm-edit-cell-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-grid-sm-edit-cell-padding-y: k-spacing(0.5) !default;
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 $kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-padding-y !default;
@@ -218,7 +218,7 @@ $kendo-grid-selection-aggregates-border: $kendo-grid-border !default;
 $kendo-grid-selection-aggregates-border-width: $kendo-grid-border-width !default;
 /// Spacing between the selection aggregates items
 /// @group grid
-$kendo-grid-selection-aggregates-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-selection-aggregates-spacing: k-spacing(2) !default;
 /// Line height of the selection aggregates container
 /// @group grid
 $kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
@@ -231,15 +231,15 @@ $kendo-grid-sorted-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color
 $kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
 $kendo-grid-sorting-index-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
-$kendo-grid-sorting-index-spacing-y: k-math-div( $kendo-icon-spacing, 2 ) !default;
-$kendo-grid-sorting-index-spacing-x: -$kendo-grid-sorting-index-spacing-y !default;
+$kendo-grid-sorting-index-spacing-y: calc( #{$kendo-icon-spacing} / 2 ) !default;
+$kendo-grid-sorting-index-spacing-x: calc( #{$kendo-grid-sorting-index-spacing-y} * -1 ) !default;
 
 $kendo-grid-grouping-row-bg: if($kendo-enable-color-system, k-color( base ), k-try-shade( $kendo-grid-bg, 1 )) !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
 $kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
 
-$kendo-grid-command-cell-button-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-command-cell-button-spacing: k-spacing(2) !default;
 // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
 $kendo-grid-command-cell-padding-y: calc( #{$kendo-grid-cell-padding-y} - (#{$kendo-button-calc-size} - #{$kendo-line-height-em}) / 2 ) !default;
 
@@ -270,7 +270,7 @@ $kendo-grid-column-menu-max-width: 320px !default;
 
 $kendo-grid-filter-menu-check-all-border-bottom-width: 1px !default;
 
-$kendo-grid-filter-menu-item-spacing-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-filter-menu-item-spacing-x: k-spacing(2) !default;
 $kendo-grid-filter-menu-item-spacing-y: $kendo-grid-filter-menu-item-spacing-x !default;
 
 $kendo-grid-column-menu-popup-padding-x: null !default;
@@ -282,8 +282,8 @@ $kendo-grid-column-menu-item-padding-y: $kendo-menu-popup-item-padding-y !defaul
 $kendo-grid-column-menu-list-item-padding-x: $kendo-list-md-item-padding-x !default;
 $kendo-grid-column-menu-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
-$kendo-grid-column-menu-items-wrap-padding-x: 0 !default;
-$kendo-grid-column-menu-items-wrap-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-grid-column-menu-items-wrap-padding-x: k-spacing(0) !default;
+$kendo-grid-column-menu-items-wrap-padding-y: k-spacing(1.5) !default;
 
 $kendo-grid-column-menu-group-header-padding-x: $kendo-menu-popup-md-item-padding-x !default;
 $kendo-grid-column-menu-group-header-padding-y: $kendo-menu-popup-md-item-padding-y !default;
@@ -297,14 +297,14 @@ $kendo-grid-column-menu-group-header-bg: null !default;
 $kendo-grid-column-menu-group-header-text: $kendo-popup-text !default;
 $kendo-grid-column-menu-group-header-border: $kendo-popup-border !default;
 
-$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: 0 !default;
-$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: k-spacing(0) !default;
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: k-spacing(2) !default;
 
 $kendo-grid-column-menu-tabbed-bg: $kendo-base-bg !default;
 
 $kendo-grid-drag-cell-width: ($kendo-icon-size * 2.25) !default;
 
-$kendo-grid-row-inner-height: calc( #{$kendo-line-height-em} + #{$kendo-grid-cell-padding-y * 2} ) !default;
+$kendo-grid-row-inner-height: calc( #{$kendo-line-height-em} + calc( #{$kendo-grid-cell-padding-y} * 2 ) ) !default;
 
 $kendo-grid-hierarchy-col-width: ($kendo-icon-size * 2) !default;
 
@@ -320,4 +320,4 @@ $kendo-grid-row-resizer-hover-bg: if($kendo-enable-color-system, color-mix(in sr
 $kendo-grid-row-resizer-active-bg: $kendo-color-primary !default;
 /// Height of the grid row resize indicator
 /// @group grid
-$kendo-grid-row-resizer-height: k-map-get( $kendo-spacing, .5 ) !default;
+$kendo-grid-row-resizer-height: k-spacing(0.5) !default;

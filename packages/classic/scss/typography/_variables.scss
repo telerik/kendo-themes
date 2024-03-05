@@ -113,10 +113,10 @@ $kendo-code-line-height: 20px !default;
 $kendo-code-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 $kendo-code-letter-spacing: null !default;
 
-$kendo-code-padding-x: 4px !default;
-$kendo-code-padding-y: 0px !default;
-$kendo-pre-padding-x: 24px !default;
-$kendo-pre-padding-y: 16px !default;
+$kendo-code-padding-x: k-spacing(1) !default;
+$kendo-code-padding-y: k-spacing(0) !default;
+$kendo-pre-padding-x: k-spacing(6) !default;
+$kendo-pre-padding-y: k-spacing(4) !default;
 $kendo-code-border-width: 1px !default;
 
 $kendo-code-bg: $kendo-base-bg !default;

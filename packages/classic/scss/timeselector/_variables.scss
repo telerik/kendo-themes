@@ -26,7 +26,7 @@ $kendo-time-list-item-padding-x: $kendo-list-md-item-padding-x !default;
 $kendo-time-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
 $kendo-time-list-highlight-border-width: 1px 0px !default;
-$kendo-time-list-highlight-height: calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + #{ $kendo-time-list-item-padding-y * 2} ) !default;
+$kendo-time-list-highlight-height: calc( calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} ) + calc( #{$kendo-time-list-item-padding-y} * 2 ) ) !default;
 $kendo-time-list-highlight-bg: $kendo-component-bg !default;
 $kendo-time-list-highlight-border: $kendo-component-border !default;
 
