@@ -5,16 +5,16 @@
 
 /// The horizontal padding of the Pager.
 /// @group pager
-$kendo-pager-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the small Pager.
 /// @group pager
-$kendo-pager-sm-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-pager-sm-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the medium Pager.
 /// @group pager
-$kendo-pager-md-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-md-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the large Pager.
 /// @group pager
-$kendo-pager-lg-padding-x: k-map-get( $kendo-spacing, 2.5 ) !default;
+$kendo-pager-lg-padding-x: k-spacing(2.5) !default;
 /// The vertical padding of the Pager.
 /// @group pager
 $kendo-pager-padding-y: $kendo-pager-padding-x !default;
@@ -40,13 +40,13 @@ $kendo-pager-lg-item-min-width: $kendo-button-lg-calc-size !default;
 
 /// The margin between the item groups in the small Pager.
 /// @group pager
-$kendo-pager-sm-item-group-spacing: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-pager-sm-item-group-spacing: k-spacing(1.5) !default;
 /// The margin between the item groups in the medium Pager.
 /// @group pager
-$kendo-pager-md-item-group-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-md-item-group-spacing: k-spacing(2) !default;
 /// The margin between the item groups in the large Pager.
 /// @group pager
-$kendo-pager-lg-item-group-spacing: k-map-get( $kendo-spacing, 2.5 ) !default;
+$kendo-pager-lg-item-group-spacing: k-spacing(2.5) !default;
 
 /// The border width of the Pager.
 /// @group pager
@@ -89,7 +89,7 @@ $kendo-pager-item-border-width: 0px !default;
 $kendo-pager-item-border-radius: 5em !default;
 /// The spacing around the Pager items.
 /// @group pager
-$kendo-pager-item-spacing: 0px !default;
+$kendo-pager-item-spacing: k-spacing(0) !default;
 /// The background color of the Pager items.
 /// @group pager
 $kendo-pager-item-bg: null !default;

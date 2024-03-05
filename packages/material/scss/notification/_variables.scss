@@ -2,20 +2,20 @@
 
 /// The row-gap between the elements in the Notification group.
 /// @group notification
-$kendo-notification-group-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-notification-group-gap: k-spacing(2) !default;
 
 /// The horizontal padding of the Notification.
 /// @group notification
-$kendo-notification-padding-x: 16px !default;
+$kendo-notification-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Notification.
 /// @group notification
-$kendo-notification-padding-y: 14px !default;
+$kendo-notification-padding-y: k-spacing(3.5) !default;
 /// The width of the border around the Notification.
 /// @group notification
 $kendo-notification-border-width: 0px !default;
 /// The border radius of the Notification.
 /// @group notification
-$kendo-notification-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-notification-border-radius: k-spacing(1) !default;
 /// The font family of the Notification.
 /// @group notification
 $kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;

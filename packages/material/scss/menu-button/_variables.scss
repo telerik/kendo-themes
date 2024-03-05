@@ -2,4 +2,4 @@
 
 /// The horizontal padding of the button arrow in the Menu Button.
 /// @group menu-button
-$kendo-menu-button-arrow-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-menu-button-arrow-padding-x: k-spacing(1) !default;

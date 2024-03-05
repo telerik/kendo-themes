@@ -22,11 +22,11 @@
         }
 
         &.horizontal .k-menu-scroll-button {
-            width: calc( #{$kendo-line-height-em} + #{k-map-get( $kendo-spacing, 1 )});
+            width: calc( #{$kendo-line-height-em} + #{k-spacing(1)});
         }
 
         &.vertical .k-menu-scroll-button {
-            height: calc( #{$kendo-line-height-em} + #{k-map-get( $kendo-spacing, 1 )});
+            height: calc( #{$kendo-line-height-em} + #{k-spacing(1)});
         }
     }
 

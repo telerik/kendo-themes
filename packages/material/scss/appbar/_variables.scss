@@ -8,10 +8,10 @@ $kendo-appbar-margin-x: null !default;
 $kendo-appbar-margin-y: null !default;
 /// The horizontal padding of the AppBar.
 /// @group appbar
-$kendo-appbar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-appbar-padding-x: k-spacing(2) !default;
 /// The vertical padding of the AppBar.
 /// @group appbar
-$kendo-appbar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-appbar-padding-y: k-spacing(2) !default;
 /// The width of the border around the AppBar.
 /// @group appbar
 $kendo-appbar-border-width: 0px !default;
@@ -30,7 +30,7 @@ $kendo-appbar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The spacing between the AppBar sections.
 /// @group appbar
-$kendo-appbar-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-appbar-gap: k-spacing(2) !default;
 
 /// The background color of the AppBar based on light theme color.
 /// @group appbar

@@ -12,11 +12,11 @@ $kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal margin of the Rating container.
 /// @group rating
-$kendo-rating-container-margin-x: k-math-div( $kendo-padding-sm-x, 2 ) !default;
+$kendo-rating-container-margin-x: calc( #{$kendo-padding-sm-x} / 2 ) !default;
 
 /// The horizontal padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-x: k-math-div( $kendo-padding-sm-x, 2 ) !default;
+$kendo-rating-item-padding-x: calc( #{$kendo-padding-sm-x} / 2 ) !default;
 /// The vertical padding of the Rating item.
 /// @group rating
 $kendo-rating-item-padding-y: $kendo-padding-md-y !default;
