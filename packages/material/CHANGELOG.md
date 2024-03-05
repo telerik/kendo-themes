@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.8...v7.2.1) (2024-03-05)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
 ## [7.2.1-dev.8](https://github.com/telerik/kendo-themes/compare/v7.2.1-dev.7...v7.2.1-dev.8) (2024-03-04)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
