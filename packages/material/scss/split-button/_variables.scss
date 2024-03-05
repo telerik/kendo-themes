@@ -6,16 +6,16 @@ $kendo-split-button-focus-shadow: $kendo-button-focus-shadow !default;
 
 /// The horizontal padding of the arrow Button.
 /// @group split-button
-$kendo-split-button-arrow-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-split-button-arrow-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the small arrow Button.
 /// @group split-button
-$kendo-split-button-sm-arrow-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-split-button-sm-arrow-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the medium arrow Button.
 /// @group split-button
-$kendo-split-button-md-arrow-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-split-button-md-arrow-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the large arrow Button.
 /// @group split-button
-$kendo-split-button-lg-arrow-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-split-button-lg-arrow-padding-x: k-spacing(1) !default;
 
 /// The vertical padding of the arrow Button.
 /// @group split-button

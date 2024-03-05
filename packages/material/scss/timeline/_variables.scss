@@ -2,10 +2,10 @@
 
 /// The horizontal spacing of the Timeline.
 /// @group timeline
-$kendo-timeline-spacing-x: 40px !default;
+$kendo-timeline-spacing-x: k-spacing(10) !default;
 /// The vertical spacing of the Timeline.
 /// @group timeline
-$kendo-timeline-spacing-y: 40px !default;
+$kendo-timeline-spacing-y: k-spacing(10) !default;
 /// The padding between the Timeline's track items.
 /// @group timeline
 $kendo-timeline-items-padding: $kendo-padding-md-x !default;
@@ -55,7 +55,7 @@ $kendo-timeline-track-wrap-padding-bottom: k-math-div( $kendo-timeline-track-siz
 $kendo-timeline-track-border-width: 1px !default;
 /// The bottom margin of the Timeline track.
 /// @group timeline
-$kendo-timeline-track-margin-bottom: 18px !default;
+$kendo-timeline-track-margin-bottom: k-spacing(4.5) !default;
 /// The bottom offset of the Timeline track.
 /// @group timeline
 $kendo-timeline-track-bottom-calc: calc(#{k-math-div( $kendo-timeline-track-arrow-height, 2 )} + #{$kendo-timeline-track-wrap-padding-bottom}) !default;
@@ -127,7 +127,7 @@ $kendo-timeline-flag-margin-bottom-calc: calc(#{$kendo-timeline-track-size} + 2 
 $kendo-timeline-date-width: 50px !default;
 /// The bottom margin of the Timeline date.
 /// @group timeline
-$kendo-timeline-date-margin-bottom: 8px !default;
+$kendo-timeline-date-margin-bottom: k-spacing(2) !default;
 
 /// The padding of the vertical Timeline.
 /// @group timeline

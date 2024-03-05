@@ -14,29 +14,29 @@ $kendo-input-border-radius: null !default;
 
 /// The horizontal padding of the Input components.
 /// @group input
-$kendo-input-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-input-padding-x: k-spacing(4) !default;
 /// The horizontal padding of the small Input components.
 /// @group input
-$kendo-input-sm-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-input-sm-padding-x: k-spacing(4) !default;
 /// The horizontal padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-input-md-padding-x: k-spacing(4) !default;
 /// The horizontal padding of the large Input components.
 /// @group input
-$kendo-input-lg-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-input-lg-padding-x: k-spacing(4) !default;
 
 /// The vertical padding of the Input components.
 /// @group input
-$kendo-input-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-padding-y: k-spacing(2) !default;
 /// The vertical padding of the small Input components.
 /// @group input
-$kendo-input-sm-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-input-sm-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-md-padding-y: k-spacing(2) !default;
 /// The vertical padding of the large Input components.
 /// @group input
-$kendo-input-lg-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-lg-padding-y: k-spacing(2) !default;
 
 /// The font family of the Input components.
 /// @group input
@@ -76,24 +76,24 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        button-padding-x: k-map-get( $kendo-spacing, 1 ),
-        button-padding-y: k-map-get( $kendo-spacing, 1 )
+        button-padding-x: k-spacing(1),
+        button-padding-y: k-spacing(1)
     ),
     md: (
         padding-x: $kendo-input-md-padding-x,
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        button-padding-x: k-map-get( $kendo-spacing, 1 ),
-        button-padding-y: k-map-get( $kendo-spacing, 1 )
+        button-padding-x: k-spacing(1),
+        button-padding-y: k-spacing(1)
     ),
     lg: (
         padding-x: $kendo-input-lg-padding-x,
         padding-y: $kendo-input-lg-padding-y,
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
-        button-padding-x: k-map-get( $kendo-spacing, 1 ),
-        button-padding-y: k-map-get( $kendo-spacing, 1 )
+        button-padding-x: k-spacing(1),
+        button-padding-y: k-spacing(1)
     )
 ) !default;
 
@@ -247,7 +247,7 @@ $kendo-input-clear-value-hover-opacity: 1 !default;
 
 /// The vertical margin of the clear value icon.
 /// @group input
-$kendo-input-values-margin-y: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-input-values-margin-y: k-spacing(0.5) !default;
 /// The horizontal margin of the clear value icon.
 /// @group input
 $kendo-input-values-margin-x: $kendo-input-values-margin-y !default;

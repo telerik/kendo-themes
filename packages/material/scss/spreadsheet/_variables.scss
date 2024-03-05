@@ -57,10 +57,10 @@ $kendo-spreadsheet-table-header-gradient: null !default;
 $kendo-spreadsheet-action-bar-border-width: 1px !default;
 /// The horizontal padding of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-action-bar-padding-y: k-spacing(1) !default;
 /// The vertical padding of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-action-bar-padding-x: k-spacing(2) !default;
 /// The font size of the Spreadsheet action bar.
 /// @group spreadsheet
 $kendo-spreadsheet-action-bar-font-size: $kendo-spreadsheet-font-size !default;
@@ -69,11 +69,11 @@ $kendo-spreadsheet-action-bar-font-size: $kendo-spreadsheet-font-size !default;
 $kendo-spreadsheet-action-bar-font-family: Arial, Verdana, sans-serif !default;
 /// The spacings of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-action-bar-spacing: k-spacing(2) !default;
 
 /// The gap of the Spreadsheet formula bar.
 /// @group spreadsheet
-$kendo-spreadsheet-formula-bar-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-formula-bar-gap: k-spacing(2) !default;
 
 /// The horizontal padding of the Spreadsheet formula input.
 /// @group spreadsheet
@@ -144,7 +144,7 @@ $kendo-spreadsheet-auto-fill-punch-bg: if($kendo-enable-color-system, color-mix(
 
 /// The vertical padding of the Spreadsheet cell.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-cell-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the Spreadsheet cell.
 /// @group spreadsheet
 $kendo-spreadsheet-cell-padding-x: $kendo-spreadsheet-cell-padding-y !default;
@@ -154,10 +154,10 @@ $kendo-spreadsheet-cell-padding-x: $kendo-spreadsheet-cell-padding-y !default;
 $kendo-spreadsheet-cell-editor-line-height: 20px !default;
 /// The horizontal padding of the Spreadsheet cell editor.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-editor-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-cell-editor-padding-x: k-spacing(1) !default;
 /// The vertical padding of the Spreadsheet cell editor.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-editor-padding-y: 0px !default;
+$kendo-spreadsheet-cell-editor-padding-y: k-spacing(0) !default;
 /// The background color of the Spreadsheet cell editor.
 /// @group spreadsheet
 $kendo-spreadsheet-cell-editor-bg: $kendo-spreadsheet-bg !default;
@@ -182,10 +182,10 @@ $kendo-spreadsheet-cell-dirty-border: $kendo-color-error !default;
 
 /// The horizontal padding of the Spreadsheet sheets bar.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-bar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-bar-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Spreadsheet sheets bar.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-bar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-bar-padding-y: k-spacing(2) !default;
 /// The border width of the Spreadsheet sheets bar.
 /// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-border-width: 1px !default;
@@ -198,7 +198,7 @@ $kendo-spreadsheet-insert-image-dialog-border-style: dashed !default;
 $kendo-spreadsheet-insert-image-dialog-border-width: 2px !default;
 /// The bottom margin of the Spreadsheet image Dialog.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;
+$kendo-spreadsheet-insert-image-dialog-text-margin-bottom: k-spacing(7.5) !default;
 /// The width of the Spreadsheet image Dialog preview.
 /// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-width: 355px !default;
@@ -262,4 +262,4 @@ $kendo-spreadsheet-drawing-anchor-bg: if($kendo-enable-color-system, color-mix(i
 
 /// The vertical spacing of the Spreadsheet DropZone.
 /// @group spreadsheet
-$kendo-spreadsheet-dropzone-spacing-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-dropzone-spacing-y: k-spacing(2) !default;

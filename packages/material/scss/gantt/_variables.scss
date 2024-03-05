@@ -21,7 +21,7 @@ $kendo-gantt-line-fill: if($kendo-enable-color-system, k-color( subtle ), k-colo
 $kendo-gantt-line-selected-fill: $kendo-selected-bg !default;
 
 $kendo-gantt-dot-size: 8px !default;
-$kendo-gantt-dot-spacing: 4px !default;
+$kendo-gantt-dot-spacing: k-spacing(1) !default;
 $kendo-gantt-dot-bg: $kendo-gantt-text !default;
 $kendo-gantt-dot-border: null !default;
 $kendo-gantt-dot-hover-bg: $kendo-gantt-bg !default;
@@ -37,8 +37,8 @@ $kendo-gantt-summary-progress-bg: $kendo-color-primary !default;
 $kendo-gantt-summary-selected-bg: if($kendo-enable-color-system, k-color( secondary-subtle-active ), k-color-mix( $kendo-color-secondary, $kendo-gantt-bg )) !default;
 $kendo-gantt-summary-progress-selected-bg: $kendo-color-secondary !default;
 
-$kendo-gantt-task-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-gantt-task-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-gantt-task-padding-x: k-spacing(2) !default;
+$kendo-gantt-task-padding-y: k-spacing(1) !default;
 $kendo-gantt-task-border-width: 0px !default;
 $kendo-gantt-task-bg: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-color-primary, $kendo-gantt-bg )) !default;
 $kendo-gantt-task-text: $kendo-color-primary-contrast !default;

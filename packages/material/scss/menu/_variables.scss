@@ -1,6 +1,6 @@
 // Menu
-$kendo-menu-padding-x: 0px !default;
-$kendo-menu-padding-y: 0px !default;
+$kendo-menu-padding-x: k-spacing(0) !default;
+$kendo-menu-padding-y: k-spacing(0) !default;
 $kendo-menu-border-width: 0px !default;
 $kendo-menu-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-menu-font-size: var( --kendo-font-size, inherit ) !default;
@@ -11,9 +11,9 @@ $kendo-menu-text: $kendo-component-text !default;
 $kendo-menu-border: null !default;
 $kendo-menu-gradient: null !default;
 
-$kendo-menu-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-menu-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-menu-item-spacing: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-menu-item-padding-x: k-spacing(4) !default;
+$kendo-menu-item-padding-y: k-spacing(1) !default;
+$kendo-menu-item-spacing: k-spacing(0.5) !default;
 $kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
 
 $kendo-menu-item-bg: rgba( $kendo-menu-text, 0 ) !default;
@@ -33,7 +33,7 @@ $kendo-menu-item-expanded-gradient: null !default;
 
 $kendo-menu-item-focus-shadow: null !default;
 
-$kendo-menu-separator-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-menu-separator-spacing: k-spacing(1) !default;
 
 $kendo-menu-scroll-button-bg: $kendo-component-bg !default;
 $kendo-menu-scroll-button-text: $kendo-subtle-text !default;
@@ -92,24 +92,24 @@ $kendo-menu-popup-gradient: null !default;
 
 /// Horizontal padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-menu-popup-sm-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-menu-popup-md-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-menu-popup-lg-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-menu-popup-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-sm-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-md-item-padding-x: k-spacing(4) !default;
+$kendo-menu-popup-lg-item-padding-x: k-spacing(4) !default;
 
 /// Vertical padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-menu-popup-sm-item-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
-$kendo-menu-popup-md-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-menu-popup-lg-item-padding-y: k-map-get( $kendo-spacing, 2.5 ) !default;
+$kendo-menu-popup-item-padding-y: k-spacing(2) !default;
+$kendo-menu-popup-sm-item-padding-y: k-spacing(1.5) !default;
+$kendo-menu-popup-md-item-padding-y: k-spacing(2) !default;
+$kendo-menu-popup-lg-item-padding-y: k-spacing(2.5) !default;
 
 /// The end padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-end: calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$kendo-icon-size} ) !default;
-$kendo-menu-popup-sm-item-padding-end: calc( #{$kendo-menu-popup-sm-item-padding-x * 2} + #{$kendo-icon-size} ) !default;
-$kendo-menu-popup-md-item-padding-end: calc( #{$kendo-menu-popup-md-item-padding-x * 2} + #{$kendo-icon-size} ) !default;
-$kendo-menu-popup-lg-item-padding-end: calc( #{$kendo-menu-popup-lg-item-padding-x * 2} + #{$kendo-icon-size} ) !default;
+$kendo-menu-popup-item-padding-end: calc( #{$kendo-menu-popup-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
+$kendo-menu-popup-sm-item-padding-end: calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
+$kendo-menu-popup-md-item-padding-end: calc( #{$kendo-menu-popup-md-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
+$kendo-menu-popup-lg-item-padding-end: calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 + #{$kendo-icon-size} ) !default;
 
 /// The start margin of the menu item expand icon.
 /// @group menu
@@ -125,7 +125,7 @@ $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-it
 
 /// The spacing between the menu items in popup.
 /// @group menu
-$kendo-menu-popup-item-spacing: 0px !default;
+$kendo-menu-popup-item-spacing: k-spacing(0) !default;
 
 /// The background of the menu item in popup.
 /// @group menu

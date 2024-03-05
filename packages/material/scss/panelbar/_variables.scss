@@ -2,12 +2,18 @@
 
 /// The horizontal padding of the PanelBar.
 /// @group panelbar
-$kendo-panelbar-padding-x: 0px !default;
+$kendo-panelbar-padding-x: k-spacing(0) !default;
 /// The vertical padding of the PanelBar.
 /// @group panelbar
-$kendo-panelbar-padding-y: 0px !default;
+$kendo-panelbar-padding-y: k-spacing(0) !default;
+/// The font family of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-line-height: k-math-div( 20, 14 ) !default;
 /// The width of the border around the PanelBar.
 /// @group panelbar
@@ -24,17 +30,17 @@ $kendo-panelbar-item-border-style: solid !default;
 
 /// The horizontal padding of the PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-padding-x: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-panelbar-header-padding-x: k-spacing(6) !default;
 /// The vertical padding of the PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-panelbar-header-padding-y: k-spacing(3) !default;
 
 /// The horizontal padding of the PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-padding-x: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-panelbar-item-padding-x: k-spacing(6) !default;
 /// The vertical padding of the PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-panelbar-item-padding-y: k-spacing(3) !default;
 
 /// The maximum nesting of the PanelBar items.
 /// @group panelbar
