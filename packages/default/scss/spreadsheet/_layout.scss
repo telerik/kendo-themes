@@ -194,8 +194,8 @@
             }
 
             .k-spreadsheet-sheets-remove {
-                margin-right: k-map-get( $kendo-spacing, 2 );
-                margin-left: - k-map-get( $kendo-spacing, 2 );
+                margin-right: k-spacing(2);
+                margin-left: calc( #{k-spacing(2)} * -1 );
                 padding: 0;
                 line-height: 1;
                 display: inline-flex;
@@ -549,7 +549,7 @@
                 color: inherit;
             }
             .k-link {
-                padding-left: calc( #{$kendo-icon-size} + #{2 * $kendo-padding-md-y} );
+                padding-left: calc( #{$kendo-icon-size} + calc( 2 * #{$kendo-padding-md-y} ) );
             }
             .k-icon {
                 margin-left: calc(-1 * ( #{$kendo-icon-size} + #{$kendo-padding-md-y} ) );
@@ -598,10 +598,10 @@
         }
         .k-details-content,
         .k-columnmenu-item-content {
-            padding: k-map-get( $kendo-spacing, 2 );
+            padding: k-spacing(2);
             display: flex;
             flex-flow: column nowrap;
-            gap: k-map-get( $kendo-spacing, 2 );
+            gap: k-spacing(2);
 
             .k-filter-and {
                 width: min-content;
@@ -634,10 +634,10 @@
         .k-reset-color { border-bottom-width: 1px; }
         .k-custom-color { border-top-width: 1px; }
         .k-spreadsheet-border-type-palette {
-            padding: k-map-get( $kendo-spacing, 2 );
+            padding: k-spacing(2);
             display: grid;
             grid-template-columns: repeat(5, max-content);
-            gap: k-map-get( $kendo-spacing, 2 );
+            gap: k-spacing(2);
         }
     }
 
@@ -673,12 +673,12 @@
     .k-spreadsheet-format-cells {
 
         .k-spreadsheet-preview {
-            margin-top: k-map-get( $kendo-spacing, 2 );
+            margin-top: k-spacing(2);
             text-align: center;
         }
 
         .k-list-scroller {
-            margin-top: k-map-get( $kendo-spacing, 2 );
+            margin-top: k-spacing(2);
             height: 210px;
             border-width: 1px;
             border-style: solid;
@@ -708,7 +708,7 @@
         .k-page-orientation {
             position: absolute;
             right: 0;
-            top: k-map-get( $kendo-spacing, 2 );
+            top: k-spacing(2);
 
             .k-font-icon {
                 font-size: 6em;

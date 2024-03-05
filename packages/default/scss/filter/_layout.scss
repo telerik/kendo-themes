@@ -42,7 +42,7 @@
                 width: $kendo-filter-padding-x;
                 height: $kendo-filter-line-size;
                 inset-block-start: 50%;
-                inset-inline-start: -$kendo-filter-padding-x;
+                inset-inline-start: calc( #{$kendo-filter-padding-x} * -1 );
             }
 
             .k-toolbar {
@@ -61,7 +61,7 @@
                 position: absolute;
                 width: $kendo-filter-line-size;
                 height: 100%;
-                inset-block-start: -$kendo-filter-padding-y;
+                inset-block-start: calc( #{$kendo-filter-padding-y} * -1 );
                 inset-inline-start: 0;
             }
         }
@@ -72,9 +72,9 @@
             content: "";
             position: absolute;
             width: $kendo-filter-line-size;
-            inset-block-start: calc(-#{$kendo-filter-padding-y} - #{$kendo-filter-line-size});
+            inset-block-start: calc( calc( #{$kendo-filter-padding-y} * -1 ) - #{$kendo-filter-line-size} );
             inset-block-end: 50%;
-            inset-inline-start: -$kendo-filter-padding-x;
+            inset-inline-start: calc( #{$kendo-filter-padding-x} * -1 );
         }
 
         // The forth and fifth selectors targets the Angular rendering

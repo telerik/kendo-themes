@@ -6,7 +6,11 @@ $wcag-min-contrast-ratio: 4.5 !default;
 // Color System
 @import "./color-system/_swatch.scss";
 
+// Typography
 @import "./typography/index.import.scss";
+
+// Spacing
+@import "./spacing/index.import.scss";
 
 @import "@progress/kendo-theme-core/scss/index.import.scss";
 
@@ -19,6 +23,8 @@ $wcag-min-contrast-ratio: 4.5 !default;
 
     // Elevation System
     @include kendo-elevation--styles();
-
+    // Typography
     @include kendo-core--typography--styles();
+    // Spacing
+    @include kendo-spacing--styles();
 }

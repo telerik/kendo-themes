@@ -6,7 +6,7 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-end;
-        gap: k-map-get( $kendo-spacing, 2 );
+        gap: k-spacing(2);
 
         *,
         *::before,

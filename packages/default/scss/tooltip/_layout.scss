@@ -59,8 +59,8 @@
 
     // Callout
     .k-callout {
-        width: ($kendo-tooltip-callout-size * 2);
-        height: ($kendo-tooltip-callout-size * 2);
+        width: calc( #{$kendo-tooltip-callout-size} * 2);
+        height: calc( #{$kendo-tooltip-callout-size} * 2);
         border-width: $kendo-tooltip-callout-size;
         border-style: solid;
         border-color: transparent;
@@ -73,38 +73,38 @@
     // Remove margin tweaking and uncomment when their implementation is fixed.
 
     .k-callout-n {
-        margin-left: -$kendo-tooltip-callout-size;
+        margin-left: calc( #{$kendo-tooltip-callout-size} * -1 );
         border-bottom-color: currentColor;
         // top: 0;
-        top: (-$kendo-tooltip-callout-size * 2);
+        top: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2 );
         left: 50%;
         // transform: translate(-50%, -100%);
         pointer-events: none;
     }
     .k-callout-e {
-        margin-top: -$kendo-tooltip-callout-size;
+        margin-top: calc( #{$kendo-tooltip-callout-size} * -1 );
         border-left-color: currentColor;
         top: 50%;
         // right: 0;
-        right: (-$kendo-tooltip-callout-size * 2);
+        right: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2 );
         // transform: translate(100%, -50%);
         pointer-events: none;
     }
     .k-callout-s {
-        margin-left: -$kendo-tooltip-callout-size;
+        margin-left: calc( #{$kendo-tooltip-callout-size} * -1 );
         border-top-color: currentColor;
         // bottom: 0;
-        bottom: (-$kendo-tooltip-callout-size * 2);
+        bottom: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
         left: 50%;
         // transform: translate(-50%, 100%);
         pointer-events: none;
     }
     .k-callout-w {
-        margin-top: -$kendo-tooltip-callout-size;
+        margin-top: calc( #{$kendo-tooltip-callout-size} * -1 );
         border-right-color: currentColor;
         top: 50%;
         // left: 0;
-        left: (-$kendo-tooltip-callout-size * 2);
+        left: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
         // transform: translate(-100%, -50%);
         pointer-events: none;
     }

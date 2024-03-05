@@ -108,7 +108,7 @@
 
         // File name
         .k-file-name {
-            margin-top: k-math-div( $kendo-file-manager-spacer, 2 );
+            margin-top: calc( #{$kendo-file-manager-spacer} / 2 );
             display: block;
             text-align: center;
             overflow: hidden;
@@ -150,9 +150,9 @@
 
     // Filemanager preview
     .k-filemanager-preview {
-        padding: ($kendo-file-manager-preview-padding-y * 3) $kendo-file-manager-preview-padding-x $kendo-file-manager-preview-padding-y;
+        padding: calc( #{$kendo-file-manager-preview-padding-y} * 3) $kendo-file-manager-preview-padding-x $kendo-file-manager-preview-padding-y;
         width: $kendo-file-manager-preview-width;
-        min-height: calc( #{$kendo-file-manager-preview-padding-y * 4} + #{$kendo-icon-size-xxxl} * 2 + #{$kendo-file-manager-preview-spacing * 3} );
+        min-height: calc( calc( #{$kendo-file-manager-preview-padding-y} * 4 ) + calc( #{$kendo-icon-size-xxxl} * 2 ) + calc( #{$kendo-file-manager-preview-spacing} * 3 ) );
         border-width: 0;
         border-left-width: $kendo-file-manager-preview-border-width;
         border-style: solid;

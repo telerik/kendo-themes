@@ -48,8 +48,8 @@
         position: relative;
 
         > .k-link {
-            margin-block: (-$kendo-listgroup-item-padding-y);
-            margin-inline: (-$kendo-listgroup-item-padding-x);
+            margin-block: calc( #{$kendo-listgroup-item-padding-y} * -1 );
+            margin-inline: calc( #{$kendo-listgroup-item-padding-x} * -1 );
             padding-block: $kendo-listgroup-item-padding-y;
             padding-inline: $kendo-listgroup-item-padding-x;
             color: inherit;
@@ -82,7 +82,7 @@
         }
 
         > .k-select {
-            margin: (-$kendo-listgroup-item-padding-y) (-$kendo-listgroup-item-padding-x) (-$kendo-listgroup-item-padding-y) 0;
+            margin: calc( #{$kendo-listgroup-item-padding-y} * -1 ) calc( #{$kendo-listgroup-item-padding-x} * -1 ) calc( #{$kendo-listgroup-item-padding-y} * -1 ) 0;
             padding: $kendo-listgroup-item-padding-y;
             border-width: 0 0 0 1px;
             border-style: solid;
@@ -94,8 +94,8 @@
 
     // Forms in listgroup
     .k-listgroup-form-row {
-        margin-block: (-$kendo-listgroup-item-padding-y);
-        margin-inline: (-$kendo-listgroup-item-padding-x);
+        margin-block: calc( #{$kendo-listgroup-item-padding-y} * -1 );
+        margin-inline: calc( #{$kendo-listgroup-item-padding-x} * -1 );
         padding-block: $kendo-listgroup-item-padding-y;
         padding-inline: $kendo-listgroup-item-padding-x;
         display: flex;
@@ -160,13 +160,13 @@
         .k-listgroup-item-segmented {
 
             > .k-link {
-                margin-right: -$kendo-listgroup-item-padding-x;
+                margin-right: calc( #{$kendo-listgroup-item-padding-x} * -1 );
                 margin-left: 0;
             }
 
             > .k-select {
                 margin-right: 0;
-                margin-left: -$kendo-listgroup-item-padding-x;
+                margin-left: calc( #{$kendo-listgroup-item-padding-x} * -1 );
                 border-right-width: 1px;
                 border-left-width: 0;
             }

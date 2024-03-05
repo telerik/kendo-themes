@@ -224,7 +224,7 @@
     .k-quick-reply {
         @include border-radius( 100px );
         margin-inline-end: $kendo-chat-quick-reply-spacing;
-        margin-block-end: k-math-div( $kendo-chat-quick-reply-spacing, 2 );
+        margin-block-end: calc( #{$kendo-chat-quick-reply-spacing} / 2 );
         padding-block: $kendo-chat-quick-reply-padding-y;
         padding-inline: $kendo-chat-quick-reply-padding-x;
         border-width: 1px;
@@ -322,10 +322,10 @@
     }
 
     .k-chat .k-card-deck {
-        max-width: calc(100% + #{$kendo-chat-message-list-padding-y * 2}); // prevent overflowing in the parent element
+        max-width: calc(100% + calc( #{$kendo-chat-message-list-padding-y} * 2 )); // prevent overflowing in the parent element
         box-sizing: border-box;
-        margin-inline-start: -$kendo-chat-message-list-padding-y;
-        margin-inline-end: -$kendo-chat-message-list-padding-y;
+        margin-inline-start: calc( #{$kendo-chat-message-list-padding-y} * -1 );
+        margin-inline-end: calc( #{$kendo-chat-message-list-padding-y} * -1 );
         padding: $kendo-chat-message-list-padding-y $kendo-chat-message-list-padding-y $kendo-chat-message-list-padding-x;
         overflow: hidden;
         overflow-x: auto;
@@ -336,8 +336,8 @@
     }
 
     .k-chat .k-card-deck-scrollwrap {
-        margin-right: -$kendo-chat-message-list-padding-y;
-        margin-left: -$kendo-chat-message-list-padding-y;
+        margin-right: calc( #{$kendo-chat-message-list-padding-y} * -1 );
+        margin-left: calc( #{$kendo-chat-message-list-padding-y} * -1 );
         padding-left: $kendo-chat-message-list-padding-y;
         padding-right: $kendo-chat-message-list-padding-y;
     }
@@ -440,7 +440,7 @@
 
         .k-scroll-button {
             // IMPORTANT: if we don't set padding, the browser will set for us
-            padding: 0 k-map-get( $kendo-spacing, 1 );
+            padding: 0 k-spacing(1);
             height: 100%;
             aspect-ratio: auto;
             position: absolute;

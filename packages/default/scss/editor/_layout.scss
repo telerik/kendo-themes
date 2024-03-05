@@ -373,7 +373,7 @@
             flex: 1;
         }
         .k-search-wrap {
-            margin: 0 0 0 k-map-get( $kendo-spacing, 4 );
+            margin: 0 0 0 k-spacing(4);
             width: 150px;
             display: flex;
             align-items: center;
@@ -390,7 +390,7 @@
 
         // Filebrowser toolbar
         .k-filebrowser-toolbar {
-            margin: k-map-get( $kendo-spacing, 4 ) 0 0 0;
+            margin: k-spacing(4) 0 0 0;
         }
 
         .k-upload {
@@ -417,7 +417,7 @@
             flex-flow: row wrap;
             height: 390px;
             max-height: 50vh;
-            margin: 0 0 k-map-get( $kendo-spacing, 4 ) 0;
+            margin: 0 0 k-spacing(4) 0;
             padding-block: $kendo-padding-md-y;
             padding-inline: $kendo-padding-md-x;
             border-top-width: 0;

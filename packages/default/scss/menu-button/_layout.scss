@@ -10,8 +10,8 @@
         vertical-align: middle;
 
         > .k-button-arrow {
-            margin-inline-start: -$kendo-menu-button-arrow-padding-x;
-            margin-inline-end: -$kendo-button-padding-x;
+            margin-inline-start: calc( #{$kendo-menu-button-arrow-padding-x} * -1 );
+            margin-inline-end: calc( #{$kendo-button-padding-x} * -1 );
             padding-left: $kendo-menu-button-arrow-padding-x;
             padding-right: $kendo-menu-button-arrow-padding-x;
             flex: none;
@@ -22,7 +22,7 @@
 
         &.k-icon-button > .k-button-arrow {
             margin-inline-start: 0;
-            margin-inline-end: -$kendo-button-padding-y;
+            margin-inline-end: calc( #{$kendo-button-padding-y} * -1 );
         }
     }
 

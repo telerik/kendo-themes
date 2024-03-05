@@ -1,5 +1,5 @@
 // Message box
-$kendo-message-box-margin: 0 0 k-map-get( $kendo-spacing, 4 ) 0 !default;
+$kendo-message-box-margin: 0 0 k-spacing(4) 0 !default;
 $kendo-message-box-padding-x: $kendo-padding-md-x !default;
 $kendo-message-box-padding-y: $kendo-padding-md-y !default;
 $kendo-message-box-border-width: 0 0 0 4px !default;

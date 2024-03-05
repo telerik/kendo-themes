@@ -358,8 +358,8 @@
         }
 
         .k-calendar-header {
-            margin-left: -$kendo-infinite-calendar-view-padding-x;
-            margin-right: -$kendo-infinite-calendar-view-padding-x;
+            margin-left: calc( #{$kendo-infinite-calendar-view-padding-x} * -1 );
+            margin-right: calc( #{$kendo-infinite-calendar-view-padding-x} * -1 );
             padding-block: $kendo-infinite-calendar-header-padding-y;
             padding-inline: $kendo-infinite-calendar-header-padding-x;
             width: auto;

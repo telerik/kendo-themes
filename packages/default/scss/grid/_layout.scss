@@ -410,7 +410,7 @@
         > .k-grouping-drop-container {
             flex-grow: 1;
             padding-block: $kendo-grid-grouping-header-padding-y;
-            margin-block: -$kendo-grid-grouping-header-padding-y;
+            margin-block: calc( #{$kendo-grid-grouping-header-padding-y} * -1 );
             display: inline-flex;
             align-self: stretch;
             align-items: center;
@@ -937,14 +937,14 @@
                 gap: $_grouping-header-padding-y;
 
                 &::before {
-                    margin-inline-start: -$_grouping-header-padding-y;
+                    margin-inline-start: calc( #{$_grouping-header-padding-y} * -1 );
                 }
             }
 
             .k-grid-header {
                 .k-table-th > .k-link {
-                    margin-block: (-$_header-padding-y);
-                    margin-inline: (-$_header-padding-x);
+                    margin-block: calc( #{$_header-padding-y} * -1 );
+                    margin-inline: calc( #{$_header-padding-x} * -1 );
                     padding-block: $_header-padding-y;
                     padding-inline: $_header-padding-x;
                 }
@@ -962,8 +962,8 @@
 
             .k-table-th {
                 > .k-cell-inner {
-                    margin-block: (-$_header-padding-y);
-                    margin-inline: (-$_header-padding-x);
+                    margin-block: calc( #{$_header-padding-y} * -1 );
+                    margin-inline: calc( #{$_header-padding-x} * -1 );
 
                     > .k-link {
                         padding-block: $_header-padding-y;
@@ -1014,7 +1014,7 @@
             .k-filtercell {
                 > span,
                 .k-filtercell-wrapper {
-                    gap: k-math-div( $_cell-padding-y, 2 );
+                    gap: calc( #{$_cell-padding-y} / 2 );
                 }
             }
 
@@ -1124,12 +1124,12 @@
         box-sizing: border-box;
     }
     .k-filter-menu-container {
-        padding: k-map-get( $kendo-spacing, 2 );
+        padding: k-spacing(2);
         box-sizing: border-box;
         display: flex;
         flex-flow: column nowrap;
         align-items: stretch;
-        gap: k-map-get( $kendo-spacing, 2 );
+        gap: k-spacing(2);
 
         .k-filter-and {
             width: min-content;
@@ -1154,7 +1154,7 @@
             display: flex;
             flex-flow: column nowrap;
             align-items: stretch;
-            gap: k-map-get( $kendo-spacing, 2 );
+            gap: k-spacing(2);
         }
     }
 

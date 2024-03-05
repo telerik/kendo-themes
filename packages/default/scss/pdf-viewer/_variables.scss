@@ -48,7 +48,7 @@ $kendo-pdf-viewer-canvas-border: null !default;
 
 /// The spacing of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-spacing: 30px !default;
+$kendo-pdf-viewer-page-spacing: k-spacing(7.5) !default;
 
 /// The background color of the PDFViewer page.
 /// @group pdf-viewer

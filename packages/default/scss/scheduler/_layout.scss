@@ -397,7 +397,7 @@
             padding-block: $kendo-padding-md-y;
             padding-inline: $kendo-padding-md-x;
             // TODO: incompatible units
-            // padding-right: $kendo-padding-sm-x + k-map-get( $kendo-spacing, 4 );
+            // padding-right: $kendo-padding-sm-x + k-spacing(4);
         }
         .k-event-time {
             padding-bottom: 0;
@@ -462,7 +462,7 @@
         }
         .k-resize-n::before,
         .k-resize-s::before {
-            width: k-map-get( $kendo-spacing, 8 );
+            width: k-spacing(8);
             border-bottom-width: 1px;
         }
         .k-resize-w {
@@ -475,7 +475,7 @@
         }
         .k-resize-w::before,
         .k-resize-e::before {
-            height: k-map-get( $kendo-spacing, 8 );
+            height: k-spacing(8);
             border-left-width: 1px;
         }
 
@@ -908,7 +908,7 @@
         .k-scheduler-datetime-picker {
             display: flex;
             flex-flow: row nowrap;
-            gap: k-map-get( $kendo-spacing, 2 );
+            gap: k-spacing(2);
         }
 
     }

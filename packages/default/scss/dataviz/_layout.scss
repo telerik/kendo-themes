@@ -345,10 +345,10 @@
             right: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            top: calc( #{$kendo-padding-sm-y * 2} + ( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit)) + 1px);
+            top: calc( calc( #{$kendo-padding-sm-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            left: calc( #{$kendo-padding-sm-y * 2} + ( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit)) + 1px);
+            left: calc( calc( #{$kendo-padding-sm-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
         }
 
 

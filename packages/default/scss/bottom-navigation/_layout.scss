@@ -71,8 +71,8 @@
         }
 
         > .k-bottom-nav-link {
-            margin-block: (-$kendo-bottom-nav-item-padding-y);
-            margin-inline: (-$kendo-bottom-nav-item-padding-x);
+            margin-block: calc( #{$kendo-bottom-nav-item-padding-y} * -1 );
+            margin-inline: calc( #{$kendo-bottom-nav-item-padding-x} * -1 );
             padding-block: $kendo-bottom-nav-item-padding-y;
             padding-inline: $kendo-bottom-nav-item-padding-x;
             width: 100%;

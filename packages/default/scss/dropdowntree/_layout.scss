@@ -8,8 +8,8 @@
     .k-dropdowntree-popup,
     .k-multiselecttree-popup {
         .k-treeview {
-            padding-block: k-math-div( $kendo-dropdowntree-popup-padding-y, 2 );
-            padding-inline: k-math-div( $kendo-dropdowntree-popup-padding-x, 2 );
+            padding-block: calc( #{$kendo-dropdowntree-popup-padding-y} / 2 );
+            padding-inline: calc( #{$kendo-dropdowntree-popup-padding-x} / 2 );
         }
 
         .k-check-all {

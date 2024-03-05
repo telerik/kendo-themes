@@ -162,8 +162,8 @@
             }
 
             > .k-button {
-                padding-block: k-map-get( $kendo-spacing, 1 );
-                padding-inline: k-map-get( $kendo-spacing, 1 );
+                padding-block: k-spacing(1);
+                padding-inline: k-spacing(1);
                 width: auto;
                 height: auto;
                 flex: none;
