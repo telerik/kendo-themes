@@ -4,10 +4,10 @@
 
     // Text color utility classes
     $kendo-utils-text-color: k-map-get( $kendo-utils, "text-color" ) !default;
-    @include generate-utils( text, color, $kendo-utils-text-color );
+    @include generate-utils( text, color, $kendo-utils-text-color, $css-var: 'color' );
 
 
     // Legacy aliases
-    @include generate-utils( color, color, $kendo-utils-text-color );
+    @include generate-utils( color, color, $kendo-utils-text-color, $css-var: 'color' );
 
 }
