@@ -1,9 +1,51 @@
+@import "@progress/kendo-theme-core/scss/color-system/index.import.scss";
+
 $kendo-prefix: k- !default;
 $kendo-important: true !default;
+$kendo-enable-color-system: false !default;
 
 $kendo-theme-colors: () !default;
 
 $kendo-font-sizes: () !default;
+
+$kendo-util-colors-list: (
+    primary-subtle,
+    primary,
+    primary-emphasis,
+    secondary-subtle,
+    secondary,
+    secondary-emphasis,
+    tertiary-subtle,
+    tertiary,
+    tertiary-emphasis,
+    info-subtle,
+    info,
+    info-emphasis,
+    success-subtle,
+    success,
+    success-emphasis,
+    warning-subtle,
+    warning,
+    warning-emphasis,
+    error-subtle,
+    error,
+    error-emphasis,
+    light-subtle,
+    light,
+    light-emphasis,
+    dark-subtle,
+    dark,
+    dark-emphasis,
+) !default;
+
+$kendo-util-colors: () !default;
+@each $name, $color in $kendo-colors {
+    @each $util-color in $kendo-util-colors-list {
+        @if ( $name == $util-color ) {
+            $kendo-util-colors: k-map-merge( $kendo-util-colors, ( $name: $color) );
+        }
+    }
+}
 
 $kendo-spacing: (
     0: 0,
@@ -692,7 +734,7 @@ $kendo-utils: (
         start,
         end
     ),
-    "text-color": k-map-merge( $kendo-theme-colors, (
+    "text-color": k-map-merge( if( $kendo-enable-color-system, $kendo-util-colors, $kendo-theme-colors ), (
         "inherit": inherit,
         "current": currentColor,
         "transparent": transparent,
@@ -747,7 +789,7 @@ $kendo-utils: (
         content: content-box,
         text: text
     ),
-    "background-color": k-map-merge( $kendo-theme-colors, (
+    "background-color": k-map-merge( if( $kendo-enable-color-system, $kendo-util-colors, $kendo-theme-colors ), (
         "inherit": inherit,
         "transparent": transparent,
         "black": black,
@@ -790,7 +832,7 @@ $kendo-utils: (
         hidden,
         none
     ),
-    "border-color": k-map-merge( $kendo-theme-colors, (
+    "border-color": k-map-merge( if( $kendo-enable-color-system, $kendo-util-colors, $kendo-theme-colors ), (
         "inherit": inherit,
         "current": currentColor,
         "transparent": transparent,
@@ -816,7 +858,7 @@ $kendo-utils: (
         outset,
         none
     ),
-    "outline-color": k-map-merge( $kendo-theme-colors, (
+    "outline-color": k-map-merge( if( $kendo-enable-color-system, $kendo-util-colors, $kendo-theme-colors ), (
         "inherit": inherit,
         "current": currentColor,
         "transparent": transparent,
