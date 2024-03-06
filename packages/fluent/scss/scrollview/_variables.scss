@@ -57,13 +57,13 @@ $kendo-scrollview-pagebutton-primary-focus-shadow: 0 0 0 2px if($kendo-enable-co
 $kendo-scrollview-pager-offset: 0px !default;
 /// The spacing between the ScrollView pager items.
 /// @group scrollview
-$kendo-scrollview-pager-item-spacing: 20px !default;
+$kendo-scrollview-pager-item-spacing: k-spacing(5) !default;
 /// The border width of the ScrollView pager items.
 /// @group scrollview
 $kendo-scrollview-pager-item-border-width: 0px !default;
 /// The height of the ScrollView pager.
 /// @group scrollview
-$kendo-scrollview-pager-height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} ) !default;
+$kendo-scrollview-pager-height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + calc( #{$kendo-scrollview-pager-item-spacing} * 2 ) ) !default;
 
 /// The color of the ScrollView navigation arrows.
 /// @group scrollview

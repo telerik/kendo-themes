@@ -7,7 +7,11 @@
 @use "./elevation" as *;
 @forward "./elevation/legacy";
 
+// Typography
 @use "./typography/" as *;
+
+// Spacing
+@use "./spacing" as *;
 
 // Variables
 @forward "./variables";

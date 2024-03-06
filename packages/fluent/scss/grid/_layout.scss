@@ -7,6 +7,7 @@
 @use "../table/_variables.scss" as *;
 @use "../tabstrip/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/spacing" as *;
 
 @mixin kendo-grid--layout() {
 
@@ -520,7 +521,7 @@
     .k-grid-column-menu-standalone a.k-grid-filter {
         position: initial;
         display: inline-block;
-        margin-block: ( $kendo-padding-md-y * -1 );
+        margin-block: calc( #{$kendo-padding-md-y} * -1 );
         margin-inline: 0;
         padding-block: $kendo-padding-md-y;
         padding-inline: $kendo-padding-md-x;

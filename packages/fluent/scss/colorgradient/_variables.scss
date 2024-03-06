@@ -4,7 +4,7 @@
 
 /// The spacer of the ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-spacer: map.get( $kendo-spacing, 4 ) !default;
+$kendo-color-gradient-spacer: k-spacing(4) !default;
 
 /// The width of the ColorGradient.
 /// @group cologradient
@@ -20,7 +20,7 @@ $kendo-color-gradient-border-radius: var( --kendo-border-radius-md, #{$kendo-bor
 $kendo-color-gradient-padding-y: $kendo-color-gradient-spacer !default;
 /// The horizontal padding of the ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-padding-x: math.div( $kendo-color-gradient-spacer, 2 ) !default;
+$kendo-color-gradient-padding-x: calc( #{$kendo-color-gradient-spacer} / 2 ) !default;
 /// The spacing between the sections of the ColorGradient.
 /// @group cologradient
 $kendo-color-gradient-spacing: $kendo-color-gradient-spacer !default;
@@ -62,7 +62,7 @@ $kendo-color-gradient-canvas-border-width: 0 !default;
 $kendo-color-gradient-canvas-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// The spacing between the items of the ColorGradient canvas.
 /// @group cologradient
-$kendo-color-gradient-canvas-spacing: math.div( $kendo-color-gradient-spacer, 2 ) !default;
+$kendo-color-gradient-canvas-spacing: calc( #{$kendo-color-gradient-spacer} / 2 ) !default;
 /// The height the ColorGradient canvas hsv rectangle.
 /// @group cologradient
 $kendo-color-gradient-canvas-rectangle-height: 180px !default;
@@ -139,13 +139,13 @@ $kendo-color-gradient-canvas-draghandle-offset-x: ( -1 * math.div( $kendo-color-
 $kendo-color-gradient-input-width: 48px !default;
 /// The spacing between the ColorGradient inputs.
 /// @group cologradient
-$kendo-color-gradient-input-spacing: math.div( $kendo-color-gradient-spacer, 4 ) !default;
+$kendo-color-gradient-input-spacing: calc( #{$kendo-color-gradient-spacer} / 4 ) !default;
 /// The font size of the ColorGradient input labels.
 /// @group cologradient
 $kendo-color-gradient-input-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The spacing between the ColorGradient inputs and their labels.
 /// @group cologradient
-$kendo-color-gradient-input-label-spacing: math.div( $kendo-color-gradient-spacer, 4 ) !default;
+$kendo-color-gradient-input-label-spacing: calc( #{$kendo-color-gradient-spacer} / 4 ) !default;
 /// The text color of the ColorGradient input labels.
 /// @group cologradient
 $kendo-color-gradient-input-label-text: var( --kendo-subtle-text, inherit ) !default;
@@ -155,4 +155,4 @@ $kendo-color-gradient-input-label-text: var( --kendo-subtle-text, inherit ) !def
 $kendo-color-gradient-contrast-ratio-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group cologradient
-$kendo-color-gradient-contrast-spacing: math.div( $kendo-color-gradient-spacer, 1.5 ) !default;
+$kendo-color-gradient-contrast-spacing: calc( #{$kendo-color-gradient-spacer} / 1.5 ) !default;

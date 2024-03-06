@@ -4,6 +4,7 @@
 @use "./_variables.scss" as *;
 @use "../input/_variables.scss" as *;
 @use "../window/_variables.scss" as *;
+@use "../core/spacing" as *;
 
 @mixin kendo-forms--layout() {
 
@@ -281,12 +282,12 @@
     // Action buttons
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
-        margin: map.get( $kendo-spacing, 4 ) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
+        margin: k-spacing(4) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
     }
 
 
     .k-edit-label {
-        margin-block-end: map.get( $kendo-spacing, 4 );
+        margin-block-end: k-spacing(4);
         padding-block: calc( #{$kendo-input-md-padding-y} + #{$kendo-input-border-width} );
         width: 30%;
         line-height: var( --kendo-form-line-height, #{$kendo-form-line-height} );
@@ -295,7 +296,7 @@
         clear: both;
     }
     .k-edit-field {
-        margin-block-end: map.get( $kendo-spacing, 4 );
+        margin-block-end: k-spacing(4);
         width: 65%;
         float: right;
         clear: right;
@@ -320,11 +321,11 @@
 
         .k-radio-label,
         .k-checkbox-label {
-            margin-inline-end: map.get( $kendo-spacing, 4 );
+            margin-inline-end: k-spacing(4);
         }
 
         > .k-reset > li + li {
-            margin-block-start: map.get( $kendo-spacing, 2 );
+            margin-block-start: k-spacing(2);
         }
 
         .k-reset .k-widget {

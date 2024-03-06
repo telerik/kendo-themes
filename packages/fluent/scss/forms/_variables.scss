@@ -1,9 +1,10 @@
 @use "sass:map";
 @use "../core/" as *;
+@use "../core/spacing" as *;
 
 /// The padding of the inline Form.
 /// @group form
-$kendo-form-spacer: ( $kendo-padding-md-x * 2 ) !default;
+$kendo-form-spacer: calc( #{$kendo-padding-md-x} * 2 ) !default;
 
 /// The font size of the Form.
 /// @group form
@@ -28,19 +29,19 @@ $kendo-form-fieldset-margin: 2em 0 0 !default;
 
 /// The padding of the Form fieldset.
 /// @group form
-$kendo-form-fieldset-padding: 0px !default;
+$kendo-form-fieldset-padding: k-spacing(0) !default;
 
 /// The margin of the Form legend.
 /// @group form
-$kendo-form-legend-margin: 0 0 map.get( $kendo-spacing, 3 ) !default;
+$kendo-form-legend-margin: 0 0 k-spacing(3) !default;
 
 /// The padding of the Form legend.
 /// @group form
-$kendo-form-legend-padding: 0px !default;
+$kendo-form-legend-padding: k-spacing(0) !default;
 
 /// The border width of the Form legend.
 /// @group form
-$kendo-form-legend-border-width: 0 0 map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-form-legend-border-width: 0 0 k-spacing(0.5) !default;
 
 /// The border style of the Form legend.
 /// @group form
@@ -65,7 +66,7 @@ $kendo-form-legend-text-transform: uppercase !default;
 
 /// The bottom margin of the Form label.
 /// @group form
-$kendo-form-label-margin-bottom: map.get( $kendo-spacing, 2 ) !default;
+$kendo-form-label-margin-bottom: k-spacing(2) !default;
 
 /// The font weight of the form label
 /// @group form
@@ -73,7 +74,7 @@ $kendo-form-label-font-weight: var( --kendo-font-weight-bold, inherit ) !default
 
 /// The horizontal margin of the Form buttons.
 /// @group form
-$kendo-form-button-margin-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-form-button-margin-x: k-spacing(2) !default;
 
 /// The font size of the Form hint.
 /// @group form
@@ -85,7 +86,7 @@ $kendo-form-hint-font-style: normal !default;
 
 /// The top margin of the Form hint.
 /// @group form
-$kendo-form-hint-margin-top: map.get( $kendo-spacing, 1 ) !default;
+$kendo-form-hint-margin-top: k-spacing(1) !default;
 
 /// The text color of the Form hint.
 /// @group form
@@ -93,7 +94,7 @@ $kendo-form-hint-text: if($kendo-enable-color-system, k-color( subtle ), k-get-t
 
 /// The row spacing of the small Form.
 /// @group form
-$kendo-form-sm-rows-spacing: map.get( $kendo-spacing, 3 ) !default;
+$kendo-form-sm-rows-spacing: k-spacing(3) !default;
 /// The row spacing of the medium Form.
 /// @group form
 $kendo-form-md-rows-spacing: $kendo-form-sm-rows-spacing !default;
@@ -103,7 +104,7 @@ $kendo-form-lg-rows-spacing: $kendo-form-sm-rows-spacing !default;
 
 /// The margin of the Form separator.
 /// @group form
-$kendo-form-separator-margin: map.get( $kendo-spacing, 3 ) 0 0 !default;
+$kendo-form-separator-margin: k-spacing(3) 0 0 !default;
 
 /// The border color of the Form separator.
 /// @group form
@@ -111,11 +112,11 @@ $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;
 
 /// The top padding of the label in the horizontal Form.
 /// @group form
-$kendo-horizontal-form-label-padding-top: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-horizontal-form-label-padding-top: k-spacing(1.5) !default;
 
 /// The horizontal margin of the label in the horizontal Form.
 /// @group form
-$kendo-horizontal-form-label-margin-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-horizontal-form-label-margin-x: k-spacing(2) !default;
 
 /// The width of the label in the horizontal Form.
 /// @group form
@@ -140,7 +141,7 @@ $kendo-forms-invalid-color: var( --kendo-invalid-text, initial ) !default;
 
 /// The horizontal margin of the optional label in the Form.
 /// @group form
-$kendo-label-optional-margin-x: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-label-optional-margin-x: k-spacing(1.5) !default;
 /// The font size of the optional label in the Form.
 /// @group form
 $kendo-label-optional-font-size: var( --kendo-font-size-sm, inherit ) !default;
@@ -151,7 +152,7 @@ $kendo-label-optional-font-style: normal !default;
 
 /// The margin of the Form fieldset.
 /// @group form
-$kendo-fieldset-margin: map.get( $kendo-spacing, 7.5 ) !default;
+$kendo-fieldset-margin: k-spacing(7.5) !default;
 /// The font size of the Form fieldset.
 /// @group form
 $kendo-fieldset-font-size: var( --kendo-font-size-xl, inherit ) !default;

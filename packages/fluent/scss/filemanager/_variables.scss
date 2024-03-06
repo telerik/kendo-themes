@@ -5,7 +5,7 @@
 
 /// The space between the FileManager items.
 /// @group filemanager
-$kendo-file-manager-spacer: map.get( $kendo-spacing, 4 ) !default;
+$kendo-file-manager-spacer: k-spacing(4) !default;
 /// The border width of the FileManager.
 /// @group filemanager
 $kendo-file-manager-border-width: 1px !default;
@@ -65,10 +65,10 @@ $kendo-file-manager-navigation-border: inherit !default;
 
 /// The horizontal padding of the FileManager Breadcrumb.
 /// @group filemanager
-$kendo-file-manager-breadcrumb-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-file-manager-breadcrumb-padding-x: k-spacing(2) !default;
 /// The vertical padding of the FileManager Breadcrumb.
 /// @group filemanager
-$kendo-file-manager-breadcrumb-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-file-manager-breadcrumb-padding-y: k-spacing(2) !default;
 /// The border width of the FileManager Breadcrumb.
 /// @group filemanager
 $kendo-file-manager-breadcrumb-border-width: $kendo-file-manager-border-width !default;
@@ -94,10 +94,10 @@ $kendo-file-manager-listview-border: inherit !default;
 
 /// The horizontal padding of the FileManager ListView item.
 /// @group filemanager
-$kendo-file-manager-listview-item-padding-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-file-manager-listview-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the FileManager ListView item.
 /// @group filemanager
-$kendo-file-manager-listview-item-padding-y: map.get( $kendo-spacing, 4 ) !default;
+$kendo-file-manager-listview-item-padding-y: k-spacing(4) !default;
 /// The width of the FileManager ListView item.
 /// @group filemanager
 $kendo-file-manager-listview-item-width: 120px !default;
@@ -160,7 +160,7 @@ $kendo-file-manager-preview-border-width: $kendo-file-manager-border-width !defa
 $kendo-file-manager-preview-spacing: $kendo-file-manager-spacer !default;
 /// The gap between the columns in the FileManager preview.
 /// @group filemanager
-$kendo-file-manager-preview-column-gap: map.get( $kendo-spacing, 1 ) !default;
+$kendo-file-manager-preview-column-gap: k-spacing(1) !default;
 /// The background color of the FileManager preview.
 /// @group filemanager
 $kendo-file-manager-preview-bg: transparent !default;

@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/" as *;
+@use "../core/spacing" as *;
 
 /// The background color of the Drawer.
 /// @group drawer
@@ -48,7 +49,7 @@ $kendo-drawer-scrollbar-hover-color: if($kendo-enable-color-system, color-mix(in
 
 /// The horizontal padding of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-drawer-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-y: var( --kendo-padding-x, #{$kendo-padding-md-x} ) !default;
@@ -68,10 +69,10 @@ $kendo-drawer-item-level-count: 5 !default;
 
 /// The horizontal padding of the Drawer icon.
 /// @group drawer
-$kendo-drawer-icon-padding-x: 0 !default;
+$kendo-drawer-icon-padding-x: k-spacing(0) !default;
 /// The vertical padding of the Drawer icon.
 /// @group drawer
-$kendo-drawer-icon-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-drawer-icon-padding-y: k-spacing(1) !default;
 
 /// The initial width of the mini Drawer.
 /// @group drawer
@@ -79,8 +80,9 @@ $kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + va
 
 /// The border width of the Drawer item ripple.
 /// @group drawer
-$kendo-drawer-item-ripple-border-width: map.get( $kendo-spacing, 0.5 ) !default;
-/// The border color of the Drawer item ripple.
+
+$kendo-drawer-item-ripple-border-width: k-spacing(0.5) !default;
+/// The border color of the drawer item ripple
 /// @group drawer
 $kendo-drawer-item-ripple-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The background color of the Drawer item.

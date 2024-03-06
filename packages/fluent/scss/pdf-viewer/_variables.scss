@@ -37,7 +37,7 @@ $kendo-pdf-viewer-canvas-border: var( --kendo-component-border, inherit ) !defau
 
 /// The spacing of the PDFViewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-spacing: map.get( $kendo-spacing, 7.5 ) !default;
+$kendo-pdf-viewer-page-spacing: k-spacing(7.5) !default;
 /// The background color of the PDFViewer page.
 /// @group pdf-viewer
 $kendo-pdf-viewer-page-bg: var( --kendo-component-bg, inherit ) !default;
@@ -53,13 +53,13 @@ $kendo-pdf-viewer-page-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
 
 /// The horizontal padding of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-pdf-viewer-search-panel-padding-x: k-spacing(3) !default;
 /// The vertical padding of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-padding-y: $kendo-pdf-viewer-search-panel-padding-x !default;
 /// The spacing of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-pdf-viewer-search-panel-spacing: k-spacing(2) !default;
 /// The border width of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-border-width: 1px !default;

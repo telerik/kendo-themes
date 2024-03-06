@@ -11,4 +11,4 @@ $kendo-dropdowntree-popup-padding-y: $kendo-popup-content-padding-y !default;
 
 /// The padding of the check-all CheckBox inside the DropDownTree popup
 /// @group dropdowntree
-$kendo-dropdowntree-check-all-padding: map.get( $kendo-spacing, 1 ) !default;
+$kendo-dropdowntree-check-all-padding: k-spacing(1) !default;

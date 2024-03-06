@@ -12,7 +12,7 @@ $kendo-tile-layout-bg: if($kendo-enable-color-system, k-color( surface ), k-get-
 
 /// The horizontal padding of the TileLayout.
 /// @group tilelayout
-$kendo-tile-layout-padding-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-tile-layout-padding-x: k-spacing(4) !default;
 
 /// The vertical padding of the TileLayout
 /// @group tilelayout

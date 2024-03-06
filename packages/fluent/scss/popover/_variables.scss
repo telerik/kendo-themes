@@ -75,11 +75,11 @@ $kendo-popover-actions-padding-x: $kendo-popover-body-padding-x !default;
 $kendo-popover-actions-padding-y: $kendo-popover-body-padding-y !default;
 /// The spacing between the Popover actions.
 /// @group popover
-$kendo-popover-actions-gap: map.get( $kendo-spacing, 3 ) !default;
+$kendo-popover-actions-gap: k-spacing(3) !default;
 
 /// The width of the Popover callout.
 /// @group popover
-$kendo-popover-callout-width: map.get( $kendo-spacing, 5 ) !default;
+$kendo-popover-callout-width: k-spacing(5) !default;
 /// The height of the Popover callout.
 /// @group popover
 $kendo-popover-callout-height: $kendo-popover-callout-width !default;

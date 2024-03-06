@@ -3,7 +3,7 @@
 
 /// The vertical spacing of the ExpansionPanel.
 /// @group expander
-$kendo-expander-margin-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-expander-margin-y: k-spacing(2) !default;
 /// The width of the border around the ExpansionPanel.
 /// @group expander
 $kendo-expander-border-width: 1px !default;
@@ -63,10 +63,10 @@ $kendo-expander-focus-shadow: inset 0px 0px 0px 2px if($kendo-enable-color-syste
 
 /// The horizontal padding of the ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-padding-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-expander-header-padding-x: k-spacing(4) !default;
 /// The vertical padding of the ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-expander-header-padding-y: k-spacing(3) !default;
 
 /// The text color of the ExpansionPanel header.
 /// @group expander
@@ -89,14 +89,14 @@ $kendo-expander-header-sub-title-text: var( --kendo-subtle-text, initial ) !defa
 
 /// The horizontal margin of the ExpansionPanel indicator.
 /// @group expander
-$kendo-expander-indicator-margin-x: map.get( $kendo-spacing, 2.5 ) !default;
+$kendo-expander-indicator-margin-x: k-spacing(2.5) !default;
 /// The text color of the ExpansionPanel indicator.
 /// @group expander
 $kendo-expander-indicator-text: var( --kendo-expander-text, #{$kendo-expander-text} ) !default;
 
 /// The horizontal padding of the ExpansionPanel content.
 /// @group expander
-$kendo-expander-content-padding-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-expander-content-padding-x: k-spacing(4) !default;
 /// The vertical padding of the ExpansionPanel content.
 /// @group expander
-$kendo-expander-content-padding-y: map.get( $kendo-spacing, 4 ) !default;
+$kendo-expander-content-padding-y: k-spacing(4) !default;

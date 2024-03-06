@@ -339,6 +339,9 @@
     // Color system css variables
     @include color-system-styles();
 
+    // Spacing
+    @include kendo-spacing--styles();
+
     // Elevation
     @include kendo-elevation--styles();
     @include elevation--styles-legacy();
@@ -349,7 +352,6 @@
     // Typography and utils
     @include typography-styles();
     @include utils-styles();
-
 
     // Generic content
     @include icon-styles();

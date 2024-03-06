@@ -6,6 +6,7 @@
 @use "../input/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/spacing" as *;
 
 @mixin kendo-spreadsheet--layout() {
 
@@ -615,7 +616,7 @@
             }
 
             .k-actions {
-                margin-block-start: map.get( $kendo-spacing, 3 );
+                margin-block-start: k-spacing(3);
             }
         }
 
@@ -644,10 +645,10 @@
         .k-reset-color { border-block-end-width: 1px; }
         .k-custom-color { border-block-start-width: 1px; }
         .k-spreadsheet-border-type-palette {
-            padding: map.get( $kendo-spacing, 2 );
+            padding: k-spacing(2);
             display: grid;
             grid-template-columns: repeat(5, max-content);
-            gap: map.get( $kendo-spacing, 2 );
+            gap: k-spacing(2);
         }
     }
 
@@ -686,12 +687,12 @@
     .k-spreadsheet-format-cells {
 
         .k-spreadsheet-preview {
-            margin-block-start: map.get( $kendo-spacing, 2 );
+            margin-block-start: k-spacing(2);
             text-align: center;
         }
 
         .k-list-scroller {
-            margin-block-start: map.get( $kendo-spacing, 2 );
+            margin-block-start: k-spacing(2);
             height: 210px;
             border-width: 1px;
             border-style: solid;
@@ -721,7 +722,7 @@
         .k-page-orientation {
             position: absolute;
             inset-inline-end: 0;
-            inset-block-start: map.get( $kendo-spacing, 2 );
+            inset-block-start: k-spacing(2);
 
             .k-svg-icon {
                 width: 6em;

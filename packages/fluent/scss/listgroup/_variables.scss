@@ -28,10 +28,10 @@ $kendo-listgroup-border: var( --kendo-component-border, inherit ) !default;
 
 /// Horizontal padding of the listgroup items.
 /// @group listgroup
-$kendo-listgroup-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-listgroup-item-padding-x: k-spacing(2) !default;
 /// Vertical padding of the listgroup items.
 /// @group listgroup
-$kendo-listgroup-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-listgroup-item-padding-y: k-spacing(2) !default;
 /// Border width of the listgroup item.
 /// @group listgroup
 $kendo-listgroup-item-border-width: 1px !default;

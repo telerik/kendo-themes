@@ -3,13 +3,13 @@
 
 /// Margin around the message box.
 /// @group messagebox
-$kendo-message-box-margin: 0 0 map.get( $kendo-spacing, 3 ) 0 !default;
+$kendo-message-box-margin: 0 0 k-spacing(3) 0 !default;
 /// Horizontal padding of the message box.
 /// @group messagebox
-$kendo-message-box-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-message-box-padding-x: k-spacing(3) !default;
 /// Vertical padding of the message box.
 /// @group messagebox
-$kendo-message-box-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-message-box-padding-y: k-spacing(2) !default;
 /// Border width of the message box.
 /// @group messagebox
 $kendo-message-box-border-width: 0 !default;

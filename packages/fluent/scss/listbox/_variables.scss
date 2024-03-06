@@ -3,10 +3,10 @@
 
 /// The spacing between the ListBox elements.
 /// @group listbox
-$kendo-listbox-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-listbox-spacing: k-spacing(2) !default;
 /// The spacing between the ListBox buttons.
 /// @group listbox
-$kendo-listbox-button-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-listbox-button-spacing: k-spacing(2) !default;
 /// WThe width of the ListBox.
 /// @group listbox
 $kendo-listbox-width: 10em !default;

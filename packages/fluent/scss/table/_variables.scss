@@ -14,28 +14,28 @@ $kendo-table-cell-vertical-border-width: 0px !default;
 $kendo-table-cell-horizontal-border-width: 1px !default;
 /// The horizontal padding of the cells in the table if no size is specified.
 /// @group table
-$kendo-table-cell-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-table-cell-padding-x: k-spacing(3) !default;
 /// The vertical padding of the cells in the table if no size is specified.
 /// @group table
-$kendo-table-cell-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-table-cell-padding-y: k-spacing(3) !default;
 
-$kendo-table-sm-cell-padding-x: map.get( $kendo-spacing, 3 ) !default;
-$kendo-table-sm-cell-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
-
-$kendo-table-md-cell-padding-x: $kendo-table-cell-padding-x !default;
-$kendo-table-md-cell-padding-y: $kendo-table-cell-padding-y !default;
-
-$kendo-table-lg-cell-padding-x: map.get( $kendo-spacing, 3 ) !default;
-$kendo-table-lg-cell-padding-y: map.get( $kendo-spacing, 3.5 ) !default;
-
-$kendo-table-sm-cell-padding-x: map.get( $kendo-spacing, 3 ) !default;
-$kendo-table-sm-cell-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-table-sm-cell-padding-x: k-spacing(3) !default;
+$kendo-table-sm-cell-padding-y: k-spacing(1.5) !default;
 
 $kendo-table-md-cell-padding-x: $kendo-table-cell-padding-x !default;
 $kendo-table-md-cell-padding-y: $kendo-table-cell-padding-y !default;
 
-$kendo-table-lg-cell-padding-x: map.get( $kendo-spacing, 3 ) !default;
-$kendo-table-lg-cell-padding-y: map.get( $kendo-spacing, 3.5 ) !default;
+$kendo-table-lg-cell-padding-x: k-spacing(3) !default;
+$kendo-table-lg-cell-padding-y: k-spacing(3.5) !default;
+
+$kendo-table-sm-cell-padding-x: k-spacing(3) !default;
+$kendo-table-sm-cell-padding-y: k-spacing(1.5) !default;
+
+$kendo-table-md-cell-padding-x: $kendo-table-cell-padding-x !default;
+$kendo-table-md-cell-padding-y: $kendo-table-cell-padding-y !default;
+
+$kendo-table-lg-cell-padding-x: k-spacing(3) !default;
+$kendo-table-lg-cell-padding-y: k-spacing(3.5) !default;
 
 /// Font weight of the table header cells.
 /// @group table

@@ -3,10 +3,10 @@
 
 /// Horizontal padding of the action buttons container.
 /// @group action-buttons
-$kendo-actions-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-actions-padding-x: k-spacing(3) !default;
 /// Vertical padding of the action buttons container.
 /// @group action-buttons
-$kendo-actions-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-actions-padding-y: k-spacing(3) !default;
 /// Width of the border around the action buttons container.
 /// @group action-buttons
 $kendo-actions-border-width: 0px !default;
@@ -22,4 +22,4 @@ $kendo-actions-border: inherit !default;
 
 /// Spacing between the action buttons.
 /// @group button
-$kendo-actions-button-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-actions-button-spacing: k-spacing(2) !default;

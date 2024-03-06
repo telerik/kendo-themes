@@ -13,14 +13,14 @@ $kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The content spacing of the Rating.
 /// @group rating
-$kendo-rating-spacing: map.get( $kendo-spacing, 1 ) !default;
+$kendo-rating-spacing: k-spacing(1) !default;
 
 /// The horizontal padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-x: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-rating-item-padding-x: k-spacing(0.5) !default;
 /// The vertical padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-rating-item-padding-y: k-spacing(2) !default;
 /// The text color of the Rating item.
 /// @group rating
 $kendo-rating-item-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;

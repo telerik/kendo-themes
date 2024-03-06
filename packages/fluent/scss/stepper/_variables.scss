@@ -26,24 +26,24 @@ $kendo-stepper-border: transparent !default;
 
 /// The horizontal margin the Stepper label.
 /// @group stepper
-$kendo-stepper-label-margin-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-stepper-label-margin-x: k-spacing(2) !default;
 /// The horizontal padding the Stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-stepper-label-padding-x: k-spacing(3) !default;
 /// The vertical padding the Stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-stepper-label-padding-y: k-spacing(1.5) !default;
 
 /// The horizontal padding of the Stepper content.
 /// @group stepper
-$kendo-stepper-inline-content-padding-x: map.get( $kendo-spacing, 5 ) !default;
+$kendo-stepper-inline-content-padding-x: k-spacing(5) !default;
 /// The vertical padding of the Stepper content.
 /// @group stepper
-$kendo-stepper-inline-content-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-stepper-inline-content-padding-y: k-spacing(3) !default;
 
 /// The width of the Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-width: map.get( $kendo-spacing, 7.5 ) !default;
+$kendo-stepper-indicator-width: k-spacing(7.5) !default;
 /// The height of the Stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-height: $kendo-stepper-indicator-width !default;
@@ -59,7 +59,7 @@ $kendo-stepper-indicator-border-radius: 50% !default;
 $kendo-stepper-indicator-focus-border-width: $kendo-stepper-indicator-border-width !default;
 /// The size of the focused Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-focus-size: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-stepper-indicator-focus-size: k-spacing(0.5) !default;
 /// The offset of the Stepper's focused indicator.
 /// @group stepper
 $kendo-stepper-indicator-focus-offset: 3px !default;
@@ -188,7 +188,7 @@ $kendo-stepper-optional-label-font-style: italic !default;
 
 /// The size of the Stepper ProgressBar.
 /// @group stepper
-$kendo-stepper-progressbar-size: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-stepper-progressbar-size: k-spacing(0.5) !default;
 
 /// The property name of the Stepper transition.
 /// @group stepper

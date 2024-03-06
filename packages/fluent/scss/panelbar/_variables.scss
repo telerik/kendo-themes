@@ -4,10 +4,10 @@
 
 /// The horizontal padding of the PanelBar.
 /// @group panelbar
-$kendo-panelbar-padding-x: 0px !default;
+$kendo-panelbar-padding-x: k-spacing(0) !default;
 /// The vertical padding of the PanelBar.
 /// @group panelbar
-$kendo-panelbar-padding-y: 0px !default;
+$kendo-panelbar-padding-y: k-spacing(0) !default;
 /// The font family of the PanelBar.
 /// @group panelbar
 $kendo-panelbar-font-family: var( --kendo-font-family, inherit ) !default;
@@ -33,27 +33,29 @@ $kendo-panelbar-item-border-style: solid !default;
 
 /// The spacing around the PanelBar items icon.
 /// @group panelbar
-$kendo-panelbar-icon-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-panelbar-icon-spacing: k-spacing(2) !default;
 
 /// The horizontal start padding of the PanelBar header.
 /// @group panelbar
 $kendo-panelbar-header-padding-x-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, 1rem ) ) !default;
+
 /// The horizontal end padding of the PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-padding-x-end: map.get( $kendo-spacing, 2) !default;
+$kendo-panelbar-header-padding-x-end: k-spacing(2) !default;
 /// The vertical padding of the PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-panelbar-header-padding-y: k-spacing(3) !default;
 
 /// The horizontal padding of the PanelBar items.
 /// @group panelbar
 $kendo-panelbar-item-padding-x-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, 1rem ) ) !default;
+
 /// The horizontal end padding of the PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-padding-x-end: map.get( $kendo-spacing, 2) !default;
+$kendo-panelbar-item-padding-x-end: k-spacing(2) !default;
 /// The vertical padding of the PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-panelbar-item-padding-y: k-spacing(3) !default;
 
 /// The maximum nesting of the PanelBar items.
 /// @group panelbar

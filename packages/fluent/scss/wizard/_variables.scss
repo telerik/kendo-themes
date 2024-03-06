@@ -6,10 +6,10 @@
 $kendo-wizard-border-width: 0px !default;
 /// The horizontal padding of the Wizard.
 /// @group wizard
-$kendo-wizard-padding-x: map.get( $kendo-spacing, 6 ) !default;
+$kendo-wizard-padding-x: k-spacing(6) !default;
 /// The vertical padding of the Wizard.
 /// @group wizard
-$kendo-wizard-padding-y: map.get( $kendo-spacing, 6 ) !default;
+$kendo-wizard-padding-y: k-spacing(6) !default;
 /// The font size of the Wizard.
 /// @group wizard
 $kendo-wizard-font-size: var( --kendo-font-size, inherit ) !default;
@@ -23,17 +23,17 @@ $kendo-wizard-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The horizontal padding of the Wizard steps.
 /// @group wizard
-$kendo-wizard-steps-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-wizard-steps-padding-x: k-spacing(3) !default;
 /// The vertical padding of the Wizard steps.
 /// @group wizard
-$kendo-wizard-steps-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-wizard-steps-padding-y: k-spacing(3) !default;
 
 /// The horizontal padding of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-x: 0px !default;
+$kendo-wizard-content-padding-x: k-spacing(0) !default;
 /// The vertical padding of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-y: 0px !default;
+$kendo-wizard-content-padding-y: k-spacing(0) !default;
 /// The text color of the Wizard content.
 /// @group wizard
 $kendo-wizard-content-text: var( --kendo-component-text, initial ) !default;
@@ -43,10 +43,10 @@ $kendo-wizard-content-bg: var( --kendo-component-bg, initial ) !default;
 
 /// The horizontal margin of the Wizard's Button container.
 /// @group wizard
-$kendo-wizard-buttons-margin-x: map.get( $kendo-spacing, 7 ) !default;
+$kendo-wizard-buttons-margin-x: k-spacing(7) !default;
 /// The vertical margin of the Wizard Button container.
 /// @group wizard
-$kendo-wizard-buttons-margin-y: map.get( $kendo-spacing, 6 ) !default;
+$kendo-wizard-buttons-margin-y: k-spacing(6) !default;
 
 /// The outline of the focused Wizard step.
 /// @group wizard

@@ -3,6 +3,7 @@
 @use "../core/" as *;
 @use "../table/_variables.scss" as *;
 @use "../input/_variables.scss" as *;
+@use "../core/spacing" as *;
 
 /// The width of the border around the Spreadsheet.
 /// @group spreadsheet
@@ -64,7 +65,7 @@ $kendo-spreadsheet-selected-border: if($kendo-enable-color-system, k-color( prim
 
 /// The horizontal padding of the Spreadsheet popup Menu.
 /// @group spreadsheet
-$kendo-spreadsheet-popup-menu-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-spreadsheet-popup-menu-padding-x: k-spacing(3) !default;
 /// The vertical padding of the Spreadsheet popup Menu.
 /// @group spreadsheet
 $kendo-spreadsheet-popup-menu-padding-y: $kendo-spreadsheet-popup-menu-padding-x !default;
@@ -74,10 +75,10 @@ $kendo-spreadsheet-popup-menu-padding-y: $kendo-spreadsheet-popup-menu-padding-x
 $kendo-spreadsheet-action-bar-border-width: 1px !default;
 /// The horizontal padding of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-action-bar-padding-y: k-spacing(1) !default;
 /// The vertical padding of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-action-bar-padding-x: k-spacing(2) !default;
 /// The font size of the Spreadsheet action bar.
 /// @group spreadsheet
 $kendo-spreadsheet-action-bar-font-size: $kendo-spreadsheet-font-size !default;
@@ -86,11 +87,11 @@ $kendo-spreadsheet-action-bar-font-size: $kendo-spreadsheet-font-size !default;
 $kendo-spreadsheet-action-bar-font-family: Arial, Verdana, sans-serif !default;
 /// The spacings of the Spreadsheet action bar.
 /// @group spreadsheet
-$kendo-spreadsheet-action-bar-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-action-bar-spacing: k-spacing(2) !default;
 
 /// The gap of the Spreadsheet formula bar.
 /// @group spreadsheet
-$kendo-spreadsheet-formula-bar-gap: map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-formula-bar-gap: k-spacing(2) !default;
 
 /// The horizontal padding of the Spreadsheet formula input.
 /// @group spreadsheet
@@ -160,7 +161,7 @@ $kendo-spreadsheet-auto-fill-punch-bg: color-mix(in srgb, $kendo-spreadsheet-bg 
 
 /// The vertical padding of the Spreadsheet cell.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-cell-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the Spreadsheet cell.
 /// @group spreadsheet
 $kendo-spreadsheet-cell-padding-x: $kendo-spreadsheet-cell-padding-y !default;
@@ -170,10 +171,10 @@ $kendo-spreadsheet-cell-padding-x: $kendo-spreadsheet-cell-padding-y !default;
 $kendo-spreadsheet-cell-editor-line-height: var( --kendo-spreadsheet-line-height, $kendo-spreadsheet-line-height ) !default;
 /// The horizontal padding of the Spreadsheet cell editor.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-editor-padding-x: map.get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-cell-editor-padding-x: k-spacing(1) !default;
 /// The vertical padding of the Spreadsheet cell editor.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-editor-padding-y: 0px !default;
+$kendo-spreadsheet-cell-editor-padding-y: k-spacing(0) !default;
 /// The background color of the Spreadsheet cell editor.
 /// @group spreadsheet
 $kendo-spreadsheet-cell-editor-bg: $kendo-spreadsheet-bg !default;
@@ -198,20 +199,20 @@ $kendo-spreadsheet-cell-dirty-border: if($kendo-enable-color-system, k-color( er
 
 /// The horizontal padding of the Spreadsheet sheets bar.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-bar-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-bar-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Spreadsheet sheets bar.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-bar-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-bar-padding-y: k-spacing(2) !default;
 /// The border width of the Spreadsheet sheets bar.
 /// @group spreadsheet
 $kendo-spreadsheet-sheets-bar-border-width: 1px !default;
 
 /// The horizontal margin of the Spreadsheet sheets remove.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-remove-inline-start: - map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-remove-inline-start: calc( #{k-spacing(2)} * -1 ) !default;
 /// The vertical margin of the Spreadsheet sheets remove.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-remove-inline-end: map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-remove-inline-end: k-spacing(2) !default;
 
 /// The left padding of the Spreadsheet sheets menu.
 /// @group spreadsheet
@@ -260,10 +261,10 @@ $kendo-spreadsheet-error-border: if($kendo-enable-color-system, k-color( error-o
 $kendo-spreadsheet-insert-image-dialog-border-style: dashed !default;
 /// The border width of the Spreadsheet image Dialog.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-border-width: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-spreadsheet-insert-image-dialog-border-width: k-spacing(0.5) !default;
 /// The bottom margin of the Spreadsheet image Dialog.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;
+$kendo-spreadsheet-insert-image-dialog-text-margin-bottom: k-spacing(7.5) !default;
 /// The width of the Spreadsheet image Dialog preview.
 /// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-width: 355px !default;
@@ -291,10 +292,10 @@ $kendo-spreadsheet-insert-image-dialog-overlay-hover-text: var( --kendo-componen
 
 /// The width of the Spreadsheet drawing handle.
 /// @group spreadsheet
-$kendo-spreadsheet-drawing-handle-width: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-spreadsheet-drawing-handle-width: k-spacing(1.5) !default;
 /// The height of the Spreadsheet drawing handle.
 /// @group spreadsheet
-$kendo-spreadsheet-drawing-handle-height: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-spreadsheet-drawing-handle-height: k-spacing(1.5) !default;
 /// The border style of the Spreadsheet drawing handle.
 /// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-border-style: solid !default;
@@ -319,7 +320,7 @@ $kendo-spreadsheet-drawing-handle-border-radius: var( --kendo-border-radius-lg, 
 $kendo-spreadsheet-drawing-outline-style: solid !default;
 /// The outline width of the Spreadsheet drawing.
 /// @group spreadsheet
-$kendo-spreadsheet-drawing-outline-width: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-spreadsheet-drawing-outline-width: k-spacing(0.5) !default;
 
 /// The background color of the Spreadsheet drawing anchor.
 /// @group spreadsheet
@@ -327,7 +328,7 @@ $kendo-spreadsheet-drawing-anchor-bg: $kendo-spreadsheet-selected-bg !default;
 
 /// The vertical spacing of the Spreadsheet DropZone.
 /// @group spreadsheet
-$kendo-spreadsheet-dropzone-spacing-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-spreadsheet-dropzone-spacing-y: k-spacing(3) !default;
 
 /// The image of the Spreadsheet insert image Dialog.
 /// @group spreadsheet

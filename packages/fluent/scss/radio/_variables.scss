@@ -17,21 +17,21 @@ $kendo-radio-border-width: 1px !default;
 /// @group radio
 $kendo-radio-sizes: (
     sm: (
-        size: map.get( $kendo-spacing, 4 ),
-        glyph-size: map.get( $kendo-spacing, 3.5 ),
-        indicator-size: map.get( $kendo-spacing, 2 ),
+        size: k-spacing(4),
+        glyph-size: k-spacing(3.5),
+        indicator-size: k-spacing(2),
         ripple-size: 300%
     ),
     md: (
-        size: map.get( $kendo-spacing, 5 ),
-        glyph-size: map.get( $kendo-spacing, 4.5 ),
-        indicator-size: map.get( $kendo-spacing, 2.5 ),
+        size: k-spacing(5),
+        glyph-size: k-spacing(4.5),
+        indicator-size: k-spacing(2.5),
         ripple-size: 300%
     ),
     lg: (
-        size: map.get( $kendo-spacing, 6 ),
-        glyph-size: map.get( $kendo-spacing, 5.5 ),
-        indicator-size: map.get( $kendo-spacing, 3 ),
+        size: k-spacing(6),
+        glyph-size: k-spacing(5.5),
+        indicator-size: k-spacing(3),
         ripple-size: 300%
     )
 ) !default;
@@ -149,23 +149,23 @@ $kendo-radio-disabled-checked-image: null !default;
 
 /// The horizontal margin of the RadioButton inside of a label.
 /// @group radio
-$kendo-radio-label-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-radio-label-spacing: k-spacing(2) !default;
 
 
 // Radio list
 
 /// The horizontal list item margin of the RadioButton.
 /// @group radio
-$kendo-radio-list-spacing: map.get( $kendo-spacing, 4 ) !default;
+$kendo-radio-list-spacing: k-spacing(4) !default;
 /// The horizontal list item padding of the RadioButton.
 /// @group radio
-$kendo-radio-list-item-padding-x: 0px !default;
+$kendo-radio-list-item-padding-x: k-spacing(0) !default;
 /// The vertical list item padding of the RadioButton.
 /// @group radio
 $kendo-radio-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 /// The gap between the list items of the RadioButton.
 /// @group radio
-$kendo-radio-list-item-gap: map.get( $kendo-spacing, 2 ) !default;
+$kendo-radio-list-item-gap: k-spacing(2) !default;
 
 // Radio ripple
 

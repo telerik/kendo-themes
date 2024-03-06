@@ -8,7 +8,7 @@
 $kendo-chip-border-width: 1px !default;
 /// The spacing between the text and the icons of the Chip.
 /// @group chip
-$kendo-chip-spacing: map.get( $kendo-spacing, 1 ) !default;
+$kendo-chip-spacing: k-spacing(1) !default;
 
 /// The font family of the Chip.
 /// @group chip
@@ -41,7 +41,7 @@ $kendo-chip-outline-disabled-border: if($kendo-enable-color-system, color-mix(in
 
 /// The offset of the outline focused Chip.
 /// @group chip
-$kendo-chip-focus-offset: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-chip-focus-offset: k-spacing(0.5) !default;
 /// The outline width of the outline focused Chip.
 /// @group chip
 $kendo-chip-focus-outline-width: 1px !default;
@@ -51,23 +51,23 @@ $kendo-chip-focus-outline-style: solid !default;
 
 /// The horizontal padding of the small Chip.
 /// @group chip
-$kendo-chip-sm-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-chip-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-chip-md-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the large Chip.
 /// @group chip
-$kendo-chip-lg-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-chip-lg-padding-x: k-spacing(2) !default;
 
 /// The vertical padding of the small Chip.
 /// @group chip
-$kendo-chip-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-chip-sm-padding-y: k-spacing(0.5) !default;
 /// The vertical padding of the medium Chip.
 /// @group chip
-$kendo-chip-md-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-chip-md-padding-y: k-spacing(1) !default;
 /// The vertical padding of the large Chip.
 /// @group chip
-$kendo-chip-lg-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-chip-lg-padding-y: k-spacing(1.5) !default;
 
 /// The font size of the small Chip.
 /// @group chip
@@ -223,7 +223,7 @@ $kendo-chip-theme-colors: () !default;
 /// The sizes of the Chip list.
 /// @group chip
 $kendo-chip-list-sizes: (
-    sm: map.get( $kendo-spacing, 1 ),
-    md: map.get( $kendo-spacing, 1 ),
-    lg: map.get( $kendo-spacing, 1 )
+    sm: k-spacing(1),
+    md: k-spacing(1),
+    lg: k-spacing(1)
 ) !default;

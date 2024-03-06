@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../core/" as *;
 @use "../button/_variables.scss" as *;
+@use "../core/spacing" as *;
 
 /// Font size of the map.
 /// @group map
@@ -31,16 +32,16 @@ $kendo-map-height: 600px !default;
 
 /// Map navigator horizontal margin.
 /// @group map
-$kendo-map-navigator-margin-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-map-navigator-margin-x: k-spacing(4) !default;
 /// Map navigator vertical margin.
 /// @group map
-$kendo-map-navigator-margin-y: map.get( $kendo-spacing, 4 ) !default;
+$kendo-map-navigator-margin-y: k-spacing(4) !default;
 /// Map navigator padding.
 /// @group map
-$kendo-map-navigator-padding: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-map-navigator-padding: k-spacing(0.5) !default;
 /// Map navigator width.
 /// @group map
-$kendo-map-navigator-width: calc( var( --kendo-icon-size) * 3 + #{$kendo-map-navigator-padding * 2} ) !default;
+$kendo-map-navigator-width: calc( var( --kendo-icon-size) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) !default;
 /// Map navigator height.
 /// @group map
 $kendo-map-navigator-height: $kendo-map-navigator-width !default;
@@ -59,7 +60,7 @@ $kendo-map-navigator-border: if($kendo-enable-color-system, k-color( border ), k
 
 /// Map zoom control margin.
 /// @group map
-$kendo-map-zoom-control-margin: map.get( $kendo-spacing, 4 ) !default;
+$kendo-map-zoom-control-margin: k-spacing(4) !default;
 /// Map zoom control horizontal padding.
 /// @group map
 $kendo-map-zoom-control-button-padding-x: $kendo-button-md-padding-y !default;

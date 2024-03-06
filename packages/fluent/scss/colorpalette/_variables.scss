@@ -22,7 +22,7 @@ $kendo-color-palette-tile-outline-style: solid !default;
 $kendo-color-palette-tile-outline: transparent !default;
 /// The width of the ColorPalette tile.
 /// @group colorpalette
-$kendo-color-palette-tile-width: map.get( $kendo-spacing, 6 ) !default;
+$kendo-color-palette-tile-width: k-spacing(6) !default;
 /// The height of the ColorPalette tile.
 /// @group colorpalette
 $kendo-color-palette-tile-height: $kendo-color-palette-tile-width !default;

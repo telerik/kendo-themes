@@ -15,24 +15,24 @@ $kendo-checkbox-border-width: 1px !default;
 // A map with the different CheckBox sizes.
 $kendo-checkbox-sizes: (
     sm: (
-        size: map.get( $kendo-spacing, 4 ),
-        glyph-size: map.get( $kendo-spacing, 3.5 ),
-        indicator-size: map.get( $kendo-spacing, 4 ),
-        indeterminate-size: map.get( $kendo-spacing, 3 ),
+        size: k-spacing(4),
+        glyph-size: k-spacing(3.5),
+        indicator-size: k-spacing(4),
+        indeterminate-size: k-spacing(3),
         ripple-size: 300%
     ),
     md: (
-        size: map.get( $kendo-spacing, 5 ),
-        glyph-size: map.get( $kendo-spacing, 4.5 ),
-        indicator-size: map.get( $kendo-spacing, 4 ),
-        indeterminate-size: map.get( $kendo-spacing, 4 ),
+        size: k-spacing(5),
+        glyph-size: k-spacing(4.5),
+        indicator-size: k-spacing(4),
+        indeterminate-size: k-spacing(4),
         ripple-size: 300%
     ),
     lg: (
-        size: map.get( $kendo-spacing, 6 ),
-        glyph-size: map.get( $kendo-spacing, 5.5 ),
-        indicator-size: map.get( $kendo-spacing, 4 ),
-        indeterminate-size: map.get( $kendo-spacing, 5 ),
+        size: k-spacing(6),
+        glyph-size: k-spacing(5.5),
+        indicator-size: k-spacing(4),
+        indeterminate-size: k-spacing(5),
         ripple-size: 300%
     )
 ) !default;
@@ -192,17 +192,17 @@ $kendo-checkbox-disabled-indeterminate-image: escape-svg( url("data:image/svg+xm
 
 /// The horizontal margin of the CheckBox inside a label.
 /// @group checkbox
-$kendo-checkbox-label-margin-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-checkbox-label-margin-x: k-spacing(2) !default;
 
 
 // Checkbox list
 
 /// The spacing between the items in a horizontal CheckBox list.
 /// @group checkbox
-$kendo-checkbox-list-spacing: map.get( $kendo-spacing, 4 ) !default;
+$kendo-checkbox-list-spacing: k-spacing(4) !default;
 /// The horizontal padding of the CheckBox list items.
 /// @group checkbox
-$kendo-checkbox-list-item-padding-x: 0px !default;
+$kendo-checkbox-list-item-padding-x: k-spacing(0) !default;
 /// The vertical padding of the CheckBox list items.
 /// @group checkbox
 $kendo-checkbox-list-item-padding-y: $kendo-list-md-item-padding-y !default;

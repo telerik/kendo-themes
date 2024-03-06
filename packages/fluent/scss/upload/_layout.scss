@@ -1,5 +1,6 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
+@use "../core/spacing" as *;
 
 @mixin kendo-upload--layout() {
 

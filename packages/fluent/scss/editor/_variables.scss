@@ -34,10 +34,10 @@ $kendo-editor-placeholder-opacity: var( --kendo-input-placeholder-opacity, #{$ke
 $kendo-editor-content-outline-color: var( --kendo-body-text, initial ) !default;
 /// The horizontal margin of the Editor's export tool icon.
 /// @group editor
-$kendo-editor-export-tool-icon-margin-x: map.get( $kendo-spacing, 1 ) !default;
+$kendo-editor-export-tool-icon-margin-x: k-spacing(1) !default;
 /// The outline width of the Editor's selected node.
 /// @group editor
-$kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-editor-selectednode-outline-width: k-spacing(0.5) !default;
 
 /// The selected text color of the Editor.
 /// @group editor
@@ -51,7 +51,7 @@ $kendo-editor-highlighted-bg: if($kendo-enable-color-system, color-mix(in srgb, 
 
 /// The size of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-size: map.get( $kendo-spacing, 2 ) !default;
+$kendo-editor-resize-handle-size: k-spacing(2) !default;
 /// The border width of the Editor's resize handle.
 /// @group editor
 $kendo-editor-resize-handle-border-width: 1px !default;

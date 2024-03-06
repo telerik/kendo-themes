@@ -37,10 +37,10 @@ $kendo-media-player-quality-border: if($kendo-enable-color-system, k-color( bord
 $kendo-media-player-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
 /// Mediaplayer titlebar horizontal padding.
 /// @group mediaplayer
-$kendo-media-player-titlebar-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
 /// Mediaplayer titlebar vertical padding.
 /// @group mediaplayer
-$kendo-media-player-titlebar-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
 /// Mediaplayer titlebar background color.
 /// @group mediaplayer
 $kendo-media-player-titlebar-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 40%, transparent), rgba( $kendo-color-black, .4 )) !default;

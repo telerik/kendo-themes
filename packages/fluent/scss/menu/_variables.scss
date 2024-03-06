@@ -5,7 +5,7 @@
 
 /// Width of the menu border.
 /// @group menu
-$kendo-menu-border-width: map.get( $kendo-spacing, 0 ) !default;
+$kendo-menu-border-width: k-spacing(0) !default;
 // Font family of the menu.
 /// @group menu
 $kendo-menu-font-family: var( --kendo-font-family, inherit ) !default;
@@ -18,18 +18,18 @@ $kendo-menu-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Padding of menu root items.
 /// @group menu
-$kendo-menu-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
-$kendo-menu-item-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-menu-item-padding-x: k-spacing(2) !default;
+$kendo-menu-item-padding-y: k-spacing(3) !default;
 
 /// Spacing between menu root items.
 /// @group menu
-$kendo-menu-item-spacing: map.get( $kendo-spacing, 0 ) !default;
+$kendo-menu-item-spacing: k-spacing(0) !default;
 /// Spacing between menu root items text and icons.
 /// @group menu
 $kendo-menu-item-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
 /// Spacing between menu separator and items.
 /// @group menu
-$kendo-menu-separator-margin: map.get( $kendo-spacing, 1 ) !default;
+$kendo-menu-separator-margin: k-spacing(1) !default;
 
 /// Separator width
 /// @group menu
@@ -37,7 +37,7 @@ $kendo-menu-separator-width: 1px !default;
 
 /// The base outline of focused menu item.
 /// @group menu
-$kendo-menu-item-focus-outline-offset: - map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-menu-item-focus-outline-offset: calc( #{k-spacing(0.5)} * -1 ) !default;
 $kendo-menu-item-focus-outline-width: 1px !default;
 $kendo-menu-item-focus-outline-style: solid !default;
 
@@ -129,7 +129,7 @@ $kendo-menu-popup-shadow: var( --kendo-box-shadow-depth-6, none ) !default;
 
 /// Horizontal padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-menu-popup-item-padding-x: k-spacing(2) !default;
 $kendo-menu-popup-sm-item-padding-x: $kendo-menu-popup-item-padding-x !default;
 $kendo-menu-popup-md-item-padding-x: $kendo-menu-popup-item-padding-x !default;
 $kendo-menu-popup-lg-item-padding-x: $kendo-menu-popup-item-padding-x !default;
@@ -140,15 +140,15 @@ $kendo-menu-popup-md-item-padding-y: $kendo-list-md-item-padding-y !default;
 $kendo-menu-popup-lg-item-padding-y: $kendo-list-lg-item-padding-y !default;
 /// The end padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-sm-item-padding-end: calc( #{$kendo-menu-popup-sm-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) ) !default;
-$kendo-menu-popup-md-item-padding-end: calc( #{$kendo-menu-popup-md-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) ) !default;
-$kendo-menu-popup-lg-item-padding-end: calc( #{$kendo-menu-popup-lg-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-sm-item-padding-end: calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-md-item-padding-end: calc( calc( #{$kendo-menu-popup-md-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-lg-item-padding-end: calc( calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
 
 /// The start margin of the menu item expand icon.
 /// @group menu
-$kendo-menu-popup-sm-item-icon-margin-start: map.get( $kendo-spacing, 0 ) !default;
-$kendo-menu-popup-item-icon-md-margin-start: map.get( $kendo-spacing, 0 ) !default;
-$kendo-menu-popup-lg-item-icon-margin-start: map.get( $kendo-spacing, 0 ) !default;
+$kendo-menu-popup-sm-item-icon-margin-start: k-spacing(0) !default;
+$kendo-menu-popup-item-icon-md-margin-start: k-spacing(0) !default;
+$kendo-menu-popup-lg-item-icon-margin-start: k-spacing(0) !default;
 /// The end margin of the menu item expand icon.
 /// @group menu
 $kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) ) !default;
@@ -163,7 +163,7 @@ $kendo-menu-popup-focus-outline-style: $kendo-menu-item-focus-outline-style !def
 
 /// The spacing between the menu items in popup.
 /// @group menu
-$kendo-menu-popup-item-spacing: map.get( $kendo-spacing, 0 ) !default;
+$kendo-menu-popup-item-spacing: k-spacing(0) !default;
 
 /// Sizes map for the menu.
 /// @group menu

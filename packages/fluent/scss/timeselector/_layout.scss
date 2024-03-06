@@ -213,7 +213,7 @@
         $_line-height: map.get( $size-props, line-height );
         $_list-item-padding-x: map.get( $size-props, list-item-padding-x );
         $_list-item-padding-y: map.get( $size-props, list-item-padding-y );
-        $_highlight-height: calc( #{$_font-size} * #{$_line-height} + #{ $_list-item-padding-y * 2} );
+        $_highlight-height: calc( #{$_font-size} * #{$_line-height} + calc( #{ $_list-item-padding-y} * 2 ) );
 
 
         .k-timeselector-#{$size} {

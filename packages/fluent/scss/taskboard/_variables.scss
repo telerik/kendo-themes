@@ -5,7 +5,7 @@
 
 /// The spacing index of the TaskBoard.
 /// @group taskboard
-$kendo-taskboard-spacer: map.get( $kendo-spacing, 4 ) !default;
+$kendo-taskboard-spacer: k-spacing(4) !default;
 
 /// The border width of the TaskBoard.
 /// @group taskboard
@@ -15,10 +15,10 @@ $kendo-taskboard-border-width: 1px !default;
 $kendo-taskboard-border-style: solid !default;
 /// The vertical padding of the TaskBoard.
 /// @group taskboard
-$kendo-taskboard-padding-y: 0px !default;
+$kendo-taskboard-padding-y: k-spacing(0) !default;
 /// The horizontal of the TaskBoard.
 /// @group taskboard
-$kendo-taskboard-padding-x: 0px !default;
+$kendo-taskboard-padding-x: k-spacing(0) !default;
 /// The font family of the TaskBoard.
 /// @group taskboard
 $kendo-taskboard-font-family: var( --kendo-font-family, inherit ) !default;
@@ -40,20 +40,20 @@ $kendo-taskboard-border: var( --kendo-component-border, initial ) !default;
 
 /// The vertical padding of the TaskBoard content.
 /// @group taskboard
-$kendo-taskboard-content-padding-y: 0px !default;
+$kendo-taskboard-content-padding-y: k-spacing(0) !default;
 /// The horizontal padding of the TaskBoard content.
 /// @group taskboard
-$kendo-taskboard-content-padding-x: 0px !default;
+$kendo-taskboard-content-padding-x: k-spacing(0) !default;
 
 /// The vertical spacing of the TaskBoard column container.
 /// @group taskboard
-$kendo-taskboard-column-container-spacing-y: math.div( $kendo-taskboard-spacer, 2 ) !default;
+$kendo-taskboard-column-container-spacing-y: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
 /// The vertical padding of the TaskBoard column container.
 /// @group taskboard
-$kendo-taskboard-column-container-padding-y: 0px !default;
+$kendo-taskboard-column-container-padding-y: k-spacing(0) !default;
 /// The horizontal padding of the TaskBoard column container.
 /// @group taskboard
-$kendo-taskboard-column-container-padding-x: math.div( $kendo-taskboard-spacer, 2 ) !default;
+$kendo-taskboard-column-container-padding-x: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
 /// The spacing of the TaskBoard columns container.
 /// @group taskboard
 $kendo-taskboard-columns-container-gap: $kendo-taskboard-spacer !default;
@@ -88,16 +88,16 @@ $kendo-taskboard-column-focus-border: if($kendo-enable-color-system, k-color( bo
 
 /// The vertical padding of the TaskBoard column header.
 /// @group taskboard
-$kendo-taskboard-column-header-padding-y: math.div( $kendo-taskboard-spacer, 2 ) !default;
+$kendo-taskboard-column-header-padding-y: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
 /// The horizontal padding of the TaskBoard column header.
 /// @group taskboard
 $kendo-taskboard-column-header-padding-x: $kendo-taskboard-column-header-padding-y !default;
 /// The spacing of the TaskBoard column header.
 /// @group taskboard
-$kendo-taskboard-column-header-gap: math.div( $kendo-taskboard-spacer, 4 ) !default;
+$kendo-taskboard-column-header-gap: calc( #{$kendo-taskboard-spacer} / 4 ) !default;
 /// The spacing of the TaskBoard column header actions.
 /// @group taskboard
-$kendo-taskboard-column-header-actions-gap: math.div( $kendo-taskboard-spacer, 2 ) !default;
+$kendo-taskboard-column-header-actions-gap: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
 /// The font weight of the TaskBoard column header.
 /// @group taskboard
 $kendo-taskboard-column-header-font-weight: 400 !default;
@@ -107,13 +107,13 @@ $kendo-taskboard-column-header-text: var( --kendo-component-text, inherit ) !def
 
 /// The vertical padding of the TaskBoard column Card wrapper.
 /// @group taskboard
-$kendo-taskboard-column-cards-padding-y: 0px !default;
+$kendo-taskboard-column-cards-padding-y: k-spacing(0) !default;
 /// The horizontal padding of the TaskBoard column Card wrapper.
 /// @group taskboard
-$kendo-taskboard-column-cards-padding-x: 0px !default;
+$kendo-taskboard-column-cards-padding-x: k-spacing(0) !default;
 /// The spacing of the TaskBoard column Card wrapper.
 /// @group taskboard
-$kendo-taskboard-column-cards-gap: math.div( $kendo-taskboard-spacer, 2 ) !default;
+$kendo-taskboard-column-cards-gap: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
 
 
 /// The default width of the TaskBoard pane.
@@ -121,10 +121,10 @@ $kendo-taskboard-column-cards-gap: math.div( $kendo-taskboard-spacer, 2 ) !defau
 $kendo-taskboard-pane-width: $kendo-taskboard-column-width !default;
 /// The vertical padding of the TaskBoard pane.
 /// @group taskboard
-$kendo-taskboard-pane-padding-y: 0px !default;
+$kendo-taskboard-pane-padding-y: k-spacing(0) !default;
 /// The horizontal padding of the TaskBoard pane.
 /// @group taskboard
-$kendo-taskboard-pane-padding-x: 0px !default;
+$kendo-taskboard-pane-padding-x: k-spacing(0) !default;
 /// The border width of the TaskBoard pane.
 /// @group taskboard
 $kendo-taskboard-pane-border-width: 1px !default;
@@ -143,7 +143,7 @@ $kendo-taskboard-pane-border: var( --kendo-component-border, inherit ) !default;
 $kendo-taskboard-pane-header-padding-y: $kendo-taskboard-spacer !default;
 /// The horizontal padding of the TaskBoard pane header.
 /// @group taskboard
-$kendo-taskboard-pane-header-padding-x: map.get( $kendo-spacing, 6 ) !default;
+$kendo-taskboard-pane-header-padding-x: k-spacing(6) !default;
 /// The font size of the TaskBoard pane header.
 /// @group taskboard
 $kendo-taskboard-pane-header-font-size: var( --kendo-font-size-xl, 1rem ) !default;
@@ -156,21 +156,21 @@ $kendo-taskboard-pane-header-text: $kendo-taskboard-pane-text !default;
 
 /// The vertical padding of the TaskBoard pane content.
 /// @group taskboard
-$kendo-taskboard-pane-content-padding-y: 0px !default;
+$kendo-taskboard-pane-content-padding-y: k-spacing(0) !default;
 /// The horizontal padding of the TaskBoard pane content.
 /// @group taskboard
 $kendo-taskboard-pane-content-padding-x: $kendo-taskboard-pane-header-padding-x !default;
 
 /// The vertical padding of the TaskBoard pane actions.
 /// @group taskboard
-$kendo-taskboard-pane-actions-padding-y: map.get( $kendo-spacing, 6 ) !default;
+$kendo-taskboard-pane-actions-padding-y: k-spacing(6) !default;
 /// The horizontal padding of the TaskBoard pane actions.
 /// @group taskboard
 $kendo-taskboard-pane-actions-padding-x: $kendo-taskboard-pane-actions-padding-y !default;
 
 /// The vertical padding of the TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-padding-y: math.div( $kendo-taskboard-spacer, 2 ) !default;
+$kendo-taskboard-card-padding-y: calc( #{$kendo-taskboard-spacer} / 2 ) !default;
 /// The horizontal padding of the TaskBoard Card.
 /// @group taskboard
 $kendo-taskboard-card-padding-x: $kendo-taskboard-card-padding-y !default;

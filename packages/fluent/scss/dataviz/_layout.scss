@@ -3,6 +3,7 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 @use "../tooltip/_variables.scss" as *;
+@use "../core/spacing" as *;
 
 @mixin kendo-dataviz--layout() {
 
@@ -346,10 +347,10 @@
             right: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            inset-block-start: calc( #{$kendo-padding-sm-y} * 2 + ( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit)) + 1px);
+            inset-block-start: calc( calc( #{$kendo-padding-sm-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            inset-inline-start: calc( #{$kendo-padding-sm-y} * 2 + ( var( --kendo-line-height, normal) * var( --kendo-font-size, inherit)) + 1px);
+            inset-inline-start: calc( calc( #{$kendo-padding-sm-y} * 2 ) + calc( var( --kendo-line-height, normal) * var( --kendo-font-size, inherit) ) + 1px);
         }
 
 
