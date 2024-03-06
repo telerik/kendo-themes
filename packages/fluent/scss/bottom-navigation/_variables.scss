@@ -3,7 +3,7 @@
 
 /// The horizontal padding of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-bottom-nav-padding-x: k-spacing(1.5) !default;
 /// The vertical padding of the BottomNavigation.
 /// @group bottom-navigation
 $kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-x !default;
@@ -28,10 +28,10 @@ $kendo-bottom-nav-letter-spacing: .2px !default;
 
 /// The horizontal padding of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-bottom-nav-item-padding-x: k-spacing(2) !default;
 /// The vertical padding of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-y: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-bottom-nav-item-padding-y: k-spacing(0.5) !default;
 /// The minimum width of the BottomNavigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-min-width: 72px !default;
@@ -46,11 +46,11 @@ $kendo-bottom-nav-item-min-height: calc( var( --kendo-icon-size, 1.5rem ) * 2 + 
 $kendo-bottom-nav-item-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// The spacing of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-gap: map.get( $kendo-spacing, 1 ) !default;
+$kendo-bottom-nav-item-gap: k-spacing(1) !default;
 
 /// The offset of the focused BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-focus-offset: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-bottom-nav-item-focus-offset: k-spacing(0.5) !default;
 /// The outline width of the focused BottomNavigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-focus-outline-width: 1px !default;

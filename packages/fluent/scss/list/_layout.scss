@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../core/" as *;
 @use "./_variables.scss" as *;
+@use "../core/spacing" as *;
 
 @mixin kendo-list--layout() {
 

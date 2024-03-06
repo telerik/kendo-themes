@@ -13,16 +13,16 @@ $kendo-image-editor-text: var( --kendo-component-text, inherit ) !default;
 $kendo-image-editor-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// Vertical margin of the imageeditor.
 /// @group imageeditor
-$kendo-image-editor-margin-y: 0 !default;
+$kendo-image-editor-margin-y: k-spacing(0) !default;
 /// Horizontal margin of the imageeditor.
 /// @group imageeditor
-$kendo-image-editor-margin-x: 0 !default;
+$kendo-image-editor-margin-x: k-spacing(0) !default;
 /// Vertical padding of the imageeditor.
 /// @group imageeditor
-$kendo-image-editor-padding-y: 0 !default;
+$kendo-image-editor-padding-y: k-spacing(0) !default;
 /// Horizontal padding of the imageeditor.
 /// @group imageeditor
-$kendo-image-editor-padding-x: 0 !default;
+$kendo-image-editor-padding-x: k-spacing(0) !default;
 
 /// Border width of the imageeditor.
 /// @group imageeditor
@@ -61,10 +61,10 @@ $kendo-image-editor-action-pane-text: inherit !default;
 $kendo-image-editor-action-pane-border: inherit !default;
 /// Imageeditor action pane vertical padding.
 /// @group imageeditor
-$kendo-image-editor-action-pane-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-image-editor-action-pane-padding-y: k-spacing(3) !default;
 /// Imageeditor action pane horizontal padding.
 /// @group imageeditor
-$kendo-image-editor-action-pane-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-image-editor-action-pane-padding-x: k-spacing(3) !default;
 /// Imageeditor action pane width.
 /// @group imageeditor
 $kendo-image-editor-action-pane-width: if( $kendo-image-editor-content-border-width == 0, 240px, calc( 240px + #{$kendo-image-editor-content-border-width}) ) !default;
@@ -90,19 +90,19 @@ $kendo-image-editor-crop-border-style: dashed !default;
 
 /// Imageeditor resize handle horizontal margin.
 /// @group imageeditor
-$kendo-image-editor-resize-handle-margin-x: 1px !default;
+$kendo-image-editor-resize-handle-margin-x: k-spacing(1px) !default;
 /// Imageeditor resize handle vertical margin.
 /// @group imageeditor
-$kendo-image-editor-resize-handle-margin-y: 1px !default;
+$kendo-image-editor-resize-handle-margin-y: k-spacing(1px) !default;
 /// Imageeditor resize handle border width.
 /// @group imageeditor
 $kendo-image-editor-resize-handle-border-width: 0 2px 2px 0 !default;
 /// Imageeditor resize handle size.
 /// @group imageeditor
-$kendo-image-editor-resize-handle-size: map.get( $kendo-spacing, 4 ) !default;
+$kendo-image-editor-resize-handle-size: k-spacing(4) !default;
 /// Imageeditor resize handle top offset.
 /// @group imageeditor
-$kendo-image-editor-resize-top-offset: math.div( $kendo-image-editor-resize-handle-size, 2 ) !default;
+$kendo-image-editor-resize-top-offset: calc( #{$kendo-image-editor-resize-handle-size} / 2 ) !default;
 /// Imageeditor resize handle left offset.
 /// @group imageeditor
-$kendo-image-editor-resize-left-offset: math.div( $kendo-image-editor-resize-handle-size, 2 ) !default;
+$kendo-image-editor-resize-left-offset: calc( #{$kendo-image-editor-resize-handle-size} / 2 ) !default;

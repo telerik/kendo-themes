@@ -78,7 +78,7 @@
         $_font-size: map.get( $size-props, font-size );
         $_line-height: map.get( $size-props, line-height );
 
-        $_icon-button-padding: math.div( $_padding-x, 2 );
+        $_icon-button-padding: calc( #{$_padding-x} / 2 );
 
         .k-button-#{$size} {
             --INTERNAL--kendo-button-padding-x: var( --kendo-button-#{$size}-padding-x, #{$_padding-x} );

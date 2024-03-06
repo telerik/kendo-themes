@@ -24,26 +24,26 @@ $kendo-treeview-md-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-treeview-lg-line-height: var( --kendo-line-height, normal ) !default;
 /// The indentation of child groups in the TreeView.
 /// @group treeview
-$kendo-treeview-indent: map.get( $kendo-spacing, 6 ) !default;
+$kendo-treeview-indent: k-spacing(6) !default;
 
 /// The horizontal padding of the small TreeView items.
 /// @group treeview
-$kendo-treeview-sm-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-sm-item-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium TreeView items.
 /// @group treeview
-$kendo-treeview-md-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-md-item-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the large TreeView items.
 /// @group treeview
-$kendo-treeview-lg-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-lg-item-padding-x: k-spacing(2) !default;
 /// The vertical padding of the small TreeView items.
 /// @group treeview
-$kendo-treeview-sm-item-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-treeview-sm-item-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the medium TreeView items.
 /// @group treeview
-$kendo-treeview-md-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-md-item-padding-y: k-spacing(2) !default;
 /// The vertical padding of the large TreeView items.
 /// @group treeview
-$kendo-treeview-lg-item-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
+$kendo-treeview-lg-item-padding-y: k-spacing(2.5) !default;
 /// The border width of the TreeView items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0 !default;
@@ -53,10 +53,10 @@ $kendo-treeview-item-border-radius: var( --kendo-border-radius-md, #{$kendo-bord
 
 /// The horizontal padding of the TreeViews' filter element.
 /// @group treeview
-$kendo-treeview-filter-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-filter-padding-x: k-spacing(2) !default;
 /// The vertical padding of the TreeViews' filter element.
 /// @group treeview
-$kendo-treeview-filter-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-filter-padding-y: k-spacing(2) !default;
 
 
 /// The sizes map of the TreeView.
@@ -181,4 +181,4 @@ $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !defaul
 
 /// The padding of the checkbox wrapper in the TreeView.
 /// @group treeview
-$kendo-treeview-checkbox-wrap-padding: map.get( $kendo-spacing, .5 ) !default;
+$kendo-treeview-checkbox-wrap-padding: k-spacing(.5) !default;

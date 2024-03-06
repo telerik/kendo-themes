@@ -1,4 +1,5 @@
 @use "../core/" as *;
+@use "../core/spacing" as *;
 
 /// The horizontal padding of the Filter.
 /// @group filter
@@ -9,7 +10,7 @@ $kendo-filter-padding-y: $kendo-padding-md-y !default;
 
 /// The bottom margin of the Filter.
 /// @group filter
-$kendo-filter-bottom-margin: 30px !default;
+$kendo-filter-bottom-margin: k-spacing(7.5) !default;
 /// The width of the line that connects the Filter items.
 /// @group filter
 $kendo-filter-line-size: 1px !default;

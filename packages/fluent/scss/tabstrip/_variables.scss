@@ -1,13 +1,14 @@
 @use "sass:map";
 @use "../core/" as *;
 @use "../list/_variables.scss" as *;
+@use "../core/spacing" as *;
 
 /// The horizontal padding of the tabstrip wrapper
 /// @group tabstrip
-$kendo-tabstrip-wrapper-padding-x: 0px !default;
+$kendo-tabstrip-wrapper-padding-x: k-spacing(0) !default;
 /// The vertical padding of the tabstrip wrapper
 /// @group tabstrip
-$kendo-tabstrip-wrapper-padding-y: 0px !default;
+$kendo-tabstrip-wrapper-padding-y: k-spacing(0) !default;
 /// The width of the border around the tabstrip wrapper
 /// @group tabstrip
 $kendo-tabstrip-wrapper-border-width: 0px !default;
@@ -48,7 +49,7 @@ $kendo-tabstrip-border: transparent !default;
 $kendo-tabstrip-item-padding-x: var( --kendo-padding-x, #{$kendo-padding-md-x} ) !default;
 /// The vertical padding of the tabstrip item
 /// @group tabstrip
-$kendo-tabstrip-item-padding-y: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, 1 ) !default;
+$kendo-tabstrip-item-padding-y: calc( #{k-spacing(2)} + #{k-spacing(1)} ) !default;
 /// The width of the border around the tabstrip item
 /// @group tabstrip
 $kendo-tabstrip-item-border-width: 0px !default;
@@ -57,7 +58,7 @@ $kendo-tabstrip-item-border-width: 0px !default;
 $kendo-tabstrip-item-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// The gap between the tabstrip items
 /// @group tabstrip
-$kendo-tabstrip-item-gap: map.get( $kendo-spacing, 2 ) !default;
+$kendo-tabstrip-item-gap: k-spacing(2) !default;
 ///  The background color of the tabstrip item
 /// @group tabstrip
 $kendo-tabstrip-item-bg: transparent !default;
@@ -110,17 +111,17 @@ $kendo-tabstrip-item-dragging-text: if($kendo-enable-color-system, k-color( prim
 // Indicator
 /// The border width of the tabstrip indicator
 /// @group tabstrip
-$kendo-tabstrip-indicator-size: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-tabstrip-indicator-size: k-spacing(0.5) !default;
 /// The border color of the tabstrip ripple
 /// @group tabstrip
 $kendo-tabstrip-indicator-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The horizontal padding of tabstrip content
 /// @group tabstrip
-$kendo-tabstrip-content-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-tabstrip-content-padding-x: k-spacing(3) !default;
 /// The vertical padding of tabstrip content
 /// @group tabstrip
-$kendo-tabstrip-content-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-tabstrip-content-padding-y: k-spacing(1.5) !default;
 /// The width of border around tabstrip content
 /// @group tabstrip
 $kendo-tabstrip-content-border-width: 1px !default;
@@ -140,7 +141,7 @@ $kendo-tabstrip-content-focus-border: var( --kendo-component-text, initial ) !de
 
 /// The horizontal button padding of the scrollable tabstrip
 /// @group tabstrip
-$kendo-tabstrip-scrollable-button-padding-x: map.get( $kendo-spacing, 1 ) !default;
+$kendo-tabstrip-scrollable-button-padding-x: k-spacing(1) !default;
 // The vertical button padding of the scrollable tabstrip
 /// @group tabstrip
-$kendo-tabstrip-scrollable-button-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-tabstrip-scrollable-button-padding-y: k-spacing(1) !default;

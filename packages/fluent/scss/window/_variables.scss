@@ -3,7 +3,7 @@
 
 /// The width of the border around the Window.
 /// @group window
-$kendo-window-border-width: map.get( $kendo-spacing, 1 ) 0 0 !default;
+$kendo-window-border-width: k-spacing(1) 0 0 !default;
 /// The border radius of the Window.
 /// @group window
 $kendo-window-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
@@ -19,10 +19,10 @@ $kendo-window-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal padding of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-padding-x: map.get( $kendo-spacing, 6 ) !default;
+$kendo-window-titlebar-padding-x: k-spacing(6) !default;
 /// The vertical padding of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-padding-y: map.get( $kendo-spacing, 5 ) !default;
+$kendo-window-titlebar-padding-y: k-spacing(5) !default;
 /// The width of the border of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border-width: 0 !default;
@@ -42,7 +42,7 @@ $kendo-window-title-font-weight: var( --kendo-font-weight-bold, bold ) !default;
 
 /// The spacing between the buttons in the Window titlebar.
 /// @group window
-$kendo-window-actions-gap: 0px !default;
+$kendo-window-actions-gap: k-spacing(0) !default;
 /// OThe opacity of the buttons in the Window titlebar.
 /// @group window
 $kendo-window-action-opacity: 1 !default;
@@ -52,23 +52,23 @@ $kendo-window-action-hover-opacity: 1 !default;
 
 /// The horizontal padding of the content of the Window.
 /// @group window
-$kendo-window-inner-padding-x: map.get( $kendo-spacing, 6 ) !default;
+$kendo-window-inner-padding-x: k-spacing(6) !default;
 /// The vertical padding of the content of the Window.
 /// @group window
-$kendo-window-inner-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-window-inner-padding-y: k-spacing(3) !default;
 
 /// The horizontal padding of the Window action buttons.
 /// @group window
-$kendo-window-buttongroup-padding-x: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-x
+$kendo-window-buttongroup-padding-x: k-spacing(6) !default; // $kendo-actions-padding-x
 /// The vertical padding of the Window action buttons.
 /// @group window
-$kendo-window-buttongroup-padding-y: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-y
+$kendo-window-buttongroup-padding-y: k-spacing(6) !default; // $kendo-actions-padding-y
 /// The width of the top border of the Window action buttons.
 /// @group window
 $kendo-window-buttongroup-border-width: 0 !default;
 /// The spacing between the Window action buttons.
 /// @group window
-$kendo-window-buttongroup-spacing: map.get( $kendo-spacing, 3 ) !default;
+$kendo-window-buttongroup-spacing: k-spacing(3) !default;
 
 /// The background color of the Window.
 /// @group window

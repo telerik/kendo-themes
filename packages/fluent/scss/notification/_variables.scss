@@ -3,20 +3,20 @@
 
 /// The row-gap between the elements in the Notification group.
 /// @group notification
-$kendo-notification-group-gap: map.get( $kendo-spacing, 2 ) !default;
+$kendo-notification-group-gap: k-spacing(2) !default;
 
 /// The horizontal padding of the Notification.
 /// @group notification
-$kendo-notification-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-notification-padding-x: k-spacing(3) !default;
 /// The vertical padding of the Notification.
 /// @group notification
-$kendo-notification-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-notification-padding-y: k-spacing(2) !default;
 // The width of the border around the Notification.
 /// @group notification
 $kendo-notification-border-width: 1px !default;
 /// The border radius of the Notification.
 /// @group notification
-$kendo-notification-border-radius: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-notification-border-radius: k-spacing(0.5) !default;
 /// The font family of the Notification.
 /// @group notification
 $kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;
@@ -41,10 +41,10 @@ $kendo-notification-box-shadow: none !default;
 
 /// The horizontal spacing of the Notification icon.
 /// @group notification
-$kendo-notification-icon-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-notification-icon-spacing: k-spacing(2) !default;
 /// The horizontal spacing of the Notification close icon.
 /// @group notification
-$kendo-notification-close-icon-spacing: map.get( $kendo-spacing, 4 ) !default;
+$kendo-notification-close-icon-spacing: k-spacing(4) !default;
 /// The color of the Notification icon.
 /// @group notification
 $kendo-notification-icon-text: var( --kendo-component-text, inherit ) !default;

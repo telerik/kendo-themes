@@ -115,10 +115,10 @@ $kendo-code-line-height: var( --kendo-line-height, normal) !default;
 $kendo-code-font-weight: var( --kendo-font-weight, normal) !default;
 $kendo-code-letter-spacing: var( --kendo-letter-spacing, normal) !default;
 
-$kendo-code-padding-x: map.get( $kendo-spacing, 1 ) !default;
-$kendo-code-padding-y: map.get( $kendo-spacing, 0 ) !default;
-$kendo-pre-padding-x: map.get( $kendo-spacing, 6 ) !default;
-$kendo-pre-padding-y: map.get( $kendo-spacing, 4 ) !default;
+$kendo-code-padding-x: k-spacing(1) !default;
+$kendo-code-padding-y: k-spacing(0) !default;
+$kendo-pre-padding-x: k-spacing(6) !default;
+$kendo-pre-padding-y: k-spacing(4) !default;
 $kendo-code-border-width: 1px !default;
 
 $kendo-code-bg: var( --kendo-component-bg, initial) !default;

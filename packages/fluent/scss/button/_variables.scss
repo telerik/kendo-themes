@@ -8,23 +8,23 @@ $kendo-button-border-width: 1px !default;
 
 /// The horizontal padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-x: map.get( $kendo-spacing, 5 ) !default;
+$kendo-button-sm-padding-x: k-spacing(5) !default;
 /// The horizontal padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-x: map.get( $kendo-spacing, 5 ) !default;
+$kendo-button-md-padding-x: k-spacing(5) !default;
 /// The horizontal padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-x: map.get( $kendo-spacing, 5 ) !default;
+$kendo-button-lg-padding-x: k-spacing(5) !default;
 
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-button-sm-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-button-md-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-button-lg-padding-y: k-spacing(2) !default;
 
 /// The font size of the small Button.
 /// @group button
@@ -93,11 +93,11 @@ $kendo-button-sizes: (
 
 /// The content spacing of the Button.
 /// @group button
-$kendo-button-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-button-spacing: k-spacing(2) !default;
 
 /// The offset of the focused Button.
 /// @group button
-$kendo-button-focus-offset: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-button-focus-offset: k-spacing(0.5) !default;
 /// The Outline width of the focused Button.
 /// @group button
 $kendo-button-focus-outline-width: 1px !default;
@@ -110,7 +110,7 @@ $kendo-button-focus-outline-style: solid !default;
 $kendo-button-flat-focus-offset: 1px !default;
 /// The outline width of the flat focused Button.
 /// @group button
-$kendo-button-flat-focus-outline-width: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-button-flat-focus-outline-width: k-spacing(0.5) !default;
 
 /// The offset of the link focused Button.
 /// @group button

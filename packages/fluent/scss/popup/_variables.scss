@@ -3,10 +3,10 @@
 
 /// Horizontal padding of the popup.
 /// @group popup
-$kendo-popup-padding-x: 0 !default;
+$kendo-popup-padding-x: k-spacing(0) !default;
 /// Vertical padding of the popup.
 /// @group popup
-$kendo-popup-padding-y: 0 !default;
+$kendo-popup-padding-y: k-spacing(0) !default;
 /// Width of the border around the popup.
 /// @group popup
 $kendo-popup-border-width: 0 !default;
@@ -23,10 +23,10 @@ $kendo-popup-line-height: var( --kendo-line-height, normal) !default;
 
 /// Horizontal padding of the content inside the popup.
 /// @group popup
-$kendo-popup-content-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-popup-content-padding-x: k-spacing(2) !default;
 /// Vertical padding of the content inside the popup.
 /// @group popup
-$kendo-popup-content-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-popup-content-padding-y: k-spacing(2) !default;
 
 /// Background color of the popup.
 /// @group popup

@@ -19,34 +19,34 @@ $kendo-dialog-titlebar-border: var( --kendo-component-border, initial ) !default
 $kendo-dialog-titlebar-border-width: 0 !default;
 /// The horizontal padding of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-padding-x: map.get( $kendo-spacing, 6 ) !default;
+$kendo-dialog-titlebar-padding-x: k-spacing(6) !default;
 /// The vertical padding of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-padding-y: map.get( $kendo-spacing, 4 ) !default;
+$kendo-dialog-titlebar-padding-y: k-spacing(4) !default;
 
 /// The horizontal padding of the content of the Dialog.
 /// @group dialog
-$kendo-dialog-inner-padding-x: map.get( $kendo-spacing, 6 ) !default;
+$kendo-dialog-inner-padding-x: k-spacing(6) !default;
 /// The vertical padding of the content of the Dialog.
 /// @group dialog
-$kendo-dialog-inner-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-dialog-inner-padding-y: k-spacing(3) !default;
 
 /// The horizontal padding of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-padding-x: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-x
+$kendo-dialog-buttongroup-padding-x: k-spacing(6) !default; // $kendo-actions-padding-x
 /// The vertical padding of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-padding-y: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-y
+$kendo-dialog-buttongroup-padding-y: k-spacing(6) !default; // $kendo-actions-padding-y
 /// The width of the top border of the Dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-border-width: 0 !default;
 /// The spacing between the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-spacing: map.get( $kendo-spacing, 3 ) !default;
+$kendo-dialog-buttongroup-spacing: k-spacing(3) !default;
 
 /// The spacing between the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-button-spacing: map.get( $kendo-spacing, 2 ) !default; // $kendo-actions-padding-y
+$kendo-dialog-button-spacing: k-spacing(2) !default; // $kendo-actions-padding-y
 
 /// The box shadow around the Dialog.
 /// @group dialog

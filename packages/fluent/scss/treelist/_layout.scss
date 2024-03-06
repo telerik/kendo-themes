@@ -18,7 +18,7 @@
             // TODO: see what this does and use a better name
             .k-loading {
                 vertical-align: baseline;
-                margin-right: map.get( $kendo-spacing, 1 );
+                margin-right: k-spacing(1);
 
                 // TODO
                 display: none;
@@ -48,7 +48,7 @@
 
         .k-i-caret-alt-down,
         .k-i-caret-alt-right {
-            margin-inline-end: map.get( $kendo-spacing, 2 );
+            margin-inline-end: k-spacing(2);
         }
     }
 

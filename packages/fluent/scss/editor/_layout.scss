@@ -6,6 +6,7 @@
 @use "../button/_variables.scss" as *;
 @use "../input/_variables.scss" as *;
 @use "../window/_variables.scss" as *;
+@use "../core/spacing" as *;
 
 @mixin kendo-editor--layout() {
 
@@ -353,7 +354,7 @@
             flex: 1;
         }
         .k-search-wrap {
-            margin-inline-start: map.get( $kendo-spacing, 4 );
+            margin-inline-start: k-spacing(4);
             width: 150px;
             display: flex;
             align-items: center;
@@ -370,7 +371,7 @@
 
         // Filebrowser toolbar
         .k-filebrowser-toolbar {
-            margin-block-start: map.get( $kendo-spacing, 4 );
+            margin-block-start: k-spacing(4);
         }
 
         .k-upload {
@@ -397,7 +398,7 @@
             flex-flow: row wrap;
             height: 390px;
             max-height: 50vh;
-            margin-block-end: map.get( $kendo-spacing, 4 );
+            margin-block-end: k-spacing(4);
             padding-block: $kendo-padding-md-y;
             padding-inline: $kendo-padding-md-x;
             border-top-width: 0;

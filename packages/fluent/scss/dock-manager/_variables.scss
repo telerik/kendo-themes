@@ -13,10 +13,10 @@ $kendo-dock-manager-border: var( --kendo-component-border, inherit ) !default;
 
 /// The vertical padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-dock-manager-pane-header-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the pane header in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-header-padding-x: map.get( $kendo-spacing, 6 ) !default;
+$kendo-dock-manager-pane-header-padding-x: k-spacing(6) !default;
 /// The width of the border around the pane header in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-pane-header-border-width: $kendo-dock-manager-border-width !default;
@@ -51,10 +51,10 @@ $kendo-dock-manager-pane-title-font-weight: var( --kendo-font-weight, normal ) !
 
 /// The horizontal padding of the pane content in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-content-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-dock-manager-pane-content-padding-x: k-spacing(3) !default;
 /// The vertical padding of the pane content in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-pane-content-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-dock-manager-pane-content-padding-y: k-spacing(3) !default;
 
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
@@ -75,7 +75,7 @@ $kendo-dock-manager-unpinned-container-shadow: 25.6px 0px 57.6px 0px rgba(0, 0, 
 
 /// The padding of the dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-padding: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-dock-indicator-padding: k-spacing(1.5) !default;
 /// The background color of the dock indicator in the DockManager component.
 /// @group dock-manager
 $kendo-dock-indicator-bg: $kendo-component-bg !default;

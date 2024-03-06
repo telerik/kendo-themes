@@ -26,23 +26,23 @@ $kendo-splitter-border: var( --kendo-component-border, initial ) !default;
 
 /// The size of the Splitter split bar.
 /// @group splitter
-$kendo-splitter-splitbar-size: map.get( $kendo-spacing, 3 ) !default;
+$kendo-splitter-splitbar-size: k-spacing(3) !default;
 /// The length of the Splitter drag handle.
 /// @group splitter
-$kendo-splitter-drag-handle-length: map.get( $kendo-spacing, 5 ) !default;
+$kendo-splitter-drag-handle-length: k-spacing(5) !default;
 /// The thickness of the Splitter drag handle.
 /// @group splitter
-$kendo-splitter-drag-handle-thickness: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-splitter-drag-handle-thickness: k-spacing(0.5) !default;
 /// The margin of the Splitter drag handle icon.
 /// @group splitter
-$kendo-splitter-drag-icon-margin: map.get( $kendo-spacing, 2 ) !default;
+$kendo-splitter-drag-icon-margin: k-spacing(2) !default;
 
 /// The horizontal padding of the collapse icon in the Splitter.
 /// @group splitter
 $kendo-splitter-collapse-icon-padding-x: null !default;
 /// The vertical padding of the collapse icon in the Splitter.
 /// @group splitter
-$kendo-splitter-collapse-icon-padding-y: map.get( $kendo-spacing, .5 ) !default;
+$kendo-splitter-collapse-icon-padding-y: k-spacing(.5) !default;
 
 /// The background color of the Splitter split bar.
 /// @group splitter
@@ -67,4 +67,4 @@ $kendo-splitbar-selected-text: var( --kendo-component-bg, inherit ) !default;
 
 /// The size of the Splitter static split bar.
 /// @group splitter
-$kendo-splitter-splitbar-static-size: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-splitter-splitbar-static-size: k-spacing(0.5) !default;

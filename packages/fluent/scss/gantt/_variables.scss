@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/" as *;
+@use "../core/spacing" as *;
 
 /// Border width of the gantt.
 /// @group gantt
@@ -49,7 +50,7 @@ $kendo-gantt-line-selected-fill: if($kendo-enable-color-system, k-color( primary
 $kendo-gantt-dot-size: 8px !default;
 /// Spacing of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-spacing: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-gantt-dot-spacing: k-spacing(0.5) !default;
 /// Background color of the gantt task dot.
 /// @group gantt
 $kendo-gantt-dot-bg: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
@@ -94,10 +95,10 @@ $kendo-gantt-summary-progress-selected-bg: if($kendo-enable-color-system, k-colo
 $kendo-gantt-task-border-width: 0px !default;
 /// Horizontal padding of the gantt task.
 /// @group gantt
-$kendo-gantt-task-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-gantt-task-padding-x: k-spacing(2) !default;
 /// Vertical padding of the gantt task.
 /// @group gantt
-$kendo-gantt-task-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-gantt-task-padding-y: k-spacing(1) !default;
 /// Background color of the gantt task.
 /// @group gantt
 $kendo-gantt-task-bg: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-110 )) !default;

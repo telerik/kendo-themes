@@ -8,33 +8,33 @@ $kendo-loader-segment-border-radius: 50% !default;
 
 /// The size of the small Loader segment.
 /// @group loader
-$kendo-loader-sm-segment-size: map.get( $kendo-spacing, 1 ) !default;
+$kendo-loader-sm-segment-size: k-spacing(1) !default;
 /// The size of the medium Loader segment.
 /// @group loader
-$kendo-loader-md-segment-size: map.get( $kendo-spacing, 2 ) !default;
+$kendo-loader-md-segment-size: k-spacing(2) !default;
 /// The size of the large Loader segment.
 /// @group loader
-$kendo-loader-lg-segment-size: map.get( $kendo-spacing, 4 ) !default;
+$kendo-loader-lg-segment-size: k-spacing(4) !default;
 
 /// The horizontal padding of the small Loader.
 /// @group loader
-$kendo-loader-sm-padding-x: math.div( $kendo-loader-sm-segment-size, 2 ) !default;
+$kendo-loader-sm-padding-x: calc( #{$kendo-loader-sm-segment-size} / 2 ) !default;
 /// The horizontal padding of the medium Loader.
 /// @group loader
-$kendo-loader-md-padding-x: math.div( $kendo-loader-md-segment-size, 2 ) !default;
+$kendo-loader-md-padding-x: calc( #{$kendo-loader-md-segment-size} / 2 ) !default;
 /// The horizontal padding of the large Loader.
 /// @group loader
-$kendo-loader-lg-padding-x: math.div( $kendo-loader-lg-segment-size, 2 ) !default;
+$kendo-loader-lg-padding-x: calc( #{$kendo-loader-lg-segment-size} / 2 ) !default;
 
 /// The vertical padding of the small Loader.
 /// @group loader
-$kendo-loader-sm-padding-y: math.div( $kendo-loader-sm-segment-size, 2 ) !default;
+$kendo-loader-sm-padding-y: calc( #{$kendo-loader-sm-segment-size} / 2 ) !default;
 /// The vertical padding of the medium Loader.
 /// @group loader
-$kendo-loader-md-padding-y: math.div( $kendo-loader-md-segment-size, 2 ) !default;
+$kendo-loader-md-padding-y: calc( #{$kendo-loader-md-segment-size} / 2 ) !default;
 /// The vertical padding of the large Loader.
 /// @group loader
-$kendo-loader-lg-padding-y: math.div( $kendo-loader-lg-segment-size, 2 ) !default;
+$kendo-loader-lg-padding-y: calc( #{$kendo-loader-lg-segment-size} /2 ) !default;
 
 /// The equilateral height of the Loader.
 /// @group loader
@@ -42,33 +42,33 @@ $kendo-loader-equilateral-height: .8660 !default;
 
 /// The width of the small spinner-3 Loader.
 /// @group loader
-$kendo-loader-sm-spinner-3-width: ( $kendo-loader-sm-segment-size * 4 ) !default;
+$kendo-loader-sm-spinner-3-width: calc( #{$kendo-loader-sm-segment-size} * 4 ) !default;
 /// The width of the medium spinner-3 Loader.
 /// @group loader
-$kendo-loader-md-spinner-3-width: ( $kendo-loader-md-segment-size * 4 ) !default;
+$kendo-loader-md-spinner-3-width: calc( #{$kendo-loader-md-segment-size} * 4 ) !default;
 /// The width of the large spinner-3 Loader.
 /// @group loader
-$kendo-loader-lg-spinner-3-width: ( $kendo-loader-lg-segment-size * 4 ) !default;
+$kendo-loader-lg-spinner-3-width: calc( #{$kendo-loader-lg-segment-size} * 4 ) !default;
 
 /// The height of the small spinner-3 Loader.
 /// @group loader
-$kendo-loader-sm-spinner-3-height: ( $kendo-loader-sm-spinner-3-width * $kendo-loader-equilateral-height ) !default;
+$kendo-loader-sm-spinner-3-height: calc( #{$kendo-loader-sm-spinner-3-width} * #{$kendo-loader-equilateral-height} ) !default;
 /// The height of the medium spinner-3 Loader.
 /// @group loader
-$kendo-loader-md-spinner-3-height: ( $kendo-loader-md-spinner-3-width * $kendo-loader-equilateral-height ) !default;
+$kendo-loader-md-spinner-3-height: calc( #{$kendo-loader-md-spinner-3-width} * #{$kendo-loader-equilateral-height} ) !default;
 /// The height of the large spinner-3 Loader.
 /// @group loader
-$kendo-loader-lg-spinner-3-height: ( $kendo-loader-lg-spinner-3-width * $kendo-loader-equilateral-height ) !default;
+$kendo-loader-lg-spinner-3-height: calc( #{$kendo-loader-lg-spinner-3-width} * #{$kendo-loader-equilateral-height} ) !default;
 
 /// The width of the small spinner-4 Loader.
 /// @group loader
-$kendo-loader-sm-spinner-4-width: ( $kendo-loader-sm-segment-size * 4 ) !default;
+$kendo-loader-sm-spinner-4-width: calc( #{$kendo-loader-sm-segment-size} * 4 ) !default;
 /// The width of the medium spinner-4 Loader.
 /// @group loader
-$kendo-loader-md-spinner-4-width: ( $kendo-loader-md-segment-size * 4 ) !default;
+$kendo-loader-md-spinner-4-width: calc( #{$kendo-loader-md-segment-size} * 4 ) !default;
 /// The width of the large spinner-4 Loader.
 /// @group loader
-$kendo-loader-lg-spinner-4-width: ( $kendo-loader-lg-segment-size * 4 ) !default;
+$kendo-loader-lg-spinner-4-width: calc( #{$kendo-loader-lg-segment-size} * 4 ) !default;
 
 /// The height of the small spinner-4 Loader.
 /// @group loader
@@ -98,33 +98,33 @@ $kendo-loader-container-panel-bg: if($kendo-enable-color-system, k-color( app-su
 
 /// The horizontal padding of the small Loader container.
 /// @group loader
-$kendo-loader-sm-container-padding-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-loader-sm-container-padding-x: k-spacing(4) !default;
 /// The horizontal padding of the medium Loader container.
 /// @group loader
-$kendo-loader-md-container-padding-x: map.get( $kendo-spacing, 5 ) !default;
+$kendo-loader-md-container-padding-x: k-spacing(5) !default;
 /// The horizontal padding of the large Loader container.
 /// @group loader
-$kendo-loader-lg-container-padding-x: map.get( $kendo-spacing, 6 ) !default;
+$kendo-loader-lg-container-padding-x: k-spacing(6) !default;
 
 /// The vertical padding of the small Loader container.
 /// @group loader
-$kendo-loader-sm-container-padding-y: map.get( $kendo-spacing, 4 ) !default;
+$kendo-loader-sm-container-padding-y: k-spacing(4) !default;
 /// The vertical padding of the medium Loader container.
 /// @group loader
-$kendo-loader-md-container-padding-y: map.get( $kendo-spacing, 5 ) !default;
+$kendo-loader-md-container-padding-y: k-spacing(5) !default;
 /// The vertical padding of the large Loader container.
 /// @group loader
-$kendo-loader-lg-container-padding-y: map.get( $kendo-spacing, 6 ) !default;
+$kendo-loader-lg-container-padding-y: k-spacing(6) !default;
 
 /// The gap of the small Loader container.
 /// @group loader
-$kendo-loader-sm-container-gap: map.get( $kendo-spacing, 1 ) !default;
+$kendo-loader-sm-container-gap: k-spacing(1) !default;
 /// The gap of the medium Loader container.
 /// @group loader
-$kendo-loader-md-container-gap: map.get( $kendo-spacing, 2 ) !default;
+$kendo-loader-md-container-gap: k-spacing(2) !default;
 /// The gap of the large Loader container.
 /// @group loader
-$kendo-loader-lg-container-gap: map.get( $kendo-spacing, 3 ) !default;
+$kendo-loader-lg-container-gap: k-spacing(3) !default;
 
 /// The font size of the small Loader container.
 /// @group loader

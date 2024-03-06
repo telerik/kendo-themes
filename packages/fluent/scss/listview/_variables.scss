@@ -4,20 +4,20 @@
 
 /// The horizontal padding of the ListView.
 /// @group listview
-$kendo-listview-padding-x: map.get( $kendo-spacing, 1 ) !default;
+$kendo-listview-padding-x: k-spacing(1) !default;
 /// The vertical padding of the ListView.
 /// @group listview
-$kendo-listview-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-listview-padding-y: k-spacing(1) !default;
 /// The width of the border around bordered ListView.
 /// @group listview
 $kendo-listview-border-width: 1px !default;
 
 /// The horizontal padding of the ListView header.
 /// @group listview
-$kendo-listview-header-padding-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-listview-header-padding-x: k-spacing(4) !default;
 /// The vertical padding of the ListView header.
 /// @group listview
-$kendo-listview-header-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-listview-header-padding-y: k-spacing(2) !default;
 
 /// The horizontal padding of the ListView footer.
 /// @group listview
@@ -28,10 +28,10 @@ $kendo-listview-footer-padding-y: $kendo-listview-header-padding-y !default;
 
 /// The horizontal padding of the ListView items.
 /// @group listview
-$kendo-listview-item-padding-x: map.get( $kendo-spacing, 1 ) !default;
+$kendo-listview-item-padding-x: k-spacing(1) !default;
 /// The vertical padding of the ListView items.
 /// @group listview
-$kendo-listview-item-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-listview-item-padding-y: k-spacing(1) !default;
 
 /// The font family of the ListView.
 /// @group listview
@@ -45,7 +45,7 @@ $kendo-listview-line-height: var( --kendo-line-height, initial ) !default;
 
 /// The gap between items of ListView with grid layout.
 /// @group listview
-$kendo-listview-grid-gap: map.get( $kendo-spacing, 0 ) !default;
+$kendo-listview-grid-gap: k-spacing(.0) !default;
 
 /// The text color of the ListView.
 /// @group listview

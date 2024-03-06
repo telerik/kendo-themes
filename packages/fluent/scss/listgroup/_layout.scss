@@ -51,8 +51,8 @@
         position: relative;
 
         > .k-link {
-            margin-inline: var( --kendo-listgroup-item-padding-x, #{(-$kendo-listgroup-item-padding-x)} );
-            margin-block: var( --kendo-listgroup-item-padding-y, #{(-$kendo-listgroup-item-padding-y)} );
+            margin-inline: var( --kendo-listgroup-item-padding-x, calc( #{$kendo-listgroup-item-padding-x} * -1 ) );
+            margin-block: var( --kendo-listgroup-item-padding-y, calc( #{$kendo-listgroup-item-padding-y} * -1 ) );
             padding-inline: var( --kendo-listgroup-item-padding-x, #{$kendo-listgroup-item-padding-x} );
             padding-block: var( --kendo-listgroup-item-padding-y, #{$kendo-listgroup-item-padding-y} );
             color: inherit;
@@ -87,8 +87,8 @@
 
         > .k-select {
             margin-inline-start: 0;
-            margin-inline-end: var( --kendo-listgroup-item-padding-x, #{(-$kendo-listgroup-item-padding-x)} );
-            margin-block: var( --kendo-listgroup-item-padding-y, #{(-$kendo-listgroup-item-padding-y)} );
+            margin-inline-end: var( --kendo-listgroup-item-padding-x, calc( #{$kendo-listgroup-item-padding-x} * -1 ) );
+            margin-block: var( --kendo-listgroup-item-padding-y, calc( #{$kendo-listgroup-item-padding-y} * -1 ) );
             padding-inline: var( --kendo-listgroup-item-padding-y, #{$kendo-listgroup-item-padding-y} );
             padding-block: var( --kendo-listgroup-item-padding-y, #{$kendo-listgroup-item-padding-y} );
             border-width: 0 0 0 1px;
@@ -101,8 +101,8 @@
 
     // Forms in listgroup
     .k-listgroup-form-row {
-        margin-inline: var( --kendo-listgroup-item-padding-x, #{(-$kendo-listgroup-item-padding-x)} );
-        margin-block: var( --kendo-listgroup-item-padding-y, #{(-$kendo-listgroup-item-padding-y)} );
+        margin-inline: var( --kendo-listgroup-item-padding-x, calc( #{$kendo-listgroup-item-padding-x} * -1 ) );
+        margin-block: var( --kendo-listgroup-item-padding-y, calc( #{$kendo-listgroup-item-padding-y} * -1) );
         padding-inline: var( --kendo-listgroup-item-padding-x, #{$kendo-listgroup-item-padding-x} );
         padding-block: var( --kendo-listgroup-item-padding-y, #{$kendo-listgroup-item-padding-y} );
         display: flex;

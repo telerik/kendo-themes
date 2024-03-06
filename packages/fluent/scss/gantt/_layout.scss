@@ -3,6 +3,7 @@
 @use "../grid/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "./_variables.scss" as *;
+@use "../core/spacing" as *;
 
 @mixin kendo-gantt--layout() {
 
@@ -32,7 +33,7 @@
             vertical-align: top;
         }
         .k-grid-header tr {
-            height: calc( #{$kendo-line-height-em} + #{$kendo-grid-header-padding-y * 2} + 1px );
+            height: calc( #{$kendo-line-height-em} + calc( #{$kendo-grid-header-padding-y} * 2 ) + 1px );
         }
         .k-grid-header .k-header {
             position: static;
@@ -42,11 +43,11 @@
             position: relative;
         }
         .k-grid-content tr {
-            height: calc( #{$kendo-line-height-em} + #{$kendo-grid-cell-padding-y * 2} + #{$kendo-grid-cell-border-width-y} );
+            height: calc( #{$kendo-line-height-em} + calc( #{$kendo-grid-cell-padding-y} * 2) + #{$kendo-grid-cell-border-width-y} );
         }
 
         &.k-gantt-planned .k-grid-content tr {
-            height: calc( #{$kendo-line-height-em} * 1.7 + #{$kendo-grid-cell-padding-y * 2} + #{$kendo-grid-cell-border-width-y} );
+            height: calc( #{$kendo-line-height-em} * 1.7 + calc( #{$kendo-grid-cell-padding-y} * 2 ) + #{$kendo-grid-cell-border-width-y} );
         }
 
         // Layout
@@ -270,7 +271,7 @@
             padding: 0 !important; // stylelint-disable-line declaration-no-important
         }
         .k-grid-header tr {
-            height: calc( #{$kendo-line-height-em} * 2 + #{$kendo-grid-header-padding-y * 4} + 2px );
+            height: calc( #{$kendo-line-height-em} * 2 + calc( #{$kendo-grid-header-padding-y} * 4 ) + 2px );
             vertical-align: bottom;
         }
         .k-grid-content {
@@ -281,7 +282,7 @@
             vertical-align: middle;
         }
         .k-gantt-treelist-nested-columns .k-grid-header tr {
-            height: calc( #{$kendo-line-height-em} + #{$kendo-grid-header-padding-y * 2} + 1px );
+            height: calc( #{$kendo-line-height-em} + calc( #{$kendo-grid-header-padding-y} * 2 ) + 1px );
         }
 
         &.k-gantt-treelist-scrollable {
@@ -422,8 +423,8 @@
         flex: 1 1 auto;
     }
     .k-task-dot {
-        width: calc( #{$kendo-gantt-dot-size} + #{$kendo-gantt-dot-spacing * 2} );
-        height: calc( #{$kendo-gantt-dot-size} + #{$kendo-gantt-dot-spacing * 2} );
+        width: calc( #{$kendo-gantt-dot-size} + calc( #{$kendo-gantt-dot-spacing} * 2 ) );
+        height: calc( #{$kendo-gantt-dot-size} + calc( #{$kendo-gantt-dot-spacing} * 2 ) );
         line-height: 1;
         cursor: pointer;
         display: none;
