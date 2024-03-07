@@ -13,7 +13,7 @@ export default () => (
                 <Calendar className="k-calendar-range" calendarView="month" showWeek showTableHead>
                     <tr className="k-calendar-tr">
                         <CalendarCell text="39" weekCell />
-                        <CalendarCell text="30" otherMonth />
+                        <CalendarCell empty />
                         <CalendarCell text="1" />
                         <CalendarCell text="2" />
                         <CalendarCell text="3" />
@@ -57,19 +57,19 @@ export default () => (
                         <CalendarCell text="29" />
                         <CalendarCell text="30" />
                         <CalendarCell text="31" />
-                        <CalendarCell text="1" otherMonth />
-                        <CalendarCell text="2" otherMonth />
-                        <CalendarCell text="3" otherMonth weekend />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
                     </tr>
                     <tr className="k-calendar-tr">
                         <CalendarCell text="44" weekCell />
-                        <CalendarCell text="4" otherMonth weekend />
-                        <CalendarCell text="5" otherMonth />
-                        <CalendarCell text="6" otherMonth />
-                        <CalendarCell text="7" otherMonth />
-                        <CalendarCell text="8" otherMonth />
-                        <CalendarCell text="9" otherMonth />
-                        <CalendarCell text="10" otherMonth weekend />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
                     </tr>
                 </Calendar>
             </section>
@@ -78,7 +78,7 @@ export default () => (
                 <Calendar className="k-calendar-range" calendarView="month" showWeek showTableHead>
                     <tr className="k-calendar-tr">
                         <CalendarCell text="39" weekCell />
-                        <CalendarCell text="30" otherMonth />
+                        <CalendarCell empty />
                         <CalendarCell text="1" />
                         <CalendarCell text="2" />
                         <CalendarCell text="3" />
@@ -122,19 +122,19 @@ export default () => (
                         <CalendarCell text="29" rangeEnd focus selected />
                         <CalendarCell text="30" />
                         <CalendarCell text="31" />
-                        <CalendarCell text="1" otherMonth />
-                        <CalendarCell text="2" otherMonth />
-                        <CalendarCell text="3" otherMonth weekend />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
                     </tr>
                     <tr className="k-calendar-tr">
                         <CalendarCell text="44" weekCell />
-                        <CalendarCell text="4" otherMonth weekend />
-                        <CalendarCell text="5" otherMonth />
-                        <CalendarCell text="6" otherMonth />
-                        <CalendarCell text="7" otherMonth />
-                        <CalendarCell text="8" otherMonth />
-                        <CalendarCell text="9" otherMonth />
-                        <CalendarCell text="10" otherMonth weekend />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
+                        <CalendarCell empty />
                     </tr>
                 </Calendar>
             </section>
