@@ -563,7 +563,7 @@ export default () =>(
                                                         <TreeviewItem top showCheckbox hasChildren text="Date.Calendar" />
                                                         <TreeviewItem bottom showCheckbox expanded text="Date.Calendar Quarter of Year">
                                                             <TreeviewGroup>
-                                                                <TreeviewItem showCheckbox hasChildren text="(All)" />
+                                                                <TreeviewItem top showCheckbox hasChildren text="(All)" />
                                                                 <TreeviewItem bottom showCheckbox hasChildren text="Calendar Quarter of Year" />
                                                             </TreeviewGroup>
                                                         </TreeviewItem>
