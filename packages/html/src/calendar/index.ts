@@ -16,3 +16,8 @@ export * from './templates/calendar-decade';
 export * from './templates/calendar-normal';
 export * from './templates/calendar-with-weeks';
 export * from './templates/calendar-year';
+export * from './templates/calendar-infinite-normal';
+export * from './templates/calendar-infinite-year';
+export * from './templates/calendar-infinite-decade';
+export * from './templates/calendar-infinite-century';
+export * from './templates/calendar-infinite-week-number';
