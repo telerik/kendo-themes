@@ -1,16 +1,16 @@
-import { CalendarCentury, CalendarDecade, CalendarNormal, CalendarWithWeeks, CalendarYear } from '../../calendar';
+import { CalendarCentury, CalendarDecade, CalendarNormal, CalendarWithWeeks, CalendarYear } from '..';
 
 
 export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <span>angular modern month</span>
-            <span>angular modern week number</span>
-            <span>angular modern week number with footer</span>
+            <span>modern calendar month</span>
+            <span>modern calendar week number</span>
+            <span>modern calendar week number with footer</span>
 
             <section>
-                <CalendarNormal showOtherMonth />
+                <CalendarNormal showOtherMonth={true} />
             </section>
 
             <section>
@@ -21,9 +21,9 @@ export default () => (
                 <CalendarWithWeeks showOtherMonth showCalendarFooter/>
             </section>
 
-            <span>angular modern year</span>
-            <span>angular modern decade</span>
-            <span>angular modern century</span>
+            <span>modern calendar year</span>
+            <span>modern calendar decade</span>
+            <span>modern calendar century</span>
 
             <section>
                 <CalendarYear />
