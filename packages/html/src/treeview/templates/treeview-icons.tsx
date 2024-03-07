@@ -9,7 +9,7 @@ export const TreeviewIcons = (props) => (
                     <TreeviewItem top showIcon icon="folder" text="Child 2.1"/>
                     <TreeviewItem showIcon icon="folder" text="Child 2.2">
                         <TreeviewGroup>
-                            <TreeviewItem top showIcon icon="folder" text="Child 2.2.1"/>
+                            <TreeviewItem bottom showIcon icon="folder" text="Child 2.2.1"/>
                         </TreeviewGroup>
                     </TreeviewItem>
                     <TreeviewItem showIcon icon="folder" text="Child 2.3" />
