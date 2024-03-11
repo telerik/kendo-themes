@@ -10,7 +10,6 @@
 
 
         // Root
-        > .k-item,
         > .k-panelbar-header {
 
             &.k-expanded.k-level-0 > .k-link  {
@@ -122,12 +121,9 @@
 
 
         // Sub
-        .k-group,
         .k-panelbar-group {
 
             // Hover
-            > .k-item > .k-link:hover,
-            > .k-item > .k-link.k-hover,
             > .k-panelbar-item > .k-link:hover,
             > .k-panelbar-item > .k-link.k-hover {
                 @include fill(
@@ -139,8 +135,6 @@
             }
 
             // Focus
-            > .k-item > .k-link:focus,
-            > .k-item > .k-link.k-focus,
             > .k-panelbar-item > .k-link:focus,
             > .k-panelbar-item > .k-link.k-focus {
                 @include fill(
@@ -153,8 +147,6 @@
             }
 
             // Focus & Hover
-            > .k-item > .k-link:focus:hover,
-            > .k-item > .k-link.k-focus.k-hover,
             > .k-panelbar-item > .k-link:focus:hover,
             > .k-panelbar-item > .k-link.k-focus.k-hover {
                 @include fill(
@@ -166,7 +158,6 @@
             }
 
             // Selected
-            > .k-item > .k-link.k-selected,
             > .k-panelbar-item > .k-link.k-selected {
                 @include fill(
                     $kendo-panelbar-item-selected-text,
@@ -177,8 +168,6 @@
             }
 
             // Selected Hover
-            > .k-item > .k-link.k-selected:hover,
-            > .k-item > .k-link.k-selected.k-hover,
             > .k-panelbar-item > .k-link.k-selected:hover,
             > .k-panelbar-item > .k-link.k-selected.k-hover {
                 @include fill(
@@ -190,8 +179,6 @@
             }
 
             // Selected Focus
-            > .k-item > .k-link.k-selected:focus,
-            > .k-item > .k-link.k-selected.k-focus,
             > .k-panelbar-item > .k-link.k-selected:focus,
             > .k-panelbar-item > .k-link.k-selected.k-focus {
                 @include fill(
@@ -203,8 +190,6 @@
             }
 
             // Selected Focus & Hover
-            > .k-item > .k-link.k-selected:focus:hover,
-            > .k-item > .k-link.k-selected.k-focus.k-hover,
             > .k-panelbar-item > .k-link.k-selected:focus:hover,
             > .k-panelbar-item > .k-link.k-selected.k-focus.k-hover {
                 @include fill(

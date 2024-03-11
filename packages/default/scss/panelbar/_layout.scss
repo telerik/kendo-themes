@@ -25,7 +25,6 @@
 
 
         // Root
-        > .k-item,
         > .k-panelbar-header {
             // TODO
             border-width: 0;
@@ -51,14 +50,12 @@
                 transition: $kendo-transition;
             }
         }
-        > .k-item + .k-item,
         > .k-panelbar-header + .k-panelbar-header {
             border-top-width: $kendo-panelbar-item-border-width;
         }
 
 
         // Sub
-        .k-group,
         .k-panelbar-group {
             margin: 0;
             padding: 0;
@@ -68,7 +65,6 @@
             background-color: transparent;
             list-style: none;
         }
-        .k-group > .k-item,
         .k-panelbar-group > .k-panelbar-item {
             display: block;
 
@@ -115,8 +111,8 @@
         .k-panelbar-toggle {
             margin-inline-start: auto;
         }
-        .k-group .k-panelbar-expand,
-        .k-group .k-panelbar-collapse,
+        .k-panelbar-group .k-panelbar-expand,
+        .k-panelbar-group .k-panelbar-collapse,
         .k-panelbar-group .k-panelbar-toggle {
             margin-inline-end: calc( #{$kendo-panelbar-header-padding-x} - #{$kendo-panelbar-item-padding-x} );
         }
@@ -125,7 +121,6 @@
         .k-rtl &,
         &.k-rtl,
         &[dir = "rtl"] {
-            .k-group > .k-item,
             .k-panelbar-group > .k-panelbar-item {
                 // Hierarchy items
                 @for $i from 1 through $kendo-panelbar-item-level-count {
