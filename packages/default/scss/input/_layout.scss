@@ -473,8 +473,8 @@
             }
 
             &.k-icon-picker .k-input-inner {
-                width: calc( #{ $_line-height * 1em } );
-                height: calc( #{ $_line-height * 1em } );
+                width: calc( ( #{ $_line-height} * 1em ) );
+                height: calc( ( #{ $_line-height} * 1em ) );
                 padding: $_padding-y;
                 box-sizing: content-box;
             }

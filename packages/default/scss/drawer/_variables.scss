@@ -12,18 +12,9 @@ $kendo-drawer-border: $kendo-component-border !default;
 /// The border width of the Drawer.
 /// @group drawer
 $kendo-drawer-border-width: 1px !default;
-/// The font family of the Drawer.
-/// @group drawer
-$kendo-drawer-font-family: $kendo-font-family !default;
-/// The font size of the Drawer.
-/// @group drawer
-$kendo-drawer-font-size: $kendo-font-size-md !default;
-/// The line height of the Drawer.
-/// @group drawer
-$kendo-drawer-line-height: $kendo-line-height-md !default;
-
-/// The horizontal padding of the Drawer content.
-/// @group drawer
+$kendo-drawer-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-drawer-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-drawer-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-drawer-content-padding-x: $kendo-padding-md-x !default;
 /// The vertical padding of the Drawer content.
 /// @group drawer
@@ -54,9 +45,7 @@ $kendo-drawer-item-padding-y: $kendo-padding-md-x !default;
 /// The font size of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-font-size: 16px !default;
-/// The line height of the Drawer item.
-/// @group drawer
-$kendo-drawer-item-line-height: $kendo-line-height-lg !default;
+$kendo-drawer-item-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The horizontal padding of the Drawer item in each level.
 /// @group drawer

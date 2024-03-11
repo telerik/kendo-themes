@@ -5,13 +5,13 @@
 $kendo-upload-border-width: 1px !default;
 /// The font family of the Upload.
 /// @group upload
-$kendo-upload-font-family: $kendo-font-family !default;
+$kendo-upload-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Upload.
 /// @group upload
-$kendo-upload-font-size: $kendo-font-size-md !default;
+$kendo-upload-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Upload.
 /// @group upload
-$kendo-upload-line-height: $kendo-line-height-md !default;
+$kendo-upload-line-height: var( --kendo-line-height, normal ) !default;
 /// The maximum height of the list with uploaded items.
 /// @group upload
 $kendo-upload-max-height: 300px !default;

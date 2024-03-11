@@ -3,16 +3,9 @@
 /// The width of the border around the Calendar.
 /// @group calendar
 $kendo-calendar-border-width: 1px !default;
-
-/// The font family of the Calendar.
-/// @group calendar
-$kendo-calendar-font-family: $kendo-font-family !default;
-/// The font size of the Calendar.
-/// @group calendar
-$kendo-calendar-font-size: $kendo-font-size-md !default;
-/// The line height of the Calendar.
-/// @group calendar
-$kendo-calendar-line-height: $kendo-line-height-md !default;
+$kendo-calendar-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-calendar-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The size of the cells in the Calendar.
 /// @group calendar
@@ -94,11 +87,7 @@ $kendo-calendar-header-cell-width: $kendo-calendar-cell-size !default;
 /// The height of the header cells in the Calendar.
 /// @group calendar
 $kendo-calendar-header-cell-height: $kendo-calendar-cell-size !default;
-/// The font size of the header cells in the Calendar.
-/// @group calendar
-$kendo-calendar-header-cell-font-size: $kendo-font-size-sm !default;
-/// The line height of the header cells in the Calendar.
-/// @group calendar
+$kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-calendar-header-cell-line-height: 2 !default;
 
 /// The background color of the header cells in the Calendar.
@@ -126,9 +115,7 @@ $kendo-calendar-caption-font-size: null !default;
 /// The line height of the caption in the Calendar.
 /// @group calendar
 $kendo-calendar-caption-line-height: null !default;
-/// The font weight of the caption in the Calendar.
-/// @group calendar
-$kendo-calendar-caption-font-weight: bold !default;
+$kendo-calendar-caption-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
 /// The font size of the week number cells in the Calendar.
 /// @group calendar
@@ -277,14 +264,9 @@ $kendo-infinite-calendar-view-height: ( $kendo-calendar-cell-size * 9 ) !default
 // Multiview calendar
 
 
-/// The font size of the small Calendar.
-/// @group calendar
-$kendo-calendar-sm-font-size: $kendo-font-size-md !default;
-/// The line height of the small Calendar.
-/// @group calendar
-$kendo-calendar-sm-line-height: $kendo-line-height-md !default;
-/// The size of the cells in the small Calendar.
-/// @group calendar
+// Calendar sizes
+$kendo-calendar-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-sm-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-calendar-sm-cell-size: 28px !default;
 /// The horizontal padding of the cells in the small Calendar.
 /// @group calendar
@@ -293,14 +275,8 @@ $kendo-calendar-sm-cell-padding-x: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// @group calendar
 $kendo-calendar-sm-cell-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 
-/// The font size of the medium Calendar.
-/// @group calendar
-$kendo-calendar-md-font-size: $kendo-font-size-md !default;
-/// The line height of the medium Calendar.
-/// @group calendar
-$kendo-calendar-md-line-height: $kendo-line-height-md !default;
-/// The size of the cells in the medium Calendar.
-/// @group calendar
+$kendo-calendar-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-calendar-md-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-calendar-md-cell-size: 32px !default;
 /// The horizontal padding of the cells in the medium Calendar.
 /// @group calendar
@@ -309,14 +285,8 @@ $kendo-calendar-md-cell-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 /// @group calendar
 $kendo-calendar-md-cell-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 
-/// The font size of the large Calendar.
-/// @group calendar
-$kendo-calendar-lg-font-size: $kendo-font-size-lg !default;
-/// The line height of the large Calendar.
-/// @group calendar
-$kendo-calendar-lg-line-height: $kendo-line-height-lg !default;
-/// The size of the cells in the large Calendar.
-/// @group calendar
+$kendo-calendar-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-calendar-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 $kendo-calendar-lg-cell-size: 40px !default;
 /// The horizontal padding of the cells in the large Calendar.
 /// @group calendar
