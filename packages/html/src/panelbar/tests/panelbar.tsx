@@ -1,4 +1,4 @@
-import { Icon } from '../../icon';
+import { PanelBar, PanelBarGroup, PanelBarContent, PanelBarItem } from '..';
 
 
 const styles = `
@@ -19,214 +19,91 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
             <section>
-                <ul className="k-panelbar">
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link">
-                            <Icon className="k-panelbar-item-icon" icon="gear" />
-                            <span className="k-panelbar-item-text">Root</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link k-hover">
-                            <span className="k-panelbar-item-icon k-image"></span>
-                            <span className="k-panelbar-item-text">Root hover</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link k-focus">
-                            <span className="k-panelbar-item-icon k-sprite"></span>
-                            <span className="k-panelbar-item-text">Root focus</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link k-focus k-hover">
-                            <span className="k-panelbar-item-icon k-sprite"></span>
-                            <span className="k-panelbar-item-text">Root hover&focus</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link k-disabled">
-                            <span className="k-panelbar-item-text">Root disabled</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link k-selected">
-                            <span className="k-panelbar-item-text">Root selected</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link k-selected k-hover">
-                            <span className="k-panelbar-item-text">Root selected hover</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link k-selected k-focus">
-                            <span className="k-panelbar-item-text">Root selected focus</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link k-selected k-focus k-hover">
-                            <span className="k-panelbar-item-text">Root selected hover&focus</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                        </span>
-                    </li>
-                </ul>
+                <PanelBar>
+                    <PanelBarItem header icon="gear" text="Root">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem hover header iconClass="k-image" text="Root hover">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem focus header iconClass="k-sprite" text="Root focus">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem hover focus header iconClass="k-sprite" text="Root hover&focus">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem disabled header text="Root disabled">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem selected header text="Root selected">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem selected hover header text="Root selected hover">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem selected focus header text="Root selected focus">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem selected hover focus header text="Root selected hover&focus">
+                        <PanelBarContent>content</PanelBarContent>
+                    </PanelBarItem>
+                </PanelBar>
             </section>
 
             <section>
-                <ul className="k-panelbar">
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">First</span>
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-expanded k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">Middle expanded</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-collapse" icon="chevron-up" />
-                        </span>
-                        <ul className="k-panelbar-group k-panel k-group">
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link">
-                                    <Icon className="k-panelbar-item-icon" icon="gear" />
-                                    <span className="k-panelbar-item-text">Child</span>
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link k-hover">
-                                    <span className="k-panelbar-item-text">Child hover</span>
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link k-focus">
-                                    <span className="k-panelbar-item-text">Child focus</span>
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link k-focus k-hover">
-                                    <span className="k-panelbar-item-text">Child focus&hover</span>
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link k-selected">
-                                    <span className="k-panelbar-item-text">Child selected</span>
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link k-selected k-hover">
-                                    <span className="k-panelbar-item-text">Child selected hover</span>
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link k-selected k-focus">
-                                    <span className="k-panelbar-item-text">Child selected focus</span>
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link k-selected k-focus k-hover">
-                                    <span className="k-panelbar-item-text">Child selected focus&hover</span>
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-expanded k-level-1">
-                                <span className="k-link">
-                                    <span className="k-panelbar-item-text">Child expanded</span>
-                                    <Icon className="k-panelbar-toggle k-panelbar-collapse" icon="chevron-up" />
-                                </span>
-                                <ul className="k-panelbar-group k-panel k-group">
-                                    <li className="k-panelbar-item k-item k-level-2">
-                                        <span className="k-link">
-                                            <span className="k-panelbar-item-text">Child</span>
-                                        </span>
-                                    </li>
-                                    <li className="k-panelbar-item k-item k-level-2">
-                                        <span className="k-link">
-                                            <span className="k-panelbar-item-text">Child</span>
-                                        </span>
-                                    </li>
-                                    <li className="k-panelbar-item k-item k-level-2">
-                                        <span className="k-link">
-                                            <span className="k-panelbar-item-text">Child</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link k-disabled">
-                                    <span className="k-panelbar-item-text">Child disabled</span>
-                                    <Icon className="k-panelbar-toggle k-panelbar-expand" icon="chevron-down" />
-                                </span>
-                            </li>
-                            <li className="k-panelbar-item k-item k-level-1">
-                                <span className="k-link">
-                                    <span className="k-panelbar-item-text">Child last</span>
-                                </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">Last</span>
-                        </span>
-                    </li>
-                </ul>
+                <PanelBar>
+                    <PanelBarItem header text="First" />
+                    <PanelBarItem header expanded text="Middle expanded">
+                        <PanelBarGroup>
+                            <PanelBarItem level={1} icon="gear" text="Child" />
+                            <PanelBarItem hover level={1} text="Child hover" />
+                            <PanelBarItem focus level={1} text="Child focus" />
+                            <PanelBarItem focus hover level={1} text="Child focus&hover" />
+                            <PanelBarItem selected level={1} text="Child selected" />
+                            <PanelBarItem selected hover level={1} text="Child selected hover" />
+                            <PanelBarItem selected focus level={1} text="Child selected focus" />
+                            <PanelBarItem selected focus hover level={1} text="Child selected focus&hover" />
+                            <PanelBarItem level={1} expanded text="Child expanded">
+                                <PanelBarGroup>
+                                    <PanelBarItem level={2} text="Child" />
+                                    <PanelBarItem level={2} text="Child" />
+                                    <PanelBarItem level={2} text="Child" />
+                                </PanelBarGroup>
+                            </PanelBarItem>
+                            <PanelBarItem disabled level={1} text="Child disabled">
+                                <PanelBarContent>content</PanelBarContent>
+                            </PanelBarItem>
+                            <PanelBarItem level={1} text="Child last" />
+                        </PanelBarGroup>
+                    </PanelBarItem>
+                    <PanelBarItem header text="Last" />
+                </PanelBar>
             </section>
 
             <section>
-                <ul className="k-panelbar">
-                    <li className="k-panelbar-header k-item k-expanded k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">First expanded</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-collapse" icon="chevron-up" />
-                        </span>
-                        <div className="k-panelbar-content">
+                <PanelBar>
+                    <PanelBarItem header expanded text="First expanded">
+                        <PanelBarContent>
                             <h4>Title in template</h4>
                             <p>Multi line paragraph in template. Some more content to break onto multiple lines</p>
-                        </div>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">Middle</span>
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">Last</span>
-                        </span>
-                    </li>
-                </ul>
+                        </PanelBarContent>
+                    </PanelBarItem>
+                    <PanelBarItem header text="Middle" />
+                    <PanelBarItem header text="Last" />
+                </PanelBar>
             </section>
 
             <section>
-                <ul className="k-panelbar">
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">First</span>
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">Middle</span>
-                        </span>
-                    </li>
-                    <li className="k-panelbar-header k-item k-expanded k-level-0">
-                        <span className="k-link">
-                            <span className="k-panelbar-item-text">Last expanded</span>
-                            <Icon className="k-panelbar-toggle k-panelbar-collapse" icon="chevron-up" />
-                        </span>
-                        <div className="k-panelbar-content">
+                <PanelBar>
+                    <PanelBarItem header text="First" />
+                    <PanelBarItem header text="Middle" />
+                    <PanelBarItem header expanded text="Last expanded">
+                        <PanelBarContent>
                             <h4>Title in template</h4>
                             <p>Multi line paragraph in template. Some more content to break onto multiple lines</p>
-                        </div>
-                    </li>
-                </ul>
+                        </PanelBarContent>
+                    </PanelBarItem>
+                </PanelBar>
             </section>
         </div>
     </>
