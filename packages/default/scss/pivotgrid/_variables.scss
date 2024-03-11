@@ -5,9 +5,9 @@
 $kendo-pivotgrid-spacer: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-pivotgrid-padding-x: null !default;
 $kendo-pivotgrid-padding-y: null !default;
-$kendo-pivotgrid-font-family: $kendo-font-family !default;
-$kendo-pivotgrid-font-size: $kendo-font-size-md !default;
-$kendo-pivotgrid-line-height: $kendo-line-height-md !default;
+$kendo-pivotgrid-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-pivotgrid-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-pivotgrid-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-pivotgrid-border-width: 1px !default;
 $kendo-pivotgrid-icon-spacing: 4px !default;
 
@@ -78,7 +78,7 @@ $kendo-pivotgrid-configurator-bottom-shadow: $kendo-pivotgrid-configurator-shado
 $kendo-pivotgrid-configurator-button-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-pivotgrid-configurator-button-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-pivotgrid-configurator-button-border-width: 1px !default;
-$kendo-pivotgrid-configurator-button-size: calc( #{$kendo-pivotgrid-line-height * 1em} + #{$kendo-pivotgrid-configurator-button-padding-y * 2} + #{$kendo-pivotgrid-configurator-button-border-width * 2} ) !default;
+$kendo-pivotgrid-configurator-button-size: calc( ( #{$kendo-pivotgrid-line-height} * 1em ) + ( #{$kendo-pivotgrid-configurator-button-padding-y} * 2 ) + ( #{$kendo-pivotgrid-configurator-button-border-width} * 2 ) ) !default;
 
 // Calculated fields
 $kendo-pivotgrid-calculated-field-padding-x: $kendo-pivotgrid-spacer !default;

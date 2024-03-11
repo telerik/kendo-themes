@@ -11,13 +11,13 @@ $kendo-listview-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-listview-border-width: 1px !default;
 /// The font family of the ListView.
 /// @group listview
-$kendo-listview-font-family: $kendo-font-family !default;
+$kendo-listview-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ListView.
 /// @group listview
-$kendo-listview-font-size: $kendo-font-size-md !default;
+$kendo-listview-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the ListView.
 /// @group listview
-$kendo-listview-line-height: $kendo-line-height-md !default;
+$kendo-listview-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The text color of the ListView.
 /// @group listview

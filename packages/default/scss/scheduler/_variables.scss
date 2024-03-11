@@ -1,8 +1,8 @@
 // Scheduler
 $kendo-scheduler-border-width: 1px !default;
-$kendo-scheduler-font-family: $kendo-font-family !default;
-$kendo-scheduler-font-size: $kendo-font-size-md !default;
-$kendo-scheduler-line-height: $kendo-line-height-md !default;
+$kendo-scheduler-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-scheduler-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-scheduler-line-height: var( --kendo-line-height, normal ) !default;
 
 $kendo-scheduler-bg: $kendo-component-bg !default;
 $kendo-scheduler-text: $kendo-component-text !default;
@@ -78,8 +78,8 @@ $kendo-scheduler-tooltip-border: null !default;
 $kendo-scheduler-tooltip-shadow: k-elevation(2) !default;
 
 $kendo-scheduler-tooltip-title-margin-y: k-map-get( $kendo-spacing, 3 ) !default;
-$kendo-scheduler-tooltip-month-font-size: $kendo-font-size-sm !default;
-$kendo-scheduler-tooltip-day-font-size: $kendo-scheduler-tooltip-month-font-size * 2 !default;
+$kendo-scheduler-tooltip-month-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-scheduler-tooltip-day-font-size: calc( #{$kendo-scheduler-tooltip-month-font-size} * 2 ) !default;
 
 $kendo-scheduler-tooltip-events-max-height: 250px !default;
 $kendo-scheduler-tooltip-events-gap: k-map-get( $kendo-spacing, 1 ) !default;

@@ -37,16 +37,16 @@ $kendo-badge-lg-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// The font sizes of the Badge.
 /// @group badge
-$kendo-badge-font-size: $kendo-font-size-xs !default;
+$kendo-badge-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The font size of the small Badge.
 /// @group badge
-$kendo-badge-sm-font-size: $kendo-font-size-xs !default;
+$kendo-badge-sm-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The font size of the medium Badge.
 /// @group badge
-$kendo-badge-md-font-size: $kendo-font-size-xs !default;
+$kendo-badge-md-font-size: var( --kendo-font-size-xs, inherit )!default;
 /// The font size of the large Badge.
 /// @group badge
-$kendo-badge-lg-font-size: $kendo-font-size-xs !default;
+$kendo-badge-lg-font-size: var( --kendo-font-size-xs, inherit ) !default;
 
 /// The line heights used along with the $kendo-font-size variable.
 /// @group badge

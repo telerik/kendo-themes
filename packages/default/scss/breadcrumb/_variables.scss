@@ -19,33 +19,33 @@ $kendo-breadcrumb-padding-y: null !default;
 
 /// The font family of the Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-font-family: $kendo-font-family !default;
+$kendo-breadcrumb-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The font size of the Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-font-size: $kendo-font-size-md !default;
+$kendo-breadcrumb-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the small Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-sm-font-size: $kendo-font-size-md !default;
+$kendo-breadcrumb-sm-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the medium Breadcrumb.
 /// @group breadcrumb
 $kendo-breadcrumb-md-font-size: $kendo-breadcrumb-font-size !default;
 /// The font size of the large Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-font-size: $kendo-font-size-lg !default;
+$kendo-breadcrumb-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
 /// The line-height of the Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-line-height: $kendo-line-height-md !default;
+$kendo-breadcrumb-line-height: var( --kendo-line-height, normal ) !default;
 /// The line-height of the small Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-sm-line-height: $kendo-line-height-md !default;
+$kendo-breadcrumb-sm-line-height: var( --kendo-line-height, normal ) !default;
 /// The line-height of the medium Breadcrumb.
 /// @group breadcrumb
 $kendo-breadcrumb-md-line-height: $kendo-breadcrumb-line-height !default;
 /// The line-height of the height Breadcrumb.
 /// @group breadcrumb
-$kendo-breadcrumb-lg-line-height: $kendo-line-height-lg !default;
+$kendo-breadcrumb-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The base background of the Breadcrumb.
 /// @group breadcrumb
