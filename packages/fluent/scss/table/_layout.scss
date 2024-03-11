@@ -130,12 +130,15 @@
         list-style: none;
         outline: none;
 
+        .k-table-row {
+            position: relative;
+        }
+
         .k-table-row,
         .k-table-group-row {
             width: 100%;
             box-sizing: border-box;
             display: table-row;
-            position: relative;
         }
         .k-table-row:first-child .k-table-td,
         .k-table-row:last-child .k-table-td {
@@ -159,6 +162,8 @@
         }
 
         .k-table-group-row {
+            position: sticky;
+
             &::before {
                 content: "\200b";
                 padding-inline: var( --INTERNAL--kendo-table-group-row-padding-x, 0 );
