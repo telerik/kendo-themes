@@ -1,7 +1,7 @@
 import { IconTextButton, IconButton } from "../../button";
 import { Toolbar } from "../../toolbar";
 import { Prompt, PromptContent, PromptHeader, PromptView } from "..";
-import { PanelBar, PanelBarGroup, PanelBarItem } from "../../panelbar";
+import { PanelBarGroup, PanelBarItem, PanelBarNormal } from "../../panelbar";
 
 export const PromptMoreActions = (props) => (
     <Prompt
@@ -16,7 +16,7 @@ export const PromptMoreActions = (props) => (
         </PromptHeader>
         <PromptContent>
             <PromptView>
-                <PanelBar>
+                <PanelBarNormal>
                     <PanelBarItem header text="Command"/>
                     <PanelBarItem header expanded text="Command Expanded">
                         <PanelBarGroup>
@@ -31,7 +31,7 @@ export const PromptMoreActions = (props) => (
                         </PanelBarGroup>
                     </PanelBarItem>
                     <PanelBarItem header text="Command"/>
-                </PanelBar>
+                </PanelBarNormal>
             </PromptView>
         </PromptContent>
     </Prompt>
