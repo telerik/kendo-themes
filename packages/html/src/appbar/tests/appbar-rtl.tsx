@@ -72,7 +72,7 @@ export default () =>(
                 <>
                     <span>RTL Appbar - {themeColor} theme color</span>
                     <section>
-                        <AppbarNormal fillMode="solid" themeColor={themeColor} dir="rtl">
+                        <AppbarNormal themeColor={themeColor} dir="rtl">
                             <AppbarSection>
                                 <Icon icon="menu" />
                             </AppbarSection>
