@@ -72,7 +72,7 @@ export default () =>(
                 <>
                     <span>Appbar {themeColor} theme color</span>
                     <section>
-                        <AppbarNormal fillMode="solid" themeColor={themeColor}>
+                        <AppbarNormal themeColor={themeColor}>
                             <AppbarSection>
                                 <Icon icon="menu" />
                             </AppbarSection>
