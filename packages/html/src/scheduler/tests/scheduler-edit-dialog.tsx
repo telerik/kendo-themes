@@ -8,7 +8,7 @@ import { Combobox } from '../../combobox';
 import { MultiSelect } from '../../multiselect';
 import { FormNormal, FormField } from '../../form';
 import { ButtonGroup } from '../../button-group';
-import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
+import { RadioButtonWithLabelAfter, RadioGroupNormal, RadioItem } from '../../radio';
 import { NumericTextbox } from '../../numerictextbox';
 import { DatePicker } from '../../datepicker';
 
@@ -74,7 +74,7 @@ export default () =>(
                                 </div>
                                 <div className="k-scheduler-recurrence-end-rule-editor">
                                     <FormField label="End" editor={
-                                        <RadioGroup>
+                                        <RadioGroupNormal>
                                             <RadioItem>
                                                 <RadioButtonWithLabelAfter id="k-endrule-never">Never</RadioButtonWithLabelAfter>
                                             </RadioItem>
@@ -87,7 +87,7 @@ export default () =>(
                                                 <RadioButtonWithLabelAfter id="k-endrule-until" >On</RadioButtonWithLabelAfter>
                                                 <DatePicker className="k-recur-until" disabled />
                                             </RadioItem>
-                                        </RadioGroup>
+                                        </RadioGroupNormal>
                                     } />
                                 </div>
                             </div>
