@@ -1,4 +1,4 @@
-import { PanelBar, PanelBarGroup, PanelBarContent, PanelBarItem } from '..';
+import { PanelBarGroup, PanelBarContent, PanelBarItem, PanelBarNormal } from '..';
 
 
 const styles = `
@@ -19,7 +19,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
             <section>
-                <PanelBar>
+                <PanelBarNormal>
                     <PanelBarItem header icon="gear" text="Root">
                         <PanelBarContent>content</PanelBarContent>
                     </PanelBarItem>
@@ -47,11 +47,11 @@ export default () =>(
                     <PanelBarItem selected hover focus header text="Root selected hover&focus">
                         <PanelBarContent>content</PanelBarContent>
                     </PanelBarItem>
-                </PanelBar>
+                </PanelBarNormal>
             </section>
 
             <section>
-                <PanelBar>
+                <PanelBarNormal>
                     <PanelBarItem header text="First" />
                     <PanelBarItem header expanded text="Middle expanded">
                         <PanelBarGroup>
@@ -77,11 +77,11 @@ export default () =>(
                         </PanelBarGroup>
                     </PanelBarItem>
                     <PanelBarItem header text="Last" />
-                </PanelBar>
+                </PanelBarNormal>
             </section>
 
             <section>
-                <PanelBar>
+                <PanelBarNormal>
                     <PanelBarItem header expanded text="First expanded">
                         <PanelBarContent>
                             <h4>Title in template</h4>
@@ -90,11 +90,11 @@ export default () =>(
                     </PanelBarItem>
                     <PanelBarItem header text="Middle" />
                     <PanelBarItem header text="Last" />
-                </PanelBar>
+                </PanelBarNormal>
             </section>
 
             <section>
-                <PanelBar>
+                <PanelBarNormal>
                     <PanelBarItem header text="First" />
                     <PanelBarItem header text="Middle" />
                     <PanelBarItem header expanded text="Last expanded">
@@ -103,7 +103,7 @@ export default () =>(
                             <p>Multi line paragraph in template. Some more content to break onto multiple lines</p>
                         </PanelBarContent>
                     </PanelBarItem>
-                </PanelBar>
+                </PanelBarNormal>
             </section>
         </div>
     </>
