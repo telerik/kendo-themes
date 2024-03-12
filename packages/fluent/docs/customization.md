@@ -19644,7 +19644,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19654,7 +19654,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19664,7 +19664,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19674,7 +19674,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19684,7 +19684,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19694,7 +19694,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19704,7 +19704,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border style around the the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style around the the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19714,7 +19714,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the panelbar items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -19724,7 +19724,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Style of the border around the panelbar items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of the border around the PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -19734,7 +19734,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the icon of the panelbar items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing around the PanelBar items icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -19744,7 +19744,17 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the panelbar header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal start padding of the PanelBar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-header-padding-x-end</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal end padding of the PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19754,7 +19764,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the panelbar header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19764,7 +19774,17 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the panelbar items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panelbar-item-padding-x-end</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal end padding of the PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -19774,7 +19794,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the panelbar items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -19784,7 +19804,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Maximum nesting of the panelbar items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum nesting of the PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -19794,7 +19814,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19804,7 +19824,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19814,7 +19834,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PanelBar.</div></div>
     </td>
 </tr>
 <tr>
@@ -19824,7 +19844,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19834,7 +19854,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19844,7 +19864,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19854,7 +19874,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header when hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19864,7 +19884,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header when hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19874,7 +19894,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header when hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19884,7 +19904,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header when focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19894,7 +19914,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header when focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19904,7 +19924,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header when focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19914,7 +19934,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the panelbar header when focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19924,7 +19944,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header when focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused and hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19934,7 +19954,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header when focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused and hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19944,7 +19964,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header when focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused and hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19954,7 +19974,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header when selected.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19964,7 +19984,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header when selected.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19974,7 +19994,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header when selected.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19984,7 +20004,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the marker of the panelbar header when selected.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the marker of the selected PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -19994,7 +20014,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header when selected and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20004,7 +20024,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header when selected and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20014,7 +20034,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header when selected and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected and hovered PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20024,7 +20044,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header when selected and focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20034,7 +20054,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header when selected and focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20044,7 +20064,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header when selected and focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected and focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20054,7 +20074,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header when selected, focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected, hovered and focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20064,7 +20084,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header when selected, focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected, hovered and focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20074,7 +20094,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header when selected, focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected, hovered and focused PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20084,7 +20104,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar header when expanded.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the expanded PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20094,7 +20114,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar header when expanded.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the expanded PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20104,7 +20124,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar header when expanded.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the expanded PanelBar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20114,7 +20134,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar item when hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20124,7 +20144,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar item when hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20134,7 +20154,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar item when hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20144,7 +20164,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar item when focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20154,7 +20174,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar item when focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20164,7 +20184,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar item when focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20174,7 +20194,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the panelbar item when focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20184,7 +20204,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar item when focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused and hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20194,7 +20214,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar item when focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused and hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20204,7 +20224,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar item when focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused and hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20214,7 +20234,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar item when selected.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20224,7 +20244,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar item when selected.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20234,7 +20254,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar item when selected.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20244,7 +20264,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar item when selected and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20254,7 +20274,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar item when selected and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20264,7 +20284,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar item when selected and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected and hovered PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20274,7 +20294,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar item when selected and focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20284,7 +20304,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar item when selected and focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20294,7 +20314,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar item when selected and focused.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected and focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20304,7 +20324,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the panelbar item when selected, focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected, hovered and focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20314,7 +20334,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the panelbar item when selected, focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected, hovered and focused PanelBar items.</div></div>
     </td>
 </tr>
 <tr>
@@ -20324,7 +20344,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the panelbar item when selected, focused and hovered.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected, hovered and focused PanelBar items.</div></div>
     </td>
 </tr>
 </tbody>
