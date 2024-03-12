@@ -88,7 +88,7 @@ export default () =>(
                         </ButtonGroup>,
                         <ButtonGroup>
                             <Button className="k-group-start" icon="indent"></Button>
-                            <Button className="k-group-end" icon="outdent"></Button>
+                            <Button disabled className="k-group-end" icon="outdent"></Button>
                         </ButtonGroup>,
                         <ButtonGroup>
                             <Button className="k-group-start" icon="list-ordered"></Button>
@@ -104,8 +104,8 @@ export default () =>(
                             <DropdownList value="Paragraph" />
                         </ToolbarItem>,
                         <ButtonGroup>
-                            <Button className="k-group-start" icon="undo"></Button>
-                            <Button className="k-group-end" icon="redo"></Button>
+                            <Button disabled className="k-group-start" icon="undo"></Button>
+                            <Button disabled className="k-group-end" icon="redo"></Button>
                         </ButtonGroup>,
                         <ButtonGroup>
                             <Button className="k-group-start" icon="link"></Button>
