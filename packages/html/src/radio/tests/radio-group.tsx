@@ -1,4 +1,4 @@
-import { RadioGroup, RadioItem, RadioButtonWithLabelAfter, RadioButtonInsideLabel, RadioButtonNormal } from '../../radio';
+import { RadioGroup, RadioItem, RadioButtonWithLabelAfter, RadioButtonInsideLabel, RadioGroupNormal, RadioGroupHorizontal } from '../../radio';
 
 const styles = `
     #test-area {
@@ -13,17 +13,7 @@ export default () => (
             <span>Normal - vertical</span>
             <span>With Label - vertical</span>
             <span>Inside Label - vertical</span>
-            <RadioGroup>
-                <RadioItem>
-                    <RadioButtonNormal name="normal-vertical" />
-                </RadioItem>
-                <RadioItem>
-                    <RadioButtonNormal name="normal-vertical"/>
-                </RadioItem>
-                <RadioItem>
-                    <RadioButtonNormal name="normal-vertical"/>
-                </RadioItem>
-            </RadioGroup>
+            <RadioGroupNormal name="normal-vertical" />
             <RadioGroup>
                 <RadioItem>
                     <RadioButtonWithLabelAfter id="rad-vertical-one" name="label-vertical">First</RadioButtonWithLabelAfter>
@@ -49,18 +39,8 @@ export default () => (
             <span>Normal - horizontal</span>
             <span>With Label - horizontal</span>
             <span>Inside Label - horizontal</span>
-            <RadioGroup layout="horizontal">
-                <RadioItem>
-                    <RadioButtonNormal name="normal-horizontal" />
-                </RadioItem>
-                <RadioItem>
-                    <RadioButtonNormal name="normal-horizontal"/>
-                </RadioItem>
-                <RadioItem>
-                    <RadioButtonNormal name="normal-horizontal"/>
-                </RadioItem>
-            </RadioGroup>
-            <RadioGroup layout="horizontal">
+            <RadioGroupHorizontal name="normal-horizontal"/>
+            <RadioGroupHorizontal>
                 <RadioItem>
                     <RadioButtonWithLabelAfter id="rad-horizontal-one" name="label-horizontal">First</RadioButtonWithLabelAfter>
                 </RadioItem>
@@ -70,8 +50,8 @@ export default () => (
                 <RadioItem>
                     <RadioButtonWithLabelAfter id="rad-horizontal-thee" name="label-horizontal">Third</RadioButtonWithLabelAfter>
                 </RadioItem>
-            </RadioGroup>
-            <RadioGroup layout="horizontal">
+            </RadioGroupHorizontal>
+            <RadioGroupHorizontal>
                 <RadioItem>
                     <RadioButtonInsideLabel name="inside-label-horizontal">First</RadioButtonInsideLabel>
                 </RadioItem>
@@ -81,7 +61,7 @@ export default () => (
                 <RadioItem>
                     <RadioButtonInsideLabel name="inside-label-horizontal">Third</RadioButtonInsideLabel>
                 </RadioItem>
-            </RadioGroup>
+            </RadioGroupHorizontal>
         </div>
     </>
 );

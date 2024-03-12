@@ -1,7 +1,7 @@
 import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { FormNormal, Fieldset, FormField } from '../../form';
-import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
+import { RadioButtonWithLabelAfter, RadioGroupHorizontal, RadioItem } from '../../radio';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
@@ -52,7 +52,7 @@ export default () =>(
                                         colSpan="4"
                                         label=""
                                         editor={
-                                            <RadioGroup layout="horizontal">
+                                            <RadioGroupHorizontal>
                                                 <RadioItem>
                                                     <RadioButtonWithLabelAfter>Auto</RadioButtonWithLabelAfter>
                                                 </RadioItem>
@@ -62,7 +62,7 @@ export default () =>(
                                                 <RadioItem>
                                                     <RadioButtonWithLabelAfter>Landscape</RadioButtonWithLabelAfter>
                                                 </RadioItem>
-                                            </RadioGroup>
+                                            </RadioGroupHorizontal>
                                         }>
                                     </FormField>
                                 </Fieldset>
@@ -71,14 +71,14 @@ export default () =>(
                                         colSpan="1"
                                         label="Pages"
                                         editor={
-                                            <RadioGroup layout="horizontal">
+                                            <RadioGroupHorizontal>
                                                 <RadioItem>
                                                     <RadioButtonWithLabelAfter>All</RadioButtonWithLabelAfter>
                                                 </RadioItem>
                                                 <RadioItem>
                                                     <RadioButtonWithLabelAfter>Range</RadioButtonWithLabelAfter>
                                                 </RadioItem>
-                                            </RadioGroup>
+                                            </RadioGroupHorizontal>
                                         }>
                                     </FormField>
                                     <FormField colSpan="3" label="&nbsp;" editor={<Textbox placeholder="Example: 2 or 1 - 3" />}></FormField>

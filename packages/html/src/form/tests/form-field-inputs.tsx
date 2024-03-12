@@ -3,7 +3,7 @@ import { ColorPicker } from '../../colorpicker';
 import { FloatingLabel } from '../../floating-label';
 import { MaskedTextbox } from '../../maskedtextbox';
 import { NumericTextbox } from '../../numerictextbox';
-import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
+import { RadioButtonWithLabelAfter, RadioGroupHorizontal, RadioGroupNormal, RadioItem } from '../../radio';
 import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
 import { UploadChunk, UploadFile } from '../../upload';
@@ -60,14 +60,14 @@ export default () =>(
                     <FormField
                         label="Radio (Y):"
                         editor={
-                            <RadioGroup>
+                            <RadioGroupNormal>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Male</RadioButtonWithLabelAfter>
                                 </RadioItem>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Female</RadioButtonWithLabelAfter>
                                 </RadioItem>
-                            </RadioGroup>
+                            </RadioGroupNormal>
                         }
                     >
                     </FormField>
@@ -75,14 +75,14 @@ export default () =>(
                     <FormField
                         label="Radio (X):"
                         editor={
-                            <RadioGroup layout="horizontal">
+                            <RadioGroupHorizontal>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Male</RadioButtonWithLabelAfter>
                                 </RadioItem>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Female</RadioButtonWithLabelAfter>
                                 </RadioItem>
-                            </RadioGroup>
+                            </RadioGroupHorizontal>
                         }
                     >
                     </FormField>
@@ -179,14 +179,14 @@ export default () =>(
                     <FormField
                         label="Radio (Y):"
                         editor={
-                            <RadioGroup>
+                            <RadioGroupNormal>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Male</RadioButtonWithLabelAfter>
                                 </RadioItem>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Female</RadioButtonWithLabelAfter>
                                 </RadioItem>
-                            </RadioGroup>
+                            </RadioGroupNormal>
                         }
                     >
                     </FormField>
@@ -194,14 +194,14 @@ export default () =>(
                     <FormField
                         label="Radio (X):"
                         editor={
-                            <RadioGroup layout="horizontal">
+                            <RadioGroupHorizontal>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Male</RadioButtonWithLabelAfter>
                                 </RadioItem>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Female</RadioButtonWithLabelAfter>
                                 </RadioItem>
-                            </RadioGroup>
+                            </RadioGroupHorizontal>
                         }
                     >
                     </FormField>
