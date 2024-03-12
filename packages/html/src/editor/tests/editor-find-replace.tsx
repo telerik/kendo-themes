@@ -1,6 +1,6 @@
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
-import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroup } from '../../checkbox';
+import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroupNormal } from '../../checkbox';
 import { Textbox } from '../../textbox';
 import { EditorNormal } from '../../editor';
 import { WindowNormal } from '../../window';
@@ -50,7 +50,7 @@ export default () =>(
                             <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
                                 <FormField editor={
-                                    <CheckboxGroup className="k-search-options">
+                                    <CheckboxGroupNormal className="k-search-options">
                                         <CheckboxItem>
                                             <CheckboxWithLabelAfter>Match case</CheckboxWithLabelAfter>
                                         </CheckboxItem>
@@ -63,7 +63,7 @@ export default () =>(
                                         <CheckboxItem>
                                             <CheckboxWithLabelAfter>Regular Expression</CheckboxWithLabelAfter>
                                         </CheckboxItem>
-                                    </CheckboxGroup>
+                                    </CheckboxGroupNormal>
                                 } />
                                 <div className="k-matches-container">
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-left">Prev</Button>
@@ -100,7 +100,7 @@ export default () =>(
                                     </ActionButtons>
                                 } />
                                 <FormField editor={
-                                    <CheckboxGroup className="k-search-options">
+                                    <CheckboxGroupNormal className="k-search-options">
                                         <CheckboxItem>
                                             <CheckboxWithLabelAfter>Match case</CheckboxWithLabelAfter>
                                         </CheckboxItem>
@@ -113,7 +113,7 @@ export default () =>(
                                         <CheckboxItem>
                                             <CheckboxWithLabelAfter>Regular Expression</CheckboxWithLabelAfter>
                                         </CheckboxItem>
-                                    </CheckboxGroup>
+                                    </CheckboxGroupNormal>
                                 } />
                                 <div className="k-matches-container">
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-left">Prev</Button>

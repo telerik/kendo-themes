@@ -1,4 +1,4 @@
-import { CheckboxGroup, CheckboxItem, CheckboxWithLabelAfter, CheckboxNormal } from '../../checkbox';
+import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroupHorizontal, CheckboxGroupNormal } from '../../checkbox';
 
 const styles = `
     #test-area {
@@ -12,18 +12,8 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             <span>Normal - vertical</span>
             <span>With Label - vertical</span>
-            <CheckboxGroup>
-                <CheckboxItem>
-                    <CheckboxNormal/>
-                </CheckboxItem>
-                <CheckboxItem>
-                    <CheckboxNormal/>
-                </CheckboxItem>
-                <CheckboxItem>
-                    <CheckboxNormal/>
-                </CheckboxItem>
-            </CheckboxGroup>
-            <CheckboxGroup>
+            <CheckboxGroupNormal />
+            <CheckboxGroupNormal>
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="ch1-vert">Option one</CheckboxWithLabelAfter>
                 </CheckboxItem>
@@ -33,21 +23,11 @@ export default () => (
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="ch3-vert">Option three</CheckboxWithLabelAfter>
                 </CheckboxItem>
-            </CheckboxGroup>
+            </CheckboxGroupNormal>
             <span>Normal - horizontal</span>
             <span>With Label - horizontal</span>
-            <CheckboxGroup layout="horizontal">
-                <CheckboxItem>
-                    <CheckboxNormal/>
-                </CheckboxItem>
-                <CheckboxItem>
-                    <CheckboxNormal/>
-                </CheckboxItem>
-                <CheckboxItem>
-                    <CheckboxNormal/>
-                </CheckboxItem>
-            </CheckboxGroup>
-            <CheckboxGroup layout="horizontal">
+            <CheckboxGroupHorizontal />
+            <CheckboxGroupHorizontal>
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="ch1-hor">Option one</CheckboxWithLabelAfter>
                 </CheckboxItem>
@@ -57,7 +37,7 @@ export default () => (
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="ch3-hor">Option three</CheckboxWithLabelAfter>
                 </CheckboxItem>
-            </CheckboxGroup>
+            </CheckboxGroupHorizontal>
         </div>
     </>
 );
