@@ -1,105 +1,271 @@
 // Panelbar
 
+/// The horizontal padding of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-padding-x: 0px !default;
+/// The vertical padding of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-padding-y: 0px !default;
+/// The font family of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-font-family: $kendo-font-family !default;
+/// The font size of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-font-size: $kendo-font-size-md !default;
+/// The line height of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-line-height: $kendo-line-height-md !default;
+/// The width of the border around the PanelBar.
+/// @group panelbar
 $kendo-panelbar-border-width: 1px !default;
+/// The border style around the the PanelBar.
+/// @group panelbar
 $kendo-panelbar-border-style: solid !default;
+/// The width of the border around the PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-border-width: 1px !default;
+/// The style of the border around the PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-border-style: solid !default;
 
+/// The horizontal padding of the PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+/// The vertical padding of the PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 
+/// The horizontal padding of the PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+/// The vertical padding of the PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
+/// The maximum nesting of the PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-level-count: 4 !default;
 
+/// The background color of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-bg: $kendo-component-bg !default;
+/// The text color of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-text: $kendo-component-text !default;
+/// The border color of the PanelBar.
+/// @group panelbar
 $kendo-panelbar-border: $kendo-component-border !default;
 
+/// The background color of the PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-bg: $kendo-panelbar-bg !default;
+/// The text color of the PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-text: $kendo-link-text !default;
+/// The border color of the PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-border: null !default;
+/// The gradient of the PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-gradient: null !default;
 
+/// The background color of the hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-panelbar-header-bg, .5 )) !default;
+/// The text color of the hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-hover-text: null !default;
+/// The border color of the hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-hover-border: null !default;
+/// The gradient of the hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-hover-gradient: null !default;
 
+/// The background color of the focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-focus-bg: null !default;
+/// The text color of the focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-focus-text: null !default;
+/// The border color of the focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-focus-border: null !default;
+/// The gradient of the focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-focus-gradient: null !default;
+/// The shadow of the focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-focus-shadow: $kendo-list-item-focus-shadow !default;
 
+/// The background color of the focused and hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-hover-focus-bg: null !default;
+/// The text color of the focused and hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-hover-focus-text: null !default;
+/// The border color of the focused and hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-hover-focus-border: null !default;
+/// The gradient of the focused and hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-hover-focus-gradient: null !default;
 
+/// The background color of the selected PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-bg: $kendo-selected-bg !default;
+/// The text color of the selected PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-text: $kendo-selected-text !default;
+/// The border color of the selected PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-border: null !default;
+/// The gradient of the selected PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-gradient: null !default;
 
+/// The background color of the selected and hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-panelbar-header-selected-bg )) !default;
+/// The text color of the selected and hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-hover-text: null !default;
+/// The border color of the selected and hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-hover-border: null !default;
+/// The gradient of the selected and hovered PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-hover-gradient: null !default;
 
+/// The background color of the selected and focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-focus-bg: null !default;
+/// The text color of the selected and focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-focus-text: null !default;
+/// The border color of the selected and focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-focus-border: null !default;
+/// The gradient of the selected and focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-focus-gradient: null !default;
 
+/// The background color of the selected, hovered and focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-hover-focus-bg: null !default;
+/// The text color of the selected, hovered and focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-hover-focus-text: null !default;
+/// The border color of the selected, hovered and focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-hover-focus-border: null !default;
+/// The gradient of the selected, hovered and focused PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-selected-hover-focus-gradient: null !default;
 
+/// The background color of the hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-panelbar-bg, .5 )) !default;
+/// The text color of the hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-hover-text: null !default;
+/// The border color of the hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-hover-border: null !default;
+/// The gradient of the hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-hover-gradient: null !default;
 
+/// The background color of the focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-focus-bg: null !default;
+/// The text color of the focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-focus-text: null !default;
+/// The border color of the focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-focus-border: null !default;
+/// The gradient of the focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-focus-gradient: null !default;
+/// The box shadow of the focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
+/// The background color of the focused and hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-hover-focus-bg: null !default;
+/// The text color of the focused and hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-hover-focus-text: null !default;
+/// The border color of the focused and hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-hover-focus-border: null !default;
+/// The gradient of the focused and hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-hover-focus-gradient: null !default;
 
+/// The background color of the selected PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-bg: $kendo-selected-bg !default;
+/// The text color of the selected PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-text: $kendo-selected-text !default;
+/// The border color of the selected PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-border: null !default;
+/// The gradient of the selected PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-gradient: null !default;
 
+/// The background color of the selected and hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-panelbar-item-selected-bg )) !default;
+/// The text color of the selected and hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-hover-text: null !default;
+/// The border color of the selected and hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-hover-border: null !default;
+/// The gradient of the selected and hovered PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-hover-gradient: null !default;
 
+/// The background color of the selected and focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-focus-bg: null !default;
+/// The text color of the selected and focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-focus-text: null !default;
+/// The border color of the selected and focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-focus-border: null !default;
+/// The gradient of the selected and focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-focus-gradient: null !default;
 
+/// The background color of the selected, hovered and focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-hover-focus-bg: null !default;
+/// The text color of the selected, hovered and focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-hover-focus-text: null !default;
+/// The border color of the selected, hovered and focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-hover-focus-border: null !default;
+/// The gradient of the selected, hovered and focused PanelBar items.
+/// @group panelbar
 $kendo-panelbar-item-selected-hover-focus-gradient: null !default;
 
+/// The background color of the expanded PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-expanded-bg: null !default;
+/// The text color of the expanded PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-expanded-text: null !default;
+/// The border color of the expanded PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-expanded-border: null !default;
+/// The gradient of the expanded PanelBar header.
+/// @group panelbar
 $kendo-panelbar-header-expanded-gradient: null !default;
