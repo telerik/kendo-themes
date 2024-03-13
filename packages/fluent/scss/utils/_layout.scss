@@ -4,7 +4,9 @@
     $kendo-spacing: $kendo-spacing,
     $kendo-font-sizes: $kendo-font-sizes,
     $kendo-border-radii: $kendo-border-radii,
-    $kendo-elevation: $kendo-elevation
+    $kendo-elevation: $kendo-elevation,
+    $kendo-colors: $kendo-colors,
+    $kendo-enable-color-system: $kendo-enable-color-system
 );
 
 @mixin kendo-utils--layout() {

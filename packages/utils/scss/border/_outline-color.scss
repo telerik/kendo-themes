@@ -32,6 +32,6 @@
 
     // Outline color utility classes
     $kendo-utils-outline-color: k-map-get( $kendo-utils, "outline-color" ) !default;
-    @include generate-utils( outline, outline-color, $kendo-utils-outline-color );
+    @include generate-utils( outline, outline-color, $kendo-utils-outline-color, $css-var: 'color' );
 
 }

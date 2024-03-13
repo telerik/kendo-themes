@@ -1,4 +1,4 @@
-@mixin generate-utils( $name, $props, $values, $function: "", $important: $kendo-important ) {
+@mixin generate-utils( $name, $props, $values, $function: "", $important: $kendo-important, $css-var: null ) {
     @if $values {
         $_props: if( k-meta-type-of($props) == list, $props, ( $props ) );
         $_fn: if( k-meta-function-exists( $function ), k-meta-get-function( $function ), null );
@@ -8,18 +8,27 @@
             $_val: if( k-meta-type-of($values) == list, $key, $val );
             $_name: k-escape-class-name( $name );
             $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
+            $_custom-prop: if( $_key == DEFAULT, var( --kendo-#{$css-var}, #{$_val} ), var( --kendo-#{$css-var}-#{$_key}, #{$_val} ) );
 
             @if $important != only {
                 .#{$_selector} {
                     @each $prop in $_props {
-                        #{$prop}: if( $_fn, k-meta-call($_fn, $_val), $_val );
+                        @if $css-var {
+                            #{$prop}: if( $_fn, k-meta-call($_fn, $_custom-prop), $_custom-prop );
+                        } @else {
+                            #{$prop}: if( $_fn, k-meta-call($_fn, $_val), $_val );
+                        }
                     }
                 }
             }
             @if $important {
                 .\!#{$_selector} {
                     @each $prop in $_props {
-                        #{$prop}:  if( $_fn, k-meta-call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
+                        @if $css-var {
+                            #{$prop}: if( $_fn, k-meta-call($_fn, $-custom-prop), $-custom-prop ) !important; // stylelint-disable-line declaration-no-important
+                        } @else {
+                            #{$prop}:  if( $_fn, k-meta-call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
+                        }
                     }
                 }
             }
