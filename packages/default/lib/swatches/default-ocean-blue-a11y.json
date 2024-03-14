@@ -15,6 +15,646 @@
     "components": [],
     "groups": [
         {
+            "name": "New color system",
+            "colorSystem": {
+                "kendo-enable-color-system": {
+                    "name": "New color system",
+                    "type": "boolean",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "New theme colors",
+            "colorsMap": {
+                "app-surface": {
+                    "name": "App Surface",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "on-app-surface": {
+                    "name": "On App Surface",
+                    "type": "color",
+                    "value": "#424242"
+                },
+                "subtle": {
+                    "name": "Subtle",
+                    "type": "color",
+                    "value": "#666666"
+                },
+                "surface": {
+                    "name": "Surface",
+                    "type": "color",
+                    "value": "#fafafa"
+                },
+                "surface-alt": {
+                    "name": "Surface Alt",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "base-subtle": {
+                    "name": "Base Subtle",
+                    "type": "color",
+                    "value": "#ebebeb"
+                },
+                "base-subtle-hover": {
+                    "name": "Base Subtle Hover",
+                    "type": "color",
+                    "value": "#e1e1e1"
+                },
+                "base-subtle-active": {
+                    "name": "Base Subtle Active",
+                    "type": "color",
+                    "value": "#d5d5d5"
+                },
+                "base": {
+                    "name": "Base",
+                    "type": "color",
+                    "value": "#f5f5f5"
+                },
+                "base-hover": {
+                    "name": "Base Hover",
+                    "type": "color",
+                    "value": "#ebebeb"
+                },
+                "base-active": {
+                    "name": "Base Active",
+                    "type": "color",
+                    "value": "#d8d8d8"
+                },
+                "base-emphasis": {
+                    "name": "Base Emphasis",
+                    "type": "color",
+                    "value": "#c2c2c2"
+                },
+                "base-on-subtle": {
+                    "name": "Base On Subtle",
+                    "type": "color",
+                    "value": "#424242"
+                },
+                "on-base": {
+                    "name": "On Base",
+                    "type": "color",
+                    "value": "#424242"
+                },
+                "base-on-surface": {
+                    "name": "Base On Surface",
+                    "type": "color",
+                    "value": "#424242"
+                },
+                "primary-subtle": {
+                    "name": "Primary Subtle",
+                    "type": "color",
+                    "value": "#d0e3ee"
+                },
+                "primary-subtle-hover": {
+                    "name": "Primary Subtle Hover",
+                    "type": "color",
+                    "value": "#accee2"
+                },
+                "primary-subtle-active": {
+                    "name": "Primary Subtle Active",
+                    "type": "color",
+                    "value": "#89bad6"
+                },
+                "primary": {
+                    "name": "Primary",
+                    "type": "color",
+                    "value": "#1274AC"
+                },
+                "primary-hover": {
+                    "name": "Primary Hover",
+                    "type": "color",
+                    "value": "#116fa5"
+                },
+                "primary-active": {
+                    "name": "Primary Active",
+                    "type": "color",
+                    "value": "#106697"
+                },
+                "primary-emphasis": {
+                    "name": "Primary Emphasis",
+                    "type": "color",
+                    "value": "#4d97c1"
+                },
+                "primary-on-subtle": {
+                    "name": "Primary On Subtle",
+                    "type": "color",
+                    "value": "#06293c"
+                },
+                "on-primary": {
+                    "name": "On Primary",
+                    "type": "color",
+                    "value": "white"
+                },
+                "primary-on-surface": {
+                    "name": "Primary On Surface",
+                    "type": "color",
+                    "value": "#0e5781"
+                },
+                "secondary-subtle": {
+                    "name": "Secondary Subtle",
+                    "type": "color",
+                    "value": "#e3e3e3"
+                },
+                "secondary-subtle-hover": {
+                    "name": "Secondary Subtle Hover",
+                    "type": "color",
+                    "value": "#cfcfcf"
+                },
+                "secondary-subtle-active": {
+                    "name": "Secondary Subtle Active",
+                    "type": "color",
+                    "value": "#bababa"
+                },
+                "secondary": {
+                    "name": "Secondary",
+                    "type": "color",
+                    "value": "#757575"
+                },
+                "secondary-hover": {
+                    "name": "Secondary Hover",
+                    "type": "color",
+                    "value": "#707070"
+                },
+                "secondary-active": {
+                    "name": "Secondary Active",
+                    "type": "color",
+                    "value": "#676767"
+                },
+                "secondary-emphasis": {
+                    "name": "Secondary Emphasis",
+                    "type": "color",
+                    "value": "#989898"
+                },
+                "secondary-on-subtle": {
+                    "name": "Secondary On Subtle",
+                    "type": "color",
+                    "value": "#292929"
+                },
+                "on-secondary": {
+                    "name": "On Secondary",
+                    "type": "color",
+                    "value": "white"
+                },
+                "secondary-on-surface": {
+                    "name": "Secondary On Surface",
+                    "type": "color",
+                    "value": "#585858"
+                },
+                "tertiary-subtle": {
+                    "name": "Tertiary Subtle",
+                    "type": "color",
+                    "value": "#cce5e6"
+                },
+                "tertiary-subtle-hover": {
+                    "name": "Tertiary Subtle Hover",
+                    "type": "color",
+                    "value": "#a6d2d4"
+                },
+                "tertiary-subtle-active": {
+                    "name": "Tertiary Subtle Active",
+                    "type": "color",
+                    "value": "#80bfc2"
+                },
+                "tertiary": {
+                    "name": "Tertiary",
+                    "type": "color",
+                    "value": "#007F84"
+                },
+                "tertiary-hover": {
+                    "name": "Tertiary Hover",
+                    "type": "color",
+                    "value": "#007a7f"
+                },
+                "tertiary-active": {
+                    "name": "Tertiary Active",
+                    "type": "color",
+                    "value": "#007074"
+                },
+                "tertiary-emphasis": {
+                    "name": "Tertiary Emphasis",
+                    "type": "color",
+                    "value": "#409fa3"
+                },
+                "tertiary-on-subtle": {
+                    "name": "Tertiary On Subtle",
+                    "type": "color",
+                    "value": "#002c2e"
+                },
+                "on-tertiary": {
+                    "name": "On Tertiary",
+                    "type": "color",
+                    "value": "white"
+                },
+                "tertiary-on-surface": {
+                    "name": "Tertiary On Surface",
+                    "type": "color",
+                    "value": "#005f63"
+                },
+                "info-subtle": {
+                    "name": "Info Subtle",
+                    "type": "color",
+                    "value": "#ccdefb"
+                },
+                "info-subtle-hover": {
+                    "name": "Info Subtle Hover",
+                    "type": "color",
+                    "value": "#a6c5f7"
+                },
+                "info-subtle-active": {
+                    "name": "Info Subtle Active",
+                    "type": "color",
+                    "value": "#80acf4"
+                },
+                "info": {
+                    "name": "Info",
+                    "type": "color",
+                    "value": "#0058E9"
+                },
+                "info-hover": {
+                    "name": "Info Hover",
+                    "type": "color",
+                    "value": "#0054e0"
+                },
+                "info-active": {
+                    "name": "Info Active",
+                    "type": "color",
+                    "value": "#004dcd"
+                },
+                "info-emphasis": {
+                    "name": "Info Emphasis",
+                    "type": "color",
+                    "value": "#4082ef"
+                },
+                "info-on-subtle": {
+                    "name": "Info On Subtle",
+                    "type": "color",
+                    "value": "#001f52"
+                },
+                "on-info": {
+                    "name": "On Info",
+                    "type": "color",
+                    "value": "white"
+                },
+                "info-on-surface": {
+                    "name": "Info On Surface",
+                    "type": "color",
+                    "value": "#0042af"
+                },
+                "success-subtle": {
+                    "name": "Success Subtle",
+                    "type": "color",
+                    "value": "#d4e6cc"
+                },
+                "success-subtle-hover": {
+                    "name": "Success Subtle Hover",
+                    "type": "color",
+                    "value": "#b3d3a6"
+                },
+                "success-subtle-active": {
+                    "name": "Success Subtle Active",
+                    "type": "color",
+                    "value": "#93c180"
+                },
+                "success": {
+                    "name": "Success",
+                    "type": "color",
+                    "value": "#278200"
+                },
+                "success-hover": {
+                    "name": "Success Hover",
+                    "type": "color",
+                    "value": "#257d00"
+                },
+                "success-active": {
+                    "name": "Success Active",
+                    "type": "color",
+                    "value": "#227200"
+                },
+                "success-emphasis": {
+                    "name": "Success Emphasis",
+                    "type": "color",
+                    "value": "#5da140"
+                },
+                "success-on-subtle": {
+                    "name": "Success On Subtle",
+                    "type": "color",
+                    "value": "#0e2e00"
+                },
+                "on-success": {
+                    "name": "On Success",
+                    "type": "color",
+                    "value": "white"
+                },
+                "success-on-surface": {
+                    "name": "Success On Surface",
+                    "type": "color",
+                    "value": "#1d6200"
+                },
+                "warning-subtle": {
+                    "name": "Warning Subtle",
+                    "type": "color",
+                    "value": "#fff5d8"
+                },
+                "warning-subtle-hover": {
+                    "name": "Warning Subtle Hover",
+                    "type": "color",
+                    "value": "#feeebb"
+                },
+                "warning-subtle-active": {
+                    "name": "Warning Subtle Active",
+                    "type": "color",
+                    "value": "#fee79f"
+                },
+                "warning": {
+                    "name": "Warning",
+                    "type": "color",
+                    "value": "#FDCE3E"
+                },
+                "warning-hover": {
+                    "name": "Warning Hover",
+                    "type": "color",
+                    "value": "#f3c63c"
+                },
+                "warning-active": {
+                    "name": "Warning Active",
+                    "type": "color",
+                    "value": "#dfb537"
+                },
+                "warning-emphasis": {
+                    "name": "Warning Emphasis",
+                    "type": "color",
+                    "value": "#feda6e"
+                },
+                "warning-on-subtle": {
+                    "name": "Warning On Subtle",
+                    "type": "color",
+                    "value": "#594816"
+                },
+                "on-warning": {
+                    "name": "On Warning",
+                    "type": "color",
+                    "value": "black"
+                },
+                "warning-on-surface": {
+                    "name": "Warning On Surface",
+                    "type": "color",
+                    "value": "#be9b2f"
+                },
+                "error-subtle": {
+                    "name": "Error Subtle",
+                    "type": "color",
+                    "value": "#f7d1d3"
+                },
+                "error-subtle-hover": {
+                    "name": "Error Subtle Hover",
+                    "type": "color",
+                    "value": "#f0afb2"
+                },
+                "error-subtle-active": {
+                    "name": "Error Subtle Active",
+                    "type": "color",
+                    "value": "#ea8c91"
+                },
+                "error": {
+                    "name": "Error",
+                    "type": "color",
+                    "value": "#D51923"
+                },
+                "error-hover": {
+                    "name": "Error Hover",
+                    "type": "color",
+                    "value": "#cc1822"
+                },
+                "error-active": {
+                    "name": "Error Active",
+                    "type": "color",
+                    "value": "#bb161f"
+                },
+                "error-emphasis": {
+                    "name": "Error Emphasis",
+                    "type": "color",
+                    "value": "#e0535a"
+                },
+                "error-on-subtle": {
+                    "name": "Error On Subtle",
+                    "type": "color",
+                    "value": "#4b090c"
+                },
+                "on-error": {
+                    "name": "On Error",
+                    "type": "color",
+                    "value": "white"
+                },
+                "error-on-surface": {
+                    "name": "Error On Surface",
+                    "type": "color",
+                    "value": "#a0131a"
+                },
+                "light-subtle": {
+                    "name": "Light Subtle",
+                    "type": "color",
+                    "value": "#e3e3e3"
+                },
+                "light-subtle-hover": {
+                    "name": "Light Subtle Hover",
+                    "type": "color",
+                    "value": "#cfcfcf"
+                },
+                "light-subtle-active": {
+                    "name": "Light Subtle Active",
+                    "type": "color",
+                    "value": "#bababa"
+                },
+                "light": {
+                    "name": "Light",
+                    "type": "color",
+                    "value": "#757575"
+                },
+                "light-hover": {
+                    "name": "Light Hover",
+                    "type": "color",
+                    "value": "#707070"
+                },
+                "light-active": {
+                    "name": "Light Active",
+                    "type": "color",
+                    "value": "#676767"
+                },
+                "light-emphasis": {
+                    "name": "Light Emphasis",
+                    "type": "color",
+                    "value": "#989898"
+                },
+                "light-on-subtle": {
+                    "name": "Light On Subtle",
+                    "type": "color",
+                    "value": "#292929"
+                },
+                "on-light": {
+                    "name": "On Light",
+                    "type": "color",
+                    "value": "white"
+                },
+                "light-on-surface": {
+                    "name": "Light On Surface",
+                    "type": "color",
+                    "value": "#585858"
+                },
+                "series-a": {
+                    "name": "Series A",
+                    "type": "color",
+                    "value": "#1274AC"
+                },
+                "series-a-bold": {
+                    "name": "Series A Bold",
+                    "type": "color",
+                    "value": "#0e5781"
+                },
+                "series-a-bolder": {
+                    "name": "Series A Bolder",
+                    "type": "color",
+                    "value": "#093a56"
+                },
+                "series-a-subtle": {
+                    "name": "Series A Subtle",
+                    "type": "color",
+                    "value": "#4d97c1"
+                },
+                "series-a-subtler": {
+                    "name": "Series A Subtler",
+                    "type": "color",
+                    "value": "#89bad6"
+                },
+                "series-b": {
+                    "name": "Series B",
+                    "type": "color",
+                    "value": "#FFE162"
+                },
+                "series-b-bold": {
+                    "name": "Series B Bold",
+                    "type": "color",
+                    "value": "#bfa94a"
+                },
+                "series-b-bolder": {
+                    "name": "Series B Bolder",
+                    "type": "color",
+                    "value": "#807131"
+                },
+                "series-b-subtle": {
+                    "name": "Series B Subtle",
+                    "type": "color",
+                    "value": "#ffe989"
+                },
+                "series-b-subtler": {
+                    "name": "Series B Subtler",
+                    "type": "color",
+                    "value": "#fff0b1"
+                },
+                "series-c": {
+                    "name": "Series C",
+                    "type": "color",
+                    "value": "#4CD180"
+                },
+                "series-c-bold": {
+                    "name": "Series C Bold",
+                    "type": "color",
+                    "value": "#399d60"
+                },
+                "series-c-bolder": {
+                    "name": "Series C Bolder",
+                    "type": "color",
+                    "value": "#266940"
+                },
+                "series-c-subtle": {
+                    "name": "Series C Subtle",
+                    "type": "color",
+                    "value": "#79dda0"
+                },
+                "series-c-subtler": {
+                    "name": "Series C Subtler",
+                    "type": "color",
+                    "value": "#a6e8c0"
+                },
+                "series-d": {
+                    "name": "Series D",
+                    "type": "color",
+                    "value": "#0074e6"
+                },
+                "series-d-bold": {
+                    "name": "Series D Bold",
+                    "type": "color",
+                    "value": "#0057ad"
+                },
+                "series-d-bolder": {
+                    "name": "Series D Bolder",
+                    "type": "color",
+                    "value": "#003a73"
+                },
+                "series-d-subtle": {
+                    "name": "Series D Subtle",
+                    "type": "color",
+                    "value": "#4097ec"
+                },
+                "series-d-subtler": {
+                    "name": "Series D Subtler",
+                    "type": "color",
+                    "value": "#80baf3"
+                },
+                "series-e": {
+                    "name": "Series E",
+                    "type": "color",
+                    "value": "#9B4FE6"
+                },
+                "series-e-bold": {
+                    "name": "Series E Bold",
+                    "type": "color",
+                    "value": "#743bad"
+                },
+                "series-e-bolder": {
+                    "name": "Series E Bolder",
+                    "type": "color",
+                    "value": "#4e2873"
+                },
+                "series-e-subtle": {
+                    "name": "Series E Subtle",
+                    "type": "color",
+                    "value": "#b47bec"
+                },
+                "series-e-subtler": {
+                    "name": "Series E Subtler",
+                    "type": "color",
+                    "value": "#cda7f3"
+                },
+                "series-f": {
+                    "name": "Series F",
+                    "type": "color",
+                    "value": "#FF80AC"
+                },
+                "series-f-bold": {
+                    "name": "Series F Bold",
+                    "type": "color",
+                    "value": "#bf6081"
+                },
+                "series-f-bolder": {
+                    "name": "Series F Bolder",
+                    "type": "color",
+                    "value": "#804056"
+                },
+                "series-f-subtle": {
+                    "name": "Series F Subtle",
+                    "type": "color",
+                    "value": "#ffa0c1"
+                },
+                "series-f-subtler": {
+                    "name": "Series F Subtler",
+                    "type": "color",
+                    "value": "#ffc0d6"
+                }
+            }                                                        
+        },
+        {
             "name": "Theme colors",
             "variables": {
                 "kendo-is-dark-theme": {
@@ -146,7 +786,9 @@
                     "name": "Button background",
                     "type": "color",
                     "value": "#f5f5f5"
-                },
+                }
+            },
+            "universal": {
                 "kendo-flat-button-hover-opacity": {
                     "name": "Flat Button hover opacity",
                     "type": "number",
@@ -223,16 +865,6 @@
             "name": "Contrast improvements",
             "hidden": true,
             "variables": {
-                "kendo-enable-focus-contrast": {
-                    "name": "Enable focus indicator contrast",
-                    "type": "boolean",
-                    "value": true
-                },
-                "kendo-input-clear-value-opacity": {
-                    "name": "Input clear value button opacity",
-                    "type": "number",
-                    "value": "80%"
-                },
                 "kendo-taskboard-column-focus-border": {
                     "name": "TaskBoard column focus border",
                     "type": "color",
@@ -252,6 +884,18 @@
                     "name": "Scheduler event selected background",
                     "type": "color",
                     "value": "#0f6190"
+                }
+            },
+            "universal": {
+                "kendo-enable-focus-contrast": {
+                    "name": "Enable focus indicator contrast",
+                    "type": "boolean",
+                    "value": true
+                },
+                "kendo-input-clear-value-opacity": {
+                    "name": "Input clear value button opacity",
+                    "type": "number",
+                    "value": "80%"
                 }
             }
         }
