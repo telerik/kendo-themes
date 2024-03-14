@@ -1,21 +1,22 @@
 import { MultiViewCalendar } from "..";
 import { CalendarCell } from "../..";
+import { CalendarTableRow } from "../..";
 
-export const MultiViewCalendarWithWeeks = (props: any) => (
+export const MultiViewCalendarWithWeeks = ({ showOtherMonth, ...other }: any) => (
     <MultiViewCalendar calendarView="month" showTableHead showWeek
         children={
             <>
-                <tr className="k-calendar-tr">
+                <CalendarTableRow>
                     <CalendarCell text="39" weekCell />
-                    <CalendarCell text="30" otherMonth weekend />
+                    <CalendarCell text="30" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
                     <CalendarCell text="1" />
                     <CalendarCell text="2" />
                     <CalendarCell text="3" />
                     <CalendarCell text="4" />
                     <CalendarCell text="5" />
                     <CalendarCell text="6" weekend />
-                </tr>
-                <tr className="k-calendar-tr">
+                </CalendarTableRow>
+                <CalendarTableRow>
                     <CalendarCell text="40" weekCell />
                     <CalendarCell text="7" weekend />
                     <CalendarCell text="8" />
@@ -24,8 +25,8 @@ export const MultiViewCalendarWithWeeks = (props: any) => (
                     <CalendarCell text="11" />
                     <CalendarCell text="12" />
                     <CalendarCell text="13" weekend />
-                </tr>
-                <tr className="k-calendar-tr">
+                </CalendarTableRow>
+                <CalendarTableRow>
                     <CalendarCell text="41" weekCell />
                     <CalendarCell text="14" weekend />
                     <CalendarCell text="15" />
@@ -34,8 +35,8 @@ export const MultiViewCalendarWithWeeks = (props: any) => (
                     <CalendarCell text="18" />
                     <CalendarCell text="19" />
                     <CalendarCell text="20" weekend />
-                </tr>
-                <tr className="k-calendar-tr">
+                </CalendarTableRow>
+                <CalendarTableRow>
                     <CalendarCell text="42" weekCell />
                     <CalendarCell text="21" weekend />
                     <CalendarCell text="22" />
@@ -44,29 +45,29 @@ export const MultiViewCalendarWithWeeks = (props: any) => (
                     <CalendarCell text="25" />
                     <CalendarCell text="26" />
                     <CalendarCell text="27" weekend />
-                </tr>
-                <tr className="k-calendar-tr">
+                </CalendarTableRow>
+                <CalendarTableRow>
                     <CalendarCell text="43" weekCell />
                     <CalendarCell text="28" weekend />
                     <CalendarCell text="29" />
                     <CalendarCell text="30" />
                     <CalendarCell text="31" />
-                    <CalendarCell text="1" otherMonth />
-                    <CalendarCell text="2" otherMonth />
-                    <CalendarCell text="3" otherMonth weekend />
-                </tr>
-                <tr className="k-calendar-tr">
+                    <CalendarCell text="1" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
+                    <CalendarCell text="2" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
+                    <CalendarCell text="3" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
+                </CalendarTableRow>
+                <CalendarTableRow>
                     <CalendarCell text="44" weekCell />
-                    <CalendarCell text="4" otherMonth weekend />
-                    <CalendarCell text="5" otherMonth />
-                    <CalendarCell text="6" otherMonth />
-                    <CalendarCell text="7" otherMonth />
-                    <CalendarCell text="8" otherMonth />
-                    <CalendarCell text="9" otherMonth />
-                    <CalendarCell text="10" otherMonth weekend />
-                </tr>
+                    <CalendarCell text="4" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
+                    <CalendarCell text="5" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
+                    <CalendarCell text="6" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
+                    <CalendarCell text="7" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
+                    <CalendarCell text="8" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
+                    <CalendarCell text="9" showOtherMonth={showOtherMonth} empty={!showOtherMonth} />
+                    <CalendarCell text="10" showOtherMonth={showOtherMonth} empty={!showOtherMonth} weekend={showOtherMonth} />
+                </CalendarTableRow>
             </>
         }
-        {...props}
+        {...other}
     />
 );
