@@ -3,7 +3,7 @@
 @if(core.$kendo-enable-color-system) {
     core.$kendo-body-bg: core.k-color( app-surface );
     core.$kendo-body-text: core.k-color( on-app-surface );
-    core.$kendo-component-bg: core.$kendo-body-bg;
+    core.$kendo-component-bg: core.k-color( surface-alt );
     core.$kendo-component-text: core.$kendo-body-text;
     core.$kendo-component-border: color-mix(in srgb, core.k-color( border ) 16%, transparent);
     core.$kendo-hover-bg: core.k-color( base-hover );

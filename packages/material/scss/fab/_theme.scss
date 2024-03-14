@@ -48,8 +48,8 @@
         .k-fab-solid-#{$name}:disabled {
             @include box-shadow($kendo-fab-disabled-shadow);
             border-color: if($kendo-enable-color-system, transparent, k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
-            background-color: if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .09 ), k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
-            color: if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .32 ), k-color-tint( $kendo-disabled-text, 4));
+            background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
+            color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), k-color-tint( $kendo-disabled-text, 4));
             opacity: 1;
         }
     }
