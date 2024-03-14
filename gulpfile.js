@@ -65,10 +65,31 @@ function writeSwatches( cwds, options ) {
 
 function swatchJsonTransformer( json ) {
     const variables = [];
+    const universal = [];
+    const colorSystem = [];
+    const colorsMap = [];
 
     json.groups.forEach( (group) => {
-        for ( const [ name, meta ] of Object.entries(group.variables) ) {
-            variables.push({ name: name, value: meta.value });
+        if ( group.colorsMap ) {
+            for ( const [ name, meta ] of Object.entries(group.colorsMap) ) {
+                colorsMap.push({ name: name, value: meta.value });
+            }
+        } else if ( group.colorSystem ) {
+            for ( const [ name, meta ] of Object.entries(group.colorSystem) ) {
+                colorSystem.push({ name: name, value: meta.value });
+            }
+        } else {
+            if (group.variables) {
+                for ( const [ name, meta ] of Object.entries(group.variables) ) {
+                    variables.push({ name: name, value: meta.value });
+                }
+            }
+
+            if (group.universal) {
+                for ( const [ name, meta ] of Object.entries(group.universal) ) {
+                    universal.push({ name: name, value: meta.value });
+                }
+            }
         }
     });
 
@@ -76,8 +97,19 @@ function swatchJsonTransformer( json ) {
         modern: () => {
             const sassContent = [];
 
-            sassContent.push(`@use "../scss/index.scss" as kendo-theme;`);
-            sassContent.push(variables.map( (variable) => `kendo-theme.$${variable.name}: ${variable.value};`).join( '\n' ));
+            sassContent.push(`@use "../scss/index.scss" as kendo-theme with (`);
+            sassContent.push(colorSystem.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
+
+            if ( colorsMap.length ) {
+                sassContent.push(`\t$kendo-colors: (`);
+                sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
+                sassContent.push(`\t);`);
+            }
+
+            sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
+
+            sassContent.push(`);\n`);
+
             sassContent.push(`@include kendo-theme.config();`);
             sassContent.push(`@include kendo-theme.styles();`);
 
@@ -85,9 +117,23 @@ function swatchJsonTransformer( json ) {
         },
         legacy: () => {
             const sassContent = [];
+            if ( !colorSystem.length ) {
+                sassContent.push(`$kendo-enable-color-system: false;\n`);
+            }
+            sassContent.push(colorSystem.map( (variable) => `$${variable.name}: ${variable.value};`).join( '\n' ));
 
-            sassContent.push(variables.map( (variable) => `$${variable.name}: ${variable.value};`).join( '\n' ));
-            sassContent.push(`@import "all.scss";`);
+            if ( colorsMap.length ) {
+                sassContent.push(`\n$kendo-colors: (`);
+                sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
+                sassContent.push(`);\n`);
+            }
+
+            sassContent.push(`@if not ($kendo-enable-color-system) {`);
+            sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value} !global;`).join( '\n' ));
+            sassContent.push(`};`);
+
+            sassContent.push(universal.map( (variable) => `$${variable.name}: ${variable.value};`).join( '\n' ));
+            sassContent.push(`\n@import "all.scss";`);
 
             return sassContent.join( '\n' );
         }
