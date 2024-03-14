@@ -9,7 +9,7 @@
         .k-bottom-nav-flat-#{$name} {
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .06 ), rgba($kendo-bottom-nav-flat-text, .05)) );
+                @include fill( $bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), rgba($kendo-bottom-nav-flat-text, .05)) );
             }
         }
     }

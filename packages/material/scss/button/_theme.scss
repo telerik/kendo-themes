@@ -10,8 +10,8 @@
         .k-button-solid-#{$name} {
             @include box-shadow( $kendo-button-shadow );
             color: if( $name == "base", $kendo-button-text, if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color )) );
-            background-color: if( $name == "base", $kendo-button-bg, $color );
-            border-color: if( $name == "base", $kendo-button-bg, $color );
+            background-color: if( $name == "base", $kendo-button-bg, if($kendo-enable-color-system, k-color( $name ), $color) );
+            border-color: if( $name == "base", $kendo-button-bg, if($kendo-enable-color-system, k-color( $name ), $color) );
 
             // Hover state
             &:hover,

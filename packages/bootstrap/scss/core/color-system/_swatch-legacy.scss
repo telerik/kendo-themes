@@ -1,8 +1,12 @@
 @if ($kendo-enable-color-system) {
-    $input-bg: k-color( app-surface );
+    $input-bg: k-color( surface-alt );
     $input-color: k-color( on-app-surface );
     $input-border-color: k-color( border-alt );
     $input-placeholder-color: k-color( subtle );
+    $input-focus-bg: k-color( surface-alt );
+    $input-focus-color: k-color( on-app-surface );
+    $input-focus-border-color: k-color( border-alt );
+    $input-focus-box-shadow: 0 0 0 .25rem color-mix(in srgb, k-color( primary ) 25%, transparent);
     $kendo-color-primary: k-color( primary );
     $kendo-color-primary-contrast: k-color( on-primary );
     $kendo-color-secondary: k-color( secondary );
@@ -22,7 +26,7 @@
     $kendo-app-border: k-color( border );
     $kendo-link-text: $kendo-color-primary;
     $kendo-link-hover-text: k-color( primary-hover );
-    $kendo-component-bg: $kendo-body-bg;
+    $kendo-component-bg: k-color( surface-alt );
     $kendo-component-text: $kendo-body-text;
     $kendo-component-border: $kendo-app-border;
     $kendo-base-bg: k-color( surface );

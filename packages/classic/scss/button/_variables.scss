@@ -110,10 +110,10 @@ $kendo-button-theme-colors: k-map-merge(
 
 /// The base background of the Button.
 /// @group button
-$kendo-button-bg: $kendo-base-bg !default;
+$kendo-button-bg: if($kendo-enable-color-system, k-color( base ), $kendo-base-bg) !default;
 /// The base text color of the Button.
 /// @group button
-$kendo-button-text: $kendo-base-text !default;
+$kendo-button-text: if($kendo-enable-color-system, k-color( on-base ), $kendo-base-text) !default;
 /// The base border color of the Button.
 /// @group button
 $kendo-button-border: if($kendo-enable-color-system, k-color( border ), k-try-shade( $kendo-button-bg, 2 )) !default;
