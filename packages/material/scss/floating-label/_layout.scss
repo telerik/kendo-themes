@@ -8,7 +8,7 @@
     // Floating label
     .k-floating-label-container {
 
-        > .k-label {
+        > .k-floating-label {
             transform-origin: left bottom;
         }
 
@@ -16,7 +16,7 @@
         .k-rtl &,
         &[dir="rtl"] {
 
-            > .k-label {
+            > .k-floating-label {
                 transform-origin: right bottom;
             }
 
