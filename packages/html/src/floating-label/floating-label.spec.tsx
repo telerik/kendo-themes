@@ -3,6 +3,7 @@ import { classNames, stateClassNames, States } from '../misc';
 export const FLOATINGLABEL_CLASSNAME = `k-floating-label-container`;
 
 const states = [
+    States.hover,
     States.focus,
     States.valid,
     States.invalid,
@@ -20,15 +21,11 @@ export type KendoFloatingLabelProps = {
     label?: string;
 };
 
-/**
- * @deprecated
- */
-export type KendoFloatingLabelrProps = KendoFloatingLabelProps;
-
 export const FloatingLabel = (
     props: FloatingLabelState & KendoFloatingLabelProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        hover,
         focus,
         disabled,
         invalid,
@@ -44,12 +41,12 @@ export const FloatingLabel = (
             className={classNames(
                 props.className,
                 FLOATINGLABEL_CLASSNAME,
-                stateClassNames(FLOATINGLABEL_CLASSNAME, { focus, disabled, empty, valid, invalid }),
+                stateClassNames(FLOATINGLABEL_CLASSNAME, { hover, focus, disabled, empty, valid, invalid }),
             )}
         >
             {props.children}
             { label && (
-                <label className="k-label">
+                <label className="k-floating-label">
                     {label}
                 </label>
             )}
