@@ -14,12 +14,12 @@ export default () =>(
 
             <span>Horizontal</span>
             <section>
-                <OrgchartNormal width="100%" height="260px" justifyContent="center"/>
+                <OrgchartNormal width="100%" height="260px" justifyContent="around"/>
             </section>
 
             <span>Vertical</span>
             <section>
-                <OrgchartVertical width="100%" height="366px" justifyContent="center"/>
+                <OrgchartVertical width="100%" height="366px" justifyContent="around"/>
             </section>
 
         </div>

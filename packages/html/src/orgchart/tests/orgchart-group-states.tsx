@@ -16,7 +16,7 @@ export default () =>(
                 <section>
                     <span>{state}</span>
                     <OrgchartGroupVertical width="100%" height="431px">
-                        <OrgchartGroup justifyContent="around">
+                        <OrgchartGroup justifyContent="center">
                             <OrgchartNodeGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical" { ...{ [state]: true } }>
                                 <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
                                 <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
