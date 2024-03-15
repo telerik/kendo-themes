@@ -13,7 +13,6 @@ export type KendoCalendarCellProps = {
     headerCell?: boolean;
     today?: boolean;
     weekend?: boolean;
-    otherMonth?: boolean;
     showOtherMonth?: boolean;
     weekCell?: boolean;
     rangeStart?: boolean;
@@ -33,7 +32,6 @@ export const CalendarCell = (
         headerCell,
         today,
         weekend,
-        otherMonth,
         showOtherMonth,
         weekCell,
         rangeStart,
@@ -64,7 +62,7 @@ export const CalendarCell = (
         {
             'k-today': today,
             'k-weekend': weekend,
-            'k-other-month': otherMonth,
+            'k-other-month': showOtherMonth,
             'k-alt': weekCell,
             'k-range-start': rangeStart,
             'k-range-mid': rangeMid,
@@ -90,8 +88,8 @@ export const CalendarCell = (
 
     return (
         <td {...other} className={classNames(calendarCellClasses)}>
-            {otherMonth && !showOtherMonth
-                ? ''
+            {empty && !showOtherMonth
+                ? <>&nbsp;</>
                 : <span className="k-link">{text}</span>
             }
         </td>
