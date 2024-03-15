@@ -459,7 +459,7 @@ k-rgba-to-mix($color, $bg) // => Color
 }
 ```
 
-### `k-generate-colors`
+### `k-generate-color-variations`
 
 Generates all color variations of a given main color
 
@@ -467,7 +467,7 @@ Generates all color variations of a given main color
 #### Syntax
 
 ```scss
-k-generate-colors($name, $level) // => Map
+k-generate-color-variations($name, $color, $theme) // => Map
 ```
 
 #### Parameters
@@ -476,8 +476,11 @@ k-generate-colors($name, $level) // => Map
 `<String> $name`
 : The name of the main color
 
-`<Color> $level`
+`<Color> $color`
 : The color value to be assigned to the main color
+
+`<String> $theme`
+: The theme the colors will be generated for
 
 
 
@@ -485,22 +488,121 @@ k-generate-colors($name, $level) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L142-L157
-@function k-generate-colors($name, $level) {
-    $_variations: (
-        #{$name}-subtle: k-try-tint( $color, 80% ),
-        #{$name}-subtle-hover: k-try-tint( $color, 65% ),
-        #{$name}-subtle-active: k-try-tint( $color, 50% ),
-        #{$name}: $color,
-        #{$name}-hover: k-try-shade( $color, 0.5 ),
-        #{$name}-active: k-try-shade( $color, 1.5 ),
-        #{$name}-emphasis: k-try-tint( $color, 4.5 ),
-        #{$name}-on-subtle: k-try-shade( $color, 8 ),
-        on-#{$name}: k-contrast-legacy( $color ),
-        #{$name}-on-surface: $color,
-    );
-    
-    @return $_variations;
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-variations.import.scss#L8-L122
+@function k-generate-color-variations($name, $color, $theme) {
+    $result: ();
+
+    // DataViz
+    @if ( 
+            $name == 'series-a' or
+            $name == 'series-b' or
+            $name == 'series-c' or
+            $name == 'series-d' or
+            $name == 'series-e' or
+            $name == 'series-f'
+        ) {
+        $_variations: (
+            #{$name}: $color,
+            #{$name}-bold: k-color-mix(black, $color, 25%),
+            #{$name}-bolder: k-color-mix(black, $color, 50%),
+            #{$name}-subtle: k-color-mix(white, $color, 25%),
+            #{$name}-subtler: k-color-mix(white, $color, 50%),
+        );
+
+        $result: k-map-merge($result, $_variations);
+    } @else {
+        // Default
+        @if ( $theme == 'default' or $theme == null ) { // stylelint-disable-line
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 4% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 13% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-try-shade( $color, 0.5 ),
+                #{$name}-active: k-try-shade( $color, 1.5 ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 21% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 75% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 75% ), k-contrast-legacy( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 75% ), k-try-shade( $color, 25% )),
+            );
+
+            $result: k-map-merge($result, $_variations);
+        }
+
+        // Bootstrap
+        @if ( $theme == 'bootstrap' ) {
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-tint( $color, 30% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', $color, k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-color-darken( $color, 7.5% ),
+                #{$name}-active: k-color-darken( $color, 10% ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 21% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 84% ), k-contrast-color( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
+            );
+
+            $result: k-map-merge($result, $_variations);
+        }
+
+        // Material
+        @if ( $theme == 'material' ) {
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 12% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 16% ), k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 24% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-try-shade( $color, 0.5 ),
+                #{$name}-active: k-try-shade( $color, 1.5 ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 32% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 87% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 87% ), k-contrast-color( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 87% ), k-try-shade( $color, 50% )),
+            );
+
+            $result: k-map-merge($result, $_variations);
+        }
+
+        // Fluent
+        @if ( $theme == 'fluent' ) {
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 2% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 12% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-try-shade( $color, 0.5 ),
+                #{$name}-active: k-try-shade( $color, 1.5 ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 18% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 74% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 86% ), k-contrast-legacy( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 86% ), k-try-shade( $color, 25% )),
+            );
+
+            $result: k-map-merge($result, $_variations);
+        }
+
+        // Classic
+        @if ( $theme == 'classic' ) {
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-tint( $color, 20% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', k-try-tint( $color, 8% ), k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 6% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-try-shade( $color, 1 ),
+                #{$name}-active: k-try-shade( $color, 2 ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 14% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 84% ), k-contrast-legacy( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
+            );
+
+            $result: k-map-merge($result, $_variations);
+        }
+    }
+
+    @return $result;
 }
 ```
 
