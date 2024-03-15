@@ -42,19 +42,6 @@
         }
     }
 
-    .k-input-label {
-        margin-right: $kendo-horizontal-form-label-margin-x;
-        z-index: 1;
-
-        &:dir(rtl),
-        .k-rtl &,
-        &.k-rtl,
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-            margin-right: 0;
-            margin-left: $kendo-horizontal-form-label-margin-x;
-        }
-    }
 
 
     // Vertical Form
