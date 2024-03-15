@@ -25,22 +25,28 @@ export default () =>(
             <span>group</span>
 
             <section>
-                <OrgchartVertical width="100%" height="366px" justifyContent="center">
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineBottom button buttonIcon="minus"></OrgchartNode>
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineTop lineBottom button buttonIcon="minus"></OrgchartNode>
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineTop lineBottom button></OrgchartNode>
+                <OrgchartVertical width="100%" height="366px">
+                    <OrgchartGroup orientation="vertical" justifyContent="center">
+                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineBottom button buttonIcon="minus"></OrgchartNode>
+                    </OrgchartGroup>
+                    <OrgchartGroup orientation="vertical" justifyContent="around">
+                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineTop lineBottom button buttonIcon="minus"></OrgchartNode>
+                    </OrgchartGroup>
+                    <OrgchartGroup orientation="vertical" justifyContent="around">
+                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de" lineTop lineBottom button></OrgchartNode>
+                    </OrgchartGroup>
                 </OrgchartVertical>
             </section>
 
             <section>
-                <OrgchartGroupVertical orientation="vertical" width="100%" justifyContent="center">
-                    <OrgchartGroup>
+                <OrgchartGroupVertical width="100%">
+                    <OrgchartGroup justifyContent="center">
                         <OrgchartNodeGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical" lineBottom button buttonIcon="minus">
                             <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
                             <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
                         </OrgchartNodeGroup>
                     </OrgchartGroup>
-                    <OrgchartGroup>
+                    <OrgchartGroup justifyContent="around">
                         <OrgchartNodeGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical" lineTop lineBottom button>
                             <OrgchartNode title="Card Title" subtitle="Card, Subtitle" avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
                         </OrgchartNodeGroup>
