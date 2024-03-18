@@ -86,6 +86,9 @@
         block-size: var( --INTERNAL--kendo-calendar-cell-size, min-content );
         border-color: transparent;
     }
+    .k-calendar-td.k-alt {
+        font-size: $kendo-calendar-week-number-font-size;
+    }
 
 
     // Calendar cell inner
@@ -133,11 +136,6 @@
         justify-content: space-between;
         flex: 0 0 auto;
 
-        .k-title,
-        .k-calendar-title {
-            font-weight: bold;
-        }
-
         .k-calendar-nav {
             display: flex;
             flex-flow: row nowrap;
@@ -171,6 +169,10 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
+
+        .k-today {
+            font-weight: bold;
+        }
     }
 
 
