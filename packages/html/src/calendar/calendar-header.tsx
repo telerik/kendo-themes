@@ -10,6 +10,7 @@ const options = {
 export type KendoCalendarHeaderProps = {
     calendarHeaderText?: string;
     showToday?: boolean;
+    showNavigationButtons?: boolean;
     size?: (typeof options.size)[number] | null;
     orientation?: 'vertical' | 'horizontal';
     dir?: 'ltr' | 'rtl';
@@ -18,6 +19,7 @@ export type KendoCalendarHeaderProps = {
 const defaultProps = {
     calendarHeaderText: 'October 2021',
     showToday: true,
+    showNavigationButtons: true,
     orientation: 'horizontal',
     size: Size.medium
 };
@@ -29,6 +31,7 @@ export const CalendarHeader = (
     const {
         calendarHeaderText = defaultProps.calendarHeaderText,
         showToday = defaultProps.showToday,
+        showNavigationButtons = defaultProps.showNavigationButtons,
         orientation = defaultProps.orientation,
         size = defaultProps.size,
         dir,
@@ -48,12 +51,12 @@ export const CalendarHeader = (
                     'k-vstack': orientation === 'vertical',
                 }
             )}>
-            <Button className="k-calendar-title" text={calendarHeaderText} size={size} fillMode="flat"></Button>
+            <Button className="k-calendar-title" text={calendarHeaderText} size={size} fillMode="flat" themeColor="primary"></Button>
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
-                <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat"></Button>
+                {showNavigationButtons && <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat"></Button>}
                 {showToday && <Button size={size} fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>}
-                <Button className="k-calendar-nav-next" icon={iconNext} size={size} fillMode="flat"></Button>
+                {showNavigationButtons && <Button className="k-calendar-nav-next" icon={iconNext} size={size} fillMode="flat"></Button>}
             </span>
         </div>
     );

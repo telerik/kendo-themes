@@ -5,6 +5,11 @@ const className = `k-calendar-thead`;
 
 export type KendoCalendarTableHeadProps = {
     showWeek?: boolean;
+    cellsText?: string[];
+};
+
+const defaultProps = {
+    cellsText: [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa' ]
 };
 
 export const CalendarTableHead = (
@@ -13,6 +18,7 @@ export const CalendarTableHead = (
 ) => {
     const {
         showWeek,
+        cellsText = defaultProps.cellsText,
         ...other
     } = props;
 
@@ -22,13 +28,7 @@ export const CalendarTableHead = (
             className={classNames(props.className, className)}>
             <tr className="k-calendar-tr">
                 {showWeek && <CalendarCell weekCell headerCell /> }
-                <CalendarCell text="Su" headerCell />
-                <CalendarCell text="Mo" headerCell />
-                <CalendarCell text="Tu" headerCell />
-                <CalendarCell text="We" headerCell />
-                <CalendarCell text="Th" headerCell />
-                <CalendarCell text="Fr" headerCell />
-                <CalendarCell text="Sa" headerCell />
+                {cellsText.map((text, index) => <CalendarCell key={index} text={text} headerCell />)}
             </tr>
         </thead>
     );
