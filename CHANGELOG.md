@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.3.0-dev.0...v7.3.0-dev.1) (2024-03-18)
+
+
+### Features
+
+* **calendar:** update styles to match design guidelines ([3657cd0](https://github.com/telerik/kendo-themes/commit/3657cd07f9ff73341a4f2a00b91c96889de9fb48))
+* **drawer:** update styles to match universal rendering ([b042afa](https://github.com/telerik/kendo-themes/commit/b042afa1016339acbed489e6821cd9ab72133461))
+* **floating-label:** update styles to match the universal rendering ([93ae817](https://github.com/telerik/kendo-themes/commit/93ae817044f71aee4fa38bfdd1101204368d520e))
+* **panelbar:** update styles to match universal rendering ([d58280e](https://github.com/telerik/kendo-themes/commit/d58280e292162d2b10f433d3726b809ae4ea8129))
+
+
+
+
+
 # [7.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.2-dev.0...v7.3.0-dev.0) (2024-03-18)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.3.0-dev.0...v7.3.0-dev.1) (2024-03-18)
+
+
+### Features
+
+* **calendar:** update styles to match design guidelines ([3657cd0](https://github.com/telerik/kendo-themes/commit/3657cd07f9ff73341a4f2a00b91c96889de9fb48))
+* **floating-label:** update styles to match the universal rendering ([93ae817](https://github.com/telerik/kendo-themes/commit/93ae817044f71aee4fa38bfdd1101204368d520e))
+
+
+
+
+
 # [7.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.2-dev.0...v7.3.0-dev.0) (2024-03-18)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
