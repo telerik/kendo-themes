@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.2-dev.0...v7.3.0-dev.0) (2024-03-18)
+
+
+### Features
+
+* **core:** add a function that automatically generates the color variations ([8be6f9a](https://github.com/telerik/kendo-themes/commit/8be6f9a1400ff88094aa18ddf1de987b6a521807))
+
+
+
+
+
 ## [7.2.2-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.1...v7.2.2-dev.0) (2024-03-11)
 
 **Note:** Version bump only for package @progress/kendo-theme-core

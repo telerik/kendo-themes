@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.2-dev.0...v7.3.0-dev.0) (2024-03-18)
+
+
+### Features
+
+* **utils:** generate utility classes with css variables ([94d993b](https://github.com/telerik/kendo-themes/commit/94d993baae5bdbc77072282833c60ec3d7f2bd31))
+
+
+
+
+
 ## [7.2.2-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.1...v7.2.2-dev.0) (2024-03-11)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
