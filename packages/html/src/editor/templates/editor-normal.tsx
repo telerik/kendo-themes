@@ -21,7 +21,7 @@ export const EditorNormal = (props) => (
             </ButtonGroup>,
             <ButtonGroup>
                 <Button className="k-group-start" icon="indent"></Button>
-                <Button className="k-group-end" icon="outdent"></Button>
+                <Button disabled className="k-group-end" icon="outdent"></Button>
             </ButtonGroup>,
             <ButtonGroup>
                 <Button className="k-group-start" icon="align-left"></Button>

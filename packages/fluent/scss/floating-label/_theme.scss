@@ -6,23 +6,23 @@
      // Floating label
      .k-floating-label-container {
 
-        > .k-label {
+        > .k-floating-label {
             @include fill(
                 $color: var( --kendo-floating-label-text, #{$kendo-floating-label-text} ),
                 $bg: var( --kendo-floating-label-bg, #{$kendo-floating-label-bg} )
             );
         }
 
-        &.k-focus > .k-label {
+        &.k-focus > .k-floating-label {
             @include fill(
                 $color: var( --kendo-floating-label-focus-text, #{$kendo-floating-label-focus-text} ),
                 $bg: var( --kendo-floating-label-focus-bg, #{$kendo-floating-label-focus-bg} )
             );
         }
 
-        &.k-invalid > .k-label,
-        &.ng-invalid.ng-touched > .k-label,
-        &.ng-invalid.ng-dirty > .k-label {
+        &.k-invalid > .k-floating-label,
+        &.ng-invalid.ng-touched > .k-floating-label,
+        &.ng-invalid.ng-dirty > .k-floating-label {
             @include fill ( $color: var( --kendo-floating-label-invalid-text, #{$kendo-floating-label-invalid-text} ) );
         }
 

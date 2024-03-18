@@ -4,7 +4,7 @@ import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { CheckboxWithLabelAfter } from '../../checkbox';
-import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
+import { RadioButtonWithLabelAfter, RadioGroupNormal, RadioItem } from '../../radio';
 
 
 const style = `
@@ -37,14 +37,14 @@ export default () =>(
                             </>
                         } />
                         <FormField label="On invalid data" editor={
-                            <RadioGroup layout="vertical">
+                            <RadioGroupNormal>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter checked>Reject input</RadioButtonWithLabelAfter>
                                 </RadioItem>
                                 <RadioItem>
                                     <RadioButtonWithLabelAfter>Show warning</RadioButtonWithLabelAfter>
                                 </RadioItem>
-                            </RadioGroup>
+                            </RadioGroupNormal>
                         }/>
                         <FormField editor={
                             <>

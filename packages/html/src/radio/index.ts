@@ -5,3 +5,5 @@ export * from "./templates/radio-normal";
 export * from "./templates/radio-with-label-after";
 export * from "./templates/radio-with-label-before";
 export * from "./templates/radio-inside-label";
+export * from "./templates/radio-group-normal";
+export * from "./templates/radio-group-horizontal";

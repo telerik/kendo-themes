@@ -8,10 +8,10 @@
     // Floating label
     .k-floating-label-container {
 
-        &.k-invalid + .k-label,
-        .k-invalid + .k-label,
-        .ng-invalid.ng-touched + .k-label,
-        .ng-invalid.ng-dirty + .k-label {
+        &.k-invalid + .k-floating-label,
+        .k-invalid + .k-floating-label,
+        .ng-invalid.ng-touched + .k-floating-label,
+        .ng-invalid.ng-dirty + .k-floating-label {
             @include fill( $color: $kendo-color-error );
         }
     }

@@ -1,11 +1,11 @@
 import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { FormNormal, Fieldset, FormField } from '../../form';
-import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
+import { RadioButtonWithLabelAfter, RadioGroupHorizontal, RadioItem } from '../../radio';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
-import { CheckboxGroup, CheckboxItem, CheckboxWithLabelAfter } from '../../checkbox';
+import { CheckboxGroupNormal, CheckboxItem, CheckboxWithLabelAfter } from '../../checkbox';
 import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../../tabstrip';
 
 
@@ -52,7 +52,7 @@ export default () =>(
                                         colSpan="4"
                                         label=""
                                         editor={
-                                            <RadioGroup layout="horizontal">
+                                            <RadioGroupHorizontal>
                                                 <RadioItem>
                                                     <RadioButtonWithLabelAfter>Auto</RadioButtonWithLabelAfter>
                                                 </RadioItem>
@@ -62,7 +62,7 @@ export default () =>(
                                                 <RadioItem>
                                                     <RadioButtonWithLabelAfter>Landscape</RadioButtonWithLabelAfter>
                                                 </RadioItem>
-                                            </RadioGroup>
+                                            </RadioGroupHorizontal>
                                         }>
                                     </FormField>
                                 </Fieldset>
@@ -71,14 +71,14 @@ export default () =>(
                                         colSpan="1"
                                         label="Pages"
                                         editor={
-                                            <RadioGroup layout="horizontal">
+                                            <RadioGroupHorizontal>
                                                 <RadioItem>
                                                     <RadioButtonWithLabelAfter>All</RadioButtonWithLabelAfter>
                                                 </RadioItem>
                                                 <RadioItem>
                                                     <RadioButtonWithLabelAfter>Range</RadioButtonWithLabelAfter>
                                                 </RadioItem>
-                                            </RadioGroup>
+                                            </RadioGroupHorizontal>
                                         }>
                                     </FormField>
                                     <FormField colSpan="3" label="&nbsp;" editor={<Textbox placeholder="Example: 2 or 1 - 3" />}></FormField>
@@ -147,24 +147,24 @@ export default () =>(
                         <TabStripContent active>
                             <FormNormal formButtons={null} tag="div" layout="grid">
                                 <FormField label="Show" editor={
-                                    <CheckboxGroup className="k-search-options">
+                                    <CheckboxGroupNormal className="k-search-options">
                                         <CheckboxItem>
                                             <CheckboxWithLabelAfter>Grid lines</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                         <CheckboxItem>
                                             <CheckboxWithLabelAfter>Row and column headings</CheckboxWithLabelAfter>
                                         </CheckboxItem>
-                                    </CheckboxGroup>
+                                    </CheckboxGroupNormal>
                                 } />
                                 <FormField label="Center on page" editor={
-                                    <CheckboxGroup className="k-search-options">
+                                    <CheckboxGroupNormal className="k-search-options">
                                         <CheckboxItem>
                                             <CheckboxWithLabelAfter>Horizontally</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                         <CheckboxItem>
                                             <CheckboxWithLabelAfter>Vertically</CheckboxWithLabelAfter>
                                         </CheckboxItem>
-                                    </CheckboxGroup>
+                                    </CheckboxGroupNormal>
                                 } />
                             </FormNormal>
                         </TabStripContent>

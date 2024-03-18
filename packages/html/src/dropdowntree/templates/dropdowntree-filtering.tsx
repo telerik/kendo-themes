@@ -22,7 +22,7 @@ export const DropdownTreeFiltering = (props) => (
                         <TreeviewGroup>
                             <TreeviewItem top text="Child 2.1" expanded>
                                 <TreeviewGroup>
-                                    <TreeviewItem top text="Child 2.1.1" />
+                                    <TreeviewItem bottom text="Child 2.1.1" />
                                 </TreeviewGroup>
                             </TreeviewItem>
                             <TreeviewItem text="Child 2.2" />

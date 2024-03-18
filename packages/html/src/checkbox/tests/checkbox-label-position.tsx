@@ -1,4 +1,4 @@
-import { CheckboxGroup, CheckboxItem, CheckboxWithLabelAfter, CheckboxWithLabelBefore } from '..';
+import { CheckboxGroupHorizontal, CheckboxGroupNormal, CheckboxItem, CheckboxWithLabelAfter, CheckboxWithLabelBefore } from '..';
 
 const styles = `
     #test-area {
@@ -12,7 +12,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             <span>With Label Before - vertical</span>
             <span>With Label After - vertical</span>
-            <CheckboxGroup>
+            <CheckboxGroupNormal>
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="vertical-after-one">First</CheckboxWithLabelAfter>
                 </CheckboxItem>
@@ -22,8 +22,8 @@ export default () => (
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="vertical-after-thee">Third</CheckboxWithLabelAfter>
                 </CheckboxItem>
-            </CheckboxGroup>
-            <CheckboxGroup>
+            </CheckboxGroupNormal>
+            <CheckboxGroupNormal>
                 <CheckboxItem>
                     <CheckboxWithLabelBefore id="vertical-before-one">First</CheckboxWithLabelBefore>
                 </CheckboxItem>
@@ -33,10 +33,10 @@ export default () => (
                 <CheckboxItem>
                     <CheckboxWithLabelBefore id="vertical-before-thee">Third</CheckboxWithLabelBefore>
                 </CheckboxItem>
-            </CheckboxGroup>
+            </CheckboxGroupNormal>
             <span>With Label Before - horizontal</span>
             <span>With Label After - horizontal</span>
-            <CheckboxGroup layout="horizontal">
+            <CheckboxGroupHorizontal>
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="horizontal-after-one">First</CheckboxWithLabelAfter>
                 </CheckboxItem>
@@ -46,8 +46,8 @@ export default () => (
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="horizontal-after-three">Third</CheckboxWithLabelAfter>
                 </CheckboxItem>
-            </CheckboxGroup>
-            <CheckboxGroup layout="horizontal">
+            </CheckboxGroupHorizontal>
+            <CheckboxGroupHorizontal>
                 <CheckboxItem>
                     <CheckboxWithLabelBefore id="horizontal-before-one">First</CheckboxWithLabelBefore>
                 </CheckboxItem>
@@ -57,7 +57,7 @@ export default () => (
                 <CheckboxItem>
                     <CheckboxWithLabelBefore id="horizontal-before-three">Third</CheckboxWithLabelBefore>
                 </CheckboxItem>
-            </CheckboxGroup>
+            </CheckboxGroupHorizontal>
         </div>
     </>
 );

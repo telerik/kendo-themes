@@ -9,7 +9,7 @@ export const TreeviewCheckboxes = (props) => (
                     <TreeviewItem top text="Child 2.1" showCheckbox />
                     <TreeviewItem text="Child 2.2" showCheckbox>
                         <TreeviewGroup>
-                            <TreeviewItem top text="Child 2.2.1" />
+                            <TreeviewItem bottom text="Child 2.2.1" />
                         </TreeviewGroup>
                     </TreeviewItem>
                     <TreeviewItem text="Child 2.3" showCheckbox />

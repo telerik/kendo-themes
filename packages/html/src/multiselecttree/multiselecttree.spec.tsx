@@ -161,7 +161,7 @@ export const MultiSelectTree = (
                                 <TreeviewItem top text="Child 2.1" />
                                 <TreeviewItem text="Child 2.2">
                                     <TreeviewGroup>
-                                        <TreeviewItem top text="Child 2.2.1" />
+                                        <TreeviewItem bottom text="Child 2.2.1" />
                                     </TreeviewGroup>
                                 </TreeviewItem>
                                 <TreeviewItem text="Child 2.3" />
