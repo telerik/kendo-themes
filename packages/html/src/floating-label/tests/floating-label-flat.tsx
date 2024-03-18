@@ -38,26 +38,20 @@ export default () =>(
                 </FloatingLabelNormal>
             </div>
 
-            {[ 'normal', 'hover', ...FloatingLabel.states ].map((state) => {
-
-                let value = state;
-                state === 'empty' && (value = '');
-
-                return (
-                    <>
-                        <div>
-                            <FloatingLabelNormal label="Label" { ...{ [state]: true }}>
-                                <TextboxNormal fillMode="flat" value={value} { ...{ [state]: true }}/>
-                            </FloatingLabelNormal>
-                        </div>
-                        <div dir="rtl">
-                            <FloatingLabelNormal label="Label" { ...{ [state]: true }}>
-                                <TextboxNormal fillMode="flat" value={value} { ...{ [state]: true }} />
-                            </FloatingLabelNormal>
-                        </div>
-                    </>
-                );
-            })}
+            {[ 'normal', ...FloatingLabel.states ].map((state) => (
+                <>
+                    <div>
+                        <FloatingLabelNormal label="Label" { ...{ [state]: true }}>
+                            <TextboxNormal fillMode="flat" value={state === 'empty' ? '' : state} { ...{ [state]: true }}/>
+                        </FloatingLabelNormal>
+                    </div>
+                    <div dir="rtl">
+                        <FloatingLabelNormal label="Label" { ...{ [state]: true }}>
+                            <TextboxNormal fillMode="flat" value={state === 'empty' ? '' : state} { ...{ [state]: true }} />
+                        </FloatingLabelNormal>
+                    </div>
+                </>
+            ))}
 
         </div>
     </>

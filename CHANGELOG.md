@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.2-dev.0...v7.3.0-dev.0) (2024-03-18)
+
+
+### Bug Fixes
+
+* **html:** appbar should not have fillMode ([1d2eef6](https://github.com/telerik/kendo-themes/commit/1d2eef622bdb89f442d2722840a26b4a67ddc700))
+
+
+### Features
+
+* **core:** add a function that automatically generates the color variations ([8be6f9a](https://github.com/telerik/kendo-themes/commit/8be6f9a1400ff88094aa18ddf1de987b6a521807))
+* **utils:** generate utility classes with css variables ([94d993b](https://github.com/telerik/kendo-themes/commit/94d993baae5bdbc77072282833c60ec3d7f2bd31))
+
+
+
+
+
 ## [7.2.2-dev.0](https://github.com/telerik/kendo-themes/compare/v7.2.1...v7.2.2-dev.0) (2024-03-11)
 
 **Note:** Version bump only for package kendo-themes.repo

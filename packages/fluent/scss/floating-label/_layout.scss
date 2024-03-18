@@ -18,7 +18,7 @@
             box-sizing: border-box;
         }
 
-        > .k-label {
+        > .k-floating-label {
             max-width: var( --kendo-floating-label-max-width, #{$kendo-floating-label-max-width} );
             font-size: var( --kendo-floating-label-font-size, #{$kendo-floating-label-font-size} );
             font-weight: var( --kendo-floating-label-font-weight, #{$kendo-floating-label-font-weight} );
@@ -34,13 +34,9 @@
             transition: transform var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), color var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), top var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), left var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} );
         }
 
-        > .k-widget {
-            flex: 1 1 auto;
-            width: auto;
-        }
 
         &.k-empty {
-            > .k-label {
+            > .k-floating-label {
                 top: var( --kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y} );
                 left: var( --kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x} );
                 transform: scale( var( --kendo-floating-label-scale, #{$kendo-floating-label-scale} ) );
@@ -48,9 +44,9 @@
             }
         }
 
-        > .k-label,
-        &:focus-within > .k-label,
-        &.k-focus > .k-label {
+        > .k-floating-label,
+        &:focus-within > .k-floating-label,
+        &.k-focus > .k-floating-label {
             top: var( --kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y} );
             left: var( --kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x} );
             transform: scale( var( --kendo-floating-label-focus-scale, #{$kendo-floating-label-focus-scale} ) );
@@ -65,21 +61,21 @@
         .k-rtl &,
         &[dir="rtl"] {
 
-            > .k-label {
+            > .k-floating-label {
                 transform-origin: right center;
                 transition: transform var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), color var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), top var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), right var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} );
             }
 
             &.k-empty {
-                > .k-label {
+                > .k-floating-label {
                     left: auto;
                     right: var( --kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x} );
                 }
             }
 
-            > .k-label,
-            &:focus-within > .k-label,
-            &.k-focus > .k-label {
+            > .k-floating-label,
+            &:focus-within > .k-floating-label,
+            &.k-focus > .k-floating-label {
                 left: auto;
                 right: var( --kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x} );
             }

@@ -4,9 +4,9 @@ import { Textbox } from '../../textbox';
 export const FloatingLabelNormal = (props) => (
     <FloatingLabel
         label="Label"
-        children={[
+        children={
             <Textbox />
-        ]}
+        }
         {...props}
     >
     </FloatingLabel>

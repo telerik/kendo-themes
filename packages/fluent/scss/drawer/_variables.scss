@@ -1,135 +1,136 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Background color of the drawer.
+/// The background color of the Drawer.
 /// @group drawer
 $kendo-drawer-bg: var( --kendo-component-bg, initial ) !default;
-/// Text color of the drawer.
+/// The text color of the Drawer.
 /// @group drawer
 $kendo-drawer-text: var( --kendo-component-text, initial ) !default;
-/// Border color of the drawer.
+/// The border color of the Drawer.
 /// @group drawer
 $kendo-drawer-border: var( --kendo-component-border, initial ) !default;
-/// Border width of the drawer.
+/// The border width of the Drawer.
 /// @group drawer
 $kendo-drawer-border-width: 1px !default;
-/// Font family of the drawer.
+/// The font family of the Drawer.
 /// @group drawer
 $kendo-drawer-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the drawer.
+/// The font size of the Drawer.
 /// @group drawer
 $kendo-drawer-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the drawer.
+/// The line height of the Drawer.
 /// @group drawer
 $kendo-drawer-line-height: var( --kendo-line-height, inherit ) !default;
-/// Horizontal padding of the drawer content.
+
+/// The horizontal padding of the Drawer content.
 /// @group drawer
 $kendo-drawer-content-padding-x: var( --kendo-padding-x, #{$kendo-padding-md-x} ) !default;
-/// Vertical padding of the drawer content.
+/// The vertical padding of the Drawer content.
 /// @group drawer
 $kendo-drawer-content-padding-y: var( --kendo-padding-y, #{$kendo-padding-md-y} ) !default;
 
-/// Scrollbar width of the drawer.
+/// The width of the Drawer scrollbar.
 /// @group drawer
 $kendo-drawer-scrollbar-width: 7px !default;
-/// Scrollbar color of the drawer.
+/// The color of the Drawer scrollbar.
 /// @group drawer
 $kendo-drawer-scrollbar-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 )) !default;
-/// Scrollbar background of the drawer.
+/// The background of the Drawer scrollbar.
 /// @group drawer
 $kendo-drawer-scrollbar-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-40 )) !default;
-/// Scrollbar border radius of the drawer.
+/// The border radius of the Drawer scrollbar.
 /// @group drawer
 $kendo-drawer-scrollbar-radius: 20px !default;
-/// Scrollbar hover color of the drawer.
+/// The hover color of the Drawer scrollbar.
 /// @group drawer
 $kendo-drawer-scrollbar-hover-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), k-get-theme-color-var( neutral-110 )) !default;
 
-/// Horizontal padding of the drawer item.
+/// The horizontal padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-x: map.get( $kendo-spacing, 4 ) !default;
-/// Vertical padding of the drawer item.
+/// The vertical padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-y: var( --kendo-padding-x, #{$kendo-padding-md-x} ) !default;
-/// Font size of the drawer item.
+/// The font size of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-font-size: $kendo-drawer-font-size !default;
-/// Line height of the drawer item.
+/// The line height of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-line-height: var( --kendo-line-height-lg, normal ) !default;
 
-/// Horizontal padding of the drawer item in each level.
+/// The horizontal padding of the Drawer item in each level.
 /// @group drawer
 $kendo-drawer-item-level-padding-x: $kendo-drawer-item-padding-x !default;
-/// Count of the drawer item levels.
+/// The count of the Drawer item levels.
 /// @group drawer
 $kendo-drawer-item-level-count: 5 !default;
 
-/// Horizontal padding of the drawer icon.
+/// The horizontal padding of the Drawer icon.
 /// @group drawer
 $kendo-drawer-icon-padding-x: 0 !default;
-/// Vertical padding of the drawer icon.
+/// The vertical padding of the Drawer icon.
 /// @group drawer
 $kendo-drawer-icon-padding-y: map.get( $kendo-spacing, 1 ) !default;
 
-/// Initial width of the mini drawer.
+/// The initial width of the mini Drawer.
 /// @group drawer
 $kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) ) !default;
 
-/// The border width of the drawer item ripple
+/// The border width of the Drawer item ripple.
 /// @group drawer
 $kendo-drawer-item-ripple-border-width: map.get( $kendo-spacing, 0.5 ) !default;
-/// The border color of the drawer item ripple
+/// The border color of the Drawer item ripple.
 /// @group drawer
 $kendo-drawer-item-ripple-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
-/// Background color of the drawer item.
+/// The background color of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-bg: $kendo-drawer-bg !default;
-/// Text color of the drawer item.
+/// The text color of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-text: $kendo-drawer-text !default;
-/// Text color of the drawer item icon.
+/// The text color of the Drawer item icon.
 /// @group drawer
 $kendo-drawer-item-icon-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
-/// Background color of the hovered drawer item.
+/// The background color of the hovered Drawer item.
 /// @group drawer
 $kendo-drawer-item-hover-bg: $kendo-drawer-item-bg !default;
-/// Text color of the hovered drawer item.
+/// The text color of the hovered Drawer item.
 /// @group drawer
 $kendo-drawer-item-hover-text: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
-/// Text color of the hovered drawer item icon.
+/// The text color of the hovered Drawer item icon.
 /// @group drawer
 $kendo-drawer-item-hover-icon-text: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
 
-/// Background color of the focused drawer item.
+/// The background color of the focused Drawer item.
 /// @group drawer
 $kendo-drawer-item-focus-bg: $kendo-drawer-item-bg !default;
-/// Text color of the focused drawer item.
+/// The text color of the focused Drawer item.
 /// @group drawer
 $kendo-drawer-item-focus-text: $kendo-drawer-item-text !default;
-/// Box shadow of the focused drawer item.
+/// The box shadow of the focused Drawer item.
 /// @group drawer
 $kendo-drawer-item-focus-shadow: inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
-/// Text color of the focused drawer item icon.
+/// The text color of the focused Drawer item icon.
 /// @group drawer
 $kendo-drawer-item-focus-icon-text: $kendo-drawer-item-icon-text !default;
 
-/// Font weight of the selected drawer item.
+/// The font weight of the selected Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
-/// Background color of the selected drawer item.
+/// The background color of the selected Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-bg: var( --kendo-selected-bg, initial ) !default;
-/// Text color of the selected drawer item.
+/// The text color of the selected Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-text: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
-/// Text color of the selected drawer item icon.
+/// The text color of the selected Drawer item icon.
 /// @group drawer
 $kendo-drawer-item-selected-icon-text: if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 )) !default;
-/// Background color of the selected and hovered drawer item.
+/// The background color of the selected and hovered Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-hover-bg: var( --kendo-selected-hover-bg, inherit ) !default;
-/// Text color of the selected and hovered drawer item.
+/// The text color of the selected and hovered Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-hover-text: var( --kendo-selected-hover-text, inherit ) !default;
