@@ -18,6 +18,7 @@ export type KendoCalendarCellProps = {
     rangeStart?: boolean;
     rangeMid?: boolean;
     rangeEnd?: boolean;
+    empty?: boolean;
 };
 
 export type KendoCalendarCellState = { [K in (typeof states)[number]]?: boolean };
@@ -37,6 +38,7 @@ export const CalendarCell = (
         rangeStart,
         rangeMid,
         rangeEnd,
+        empty,
         hover,
         focus,
         active,
@@ -66,7 +68,8 @@ export const CalendarCell = (
             'k-alt': weekCell,
             'k-range-start': rangeStart,
             'k-range-mid': rangeMid,
-            'k-range-end': rangeEnd
+            'k-range-end': rangeEnd,
+            'k-empty': empty,
         }
     ];
 
