@@ -38,6 +38,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-footer-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the footer in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-weekend-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the weekend cells in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-link-hover-text</code></td>
+    <td><span class="color-preview" style="background-color: #c2185b"></span><code>#c2185b</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered items in the Calendar navigation.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-base-bg</td>
     <td>Color</td>
     <td><code>k-map-get( $theme, base-bg )</code></td>
