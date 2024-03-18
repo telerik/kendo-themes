@@ -30,10 +30,10 @@ $kendo-calendar-border: var( --kendo-component-border, initial) !default;
 
 /// Horizontal padding of the calendar header.
 /// @group calendar
-$kendo-calendar-header-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-calendar-header-padding-x: map.get( $kendo-spacing, 1 ) !default;
 /// Vertical padding of the calendar header.
 /// @group calendar
-$kendo-calendar-header-padding-y: map.get( $kendo-spacing, 3 ) map.get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-header-padding-y: map.get( $kendo-spacing, 1 ) !default;
 /// Width of the bottom border of the calendar header.
 /// @group calendar
 $kendo-calendar-header-border-width: 1px !default;
@@ -55,10 +55,10 @@ $kendo-calendar-nav-gap: 0 !default;
 
 /// Horizontal padding of the calendar footer.
 /// @group calendar
-$kendo-calendar-footer-padding-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-calendar-footer-padding-x: map.get( $kendo-spacing, 1 ) !default;
 /// Vertical padding of the calendar footer.
 /// @group calendar
-$kendo-calendar-footer-padding-y: map.get( $kendo-spacing, 3 ) !default;
+$kendo-calendar-footer-padding-y: map.get( $kendo-spacing, 1 ) !default;
 
 /// Font size of the calendar cell.
 /// @group calendar
@@ -128,7 +128,7 @@ $kendo-calendar-view-height: ($kendo-calendar-cell-size * 7) !default;
 
 /// Bottom padding of calendar views.
 /// @group calendar
-$kendo-calendar-view-padding-block-end: map.get( $kendo-spacing, 3 ) !default;
+$kendo-calendar-view-padding-block-end: map.get( $kendo-spacing, 1 ) !default;
 /// Spacing between the views in the multiview calendar.
 /// @group calendar
 $kendo-calendar-view-gap: map.get( $kendo-spacing, 4 ) !default;

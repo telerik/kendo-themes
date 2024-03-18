@@ -148,11 +148,6 @@
         justify-content: space-between;
         flex: 0 0 auto;
 
-        .k-title,
-        .k-calendar-title {
-            font-weight: bold;
-        }
-
         .k-calendar-nav {
             display: flex;
             flex-flow: row nowrap;
@@ -185,6 +180,11 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
+
+        .k-today {
+            font-weight: bold;
+        }
+
 
         .k-link {
             @include border-radius( var( --kendo-calendar-cell-border-radius, #{$kendo-calendar-cell-border-radius} ) );

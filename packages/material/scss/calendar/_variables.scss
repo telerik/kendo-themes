@@ -48,6 +48,8 @@ $kendo-calendar-caption-font-size: null !default;
 $kendo-calendar-caption-line-height: null !default;
 $kendo-calendar-caption-font-weight: bold !default;
 
+$kendo-calendar-week-number-font-size: $kendo-font-size-sm !default;
+
 $kendo-calendar-view-width: ($kendo-calendar-cell-size * 8) !default;
 $kendo-calendar-view-height: ($kendo-calendar-cell-size * 7) !default;
 $kendo-calendar-view-gap: k-map-get( $kendo-spacing, 4 ) !default;
