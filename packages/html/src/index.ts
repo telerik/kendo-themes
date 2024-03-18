@@ -72,7 +72,7 @@ export * from './toolbar/index';
 export * from './animation-container';
 export * from './action-sheet/index';
 export * from './dialog/index';
-// export * from './drawer/index';
+export * from './drawer/index';
 export * from './notification/index';
 export * from './popover/index';
 export * from './tooltip/index';

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area .k-drawer-content {
+            padding: 0 20px;
+        }
+
+    </style>
+    <div id="test-area">
+        <div class="k-drawer-container k-drawer-push k-drawer-expanded">
+            <div class="k-drawer k-drawer-start">
+                <div class="k-drawer-wrapper">
+                    <ul class="k-drawer-items">
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star-outline">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Item state: normal</span>
+                        </li>
+                        <li class="k-drawer-item k-hover k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star-outline">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Item state: hover</span>
+                        </li>
+                        <li class="k-drawer-item k-focus k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star-outline">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Item state: focus</span>
+                        </li>
+                        <li class="k-drawer-item k-selected k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star-outline">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Item state: selected</span>
+                        </li>
+                        <li class="k-drawer-item k-disabled k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star-outline">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Item state: disabled</span>
+                        </li>
+                        <li class="k-drawer-item k-hover k-selected k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star-outline">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Item state: selected + hover</span>
+                        </li>
+                        <li class="k-drawer-item k-focus k-selected k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star-outline">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Item state: selected + focus</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="k-drawer-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum assumenda cupiditate.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

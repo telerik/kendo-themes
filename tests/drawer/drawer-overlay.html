@@ -9,237 +9,97 @@
 </head>
 <body id="app" class="k-body">
     <style>
-        #test-area {
-            height: 600px;
-            position: relative;
-        }
         #test-area .k-drawer,
         #test-area .k-overlay {
             position: absolute;
         }
+        #test-area .k-drawer-container:nth-of-type(2) .k-overlay {
+            display: none;
+        }
+        #test-area .k-drawer-content {
+            padding: 0 20px;
+        }
 
     </style>
     <div id="test-area">
-        <div class="k-drawer-container k-drawer-left k-drawer-overlay k-drawer-expanded">
-            <div class="k-widget k-drawer">
+        <div class="k-drawer-container k-drawer-overlay k-drawer-expanded">
+            <div class="k-overlay"></div>
+            <div class="k-drawer k-drawer-start">
                 <div class="k-drawer-wrapper">
-                    <div class="k-drawer-items">
-                        <ul>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Item</span>
-                            </li>
-                            <li class="k-drawer-item k-drawer-separator"></li>
-                            <li class="k-drawer-item k-hover">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Hovered Item</span>
-                            </li>
-                            <li class="k-drawer-item k-selected">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Selected Item</span>
-                            </li>
-                            <li class="k-drawer-item k-selected k-hover">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Selected and hovered item</span>
-                            </li>
-                            <li class="k-drawer-item k-focus">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Focused item</span>
-                            </li>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Collapsed</span>
-                                <span class="k-spacer"></span>
-                                <span class="k-drawer-toggle">
-                                    <span class="k-icon k-svg-icon k-svg-i-chevron-down">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Expanded</span>
-                                <span class="k-spacer"></span>
-                                <span class="k-drawer-toggle">
-                                    <span class="k-icon k-svg-icon k-svg-i-chevron-up">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                </span>
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Child Lvl 1</span>
-                            </li>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                </span>
-                                <span class="k-icon k-svg-icon">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                </span>
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Child Lvl 2</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="k-drawer-items">
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-item-text">Inbox</span>
+                        </li>
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-bell">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M192 416h128c0 35.3-28.7 64-64 64s-64-28.7-64-64m160-256c0-42-26.9-77.6-64.4-90.7.3-1.7.4-3.5.4-5.3 0-17.7-14.3-32-32-32s-32 14.3-32 32c0 1.8.2 3.6.4 5.3C186.9 82.4 160 118 160 160c0 88.4-43 160-96 160v64h384v-64c-53 0-96-71.6-96-160"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Notification</span>
+                        </li>
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Favourites</span>
+                        </li>
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-calendar">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9c-.1-.1-.1-.1 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Calendar</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="k-overlay" style="display: block;"></div>
+            <div class="k-drawer-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum assumenda cupiditate.</p>
+            </div>
         </div>
-        <div class="k-drawer-container k-drawer-right k-drawer-overlay k-drawer-expanded">
-            <div class="k-widget k-drawer">
+        <div class="k-drawer-container k-drawer-overlay k-drawer-expanded">
+            <div class="k-overlay"></div>
+            <div class="k-drawer k-drawer-end">
                 <div class="k-drawer-wrapper">
-                    <div class="k-drawer-items">
-                        <ul>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Item</span>
-                            </li>
-                            <li class="k-drawer-item k-drawer-separator"></li>
-                            <li class="k-drawer-item k-hover">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Hovered Item</span>
-                            </li>
-                            <li class="k-drawer-item k-selected">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Selected Item</span>
-                            </li>
-                            <li class="k-drawer-item k-selected k-hover">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Selected and hovered item</span>
-                            </li>
-                            <li class="k-drawer-item k-focus">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Focused item</span>
-                            </li>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Collapsed</span>
-                                <span class="k-spacer"></span>
-                                <span class="k-drawer-toggle">
-                                    <span class="k-icon k-svg-icon k-svg-i-chevron-down">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Expanded</span>
-                                <span class="k-spacer"></span>
-                                <span class="k-drawer-toggle">
-                                    <span class="k-icon k-svg-icon k-svg-i-chevron-up">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                </span>
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Child Lvl 1</span>
-                            </li>
-                            <li class="k-drawer-item">
-                                <span class="k-icon k-svg-icon">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                </span>
-                                <span class="k-icon k-svg-icon">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
-                                </span>
-                                <span class="k-icon k-svg-icon k-svg-i-star-outline">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M480 202.4 319.1 188 256 32l-63.1 156L32 202.4l122 111.7L117.2 480 256 391.5 394.8 480 358 314.1zM256 353.6l-90.8 57.9 24-108.5-82.1-75.2 108.1-9.7L256 117.3l40.8 100.8 108.1 9.7-82.1 75.2 24.1 108.5z"></path>
-                                    </svg>
-                                </span>
-                                <span class="k-item-text">Child Lvl 2</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="k-drawer-items">
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-item-text">Inbox</span>
+                        </li>
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-bell">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M192 416h128c0 35.3-28.7 64-64 64s-64-28.7-64-64m160-256c0-42-26.9-77.6-64.4-90.7.3-1.7.4-3.5.4-5.3 0-17.7-14.3-32-32-32s-32 14.3-32 32c0 1.8.2 3.6.4 5.3C186.9 82.4 160 118 160 160c0 88.4-43 160-96 160v64h384v-64c-53 0-96-71.6-96-160"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Notification</span>
+                        </li>
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-star">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 391.5 117.2 480 154 314.1 32 202.4 192.9 188 256 32l63.1 156L480 202.4 358 314.1 394.8 480z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Favourites</span>
+                        </li>
+                        <li class="k-drawer-item k-level-0">
+                            <span class="k-icon k-svg-icon k-svg-i-calendar">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 416H288V288h128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32m-32 128H64v255.9l.1.1 383.9-.1zm0-127.9c-.1-.1-.1-.1 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384z"></path>
+                                </svg>
+                            </span>
+                            <span class="k-item-text">Calendar</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="k-overlay" style="display: none;"></div>
+            <div class="k-drawer-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum assumenda cupiditate.</p>
+            </div>
         </div>
-        <h2 style="text-align: center;">Drawer overlay</h2>
-        <div class="k-drawer-content" style="padding: 0px 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum assumenda cupiditate.</div>
     </div>
 </body>
 </html>

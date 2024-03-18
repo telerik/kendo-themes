@@ -6300,6 +6300,336 @@ The following table lists the available variables for customizing the Classic th
 </tbody>
 </table>
 
+### Drawer
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-drawer-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Drawer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Drawer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Drawer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-font-family</td>
+    <td>String</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Drawer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Drawer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.4285714286</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Drawer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-content-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-content-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-scrollbar-width</td>
+    <td>Number</td>
+    <td><code>7px</code></td>
+    <td><code>7px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Drawer scrollbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-scrollbar-color</td>
+    <td>Color</td>
+    <td><code>rgba( 156, 156, 156, .7 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(156, 156, 156, 0.7)"></span><code>rgba(156, 156, 156, 0.7)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Drawer scrollbar track.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-scrollbar-bg</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #dedede"></span><code>#dedede</code></td>
+    <td><span class="color-preview" style="background-color: #dedede"></span><code>#dedede</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer scrollbar thumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-scrollbar-radius</td>
+    <td>Number</td>
+    <td><code>20px</code></td>
+    <td><code>20px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer scrollbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-scrollbar-hover-color</td>
+    <td>Color</td>
+    <td><code>rgba( 156, 156, 156, 1 )</code></td>
+    <td><span class="color-preview" style="background-color: rgb(156, 156, 156)"></span><code>rgb(156, 156, 156)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the Drawer scrollbar track.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-font-size</td>
+    <td>Number</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-lg</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-level-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-drawer-item-padding-x</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer item in each level.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-level-count</td>
+    <td>Number</td>
+    <td><code>5</code></td>
+    <td><code>5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The count of the Drawer item levels.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-icon-padding-x</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-icon-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-mini-initial-width</td>
+    <td>Calculation</td>
+    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-icon-size} )</code></td>
+    <td><code>calc(2 * 16px + 16px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial width of the mini Drawer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-hover-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-hover-bg</code></td>
+    <td><span class="color-preview" style="background-color: #dddddd"></span><code>#dddddd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-hover-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-focus-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-drawer-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-focus-shadow</td>
+    <td>List</td>
+    <td><code>$kendo-list-item-focus-shadow</code></td>
+    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.12)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-selected-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-selected-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f35800"></span><code>#f35800</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-selected-text</td>
+    <td>Color</td>
+    <td><code>$kendo-selected-text</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-selected-hover-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-selected-hover-bg</code></td>
+    <td><span class="color-preview" style="background-color: #e05100"></span><code>#e05100</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-selected-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-selected-hover-text</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered Drawer item.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Dropdowntree
 
 <table class="theme-variables">
