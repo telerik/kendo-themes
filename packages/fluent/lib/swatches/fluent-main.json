@@ -13,5 +13,16 @@
         "#424242"
     ],
     "components": [],
-    "groups": []
+    "groups": [
+        {
+            "name": "New color system",
+            "colorSystem": {
+                "kendo-enable-color-system": {
+                    "name": "New color system",
+                    "type": "boolean",
+                    "value": false
+                }
+            }
+        }
+    ]
 }
