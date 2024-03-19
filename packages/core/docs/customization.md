@@ -540,7 +540,7 @@ k-generate-color-variations($name, $color, $theme) // => Map
                 #{$name}-active: k-color-darken( $color, 10% ),
                 #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 21% ), k-try-tint( $color, 25% )),
                 #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 65% )),
-                on-#{$name}: if( $name == 'base', k-try-shade( $color, 84% ), k-contrast-color( $color )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 84% ), k-contrast-legacy( $color )),
                 #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
             );
 

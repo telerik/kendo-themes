@@ -282,7 +282,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-bg</td>
     <td>Color</td>
-    <td><code>$kendo-base-bg</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base ), $kendo-base-bg)</code></td>
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
@@ -292,7 +292,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-text</td>
     <td>Color</td>
-    <td><code>$kendo-base-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-base ), $kendo-base-text)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
 </tr>
 <tr>
@@ -532,7 +532,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-disabled-bg</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .09 ), k-try-shade( $kendo-body-bg, 12% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), k-try-shade( $kendo-body-bg, 12% ))</code></td>
     <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
 </tr>
 <tr>
@@ -542,7 +542,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-disabled-text</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .32 ), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
