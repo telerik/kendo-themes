@@ -1937,7 +1937,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-button-bg</td>
     <td>Color</td>
-    <td><code>$kendo-base-bg</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base ), $kendo-base-bg)</code></td>
     <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
@@ -1947,7 +1947,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-button-text</td>
     <td>Color</td>
-    <td><code>$kendo-base-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-base ), $kendo-base-text)</code></td>
     <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
