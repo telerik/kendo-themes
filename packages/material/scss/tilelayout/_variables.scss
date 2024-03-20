@@ -27,7 +27,7 @@ $kendo-tile-layout-card-focus-shadow: $kendo-card-focus-shadow !default;
 $kendo-tile-layout-hint-border-width: 1px !default;
 /// The radius of the border around the TileLayout hint.
 /// @group tilelayout
-$kendo-tile-layout-hint-border-radius: $kendo-border-radius-md !default;
+$kendo-tile-layout-hint-border-radius: k-border-radius(md) !default;
 /// The color of the border around the TileLayout hint.
 /// @group tilelayout
 $kendo-tile-layout-hint-border: $kendo-component-border !default;
