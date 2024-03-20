@@ -53,14 +53,7 @@ $kendo-spacing: () !default;
 
 $kendo-sizing: () !default;
 
-$kendo-border-radii: (
-    DEFAULT: .25rem,
-    0: 0,
-    sm: .125rem,
-    md: .25rem,
-    lg: .5rem,
-    full: 9999px
-) !default;
+$kendo-border-radii: () !default;
 
 $kendo-utils: (
 
