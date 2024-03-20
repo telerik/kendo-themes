@@ -6,7 +6,7 @@ $kendo-badge-border-width: 1px !default;
 
 /// The border radius of the Badge.
 /// @group badge
-$kendo-badge-border-radius: $kendo-border-radius-md !default;
+$kendo-badge-border-radius: k-border-radius(md) !default;
 
 
 /// The horizontal padding of the Badge.
