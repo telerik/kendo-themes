@@ -27,4 +27,6 @@ $wcag-min-contrast-ratio: 4.5 !default;
     @include kendo-core--typography--styles();
     // Spacing
     @include kendo-spacing--styles();
+    // Radii
+    @include kendo-border-radius--styles();
 }
