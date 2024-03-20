@@ -25,22 +25,6 @@ $kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
 $kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
 $kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
-/// Border radius for all components.
-$kendo-border-radius: $border-radius !default;
-$kendo-border-radius-sm: $border-radius-sm !default;
-$kendo-border-radius-md: $kendo-border-radius !default;
-$kendo-border-radius-lg: $border-radius-lg !default;
-
-$kendo-border-radii: (
-    DEFAULT: $kendo-border-radius-md,
-    0: 0,
-    sm: $kendo-border-radius-sm,
-    md: $kendo-border-radius-md,
-    lg: $kendo-border-radius-lg,
-    full: 9999px
-) !default;
-
-
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
 $kendo-zindex-loading: 100 !default;
