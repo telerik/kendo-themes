@@ -10,7 +10,7 @@
     }
 
     .k-animation-container {
-        @include border-bottom-radius-only( $kendo-border-radius );
+        @include border-bottom-radius-only( k-border-radius(md) );
     }
 
 }
