@@ -13,6 +13,9 @@
 // Spacing
 @use "./spacing" as *;
 
+// Radii
+@use "./border-radii/" as *;
+
 // Variables
 @forward "./variables";
 
@@ -58,6 +61,9 @@
     $kendo-font-family: $kendo-font-family !default,
     $kendo-font-sizes: $kendo-font-sizes !default,
     $kendo-line-heights: $kendo-line-heights !default,
+    // Radii
+    $_default-border-radii: $kendo-border-radii,
+    $kendo-border-radii: $kendo-border-radii !default
 );
 
 @forward "./color-system/swatch-legacy";

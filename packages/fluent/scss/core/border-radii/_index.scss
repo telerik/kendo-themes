@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "@progress/kendo-theme-core/scss/spacing/index.import.scss" as *;
+
+$kendo-border-radius-none: map.get($kendo-spacing, 0) !default;
+$kendo-border-radius-xs: map.get($kendo-spacing, 1px) !default;
+$kendo-border-radius-sm: map.get($kendo-spacing, 0.5) !default;
+$kendo-border-radius-md: map.get($kendo-spacing, 1) !default;
+$kendo-border-radius-lg: map.get($kendo-spacing, 2) !default;
+$kendo-border-radius-xl: map.get($kendo-spacing, 3) !default;
+$kendo-border-radius-xxl: map.get($kendo-spacing, 4) !default;
+$kendo-border-radius-xxxl: map.get($kendo-spacing, 5) !default;
+
+$_default-border-radii: (
+    none: $kendo-border-radius-none,
+    xs: $kendo-border-radius-xs,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
+    lg: $kendo-border-radius-lg,
+    xl: $kendo-border-radius-xl,
+    xxl: $kendo-border-radius-xxl,
+    xxxl: $kendo-border-radius-xxxl
+) !default;
+
+$kendo-border-radii: $_default-border-radii !default;

@@ -64,7 +64,7 @@ $kendo-scheduler-footer-gradient: null !default; // $kendo-toolbar-gradient
 
 /// Border radius of the scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-scheduler-event-border-radius: k-border-radius(md) !default;
 /// Line height of the scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-line-height: $kendo-scheduler-line-height !default;

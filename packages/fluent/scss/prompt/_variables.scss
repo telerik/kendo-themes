@@ -52,7 +52,7 @@ $kendo-prompt-suggestion-padding-y: k-spacing(2) !default;
 $kendo-prompt-suggestion-padding-x: k-spacing(2) !default;
 /// The border radius of the Prompt suggestion container.
 /// @group prompt
-$kendo-prompt-suggestion-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-prompt-suggestion-border-radius: k-border-radius(md) !default;
 /// The text color of the Prompt suggestion container.
 /// @group prompt
 $kendo-prompt-suggestion-text: var( --kendo-component-text, initial ) !default;

@@ -13,7 +13,7 @@ $kendo-card-padding-y: k-spacing(3) !default;
 $kendo-card-border-width: 0px !default;
 /// The border radius of the Card.
 /// @group card
-$kendo-card-border-radius: $kendo-border-radius-md !default;
+$kendo-card-border-radius: k-border-radius(md) !default;
 /// The inner border radius of the Card.
 /// @group card
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
