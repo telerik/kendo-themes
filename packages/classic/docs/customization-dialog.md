@@ -105,7 +105,7 @@ The following table lists the available variables for customization.
     "light": k-map-get($kendo-theme-colors, "light"),
     "dark": k-map-get($kendo-theme-colors, "dark")
 )</code></td>
-    <td><code>("primary": #f35800, "light": #ebebeb, "dark": #404040)</code></td>
+    <td><code>("primary": var(--kendo-color-primary, #f35800), "light": var(--kendo-color-light, #ebebeb), "dark": var(--kendo-color-dark, #404040))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Dialog.</div></div>
