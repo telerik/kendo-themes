@@ -373,7 +373,7 @@
     // Appointments
     kendo-scheduler .k-event,
     .k-event {
-        @include border-radius( $kendo-border-radius );
+        @include border-radius( k-border-radius(md) );
         min-height: $kendo-scheduler-event-min-height;
         box-sizing: border-box;
         border-width: 0;

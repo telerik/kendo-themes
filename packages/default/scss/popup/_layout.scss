@@ -20,7 +20,7 @@
         }
     }
     .k-animation-container {
-        @include border-bottom-radius-only( $kendo-border-radius-md );
+        @include border-bottom-radius-only( k-border-radius(md) );
     }
 
     .k-animation-container-shown {

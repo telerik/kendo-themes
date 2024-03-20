@@ -89,7 +89,7 @@ $kendo-breadcrumb-lg-link-padding-y: k-spacing(2) !default;
 
 /// The border-radius of the Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-border-radius: $kendo-border-radius-md !default;
+$kendo-breadcrumb-link-border-radius: k-border-radius(md) !default;
 
 /// The vertical padding of the Breadcrumb link icon.
 /// @group breadcrumb

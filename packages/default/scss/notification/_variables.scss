@@ -15,7 +15,7 @@ $kendo-notification-padding-y: k-spacing(1) !default;
 $kendo-notification-border-width: 1px !default;
 /// The border radius of the Notification.
 /// @group notification
-$kendo-notification-border-radius: $kendo-border-radius-md !default;
+$kendo-notification-border-radius: k-border-radius(md)!default;
 /// The font family of the Notification.
 /// @group notification
 $kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;

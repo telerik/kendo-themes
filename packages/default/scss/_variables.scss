@@ -39,29 +39,6 @@ $kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
 /// @group common
 $kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
-/// Border radius for all components.
-/// @group common
-$kendo-border-radius: 4px !default; // TODO update this value with the radii module
-/// Small border radius.
-/// @group common
-$kendo-border-radius-sm: $kendo-border-radius - 2px !default; // TODO update this value with the radii module
-/// Medium border radius.
-/// @group common
-$kendo-border-radius-md: $kendo-border-radius !default;
-/// Large border radius.
-/// @group common
-$kendo-border-radius-lg: $kendo-border-radius + 2px !default; // TODO update this value with the radii module
-
-$kendo-border-radii: (
-    DEFAULT: $kendo-border-radius-md,
-    0: 0,
-    sm: $kendo-border-radius-sm,
-    md: $kendo-border-radius-md,
-    lg: $kendo-border-radius-lg,
-    full: 9999px
-) !default;
-
-
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
 $kendo-zindex-loading: 100 !default;

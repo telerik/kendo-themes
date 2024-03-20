@@ -81,7 +81,7 @@
     }
 
     .k-chart-tooltip {
-        @include border-radius( $kendo-border-radius-md );
+        @include border-radius( k-border-radius(md) );
         font-size: $kendo-chart-tooltip-font-size;
         line-height: var( --kendo-line-height, normal );
         padding-block: $kendo-tooltip-padding-y;
@@ -191,7 +191,7 @@
     }
 
     .k-navigator-hint .k-scroll {
-        @include border-radius( $kendo-border-radius-md );
+        @include border-radius( k-border-radius(md) );
         position: absolute;
         height: 4px;
     }
@@ -400,7 +400,7 @@
         base: $kendo-base-bg,
         background: $kendo-chart-bg,
 
-        border-radius: $kendo-border-radius-md,
+        border-radius: k-border-radius(md),
 
         normal-background: $kendo-base-bg,
         normal-text-color: $kendo-base-text,

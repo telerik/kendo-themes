@@ -1,6 +1,6 @@
 // Listgroup
 $kendo-listgroup-border-width: 1px !default;
-$kendo-listgroup-border-radius: $kendo-border-radius-md !default;
+$kendo-listgroup-border-radius: k-border-radius(md) !default;
 
 $kendo-listgroup-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-listgroup-line-height: var( --kendo-line-height, normal ) !default;
