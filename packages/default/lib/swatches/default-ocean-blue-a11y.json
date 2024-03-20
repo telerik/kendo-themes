@@ -20,7 +20,7 @@
                 "kendo-enable-color-system": {
                     "name": "New color system",
                     "type": "boolean",
-                    "value": false
+                    "value": true
                 }
             }
         },
@@ -865,16 +865,6 @@
             "name": "Contrast improvements",
             "hidden": true,
             "variables": {
-                "kendo-taskboard-column-focus-border": {
-                    "name": "TaskBoard column focus border",
-                    "type": "color",
-                    "value": "#424242"
-                },
-                "kendo-color-editor-color-gradient-focus-outline-color": {
-                    "name": "ColorEditor gradient focus outline color",
-                    "type": "color",
-                    "value": "#424242"
-                },
                 "kendo-scheduler-event-bg": {
                     "name": "Scheduler event background",
                     "type": "color",
@@ -896,6 +886,36 @@
                     "name": "Input clear value button opacity",
                     "type": "number",
                     "value": "80%"
+                },
+                "kendo-taskboard-column-focus-border": {
+                    "name": "TaskBoard column focus border",
+                    "type": "color",
+                    "value": "#424242"
+                },
+                "kendo-color-editor-color-gradient-focus-outline-color": {
+                    "name": "ColorEditor gradient focus outline color",
+                    "type": "color",
+                    "value": "#424242"
+                },
+                "kendo-panelbar-header-hover-bg": {
+                    "name": "Panelbar header hover background color",
+                    "type": "color",
+                    "value": "#f5f5f5"
+                },
+                "kendo-panelbar-item-hover-bg": {
+                    "name": "Panelbar item hover background color",
+                    "type": "color",
+                    "value": "#f5f5f5"
+                },
+                "kendo-table-hover-bg": {
+                    "name": "Table hover background color",
+                    "type": "color",
+                    "value": "#ededed"
+                },
+                "kendo-table-alt-row-bg": {
+                    "name": "Table alt row background color",
+                    "type": "color",
+                    "value": "rgba( 0, 0, 0, .04 )"
                 }
             }
         }
