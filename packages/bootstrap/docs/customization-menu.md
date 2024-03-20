@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-popup-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the menu popup.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-popup-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the menu popup.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-popup-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the menu popup.</div></div>
@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-list-item-hover-bg</code></td>
-    <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
+    <td><code>var(--kendo-color-base-subtle-hover, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered menu item in popup.</div></div>
@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-list-item-hover-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered menu item in popup.</div></div>
@@ -259,9 +259,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-expanded-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-list-item-selected-bg</code></td>
-    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of expanded menu item in popup.</div></div>
@@ -269,9 +269,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-expanded-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-list-item-selected-text</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of expanded menu item in popup.</div></div>
@@ -301,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-menu-popup-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-menu-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px rgba(33, 37, 41, 0.15)</code></td>
+    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused menu item in popup.</div></div>

@@ -269,9 +269,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-column-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $gray-900, $gray-100 ))</code></td>
-    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard column.</div></div>
@@ -319,9 +319,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-column-focus-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-base-border, 2.5 ))</code></td>
-    <td><span class="color-preview" style="background-color: #b6b7b8"></span><code>#b6b7b8</code></td>
+    <td><code>var(--kendo-color-border-alt, #ced4da)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TaskBoard column.</div></div>
@@ -379,9 +379,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-column-header-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-header-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard column header.</div></div>
@@ -459,9 +459,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-pane-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard pane.</div></div>
@@ -469,9 +469,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-pane-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard pane.</div></div>
@@ -479,9 +479,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-pane-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard pane.</div></div>
@@ -519,9 +519,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-pane-header-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-header-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard pane header.</div></div>
@@ -609,9 +609,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-card-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-card-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Card.</div></div>
@@ -619,9 +619,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-card-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-card-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard Card.</div></div>
@@ -629,9 +629,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-card-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-card-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Card.</div></div>
@@ -659,9 +659,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-card-hover-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-taskboard-card-border, 10% ))</code></td>
-    <td><span class="color-preview" style="background-color: #c8cbcf"></span><code>#c8cbcf</code></td>
+    <td><code>var(--kendo-color-border-alt, #ced4da)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered TaskBoard Card.</div></div>
@@ -669,9 +669,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-card-focus-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-taskboard-card-border, 18% ))</code></td>
-    <td><span class="color-preview" style="background-color: #b6b9bd"></span><code>#b6b9bd</code></td>
+    <td><code>var(--kendo-color-border-alt, #ced4da)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused TaskBoard Card.</div></div>
@@ -689,9 +689,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-card-selected-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-tint( $kendo-color-primary-lighter, 8 ))</code></td>
-    <td><span class="color-preview" style="background-color: #b6d3fe"></span><code>#b6d3fe</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, #6ea8fe)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the selected TaskBoard Card.</div></div>
@@ -709,9 +709,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TaskBoard Card header text.</div></div>
@@ -759,9 +759,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 10%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .1 ))</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span><code>rgba(0, 0, 0, 0.1)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 10%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Card placeholder.</div></div>
@@ -769,9 +769,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-taskboard-drag-placeholder-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TaskBoard Card placeholder.</div></div>

@@ -85,7 +85,7 @@ The following table lists the available variables for customization.
     <td>$kendo-avatar-theme-colors</td>
     <td>Map</td>
     <td><code>$kendo-theme-colors</code></td>
-    <td><code>("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)</code></td>
+    <td><code>("primary": var(--kendo-color-primary, #0d6efd), "secondary": var(--kendo-color-secondary, #6c757d), "tertiary": var(--kendo-color-tertiary, #6f42c1), "info": var(--kendo-color-info, #0dcaf0), "success": var(--kendo-color-success, #146c43), "warning": var(--kendo-color-warning, #ffc107), "error": var(--kendo-color-error, #dc3545), "dark": var(--kendo-color-dark, #212529), "light": var(--kendo-color-light, #f8f9fa), "inverse": var(--kendo-color-dark, #212529))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Avatar.</div></div>
