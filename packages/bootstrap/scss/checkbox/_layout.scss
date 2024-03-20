@@ -7,13 +7,13 @@
 
     // Override inherited bootstrap border radius
     .k-checkbox.k-rounded-sm {
-        border-radius: k-math-div( $kendo-border-radius-sm, 2 );
+        border-radius: calc( #{k-border-radius(sm)} / 2 );
     }
     .k-checkbox.k-rounded-md {
-        border-radius: $kendo-border-radius-sm;
+        border-radius: k-border-radius(sm);
     }
     .k-checkbox.k-rounded-lg {
-        border-radius: $kendo-border-radius-md;
+        border-radius: k-border-radius(md);
     }
 
 }

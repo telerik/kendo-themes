@@ -14,6 +14,9 @@ $wcag-min-contrast-ratio: 4.5 !default;
 // Spacing
 @import "./spacing/index.import.scss";
 
+// Radii
+@import "./border-radii/index.import.scss";
+
 @import "@progress/kendo-theme-core/scss/index.import.scss";
 
 // Backward compatibility
@@ -29,4 +32,6 @@ $wcag-min-contrast-ratio: 4.5 !default;
     @include kendo-core--typography--styles();
     // Spacing
     @include kendo-spacing--styles();
+    // Radii
+    @include kendo-border-radius--styles();
 }

@@ -27,7 +27,7 @@
         }
 
         .k-context-menu {
-            @include border-radius( $kendo-border-radius-md );
+            @include border-radius( k-border-radius(md) );
         }
 
         .k-header {

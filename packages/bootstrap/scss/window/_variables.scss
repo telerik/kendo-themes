@@ -7,7 +7,7 @@
 $kendo-window-border-width: 1px !default;
 /// The border radius of the Window.
 /// @group window
-$kendo-window-border-radius: $kendo-border-radius-md !default;
+$kendo-window-border-radius: k-border-radius(md) !default;
 /// The font family of the Window.
 /// @group window
 $kendo-window-font-family: var( --kendo-font-family, inherit ) !default;
