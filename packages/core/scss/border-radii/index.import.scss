@@ -1,0 +1,41 @@
+$kendo-border-radius-none: k-map-get($kendo-spacing, 0) !default;
+$kendo-border-radius-xs: k-map-get($kendo-spacing, 1px) !default;
+$kendo-border-radius-sm: k-map-get($kendo-spacing, 0.5) !default;
+$kendo-border-radius-md: k-map-get($kendo-spacing, 1) !default;
+$kendo-border-radius-lg: k-map-get($kendo-spacing, 1.5) !default;
+$kendo-border-radius-xl: k-map-get($kendo-spacing, 2) !default;
+$kendo-border-radius-xxl: k-map-get($kendo-spacing, 3) !default;
+$kendo-border-radius-xxxl: k-map-get($kendo-spacing, 4) !default;
+$kendo-border-radius-full: 9999px !default;
+
+
+$_default-border-radii: (
+    none: $kendo-border-radius-none,
+    xs: $kendo-border-radius-xs,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
+    lg: $kendo-border-radius-lg,
+    xl: $kendo-border-radius-xl,
+    xxl: $kendo-border-radius-xxl,
+    xxxl: $kendo-border-radius-xxxl,
+    full: $kendo-border-radius-full
+
+) !default;
+
+$kendo-border-radii: $_default-border-radii !default;
+
+$kendo-border-radii: k-map-merge($_default-border-radii, $kendo-border-radii);
+
+
+@function k-border-radius($key) {
+    $_border-radius: k-map-get($kendo-border-radii, $key);
+    @return var(--kendo-border-radius-#{$key}, $_border-radius);
+}
+
+@mixin kendo-border-radius--styles() {
+    :root {
+        @each $key, $value in $kendo-border-radii {
+            --kendo-border-radius-#{$key}: #{$value};
+        }
+    }
+}
