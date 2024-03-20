@@ -75,7 +75,7 @@
     // Panels
     .k-block,
     .k-panel {
-        @include border-radius( $kendo-border-radius-md );
+        @include border-radius( k-border-radius(md) );
         @include fill(
             $kendo-component-text,
             $kendo-component-bg,
@@ -87,7 +87,7 @@
         box-sizing: border-box;
 
         > .k-header {
-            @include border-top-radius( $kendo-border-radius-md );
+            @include border-top-radius( k-border-radius(md) );
             @include fill(
                 $kendo-component-header-text,
                 $kendo-component-header-bg,

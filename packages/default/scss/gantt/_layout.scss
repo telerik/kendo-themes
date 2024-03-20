@@ -533,7 +533,7 @@
     // Single task
     .k-single-wrap {}
     .k-task-single {
-        @include border-radius( $kendo-border-radius-md );
+        @include border-radius( k-border-radius(md) );
         border-width: $kendo-gantt-task-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -566,7 +566,7 @@
         }
     }
     .k-task-complete {
-        @include border-radius( $kendo-border-radius-md );
+        @include border-radius( k-border-radius(md) );
         width: 20%;
         position: absolute;
         z-index: 1;
