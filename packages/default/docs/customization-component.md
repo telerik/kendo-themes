@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-component-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-body-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-component-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-body-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-component-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>rgba(if($kendo-is-dark-theme, $kendo-color-white, $kendo-color-black), 0.08)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-component-header-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-base-bg</code></td>
-    <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
+    <td><code>var(--kendo-color-surface, #fafafa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the component header.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-component-header-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-base-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the component header.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-component-header-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-base-border</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the component header.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-invalid-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-error</code></td>
-    <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
+    <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the invalid items.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-invalid-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-error</code></td>
-    <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
+    <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the invalid items.</div></div>
