@@ -1,0 +1,23 @@
+$kendo-border-radius: $border-radius !default;
+$kendo-border-radius-xs: k-map-get($kendo-spacing, 0.5) !default;
+$kendo-border-radius-sm: $border-radius-sm !default;
+$kendo-border-radius-md: $kendo-border-radius !default;
+$kendo-border-radius-lg: $border-radius-lg !default;
+$kendo-border-radius-xl: k-map-get($kendo-spacing, 3) !default;
+$kendo-border-radius-xxl: k-map-get($kendo-spacing, 4) !default;
+$kendo-border-radius-xxxl: k-map-get($kendo-spacing, 8) !default;
+$kendo-border-radius-full: 50rem !default;
+
+
+$kendo-border-radii: (
+    xs: $kendo-border-radius-xs,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
+    lg: $kendo-border-radius-lg,
+    xl: $kendo-border-radius-xl,
+    xxl: $kendo-border-radius-xxl,
+    xxxl: $kendo-border-radius-xxxl,
+    full: $kendo-border-radius-full
+) !default;
+
+@import "@progress/kendo-theme-core/scss/border-radii/index.import.scss";

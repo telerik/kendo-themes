@@ -1,4 +1,5 @@
 @import "@progress/kendo-theme-default/scss/checkbox/_layout.scss";
+@import "../core/border-radii/index.import.scss";
 
 
 @mixin kendo-checkbox--layout() {
@@ -7,13 +8,13 @@
 
     // Override inherited bootstrap border radius
     .k-checkbox.k-rounded-sm {
-        border-radius: k-math-div( $kendo-border-radius-sm, 2 );
+        border-radius: calc( var(--kendo-border-radius-sm, 0) / 2 );
     }
     .k-checkbox.k-rounded-md {
-        border-radius: $kendo-border-radius-sm;
+        border-radius: k-border-radius(sm);
     }
     .k-checkbox.k-rounded-lg {
-        border-radius: $kendo-border-radius-md;
+        border-radius: k-border-radius(md);
     }
 
 }

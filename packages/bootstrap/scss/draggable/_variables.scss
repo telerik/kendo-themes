@@ -2,7 +2,7 @@
 $kendo-drag-hint-padding-x: $btn-padding-x !default;
 $kendo-drag-hint-padding-y: $btn-padding-y !default;
 $kendo-drag-hint-border-width: 1px !default;
-$kendo-drag-hint-border-radius: $kendo-border-radius-md !default;
+$kendo-drag-hint-border-radius: k-border-radius(md) !default;
 $kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-drag-hint-font-family: var( --kendo-font-family, inherit )!default;
 $kendo-drag-hint-line-height: var( --kendo-line-height, normal ) !default;
