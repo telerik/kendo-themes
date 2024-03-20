@@ -55,7 +55,7 @@ $kendo-tabstrip-item-padding-y: calc( #{k-spacing(2)} + #{k-spacing(1)} ) !defau
 $kendo-tabstrip-item-border-width: 0px !default;
 /// The border radius of the tabstrip item
 /// @group tabstrip
-$kendo-tabstrip-item-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-tabstrip-item-border-radius: k-border-radius(md) !default;
 /// The gap between the tabstrip items
 /// @group tabstrip
 $kendo-tabstrip-item-gap: k-spacing(2) !default;

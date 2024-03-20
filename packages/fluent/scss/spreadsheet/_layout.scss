@@ -530,7 +530,7 @@
         box-sizing: border-box;
     }
     .k-spreadsheet-filter {
-        @include border-radius( $kendo-border-radius );
+        @include border-radius( k-border-radius(md) );
         padding: var( --kendo-padding-y, #{$kendo-padding-md-y} );
         line-height: 1;
         position: absolute;

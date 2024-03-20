@@ -199,7 +199,7 @@ $kendo-pivotgrid-calculated-field-padding-y: $kendo-pivotgrid-spacer !default;
 $kendo-pivotgrid-calculated-field-border-width: 1px !default;
 /// Border radius of the PivotGrid calculated field.
 /// @group pivotgrid
-$kendo-pivotgrid-calculated-field-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-pivotgrid-calculated-field-border-radius: k-border-radius(md) !default;
 /// Spacing of the PivotGrid calculated field.
 /// @group pivotgrid
 $kendo-pivotgrid-calculated-field-gap: $kendo-pivotgrid-spacer !default;

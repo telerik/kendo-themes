@@ -2,7 +2,7 @@
 
 /// Border radius of the color preview.
 /// @group color-preview
-$kendo-color-preview-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-color-preview-border-radius: k-border-radius(md) !default;
 /// Border width of the color preview.
 /// @group color-preview
 $kendo-color-preview-border-width: 1px !default;

@@ -3,7 +3,7 @@
 
 /// The border radius of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-border-radius: $kendo-border-radius !default;
+$kendo-tooltip-border-radius: k-border-radius(md) !default;
 /// The horizontal padding of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-padding-x: k-spacing(2) !default;

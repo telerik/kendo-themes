@@ -40,7 +40,7 @@
 
     // Inline editor
     .k-editor-inline {
-        @include border-radius( $kendo-border-radius-md );
+        @include border-radius( k-border-radius(md) );
         padding-block: $kendo-padding-sm-y;
         padding-inline: $kendo-padding-sm-x;
         border: 1px solid transparent;
@@ -414,7 +414,7 @@
             white-space: nowrap;
             overflow: hidden;
             cursor: pointer;
-            @include border-radius( $kendo-border-radius-md );
+            @include border-radius( k-border-radius(md) );
 
             .k-i-file,
             .k-i-folder {
