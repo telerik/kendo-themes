@@ -91,7 +91,7 @@ $kendo-loader-container-panel-border-style: solid !default;
 $kendo-loader-container-panel-border-color: var( --kendo-component-border, initial ) !default;
 /// The border radius of the container panel.
 /// @group loader
-$kendo-loader-container-panel-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-loader-container-panel-border-radius: k-border-radius(md) !default;
 /// The background color of the container panel.
 /// @group loader
 $kendo-loader-container-panel-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;

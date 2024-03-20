@@ -66,7 +66,7 @@ $kendo-taskboard-column-width: 320px !default;
 $kendo-taskboard-column-border-width: 1px !default;
 /// The border radius of the TaskBoard column.
 /// @group taskboard
-$kendo-taskboard-column-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-taskboard-column-border-radius: k-border-radius(md) !default;
 /// The background color of the TaskBoard column.
 /// @group taskboard
 $kendo-taskboard-column-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;

@@ -12,7 +12,7 @@ $kendo-popup-padding-y: k-spacing(0) !default;
 $kendo-popup-border-width: 0 !default;
 /// Border radius of the popup.
 /// @group popup
-$kendo-popup-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-popup-border-radius: k-border-radius(md) !default;
 
 /// Font size of the popup.
 /// @group popup

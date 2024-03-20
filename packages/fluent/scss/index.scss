@@ -348,6 +348,8 @@
 
     // Core typography
     @include kendo-core--typography--styles();
+    // Radii
+    @include kendo-border-radius--styles();
 
     // Typography and utils
     @include typography-styles();

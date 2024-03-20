@@ -5,11 +5,11 @@
 $kendo-skeleton-text-transform: scale( 1, .6 ) !default;
 /// The border radius of the Skeleton text.
 /// @group skeleton
-$kendo-skeleton-text-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-skeleton-text-border-radius: k-border-radius(md) !default;
 
 /// The border radius of the rectangular Skeleton.
 /// @group skeleton
-$kendo-skeleton-rect-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-skeleton-rect-border-radius: k-border-radius(md) !default;
 
 /// The border radius of the circular Skeleton.
 /// @group skeleton
