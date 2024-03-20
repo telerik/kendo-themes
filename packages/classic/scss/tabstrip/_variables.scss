@@ -33,7 +33,7 @@ $kendo-tabstrip-item-padding-y: k-spacing(1) !default;
 $kendo-tabstrip-item-border-width: 1px !default;
 /// Border radius of tabs
 /// @group tabstrip
-$kendo-tabstrip-item-border-radius: $kendo-border-radius-md !default;
+$kendo-tabstrip-item-border-radius: k-border-radius(md) !default;
 /// Spacing between tabs
 /// @group tabstrip
 $kendo-tabstrip-item-gap: k-spacing(0) !default;
