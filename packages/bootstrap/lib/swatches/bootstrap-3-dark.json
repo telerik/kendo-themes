@@ -19,7 +19,7 @@
                 "kendo-enable-color-system": {
                     "name": "New color system",
                     "type": "boolean",
-                    "value": false
+                    "value": true
                 }
             }
         },
