@@ -128,9 +128,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tables.</div></div>
@@ -138,9 +138,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tables.</div></div>
@@ -148,9 +148,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tables.</div></div>
@@ -158,9 +158,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-header-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table headers.</div></div>
@@ -168,9 +168,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-header-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-header-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table headers.</div></div>
@@ -178,9 +178,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-header-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-header-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table headers.</div></div>
@@ -198,9 +198,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-footer-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table footers.</div></div>
@@ -208,9 +208,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-footer-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-table-header-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table footers.</div></div>
@@ -218,9 +218,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-footer-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-table-header-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table footers.</div></div>
@@ -228,9 +228,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-group-row-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group rows in table.</div></div>
@@ -238,9 +238,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-group-row-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-table-header-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of group rows in table.</div></div>
@@ -248,9 +248,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-group-row-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-table-header-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of group rows in table.</div></div>
@@ -258,9 +258,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-alt-row-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 5%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .04 ))</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 5%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in table.</div></div>
@@ -288,9 +288,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .08 ))</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 9%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in table.</div></div>
@@ -358,9 +358,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-selected-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
-    <td><span class="color-preview" style="background-color: rgba(13, 110, 253, 0.25)"></span><code>rgba(13, 110, 253, 0.25)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in table.</div></div>
@@ -368,9 +368,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-table-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-table-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in table.</div></div>
