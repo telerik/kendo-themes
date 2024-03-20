@@ -42,7 +42,7 @@ $kendo-bottom-nav-item-max-width: null !default;
 $kendo-bottom-nav-item-min-height: calc( #{$kendo-icon-size * 2.5} + calc( #{$kendo-padding-md-x} * 2 ) - calc( #{$kendo-bottom-nav-padding-x} * 2 ) ) !default;
 /// The border radius of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-border-radius: $kendo-border-radius-md !default;
+$kendo-bottom-nav-item-border-radius: k-border-radius(md) !default;
 /// The spacing of the BottomNavigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-gap: 0 k-spacing(1) !default;
