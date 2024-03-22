@@ -278,9 +278,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the List component.</div></div>
@@ -288,9 +288,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List component.</div></div>
@@ -298,9 +298,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
+    <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the List component.</div></div>
@@ -368,9 +368,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-hover-bg</code></td>
-    <td><span class="color-preview" style="background-color: #dddddd"></span><code>#dddddd</code></td>
+    <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered List items.</div></div>
@@ -378,9 +378,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-hover-text</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered List items.</div></div>
@@ -418,9 +418,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-selected-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-selected-bg</code></td>
-    <td><span class="color-preview" style="background-color: #f35800"></span><code>#f35800</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected List items.</div></div>
@@ -428,9 +428,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-selected-text</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected List items.</div></div>
@@ -478,9 +478,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-no-data-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><span class="color-preview" style="background-color: #646464"></span><code>#646464</code></td>
+    <td><code>var(--kendo-color-subtle, #666666)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the 'No Data' text.</div></div>
@@ -488,9 +488,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-option-label-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><span class="color-preview" style="background-color: #646464"></span><code>#646464</code></td>
+    <td><code>var(--kendo-color-subtle, #666666)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the 'Option Label' text.</div></div>

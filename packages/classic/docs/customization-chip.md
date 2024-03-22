@@ -248,9 +248,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-base-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-bg</code></td>
-    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
+    <td><code>var(--kendo-color-base, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Chip.</div></div>
@@ -266,7 +266,7 @@ The following table lists the available variables for customization.
     "warning": k-map-get( $kendo-theme-colors, "warning" ),
     "success": k-map-get( $kendo-theme-colors, "success" )
 )</code></td>
-    <td><code>("base": #f0f0f0, "error": #d92800, "info": #2498bc, "warning": #ff9800, "success": #3ea44e)</code></td>
+    <td><code>("base": var(--kendo-color-base, #ebebeb), "error": var(--kendo-color-error, #d92800), "info": var(--kendo-color-info, #007bc3), "warning": var(--kendo-color-warning, #ffa41f), "success": var(--kendo-color-success, #3ea44e))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Chip.</div></div>
@@ -274,9 +274,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-solid-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-chip-base-bg</code></td>
-    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
+    <td><code>var(--kendo-color-base, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the solid Chip.</div></div>
@@ -284,9 +284,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-solid-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-text</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-base, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the solid Chip.</div></div>
@@ -294,9 +294,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-solid-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-border</code></td>
-    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
+    <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the solid Chip.</div></div>
@@ -306,7 +306,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 16%, transparent), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, 0.16)</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
@@ -314,9 +314,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-solid-gradient</td>
-    <td>List</td>
+    <td>Null</td>
     <td><code>$kendo-button-gradient</code></td>
-    <td><code>rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of the solid Chip.</div></div>
@@ -344,9 +344,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-solid-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-hover-bg</code></td>
-    <td><span class="color-preview" style="background-color: #dddddd"></span><code>#dddddd</code></td>
+    <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered solid Chip.</div></div>
@@ -364,9 +364,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-solid-selected-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-active-bg</code></td>
-    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
+    <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected solid Chip</div></div>
@@ -384,9 +384,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-outline-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the outline Chip.</div></div>
@@ -394,9 +394,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-outline-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-chip-solid-text</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-base, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the outline Chip.</div></div>
@@ -404,9 +404,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-outline-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-chip-outline-text</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-base, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the outline Chip.</div></div>
@@ -416,7 +416,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 16%, transparent), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ))</code></td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, 0.16)</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>
@@ -424,9 +424,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-outline-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-chip-outline-text</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-base, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered outline Chip.</div></div>
@@ -434,9 +434,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-legacy( $kendo-chip-outline-hover-bg ))</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-base-subtle, #f0f0f0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the hovered outline Chip.</div></div>
@@ -444,9 +444,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-outline-selected-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-chip-outline-hover-bg</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-base, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected outline Chip.</div></div>
@@ -454,9 +454,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-outline-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-chip-outline-hover-text</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-base-subtle, #f0f0f0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected outline Chip.</div></div>
