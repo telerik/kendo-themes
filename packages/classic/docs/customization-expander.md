@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ExpansionPanel.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
+    <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ExpansionPanel.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-header-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-expander-text</code></td>
-    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel header.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-header-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-color-shade( $kendo-expander-bg, 1 ))</code></td>
-    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
+    <td><code>var(--kendo-color-base-subtle-hover, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered ExpansionPanel header.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-title-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #f35800"></span><code>#f35800</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel title.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-expander-header-sub-title-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><span class="color-preview" style="background-color: #646464"></span><code>#646464</code></td>
+    <td><code>var(--kendo-color-subtle, #666666)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ExpansionPanel sub-title.</div></div>
