@@ -93,9 +93,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 38%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .38 ))</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 38%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is not checked.</div></div>
@@ -263,9 +263,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white ))</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is not checked.</div></div>
@@ -343,9 +343,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 54%, transparent), rgba( $kendo-color-primary, .54 ))</code></td>
-    <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.54)"></span><code>rgba(63, 81, 181, 0.54)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 54%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is checked.</div></div>
@@ -513,9 +513,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #3f51b5"></span><code>#3f51b5</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is checked.</div></div>

@@ -185,9 +185,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-border</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 54%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the RadioButton.</div></div>
@@ -235,9 +235,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-checked-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #3f51b5"></span><code>#3f51b5</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked RadioButton.</div></div>
@@ -245,9 +245,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-checked-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-radio-checked-text</code></td>
-    <td><span class="color-preview" style="background-color: #3f51b5"></span><code>#3f51b5</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the checked RadioButton.</div></div>
@@ -315,9 +315,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-disabled-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-disabled-border</code></td>
-    <td><span class="color-preview" style="background-color: #adadad"></span><code>#adadad</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled RadioButton.</div></div>
@@ -335,9 +335,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-disabled-checked-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-radio-disabled-border</code></td>
-    <td><span class="color-preview" style="background-color: #adadad"></span><code>#adadad</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the disabled and checked RadioButton.</div></div>
@@ -345,9 +345,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-disabled-checked-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-radio-disabled-border</code></td>
-    <td><span class="color-preview" style="background-color: #adadad"></span><code>#adadad</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled and checked RadioButton.</div></div>
@@ -365,9 +365,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-invalid-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-invalid-text</code></td>
-    <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
+    <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the invalid RadioButton.</div></div>
@@ -375,9 +375,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-invalid-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-invalid-border</code></td>
-    <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
+    <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid RadioButton.</div></div>
@@ -417,7 +417,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-checked-image</td>
     <td>String</td>
     <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )</code></td>
-    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='%233f51b5'/%3e%3c/svg%3e")</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='var%28--kendo-color-primary, %233f51b5%29'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the checked RadioButton indicator.</div></div>
@@ -427,7 +427,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-disabled-checked-image</td>
     <td>String</td>
     <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-disabled-checked-text}'/></svg>") )</code></td>
-    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='%23adadad'/%3e%3c/svg%3e")</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='var%28--kendo-color-base-emphasis, %23adadad%29'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the disabled and checked RadioButton indicator.</div></div>
@@ -475,9 +475,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-ripple-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #3f51b5"></span><code>#3f51b5</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple..</div></div>

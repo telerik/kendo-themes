@@ -273,7 +273,7 @@ The following table lists the available variables for customization.
     $kendo-theme-colors,
     ( "base": if($kendo-enable-color-system, k-color( base ), #e4e7eb) )
 )</code></td>
-    <td><code>("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529, "base": #e4e7eb)</code></td>
+    <td><code>("primary": var(--kendo-color-primary, #0d6efd), "secondary": var(--kendo-color-secondary, #6c757d), "tertiary": var(--kendo-color-tertiary, #6f42c1), "info": var(--kendo-color-info, #0dcaf0), "success": var(--kendo-color-success, #146c43), "warning": var(--kendo-color-warning, #ffc107), "error": var(--kendo-color-error, #dc3545), "dark": var(--kendo-color-dark, #212529), "light": var(--kendo-color-light, #f8f9fa), "inverse": var(--kendo-color-dark, #212529), "base": var(--kendo-color-base, #dee2e6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>
@@ -281,9 +281,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base ), #e4e7eb)</code></td>
-    <td><span class="color-preview" style="background-color: #e4e7eb"></span><code>#e4e7eb</code></td>
+    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Button.</div></div>
@@ -291,9 +291,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-button-bg, $gray-900 ))</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-base, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the Button.</div></div>
@@ -301,9 +301,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-bg</code></td>
-    <td><span class="color-preview" style="background-color: #e4e7eb"></span><code>#e4e7eb</code></td>
+    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the Button.</div></div>
@@ -331,9 +331,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-button-bg, 7.5% ))</code></td>
-    <td><span class="color-preview" style="background-color: #ced3db"></span><code>#ced3db</code></td>
+    <td><code>var(--kendo-color-base-hover, #ced4da)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the hovered Button.</div></div>
@@ -351,9 +351,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-hover-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-button-bg, 10% ))</code></td>
-    <td><span class="color-preview" style="background-color: #c7cdd5"></span><code>#c7cdd5</code></td>
+    <td><code>var(--kendo-color-base-hover, #ced4da)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the hovered Button.</div></div>
@@ -381,9 +381,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-active-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-button-bg, 10% ))</code></td>
-    <td><span class="color-preview" style="background-color: #c7cdd5"></span><code>#c7cdd5</code></td>
+    <td><code>var(--kendo-color-base-active, #bdc4cb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the active Button.</div></div>
@@ -401,9 +401,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-active-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-button-bg, 12.5% ))</code></td>
-    <td><span class="color-preview" style="background-color: #bfc6d0"></span><code>#bfc6d0</code></td>
+    <td><code>var(--kendo-color-base-active, #bdc4cb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the active Button.</div></div>
@@ -431,9 +431,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-selected-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-color-darken( $kendo-color-primary, 10% ))</code></td>
-    <td><span class="color-preview" style="background-color: #0257d5"></span><code>#0257d5</code></td>
+    <td><code>var(--kendo-color-primary-active, #0a58ca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected Button.</div></div>
@@ -441,9 +441,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-button-selected-bg ))</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Button.</div></div>
@@ -451,9 +451,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-selected-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-color-darken( $kendo-color-primary, 12.5% ))</code></td>
-    <td><span class="color-preview" style="background-color: #0252c9"></span><code>#0252c9</code></td>
+    <td><code>var(--kendo-color-primary-active, #0a58ca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Button.</div></div>
@@ -481,9 +481,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-focus-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-button-bg, 10% ))</code></td>
-    <td><span class="color-preview" style="background-color: #c7cdd5"></span><code>#c7cdd5</code></td>
+    <td><code>var(--kendo-color-base-active, #bdc4cb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the focused Button.</div></div>
@@ -501,9 +501,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-focus-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-button-bg, 12.5% ))</code></td>
-    <td><span class="color-preview" style="background-color: #bfc6d0"></span><code>#bfc6d0</code></td>
+    <td><code>var(--kendo-color-base-active, #bdc4cb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the focused Button.</div></div>
@@ -523,7 +523,7 @@ The following table lists the available variables for customization.
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 50%, transparent), rgba( $kendo-button-border, .5 ))</code></td>
-    <td><code>0 0 0 0.25rem rgba(228, 231, 235, 0.5)</code></td>
+    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, #dee2e6) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>

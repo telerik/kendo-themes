@@ -267,7 +267,7 @@ $kendo-input-spinner-icon-offset: null !default;
 
 /// The color of the Input separator.
 /// @group input
-$kendo-input-separator-text: rgba( $kendo-component-border, .12 ) !default;
+$kendo-input-separator-text: $kendo-component-border !default;
 /// The opacity of the Input separator.
 /// @group input
 $kendo-input-separator-opacity: .5 !default;
