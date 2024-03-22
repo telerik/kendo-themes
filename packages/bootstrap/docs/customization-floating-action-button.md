@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-fab-theme-colors</td>
     <td>Map</td>
     <td><code>$kendo-theme-colors</code></td>
-    <td><code>("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)</code></td>
+    <td><code>("primary": var(--kendo-color-primary, #0d6efd), "secondary": var(--kendo-color-secondary, #6c757d), "tertiary": var(--kendo-color-tertiary, #6f42c1), "info": var(--kendo-color-info, #0dcaf0), "success": var(--kendo-color-success, #146c43), "warning": var(--kendo-color-warning, #ffc107), "error": var(--kendo-color-error, #dc3545), "dark": var(--kendo-color-dark, #212529), "light": var(--kendo-color-light, #f8f9fa), "inverse": var(--kendo-color-dark, #212529))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the FAB.</div></div>
@@ -392,9 +392,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the FAB item.</div></div>
@@ -402,9 +402,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
@@ -412,9 +412,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item.</div></div>
@@ -422,9 +422,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-base, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the FAB item icon.</div></div>
@@ -432,9 +432,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-bg</code></td>
-    <td><span class="color-preview" style="background-color: #e4e7eb"></span><code>#e4e7eb</code></td>
+    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item icon.</div></div>
@@ -442,9 +442,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-border</code></td>
-    <td><span class="color-preview" style="background-color: #e4e7eb"></span><code>#e4e7eb</code></td>
+    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item icon.</div></div>
@@ -502,9 +502,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-outline-color</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-button-bg</code></td>
-    <td><span class="color-preview" style="background-color: #e4e7eb"></span><code>#e4e7eb</code></td>
+    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the FAB item.</div></div>

@@ -93,9 +93,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is not checked.</div></div>
@@ -193,9 +193,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-focus-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-switch-off-track-bg, $kendo-color-primary ))</code></td>
-    <td><span class="color-preview" style="background-color: #86b7fe"></span><code>#86b7fe</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, #6ea8fe)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused Switch is not checked.</div></div>
@@ -215,7 +215,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-off-track-focus-ring</td>
     <td>List</td>
     <td><code>.25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
-    <td><code>0.25rem solid rgba(13, 110, 253, 0.25)</code></td>
+    <td><code>0.25rem solid color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is not checked.</div></div>
@@ -223,9 +223,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-disabled-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $gray-800, $gray-200 ))</code></td>
-    <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled Switch is not checked.</div></div>
@@ -343,9 +343,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is checked.</div></div>
@@ -363,9 +363,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-switch-on-track-bg</code></td>
-    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is checked.</div></div>
@@ -465,7 +465,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-on-track-focus-ring</td>
     <td>List</td>
     <td><code>.25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-switch-on-track-border, .25 ))</code></td>
-    <td><code>0.25rem solid rgba(13, 110, 253, 0.25)</code></td>
+    <td><code>0.25rem solid color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is checked.</div></div>
@@ -473,9 +473,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-disabled-bg</td>
-    <td>Color</td>
-    <td><code>if($kendo-enable-color-system, rgba( k-color( primary ), .5 ), k-try-tint( $kendo-switch-on-track-bg, 50% ))</code></td>
-    <td><span class="color-preview" style="background-color: #86b7fe"></span><code>#86b7fe</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 50%, transparent), k-try-tint( $kendo-switch-on-track-bg, 50% ))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled Switch is checked.</div></div>
@@ -513,9 +513,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-switch-on-track-bg ))</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is checked.</div></div>

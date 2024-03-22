@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-window-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window.</div></div>
@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-window-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Window.</div></div>
@@ -239,9 +239,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-window-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Window.</div></div>
@@ -329,7 +329,7 @@ The following table lists the available variables for customization.
     "light": k-map-get($kendo-theme-colors, "light"),
     "dark": k-map-get($kendo-theme-colors, "dark")
 )</code></td>
-    <td><code>("primary": #3f51b5, "light": #f5f5f5, "dark": #424242)</code></td>
+    <td><code>("primary": var(--kendo-color-primary, #3f51b5), "light": var(--kendo-color-light, #f5f5f5), "dark": var(--kendo-color-dark, #424242))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Window.</div></div>

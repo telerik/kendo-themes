@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-header-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Toolbar.</div></div>
@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-header-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Toolbar.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
     <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
-    <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
+    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>

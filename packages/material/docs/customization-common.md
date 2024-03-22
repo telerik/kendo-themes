@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-calendar-navigation-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-link-hover-text</code></td>
-    <td><span class="color-preview" style="background-color: #c2185b"></span><code>#c2185b</code></td>
+    <td><code>var(--kendo-color-secondary-hover, #d31857)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered items in the Calendar navigation.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-base-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>k-map-get( $theme, base-bg )</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-base-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>k-map-get( $theme, component-text )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-base-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the components' chrome area.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>k-map-get( $theme, hover-bg )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
+    <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-base-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-hover-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>rgba( $kendo-base-border, .15 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.15)"></span><code>rgba(0, 0, 0, 0.15)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-selected-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-secondary</code></td>
-    <td><span class="color-preview" style="background-color: #e51a5f"></span><code>#e51a5f</code></td>
+    <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-secondary-contrast</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-on-secondary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected items.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-selected-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>rgba( $kendo-base-border, .1 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span><code>rgba(0, 0, 0, 0.1)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-disabled-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>k-map-get( $theme, disabled-text )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>

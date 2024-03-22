@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-base-bg, 1 ))</code></td>
-    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
+    <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the DropZone.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-base-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-base-border</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the DropZone.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-icon-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-dropzone-text, 4 ))</code></td>
-    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9116)"></span><code>rgba(97, 97, 97, 0.9116)</code></td>
+    <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone icon.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-icon-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #3f51b5"></span><code>#3f51b5</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered DropZone icon.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-note-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
+    <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone note.</div></div>

@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tabstrip-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
+    <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip component</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tabstrip-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
+    <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabs</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-hover-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-hover-bg</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
+    <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered tabs</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-body-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered tabs</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-body-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected tabs</div></div>
@@ -289,9 +289,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tabstrip-content-focus-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip focused content</div></div>

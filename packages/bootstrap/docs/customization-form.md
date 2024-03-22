@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-form-legend-border-color</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form legend.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-form-separator-border-color</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-form-legend-border-color</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form separator.</div></div>
@@ -349,9 +349,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-forms-invalid-color</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-error</code></td>
-    <td><span class="color-preview" style="background-color: #dc3545"></span><code>#dc3545</code></td>
+    <td><code>var(--kendo-color-error, #dc3545)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>

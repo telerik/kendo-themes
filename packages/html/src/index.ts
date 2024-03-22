@@ -44,6 +44,7 @@ export * from './captcha/index';
 export * from './colorpicker/index';
 export * from './combobox/index';
 export * from './calendar/index';
+export * from './multiviewcalendar/index';
 export * from './dateinput/index';
 export * from './datepicker/index';
 export * from './timepicker/index';
@@ -106,6 +107,7 @@ export * from './filter/index';
 export * from './filemanager/index';
 export * from './taskboard/index';
 export * from './column-menu/index';
+//export * from './context-menu/index';
 
 // Misc
 // export * from './adaptive/index''
@@ -125,6 +127,10 @@ export * from './signature/index';
 
 // Editors
 export * from './editor/index';
+
+// Scheduling
+export * from './gantt/index';
+// export * from './scheduler/index';
 
 // Tables
 export * from './table/index';
