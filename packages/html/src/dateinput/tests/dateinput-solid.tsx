@@ -16,29 +16,29 @@ export default () =>(
             <span>DateInput RTL</span>
 
             <div>
-                <DateInputNormal showSpinButton={true} placeholder="placeholder..." />
+                <DateInputNormal showClearButton showSpinButton placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DateInputNormal showSpinButton={true} placeholder="placeholder..." />
+                <DateInputNormal showClearButton showSpinButton placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DateInput.states ].map((state) => (
                 <>
                     <div>
-                        <DateInputNormal { ...{ [state]: true }} showSpinButton={true} value={state} />
+                        <DateInputNormal showClearButton { ...{ [state]: true }} showSpinButton value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DateInputNormal { ...{ [state]: true }} showSpinButton={true} value={state} />
+                        <DateInputNormal showClearButton { ...{ [state]: true }} showSpinButton value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DateInputNormal showSpinButton={true} value="invalid focus" invalid focus />
+                <DateInputNormal showClearButton showSpinButton value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DateInputNormal showSpinButton={true} value="invalid focus" invalid focus />
+                <DateInputNormal showClearButton showSpinButton value="invalid focus" invalid focus />
             </div>
         </div>
     </>
