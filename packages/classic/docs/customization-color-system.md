@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-primary</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #f35800"></span><code>#f35800</code></td>
-    <td><span class="color-preview" style="background-color: #f35800"></span><code>#f35800</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-primary, #f35800)"></span><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-primary-contrast</td>
     <td>Color</td>
     <td><code>k-contrast-legacy( $kendo-color-primary )</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-on-primary, #ffffff)"></span><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $kendo-color-primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-secondary</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #e9e9e9"></span><code>#e9e9e9</code></td>
-    <td><span class="color-preview" style="background-color: #e9e9e9"></span><code>#e9e9e9</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-secondary, #b6b6b6)"></span><code>var(--kendo-color-secondary, #b6b6b6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The secondary color of the theme.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-tertiary</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #03a9f4"></span><code>#03a9f4</code></td>
-    <td><span class="color-preview" style="background-color: #03a9f4"></span><code>#03a9f4</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-tertiary, #03a9f4)"></span><code>var(--kendo-color-tertiary, #03a9f4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The tertiary color of the theme.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-info</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #2498bc"></span><code>#2498bc</code></td>
-    <td><span class="color-preview" style="background-color: #2498bc"></span><code>#2498bc</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-info, #007bc3)"></span><code>var(--kendo-color-info, #007bc3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for informational messages and states.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-success</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #3ea44e"></span><code>#3ea44e</code></td>
-    <td><span class="color-preview" style="background-color: #3ea44e"></span><code>#3ea44e</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-success, #3ea44e)"></span><code>var(--kendo-color-success, #3ea44e)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for success messages and states.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-warning</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #ff9800"></span><code>#ff9800</code></td>
-    <td><span class="color-preview" style="background-color: #ff9800"></span><code>#ff9800</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-warning, #ffa41f)"></span><code>var(--kendo-color-warning, #ffa41f)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for warning messages and states.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-error</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #d92800"></span><code>#d92800</code></td>
-    <td><span class="color-preview" style="background-color: #d92800"></span><code>#d92800</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-error, #d92800)"></span><code>var(--kendo-color-error, #d92800)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for error messages and states.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-dark</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #404040"></span><code>#404040</code></td>
-    <td><span class="color-preview" style="background-color: #404040"></span><code>#404040</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-dark, #404040)"></span><code>var(--kendo-color-dark, #404040)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dark color of the theme.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-light</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
-    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-light, #ebebeb)"></span><code>var(--kendo-color-light, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light color of the theme.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-inverse</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark )</code></td>
-    <td><span class="color-preview" style="background-color: #404040"></span><code>#404040</code></td>
+    <td><code>var(--kendo-color-dark, #404040)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>

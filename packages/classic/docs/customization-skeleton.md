@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-skeleton-item-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $kendo-color-inverse, .2 ))</code></td>
-    <td><span class="color-preview" style="background-color: rgba(64, 64, 64, 0.2)"></span><code>rgba(64, 64, 64, 0.2)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 20%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton item.</div></div>

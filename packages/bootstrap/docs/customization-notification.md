@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Notification.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Notification.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Notification.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-notification-theme-colors</td>
     <td>Map</td>
     <td><code>$kendo-theme-colors</code></td>
-    <td><code>("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)</code></td>
+    <td><code>("primary": var(--kendo-color-primary, #0d6efd), "secondary": var(--kendo-color-secondary, #6c757d), "tertiary": var(--kendo-color-tertiary, #6f42c1), "info": var(--kendo-color-info, #0dcaf0), "success": var(--kendo-color-success, #146c43), "warning": var(--kendo-color-warning, #ffc107), "error": var(--kendo-color-error, #dc3545), "dark": var(--kendo-color-dark, #212529), "light": var(--kendo-color-light, #f8f9fa), "inverse": var(--kendo-color-dark, #212529))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Notification.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-notification-theme</td>
     <td>Map</td>
     <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
-    <td><code>("inverse": (color: #111315, background-color: #c1c2c3, border: #d3d3d4), "light": (color: #818182, background-color: #fdfdfe, border: #fefefe), "dark": (color: #111315, background-color: #c1c2c3, border: #d3d3d4), "error": (color: #721c24, background-color: #f5c6cb, border: #f8d7da), "warning": (color: #856404, background-color: #ffeeba, border: #fff3cd), "success": (color: #0d462c, background-color: #bfddcf, border: #d1e7dd), "info": (color: #07697d, background-color: #bbf0fb, border: #cff4fc), "tertiary": (color: #3a2264, background-color: #d7caee, border: #e2d9f3), "secondary": (color: #383d41, background-color: #d6d8db, border: #e2e3e5), "primary": (color: #073984, background-color: #bbd6fe, border: #cfe2ff))</code></td>
+    <td><code>("inverse": (color: var(--kendo-color-inverse-on-subtle, #ffffff), background-color: var(--kendo-color-inverse-subtle, #6c757d), border: var(--kendo-color-inverse-emphasis, #343a40)), "light": (color: var(--kendo-color-light-on-subtle, #343a40), background-color: var(--kendo-color-light-subtle, #f8f9fa), border: var(--kendo-color-light-emphasis, #bdc4cb)), "dark": (color: var(--kendo-color-dark-on-subtle, #ffffff), background-color: var(--kendo-color-dark-subtle, #6c757d), border: var(--kendo-color-dark-emphasis, #343a40)), "error": (color: var(--kendo-color-error-on-subtle, #421015), background-color: var(--kendo-color-error-subtle, #f8d7da), border: var(--kendo-color-error-emphasis, #e35d6a)), "warning": (color: var(--kendo-color-warning-on-subtle, #523e02), background-color: var(--kendo-color-warning-subtle, #ffecb5), border: var(--kendo-color-warning-emphasis, #ffcd39)), "success": (color: var(--kendo-color-success-on-subtle, #08291a), background-color: var(--kendo-color-success-subtle, #d1e7dd), border: var(--kendo-color-success-emphasis, #479f76)), "info": (color: var(--kendo-color-info-on-subtle, #04414d), background-color: var(--kendo-color-info-subtle, #cff4fc), border: var(--kendo-color-info-emphasis, #3dd5f3)), "tertiary": (color: var(--kendo-color-tertiary-on-subtle, #21143b), background-color: var(--kendo-color-tertiary-subtle, #e2d9f3), border: var(--kendo-color-tertiary-emphasis, #a98eda)), "secondary": (color: var(--kendo-color-secondary-on-subtle, #212529), background-color: var(--kendo-color-secondary-subtle, #dee2e6), border: var(--kendo-color-secondary-emphasis, #8d959d)), "primary": (color: var(--kendo-color-primary-on-subtle, #052c65), background-color: var(--kendo-color-primary-subtle, #cfe2ff), border: var(--kendo-color-primary-emphasis, #6ea8fe)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>

@@ -110,7 +110,7 @@
         }
 
         &.k-event-inverse {
-            color: if($kendo-enable-color-system, k-color( on-app-surface ), k-contrast-legacy( $kendo-scheduler-event-text ));
+            color: if($kendo-enable-color-system, if($kendo-enable-focus-contrast, black, k-color( on-app-surface )), k-contrast-legacy( $kendo-scheduler-event-text ));
         }
 
         &.k-event-ongoing {

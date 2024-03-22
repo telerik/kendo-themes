@@ -214,6 +214,18 @@ const getRGBFromRGBA = (foregroundColor, backgroundColor) => {
 };
 
 const decomposeColor = ( color ) => {
+    if (color.includes("srgb")) {
+        const alphaComponent = color.match(/\(([^()]*)\)/)[1].split('/')[1];
+        const colorComponents = color.match(/\(([^()]*)\)/)[1].split('/')[0].replace('srgb', '').trim().split(' ');
+
+        const r = Math.round(colorComponents[0] * 255);
+        const g = Math.round(colorComponents[1] * 255);
+        const b = Math.round(colorComponents[2] * 255);
+        const a = Number(alphaComponent || 1);
+
+        return { r: r, g: g, b: b, a: a };
+    }
+
     const colorComponents = color.split(')')[0].split('(')[1].split(', ');
     const r = Number(colorComponents[0]);
     const g = Number(colorComponents[1]);
