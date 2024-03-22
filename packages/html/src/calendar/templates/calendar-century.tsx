@@ -1,6 +1,6 @@
 import { Calendar, CalendarTableRow, CalendarCell } from "..";
 
-export const CalendarCentury = (props: any) => (
+export const CalendarCentury = ({ showOtherCentury, ...props }: any) => (
     <Calendar calendarView="century" calendarHeaderText="2000 - 2099"
         children={
             <>
@@ -20,7 +20,7 @@ export const CalendarCentury = (props: any) => (
                     <CalendarCell text="2070 - 2079" />
                     <CalendarCell text="2080 - 2089" />
                     <CalendarCell text="2090 - 2099" />
-                    <CalendarCell empty />
+                    <CalendarCell text="2100 - 2109" empty={!showOtherCentury} />
                 </CalendarTableRow>
             </>
         }
