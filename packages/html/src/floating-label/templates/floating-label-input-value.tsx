@@ -1,12 +1,11 @@
 import FloatingLabel from "../floating-label.spec";
 import { Textbox } from '../../textbox';
 
-export const FloatingLabelNormal = (props) => (
+export const FloatingLabelInputValue = (props) => (
     <FloatingLabel
         label="Label"
-        empty
         children={
-            <Textbox showClearButton={false} />
+            <Textbox showClearButton={false} value="Value"/>
         }
         {...props}
     >
