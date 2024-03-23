@@ -110,12 +110,12 @@
                 "primary-subtle-hover": {
                     "name": "Primary Subtle Hover",
                     "type": "color",
-                    "value": "#accee2"
+                    "value": "#B8D5E6"
                 },
                 "primary-subtle-active": {
                     "name": "Primary Subtle Active",
                     "type": "color",
-                    "value": "#89bad6"
+                    "value": "#A0C7DE"
                 },
                 "primary": {
                     "name": "Primary",
@@ -125,22 +125,22 @@
                 "primary-hover": {
                     "name": "Primary Hover",
                     "type": "color",
-                    "value": "#116fa5"
+                    "value": "#10689B"
                 },
                 "primary-active": {
                     "name": "Primary Active",
                     "type": "color",
-                    "value": "#106697"
+                    "value": "#0E5D8A"
                 },
                 "primary-emphasis": {
                     "name": "Primary Emphasis",
                     "type": "color",
-                    "value": "#4d97c1"
+                    "value": "#71ACCD"
                 },
                 "primary-on-subtle": {
                     "name": "Primary On Subtle",
                     "type": "color",
-                    "value": "#06293c"
+                    "value": "#072E45"
                 },
                 "on-primary": {
                     "name": "On Primary",
@@ -150,7 +150,7 @@
                 "primary-on-surface": {
                     "name": "Primary On Surface",
                     "type": "color",
-                    "value": "#0e5781"
+                    "value": "#1274AC"
                 },
                 "secondary-subtle": {
                     "name": "Secondary Subtle",
