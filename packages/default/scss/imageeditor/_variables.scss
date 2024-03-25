@@ -5,9 +5,9 @@ $kendo-image-editor-padding-y: null !default;
 $kendo-image-editor-padding-x: null !default;
 
 $kendo-image-editor-border-width: 1px !default;
-$kendo-image-editor-font-size: $kendo-font-size-md !default;
-$kendo-image-editor-line-height: $kendo-line-height-md !default;
-$kendo-image-editor-font-family: $kendo-font-family !default;
+$kendo-image-editor-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-image-editor-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-image-editor-font-family: var( --kendo-font-family, inherit ) !default;
 
 $kendo-image-editor-content-border-width: 1px !default;
 

@@ -102,25 +102,25 @@ The following table lists the available variables for customization.
     <td>Map</td>
     <td><code>(
     sm: (
-        font-size: $kendo-font-size-md,
-        line-height: $kendo-line-height-md,
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, normal ),
         cell-padding-x: $kendo-table-sm-cell-padding-x,
         cell-padding-y: $kendo-table-sm-cell-padding-y
     ),
     md: (
-        font-size: $kendo-font-size-md,
-        line-height: $kendo-line-height-md,
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, normal ),
         cell-padding-x: $kendo-table-md-cell-padding-x,
         cell-padding-y: $kendo-table-md-cell-padding-y
     ),
     lg: (
-        font-size: $kendo-font-size-md,
-        line-height: $kendo-line-height-md,
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, normal ),
         cell-padding-x: $kendo-table-lg-cell-padding-x,
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )</code></td>
-    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 8px, cell-padding-y: 4px), md: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 12px, cell-padding-y: 8px), lg: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 8px, cell-padding-y: 10px))</code></td>
+    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: 8px, cell-padding-y: 4px), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: 12px, cell-padding-y: 8px), lg: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: 8px, cell-padding-y: 10px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>

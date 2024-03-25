@@ -12,19 +12,19 @@ $kendo-form-spacer: $kendo-padding-md-x * 2 !default;
 
 /// The font size of the Form.
 /// @group form
-$kendo-form-font-size: $kendo-font-size-md !default;
+$kendo-form-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Form.
 /// @group form
-$kendo-form-line-height: $kendo-line-height-md !default;
+$kendo-form-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the Form in em units.
 /// @group form
 $kendo-form-line-height-em: calc( #{$kendo-form-line-height} * 1em ) !default;
 /// The line height of the small Form.
 /// @group form
-$kendo-form-sm-line-height: $kendo-line-height-sm !default;
+$kendo-form-sm-line-height: var( --kendo-line-height-sm, normal ) !default;
 /// The line height of the large Form.
 /// @group form
-$kendo-form-lg-line-height: $kendo-line-height-lg !default;
+$kendo-form-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The margin of the Form fieldset.
 /// @group form

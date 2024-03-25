@@ -15,13 +15,13 @@ $kendo-slider-alt-size: 36px !default;
 
 /// The font family of the Slider.
 /// @group slider
-$kendo-slider-font-family: $kendo-font-family !default;
+$kendo-slider-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Slider.
 /// @group slider
-$kendo-slider-font-size: $kendo-font-size-md !default;
+$kendo-slider-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Slider.
 /// @group slider
-$kendo-slider-line-height: $kendo-line-height-md !default;
+$kendo-slider-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The offset of the Slider Buttons.
 /// @group slider

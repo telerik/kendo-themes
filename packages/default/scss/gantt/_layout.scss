@@ -627,7 +627,7 @@
         white-space: nowrap;
 
         strong {
-            font-size: $kendo-font-size-lg;
+            font-size: var( --kendo-font-size-lg, inherit );
             font-weight: normal;
             display: block;
         }
@@ -766,7 +766,7 @@
     }
     .k-gantt-tooltip-validation-value {
         // TODO: extract to variable
-        font-weight: $kendo-font-weight-bold;
+        font-weight: var( --kendo-font-weight-bold, normal );
     }
     .k-gantt-tooltip-validation-label,
     .k-gantt-tooltip-validation-value {

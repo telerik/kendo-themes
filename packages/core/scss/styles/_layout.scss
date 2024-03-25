@@ -1,19 +1,4 @@
 @mixin kendo-core--styles--layout() {
-    .k-body {
-        @include typography(
-            var( --kendo-font-size, inherit ),
-            var( --kendo-font-family, inherit ),
-            var( --kendo-line-height, normal ),
-            var( --kendo-font-weight, normal ),
-            var( --kendo-letter-spacing, normal ),
-        );
-        @include fill(
-            var( --kendo-body-text, initial ),
-            var( --kendo-body-bg, initial )
-        );
-        margin: 0;
-    }
-
     // Basic layout
     .k-hstack {
         display: flex;

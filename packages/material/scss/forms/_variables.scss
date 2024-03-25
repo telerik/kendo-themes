@@ -12,10 +12,10 @@ $kendo-form-spacer: $kendo-padding-md-x * 2 !default;
 
 /// The font size of the Form.
 /// @group form
-$kendo-form-font-size: $kendo-font-size-md !default;
+$kendo-form-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Form.
 /// @group form
-$kendo-form-line-height: $kendo-line-height-md !default;
+$kendo-form-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the Form in em units.
 /// @group form
 $kendo-form-line-height-em: calc( #{$kendo-form-line-height} * 1em ) !default;
@@ -53,7 +53,7 @@ $kendo-form-legend-border-color: $kendo-component-border !default;
 $kendo-form-legend-width: 100% !default;
 /// The font size of the Form legend.
 /// @group form
-$kendo-form-legend-font-size: $kendo-font-size-md !default;
+$kendo-form-legend-font-size: var( --kendo-font-size, inherit ) !default;
 /// The text capitalization of the Form legend.
 /// @group form
 $kendo-form-legend-text-transform: uppercase !default;
@@ -68,7 +68,7 @@ $kendo-form-button-margin-x: 8px !default;
 
 /// The font size of the Form hint.
 /// @group form
-$kendo-form-hint-font-size: $kendo-font-size-sm !default;
+$kendo-form-hint-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font style of the Form hint.
 /// @group form
 $kendo-form-hint-font-style: normal !default;

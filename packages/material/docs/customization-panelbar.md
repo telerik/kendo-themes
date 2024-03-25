@@ -48,36 +48,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-font-family</td>
-    <td>List</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the PanelBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the PanelBar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-panelbar-line-height</td>
-    <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
-    <td><code>1.4285714286</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PanelBar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-panelbar-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>

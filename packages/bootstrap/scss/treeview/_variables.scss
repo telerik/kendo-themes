@@ -2,31 +2,31 @@
 
 /// The font family of the TreeView.
 /// @group treeview
-$kendo-treeview-font-family: $kendo-font-family !default;
+$kendo-treeview-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the TreeView.
 /// @group treeview
-$kendo-treeview-font-size: $kendo-font-size-md !default;
+$kendo-treeview-font-size: var( --kendo-font-size, inherit )  !default;
 /// The font size of the small TreeView.
 /// @group treeview
-$kendo-treeview-sm-font-size: $kendo-font-size-sm !default;
+$kendo-treeview-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font size of the medium TreeView.
 /// @group treeview
-$kendo-treeview-md-font-size: $kendo-font-size-md !default;
+$kendo-treeview-md-font-size: var( --kendo-font-size, inherit )  !default;
 /// The font size of the large TreeView.
 /// @group treeview
-$kendo-treeview-lg-font-size: $kendo-font-size-md !default;
+$kendo-treeview-lg-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the TreeView.
 /// @group treeview
-$kendo-treeview-line-height: $kendo-line-height-md !default;
+$kendo-treeview-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the small TreeView.
 /// @group treeview
 $kendo-treeview-sm-line-height: k-math-div( 20, 14 ) !default;
 /// The line height of the medium TreeView.
 /// @group treeview
-$kendo-treeview-md-line-height: $kendo-line-height-md !default;
+$kendo-treeview-md-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the large TreeView.
 /// @group treeview
-$kendo-treeview-lg-line-height: $kendo-line-height-md !default;
+$kendo-treeview-lg-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The indentation of child groups in the TreeView.
 /// @group treeview

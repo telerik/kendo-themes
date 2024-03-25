@@ -40,20 +40,20 @@ $kendo-input-lg-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
 /// The font family of the Input components.
 /// @group input
-$kendo-input-font-family: $kendo-font-family !default;
+$kendo-input-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The font size of the Input components.
 /// @group input
-$kendo-input-font-size: $kendo-font-size-lg !default;
+$kendo-input-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The font size of the small Input components.
 /// @group input
-$kendo-input-sm-font-size: $kendo-font-size-lg !default;
+$kendo-input-sm-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The font size of the medium Input components.
 /// @group input
-$kendo-input-md-font-size: $kendo-font-size-lg !default;
+$kendo-input-md-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The font size of the large Input components.
 /// @group input
-$kendo-input-lg-font-size: $kendo-font-size-lg !default;
+$kendo-input-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
 /// The line height of the Input components.
 /// @group input

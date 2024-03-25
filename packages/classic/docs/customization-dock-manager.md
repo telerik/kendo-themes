@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-pane-title-font-family</td>
     <td>String</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>inherit</code></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the pane title in the DockManager component.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dock-manager-pane-title-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-lg</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the pane title in the DockManager component.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dock-manager-pane-title-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-sm</code></td>
-    <td><code>1.25</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the pane title in the DockManager component.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dock-manager-pane-title-font-weight</td>
-    <td>Number</td>
-    <td><code>$kendo-font-weight-normal</code></td>
-    <td><code>400</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight-normal, normal )</code></td>
+    <td><code>var(--kendo-font-weight-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the pane title in the DockManager component.</div></div>

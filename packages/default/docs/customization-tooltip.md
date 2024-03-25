@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-font-family</td>
     <td>String</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>inherit</code></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Tooltip.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tooltip-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Tooltip.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tooltip-title-font-size</td>
-    <td>Number</td>
-    <td><code>($kendo-tooltip-font-size * 1.25)</code></td>
-    <td><code>17.5px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-tooltip-font-size} * 1.25 ) )</code></td>
+    <td><code>calc(var(--kendo-font-size, inherit) * 1.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Tooltip title.</div></div>

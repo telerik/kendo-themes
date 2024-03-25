@@ -68,46 +68,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-drawer-font-family</td>
-    <td>List</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Drawer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Drawer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td><code>2</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Drawer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-drawer-content-padding-x</td>
-    <td>Number</td>
-    <td><code>$kendo-padding-md-x</code></td>
-    <td><code>16px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer content.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-drawer-content-padding-y</td>
     <td>Number</td>
     <td><code>$kendo-padding-md-y</code></td>

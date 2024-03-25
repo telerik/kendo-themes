@@ -1,40 +1,41 @@
+@import "@progress/kendo-theme-core/scss/index.import.scss";
+
 /// This is equivalent to `font-size: 10px;`.
 /// @example font-size: 10px;
-/// @name .k-font-xs
+/// @name .k-font-size-xs
 /// @group font-size
 /// @contextType css
 
 /// This is equivalent to `font-size: 12px;`.
 /// @example font-size: 12px;
-/// @name .k-font-sm
+/// @name .k-font-size-sm
 /// @group font-size
 /// @contextType css
 
 /// This is equivalent to `font-size: 14px;`.
 /// @example font-size: 14px;
-/// @name .k-font-md
+/// @name .k-font-size-md
 /// @group font-size
 /// @contextType css
 
 /// This is equivalent to `font-size: 16px;`.
 /// @example font-size: 16px;
-/// @name .k-font-lg
+/// @name .k-font-size-lg
 /// @group font-size
 /// @contextType css
 
 /// This is equivalent to `font-size: 20px;`.
 /// @example font-size: 20px;
-/// @name .k-font-xl
+/// @name .k-font-size-xl
 /// @group font-size
 /// @contextType css
 
 @mixin kendo-utils--typography--font-size() {
 
     // Font size utility classes
-    $kendo-utils-font-size: k-map-get( $kendo-utils, "font-size" ) !default;
-    @include generate-utils( font-size, font-size, $kendo-utils-font-size );
+    @include generate-utils( font-size, font-size, $kendo-font-sizes, $css-var: "font-size" );
 
     // Legacy aliases
-    @include generate-utils( fs, font-size, $kendo-utils-font-size );
+    @include generate-utils( fs, font-size, $kendo-font-sizes, $css-var: "fs" );
 
 }

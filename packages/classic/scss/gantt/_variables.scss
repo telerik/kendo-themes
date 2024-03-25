@@ -1,8 +1,8 @@
 // Gantt
 $kendo-gantt-border-width: 1px !default;
-$kendo-gantt-font-family: $kendo-font-family !default;
-$kendo-gantt-font-size: $kendo-font-size-md !default;
-$kendo-gantt-line-height: $kendo-line-height-md !default;
+$kendo-gantt-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-gantt-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-gantt-line-height: var( --kendo-line-height-sm, normal ) !default;
 
 $kendo-gantt-bg: $kendo-component-bg !default;
 $kendo-gantt-text: $kendo-component-text !default;

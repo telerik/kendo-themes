@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-treeview-font-family</td>
-    <td>List</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the TreeView.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-lg</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the TreeView.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-sm-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small TreeView.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-md-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium TreeView.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-lg-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-lg</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large TreeView.</div></div>
@@ -316,7 +316,7 @@ The following table lists the available variables for customization.
         checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
     )
 )</code></td>
-    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 16px, item-padding-y: 6px, checkbox-padding-x: 4px, checkbox-padding-y: 2px), md: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 16px, item-padding-y: 8px, checkbox-padding-x: 4px, checkbox-padding-y: 2px), lg: (font-size: 16px, line-height: 1.5, item-padding-x: 16px, item-padding-y: 8px, checkbox-padding-x: 4px, checkbox-padding-y: null))</code></td>
+    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: 1.4285714286, item-padding-x: 16px, item-padding-y: 6px, checkbox-padding-x: 4px, checkbox-padding-y: 2px), md: (font-size: var(--kendo-font-size, inherit), line-height: 1.4285714286, item-padding-x: 16px, item-padding-y: 8px, checkbox-padding-x: 4px, checkbox-padding-y: 2px), lg: (font-size: var(--kendo-font-size-lg, inherit), line-height: 1.5, item-padding-x: 16px, item-padding-y: 8px, checkbox-padding-x: 4px, checkbox-padding-y: null))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TreeView.</div></div>

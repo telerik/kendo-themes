@@ -106,13 +106,13 @@ $kendo-loader-lg-container-gap: k-map-get( $kendo-spacing, 3 ) !default;
 
 /// The font size of the small Loader container.
 /// @group loader
-$kendo-loader-sm-container-font-size: $kendo-font-size-sm !default;
+$kendo-loader-sm-container-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font size of the medium Loader container.
 /// @group loader
-$kendo-loader-md-container-font-size: $kendo-font-size-md !default;
+$kendo-loader-md-container-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the large Loader container.
 /// @group loader
-$kendo-loader-lg-container-font-size: $kendo-font-size-lg !default;
+$kendo-loader-lg-container-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
 // Loading indicator
 /// The background color of the Loading indicator.

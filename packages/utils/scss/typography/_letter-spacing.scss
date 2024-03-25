@@ -1,0 +1,9 @@
+@import "@progress/kendo-theme-core/scss/index.import.scss";
+
+@mixin kendo-utils--typography--letter-spacing() {
+
+    // Letter spacing utility classes
+    @include generate-utils( letter-spacing, letter-spacing, $kendo-letter-spacings, $css-var: "letter-spacing" );
+
+}
+

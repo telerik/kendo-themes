@@ -14,7 +14,7 @@ $kendo-progressbar-animation-timing: $progress-bar-animation-timing !default;
 $kendo-progressbar-border-width: 0px !default;
 /// The font family of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-font-family: $kendo-font-family !default;
+$kendo-progressbar-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-font-size: $progress-font-size !default;

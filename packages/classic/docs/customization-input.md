@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-font-family</td>
     <td>String</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>inherit</code></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of input components.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of input components.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sm-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Input components.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Input components.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-lg-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-lg</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Input components.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td><code>1.4285714286</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of input components.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sm-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td><code>1.4285714286</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Input components.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td><code>1.4285714286</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Input components.</div></div>
@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-lg-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-lg</code></td>
-    <td><code>1.5</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Input components.</div></div>
@@ -256,7 +256,7 @@ The following table lists the available variables for customization.
         button-padding-y: $kendo-input-lg-padding-y
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 8px, padding-y: 2px, font-size: 14px, line-height: 1.4285714286, button-padding-x: 2px, button-padding-y: 2px), md: (padding-x: 8px, padding-y: 4px, font-size: 14px, line-height: 1.4285714286, button-padding-x: 4px, button-padding-y: 4px), lg: (padding-x: 12px, padding-y: 8px, font-size: 16px, line-height: 1.5, button-padding-x: 8px, button-padding-y: 8px))</code></td>
+    <td><code>(sm: (padding-x: 8px, padding-y: 2px, font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), button-padding-x: 2px, button-padding-y: 2px), md: (padding-x: 8px, padding-y: 4px, font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), button-padding-x: 4px, button-padding-y: 4px), lg: (padding-x: 12px, padding-y: 8px, font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal), button-padding-x: 8px, button-padding-y: 8px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>

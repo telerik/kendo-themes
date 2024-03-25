@@ -36,20 +36,20 @@ $kendo-button-lg-padding-y: k-map-get( $kendo-spacing, 2.5 ) !default;
 
 /// The font family of the Button.
 /// @group button
-$kendo-button-font-family: $kendo-font-family !default;
+$kendo-button-font-family: var( --kendo-font-size-sm, inherit ) !default;
 
 /// The font size of the Button.
 /// @group button
-$kendo-button-font-size: $kendo-font-size-md !default;
+$kendo-button-font-size: var( --kendo-font-size, inherit )  !default;
 /// The font size of the small Button.
 /// @group button
-$kendo-button-sm-font-size: $kendo-font-size-md !default;
+$kendo-button-sm-font-size: var( --kendo-font-size, inherit )  !default;
 /// The font size of the medium Button.
 /// @group button
-$kendo-button-md-font-size: $kendo-font-size-md !default;
+$kendo-button-md-font-size: var( --kendo-font-size, inherit )  !default;
 /// The font size of the large Button.
 /// @group button
-$kendo-button-lg-font-size: $kendo-font-size-md !default;
+$kendo-button-lg-font-size: var( --kendo-font-size, inherit )  !default;
 
 /// Line heights used along with the $kendo-font-size variable.
 /// @group button

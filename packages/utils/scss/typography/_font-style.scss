@@ -14,6 +14,6 @@
 
     // Font style utility classes
     $kendo-utils-font-style: k-map-get( $kendo-utils, "font-style" ) !default;
-    @include generate-utils( font, font-style, $kendo-utils-font-style );
+    @include generate-utils( font-style, font-style, $kendo-utils-font-style, $css-var: "font-style" );
 
 }

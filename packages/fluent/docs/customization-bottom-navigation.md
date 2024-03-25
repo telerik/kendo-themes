@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, 1rem )</code></td>
+    <td><code>var( --kendo-font-size, 1rem )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-line-height</td>
     <td></td>
-    <td><code>var( --kendo-line-height-md, normal )</code></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
     <td></td>
 </tr>
 <tr>

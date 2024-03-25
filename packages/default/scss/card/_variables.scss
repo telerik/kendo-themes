@@ -19,13 +19,13 @@ $kendo-card-border-radius: $kendo-border-radius-lg !default;
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
 /// The font family of the Card.
 /// @group card
-$kendo-card-font-family: $kendo-font-family !default;
+$kendo-card-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Card.
 /// @group card
-$kendo-card-font-size: $kendo-font-size-md !default;
+$kendo-card-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Card.
 /// @group card
-$kendo-card-line-height: $kendo-line-height-md !default;
+$kendo-card-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The spacing between the Cards in the Card deck.
 /// @group card
@@ -110,7 +110,7 @@ $kendo-card-footer-border: $kendo-component-header-border !default;
 $kendo-card-title-margin-bottom: k-map-get( $kendo-spacing, 2 ) !default;
 /// The font size of the Card title.
 /// @group card
-$kendo-card-title-font-size: $kendo-h5-font-size !default;
+$kendo-card-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The font family of the Card title.
 /// @group card
 $kendo-card-title-font-family: null !default;
@@ -119,7 +119,7 @@ $kendo-card-title-font-family: null !default;
 $kendo-card-title-line-height: 1.25 !default;
 /// The font weight of the Card title.
 /// @group card
-$kendo-card-title-font-weight: $kendo-font-weight-normal !default;
+$kendo-card-title-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 /// The letter spacing of the Card title.
 /// @group card
 $kendo-card-title-letter-spacing: null !default;
@@ -129,7 +129,7 @@ $kendo-card-title-letter-spacing: null !default;
 $kendo-card-subtitle-margin-bottom: k-map-get( $kendo-spacing, 2 ) !default;
 /// The font size of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-size: $kendo-font-size-sm !default;
+$kendo-card-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font family of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-font-family: null !default;
@@ -138,7 +138,7 @@ $kendo-card-subtitle-font-family: null !default;
 $kendo-card-subtitle-line-height: normal !default;
 /// The font weight of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-weight: $kendo-font-weight-normal !default;
+$kendo-card-subtitle-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 /// The letter spacing of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-letter-spacing: null !default;

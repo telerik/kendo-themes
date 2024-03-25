@@ -11,13 +11,13 @@ $kendo-orgchart-padding-y: $kendo-orgchart-spacer !default;
 $kendo-orgchart-padding-x: $kendo-orgchart-padding-y !default;
 /// The font family of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-font-family: $kendo-font-family !default;
+$kendo-orgchart-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-font-size: $kendo-font-size-md !default;
+$kendo-orgchart-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-line-height: $kendo-line-height-md !default;
+$kendo-orgchart-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-bg: $kendo-component-bg !default;
@@ -69,13 +69,13 @@ $kendo-orgchart-node-group-focus-shadow: $kendo-card-focus-shadow !default;
 
 /// The font size of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-font-size: $kendo-font-size-xl !default;
+$kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
 /// The bottom margin of the OrgChart node group title.
 /// @group orgchart
 $kendo-orgchart-node-group-title-margin-bottom: k-math-div( $kendo-orgchart-spacer, 4 ) !default;
 /// The line height of the OrgChart node group title.
 /// @group orgchart
-$kendo-orgchart-node-group-title-line-height: $kendo-line-height-sm !default;
+$kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-sm, normal ) !default;
 
 /// The bottom margin of the OrgChart node group subtitle.
 /// @group orgchart
@@ -83,7 +83,7 @@ $kendo-orgchart-node-group-subtitle-margin-bottom: $kendo-orgchart-spacer !defau
 
 /// The font size of the OrgChart node group subtitle.
 /// @group orgchart
-$kendo-orgchart-node-group-subtitle-font-size: $kendo-font-size-md !default;
+$kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// The line height of the OrgChart node group subtitle.
 /// @group orgchart

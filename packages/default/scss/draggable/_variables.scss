@@ -3,9 +3,9 @@ $kendo-drag-hint-padding-x: $kendo-padding-md-x !default;
 $kendo-drag-hint-padding-y: $kendo-padding-md-y !default;
 $kendo-drag-hint-border-width: 1px !default;
 $kendo-drag-hint-border-radius: $kendo-border-radius-md !default;
-$kendo-drag-hint-font-size: $kendo-font-size-md !default;
-$kendo-drag-hint-font-family: $kendo-font-family !default;
-$kendo-drag-hint-line-height: $kendo-line-height-md !default;
+$kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-drag-hint-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-drag-hint-line-height: var( --kendo-line-height, normal ) !default;
 
 $kendo-drag-hint-bg: $kendo-base-bg !default;
 $kendo-drag-hint-text: $kendo-base-text !default;

@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-form-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-md</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-form-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-md</code></td>
-    <td><code>1.4285714286</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-line-height-em</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-form-line-height} * 1em )</code></td>
-    <td><code>calc(1.4285714286 * 1em)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form in em units.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-form-sm-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-sm</code></td>
-    <td><code>1.25</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Form.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-form-lg-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-lg</code></td>
-    <td><code>1.5</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Form.</div></div>
@@ -399,9 +399,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fieldset-font-size</td>
-    <td>Number</td>
+    <td>Calculation</td>
     <td><code>$kendo-h4-font-size</code></td>
-    <td><code>22px</code></td>
+    <td><code>calc(var(--kendo-font-size, inherit) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form fieldset.</div></div>

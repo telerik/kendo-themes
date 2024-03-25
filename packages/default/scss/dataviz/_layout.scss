@@ -83,7 +83,7 @@
     .k-chart-tooltip {
         @include border-radius( $kendo-border-radius-md );
         font-size: $kendo-chart-tooltip-font-size;
-        line-height: $kendo-line-height-md;
+        line-height: var( --kendo-line-height, normal );
         padding-block: $kendo-tooltip-padding-y;
         padding-inline: $kendo-tooltip-padding-x;
     }
@@ -99,7 +99,7 @@
         text-align: start;
         padding-block: $kendo-padding-sm-y;
         padding-inline: $kendo-padding-sm-x;
-        line-height: $kendo-line-height-md;
+        line-height: var( --kendo-line-height, normal );
         vertical-align: middle;
     }
 
@@ -308,7 +308,7 @@
             border-width: 0 0 1px;
             border-style: solid;
             border-color: inherit;
-            font-size: $kendo-font-size-md;
+            font-size: var( --kendo-font-size, inherit );
             background-position: 0 0;
             background-repeat: repeat-x;
         }
@@ -345,10 +345,10 @@
             right: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            top: calc( #{$kendo-padding-sm-y * 2} + (#{$kendo-line-height-md} * #{$kendo-font-size-md}) + 1px);
+            top: calc( #{$kendo-padding-sm-y * 2} + ( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit)) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            left: calc( #{$kendo-padding-sm-y * 2} + (#{$kendo-line-height-md} * #{$kendo-font-size-md}) + 1px);
+            left: calc( #{$kendo-padding-sm-y * 2} + ( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit)) + 1px);
         }
 
 

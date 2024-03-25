@@ -1,11 +1,14 @@
 // font family
+@import "./_font-family.scss";
 @import "./_font-size.scss";
 // font smoothing
 @import "./_font-style.scss";
 @import "./_font-weight.scss";
 // font variant
 // letter spacing
+@import "./_letter-spacing.scss";
 // line height
+@import "./_line-height.scss";
 @import "./_list-style.scss";
 @import "./_text-align.scss";
 @import "./_text-color.scss";
@@ -18,9 +21,12 @@
 
 
 @mixin kendo-utils--typography() {
+    @include kendo-utils--typography--font-family();
     @include kendo-utils--typography--font-size();
     @include kendo-utils--typography--font-style();
     @include kendo-utils--typography--font-weight();
+    @include kendo-utils--typography--letter-spacing();
+    @include kendo-utils--typography--line-height();
     @include kendo-utils--typography--list-style-type();
     @include kendo-utils--typography--text-align();
     @include kendo-utils--typography--text-color();

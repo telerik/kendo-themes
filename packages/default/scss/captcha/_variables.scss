@@ -9,13 +9,13 @@ $kendo-captcha-spacer: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-captcha-width: 280px !default;
 /// The font family of the Captcha.
 /// @group captcha
-$kendo-captcha-font-family: $kendo-font-family !default;
+$kendo-captcha-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Captcha.
 /// @group captcha
-$kendo-captcha-font-size: $kendo-font-size-md !default;
+$kendo-captcha-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Captcha.
 /// @group captcha
-$kendo-captcha-line-height: $kendo-line-height-md !default;
+$kendo-captcha-line-height: var( --kendo-line-height, normal ) !default;
 /// The gap of the Captcha.
 /// @group captcha
 $kendo-captcha-gap: $kendo-captcha-spacer !default;
@@ -41,7 +41,7 @@ $kendo-captcha-image-controls-gap: $kendo-captcha-spacer !default;
 $kendo-captcha-validation-message-margin-top: k-math-div( $kendo-captcha-spacer, 2 ) !default;
 /// The font size of the Captcha validation message.
 /// @group captcha
-$kendo-captcha-validation-message-font-size: $kendo-font-size-sm !default;
+$kendo-captcha-validation-message-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font style of the Captcha validation message.
 /// @group captcha
 $kendo-captcha-validation-message-font-style: italic !default;

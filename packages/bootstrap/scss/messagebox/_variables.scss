@@ -4,8 +4,8 @@ $kendo-message-box-padding-x: $kendo-padding-md-x !default;
 $kendo-message-box-padding-y: $kendo-padding-md-y !default;
 $kendo-message-box-border-width: 0 0 0 4px !default;
 
-$kendo-message-box-font-size: $kendo-font-size-md !default;
-$kendo-message-box-line-height: $kendo-line-height-md !default;
+$kendo-message-box-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-message-box-line-height: var( --kendo-line-height, normal ) !default;
 
 $kendo-message-box-bg-level: -10 !default;
 $kendo-message-box-text-level: 6 !default;

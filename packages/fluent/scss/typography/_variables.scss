@@ -3,65 +3,98 @@
 
 // Typography
 
-/// Global typography styles for the Kendo Default theme.
-/// @group typography
-$kendo-enable-typography: false !default;
-
-
-/// Font family for monospaced text. Used for styling the code.
-/// @group typography
-$kendo-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
-
-
 // Headings
+
+$kendo-h1-font-size: 32px !default;
+$kendo-h2-font-size: 28px !default;
+$kendo-h3-font-size: 24px !default;
+$kendo-h4-font-size: 20px !default;
+$kendo-h5-font-size: 18px !default;
+$kendo-h6-font-size: 16px !default;
+
+$kendo-h1-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-h2-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-h3-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-h4-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-h5-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-h6-font-family: var( --kendo-font-family, inherit ) !default;
+
+$kendo-h1-line-height: 40px !default;
+$kendo-h2-line-height: 36px !default;
+$kendo-h3-line-height: 32px !default;
+$kendo-h4-line-height: 28px !default;
+$kendo-h5-line-height: 24px !default;
+$kendo-h6-line-height: 22px !default;
+
+$kendo-h2-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+$kendo-h1-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+$kendo-h3-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+$kendo-h4-font-weight: var( --kendo-font-weight-semibold, normal )!default;
+$kendo-h5-font-weight: var( --kendo-font-weight-semibold, normal )!default;
+$kendo-h6-font-weight: var( --kendo-font-weight-semibold, normal )!default;
+
+$kendo-h1-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-h2-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-h3-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-h4-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-h5-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-h6-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+
+$kendo-h1-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+$kendo-h2-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+$kendo-h3-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+$kendo-h4-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+$kendo-h5-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+$kendo-h6-margin: 0 0 var( --kendo-font-size, inherit ) !default;
+
 $kendo-headings: (
     h1: (
-        font-size: 42px,
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal),
-        margin: 0 0 var( --kendo-font-size, inherit)
+        font-size: $kendo-h1-font-size,
+        font-family: $kendo-h1-font-family,
+        line-height: $kendo-h1-line-height,
+        font-weight: $kendo-h1-font-weight,
+        letter-spacing: $kendo-h1-letter-spacing,
+        margin: $kendo-h1-margin
     ),
     h2: (
-        font-size: 32px,
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal),
-        margin: 0 0 var( --kendo-font-size, inherit)
+        font-size: $kendo-h2-font-size,
+        font-family: $kendo-h2-font-family,
+        line-height: $kendo-h2-line-height,
+        font-weight: $kendo-h2-font-weight,
+        letter-spacing: $kendo-h2-letter-spacing,
+        margin: $kendo-h2-margin
     ),
     h3: (
-        font-size: 28px,
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal),
-        margin: 0 0 var( --kendo-font-size, inherit)
+        font-size: $kendo-h3-font-size,
+        font-family: $kendo-h3-font-family,
+        line-height: $kendo-h3-line-height,
+        font-weight: $kendo-h3-font-weight,
+        letter-spacing: $kendo-h3-letter-spacing,
+        margin: $kendo-h3-margin
     ),
     h4: (
-        font-size: 20px,
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal),
-        margin: 0 0 var( --kendo-font-size, inherit)
+        font-size: $kendo-h4-font-size,
+        font-family: $kendo-h4-font-family,
+        line-height: $kendo-h4-line-height,
+        font-weight: $kendo-h4-font-weight,
+        letter-spacing: $kendo-h4-letter-spacing,
+        margin: $kendo-h4-margin
     ),
     h5: (
-        font-size: 18px,
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal),
-        margin: 0 0 var( --kendo-font-size, inherit)
+        font-size: $kendo-h5-font-size,
+        font-family: $kendo-h5-font-family,
+        line-height: $kendo-h5-line-height,
+        font-weight: $kendo-h5-font-weight,
+        letter-spacing: $kendo-h5-letter-spacing,
+        margin: $kendo-h5-margin
     ),
     h6: (
-        font-size: 16px,
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal),
-        margin: 0 0 var( --kendo-font-size, inherit)
+        font-size: $kendo-h6-font-size,
+        font-family: $kendo-h6-font-family,
+        line-height: $kendo-h6-line-height,
+        font-weight: $kendo-h6-font-weight,
+        letter-spacing: $kendo-h6-letter-spacing,
+        margin: $kendo-h6-margin
     )
 ) !default;
 
@@ -94,33 +127,58 @@ $kendo-code-border: var( --kendo-component-border, initial) !default;
 
 
 // Display
+$kendo-display1-font-size: calc( var( --kendo-font-size, inherit ) * 9 ) !default;
+$kendo-display2-font-size: calc( var( --kendo-font-size, inherit ) * 6 )  !default;
+$kendo-display3-font-size: 68px !default;
+$kendo-display4-font-size: calc( var( --kendo-font-size, inherit ) * 3 )  !default;
+
+$kendo-display1-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-display2-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-display3-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-display4-font-family: var( --kendo-font-family, inherit ) !default;
+
+$kendo-display1-line-height: 118px !default;
+$kendo-display2-line-height: 94px !default;
+$kendo-display3-line-height: 76px !default;
+$kendo-display4-line-height: 52px !default;
+
+$kendo-display1-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+$kendo-display2-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+$kendo-display3-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+$kendo-display4-font-weight: var( --kendo-font-weight-semibold, normal ) !default;
+
+$kendo-display1-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-display2-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-display3-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+$kendo-display4-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
+
 $kendo-display: (
     1: (
-        font-size: calc( var( --kendo-font-size, inherit) * 6 ),
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal)
+        font-size: $kendo-display1-font-size,
+        font-family: $kendo-display1-font-family,
+        line-height: $kendo-display1-line-height,
+        font-weight: $kendo-display1-font-weight,
+        letter-spacing: $kendo-display1-letter-spacing
     ),
     2: (
-        font-size: calc( var( --kendo-font-size, inherit) * 5 ),
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal)
+        font-size: $kendo-display2-font-size,
+        font-family: $kendo-display2-font-family,
+        line-height: $kendo-display2-line-height,
+        font-weight: $kendo-display2-font-weight,
+        letter-spacing: $kendo-display2-letter-spacing
     ),
     3: (
-        font-size: calc( var( --kendo-font-size, inherit) * 4 ),
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal)
+        font-size: $kendo-display3-font-size,
+        font-family: $kendo-display3-font-family,
+        line-height: $kendo-display3-line-height,
+        font-weight: $kendo-display3-font-weight,
+        letter-spacing: $kendo-display3-letter-spacing
     ),
     4: (
-        font-size: calc( var( --kendo-font-size, inherit) * 3 ),
-        font-family: var( --kendo-font-family, inherit ),
-        line-height: var( --kendo-line-height, normal ),
-        font-weight: var( --kendo-font-weight-bold, bold),
-        letter-spacing: var( --kendo-letter-spacing, normal)
+        font-size: $kendo-display4-font-size,
+        font-family: $kendo-display4-font-family,
+        line-height: $kendo-display4-line-height,
+        font-weight: $kendo-display4-font-weight,
+        letter-spacing: $kendo-display4-letter-spacing
     )
 ) !default;

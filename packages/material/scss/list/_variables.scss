@@ -2,14 +2,14 @@
 
 /// The font family of the List components.
 /// @group list
-$kendo-list-font-family: $kendo-font-family !default;
+$kendo-list-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The font size of the List component, if no size is set.
 /// @group list
 $kendo-list-font-size: null !default;
-$kendo-list-sm-font-size: $kendo-font-size-md !default;
-$kendo-list-md-font-size: $kendo-font-size-md !default;
-$kendo-list-lg-font-size: $kendo-font-size-lg !default;
+$kendo-list-sm-font-size: var( --kendo-font-size, inherit )!default;
+$kendo-list-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
 /// The line height of the List component, if no size is set.
 /// @group list
@@ -52,7 +52,7 @@ $kendo-list-lg-header-line-height: null !default;
 
 /// The font weight of the List header.
 /// @group list
-$kendo-list-header-font-weight: $kendo-font-weight-bold !default;
+$kendo-list-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
 /// The horizontal padding of the List items, when no size is set.
 /// @group list
@@ -116,7 +116,7 @@ $kendo-list-lg-group-item-line-height: null !default;
 
 /// The font weight of a List group item.
 /// @group list
-$kendo-list-group-item-font-weight: $kendo-font-weight-bold !default;
+$kendo-list-group-item-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
 
 /// The map with the sizes of the List.

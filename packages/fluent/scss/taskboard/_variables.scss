@@ -24,7 +24,7 @@ $kendo-taskboard-padding-x: 0px !default;
 $kendo-taskboard-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the TaskBoard.
 /// @group taskboard
-$kendo-taskboard-font-size: var( --kendo-font-size-md, inherit ) !default;
+$kendo-taskboard-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the TaskBoard.
 /// @group taskboard
 $kendo-taskboard-line-height: var( --kendo-line-height, inherit ) !default;
@@ -189,7 +189,7 @@ $kendo-taskboard-card-selected-shadow: var( --kendo-box-shadow-depth-3, none ) !
 
 /// The font size of the TaskBoard Card title.
 /// @group taskboard
-$kendo-taskboard-card-title-font-size: var( --kendo-font-size-md, 1rem ) !default;
+$kendo-taskboard-card-title-font-size: var( --kendo-font-size, 1rem ) !default;
 /// The font weight of the TaskBoard Card title.
 /// @group taskboard
 $kendo-taskboard-card-title-font-weight: var( --kendo-font-weight-bold, 600 ) !default;

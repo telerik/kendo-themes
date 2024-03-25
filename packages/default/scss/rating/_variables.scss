@@ -2,13 +2,13 @@
 
 /// The font family of the Rating.
 /// @group rating
-$kendo-rating-font-family: $kendo-font-family !default;
+$kendo-rating-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the Rating.
 /// @group rating
-$kendo-rating-font-size: $kendo-font-size-md !default;
+$kendo-rating-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Rating.
 /// @group rating
-$kendo-rating-line-height: $kendo-line-height-md !default;
+$kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal margin of the Rating container.
 /// @group rating
@@ -29,7 +29,7 @@ $kendo-rating-label-margin-x: $kendo-padding-md-x !default;
 $kendo-rating-label-margin-y: $kendo-padding-md-y !default;
 /// The line height of the Rating label.
 /// @group rating
-$kendo-rating-label-line-height: $kendo-line-height-lg !default;
+$kendo-rating-label-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The size of the Rating icon.
 /// @group rating

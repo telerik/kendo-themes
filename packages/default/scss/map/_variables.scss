@@ -4,9 +4,9 @@
 // Map
 $kendo-map-border-width: 0px !default;
 
-$kendo-map-font-size: $kendo-font-size-md !default;
-$kendo-map-line-height: $kendo-line-height-md !default;
-$kendo-map-font-family: $kendo-font-family !default;
+$kendo-map-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-map-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-map-font-family: var( --kendo-font-family, inherit ) !default;
 
 $kendo-map-bg: $kendo-component-bg !default;
 $kendo-map-text: $kendo-component-text !default;
@@ -24,7 +24,7 @@ $kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding
 
 $kendo-map-attribution-padding-x: $kendo-padding-sm-x !default;
 $kendo-map-attribution-padding-y: $kendo-padding-sm-y !default;
-$kendo-map-attribution-font-size: ($kendo-map-font-size * .75) !default;
+$kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75) !default;
 $kendo-map-attribution-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 80%, transparent), rgba( $kendo-map-bg, .8 )) !default;
 
 $kendo-map-marker-fill: $kendo-color-primary !default;

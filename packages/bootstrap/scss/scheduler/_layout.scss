@@ -22,7 +22,7 @@
             & { // stylelint-disable-line
                 padding-block: $kendo-padding-sm-y;
                 padding-inline: $kendo-padding-sm-x;
-                font-size: $kendo-font-size-sm;
+                font-size: var( --kendo-font-size-sm, inherit );
             }
         }
 

@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-card-title-font-size</td>
     <td></td>
-    <td><code>var( --kendo-font-size-md, 1rem )</code></td>
+    <td><code>var( --kendo-font-size, 1rem )</code></td>
     <td></td>
 </tr>
 <tr>

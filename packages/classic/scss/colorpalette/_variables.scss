@@ -2,10 +2,10 @@
 
 /// The font family of the ColorPalette.
 /// @group colorpalette
-$kendo-color-palette-font-family: $kendo-font-family !default;
+$kendo-color-palette-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ColorPalette.
 /// @group colorpalette
-$kendo-color-palette-font-size: $kendo-font-size-md !default;
+$kendo-color-palette-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the ColorPalette.
 /// @group colorpalette
 $kendo-color-palette-line-height: 0 !default;

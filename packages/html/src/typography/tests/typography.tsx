@@ -2,9 +2,16 @@
 import { Typography } from '../../typography';
 import { Button } from '../../button';
 
+const styles = `
+   #test-area {
+        max-width: 1080px;
+        gap: 10px;
+   }
+`;
 
 export default () =>(
     <>
+        <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <span>Headings</span>

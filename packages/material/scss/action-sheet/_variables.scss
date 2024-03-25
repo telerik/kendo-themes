@@ -10,8 +10,8 @@ $kendo-actionsheet-max-height: 60vh !default;
 $kendo-actionsheet-border-width: 0px !default;
 $kendo-actionsheet-border-radius: 0px !default;
 
-$kendo-actionsheet-font-size: $kendo-font-size-md !default;
-$kendo-actionsheet-font-family: $kendo-font-family !default;
+$kendo-actionsheet-font-size: var( --kendo-font-size, inherit )  !default;
+$kendo-actionsheet-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-actionsheet-line-height: k-math-div( 20, 14 ) !default;
 
 $kendo-actionsheet-bg: $kendo-component-bg !default;
@@ -24,7 +24,7 @@ $kendo-actionsheet-shadow: $box-shadow-depth-7 !default;
 $kendo-actionsheet-titlebar-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-actionsheet-titlebar-border-width: null !default;
-$kendo-actionsheet-titlebar-font-size: $kendo-font-size-lg !default;
+$kendo-actionsheet-titlebar-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-actionsheet-titlebar-font-family: null !default;
 $kendo-actionsheet-titlebar-line-height: 1.25 !default;
 $kendo-actionsheet-titlebar-gap: k-map-get( $kendo-spacing, 4 ) !default;
@@ -35,8 +35,8 @@ $kendo-actionsheet-titlebar-border: null !default;
 $kendo-actionsheet-titlebar-gradient: null !default;
 $kendo-actionsheet-titlebar-shadow: null !default;
 
-$kendo-actionsheet-subtitle-font-size: $kendo-font-size-sm !default;
-$kendo-actionsheet-subtitle-line-height: $kendo-line-height-sm !default;
+$kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, normal ) !default;
 $kendo-actionsheet-subtitle-text: $kendo-subtle-text !default;
 
 
@@ -78,7 +78,7 @@ $kendo-actionsheet-item-disabled-opacity: .42 !default;
 
 
 // Adaptive Actionsheet
-$kendo-adaptive-actionsheet-font-size: $kendo-font-size-lg !default;
+$kendo-adaptive-actionsheet-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-adaptive-actionsheet-titlebar-border-width: 1px !default;
 $kendo-adaptive-actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-y !default;

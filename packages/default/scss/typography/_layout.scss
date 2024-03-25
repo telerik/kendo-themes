@@ -17,11 +17,11 @@
     .k-body,
     .k-typography {
         @include typography(
-            $kendo-font-size-md,
-            $kendo-font-family,
-            $kendo-line-height-md,
-            $kendo-font-weight-normal,
-            $kendo-letter-spacing
+            var( --kendo-font-size, inherit ),
+            var( --kendo-font-family, inherit ),
+            var( --kendo-line-height, normal ),
+            var( --kendo-font-weight-normal, normal ),
+            var( --kendo-letter-spacing, normal )
         );
         margin: 0;
 
@@ -31,88 +31,47 @@
     }
 
     // Headings
-    .k-h1 {
-        @include typography(
-            $kendo-h1-font-size,
-            $kendo-h1-font-family,
-            $kendo-h1-line-height,
-            $kendo-h1-font-weight,
-            $kendo-h1-letter-spacing
-        );
-        margin: $kendo-h1-margin;
-    }
-    .k-h2 {
-        @include typography(
-            $kendo-h2-font-size,
-            $kendo-h2-font-family,
-            $kendo-h2-line-height,
-            $kendo-h2-font-weight,
-            $kendo-h2-letter-spacing
-        );
-        margin: $kendo-h2-margin;
-    }
-    .k-h3 {
-        @include typography(
-            $kendo-h3-font-size,
-            $kendo-h3-font-family,
-            $kendo-h3-line-height,
-            $kendo-h3-font-weight,
-            $kendo-h3-letter-spacing
-        );
-        margin: $kendo-h3-margin;
-    }
-    .k-h4 {
-        @include typography(
-            $kendo-h4-font-size,
-            $kendo-h4-font-family,
-            $kendo-h4-line-height,
-            $kendo-h4-font-weight,
-            $kendo-h4-letter-spacing
-        );
-        margin: $kendo-h4-margin;
-    }
-    .k-h5 {
-        @include typography(
-            $kendo-h5-font-size,
-            $kendo-h5-font-family,
-            $kendo-h5-line-height,
-            $kendo-h5-font-weight,
-            $kendo-h5-letter-spacing
-        );
-        margin: $kendo-h5-margin;
-    }
-    .k-h6 {
-        @include typography(
-            $kendo-h6-font-size,
-            $kendo-h6-font-family,
-            $kendo-h6-line-height,
-            $kendo-h6-font-weight,
-            $kendo-h6-letter-spacing
-        );
-        margin: $kendo-h6-margin;
+    @each $heading, $heading-props in $kendo-headings {
+        $_font-size: k-map-get( $heading-props, font-size );
+        $_font-family: k-map-get( $heading-props, font-family );
+        $_line-height: k-map-get( $heading-props, line-height );
+        $_font-weight: k-map-get( $heading-props, font-weight );
+        $_letter-spacing: k-map-get( $heading-props, letter-spacing );
+        $_margin: k-map-get( $heading-props, margin );
+
+        .k-#{$heading} {
+            @include typography(
+                var( --kendo-#{$heading}-font-size, #{$_font-size} ),
+                var( --kendo-#{$heading}-font-family, #{$_font-family} ),
+                var( --kendo-#{$heading}-line-height, #{$_line-height} ),
+                var( --kendo-#{$heading}-font-weight, #{$_font-weight} ),
+                var( --kendo-#{$heading}-letter-spacing, #{$_letter-spacing} ),
+            );
+            margin: var( --kendo-#{$heading}-margin, #{$_margin} );
+        }
     }
 
     // Paragraph
     .k-paragraph {
         @include typography(
-            $kendo-paragraph-font-size,
-            $kendo-paragraph-font-family,
-            $kendo-paragraph-line-height,
-            $kendo-paragraph-font-weight,
-            $kendo-paragraph-letter-spacing
+            var( --kendo-paragraph-font-size, #{$kendo-paragraph-font-size}),
+            var( --kendo-paragraph-font-family, #{$kendo-paragraph-font-family}),
+            var( --kendo-paragraph-line-height, #{$kendo-paragraph-line-height}),
+            var( --kendo-paragraph-font-weight, #{$kendo-paragraph-font-weight}),
+            var( --kendo-paragraph-letter-spacing, #{$kendo-paragraph-letter-spacing})
         );
-        margin: $kendo-paragraph-margin;
+        margin: var( --kendo-paragraph-margin, #{$kendo-paragraph-margin});
     }
 
     // Code snippet
     .k-pre,
     .k-code {
         @include typography(
-            $kendo-code-font-size,
-            $kendo-code-font-family,
-            $kendo-code-line-height,
-            $kendo-code-font-weight,
-            $kendo-code-letter-spacing
+            var( --kendo-code-font-size, #{$kendo-code-font-size}),
+            var( --kendo-code-font-family, #{$kendo-code-font-family}),
+            var( --kendo-code-line-height, #{$kendo-code-line-height}),
+            var( --kendo-code-font-weight, #{$kendo-code-font-weight}),
+            var( --kendo-code-letter-spacing, #{$kendo-code-letter-spacing})
         );
         border-style: solid;
         border-width: $kendo-code-border-width;
@@ -139,43 +98,24 @@
     }
 
     // Display
-    .k-display-1 {
-        @include typography(
-            $kendo-display1-font-size,
-            $kendo-display1-font-family,
-            $kendo-display1-line-height,
-            $kendo-display1-font-weight,
-            $kendo-display1-letter-spacing
-        );
-    }
-    .k-display-2 {
-        @include typography(
-            $kendo-display2-font-size,
-            $kendo-display2-font-family,
-            $kendo-display2-line-height,
-            $kendo-display2-font-weight,
-            $kendo-display2-letter-spacing
-        );
-    }
-    .k-display-3 {
-        @include typography(
-            $kendo-display3-font-size,
-            $kendo-display3-font-family,
-            $kendo-display3-line-height,
-            $kendo-display3-font-weight,
-            $kendo-display3-letter-spacing
-        );
-    }
-    .k-display-4 {
-        @include typography(
-            $kendo-display4-font-size,
-            $kendo-display4-font-family,
-            $kendo-display4-line-height,
-            $kendo-display4-font-weight,
-            $kendo-display4-letter-spacing
-        );
-    }
+    @each $display, $kendo-display-props in $kendo-display {
+        $_font-size: k-map-get( $kendo-display-props, font-size );
+        $_font-family: k-map-get( $kendo-display-props, font-family );
+        $_line-height: k-map-get( $kendo-display-props, line-height );
+        $_font-weight: k-map-get( $kendo-display-props, font-weight );
+        $_letter-spacing: k-map-get( $kendo-display-props, letter-spacing );
+        $_margin: k-map-get( $kendo-display-props, margin );
 
+        .k-display-#{$display} {
+            @include typography(
+                var( --kendo-display#{$display}-font-size, #{$_font-size} ),
+                var( --kendo-display#{$display}-font-family, #{$_font-family} ),
+                var( --kendo-display#{$display}-line-height, #{$_line-height} ),
+                var( --kendo-display#{$display}-font-weight, #{$_font-weight} ),
+                var( --kendo-display#{$display}-letter-spacing, #{$_letter-spacing} ),
+            );
+        }
+    }
 }
 
 
