@@ -26,10 +26,10 @@ $kendo-bottom-nav-shadow: null !default;
 
 /// Horizontal padding of the bottom navigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-bottom-nav-item-padding-x: k-spacing(2) !default;
 /// Vertical padding of the bottom navigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-bottom-nav-item-padding-y: k-spacing(1) !default;
 /// Minimum width of the bottom navigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-min-width: 72px !default;
@@ -41,7 +41,7 @@ $kendo-bottom-nav-item-max-width: none !default;
 $kendo-bottom-nav-item-border-radius: null !default;
 /// Spacing of the bottom navigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-gap: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-bottom-nav-item-gap: k-spacing(1) !default;
 /// Offset of the focused bottom navigation item.
 /// @group bottom-nav
 $kendo-bottom-nav-item-focus-offset: null !default;

@@ -11,38 +11,38 @@ $kendo-treeview-sizes: (
     sm: (
         font-size: $kendo-font-size-sm,
         line-height: $kendo-line-height-sm,
-        filter-padding-x: k-map-get( $kendo-spacing, 1 ),
-        filter-padding-y: k-map-get( $kendo-spacing, 1 ),
-        indent: k-map-get( $kendo-spacing, 4 ),
-        icon-spacing: k-map-get( $kendo-spacing, 1 ),
-        checkbox-spacing: k-map-get( $kendo-spacing, 1 ),
-        item-padding-x: k-map-get( $kendo-spacing, 2 ),
-        item-padding-y: k-map-get( $kendo-spacing, 1 ),
-        item-border-radius: k-map-get( $kendo-spacing, 0.5 )
+        filter-padding-x: k-spacing(1),
+        filter-padding-y: k-spacing(1),
+        indent: k-spacing(4),
+        icon-spacing: k-spacing(1),
+        checkbox-spacing: k-spacing(1),
+        item-padding-x: k-spacing(2),
+        item-padding-y: k-spacing(1),
+        item-border-radius: k-spacing(0.5)
     ),
     md: (
         font-size: $kendo-font-size-md,
         line-height: $kendo-line-height-md,
-        filter-padding-x: k-map-get( $kendo-spacing, 2 ),
-        filter-padding-y: k-map-get( $kendo-spacing, 2 ),
-        indent: k-map-get( $kendo-spacing, 4 ),
-        icon-spacing: k-map-get( $kendo-spacing, 1 ),
-        checkbox-spacing: k-map-get( $kendo-spacing, 1 ),
+        filter-padding-x: k-spacing(2),
+        filter-padding-y: k-spacing(2),
+        indent: k-spacing(4),
+        icon-spacing: k-spacing(1),
+        checkbox-spacing: k-spacing(1),
         item-padding-x: k-map-get( $kendo-spacing, 2.5 ),
-        item-padding-y: k-map-get( $kendo-spacing, 1.5 ),
-        item-border-radius: k-map-get( $kendo-spacing, 1 )
+        item-padding-y: k-spacing(1.5),
+        item-border-radius: k-spacing(1)
     ),
     lg: (
         font-size: $kendo-font-size-lg,
         line-height: $kendo-line-height-lg,
-        filter-padding-x: k-map-get( $kendo-spacing, 3 ),
-        filter-padding-y: k-map-get( $kendo-spacing, 3 ),
-        indent: k-map-get( $kendo-spacing, 4 ),
-        icon-spacing: k-map-get( $kendo-spacing, 1 ),
-        checkbox-spacing: k-map-get( $kendo-spacing, 1 ),
-        item-padding-x: k-map-get( $kendo-spacing, 3 ),
-        item-padding-y: k-map-get( $kendo-spacing, 2 ),
-        item-border-radius: k-map-get( $kendo-spacing, 2 )
+        filter-padding-x: k-spacing(3),
+        filter-padding-y: k-spacing(3),
+        indent: k-spacing(4),
+        icon-spacing: k-spacing(1),
+        checkbox-spacing: k-spacing(1),
+        item-padding-x: k-spacing(3),
+        item-padding-y: k-spacing(2),
+        item-border-radius: k-spacing(2)
     )
 ) !default;
 

@@ -4,33 +4,33 @@ $kendo-input-border-style: solid !default;
 
 $kendo-input-focus-border-width: 2px !default;
 
-$kendo-input-sm-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-input-sm-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-input-sm-padding-x: k-spacing(2) !default;
+$kendo-input-sm-padding-y: k-spacing(1) !default;
 $kendo-input-sm-font-size: $kendo-font-size-sm !default;
 $kendo-input-sm-line-height: $kendo-line-height-sm !default;
-$kendo-input-sm-icon-size: calc( #{$kendo-icon-size-md} + #{$kendo-input-sm-padding-y * 2} ) !default;
+$kendo-input-sm-icon-size: calc( #{$kendo-icon-size-md} + calc( #{$kendo-input-sm-padding-y} * 2 ) ) !default;
 $kendo-input-sm-button-padding-x: $kendo-input-sm-padding-y !default;
 $kendo-input-sm-button-padding-y: $kendo-input-sm-padding-y !default;
 $kendo-input-sm-button-width: null !default;
 $kendo-input-sm-spinner-width: null !default;
 $kendo-input-sm-spinner-icon-offset: null !default;
 
-$kendo-input-md-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-input-md-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-input-md-padding-x: k-spacing(2) !default;
+$kendo-input-md-padding-y: k-spacing(1.5) !default;
 $kendo-input-md-font-size: $kendo-font-size-md !default;
 $kendo-input-md-line-height: $kendo-line-height-md !default;
-$kendo-input-md-icon-size: calc( #{$kendo-icon-size-md} + #{$kendo-input-md-padding-y * 2} ) !default;
+$kendo-input-md-icon-size: calc( #{$kendo-icon-size-md} + calc( #{$kendo-input-md-padding-y} * 2 ) ) !default;
 $kendo-input-md-button-padding-x: $kendo-input-md-padding-y !default;
 $kendo-input-md-button-padding-y: $kendo-input-md-padding-y !default;
 $kendo-input-md-button-width: null !default;
 $kendo-input-md-spinner-width: null !default;
 $kendo-input-md-spinner-icon-offset: null !default;
 
-$kendo-input-lg-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-input-lg-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-lg-padding-x: k-spacing(2) !default;
+$kendo-input-lg-padding-y: k-spacing(2) !default;
 $kendo-input-lg-font-size: $kendo-font-size-lg !default;
 $kendo-input-lg-line-height: $kendo-line-height-lg !default;
-$kendo-input-lg-icon-size: calc( #{$kendo-icon-size-md} + #{$kendo-input-lg-padding-y * 2} ) !default;
+$kendo-input-lg-icon-size: calc( #{$kendo-icon-size-md} + calc( #{$kendo-input-lg-padding-y} * 2 ) ) !default;
 $kendo-input-lg-button-padding-x: $kendo-input-lg-padding-y !default;
 $kendo-input-lg-button-padding-y: $kendo-input-lg-padding-y !default;
 $kendo-input-lg-button-width: null !default;

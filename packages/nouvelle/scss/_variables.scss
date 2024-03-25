@@ -86,8 +86,8 @@ $kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
 $kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
 $kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
-$kendo-icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-icon-spacing: k-spacing(2) !default;
+$kendo-icon-padding: k-spacing(1) !default;
 
 
 // Color settings

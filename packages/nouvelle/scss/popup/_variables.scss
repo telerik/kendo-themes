@@ -4,7 +4,7 @@ $kendo-popup-padding-y: null !default;
 $kendo-popup-border-width: 1px !default;
 $kendo-popup-border-style: solid !default;
 
-$kendo-popup-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-popup-border-radius: k-spacing(1) !default;
 
 $kendo-popup-font-family: null !default;
 $kendo-popup-font-size: null !default;

@@ -21,7 +21,7 @@
         align-items: center;
         align-content: center;
         justify-content: center;
-        gap: k-var( --kendo-button-gap, #{k-map-get( $kendo-spacing, 1 )} );
+        gap: k-var( --kendo-button-gap, #{k-spacing(1)} );
         flex-shrink: 0;
         vertical-align: middle;
         position: relative;

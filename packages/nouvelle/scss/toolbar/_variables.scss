@@ -25,17 +25,17 @@ $kendo-toolbar-item-focus-outline-width: 1px !default;
 /// @group toolbar
 $kendo-toolbar-item-focus-outline-style: solid !default;
 
-$kendo-toolbar-sm-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-toolbar-sm-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-toolbar-sm-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-toolbar-sm-padding-x: k-spacing(1) !default;
+$kendo-toolbar-sm-padding-y: k-spacing(1) !default;
+$kendo-toolbar-sm-spacing: k-spacing(1) !default;
 
-$kendo-toolbar-md-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-toolbar-md-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-toolbar-md-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-md-padding-y: k-spacing(2) !default;
+$kendo-toolbar-md-padding-x: k-spacing(2) !default;
+$kendo-toolbar-md-spacing: k-spacing(2) !default;
 
 $kendo-toolbar-lg-padding-x: k-map-get( $kendo-spacing, 2.5 ) !default;
 $kendo-toolbar-lg-padding-y: k-map-get( $kendo-spacing, 2.5 ) !default;
-$kendo-toolbar-lg-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-lg-spacing: k-spacing(2) !default;
 
 /// Sizes map for the toolbar.
 /// @group toolbar

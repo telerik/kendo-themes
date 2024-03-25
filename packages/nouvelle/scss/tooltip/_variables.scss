@@ -5,10 +5,10 @@
 $kendo-tooltip-border-radius: k-map-get( $kendo-border-radii, md ) !default;
 /// The horizontal padding of the tooltip
 /// @group tooltip
-$kendo-tooltip-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-tooltip-padding-x: k-spacing(2) !default;
 /// The vertical padding of the tooltip
 /// @group tooltip
-$kendo-tooltip-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-tooltip-padding-y: k-spacing(2) !default;
 /// The width of the border around the tooltip
 /// @group tooltip
 $kendo-tooltip-border-width: 0px !default;
@@ -24,7 +24,7 @@ $kendo-tooltip-line-height: $kendo-line-height-sm !default;
 
 /// The margin of the tooltip title
 /// @group tooltip
-$kendo-tooltip-title-margin: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-tooltip-title-margin: k-spacing(1) !default;
 /// The font size of the tooltip title
 /// @group tooltip
 $kendo-tooltip-title-font-size: $kendo-font-size-md !default;
@@ -35,11 +35,11 @@ $kendo-tooltip-title-line-height: $kendo-line-height-md !default;
 /// @group tooltip
 $kendo-tooltip-title-font-weight: normal !default;
 
-$kendo-tooltip-actions-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-tooltip-actions-spacing: k-spacing(1) !default;
 
 /// The size of the tooltip callout
 /// @group tooltip
-$kendo-tooltip-callout-size: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-tooltip-callout-size: k-spacing(2) !default;
 
 
 $kendo-tooltip-theme-matrix: (

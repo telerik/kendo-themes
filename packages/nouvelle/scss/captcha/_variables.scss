@@ -12,7 +12,7 @@ $kendo-captcha-font-size: $kendo-font-size-md !default;
 $kendo-captcha-line-height: $kendo-line-height-md !default;
 /// The spacing of the Captcha.
 /// @group captcha
-$kendo-captcha-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-captcha-spacing: k-spacing(2) !default;
 /// The background color of the Captcha.
 /// @group captcha
 $kendo-captcha-bg: $kendo-component-bg !default;
@@ -25,14 +25,14 @@ $kendo-captcha-border: $kendo-component-border !default;
 
 /// The spacing of the Captcha image wrapper.
 /// @group captcha
-$kendo-captcha-image-wrap-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-captcha-image-wrap-spacing: k-spacing(2) !default;
 /// The spacing of the Captcha image controls.
 /// @group captcha
-$kendo-captcha-image-controls-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-captcha-image-controls-spacing: k-spacing(1) !default;
 
 /// The offset of the Captcha validation message.
 /// @group captcha
-$kendo-captcha-validation-offset-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-captcha-validation-offset-y: k-spacing(1) !default;
 /// The font size of the Captcha validation message.
 /// @group captcha
 $kendo-captcha-validation-font-size: $kendo-font-size-sm !default;

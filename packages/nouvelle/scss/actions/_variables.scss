@@ -2,10 +2,10 @@
 
 /// Horizontal padding of actions container.
 /// @group actions
-$kendo-actions-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-actions-padding-x: k-spacing(2) !default;
 /// Vertical padding of actions container.
 /// @group actions
-$kendo-actions-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-actions-padding-y: k-spacing(2) !default;
 /// Width of the border around actions container.
 /// @group actions
 $kendo-actions-border-width: 0 0 0 0 !default;
@@ -22,10 +22,10 @@ $kendo-actions-border: null !default;
 
 /// Spacing between items in actions container
 /// @group actions
-$kendo-actions-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-actions-spacing: k-spacing(2) !default;
 
 
 
 /// Spacing between items in actions list
 /// @group actions-list
-$kendo-actions-list-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-actions-list-spacing: k-spacing(1) !default;

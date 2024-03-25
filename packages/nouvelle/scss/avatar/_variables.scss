@@ -17,9 +17,9 @@ $kendo-avatar-line-height: $kendo-line-height-md !default;
 /// The sizes of the avatar.
 /// @group avatar
 $kendo-avatar-sizes: (
-    sm: k-map-get( $kendo-spacing, 4 ),
-    md: k-map-get( $kendo-spacing, 8 ),
-    lg: k-map-get( $kendo-spacing, 16 )
+    sm: k-spacing(4),
+    md: k-spacing(8),
+    lg: k-spacing(16)
 ) !default;
 
 $kendo-avatar-theme-matrix: (
