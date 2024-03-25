@@ -714,9 +714,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-values-margin-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
-    <td><code>0.125rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the clear value icon.</div></div>
@@ -724,9 +724,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-values-margin-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-input-values-margin-y</code></td>
-    <td><code>0.125rem</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the clear value icon.</div></div>

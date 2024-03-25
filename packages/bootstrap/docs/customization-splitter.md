@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-splitter-splitbar-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
-    <td><code>0.75rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Splitter splitbar.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-splitter-drag-icon-margin</td>
-    <td>Number</td>
-    <td><code>7px</code></td>
-    <td><code>7px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(3.5)} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-3\.5, 0.875rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Splitter drag handle icon.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-splitter-collapse-icon-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, .5 )</code></td>
-    <td><code>0.125rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the collapse icon in the Splitter.</div></div>

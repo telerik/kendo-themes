@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-sm-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
-    <td><code>12px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a small CheckBox.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-md-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a medium CheckBox.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-lg-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 5 )</code></td>
-    <td><code>20px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a large CheckBox.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-sm-glyph-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
-    <td><code>10px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a small CheckBox.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-md-glyph-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 3.5 )</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3.5)</code></td>
+    <td><code>var(--kendo-spacing-3\.5, 0.875rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a medium CheckBox.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-lg-glyph-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4.5 )</code></td>
-    <td><code>18px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a large CheckBox.</div></div>
@@ -439,9 +439,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-label-margin-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the CheckBox inside a label.</div></div>
@@ -449,9 +449,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-list-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in a horizontal CheckBox list.</div></div>
@@ -459,9 +459,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-list-item-padding-x</td>
-    <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the CheckBox list items.</div></div>
@@ -469,9 +469,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-list-item-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-list-md-item-padding-y</code></td>
-    <td><code>4px</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the CheckBox list items.</div></div>

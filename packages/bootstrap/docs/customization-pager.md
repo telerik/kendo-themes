@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-pager-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Pager.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-sm-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Pager.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-md-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Pager.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-lg-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
-    <td><code>0.625rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Pager.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-pager-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Pager.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-sm-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-pager-sm-padding-x</code></td>
-    <td><code>0.25rem</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Pager.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-md-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-pager-md-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Pager.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-lg-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-pager-lg-padding-x</code></td>
-    <td><code>0.625rem</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Pager.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-sm-calc-size</code></td>
-    <td><code>calc(1.4285714286 * 1em + 0.25rem * 2 + 1px * 2)</code></td>
+    <td><code>calc(1.4285714286 * 1em + 0.25rem * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the small Pager.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-md-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + 0.375rem * 2 + 1px * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + 0.375rem * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the medium Pagers.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-pager-lg-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-lg-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + 0.5rem * 2 + 1px * 2)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + 0.5rem * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the large Pagers.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-sm-item-group-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 3.5 )</code></td>
-    <td><code>0.875rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3.5)</code></td>
+    <td><code>var(--kendo-spacing-3\.5, 0.875rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the small Pager.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-md-item-group-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the medium Pager.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-lg-item-group-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4.5 )</code></td>
-    <td><code>1.125rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the large Pager.</div></div>
@@ -259,9 +259,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-section-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Pager sections.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-item-border-radius</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager items.</div></div>
@@ -493,7 +493,7 @@ The following table lists the available variables for customization.
         pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, item-group-spacing: 0.875rem, item-min-width: calc(1.4285714286 * 1em + 0.25rem * 2 + 1px * 2), pager-dropdown-width: 5em), md: (padding-x: 0.5rem, padding-y: 0.5rem, item-group-spacing: 1rem, item-min-width: calc(var(--kendo-line-height, normal) * 1em + 0.375rem * 2 + 1px * 2), pager-dropdown-width: 5em), lg: (padding-x: 0.625rem, padding-y: 0.625rem, item-group-spacing: 1.125rem, item-min-width: calc(var(--kendo-line-height, normal) * 1em + 0.5rem * 2 + 1px * 2), pager-dropdown-width: 6em))</code></td>
+    <td><code>(sm: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1, 0.25rem), item-group-spacing: var(--kendo-spacing-3\.5, 0.875rem), item-min-width: calc(1.4285714286 * 1em + 0.25rem * 2 + 2px), pager-dropdown-width: 5em), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-2, 0.5rem), item-group-spacing: var(--kendo-spacing-4, 1rem), item-min-width: calc(var(--kendo-line-height, normal) * 1em + 0.375rem * 2 + 2px), pager-dropdown-width: 5em), lg: (padding-x: var(--kendo-spacing-2\.5, 0.625rem), padding-y: var(--kendo-spacing-2\.5, 0.625rem), item-group-spacing: var(--kendo-spacing-4\.5, 1.125rem), item-min-width: calc(var(--kendo-line-height, normal) * 1em + 0.5rem * 2 + 2px), pager-dropdown-width: 6em))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>

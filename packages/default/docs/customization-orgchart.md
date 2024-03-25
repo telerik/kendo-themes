@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-orgchart-spacer</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 6 )</code></td>
-    <td><code>24px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing index of the OrgChart.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>24px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-padding-y</code></td>
-    <td><code>24px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-gap</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>24px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-group-gap</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>24px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart group.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-container-gap</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>24px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the OrgChart node container.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>24px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart node group.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-node-group-padding-y</code></td>
-    <td><code>24px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart node group.</div></div>
@@ -249,9 +249,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-title-margin-bottom</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-orgchart-spacer, 3 )</code></td>
-    <td><code>8px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-orgchart-spacer} / 3 )</code></td>
+    <td><code>calc(var(--kendo-spacing-6, 1.5rem) / 3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart node group title.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-subtitle-margin-bottom</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-spacer</code></td>
-    <td><code>24px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart node group subtitle.</div></div>
@@ -309,9 +309,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-card-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-padding-y</code></td>
-    <td><code>12px</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart Card.</div></div>
@@ -319,9 +319,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-card-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-card-padding-y</code></td>
-    <td><code>12px</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart Card.</div></div>
@@ -359,9 +359,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-card-title-margin-bottom</td>
-    <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart Card title.</div></div>
@@ -379,9 +379,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-card-subtitle-margin-bottom</td>
-    <td>Number</td>
-    <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the OrgChart Card subtitle.</div></div>
@@ -419,9 +419,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-card-body-vbox-margin-right</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>k-math-div( $kendo-orgchart-spacer, 2 )</code></td>
-    <td><code>12px</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)/2</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The right margin of the OrgChart Card body title wrap.</div></div>

@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-multiple-items-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>

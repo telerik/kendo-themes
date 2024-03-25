@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-panelbar-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-padding-x-end</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2)</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-padding-x-end</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2)</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>

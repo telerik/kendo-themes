@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-filter-bottom-margin</td>
     <td></td>
-    <td><code>30px</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>

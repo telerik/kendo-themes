@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>

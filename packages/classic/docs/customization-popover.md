@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-popover-header-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-header-padding-x</code></td>
-    <td><code>16px</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover header.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-popover-header-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-header-padding-y</code></td>
-    <td><code>12px</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover header.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-popover-body-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-body-padding-x</code></td>
-    <td><code>16px</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover body.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-popover-body-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-body-padding-y</code></td>
-    <td><code>16px</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover body.</div></div>

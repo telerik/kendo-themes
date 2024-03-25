@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-border-radius</td>
     <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
     <td><code>4px</code></td>
 </tr>
 <tr>

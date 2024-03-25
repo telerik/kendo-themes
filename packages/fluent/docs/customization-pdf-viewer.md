@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-page-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 7.5 )</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-search-panel-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>

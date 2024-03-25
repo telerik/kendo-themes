@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-label-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-label-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-label-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-inline-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-inline-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-indicator-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 7.5 )</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-indicator-focus-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -590,7 +590,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-progressbar-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>

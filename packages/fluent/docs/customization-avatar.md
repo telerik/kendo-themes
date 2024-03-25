@@ -71,9 +71,9 @@ The following table lists the available variables for customization.
     <td>$kendo-avatar-sizes</td>
     <td></td>
     <td><code>(
-    sm: map.get( $kendo-spacing, 4 ),
-    md: map.get( $kendo-spacing, 8 ),
-    lg: map.get( $kendo-spacing, 16 )
+    sm: k-spacing(4),
+    md: k-spacing(8),
+    lg: k-spacing(16)
 )</code></td>
     <td></td>
 </tr>

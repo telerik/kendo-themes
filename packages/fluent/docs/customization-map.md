@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-margin-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-padding</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-width</td>
     <td></td>
-    <td><code>calc( var( --kendo-icon-size) * 3 + #{$kendo-map-navigator-padding * 2} )</code></td>
+    <td><code>calc( var( --kendo-icon-size) * 3 + calc( #{$kendo-map-navigator-padding} * 2) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-zoom-control-margin</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>

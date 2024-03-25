@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-edit-cell-padding-y</td>
-    <td>Number</td>
-    <td><code>5px</code></td>
-    <td><code>5px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(2.5)} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2\.5, 0.625rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cell.</div></div>
@@ -379,9 +379,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-selection-aggregates-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the selection aggregates items</div></div>
@@ -429,9 +429,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-row-resizer-height</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, .5 )</code></td>
-    <td><code>0.125rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid row resize indicator</div></div>

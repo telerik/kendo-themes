@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-captcha-spacer</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>8px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacer of the Captcha.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-captcha-gap</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-captcha-spacer</code></td>
-    <td><code>8px</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-captcha-image-wrap-gap</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-captcha-spacer</code></td>
-    <td><code>8px</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha image wrapper.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-captcha-image-controls-gap</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-captcha-spacer</code></td>
-    <td><code>8px</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha image controls.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-captcha-validation-message-margin-top</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-captcha-spacer, 2 )</code></td>
-    <td><code>4px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-captcha-spacer} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the Captcha validation message.</div></div>

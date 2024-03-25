@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-focus-offset</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-md-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-lg-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -330,9 +330,9 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-list-sizes</td>
     <td></td>
     <td><code>(
-    sm: map.get( $kendo-spacing, 1 ),
-    md: map.get( $kendo-spacing, 1 ),
-    lg: map.get( $kendo-spacing, 1 )
+    sm: k-spacing(1),
+    md: k-spacing(1),
+    lg: k-spacing(1)
 )</code></td>
     <td></td>
 </tr>

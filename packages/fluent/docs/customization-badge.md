@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-md-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-lg-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>

@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-appbar-margin-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-margin-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-appbar-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>

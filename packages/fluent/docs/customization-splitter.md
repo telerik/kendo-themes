@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-splitter-splitbar-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-splitter-drag-handle-length</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-splitter-drag-handle-thickness</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-splitter-drag-icon-margin</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-splitter-collapse-icon-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, .5 )</code></td>
+    <td><code>k-spacing(.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-splitter-splitbar-static-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>

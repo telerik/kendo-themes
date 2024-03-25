@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )</code></td>
-    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: 10px, cell-padding-y: 4px), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: 24px, cell-padding-y: 10px), lg: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: 24px, cell-padding-y: 10px))</code></td>
+    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: var(--kendo-spacing-2\.5, 0.625rem), cell-padding-y: var(--kendo-spacing-1, 0.25rem)), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: var(--kendo-spacing-6, 1.5rem), cell-padding-y: var(--kendo-spacing-2\.5, 0.625rem)), lg: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: var(--kendo-spacing-6, 1.5rem), cell-padding-y: var(--kendo-spacing-2\.5, 0.625rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>

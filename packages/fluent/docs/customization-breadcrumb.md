@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-breadcrumb-margin-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-margin-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-sm-link-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-lg-link-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-sm-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-lg-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -650,7 +650,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-icon-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-sm-icon-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -680,7 +680,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-lg-icon-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>

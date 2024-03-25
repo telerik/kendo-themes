@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-expander-margin-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-indicator-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>

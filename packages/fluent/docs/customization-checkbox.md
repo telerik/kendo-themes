@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-label-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-list-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-list-item-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>

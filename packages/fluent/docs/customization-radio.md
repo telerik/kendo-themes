@@ -52,21 +52,21 @@ The following table lists the available variables for customization.
     <td></td>
     <td><code>(
     sm: (
-        size: map.get( $kendo-spacing, 4 ),
-        glyph-size: map.get( $kendo-spacing, 3.5 ),
-        indicator-size: map.get( $kendo-spacing, 2 ),
+        size: k-spacing(4),
+        glyph-size: k-spacing(3.5),
+        indicator-size: k-spacing(2),
         ripple-size: 300%
     ),
     md: (
-        size: map.get( $kendo-spacing, 5 ),
-        glyph-size: map.get( $kendo-spacing, 4.5 ),
-        indicator-size: map.get( $kendo-spacing, 2.5 ),
+        size: k-spacing(5),
+        glyph-size: k-spacing(4.5),
+        indicator-size: k-spacing(2.5),
         ripple-size: 300%
     ),
     lg: (
-        size: map.get( $kendo-spacing, 6 ),
-        glyph-size: map.get( $kendo-spacing, 5.5 ),
-        indicator-size: map.get( $kendo-spacing, 3 ),
+        size: k-spacing(6),
+        glyph-size: k-spacing(5.5),
+        indicator-size: k-spacing(3),
         ripple-size: 300%
     )
 )</code></td>
@@ -389,7 +389,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-label-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -399,7 +399,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-list-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -409,7 +409,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-list-item-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -429,7 +429,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-list-item-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>

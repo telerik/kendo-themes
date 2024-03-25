@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-sm-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-fab-padding-x, 2 )</code></td>
+    <td><code>calc( #{$kendo-fab-padding-x} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-lg-padding-x</td>
     <td></td>
-    <td><code>( $kendo-fab-padding-x * 1.5 )</code></td>
+    <td><code>calc( #{$kendo-fab-padding-x} * 1.5 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-sm-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-fab-padding-y, 2 )</code></td>
+    <td><code>calc( #{$kendo-fab-padding-y} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-lg-padding-y</td>
     <td></td>
-    <td><code>( $kendo-fab-padding-y * 1.5 )</code></td>
+    <td><code>calc( #{$kendo-fab-padding-y} * 1.5 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-icon-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-items-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-items-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text-offset-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-icon-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 ) + $kendo-fab-icon-padding-x</code></td>
+    <td><code>calc( #{k-spacing(2)} + $kendo-fab-icon-padding-x )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-offset-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>

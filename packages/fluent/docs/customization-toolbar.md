@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-toolbar-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-sm-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-md-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-lg-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>

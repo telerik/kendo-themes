@@ -28,6 +28,86 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-padding-x</td>
+    <td></td>
+    <td><code>k-spacing(2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-y</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-x</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-y</td>
+    <td></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-x</td>
+    <td></td>
+    <td><code>k-spacing(2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-y</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-x</td>
+    <td></td>
+    <td><code>k-spacing(3)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-y</td>
+    <td></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td></td>
     <td><code>$kendo-font-size-lg</code></td>

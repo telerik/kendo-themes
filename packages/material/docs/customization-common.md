@@ -30,21 +30,11 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-border-radius</td>
     <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
     <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-calendar-footer-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>8px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the footer in the Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -250,7 +240,7 @@ The following table lists the available variables for customization.
         group-item-line-height: null
     )
 )</code></td>
-    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: 1.4285714286, header-padding-x: 16px, header-padding-y: 6px, header-font-size: null, header-line-height: null, item-padding-x: 16px, item-padding-y: 6px, item-font-size: null, item-line-height: null, group-item-padding-x: 16px, group-item-padding-y: 6px, group-item-font-size: null, group-item-line-height: null), md: (font-size: var(--kendo-font-size, inherit), line-height: 1.4285714286, header-padding-x: 16px, header-padding-y: 8px, header-font-size: null, header-line-height: null, item-padding-x: 16px, item-padding-y: 8px, item-font-size: null, item-line-height: null, group-item-padding-x: 16px, group-item-padding-y: 8px, group-item-font-size: null, group-item-line-height: null), lg: (font-size: var(--kendo-font-size-lg, inherit), line-height: 1.5, header-padding-x: 16px, header-padding-y: 8px, header-font-size: null, header-line-height: null, item-padding-x: 16px, item-padding-y: 8px, item-font-size: null, item-line-height: null, group-item-padding-x: 16px, group-item-padding-y: 10px, group-item-font-size: null, group-item-line-height: null))</code></td>
+    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: 1.4285714286, header-padding-x: var(--kendo-spacing-4, 1rem), header-padding-y: var(--kendo-spacing-1\.5, 0.375rem), header-font-size: null, header-line-height: null, item-padding-x: var(--kendo-spacing-4, 1rem), item-padding-y: var(--kendo-spacing-1\.5, 0.375rem), item-font-size: null, item-line-height: null, group-item-padding-x: var(--kendo-spacing-4, 1rem), group-item-padding-y: var(--kendo-spacing-1\.5, 0.375rem), group-item-font-size: null, group-item-line-height: null), md: (font-size: var(--kendo-font-size, inherit), line-height: 1.4285714286, header-padding-x: var(--kendo-spacing-4, 1rem), header-padding-y: var(--kendo-spacing-2, 0.5rem), header-font-size: null, header-line-height: null, item-padding-x: var(--kendo-spacing-4, 1rem), item-padding-y: var(--kendo-spacing-2, 0.5rem), item-font-size: null, item-line-height: null, group-item-padding-x: var(--kendo-spacing-4, 1rem), group-item-padding-y: var(--kendo-spacing-2, 0.5rem), group-item-font-size: null, group-item-line-height: null), lg: (font-size: var(--kendo-font-size-lg, inherit), line-height: 1.5, header-padding-x: var(--kendo-spacing-4, 1rem), header-padding-y: var(--kendo-spacing-2, 0.5rem), header-font-size: null, header-line-height: null, item-padding-x: var(--kendo-spacing-4, 1rem), item-padding-y: var(--kendo-spacing-2, 0.5rem), item-font-size: null, item-line-height: null, group-item-padding-x: var(--kendo-spacing-4, 1rem), group-item-padding-y: var(--kendo-spacing-2\.5, 0.625rem), group-item-font-size: null, group-item-line-height: null))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.<br /> @group list</div></div>
