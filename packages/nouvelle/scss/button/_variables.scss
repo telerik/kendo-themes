@@ -18,7 +18,7 @@ $kendo-button-sizes: (
         line-height: $kendo-line-height-md
     ),
     lg: (
-        padding-x: k-map-get( $kendo-spacing, 3),
+        padding-x: k-spacing(3),
         padding-y: k-map-get( $kendo-spacing, 2),
         font-size: $kendo-font-size-lg,
         line-height: $kendo-line-height-lg

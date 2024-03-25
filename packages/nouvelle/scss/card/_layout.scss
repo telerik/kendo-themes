@@ -43,7 +43,7 @@
     .k-card-title {
         @extend .k-h5 !optional;
         font-weight: var( --kendo-card-title-font-weight, #{k-if-var( $kendo-card-title-font-weight, normal )} );
-        margin-block-end: var( --kendo-card-title-margin-bottom, #{k-if-var( $kendo-card-title-margin-bottom, k-map-get( $kendo-spacing, 2 ) )} );
+        margin-block-end: var( --kendo-card-title-margin-bottom, #{k-if-var( $kendo-card-title-margin-bottom, k-spacing(2) )} );
     }
 
 
@@ -51,10 +51,10 @@
     .k-card-subtitle {
         @extend .k-h6 !optional;
         font-weight: var( --kendo-card-title-font-weight, #{k-if-var( $kendo-card-subtitle-font-weight, normal )} );
-        margin-block-end: var( --kendo-card-subtitle-margin-bottom, #{k-if( $kendo-card-subtitle-margin-bottom, k-map-get( $kendo-spacing, 2 ) )} );
+        margin-block-end: var( --kendo-card-subtitle-margin-bottom, #{k-if( $kendo-card-subtitle-margin-bottom, k-spacing(2) )} );
     }
     .k-card-title + .k-card-subtitle {
-        margin-block-start: calc( -1 * var( --kendo-card-title-margin-bottom, #{k-if-var( $kendo-card-title-margin-bottom, k-map-get( $kendo-spacing, 2 ) )} ) );
+        margin-block-start: calc( -1 * var( --kendo-card-title-margin-bottom, #{k-if-var( $kendo-card-title-margin-bottom, k-spacing(2) )} ) );
     }
 
 

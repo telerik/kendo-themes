@@ -23,7 +23,7 @@ $kendo-card-line-height: null !default;
 
 /// Spacing between the cards in the card deck.
 /// @group card
-$kendo-card-deck-gap: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-card-deck-gap: k-spacing(4) !default;
 
 /// Background color of the card.
 /// @group card
@@ -53,10 +53,10 @@ $kendo-card-focus-shadow: null !default;
 
 /// Horizontal padding of the card header.
 /// @group card
-$kendo-card-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-card-header-padding-x: k-spacing(4) !default;
 /// Vertical padding of the card header.
 /// @group card
-$kendo-card-header-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-card-header-padding-y: k-spacing(4) !default;
 /// Bottom border width of the card header.
 /// @group card
 $kendo-card-header-border-width: null !default;
@@ -75,17 +75,17 @@ $kendo-card-header-border: $kendo-card-border !default;
 
 /// Horizontal padding of the card body.
 /// @group card
-$kendo-card-body-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-card-body-padding-x: k-spacing(4) !default;
 /// Vertical padding of the card body.
 /// @group card
-$kendo-card-body-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-card-body-padding-y: k-spacing(4) !default;
 
 /// Horizontal padding of the card footer.
 /// @group card
-$kendo-card-footer-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-card-footer-padding-x: k-spacing(4) !default;
 /// Vertical padding of the card footer.
 /// @group card
-$kendo-card-footer-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-card-footer-padding-y: k-spacing(4) !default;
 /// Top border width of the card footer.
 /// @group card
 $kendo-card-footer-border-width: null !default;
@@ -101,7 +101,7 @@ $kendo-card-footer-border: $kendo-card-border !default;
 
 /// Bottom margin of the card title.
 /// @group card
-$kendo-card-title-margin-bottom: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-card-title-margin-bottom: k-spacing(2) !default;
 /// Font weight of the card title.
 /// @group card
 $kendo-card-title-font-weight: null !default;
@@ -110,7 +110,7 @@ $kendo-card-title-font-weight: null !default;
 $kendo-card-title-text: null !default;
 /// Bottom margin of the card subtitle.
 /// @group card
-$kendo-card-subtitle-margin-bottom: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-card-subtitle-margin-bottom: k-spacing(2) !default;
 /// Font weight of the card title.
 /// @group card
 $kendo-card-subtitle-font-weight: null !default;
@@ -127,16 +127,16 @@ $kendo-card-avatar-size: 3rem !default;
 
 /// Horizontal padding of the card actions.
 /// @group card
-$kendo-card-actions-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-card-actions-padding-x: k-spacing(2) !default;
 /// Vertical padding of the card actions.
 /// @group card
-$kendo-card-actions-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-card-actions-padding-y: k-spacing(2) !default;
 /// Top border of the card actions.
 /// @group card
 $kendo-card-actions-border-width: null !default;
 /// Spacing between the card actions.
 /// @group card
-$kendo-card-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-card-actions-gap: k-spacing(2) !default;
 
 /// Border radius of the scroll button in the card deck.
 /// @group card

@@ -139,7 +139,7 @@
         }
 
         .k-separator {
-            margin-block: k-map-get( $kendo-spacing, 1 );
+            margin-block: k-spacing(1);
         }
 
         // Group

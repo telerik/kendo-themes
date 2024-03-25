@@ -31,10 +31,10 @@ $kendo-tabstrip-spacing: null !default;
 
 /// The horizontal padding of the tabstrip item
 /// @group tabstrip
-$kendo-tabstrip-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the tabstrip item
 /// @group tabstrip
-$kendo-tabstrip-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-tabstrip-item-padding-y: k-spacing(2) !default;
 /// The width of the border around the tabstrip item
 /// @group tabstrip
 $kendo-tabstrip-item-border-width: 1px !default;
@@ -56,17 +56,17 @@ $kendo-tabstrip-item-dragging-text: null !default;
 // Indicator
 /// The border width of the tabstrip indicator
 /// @group tabstrip
-$kendo-tabstrip-indicator-size: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-tabstrip-indicator-size: k-spacing(0.5) !default;
 /// The border color of the tabstrip ripple
 /// @group tabstrip
 $kendo-tabstrip-indicator-color: k-get-theme-color-var( primary-100 ) !default;
 
 /// The horizontal padding of tabstrip content
 /// @group tabstrip
-$kendo-tabstrip-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-content-padding-x: k-spacing(4) !default;
 /// The vertical padding of tabstrip content
 /// @group tabstrip
-$kendo-tabstrip-content-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-content-padding-y: k-spacing(4) !default;
 /// The width of border around tabstrip content
 /// @group tabstrip
 $kendo-tabstrip-content-border-width: 1px !default;
@@ -76,10 +76,10 @@ $kendo-tabstrip-content-border-style: solid !default;
 
 /// The horizontal button padding of the scrollable tabstrip
 /// @group tabstrip
-$kendo-tabstrip-scrollable-button-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-tabstrip-scrollable-button-padding-x: k-spacing(1) !default;
 // The vertical button padding of the scrollable tabstrip
 /// @group tabstrip
-$kendo-tabstrip-scrollable-button-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-tabstrip-scrollable-button-padding-y: k-spacing(1) !default;
 
 
 $kendo-tabstrip-ui-states: (

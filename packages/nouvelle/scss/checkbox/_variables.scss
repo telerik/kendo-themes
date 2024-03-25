@@ -13,24 +13,24 @@ $kendo-checkbox-border-width: 1px !default;
 // Checkbox sizes
 $kendo-checkbox-sizes: (
     sm: (
-        size: k-map-get( $kendo-spacing, 3 ),
+        size: k-spacing(3),
         glyph-size: k-map-get( $kendo-spacing, 2.5 ),
-        indicator-size: k-map-get( $kendo-spacing, 3 ),
-        indeterminate-size: k-map-get( $kendo-spacing, 3 ),
+        indicator-size: k-spacing(3),
+        indeterminate-size: k-spacing(3),
         ripple-size: 300%
     ),
     md: (
-        size: k-map-get( $kendo-spacing, 4 ),
+        size: k-spacing(4),
         glyph-size: k-map-get( $kendo-spacing, 3.5 ),
-        indicator-size: k-map-get( $kendo-spacing, 4 ),
-        indeterminate-size: k-map-get( $kendo-spacing, 4 ),
+        indicator-size: k-spacing(4),
+        indeterminate-size: k-spacing(4),
         ripple-size: 300%
     ),
     lg: (
-        size: k-map-get( $kendo-spacing, 5 ),
+        size: k-spacing(5),
         glyph-size: k-map-get( $kendo-spacing, 4.5 ),
-        indicator-size: k-map-get( $kendo-spacing, 5 ),
-        indeterminate-size: k-map-get( $kendo-spacing, 5 ),
+        indicator-size: k-spacing(5),
+        indeterminate-size: k-spacing(5),
         ripple-size: 300%
     )
 ) !default;
@@ -193,7 +193,7 @@ $kendo-checkbox-disabled-indeterminate-image: null !default;
 
 /// Spacing between items of horizontal checkbox list.
 /// @group checkbox
-$kendo-checkbox-list-spacing: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-checkbox-list-spacing: k-spacing(4) !default;
 /// Horizontal padding of checkbox list items.
 /// @group checkbox
 $kendo-checkbox-list-item-padding-x: null !default;

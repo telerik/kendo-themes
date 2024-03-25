@@ -10,23 +10,23 @@ $kendo-chip-font-family: null !default;
 // Sizing
 $kendo-chip-sizes: (
     sm: (
-        padding-x: k-map-get( $kendo-spacing, 1 ),
-        padding-y: k-map-get( $kendo-spacing, 0.5 ),
-        spacing: k-map-get( $kendo-spacing, 0.5 ),
+        padding-x: k-spacing(1),
+        padding-y: k-spacing(0.5),
+        spacing: k-spacing(0.5),
         font-size: $kendo-font-size-sm,
         line-height: normal
     ),
     md: (
-        padding-x: k-map-get( $kendo-spacing, 2 ),
-        padding-y: k-map-get( $kendo-spacing, 1 ),
-        spacing: k-map-get( $kendo-spacing, 1 ),
+        padding-x: k-spacing(2),
+        padding-y: k-spacing(1),
+        spacing: k-spacing(1),
         font-size: $kendo-font-size-md,
         line-height: normal
     ),
     lg: (
         padding-x: k-map-get( $kendo-spacing, 2.5 ),
-        padding-y: k-map-get( $kendo-spacing, 1.5 ),
-        spacing: k-map-get( $kendo-spacing, 1.5 ),
+        padding-y: k-spacing(1.5),
+        spacing: k-spacing(1.5),
         font-size: $kendo-font-size-lg,
         line-height: normal
     )
@@ -112,12 +112,12 @@ $kendo-chip-theme: k-process-variant-matrices(
 /// @group chip
 $kendo-chip-list-sizes: (
     sm: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     ),
     md: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     ),
     lg: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     )
 ) !default;
