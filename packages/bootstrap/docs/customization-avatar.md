@@ -71,11 +71,11 @@ The following table lists the available variables for customization.
     <td>$kendo-avatar-sizes</td>
     <td>Map</td>
     <td><code>(
-    sm: k-map-get( $kendo-spacing, 4 ),
-    md: k-map-get( $kendo-spacing, 8 ),
-    lg: k-map-get( $kendo-spacing, 16 )
+    sm: k-spacing(4),
+    md: k-spacing(8),
+    lg: k-spacing(16)
 )</code></td>
-    <td><code>(sm: 1rem, md: 2rem, lg: 4rem)</code></td>
+    <td><code>(sm: var(--kendo-spacing-4, 1rem), md: var(--kendo-spacing-8, 2rem), lg: var(--kendo-spacing-16, 4rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Avatar.</div></div>

@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-wizard-padding-x</td>
-    <td>Number</td>
-    <td><code>$kendo-padding-md-x * 1.25</code></td>
-    <td><code>20px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-padding-md-x} * 1.25 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-wizard-padding-y</td>
-    <td>Number</td>
+    <td>Calculation</td>
     <td><code>$kendo-wizard-padding-x</code></td>
-    <td><code>20px</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-wizard-content-padding-x</td>
-    <td>Number</td>
-    <td><code>$kendo-padding-md-x * 2</code></td>
-    <td><code>32px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-padding-md-x} * 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Wizard content.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-wizard-content-padding-y</td>
-    <td>Number</td>
-    <td><code>$kendo-padding-md-y * 8</code></td>
-    <td><code>32px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-padding-md-y} * 8 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Wizard content.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-wizard-buttons-margin-x</td>
-    <td>Number</td>
-    <td><code>10px</code></td>
-    <td><code>10px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2.5)</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Wizard's Button container.</div></div>

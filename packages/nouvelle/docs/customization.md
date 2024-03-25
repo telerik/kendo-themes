@@ -173,9 +173,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </thead>
 <tbody><tr>
     <td>$kendo-actions-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of actions container.</div></div>
@@ -183,9 +183,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-actions-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of actions container.</div></div>
@@ -233,9 +233,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-actions-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items in actions container</div></div>
@@ -263,9 +263,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </thead>
 <tbody><tr>
     <td>$kendo-actions-list-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items in actions list</div></div>
@@ -335,11 +335,11 @@ The following table lists the available variables for customizing the Nouvelle t
     <td>$kendo-avatar-sizes</td>
     <td>Map</td>
     <td><code>(
-    sm: k-map-get( $kendo-spacing, 4 ),
-    md: k-map-get( $kendo-spacing, 8 ),
-    lg: k-map-get( $kendo-spacing, 16 )
+    sm: k-spacing(4),
+    md: k-spacing(8),
+    lg: k-spacing(16)
 )</code></td>
-    <td><code>(sm: 1rem, md: 2rem, lg: 4rem)</code></td>
+    <td><code>(sm: var(--kendo-spacing-4, 1rem), md: var(--kendo-spacing-8, 2rem), lg: var(--kendo-spacing-16, 4rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the avatar.</div></div>
@@ -410,9 +410,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-badge-sm-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
-    <td><code>0.125rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the badge.</div></div>
@@ -420,9 +420,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-badge-sm-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
-    <td><code>0.125rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the badge.</div></div>
@@ -452,7 +452,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td>$kendo-badge-sm-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-sm-line-height} * 1em + #{$kendo-badge-sm-padding-y} * 2 + #{$kendo-badge-border-width} * 2 )</code></td>
-    <td><code>calc( * 1em + 0.125rem * 2 + 1px * 2)</code></td>
+    <td><code>calc( * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Badge min width used for circle badge.</div></div>
@@ -484,7 +484,7 @@ The following table lists the available variables for customizing the Nouvelle t
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 0.125rem, padding-y: 0.125rem, font-size: 0.75rem, line-height: null, min-width: calc( * 1em + 0.125rem * 2 + 1px * 2)), md: (padding-x: 0.25rem, padding-y: 0.25rem, font-size: 0.875rem, line-height: null, min-width: calc( * 1em + 0.25rem * 2 + 1px * 2)), lg: (padding-x: 0.375rem, padding-y: 0.375rem, font-size: 1rem, line-height: null, min-width: calc( * 1em + 0.375rem * 2 + 1px * 2)))</code></td>
+    <td><code>(sm: (padding-x: var(--kendo-spacing-0\.5, 0.125rem), padding-y: var(--kendo-spacing-0\.5, 0.125rem), font-size: 0.75rem, line-height: null, min-width: calc( * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 1px * 2)), md: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1, 0.25rem), font-size: 0.875rem, line-height: null, min-width: calc( * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)), lg: (padding-x: var(--kendo-spacing-1\.5, 0.375rem), padding-y: var(--kendo-spacing-1\.5, 0.375rem), font-size: 1rem, line-height: null, min-width: calc( * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 1px * 2)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size map for the badge.</div></div>
@@ -675,9 +675,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-bottom-nav-item-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the bottom navigation item.</div></div>
@@ -685,9 +685,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-bottom-nav-item-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the bottom navigation item.</div></div>
@@ -725,9 +725,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-bottom-nav-item-gap</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the bottom navigation item.</div></div>
@@ -905,9 +905,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Breadcrumb link.</div></div>
@@ -915,9 +915,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-sm-link-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Breadcrumb link.</div></div>
@@ -925,9 +925,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-md-link-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-breadcrumb-link-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Breadcrumb link.</div></div>
@@ -935,9 +935,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-lg-link-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Breadcrumb link.</div></div>
@@ -945,9 +945,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1.5 )</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Breadcrumb link.</div></div>
@@ -955,9 +955,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-sm-link-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Breadcrumb link.</div></div>
@@ -965,9 +965,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-md-link-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-breadcrumb-link-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Breadcrumb link.</div></div>
@@ -975,9 +975,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-lg-link-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Breadcrumb link.</div></div>
@@ -995,9 +995,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-icon-link-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Breadcrumb link icon.</div></div>
@@ -1005,9 +1005,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-sm-icon-link-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1.5 )</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Breadcrumb link icon.</div></div>
@@ -1015,9 +1015,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-md-icon-link-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-breadcrumb-icon-link-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Breadcrumb link icon.</div></div>
@@ -1025,9 +1025,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-lg-icon-link-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
-    <td><code>0.75rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Breadcrumb link icon.</div></div>
@@ -1035,9 +1035,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-icon-link-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-breadcrumb-icon-link-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Breadcrumb link icon.</div></div>
@@ -1045,9 +1045,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-sm-icon-link-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-breadcrumb-sm-icon-link-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Breadcrumb link icon.</div></div>
@@ -1055,9 +1055,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-md-icon-link-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-breadcrumb-icon-link-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Breadcrumb link icon.</div></div>
@@ -1065,9 +1065,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-lg-icon-link-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-breadcrumb-lg-icon-link-padding-y</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Breadcrumb link icon.</div></div>
@@ -1075,9 +1075,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-icon-spacing</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-icon-spacing</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>k-spacing(2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Breadcrumb link icon.</div></div>
@@ -1122,7 +1122,7 @@ The following table lists the available variables for customizing the Nouvelle t
         line-height: $kendo-breadcrumb-lg-line-height
     )
 )</code></td>
-    <td><code>(sm: (link-padding-x: 0.5rem, link-padding-y: 0.25rem, icon-link-padding-x: 0.375rem, icon-link-padding-y: 0.375rem, font-size: 0.875rem, line-height: 1.5), md: (link-padding-x: 0.5rem, link-padding-y: 0.375rem, icon-link-padding-x: 0.5rem, icon-link-padding-y: 0.5rem, font-size: 1rem, line-height: 1.5), lg: (link-padding-x: 0.5rem, link-padding-y: 0.5rem, icon-link-padding-x: 0.75rem, icon-link-padding-y: 0.75rem, font-size: 1.25rem, line-height: 1.75))</code></td>
+    <td><code>(sm: (link-padding-x: var(--kendo-spacing-2, 0.5rem), link-padding-y: var(--kendo-spacing-1, 0.25rem), icon-link-padding-x: var(--kendo-spacing-1\.5, 0.375rem), icon-link-padding-y: var(--kendo-spacing-1\.5, 0.375rem), font-size: 0.875rem, line-height: 1.5), md: (link-padding-x: var(--kendo-spacing-2, 0.5rem), link-padding-y: var(--kendo-spacing-1\.5, 0.375rem), icon-link-padding-x: var(--kendo-spacing-2, 0.5rem), icon-link-padding-y: var(--kendo-spacing-2, 0.5rem), font-size: 1rem, line-height: 1.5), lg: (link-padding-x: var(--kendo-spacing-2, 0.5rem), link-padding-y: var(--kendo-spacing-2, 0.5rem), icon-link-padding-x: var(--kendo-spacing-3, 0.75rem), icon-link-padding-y: var(--kendo-spacing-3, 0.75rem), font-size: 1.25rem, line-height: 1.75))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Breadcrumb.</div></div>
@@ -1190,9 +1190,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-captcha-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha.</div></div>
@@ -1230,9 +1230,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-captcha-image-wrap-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha image wrapper.</div></div>
@@ -1240,9 +1240,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-captcha-image-controls-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha image controls.</div></div>
@@ -1250,9 +1250,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-captcha-validation-offset-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Captcha validation message.</div></div>
@@ -1360,9 +1360,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-deck-gap</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the cards in the card deck.</div></div>
@@ -1450,9 +1450,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-header-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card header.</div></div>
@@ -1460,9 +1460,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-header-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card header.</div></div>
@@ -1520,9 +1520,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-body-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card body.</div></div>
@@ -1530,9 +1530,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-body-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card body.</div></div>
@@ -1540,9 +1540,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-footer-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card footer.</div></div>
@@ -1550,9 +1550,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-footer-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card footer.</div></div>
@@ -1600,9 +1600,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-title-margin-bottom</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Bottom margin of the card title.</div></div>
@@ -1630,9 +1630,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-subtitle-margin-bottom</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Bottom margin of the card subtitle.</div></div>
@@ -1680,9 +1680,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-actions-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card actions.</div></div>
@@ -1690,9 +1690,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-actions-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card actions.</div></div>
@@ -1710,9 +1710,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-card-actions-gap</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the card actions.</div></div>
@@ -2230,9 +2230,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-checkbox-list-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items of horizontal checkbox list.</div></div>
@@ -2333,16 +2333,16 @@ The following table lists the available variables for customizing the Nouvelle t
     <td>Map</td>
     <td><code>(
     sm: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     ),
     md: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     ),
     lg: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     )
 )</code></td>
-    <td><code>(sm: (spacing: 0.25rem), md: (spacing: 0.25rem), lg: (spacing: 0.25rem))</code></td>
+    <td><code>(sm: (spacing: var(--kendo-spacing-1, 0.25rem)), md: (spacing: var(--kendo-spacing-1, 0.25rem)), lg: (spacing: var(--kendo-spacing-1, 0.25rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
@@ -2580,9 +2580,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-icon-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>k-spacing(2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the icons.</div></div>
@@ -3350,9 +3350,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-radio-list-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items of horizontal radio list.</div></div>
@@ -3530,9 +3530,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-slider-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the slider.</div></div>
@@ -3570,9 +3570,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-slider-track-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the slider track.</div></div>
@@ -3580,9 +3580,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-slider-track-border-radius</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the slider track.</div></div>
@@ -3590,9 +3590,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-slider-thumb-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the slider thumb.</div></div>
@@ -3600,9 +3600,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-slider-thumb-border-width</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
-    <td><code>0.125rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border width of the slider thumb.</div></div>
@@ -3857,8 +3857,8 @@ The following table lists the available variables for customizing the Nouvelle t
         cell-padding-y: $kendo-table-sm-cell-padding-y,
         group-row-padding-x: 0,
         group-row-padding-y: $kendo-table-sm-cell-padding-y,
-        group-label-padding-x: k-map-get( $kendo-spacing, 2 ),
-        group-label-padding-y: k-map-get( $kendo-spacing, 1 ),
+        group-label-padding-x: k-spacing(2),
+        group-label-padding-y: k-spacing(1),
         group-label-font-size: .875em
     ),
     md: (
@@ -3868,8 +3868,8 @@ The following table lists the available variables for customizing the Nouvelle t
         cell-padding-y: $kendo-table-md-cell-padding-y,
         group-row-padding-x: 0,
         group-row-padding-y: $kendo-table-md-cell-padding-y,
-        group-label-padding-x: k-map-get( $kendo-spacing, 2 ),
-        group-label-padding-y: k-map-get( $kendo-spacing, 1 ),
+        group-label-padding-x: k-spacing(2),
+        group-label-padding-y: k-spacing(1),
         group-label-font-size: .875em
     ),
     lg: (
@@ -3879,12 +3879,12 @@ The following table lists the available variables for customizing the Nouvelle t
         cell-padding-y: $kendo-table-lg-cell-padding-y,
         group-row-padding-x: 0,
         group-row-padding-y: $kendo-table-lg-cell-padding-y,
-        group-label-padding-x: k-map-get( $kendo-spacing, 2 ),
-        group-label-padding-y: k-map-get( $kendo-spacing, 1 ),
+        group-label-padding-x: k-spacing(2),
+        group-label-padding-y: k-spacing(1),
         group-label-font-size: .875em
     )
 )</code></td>
-    <td><code>(sm: (font-size: 0.875rem, line-height: 1.25, cell-padding-x: 0.5rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), md: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), lg: (font-size: 1.25rem, line-height: 1.75, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em))</code></td>
+    <td><code>(sm: (font-size: 0.875rem, line-height: 1.25, cell-padding-x: var(--kendo-spacing-2, 0.5rem), cell-padding-y: var(--kendo-spacing-1, 0.25rem), group-row-padding-x: 0, group-row-padding-y: var(--kendo-spacing-1, 0.25rem), group-label-padding-x: var(--kendo-spacing-2, 0.5rem), group-label-padding-y: var(--kendo-spacing-1, 0.25rem), group-label-font-size: 0.875em), md: (font-size: 1rem, line-height: 1.5, cell-padding-x: var(--kendo-spacing-3, 0.75rem), cell-padding-y: var(--kendo-spacing-1, 0.25rem), group-row-padding-x: 0, group-row-padding-y: var(--kendo-spacing-1, 0.25rem), group-label-padding-x: var(--kendo-spacing-2, 0.5rem), group-label-padding-y: var(--kendo-spacing-1, 0.25rem), group-label-font-size: 0.875em), lg: (font-size: 1.25rem, line-height: 1.75, cell-padding-x: var(--kendo-spacing-3, 0.75rem), cell-padding-y: var(--kendo-spacing-1, 0.25rem), group-row-padding-x: 0, group-row-padding-y: var(--kendo-spacing-1, 0.25rem), group-label-padding-x: var(--kendo-spacing-2, 0.5rem), group-label-padding-y: var(--kendo-spacing-1, 0.25rem), group-label-font-size: 0.875em))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
@@ -3992,9 +3992,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tabstrip item</div></div>
@@ -4002,9 +4002,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the tabstrip item</div></div>
@@ -4052,9 +4052,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tabstrip-indicator-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
-    <td><code>0.125rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the tabstrip indicator</div></div>
@@ -4072,9 +4072,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tabstrip-content-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of tabstrip content</div></div>
@@ -4082,9 +4082,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tabstrip-content-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of tabstrip content</div></div>
@@ -4112,9 +4112,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tabstrip-scrollable-button-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal button padding of the scrollable tabstrip</div></div>
@@ -4122,9 +4122,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tabstrip-scrollable-button-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container">
@@ -4240,7 +4240,7 @@ The following table lists the available variables for customizing the Nouvelle t
         spacing: $kendo-toolbar-lg-spacing
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, spacing: 0.25rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: 0.5rem))</code></td>
+    <td><code>(sm: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1, 0.25rem), spacing: var(--kendo-spacing-1, 0.25rem)), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-2, 0.5rem), spacing: var(--kendo-spacing-2, 0.5rem)), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: var(--kendo-spacing-2, 0.5rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the toolbar.</div></div>
@@ -4278,9 +4278,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tooltip-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tooltip</div></div>
@@ -4288,9 +4288,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tooltip-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the tooltip</div></div>
@@ -4338,9 +4338,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tooltip-title-margin</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the tooltip title</div></div>
@@ -4378,9 +4378,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-tooltip-callout-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the tooltip callout</div></div>
@@ -4423,41 +4423,41 @@ The following table lists the available variables for customizing the Nouvelle t
     sm: (
         font-size: $kendo-font-size-sm,
         line-height: $kendo-line-height-sm,
-        filter-padding-x: k-map-get( $kendo-spacing, 1 ),
-        filter-padding-y: k-map-get( $kendo-spacing, 1 ),
-        indent: k-map-get( $kendo-spacing, 4 ),
-        icon-spacing: k-map-get( $kendo-spacing, 1 ),
-        checkbox-spacing: k-map-get( $kendo-spacing, 1 ),
-        item-padding-x: k-map-get( $kendo-spacing, 2 ),
-        item-padding-y: k-map-get( $kendo-spacing, 1 ),
-        item-border-radius: k-map-get( $kendo-spacing, 0.5 )
+        filter-padding-x: k-spacing(1),
+        filter-padding-y: k-spacing(1),
+        indent: k-spacing(4),
+        icon-spacing: k-spacing(1),
+        checkbox-spacing: k-spacing(1),
+        item-padding-x: k-spacing(2),
+        item-padding-y: k-spacing(1),
+        item-border-radius: k-spacing(0.5)
     ),
     md: (
         font-size: $kendo-font-size-md,
         line-height: $kendo-line-height-md,
-        filter-padding-x: k-map-get( $kendo-spacing, 2 ),
-        filter-padding-y: k-map-get( $kendo-spacing, 2 ),
-        indent: k-map-get( $kendo-spacing, 4 ),
-        icon-spacing: k-map-get( $kendo-spacing, 1 ),
-        checkbox-spacing: k-map-get( $kendo-spacing, 1 ),
+        filter-padding-x: k-spacing(2),
+        filter-padding-y: k-spacing(2),
+        indent: k-spacing(4),
+        icon-spacing: k-spacing(1),
+        checkbox-spacing: k-spacing(1),
         item-padding-x: k-map-get( $kendo-spacing, 2.5 ),
-        item-padding-y: k-map-get( $kendo-spacing, 1.5 ),
-        item-border-radius: k-map-get( $kendo-spacing, 1 )
+        item-padding-y: k-spacing(1.5),
+        item-border-radius: k-spacing(1)
     ),
     lg: (
         font-size: $kendo-font-size-lg,
         line-height: $kendo-line-height-lg,
-        filter-padding-x: k-map-get( $kendo-spacing, 3 ),
-        filter-padding-y: k-map-get( $kendo-spacing, 3 ),
-        indent: k-map-get( $kendo-spacing, 4 ),
-        icon-spacing: k-map-get( $kendo-spacing, 1 ),
-        checkbox-spacing: k-map-get( $kendo-spacing, 1 ),
-        item-padding-x: k-map-get( $kendo-spacing, 3 ),
-        item-padding-y: k-map-get( $kendo-spacing, 2 ),
-        item-border-radius: k-map-get( $kendo-spacing, 2 )
+        filter-padding-x: k-spacing(3),
+        filter-padding-y: k-spacing(3),
+        indent: k-spacing(4),
+        icon-spacing: k-spacing(1),
+        checkbox-spacing: k-spacing(1),
+        item-padding-x: k-spacing(3),
+        item-padding-y: k-spacing(2),
+        item-border-radius: k-spacing(2)
     )
 )</code></td>
-    <td><code>(sm: (font-size: 0.875rem, line-height: 1.25, filter-padding-x: 0.25rem, filter-padding-y: 0.25rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.5rem, item-padding-y: 0.25rem, item-border-radius: 0.125rem), md: (font-size: 1rem, line-height: 1.5, filter-padding-x: 0.5rem, filter-padding-y: 0.5rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.625rem, item-padding-y: 0.375rem, item-border-radius: 0.25rem), lg: (font-size: 1.25rem, line-height: 1.75, filter-padding-x: 0.75rem, filter-padding-y: 0.75rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.75rem, item-padding-y: 0.5rem, item-border-radius: 0.5rem))</code></td>
+    <td><code>(sm: (font-size: 0.875rem, line-height: 1.25, filter-padding-x: var(--kendo-spacing-1, 0.25rem), filter-padding-y: var(--kendo-spacing-1, 0.25rem), indent: var(--kendo-spacing-4, 1rem), icon-spacing: var(--kendo-spacing-1, 0.25rem), checkbox-spacing: var(--kendo-spacing-1, 0.25rem), item-padding-x: var(--kendo-spacing-2, 0.5rem), item-padding-y: var(--kendo-spacing-1, 0.25rem), item-border-radius: var(--kendo-spacing-0\.5, 0.125rem)), md: (font-size: 1rem, line-height: 1.5, filter-padding-x: var(--kendo-spacing-2, 0.5rem), filter-padding-y: var(--kendo-spacing-2, 0.5rem), indent: var(--kendo-spacing-4, 1rem), icon-spacing: var(--kendo-spacing-1, 0.25rem), checkbox-spacing: var(--kendo-spacing-1, 0.25rem), item-padding-x: 0.625rem, item-padding-y: var(--kendo-spacing-1\.5, 0.375rem), item-border-radius: var(--kendo-spacing-1, 0.25rem)), lg: (font-size: 1.25rem, line-height: 1.75, filter-padding-x: var(--kendo-spacing-3, 0.75rem), filter-padding-y: var(--kendo-spacing-3, 0.75rem), indent: var(--kendo-spacing-4, 1rem), icon-spacing: var(--kendo-spacing-1, 0.25rem), checkbox-spacing: var(--kendo-spacing-1, 0.25rem), item-padding-x: var(--kendo-spacing-3, 0.75rem), item-padding-y: var(--kendo-spacing-2, 0.5rem), item-border-radius: var(--kendo-spacing-2, 0.5rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the treeview.</div></div>
@@ -4605,9 +4605,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-window-titlebar-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the window titlebar.</div></div>
@@ -4615,9 +4615,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-window-titlebar-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
-    <td><code>0.75rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the window titlebar.</div></div>
@@ -4625,9 +4625,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-window-titlebar-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between title and actions in window titlebar.</div></div>
@@ -4715,9 +4715,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-window-inner-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the content of the window.</div></div>
@@ -4725,9 +4725,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-window-inner-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the content of the window.</div></div>
@@ -4735,9 +4735,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-window-actions-padding-x</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the window action buttons.</div></div>
@@ -4745,9 +4745,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-window-actions-padding-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the window action buttons.</div></div>
@@ -4765,9 +4765,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td>$kendo-window-actions-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the action buttons of the window.</div></div>

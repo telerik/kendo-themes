@@ -32,6 +32,86 @@ The following table lists the available variables for customizing the Fluent the
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-padding-x</td>
+    <td></td>
+    <td><code>k-spacing(2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-y</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-x</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-y</td>
+    <td></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-x</td>
+    <td></td>
+    <td><code>k-spacing(2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-y</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-x</td>
+    <td></td>
+    <td><code>k-spacing(3)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-y</td>
+    <td></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td></td>
     <td><code>$kendo-font-size-lg</code></td>
@@ -233,7 +313,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-actions-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -243,7 +323,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actions-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -313,7 +393,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-actionsheet-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -323,7 +403,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -463,7 +543,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -473,7 +553,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -523,7 +603,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-header-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -613,7 +693,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -623,7 +703,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -643,7 +723,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -853,7 +933,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-actionsheet-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -883,7 +963,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-actionsheet-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -893,7 +973,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-actionsheet-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -903,7 +983,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-actionsheet-footer-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -913,7 +993,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-adaptive-actionsheet-footer-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -943,7 +1023,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-appbar-margin-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -953,7 +1033,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-margin-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -963,7 +1043,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -973,7 +1053,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1033,7 +1113,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-appbar-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1161,9 +1241,9 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-avatar-sizes</td>
     <td></td>
     <td><code>(
-    sm: map.get( $kendo-spacing, 4 ),
-    md: map.get( $kendo-spacing, 8 ),
-    lg: map.get( $kendo-spacing, 16 )
+    sm: k-spacing(4),
+    md: k-spacing(8),
+    lg: k-spacing(16)
 )</code></td>
     <td></td>
 </tr>
@@ -1271,7 +1351,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1281,7 +1361,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1291,7 +1371,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1301,7 +1381,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1311,7 +1391,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-md-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1321,7 +1401,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-badge-lg-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1500,7 +1580,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-bottom-nav-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1580,7 +1660,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1590,7 +1670,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1640,7 +1720,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-item-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1650,7 +1730,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-item-focus-offset</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1737,7 +1817,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-breadcrumb-margin-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1747,7 +1827,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-margin-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1757,7 +1837,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1767,7 +1847,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1917,7 +1997,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1927,7 +2007,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-sm-link-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1947,7 +2027,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-lg-link-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1957,7 +2037,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1967,7 +2047,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-sm-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1987,7 +2067,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-lg-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2357,7 +2437,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-icon-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2367,7 +2447,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-sm-icon-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2387,7 +2467,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-lg-icon-link-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2492,7 +2572,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-actions-button-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2512,7 +2592,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2522,7 +2602,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2532,7 +2612,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2542,7 +2622,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2552,7 +2632,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-md-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2562,7 +2642,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-lg-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2701,7 +2781,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2711,7 +2791,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-focus-offset</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2751,7 +2831,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-button-flat-focus-outline-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2891,7 +2971,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2901,7 +2981,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2915,7 +2995,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the bottom border of the calendar header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the bottom border of the calendar header.</div></div>
     </td>
 </tr>
 <tr>
@@ -2951,7 +3031,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-nav-gap</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2961,7 +3041,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-footer-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2971,7 +3051,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-footer-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2991,7 +3071,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3031,7 +3111,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-header-cell-padding-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3041,7 +3121,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-header-cell-padding-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3111,7 +3191,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-caption-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3121,7 +3201,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-caption-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3201,7 +3281,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-view-padding-block-end</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3211,7 +3291,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-view-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3511,7 +3591,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-infinite-calendar-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3521,7 +3601,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-infinite-calendar-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 ) map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(3) k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3531,7 +3611,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-infinite-calendar-view-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3541,7 +3621,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-infinite-calendar-view-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3621,7 +3701,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-sm-cell-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3631,7 +3711,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-sm-cell-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3639,9 +3719,19 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-sm-cell-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the small Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-md-cell-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3651,7 +3741,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-md-cell-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3659,9 +3749,19 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-md-cell-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-lg-cell-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3671,11 +3771,21 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-lg-cell-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the large Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-lg-cell-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the large Calendar.</div></div>
     </td>
 </tr>
 <tr>
@@ -3736,7 +3846,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-captcha-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3836,7 +3946,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-captcha-image-controls-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-captcha-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-captcha-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3846,7 +3956,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-captcha-validation-offset-y</td>
     <td></td>
-    <td><code>math.div( $kendo-captcha-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-captcha-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3886,7 +3996,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-card-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3896,7 +4006,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3966,7 +4076,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-deck-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4096,7 +4206,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4106,7 +4216,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4156,7 +4266,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-body-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4166,7 +4276,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-body-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4276,7 +4386,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-title-margin-bottom</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4316,7 +4426,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-subtitle-margin-bottom</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4366,7 +4476,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-actions-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4376,7 +4486,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-actions-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4396,7 +4506,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-actions-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5056,7 +5166,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5066,7 +5176,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5146,7 +5256,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-typing-indicator-dot-spacing</td>
     <td></td>
-    <td><code>5px</code></td>
+    <td><code>calc( #{k-spacing(2.5)} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5156,7 +5266,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-item-spacing-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5166,7 +5276,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-item-spacing-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5256,7 +5366,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bubble-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5266,7 +5376,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bubble-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5276,7 +5386,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bubble-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5296,7 +5406,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-scroll-button</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5316,7 +5426,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bubble-border-radius</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5416,7 +5526,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5426,7 +5536,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5436,7 +5546,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6146,7 +6256,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-label-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6156,7 +6266,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-list-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6166,7 +6276,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-list-item-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6236,7 +6346,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6336,7 +6446,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-focus-offset</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6366,7 +6476,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6376,7 +6486,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6386,7 +6496,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6396,7 +6506,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6406,7 +6516,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-md-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6416,7 +6526,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-lg-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6526,9 +6636,9 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chip-list-sizes</td>
     <td></td>
     <td><code>(
-    sm: map.get( $kendo-spacing, 1 ),
-    md: map.get( $kendo-spacing, 1 ),
-    lg: map.get( $kendo-spacing, 1 )
+    sm: k-spacing(1),
+    md: k-spacing(1),
+    lg: k-spacing(1)
 )</code></td>
     <td></td>
 </tr>
@@ -6559,7 +6669,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-color-gradient-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6609,7 +6719,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6739,7 +6849,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-canvas-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6979,7 +7089,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-input-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 4 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6999,7 +7109,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-input-label-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 4 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7029,7 +7139,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-contrast-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 1.5 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 1.5 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7199,7 +7309,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-color-editor-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7349,7 +7459,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-header-actions-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-editor-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-color-editor-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7379,7 +7489,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-preview-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7419,7 +7529,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-footer-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7429,7 +7539,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-footer-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7549,7 +7659,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-palette-tile-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7709,7 +7819,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-titlebar-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7719,7 +7829,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-titlebar-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7729,7 +7839,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-inner-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7739,7 +7849,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-inner-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7749,7 +7859,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-buttongroup-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7759,7 +7869,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-buttongroup-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7779,7 +7889,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-buttongroup-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7789,7 +7899,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-button-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7859,7 +7969,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-pane-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7869,7 +7979,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-pane-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7979,7 +8089,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-pane-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7989,7 +8099,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-manager-pane-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8049,7 +8159,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dock-indicator-padding</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8589,7 +8699,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8649,7 +8759,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-icon-padding-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8659,7 +8769,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-icon-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8679,7 +8789,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-ripple-border-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8693,7 +8803,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Drawer item ripple.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the drawer item ripple</div></div>
     </td>
 </tr>
 <tr>
@@ -8899,7 +9009,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropdowntree-check-all-padding</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8929,7 +9039,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-dropzone-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8939,7 +9049,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9029,7 +9139,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9079,7 +9189,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-hint-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9119,7 +9229,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-note-spacing</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9259,7 +9369,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-export-tool-icon-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9269,7 +9379,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-selectednode-outline-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9309,7 +9419,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-resize-handle-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9469,7 +9579,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-expander-margin-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9649,7 +9759,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9659,7 +9769,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9719,7 +9829,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-indicator-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9739,7 +9849,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9749,7 +9859,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9779,7 +9889,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-file-manager-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9969,7 +10079,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-breadcrumb-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9979,7 +10089,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-breadcrumb-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10059,7 +10169,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-listview-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10069,7 +10179,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-listview-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10269,7 +10379,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-file-manager-preview-column-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10379,7 +10489,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-bottom-margin</td>
     <td></td>
-    <td><code>30px</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10529,7 +10639,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10539,7 +10649,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-sm-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-fab-padding-x, 2 )</code></td>
+    <td><code>calc( #{$kendo-fab-padding-x} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10559,7 +10669,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-lg-padding-x</td>
     <td></td>
-    <td><code>( $kendo-fab-padding-x * 1.5 )</code></td>
+    <td><code>calc( #{$kendo-fab-padding-x} * 1.5 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10579,7 +10689,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-sm-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-fab-padding-y, 2 )</code></td>
+    <td><code>calc( #{$kendo-fab-padding-y} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10599,7 +10709,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-lg-padding-y</td>
     <td></td>
-    <td><code>( $kendo-fab-padding-y * 1.5 )</code></td>
+    <td><code>calc( #{$kendo-fab-padding-y} * 1.5 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10639,7 +10749,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-icon-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10659,7 +10769,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10669,7 +10779,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-items-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10679,7 +10789,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-items-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10689,7 +10799,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-text-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10699,7 +10809,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-text-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10759,7 +10869,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-text-offset-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10799,7 +10909,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-icon-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 ) + $kendo-fab-icon-padding-x</code></td>
+    <td><code>calc( #{k-spacing(2)} + $kendo-fab-icon-padding-x )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10884,7 +10994,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-offset-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11224,7 +11334,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-form-spacer</td>
     <td></td>
-    <td><code>( $kendo-padding-md-x * 2 )</code></td>
+    <td><code>calc( #{$kendo-padding-md-x} * 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11294,7 +11404,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-fieldset-padding</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11304,7 +11414,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-legend-margin</td>
     <td></td>
-    <td><code>0 0 map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>0 0 k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11314,7 +11424,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-legend-padding</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11324,7 +11434,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-legend-border-width</td>
     <td></td>
-    <td><code>0 0 map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>0 0 k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11384,7 +11494,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-label-margin-bottom</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11404,7 +11514,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-button-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11434,7 +11544,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-hint-margin-top</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11454,7 +11564,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-sm-rows-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11484,7 +11594,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-separator-margin</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 ) 0 0</code></td>
+    <td><code>k-spacing(3) 0 0</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11504,7 +11614,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-horizontal-form-label-padding-top</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11514,7 +11624,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-horizontal-form-label-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11574,7 +11684,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-label-optional-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11604,7 +11714,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fieldset-margin</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 7.5 )</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11864,7 +11974,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-dot-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12004,7 +12114,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12014,7 +12124,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12634,7 +12744,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-edit-cell-padding-y</td>
     <td></td>
-    <td><code>5px</code></td>
+    <td><code>calc( #{k-spacing(2.5)} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13024,7 +13134,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-selection-aggregates-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13234,7 +13344,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sort-index-spacing-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13294,7 +13404,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-command-cell-button-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13564,7 +13674,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-menu-container-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13574,7 +13684,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-menu-container-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13604,7 +13714,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13674,7 +13784,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-items-wrap-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13684,7 +13794,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-items-wrap-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13924,7 +14034,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13934,7 +14044,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14004,7 +14114,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-row-resizer-height</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14044,7 +14154,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14054,7 +14164,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-icon-padding</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14114,7 +14224,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-margin-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14124,7 +14234,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-margin-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14134,7 +14244,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-padding-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14144,7 +14254,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-padding-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14264,7 +14374,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-action-pane-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14274,7 +14384,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-action-pane-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14354,7 +14464,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-handle-margin-x</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>k-spacing(1px)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14364,7 +14474,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-handle-margin-y</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>k-spacing(1px)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14384,7 +14494,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-handle-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14394,7 +14504,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-top-offset</td>
     <td></td>
-    <td><code>math.div( $kendo-image-editor-resize-handle-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-image-editor-resize-handle-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14404,7 +14514,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-resize-left-offset</td>
     <td></td>
-    <td><code>math.div( $kendo-image-editor-resize-handle-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-image-editor-resize-handle-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14464,7 +14574,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14474,7 +14584,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14484,7 +14594,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14494,7 +14604,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14504,7 +14614,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-md-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14514,7 +14624,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-lg-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15570,7 +15680,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-md-padding-y * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + calc( #{$kendo-input-md-padding-y} * 2 ) ),
         button-padding-x: $kendo-input-sm-padding-y,
         button-padding-y: $kendo-input-sm-padding-y,
         button-width: $kendo-input-sm-button-width
@@ -15580,7 +15690,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-sm-padding-y * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + calc( #{$kendo-input-sm-padding-y} * 2 ) ),
         button-padding-x: $kendo-input-md-padding-y,
         button-padding-y: $kendo-input-md-padding-y,
         button-width: $kendo-input-md-button-width
@@ -15590,7 +15700,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-input-lg-padding-y,
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-lg-padding-y * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + calc( #{$kendo-input-lg-padding-y} * 2 ) ),
         button-padding-x: $kendo-input-lg-padding-y,
         button-padding-y: $kendo-input-lg-padding-y,
         button-width: $kendo-input-lg-button-width
@@ -15947,7 +16057,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15957,7 +16067,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16007,7 +16117,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16017,7 +16127,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16057,7 +16167,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-group-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16067,7 +16177,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-sm-group-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16077,7 +16187,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-group-label-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16087,7 +16197,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-group-label-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16505,7 +16615,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-listbox-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16515,7 +16625,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listbox-button-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16725,7 +16835,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listgroup-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16735,7 +16845,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listgroup-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16775,7 +16885,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-listview-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16785,7 +16895,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16805,7 +16915,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16815,7 +16925,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16845,7 +16955,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16855,7 +16965,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16895,7 +17005,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listview-grid-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0 )</code></td>
+    <td><code>k-spacing(.0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17065,7 +17175,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-segment-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17075,7 +17185,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-segment-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17085,7 +17195,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-segment-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17095,7 +17205,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-sm-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17105,7 +17215,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-md-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17115,7 +17225,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-lg-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17125,7 +17235,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-sm-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17135,7 +17245,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-md-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17145,7 +17255,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-lg-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} /2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17165,7 +17275,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-spinner-3-width</td>
     <td></td>
-    <td><code>( $kendo-loader-sm-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17175,7 +17285,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-spinner-3-width</td>
     <td></td>
-    <td><code>( $kendo-loader-md-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17185,7 +17295,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-spinner-3-width</td>
     <td></td>
-    <td><code>( $kendo-loader-lg-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17195,7 +17305,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-spinner-3-height</td>
     <td></td>
-    <td><code>( $kendo-loader-sm-spinner-3-width * $kendo-loader-equilateral-height )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17205,7 +17315,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-spinner-3-height</td>
     <td></td>
-    <td><code>( $kendo-loader-md-spinner-3-width * $kendo-loader-equilateral-height )</code></td>
+    <td><code>calc( #{$kendo-loader-md-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17215,7 +17325,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-spinner-3-height</td>
     <td></td>
-    <td><code>( $kendo-loader-lg-spinner-3-width * $kendo-loader-equilateral-height )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17225,7 +17335,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-spinner-4-width</td>
     <td></td>
-    <td><code>( $kendo-loader-sm-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17235,7 +17345,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-spinner-4-width</td>
     <td></td>
-    <td><code>( $kendo-loader-md-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17245,7 +17355,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-spinner-4-width</td>
     <td></td>
-    <td><code>( $kendo-loader-lg-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17335,7 +17445,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-container-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17345,7 +17455,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-container-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17355,7 +17465,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-container-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17365,7 +17475,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-container-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17375,7 +17485,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-container-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17385,7 +17495,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-container-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17395,7 +17505,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-sm-container-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17405,7 +17515,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-md-container-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17415,7 +17525,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-lg-container-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17583,7 +17693,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17593,7 +17703,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-margin-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17603,7 +17713,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-padding</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17613,7 +17723,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-width</td>
     <td></td>
-    <td><code>calc( var( --kendo-icon-size) * 3 + #{$kendo-map-navigator-padding * 2} )</code></td>
+    <td><code>calc( var( --kendo-icon-size) * 3 + calc( #{$kendo-map-navigator-padding} * 2) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17673,7 +17783,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-zoom-control-margin</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17873,7 +17983,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-titlebar-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17883,7 +17993,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-titlebar-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17933,7 +18043,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-menu-border-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0 )</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17973,7 +18083,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17983,7 +18093,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0 )</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18003,7 +18113,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-separator-margin</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18023,7 +18133,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-item-focus-outline-offset</td>
     <td></td>
-    <td><code>- map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>calc( #{k-spacing(0.5)} * -1 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18263,7 +18373,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18283,7 +18393,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-sm-item-padding-end</td>
     <td></td>
-    <td><code>calc( #{$kendo-menu-popup-sm-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18293,7 +18403,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-start</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0 )</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18323,7 +18433,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-item-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0 )</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18551,7 +18661,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-message-box-margin</td>
     <td></td>
-    <td><code>0 0 map.get( $kendo-spacing, 3 ) 0</code></td>
+    <td><code>0 0 k-spacing(3) 0</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18561,7 +18671,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-message-box-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18571,7 +18681,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-message-box-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18691,7 +18801,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-notification-group-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18701,7 +18811,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18711,7 +18821,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18731,7 +18841,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-border-radius</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18811,7 +18921,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18821,7 +18931,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-notification-close-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18889,7 +18999,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-orgchart-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6)</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19099,7 +19209,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-title-margin-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19129,7 +19239,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-subtitle-margin-y</td>
     <td></td>
-    <td><code>$kendo-orgchart-spacer - map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>calc( $kendo-orgchart-spacer - k-spacing(1) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19199,7 +19309,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-card-title-margin-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19229,7 +19339,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-card-subtitle-margin-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19259,7 +19369,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-card-body-padding-y</td>
     <td></td>
-    <td><code>$kendo-orgchart-spacer - map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>calc( #{$kendo-orgchart-spacer} - k-spacing(2) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19299,7 +19409,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-card-body-vbox-margin-x</td>
     <td></td>
-    <td><code>$kendo-orgchart-spacer - map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>calc( #{$kendo-orgchart-spacer} - k-spacing(2) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19419,7 +19529,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-pager-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19429,7 +19539,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19439,7 +19549,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19449,7 +19559,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19459,7 +19569,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19619,7 +19729,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-sm-item-group-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19629,7 +19739,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-md-item-group-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19639,7 +19749,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-lg-item-group-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19735,7 +19845,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-panelbar-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19745,7 +19855,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19825,7 +19935,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19845,7 +19955,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-header-padding-x-end</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2)</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19855,7 +19965,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19875,7 +19985,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-item-padding-x-end</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2)</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19885,7 +19995,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20565,7 +20675,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-page-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 7.5 )</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20615,7 +20725,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20635,7 +20745,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20785,7 +20895,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-pivotgrid-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20795,7 +20905,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20805,7 +20915,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20855,7 +20965,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21085,7 +21195,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21095,7 +21205,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21165,7 +21275,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-content-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21175,7 +21285,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-fields-margin-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21185,7 +21295,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-fields-margin-y</td>
     <td></td>
-    <td><code>math.div( $kendo-pivotgrid-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-pivotgrid-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21195,7 +21305,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-fields-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2)</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21285,7 +21395,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-button-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21295,7 +21405,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-button-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21315,7 +21425,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-button-size</td>
     <td></td>
-    <td><code>calc( #{$kendo-pivotgrid-line-height} * 1em + #{$kendo-pivotgrid-configurator-button-padding-y * 2} + #{$kendo-pivotgrid-configurator-button-border-width * 2} )</code></td>
+    <td><code>calc( calc( #{$kendo-pivotgrid-line-height} * 1em ) + calc( #{$kendo-pivotgrid-configurator-button-padding-y} * 2 ) + calc( #{$kendo-pivotgrid-configurator-button-border-width} * 2 ) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21325,7 +21435,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-button-icon-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21445,7 +21555,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-treeview-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-pivotgrid-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-pivotgrid-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21455,7 +21565,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-treeview-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21705,7 +21815,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popover-actions-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21715,7 +21825,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popover-callout-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21775,7 +21885,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-popup-padding-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21785,7 +21895,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popup-padding-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21835,7 +21945,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popup-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21845,7 +21955,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popup-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21995,7 +22105,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-padding-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22005,7 +22115,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-padding-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22095,7 +22205,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-offset-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22335,7 +22445,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22345,7 +22455,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22355,7 +22465,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-content-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22395,7 +22505,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-expander-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22405,7 +22515,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-suggestion-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22415,7 +22525,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-prompt-suggestion-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22517,21 +22627,21 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
     <td><code>(
     sm: (
-        size: map.get( $kendo-spacing, 4 ),
-        glyph-size: map.get( $kendo-spacing, 3.5 ),
-        indicator-size: map.get( $kendo-spacing, 2 ),
+        size: k-spacing(4),
+        glyph-size: k-spacing(3.5),
+        indicator-size: k-spacing(2),
         ripple-size: 300%
     ),
     md: (
-        size: map.get( $kendo-spacing, 5 ),
-        glyph-size: map.get( $kendo-spacing, 4.5 ),
-        indicator-size: map.get( $kendo-spacing, 2.5 ),
+        size: k-spacing(5),
+        glyph-size: k-spacing(4.5),
+        indicator-size: k-spacing(2.5),
         ripple-size: 300%
     ),
     lg: (
-        size: map.get( $kendo-spacing, 6 ),
-        glyph-size: map.get( $kendo-spacing, 5.5 ),
-        indicator-size: map.get( $kendo-spacing, 3 ),
+        size: k-spacing(6),
+        glyph-size: k-spacing(5.5),
+        indicator-size: k-spacing(3),
         ripple-size: 300%
     )
 )</code></td>
@@ -22854,7 +22964,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-label-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22864,7 +22974,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-list-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22874,7 +22984,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-list-item-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22894,7 +23004,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-list-item-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22974,7 +23084,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22984,7 +23094,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22994,7 +23104,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23304,7 +23414,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23314,7 +23424,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23494,7 +23604,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-cell-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23504,7 +23614,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-cell-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23604,7 +23714,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-yearview-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23624,7 +23734,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-yearview-calendar-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23694,7 +23804,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-tooltip-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23764,7 +23874,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-tooltip-title-margin-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23804,7 +23914,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-tooltip-events-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23844,7 +23954,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-tooltip-event-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24084,7 +24194,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pager-item-spacing</td>
     <td></td>
-    <td><code>20px</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24104,7 +24214,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pager-height</td>
     <td></td>
-    <td><code>calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} )</code></td>
+    <td><code>calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + calc( #{$kendo-scrollview-pager-item-spacing} * 2 ) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24294,7 +24404,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-signature-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24410,7 +24520,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-signature-actions-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24560,7 +24670,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24610,7 +24720,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24620,7 +24730,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-border-radius</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24710,7 +24820,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-border-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25204,7 +25314,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-splitbar-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25214,7 +25324,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-drag-handle-length</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25224,7 +25334,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-drag-handle-thickness</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25234,7 +25344,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-drag-icon-margin</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25254,7 +25364,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-collapse-icon-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, .5 )</code></td>
+    <td><code>k-spacing(.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25324,7 +25434,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-splitbar-static-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25534,7 +25644,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-popup-menu-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25564,7 +25674,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-action-bar-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25574,7 +25684,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-action-bar-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25604,7 +25714,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-action-bar-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25614,7 +25724,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-formula-bar-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25824,7 +25934,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-cell-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25854,7 +25964,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-cell-editor-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25864,7 +25974,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-cell-editor-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25934,7 +26044,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-sheets-bar-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25944,7 +26054,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-sheets-bar-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25964,7 +26074,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-sheets-remove-inline-start</td>
     <td></td>
-    <td><code>- map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>calc( #{k-spacing(2)} * -1 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25974,7 +26084,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-sheets-remove-inline-end</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26114,7 +26224,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-border-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26124,7 +26234,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-text-margin-bottom</td>
     <td></td>
-    <td><code>30px</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26214,7 +26324,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26224,7 +26334,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-height</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26304,7 +26414,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-drawing-outline-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26324,7 +26434,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-dropzone-spacing-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26434,7 +26544,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-label-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26444,7 +26554,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-label-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26454,7 +26564,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-label-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26464,7 +26574,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-inline-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26474,7 +26584,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-inline-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26484,7 +26594,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 7.5 )</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26534,7 +26644,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-focus-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26924,7 +27034,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-progressbar-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27528,7 +27638,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-cell-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27538,7 +27648,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-cell-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27956,7 +28066,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-tabstrip-wrapper-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27966,7 +28076,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-wrapper-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28096,7 +28206,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>calc( #{k-spacing(2)} + #{k-spacing(1)} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28126,7 +28236,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28286,7 +28396,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-indicator-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28306,7 +28416,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-content-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28316,7 +28426,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-content-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28376,7 +28486,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-scrollable-button-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28386,7 +28496,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-scrollable-button-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28416,7 +28526,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-taskboard-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28446,7 +28556,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28456,7 +28566,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28526,7 +28636,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-content-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28536,7 +28646,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-content-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28546,7 +28656,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-container-spacing-y</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28556,7 +28666,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-container-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28566,7 +28676,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-container-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28676,7 +28786,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-header-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28696,7 +28806,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-header-gap</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 4 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28706,7 +28816,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-header-actions-gap</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28736,7 +28846,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-cards-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28746,7 +28856,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-cards-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28756,7 +28866,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-cards-gap</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28776,7 +28886,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-pane-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28786,7 +28896,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-pane-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28846,7 +28956,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-pane-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28886,7 +28996,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-pane-content-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28906,7 +29016,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-pane-actions-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28926,7 +29036,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-card-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29086,7 +29196,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tile-layout-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29236,7 +29346,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29246,7 +29356,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-selector-header-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29296,7 +29406,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-list-title-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29356,7 +29466,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-list-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29366,7 +29476,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-list-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29386,7 +29496,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-time-list-highlight-height</td>
     <td></td>
-    <td><code>calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + #{ $kendo-time-list-item-padding-y * 2} )</code></td>
+    <td><code>calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} + calc( #{$kendo-time-list-item-padding-y} * 2 ) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29515,7 +29625,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-timeline-spacing-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 10 )</code></td>
+    <td><code>k-spacing(10)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29525,7 +29635,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-spacing-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 10 )</code></td>
+    <td><code>k-spacing(10)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29535,7 +29645,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-items-padding</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29575,7 +29685,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-mobile-spacing-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29585,7 +29695,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-mobile-spacing-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29595,7 +29705,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-arrow-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 7.5 )</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29605,7 +29715,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-arrow-height</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 7.5 )</code></td>
+    <td><code>k-spacing(7.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29615,7 +29725,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29625,7 +29735,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-wrap-padding-bottom</td>
     <td></td>
-    <td><code>math.div( $kendo-timeline-track-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-timeline-track-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29645,7 +29755,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-margin-bottom</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29745,7 +29855,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-event-offset</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 8 )</code></td>
+    <td><code>k-spacing(8)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29755,7 +29865,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29765,7 +29875,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29775,7 +29885,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-border-radius</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29805,7 +29915,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-min-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 20 )</code></td>
+    <td><code>k-spacing(20)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29835,7 +29945,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-horizontal-flag-min-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 15 )</code></td>
+    <td><code>k-spacing(15)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29865,7 +29975,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-callout-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29875,7 +29985,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-callout-height</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29885,7 +29995,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-offset-bottom</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29965,7 +30075,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-date-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 12 ) + map.get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>calc( #{k-spacing(12)} + #{k-spacing(0.5)} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29975,7 +30085,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-date-margin-bottom</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30035,7 +30145,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-circle-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30045,7 +30155,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-circle-height</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30125,7 +30235,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-toolbar-sm-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30135,7 +30245,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-md-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30145,7 +30255,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-lg-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30155,7 +30265,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-sm-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30165,7 +30275,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-md-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30175,7 +30285,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-lg-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30185,7 +30295,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-sm-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30195,7 +30305,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-md-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30205,7 +30315,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-lg-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30401,7 +30511,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30411,7 +30521,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30481,7 +30591,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-title-margin</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30491,7 +30601,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-callout-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30681,7 +30791,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-indent</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30691,7 +30801,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-sm-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30701,7 +30811,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-md-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30711,7 +30821,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-lg-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30721,7 +30831,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-sm-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30731,7 +30841,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-md-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30741,7 +30851,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-lg-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>k-spacing(2.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30771,7 +30881,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-filter-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30781,7 +30891,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-filter-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31110,7 +31220,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-checkbox-wrap-padding</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, .5 )</code></td>
+    <td><code>k-spacing(.5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31400,7 +31510,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-dropzone-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31410,7 +31520,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-dropzone-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31480,7 +31590,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-item-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31490,7 +31600,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-item-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31500,7 +31610,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-multiple-items-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31630,7 +31740,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-window-border-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 ) 0 0</code></td>
+    <td><code>k-spacing(1) 0 0</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31680,7 +31790,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-titlebar-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31690,7 +31800,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-titlebar-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31750,7 +31860,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-actions-gap</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31780,7 +31890,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-inner-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31790,7 +31900,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-inner-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31800,7 +31910,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-buttongroup-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31810,7 +31920,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-buttongroup-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31830,7 +31940,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-buttongroup-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31986,7 +32096,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31996,7 +32106,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -32036,7 +32146,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-steps-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -32046,7 +32156,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-steps-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -32056,7 +32166,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-content-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -32066,7 +32176,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-content-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -32096,7 +32206,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-buttons-margin-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 7 )</code></td>
+    <td><code>k-spacing(7)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -32106,7 +32216,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-buttons-margin-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>

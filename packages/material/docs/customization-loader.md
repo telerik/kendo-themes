@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-sm-segment-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the small Loader segment.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-md-segment-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>8px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the medium Loader segment.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-lg-segment-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the large Loader segment.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-sm-padding</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-loader-sm-segment-size, 2 )</code></td>
-    <td><code>2px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-sm-segment-size} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the small Loader.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-md-padding</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-loader-md-segment-size, 2 )</code></td>
-    <td><code>4px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-md-segment-size} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the medium Loader.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-lg-padding</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-loader-lg-segment-size, 2 )</code></td>
-    <td><code>8px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-lg-segment-size} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the large Loader.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-sm-spinner-3-width</td>
-    <td>Number</td>
-    <td><code>( $kendo-loader-sm-segment-size * 4 )</code></td>
-    <td><code>16px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-sm-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small spinner-3 Loader.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-md-spinner-3-width</td>
-    <td>Number</td>
-    <td><code>( $kendo-loader-md-segment-size * 4 )</code></td>
-    <td><code>32px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-md-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium spinner-3 Loader.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-lg-spinner-3-width</td>
-    <td>Number</td>
-    <td><code>( $kendo-loader-lg-segment-size * 4 )</code></td>
-    <td><code>64px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-lg-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large spinner-3 Loader.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-sm-spinner-3-height</td>
-    <td>Number</td>
-    <td><code>( $kendo-loader-sm-spinner-3-width * $equilateral-height )</code></td>
-    <td><code>13.8564064608px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-sm-spinner-3-width} * #{$equilateral-height} )</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-1, 0.25rem) * 4) * 0.8660254038)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small spinner-3 Loader.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-md-spinner-3-height</td>
-    <td>Number</td>
-    <td><code>( $kendo-loader-md-spinner-3-width * $equilateral-height )</code></td>
-    <td><code>27.7128129216px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-md-spinner-3-width} * #{$equilateral-height} )</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-2, 0.5rem) * 4) * 0.8660254038)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium spinner-3 Loader.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-lg-spinner-3-height</td>
-    <td>Number</td>
-    <td><code>( $kendo-loader-lg-spinner-3-width * $equilateral-height )</code></td>
-    <td><code>55.4256258432px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-lg-spinner-3-width} * #{$equilateral-height} )</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-4, 1rem) * 4) * 0.8660254038)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large spinner-3 Loader.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-sm-spinner-4-width</td>
-    <td>Number</td>
-    <td><code>$kendo-loader-sm-segment-size * 4</code></td>
-    <td><code>16px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-sm-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small spinner-4 Loader.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-md-spinner-4-width</td>
-    <td>Number</td>
-    <td><code>$kendo-loader-md-segment-size * 4</code></td>
-    <td><code>32px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-md-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium spinner-4 Loader.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-lg-spinner-4-width</td>
-    <td>Number</td>
-    <td><code>$kendo-loader-lg-segment-size * 4</code></td>
-    <td><code>64px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ $kendo-loader-lg-segment-size} * 4 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large spinner-4 Loader.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-sm-spinner-4-height</td>
-    <td>Number</td>
+    <td>Calculation</td>
     <td><code>$kendo-loader-sm-spinner-4-width</code></td>
-    <td><code>16px</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small spinner-4 Loader.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-md-spinner-4-height</td>
-    <td>Number</td>
+    <td>Calculation</td>
     <td><code>$kendo-loader-md-spinner-4-width</code></td>
-    <td><code>32px</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium spinner-4 Loader.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-lg-spinner-4-height</td>
-    <td>Number</td>
+    <td>Calculation</td>
     <td><code>$kendo-loader-lg-spinner-4-width</code></td>
-    <td><code>64px</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large spinner-4 Loader.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-sm-container-padding</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the small Loader container.</div></div>
@@ -289,9 +289,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-md-container-padding</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 5 )</code></td>
-    <td><code>20px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(5)</code></td>
+    <td><code>var(--kendo-spacing-5, 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the medium Loader container.</div></div>
@@ -299,9 +299,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-lg-container-padding</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 6 )</code></td>
-    <td><code>24px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the large Loader container.</div></div>
@@ -309,9 +309,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-sm-container-gap</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the small Loader container.</div></div>
@@ -319,9 +319,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-md-container-gap</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>8px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the medium Loader container.</div></div>
@@ -329,9 +329,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-loader-lg-container-gap</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
-    <td><code>12px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the large Loader container.</div></div>

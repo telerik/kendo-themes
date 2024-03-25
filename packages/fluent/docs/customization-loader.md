@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-segment-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-segment-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-segment-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-sm-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-md-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-lg-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-sm-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-md-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-loader-lg-segment-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} /2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-spinner-3-width</td>
     <td></td>
-    <td><code>( $kendo-loader-sm-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-spinner-3-width</td>
     <td></td>
-    <td><code>( $kendo-loader-md-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-spinner-3-width</td>
     <td></td>
-    <td><code>( $kendo-loader-lg-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-spinner-3-height</td>
     <td></td>
-    <td><code>( $kendo-loader-sm-spinner-3-width * $kendo-loader-equilateral-height )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-spinner-3-height</td>
     <td></td>
-    <td><code>( $kendo-loader-md-spinner-3-width * $kendo-loader-equilateral-height )</code></td>
+    <td><code>calc( #{$kendo-loader-md-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-spinner-3-height</td>
     <td></td>
-    <td><code>( $kendo-loader-lg-spinner-3-width * $kendo-loader-equilateral-height )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-spinner-3-width} * #{$kendo-loader-equilateral-height} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-spinner-4-width</td>
     <td></td>
-    <td><code>( $kendo-loader-sm-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-sm-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-spinner-4-width</td>
     <td></td>
-    <td><code>( $kendo-loader-md-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-md-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-spinner-4-width</td>
     <td></td>
-    <td><code>( $kendo-loader-lg-segment-size * 4 )</code></td>
+    <td><code>calc( #{$kendo-loader-lg-segment-size} * 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-container-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-container-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-container-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-container-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-container-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-container-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-sm-container-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-md-container-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-lg-container-gap</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>

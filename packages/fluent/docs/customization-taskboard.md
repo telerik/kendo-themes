@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-taskboard-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-content-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-content-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-container-spacing-y</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-container-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-container-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-header-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-header-gap</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 4 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-header-actions-gap</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-cards-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-cards-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-cards-gap</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-pane-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-pane-padding-x</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-pane-header-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-pane-content-padding-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-pane-actions-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-card-padding-y</td>
     <td></td>
-    <td><code>math.div( $kendo-taskboard-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-taskboard-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>

@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-tooltip-padding-y</td>
-    <td>Number</td>
-    <td><code>($kendo-padding-md-y * .75)</code></td>
-    <td><code>3px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-padding-md-y} * .75 )</code></td>
+    <td><code>calc(var(--kendo-spacing-1, 0.25rem) * 0.75)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Tooltip.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tooltip-padding-x</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-padding-md-x, 2 )</code></td>
-    <td><code>8px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-padding-md-x} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Tooltip.</div></div>

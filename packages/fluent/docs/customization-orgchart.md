@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-orgchart-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6)</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-title-margin-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-subtitle-margin-y</td>
     <td></td>
-    <td><code>$kendo-orgchart-spacer - map.get( $kendo-spacing, 1 )</code></td>
+    <td><code>calc( $kendo-orgchart-spacer - k-spacing(1) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-card-title-margin-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-card-subtitle-margin-y</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-card-body-padding-y</td>
     <td></td>
-    <td><code>$kendo-orgchart-spacer - map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>calc( #{$kendo-orgchart-spacer} - k-spacing(2) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-card-body-vbox-margin-x</td>
     <td></td>
-    <td><code>$kendo-orgchart-spacer - map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>calc( #{$kendo-orgchart-spacer} - k-spacing(2) )</code></td>
     <td></td>
 </tr>
 <tr>

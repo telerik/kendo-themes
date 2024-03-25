@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-window-border-width</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 1 ) 0 0</code></td>
+    <td><code>k-spacing(1) 0 0</code></td>
     <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-titlebar-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-titlebar-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td><code>k-spacing(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-actions-gap</td>
     <td></td>
-    <td><code>0px</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-inner-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-inner-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-buttongroup-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-buttongroup-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
+    <td><code>k-spacing(6)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-buttongroup-spacing</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>

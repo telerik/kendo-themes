@@ -52,16 +52,16 @@ The following table lists the available variables for customization.
     <td>Map</td>
     <td><code>(
     sm: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     ),
     md: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     ),
     lg: (
-        spacing: k-map-get( $kendo-spacing, 1 )
+        spacing: k-spacing(1)
     )
 )</code></td>
-    <td><code>(sm: (spacing: 0.25rem), md: (spacing: 0.25rem), lg: (spacing: 0.25rem))</code></td>
+    <td><code>(sm: (spacing: var(--kendo-spacing-1, 0.25rem)), md: (spacing: var(--kendo-spacing-1, 0.25rem)), lg: (spacing: var(--kendo-spacing-1, 0.25rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>

@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-color-gradient-spacer</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
-    <td><code>12px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacer of the ColorGradient.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-color-gradient-spacer</code></td>
-    <td><code>12px</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorGradient.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-color-gradient-padding-y</code></td>
-    <td><code>12px</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorGradient.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-gap</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-color-gradient-spacer</code></td>
-    <td><code>12px</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the sections of the ColorGradient.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-canvas-gap</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-color-gradient-spacer</code></td>
-    <td><code>12px</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the ColorGradient canvas.</div></div>
@@ -409,9 +409,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-input-gap</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-color-gradient-spacer, 1.5 )</code></td>
-    <td><code>8px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 1.5 )</code></td>
+    <td><code>calc(var(--kendo-spacing-3, 0.75rem) / 1.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorGradient inputs.</div></div>
@@ -419,9 +419,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-input-label-gap</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-color-gradient-spacer, 3 )</code></td>
-    <td><code>4px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 3 )</code></td>
+    <td><code>calc(var(--kendo-spacing-3, 0.75rem) / 3)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorGradient inputs and their labels.</div></div>
@@ -449,9 +449,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-contrast-spacer</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-color-gradient-spacer, 1.5 )</code></td>
-    <td><code>8px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 1.5 )</code></td>
+    <td><code>calc(var(--kendo-spacing-3, 0.75rem) / 1.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the ColorGradient contrast tool.</div></div>

@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-captcha-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-image-controls-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-captcha-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-captcha-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-validation-offset-y</td>
     <td></td>
-    <td><code>math.div( $kendo-captcha-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-captcha-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>

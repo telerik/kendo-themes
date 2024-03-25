@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-margin-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-margin-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-padding-y</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-padding-x</td>
     <td></td>
-    <td><code>0</code></td>
+    <td><code>k-spacing(0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-action-pane-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-action-pane-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-resize-handle-margin-x</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>k-spacing(1px)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-resize-handle-margin-y</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>k-spacing(1px)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-resize-handle-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-resize-top-offset</td>
     <td></td>
-    <td><code>math.div( $kendo-image-editor-resize-handle-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-image-editor-resize-handle-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-resize-left-offset</td>
     <td></td>
-    <td><code>math.div( $kendo-image-editor-resize-handle-size, 2 )</code></td>
+    <td><code>calc( #{$kendo-image-editor-resize-handle-size} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>

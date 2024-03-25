@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-color-gradient-spacer</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-padding-x</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-canvas-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 2 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 2 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -450,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-input-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 4 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-input-label-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 4 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-contrast-spacing</td>
     <td></td>
-    <td><code>math.div( $kendo-color-gradient-spacer, 1.5 )</code></td>
+    <td><code>calc( #{$kendo-color-gradient-spacer} / 1.5 )</code></td>
     <td></td>
 </tr>
 <tr>
