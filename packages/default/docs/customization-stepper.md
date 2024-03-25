@@ -128,6 +128,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-stepper-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+    </td>
+</tr>
+<tr>
     <td>$kendo-stepper-line-height</td>
     <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
