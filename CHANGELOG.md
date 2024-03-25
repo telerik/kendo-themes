@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.3.0-dev.1...v8.0.0-dev.0) (2024-03-25)
+
+
+### Bug Fixes
+
+* generate sass swatches compatible with the new color system ([b510c58](https://github.com/telerik/kendo-themes/commit/b510c58d0afd430a23908019267f6c2c54186e19))
+* incorrect color mapping in the new color system ([634edce](https://github.com/telerik/kendo-themes/commit/634edce2c46a20e2e7790658c7ce876dfcd4af2b))
+
+
+### Features
+
+* **bootstrap:** enable color system ([45cc0b8](https://github.com/telerik/kendo-themes/commit/45cc0b85ba668fcdb24cbdab0a1909cba400ca3b))
+* **classic:** enable color system ([831b390](https://github.com/telerik/kendo-themes/commit/831b390c9f62315ff7040bb9e2f59817f1e01168))
+* **default:** enable color system ([0d08db2](https://github.com/telerik/kendo-themes/commit/0d08db2de7207536ffe3aafd5fef8357b5bc97fa))
+* **fluent:** enable color system ([422ad07](https://github.com/telerik/kendo-themes/commit/422ad078f87149e0f2eda39fc81b0df713c109a7))
+* **material:** enable color system ([2dc48a0](https://github.com/telerik/kendo-themes/commit/2dc48a0aadc491cddd1c8ebaa78211cf8a75ca59))
+
+
+### BREAKING CHANGES
+
+* **fluent:** This commit enables the new Color System,
+which introduces a new way of implementing and customizing the colors.
+If the user has customized some of the old color variables like
+`$kendo-color-primary`, `$kendo-body-bg`, `$kendo-base-bg`, etc, they
+would need to migrate their customizations by following the Migration Guide
+which can be found in the Progress Design System Docs.
+* **material:** This commit enables the new Color System,
+which introduces a new way of implementing and customizing the colors.
+If the user has customized some of the old color variables like
+`$kendo-color-primary`, `$kendo-body-bg`, `$kendo-base-bg`, etc, they
+would need to migrate their customizations by following the Migration Guide
+which can be found in the Progress Design System Docs.
+* **bootstrap:** This commit enables the new Color System,
+which introduces a new way of implementing and customizing the colors.
+If the user has customized some of the old color variables like
+`$kendo-color-primary`, `$kendo-body-bg`, `$kendo-base-bg`, etc, they
+would need to migrate their customizations by following the Migration Guide
+which can be found in the Progress Design System Docs.
+* **classic:** This commit enables the new Color System,
+which introduces a new way of implementing and customizing the colors.
+If the user has customized some of the old color variables like
+`$kendo-color-primary`, `$kendo-body-bg`, `$kendo-base-bg`, etc, they
+would need to migrate their customizations by following the Migration Guide
+which can be found in the Progress Design System Docs.
+* **default:** This commit enables the new Color System,
+which introduces a new way of implementing and customizing the colors.
+If the user has customized some of the old color variables like
+`$kendo-color-primary`, `$kendo-body-bg`, `$kendo-base-bg`, etc, they
+would need to migrate their customizations by following the Migration Guide
+which can be found in the Progress Design System Docs.
+
+
+
+
+
 # [7.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.3.0-dev.0...v7.3.0-dev.1) (2024-03-18)
 
 

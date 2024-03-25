@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.3.0-dev.1...v8.0.0-dev.0) (2024-03-25)
+
+
+### Bug Fixes
+
+* incorrect color mapping in the new color system ([634edce](https://github.com/telerik/kendo-themes/commit/634edce2c46a20e2e7790658c7ce876dfcd4af2b))
+
+
+### Features
+
+* **bootstrap:** enable color system ([45cc0b8](https://github.com/telerik/kendo-themes/commit/45cc0b85ba668fcdb24cbdab0a1909cba400ca3b))
+
+
+### BREAKING CHANGES
+
+* **bootstrap:** This commit enables the new Color System,
+which introduces a new way of implementing and customizing the colors.
+If the user has customized some of the old color variables like
+`$kendo-color-primary`, `$kendo-body-bg`, `$kendo-base-bg`, etc, they
+would need to migrate their customizations by following the Migration Guide
+which can be found in the Progress Design System Docs.
+
+
+
+
+
 # [7.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.3.0-dev.0...v7.3.0-dev.1) (2024-03-18)
 
 
