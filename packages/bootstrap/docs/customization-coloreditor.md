@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-editor-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorEditor.</div></div>

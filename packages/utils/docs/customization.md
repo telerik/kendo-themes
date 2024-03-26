@@ -552,6 +552,13 @@ This is equivalent to `border-color: black;`.
 
 
 
+### `.k-rounded-l-full`
+
+This is equivalent to `border-left-radius: 9999px;`.
+
+
+
+
 ### `.k-rounded`
 
 This is equivalent to `border-radius: 0.25rem;`.
@@ -919,13 +926,6 @@ This is equivalent to `border-left-radius: 0.25rem;`.
 ### `.k-rounded-l-lg`
 
 This is equivalent to `border-left-radius: 0.5rem;`.
-
-
-
-
-### `.k-rounded-l-full`
-
-This is equivalent to `border-left-radius: 9999px;`.
 
 
 
