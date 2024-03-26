@@ -890,7 +890,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-group-indicator-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
+    <td><code>k-border-radius(md)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -904,7 +904,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the grid group indicator.</div></div>
     </td>
 </tr>
 <tr>

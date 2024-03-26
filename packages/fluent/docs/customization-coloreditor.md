@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
+    <td><code>k-border-radius(md)</code></td>
     <td></td>
 </tr>
 <tr>

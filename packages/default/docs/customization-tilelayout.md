@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tile-layout-hint-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-lg</code></td>
-    <td><code>6px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(lg)</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the TileLayout hint.</div></div>

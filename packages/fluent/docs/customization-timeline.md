@@ -520,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-vertical-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-lg} )</code></td>
+    <td><code>k-border-radius(lg)</code></td>
     <td></td>
 </tr>
 <tr>

@@ -78,16 +78,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-border-radius</td>
-    <td>Number</td>
-    <td><code>4px</code></td>
-    <td><code>4px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-base-bg</td>
     <td>String</td>
     <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
