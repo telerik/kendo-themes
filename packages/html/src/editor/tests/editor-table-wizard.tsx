@@ -1,4 +1,4 @@
-import { Popup } from '../..';
+import { Popup, TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../..';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
@@ -37,14 +37,14 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <div className="k-tabstrip k-tabstrip-top">
-                        <div className="k-tabstrip-items-wrapper k-hstack">
-                            <ul className="k-tabstrip-items k-reset">
-                                <li className="k-item k-first k-active"><span className="k-link">General</span></li>
-                                <li className="k-item k-last"><span className="k-link">Advanced</span></li>
-                            </ul>
-                        </div>
-                        <div className="k-tabstrip-content k-active" >
+                    <TabStrip header={false}>
+                        <TabStripItemsWrapper>
+                            <TabStripItems>
+                                <TabStripItem first active value="General"/>
+                                <TabStripItem last value="Advanced"/>
+                            </TabStripItems>
+                        </TabStripItemsWrapper>
+                        <TabStripContent active>
                             <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={4}>
                                 <FormField
                                     colSpan="2"
@@ -126,8 +126,8 @@ export default () =>(
                                     }
                                 />
                             </FormNormal>
-                        </div>
-                    </div>
+                        </TabStripContent>
+                    </TabStrip>
                 </WindowNormal>
             </section>
             <section>
@@ -137,14 +137,14 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <div className="k-tabstrip k-tabstrip-top">
-                        <div className="k-tabstrip-items-wrapper k-hstack">
-                            <ul className="k-tabstrip-items k-reset">
-                                <li className="k-item k-first"><span className="k-link">General</span></li>
-                                <li className="k-item k-last k-active"><span className="k-link">Advanced</span></li>
-                            </ul>
-                        </div>
-                        <div className="k-tabstrip-content k-active">
+                    <TabStrip header={false}>
+                        <TabStripItemsWrapper>
+                            <TabStripItems>
+                                <TabStripItem first value="General"/>
+                                <TabStripItem last active value="Advanced"/>
+                            </TabStripItems>
+                        </TabStripItemsWrapper>
+                        <TabStripContent active>
                             <FormNormal formButtons={null} tag="div" layout="grid">
                                 <FormField label="ID" optional editor={ <Textbox /> } />
                                 <FormField label="CSS class" optional editor={ <Textbox /> } />
@@ -183,8 +183,8 @@ export default () =>(
                                     />
                                 </Fieldset>
                             </FormNormal>
-                        </div>
-                    </div>
+                        </TabStripContent>
+                    </TabStrip>
                 </WindowNormal>
             </section>
 
