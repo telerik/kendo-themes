@@ -32,16 +32,6 @@ The following table lists the available variables for customizing the Bootstrap 
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-border-radius</td>
-    <td>Number</td>
-    <td><code>$border-radius</code></td>
-    <td><code>0.375rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-lg-font-size</td>
     <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
@@ -1219,9 +1209,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the Breadcrumb link.</div></div>
@@ -2436,9 +2426,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-calendar-cell-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the cells in the Calendar.</div></div>
@@ -5507,9 +5497,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-color-gradient-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient.</div></div>
@@ -5627,9 +5617,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-color-gradient-canvas-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient canvas.</div></div>
@@ -6117,9 +6107,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-color-editor-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorEditor.</div></div>
@@ -6921,9 +6911,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-dock-manager-dock-preview-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-sm</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the dropping area in the DockManager component.</div></div>
@@ -8661,9 +8651,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-fab-border-radius</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-border-radius, 2 )</code></td>
-    <td><code>0.1875rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-border-radius(md)} / 2 )</code></td>
+    <td><code>calc(var(--kendo-border-radius-md, 0.375rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB.</div></div>
@@ -12888,9 +12878,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-loader-container-panel-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the container panel.</div></div>
@@ -13718,9 +13708,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the OrgChart node group.</div></div>
@@ -16510,9 +16500,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popup-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the popup.</div></div>
@@ -17010,9 +17000,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Prompt suggestion container.</div></div>
@@ -18046,9 +18036,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-skeleton-text-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Skeleton text.</div></div>
@@ -19436,9 +19426,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Spreadsheet image Dialog preview.</div></div>
@@ -19456,9 +19446,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Spreadsheet image Dialog preview overlay.</div></div>
@@ -19546,9 +19536,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-lg</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(lg)</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Spreadsheet drawing handle.</div></div>
@@ -21799,9 +21789,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-taskboard-column-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-sm</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard column.</div></div>
@@ -24610,9 +24600,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-window-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Window.</div></div>

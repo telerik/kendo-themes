@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-tooltip-border-radius</td>
     <td></td>
-    <td><code>$kendo-border-radius</code></td>
+    <td><code>k-border-radius(md)</code></td>
     <td></td>
 </tr>
 <tr>

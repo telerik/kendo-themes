@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-border-radius</td>
     <td></td>
-    <td><code>$kendo-border-radius-md</code></td>
+    <td><code>k-border-radius(md)</code></td>
     <td></td>
 </tr>
 <tr>

@@ -82,16 +82,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-border-radius</td>
-    <td>Number</td>
-    <td><code>4px</code></td>
-    <td><code>4px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-base-bg</td>
     <td>String</td>
     <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
@@ -557,9 +547,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-badge-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Badge.</div></div>
@@ -949,9 +939,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-bottom-nav-item-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the BottomNavigation item.</div></div>
@@ -1289,9 +1279,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border-radius of the Breadcrumb link.</div></div>
@@ -2506,9 +2496,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-calendar-cell-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the cells in the Calendar.</div></div>
@@ -3358,9 +3348,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-card-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-lg</code></td>
-    <td><code>8px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(lg)</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Card.</div></div>
@@ -3370,7 +3360,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-card-inner-border-radius</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} )</code></td>
-    <td><code>calc(8px - 1px)</code></td>
+    <td><code>calc(var(--kendo-border-radius-lg, 0.375rem) - 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inner border radius of the Card.</div></div>
@@ -5587,9 +5577,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-color-gradient-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient.</div></div>
@@ -5707,9 +5697,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-color-gradient-canvas-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorGradient canvas.</div></div>
@@ -6197,9 +6187,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-color-editor-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the ColorEditor.</div></div>
@@ -7121,9 +7111,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-dock-manager-dock-preview-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-sm</code></td>
-    <td><code>2px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(sm)</code></td>
+    <td><code>var(--kendo-border-radius-sm, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the dropping area in the DockManager component.</div></div>
@@ -8831,9 +8821,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-fab-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB.</div></div>
@@ -13068,9 +13058,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-loader-container-panel-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the container panel.</div></div>
@@ -13618,9 +13608,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-notification-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Notification.</div></div>
@@ -13898,9 +13888,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the OrgChart node group.</div></div>
@@ -16400,9 +16390,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-popover-border-radius</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-border-radius</code></td>
-    <td><code>8px</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the Popover.</div></div>
@@ -17190,9 +17180,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Prompt suggestion container.</div></div>
@@ -18226,9 +18216,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-skeleton-text-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Skeleton text.</div></div>
@@ -19616,9 +19606,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Spreadsheet image Dialog preview.</div></div>
@@ -19636,9 +19626,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Spreadsheet image Dialog preview overlay.</div></div>
@@ -19726,9 +19716,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-lg</code></td>
-    <td><code>8px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(lg)</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Spreadsheet drawing handle.</div></div>
@@ -21519,9 +21509,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of tabs</div></div>
@@ -21979,9 +21969,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-taskboard-column-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard column.</div></div>
@@ -22319,9 +22309,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-taskboard-card-border-radius</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-border-radius</code></td>
-    <td><code>8px</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card.</div></div>
@@ -22469,9 +22459,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-taskboard-drag-placeholder-border-radius</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-taskboard-card-border-radius</code></td>
-    <td><code>8px</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card placeholder.</div></div>
@@ -22589,9 +22579,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-tile-layout-hint-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-lg</code></td>
-    <td><code>8px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(lg)</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the TileLayout hint.</div></div>
@@ -23495,9 +23485,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-tooltip-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Tooltip.</div></div>
@@ -23875,9 +23865,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-treeview-item-border-radius</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius-md</code></td>
-    <td><code>4px</code></td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TreeView items.</div></div>
