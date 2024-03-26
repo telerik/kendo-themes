@@ -1,35 +1,24 @@
 import { ColumnMenu } from "../../column-menu";
 import { Icon } from '../../icon';
+import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from "../../tabstrip";
 
 export const ColumnMenuTabbed = (props) => (
     <ColumnMenu
         view="tabbed"
-        children={[
-            <div className="k-tabstrip k-pos-relative k-tabstrip-top">
-                <div className="k-tabstrip-items-wrapper k-hstack">
-                    <ul className="k-reset k-tabstrip-items">
-                        <li className="k-tabstrip-item k-item k-active">
-                            <span className="k-link">
-                                <Icon icon="filter" />
-                            </span>
-                        </li>
-                        <li className="k-tabstrip-item k-item">
-                            <span className="k-link">
-                                <Icon icon="sliders" />
-                            </span>
-                        </li>
-                        <li className="k-tabstrip-item k-item">
-                            <span className="k-link">
-                                <Icon icon="columns" />
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div className="k-tabstrip-content k-active">
+        children={
+            <TabStrip header={false} className="k-pos-relative">
+                <TabStripItemsWrapper>
+                    <TabStripItems>
+                        <TabStripItem active value={<Icon icon="filter" />}/>
+                        <TabStripItem value={<Icon icon="sliders" />}/>
+                        <TabStripItem value={<Icon icon="columns" />}/>
+                    </TabStripItems>
+                </TabStripItemsWrapper>
+                <TabStripContent active>
                     Tabbed column menu content
-                </div>
-            </div>
-        ]}
+                </TabStripContent>
+            </TabStrip>
+        }
         {...props}
     >
     </ColumnMenu>
