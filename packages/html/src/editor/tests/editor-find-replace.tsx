@@ -6,6 +6,7 @@ import { EditorNormal } from '../../editor';
 import { WindowNormal } from '../../window';
 import { ButtonGroup } from '../../button-group';
 import { FormField, FormNormal } from '../../form';
+import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../..';
 
 
 const styles = `
@@ -35,18 +36,14 @@ export default () =>(
 
             <section>
                 <WindowNormal title="Find and Replace" actions={[ 'x' ]}>
-                    <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
-                        <div className="k-tabstrip-items-wrapper k-hstack">
-                            <ul className="k-tabstrip-items k-reset">
-                                <li className="k-item k-active k-tab-on-top">
-                                    <span className="k-link">Find</span>
-                                </li>
-                                <li className="k-item">
-                                    <span className="k-link">Replace</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="k-tabstrip-content k-active">
+                    <TabStrip header={false} className="k-editor-find-replace">
+                        <TabStripItemsWrapper>
+                            <TabStripItems>
+                                <TabStripItem className="k-tab-on-top" value="Find" active />
+                                <TabStripItem value="Replace" />
+                            </TabStripItems>
+                        </TabStripItemsWrapper>
+                        <TabStripContent active>
                             <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
                                 <FormField editor={
@@ -71,25 +68,21 @@ export default () =>(
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-right">Next</Button>
                                 </div>
                             </FormNormal>
-                        </div>
-                    </div>
+                        </TabStripContent>
+                    </TabStrip>
                 </WindowNormal>
             </section>
 
             <section>
                 <WindowNormal className="k-editor-window" title="Find and Replace" actions={[ 'x' ]}>
-                    <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
-                        <div className="k-tabstrip-items-wrapper k-hstack">
-                            <ul className="k-tabstrip-items k-reset">
-                                <li className="k-item">
-                                    <span className="k-link">Find</span>
-                                </li>
-                                <li className="k-item k-active k-tab-on-top">
-                                    <span className="k-link">Replace</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="k-tabstrip-content k-active">
+                    <TabStrip header={false} className="k-editor-find-replace">
+                        <TabStripItemsWrapper>
+                            <TabStripItems>
+                                <TabStripItem value="Find" />
+                                <TabStripItem className="k-tab-on-top" value="Replace" active />
+                            </TabStripItems>
+                        </TabStripItemsWrapper>
+                        <TabStripContent active>
                             <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={ <Textbox showClearButton={false} value="editor" /> } />
                                 <FormField label="Replace With:" editor={ <Textbox showClearButton={false} value="grid" /> } />
@@ -121,8 +114,8 @@ export default () =>(
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-right">Next</Button>
                                 </div>
                             </FormNormal>
-                        </div>
-                    </div>
+                        </TabStripContent>
+                    </TabStrip>
                 </WindowNormal>
             </section>
 
