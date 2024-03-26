@@ -255,7 +255,7 @@
         }
 
         legend {
-            font-size: var(kendo-font-size-sm, inherit );
+            font-size: var( --kendo-font-size-sm, inherit );
             text-align: start;
             font-weight: 600;
             line-height: 1;
