@@ -16,9 +16,9 @@ export const GridWithColumnMenu = ({ contentClassName, sortable, resizable, ...o
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="ID" className="k-filterable"></GridHeaderCell>
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Name" className="k-filterable"></GridHeaderCell>
-                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Category" className="k-filterable"></GridHeaderCell>
+                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="ID" filterable></GridHeaderCell>
+                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Name" filterable></GridHeaderCell>
+                                    <GridHeaderCell sortable={sortable} resizable={resizable} rowspan={1} colspan={1} menu="column" columnTitle="Category" filterable></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>

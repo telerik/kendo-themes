@@ -17,11 +17,11 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell rowspan={1} colspan={1} className="k-filterable">
+                                    <GridHeaderCell rowspan={1} colspan={1} filterable>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} className="k-filterable" menu="column" columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} className="k-filterable" menu="column" columnTitle="Command"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} filterable menu="column" columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} filterable menu="column" columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -74,11 +74,11 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell rowspan={1} colspan={1} className="k-filterable">
+                                    <GridHeaderCell rowspan={1} colspan={1} filterable>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} className="k-filterable" sortable menu="column" columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell rowspan={1} colspan={1} className="k-filterable" menu="column" columnTitle="Command"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} filterable sortable menu="column" columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} filterable menu="column" columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -131,11 +131,11 @@ export default () =>(
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell resizable rowspan={1} colspan={1} className="k-filterable">
+                                    <GridHeaderCell resizable rowspan={1} colspan={1} filterable>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell resizable rowspan={1} colspan={1} className="k-filterable" sortable menu="column" columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell resizable rowspan={1} colspan={1} className="k-filterable" menu="column" columnTitle="Command"></GridHeaderCell>
+                                    <GridHeaderCell resizable rowspan={1} colspan={1} filterable sortable menu="column" columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell resizable rowspan={1} colspan={1} filterable menu="column" columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
