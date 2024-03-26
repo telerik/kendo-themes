@@ -3,6 +3,7 @@ import { DropdownList } from '../../dropdownlist';
 import { Button } from '../../button';
 import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from "../../grid";
 import { TableRow, TableTbody, TableTd, TableThead } from '../../table';
+import { TabStrip, TabStripItemsWrapper, TabStripItems, TabStripItem, TabStripContent } from '../../tabstrip';
 
 const styles = `
     .k-window {
@@ -26,24 +27,16 @@ export default () =>(
                         <Button icon="trash" fillMode="flat" themeColor="primary">Delete</Button>
                     </>
                 }>
-                    <div className="k-tabstrip k-tabstrip-top">
-                        <div className="k-tabstrip-items-wrapper k-hstack">
-                            <ul className="k-reset k-tabstrip-items">
-                                <li className="k-item k-first">
-                                    <span className="k-link">General</span>
-                                </li>
-                                <li className="k-item">
-                                    <span className="k-link">Resources</span>
-                                </li>
-                                <li className="k-item">
-                                    <span className="k-link">Predecessors</span>
-                                </li>
-                                <li className="k-item k-last k-active">
-                                    <span className="k-link">Successors</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="k-tabstrip-content k-active">
+                    <TabStrip header={false}>
+                        <TabStripItemsWrapper>
+                            <TabStripItems>
+                                <TabStripItem first value="General" />
+                                <TabStripItem value="Resources" />
+                                <TabStripItem value="Predecessors" />
+                                <TabStripItem last active value="Successors" />
+                            </TabStripItems>
+                        </TabStripItemsWrapper>
+                        <TabStripContent active>
                             <Grid _renderAriaRoot className="k-grid-no-scrollbar" toolbar={(
                                 <GridToolbar className="k-grid-toolbar">
                                     <Button icon="plus">Add</Button>
@@ -87,8 +80,8 @@ export default () =>(
                                     </GridContent>
                                 </GridContainer>
                             </Grid>
-                        </div>
-                    </div>
+                        </TabStripContent>
+                    </TabStrip>
                 </WindowNormal>
             </section>
 

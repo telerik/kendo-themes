@@ -5,6 +5,7 @@ import { DateTimePicker } from '../../datetimepicker';
 import { NumericTextbox } from '../../numerictextbox';
 import { DropdownList } from '../../dropdownlist';
 import { FormNormal, FormField } from '../../form';
+import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../..';
 
 
 const styles = `
@@ -28,24 +29,16 @@ export default () =>(
                         <Button icon="trash" fillMode="flat" themeColor="primary">Delete</Button>
                     </>
                 }>
-                    <div className="k-tabstrip k-tabstrip-top">
-                        <div className="k-tabstrip-items-wrapper k-hstack">
-                            <ul className="k-reset k-tabstrip-items">
-                                <li className="k-item k-first k-active">
-                                    <span className="k-link">General</span>
-                                </li>
-                                <li className="k-item">
-                                    <span className="k-link">Resources</span>
-                                </li>
-                                <li className="k-item">
-                                    <span className="k-link">Predecessors</span>
-                                </li>
-                                <li className="k-item k-last">
-                                    <span className="k-link">Successors</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="k-tabstrip-content k-active">
+                    <TabStrip header={false}>
+                        <TabStripItemsWrapper>
+                            <TabStripItems>
+                                <TabStripItem first active value="General" />
+                                <TabStripItem value="Resources" />
+                                <TabStripItem value="Predecessors" />
+                                <TabStripItem last value="Successors" />
+                            </TabStripItems>
+                        </TabStripItemsWrapper>
+                        <TabStripContent active>
                             <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={2}>
                                 <FormField
                                     colSpan="full"
@@ -85,8 +78,8 @@ export default () =>(
                                     editor={ <DropdownList placeholder="-None-"/> }
                                 />
                             </FormNormal>
-                        </div>
-                    </div>
+                        </TabStripContent>
+                    </TabStrip>
                 </WindowNormal>
             </section>
         </div>

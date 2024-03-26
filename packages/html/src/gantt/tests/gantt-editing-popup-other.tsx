@@ -6,6 +6,7 @@ import { DatePicker } from '../../datepicker';
 import { NumericTextbox } from '../../numerictextbox';
 import { Checkbox } from '../../checkbox';
 import { FormNormal, FormField } from '../../form';
+import { TabStrip, TabStripItemsWrapper, TabStripItems, TabStripItem, TabStripContent } from '../../tabstrip';
 
 
 const styles = `
@@ -29,27 +30,17 @@ export default () =>(
                         <Button icon="trash" fillMode="flat" themeColor="primary">Delete</Button>
                     </>
                 }>
-                    <div className="k-tabstrip k-tabstrip-top">
-                        <div className="k-tabstrip-items-wrapper k-hstack">
-                            <ul className="k-reset k-tabstrip-items">
-                                <li className="k-item k-first">
-                                    <span className="k-link">General</span>
-                                </li>
-                                <li className="k-item">
-                                    <span className="k-link">Resources</span>
-                                </li>
-                                <li className="k-item">
-                                    <span className="k-link">Predecessors</span>
-                                </li>
-                                <li className="k-item">
-                                    <span className="k-link">Successors</span>
-                                </li>
-                                <li className="k-item k-last k-active">
-                                    <span className="k-link">Other</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="k-tabstrip-content k-active">
+                    <TabStrip header={false}>
+                        <TabStripItemsWrapper>
+                            <TabStripItems>
+                                <TabStripItem first value="General" />
+                                <TabStripItem value="Resources" />
+                                <TabStripItem value="Predecessors" />
+                                <TabStripItem value="Successors" />
+                                <TabStripItem last active value="Other" />
+                            </TabStripItems>
+                        </TabStripItemsWrapper>
+                        <TabStripContent active>
                             <FormNormal formButtons={null} tag="div">
                                 <FormField
                                     label="Notes"
@@ -77,8 +68,8 @@ export default () =>(
                                     }
                                 />
                             </FormNormal>
-                        </div>
-                    </div>
+                        </TabStripContent>
+                    </TabStrip>
                 </WindowNormal>
             </section>
 
