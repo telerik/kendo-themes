@@ -8,19 +8,6 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        .k-gantt {
-            height: 700px;
-        }
-        .k-gantt-treelist {
-            width: 250px;
-        }
-        .k-gantt-timeline-pane {
-            flex: 1;
-            overflow: auto;
-        }
-
-    </style>
     <div id="test-area">
         <div class="k-gantt">
             <div class="k-gantt-header k-gantt-toolbar k-toolbar k-toolbar-md">
@@ -56,7 +43,7 @@
             <div class="k-gantt-content">
                 <div class="k-gantt-splitter k-splitter k-splitter-horizontal k-splitter-flex">
                     <div class="k-gantt-treelist k-pane k-pane-static" style="flex-basis: 30%;">
-                        <div class="k-treelist k-grid-display-block k-grid k-grid-md">
+                        <div class="k-treelist k-grid k-grid-md">
                             <div class="k-grid-header">
                                 <div class="k-grid-header-wrap">
                                     <table class="k-grid-header-table k-table k-table-md" style="min-width: 250px;">
@@ -88,7 +75,7 @@
                                 </div>
                             </div>
                             <div class="k-grid-container">
-                                <div class="k-auto-scrollable k-grid-content" style="height: 530px; display: block;">
+                                <div class="k-grid-content" style="height: 530px;">
                                     <table class="k-selectable k-grid-table k-table k-table-md" style="min-width: 250px;">
                                         <colgroup>
                                             <col class="k-drag-col">
@@ -105,7 +92,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">7</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M256 352 128 160h256z"></path>
@@ -122,7 +109,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">18</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -131,7 +118,7 @@
                                                     </span>Project Kickoff
                                                 </td>
                                             </tr>
-                                            <tr class=" k-treelist-group k-table-row">
+                                            <tr class="k-treelist-group k-table-row">
                                                 <td class="k-drag-cell k-table-td">
                                                     <span class="k-icon k-svg-icon k-svg-i-reorder">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -140,7 +127,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">11</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -160,7 +147,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">19</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -181,7 +168,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">20</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -202,7 +189,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">39</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -214,7 +201,7 @@
                                                     </span>Functional and Technical Specification
                                                 </td>
                                             </tr>
-                                            <tr class=" k-treelist-group k-table-row">
+                                            <tr class="k-treelist-group k-table-row">
                                                 <td class="k-drag-cell k-table-td">
                                                     <span class="k-icon k-svg-icon k-svg-i-reorder">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -223,7 +210,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">12</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -243,7 +230,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">22</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -264,7 +251,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">23</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -285,7 +272,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">13</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -305,7 +292,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">24</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -326,7 +313,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">26</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -347,7 +334,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">27</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -368,7 +355,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">29</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -389,7 +376,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">28</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -401,7 +388,7 @@
                                                     </span>Unit Tests
                                                 </td>
                                             </tr>
-                                            <tr class="k-alt k-treelist-group k-table-row">
+                                            <tr class="k-alt k-treelist-group k-table-row k-table-alt-row">
                                                 <td class="k-drag-cell k-table-td">
                                                     <span class="k-icon k-svg-icon k-svg-i-reorder">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -410,7 +397,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">14</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -430,7 +417,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">32</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -451,7 +438,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">33</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -472,7 +459,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">30</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -492,7 +479,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">34</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -513,7 +500,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">35</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -525,7 +512,7 @@
                                                     </span>Articles
                                                 </td>
                                             </tr>
-                                            <tr class="k-alt k-treelist-group k-table-row">
+                                            <tr class="k-alt k-treelist-group k-table-row k-table-alt-row">
                                                 <td class="k-drag-cell k-table-td">
                                                     <span class="k-icon k-svg-icon k-svg-i-reorder">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -534,11 +521,11 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">31</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
-                                                    <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                                    <span class="k-treelist-toggle k-icon k-svg-icon k-svg-i-caret-alt-right">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                             <path d="M352 256 160 384V128z"></path>
                                                         </svg>
@@ -554,7 +541,7 @@
                                                     </span>
                                                 </td>
                                                 <td class="k-table-td">17</td>
-                                                <td class="k-table-td" style="white-space: nowrap;">
+                                                <td class="k-table-td">
                                                     <span class="k-treelist-toggle k-icon k-svg-icon">
                                                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"></svg>
                                                     </span>
@@ -1450,6 +1437,7 @@
                                         <span class="k-arrow-e"></span>
                                     </div>
                                 </div>
+                                <div class="k-current-time" style="left: 243px; top: 0px; width: 1px; height: 828px;"></div>
                             </div>
                         </div>
                     </div>
