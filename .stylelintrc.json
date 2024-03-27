@@ -12,6 +12,7 @@
 
         "at-rule-no-unknown": null,
         "at-rule-empty-line-before": null,
+        "at-rule-disallowed-list": [ "debug" ],
 
         "color-function-notation": null,
         "color-named": null,
