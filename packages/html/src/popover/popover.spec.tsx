@@ -1,4 +1,5 @@
 import { classNames, kendoThemeMaps } from '../misc';
+import { Popup } from '../popup';
 
 export const POPOVER_CLASSNAME = `k-popover`;
 
@@ -27,26 +28,27 @@ export const Popover = (
     } = props;
 
     return (
-        <div
+        <Popup
             {...other}
             className={classNames(
                 props.className,
                 POPOVER_CLASSNAME,
-            )}>
+            )}
+        >
             {callout &&
                 <div className={classNames(
                     'k-popover-callout',
                     {
                         [`k-callout-${kendoThemeMaps.calloutMap[callout!] || callout}`]: callout
                     }
-                )}></div>
+                )}/>
             }
             <div className="k-popover-inner">
                 {title && <div className="k-popover-header">{title}</div>}
                 {body && <div className="k-popover-body">{body}</div>}
                 <>{props.children}</>
             </div>
-        </div>
+        </Popup>
     );
 };
 
