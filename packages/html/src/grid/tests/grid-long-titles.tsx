@@ -26,7 +26,7 @@ export default () =>(
                                     </colgroup>
                                     <TableThead>
                                         <TableRow>
-                                            <GridHeaderCell active className="k-filterable" menu="column" scope="col" columnTitle="Active Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
+                                            <GridHeaderCell active filterable menu="column" scope="col" columnTitle="Active Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
                                         </TableRow>
                                     </TableThead>
                                 </GridHeaderTable>
@@ -45,7 +45,7 @@ export default () =>(
                                     </colgroup>
                                     <TableThead>
                                         <TableRow>
-                                            <GridHeaderCell className="k-filterable" scope="col" menu="column" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Column Menu"></GridHeaderCell>
+                                            <GridHeaderCell filterable scope="col" menu="column" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Column Menu"></GridHeaderCell>
                                         </TableRow>
                                     </TableThead>
                                 </GridHeaderTable>
@@ -110,7 +110,7 @@ export default () =>(
                                     </colgroup>
                                     <TableThead>
                                         <TableRow>
-                                            <GridHeaderCell className="k-filterable" scope="col" menu="column" columnTitle="Sortable Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
+                                            <GridHeaderCell filterable scope="col" menu="column" columnTitle="Sortable Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
                                         </TableRow>
                                     </TableThead>
                                 </GridHeaderTable>
@@ -129,7 +129,7 @@ export default () =>(
                                     </colgroup>
                                     <TableThead>
                                         <TableRow>
-                                            <GridHeaderCell className="k-filterable" scope="col" menu="column" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Column Menu"></GridHeaderCell>
+                                            <GridHeaderCell filterable scope="col" menu="column" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Column Menu"></GridHeaderCell>
                                         </TableRow>
                                     </TableThead>
                                 </GridHeaderTable>

@@ -14,8 +14,8 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Order ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Ship Name"></GridHeaderCell>
+                                    <GridHeaderCell filterable menu="column" columnTitle="Order ID"></GridHeaderCell>
+                                    <GridHeaderCell filterable menu="column" columnTitle="Ship Name"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
@@ -29,9 +29,9 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Ship Country"></GridHeaderCell>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Ship City"></GridHeaderCell>
-                                    <GridHeaderCell className="k-filterable" menu="column" columnTitle="Ship Address"></GridHeaderCell>
+                                    <GridHeaderCell filterable menu="column" columnTitle="Ship Country"></GridHeaderCell>
+                                    <GridHeaderCell filterable menu="column" columnTitle="Ship City"></GridHeaderCell>
+                                    <GridHeaderCell filterable menu="column" columnTitle="Ship Address"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
                         </GridHeaderTable>
