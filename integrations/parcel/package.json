@@ -1,4 +1,6 @@
 {
+  "name": "integrations.parcel",
+  "version": "0.0.0",
   "targets": {
     "default": {
       "source": "styles/default.scss"
