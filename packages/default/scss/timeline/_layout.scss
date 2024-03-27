@@ -33,7 +33,7 @@
             text-align: center;
             padding-block: $kendo-timeline-flag-padding-y;
             padding-inline: $kendo-timeline-flag-padding-x;
-            border-radius: $kendo-border-radius;
+            border-radius: k-border-radius(md);
             line-height: $kendo-timeline-flag-line-height;
             min-width: $kendo-timeline-flag-min-width;
             max-width: $kendo-timeline-flag-max-width;
@@ -93,7 +93,7 @@
                 }
 
                 &::-webkit-scrollbar-thumb {
-                    border-radius: $kendo-border-radius;
+                    border-radius: k-border-radius(md);
                 }
             }
         }
@@ -139,7 +139,7 @@
             height: 100%;
             width: $kendo-timeline-track-size;
             transform: translateX(-50%);
-            border-radius: $kendo-border-radius-lg;
+            border-radius: k-border-radius(lg);
         }
 
         .k-timeline-flag-wrap {

@@ -6,22 +6,6 @@ $kendo-enable-rounded: true !default;
 $kendo-enable-gradients: true !default;
 $kendo-enable-transitions: true !default;
 
-/// Border radius for all components.
-$kendo-border-radius: k-map-get($kendo-spacing, 0.5) !default;
-$kendo-border-radius-sm: k-math-div($kendo-border-radius, 2) !default;
-$kendo-border-radius-md: $kendo-border-radius !default;
-$kendo-border-radius-lg: ($kendo-border-radius * 2) !default;
-
-$kendo-border-radii: (
-    DEFAULT: var(--kendo-border-radius-md, $kendo-border-radius-md),
-    0: 0,
-    sm: var(--kendo-border-radius-sm, $kendo-border-radius-sm),
-    md: var(--kendo-border-radius-md, $kendo-border-radius-md),
-    lg: var(--kendo-border-radius-lg, $kendo-border-radius-lg),
-    none: 0,
-    full: 9999px,
-) !default;
-
 // Equilateral triangle variables
 // stylelint-disable number-max-precision
 $equilateral-index: 1.7320508076 !default;

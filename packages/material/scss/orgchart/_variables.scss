@@ -49,7 +49,7 @@ $kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-y !defa
 $kendo-orgchart-node-group-border-width: 1px !default;
 /// The border radius of the OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-border-radius: $kendo-border-radius-md !default;
+$kendo-orgchart-node-group-border-radius: k-border-radius(md) !default;
 /// The background color of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-bg: if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light)) !default;

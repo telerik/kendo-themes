@@ -11,7 +11,7 @@ $kendo-tooltip-padding-x: $kendo-padding-md-x !default;
 $kendo-tooltip-border-width: 0px !default;
 /// The border radius of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-border-radius: $kendo-border-radius-md !default;
+$kendo-tooltip-border-radius: k-border-radius(md) !default;
 
 /// The font family of the Tooltip.
 /// @group tooltip

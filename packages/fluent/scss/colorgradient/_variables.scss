@@ -14,7 +14,7 @@ $kendo-color-gradient-width: 260px !default;
 $kendo-color-gradient-border-width: 2px !default;
 /// The border radius of the ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-color-gradient-border-radius: k-border-radius(md) !default;
 /// The vertical padding of the ColorGradient.
 /// @group cologradient
 $kendo-color-gradient-padding-y: $kendo-color-gradient-spacer !default;
@@ -59,7 +59,7 @@ $kendo-color-gradient-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !def
 $kendo-color-gradient-canvas-border-width: 0 !default;
 /// The border radius of the ColorGradient canvas.
 /// @group cologradient
-$kendo-color-gradient-canvas-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-color-gradient-canvas-border-radius: k-border-radius(md) !default;
 /// The spacing between the items of the ColorGradient canvas.
 /// @group cologradient
 $kendo-color-gradient-canvas-spacing: calc( #{$kendo-color-gradient-spacer} / 2 ) !default;
@@ -78,7 +78,7 @@ $kendo-color-gradient-canvas-draghandle-shadow: var( --kendo-box-shadow-depth-2,
 $kendo-color-gradient-slider-track-size: 20px !default;
 /// The border radius of the ColorGradient slider.
 /// @group cologradient
-$kendo-color-gradient-slider-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-color-gradient-slider-border-radius: k-border-radius(md) !default;
 /// The width of the border around the ColorGradient slider.
 /// @group cologradient
 $kendo-color-gradient-slider-border-width: if($kendo-enable-color-system, 0, 1px) !default;

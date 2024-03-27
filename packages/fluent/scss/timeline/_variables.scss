@@ -164,7 +164,7 @@ $kendo-timeline-vertical-padding-calc: calc( #{ $kendo-timeline-spacing-x } + ( 
 $kendo-timeline-vertical-padding-with-dates-calc: calc( #{ $kendo-timeline-vertical-padding-calc } + #{ $kendo-timeline-date-width } ) !default;
 /// The border radius of the vertical Timeline.
 /// @group timeline
-$kendo-timeline-vertical-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-lg} ) !default;
+$kendo-timeline-vertical-border-radius: k-border-radius(lg) !default;
 /// The padding of the vertical mobile Timeline.
 /// @group timeline
 $kendo-timeline-mobile-vertical-padding-calc: calc( #{ $kendo-timeline-mobile-spacing-x } + ( #{ $kendo-timeline-flag-min-width } - #{ $kendo-timeline-track-size } ) / 2 ) !default;

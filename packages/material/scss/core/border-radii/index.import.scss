@@ -1,0 +1,13 @@
+$kendo-border-radius-lg: k-map-get($kendo-spacing, 2) !default;
+$kendo-border-radius-xl: k-map-get($kendo-spacing, 3) !default;
+$kendo-border-radius-xxl: k-map-get($kendo-spacing, 4) !default;
+$kendo-border-radius-xxxl: k-map-get($kendo-spacing, 5) !default;
+
+$kendo-border-radii: (
+    lg: $kendo-border-radius-lg,
+    xl: $kendo-border-radius-xl,
+    xxl: $kendo-border-radius-xxl,
+    xxxl: $kendo-border-radius-xxxl
+) !default;
+
+@import "@progress/kendo-theme-core/scss/border-radii/index.import.scss";

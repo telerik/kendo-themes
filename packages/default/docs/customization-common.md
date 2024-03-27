@@ -108,46 +108,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-border-radius</td>
-    <td>Number</td>
-    <td><code>4px</code></td>
-    <td><code>4px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-sm</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius - 2px</code></td>
-    <td><code>2px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small border radius.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-md</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius</code></td>
-    <td><code>4px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium border radius.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-lg</td>
-    <td>Number</td>
-    <td><code>$kendo-border-radius + 2px</code></td>
-    <td><code>6px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large border radius.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-body-bg</td>
     <td>String</td>
     <td><code>$kendo-color-white</code></td>

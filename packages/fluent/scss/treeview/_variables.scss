@@ -49,7 +49,7 @@ $kendo-treeview-lg-item-padding-y: k-spacing(2.5) !default;
 $kendo-treeview-item-border-width: 0 !default;
 /// The border radius of the TreeView items.
 /// @group treeview
-$kendo-treeview-item-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+$kendo-treeview-item-border-radius: k-border-radius(md) !default;
 
 /// The horizontal padding of the TreeViews' filter element.
 /// @group treeview
