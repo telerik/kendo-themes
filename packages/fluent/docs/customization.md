@@ -11838,7 +11838,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the gantt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Gantt.</div></div>
     </td>
 </tr>
 <tr>
@@ -11848,7 +11848,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the gantt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Gantt.</div></div>
     </td>
 </tr>
 <tr>
@@ -11858,7 +11858,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the gantt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Gantt.</div></div>
     </td>
 </tr>
 <tr>
@@ -11868,7 +11868,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the gantt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Gantt.</div></div>
     </td>
 </tr>
 <tr>
@@ -11878,7 +11878,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt.</div></div>
     </td>
 </tr>
 <tr>
@@ -11888,7 +11888,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the gantt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt.</div></div>
     </td>
 </tr>
 <tr>
@@ -11898,7 +11898,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt.</div></div>
     </td>
 </tr>
 <tr>
@@ -11908,7 +11908,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt non-working days.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt non-working days.</div></div>
     </td>
 </tr>
 <tr>
@@ -11918,7 +11918,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the gantt non-working days.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt non-working days.</div></div>
     </td>
 </tr>
 <tr>
@@ -11928,7 +11928,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt non-working days.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt non-working days.</div></div>
     </td>
 </tr>
 <tr>
@@ -11938,7 +11938,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the gantt connecting lines.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Gantt connecting lines.</div></div>
     </td>
 </tr>
 <tr>
@@ -11948,7 +11948,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background fill color of the gantt connecting lines.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background fill color of the Gantt connecting lines.</div></div>
     </td>
 </tr>
 <tr>
@@ -11958,7 +11958,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background fill of the gantt connecting lines.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background fill of the selected Gantt connecting lines.</div></div>
     </td>
 </tr>
 <tr>
@@ -11968,7 +11968,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the gantt task dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Gantt task dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -11978,7 +11978,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the gantt task dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Gantt task dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -11988,7 +11988,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt task dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -11998,7 +11998,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt task dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt task dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -12008,7 +12008,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the gantt task dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -12018,7 +12018,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover border color of the gantt task dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Gantt task dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -12028,7 +12028,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt milestone.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt milestone.</div></div>
     </td>
 </tr>
 <tr>
@@ -12038,7 +12038,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt milestone.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt milestone.</div></div>
     </td>
 </tr>
 <tr>
@@ -12048,7 +12048,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the gantt milestone.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt milestone.</div></div>
     </td>
 </tr>
 <tr>
@@ -12058,7 +12058,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected border color of the gantt milestone.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Gantt milestone.</div></div>
     </td>
 </tr>
 <tr>
@@ -12068,7 +12068,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt summary.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary.</div></div>
     </td>
 </tr>
 <tr>
@@ -12078,7 +12078,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt summary progress.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary progress.</div></div>
     </td>
 </tr>
 <tr>
@@ -12088,7 +12088,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the gantt summary.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt summary.</div></div>
     </td>
 </tr>
 <tr>
@@ -12098,7 +12098,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the gantt summary progress.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt summary progress.</div></div>
     </td>
 </tr>
 <tr>
@@ -12108,7 +12108,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12118,7 +12118,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12128,7 +12128,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12138,7 +12138,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12148,7 +12148,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12158,7 +12158,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12168,7 +12168,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt task progress.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task progress.</div></div>
     </td>
 </tr>
 <tr>
@@ -12178,7 +12178,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background hover color of the gantt task progress.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task progress.</div></div>
     </td>
 </tr>
 <tr>
@@ -12188,7 +12188,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected the Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12198,7 +12198,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected text color of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12208,7 +12208,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected border color of the gantt task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Gantt task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12218,7 +12218,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the gantt task progress.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt task progress.</div></div>
     </td>
 </tr>
 <tr>
@@ -12228,7 +12228,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the gantt task actions.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Gantt task actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -12238,7 +12238,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the gantt task actions.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Gantt task actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -12248,7 +12248,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the gantt task planned line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Gantt task planned line.</div></div>
     </td>
 </tr>
 <tr>
@@ -12258,7 +12258,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the gantt task planned line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Gantt task planned line.</div></div>
     </td>
 </tr>
 <tr>
@@ -12268,7 +12268,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the gantt task planned line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Gantt task planned line.</div></div>
     </td>
 </tr>
 <tr>
@@ -12278,7 +12278,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the gantt planned dependencies.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Gantt planned dependencies.</div></div>
     </td>
 </tr>
 <tr>
@@ -12288,7 +12288,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the gantt planned line dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Gantt planned line dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -12298,7 +12298,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of the gantt planned line dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Gantt planned line dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -12308,7 +12308,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the gantt planned line dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Gantt planned line dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -12318,7 +12318,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the gantt planned line dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt planned line dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -12328,7 +12328,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the gantt milestone planned line dot.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone planned line dot.</div></div>
     </td>
 </tr>
 <tr>
@@ -12338,7 +12338,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of the gantt planned line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Gantt planned line.</div></div>
     </td>
 </tr>
 <tr>
@@ -12348,7 +12348,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover height of the gantt planned line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the hovered Gantt planned line.</div></div>
     </td>
 </tr>
 <tr>
@@ -12358,7 +12358,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top position of the gantt drag hint.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the Gantt drag hint.</div></div>
     </td>
 </tr>
 <tr>
@@ -12368,7 +12368,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top position of the gantt summary drag hint.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the Gantt summary drag hint.</div></div>
     </td>
 </tr>
 <tr>
@@ -12378,7 +12378,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top position of the gantt planned milestone drag hint.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the Gantt planned milestone drag hint.</div></div>
     </td>
 </tr>
 <tr>
@@ -12388,7 +12388,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">of the gantt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Gantt delayed task resize handler.</div></div>
     </td>
 </tr>
 <tr>
@@ -12398,7 +12398,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the gantt planned tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt planned Tooltip.</div></div>
     </td>
 </tr>
 <tr>
@@ -12408,7 +12408,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt planned tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt planned Tooltip.</div></div>
     </td>
 </tr>
 <tr>
@@ -12418,7 +12418,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt planned tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt planned Tooltip.</div></div>
     </td>
 </tr>
 <tr>
@@ -12428,7 +12428,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the gantt delayed task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt delayed task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12438,7 +12438,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt delayed task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt delayed task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12448,7 +12448,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Complement background color of the gantt delayed task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The complement background color of the Gantt delayed task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12458,7 +12458,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background hover color of the gantt delayed task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt delayed task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12468,7 +12468,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the gantt advanced task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt advanced task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12478,7 +12478,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Complement background color of the gantt advanced task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The complement background color of the Gantt advanced task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12488,7 +12488,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background hover color of the gantt advanced task.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt advanced task.</div></div>
     </td>
 </tr>
 <tr>
@@ -12498,7 +12498,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the gantt delayed task action.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt delayed task action.</div></div>
     </td>
 </tr>
 <tr>
@@ -12508,7 +12508,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top position of the gantt delayed task resize handler.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the Gantt delayed task resize handler.</div></div>
     </td>
 </tr>
 <tr>
@@ -12518,7 +12518,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the gantt validation tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Gantt validation Tooltip.</div></div>
     </td>
 </tr>
 <tr>
@@ -12528,7 +12528,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the gantt validation tooltip label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Gantt validation Tooltip label.</div></div>
     </td>
 </tr>
 <tr>
@@ -12538,7 +12538,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt validation tooltip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt validation Tooltip.</div></div>
     </td>
 </tr>
 <tr>
@@ -12548,7 +12548,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt validation tooltip in valid state.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the valid Gantt validation Tooltip.</div></div>
     </td>
 </tr>
 <tr>
@@ -12558,7 +12558,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the gantt validation tooltip in invalid state.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>
     </td>
 </tr>
 </tbody>
@@ -12588,7 +12588,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12598,7 +12598,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border style of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12608,7 +12608,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12618,7 +12618,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12628,7 +12628,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12638,7 +12638,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12648,7 +12648,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12658,7 +12658,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -12668,7 +12668,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -12678,7 +12678,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -12688,7 +12688,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -12698,7 +12698,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -12708,7 +12708,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -12718,7 +12718,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid filter cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -12728,7 +12728,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -12738,7 +12738,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid edit cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -12748,7 +12748,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -12758,7 +12758,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the grid group drop clue.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Grid group drop clue.</div></div>
     </td>
 </tr>
 <tr>
@@ -12768,7 +12768,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line size of the grid group drop clue.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line size of the Grid group drop clue.</div></div>
     </td>
 </tr>
 <tr>
@@ -12778,7 +12778,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Dot size of the grid group drop clue.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dot size of the Grid group drop clue.</div></div>
     </td>
 </tr>
 <tr>
@@ -12788,7 +12788,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid  group drop clue.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid group drop clue.</div></div>
     </td>
 </tr>
 <tr>
@@ -12798,7 +12798,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top offset of the grid group drop clue.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top offset of the Grid group drop clue.</div></div>
     </td>
 </tr>
 <tr>
@@ -12808,7 +12808,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12818,7 +12818,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12828,7 +12828,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12838,7 +12838,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12848,7 +12848,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of alternating rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12858,7 +12858,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of alternating rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12868,7 +12868,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of alternating rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of alternating rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12878,7 +12878,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hover rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hover rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12888,7 +12888,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hover rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hover rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12898,7 +12898,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hover rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hover rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12908,7 +12908,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12918,7 +12918,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12928,7 +12928,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12938,7 +12938,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of selected rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered selected rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12948,7 +12948,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of selected rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered selected rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12958,7 +12958,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover border color of selected rows in grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered selected rows in Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -12968,7 +12968,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical border width of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical border width of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -12978,7 +12978,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal border width of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal border width of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -12988,7 +12988,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -12998,7 +12998,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13008,7 +13008,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Menu spacing of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The menu spacing of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13018,7 +13018,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the first cell in the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the first cell in the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13028,7 +13028,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13038,7 +13038,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13048,7 +13048,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13058,7 +13058,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header icons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid header icons.</div></div>
     </td>
 </tr>
 <tr>
@@ -13078,7 +13078,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid footer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -13088,7 +13088,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -13098,7 +13098,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13108,7 +13108,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13118,7 +13118,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13128,7 +13128,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13138,7 +13138,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the selection aggregates items</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Grid selection aggregates items.</div></div>
     </td>
 </tr>
 <tr>
@@ -13148,7 +13148,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13158,7 +13158,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13168,7 +13168,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid grouping header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13178,7 +13178,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid grouping header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13188,7 +13188,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid grouping header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13198,7 +13198,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical border width of the grid grouping row.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical border width of the Grid grouping row.</div></div>
     </td>
 </tr>
 <tr>
@@ -13208,7 +13208,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid grouping row.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid grouping row.</div></div>
     </td>
 </tr>
 <tr>
@@ -13218,7 +13218,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid grouping row.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid grouping row.</div></div>
     </td>
 </tr>
 <tr>
@@ -13228,7 +13228,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid grouping row.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid grouping row.</div></div>
     </td>
 </tr>
 <tr>
@@ -13238,7 +13238,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid filter cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13248,7 +13248,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13258,7 +13258,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -13268,7 +13268,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -13278,7 +13278,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the grid toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -13288,7 +13288,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the grid toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Grid Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -13298,7 +13298,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical border width of the grid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical border width of the Grid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13308,7 +13308,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal border width of the grid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal border width of the Grid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13318,7 +13318,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the grid sort index.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Grid sort index.</div></div>
     </td>
 </tr>
 <tr>
@@ -13328,7 +13328,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of the grid sort index.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Grid sort index.</div></div>
     </td>
 </tr>
 <tr>
@@ -13338,7 +13338,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal offset of the grid sort index.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Grid sort index.</div></div>
     </td>
 </tr>
 <tr>
@@ -13348,7 +13348,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical offset of the grid sort index.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Grid sort index.</div></div>
     </td>
 </tr>
 <tr>
@@ -13358,7 +13358,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the grid sort icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid sort icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -13368,7 +13368,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid sort indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid sort indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13378,7 +13378,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid sort order indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid sort order indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13388,7 +13388,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the sorted grid cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the sorted Grid cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -13398,7 +13398,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid command cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid command cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -13408,7 +13408,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid command cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid command cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -13418,7 +13418,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid group indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13428,7 +13428,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid group indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13438,7 +13438,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Grid group indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13448,7 +13448,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Grid group indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13458,7 +13458,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid group indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13468,7 +13468,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid group indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13478,7 +13478,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid group indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13488,7 +13488,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid group indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid group indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -13498,7 +13498,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid group indicator icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid group indicator icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -13508,7 +13508,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal border width of the grid group footer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal border width of the Grid group footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -13518,7 +13518,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical border width of the grid group footer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical border width of the Grid group footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -13528,7 +13528,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid group drop clue.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid group drop clue.</div></div>
     </td>
 </tr>
 <tr>
@@ -13538,7 +13538,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the grid sticky cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Grid sticky cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13548,7 +13548,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid sticky cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13558,7 +13558,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid sticky cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid sticky cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13568,7 +13568,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid sticky cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid sticky cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13578,7 +13578,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Alt background color of the grid sticky cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The alt background color of the Grid sticky cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13588,7 +13588,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the grid sticky cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13598,7 +13598,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid sticky header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13608,7 +13608,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid sticky header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid sticky header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13618,7 +13618,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid sticky header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid sticky header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13628,7 +13628,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid sticky footer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -13638,7 +13638,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the grid sticky footer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid sticky footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -13648,7 +13648,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the grid sticky cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Grid sticky cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -13658,7 +13658,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Alt selected background color of the grid sticky cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected alt Grid sticky cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -13668,7 +13668,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected hover background color of the grid sticky cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered selected Grid sticky cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -13678,7 +13678,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter menu container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid filter menu container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13688,7 +13688,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter menu container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter menu container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13698,7 +13698,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the grid column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Grid column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -13708,7 +13708,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Max width of the grid column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The max width of the Grid column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -13718,7 +13718,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the grid column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -13728,7 +13728,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the grid column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the Grid column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -13738,7 +13738,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -13748,7 +13748,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -13758,7 +13758,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -13768,7 +13768,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the grid column menu checkbox container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Grid column menu checkbox container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13778,7 +13778,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the grid column menu checkbox container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Grid column menu checkbox container.</div></div>
     </td>
 </tr>
 <tr>
@@ -13788,7 +13788,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid column menu items wrap.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid column menu items wrap.</div></div>
     </td>
 </tr>
 <tr>
@@ -13798,7 +13798,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid column menu items wrap.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid column menu items wrap.</div></div>
     </td>
 </tr>
 <tr>
@@ -13808,7 +13808,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13818,7 +13818,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13828,7 +13828,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13838,7 +13838,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon spacing of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon spacing of the Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13848,7 +13848,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13858,7 +13858,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13868,7 +13868,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13878,7 +13878,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13888,7 +13888,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13898,7 +13898,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected text color of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13908,7 +13908,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the grid column menu item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the Grid column menu item.</div></div>
     </td>
 </tr>
 <tr>
@@ -13918,7 +13918,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid column menu item icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid column menu item icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -13928,7 +13928,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid column menu group header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid column menu group header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13938,7 +13938,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid column menu group header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid column menu group header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13948,7 +13948,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the grid column menu group header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Grid column menu group header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13958,7 +13958,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border style of the grid column menu group header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the Grid column menu group header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13968,7 +13968,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the grid column menu group header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Grid column menu group header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13978,7 +13978,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the grid column menu group header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Grid column menu group header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13988,7 +13988,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the grid column menu group header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The mine height of the Grid column menu group header.</div></div>
     </td>
 </tr>
 <tr>
@@ -13998,7 +13998,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text transform of the grid column menu group header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the Grid column menu group header.</div></div>
     </td>
 </tr>
 <tr>
@@ -14008,7 +14008,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid column menu group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid column menu group.</div></div>
     </td>
 </tr>
 <tr>
@@ -14018,7 +14018,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid column menu group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid column menu group.</div></div>
     </td>
 </tr>
 <tr>
@@ -14028,7 +14028,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid column menu group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid column menu group.</div></div>
     </td>
 </tr>
 <tr>
@@ -14038,7 +14038,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the tabstrip content in the grid tabbed column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tabstrip content in the Grid tabbed column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -14048,7 +14048,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the tabstrip content in the grid tabbed column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the tabstrip content in the Grid tabbed column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -14058,7 +14058,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid tabbed column menu.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid tabbed column menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -14068,7 +14068,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the grid drag cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Grid drag cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -14078,7 +14078,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the grid hierarchy cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Grid hierarchy cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -14088,7 +14088,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the grid filterable icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Grid filterable icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -14098,7 +14098,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid row resize indicator</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid row resize indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -14108,7 +14108,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Active background color of the grid row indicator</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Grid row resize indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -14118,7 +14118,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid row resize indicator</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid row resize indicator.</div></div>
     </td>
 </tr>
 </tbody>
@@ -30685,7 +30685,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the treelist footer row.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TreeList footer row.</div></div>
     </td>
 </tr>
 <tr>
@@ -30695,7 +30695,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the treelist footer row.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TreeList footer row.</div></div>
     </td>
 </tr>
 </tbody>
