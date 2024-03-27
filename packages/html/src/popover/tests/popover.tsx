@@ -1,6 +1,4 @@
 import { PopoverNormal } from '../../popover';
-import { Button } from '../../button';
-import { ActionButtons } from '../../action-buttons';
 
 
 const styles = `
@@ -21,43 +19,23 @@ export default () =>(
             <span>Empty body fixed height</span>
 
             <section>
-                <PopoverNormal callout="top" title="Title" body={<>Body content</>}>
-                    <ActionButtons className="k-popover-actions" alignment="stretched">
-                        <Button fillMode="flat">Action</Button>
-                        <Button fillMode="flat" themeColor="primary">Primary</Button>
-                    </ActionButtons>
-                </PopoverNormal>
+                <PopoverNormal callout="top" />
             </section>
 
             <section>
-                <PopoverNormal callout="right" title="Title" body={<>Body content</>}>
-                    <ActionButtons className="k-popover-actions" alignment="stretched">
-                        <Button fillMode="flat">Action</Button>
-                        <Button fillMode="flat" themeColor="primary">Primary</Button>
-                    </ActionButtons>
-                </PopoverNormal>
+                <PopoverNormal callout="right" />
             </section>
 
             <section>
-                <PopoverNormal callout="bottom" title="Title" body={<>Body content</>}>
-                    <ActionButtons className="k-popover-actions" alignment="stretched">
-                        <Button fillMode="flat">Action</Button>
-                        <Button fillMode="flat" themeColor="primary">Primary</Button>
-                    </ActionButtons>
-                </PopoverNormal>
+                <PopoverNormal callout="bottom" />
             </section>
 
             <section>
-                <PopoverNormal callout="left" title="Title" body={<>Body content</>}>
-                    <ActionButtons className="k-popover-actions" alignment="stretched">
-                        <Button fillMode="flat">Action</Button>
-                        <Button fillMode="flat" themeColor="primary">Primary</Button>
-                    </ActionButtons>
-                </PopoverNormal>
+                <PopoverNormal callout="left" />
             </section>
 
             <section>
-                <PopoverNormal callout="left" title="Title" style={{ height: "150px" }}></PopoverNormal>
+                <PopoverNormal callout="left" body={null} children={null} style={{ height: "150px" }} />
             </section>
         </div>
     </>
