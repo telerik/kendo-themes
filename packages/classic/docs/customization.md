@@ -9945,6 +9945,746 @@ The following table lists the available variables for customizing the Classic th
 </tbody>
 </table>
 
+### Gantt
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-gantt-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Gantt.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-font-family</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Gantt.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Gantt.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Gantt.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-bg</td>
+    <td>String</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-border</td>
+    <td>String</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><code>var(--kendo-color-border, #cacaca)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-treelist-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt TreeList.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-treelist-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt TreeList.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-treelist-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt TreeList.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-nonwork-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 3%, transparent), rgba( k-contrast-color( $kendo-gantt-bg ), .025 ))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-base, #272727) 3%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt non-working days.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-nonwork-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt non-working days.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-nonwork-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt non-working days.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-line-size</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Gantt connecting lines.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-line-fill</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-gantt-bg ))</code></td>
+    <td><code>var(--kendo-color-on-base, #272727)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background fill color of the Gantt connecting lines.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-line-selected-fill</td>
+    <td>String</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background fill of the selected Gantt connecting lines.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-dot-size</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Gantt task dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-dot-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Gantt task dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-dot-bg</td>
+    <td>String</td>
+    <td><code>$kendo-gantt-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-dot-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt task dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-dot-hover-bg</td>
+    <td>String</td>
+    <td><code>$kendo-gantt-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-dot-hover-border</td>
+    <td>String</td>
+    <td><code>$kendo-gantt-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Gantt task dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-milestone-bg</td>
+    <td>String</td>
+    <td><code>$kendo-gantt-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt milestone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-milestone-border</td>
+    <td>String</td>
+    <td><code>$kendo-gantt-border</code></td>
+    <td><code>var(--kendo-color-border, #cacaca)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt milestone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-milestone-selected-bg</td>
+    <td>String</td>
+    <td><code>$kendo-selected-bg</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt milestone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-milestone-selected-border</td>
+    <td>String</td>
+    <td><code>$kendo-selected-border</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Gantt milestone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-summary-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-gantt-text, 1 ))</code></td>
+    <td><code>var(--kendo-color-subtle, #666666)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-summary-progress-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-try-shade( $kendo-gantt-text, 5 ))</code></td>
+    <td><code>var(--kendo-color-on-base, #272727)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt summary progress.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-summary-selected-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), k-try-tint( $kendo-selected-bg, 6 ))</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active, #ffd8c2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt summary.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-summary-progress-selected-bg</td>
+    <td>String</td>
+    <td><code>$kendo-selected-bg</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt summary progress.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-border-width</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-gantt-text, 2 ))</code></td>
+    <td><code>var(--kendo-color-subtle, #666666)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-text</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-color( $kendo-gantt-text ))</code></td>
+    <td><code>var(--kendo-color-base-subtle, #f0f0f0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-progress-bg</td>
+    <td>String</td>
+    <td><code>$kendo-gantt-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt task progress.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-selected-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), k-try-tint( $kendo-selected-bg, 6 ))</code></td>
+    <td><code>var(--kendo-color-primary-subtle-active, #ffd8c2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected the Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-selected-text</td>
+    <td>String</td>
+    <td><code>$kendo-selected-text</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-selected-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Gantt task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-progress-selected-bg</td>
+    <td>String</td>
+    <td><code>$kendo-selected-bg</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt task progress.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-margin-y</td>
+    <td>Number</td>
+    <td><code>.35em</code></td>
+    <td><code>0.35em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Gantt task planned line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-border-width</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Gantt task planned line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-line-height</td>
+    <td>Number</td>
+    <td><code>.75em</code></td>
+    <td><code>0.75em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Gantt task planned line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-dependency-margin-y</td>
+    <td>Number</td>
+    <td><code>.55em</code></td>
+    <td><code>0.55em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Gantt planned dependencies.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-moment-width</td>
+    <td>Number</td>
+    <td><code>6px</code></td>
+    <td><code>6px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Gantt planned line dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-moment-height</td>
+    <td>Number</td>
+    <td><code>$kendo-gantt-planned-moment-width</code></td>
+    <td><code>6px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Gantt planned line dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-moment-border-radius</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-gantt-planned-border-width * 2} + #{$kendo-gantt-planned-moment-width} ) / 2 )</code></td>
+    <td><code>calc((4px + 6px) / 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Gantt planned line dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-moment-left-margin-x</td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} )</code></td>
+    <td><code>calc(1px - calc((4px + 6px) / 2))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt planned line dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-milestone-moment-margin-x</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-gantt-planned-moment-width, 2 )</code></td>
+    <td><code>3px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone planned line dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-duration-height</td>
+    <td>Number</td>
+    <td><code>$kendo-gantt-planned-border-width</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the Gantt planned line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-duration-hover-height</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-gantt-planned-border-width} + 1px )</code></td>
+    <td><code>calc(2px + 1px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the hovered Gantt planned line.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-single-drag-hint-top</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the Gantt drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-summary-drag-hint-top</td>
+    <td>Number</td>
+    <td><code>.5em</code></td>
+    <td><code>0.5em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the Gantt summary drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-milestone-drag-hint-top</td>
+    <td>Number</td>
+    <td><code>.3em</code></td>
+    <td><code>0.3em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the Gantt planned milestone drag hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-rtl-milestone-wrap-margin-x</td>
+    <td>Number</td>
+    <td><code>-2.4em</code></td>
+    <td><code>-2.4em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone wrap.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-rtl-milestone-planned-moment-margin-x</td>
+    <td>Number</td>
+    <td><code>.2em</code></td>
+    <td><code>0.2em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone line dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-rtl-milestone-dot-start-margin-x</td>
+    <td>Number</td>
+    <td><code>-.1em</code></td>
+    <td><code>-0.1em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Gantt milestone task dot.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-offset-resize-handler-margin-x</td>
+    <td>Number</td>
+    <td><code>1.4em</code></td>
+    <td><code>1.4em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Gantt delayed task resize handler.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-bg</td>
+    <td>String</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt planned Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-planned-border</td>
+    <td>String</td>
+    <td><code>$kendo-gantt-planned-bg</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt planned Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-delayed-bg</td>
+    <td>String</td>
+    <td><code>$kendo-color-error</code></td>
+    <td><code>var(--kendo-color-error, #d92800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt delayed task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-delayed-bg-lighter</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( error-emphasis ), k-color-tint($kendo-gantt-delayed-bg, 5))</code></td>
+    <td><code>var(--kendo-color-error-emphasis, #e35e40)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The complement background color of the Gantt delayed task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-advanced-bg</td>
+    <td>String</td>
+    <td><code>$kendo-color-success</code></td>
+    <td><code>var(--kendo-color-success, #3ea44e)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt advanced task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-advanced-bg-lighter</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( success-emphasis ), k-color-tint($kendo-gantt-advanced-bg, 5))</code></td>
+    <td><code>var(--kendo-color-success-emphasis, #6ebb7a)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The complement background color of the Gantt advanced task.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-action-on-offset-text</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Gantt delayed task action.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-offset-resize-handler-top</td>
+    <td>Number</td>
+    <td><code>50%</code></td>
+    <td><code>50%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top position of the Gantt delayed task resize handler.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-validation-tooltip-width</td>
+    <td>Number</td>
+    <td><code>200px</code></td>
+    <td><code>200px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Gantt validation Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-validation-tooltip-label-width</td>
+    <td>Number</td>
+    <td><code>50px</code></td>
+    <td><code>50px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Gantt validation Tooltip label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-validation-tooltip-border</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Gantt validation Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-validation-tooltip-valid-border</td>
+    <td>String</td>
+    <td><code>$kendo-color-success</code></td>
+    <td><code>var(--kendo-color-success, #3ea44e)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the valid Gantt validation Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-validation-tooltip-invalid-border</td>
+    <td>String</td>
+    <td><code>$kendo-color-error</code></td>
+    <td><code>var(--kendo-color-error, #d92800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Grid
 
 <table class="theme-variables">
@@ -9969,7 +10709,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -9979,7 +10719,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -9989,7 +10729,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -9999,7 +10739,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -10029,7 +10769,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -10039,7 +10779,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -10049,7 +10789,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -10059,7 +10799,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -10069,7 +10809,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid filter cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -10079,7 +10819,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -10089,7 +10829,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid edit cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -10099,7 +10839,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -10109,7 +10849,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid component</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -10119,7 +10859,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid component</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -10129,7 +10869,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid.</div></div>
     </td>
 </tr>
 <tr>
@@ -10139,7 +10879,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-surface, #f0f0f0)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -10149,7 +10889,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid header</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -10159,7 +10899,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid header</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -10169,7 +10909,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of grid header</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of Grid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -10179,7 +10919,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-surface, #f0f0f0)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid footer</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -10189,17 +10929,17 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid footer</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Grid footer.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-grid-footer-border</td>
     <td>String</td>
-    <td><code>$kendo-table-footer-border</code></td>
+    <td><code>$kendo-grid-header-border</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Grid footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -10209,7 +10949,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 5%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid alternating rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10219,7 +10959,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid alternating rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10229,7 +10969,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of alternating rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid alternating rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10239,7 +10979,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 11%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered Grid rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10249,7 +10989,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered Grid rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10259,7 +10999,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered Grid rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10269,7 +11009,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #f35800) 25%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected Grid rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10279,7 +11019,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected Grid rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10289,7 +11029,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected Grid rows.</div></div>
     </td>
 </tr>
 <tr>
@@ -10299,7 +11039,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-surface, #f0f0f0)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -10309,7 +11049,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -10319,7 +11059,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -10329,7 +11069,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -10339,7 +11079,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the selection aggregates items</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the selection aggregates items.</div></div>
     </td>
 </tr>
 <tr>
@@ -10349,7 +11089,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -10359,7 +11099,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-font-weight-bold, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the selection aggregates container</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Grid selection aggregates container.</div></div>
     </td>
 </tr>
 <tr>
@@ -10369,7 +11109,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>color-mix(in srgb, var(--kendo-color-on-base, #272727) 20%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid row resize indicator</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid row resize indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -10379,7 +11119,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Active background color of the grid row resize indicator</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Grid row resize indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -10389,7 +11129,7 @@ The following table lists the available variables for customizing the Classic th
     <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid row resize indicator</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid row resize indicator.</div></div>
     </td>
 </tr>
 </tbody>
@@ -22881,6 +23621,46 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Tooltip.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Treelist
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-treelist-footer-row-bg</td>
+    <td>String</td>
+    <td><code>$kendo-grid-hover-bg</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 11%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TreeList footer row.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treelist-footer-row-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TreeList footer row.</div></div>
     </td>
 </tr>
 </tbody>
