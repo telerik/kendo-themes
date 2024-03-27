@@ -2,7 +2,7 @@ import { PopoverNormal } from '../../popover';
 
 
 const styles = `
-    .k-popover {
+    .k-animation-container {
         position: relative;
         overflow: visible;
     }
