@@ -10,6 +10,7 @@ const options = {};
 export type KendoScrollViewProps = {
     mode?: "light" | "normal" | "dark";
     views?: number;
+    currentView?: number;
     animate?: boolean;
     arrows?: boolean;
     pager?: boolean;
@@ -19,6 +20,7 @@ export type KendoScrollViewProps = {
 const defaultProps = {
     mode: "normal",
     views: 9,
+    currentView: 5,
     animate: true,
     arrows: true,
     pager: true,
@@ -32,6 +34,7 @@ export const ScrollView = (
     const {
         mode = defaultProps.mode,
         views = defaultProps.views,
+        currentView = defaultProps.currentView,
         animate = defaultProps.animate,
         arrows = defaultProps.arrows,
         pager = defaultProps.pager,
@@ -66,7 +69,7 @@ export const ScrollView = (
                 {
                     ['k-scrollview-animate']: animate
                 }
-            )} style={{ "--kendo-scrollview-views": views, "--kendo-scrollview-current": 5 } as React.CSSProperties}>
+            )} style={{ "--kendo-scrollview-views": views, "--kendo-scrollview-current": currentView } as React.CSSProperties}>
                 {scrollviewViews}
             </div>
             <div className="k-scrollview-elements">

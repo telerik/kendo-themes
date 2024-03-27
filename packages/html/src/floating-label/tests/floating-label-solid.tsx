@@ -1,4 +1,4 @@
-import { FloatingLabel, FloatingLabelNormal } from '..';
+import { FloatingLabel, FloatingLabelNormal, FloatingLabelInputValue } from '..';
 import { TextboxNormal } from '../../textbox';
 
 const styles = `
@@ -18,22 +18,22 @@ export default () =>(
             <span>Floating label RTL</span>
 
             <div>
-                <FloatingLabelNormal label="Label with placeholder" empty>
+                <FloatingLabelNormal label="Label with placeholder">
                     <TextboxNormal placeholder="placeholder" />
                 </FloatingLabelNormal>
             </div>
             <div dir="rtl">
-                <FloatingLabelNormal label="Label with placeholder" empty>
+                <FloatingLabelNormal label="Label with placeholder">
                     <TextboxNormal placeholder="placeholder" />
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal label="Label with placeholder focused" empty focus>
+                <FloatingLabelNormal label="Label with placeholder focused" focus>
                     <TextboxNormal placeholder="placeholder" focus />
                 </FloatingLabelNormal>
             </div>
             <div dir="rtl">
-                <FloatingLabelNormal label="Label with placeholder focused" empty focus>
+                <FloatingLabelNormal label="Label with placeholder focused" focus>
                     <TextboxNormal placeholder="placeholder" focus />
                 </FloatingLabelNormal>
             </div>
@@ -41,14 +41,14 @@ export default () =>(
             {[ 'normal', ...FloatingLabel.states ].map((state) => (
                 <>
                     <div>
-                        <FloatingLabelNormal label="Label" { ...{ [state]: true }}>
+                        <FloatingLabelInputValue label="Label" { ...{ [state]: true }}>
                             <TextboxNormal value={state === 'empty' ? '' : state} { ...{ [state]: true }}/>
-                        </FloatingLabelNormal>
+                        </FloatingLabelInputValue>
                     </div>
                     <div dir="rtl">
-                        <FloatingLabelNormal label="Label" { ...{ [state]: true }}>
+                        <FloatingLabelInputValue label="Label" { ...{ [state]: true }}>
                             <TextboxNormal value={state === 'empty' ? '' : state} { ...{ [state]: true }} />
-                        </FloatingLabelNormal>
+                        </FloatingLabelInputValue>
                     </div>
                 </>
             ))}

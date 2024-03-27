@@ -12,14 +12,17 @@ const states = [
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoUploadProps = {
     async?: boolean;
     empty?: boolean;
     actions?: boolean;
+    actionsLayout?: 'start' | 'center' | 'end' | 'stretched';
     status?: 'upload' | 'uploading' | 'done' | 'failed';
 };
+
+const defaultProps = {
+    actionsLayout: 'end'
+} as const;
 
 export type KendoUploadState = { [K in (typeof states)[number]]?: boolean };
 
@@ -32,6 +35,7 @@ export const Upload = (
         async,
         empty,
         actions,
+        actionsLayout = defaultProps.actionsLayout,
         hover,
         status,
         disabled,
@@ -58,8 +62,8 @@ export const Upload = (
                     {props.children}
                 </ul>
             }
-            { actions &&
-                <ActionButtons alignment="end" orientation="horizontal">
+            { actions && props.children &&
+                <ActionButtons alignment={actionsLayout} orientation="horizontal">
                     <Button className="k-clear-selected">Clear</Button>
                     <Button themeColor="primary" className="k-upload-selected">Upload</Button>
                 </ActionButtons>

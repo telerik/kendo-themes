@@ -1,8 +1,9 @@
 import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
+import { classNames } from '../../misc';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export const GridWithLockedColumns = ({ className, headerWrapClassName, contentClassName, ...other }: any) => (
-    <Grid className={`k-grid-lockedcolumns ${className}`} _renderAriaRoot
+    <Grid className={classNames("k-grid-lockedcolumns", className)} _renderAriaRoot
         children={(
             <>
                 <GridHeader>

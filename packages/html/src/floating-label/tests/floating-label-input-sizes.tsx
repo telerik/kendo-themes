@@ -27,7 +27,7 @@ export default () =>(
 
             {Input.options.size.map((size) => (
                 <div>
-                    <FloatingLabelNormal label="Label" empty>
+                    <FloatingLabelNormal label="Label">
                         <TextboxNormal size={size}/>
                     </FloatingLabelNormal>
                 </div>
@@ -38,7 +38,7 @@ export default () =>(
 
             {Input.options.size.map((size) => (
                 <div>
-                    <FloatingLabelNormal label="Label" empty>
+                    <FloatingLabelNormal label="Label">
                         <TextareaNormal size={size}/>
                     </FloatingLabelNormal>
                 </div>
@@ -47,17 +47,17 @@ export default () =>(
             <span>(custom) horizontal offset</span>
 
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "33px" }} label="Label" empty>
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "33px" }} label="Label">
                     <TextboxPrefix size="small"/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "37px" }} label="Label" empty>
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "37px" }} label="Label">
                     <TextboxPrefix/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "41px" }} label="Label" empty>
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-x": "41px" }} label="Label">
                     <TextboxPrefix size="large"/>
                 </FloatingLabelNormal>
             </div>
@@ -65,17 +65,17 @@ export default () =>(
             <span>(custom) vertical offset</span>
 
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "53px" }} label="Label" empty>
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "53px" }} label="Label">
                     <TextareaPrefix size="small"/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "57px" }} label="Label" empty>
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "57px" }} label="Label">
                     <TextareaPrefix/>
                 </FloatingLabelNormal>
             </div>
             <div>
-                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "65px" }} label="Label" empty>
+                <FloatingLabelNormal style={{ "--kendo-floating-label-offset-y": "65px" }} label="Label">
                     <TextareaPrefix size="large"/>
                 </FloatingLabelNormal>
             </div>
