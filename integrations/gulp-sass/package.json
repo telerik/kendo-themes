@@ -1,4 +1,6 @@
 {
+  "name": "integrations.gulp",
+  "version": "0.0.0",
   "scripts": {
     "build": "gulp compile"
   },
