@@ -1,93 +1,238 @@
 // Gantt
+
+/// The border width of the Gantt.
+/// @group gantt
 $kendo-gantt-border-width: 1px !default;
+/// The font family of the Gantt.
+/// @group gantt
 $kendo-gantt-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Gantt.
+/// @group gantt
 $kendo-gantt-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Gantt.
+/// @group gantt
 $kendo-gantt-line-height: var( --kendo-line-height, normal ) !default;
 
+/// The background color of the Gantt.
+/// @group gantt
 $kendo-gantt-bg: $kendo-component-bg !default;
+/// The text color of the Gantt.
+/// @group gantt
 $kendo-gantt-text: $kendo-component-text !default;
+/// The border color of the Gantt.
+/// @group gantt
 $kendo-gantt-border: $kendo-component-border !default;
 
+/// The background color of the Gantt TreeList.
+/// @group gantt
 $kendo-gantt-treelist-bg: null !default;
+/// The text color of the Gantt TreeList.
+/// @group gantt
 $kendo-gantt-treelist-text: null !default;
+/// The border color of the Gantt TreeList.
+/// @group gantt
 $kendo-gantt-treelist-border: null !default;
 
+/// The background color of the Gantt non-working days.
+/// @group gantt
 $kendo-gantt-nonwork-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 3%, transparent), rgba( k-contrast-color( $kendo-gantt-bg ), .025 )) !default;
+/// The text color of the Gantt non-working days.
+/// @group gantt
 $kendo-gantt-nonwork-text: null !default;
+/// The border color of the Gantt non-working days.
+/// @group gantt
 $kendo-gantt-nonwork-border: null !default;
 
+/// The size of the Gantt connecting lines.
+/// @group gantt
 $kendo-gantt-line-size: 2px !default;
+/// The background fill color of the Gantt connecting lines.
+/// @group gantt
 $kendo-gantt-line-fill: if($kendo-enable-color-system, k-color( subtle ), k-color-mix( $kendo-gantt-text, $kendo-gantt-bg )) !default;
+/// The background fill of the selected Gantt connecting lines.
+/// @group gantt
 $kendo-gantt-line-selected-fill: $kendo-selected-bg !default;
 
+/// The size of the Gantt task dot.
+/// @group gantt
 $kendo-gantt-dot-size: 8px !default;
+/// The spacing of the Gantt task dot.
+/// @group gantt
 $kendo-gantt-dot-spacing: k-spacing(1) !default;
+/// The background color of the Gantt task dot.
+/// @group gantt
 $kendo-gantt-dot-bg: $kendo-gantt-text !default;
+/// The border color of the Gantt task dot.
+/// @group gantt
 $kendo-gantt-dot-border: null !default;
+/// The background color of the hovered Gantt task dot.
+/// @group gantt
 $kendo-gantt-dot-hover-bg: $kendo-gantt-bg !default;
+/// The border color of the hovered Gantt task dot.
+/// @group gantt
 $kendo-gantt-dot-hover-border: $kendo-gantt-text !default;
 
+/// The background color of the Gantt milestone.
+/// @group gantt
 $kendo-gantt-milestone-bg: $kendo-color-primary !default;
+/// The border color of the Gantt milestone.
+/// @group gantt
 $kendo-gantt-milestone-border: $kendo-color-primary !default;
+/// The background color of the selected Gantt milestone.
+/// @group gantt
 $kendo-gantt-milestone-selected-bg: $kendo-color-secondary !default;
+/// The border color of the selected Gantt milestone.
+/// @group gantt
 $kendo-gantt-milestone-selected-border: $kendo-color-secondary !default;
 
+/// The background color of the Gantt summary.
+/// @group gantt
 $kendo-gantt-summary-bg: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-color-primary, $kendo-gantt-bg )) !default;
+/// The background color of the Gantt summary progress.
+/// @group gantt
 $kendo-gantt-summary-progress-bg: $kendo-color-primary !default;
+/// The background color of the selected Gantt summary.
+/// @group gantt
 $kendo-gantt-summary-selected-bg: if($kendo-enable-color-system, k-color( secondary-subtle-active ), k-color-mix( $kendo-color-secondary, $kendo-gantt-bg )) !default;
+/// The background color of the selected Gantt summary progress.
+/// @group gantt
 $kendo-gantt-summary-progress-selected-bg: $kendo-color-secondary !default;
 
+/// The horizontal padding of the Gantt task.
+/// @group gantt
 $kendo-gantt-task-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Gantt task.
+/// @group gantt
 $kendo-gantt-task-padding-y: k-spacing(1) !default;
+/// The border width of the Gantt task.
+/// @group gantt
 $kendo-gantt-task-border-width: 0px !default;
+/// The background color of the Gantt task.
+/// @group gantt
 $kendo-gantt-task-bg: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-color-primary, $kendo-gantt-bg )) !default;
+/// The text color of the Gantt task.
+/// @group gantt
 $kendo-gantt-task-text: $kendo-color-primary-contrast !default;
+/// The border color of the Gantt task.
+/// @group gantt
 $kendo-gantt-task-border: null !default;
+/// The background color of the Gantt task progress.
+/// @group gantt
 $kendo-gantt-task-progress-bg: $kendo-color-primary !default;
+/// The background color of selected the Gantt task.
+/// @group gantt
 $kendo-gantt-task-selected-bg: if($kendo-enable-color-system, k-color( secondary-subtle-active ), k-color-mix( $kendo-color-secondary, $kendo-gantt-bg )) !default;
+/// The text color of the selected Gantt task.
+/// @group gantt
 $kendo-gantt-task-selected-text: $kendo-color-secondary-contrast !default;
+/// The border color of the selected Gantt task.
+/// @group gantt
 $kendo-gantt-task-selected-border: null !default;
+/// The background color of the selected Gantt task progress.
+/// @group gantt
 $kendo-gantt-task-progress-selected-bg: $kendo-color-secondary !default;
 
+/// The vertical margin of the Gantt task planned line.
+/// @group gantt
 $kendo-gantt-planned-margin-y: .35em !default;
+/// The border width of the Gantt task planned line.
+/// @group gantt
 $kendo-gantt-planned-border-width: 2px !default;
+/// The line height of the Gantt task planned line.
+/// @group gantt
 $kendo-gantt-planned-line-height: .75em !default;
 
+/// The vertical margin of the Gantt planned dependencies.
+/// @group gantt
 $kendo-gantt-planned-dependency-margin-y: .7em !default;
 
+/// The default width of the Gantt planned line dot.
+/// @group gantt
 $kendo-gantt-planned-moment-width: 6px !default;
+/// The default height of the Gantt planned line dot.
+/// @group gantt
 $kendo-gantt-planned-moment-height: $kendo-gantt-planned-moment-width !default;
+/// The border radius of the Gantt planned line dot.
+/// @group gantt
 $kendo-gantt-planned-moment-border-radius: calc( ( #{$kendo-gantt-planned-border-width * 2} + #{$kendo-gantt-planned-moment-width} ) / 2 ) !default;
+/// The horizontal margin of the Gantt planned line dot.
+/// @group gantt
 $kendo-gantt-planned-moment-left-margin-x: calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} ) !default;
+/// The horizontal margin of the Gantt milestone planned line dot.
+/// @group gantt
 $kendo-gantt-planned-milestone-moment-margin-x: k-math-div( $kendo-gantt-planned-moment-width, 2 ) !default;
 
+/// The default height of the Gantt planned line.
+/// @group gantt
 $kendo-gantt-planned-duration-height: $kendo-gantt-planned-border-width !default;
+/// The height of the hovered Gantt planned line.
+/// @group gantt
 $kendo-gantt-planned-duration-hover-height: calc( #{$kendo-gantt-planned-border-width} + 1px ) !default;
 
+/// The top position of the Gantt drag hint.
+/// @group gantt
 $kendo-gantt-planned-single-drag-hint-top: .85em !default;
+/// The top position of the Gantt summary drag hint.
+/// @group gantt
 $kendo-gantt-planned-summary-drag-hint-top: 1.35em !default;
+/// The top position of the Gantt planned milestone drag hint.
+/// @group gantt
 $kendo-gantt-planned-milestone-drag-hint-top: 1.15em !default;
 
+/// The horizontal margin of the Gantt milestone wrap.
+/// @group gantt
 $kendo-gantt-rtl-milestone-wrap-margin-x: -2.4em !default;
+/// The horizontal margin of the Gantt milestone line dot.
+/// @group gantt
 $kendo-gantt-rtl-milestone-planned-moment-margin-x: .2em !default;
+/// The horizontal margin of the Gantt milestone task dot.
+/// @group gantt
 $kendo-gantt-rtl-milestone-dot-start-margin-x: -.1em !default;
 
+/// The horizontal offset of the Gantt delayed task resize handler.
+/// @group gantt
 $kendo-gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
 
+/// The background color of the Gantt planned Tooltip.
+/// @group gantt
 $kendo-gantt-planned-bg: $kendo-color-primary !default;
+/// The border color of the Gantt planned Tooltip.
+/// @group gantt
 $kendo-gantt-planned-border: $kendo-gantt-planned-bg !default;
 
+/// The background color of the Gantt delayed task.
+/// @group gantt
 $kendo-gantt-delayed-bg: $kendo-color-error !default;
+/// The complement background color of the Gantt delayed task.
+/// @group gantt
 $kendo-gantt-delayed-bg-lighter: if($kendo-enable-color-system, k-color( error-emphasis ), k-color-tint($kendo-gantt-delayed-bg, 5)) !default;
 
+/// The background color of the Gantt advanced task.
+/// @group gantt
 $kendo-gantt-advanced-bg: $kendo-color-success !default;
+/// The complement background color of the Gantt advanced task.
+/// @group gantt
 $kendo-gantt-advanced-bg-lighter: if($kendo-enable-color-system, k-color( success-emphasis ), k-color-tint($kendo-gantt-advanced-bg, 5)) !default;
 
+/// The text color of the Gantt delayed task action.
+/// @group gantt
 $kendo-gantt-action-on-offset-text: #000000 !default;
+/// The top position of the Gantt delayed task resize handler.
+/// @group gantt
 $kendo-gantt-offset-resize-handler-top: 50% !default;
 
+/// The default width of the Gantt validation Tooltip.
+/// @group gantt
 $kendo-gantt-validation-tooltip-width: 200px !default;
+/// The default width of the Gantt validation Tooltip label.
+/// @group gantt
 $kendo-gantt-validation-tooltip-label-width: 50px !default;
+/// The border color of the Gantt validation Tooltip.
+/// @group gantt
 $kendo-gantt-validation-tooltip-border: #656565 !default;
+/// The border color of the valid Gantt validation Tooltip.
+/// @group gantt
 $kendo-gantt-validation-tooltip-valid-border: $kendo-color-success !default;
+/// The border color of the invalid Gantt validation Tooltip.
+/// @group gantt
 $kendo-gantt-validation-tooltip-invalid-border: $kendo-color-error !default;
