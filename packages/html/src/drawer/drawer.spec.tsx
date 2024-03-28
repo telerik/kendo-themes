@@ -51,6 +51,7 @@ export const Drawer = (
             }
             <div {...other}
                 className={classNames(
+                    props.className,
                     DRAWER_CLASSNAME,
                     {
                         [`k-drawer-${position}`]: position
