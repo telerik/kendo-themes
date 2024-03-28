@@ -21,6 +21,7 @@ export const DrawerContent = (
     return (
         <div {...other}
             className={classNames(
+                props.className,
                 DRAWERCONTENT_CLASSNAME
             )}>
             {props.children}
