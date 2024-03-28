@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.0...v8.0.0-dev.1) (2024-03-28)
+
+
+### Features
+
+* **classic:** implement spacing module ([0c89d65](https://github.com/telerik/kendo-themes/commit/0c89d654ef1cafa583f6d2683d267a4975f21fd2))
+* **classic:** integrate radii module ([7161644](https://github.com/telerik/kendo-themes/commit/716164469c59e8466128f9c7bae775246b1c813c))
+* **classic:** integrate typography module ([4e02f97](https://github.com/telerik/kendo-themes/commit/4e02f9777501a78198647ff0b2355f2bf283e9c3))
+
+
+
+
+
 # [8.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.3.0-dev.1...v8.0.0-dev.0) (2024-03-25)
 
 

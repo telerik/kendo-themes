@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.0...v8.0.0-dev.1) (2024-03-28)
+
+
+### Features
+
+* **bootstrap:** integrate radii module ([df28c2c](https://github.com/telerik/kendo-themes/commit/df28c2c92db2bb3d62aefadd09b681f66287c6e5))
+* **bootstrap:** integrate spacing module ([5821954](https://github.com/telerik/kendo-themes/commit/582195480577fa9f7021b05003936c7f6b5a13a5))
+* **bootstrap:** integrate typography module ([7c83f2a](https://github.com/telerik/kendo-themes/commit/7c83f2a4b55a026ed772f78d244b99a213fd940d))
+* **classic:** implement spacing module ([0c89d65](https://github.com/telerik/kendo-themes/commit/0c89d654ef1cafa583f6d2683d267a4975f21fd2))
+* **classic:** integrate radii module ([7161644](https://github.com/telerik/kendo-themes/commit/716164469c59e8466128f9c7bae775246b1c813c))
+* **classic:** integrate typography module ([4e02f97](https://github.com/telerik/kendo-themes/commit/4e02f9777501a78198647ff0b2355f2bf283e9c3))
+* **core:** implement radii module ([f963232](https://github.com/telerik/kendo-themes/commit/f96323255304e3573d702bbccbe6f8274b912937))
+* **core:** implement spacing module ([7b863e5](https://github.com/telerik/kendo-themes/commit/7b863e5e58a0c3dbab8588be8aeeaef8e70eef94))
+* **core:** implement typography module ([8954987](https://github.com/telerik/kendo-themes/commit/8954987aca8795d7dbf57e37deeae10e183097cd))
+* **default:** integrate radii module ([abd3f5f](https://github.com/telerik/kendo-themes/commit/abd3f5f97c51f67b9acc15c06ca89a35c4ab448f))
+* **default:** integrate spacing module ([3a7741b](https://github.com/telerik/kendo-themes/commit/3a7741b05501adca934a35b8794b7a5a2c8e37f3))
+* **default:** integrate typography module ([f4a6d94](https://github.com/telerik/kendo-themes/commit/f4a6d9449335c84bf89ba5cae012a20e94d69ef9))
+* **fluent:** integrate radii module ([648bc00](https://github.com/telerik/kendo-themes/commit/648bc008b8b59c1d1e51afafffc0fb9da3cc345d))
+* **fluent:** integrate spacing module ([c24f703](https://github.com/telerik/kendo-themes/commit/c24f703c6efb95913c544c2eb613707af35278e9))
+* **fluent:** integrate typography module ([43955ba](https://github.com/telerik/kendo-themes/commit/43955ba070ab770d055f4d9afab12b7e52447394))
+* **material:** integrate radii module ([667b4e5](https://github.com/telerik/kendo-themes/commit/667b4e50a7f077ab7834c1c81849486d5c878da1))
+* **material:** integrate spacing module ([0b934b3](https://github.com/telerik/kendo-themes/commit/0b934b397dc239967dfccb56eb27e41fa6eecf10))
+* **material:** integrate typography module ([4f70d1e](https://github.com/telerik/kendo-themes/commit/4f70d1e8eab1bb56d0b5271a992d79b2c0373ceb))
+* **utils:** integrate radii module ([228cac1](https://github.com/telerik/kendo-themes/commit/228cac1d073dc8ce7f8e515b4d76dab6eaa5c58b))
+* **utils:** integrate spacing module ([a83b524](https://github.com/telerik/kendo-themes/commit/a83b524953153513970ea3b70823f723d807d0e5))
+* **utils:** integrate typography module ([aa155a1](https://github.com/telerik/kendo-themes/commit/aa155a191259c013140513b52a6c2a8d2ad4277c))
+
+
+
+
+
 # [8.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.3.0-dev.1...v8.0.0-dev.0) (2024-03-25)
 
 
