@@ -3933,20 +3933,6 @@ This is equivalent to `padding: 0.25rem;`.
 
 
 
-### `.k-p--1px`
-
-This is equivalent to `padding: -1px;`.
-
-
-
-
-### `.k-p--1`
-
-This is equivalent to `padding: -0.25rem;`.
-
-
-
-
 ### `.k-p-xs`
 
 This is equivalent to `padding: 0.25rem;`.
@@ -4020,20 +4006,6 @@ This is equivalent to `padding-top: 1px;`.
 ### `.k-pt-1`
 
 This is equivalent to `padding-top: 0.25rem;`.
-
-
-
-
-### `.k-pt--1px`
-
-This is equivalent to `padding-top: -1px;`.
-
-
-
-
-### `.k-pt--1`
-
-This is equivalent to `padding-top: -0.25rem;`.
 
 
 
@@ -4115,20 +4087,6 @@ This is equivalent to `padding-right: 0.25rem;`.
 
 
 
-### `.k-pr--1px`
-
-This is equivalent to `padding-right: -1px;`.
-
-
-
-
-### `.k-pr--1`
-
-This is equivalent to `padding-right: -0.25rem;`.
-
-
-
-
 ### `.k-pr-xs`
 
 This is equivalent to `padding-right: 0.25rem;`.
@@ -4202,20 +4160,6 @@ This is equivalent to `padding-bottom: 1px;`.
 ### `.k-pb-1`
 
 This is equivalent to `padding-bottom: 0.25rem;`.
-
-
-
-
-### `.k-pb--1px`
-
-This is equivalent to `padding-bottom: -1px;`.
-
-
-
-
-### `.k-pb--1`
-
-This is equivalent to `padding-bottom: -0.25rem;`.
 
 
 
@@ -4297,20 +4241,6 @@ This is equivalent to `padding-left: 0.25rem;`.
 
 
 
-### `.k-pl--1px`
-
-This is equivalent to `padding-left: -1px;`.
-
-
-
-
-### `.k-pl--1`
-
-This is equivalent to `padding-left: -0.25rem;`.
-
-
-
-
 ### `.k-pl-xs`
 
 This is equivalent to `padding-left: 0.25rem;`.
@@ -4388,20 +4318,6 @@ This is equivalent to `padding-inline: 0.25rem;`.
 
 
 
-### `.k-px--1px`
-
-This is equivalent to `padding-inline: -1px;`.
-
-
-
-
-### `.k-px--1`
-
-This is equivalent to `padding-inline: -0.25rem;`.
-
-
-
-
 ### `.k-px-xs`
 
 This is equivalent to `padding-inline: 0.25rem;`.
@@ -4475,20 +4391,6 @@ This is equivalent to `padding-block: 1px;`.
 ### `.k-py-1`
 
 This is equivalent to `padding-block: 0.25rem;`.
-
-
-
-
-### `.k-py--1px`
-
-This is equivalent to `padding-block: -1px;`.
-
-
-
-
-### `.k-py--1`
-
-This is equivalent to `padding-block: -0.25rem;`.
 
 
 
