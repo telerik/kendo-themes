@@ -11,7 +11,7 @@ export const FilterWithPreview = (props) => (
     <Filter
         showApplyButton={true}
         children={[
-            <FilterToolbar>
+            <FilterToolbar key="filter-toolbar">
                 <Toolbar>
                     <ButtonGroup>
                         <Button className="k-group-start" selected>And</Button>
@@ -22,7 +22,7 @@ export const FilterWithPreview = (props) => (
                     <Button fillMode="flat" icon="x"></Button>
                 </Toolbar>
             </FilterToolbar>,
-            <FilterLines>
+            <FilterLines key="filter-lines">
                 <FilterItem>
                     <FilterToolbar>
                         <Toolbar>
@@ -72,7 +72,7 @@ export const FilterWithPreview = (props) => (
                     </FilterToolbar>
                 </FilterItem>
             </FilterLines>,
-            <FilterPreview
+            <FilterPreview key="filter-preview"
                 fields={[
                     { name: "bracket", value: "(" },
                     { name: "field", value: "Price" },
