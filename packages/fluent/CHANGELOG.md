@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.1...v8.0.0-dev.2) (2024-04-01)
+
+
+### Bug Fixes
+
+* **loader:** loader container stays underneath windows and dialogs ([7ec89a7](https://github.com/telerik/kendo-themes/commit/7ec89a76f2e8b5c331e8ad6a1a9739ee244418a1))
+
+
+
+
+
 # [8.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.0...v8.0.0-dev.1) (2024-03-28)
 
 
