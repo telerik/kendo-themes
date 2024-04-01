@@ -98,7 +98,7 @@ export const Toolbar = (
                     <Button
                         key={`${bindex}-${new Date().getTime()}`}
                         {...button.props}
-                        className={`k-toolbar-button ${button.props.className ? button.props.className : ''}`}
+                        className={`${button.props.className ? button.props.className : ''}`}
                     ></Button>
                 );
             });
