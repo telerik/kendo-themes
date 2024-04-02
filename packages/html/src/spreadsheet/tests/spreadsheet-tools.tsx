@@ -22,7 +22,7 @@ export default () => (
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <span>File</span>
-            <SpreadsheetNormal style={{ width: '100%', height: 'auto' }}>
+            <SpreadsheetNormal style={{ height: 'auto' }}>
                 <SpreadsheetHeader
                     menuItems={[
                         <MenuItem first text="File" active />,

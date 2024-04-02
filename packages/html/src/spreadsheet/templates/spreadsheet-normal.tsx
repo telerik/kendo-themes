@@ -1,7 +1,7 @@
 import { Spreadsheet, SpreadsheetActionBar, SpreadsheetHeader, SpreadsheetSheetsBar, SpreadsheetView } from "..";
 
 export const SpreadsheetNormal = (props) => (
-    <Spreadsheet style={{ width: '100%' }}
+    <Spreadsheet
         children={
             <>
                 <SpreadsheetHeader />

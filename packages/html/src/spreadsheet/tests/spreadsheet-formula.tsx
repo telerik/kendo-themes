@@ -16,7 +16,7 @@ export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area">
-            <Spreadsheet style={{ width: '100%' }}>
+            <Spreadsheet>
                 <SpreadsheetHeader
                     toolbarItems={[ <Button icon="formula-fx" fillMode="flat">Insert Formula</Button> ]}
                     menuItems={[

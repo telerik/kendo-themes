@@ -25,7 +25,7 @@ export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
-            <SpreadsheetNormal style={{ width: '100%' }}>
+            <SpreadsheetNormal>
                 <SpreadsheetHeader />
                 <SpreadsheetActionBar />
                 <SpreadsheetView
