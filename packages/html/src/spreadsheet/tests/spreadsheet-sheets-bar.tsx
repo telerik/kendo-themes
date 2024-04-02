@@ -38,7 +38,7 @@ export default () =>(
 
             <span>Sheets Bar</span>
             <section>
-                <SpreadsheetNormal style={{ width: '100%', height: 'auto' }}>
+                <SpreadsheetNormal style={{ height: 'auto' }}>
                     <SpreadsheetSheetsBar tabStripItems={
                         <>
                             <TabStripItem first value="Sheet 1">

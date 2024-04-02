@@ -29,7 +29,7 @@ export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area">
-            <div style={{ width: '100%' }} className="k-widget k-spreadsheet k-spreadsheet-legacy">
+            <div className="k-widget k-spreadsheet k-spreadsheet-legacy">
                 <div className="k-tabstrip-wrapper">
                     <div className="k-spreadsheet-quick-access-toolbar">
                         <Button icon="undo"></Button>
