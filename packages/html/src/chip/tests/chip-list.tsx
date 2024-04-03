@@ -12,27 +12,27 @@ export default () =>(
 
             <section>
                 <ChipList>
-                    <ChipNormal>First</ChipNormal>
-                    <ChipNormal selected>Selected</ChipNormal>
+                    <ChipNormal text="First" />
+                    <ChipNormal text="Selected" selected />
                 </ChipList>
             </section>
             <section className="k-rtl">
                 <ChipList>
-                    <ChipNormal>First</ChipNormal>
-                    <ChipNormal selected>Selected</ChipNormal>
+                    <ChipNormal text="First" />
+                    <ChipNormal text="Selected" selected />
                 </ChipList>
             </section>
 
             <section>
                 <ChipList>
-                    <ChipNormal fillMode="outline">First</ChipNormal>
-                    <ChipNormal fillMode="outline" selected>Selected</ChipNormal>
+                    <ChipNormal fillMode="outline" text="First" />
+                    <ChipNormal fillMode="outline" text="Selected" selected />
                 </ChipList>
             </section>
             <section className="k-rtl">
                 <ChipList>
-                    <ChipNormal fillMode="outline">First</ChipNormal>
-                    <ChipNormal fillMode="outline" selected>Selected</ChipNormal>
+                    <ChipNormal fillMode="outline" text="First" />
+                    <ChipNormal fillMode="outline" text="Selected" selected />
                 </ChipList>
             </section>
         </div>
