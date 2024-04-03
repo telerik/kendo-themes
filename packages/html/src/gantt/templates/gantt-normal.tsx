@@ -39,7 +39,7 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "530px", ta
         <GanttContent>
             {other.children ||
                 <Splitter className="k-gantt-splitter" children={[
-                    <SplitterPane className="k-gantt-treelist" flexBasis={flexBasis}>
+                    <SplitterPane key="gantt-treelist-pane" className="k-gantt-treelist" flexBasis={flexBasis}>
                         <TreeList>
                             <GridHeader>
                                 <div className="k-grid-header-wrap">
@@ -268,7 +268,7 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "530px", ta
                             </GridContainer>
                         </TreeList>
                     </SplitterPane>,
-                    <SplitterPane className="k-gantt-timeline-pane">
+                    <SplitterPane key="gantt-timeline-pane" className="k-gantt-timeline-pane">
                         <Grid className="k-gantt-timeline">
                             <GridHeader>
                                 <div className="k-grid-header-wrap">
