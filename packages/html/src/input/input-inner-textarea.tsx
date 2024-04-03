@@ -33,9 +33,9 @@ export const InputInnerTextarea = (
             {...other}
             className={classNames(props.className, className, optionClassNames(className, props))}
             placeholder={placeholder}
-            rows={rows}>
-            {value}
-        </textarea>
+            rows={rows}
+            defaultValue={value}
+        />
     );
 };
 

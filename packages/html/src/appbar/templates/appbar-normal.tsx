@@ -2,7 +2,7 @@ import { Appbar, AppbarSection } from '../../appbar';
 import { Icon } from '../../icon';
 
 export const AppbarNormal = (props) => (
-    <Appbar children={[
+    <Appbar children={
         <>
             <AppbarSection>
                 <Icon icon="menu" />
@@ -25,7 +25,7 @@ export const AppbarNormal = (props) => (
                 <Icon icon="user" />
             </AppbarSection>
         </>
-    ]}
+    }
     {...props} >
     </Appbar>
 );
