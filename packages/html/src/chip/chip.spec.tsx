@@ -100,7 +100,7 @@ export const Chip = (
             <span className="k-chip-content">
                 { props.children
                     ? props.children
-                    : text && <span className="k-chip-label k-text-ellipsis">{text}</span>
+                    : text && <span className="k-chip-label">{text}</span>
                 }
             </span>
             { actions && (
