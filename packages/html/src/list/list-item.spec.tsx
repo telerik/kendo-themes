@@ -18,6 +18,7 @@ const defaultProps = {};
 export type KendoListItemProps = {
     text?: string;
     groupLabel?: string;
+    group?: boolean;
     showIcon?: boolean;
     iconName?: string;
     checked?: boolean;
@@ -34,6 +35,7 @@ export const ListItem = (
     const {
         text,
         groupLabel,
+        group,
         showIcon,
         iconName,
         showCheckbox,
@@ -54,7 +56,7 @@ export const ListItem = (
             {...other}
             className={classNames(
                 props.className,
-                LISTITEM_CLASSNAME,
+                group ? `k-list-group-item` : LISTITEM_CLASSNAME,
                 stateClassNames(LISTITEM_CLASSNAME, {
                     hover,
                     focus,

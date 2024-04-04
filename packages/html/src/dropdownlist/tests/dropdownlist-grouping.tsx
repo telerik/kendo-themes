@@ -1,4 +1,4 @@
-import { DropdownListGrouping } from "../../dropdownlist";
+import { DropdownListGrouping, DropdownListGroupingModern } from "../..";
 
 const styles = `
     #test-area {
@@ -14,14 +14,24 @@ export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
-            <span>DropdownList Filtering</span>
-            <span>DropdownList Filtering RTL</span>
+            <span>Classic DropdownList Grouping</span>
+            <span>Classic DropdownList Grouping RTL</span>
 
             <div>
                 <DropdownListGrouping placeholder="DropdownList..." />
             </div>
             <div dir="rtl">
                 <DropdownListGrouping placeholder="DropdownList..." />
+            </div>
+
+            <span>Modern DropdownList Grouping</span>
+            <span>Modern DropdownList Grouping RTL</span>
+
+            <div>
+                <DropdownListGroupingModern placeholder="DropdownList..." />
+            </div>
+            <div dir="rtl">
+                <DropdownListGroupingModern placeholder="DropdownList..." />
             </div>
         </div>
     </>
