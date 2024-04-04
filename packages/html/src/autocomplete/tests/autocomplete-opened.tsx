@@ -19,10 +19,10 @@ export default () =>(
             <span>Autocomplete RTL</span>
 
             <div>
-                <AutocompletePopup value="Opened" />
+                <AutocompletePopup focus value="Opened" />
             </div>
             <div dir="rtl">
-                <AutocompletePopup value="Opened" />
+                <AutocompletePopup focus value="Opened" />
             </div>
         </div>
     </>
