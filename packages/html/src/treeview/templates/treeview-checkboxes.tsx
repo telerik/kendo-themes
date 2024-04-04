@@ -12,8 +12,7 @@ export const TreeviewCheckboxes = (props) => (
                             <TreeviewItem bottom text="Child 2.2.1" />
                         </TreeviewGroup>
                     </TreeviewItem>
-                    <TreeviewItem text="Child 2.3" showCheckbox />
-                    <TreeviewItem bottom text="Load more..." leafClassName="k-treeview-load-more-button" />
+                    <TreeviewItem bottom text="Child 2.3" showCheckbox />
                 </TreeviewGroup>
             </TreeviewItem>,
             <TreeviewItem key="treeview-item-3" bottom text="Root 3" showCheckbox>

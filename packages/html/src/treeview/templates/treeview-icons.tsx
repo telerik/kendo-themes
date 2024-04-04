@@ -12,8 +12,7 @@ export const TreeviewIcons = (props) => (
                             <TreeviewItem bottom showIcon icon="folder" text="Child 2.2.1"/>
                         </TreeviewGroup>
                     </TreeviewItem>
-                    <TreeviewItem showIcon icon="folder" text="Child 2.3" />
-                    <TreeviewItem bottom leafClassName="k-treeview-load-more-button" text="Load more..." />
+                    <TreeviewItem bottom showIcon icon="folder" text="Child 2.3" />
                 </TreeviewGroup>
             </TreeviewItem>,
             <TreeviewItem key="treeview-item-3" bottom text="Root 3" showIcon icon="folder">

@@ -163,8 +163,7 @@ export const DropdownTree = (
                                         <TreeviewItem bottom text="Child 2.2.1" />
                                     </TreeviewGroup>
                                 </TreeviewItem>
-                                <TreeviewItem text="Child 2.3" />
-                                <TreeviewItem bottom leafClassName="k-treeview-load-more-button" text="Load more ..." />
+                                <TreeviewItem bottom text="Child 2.3" />
                             </TreeviewGroup>
                         </TreeviewItem>
                         <TreeviewItem bottom text="Root 3">
