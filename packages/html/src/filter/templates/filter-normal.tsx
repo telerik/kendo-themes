@@ -10,7 +10,7 @@ import { Toolbar, ToolbarItem } from '../../toolbar';
 export const FilterNormal = (props) => (
     <Filter
         children={[
-            <FilterToolbar>
+            <FilterToolbar key="filter-toolbar">
                 <Toolbar>
                     <ButtonGroup>
                         <Button className="k-group-start" selected>And</Button>
@@ -21,7 +21,7 @@ export const FilterNormal = (props) => (
                     <Button fillMode="flat" icon="x"></Button>
                 </Toolbar>
             </FilterToolbar>,
-            <FilterLines>
+            <FilterLines key="filter-lines">
                 <FilterItem>
                     <FilterToolbar>
                         <Toolbar>

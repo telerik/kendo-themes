@@ -3,7 +3,7 @@ import { Timeline, TimelineTrackWrap, TimelineTrackItem, TimelineFlag, TimelineD
 export const TimelineHorizontal = (props) => (
     <Timeline
         orientation="horizontal"
-        children={[
+        children={
             <>
                 <TimelineTrackWrap>
                     <TimelineTrackItem className="k-timeline-flag-wrap">
@@ -29,7 +29,7 @@ export const TimelineHorizontal = (props) => (
                     <HorizontalTimelineEvent />
                 </TimelineEventList>
             </>
-        ]}
+        }
         {...props}>
     </Timeline>
 );
