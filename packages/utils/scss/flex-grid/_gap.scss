@@ -182,8 +182,8 @@
 
     // Gap utility classes
     $kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
-    @include generate-utils( gap, gap, $kendo-utils-gap );
-    @include generate-utils( gap-x, column-gap, $kendo-utils-gap );
-    @include generate-utils( gap-y, row-gap, $kendo-utils-gap );
+    @include generate-utils( gap, gap, $kendo-utils-gap, $css-var: "spacing" );
+    @include generate-utils( gap-x, column-gap, $kendo-utils-gap, $css-var: "spacing" );
+    @include generate-utils( gap-y, row-gap, $kendo-utils-gap, $css-var: "spacing" );
 
 }
