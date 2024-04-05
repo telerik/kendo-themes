@@ -38,6 +38,7 @@ export type KendoTextboxOptions = {
 export type KendoTextboxProps = KendoTextboxOptions & {
     prefix?: JSX.Element;
     suffix?: JSX.Element;
+    separators?: boolean;
     type?: string;
     value?: string;
     placeholder?: string;
@@ -51,7 +52,8 @@ const defaultProps = {
     showClearButton: true,
     size: Input.defaultProps.size,
     rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    fillMode: Input.defaultProps.fillMode,
+    separators: true
 };
 
 export const Textbox = (
@@ -62,6 +64,7 @@ export const Textbox = (
     const {
         prefix,
         suffix,
+        separators = defaultProps.separators,
         value,
         placeholder,
         size,
@@ -99,7 +102,7 @@ export const Textbox = (
             {prefix &&
             <>
                 <InputPrefix>{prefix}</InputPrefix>
-                <InputSeparator/>
+                {separators && <InputSeparator/>}
             </>
             }
             <InputInnerInput placeholder={placeholder} value={value} />
@@ -118,7 +121,7 @@ export const Textbox = (
                 value={value} />}
             {suffix &&
             <>
-                <InputSeparator/>
+                {separators && <InputSeparator/>}
                 <InputSuffix>{suffix}</InputSuffix>
             </>
             }

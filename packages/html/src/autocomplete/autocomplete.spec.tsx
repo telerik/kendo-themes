@@ -34,7 +34,8 @@ const options = {
 const defaultProps = {
     size: Input.defaultProps.size,
     rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    fillMode: Input.defaultProps.fillMode,
+    separators: true
 };
 
 export type KendoAutocompleteOptions = {
@@ -46,6 +47,7 @@ export type KendoAutocompleteOptions = {
 export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     prefix?: JSX.Element;
     suffix?: JSX.Element;
+    separators?: boolean;
     value?: string;
     placeholder?: string;
     popup?: JSX.Element;
@@ -64,6 +66,7 @@ export const Autocomplete = (
     const {
         prefix,
         suffix,
+        separators = defaultProps.separators,
         value,
         placeholder,
         size,
@@ -105,7 +108,7 @@ export const Autocomplete = (
                 {prefix &&
                 <>
                     <InputPrefix>{prefix}</InputPrefix>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                 </>
                 }
                 <InputInnerInput placeholder={placeholder} value={value} />
@@ -124,7 +127,7 @@ export const Autocomplete = (
                     value={value} />
                 {suffix &&
                 <>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                     <InputSuffix>{suffix}</InputSuffix>
                 </>
                 }

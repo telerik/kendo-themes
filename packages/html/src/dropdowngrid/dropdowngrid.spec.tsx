@@ -36,7 +36,8 @@ const options = {
 const defaultProps = {
     size: Input.defaultProps.size,
     rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    fillMode: Input.defaultProps.fillMode,
+    separators: true
 };
 
 export type KendoDropdownGridOptions = {
@@ -48,6 +49,7 @@ export type KendoDropdownGridOptions = {
 export type KendoDropdownGridProps = KendoDropdownGridOptions & {
     prefix?: JSX.Element;
     suffix?: JSX.Element;
+    separators?: boolean;
     type?: string;
     value?: string;
     placeholder?: string;
@@ -68,6 +70,7 @@ export const DropdownGrid = (
     const {
         prefix,
         suffix,
+        separators = defaultProps.separators,
         value,
         placeholder,
         size,
@@ -113,7 +116,7 @@ export const DropdownGrid = (
                 {prefix &&
                 <>
                     <InputPrefix>{prefix}</InputPrefix>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                 </>
                 }
                 <InputInnerInput placeholder={placeholder} value={value} />
@@ -132,7 +135,7 @@ export const DropdownGrid = (
                     value={value} />
                 {suffix &&
                 <>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                     <InputSuffix>{suffix}</InputSuffix>
                 </>
                 }

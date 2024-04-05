@@ -30,7 +30,8 @@ const states = [
 const defaultProps = {
     size: Input.defaultProps.size,
     rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    fillMode: Input.defaultProps.fillMode,
+    separators: true
 };
 
 const options = {
@@ -48,6 +49,7 @@ export type KendoComboboxOptions = {
 export type KendoComboboxProps = KendoComboboxOptions & {
     prefix?: JSX.Element;
     suffix?: JSX.Element;
+    separators?: boolean;
     value?: string;
     placeholder?: string;
     popup?: JSX.Element;
@@ -66,6 +68,7 @@ export const Combobox = (
     const {
         prefix,
         suffix,
+        separators = defaultProps.separators,
         value,
         placeholder,
         size,
@@ -107,7 +110,7 @@ export const Combobox = (
                 {prefix &&
                 <>
                     <InputPrefix>{prefix}</InputPrefix>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                 </>
                 }
                 <InputInnerInput placeholder={placeholder} value={value} />
@@ -126,7 +129,7 @@ export const Combobox = (
                     value={value} />
                 {suffix &&
                 <>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                     <InputSuffix>{suffix}</InputSuffix>
                 </>
                 }

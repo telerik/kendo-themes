@@ -37,7 +37,8 @@ const options = {
 const defaultProps = {
     size: Input.defaultProps.size,
     rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    fillMode: Input.defaultProps.fillMode,
+    separators: true
 };
 
 export type KendoMultiSelectOptions = {
@@ -49,6 +50,7 @@ export type KendoMultiSelectOptions = {
 export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     prefix?: JSX.Element;
     suffix?: JSX.Element;
+    separators?: boolean;
     type?: string;
     value?: string;
     placeholder?: string;
@@ -70,6 +72,7 @@ export const MultiSelect = (
     const {
         prefix,
         suffix,
+        separators = defaultProps.separators,
         value,
         placeholder,
         tags,
@@ -113,7 +116,7 @@ export const MultiSelect = (
                 {prefix &&
                 <>
                     <InputPrefix>{prefix}</InputPrefix>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                 </>
                 }
                 <div className="k-input-values">
@@ -139,7 +142,7 @@ export const MultiSelect = (
                     value={tags ? 'value' : ''} />
                 {suffix &&
                 <>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                     <InputSuffix>{suffix}</InputSuffix>
                 </>
                 }
