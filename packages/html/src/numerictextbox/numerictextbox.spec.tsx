@@ -40,6 +40,7 @@ export type KendoNumericTextboxOptions = {
 export type KendoNumericTextboxProps = KendoNumericTextboxOptions & {
     prefix?: JSX.Element;
     suffix?: JSX.Element;
+    separators?: boolean;
     value?: string;
     placeholder?: string;
     showSpinButton?: boolean;
@@ -53,7 +54,8 @@ const defaultProps = {
     showClearButton: true,
     size: Input.defaultProps.size,
     rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    fillMode: Input.defaultProps.fillMode,
+    separators: true
 };
 
 export const NumericTextbox = (
@@ -64,6 +66,7 @@ export const NumericTextbox = (
     const {
         prefix,
         suffix,
+        separators = defaultProps.separators,
         value,
         placeholder,
         size,
@@ -102,7 +105,7 @@ export const NumericTextbox = (
             {prefix &&
                 <>
                     <InputPrefix>{prefix}</InputPrefix>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                 </>
             }
             <InputInnerInput placeholder={placeholder} value={value} />
@@ -121,7 +124,7 @@ export const NumericTextbox = (
                 value={value} />}
             {suffix &&
                 <>
-                    <InputSeparator/>
+                    {separators && <InputSeparator/>}
                     <InputSuffix>{suffix}</InputSuffix>
                 </>
             }
