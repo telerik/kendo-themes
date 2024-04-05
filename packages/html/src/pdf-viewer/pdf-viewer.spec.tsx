@@ -1,3 +1,4 @@
+import { ButtonGroup, Combobox } from '..';
 import { Button } from '../button';
 import { DropzoneNormal } from '../dropzone';
 import { classNames, stateClassNames, States, } from '../misc';
@@ -23,16 +24,25 @@ export type KendoPDFViewerProps = {
 export type KendoPDFViewerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultToolbar =
-<>
-    <Toolbar resizable>
-        <Pager type="input" pageSizes={false} refresh={false} info={false} />
-        <span className="k-spacer"></span>
-        <Button fillMode="flat" icon="search"></Button>
-        <Button fillMode="flat" icon="file-pdf"></Button>
-        <Button fillMode="flat" icon="print"></Button>
-        <Button fillMode="flat" icon="fullscreen"></Button>
-    </Toolbar>
-</>;
+        <Toolbar resizable>
+            <Pager type="input" pageSizes={false} refresh={false} info={false} />
+            <span className="k-spacer"></span>
+            <ButtonGroup>
+                <Button fillMode="flat" className="k-group-start" icon="zoom-out"></Button>
+                <Button fillMode="flat" className="k-group-end" icon="zoom-in"></Button>
+            </ButtonGroup>
+            <Combobox value="Automatic Width"></Combobox>
+            <ButtonGroup>
+                <Button fillMode="flat" className="k-group-start" icon="pointer"></Button>
+                <Button fillMode="flat" className="k-group-end" icon="hand"></Button>
+            </ButtonGroup>
+            <span className="k-spacer"></span>
+            <Button fillMode="flat" icon="search"></Button>
+            <Button fillMode="flat" icon="folder-open"></Button>
+            <Button fillMode="flat" icon="download"></Button>
+            <Button fillMode="flat" icon="print"></Button>
+        </Toolbar>
+;
 
 const defaultProps = {
     toolbar: defaultToolbar,
@@ -72,7 +82,7 @@ export const PDFViewer = (
                         }
                     />
                     <span className="k-search-matches">
-                        <span>0</span> of <span>1</span>
+                        <span>0</span> of <span>0</span>
                     </span>
                     <Button fillMode="flat" icon="arrow-up"></Button>
                     <Button fillMode="flat" icon="arrow-down"></Button>
