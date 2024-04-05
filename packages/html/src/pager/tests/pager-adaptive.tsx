@@ -15,11 +15,11 @@ export default () =>(
             <PagerNormal size="large"/>
             <PagerInput size="large"/>
             <span>500 px</span>
-            <PagerAdaptive size="large" info={false} refresh={false} itemsPerPage={false} style={{ width: "500px" }}/>
-            <PagerAdaptiveInput size="large" info={false} refresh={false} itemsPerPage={false} style={{ width: "500px" }}/>
+            <PagerAdaptive size="large" info={false} refresh={false} style={{ width: "500px" }}/>
+            <PagerAdaptiveInput size="large" info={false} refresh={false} style={{ width: "500px" }}/>
             <span>360 px</span>
-            <PagerAdaptive size="large" pageSizes={false} info={false} refresh={false} itemsPerPage={false} style={{ width: "360px" }}/>
-            <PagerAdaptiveInput size="large" pageSizes={false} info={false} refresh={false} itemsPerPage={false} style={{ width: "360px" }}/>
+            <PagerAdaptive size="large" pageSizes={false} info={false} refresh={false} style={{ width: "360px" }}/>
+            <PagerAdaptiveInput size="large" pageSizes={false} info={false} refresh={false} style={{ width: "360px" }}/>
         </div>
     </>
 );

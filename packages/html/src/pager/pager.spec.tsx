@@ -21,12 +21,16 @@ export type KendoPagerOptions = {
 
 export type KendoPagerProps = KendoPagerOptions & {
     adaptive?: boolean;
-    itemsPerPage?: boolean;
+    showPagerSizeInfo?: boolean;
     type?: 'numeric' | 'input';
     pageSizes?: boolean;
     refresh?: boolean;
-    info?: boolean;
+    info?: boolean | string;
     dir?: 'ltr' | 'rtl';
+    itemsPerPage?: number;
+    maxPages?: number;
+    currentPage?: number;
+    previousNext?: boolean;
 };
 
 export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
@@ -34,12 +38,16 @@ export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
 const defaultProps = {
     size: Size.medium,
     adaptive: false,
-    itemsPerPage: true,
+    showPagerSizeInfo: true,
     type: 'numeric',
     pageSizes: true,
     refresh: true,
-    info: true
-};
+    previousNext: true,
+    info: "1 - 5 of 20 items",
+    itemsPerPage: 5,
+    maxPages: 6,
+    currentPage: 1,
+} as const;
 
 export const Pager = (
     props: KendoPagerProps &
@@ -49,7 +57,11 @@ export const Pager = (
     const {
         size = defaultProps.size,
         adaptive = defaultProps.adaptive,
+        showPagerSizeInfo = defaultProps.showPagerSizeInfo,
         itemsPerPage = defaultProps.itemsPerPage,
+        maxPages = defaultProps.maxPages,
+        currentPage = defaultProps.currentPage,
+        previousNext = defaultProps.previousNext,
         type = defaultProps.type,
         pageSizes = defaultProps.pageSizes,
         refresh = defaultProps.refresh,
@@ -59,6 +71,26 @@ export const Pager = (
         dir,
         ...other
     } = props;
+
+    const pageButtons: JSX.Element[] = [];
+    const options: JSX.Element[] = [];
+
+    for (let i = 1; i <= maxPages; i++) {
+        pageButtons.push(
+            <Button
+                selected={i === currentPage ? true : false}
+                fillMode="flat"
+                themeColor="primary"
+                size={size}
+                rounded={null}
+            >
+                {i}
+            </Button>
+        );
+        options.push(
+            <option>{i}</option>
+        );
+    }
 
     return (
         <div
@@ -79,83 +111,38 @@ export const Pager = (
                 className={classNames(
                     'k-pager-numbers-wrap'
                 )}>
-                <Button
-                    className={classNames(
-                        'k-pager-nav',
-                        'k-pager-first'
-                    )}
-                    disabled
-                    fillMode="flat"
-                    size={size}
-                    rounded={null}
-                    icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left" }
-                >
-                </Button>
-                <Button
-                    className={classNames(
-                        'k-pager-nav'
-                    )}
-                    disabled
-                    fillMode="flat"
-                    size={size}
-                    rounded={null}
-                    icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left" }
-                >
-                </Button>
+                {previousNext &&
+                <>
+                    <Button
+                        className={classNames(
+                            'k-pager-nav',
+                            'k-pager-first'
+                        )}
+                        disabled
+                        fillMode="flat"
+                        size={size}
+                        rounded={null}
+                        icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left"}
+                    >
+                    </Button><Button
+                        className={classNames(
+                            'k-pager-nav'
+                        )}
+                        disabled
+                        fillMode="flat"
+                        size={size}
+                        rounded={null}
+                        icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left"}
+                    >
+                    </Button>
+                </>
+                }
                 { type === 'numeric' && !adaptive &&
                     <div
                         className={classNames(
                             'k-pager-numbers'
                         )}>
-                        <Button
-                            selected
-                            fillMode="flat"
-                            themeColor="primary"
-                            size={size}
-                            rounded={null}
-                        >
-                        1
-                        </Button>
-                        <Button
-                            fillMode="flat"
-                            themeColor="primary"
-                            size={size}
-                            rounded={null}
-                        >
-                        2
-                        </Button>
-                        <Button
-                            fillMode="flat"
-                            themeColor="primary"
-                            size={size}
-                            rounded={null}
-                        >
-                        3
-                        </Button>
-                        <Button
-                            fillMode="flat"
-                            themeColor="primary"
-                            size={size}
-                            rounded={null}
-                        >
-                        4
-                        </Button>
-                        <Button
-                            fillMode="flat"
-                            themeColor="primary"
-                            size={size}
-                            rounded={null}
-                        >
-                        5
-                        </Button>
-                        <Button
-                            fillMode="flat"
-                            themeColor="primary"
-                            size={size}
-                            rounded={null}
-                        >
-                        6
-                        </Button>
+                        {pageButtons}
                     </div>
                 }
                 { type === 'numeric' &&
@@ -174,7 +161,7 @@ export const Pager = (
                             }
                         )}
                     >
-                        <option>99</option>
+                        {options}
                     </select>
                 }
                 { type === 'input' &&
@@ -183,38 +170,42 @@ export const Pager = (
                             'k-pager-input'
                         )}>
                         { !adaptive && <span>Page</span> }
-                        <NumericTextbox value="999" size={size} showSpinButton={false} showClearButton={false}></NumericTextbox>
-                        { !adaptive && <span>of 8</span> }
+                        <NumericTextbox value={`${currentPage}`} size={size} showSpinButton={false} showClearButton={false}></NumericTextbox>
+                        { !adaptive && <span>{`of ${maxPages}`}</span> }
                     </span> }
-                <Button
-                    className={classNames(
-                        'k-pager-nav'
-                    )}
-                    fillMode="flat"
-                    size={size}
-                    rounded={null}
-                    icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
-                >
-                </Button>
-                <Button
-                    className={classNames(
-                        'k-pager-nav',
-                        'k-pager-last'
-                    )}
-                    fillMode="flat"
-                    size={size}
-                    rounded={null}
-                    icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
-                >
-                </Button>
+                {previousNext &&
+                <>
+                    <Button
+                        className={classNames(
+                            'k-pager-nav'
+                        )}
+                        fillMode="flat"
+                        size={size}
+                        rounded={null}
+                        icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
+                    >
+                    </Button>
+                    <Button
+                        className={classNames(
+                            'k-pager-nav',
+                            'k-pager-last'
+                        )}
+                        fillMode="flat"
+                        size={size}
+                        rounded={null}
+                        icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
+                    >
+                    </Button>
+                </>
+                }
             </div>
             { pageSizes &&
                 <span
                     className={classNames(
                         'k-pager-sizes'
                     )}>
-                    <DropdownList value="99" size={size} />
-                    { itemsPerPage &&
+                    <DropdownList value={`${itemsPerPage}`} size={size} />
+                    { showPagerSizeInfo &&
                         <span>items per page</span>
                     }
                 </span>
@@ -236,7 +227,7 @@ export const Pager = (
                     className={classNames(
                         'k-pager-info'
                     )}>
-                    1 - 20 of 91 items
+                    {info}
                 </span>
             }
         </div>
