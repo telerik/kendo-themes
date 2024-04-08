@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.2...v8.0.0-dev.3) (2024-04-08)
+
+
+### Bug Fixes
+
+* **spreadsheet:** set default width to fit container ([9023a4e](https://github.com/telerik/kendo-themes/commit/9023a4e03e8c9fa8488dfe88288acd54a2bf9c07))
+
+
+
+
+
 # [8.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.1...v8.0.0-dev.2) (2024-04-01)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
