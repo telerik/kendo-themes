@@ -15721,41 +15721,32 @@ The following table lists the available variables for customizing the Fluent the
             text: $kendo-input-solid-text,
             bg: $kendo-input-solid-bg,
             border: $kendo-input-solid-border,
-
             hover-text: $kendo-input-solid-hover-text,
             hover-bg: $kendo-input-solid-hover-bg,
             hover-border: $kendo-input-solid-hover-border,
-
             focus-text: $kendo-input-solid-focus-text,
             focus-bg: $kendo-input-solid-focus-bg,
             focus-border: $kendo-input-solid-focus-border,
-
             hover-focus-text: $kendo-input-solid-hover-focus-text,
             hover-focus-bg: $kendo-input-solid-hover-focus-bg,
             hover-focus-border: $kendo-input-solid-hover-focus-border,
-
             disabled-text: $kendo-input-solid-disabled-text,
             disabled-bg: $kendo-input-solid-disabled-bg,
             disabled-border: $kendo-input-solid-disabled-border
-
         ),
         outline: (
             text: $kendo-input-outline-text,
             bg: $kendo-input-outline-bg,
             border: $kendo-input-outline-border,
-
             hover-text: $kendo-input-outline-hover-text,
             hover-bg: $kendo-input-outline-hover-bg,
             hover-border: $kendo-input-outline-hover-border,
-
             focus-text: $kendo-input-outline-focus-text,
             focus-bg: $kendo-input-outline-focus-bg,
             focus-border: $kendo-input-outline-focus-border,
-
             hover-focus-text: $kendo-input-outline-hover-focus-text,
             hover-focus-bg: $kendo-input-outline-hover-focus-bg,
             hover-focus-border: $kendo-input-outline-hover-focus-border,
-
             disabled-text: $kendo-input-outline-disabled-text,
             disabled-bg: $kendo-input-outline-disabled-bg,
             disabled-border: $kendo-input-outline-disabled-border
@@ -15764,19 +15755,15 @@ The following table lists the available variables for customizing the Fluent the
             text: $kendo-input-flat-text,
             bg: $kendo-input-flat-bg,
             border: $kendo-input-flat-border,
-
             hover-text: $kendo-input-flat-hover-text,
             hover-bg: $kendo-input-flat-hover-bg,
             hover-border: $kendo-input-flat-hover-border,
-
             focus-text: $kendo-input-flat-focus-text,
             focus-bg: $kendo-input-flat-focus-bg,
             focus-border: $kendo-input-flat-focus-border,
-
             hover-focus-tex: $kendo-input-flat-hover-focus-text,
             hover-focus-bg: $kendo-input-flat-hover-focus-bg,
             hover-focus-border: $kendo-input-flat-hover-focus-border,
-
             disabled-text: $kendo-input-flat-disabled-text,
             disabled-bg: $kendo-input-flat-disabled-bg,
             disabled-border: $kendo-input-flat-disabled-border
@@ -15787,19 +15774,15 @@ The following table lists the available variables for customizing the Fluent the
             text: $kendo-picker-solid-text,
             bg: $kendo-picker-solid-bg,
             border: $kendo-picker-solid-border,
-
             hover-text: $kendo-picker-solid-hover-text,
             hover-bg: $kendo-picker-solid-hover-bg,
             hover-border: $kendo-picker-solid-hover-border,
-
             focus-text: $kendo-picker-solid-focus-text,
             focus-bg: $kendo-picker-solid-focus-bg,
             focus-border: $kendo-picker-solid-focus-border,
-
             hover-focus-tex: $kendo-picker-solid-hover-focus-text,
             hover-focus-bg: $kendo-picker-solid-hover-focus-bg,
             hover-focus-border: $kendo-picker-solid-hover-focus-border,
-
             disabled-text: $kendo-picker-solid-disabled-text,
             disabled-bg: $kendo-picker-solid-disabled-bg,
             disabled-border: $kendo-picker-solid-disabled-border
@@ -15808,19 +15791,15 @@ The following table lists the available variables for customizing the Fluent the
             text: $kendo-picker-outline-text,
             bg: $kendo-picker-outline-bg,
             border: $kendo-picker-outline-border,
-
             hover-text: $kendo-picker-outline-hover-text,
             hover-bg: $kendo-picker-outline-hover-bg,
             hover-border: $kendo-picker-outline-hover-border,
-
             focus-text: $kendo-picker-outline-focus-text,
             focus-bg: $kendo-picker-outline-focus-bg,
             focus-border: $kendo-picker-outline-focus-border,
-
             hover-focus-text: $kendo-picker-outline-hover-focus-text,
             hover-focus-bg: $kendo-picker-outline-hover-focus-bg,
             hover-focus-border: $kendo-picker-outline-hover-focus-border,
-
             disabled-text: $kendo-picker-outline-disabled-text,
             disabled-bg: $kendo-picker-outline-disabled-bg,
             disabled-border: $kendo-picker-outline-disabled-border
@@ -15829,19 +15808,15 @@ The following table lists the available variables for customizing the Fluent the
             text: $kendo-picker-flat-text,
             bg: $kendo-picker-flat-bg,
             border: $kendo-picker-flat-border,
-
             hover-text: $kendo-picker-flat-hover-text,
             hover-bg: $kendo-picker-flat-hover-bg,
             hover-border: $kendo-picker-flat-hover-border,
-
             focus-text: $kendo-picker-flat-focus-text,
             focus-bg: $kendo-picker-flat-focus-bg,
             focus-border: $kendo-picker-flat-focus-border,
-
             hover-focus-tex: $kendo-picker-flat-hover-focus-text,
             hover-focus-bg: $kendo-picker-flat-hover-focus-bg,
             hover-focus-border: $kendo-picker-flat-hover-focus-border,
-
             disabled-text: $kendo-picker-flat-disabled-text,
             disabled-bg: $kendo-picker-flat-disabled-bg,
             disabled-border: $kendo-picker-flat-disabled-border

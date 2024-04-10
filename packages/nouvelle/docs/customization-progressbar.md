@@ -285,7 +285,6 @@ The following table lists the available variables for customization.
         bg: k-get-theme-color( neutral, 100 ),
         text: k-get-theme-color( neutral, 700 ),
         border: k-get-theme-color( neutral, 200 ),
-
         value-bg: k-get-theme-color( marsala, 500 ),
         value-text: k-get-theme-color( marsala, 0 ),
         value-border: k-get-theme-color( marsala, 500 )
