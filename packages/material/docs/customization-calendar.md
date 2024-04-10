@@ -228,6 +228,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-header-cell-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the header cells in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-header-cell-padding-y</td>
     <td>Null</td>
     <td><code>null</code></td>
