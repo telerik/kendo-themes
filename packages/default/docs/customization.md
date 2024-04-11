@@ -3235,6 +3235,46 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-range-cell-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(lg)</code></td>
+    <td><code>var(--kendo-border-radius-lg, 0.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the range cells in the Multiview Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-sm-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-sm-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-sm-cell-size</td>
+    <td>Number</td>
+    <td><code>28px</code></td>
+    <td><code>28px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the small Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-sm-cell-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
@@ -3255,6 +3295,36 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-md-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-md-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-md-cell-size</td>
+    <td>Number</td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-md-cell-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
@@ -3272,6 +3342,36 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-lg-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-lg-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-lg-cell-size</td>
+    <td>Number</td>
+    <td><code>40px</code></td>
+    <td><code>40px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the large Calendar.</div></div>
     </td>
 </tr>
 <tr>

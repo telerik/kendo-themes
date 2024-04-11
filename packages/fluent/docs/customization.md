@@ -3699,6 +3699,36 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-sm-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-sm-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-sm-cell-size</td>
+    <td></td>
+    <td><code>24px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the small Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-sm-cell-padding-x</td>
     <td></td>
     <td><code>k-spacing(0.5)</code></td>
@@ -3729,6 +3759,36 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-md-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-md-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-md-cell-size</td>
+    <td></td>
+    <td><code>28px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-md-cell-padding-x</td>
     <td></td>
     <td><code>k-spacing(1)</code></td>
@@ -3756,6 +3816,36 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the cells in the medium Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-lg-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-lg-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-lg-cell-size</td>
+    <td></td>
+    <td><code>32px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the cells in the large Calendar.</div></div>
     </td>
 </tr>
 <tr>
