@@ -469,15 +469,15 @@
             }
         }
 
-        .k-range-start {
+        .k-range-start .k-calendar-cell-inner,
+        .k-range-start .k-link {
             border-color: inherit;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
+            border-radius: $kendo-calendar-range-cell-border-radius 0 0 $kendo-calendar-range-cell-border-radius;
         }
-        .k-range-end {
+        .k-range-end .k-calendar-cell-inner,
+        .k-range-end .k-link {
             border-color: inherit;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
+            border-radius: 0 $kendo-calendar-range-cell-border-radius $kendo-calendar-range-cell-border-radius 0;
         }
         .k-range-mid {
             border-color: inherit;
@@ -499,6 +499,21 @@
             @include hide-scrollbar("left");
         }
 
+    }
+
+    .k-rtl .k-calendar-range,
+    [dir="rtl"] .k-calendar-range,
+    .k-calendar-range.k-rtl,
+    .k-calendar-range[dir="rtl"] {
+
+        .k-range-start .k-calendar-cell-inner,
+        .k-range-start .k-link {
+            border-radius: 0 $kendo-calendar-range-cell-border-radius $kendo-calendar-range-cell-border-radius 0;
+        }
+        .k-range-end .k-calendar-cell-inner,
+        .k-range-end .k-link {
+            border-radius: $kendo-calendar-range-cell-border-radius 0 0 $kendo-calendar-range-cell-border-radius;
+        }
     }
 
 }
