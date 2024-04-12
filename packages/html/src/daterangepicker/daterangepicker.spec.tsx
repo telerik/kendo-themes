@@ -111,7 +111,7 @@ export const DateRangePicker = (
                         subTitle="DD / MM / YY">
                     </ActionSheetHeader>
                     <div className="k-scrollable-wrap">
-                        <MultiViewCalendarNormal size="large" orientation="vertical" calendarCaption="October 2021" />
+                        <MultiViewCalendarNormal size="large" orientation="vertical" showCaptions />
                     </div>
                 </ActionSheet>
             }
