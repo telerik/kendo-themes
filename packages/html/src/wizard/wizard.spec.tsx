@@ -39,7 +39,7 @@ export const Wizard = (
                 stateClassNames(WIZZARD_CLASSNAME, { disabled }),
                 {
                     [`${WIZZARD_CLASSNAME}-${orientation}`]: orientation,
-                    [`${WIZZARD_CLASSNAME}-${contentPosition}`]: contentPosition === "left",
+                    [`${WIZZARD_CLASSNAME}-${contentPosition}`]: contentPosition && orientation !== "horizontal",
                 }
             )}>
             {props.children}
