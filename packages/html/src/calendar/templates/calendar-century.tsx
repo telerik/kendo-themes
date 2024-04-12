@@ -1,9 +1,9 @@
-import { Calendar, CalendarTableRow, CalendarCell } from "..";
+import { Calendar, CalendarTableRow, CalendarCell, CalendarTable } from "..";
 
 export const CalendarCentury = ({ showOtherCentury, ...props }: any) => (
     <Calendar calendarView="century" calendarHeaderText="2000 - 2099"
         children={
-            <>
+            <CalendarTable>
                 <CalendarTableRow>
                     <CalendarCell text="1990 - 1999" />
                     <CalendarCell text="2000 - 2009" />
@@ -22,7 +22,7 @@ export const CalendarCentury = ({ showOtherCentury, ...props }: any) => (
                     <CalendarCell text="2090 - 2099" />
                     <CalendarCell text="2100 - 2109" empty={!showOtherCentury} />
                 </CalendarTableRow>
-            </>
+            </CalendarTable>
         }
         {...props}
     />
