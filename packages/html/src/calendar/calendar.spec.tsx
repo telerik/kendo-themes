@@ -1,5 +1,5 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { CalendarView, CalendarHeader, CalendarFooter, CalendarTableHead } from '.';
+import { CalendarView, CalendarHeader, CalendarFooter } from '.';
 
 const CALENDAR_CLASSNAME = `k-calendar`;
 
@@ -17,17 +17,16 @@ export type KendoCalendarProps = KendoCalendarOptions & {
     orientation?: 'vertical' | 'horizontal';
     calendarView?: 'month' | 'year' | 'decade' | 'century';
     calendarHeaderText?: string;
-    viewsCount?: number;
     showTableHead?: boolean;
     calendarCaption?: string;
     showWeek?: boolean;
     showCalendarFooter?: boolean;
+    calendarFooterText?: string;
     dir?: 'ltr' | 'rtl';
 };
 
 const defaultProps = {
     size: Size.medium,
-    viewsCount: 1,
     orientation: 'horizontal',
     calendarView: 'month',
     calendarHeaderText: 'October 2021',
@@ -42,11 +41,9 @@ export const Calendar = (
         orientation = defaultProps.orientation,
         calendarView = defaultProps.calendarView,
         calendarHeaderText = defaultProps.calendarHeaderText,
-        viewsCount = defaultProps.viewsCount,
-        calendarCaption,
         showWeek,
         showCalendarFooter,
-        showTableHead,
+        calendarFooterText,
         dir,
         ...other
     } = props;
@@ -75,21 +72,12 @@ export const Calendar = (
 
             <CalendarView
                 calendarView={calendarView}
-                viewsCount={viewsCount}
                 orientation={orientation}
             >
-                {calendarCaption &&
-                    <caption className="k-calendar-caption">{calendarCaption}</caption>
-                }
-                {showTableHead &&
-                    <CalendarTableHead showWeek={showWeek} />
-                }
-                <tbody className="k-calendar-tbody">
-                    {props.children}
-                </tbody>
+                {props.children}
             </CalendarView>
 
-            {showCalendarFooter && <CalendarFooter />}
+            {showCalendarFooter && <CalendarFooter calendarFooterText={calendarFooterText} size={size}/>}
         </div>
     );
 };

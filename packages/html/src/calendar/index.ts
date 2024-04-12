@@ -8,6 +8,7 @@ export * from './calendar-view';
 export * from './calendar-navigation.spec';
 export * from './calendar-infinite.spec';
 export * from './calendar-infinite-view.spec';
+export * from './calendar-infinite-table';
 export * from './calendar-tbody.spec';
 export * from './calendar-table-row.spec';
 export * from './calendar-caption-cell.spec';
