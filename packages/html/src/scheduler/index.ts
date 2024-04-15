@@ -21,6 +21,7 @@ export * from './templates/scheduler-timeline';
 export * from './templates/scheduler-agenda';
 export * from './templates/scheduler-flex-day';
 export * from './templates/scheduler-flex-week';
+export * from './templates/scheduler-flex-year';
 export * from './templates/scheduler-flex-month';
 export * from './templates/scheduler-flex-timeline';
 export * from './templates/scheduler-flex-agenda';
