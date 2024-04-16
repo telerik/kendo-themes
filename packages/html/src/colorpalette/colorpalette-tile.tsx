@@ -33,7 +33,7 @@ export const ColorPaletteTile = (
     } = props;
 
     const styles = {
-        'background-color': color,
+        'backgroundColor': color,
         'width': tileSize ? tileSize + 'px' : '',
         'height': tileSize ? tileSize + 'px' : ''
     };
