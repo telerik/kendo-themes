@@ -62,8 +62,7 @@ export default () =>(
             </section>
 
             <section>
-
-                <ColorPaletteNormal palette={PALETTEPRESETS.basic}></ColorPaletteNormal>
+                <ColorPaletteNormal />
             </section>
 
             <section>
