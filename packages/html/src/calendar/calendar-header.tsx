@@ -55,7 +55,7 @@ export const CalendarHeader = (
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
                 {showNavigationButtons && <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat"></Button>}
-                {showToday && <Button size={size} fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>}
+                {showToday && <Button size={size} fillMode="flat" className="k-calendar-nav-today">Today</Button>}
                 {showNavigationButtons && <Button className="k-calendar-nav-next" icon={iconNext} size={size} fillMode="flat"></Button>}
             </span>
         </div>
