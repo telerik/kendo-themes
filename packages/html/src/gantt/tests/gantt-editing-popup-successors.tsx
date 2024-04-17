@@ -3,7 +3,7 @@ import { DropdownList } from '../../dropdownlist';
 import { Button } from '../../button';
 import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar } from "../../grid";
 import { TableRow, TableTbody, TableTd, TableThead } from '../../table';
-import { TabStrip, TabStripItemsWrapper, TabStripItems, TabStripItem, TabStripContent } from '../../tabstrip';
+import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
 
 const styles = `
     .k-window {
@@ -27,15 +27,16 @@ export default () =>(
                         <Button icon="trash" fillMode="flat" themeColor="primary">Delete</Button>
                     </>
                 }>
-                    <TabStrip header={false}>
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false}
+                        tabStripItems={
+                            <>
                                 <TabStripItem first value="General" />
                                 <TabStripItem value="Resources" />
                                 <TabStripItem value="Predecessors" />
                                 <TabStripItem last active value="Successors" />
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <Grid _renderAriaRoot className="k-grid-no-scrollbar" toolbar={(
                                 <GridToolbar className="k-grid-toolbar">
@@ -81,7 +82,7 @@ export default () =>(
                                 </GridContainer>
                             </Grid>
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </WindowNormal>
             </section>
 

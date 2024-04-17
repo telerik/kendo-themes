@@ -1,5 +1,4 @@
-import { Button } from '../../button';
-import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '..';
+import { TabStripBottom, TabStripContent, TabStripItem, TabStripLeft, TabStripNormal, TabStripRight } from '..';
 
 
 export default () => (
@@ -7,77 +6,63 @@ export default () => (
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <TabStrip>
-                    <TabStripItemsWrapper orientation="horizontal">
-                        <TabStripItems>
-                            <TabStripItem first active dragging value="First" />
-                            <TabStripItem value="Closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last focus value="Focused" />
-                        </TabStripItems>
-                    </TabStripItemsWrapper>
-                    <TabStripContent active focus>
+                <TabStripNormal
+                    tabStripItems={
+                        <>
+                            <TabStripItem first active dragging value="dragging" />
+                            <TabStripItem last value="normal" />
+                        </>
+                    }
+                >
+                    <TabStripContent active>
                         <div>Top sortable</div>
                     </TabStripContent>
-                </TabStrip>
+                </TabStripNormal>
             </section>
 
             <section>
-                <TabStrip position="bottom">
+                <TabStripBottom
+                    tabStripItems={
+                        <>
+                            <TabStripItem first active dragging value="dragging" />
+                            <TabStripItem last value="normal" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Bottom sortable</div>
                     </TabStripContent>
-                    <TabStripItemsWrapper orientation="horizontal">
-                        <TabStripItems>
-                            <TabStripItem first active dragging value="First" />
-                            <TabStripItem value="Closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last focus value="Focused" />
-                        </TabStripItems>
-                    </TabStripItemsWrapper>
-                </TabStrip>
+                </TabStripBottom>
             </section>
 
             <section>
-                <TabStrip position="left">
-                    <TabStripItemsWrapper orientation="vertical">
-                        <TabStripItems>
-                            <TabStripItem first active dragging value="Active" />
-                            <TabStripItem value="Normal" />
-                            <TabStripItem hover value="Hover" />
-                            <TabStripItem focus value="Focused" />
-                            <TabStripItem value="Closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last disabled value="Disabled" />
-                        </TabStripItems>
-                    </TabStripItemsWrapper>
+                <TabStripLeft
+                    tabStripItems={
+                        <>
+                            <TabStripItem first active dragging value="dragging" />
+                            <TabStripItem last value="normal" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
-                        <div>Left orientation</div>
+                        <div>Left sortable</div>
                     </TabStripContent>
-                </TabStrip>
+                </TabStripLeft>
             </section>
 
             <section>
-                <TabStrip position="right">
-                    <TabStripItemsWrapper orientation="vertical">
-                        <TabStripItems>
-                            <TabStripItem first active dragging value="Active" />
-                            <TabStripItem value="Normal" />
-                            <TabStripItem hover value="Hover" />
-                            <TabStripItem focus value="Focused" />
-                            <TabStripItem value="Closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last disabled value="Disabled" />
-                        </TabStripItems>
-                    </TabStripItemsWrapper>
+                <TabStripRight
+                    tabStripItems={
+                        <>
+                            <TabStripItem first active dragging value="dragging" />
+                            <TabStripItem last value="normal" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
-                        <div>Right orientation</div>
+                        <div>Right sortable</div>
                     </TabStripContent>
-                </TabStrip>
+                </TabStripRight>
             </section>
 
         </div>
