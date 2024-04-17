@@ -92,7 +92,7 @@ $kendo-chart-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-chart-sm-font-size: 11px !default;
 $kendo-chart-md-font-size: 12px !default;
 $kendo-chart-lg-font-size: 16px !default;
-$kendo-chart-tooltip-font-size: calc( var( --kendo-font-size, inherit ) * .929) !default;
+$kendo-chart-tooltip-font-size: calc( #{$kendo-font-size} * .929) !default;
 $kendo-chart-label-font-size: .857em !default;
 $kendo-chart-title-font-size: 1.143em !default;
 $kendo-chart-pane-title-font-size: $kendo-chart-label-font-size !default;
