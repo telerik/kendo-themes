@@ -1,6 +1,6 @@
 import { Icon } from '../../icon';
 import { ColumnMenuTabbed, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuNormal } from '../../column-menu';
-import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../..';
+import { TabStripNormal, TabStripContent, TabStripItem } from '../..';
 
 const styles = `
     .k-animation-container,
@@ -27,14 +27,15 @@ export default () =>(
 
             <section>
                 <ColumnMenuTabbed>
-                    <TabStrip header={false} className="k-overflow-hidden">
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false} className="k-overflow-hidden"
+                        tabStripItems={
+                            <>
                                 <TabStripItem value={<Icon icon="filter" />}/>
                                 <TabStripItem active value={<Icon icon="sliders" />}/>
                                 <TabStripItem value={<Icon icon="columns" />}/>
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <ColumnMenuItemWrapper>
                                 <ColumnMenuItem text="Item 1" icon="sort-asc-small" />
@@ -47,7 +48,7 @@ export default () =>(
                                 <ColumnMenuExpander itemText="Expandable item" itemIcon="set-column-position" />
                             </ColumnMenuItemWrapper>
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </ColumnMenuTabbed>
             </section>
 
@@ -56,32 +57,34 @@ export default () =>(
 
             <section>
                 <ColumnMenuTabbed>
-                    <TabStrip header={false} className="k-overflow-hidden">
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false} className="k-overflow-hidden"
+                        tabStripItems={
+                            <>
                                 <TabStripItem active value={<Icon icon="filter" />}/>
                                 <TabStripItem value={<Icon icon="sliders" />}/>
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <FilterMenuNormal />
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </ColumnMenuTabbed>
             </section>
 
             <section>
                 <ColumnMenuTabbed>
-                    <TabStrip header={false} className="k-pos-relative">
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false} className="k-pos-relative"
+                        tabStripItems={
+                            <>
                                 <TabStripItem active value={<Icon icon="filter" />}/>
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <FilterMenuNormal />
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </ColumnMenuTabbed>
             </section>
 

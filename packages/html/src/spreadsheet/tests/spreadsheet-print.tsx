@@ -6,7 +6,7 @@ import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { CheckboxGroupNormal, CheckboxItem, CheckboxWithLabelAfter } from '../../checkbox';
-import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../../tabstrip';
+import { TabStripNormal, TabStripContent, TabStripItem } from '../../tabstrip';
 
 
 const style = `
@@ -26,13 +26,14 @@ export default () =>(
                         <Button themeColor="primary">Save</Button>
                     </>
                 }>
-                    <TabStrip header={null} position="top">
-                        <TabStripItemsWrapper orientation="horizontal">
-                            <TabStripItems>
+                    <TabStripNormal header={null}
+                        tabStripItems={
+                            <>
                                 <TabStripItem first active value="Print" />
                                 <TabStripItem last value="Format" />
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <div className="k-tabstrip-content k-active">
                             <FormNormal formButtons={null} tag="div" layout="grid">
                                 <Fieldset legend="Settings" layout="grid" cols={2} gapX={4}>
@@ -127,7 +128,7 @@ export default () =>(
                                 </Fieldset>
                             </FormNormal>
                         </div>
-                    </TabStrip>
+                    </TabStripNormal>
                 </WindowNormal>
             </section>
 
@@ -137,13 +138,14 @@ export default () =>(
                         <Button themeColor="primary">Save</Button>
                     </>
                 }>
-                    <TabStrip header={null} position="top">
-                        <TabStripItemsWrapper orientation="horizontal">
-                            <TabStripItems>
+                    <TabStripNormal header={null}
+                        tabStripItems={
+                            <>
                                 <TabStripItem first value="Print" />
                                 <TabStripItem last active value="Format" />
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <FormNormal formButtons={null} tag="div" layout="grid">
                                 <FormField label="Show" editor={
@@ -168,7 +170,7 @@ export default () =>(
                                 } />
                             </FormNormal>
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </WindowNormal>
             </section>
         </div>

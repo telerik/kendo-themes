@@ -1,5 +1,4 @@
-import { Button } from '../../button';
-import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '..';
+import { TabStripBottom, TabStripContent, TabStripLeft, TabStripNormal, TabStripRight } from '..';
 
 
 const style = `
@@ -20,85 +19,35 @@ export default () => (
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <TabStrip scrollable>
-                    <TabStripItemsWrapper orientation="horizontal">
-                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-left" className="k-tabstrip-prev"></Button>
-                        <TabStripItems>
-                            <TabStripItem first active value="First" />
-                            <TabStripItem value="Closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last focus value="Focused" />
-                        </TabStripItems>
-                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-right" className="k-tabstrip-next"></Button>
-                    </TabStripItemsWrapper>
-                    <TabStripContent active focus>
+                <TabStripNormal scrollable>
+                    <TabStripContent active>
                         <div>Top scrollable</div>
                     </TabStripContent>
-                </TabStrip>
+                </TabStripNormal>
             </section>
 
             <section>
-                <TabStrip scrollable position="bottom">
+                <TabStripBottom scrollable>
                     <TabStripContent active>
                         <div>Bottom scrollable</div>
                     </TabStripContent>
-                    <TabStripItemsWrapper orientation="horizontal">
-                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-left" className="k-tabstrip-prev"></Button>
-                        <TabStripItems>
-                            <TabStripItem first active value="First" />
-                            <TabStripItem value="Closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last focus value="Focused" />
-                        </TabStripItems>
-                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-right" className="k-tabstrip-next"></Button>
-                    </TabStripItemsWrapper>
-                </TabStrip>
+                </TabStripBottom>
             </section>
 
             <section>
-                <TabStrip scrollable position="left">
-                    <TabStripItemsWrapper orientation="vertical">
-                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-up" className="k-tabstrip-prev"></Button>
-                        <TabStripItems>
-                            <TabStripItem first active value="Active" />
-                            <TabStripItem value="Normal" />
-                            <TabStripItem hover value="Hover" />
-                            <TabStripItem focus value="Focused" />
-                            <TabStripItem value="Closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last disabled value="Disabled" />
-                        </TabStripItems>
-                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-down" className="k-tabstrip-next"></Button>
-                    </TabStripItemsWrapper>
+                <TabStripLeft scrollable>
                     <TabStripContent active>
-                        <div>Scrollable Left orientation</div>
+                        <div>Left scrollable</div>
                     </TabStripContent>
-                </TabStrip>
+                </TabStripLeft>
             </section>
 
             <section>
-                <TabStrip scrollable position="right">
-                    <TabStripItemsWrapper orientation="vertical">
-                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-up" className="k-tabstrip-prev"></Button>
-                        <TabStripItems>
-                            <TabStripItem first active value="Active" />
-                            <TabStripItem value="Normal" />
-                            <TabStripItem hover value="Hover" />
-                            <TabStripItem focus value="Focused" />
-                            <TabStripItem value="Closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last disabled value="Disabled" />
-                        </TabStripItems>
-                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-down" className="k-tabstrip-next"></Button>
-                    </TabStripItemsWrapper>
+                <TabStripRight scrollable>
                     <TabStripContent active>
-                        <div>Scrollable Right orientation</div>
+                        <div>Right scrollable</div>
                     </TabStripContent>
-                </TabStrip>
+                </TabStripRight>
             </section>
         </div>
     </>
