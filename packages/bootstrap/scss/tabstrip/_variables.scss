@@ -1,116 +1,157 @@
-// Tabstrip
+// TabStrip
 
+
+/// The horizontal padding of the TabStrip wrapper.
+/// @group tabstrip
 $kendo-tabstrip-wrapper-padding-x: k-spacing(0) !default;
+/// The vertical padding of the TabStrip wrapper.
+/// @group tabstrip
 $kendo-tabstrip-wrapper-padding-y: k-spacing(0) !default;
+/// The border width around the TabStrip wrapper.
+/// @group tabstrip
 $kendo-tabstrip-wrapper-border-width: 0px !default;
 
+/// The font family of the TabStrip.
+/// @group tabstrip
 $kendo-tabstrip-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the TabStrip.
+/// @group tabstrip
 $kendo-tabstrip-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the TabStrip.
+/// @group tabstrip
 $kendo-tabstrip-line-height: var( --kendo-line-height, normal ) !default;
+/// The border width around the TabStrip.
+/// @group tabstrip
 $kendo-tabstrip-border-width: 1px !default;
 
+/// The background color of the TabStrip wrapper.
+/// @group tabstrip
 $kendo-tabstrip-wrapper-bg: null !default;
+/// The text color of the TabStrip wrapper.
+/// @group tabstrip
 $kendo-tabstrip-wrapper-text: null !default;
+/// The border color of the TabStrip wrapper.
+/// @group tabstrip
 $kendo-tabstrip-wrapper-border: null !default;
 
-/// Background color of tabstrip component
+/// The background color of the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-bg: null !default;
-/// Text color of tabstrip component
+/// The text color of the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-text: $kendo-component-text !default;
-/// Border color of tabstrip component
+/// The border color of the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-border: $kendo-component-border !default;
 
-/// Horizontal padding of tabs
+/// The horizontal padding of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-padding-x: $nav-link-padding-x !default;
-/// Vertical padding of tabs
+/// The vertical padding of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-padding-y: $nav-link-padding-y !default;
-/// Width of border around tabs
+/// The border width around the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border-width: 1px !default;
-/// Border radius of tabs
+/// The border radius of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border-radius: k-spacing(1) !default;
-/// Spacing between tabs
+/// The gap between the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-gap: k-spacing(0) !default;
 
-/// Background color of tabs
+///  The background color of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-bg: null !default;
-/// Text color of tabs
+/// The text color of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-text: $kendo-link-text !default;
-/// Border color of tabs
+/// The border color of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border: null !default;
-/// Background gradient of tabs
+/// The gradient of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-gradient: null !default;
 
-/// Background color of hovered tabs
+/// The background color of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-bg: null !default;
-/// Text color of hovered tabs
+/// The text color of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-text: $kendo-link-hover-text !default;
-/// Border color of hovered tabs
+/// The border color of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-border: $gray-200 !default;
-/// Background gradient of hovered tabs
+/// The gradient of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-gradient: null !default;
 
-/// Background color of selected tabs
+/// The background color of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-bg: $kendo-component-bg !default;
-/// Text color of selected tabs
+/// The text color of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-text: $kendo-component-text !default;
-/// Border color of selected tabs
+/// The border color of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-border: $kendo-component-border !default;
-/// Background gradient of selected tabs
+/// The gradient of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-gradient: null !default;
 
+/// The shadow of the focused TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
+/// The shadow of the dragged TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-dragging-shadow: k-elevation(3) !default;
 
+/// The background color of the disabled TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-disabled-bg: null !default;
+/// The text color of the disabled TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-disabled-text: null !default;
+/// The border color of the disabled TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-disabled-border: null !default;
+/// The gradient of the disabled TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-disabled-gradient: null !default;
+/// The opacity of the disabled TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-disabled-opacity: null !default;
+/// The filter of the disabled TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-disabled-filter: null !default;
 
+/// The border width of the TabStrip indicator.
+/// @group tabstrip
 $kendo-tabstrip-indicator-size: null !default;
+/// The border color of the TabStrip ripple.
+/// @group tabstrip
 $kendo-tabstrip-indicator-color: null !default;
 
-/// Horizontal padding of tabstrip content
+/// The horizontal padding of the TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-padding-x: k-spacing(4) !default;
-/// Vertical padding of tabstrip content
+/// The vertical padding of the TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-padding-y: k-spacing(4) !default;
-/// Width of border around tabstrip content
+/// The border width around the TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-border-width: $kendo-tabstrip-border-width !default;
 
-/// Background color of tabstrip content
+/// The background color of the TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-bg: $kendo-component-bg !default;
-/// Text color of tabstrip content
+/// The text color of the TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-text: $kendo-component-text !default;
-/// Border color of tabstrip content
+/// The border color of the TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-border: $kendo-component-border !default;
-/// Border color of tabstrip focused content
+/// The border color of the focused TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-focus-border: $kendo-component-text !default;
