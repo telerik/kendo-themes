@@ -130,7 +130,7 @@ export * from './editor/index';
 
 // Scheduling
 export * from './gantt/index';
-// export * from './scheduler/index';
+export * from './scheduler/index';
 
 // Tables
 export * from './table/index';
