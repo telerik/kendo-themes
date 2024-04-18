@@ -3,7 +3,7 @@ import { CalendarCell, CalendarTable } from "../..";
 import { CalendarTableRow } from "../..";
 
 export const MultiViewCalendarCentury = ({ showOtherCentury, ...props }: any) => (
-    <MultiViewCalendar calendarView="century" calendarHeaderText="1900 - 2099"
+    <MultiViewCalendar calendarView="century" calendarTitleText="1900 - 2099"
         children={
             <>
                 <CalendarTable>

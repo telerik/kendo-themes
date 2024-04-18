@@ -60,7 +60,7 @@ export default () =>(
                 <div>infinite calendar empty cells</div>
                 <CalendarInfiniteYear
                     id="empty-cells"
-                    calendarHeaderText="2018"
+                    calendarTitleText="2018"
                     showWeekdays={false}
                     navigationItems={[ '2018', '2019' ]}
                     children={

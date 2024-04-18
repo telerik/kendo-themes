@@ -33,7 +33,7 @@ export type KendoCalendarInfiniteProps = {
     _navigationData?: JSX.Element;
     showNavigation?: boolean;
     calendarView?: KendoCalendarInfiniteViewProps['calendarView'];
-    calendarHeaderText?: KendoCalendarInfiniteViewProps['headerText'];
+    calendarTitleText?: KendoCalendarInfiniteViewProps['headerText'];
     showWeekdays?: KendoCalendarInfiniteViewProps['showWeekdays'];
     showWeekNumbers?: KendoCalendarInfiniteViewProps['showWeekNumbers'];
     showNavigationButtons?: KendoCalendarInfiniteViewProps['showNavigationButtons'];
@@ -57,7 +57,7 @@ export const CalendarInfinite = (
     const {
         showNavigation = defaultProps.showNavigation,
         calendarView = defaultProps.calendarView,
-        calendarHeaderText,
+        calendarTitleText,
         showWeekdays,
         showWeekNumbers,
         showNavigationButtons,
@@ -84,7 +84,7 @@ export const CalendarInfinite = (
             }
             <CalendarInfiniteView
                 calendarView={calendarView}
-                headerText={calendarHeaderText}
+                headerText={calendarTitleText}
                 showWeekdays={showWeekdays}
                 showWeekNumbers={showWeekNumbers}
                 showNavigationButtons={showNavigationButtons}

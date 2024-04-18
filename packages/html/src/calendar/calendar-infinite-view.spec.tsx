@@ -51,7 +51,7 @@ export const CalendarInfiniteView = (
             )}>
             <CalendarHeader
                 showNavigationButtons={showNavigationButtons}
-                calendarHeaderText={headerText}
+                calendarTitleText={headerText}
                 orientation="horizontal"
             />
             {showWeekdays &&
