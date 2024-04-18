@@ -16,7 +16,7 @@ export type KendoCalendarOptions = {
 export type KendoCalendarProps = KendoCalendarOptions & {
     orientation?: 'vertical' | 'horizontal';
     calendarView?: 'month' | 'year' | 'decade' | 'century';
-    calendarHeaderText?: string;
+    calendarTitleText?: string;
     showTableHead?: boolean;
     showWeek?: boolean;
     showCalendarHeader?: boolean;
@@ -30,7 +30,7 @@ const defaultProps = {
     showCalendarHeader: true,
     orientation: 'horizontal',
     calendarView: 'month',
-    calendarHeaderText: 'October 2021',
+    calendarTitleText: 'October 2021',
 } as const;
 
 export const Calendar = (
@@ -41,7 +41,7 @@ export const Calendar = (
         size = defaultProps.size,
         orientation = defaultProps.orientation,
         calendarView = defaultProps.calendarView,
-        calendarHeaderText = defaultProps.calendarHeaderText,
+        calendarTitleText = defaultProps.calendarTitleText,
         showWeek,
         showCalendarHeader,
         showCalendarFooter,
@@ -66,8 +66,9 @@ export const Calendar = (
             )}>
             {showCalendarHeader &&
                 <CalendarHeader
+                    calendarView={calendarView}
                     showToday={showCalendarFooter ? false : true}
-                    calendarHeaderText={calendarHeaderText}
+                    calendarTitleText={calendarTitleText}
                     orientation={orientation}
                     size={size}
                     dir={dir}

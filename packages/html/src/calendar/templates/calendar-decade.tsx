@@ -1,7 +1,7 @@
 import { Calendar, CalendarTableRow, CalendarCell, CalendarTable } from "..";
 
 export const CalendarDecade = ({ showOtherDecade, ...props }: any) => (
-    <Calendar calendarView="decade" calendarHeaderText="2020 - 2029"
+    <Calendar calendarView="decade" calendarTitleText="2020 - 2029"
         children={
             <CalendarTable>
                 <CalendarTableRow>

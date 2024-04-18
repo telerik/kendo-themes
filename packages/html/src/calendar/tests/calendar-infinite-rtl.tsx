@@ -61,7 +61,7 @@ export default () =>(
                 <CalendarInfiniteYear
                     dir="rtl"
                     id="empty-cells"
-                    calendarHeaderText="2018"
+                    calendarTitleText="2018"
                     showWeekdays={false}
                     navigationItems={[ '2018', '2019' ]}
                     children={

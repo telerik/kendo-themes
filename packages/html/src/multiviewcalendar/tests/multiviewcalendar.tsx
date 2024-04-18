@@ -12,7 +12,7 @@ export default () => (
 
             <section>
                 <span>Month View with Week Numbers</span>
-                <MultiViewCalendarWithWeeks calendarHeaderText="October 2021 - November 2021"/>
+                <MultiViewCalendarWithWeeks calendarTitleText="October 2021 - November 2021"/>
             </section>
 
             <section>

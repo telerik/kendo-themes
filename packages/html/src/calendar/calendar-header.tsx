@@ -8,7 +8,8 @@ const options = {
 };
 
 export type KendoCalendarHeaderProps = {
-    calendarHeaderText?: string;
+    calendarView?: 'month' | 'year' | 'decade' | 'century';
+    calendarTitleText?: string;
     showToday?: boolean;
     showNavigationButtons?: boolean;
     size?: (typeof options.size)[number] | null;
@@ -17,7 +18,7 @@ export type KendoCalendarHeaderProps = {
 };
 
 const defaultProps = {
-    calendarHeaderText: 'October 2021',
+    calendarTitleText: 'October 2021',
     showToday: true,
     showNavigationButtons: true,
     orientation: 'horizontal',
@@ -29,11 +30,12 @@ export const CalendarHeader = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        calendarHeaderText = defaultProps.calendarHeaderText,
+        calendarTitleText = defaultProps.calendarTitleText,
         showToday = defaultProps.showToday,
         showNavigationButtons = defaultProps.showNavigationButtons,
         orientation = defaultProps.orientation,
         size = defaultProps.size,
+        calendarView,
         dir,
         ...other
     } = props;
@@ -51,7 +53,7 @@ export const CalendarHeader = (
                     'k-vstack': orientation === 'vertical',
                 }
             )}>
-            <Button className="k-calendar-title" text={calendarHeaderText} size={size} fillMode="flat" themeColor="primary"></Button>
+            <Button disabled={calendarView === "century"} className="k-calendar-title" text={calendarTitleText} size={size} fillMode="flat" themeColor="primary"></Button>
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
                 {showNavigationButtons && <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat"></Button>}

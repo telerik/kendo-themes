@@ -1,7 +1,7 @@
 import { Calendar, CalendarCell, CalendarTable, CalendarTableRow } from "..";
 
 export const CalendarYear = (props: any) => (
-    <Calendar calendarView="year" calendarHeaderText="2019"
+    <Calendar calendarView="year" calendarTitleText="2019"
         children={
             <CalendarTable>
                 <CalendarTableRow>
