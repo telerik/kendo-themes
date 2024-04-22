@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-classic",
   "description": "Sass port of less based themes for Kendo UI theme",
-  "version": "8.0.0-dev.5",
+  "version": "8.0.0-dev.6",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -53,9 +53,9 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "2.3.0",
-    "@progress/kendo-theme-core": "8.0.0-dev.5",
-    "@progress/kendo-theme-default": "8.0.0-dev.5",
-    "@progress/kendo-theme-utils": "8.0.0-dev.5"
+    "@progress/kendo-theme-core": "8.0.0-dev.6",
+    "@progress/kendo-theme-default": "8.0.0-dev.6",
+    "@progress/kendo-theme-utils": "8.0.0-dev.6"
   },
   "directories": {
     "doc": "docs",
