@@ -125,10 +125,10 @@ $kendo-code-border: $kendo-component-border !default;
 
 
 // Display
-$kendo-display1-font-size: calc( var( --kendo-font-size, inherit) * 9.5 ) !default;
-$kendo-display2-font-size: calc( var( --kendo-font-size, inherit) * 8.75 ) !default;
-$kendo-display3-font-size: calc( var( --kendo-font-size, inherit) * 8 ) !default;
-$kendo-display4-font-size: calc( var( --kendo-font-size, inherit) * 7.25 ) !default;
+$kendo-display1-font-size: calc( var( --kendo-font-size, .875rem ) * 9.5 ) !default;
+$kendo-display2-font-size: calc( var( --kendo-font-size, .875rem ) * 8.75 ) !default;
+$kendo-display3-font-size: calc( var( --kendo-font-size, .875rem ) * 8 ) !default;
+$kendo-display4-font-size: calc( var( --kendo-font-size, .875rem ) * 7.25 ) !default;
 
 $kendo-display1-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-display2-font-family: var( --kendo-font-family, inherit ) !default;

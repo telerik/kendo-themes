@@ -2,11 +2,11 @@
 
 
 // Headings
-$kendo-h1-font-size: calc( var( --kendo-font-size, inherit ) * 4 ) !default;
-$kendo-h2-font-size: calc( var( --kendo-font-size, inherit ) * 3 ) !default;
-$kendo-h3-font-size: calc( var( --kendo-font-size, inherit ) * 2.5 ) !default;
-$kendo-h4-font-size: calc( var( --kendo-font-size, inherit ) * 2 ) !default;
-$kendo-h5-font-size: calc( var( --kendo-font-size, inherit ) * 1.5 ) !default;
+$kendo-h1-font-size: calc( var( --kendo-font-size, .875rem ) * 4 ) !default;
+$kendo-h2-font-size: calc( var( --kendo-font-size, .875rem ) * 3 ) !default;
+$kendo-h3-font-size: calc( var( --kendo-font-size, .875rem ) * 2.5 ) !default;
+$kendo-h4-font-size: calc( var( --kendo-font-size, .875rem ) * 2 ) !default;
+$kendo-h5-font-size: calc( var( --kendo-font-size, .875rem ) * 1.5 ) !default;
 $kendo-h6-font-size: var( --kendo-font-size, inherit ) !default;
 
 $kendo-h1-font-family: var( --kendo-font-family, inherit ) !default;
@@ -125,10 +125,10 @@ $kendo-code-border: $kendo-component-border !default;
 
 
 // Display
-$kendo-display1-font-size: calc( var( --kendo-font-size, inherit ) * 8) !default;
-$kendo-display2-font-size: calc( var( --kendo-font-size, inherit ) * 7) !default;
-$kendo-display3-font-size: calc( var( --kendo-font-size, inherit ) * 6) !default;
-$kendo-display4-font-size: calc( var( --kendo-font-size, inherit ) * 5) !default;
+$kendo-display1-font-size: calc( var( --kendo-font-size, .875rem ) * 8) !default;
+$kendo-display2-font-size: calc( var( --kendo-font-size, .875rem ) * 7) !default;
+$kendo-display3-font-size: calc( var( --kendo-font-size, .875rem ) * 6) !default;
+$kendo-display4-font-size: calc( var( --kendo-font-size, .875rem ) * 5) !default;
 
 $kendo-display1-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-display2-font-family: var( --kendo-font-family, inherit ) !default;
