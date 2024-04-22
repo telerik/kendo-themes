@@ -1,7 +1,7 @@
 import { CalendarCaptionCell, CalendarCell, CalendarInfinite, CalendarTableRow, CalendarTbody } from '../index';
 
 export const CalendarInfiniteCentury = ({ firstCaption = "2000 - 2099", ...other }: any) => (
-    <CalendarInfinite calendarView="century" showWeekdays={false} calendarHeaderText="2000 - 2099"
+    <CalendarInfinite calendarView="century" showWeekdays={false} calendarTitleText="2000 - 2099"
         navigationItems={[ '1900', '2000' ]}
         navigationMarkerConfig={{ '2000': 'marker' }}
         children={

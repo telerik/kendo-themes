@@ -1,5 +1,5 @@
 import { classNames, optionClassNames, Size } from '../misc';
-import { CalendarView, CalendarHeader, CalendarFooter, CalendarTableHead } from '.';
+import { CalendarView, CalendarHeader, CalendarFooter } from '.';
 
 const CALENDAR_CLASSNAME = `k-calendar`;
 
@@ -16,21 +16,21 @@ export type KendoCalendarOptions = {
 export type KendoCalendarProps = KendoCalendarOptions & {
     orientation?: 'vertical' | 'horizontal';
     calendarView?: 'month' | 'year' | 'decade' | 'century';
-    calendarHeaderText?: string;
-    viewsCount?: number;
+    calendarTitleText?: string;
     showTableHead?: boolean;
-    calendarCaption?: string;
     showWeek?: boolean;
+    showCalendarHeader?: boolean;
     showCalendarFooter?: boolean;
+    calendarFooterText?: string;
     dir?: 'ltr' | 'rtl';
 };
 
 const defaultProps = {
     size: Size.medium,
-    viewsCount: 1,
+    showCalendarHeader: true,
     orientation: 'horizontal',
     calendarView: 'month',
-    calendarHeaderText: 'October 2021',
+    calendarTitleText: 'October 2021',
 } as const;
 
 export const Calendar = (
@@ -41,12 +41,11 @@ export const Calendar = (
         size = defaultProps.size,
         orientation = defaultProps.orientation,
         calendarView = defaultProps.calendarView,
-        calendarHeaderText = defaultProps.calendarHeaderText,
-        viewsCount = defaultProps.viewsCount,
-        calendarCaption,
+        calendarTitleText = defaultProps.calendarTitleText,
         showWeek,
+        showCalendarHeader,
         showCalendarFooter,
-        showTableHead,
+        calendarFooterText,
         dir,
         ...other
     } = props;
@@ -65,31 +64,25 @@ export const Calendar = (
                     'k-week-number': showWeek,
                 }
             )}>
-            <CalendarHeader
-                showToday={showCalendarFooter ? false : true}
-                calendarHeaderText={calendarHeaderText}
-                orientation={orientation}
-                size={size}
-                dir={dir}
-            />
+            {showCalendarHeader &&
+                <CalendarHeader
+                    calendarView={calendarView}
+                    showToday={showCalendarFooter ? false : true}
+                    calendarTitleText={calendarTitleText}
+                    orientation={orientation}
+                    size={size}
+                    dir={dir}
+                />
+            }
 
             <CalendarView
                 calendarView={calendarView}
-                viewsCount={viewsCount}
                 orientation={orientation}
             >
-                {calendarCaption &&
-                    <caption className="k-calendar-caption">{calendarCaption}</caption>
-                }
-                {showTableHead &&
-                    <CalendarTableHead showWeek={showWeek} />
-                }
-                <tbody className="k-calendar-tbody">
-                    {props.children}
-                </tbody>
+                {props.children}
             </CalendarView>
 
-            {showCalendarFooter && <CalendarFooter />}
+            {showCalendarFooter && <CalendarFooter calendarFooterText={calendarFooterText} size={size}/>}
         </div>
     );
 };

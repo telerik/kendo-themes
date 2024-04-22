@@ -1,3 +1,4 @@
+import { Button, TabStripItems, TabStripItemsWrapper } from '..';
 import { classNames } from '../misc';
 
 export const TABSTRIP_CLASSNAME = `k-tabstrip`;
@@ -8,8 +9,10 @@ const options = {};
 
 export type KendoTabStripProps = {
     position?: "top" | "bottom" | "left" | "right";
+    tabStripItems?: JSX.Element | JSX.Element[];
     scrollable?: boolean;
     header?: boolean | null;
+    dir?: "rtl" | "ltr";
 };
 
 const defaultProps = {
@@ -24,13 +27,30 @@ export const TabStrip = (
     const {
         scrollable,
         children,
+        tabStripItems,
         position = defaultProps.position,
         header,
+        dir,
         ...other
     } = props;
 
+    const caretMap = {
+        top: { prev: dir !== "rtl" ? "left" : "right", next: dir !== "rtl" ? "right" : "left" },
+        bottom: { prev: dir !== "rtl" ? "left" : "right", next: dir !== "rtl" ? "right" : "left" },
+        right: { prev: "up", next: "down" },
+        left: { prev: "up", next: "down" },
+    };
+
+    const orientationMap = {
+        top: 'horizontal',
+        bottom: 'horizontal',
+        left: 'vertical',
+        right: 'vertical'
+    };
+
     return (
         <div
+            dir={dir}
             {...other}
             className={classNames(
                 TABSTRIP_CLASSNAME,
@@ -41,7 +61,15 @@ export const TabStrip = (
                     ["k-header"]: header,
                 },
             )}>
-            {children}
+            {position === "bottom" && children}
+            <TabStripItemsWrapper orientation={orientationMap[position]}>
+                {scrollable && <Button fillMode="flat" rounded={null} size={null} icon={`caret-alt-${caretMap[position]["prev"]}`} className="k-tabstrip-prev"></Button>}
+                <TabStripItems>
+                    {tabStripItems}
+                </TabStripItems>
+                {scrollable && <Button fillMode="flat" rounded={null} size={null} icon={`caret-alt-${caretMap[position]["next"]}`} className="k-tabstrip-next"></Button>}
+            </TabStripItemsWrapper>
+            {position !== "bottom" && children}
         </div>
     );
 };

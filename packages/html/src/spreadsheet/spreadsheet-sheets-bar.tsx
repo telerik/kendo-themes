@@ -1,4 +1,4 @@
-import { Button, MenuButton, SpreadsheetTabStrip, TabStripItem, TabStripItems, TabStripItemsWrapper } from '..';
+import { Button, MenuButton, SpreadsheetTabStrip, TabStripItem } from '..';
 import { classNames } from '../misc';
 
 export const SPREADSHEETSHEETSBAR_CLASSNAME = `k-spreadsheet-sheets-bar`;
@@ -56,16 +56,7 @@ export const SpreadsheetSheetsBar = (
             )}>
             <Button className="k-spreadsheet-sheet-add" fillMode="flat" icon="plus" />
             <Button className="k-spreadsheet-sheets-menu" fillMode="flat" icon="menu" />
-
-            <SpreadsheetTabStrip>
-                <TabStripItemsWrapper orientation="vertical">
-                    <TabStripItems>
-                        {tabStripItems}
-                    </TabStripItems>
-                    <Button className="k-tabstrip-prev" fillMode="flat" icon="caret-alt-left" rounded={null} size={null} />
-                    <Button className="k-tabstrip-next" fillMode="flat" icon="caret-alt-right" rounded={null} size={null} />
-                </TabStripItemsWrapper>
-            </SpreadsheetTabStrip>
+            <SpreadsheetTabStrip tabStripItems={tabStripItems}/>
         </div>
     );
 };

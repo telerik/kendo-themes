@@ -14,9 +14,8 @@ export type KendoMultiViewCalendarOptions = {
 };
 
 export type KendoMultiViewCalendarProps = KendoMultiViewCalendarOptions & {
-    calendarHeaderText?: string;
+    calendarTitleText?: string;
     calendarView?: 'month' | 'year' | 'decade' | 'century';
-    viewsCount?: number;
     orientation?: 'horizontal' | 'vertical';
     showCalendarFooter?: boolean;
     calendarCaption?: string;
@@ -27,8 +26,7 @@ export type KendoMultiViewCalendarProps = KendoMultiViewCalendarOptions & {
 
 const defaultProps = {
     size: Size.medium,
-    calendarHeaderText: 'October 2021 - November 2021',
-    viewsCount: 2,
+    calendarTitleText: 'October 2021 - November 2021',
     orientation: 'horizontal',
     calendarView: 'month'
 } as const;
@@ -41,8 +39,7 @@ export const MultiViewCalendar = (
         size = defaultProps.size,
         orientation = defaultProps.orientation,
         calendarView = defaultProps.calendarView,
-        calendarHeaderText = defaultProps.calendarHeaderText,
-        viewsCount = defaultProps.viewsCount,
+        calendarTitleText = defaultProps.calendarTitleText,
         showCalendarFooter,
         showWeek,
         dir,
@@ -57,9 +54,8 @@ export const MultiViewCalendar = (
                 MULTIVIEWCALENDAR_CLASSNAME,
             )}
             size={size}
-            calendarHeaderText={calendarHeaderText}
+            calendarTitleText={calendarTitleText}
             calendarView={calendarView}
-            viewsCount={viewsCount}
             orientation={orientation}
             showCalendarFooter={showCalendarFooter}
             showWeek={showWeek}

@@ -1,7 +1,7 @@
 import { CalendarCaptionCell, CalendarCell, CalendarInfinite, CalendarTableRow, CalendarTbody } from '../index';
 
 export const CalendarInfiniteYear = ({ firstCaption = "2021", secondCaption = "2022", ...other }: any) => (
-    <CalendarInfinite calendarView="year" showWeekdays={false} calendarHeaderText="2021"
+    <CalendarInfinite calendarView="year" showWeekdays={false} calendarTitleText="2021"
         navigationItems={[
             '2016', '2017', '2018', '2019', '2020', '2021','2022',
             '2023', '2024','2025', '2026', '2027', '2028', '2029',

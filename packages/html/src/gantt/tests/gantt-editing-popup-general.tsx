@@ -5,7 +5,7 @@ import { DateTimePicker } from '../../datetimepicker';
 import { NumericTextbox } from '../../numerictextbox';
 import { DropdownList } from '../../dropdownlist';
 import { FormNormal, FormField } from '../../form';
-import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../..';
+import { TabStripNormal, TabStripContent, TabStripItem } from '../..';
 
 
 const styles = `
@@ -29,15 +29,16 @@ export default () =>(
                         <Button icon="trash" fillMode="flat" themeColor="primary">Delete</Button>
                     </>
                 }>
-                    <TabStrip header={false}>
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false}
+                        tabStripItems={
+                            <>
                                 <TabStripItem first active value="General" />
                                 <TabStripItem value="Resources" />
                                 <TabStripItem value="Predecessors" />
                                 <TabStripItem last value="Successors" />
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={2}>
                                 <FormField
@@ -79,7 +80,7 @@ export default () =>(
                                 />
                             </FormNormal>
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </WindowNormal>
             </section>
         </div>

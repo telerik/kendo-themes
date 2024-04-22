@@ -1,5 +1,6 @@
-import { KendoTabStripProps, TabStrip } from '../tabstrip';
+import { KendoTabStripProps, TABSTRIP_CLASSNAME, TabStripItems, TabStripItemsWrapper } from '../tabstrip';
 import { classNames } from '../misc';
+import { Button } from '../button';
 
 export const SPREADSHEETTABSTRIP_CLASSNAME = `k-spreadsheet-sheets`;
 
@@ -15,22 +16,30 @@ export const SpreadsheetTabStrip = (
 ) => {
     const {
         children,
+        tabStripItems,
         ...other
     } = props;
 
     return (
-        <TabStrip
+        <div
             {...other}
-            scrollable
-            position="bottom"
-            header={null}
             className={classNames(
                 props.className,
+                TABSTRIP_CLASSNAME,
                 SPREADSHEETTABSTRIP_CLASSNAME,
+                "k-tabstrip-bottom",
+                "k-tabstrip-scrollable",
             )}
         >
             {children}
-        </TabStrip>
+            <TabStripItemsWrapper orientation="vertical">
+                <TabStripItems>
+                    {tabStripItems}
+                </TabStripItems>
+                <Button className="k-tabstrip-prev" fillMode="flat" icon="caret-alt-left" rounded={null} size={null} />
+                <Button className="k-tabstrip-next" fillMode="flat" icon="caret-alt-right" rounded={null} size={null} />
+            </TabStripItemsWrapper>
+        </div>
     );
 };
 

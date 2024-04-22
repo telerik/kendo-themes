@@ -1,16 +1,13 @@
 import { classNames } from '../misc';
-import { CalendarTable } from './calendar-table';
 
 const className = `k-calendar-view`;
 
 export type KendoCalendarViewProps = {
     orientation?: 'vertical' | 'horizontal',
     calendarView?: 'month' | 'year' | 'decade' | 'century';
-    viewsCount?: number;
 };
 
 const defaultProps = {
-    viewsCount: 1,
     orientation: 'horizontal',
     calendarView: 'month'
 } as const;
@@ -22,7 +19,6 @@ export const CalendarView = (
     const {
         orientation = defaultProps.orientation,
         calendarView = defaultProps.calendarView,
-        viewsCount = defaultProps.viewsCount,
         ...other
     } = props;
 
@@ -40,12 +36,7 @@ export const CalendarView = (
                     'k-vstack': orientation === 'vertical',
                 }
             )}>
-
-            {[ ...Array(viewsCount) ].map((_e, i) =>
-                <CalendarTable key={i}>
-                    {props.children}
-                </CalendarTable>
-            )}
+            {props.children}
         </div>
     );
 };

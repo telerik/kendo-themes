@@ -14,7 +14,7 @@ export default () => (
                             'de jul.', "d’ag.", 'de set.', "d’oct.", 'de nov.',
                             'de des.', '2020', 'de febr.', 'de març', "d’abr."
                         ]}
-                    calendarHeaderText="d’abril 2018"
+                    calendarTitleText="d’abril 2018"
                     calendarWeekdays={[ 'DG.', 'DL.', 'DT.', 'DC.', 'DJ.', 'DV.', 'DS.' ]}
                     firstCaption="d’abril 2018"
                     secondCaption="de maig 2018"

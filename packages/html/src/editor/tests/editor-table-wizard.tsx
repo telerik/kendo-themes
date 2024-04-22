@@ -1,4 +1,4 @@
-import { Popup, TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../..';
+import { Popup, TabStripNormal, TabStripContent, TabStripItem } from '../..';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
@@ -37,13 +37,14 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <TabStrip header={false}>
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false}
+                        tabStripItems={
+                            <>
                                 <TabStripItem first active value="General"/>
                                 <TabStripItem last value="Advanced"/>
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={4}>
                                 <FormField
@@ -127,7 +128,7 @@ export default () =>(
                                 />
                             </FormNormal>
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </WindowNormal>
             </section>
             <section>
@@ -137,13 +138,14 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <TabStrip header={false}>
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false}
+                        tabStripItems={
+                            <>
                                 <TabStripItem first value="General"/>
                                 <TabStripItem last active value="Advanced"/>
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <FormNormal formButtons={null} tag="div" layout="grid">
                                 <FormField label="ID" optional editor={ <Textbox /> } />
@@ -184,7 +186,7 @@ export default () =>(
                                 </Fieldset>
                             </FormNormal>
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </WindowNormal>
             </section>
 

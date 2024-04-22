@@ -19,7 +19,6 @@ const defaultProps = {
     buttons: (
         <>
             <span className="k-wizard-buttons-left">
-                <Button>Reset</Button>
                 <span className="k-wizard-pager">Step 2 of 3</span>
             </span>
             <span className="k-wizard-buttons-right">

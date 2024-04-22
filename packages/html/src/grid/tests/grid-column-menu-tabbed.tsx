@@ -4,6 +4,7 @@ import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Popup } from '../../popup';
 import { ColumnMenuTabbed, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuMultiCheck, FilterMenuNormal, ColumnMenuMulticheckItem, ColumnMenuMulticheckWrap } from '../../column-menu';
+import { TabStripContent, TabStripItem, TabStripNormal } from '../..';
 
 const styles = `
     .k-animation-container,
@@ -29,30 +30,19 @@ export default () =>(
             <section>
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuTabbed>
-                        <div className="k-tabstrip k-tabstrip-top k-overflow-hidden">
-                            <div className="k-tabstrip-items-wrapper k-hstack">
-                                <ul className="k-reset k-tabstrip-items">
-                                    <li className="k-item k-active">
-                                        <span className="k-link">
-                                            <Icon icon="filter" />
-                                        </span>
-                                    </li>
-                                    <li className="k-item">
-                                        <span className="k-link">
-                                            <Icon icon="sliders" />
-                                        </span>
-                                    </li>
-                                    <li className="k-item">
-                                        <span className="k-link">
-                                            <Icon icon="columns" />
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="k-tabstrip-content k-active">
+                        <TabStripNormal header={false} className="k-overflow-hidden"
+                            tabStripItems={
+                                <>
+                                    <TabStripItem active value={<Icon icon="filter" />} />
+                                    <TabStripItem value={<Icon icon="sliders" />} />
+                                    <TabStripItem value={<Icon icon="columns" />} />
+                                </>
+                            }
+                        >
+                            <TabStripContent active>
                                 <FilterMenuNormal />
-                            </div>
-                        </div>
+                            </TabStripContent>
+                        </TabStripNormal>
                     </ColumnMenuTabbed>
                 </Popup>
             </section>
@@ -60,27 +50,16 @@ export default () =>(
             <section>
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuTabbed>
-                        <div className="k-tabstrip k-tabstrip-top k-overflow-hidden">
-                            <div className="k-tabstrip-items-wrapper k-hstack">
-                                <ul className="k-reset k-tabstrip-items">
-                                    <li className="k-item">
-                                        <span className="k-link">
-                                            <Icon icon="filter" />
-                                        </span>
-                                    </li>
-                                    <li className="k-item k-active">
-                                        <span className="k-link">
-                                            <Icon icon="sliders" />
-                                        </span>
-                                    </li>
-                                    <li className="k-item">
-                                        <span className="k-link">
-                                            <Icon icon="columns" />
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="k-tabstrip-content k-active">
+                        <TabStripNormal header={false} className="k-overflow-hidden"
+                            tabStripItems={
+                                <>
+                                    <TabStripItem value={<Icon icon="filter" />} />
+                                    <TabStripItem active value={<Icon icon="sliders" />} />
+                                    <TabStripItem value={<Icon icon="columns" />} />
+                                </>
+                            }
+                        >
+                            <TabStripContent active>
                                 <ColumnMenuItemWrapper>
                                     <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
                                     <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
@@ -95,8 +74,8 @@ export default () =>(
                                 <ColumnMenuItemWrapper>
                                     <ColumnMenuExpander itemText="Set column position" itemIcon="set-column-position" />
                                 </ColumnMenuItemWrapper>
-                            </div>
-                        </div>
+                            </TabStripContent>
+                        </TabStripNormal>
                     </ColumnMenuTabbed>
                 </Popup>
             </section>
@@ -104,27 +83,16 @@ export default () =>(
             <section>
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuTabbed>
-                        <div className="k-tabstrip k-tabstrip-top k-overflow-hidden">
-                            <div className="k-tabstrip-items-wrapper k-hstack">
-                                <ul className="k-reset k-tabstrip-items">
-                                    <li className="k-item">
-                                        <span className="k-link">
-                                            <Icon icon="filter" />
-                                        </span>
-                                    </li>
-                                    <li className="k-item">
-                                        <span className="k-link">
-                                            <Icon icon="sliders" />
-                                        </span>
-                                    </li>
-                                    <li className="k-item k-active">
-                                        <span className="k-link">
-                                            <Icon icon="columns" />
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="k-tabstrip-content k-active">
+                        <TabStripNormal header={false} className="k-overflow-hidden"
+                            tabStripItems={
+                                <>
+                                    <TabStripItem value={<Icon icon="filter" />} />
+                                    <TabStripItem value={<Icon icon="sliders" />} />
+                                    <TabStripItem active value={<Icon icon="columns" />} />
+                                </>
+                            }
+                        >
+                            <TabStripContent active>
                                 <FilterMenuMultiCheck>
                                     <Searchbox placeholder="Search..." />
                                     <ColumnMenuMulticheckWrap>
@@ -149,8 +117,8 @@ export default () =>(
                                         <Button>Clear</Button>
                                     </ActionButtons>
                                 </FilterMenuMultiCheck>
-                            </div>
-                        </div>
+                            </TabStripContent>
+                        </TabStripNormal>
                     </ColumnMenuTabbed>
                 </Popup>
             </section>
@@ -162,25 +130,18 @@ export default () =>(
             <section>
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuTabbed>
-                        <div className="k-tabstrip k-tabstrip-top k-overflow-hidden">
-                            <div className="k-tabstrip-items-wrapper k-hstack">
-                                <ul className="k-reset k-tabstrip-items">
-                                    <li className="k-item k-active">
-                                        <span className="k-link">
-                                            <Icon icon="filter" />
-                                        </span>
-                                    </li>
-                                    <li className="k-item">
-                                        <span className="k-link">
-                                            <Icon icon="sliders" />
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="k-tabstrip-content k-active">
+                        <TabStripNormal header={false} className="k-overflow-hidden"
+                            tabStripItems={
+                                <>
+                                    <TabStripItem active value={<Icon icon="filter" />} />
+                                    <TabStripItem value={<Icon icon="sliders" />} />
+                                </>
+                            }
+                        >
+                            <TabStripContent active>
                                 <FilterMenuNormal />
-                            </div>
-                        </div>
+                            </TabStripContent>
+                        </TabStripNormal>
                     </ColumnMenuTabbed>
                 </Popup>
             </section>
@@ -188,20 +149,17 @@ export default () =>(
             <section>
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuTabbed>
-                        <div className="k-tabstrip k-pos-relative k-tabstrip-top">
-                            <div className="k-tabstrip-items-wrapper k-hstack">
-                                <ul className="k-reset k-tabstrip-items">
-                                    <li className="k-item k-active">
-                                        <span className="k-link">
-                                            <Icon icon="filter" />
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="k-tabstrip-content k-active">
+                        <TabStripNormal header={false} className="k-pos-relative"
+                            tabStripItems={
+                                <>
+                                    <TabStripItem active value={<Icon icon="filter" />} />
+                                </>
+                            }
+                        >
+                            <TabStripContent active>
                                 <FilterMenuNormal />
-                            </div>
-                        </div>
+                            </TabStripContent>
+                        </TabStripNormal>
                     </ColumnMenuTabbed>
                 </Popup>
             </section>

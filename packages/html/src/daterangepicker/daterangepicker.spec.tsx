@@ -27,6 +27,8 @@ export type KendoDateRangePickerOptions = {
 };
 
 export type KendoDateRangePickerProps = KendoDateRangePickerOptions & {
+    valueFirst?: string;
+    valueSecond?: string;
     swapButton?: boolean;
     opened?: boolean;
     adaptive?: boolean;
@@ -46,6 +48,8 @@ export const DateRangePicker = (
         rounded,
         fillMode,
         disabled,
+        valueFirst,
+        valueSecond,
         swapButton,
         opened,
         adaptive,
@@ -68,6 +72,7 @@ export const DateRangePicker = (
             >
                 <FloatingLabel label="Start">
                     <DateInput
+                        value={valueFirst}
                         showSpinButton={false}
                         size={size}
                         rounded={rounded}
@@ -85,6 +90,7 @@ export const DateRangePicker = (
                 )}
                 <FloatingLabel label="End">
                     <DateInput
+                        value={valueSecond}
                         showSpinButton={false}
                         size={size}
                         rounded={rounded}
@@ -105,7 +111,7 @@ export const DateRangePicker = (
                         subTitle="DD / MM / YY">
                     </ActionSheetHeader>
                     <div className="k-scrollable-wrap">
-                        <MultiViewCalendarNormal size="large" orientation="vertical" calendarCaption="October 2021" />
+                        <MultiViewCalendarNormal size="large" orientation="vertical" showCaptions />
                     </div>
                 </ActionSheet>
             }

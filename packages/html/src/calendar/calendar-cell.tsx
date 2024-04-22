@@ -19,6 +19,7 @@ export type KendoCalendarCellProps = {
     rangeMid?: boolean;
     rangeEnd?: boolean;
     empty?: boolean;
+    dayIndicator?: boolean;
 };
 
 export type KendoCalendarCellState = { [K in (typeof states)[number]]?: boolean };
@@ -38,6 +39,7 @@ export const CalendarCell = (
         rangeStart,
         rangeMid,
         rangeEnd,
+        dayIndicator,
         empty,
         hover,
         focus,
@@ -93,7 +95,10 @@ export const CalendarCell = (
         <td {...other} className={classNames(calendarCellClasses)}>
             {empty && !showOtherMonth
                 ? <>&nbsp;</>
-                : <span className="k-link">{text}</span>
+                : <span className="k-link">
+                    {text}
+                    {dayIndicator && <span className="k-day-indicator"></span>}
+                </span>
             }
         </td>
     );

@@ -1,7 +1,5 @@
+import { CalendarInfiniteTable, CalendarTableHead, CalendarHeader } from '.';
 import { classNames } from '../misc';
-import CalendarHeader from './calendar-header';
-import { CalendarTable } from './calendar-table';
-import CalendarTableHead from './calendar-table-head';
 
 const className = `k-calendar-view`;
 
@@ -53,11 +51,11 @@ export const CalendarInfiniteView = (
             )}>
             <CalendarHeader
                 showNavigationButtons={showNavigationButtons}
-                calendarHeaderText={headerText}
+                calendarTitleText={headerText}
                 orientation="horizontal"
             />
             {showWeekdays &&
-            <CalendarTable className="k-calendar-weekdays" >
+            <CalendarInfiniteTable className="k-calendar-weekdays" >
                 <colgroup>
                     <col />
                     <col />
@@ -68,12 +66,12 @@ export const CalendarInfiniteView = (
                     <col />
                 </colgroup>
                 <CalendarTableHead cellsText={weekdayCellsText} showWeek={showWeekNumbers} />
-            </CalendarTable>
+            </CalendarInfiniteTable>
             }
             <div className="k-content k-scrollable">
-                <CalendarTable>
+                <CalendarInfiniteTable>
                     {props.children}
-                </CalendarTable>
+                </CalendarInfiniteTable>
                 <div className="k-scrollable-placeholder" style={{ height: "1000px" }}></div>
             </div>
         </div>

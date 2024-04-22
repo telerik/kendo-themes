@@ -48,11 +48,11 @@ export const ColorPalette = (
                 const items : JSX.Element[] = [];
 
                 colors.slice(i * cols, (i + 1) * cols)
-                    .map((color) => {
-                        items.push( <ColorPaletteTile color={color} tileSize={tileSize} /> );
+                    .map((color, index) => {
+                        items.push( <ColorPaletteTile key={index} color={color} tileSize={tileSize} /> );
                     });
 
-                const row = <ColorPaletteRow>{items}</ColorPaletteRow>;
+                const row = <ColorPaletteRow key={i}>{items}</ColorPaletteRow>;
 
                 newChildren.push(row);
             });
@@ -72,7 +72,9 @@ export const ColorPalette = (
             )}>
 
             <table className="k-colorpalette-table">
-                {newChildren.length > 0 ? newChildren : props.children}
+                <tbody>
+                    {newChildren.length > 0 ? newChildren : props.children}
+                </tbody>
             </table>
 
         </div>

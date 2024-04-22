@@ -1,7 +1,7 @@
 import { CalendarCaptionCell, CalendarCell, CalendarInfinite, CalendarTableRow, CalendarTbody } from '../index';
 
 export const CalendarInfiniteWeekNumber = ({ firstCaption = "January 2021", secondCaption = "February 2021", ...other }: any) => (
-    <CalendarInfinite showWeekNumbers={true} calendarHeaderText="January 2021"
+    <CalendarInfinite showWeekNumbers={true} calendarTitleText="January 2021"
         children={
             <>
                 <colgroup>

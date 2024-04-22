@@ -2,7 +2,7 @@ import { CalendarCaptionCell, CalendarCell, CalendarInfinite, CalendarTableRow, 
 
 export const CalendarInfiniteNormal = ({ firstCaption = "January 2021", secondCaption = "February 2021", ...other }: any) => (
     <CalendarInfinite
-        calendarHeaderText="January 2021"
+        calendarTitleText="January 2021"
         children={
             <>
                 <colgroup>

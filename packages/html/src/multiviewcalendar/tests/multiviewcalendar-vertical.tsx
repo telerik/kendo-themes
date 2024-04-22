@@ -19,7 +19,7 @@ export default () => (
 
             <section>
                 <span>Month View with Week Numbers</span>
-                <MultiViewCalendarWithWeeks orientation="vertical" calendarHeaderText="October 2021 - November 2021"/>
+                <MultiViewCalendarWithWeeks orientation="vertical" calendarTitleText="October 2021 - November 2021"/>
             </section>
 
             <section>
