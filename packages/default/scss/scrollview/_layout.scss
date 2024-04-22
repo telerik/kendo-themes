@@ -114,8 +114,8 @@
 
         &::before {
             content: "";
-            width: ($kendo-scrollview-pagebutton-size + $kendo-scrollview-pager-item-spacing);
-            height: ($kendo-scrollview-pagebutton-size + $kendo-scrollview-pager-item-spacing);
+            width: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-spacing} );
+            height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-spacing} );
             display: block;
             position: absolute;
             top: 50%;
