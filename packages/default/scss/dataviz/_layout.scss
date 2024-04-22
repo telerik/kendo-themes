@@ -268,7 +268,10 @@
     }
 
 
-
+    // Sankey labels
+    .k-sankey text {
+        pointer-events: none;
+    }
 
     // Treemap
     .k-treemap {
