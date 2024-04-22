@@ -5361,28 +5361,28 @@ This is equivalent to `text-align: justify;`.
 
 
 
-### `.k-underline`
+### `.k-text-underline`
 
 This is equivalent to `text-decoration: underline;`.
 
 
 
 
-### `.k-overline`
+### `.k-text-overline`
 
 This is equivalent to `text-decoration: overline;`.
 
 
 
 
-### `.k-line-through`
+### `.k-text-line-through`
 
 This is equivalent to `text-decoration: line-through;`.
 
 
 
 
-### `.k-none-decoration`
+### `.k-text-no-underline`
 
 This is equivalent to `text-decoration: none-decoration;`.
 

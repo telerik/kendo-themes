@@ -9956,7 +9956,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-fieldset-font-size</td>
     <td>Calculation</td>
     <td><code>$kendo-h4-font-size</code></td>
-    <td><code>calc(var(--kendo-font-size, inherit) * 2)</code></td>
+    <td><code>calc(var(--kendo-font-size, 0.875rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form fieldset.</div></div>
