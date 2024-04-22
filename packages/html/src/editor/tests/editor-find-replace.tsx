@@ -6,7 +6,7 @@ import { EditorNormal } from '../../editor';
 import { WindowNormal } from '../../window';
 import { ButtonGroup } from '../../button-group';
 import { FormField, FormNormal } from '../../form';
-import { TabStrip, TabStripContent, TabStripItem, TabStripItems, TabStripItemsWrapper } from '../..';
+import { TabStripNormal, TabStripContent, TabStripItem } from '../..';
 
 
 const styles = `
@@ -36,13 +36,14 @@ export default () =>(
 
             <section>
                 <WindowNormal title="Find and Replace" actions={[ 'x' ]}>
-                    <TabStrip header={false} className="k-editor-find-replace">
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false} className="k-editor-find-replace"
+                        tabStripItems={
+                            <>
                                 <TabStripItem className="k-tab-on-top" value="Find" active />
                                 <TabStripItem value="Replace" />
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
@@ -69,19 +70,20 @@ export default () =>(
                                 </div>
                             </FormNormal>
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </WindowNormal>
             </section>
 
             <section>
                 <WindowNormal className="k-editor-window" title="Find and Replace" actions={[ 'x' ]}>
-                    <TabStrip header={false} className="k-editor-find-replace">
-                        <TabStripItemsWrapper>
-                            <TabStripItems>
+                    <TabStripNormal header={false} className="k-editor-find-replace"
+                        tabStripItems={
+                            <>
                                 <TabStripItem value="Find" />
                                 <TabStripItem className="k-tab-on-top" value="Replace" active />
-                            </TabStripItems>
-                        </TabStripItemsWrapper>
+                            </>
+                        }
+                    >
                         <TabStripContent active>
                             <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={ <Textbox showClearButton={false} value="editor" /> } />
@@ -115,7 +117,7 @@ export default () =>(
                                 </div>
                             </FormNormal>
                         </TabStripContent>
-                    </TabStrip>
+                    </TabStripNormal>
                 </WindowNormal>
             </section>
 

@@ -3,3 +3,8 @@ export * from './tabstrip-item';
 export * from './tabstrip-items-wrapper';
 export * from './tabstrip-items';
 export * from './tabstrip-content';
+export * from './templates/tabstrip-normal';
+export * from './templates/tabstrip-bottom';
+export * from './templates/tabstrip-right';
+export * from './templates/tabstrip-left';
+export * from './templates/tabstrip-scrollable';
