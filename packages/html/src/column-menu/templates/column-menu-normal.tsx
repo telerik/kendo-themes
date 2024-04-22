@@ -5,17 +5,17 @@ export const ColumnMenuNormal = (props) => (
         children={
             <>
                 <ColumnMenuItemWrapper>
-                    <ColumnMenuItem text="Item 1" icon="sort-asc-small" />
-                    <ColumnMenuItem text="Item 2" icon="sort-desc-small" />
+                    <ColumnMenuItem text="Sort Ascending" icon="sort-asc-small" />
+                    <ColumnMenuItem text="Sort Descending" icon="sort-desc-small" />
                 </ColumnMenuItemWrapper>
                 <ColumnMenuItemWrapper>
-                    <ColumnMenuExpander itemText="Expandable item 1" itemIcon="columns" />
+                    <ColumnMenuExpander itemText="Columns" itemIcon="columns" />
                 </ColumnMenuItemWrapper>
                 <ColumnMenuItemWrapper>
-                    <ColumnMenuExpander itemText="Expandable item 2" itemIcon="filter" />
+                    <ColumnMenuExpander itemText="Filter" itemIcon="filter" />
                 </ColumnMenuItemWrapper>
                 <ColumnMenuItemWrapper>
-                    <ColumnMenuExpander itemText="Item with icons" itemIcon="arrows-left-right" expanderIcon="window-restore"/>
+                    <ColumnMenuExpander itemText="Set column position" itemIcon="set-column-position"/>
                 </ColumnMenuItemWrapper>
             </>
         }

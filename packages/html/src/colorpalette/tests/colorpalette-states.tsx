@@ -1,5 +1,4 @@
-import { ColorPaletteNormal, ColorPaletteRow, ColorPaletteTile } from '../../colorpalette';
-import { PALETTEPRESETS } from '../colorpalette-presets';
+import { ColorPalette, ColorPaletteNormal, ColorPaletteRow, ColorPaletteTile } from '../../colorpalette';
 
 
 export default () =>(
@@ -8,12 +7,12 @@ export default () =>(
 
             <span>Disabled</span>
             <section>
-                <ColorPaletteNormal palette={PALETTEPRESETS.basic} disabled></ColorPaletteNormal>
+                <ColorPaletteNormal disabled />
             </section>
 
             <span>Item States</span>
             <section>
-                <ColorPaletteNormal>
+                <ColorPalette>
                     <ColorPaletteRow>
                         <ColorPaletteTile color="black" focus></ColorPaletteTile>
                         <ColorPaletteTile color="grey"></ColorPaletteTile>
@@ -22,7 +21,7 @@ export default () =>(
                         <ColorPaletteTile color="green" selected></ColorPaletteTile>
                         <ColorPaletteTile color="blue"></ColorPaletteTile>
                     </ColorPaletteRow>
-                </ColorPaletteNormal>
+                </ColorPalette>
             </section>
 
         </div>
