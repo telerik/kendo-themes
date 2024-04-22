@@ -70,7 +70,7 @@
             line-height: normal;
 
             .k-icon {
-                padding: calc( var( --kendo-font-size, inherit) - var( --kendo-font-size-sm, inherit) );
+                padding: calc( var( --kendo-font-size, .875rem) - var( --kendo-font-size-sm, .75rem) );
                 box-sizing: content-box;
                 vertical-align: unset;
             }
