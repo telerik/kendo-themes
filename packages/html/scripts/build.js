@@ -13,7 +13,7 @@ const commonConfig = {
     bundle: true,
     minify: false,
     sourcemap: false,
-    external: [ "react", "react-dom" ],
+    external: [ "react", "react-dom", "@progress/kendo-svg-icons" ],
 };
 
 (async() => {
