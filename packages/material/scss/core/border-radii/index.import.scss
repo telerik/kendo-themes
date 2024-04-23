@@ -1,9 +1,35 @@
+/// The none border radius used across the Components.
+/// @group radii
+$kendo-border-radius-none: k-map-get($kendo-spacing, 0) !default;
+/// The extra small border radius used across the Components.
+/// @group radii
+$kendo-border-radius-xs: k-map-get($kendo-spacing, 1px) !default;
+/// The small border radius used across the Components.
+/// @group radii
+$kendo-border-radius-sm: k-map-get($kendo-spacing, 0.5) !default;
+/// The medium border radius used across the Components.
+/// @group radii
+$kendo-border-radius-md: k-map-get($kendo-spacing, 1) !default;
+/// The large border radius used across the Components.
+/// @group radii
 $kendo-border-radius-lg: k-map-get($kendo-spacing, 2) !default;
+/// The extra large border radius used across the Components.
+/// @group radii
 $kendo-border-radius-xl: k-map-get($kendo-spacing, 3) !default;
+/// The third largest border radius used across the Components.
+/// @group radii
 $kendo-border-radius-xxl: k-map-get($kendo-spacing, 4) !default;
+/// The second largest border radius used across the Components.
+/// @group radii
 $kendo-border-radius-xxxl: k-map-get($kendo-spacing, 5) !default;
 
+/// The global radii Map.
+/// @group radii
 $kendo-border-radii: (
+    none: $kendo-border-radius-none,
+    xs: $kendo-border-radius-xs,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
     lg: $kendo-border-radius-lg,
     xl: $kendo-border-radius-xl,
     xxl: $kendo-border-radius-xxl,
