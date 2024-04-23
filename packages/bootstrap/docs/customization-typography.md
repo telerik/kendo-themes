@@ -98,6 +98,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-line-height-xs</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-line-height-sm</td>
     <td>Number</td>
     <td><code>$line-height-sm</code></td>

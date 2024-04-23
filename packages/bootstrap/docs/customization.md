@@ -32,16 +32,6 @@ The following table lists the available variables for customizing the Bootstrap 
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-chip-lg-font-size</td>
-    <td>String</td>
-    <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td><code>var(--kendo-font-size, inherit)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Chip.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-base-bg</td>
     <td>String</td>
     <td><code>$gray-100</code></td>
@@ -169,16 +159,6 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-line-height-xs</td>
-    <td>Number</td>
-    <td><code>1</code></td>
-    <td><code>1</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small line height across all components.</div></div>
     </td>
 </tr>
 </tbody>
@@ -5234,6 +5214,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -17151,6 +17141,145 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Radii
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-border-radius</td>
+    <td>Number</td>
+    <td><code>$border-radius</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-none</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0)</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The none border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xs</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0.5)</code></td>
+    <td><code>0.125rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-sm</td>
+    <td>Number</td>
+    <td><code>$border-radius-sm</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-md</td>
+    <td>Number</td>
+    <td><code>$kendo-border-radius</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-lg</td>
+    <td>Number</td>
+    <td><code>$border-radius-lg</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 3)</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xxl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 4)</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xxxl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 8)</code></td>
+    <td><code>2rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-full</td>
+    <td>Number</td>
+    <td><code>50rem</code></td>
+    <td><code>50rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radii</td>
+    <td>Map</td>
+    <td><code>(
+    xs: $kendo-border-radius-xs,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
+    lg: $kendo-border-radius-lg,
+    xl: $kendo-border-radius-xl,
+    xxl: $kendo-border-radius-xxl,
+    xxxl: $kendo-border-radius-xxxl,
+    full: $kendo-border-radius-full
+)</code></td>
+    <td><code>(none: 0px, xs: 0.125rem, sm: 0.25rem, md: 0.375rem, lg: 0.5rem, xl: 0.75rem, xxl: 1rem, xxxl: 2rem, full: 50rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Radio
 
 <table class="theme-variables">
@@ -25126,6 +25255,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-xs</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small line height across all components.</div></div>
     </td>
 </tr>
 <tr>
