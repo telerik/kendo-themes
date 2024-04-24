@@ -157,6 +157,45 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-display</td>
+    <td>Map</td>
+    <td><code>(
+    1: (
+        font-size: $kendo-display1-font-size,
+        font-family: $kendo-display1-font-family,
+        line-height: $kendo-display1-line-height,
+        font-weight: $kendo-display1-font-weight,
+        letter-spacing: $kendo-display1-letter-spacing
+    ),
+    2: (
+        font-size: $kendo-display2-font-size,
+        font-family: $kendo-display2-font-family,
+        line-height: $kendo-display2-line-height,
+        font-weight: $kendo-display2-font-weight,
+        letter-spacing: $kendo-display2-letter-spacing
+    ),
+    3: (
+        font-size: $kendo-display3-font-size,
+        font-family: $kendo-display3-font-family,
+        line-height: $kendo-display3-line-height,
+        font-weight: $kendo-display3-font-weight,
+        letter-spacing: $kendo-display3-letter-spacing
+    ),
+    4: (
+        font-size: $kendo-display4-font-size,
+        font-family: $kendo-display4-font-family,
+        line-height: $kendo-display4-line-height,
+        font-weight: $kendo-display4-font-weight,
+        letter-spacing: $kendo-display4-letter-spacing
+    ),
+)</code></td>
+    <td><code>(1: (font-size: 5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 2: (font-size: 4.5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 3: (font-size: 4rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 4: (font-size: 3.5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
