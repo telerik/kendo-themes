@@ -15,7 +15,7 @@ export default () =>(
                         <ToolbarResizable size={size}>
                             <Button size={size} icon="bold"></Button>
                             <Button size={size}>Button</Button>
-                            <Button size={size} className="k-toggle-button">Toggle</Button>
+                            <Button size={size}>Toggle</Button>
                             <ToolbarSeparator></ToolbarSeparator>
                             <ButtonGroup>
                                 <Button className="k-group-start" size={size} icon="align-left">Left</Button>
