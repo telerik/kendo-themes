@@ -36,7 +36,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                                 <div className="k-filtercell-operator">
                                                     <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                     {' '}
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -48,7 +48,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                                 <div className="k-filtercell-operator">
                                                     <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                     {' '}
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -60,7 +60,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                                 <div className="k-filtercell-operator">
                                                     <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                     {' '}
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -72,7 +72,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                                 <div className="k-filtercell-operator">
                                                     <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                     {' '}
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +82,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                             <div className="k-filtercell-wrapper">
                                                 <DropdownList />
                                                 <div className="k-filtercell-operator">
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
