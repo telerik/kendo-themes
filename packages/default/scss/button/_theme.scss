@@ -154,9 +154,9 @@
             &.k-hover {
                 @if $name == "base" {
                     @include fill(
-                        if($kendo-enable-color-system, $kendo-base-bg, k-contrast-legacy( $color )),
-                        $color,
-                        $color
+                        if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $color )),
+                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color )),
+                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color ))
                     );
                 } @else {
                     @include fill(
@@ -184,9 +184,9 @@
             &.k-active {
                 @if $name == "base" {
                     @include fill(
-                        if($kendo-enable-color-system, $kendo-base-bg, k-contrast-legacy( $color )),
-                        $color,
-                        $color
+                        if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $color )),
+                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color )),
+                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color ))
                     );
                 } @else {
                     @include fill(
@@ -201,9 +201,9 @@
             &.k-selected {
                 @if $name == "base" {
                     @include fill(
-                        if($kendo-enable-color-system, $kendo-base-bg, k-contrast-legacy( $color )),
-                        $color,
-                        $color
+                        if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $color )),
+                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color )),
+                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color ))
                     );
                 } @else {
                     @include fill(
@@ -226,7 +226,11 @@
     // Flat button
     @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
         .k-button-flat-#{$name} {
-            color: $color;
+            @if $name == "base" {
+                color: inherit;
+            } @else {
+                color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color);
+            }
 
             // Disabled state
             &:disabled,
@@ -295,7 +299,7 @@
     // Clear button
     @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
         .k-button-clear-#{$name} {
-            color: $color;
+            color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color);
 
             &:focus,
             &.k-focus,
