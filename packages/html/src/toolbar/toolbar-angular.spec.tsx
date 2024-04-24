@@ -51,13 +51,11 @@ export const ToolbarAngular = (
 
         if (child.type === Button && child.props.className && child.props.className.includes('k-toolbar-overflow-button')) {
             tempToolbarChildren.push(
-                <div className="k-toolbar-renderer">
-                    <Button
-                        key={`${index}-${new Date().getTime()}`}
-                        {...child.props}
-                        className={`${child.props.className ? child.props.className : ''}`}
-                    ></Button>
-                </div>
+                <Button
+                    key={`${index}-${new Date().getTime()}`}
+                    {...child.props}
+                    className={`${child.props.className ? child.props.className : ''}`}
+                ></Button>
             );
         } else if (child.type === Button && child.props.className && child.props.className.includes('k-toggle-button')) {
             tempToolbarChildren.push(
