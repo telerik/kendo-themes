@@ -1,7 +1,7 @@
 ---
 title: Customizing Typography
-description: "Refer to the list of the Kendo UI Nouvelle theme variables available for customization."
-slug: variables_kendothemenouvelle_typography
+description: "Refer to the list of the Kendo UI Theme Utils theme variables available for customization."
+slug: variables_kendothemeutils_typography
 position: 9
 ---
 
@@ -28,56 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-font-size-xs</td>
-    <td>Number</td>
-    <td><code>.75rem</code></td>
-    <td><code>0.75rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-family-sans-serif</td>
-    <td>List</td>
-    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
-    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for text.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-family-monospace</td>
-    <td>List</td>
-    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
-    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for monospaced text. Used for styling the code.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-font-family</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>inherit</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-line-height-sm</td>
-    <td>Number</td>
-    <td><code>1.25</code></td>
-    <td><code>1.25</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-font-size</td>
     <td>Number</td>
     <td><code>0.875rem</code></td>
@@ -98,10 +48,20 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-font-size-xs</td>
+    <td>Number</td>
+    <td><code>0.625rem</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-font-size-sm</td>
     <td>Number</td>
     <td><code>0.75rem</code></td>
-    <td><code>0.875rem</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small font size across all components.</div></div>
@@ -111,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-size-md</td>
     <td>Number</td>
     <td><code>$kendo-font-size</code></td>
-    <td><code>1rem</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium font size across all components.</div></div>
@@ -121,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-size-lg</td>
     <td>Number</td>
     <td><code>1rem</code></td>
-    <td><code>1.25rem</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large font size across all components.</div></div>
@@ -131,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-size-xl</td>
     <td>Number</td>
     <td><code>1.25rem</code></td>
-    <td><code>1.5rem</code></td>
+    <td><code>1.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large font size across all components.</div></div>
@@ -158,10 +118,20 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-line-height-sm</td>
+    <td>Number</td>
+    <td><code>1.25</code></td>
+    <td><code>1.25</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-line-height-md</td>
     <td>Number</td>
     <td><code>$kendo-line-height</code></td>
-    <td><code>1.5</code></td>
+    <td><code>1.4285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium line height across all components.</div></div>
@@ -171,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-height-lg</td>
     <td>Number</td>
     <td><code>1.5</code></td>
-    <td><code>1.75</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large line height across all components.</div></div>
@@ -181,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-height-em</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-line-height-md} * 1em )</code></td>
-    <td><code>calc(1.5 * 1em)</code></td>
+    <td><code>calc(1.4285714286 * 1em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height in ems across all components.</div></div>
@@ -388,10 +358,40 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-font-family-sans-serif</td>
+    <td>List</td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans-serif font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-family-monospace</td>
+    <td>List</td>
+    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The monospace font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-family</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-font-sizes</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
-    <td><code>(xxs: 0.5rem, xs: 0.75rem, sm: 0.875rem, md: 1rem, lg: 1.25rem, xl: 1.5rem)</code></td>
+    <td><code>(xxs: 0.5rem, xs: 0.625rem, sm: 0.75rem, md: 0.875rem, lg: 1rem, xl: 1.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-line-heights, $kendo-line-heights )</code></td>
-    <td><code>(xs: 1, sm: 1.25, md: 1.5, lg: 1.75)</code></td>
+    <td><code>(xs: 1, sm: 1.25, md: 1.4285714286, lg: 1.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>

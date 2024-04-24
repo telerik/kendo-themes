@@ -126,6 +126,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-border-radius-full</td>
+    <td>Number</td>
+    <td><code>9999px</code></td>
+    <td><code>9999px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

@@ -154,6 +154,56 @@ The following table lists the available variables for customizing the Nouvelle t
 </tbody>
 </table>
 
+### Accessibility
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$wcag-min-contrast-ratio</td>
+    <td>Number</td>
+    <td><code>7</code></td>
+    <td><code>4.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The contrast ratio to reach against white, to determine if color changes from "light" to "dark".<br />Acceptable values for WCAG 2.0 are 3, 4.5 and 7.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$wcag-dark</td>
+    <td>Color</td>
+    <td><code>black</code></td>
+    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default dark color for WCAG 2.0.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$wcag-light</td>
+    <td>Color</td>
+    <td><code>white</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default light color for WCAG 2.0.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Actions
 
 <table class="theme-variables">
@@ -2478,6 +2528,76 @@ The following table lists the available variables for customizing the Nouvelle t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-color-rgba-transparent</td>
+    <td>Color</td>
+    <td><code>rgba(0, 0, 0, 0)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0)"></span><code>rgba(0, 0, 0, 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transparent.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gradient-transparent-to-black</td>
+    <td>Gradient</td>
+    <td><code>rgba(black, 0), black</code></td>
+    <td><code>rgba(0, 0, 0, 0), black</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to black.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gradient-transparent-to-white</td>
+    <td>Gradient</td>
+    <td><code>rgba(white, 0), white</code></td>
+    <td><code>rgba(255, 255, 255, 0), white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to white.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gradient-black-to-transparent</td>
+    <td>Gradient</td>
+    <td><code>black, rgba(black, 0)</code></td>
+    <td><code>black, rgba(0, 0, 0, 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from black to transparent.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gradient-white-to-transparent</td>
+    <td>Gradient</td>
+    <td><code>white, rgba(white, 0)</code></td>
+    <td><code>white, rgba(255, 255, 255, 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from white to transparent.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gradient-rainbow</td>
+    <td>Gradient</td>
+    <td><span class="color-preview" style="background-color: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000"></span><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
+    <td><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that cycles through the colors of the rainbow.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-colors</td>
+    <td>Map</td>
+    <td><code>$_default-colors</code></td>
+    <td><code>(app-surface: null, on-app-surface: null, subtle: null, surface: null, surface-alt: null, border: null, border-alt: null, base-subtle: null, base-subtle-hover: null, base-subtle-active: null, base: null, base-hover: null, base-active: null, base-emphasis: null, base-on-subtle: null, on-base: null, base-on-surface: null, primary-subtle: null, primary-subtle-hover: null, primary-subtle-active: null, primary: null, primary-hover: null, primary-active: null, primary-emphasis: null, primary-on-subtle: null, on-primary: null, primary-on-surface: null, secondary-subtle: null, secondary-subtle-hover: null, secondary-subtle-active: null, secondary: null, secondary-hover: null, secondary-active: null, secondary-emphasis: null, secondary-on-subtle: null, on-secondary: null, secondary-on-surface: null, tertiary-subtle: null, tertiary-subtle-hover: null, tertiary-subtle-active: null, tertiary: null, tertiary-hover: null, tertiary-active: null, tertiary-emphasis: null, tertiary-on-subtle: null, on-tertiary: null, tertiary-on-surface: null, info-subtle: null, info-subtle-hover: null, info-subtle-active: null, info: null, info-hover: null, info-active: null, info-emphasis: null, info-on-subtle: null, on-info: null, info-on-surface: null, success-subtle: null, success-subtle-hover: null, success-subtle-active: null, success: null, success-hover: null, success-active: null, success-emphasis: null, success-on-subtle: null, on-success: null, success-on-surface: null, warning-subtle: null, warning-subtle-hover: null, warning-subtle-active: null, warning: null, warning-hover: null, warning-active: null, warning-emphasis: null, warning-on-subtle: null, on-warning: null, warning-on-surface: null, error-subtle: null, error-subtle-hover: null, error-subtle-active: null, error: null, error-hover: null, error-active: null, error-emphasis: null, error-on-subtle: null, on-error: null, error-on-surface: null, light-subtle: null, light-subtle-hover: null, light-subtle-active: null, light: null, light-hover: null, light-active: null, light-emphasis: null, light-on-subtle: null, on-light: null, light-on-surface: null, dark-subtle: null, dark-subtle-hover: null, dark-subtle-active: null, dark: null, dark-hover: null, dark-active: null, dark-emphasis: null, dark-on-subtle: null, on-dark: null, dark-on-surface: null, inverse-subtle: null, inverse-subtle-hover: null, inverse-subtle-active: null, inverse: null, inverse-hover: null, inverse-active: null, inverse-emphasis: null, inverse-on-subtle: null, on-inverse: null, inverse-on-surface: null, series-a: null, series-a-bold: null, series-a-bolder: null, series-a-subtle: null, series-a-subtler: null, series-b: null, series-b-bold: null, series-b-bolder: null, series-b-subtle: null, series-b-subtler: null, series-c: null, series-c-bold: null, series-c-bolder: null, series-c-subtle: null, series-c-subtler: null, series-d: null, series-d-bold: null, series-d-bolder: null, series-d-subtle: null, series-d-subtler: null, series-e: null, series-e-bold: null, series-e-bolder: null, series-e-subtle: null, series-e-subtler: null, series-f: null, series-f-bold: null, series-f-bolder: null, series-f-subtle: null, series-f-subtler: null)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -2526,6 +2646,36 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Elevation
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-elevation</td>
+    <td>Map</td>
+    <td><code>$_default-elevation</code></td>
+    <td><code>(1: (0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12)), 2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)), 3: (0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12)), 4: (0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)), 5: (0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12)), 6: (0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12)), 7: (0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12)), 8: (0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12)), 9: (0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
     </td>
 </tr>
 </tbody>
@@ -2975,6 +3125,126 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the progressbar.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Radii
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-border-radius-none</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0)</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The none border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xs</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1px)</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-sm</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0.5)</code></td>
+    <td><code>0.125rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-md</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1)</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-lg</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1.5)</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 2)</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xxl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 3)</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xxxl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 4)</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-full</td>
+    <td>Number</td>
+    <td><code>9999px</code></td>
+    <td><code>9999px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radii</td>
+    <td>Map</td>
+    <td><code>k-map-merge($_default-border-radii, $kendo-border-radii)</code></td>
+    <td><code>(none: 0, xs: 1px, sm: 0.125rem, md: 0.25rem, lg: 0.5rem, xl: 0.5rem, xxl: 0.75rem, xxxl: 1rem, full: 9999px, DEFAULT: 0.25rem, 0: 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
     </td>
 </tr>
 </tbody>
@@ -3675,6 +3945,36 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the slider thumb.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Spacing
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-spacing</td>
+    <td>Map</td>
+    <td><code>$_default-spacing</code></td>
+    <td><code>(0: 0, 1px: 1px, 0.5: 0.125rem, 1: 0.25rem, 1.5: 0.375rem, 2: 0.5rem, 2.5: 0.625rem, 3: 0.75rem, 3.5: 0.875rem, 4: 1rem, 4.5: 1.125rem, 5: 1.25rem, 5.5: 1.375rem, 6: 1.5rem, 6.5: 1.625rem, 7: 1.75rem, 7.5: 1.875rem, 8: 2rem, 9: 2.25rem, 10: 2.5rem, 11: 2.75rem, 12: 3rem, 13: 3.25rem, 14: 3.5rem, 15: 3.75rem, 16: 4rem, 17: 4.25rem, 18: 4.5rem, 19: 4.75rem, 20: 5rem, 21: 5.25rem, 22: 5.5rem, 23: 5.75rem, 24: 6rem, 25: 7rem, 26: 8rem, 27: 9rem, 28: 10rem, 29: 11rem, 30: 12rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Spacing map.</div></div>
     </td>
 </tr>
 </tbody>
@@ -4530,6 +4830,366 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size</td>
+    <td>Number</td>
+    <td><code>0.875rem</code></td>
+    <td><code>0.875rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-xxs</td>
+    <td>Number</td>
+    <td><code>0.5rem</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra extra small font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-sm</td>
+    <td>Number</td>
+    <td><code>0.75rem</code></td>
+    <td><code>0.875rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-md</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-lg</td>
+    <td>Number</td>
+    <td><code>1rem</code></td>
+    <td><code>1.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-size-xl</td>
+    <td>Number</td>
+    <td><code>1.25rem</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height</td>
+    <td>Number</td>
+    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>1.4285714286</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-xs</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-md</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-lg</td>
+    <td>Number</td>
+    <td><code>1.5</code></td>
+    <td><code>1.75</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-em</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-line-height-md} * 1em )</code></td>
+    <td><code>calc(1.5 * 1em)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height in ems across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight</td>
+    <td>Number</td>
+    <td><code>400</code></td>
+    <td><code>400</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-thin</td>
+    <td>Number</td>
+    <td><code>100</code></td>
+    <td><code>100</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thin font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-extra-light</td>
+    <td>Number</td>
+    <td><code>200</code></td>
+    <td><code>200</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra light font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-light</td>
+    <td>Number</td>
+    <td><code>300</code></td>
+    <td><code>300</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-normal</td>
+    <td>Number</td>
+    <td><code>$kendo-font-weight</code></td>
+    <td><code>400</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The normal font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-medium</td>
+    <td>Number</td>
+    <td><code>500</code></td>
+    <td><code>500</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-semibold</td>
+    <td>Number</td>
+    <td><code>600</code></td>
+    <td><code>600</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The semibold font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-bold</td>
+    <td>Number</td>
+    <td><code>700</code></td>
+    <td><code>700</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bold font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-extra-bold</td>
+    <td>Number</td>
+    <td><code>800</code></td>
+    <td><code>800</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra bold font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weight-black</td>
+    <td>Number</td>
+    <td><code>900</code></td>
+    <td><code>900</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The most pronounced font weight across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing-tightest</td>
+    <td>Number</td>
+    <td><code>-.15px</code></td>
+    <td><code>-0.15px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The tightest letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing-tighter</td>
+    <td>Number</td>
+    <td><code>-.10px</code></td>
+    <td><code>-0.1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Slightly looser than the tighter letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing-tight</td>
+    <td>Number</td>
+    <td><code>-.5px</code></td>
+    <td><code>-0.5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Moderately tight letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing-normal</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The normal letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing-wide</td>
+    <td>Number</td>
+    <td><code>.5px</code></td>
+    <td><code>0.5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Wide letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing-wider</td>
+    <td>Number</td>
+    <td><code>.10px</code></td>
+    <td><code>0.1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Slightly wider than the wide letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacing-widest</td>
+    <td>Number</td>
+    <td><code>.15px</code></td>
+    <td><code>0.15px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The widest letter spacing across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-family-sans</td>
+    <td>List</td>
+    <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
+    <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-family-serif</td>
+    <td>List</td>
+    <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
+    <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The serif font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-sizes</td>
+    <td>Map</td>
+    <td><code>k-map-merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
+    <td><code>(xxs: 0.5rem, xs: 0.75rem, sm: 0.875rem, md: 1rem, lg: 1.25rem, xl: 1.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-heights</td>
+    <td>Map</td>
+    <td><code>k-map-merge( $_default-line-heights, $kendo-line-heights )</code></td>
+    <td><code>(xs: 1, sm: 1.25, md: 1.5, lg: 1.75)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-weights</td>
+    <td>Map</td>
+    <td><code>k-map-merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>(thin: 100, extra-light: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weights map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-letter-spacings</td>
+    <td>Map</td>
+    <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>(tightest: -0.15px, tighter: -0.1px, tight: -0.5px, normal: 0px, wide: 0.5px, wider: 0.1px, widest: 0.15px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacings map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-families</td>
+    <td>Map</td>
+    <td><code>k-map-merge( $_default-font-families, $kendo-font-families )</code></td>
+    <td><code>(sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans), serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville), sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"), monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>
     </td>
 </tr>
 </tbody>
