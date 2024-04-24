@@ -57,14 +57,6 @@ export const Toolbar = (
                     className={`${child.props.className ? child.props.className : ''}`}
                 ></Button>
             );
-        } else if (child.type === Button && child.props.className && child.props.className.includes('k-toggle-button')) {
-            tempToolbarChildren.push(
-                <Button
-                    key={`${index}-${new Date().getTime()}`}
-                    {...child.props}
-                    className={`k-toolbar-toggle-button ${child.props.className ? child.props.className : ''}`}
-                ></Button>
-            );
         } else if (child.type === Button) {
             tempToolbarChildren.push(
                 <Button
