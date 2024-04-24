@@ -43,7 +43,7 @@ export default () =>(
                                     <col style={{ width: "68px" }} /><col /><col /><col /><col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow className="k-grid-edit-row">
+                                    <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>LTR</TableTd>
                                         <TableTd>
                                             <Autocomplete placeholder="Autocomplete..." />
@@ -58,7 +58,7 @@ export default () =>(
                                             <MultiSelect placeholder="Multiselect..." />
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-grid-edit-row k-alt" alt>
+                                    <TableRow className="k-master-row k-grid-edit-row k-alt" alt>
                                         <TableTd>RTL</TableTd>
                                         <TableTd>
                                             <Autocomplete placeholder="Autocomplete..." className="k-rtl" />
@@ -107,7 +107,7 @@ export default () =>(
                                     <col style={{ width: "68px" }} /><col /><col /><col /><col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow className="k-grid-edit-row">
+                                    <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>LTR</TableTd>
                                         <TableTd>
                                             <DatePicker placeholder="DatePicker..." />
@@ -122,7 +122,7 @@ export default () =>(
                                             <DateInput placeholder="DateInput..." />
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-grid-edit-row k-alt" alt>
+                                    <TableRow className="k-master-row k-grid-edit-row k-alt" alt>
                                         <TableTd>RTL</TableTd>
                                         <TableTd>
                                             <DatePicker placeholder="DatePicker..." className="k-rtl"/>
@@ -170,7 +170,7 @@ export default () =>(
                                     <col style={{ width: "68px" }} /><col /><col /><col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow className="k-grid-edit-row">
+                                    <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>LTR</TableTd>
                                         <TableTd>
                                             <NumericTextbox placeholder="Numeric..." />
@@ -180,7 +180,7 @@ export default () =>(
                                         </TableTd>
                                         <TableTd></TableTd>
                                     </TableRow>
-                                    <TableRow className="k-grid-edit-row k-alt" alt>
+                                    <TableRow className="k-master-row k-grid-edit-row k-alt" alt>
                                         <TableTd>RTL</TableTd>
                                         <TableTd>
                                             <NumericTextbox placeholder="Numeric..." className="k-rtl" />

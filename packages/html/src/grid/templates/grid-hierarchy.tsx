@@ -52,7 +52,7 @@ export const GridHierarchy = ({ containerClassName, ...other }: any) => (
                                     <TableTd>Condiments</TableTd>
                                     <TableTd>Sweet and savory sauces, relishes, spreads, and seasonings</TableTd>
                                 </TableRow>
-                                <TableRow className="k-detail-row">
+                                <TableRow className="k-master-row k-detail-row">
                                     <TableTd className="k-hierarchy-cell"></TableTd>
                                     <TableTd className="k-detail-cell" colspan={3}>
                                         <Grid _renderAriaRoot className="k-grid-no-scrollbar">

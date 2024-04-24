@@ -60,13 +60,13 @@ export default () =>(
                                     <col /><col /><col /><col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd>1</TableTd>
                                         <TableTd>Chai</TableTd>
                                         <TableTd>$18.00</TableTd>
                                         <TableTd>Beverages</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Chang</TableTd>
                                         <TableTd>$19.00</TableTd>
@@ -116,13 +116,13 @@ export default () =>(
                                 <col /><col /><col /><col />
                             </colgroup>
                             <TableTbody>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>1</TableTd>
                                     <TableTd>Chai</TableTd>
                                     <TableTd>$18.00</TableTd>
                                     <TableTd>Beverages</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd>2</TableTd>
                                     <TableTd>Chang</TableTd>
                                     <TableTd>$19.00</TableTd>

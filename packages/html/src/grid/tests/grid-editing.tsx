@@ -42,7 +42,7 @@ export default () =>(
                                 <col /><col /><col /><col style={{ width: "300px" }} />
                             </colgroup>
                             <TableTbody>
-                                <TableRow className="k-grid-edit-row">
+                                <TableRow className="k-master-row k-grid-edit-row">
                                     <TableTd>
                                         <Textbox value="Towel" required />
                                     </TableTd>
@@ -64,7 +64,7 @@ export default () =>(
                                         <Button icon="cancel">Cancel</Button>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-grid-edit-row" alt>
+                                <TableRow className="k-master-row k-grid-edit-row" alt>
                                     <TableTd className="k-dirty-cell">
                                         <span className="k-dirty"></span>
                                         LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
@@ -76,7 +76,7 @@ export default () =>(
                                         <Button icon="x">Delete</Button>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>Chang</TableTd>
                                     <TableTd>19</TableTd>
                                     <TableTd>false</TableTd>

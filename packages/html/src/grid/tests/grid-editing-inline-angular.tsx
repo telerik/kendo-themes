@@ -43,7 +43,7 @@ export default () =>(
                                     <col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow className="k-grid-edit-row" role="row">
+                                    <TableRow className="k-master-row k-grid-edit-row" role="row">
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -55,7 +55,7 @@ export default () =>(
                                             <Button>Cancel</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -112,7 +112,7 @@ export default () =>(
                                     <col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow className="k-grid-add-row k-grid-edit-row" role="row">
+                                    <TableRow className="k-master-row k-grid-add-row k-grid-edit-row" role="row">
                                         <TableTd colspan={1}></TableTd>
                                         <TableTd colspan={1}>
                                             <Textbox />
@@ -122,7 +122,7 @@ export default () =>(
                                             <Button>Discard changes</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -134,7 +134,7 @@ export default () =>(
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>

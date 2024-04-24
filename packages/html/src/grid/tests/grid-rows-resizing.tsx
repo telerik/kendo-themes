@@ -131,7 +131,7 @@ export default () =>(
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd>Grid Cell</TableTd>
                                         <TableTd>Grid Cell</TableTd>
                                         <TableTd className="k-command-cell">
@@ -147,7 +147,7 @@ export default () =>(
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd>Grid Cell</TableTd>
                                         <TableTd>Grid Cell</TableTd>
                                         <TableTd className="k-command-cell">

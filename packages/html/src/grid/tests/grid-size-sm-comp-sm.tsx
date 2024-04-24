@@ -53,25 +53,25 @@ export default () =>(
                                     <col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd>1</TableTd>
                                         <TableTd>Row</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Alt row</TableTd>
                                     </TableRow>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd>3</TableTd>
                                         <TableTd>
                                         This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd>4</TableTd>
                                         <TableTd><SkeletonNormal animation={false} /></TableTd>
                                     </TableRow>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd>5</TableTd>
                                         <TableTd><SkeletonNormal animation={false} /></TableTd>
                                     </TableRow>
@@ -181,7 +181,7 @@ export default () =>(
                                         <TableTd>Text</TableTd>
                                         <TableTd>Text</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-detail-row">
+                                    <TableRow className="k-master-row k-detail-row">
                                         <TableTd className="k-hierarchy-cell"></TableTd>
                                         <TableTd className="k-detail-cell" colspan={5}>
                                             {/* hierarchy child content */}
@@ -238,7 +238,7 @@ export default () =>(
                                     <col /><col /><col /><col style={{ width: "300px" }} />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow className="k-grid-edit-row">
+                                    <TableRow className="k-master-row k-grid-edit-row">
                                         <TableTd>
                                             <Textbox value="Towel" required size="small" />
                                         </TableTd>
@@ -260,7 +260,7 @@ export default () =>(
                                             <Button size="small" icon="cancel">Cancel</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-grid-edit-row k-alt">
+                                    <TableRow alt className="k-master-row k-grid-edit-row k-alt">
                                         <TableTd className="k-dirty-cell">
                                             <span className="k-dirty"></span>
                                         LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
@@ -272,7 +272,7 @@ export default () =>(
                                             <Button size="small" icon="x">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd>Chang</TableTd>
                                         <TableTd>19</TableTd>
                                         <TableTd>false</TableTd>
@@ -339,7 +339,7 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd className="k-table-group-td k-group-cell">&nbsp;</TableTd>
                                         <TableTd>Chai</TableTd>
                                         <TableTd>30</TableTd>

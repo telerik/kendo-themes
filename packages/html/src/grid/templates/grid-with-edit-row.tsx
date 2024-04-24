@@ -41,7 +41,7 @@ export const GridWithEditRow = (props) => (
                                     <col /><col /><col /><col style={{ width: "300px" }} />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow className="k-grid-add-row k-grid-edit-row">
+                                    <TableRow className="k-master-row k-grid-add-row k-grid-edit-row">
                                         <TableTd>
                                             <Textbox value="Towel" />
                                         </TableTd>
@@ -54,7 +54,7 @@ export const GridWithEditRow = (props) => (
                                             <Button>Cancel</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd>Chai</TableTd>
                                         <TableTd>18</TableTd>
                                         <TableTd>false</TableTd>
@@ -62,7 +62,7 @@ export const GridWithEditRow = (props) => (
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd>Chang</TableTd>
                                         <TableTd>19</TableTd>
                                         <TableTd>false</TableTd>
