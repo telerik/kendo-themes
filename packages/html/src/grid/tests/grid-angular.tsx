@@ -41,21 +41,21 @@ export default () =>(
                                         <col />
                                     </colgroup>
                                     <TableTbody>
-                                        <TableRow>
+                                        <TableRow className="k-master-row">
                                             <TableTd>1</TableTd>
                                             <TableTd>Row</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-alt" alt>
+                                        <TableRow className="k-master-row k-alt" alt>
                                             <TableTd>2</TableTd>
                                             <TableTd>Alt row</TableTd>
                                         </TableRow>
-                                        <TableRow>
+                                        <TableRow className="k-master-row">
                                             <TableTd>3</TableTd>
                                             <TableTd>
                                             This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
                                             </TableTd>
                                         </TableRow>
-                                        <TableRow className="k-alt" alt>
+                                        <TableRow className="k-master-row k-alt" alt>
                                             <TableTd>4</TableTd>
                                             <TableTd><SkeletonNormal animation={false}/></TableTd>
                                         </TableRow>
@@ -121,7 +121,7 @@ export default () =>(
                                             <TableTd>Text</TableTd>
                                             <TableTd>Text</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-detail-row">
+                                        <TableRow className="k-master-row k-detail-row">
                                             <TableTd className="k-hierarchy-cell"></TableTd>
                                             <TableTd className="k-detail-cell" colspan={6}>
                                                 {/* hierarchy child content */}

@@ -81,24 +81,24 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow style={{ height: "38px" }}>
+                                    <TableRow className="k-master-row" style={{ height: "38px" }}>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={1}></TableTd>
                                         <TableTd colspan={1}>Chai</TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt" style={{ width: "37px" }}>
+                                    <TableRow alt className="k-master-row k-alt" style={{ width: "37px" }}>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={1}>2</TableTd>
                                         <TableTd colspan={1}>Chang</TableTd>
                                     </TableRow>
-                                    <TableRow style={{ width: "37px" }}>
+                                    <TableRow className="k-master-row" style={{ width: "37px" }}>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={1}>3</TableTd>
                                         <TableTd colspan={1}>
                                             Aniseed Syrup
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt" style={{ width: "37px" }}>
+                                    <TableRow alt className="k-master-row k-alt" style={{ width: "37px" }}>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={1}>
                                             4
@@ -107,7 +107,7 @@ export default () =>(
                                             Chef Anton&apos;s Cajun Seasoning
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow style={{ width: "37px" }}>
+                                    <TableRow className="k-master-row" style={{ width: "37px" }}>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={1}>6</TableTd>
                                         <TableTd colspan={1}>Grandma&apos;s Boysenberry Spread</TableTd>
@@ -125,7 +125,7 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt" style={{ height: "38px" }}>
+                                    <TableRow alt className="k-master-row k-alt" style={{ height: "38px" }}>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd colspan={1}>
                                             5
@@ -161,31 +161,31 @@ export default () =>(
                                             <p className="k-reset"></p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow style={{ height: "38px" }}>
+                                    <TableRow className="k-master-row" style={{ height: "38px" }}>
                                         <TableTd colspan={1}>18</TableTd>
                                         <TableTd colspan={1}>0</TableTd>
                                         <TableTd colspan={1}>39</TableTd>
                                         <TableTd colspan={1}><Checkbox /></TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt" style={{ width: "37px" }}>
+                                    <TableRow alt className="k-master-row k-alt" style={{ width: "37px" }}>
                                         <TableTd colspan={1}>19</TableTd>
                                         <TableTd colspan={1}>40</TableTd>
                                         <TableTd colspan={1}>17</TableTd>
                                         <TableTd colspan={1}><Checkbox /></TableTd>
                                     </TableRow>
-                                    <TableRow style={{ width: "37px" }}>
+                                    <TableRow className="k-master-row" style={{ width: "37px" }}>
                                         <TableTd colspan={1}>10</TableTd>
                                         <TableTd colspan={1}>70</TableTd>
                                         <TableTd colspan={1}>13</TableTd>
                                         <TableTd colspan={1}><Checkbox /></TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt" style={{ width: "37px" }}>
+                                    <TableRow alt className="k-master-row k-alt" style={{ width: "37px" }}>
                                         <TableTd colspan={1}>22</TableTd>
                                         <TableTd colspan={1}>0</TableTd>
                                         <TableTd colspan={1}>53</TableTd>
                                         <TableTd colspan={1}><Checkbox /></TableTd>
                                     </TableRow>
-                                    <TableRow style={{ width: "37px" }}>
+                                    <TableRow className="k-master-row" style={{ width: "37px" }}>
                                         <TableTd colspan={1}>25</TableTd>
                                         <TableTd colspan={1}>0</TableTd>
                                         <TableTd colspan={1}>120</TableTd>
@@ -202,7 +202,7 @@ export default () =>(
                                             <p className="k-reset"></p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-table-row k-table-alt-row k-alt" style={{ height: "38px" }}>
+                                    <TableRow className="k-master-row k-table-alt-row k-alt" style={{ height: "38px" }}>
                                         <TableTd className="k-table-td" colspan={1}>21.35</TableTd>
                                         <TableTd className="k-table-td" colspan={1}>0</TableTd>
                                         <TableTd className="k-table-td" colspan={1}>0</TableTd>
@@ -210,7 +210,7 @@ export default () =>(
                                             <Checkbox />
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-table-row k-group-footer" style={{ height: "39px" }}>
+                                    <TableRow className="k-group-footer" style={{ height: "39px" }}>
                                         <TableTd className="k-table-td">Sum: 24</TableTd>
                                         <TableTd className="k-table-td"></TableTd>
                                         <TableTd className="k-table-td"></TableTd>

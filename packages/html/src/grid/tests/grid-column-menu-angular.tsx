@@ -37,7 +37,7 @@ export default () =>(
                                     <col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -46,7 +46,7 @@ export default () =>(
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt">
+                                    <TableRow alt className="k-master-row k-alt">
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -94,7 +94,7 @@ export default () =>(
                                     <col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -103,7 +103,7 @@ export default () =>(
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt">
+                                    <TableRow alt className="k-master-row k-alt">
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -151,7 +151,7 @@ export default () =>(
                                     <col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -160,7 +160,7 @@ export default () =>(
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt">
+                                    <TableRow alt className="k-master-row k-alt">
                                         <TableTd className="k-touch-action-auto" colspan={1}>
                                             <Checkbox />
                                         </TableTd>

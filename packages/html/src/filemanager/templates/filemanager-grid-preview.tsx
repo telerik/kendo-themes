@@ -82,14 +82,14 @@ export const FileManagerGridPreview = (props) => (
                                         <col />
                                     </colgroup>
                                     <TableTbody>
-                                        <TableRow>
+                                        <TableRow className="k-master-row">
                                             <TableTd>
                                                 <FilePreview name="Folder" icon="folder" />
                                             </TableTd>
                                             <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
                                             <TableTd>0</TableTd>
                                         </TableRow>
-                                        <TableRow alt>
+                                        <TableRow className="k-master-row k-alt" alt>
                                             <TableTd>
                                                 <FilePreview name="file.png" icon="file" />
                                             </TableTd>

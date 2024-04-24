@@ -39,31 +39,31 @@ export const GridNormal = ({ contentClassName, ...other }: any) => (
                                 <col style={{ width: "150px" }} />
                             </colgroup>
                             <TableTbody>
-                                <TableRow>
+                                <TableRow className="k-master-row" >
                                     <TableTd>Maria Anders</TableTd>
                                     <TableTd>Sales Representative</TableTd>
                                     <TableTd>Alfreds Futterkiste</TableTd>
                                     <TableTd>Germany</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd>Ana Trujillo</TableTd>
                                     <TableTd>Owner</TableTd>
                                     <TableTd>Anna Trujillo Emparedados y helados</TableTd>
                                     <TableTd>Mexico</TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>Thomas Hardy</TableTd>
                                     <TableTd>Sales Representative</TableTd>
                                     <TableTd>Around the Horn</TableTd>
                                     <TableTd>UK</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd>Christina Berglund</TableTd>
                                     <TableTd>Office Administrator</TableTd>
                                     <TableTd>Berglunds snabbköp</TableTd>
                                     <TableTd>Sweden</TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>Martin Sommer</TableTd>
                                     <TableTd>Owner</TableTd>
                                     <TableTd>Bólido Comidas preparadas</TableTd>
