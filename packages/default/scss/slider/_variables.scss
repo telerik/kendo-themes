@@ -110,7 +110,7 @@ $kendo-slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !def
 
 /// The background color of the Slider track.
 /// @group slider
-$kendo-slider-track-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-component-bg, 1 )) !default;
+$kendo-slider-track-bg: if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-component-bg, 1 )) !default;
 /// The background color of the Slider's track selection.
 /// @group slider
 $kendo-slider-selection-bg: $kendo-color-primary !default;
