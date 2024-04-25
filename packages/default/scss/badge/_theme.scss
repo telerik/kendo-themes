@@ -12,7 +12,7 @@
     // Outline badges
     .k-badge-outline {
         border-color: currentColor;
-        background-color: $kendo-component-bg;
+        background-color: transparent;
     }
 
     @each $name, $color in $kendo-theme-colors {

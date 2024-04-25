@@ -114,7 +114,7 @@ $_tc-badge-matrix: (
         normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (on-color, color, color), ($kendo-color-white, 100, 100))
+        normal: if($kendo-enable-color-system, (transparent, color, color), ($kendo-color-white, 100, 100))
     )
 ) !default;
 
@@ -123,7 +123,7 @@ $_tc-badge-warning-matrix: (
         normal: if($kendo-enable-color-system, (color, on-color, color), (100, k-get-theme-color-var( neutral-160 ), 100))
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (app-surface, color, color), ($kendo-color-white, 100, 100))
+        normal: if($kendo-enable-color-system, (transparent, color, color), ($kendo-color-white, 100, 100))
     )
 ) !default;
 
@@ -132,7 +132,7 @@ $_tc-badge-dark-matrix: (
         normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (on-color, color, color), ($kendo-color-white, 160, 160))
+        normal: if($kendo-enable-color-system, (transparent, color, color), ($kendo-color-white, 160, 160))
     )
 ) !default;
 
@@ -141,7 +141,7 @@ $_tc-badge-light-matrix: (
         normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (app-surface, color, color), ($kendo-color-white, 50, 50))
+        normal: if($kendo-enable-color-system, (transparent, color, color), ($kendo-color-white, 50, 50))
     )
 ) !default;
 
