@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-timeline-track-arrow-disabled-border</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 15%, transparent), k-true-mix( $kendo-button-border, $kendo-body-bg, 65% ))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #dee2e6) 15%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 15%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Timeline track arrow.</div></div>

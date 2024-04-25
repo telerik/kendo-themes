@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-series-a</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( series-a ), $blue)</code></td>
-    <td><code>var(--kendo-color-series-a, #0d6efd)</code></td>
+    <td><code>var(--kendo-color-series-a, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The first base series color and its light and dark shades.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-series-1</td>
     <td>String</td>
     <td><code>$kendo-series-a</code></td>
-    <td><code>var(--kendo-color-series-a, #0d6efd)</code></td>
+    <td><code>var(--kendo-color-series-a, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series colors in order:<br />base, light, dark, lighter, darker</div></div>

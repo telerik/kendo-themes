@@ -273,7 +273,7 @@ The following table lists the available variables for customization.
     $kendo-theme-colors,
     ( "base": if($kendo-enable-color-system, k-color( base ), #e4e7eb) )
 )</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #0d6efd), "secondary": var(--kendo-color-secondary, #6c757d), "tertiary": var(--kendo-color-tertiary, #6f42c1), "info": var(--kendo-color-info, #0dcaf0), "success": var(--kendo-color-success, #146c43), "warning": var(--kendo-color-warning, #ffc107), "error": var(--kendo-color-error, #dc3545), "dark": var(--kendo-color-dark, #212529), "light": var(--kendo-color-light, #f8f9fa), "inverse": var(--kendo-color-dark, #212529), "base": var(--kendo-color-base, #dee2e6))</code></td>
+    <td><code>("primary": var(--kendo-color-primary, #0d6efd), "secondary": var(--kendo-color-secondary, #6c757d), "tertiary": var(--kendo-color-tertiary, #6f42c1), "info": var(--kendo-color-info, #0dcaf0), "success": var(--kendo-color-success, #198754), "warning": var(--kendo-color-warning, #ffc107), "error": var(--kendo-color-error, #dc3545), "dark": var(--kendo-color-dark, #212529), "light": var(--kendo-color-light, #f8f9fa), "inverse": var(--kendo-color-dark, #212529), "base": var(--kendo-color-base, #dee2e6))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>
@@ -523,7 +523,7 @@ The following table lists the available variables for customization.
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 50%, transparent), rgba( $kendo-button-border, .5 ))</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, #dee2e6) 50%, transparent)</code></td>
+    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>

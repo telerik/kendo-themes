@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-button-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, #dee2e6) 50%, transparent)</code></td>
+    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider Buttons.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-draghandle-hover-bg</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-darken( $kendo-color-primary, 7.5% ))</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Slider drag handle.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-draghandle-hover-border</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-darken( $kendo-color-primary, 10% ))</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider drag handle.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), $gray-200)</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #adb5bd)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Slider track.</div></div>

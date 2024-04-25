@@ -286,7 +286,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-border</td>
     <td>String</td>
     <td><code>$input-border-color</code></td>
-    <td><code>var(--kendo-color-border-alt, #ced4da)</code></td>
+    <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Input components.</div></div>
@@ -366,7 +366,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-focus-border</td>
     <td>String</td>
     <td><code>$input-focus-border-color</code></td>
-    <td><code>var(--kendo-color-primary-emphasis, #6ea8fe)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Input components.</div></div>
@@ -536,7 +536,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-outline-focus-border</td>
     <td>String</td>
     <td><code>$kendo-input-focus-border</code></td>
-    <td><code>var(--kendo-color-primary-emphasis, #6ea8fe)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline focused Input components.</div></div>
@@ -576,7 +576,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-flat-border</td>
     <td>String</td>
     <td><code>$kendo-input-border</code></td>
-    <td><code>var(--kendo-color-border-alt, #ced4da)</code></td>
+    <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Input components.</div></div>
@@ -636,7 +636,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-flat-focus-border</td>
     <td>String</td>
     <td><code>$kendo-input-focus-border</code></td>
-    <td><code>var(--kendo-color-primary-emphasis, #6ea8fe)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat focused Input components.</div></div>
@@ -656,7 +656,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-placeholder-text</td>
     <td>String</td>
     <td><code>$input-placeholder-color</code></td>
-    <td><code>var(--kendo-color-subtle, #606970)</code></td>
+    <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input placeholder.</div></div>
@@ -776,7 +776,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-separator-text</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
@@ -796,7 +796,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-prefix-text</td>
     <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><code>var(--kendo-color-subtle, #606970)</code></td>
+    <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input prefix.</div></div>
@@ -806,7 +806,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-suffix-text</td>
     <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><code>var(--kendo-color-subtle, #606970)</code></td>
+    <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input suffix.</div></div>
