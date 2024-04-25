@@ -395,8 +395,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-text</td>
     <td>String</td>
-    <td><code>$kendo-chip-solid-text</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-chip-solid-text)</code></td>
+    <td><code>var(--kendo-color-base-on-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the outline Chip.</div></div>
@@ -406,7 +406,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-outline-border</td>
     <td>String</td>
     <td><code>$kendo-chip-outline-text</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-base-on-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the outline Chip.</div></div>
@@ -426,7 +426,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-outline-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-chip-outline-text</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-base-on-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered outline Chip.</div></div>
@@ -446,7 +446,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-outline-selected-bg</td>
     <td>String</td>
     <td><code>$kendo-chip-outline-hover-bg</code></td>
-    <td><code>var(--kendo-color-on-base, #3d3d3d)</code></td>
+    <td><code>var(--kendo-color-base-on-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected outline Chip.</div></div>
