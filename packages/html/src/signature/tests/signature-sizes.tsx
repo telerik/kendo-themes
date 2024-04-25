@@ -1,4 +1,4 @@
-import { Signature } from '../../signature';
+import { Signature, SignatureNormal } from '../../signature';
 
 
 const styles = `
@@ -16,32 +16,18 @@ export default () =>(
             <span>Signature</span>
             <span>Signature RTL</span>
 
-            <div>
-                <span>Small</span>
-                <Signature size="small" />
-            </div>
-            <div dir="rtl">
-                <span>Small</span>
-                <Signature size="small" />
-            </div>
-
-            <div>
-                <span>Medium</span>
-                <Signature size="medium" />
-            </div>
-            <div dir="rtl">
-                <span>Medium</span>
-                <Signature size="medium" />
-            </div>
-
-            <div>
-                <span>Large</span>
-                <Signature size="large" />
-            </div>
-            <div dir="rtl">
-                <span>Large</span>
-                <Signature size="large" />
-            </div>
+            { Signature.options.size.map(( size ) =>(
+                <>
+                    <div>
+                        <span>{size}</span>
+                        <SignatureNormal size={size} />
+                    </div>
+                    <div dir="rtl">
+                        <span>{size}</span>
+                        <SignatureNormal size={size} />
+                    </div>
+                </>
+            ))}
         </div>
     </>
 );

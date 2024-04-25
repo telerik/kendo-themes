@@ -25075,7 +25075,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25095,7 +25095,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-hover-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25115,7 +25115,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-focus-bg</td>
     <td></td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 28%, transparent), k-get-theme-color-var( neutral-60 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
