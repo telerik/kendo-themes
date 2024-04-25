@@ -22,10 +22,14 @@ $kendo-drawer-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Drawer.
 /// @group drawer
 $kendo-drawer-line-height: var( --kendo-line-height, normal ) !default;
-$kendo-drawer-content-padding-x: $kendo-padding-md-x !default;
+
+/// The horizontal padding of the Drawer content.
+/// @group drawer
+$kendo-drawer-content-padding-x: null !default;
+
 /// The vertical padding of the Drawer content.
 /// @group drawer
-$kendo-drawer-content-padding-y: $kendo-padding-md-y !default;
+$kendo-drawer-content-padding-y: null !default;
 
 /// The width of the Drawer scrollbar.
 /// @group drawer
