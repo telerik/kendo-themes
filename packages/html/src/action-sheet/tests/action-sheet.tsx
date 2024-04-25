@@ -1,4 +1,4 @@
-import { ActionSheet, ActionSheetItems, ActionSheetItem } from '../../action-sheet';
+import { ActionSheetItems, ActionSheetItem, ActionSheetNormal } from '../../action-sheet';
 
 
 const styles = `
@@ -24,7 +24,7 @@ export default () =>(
             <span>RTL</span>
 
             <section>
-                <ActionSheet title="Header">
+                <ActionSheetNormal title="Header">
                     <ActionSheetItems>
                         <ActionSheetItem text="Action" description="Action description" iconName="gear" />
                         <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
@@ -36,11 +36,11 @@ export default () =>(
                     <ActionSheetItems>
                         <ActionSheetItem text="Cancel" description="Action in a second group" iconName="gear" />
                     </ActionSheetItems>
-                </ActionSheet>
+                </ActionSheetNormal>
             </section>
 
             <section className="k-rtl">
-                <ActionSheet title="Header">
+                <ActionSheetNormal title="Header">
                     <ActionSheetItems>
                         <ActionSheetItem text="Action" description="Action description" iconName="gear" />
                         <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
@@ -52,7 +52,7 @@ export default () =>(
                     <ActionSheetItems>
                         <ActionSheetItem text="Cancel" description="Action in a second group" iconName="gear" />
                     </ActionSheetItems>
-                </ActionSheet>
+                </ActionSheetNormal>
             </section>
         </div>
     </>

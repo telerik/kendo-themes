@@ -1,4 +1,4 @@
-import { ActionSheet, ActionSheetItems, ActionSheetItem } from '../../action-sheet';
+import { ActionSheetLeft, ActionSheetRight, ActionSheetTop, ActionSheetNormal } from '../../action-sheet';
 
 
 const styles = `
@@ -20,44 +20,16 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
             <section>
-                <ActionSheet side="left" title="Left action sheet">
-                    <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
-                    </ActionSheetItems>
-                </ActionSheet>
+                <ActionSheetLeft title="Left action sheet" />
             </section>
             <section>
-                <ActionSheet side="right" title="Right action sheet">
-                    <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
-                    </ActionSheetItems>
-                </ActionSheet>
+                <ActionSheetRight title="Right action sheet" />
             </section>
             <section>
-                <ActionSheet side="top" title="Top action sheet">
-                    <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
-                    </ActionSheetItems>
-                </ActionSheet>
+                <ActionSheetTop title="Top action sheet" />
             </section>
             <section>
-                <ActionSheet side="bottom" title="Bottom action sheet">
-                    <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
-                    </ActionSheetItems>
-                </ActionSheet>
+                <ActionSheetNormal title="Bottom action sheet" />
             </section>
         </div>
     </>
