@@ -11,6 +11,7 @@
         font-family: $kendo-listview-font-family;
         font-size: $kendo-listview-font-size;
         line-height: $kendo-listview-line-height;
+        display: flex;
         flex-flow: column nowrap;
         position: relative;
         -webkit-touch-callout: none;

@@ -14,6 +14,7 @@
         font-family: var( --kendo-listview-font-family, #{$kendo-listview-font-family} );
         font-size: var( --kendo-listview-font-size, #{$kendo-listview-font-size} );
         line-height: var( --kendo-listview-line-height, #{$kendo-listview-line-height} );
+        display: flex;
         flex-flow: column nowrap;
         position: relative;
         -webkit-touch-callout: none;
