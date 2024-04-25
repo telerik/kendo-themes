@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
     <td>$kendo-table-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tables.</div></div>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
     <td>$kendo-table-header-border</td>
     <td>String</td>
     <td><code>$kendo-component-header-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table headers.</div></div>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
     <td>$kendo-table-footer-border</td>
     <td>String</td>
     <td><code>$kendo-table-header-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table footers.</div></div>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
     <td>$kendo-table-group-row-border</td>
     <td>String</td>
     <td><code>$kendo-table-header-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of group rows in table.</div></div>

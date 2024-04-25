@@ -486,7 +486,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-loadmore-hover-text</td>
     <td>String</td>
     <td><code>$kendo-link-hover-text</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Load More button in the TreeView.</div></div>
@@ -516,7 +516,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-loadmore-focus-text</td>
     <td>String</td>
     <td><code>$kendo-link-hover-text</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Load More button in the TreeView.</div></div>

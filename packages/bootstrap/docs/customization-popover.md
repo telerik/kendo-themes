@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-border</td>
     <td>String</td>
     <td><code>$kendo-card-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-popover-callout-border</td>
     <td>String</td>
     <td><code>$kendo-popover-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover callout.</div></div>

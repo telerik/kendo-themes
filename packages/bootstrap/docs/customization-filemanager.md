@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager.</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-listview-item-icon-text</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-file-manager-text, 4 ))</code></td>
-    <td><code>var(--kendo-color-subtle, #606970)</code></td>
+    <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager ListView item icon.</div></div>
@@ -581,7 +581,7 @@ The following table lists the available variables for customization.
     <td>$kendo-file-manager-preview-icon-text</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-file-manager-text, 4 ))</code></td>
-    <td><code>var(--kendo-color-subtle, #606970)</code></td>
+    <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager preview icon.</div></div>

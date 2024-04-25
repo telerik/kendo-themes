@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-header-border</td>
     <td>String</td>
     <td><code>$kendo-component-header-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet header.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-table-header-border</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-header-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet table headers.</div></div>
@@ -651,7 +651,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-insert-image-dialog-preview-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the Spreadsheet image Dialog preview.</div></div>

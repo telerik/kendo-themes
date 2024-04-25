@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the Breadcrumb.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-link-hover-text</td>
     <td>String</td>
     <td><code>$kendo-link-hover-text</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Breadcrumb link.</div></div>
@@ -541,7 +541,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-root-link-hover-text</td>
     <td>String</td>
     <td><code>$kendo-link-hover-text</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Breadcrumb root link.</div></div>

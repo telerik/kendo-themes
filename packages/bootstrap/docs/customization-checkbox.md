@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-border</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-checkbox-bg ), $gray-400, $gray-600 ))</code></td>
-    <td><code>var(--kendo-color-border-alt, #ced4da)</code></td>
+    <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of CheckBox.</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-focus-border</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-try-tint( $kendo-color-primary, 50% ))</code></td>
-    <td><code>var(--kendo-color-primary-emphasis, #6ea8fe)</code></td>
+    <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused CheckBox.</div></div>

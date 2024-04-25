@@ -266,7 +266,7 @@ The following table lists the available variables for customization.
     "warning": k-map-get( $kendo-theme-colors, "warning" ),
     "success": k-map-get( $kendo-theme-colors, "success" )
 )</code></td>
-    <td><code>("base": var(--kendo-color-base, #dee2e6), "error": var(--kendo-color-error, #dc3545), "info": var(--kendo-color-info, #0dcaf0), "warning": var(--kendo-color-warning, #ffc107), "success": var(--kendo-color-success, #146c43))</code></td>
+    <td><code>("base": var(--kendo-color-base, #dee2e6), "error": var(--kendo-color-error, #dc3545), "info": var(--kendo-color-info, #0dcaf0), "warning": var(--kendo-color-warning, #ffc107), "success": var(--kendo-color-success, #198754))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Chip.</div></div>

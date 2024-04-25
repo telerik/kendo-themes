@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColorGradient.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-focus-border</td>
     <td>String</td>
     <td><code>$kendo-hover-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused ColorGradient.</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-input-label-text</td>
     <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><code>var(--kendo-color-subtle, #606970)</code></td>
+    <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorGradient input labels.</div></div>

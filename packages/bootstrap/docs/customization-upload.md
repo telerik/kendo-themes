@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Upload.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-dropzone-border</td>
     <td>String</td>
     <td><code>$kendo-upload-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Upload dropzone.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-status-text</td>
     <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><code>var(--kendo-color-subtle, #606970)</code></td>
+    <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Upload status message.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-icon-color</td>
     <td>String</td>
     <td><code>$kendo-subtle-text</code></td>
-    <td><code>var(--kendo-color-subtle, #606970)</code></td>
+    <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the uploaded items icon.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-success-text</td>
     <td>String</td>
     <td><code>$kendo-color-success</code></td>
-    <td><code>var(--kendo-color-success, #146c43)</code></td>
+    <td><code>var(--kendo-color-success, #198754)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success text color of the Upload.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-success-bg</td>
     <td>String</td>
     <td><code>$kendo-color-success</code></td>
-    <td><code>var(--kendo-color-success, #146c43)</code></td>
+    <td><code>var(--kendo-color-success, #198754)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The success background color of the Upload progress bar.</div></div>

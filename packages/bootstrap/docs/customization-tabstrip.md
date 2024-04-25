@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TabStrip.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-hover-text</td>
     <td>String</td>
     <td><code>$kendo-link-hover-text</code></td>
-    <td><code>var(--kendo-color-primary-hover, #0b5ed7)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TabStrip items.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-item-selected-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected TabStrip items.</div></div>
@@ -481,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tabstrip-content-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TabStrip content.</div></div>
