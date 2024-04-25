@@ -1,4 +1,4 @@
-import { Signature, SignatureMaximized, SignatureNormal } from '../../signature';
+import { Signature, SignatureMaximized, SignatureNormal } from '..';
 
 
 const styles = `
@@ -21,23 +21,23 @@ export default () =>(
             {[ "normal", ...Signature.states ].map(( state ) => (
                 <>
                     <div>
-                        <SignatureNormal fillMode="flat" {...{ [state]: true }}/>
+                        <SignatureNormal {...{ [state]: true }}/>
                     </div>
                     <div dir="rtl">
-                        <SignatureNormal fillMode="flat" {...{ [state]: true }}/>
+                        <SignatureNormal {...{ [state]: true }}/>
                     </div>
                 </>
             ))}
 
             <div>
-                <SignatureNormal fillMode="flat" invalid focus />
+                <SignatureNormal invalid focus />
             </div>
             <div dir="rtl">
-                <SignatureNormal fillMode="flat" invalid focus />
+                <SignatureNormal invalid focus />
             </div>
 
             <div className="k-colspan-all k-col-span-full">
-                <SignatureMaximized fillMode="flat" />
+                <SignatureMaximized />
             </div>
 
         </div>
