@@ -1,4 +1,4 @@
-import { Signature } from '../../signature';
+import { Signature, SignatureMaximized, SignatureNormal } from '../../signature';
 
 
 const styles = `
@@ -18,50 +18,26 @@ export default () =>(
             <span>Signature</span>
             <span>Signature RTL</span>
 
-            <div>
-                <Signature fillMode="flat"/>
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="flat"/>
-            </div>
+            {[ "normal", ...Signature.states ].map(( state ) => (
+                <>
+                    <div>
+                        <SignatureNormal fillMode="flat" {...{ [state]: true }}/>
+                    </div>
+                    <div dir="rtl">
+                        <SignatureNormal fillMode="flat" {...{ [state]: true }}/>
+                    </div>
+                </>
+            ))}
 
             <div>
-                <Signature fillMode="flat" hover />
+                <SignatureNormal fillMode="flat" invalid focus />
             </div>
             <div dir="rtl">
-                <Signature fillMode="flat" hover />
-            </div>
-
-            <div>
-                <Signature fillMode="flat" focus />
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="flat" focus />
-            </div>
-
-            <div>
-                <Signature fillMode="flat" invalid />
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="flat" invalid />
-            </div>
-
-            <div>
-                <Signature fillMode="flat" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="flat" invalid focus />
-            </div>
-
-            <div>
-                <Signature fillMode="flat" disabled />
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="flat" disabled />
+                <SignatureNormal fillMode="flat" invalid focus />
             </div>
 
             <div className="k-colspan-all k-col-span-full">
-                <Signature fillMode="flat" maximized />
+                <SignatureMaximized fillMode="flat" />
             </div>
 
         </div>

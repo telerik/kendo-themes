@@ -58,7 +58,7 @@ $kendo-toolbar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-bg: $kendo-button-bg !default;
+$kendo-toolbar-bg: if($kendo-enable-color-system, k-color( surface ), $kendo-button-bg) !default;
 /// The text color of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-text: $kendo-button-text !default;

@@ -1,13 +1,29 @@
 @use "sass:map";
 @use "@progress/kendo-theme-core/scss/spacing/index.import.scss" as *;
 
+/// The none border radius used across the Components.
+/// @group radii
 $kendo-border-radius-none: map.get($kendo-spacing, 0) !default;
+/// The extra small border radius used across the Components.
+/// @group radii
 $kendo-border-radius-xs: map.get($kendo-spacing, 1px) !default;
+/// The small border radius used across the Components.
+/// @group radii
 $kendo-border-radius-sm: map.get($kendo-spacing, 0.5) !default;
+/// The medium border radius used across the Components.
+/// @group radii
 $kendo-border-radius-md: map.get($kendo-spacing, 1) !default;
+/// The large border radius used across the Components.
+/// @group radii
 $kendo-border-radius-lg: map.get($kendo-spacing, 2) !default;
+/// The extra large border radius used across the Components.
+/// @group radii
 $kendo-border-radius-xl: map.get($kendo-spacing, 3) !default;
+/// The third largest border radius used across the Components.
+/// @group radii
 $kendo-border-radius-xxl: map.get($kendo-spacing, 4) !default;
+/// The second largest border radius used across the Components.
+/// @group radii
 $kendo-border-radius-xxxl: map.get($kendo-spacing, 5) !default;
 
 $_default-border-radii: (
@@ -21,4 +37,6 @@ $_default-border-radii: (
     xxxl: $kendo-border-radius-xxxl
 ) !default;
 
+/// The global radii Map.
+/// @group radii
 $kendo-border-radii: $_default-border-radii !default;
