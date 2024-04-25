@@ -25,7 +25,7 @@ $kendo-tooltip-line-height: k-math-div( 20, 14 ) !default;
 
 /// The font size of the Tooltip title.
 /// @group tooltip
-$kendo-tooltip-title-font-size: calc( #{$kendo-tooltip-font-size} * 1.25 ) !default;
+$kendo-tooltip-title-font-size: calc( var( --kendo-font-size-sm, .75rem ) * 1.25 ) !default;
 /// The line height of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-line-height: 1 !default;

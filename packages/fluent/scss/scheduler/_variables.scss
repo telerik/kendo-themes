@@ -227,7 +227,7 @@ $kendo-scheduler-tooltip-title-margin-y: k-spacing(3) !default;
 $kendo-scheduler-tooltip-month-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font size of the day inside the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-day-font-size: calc( $kendo-scheduler-tooltip-month-font-size * 2 ) !default;
+$kendo-scheduler-tooltip-day-font-size: calc( var( --kendo-font-size-sm, .75rem ) * 2 ) !default;
 
 /// The max height of the events inside the Scheduler Tooltip.
 /// @group scheduler
