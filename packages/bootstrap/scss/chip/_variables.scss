@@ -147,7 +147,7 @@ $kendo-chip-solid-selected-text: null !default;
 $kendo-chip-outline-bg: $kendo-component-bg !default;
 /// The base text color of the outline Chip.
 /// @group chip
-$kendo-chip-outline-text: $kendo-chip-solid-text !default;
+$kendo-chip-outline-text: if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-chip-solid-text) !default;
 /// The base border color of the outline Chip.
 /// @group chip
 $kendo-chip-outline-border: $kendo-chip-outline-text !default;

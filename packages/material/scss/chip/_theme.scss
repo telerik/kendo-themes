@@ -31,7 +31,7 @@
                 }
             } @else if ($name == "warning") {
                 @include fill(
-                    $color: if($kendo-enable-color-system, $kendo-chip-outline-text, if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text))
+                    $color: if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), k-color( on-app-surface )))
                 );
 
                 &:focus,
@@ -44,14 +44,14 @@
                 &.k-hover {
                     @include fill(
                         $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-hover ), k-try-tint( $color, 80% )),
-                        $color: if($kendo-enable-color-system, $kendo-chip-outline-text, if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text))
+                        $color: if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), k-color( on-app-surface )))
                     );
                 }
 
                 &.k-selected {
                     @include fill(
                         $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-active ), k-try-tint( $color, 65% )),
-                        $color: if($kendo-enable-color-system, $kendo-chip-outline-text, if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text))
+                        $color: if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), k-color( on-app-surface )))
                     );
                 }
             } @else {
