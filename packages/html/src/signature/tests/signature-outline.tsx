@@ -1,4 +1,4 @@
-import { Signature } from '../../signature';
+import { Signature, SignatureMaximized, SignatureNormal } from '../../signature';
 
 
 const styles = `
@@ -18,50 +18,26 @@ export default () =>(
             <span>Signature</span>
             <span>Signature RTL</span>
 
-            <div>
-                <Signature fillMode="outline"/>
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="outline"/>
-            </div>
+            {[ "normal", ...Signature.states ].map(( state ) => (
+                <>
+                    <div>
+                        <SignatureNormal fillMode="outline" {...{ [state]: true }}/>
+                    </div>
+                    <div dir="rtl">
+                        <SignatureNormal fillMode="outline" {...{ [state]: true }}/>
+                    </div>
+                </>
+            ))}
 
             <div>
-                <Signature fillMode="outline" hover />
+                <SignatureNormal fillMode="outline" invalid focus />
             </div>
             <div dir="rtl">
-                <Signature fillMode="outline" hover />
-            </div>
-
-            <div>
-                <Signature fillMode="outline" focus />
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="outline" focus />
-            </div>
-
-            <div>
-                <Signature fillMode="outline" invalid />
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="outline" invalid />
-            </div>
-
-            <div>
-                <Signature fillMode="outline" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="outline" invalid focus />
-            </div>
-
-            <div>
-                <Signature fillMode="outline" disabled />
-            </div>
-            <div dir="rtl">
-                <Signature fillMode="outline" disabled />
+                <SignatureNormal fillMode="outline" invalid focus />
             </div>
 
             <div className="k-colspan-all k-col-span-full">
-                <Signature fillMode="outline" maximized />
+                <SignatureMaximized fillMode="outline" />
             </div>
 
         </div>
