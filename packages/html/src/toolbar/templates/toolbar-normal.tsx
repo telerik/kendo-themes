@@ -1,11 +1,11 @@
-import ToolBar from "../toolbar.spec";
+import { Toolbar } from "../toolbar.spec";
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { MenuButton } from '../../menu-button';
 import { SplitButton } from '../../split-button';
 
 export const ToolbarNormal = (props) => (
-    <ToolBar children={[
+    <Toolbar children={[
         <Button key="toolbar-button">Button</Button>,
         <MenuButton key="toolbar-menu-button" text="Menu button"></MenuButton>,
         <SplitButton key="toolbar-split-button">Split button</SplitButton>,
@@ -16,5 +16,5 @@ export const ToolbarNormal = (props) => (
         </ButtonGroup>
     ]}
     {...props}>
-    </ToolBar>
+    </Toolbar>
 );

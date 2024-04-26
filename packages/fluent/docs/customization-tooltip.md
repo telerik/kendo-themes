@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-title-font-size</td>
     <td></td>
-    <td><code>calc( #{$kendo-tooltip-font-size} * 1.25 )</code></td>
+    <td><code>calc( var( --kendo-font-size-sm, .75rem ) * 1.25 )</code></td>
     <td></td>
 </tr>
 <tr>

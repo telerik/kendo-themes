@@ -46,17 +46,17 @@ export default () =>(
                                     <col style={{ width: "300px" }} />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row" style={{ height: "37px" }}>
                                         <TableTd colspan={1}>
                                             Chai
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row k-alt" alt style={{ height: "37px" }}>
                                         <TableTd colspan={1}>
                                             Chang
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row" style={{ height: "37px" }}>
                                         <TableTd colspan={1}>
                                             Aniseed Syrup
                                         </TableTd>
@@ -75,17 +75,17 @@ export default () =>(
                                     <col style={{ width: "300px" }} /><col style={{ width: "300px" }} /><col style={{ width: "300px" }} />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row" style={{ height: "37px" }}>
                                         <TableTd colspan={1}>39</TableTd>
                                         <TableTd colspan={1}>18</TableTd>
                                         <TableTd colspan={1}>false</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row k-alt" alt style={{ height: "37px" }}>
                                         <TableTd colspan={1}>17</TableTd>
                                         <TableTd colspan={1}>19</TableTd>
                                         <TableTd colspan={1}>false</TableTd>
                                     </TableRow>
-                                    <TableRow style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row" style={{ height: "37px" }}>
                                         <TableTd colspan={1}>13</TableTd>
                                         <TableTd colspan={1}>10</TableTd>
                                         <TableTd colspan={1}>false</TableTd>

@@ -3,8 +3,15 @@
 /// The width of the border around the Calendar.
 /// @group calendar
 $kendo-calendar-border-width: 1px !default;
+
+/// The font family of the Calendar.
+/// @group calendar
 $kendo-calendar-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the Calendar.
+/// @group calendar
 $kendo-calendar-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the Calendar.
+/// @group calendar
 $kendo-calendar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The size of the cells in the Calendar.
@@ -86,7 +93,11 @@ $kendo-calendar-header-cell-width: $kendo-calendar-cell-size !default;
 /// The height of the header cells in the Calendar.
 /// @group calendar
 $kendo-calendar-header-cell-height: $kendo-calendar-cell-size !default;
+/// The font size of the header cells in the Calendar.
+/// @group calendar
 $kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line height of the header cells in the Calendar.
+/// @group calendar
 $kendo-calendar-header-cell-line-height: 2 !default;
 
 /// The background color of the header cells in the Calendar.

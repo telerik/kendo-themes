@@ -35,11 +35,11 @@ export default () =>(
                                     <col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd>1</TableTd>
                                         <TableTd>Row</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Alt row</TableTd>
                                     </TableRow>
@@ -78,11 +78,11 @@ export default () =>(
                                         <col />
                                     </colgroup>
                                     <TableTbody>
-                                        <TableRow>
+                                        <TableRow className="k-master-row">
                                             <TableTd>1</TableTd>
                                             <TableTd>Row</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-alt" alt>
+                                        <TableRow className="k-master-row k-alt" alt>
                                             <TableTd>2</TableTd>
                                             <TableTd>Alt row</TableTd>
                                         </TableRow>
@@ -131,11 +131,11 @@ export default () =>(
                                     <col />
                                 </colgroup>
                                 <TableTbody>
-                                    <TableRow>
+                                    <TableRow className="k-master-row">
                                         <TableTd>1</TableTd>
                                         <TableTd>Row</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-alt" alt>
+                                    <TableRow className="k-master-row k-alt" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Alt row</TableTd>
                                     </TableRow>
@@ -177,11 +177,11 @@ export default () =>(
                                         <col />
                                     </colgroup>
                                     <TableTbody>
-                                        <TableRow>
+                                        <TableRow className="k-master-row">
                                             <TableTd>1</TableTd>
                                             <TableTd>Row</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-alt" alt>
+                                        <TableRow className="k-master-row k-alt" alt>
                                             <TableTd>2</TableTd>
                                             <TableTd>Alt row</TableTd>
                                         </TableRow>

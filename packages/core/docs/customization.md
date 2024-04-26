@@ -34,7 +34,7 @@ k-color-luminance($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L298-L304
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-contrast.import.scss#L298-L304
 @function k-color-luminance($color) {
     $red: k-list-nth( $_linear-channel-values, k-color-red( $color ) + 1 );
     $green: k-list-nth( $_linear-channel-values, k-color-green( $color ) + 1 );
@@ -70,7 +70,7 @@ k-color-contrast-ratio($background, $foreground) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L315-L320
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-contrast.import.scss#L315-L320
 @function k-color-contrast-ratio($background, $foreground) {
     $backLum: k-color-luminance( $background ) + .05;
     $foreLum: k-color-luminance( $foreground ) + .05;
@@ -102,7 +102,7 @@ k-is-dark($color) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L327-L329
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-contrast.import.scss#L327-L329
 @function k-is-dark($color) {
     @return if( k-color-luminance( $color ) < .5, true, false );
 }
@@ -131,7 +131,7 @@ k-is-light($color) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L336-L338
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-contrast.import.scss#L336-L338
 @function k-is-light($color) {
     @return if( k-color-luminance( $color ) < .5, false, true );
 }
@@ -170,7 +170,7 @@ k-contrast-color($background, $dark, $light, $min-ratio) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L350-L369
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-contrast.import.scss#L350-L369
 @function k-contrast-color($background, $dark, $light, $min-ratio) {
     $foregrounds: $light, $dark, #ffffff, #000000;
     $max-ratio: 0;
@@ -225,7 +225,7 @@ k-color-tint($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L37-L39
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-manipulation.import.scss#L37-L39
 @function k-color-tint($color, $level) {
     @return k-color-level( $color, -$level );
 }
@@ -263,7 +263,7 @@ k-color-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L50-L52
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-manipulation.import.scss#L50-L52
 @function k-color-shade($color, $level) {
     @return k-color-level( $color, $level );
 }
@@ -295,7 +295,7 @@ k-try-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L60-L68
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-manipulation.import.scss#L60-L68
 @function k-try-shade($color, $level) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -333,7 +333,7 @@ k-try-tint($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L76-L84
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-manipulation.import.scss#L76-L84
 @function k-try-tint($color, $level) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -371,7 +371,7 @@ k-try-darken($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L92-L99
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-manipulation.import.scss#L92-L99
 @function k-try-darken($color, $level) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -408,7 +408,7 @@ k-try-lighten($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L107-L114
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-manipulation.import.scss#L107-L114
 @function k-try-lighten($color, $level) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -451,7 +451,7 @@ k-rgba-to-mix($color, $bg) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L125-L129
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-manipulation.import.scss#L125-L129
 @function k-rgba-to-mix($color, $bg) {
     $percent: k-color-alpha( $color ) * 100%;
 
@@ -488,7 +488,7 @@ k-generate-color-variations($name, $color, $theme) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-variations.import.scss#L8-L122
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-variations.import.scss#L8-L122
 @function k-generate-color-variations($name, $color, $theme) {
     $result: ();
 
@@ -636,7 +636,7 @@ k-color-alpha($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L8-L10
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L8-L10
 @function k-color-alpha($color) {
     @return alpha( $color );
 }
@@ -671,7 +671,7 @@ k-color-red($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L18-L20
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L18-L20
 @function k-color-red($color) {
     @return red( $color );
 }
@@ -706,7 +706,7 @@ k-color-green($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L28-L30
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L28-L30
 @function k-color-green($color) {
     @return green( $color );
 }
@@ -741,7 +741,7 @@ k-color-blue($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L38-L40
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L38-L40
 @function k-color-blue($color) {
     @return blue( $color );
 }
@@ -776,7 +776,7 @@ k-color-hue($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L48-L50
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L48-L50
 @function k-color-hue($color) {
     @return hue( $color );
 }
@@ -811,7 +811,7 @@ k-color-saturation($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L58-L60
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L58-L60
 @function k-color-saturation($color) {
     @return saturation( $color );
 }
@@ -846,7 +846,7 @@ k-color-lightness($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L68-L70
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L68-L70
 @function k-color-lightness($color) {
     @return lightness( $color );
 }
@@ -887,7 +887,7 @@ k-color-mix($color1, $color2, $weight) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L80-L82
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L80-L82
 @function k-color-mix($color1, $color2, $weight) {
     @return mix( $color1, $color2, $weight );
 }
@@ -925,7 +925,7 @@ k-color-darken($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L91-L93
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L91-L93
 @function k-color-darken($color, $amount) {
     @return darken( $color, $amount );
 }
@@ -963,7 +963,7 @@ k-color-lighten($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L102-L104
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L102-L104
 @function k-color-lighten($color, $amount) {
     @return lighten( $color, $amount );
 }
@@ -1001,7 +1001,7 @@ k-color-adjust-hue($color, $degrees) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L113-L115
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L113-L115
 @function k-color-adjust-hue($color, $degrees) {
     @return adjust-hue( $color, $degrees );
 }
@@ -1039,7 +1039,7 @@ k-color-saturate($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L124-L126
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L124-L126
 @function k-color-saturate($color, $amount) {
     @return saturate( $color, $amount );
 }
@@ -1077,7 +1077,7 @@ k-color-desaturate($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L135-L137
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L135-L137
 @function k-color-desaturate($color, $amount) {
     @return desaturate( $color, $amount );
 }
@@ -1112,7 +1112,7 @@ k-color-grayscale($color) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L145-L147
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L145-L147
 @function k-color-grayscale($color) {
     @return grayscale( $color );
 }
@@ -1148,7 +1148,7 @@ k-color-complement($color) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L156-L158
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L156-L158
 @function k-color-complement($color) {
     @return complement( $color );
 }
@@ -1183,7 +1183,7 @@ k-color-invert($color) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color.import.scss#L166-L168
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L166-L168
 @function k-color-invert($color) {
     @return invert( $color );
 }
@@ -1212,7 +1212,7 @@ k-escape-svg($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_escape-string.import.scss#L15-L28
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_escape-string.import.scss#L15-L28
 @function k-escape-svg($string) {
     @if k-string-index($string, "data:image/svg+xml") {
         @each $char, $encoded in $_kendo-svg-escaped-characters {
@@ -1252,7 +1252,7 @@ k-escape-class-name($text) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_escape-string.import.scss#L40-L48
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_escape-string.import.scss#L40-L48
 @function k-escape-class-name($text) {
     $_text: $text;
 
@@ -1300,7 +1300,7 @@ $foo: "baz";
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_lang.import.scss#L12-L14
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_lang.import.scss#L12-L14
 @function k-if-var($var, $fallback) {
     @return if( $var != null, $var, $fallback );
 }
@@ -1341,7 +1341,7 @@ k-list-append($list, $val, $separator) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L9-L11
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L9-L11
 @function k-list-append($list, $val, $separator) {
     @return append( $list, $val, $separator );
 }
@@ -1380,7 +1380,7 @@ k-list-includes($list, $value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L21-L23
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L21-L23
 @function k-list-includes($list, $value) {
     @return k-list-index( $list, $value ) != null;
 }
@@ -1418,7 +1418,7 @@ k-list-index($list, $value) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L32-L34
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L32-L34
 @function k-list-index($list, $value) {
     @return index( $list, $value );
 }
@@ -1454,7 +1454,7 @@ k-list-is-bracketed($list) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L43-L45
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L43-L45
 @function k-list-is-bracketed($list) {
     @return is-bracketed( $list );
 }
@@ -1499,7 +1499,7 @@ k-list-join($list1, $list2, $separator, $bracketed) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L57-L59
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L57-L59
 @function k-list-join($list1, $list2, $separator, $bracketed) {
     @return join( $list1, $list2, $separator, $bracketed );
 }
@@ -1534,7 +1534,7 @@ k-list-length($list) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L67-L69
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L67-L69
 @function k-list-length($list) {
     @return length( $list );
 }
@@ -1572,7 +1572,7 @@ k-list-nth($list, $n) // => Any
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L78-L80
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L78-L80
 @function k-list-nth($list, $n) {
     @return nth( $list, $n );
 }
@@ -1607,7 +1607,7 @@ k-list-reverse($list) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L88-L103
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L88-L103
 @function k-list-reverse($list) {
     $result: ();
 
@@ -1655,7 +1655,7 @@ k-list-separator($list) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L111-L113
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L111-L113
 @function k-list-separator($list) {
     @return list-separator( $list );
 }
@@ -1696,7 +1696,7 @@ k-list-set-nth($list, $n, $val) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L123-L125
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L123-L125
 @function k-list-set-nth($list, $n, $val) {
     @return set-nth( $list, $n, $value );
 }
@@ -1734,7 +1734,7 @@ k-list-zip($list1, $list2) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L134-L136
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_list.import.scss#L134-L136
 @function k-list-zip($list1, $list2) {
     @return zip( $lists... );
 }
@@ -1773,7 +1773,7 @@ k-map-get($map, $key) // =>
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L7-L12
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L7-L12
 @function k-map-get($map, $key) {
     @each $key in $keys {
         $map: map-get( $map, $key ); // stylelint-disable-line
@@ -1815,7 +1815,7 @@ k-map-has-key($map, $key) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L22-L24
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L22-L24
 @function k-map-has-key($map, $key) {
     @return map-has-key( $map, $key );
 }
@@ -1850,7 +1850,7 @@ k-map-keys($map) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L32-L34
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L32-L34
 @function k-map-keys($map) {
     @return map-keys( $map );
 }
@@ -1888,7 +1888,7 @@ k-map-merge($map, $args) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L43-L48
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L43-L48
 @function k-map-merge($map, $args) {
     @each $arg in $args {
         $map: map-merge( $map, $arg ); // stylelint-disable-line
@@ -1926,7 +1926,7 @@ k-map-deep-merge($maps) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L56-L78
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L56-L78
 @function k-map-deep-merge($maps) {
     $merged: ();
 
@@ -1984,7 +1984,7 @@ k-map-remove($map, $keys) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L87-L89
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L87-L89
 @function k-map-remove($map, $keys) {
     @return map-remove( $map, $keys... );
 }
@@ -2025,7 +2025,7 @@ k-map-set($map, $key, $value) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L99-L101
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L99-L101
 @function k-map-set($map, $key, $value) {
     @return k-map-merge( $map, ( $key: $value ) );
 }
@@ -2060,7 +2060,7 @@ k-map-values($map) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L109-L111
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L109-L111
 @function k-map-values($map) {
     @return map-values( $map );
 }
@@ -2095,7 +2095,7 @@ k-map-negate($map) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L119-L135
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_map.import.scss#L119-L135
 @function k-map-negate($map) {
     $_map-neg: ();
 
@@ -2143,7 +2143,7 @@ k-math-abs($number) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L7-L9
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L7-L9
 @function k-math-abs($number) {
     @return abs( $number );
 }
@@ -2178,7 +2178,7 @@ k-math-ceil($number) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L17-L19
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L17-L19
 @function k-math-ceil($number) {
     @return ceil( $number );
 }
@@ -2213,7 +2213,7 @@ k-math-floor($number) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L27-L29
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L27-L29
 @function k-math-floor($number) {
     @return floor( $number );
 }
@@ -2256,7 +2256,7 @@ k-math-clamp($number, $min, $max) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L41-L43
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L41-L43
 @function k-math-clamp($number, $min, $max) {
     @return k-math-max( $min, k-math-min( $max, $number ) );
 }
@@ -2295,7 +2295,7 @@ k-math-compatible($a, $b) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L53-L55
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L53-L55
 @function k-math-compatible($a, $b) {
     @return comparable( $a, $b );
 }
@@ -2334,7 +2334,7 @@ k-math-div($a, $b) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L65-L67
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L65-L67
 @function k-math-div($a, $b) {
     @return ( $a / $b );
 }
@@ -2370,7 +2370,7 @@ k-math-is-unitless($number) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L76-L78
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L76-L78
 @function k-math-is-unitless($number) {
     @return unitless( $number );
 }
@@ -2409,7 +2409,7 @@ k-math-max($a, $b) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L88-L90
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L88-L90
 @function k-math-max($a, $b) {
     @return max( $a, $b );
 }
@@ -2448,7 +2448,7 @@ k-math-min($a, $b) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L100-L102
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L100-L102
 @function k-math-min($a, $b) {
     @return min( $a, $b );
 }
@@ -2487,7 +2487,7 @@ k-math-mod($a, $b) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L112-L114
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L112-L114
 @function k-math-mod($a, $b) {
     @return ( $a % $b );
 }
@@ -2526,7 +2526,7 @@ k-math-mul($a, $b) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L124-L126
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L124-L126
 @function k-math-mul($a, $b) {
     @return ( $a * $b );
 }
@@ -2561,7 +2561,7 @@ k-math-percentage($number) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L134-L136
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L134-L136
 @function k-math-percentage($number) {
     @return percentage( $number );
 }
@@ -2599,7 +2599,7 @@ k-math-pow($x, $n) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L145-L164
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L145-L164
 @function k-math-pow($x, $n) {
     $ret: 1;
 
@@ -2650,7 +2650,7 @@ k-math-random($limit) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L172-L178
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L172-L178
 @function k-math-random($limit) {
     @if ( $limit == null ) { // stylelint-disable-line
         @return random();
@@ -2693,7 +2693,7 @@ k-math-round($number, $precision) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L188-L197
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L188-L197
 @function k-math-round($number, $precision) {
     @if ( $precision == 0 ) {
         @return round( $number );
@@ -2734,7 +2734,7 @@ k-math-unit($number) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L205-L207
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L205-L207
 @function k-math-unit($number) {
     @return unit( $number );
 }
@@ -2769,7 +2769,7 @@ k-math-strip-unit($number) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L215-L221
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_math.import.scss#L215-L221
 @function k-math-strip-unit($number) {
     @if ( k-meta-type-of( $number ) == "number" ) and not k-math-is-unitless( $number ) {
         @return k-math-div( $number, 1 * k-math-unit( $number) );
@@ -2812,7 +2812,7 @@ k-meta-call($function, $args) // => Any
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L11-L13
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L11-L13
 @function k-meta-call($function, $args) {
     @return call( $function, $args... );
 }
@@ -2848,7 +2848,7 @@ k-meta-function-exists($name) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L22-L28
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L22-L28
 @function k-meta-function-exists($name) {
     @if $name == "" {
         @return false;
@@ -2894,7 +2894,7 @@ k-meta-get-function($name, $css, $module) // => Function
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L39-L41
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L39-L41
 @function k-meta-get-function($name, $css, $module) {
     @return get-function( $name, $args... );
 }
@@ -2930,7 +2930,7 @@ k-meta-inspect($value) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L50-L52
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L50-L52
 @function k-meta-inspect($value) {
     @return inspect( $value );
 }
@@ -2966,7 +2966,7 @@ k-meta-keywords($args) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L61-L63
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L61-L63
 @function k-meta-keywords($args) {
     @return keywords( $args );
 }
@@ -3002,7 +3002,7 @@ k-meta-type-of($value) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L72-L74
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L72-L74
 @function k-meta-type-of($value) {
     @return type-of( $value );
 }
@@ -3038,7 +3038,7 @@ k-meta-variable-exists($name) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L83-L85
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L83-L85
 @function k-meta-variable-exists($name) {
     @return variable-exists( $name );
 }
@@ -3074,7 +3074,7 @@ k-meta-is-number($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L96-L98
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L96-L98
 @function k-meta-is-number($value) {
     @return k-meta-type-of( $value ) == "number";
 }
@@ -3110,7 +3110,7 @@ k-meta-is-integer($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L109-L111
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L109-L111
 @function k-meta-is-integer($value) {
     @return k-meta-is-number( $value ) and k-math-round( $value ) == $value;
 }
@@ -3146,7 +3146,7 @@ k-meta-is-time($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L122-L124
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L122-L124
 @function k-meta-is-time($value) {
     @return k-meta-is-number( $value ) and k-string-index( "ms" "s", k-math-unit( $value ) ) != null;
 }
@@ -3182,7 +3182,7 @@ k-meta-is-duration($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L135-L137
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L135-L137
 @function k-meta-is-duration($value) {
     @return k-meta-is-time( $value );
 }
@@ -3218,7 +3218,7 @@ k-meta-is-angle($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L148-L150
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L148-L150
 @function k-meta-is-angle($value) {
     @return k-meta-is-number( $value ) and k-string-index( "deg" "rad" "grad" "turn", k-math-unit( $value ) ) != null;
 }
@@ -3254,7 +3254,7 @@ k-meta-is-frequency($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L161-L163
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L161-L163
 @function k-meta-is-frequency($value) {
     @return k-meta-is-number( $value ) and k-string-index( "Hz" "kHz", k-math-unit( $value ) ) != null;
 }
@@ -3291,7 +3291,7 @@ k-meta-is-relative-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L176-L178
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L176-L178
 @function k-meta-is-relative-length($value) {
     @return k-meta-is-number( $value ) and k-string-index( "em" "ex" "ch" "rem" "vw" "vh" "vmin" "vmax", k-math-unit( $value ) ) != null;
 }
@@ -3327,7 +3327,7 @@ k-meta-is-absolute-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L189-L191
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L189-L191
 @function k-meta-is-absolute-length($value) {
     @return k-meta-is-number( $value ) and k-string-index( "cm" "mm" "in" "px" "pt" "pc", k-math-unit( $value ) ) != null;
 }
@@ -3363,7 +3363,7 @@ k-meta-is-percentage($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L202-L204
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L202-L204
 @function k-meta-is-percentage($value) {
     @return k-meta-is-number( $value ) and k-math-unit( $value ) == "%";
 }
@@ -3400,7 +3400,7 @@ k-meta-is-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L216-L218
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L216-L218
 @function k-meta-is-length($value) {
     @return k-meta-is-relative-length( $value ) or k-meta-is-absolute-length( $value );
 }
@@ -3436,7 +3436,7 @@ k-meta-is-resolution($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L229-L231
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L229-L231
 @function k-meta-is-resolution($value) {
     @return k-meta-is-number( $value ) and k-string-index( "dpi" "dpcm" "dppx", k-math-unit( $value ) ) != null;
 }
@@ -3471,7 +3471,7 @@ k-meta-is-position($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L241-L243
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_meta.import.scss#L241-L243
 @function k-meta-is-position($value) {
     @return k-meta-is-length( $value ) or k-meta-is-percentage( $value ) or k-string-index( "top" "right" "bottom" "left" "center", $value ) != null;
 }
@@ -3509,7 +3509,7 @@ k-string-index($string, $substring) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L17-L19
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L17-L19
 @function k-string-index($string, $substring) {
     @return str-index( $string, $substring );
 }
@@ -3550,7 +3550,7 @@ k-string-insert($string, $insert, $index) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L29-L31
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L29-L31
 @function k-string-insert($string, $insert, $index) {
     @return str-insert( $string, $insert, $index );
 }
@@ -3585,7 +3585,7 @@ k-string-length($string) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L39-L41
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L39-L41
 @function k-string-length($string) {
     @return str-length( $string );
 }
@@ -3620,7 +3620,7 @@ k-string-quote($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L49-L51
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L49-L51
 @function k-string-quote($string) {
     @return quote( $string );
 }
@@ -3662,7 +3662,7 @@ k-string-replace($string, $search, $replace) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L64-L76
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L64-L76
 @function k-string-replace($string, $search, $replace) {
     @if k-meta-type-of( $string ) == number {
         $string: $string + "";
@@ -3713,7 +3713,7 @@ k-string-slice($string, $start-at, $end-at) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L86-L88
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L86-L88
 @function k-string-slice($string, $start-at, $end-at) {
     @return str-slice( $string, $start-at, $end-at );
 }
@@ -3748,7 +3748,7 @@ k-string-to-lower-case($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L96-L98
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L96-L98
 @function k-string-to-lower-case($string) {
     @return to-lower-case( $string );
 }
@@ -3783,7 +3783,7 @@ k-string-to-upper-case($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L106-L108
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L106-L108
 @function k-string-to-upper-case($string) {
     @return to-upper-case( $string );
 }
@@ -3813,7 +3813,7 @@ k-string-unique-id() // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L115-L117
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L115-L117
 @function k-string-unique-id() {
     @return unique-id();
 }
@@ -3848,7 +3848,7 @@ k-string-unquote($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L125-L127
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_string.import.scss#L125-L127
 @function k-string-unquote($string) {
     @return unquote( $string );
 }
@@ -3860,36 +3860,6 @@ k-string-unquote($string) // => String
 ## Variables
 
 The following table lists the available variables for customizing the Theme Core theme.
-
-### Common
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-line-height-sm</td>
-    <td>Number</td>
-    <td><code>1.25</code></td>
-    <td><code>1.25</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small line height across all components.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
 
 ### Accessibility
 
@@ -4081,6 +4051,126 @@ The following table lists the available variables for customizing the Theme Core
 </tbody>
 </table>
 
+### Radii
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-border-radius-none</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0)</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The none border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xs</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1px)</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-sm</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0.5)</code></td>
+    <td><code>0.125rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-md</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1)</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-lg</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1.5)</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 2)</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xxl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 3)</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xxxl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 4)</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-full</td>
+    <td>Number</td>
+    <td><code>9999px</code></td>
+    <td><code>9999px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radii</td>
+    <td>Map</td>
+    <td><code>k-map-merge($_default-border-radii, $kendo-border-radii)</code></td>
+    <td><code>(none: 0px, xs: 1px, sm: 0.125rem, md: 0.25rem, lg: 0.375rem, xl: 0.5rem, xxl: 0.75rem, xxxl: 1rem, full: 9999px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Spacing
 
 <table class="theme-variables">
@@ -4216,6 +4306,16 @@ The following table lists the available variables for customizing the Theme Core
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small line height across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height-sm</td>
+    <td>Number</td>
+    <td><code>1.25</code></td>
+    <td><code>1.25</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small line height across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -4559,7 +4659,7 @@ Outputs a module once, no matter how many times it is included.
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/mixins/_import-once.scss#L9-L14
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/mixins/_import-once.scss#L9-L14
 @mixin exports($name) {
     @if (k-list-index( $_kendo-imported-modules, $name ) == null) { // stylelint-disable-line
         $_kendo-imported-modules: k-list-append( $_kendo-imported-modules, $name ) !global;

@@ -16,7 +16,7 @@ export default () =>(
                 <ToolbarResizable>
                     <Button icon="bold"></Button>
                     <Button>Button</Button>
-                    <Button className="k-toggle-button">Toggle</Button>
+                    <Button>Toggle</Button>
                     <ToolbarSeparator></ToolbarSeparator>
                     <ButtonGroup>
                         <Button className="k-group-start" icon="align-left">Left</Button>
@@ -40,7 +40,7 @@ export default () =>(
                 <ToolbarResizable>
                     <Button icon="bold"></Button>
                     <Button>Button</Button>
-                    <Button className="k-toggle-button">Toggle</Button>
+                    <Button>Toggle</Button>
                     <ToolbarSeparator></ToolbarSeparator>
                     <ButtonGroup>
                         <Button className="k-group-start" icon="align-left">Left</Button>
@@ -81,12 +81,12 @@ export default () =>(
             </section>
             <section className="k-colspan-all k-col-span-full">
                 <ToolbarResizable>
-                    <Button icon="align-left" className="k-toggle-button">Normal</Button>
-                    <Button icon="align-left" className="k-toggle-button" hover>Hover</Button>
-                    <Button icon="align-left" className="k-toggle-button" focus>Focus</Button>
-                    <Button icon="align-left" className="k-toggle-button" active>Active</Button>
-                    <Button icon="align-left" className="k-toggle-button" selected>Selected</Button>
-                    <Button icon="align-left" className="k-toggle-button" disabled>Disabled</Button>
+                    <Button icon="align-left">Normal</Button>
+                    <Button icon="align-left" hover>Hover</Button>
+                    <Button icon="align-left" focus>Focus</Button>
+                    <Button icon="align-left" active>Active</Button>
+                    <Button icon="align-left" selected>Selected</Button>
+                    <Button icon="align-left" disabled>Disabled</Button>
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} focus></Button>
                 </ToolbarResizable>
             </section>

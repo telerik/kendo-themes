@@ -41,31 +41,31 @@ export const GridWithMultiColumnHeaders = ({ headerWrapClassName, contentClassNa
                                 <col />
                             </colgroup>
                             <TableTbody>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>1</TableTd>
                                     <TableTd>Chai</TableTd>
                                     <TableTd>39</TableTd>
                                     <TableTd>18</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd>2</TableTd>
                                     <TableTd>Chang</TableTd>
                                     <TableTd>17</TableTd>
                                     <TableTd>19</TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>3</TableTd>
                                     <TableTd>Aniseed Syrup</TableTd>
                                     <TableTd>13</TableTd>
                                     <TableTd>10</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd>4</TableTd>
                                     <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                     <TableTd>53</TableTd>
                                     <TableTd>22</TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>5</TableTd>
                                     <TableTd>Chef Anton&apos;s Gumbo Mix</TableTd>
                                     <TableTd>0</TableTd>

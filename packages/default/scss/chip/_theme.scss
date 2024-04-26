@@ -58,7 +58,7 @@
             @if ($name == "base") {
                 @include fill(
                     $kendo-chip-outline-text,
-                    $kendo-chip-outline-bg,
+                    transparent,
                     $kendo-chip-outline-border
                 );
 
@@ -83,8 +83,8 @@
                 }
             } @else if ($name == "warning") {
                 @include fill(
-                    if($kendo-enable-color-system, $kendo-chip-outline-text, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text)),
-                    if($kendo-enable-color-system, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
+                    if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text)),
+                    if($kendo-enable-color-system, transparent, if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
                     if($kendo-enable-color-system, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
                 );
 
@@ -110,7 +110,7 @@
             } @else {
                 @include fill(
                     if($kendo-enable-color-system, k-color( #{$name}-on-surface ), k-try-shade( $color, 25% )),
-                    if($kendo-enable-color-system, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
+                    if($kendo-enable-color-system, transparent, if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
                     if($kendo-enable-color-system, k-color( #{$name}-on-surface ), k-try-shade( $color, 25% ))
                 );
 

@@ -36,7 +36,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                                 <div className="k-filtercell-operator">
                                                     <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                     {' '}
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -48,7 +48,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                                 <div className="k-filtercell-operator">
                                                     <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                     {' '}
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -60,7 +60,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                                 <div className="k-filtercell-operator">
                                                     <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                     {' '}
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -72,7 +72,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                                 <div className="k-filtercell-operator">
                                                     <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                     {' '}
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +82,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                             <div className="k-filtercell-wrapper">
                                                 <DropdownList />
                                                 <div className="k-filtercell-operator">
-                                                    <Button icon="filter-clear"></Button>
+                                                    <Button disabled icon="filter-clear"></Button>
                                                 </div>
                                             </div>
                                         </div>
@@ -103,35 +103,35 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                 <col />
                             </colgroup>
                             <TableTbody>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>1</TableTd>
                                     <TableTd>Chai</TableTd>
                                     <TableTd>10 boxes x 20 bags</TableTd>
                                     <TableTd>18</TableTd>
                                     <TableTd>false</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd>2</TableTd>
                                     <TableTd>Chang</TableTd>
                                     <TableTd>24 - 12 oz bottles</TableTd>
                                     <TableTd>19</TableTd>
                                     <TableTd>false</TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>3</TableTd>
                                     <TableTd>Aniseed Syrup</TableTd>
                                     <TableTd>12 - 550 ml bottles</TableTd>
                                     <TableTd>10</TableTd>
                                     <TableTd>false</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd>4</TableTd>
                                     <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                     <TableTd>48 - 6 oz jars</TableTd>
                                     <TableTd>22</TableTd>
                                     <TableTd>false</TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>5</TableTd>
                                     <TableTd>Grandma&apos;s Boysenberry Spread</TableTd>
                                     <TableTd>12 - 8 oz jars</TableTd>

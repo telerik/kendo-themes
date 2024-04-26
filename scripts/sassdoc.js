@@ -40,6 +40,48 @@ function _capitalize(string) {
         verbose: true
     });
 
+    // Add variables from theme core that are not present in the current theme
+    if (meta.name !== 'core') {
+        const coreRawDataFile = path.resolve( themeDir, '../core/dist/meta', 'sassdoc-raw-data.json' );
+        if (fs.existsSync( coreRawDataFile ) === false) {
+            return;
+        }
+
+        let coreVarNames = [];
+        let themeVarNames = [];
+
+        const coreRawData = JSON.parse( fs.readFileSync( coreRawDataFile ) );
+
+        coreRawData.forEach( item => {
+            if ( item.context.type === 'variable' ) {
+                coreVarNames.push( item.context.name );
+                return;
+            }
+
+            // Push null to preserve the index
+            coreVarNames.push( null );
+        });
+
+        rawData.forEach( item => {
+            if ( item.context.type === 'variable' ) {
+                themeVarNames.push( item.context.name );
+            }
+        });
+
+        coreVarNames.forEach( (coreVarName, index) => {
+            if ( coreVarName === null ) {
+                return;
+            }
+
+            if ( themeVarNames.includes( coreVarName ) === true ) {
+                return;
+            }
+            let coreVar = coreRawData[index];
+            coreVar.file.path = `core/scss/${coreVar.file.path}`;
+            rawData.push( coreVar );
+        });
+    }
+
     // Write raw data to file
     fs.writeFileSync(
         path.resolve( themeDir, 'dist/meta', 'sassdoc-raw-data.json' ),
@@ -50,6 +92,9 @@ function _capitalize(string) {
         // Normalize paths
         .map((item) => {
             item.file.path = item.file.path.replace(/\\/g, '/');
+            if ( item.file.path.startsWith('core/scss/') === false ) {
+                item.file.path = `${meta.name}/scss/${item.file.path}`;
+            }
             return item;
         })
 

@@ -46,6 +46,7 @@ $kendo-chip-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// @group chip
 $kendo-chip-md-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the large Chip.
+/// @group chip
 $kendo-chip-lg-font-size: var( --kendo-font-size, inherit )  !default;
 
 /// The Chip's line height that is related to the $kendo-font-size.
@@ -146,7 +147,7 @@ $kendo-chip-solid-selected-text: null !default;
 $kendo-chip-outline-bg: $kendo-component-bg !default;
 /// The base text color of the outline Chip.
 /// @group chip
-$kendo-chip-outline-text: $kendo-chip-solid-text !default;
+$kendo-chip-outline-text: if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-chip-solid-text) !default;
 /// The base border color of the outline Chip.
 /// @group chip
 $kendo-chip-outline-border: $kendo-chip-outline-text !default;

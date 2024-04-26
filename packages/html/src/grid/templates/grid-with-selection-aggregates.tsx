@@ -35,31 +35,31 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
                                 <col />
                             </colgroup>
                             <TableTbody>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd className={ aggregated ? "k-selected" : "" }>Chai</TableTd>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>39</TableTd>
                                     <TableTd>false</TableTd>
                                     <TableTd>0</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>Chang</TableTd>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>17</TableTd>
                                     <TableTd>false</TableTd>
                                     <TableTd>40</TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd className={ aggregated ? "k-selected" : "" }>Aniseed Syrup</TableTd>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>13</TableTd>
                                     <TableTd>false</TableTd>
                                     <TableTd>70</TableTd>
                                 </TableRow>
-                                <TableRow className="k-alt" alt>
+                                <TableRow className="k-master-row k-alt" alt>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>53</TableTd>
                                     <TableTd>false</TableTd>
                                     <TableTd>0</TableTd>
                                 </TableRow>
-                                <TableRow>
+                                <TableRow className="k-master-row">
                                     <TableTd>Chef Anton&apos;s Gumbo Mix</TableTd>
                                     <TableTd>0</TableTd>
                                     <TableTd>true</TableTd>
