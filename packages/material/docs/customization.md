@@ -4888,8 +4888,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 54%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 ))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 54%, transparent)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 ))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the CheckBox.</div></div>
@@ -17647,7 +17647,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-radio-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-border</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 54%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the RadioButton.</div></div>
@@ -18075,9 +18075,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-rating-icon-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #303f9f"></span><code>#303f9f</code></td>
+    <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Rating icon.</div></div>
@@ -18085,9 +18085,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-rating-icon-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #303f9f"></span><code>#303f9f</code></td>
+    <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Rating icon.</div></div>
@@ -18095,9 +18095,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-rating-icon-focus-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #303f9f"></span><code>#303f9f</code></td>
+    <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Rating icon.</div></div>
@@ -21920,8 +21920,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 54%, transparent), rgba( $kendo-color-primary, .54 ))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 54%, transparent)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 44%, transparent), rgba( $kendo-color-primary, .54 ))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 44%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is checked.</div></div>
@@ -23748,9 +23748,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-focus-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #303f9f"></span><code>#303f9f</code></td>
+    <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
@@ -23758,9 +23758,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #303f9f"></span><code>#303f9f</code></td>
+    <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
@@ -24148,9 +24148,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-timeline-track-bg</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
-    <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), #e0e0e0)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline track.</div></div>
@@ -24158,9 +24158,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-timeline-track-border-color</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-timeline-track-bg</code></td>
-    <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
+    <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Timeline track.</div></div>
