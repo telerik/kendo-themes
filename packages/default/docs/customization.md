@@ -162,13 +162,33 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the icon across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding around the icon across all components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -178,7 +198,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -188,7 +208,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small horizontal padding across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -198,7 +218,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small vertical padding across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -208,7 +228,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium horizontal padding across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -218,7 +238,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium vertical padding across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -228,7 +248,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large horizontal padding across all components.</div></div>
     </td>
 </tr>
 <tr>
@@ -238,7 +258,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large vertical padding across all components.</div></div>
     </td>
 </tr>
 <tr>
