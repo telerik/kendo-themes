@@ -113,9 +113,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-border</td>
-    <td>Color</td>
-    <td><code>$gray-500</code></td>
-    <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), $gray-500)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is not checked.</div></div>
@@ -263,9 +263,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
-    <td>Color</td>
-    <td><code>$gray-500</code></td>
-    <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), $gray-500)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is not checked.</div></div>

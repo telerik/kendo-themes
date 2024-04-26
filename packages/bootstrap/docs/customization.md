@@ -17029,9 +17029,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-bg</td>
-    <td>Color</td>
-    <td><code>$gray-200</code></td>
-    <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), $gray-200)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ProgressBar.</div></div>
@@ -17039,9 +17039,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-text</td>
-    <td>Color</td>
-    <td><code>k-contrast-color( $gray-200 )</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $gray-200 ))</code></td>
+    <td><code>var(--kendo-color-base-on-subtle, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ProgressBar.</div></div>
@@ -17109,9 +17109,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-indeterminate-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-progressbar-bg</code></td>
-    <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the indeterminate ProgressBar.</div></div>
@@ -17119,9 +17119,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-indeterminate-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-progressbar-text</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td><code>var(--kendo-color-base-on-subtle, #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the indeterminate ProgressBar.</div></div>
@@ -17169,9 +17169,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-circular-progressbar-scale-stroke</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-progressbar-bg</code></td>
-    <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The scale stroke background color of the circular ProgressBar.</div></div>
@@ -21638,9 +21638,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-off-track-border</td>
-    <td>Color</td>
-    <td><code>$gray-500</code></td>
-    <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), $gray-500)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is not checked.</div></div>
@@ -21788,9 +21788,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
-    <td>Color</td>
-    <td><code>$gray-500</code></td>
-    <td><span class="color-preview" style="background-color: #adb5bd"></span><code>#adb5bd</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), $gray-500)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is not checked.</div></div>
@@ -22757,9 +22757,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-hover-border</td>
-    <td>Color</td>
-    <td><code>$gray-200</code></td>
-    <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), $gray-200)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered TabStrip items.</div></div>
@@ -23787,9 +23787,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tile-layout-bg</td>
-    <td>Color</td>
-    <td><code>$gray-100</code></td>
-    <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), $gray-100)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TileLayout.</div></div>
@@ -24098,8 +24098,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
-    <td><code>$kendo-button-bg</code></td>
-    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), $kendo-button-bg)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline track.</div></div>
@@ -24109,7 +24109,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-timeline-track-border-color</td>
     <td>String</td>
     <td><code>$kendo-timeline-track-bg</code></td>
-    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Timeline track.</div></div>
