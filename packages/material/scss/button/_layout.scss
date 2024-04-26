@@ -26,6 +26,15 @@
         }
     }
 
+    // Solid button
+    .k-button-solid {
+        &::before {
+            @if($kendo-enable-color-system) {
+                display: none;
+            }
+        }
+    }
+
     // Outline button
     .k-button-outline {
         background-color: transparent !important; // stylelint-disable-line declaration-no-important
