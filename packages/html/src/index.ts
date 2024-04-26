@@ -121,7 +121,7 @@ export * from './prompt/index';
 
 // Dataviz
 // export * from './dataviz/index';
-// export * from './map/index';
+export * from './map/index';
 export * from './orgchart/index';
 export * from './signature/index';
 
