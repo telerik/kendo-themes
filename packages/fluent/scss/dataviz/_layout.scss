@@ -272,6 +272,11 @@
         height: 100%;
     }
 
+    // Sankey labels
+    .k-sankey text {
+        pointer-events: none;
+    }
+
     // Base
     .k-treemap {
         height: 400px;
