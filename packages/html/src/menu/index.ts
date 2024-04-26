@@ -4,3 +4,8 @@ export * from './menu.spec';
 export * from './menu-separator.spec';
 export * from './menu-item-content';
 export * from './menu-list.spec';
+export * from './templates/menu-normal';
+export * from './templates/menu-popup';
+export * from './templates/menu-scrollable';
+export * from './templates/menu-vertical';
+export * from './templates/menu-vertical-scrollable';
