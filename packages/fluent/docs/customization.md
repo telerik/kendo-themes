@@ -8869,7 +8869,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-content-padding-x</td>
     <td></td>
-    <td><code>var( --kendo-padding-x, #{$kendo-padding-md-x} )</code></td>
+    <td><code>null</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8879,7 +8879,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-content-padding-y</td>
     <td></td>
-    <td><code>var( --kendo-padding-y, #{$kendo-padding-md-y} )</code></td>
+    <td><code>null</code></td>
     <td></td>
 </tr>
 <tr>
