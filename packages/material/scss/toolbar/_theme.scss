@@ -11,6 +11,33 @@
             background-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
             border-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
 
+            // Hover state
+            &:hover,
+            &.k-hover {
+                background-color: if($kendo-enable-color-system, k-color( base-subtle-hover ), null);
+                border-color: if($kendo-enable-color-system, k-color( base-subtle-hover ), null);
+            }
+
+            // Focus state
+            &:focus,
+            &.k-focus {
+                background-color: if($kendo-enable-color-system, k-color( base-subtle-hover ), null);
+                border-color: if($kendo-enable-color-system, k-color( base-subtle-hover ), null);
+            }
+
+            // Active state
+            &:active,
+            &.k-active {
+                background-color: if($kendo-enable-color-system, k-color( base-subtle-active ), null);
+                border-color: if($kendo-enable-color-system, k-color( base-subtle-active ), null);
+            }
+
+            // Selected state
+            &.k-selected {
+                background-color: if($kendo-enable-color-system, k-color( base-subtle-active ), null);
+                border-color: if($kendo-enable-color-system, k-color( base-subtle-active ), null);
+            }
+
             &.k-input-button,
             &.k-input-spinner .k-spinner-increase,
             &.k-input-spinner .k-spinner-decrease {
