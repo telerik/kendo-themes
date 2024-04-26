@@ -269,9 +269,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-hover-border</td>
-    <td>Color</td>
-    <td><code>$gray-200</code></td>
-    <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), $gray-200)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered TabStrip items.</div></div>
