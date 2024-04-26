@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-track-bg</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
-    <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), #e0e0e0)</code></td>
+    <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Timeline track.</div></div>
@@ -239,9 +239,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-timeline-track-border-color</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-timeline-track-bg</code></td>
-    <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
+    <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Timeline track.</div></div>
