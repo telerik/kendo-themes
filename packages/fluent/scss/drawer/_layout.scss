@@ -68,6 +68,8 @@
     .k-drawer-content {
         flex: 1 1 auto;
         overflow: auto;
+        padding-block: var( --kendo-drawer-content-padding-y, #{$kendo-drawer-content-padding-y} );
+        padding-inline: var( --kendo-drawer-content-padding-x, #{$kendo-drawer-content-padding-x} );
     }
 
 
