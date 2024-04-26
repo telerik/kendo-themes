@@ -3769,6 +3769,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-start-end-range-hover-shadow</td>
+    <td></td>
+    <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset -1px 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered start-end range selection in the Calendar.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-sm-font-size</td>
     <td></td>
     <td><code>var( --kendo-font-size-sm, inherit )</code></td>
