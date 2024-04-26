@@ -235,6 +235,10 @@
         &.k-alt + .k-range-mid.k-hover .k-link {
             --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
         }
+
+        &.k-range-start.k-range-end:hover .k-link {
+            --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-start-end-range-hover-shadow, #{$kendo-calendar-start-end-range-hover-shadow} );
+        }
     }
 
 }
