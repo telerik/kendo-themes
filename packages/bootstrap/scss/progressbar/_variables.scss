@@ -24,10 +24,10 @@ $kendo-progressbar-line-height: 1 !default;
 
 /// The background color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-bg: $gray-200 !default;
+$kendo-progressbar-bg: if($kendo-enable-color-system, k-color( base-subtle ), $gray-200) !default;
 /// The text color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-text: k-contrast-color( $gray-200 ) !default;
+$kendo-progressbar-text: if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $gray-200 )) !default;
 /// The border color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-border: null !default;
