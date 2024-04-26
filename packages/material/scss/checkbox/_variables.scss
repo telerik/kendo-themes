@@ -64,7 +64,7 @@ $kendo-checkbox-bg: null !default;
 $kendo-checkbox-text: null !default;
 /// The border color of the CheckBox.
 /// @group checkbox
-$kendo-checkbox-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 54%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 )) !default;
+$kendo-checkbox-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 )) !default;
 
 /// The background color of the hovered CheckBox.
 /// @group checkbox

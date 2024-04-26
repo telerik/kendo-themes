@@ -1,6 +1,7 @@
 @if ($kendo-enable-color-system) {
     $kendo-color-primary: k-color( primary );
     $kendo-color-primary-contrast: k-color( on-primary );
+    $kendo-color-primary-darker: k-color( primary-active );
     $kendo-color-secondary: k-color( secondary );
     $kendo-color-secondary-contrast: k-color( on-secondary );
     $kendo-color-tertiary: k-color( tertiary );
@@ -60,6 +61,5 @@
         "light": $kendo-color-light,
         "inverse": $kendo-color-inverse,
     );
-
 
 }
