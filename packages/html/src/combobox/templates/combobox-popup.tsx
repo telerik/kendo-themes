@@ -1,16 +1,16 @@
 import { List, ListItem } from "../../list";
 import Combobox from "../combobox.spec";
 
-export const ComboboxPopup = ({ firstItemState, ...others }: any) => (
+export const ComboboxPopup = (props) => (
     <Combobox
         opened
         popup={
             <List>
-                <ListItem {...{ [firstItemState]: true }}>List item</ListItem>
+                <ListItem>List item</ListItem>
                 <ListItem>List item</ListItem>
                 <ListItem>List item</ListItem>
             </List>
         }
-        {...others}
+        {...props}
     />
 );
