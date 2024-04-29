@@ -1,12 +1,13 @@
 import { Button } from "../../button";
-import { MenuList, MenuListItem, MenuSeparator } from "../../menu";
+import { MenuListItem, MenuSeparator } from "../../menu";
 import { MenuButton } from "../../menu-button";
 import { WindowNormal } from "../../window";
 import { Popup } from "../../popup";
 import { FormNormal, FormField } from "../../form";
 import { Textbox } from "../../textbox";
 import { SpreadsheetNormal, SpreadsheetSheetsBar } from "..";
-import { TabStripItem } from "../..";
+import { TabStripItem } from "../../tabstrip";
+import { ContextMenuNormal } from "../../context-menu";
 
 const style = `
     #test-area {
@@ -67,7 +68,7 @@ export default () =>(
             <span>Sheets Bar ContextMenu</span>
             <section>
                 <Popup id="spreadsheet-context-menu-sheets" className="k-menu-popup k-context-menu-popup">
-                    <MenuList className="k-context-menu">
+                    <ContextMenuNormal>
                         <MenuListItem text="Delete" icon="trash"></MenuListItem>
                         <MenuListItem text="Duplicate" icon="copy"></MenuListItem>
                         <MenuListItem text="Rename" icon="pencil"></MenuListItem>
@@ -75,7 +76,7 @@ export default () =>(
                         <MenuSeparator></MenuSeparator>
                         <MenuListItem text="Move Right" icon="arrow-right"></MenuListItem>
                         <MenuListItem text="Move Left" icon="arrow-left"></MenuListItem>
-                    </MenuList>
+                    </ContextMenuNormal>
                 </Popup>
             </section>
 
