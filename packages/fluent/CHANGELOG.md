@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-dev.10](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.9...v8.0.0-dev.10) (2024-04-29)
+
+
+### Bug Fixes
+
+* add display flex to listview ([d7d6a66](https://github.com/telerik/kendo-themes/commit/d7d6a66433dfde5313dbfd68e0a870c03c0f4c74))
+* **calendar:** unscope range selection styles ([214ec7e](https://github.com/telerik/kendo-themes/commit/214ec7ee4873a4b6e37dabd01fe17f0d958ea7bb))
+* **chart:** remove sankey label pointer-events ([ba9b1cf](https://github.com/telerik/kendo-themes/commit/ba9b1cf47836094d8c67f1cdd64b3346f2b776cd))
+
+
+
+
+
 # [8.0.0-dev.9](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.8...v8.0.0-dev.9) (2024-04-25)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
