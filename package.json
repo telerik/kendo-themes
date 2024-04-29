@@ -3,7 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "./packages/*"
+    "./packages/html",
+    "./packages/core",
+    "./packages/default",
+    "./packages/bootstrap",
+    "./packages/classic",
+    "./packages/material",
+    "./packages/fluent",
+    "./packages/nouvelle",
+    "./packages/utils"
   ],
   "devDependencies": {
     "@commitlint/cli": "^19.0.3",
