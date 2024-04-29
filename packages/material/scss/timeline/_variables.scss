@@ -67,7 +67,7 @@ $kendo-timeline-track-start-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 
 $kendo-timeline-track-end-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 * #{$kendo-timeline-track-border-width}) !default;
 /// The background color of the Timeline track.
 /// @group timeline
-$kendo-timeline-track-bg: #e0e0e0 !default;
+$kendo-timeline-track-bg: if($kendo-enable-color-system, k-color( base-subtle ), #e0e0e0) !default;
 /// The border color of the Timeline track.
 /// @group timeline
 $kendo-timeline-track-border-color: $kendo-timeline-track-bg !default;
