@@ -17,7 +17,7 @@ export default () => (
             <span>medium</span>
             <span>large</span>
 
-            {[ "null", ...Button.options.rounded ].map((rounded: any) => (
+            {[ "null", ...Button.options.rounded ].map((rounded) => (
                 <>
                     <span>{rounded}</span>
                     {Button.options.size.map((size) => (
