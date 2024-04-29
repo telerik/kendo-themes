@@ -107,7 +107,7 @@ export * from './filter/index';
 export * from './filemanager/index';
 export * from './taskboard/index';
 export * from './column-menu/index';
-//export * from './context-menu/index';
+export * from './context-menu/index';
 
 // Misc
 // export * from './adaptive/index''
