@@ -1,6 +1,7 @@
-import { MenuList, MenuListItem, MenuSeparator } from "../../menu";
+import { MenuListItem, MenuSeparator } from "../../menu";
 import { Popup } from "../../popup";
 import { SpreadsheetActionBar, SpreadsheetHeader, SpreadsheetNormal, SpreadsheetSheetsBar, SpreadsheetView } from "..";
+import { ContextMenuNormal } from "../../context-menu";
 
 const style = `
     #test-area {
@@ -38,7 +39,7 @@ export default () =>(
             </SpreadsheetNormal>
 
             <Popup id="spreadsheet-context-menu-cell" className="k-menu-popup k-context-menu-popup">
-                <MenuList className="k-context-menu">
+                <ContextMenuNormal>
                     <MenuListItem text="Lock" icon="lock"></MenuListItem>
                     <MenuListItem text="Cut" icon="cut"></MenuListItem>
                     <MenuListItem text="Copy" icon="copy"></MenuListItem>
@@ -46,7 +47,7 @@ export default () =>(
                     <MenuSeparator></MenuSeparator>
                     <MenuListItem text="Insert Link" icon="link"></MenuListItem>
                     <MenuListItem text="Insert Comment" icon="comment"></MenuListItem>
-                </MenuList>
+                </ContextMenuNormal>
             </Popup>
         </div>
     </>

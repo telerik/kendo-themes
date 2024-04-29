@@ -1,5 +1,6 @@
-import { MenuListItem, MenuList } from '../../menu';
+import { MenuListItem } from '../../menu';
 import { Popup } from '../../popup';
+import { ContextMenuNormal } from '../templates/context-menu-normal';
 
 
 const styles = `
@@ -20,19 +21,19 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
             <section className="wrap">
                 <Popup className="k-menu-popup">
-                    <MenuList className="k-context-menu">
+                    <ContextMenuNormal>
                         <MenuListItem text="Item 1" selected showArrow></MenuListItem>
                         <MenuListItem text="Item 2"></MenuListItem>
                         <MenuListItem text="Item 3"></MenuListItem>
-                    </MenuList>
+                    </ContextMenuNormal>
                 </Popup>
 
 
                 <Popup className="k-menu-popup" offset={{ left: "100%", top: 0 }}>
-                    <MenuList className="k-context-menu">
+                    <ContextMenuNormal>
                         <MenuListItem text="Item 1.1"></MenuListItem>
                         <MenuListItem text="Item 1.2"></MenuListItem>
-                    </MenuList>
+                    </ContextMenuNormal>
                 </Popup>
             </section>
         </div>
