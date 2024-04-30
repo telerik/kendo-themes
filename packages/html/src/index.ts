@@ -94,6 +94,7 @@ export * from './card/index';
 export * from './expansion-panel/index';
 export * from './panelbar/index';
 export * from './splitter/index';
+export * from './layout/index';
 export * from './tilelayout/index';
 export * from './dock-manager/index';
 
