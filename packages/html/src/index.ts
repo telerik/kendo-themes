@@ -95,7 +95,7 @@ export * from './expansion-panel/index';
 export * from './panelbar/index';
 export * from './splitter/index';
 export * from './tilelayout/index';
-// export * from './dock-manager/index';
+export * from './dock-manager/index';
 
 // Data management
 export * from './grid/index';
