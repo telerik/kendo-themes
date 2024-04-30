@@ -128,6 +128,7 @@ export * from './signature/index';
 
 // Editors
 export * from './editor/index';
+export * from './imageeditor/index';
 
 // Scheduling
 export * from './gantt/index';
