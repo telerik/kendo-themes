@@ -1,4 +1,4 @@
-import { Layout } from '../../layout';
+import { GridLayoutNormal } from '../../layout';
 
 
 const styles = `
@@ -29,170 +29,58 @@ export default () =>(
 
             <span>vertical align top</span>
             <section>
-                <Layout type="grid" alignItems="start" justifyItems="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal />
             </section>
             <section>
-                <Layout type="grid" alignItems="start" justifyItems="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal justifyItems="center"/>
             </section>
             <section>
-                <Layout type="grid" alignItems="start" justifyItems="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal justifyItems="stretch"/>
             </section>
             <section>
-                <Layout type="grid" alignItems="start" justifyItems="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal justifyItems="end"/>
             </section>
 
             <span>vertical align center</span>
             <section>
-                <Layout type="grid" alignItems="center" justifyItems="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="center"/>
             </section>
             <section>
-                <Layout type="grid" alignItems="center" justifyItems="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="center" justifyItems="center" />
             </section>
             <section>
-                <Layout type="grid" alignItems="center" justifyItems="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="center" justifyItems="stretch" />
             </section>
             <section>
-                <Layout type="grid" alignItems="center" justifyItems="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="center" justifyItems="end" />
             </section>
 
             <span>vertical align stretch</span>
             <section>
-                <Layout type="grid" alignItems="stretch" justifyItems="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="stretch" />
             </section>
             <section>
-                <Layout type="grid" alignItems="stretch" justifyItems="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="stretch" justifyItems="center" />
             </section>
             <section>
-                <Layout type="grid" alignItems="stretch" justifyItems="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="stretch" justifyItems="stretch" />
             </section>
             <section>
-                <Layout type="grid" alignItems="stretch" justifyItems="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="stretch" justifyItems="end" />
             </section>
 
             <span>vertical align bottom</span>
             <section>
-                <Layout type="grid" alignItems="end" justifyItems="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="end" />
             </section>
             <section>
-                <Layout type="grid" alignItems="end" justifyItems="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="end" justifyItems="center" />
             </section>
             <section>
-                <Layout type="grid" alignItems="end" justifyItems="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="end" justifyItems="stretch" />
             </section>
             <section>
-                <Layout type="grid" alignItems="end" justifyItems="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <GridLayoutNormal alignItems="end" justifyItems="end" />
             </section>
 
         </div>
