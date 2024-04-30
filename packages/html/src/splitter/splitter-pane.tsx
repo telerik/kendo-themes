@@ -12,6 +12,9 @@ export type KendoSplitterPaneProps = {
     resizable?: boolean;
     flexBasis?: string;
     flex?: boolean;
+    pinned?: boolean;
+    unpinned?: boolean;
+    tabbed?: boolean;
 };
 
 export type KendoSplitterPaneState = { [K in (typeof states)[number]]?: boolean };
@@ -30,6 +33,9 @@ export const SplitterPane = (
         scrollable,
         flexBasis,
         flex,
+        pinned,
+        unpinned,
+        tabbed,
         ...other
     } = props;
 
@@ -43,7 +49,10 @@ export const SplitterPane = (
                 {
                     [`${SPLITTERPANE_CLASSNAME}-static`]: flexBasis,
                     [`${SPLITTERPANE_CLASSNAME}-flex`]: flex,
-                    [`k-scrollable`]: scrollable
+                    [`k-scrollable`]: scrollable,
+                    [`${SPLITTERPANE_CLASSNAME}-pinned`]: pinned,
+                    [`${SPLITTERPANE_CLASSNAME}-unpinned`]: unpinned,
+                    [`${SPLITTERPANE_CLASSNAME}-tabbed`]: tabbed,
                 },
             )}>
             {props.children}
