@@ -1,4 +1,4 @@
-import { Layout } from '../../layout';
+import { StackLayoutNormal, StackLayoutVertical } from '../../layout';
 
 
 const styles = `
@@ -36,122 +36,58 @@ export default () =>(
 
             <span>vertical align top</span>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="start" justifyContent="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="start" justifyContent="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal justifyContent="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="start" justifyContent="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal justifyContent="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="start" justifyContent="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal justifyContent="end" />
             </section>
 
             <span>vertical align center</span>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="center" justifyContent="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="center" justifyContent="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="center" justifyContent="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="center" justifyContent="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="center" justifyContent="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="center" justifyContent="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="center" justifyContent="end" />
             </section>
 
             <span>vertical align stretch</span>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="stretch" justifyContent="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="stretch" justifyContent="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="stretch" justifyContent="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="stretch" justifyContent="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="stretch" justifyContent="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="stretch" justifyContent="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="stretch" justifyContent="end" />
             </section>
 
             <span>vertical align bottom</span>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="end" justifyContent="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="end" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="end" justifyContent="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="end" justifyContent="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="end" justifyContent="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="end" justifyContent="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="horizontal" alignItems="end" justifyContent="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutNormal alignItems="end" justifyContent="end" />
             </section>
 
             <span className="k-colspan-all k-col-span-full"></span>
@@ -167,122 +103,58 @@ export default () =>(
 
             <span>vertical align top</span>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="start" justifyContent="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="center" justifyContent="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="stretch" justifyContent="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="end" justifyContent="start">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="end" />
             </section>
 
             <span>vertical align center</span>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="start" justifyContent="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical justifyContent="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="center" justifyContent="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="center" justifyContent="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="stretch" justifyContent="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="stretch" justifyContent="center" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="end" justifyContent="center">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="end" justifyContent="center" />
             </section>
 
             <span>vertical align stretch</span>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="start" justifyContent="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical justifyContent="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="center" justifyContent="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="center" justifyContent="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="stretch" justifyContent="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="stretch" justifyContent="stretch" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="end" justifyContent="stretch">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="end" justifyContent="stretch" />
             </section>
 
             <span>vertical align bottom</span>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="start" justifyContent="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical justifyContent="end" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="center" justifyContent="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="center" justifyContent="end" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="stretch" justifyContent="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="stretch" justifyContent="end" />
             </section>
             <section>
-                <Layout type="stack" orientation="vertical" alignItems="end" justifyContent="end">
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                    <div className="box">Box</div>
-                </Layout>
+                <StackLayoutVertical alignItems="end" justifyContent="end" />
             </section>
 
         </div>
