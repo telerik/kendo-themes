@@ -17,7 +17,7 @@ export default () => (
             <section className="k-col-span-1" style={{ gap: "30px" }} >
                 <span>Normal</span>
                 <span>Hover</span>
-                <span>Focus</span>
+                <span>Disabled</span>
             </section>
 
             <section className="k-col-span-1">
