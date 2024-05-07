@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0-dev.12](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.11...v8.0.0-dev.12) (2024-05-06)
+
+**Note:** Version bump only for package @progress/kendo-theme-fluent
+
+
+
+
+
 # [8.0.0-dev.11](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.10...v8.0.0-dev.11) (2024-04-29)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
