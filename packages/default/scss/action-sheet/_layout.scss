@@ -253,7 +253,7 @@
         }
 
         .k-actionsheet-filter {
-            width: calc( min(100%, calc( 360px - calc( #{$kendo-adaptive-actionsheet-titlebar-padding-x} * 2 )) ) );
+            width: calc( 360px - #{$kendo-adaptive-actionsheet-titlebar-padding-x} * 2 );
         }
         .k-actionsheet-content,
         .k-actionsheet-footer {
