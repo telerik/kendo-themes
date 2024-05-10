@@ -178,6 +178,254 @@ $_default-colors: (
 
 /// The global default Colors map.
 /// @group color-system
+///
+/// @subgroup {misc}
+/// [app-surface, on-app-surface, subtle,
+/// surface, surface-alt, border, border-alt]
+/// The Misc variable group.
+/// @prop {Color} app-surface - The background color of the application.
+/// @prop {Color} on-app-surface - The text color of the application.
+/// @prop {Color} subtle - The subtle text color.
+/// @prop {Color} surface - The background color of the components' chrome area.
+/// @prop {Color} surface-alt - The alternative background color of the components' chrome area.
+/// @prop {Color} border - Тhe border color of the application.
+/// @prop {Color} border-alt - Тhe alternative border color of the application.
+///
+/// @subgroup {base}
+/// [base-subtle, base-subtle-hover, base-subtle-active,
+/// base, base-hover, base-active, base-emphasis,
+/// base-on-subtle, on-base, base-on-surface]
+/// The Base variable group.
+/// @prop {Color} base-subtle - The base subtle background color variable.
+/// @prop {Color} base-subtle-hover - The base subtle background color variable for the hover state.
+/// @prop {Color} base-subtle-active - The base subtle background color variable for the active state.
+/// @prop {Color} base - The base background color variable.
+/// @prop {Color} base-hover - The base background color variable for the hover state.
+/// @prop {Color} base-active - The base background color variable for the active state.
+/// @prop {Color} base-emphasis - The emphasized base color variable.
+/// @prop {Color} base-on-subtle - The text color variable for content on base subtle.
+/// @prop {Color} on-base - The text color variable for content on base.
+/// @prop {Color} base-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {primary}
+/// [primary-subtle, primary-subtle-hover, primary-subtle-active,
+/// primary, primary-hover, primary-active, primary-emphasis,
+/// primary-on-subtle, on-primary, primary-on-surface]
+/// The Primary variable group.
+/// @prop {Color} primary-subtle - The primary subtle background color variable.
+/// @prop {Color} primary-subtle-hover - The primary subtle background color variable for the hover state.
+/// @prop {Color} primary-subtle-active - The primary subtle background color variable for the active state.
+/// @prop {Color} primary - The primary background color variable.
+/// @prop {Color} primary-hover - The primary background color variable for the hover state.
+/// @prop {Color} primary-active - The primary background color variable for the active state.
+/// @prop {Color} primary-emphasis - The emphasized primary color variable.
+/// @prop {Color} primary-on-subtle - The text color variable for content on primary subtle.
+/// @prop {Color} on-primary - The text color variable for content on primary.
+/// @prop {Color} primary-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {secondary}
+/// [secondary-subtle, secondary-subtle-hover, secondary-subtle-active,
+/// secondary, secondary-hover, secondary-active, secondary-emphasis,
+/// secondary-on-subtle, on-secondary, secondary-on-surface]
+/// The Secondary variable group.
+/// @prop {Color} secondary-subtle - The secondary subtle background color variable.
+/// @prop {Color} secondary-subtle-hover - The secondary subtle background color variable for the hover state.
+/// @prop {Color} secondary-subtle-active - The secondary subtle background color variable for the active state.
+/// @prop {Color} secondary - The secondary background color variable.
+/// @prop {Color} secondary-hover - The secondary background color variable for the hover state.
+/// @prop {Color} secondary-active - The secondary background color variable for the active state.
+/// @prop {Color} secondary-emphasis - The emphasized secondary color variable.
+/// @prop {Color} secondary-on-subtle - The text color variable for content on secondary subtle.
+/// @prop {Color} on-secondary - The text color variable for content on secondary.
+/// @prop {Color} secondary-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {tertiary}
+/// [tertiary-subtle, tertiary-subtle-hover, tertiary-subtle-active,
+/// tertiary, tertiary-hover, tertiary-active, tertiary-emphasis,
+/// tertiary-on-subtle, on-tertiary, tertiary-on-surface]
+/// The Tertiary variable group.
+/// @prop {Color} tertiary-subtle - The tertiary subtle background color variable.
+/// @prop {Color} tertiary-subtle-hover - The tertiary subtle background color variable for the hover state.
+/// @prop {Color} tertiary-subtle-active - The tertiary subtle background color variable for the active state.
+/// @prop {Color} tertiary - The tertiary background color variable.
+/// @prop {Color} tertiary-hover - The tertiary background color variable for the hover state.
+/// @prop {Color} tertiary-active - The tertiary background color variable for the active state.
+/// @prop {Color} tertiary-emphasis - The emphasized tertiary color variable.
+/// @prop {Color} tertiary-on-subtle - The text color variable for content on tertiary subtle.
+/// @prop {Color} on-tertiary - The text color variable for content on tertiary.
+/// @prop {Color} tertiary-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {info}
+/// [info-subtle, info-subtle-hover, info-subtle-active,
+/// info, info-hover, info-active, info-emphasis,
+/// info-on-subtle, on-info, info-on-surface]
+/// The Info variable group.
+/// @prop {Color} info-subtle - The info subtle background color variable.
+/// @prop {Color} info-subtle-hover - The info subtle background color variable for the hover state.
+/// @prop {Color} info-subtle-active - The info subtle background color variable for the active state.
+/// @prop {Color} info - The info background color variable.
+/// @prop {Color} info-hover - The info background color variable for the hover state.
+/// @prop {Color} info-active - The info background color variable for the active state.
+/// @prop {Color} info-emphasis - The emphasized info color variable.
+/// @prop {Color} info-on-subtle - The text color variable for content on info subtle.
+/// @prop {Color} on-info - The text color variable for content on info.
+/// @prop {Color} info-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {success}
+/// [success-subtle, success-subtle-hover, success-subtle-active,
+/// success, success-hover, success-active, success-emphasis,
+/// success-on-subtle, on-success, success-on-surface]
+/// The Success variable group.
+/// @prop {Color} success-subtle - The success subtle background color variable.
+/// @prop {Color} success-subtle-hover - The success subtle background color variable for the hover state.
+/// @prop {Color} success-subtle-active - The success subtle background color variable for the active state.
+/// @prop {Color} success - The success background color variable.
+/// @prop {Color} success-hover - The success background color variable for the hover state.
+/// @prop {Color} success-active - The success background color variable for the active state.
+/// @prop {Color} success-emphasis - The emphasized success color variable.
+/// @prop {Color} success-on-subtle - The text color variable for content on success subtle.
+/// @prop {Color} on-success - The text color variable for content on success.
+/// @prop {Color} success-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {warning}
+/// [warning-subtle, warning-subtle-hover, warning-subtle-active,
+/// warning, warning-hover, warning-active, warning-emphasis,
+/// warning-on-subtle, on-warning, warning-on-surface]
+/// The Warning variable group.
+/// @prop {Color} warning-subtle - The warning subtle background color variable.
+/// @prop {Color} warning-subtle-hover - The warning subtle background color variable for the hover state.
+/// @prop {Color} warning-subtle-active - The warning subtle background color variable for the active state.
+/// @prop {Color} warning - The warning background color variable.
+/// @prop {Color} warning-hover - The warning background color variable for the hover state.
+/// @prop {Color} warning-active - The warning background color variable for the active state.
+/// @prop {Color} warning-emphasis - The emphasized warning color variable.
+/// @prop {Color} warning-on-subtle - The text color variable for content on warning subtle.
+/// @prop {Color} on-warning - The text color variable for content on warning.
+/// @prop {Color} warning-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {error}
+/// [error-subtle, error-subtle-hover, error-subtle-active,
+/// error, error-hover, error-active, error-emphasis,
+/// error-on-subtle, on-error, error-on-surface]
+/// The Error variable group.
+/// @prop {Color} error-subtle - The error subtle background color variable.
+/// @prop {Color} error-subtle-hover - The error subtle background color variable for the hover state.
+/// @prop {Color} error-subtle-active - The error subtle background color variable for the active state.
+/// @prop {Color} error - The error background color variable.
+/// @prop {Color} error-hover - The error background color variable for the hover state.
+/// @prop {Color} error-active - The error background color variable for the active state.
+/// @prop {Color} error-emphasis - The emphasized error color variable.
+/// @prop {Color} error-on-subtle - The text color variable for content on error subtle.
+/// @prop {Color} on-error - The text color variable for content on error.
+/// @prop {Color} error-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {light}
+/// [light-subtle, light-subtle-hover, light-subtle-active,
+/// light, light-hover, light-active, light-emphasis,
+/// light-on-subtle, on-light, light-on-surface]
+/// The Light variable group.
+/// @prop {Color} light-subtle - The light subtle background color variable.
+/// @prop {Color} light-subtle-hover - The light subtle background color variable for the hover state.
+/// @prop {Color} light-subtle-active - The light subtle background color variable for the active state.
+/// @prop {Color} light - The light background color variable.
+/// @prop {Color} light-hover - The light background color variable for the hover state.
+/// @prop {Color} light-active - The light background color variable for the active state.
+/// @prop {Color} light-emphasis - The emphasized light color variable.
+/// @prop {Color} light-on-subtle - The text color variable for content on light subtle.
+/// @prop {Color} on-light - The text color variable for content on light.
+/// @prop {Color} light-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {dark}
+/// [dark-subtle, dark-subtle-hover, dark-subtle-active,
+/// dark, dark-hover, dark-active, dark-emphasis,
+/// dark-on-subtle, on-dark, dark-on-surface]
+/// The Dark variable group.
+/// @prop {Color} dark-subtle - The dark subtle background color variable.
+/// @prop {Color} dark-subtle-hover - The dark subtle background color variable for the hover state.
+/// @prop {Color} dark-subtle-active - The dark subtle background color variable for the active state.
+/// @prop {Color} dark - The dark background color variable.
+/// @prop {Color} dark-hover - The dark background color variable for the hover state.
+/// @prop {Color} dark-active - The dark background color variable for the active state.
+/// @prop {Color} dark-emphasis - The emphasized dark color variable.
+/// @prop {Color} dark-on-subtle - The text color variable for content on dark subtle.
+/// @prop {Color} on-dark - The text color variable for content on dark.
+/// @prop {Color} dark-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {inverse}
+/// [inverse-subtle, inverse-subtle-hover, inverse-subtle-active,
+/// inverse, inverse-hover, inverse-active, inverse-emphasis,
+/// inverse-on-subtle, on-inverse, inverse-on-surface]
+/// The Inverse variable group.
+/// @prop {Color} inverse-subtle - The inverse subtle background color variable.
+/// @prop {Color} inverse-subtle-hover - The inverse subtle background color variable for the hover state.
+/// @prop {Color} inverse-subtle-active - The inverse subtle background color variable for the active state.
+/// @prop {Color} inverse - The inverse background color variable.
+/// @prop {Color} inverse-hover - The inverse background color variable for the hover state.
+/// @prop {Color} inverse-active - The inverse background color variable for the active state.
+/// @prop {Color} inverse-emphasis - The emphasized inverse color variable.
+/// @prop {Color} inverse-on-subtle - The text color variable for content on inverse subtle.
+/// @prop {Color} on-inverse - The text color variable for content on inverse.
+/// @prop {Color} inverse-on-surface - The text color variable for content on surface.
+///
+/// @subgroup {series-a}
+/// [series-a, series-a-bold, series-a-bolder,
+/// series-a-subtle, series-a-subtler]
+/// The Series A variable group.
+/// @prop {Color} series-a - The series A color variable.
+/// @prop {Color} series-a-bold - The bold series A color variable.
+/// @prop {Color} series-a-bolder - The bolder series A color variable.
+/// @prop {Color} series-a-subtle - The subtle series A color variable.
+/// @prop {Color} series-a-subtler - The subtler series A color variable.
+///
+/// @subgroup {series-b}
+/// [series-b, series-b-bold, series-b-bolder,
+/// series-b-subtle, series-b-subtler]
+/// The Series B variable group.
+/// @prop {Color} series-b - The series B color variable.
+/// @prop {Color} series-b-bold - The bold series B color variable.
+/// @prop {Color} series-b-bolder - The bolder series B color variable.
+/// @prop {Color} series-b-subtle - The subtle series B color variable.
+/// @prop {Color} series-b-subtler - The subtler series B color variable.
+///
+/// @subgroup {series-c}
+/// [series-c, series-c-bold, series-c-bolder,
+/// series-c-subtle, series-c-subtler]
+/// The Series C variable group.
+/// @prop {Color} series-c - The series C color variable.
+/// @prop {Color} series-c-bold - The bold series C color variable.
+/// @prop {Color} series-c-bolder - The bolder series C color variable.
+/// @prop {Color} series-c-subtle - The subtle series C color variable.
+/// @prop {Color} series-c-subtler - The subtler series C color variable.
+///
+/// @subgroup {series-d}
+/// [series-d, series-d-bold, series-d-bolder,
+/// series-d-subtle, series-d-subtler]
+/// The Series D variable group.
+/// @prop {Color} series-d - The series D color variable.
+/// @prop {Color} series-d-bold - The bold series D color variable.
+/// @prop {Color} series-d-bolder - The bolder series D color variable.
+/// @prop {Color} series-d-subtle - The subtle series D color variable.
+/// @prop {Color} series-d-subtler - The subtler series D color variable.
+///
+/// @subgroup {series-e}
+/// [series-e, series-e-bold, series-e-bolder,
+/// series-e-subtle, series-e-subtler]
+/// The Series E variable group.
+/// @prop {Color} series-e - The series E color variable.
+/// @prop {Color} series-e-bold - The bold series E color variable.
+/// @prop {Color} series-e-bolder - The bolder series E color variable.
+/// @prop {Color} series-e-subtle - The subtle series E color variable.
+/// @prop {Color} series-e-subtler - The subtler series E color variable.
+///
+/// @subgroup {series-f}
+/// [series-f, series-f-bold, series-f-bolder,
+/// series-f-subtle, series-f-subtler]
+/// The Series F variable group.
+/// @prop {Color} series-f - The series F color variable.
+/// @prop {Color} series-f-bold - The bold series F color variable.
+/// @prop {Color} series-f-bolder - The bolder series F color variable.
+/// @prop {Color} series-f-subtle - The subtle series F color variable.
+/// @prop {Color} series-f-subtler - The subtler series F color variable.
 $kendo-colors: $_default-colors !default;
 
 // Legacy
