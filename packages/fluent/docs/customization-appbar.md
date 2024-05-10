@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-appbar-margin-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(0)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the AppBar.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-margin-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(0)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the AppBar.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-padding-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AppBar.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-padding-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AppBar.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-border-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>0px</code></td>
-    <td></td>
+    <td><code>0px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the AppBar.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-zindex</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1000</code></td>
-    <td></td>
+    <td><code>1000</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The z-index of the AppBar.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-font-family</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the AppBar.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the AppBar.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-line-height</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
-    <td></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the AppBar.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-spacing</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the AppBar sections.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-text, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AppBar.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AppBar.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-border, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AppBar.</div></div>
@@ -159,7 +159,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-brand-colors</td>
-    <td></td>
+    <td>Map</td>
     <td><code>(
     primary: primary,
     error: error,
@@ -168,7 +168,7 @@ The following table lists the available variables for customization.
     secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
  )</code></td>
-    <td></td>
+    <td><code>(primary: primary, error: error, success: success, info: info, secondary: secondary, tertiary: tertiary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme variations for the AppBar.</div></div>
@@ -176,9 +176,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-theme-colors</td>
-    <td></td>
+    <td>Map</td>
     <td><code>()</code></td>
-    <td></td>
+    <td><code>(primary: (bg: var(--kendo-color-primary, #0078d4), text: var(--kendo-color-on-primary, #ffffff), border: var(--kendo-color-primary, #0078d4)), error: (bg: var(--kendo-color-error, #c2666b), text: var(--kendo-color-on-error, #ffffff), border: var(--kendo-color-error, #c2666b)), success: (bg: var(--kendo-color-success, #55a554), text: var(--kendo-color-on-success, #ffffff), border: var(--kendo-color-success, #55a554)), info: (bg: var(--kendo-color-info, #0a7eff), text: var(--kendo-color-on-info, #ffffff), border: var(--kendo-color-info, #0a7eff)), secondary: (bg: var(--kendo-color-secondary, #979593), text: var(--kendo-color-on-secondary, #ffffff), border: var(--kendo-color-secondary, #979593)), tertiary: (bg: var(--kendo-color-tertiary, #2b88d8), text: var(--kendo-color-on-tertiary, #ffffff), border: var(--kendo-color-tertiary, #2b88d8)), warning: (bg: var(--kendo-color-warning, #ffc80a), text: var(--kendo-color-on-warning, #323130), border: var(--kendo-color-warning, #ffc80a)), dark: (bg: var(--kendo-color-dark, #323130), text: var(--kendo-color-on-dark, #ffffff), border: var(--kendo-color-dark, #323130)), light: (bg: var(--kendo-color-light, #d2d0ce), text: var(--kendo-color-on-light, #323130), border: var(--kendo-color-light, #d2d0ce)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the AppBar variations.</div></div>

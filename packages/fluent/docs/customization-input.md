@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-input-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>100%</code></td>
-    <td></td>
+    <td><code>100%</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input components.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-border-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1px</code></td>
-    <td></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Input components.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-border-height</td>
-    <td></td>
+    <td>Number</td>
     <td><code>( $kendo-input-border-width * 2 )</code></td>
-    <td></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the border around the Input components.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sm-padding-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Input components.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-padding-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Input components.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-lg-padding-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Input components.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sm-padding-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(1)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Input components.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-padding-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(1.5)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Input components.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-lg-padding-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Input components.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sm-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Input components.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Input components.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-lg-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Input components.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sm-line-height</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
-    <td></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Input components.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-line-height</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
-    <td></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Input components.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-lg-line-height</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
-    <td></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Input components.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sm-button-width</td>
-    <td></td>
+    <td>Calculation</td>
     <td><code>calc( #{$kendo-button-sm-line-height} * 1em + #{$kendo-button-sm-padding-y} * 2 )</code></td>
-    <td></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small Input button.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-button-width</td>
-    <td></td>
+    <td>Calculation</td>
     <td><code>calc( #{$kendo-button-md-line-height} * 1em + #{$kendo-button-md-padding-y} * 2 )</code></td>
-    <td></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium Input button.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-lg-button-width</td>
-    <td></td>
+    <td>Calculation</td>
     <td><code>calc( #{$kendo-button-lg-line-height} * 1em + #{$kendo-button-lg-padding-y} * 2 )</code></td>
-    <td></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large Input button.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-button-border-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1px</code></td>
-    <td></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Input button.</div></div>
@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sm-spinner-width</td>
-    <td></td>
+    <td>Calculation</td>
     <td><code>$kendo-input-sm-button-width</code></td>
-    <td></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small Input spinner button.</div></div>
@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-md-spinner-width</td>
-    <td></td>
+    <td>Calculation</td>
     <td><code>$kendo-input-md-button-width</code></td>
-    <td></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium Input spinner button.</div></div>
@@ -239,9 +239,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-lg-spinner-width</td>
-    <td></td>
+    <td>Calculation</td>
     <td><code>$kendo-input-lg-button-width</code></td>
-    <td></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large Input spinner button.</div></div>
@@ -249,9 +249,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-spinner-icon-offset</td>
-    <td></td>
+    <td>Null</td>
     <td><code>null</code></td>
-    <td></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon offset of the Input spinner button.</div></div>
@@ -259,9 +259,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the solid Input components.</div></div>
@@ -269,9 +269,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the solid Input components.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the solid Input components.</div></div>
@@ -289,9 +289,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-hover-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered solid Input components.</div></div>
@@ -299,9 +299,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-hover-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-solid-bg</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered solid Input components.</div></div>
@@ -309,9 +309,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-hover-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered solid Input components.</div></div>
@@ -319,9 +319,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-solid-text</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused solid Input components.</div></div>
@@ -329,9 +329,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-solid-bg</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused solid Input components.</div></div>
@@ -339,9 +339,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused solid Input components.</div></div>
@@ -349,9 +349,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-hover-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-solid-focus-text</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused solid Input components.</div></div>
@@ -359,9 +359,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-hover-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-solid-focus-bg</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused solid Input components.</div></div>
@@ -369,9 +369,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-hover-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-solid-focus-border</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused solid Input components.</div></div>
@@ -379,9 +379,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-disabled-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled solid Input components.</div></div>
@@ -389,9 +389,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-disabled-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-bg</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled solid Input components.</div></div>
@@ -399,9 +399,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-solid-disabled-border</td>
-    <td></td>
+    <td>Color</td>
     <td><code>$kendo-disabled-border</code></td>
-    <td></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled solid Input components.</div></div>
@@ -409,9 +409,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Input components.</div></div>
@@ -419,9 +419,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline Input components.</div></div>
@@ -429,9 +429,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Input components.</div></div>
@@ -439,9 +439,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-hover-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered outline Input components.</div></div>
@@ -449,9 +449,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-hover-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered outline Input components.</div></div>
@@ -459,9 +459,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-hover-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered outline Input components.</div></div>
@@ -469,9 +469,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused outline Input components.</div></div>
@@ -479,9 +479,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused outline Input components.</div></div>
@@ -489,9 +489,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused outline Input components.</div></div>
@@ -499,9 +499,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-hover-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-outline-focus-text</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused outline Input components.</div></div>
@@ -509,9 +509,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-hover-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-outline-focus-bg</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused outline Input components.</div></div>
@@ -519,9 +519,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-hover-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-outline-focus-border</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused outline Input components.</div></div>
@@ -529,9 +529,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-disabled-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled outline Input components.</div></div>
@@ -539,9 +539,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-disabled-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>none</code></td>
-    <td></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled outline Input components.</div></div>
@@ -549,9 +549,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-outline-disabled-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled outline Input components.</div></div>
@@ -559,9 +559,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Input components.</div></div>
@@ -569,9 +569,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Input components.</div></div>
@@ -579,9 +579,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Input components.</div></div>
@@ -589,9 +589,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-hover-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered flat Input components.</div></div>
@@ -599,9 +599,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-hover-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered flat Input components.</div></div>
@@ -609,9 +609,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-hover-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered flat Input components.</div></div>
@@ -619,9 +619,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused flat Input components.</div></div>
@@ -629,9 +629,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused flat Input components.</div></div>
@@ -639,9 +639,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused flat Input components.</div></div>
@@ -649,9 +649,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-hover-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-flat-focus-text</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused flat Input components.</div></div>
@@ -659,9 +659,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-hover-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-flat-focus-bg</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused flat Input components.</div></div>
@@ -669,9 +669,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-hover-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-input-flat-focus-border</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused flat Input components.</div></div>
@@ -679,9 +679,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-disabled-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled flat Input components.</div></div>
@@ -689,9 +689,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-disabled-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>none</code></td>
-    <td></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled flat Input components.</div></div>
@@ -699,9 +699,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-flat-disabled-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled flat Input components.</div></div>
@@ -709,9 +709,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the solid Picker components.</div></div>
@@ -719,9 +719,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the solid Picker components.</div></div>
@@ -729,9 +729,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))!default</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the solid Picker components.</div></div>
@@ -739,9 +739,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-hover-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered solid Picker components.</div></div>
@@ -749,9 +749,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-hover-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered the solid Picker components.</div></div>
@@ -759,9 +759,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-hover-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered solid Picker components.</div></div>
@@ -769,9 +769,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused solid Picker components.</div></div>
@@ -779,9 +779,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused solid Picker components.</div></div>
@@ -789,9 +789,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused solid Picker components.</div></div>
@@ -799,9 +799,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-hover-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-solid-focus-text</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused solid Picker components.</div></div>
@@ -809,9 +809,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-hover-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-solid-focus-bg</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused solid Picker components.</div></div>
@@ -819,9 +819,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-hover-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-solid-focus-border</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused solid Picker components.</div></div>
@@ -829,9 +829,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-disabled-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled solid Picker components.</div></div>
@@ -839,9 +839,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-disabled-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 9%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled solid Picker components.</div></div>
@@ -849,9 +849,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-solid-disabled-border</td>
-    <td></td>
+    <td>Color</td>
     <td><code>$kendo-disabled-border</code></td>
-    <td></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled solid Picker components.</div></div>
@@ -859,9 +859,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Picker components.</div></div>
@@ -869,9 +869,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>none</code></td>
-    <td></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline Picker components.</div></div>
@@ -879,9 +879,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Picker components.</div></div>
@@ -889,9 +889,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-hover-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered outline Picker components.</div></div>
@@ -899,9 +899,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-hover-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered outline Picker components.</div></div>
@@ -909,9 +909,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-hover-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-outline-hover-bg!default</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered outline Picker components.</div></div>
@@ -919,9 +919,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused outline Picker components.</div></div>
@@ -929,9 +929,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused outline Picker components.</div></div>
@@ -939,9 +939,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused outline Picker components.</div></div>
@@ -949,9 +949,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-hover-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused outline Picker components.</div></div>
@@ -959,9 +959,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-hover-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused outline Picker components.</div></div>
@@ -969,9 +969,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-hover-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused outline Picker components.</div></div>
@@ -979,9 +979,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-disabled-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled outline Picker components.</div></div>
@@ -989,9 +989,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-disabled-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>none</code></td>
-    <td></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled outline Picker components.</div></div>
@@ -999,9 +999,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-outline-disabled-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-outline-disabled-text!default</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled outline Picker components.</div></div>
@@ -1009,9 +1009,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Picker components.</div></div>
@@ -1019,9 +1019,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>none</code></td>
-    <td></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Picker components.</div></div>
@@ -1029,9 +1029,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Picker components.</div></div>
@@ -1039,9 +1039,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-hover-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered flat Picker components.</div></div>
@@ -1049,9 +1049,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-hover-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered flat Picker components.</div></div>
@@ -1059,9 +1059,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-hover-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border-alt, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered flat Picker components.</div></div>
@@ -1069,9 +1069,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused flat Picker components.</div></div>
@@ -1079,9 +1079,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused flat Picker components.</div></div>
@@ -1089,9 +1089,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused flat Picker components.</div></div>
@@ -1099,9 +1099,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-hover-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-flat-hover-text</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused flat Picker components.</div></div>
@@ -1109,9 +1109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-hover-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-flat-hover-bg</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused flat Picker components.</div></div>
@@ -1119,9 +1119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-hover-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-flat-border</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused flat Picker components.</div></div>
@@ -1129,9 +1129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-disabled-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled flat Picker components.</div></div>
@@ -1139,9 +1139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-disabled-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>none</code></td>
-    <td></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled flat Picker components.</div></div>
@@ -1149,9 +1149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-picker-flat-disabled-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-picker-flat-disabled-text</code></td>
-    <td></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled flat Picker components.</div></div>
@@ -1159,7 +1159,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-sizes</td>
-    <td></td>
+    <td>Map</td>
     <td><code>(
     sm: (
         padding-x: $kendo-input-sm-padding-x,
@@ -1192,7 +1192,7 @@ The following table lists the available variables for customization.
         button-width: $kendo-input-lg-button-width
     )
 )</code></td>
-    <td></td>
+    <td><code>(sm: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-1, 0.25rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), icon-size: calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-1\.5, 0.375rem) * 2), button-padding-x: var(--kendo-spacing-1, 0.25rem), button-padding-y: var(--kendo-spacing-1, 0.25rem), button-width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2)), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-1\.5, 0.375rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), icon-size: calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-1, 0.25rem) * 2), button-padding-x: var(--kendo-spacing-1\.5, 0.375rem), button-padding-y: var(--kendo-spacing-1\.5, 0.375rem), button-width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2)), lg: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), icon-size: calc(var(--kendo-icon-size, 1rem) + var(--kendo-spacing-2, 0.5rem) * 2), button-padding-x: var(--kendo-spacing-2, 0.5rem), button-padding-y: var(--kendo-spacing-2, 0.5rem), button-width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
@@ -1200,7 +1200,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-theme-colors</td>
-    <td></td>
+    <td>Map</td>
     <td><code>(
     input: (
         solid: (
@@ -1309,7 +1309,7 @@ The following table lists the available variables for customization.
         )
     )
 )</code></td>
-    <td></td>
+    <td><code>(input: (solid: (text: var(--kendo-color-on-app-surface, #323130), bg: var(--kendo-color-app-surface, #ffffff), border: var(--kendo-color-border, #8a8886), hover-text: var(--kendo-color-on-app-surface, #323130), hover-bg: var(--kendo-color-app-surface, #ffffff), hover-border: var(--kendo-color-border-alt, #323130), focus-text: var(--kendo-color-on-app-surface, #323130), focus-bg: var(--kendo-color-app-surface, #ffffff), focus-border: var(--kendo-color-primary, #0078d4), hover-focus-text: var(--kendo-color-on-app-surface, #323130), hover-focus-bg: var(--kendo-color-app-surface, #ffffff), hover-focus-border: var(--kendo-color-primary, #0078d4), disabled-text: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent), disabled-bg: var(--kendo-color-base-subtle, #edebe9), disabled-border: transparent), outline: (text: var(--kendo-color-on-app-surface, #323130), bg: var(--kendo-color-app-surface, #ffffff), border: var(--kendo-color-border, #8a8886), hover-text: var(--kendo-color-on-app-surface, #323130), hover-bg: var(--kendo-color-app-surface, #ffffff), hover-border: var(--kendo-color-border-alt, #323130), focus-text: var(--kendo-color-on-app-surface, #323130), focus-bg: var(--kendo-color-app-surface, #ffffff), focus-border: var(--kendo-color-primary, #0078d4), hover-focus-text: var(--kendo-color-on-app-surface, #323130), hover-focus-bg: var(--kendo-color-app-surface, #ffffff), hover-focus-border: var(--kendo-color-primary, #0078d4), disabled-text: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent), disabled-bg: none, disabled-border: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)), flat: (text: var(--kendo-color-on-app-surface, #323130), bg: var(--kendo-color-app-surface, #ffffff), border: var(--kendo-color-border, #8a8886), hover-text: var(--kendo-color-on-app-surface, #323130), hover-bg: var(--kendo-color-app-surface, #ffffff), hover-border: var(--kendo-color-border-alt, #323130), focus-text: var(--kendo-color-on-app-surface, #323130), focus-bg: var(--kendo-color-app-surface, #ffffff), focus-border: var(--kendo-color-primary, #0078d4), hover-focus-tex: var(--kendo-color-on-app-surface, #323130), hover-focus-bg: var(--kendo-color-app-surface, #ffffff), hover-focus-border: var(--kendo-color-primary, #0078d4), disabled-text: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent), disabled-bg: none, disabled-border: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent))), picker: (solid: (text: var(--kendo-color-on-app-surface, #323130), bg: var(--kendo-color-app-surface, #ffffff), border: var(--kendo-color-border, #8a8886), hover-text: var(--kendo-color-on-app-surface, #323130), hover-bg: var(--kendo-color-app-surface, #ffffff), hover-border: var(--kendo-color-border-alt, #323130), focus-text: var(--kendo-color-on-app-surface, #323130), focus-bg: var(--kendo-color-app-surface, #ffffff), focus-border: var(--kendo-color-primary, #0078d4), hover-focus-tex: var(--kendo-color-on-app-surface, #323130), hover-focus-bg: var(--kendo-color-app-surface, #ffffff), hover-focus-border: var(--kendo-color-primary, #0078d4), disabled-text: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent), disabled-bg: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 9%, transparent), disabled-border: transparent), outline: (text: var(--kendo-color-on-app-surface, #323130), bg: none, border: var(--kendo-color-on-app-surface, #323130), hover-text: var(--kendo-color-app-surface, #ffffff), hover-bg: var(--kendo-color-on-app-surface, #323130), hover-border: var(--kendo-color-on-app-surface, #323130), focus-text: var(--kendo-color-on-app-surface, #323130), focus-bg: var(--kendo-color-app-surface, #ffffff), focus-border: var(--kendo-color-primary, #0078d4), hover-focus-text: var(--kendo-color-app-surface, #ffffff), hover-focus-bg: var(--kendo-color-on-app-surface, #323130), hover-focus-border: var(--kendo-color-primary, #0078d4), disabled-text: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent), disabled-bg: none, disabled-border: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)), flat: (text: var(--kendo-color-on-app-surface, #323130), bg: none, border: var(--kendo-color-border, #8a8886), hover-text: var(--kendo-color-on-app-surface, #323130), hover-bg: var(--kendo-color-base-hover, #f3f2f1), hover-border: var(--kendo-color-border-alt, #323130), focus-text: var(--kendo-color-on-app-surface, #323130), focus-bg: var(--kendo-color-app-surface, #ffffff), focus-border: var(--kendo-color-primary, #0078d4), hover-focus-tex: var(--kendo-color-on-app-surface, #323130), hover-focus-bg: var(--kendo-color-base-hover, #f3f2f1), hover-focus-border: var(--kendo-color-border, #8a8886), disabled-text: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent), disabled-bg: none, disabled-border: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Colors map of the input.</div></div>
@@ -1317,9 +1317,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-prefix-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-20 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input prefix.</div></div>
@@ -1327,9 +1327,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-suffix-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-20 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input suffix.</div></div>
@@ -1337,9 +1337,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-separator-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-30 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-30, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
@@ -1347,9 +1347,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-prefix-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-130 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-130, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input prefix.</div></div>
@@ -1357,9 +1357,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-suffix-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-130 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-130, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input suffix.</div></div>
@@ -1367,9 +1367,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-prefix-disabled-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-60 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-60, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Input prefix.</div></div>
@@ -1377,9 +1377,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-suffix-disabled-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-60 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-60, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Input suffix.</div></div>
@@ -1387,9 +1387,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-invalid-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-invalid-border, #{$kendo-invalid-border} )</code></td>
-    <td></td>
+    <td><code>var(--kendo-invalid-border, var(--kendo-color-error-emphasis, #a4262c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Input components.</div></div>
@@ -1397,9 +1397,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-invalid-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-invalid-text, #{$kendo-invalid-text} )</code></td>
-    <td></td>
+    <td><code>var(--kendo-invalid-text, var(--kendo-color-error-on-surface, #a4262c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the invalid Input components.</div></div>
@@ -1407,9 +1407,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-placeholder-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input placeholder.</div></div>
@@ -1417,9 +1417,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-placeholder-opacity</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1</code></td>
-    <td></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input placeholder.</div></div>
@@ -1427,9 +1427,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-clear-value-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input clear value icon.</div></div>
@@ -1437,9 +1437,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-clear-value-opacity</td>
-    <td></td>
+    <td>Number</td>
     <td><code>.6</code></td>
-    <td></td>
+    <td><code>0.6</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input clear value icon.</div></div>
@@ -1447,9 +1447,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-clear-value-hover-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>inherit</code></td>
-    <td></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered Input clear value icon.</div></div>
@@ -1457,9 +1457,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-input-clear-value-hover-opacity</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1</code></td>
-    <td></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered Input clear value icon.</div></div>

@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-prompt-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-text, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-bg, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-border, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-header-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-text, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt header.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-header-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-bg, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt header.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-header-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-border, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt header.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-content-padding-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(4)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Prompt content.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-content-padding-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(4)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Prompt content.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-content-spacing</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(4)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the Prompt content.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-content-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-190 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-190, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt content.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-content-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-10 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-10, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt content.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-content-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-border, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text border of the Prompt content.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-expander-spacing</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the Prompt content expander.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-padding-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Prompt suggestion container.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-padding-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Prompt suggestion container.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-border-radius</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-border-radius(md)</code></td>
-    <td></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Prompt suggestion container.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-text, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt suggestion container.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-bg, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt suggestion container.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-border, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt suggestion container.</div></div>
@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-prompt-suggestion-shadow</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-elevation(1)</code></td>
-    <td></td>
+    <td><code>var(--kendo-elevation-1, 0 0.3px 0.9px rgba(0, 0, 0, 0.1), 0 1.6px 3.6px rgba(0, 0, 0, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The elevation of the Prompt suggestion container.</div></div>

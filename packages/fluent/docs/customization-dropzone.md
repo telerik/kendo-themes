@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-dropzone-padding-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the DropZone.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-padding-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the DropZone.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-border-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1px</code></td>
-    <td></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the DropZone.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-min-height</td>
-    <td></td>
+    <td>Number</td>
     <td><code>220px</code></td>
-    <td></td>
+    <td><code>220px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the DropZone.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-font-family</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the DropZone.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the DropZone.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-line-height</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
-    <td></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the DropZone.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-surface, #faf9f8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the DropZone.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the dropzone.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-border, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the DropZone.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-icon-spacing</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(6)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing below the DropZone icon.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-icon-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-90 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone icon.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-icon-hover-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
-    <td></td>
+    <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the icon when the dropzone is hovered.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-hint-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>inherit</code></td>
-    <td></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the DropZone hint.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-hint-font-weight</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-weight-bold, bold )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-weight-bold, bold)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the DropZone hint.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-hint-spacing</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing below the DropZone hint.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-hint-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>$kendo-dropzone-text</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone hint.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-note-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the DropZone note.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-note-font-weight</td>
-    <td></td>
+    <td>String</td>
     <td><code>inherit</code></td>
-    <td></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the DropZone note.</div></div>
@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-note-spacing</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(0)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing below the DropZone note.</div></div>
@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-dropzone-note-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-subtle-text, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone note.</div></div>
