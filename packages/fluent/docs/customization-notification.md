@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-notification-group-gap</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row-gap between the elements in the Notification group.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-padding-x</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(3)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Notification.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-padding-y</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Notification.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-border-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1px</code></td>
-    <td></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container">
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-border-radius</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Notification.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-font-family</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Notification.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Notification.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-line-height</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
-    <td></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Notification.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-bg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Notification.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Notification.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-border, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Notification.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-box-shadow</td>
-    <td></td>
+    <td>String</td>
     <td><code>none</code></td>
-    <td></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Notification.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-icon-spacing</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(2)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the Notification icon.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-close-icon-spacing</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-spacing(4)</code></td>
-    <td></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal spacing of the Notification close icon.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-icon-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Notification icon.</div></div>
@@ -179,7 +179,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-brand-colors</td>
-    <td></td>
+    <td>Map</td>
     <td><code>(
     primary: primary,
     error: error,
@@ -189,7 +189,7 @@ The following table lists the available variables for customization.
     secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
 )</code></td>
-    <td></td>
+    <td><code>(primary: primary, error: error, warning: warning, success: success, info: info, secondary: secondary, tertiary: tertiary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme variations for the Notification.</div></div>
@@ -197,9 +197,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-notification-theme-colors</td>
-    <td></td>
+    <td>Map</td>
     <td><code>()</code></td>
-    <td></td>
+    <td><code>(primary: (bg: var(--kendo-color-primary-subtle, #deecf9), text: var(--kendo-color-primary-on-subtle, #001c30), border: var(--kendo-color-primary-subtle, #deecf9)), error: (bg: var(--kendo-color-error-subtle, #fde7e9), text: var(--kendo-color-error-on-subtle, #420f12), border: var(--kendo-color-error-subtle, #fde7e9)), warning: (bg: var(--kendo-color-warning-subtle, #fff4ce), text: var(--kendo-color-warning-on-subtle, #323130), border: var(--kendo-color-warning-subtle, #fff4ce)), success: (bg: var(--kendo-color-success-subtle, #dff6dd), text: var(--kendo-color-success-on-subtle, #063206), border: var(--kendo-color-success-subtle, #dff6dd)), info: (bg: var(--kendo-color-info-subtle, #cee5ff), text: var(--kendo-color-info-on-subtle, #032040), border: var(--kendo-color-info-subtle, #cee5ff)), secondary: (bg: var(--kendo-color-secondary-subtle, #faf9f8), text: var(--kendo-color-secondary-on-subtle, #323130), border: var(--kendo-color-secondary-subtle, #faf9f8)), tertiary: (bg: var(--kendo-color-tertiary-subtle, #deecf9), text: var(--kendo-color-tertiary-on-subtle, #174974), border: var(--kendo-color-tertiary-subtle, #deecf9)), dark: (bg: var(--kendo-color-dark, #323130), text: var(--kendo-color-on-dark, #ffffff), border: var(--kendo-color-dark, #323130)), light: (bg: var(--kendo-color-light, #d2d0ce), text: var(--kendo-color-on-light, #323130), border: var(--kendo-color-light, #d2d0ce)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Notification variations.</div></div>
