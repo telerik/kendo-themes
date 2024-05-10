@@ -17,13 +17,13 @@
 /// @contextType css
 
 // stylelint-disable scss/at-function-pattern
-@function __scale( $val ) {
+@function _scale( $val ) {
     @return scale( $val );
 }
-@function __scale-x( $val ) {
+@function _scale-x( $val ) {
     @return scaleX( $val );
 }
-@function __scale-y( $val ) {
+@function _scale-y( $val ) {
     @return scaleY( $val );
 }
 // stylelint-enable scss/at-function-pattern
@@ -32,8 +32,8 @@
 
     // Scale utility classes
     $kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
-    @include generate-utils( scale, transform, $kendo-utils-scale, __scale );
-    @include generate-utils( scale-x, transform, $kendo-utils-scale, __scale-x );
-    @include generate-utils( scale-y, transform, $kendo-utils-scale, __scale-y );
+    @include generate-utils( scale, transform, $kendo-utils-scale, _scale );
+    @include generate-utils( scale-x, transform, $kendo-utils-scale, _scale-x );
+    @include generate-utils( scale-y, transform, $kendo-utils-scale, _scale-y );
 
 }
