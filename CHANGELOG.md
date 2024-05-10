@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v8.0.0...v8.0.1-dev.0) (2024-05-10)
+
+
+### Bug Fixes
+
+* **action-sheet:** reduce filter calc nesting ([0ae3419](https://github.com/telerik/kendo-themes/commit/0ae3419692d1663dd6b59a26e0a806db1896249e))
+* **dataviz:** gauge track uses a wrong color ([ef6dfef](https://github.com/telerik/kendo-themes/commit/ef6dfef254e90f2b8bc09f22edfc7f750e13b053))
+* **utils:** resolve dart-sass warning for naming functions and mixins ([5c25888](https://github.com/telerik/kendo-themes/commit/5c2588881d2fb8323e1e0cb722d0df19ed683040))
+
+
+
+
+
 # [8.0.0](https://github.com/telerik/kendo-themes/compare/v8.0.0-dev.12...v8.0.0) (2024-05-07)
 
 **Note:** Version bump only for package kendo-themes.repo
