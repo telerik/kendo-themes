@@ -117,6 +117,9 @@ function _capitalize(string) {
 
                         // Augment variable type
                         item.resolvedType = item.type || resolvedVar.type;
+
+                        // Prettify value
+                        item.resolvedType === "Map" && (item.prettyValue = resolvedVar.prettyValue);
                     }
 
                     acc.variables.push( item );
