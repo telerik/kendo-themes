@@ -47,7 +47,7 @@
 /// @contextType css
 
 // stylelint-disable scss/at-function-pattern
-@function __rotate( $val ) {
+@function _rotate( $val ) {
     @return rotate( $val );
 }
 // stylelint-enable scss/at-function-pattern
@@ -56,6 +56,6 @@
 
     // Rotate utility classes
     $kendo-utils-rotate: k-map-get( $kendo-utils, "rotate" ) !default;
-    @include generate-utils( rotate, transform, $kendo-utils-rotate, __rotate );
+    @include generate-utils( rotate, transform, $kendo-utils-rotate, _rotate );
 
 }

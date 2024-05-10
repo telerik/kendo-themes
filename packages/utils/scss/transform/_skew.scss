@@ -23,10 +23,10 @@
 /// @contextType css
 
 // stylelint-disable scss/at-function-pattern
-@function __skew-x( $val ) {
+@function _skew-x( $val ) {
     @return skewX( $val );
 }
-@function __skew-y( $val ) {
+@function _skew-y( $val ) {
     @return skewY( $val );
 }
 // stylelint-enable scss/at-function-pattern
@@ -35,7 +35,7 @@
 
     // Transform skew utility classes
     $kendo-utils-skew: k-map-get( $kendo-utils, "skew" ) !default;
-    @include generate-utils( skew-x, transform, $kendo-utils-skew, __skew-x );
-    @include generate-utils( skew-y, transform, $kendo-utils-skew, __skew-y );
+    @include generate-utils( skew-x, transform, $kendo-utils-skew, _skew-x );
+    @include generate-utils( skew-y, transform, $kendo-utils-skew, _skew-y );
 
 }
