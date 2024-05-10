@@ -20,7 +20,7 @@ function _capitalize(string) {
 if (fs.existsSync( srcFile )) {
 
     if (path.basename( themeDir ) === 'fluent') {
-        fs.writeFileSync( path.resolve( output.path, output.filename), '@use "../scss/all.scss";');
+        fs.writeFileSync( path.resolve( output.path, output.filename), '@forward "../scss/all.scss";');
     } else {
         sassFlatten({ file: srcFile, output, nodeModules });
     }
