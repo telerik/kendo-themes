@@ -1,0 +1,35 @@
+@use "sass:map";
+@use "../core/" as *;
+
+/// Font sizes of the icons.
+/// @group icon
+$kendo-icon-size: 1rem !default;
+
+$kendo-icon-size-xs: calc( var( --kendo-icon-size, 1rem ) * .75 ) !default;
+$kendo-icon-size-sm: calc( var( --kendo-icon-size, 1rem ) * .875 ) !default;
+$kendo-icon-size-md: var( --kendo-icon-size, 1rem ) !default;
+$kendo-icon-size-lg: calc( var( --kendo-icon-size, 1rem ) * 1.25 ) !default;
+$kendo-icon-size-xl: calc( var( --kendo-icon-size, 1rem ) * 1.5 ) !default;
+$kendo-icon-size-xxl: calc( var( --kendo-icon-size, 1rem ) * 2 ) !default;
+$kendo-icon-size-xxxl: calc( var( --kendo-icon-size, 1rem ) * 3 ) !default;
+
+/// Spacing around the icons.
+/// @group icon
+$kendo-icon-spacing: k-spacing(1) !default;
+
+/// Padding of the action icons container.
+/// @group icon
+$kendo-icon-padding: k-spacing(1) !default;
+
+:root {
+    --kendo-icon-size: var( --kendo-icon-size, 1rem );
+    --kendo-icon-size-xs: #{$kendo-icon-size-xs};
+    --kendo-icon-size-sm: #{$kendo-icon-size-sm};
+    --kendo-icon-size-md: #{$kendo-icon-size-md};
+    --kendo-icon-size-lg: #{$kendo-icon-size-lg};
+    --kendo-icon-size-xl: #{$kendo-icon-size-xl};
+    --kendo-icon-size-xxl: #{$kendo-icon-size-xxl};
+    --kendo-icon-size-xxxl: #{$kendo-icon-size-xxxl};
+    --kendo-icon-spacing: #{$kendo-icon-spacing};
+    --kendo-icon-padding: #{$kendo-icon-padding};
+}

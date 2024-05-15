@@ -1,5 +1,8 @@
-@import "./images/slider-h.scss";
-@import "./images/slider-v.scss";
+@use "sass:map";
+@use "../core/" as *;
+
+// @import "./images/slider-h.scss";
+// @import "./images/slider-v.scss";
 
 
 // Slider
@@ -117,3 +120,6 @@ $kendo-slider-selection-bg: $kendo-color-primary !default;
 /// @group slider
 /// The opacity of the disabled Slider.
 $kendo-slider-disabled-opacity: null !default;
+
+$kendo-slider-tick-horizontal-image: null !default;
+$kendo-slider-tick-vertical-image: null !default;

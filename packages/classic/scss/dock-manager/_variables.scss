@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "../core/" as *;
+
+// DockManager
+
 ///  The width of the border around the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-border-width: 1px !default;

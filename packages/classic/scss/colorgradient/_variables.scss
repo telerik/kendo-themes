@@ -1,4 +1,7 @@
-@import "./images/alpha-slider-bgr.scss";
+@use "sass:map";
+@use "../core/" as *;
+
+// @import "./images/alpha-slider-bgr.scss";
 
 // ColorGradient
 
@@ -140,3 +143,5 @@ $kendo-color-gradient-contrast-ratio-font-weight: var( --kendo-font-weight-bold,
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group color-gradient
 $kendo-color-gradient-contrast-spacer: calc( #{$kendo-color-gradient-spacer} / 1.5 ) !default;
+
+$kendo-color-gradient-slider-image: null !default;

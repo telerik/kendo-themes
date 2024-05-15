@@ -1,3 +1,9 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "../calendar/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+
 // Scheduler
 
 /// The width of the border around the Scheduler.

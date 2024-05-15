@@ -1,5 +1,7 @@
-@import "../list/_variables.scss";
-@import "../checkbox/_variables.scss";
+@use "sass:map";
+@use "../core/" as *;
+@use "../list/_variables.scss" as *;
+@use "../checkbox/_variables.scss" as *;
 
 
 // Radio button

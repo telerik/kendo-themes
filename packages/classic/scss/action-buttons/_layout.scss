@@ -1,6 +1,7 @@
+@use "./_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/action-buttons/_layout.scss";
 
 
-@mixin kendo-actions--layout() {
+@mixin kendo-action-buttons--layout() {
     @include kendo-actions--layout-base();
 }

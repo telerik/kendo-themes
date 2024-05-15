@@ -1,4 +1,8 @@
-@import "./images/image-default.scss";
+@use "sass:map";
+@use "../core/" as *;
+@use "../input/_variables.scss" as *;
+
+// @import "./images/image-default.scss";
 
 
 // Spreadsheet
@@ -207,7 +211,7 @@ $kendo-spreadsheet-insert-image-dialog-preview-width: 355px !default;
 $kendo-spreadsheet-insert-image-dialog-preview-height: 230px !default;
 /// The image of the Spreadsheet image Dialog preview.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-preview-img: "image-default.png" !default;
+$kendo-spreadsheet-insert-image-dialog-preview-img: null !default;
 /// The border of the Spreadsheet image Dialog preview.
 /// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-border: $kendo-component-border !default;

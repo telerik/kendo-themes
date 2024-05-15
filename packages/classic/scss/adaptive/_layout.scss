@@ -1,3 +1,7 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../listgroup/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/adaptive/_layout.scss";
 
 
