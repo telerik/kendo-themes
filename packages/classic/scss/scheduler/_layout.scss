@@ -1,3 +1,8 @@
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "./_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../icon/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/scheduler/_layout.scss";
 
 

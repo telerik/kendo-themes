@@ -1,4 +1,9 @@
-@import "./images/markers.scss";
+@use "sass:map";
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "../button/_variables.scss" as *;
+
+// @import "./images/markers.scss";
 
 
 // Map

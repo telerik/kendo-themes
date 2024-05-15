@@ -1,3 +1,6 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/imageeditor/_layout.scss";
 
 

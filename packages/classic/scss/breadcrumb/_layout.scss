@@ -1,3 +1,5 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/breadcrumb/_layout.scss";
 
 

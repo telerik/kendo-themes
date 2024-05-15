@@ -1,6 +1,8 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/expansion-panel/_layout.scss";
 
 
-@mixin kendo-expander--layout() {
+@mixin kendo-expansion-panel--layout() {
     @include kendo-expander--layout-base();
 }

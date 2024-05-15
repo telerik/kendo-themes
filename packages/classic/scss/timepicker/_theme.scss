@@ -1,6 +1,6 @@
 @import "@progress/kendo-theme-default/scss/timepicker/_theme.scss";
 
 
-@mixin kendo-time-picker--theme() {
+@mixin kendo-timepicker--theme() {
     @include kendo-time-picker--theme-base();
 }
