@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../toolbar/_variables.scss" as *;
+
 // Chat
 
 /// The horizontal padding of the Chat.

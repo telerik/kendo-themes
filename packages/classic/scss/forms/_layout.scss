@@ -1,6 +1,12 @@
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "./_variables.scss" as *;
+@use "../input/_variables.scss" as *;
+@use "../window/_variables.scss" as *;
+
 @import "@progress/kendo-theme-default/scss/forms/_layout.scss";
 
 
-@mixin kendo-form--layout() {
+@mixin kendo-forms--layout() {
     @include kendo-form--layout-base();
 }

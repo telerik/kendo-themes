@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../button/_variables.scss" as *;
+
 // Floating Action Button
 
 /// The width of the border around the FAB.

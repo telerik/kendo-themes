@@ -1,6 +1,8 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/taskboard/_layout.scss";
 
 
-@mixin kendo-task-board--layout() {
+@mixin kendo-taskboard--layout() {
     @include kendo-task-board--layout-base();
 }

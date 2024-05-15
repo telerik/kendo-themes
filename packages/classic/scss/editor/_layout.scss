@@ -1,3 +1,9 @@
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "./_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../window/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/editor/_layout.scss";
 
 

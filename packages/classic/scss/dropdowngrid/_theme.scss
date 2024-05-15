@@ -1,6 +1,6 @@
 @import "@progress/kendo-theme-default/scss/dropdowngrid/_theme.scss";
 
 
-@mixin kendo-dropdown-grid--theme() {
+@mixin kendo-dropdowngrid--theme() {
     @include kendo-dropdown-grid--theme-base();
 }

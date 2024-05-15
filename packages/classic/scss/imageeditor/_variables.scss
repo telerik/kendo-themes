@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
+
 // ImageEditor
 $kendo-image-editor-margin-y: null !default;
 $kendo-image-editor-margin-x: null !default;

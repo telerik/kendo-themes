@@ -1,6 +1,6 @@
 @import "@progress/kendo-theme-default/scss/numerictextbox/_theme.scss";
 
 
-@mixin kendo-numeric-textbox--theme() {
+@mixin kendo-numerictextbox--theme() {
     @include kendo-numeric-textbox--theme-base();
 }

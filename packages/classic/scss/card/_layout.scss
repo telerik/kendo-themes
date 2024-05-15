@@ -1,3 +1,6 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
+@use "../typography/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/card/_layout.scss";
 
 

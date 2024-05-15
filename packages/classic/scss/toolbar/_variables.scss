@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../button/_variables.scss" as *;
+
 // Toolbar
 
 /// The horizontal padding of the Toolbar.

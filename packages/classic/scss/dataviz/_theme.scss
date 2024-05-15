@@ -1,3 +1,6 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
+@use "../button/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/dataviz/_theme.scss";
 
 

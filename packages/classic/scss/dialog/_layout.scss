@@ -1,3 +1,6 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
+@use "../window/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/dialog/_layout.scss";
 
 

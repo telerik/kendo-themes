@@ -1,1 +1,23 @@
-@import "@progress/kendo-theme-utils/scss/index.import.scss";
+// Module meta
+$_kendo-module-meta: (
+    name: "utils",
+    dependencies: ()
+);
+
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Register
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
+
+// Expose
+@mixin utils-styles() {
+    @include module.render( "utils" ) {
+        @include kendo-utils--layout();
+        @include kendo-utils--theme();
+    }
+}

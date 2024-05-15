@@ -1,337 +1,511 @@
-@import "./core/_index.scss";
+// Forward component modules
+@forward "./core";
 
 
-// Typography
-@import "./typography/_index.scss";
+// Typography and utils
+@forward "./typography";
+@forward "./utils";
+@forward "./draggable";
 
 
 // Generic content
-@import "./icons/_index.scss";
-@import "./messagebox/_index.scss";
+@forward "./icon";
+@forward "./messagebox";
 
 
 // Primitive components
-@import "./draggable/_index.scss";
-@import "./list/_index.scss";
-@import "./listgroup/_index.scss";
-@import "./overlay/_index.scss";
-@import "./popup/_index.scss";
-@import "./ripple/_index.scss";
-@import "./table/_index.scss";
-@import "./virtual-scroller/_index.scss";
-@import "./no-data/_index.scss";
-
-
-// Indicators
-@import "./avatar/_index.scss";
-@import "./badge/_index.scss";
-@import "./chip/_index.scss";
-@import "./color-preview/_index.scss";
-@import "./loader/_index.scss";
-// @import "./loading/_index.scss";
-@import "./skeleton/_index.scss";
-@import "./time-marker/_index.scss";
-
-
-// Form helpers
-@import "./forms/_index.scss";
-@import "./validator/_index.scss";
-@import "./floating-label/_index.scss";
+@forward "./action-buttons";
+@forward "./list";
+@forward "./listgroup";
+@forward "./overlay";
+@forward "./popup";
+@forward "./ripple";
+@forward "./table";
+@forward "./virtual-scroller";
 
 
 // Native forms
-@import "./button/_index.scss";
-@import "./split-button/_index.scss";
-@import "./menu-button/_index.scss";
-@import "./input/_index.scss";
-@import "./textbox/_index.scss";
-@import "./textarea/_index.scss";
-@import "./checkbox/_index.scss";
-@import "./listbox/_index.scss";
-@import "./progressbar/_index.scss";
-@import "./radio/_index.scss";
-@import "./slider/_index.scss";
-
-
-// Form requirements
-@import "./calendar/_index.scss";
-@import "./timeselector/_index.scss";
-
-
-// Augmented forms
-@import "./autocomplete/_index.scss";
-@import "./captcha/_index.scss";
-@import "./colorpalette/_index.scss";
-@import "./colorgradient/_index.scss";
-@import "./coloreditor/_index.scss";
-@import "./colorpicker/_index.scss";
-@import "./combobox/_index.scss";
-@import "./dateinput/_index.scss";
-@import "./datepicker/_index.scss";
-@import "./timepicker/_index.scss";
-@import "./datetimepicker/_index.scss";
-@import "./timedurationpicker/_index.scss";
-@import "./daterangepicker/_index.scss";
-@import "./dropdowngrid/_index.scss";
-@import "./dropdownlist/_index.scss";
-@import "./dropdowntree/_index.scss";
-@import "./maskedtextbox/_index.scss";
-@import "./multiselect/_index.scss";
-@import "./numerictextbox/_index.scss";
-@import "./rating/_index.scss";
-@import "./searchbox/_index.scss";
-@import "./switch/_index.scss";
-@import "./upload/_index.scss";
-@import "./dropzone/_index.scss";
-
-
-// Command interfaces
-@import "./action-buttons/_index.scss";
-@import "./appbar/_index.scss";
-@import "./fab/_index.scss";
-@import "./menu/_index.scss";
-@import "./toolbar/_index.scss";
+@forward "./button";
+@forward "./split-button";
+@forward "./menu-button";
+@forward "./input";
+@forward "./textbox";
+@forward "./textarea";
+@forward "./checkbox";
+@forward "./listbox";
+@forward "./progressbar";
+@forward "./radio";
+@forward "./slider";
 
 
 // Popups and modals
-@import "./action-sheet/_index.scss";
-@import "./dialog/_index.scss";
-@import "./drawer/_index.scss";
-@import "./notification/_index.scss";
-@import "./popover/_index.scss";
-@import "./responsivepanel/_index.scss";
-@import "./tooltip/_index.scss";
-@import "./window/_index.scss";
+@forward "./action-sheet";
+@forward "./window";
+@forward "./dialog";
+@forward "./drawer";
+@forward "./notification";
+@forward "./popover";
+@forward "./responsivepanel";
+
+
+// Indicators
+@forward "./avatar";
+@forward "./badge";
+@forward "./chip";
+@forward "./color-preview";
+@forward "./loader";
+@forward "./skeleton";
+@forward "./tooltip";
+
+
+// Form helpers
+@forward "./forms";
+@forward "./validator";
+@forward "./floating-label";
+
+
+// Form requirements
+@forward "./calendar";
+@forward "./timeselector";
+
+
+// Augmented forms
+@forward "./autocomplete";
+@forward "./captcha";
+@forward "./colorpalette";
+@forward "./colorgradient";
+@forward "./coloreditor";
+@forward "./colorpicker";
+@forward "./combobox";
+@forward "./dateinput";
+@forward "./datepicker";
+@forward "./timepicker";
+@forward "./datetimepicker";
+@forward "./daterangepicker";
+@forward "./dropdowngrid";
+@forward "./dropdownlist";
+@forward "./dropdowntree";
+@forward "./maskedtextbox";
+@forward "./multiselect";
+@forward "./numerictextbox";
+@forward "./rating";
+@forward "./searchbox";
+@forward "./switch";
+@forward "./upload";
+@forward "./dropzone";
+
+
+// Command interfaces
+@forward "./appbar";
+@forward "./fab";
+@forward "./menu";
+@forward "./toolbar";
 
 
 // Navigation
-@import "./bottom-navigation/_index.scss";
-@import "./breadcrumb/_index.scss";
-@import "./pager/_index.scss";
-@import "./stepper/_index.scss";
-@import "./tabstrip/_index.scss";
-@import "./treeview/_index.scss";
-@import "./wizard/_index.scss";
+@forward "./bottom-navigation";
+@forward "./breadcrumb";
+@forward "./pager";
+@forward "./stepper";
+@forward "./tabstrip";
+@forward "./treeview";
+@forward "./wizard";
 
 
 // Layout & containers
-@import "./card/_index.scss";
-@import "./expansion-panel/_index.scss";
-@import "./panel/_index.scss";
-@import "./panelbar/_index.scss";
-@import "./splitter/_index.scss";
-@import "./tilelayout/_index.scss";
-@import "./dock-manager/_index.scss";
-@import "./chart-wizard/_index.scss";
-
-
-// Data management
-@import "./grid/_index.scss";
-@import "./listview/_index.scss";
-@import "./spreadsheet/_index.scss";
-@import "./pivotgrid/_index.scss";
-@import "./treelist/_index.scss";
-@import "./filter/_index.scss";
-@import "./filemanager/_index.scss";
-@import "./taskboard/_index.scss";
+@forward "./card";
+@forward "./expansion-panel";
+@forward "./panelbar";
+@forward "./splitter";
+@forward "./tilelayout";
+@forward "./dock-manager";
+@forward "./chart-wizard";
 
 
 // Editors
-@import "./editor/_index.scss";
-@import "./imageeditor/_index.scss";
+@forward "./editor";
+@forward "./imageeditor";
+
+
+// Data management
+@forward "./grid";
+@forward "./listview";
+@forward "./spreadsheet";
+@forward "./pivotgrid";
+@forward "./treelist";
+@forward "./filter";
+@forward "./filemanager";
+@forward "./taskboard";
 
 
 // Scheduling
-@import "./gantt/_index.scss";
-@import "./scheduler/_index.scss";
+@forward "./gantt";
+@forward "./scheduler";
 
 
 // Misc
-@import "./adaptive/_index.scss";
-@import "./chat/_index.scss";
-@import "./mediaplayer/_index.scss";
-@import "./timeline/_index.scss";
-@import "./pdf-viewer/_index.scss";
-@import "./scroller/_index.scss";
-@import "./scrollview/_index.scss";
-@import "./prompt/_index.scss";
+@forward "./adaptive";
+@forward "./chat";
+@forward "./mediaplayer";
+@forward "./timeline";
+@forward "./pdf-viewer";
+@forward "./scroller";
+@forward "./scrollview";
+@forward "./prompt";
 
 
 // Dataviz
-@import "./dataviz/_index.scss";
-@import "./map/_index.scss";
-@import "./orgchart/_index.scss";
-@import "./signature/_index.scss";
+@forward "./dataviz";
+@forward "./map";
+@forward "./orgchart";
+@forward "./signature";
+
+
+// Use component modules
+@use "./core" as *;
+
+// Typography and utils
+@use "./typography" as *;
+@use "./utils" as *;
+@use "./draggable" as *;
+
+
+// Generic content
+@use "./icon" as *;
+@use "./messagebox" as *;
+
+
+// Primitive components
+@use "./action-buttons" as *;
+@use "./list" as *;
+@use "./listgroup" as *;
+@use "./overlay" as *;
+@use "./popup" as *;
+@use "./ripple" as *;
+@use "./table" as *;
+@use "./virtual-scroller" as *;
+
+
+// Indicators
+@use "./avatar" as *;
+@use "./badge" as *;
+@use "./chip" as *;
+@use "./color-preview" as *;
+@use "./loader" as *;
+@use "./skeleton" as *;
+@use "./tooltip" as *;
+
+
+// Form helpers
+@use "./forms" as *;
+@use "./validator" as *;
+@use "./floating-label" as *;
+
+
+// Native forms
+@use "./button" as *;
+@use "./split-button" as *;
+@use "./menu-button" as *;
+@use "./input" as *;
+@use "./textbox" as *;
+@use "./textarea" as *;
+@use "./checkbox" as *;
+@use "./listbox" as *;
+@use "./progressbar" as *;
+@use "./radio" as *;
+@use "./slider" as *;
+
+
+// Form requirements
+@use "./calendar" as *;
+@use "./timeselector" as *;
+
+
+// Augmented forms
+@use "./autocomplete" as *;
+@use "./captcha" as *;
+@use "./colorpalette" as *;
+@use "./colorgradient" as *;
+@use "./coloreditor" as *;
+@use "./colorpicker" as *;
+@use "./combobox" as *;
+@use "./dateinput" as *;
+@use "./datepicker" as *;
+@use "./timepicker" as *;
+@use "./timedurationpicker" as *;
+@use "./datetimepicker" as *;
+@use "./daterangepicker" as *;
+@use "./dropdowngrid" as *;
+@use "./dropdownlist" as *;
+@use "./dropdowntree" as *;
+@use "./maskedtextbox" as *;
+@use "./multiselect" as *;
+@use "./numerictextbox" as *;
+@use "./rating" as *;
+@use "./searchbox" as *;
+@use "./switch" as *;
+@use "./upload" as *;
+@use "./dropzone" as *;
+
+
+// Command interfaces
+@use "./appbar" as *;
+@use "./fab" as *;
+@use "./menu" as *;
+@use "./toolbar" as *;
+
+
+// Popups and modals
+@use "./action-sheet" as *;
+@use "./dialog" as *;
+@use "./drawer" as *;
+@use "./notification" as *;
+@use "./popover" as *;
+@use "./responsivepanel" as *;
+@use "./window" as *;
+
+
+// Navigation
+@use "./bottom-navigation" as *;
+@use "./breadcrumb" as *;
+@use "./pager" as *;
+@use "./stepper" as *;
+@use "./tabstrip" as *;
+@use "./treeview" as *;
+@use "./wizard" as *;
+
+
+// Layout & containers
+@use "./card" as *;
+@use "./expansion-panel" as *;
+@use "./panelbar" as *;
+@use "./splitter" as *;
+@use "./tilelayout" as *;
+@use "./dock-manager" as *;
+@use "./chart-wizard" as *;
+
+
+// Data management
+@use "./grid" as *;
+@use "./listview" as *;
+@use "./spreadsheet" as *;
+@use "./pivotgrid" as *;
+@use "./treelist" as *;
+@use "./filter" as *;
+@use "./filemanager" as *;
+@use "./taskboard" as *;
+
+
+// Editors
+@use "./editor" as *;
+@use "./imageeditor" as *;
+
+
+// Scheduling
+@use "./gantt" as *;
+@use "./scheduler" as *;
+
+
+// Misc
+@use "./adaptive" as *;
+@use "./chat" as *;
+@use "./mediaplayer" as *;
+@use "./timeline" as *;
+@use "./pdf-viewer" as *;
+@use "./scroller" as *;
+@use "./scrollview" as *;
+@use "./prompt" as *;
+
+
+// Dataviz
+@use "./dataviz" as *;
+@use "./map" as *;
+@use "./orgchart" as *;
+@use "./signature" as *;
 
 
 // Configuration
-@mixin kendo-theme--config( $config: null ) {
+@mixin config( $config: null ) {
+    @include core-configure( $config: $config );
 }
 
 
-// Styles
-@mixin kendo-theme--styles() {
+// Output styles
+@mixin styles() {
     // Core
     @include kendo-core--styles();
 
-    // Color system
+    // Core css variables
+    @include core-styles();
 
-    // Typography
-    @include kendo-typography--styles();
+    // Color system css variables
+    @include color-system-styles();
 
+    // Spacing
+    @include kendo-spacing--styles();
+
+    // Elevation
+    @include kendo-elevation--styles();
+
+    // Core typography
+    @include kendo-core--typography--styles();
+    // Radii
+    @include kendo-border-radius--styles();
+
+    // Typography and utils
+    @include typography-styles();
+    @include utils-styles();
 
     // Generic content
-    @include kendo-icon--styles();
-    @include kendo-messagebox--styles();
+    @include icon-styles();
+    @include messagebox-styles();
 
 
     // Primitive components
-    @include kendo-action-buttons--styles();
-    @include kendo-list--styles();
-    @include kendo-listgroup--styles();
-    @include kendo-overlay--styles();
-    @include kendo-popup--styles();
-    @include kendo-ripple--styles();
-    @include kendo-table--styles();
-    @include kendo-virtual-scroller--styles();
-    @include kendo-no-data--styles();
+    @include draggable-styles();
+    @include action-buttons-styles();
+    @include list-styles();
+    @include listgroup-styles();
+    @include overlay-styles();
+    @include popup-styles();
+    @include ripple-styles();
+    @include table-styles();
+    @include virtual-scroller-styles();
 
 
     // Indicators
-    @include kendo-avatar--styles();
-    @include kendo-badge--styles();
-    @include kendo-chip--styles();
-    @include kendo-color-preview--styles();
-    @include kendo-loader--styles();
-    @include kendo-skeleton--styles();
-    @include kendo-tooltip--styles();
-    @include kendo-time-marker--styles();
+    @include avatar-styles();
+    @include badge-styles();
+    @include chip-styles();
+    @include color-preview-styles();
+    @include loader-styles();
+    @include skeleton-styles();
+    @include tooltip-styles();
 
 
     // Form helpers
-    @include kendo-form--styles();
-    @include kendo-validator--styles();
-    @include kendo-floating-label--styles();
+    @include forms-styles();
+    @include validator-styles();
+    @include floating-label-styles();
 
 
     // Native forms
-    @include kendo-button--styles();
-    @include kendo-split-button--styles();
-    @include kendo-menu-button--styles();
-    @include kendo-input--styles();
-    @include kendo-textbox--styles();
-    @include kendo-textarea--styles();
-    @include kendo-checkbox--styles();
-    @include kendo-listbox--styles();
-    @include kendo-progressbar--styles();
-    @include kendo-radio--styles();
-    @include kendo-slider--styles();
+    @include button-styles();
+    @include split-button-styles();
+    @include menu-button-styles();
+    @include input-styles();
+    @include textbox-styles();
+    @include textarea-styles();
+    @include checkbox-styles();
+    @include listbox-styles();
+    @include progressbar-styles();
+    @include radio-styles();
+    @include slider-styles();
 
 
     // Form requirements
-    @include kendo-calendar--styles();
-    @include kendo-time-selector--styles();
+    @include calendar-styles();
+    @include timeselector-styles();
 
 
     // Augmented forms
-    @include kendo-autocomplete--styles();
-    @include kendo-captcha--styles();
-    @include kendo-color-palette--styles();
-    @include kendo-color-gradient--styles();
-    @include kendo-color-editor--styles();
-    @include kendo-color-picker--styles();
-    @include kendo-combobox--styles();
-    @include kendo-date-input--styles();
-    @include kendo-date-picker--styles();
-    @include kendo-time-picker--styles();
-    @include kendo-time-duration-picker--styles();
-    @include kendo-date-time-picker--styles();
-    @include kendo-date-range-picker--styles();
-    @include kendo-dropdown-grid--styles();
-    @include kendo-dropdown-list--styles();
-    @include kendo-dropdown-tree--styles();
-    @include kendo-masked-textbox--styles();
-    @include kendo-multiselect--styles();
-    @include kendo-numeric-textbox--styles();
-    @include kendo-rating--styles();
-    @include kendo-searchbox--styles();
-    @include kendo-switch--styles();
-    @include kendo-upload--styles();
-    @include kendo-dropzone--styles();
+    @include autocomplete-styles();
+    @include captcha-styles();
+    @include colorpalette-styles();
+    @include colorgradient-styles();
+    @include coloreditor-styles();
+    @include colorpicker-styles();
+    @include combobox-styles();
+    @include dateinput-styles();
+    @include datepicker-styles();
+    @include timepicker-styles();
+    @include timedurationpicker-styles();
+    @include datetimepicker-styles();
+    @include daterangepicker-styles();
+    @include dropdowngrid-styles();
+    @include dropdownlist-styles();
+    @include dropdowntree-styles();
+    @include maskedtextbox-styles();
+    @include multiselect-styles();
+    @include numerictextbox-styles();
+    @include rating-styles();
+    @include searchbox-styles();
+    @include switch-styles();
+    @include upload-styles();
+    @include dropzone-styles();
 
 
     // Command interfaces
-    @include kendo-appbar--styles();
-    @include kendo-fab--styles();
-    @include kendo-menu--styles();
-    @include kendo-toolbar--styles();
+    @include appbar-styles();
+    @include fab-styles();
+    @include menu-styles();
+    @include toolbar-styles();
 
 
     // Popups and modals
-    @include kendo-window--styles();
-    @include kendo-action-sheet--styles();
-    @include kendo-dialog--styles();
-    @include kendo-drawer--styles();
-    @include kendo-notification--styles();
-    @include kendo-popover--styles();
-    @include kendo-responsive-panel--styles();
+    @include window-styles();
+    @include action-sheet-styles();
+    @include dialog-styles();
+    @include drawer-styles();
+    @include notification-styles();
+    @include popover-styles();
+    @include responsivepanel-styles();
 
 
     // Navigation
-    @include kendo-bottom-navigation--styles();
-    @include kendo-breadcrumb--styles();
-    @include kendo-pager--styles();
-    @include kendo-stepper--styles();
-    @include kendo-tabstrip--styles();
-    @include kendo-treeview--styles();
-    @include kendo-wizard--styles();
+    @include bottom-navigation-styles();
+    @include breadcrumb-styles();
+    @include pager-styles();
+    @include stepper-styles();
+    @include tabstrip-styles();
+    @include treeview-styles();
+    @include wizard-styles();
 
 
     // Layout & containers
-    @include kendo-card--styles();
-    @include kendo-expander--styles();
-    @include kendo-panelbar--styles();
-    @include kendo-splitter--styles();
-    @include kendo-tile-layout--styles();
-    @include kendo-dock-manager--styles();
-    @include kendo-chart-wizard--styles();
-
+    @include card-styles();
+    @include expansion-panel-styles();
+    @include panelbar-styles();
+    @include splitter-styles();
+    @include tilelayout-styles();
+    @include dock-manager-styles();
+    @include chart-wizard-styles();
 
     // Data management
-    @include kendo-grid--styles();
-    @include kendo-listview--styles();
-    @include kendo-spreadsheet--styles();
-    @include kendo-pivotgrid--styles();
-    @include kendo-treelist--styles();
-    @include kendo-filter--styles();
-    @include kendo-file-manager--styles();
-    @include kendo-task-board--styles();
+    @include grid-styles();
+    @include listview-styles();
+    @include spreadsheet-styles();
+    @include pivotgrid-styles();
+    @include treelist-styles();
+    @include filter-styles();
+    @include filemanager-styles();
+    @include taskboard-styles();
 
 
     // Editors
-    @include kendo-editor--styles();
-    @include kendo-image-editor--styles();
+    @include editor-styles();
+    @include imageeditor-styles();
 
 
     // Scheduling
-    @include kendo-gantt--styles();
-    @include kendo-scheduler--styles();
+    @include gantt-styles();
+    @include scheduler-styles();
 
 
     // Misc
-    @include kendo-adaptive--styles();
-    @include kendo-chat--styles();
-    @include kendo-media-player--styles();
-    @include kendo-timeline--styles();
-    @include kendo-pdf-viewer--styles();
-    @include kendo-scroller--styles();
-    @include kendo-scrollview--styles();
-    @include kendo-prompt--styles();
+    @include adaptive-styles();
+    @include chat-styles();
+    @include mediaplayer-styles();
+    @include timeline-styles();
+    @include pdf-viewer-styles();
+    @include scroller-styles();
+    @include scrollview-styles();
+    @include prompt-styles();
 
 
     // Dataviz
-    @include kendo-dataviz--styles();
-    @include kendo-map--styles();
-    @include kendo-orgchart--styles();
-    @include kendo-signature--styles();
+    @include dataviz-styles();
+    @include map-styles();
+    @include orgchart-styles();
+    @include signature-styles();
 }

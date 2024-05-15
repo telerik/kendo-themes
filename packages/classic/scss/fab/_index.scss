@@ -1,47 +1,31 @@
-@import "../core/_index.scss";
-@import "../utils/_index.scss";
-
-
 // Module meta
 $_kendo-module-meta: (
     name: "fab",
     dependencies: (
-        "badge",
-        "button",
         "icon",
+        "button",
+        "badge",
         "popup"
     )
 );
 
 
-// Dependencies
-@import "../icons/_index.scss";
-@import "../button/_index.scss";
-@import "../badge/_index.scss";
-
-
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin kendo-fab--styles() {
-    @include module-render( "fab" ) {
+@mixin fab-styles() {
+    @include module.render( "fab" ) {
         @include kendo-fab--layout();
         @include kendo-fab--theme();
         @include kendo-utils--layout--position();
         @include kendo-utils--typography--text-align();
         @include kendo-utils--layout--overflow();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-fab--styles();
 }

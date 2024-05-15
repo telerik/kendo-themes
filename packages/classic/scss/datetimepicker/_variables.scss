@@ -1,2 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../calendar/_variables.scss" as *;
+
 // DateTime
 $kendo-datetime-width: calc( calc( #{$kendo-calendar-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 )) !default;

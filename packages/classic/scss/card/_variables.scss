@@ -1,4 +1,6 @@
-@import "../button/_variables.scss";
+@use "sass:map";
+@use "../core/" as *;
+@use "../button/_variables.scss" as *;
 
 // Card
 

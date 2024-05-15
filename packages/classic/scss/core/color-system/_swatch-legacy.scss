@@ -1,67 +1,65 @@
-@if ($kendo-enable-color-system) {
-    $kendo-color-primary: k-color( primary );
-    $kendo-color-primary-contrast: k-color( on-primary );
-    $kendo-color-secondary: k-color( secondary );
-    $kendo-color-tertiary: k-color( tertiary );
-    $kendo-color-info: k-color( info );
-    $kendo-color-success: k-color( success );
-    $kendo-color-warning: k-color( warning );
-    $kendo-color-error: k-color( error );
-    $kendo-color-dark: k-color( dark );
-    $kendo-color-light: k-color( light );
-    $kendo-color-inverse: $kendo-color-dark;
-    $kendo-body-bg: k-color( app-surface );
-    $kendo-body-text: k-color( on-app-surface );
-    $kendo-subtle-text: k-color( subtle );
-    $kendo-app-bg: $kendo-body-bg;
-    $kendo-app-text: $kendo-body-text;
-    $kendo-app-border: k-color( border );
-    $kendo-link-text: $kendo-color-primary;
-    $kendo-link-hover-text: k-color( primary-hover );
-    $kendo-component-bg: k-color( surface-alt );
-    $kendo-component-text: $kendo-body-text;
-    $kendo-component-border: $kendo-app-border;
-    $kendo-base-bg: k-color( surface );
-    $kendo-base-text: $kendo-body-text;
-    $kendo-base-border: $kendo-app-border;
-    $kendo-base-gradient: null;
-    $kendo-hover-bg: k-color( base-hover );
-    $kendo-hover-text: $kendo-base-text;
-    $kendo-hover-border: $kendo-base-border;
-    $kendo-hover-gradient: null;
-    $kendo-selected-bg: $kendo-color-primary;
-    $kendo-selected-text: $kendo-color-primary-contrast;
-    $kendo-selected-border: k-color( primary );
-    $kendo-selected-gradient: $kendo-base-gradient;
-    $kendo-selected-hover-bg: k-color( primary-hover );
-    $kendo-selected-hover-text: $kendo-selected-text;
-    $kendo-selected-hover-border: k-color( primary-hover );
-    $kendo-selected-hover-gradient: $kendo-base-gradient;
-    $kendo-disabled-text: null;
-    $kendo-disabled-bg: null;
-    $kendo-disabled-border: null;
-    $kendo-disabled-opacity: .6;
-    $kendo-disabled-filter: grayscale(.1);
-    $kendo-component-header-bg: $kendo-base-bg;
-    $kendo-component-header-text: $kendo-base-text;
-    $kendo-component-header-border: $kendo-base-border;
-    $kendo-component-header-gradient: $kendo-base-gradient;
-    $kendo-invalid-bg: null;
-    $kendo-invalid-text: $kendo-color-error;
-    $kendo-invalid-border: $kendo-color-error;
-    $kendo-invalid-shadow: null;
+@use "@progress/kendo-theme-core/scss/index.import.scss" as core;
 
-    $kendo-theme-colors: (
-        "primary": $kendo-color-primary,
-        "secondary": $kendo-color-secondary,
-        "tertiary": $kendo-color-tertiary,
-        "info": $kendo-color-info,
-        "success": $kendo-color-success,
-        "warning": $kendo-color-warning,
-        "error": $kendo-color-error,
-        "dark": $kendo-color-dark,
-        "light": $kendo-color-light,
-        "inverse": $kendo-color-inverse,
+@if (core.$kendo-enable-color-system) {
+    core.$kendo-color-primary: core.k-color( primary );
+    core.$kendo-color-primary-contrast: core.k-color( on-primary );
+    core.$kendo-color-secondary: core.k-color( secondary );
+    core.$kendo-color-tertiary: core.k-color( tertiary );
+    core.$kendo-color-info: core.k-color( info );
+    core.$kendo-color-success: core.k-color( success );
+    core.$kendo-color-warning: core.k-color( warning );
+    core.$kendo-color-error: core.k-color( error );
+    core.$kendo-color-dark: core.k-color( dark );
+    core.$kendo-color-light: core.k-color( light );
+    core.$kendo-color-inverse: core.$kendo-color-dark;
+    core.$kendo-body-bg: core.k-color( app-surface );
+    core.$kendo-body-text: core.k-color( on-app-surface );
+    core.$kendo-subtle-text: core.k-color( subtle );
+    core.$kendo-app-bg: core.$kendo-body-bg;
+    core.$kendo-app-text: core.$kendo-body-text;
+    core.$kendo-app-border: core.k-color( border );
+    core.$kendo-link-text: core.$kendo-color-primary;
+    core.$kendo-link-hover-text: core.k-color( primary-hover );
+    core.$kendo-component-bg: core.k-color( surface-alt );
+    core.$kendo-component-text: core.$kendo-body-text;
+    core.$kendo-component-border: core.$kendo-app-border;
+    core.$kendo-base-bg: core.k-color( surface );
+    core.$kendo-base-text: core.$kendo-body-text;
+    core.$kendo-base-border: core.$kendo-app-border;
+    core.$kendo-base-gradient: null;
+    core.$kendo-hover-bg: core.k-color( base-hover );
+    core.$kendo-hover-text: core.$kendo-base-text;
+    core.$kendo-hover-border: core.$kendo-base-border;
+    core.$kendo-hover-gradient: null;
+    core.$kendo-selected-bg: core.$kendo-color-primary;
+    core.$kendo-selected-text: core.$kendo-color-primary-contrast;
+    core.$kendo-selected-border: core.k-color( primary );
+    core.$kendo-selected-gradient: core.$kendo-base-gradient;
+    core.$kendo-selected-hover-bg: core.k-color( primary-hover );
+    core.$kendo-selected-hover-text: core.$kendo-selected-text;
+    core.$kendo-selected-hover-border: core.k-color( primary-hover );
+    core.$kendo-selected-hover-gradient: core.$kendo-base-gradient;
+    core.$kendo-disabled-text: core.k-color( on-app-surface );
+    core.$kendo-component-header-bg: core.$kendo-base-bg;
+    core.$kendo-component-header-text: core.$kendo-base-text;
+    core.$kendo-component-header-border: core.$kendo-base-border;
+    core.$kendo-component-header-gradient: core.$kendo-base-gradient;
+    core.$kendo-invalid-bg: null;
+    core.$kendo-invalid-text: core.$kendo-color-error;
+    core.$kendo-invalid-border: core.$kendo-color-error;
+    core.$kendo-invalid-shadow: null;
+
+    core.$kendo-theme-colors: (
+        "primary": core.$kendo-color-primary,
+        "secondary": core.$kendo-color-secondary,
+        "tertiary": core.$kendo-color-tertiary,
+        "info": core.$kendo-color-info,
+        "success": core.$kendo-color-success,
+        "warning": core.$kendo-color-warning,
+        "error": core.$kendo-color-error,
+        "dark": core.$kendo-color-dark,
+        "light": core.$kendo-color-light,
+        "inverse": core.$kendo-color-inverse,
     );
 
     $kendo-disabled-styling: (

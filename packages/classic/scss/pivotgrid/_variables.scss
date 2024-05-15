@@ -1,4 +1,8 @@
-@import "../table/_variables.scss";
+@use "sass:map";
+@use "../core/" as *;
+@use "../grid/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../table/_variables.scss" as *;
 
 
 // Pivot grid

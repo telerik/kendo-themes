@@ -1,49 +1,30 @@
-@import "../core/_index.scss";
-
-
 // Module meta
 $_kendo-module-meta: (
-    name: "time-duration-picker",
+    name: "timedurationpicker",
     dependencies: (
         "action-buttons",
         "button",
         "icon",
         "input",
-        "list",
         "popup",
-        "time-selector"
+        "list",
+        "timeselector"
     )
 );
 
-
-// Dependencies
-@import "../icons/_index.scss";
-@import "../button/_index.scss";
-@import "../input/_index.scss";
-@import "../popup/_index.scss";
-@import "../list/_index.scss";
-@import "../timeselector/_index.scss";
-
-
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin kendo-time-duration-picker--styles() {
-    @include module-render( "time-duration-picker" ) {
-        @include kendo-time-duration-picker--layout();
-        @include kendo-time-duration-picker--theme();
+@mixin timedurationpicker-styles() {
+    @include module.render( "timedurationpicker" ) {
+        @include kendo-timedurationpicker--layout();
+        @include kendo-timedurationpicker--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-time-duration-picker--styles();
 }

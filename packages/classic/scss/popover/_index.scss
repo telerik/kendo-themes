@@ -1,43 +1,27 @@
-@import "../core/_index.scss";
-
-
 // Module meta
 $_kendo-module-meta: (
     name: "popover",
     dependencies: (
         "action-buttons",
-        "button",
-        "card",
-        "icon",
-        "popup"
+        "dialog",
+        "window"
     )
 );
 
 
-// Dependencies
-@import "../card/_index.scss";
-@import "../popup/_index.scss";
-
-
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin kendo-popover--styles() {
-    @include module-render( "popover" ) {
+@mixin popover-styles() {
+    @include module.render( "popover" ) {
         @include kendo-popover--layout();
         @include kendo-popover--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-popover--styles();
 }

@@ -301,3 +301,5 @@ $kendo-palette-bright-blue: map-merge($_default-palette-bright-blue, $kendo-pale
 $kendo-palette-orchid-purple: $_default-palette-orchid-purple !default;
 $kendo-palette-orchid-purple: map-merge($_default-palette-orchid-purple, $kendo-palette-orchid-purple);
 // stylelint-enable scss/no-global-function-names
+
+$kendo-palettes: () !default;

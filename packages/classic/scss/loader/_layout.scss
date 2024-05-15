@@ -1,3 +1,6 @@
+@use "../core/" as *;
+@use "../overlay/_variables.scss" as *;
+@use "./_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/loader/_layout.scss";
 
 

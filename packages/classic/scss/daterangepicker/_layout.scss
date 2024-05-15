@@ -1,6 +1,9 @@
+@use "../input/_variables.scss" as *;
+@use "./_variables.scss" as *;
+@use "../core/" as *;
 @import "@progress/kendo-theme-default/scss/daterangepicker/_layout.scss";
 
 
-@mixin kendo-date-range-picker--layout() {
+@mixin kendo-daterangepicker--layout() {
     @include kendo-date-range-picker--layout-base();
 }

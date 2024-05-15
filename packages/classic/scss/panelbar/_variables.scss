@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../list/_variables.scss" as *;
+
 // Panelbar
 
 /// The horizontal padding of the PanelBar.

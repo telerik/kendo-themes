@@ -1,3 +1,9 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "../button/_variables.scss" as *;
+
+
 // Map
 /// The border width of the Map.
 /// @group map

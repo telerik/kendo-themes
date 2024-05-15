@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
+
 // ColorGradient
 
 /// The spacer of the ColorGradient.
@@ -141,3 +144,5 @@ $kendo-color-gradient-contrast-ratio-font-weight: var( --kendo-font-weight-bold,
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group color-gradient
 $kendo-color-gradient-contrast-spacer: calc( #{$kendo-color-gradient-spacer} / 1.5 ) !default;
+
+$kendo-color-gradient-slider-image: null !default;

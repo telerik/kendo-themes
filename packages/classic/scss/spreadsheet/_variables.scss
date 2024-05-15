@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../input/_variables.scss" as *;
+
 // Spreadsheet
 
 /// The width of the border around the Spreadsheet.

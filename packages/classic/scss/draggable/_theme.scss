@@ -1,3 +1,5 @@
+@use "../core" as *;
+@use "./variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/draggable/_theme.scss";
 
 

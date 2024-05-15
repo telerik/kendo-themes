@@ -1,3 +1,10 @@
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "./_variables.scss" as *;
+@use "../table/_variables.scss" as *;
+@use "../grid/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/gantt/_layout.scss";
 
 

@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../core/spacing" as *;
+
 // Wizard
 
 /// The horizontal padding of the Wizard.

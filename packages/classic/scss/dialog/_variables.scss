@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../action-buttons/_variables.scss" as *;
+
 // Dialog
 
 /// The background color of the Dialog titlebar.
