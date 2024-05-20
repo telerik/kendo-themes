@@ -128,7 +128,6 @@ $kendo-headings: (
         font-weight: $kendo-h1-font-weight,
         letter-spacing: $kendo-h1-letter-spacing,
         margin: $kendo-h1-margin
-
     ),
     h2: (
         font-size: $kendo-h2-font-size,
@@ -169,7 +168,7 @@ $kendo-headings: (
         font-weight: $kendo-h6-font-weight,
         letter-spacing: $kendo-h6-letter-spacing,
         margin: $kendo-h6-margin
-    ),
+    )
 ) !default;
 
 
@@ -336,5 +335,5 @@ $kendo-display: (
         line-height: $kendo-display4-line-height,
         font-weight: $kendo-display4-font-weight,
         letter-spacing: $kendo-display4-letter-spacing
-    ),
+    )
 ) !default;
