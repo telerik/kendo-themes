@@ -488,7 +488,7 @@ k-generate-color-variations($name, $color, $theme) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-variations.import.scss#L8-L122
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-system.import.scss#L8-L122
 @function k-generate-color-variations($name, $color, $theme) {
     $result: ();
 
@@ -603,6 +603,42 @@ k-generate-color-variations($name, $color, $theme) // => Map
     }
 
     @return $result;
+}
+```
+
+### `k-color`
+
+Takes a color name from the $kendo-colors map as a parameter
+and returns a CSS variable with the actual color as a fallback
+
+
+#### Syntax
+
+```scss
+k-color($key) // => String
+```
+
+#### Parameters
+
+
+`<String> $key`
+: The name of a color/key in the $kendo-colors map
+
+
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color-system.import.scss#L130-L138
+@function k-color($key) {
+    $_color: k-map-get($kendo-colors, $key);
+
+    @if ($_color) {
+        @return var(--kendo-color-#{$key}, $_color);
+    } @else {
+        @error "Color Variable \`#{$key}\` does not exists in the color collection.";
+    }
 }
 ```
 
