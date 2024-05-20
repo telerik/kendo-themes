@@ -120,3 +120,19 @@
 
     @return $result;
 }
+
+/// Takes a color name from the $kendo-colors map as a parameter
+/// and returns a CSS variable with the actual color as a fallback
+/// @param {String} $key - The name of a color/key in the $kendo-colors map
+/// @return {String} - CSS variable with the actual color as a fallback
+///
+/// @group color-system
+@function k-color($key) {
+    $_color: k-map-get($kendo-colors, $key);
+
+    @if ($_color) {
+        @return var(--kendo-color-#{$key}, $_color);
+    } @else {
+        @error "Color Variable \`#{$key}\` does not exists in the color collection.";
+    }
+}
