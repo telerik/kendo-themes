@@ -188,7 +188,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-display4-line-height,
         font-weight: $kendo-display4-font-weight,
         letter-spacing: $kendo-display4-letter-spacing
-    ),
+    )
 )</code></td>
     <td><code>(1: (font-size: 5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 2: (font-size: 4.5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 3: (font-size: 4rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 4: (font-size: 3.5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null))</code></td>
 </tr>
