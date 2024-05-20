@@ -668,7 +668,6 @@ The following table lists the available variables for customization.
         font-weight: $kendo-h1-font-weight,
         letter-spacing: $kendo-h1-letter-spacing,
         margin: $kendo-h1-margin
-
     ),
     h2: (
         font-size: $kendo-h2-font-size,
@@ -709,7 +708,7 @@ The following table lists the available variables for customization.
         font-weight: $kendo-h6-font-weight,
         letter-spacing: $kendo-h6-letter-spacing,
         margin: $kendo-h6-margin
-    ),
+    )
 )</code></td>
     <td><code>(h1: (font-size: 96px, font-family: var(--kendo-font-family, inherit), line-height: 112px, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal), margin: 0 0 12px), h2: (font-size: 60px, font-family: var(--kendo-font-family, inherit), line-height: 72px, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tight, normal), margin: 0 0 12px), h3: (font-size: 48px, font-family: var(--kendo-font-family, inherit), line-height: 56px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: var(--kendo-letter-spacing-normal, normal), margin: 0 0 12px), h4: (font-size: 34px, font-family: var(--kendo-font-family, inherit), line-height: 36px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: var(--kendo-letter-spacing-wider, normal), margin: 0 0 12px), h5: (font-size: 24px, font-family: var(--kendo-font-family, inherit), line-height: 24px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: var(--kendo-letter-spacing-normal, normal), margin: 0 0 12px), h6: (font-size: 20px, font-family: var(--kendo-font-family, inherit), line-height: 24px, font-weight: var(--kendo-font-weight-medium, normal), letter-spacing: var(--kendo-letter-spacing-wide, normal), margin: 0 0 12px))</code></td>
 </tr>
@@ -1128,7 +1127,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-display4-line-height,
         font-weight: $kendo-display4-font-weight,
         letter-spacing: $kendo-display4-letter-spacing
-    ),
+    )
 )</code></td>
     <td><code>(1: (font-size: calc(var(--kendo-font-size, 0.875rem) * 9.5), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal)), 2: (font-size: calc(var(--kendo-font-size, 0.875rem) * 8.75), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal)), 3: (font-size: calc(var(--kendo-font-size, 0.875rem) * 8), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal)), 4: (font-size: calc(var(--kendo-font-size, 0.875rem) * 7.25), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal)))</code></td>
 </tr>

@@ -478,7 +478,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-display4-line-height,
         font-weight: $kendo-display4-font-weight,
         letter-spacing: $kendo-display4-letter-spacing
-    ),
+    )
 )</code></td>
     <td><code>(1: (font-size: calc(var(--kendo-font-size, 0.875rem) * 8), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 2: (font-size: calc(var(--kendo-font-size, 0.875rem) * 7), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 3: (font-size: calc(var(--kendo-font-size, 0.875rem) * 6), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 4: (font-size: calc(var(--kendo-font-size, 0.875rem) * 5), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null))</code></td>
 </tr>

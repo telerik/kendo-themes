@@ -192,7 +192,7 @@ The following table lists the available variables for customizing the Bootstrap 
         line-height: $kendo-display4-line-height,
         font-weight: $kendo-display4-font-weight,
         letter-spacing: $kendo-display4-letter-spacing
-    ),
+    )
 )</code></td>
     <td><code>(1: (font-size: 5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 2: (font-size: 4.5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 3: (font-size: 4rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 4: (font-size: 3.5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null))</code></td>
 </tr>
@@ -26087,7 +26087,6 @@ The following table lists the available variables for customizing the Bootstrap 
         font-weight: $kendo-h1-font-weight,
         letter-spacing: $kendo-h1-letter-spacing,
         margin: $kendo-h1-margin
-
     ),
     h2: (
         font-size: $kendo-h2-font-size,
@@ -26128,7 +26127,7 @@ The following table lists the available variables for customizing the Bootstrap 
         font-weight: $kendo-h6-font-weight,
         letter-spacing: $kendo-h6-letter-spacing,
         margin: $kendo-h6-margin
-    ),
+    )
 )</code></td>
     <td><code>(h1: (font-size: 2.5rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h2: (font-size: 2rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h3: (font-size: 1.75rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h4: (font-size: 1.5rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h5: (font-size: 1.25rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h6: (font-size: 1rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem))</code></td>
 </tr>

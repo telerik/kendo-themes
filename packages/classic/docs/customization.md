@@ -26009,7 +26009,6 @@ The following table lists the available variables for customizing the Classic th
         font-weight: $kendo-h1-font-weight,
         letter-spacing: $kendo-h1-letter-spacing,
         margin: $kendo-h1-margin
-
     ),
     h2: (
         font-size: $kendo-h2-font-size,
@@ -26050,7 +26049,7 @@ The following table lists the available variables for customizing the Classic th
         font-weight: $kendo-h6-font-weight,
         letter-spacing: $kendo-h6-letter-spacing,
         margin: $kendo-h6-margin
-    ),
+    )
 )</code></td>
     <td><code>(h1: (font-size: calc(var(--kendo-font-size, 0.875rem) * 4), font-family: var(--kendo-font-family, inherit), line-height: 74px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h2: (font-size: calc(var(--kendo-font-size, 0.875rem) * 3), font-family: var(--kendo-font-family, inherit), line-height: 56px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h3: (font-size: calc(var(--kendo-font-size, 0.875rem) * 2.5), font-family: var(--kendo-font-family, inherit), line-height: 42px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h4: (font-size: calc(var(--kendo-font-size, 0.875rem) * 2), font-family: var(--kendo-font-family, inherit), line-height: 40px, font-weight: var(--kendo-font-weight-bold, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h5: (font-size: calc(var(--kendo-font-size, 0.875rem) * 1.5), font-family: var(--kendo-font-family, inherit), line-height: 28px, font-weight: var(--kendo-font-weight-bold, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h6: (font-size: var(--kendo-font-size, inherit), font-family: var(--kendo-font-family, inherit), line-height: 20px, font-weight: var(--kendo-font-weight-bold, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)))</code></td>
 </tr>
@@ -26479,7 +26478,7 @@ The following table lists the available variables for customizing the Classic th
         line-height: $kendo-display4-line-height,
         font-weight: $kendo-display4-font-weight,
         letter-spacing: $kendo-display4-letter-spacing
-    ),
+    )
 )</code></td>
     <td><code>(1: (font-size: calc(var(--kendo-font-size, 0.875rem) * 8), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 2: (font-size: calc(var(--kendo-font-size, 0.875rem) * 7), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 3: (font-size: calc(var(--kendo-font-size, 0.875rem) * 6), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 4: (font-size: calc(var(--kendo-font-size, 0.875rem) * 5), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null))</code></td>
 </tr>
