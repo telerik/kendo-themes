@@ -177,16 +177,6 @@ $_default-colors: (
 $kendo-colors: $_default-colors !default;
 $kendo-colors: k-map-merge($_default-colors, $kendo-colors);
 
-@function k-color($key) {
-    $_color: k-map-get($kendo-colors, $key);
-
-    @if ($_color) {
-        @return var(--kendo-color-#{$key}, $_color);
-    } @else {
-        @error "Color Variable \`#{$key}\` does not exists in the color collection.";
-    }
-}
-
 @mixin color-system--styles() {
     :root {
         @each $key, $value in $kendo-colors {
