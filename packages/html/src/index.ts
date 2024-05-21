@@ -102,7 +102,7 @@ export * from './dock-manager/index';
 export * from './grid/index';
 export * from './listview/index';
 export * from './spreadsheet/index';
-// export * from './pivotgrid/index';
+export * from './pivotgrid/index';
 export * from './treelist/index';
 export * from './filter/index';
 export * from './filemanager/index';
