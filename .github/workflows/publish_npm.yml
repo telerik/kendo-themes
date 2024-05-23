@@ -61,7 +61,7 @@ jobs:
         run: |
           npm run sass
           npm run sass:flat
-          npm run dist:swatches
+          npm run sass:swatches
           npm run docs
 
       - name: Lerna publish
