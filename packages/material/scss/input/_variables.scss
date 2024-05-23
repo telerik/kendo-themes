@@ -77,7 +77,7 @@ $kendo-input-sizes: (
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
         button-padding-x: k-spacing(1),
-        button-padding-y: k-spacing(1)
+        button-padding-y: $kendo-input-sm-padding-y
     ),
     md: (
         padding-x: $kendo-input-md-padding-x,
@@ -85,7 +85,7 @@ $kendo-input-sizes: (
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
         button-padding-x: k-spacing(1),
-        button-padding-y: k-spacing(1)
+        button-padding-y: $kendo-input-md-padding-y
     ),
     lg: (
         padding-x: $kendo-input-lg-padding-x,
@@ -93,7 +93,7 @@ $kendo-input-sizes: (
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
         button-padding-x: k-spacing(1),
-        button-padding-y: k-spacing(1)
+        button-padding-y: $kendo-input-lg-padding-y
     )
 ) !default;
 
