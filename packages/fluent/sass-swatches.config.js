@@ -10,7 +10,8 @@ module.exports = {
             sassOptions: {
                 loadPaths: [
                     '../../node_modules/'
-                ]
+                ],
+                minify: true
             }
         }
     ]
