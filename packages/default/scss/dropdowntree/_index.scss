@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "dropdown-tree",
@@ -37,6 +38,7 @@ $_kendo-module-meta: (
     @include module-render( "dropdown-tree" ) {
         @include kendo-dropdown-tree--layout();
         @include kendo-dropdown-tree--theme();
+        @include kendo-utils--typography--text-align();
     }
 }
 
