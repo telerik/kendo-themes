@@ -1,5 +1,5 @@
 @import "../core/_index.scss";
-@import "../utils/_index.scss";
+
 
 
 // Module meta
@@ -11,14 +11,11 @@ $_kendo-module-meta: (
         "numeric-textbox",
         "slider",
         "textbox",
-        "utils/flex-grid",
     )
 );
 
 
 // Dependencies
-// @import "../utils/_flex.scss";
-// @import "../utils/_spacer.scss";
 @import "../icons/_index.scss";
 @import "../button/_index.scss";
 @import "../slider/_index.scss";
