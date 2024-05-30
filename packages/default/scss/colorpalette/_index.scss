@@ -1,18 +1,16 @@
 @import "../core/_index.scss";
-@import "../utils/_index.scss";
+
 
 
 // Module meta
 $_kendo-module-meta: (
     name: "color-palette",
     dependencies: (
-        // "utils/flex-grid",
     )
 );
 
 
 // Dependencies
-// @import "../utils/_flex.scss";
 
 
 // Component

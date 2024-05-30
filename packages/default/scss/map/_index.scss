@@ -1,5 +1,5 @@
 @import "../core/_index.scss";
-@import "../utils/_index.scss";
+
 
 
 // Module meta
@@ -9,13 +9,11 @@ $_kendo-module-meta: (
         "button",
         "scroller",
         "icon",
-        // "utils/layout/position",
     )
 );
 
 
 // Dependencies
-// @import "../utils/_position.scss";
 @import "../button/_index.scss";
 @import "../scroller/_index.scss";
 @import "../icons/_index.scss";

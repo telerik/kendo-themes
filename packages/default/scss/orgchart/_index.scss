@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "orgchart",
@@ -19,7 +20,6 @@ $_kendo-module-meta: (
 
 
 // Dependencies
-// @import "../utils/_index.scss";
 @import "../icons/_index.scss";
 @import "../forms/_index.scss";
 @import "../textbox/_index.scss";
@@ -46,6 +46,10 @@ $_kendo-module-meta: (
     @include module-render( "orgchart" ) {
         @include kendo-orgchart--layout();
         @include kendo-orgchart--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--layout--position();
+        @include kendo-utils--flex-grid--align-items();
+        @include kendo-utils--flex-grid--justify-content();
     }
 }
 
