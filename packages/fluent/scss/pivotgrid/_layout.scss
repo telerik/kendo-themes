@@ -195,10 +195,9 @@
         .k-flex-row-reverse & {
             display: flex;
             align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl;
 
-            span {
-                writing-mode: vertical-rl;
-            }
             .k-icon {
                 vertical-align: baseline;
             }
