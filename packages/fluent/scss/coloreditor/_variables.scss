@@ -3,90 +3,90 @@
 @use "../core/" as *;
 
 /// The spacer of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-spacer: k-spacing(2) !default;
 
 /// The minimum width of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-min-width: 260px !default;
 /// The width of the border around the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-border-width: 1px !default;
 /// The border radius of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-border-radius: k-border-radius(md) !default;
 /// The font family of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-text: var( --kendo-component-text, initial ) !default;
 /// The background color of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-bg: var( --kendo-component-bg, initial ) !default;
 /// The border color of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-border: var( --kendo-component-border, initial ) !default;
 /// The box shadow of the ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 
 /// The border color of the focused ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-focus-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 )) !default;
 /// The box shadow of the focused ColorEditor.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
 
 /// The vertical padding of the ColorEditor header.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-header-padding-y: $kendo-color-editor-spacer !default;
 /// The horizontal padding of the ColorEditor header.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-header-padding-x: $kendo-color-editor-header-padding-y !default;
 /// The spacing between the ColorEditor header actions.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-header-actions-spacing: calc( #{$kendo-color-editor-spacer} / 2 ) !default;
 
 /// The width of the ColorEditor preview.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-color-preview-width: 34px !default;
 /// The height of the ColorEditor preview.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-color-preview-height: 14px !default;
 /// The spacing between the colors in the ColorEditor preview.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-preview-spacing: k-spacing(1) !default;
 
 /// The vertical padding of the ColorEditor views container.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-views-padding-y: $kendo-color-editor-spacer !default;
 /// The horizontal padding of the ColorEditor views container.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-views-padding-x: $kendo-color-editor-views-padding-y !default;
 /// The spacing of the ColorEditor views container.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-views-spacing: $kendo-color-editor-spacer !default;
 
 /// The vertical padding of the ColorEditor footer.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-footer-padding-y: k-spacing(2) !default;
 /// The horizontal padding of the ColorEditor footer.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-footer-padding-x: k-spacing(2) !default;
 
 /// The outline color of the focused ColorGradient.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline-color: rgba(0, 0, 0, 0.3) !default;
 /// The outline width of the focused ColorGradient.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline: 2px !default;
 /// The outline offset of the focused ColorGradient.
-/// @group coloreditor
+/// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline-offset: 2px !default;
