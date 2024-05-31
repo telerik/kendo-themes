@@ -1,182 +1,182 @@
 // FileManager
 
 /// The space between the FileManager items.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-spacer: k-spacing(4) !default;
 /// The border width of the FileManager.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-border-width: 1px !default;
 /// The font family of the FileManager.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the FileManager.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the FileManager.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the FileManager.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-bg: $kendo-component-bg !default;
 /// The text color of the FileManager.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-text: $kendo-component-text !default;
 /// The border color of the FileManager.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-border: $kendo-component-border !default;
 
 /// The border width of the FileManager Toolbar.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-toolbar-border-width: $kendo-file-manager-border-width !default;
 /// The background color of the FileManager Toolbar.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-toolbar-bg: null !default;
 /// The text color of the FileManager Toolbar.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-toolbar-text: null !default;
 /// The border color of the FileManager Toolbar.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-toolbar-border: null !default;
 /// The gradient of the FileManager Toolbar.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-toolbar-gradient: null !default;
 
 /// The horizontal padding of the FileManager Navigation.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-navigation-padding-x: $kendo-file-manager-spacer !default;
 /// The vertical padding of the FileManager Navigation.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-navigation-padding-y: $kendo-file-manager-spacer !default;
 /// The width of the FileManager Navigation.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-navigation-width: 20% !default;
 /// The border width of the FileManager Navigation.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-navigation-border-width: $kendo-file-manager-border-width !default;
 /// The background color of the FileManager Navigation.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-navigation-bg: null !default;
 /// The text color of the FileManager Navigation.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-navigation-text: null !default;
 /// The border color of the FileManager Navigation.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-navigation-border: null !default;
 
 /// The horizontal padding of the FileManager Breadcrumb.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-breadcrumb-padding-x: k-spacing(2) !default;
 /// The vertical padding of the FileManager Breadcrumb.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-breadcrumb-padding-y: k-spacing(2) !default;
 /// The border width of the FileManager Breadcrumb.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-breadcrumb-border-width: $kendo-file-manager-border-width !default;
 /// The background color of the FileManager Breadcrumb.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-breadcrumb-bg: $kendo-toolbar-bg !default;
 /// The text color of the FileManager Breadcrumb.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-breadcrumb-text: null !default;
 /// The border color of the FileManager Breadcrumb.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-breadcrumb-border: null !default;
 
 /// The background color of the FileManager ListView.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-bg: null !default;
 /// The text color of the FileManager ListView.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-text: null !default;
 /// The border color of the FileManager ListView.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-border: null !default;
 
 /// The horizontal padding of the FileManager ListView item.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the FileManager ListView item.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-padding-y: k-spacing(4) !default;
 /// The width of the FileManager ListView item.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-width: 120px !default;
 /// The height of the FileManager ListView item.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-height: 120px !default;
 /// The background color of the FileManager ListView item.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-bg: null !default;
 /// The text color of the FileManager ListView item.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-text: null !default;
 /// The border color of the FileManager ListView item.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-border: null !default;
 
 /// The background color of the FileManager ListView item icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-icon-bg: null !default;
 /// The text color of the FileManager ListView item icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-icon-text: if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-file-manager-text, 4 )) !default;
 /// The border color of the FileManager ListView item icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-icon-border: null !default;
 /// Background color of the FileManager selected ListView item icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-icon-selected-bg: null !default;
 /// Text color of the FileManager selected ListView item icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-icon-selected-text: inherit !default;
 /// Border color of the FileManager selected ListView item icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-listview-item-icon-selected-border: null !default;
 
 /// The background color of the FileManager Grid.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-grid-bg: null !default;
 /// The text color of the FileManager Grid.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-grid-text: null !default;
 /// The border color of the FileManager Grid.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-grid-border: null !default;
 
 /// The horizontal padding of the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-padding-x: $kendo-file-manager-spacer !default;
 /// The vertical padding of the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-padding-y: $kendo-file-manager-spacer !default;
 /// The width of the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-width: 20% !default;
 /// The border width of the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-border-width: $kendo-file-manager-border-width !default;
 /// The spacing of the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-spacing: $kendo-file-manager-spacer !default;
 /// The gap between the columns in the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-column-gap: k-spacing(1) !default;
 /// The background color of the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-bg: null !default;
 /// The text color of the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-text: null !default;
 /// The border color of the FileManager preview.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-border: null !default;
 
 /// The background color of the FileManager preview icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-icon-bg: null !default;
 /// The text color of the FileManager preview icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-icon-text: if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-file-manager-text, 4 )) !default;
 /// The border color of the FileManager preview icon.
-/// @group filemanager
+/// @group file-manager
 $kendo-file-manager-preview-icon-border: null !default;
