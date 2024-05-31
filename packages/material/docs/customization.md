@@ -11501,7 +11501,7 @@ The following table lists the available variables for customizing the Material t
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
         button-padding-x: k-spacing(1),
-        button-padding-y: k-spacing(1)
+        button-padding-y: $kendo-input-sm-padding-y
     ),
     md: (
         padding-x: $kendo-input-md-padding-x,
@@ -11509,7 +11509,7 @@ The following table lists the available variables for customizing the Material t
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
         button-padding-x: k-spacing(1),
-        button-padding-y: k-spacing(1)
+        button-padding-y: $kendo-input-md-padding-y
     ),
     lg: (
         padding-x: $kendo-input-lg-padding-x,
@@ -11517,10 +11517,10 @@ The following table lists the available variables for customizing the Material t
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
         button-padding-x: k-spacing(1),
-        button-padding-y: k-spacing(1)
+        button-padding-y: $kendo-input-lg-padding-y
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-4, 1rem), padding-y: var(--kendo-spacing-1\.5, 0.375rem), font-size: var(--kendo-font-size-lg, inherit), line-height: 1.25, button-padding-x: var(--kendo-spacing-1, 0.25rem), button-padding-y: var(--kendo-spacing-1, 0.25rem)), md: (padding-x: var(--kendo-spacing-4, 1rem), padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size-lg, inherit), line-height: 1.25, button-padding-x: var(--kendo-spacing-1, 0.25rem), button-padding-y: var(--kendo-spacing-1, 0.25rem)), lg: (padding-x: var(--kendo-spacing-4, 1rem), padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size-lg, inherit), line-height: 1.5, button-padding-x: var(--kendo-spacing-1, 0.25rem), button-padding-y: var(--kendo-spacing-1, 0.25rem)))</code></td>
+    <td><code>(sm: (padding-x: var(--kendo-spacing-4, 1rem), padding-y: var(--kendo-spacing-1\.5, 0.375rem), font-size: var(--kendo-font-size-lg, inherit), line-height: 1.25, button-padding-x: var(--kendo-spacing-1, 0.25rem), button-padding-y: var(--kendo-spacing-1\.5, 0.375rem)), md: (padding-x: var(--kendo-spacing-4, 1rem), padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size-lg, inherit), line-height: 1.25, button-padding-x: var(--kendo-spacing-1, 0.25rem), button-padding-y: var(--kendo-spacing-2, 0.5rem)), lg: (padding-x: var(--kendo-spacing-4, 1rem), padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size-lg, inherit), line-height: 1.5, button-padding-x: var(--kendo-spacing-1, 0.25rem), button-padding-y: var(--kendo-spacing-2, 0.5rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
