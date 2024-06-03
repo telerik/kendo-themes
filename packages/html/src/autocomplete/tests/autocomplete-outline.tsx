@@ -15,6 +15,12 @@ export default () =>(
             <span>Autocomplete Outline RTL</span>
 
             <div>
+                <AutocompleteNormal fillMode="outline" />
+            </div>
+            <div dir="rtl">
+                <AutocompleteNormal fillMode="outline" />
+            </div>
+            <div>
                 <AutocompleteNormal fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">

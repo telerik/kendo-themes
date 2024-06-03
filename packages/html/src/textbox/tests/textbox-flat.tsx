@@ -15,6 +15,12 @@ export default () =>(
             <span>TextBox Flat RTL</span>
 
             <div>
+                <TextboxNormal fillMode="flat" />
+            </div>
+            <div dir="rtl">
+                <TextboxNormal fillMode="flat" />
+            </div>
+            <div>
                 <TextboxNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">

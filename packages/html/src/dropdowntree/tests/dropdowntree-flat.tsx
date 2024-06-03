@@ -16,6 +16,12 @@ export default () =>(
             <span>DropdownTree Flat RTL</span>
 
             <div>
+                <DropdownTreeNormal fillMode="flat" />
+            </div>
+            <div dir="rtl">
+                <DropdownTreeNormal fillMode="flat" />
+            </div>
+            <div>
                 <DropdownTreeNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">

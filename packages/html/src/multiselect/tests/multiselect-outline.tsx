@@ -16,6 +16,14 @@ export default () =>(
             <span>MultiSelect Outline</span>
             <span>MultiSelect Outline RTL</span>
 
+            <div>no placeholder or value</div>
+            <div>
+                <MultiSelectNormal fillMode="outline" />
+            </div>
+            <div dir="rtl">
+                <MultiSelectNormal fillMode="outline" />
+            </div>
+
             <div>placeholder</div>
             <div>
                 <MultiSelectNormal fillMode="outline" placeholder="placeholder..." />

@@ -16,6 +16,12 @@ export default () =>(
             <span>DropdownList RTL</span>
 
             <div>
+                <DropdownList />
+            </div>
+            <div dir="rtl">
+                <DropdownList />
+            </div>
+            <div>
                 <DropdownList placeholder="DropdownList..." />
             </div>
             <div dir="rtl">

@@ -15,6 +15,13 @@ export default () =>(
             <span>TextBox RTL</span>
 
             <div>
+                <TextboxNormal />
+            </div>
+            <div dir="rtl">
+                <TextboxNormal />
+            </div>
+
+            <div>
                 <TextboxNormal placeholder="placeholder..." />
             </div>
             <div dir="rtl">

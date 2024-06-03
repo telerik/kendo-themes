@@ -15,10 +15,10 @@ export default () =>(
             <span>DropdownGrid Outline RTL</span>
 
             <div>
-                <DropdownGrid fillMode="outline" placeholder="DropdownGrid..." />
+                <DropdownGridNormal fillMode="outline" />
             </div>
             <div dir="rtl">
-                <DropdownGrid fillMode="outline" placeholder="DropdownGrid..." />
+                <DropdownGridNormal fillMode="outline" />
             </div>
 
             <div>

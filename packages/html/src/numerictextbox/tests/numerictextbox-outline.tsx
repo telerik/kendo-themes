@@ -14,6 +14,12 @@ export default () =>(
             <span>NumericTextBox Outline RTL</span>
 
             <div>
+                <NumericTextboxNormal fillMode="outline" />
+            </div>
+            <div dir="rtl">
+                <NumericTextboxNormal fillMode="outline" />
+            </div>
+            <div>
                 <NumericTextboxNormal fillMode="outline" placeholder="NumericTextBox..." />
             </div>
             <div dir="rtl">

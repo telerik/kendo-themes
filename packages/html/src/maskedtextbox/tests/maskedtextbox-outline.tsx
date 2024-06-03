@@ -15,6 +15,12 @@ export default () =>(
             <span>MaskedTextBox Outline RTL</span>
 
             <div>
+                <MaskedTextboxNormal fillMode="outline" />
+            </div>
+            <div dir="rtl">
+                <MaskedTextboxNormal fillMode="outline" />
+            </div>
+            <div>
                 <MaskedTextboxNormal fillMode="outline" placeholder="(___) ___-__-__-__" />
             </div>
             <div dir="rtl">

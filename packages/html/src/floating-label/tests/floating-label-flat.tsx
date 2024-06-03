@@ -18,6 +18,16 @@ export default () =>(
             <span>Floating label flat RTL</span>
 
             <div>
+                <FloatingLabelNormal label="Label without placeholder">
+                    <TextboxNormal fillMode="flat" />
+                </FloatingLabelNormal>
+            </div>
+            <div dir="rtl">
+                <FloatingLabelNormal label="Label without placeholder">
+                    <TextboxNormal fillMode="flat" />
+                </FloatingLabelNormal>
+            </div>
+            <div>
                 <FloatingLabelNormal label="Label with placeholder">
                     <TextboxNormal fillMode="flat" placeholder="placeholder" />
                 </FloatingLabelNormal>
