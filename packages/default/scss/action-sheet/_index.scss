@@ -1,5 +1,5 @@
 @import "../core/_index.scss";
-
+@import "../utils/_index.scss";
 
 
 // Module meta
@@ -34,6 +34,8 @@ $_kendo-module-meta: (
     @include module-render( "action-sheet" ) {
         @include kendo-action-sheet--layout();
         @include kendo-action-sheet--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--typography--text-align();
     }
 }
 

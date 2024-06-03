@@ -1,4 +1,5 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
 
 
 
@@ -33,6 +34,10 @@ $_kendo-module-meta: (
     @include module-render( "listview" ) {
         @include kendo-listview--layout();
         @include kendo-listview--theme();
+        @include kendo-utils--layout--display();
+        @include kendo-utils--flex-grid--flex-direction();
+        @include kendo-utils--flex-grid--grid-template-columns();
+        @include kendo-utils--flex-grid--flex-wrap();
     }
 }
 

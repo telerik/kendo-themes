@@ -1,5 +1,5 @@
 @import "../core/_index.scss";
-
+@import "../utils/_index.scss";
 
 
 // Module meta
@@ -33,6 +33,8 @@ $_kendo-module-meta: (
     @include module-render( "breadcrumb" ) {
         @include kendo-breadcrumb--layout();
         @include kendo-breadcrumb--theme();
+        @include kendo-utils--flex-grid--flex();
+        @include kendo-utils--flex-grid--flex-wrap();
     }
 }
 
