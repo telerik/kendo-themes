@@ -17,7 +17,15 @@ export default () =>(
             <span>MultiSelectTree</span>
             <span>MultiSelectTree RTL</span>
 
-            <div>empty</div>
+            <div>no placeholder nor value</div>
+            <div>
+                <MultiSelectTreeNormal />
+            </div>
+            <div dir="rtl">
+                <MultiSelectTreeNormal />
+            </div>
+
+            <div>placeholder</div>
             <div>
                 <MultiSelectTreeNormal placeholder="MultiSelectTree..." />
             </div>

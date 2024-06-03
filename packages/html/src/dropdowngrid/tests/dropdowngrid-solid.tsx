@@ -15,6 +15,12 @@ export default () =>(
             <span>DropdownGrid RTL</span>
 
             <div>
+                <DropdownGridNormal />
+            </div>
+            <div dir="rtl">
+                <DropdownGridNormal />
+            </div>
+            <div>
                 <DropdownGridNormal placeholder="placeholder..." />
             </div>
             <div dir="rtl">

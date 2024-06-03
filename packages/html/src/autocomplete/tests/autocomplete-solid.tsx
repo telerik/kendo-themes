@@ -15,6 +15,12 @@ export default () =>(
             <span>Autocomplete RTL</span>
 
             <div>
+                <AutocompleteNormal />
+            </div>
+            <div dir="rtl">
+                <AutocompleteNormal />
+            </div>
+            <div>
                 <AutocompleteNormal placeholder="placeholder..." />
             </div>
             <div dir="rtl">

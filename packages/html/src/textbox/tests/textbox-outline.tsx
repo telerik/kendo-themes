@@ -15,6 +15,12 @@ export default () =>(
             <span>TextBox Outline RTL</span>
 
             <div>
+                <TextboxNormal fillMode="outline" />
+            </div>
+            <div dir="rtl">
+                <TextboxNormal fillMode="outline" />
+            </div>
+            <div>
                 <TextboxNormal fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">

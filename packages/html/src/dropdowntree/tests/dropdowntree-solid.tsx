@@ -16,6 +16,13 @@ export default () =>(
             <span>DropdownTree RTL</span>
 
             <div>
+                <DropdownTreeNormal />
+            </div>
+            <div dir="rtl">
+                <DropdownTreeNormal />
+            </div>
+
+            <div>
                 <DropdownTreeNormal placeholder="placeholder..." />
             </div>
             <div dir="rtl">

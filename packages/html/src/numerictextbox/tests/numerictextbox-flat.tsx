@@ -14,6 +14,13 @@ export default () =>(
             <span>NumericTextBox Flat RTL</span>
 
             <div>
+                <NumericTextboxNormal fillMode="flat" />
+            </div>
+            <div dir="rtl">
+                <NumericTextboxNormal fillMode="flat" />
+            </div>
+
+            <div>
                 <NumericTextboxNormal fillMode="flat" placeholder="NumericTextBox..." />
             </div>
             <div dir="rtl">

@@ -16,6 +16,14 @@ export default () =>(
             <span>MultiSelect</span>
             <span>MultiSelect RTL</span>
 
+            <div>no placeholder or value</div>
+            <div>
+                <MultiSelectNormal/>
+            </div>
+            <div dir="rtl">
+                <MultiSelectNormal />
+            </div>
+
             <div>placeholder</div>
             <div>
                 <MultiSelectNormal placeholder="placeholder..." />

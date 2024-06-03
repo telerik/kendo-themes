@@ -16,6 +16,12 @@ export default () =>(
             <span>DropdownList Outline RTL</span>
 
             <div>
+                <DropdownList fillMode="outline" />
+            </div>
+            <div dir="rtl">
+                <DropdownList fillMode="outline" />
+            </div>
+            <div>
                 <DropdownList fillMode="outline" placeholder="DropdownList..." />
             </div>
             <div dir="rtl">

@@ -15,6 +15,12 @@ export default () =>(
             <span>ComboBox Flat RTL</span>
 
             <div>
+                <ComboboxNormal fillMode="flat" />
+            </div>
+            <div dir="rtl">
+                <ComboboxNormal fillMode="flat" />
+            </div>
+            <div>
                 <ComboboxNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">

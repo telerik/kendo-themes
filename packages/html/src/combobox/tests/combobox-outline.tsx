@@ -16,6 +16,12 @@ export default () =>(
             <span>ComboBox Outline RTL</span>
 
             <div>
+                <ComboboxNormal fillMode="outline" />
+            </div>
+            <div dir="rtl">
+                <ComboboxNormal fillMode="outline" />
+            </div>
+            <div>
                 <ComboboxNormal fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">

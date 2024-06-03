@@ -16,6 +16,14 @@ export default () =>(
             <span>MultiSelect Flat</span>
             <span>MultiSelect Flat RTL</span>
 
+            <div>no placeholder or value</div>
+            <div>
+                <MultiSelectNormal fillMode="flat" />
+            </div>
+            <div dir="rtl">
+                <MultiSelectNormal fillMode="flat" />
+            </div>
+
             <div>placeholder</div>
             <div>
                 <MultiSelectNormal fillMode="flat" placeholder="placeholder..." />
