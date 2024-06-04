@@ -1,14 +1,18 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "datetimepicker",
+    name: "date-time-picker",
     dependencies: (
-        "input",
+        "action-buttons",
         "button",
-        "popup",
-        "list",
         "calendar",
-        "timeselector",
-        "action-buttons"
+        "date-input",
+        "date-picker",
+        "floating-label",
+        "icon",
+        "input",
+        "list",
+        "popup",
+        "timeselector"
     )
 );
 
@@ -22,9 +26,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin datetimepicker-styles() {
-    @include module.render( "datetimepicker" ) {
-        @include kendo-datetimepicker--layout();
-        @include kendo-datetimepicker--theme();
+@mixin date-time-picker-styles() {
+    @include module.render( "date-time-picker" ) {
+        @include kendo-date-time-picker--layout();
+        @include kendo-date-time-picker--theme();
     }
 }

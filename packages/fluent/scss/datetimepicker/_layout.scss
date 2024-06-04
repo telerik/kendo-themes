@@ -2,7 +2,7 @@
 @use "./_variables.scss" as *;
 @use "../action-buttons/_variables.scss" as *;
 
-@mixin kendo-datetimepicker--layout() {
+@mixin kendo-date-time-picker--layout() {
 
     // Datetime container
     .k-datetime-container {}
