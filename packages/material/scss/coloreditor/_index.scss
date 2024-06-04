@@ -6,10 +6,11 @@
 $_kendo-module-meta: (
     name: "color-editor",
     dependencies: (
+        "button",
         "action-buttons",
         "color-gradient",
         "color-palette",
-        "color-preview",
+        "color-preview"
     )
 );
 

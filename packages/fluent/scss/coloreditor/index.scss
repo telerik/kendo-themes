@@ -1,12 +1,12 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "coloreditor",
+    name: "color-editor",
     dependencies: (
         "button",
         "action-buttons",
-        "color-preview",
+        "colorgradient",
         "colorpalette",
-        "colorgradient"
+        "color-preview"
     )
 );
 
@@ -21,8 +21,8 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin coloreditor-styles() {
-    @include module.render( "coloreditor" ) {
+@mixin color-editor-styles() {
+    @include module.render( "color-editor" ) {
         @include kendo-color-editor--layout();
         @include kendo-color-editor--theme();
     }
