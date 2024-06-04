@@ -182,7 +182,7 @@
 
 
     // Primitive components
-    @include kendo-actions--styles();
+    @include kendo-action-buttons--styles();
     @include kendo-list--styles();
     @include kendo-listgroup--styles();
     @include kendo-overlay--styles();

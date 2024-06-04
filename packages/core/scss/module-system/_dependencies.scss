@@ -1,10 +1,13 @@
 $_kendo-dependencies: (
+    action-buttons: (
+        "button",
+        "icon"
+    ),
     action-sheet: (
         "icon",
         "listgroup",
         "popup"
     ),
-    actions: (),
     adaptive: (),
     appbar: (),
     autocomplete: (
@@ -37,7 +40,7 @@ $_kendo-dependencies: (
         "textbox"
     ),
     card: (
-        "actions",
+        "action-buttons",
         "button",
         // "utils/flex",
         // "utils/grid"
@@ -51,7 +54,7 @@ $_kendo-dependencies: (
     checkbox: (),
     chip: (),
     color-editor: (
-        "actions",
+        "action-buttons",
         "color-palette",
         "color-preview",
         "color-gradient"
@@ -187,7 +190,7 @@ $_kendo-dependencies: (
         "input"
     ),
     form: (
-        "actions",
+        "action-buttons",
         "button",
         "toolbar"
     ),
@@ -202,7 +205,7 @@ $_kendo-dependencies: (
         "window"
     ),
     grid: (
-        "actions",
+        "action-buttons",
         "button",
         "checkbox",
         "dialog",
@@ -420,7 +423,7 @@ $_kendo-dependencies: (
         "time-selector"
     ),
     time-selector: (
-        "actions",
+        "action-buttons",
         "button",
         "list"
     ),
@@ -457,7 +460,7 @@ $_kendo-dependencies: (
     ),
     typography: (),
     upload: (
-        "actions",
+        "action-buttons",
         "button",
         "dropzone",
         "icon",
@@ -470,7 +473,7 @@ $_kendo-dependencies: (
     ),
     virtual-scroller: (),
     window: (
-        "actions",
+        "action-buttons",
         "button",
         "icon",
         "overlay"
