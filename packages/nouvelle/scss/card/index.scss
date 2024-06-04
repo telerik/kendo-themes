@@ -5,7 +5,10 @@
 $_kendo-module-meta: (
     name: "card",
     dependencies: (
-        "action-buttons"
+        "action-buttons",
+        "button",
+        "typography",
+        // "utils/flex-grid"
     )
 );
 
