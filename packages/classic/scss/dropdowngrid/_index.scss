@@ -6,10 +6,13 @@
 $_kendo-module-meta: (
     name: "dropdown-grid",
     dependencies: (
+        "button",
+        "floating-label",
+        "grid",
         "icon",
         "input",
         "popup",
-        "table",
+        "table"
     )
 );
 
