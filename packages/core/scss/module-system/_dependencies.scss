@@ -92,7 +92,9 @@ $_kendo-dependencies: (
         "color-preview",
         // "utils/flex"
     ),
-    color-preview: (),
+    color-preview: (
+        "icon"
+    ),
     color-picker: (
         "button",
         "color-editor",
