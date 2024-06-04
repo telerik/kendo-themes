@@ -6,9 +6,10 @@
 $_kendo-module-meta: (
     name: "dialog",
     dependencies: (
+        "action-buttons",
         "button",
         "icon",
-        "window",
+        "window"
     )
 );
 
