@@ -23,7 +23,9 @@ $_kendo-dependencies: (
         "list",
         "popup"
     ),
-    avatar: (),
+    avatar: (
+        "icon"
+    ),
     badge: (),
     bottom-navigation: (
         "icon"
