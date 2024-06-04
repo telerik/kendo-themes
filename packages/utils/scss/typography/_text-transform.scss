@@ -16,10 +16,16 @@
 /// @group text-transform
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-typography-text-transform"));
+
 @mixin kendo-utils--typography--text-transform() {
+    @include module-render("utils-typography-text-transform") {
 
-    // Text transform utility classes
-    $kendo-utils-text-transform: k-map-get( $kendo-utils, "text-transform" ) !default;
-    @include generate-utils( text, text-transform, $kendo-utils-text-transform );
+        // Text transform utility classes
+        $kendo-utils-text-transform: k-map-get( $kendo-utils, "text-transform" ) !default;
+        @include generate-utils( text, text-transform, $kendo-utils-text-transform );
 
+    }
 }

@@ -10,10 +10,16 @@
 /// @group appearance
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-interactivity-appearance"));
+
 @mixin kendo-utils--interactivity--appearance() {
+    @include module-render("utils-interactivity-appearance") {
 
-    // Appearance utility classes
-    $kendo-utils-appearance: k-map-get( $kendo-utils, "appearance" ) !default;
-    @include generate-utils( appearance, appearance, $kendo-utils-appearance );
+        // Appearance utility classes
+        $kendo-utils-appearance: k-map-get( $kendo-utils, "appearance" ) !default;
+        @include generate-utils( appearance, appearance, $kendo-utils-appearance );
 
+    }
 }

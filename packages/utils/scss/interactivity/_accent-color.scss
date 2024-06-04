@@ -1,9 +1,15 @@
 // TODO: docs
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-interactivity-accent-color"));
+
 @mixin kendo-utils--interactivity--accent-color() {
+    @include module-render("utils-interactivity-accent-color") {
 
-    // Accent color utility classes
-    $kendo-utils-accent-color: k-map-get( $kendo-utils, "accent-color" ) !default;
-    @include generate-utils( accent-color, accent-color, $kendo-utils-accent-color );
+        // Accent color utility classes
+        $kendo-utils-accent-color: k-map-get( $kendo-utils, "accent-color" ) !default;
+        @include generate-utils( accent-color, accent-color, $kendo-utils-accent-color );
 
+    }
 }

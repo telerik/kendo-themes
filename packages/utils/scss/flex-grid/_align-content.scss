@@ -76,10 +76,16 @@
 /// @group align-content
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-align-content"));
+
 @mixin kendo-utils--flex-grid--align-content() {
+    @include module-render("utils-flex-grid-align-content") {
 
-    // Align content utility classes
-    $kendo-utils-align-content: k-map-get( $kendo-utils, "align-content" ) !default;
-    @include generate-utils( align-content, align-content, $kendo-utils-align-content );
+        // Align content utility classes
+        $kendo-utils-align-content: k-map-get( $kendo-utils, "align-content" ) !default;
+        @include generate-utils( align-content, align-content, $kendo-utils-align-content );
 
+    }
 }

@@ -10,11 +10,17 @@
 /// @group flex-grow
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-flex-grow"));
+
 @mixin kendo-utils--flex-grid--flex-grow() {
+    @include module-render("utils-flex-grid-flex-grow") {
 
-    // Flex grow utility classes
-    $kendo-utils-flex-grow: k-map-get( $kendo-utils, "flex-grow" ) !default;
-    @include generate-utils( grow, flex-grow, $kendo-utils-flex-grow );
-    @include generate-utils( flex-grow, flex-grow, $kendo-utils-flex-grow );
+        // Flex grow utility classes
+        $kendo-utils-flex-grow: k-map-get( $kendo-utils, "flex-grow" ) !default;
+        @include generate-utils( grow, flex-grow, $kendo-utils-flex-grow );
+        @include generate-utils( flex-grow, flex-grow, $kendo-utils-flex-grow );
 
+    }
 }

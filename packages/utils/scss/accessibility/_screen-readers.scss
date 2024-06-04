@@ -1,33 +1,39 @@
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-accessibility-screen-readers"));
+
 @mixin kendo-utils--accessibility--screen-readers() {
+    @include module-render("utils-accessibility-screen-readers") {
 
-    // Screen readers utility classes
-    $kendo-utils-accessibility: k-map-get( $kendo-utils, "accessibility" ) !default;
+        // Screen readers utility classes
+        $kendo-utils-accessibility: k-map-get( $kendo-utils, "accessibility" ) !default;
 
-    @if $kendo-utils-accessibility {
-        /// This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
-        /// @name .k-sr-only
-        /// @group accessibility
-        .#{$kendo-prefix}sr-only {
-            margin: -1px;
-            padding: 0;
-            width: 1px;
-            height: 1px;
-            border-width: 0;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            position: absolute;
+        @if $kendo-utils-accessibility {
+            /// This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
+            /// @name .k-sr-only
+            /// @group accessibility
+            .#{$kendo-prefix}sr-only {
+                margin: -1px;
+                padding: 0;
+                width: 1px;
+                height: 1px;
+                border-width: 0;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                position: absolute;
+            }
+
+            .#{$kendo-prefix}not-sr-only {
+                margin: 0;
+                padding: 0;
+                width: auto;
+                height: auto;
+                border-width: 0;
+                overflow: visible;
+                clip: auto;
+                position: static;
+            }
         }
 
-        .#{$kendo-prefix}not-sr-only {
-            margin: 0;
-            padding: 0;
-            width: auto;
-            height: auto;
-            border-width: 0;
-            overflow: visible;
-            clip: auto;
-            position: static;
-        }
     }
-
 }

@@ -22,10 +22,16 @@
 /// @group text-decoration
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-typography-text-decoration"));
+
 @mixin kendo-utils--typography--text-decoration() {
+    @include module-render("utils-typography-text-decoration") {
 
-    // text-decoration utility classes
-    $kendo-utils-text-decoration: k-map-get( $kendo-utils, "text-decoration" ) !default;
-    @include generate-utils( text, text-decoration, $kendo-utils-text-decoration );
+        // text-decoration utility classes
+        $kendo-utils-text-decoration: k-map-get( $kendo-utils, "text-decoration" ) !default;
+        @include generate-utils( text, text-decoration, $kendo-utils-text-decoration );
 
+    }
 }

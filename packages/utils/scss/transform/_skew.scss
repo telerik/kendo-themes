@@ -22,6 +22,10 @@
 /// @group skew
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-transform-skew"));
+
 // stylelint-disable scss/at-function-pattern
 @function _skew-x( $val ) {
     @return skewX( $val );
@@ -32,10 +36,12 @@
 // stylelint-enable scss/at-function-pattern
 
 @mixin kendo-utils--transform--skew() {
+    @include module-render("utils-transform-skew") {
 
-    // Transform skew utility classes
-    $kendo-utils-skew: k-map-get( $kendo-utils, "skew" ) !default;
-    @include generate-utils( skew-x, transform, $kendo-utils-skew, _skew-x );
-    @include generate-utils( skew-y, transform, $kendo-utils-skew, _skew-y );
+        // Transform skew utility classes
+        $kendo-utils-skew: k-map-get( $kendo-utils, "skew" ) !default;
+        @include generate-utils( skew-x, transform, $kendo-utils-skew, _skew-x );
+        @include generate-utils( skew-y, transform, $kendo-utils-skew, _skew-y );
 
+    }
 }

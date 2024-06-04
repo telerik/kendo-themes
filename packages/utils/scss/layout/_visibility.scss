@@ -16,16 +16,22 @@
 /// @group visibility
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-layout-visibility"));
+
 @mixin kendo-utils--layout--visibility() {
+    @include module-render("utils-layout-visibility") {
 
-    // Visibility utility classes
-    $kendo-utils-visibility: k-map-get( $kendo-utils, "visibility" ) !default;
-    @include generate-utils( visibility, visibility, $kendo-utils-visibility );
+        // Visibility utility classes
+        $kendo-utils-visibility: k-map-get( $kendo-utils, "visibility" ) !default;
+        @include generate-utils( visibility, visibility, $kendo-utils-visibility );
 
-    // Legacy aliases
-    .#{$kendo-prefix}visible { @extend .#{$kendo-prefix}visibility-visible !optional; }
-    .\!#{$kendo-prefix}visible { @extend .\!#{$kendo-prefix}visibility-visible !optional; }
-    .#{$kendo-prefix}invisible { @extend .#{$kendo-prefix}visibility-hidden !optional; }
-    .\!#{$kendo-prefix}invisible { @extend .\!#{$kendo-prefix}visibility-hidden !optional; }
+        // Legacy aliases
+        .#{$kendo-prefix}visible { @extend .#{$kendo-prefix}visibility-visible !optional; }
+        .\!#{$kendo-prefix}visible { @extend .\!#{$kendo-prefix}visibility-visible !optional; }
+        .#{$kendo-prefix}invisible { @extend .#{$kendo-prefix}visibility-hidden !optional; }
+        .\!#{$kendo-prefix}invisible { @extend .\!#{$kendo-prefix}visibility-hidden !optional; }
 
+    }
 }
