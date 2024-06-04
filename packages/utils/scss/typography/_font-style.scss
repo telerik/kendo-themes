@@ -10,10 +10,16 @@
 /// @group font-style
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-typography-font-style"));
+
 @mixin kendo-utils--typography--font-style() {
+    @include module-render("utils-typography-font-style") {
 
-    // Font style utility classes
-    $kendo-utils-font-style: k-map-get( $kendo-utils, "font-style" ) !default;
-    @include generate-utils( font-style, font-style, $kendo-utils-font-style, $css-var: "font-style" );
+        // Font style utility classes
+        $kendo-utils-font-style: k-map-get( $kendo-utils, "font-style" ) !default;
+        @include generate-utils( font-style, font-style, $kendo-utils-font-style, $css-var: "font-style" );
 
+    }
 }

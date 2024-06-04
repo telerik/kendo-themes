@@ -16,26 +16,32 @@
 /// @group grid-column-start
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-grid-column-start-end"));
+
 @mixin kendo-utils--flex-grid--grid-column-start-end() {
+    @include module-render("utils-flex-grid-grid-column-start-end") {
 
-    // Grid column start utility classes
-    $kendo-utils-grid-column-start: k-map-get( $kendo-utils, "grid-column-start" ) !default;
-    @include generate-utils( col-start, grid-column-start, $kendo-utils-grid-column-start );
-
-
-    // Grid column end utility classes
-    $kendo-utils-grid-column-end: k-map-get( $kendo-utils, "grid-column-end" ) !default;
-    @include generate-utils( col-end, grid-column-end, $kendo-utils-grid-column-end );
+        // Grid column start utility classes
+        $kendo-utils-grid-column-start: k-map-get( $kendo-utils, "grid-column-start" ) !default;
+        @include generate-utils( col-start, grid-column-start, $kendo-utils-grid-column-start );
 
 
-    // Grid column span utility classes
-    $kendo-utils-grid-column-span: k-map-get( $kendo-utils, "grid-column-span" ) !default;
-    @include generate-utils( col-span, grid-column, $kendo-utils-grid-column-span );
+        // Grid column end utility classes
+        $kendo-utils-grid-column-end: k-map-get( $kendo-utils, "grid-column-end" ) !default;
+        @include generate-utils( col-end, grid-column-end, $kendo-utils-grid-column-end );
 
 
-    // Legacy aliases
-    @include generate-utils( colspan, grid-column, $kendo-utils-grid-column-span );
-    .#{$kendo-prefix}colspan-all { @extend .#{$kendo-prefix}colspan-full !optional; }
-    .\!#{$kendo-prefix}colspan-all { @extend .\!#{$kendo-prefix}colspan-full !optional; }
+        // Grid column span utility classes
+        $kendo-utils-grid-column-span: k-map-get( $kendo-utils, "grid-column-span" ) !default;
+        @include generate-utils( col-span, grid-column, $kendo-utils-grid-column-span );
 
+
+        // Legacy aliases
+        @include generate-utils( colspan, grid-column, $kendo-utils-grid-column-span );
+        .#{$kendo-prefix}colspan-all { @extend .#{$kendo-prefix}colspan-full !optional; }
+        .\!#{$kendo-prefix}colspan-all { @extend .\!#{$kendo-prefix}colspan-full !optional; }
+
+    }
 }

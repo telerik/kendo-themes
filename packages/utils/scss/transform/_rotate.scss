@@ -46,6 +46,10 @@
 /// @group transform
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-transform-rotate"));
+
 // stylelint-disable scss/at-function-pattern
 @function _rotate( $val ) {
     @return rotate( $val );
@@ -53,9 +57,11 @@
 // stylelint-enable scss/at-function-pattern
 
 @mixin kendo-utils--transform--rotate() {
+    @include module-render("utils-transform-rotate") {
 
-    // Rotate utility classes
-    $kendo-utils-rotate: k-map-get( $kendo-utils, "rotate" ) !default;
-    @include generate-utils( rotate, transform, $kendo-utils-rotate, _rotate );
+        // Rotate utility classes
+        $kendo-utils-rotate: k-map-get( $kendo-utils, "rotate" ) !default;
+        @include generate-utils( rotate, transform, $kendo-utils-rotate, _rotate );
 
+    }
 }

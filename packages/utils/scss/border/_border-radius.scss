@@ -324,17 +324,23 @@
 
 @import "@progress/kendo-theme-core/scss/border-radii/index.import.scss";
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-border-radius"));
+
 @mixin kendo-utils--border--border-radius() {
+    @include module-render("utils-border-radius") {
 
-    // Border radius utility classes
-    @include generate-utils( rounded, border-radius, $kendo-border-radii, $css-var: "border-radius" );
-    @include generate-utils( rounded-tl, border-top-left-radius, $kendo-border-radii, $css-var: "border-radius" );
-    @include generate-utils( rounded-tr, border-top-right-radius, $kendo-border-radii, $css-var: "border-radius" );
-    @include generate-utils( rounded-br, border-bottom-right-radius, $kendo-border-radii, $css-var: "border-radius" );
-    @include generate-utils( rounded-bl, border-bottom-left-radius, $kendo-border-radii, $css-var: "border-radius" );
-    @include generate-utils( rounded-t, ( border-top-left-radius, border-top-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
-    @include generate-utils( rounded-r, ( border-top-right-radius, border-bottom-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
-    @include generate-utils( rounded-b, ( border-bottom-left-radius, border-bottom-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
-    @include generate-utils( rounded-l, ( border-top-left-radius, border-bottom-left-radius ), $kendo-border-radii, $css-var: "border-radius" );
+        // Border radius utility classes
+        @include generate-utils( rounded, border-radius, $kendo-border-radii, $css-var: "border-radius" );
+        @include generate-utils( rounded-tl, border-top-left-radius, $kendo-border-radii, $css-var: "border-radius" );
+        @include generate-utils( rounded-tr, border-top-right-radius, $kendo-border-radii, $css-var: "border-radius" );
+        @include generate-utils( rounded-br, border-bottom-right-radius, $kendo-border-radii, $css-var: "border-radius" );
+        @include generate-utils( rounded-bl, border-bottom-left-radius, $kendo-border-radii, $css-var: "border-radius" );
+        @include generate-utils( rounded-t, ( border-top-left-radius, border-top-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
+        @include generate-utils( rounded-r, ( border-top-right-radius, border-bottom-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
+        @include generate-utils( rounded-b, ( border-bottom-left-radius, border-bottom-right-radius ), $kendo-border-radii, $css-var: "border-radius" );
+        @include generate-utils( rounded-l, ( border-top-left-radius, border-bottom-left-radius ), $kendo-border-radii, $css-var: "border-radius" );
 
+    }
 }

@@ -88,11 +88,18 @@
 /// @group overflow
 /// @contextType css
 
-@mixin kendo-utils--layout--overflow() {
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-layout-overflow"));
 
-    // Overflow utility classes
-    $kendo-utils-overflow: k-map-get( $kendo-utils, "overflow" ) !default;
-    @include generate-utils( overflow, overflow, $kendo-utils-overflow );
-    @include generate-utils( overflow-x, overflow-x, $kendo-utils-overflow );
-    @include generate-utils( overflow-y, overflow-y, $kendo-utils-overflow );
+@mixin kendo-utils--layout--overflow() {
+    @include module-render("utils-layout-overflow") {
+
+        // Overflow utility classes
+        $kendo-utils-overflow: k-map-get( $kendo-utils, "overflow" ) !default;
+        @include generate-utils( overflow, overflow, $kendo-utils-overflow );
+        @include generate-utils( overflow-x, overflow-x, $kendo-utils-overflow );
+        @include generate-utils( overflow-y, overflow-y, $kendo-utils-overflow );
+
+    }
 }

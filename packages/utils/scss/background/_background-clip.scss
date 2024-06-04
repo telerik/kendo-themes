@@ -22,10 +22,16 @@
 /// @group background-clip
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-background-clip"));
+
 @mixin kendo-utils--background--background-clip() {
+    @include module-render("utils-background-clip") {
 
-    // Background color utility classes
-    $kendo-utils-background-clip: k-map-get( $kendo-utils, "background-clip" ) !default;
-    @include generate-utils( bg-clip, background-clip, $kendo-utils-background-clip );
+        // Background color utility classes
+        $kendo-utils-background-clip: k-map-get( $kendo-utils, "background-clip" ) !default;
+        @include generate-utils( bg-clip, background-clip, $kendo-utils-background-clip );
 
+    }
 }

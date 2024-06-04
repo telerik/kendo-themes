@@ -70,10 +70,16 @@
 /// @group align-items
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-align-items"));
+
 @mixin kendo-utils--flex-grid--align-items() {
+    @include module-render("utils-flex-grid-align-items") {
 
-    // Align items utility classes
-    $kendo-utils-align-items: k-map-get( $kendo-utils, "align-items" ) !default;
-    @include generate-utils( align-items, align-items, $kendo-utils-align-items );
+        // Align items utility classes
+        $kendo-utils-align-items: k-map-get( $kendo-utils, "align-items" ) !default;
+        @include generate-utils( align-items, align-items, $kendo-utils-align-items );
 
+    }
 }

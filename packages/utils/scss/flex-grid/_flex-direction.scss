@@ -22,15 +22,21 @@
 /// @group flex-direction
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-flex-direction"));
+
 @mixin kendo-utils--flex-grid--flex-direction() {
+    @include module-render("utils-flex-grid-flex-direction") {
 
-    // Flex direction utility classes
-    $kendo-utils-flex-direction: k-map-get( $kendo-utils, "flex-direction" ) !default;
-    @include generate-utils( flex, flex-direction, $kendo-utils-flex-direction );
+        // Flex direction utility classes
+        $kendo-utils-flex-direction: k-map-get( $kendo-utils, "flex-direction" ) !default;
+        @include generate-utils( flex, flex-direction, $kendo-utils-flex-direction );
 
 
-    // Legacy aliases
-    .#{$kendo-prefix}flex-column { @extend .#{$kendo-prefix}flex-col !optional; }
-    .#{$kendo-prefix}flex-column-reverse { @extend .#{$kendo-prefix}flex-col-reverse !optional; }
+        // Legacy aliases
+        .#{$kendo-prefix}flex-column { @extend .#{$kendo-prefix}flex-col !optional; }
+        .#{$kendo-prefix}flex-column-reverse { @extend .#{$kendo-prefix}flex-col-reverse !optional; }
 
+    }
 }

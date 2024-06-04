@@ -28,23 +28,30 @@
 /// @group position
 /// @contextType css
 
+
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-layout-position"));
+
 @mixin kendo-utils--layout--position() {
+    @include module-render("utils-layout-position") {
 
-    // Position utility classes
-    $kendo-utils-position: k-map-get( $kendo-utils, "position" ) !default;
-    @include generate-utils( pos, position, $kendo-utils-position );
+        // Position utility classes
+        $kendo-utils-position: k-map-get( $kendo-utils, "position" ) !default;
+        @include generate-utils( pos, position, $kendo-utils-position );
 
 
-    // Legacy aliases
-    .#{$kendo-prefix}static { @extend .#{$kendo-prefix}pos-static !optional; }
-    .\!#{$kendo-prefix}static { @extend .\!#{$kendo-prefix}pos-static !optional; }
-    .#{$kendo-prefix}relative { @extend .#{$kendo-prefix}pos-relative !optional; }
-    .\!#{$kendo-prefix}relative { @extend .\!#{$kendo-prefix}pos-relative !optional; }
-    .#{$kendo-prefix}absolute { @extend .#{$kendo-prefix}pos-absolute !optional; }
-    .\!#{$kendo-prefix}absolute { @extend .\!#{$kendo-prefix}pos-absolute !optional; }
-    .#{$kendo-prefix}fixed { @extend .#{$kendo-prefix}pos-fixed !optional; }
-    .\!#{$kendo-prefix}fixed { @extend .\!#{$kendo-prefix}pos-fixed !optional; }
-    .#{$kendo-prefix}sticky { @extend .#{$kendo-prefix}pos-sticky !optional; }
-    .\!#{$kendo-prefix}sticky { @extend .\!#{$kendo-prefix}pos-sticky !optional; }
-
+        // Legacy aliases
+        .#{$kendo-prefix}static { @extend .#{$kendo-prefix}pos-static !optional; }
+        .\!#{$kendo-prefix}static { @extend .\!#{$kendo-prefix}pos-static !optional; }
+        .#{$kendo-prefix}relative { @extend .#{$kendo-prefix}pos-relative !optional; }
+        .\!#{$kendo-prefix}relative { @extend .\!#{$kendo-prefix}pos-relative !optional; }
+        .#{$kendo-prefix}absolute { @extend .#{$kendo-prefix}pos-absolute !optional; }
+        .\!#{$kendo-prefix}absolute { @extend .\!#{$kendo-prefix}pos-absolute !optional; }
+        .#{$kendo-prefix}fixed { @extend .#{$kendo-prefix}pos-fixed !optional; }
+        .\!#{$kendo-prefix}fixed { @extend .\!#{$kendo-prefix}pos-fixed !optional; }
+        .#{$kendo-prefix}sticky { @extend .#{$kendo-prefix}pos-sticky !optional; }
+        .\!#{$kendo-prefix}sticky { @extend .\!#{$kendo-prefix}pos-sticky !optional; }
+        
+    }
 }
