@@ -76,10 +76,11 @@ $_kendo-dependencies: (
         "icon"
     ),
     color-editor: (
+        "button",
         "action-buttons",
+        "color-gradient",
         "color-palette",
-        "color-preview",
-        "color-gradient"
+        "color-preview"
     ),
     color-gradient: (
         "button",
