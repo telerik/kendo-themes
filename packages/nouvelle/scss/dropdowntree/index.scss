@@ -5,9 +5,10 @@
 $_kendo-module-meta: (
     name: "dropdown-tree",
     dependencies: (
-        "input",
-        "icon",
         "button",
+        "floating-label",
+        "icon",
+        "input",
         "popup",
         "treeview"
     )
