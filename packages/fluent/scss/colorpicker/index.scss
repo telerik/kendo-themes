@@ -1,12 +1,12 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "colorpicker",
+    name: "color-picker",
     dependencies: (
-        "input",
         "button",
-        "popup",
+        "color-editor",
         "icon",
-        "color-editor"
+        "input",
+        "popup",
     )
 );
 
@@ -21,9 +21,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin colorpicker-styles() {
-    @include module.render( "colorpicker" ) {
-        @include kendo-colorpicker--layout();
-        @include kendo-colorpicker--theme();
+@mixin color-picker-styles() {
+    @include module.render( "color-picker" ) {
+        @include kendo-color-picker--layout();
+        @include kendo-color-picker--theme();
     }
 }
