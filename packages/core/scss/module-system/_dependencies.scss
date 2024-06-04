@@ -8,7 +8,13 @@ $_kendo-dependencies: (
         "listgroup",
         "popup"
     ),
-    adaptive: (),
+    adaptive: (
+        "checkbox",
+        "listgroup",
+        "radio",
+        "switch",
+        "toolbar"
+    ),
     appbar: (),
     autocomplete: (
         "button",
