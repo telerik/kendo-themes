@@ -5,7 +5,9 @@
 $_kendo-module-meta: (
     name: "action-sheet",
     dependencies: (
-        "icon"
+        "icon",
+        "listgroup",
+        "popup"
     )
 );
 
