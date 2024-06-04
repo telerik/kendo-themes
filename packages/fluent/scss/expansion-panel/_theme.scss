@@ -1,7 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-expansion-panel--theme() {
+@mixin kendo-expander--theme() {
 
     .k-expander {
         @include fill(
