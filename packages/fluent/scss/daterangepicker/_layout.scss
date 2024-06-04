@@ -3,7 +3,7 @@
 @use "../input/_variables.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-daterangepicker--layout() {
+@mixin kendo-date-range-picker--layout() {
 
     // Daterange picker
     .k-daterange-picker {
