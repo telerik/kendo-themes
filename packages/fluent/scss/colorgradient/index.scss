@@ -2,13 +2,15 @@
 
 // Module meta
 $_kendo-module-meta: (
-    name: "colorgradient",
+    name: "color-gradient",
     dependencies: (
-        "icon",
         "button",
+        "icon",
+        "numerictextbox",
         "slider",
         "textbox",
-        "numerictextbox"
+        // "utils/flex-grid",
+        // "utils/spacer
     )
 );
 
@@ -23,8 +25,8 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin colorgradient-styles() {
-    @include module.render( "colorgradient" ) {
+@mixin color-gradient-styles() {
+    @include module.render( "color-gradient" ) {
         @include kendo-color-gradient--layout();
         @include kendo-color-gradient--theme();
         @include kendo-utils--flex-grid--flex();
