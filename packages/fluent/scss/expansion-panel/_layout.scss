@@ -1,7 +1,7 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-expansion-panel--layout() {
+@mixin kendo-expander--layout() {
 
     // Base
     .k-expander {

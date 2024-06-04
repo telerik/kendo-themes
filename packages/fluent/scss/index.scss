@@ -462,7 +462,7 @@
 
     // Layout & containers
     @include card-styles();
-    @include expansion-panel-styles();
+    @include expander-styles();
     @include panelbar-styles();
     @include splitter-styles();
     @include tilelayout-styles();

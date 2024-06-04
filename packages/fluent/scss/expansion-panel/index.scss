@@ -1,8 +1,11 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "expansion-panel",
+    name: "expander",
     dependencies: (
-        "icon"
+        "icon",
+        "list",
+        // "utils/layout/display",
+        // "utils/flex-grid"
     )
 );
 
@@ -16,9 +19,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin expansion-panel-styles() {
-    @include module.render( "expansion-panel" ) {
-        @include kendo-expansion-panel--layout();
-        @include kendo-expansion-panel--theme();
+@mixin expander-styles() {
+    @include module.render( "expander" ) {
+        @include kendo-expander--layout();
+        @include kendo-expander--theme();
     }
 }
