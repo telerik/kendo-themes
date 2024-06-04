@@ -52,6 +52,10 @@
 /// @group transform
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-transform-translate"));
+
 // stylelint-disable scss/at-function-pattern
 @function _translate( $val ) {
     @return translate( $val );
@@ -65,22 +69,24 @@
 // stylelint-enable scss/at-function-pattern
 
 @mixin kendo-utils--transform--translate() {
+    @include module-render("utils-transform-translate") {
 
-    // Translate utility classes
-    $kendo-utils-translate: k-map-get( $kendo-utils, "translate" ) !default;
-    $kendo-utils-translate-xy: (
-        "0": ( 0, 0 ),
-        "0-50": ( 0, 50% ),
-        "0-100": ( 0, 100% ),
-        "50-0": ( 50%, 0 ),
-        "50-50": ( 50%, 50% ),
-        "50-100": ( 50%, 100% ),
-        "100-0": ( 100%, 0 ),
-        "100-50": ( 100%, 50% ),
-        "100-100": ( 100%, 100% )
-    ) !default;
-    @include generate-utils( translate, transform, $kendo-utils-translate-xy, _translate );
-    @include generate-utils( translate-x, transform, $kendo-utils-translate, _translate-x );
-    @include generate-utils( translate-y, transform, $kendo-utils-translate, _translate-y );
+        // Translate utility classes
+        $kendo-utils-translate: k-map-get( $kendo-utils, "translate" ) !default;
+        $kendo-utils-translate-xy: (
+            "0": ( 0, 0 ),
+            "0-50": ( 0, 50% ),
+            "0-100": ( 0, 100% ),
+            "50-0": ( 50%, 0 ),
+            "50-50": ( 50%, 50% ),
+            "50-100": ( 50%, 100% ),
+            "100-0": ( 100%, 0 ),
+            "100-50": ( 100%, 50% ),
+            "100-100": ( 100%, 100% )
+        ) !default;
+        @include generate-utils( translate, transform, $kendo-utils-translate-xy, _translate );
+        @include generate-utils( translate-x, transform, $kendo-utils-translate, _translate-x );
+        @include generate-utils( translate-y, transform, $kendo-utils-translate, _translate-y );
 
+    }
 }

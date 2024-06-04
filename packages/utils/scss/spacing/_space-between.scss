@@ -1,18 +1,24 @@
 // TODO: docs
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-spacing-space-between"));
+
 @mixin kendo-utils--spacing--space-between() {
+    @include module-render("utils-spacing-space-between") {
 
-    // Space between utility classes
-    $kendo-utils-space-between: k-map-get( $kendo-utils, "space-between" ) !default;
-    @each $key, $value in $kendo-utils-space-between {
-        $_key: k-escape-class-name( $key );
+        // Space between utility classes
+        $kendo-utils-space-between: k-map-get( $kendo-utils, "space-between" ) !default;
+        @each $key, $value in $kendo-utils-space-between {
+            $_key: k-escape-class-name( $key );
 
-        .#{$kendo-prefix}space-x-#{$_key} > * + * {
-            margin-inline-start: $value;
+            .#{$kendo-prefix}space-x-#{$_key} > * + * {
+                margin-inline-start: $value;
+            }
+            .#{$kendo-prefix}space-y-#{$_key} > * + * {
+                margin-block-start: $value;
+            }
         }
-        .#{$kendo-prefix}space-y-#{$_key} > * + * {
-            margin-block-start: $value;
-        }
+
     }
-
 }

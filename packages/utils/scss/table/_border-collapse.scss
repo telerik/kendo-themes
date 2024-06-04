@@ -10,10 +10,16 @@
 /// @group border-collapse
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-table-border-collapse"));
+
 @mixin kendo-utils--table--border-collapse() {
+    @include module-render("utils-table-border-collapse") {
 
-    // Border collapse utility classes
-    $kendo-utils-border-collapse: k-map-get( $kendo-utils, "border-collapse" ) !default;
-    @include generate-utils( border, border-collapse, $kendo-utils-border-collapse );
+        // Border collapse utility classes
+        $kendo-utils-border-collapse: k-map-get( $kendo-utils, "border-collapse" ) !default;
+        @include generate-utils( border, border-collapse, $kendo-utils-border-collapse );
 
+    }
 }

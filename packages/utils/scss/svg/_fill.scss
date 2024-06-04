@@ -34,10 +34,16 @@
 /// @group fill
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-svg-fill"));
+
 @mixin kendo-utils--svg--fill() {
+    @include module-render("utils-svg-fill") {
 
-    // fill utility classes
-    $kendo-utils-fill: k-map-get( $kendo-utils, "fill-stroke" ) !default;
-    @include generate-utils( fill, fill, $kendo-utils-fill );
+        // fill utility classes
+        $kendo-utils-fill: k-map-get( $kendo-utils, "fill-stroke" ) !default;
+        @include generate-utils( fill, fill, $kendo-utils-fill );
 
+    }
 }

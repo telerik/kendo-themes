@@ -76,10 +76,16 @@
 /// @group columns
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-layout-columns"));
+
 @mixin kendo-utils--layout--columns() {
+    @include module-render("utils-layout-columns") {
 
-    // columns utility classes
-    $kendo-utils-columns: k-map-get( $kendo-utils, "columns" ) !default;
-    @include generate-utils( columns, columns, $kendo-utils-columns );
+        // columns utility classes
+        $kendo-utils-columns: k-map-get( $kendo-utils, "columns" ) !default;
+        @include generate-utils( columns, columns, $kendo-utils-columns );
 
+    }
 }

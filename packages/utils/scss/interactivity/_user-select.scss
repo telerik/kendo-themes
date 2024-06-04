@@ -28,10 +28,16 @@
 /// @group user-select
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-interactivity-user-select"));
+
 @mixin kendo-utils--interactivity--user-select() {
+    @include module-render("utils-interactivity-user-select") {
 
-    // User select utility classes
-    $kendo-utils-user-select: k-map-get( $kendo-utils, "user-select" ) !default;
-    @include generate-utils( user-select, user-select, $kendo-utils-user-select );
+        // User select utility classes
+        $kendo-utils-user-select: k-map-get( $kendo-utils, "user-select" ) !default;
+        @include generate-utils( user-select, user-select, $kendo-utils-user-select );
 
+    }
 }

@@ -30,12 +30,17 @@
 /// @group font-size
 /// @contextType css
 
+// Register
+@include module-register((name: "utils-typography-font-size"));
+
 @mixin kendo-utils--typography--font-size() {
+    @include module-render("utils-typography-font-size") {
 
-    // Font size utility classes
-    @include generate-utils( font-size, font-size, $kendo-font-sizes, $css-var: "font-size" );
+        // Font size utility classes
+        @include generate-utils( font-size, font-size, $kendo-font-sizes, $css-var: "font-size" );
 
-    // Legacy aliases
-    @include generate-utils( fs, font-size, $kendo-font-sizes, $css-var: "fs" );
+        // Legacy aliases
+        @include generate-utils( fs, font-size, $kendo-font-sizes, $css-var: "fs" );
 
+    }
 }

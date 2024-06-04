@@ -1,13 +1,18 @@
 // TODO: docs
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-typography-text-color"));
+
 @mixin kendo-utils--typography--text-color() {
+    @include module-render("utils-typography-text-color") {
 
-    // Text color utility classes
-    $kendo-utils-text-color: k-map-get( $kendo-utils, "text-color" ) !default;
-    @include generate-utils( text, color, $kendo-utils-text-color, $css-var: 'color' );
+        // Text color utility classes
+        $kendo-utils-text-color: k-map-get( $kendo-utils, "text-color" ) !default;
+        @include generate-utils( text, color, $kendo-utils-text-color, $css-var: 'color' );
 
+        // Legacy aliases
+        @include generate-utils( color, color, $kendo-utils-text-color, $css-var: 'color' );
 
-    // Legacy aliases
-    @include generate-utils( color, color, $kendo-utils-text-color, $css-var: 'color' );
-
+    }
 }

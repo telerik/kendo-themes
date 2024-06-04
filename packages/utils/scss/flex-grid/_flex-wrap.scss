@@ -16,10 +16,16 @@
 /// @group flex-wrap
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-flex-wrap"));
+
 @mixin kendo-utils--flex-grid--flex-wrap() {
+    @include module-render("utils-flex-grid-flex-wrap") {
 
-    // Flex wrap utility classes
-    $kendo-utils-flex-wrap: k-map-get( $kendo-utils, "flex-wrap" ) !default;
-    @include generate-utils( flex, flex-wrap, $kendo-utils-flex-wrap );
+        // Flex wrap utility classes
+        $kendo-utils-flex-wrap: k-map-get( $kendo-utils, "flex-wrap" ) !default;
+        @include generate-utils( flex, flex-wrap, $kendo-utils-flex-wrap );
 
+    }
 }

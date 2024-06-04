@@ -22,10 +22,16 @@
 /// @group clear
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-layout-clear"));
+
 @mixin kendo-utils--layout--clear() {
+    @include module-render("utils-layout-clear") {
 
-    // Clear utility classes
-    $kendo-utils-clear: k-map-get( $kendo-utils, "clear" ) !default;
-    @include generate-utils( clear, clear, $kendo-utils-clear );
+        // Clear utility classes
+        $kendo-utils-clear: k-map-get( $kendo-utils, "clear" ) !default;
+        @include generate-utils( clear, clear, $kendo-utils-clear );
 
+    }
 }
