@@ -2,13 +2,14 @@
 
 // Module meta
 $_kendo-module-meta: (
-    name: "dropdowntree",
+    name: "dropdown-tree",
     dependencies: (
+        "button",
         "floating-label",
-        "dropdown-list",
-        "multiselect",
-        "treeview",
-        "popup"
+        "icon",
+        "input",
+        "popup",
+        "treeview"
     )
 );
 
@@ -22,10 +23,10 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin dropdowntree-styles() {
-    @include module.render( "dropdowntree" ) {
-        @include kendo-dropdowntree--layout();
-        @include kendo-dropdowntree--theme();
+@mixin dropdown-tree-styles() {
+    @include module.render( "dropdown-tree" ) {
+        @include kendo-dropdown-tree--layout();
+        @include kendo-dropdown-tree--theme();
         @include kendo-utils--typography--text-align();
     }
 }
