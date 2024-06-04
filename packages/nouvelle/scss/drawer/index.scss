@@ -4,7 +4,11 @@
 // Module meta
 $_kendo-module-meta: (
     name: "drawer",
-    dependencies: ()
+    dependencies: (
+        "icon",
+        "list",
+        "overlay"
+    )
 );
 
 
