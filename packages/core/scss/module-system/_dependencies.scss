@@ -227,9 +227,11 @@ $_kendo-dependencies: (
         // "utils/flex-grid"
     ),
     fab: (
-        "button",
         "badge",
-        // "utils/position"
+        "button",
+        "icon",
+        "popup",
+        // "utils/layout/position"
     ),
     file-manager: (
         "breadcrumb",

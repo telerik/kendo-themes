@@ -4,7 +4,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "fab",
-    dependencies: ()
+    dependencies: (
+        "badge",
+        "button",
+        "icon",
+        "popup",
+        // "utils/layout/position"
+    )
 );
 
 
