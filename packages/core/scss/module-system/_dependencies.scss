@@ -49,8 +49,12 @@ $_kendo-dependencies: (
     ),
     captcha: (
         "button",
+        "icon",
+        "input",
         "slider",
-        "textbox"
+        "textbox",
+        // "utils/layout/position",
+        // "utils/typography/text-color"
     ),
     card: (
         "action-buttons",
