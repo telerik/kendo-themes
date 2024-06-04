@@ -1,6 +1,6 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "colorpalette",
+    name: "color-palette",
     dependencies: ()
 );
 
@@ -15,8 +15,8 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin colorpalette-styles() {
-    @include module.render( "colorpalette" ) {
+@mixin color-palette-styles() {
+    @include module.render( "color-palette" ) {
         @include kendo-color-palette--layout();
         @include kendo-color-palette--theme();
     }
