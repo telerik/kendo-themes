@@ -4,7 +4,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "adaptive",
-    dependencies: ()
+    dependencies: (
+        "checkbox",
+        "listgroup",
+        "radio",
+        "switch",
+        "toolbar"
+    )
 );
 
 
