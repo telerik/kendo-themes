@@ -4,10 +4,11 @@
 $_kendo-module-meta: (
     name: "autocomplete",
     dependencies: (
+        "floating-label",
         "icon",
         "input",
         "list",
-        "popup",
+        "popup"
     )
 );
 
