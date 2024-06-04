@@ -140,8 +140,17 @@ $_kendo-dependencies: (
         "popup"
     ),
     date-time-picker: (
+        "action-buttons",
+        "button",
+        "calendar",
+        "date-input",
         "date-picker",
-        "time-picker"
+        "floating-label",
+        "icon",
+        "input",
+        "list",
+        "popup",
+        "time-selector"
     ),
     dialog: (
         "window"
