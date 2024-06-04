@@ -105,9 +105,11 @@ $_kendo-dependencies: (
     ),
     combobox: (
         "button",
+        "floating-label",
+        "icon",
         "input",
-        "popup",
-        "list"
+        "list",
+        "popup"
     ),
     cursor: (),
     dataviz: (
