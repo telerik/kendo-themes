@@ -1,12 +1,13 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "datepicker",
+    name: "date-picker",
     dependencies: (
-        "icon",
         "button",
+        "calendar",
+        "floating-label",
+        "icon",
         "input",
-        "popup",
-        "calendar"
+        "popup"
     )
  );
 
@@ -20,9 +21,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin datepicker-styles() {
-    @include module.render( "datepicker" ) {
-        @include kendo-datepicker--layout();
-        @include kendo-datepicker--theme();
+@mixin date-picker-styles() {
+    @include module.render( "date-picker" ) {
+        @include kendo-date-picker--layout();
+        @include kendo-date-picker--theme();
     }
 }
