@@ -26,7 +26,10 @@ $_kendo-dependencies: (
     avatar: (
         "icon"
     ),
-    badge: (),
+    badge: (
+        "icon",
+        // "utils/layout/position"
+    ),
     bottom-navigation: (
         "icon"
     ),
