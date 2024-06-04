@@ -1,9 +1,9 @@
 @import "@progress/kendo-theme-default/scss/action-buttons/_layout.scss";
 
 
-@mixin kendo-actions--layout() {
+@mixin kendo-action-buttons--layout() {
 
-    @include kendo-actions--layout-base();
+    @include kendo-action-buttons--layout-base();
 
     // Actions
     .k-actions {
