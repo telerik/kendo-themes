@@ -71,7 +71,10 @@ $_kendo-dependencies: (
         "toolbar"
     ),
     checkbox: (),
-    chip: (),
+    chip: (
+        "avatar",
+        "icon"
+    ),
     color-editor: (
         "action-buttons",
         "color-palette",
