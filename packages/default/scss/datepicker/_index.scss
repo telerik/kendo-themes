@@ -6,10 +6,12 @@
 $_kendo-module-meta: (
     name: "date-picker",
     dependencies: (
+        "button",
         "calendar",
+        "floating-label",
         "icon",
         "input",
-        "popup",
+        "popup"
     )
 );
 
