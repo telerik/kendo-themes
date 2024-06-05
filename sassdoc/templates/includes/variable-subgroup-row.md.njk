@@ -1,0 +1,10 @@
+<tr>
+    <td>{{ group.name }}</td>
+    <td colspan="2">
+        {%- set comma = joiner() -%}
+        {%- for value in group.value -%}
+        {{ comma() }} {{ value }}
+        {%- endfor -%}
+    </td>
+    <td>{{group.description}}</td>
+</tr>
