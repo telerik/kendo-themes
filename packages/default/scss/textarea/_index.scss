@@ -7,8 +7,10 @@
 $_kendo-module-meta: (
     name: "textarea",
     dependencies: (
+        "button",
+        "floating-label",
         "icon",
-        "input",
+        "input"
     )
 );
 
