@@ -5,12 +5,13 @@
 $_kendo-module-meta: (
     name: "time-picker",
     dependencies: (
+        "action-buttons",
         "button",
         "icon",
         "input",
         "list",
         "popup",
-        "time-selector",
+        "time-selector"
     )
 );
 
