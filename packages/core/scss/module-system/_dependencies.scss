@@ -424,7 +424,10 @@ $_kendo-dependencies: (
         // "utils/layout/position"
     ),
     popover: (
+        "action-buttons",
+        "button",
         "card",
+        "icon",
         "popup"
     ),
     popup: (),
