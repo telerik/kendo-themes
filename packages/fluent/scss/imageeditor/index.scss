@@ -1,12 +1,12 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "imageeditor",
+    name: "image-editor",
     dependencies: (
-        "toolbar",
-        "form",
+        "checkbox",
         "dropdown-list",
+        "form",
         "numerictextbox",
-        "checkbox"
+        "toolbar"
     )
 );
 
@@ -20,8 +20,8 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin imageeditor-styles() {
-    @include module.render( "imageeditor" ) {
+@mixin image-editor-styles() {
+    @include module.render( "image-editor" ) {
         @include kendo-image-editor--layout();
         @include kendo-image-editor--theme();
     }
