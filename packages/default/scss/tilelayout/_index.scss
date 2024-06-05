@@ -6,8 +6,9 @@
 $_kendo-module-meta: (
     name: "tile-layout",
     dependencies: (
+        "button",
         "card",
-        "icon",
+        "icon"
     )
 );
 

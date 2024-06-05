@@ -4,7 +4,11 @@
 // Module meta
 $_kendo-module-meta: (
     name: "tile-layout",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "card",
+        "icon"
+    )
 );
 
 

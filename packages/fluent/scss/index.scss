@@ -465,7 +465,7 @@
     @include expander-styles();
     @include panelbar-styles();
     @include splitter-styles();
-    @include tilelayout-styles();
+    @include tile-layout-styles();
     @include dock-manager-styles();
 
     // Data management
