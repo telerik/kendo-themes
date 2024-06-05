@@ -544,11 +544,20 @@ $_kendo-dependencies: (
         "menu-button"
     ),
     task-board: (
+        "action-buttons",
+        "badge",
+        "button",
         "card",
+        "dialog",
         "form",
+        "icon",
+        "input",
+        "menu",
+        "menu-button",
         "searchbox",
         "textbox",
-        "toolbar"
+        "toolbar",
+        "window"
     ),
     textarea: (
         "button",
