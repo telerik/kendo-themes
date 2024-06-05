@@ -4,7 +4,18 @@
 // Module meta
 $_kendo-module-meta: (
     name: "gantt",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "date-time-picker",
+        "icon",
+        "input",
+        "numeric-textbox",
+        "splitter",
+        "toolbar",
+        "treelist",
+        "validator",
+        "window"
+    )
 );
 
 
