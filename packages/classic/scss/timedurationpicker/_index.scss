@@ -6,12 +6,13 @@
 $_kendo-module-meta: (
     name: "time-duration-picker",
     dependencies: (
+        "action-buttons",
         "button",
         "icon",
         "input",
         "list",
         "popup",
-        "time-selector",
+        "time-selector"
     )
 );
 
