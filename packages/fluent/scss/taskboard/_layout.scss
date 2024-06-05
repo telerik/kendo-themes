@@ -1,7 +1,7 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-taskboard--layout() {
+@mixin kendo-task-board--layout() {
 
     // TaskBoard
     .k-taskboard {

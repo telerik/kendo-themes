@@ -1,14 +1,21 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "taskboard",
+    name: "task-board",
     dependencies: (
+        "action-buttons",
+        "badge",
+        "button",
+        "card",
+        "dialog",
+        "form",
         "icon",
         "input",
-        "form",
-        "textbox",
+        "menu",
+        "menu-button",
         "searchbox",
+        "textbox",
         "toolbar",
-        "card"
+        "window"
     )
 );
 
@@ -23,9 +30,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin taskboard-styles() {
-    @include module.render( "taskboard" ) {
-        @include kendo-taskboard--layout();
-        @include kendo-taskboard--theme();
+@mixin task-board-styles() {
+    @include module.render( "task-board" ) {
+        @include kendo-task-board--layout();
+        @include kendo-task-board--theme();
     }
 }
