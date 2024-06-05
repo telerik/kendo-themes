@@ -2,15 +2,17 @@
 $_kendo-module-meta: (
     name: "orgchart",
     dependencies: (
-        "icon",
+        "action-buttons",
         "avatar",
         "button",
-        "form",
-        "textbox",
-        "dropdown-list",
-        "upload",
-        "menu",
         "card",
+        "dropdown-list",
+        "form",
+        "icon",
+        "menu",
+        "menu-button",
+        "textbox",
+        "upload",
         "window"
     )
 );
