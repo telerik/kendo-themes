@@ -352,7 +352,9 @@ $_kendo-dependencies: (
         "icon",
         "menu"
     ),
-    messagebox: (),
+    messagebox: (
+        "icon"
+    ),
     multiselect: (
         "button",
         "chip",
