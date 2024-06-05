@@ -4,7 +4,11 @@
 // Module meta
 $_kendo-module-meta: (
     name: "timeline",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "card",
+        "icon"
+    )
 );
 
 
