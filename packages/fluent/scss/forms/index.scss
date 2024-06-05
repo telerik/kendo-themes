@@ -1,13 +1,10 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "forms",
+    name: "form",
     dependencies: (
-        "tooltip",
-        "button",
-        "input",
-        "toolbar",
         "action-buttons",
-        "window"
+        "button",
+        "validator"
     )
 );
 
@@ -22,9 +19,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin forms-styles() {
-    @include module.render( "forms" ) {
-        @include kendo-forms--layout();
-        @include kendo-forms--theme();
+@mixin form-styles() {
+    @include module.render( "form" ) {
+        @include kendo-form--layout();
+        @include kendo-form--theme();
     }
 }

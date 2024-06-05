@@ -382,7 +382,7 @@
 
 
     // Form helpers
-    @include forms-styles();
+    @include form-styles();
     @include validator-styles();
     @include floating-label-styles();
 

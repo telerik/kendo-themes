@@ -1,7 +1,7 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-forms--theme() {
+@mixin kendo-form--theme() {
 
     .k-form,
     .k-form-inline {
