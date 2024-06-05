@@ -476,7 +476,9 @@ $_kendo-dependencies: (
         "time-marker",
         "window"
     ),
-    scroller: (),
+    scroller: (
+        "icon"
+    ),
     scrollview: (
         "button"
     ),
