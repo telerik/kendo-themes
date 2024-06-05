@@ -4,7 +4,26 @@
 // Module meta
 $_kendo-module-meta: (
     name: "spreadsheet",
-    dependencies: ()
+    dependencies: (
+        "action-buttons",
+        "button",
+        "checkbox",
+        "color-picker",
+        "combobox",
+        "date-time-picker",
+        "dropdown-list",
+        "form",
+        "icon",
+        "input",
+        "list",
+        "menu",
+        "radio",
+        "tabstrip",
+        "toolbar",
+        "treeview",
+        "upload",
+        "window"
+    )
 );
 
 
