@@ -1,10 +1,12 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "mediaplayer",
+    name: "media-player",
     dependencies: (
+        "button",
+        "icon",
+        "listview",
         "slider",
-        "toolbar",
-        "icon"
+        "toolbar"
     )
 );
 
@@ -19,8 +21,8 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin mediaplayer-styles() {
-    @include module.render( "mediaplayer" ) {
+@mixin media-player-styles() {
+    @include module.render( "media-player" ) {
         @include kendo-media-player--layout();
         @include kendo-media-player--theme();
     }
