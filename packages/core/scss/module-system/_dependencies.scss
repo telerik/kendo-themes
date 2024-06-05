@@ -320,7 +320,9 @@ $_kendo-dependencies: (
         "pager",
         // "utils/flex-grid"
     ),
-    loader: (),
+    loader: (
+        "overlay"
+    ),
     map: (
         "button",
         "scroller",
