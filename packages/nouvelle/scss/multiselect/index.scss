@@ -5,12 +5,13 @@
 $_kendo-module-meta: (
     name: "multiselect",
     dependencies: (
-        "input",
-        "icon",
-        "chip",
         "button",
-        "popup",
-        "list"
+        "chip",
+        "floating-label",
+        "icon",
+        "input",
+        "list",
+        "popup"
     )
 );
 
