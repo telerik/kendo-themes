@@ -460,7 +460,9 @@ $_kendo-dependencies: (
         "tooltip",
         "window"
     ),
-    scroller: (),
+    scroller: (
+        "icon"
+    ),
     scrollview: (
         "button"
     ),
