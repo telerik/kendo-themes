@@ -302,7 +302,10 @@ $_kendo-dependencies: (
         "button",
         "icon"
     ),
-    list: (),
+    list: (
+        "checkbox",
+        "icon"
+    ),
     listbox: (
         "button",
         "list"
