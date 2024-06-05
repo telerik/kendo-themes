@@ -2,11 +2,11 @@
 $_kendo-module-meta: (
     name: "window",
     dependencies: (
-        "overlay",
-        "form",
-        "button",
         "action-buttons",
-        "icon"
+        "button",
+        "form",
+        "icon",
+        "overlay"
     )
 );
 

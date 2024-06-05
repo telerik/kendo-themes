@@ -4,7 +4,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "window",
-    dependencies: ()
+    dependencies: (
+        "action-buttons",
+        "button",
+        "form",
+        "icon",
+        "overlay"
+    )
 );
 
 
