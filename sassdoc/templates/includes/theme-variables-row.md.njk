@@ -16,9 +16,18 @@
         {%- if variable.resolvedType === 'Color' -%}
         <span class="color-preview" style="background-color: {{variable.resolvedValue}}"></span>
         {%- endif -%}
-
-        {%- if variable.resolvedValue -%}
-        {{ utils.code( variable.resolvedValue ) }}
+        {%- if variable.resolvedType === 'Map' -%}
+            {%- if variable.prettyValue -%}
+            <ul>
+            {%- for key, value in variable.prettyValue -%}
+            <li>{{ key }}: {{ value | to_string }}</li>
+            {%- endfor -%}
+            </ul>
+            {%- endif -%}
+        {%- else -%}
+            {%- if variable.resolvedValue -%}
+            {{ utils.code( variable.resolvedValue ) }}
+            {%- endif -%}
         {%- endif -%}
     </td>
 </tr>
@@ -41,3 +50,34 @@
         {%- endif %}
     </td>
 </tr>
+{% if variable.subGroup -%}
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+        <div><b>Groups</b><div class="theme-variables-description">The groups of the ${{variable.context.name}} {{variable.resolvedType}}</div></div>
+    </td>
+</tr>
+<tr>
+    <td>Group</td>
+    <td colspan="2">Values</td>
+    <td>Description</td>
+</tr>
+{% for group in variable.subGroup -%}
+    {% include "./variable-subgroup-row.md.njk" %}
+{%- endfor -%}
+{% endif -%}
+
+{% if variable.property -%}
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+        <div><b>Properties</b><div class="theme-variables-description">The properties of the ${{variable.context.name}} {{variable.resolvedType}}</div></div>
+    </td>
+</tr>
+<tr>
+    <td>Type</td>
+    <td>Name</td>
+    <td colspan="2">Description</td>
+</tr>
+{% for prop in variable.property -%}
+    {% include "./variable-property-row.md.njk" %}
+{%- endfor -%}
+{% endif -%}
