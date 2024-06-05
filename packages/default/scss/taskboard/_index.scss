@@ -7,13 +7,20 @@
 $_kendo-module-meta: (
     name: "task-board",
     dependencies: (
+        "action-buttons",
+        "badge",
+        "button",
         "card",
+        "dialog",
         "form",
         "icon",
         "input",
+        "menu",
+        "menu-button",
         "searchbox",
         "textbox",
         "toolbar",
+        "window"
     )
 );
 
