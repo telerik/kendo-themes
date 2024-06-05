@@ -426,13 +426,17 @@ $_kendo-dependencies: (
         "window"
     ),
     pivotgrid: (
+        "action-buttons",
+        "button",
+        "chip",
+        "form",
         "dialog",
         "grid",
+        "icon",
         "list",
         "treeview",
-        // "utils/flex",
-        // "utils/grid",
-        // "utils/position"
+        // "utils/flex-grid",
+        // "utils/layout/position"
     ),
     popover: (
         "card",
