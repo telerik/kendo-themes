@@ -2,8 +2,9 @@
 $_kendo-module-meta: (
     name: "searchbox",
     dependencies: (
-        "icon",
         "button",
+        "floating-label",
+        "icon",
         "input"
     )
 );
