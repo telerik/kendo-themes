@@ -1,7 +1,7 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-timeselector--theme() {
+@mixin kendo-time-selector--theme() {
     // Time selector
     .k-timeselector {
         @include fill(
