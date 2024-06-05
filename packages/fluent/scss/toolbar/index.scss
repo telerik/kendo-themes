@@ -3,9 +3,11 @@ $_kendo-module-meta: (
     name: "toolbar",
     dependencies: (
         "button",
-        "popup",
+        "icon",
         "menu",
-        "icon"
+        "menu-button",
+        "popup",
+        "split-button"
     )
 );
 
