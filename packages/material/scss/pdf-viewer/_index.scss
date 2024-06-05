@@ -6,13 +6,15 @@
 $_kendo-module-meta: (
     name: "pdf-viewer",
     dependencies: (
+        "button",
         "combobox",
         "dialog",
         "dropzone",
         "icon",
         "pager",
+        "textbox",
         "toolbar",
-        "window",
+        "window"
     )
 );
 
