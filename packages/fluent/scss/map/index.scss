@@ -2,8 +2,10 @@
 $_kendo-module-meta: (
     name: "map",
     dependencies: (
+        "button",
         "icon",
-        "button"
+        "scroller",
+        // "utils/layout/position"
     )
 );
 
