@@ -5,9 +5,9 @@
 $_kendo-module-meta: (
     name: "masked-textbox",
     dependencies: (
-        "input",
         "icon",
-        "button"
+        "input",
+        "floating-label"
     )
 );
 
