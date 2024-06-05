@@ -442,12 +442,23 @@ $_kendo-dependencies: (
     ),
     ripple: (),
     scheduler: (
+        "action-buttons",
+        "adaptive",
         "button",
+        "calendar",
+        "checkbox",
         "date-time-picker",
         "dialog",
         "dropdown-list",
+        "form",
+        "icon",
+        "numeric-textbox",
+        "radio",
+        "textarea",
+        "textbox",
         "toolbar",
-        "tooltip"
+        "tooltip",
+        "window"
     ),
     scroller: (),
     scrollview: (

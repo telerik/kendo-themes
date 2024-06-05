@@ -2,16 +2,23 @@
 $_kendo-module-meta: (
     name: "scheduler",
     dependencies: (
-        "icon",
-        "form",
+        "action-buttons",
         "adaptive",
         "button",
-        "date-time-picker",
-        "dropdown-list",
-        "dialog",
-        "tooltip",
         "calendar",
-        "toolbar"
+        "checkbox",
+        "date-time-picker",
+        "dialog",
+        "dropdown-list",
+        "form",
+        "icon",
+        "numeric-textbox",
+        "radio",
+        "textarea",
+        "textbox",
+        "toolbar",
+        "tooltip",
+        "window"
     )
 );
 
