@@ -326,7 +326,9 @@ $_kendo-dependencies: (
         "icon",
         "list"
     ),
-    listgroup: (),
+    listgroup: (
+        "icon"
+    ),
     listview: (
         "pager",
         // "utils/grid",
