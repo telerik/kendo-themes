@@ -4,7 +4,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "popover",
-    dependencies: ()
+    dependencies: (
+        "action-buttons",
+        "button",
+        "card",
+        "icon",
+        "popup"
+    )
 );
 
 
