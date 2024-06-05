@@ -3,7 +3,10 @@ $_kendo-module-meta: (
     name: "signature",
     dependencies: (
         "button",
-        "input"
+        "color-picker",
+        "icon",
+        "input",
+        "split-button"
     )
 );
 
