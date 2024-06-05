@@ -4,7 +4,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "floating-label",
-    dependencies: ()
+    dependencies: (
+        "input"
+    )
 );
 
 
