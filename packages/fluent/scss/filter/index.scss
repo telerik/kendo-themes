@@ -3,11 +3,12 @@ $_kendo-module-meta: (
     name: "filter",
     dependencies: (
         "button",
-        "input",
         "checkbox",
         "date-time-picker",
         "dropdown-list",
+        "input",
         "numerictextbox",
+        "textbox",
         "toolbar"
     )
 );
