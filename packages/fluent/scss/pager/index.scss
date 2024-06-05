@@ -2,10 +2,9 @@
 $_kendo-module-meta: (
     name: "pager",
     dependencies: (
+        "button",
         "dropdown-list",
-        "icon",
-        "toolbar",
-        "button"
+        "icon"
     )
 );
 

@@ -405,10 +405,9 @@ $_kendo-dependencies: (
     ),
     overlay: (),
     pager: (
+        "button",
         "dropdown-list",
-        "icon",
-        "list",
-        "toolbar"
+        "icon"
     ),
     panel: (),
     panelbar: (
