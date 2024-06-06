@@ -55,6 +55,10 @@
     // Toolbar
     .k-spreadsheet-toolbar {
         border-width: 0;
+
+        > .k-upload-button-wrap {
+            overflow: hidden;
+        }
     }
 
 
