@@ -140,3 +140,5 @@ $kendo-color-gradient-contrast-ratio-font-weight: var( --kendo-font-weight-mediu
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group color-gradient
 $kendo-color-gradient-contrast-spacer: k-spacing(2) !default;
+
+$kendo-color-gradient-slider-image: k-map-get($_kendo-data-uris, "alpha-slider-bgr.png") !default;

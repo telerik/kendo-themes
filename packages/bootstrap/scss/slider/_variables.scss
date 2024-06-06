@@ -117,3 +117,6 @@ $kendo-slider-selection-bg: $kendo-selected-bg !default;
 /// @group slider
 /// The opacity of the disabled Slider.
 $kendo-slider-disabled-opacity: null !default;
+
+$kendo-slider-tick-horizontal-image: k-map-get($_kendo-data-uris, "slider-h.gif") !default;
+$kendo-slider-tick-vertical-image: k-map-get($_kendo-data-uris, "slider-v.gif") !default;
