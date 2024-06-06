@@ -6,6 +6,9 @@ module.exports = {
         {
             entry: [ 'dist/!(_|variables)*.scss' ],
             sassOptions: {
+                loadPaths: [
+                    '../../node_modules/'
+                ],
                 minify: true
             }
         }
