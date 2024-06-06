@@ -8,23 +8,77 @@ $kendo-body-text: null !default;
 $kendo-component-bg: null !default;
 $kendo-component-text: null !default;
 $kendo-component-border: null !default;
+$kendo-component-header-bg: null !default;
+$kendo-component-header-text: null !default;
+$kendo-component-header-border: null !default;
+$kendo-component-header-gradient: null !default;
+
+
+// Base styles
+$kendo-base-bg: null !default;
+$kendo-base-text: null !default;
+$kendo-base-border: null !default;
+$kendo-base-gradient: null !default;
+
+$kendo-app-bg: null !default;
+$kendo-app-text: null !default;
+$kendo-app-border: null !default;
 
 // States styles
 $kendo-hover-bg: null !default;
 $kendo-hover-text: null !default;
 $kendo-hover-border: null !default;
+$kendo-hover-gradient: null !default;
 
 $kendo-selected-bg: null !default;
 $kendo-selected-text: null !default;
 $kendo-selected-border: null !default;
+$kendo-selected-gradient: null !default;
 
 $kendo-selected-hover-bg: null !default;
 $kendo-selected-hover-text: null !default;
 $kendo-selected-hover-border: null !default;
+$kendo-selected-hover-gradient: null !default;
 
 $kendo-focus-outline: null !default;
 
 $kendo-subtle-text: null !default;
+
+// Theme colors
+$kendo-color-primary: null !default;
+$kendo-color-primary-lighter: null !default;
+$kendo-color-primary-darker: null !default;
+$kendo-color-primary-contrast: null !default;
+
+$kendo-color-secondary: null !default;
+$kendo-color-secondary-lighter: null !default;
+$kendo-color-secondary-darker: null !default;
+$kendo-color-secondary-contrast: null !default;
+
+$kendo-color-tertiary: null !default;
+$kendo-color-tertiary-lighter: null !default;
+$kendo-color-tertiary-darker: null !default;
+$kendo-color-tertiary-contrast: null !default;
+
+$kendo-color-info: null !default;
+$kendo-color-info-lighter: null !default;
+$kendo-color-info-darker: null !default;
+
+$kendo-color-success: null !default;
+$kendo-color-success-lighter: null !default;
+$kendo-color-success-darker: null !default;
+
+$kendo-color-warning: null !default;
+$kendo-color-warning-lighter: null !default;
+$kendo-color-warning-darker: null !default;
+
+$kendo-color-error: null !default;
+$kendo-color-error-lighter: null !default;
+$kendo-color-error-darker: null !default;
+
+$kendo-color-dark: null !default;
+$kendo-color-light: null !default;
+$kendo-color-inverse: null !default;
 
 // Link
 $kendo-link-text: null !default;
@@ -68,7 +122,14 @@ $kendo-theme-colors: () !default;
 
         // Text colors
         @each $theme-color, $color-props in $kendo-theme-colors {
-            $_color: k-map-get($color-props, text);
+            $_color: null;
+
+            @if k-meta-type-of($color-props) != 'map' {
+                $_color: k-map-get($kendo-theme-colors, $theme-color);
+
+            } @else {
+                $_color: k-map-get($color-props, text);
+            }
 
             .k-text-#{$theme-color},
             .k-color-#{$theme-color} {
