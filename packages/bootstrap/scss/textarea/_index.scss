@@ -33,6 +33,12 @@ $_kendo-module-meta: (
     @include module-render( "textarea" ) {
         @include kendo-textarea--layout();
         @include kendo-textarea--theme();
+        @include kendo-utils--flex-grid--align-items();
+        @include kendo-utils--flex-grid--flex-direction();
+        @include kendo-utils--flex-grid--flex();
+        @include kendo-utils--flex-grid--flex-wrap();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--interactivity--resize();
     }
 }
 
