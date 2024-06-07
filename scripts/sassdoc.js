@@ -14,10 +14,9 @@ const defaults = {
     dest: 'docs',
     theme: srcTheme,
     groups: {
-        'common': 'Common',
         'color-system': 'Color System',
-        'typography': 'Typography',
-        'charts': 'Charts',
+        'radii': 'Border Radius',
+        'pdf-viewer': 'PDFViewer',
         'undefined': 'Common'
     },
     meta: {
@@ -28,8 +27,8 @@ const defaults = {
 
 const { src, dest, theme, groups, meta } = Object.assign( {}, defaults, config );
 
-function _capitalize(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+function _kebabToPascalCase(string) {
+    return string.replace(/(^|-)([a-z])/g, (_, _prefix, letter) => letter.toUpperCase());
 }
 
 (async function() {
@@ -198,7 +197,7 @@ function _capitalize(string) {
         if ( acc[groupName] === undefined ) {
             acc[groupName] = {
                 id: groupName,
-                title: groups[groupName] || _capitalize( groupName ),
+                title: groups[groupName] || _kebabToPascalCase( groupName ),
                 variables: []
             };
         }
