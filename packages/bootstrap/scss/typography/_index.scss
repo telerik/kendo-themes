@@ -1,4 +1,5 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
 
 
 // Module meta
@@ -27,6 +28,8 @@ $_kendo-module-meta: (
     @include module-render( "typography" ) {
         @include kendo-typography--layout();
         @include kendo-typography--theme();
+        @include kendo-utils--spacing--margin();
+        @include kendo-utils--typography();
     }
 }
 

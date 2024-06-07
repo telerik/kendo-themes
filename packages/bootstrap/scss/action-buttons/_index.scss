@@ -1,4 +1,5 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
 
 
 // Module meta
@@ -28,6 +29,7 @@ $_kendo-module-meta: (
     @include module-render( "actions" ) {
         @include kendo-actions--layout();
         @include kendo-actions--theme();
+        @include kendo-utils--flex-grid--justify-content();
     }
 }
 

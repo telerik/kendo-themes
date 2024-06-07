@@ -1,4 +1,6 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
 
 // Module meta
 $_kendo-module-meta: (
@@ -33,6 +35,8 @@ $_kendo-module-meta: (
     @include module-render( "tabstrip" ) {
         @include kendo-tabstrip--layout();
         @include kendo-tabstrip--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--layout--position();
     }
 }
 
