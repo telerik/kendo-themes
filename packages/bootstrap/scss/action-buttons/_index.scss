@@ -29,6 +29,7 @@ $_kendo-module-meta: (
     @include module-render( "actions" ) {
         @include kendo-actions--layout();
         @include kendo-actions--theme();
+        @include kendo-utils--flex-grid--justify-content();
     }
 }
 

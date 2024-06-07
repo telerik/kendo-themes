@@ -43,6 +43,9 @@ $_kendo-module-meta: (
     @include module-render( "pivotgrid" ) {
         @include kendo-pivotgrid--layout();
         @include kendo-pivotgrid--theme();
+        @include kendo-utils--layout--display();
+        @include kendo-utils--layout--position();
+        @include kendo-utils--flex-grid--flex-direction();
     }
 }
 
