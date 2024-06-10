@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-series-d</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( series-d ), k-get-theme-color-var( series-d-100 ))</code></td>
-    <td><code>var(--kendo-color-series-d, #096edf)</code></td>
+    <td><code>var(--kendo-color-series-d, #0078d7)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fourth base series color and its light and dark shades.</div></div>
