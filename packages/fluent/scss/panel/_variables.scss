@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "../core/" as *;
+
+/// The border radius of the Panel.
+/// @group panel
+$kendo-panel-border-radius: k-border-radius(md);
+/// The width of the border around the Panel.
+/// @group panel
+$kendo-panel-border-width: 1px;
+/// The style of the border around the Panel.
+/// @group panel
+$kendo-panel-border-style: solid;
+
+/// The inline padding of the Panel header.
+/// @group panel
+$kendo-panel-header-padding-inline: k-spacing(2);
+/// The block padding of the Panel header.
+/// @group panel
+$kendo-panel-header-padding-block: k-spacing(1);
+
+/// The inline padding of the Panel content.
+/// @group panel
+$kendo-panel-content-padding-inline: k-spacing(2);
+/// The block padding of the Panel content.
+/// @group panel
+$kendo-panel-content-padding-block: k-spacing(1);
+
+/// The text color of the Panel.
+/// @group panel
+$kendo-panel-text: var(--kendo-component-text, #{$kendo-component-text});
+/// The background color of the Panel.
+/// @group panel
+$kendo-panel-bg: var(--kendo-component-bg, #{$kendo-component-bg});
+/// The color of the border around the Panel.
+/// @group panel
+$kendo-panel-border: var(--kendo-component-border, #{$kendo-component-border});
