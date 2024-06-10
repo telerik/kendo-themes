@@ -28,3 +28,7 @@
     @include kendo-utils--layout--visibility();
     @include kendo-utils--layout--zindex();
 }
+
+@mixin kendo-utils--layout--responsive($key) {
+    @include kendo-utils--layout--display--responsive($key);
+}

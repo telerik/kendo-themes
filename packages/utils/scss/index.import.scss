@@ -4,6 +4,7 @@
 
 @import "./accessibility/index.import.scss";
 @import "./layout/index.import.scss";
+@import "./responsive-layout/index.import.scss";
 @import "./flex-grid/index.import.scss";
 @import "./spacing/index.import.scss";
 @import "./sizing/index.import.scss";
@@ -25,6 +26,7 @@
 @mixin kendo-utils() {
     @include kendo-utils--accessibility();
     @include kendo-utils--layout();
+    @include kendo-utils--responsive-layout();
     @include kendo-utils--flex-grid();
     @include kendo-utils--spacing();
     @include kendo-utils--sizing();
@@ -39,4 +41,13 @@
     @include kendo-utils--svg();
 
     @include kendo-utils--elevation();
+
+    // Responsive utils
+    @each $key, $val in $kendo-breakpoints {
+        @include kendo-breakpoint-up($key) {
+            @include kendo-utils--layout--responsive($key);
+            @include kendo-utils--flex-grid--responsive($key);
+            @include kendo-utils--spacing--responsive($key);
+        }
+    }
 }

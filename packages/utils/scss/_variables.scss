@@ -63,6 +63,47 @@ $kendo-sizing: () !default;
 
 $kendo-border-radii: () !default;
 
+$_default-kendo-fraction-classes: (
+    '91-6': 91.6666%,
+    '83-3': 83.3333%,
+    '66-6': 66.6666%,
+    '58-3': 58.3333%,
+    '41-6': 41.6666%,
+    '33-3': 33.3333%,
+    '16-7': 16.6666%,
+    '14-3': 14.2857%,
+    '12-5': 12.5%,
+    '11-1': 11.1111%,
+    '9-1': 9.0909%,
+    '8-3': 8.3333%
+);
+
+$kendo-fraction-classes: $_default-kendo-fraction-classes !default;
+$kendo-fraction-classes: k-map-merge($_default-kendo-fraction-classes, $kendo-fraction-classes);
+
+$_default-kendo-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+) !default;
+
+$kendo-breakpoints: $_default-kendo-breakpoints !default;
+$kendo-breakpoints: k-map-merge($_default-kendo-breakpoints, $kendo-breakpoints);
+
+$_default-kendo-container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+) !default;
+
+$kendo-container-max-widths: $_default-kendo-container-max-widths !default;
+$kendo-container-max-widths: k-map-merge($_default-kendo-container-max-widths, $kendo-container-max-widths);
+
 $kendo-utils: (
 
     // Accessibility
@@ -272,19 +313,6 @@ $kendo-utils: (
         11: 11,
         12: 12,
         13: 13,
-        -1: -1,
-        -2: -2,
-        -3: -3,
-        -4: -4,
-        -5: -5,
-        -6: -6,
-        -7: -7,
-        -8: -8,
-        -9: -9,
-        -10: -10,
-        -11: -11,
-        -12: -12,
-        -13: -13,
         auto: auto
     ),
     "grid-column-end": (
@@ -301,19 +329,6 @@ $kendo-utils: (
         11: 11,
         12: 12,
         13: 13,
-        -1: -1,
-        -2: -2,
-        -3: -3,
-        -4: -4,
-        -5: -5,
-        -6: -6,
-        -7: -7,
-        -8: -8,
-        -9: -9,
-        -10: -10,
-        -11: -11,
-        -12: -12,
-        -13: -13,
         auto: auto
     ),
     "grid-column-span": (
@@ -346,19 +361,6 @@ $kendo-utils: (
         11: 11,
         12: 12,
         13: 13,
-        -1: -1,
-        -2: -2,
-        -3: -3,
-        -4: -4,
-        -5: -5,
-        -6: -6,
-        -7: -7,
-        -8: -8,
-        -9: -9,
-        -10: -10,
-        -11: -11,
-        -12: -12,
-        -13: -13,
         auto: auto
     ),
     "grid-row-end": (
@@ -375,19 +377,6 @@ $kendo-utils: (
         11: 11,
         12: 12,
         13: 13,
-        -1: -1,
-        -2: -2,
-        -3: -3,
-        -4: -4,
-        -5: -5,
-        -6: -6,
-        -7: -7,
-        -8: -8,
-        -9: -9,
-        -10: -10,
-        -11: -11,
-        -12: -12,
-        -13: -13,
         auto: auto
     ),
     "grid-row-span": (

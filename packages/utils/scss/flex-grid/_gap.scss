@@ -193,3 +193,13 @@
 
     }
 }
+
+@mixin kendo-utils--flex-grid--gap--responsive($key) {
+
+    // Gap responsive utility classes
+    $kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
+    @include generate-utils( gap-#{$key}, gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
+    @include generate-utils( gap-x-#{$key}, column-gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
+    @include generate-utils( gap-y-#{$key}, row-gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
+
+}
