@@ -1,4 +1,6 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
 
 // Module meta
 $_kendo-module-meta: (
@@ -45,6 +47,8 @@ $_kendo-module-meta: (
     @include module-render( "gantt" ) {
         @include kendo-gantt--layout();
         @include kendo-gantt--theme();
+        @include kendo-utils--typography--white-space();
+        @include kendo-utils--table--table-layout();
     }
 }
 
