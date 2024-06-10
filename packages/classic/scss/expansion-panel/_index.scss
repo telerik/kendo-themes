@@ -36,6 +36,7 @@ $_kendo-module-meta: (
     @include module-render( "expander" ) {
         @include kendo-expander--layout();
         @include kendo-expander--theme();
+        @include kendo-utils--layout--display();
     }
 }
 

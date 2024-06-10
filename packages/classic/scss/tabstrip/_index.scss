@@ -35,6 +35,8 @@ $_kendo-module-meta: (
     @include module-render( "tabstrip" ) {
         @include kendo-tabstrip--layout();
         @include kendo-tabstrip--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--layout--position();
     }
 }
 
