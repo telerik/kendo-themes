@@ -1,7 +1,6 @@
 @import "../core/_index.scss";
 @import "../utils/_index.scss";
 
-
 // Module meta
 $_kendo-module-meta: (
     name: "tile-layout",
@@ -33,6 +32,9 @@ $_kendo-module-meta: (
     @include module-render( "tile-layout" ) {
         @include kendo-tile-layout--layout();
         @include kendo-tile-layout--theme();
+        @include kendo-utils--interactivity--resize();
+        @include kendo-utils--layout--position();
+        @include kendo-utils--flex-grid--grid-auto-flow();
     }
 }
 
