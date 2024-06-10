@@ -1,9 +1,8 @@
 @import "./core/_index.scss";
 
 
-// Typography and utils
+// Typography
 @import "./typography/_index.scss";
-@import "./utils/_index.scss";
 
 
 // Generic content
@@ -176,9 +175,8 @@
 
     // Color system
 
-    // Typography and utils
+    // Typography
     @include kendo-typography--styles();
-    @include kendo-utils--styles();
 
 
     // Generic content
