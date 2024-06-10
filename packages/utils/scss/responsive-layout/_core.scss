@@ -1,0 +1,44 @@
+@mixin kendo-utils--responsive-layout--core() {
+
+    // Page Container
+    .k-container,
+    .k-container-fluid {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .k-container {
+        @each $key, $val in $kendo-container-max-widths {
+            @include kendo-breakpoint-up($key) {
+                max-width: var(--kendo-container-#{$key}-max-width, #{$val});
+            }
+        }
+    }
+
+    // Row
+    .k-row {
+        display: flex;
+        flex-flow: row wrap;
+        box-sizing: border-box;
+
+        > * {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    // Column
+    .k-col {
+        flex: 1 0 0%;
+    }
+    @each $key, $val in $kendo-breakpoints {
+        @include kendo-breakpoint-up($key) {
+            .k-col-#{$key} {
+                flex: 1 0 0%;
+            }
+        }
+    }
+
+}
