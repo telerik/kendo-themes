@@ -1,4 +1,5 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
 
 
 // Module meta
@@ -32,6 +33,7 @@ $_kendo-module-meta: (
     @include module-render( "bottom-navigation" ) {
         @include kendo-bottom-navigation--layout();
         @include kendo-bottom-navigation--theme();
+        @include kendo-utils--layout--position();
     }
 }
 

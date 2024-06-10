@@ -1,4 +1,6 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
 
 // Module meta
 $_kendo-module-meta: (
@@ -34,6 +36,7 @@ $_kendo-module-meta: (
     @include module-render( "expander" ) {
         @include kendo-expander--layout();
         @include kendo-expander--theme();
+        @include kendo-utils--layout--display();
     }
 }
 

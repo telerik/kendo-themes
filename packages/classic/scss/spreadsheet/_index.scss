@@ -1,4 +1,6 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
 
 // Module meta
 $_kendo-module-meta: (
@@ -57,6 +59,7 @@ $_kendo-module-meta: (
     @include module-render( "spreadsheet" ) {
         @include kendo-spreadsheet--layout();
         @include kendo-spreadsheet--theme();
+        @include kendo-utils--flex-grid--order();
     }
 }
 

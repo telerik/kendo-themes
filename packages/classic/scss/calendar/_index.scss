@@ -1,4 +1,6 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
 
 // Module meta
 $_kendo-module-meta: (
@@ -33,6 +35,9 @@ $_kendo-module-meta: (
     @include module-render( "calendar" ) {
         @include kendo-calendar--layout();
         @include kendo-calendar--theme();
+        @include kendo-utils--flex-grid--align-items();
+        @include kendo-utils--flex-grid--justify-content();
+        @include kendo-utils--interactivity--pointer-events();
     }
 }
 
