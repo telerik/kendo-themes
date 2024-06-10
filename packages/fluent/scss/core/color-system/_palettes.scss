@@ -181,7 +181,7 @@ $_default-palette-cyber-yellow: (
     15: #1f1600,
 );
 
-$_default-palette-demin-blue: (
+$_default-palette-denim-blue: (
     1: #ebf4fc,
     2: #e0effa,
     3: #d6e9f9,
@@ -266,8 +266,8 @@ $kendo-palette-cardinal-red: map-merge($_default-palette-cardinal-red, $kendo-pa
 $kendo-palette-cyber-yellow: $_default-palette-cyber-yellow !default;
 $kendo-palette-cyber-yellow: map-merge($_default-palette-cyber-yellow, $kendo-palette-cyber-yellow);
 
-$kendo-palette-demin-blue: $_default-palette-demin-blue !default;
-$kendo-palette-demin-blue: map-merge($_default-palette-demin-blue, $kendo-palette-demin-blue);
+$kendo-palette-denim-blue: $_default-palette-denim-blue !default;
+$kendo-palette-denim-blue: map-merge($_default-palette-denim-blue, $kendo-palette-denim-blue);
 
 $kendo-palette-iris-purple: $_default-palette-iris-purple !default;
 $kendo-palette-iris-purple: map-merge($_default-palette-iris-purple, $kendo-palette-iris-purple);
