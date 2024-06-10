@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.2-dev.4](https://github.com/telerik/kendo-themes/compare/v8.0.2-dev.3...v8.0.2-dev.4) (2024-06-10)
+
+
+### Bug Fixes
+
+* **dropdownlist:** keep the height of empty dropdownlist ([de3985c](https://github.com/telerik/kendo-themes/commit/de3985c5af89ceab7c05ebb83636b6912dd0df75))
+
+
+
+
+
 ## [8.0.2-dev.3](https://github.com/telerik/kendo-themes/compare/v8.0.2-dev.2...v8.0.2-dev.3) (2024-06-03)
 
 
