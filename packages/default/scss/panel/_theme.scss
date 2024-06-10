@@ -1,0 +1,23 @@
+@mixin kendo-panel--theme--base() {
+    // Panels
+    .k-block,
+    .k-panel {
+        @include fill(
+            $kendo-panel-text,
+            $kendo-panel-bg,
+            $kendo-panel-border
+        );
+    }
+
+    :where(.k-content) {
+        @include fill(
+            $kendo-panel-text,
+            $kendo-panel-bg,
+            $kendo-panel-border
+        );
+    }
+}
+
+@mixin kendo-panel--theme() {
+    @include kendo-panel--theme--base();
+}

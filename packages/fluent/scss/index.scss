@@ -116,6 +116,7 @@
 // Layout & containers
 @forward "./card";
 @forward "./expansion-panel";
+@forward "./panel";
 @forward "./panelbar";
 @forward "./splitter";
 @forward "./tilelayout";
@@ -279,6 +280,7 @@
 // Layout & containers
 @use "./card" as *;
 @use "./expansion-panel" as *;
+@use "./panel" as *;
 @use "./panelbar" as *;
 @use "./splitter" as *;
 @use "./tilelayout" as *;
@@ -466,6 +468,7 @@
     // Layout & containers
     @include card-styles();
     @include expansion-panel-styles();
+    @include panel-styles();
     @include panelbar-styles();
     @include splitter-styles();
     @include tilelayout-styles();
