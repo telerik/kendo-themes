@@ -1,0 +1,48 @@
+@mixin kendo-utils--responsive-layout--col() {
+
+    // Column
+    .k-col {
+        flex: 1 0 0%;
+    }
+
+    // Column Sizes
+    @for $i from 1 through 100 {
+	    .k-col-size-#{$i} {
+            flex: 0 0 auto;
+            width: $i * 1%;
+        }
+	}
+
+    @each $i, $n in $kendo-fraction-classes {
+        .k-col-size-#{$i} {
+            flex: 0 0 auto;
+            width: $n;
+        }
+    }
+
+}
+
+@mixin kendo-utils--responsive-layout--col--responsive($key) {
+
+    // Column responsive
+    .k-col-#{$key} {
+        flex: 1 0 0%;
+    }
+
+    // Column Sizes responsive
+    @for $i from 1 through 100 {
+        .k-col-#{$key}-size-#{$i} {
+            flex: 0 0 auto;
+            width: $i * 1%;
+        }
+    }
+
+    @each $i, $n in $kendo-fraction-classes {
+        .k-col-#{$key}-size-#{$i} {
+            flex: 0 0 auto;
+            width: $n;
+        }
+    }
+}
+
+

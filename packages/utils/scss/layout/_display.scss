@@ -103,3 +103,11 @@
 
     }
 }
+
+@mixin kendo-utils--layout--display--responsive($key) {
+
+    // Display responsive utility classes
+    $kendo-utils-display: k-map-get( $kendo-utils, "display" ) !default;
+    @include generate-utils( d-#{$key}, display, $kendo-utils-display, $important: false );
+
+}

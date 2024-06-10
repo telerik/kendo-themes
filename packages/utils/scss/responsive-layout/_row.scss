@@ -1,0 +1,21 @@
+@mixin kendo-utils--responsive-layout--row() {
+
+    // Row
+    .k-row {
+        margin-top: calc( -1 * var(--kendo-col-gap, 0) );
+        margin-left: calc( -.5 * var(--kendo-col-gap, 0) );
+        margin-right: calc( -.5 * var(--kendo-col-gap, 0) );
+        display: flex;
+        flex-flow: row wrap;
+        box-sizing: border-box;
+
+        > * {
+            margin-top: var(--kendo-col-gap, 0);
+            padding-left: calc( var(--kendo-col-gap, 0) * .5 );
+            padding-right: calc( var(--kendo-col-gap, 0) * .5 );
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+}

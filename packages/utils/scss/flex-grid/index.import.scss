@@ -50,3 +50,9 @@
     @include kendo-utils--flex-grid--place-items();
     @include kendo-utils--flex-grid--place-self();
 }
+
+@mixin kendo-utils--flex-grid--responsive($key) {
+    @include kendo-utils--flex-grid--gap--responsive($key);
+    @include kendo-utils--flex-grid--grid-column-start-end--responsive($key);
+    @include kendo-utils--flex-grid--grid-template-columns--responsive($key);
+}

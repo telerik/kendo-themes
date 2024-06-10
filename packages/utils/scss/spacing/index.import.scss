@@ -10,3 +10,7 @@
     @include kendo-utils--spacing--padding();
     @include kendo-utils--spacing--space-between();
 }
+
+@mixin kendo-utils--spacing--responsive($key) {
+    @include kendo-utils--spacing--padding--responsive($key)
+}
