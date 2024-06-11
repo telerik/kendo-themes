@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "bottom-navigation",
@@ -21,5 +23,6 @@ $_kendo-module-meta: (
     @include module.render( "bottom-navigation" ) {
         @include kendo-bottom-navigation--layout();
         @include kendo-bottom-navigation--theme();
+        @include kendo-utils--layout--position();
     }
 }

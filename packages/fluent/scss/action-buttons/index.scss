@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "action-buttons",
@@ -22,5 +24,6 @@ $_kendo-module-meta: (
     @include module.render( "action-buttons" ) {
         @include kendo-action-buttons--layout();
         @include kendo-action-buttons--theme();
+        @include kendo-utils--flex-grid--justify-content();
     }
 }

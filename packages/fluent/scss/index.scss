@@ -2,9 +2,8 @@
 @forward "./core";
 
 
-// Typography and utils
+// Typography
 @forward "./typography";
-@forward "./utils";
 @forward "./draggable";
 
 
@@ -166,9 +165,8 @@
 // Use component modules
 @use "./core" as *;
 
-// Typography and utils
+// Typography
 @use "./typography" as *;
-@use "./utils" as *;
 @use "./draggable" as *;
 
 
@@ -357,9 +355,8 @@
     // Radii
     @include kendo-border-radius--styles();
 
-    // Typography and utils
+    // Typography
     @include typography-styles();
-    @include utils-styles();
 
     // Generic content
     @include icon-styles();

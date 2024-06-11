@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "expansion-panel",
@@ -20,5 +22,6 @@ $_kendo-module-meta: (
     @include module.render( "expansion-panel" ) {
         @include kendo-expansion-panel--layout();
         @include kendo-expansion-panel--theme();
+        @include kendo-utils--layout--display();
     }
 }

@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "toolbar",
@@ -24,5 +26,7 @@ $_kendo-module-meta: (
     @include module.render( "toolbar" ) {
         @include kendo-toolbar--layout();
         @include kendo-toolbar--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--typography--vertical-align();
     }
 }

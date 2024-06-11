@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "taskboard",
@@ -27,5 +29,6 @@ $_kendo-module-meta: (
     @include module.render( "taskboard" ) {
         @include kendo-taskboard--layout();
         @include kendo-taskboard--theme();
+        @include kendo-utils--typography--text-overflow();
     }
 }

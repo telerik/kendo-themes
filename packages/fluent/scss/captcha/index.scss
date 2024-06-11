@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "captcha",
@@ -25,5 +27,7 @@ $_kendo-module-meta: (
     @include module.render( "captcha" ) {
         @include kendo-captcha--layout();
         @include kendo-captcha--theme();
+        @include kendo-utils--typography--text-color();
+        @include kendo-utils--layout--position();
     }
 }
