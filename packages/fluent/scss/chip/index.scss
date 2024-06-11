@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "chip",
@@ -22,5 +24,6 @@ $_kendo-module-meta: (
     @include module.render( "chip" ) {
         @include kendo-chip--layout();
         @include kendo-chip--theme();
+        @include kendo-utils--typography--text-overflow();
     }
 }

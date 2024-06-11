@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "icon",
@@ -19,5 +21,8 @@ $_kendo-module-meta: (
     @include module.render( "icon" ) {
         @include kendo-icon--layout();
         @include kendo-icon--theme();
+        @include kendo-utils--transform--rotate();
+        @include kendo-utils--transform--flip();
+        @include kendo-utils--typography--text-color();
     }
 }

@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "grid",
@@ -43,5 +45,8 @@ $_kendo-module-meta: (
     @include module.render( "grid" ) {
         @include kendo-grid--layout();
         @include kendo-grid--theme();
+        @include kendo-utils--interactivity--touch-action();
+        @include kendo-utils--interactivity--cursor();
+        @include kendo-utils--layout--display();
     }
 }

@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "card",
@@ -25,5 +27,8 @@ $_kendo-module-meta: (
     @include module.render( "card" ) {
         @include kendo-card--layout();
         @include kendo-card--theme();
+        @include kendo-utils--typography--text-overflow();
+        @include kendo-utils--typography--white-space();
+        @include kendo-utils--layout--display();
     }
 }

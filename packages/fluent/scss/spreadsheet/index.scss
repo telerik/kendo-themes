@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "spreadsheet",
@@ -37,5 +39,6 @@ $_kendo-module-meta: (
     @include module.render( "spreadsheet" ) {
         @include kendo-spreadsheet--layout();
         @include kendo-spreadsheet--theme();
+        @include kendo-utils--flex-grid--order();
     }
 }

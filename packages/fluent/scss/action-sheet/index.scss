@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "action-sheet",
@@ -24,5 +26,7 @@ $_kendo-module-meta: (
         @include kendo-action-sheet--layout();
         @include kendo-action-sheet--layout-jq();
         @include kendo-action-sheet--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--typography--text-align();
     }
 }
