@@ -253,45 +253,73 @@ $_default-palette-forest-green: (
 );
 
 // stylelint-disable scss/no-global-function-names
+/// The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
+/// @group palette
 $kendo-palette-gray: $_default-palette-gray !default;
 $kendo-palette-gray: map-merge($_default-palette-gray, $kendo-palette-gray);
 
+/// The Indigo Palette provides colors to the Primary variable group.
+/// @group palette
 $kendo-palette-indigo: $_default-palette-indigo !default;
 $kendo-palette-indigo: map-merge($_default-palette-indigo, $kendo-palette-indigo);
 
+/// The Pink Palette provides colors to the Secondary variable group.
+/// @group palette
 $kendo-palette-pink: $_default-palette-pink !default;
 $kendo-palette-pink: map-merge($_default-palette-pink, $kendo-palette-pink);
 
+/// The Dark Teal Palette provides colors to the Tertiary variable group.
+/// @group palette
 $kendo-palette-dark-teal: $_default-palette-dark-teal !default;
 $kendo-palette-dark-teal: map-merge($_default-palette-dark-teal, $kendo-palette-dark-teal);
 
+/// The Red Palette provides colors to the Error variable group.
+/// @group palette
 $kendo-palette-red: $_default-palette-red !default;
 $kendo-palette-red: map-merge($_default-palette-red, $kendo-palette-red);
 
+/// The Blue Palette provides colors to the Info variable group.
+/// @group palette
 $kendo-palette-blue: $_default-palette-blue !default;
 $kendo-palette-blue: map-merge($_default-palette-blue, $kendo-palette-blue);
 
+/// The Green Palette provides colors to the Success variable group.
+/// @group palette
 $kendo-palette-green: $_default-palette-green !default;
 $kendo-palette-green: map-merge($_default-palette-green, $kendo-palette-green);
 
+/// The Yellow Palette provides colors to the Warning variable group.
+/// @group palette
 $kendo-palette-yellow: $_default-palette-yellow !default;
 $kendo-palette-yellow: map-merge($_default-palette-yellow, $kendo-palette-yellow);
 
+/// The Deep Purple provides colors to the Series A variable group.
+/// @group palette
 $kendo-palette-deep-purple: $_default-palette-deep-purple !default;
 $kendo-palette-deep-purple: map-merge($_default-palette-deep-purple, $kendo-palette-deep-purple);
 
+/// The Baby Blue provides colors to the Series B variable group.
+/// @group palette
 $kendo-palette-baby-blue: $_default-palette-baby-blue !default;
 $kendo-palette-baby-blue: map-merge($_default-palette-baby-blue, $kendo-palette-baby-blue);
 
+/// The Teal provides colors to the Tertiary and Series C variable groups.
+/// @group palette
 $kendo-palette-teal: $_default-palette-teal !default;
 $kendo-palette-teal: map-merge($_default-palette-teal, $kendo-palette-teal);
 
+/// The Canary Yellow provides colors to the Series D variable group.
+/// @group palette
 $kendo-palette-canary-yellow: $_default-palette-canary-yellow !default;
 $kendo-palette-canary-yellow: map-merge($_default-palette-canary-yellow, $kendo-palette-canary-yellow);
 
+/// The Canary Red provides colors to the Series E variable group.
+/// @group palette
 $kendo-palette-candy-red: $_default-palette-candy-red !default;
 $kendo-palette-candy-red: map-merge($_default-palette-candy-red, $kendo-palette-candy-red);
 
+/// The Forest Green provides colors to the Series F variable group.
+/// @group palette
 $kendo-palette-forest-green: $_default-palette-forest-green !default;
 $kendo-palette-forest-green: map-merge($_default-palette-forest-green, $kendo-palette-forest-green);
 // stylelint-enable scss/no-global-function-names

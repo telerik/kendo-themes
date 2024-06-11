@@ -236,42 +236,68 @@ $_default-palette-orchid-purple: (
 
 
 // stylelint-disable scss/no-global-function-names
+/// The Ash Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
+/// @group palette
 $kendo-palette-ash-gray: $_default-palette-ash-gray !default;
 $kendo-palette-ash-gray: map-merge($_default-palette-ash-gray, $kendo-palette-ash-gray);
 
+/// The Tangerine Orange Palette provides colors to the Primary variable group.
+/// @group palette
 $kendo-palette-tangerine-orange: $_default-palette-tangerine-orange !default;
 $kendo-palette-tangerine-orange: map-merge($_default-palette-tangerine-orange, $kendo-palette-tangerine-orange);
 
+/// The Dodger Blue Palette provides colors to the Tertiary variable group.
+/// @group palette
 $kendo-palette-dodger-blue: $_default-palette-dodger-blue !default;
 $kendo-palette-dodger-blue: map-merge($_default-palette-dodger-blue, $kendo-palette-dodger-blue);
 
+/// The Grass Green Palette provides colors to the Success variable group.
+/// @group palette
 $kendo-palette-grass-green: $_default-palette-grass-green !default;
 $kendo-palette-grass-green: map-merge($_default-palette-grass-green, $kendo-palette-grass-green);
 
+/// The Lake Blue Palette provides colors to the Info variable group.
+/// @group palette
 $kendo-palette-lake-blue: $_default-palette-lake-blue !default;
 $kendo-palette-lake-blue: map-merge($_default-palette-lake-blue, $kendo-palette-lake-blue);
 
+/// The Honey Yellow Palette provides colors to the Warning variable group.
+/// @group palette
 $kendo-palette-honey-yellow: $_default-palette-honey-yellow !default;
 $kendo-palette-honey-yellow: map-merge($_default-palette-honey-yellow, $kendo-palette-honey-yellow);
 
+/// The Brick Red Palette provides colors to the Error variable group.
+/// @group palette
 $kendo-palette-brick-red: $_default-palette-brick-red !default;
 $kendo-palette-brick-red: map-merge($_default-palette-brick-red, $kendo-palette-brick-red);
 
+/// The Coral Palette provides colors to the Series A variable group.
+/// @group palette
 $kendo-palette-coral: $_default-palette-coral !default;
 $kendo-palette-coral: map-merge($_default-palette-coral, $kendo-palette-coral);
 
+/// The Pineapple Yellow provides colors to the Series B variable group.
+/// @group palette
 $kendo-palette-pineapple-yellow: $_default-palette-pineapple-yellow !default;
 $kendo-palette-pineapple-yellow: map-merge($_default-palette-pineapple-yellow, $kendo-palette-pineapple-yellow);
 
+/// The Apple Green provides colors to the Series C variable group.
+/// @group palette
 $kendo-palette-apple-green: $_default-palette-apple-green !default;
 $kendo-palette-apple-green: map-merge($_default-palette-apple-green, $kendo-palette-apple-green);
 
+/// The Pacific Blue provides colors to the Series D variable group.
+/// @group palette
 $kendo-palette-pacific-blue: $_default-palette-pacific-blue !default;
 $kendo-palette-pacific-blue: map-merge($_default-palette-pacific-blue, $kendo-palette-pacific-blue);
 
+/// The Bright Blue provides colors to the Series E variable group.
+/// @group palette
 $kendo-palette-bright-blue: $_default-palette-bright-blue !default;
 $kendo-palette-bright-blue: map-merge($_default-palette-bright-blue, $kendo-palette-bright-blue);
 
+/// The Orchid Purple provides colors to the Series F variable group.
+/// @group palette
 $kendo-palette-orchid-purple: $_default-palette-orchid-purple !default;
 $kendo-palette-orchid-purple: map-merge($_default-palette-orchid-purple, $kendo-palette-orchid-purple);
 // stylelint-enable scss/no-global-function-names
