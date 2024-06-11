@@ -1,23 +1,480 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "utils",
-    dependencies: ()
+@use "../core" as *;
+
+@use "@progress/kendo-theme-utils/scss/index.import.scss" as * with (
+    $kendo-spacing: $kendo-spacing,
+    $kendo-font-sizes: $kendo-font-sizes,
+    $kendo-border-radii: $kendo-border-radii,
+    $kendo-elevation: $kendo-elevation,
+    $kendo-colors: $kendo-colors,
+    $kendo-enable-color-system: $kendo-enable-color-system
 );
 
+// Accessibility
+@mixin utils--accessibility--screen-readers() {
+    @include kendo-utils--accessibility--screen-readers();
+}
 
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/" as module;
-@include module.register( $_kendo-module-meta... );
+// Background
+@mixin utils--background--background-clip() {
+    @include kendo-utils--background--background-clip();
+}
 
-// Expose
-@mixin utils-styles() {
-    @include module.render( "utils" ) {
-        @include kendo-utils--layout();
-        @include kendo-utils--theme();
-    }
+@mixin utils--background--background-color() {
+    @include kendo-utils--background--background-color();
+}
+
+@mixin utils--background--background-position() {
+    @include kendo-utils--background--background-position();
+}
+
+@mixin utils--background--background-size() {
+    @include kendo-utils--background--background-size();
+}
+
+
+// Border
+@mixin utils--border--border-color() {
+    @include kendo-utils--border--border-color();
+}
+
+@mixin utils--border--border-radius() {
+    @include kendo-utils--border--border-radius();
+}
+
+@mixin utils--border--border-style() {
+    @include kendo-utils--border--border-style();
+}
+
+@mixin utils--border--border-width() {
+    @include kendo-utils--border--border-width();
+}
+
+@mixin utils--border--outline-color() {
+    @include kendo-utils--border--outline-color();
+}
+
+@mixin utils--border--outline-offset() {
+    @include kendo-utils--border--outline-offset();
+}
+
+@mixin utils--border--outline-style() {
+    @include kendo-utils--border--outline-style();
+}
+
+@mixin utils--border--outline-width() {
+    @include kendo-utils--border--outline-width();
+}
+
+
+// Effects
+@mixin utils--effects--opacity() {
+    @include kendo-utils--effects--opacity();
+}
+
+
+// Elevation
+@mixin utils--elevation() {
+    @include kendo-utils--elevation();
+}
+
+
+// Filter
+@mixin utils--filter--backdrop() {
+    @include kendo-utils--filter--backdrop();
+}
+
+
+// Flex-Grid
+@mixin utils--flex-grid--align-content() {
+    @include kendo-utils--flex-grid--align-content();
+}
+
+@mixin utils--flex-grid--align-items() {
+    @include kendo-utils--flex-grid--align-items();
+}
+
+@mixin utils--flex-grid--align-self() {
+    @include kendo-utils--flex-grid--align-self();
+}
+
+@mixin utils--flex-grid--flex-basis() {
+    @include kendo-utils--flex-grid--flex-basis();
+}
+
+@mixin utils--flex-grid--flex-direction() {
+    @include kendo-utils--flex-grid--flex-direction();
+}
+
+@mixin utils--flex-grid--flex-grow() {
+    @include kendo-utils--flex-grid--flex-grow();
+}
+
+@mixin utils--flex-grid--flex-shrink() {
+    @include kendo-utils--flex-grid--flex-shrink();
+}
+
+@mixin utils--flex-grid--flex-wrap() {
+    @include kendo-utils--flex-grid--flex-wrap();
+}
+
+@mixin utils--flex-grid--flex() {
+    @include kendo-utils--flex-grid--flex();
+}
+
+@mixin utils--flex-grid--gap() {
+    @include kendo-utils--flex-grid--gap();
+}
+
+@mixin utils--flex-grid--grid-auto-columns() {
+    @include kendo-utils--flex-grid--grid-auto-columns();
+}
+
+@mixin utils--flex-grid--grid-auto-flow() {
+    @include kendo-utils--flex-grid--grid-auto-flow();
+}
+
+@mixin utils--flex-grid--grid-auto-rows() {
+    @include kendo-utils--flex-grid--grid-auto-rows();
+}
+
+@mixin utils--flex-grid--grid-column-start-end() {
+    @include kendo-utils--flex-grid--grid-column-start-end();
+}
+
+@mixin utils--flex-grid--grid-row-start-end() {
+    @include kendo-utils--flex-grid--grid-row-start-end();
+}
+
+@mixin utils--flex-grid--grid-template-columns() {
+    @include kendo-utils--flex-grid--grid-template-columns();
+}
+
+@mixin utils--flex-grid--grid-template-rows() {
+    @include kendo-utils--flex-grid--grid-template-rows();
+}
+
+@mixin utils--flex-grid--justify-content() {
+    @include kendo-utils--flex-grid--justify-content();
+}
+
+@mixin utils--flex-grid--justify-items() {
+    @include kendo-utils--flex-grid--justify-items();
+}
+
+@mixin utils--flex-grid--justify-self() {
+    @include kendo-utils--flex-grid--justify-self();
+}
+
+@mixin utils--flex-grid--order() {
+    @include kendo-utils--flex-grid--order();
+}
+
+@mixin utils--flex-grid--place-content() {
+    @include kendo-utils--flex-grid--place-content();
+}
+
+@mixin utils--flex-grid--place-items() {
+    @include kendo-utils--flex-grid--place-items();
+}
+
+@mixin utils--flex-grid--place-self() {
+    @include kendo-utils--flex-grid--place-self();
+}
+
+
+// Interactivity
+@mixin utils--interactivity--accent-color() {
+    @include kendo-utils--interactivity--accent-color();
+}
+
+@mixin utils--interactivity--appearance() {
+    @include kendo-utils--interactivity--appearance();
+}
+
+@mixin utils--interactivity--caret-color() {
+    @include kendo-utils--interactivity--caret-color();
+}
+
+@mixin utils--interactivity--cursor() {
+    @include kendo-utils--interactivity--cursor();
+}
+
+@mixin utils--interactivity--pointer-events() {
+    @include kendo-utils--interactivity--pointer-events();
+}
+
+@mixin utils--interactivity--resize() {
+    @include kendo-utils--interactivity--resize();
+}
+
+@mixin utils--interactivity--scroll() {
+    @include kendo-utils--interactivity--scroll();
+}
+
+@mixin utils--interactivity--touch-action() {
+    @include kendo-utils--interactivity--touch-action();
+}
+
+@mixin utils--interactivity--user-select() {
+    @include kendo-utils--interactivity--user-select();
+}
+
+@mixin utils--interactivity--will-change() {
+    @include kendo-utils--interactivity--will-change();
+}
+
+
+// Layout
+@mixin utils--layout--aspect-ratio() {
+    @include kendo-utils--layout--aspect-ratio();
+}
+
+@mixin utils--layout--box-sizing() {
+    @include kendo-utils--layout--box-sizing();
+}
+
+@mixin utils--layout--clear() {
+    @include kendo-utils--layout--clear();
+}
+
+@mixin utils--layout--columns() {
+    @include kendo-utils--layout--columns();
+}
+
+@mixin utils--layout--display() {
+    @include kendo-utils--layout--display();
+}
+
+@mixin utils--layout--float() {
+    @include kendo-utils--layout--float();
+}
+
+@mixin utils--layout--object-fit() {
+    @include kendo-utils--layout--object-fit();
+}
+
+@mixin utils--layout--object-position() {
+    @include kendo-utils--layout--object-position();
+}
+
+@mixin utils--layout--overflow() {
+    @include kendo-utils--layout--overflow();
+}
+
+@mixin utils--layout--placement() {
+    @include kendo-utils--layout--placement();
+}
+
+@mixin utils--layout--position() {
+    @include kendo-utils--layout--position();
+}
+
+@mixin utils--layout--visibility() {
+    @include kendo-utils--layout--visibility();
+}
+
+@mixin utils--layout--zindex() {
+    @include kendo-utils--layout--zindex();
+}
+
+
+// Sizing
+@mixin utils--sizing--height() {
+    @include kendo-utils--sizing--height();
+}
+
+@mixin utils--sizing--width() {
+    @include kendo-utils--sizing--width();
+}
+
+
+// Spacing
+@mixin utils--spacing--margin() {
+    @include kendo-utils--spacing--margin();
+}
+
+@mixin utils--spacing--padding() {
+    @include kendo-utils--spacing--padding();
+}
+
+@mixin utils--spacing--space-between() {
+    @include kendo-utils--spacing--space-between();
+}
+
+
+// SVG
+@mixin utils--svg--fill() {
+    @include kendo-utils--svg--fill();
+}
+
+@mixin utils--svg--stroke() {
+    @include kendo-utils--svg--stroke();
+}
+
+
+// Table
+@mixin utils--table--border-collapse() {
+    @include kendo-utils--table--border-collapse();
+}
+
+@mixin utils--table--table-layout() {
+    @include kendo-utils--table--table-layout();
+}
+
+
+// Transform
+@mixin utils--transform--flip() {
+    @include kendo-utils--transform--flip();
+}
+
+@mixin utils--transform--origin() {
+    @include kendo-utils--transform--origin();
+}
+
+@mixin utils--transform--rotate() {
+    @include kendo-utils--transform--rotate();
+}
+
+@mixin utils--transform--scale() {
+    @include kendo-utils--transform--scale();
+}
+
+@mixin utils--transform--skew() {
+    @include kendo-utils--transform--skew();
+}
+
+@mixin utils--transform--translate() {
+    @include kendo-utils--transform--translate();
+}
+
+
+// Typography
+@mixin utils--typography--font-family() {
+    @include kendo-utils--typography--font-family();
+}
+
+@mixin utils--typography--font-size() {
+    @include kendo-utils--typography--font-size();
+}
+
+@mixin utils--typography--font-style() {
+    @include kendo-utils--typography--font-style();
+}
+
+@mixin utils--typography--font-weight() {
+    @include kendo-utils--typography--font-weight();
+}
+
+@mixin utils--typography--letter-spacing() {
+    @include kendo-utils--typography--letter-spacing();
+}
+
+@mixin utils--typography--line-height() {
+    @include kendo-utils--typography--line-height();
+}
+
+@mixin utils--typography--list-style-type() {
+    @include kendo-utils--typography--list-style-type();
+}
+
+@mixin utils--typography--text-align() {
+    @include kendo-utils--typography--text-align();
+}
+
+@mixin utils--typography--text-color() {
+    @include kendo-utils--typography--text-color();
+}
+
+@mixin utils--typography--text-decoration() {
+    @include kendo-utils--typography--text-decoration();
+}
+
+@mixin utils--typography--text-overflow() {
+    @include kendo-utils--typography--text-overflow();
+}
+
+@mixin utils--typography--text-transform() {
+    @include kendo-utils--typography--text-transform();
+}
+
+@mixin utils--typography--vertical-align() {
+    @include kendo-utils--typography--vertical-align();
+}
+
+@mixin utils--typography--white-space() {
+    @include kendo-utils--typography--white-space();
+}
+
+
+
+// Generic utils
+// Accessibility
+@mixin utils--accessibility() {
+    @include kendo-utils--accessibility();
+}
+
+// Layout
+@mixin utils--layout() {
+    @include kendo-utils--layout();
+}
+
+// Flex-grid
+@mixin utils--flex-grid() {
+    @include kendo-utils--flex-grid();
+}
+
+// Spacing
+@mixin utils--spacing() {
+    @include kendo-utils--spacing();
+}
+
+// Sizing
+@mixin utils--sizing() {
+    @include kendo-utils--sizing();
+}
+
+// Typography
+@mixin utils--typography() {
+    @include kendo-utils--typography();
+}
+
+// Background
+@mixin utils--background() {
+    @include kendo-utils--background();
+}
+
+// Border
+@mixin utils--border() {
+    @include kendo-utils--border();
+}
+
+// Effects
+@mixin utils--effects() {
+    @include kendo-utils--effects();
+}
+
+// Filter
+@mixin utils--filter() {
+    @include kendo-utils--filter();
+}
+
+// Table
+@mixin utils--table() {
+    @include kendo-utils--table();
+}
+
+// Transform
+@mixin utils--transform() {
+    @include kendo-utils--transform();
+}
+
+// Interactivity
+@mixin utils--interactivity() {
+    @include kendo-utils--interactivity();
+}
+
+// SVG
+@mixin utils--svg() {
+    @include kendo-utils--svg();
 }
