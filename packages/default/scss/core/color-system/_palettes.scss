@@ -218,39 +218,63 @@ $_default-palette-flamingo-pink: (
 
 
 // stylelint-disable scss/no-global-function-names
+/// The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
+/// @group palette
 $kendo-palette-gray: $_default-palette-gray !default;
 $kendo-palette-gray: map-merge($_default-palette-gray, $kendo-palette-gray);
 
+/// The Coral Palette provides colors to the Primary and Series A variable groups.
+/// @group palette
 $kendo-palette-coral: $_default-palette-coral !default;
 $kendo-palette-coral: map-merge($_default-palette-coral, $kendo-palette-coral);
 
+/// The Sky Blue Palette provides colors to the Tertiary variable group.
+/// @group palette
 $kendo-palette-sky-blue: $_default-palette-sky-blue !default;
 $kendo-palette-sky-blue: map-merge($_default-palette-sky-blue, $kendo-palette-sky-blue);
 
+/// The Green Palette provides colors to the Success variable group.
+/// @group palette
 $kendo-palette-green: $_default-palette-green !default;
 $kendo-palette-green: map-merge($_default-palette-green, $kendo-palette-green);
 
+/// The Blue Palette provides colors to the Info variable group.
+/// @group palette
 $kendo-palette-blue: $_default-palette-blue !default;
 $kendo-palette-blue: map-merge($_default-palette-blue, $kendo-palette-blue);
 
+/// The Yellow Palette provides colors to the Warning variable group.
+/// @group palette
 $kendo-palette-yellow: $_default-palette-yellow !default;
 $kendo-palette-yellow: map-merge($_default-palette-yellow, $kendo-palette-yellow);
 
+/// The Red Palette provides colors to the Error variable group.
+/// @group palette
 $kendo-palette-red: $_default-palette-red !default;
 $kendo-palette-red: map-merge($_default-palette-red, $kendo-palette-red);
 
+/// The Lemon Yellow Palette provides colors to the Series B variable group.
+/// @group palette
 $kendo-palette-lemon-yellow: $_default-palette-lemon-yellow !default;
 $kendo-palette-lemon-yellow: map-merge($_default-palette-lemon-yellow, $kendo-palette-lemon-yellow);
 
+/// The Spring Green Palette provides colors to the Series C variable group.
+/// @group palette
 $kendo-palette-spring-green: $_default-palette-spring-green !default;
 $kendo-palette-spring-green: map-merge($_default-palette-spring-green, $kendo-palette-spring-green);
 
+/// The Royal Blue Palette provides colors to the Series D variable group.
+/// @group palette
 $kendo-palette-royal-blue: $_default-palette-royal-blue !default;
 $kendo-palette-royal-blue: map-merge($_default-palette-royal-blue, $kendo-palette-royal-blue);
 
+/// The Lavender Purple Palette provides colors to the Series E variable group.
+/// @group palette
 $kendo-palette-lavender-purple: $_default-palette-lavender-purple !default;
 $kendo-palette-lavender-purple: map-merge($_default-palette-lavender-purple, $kendo-palette-lavender-purple);
 
+/// The Flamingo Pink Palette provides colors to the Series F variable group.
+/// @group palette
 $kendo-palette-flamingo-pink: $_default-palette-flamingo-pink !default;
 $kendo-palette-flamingo-pink: map-merge($_default-palette-flamingo-pink, $kendo-palette-flamingo-pink);
 // stylelint-enable scss/no-global-function-names
