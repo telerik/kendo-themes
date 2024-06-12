@@ -103,7 +103,7 @@ function swatchJsonTransformer( json ) {
             if ( colorsMap.length ) {
                 sassContent.push(`\t$kendo-colors: (`);
                 sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
-                sassContent.push(`\t);`);
+                sassContent.push(`\t)`);
             }
 
             sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
