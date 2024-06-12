@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
         ripple-size: 300%
     )
 )</code></td>
-    <td><code>(sm: (size: var(--kendo-spacing-4, 1rem), glyph-size: var(--kendo-spacing-3\.5, 0.875rem), indicator-size: var(--kendo-spacing-2, 0.5rem), ripple-size: 300%), md: (size: var(--kendo-spacing-5, 1.25rem), glyph-size: var(--kendo-spacing-4\.5, 1.125rem), indicator-size: var(--kendo-spacing-2\.5, 0.625rem), ripple-size: 300%), lg: (size: var(--kendo-spacing-6, 1.5rem), glyph-size: var(--kendo-spacing-5\.5, 1.375rem), indicator-size: var(--kendo-spacing-3, 0.75rem), ripple-size: 300%))</code></td>
+    <td><ul><li>sm: "size":"var(--kendo-spacing-4, 1rem)","glyph-size":"var(--kendo-spacing-3\\.5, 0.875rem)","indicator-size":"var(--kendo-spacing-2, 0.5rem)","ripple-size":"300%"</li><li>md: "size":"var(--kendo-spacing-5, 1.25rem)","glyph-size":"var(--kendo-spacing-4\\.5, 1.125rem)","indicator-size":"var(--kendo-spacing-2\\.5, 0.625rem)","ripple-size":"300%"</li><li>lg: "size":"var(--kendo-spacing-6, 1.5rem)","glyph-size":"var(--kendo-spacing-5\\.5, 1.375rem)","indicator-size":"var(--kendo-spacing-3, 0.75rem)","ripple-size":"300%"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different RadioButton sizes.</div></div>

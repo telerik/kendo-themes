@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-sizes</td>
     <td>Map</td>
     <td><code>$_default-font-sizes</code></td>
-    <td><code>(xs: 0.625rem, sm: 0.75rem, md: 0.875rem, lg: 1rem, xl: 1.25rem)</code></td>
+    <td><ul><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>$_default-line-heights</code></td>
-    <td><code>(xs: 1, sm: 1.2, md: 2, lg: 1.5)</code></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.2</li><li>md: 2</li><li>lg: 1.5</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
     <td><code>$_default-letter-spacings</code></td>
-    <td><code>(tightest: -2.5px, tighter: -1.5px, tight: -0.5px, normal: 0px, wide: 0.15px, wider: 0.25px, widest: 0.35px)</code></td>
+    <td><ul><li>tightest: -2.5px</li><li>tighter: -1.5px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.15px</li><li>wider: 0.25px</li><li>widest: 0.35px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacings map</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-families</td>
     <td>Map</td>
     <td><code>$_default-font-families</code></td>
-    <td><code>(sans-serif: (Roboto, "Helvetica Neue", sans-serif), monospace: (Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace))</code></td>
+    <td><ul><li>sans-serif: Roboto, "Helvetica Neue", sans-serif</li><li>monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>
@@ -710,7 +710,7 @@ The following table lists the available variables for customization.
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><code>(h1: (font-size: 96px, font-family: var(--kendo-font-family, inherit), line-height: 112px, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal), margin: 0 0 12px), h2: (font-size: 60px, font-family: var(--kendo-font-family, inherit), line-height: 72px, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tight, normal), margin: 0 0 12px), h3: (font-size: 48px, font-family: var(--kendo-font-family, inherit), line-height: 56px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: var(--kendo-letter-spacing-normal, normal), margin: 0 0 12px), h4: (font-size: 34px, font-family: var(--kendo-font-family, inherit), line-height: 36px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: var(--kendo-letter-spacing-wider, normal), margin: 0 0 12px), h5: (font-size: 24px, font-family: var(--kendo-font-family, inherit), line-height: 24px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: var(--kendo-letter-spacing-normal, normal), margin: 0 0 12px), h6: (font-size: 20px, font-family: var(--kendo-font-family, inherit), line-height: 24px, font-weight: var(--kendo-font-weight-medium, normal), letter-spacing: var(--kendo-letter-spacing-wide, normal), margin: 0 0 12px))</code></td>
+    <td><ul><li>h1: "font-size":"96px","font-family":"var(--kendo-font-family, inherit)","line-height":"112px","font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)","margin":"0 0 12px"</li><li>h2: "font-size":"60px","font-family":"var(--kendo-font-family, inherit)","line-height":"72px","font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tight, normal)","margin":"0 0 12px"</li><li>h3: "font-size":"48px","font-family":"var(--kendo-font-family, inherit)","line-height":"56px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"0 0 12px"</li><li>h4: "font-size":"34px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-wider, normal)","margin":"0 0 12px"</li><li>h5: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"0 0 12px"</li><li>h6: "font-size":"20px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-medium, normal)","letter-spacing":"var(--kendo-letter-spacing-wide, normal)","margin":"0 0 12px"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
@@ -1129,7 +1129,7 @@ The following table lists the available variables for customization.
         letter-spacing: $kendo-display4-letter-spacing
     )
 )</code></td>
-    <td><code>(1: (font-size: calc(var(--kendo-font-size, 0.875rem) * 9.5), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal)), 2: (font-size: calc(var(--kendo-font-size, 0.875rem) * 8.75), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal)), 3: (font-size: calc(var(--kendo-font-size, 0.875rem) * 8), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal)), 4: (font-size: calc(var(--kendo-font-size, 0.875rem) * 7.25), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: var(--kendo-letter-spacing-tighter, normal)))</code></td>
+    <td><ul><li>1: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 9.5)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>2: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 8.75)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>3: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 8)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>4: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 7.25)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
@@ -1269,7 +1269,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-weights</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-weights, $kendo-font-weights )</code></td>
-    <td><code>(thin: 100, extra-light: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700)</code></td>
+    <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weights map</div></div>

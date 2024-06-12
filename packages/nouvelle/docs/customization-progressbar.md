@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
         value-border: k-get-theme-color( marsala, 500 )
     )
 )</code></td>
-    <td><code>(DEFAULT: (bg: #ededed, text: #494949, border: #d6d6d6, value-bg: #622331, value-text: #ffffff, value-border: #622331))</code></td>
+    <td><ul><li>DEFAULT: "bg":"#ededed","text":"#494949","border":"#d6d6d6","value-bg":"#622331","value-text":"#ffffff","value-border":"#622331"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the progressbar.</div></div>

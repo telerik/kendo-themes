@@ -549,7 +549,7 @@ The following table lists the available variables for customizing the Classic th
     md: k-spacing(8),
     lg: k-spacing(16)
 )</code></td>
-    <td><code>(sm: var(--kendo-spacing-4, 1rem), md: var(--kendo-spacing-8, 2rem), lg: var(--kendo-spacing-16, 4rem))</code></td>
+    <td><ul><li>sm: var(--kendo-spacing-4, 1rem)</li><li>md: var(--kendo-spacing-8, 2rem)</li><li>lg: var(--kendo-spacing-16, 4rem)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Avatar.</div></div>
@@ -559,7 +559,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-avatar-theme-colors</td>
     <td>Map</td>
     <td><code>$kendo-theme-colors</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #f35800), "secondary": var(--kendo-color-secondary, #b6b6b6), "tertiary": var(--kendo-color-tertiary, #03a9f4), "info": var(--kendo-color-info, #007bc3), "success": var(--kendo-color-success, #3ea44e), "warning": var(--kendo-color-warning, #ffa41f), "error": var(--kendo-color-error, #d92800), "dark": var(--kendo-color-dark, #404040), "light": var(--kendo-color-light, #ebebeb), "inverse": var(--kendo-color-dark, #404040))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>secondary: var(--kendo-color-secondary, #b6b6b6)</li><li>tertiary: var(--kendo-color-tertiary, #03a9f4)</li><li>info: var(--kendo-color-info, #007bc3)</li><li>success: var(--kendo-color-success, #3ea44e)</li><li>warning: var(--kendo-color-warning, #ffa41f)</li><li>error: var(--kendo-color-error, #d92800)</li><li>dark: var(--kendo-color-dark, #404040)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #404040)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Avatar.</div></div>
@@ -831,7 +831,7 @@ The following table lists the available variables for customizing the Classic th
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-0\.5, 0.125rem), padding-y: var(--kendo-spacing-0\.5, 0.125rem), font-size: var(--kendo-font-size-xs, inherit), line-height: 1, min-width: calc(1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 1px * 2)), md: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1, 0.25rem), font-size: var(--kendo-font-size-xs, inherit), line-height: 1, min-width: calc(1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)), lg: (padding-x: var(--kendo-spacing-1\.5, 0.375rem), padding-y: var(--kendo-spacing-1\.5, 0.375rem), font-size: var(--kendo-font-size-xs, inherit), line-height: 1, min-width: calc(1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 1px * 2)))</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-0\\.5, 0.125rem) * 2 + 1px * 2)"</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)"</li><li>lg: "padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size-xs, inherit)","line-height":1,"min-width":"calc(1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
@@ -1696,7 +1696,7 @@ The following table lists the available variables for customizing the Classic th
         line-height: $kendo-breadcrumb-lg-line-height
     )
 )</code></td>
-    <td><code>(sm: (link-padding-x: var(--kendo-spacing-2, 0.5rem), link-padding-y: var(--kendo-spacing-1, 0.25rem), icon-link-padding-x: var(--kendo-spacing-1\.5, 0.375rem), icon-link-padding-y: var(--kendo-spacing-1\.5, 0.375rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal)), md: (link-padding-x: var(--kendo-spacing-2, 0.5rem), link-padding-y: var(--kendo-spacing-1\.5, 0.375rem), icon-link-padding-x: var(--kendo-spacing-2, 0.5rem), icon-link-padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal)), lg: (link-padding-x: var(--kendo-spacing-2, 0.5rem), link-padding-y: var(--kendo-spacing-2, 0.5rem), icon-link-padding-x: var(--kendo-spacing-3, 0.75rem), icon-link-padding-y: var(--kendo-spacing-3, 0.75rem), font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal)))</code></td>
+    <td><ul><li>sm: "link-padding-x":"var(--kendo-spacing-2, 0.5rem)","link-padding-y":"var(--kendo-spacing-1, 0.25rem)","icon-link-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","icon-link-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>md: "link-padding-x":"var(--kendo-spacing-2, 0.5rem)","link-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","icon-link-padding-x":"var(--kendo-spacing-2, 0.5rem)","icon-link-padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "link-padding-x":"var(--kendo-spacing-2, 0.5rem)","link-padding-y":"var(--kendo-spacing-2, 0.5rem)","icon-link-padding-x":"var(--kendo-spacing-3, 0.75rem)","icon-link-padding-y":"var(--kendo-spacing-3, 0.75rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Breadcrumb.</div></div>
@@ -1955,7 +1955,7 @@ The following table lists the available variables for customizing the Classic th
         line-height: $kendo-button-lg-line-height
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-0\.5, 0.125rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal)), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-1, 0.25rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal)), lg: (padding-x: var(--kendo-spacing-3, 0.75rem), padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal)))</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Button.</div></div>
@@ -1968,7 +1968,7 @@ The following table lists the available variables for customizing the Classic th
     $kendo-theme-colors,
     ( "base": $kendo-base-bg )
 )</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #f35800), "secondary": var(--kendo-color-secondary, #b6b6b6), "tertiary": var(--kendo-color-tertiary, #03a9f4), "info": var(--kendo-color-info, #007bc3), "success": var(--kendo-color-success, #3ea44e), "warning": var(--kendo-color-warning, #ffa41f), "error": var(--kendo-color-error, #d92800), "dark": var(--kendo-color-dark, #404040), "light": var(--kendo-color-light, #ebebeb), "inverse": var(--kendo-color-dark, #404040), "base": var(--kendo-color-surface, #f0f0f0))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>secondary: var(--kendo-color-secondary, #b6b6b6)</li><li>tertiary: var(--kendo-color-tertiary, #03a9f4)</li><li>info: var(--kendo-color-info, #007bc3)</li><li>success: var(--kendo-color-success, #3ea44e)</li><li>warning: var(--kendo-color-warning, #ffa41f)</li><li>error: var(--kendo-color-error, #d92800)</li><li>dark: var(--kendo-color-dark, #404040)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #404040)</li><li>base: var(--kendo-color-surface, #f0f0f0)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>
@@ -3330,7 +3330,7 @@ The following table lists the available variables for customizing the Classic th
         cell-padding-y: $kendo-calendar-lg-cell-padding-x
     )
 )</code></td>
-    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-size: 28px, cell-padding-x: var(--kendo-spacing-0\.5, 0.125rem), cell-padding-y: var(--kendo-spacing-0\.5, 0.125rem)), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-size: 32px, cell-padding-x: var(--kendo-spacing-1, 0.25rem), cell-padding-y: var(--kendo-spacing-1, 0.25rem)), lg: (font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal), cell-size: 40px, cell-padding-x: var(--kendo-spacing-2, 0.5rem), cell-padding-y: var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-size":"28px","cell-padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","cell-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-size":"32px","cell-padding-x":"var(--kendo-spacing-1, 0.25rem)","cell-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","cell-size":"40px","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes Map of the Calendar.</div></div>
@@ -5489,7 +5489,7 @@ The following table lists the available variables for customizing the Classic th
         line-height: $kendo-chip-lg-line-height
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-0\.5, 0.125rem), font-size: var(--kendo-font-size, inherit), line-height: 1), md: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1, 0.25rem), font-size: var(--kendo-font-size, inherit), line-height: 1), lg: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1\.5, 0.375rem), font-size: var(--kendo-font-size, inherit), line-height: 1))</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size, inherit)","line-height":1</li><li>md: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":1</li><li>lg: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":1</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Chip.</div></div>
@@ -5515,7 +5515,7 @@ The following table lists the available variables for customizing the Classic th
     "warning": k-map-get( $kendo-theme-colors, "warning" ),
     "success": k-map-get( $kendo-theme-colors, "success" )
 )</code></td>
-    <td><code>("base": var(--kendo-color-base, #ebebeb), "error": var(--kendo-color-error, #d92800), "info": var(--kendo-color-info, #007bc3), "warning": var(--kendo-color-warning, #ffa41f), "success": var(--kendo-color-success, #3ea44e))</code></td>
+    <td><ul><li>base: var(--kendo-color-base, #ebebeb)</li><li>error: var(--kendo-color-error, #d92800)</li><li>info: var(--kendo-color-info, #007bc3)</li><li>warning: var(--kendo-color-warning, #ffa41f)</li><li>success: var(--kendo-color-success, #3ea44e)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Chip.</div></div>
@@ -5719,7 +5719,7 @@ The following table lists the available variables for customizing the Classic th
     md: k-spacing(1),
     lg: k-spacing(1)
 )</code></td>
-    <td><code>(sm: var(--kendo-spacing-1, 0.25rem), md: var(--kendo-spacing-1, 0.25rem), lg: var(--kendo-spacing-1, 0.25rem))</code></td>
+    <td><ul><li>sm: var(--kendo-spacing-1, 0.25rem)</li><li>md: var(--kendo-spacing-1, 0.25rem)</li><li>lg: var(--kendo-spacing-1, 0.25rem)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the Chip list.</div></div>
@@ -6199,11 +6199,856 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><code>(app-surface: #ffffff, on-app-surface: #272727, subtle: #666666, surface: #f0f0f0, surface-alt: #ffffff, border: #cacaca, border-alt: #b6b6b6, base-subtle: #f0f0f0, base-subtle-hover: #ebebeb, base-subtle-active: #dddddd, base: #ebebeb, base-hover: #dddddd, base-active: #d6d6d6, base-emphasis: #cacaca, base-on-subtle: #272727, on-base: #272727, base-on-surface: #272727, primary-subtle: #fff2eb, primary-subtle-hover: #ffe5d6, primary-subtle-active: #ffd8c2, primary: #f35800, primary-hover: #e05100, primary-active: #cc4a00, primary-emphasis: #ff8b47, primary-on-subtle: #3d1600, on-primary: #ffffff, primary-on-surface: #f35800, secondary-subtle: #cacaca, secondary-subtle-hover: #b6b6b6, secondary-subtle-active: #a3a3a3, secondary: #b6b6b6, secondary-hover: #a3a3a3, secondary-active: #8f8f8f, secondary-emphasis: #7a7a7a, secondary-on-subtle: #272727, on-secondary: #000000, secondary-on-surface: #8f8f8f, tertiary-subtle: #9cdffe, tertiary-subtle-hover: #72d1fe, tertiary-subtle-active: #49c4fd, tertiary: #03a9f4, tertiary-hover: #039be0, tertiary-active: #038ecd, tertiary-emphasis: #2cbbfd, tertiary-on-subtle: #01364e, on-tertiary: #ffffff, tertiary-on-surface: #0273a6, info-subtle: #cce5f3, info-subtle-hover: #a6d1ea, info-subtle-active: #6ab2dc, info: #007bc3, info-hover: #0071b3, info-active: #0067a4, info-emphasis: #409cd2, info-on-subtle: #002b44, on-info: #ffffff, info-on-surface: #005485, success-subtle: #bbdfc1, success-subtle-hover: #9ed1a6, success-subtle-active: #82c48c, success: #3ea44e, success-hover: #399748, success-active: #348a42, success-emphasis: #6ebb7a, success-on-subtle: #16391b, on-success: #ffffff, success-on-surface: #2a7035, warning-subtle: #ffdead, warning-subtle-hover: #ffd699, warning-subtle-active: #ffc670, warning: #ffa41f, warning-hover: #ff9800, warning-active: #eb8c00, warning-emphasis: #ffb240, warning-on-subtle: #593500, on-warning: #000000, warning-on-surface: #ffa41f, error-subtle: #f4c3b8, error-subtle-hover: #f2b4a6, error-subtle-active: #ec8e79, error: #d92800, error-hover: #c82500, error-active: #b62200, error-emphasis: #e35e40, error-on-subtle: #4c0e00, on-error: #ffffff, error-on-surface: #941b00, light-subtle: #f0f0f0, light-subtle-hover: #ebebeb, light-subtle-active: #dddddd, light: #ebebeb, light-hover: #dddddd, light-active: #d6d6d6, light-emphasis: #cacaca, light-on-subtle: #272727, on-light: #000000, light-on-surface: #ebebeb, dark-subtle: #cacaca, dark-subtle-hover: #b6b6b6, dark-subtle-active: #a3a3a3, dark: #404040, dark-hover: #333333, dark-active: #272727, dark-emphasis: #7a7a7a, dark-on-subtle: #000000, on-dark: #ffffff, dark-on-surface: #333333, inverse-subtle: #cacaca, inverse-subtle-hover: #b6b6b6, inverse-subtle-active: #a3a3a3, inverse: #404040, inverse-hover: #333333, inverse-active: #272727, inverse-emphasis: #7a7a7a, inverse-on-subtle: #000000, on-inverse: #ffffff, inverse-on-surface: #333333, series-a: #ff6358, series-a-bold: #bf4a42, series-a-bolder: #80322c, series-a-subtle: #ffb1ac, series-a-subtler: #ff8a82, series-b: #ffd246, series-b-bold: #bf9d35, series-b-bolder: #806923, series-b-subtle: #ffe9a2, series-b-subtler: #ffdd74, series-c: #78d237, series-c-bold: #5a9d29, series-c-bolder: #3c691c, series-c-subtle: #bbe99b, series-c-subtler: #9add69, series-d: #28b4c8, series-d-bold: #1e8796, series-d-bolder: #145a64, series-d-subtle: #93d9e3, series-d-subtler: #5ec7d6, series-e: #2d73f5, series-e-bold: #2256b8, series-e-bolder: #173a7b, series-e-subtle: #96b9fa, series-e-subtler: #6296f7, series-f: #9d40b0, series-f-bold: #80358e, series-f-bolder: #55235f, series-f-subtle: #d5a2df, series-f-subtler: #bf74ce)</code></td>
+    <td><ul><li>app-surface: #ffffff</li><li>on-app-surface: #272727</li><li>subtle: #666666</li><li>surface: #f0f0f0</li><li>surface-alt: #ffffff</li><li>border: #cacaca</li><li>border-alt: #b6b6b6</li><li>base-subtle: #f0f0f0</li><li>base-subtle-hover: #ebebeb</li><li>base-subtle-active: #dddddd</li><li>base: #ebebeb</li><li>base-hover: #dddddd</li><li>base-active: #d6d6d6</li><li>base-emphasis: #cacaca</li><li>base-on-subtle: #272727</li><li>on-base: #272727</li><li>base-on-surface: #272727</li><li>primary-subtle: #fff2eb</li><li>primary-subtle-hover: #ffe5d6</li><li>primary-subtle-active: #ffd8c2</li><li>primary: #f35800</li><li>primary-hover: #e05100</li><li>primary-active: #cc4a00</li><li>primary-emphasis: #ff8b47</li><li>primary-on-subtle: #3d1600</li><li>on-primary: #ffffff</li><li>primary-on-surface: #f35800</li><li>secondary-subtle: #cacaca</li><li>secondary-subtle-hover: #b6b6b6</li><li>secondary-subtle-active: #a3a3a3</li><li>secondary: #b6b6b6</li><li>secondary-hover: #a3a3a3</li><li>secondary-active: #8f8f8f</li><li>secondary-emphasis: #7a7a7a</li><li>secondary-on-subtle: #272727</li><li>on-secondary: #000000</li><li>secondary-on-surface: #8f8f8f</li><li>tertiary-subtle: #9cdffe</li><li>tertiary-subtle-hover: #72d1fe</li><li>tertiary-subtle-active: #49c4fd</li><li>tertiary: #03a9f4</li><li>tertiary-hover: #039be0</li><li>tertiary-active: #038ecd</li><li>tertiary-emphasis: #2cbbfd</li><li>tertiary-on-subtle: #01364e</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #0273a6</li><li>info-subtle: #cce5f3</li><li>info-subtle-hover: #a6d1ea</li><li>info-subtle-active: #6ab2dc</li><li>info: #007bc3</li><li>info-hover: #0071b3</li><li>info-active: #0067a4</li><li>info-emphasis: #409cd2</li><li>info-on-subtle: #002b44</li><li>on-info: #ffffff</li><li>info-on-surface: #005485</li><li>success-subtle: #bbdfc1</li><li>success-subtle-hover: #9ed1a6</li><li>success-subtle-active: #82c48c</li><li>success: #3ea44e</li><li>success-hover: #399748</li><li>success-active: #348a42</li><li>success-emphasis: #6ebb7a</li><li>success-on-subtle: #16391b</li><li>on-success: #ffffff</li><li>success-on-surface: #2a7035</li><li>warning-subtle: #ffdead</li><li>warning-subtle-hover: #ffd699</li><li>warning-subtle-active: #ffc670</li><li>warning: #ffa41f</li><li>warning-hover: #ff9800</li><li>warning-active: #eb8c00</li><li>warning-emphasis: #ffb240</li><li>warning-on-subtle: #593500</li><li>on-warning: #000000</li><li>warning-on-surface: #ffa41f</li><li>error-subtle: #f4c3b8</li><li>error-subtle-hover: #f2b4a6</li><li>error-subtle-active: #ec8e79</li><li>error: #d92800</li><li>error-hover: #c82500</li><li>error-active: #b62200</li><li>error-emphasis: #e35e40</li><li>error-on-subtle: #4c0e00</li><li>on-error: #ffffff</li><li>error-on-surface: #941b00</li><li>light-subtle: #f0f0f0</li><li>light-subtle-hover: #ebebeb</li><li>light-subtle-active: #dddddd</li><li>light: #ebebeb</li><li>light-hover: #dddddd</li><li>light-active: #d6d6d6</li><li>light-emphasis: #cacaca</li><li>light-on-subtle: #272727</li><li>on-light: #000000</li><li>light-on-surface: #ebebeb</li><li>dark-subtle: #cacaca</li><li>dark-subtle-hover: #b6b6b6</li><li>dark-subtle-active: #a3a3a3</li><li>dark: #404040</li><li>dark-hover: #333333</li><li>dark-active: #272727</li><li>dark-emphasis: #7a7a7a</li><li>dark-on-subtle: #000000</li><li>on-dark: #ffffff</li><li>dark-on-surface: #333333</li><li>inverse-subtle: #cacaca</li><li>inverse-subtle-hover: #b6b6b6</li><li>inverse-subtle-active: #a3a3a3</li><li>inverse: #404040</li><li>inverse-hover: #333333</li><li>inverse-active: #272727</li><li>inverse-emphasis: #7a7a7a</li><li>inverse-on-subtle: #000000</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #333333</li><li>series-a: #ff6358</li><li>series-a-bold: #bf4a42</li><li>series-a-bolder: #80322c</li><li>series-a-subtle: #ffb1ac</li><li>series-a-subtler: #ff8a82</li><li>series-b: #ffd246</li><li>series-b-bold: #bf9d35</li><li>series-b-bolder: #806923</li><li>series-b-subtle: #ffe9a2</li><li>series-b-subtler: #ffdd74</li><li>series-c: #78d237</li><li>series-c-bold: #5a9d29</li><li>series-c-bolder: #3c691c</li><li>series-c-subtle: #bbe99b</li><li>series-c-subtler: #9add69</li><li>series-d: #28b4c8</li><li>series-d-bold: #1e8796</li><li>series-d-bolder: #145a64</li><li>series-d-subtle: #93d9e3</li><li>series-d-subtler: #5ec7d6</li><li>series-e: #2d73f5</li><li>series-e-bold: #2256b8</li><li>series-e-bolder: #173a7b</li><li>series-e-subtle: #96b9fa</li><li>series-e-subtler: #6296f7</li><li>series-f: #9d40b0</li><li>series-f-bold: #80358e</li><li>series-f-bolder: #55235f</li><li>series-f-subtle: #d5a2df</li><li>series-f-subtler: #bf74ce</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
     </td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+        <div><b>Groups</b><div class="theme-variables-description">The groups of the $kendo-colors Map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>Group</td>
+    <td colspan="2">Values</td>
+    <td>Description</td>
+</tr>
+<tr>
+    <td>misc</td>
+    <td colspan="2"> app-surface, on-app-surface, subtle, surface, surface-alt, border, border-alt</td>
+    <td>The Misc variable group.</td>
+</tr>
+<tr>
+    <td>base</td>
+    <td colspan="2"> base-subtle, base-subtle-hover, base-subtle-active, base, base-hover, base-active, base-emphasis, base-on-subtle, on-base, base-on-surface</td>
+    <td>The Base variable group.</td>
+</tr>
+<tr>
+    <td>primary</td>
+    <td colspan="2"> primary-subtle, primary-subtle-hover, primary-subtle-active, primary, primary-hover, primary-active, primary-emphasis, primary-on-subtle, on-primary, primary-on-surface</td>
+    <td>The Primary variable group.</td>
+</tr>
+<tr>
+    <td>secondary</td>
+    <td colspan="2"> secondary-subtle, secondary-subtle-hover, secondary-subtle-active, secondary, secondary-hover, secondary-active, secondary-emphasis, secondary-on-subtle, on-secondary, secondary-on-surface</td>
+    <td>The Secondary variable group.</td>
+</tr>
+<tr>
+    <td>tertiary</td>
+    <td colspan="2"> tertiary-subtle, tertiary-subtle-hover, tertiary-subtle-active, tertiary, tertiary-hover, tertiary-active, tertiary-emphasis, tertiary-on-subtle, on-tertiary, tertiary-on-surface</td>
+    <td>The Tertiary variable group.</td>
+</tr>
+<tr>
+    <td>info</td>
+    <td colspan="2"> info-subtle, info-subtle-hover, info-subtle-active, info, info-hover, info-active, info-emphasis, info-on-subtle, on-info, info-on-surface</td>
+    <td>The Info variable group.</td>
+</tr>
+<tr>
+    <td>success</td>
+    <td colspan="2"> success-subtle, success-subtle-hover, success-subtle-active, success, success-hover, success-active, success-emphasis, success-on-subtle, on-success, success-on-surface</td>
+    <td>The Success variable group.</td>
+</tr>
+<tr>
+    <td>warning</td>
+    <td colspan="2"> warning-subtle, warning-subtle-hover, warning-subtle-active, warning, warning-hover, warning-active, warning-emphasis, warning-on-subtle, on-warning, warning-on-surface</td>
+    <td>The Warning variable group.</td>
+</tr>
+<tr>
+    <td>error</td>
+    <td colspan="2"> error-subtle, error-subtle-hover, error-subtle-active, error, error-hover, error-active, error-emphasis, error-on-subtle, on-error, error-on-surface</td>
+    <td>The Error variable group.</td>
+</tr>
+<tr>
+    <td>light</td>
+    <td colspan="2"> light-subtle, light-subtle-hover, light-subtle-active, light, light-hover, light-active, light-emphasis, light-on-subtle, on-light, light-on-surface</td>
+    <td>The Light variable group.</td>
+</tr>
+<tr>
+    <td>dark</td>
+    <td colspan="2"> dark-subtle, dark-subtle-hover, dark-subtle-active, dark, dark-hover, dark-active, dark-emphasis, dark-on-subtle, on-dark, dark-on-surface</td>
+    <td>The Dark variable group.</td>
+</tr>
+<tr>
+    <td>inverse</td>
+    <td colspan="2"> inverse-subtle, inverse-subtle-hover, inverse-subtle-active, inverse, inverse-hover, inverse-active, inverse-emphasis, inverse-on-subtle, on-inverse, inverse-on-surface</td>
+    <td>The Inverse variable group.</td>
+</tr>
+<tr>
+    <td>series-a</td>
+    <td colspan="2"> series-a, series-a-bold, series-a-bolder, series-a-subtle, series-a-subtler</td>
+    <td>The Series A variable group.</td>
+</tr>
+<tr>
+    <td>series-b</td>
+    <td colspan="2"> series-b, series-b-bold, series-b-bolder, series-b-subtle, series-b-subtler</td>
+    <td>The Series B variable group.</td>
+</tr>
+<tr>
+    <td>series-c</td>
+    <td colspan="2"> series-c, series-c-bold, series-c-bolder, series-c-subtle, series-c-subtler</td>
+    <td>The Series C variable group.</td>
+</tr>
+<tr>
+    <td>series-d</td>
+    <td colspan="2"> series-d, series-d-bold, series-d-bolder, series-d-subtle, series-d-subtler</td>
+    <td>The Series D variable group.</td>
+</tr>
+<tr>
+    <td>series-e</td>
+    <td colspan="2"> series-e, series-e-bold, series-e-bolder, series-e-subtle, series-e-subtler</td>
+    <td>The Series E variable group.</td>
+</tr>
+<tr>
+    <td>series-f</td>
+    <td colspan="2"> series-f, series-f-bold, series-f-bolder, series-f-subtle, series-f-subtler</td>
+    <td>The Series F variable group.</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+        <div><b>Properties</b><div class="theme-variables-description">The properties of the $kendo-colors Map</div></div>
+    </td>
+</tr>
+<tr>
+    <td>Type</td>
+    <td>Name</td>
+    <td colspan="2">Description</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>app-surface</td>
+    <td colspan="2">The background color of the application.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-app-surface</td>
+    <td colspan="2">The text color of the application.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>subtle</td>
+    <td colspan="2">The subtle text color.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>surface</td>
+    <td colspan="2">The background color of the components' chrome area.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>surface-alt</td>
+    <td colspan="2">The alternative background color of the components' chrome area.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>border</td>
+    <td colspan="2">Тhe border color of the application.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>border-alt</td>
+    <td colspan="2">Тhe alternative border color of the application.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base-subtle</td>
+    <td colspan="2">The base subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base-subtle-hover</td>
+    <td colspan="2">The base subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base-subtle-active</td>
+    <td colspan="2">The base subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base</td>
+    <td colspan="2">The base background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base-hover</td>
+    <td colspan="2">The base background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base-active</td>
+    <td colspan="2">The base background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base-emphasis</td>
+    <td colspan="2">The emphasized base color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base-on-subtle</td>
+    <td colspan="2">The text color variable for content on base subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-base</td>
+    <td colspan="2">The text color variable for content on base.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>base-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary-subtle</td>
+    <td colspan="2">The primary subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary-subtle-hover</td>
+    <td colspan="2">The primary subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary-subtle-active</td>
+    <td colspan="2">The primary subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary</td>
+    <td colspan="2">The primary background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary-hover</td>
+    <td colspan="2">The primary background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary-active</td>
+    <td colspan="2">The primary background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary-emphasis</td>
+    <td colspan="2">The emphasized primary color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary-on-subtle</td>
+    <td colspan="2">The text color variable for content on primary subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-primary</td>
+    <td colspan="2">The text color variable for content on primary.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>primary-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary-subtle</td>
+    <td colspan="2">The secondary subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary-subtle-hover</td>
+    <td colspan="2">The secondary subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary-subtle-active</td>
+    <td colspan="2">The secondary subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary</td>
+    <td colspan="2">The secondary background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary-hover</td>
+    <td colspan="2">The secondary background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary-active</td>
+    <td colspan="2">The secondary background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary-emphasis</td>
+    <td colspan="2">The emphasized secondary color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary-on-subtle</td>
+    <td colspan="2">The text color variable for content on secondary subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-secondary</td>
+    <td colspan="2">The text color variable for content on secondary.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>secondary-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary-subtle</td>
+    <td colspan="2">The tertiary subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary-subtle-hover</td>
+    <td colspan="2">The tertiary subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary-subtle-active</td>
+    <td colspan="2">The tertiary subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary</td>
+    <td colspan="2">The tertiary background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary-hover</td>
+    <td colspan="2">The tertiary background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary-active</td>
+    <td colspan="2">The tertiary background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary-emphasis</td>
+    <td colspan="2">The emphasized tertiary color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary-on-subtle</td>
+    <td colspan="2">The text color variable for content on tertiary subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-tertiary</td>
+    <td colspan="2">The text color variable for content on tertiary.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>tertiary-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info-subtle</td>
+    <td colspan="2">The info subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info-subtle-hover</td>
+    <td colspan="2">The info subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info-subtle-active</td>
+    <td colspan="2">The info subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info</td>
+    <td colspan="2">The info background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info-hover</td>
+    <td colspan="2">The info background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info-active</td>
+    <td colspan="2">The info background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info-emphasis</td>
+    <td colspan="2">The emphasized info color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info-on-subtle</td>
+    <td colspan="2">The text color variable for content on info subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-info</td>
+    <td colspan="2">The text color variable for content on info.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>info-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success-subtle</td>
+    <td colspan="2">The success subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success-subtle-hover</td>
+    <td colspan="2">The success subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success-subtle-active</td>
+    <td colspan="2">The success subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success</td>
+    <td colspan="2">The success background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success-hover</td>
+    <td colspan="2">The success background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success-active</td>
+    <td colspan="2">The success background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success-emphasis</td>
+    <td colspan="2">The emphasized success color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success-on-subtle</td>
+    <td colspan="2">The text color variable for content on success subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-success</td>
+    <td colspan="2">The text color variable for content on success.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>success-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning-subtle</td>
+    <td colspan="2">The warning subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning-subtle-hover</td>
+    <td colspan="2">The warning subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning-subtle-active</td>
+    <td colspan="2">The warning subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning</td>
+    <td colspan="2">The warning background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning-hover</td>
+    <td colspan="2">The warning background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning-active</td>
+    <td colspan="2">The warning background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning-emphasis</td>
+    <td colspan="2">The emphasized warning color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning-on-subtle</td>
+    <td colspan="2">The text color variable for content on warning subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-warning</td>
+    <td colspan="2">The text color variable for content on warning.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>warning-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error-subtle</td>
+    <td colspan="2">The error subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error-subtle-hover</td>
+    <td colspan="2">The error subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error-subtle-active</td>
+    <td colspan="2">The error subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error</td>
+    <td colspan="2">The error background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error-hover</td>
+    <td colspan="2">The error background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error-active</td>
+    <td colspan="2">The error background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error-emphasis</td>
+    <td colspan="2">The emphasized error color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error-on-subtle</td>
+    <td colspan="2">The text color variable for content on error subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-error</td>
+    <td colspan="2">The text color variable for content on error.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>error-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light-subtle</td>
+    <td colspan="2">The light subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light-subtle-hover</td>
+    <td colspan="2">The light subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light-subtle-active</td>
+    <td colspan="2">The light subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light</td>
+    <td colspan="2">The light background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light-hover</td>
+    <td colspan="2">The light background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light-active</td>
+    <td colspan="2">The light background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light-emphasis</td>
+    <td colspan="2">The emphasized light color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light-on-subtle</td>
+    <td colspan="2">The text color variable for content on light subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-light</td>
+    <td colspan="2">The text color variable for content on light.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>light-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark-subtle</td>
+    <td colspan="2">The dark subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark-subtle-hover</td>
+    <td colspan="2">The dark subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark-subtle-active</td>
+    <td colspan="2">The dark subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark</td>
+    <td colspan="2">The dark background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark-hover</td>
+    <td colspan="2">The dark background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark-active</td>
+    <td colspan="2">The dark background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark-emphasis</td>
+    <td colspan="2">The emphasized dark color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark-on-subtle</td>
+    <td colspan="2">The text color variable for content on dark subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-dark</td>
+    <td colspan="2">The text color variable for content on dark.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>dark-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse-subtle</td>
+    <td colspan="2">The inverse subtle background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse-subtle-hover</td>
+    <td colspan="2">The inverse subtle background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse-subtle-active</td>
+    <td colspan="2">The inverse subtle background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse</td>
+    <td colspan="2">The inverse background color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse-hover</td>
+    <td colspan="2">The inverse background color variable for the hover state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse-active</td>
+    <td colspan="2">The inverse background color variable for the active state.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse-emphasis</td>
+    <td colspan="2">The emphasized inverse color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse-on-subtle</td>
+    <td colspan="2">The text color variable for content on inverse subtle.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>on-inverse</td>
+    <td colspan="2">The text color variable for content on inverse.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>inverse-on-surface</td>
+    <td colspan="2">The text color variable for content on surface.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-a</td>
+    <td colspan="2">The series A color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-a-bold</td>
+    <td colspan="2">The bold series A color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-a-bolder</td>
+    <td colspan="2">The bolder series A color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-a-subtle</td>
+    <td colspan="2">The subtle series A color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-a-subtler</td>
+    <td colspan="2">The subtler series A color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-b</td>
+    <td colspan="2">The series B color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-b-bold</td>
+    <td colspan="2">The bold series B color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-b-bolder</td>
+    <td colspan="2">The bolder series B color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-b-subtle</td>
+    <td colspan="2">The subtle series B color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-b-subtler</td>
+    <td colspan="2">The subtler series B color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-c</td>
+    <td colspan="2">The series C color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-c-bold</td>
+    <td colspan="2">The bold series C color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-c-bolder</td>
+    <td colspan="2">The bolder series C color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-c-subtle</td>
+    <td colspan="2">The subtle series C color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-c-subtler</td>
+    <td colspan="2">The subtler series C color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-d</td>
+    <td colspan="2">The series D color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-d-bold</td>
+    <td colspan="2">The bold series D color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-d-bolder</td>
+    <td colspan="2">The bolder series D color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-d-subtle</td>
+    <td colspan="2">The subtle series D color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-d-subtler</td>
+    <td colspan="2">The subtler series D color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-e</td>
+    <td colspan="2">The series E color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-e-bold</td>
+    <td colspan="2">The bold series E color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-e-bolder</td>
+    <td colspan="2">The bolder series E color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-e-subtle</td>
+    <td colspan="2">The subtle series E color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-e-subtler</td>
+    <td colspan="2">The subtler series E color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-f</td>
+    <td colspan="2">The series F color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-f-bold</td>
+    <td colspan="2">The bold series F color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-f-bolder</td>
+    <td colspan="2">The bolder series F color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-f-subtle</td>
+    <td colspan="2">The subtle series F color variable.</td>
+</tr>
+<tr>
+    <td>Color</td>
+    <td>series-f-subtler</td>
+    <td colspan="2">The subtler series F color variable.</td>
 </tr>
 <tr>
     <td>$kendo-color-primary</td>
@@ -7043,7 +7888,7 @@ The following table lists the available variables for customizing the Classic th
     "light": k-map-get($kendo-theme-colors, "light"),
     "dark": k-map-get($kendo-theme-colors, "dark")
 )</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #f35800), "light": var(--kendo-color-light, #ebebeb), "dark": var(--kendo-color-dark, #404040))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>dark: var(--kendo-color-dark, #404040)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Dialog.</div></div>
@@ -8203,7 +9048,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-elevation</td>
     <td>Map</td>
     <td><code>$_default-elevation</code></td>
-    <td><code>(1: (0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12)), 2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)), 3: (0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12)), 4: (0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)), 5: (0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12)), 6: (0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12)), 7: (0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12)), 8: (0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12)), 9: (0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12)))</code></td>
+    <td><ul><li>1: 0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>2: 0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>3: 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>4: 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>5: 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>6: 0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>7: 0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>8: 0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>9: 0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
@@ -9443,7 +10288,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-fab-theme-colors</td>
     <td>Map</td>
     <td><code>$kendo-theme-colors</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #f35800), "secondary": var(--kendo-color-secondary, #b6b6b6), "tertiary": var(--kendo-color-tertiary, #03a9f4), "info": var(--kendo-color-info, #007bc3), "success": var(--kendo-color-success, #3ea44e), "warning": var(--kendo-color-warning, #ffa41f), "error": var(--kendo-color-error, #d92800), "dark": var(--kendo-color-dark, #404040), "light": var(--kendo-color-light, #ebebeb), "inverse": var(--kendo-color-dark, #404040))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>secondary: var(--kendo-color-secondary, #b6b6b6)</li><li>tertiary: var(--kendo-color-tertiary, #03a9f4)</li><li>info: var(--kendo-color-info, #007bc3)</li><li>success: var(--kendo-color-success, #3ea44e)</li><li>warning: var(--kendo-color-warning, #ffa41f)</li><li>error: var(--kendo-color-error, #d92800)</li><li>dark: var(--kendo-color-dark, #404040)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #404040)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the FAB.</div></div>
@@ -9466,7 +10311,7 @@ The following table lists the available variables for customizing the Classic th
         padding-y: $kendo-fab-lg-padding-y
     )
 )</code></td>
-    <td><code>(sm: (padding-x: calc(var(--kendo-spacing-4, 1rem) / 2), padding-y: calc(var(--kendo-spacing-4, 1rem) / 2)), md: (padding-x: var(--kendo-spacing-4, 1rem), padding-y: var(--kendo-spacing-4, 1rem)), lg: (padding-x: calc(var(--kendo-spacing-4, 1rem) * 1.5), padding-y: calc(var(--kendo-spacing-4, 1rem) * 1.5)))</code></td>
+    <td><ul><li>sm: "padding-x":"calc(var(--kendo-spacing-4, 1rem) / 2)","padding-y":"calc(var(--kendo-spacing-4, 1rem) / 2)"</li><li>md: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "padding-x":"calc(var(--kendo-spacing-4, 1rem) * 1.5)","padding-y":"calc(var(--kendo-spacing-4, 1rem) * 1.5)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map for the FAB.</div></div>
@@ -10276,7 +11121,7 @@ The following table lists the available variables for customizing the Classic th
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 )</code></td>
-    <td><code>(sm: (form-rows-spacing: 1em), md: (form-rows-spacing: 1em), lg: (form-rows-spacing: 1em))</code></td>
+    <td><ul><li>sm: "form-rows-spacing":"1em"</li><li>md: "form-rows-spacing":"1em"</li><li>lg: "form-rows-spacing":"1em"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>
@@ -11721,7 +12566,7 @@ The following table lists the available variables for customizing the Classic th
         button-padding-y: $kendo-input-lg-padding-y
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-0\.5, 0.125rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), button-padding-x: var(--kendo-spacing-0\.5, 0.125rem), button-padding-y: var(--kendo-spacing-0\.5, 0.125rem)), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-1, 0.25rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), button-padding-x: var(--kendo-spacing-1, 0.25rem), button-padding-y: var(--kendo-spacing-1, 0.25rem)), lg: (padding-x: var(--kendo-spacing-3, 0.75rem), padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal), button-padding-x: var(--kendo-spacing-2, 0.5rem), button-padding-y: var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-0\\.5, 0.125rem)","button-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-1, 0.25rem)","button-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
@@ -12560,7 +13405,7 @@ The following table lists the available variables for customizing the Classic th
         group-item-line-height: null
     )
 )</code></td>
-    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), header-padding-x: var(--kendo-spacing-2, 0.5rem), header-padding-y: var(--kendo-spacing-0\.5, 0.125rem), header-font-size: null, header-line-height: null, item-padding-x: var(--kendo-spacing-2, 0.5rem), item-padding-y: var(--kendo-spacing-0\.5, 0.125rem), item-font-size: null, item-line-height: null, group-item-padding-x: var(--kendo-spacing-2, 0.5rem), group-item-padding-y: var(--kendo-spacing-0\.5, 0.125rem), group-item-font-size: null, group-item-line-height: null), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), header-padding-x: var(--kendo-spacing-2, 0.5rem), header-padding-y: var(--kendo-spacing-1, 0.25rem), header-font-size: null, header-line-height: null, item-padding-x: var(--kendo-spacing-2, 0.5rem), item-padding-y: var(--kendo-spacing-1, 0.25rem), item-font-size: null, item-line-height: null, group-item-padding-x: var(--kendo-spacing-2, 0.5rem), group-item-padding-y: var(--kendo-spacing-1, 0.25rem), group-item-font-size: null, group-item-line-height: null), lg: (font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal), header-padding-x: var(--kendo-spacing-2, 0.5rem), header-padding-y: var(--kendo-spacing-1\.5, 0.375rem), header-font-size: null, header-line-height: null, item-padding-x: var(--kendo-spacing-3, 0.75rem), item-padding-y: var(--kendo-spacing-2, 0.5rem), item-font-size: null, item-line-height: null, group-item-padding-x: var(--kendo-spacing-2, 0.5rem), group-item-padding-y: var(--kendo-spacing-1\.5, 0.375rem), group-item-font-size: null, group-item-line-height: null))</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","group-item-font-size":null,"group-item-line-height":null</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1, 0.25rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-1, 0.25rem)","group-item-font-size":null,"group-item-line-height":null</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","header-font-size":null,"header-line-height":null,"item-padding-x":"var(--kendo-spacing-3, 0.75rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","item-font-size":null,"item-line-height":null,"group-item-padding-x":"var(--kendo-spacing-2, 0.5rem)","group-item-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","group-item-font-size":null,"group-item-line-height":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.</div></div>
@@ -14050,7 +14895,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-notification-theme-colors</td>
     <td>Map</td>
     <td><code>$kendo-theme-colors</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #f35800), "secondary": var(--kendo-color-secondary, #b6b6b6), "tertiary": var(--kendo-color-tertiary, #03a9f4), "info": var(--kendo-color-info, #007bc3), "success": var(--kendo-color-success, #3ea44e), "warning": var(--kendo-color-warning, #ffa41f), "error": var(--kendo-color-error, #d92800), "dark": var(--kendo-color-dark, #404040), "light": var(--kendo-color-light, #ebebeb), "inverse": var(--kendo-color-dark, #404040))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>secondary: var(--kendo-color-secondary, #b6b6b6)</li><li>tertiary: var(--kendo-color-tertiary, #03a9f4)</li><li>info: var(--kendo-color-info, #007bc3)</li><li>success: var(--kendo-color-success, #3ea44e)</li><li>warning: var(--kendo-color-warning, #ffa41f)</li><li>error: var(--kendo-color-error, #d92800)</li><li>dark: var(--kendo-color-dark, #404040)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #404040)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Notification.</div></div>
@@ -14060,7 +14905,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-notification-theme</td>
     <td>Map</td>
     <td><code>notification-theme( $kendo-notification-theme-colors )</code></td>
-    <td><code>("inverse": (color: var(--kendo-color-on-inverse, #ffffff), background-color: var(--kendo-color-dark, #404040), border: var(--kendo-color-dark, #404040)), "light": (color: var(--kendo-color-on-light, #000000), background-color: var(--kendo-color-light, #ebebeb), border: var(--kendo-color-light, #ebebeb)), "dark": (color: var(--kendo-color-on-dark, #ffffff), background-color: var(--kendo-color-dark, #404040), border: var(--kendo-color-dark, #404040)), "error": (color: var(--kendo-color-on-error, #ffffff), background-color: var(--kendo-color-error, #d92800), border: var(--kendo-color-error, #d92800)), "warning": (color: var(--kendo-color-on-warning, #000000), background-color: var(--kendo-color-warning, #ffa41f), border: var(--kendo-color-warning, #ffa41f)), "success": (color: var(--kendo-color-on-success, #ffffff), background-color: var(--kendo-color-success, #3ea44e), border: var(--kendo-color-success, #3ea44e)), "info": (color: var(--kendo-color-on-info, #ffffff), background-color: var(--kendo-color-info, #007bc3), border: var(--kendo-color-info, #007bc3)), "tertiary": (color: var(--kendo-color-on-tertiary, #ffffff), background-color: var(--kendo-color-tertiary, #03a9f4), border: var(--kendo-color-tertiary, #03a9f4)), "secondary": (color: var(--kendo-color-on-secondary, #000000), background-color: var(--kendo-color-secondary, #b6b6b6), border: var(--kendo-color-secondary, #b6b6b6)), "primary": (color: var(--kendo-color-on-primary, #ffffff), background-color: var(--kendo-color-primary, #f35800), border: var(--kendo-color-primary, #f35800)))</code></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-dark, #404040)","border":"var(--kendo-color-dark, #404040)"</li><li>light: "color":"var(--kendo-color-on-light, #000000)","background-color":"var(--kendo-color-light, #ebebeb)","border":"var(--kendo-color-light, #ebebeb)"</li><li>dark: "color":"var(--kendo-color-on-dark, #ffffff)","background-color":"var(--kendo-color-dark, #404040)","border":"var(--kendo-color-dark, #404040)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #d92800)","border":"var(--kendo-color-error, #d92800)"</li><li>warning: "color":"var(--kendo-color-on-warning, #000000)","background-color":"var(--kendo-color-warning, #ffa41f)","border":"var(--kendo-color-warning, #ffa41f)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #3ea44e)","border":"var(--kendo-color-success, #3ea44e)"</li><li>info: "color":"var(--kendo-color-on-info, #ffffff)","background-color":"var(--kendo-color-info, #007bc3)","border":"var(--kendo-color-info, #007bc3)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #03a9f4)","border":"var(--kendo-color-tertiary, #03a9f4)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #000000)","background-color":"var(--kendo-color-secondary, #b6b6b6)","border":"var(--kendo-color-secondary, #b6b6b6)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #f35800)","border":"var(--kendo-color-primary, #f35800)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Notification.</div></div>
@@ -15012,7 +15857,7 @@ The following table lists the available variables for customizing the Classic th
         pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1, 0.25rem), item-group-spacing: var(--kendo-spacing-3, 0.75rem), item-min-width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\.5, 0.125rem) * 2 + 2px), pager-dropdown-width: 5em), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-2, 0.5rem), item-group-spacing: var(--kendo-spacing-3\.5, 0.875rem), item-min-width: calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px), pager-dropdown-width: 5em), lg: (padding-x: var(--kendo-spacing-2\.5, 0.625rem), padding-y: var(--kendo-spacing-2\.5, 0.625rem), item-group-spacing: var(--kendo-spacing-4, 1rem), item-min-width: calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 2px), pager-dropdown-width: 5em))</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-spacing":"var(--kendo-spacing-3, 0.75rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-0\\.5, 0.125rem) * 2 + 2px)","pager-dropdown-width":"5em"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","item-group-spacing":"var(--kendo-spacing-3\\.5, 0.875rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)","pager-dropdown-width":"5em"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-group-spacing":"var(--kendo-spacing-4, 1rem)","item-min-width":"calc(var(--kendo-line-height-lg, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 2px)","pager-dropdown-width":"5em"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
@@ -15042,7 +15887,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-ash-gray</td>
     <td>Map</td>
     <td><code>$_default-palette-ash-gray</code></td>
-    <td><code>(white: #ffffff, 1: #fafafa, 2: #f0f0f0, 3: #ebebeb, 4: #dddddd, 5: #d6d6d6, 6: #cacaca, 7: #b6b6b6, 8: #a3a3a3, 9: #8f8f8f, 10: #7a7a7a, 11: #666666, 12: #525252, 13: #404040, 14: #333333, 15: #272727, black: #000000)</code></td>
+    <td><ul><li>1: #fafafa</li><li>2: #f0f0f0</li><li>3: #ebebeb</li><li>4: #dddddd</li><li>5: #d6d6d6</li><li>6: #cacaca</li><li>7: #b6b6b6</li><li>8: #a3a3a3</li><li>9: #8f8f8f</li><li>10: #7a7a7a</li><li>11: #666666</li><li>12: #525252</li><li>13: #404040</li><li>14: #333333</li><li>15: #272727</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Ash Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
@@ -15052,7 +15897,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-tangerine-orange</td>
     <td>Map</td>
     <td><code>$_default-palette-tangerine-orange</code></td>
-    <td><code>(1: #fff2eb, 2: #ffe5d6, 3: #ffd8c2, 4: #ffcbad, 5: #ffbe99, 6: #ffa570, 7: #ff8b47, 8: #ff711f, 9: #f35800, 10: #e05100, 11: #cc4a00, 12: #b94300, 13: #a53c00, 14: #7a2d00, 15: #3d1600)</code></td>
+    <td><ul><li>1: #fff2eb</li><li>2: #ffe5d6</li><li>3: #ffd8c2</li><li>4: #ffcbad</li><li>5: #ffbe99</li><li>6: #ffa570</li><li>7: #ff8b47</li><li>8: #ff711f</li><li>9: #f35800</li><li>10: #e05100</li><li>11: #cc4a00</li><li>12: #b94300</li><li>13: #a53c00</li><li>14: #7a2d00</li><li>15: #3d1600</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Tangerine Orange Palette provides colors to the Primary variable group.</div></div>
@@ -15062,7 +15907,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-dodger-blue</td>
     <td>Map</td>
     <td><code>$_default-palette-dodger-blue</code></td>
-    <td><code>(1: #ebf8ff, 2: #d7f2ff, 3: #b8e8fe, 4: #9cdffe, 5: #72d1fe, 6: #49c4fd, 7: #2cbbfd, 8: #0db1fd, 9: #03a9f4, 10: #039be0, 11: #038ecd, 12: #0280b9, 13: #0273a6, 14: #014c6f, 15: #01364e)</code></td>
+    <td><ul><li>1: #ebf8ff</li><li>2: #d7f2ff</li><li>3: #b8e8fe</li><li>4: #9cdffe</li><li>5: #72d1fe</li><li>6: #49c4fd</li><li>7: #2cbbfd</li><li>8: #0db1fd</li><li>9: #03a9f4</li><li>10: #039be0</li><li>11: #038ecd</li><li>12: #0280b9</li><li>13: #0273a6</li><li>14: #014c6f</li><li>15: #01364e</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Dodger Blue Palette provides colors to the Tertiary variable group.</div></div>
@@ -15072,7 +15917,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-grass-green</td>
     <td>Map</td>
     <td><code>$_default-palette-grass-green</code></td>
-    <td><code>(1: #f1f8f2, 2: #e3f2e6, 3: #d8eddc, 4: #bbdfc1, 5: #9ed1a6, 6: #82c48c, 7: #6ebb7a, 8: #4db25c, 9: #3ea44e, 10: #399748, 11: #348a42, 12: #2f7d3b, 13: #2a7035, 14: #1f5126, 15: #16391b)</code></td>
+    <td><ul><li>1: #f1f8f2</li><li>2: #e3f2e6</li><li>3: #d8eddc</li><li>4: #bbdfc1</li><li>5: #9ed1a6</li><li>6: #82c48c</li><li>7: #6ebb7a</li><li>8: #4db25c</li><li>9: #3ea44e</li><li>10: #399748</li><li>11: #348a42</li><li>12: #2f7d3b</li><li>13: #2a7035</li><li>14: #1f5126</li><li>15: #16391b</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Grass Green Palette provides colors to the Success variable group.</div></div>
@@ -15082,7 +15927,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-lake-blue</td>
     <td>Map</td>
     <td><code>$_default-palette-lake-blue</code></td>
-    <td><code>(1: #eef6fb, 2: #deeef7, 3: #cce5f3, 4: #a6d1ea, 5: #8bc3e4, 6: #6ab2dc, 7: #409cd2, 8: #208ccb, 9: #007bc3, 10: #0071b3, 11: #0067a4, 12: #005d94, 13: #005485, 14: #004166, 15: #002b44)</code></td>
+    <td><ul><li>1: #eef6fb</li><li>2: #deeef7</li><li>3: #cce5f3</li><li>4: #a6d1ea</li><li>5: #8bc3e4</li><li>6: #6ab2dc</li><li>7: #409cd2</li><li>8: #208ccb</li><li>9: #007bc3</li><li>10: #0071b3</li><li>11: #0067a4</li><li>12: #005d94</li><li>13: #005485</li><li>14: #004166</li><li>15: #002b44</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lake Blue Palette provides colors to the Info variable group.</div></div>
@@ -15092,7 +15937,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-honey-yellow</td>
     <td>Map</td>
     <td><code>$_default-palette-honey-yellow</code></td>
-    <td><code>(1: #fff7eb, 2: #ffefd6, 3: #ffe7c2, 4: #ffdead, 5: #ffd699, 6: #ffc670, 7: #ffb240, 8: #ffa41f, 9: #ff9800, 10: #eb8c00, 11: #d68000, 12: #c27400, 13: #ad6700, 14: #854f00, 15: #593500)</code></td>
+    <td><ul><li>1: #fff7eb</li><li>2: #ffefd6</li><li>3: #ffe7c2</li><li>4: #ffdead</li><li>5: #ffd699</li><li>6: #ffc670</li><li>7: #ffb240</li><li>8: #ffa41f</li><li>9: #ff9800</li><li>10: #eb8c00</li><li>11: #d68000</li><li>12: #c27400</li><li>13: #ad6700</li><li>14: #854f00</li><li>15: #593500</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Honey Yellow Palette provides colors to the Warning variable group.</div></div>
@@ -15102,7 +15947,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-brick-red</td>
     <td>Map</td>
     <td><code>$_default-palette-brick-red</code></td>
-    <td><code>(1: #fcf0ed, 2: #f9e1dc, 3: #f7d4cc, 4: #f4c3b8, 5: #f2b4a6, 6: #ec8e79, 7: #e35e40, 8: #de4320, 9: #d92800, 10: #c82500, 11: #b62200, 12: #a51e00, 13: #941b00, 14: #701500, 15: #4c0e00)</code></td>
+    <td><ul><li>1: #fcf0ed</li><li>2: #f9e1dc</li><li>3: #f7d4cc</li><li>4: #f4c3b8</li><li>5: #f2b4a6</li><li>6: #ec8e79</li><li>7: #e35e40</li><li>8: #de4320</li><li>9: #d92800</li><li>10: #c82500</li><li>11: #b62200</li><li>12: #a51e00</li><li>13: #941b00</li><li>14: #701500</li><li>15: #4c0e00</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Brick Red Palette provides colors to the Error variable group.</div></div>
@@ -15112,7 +15957,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-coral</td>
     <td>Map</td>
     <td><code>$_default-palette-coral</code></td>
-    <td><code>(1: #fff6f5, 2: #ffeceb, 3: #ffdedb, 4: #ffc8c4, 5: #ffb1ac, 6: #ff9d97, 7: #ff8a82, 8: #ff766d, 9: #ff6358, 10: #ea5a51, 11: #d45349, 12: #bf4a42, 13: #a33f38, 14: #80322c, 15: #5c201c)</code></td>
+    <td><ul><li>1: #fff6f5</li><li>2: #ffeceb</li><li>3: #ffdedb</li><li>4: #ffc8c4</li><li>5: #ffb1ac</li><li>6: #ff9d97</li><li>7: #ff8a82</li><li>8: #ff766d</li><li>9: #ff6358</li><li>10: #ea5a51</li><li>11: #d45349</li><li>12: #bf4a42</li><li>13: #a33f38</li><li>14: #80322c</li><li>15: #5c201c</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Coral Palette provides colors to the Series A variable group.</div></div>
@@ -15122,7 +15967,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-pineapple-yellow</td>
     <td>Map</td>
     <td><code>$_default-palette-pineapple-yellow</code></td>
-    <td><code>(1: #fffaeb, 2: #fff7db, 3: #fff3cc, 4: #ffeeb8, 5: #ffe9a2, 6: #ffe38b, 7: #ffdd74, 8: #ffd85d, 9: #ffd246, 10: #eac040, 11: #d4af3b, 12: #bf9d35, 13: #a0832c, 14: #806923, 15: #403412)</code></td>
+    <td><ul><li>1: #fffaeb</li><li>2: #fff7db</li><li>3: #fff3cc</li><li>4: #ffeeb8</li><li>5: #ffe9a2</li><li>6: #ffe38b</li><li>7: #ffdd74</li><li>8: #ffd85d</li><li>9: #ffd246</li><li>10: #eac040</li><li>11: #d4af3b</li><li>12: #bf9d35</li><li>13: #a0832c</li><li>14: #806923</li><li>15: #403412</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Pineapple Yellow provides colors to the Series B variable group.</div></div>
@@ -15132,7 +15977,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-apple-green</td>
     <td>Map</td>
     <td><code>$_default-palette-apple-green</code></td>
-    <td><code>(1: #f3fbee, 2: #e9f8de, 3: #def4ce, 4: #d2f0bd, 5: #bbe99b, 6: #aae382, 7: #9add69, 8: #89d750, 9: #78d237, 10: #6ec032, 11: #64AF2E, 12: #5a9d29, 13: #4a8221, 14: #3c691c, 15: #1c300d)</code></td>
+    <td><ul><li>1: #f3fbee</li><li>2: #e9f8de</li><li>3: #def4ce</li><li>4: #d2f0bd</li><li>5: #bbe99b</li><li>6: #aae382</li><li>7: #9add69</li><li>8: #89d750</li><li>9: #78d237</li><li>10: #6ec032</li><li>11: #64AF2E</li><li>12: #5a9d29</li><li>13: #4a8221</li><li>14: #3c691c</li><li>15: #1c300d</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Apple Green provides colors to the Series C variable group.</div></div>
@@ -15142,7 +15987,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-pacific-blue</td>
     <td>Map</td>
     <td><code>$_default-palette-pacific-blue</code></td>
-    <td><code>(1: #ebf8fa, 2: #d6f1f5, 3: #c2e9ef, 4: #aee2ea, 5: #93d9e3, 6: #75d0db, 7: #5ec7d6, 8: #43becf, 9: #28b4c8, 10: #24a6b7, 11: #2197a6, 12: #1e8796, 13: #197480, 14: #145a64, 15: #0a2e33)</code></td>
+    <td><ul><li>1: #ebf8fa</li><li>2: #d6f1f5</li><li>3: #c2e9ef</li><li>4: #aee2ea</li><li>5: #93d9e3</li><li>6: #75d0db</li><li>7: #5ec7d6</li><li>8: #43becf</li><li>9: #28b4c8</li><li>10: #24a6b7</li><li>11: #2197a6</li><li>12: #1e8796</li><li>13: #197480</li><li>14: #145a64</li><li>15: #0a2e33</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Pacific Blue provides colors to the Series D variable group.</div></div>
@@ -15152,7 +15997,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-bright-blue</td>
     <td>Map</td>
     <td><code>$_default-palette-bright-blue</code></td>
-    <td><code>(1: #ecf2fe, 2: #d8e5fd, 3: #c5d8fc, 4: #b1cbfb, 5: #96b9fa, 6: #7ba7f9, 7: #6296f7, 8: #4684f6, 9: #2d73f5, 10: #2969e1, 11: #2660cc, 12: #2256b8, 13: #1d499a, 14: #173a7b, 15: #0c1e40)</code></td>
+    <td><ul><li>1: #ecf2fe</li><li>2: #d8e5fd</li><li>3: #c5d8fc</li><li>4: #b1cbfb</li><li>5: #96b9fa</li><li>6: #7ba7f9</li><li>7: #6296f7</li><li>8: #4684f6</li><li>9: #2d73f5</li><li>10: #2969e1</li><li>11: #2660cc</li><li>12: #2256b8</li><li>13: #1d499a</li><li>14: #173a7b</li><li>15: #0c1e40</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Bright Blue provides colors to the Series E variable group.</div></div>
@@ -15162,7 +16007,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-palette-orchid-purple</td>
     <td>Map</td>
     <td><code>$_default-palette-orchid-purple</code></td>
-    <td><code>(1: #f8f0fa, 2: #f1e1f5, 3: #e7caed, 4: #ddb3e5, 5: #d5a2df, 6: #c98ad6, 7: #bf74ce, 8: #b45dc6, 9: #9d40b0, 10: #9c40ae, 11: #8e3b9e, 12: #80358e, 13: #672b73, 14: #55235f, 15: #28112d)</code></td>
+    <td><ul><li>1: #f8f0fa</li><li>2: #f1e1f5</li><li>3: #e7caed</li><li>4: #ddb3e5</li><li>5: #d5a2df</li><li>6: #c98ad6</li><li>7: #bf74ce</li><li>8: #b45dc6</li><li>9: #9d40b0</li><li>10: #9c40ae</li><li>11: #8e3b9e</li><li>12: #80358e</li><li>13: #672b73</li><li>14: #55235f</li><li>15: #28112d</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Orchid Purple provides colors to the Series F variable group.</div></div>
@@ -17842,7 +18687,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-border-radii</td>
     <td>Map</td>
     <td><code>k-map-merge($_default-border-radii, $kendo-border-radii)</code></td>
-    <td><code>(none: 0px, xs: 1px, sm: 0.125rem, md: 0.25rem, lg: 0.375rem, xl: 0.5rem, xxl: 0.75rem, xxxl: 1rem, full: 9999px)</code></td>
+    <td><ul><li>none: 0px</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.375rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
@@ -17998,7 +18843,7 @@ The following table lists the available variables for customizing the Classic th
         ripple-size: $kendo-radio-lg-ripple-size
     )
 )</code></td>
-    <td><code>(sm: (size: var(--kendo-spacing-3, 0.75rem), glyph-size: var(--kendo-spacing-2\.5, 0.625rem), ripple-size: 300%), md: (size: var(--kendo-spacing-4, 1rem), glyph-size: var(--kendo-spacing-3\.5, 0.875rem), ripple-size: 300%), lg: (size: var(--kendo-spacing-5, 1.25rem), glyph-size: var(--kendo-spacing-4\.5, 1.125rem), ripple-size: 300%))</code></td>
+    <td><ul><li>sm: "size":"var(--kendo-spacing-3, 0.75rem)","glyph-size":"var(--kendo-spacing-2\\.5, 0.625rem)","ripple-size":"300%"</li><li>md: "size":"var(--kendo-spacing-4, 1rem)","glyph-size":"var(--kendo-spacing-3\\.5, 0.875rem)","ripple-size":"300%"</li><li>lg: "size":"var(--kendo-spacing-5, 1.25rem)","glyph-size":"var(--kendo-spacing-4\\.5, 1.125rem)","ripple-size":"300%"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different RadioButton sizes.</div></div>
@@ -20008,7 +20853,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-spacing</td>
     <td>Map</td>
     <td><code>$_default-spacing</code></td>
-    <td><code>(0: 0px, 1px: 1px, 0.5: 0.125rem, 1: 0.25rem, 1.5: 0.375rem, 2: 0.5rem, 2.5: 0.625rem, 3: 0.75rem, 3.5: 0.875rem, 4: 1rem, 4.5: 1.125rem, 5: 1.25rem, 5.5: 1.375rem, 6: 1.5rem, 6.5: 1.625rem, 7: 1.75rem, 7.5: 1.875rem, 8: 2rem, 9: 2.25rem, 10: 2.5rem, 11: 2.75rem, 12: 3rem, 13: 3.25rem, 14: 3.5rem, 15: 3.75rem, 16: 4rem, 17: 4.25rem, 18: 4.5rem, 19: 4.75rem, 20: 5rem, 21: 5.25rem, 22: 5.5rem, 23: 5.75rem, 24: 6rem, 25: 7rem, 26: 8rem, 27: 9rem, 28: 10rem, 29: 11rem, 30: 12rem)</code></td>
+    <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Spacing map.</div></div>
@@ -21922,7 +22767,7 @@ The following table lists the available variables for customizing the Classic th
     md: ( font-size: 12px, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: 6px ),
     lg: ( font-size: 12px, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: 8px )
 )</code></td>
-    <td><code>(sm: (font-size: 12px, track-width: 48px, track-height: 26px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 3px, label-offset: 4px), md: (font-size: 12px, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: 6px), lg: (font-size: 12px, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: 8px))</code></td>
+    <td><ul><li>sm: "font-size":"12px","track-width":"48px","track-height":"26px","thumb-width":"20px","thumb-height":"20px","thumb-offset":"3px","label-offset":"4px"</li><li>md: "font-size":"12px","track-width":"56px","track-height":"30px","thumb-width":"24px","thumb-height":"24px","thumb-offset":"3px","label-offset":"6px"</li><li>lg: "font-size":"12px","track-width":"64px","track-height":"34px","thumb-width":"28px","thumb-height":"28px","thumb-offset":"3px","label-offset":"8px"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different Switch sizes.</div></div>
@@ -22541,7 +23386,7 @@ The following table lists the available variables for customizing the Classic th
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )</code></td>
-    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: var(--kendo-spacing-1, 0.25rem), cell-padding-y: var(--kendo-spacing-1, 0.25rem)), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: var(--kendo-spacing-2, 0.5rem), cell-padding-y: var(--kendo-spacing-2, 0.5rem)), lg: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), cell-padding-x: var(--kendo-spacing-2, 0.5rem), cell-padding-y: var(--kendo-spacing-2\.5, 0.625rem)))</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-spacing-1, 0.25rem)","cell-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
@@ -25007,7 +25852,7 @@ The following table lists the available variables for customizing the Classic th
         spacing: $kendo-toolbar-lg-spacing
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1, 0.25rem), spacing: var(--kendo-spacing-1\.5, 0.375rem)), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-2, 0.5rem), spacing: var(--kendo-spacing-2, 0.5rem)), lg: (padding-x: var(--kendo-spacing-2\.5, 0.625rem), padding-y: var(--kendo-spacing-2\.5, 0.625rem), spacing: var(--kendo-spacing-2\.5, 0.625rem)))</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","spacing":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","spacing":"var(--kendo-spacing-2, 0.5rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","spacing":"var(--kendo-spacing-2\\.5, 0.625rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Toolbar.</div></div>
@@ -25177,7 +26022,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-tooltip-theme-colors</td>
     <td>Map</td>
     <td><code>$kendo-theme-colors</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #f35800), "secondary": var(--kendo-color-secondary, #b6b6b6), "tertiary": var(--kendo-color-tertiary, #03a9f4), "info": var(--kendo-color-info, #007bc3), "success": var(--kendo-color-success, #3ea44e), "warning": var(--kendo-color-warning, #ffa41f), "error": var(--kendo-color-error, #d92800), "dark": var(--kendo-color-dark, #404040), "light": var(--kendo-color-light, #ebebeb), "inverse": var(--kendo-color-dark, #404040))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>secondary: var(--kendo-color-secondary, #b6b6b6)</li><li>tertiary: var(--kendo-color-tertiary, #03a9f4)</li><li>info: var(--kendo-color-info, #007bc3)</li><li>success: var(--kendo-color-success, #3ea44e)</li><li>warning: var(--kendo-color-warning, #ffa41f)</li><li>error: var(--kendo-color-error, #d92800)</li><li>dark: var(--kendo-color-dark, #404040)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #404040)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Tooltip.</div></div>
@@ -25187,7 +26032,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-tooltip-theme</td>
     <td>Map</td>
     <td><code>tooltip-theme( $kendo-tooltip-theme-colors )</code></td>
-    <td><code>("inverse": (color: var(--kendo-color-on-inverse, #ffffff), background-color: var(--kendo-color-dark, #404040), border: var(--kendo-color-dark, #404040)), "light": (color: var(--kendo-color-on-light, #000000), background-color: var(--kendo-color-light, #ebebeb), border: var(--kendo-color-light, #ebebeb)), "dark": (color: var(--kendo-color-on-dark, #ffffff), background-color: var(--kendo-color-dark, #404040), border: var(--kendo-color-dark, #404040)), "error": (color: var(--kendo-color-on-error, #ffffff), background-color: var(--kendo-color-error, #d92800), border: var(--kendo-color-error, #d92800)), "warning": (color: var(--kendo-color-on-warning, #000000), background-color: var(--kendo-color-warning, #ffa41f), border: var(--kendo-color-warning, #ffa41f)), "success": (color: var(--kendo-color-on-success, #ffffff), background-color: var(--kendo-color-success, #3ea44e), border: var(--kendo-color-success, #3ea44e)), "info": (color: var(--kendo-color-on-info, #ffffff), background-color: var(--kendo-color-info, #007bc3), border: var(--kendo-color-info, #007bc3)), "tertiary": (color: var(--kendo-color-on-tertiary, #ffffff), background-color: var(--kendo-color-tertiary, #03a9f4), border: var(--kendo-color-tertiary, #03a9f4)), "secondary": (color: var(--kendo-color-on-secondary, #000000), background-color: var(--kendo-color-secondary, #b6b6b6), border: var(--kendo-color-secondary, #b6b6b6)), "primary": (color: var(--kendo-color-on-primary, #ffffff), background-color: var(--kendo-color-primary, #f35800), border: var(--kendo-color-primary, #f35800)))</code></td>
+    <td><ul><li>inverse: "color":"var(--kendo-color-on-inverse, #ffffff)","background-color":"var(--kendo-color-dark, #404040)","border":"var(--kendo-color-dark, #404040)"</li><li>light: "color":"var(--kendo-color-on-light, #000000)","background-color":"var(--kendo-color-light, #ebebeb)","border":"var(--kendo-color-light, #ebebeb)"</li><li>dark: "color":"var(--kendo-color-on-dark, #ffffff)","background-color":"var(--kendo-color-dark, #404040)","border":"var(--kendo-color-dark, #404040)"</li><li>error: "color":"var(--kendo-color-on-error, #ffffff)","background-color":"var(--kendo-color-error, #d92800)","border":"var(--kendo-color-error, #d92800)"</li><li>warning: "color":"var(--kendo-color-on-warning, #000000)","background-color":"var(--kendo-color-warning, #ffa41f)","border":"var(--kendo-color-warning, #ffa41f)"</li><li>success: "color":"var(--kendo-color-on-success, #ffffff)","background-color":"var(--kendo-color-success, #3ea44e)","border":"var(--kendo-color-success, #3ea44e)"</li><li>info: "color":"var(--kendo-color-on-info, #ffffff)","background-color":"var(--kendo-color-info, #007bc3)","border":"var(--kendo-color-info, #007bc3)"</li><li>tertiary: "color":"var(--kendo-color-on-tertiary, #ffffff)","background-color":"var(--kendo-color-tertiary, #03a9f4)","border":"var(--kendo-color-tertiary, #03a9f4)"</li><li>secondary: "color":"var(--kendo-color-on-secondary, #000000)","background-color":"var(--kendo-color-secondary, #b6b6b6)","border":"var(--kendo-color-secondary, #b6b6b6)"</li><li>primary: "color":"var(--kendo-color-on-primary, #ffffff)","background-color":"var(--kendo-color-primary, #f35800)","border":"var(--kendo-color-primary, #f35800)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The generated theme colors map for the Tooltip.</div></div>
@@ -25542,7 +26387,7 @@ The following table lists the available variables for customizing the Classic th
         checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
     )
 )</code></td>
-    <td><code>(sm: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), item-padding-x: var(--kendo-spacing-2, 0.5rem), item-padding-y: var(--kendo-spacing-0\.5, 0.125rem), checkbox-padding-x: var(--kendo-spacing-1, 0.25rem), checkbox-padding-y: var(--kendo-spacing-0\.5, 0.125rem)), md: (font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal), item-padding-x: var(--kendo-spacing-2, 0.5rem), item-padding-y: var(--kendo-spacing-1, 0.25rem), checkbox-padding-x: var(--kendo-spacing-1, 0.25rem), checkbox-padding-y: var(--kendo-spacing-0\.5, 0.125rem)), lg: (font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal), item-padding-x: var(--kendo-spacing-3, 0.75rem), item-padding-y: var(--kendo-spacing-2, 0.5rem), checkbox-padding-x: var(--kendo-spacing-1, 0.25rem), checkbox-padding-y: null))</code></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)"</li><li>lg: "font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)","item-padding-x":"var(--kendo-spacing-3, 0.75rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TreeView.</div></div>
@@ -26201,7 +27046,7 @@ The following table lists the available variables for customizing the Classic th
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><code>(h1: (font-size: calc(var(--kendo-font-size, 0.875rem) * 4), font-family: var(--kendo-font-family, inherit), line-height: 74px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h2: (font-size: calc(var(--kendo-font-size, 0.875rem) * 3), font-family: var(--kendo-font-family, inherit), line-height: 56px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h3: (font-size: calc(var(--kendo-font-size, 0.875rem) * 2.5), font-family: var(--kendo-font-family, inherit), line-height: 42px, font-weight: var(--kendo-font-weight-normal, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h4: (font-size: calc(var(--kendo-font-size, 0.875rem) * 2), font-family: var(--kendo-font-family, inherit), line-height: 40px, font-weight: var(--kendo-font-weight-bold, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h5: (font-size: calc(var(--kendo-font-size, 0.875rem) * 1.5), font-family: var(--kendo-font-family, inherit), line-height: 28px, font-weight: var(--kendo-font-weight-bold, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)), h6: (font-size: var(--kendo-font-size, inherit), font-family: var(--kendo-font-family, inherit), line-height: 20px, font-weight: var(--kendo-font-weight-bold, normal), letter-spacing: null, margin: 0 0 var(--kendo-font-size, inherit)))</code></td>
+    <td><ul><li>h1: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 4)","font-family":"var(--kendo-font-family, inherit)","line-height":"74px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":null,"margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h2: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 3)","font-family":"var(--kendo-font-family, inherit)","line-height":"56px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":null,"margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h3: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 2.5)","font-family":"var(--kendo-font-family, inherit)","line-height":"42px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":null,"margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h4: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 2)","font-family":"var(--kendo-font-family, inherit)","line-height":"40px","font-weight":"var(--kendo-font-weight-bold, normal)","letter-spacing":null,"margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h5: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 1.5)","font-family":"var(--kendo-font-family, inherit)","line-height":"28px","font-weight":"var(--kendo-font-weight-bold, normal)","letter-spacing":null,"margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h6: "font-size":"var(--kendo-font-size, inherit)","font-family":"var(--kendo-font-family, inherit)","line-height":"20px","font-weight":"var(--kendo-font-weight-bold, normal)","letter-spacing":null,"margin":"0 0 var(--kendo-font-size, inherit)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map</div></div>
@@ -26630,7 +27475,7 @@ The following table lists the available variables for customizing the Classic th
         letter-spacing: $kendo-display4-letter-spacing
     )
 )</code></td>
-    <td><code>(1: (font-size: calc(var(--kendo-font-size, 0.875rem) * 8), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 2: (font-size: calc(var(--kendo-font-size, 0.875rem) * 7), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 3: (font-size: calc(var(--kendo-font-size, 0.875rem) * 6), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null), 4: (font-size: calc(var(--kendo-font-size, 0.875rem) * 5), font-family: var(--kendo-font-family, inherit), line-height: 1.2, font-weight: var(--kendo-font-weight-light, normal), letter-spacing: null))</code></td>
+    <td><ul><li>1: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 8)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":null</li><li>2: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 7)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":null</li><li>3: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 6)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":null</li><li>4: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 5)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map</div></div>
@@ -27000,7 +27845,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-font-sizes</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
-    <td><code>(xxs: 0.5rem, xs: 0.625rem, sm: 0.75rem, md: 0.875rem, lg: 1rem, xl: 1.25rem)</code></td>
+    <td><ul><li>xxs: 0.5rem</li><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -27010,7 +27855,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-line-heights, $kendo-line-heights )</code></td>
-    <td><code>(xs: 1, sm: 1.25, md: 1.4285714286, lg: 1.5)</code></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.5</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
@@ -27020,7 +27865,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-font-weights</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-weights, $kendo-font-weights )</code></td>
-    <td><code>(thin: 100, extra-light: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700)</code></td>
+    <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weights map</div></div>
@@ -27030,7 +27875,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
-    <td><code>(tightest: -0.15px, tighter: -0.1px, tight: -0.5px, normal: 0px, wide: 0.5px, wider: 0.1px, widest: 0.15px)</code></td>
+    <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacings map</div></div>
@@ -27040,7 +27885,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-font-families</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-families, $kendo-font-families )</code></td>
-    <td><code>(sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans), serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville), sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"), monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace))</code></td>
+    <td><ul><li>sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</li><li>serif: "Times New Roman", Georgia, Garamond, Palatino, Baskerville</li><li>sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</li><li>monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>
@@ -27664,7 +28509,7 @@ The following table lists the available variables for customizing the Classic th
     md: 800px,
     lg: 1200px
 )</code></td>
-    <td><code>(sm: 300px, md: 800px, lg: 1200px)</code></td>
+    <td><ul><li>sm: 300px</li><li>md: 800px</li><li>lg: 1200px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map of the width for the different Window sizes.</div></div>
@@ -27678,7 +28523,7 @@ The following table lists the available variables for customizing the Classic th
     "light": k-map-get($kendo-theme-colors, "light"),
     "dark": k-map-get($kendo-theme-colors, "dark")
 )</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #f35800), "light": var(--kendo-color-light, #ebebeb), "dark": var(--kendo-color-dark, #404040))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>dark: var(--kendo-color-dark, #404040)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Window.</div></div>
