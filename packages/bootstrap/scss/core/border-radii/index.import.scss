@@ -32,6 +32,7 @@ $kendo-border-radius-full: 50rem !default;
 /// The global radii Map.
 /// @group radii
 $kendo-border-radii: (
+    none: $kendo-border-radius-none,
     xs: $kendo-border-radius-xs,
     sm: $kendo-border-radius-sm,
     md: $kendo-border-radius-md,
