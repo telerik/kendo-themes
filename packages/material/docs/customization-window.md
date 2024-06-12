@@ -315,7 +315,7 @@ The following table lists the available variables for customization.
     md: 800px,
     lg: 1200px
 )</code></td>
-    <td><code>(sm: 300px, md: 800px, lg: 1200px)</code></td>
+    <td><ul><li>sm: 300px</li><li>md: 800px</li><li>lg: 1200px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map of the width for the different Window sizes.</div></div>
@@ -329,7 +329,7 @@ The following table lists the available variables for customization.
     "light": k-map-get($kendo-theme-colors, "light"),
     "dark": k-map-get($kendo-theme-colors, "dark")
 )</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #3f51b5), "light": var(--kendo-color-light, #f5f5f5), "dark": var(--kendo-color-dark, #424242))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>dark: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Window.</div></div>

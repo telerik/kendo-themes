@@ -471,7 +471,7 @@ The following table lists the available variables for customization.
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 )</code></td>
-    <td><code>(sm: (form-rows-spacing: 1em), md: (form-rows-spacing: 1em), lg: (form-rows-spacing: 1em))</code></td>
+    <td><ul><li>sm: "form-rows-spacing":"1em"</li><li>md: "form-rows-spacing":"1em"</li><li>lg: "form-rows-spacing":"1em"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>

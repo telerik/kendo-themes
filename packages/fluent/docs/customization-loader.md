@@ -439,7 +439,7 @@ The following table lists the available variables for customization.
     warning: warning,
     info: info
  )</code></td>
-    <td><code>(primary: primary, secondary: secondary, tertiary: tertiary, error: error, success: success, warning: warning, info: info)</code></td>
+    <td><ul><li>primary: primary</li><li>secondary: secondary</li><li>tertiary: tertiary</li><li>error: error</li><li>success: success</li><li>warning: warning</li><li>info: info</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme variations for the Loader.</div></div>
@@ -449,7 +449,7 @@ The following table lists the available variables for customization.
     <td>$kendo-loader-theme-colors</td>
     <td>Map</td>
     <td><code>()</code></td>
-    <td><code>(primary: (bg: var(--kendo-color-primary, #0078d4), text: null, border: null), secondary: (bg: var(--kendo-color-secondary, #979593), text: null, border: null), tertiary: (bg: var(--kendo-color-tertiary, #2b88d8), text: null, border: null), error: (bg: var(--kendo-color-error, #c2666b), text: null, border: null), success: (bg: var(--kendo-color-success, #55a554), text: null, border: null), warning: (bg: var(--kendo-color-warning, #ffc80a), text: null, border: null), info: (bg: var(--kendo-color-info, #0a7eff), text: null, border: null), dark: (bg: var(--kendo-color-dark, #323130), text: null, border: null), light: (bg: var(--kendo-color-light, #d2d0ce), text: null, border: null))</code></td>
+    <td><ul><li>primary: "bg":"var(--kendo-color-primary, #0078d4)","text":null,"border":null</li><li>secondary: "bg":"var(--kendo-color-secondary, #979593)","text":null,"border":null</li><li>tertiary: "bg":"var(--kendo-color-tertiary, #2b88d8)","text":null,"border":null</li><li>error: "bg":"var(--kendo-color-error, #c2666b)","text":null,"border":null</li><li>success: "bg":"var(--kendo-color-success, #55a554)","text":null,"border":null</li><li>warning: "bg":"var(--kendo-color-warning, #ffc80a)","text":null,"border":null</li><li>info: "bg":"var(--kendo-color-info, #0a7eff)","text":null,"border":null</li><li>dark: "bg":"var(--kendo-color-dark, #323130)","text":null,"border":null</li><li>light: "bg":"var(--kendo-color-light, #d2d0ce)","text":null,"border":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Loader variations.</div></div>

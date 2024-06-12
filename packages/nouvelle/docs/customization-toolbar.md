@@ -117,7 +117,7 @@ The following table lists the available variables for customization.
         spacing: $kendo-toolbar-lg-spacing
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-1, 0.25rem), padding-y: var(--kendo-spacing-1, 0.25rem), spacing: var(--kendo-spacing-1, 0.25rem)), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-2, 0.5rem), spacing: var(--kendo-spacing-2, 0.5rem)), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: var(--kendo-spacing-2, 0.5rem)))</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","spacing":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","spacing":"var(--kendo-spacing-2, 0.5rem)"</li><li>lg: "padding-x":"0.625rem","padding-y":"0.625rem","spacing":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the toolbar.</div></div>

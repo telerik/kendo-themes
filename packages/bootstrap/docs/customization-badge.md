@@ -273,7 +273,7 @@ The following table lists the available variables for customization.
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 0.325em, padding-y: 0.175em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 0.175em * 2 + 1px * 2)), md: (padding-x: 0.65em, padding-y: 0.35em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 0.35em * 2 + 1px * 2)), lg: (padding-x: 0.975em, padding-y: 0.525em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 0.525em * 2 + 1px * 2)))</code></td>
+    <td><ul><li>sm: "padding-x":"0.325em","padding-y":"0.175em","font-size":"0.75em","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.65em","padding-y":"0.35em","font-size":"0.75em","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.975em","padding-y":"0.525em","font-size":"0.75em","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>

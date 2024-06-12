@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-border-radii</td>
     <td>Map</td>
     <td><code>k-map-merge($_default-border-radii, $kendo-border-radii)</code></td>
-    <td><code>(none: 0, xs: 1px, sm: 0.125rem, md: 0.25rem, lg: 0.5rem, xl: 0.5rem, xxl: 0.75rem, xxxl: 1rem, full: 9999px, DEFAULT: 0.25rem, 0: 0)</code></td>
+    <td><ul><li>0: 0</li><li>none: 0</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.5rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li><li>DEFAULT: 0.25rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>

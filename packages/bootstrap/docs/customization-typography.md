@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-sizes</td>
     <td>Map</td>
     <td><code>$_default-font-sizes</code></td>
-    <td><code>(xs: 0.75rem, sm: 0.875rem, md: 1rem, lg: 1.25rem, xl: 1.5rem)</code></td>
+    <td><ul><li>xs: 0.75rem</li><li>sm: 0.875rem</li><li>md: 1rem</li><li>lg: 1.25rem</li><li>xl: 1.5rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>$_default-line-heights</code></td>
-    <td><code>(xs: 1, sm: 1.25, md: 1.5, lg: 2)</code></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.5</li><li>lg: 2</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
@@ -251,7 +251,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-weights</td>
     <td>Map</td>
     <td><code>$_default-font-weights</code></td>
-    <td><code>(light: 300, normal: 400, medium: 500, semibold: 600, bold: 700)</code></td>
+    <td><ul><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weights map</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-families</td>
     <td>Map</td>
     <td><code>$_default-font-families</code></td>
-    <td><code>(sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"), monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace))</code></td>
+    <td><ul><li>sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</li><li>monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>
@@ -680,7 +680,7 @@ The following table lists the available variables for customization.
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><code>(h1: (font-size: 2.5rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h2: (font-size: 2rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h3: (font-size: 1.75rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h4: (font-size: 1.5rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h5: (font-size: 1.25rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem), h6: (font-size: 1rem, font-family: null, line-height: 1.2, font-weight: 500, letter-spacing: null, margin: 0 0 0.5rem))</code></td>
+    <td><ul><li>h1: "font-size":"2.5rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h2: "font-size":"2rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h3: "font-size":"1.75rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h4: "font-size":"1.5rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h5: "font-size":"1.25rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h6: "font-size":"1rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
@@ -1240,7 +1240,7 @@ The following table lists the available variables for customization.
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
-    <td><code>(tightest: -0.15px, tighter: -0.1px, tight: -0.5px, normal: 0px, wide: 0.5px, wider: 0.1px, widest: 0.15px)</code></td>
+    <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacings map</div></div>

@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
         letter-spacing: $kendo-display4-letter-spacing
     )
 )</code></td>
-    <td><code>(1: (font-size: 5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 2: (font-size: 4.5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 3: (font-size: 4rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null), 4: (font-size: 3.5rem, font-family: null, line-height: 1.2, font-weight: 300, letter-spacing: null))</code></td>
+    <td><ul><li>1: "font-size":"5rem","font-family":null,"line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>2: "font-size":"4.5rem","font-family":null,"line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>3: "font-size":"4rem","font-family":null,"line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>4: "font-size":"3.5rem","font-family":null,"line-height":1.2,"font-weight":300,"letter-spacing":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map</div></div>

@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
         spacing: k-spacing(1)
     )
 )</code></td>
-    <td><code>(sm: (spacing: var(--kendo-spacing-1, 0.25rem)), md: (spacing: var(--kendo-spacing-1, 0.25rem)), lg: (spacing: var(--kendo-spacing-1, 0.25rem)))</code></td>
+    <td><ul><li>sm: "spacing":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "spacing":"var(--kendo-spacing-1, 0.25rem)"</li><li>lg: "spacing":"var(--kendo-spacing-1, 0.25rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>

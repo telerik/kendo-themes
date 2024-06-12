@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-sizes</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
-    <td><code>(xxs: 0.5rem, xs: 0.75rem, sm: 0.875rem, md: 1rem, lg: 1.25rem, xl: 1.5rem)</code></td>
+    <td><ul><li>xxs: 0.5rem</li><li>xs: 0.75rem</li><li>sm: 0.875rem</li><li>md: 1rem</li><li>lg: 1.25rem</li><li>xl: 1.5rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-line-heights, $kendo-line-heights )</code></td>
-    <td><code>(xs: 1, sm: 1.25, md: 1.5, lg: 1.75)</code></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.5</li><li>lg: 1.75</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
@@ -411,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-weights</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-weights, $kendo-font-weights )</code></td>
-    <td><code>(thin: 100, extra-light: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700)</code></td>
+    <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weights map</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
-    <td><code>(tightest: -0.15px, tighter: -0.1px, tight: -0.5px, normal: 0px, wide: 0.5px, wider: 0.1px, widest: 0.15px)</code></td>
+    <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacings map</div></div>
@@ -431,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-families</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-families, $kendo-font-families )</code></td>
-    <td><code>(sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans), serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville), sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"), monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace))</code></td>
+    <td><ul><li>sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</li><li>serif: "Times New Roman", Georgia, Garamond, Palatino, Baskerville</li><li>sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</li><li>monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>

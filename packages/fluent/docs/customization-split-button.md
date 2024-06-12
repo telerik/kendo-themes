@@ -125,7 +125,7 @@ The following table lists the available variables for customization.
     md: $kendo-split-button-md-arrow-padding-y,
     lg: $kendo-split-button-lg-arrow-padding-y
 )</code></td>
-    <td><code>(sm: var(--kendo-spacing-1, 0.25rem), md: var(--kendo-spacing-1\.5, 0.375rem), lg: var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><ul><li>sm: var(--kendo-spacing-1, 0.25rem)</li><li>md: var(--kendo-spacing-1\.5, 0.375rem)</li><li>lg: var(--kendo-spacing-2, 0.5rem)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the SplitButton.</div></div>

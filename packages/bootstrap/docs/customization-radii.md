@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     xxxl: $kendo-border-radius-xxxl,
     full: $kendo-border-radius-full
 )</code></td>
-    <td><code>(none: 0px, xs: 0.125rem, sm: 0.25rem, md: 0.375rem, lg: 0.5rem, xl: 0.75rem, xxl: 1rem, xxxl: 2rem, full: 50rem)</code></td>
+    <td><ul><li>none: 0px</li><li>xs: 0.125rem</li><li>sm: 0.25rem</li><li>md: 0.375rem</li><li>lg: 0.5rem</li><li>xl: 0.75rem</li><li>xxl: 1rem</li><li>xxxl: 2rem</li><li>full: 50rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>

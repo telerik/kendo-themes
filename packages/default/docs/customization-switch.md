@@ -85,7 +85,7 @@ The following table lists the available variables for customization.
     md: ( font-size: 10px, track-width: 60px, track-height: 30px, thumb-width: 30px, thumb-height: 30px, thumb-offset: 0px, label-offset: 6px ),
     lg: ( font-size: 10px, track-width: 68px, track-height: 34px, thumb-width: 34px, thumb-height: 34px, thumb-offset: 0px, label-offset: 8px )
 )</code></td>
-    <td><code>(sm: (font-size: 10px, track-width: 52px, track-height: 26px, thumb-width: 26px, thumb-height: 26px, thumb-offset: 0px, label-offset: 4px), md: (font-size: 10px, track-width: 60px, track-height: 30px, thumb-width: 30px, thumb-height: 30px, thumb-offset: 0px, label-offset: 6px), lg: (font-size: 10px, track-width: 68px, track-height: 34px, thumb-width: 34px, thumb-height: 34px, thumb-offset: 0px, label-offset: 8px))</code></td>
+    <td><ul><li>sm: "font-size":"10px","track-width":"52px","track-height":"26px","thumb-width":"26px","thumb-height":"26px","thumb-offset":"0px","label-offset":"4px"</li><li>md: "font-size":"10px","track-width":"60px","track-height":"30px","thumb-width":"30px","thumb-height":"30px","thumb-offset":"0px","label-offset":"6px"</li><li>lg: "font-size":"10px","track-width":"68px","track-height":"34px","thumb-width":"34px","thumb-height":"34px","thumb-offset":"0px","label-offset":"8px"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different Switch sizes.</div></div>

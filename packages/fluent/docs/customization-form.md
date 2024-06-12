@@ -501,7 +501,7 @@ The following table lists the available variables for customization.
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 )</code></td>
-    <td><code>(sm: (form-rows-spacing: var(--kendo-spacing-3, 0.75rem)), md: (form-rows-spacing: var(--kendo-spacing-3, 0.75rem)), lg: (form-rows-spacing: var(--kendo-spacing-3, 0.75rem)))</code></td>
+    <td><ul><li>sm: "form-rows-spacing":"var(--kendo-spacing-3, 0.75rem)"</li><li>md: "form-rows-spacing":"var(--kendo-spacing-3, 0.75rem)"</li><li>lg: "form-rows-spacing":"var(--kendo-spacing-3, 0.75rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>

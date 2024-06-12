@@ -165,7 +165,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
-    <td><code>(app-surface: null, on-app-surface: null, subtle: null, surface: null, surface-alt: null, border: null, border-alt: null, base-subtle: null, base-subtle-hover: null, base-subtle-active: null, base: null, base-hover: null, base-active: null, base-emphasis: null, base-on-subtle: null, on-base: null, base-on-surface: null, primary-subtle: null, primary-subtle-hover: null, primary-subtle-active: null, primary: null, primary-hover: null, primary-active: null, primary-emphasis: null, primary-on-subtle: null, on-primary: null, primary-on-surface: null, secondary-subtle: null, secondary-subtle-hover: null, secondary-subtle-active: null, secondary: null, secondary-hover: null, secondary-active: null, secondary-emphasis: null, secondary-on-subtle: null, on-secondary: null, secondary-on-surface: null, tertiary-subtle: null, tertiary-subtle-hover: null, tertiary-subtle-active: null, tertiary: null, tertiary-hover: null, tertiary-active: null, tertiary-emphasis: null, tertiary-on-subtle: null, on-tertiary: null, tertiary-on-surface: null, info-subtle: null, info-subtle-hover: null, info-subtle-active: null, info: null, info-hover: null, info-active: null, info-emphasis: null, info-on-subtle: null, on-info: null, info-on-surface: null, success-subtle: null, success-subtle-hover: null, success-subtle-active: null, success: null, success-hover: null, success-active: null, success-emphasis: null, success-on-subtle: null, on-success: null, success-on-surface: null, warning-subtle: null, warning-subtle-hover: null, warning-subtle-active: null, warning: null, warning-hover: null, warning-active: null, warning-emphasis: null, warning-on-subtle: null, on-warning: null, warning-on-surface: null, error-subtle: null, error-subtle-hover: null, error-subtle-active: null, error: null, error-hover: null, error-active: null, error-emphasis: null, error-on-subtle: null, on-error: null, error-on-surface: null, light-subtle: null, light-subtle-hover: null, light-subtle-active: null, light: null, light-hover: null, light-active: null, light-emphasis: null, light-on-subtle: null, on-light: null, light-on-surface: null, dark-subtle: null, dark-subtle-hover: null, dark-subtle-active: null, dark: null, dark-hover: null, dark-active: null, dark-emphasis: null, dark-on-subtle: null, on-dark: null, dark-on-surface: null, inverse-subtle: null, inverse-subtle-hover: null, inverse-subtle-active: null, inverse: null, inverse-hover: null, inverse-active: null, inverse-emphasis: null, inverse-on-subtle: null, on-inverse: null, inverse-on-surface: null, series-a: null, series-a-bold: null, series-a-bolder: null, series-a-subtle: null, series-a-subtler: null, series-b: null, series-b-bold: null, series-b-bolder: null, series-b-subtle: null, series-b-subtler: null, series-c: null, series-c-bold: null, series-c-bolder: null, series-c-subtle: null, series-c-subtler: null, series-d: null, series-d-bold: null, series-d-bolder: null, series-d-subtle: null, series-d-subtler: null, series-e: null, series-e-bold: null, series-e-bolder: null, series-e-subtle: null, series-e-subtler: null, series-f: null, series-f-bold: null, series-f-bolder: null, series-f-subtle: null, series-f-subtler: null)</code></td>
+    <td><ul><li>app-surface: null</li><li>on-app-surface: null</li><li>subtle: null</li><li>surface: null</li><li>surface-alt: null</li><li>border: null</li><li>border-alt: null</li><li>base-subtle: null</li><li>base-subtle-hover: null</li><li>base-subtle-active: null</li><li>base: null</li><li>base-hover: null</li><li>base-active: null</li><li>base-emphasis: null</li><li>base-on-subtle: null</li><li>on-base: null</li><li>base-on-surface: null</li><li>primary-subtle: null</li><li>primary-subtle-hover: null</li><li>primary-subtle-active: null</li><li>primary: null</li><li>primary-hover: null</li><li>primary-active: null</li><li>primary-emphasis: null</li><li>primary-on-subtle: null</li><li>on-primary: null</li><li>primary-on-surface: null</li><li>secondary-subtle: null</li><li>secondary-subtle-hover: null</li><li>secondary-subtle-active: null</li><li>secondary: null</li><li>secondary-hover: null</li><li>secondary-active: null</li><li>secondary-emphasis: null</li><li>secondary-on-subtle: null</li><li>on-secondary: null</li><li>secondary-on-surface: null</li><li>tertiary-subtle: null</li><li>tertiary-subtle-hover: null</li><li>tertiary-subtle-active: null</li><li>tertiary: null</li><li>tertiary-hover: null</li><li>tertiary-active: null</li><li>tertiary-emphasis: null</li><li>tertiary-on-subtle: null</li><li>on-tertiary: null</li><li>tertiary-on-surface: null</li><li>info-subtle: null</li><li>info-subtle-hover: null</li><li>info-subtle-active: null</li><li>info: null</li><li>info-hover: null</li><li>info-active: null</li><li>info-emphasis: null</li><li>info-on-subtle: null</li><li>on-info: null</li><li>info-on-surface: null</li><li>success-subtle: null</li><li>success-subtle-hover: null</li><li>success-subtle-active: null</li><li>success: null</li><li>success-hover: null</li><li>success-active: null</li><li>success-emphasis: null</li><li>success-on-subtle: null</li><li>on-success: null</li><li>success-on-surface: null</li><li>warning-subtle: null</li><li>warning-subtle-hover: null</li><li>warning-subtle-active: null</li><li>warning: null</li><li>warning-hover: null</li><li>warning-active: null</li><li>warning-emphasis: null</li><li>warning-on-subtle: null</li><li>on-warning: null</li><li>warning-on-surface: null</li><li>error-subtle: null</li><li>error-subtle-hover: null</li><li>error-subtle-active: null</li><li>error: null</li><li>error-hover: null</li><li>error-active: null</li><li>error-emphasis: null</li><li>error-on-subtle: null</li><li>on-error: null</li><li>error-on-surface: null</li><li>light-subtle: null</li><li>light-subtle-hover: null</li><li>light-subtle-active: null</li><li>light: null</li><li>light-hover: null</li><li>light-active: null</li><li>light-emphasis: null</li><li>light-on-subtle: null</li><li>on-light: null</li><li>light-on-surface: null</li><li>dark-subtle: null</li><li>dark-subtle-hover: null</li><li>dark-subtle-active: null</li><li>dark: null</li><li>dark-hover: null</li><li>dark-active: null</li><li>dark-emphasis: null</li><li>dark-on-subtle: null</li><li>on-dark: null</li><li>dark-on-surface: null</li><li>inverse-subtle: null</li><li>inverse-subtle-hover: null</li><li>inverse-subtle-active: null</li><li>inverse: null</li><li>inverse-hover: null</li><li>inverse-active: null</li><li>inverse-emphasis: null</li><li>inverse-on-subtle: null</li><li>on-inverse: null</li><li>inverse-on-surface: null</li><li>series-a: null</li><li>series-a-bold: null</li><li>series-a-bolder: null</li><li>series-a-subtle: null</li><li>series-a-subtler: null</li><li>series-b: null</li><li>series-b-bold: null</li><li>series-b-bolder: null</li><li>series-b-subtle: null</li><li>series-b-subtler: null</li><li>series-c: null</li><li>series-c-bold: null</li><li>series-c-bolder: null</li><li>series-c-subtle: null</li><li>series-c-subtler: null</li><li>series-d: null</li><li>series-d-bold: null</li><li>series-d-bolder: null</li><li>series-d-subtle: null</li><li>series-d-subtler: null</li><li>series-e: null</li><li>series-e-bold: null</li><li>series-e-bolder: null</li><li>series-e-subtle: null</li><li>series-e-subtler: null</li><li>series-f: null</li><li>series-f-bold: null</li><li>series-f-bolder: null</li><li>series-f-subtle: null</li><li>series-f-subtler: null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -195,7 +195,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-elevation</td>
     <td>Map</td>
     <td><code>$_default-elevation</code></td>
-    <td><code>(1: (0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12)), 2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)), 3: (0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12)), 4: (0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)), 5: (0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12)), 6: (0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12)), 7: (0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12)), 8: (0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12)), 9: (0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12)))</code></td>
+    <td><ul><li>1: 0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>2: 0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>3: 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>4: 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>5: 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>6: 0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>7: 0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>8: 0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>9: 0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
@@ -315,7 +315,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-border-radii</td>
     <td>Map</td>
     <td><code>k-map-merge($_default-border-radii, $kendo-border-radii)</code></td>
-    <td><code>(none: 0px, xs: 1px, sm: 0.125rem, md: 0.25rem, lg: 0.375rem, xl: 0.5rem, xxl: 0.75rem, xxxl: 1rem, full: 9999px)</code></td>
+    <td><ul><li>none: 0px</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.375rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
@@ -345,7 +345,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-spacing</td>
     <td>Map</td>
     <td><code>$_default-spacing</code></td>
-    <td><code>(0: 0px, 1px: 1px, 0.5: 0.125rem, 1: 0.25rem, 1.5: 0.375rem, 2: 0.5rem, 2.5: 0.625rem, 3: 0.75rem, 3.5: 0.875rem, 4: 1rem, 4.5: 1.125rem, 5: 1.25rem, 5.5: 1.375rem, 6: 1.5rem, 6.5: 1.625rem, 7: 1.75rem, 7.5: 1.875rem, 8: 2rem, 9: 2.25rem, 10: 2.5rem, 11: 2.75rem, 12: 3rem, 13: 3.25rem, 14: 3.5rem, 15: 3.75rem, 16: 4rem, 17: 4.25rem, 18: 4.5rem, 19: 4.75rem, 20: 5rem, 21: 5.25rem, 22: 5.5rem, 23: 5.75rem, 24: 6rem, 25: 7rem, 26: 8rem, 27: 9rem, 28: 10rem, 29: 11rem, 30: 12rem)</code></td>
+    <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Spacing map.</div></div>
@@ -735,7 +735,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-font-sizes</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
-    <td><code>(xxs: 0.5rem, xs: 0.625rem, sm: 0.75rem, md: 0.875rem, lg: 1rem, xl: 1.25rem)</code></td>
+    <td><ul><li>xxs: 0.5rem</li><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -745,7 +745,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-line-heights, $kendo-line-heights )</code></td>
-    <td><code>(xs: 1, sm: 1.25, md: 1.4285714286, lg: 1.5)</code></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.5</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
@@ -755,7 +755,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-font-weights</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-weights, $kendo-font-weights )</code></td>
-    <td><code>(thin: 100, extra-light: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700)</code></td>
+    <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weights map</div></div>
@@ -765,7 +765,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
-    <td><code>(tightest: -0.15px, tighter: -0.1px, tight: -0.5px, normal: 0px, wide: 0.5px, wider: 0.1px, widest: 0.15px)</code></td>
+    <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacings map</div></div>
@@ -775,7 +775,7 @@ The following table lists the available variables for customizing the Theme Util
     <td>$kendo-font-families</td>
     <td>Map</td>
     <td><code>k-map-merge( $_default-font-families, $kendo-font-families )</code></td>
-    <td><code>(sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans), serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville), sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"), monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace))</code></td>
+    <td><ul><li>sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</li><li>serif: "Times New Roman", Georgia, Garamond, Palatino, Baskerville</li><li>sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</li><li>monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>

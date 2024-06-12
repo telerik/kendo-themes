@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
         line-height: $kendo-button-lg-line-height
     )
 )</code></td>
-    <td><code>(sm: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-0\.5, 0.125rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal)), md: (padding-x: var(--kendo-spacing-2, 0.5rem), padding-y: var(--kendo-spacing-1, 0.25rem), font-size: var(--kendo-font-size, inherit), line-height: var(--kendo-line-height, normal)), lg: (padding-x: var(--kendo-spacing-3, 0.75rem), padding-y: var(--kendo-spacing-2, 0.5rem), font-size: var(--kendo-font-size-lg, inherit), line-height: var(--kendo-line-height-lg, normal)))</code></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size-lg, inherit)","line-height":"var(--kendo-line-height-lg, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Button.</div></div>
@@ -273,7 +273,7 @@ The following table lists the available variables for customization.
     $kendo-theme-colors,
     ( "base": $kendo-base-bg )
 )</code></td>
-    <td><code>("primary": var(--kendo-color-primary, #f35800), "secondary": var(--kendo-color-secondary, #b6b6b6), "tertiary": var(--kendo-color-tertiary, #03a9f4), "info": var(--kendo-color-info, #007bc3), "success": var(--kendo-color-success, #3ea44e), "warning": var(--kendo-color-warning, #ffa41f), "error": var(--kendo-color-error, #d92800), "dark": var(--kendo-color-dark, #404040), "light": var(--kendo-color-light, #ebebeb), "inverse": var(--kendo-color-dark, #404040), "base": var(--kendo-color-surface, #f0f0f0))</code></td>
+    <td><ul><li>primary: var(--kendo-color-primary, #f35800)</li><li>secondary: var(--kendo-color-secondary, #b6b6b6)</li><li>tertiary: var(--kendo-color-tertiary, #03a9f4)</li><li>info: var(--kendo-color-info, #007bc3)</li><li>success: var(--kendo-color-success, #3ea44e)</li><li>warning: var(--kendo-color-warning, #ffa41f)</li><li>error: var(--kendo-color-error, #d92800)</li><li>dark: var(--kendo-color-dark, #404040)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>inverse: var(--kendo-color-dark, #404040)</li><li>base: var(--kendo-color-surface, #f0f0f0)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>

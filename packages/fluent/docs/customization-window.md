@@ -325,7 +325,7 @@ The following table lists the available variables for customization.
     md: 800px,
     lg: 1200px
 )</code></td>
-    <td><code>(sm: 300px, md: 800px, lg: 1200px)</code></td>
+    <td><ul><li>sm: 300px</li><li>md: 800px</li><li>lg: 1200px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map of the width of the different Window sizes.</div></div>
@@ -337,7 +337,7 @@ The following table lists the available variables for customization.
     <td><code>(
     primary: primary
  )</code></td>
-    <td><code>(primary: primary)</code></td>
+    <td><ul><li>primary: primary</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme variations for the Window.</div></div>
@@ -347,7 +347,7 @@ The following table lists the available variables for customization.
     <td>$kendo-window-theme-colors</td>
     <td>Map</td>
     <td><code>()</code></td>
-    <td><code>(primary: (bg: var(--kendo-color-primary, #0078d4), text: var(--kendo-color-on-primary, #ffffff), border: var(--kendo-color-primary, #0078d4)), dark: (bg: var(--kendo-color-dark, #323130), text: var(--kendo-color-on-dark, #ffffff), border: var(--kendo-color-dark, #323130)), light: (bg: var(--kendo-color-light, #d2d0ce), text: var(--kendo-color-on-light, #323130), border: var(--kendo-color-light, #d2d0ce)))</code></td>
+    <td><ul><li>primary: "bg":"var(--kendo-color-primary, #0078d4)","text":"var(--kendo-color-on-primary, #ffffff)","border":"var(--kendo-color-primary, #0078d4)"</li><li>dark: "bg":"var(--kendo-color-dark, #323130)","text":"var(--kendo-color-on-dark, #ffffff)","border":"var(--kendo-color-dark, #323130)"</li><li>light: "bg":"var(--kendo-color-light, #d2d0ce)","text":"var(--kendo-color-on-light, #323130)","border":"var(--kendo-color-light, #d2d0ce)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Window.</div></div>
