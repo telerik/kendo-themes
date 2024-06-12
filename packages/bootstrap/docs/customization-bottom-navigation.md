@@ -1,11 +1,11 @@
 ---
-title: Customizing Bottom-navigation
+title: Customizing BottomNavigation
 description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
 slug: variables_kendothemebootstrap_bottom-navigation
 position: 9
 ---
 
-# Customizing Bottom-navigation
+# Customizing BottomNavigation
 
 ## Variables
 

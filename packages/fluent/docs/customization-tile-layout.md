@@ -1,11 +1,11 @@
 ---
-title: Customizing Tilelayout
+title: Customizing TileLayout
 description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
-slug: variables_kendothemefluent_tilelayout
+slug: variables_kendothemefluent_tile-layout
 position: 9
 ---
 
-# Customizing Tilelayout
+# Customizing TileLayout
 
 ## Variables
 

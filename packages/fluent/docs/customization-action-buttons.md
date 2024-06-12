@@ -1,11 +1,11 @@
 ---
-title: Customizing Action-buttons
+title: Customizing ActionButtons
 description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
 slug: variables_kendothemefluent_action-buttons
 position: 9
 ---
 
-# Customizing Action-buttons
+# Customizing ActionButtons
 
 ## Variables
 

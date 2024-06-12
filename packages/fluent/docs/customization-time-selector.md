@@ -1,11 +1,11 @@
 ---
-title: Customizing Time-selector
+title: Customizing TimeSelector
 description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
 slug: variables_kendothemefluent_time-selector
 position: 9
 ---
 
-# Customizing Time-selector
+# Customizing TimeSelector
 
 ## Variables
 

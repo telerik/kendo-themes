@@ -1,11 +1,11 @@
 ---
-title: Customizing Radii
+title: Customizing Border Radius
 description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
 slug: variables_kendothemeclassic_radii
 position: 9
 ---
 
-# Customizing Radii
+# Customizing Border Radius
 
 ## Variables
 

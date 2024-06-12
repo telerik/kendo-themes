@@ -1,11 +1,11 @@
 ---
-title: Customizing Colorpalette
-description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
-slug: variables_kendothemebootstrap_colorpalette
+title: Customizing ColorPalette
+description: "Refer to the list of the Kendo UI Material theme variables available for customization."
+slug: variables_kendothemematerial_color-palette
 position: 9
 ---
 
-# Customizing Colorpalette
+# Customizing ColorPalette
 
 ## Variables
 

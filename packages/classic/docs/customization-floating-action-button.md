@@ -1,11 +1,11 @@
 ---
-title: Customizing Floating-action-button
+title: Customizing FloatingActionButton
 description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
 slug: variables_kendothemeclassic_floating-action-button
 position: 9
 ---
 
-# Customizing Floating-action-button
+# Customizing FloatingActionButton
 
 ## Variables
 

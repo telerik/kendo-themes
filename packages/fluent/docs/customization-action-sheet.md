@@ -1,11 +1,11 @@
 ---
-title: Customizing Action-sheet
+title: Customizing ActionSheet
 description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
 slug: variables_kendothemefluent_action-sheet
 position: 9
 ---
 
-# Customizing Action-sheet
+# Customizing ActionSheet
 
 ## Variables
 
