@@ -1,11 +1,11 @@
 ---
-title: Customizing Menu-button
+title: Customizing MenuButton
 description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
 slug: variables_kendothemeclassic_menu-button
 position: 9
 ---
 
-# Customizing Menu-button
+# Customizing MenuButton
 
 ## Variables
 

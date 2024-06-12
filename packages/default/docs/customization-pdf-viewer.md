@@ -1,11 +1,11 @@
 ---
-title: Customizing Pdf-viewer
+title: Customizing PDFViewer
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
 slug: variables_kendothemedefault_pdf-viewer
 position: 9
 ---
 
-# Customizing Pdf-viewer
+# Customizing PDFViewer
 
 ## Variables
 

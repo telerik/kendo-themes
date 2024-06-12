@@ -1,11 +1,11 @@
 ---
-title: Customizing Radii
+title: Customizing Border Radius
 description: "Refer to the list of the Kendo UI Theme Utils theme variables available for customization."
 slug: variables_kendothemeutils_radii
 position: 9
 ---
 
-# Customizing Radii
+# Customizing Border Radius
 
 ## Variables
 

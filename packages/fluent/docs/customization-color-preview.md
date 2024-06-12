@@ -1,11 +1,11 @@
 ---
-title: Customizing Color-preview
+title: Customizing ColorPreview
 description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
 slug: variables_kendothemefluent_color-preview
 position: 9
 ---
 
-# Customizing Color-preview
+# Customizing ColorPreview
 
 ## Variables
 

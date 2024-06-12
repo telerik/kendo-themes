@@ -1,11 +1,11 @@
 ---
-title: Customizing Coloreditor
-description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
-slug: variables_kendothemefluent_coloreditor
+title: Customizing ColorEditor
+description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
+slug: variables_kendothemeclassic_color-editor
 position: 9
 ---
 
-# Customizing Coloreditor
+# Customizing ColorEditor
 
 ## Variables
 
@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-color-editor-spacer</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacer of the ColorEditor.</div></div>
@@ -40,8 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-min-width</td>
     <td>Number</td>
-    <td><code>260px</code></td>
-    <td><code>260px</code></td>
+    <td><code>272px</code></td>
+    <td><code>272px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
@@ -100,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>$kendo-component-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the ColorEditor.</div></div>
@@ -110,8 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ColorEditor.</div></div>
@@ -120,28 +120,18 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>$kendo-component-border</code></td>
+    <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ColorEditor.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-shadow</td>
-    <td>String</td>
-    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
-    <td><code>var(--kendo-box-shadow-depth-2, none)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorEditor.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-focus-border</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent)</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused ColorEditor.</div></div>
@@ -150,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-focus-shadow</td>
     <td>String</td>
-    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
-    <td><code>var(--kendo-box-shadow-depth-3, none)</code></td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorEditor.</div></div>
@@ -161,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-editor-header-padding-y</td>
     <td>String</td>
     <td><code>$kendo-color-editor-spacer</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorEditor header.</div></div>
@@ -171,17 +161,17 @@ The following table lists the available variables for customization.
     <td>$kendo-color-editor-header-padding-x</td>
     <td>String</td>
     <td><code>$kendo-color-editor-header-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorEditor header.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-header-actions-spacing</td>
+    <td>$kendo-color-editor-header-actions-gap</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-color-editor-spacer} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
+    <td><code>calc( #{$kendo-color-editor-spacer} / 1.5 )</code></td>
+    <td><code>calc(var(--kendo-spacing-3, 0.75rem) / 1.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorEditor header actions.</div></div>
@@ -190,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-color-preview-width</td>
     <td>Number</td>
-    <td><code>34px</code></td>
-    <td><code>34px</code></td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ColorEditor preview.</div></div>
@@ -200,15 +190,15 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-color-preview-height</td>
     <td>Number</td>
-    <td><code>14px</code></td>
-    <td><code>14px</code></td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ColorEditor preview.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-preview-spacing</td>
+    <td>$kendo-color-editor-preview-gap</td>
     <td>String</td>
     <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
@@ -221,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-editor-views-padding-y</td>
     <td>String</td>
     <td><code>$kendo-color-editor-spacer</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorEditor views container.</div></div>
@@ -231,46 +221,26 @@ The following table lists the available variables for customization.
     <td>$kendo-color-editor-views-padding-x</td>
     <td>String</td>
     <td><code>$kendo-color-editor-views-padding-y</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorEditor views container.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-views-spacing</td>
+    <td>$kendo-color-editor-views-gap</td>
     <td>String</td>
     <td><code>$kendo-color-editor-spacer</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the ColorEditor views container.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-editor-footer-padding-y</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ColorEditor footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-editor-footer-padding-x</td>
-    <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the ColorEditor footer.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
     <td>Color</td>
-    <td><code>rgba(0, 0, 0, 0.3)</code></td>
+    <td><code>rgba(0, 0, 0, .3)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.3)"></span><code>rgba(0, 0, 0, 0.3)</code></td>
 </tr>
 <tr>
@@ -290,8 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-color-gradient-focus-outline-offset</td>
     <td>Number</td>
-    <td><code>2px</code></td>
-    <td><code>2px</code></td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient.</div></div>

@@ -1,11 +1,11 @@
 ---
-title: Customizing Tilelayout
+title: Customizing TileLayout
 description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
-slug: variables_kendothemebootstrap_tilelayout
+slug: variables_kendothemebootstrap_tile-layout
 position: 9
 ---
 
-# Customizing Tilelayout
+# Customizing TileLayout
 
 ## Variables
 

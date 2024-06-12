@@ -1,11 +1,11 @@
 ---
-title: Customizing Actions-list
+title: Customizing ActionsList
 description: "Refer to the list of the Kendo UI Nouvelle theme variables available for customization."
 slug: variables_kendothemenouvelle_actions-list
 position: 9
 ---
 
-# Customizing Actions-list
+# Customizing ActionsList
 
 ## Variables
 

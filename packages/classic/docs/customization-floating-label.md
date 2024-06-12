@@ -1,11 +1,11 @@
 ---
-title: Customizing Floating-label
+title: Customizing FloatingLabel
 description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
 slug: variables_kendothemeclassic_floating-label
 position: 9
 ---
 
-# Customizing Floating-label
+# Customizing FloatingLabel
 
 ## Variables
 

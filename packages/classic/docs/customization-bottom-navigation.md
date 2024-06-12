@@ -1,11 +1,11 @@
 ---
-title: Customizing Bottom-navigation
+title: Customizing BottomNavigation
 description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
 slug: variables_kendothemeclassic_bottom-navigation
 position: 9
 ---
 
-# Customizing Bottom-navigation
+# Customizing BottomNavigation
 
 ## Variables
 

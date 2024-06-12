@@ -294,7 +294,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tbody>
 </table>
 
-### Actions-list
+### ActionsList
 
 <table class="theme-variables">
     <colgroup>
@@ -556,7 +556,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tbody>
 </table>
 
-### Bottom-nav
+### Border Radius
 
 <table class="theme-variables">
     <colgroup>
@@ -574,69 +574,109 @@ The following table lists the available variables for customizing the Nouvelle t
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-bottom-nav-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the bottom navigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-nav-item-focus-offset</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the focused bottom navigation item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-nav-item-focus-outline-width</td>
+    <td>$kendo-border-radius-none</td>
     <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0)</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The none border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xs</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1px)</code></td>
     <td><code>1px</code></td>
-    <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline width of the focused bottom navigation item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-bottom-nav-item-focus-outline-style</td>
-    <td>String</td>
-    <td><code>solid</code></td>
-    <td><code>solid</code></td>
+    <td>$kendo-border-radius-sm</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0.5)</code></td>
+    <td><code>0.125rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline style of the focused bottom navigation item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-bottom-nav-item-icon-margin-x</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>$kendo-border-radius-md</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1)</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the focused bottom navigation item icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-bottom-nav-item-icon-margin-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>$kendo-border-radius-lg</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 1.5)</code></td>
+    <td><code>0.375rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the focused bottom navigation item icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 2)</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xxl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 3)</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-xxxl</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 4)</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-full</td>
+    <td>Number</td>
+    <td><code>9999px</code></td>
+    <td><code>9999px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radii</td>
+    <td>Map</td>
+    <td><code>k-map-merge($_default-border-radii, $kendo-border-radii)</code></td>
+    <td><ul><li>0: 0</li><li>none: 0</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.5rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li><li>DEFAULT: 0.25rem</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
     </td>
 </tr>
 </tbody>
 </table>
 
-### Bottom-navigation
+### BottomNavigation
 
 <table class="theme-variables">
     <colgroup>
@@ -724,6 +764,16 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
+    <td>$kendo-bottom-nav-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the bottom navigation.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-bottom-nav-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(2)</code></td>
@@ -781,6 +831,56 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-focus-offset</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the focused bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline width of the focused bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-focus-outline-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline style of the focused bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-icon-margin-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the focused bottom navigation item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-icon-margin-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the focused bottom navigation item icon.</div></div>
     </td>
 </tr>
 </tbody>
@@ -3125,126 +3225,6 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the progressbar.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
-### Radii
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-border-radius-none</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 0)</code></td>
-    <td><code>0</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The none border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-xs</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 1px)</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-sm</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 0.5)</code></td>
-    <td><code>0.125rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-md</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 1)</code></td>
-    <td><code>0.25rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-lg</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 1.5)</code></td>
-    <td><code>0.375rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-xl</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 2)</code></td>
-    <td><code>0.5rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-xxl</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 3)</code></td>
-    <td><code>0.75rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-xxxl</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 4)</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radius-full</td>
-    <td>Number</td>
-    <td><code>9999px</code></td>
-    <td><code>9999px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-border-radii</td>
-    <td>Map</td>
-    <td><code>k-map-merge($_default-border-radii, $kendo-border-radii)</code></td>
-    <td><ul><li>0: 0</li><li>none: 0</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.5rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li><li>DEFAULT: 0.25rem</li></ul></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
     </td>
 </tr>
 </tbody>

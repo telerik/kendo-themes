@@ -1,11 +1,11 @@
 ---
-title: Customizing Dock-manager
+title: Customizing DockManager
 description: "Refer to the list of the Kendo UI Material theme variables available for customization."
 slug: variables_kendothemematerial_dock-manager
 position: 9
 ---
 
-# Customizing Dock-manager
+# Customizing DockManager
 
 ## Variables
 

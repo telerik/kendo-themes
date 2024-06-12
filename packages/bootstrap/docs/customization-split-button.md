@@ -1,11 +1,11 @@
 ---
-title: Customizing Split-button
+title: Customizing SplitButton
 description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
 slug: variables_kendothemebootstrap_split-button
 position: 9
 ---
 
-# Customizing Split-button
+# Customizing SplitButton
 
 ## Variables
 
