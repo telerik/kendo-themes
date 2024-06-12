@@ -25,6 +25,9 @@ $kendo-border-radius-xxl: map.get($kendo-spacing, 4) !default;
 /// The second largest border radius used across the Components.
 /// @group radii
 $kendo-border-radius-xxxl: map.get($kendo-spacing, 5) !default;
+/// The largest border radius used across the Components.
+/// @group radii
+$kendo-border-radius-full: 9999px !default;
 
 $_default-border-radii: (
     none: $kendo-border-radius-none,
@@ -34,7 +37,8 @@ $_default-border-radii: (
     lg: $kendo-border-radius-lg,
     xl: $kendo-border-radius-xl,
     xxl: $kendo-border-radius-xxl,
-    xxxl: $kendo-border-radius-xxxl
+    xxxl: $kendo-border-radius-xxxl,
+    full: $kendo-border-radius-full
 ) !default;
 
 /// The global radii Map.

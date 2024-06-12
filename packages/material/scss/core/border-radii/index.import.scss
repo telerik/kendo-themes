@@ -22,6 +22,9 @@ $kendo-border-radius-xxl: k-map-get($kendo-spacing, 4) !default;
 /// The second largest border radius used across the Components.
 /// @group radii
 $kendo-border-radius-xxxl: k-map-get($kendo-spacing, 5) !default;
+/// The largest border radius used across the Components.
+/// @group radii
+$kendo-border-radius-full: 9999px !default;
 
 /// The global radii Map.
 /// @group radii
@@ -33,7 +36,8 @@ $kendo-border-radii: (
     lg: $kendo-border-radius-lg,
     xl: $kendo-border-radius-xl,
     xxl: $kendo-border-radius-xxl,
-    xxxl: $kendo-border-radius-xxxl
+    xxxl: $kendo-border-radius-xxxl,
+    full: $kendo-border-radius-full
 ) !default;
 
 @import "@progress/kendo-theme-core/scss/border-radii/index.import.scss";
