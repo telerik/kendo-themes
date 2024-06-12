@@ -8,11 +8,6 @@ $_kendo-module-meta: (
     dependencies: ()
 );
 
-
-// Dependencies
-@import "../common/_index.scss";
-
-
 // Component
 @import "./_variables.scss";
 @import "./_layout.scss";
