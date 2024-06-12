@@ -131,6 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-border-radii</td>
     <td>Map</td>
     <td><code>(
+    none: $kendo-border-radius-none,
     xs: $kendo-border-radius-xs,
     sm: $kendo-border-radius-sm,
     md: $kendo-border-radius-md,

@@ -22908,16 +22908,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-border-radii</td>
-    <td>Map</td>
-    <td><code>$_default-border-radii</code></td>
-    <td><code>(none: 0px, xs: 1px, sm: 0.125rem, md: 0.25rem, lg: 0.5rem, xl: 0.75rem, xxl: 1rem, xxxl: 1.25rem)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-border-radius-full</td>
     <td>Number</td>
     <td><code>9999px</code></td>
@@ -22925,6 +22915,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radii</td>
+    <td>Map</td>
+    <td><code>$_default-border-radii</code></td>
+    <td><code>(none: 0px, xs: 1px, sm: 0.125rem, md: 0.25rem, lg: 0.5rem, xl: 0.75rem, xxl: 1rem, xxxl: 1.25rem, full: 9999px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
     </td>
 </tr>
 </tbody>
