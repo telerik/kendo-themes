@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "tooltip",
@@ -22,5 +24,6 @@ $_kendo-module-meta: (
     @include module.render( "tooltip" ) {
         @include kendo-tooltip--layout();
         @include kendo-tooltip--theme();
+        @include kendo-utils--typography--text-color();
     }
 }
