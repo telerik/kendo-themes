@@ -26,8 +26,6 @@
     core.$kendo-disabled-bg: core.k-color( base-subtle );
     core.$kendo-disabled-text: color-mix(in srgb, core.k-color( on-app-surface ) 46%, transparent);
     core.$kendo-disabled-border: transparent;
-    core.$kendo-loading-bg: core.$kendo-component-bg;
-    core.$kendo-loading-text: currentColor;
 
     core.$kendo-theme-colors: (
         primary: (
