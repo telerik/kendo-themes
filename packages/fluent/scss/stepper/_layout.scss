@@ -39,6 +39,8 @@
 
         // Step
         .k-step {
+            outline: none;
+
             &.k-disabled {
                 background: transparent;
             }
@@ -110,7 +112,7 @@
         .k-step.k-disabled {
             .k-step-indicator {
                 border: 0;
-                
+
                 &::after {
                     display: none;
                 }
