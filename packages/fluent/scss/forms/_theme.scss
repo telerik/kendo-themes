@@ -41,4 +41,10 @@
         @include fill( $color: var( --kendo-form-hint-text, #{$kendo-form-hint-text} ) );
     }
 
+    .k-form-field:disabled,
+    .k-form-field.k-disabled,
+    .k-form-field[disabled] {
+        background-color: inherit;
+    }
+
 }
