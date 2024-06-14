@@ -25,4 +25,12 @@
         color: k-get-theme-color-var( neutral-160, #{$kendo-selected-text} );
     }
 
+    // Text selection
+    .k-text-selection {
+        ::selection {
+            background-color:  if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ));
+            color: if($kendo-enable-color-system, k-color( on-primary ), $kendo-selected-text);
+        }
+    }
+
 }
