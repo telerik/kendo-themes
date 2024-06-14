@@ -20,8 +20,10 @@
         // Nested disabled
         [disabled],
         .k-disabled {
-            opacity: 1;
-            filter: grayscale(0);
+            @if $kendo-nested-disabled {
+                --kendo-disabled-opacity: 1;
+                --kendo-disabled-filter: grayscale(0);
+            }
         }
     }
 
