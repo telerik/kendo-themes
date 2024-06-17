@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.0.2-dev.4...v8.1.0-dev.0) (2024-06-17)
+
+
+### Bug Fixes
+
+* **fluent:** incorrect palette name ([7cedbb5](https://github.com/telerik/kendo-themes/commit/7cedbb5e16f7b4a0088c40de991f774b96ca3660))
+
+
+### Features
+
+* improve metadata generation ([4f35f13](https://github.com/telerik/kendo-themes/commit/4f35f139017a60b333938b2252c5a77ad956a108))
+
+
+
+
+
 ## [8.0.2-dev.4](https://github.com/telerik/kendo-themes/compare/v8.0.2-dev.3...v8.0.2-dev.4) (2024-06-10)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
