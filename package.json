@@ -73,9 +73,7 @@
     "test:integrations": "npm run build --prefix integrations",
     "clean": "nx reset && find . -name \"node_modules\" -type d -prune | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune -maxdepth 2 | xargs rm -rf",
-    "clean:tests": "node ./scripts/cleanup-test-results.js",
-
-    "embed-assets": "gulp assets"
+    "clean:tests": "node ./scripts/cleanup-test-results.js"
   },
   "engines": {
     "node": "^20"
