@@ -6,9 +6,7 @@ const gulp = require("gulp");
 
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
-const { getArg, getEnvArg } = require("@progress/kendo-theme-tasks/src/utils");
-const { createComponent } = require('@progress/kendo-theme-tasks/src/create');
-
+const { getArg } = require("@progress/kendo-theme-tasks/src/utils");
 
 // Settings
 const paths = {
@@ -193,23 +191,4 @@ function distSwatches() {
     return Promise.resolve();
 }
 gulp.task("dist:swatches", distSwatches);
-// #endregion
-
-// #region Components
-
-/**
- * A task that creates all the needed files for a new component.
- *
- * @example npm run create-component --name=accordion
- * @example gulp create-component --name accordion
- *
- * @param {string} [name] - The name of the new component.
- */
-gulp.task("create-component", function( done ) {
-    const name = getArg('--name') || getEnvArg('name') || null;
-
-    createComponent({ name });
-    done();
-});
-
 // #endregion
