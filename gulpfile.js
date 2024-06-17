@@ -5,14 +5,12 @@ const { globSync } = require("glob");
 const gulp = require("gulp");
 
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
-const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
 const { getArg } = require("@progress/kendo-theme-tasks/src/utils");
 
 // Settings
 const paths = {
     sass: {
         all: "packages/*/scss/**/*.scss",
-        assets: "packages/*/scss/**/*.{png,gif,ttf,woff}",
         themes: "packages/!(html)",
         theme: "scss/all.scss",
         swatches: "lib/swatches/*.json",
@@ -144,28 +142,6 @@ function swatchJsonTransformer( json ) {
     return templates.legacy();
 }
 // #endregion
-
-
-// #region assets
-gulp.task("assets", function() {
-    let files = globSync(paths.sass.assets);
-    let template = fs.readFileSync('lib/data-uri.template', 'utf8');
-
-    files.forEach( file => {
-        embedFileBase64({
-            file: file,
-            output: {
-                filename: '[name].scss',
-                path: path.dirname( file )
-            },
-            template: template
-        });
-    });
-
-    return Promise.resolve();
-});
-// #endregion
-
 
 // #region dist
 function distFlat() {
