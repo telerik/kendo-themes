@@ -83,7 +83,6 @@
     "clean:dist": "find ./packages -name \"dist\" -type d -prune -maxdepth 2 | xargs rm -rf",
     "clean:tests": "node ./scripts/cleanup-test-results.js",
 
-    "create-component": "gulp create-component",
     "embed-assets": "gulp assets"
   },
   "engines": {
