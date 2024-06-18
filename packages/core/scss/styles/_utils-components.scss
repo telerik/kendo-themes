@@ -1,0 +1,60 @@
+$kendo-prefix: k- !default;
+
+@mixin kendo-core--styles--utils-components() {
+    // Legacy aliases
+    .#{$kendo-prefix}top-start,
+    .#{$kendo-prefix}pos-top-start {
+        top: 0;
+        inset-inline-start: 0;
+    }
+
+    .#{$kendo-prefix}top-end,
+    .#{$kendo-prefix}pos-top-end {
+        top: 0;
+        inset-inline-end: 0;
+    }
+
+    .#{$kendo-prefix}bottom-start,
+    .#{$kendo-prefix}pos-bottom-start {
+        bottom: 0;
+        inset-inline-start: 0;
+    }
+
+    .#{$kendo-prefix}bottom-end,
+    .#{$kendo-prefix}pos-bottom-end {
+        bottom: 0;
+        inset-inline-end: 0;
+    }
+
+    .#{$kendo-prefix}top-center,
+    .#{$kendo-prefix}pos-top-center {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .#{$kendo-prefix}middle-left,
+    .#{$kendo-prefix}middle-start,
+    .#{$kendo-prefix}pos-middle-start {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .#{$kendo-prefix}middle-center {
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+    }
+    .#{$kendo-prefix}middle-right,
+    .#{$kendo-prefix}middle-end,
+    .#{$kendo-prefix}pos-middle-end {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .#{$kendo-prefix}bottom-center,
+    .#{$kendo-prefix}pos-bottom-center {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
