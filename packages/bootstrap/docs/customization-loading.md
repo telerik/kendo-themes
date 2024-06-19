@@ -57,6 +57,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Loading indicator.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-zindex-loading</td>
+    <td>Number</td>
+    <td><code>100</code></td>
+    <td><code>100</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The z-index of the Loading indicator.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
