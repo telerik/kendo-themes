@@ -64,7 +64,7 @@
 
         &:disabled,
         &[disabled] {
-            @include disabled( $kendo-disabled-styling );
+            @include disabled( $kendo-disabled-styling... );
 
             [disabled] &,
             .k-disabled & {
@@ -89,7 +89,7 @@
 
         &:disabled,
         &[disabled] {
-            @include disabled( $kendo-disabled-styling );
+            @include disabled( $kendo-disabled-styling... );
 
             [disabled] &,
             .k-disabled & {

@@ -4,9 +4,12 @@
     .k-disabled,
     .k-widget[disabled],
     .k-disabled {
-        @include disabled-color(
-            $color: var( --kendo-disabled-text, #{$kendo-disabled-text}, inherit ),
-            $border: var( --kendo-disabled-border, #{$kendo-disabled-border}, inherit )
+        @include disabled(
+            $color: var( --kendo-disabled-text, #{$kendo-disabled-text}),
+            $bg: var( --kendo-disabled-bg, #{$kendo-disabled-bg}),
+            $border: var( --kendo-disabled-border, #{$kendo-disabled-border}),
+            $opacity: var( --kendo-disabled-opacity, #{$kendo-disabled-opacity}),
+            $filter: var( --kendo-disabled-filter, #{$kendo-disabled-filter})
         );
 
         .k-link {

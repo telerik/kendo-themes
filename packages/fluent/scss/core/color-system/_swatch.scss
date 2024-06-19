@@ -475,6 +475,16 @@ $kendo-valid-shadow: null !default;
 $kendo-disabled-bg: functions.k-get-theme-color-var(neutral-20) !default;
 $kendo-disabled-text: functions.k-get-theme-color-var(neutral-90) !default;
 $kendo-disabled-border: transparent !default;
+$kendo-disabled-opacity: null !default;
+$kendo-disabled-filter: null !default;
+
+$kendo-disabled-styling: (
+    bg: $kendo-disabled-bg,
+    color: $kendo-disabled-text,
+    border: $kendo-disabled-border,
+    opacity: $kendo-disabled-opacity,
+    filter: $kendo-disabled-filter,
+) !default;
 
 $kendo-theme-colors: (
     primary: (

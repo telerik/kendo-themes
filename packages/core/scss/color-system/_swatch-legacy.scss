@@ -37,9 +37,25 @@ $kendo-invalid-border: null !default;
 $kendo-invalid-shadow: null !default;
 
 // Disabled Styling
+
+/// The background color of disabled items.
 $kendo-disabled-bg: null !default;
+/// The text color of disabled items.
 $kendo-disabled-text: null !default;
+/// The border color of disabled items.
 $kendo-disabled-border: null !default;
+/// The opacity of disabled items.
+$kendo-disabled-opacity: null !default;
+/// The filter of disabled items.
+$kendo-disabled-filter: null !default;
+
+$kendo-disabled-styling: (
+    bg: $kendo-disabled-bg,
+    color: $kendo-disabled-text,
+    border: $kendo-disabled-border,
+    opacity: $kendo-disabled-opacity,
+    filter: $kendo-disabled-filter
+) !default;
 
 
 $kendo-palettes: () !default;
