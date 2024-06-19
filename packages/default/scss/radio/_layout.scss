@@ -57,7 +57,7 @@
     // Disabled state
     .k-radio:disabled,
     .k-radio.k-disabled {
-        @include disabled( $kendo-disabled-styling );
+        @include disabled( $kendo-disabled-styling... );
     }
     .k-radio:disabled:checked,
     .k-radio.k-disabled.k-checked {

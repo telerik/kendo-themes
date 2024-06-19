@@ -54,6 +54,14 @@
             border: core.k-color( error-subtle ),
         ),
     );
+
+    core.$kendo-disabled-styling: (
+        bg: core.$kendo-disabled-bg,
+        color: core.$kendo-disabled-text,
+        border: core.$kendo-disabled-border,
+        opacity: core.$kendo-disabled-opacity,
+        filter: core.$kendo-disabled-filter,
+    );
 }
 
 :root {
@@ -70,6 +78,8 @@
     --kendo-disabled-bg: #{core.$kendo-disabled-bg};
     --kendo-disabled-text: #{core.$kendo-disabled-text};
     --kendo-disabled-border: #{core.$kendo-disabled-border};
+    --kendo-disabled-opacity: #{core.$kendo-disabled-opacity};
+    --kendo-disabled-filter: #{core.$kendo-disabled-filter};
 
     --kendo-hover-bg: #{core.$kendo-hover-bg};
     --kendo-hover-text: #{core.$kendo-hover-text};

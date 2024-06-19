@@ -32,7 +32,7 @@
 
         &:disabled,
         &.k-disabled {
-            @include disabled( $kendo-disabled-styling );
+            @include disabled( $kendo-disabled-styling... );
         }
 
         &::-moz-focus-inner {

@@ -71,7 +71,7 @@
     // Disabled state
     .k-checkbox:disabled,
     .k-checkbox.k-disabled {
-        @include disabled( $kendo-disabled-styling );
+        @include disabled( $kendo-disabled-styling... );
     }
 
 

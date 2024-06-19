@@ -34,16 +34,6 @@ $kendo-focus-shadow: null !default;
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
 
-// Disabled mixin variables
-$kendo-disabled-filter: grayscale(.1) !default;
-$kendo-disabled-opacity: .65 !default;
-
-$kendo-disabled-styling: (
-    opacity: $kendo-disabled-opacity,
-    filter: $kendo-disabled-filter
-) !default;
-
-
 // Generic styles
 
 // TODO: refactor once we extract drag drop as separate module
