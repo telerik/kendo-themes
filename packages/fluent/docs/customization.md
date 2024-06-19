@@ -310,6 +310,56 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-disabled-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-border</td>
+    <td>Color</td>
+    <td><code>null</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-opacity</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-filter</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -18783,6 +18833,66 @@ The following table lists the available variables for customizing the Fluent the
 </tbody>
 </table>
 
+### Loading
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-loading-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-component-bg, initial )</code></td>
+    <td><code>var(--kendo-component-bg, initial)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Loading indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-loading-text</td>
+    <td>String</td>
+    <td><code>currentColor</code></td>
+    <td><code>currentColor</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Loading indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-loading-opacity</td>
+    <td>Number</td>
+    <td><code>.3</code></td>
+    <td><code>0.3</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Loading indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-zindex-loading</td>
+    <td>Number</td>
+    <td><code>100</code></td>
+    <td><code>100</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The z-index of the Loading indicator.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Map
 
 <table class="theme-variables">
@@ -21480,6 +21590,126 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lime Green Palette provides colors to the Series F variable group.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Panel
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-panel-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-border-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of the border around the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-header-padding-inline</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline padding of the Panel header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-header-padding-block</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block padding of the Panel header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-content-padding-inline</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline padding of the Panel content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-content-padding-block</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block padding of the Panel content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-text</td>
+    <td>String</td>
+    <td><code>var(--kendo-component-text, #{$kendo-component-text})</code></td>
+    <td><code>var(--kendo-component-text, var(--kendo-color-on-app-surface, #323130))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-bg</td>
+    <td>String</td>
+    <td><code>var(--kendo-component-bg, #{$kendo-component-bg})</code></td>
+    <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-border</td>
+    <td>String</td>
+    <td><code>var(--kendo-component-border, #{$kendo-component-border})</code></td>
+    <td><code>var(--kendo-component-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Panel.</div></div>
     </td>
 </tr>
 </tbody>
@@ -30646,6 +30876,46 @@ The following table lists the available variables for customizing the Fluent the
 </tbody>
 </table>
 
+### TimeMarker
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-current-time-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the current time indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-current-time-color</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
+    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the current time indicator.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### TimeSelector
 
 <table class="theme-variables">
@@ -34707,31 +34977,6 @@ The following table lists the available variables for customizing the Fluent the
 
 
 
-
-
-
-
-## Classnames
-
-
-
-### `. k-sr-only`
-
-This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
-
-
-
-
-### `.k-spacer`
-
-This is equivalent to `flex: 1 0 auto;`. If every other element has a fixed size in a flex container, the spacer will take up the remaining space.
-
-
-
-
-### `.k-spacer-sized`
-
-This is equivalent to `flex-grow: 0;`. The spacer will not take any of the remaining space in a flex container.
 
 
 
