@@ -78,6 +78,7 @@ export * from './notification/index';
 export * from './popover/index';
 export * from './tooltip/index';
 export * from './window/index';
+export * from './chart-wizard/index';
 
 // Navigation
 export * from './appbar/index';
