@@ -3,9 +3,6 @@
 
 @mixin kendo-slider--theme() {
 
-    $kendo-slider-tick-h-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
-    $kendo-slider-tick-v-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
-
     // Slider
     .k-slider {
         --INTERNAL--kendo-slider-text: var( --kendo-slider-text, #{$kendo-slider-text} );
