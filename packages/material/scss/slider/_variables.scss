@@ -1,7 +1,3 @@
-@import "./images/slider-h.scss";
-@import "./images/slider-v.scss";
-
-
 // Slider
 /// The default size of the Slider.
 /// @group slider
@@ -117,3 +113,10 @@ $kendo-slider-selection-bg: $kendo-color-primary !default;
 /// @group slider
 /// The opacity of the disabled Slider.
 $kendo-slider-disabled-opacity: .65 !default;
+
+/// The background image of the horizontal Slider tick.
+/// @group slider
+$kendo-slider-tick-horizontal-image: null !default;
+/// The background image of the vertical Slider tick.
+/// @group slider
+$kendo-slider-tick-vertical-image: null !default;
