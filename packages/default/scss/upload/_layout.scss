@@ -158,7 +158,7 @@
             .k-file-summary,
             .k-file-validation-message {
                 font-size: $kendo-upload-validation-font-size;
-                line-height: 1;
+                line-height: $kendo-upload-validation-line-height;
             }
 
 
