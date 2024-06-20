@@ -117,8 +117,8 @@
         // Message meta
         .k-message-time,
         .k-message-status {
-            font-size: smaller;
-            line-height: normal;
+            font-size: $kendo-chat-message-meta-font-size;
+            line-height: $kendo-chat-message-meta-line-height;
             white-space: nowrap;
             pointer-events: none;
             position: absolute;
@@ -200,8 +200,8 @@
     // Author
     .k-author {
         margin: 0;
-        font-size: smaller;
-        line-height: normal;
+        font-size: $kendo-chat-author-font-size;
+        line-height: $kendo-chat-author-line-height;
     }
     .k-chat .k-author {
         margin: 0; // Duplicate styles because of typography module
