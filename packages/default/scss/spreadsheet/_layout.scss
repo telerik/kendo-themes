@@ -738,8 +738,7 @@
             min-width: 100%;
             width: $kendo-spreadsheet-insert-image-dialog-preview-width;
             height: $kendo-spreadsheet-insert-image-dialog-preview-height;
-            // TODO: extract variable
-            background-image: url(#{k-map-get($_kendo-data-uris, $kendo-spreadsheet-insert-image-dialog-preview-img)});
+            background-image: url(#{$kendo-spreadsheet-insert-image-dialog-preview-img});
             background-size: auto 70%;
             background-position: 50% 30%;
             background-repeat: no-repeat;
