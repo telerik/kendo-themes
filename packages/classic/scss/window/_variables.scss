@@ -36,7 +36,7 @@ $kendo-window-titlebar-border-style: solid !default;
 $kendo-window-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The line height of the title of the Window.
 /// @group window
-$kendo-window-title-line-height: 1.25 !default;
+$kendo-window-title-line-height: var( --kendo-line-height-sm, normal ) !default;
 
 /// The spacing between the buttons in the Window titlebar.
 /// @group window
