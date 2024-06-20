@@ -4,7 +4,12 @@
 // Module meta
 $_kendo-module-meta: (
     name: "expander",
-    dependencies: ()
+    dependencies: (
+        "icon",
+        "list",
+        // "utils/layout/display",
+        // "utils/flex-grid"
+    )
 );
 
 

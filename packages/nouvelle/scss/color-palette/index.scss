@@ -4,7 +4,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "color-palette",
-    dependencies: ()
+    dependencies: (
+        // "utils/flex-grid"
+    )
 );
 
 

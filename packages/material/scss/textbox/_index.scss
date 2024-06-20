@@ -6,8 +6,10 @@
 $_kendo-module-meta: (
     name: "textbox",
     dependencies: (
+        "button",
+        "floating-label",
         "icon",
-        "input",
+        "input"
     )
 );
 

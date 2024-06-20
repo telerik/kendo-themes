@@ -4,7 +4,11 @@
 // Module meta
 $_kendo-module-meta: (
     name: "split-button",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "icon",
+        "menu"
+    )
 );
 
 

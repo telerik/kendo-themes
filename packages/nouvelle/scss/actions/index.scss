@@ -3,8 +3,11 @@
 
 // Module meta
 $_kendo-module-meta: (
-    name: "actions",
-    dependencies: ()
+    name: "action-buttons",
+    dependencies: (
+        "button",
+        "icon"
+    )
 );
 
 
@@ -20,13 +23,13 @@ $_kendo-module-meta: (
 
 
 // Expose
-@mixin kendo-actions--styles() {
-    @include module-render( "actions" ) {
-        @include kendo-actions--layout();
-        @include kendo-actions--theme();
+@mixin kendo-action-buttons--styles() {
+    @include module-render( "action-buttons" ) {
+        @include kendo-action-buttons--layout();
+        @include kendo-action-buttons--theme();
     }
 }
 
 @if $kendo-auto-bootstrap {
-    @include kendo-actions--styles();
+    @include kendo-action-buttons--styles();
 }

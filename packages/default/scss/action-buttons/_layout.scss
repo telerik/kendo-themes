@@ -1,4 +1,4 @@
-@mixin kendo-actions--layout-base() {
+@mixin kendo-action-buttons--layout-base() {
 
     // Actions
     .k-actions {
@@ -65,6 +65,6 @@
 }
 
 
-@mixin kendo-actions--layout() {
-    @include kendo-actions--layout-base();
+@mixin kendo-action-buttons--layout() {
+    @include kendo-action-buttons--layout-base();
 }

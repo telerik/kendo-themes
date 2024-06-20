@@ -382,7 +382,7 @@
 
 
     // Form helpers
-    @include forms-styles();
+    @include form-styles();
     @include validator-styles();
     @include floating-label-styles();
 
@@ -403,29 +403,29 @@
 
     // Form requirements
     @include calendar-styles();
-    @include timeselector-styles();
+    @include time-selector-styles();
 
 
     // Augmented forms
     @include autocomplete-styles();
     @include captcha-styles();
-    @include colorpalette-styles();
-    @include colorgradient-styles();
-    @include coloreditor-styles();
-    @include colorpicker-styles();
+    @include color-palette-styles();
+    @include color-gradient-styles();
+    @include color-editor-styles();
+    @include color-picker-styles();
     @include combobox-styles();
-    @include dateinput-styles();
-    @include datepicker-styles();
-    @include timepicker-styles();
-    @include timedurationpicker-styles();
-    @include datetimepicker-styles();
-    @include daterangepicker-styles();
-    @include dropdowngrid-styles();
-    @include dropdownlist-styles();
-    @include dropdowntree-styles();
-    @include maskedtextbox-styles();
+    @include date-input-styles();
+    @include date-picker-styles();
+    @include time-picker-styles();
+    @include time-duration-picker-styles();
+    @include date-time-picker-styles();
+    @include date-range-picker-styles();
+    @include dropdown-grid-styles();
+    @include dropdown-list-styles();
+    @include dropdown-tree-styles();
+    @include masked-textbox-styles();
     @include multiselect-styles();
-    @include numerictextbox-styles();
+    @include numeric-textbox-styles();
     @include rating-styles();
     @include searchbox-styles();
     @include switch-styles();
@@ -447,7 +447,7 @@
     @include drawer-styles();
     @include notification-styles();
     @include popover-styles();
-    @include responsivepanel-styles();
+    @include responsive-panel-styles();
 
 
     // Navigation
@@ -462,10 +462,10 @@
 
     // Layout & containers
     @include card-styles();
-    @include expansion-panel-styles();
+    @include expander-styles();
     @include panelbar-styles();
     @include splitter-styles();
-    @include tilelayout-styles();
+    @include tile-layout-styles();
     @include dock-manager-styles();
 
     // Data management
@@ -475,13 +475,13 @@
     @include pivotgrid-styles();
     @include treelist-styles();
     @include filter-styles();
-    @include filemanager-styles();
-    @include taskboard-styles();
+    @include file-manager-styles();
+    @include task-board-styles();
 
 
     // Editors
     @include editor-styles();
-    @include imageeditor-styles();
+    @include image-editor-styles();
 
 
     // Scheduling
@@ -492,7 +492,7 @@
     // Misc
     @include adaptive-styles();
     @include chat-styles();
-    @include mediaplayer-styles();
+    @include media-player-styles();
     @include timeline-styles();
     @include pdf-viewer-styles();
     @include scroller-styles();

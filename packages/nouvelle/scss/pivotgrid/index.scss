@@ -4,7 +4,19 @@
 // Module meta
 $_kendo-module-meta: (
     name: "pivotgrid",
-    dependencies: ()
+    dependencies: (
+        "action-buttons",
+        "button",
+        "chip",
+        "form",
+        "dialog",
+        "grid",
+        "icon",
+        "list",
+        "treeview",
+        // "utils/flex-grid",
+        // "utils/layout/position"
+    )
 );
 
 

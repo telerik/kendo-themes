@@ -4,7 +4,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "color-editor",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "action-buttons",
+        "color-gradient",
+        "color-palette",
+        "color-preview"
+    )
 );
 
 

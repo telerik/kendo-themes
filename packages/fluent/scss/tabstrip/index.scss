@@ -2,9 +2,10 @@
 $_kendo-module-meta: (
     name: "tabstrip",
     dependencies: (
-        "icon",
         "button",
-        "list"
+        "icon",
+        "list",
+        "menu-button"
     )
 );
 

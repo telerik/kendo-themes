@@ -26,7 +26,7 @@ $_kendo-module-meta: (
 
 // Expose
 @mixin kendo-color-picker--styles() {
-    @include module-render( "colorpicker" ) {
+    @include module-render( "color-picker" ) {
         @include kendo-color-picker--layout();
         @include kendo-color-picker--theme();
     }

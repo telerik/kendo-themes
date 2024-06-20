@@ -2,10 +2,11 @@
 $_kendo-module-meta: (
     name: "fab",
     dependencies: (
-        "icon",
-        "button",
         "badge",
-        "popup"
+        "button",
+        "icon",
+        "popup",
+        // "utils/layout/position"
     )
 );
 

@@ -1,12 +1,13 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "dropdownlist",
+    name: "dropdown-list",
     dependencies: (
-        "input",
+        "button",
         "floating-label",
-        "popup",
-        "list"
-
+        "icon",
+        "input",
+        "list",
+        "popup"
     )
 );
 
@@ -20,10 +21,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin dropdownlist-styles() {
-    @include module.render( "dropdownlist" ) {
-        @include kendo-dropdownlist--layout();
-        @include kendo-dropdownlist--theme();
+@mixin dropdown-list-styles() {
+    @include module.render( "dropdown-list" ) {
+        @include kendo-dropdown-list--layout();
+        @include kendo-dropdown-list--theme();
     }
 }
-

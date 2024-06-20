@@ -4,7 +4,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "signature",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "color-picker",
+        "icon",
+        "input",
+        "split-button"
+    )
 );
 
 

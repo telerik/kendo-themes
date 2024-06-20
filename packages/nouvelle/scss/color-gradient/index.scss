@@ -4,7 +4,15 @@
 // Module meta
 $_kendo-module-meta: (
     name: "color-gradient",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "icon",
+        "numeric-textbox",
+        "slider",
+        "textbox",
+        // "utils/flex-grid",
+        // "utils/spacer
+    )
 );
 
 

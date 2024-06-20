@@ -4,7 +4,16 @@
 // Module meta
 $_kendo-module-meta: (
     name: "filter",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "checkbox",
+        "date-time-picker",
+        "dropdown-list",
+        "input",
+        "numeric-textbox",
+        "textbox",
+        "toolbar"
+    )
 );
 
 

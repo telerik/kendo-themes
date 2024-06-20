@@ -1,7 +1,7 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-dropdowntree--layout() {
+@mixin kendo-dropdown-tree--layout() {
 
     // Dropdown tree
     .k-dropdown-tree {}

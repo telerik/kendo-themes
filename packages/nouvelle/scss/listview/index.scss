@@ -4,7 +4,11 @@
 // Module meta
 $_kendo-module-meta: (
     name: "listview",
-    dependencies: ()
+    dependencies: (
+        "icon",
+        "pager",
+        // "utils/flex-grid"
+    )
 );
 
 

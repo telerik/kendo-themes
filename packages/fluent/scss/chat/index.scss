@@ -2,9 +2,11 @@
 $_kendo-module-meta: (
     name: "chat",
     dependencies: (
-        "input",
+        "avatar",
+        "button",
         "card",
         "icon",
+        "input",
         "toolbar"
     )
 );

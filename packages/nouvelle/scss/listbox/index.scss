@@ -5,6 +5,9 @@
 $_kendo-module-meta: (
     name: "listbox",
     dependencies: (
+        "button",
+        "checkbox",
+        "icon",
         "list"
     )
 );

@@ -1,8 +1,10 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "tilelayout",
+    name: "tile-layout",
     dependencies: (
-        "card"
+        "button",
+        "card",
+        "icon"
     )
 );
 
@@ -17,8 +19,8 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin tilelayout-styles() {
-    @include module.render( "tilelayout" ) {
+@mixin tile-layout-styles() {
+    @include module.render( "tile-layout" ) {
         @include kendo-tile-layout--layout();
         @include kendo-tile-layout--theme();
     }

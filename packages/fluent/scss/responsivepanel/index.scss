@@ -1,6 +1,6 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "responsivepanel",
+    name: "responsive-panel",
     dependencies: (
         "icon"
     )
@@ -17,9 +17,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin responsivepanel-styles() {
-    @include module.render( "responsivepanel" ) {
-        @include kendo-responsivepanel--layout();
-        @include kendo-responsivepanel--theme();
+@mixin responsive-panel-styles() {
+    @include module.render( "responsive-panel" ) {
+        @include kendo-responsive-panel--layout();
+        @include kendo-responsive-panel--theme();
     }
 }

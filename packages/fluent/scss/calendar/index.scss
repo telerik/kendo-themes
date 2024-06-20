@@ -1,8 +1,10 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "button",
+    name: "calendar",
     dependencies: (
-        "button"
+        "button",
+        "icon",
+        "list"
     )
 );
 

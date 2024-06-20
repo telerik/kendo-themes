@@ -4,7 +4,32 @@
 // Module meta
 $_kendo-module-meta: (
     name: "grid",
-    dependencies: ()
+    dependencies: (
+        "action-buttons",
+        "autocomplete",
+        "badge",
+        "button",
+        "checkbox",
+        "chip",
+        "date-time-picker",
+        "dialog",
+        "dropdown-list",
+        "icon",
+        "input",
+        "list",
+        "menu",
+        "numeric-textbox",
+        "pager",
+        "progressbar",
+        "radio",
+        "skeleton",
+        "table",
+        "tabstrip",
+        "textbox",
+        "toolbar",
+        "validator",
+        // "utils/layout/float"
+    )
 );
 
 

@@ -1,10 +1,11 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "timeselector",
+    name: "time-selector",
     dependencies: (
-        "list",
         "action-buttons",
-        "button"
+        "button",
+        "icon",
+        "list"
     )
 );
 
@@ -19,9 +20,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin timeselector-styles() {
-    @include module.render( "timeselector" ) {
-        @include kendo-timeselector--layout();
-        @include kendo-timeselector--theme();
+@mixin time-selector-styles() {
+    @include module.render( "time-selector" ) {
+        @include kendo-time-selector--layout();
+        @include kendo-time-selector--theme();
     }
 }

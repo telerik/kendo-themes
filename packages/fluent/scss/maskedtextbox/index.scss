@@ -1,10 +1,10 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "maskedtextbox",
+    name: "masked-textbox",
     dependencies: (
+        "icon",
         "input",
-        "floating-label",
-        "icon"
+        "floating-label"
     )
 );
 
@@ -18,9 +18,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin maskedtextbox-styles() {
-    @include module.render( "maskedtextbox" ) {
-        @include kendo-maskedtextbox--layout();
-        @include kendo-maskedtextbox--theme();
+@mixin masked-textbox-styles() {
+    @include module.render( "masked-textbox" ) {
+        @include kendo-masked-textbox--layout();
+        @include kendo-masked-textbox--theme();
     }
 }

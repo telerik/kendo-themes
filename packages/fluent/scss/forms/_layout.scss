@@ -6,7 +6,7 @@
 @use "../window/_variables.scss" as *;
 @use "../core/spacing" as *;
 
-@mixin kendo-forms--layout() {
+@mixin kendo-form--layout() {
 
     // Common
     .k-form,
