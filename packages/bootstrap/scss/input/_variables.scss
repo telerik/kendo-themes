@@ -7,7 +7,7 @@ $kendo-input-default-width: 100% !default;
 /// The border width of the Input components.
 /// @group input
 $kendo-input-border-width: $input-border-width !default;
-$kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
+$kendo-input-border-height: calc( #{$kendo-input-border-width} * 2 ) !default;
 /// The border radius of the Input components.
 /// @group input
 $kendo-input-border-radius: null !default;
