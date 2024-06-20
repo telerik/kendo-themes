@@ -1,5 +1,3 @@
-@import "./images/alpha-slider-bgr.scss";
-
 // ColorGradient
 
 /// The spacer of the ColorGradient.
@@ -76,6 +74,9 @@ $kendo-color-gradient-slider-vertical-size: 180px !default;
 /// The width of the ColorGradient horizontal slider.
 /// @group color-gradient
 $kendo-color-gradient-slider-horizontal-size: 100% !default;
+/// The background image of the ColorGradient alpha slider.
+/// @group color-gradient
+$kendo-color-gradient-slider-alpha-bgr: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgBxYyxDQAwDMJIL+YT+DjtzFRliUfLcklqBCRT4eCTxbD6kdL2/LgYXqpvCbs3kBv/AAAAAElFTkSuQmCC" !default;
 
 /// The width of the ColorGradient canvas drag handle.
 /// @group color-gradient

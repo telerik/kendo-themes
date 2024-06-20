@@ -59,7 +59,7 @@
 
     .k-colorgradient-slider.k-alpha-slider .k-slider-track::before {
         // TODO: extract variable
-        background: url(#{k-map-get($_kendo-data-uris, "alpha-slider-bgr.png")}) center repeat;
+        background: url(#{$kendo-color-gradient-slider-alpha-bgr}) center repeat;
     }
 
     // Inputs
