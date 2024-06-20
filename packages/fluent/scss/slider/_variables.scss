@@ -149,3 +149,10 @@ $kendo-slider-thumb-transition-speed: .4s !default;
 /// The transition function of the Slider thumb.
 /// @group slider
 $kendo-slider-thumb-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+
+/// The background image of the horizontal Slider tick.
+/// @group slider
+$kendo-slider-tick-h-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+/// The background image of the vertical Slider tick.
+/// @group slider
+$kendo-slider-tick-v-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;

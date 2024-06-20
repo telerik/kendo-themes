@@ -1,10 +1,5 @@
 @mixin kendo-slider--theme-base() {
 
-    // TODO: move to variables
-    $kendo-slider-tick-horizontal-image: k-map-get($_kendo-data-uris, "slider-h.gif") !default;
-    $kendo-slider-tick-vertical-image: k-map-get($_kendo-data-uris, "slider-v.gif") !default;
-
-
     // Slider
     .k-slider {
         // TODO: extract variables
