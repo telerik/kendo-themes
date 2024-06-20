@@ -135,7 +135,7 @@ $kendo-card-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-card-subtitle-font-family: null !default;
 /// The line height of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-line-height: normal !default;
+$kendo-card-subtitle-line-height: var( --kendo-line-height-lg, normal ) !default;
 /// The font weight of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-font-weight: var( --kendo-font-weight-normal, normal ) !default;
