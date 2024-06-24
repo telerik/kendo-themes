@@ -219,7 +219,7 @@
         .k-timeline-circle {
             margin-top: $kendo-timeline-track-event-offset;
             transform: translate(-50%, -50%);
-            margin-right: - k-math-div( $kendo-timeline-circle-width, 2 );
+            margin-right: calc(-1 * #{k-math-div( $kendo-timeline-circle-width, 2 )});
         }
 
         &.k-timeline-alternating {
@@ -331,7 +331,7 @@
 
         .k-timeline-track-wrap {
             position: relative;
-            padding: k-math-div( $kendo-timeline-track-arrow-height, 2 ) 0;
+            padding: calc(#{k-math-div( $kendo-timeline-track-arrow-height, 2 )}) 0;
 
             &::after {
                 top: auto;

@@ -279,7 +279,7 @@
 
         .k-grouping-row .k-icon {
             margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
-            margin-inline-end: k-math-div( $kendo-icon-size, 2 );
+            margin-inline-end: calc(#{k-math-div( $kendo-icon-size, 2 )});
             text-decoration: none;
         }
 

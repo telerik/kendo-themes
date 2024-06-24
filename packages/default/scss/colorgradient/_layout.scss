@@ -83,7 +83,7 @@
         &.k-slider-vertical .k-slider-track {
             width: $kendo-color-gradient-slider-track-size;
             border-radius: $kendo-color-gradient-slider-border-radius;
-            margin-left: - k-math-div( $kendo-color-gradient-slider-track-size, 2 );
+            margin-left: calc(-1 * #{k-math-div( $kendo-color-gradient-slider-track-size, 2 )});
         }
 
         &.k-slider-horizontal {
@@ -94,7 +94,7 @@
         &.k-slider-horizontal .k-slider-track {
             height: $kendo-color-gradient-slider-track-size;
             border-radius: $kendo-color-gradient-slider-border-radius;
-            margin-top: - k-math-div( $kendo-color-gradient-slider-track-size, 2 );
+            margin-top: calc(-1 * #{k-math-div( $kendo-color-gradient-slider-track-size, 2 )});
         }
 
         &.k-alpha-slider .k-slider-track::before {

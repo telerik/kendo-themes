@@ -64,7 +64,7 @@
     }
     .k-mediaplayer-volume-wrap {
         // TODO: When slider draghandle size is exposed, use it instead
-        padding: 0 k-math-div( 14px, 2 );
+        padding: 0 calc(#{k-math-div( 14px, 2 )});
         align-items: center;
     }
     .k-mediaplayer-volume {

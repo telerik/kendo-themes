@@ -274,8 +274,8 @@
     // Insert table
     .k-ct-popup {
         box-sizing: border-box;
-        width: $ct-cell-size * 10 - k-math-div( $ct-cell-size, 2 );
-        padding: k-math-div( $ct-cell-size, 4 );
+        width: calc( #{$ct-cell-size} * 10 - #{k-math-div( $ct-cell-size, 2 )});
+        padding: calc(#{k-math-div( $ct-cell-size, 4 )});
 
         .k-button {
             width: 100%;

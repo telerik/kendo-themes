@@ -129,7 +129,7 @@ $kendo-orgchart-card-body-border-color: transparent !default;
 
 /// The right margin of the OrgChart Card body title wrap.
 /// @group orgchart
-$kendo-orgchart-card-body-vbox-margin-right: k-math-div( $kendo-orgchart-spacer, 2 ) !default;
+$kendo-orgchart-card-body-vbox-margin-right: calc(#{k-math-div( $kendo-orgchart-spacer, 2 )}) !default;
 /// The min height of the OrgChart Card body title wrap.
 /// @group orgchart
 $kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;

@@ -49,7 +49,7 @@ $kendo-timeline-track-arrow-disabled-border: if($kendo-enable-color-system, k-co
 $kendo-timeline-track-size: 6px !default;
 /// The bottom padding of the Timeline's track wrapper.
 /// @group timeline
-$kendo-timeline-track-wrap-padding-bottom: k-math-div( $kendo-timeline-track-size, 2 ) !default;
+$kendo-timeline-track-wrap-padding-bottom: calc(#{k-math-div( $kendo-timeline-track-size, 2 )}) !default;
 /// The border width of the Timeline track.
 /// @group timeline
 $kendo-timeline-track-border-width: 1px !default;

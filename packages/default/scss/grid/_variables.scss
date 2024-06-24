@@ -47,7 +47,7 @@ $kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
 $kendo-grid-edit-cell-padding-y: calc( #{k-spacing(1.5)} / 2 ) !default;
 
 $kendo-grid-group-drop-hint-size: 6px !default;
-$kendo-grid-group-drop-hint-line-size: k-math-div( $kendo-grid-group-drop-hint-size, 3 ) !default;
+$kendo-grid-group-drop-hint-line-size: calc(#{k-math-div( $kendo-grid-group-drop-hint-size, 3 )}) !default;
 $kendo-grid-group-drop-hint-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 $kendo-grid-group-drop-hint-top: 3px !default;
 

@@ -116,10 +116,10 @@ $kendo-color-gradient-draghandle-shadow: k-elevation(2) !default;
 
 /// The vertical margin of the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-canvas-draghandle-margin-y: - k-math-div( $kendo-color-gradient-draghandle-height, 2 ) !default;
+$kendo-color-gradient-canvas-draghandle-margin-y: calc(-1 * #{k-math-div( $kendo-color-gradient-draghandle-height, 2 )}) !default;
 /// The horizontal margin of the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-canvas-draghandle-margin-x: - k-math-div( $kendo-color-gradient-draghandle-width, 2 ) !default;
+$kendo-color-gradient-canvas-draghandle-margin-x: calc(-1 * #{k-math-div( $kendo-color-gradient-draghandle-width, 2 )}) !default;
 
 /// The width of the ColorGradient input.
 /// @group color-gradient

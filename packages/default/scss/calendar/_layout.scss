@@ -353,7 +353,7 @@
                 z-index: 1;
                 width: 150%;
                 left: -25%;
-                box-shadow: 0 0 $kendo-calendar-cell-size k-math-div( $kendo-calendar-cell-size, 2 ) $kendo-calendar-bg;
+                box-shadow: 0 0 $kendo-calendar-cell-size calc(#{k-math-div( $kendo-calendar-cell-size, 2 )}) $kendo-calendar-bg;
             }
         }
 
@@ -393,7 +393,7 @@
             width: 200%;
             left: -50%;
             $shadow-size: 3 * $kendo-calendar-navigation-item-height;
-            box-shadow: 0 0 $shadow-size k-math-div( $shadow-size, 2 ) $kendo-calendar-navigation-bg;
+            box-shadow: 0 0 $shadow-size calc( #{k-math-div( $shadow-size, 2 )} ) $kendo-calendar-navigation-bg;
         }
 
         &::before { top: 0; }

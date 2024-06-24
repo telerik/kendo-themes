@@ -50,7 +50,7 @@
         &::before,
         &::after {
             $shadow-size: 3em;
-            box-shadow: 0 0 $shadow-size k-math-div( $shadow-size, 2 ) $kendo-time-selector-bg;
+            box-shadow: 0 0 $shadow-size calc(#{k-math-div( $shadow-size, 2 )}) $kendo-time-selector-bg;
         }
 
         .k-item:hover {

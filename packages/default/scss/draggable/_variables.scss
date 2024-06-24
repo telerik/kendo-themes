@@ -18,7 +18,7 @@ $kendo-drag-hint-opacity: null !default;
 
 // Drop hint
 $kendo-drop-hint-arrow-size: 8px !default;
-$kendo-drop-hint-arrow-spacing: k-math-div( $kendo-drop-hint-arrow-size, 2 ) !default;
+$kendo-drop-hint-arrow-spacing: calc(#{k-math-div( $kendo-drop-hint-arrow-size, 2 )}) !default;
 $kendo-drop-hint-line-h-width: 20px !default;
 $kendo-drop-hint-line-h-height: 1px !default;
 $kendo-drop-hint-line-v-width: $kendo-drop-hint-line-h-height !default;

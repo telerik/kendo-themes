@@ -163,7 +163,7 @@ $kendo-gantt-planned-moment-border-radius: calc( ( #{$kendo-gantt-planned-border
 $kendo-gantt-planned-moment-left-margin-x: calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} ) !default;
 /// The horizontal margin of the Gantt milestone planned line dot.
 /// @group gantt
-$kendo-gantt-planned-milestone-moment-margin-x: k-math-div( $kendo-gantt-planned-moment-width, 2 ) !default;
+$kendo-gantt-planned-milestone-moment-margin-x: calc(#{k-math-div( $kendo-gantt-planned-moment-width, 2 )}) !default;
 
 /// The default height of the Gantt planned line.
 /// @group gantt

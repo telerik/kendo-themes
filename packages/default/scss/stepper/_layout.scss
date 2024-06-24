@@ -119,7 +119,7 @@
             z-index: 1;
         }
         .k-step-label:only-child {
-            @include border-radius( k-math-div( ( $kendo-stepper-indicator-height + 2 * $kendo-stepper-indicator-border-width ), 2 ) );
+            @include border-radius( calc(#{k-math-div( ( $kendo-stepper-indicator-height + 2 * $kendo-stepper-indicator-border-width ), 2 )}) );
             padding-block: $kendo-stepper-label-padding-y;
             padding-inline: $kendo-stepper-label-padding-x;
             border-width: 0;
