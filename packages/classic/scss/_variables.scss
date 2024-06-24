@@ -14,7 +14,7 @@ $kendo-use-input-spinner-icon-offset: false !default;
 
 $kendo-auto-bootstrap: true !default;
 
-$kendo-nested-disabled: true !default;
+// $kendo-nested-disabled: true !default;
 
 // Icons
 $kendo-icon-size: 16px !default;
@@ -40,13 +40,13 @@ $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, bord
 
 
 // Disabled mixin variables
-$kendo-disabled-filter: grayscale(.1) !default;
-$kendo-disabled-opacity: .6 !default;
+// $kendo-disabled-filter: grayscale(.1) !default;
+// $kendo-disabled-opacity: .6 !default;
 
-$kendo-disabled-styling: (
-    opacity: $kendo-disabled-opacity,
-    filter: $kendo-disabled-filter
-) !default;
+// $kendo-disabled-styling: (
+//     opacity: $kendo-disabled-opacity,
+//     filter: $kendo-disabled-filter
+// ) !default;
 
 
 // Loading
