@@ -39,7 +39,11 @@
     core.$kendo-selected-hover-text: core.$kendo-selected-text;
     core.$kendo-selected-hover-border: core.k-color( primary-hover );
     core.$kendo-selected-hover-gradient: core.$kendo-base-gradient;
-    core.$kendo-disabled-text: core.k-color( on-app-surface );
+    core.$kendo-disabled-text: null;
+    core.$kendo-disabled-bg: null;
+    core.$kendo-disabled-border: null;
+    core.$kendo-disabled-opacity: .6;
+    core.$kendo-disabled-filter: grayscale(.1);
     core.$kendo-component-header-bg: core.$kendo-base-bg;
     core.$kendo-component-header-text: core.$kendo-base-text;
     core.$kendo-component-header-border: core.$kendo-base-border;
@@ -62,11 +66,11 @@
         "inverse": core.$kendo-color-inverse,
     );
 
-    $kendo-disabled-styling: (
-        bg: $kendo-disabled-bg,
-        color: $kendo-disabled-text,
-        border: $kendo-disabled-border,
-        opacity: $kendo-disabled-opacity,
-        filter: $kendo-disabled-filter
+    core.$kendo-disabled-styling: (
+        bg: core.$kendo-disabled-bg,
+        color: core.$kendo-disabled-text,
+        border: core.$kendo-disabled-border,
+        opacity: core.$kendo-disabled-opacity,
+        filter: core.$kendo-disabled-filter
     );
 }
