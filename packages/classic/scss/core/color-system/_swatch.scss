@@ -7,6 +7,8 @@
 // Config
 $kendo-enable-color-system: true !default;
 
+$kendo-nested-disabled: true !default;
+
 // Colors
 $_default-colors: (
     // Misc
@@ -642,3 +644,17 @@ $kendo-valid-border: $kendo-color-success !default;
 /// Shadow of the valid items.
 /// @group component
 $kendo-valid-shadow: null !default;
+
+$kendo-disabled-bg: null !default;
+$kendo-disabled-text: null !default;
+$kendo-disabled-border: null !default;
+$kendo-disabled-opacity: .6 !default;
+$kendo-disabled-filter: grayscale(.1) !default;
+
+$kendo-disabled-styling: (
+    bg: $kendo-disabled-bg,
+    color: $kendo-disabled-text,
+    border: $kendo-disabled-border,
+    opacity: $kendo-disabled-opacity,
+    filter: $kendo-disabled-filter
+) !default;
