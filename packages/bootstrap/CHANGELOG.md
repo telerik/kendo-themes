@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.0...v8.1.0-dev.1) (2024-06-24)
+
+
+### Features
+
+* **bootstrap:** update main-dark swatch ([537f168](https://github.com/telerik/kendo-themes/commit/537f168cd20502bb1ac4642d901d7f594554a733))
+
+
+
+
+
 # [8.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.0.2-dev.4...v8.1.0-dev.0) (2024-06-17)
 
 

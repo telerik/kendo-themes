@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.0...v8.1.0-dev.1) (2024-06-24)
+
+
+### Features
+
+* **fluent:** add main-dark swatch ([b7dd92c](https://github.com/telerik/kendo-themes/commit/b7dd92c20f7458c964ff64371d0aab0ab9589e8e))
+
+
+
+
+
 # [8.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.0.2-dev.4...v8.1.0-dev.0) (2024-06-17)
 
 
