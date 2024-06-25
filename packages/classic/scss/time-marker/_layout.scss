@@ -1,3 +1,4 @@
+@use "./variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/time-marker/_layout.scss";
 
 @mixin kendo-time-marker--layout() {
