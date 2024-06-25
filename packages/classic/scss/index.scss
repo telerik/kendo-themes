@@ -365,9 +365,9 @@
 
     // Primitive components
     @include draggable-styles();
-    @include action-buttons-styles();
     @include list-styles();
     @include listgroup-styles();
+    @include action-buttons-styles();
     @include overlay-styles();
     @include popup-styles();
     @include ripple-styles();
