@@ -39,7 +39,7 @@ To include the Segoe UI font in your project, follow these steps:
 2. Add the downloaded font files to your project's assets folder. {% platform_content angular %} For Angular, make sure that the folder is included in the assets section of the `angular.json` file. {% endplatform_content %} {% platform_content react %} For React, make sure that the folder is included in the `public` directory. {% endplatform_content %}{% platform_content vue %} For Vue, make sure that the folder is included in the `public` directory. {% endplatform_content %}
 3. In your HTML file or global style sheet, add the following code to include the font:
 
-```html-no-run
+```html
 <style>
   @font-face {
     font-family: 'Segoe UI';
@@ -58,7 +58,7 @@ Make sure to replace the path in the `url` property with the actual path to the 
 
 4. Finally, update the CSS code in your file to use the Segoe UI font:
 
-```html-no-run
+```html
 <style>
   body { font-family: "Segoe UI", sans-serif; }
 </style>
@@ -72,7 +72,7 @@ The Kendo UI Fluent theme utilizes [CSS custom properties (variables)](https://d
 
 The Kendo UI Fluent theme exposes root variables that are globally available:
 
-```html-no-run
+```html
 <style>
   :root { --kendo-font-size: 20px; }
 </style>
@@ -80,7 +80,7 @@ The Kendo UI Fluent theme exposes root variables that are globally available:
 
 As well as variables targeting specific components:
 
-```html-no-run
+```html
 <style>
   .k-button { --kendo-button-bg: hotpink; }
 </style>
