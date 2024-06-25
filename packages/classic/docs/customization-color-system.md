@@ -895,7 +895,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-primary-contrast</td>
     <td>Color</td>
-    <td><code>k-contrast-legacy( $kendo-color-primary )</code></td>
+    <td><code>functions.k-contrast-legacy( $kendo-color-primary )</code></td>
     <td><span class="color-preview" style="background-color: var(--kendo-color-on-primary, #ffffff)"></span><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -915,8 +915,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-secondary-contrast</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-secondary )</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td><code>functions.k-contrast-color( $kendo-color-secondary )</code></td>
+    <td><span class="color-preview" style="background-color: null"></span><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $kendo-color-secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -935,8 +935,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-tertiary-contrast</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-tertiary )</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td><code>functions.k-contrast-color( $kendo-color-tertiary )</code></td>
+    <td><span class="color-preview" style="background-color: null"></span><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $kendo-color-tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>

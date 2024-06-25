@@ -34,7 +34,7 @@ The following table lists the available variables for customizing the Classic th
 <tbody><tr>
     <td>$kendo-body-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>constants.$kendo-color-white</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -82,6 +82,86 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-padding-x</td>
+    <td></td>
+    <td><code>k-spacing(2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-y</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-x</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-y</td>
+    <td></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-x</td>
+    <td></td>
+    <td><code>k-spacing(2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-y</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-x</td>
+    <td></td>
+    <td><code>k-spacing(3)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-y</td>
+    <td></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-base-bg</td>
     <td>String</td>
     <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
@@ -104,7 +184,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-base-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-base-bg, 2 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-base-bg, 2 )</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -124,7 +204,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-hover-bg</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-base-bg, 1 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-base-bg, 1 )</code></td>
     <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
 </tr>
 <tr>
@@ -144,7 +224,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-hover-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-hover-bg, 2 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-hover-bg, 2 )</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -174,7 +254,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-selected-text</td>
     <td>String</td>
-    <td><code>k-contrast-legacy( $kendo-selected-bg )</code></td>
+    <td><code>functions.k-contrast-legacy( $kendo-selected-bg )</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -184,7 +264,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-selected-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-selected-bg, 2 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-selected-bg, 2 )</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -204,7 +284,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-selected-bg, 1 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-selected-bg, 1 )</code></td>
     <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
@@ -214,7 +294,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-selected-hover-text</td>
     <td>String</td>
-    <td><code>k-contrast-legacy( $kendo-selected-hover-bg )</code></td>
+    <td><code>functions.k-contrast-legacy( $kendo-selected-hover-bg )</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -315,7 +395,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$wcag-min-contrast-ratio</td>
     <td>Number</td>
     <td><code>7</code></td>
-    <td><code>4.5</code></td>
+    <td><code>7</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The contrast ratio to reach against white, to determine if color changes from "light" to "dark".<br />Acceptable values for WCAG 2.0 are 3, 4.5 and 7.</div></div>
@@ -6773,7 +6853,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-color-primary-contrast</td>
     <td>Color</td>
-    <td><code>k-contrast-legacy( $kendo-color-primary )</code></td>
+    <td><code>functions.k-contrast-legacy( $kendo-color-primary )</code></td>
     <td><span class="color-preview" style="background-color: var(--kendo-color-on-primary, #ffffff)"></span><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -6793,8 +6873,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-color-secondary-contrast</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-secondary )</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td><code>functions.k-contrast-color( $kendo-color-secondary )</code></td>
+    <td><span class="color-preview" style="background-color: null"></span><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $kendo-color-secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -6813,8 +6893,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-color-tertiary-contrast</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-tertiary )</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td><code>functions.k-contrast-color( $kendo-color-tertiary )</code></td>
+    <td><span class="color-preview" style="background-color: null"></span><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $kendo-color-tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -7912,9 +7992,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-valid-bg</td>
-    <td>Null</td>
+    <td></td>
     <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the valid items.</div></div>
@@ -7922,9 +8002,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-valid-text</td>
-    <td>Color</td>
+    <td></td>
     <td><code>$kendo-color-success</code></td>
-    <td><span class="color-preview" style="background-color: #3ea44e"></span><code>#3ea44e</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the valid items.</div></div>
@@ -7932,9 +8012,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-valid-border</td>
-    <td>Color</td>
+    <td></td>
     <td><code>$kendo-color-success</code></td>
-    <td><span class="color-preview" style="background-color: #3ea44e"></span><code>#3ea44e</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the valid items.</div></div>
@@ -7942,9 +8022,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-valid-shadow</td>
-    <td>Null</td>
+    <td></td>
     <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the valid items.</div></div>
@@ -12480,6 +12560,56 @@ The following table lists the available variables for customizing the Classic th
 </tbody>
 </table>
 
+### Icon
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-icon-size</td>
+    <td>Number</td>
+    <td><code>1rem</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the icons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the icons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Padding of the action icons container.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Input
 
 <table class="theme-variables">
@@ -16405,9 +16535,9 @@ The following table lists the available variables for customizing the Classic th
 </thead>
 <tbody><tr>
     <td>$kendo-palette-ash-gray</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-ash-gray</code></td>
-    <td><ul><li>1: #fafafa</li><li>2: #f0f0f0</li><li>3: #ebebeb</li><li>4: #dddddd</li><li>5: #d6d6d6</li><li>6: #cacaca</li><li>7: #b6b6b6</li><li>8: #a3a3a3</li><li>9: #8f8f8f</li><li>10: #7a7a7a</li><li>11: #666666</li><li>12: #525252</li><li>13: #404040</li><li>14: #333333</li><li>15: #272727</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Ash Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
@@ -16415,9 +16545,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-tangerine-orange</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-tangerine-orange</code></td>
-    <td><ul><li>1: #fff2eb</li><li>2: #ffe5d6</li><li>3: #ffd8c2</li><li>4: #ffcbad</li><li>5: #ffbe99</li><li>6: #ffa570</li><li>7: #ff8b47</li><li>8: #ff711f</li><li>9: #f35800</li><li>10: #e05100</li><li>11: #cc4a00</li><li>12: #b94300</li><li>13: #a53c00</li><li>14: #7a2d00</li><li>15: #3d1600</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Tangerine Orange Palette provides colors to the Primary variable group.</div></div>
@@ -16425,9 +16555,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-dodger-blue</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-dodger-blue</code></td>
-    <td><ul><li>1: #ebf8ff</li><li>2: #d7f2ff</li><li>3: #b8e8fe</li><li>4: #9cdffe</li><li>5: #72d1fe</li><li>6: #49c4fd</li><li>7: #2cbbfd</li><li>8: #0db1fd</li><li>9: #03a9f4</li><li>10: #039be0</li><li>11: #038ecd</li><li>12: #0280b9</li><li>13: #0273a6</li><li>14: #014c6f</li><li>15: #01364e</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Dodger Blue Palette provides colors to the Tertiary variable group.</div></div>
@@ -16435,9 +16565,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-grass-green</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-grass-green</code></td>
-    <td><ul><li>1: #f1f8f2</li><li>2: #e3f2e6</li><li>3: #d8eddc</li><li>4: #bbdfc1</li><li>5: #9ed1a6</li><li>6: #82c48c</li><li>7: #6ebb7a</li><li>8: #4db25c</li><li>9: #3ea44e</li><li>10: #399748</li><li>11: #348a42</li><li>12: #2f7d3b</li><li>13: #2a7035</li><li>14: #1f5126</li><li>15: #16391b</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Grass Green Palette provides colors to the Success variable group.</div></div>
@@ -16445,9 +16575,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-lake-blue</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-lake-blue</code></td>
-    <td><ul><li>1: #eef6fb</li><li>2: #deeef7</li><li>3: #cce5f3</li><li>4: #a6d1ea</li><li>5: #8bc3e4</li><li>6: #6ab2dc</li><li>7: #409cd2</li><li>8: #208ccb</li><li>9: #007bc3</li><li>10: #0071b3</li><li>11: #0067a4</li><li>12: #005d94</li><li>13: #005485</li><li>14: #004166</li><li>15: #002b44</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lake Blue Palette provides colors to the Info variable group.</div></div>
@@ -16455,9 +16585,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-honey-yellow</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-honey-yellow</code></td>
-    <td><ul><li>1: #fff7eb</li><li>2: #ffefd6</li><li>3: #ffe7c2</li><li>4: #ffdead</li><li>5: #ffd699</li><li>6: #ffc670</li><li>7: #ffb240</li><li>8: #ffa41f</li><li>9: #ff9800</li><li>10: #eb8c00</li><li>11: #d68000</li><li>12: #c27400</li><li>13: #ad6700</li><li>14: #854f00</li><li>15: #593500</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Honey Yellow Palette provides colors to the Warning variable group.</div></div>
@@ -16465,9 +16595,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-brick-red</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-brick-red</code></td>
-    <td><ul><li>1: #fcf0ed</li><li>2: #f9e1dc</li><li>3: #f7d4cc</li><li>4: #f4c3b8</li><li>5: #f2b4a6</li><li>6: #ec8e79</li><li>7: #e35e40</li><li>8: #de4320</li><li>9: #d92800</li><li>10: #c82500</li><li>11: #b62200</li><li>12: #a51e00</li><li>13: #941b00</li><li>14: #701500</li><li>15: #4c0e00</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Brick Red Palette provides colors to the Error variable group.</div></div>
@@ -16475,9 +16605,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-coral</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-coral</code></td>
-    <td><ul><li>1: #fff6f5</li><li>2: #ffeceb</li><li>3: #ffdedb</li><li>4: #ffc8c4</li><li>5: #ffb1ac</li><li>6: #ff9d97</li><li>7: #ff8a82</li><li>8: #ff766d</li><li>9: #ff6358</li><li>10: #ea5a51</li><li>11: #d45349</li><li>12: #bf4a42</li><li>13: #a33f38</li><li>14: #80322c</li><li>15: #5c201c</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Coral Palette provides colors to the Series A variable group.</div></div>
@@ -16485,9 +16615,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-pineapple-yellow</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-pineapple-yellow</code></td>
-    <td><ul><li>1: #fffaeb</li><li>2: #fff7db</li><li>3: #fff3cc</li><li>4: #ffeeb8</li><li>5: #ffe9a2</li><li>6: #ffe38b</li><li>7: #ffdd74</li><li>8: #ffd85d</li><li>9: #ffd246</li><li>10: #eac040</li><li>11: #d4af3b</li><li>12: #bf9d35</li><li>13: #a0832c</li><li>14: #806923</li><li>15: #403412</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Pineapple Yellow provides colors to the Series B variable group.</div></div>
@@ -16495,9 +16625,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-apple-green</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-apple-green</code></td>
-    <td><ul><li>1: #f3fbee</li><li>2: #e9f8de</li><li>3: #def4ce</li><li>4: #d2f0bd</li><li>5: #bbe99b</li><li>6: #aae382</li><li>7: #9add69</li><li>8: #89d750</li><li>9: #78d237</li><li>10: #6ec032</li><li>11: #64AF2E</li><li>12: #5a9d29</li><li>13: #4a8221</li><li>14: #3c691c</li><li>15: #1c300d</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Apple Green provides colors to the Series C variable group.</div></div>
@@ -16505,9 +16635,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-pacific-blue</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-pacific-blue</code></td>
-    <td><ul><li>1: #ebf8fa</li><li>2: #d6f1f5</li><li>3: #c2e9ef</li><li>4: #aee2ea</li><li>5: #93d9e3</li><li>6: #75d0db</li><li>7: #5ec7d6</li><li>8: #43becf</li><li>9: #28b4c8</li><li>10: #24a6b7</li><li>11: #2197a6</li><li>12: #1e8796</li><li>13: #197480</li><li>14: #145a64</li><li>15: #0a2e33</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Pacific Blue provides colors to the Series D variable group.</div></div>
@@ -16515,9 +16645,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-bright-blue</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-bright-blue</code></td>
-    <td><ul><li>1: #ecf2fe</li><li>2: #d8e5fd</li><li>3: #c5d8fc</li><li>4: #b1cbfb</li><li>5: #96b9fa</li><li>6: #7ba7f9</li><li>7: #6296f7</li><li>8: #4684f6</li><li>9: #2d73f5</li><li>10: #2969e1</li><li>11: #2660cc</li><li>12: #2256b8</li><li>13: #1d499a</li><li>14: #173a7b</li><li>15: #0c1e40</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Bright Blue provides colors to the Series E variable group.</div></div>
@@ -16525,9 +16655,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-palette-orchid-purple</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-orchid-purple</code></td>
-    <td><ul><li>1: #f8f0fa</li><li>2: #f1e1f5</li><li>3: #e7caed</li><li>4: #ddb3e5</li><li>5: #d5a2df</li><li>6: #c98ad6</li><li>7: #bf74ce</li><li>8: #b45dc6</li><li>9: #9d40b0</li><li>10: #9c40ae</li><li>11: #8e3b9e</li><li>12: #80358e</li><li>13: #672b73</li><li>14: #55235f</li><li>15: #28112d</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Orchid Purple provides colors to the Series F variable group.</div></div>
@@ -16555,9 +16685,9 @@ The following table lists the available variables for customizing the Classic th
 </thead>
 <tbody><tr>
     <td>$kendo-panel-border-radius</td>
-    <td>String</td>
+    <td></td>
     <td><code>k-border-radius(md)</code></td>
-    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Panel.</div></div>
@@ -16565,9 +16695,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-border-width</td>
-    <td>Number</td>
+    <td></td>
     <td><code>1px</code></td>
-    <td><code>1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Panel.</div></div>
@@ -16575,9 +16705,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-border-style</td>
-    <td>String</td>
+    <td></td>
     <td><code>solid</code></td>
-    <td><code>solid</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of the border around the Panel.</div></div>
@@ -16585,9 +16715,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-header-padding-inline</td>
-    <td>String</td>
+    <td></td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline padding of the Panel header.</div></div>
@@ -16595,9 +16725,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-header-padding-block</td>
-    <td>String</td>
+    <td></td>
     <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block padding of the Panel header.</div></div>
@@ -16605,9 +16735,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-content-padding-inline</td>
-    <td>String</td>
+    <td></td>
     <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline padding of the Panel content.</div></div>
@@ -16615,9 +16745,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-content-padding-block</td>
-    <td>String</td>
+    <td></td>
     <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block padding of the Panel content.</div></div>
@@ -16625,9 +16755,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-text</td>
-    <td>String</td>
+    <td></td>
     <td><code>var(--kendo-component-text, #{$kendo-component-text})</code></td>
-    <td><code>var(--kendo-component-text, var(--kendo-color-on-app-surface, #272727))</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Panel.</div></div>
@@ -16635,9 +16765,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-bg</td>
-    <td>String</td>
+    <td></td>
     <td><code>var(--kendo-component-bg, #{$kendo-component-bg})</code></td>
-    <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Panel.</div></div>
@@ -16645,9 +16775,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-panel-border</td>
-    <td>String</td>
+    <td></td>
     <td><code>var(--kendo-component-border, #{$kendo-component-border})</code></td>
-    <td><code>var(--kendo-component-border, var(--kendo-color-border, #cacaca))</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Panel.</div></div>
@@ -21982,8 +22112,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-img</td>
     <td>String</td>
-    <td><code>"image-default.png"</code></td>
-    <td><code>"image-default.png"</code></td>
+    <td><code>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcwAAAGQCAYAAAAjl1AKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphMGVmMzZmZi04YmI1LTRlN2YtOTcwMS04OTU5ZTg1N2ZhY2MiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDNDOTBDNUQ2OUJGMTFFOTkwMzY4RTI3NjZBQTdENkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDNDOTBDNUM2OUJGMTFFOTkwMzY4RTI3NjZBQTdENkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjMmZmZjM0Mi05NjEyLTQwM2YtYWZhYS01MTE1ZjQ2NThmMWMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDphYjlhMmUwMy1kNmIwLTY3NGMtODc4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"</code></td>
+    <td><code>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcwAAAGQCAYAAAAjl1AKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphMGVmMzZmZi04YmI1LTRlN2YtOTcwMS04OTU5ZTg1N2ZhY2MiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDNDOTBDNUQ2OUJGMTFFOTkwMzY4RTI3NjZBQTdENkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDNDOTBDNUM2OUJGMTFFOTkwMzY4RTI3NjZBQTdENkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjMmZmZjM0Mi05NjEyLTQwM2YtYWZhYS01MTE1ZjQ2NThmMWMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDphYjlhMmUwMy1kNmIwLTY3NGMtODc4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"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the Spreadsheet image Dialog preview.</div></div>
@@ -25024,9 +25154,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-focus-text</td>
-    <td>Color</td>
-    <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #cc4a00"></span><code>#cc4a00</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
@@ -25034,9 +25164,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-hover-text</td>
-    <td>Color</td>
-    <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #cc4a00"></span><code>#cc4a00</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
