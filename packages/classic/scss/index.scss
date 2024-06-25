@@ -56,6 +56,7 @@
 @forward "./loader";
 @forward "./skeleton";
 @forward "./tooltip";
+@forward "./time-marker/";
 
 
 // Form helpers
@@ -194,6 +195,7 @@
 @use "./loader" as *;
 @use "./skeleton" as *;
 @use "./tooltip" as *;
+@use "./time-marker/" as *;
 
 
 // Form helpers
@@ -381,6 +383,7 @@
     @include loader-styles();
     @include skeleton-styles();
     @include tooltip-styles();
+    @include time-marker-styles();
 
 
     // Form helpers
