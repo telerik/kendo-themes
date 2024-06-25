@@ -33,13 +33,39 @@ For the Kendo UI Fluent theme to closely implement the [Fluent Design System](ht
 
 By default, the Fluent theme uses the Segoe UI font family but the font itself is not included in the theme package.
 
-You can [download](https://aka.ms/webfluentfonts) and add the font in the following way:
+To include the Segoe UI font in your project, follow these steps:
+
+1. Download the Segoe UI font from [Microsoft](https://aka.ms/webfluentfonts). The download includes the Segoe UI Regular, Segoe UI Italic, Segoe UI Bold, and Segoe UI Bold Italic font files.
+2. Add the downloaded font files to your project's assets folder. {% platform_content angular %} For Angular, make sure that the folder is included in the assets section of the `angular.json` file. {% endplatform_content %} {% platform_content react %} For React, make sure that the folder is included in the `public` directory. {% endplatform_content %}{% platform_content vue %} For Vue, make sure that the folder is included in the `public` directory. {% endplatform_content %}
+3. In your HTML file or global style sheet, add the following code to include the font:
+
+```html-no-run
+<style>
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('/src/assets/segoeui.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
+```
+
+{% platform_content angular %}
+The `@font-face` rule should be added to the `styles.css` or `style.scss` file in the `src` folder of your Angular project.
+{% endplatform_content %}
+
+Make sure to replace the path in the `url` property with the actual path to the downloaded font file in your project.
+
+4. Finally, update the CSS code in your file to use the Segoe UI font:
 
 ```html-no-run
 <style>
   body { font-family: "Segoe UI", sans-serif; }
 </style>
 ```
+
+That's it! The Segoe UI font will now be applied to your project.
+
 ## Dynamic customization
 
 The Kendo UI Fluent theme utilizes [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) which allows for dynamic customization without needing to recompile the theme.
