@@ -1,0 +1,32 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-chart-wizard--theme() {
+    .k-chart-wizard {
+        .k-icon-text-wrapper {
+            &.k-selected {
+                color: var( --kendo-chart-wizard-chart-type-selected-color, #{$kendo-chart-wizard-chart-type-selected-color} );
+
+                .k-icon-background-area {
+                    box-shadow: var( --kendo-chart-wizard-icon-area-selected-shadow, #{$kendo-chart-wizard-icon-area-selected-shadow} );
+                }
+            }
+
+            &:hover,
+            &.k-hover {
+                cursor: pointer;
+            }
+
+            &:focus,
+            &.k-focus {
+                .k-icon-background-area {
+                    box-shadow: var( --kendo-chart-wizard-icon-area-focus-shadow, #{$kendo-chart-wizard-icon-area-focus-shadow} );
+                }
+            }
+        }
+
+        & .k-icon-background-area {
+            color: var( --kendo-chart-wizard-icon-area-color, #{$kendo-chart-wizard-icon-area-color} );
+            background-color: var( --kendo-chart-wizard-icon-area-bg, #{$kendo-chart-wizard-icon-area-bg} );
+        }
+    }
+}
