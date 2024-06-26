@@ -20,7 +20,7 @@ $kendo-progressbar-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-progressbar-font-size: $progress-font-size !default;
 /// The line height of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-line-height: 1 !default;
+$kendo-progressbar-line-height: var( --kendo-line-height-xs, normal ) !default;
 
 /// The background color of the ProgressBar.
 /// @group progressbar
