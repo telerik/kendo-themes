@@ -1,7 +1,11 @@
 @mixin k-css-vars($map) {
     @each $group, $values in $map {
-        @each $key, $value in $values {
-            --kendo-#{k-meta-inspect($group)}-#{$key}: #{$value};
+        @if k-meta-type-of($values) != 'map' {
+            --kendo-text-#{$group}: #{$values};
+        } @else {
+            @each $key, $value in $values {
+                --kendo-#{k-meta-inspect($group)}-#{$key}: #{$value};
+            }
         }
     }
 }
