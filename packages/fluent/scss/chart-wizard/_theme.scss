@@ -1,0 +1,12 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-chart-wizard--theme() {
+    .k-icon-background-area {
+        color: var( --kendo-chart-wizard-icon-area-color, #{$kendo-chart-wizard-icon-area-color} );
+        background-color: var( --kendo-chart-wizard-icon-area-bg, #{$kendo-chart-wizard-icon-area-bg} );
+
+        .k-selected & {
+            box-shadow: var( --kendo-chart-wizard-icon-area-selected-shadow, #{$kendo-chart-wizard-icon-area-selected-shadow} );
+        }
+    }
+}
