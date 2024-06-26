@@ -97,7 +97,7 @@ $kendo-calendar-header-cell-height: $kendo-calendar-cell-size !default;
 $kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit )!default;
 /// The line height of the header cells in the Calendar.
 /// @group calendar
-$kendo-calendar-header-cell-line-height: 2 !default;
+$kendo-calendar-header-cell-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the header cells in the Calendar.
 /// @group calendar

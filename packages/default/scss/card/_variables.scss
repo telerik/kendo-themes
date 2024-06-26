@@ -116,7 +116,7 @@ $kendo-card-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-card-title-font-family: null !default;
 /// The line height of the Card title.
 /// @group card
-$kendo-card-title-line-height: 1.25 !default;
+$kendo-card-title-line-height: var( --kendo-line-height-sm, normal ) !default;
 /// The font weight of the Card title.
 /// @group card
 $kendo-card-title-font-weight: var( --kendo-font-weight-normal, normal ) !default;

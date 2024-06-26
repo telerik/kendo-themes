@@ -21,14 +21,14 @@ $kendo-tooltip-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-tooltip-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-line-height: 1.25 !default;
+$kendo-tooltip-line-height: var( --kendo-line-height-sm, normal ) !default;
 
 /// The font size of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-font-size: calc( var( --kendo-font-size, .875rem ) * 1.25 ) !default;
 /// The line height of the Tooltip title.
 /// @group tooltip
-$kendo-tooltip-title-line-height: 1 !default;
+$kendo-tooltip-title-line-height: var( --kendo-line-height-xs, normal ) !default;
 
 /// The size of the Tooltip callout.
 /// @group tooltip
