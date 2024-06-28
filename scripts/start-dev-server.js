@@ -9,8 +9,6 @@ const extension = `tsx`;
 const entryPoints = glob.sync(`./packages/html/src/{**/tests,!(utils)/templates}/**/*.${extension}`, { dotRelative: true });
 const index = fs.readFileSync("./packages/html/shared/index.html", "utf-8");
 
-const entiresMap = new Set();
-entryPoints.forEach((point) => entiresMap.add(point));
 
 (async() => {
     if (fs.existsSync(path.resolve("./packages/html/dist"))) {
