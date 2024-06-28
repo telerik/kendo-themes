@@ -114,3 +114,5 @@ export const GridHierarchy = ({ containerClassName, ...other }: any) => (
         {...other}>
     </Grid>
 );
+
+export default GridHierarchy;

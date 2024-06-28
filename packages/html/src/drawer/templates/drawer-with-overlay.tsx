@@ -25,3 +25,5 @@ export const DrawerWithOverlay = (props) => (
         }
     </Drawer>
 );
+
+export default DrawerWithOverlay;

@@ -10,3 +10,5 @@ export const IconButtonGroup = (props) => (
         </>
     } />
 );
+
+export default IconButtonGroup;

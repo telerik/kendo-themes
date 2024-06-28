@@ -16,3 +16,5 @@ export const MenuVerticalScrollable = ({ wrapperStyles, ...other }: any) => (
         <Button icon="caret-alt-down" className="k-menu-scroll-button k-scroll-down"></Button>
     </div>
 );
+
+export default MenuVerticalScrollable;

@@ -77,3 +77,5 @@ export const DataTableVirtualization = (props) => (
         </TableBody>
     </DataTable>
 );
+
+export default DataTableVirtualization;

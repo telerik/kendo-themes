@@ -226,3 +226,5 @@ export const SchedulerDay = ({ style, ...props }: any) => (
         {...props}
     />
 );
+
+export default SchedulerDay;

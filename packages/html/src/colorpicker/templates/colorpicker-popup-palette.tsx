@@ -16,3 +16,5 @@ export const ColorPickerPopupPalette = ({ value = "fuchsia", color = "fuchsia", 
         {...other}
     />
 );
+
+export default ColorPickerPopupPalette;

@@ -14,3 +14,5 @@ export const OrgchartNormal = ({ details, justifyContent, ...other }: any) => (
         {...other}
     />
 );
+
+export default OrgchartNormal;

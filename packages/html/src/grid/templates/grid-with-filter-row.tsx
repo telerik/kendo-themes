@@ -147,3 +147,5 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
         {...other}
     ></Grid>
 );
+
+export default GridWithFilterRow;

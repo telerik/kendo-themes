@@ -114,3 +114,5 @@ export const SchedulerTimeline = ({ style, ...props }: any) => (
         {...props}
     ></Scheduler>
 );
+
+export default SchedulerTimeline;

@@ -19,3 +19,5 @@ export const ToolbarResizable = (props) => (
     {...props}>
     </Toolbar>
 );
+
+export default ToolbarResizable;

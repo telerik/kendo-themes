@@ -6,3 +6,5 @@ export const TimePickerPopup = (props) => (
         {...props}
     />
 );
+
+export default TimePickerPopup;

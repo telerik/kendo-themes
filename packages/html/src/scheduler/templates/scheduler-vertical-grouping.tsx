@@ -310,3 +310,5 @@ export const SchedulerVerticalGrouping = (...props) => (
         {...props}
     />
 );
+
+export default SchedulerVerticalGrouping;

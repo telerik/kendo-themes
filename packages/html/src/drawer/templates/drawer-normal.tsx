@@ -25,3 +25,5 @@ export const DrawerNormal = (props) => (
         }
     </Drawer>
 );
+
+export default DrawerNormal;

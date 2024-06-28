@@ -14,3 +14,5 @@ export const DropdownListPopup = (props) => (
         {...props}
     />
 );
+
+export default DropdownListPopup;

@@ -8,3 +8,5 @@ export const IconNotificationClosable = (props) => (
         actions={<NotificationAction type="close" />}
         {...props} />
 );
+
+export default IconNotificationClosable;

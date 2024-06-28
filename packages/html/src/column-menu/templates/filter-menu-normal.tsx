@@ -23,3 +23,5 @@ export const FilterMenuNormal = (props) => (
     >
     </FilterMenu>
 );
+
+export default FilterMenuNormal;

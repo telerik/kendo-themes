@@ -19,3 +19,5 @@ export const OrgchartGroupNormal = ({ details, orientation, justifyContent, ...o
         {...other}
     />
 );
+
+export default OrgchartGroupNormal;

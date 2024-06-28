@@ -72,3 +72,5 @@ export const FileManagerPreview = (props) => (
     {...props}>
     </FileManager>
 );
+
+export default FileManagerPreview;

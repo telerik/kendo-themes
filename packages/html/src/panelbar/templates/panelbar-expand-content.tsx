@@ -21,3 +21,5 @@ export const PanelBarExpandContent = (props) => (
         {...props}
     />
 );
+
+export default PanelBarExpandContent;

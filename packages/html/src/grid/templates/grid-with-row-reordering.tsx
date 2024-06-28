@@ -81,3 +81,5 @@ export const GridWithRowReordering = ({ contentClassName, ...other }: any) => (
 
     </Grid>
 );
+
+export default GridWithRowReordering;

@@ -151,3 +151,5 @@ export const SchedulerFlexDay = ({ style,...props }: any) => (
         {...props}
     ></Scheduler>
 );
+
+export default SchedulerFlexDay;

@@ -16,3 +16,5 @@ export const GridLayoutNormal = ({ alignItems = "start", justifyItems = "start",
         }
         {...other} />
 );
+
+export default GridLayoutNormal;

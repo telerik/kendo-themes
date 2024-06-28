@@ -6,3 +6,5 @@ export const ComboboxAdaptive = (props) => (
         {...props}
     />
 );
+
+export default ComboboxAdaptive;

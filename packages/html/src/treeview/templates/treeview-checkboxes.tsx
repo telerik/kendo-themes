@@ -25,3 +25,5 @@ export const TreeviewCheckboxes = (props) => (
     >
     </Treeview>
 );
+
+export default TreeviewCheckboxes;

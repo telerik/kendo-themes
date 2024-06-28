@@ -64,3 +64,5 @@ export const TableNative = (props) => (
     >
     </Table>
 );
+
+export default TableNative;

@@ -6,3 +6,5 @@ export const PivotGridWithConfigurator = (props) => (
         <PivotGridConfiguratorButton />
     </>
 );
+
+export default PivotGridWithConfigurator;

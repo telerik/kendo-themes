@@ -120,3 +120,5 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
         {...other}>
     </Grid>
 );
+
+export default GridWithStickyColumns;

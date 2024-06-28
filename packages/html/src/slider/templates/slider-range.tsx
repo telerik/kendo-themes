@@ -21,3 +21,5 @@ export const SliderRange = (props) => (
         {...props}>
     </Slider>
 );
+
+export default SliderRange;

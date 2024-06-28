@@ -6,3 +6,5 @@ export const TimePickerAdaptive = (props) => (
         {...props}
     />
 );
+
+export default TimePickerAdaptive;

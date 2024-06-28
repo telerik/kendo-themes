@@ -67,3 +67,5 @@ export const FileManagerNormal = (props) => (
     {...props}>
     </FileManager>
 );
+
+export default FileManagerNormal;

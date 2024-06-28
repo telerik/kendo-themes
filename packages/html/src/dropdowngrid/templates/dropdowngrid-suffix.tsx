@@ -11,3 +11,5 @@ export const DropdownGridSuffix = (props) => (
         {...props}
     />
 );
+
+export default DropdownGridSuffix;

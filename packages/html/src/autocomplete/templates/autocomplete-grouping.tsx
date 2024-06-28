@@ -21,3 +21,5 @@ export const AutocompleteGrouping = (props) => (
         {...props}
     />
 );
+
+export default AutocompleteGrouping;

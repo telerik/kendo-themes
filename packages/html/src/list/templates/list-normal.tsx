@@ -10,3 +10,5 @@ export const ListNormal = (props) => (
         {...props}
     />
 );
+
+export default ListNormal;

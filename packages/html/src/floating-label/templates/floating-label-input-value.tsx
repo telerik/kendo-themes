@@ -11,3 +11,5 @@ export const FloatingLabelInputValue = (props) => (
     >
     </FloatingLabel>
 );
+
+export default FloatingLabelInputValue;

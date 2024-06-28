@@ -19,3 +19,5 @@ export const ToolbarAngularResizable = (props) => (
     {...props}
     />
 );
+
+export default ToolbarAngularResizable;

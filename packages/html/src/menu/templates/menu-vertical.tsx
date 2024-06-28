@@ -13,3 +13,5 @@ export const MenuVertical = ({ ...other }: any) => (
     {...other}
     />
 );
+
+export default MenuVertical;

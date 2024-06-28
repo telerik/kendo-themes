@@ -14,3 +14,5 @@ export const PopoverNormal = (props) => (
         {...props}
     />
 );
+
+export default PopoverNormal;

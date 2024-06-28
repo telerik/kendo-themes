@@ -16,3 +16,5 @@ export const TimelineNormalAlternating = (props) => (
         {...props}>
     </Timeline>
 );
+
+export default TimelineNormalAlternating;

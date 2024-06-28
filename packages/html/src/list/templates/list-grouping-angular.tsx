@@ -14,3 +14,5 @@ export const AngularListWithGrouping = (props) => (
         </ListGroup>
     </ListAngular>
 );
+
+export default AngularListWithGrouping;

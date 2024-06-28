@@ -6,3 +6,5 @@ export const DatePickerAdaptive = (props) => (
         {...props}
     />
 );
+
+export default DatePickerAdaptive;

@@ -27,3 +27,5 @@ export const TreeviewIcons = (props) => (
     >
     </Treeview>
 );
+
+export default TreeviewIcons;

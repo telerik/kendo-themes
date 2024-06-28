@@ -8,3 +8,5 @@ export const SliderGradient = (props) => (
         {...props}>
     </Slider>
 );
+
+export default SliderGradient;

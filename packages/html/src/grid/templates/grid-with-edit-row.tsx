@@ -80,3 +80,5 @@ export const GridWithEditRow = (props) => (
         {...props}>
     </Grid>
 );
+
+export default GridWithEditRow;

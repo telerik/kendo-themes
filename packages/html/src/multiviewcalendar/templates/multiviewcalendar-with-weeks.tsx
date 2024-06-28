@@ -135,3 +135,5 @@ export const MultiViewCalendarWithWeeks = ({ showOtherMonth, ...other }: any) =>
         {...other}
     />
 );
+
+export default MultiViewCalendarWithWeeks;

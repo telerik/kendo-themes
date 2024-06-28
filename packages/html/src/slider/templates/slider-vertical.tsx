@@ -19,3 +19,5 @@ export const SliderVertical = (props) => (
         {...props}>
     </Slider>
 );
+
+export default SliderVertical;

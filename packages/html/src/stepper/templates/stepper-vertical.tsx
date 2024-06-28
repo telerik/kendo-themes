@@ -17,3 +17,5 @@ export const StepperVertical = ({ gridTemplateRows = "repeat(3, 1fr)", ...other 
         {...other}
     />
 );
+
+export default StepperVertical;

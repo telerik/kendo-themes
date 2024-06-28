@@ -18,3 +18,5 @@ export const SliderNormal = (props) => (
     {...props}>
     </Slider>
 );
+
+export default SliderNormal;

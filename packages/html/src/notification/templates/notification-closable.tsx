@@ -7,3 +7,5 @@ export const NotificationClosable = (props) => (
         actions={<NotificationAction type="close" />}
         {...props} />
 );
+
+export default NotificationClosable;

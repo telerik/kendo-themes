@@ -11,3 +11,5 @@ export const ComboboxSuffix = (props) => (
         {...props}
     />
 );
+
+export default ComboboxSuffix;

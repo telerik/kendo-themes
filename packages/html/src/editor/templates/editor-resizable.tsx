@@ -39,3 +39,5 @@ export const EditorResizable = (props) => (
         {...props}
     />
 );
+
+export default EditorResizable;

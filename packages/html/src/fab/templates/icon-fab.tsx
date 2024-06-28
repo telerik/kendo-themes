@@ -5,3 +5,5 @@ export const IconFloatingActionButton = (props) =>
         icon="plus"
         {...props}
     />;
+
+export default IconFloatingActionButton;

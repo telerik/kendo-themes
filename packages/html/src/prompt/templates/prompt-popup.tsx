@@ -29,3 +29,5 @@ export const PromptInPopup = (props) => (
         </Prompt>
     </Popup>
 );
+
+export default PromptInPopup;

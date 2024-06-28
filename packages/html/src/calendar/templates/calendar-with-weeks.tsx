@@ -69,3 +69,5 @@ export const CalendarWithWeeks = ({ showOtherMonth, ...props }: any) => (
         {...props}
     />
 );
+
+export default CalendarWithWeeks;

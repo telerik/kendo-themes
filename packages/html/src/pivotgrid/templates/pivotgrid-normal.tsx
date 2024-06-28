@@ -107,3 +107,5 @@ export const PivotGridNormal = (props) => (
         {...props}
     />
 );
+
+export default PivotGridNormal;

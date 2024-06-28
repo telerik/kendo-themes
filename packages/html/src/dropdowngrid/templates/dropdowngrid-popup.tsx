@@ -68,3 +68,5 @@ export const DropdownGridPopup = (props) => (
         {...props}
     />
 );
+
+export default DropdownGridPopup;

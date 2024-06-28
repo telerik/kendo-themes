@@ -10,3 +10,5 @@ export const TextButtonGroup = (props) => (
         </>
     } />
 );
+
+export default TextButtonGroup;

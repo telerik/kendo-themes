@@ -15,3 +15,5 @@ export const MultiSelectPopup = (props) => (
         {...props}
     />
 );
+
+export default MultiSelectPopup;

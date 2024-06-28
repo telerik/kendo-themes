@@ -6,3 +6,5 @@ export const RatingNormal = ({ value = 2.5, ...props }: any) =>(
         {...props}
     />
 );
+
+export default RatingNormal;

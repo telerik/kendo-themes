@@ -12,3 +12,5 @@ export const UploadBatch = (props) => (
     {...props}>
     </Upload>
 );
+
+export default UploadBatch;

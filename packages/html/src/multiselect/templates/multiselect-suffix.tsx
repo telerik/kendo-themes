@@ -16,3 +16,5 @@ export const MultiSelectSuffix = (props) => (
         {...props}
     />
 );
+
+export default MultiSelectSuffix;

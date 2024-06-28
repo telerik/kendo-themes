@@ -21,3 +21,5 @@ export const DropdownListGrouping = (props) => (
         {...props}
     />
 );
+
+export default DropdownListGrouping;

@@ -131,3 +131,5 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
     </TreeList>
 );
 
+
+export default TreeListAggregates;

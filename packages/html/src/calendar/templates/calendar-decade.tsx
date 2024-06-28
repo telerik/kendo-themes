@@ -27,3 +27,5 @@ export const CalendarDecade = ({ showOtherDecade, ...props }: any) => (
         {...props}
     />
 );
+
+export default CalendarDecade;

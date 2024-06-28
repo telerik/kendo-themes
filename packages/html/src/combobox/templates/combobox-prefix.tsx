@@ -11,3 +11,5 @@ export const ComboboxPrefix = (props) => (
         {...props}
     />
 );
+
+export default ComboboxPrefix;

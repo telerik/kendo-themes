@@ -26,3 +26,5 @@ export const DrawerWithHierarchy = (props) => (
         }
     </Drawer>
 );
+
+export default DrawerWithHierarchy;

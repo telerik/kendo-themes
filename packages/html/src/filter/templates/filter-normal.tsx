@@ -76,3 +76,5 @@ export const FilterNormal = (props) => (
     >
     </Filter>
 );
+
+export default FilterNormal;

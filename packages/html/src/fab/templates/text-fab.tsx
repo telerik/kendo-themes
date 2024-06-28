@@ -5,3 +5,5 @@ export const TextFloatingActionButton = (props) =>
         text="Create"
         {...props}
     />;
+
+export default TextFloatingActionButton;

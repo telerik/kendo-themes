@@ -16,3 +16,5 @@ export const MenuScrollable = ({ wrapperStyles, ...other }: any) => (
         <Button icon="caret-alt-right" className="k-menu-scroll-button k-scroll-right"></Button>
     </div>
 );
+
+export default MenuScrollable;

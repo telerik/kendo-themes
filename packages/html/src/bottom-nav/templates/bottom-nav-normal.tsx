@@ -13,3 +13,5 @@ export const BottomNavNormal = (props) => (
     >
     </BottomNav>
 );
+
+export default BottomNavNormal;
