@@ -7,8 +7,7 @@ import path from 'path';
 
 const PORT = 18111;
 const HOST = 'localhost';
-const TESTS_PATH = './packages/html/dist';
-const OUTPUT_PATH = './tests';
+const BASE_PATH = './packages/html/dist';
 const COMPONENT_PAGE_EXT = 'app.js';
 
 function pathUrl(url) {
@@ -33,7 +32,11 @@ const server = createServer({
 });
 
 server.listen(PORT, HOST, async() => {
-    const files = globSync(`${TESTS_PATH}/!(utils)/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true });
+    const files = [
+        ...globSync(`${BASE_PATH}/!(utils)/tests/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true }),
+        ...globSync(`${BASE_PATH}/!(utils)/templates/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true })
+    ];
+
     const pages = files.map(path => [ path, pathUrl(path) ]);
 
     for (let i = 0; i < pages.length; i++) {
@@ -41,8 +44,9 @@ server.listen(PORT, HOST, async() => {
 
         await loadUrl(browser, url);
 
-        const [ /** index.html */, folderName, /** /tests */, componentName ] = filePath.split('/').reverse();
-        const outputPath = `${OUTPUT_PATH}/${componentName}/${folderName}.html`;
+        const [ /** index.html */, folderName, type, componentName ] = filePath.split(/[\\/]+/).reverse();
+
+        const outputPath = `./${type}/${componentName}/${folderName}.html`;
 
         fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 

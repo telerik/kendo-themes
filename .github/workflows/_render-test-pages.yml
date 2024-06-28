@@ -151,10 +151,53 @@ jobs:
             echo "Test pages will NOT be uploaded" >> $GITHUB_STEP_SUMMARY
           fi
 
+      - name: Pack template pages
+        env:
+          UPLOAD_POLICY: ${{ inputs.upload-policy }}
+        run: |
+          HAS_CHANGES=NO
+          git add .
+          git diff --cached --exit-code --quiet -- templates/ || HAS_CHANGES=YES
+
+          echo "Has changes: $HAS_CHANGES"
+          echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
+
+          echo "Run summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Upload policy: $UPLOAD_POLICY" >> $GITHUB_STEP_SUMMARY
+          echo "- Has changes: $HAS_CHANGES" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ $UPLOAD_POLICY = always ]
+          then
+            tar --exclude templates/_output -cf template-pages.tar templates
+          fi
+
+          if [ $UPLOAD_POLICY = conditionally ] && [ $HAS_CHANGES = YES ]
+          then
+            git diff --cached --name-only -- templates/ | xargs tar --exclude templates/_output -cf template-pages.tar
+          fi
+
+          if [ $UPLOAD_POLICY = always ] || ( [ $UPLOAD_POLICY = conditionally ] && [ $HAS_CHANGES = YES ] )
+          then
+            echo "Template pages will be uploaded" >> $GITHUB_STEP_SUMMARY
+            echo "Number of files uploaded: $(tar -tf template-pages.tar | wc -l)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Template pages will NOT be uploaded" >> $GITHUB_STEP_SUMMARY
+          fi
+
       - name: Upload test pages
         if: ${{ inputs.upload-policy != 'never' }}
         uses: actions/upload-artifact@v3
         with:
           name: test-pages
           path: test-pages.tar
+          if-no-files-found: warn
+
+      - name: Upload template pages
+        if: ${{ inputs.upload-policy != 'never' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: template-pages
+          path: template-pages.tar
           if-no-files-found: warn
