@@ -32,10 +32,7 @@ const server = createServer({
 });
 
 server.listen(PORT, HOST, async() => {
-    const files = [
-        ...globSync(`${BASE_PATH}/!(utils)/tests/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true }),
-        ...globSync(`${BASE_PATH}/!(utils)/templates/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true })
-    ];
+    const files = globSync(`${BASE_PATH}/{!(utils)/tests,!(utils)/templates}/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true });
 
     const pages = files.map(path => [ path, pathUrl(path) ]);
 
