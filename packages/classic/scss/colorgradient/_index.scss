@@ -42,6 +42,9 @@ $_kendo-module-meta: (
     @include module-render( "color-gradient" ) {
         @include kendo-color-gradient--layout();
         @include kendo-color-gradient--theme();
+        @include kendo-utils--flex-grid--flex();
+        @include kendo-utils--flex-grid--align-self();
+        @include kendo-utils--typography--text-color();
     }
 }
 

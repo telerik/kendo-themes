@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "fab",
@@ -9,13 +10,11 @@ $_kendo-module-meta: (
         "badge",
         "button",
         "icon",
-        // "utils/layout/position",
     )
 );
 
 
 // Dependencies
-// @import "../utils/_position.scss";
 @import "../icons/_index.scss";
 @import "../button/_index.scss";
 @import "../badge/_index.scss";
@@ -37,6 +36,9 @@ $_kendo-module-meta: (
     @include module-render( "fab" ) {
         @include kendo-fab--layout();
         @include kendo-fab--theme();
+        @include kendo-utils--layout--position();
+        @include kendo-utils--typography--text-align();
+        @include kendo-utils--layout--overflow();
     }
 }
 

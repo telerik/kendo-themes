@@ -37,6 +37,8 @@ $_kendo-module-meta: (
     @include module-render( "toolbar" ) {
         @include kendo-toolbar--layout();
         @include kendo-toolbar--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--typography--vertical-align();
     }
 }
 

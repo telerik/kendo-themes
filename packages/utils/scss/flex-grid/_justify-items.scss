@@ -82,10 +82,16 @@
 /// @group justify-items
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-justify-items"));
+
 @mixin kendo-utils--flex-grid--justify-items() {
+    @include module-render("utils-flex-grid-justify-items") {
 
-    // Justify items utility classes
-    $kendo-utils-justify-items: k-map-get( $kendo-utils, "justify-items" ) !default;
-    @include generate-utils( justify-items, justify-items, $kendo-utils-justify-items );
+        // Justify items utility classes
+        $kendo-utils-justify-items: k-map-get( $kendo-utils, "justify-items" ) !default;
+        @include generate-utils( justify-items, justify-items, $kendo-utils-justify-items );
 
+    }
 }

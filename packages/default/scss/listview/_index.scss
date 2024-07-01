@@ -2,20 +2,18 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "listview",
     dependencies: (
         "icon",
         "pager",
-        // "utils/flex-grid",
     )
 );
 
 
 // Dependencies
-// @import "../utils/_flex.scss";
-// @import "../utils/_grid.scss";
 @import "../pager/_index.scss";
 @import "../icons/_index.scss";
 
@@ -36,6 +34,10 @@ $_kendo-module-meta: (
     @include module-render( "listview" ) {
         @include kendo-listview--layout();
         @include kendo-listview--theme();
+        @include kendo-utils--layout--display();
+        @include kendo-utils--flex-grid--flex-direction();
+        @include kendo-utils--flex-grid--grid-template-columns();
+        @include kendo-utils--flex-grid--flex-wrap();
     }
 }
 

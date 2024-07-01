@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "loader",
@@ -31,6 +32,7 @@ $_kendo-module-meta: (
     @include module-render( "loader" ) {
         @include kendo-loader--layout();
         @include kendo-loader--theme();
+        @include kendo-utils--typography--text-color();
     }
 }
 

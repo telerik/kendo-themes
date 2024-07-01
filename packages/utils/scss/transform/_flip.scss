@@ -12,23 +12,29 @@
 
 // TODO: consider globally horizontal vs h vs x
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-transform-flip"));
+
 @mixin kendo-utils--transform--flip() {
+    @include module-render("utils-transform-flip") {
 
-    // Flip utility classes
-    $kendo-utils-flip: k-map-get( $kendo-utils, "flip" ) !default;
-    @if $kendo-utils-flip {
-        .#{$kendo-prefix}flip-h { transform: scaleX( -1 ); }
-        .\!#{$kendo-prefix}flip-h { transform: scaleX( -1 ) !important; } // stylelint-disable-line declaration-no-important
-        .#{$kendo-prefix}flip-v { transform: scaleY( -1 ); }
-        .\!#{$kendo-prefix}flip-v { transform: scaleY( -1 ) !important; } // stylelint-disable-line declaration-no-important
-        .#{$kendo-prefix}flip-h.#{$kendo-prefix}flip-v { transform: scale( -1, -1 ); }
-        .\!#{$kendo-prefix}flip-h.\!#{$kendo-prefix}flip-v { transform: scale( -1, -1 ) !important; } // stylelint-disable-line declaration-no-important
+        // Flip utility classes
+        $kendo-utils-flip: k-map-get( $kendo-utils, "flip" ) !default;
+        @if $kendo-utils-flip {
+            .#{$kendo-prefix}flip-h { transform: scaleX( -1 ); }
+            .\!#{$kendo-prefix}flip-h { transform: scaleX( -1 ) !important; } // stylelint-disable-line declaration-no-important
+            .#{$kendo-prefix}flip-v { transform: scaleY( -1 ); }
+            .\!#{$kendo-prefix}flip-v { transform: scaleY( -1 ) !important; } // stylelint-disable-line declaration-no-important
+            .#{$kendo-prefix}flip-h.#{$kendo-prefix}flip-v { transform: scale( -1, -1 ); }
+            .\!#{$kendo-prefix}flip-h.\!#{$kendo-prefix}flip-v { transform: scale( -1, -1 ) !important; } // stylelint-disable-line declaration-no-important
 
-        // Legacy aliases
-        .#{$kendo-prefix}flip-x { @extend .#{$kendo-prefix}flip-h !optional; }
-        .\!#{$kendo-prefix}flip-x { @extend .\!#{$kendo-prefix}flip-h !optional; }
-        .#{$kendo-prefix}flip-y { @extend .#{$kendo-prefix}flip-v !optional; }
-        .\!#{$kendo-prefix}flip-y { @extend .\!#{$kendo-prefix}flip-v !optional; }
+            // Legacy aliases
+            .#{$kendo-prefix}flip-x { @extend .#{$kendo-prefix}flip-h !optional; }
+            .\!#{$kendo-prefix}flip-x { @extend .\!#{$kendo-prefix}flip-h !optional; }
+            .#{$kendo-prefix}flip-y { @extend .#{$kendo-prefix}flip-v !optional; }
+            .\!#{$kendo-prefix}flip-y { @extend .\!#{$kendo-prefix}flip-v !optional; }
+        }
+
     }
-
 }

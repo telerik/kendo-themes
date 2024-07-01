@@ -7,13 +7,11 @@ $_kendo-module-meta: (
     name: "bottom-navigation",
     dependencies: (
         "icon",
-        // "utils/layout/position"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_position.scss";
 @import "../icons/_index.scss";
 
 
@@ -33,6 +31,7 @@ $_kendo-module-meta: (
     @include module-render( "bottom-navigation" ) {
         @include kendo-bottom-navigation--layout();
         @include kendo-bottom-navigation--theme();
+        @include kendo-utils--layout--position();
     }
 }
 

@@ -32,6 +32,7 @@ $_kendo-module-meta: (
     @include module-render( "chip" ) {
         @include kendo-chip--layout();
         @include kendo-chip--theme();
+        @include kendo-utils--typography--text-overflow();
     }
 }
 

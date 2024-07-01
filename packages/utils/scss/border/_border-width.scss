@@ -208,25 +208,29 @@
 /// @group border-width
 /// @contextType css
 
-
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-border-width"));
 
 @mixin kendo-utils--border--border-width() {
+    @include module-render("utils-border-width") {
 
-    // Border width utility classes
-    $kendo-utils-border-width: k-map-get( $kendo-utils, "border-width" ) !default;
-    @include generate-utils( border, border-width, $kendo-utils-border-width );
-    @include generate-utils( border-t, border-top-width, $kendo-utils-border-width );
-    @include generate-utils( border-r, border-right-width, $kendo-utils-border-width );
-    @include generate-utils( border-b, border-bottom-width, $kendo-utils-border-width );
-    @include generate-utils( border-l, border-left-width, $kendo-utils-border-width );
-    @include generate-utils( border-x, border-inline-width, $kendo-utils-border-width );
-    @include generate-utils( border-y, border-block-width, $kendo-utils-border-width );
+        // Border width utility classes
+        $kendo-utils-border-width: k-map-get( $kendo-utils, "border-width" ) !default;
+        @include generate-utils( border, border-width, $kendo-utils-border-width );
+        @include generate-utils( border-t, border-top-width, $kendo-utils-border-width );
+        @include generate-utils( border-r, border-right-width, $kendo-utils-border-width );
+        @include generate-utils( border-b, border-bottom-width, $kendo-utils-border-width );
+        @include generate-utils( border-l, border-left-width, $kendo-utils-border-width );
+        @include generate-utils( border-x, border-inline-width, $kendo-utils-border-width );
+        @include generate-utils( border-y, border-block-width, $kendo-utils-border-width );
 
 
-    // Legacy aliases
-    @include generate-utils( border-top, border-top-width, $kendo-utils-border-width );
-    @include generate-utils( border-right, border-right-width, $kendo-utils-border-width );
-    @include generate-utils( border-bottom, border-bottom-width, $kendo-utils-border-width );
-    @include generate-utils( border-left, border-left-width, $kendo-utils-border-width );
+        // Legacy aliases
+        @include generate-utils( border-top, border-top-width, $kendo-utils-border-width );
+        @include generate-utils( border-right, border-right-width, $kendo-utils-border-width );
+        @include generate-utils( border-bottom, border-bottom-width, $kendo-utils-border-width );
+        @include generate-utils( border-left, border-left-width, $kendo-utils-border-width );
 
+    }
 }

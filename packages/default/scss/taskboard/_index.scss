@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "task-board",
@@ -18,7 +19,6 @@ $_kendo-module-meta: (
 
 
 // Dependencies
-// @import "../utils/_index.scss";
 @import "../icons/_index.scss";
 @import "../forms/_index.scss";
 @import "../input/_index.scss";
@@ -44,6 +44,7 @@ $_kendo-module-meta: (
     @include module-render( "task-board" ) {
         @include kendo-task-board--layout();
         @include kendo-task-board--theme();
+        @include kendo-utils--typography--text-overflow();
     }
 }
 

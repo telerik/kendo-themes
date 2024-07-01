@@ -10,11 +10,17 @@
 /// @group table-layout
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-table-table-layout"));
+
 @mixin kendo-utils--table--table-layout() {
+    @include module-render("utils-table-table-layout") {
 
-    // Table layout utility classes
-    $kendo-utils-table-layout: k-map-get( $kendo-utils, "table-layout" ) !default;
-    @include generate-utils( table, table-layout, $kendo-utils-table-layout );
-    @include generate-utils( table-layout, table-layout, $kendo-utils-table-layout );
+        // Table layout utility classes
+        $kendo-utils-table-layout: k-map-get( $kendo-utils, "table-layout" ) !default;
+        @include generate-utils( table, table-layout, $kendo-utils-table-layout );
+        @include generate-utils( table-layout, table-layout, $kendo-utils-table-layout );
 
+    }
 }

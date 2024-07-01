@@ -22,10 +22,16 @@
 /// @group background-color
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-background-color"));
+
 @mixin kendo-utils--background--background-color() {
+    @include module-render("utils-background-color") {
 
-    // Background color utility classes
-    $kendo-utils-background-color: k-map-get( $kendo-utils, "background-color" ) !default;
-    @include generate-utils( bg, background-color, $kendo-utils-background-color, $css-var: 'color' );
+        // Background color utility classes
+        $kendo-utils-background-color: k-map-get( $kendo-utils, "background-color" ) !default;
+        @include generate-utils( bg, background-color, $kendo-utils-background-color, $css-var: 'color' );
 
+    }
 }

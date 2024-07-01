@@ -31,6 +31,7 @@ $_kendo-module-meta: (
     @include module-render( "loader" ) {
         @include kendo-loader--layout();
         @include kendo-loader--theme();
+        @include kendo-utils--typography--text-color();
     }
 }
 

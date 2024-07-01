@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "prompt",
@@ -24,6 +25,7 @@ $_kendo-module-meta: (
     @include module-render( "prompt" ) {
         @include kendo-prompt--layout();
         @include kendo-prompt--theme();
+        @include kendo-utils--flex-grid--flex-direction();
     }
 }
 

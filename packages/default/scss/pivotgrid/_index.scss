@@ -20,10 +20,6 @@ $_kendo-module-meta: (
 @import "../treeview/_index.scss";
 @import "../grid/_index.scss";
 @import "../icons/_index.scss";
-// @import "../utils/_spacer.scss";
-// @import "../utils/_flex.scss";
-// @import "../utils/_grid.scss";
-// @import "../utils/_position.scss";
 @import "../list/_index.scss";
 
 
@@ -43,6 +39,9 @@ $_kendo-module-meta: (
     @include module-render( "pivotgrid" ) {
         @include kendo-pivotgrid--layout();
         @include kendo-pivotgrid--theme();
+        @include kendo-utils--layout--display();
+        @include kendo-utils--layout--position();
+        @include kendo-utils--flex-grid--flex-direction();
     }
 }
 

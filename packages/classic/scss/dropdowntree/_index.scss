@@ -37,6 +37,7 @@ $_kendo-module-meta: (
     @include module-render( "dropdown-tree" ) {
         @include kendo-dropdown-tree--layout();
         @include kendo-dropdown-tree--theme();
+        @include kendo-utils--typography--text-align();
     }
 }
 

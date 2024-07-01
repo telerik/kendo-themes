@@ -44,6 +44,7 @@ $_kendo-module-meta: (
     @include module-render( "scheduler" ) {
         @include kendo-scheduler--layout();
         @include kendo-scheduler--theme();
+        @include kendo-utils--typography--text-overflow();
     }
 }
 

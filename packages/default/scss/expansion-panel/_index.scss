@@ -2,20 +2,18 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "expander",
     dependencies: (
         "icon",
         "list",
-        // "utils/layout/display",
     )
 );
 
 
 // Dependencies
-// @import "../utils/_display.scss";
-// @import "../utils/_spacer.scss";
 @import "../icons/_index.scss";
 @import "../list/_index.scss";
 
@@ -36,6 +34,7 @@ $_kendo-module-meta: (
     @include module-render( "expander" ) {
         @include kendo-expander--layout();
         @include kendo-expander--theme();
+        @include kendo-utils--layout--display();
     }
 }
 

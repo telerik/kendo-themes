@@ -34,10 +34,16 @@
 /// @group grid-auto-flow
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-grid-auto-flow"));
+
 @mixin kendo-utils--flex-grid--grid-auto-flow() {
+    @include module-render("utils-flex-grid-grid-auto-flow") {
 
-    // Grid auto flow utility classes
-    $kendo-utils-grid-auto-flow: k-map-get( $kendo-utils, "grid-auto-flow" ) !default;
-    @include generate-utils( grid-flow, grid-auto-flow, $kendo-utils-grid-auto-flow );
+        // Grid auto flow utility classes
+        $kendo-utils-grid-auto-flow: k-map-get( $kendo-utils, "grid-auto-flow" ) !default;
+        @include generate-utils( grid-flow, grid-auto-flow, $kendo-utils-grid-auto-flow );
 
+    }
 }

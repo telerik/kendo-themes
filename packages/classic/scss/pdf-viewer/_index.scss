@@ -44,6 +44,8 @@ $_kendo-module-meta: (
     @include module-render( "pdf-viewer" ) {
         @include kendo-pdf-viewer--layout();
         @include kendo-pdf-viewer--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--layout--position();
     }
 }
 

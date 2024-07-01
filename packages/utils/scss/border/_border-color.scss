@@ -28,11 +28,16 @@
 /// @group border-color
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-border-color"));
 
 @mixin kendo-utils--border--border-color() {
+    @include module-render("utils-border-color") {
 
-    // Border color utility classes
-    $kendo-utils-border-color: k-map-get( $kendo-utils, "border-color" ) !default;
-    @include generate-utils( border, border-color, $kendo-utils-border-color, $css-var: 'color' );
+        // Border color utility classes
+        $kendo-utils-border-color: k-map-get( $kendo-utils, "border-color" ) !default;
+        @include generate-utils( border, border-color, $kendo-utils-border-color, $css-var: 'color' );
 
+    }
 }

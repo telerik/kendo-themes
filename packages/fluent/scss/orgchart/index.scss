@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "orgchart",
@@ -30,5 +32,9 @@ $_kendo-module-meta: (
     @include module.render( "orgchart" ) {
         @include kendo-orgchart--layout();
         @include kendo-orgchart--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--layout--position();
+        @include kendo-utils--flex-grid--align-items();
+        @include kendo-utils--flex-grid--justify-content();
     }
 }

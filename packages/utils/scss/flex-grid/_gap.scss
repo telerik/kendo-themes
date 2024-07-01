@@ -178,12 +178,18 @@
 /// @group gap
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-gap"));
+
 @mixin kendo-utils--flex-grid--gap() {
+    @include module-render("utils-flex-grid-gap") {
 
-    // Gap utility classes
-    $kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
-    @include generate-utils( gap, gap, $kendo-utils-gap, $css-var: "spacing" );
-    @include generate-utils( gap-x, column-gap, $kendo-utils-gap, $css-var: "spacing" );
-    @include generate-utils( gap-y, row-gap, $kendo-utils-gap, $css-var: "spacing" );
+        // Gap utility classes
+        $kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
+        @include generate-utils( gap, gap, $kendo-utils-gap, $css-var: "spacing" );
+        @include generate-utils( gap-x, column-gap, $kendo-utils-gap, $css-var: "spacing" );
+        @include generate-utils( gap-y, row-gap, $kendo-utils-gap, $css-var: "spacing" );
 
+    }
 }

@@ -76,15 +76,21 @@
 /// @group justify-content
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-justify-content"));
+
 @mixin kendo-utils--flex-grid--justify-content() {
+    @include module-render("utils-flex-grid-justify-content") {
 
-    // Justify content utility classes
-    $kendo-utils-justify-content: k-map-get( $kendo-utils, "justify-content" ) !default;
-    @include generate-utils( justify-content, justify-content, $kendo-utils-justify-content );
+        // Justify content utility classes
+        $kendo-utils-justify-content: k-map-get( $kendo-utils, "justify-content" ) !default;
+        @include generate-utils( justify-content, justify-content, $kendo-utils-justify-content );
 
 
-    // Custom justify-content classes
-    .#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0%; }
-    .\!.#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0% !important; } // stylelint-disable-line declaration-no-important
+        // Custom justify-content classes
+        .#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0%; }
+        .\!.#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0% !important; } // stylelint-disable-line declaration-no-important
 
+    }
 }

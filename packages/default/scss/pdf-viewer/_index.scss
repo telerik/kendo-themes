@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "pdf-viewer",
@@ -18,7 +19,6 @@ $_kendo-module-meta: (
 
 
 // Dependencies
-// @import "../utils/_index.scss";
 @import "../combobox/_index.scss";
 @import "../toolbar/_index.scss";
 @import "../dialog/_index.scss";
@@ -44,6 +44,8 @@ $_kendo-module-meta: (
     @include module-render( "pdf-viewer" ) {
         @include kendo-pdf-viewer--layout();
         @include kendo-pdf-viewer--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--layout--position();
     }
 }
 

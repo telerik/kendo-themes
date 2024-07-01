@@ -82,18 +82,24 @@
 /// @group display
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-layout-display"));
+
 @mixin kendo-utils--layout--display() {
+    @include module-render("utils-layout-display") {
 
-    // Display utility classes
-    $kendo-utils-display: k-map-get( $kendo-utils, "display" ) !default;
-    @include generate-utils( d, display, $kendo-utils-display );
+        // Display utility classes
+        $kendo-utils-display: k-map-get( $kendo-utils, "display" ) !default;
+        @include generate-utils( d, display, $kendo-utils-display );
 
 
-    // Legacy aliases
-    @include generate-utils( display, display, $kendo-utils-display );
-    .#{$kendo-prefix}d-flex-row { @extend .#{$kendo-prefix}d-flex, .#{$kendo-prefix}flex-row !optional; }
-    .\!#{$kendo-prefix}d-flex-row { @extend .\!#{$kendo-prefix}d-flex, .\!#{$kendo-prefix}flex-row !optional; }
-    .#{$kendo-prefix}d-flex-col { @extend .#{$kendo-prefix}d-flex, .#{$kendo-prefix}flex-col !optional; }
-    .\!#{$kendo-prefix}d-flex-col { @extend .\!#{$kendo-prefix}d-flex, .\!#{$kendo-prefix}flex-row !optional; }
+        // Legacy aliases
+        @include generate-utils( display, display, $kendo-utils-display );
+        .#{$kendo-prefix}d-flex-row { @extend .#{$kendo-prefix}d-flex, .#{$kendo-prefix}flex-row !optional; }
+        .\!#{$kendo-prefix}d-flex-row { @extend .\!#{$kendo-prefix}d-flex, .\!#{$kendo-prefix}flex-row !optional; }
+        .#{$kendo-prefix}d-flex-col { @extend .#{$kendo-prefix}d-flex, .#{$kendo-prefix}flex-col !optional; }
+        .\!#{$kendo-prefix}d-flex-col { @extend .\!#{$kendo-prefix}d-flex, .\!#{$kendo-prefix}flex-row !optional; }
 
+    }
 }

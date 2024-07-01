@@ -1,9 +1,15 @@
 // TODO: docs
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-interactivity-will-change"));
+
 @mixin kendo-utils--interactivity--will-change() {
+    @include module-render("utils-interactivity-will-change") {
 
-    // Will change utility classes
-    $kendo-utils-will-change: k-map-get( $kendo-utils, "will-change" ) !default;
-    @include generate-utils( will-change, will-change, $kendo-utils-will-change );
+        // Will change utility classes
+        $kendo-utils-will-change: k-map-get( $kendo-utils, "will-change" ) !default;
+        @include generate-utils( will-change, will-change, $kendo-utils-will-change );
 
+    }
 }

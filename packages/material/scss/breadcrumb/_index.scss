@@ -33,6 +33,8 @@ $_kendo-module-meta: (
     @include module-render( "breadcrumb" ) {
         @include kendo-breadcrumb--layout();
         @include kendo-breadcrumb--theme();
+        @include kendo-utils--flex-grid--flex();
+        @include kendo-utils--flex-grid--flex-wrap();
     }
 }
 

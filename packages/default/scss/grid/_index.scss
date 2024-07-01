@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "grid",
@@ -29,7 +30,6 @@ $_kendo-module-meta: (
         "textbox",
         "toolbar",
         "validator",
-        "utils/layout/float",
     )
 );
 
@@ -54,8 +54,6 @@ $_kendo-module-meta: (
 @import "../pager/_index.scss";
 @import "../chip/_index.scss";
 @import "../skeleton/_index.scss";
-// @import "../utils/_float.scss";
-// @import "../utils/_spacer.scss";
 @import "../list/_index.scss";
 @import "../table/_index.scss";
 @import "../tabstrip/_index.scss";
@@ -77,6 +75,9 @@ $_kendo-module-meta: (
     @include module-render( "grid" ) {
         @include kendo-grid--layout();
         @include kendo-grid--theme();
+        @include kendo-utils--interactivity--touch-action();
+        @include kendo-utils--interactivity--cursor();
+        @include kendo-utils--layout--display();
     }
 }
 

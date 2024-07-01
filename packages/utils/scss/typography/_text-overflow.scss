@@ -10,27 +10,33 @@
 /// @group text-overflow
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-typography-text-overflow"));
+
 @mixin kendo-utils--typography--text-overflow() {
+    @include module-render("utils-typography-text-overflow") {
 
-    // Text overflow utility classes
-    $kendo-utils-text-overflow: k-map-get( $kendo-utils, "text-overflow" ) !default;
-    @include generate-utils( text, text-overflow, $kendo-utils-text-overflow );
+        // Text overflow utility classes
+        $kendo-utils-text-overflow: k-map-get( $kendo-utils, "text-overflow" ) !default;
+        @include generate-utils( text, text-overflow, $kendo-utils-text-overflow );
 
 
-    // Text truncate utility classes
-    .#{$kendo-prefix}text-truncate {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        // Text truncate utility classes
+        .#{$kendo-prefix}text-truncate {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .\!#{$kendo-prefix}text-truncate {
+            white-space: nowrap !important; // stylelint-disable-line declaration-no-important
+            overflow: hidden !important; // stylelint-disable-line declaration-no-important
+            text-overflow: ellipsis !important; // stylelint-disable-line declaration-no-important
+        }
+
+        // Legacy aliases
+        .#{$kendo-prefix}text-ellipsis { @extend .#{$kendo-prefix}text-truncate !optional; }
+        .\!#{$kendo-prefix}text-ellipsis { @extend .\!#{$kendo-prefix}text-truncate !optional; }
+
     }
-    .\!#{$kendo-prefix}text-truncate {
-        white-space: nowrap !important; // stylelint-disable-line declaration-no-important
-        overflow: hidden !important; // stylelint-disable-line declaration-no-important
-        text-overflow: ellipsis !important; // stylelint-disable-line declaration-no-important
-    }
-
-    // Legacy aliases
-    .#{$kendo-prefix}text-ellipsis { @extend .#{$kendo-prefix}text-truncate !optional; }
-    .\!#{$kendo-prefix}text-ellipsis { @extend .\!#{$kendo-prefix}text-truncate !optional; }
-
 }

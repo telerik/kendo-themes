@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 // Module meta
 $_kendo-module-meta: (
     name: "colorgradient",
@@ -25,5 +27,8 @@ $_kendo-module-meta: (
     @include module.render( "colorgradient" ) {
         @include kendo-color-gradient--layout();
         @include kendo-color-gradient--theme();
+        @include kendo-utils--flex-grid--flex();
+        @include kendo-utils--flex-grid--align-self();
+        @include kendo-utils--typography--text-color();
     }
 }

@@ -2,6 +2,7 @@
 @import "../utils/_index.scss";
 
 
+
 // Module meta
 $_kendo-module-meta: (
     name: "card",
@@ -9,14 +10,11 @@ $_kendo-module-meta: (
         "icon",
         "actions",
         "typography",
-        // "utils/flex-grid"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_flex.scss";
-// @import "../utils/_grid.scss";
 @import "../action-buttons/_index.scss";
 @import "../icons/_index.scss";
 @import "../typography/_index.scss";
@@ -38,6 +36,9 @@ $_kendo-module-meta: (
     @include module-render( "card" ) {
         @include kendo-card--layout();
         @include kendo-card--theme();
+        @include kendo-utils--typography--text-overflow();
+        @include kendo-utils--typography--white-space();
+        @include kendo-utils--layout--display();
     }
 }
 

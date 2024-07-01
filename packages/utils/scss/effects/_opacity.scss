@@ -10,10 +10,16 @@
 /// @group opacity
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-effects-opacity"));
+
 @mixin kendo-utils--effects--opacity() {
+    @include module-render("utils-effects-opacity") {
 
-    // opacity utility classes
-    $kendo-utils-opacity: k-map-get( $kendo-utils, "opacity" ) !default;
-    @include generate-utils( opacity, opacity, $kendo-utils-opacity );
+        // opacity utility classes
+        $kendo-utils-opacity: k-map-get( $kendo-utils, "opacity" ) !default;
+        @include generate-utils( opacity, opacity, $kendo-utils-opacity );
 
+    }
 }

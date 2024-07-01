@@ -54,13 +54,17 @@
 /// @group font-weight
 /// @contextType css
 
+// Register
+@include module-register((name: "utils-typography-font-weight"));
+
 @mixin kendo-utils--typography--font-weight() {
+    @include module-render("utils-typography-font-weight") {
 
-    // Font weight utility classes
-    @include generate-utils( font, font-weight, $kendo-font-weights, $css-var: "font-weight" );
+        // Font weight utility classes
+        @include generate-utils( font, font-weight, $kendo-font-weights, $css-var: "font-weight" );
 
+        // Legacy aliases
+        @include generate-utils( font-weight, font-weight, $kendo-font-weights, $css-var: "font-weight" );
 
-    // Legacy aliases
-    @include generate-utils( font-weight, font-weight, $kendo-font-weights, $css-var: "font-weight" );
-
+    }
 }

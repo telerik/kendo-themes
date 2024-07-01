@@ -11,14 +11,11 @@ $_kendo-module-meta: (
         "input",
         "slider",
         "textbox",
-        // "utils/layout/position",
-        // "utils/typography/text-color",
     )
 );
 
 
 // Dependencies
-// @import "../utils/_index.scss";
 @import "../icons/_index.scss";
 @import "../input/_index.scss";
 @import "../button/_index.scss";
@@ -42,6 +39,8 @@ $_kendo-module-meta: (
     @include module-render( "captcha" ) {
         @include kendo-captcha--layout();
         @include kendo-captcha--theme();
+        @include kendo-utils--typography--text-color();
+        @include kendo-utils--layout--position();
     }
 }
 

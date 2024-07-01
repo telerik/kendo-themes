@@ -28,10 +28,16 @@
 /// @group outline-color
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-outline-color"));
+
 @mixin kendo-utils--border--outline-color() {
+    @include module-render("utils-outline-color") {
 
-    // Outline color utility classes
-    $kendo-utils-outline-color: k-map-get( $kendo-utils, "outline-color" ) !default;
-    @include generate-utils( outline, outline-color, $kendo-utils-outline-color, $css-var: 'color' );
+        // Outline color utility classes
+        $kendo-utils-outline-color: k-map-get( $kendo-utils, "outline-color" ) !default;
+        @include generate-utils( outline, outline-color, $kendo-utils-outline-color, $css-var: 'color' );
 
+    }
 }

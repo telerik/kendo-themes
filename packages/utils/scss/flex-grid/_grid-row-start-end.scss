@@ -16,26 +16,32 @@
 /// @group grid-row-start
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-grid-row-start-end"));
+
 @mixin kendo-utils--flex-grid--grid-row-start-end() {
+    @include module-render("utils-flex-grid-grid-row-start-end") {
 
-    // Grid row start/end utility classes
-    $kendo-utils-grid-row-start: k-map-get( $kendo-utils, "grid-row-start" ) !default;
-    @include generate-utils( row-start, grid-row-start, $kendo-utils-grid-row-start );
-
-
-    // Grid row start/end utility classes
-    $kendo-utils-grid-row-end: k-map-get( $kendo-utils, "grid-row-end" ) !default;
-    @include generate-utils( row-end, grid-row-end, $kendo-utils-grid-row-end );
+        // Grid row start/end utility classes
+        $kendo-utils-grid-row-start: k-map-get( $kendo-utils, "grid-row-start" ) !default;
+        @include generate-utils( row-start, grid-row-start, $kendo-utils-grid-row-start );
 
 
-    // Grid row span utility classes
-    $kendo-utils-grid-row-span: k-map-get( $kendo-utils, "grid-row-span" ) !default;
-    @include generate-utils( row-span, grid-row, $kendo-utils-grid-row-span );
+        // Grid row start/end utility classes
+        $kendo-utils-grid-row-end: k-map-get( $kendo-utils, "grid-row-end" ) !default;
+        @include generate-utils( row-end, grid-row-end, $kendo-utils-grid-row-end );
 
 
-    // Legacy aliases
-    @include generate-utils( rowspan, grid-row, $kendo-utils-grid-row-span );
-    .#{$kendo-prefix}rowspan-all { @extend .#{$kendo-prefix}rowspan-full !optional; }
-    .\!#{$kendo-prefix}rowspan-all { @extend .\!#{$kendo-prefix}rowspan-full !optional; }
+        // Grid row span utility classes
+        $kendo-utils-grid-row-span: k-map-get( $kendo-utils, "grid-row-span" ) !default;
+        @include generate-utils( row-span, grid-row, $kendo-utils-grid-row-span );
 
+
+        // Legacy aliases
+        @include generate-utils( rowspan, grid-row, $kendo-utils-grid-row-span );
+        .#{$kendo-prefix}rowspan-all { @extend .#{$kendo-prefix}rowspan-full !optional; }
+        .\!#{$kendo-prefix}rowspan-all { @extend .\!#{$kendo-prefix}rowspan-full !optional; }
+
+    }
 }

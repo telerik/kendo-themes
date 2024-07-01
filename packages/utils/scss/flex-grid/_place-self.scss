@@ -64,10 +64,16 @@
 /// @group place-self
 /// @contextType css
 
+// Register
+@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
+@include module-register((name: "utils-flex-grid-place-self"));
+
 @mixin kendo-utils--flex-grid--place-self() {
+    @include module-render("utils-flex-grid-place-self") {
 
-    // Place self utility classes
-    $kendo-utils-place-self: k-map-get( $kendo-utils, "place-self" ) !default;
-    @include generate-utils( place-self, place-self, $kendo-utils-place-self );
+        // Place self utility classes
+        $kendo-utils-place-self: k-map-get( $kendo-utils, "place-self" ) !default;
+        @include generate-utils( place-self, place-self, $kendo-utils-place-self );
 
+    }
 }
