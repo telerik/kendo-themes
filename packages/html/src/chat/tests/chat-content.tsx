@@ -158,6 +158,9 @@ export default () =>(
                     <ChatMessageGroup alt>
                         <ChatMessage className="k-only" text="Message after card deck" />
                     </ChatMessageGroup>
+                    <ChatMessageGroup>
+                        <ChatMessage selected className="k-only" text="Message selected" />
+                    </ChatMessageGroup>
                 </ChatNormal>
             </section>
 

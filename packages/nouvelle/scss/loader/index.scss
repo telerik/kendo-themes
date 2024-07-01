@@ -23,6 +23,7 @@ $_kendo-module-meta: (
 @mixin kendo-loader--styles() {
     @include module-render( "loader" ) {
         @include kendo-loader--layout();
+        @include kendo-loading--layout();
         @include kendo-loader--theme();
     }
 }

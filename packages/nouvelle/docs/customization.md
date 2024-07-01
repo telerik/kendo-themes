@@ -151,6 +151,56 @@ The following table lists the available variables for customizing the Nouvelle t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-opacity</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-filter</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -2886,6 +2936,66 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the list.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Loading
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-loading-bg</td>
+    <td>String</td>
+    <td><code>var( --kendo-component-bg, initial )</code></td>
+    <td><code>var(--kendo-component-bg, initial)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Loading indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-loading-text</td>
+    <td>String</td>
+    <td><code>currentColor</code></td>
+    <td><code>currentColor</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Loading indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-loading-opacity</td>
+    <td>Number</td>
+    <td><code>.3</code></td>
+    <td><code>0.3</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Loading indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-zindex-loading</td>
+    <td>Number</td>
+    <td><code>100</code></td>
+    <td><code>100</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The z-index of the Loading indicator.</div></div>
     </td>
 </tr>
 </tbody>

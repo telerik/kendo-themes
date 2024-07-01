@@ -124,7 +124,7 @@ $kendo-grid-sizes: (
     ),
 ) !default;
 
-$kendo-grid-header-font-size: 12px !default;
+$kendo-grid-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-grid-header-first-border: 1px !default;
 $kendo-grid-header-menu-icon-spacing: k-spacing(3.5) !default;
 

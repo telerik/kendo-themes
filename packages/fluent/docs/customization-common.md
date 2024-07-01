@@ -306,6 +306,56 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-disabled-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-border</td>
+    <td>Color</td>
+    <td><code>null</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-opacity</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-filter</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

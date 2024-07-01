@@ -64,10 +64,10 @@ $kendo-chat-message-list-spacing: $kendo-chat-item-spacing-y !default;
 
 /// The font size of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-font-size: smaller !default;
+$kendo-chat-timestamp-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The line height of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-chat-timestamp-line-height: var( --kendo-line-height-lg, normal ) !default;
 /// The text transform of the Chat timestamp.
 /// @group chat
 $kendo-chat-timestamp-transform: uppercase !default;
@@ -77,6 +77,20 @@ $kendo-chat-timestamp-text: var( --kendo-subtle-text, inherit ) !default;
 /// The background color of the Chat timestamp.
 /// @group chat
 $kendo-chat-timestamp-bg: normal !default;
+
+/// The font size of the Chat message meta text.
+/// @group chat
+$kendo-chat-message-meta-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line height of the Chat message meta text.
+/// @group chat
+$kendo-chat-message-meta-line-height: var( --kendo-line-height-lg, normal ) !default;
+
+/// The font size of the Chat author text.
+/// @group chat
+$kendo-chat-author-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line height of the Chat author text.
+/// @group chat
+$kendo-chat-author-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The horizontal padding of the Chat bubble message.
 /// @group chat

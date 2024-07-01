@@ -651,9 +651,6 @@ $kendo-selected-hover-text: $kendo-selected-text !default;
 $kendo-selected-hover-border: rgba( $kendo-base-border, .1 ) !default;
 $kendo-selected-hover-gradient: null !default;
 
-/// Text color of disabled items.
-$kendo-disabled-text: k-map-get( $theme, disabled-text ) !default;
-
 // Generic styles
 
 // Header

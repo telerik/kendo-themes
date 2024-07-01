@@ -65,7 +65,10 @@ $kendo-upload-multiple-items-spacing: k-spacing(3) !default;
 
 /// The font size of the Upload validation message.
 /// @group upload
-$kendo-upload-validation-font-size: 12px !default;
+$kendo-upload-validation-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line height of the Upload validation message.
+/// @group upload
+$kendo-upload-validation-line-height: var( --kendo-line-height-xs, normal ) !default;
 /// The horizontal spacing of the Upload status icon.
 /// @group upload
 $kendo-upload-icon-spacing: $kendo-icon-spacing !default;

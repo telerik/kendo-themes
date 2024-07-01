@@ -9,10 +9,6 @@ $_kendo-module-meta: (
 );
 
 
-// Dependencies
-@import "../common/_index.scss";
-
-
 // Component
 @import "./_variables.scss";
 @import "./_layout.scss";

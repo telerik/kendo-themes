@@ -15,12 +15,12 @@ $_kendo-module-meta: (
         "treelist",
         "validator",
         "window",
+        "time-marker"
     )
 );
 
 
 // Dependencies
-@import "../common/_index.scss";
 @import "../button/_index.scss";
 @import "../input/_index.scss";
 @import "../validator/_index.scss";

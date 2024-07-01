@@ -24,6 +24,10 @@
             var( --kendo-font-weight, normal ),
             var( --kendo-letter-spacing, normal ),
         );
+        @include fill(
+            var( --kendo-body-text, initial ),
+            var( --kendo-body-bg, initial )
+        );
         margin: 0;
 
         p {

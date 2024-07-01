@@ -1,0 +1,13 @@
+// Loading indicator
+/// The background color of the Loading indicator.
+/// @group loading
+$kendo-loading-bg: var( --kendo-component-bg, initial ) !default;
+/// The text color of the Loading indicator.
+/// @group loading
+$kendo-loading-text: currentColor !default;
+/// The opacity of the Loading indicator.
+/// @group loading
+$kendo-loading-opacity: .3 !default;
+/// The z-index of the Loading indicator.
+/// @group loading
+$kendo-zindex-loading: 100 !default;

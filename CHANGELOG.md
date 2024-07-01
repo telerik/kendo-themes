@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.1...v8.1.0-dev.2) (2024-07-01)
+
+
+### Bug Fixes
+
+* **bottom-navigation:** correct typography inconsistencies ([e3ce2e4](https://github.com/telerik/kendo-themes/commit/e3ce2e47ca756f72d791c7ae27530ea640fd043a))
+* **card:** correct typography inconsistencies ([e4cc6fe](https://github.com/telerik/kendo-themes/commit/e4cc6fef8eebafca781cfc5bc9dd6d69395e5d5d))
+* **chat:** correct typography inconsistencies ([f5bc974](https://github.com/telerik/kendo-themes/commit/f5bc974ff7c83f0b0429583191f3eaaad7296bea))
+* **upload:** correct typography inconsistencies ([0f37a0f](https://github.com/telerik/kendo-themes/commit/0f37a0fcf4d3553861da48e03fb5a304993b0d2e))
+* **window:** correct typography inconsistencies ([aa6f295](https://github.com/telerik/kendo-themes/commit/aa6f295b5d23300fb8ec4833f3d39ba90eabf95d))
+
+
+
+
+
+# [8.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.0...v8.1.0-dev.1) (2024-06-24)
+
+
+### Features
+
+* **bootstrap:** update main-dark swatch ([537f168](https://github.com/telerik/kendo-themes/commit/537f168cd20502bb1ac4642d901d7f594554a733))
+* **default:** update main-dark swatch ([8a52826](https://github.com/telerik/kendo-themes/commit/8a52826a0fe1a62b48f31b230892d3cfff7a6b6c))
+* **fluent:** add main-dark swatch ([b7dd92c](https://github.com/telerik/kendo-themes/commit/b7dd92c20f7458c964ff64371d0aab0ab9589e8e))
+* **material:** update main-dark swatch ([a57a8be](https://github.com/telerik/kendo-themes/commit/a57a8be52c5e306974ff47bf20d6111bf0b4982f))
+
+
+
+
+
 # [8.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.0.2-dev.4...v8.1.0-dev.0) (2024-06-17)
 
 

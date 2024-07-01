@@ -77,7 +77,7 @@ $kendo-fab-item-text-border-radius: 2px !default;
 $kendo-fab-item-text-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// The line height of the FAB item text.
 /// @group floating-action-button
-$kendo-fab-item-text-line-height: 1.2 !default;
+$kendo-fab-item-text-line-height: var( --kendo-line-height-sm, normal ) !default;
 
 /// The horizontal padding of the FAB item icon.
 /// @group floating-action-button

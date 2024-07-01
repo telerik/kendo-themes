@@ -1,0 +1,5 @@
+@import "@progress/kendo-theme-default/scss/panel/_layout.scss";
+
+@mixin kendo-panel--layout() {
+    @include kendo-panel--layout--base();
+}

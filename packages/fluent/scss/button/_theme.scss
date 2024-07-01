@@ -153,4 +153,10 @@
         }
     }
 
+    .k-button-group:disabled,
+    .k-button-group.k-disabled,
+    .k-button-group[disabled] {
+        background-color: inherit;
+    }
+
 }

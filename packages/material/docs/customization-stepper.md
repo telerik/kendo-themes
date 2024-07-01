@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), if($kendo-is-dark-theme, $light-disabled-text, $dark-disabled-text ))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 32%, transparent)</code></td>
 </tr>
 <tr>

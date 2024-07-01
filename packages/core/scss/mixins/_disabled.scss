@@ -1,19 +1,13 @@
 // Disabled
-@mixin disabled( $kendo-disabled-styling ) {
-    outline: none;
-    cursor: default;
-    opacity: k-map-get($kendo-disabled-styling, opacity);
-    filter: k-map-get($kendo-disabled-styling, filter);
-    pointer-events: none;
-    box-shadow: none;
-}
 
-@mixin disabled-color( $color: null, $bg: null, $border: null ) {
+@mixin disabled( $color: null, $bg: null, $border: null, $opacity: null, $filter: null ) {
     outline: none;
     cursor: default;
-    background-color: $bg;
     color: $color;
+    background-color: $bg;
     border-color: $border;
+    opacity: $opacity;
+    filter: $filter;
     pointer-events: none;
     box-shadow: none;
 }

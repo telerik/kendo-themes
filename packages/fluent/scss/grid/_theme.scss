@@ -541,7 +541,7 @@
 
             &.k-disabled .k-link,
             &.k-disabled .k-icon {
-                @include disabled-color(
+                @include disabled(
                     var( --kendo-disabled-text, inherit )
                 );
             }
@@ -561,7 +561,7 @@
 
         .k-listgroup-item {
             &.k-disabled {
-                @include disabled-color(
+                @include disabled(
                     $bg: var( --kendo-disabled-bg, inherit )
                 );
             }

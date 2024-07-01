@@ -53,7 +53,7 @@ $kendo-form-legend-border-color: $kendo-component-border !default;
 $kendo-form-legend-width: 100% !default;
 /// The font size of the Form legend.
 /// @group form
-$kendo-form-legend-font-size: 14px !default;
+$kendo-form-legend-font-size: var( --kendo-font-size, inherit ) !default;
 /// The text capitalization of the Form legend.
 /// @group form
 $kendo-form-legend-text-transform: uppercase !default;
@@ -68,7 +68,7 @@ $kendo-form-button-margin-x: k-spacing(2) !default;
 
 /// The font size of the Form hint.
 /// @group form
-$kendo-form-hint-font-size: 12px !default;
+$kendo-form-hint-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font style of the Form hint.
 /// @group form
 $kendo-form-hint-font-style: italic !default;
@@ -124,7 +124,7 @@ $kendo-forms-invalid-color: $kendo-color-error !default;
 $kendo-label-optional-margin-x: k-spacing(1.5) !default;
 /// The font size of the optional label in the Form.
 /// @group form
-$kendo-label-optional-font-size: 12px !default;
+$kendo-label-optional-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font style of the optional label in the Form.
 /// @group form
 $kendo-label-optional-font-style: italic !default;

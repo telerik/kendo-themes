@@ -185,7 +185,7 @@
         &.k-disabled .k-fab-item-icon,
         &:disabled .k-fab-item-text,
         &.k-disabled .k-fab-item-text {
-            @include disabled-color(
+            @include disabled(
                 var( --kendo-disabled-text, inherit ),
                 var( --kendo-disabled-bg, inherit ),
                 var( --kendo-disabled-border, inherit )

@@ -242,13 +242,53 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-disabled-text</td>
-    <td>String</td>
-    <td><span class="color-preview" style="background-color: #8d8d8d"></span><code>#8d8d8d</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
+    <td>$kendo-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-opacity</td>
+    <td>Number</td>
+    <td><code>null</code></td>
+    <td><code>0.6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-filter</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>grayscale(0.1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
     </td>
 </tr>
 </tbody>
@@ -1040,8 +1080,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-bottom-nav-line-height</td>
     <td>String</td>
-    <td><code>var( --kendo-line-height-sm, normal )</code></td>
-    <td><code>var(--kendo-line-height-sm, normal)</code></td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the BottomNavigation.</div></div>
@@ -3978,9 +4018,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-card-title-line-height</td>
-    <td>Number</td>
-    <td><code>1.25</code></td>
-    <td><code>1.25</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Card title.</div></div>
@@ -4039,8 +4079,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-card-subtitle-line-height</td>
     <td>String</td>
-    <td><code>normal</code></td>
-    <td><code>normal</code></td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Card subtitle.</div></div>
@@ -4449,8 +4489,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-chat-timestamp-font-size</td>
     <td>String</td>
-    <td><code>smaller</code></td>
-    <td><code>smaller</code></td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat timestamp.</div></div>
@@ -4458,9 +4498,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-chat-timestamp-line-height</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat timestamp.</div></div>
@@ -4497,6 +4537,46 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-chat-message-meta-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat message meta text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-message-meta-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat message meta text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-author-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chat author text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-author-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat author text.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chat-bubble-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(3)</code></td>
@@ -4528,9 +4608,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-chat-bubble-line-height</td>
-    <td>Number</td>
-    <td><code>18px</code></td>
-    <td><code>18px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat bubble message.</div></div>
@@ -4668,9 +4748,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-chat-quick-reply-line-height</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-chat-bubble-line-height</code></td>
-    <td><code>18px</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Chat quick reply.</div></div>
@@ -8566,9 +8646,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-drawer-item-font-size</td>
-    <td>Number</td>
-    <td><code>16px</code></td>
-    <td><code>16px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Drawer item.</div></div>
@@ -10939,9 +11019,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-form-legend-font-size</td>
-    <td>Number</td>
-    <td><code>14px</code></td>
-    <td><code>14px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form legend.</div></div>
@@ -10979,9 +11059,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-form-hint-font-size</td>
-    <td>Number</td>
-    <td><code>12px</code></td>
-    <td><code>12px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form hint.</div></div>
@@ -11139,9 +11219,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-label-optional-font-size</td>
-    <td>Number</td>
-    <td><code>12px</code></td>
-    <td><code>12px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the optional label in the Form.</div></div>
@@ -14531,6 +14611,16 @@ The following table lists the available variables for customizing the Classic th
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Loading indicator.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-zindex-loading</td>
+    <td>Number</td>
+    <td><code>100</code></td>
+    <td><code>100</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The z-index of the Loading indicator.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -16486,6 +16576,126 @@ The following table lists the available variables for customizing the Classic th
 </tbody>
 </table>
 
+### Panel
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-panel-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-border-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of the border around the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-header-padding-inline</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline padding of the Panel header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-header-padding-block</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block padding of the Panel header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-content-padding-inline</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline padding of the Panel content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-content-padding-block</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block padding of the Panel content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-text</td>
+    <td>String</td>
+    <td><code>var(--kendo-component-text, #{$kendo-component-text})</code></td>
+    <td><code>var(--kendo-component-text, var(--kendo-color-on-app-surface, #272727))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-bg</td>
+    <td>String</td>
+    <td><code>var(--kendo-component-bg, #{$kendo-component-bg})</code></td>
+    <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-panel-border</td>
+    <td>String</td>
+    <td><code>var(--kendo-component-border, #{$kendo-component-border})</code></td>
+    <td><code>var(--kendo-component-border, var(--kendo-color-border, #cacaca))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Panel.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Panelbar
 
 <table class="theme-variables">
@@ -18315,9 +18525,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-progressbar-line-height</td>
-    <td>Number</td>
-    <td><code>1</code></td>
-    <td><code>1</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the ProgressBar.</div></div>
@@ -22322,7 +22532,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), #8d8d8d)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 60%, transparent)</code></td>
 </tr>
 <tr>
@@ -22562,7 +22772,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-stepper-label-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), $kendo-disabled-text)</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), #8d8d8d)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 60%, transparent)</code></td>
 </tr>
 <tr>
@@ -25035,6 +25245,46 @@ The following table lists the available variables for customizing the Classic th
 </tbody>
 </table>
 
+### TimeMarker
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-current-time-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the current time indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-current-time-color</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
+    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the current time indicator.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Timeline
 
 <table class="theme-variables">
@@ -25940,9 +26190,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-tooltip-line-height</td>
-    <td>Number</td>
-    <td><code>1.25</code></td>
-    <td><code>1.25</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Tooltip.</div></div>
@@ -25960,9 +26210,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-tooltip-title-line-height</td>
-    <td>Number</td>
-    <td><code>1</code></td>
-    <td><code>1</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Tooltip title.</div></div>
@@ -28103,12 +28353,22 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-upload-validation-font-size</td>
-    <td>Number</td>
-    <td><code>11px</code></td>
-    <td><code>11px</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Upload validation message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-upload-validation-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-xs, normal )</code></td>
+    <td><code>var(--kendo-line-height-xs, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Upload validation message.</div></div>
     </td>
 </tr>
 <tr>
@@ -28323,9 +28583,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-window-title-line-height</td>
-    <td>Number</td>
-    <td><code>1.25</code></td>
-    <td><code>1.25</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-sm, normal )</code></td>
+    <td><code>var(--kendo-line-height-sm, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the title of the Window.</div></div>

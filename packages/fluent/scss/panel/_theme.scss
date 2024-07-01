@@ -1,0 +1,22 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-panel--theme() {
+    // Panels
+    .k-block,
+    .k-panel {
+        @include fill(
+            var( --kendo-panel-text, #{$kendo-panel-text} ),
+            var( --kendo-panel-bg, #{$kendo-panel-bg} ),
+            var( --kendo-panel-border, #{$kendo-panel-border} )
+        );
+    }
+
+    :where(.k-content) {
+        @include fill(
+            var( --kendo-panel-text, #{$kendo-panel-text} ),
+            var( --kendo-panel-bg, #{$kendo-panel-bg} ),
+            var( --kendo-panel-border, #{$kendo-panel-border} )
+        );
+    }
+}

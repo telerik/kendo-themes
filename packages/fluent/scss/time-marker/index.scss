@@ -1,0 +1,22 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "time-marker",
+    dependencies: ()
+);
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Register
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
+
+// Expose
+@mixin time-marker-styles() {
+    @include module.render( "time-marker" ) {
+        @include kendo-time-marker--layout();
+        @include kendo-time-marker--theme();
+    }
+}

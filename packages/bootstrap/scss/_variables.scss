@@ -14,6 +14,8 @@ $kendo-use-input-spinner-icon-offset: false !default;
 
 $kendo-auto-bootstrap: true !default;
 
+$kendo-nested-disabled: true !default;
+
 // Icons
 $kendo-icon-size: 16px !default;
 
@@ -27,7 +29,6 @@ $kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
-$kendo-zindex-loading: 100 !default;
 
 // TODO: refactor
 $kendo-focus-shadow: null !default;
@@ -35,20 +36,6 @@ $kendo-focus-shadow: null !default;
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
 
-// Disabled mixin variables
-$kendo-disabled-filter: grayscale(.1) !default;
-$kendo-disabled-opacity: .65 !default;
-
-$kendo-disabled-styling: (
-    opacity: $kendo-disabled-opacity,
-    filter: $kendo-disabled-filter
-) !default;
-
-
 // Generic styles
 
 // TODO: refactor once we extract drag drop as separate module
-
-// Loading
-$kendo-loading-opacity: .3 !default;
-$kendo-zindex-loading: 100 !default;

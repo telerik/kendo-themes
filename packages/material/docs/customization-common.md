@@ -168,16 +168,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-disabled-text</td>
-    <td>String</td>
-    <td><code>k-map-get( $theme, disabled-text )</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -244,6 +234,56 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the paragraph.<br /> @group typography</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-text</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-opacity</td>
+    <td>Number</td>
+    <td><code>null</code></td>
+    <td><code>0.6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-filter</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>grayscale(0.1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
     </td>
 </tr>
 </tbody>

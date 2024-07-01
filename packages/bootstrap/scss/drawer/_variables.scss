@@ -54,7 +54,7 @@ $kendo-drawer-item-padding-x: $kendo-padding-md-x !default;
 $kendo-drawer-item-padding-y: $kendo-padding-md-y !default;
 /// The font size of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-font-size: 16px !default;
+$kendo-drawer-item-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-line-height: $kendo-line-height-lg !default;

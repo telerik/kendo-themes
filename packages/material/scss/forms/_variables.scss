@@ -124,7 +124,7 @@ $kendo-forms-invalid-color: inherit !default;
 $kendo-label-optional-margin-x: k-spacing(1.5) !default;
 /// The font size of the optional label in the Form.
 /// @group form
-$kendo-label-optional-font-size: 12px !default;
+$kendo-label-optional-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The font style of the optional label in the Form.
 /// @group form
 $kendo-label-optional-font-style: italic !default;

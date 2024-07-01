@@ -17,7 +17,7 @@ $kendo-time-list-width: 4em !default;
 $kendo-time-list-height: 240px !default;
 
 $kendo-time-list-title-font-size: var( --kendo-font-size-sm, inherit ) !default;
-$kendo-time-list-title-line-height: 1.5 !default;
+$kendo-time-list-title-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-time-list-title-height: calc( #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} ) !default;
 $kendo-time-list-title-text: $kendo-subtle-text !default;
 $kendo-time-list-title-focus-text: $kendo-component-text !default;
