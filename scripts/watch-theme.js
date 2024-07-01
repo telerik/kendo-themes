@@ -15,7 +15,7 @@ const { exec } = require("child_process");
         console.clear();
         console.log("Compiling theme...");
         exec(
-            "npm run build",
+            "npm run sass && npm run build",
             {
                 cwd: root,
             },

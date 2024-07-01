@@ -16,3 +16,8 @@ debug.log
 
 # Lock files
 # package-lock.json
+
+
+
+.nx/cache
+.nx/workspace-data
