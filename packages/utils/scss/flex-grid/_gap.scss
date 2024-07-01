@@ -186,4 +186,11 @@
     @include generate-utils( gap-x, column-gap, $kendo-utils-gap, $css-var: "spacing" );
     @include generate-utils( gap-y, row-gap, $kendo-utils-gap, $css-var: "spacing" );
 
+    // Used to add a gutter in the Responsive Layout
+    @each $key, $val in $kendo-breakpoints {
+        @include kendo-breakpoint-up($key) {
+            @include generate-utils( gap-#{$key}, gap, $kendo-utils-gap, $css-var: "spacing" );
+        }
+    }
+
 }

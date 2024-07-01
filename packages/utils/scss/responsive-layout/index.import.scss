@@ -1,0 +1,8 @@
+@import "./_core.scss";
+@import "./_col-sizes.scss";
+
+
+@mixin kendo-utils--responsive-layout() {
+    @include kendo-utils--responsive-layout--core();
+    @include kendo-utils--responsive-layout--col-sizes();
+}
