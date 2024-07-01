@@ -1,0 +1,34 @@
+@use "sass:map";
+@use "../core/" as *;
+
+// Chart wizard
+
+/// The color of the area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-color: k-color(primary) !default;
+/// The background color of the area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-bg: k-color(primary-subtle) !default;
+/// The border radius of the area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-border-radius: k-border-radius(md) !default;
+/// The padding of the area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-padding: k-spacing(4) !default;
+/// The box shadow of the selected area around the chart type icon.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-area-selected-shadow: inset 0 0 1px $kendo-chart-wizard-icon-area-color !default;
+
+/// The padding of the preview pane.
+/// @group chart-wizard
+$kendo-chart-wizard-preview-pane-padding: k-spacing(3) !default;
+/// The padding of the property pane.
+/// @group chart-wizard
+$kendo-chart-wizard-property-pane-padding: k-spacing(3) !default;
+
+/// The gap between the chart type items in the Property panel.
+/// @group chart-wizard
+$kendo-chart-wizard-chart-type-spacing: k-spacing(4) !default;
+/// The gap between the icon area and its text.
+/// @group chart-wizard
+$kendo-chart-wizard-icon-text-gap: k-spacing(3) !default;
