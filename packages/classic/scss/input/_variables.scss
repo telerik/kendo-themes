@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/" as *;
+@use "../button/_variables.scss" as *;
+
 // Input
 
 /// The default width of the Input components.
@@ -439,5 +443,3 @@ $kendo-picker-flat-hover-focus-text: null !default;
 /// The border color of the flat hovered and focused Picker components.
 /// @group picker
 $kendo-picker-flat-hover-focus-border: null !default;
-
-

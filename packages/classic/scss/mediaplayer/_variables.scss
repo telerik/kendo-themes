@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
+
 // Media player
 $kendo-media-player-border-width: 1px !default;
 $kendo-media-player-font-family: var( --kendo-font-family, inherit ) !default;

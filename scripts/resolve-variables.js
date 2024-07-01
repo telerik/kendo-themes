@@ -87,7 +87,7 @@ function prettifySassNumber(sassNumber) {
 
 if (fs.existsSync( srcFile )) {
 
-    if (path.basename( themeDir ) === 'fluent') {
+    if (path.basename( themeDir ) === 'fluent' || path.basename( themeDir ) === 'classic') {
         fs.writeFileSync( path.resolve( output.path, output.filename), '@forward "../scss/all.scss";');
     } else {
         sassFlatten({ file: srcFile, output, nodeModules });

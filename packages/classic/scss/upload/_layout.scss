@@ -1,3 +1,6 @@
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "./_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/upload/_layout.scss";
 
 

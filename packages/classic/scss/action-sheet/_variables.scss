@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
+
 // Action sheet
 
 $kendo-actionsheet-padding-x: null !default;

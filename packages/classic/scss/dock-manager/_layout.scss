@@ -1,3 +1,5 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/dock-manager/_layout.scss";
 
 @mixin kendo-dock-manager--layout() {

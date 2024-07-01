@@ -1,6 +1,6 @@
 @import "@progress/kendo-theme-default/scss/maskedtextbox/_theme.scss";
 
 
-@mixin kendo-masked-textbox--theme() {
+@mixin kendo-maskedtextbox--theme() {
     @include kendo-masked-textbox--theme-base();
 }

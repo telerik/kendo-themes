@@ -1,6 +1,6 @@
 @import "@progress/kendo-theme-default/scss/responsivepanel/_layout.scss";
 
 
-@mixin kendo-responsive-panel--layout() {
+@mixin kendo-responsivepanel--layout() {
     @include kendo-responsive-panel--layout-base();
 }

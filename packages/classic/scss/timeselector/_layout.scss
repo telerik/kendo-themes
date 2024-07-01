@@ -1,6 +1,9 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
+@use "../button/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/timeselector/_layout.scss";
 
 
-@mixin kendo-time-selector--layout() {
+@mixin kendo-timeselector--layout() {
     @include kendo-time-selector--layout-base();
 }

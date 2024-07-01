@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
+
 // TreeView
 
 /// The font family of the TreeView.
@@ -184,4 +187,3 @@ $kendo-treeview-loadmore-focus-border: null !default;
 /// The box shadow of the focused Load More button in the TreeView.
 /// @group treeview
 $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !default;
-
