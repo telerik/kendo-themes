@@ -10,3 +10,5 @@ export const MultiSelectTreeValue = ({ size, rounded, children, ...other }: any)
         />
     </>
 );
+
+export default MultiSelectTreeValue;

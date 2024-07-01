@@ -17,3 +17,5 @@ export const StepperNormal = ({ gridTemplateColumns = "repeat(6, 1fr)", ...other
         {...other}
     />
 );
+
+export default StepperNormal;

@@ -12,3 +12,5 @@ export const PDFViewerWithSearchPanel = (props) => (
         {...props}
     />
 );
+
+export default PDFViewerWithSearchPanel;

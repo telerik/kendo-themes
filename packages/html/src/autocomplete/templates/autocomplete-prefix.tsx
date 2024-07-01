@@ -11,3 +11,5 @@ export const AutocompletePrefix = (props) => (
         {...props}
     />
 );
+
+export default AutocompletePrefix;

@@ -8,3 +8,5 @@ export const RatingWithLabel = ({ value = 2.5, max = 5, ...props }: any) =>(
         {...props}
     />
 );
+
+export default RatingWithLabel;

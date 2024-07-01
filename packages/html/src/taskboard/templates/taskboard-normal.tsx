@@ -68,3 +68,5 @@ export const TaskBoardNormal = (props) =>
     }
     {...props} />
 ;
+
+export default TaskBoardNormal;

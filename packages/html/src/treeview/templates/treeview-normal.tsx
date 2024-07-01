@@ -11,3 +11,5 @@ export const TreeviewNormal = (props) => (
     >
     </Treeview>
 );
+
+export default TreeviewNormal;

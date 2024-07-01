@@ -13,3 +13,5 @@ export const BottomNavIcons = (props) => (
     >
     </BottomNav>
 );
+
+export default BottomNavIcons;

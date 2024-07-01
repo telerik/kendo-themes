@@ -65,3 +65,5 @@ export const ImageEditorResize = (props: any) => (
         }
         {...props} />
 );
+
+export default ImageEditorResize;

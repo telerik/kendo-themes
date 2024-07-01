@@ -129,3 +129,5 @@ export const SchedulerFlexAgenda = ({ style, ...props }: any) => (
         {...props}
     />
 );
+
+export default SchedulerFlexAgenda;

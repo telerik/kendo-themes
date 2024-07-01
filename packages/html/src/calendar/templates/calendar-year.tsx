@@ -27,3 +27,5 @@ export const CalendarYear = (props: any) => (
         {...props}
     />
 );
+
+export default CalendarYear;

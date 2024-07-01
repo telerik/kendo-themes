@@ -15,3 +15,5 @@ export const SplitButtonPopup = (props) => (
         {...props}
     />
 );
+
+export default SplitButtonPopup;

@@ -5,3 +5,5 @@ export const DropzoneWithNote = (props) =>
         note="Only JPEG, PNG and SVG files are allowed."
         {...props}
     />;
+
+export default DropzoneWithNote;

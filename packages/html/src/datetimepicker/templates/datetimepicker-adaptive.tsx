@@ -6,3 +6,5 @@ export const DateTimePickerAdaptive = (props) => (
         {...props}
     />
 );
+
+export default DateTimePickerAdaptive;

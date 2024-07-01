@@ -8,3 +8,5 @@ export const RadioButtonInsideLabel = ({ children, ...other }: any) => (
         </label>
     </>
 );
+
+export default RadioButtonInsideLabel;

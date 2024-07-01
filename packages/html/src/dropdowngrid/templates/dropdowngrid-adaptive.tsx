@@ -7,3 +7,5 @@ export const DropdownGridAdaptive = (props) => (
     />
 );
 
+
+export default DropdownGridAdaptive;

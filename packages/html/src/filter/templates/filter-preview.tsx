@@ -94,3 +94,5 @@ export const FilterWithPreview = (props) => (
     >
     </Filter>
 );
+
+export default FilterWithPreview;

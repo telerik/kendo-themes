@@ -91,3 +91,5 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
     </TreeList>
 );
 
+
+export default TreeListNormal;

@@ -208,3 +208,5 @@ export const SchedulerFlexWeek = ({ style, ...props }: any) => (
         {...props}
     ></Scheduler>
 );
+
+export default SchedulerFlexWeek;

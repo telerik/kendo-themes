@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <div class="k-grid k-grid-md">
+        <div class="k-grid-aria-root">
+            <div class="k-grid-header">
+                <div class="k-grid-header-wrap">
+                    <table class="k-grid-header-table k-table k-table-md">
+                        <colgroup>
+                            <col class="k-hierarchy-col">
+                            <col style="width: 100px;">
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead class="k-table-thead">
+                            <tr class="k-table-row">
+                                <th class="k-hierarchy-cell k-header k-table-th"></th>
+                                <th class="k-header k-table-th">
+                                    <span class="k-cell-inner">
+                                        <span class="k-link">
+                                            <span class="k-column-title">ID</span>
+                                        </span>
+                                    </span>
+                                </th>
+                                <th class="k-header k-table-th">
+                                    <span class="k-cell-inner">
+                                        <span class="k-link">
+                                            <span class="k-column-title">Category Name</span>
+                                        </span>
+                                    </span>
+                                </th>
+                                <th class="k-header k-table-th">
+                                    <span class="k-cell-inner">
+                                        <span class="k-link">
+                                            <span class="k-column-title">Description</span>
+                                        </span>
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="k-grid-container">
+                <div class="k-grid-content">
+                    <table class="k-grid-table k-table k-table-md">
+                        <colgroup>
+                            <col class="k-hierarchy-col">
+                            <col style="width: 100px;">
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-master-row k-table-row">
+                                <td class="k-hierarchy-cell k-table-td">
+                                    <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M352 256 160 384V128z"></path>
+                                        </svg>
+                                    </span>
+                                </td>
+                                <td class="k-table-td">1</td>
+                                <td class="k-table-td">Beverages</td>
+                                <td class="k-table-td">Soft drinks, coffees, teas, beers and ales</td>
+                            </tr>
+                            <tr class="k-master-row k-alt k-expanded k-table-row k-table-alt-row">
+                                <td class="k-hierarchy-cell k-table-td">
+                                    <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </td>
+                                <td class="k-table-td">2</td>
+                                <td class="k-table-td">Condiments</td>
+                                <td class="k-table-td">Sweet and savory sauces, relishes, spreads, and seasonings</td>
+                            </tr>
+                            <tr class="k-master-row k-detail-row k-table-row">
+                                <td class="k-hierarchy-cell k-table-td"></td>
+                                <td colspan="3" class="k-detail-cell k-table-td">
+                                    <div class="k-grid-no-scrollbar k-grid k-grid-md">
+                                        <div class="k-grid-aria-root">
+                                            <div class="k-grid-header">
+                                                <div class="k-grid-header-wrap">
+                                                    <table class="k-grid-header-table k-table k-table-md">
+                                                        <colgroup>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                        </colgroup>
+                                                        <thead class="k-table-thead">
+                                                            <tr class="k-table-row">
+                                                                <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                                                    <span class="k-cell-inner">
+                                                                        <span class="k-link">
+                                                                            <span class="k-column-title">ID</span>
+                                                                        </span>
+                                                                    </span>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                                                    <span class="k-cell-inner">
+                                                                        <span class="k-link">
+                                                                            <span class="k-column-title">Product Name</span>
+                                                                        </span>
+                                                                    </span>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                                                    <span class="k-cell-inner">
+                                                                        <span class="k-link">
+                                                                            <span class="k-column-title">Unit Price</span>
+                                                                        </span>
+                                                                    </span>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="k-grid-container">
+                                                <div class="k-grid-content">
+                                                    <table class="k-grid-table k-table k-table-md">
+                                                        <colgroup>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                        </colgroup>
+                                                        <tbody class="k-table-tbody">
+                                                            <tr class="k-master-row k-table-row">
+                                                                <td colspan="1" class="k-table-td">1</td>
+                                                                <td colspan="1" class="k-table-td">Aniseed Syrup</td>
+                                                                <td colspan="1" class="k-table-td">$10.00</td>
+                                                            </tr>
+                                                            <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                                                <td colspan="1" class="k-table-td">2</td>
+                                                                <td colspan="1" class="k-table-td">Chef Anton's Cajun Seasoning</td>
+                                                                <td colspan="1" class="k-table-td">$22.00</td>
+                                                            </tr>
+                                                            <tr class="k-master-row k-table-row">
+                                                                <td colspan="1" class="k-table-td">3</td>
+                                                                <td colspan="1" class="k-table-td">Chef Anton's Gumbo Mix</td>
+                                                                <td colspan="1" class="k-table-td">$21.35</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -26,3 +26,5 @@ export const FilterMenuMultiCheck = (props) => (
     >
     </FilterMenu>
 );
+
+export default FilterMenuMultiCheck;

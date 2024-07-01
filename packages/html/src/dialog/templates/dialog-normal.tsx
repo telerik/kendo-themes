@@ -24,3 +24,5 @@ export const DialogNormal = (props) => (
  * @deprecated This template has been moved to DialogNormal. Please update your code accordingly.
  */
 export const DialogModal = DialogNormal;
+
+export default DialogNormal;

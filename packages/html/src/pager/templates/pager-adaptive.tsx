@@ -6,3 +6,5 @@ export const PagerAdaptive = (props) => (
         {...props}
     />
 );
+
+export default PagerAdaptive;

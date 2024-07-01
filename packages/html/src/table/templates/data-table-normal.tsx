@@ -74,3 +74,5 @@ export const DataTableNormal = (props) => (
         </TableFooter>
     </DataTable>
 );
+
+export default DataTableNormal;

@@ -164,3 +164,5 @@ export const SchedulerMonth = ({ style, ...props }: any) => (
         {...props}
     />
 );
+
+export default SchedulerMonth;

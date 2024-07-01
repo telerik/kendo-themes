@@ -22,3 +22,5 @@ export const AutocompleteGroupingModern = (props) => (
         {...props}
     />
 );
+
+export default AutocompleteGroupingModern;

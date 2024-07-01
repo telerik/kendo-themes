@@ -78,3 +78,5 @@ export const GridNormal = ({ contentClassName, ...other }: any) => (
         {...other}>
     </Grid>
 );
+
+export default GridNormal;

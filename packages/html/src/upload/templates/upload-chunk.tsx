@@ -10,3 +10,5 @@ export const UploadChunk = (props) => (
     {...props}>
     </Upload>
 );
+
+export default UploadChunk;

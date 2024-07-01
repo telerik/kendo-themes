@@ -154,3 +154,5 @@ export const SchedulerFlexMonth = ({ style, ...props } :any) => (
         {...props}
     ></Scheduler>
 );
+
+export default SchedulerFlexMonth;

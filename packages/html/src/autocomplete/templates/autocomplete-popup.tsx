@@ -14,3 +14,5 @@ export const AutocompletePopup = (props) => (
         {...props}
     />
 );
+
+export default AutocompletePopup;

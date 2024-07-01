@@ -108,3 +108,5 @@ export const FileManagerGrid = (props) => (
     {...props}>
     </FileManager>
 );
+
+export default FileManagerGrid;

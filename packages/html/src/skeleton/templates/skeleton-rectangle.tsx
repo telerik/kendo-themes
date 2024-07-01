@@ -5,3 +5,5 @@ export const SkeletonRectangle = (props) =>
         shape={'rect'}
         {...props}
     />;
+
+export default SkeletonRectangle;

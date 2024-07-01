@@ -33,3 +33,5 @@ export const TimelineHorizontal = (props) => (
         {...props}>
     </Timeline>
 );
+
+export default TimelineHorizontal;

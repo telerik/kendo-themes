@@ -121,3 +121,5 @@ export const SchedulerAgenda = ({ style, ...props }: any) => (
         {...props}
     ></Scheduler>
 );
+
+export default SchedulerAgenda;

@@ -13,3 +13,5 @@ export const StackLayoutVertical = ({ alignItems = "start", justifyContent = "st
         }
         {...other} />
 );
+
+export default StackLayoutVertical;

@@ -19,3 +19,5 @@ export const PanelBarNormal = (props) => (
         {...props}
     />
 );
+
+export default PanelBarNormal;

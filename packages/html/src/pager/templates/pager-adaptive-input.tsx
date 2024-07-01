@@ -7,3 +7,5 @@ export const PagerAdaptiveInput = (props) => (
         {...props}
     />
 );
+
+export default PagerAdaptiveInput;

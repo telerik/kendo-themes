@@ -109,3 +109,5 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
     </TreeList>
 );
 
+
+export default TreeListRowReordering;

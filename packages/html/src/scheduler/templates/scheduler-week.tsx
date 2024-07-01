@@ -266,3 +266,5 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
         {...props}
     />
 );
+
+export default SchedulerWeek;

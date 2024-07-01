@@ -27,3 +27,5 @@ export const CalendarCentury = ({ showOtherCentury, ...props }: any) => (
         {...props}
     />
 );
+
+export default CalendarCentury;

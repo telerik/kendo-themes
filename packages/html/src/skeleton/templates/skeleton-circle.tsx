@@ -5,3 +5,5 @@ export const SkeletonCircle = (props) =>
         shape={'circle'}
         {...props}
     />;
+
+export default SkeletonCircle;

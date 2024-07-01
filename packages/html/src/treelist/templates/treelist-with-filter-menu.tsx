@@ -4,3 +4,5 @@ export const TreeListWithFilterMenu = (props) => (
     <TreeListNormal menu="filter" {...props} />
 );
 
+
+export default TreeListWithFilterMenu;

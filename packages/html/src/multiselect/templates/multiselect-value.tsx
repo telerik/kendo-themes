@@ -10,3 +10,5 @@ export const MultiSelectValue = ({ size, rounded, children, ...other }: any) => 
         />
     </>
 );
+
+export default MultiSelectValue;

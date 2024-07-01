@@ -11,3 +11,5 @@ export const ContextMenuNormal = (props) => (
         {...props}
     />
 );
+
+export default ContextMenuNormal;

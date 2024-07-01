@@ -13,3 +13,5 @@ export const BottomNavLinks = (props) => (
     >
     </BottomNav>
 );
+
+export default BottomNavLinks;

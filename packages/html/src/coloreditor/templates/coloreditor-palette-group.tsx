@@ -8,3 +8,5 @@ export const ColorEditorPaletteGroup = (props) => (
         {...props}
     />
 );
+
+export default ColorEditorPaletteGroup;

@@ -20,3 +20,5 @@ export const DialogNonModal = (props) => (
         {...props}
     />
 );
+
+export default DialogNonModal;

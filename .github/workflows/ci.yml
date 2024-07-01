@@ -53,8 +53,8 @@ jobs:
         run: |
           HAS_CHANGES=0
           HAS_NEW=0
-          git diff --exit-code --quiet -- tests/ || HAS_CHANGES=1
-          [[ $(git ls-files --others --exclude-standard tests/) ]] && HAS_NEW=1
+          git diff --exit-code --quiet -- tests/ templates/ || HAS_CHANGES=1
+          [[ $(git ls-files --others --exclude-standard tests/ templates/) ]] && HAS_NEW=1
           echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
           echo "HAS_NEW=$HAS_NEW" >> $GITHUB_ENV
 
@@ -71,6 +71,7 @@ jobs:
           echo "Visual tests have detected changes. Updating markup and screenshots."
 
           git add tests/
+          git add templates/
           git commit -m "chore: update visual previews"
 
           git push

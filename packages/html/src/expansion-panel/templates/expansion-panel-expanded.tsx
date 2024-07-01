@@ -12,3 +12,5 @@ export const ExpansionPanelExpanded = (props) => (
     >
     </ExpansionPanel>
 );
+
+export default ExpansionPanelExpanded;

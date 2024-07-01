@@ -6,3 +6,5 @@ export const MultiSelectTreeArrowButton = (props) => (
         {...props}
     />
 );
+
+export default MultiSelectTreeArrowButton;

@@ -13,3 +13,5 @@ export const ActionSheetNormal = (props) => (
     {...props}>
     </ActionSheet>
 );
+
+export default ActionSheetNormal;

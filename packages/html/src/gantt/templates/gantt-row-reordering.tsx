@@ -822,3 +822,5 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "530
         </GanttContent>
     </Gantt>
 );
+
+export default GanttRowReordering;

@@ -16,3 +16,5 @@ export const AngularVirtualListWithGrouping = (props) => (
         </ListGroup>
     </ListAngular>
 );
+
+export default AngularVirtualListWithGrouping;

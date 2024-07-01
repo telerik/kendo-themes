@@ -84,3 +84,5 @@ export const CalendarInfiniteNormal = ({ firstCaption = "January 2021", secondCa
 
     </CalendarInfinite>
 );
+
+export default CalendarInfiniteNormal;

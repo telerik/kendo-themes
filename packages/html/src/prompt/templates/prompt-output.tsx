@@ -52,3 +52,5 @@ export const PromptOutput = (props) => (
         </PromptContent>
     </Prompt>
 );
+
+export default PromptOutput;

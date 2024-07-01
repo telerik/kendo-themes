@@ -19,3 +19,5 @@ export const CardNormal = (props) => (
         {...props}>
     </Card>
 );
+
+export default CardNormal;

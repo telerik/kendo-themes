@@ -80,3 +80,5 @@ export const GridWithMultiColumnHeaders = ({ headerWrapClassName, contentClassNa
         {...other}>
     </Grid>
 );
+
+export default GridWithMultiColumnHeaders;

@@ -141,3 +141,5 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
         {...other}>
     </Grid>
 );
+
+export default GridWithLockedColumns;

@@ -22,3 +22,5 @@ export const ComboboxGroupingModern = (props) => (
         {...props}
     />
 );
+
+export default ComboboxGroupingModern;

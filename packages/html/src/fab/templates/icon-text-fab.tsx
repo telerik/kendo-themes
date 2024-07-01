@@ -6,3 +6,5 @@ export const IconTextFloatingActionButton = (props) =>
         text="Create"
         {...props}
     />;
+
+export default IconTextFloatingActionButton;
