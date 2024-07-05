@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.2...v8.1.0) (2024-07-03)
+
+**Note:** Version bump only for package @progress/kendo-theme-nouvelle
+
+
+
+
+
+# [8.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.1...v8.1.0-dev.2) (2024-07-01)
+
+**Note:** Version bump only for package @progress/kendo-theme-nouvelle
+
+
+
+
+
 # [8.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.0...v8.1.0-dev.1) (2024-06-24)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle
