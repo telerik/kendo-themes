@@ -29,7 +29,7 @@ The Kendo UI for Vue Fluent theme is part of the Kendo UI for Vue library of UI 
 
 ## Dependencies
 
-For the Kendo UI Fluent theme to closely implement the [Fluent Design System](https://www.microsoft.com/design/fluent/#/), provide [the Segoe UI font family](#toc-fonts).
+For the Kendo UI Fluent theme to closely implement the [Fluent Design System](https://www.microsoft.com/design/fluent/#/), provide the Segoe UI font family.
 
 By default, the Fluent theme uses the Segoe UI font family but the font itself is not included in the theme package.
 

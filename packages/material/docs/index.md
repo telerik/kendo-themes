@@ -26,7 +26,7 @@ The KendoReact Material theme is part of the KendoReact library of React UI comp
 
 ## Dependencies
 
-For the Kendo UI Material theme to closely implement the [Material Design Guidelines](https://material.io/guidelines/), provide [the Roboto font family](#toc-fonts) and [configure additional modules](#toc-additional-configuration) in your application.
+For the Kendo UI Material theme to closely implement the [Material Design Guidelines](https://material.io/guidelines/), provide the Roboto font family and [configure additional modules](#toc-additional-configuration) in your application.
 
 By default, the Material theme uses the Roboto font family but the font itself is not included in the theme package.
 
@@ -45,7 +45,7 @@ You can add the font to the page from Google Fonts in the following way:
 The following additional configuration improves the look and feel of the theme in your application:
 
 * Use a [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `kendoRippleContainer` directive from the `@progress/kendo-angular-ripple` NPM module. The `kendoRippleContainer` directive provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for Angular and is fully compatible with all available Kendo UI themes.
-* Use the [Floating label component]({% slug overview_floatinglabel %})&mdash;with [HTML Input elements]({% slug overview_floatinglabel %}#toc-using-with-html-input-elements) and with Kendo UI for Angular components from the [inputs]({% slug overview_floatinglabel %}#toc-using-with-kendo-ui-for-angular-inputs), [dateinputs]({% slug overview_floatinglabel %}#toc-using-with-kendo-ui-for-angular-date-inputs) or [dropdowns]({% slug overview_floatinglabel %}#toc-using-with-kendo-ui-for-angular-dropdowns) packages.
+* Use the [FloatingLabel component](slug:overview_floatinglabel)&mdash;with [HTML input elements](slug:associate_floatinglabel#toc-html-input-elements) and with [Kendo UI for Angular Inputs components](slug:overview_floatinglabel), [dateinputs](slug:associate_floatinglabel#toc-kendo-ui-for-angular-date-inputs) or [dropdowns](slug:associate_floatinglabel#toc-kendo-ui-for-angular-dropdowns) packages.
 {% endplatform_content %}
 
 {% platform_content react %}
