@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.2...v8.1.0) (2024-07-03)
+
+**Note:** Version bump only for package @progress/kendo-theme-fluent
+
+
+
+
+
+# [8.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.1...v8.1.0-dev.2) (2024-07-01)
+
+
+### Bug Fixes
+
+* **bottom-navigation:** correct typography inconsistencies ([e3ce2e4](https://github.com/telerik/kendo-themes/commit/e3ce2e47ca756f72d791c7ae27530ea640fd043a))
+* **chat:** correct typography inconsistencies ([f5bc974](https://github.com/telerik/kendo-themes/commit/f5bc974ff7c83f0b0429583191f3eaaad7296bea))
+
+
+
+
+
 # [8.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v8.1.0-dev.0...v8.1.0-dev.1) (2024-06-24)
 
 
