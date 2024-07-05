@@ -36,7 +36,7 @@ By default, the Fluent theme uses the Segoe UI font family but the font itself i
 To include the Segoe UI font in your project, follow these steps:
 
 1. Download the Segoe UI font from [Microsoft](https://aka.ms/webfluentfonts). The download includes the Segoe UI Regular, Segoe UI Italic, Segoe UI Bold, and Segoe UI Bold Italic font files.
-2. Add the downloaded font files to your project's assets folder. {% platform_content angular %} For Angular, make sure that the folder is included in the assets section of the `angular.json` file. {% endplatform_content %} {% platform_content react %} For React, make sure that the folder is included in the `public` directory. {% endplatform_content %}{% platform_content vue %} For Vue, make sure that the folder is included in the `public` directory. {% endplatform_content %}
+2. Add the downloaded font files to your project's assets folder. {% platform_content angular %}For Angular, make sure that the folder is included in the assets section of the `angular.json` file.{% endplatform_content %}{% platform_content react %} For React, make sure that the folder is included in the `public` directory.{% endplatform_content %}{% platform_content vue %} For Vue, make sure that the folder is included in the `public` directory.{% endplatform_content %}
 3. In your HTML file or global style sheet, add the following code to include the font:
 
 ```html
