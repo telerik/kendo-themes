@@ -34,3 +34,9 @@ export const CardTitle = (
         </div>
     );
 };
+
+
+CardTitle.states = states;
+CardTitle.className = CARDTITLE_CLASSNAME;
+
+export default CardTitle;

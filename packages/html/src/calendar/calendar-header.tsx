@@ -1,7 +1,7 @@
 import { Button } from '../button';
 import { classNames, Size } from '../misc';
 
-const className = `k-calendar-header`;
+const CALENDARHEADER_CLASSNAME = `k-calendar-header`;
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
@@ -48,7 +48,7 @@ export const CalendarHeader = (
             {...other}
             className={classNames(
                 props.className,
-                className,
+                CALENDARHEADER_CLASSNAME,
                 {
                     'k-vstack': orientation === 'vertical',
                 }
@@ -63,5 +63,10 @@ export const CalendarHeader = (
         </div>
     );
 };
+
+
+CalendarHeader.options = options;
+CalendarHeader.className = CALENDARHEADER_CLASSNAME;
+CalendarHeader.defaultProps = defaultProps;
 
 export default CalendarHeader;

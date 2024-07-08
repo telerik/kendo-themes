@@ -90,3 +90,7 @@ export const TimeSelectorColumn = (
         </>
     );
 };
+
+TimeSelectorColumn.states = states;
+
+export default TimeSelectorColumn;
