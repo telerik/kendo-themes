@@ -64,8 +64,8 @@ export const Form = (
             } );
         } else if ( children.type === FormField ) {
             formChildren.push( <FormField {...children.props} orientation={orientation} key={`${new Date().getTime()}`} /> );
-        } else {
-            children.type === Fieldset && formChildren.push( <Fieldset {...children.props} key={`${new Date().getTime()}`} /> );
+        } else if (children.type === Fieldset) {
+            formChildren.push(<Fieldset {...children.props} key={`${new Date().getTime()}`} />);
         }
 
     }

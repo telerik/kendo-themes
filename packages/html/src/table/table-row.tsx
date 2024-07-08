@@ -51,3 +51,8 @@ export const TableRow = (
         </tr>
     );
 };
+
+TableRow.states = states;
+TableRow.className = TABLEROW_CLASSNAME;
+
+export default TableRow;

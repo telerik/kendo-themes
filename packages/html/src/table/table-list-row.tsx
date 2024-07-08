@@ -51,3 +51,8 @@ export const TableListRow = (
         </li>
     );
 };
+
+TableListRow.states = states;
+TableListRow.className = TABLELISTROW_CLASSNAME;
+
+export default TableListRow;

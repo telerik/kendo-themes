@@ -31,3 +31,8 @@ export const EditorContent = (
         </div>
     );
 };
+
+EditorContent.states = states;
+EditorContent.className = EDITORCONTENT_CLASSNAME;
+
+export default EditorContent;
