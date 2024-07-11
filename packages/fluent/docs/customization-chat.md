@@ -707,6 +707,36 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Chat quick reply.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-chat-quick-reply-focus-offset</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the focused Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-focus-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-focus-outline-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the focused Chat quick reply.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
