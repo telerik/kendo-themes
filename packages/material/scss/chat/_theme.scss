@@ -3,4 +3,11 @@
 
 @mixin kendo-chat--theme() {
     @include kendo-chat--theme-base();
+
+    .k-chat .k-quick-reply {
+        &:focus,
+        &.k-focus {
+            color: if($kendo-enable-color-system, k-color( primary-on-surface ), $kendo-color-primary);
+        }
+    }
 }

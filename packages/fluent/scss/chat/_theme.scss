@@ -68,15 +68,21 @@
                 var( --kendo-chat-quick-reply-bg, #{ $kendo-chat-quick-reply-bg } ),
                 var( --kendo-chat-quick-reply-border, #{ $kendo-chat-quick-reply-border } )
             );
-        }
-        .k-quick-reply:hover {
-            @include fill(
-                var( --kendo-chat-quick-reply-hover-text, #{ $kendo-chat-quick-reply-hover-text } ),
-                var( --kendo-chat-quick-reply-hover-bg, #{ $kendo-chat-quick-reply-hover-bg } ),
-                var( --kendo-chat-quick-reply-hover-border, #{ $kendo-chat-quick-reply-hover-border } )
-            );
-        }
 
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    var( --kendo-chat-quick-reply-hover-text, #{ $kendo-chat-quick-reply-hover-text } ),
+                    var( --kendo-chat-quick-reply-hover-bg, #{ $kendo-chat-quick-reply-hover-bg } ),
+                    var( --kendo-chat-quick-reply-hover-border, #{ $kendo-chat-quick-reply-hover-border } )
+                );
+            }
+
+            &:focus::after,
+            &.k-focus::after {
+                outline-color: var( --kendo-chat-quick-reply-focus-outline, initial )
+            }
+        }
     }
 
 

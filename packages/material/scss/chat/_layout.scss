@@ -3,4 +3,34 @@
 
 @mixin kendo-chat--layout() {
     @include kendo-chat--layout-base();
+
+    .k-chat {
+        .k-quick-reply {
+            position: relative;
+
+            &::before {
+                @include border-radius( inherit );
+                content: "";
+                background: currentColor;
+                opacity: 0;
+                display: block;
+                pointer-events: none;
+                position: absolute;
+                left: -$kendo-button-border-width;
+                right: -$kendo-button-border-width;
+                top: -$kendo-button-border-width;
+                bottom: -$kendo-button-border-width;
+                z-index: 0;
+                transition: opacity .2s ease-in-out;
+            }
+
+            // Focused state
+            &:focus,
+            &.k-focus {
+                &::before {
+                    opacity: $kendo-flat-button-focus-opacity;
+                }
+            }
+        }
+    }
 }

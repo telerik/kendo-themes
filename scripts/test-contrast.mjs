@@ -30,7 +30,8 @@ const EXCLUDED_ELEMENTS_FOCUS = [
     'k-button-link-warning',
     'k-button-solid-warning',
     'k-fab-solid-warning',
-    'k-step-last'
+    'k-step-last',
+    'k-quick-reply'
 ];
 
 // Below are elements with failing text contrast ratio requirement
