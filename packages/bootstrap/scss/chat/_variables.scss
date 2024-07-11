@@ -199,3 +199,13 @@ $kendo-chat-quick-reply-hover-text: $kendo-color-primary-contrast !default;
 /// The border color of the hovered Chat quick reply.
 /// @group chat
 $kendo-chat-quick-reply-hover-border: $kendo-color-primary !default;
+
+/// The shadow blur of the focused Chat quick reply.
+/// @group chat
+$kendo-chat-quick-reply-shadow-blur: 0px !default;
+/// The shadow spread of the focused Chat quick reply.
+/// @group chat
+$kendo-chat-quick-reply-shadow-spread: .25rem !default;
+/// The shadow opacity of the focused Chat quick reply.
+/// @group chat
+$kendo-chat-quick-reply-shadow-opacity: .5 !default;
