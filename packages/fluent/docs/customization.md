@@ -18987,7 +18987,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the map.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -18997,7 +18997,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the map.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -19007,7 +19007,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-font-family, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the map.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -19017,7 +19017,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the map.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -19027,7 +19027,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the map.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -19037,7 +19037,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the map.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -19047,7 +19047,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the map.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -19057,7 +19057,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>600px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the map.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Map.</div></div>
     </td>
 </tr>
 <tr>
@@ -19067,7 +19067,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator horizontal margin.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19077,7 +19077,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator vertical margin.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19087,7 +19087,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19097,7 +19097,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>calc(var(--kendo-icon-size) * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19107,7 +19107,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>calc(var(--kendo-icon-size) * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator height.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19117,7 +19117,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator border width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19127,7 +19127,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator background color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19137,7 +19137,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator text color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19147,7 +19147,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map navigator border color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map navigator.</div></div>
     </td>
 </tr>
 <tr>
@@ -19157,7 +19157,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map zoom control margin.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Map zoom control.</div></div>
     </td>
 </tr>
 <tr>
@@ -19167,7 +19167,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map zoom control horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Map zoom control.</div></div>
     </td>
 </tr>
 <tr>
@@ -19177,7 +19177,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map zoom control vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Map zoom control.</div></div>
     </td>
 </tr>
 <tr>
@@ -19187,7 +19187,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map attribution horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Map attribution.</div></div>
     </td>
 </tr>
 <tr>
@@ -19197,7 +19197,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map attribution vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Map attribution.</div></div>
     </td>
 </tr>
 <tr>
@@ -19207,7 +19207,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>calc(var(--kendo-font-size, inherit) * 0.75)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map attribution font size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Map attribution.</div></div>
     </td>
 </tr>
 <tr>
@@ -19217,7 +19217,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map attribution background color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map attribution.</div></div>
     </td>
 </tr>
 <tr>
@@ -19227,7 +19227,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map marker fill color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fill color of the Map marker.</div></div>
     </td>
 </tr>
 </tbody>
@@ -19257,7 +19257,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the mediaplayer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the MediaPlayer.</div></div>
     </td>
 </tr>
 <tr>
@@ -19267,7 +19267,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the mediaplayer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the MediaPlayer.</div></div>
     </td>
 </tr>
 <tr>
@@ -19277,7 +19277,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the mediaplayer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer.</div></div>
     </td>
 </tr>
 <tr>
@@ -19287,7 +19287,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the mediaplayer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer.</div></div>
     </td>
 </tr>
 <tr>
@@ -19297,7 +19297,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the mediaplayer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer.</div></div>
     </td>
 </tr>
 <tr>
@@ -19307,7 +19307,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the mediaplayer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer.</div></div>
     </td>
 </tr>
 <tr>
@@ -19317,7 +19317,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the mediaplayer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer.</div></div>
     </td>
 </tr>
 <tr>
@@ -19327,7 +19327,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Mediaplayer overlay background color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer overlay.</div></div>
     </td>
 </tr>
 <tr>
@@ -19337,7 +19337,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Mediaplayer quality button border color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer button.</div></div>
     </td>
 </tr>
 <tr>
@@ -19347,7 +19347,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-font-size-xl, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Media player title font size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19357,7 +19357,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Mediaplayer titlebar horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the MediaPlayer title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19367,7 +19367,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Mediaplayer titlebar vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the MediaPlayer title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19377,7 +19377,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 40%, transparent)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Mediaplayer titlebar background color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer title.</div></div>
     </td>
 </tr>
 <tr>
@@ -19387,7 +19387,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Mediaplayer titlebar text color.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer title.</div></div>
     </td>
 </tr>
 </tbody>
@@ -22539,7 +22539,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacer of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacer of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22549,7 +22549,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22559,7 +22559,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22569,7 +22569,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22579,7 +22579,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Font size of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22589,7 +22589,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Line height of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22599,7 +22599,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22609,7 +22609,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon spacing of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon spacing of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22619,7 +22619,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22629,7 +22629,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22639,7 +22639,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> Border color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22649,7 +22649,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Alt border color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The alt border color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22659,7 +22659,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>300px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the PivotGrid row header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the PivotGrid row header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22669,7 +22669,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>75px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of the PivotGrid column header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the PivotGrid column header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22679,7 +22679,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PivotGrid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -22689,7 +22689,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PivotGrid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -22699,7 +22699,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the PivotGrid cell.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -22709,7 +22709,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PivotGrid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22719,7 +22719,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PivotGrid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22729,7 +22729,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PivotGrid header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22739,7 +22739,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PivotGrid total cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid total cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -22749,7 +22749,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PivotGrid total cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid total cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -22759,7 +22759,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PivotGrid total cells.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid total cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -22769,7 +22769,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-hover-bg, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22779,7 +22779,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22789,7 +22789,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover border color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22799,7 +22799,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-selected-bg, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22809,7 +22809,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected text color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22819,7 +22819,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected border color of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected border color of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22829,7 +22829,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the PivotGrid.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
     </td>
 </tr>
 <tr>
@@ -22839,7 +22839,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -22849,7 +22849,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -22859,7 +22859,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -22869,7 +22869,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PivotGrid configurator header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid configurator header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22879,7 +22879,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PivotGrid configurator header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid configurator header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22889,7 +22889,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>calc(var(--kendo-font-size-xl, 2rem) * 0.9)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the PivotGrid configurator header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the PivotGrid configurator header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22899,7 +22899,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-font-weight-bold, bold)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the PivotGrid configurator header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the PivotGrid configurator header.</div></div>
     </td>
 </tr>
 <tr>
@@ -22909,7 +22909,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PivotGrid configurator content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid configurator content.</div></div>
     </td>
 </tr>
 <tr>
@@ -22919,7 +22919,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PivotGrid configurator content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid configurator content.</div></div>
     </td>
 </tr>
 <tr>
@@ -22929,7 +22929,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the PivotGrid configurator fields.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the PivotGrid configurator fields.</div></div>
     </td>
 </tr>
 <tr>
@@ -22939,7 +22939,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>calc(var(--kendo-spacing-3, 0.75rem) / 2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the PivotGrid configurator fields.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the PivotGrid configurator fields.</div></div>
     </td>
 </tr>
 <tr>
@@ -22949,7 +22949,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the PivotGrid configurator fields.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the PivotGrid configurator fields.</div></div>
     </td>
 </tr>
 <tr>
@@ -22959,7 +22959,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>320px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the PivotGrid vertical configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the PivotGrid vertical configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -22969,7 +22969,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>420px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of the PivotGrid horizontal configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the PivotGrid horizontal configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -22979,7 +22979,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -22989,7 +22989,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -22999,7 +22999,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PivotGrid configurator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid configurator.</div></div>
     </td>
 </tr>
 <tr>
@@ -23009,7 +23009,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PivotGrid configurator header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid configurator header.</div></div>
     </td>
 </tr>
 <tr>
@@ -23019,7 +23019,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PivotGrid configurator header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid configurator header.</div></div>
     </td>
 </tr>
 <tr>
@@ -23029,7 +23029,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PivotGrid configurator header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid configurator header.</div></div>
     </td>
 </tr>
 <tr>
@@ -23039,7 +23039,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PivotGrid configurator button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid configurator button.</div></div>
     </td>
 </tr>
 <tr>
@@ -23049,7 +23049,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PivotGrid configurator button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid configurator button.</div></div>
     </td>
 </tr>
 <tr>
@@ -23059,7 +23059,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the PivotGrid configurator button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid configurator button.</div></div>
     </td>
 </tr>
 <tr>
@@ -23069,7 +23069,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the PivotGrid configurator button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the PivotGrid configurator button.</div></div>
     </td>
 </tr>
 <tr>
@@ -23079,7 +23079,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon spacing of the PivotGrid configurator button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon spacing of the PivotGrid configurator button.</div></div>
     </td>
 </tr>
 <tr>
@@ -23089,7 +23089,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PivotGrid calculated field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid calculated field.</div></div>
     </td>
 </tr>
 <tr>
@@ -23099,7 +23099,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PivotGrid calculated field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid calculated field.</div></div>
     </td>
 </tr>
 <tr>
@@ -23109,7 +23109,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the PivotGrid calculated field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid calculated field.</div></div>
     </td>
 </tr>
 <tr>
@@ -23119,7 +23119,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the PivotGrid calculated field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PivotGrid calculated field.</div></div>
     </td>
 </tr>
 <tr>
@@ -23129,7 +23129,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the PivotGrid calculated field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the PivotGrid calculated field.</div></div>
     </td>
 </tr>
 <tr>
@@ -23139,7 +23139,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PivotGrid calculated field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid calculated field.</div></div>
     </td>
 </tr>
 <tr>
@@ -23149,7 +23149,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PivotGrid calculated field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid calculated field.</div></div>
     </td>
 </tr>
 <tr>
@@ -23159,7 +23159,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PivotGrid calculated field.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid calculated field.</div></div>
     </td>
 </tr>
 <tr>
@@ -23169,7 +23169,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PivotGrid calculated field header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid calculated field header.</div></div>
     </td>
 </tr>
 <tr>
@@ -23179,7 +23179,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PivotGrid calculated field header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid calculated field header.</div></div>
     </td>
 </tr>
 <tr>
@@ -23189,7 +23189,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PivotGrid calculated field header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid calculated field header.</div></div>
     </td>
 </tr>
 <tr>
@@ -23199,7 +23199,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>calc(var(--kendo-spacing-3, 0.75rem) / 2)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PivotGrid treeview.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid treeview.</div></div>
     </td>
 </tr>
 <tr>
@@ -23209,7 +23209,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-0, 0px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PivotGrid treeview.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid treeview.</div></div>
     </td>
 </tr>
 </tbody>
@@ -24029,7 +24029,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt.</div></div>
     </td>
 </tr>
 <tr>
@@ -24039,7 +24039,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt.</div></div>
     </td>
 </tr>
 <tr>
@@ -24049,7 +24049,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt.</div></div>
     </td>
 </tr>
 <tr>
@@ -24059,7 +24059,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt header.</div></div>
     </td>
 </tr>
 <tr>
@@ -24069,7 +24069,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt header.</div></div>
     </td>
 </tr>
 <tr>
@@ -24079,7 +24079,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt header.</div></div>
     </td>
 </tr>
 <tr>
@@ -24089,7 +24089,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -24099,7 +24099,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -24109,7 +24109,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -24119,7 +24119,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-neutral-190, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -24129,7 +24129,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-neutral-10, inherit)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -24139,7 +24139,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text border of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text border of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -24149,7 +24149,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the Prompt content expander.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the AIPrompt content expander.</div></div>
     </td>
 </tr>
 <tr>
@@ -24159,7 +24159,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -24169,7 +24169,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -24179,7 +24179,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -24189,7 +24189,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-text, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -24199,7 +24199,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-bg, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -24209,7 +24209,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -24219,7 +24219,7 @@ The following table lists the available variables for customizing the Fluent the
     <td><code>var(--kendo-elevation-1, 0 0.3px 0.9px rgba(0, 0, 0, 0.1), 0 1.6px 3.6px rgba(0, 0, 0, 0.13))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The elevation of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The elevation of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 </tbody>

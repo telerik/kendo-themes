@@ -14404,6 +14404,376 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### Map
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-map-border-width</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-font-family</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-bg</td>
+    <td>String</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-border</td>
+    <td>String</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Map.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-margin</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-width</td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-icon-size} * 3) + calc( #{$kendo-map-navigator-padding} * 2 ) )</code></td>
+    <td><code>calc(16px * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-height</td>
+    <td>Calculation</td>
+    <td><code>$kendo-map-navigator-width</code></td>
+    <td><code>calc(16px * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-navigator-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Map navigator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-zoom-control-margin</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Map zoom control.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-zoom-control-button-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Map zoom control.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-zoom-control-button-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-map-zoom-control-button-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Map zoom control.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-attribution-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Map attribution.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-attribution-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-padding-sm-y</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Map attribution.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-attribution-font-size</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-map-font-size} * .75 )</code></td>
+    <td><code>calc(var(--kendo-font-size, inherit) * 0.75)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Map attribution.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-attribution-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 80%, transparent), rgba( $kendo-map-bg, .8 ))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 80%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map attribution.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-map-marker-fill</td>
+    <td>String</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fill color of the Map marker.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Mediaplayer
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-media-player-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-font-family</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-bg</td>
+    <td>String</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-border</td>
+    <td>String</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-text</td>
+    <td>String</td>
+    <td><code>$kendo-media-player-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-media-player-titlebar-gradient</td>
+    <td>List</td>
+    <td><code>if($kendo-enable-color-system, ( color-mix(in srgb, k-color( on-app-surface ) 70%, transparent), color-mix(in srgb, k-color( on-app-surface ) 0%, transparent) ), ( rgba( $kendo-media-player-text, .7 ), rgba( $kendo-media-player-text, 0 ) ))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 70%, transparent), color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 0%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the MediaPlayer title.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Menu
 
 <table class="theme-variables">
@@ -17836,6 +18206,726 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### Pivotgrid
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-pivotgrid-spacer</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacer of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-font-family</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-line-height</td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon spacing of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-row-header-width</td>
+    <td>Number</td>
+    <td><code>300px</code></td>
+    <td><code>300px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the PivotGrid row header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-column-header-height</td>
+    <td>Number</td>
+    <td><code>75px</code></td>
+    <td><code>75px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the PivotGrid column header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-cell-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-table-md-cell-padding-x</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-cell-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-table-md-cell-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2\.5, 0.625rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-cell-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-bg</td>
+    <td>String</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-border</td>
+    <td>String</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-alt-border</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-pivotgrid-border, 2 ))</code></td>
+    <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.15))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The alt border color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-headers-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 2%, transparent), rgba( $kendo-component-header-bg, .02 ))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 2%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-headers-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-header-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-headers-border</td>
+    <td>String</td>
+    <td><code>$kendo-component-header-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-total-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-pivotgrid-bg, 1 ))</code></td>
+    <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid total cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-total-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-header-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid total cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-total-border</td>
+    <td>String</td>
+    <td><code>$kendo-component-header-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid total cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-hover-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-pivotgrid-bg, 7% ))</code></td>
+    <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-hover-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-selected-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( base-active ) 25%, transparent), rgba( k-contrast-color( $kendo-pivotgrid-bg ), .04 ))</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-base-active, #d6d6d6) 25%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-selected-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-selected-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected border color of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-focus-shadow</td>
+    <td>Null</td>
+    <td><code>$kendo-list-item-focus-shadow</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-header-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-pivotgrid-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid configurator header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-header-padding-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-pivotgrid-spacer} * .75 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 0.75)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid configurator header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-header-font-size</td>
+    <td>Number</td>
+    <td><code>18px</code></td>
+    <td><code>18px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the PivotGrid configurator header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-header-font-weight</td>
+    <td>Number</td>
+    <td><code>500</code></td>
+    <td><code>500</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the PivotGrid configurator header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-content-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-pivotgrid-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid configurator content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-content-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid configurator content.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-fields-margin-x</td>
+    <td>String</td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the PivotGrid configurator fields.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-fields-margin-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-pivotgrid-spacer} / 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the PivotGrid configurator fields.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-vertical-width</td>
+    <td>Number</td>
+    <td><code>320px</code></td>
+    <td><code>320px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the PivotGrid vertical configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-horizontal-height</td>
+    <td>Number</td>
+    <td><code>420px</code></td>
+    <td><code>420px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the PivotGrid horizontal configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-bg</td>
+    <td>String</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-border</td>
+    <td>String</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-header-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid configurator header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-header-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-header-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid configurator header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-header-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid configurator header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-end-shadow</td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-3</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.14))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-start-shadow</td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-3</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.14))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end shadow of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-top-shadow</td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-3</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.14))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start shadow of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-bottom-shadow</td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-3</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.14))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top shadow of the PivotGrid configurator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-button-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid configurator button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-button-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid configurator button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-button-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid configurator button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-configurator-button-size</td>
+    <td>Calculation</td>
+    <td><code>calc( calc( #{$kendo-pivotgrid-line-height} * 1em ) + calc( #{$kendo-pivotgrid-configurator-button-padding-y} * 2 ) + calc( #{$kendo-pivotgrid-configurator-button-border-width} * 2 ) )</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 1px * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the PivotGrid configurator button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-pivotgrid-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid calculated field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-pivotgrid-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid calculated field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PivotGrid calculated field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(md)</code></td>
+    <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PivotGrid calculated field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-gap</td>
+    <td>String</td>
+    <td><code>$kendo-pivotgrid-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the PivotGrid calculated field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-bg</td>
+    <td>String</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid calculated field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid calculated field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-border</td>
+    <td>String</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid calculated field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-header-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid calculated field header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-header-text</td>
+    <td>String</td>
+    <td><code>$kendo-component-header-text</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PivotGrid calculated field header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-calculated-field-header-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PivotGrid calculated field header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-treeview-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-pivotgrid-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid treeview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pivotgrid-treeview-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(0)</code></td>
+    <td><code>var(--kendo-spacing-0, 0px)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid treeview.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Popover
 
 <table class="theme-variables">
@@ -18520,7 +19610,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt.</div></div>
     </td>
 </tr>
 <tr>
@@ -18530,7 +19620,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt.</div></div>
     </td>
 </tr>
 <tr>
@@ -18540,7 +19630,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt.</div></div>
     </td>
 </tr>
 <tr>
@@ -18550,7 +19640,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt header.</div></div>
     </td>
 </tr>
 <tr>
@@ -18560,7 +19650,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt header.</div></div>
     </td>
 </tr>
 <tr>
@@ -18570,7 +19660,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt header.</div></div>
     </td>
 </tr>
 <tr>
@@ -18580,7 +19670,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -18590,7 +19680,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -18600,7 +19690,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -18610,7 +19700,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -18620,7 +19710,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -18630,7 +19720,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text border of the Prompt content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text border of the AIPrompt content.</div></div>
     </td>
 </tr>
 <tr>
@@ -18640,7 +19730,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the Prompt content expander.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the AIPrompt content expander.</div></div>
     </td>
 </tr>
 <tr>
@@ -18650,7 +19740,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -18660,7 +19750,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -18670,7 +19760,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-border-radius-md, 0.25rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -18680,7 +19770,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -18690,7 +19780,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -18700,7 +19790,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 <tr>
@@ -18710,7 +19800,7 @@ The following table lists the available variables for customizing the Material t
     <td><code>var(--kendo-elevation-1, 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 2px 1px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The elevation of the Prompt suggestion container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The elevation of the AIPrompt suggestion container.</div></div>
     </td>
 </tr>
 </tbody>
