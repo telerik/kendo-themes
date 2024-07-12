@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 1040px;
+        }
+        .k-window {
+            position: relative;
+        }
+        .k-chart-wizard .k-expander {
+            max-width: 576px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <div class="k-chart-wizard">
+            <div class="k-expander k-expanded">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">States</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title"></div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="k-expander-content-wrapper">
+                    <div class="k-expander-content">
+                        <div class="k-chart-types-wrapper">
+                            <div class="k-icon-text-wrapper">
+                                <div class="k-icon-background-area">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-chart-bar-clustered">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M64 448v-64h160V224H64v-32h352V32H32v448h448v-32zm128-192v96H64v-96z"></path>
+                                        </svg>
+                                    </span>
+                                </div>Normal
+                            </div>
+                            <div class="k-icon-text-wrapper k-focus">
+                                <div class="k-icon-background-area">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-chart-bar-clustered">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M64 448v-64h160V224H64v-32h352V32H32v448h448v-32zm128-192v96H64v-96z"></path>
+                                        </svg>
+                                    </span>
+                                </div>Focus
+                            </div>
+                            <div class="k-icon-text-wrapper k-selected">
+                                <div class="k-icon-background-area">
+                                    <span class="k-icon k-svg-icon k-icon-xl k-svg-i-chart-bar-stacked">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M64 448v-64h352V224H64v-32h256V32H32v448h448v-32zm0-384h96v96H64zm192 192v96H64v-96z"></path>
+                                        </svg>
+                                    </span>
+                                </div>Selected
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
