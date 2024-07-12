@@ -1,66 +1,66 @@
-// Prompt
+// AIPrompt
 
-/// The text color of the Prompt.
+/// The text color of the AIPrompt.
 /// @group prompt
 $kendo-prompt-text: $kendo-component-text !default;
-/// The background color of the Prompt.
+/// The background color of the AIPrompt.
 /// @group prompt
 $kendo-prompt-bg: $kendo-component-bg !default;
-/// The border color of the Prompt.
+/// The border color of the AIPrompt.
 /// @group prompt
 $kendo-prompt-border: $kendo-component-border !default;
 
-/// The text color of the Prompt header.
+/// The text color of the AIPrompt header.
 /// @group prompt
 $kendo-prompt-header-text: $kendo-component-header-text !default;
-/// The background color of the Prompt header.
+/// The background color of the AIPrompt header.
 /// @group prompt
 $kendo-prompt-header-bg: $kendo-component-bg !default;
-/// The border color of the Prompt header.
+/// The border color of the AIPrompt header.
 /// @group prompt
 $kendo-prompt-header-border: $kendo-component-header-border !default;
 
-/// The vertical padding of the Prompt content.
+/// The vertical padding of the AIPrompt content.
 /// @group prompt
 $kendo-prompt-content-padding-y: k-spacing(4) !default;
-/// The horizontal padding of the Prompt content.
+/// The horizontal padding of the AIPrompt content.
 /// @group prompt
 $kendo-prompt-content-padding-x: k-spacing(4) !default;
-/// The spacing between the items of the Prompt content.
+/// The spacing between the items of the AIPrompt content.
 /// @group prompt
 $kendo-prompt-content-spacing: k-spacing(4) !default;
-/// The text color of the Prompt content.
+/// The text color of the AIPrompt content.
 /// @group prompt
 $kendo-prompt-content-text: $kendo-component-header-text !default;
-/// The background color of the Prompt content.
+/// The background color of the AIPrompt content.
 /// @group prompt
 $kendo-prompt-content-bg: $kendo-component-header-bg !default;
-/// The text border of the Prompt content.
+/// The text border of the AIPrompt content.
 /// @group prompt
 $kendo-prompt-content-border: $kendo-component-header-border !default;
 
-/// The spacing between the items of the Prompt content expander.
+/// The spacing between the items of the AIPrompt content expander.
 /// @group prompt
 $kendo-prompt-expander-spacing: k-spacing(2) !default;
 
-/// The vertical padding of the Prompt suggestion container.
+/// The vertical padding of the AIPrompt suggestion container.
 /// @group prompt
 $kendo-prompt-suggestion-padding-y: k-spacing(2) !default;
-/// The horizontal padding of the Prompt suggestion container.
+/// The horizontal padding of the AIPrompt suggestion container.
 /// @group prompt
 $kendo-prompt-suggestion-padding-x: k-spacing(2) !default;
-/// The border radius of the Prompt suggestion container.
+/// The border radius of the AIPrompt suggestion container.
 /// @group prompt
 $kendo-prompt-suggestion-border-radius: k-border-radius(md) !default;
-/// The text color of the Prompt suggestion container.
+/// The text color of the AIPrompt suggestion container.
 /// @group prompt
 $kendo-prompt-suggestion-text: $kendo-component-text !default;
-/// The background color of the Prompt suggestion container.
+/// The background color of the AIPrompt suggestion container.
 /// @group prompt
 $kendo-prompt-suggestion-bg: $kendo-body-bg !default;
-/// The border color of the Prompt suggestion container.
+/// The border color of the AIPrompt suggestion container.
 /// @group prompt
 $kendo-prompt-suggestion-border: $kendo-component-border !default;
-/// The elevation of the Prompt suggestion container.
+/// The elevation of the AIPrompt suggestion container.
 /// @group prompt
 $kendo-prompt-suggestion-shadow: k-elevation(1) !default;
