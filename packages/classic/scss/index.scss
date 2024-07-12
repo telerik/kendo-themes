@@ -122,6 +122,7 @@
 @import "./splitter/_index.scss";
 @import "./tilelayout/_index.scss";
 @import "./dock-manager/_index.scss";
+@import "./chart-wizard/_index.scss";
 
 
 // Data management
@@ -293,6 +294,7 @@
     @include kendo-splitter--styles();
     @include kendo-tile-layout--styles();
     @include kendo-dock-manager--styles();
+    @include kendo-chart-wizard--styles();
 
 
     // Data management

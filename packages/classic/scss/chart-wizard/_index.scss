@@ -1,0 +1,57 @@
+@import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "chart-wizard",
+    dependencies: (
+        "icon",
+        "window",
+        "splitter",
+        "dataviz",
+        "expansion-panel",
+        "grid",
+        "tabstrip",
+        "listview",
+        "forms",
+        "combobox"
+    )
+);
+
+
+// Dependencies
+@import "../icons/_index.scss";
+@import "../window/_index.scss";
+@import "../splitter/_index.scss";
+@import "../dataviz/_index.scss";
+@import "../expansion-panel/_index.scss";
+@import "../grid/_index.scss";
+@import "../tabstrip/_index.scss";
+@import "../listview/_index.scss";
+@import "../forms/_index.scss";
+@import "../combobox/_index.scss";
+
+
+// Component
+@import "./_variables.scss";
+@import "./_layout.scss";
+@import "./_theme.scss";
+
+
+// Register
+@import "../core/module-system/index.import.scss";
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin kendo-chart-wizard--styles() {
+    @include module-render( "chart-wizard" ) {
+        @include kendo-chart-wizard--layout();
+        @include kendo-chart-wizard--theme();
+    }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-chart-wizard--styles();
+}
