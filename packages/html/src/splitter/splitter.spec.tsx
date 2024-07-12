@@ -8,7 +8,7 @@ const options = {};
 
 export type KendoSplitterProps = {
     orientation?: "vertical" | "horizontal";
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
 }
 
 const defaultProps = {
@@ -25,7 +25,7 @@ export const Splitter = (
         ...other
     } = props;
 
-    const listChildren: JSX.Element | JSX.Element[] = [];
+    const listChildren: React.JSX.Element | React.JSX.Element[] = [];
 
     if (children) {
         if (Array.isArray(children)) {

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { CardBody, CardDeck, CardHorizontal } from '../../card';
 
 

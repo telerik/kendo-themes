@@ -33,14 +33,14 @@ export type KendoColorPickerOptions = {
 };
 
 export type KendoColorPickerProps = KendoColorPickerOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     type?: string;
     value?: string;
     placeholder?: string;
     valueIconName?: string;
     arrowIconName?: string;
-    popup?: JSX.Element;
+    popup?: React.JSX.Element;
     opened?: boolean;
 };
 

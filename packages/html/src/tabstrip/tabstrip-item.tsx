@@ -13,7 +13,7 @@ const options = {};
 
 export type KendoTabStripItemProps = {
     dragging?: boolean;
-    value?: string | JSX.Element;
+    value?: string | React.JSX.Element;
     first?: boolean;
     last?: boolean;
 };

@@ -47,12 +47,12 @@ export type KendoComboboxOptions = {
 };
 
 export type KendoComboboxProps = KendoComboboxOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     separators?: boolean;
     value?: string;
     placeholder?: string;
-    popup?: JSX.Element;
+    popup?: React.JSX.Element;
     opened?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;

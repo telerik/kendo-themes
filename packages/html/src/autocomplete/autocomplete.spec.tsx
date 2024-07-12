@@ -45,12 +45,12 @@ export type KendoAutocompleteOptions = {
 };
 
 export type KendoAutocompleteProps = KendoAutocompleteOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     separators?: boolean;
     value?: string;
     placeholder?: string;
-    popup?: JSX.Element;
+    popup?: React.JSX.Element;
     opened?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;

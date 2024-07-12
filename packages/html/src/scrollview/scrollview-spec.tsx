@@ -42,7 +42,7 @@ export const ScrollView = (
         ...other
     } = props;
 
-    const scrollviewViews: JSX.Element | JSX.Element[] = [];
+    const scrollviewViews: React.JSX.Element | React.JSX.Element[] = [];
 
     const iconPrev = rtl ? 'chevron-right' : 'chevron-left';
     const iconNext = rtl ? 'chevron-left' : 'chevron-right';

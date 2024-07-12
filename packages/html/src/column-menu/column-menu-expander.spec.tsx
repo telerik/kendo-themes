@@ -12,7 +12,7 @@ export type KendoColumnMenuExpanderProps = {
     itemText?: string;
     itemIcon?: string;
     expanderIcon?: string;
-    itemContent?: JSX.Element;
+    itemContent?: React.JSX.Element;
     expanded?: boolean;
 };
 

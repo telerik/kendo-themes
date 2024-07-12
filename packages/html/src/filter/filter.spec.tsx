@@ -9,7 +9,7 @@ const states = [];
 const options = {};
 
 export type KendoFilterProps = {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     showApplyButton?: boolean;
 }
 
@@ -24,9 +24,9 @@ export const Filter = (
         showApplyButton
     } = props;
 
-    const filterChildren: JSX.Element | JSX.Element[] = [];
+    const filterChildren: React.JSX.Element | React.JSX.Element[] = [];
 
-    let expressionPreview: JSX.Element = <></>;
+    let expressionPreview: React.JSX.Element = <></>;
 
     if (children) {
         if (Array.isArray(children)) {

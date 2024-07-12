@@ -11,8 +11,8 @@ const defaultProps = {};
 
 export type KendoSchedulerProps = {
     view?: "day" | "week" | "month" | "year" | "agenda" | "timeline";
-    toolbar?: JSX.Element | JSX.Element[];
-    footer?: JSX.Element | JSX.Element[];
+    toolbar?: React.JSX.Element | React.JSX.Element[];
+    footer?: React.JSX.Element | React.JSX.Element[];
     layout?: "table" | "flex";
 };
 

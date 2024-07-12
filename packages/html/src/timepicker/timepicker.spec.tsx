@@ -46,8 +46,8 @@ export type KendoTimePickerOptions = {
 };
 
 export type KendoTimePickerProps = KendoTimePickerOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     value?: string;
     placeholder?: string;
     opened?: boolean;

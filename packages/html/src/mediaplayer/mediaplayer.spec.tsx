@@ -10,7 +10,7 @@ const options = {};
 
 export type KendoMediaPlayerProps = {
     title?: string;
-    toolbarItems?: JSX.Element | JSX.Element[];
+    toolbarItems?: React.JSX.Element | React.JSX.Element[];
 };
 
 export type KendoMediaPlayerState = { [K in (typeof states)[number]]?: boolean };

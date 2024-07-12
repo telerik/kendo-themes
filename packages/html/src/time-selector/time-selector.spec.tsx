@@ -16,8 +16,8 @@ export type KendoTimeSelectorOptions = {
 };
 
 export type KendoTimeSelectorProps = KendoTimeSelectorOptions & {
-    header?: null | JSX.Element;
-    fastSelection?: null | JSX.Element;
+    header?: null | React.JSX.Element;
+    fastSelection?: null | React.JSX.Element;
     value?: string;
     columns: Array<timeType>;
     focusedColumn?: null | timeType;

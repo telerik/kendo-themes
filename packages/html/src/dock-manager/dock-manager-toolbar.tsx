@@ -8,7 +8,7 @@ const states = [];
 const options = {};
 
 export type KendoDockManagerToolbarProps = {
-    toolbarItems?: JSX.Element | JSX.Element[];
+    toolbarItems?: React.JSX.Element | React.JSX.Element[];
 };
 
 const defaultProps = {};

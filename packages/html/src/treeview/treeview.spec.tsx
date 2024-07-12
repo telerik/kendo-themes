@@ -14,7 +14,7 @@ export type KendoTreeviewOptions = {
 };
 
 export type KendoTreeviewProps = KendoTreeviewOptions & {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     dir?: 'ltr' | 'rtl';
 };
 
@@ -36,7 +36,7 @@ export const Treeview = (
         ...other
     } = props;
 
-    const listChildren : JSX.Element[] = [];
+    const listChildren : React.JSX.Element[] = [];
 
     if (children) {
         if (Array.isArray(children)) {

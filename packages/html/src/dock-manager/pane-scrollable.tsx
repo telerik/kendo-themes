@@ -8,7 +8,7 @@ const states = [];
 const options = {};
 
 export type KendoPaneScrollableProps = {
-    actions?: JSX.Element | JSX.Element[];
+    actions?: React.JSX.Element | React.JSX.Element[];
     title?: string;
 };
 

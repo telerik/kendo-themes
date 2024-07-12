@@ -20,7 +20,7 @@ async function loadUrl(browser, url) {
         try {
             await browser.navigateTo(url);
             return true;
-        } catch (error) {
+        } catch {
             return false;
         }
     }, 10000, `Failed to load ${url}`, 500);

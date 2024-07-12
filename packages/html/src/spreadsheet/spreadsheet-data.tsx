@@ -21,7 +21,7 @@ export const SpreadsheetData = (
         ...other
     } = props;
 
-    const addActiveCell = (data: Array<JSX.Element>, activeCellIndex: number) => data.map((element: JSX.Element, index: number) => {
+    const addActiveCell = (data: Array<React.JSX.Element>, activeCellIndex: number) => data.map((element: React.JSX.Element, index: number) => {
         if (index === activeCellIndex) {
             return (
                 <div key={index} style={element.props.style}

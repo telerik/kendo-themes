@@ -7,9 +7,9 @@ const states = [];
 const options = {};
 
 export type KendoPivotGridProps = {
-    emptyCell?: JSX.Element;
-    columnHeaders?: JSX.Element;
-    rowHeaders?: JSX.Element;
+    emptyCell?: React.JSX.Element;
+    columnHeaders?: React.JSX.Element;
+    rowHeaders?: React.JSX.Element;
 };
 
 const defaultProps = {

@@ -10,7 +10,7 @@ export type KendoFormFieldProps = {
     label?: null | string;
     orientation?: string;
     optional?: boolean;
-    editor?: JSX.Element | string;
+    editor?: React.JSX.Element | string;
     hint?: null | string;
     error?: null | string;
     info?: null | string;

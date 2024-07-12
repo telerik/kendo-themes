@@ -10,7 +10,7 @@ const states = [];
 const options = {};
 
 export type KendoImageEditorToolbarProps = {
-    toolbarItems?: JSX.Element | JSX.Element[];
+    toolbarItems?: React.JSX.Element | React.JSX.Element[];
 };
 
 const defaultToolbarItems = [

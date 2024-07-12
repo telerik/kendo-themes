@@ -43,7 +43,7 @@ export type KendoMenuButtonProps = KendoMenuButtonOptions & {
   text?: string;
   showArrow?: boolean;
   arrowIconName?: string;
-  popup?: JSX.Element;
+  popup?: React.JSX.Element;
   opened?: boolean;
 };
 

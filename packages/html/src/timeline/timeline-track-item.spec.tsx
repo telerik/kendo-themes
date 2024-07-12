@@ -7,7 +7,7 @@ const states = [
 ];
 
 export type KendoTimelineTrackItemOptions = {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     content?: string;
 };
 

@@ -7,7 +7,7 @@ const states = [];
 const options = {};
 
 export type KendoTimelineProps = {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     orientation?: null | 'vertical' | 'horizontal';
     collapsibleEvents?: boolean;
     alternatingMode?: boolean;

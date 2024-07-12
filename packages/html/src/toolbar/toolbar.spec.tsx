@@ -43,11 +43,10 @@ export const Toolbar = (
         ...other
     } = props;
 
-    const toolbarChildren: JSX.Element[] = [];
+    const toolbarChildren: React.JSX.Element[] = [];
 
-    /* eslint-disable complexity */
     const addUniqueToolClass = (child, index?) => {
-        const tempToolbarChildren: JSX.Element[] = [];
+        const tempToolbarChildren: React.JSX.Element[] = [];
 
         if (child.type === Button && child.props.className && child.props.className.includes('k-toolbar-overflow-button')) {
             tempToolbarChildren.push(
@@ -82,7 +81,7 @@ export const Toolbar = (
                 ></SplitButton>
             );
         } else if (child.type === ButtonGroup || child.props.className && child.props.className.includes('k-button-group')) {
-            const buttonGroupItems: JSX.Element[] = [];
+            const buttonGroupItems: React.JSX.Element[] = [];
             const childrenArray = Array.isArray(child.props.children) ? child.props.children : [ child.props.children ];
 
             childrenArray.forEach((button, bindex) => {
@@ -136,7 +135,6 @@ export const Toolbar = (
             toolbarChildren.push(item);
         });
     };
-    /* eslint-enable complexity */
 
     if (props.children) {
         const childrenArray = Array.isArray(props.children) ? props.children : [ props.children ];

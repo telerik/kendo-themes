@@ -18,7 +18,7 @@ export const FilterPreview = (
 ) => {
     const { fields } = props;
 
-    const expressionPreview: JSX.Element | JSX.Element[] = [];
+    const expressionPreview: React.JSX.Element | React.JSX.Element[] = [];
 
     if (fields) {
         fields.map(({ name, value }) => {

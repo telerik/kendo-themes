@@ -42,8 +42,8 @@ export type KendoTextareaOptions = {
 };
 
 export type KendoTextareaProps = KendoTextareaOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     separators?: boolean;
     rows?: number;
     value?: string;

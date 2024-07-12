@@ -26,7 +26,7 @@ export type KendoDialogOptions = {
 export type KendoDialogProps = KendoDialogOptions & {
     title?: string;
     actions?: string[];
-    actionButtons?: JSX.Element;
+    actionButtons?: React.JSX.Element;
     actionButtonsAlign?: "start" | "end" | "center" | "stretched";
     modal?: boolean;
 };

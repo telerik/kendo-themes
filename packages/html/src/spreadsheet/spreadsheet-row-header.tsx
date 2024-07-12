@@ -65,7 +65,7 @@ export const SpreadsheetRowHeader = (
         </div>
     ]);
 
-    const addRowSelection = (items: Array<JSX.Element>, configuration: any) => items.map((element: JSX.Element, index: number) => {
+    const addRowSelection = (items: Array<React.JSX.Element>, configuration: any) => items.map((element: React.JSX.Element, index: number) => {
         const itemValue = element.props.children.props.children;
         return (
             <div key={index} style={element.props.style}

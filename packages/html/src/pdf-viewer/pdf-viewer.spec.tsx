@@ -16,7 +16,7 @@ const states = [
 const options = {};
 
 export type KendoPDFViewerProps = {
-    toolbar?: JSX.Element;
+    toolbar?: React.JSX.Element;
     showSearchPanel?: boolean;
     blank?: boolean;
 };

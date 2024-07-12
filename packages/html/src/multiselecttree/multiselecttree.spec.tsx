@@ -45,12 +45,12 @@ export type KendoMultiSelectTreeOptions = {
 };
 
 export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     type?: string;
     placeholder?: string;
-    tags?: JSX.Element;
-    popup?: JSX.Element;
+    tags?: React.JSX.Element;
+    popup?: React.JSX.Element;
     showArrowButton?: boolean;
     opened?: boolean;
     dir?: 'ltr' | 'rtl';

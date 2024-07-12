@@ -247,7 +247,6 @@ const getContrast = ( col, self, background ) => {
     };
 };
 
-/* eslint-disable complexity */
 const selfAndBackground = async(el, parent) => {
     const classes = await el.getAttribute('class');
     const boxShadow = await el.getCssValue('boxShadow');

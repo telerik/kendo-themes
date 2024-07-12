@@ -25,8 +25,8 @@ export type KendoSchedulerEventProps = {
     hover?: boolean;
     focus?: boolean;
     selected?: boolean;
-    eventPrefix?: JSX.Element | null;
-    eventSuffix?: JSX.Element | null;
+    eventPrefix?: React.JSX.Element | null;
+    eventSuffix?: React.JSX.Element | null;
 };
 
 export const SchedulerEvent = (

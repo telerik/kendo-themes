@@ -8,7 +8,7 @@ const states = [];
 const options = {};
 
 export type KendoTaskBoardColumnProps = {
-    header?: JSX.Element;
+    header?: React.JSX.Element;
     edit?: boolean;
 };
 

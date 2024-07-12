@@ -27,8 +27,8 @@ export type KendoTooltipOptions = {
 export type KendoTooltipProps = KendoTooltipOptions & {
     callout?: null | 'top' | 'bottom' | 'left' | 'right';
     closable?: boolean;
-    title?: string | JSX.Element;
-    content?: string | JSX.Element;
+    title?: string | React.JSX.Element;
+    content?: string | React.JSX.Element;
     icon?: string;
 };
 

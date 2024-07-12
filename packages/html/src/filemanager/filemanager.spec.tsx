@@ -15,7 +15,7 @@ const states = [
 const options = {};
 
 export type KendoFileManagerProps = {
-    toolbar?: JSX.Element;
+    toolbar?: React.JSX.Element;
 };
 
 export type KendoFileManagerState = { [K in (typeof states)[number]]?: boolean };

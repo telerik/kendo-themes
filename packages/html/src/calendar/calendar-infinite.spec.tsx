@@ -30,7 +30,7 @@ const _renderNavigationItems = (items: string[], configuration: any) => items.ma
 ));
 
 export type KendoCalendarInfiniteProps = {
-    _navigationData?: JSX.Element;
+    _navigationData?: React.JSX.Element;
     showNavigation?: boolean;
     calendarView?: KendoCalendarInfiniteViewProps['calendarView'];
     calendarTitleText?: KendoCalendarInfiniteViewProps['headerText'];

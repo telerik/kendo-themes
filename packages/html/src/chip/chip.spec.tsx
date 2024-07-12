@@ -35,7 +35,7 @@ export type KendoChipOptions = {
 export type KendoChipProps = KendoChipOptions & {
     text?: string;
     icon?: string;
-    actions?: JSX.Element | string;
+    actions?: React.JSX.Element | string;
     showAvatar?: boolean;
 };
 

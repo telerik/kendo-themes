@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import { Checkbox } from '../checkbox';
 import { Icon } from '../icon';
 import { TreeviewGroup } from './treeview-group';
@@ -20,7 +19,7 @@ const defaultProps = {};
 
 export type KendoTreeviewItemProps = {
     leafClassName?: string;
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     hasChildren?: boolean;
     expanded?: boolean;
     text?: string;
@@ -62,7 +61,7 @@ export const TreeviewItem = (
 
     const _hasChildren = hasChildren || children;
 
-    const listChildren : JSX.Element[] = [];
+    const listChildren : React.JSX.Element[] = [];
 
     if (children) {
         if (Array.isArray(children)) {

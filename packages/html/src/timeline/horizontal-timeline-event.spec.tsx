@@ -10,7 +10,7 @@ const options = {};
 
 
 export type KendoHorizontalTimelineEventProps = {
-    content?: string | JSX.Element;
+    content?: string | React.JSX.Element;
     title?: string;
     subtitle?: string;
 };

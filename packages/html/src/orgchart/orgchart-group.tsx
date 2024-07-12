@@ -8,7 +8,7 @@ const states = [];
 const options = {};
 
 export type KendoOrgchartGroupProps = {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     orientation?: 'horizontal' | 'vertical';
     justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around';
 };
@@ -28,8 +28,8 @@ export const OrgchartGroup = (
         ...other
     } = props;
 
-    const chartNodes : JSX.Element[] = [];
-    const chartGroups : JSX.Element[] = [];
+    const chartNodes : React.JSX.Element[] = [];
+    const chartGroups : React.JSX.Element[] = [];
 
     if (children) {
         if (Array.isArray(children)) {

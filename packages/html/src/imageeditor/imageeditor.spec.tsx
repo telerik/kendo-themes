@@ -8,8 +8,8 @@ const states = [];
 const options = {};
 
 export type KendoImageEditorProps = {
-    toolbarItems?: JSX.Element | JSX.Element[];
-    actionPane?: JSX.Element | JSX.Element[];
+    toolbarItems?: React.JSX.Element | React.JSX.Element[];
+    actionPane?: React.JSX.Element | React.JSX.Element[];
     contentHeight?: string;
 };
 

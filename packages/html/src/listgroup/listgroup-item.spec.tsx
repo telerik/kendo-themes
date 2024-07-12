@@ -11,7 +11,7 @@ export type KendoListGroupItemProps = {
     icon?: string;
     showArrow?: boolean;
     arrowIconName?: string;
-    children?: JSX.Element;
+    children?: React.JSX.Element;
     href?: string;
     pseudo?: boolean;
 };

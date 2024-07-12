@@ -9,9 +9,9 @@ const states = [];
 const options = {};
 
 export type KendoCalculatedFieldProps = {
-    headerContent?: JSX.Element | JSX.Element[];
-    headerActions?: JSX.Element | JSX.Element[];
-    fieldActions?: JSX.Element | JSX.Element[];
+    headerContent?: React.JSX.Element | React.JSX.Element[];
+    headerActions?: React.JSX.Element | React.JSX.Element[];
+    fieldActions?: React.JSX.Element | React.JSX.Element[];
 };
 
 const defaultFieldActions = (

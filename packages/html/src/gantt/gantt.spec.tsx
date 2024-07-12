@@ -7,8 +7,8 @@ const states = [];
 const options = {};
 
 export type KendoGanttProps = {
-    headerToolbar?: JSX.Element;
-    footerToolbar?: JSX.Element;
+    headerToolbar?: React.JSX.Element;
+    footerToolbar?: React.JSX.Element;
 };
 
 const defaultProps = {

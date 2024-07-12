@@ -48,14 +48,14 @@ export type KendoMultiSelectOptions = {
 };
 
 export type KendoMultiSelectProps = KendoMultiSelectOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     separators?: boolean;
     type?: string;
     value?: string;
     placeholder?: string;
-    tags?: JSX.Element;
-    popup?: JSX.Element;
+    tags?: React.JSX.Element;
+    popup?: React.JSX.Element;
     showArrowButton?: boolean;
     opened?: boolean;
     adaptive?: boolean;

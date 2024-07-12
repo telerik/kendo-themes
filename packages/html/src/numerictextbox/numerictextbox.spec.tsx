@@ -38,8 +38,8 @@ export type KendoNumericTextboxOptions = {
 };
 
 export type KendoNumericTextboxProps = KendoNumericTextboxOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     separators?: boolean;
     value?: string;
     placeholder?: string;

@@ -1,4 +1,3 @@
-/* eslint-disable arrow-body-style */
 import { classNames } from './class-names';
 
 export const optionClassNames = (componentClassName: string, props: any) => {

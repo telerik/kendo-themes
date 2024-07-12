@@ -47,14 +47,14 @@ export type KendoDropdownGridOptions = {
 };
 
 export type KendoDropdownGridProps = KendoDropdownGridOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     separators?: boolean;
     type?: string;
     value?: string;
     placeholder?: string;
     autocomplete?: string;
-    popup?: JSX.Element;
+    popup?: React.JSX.Element;
     opened?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;

@@ -15,7 +15,7 @@ const defaultProps = {
 } as const;
 
 export type KendoDrawerProps = {
-    items?: JSX.Element | JSX.Element[];
+    items?: React.JSX.Element | React.JSX.Element[];
     expanded?: boolean;
     mini?: boolean;
     position?: "start" | "end";

@@ -6,8 +6,8 @@ export const PROMPTVIEW_CLASSNAME = `k-prompt-view`;
 
 export type KendoPromptViewProps = {
     showSearch?: boolean;
-    suggestions?: JSX.Element;
-    settings?: JSX.Element;
+    suggestions?: React.JSX.Element;
+    settings?: React.JSX.Element;
 }
 
 export const PromptView = (
