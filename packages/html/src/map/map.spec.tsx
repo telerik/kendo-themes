@@ -9,7 +9,7 @@ const states = [];
 const options = {};
 
 export type KendoMapProps = {
-    attribution?: JSX.Element;
+    attribution?: React.JSX.Element;
     markerStyle?: React.CSSProperties;
     scrollContainerStyle?: React.CSSProperties;
     horizontalScrollbarStyle?: React.CSSProperties;

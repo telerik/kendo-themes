@@ -36,8 +36,8 @@ export type KendoMaskedTextboxOptions = {
 };
 
 export type KendoMaskedTextboxProps = KendoMaskedTextboxOptions & {
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     separators?: boolean;
     type?: string;
     value?: string;

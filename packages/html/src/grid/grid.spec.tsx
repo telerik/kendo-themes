@@ -13,10 +13,10 @@ export type KendoGridOptions = {
 };
 
 export type KendoGridProps = KendoGridOptions & {
-    toolbar?: JSX.Element;
-    pager?: JSX.Element;
+    toolbar?: React.JSX.Element;
+    pager?: React.JSX.Element;
     pagerPosition?: 'top' | 'bottom';
-    groupingHeader?: JSX.Element;
+    groupingHeader?: React.JSX.Element;
     _renderAriaRoot?: boolean;
 };
 

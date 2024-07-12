@@ -9,7 +9,7 @@ const states = [];
 const options = {};
 
 export type KendoActionSheetProps = {
-    children: JSX.Element | JSX.Element[],
+    children: React.JSX.Element | React.JSX.Element[],
     title?: string;
     header?: typeof ActionSheetHeader;
     footer?: string | typeof ActionSheetFooter;
@@ -27,7 +27,6 @@ const defaultProps = {
     overlay: true
 };
 
-// eslint-disable-next-line complexity
 export const ActionSheet = (
     props: KendoActionSheetProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -45,25 +44,20 @@ export const ActionSheet = (
         ...other
     } = props;
 
-
-    // eslint-disable-next-line no-nested-ternary
     const _ActionSheetHeader = title
         ? <ActionSheetHeader title={title} />
         : header
             ? header
             : Array.isArray(children) && children.find((child) => child.type === ActionSheetHeader);
 
-    // eslint-disable-next-line no-nested-ternary
     const _ActionSheetFooter = actions
         ? <ActionSheetFooter className="k-actions" actions={actions} />
-        // eslint-disable-next-line no-nested-ternary
         : footer
             ? typeof footer === 'string'
                 ? <ActionSheetFooter>{footer}</ActionSheetFooter>
                 : footer
             : Array.isArray(children) && children.find((child) => child.type === ActionSheetFooter);
 
-    // eslint-disable-next-line no-nested-ternary
     const _ActionSheetContent = Array.isArray(children)
         ? children.filter(child => {
             switch (child.type) {
@@ -73,7 +67,6 @@ export const ActionSheet = (
                 default:
                     return true;
             }
-            return true;
         })
         : children.type === ActionSheetItems
             ? children

@@ -17,12 +17,12 @@ export type KendoFormOptions = {
 export type KendoFormProps = KendoFormOptions & {
     orientation?: string;
     layout?: string;
-    formButtons?: JSX.Element | string;
+    formButtons?: React.JSX.Element | string;
     cols?: number;
     gapX?: number;
     gapY?: number;
     tag?: string;
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
 };
 
 const defaultProps = {
@@ -49,7 +49,7 @@ export const Form = (
 
     const Parent = ({ tag, className, children }) => ( tag === 'form' ? <form className={className}>{children}</form> : <div className={className}>{children}</div> );
 
-    const formChildren: JSX.Element | JSX.Element[] = [];
+    const formChildren: React.JSX.Element | React.JSX.Element[] = [];
 
     if (children) {
         if ( Array.isArray(children) ) {

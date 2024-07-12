@@ -9,7 +9,7 @@ const states = [];
 const options = {};
 
 export type KendoPivotGridConfiguratorProps = {
-    actionButtons?: JSX.Element;
+    actionButtons?: React.JSX.Element;
     orientation?: "horizontal" | "vertical";
     mode?: "overlay" | "push";
     header?: string;

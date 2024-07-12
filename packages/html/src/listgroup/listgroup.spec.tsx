@@ -8,7 +8,7 @@ const states = [];
 const options = {};
 
 export type KendoListGroupOptions = {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     dir?: string;
 };
 
@@ -26,7 +26,7 @@ export const ListGroup = (
         ...other
     } = props;
 
-    const listChildren : JSX.Element[] = [];
+    const listChildren : React.JSX.Element[] = [];
 
     if (children) {
         if (Array.isArray(children)) {

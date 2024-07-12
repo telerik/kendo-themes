@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { CardNormal, CardHorizontal, CardHeader, CardBody, CardFooter, CardMedia } from '../../card';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';

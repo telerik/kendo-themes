@@ -10,7 +10,7 @@ const states = [
 const options = {};
 
 export type KendoWizardStepProps = {
-    buttons?: JSX.Element;
+    buttons?: React.JSX.Element;
 };
 
 export type KendoWizardStepState = { [K in (typeof states)[number]]?: boolean };

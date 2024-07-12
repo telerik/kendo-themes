@@ -22,8 +22,8 @@ export type KendoMenuListItemProps = {
     showArrow?: boolean;
     arrowIconName?: string;
     dir?: string;
-    children?: JSX.Element[];
-    popup?: JSX.Element;
+    children?: React.JSX.Element[];
+    popup?: React.JSX.Element;
 };
 
 export type KendoMenuListItemState = { [K in (typeof states)[number]]?: boolean };

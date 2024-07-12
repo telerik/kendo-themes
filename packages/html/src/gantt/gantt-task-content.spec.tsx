@@ -8,7 +8,7 @@ const states = [];
 const options = {};
 
 export type KendoGanttTaskContentProps = {
-    content?: string | JSX.Element | JSX.Element[];
+    content?: string | React.JSX.Element | React.JSX.Element[];
 };
 
 const defaultProps = {};

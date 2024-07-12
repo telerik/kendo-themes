@@ -8,7 +8,7 @@ const states = [];
 const options = {};
 
 export type KendoSpreadsheetSheetsBarProps = {
-    tabStripItems?: JSX.Element;
+    tabStripItems?: React.JSX.Element;
 };
 
 const defaultTabStripItems = (

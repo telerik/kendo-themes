@@ -4,7 +4,7 @@ import { classNames } from '../misc';
 const className = `k-treeview-group`;
 
 export type KendoTreeviewGroupProps = {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     dir?: 'ltr' | 'rtl';
 };
 
@@ -17,7 +17,7 @@ export const TreeviewGroup = (
         dir
     } = props;
 
-    const listChildren : JSX.Element[] = [];
+    const listChildren : React.JSX.Element[] = [];
 
     if (children) {
         if (Array.isArray(children)) {

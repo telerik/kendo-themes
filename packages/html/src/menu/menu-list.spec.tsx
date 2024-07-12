@@ -10,7 +10,7 @@ const options = {
 };
 
 export type KendoMenuListOptions = {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
     size?: (typeof options.size)[number] | null;
     dir?: string;
 };
@@ -31,7 +31,7 @@ export const MenuList = (
         ...other
     } = props;
 
-    const listChildren: JSX.Element[] = [];
+    const listChildren: React.JSX.Element[] = [];
 
     if (children) {
         if (Array.isArray(children)) {

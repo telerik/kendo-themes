@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 import { Typography } from '../../typography';
 import { Button } from '../../button';
 

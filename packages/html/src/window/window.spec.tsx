@@ -24,7 +24,7 @@ export type KendoWindowProps = KendoWindowOptions & {
     title?: string;
     actions?: string[];
     minimized?: boolean;
-    actionButtons?: JSX.Element;
+    actionButtons?: React.JSX.Element;
     actionButtonsAlign?: "start" | "end" | "center" | "stretched";
 };
 

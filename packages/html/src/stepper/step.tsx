@@ -24,7 +24,7 @@ export type KendoStepProps = {
     label?: string;
     text?: string;
     icon?: string;
-    stepContent?: JSX.Element;
+    stepContent?: React.JSX.Element;
 }
 
 export type StepState = { [K in (typeof states)[number]]?: boolean };

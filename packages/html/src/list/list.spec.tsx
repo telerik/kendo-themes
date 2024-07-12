@@ -16,8 +16,8 @@ export type KendoListOptions = {
 
 export type KendoListProps = KendoListOptions & {
     virtualization?: boolean;
-    children?: JSX.Element[];
-    optionLabel?: JSX.Element;
+    children?: React.JSX.Element[];
+    optionLabel?: React.JSX.Element;
 };
 
 export type KendoListState = { [K in (typeof states)[number]]?: boolean };
@@ -40,9 +40,9 @@ export const List = (
     } = props;
 
     let listHeader: string | undefined;
-    let listGroup: string | number | boolean | JSX.Element | null | undefined;
-    let listContent: string | number | boolean | JSX.Element | null | undefined;
-    const listChildren : JSX.Element[] = [];
+    let listGroup: string | number | boolean | React.JSX.Element | null | undefined;
+    let listContent: string | number | boolean | React.JSX.Element | null | undefined;
+    const listChildren : React.JSX.Element[] = [];
 
     if (children) {
         children.map((child, index) => {

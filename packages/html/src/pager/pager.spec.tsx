@@ -1,4 +1,3 @@
-/* eslint-disable complexity */
 import { Button } from '../button';
 import { DropdownList } from '../dropdownlist';
 import { NumericTextbox } from '../numerictextbox';
@@ -72,8 +71,8 @@ export const Pager = (
         ...other
     } = props;
 
-    const pageButtons: JSX.Element[] = [];
-    const options: JSX.Element[] = [];
+    const pageButtons: React.JSX.Element[] = [];
+    const options: React.JSX.Element[] = [];
 
     for (let i = 1; i <= maxPages; i++) {
         pageButtons.push(

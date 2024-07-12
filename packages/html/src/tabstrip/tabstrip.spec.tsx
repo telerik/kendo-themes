@@ -9,7 +9,7 @@ const options = {};
 
 export type KendoTabStripProps = {
     position?: "top" | "bottom" | "left" | "right";
-    tabStripItems?: JSX.Element | JSX.Element[];
+    tabStripItems?: React.JSX.Element | React.JSX.Element[];
     scrollable?: boolean;
     header?: boolean | null;
     dir?: "rtl" | "ltr";

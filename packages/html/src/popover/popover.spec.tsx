@@ -12,7 +12,7 @@ const defaultProps = {};
 export type KendoPopoverProps = {
     callout?: null | 'top' | 'bottom' | 'left' | 'right';
     title?: string;
-    body?: JSX.Element | JSX.Element[];
+    body?: React.JSX.Element | React.JSX.Element[];
 };
 
 

@@ -38,12 +38,12 @@ export type KendoDropdownListOptions = {
 export type KendoDropdownListProps = KendoDropdownListOptions & {
     valueIconName?: string;
     arrowIconName?: string;
-    prefix?: JSX.Element;
-    suffix?: JSX.Element;
+    prefix?: React.JSX.Element;
+    suffix?: React.JSX.Element;
     value?: string;
     placeholder?: string;
     showValue?: boolean;
-    popup?: JSX.Element;
+    popup?: React.JSX.Element;
     opened?: boolean;
 };
 

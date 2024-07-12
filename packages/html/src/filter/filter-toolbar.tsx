@@ -7,7 +7,7 @@ const states = [];
 const options = {};
 
 export type KendoFilterToolbarProps = {
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
 }
 
 const defaultProps = {};

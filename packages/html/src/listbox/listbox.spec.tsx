@@ -17,7 +17,7 @@ export type KendoListBoxOptions = {
 };
 
 export type KendoListBoxProps = KendoListBoxOptions & {
-    children?: JSX.Element[];
+    children?: React.JSX.Element[];
     actionsPosition?: 'left' | 'right' | 'top' | 'bottom';
     actions?: string[];
     dir?: 'ltr' | 'rtl';

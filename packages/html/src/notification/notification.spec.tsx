@@ -26,7 +26,7 @@ export type KendoNotificationOptions = {
 };
 
 export type KendoNotificationProps = KendoNotificationOptions & {
-    actions?: JSX.Element | JSX.Element[];
+    actions?: React.JSX.Element | React.JSX.Element[];
     closable?: boolean;
     text?: string;
     icon?: string;

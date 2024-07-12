@@ -11,7 +11,7 @@ const options = {};
 
 export type KendoVerticalTimelineEventProps = {
     date?: string;
-    content?: string | JSX.Element;
+    content?: string | React.JSX.Element;
     collapsed?: boolean;
     reverse?: boolean;
     title?: string;

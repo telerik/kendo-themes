@@ -13,7 +13,7 @@ const states = [
 const options = {};
 
 export type KendoTaskBoardProps = {
-    toolbar?: JSX.Element;
+    toolbar?: React.JSX.Element;
     pane?: boolean;
     panePosition?: "start" | "end";
 };

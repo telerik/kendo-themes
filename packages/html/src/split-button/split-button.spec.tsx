@@ -44,7 +44,7 @@ export type KendoSplitButtonProps = KendoSplitButtonOptions & {
   iconClassName?: string;
   showArrow?: boolean;
   arrowIconName?: string;
-  popup?: JSX.Element;
+  popup?: React.JSX.Element;
   opened?: boolean;
 };
 

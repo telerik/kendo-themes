@@ -35,7 +35,7 @@ export const ColorPalette = (
         ...other
     } = props;
 
-    const newChildren : JSX.Element[] = [];
+    const newChildren : React.JSX.Element[] = [];
 
     if (palette) {
 
@@ -45,7 +45,7 @@ export const ColorPalette = (
 
         if (Array.isArray(colors)) {
             Array.from({ length: Math.ceil(colors.length / cols) }, (_, i) => {
-                const items : JSX.Element[] = [];
+                const items : React.JSX.Element[] = [];
 
                 colors.slice(i * cols, (i + 1) * cols)
                     .map((color, index) => {

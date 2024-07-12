@@ -12,7 +12,7 @@ const states = [
 const options = {};
 
 export type KendoEditorProps = {
-    toolbarItems?: JSX.Element[] | JSX.Element;
+    toolbarItems?: React.JSX.Element[] | React.JSX.Element;
     resizable?: boolean;
     toolbarResizable?: boolean;
 };

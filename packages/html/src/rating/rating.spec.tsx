@@ -36,7 +36,7 @@ export const Rating = (
         ...other
     } = props;
 
-    const listChildren: JSX.Element[] = [];
+    const listChildren: React.JSX.Element[] = [];
 
     const solidItems = Math.floor(value);
     const splitItems = value % 1 === 0.5;

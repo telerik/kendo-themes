@@ -9,7 +9,7 @@ const states = [];
 const options = {};
 
 export type KendoTaskBoardPaneProps = {
-    header?: JSX.Element;
+    header?: React.JSX.Element;
 };
 
 const defaultHeader =
