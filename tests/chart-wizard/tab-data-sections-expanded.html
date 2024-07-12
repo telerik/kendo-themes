@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 1040px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <section>
+            <span class="k-font-bold">Configuration section expanded</span>
+            <div class="k-expander k-expanded">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">Configuration</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title"></div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="k-expander-content-wrapper">
+                    <div class="k-expander-content">
+                        <form class="k-form k-form-md">
+                            <fieldset class="k-form-fieldset">
+                                <legend class="k-form-legend">X axis (category)</legend>
+                                <span class="k-dropdownlist k-picker k-picker-md k-picker-outline k-rounded-md">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Current item</span>
+                                    </span>
+                                    <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                            </fieldset>
+                            <fieldset class="k-form-fieldset">
+                                <legend class="k-form-legend">Series</legend>
+                                <div class="k-grid k-grid-md">
+                                    <div class="k-grid-toolbar k-toolbar k-toolbar-md">
+                                        <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="k-button-text">Add</span>
+                                        </button>
+                                    </div>
+                                    <div class="k-grid-aria-root">
+                                        <div class="k-grid-container">
+                                            <div class="k-grid-content">
+                                                <table class="k-grid-table k-table k-table-md">
+                                                    <colgroup>
+                                                        <col class="k-drag-col">
+                                                        <col>
+                                                        <col style="width: 80px;">
+                                                    </colgroup>
+                                                    <tbody class="k-table-tbody">
+                                                        <tr class="k-master-row k-table-row">
+                                                            <td class="k-drag-cell k-table-td">
+                                                                <span class="k-icon k-svg-icon k-svg-i-reorder">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </td>
+                                                            <td class="k-table-td">Series Name</td>
+                                                            <td class="k-command-cell k-table-td">
+                                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                                            <td class="k-drag-cell k-table-td">
+                                                                <span class="k-icon k-svg-icon k-svg-i-reorder">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </td>
+                                                            <td class="k-table-td">Series Name</td>
+                                                            <td class="k-command-cell k-table-td">
+                                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="k-master-row k-table-row">
+                                                            <td class="k-drag-cell k-table-td">
+                                                                <span class="k-icon k-svg-icon k-svg-i-reorder">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </td>
+                                                            <td class="k-table-td">Series Name</td>
+                                                            <td class="k-command-cell k-table-td">
+                                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                                            <td class="k-drag-cell k-table-td">
+                                                                <span class="k-icon k-svg-icon k-svg-i-reorder">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </td>
+                                                            <td class="k-table-td">Series Name</td>
+                                                            <td class="k-command-cell k-table-td">
+                                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="k-master-row k-table-row">
+                                                            <td class="k-drag-cell k-table-td">
+                                                                <span class="k-icon k-svg-icon k-svg-i-reorder">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M480 128v64H32v-64zM32 224v64h448v-64zm448 96H32v64h448z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </td>
+                                                            <td class="k-table-td">Series Name</td>
+                                                            <td class="k-command-cell k-table-td">
+                                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
+                                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                            <path d="M416 96h-96V64c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v32H64v64h32v288c0 17.6 14.4 32 32 32h224c17.6 0 32-14.4 32-32V160h32zM192 64h95.9l.1.1V96h-96c.1-.1.1-32.1 0-32m160 384H128.1l-.1-.1V160h32v256h32V160h32v256h32V160h32v256h32V160h32z"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="k-form-fieldset">
+                                <legend class="k-form-legend">Y axis (value)</legend>
+                                <span class="k-dropdownlist k-picker k-picker-md k-picker-outline k-rounded-md">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">Current item</span>
+                                    </span>
+                                    <button class="k-input-button k-button k-button-md k-button-outline k-button-outline-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </span>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
