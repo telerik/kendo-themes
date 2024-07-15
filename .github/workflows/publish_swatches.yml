@@ -60,7 +60,9 @@ jobs:
         run: npm ci --no-audit --no-fund
 
       - name: Build swatches
-        run: npm run sass:swatches
+        run: |
+            npm run sass
+            npm run sass:swatches
 
       - name: Checkout artifact repository
         uses: actions/checkout@v4
