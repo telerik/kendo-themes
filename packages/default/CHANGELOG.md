@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.1.1-dev.0...v8.2.0-dev.0) (2024-07-15)
+
+
+### Features
+
+* **chart-wizard:** add chart wizard component styles ([fb94657](https://github.com/telerik/kendo-themes/commit/fb9465737f7f7e64a20baefb715be976b0ab5fb6))
+* **chat:** add focus styles on quick replies ([c427ea1](https://github.com/telerik/kendo-themes/commit/c427ea1d65e0d53dd81142d09f54b4632d353833))
+
+
+
+
+
 ## [8.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v8.1.0...v8.1.1-dev.0) (2024-07-08)
 
 **Note:** Version bump only for package @progress/kendo-theme-default
