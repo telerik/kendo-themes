@@ -66,10 +66,8 @@
         overflow: hidden;
         cursor: default;
         flex: 1;
-        display: flex;
-        flex-flow: row nowrap;
 
-        &::before {
+        &:empty::before {
             content: "\200b";
         }
     }
