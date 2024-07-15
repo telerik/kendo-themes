@@ -2,7 +2,7 @@ import { classNames, optionClassNames, Size } from '../misc';
 import { CalendarNavigation } from '.';
 import { CalendarInfiniteView, KendoCalendarInfiniteViewProps } from './calendar-infinite-view.spec';
 
-const CALENDAR_INFINITE_CLASSNAME = 'k-calendar-infinite';
+const CALENDARINFINITE_CLASSNAME = 'k-calendar-infinite';
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
@@ -74,7 +74,7 @@ export const CalendarInfinite = (
             className={classNames(
                 props.className,
                 'k-calendar',
-                CALENDAR_INFINITE_CLASSNAME,
+                CALENDARINFINITE_CLASSNAME,
                 optionClassNames('k-calendar', { size })
             )}>
             {showNavigation &&
@@ -96,3 +96,9 @@ export const CalendarInfinite = (
         </div>
     );
 };
+
+CalendarInfinite.options = options;
+CalendarInfinite.className = CALENDARINFINITE_CLASSNAME;
+CalendarInfinite.defaultProps = defaultProps;
+
+export default CalendarInfinite;

@@ -3,84 +3,84 @@
 @use "../button/_variables.scss" as *;
 @use "../core/spacing" as *;
 
-/// Font size of the map.
+/// The font size of the Map.
 /// @group map
 $kendo-map-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the map.
+/// The line height of the Map.
 /// @group map
 $kendo-map-line-height: var( --kendo-line-height, normal ) !default;
-/// Font family of the map.
+/// The font family of the Map.
 /// @group map
 $kendo-map-font-family: var( --kendo-font-family, normal ) !default;
 
-/// Background color of the map.
+/// The background color of the Map.
 /// @group map
 $kendo-map-bg: var( --kendo-component-bg, transparent ) !default;
-/// Text color of the map.
+/// The text color of the Map.
 /// @group map
 $kendo-map-text: var( --kendo-component-text, inherit ) !default;
-/// Border color of the map.
+/// The border color of the Map.
 /// @group map
 $kendo-map-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
-/// Border width of the map.
+/// The border width of the Map.
 /// @group map
 $kendo-map-border-width: 0px !default;
-/// Height of the map.
+/// The height of the Map.
 /// @group map
 $kendo-map-height: 600px !default;
 
-/// Map navigator horizontal margin.
+/// The horizontal margin of the Map navigator.
 /// @group map
 $kendo-map-navigator-margin-x: k-spacing(4) !default;
-/// Map navigator vertical margin.
+/// The vertical margin of the Map navigator.
 /// @group map
 $kendo-map-navigator-margin-y: k-spacing(4) !default;
-/// Map navigator padding.
+/// The padding of the Map navigator.
 /// @group map
 $kendo-map-navigator-padding: k-spacing(0.5) !default;
-/// Map navigator width.
+/// The width of the Map navigator.
 /// @group map
 $kendo-map-navigator-width: calc( var( --kendo-icon-size) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) !default;
-/// Map navigator height.
+/// The height of the Map navigator.
 /// @group map
 $kendo-map-navigator-height: $kendo-map-navigator-width !default;
-/// Map navigator border width.
+/// The border width of the Map navigator.
 /// @group map
 $kendo-map-navigator-border-width: 1px !default;
-/// Map navigator background color.
+/// The background color of the Map navigator.
 /// @group map
 $kendo-map-navigator-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
-/// Map navigator text color.
+/// The text color of the Map navigator.
 /// @group map
 $kendo-map-navigator-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
-/// Map navigator border color.
+/// The border color of the Map navigator.
 /// @group map
 $kendo-map-navigator-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
-/// Map zoom control margin.
+/// The margin of the Map zoom control.
 /// @group map
 $kendo-map-zoom-control-margin: k-spacing(4) !default;
-/// Map zoom control horizontal padding.
+/// The horizontal padding of the Map zoom control.
 /// @group map
 $kendo-map-zoom-control-button-padding-x: $kendo-button-md-padding-y !default;
-/// Map zoom control vertical padding.
+/// The vertical padding of the Map zoom control.
 /// @group map
 $kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding-x !default;
 
-/// Map attribution horizontal padding.
+/// The horizontal padding of the Map attribution.
 /// @group map
 $kendo-map-attribution-padding-x: $kendo-padding-sm-x !default;
-/// Map attribution vertical padding.
+/// The vertical padding of the Map attribution.
 /// @group map
 $kendo-map-attribution-padding-y: $kendo-padding-sm-y !default;
-/// Map attribution font size.
+/// The font size of the Map attribution.
 /// @group map
 $kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75 ) !default;
-/// Map attribution background color.
+/// The background color of the Map attribution.
 /// @group map
 $kendo-map-attribution-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 
-/// Map marker fill color.
+/// The fill color of the Map marker.
 /// @group map
 $kendo-map-marker-fill: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

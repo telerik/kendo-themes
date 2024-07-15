@@ -1,6 +1,6 @@
 import { Button } from '../../button';
 import { Card, CardDeck, CardBody } from '../../card';
-import { ChatMessage, ChatMessageGroup, ChatNormal, ChatQuickReply } from '..';
+import { ChatMessage, ChatMessageGroup, ChatNormal, ChatQuickReplies, ChatQuickReply } from '..';
 
 
 const styles = `
@@ -50,7 +50,13 @@ export default () =>(
                     <ChatMessageGroup>
                         <ChatMessage className="k-only" />
                     </ChatMessageGroup>
-                    <ChatQuickReply />
+                    <ChatQuickReplies>
+                        <ChatQuickReply text="Quick" />
+                        <ChatQuickReply text="Reply" />
+                        <ChatQuickReply text="Focused" focus />
+                        <ChatQuickReply text="Hovered quick" hover />
+                        <ChatQuickReply text="Reply with different length" />
+                    </ChatQuickReplies>
                     <div className="k-timestamp">Card Deck Normal</div>
                     <CardDeck>
                         <Card>

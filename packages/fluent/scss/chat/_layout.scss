@@ -231,6 +231,10 @@
         padding-block: var( --kendo-chat-quick-reply-padding-y, #{ $kendo-chat-quick-reply-padding-y } );
         border-width: 1px;
         border-style: solid;
+        border-color: currentColor;
+        background: none;
+        color: inherit;
+        position: relative;
         line-height: var( --kendo-chat-quick-reply-line-height, #{ $kendo-chat-quick-reply-line-height } );
         cursor: pointer;
         user-select: none;
@@ -240,6 +244,18 @@
         transition-duration: .2s;
         transition-timing-function: ease-in-out;
         outline: none;
+
+        &:focus::after,
+        &.k-focus::after {
+            content: "";
+            position: absolute;
+            border: medium none;
+            border-radius: var(--kendo-border-radius-full, 9999px);
+            inset: var( --kendo-chat-quick-reply-focus-offset, #{$kendo-chat-quick-reply-focus-offset} );
+            outline-width: var( --kendo-chat-quick-reply-focus-outline-width, #{$kendo-chat-quick-reply-focus-outline-width} );
+            outline-style: var( --kendo-chat-quick-reply-focus-outline-style, #{$kendo-chat-quick-reply-focus-outline-style} );
+            z-index: 1;
+        }
     }
 
 

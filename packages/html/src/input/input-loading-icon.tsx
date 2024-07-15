@@ -1,6 +1,6 @@
 import { classNames, States } from '../misc';
 
-const className = `k-input-loading-icon`;
+const INPUTLOADINGICON_CLASSNAME = `k-input-loading-icon`;
 
 const states = [
     States.disabled,
@@ -22,6 +22,11 @@ export const InputLoadingIcon = (
     }
 
     return (
-        <span className={classNames(props.className, className, "k-icon k-i-loading")}></span>
+        <span className={classNames(props.className, INPUTLOADINGICON_CLASSNAME, "k-icon k-i-loading")}></span>
     );
 };
+
+InputLoadingIcon.states = states;
+InputLoadingIcon.className = INPUTLOADINGICON_CLASSNAME;
+
+export default InputLoadingIcon;

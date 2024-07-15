@@ -103,3 +103,7 @@ export const CalendarCell = (
         </td>
     );
 };
+
+CalendarCell.states = states;
+
+export default CalendarCell;

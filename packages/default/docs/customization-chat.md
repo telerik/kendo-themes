@@ -637,6 +637,36 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Chat quick reply.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-chat-quick-reply-shadow-blur</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow blur of the focused Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-shadow-spread</td>
+    <td>Number</td>
+    <td><code>2px</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow spread of the focused Chat quick reply.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chat-quick-reply-shadow-opacity</td>
+    <td>Number</td>
+    <td><code>.3</code></td>
+    <td><code>0.3</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow opacity of the focused Chat quick reply.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

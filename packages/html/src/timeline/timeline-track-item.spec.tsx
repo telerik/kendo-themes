@@ -41,4 +41,7 @@ export const TimelineTrackItem = (
     );
 };
 
+TimelineTrackItem.states = states;
+TimelineTrackItem.className = TIMELINETRACKITEM_CLASSNAME;
+
 export default TimelineTrackItem;

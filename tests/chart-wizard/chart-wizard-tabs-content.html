@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 1040px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+        <div class="k-font-bold">Chart Tab</div>
+        <div class="k-font-bold">Data Tab</div>
+        <div class="k-font-bold">Format Tab</div>
+        <section>
+            <div class="k-tabstrip k-tabstrip-top k-header">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items k-reset">
+                        <li class="k-item k-active k-first">
+                            <span class="k-link">Chart</span>
+                        </li>
+                        <li class="k-item">
+                            <span class="k-link">Data</span>
+                        </li>
+                        <li class="k-item k-last">
+                            <span class="k-link">Format</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Bar Chart</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Pie Chart</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Column Chart</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Line Chart</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Scatter Chart</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-tabstrip k-tabstrip-top k-header">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items k-reset">
+                        <li class="k-item k-first">
+                            <span class="k-link">Chart</span>
+                        </li>
+                        <li class="k-item k-active">
+                            <span class="k-link">Data</span>
+                        </li>
+                        <li class="k-item k-last">
+                            <span class="k-link">Format</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Configuration</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-tabstrip k-tabstrip-top k-header">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items k-reset">
+                        <li class="k-item k-first">
+                            <span class="k-link">Chart</span>
+                        </li>
+                        <li class="k-item">
+                            <span class="k-link">Data</span>
+                        </li>
+                        <li class="k-item k-active k-last">
+                            <span class="k-link">Format</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Chart area</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Title</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Series</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Legend</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Category axis</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                    <div class="k-expander">
+                        <div class="k-expander-header">
+                            <div class="k-expander-title">Value axis</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-expander-sub-title"></div>
+                            <span class="k-expander-indicator">
+                                <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="k-expander-content-wrapper k-d-none">
+                            <div class="k-expander-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -70,6 +70,7 @@ export const FormField = (
     );
 };
 
+FormField.states = states;
 FormField.className = FORMFIELD_CLASSNAME;
 
 export default FormField;

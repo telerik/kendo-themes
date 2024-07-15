@@ -225,3 +225,13 @@ $kendo-chat-quick-reply-hover-text: var( --kendo-component-bg, inherit ) !defaul
 /// The border color of the hovered Chat quick reply.
 /// @group chat
 $kendo-chat-quick-reply-hover-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+
+/// The offset of the focused Chat quick reply.
+/// @group chat
+$kendo-chat-quick-reply-focus-offset: k-spacing(0.5) !default;
+/// The outline width of the focused Chat quick reply.
+/// @group chat
+$kendo-chat-quick-reply-focus-outline-width: 1px !default;
+/// The outline style of the focused Chat quick reply.
+/// @group chat
+$kendo-chat-quick-reply-focus-outline-style: solid !default;

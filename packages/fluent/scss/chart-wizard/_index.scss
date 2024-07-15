@@ -1,0 +1,36 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "chart-wizard",
+    dependencies: (
+        "icon",
+        "window",
+        "splitter",
+        "dataviz",
+        "expansion-panel",
+        "grid",
+        "tabstrip",
+        "listview",
+        "forms",
+        "combobox"
+    )
+);
+
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+
+// Register
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin chart-wizard-styles() {
+    @include module.render( "chart-wizard" ) {
+        @include kendo-chart-wizard--layout();
+        @include kendo-chart-wizard--theme();
+    }
+}

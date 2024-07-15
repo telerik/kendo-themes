@@ -76,3 +76,8 @@ export const UploadDropzone = (
         </div>
     );
 };
+
+UploadDropzone.states = states;
+UploadDropzone.className = UPLOADDROPZONE_CLASSNAME;
+
+export default UploadDropzone;

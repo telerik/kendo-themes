@@ -1,49 +1,49 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Border width of the mediaplayer.
+/// The border width of the MediaPlayer.
 /// @group mediaplayer
 $kendo-media-player-border-width: 1px !default;
-/// Font family of the mediaplayer.
+/// The font family of the MediaPlayer.
 /// @group mediaplayer
 $kendo-media-player-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the mediaplayer.
+/// The font size of the MediaPlayer.
 /// @group mediaplayer
 $kendo-media-player-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the mediaplayer.
+/// The line height of the MediaPlayer.
 /// @group mediaplayer
 $kendo-media-player-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Background color of the mediaplayer.
+/// The background color of the MediaPlayer.
 /// @group mediaplayer
 $kendo-media-player-bg: var( --kendo-component-bg, inherit ) !default;
-/// Text color of the mediaplayer.
+/// The text color of the MediaPlayer.
 /// @group mediaplayer
 $kendo-media-player-text: var( --kendo-component-text, inherit ) !default;
-/// Border color of the mediaplayer.
+/// The border color of the MediaPlayer.
 /// @group mediaplayer
 $kendo-media-player-border: var( --kendo-component-border, inherit ) !default;
 
-/// Mediaplayer overlay background color.
+/// The background color of the MediaPlayer overlay.
 /// @group mediaplayer
 $kendo-media-player-overlay-bg: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
 
-/// Mediaplayer quality button border color.
+/// The border color of the MediaPlayer button.
 /// @group mediaplayer
 $kendo-media-player-quality-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
-/// Media player title font size.
+/// The font size of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
-/// Mediaplayer titlebar horizontal padding.
+/// The horizontal padding of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
-/// Mediaplayer titlebar vertical padding.
+/// The vertical padding of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
-/// Mediaplayer titlebar background color.
+/// The background color of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 40%, transparent), rgba( $kendo-color-black, .4 )) !default;
-/// Mediaplayer titlebar text color.
+/// The text color of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;

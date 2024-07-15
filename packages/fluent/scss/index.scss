@@ -121,6 +121,7 @@
 @forward "./splitter";
 @forward "./tilelayout";
 @forward "./dock-manager";
+@forward "./chart-wizard";
 
 
 // Editors
@@ -285,6 +286,7 @@
 @use "./splitter" as *;
 @use "./tilelayout" as *;
 @use "./dock-manager" as *;
+@use "./chart-wizard" as *;
 
 
 // Data management
@@ -473,6 +475,7 @@
     @include splitter-styles();
     @include tilelayout-styles();
     @include dock-manager-styles();
+    @include chart-wizard-styles();
 
     // Data management
     @include grid-styles();

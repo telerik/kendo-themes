@@ -2,7 +2,7 @@ import { classNames, States, stateClassNames } from "../misc";
 import { TableTh, KendoTableThProps } from "../table/table-th";
 import { Icon } from "../icon";
 
-const className = `k-header`;
+const GRIDHEADERCELL_CLASSNAME = `k-header`;
 
 const states = [
     States.hover,
@@ -53,14 +53,14 @@ export const GridHeaderCell = (
             {...others}
             className={classNames(
                 props.className,
-                className,
+                GRIDHEADERCELL_CLASSNAME,
                 {
                     [`k-filterable`]: menu && filterable || menu === "filter",
                     [`k-sorted`]: sortable,
                     [`k-grid-header-sticky`]: sticky,
                     [`k-touch-action-none`]: resizable
                 },
-                stateClassNames(className, {
+                stateClassNames(GRIDHEADERCELL_CLASSNAME, {
                     hover,
                     focus,
                     active
@@ -102,5 +102,9 @@ export const GridHeaderCell = (
         </TableTh>
     );
 };
+
+GridHeaderCell.states = states;
+GridHeaderCell.className = GRIDHEADERCELL_CLASSNAME;
+GridHeaderCell.defaultProps = defaultProps;
 
 export default GridHeaderCell;

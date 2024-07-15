@@ -63,3 +63,8 @@ export const ActionSheetItem = (
         </span>
     );
 };
+
+ActionSheetItem.states = states;
+ActionSheetItem.className = ACTIONSHEETITEM_CLASSNAME;
+
+export default ActionSheetItem;
