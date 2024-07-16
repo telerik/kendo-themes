@@ -4228,7 +4228,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chart-wizard-icon-area-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary-subtle), $kendo-color-primary-subtle)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color(primary-subtle), k-try-tint( $kendo-color-primary, 80% ))</code></td>
     <td><code>var(--kendo-color-primary-subtle, #cfe2ff)</code></td>
 </tr>
 <tr>
@@ -4258,7 +4258,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color(primary-emphasis), $kendo-color-primary-emphasis)</code></td>
+    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color(primary-emphasis), k-try-tint( $kendo-color-primary, 25% ))</code></td>
     <td><code>inset 0 0 0 1px var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
