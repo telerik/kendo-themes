@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.1](https://github.com/telerik/kendo-themes/compare/v8.2.0...v8.2.1) (2024-07-16)
+
+
+### Bug Fixes
+
+* **chart-wizard:** icon area color variables are not backwards compatible ([4e14c81](https://github.com/telerik/kendo-themes/commit/4e14c810fa9b8552082392d84a0aa40927eaa896))
+
+
+
+
+
 # [8.2.0](https://github.com/telerik/kendo-themes/compare/v8.2.0-dev.0...v8.2.0) (2024-07-15)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.1](https://github.com/telerik/kendo-themes/compare/v8.2.0...v8.2.1) (2024-07-16)
+
+
+### Bug Fixes
+
+* **fluent:** map navigator layout is broken ([f12056b](https://github.com/telerik/kendo-themes/commit/f12056b9869dd81a0f4016df20b368666a712b51))
+
+
+
+
+
 # [8.2.0](https://github.com/telerik/kendo-themes/compare/v8.2.0-dev.0...v8.2.0) (2024-07-15)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

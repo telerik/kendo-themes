@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.1](https://github.com/telerik/kendo-themes/compare/v8.2.0...v8.2.1) (2024-07-16)
+
+
+### Bug Fixes
+
+* **chart-wizard:** icon area color variables are not backwards compatible ([4e14c81](https://github.com/telerik/kendo-themes/commit/4e14c810fa9b8552082392d84a0aa40927eaa896))
+* **fluent:** map navigator layout is broken ([f12056b](https://github.com/telerik/kendo-themes/commit/f12056b9869dd81a0f4016df20b368666a712b51))
+* **material:** null parameter is passed to k-color-tint when $kendo-enable-color-system is false ([2e4a0c6](https://github.com/telerik/kendo-themes/commit/2e4a0c6a982cf4b7432a9a03bb7cf52d0e09341e))
+
+
+
+
+
 # [8.2.0](https://github.com/telerik/kendo-themes/compare/v8.2.0-dev.0...v8.2.0) (2024-07-15)
 
 **Note:** Version bump only for package kendo-themes.repo
