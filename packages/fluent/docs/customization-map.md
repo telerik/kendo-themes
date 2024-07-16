@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-map-navigator-width</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size) * 3 + calc( #{$kendo-map-navigator-padding} * 2) )</code></td>
-    <td><code>calc(var(--kendo-icon-size) * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
+    <td><code>calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>
@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-map-navigator-height</td>
     <td>Calculation</td>
     <td><code>$kendo-map-navigator-width</code></td>
-    <td><code>calc(var(--kendo-icon-size) * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Map navigator.</div></div>
