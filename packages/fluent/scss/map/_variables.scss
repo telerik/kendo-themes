@@ -41,7 +41,7 @@ $kendo-map-navigator-margin-y: k-spacing(4) !default;
 $kendo-map-navigator-padding: k-spacing(0.5) !default;
 /// The width of the Map navigator.
 /// @group map
-$kendo-map-navigator-width: calc( var( --kendo-icon-size) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) !default;
+$kendo-map-navigator-width: calc( var( --kendo-icon-size, 1rem) * 3 + calc( #{$kendo-map-navigator-padding} * 2) ) !default;
 /// The height of the Map navigator.
 /// @group map
 $kendo-map-navigator-height: $kendo-map-navigator-width !default;
