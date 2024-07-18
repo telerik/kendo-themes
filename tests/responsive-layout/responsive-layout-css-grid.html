@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: none;
+            text-align: center;
+        }
+        #test-area .k-row>*,
+        #test-area .k-d-grid>* {
+            padding: 1rem;
+            background-color: var(--kendo-color-primary-subtle);
+            border: 1px solid var(--kendo-color-primary);
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span>Equal Width</span>
+        <section class="k-container k-gap-4">
+            <div class="k-d-grid k-grid-cols-2">
+                <div>Column 1</div>
+                <div>Column 2</div>
+            </div>
+            <div class="k-d-grid k-grid-cols-3">
+                <div>Column 1</div>
+                <div>Column 2</div>
+                <div>Column 3</div>
+            </div>
+        </section>
+        <br>
+        <span>Setting one column to be wider than the others</span>
+        <section class="k-container k-gap-4">
+            <div class="k-d-grid k-grid-cols-12">
+                <div class="k-col-span-2">k-col-span-2</div>
+                <div class="k-col-span-8">k-col-span-8</div>
+                <div class="k-col-span-2">k-col-span-2</div>
+            </div>
+            <div class="k-d-grid k-grid-cols-12">
+                <div class="k-col-span-3">k-col-span-3</div>
+                <div class="k-col-span-6">k-col-span-6</div>
+                <div class="k-col-span-3">k-col-span-3</div>
+            </div>
+        </section>
+        <br>
+        <span>Breakpoint-specific classes (stacked horizontally on Phone, Portrait orientation)</span>
+        <section class="k-container k-gap-4">
+            <div class="k-d-grid k-grid-cols-12">
+                <div class="k-col-span-12 k-col-span-sm-9">k-col-span-12 k-col-span-sm-9</div>
+                <div class="k-col-span-12 k-col-span-sm-3">k-col-span-12 k-col-span-sm-9</div>
+            </div>
+            <div class="k-d-grid k-grid-cols-sm-3">
+                <div>Column 1</div>
+                <div>Column 2</div>
+                <div>Column 3</div>
+            </div>
+        </section>
+        <br>
+        <span>Row/Column Gutter ("3" on Phone, and "6" on everything else)</span>
+        <section class="k-container k-gap-3 k-gap-md-6">
+            <div class="k-d-grid k-grid-cols-2 k-gap-3 k-gap-md-6">
+                <div>Column 1</div>
+                <div>Column 2</div>
+            </div>
+            <div class="k-d-grid k-grid-cols-3 k-gap-3 k-gap-md-6">
+                <div>Column 1</div>
+                <div>Column 2</div>
+                <div>Column 3</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
