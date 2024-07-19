@@ -40,3 +40,11 @@
 
     }
 }
+
+@mixin kendo-utils--flex-grid--flex-direction--responsive($key) {
+
+    // Flex direction responsive utility classes
+    $kendo-utils-flex-direction: k-map-get( $kendo-utils, "flex-direction" ) !default;
+    @include generate-utils( flex-#{$key}, flex-direction, $kendo-utils-flex-direction, $important: false );
+
+}
