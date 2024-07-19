@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.2.1...v9.0.0-dev.0) (2024-07-19)
+
+
+### Features
+
+* **material:** detach utils package ([e5f86d9](https://github.com/telerik/kendo-themes/commit/e5f86d9f7b273cd41b87f24642c8c652e0775af6))
+
+
+### BREAKING CHANGES
+
+* **material:** The utilities package is now decoupled from the themes package.
+
+Effective with the R3 2024 release, the utilities package is now
+independent of the themes package. This means that, moving forward,
+components will selectively import only the utilities they require,
+rather than the entire utilities package. This adjustment does not
+impact the styling of components but is designed to improve the system's
+flexibility and modularity.
+
+For developers using utility classes for custom layouts, you will now
+need to manually import the utilities as a separate stylesheet on your
+pages. For step-by-step instructions on how to do this, please visit:
+https://www.telerik.com/design-system/docs/utils/get-started/installation/
+
+
+
+
+
 ## [8.2.1](https://github.com/telerik/kendo-themes/compare/v8.2.0...v8.2.1) (2024-07-16)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.2.1...v9.0.0-dev.0) (2024-07-19)
+
+
+### Features
+
+* **utils:** implement responsive layout system ([f81250e](https://github.com/telerik/kendo-themes/commit/f81250ec30c701723d7b194edbee6877bf6caa44))
+
+
+
+
+
 # [8.2.0](https://github.com/telerik/kendo-themes/compare/v8.2.0-dev.0...v8.2.0) (2024-07-15)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils
