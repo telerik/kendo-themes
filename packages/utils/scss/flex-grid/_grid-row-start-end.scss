@@ -45,3 +45,15 @@
 
     }
 }
+
+@mixin kendo-utils--flex-grid--grid-row-start-end--responsive($key) {
+
+    // Grid row start responsive utility classes
+    $kendo-utils-grid-row-start: k-map-get( $kendo-utils, "grid-row-start" ) !default;
+    @include generate-utils( row-start-#{$key}, grid-row-start, $kendo-utils-grid-row-start, $important: false );
+
+    // Grid row end responsive utility classes
+    $kendo-utils-grid-row-end: k-map-get( $kendo-utils, "grid-row-end" ) !default;
+    @include generate-utils( row-end-#{$key}, grid-row-end, $kendo-utils-grid-row-end, $important: false );
+
+}
