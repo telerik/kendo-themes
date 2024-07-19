@@ -52,6 +52,7 @@
 }
 
 @mixin kendo-utils--flex-grid--responsive($key) {
+    @include kendo-utils--flex-grid--flex-direction--responsive($key);
     @include kendo-utils--flex-grid--gap--responsive($key);
     @include kendo-utils--flex-grid--grid-column-start-end--responsive($key);
     @include kendo-utils--flex-grid--grid-row-start-end--responsive($key);
