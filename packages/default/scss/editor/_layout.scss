@@ -50,6 +50,12 @@
         visibility: hidden;
     }
 
+    // Resizable tables
+    .k-editor-resize-wrap-element {
+        display: inline-block;
+        position: relative;
+    }
+
     .k-editor-resize-handle {
         width: $kendo-editor-resize-handle-size;
         height: $kendo-editor-resize-handle-size;
