@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.2...v9.0.0) (2024-07-29)
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+
+
+
+
 # [9.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.1...v9.0.0-dev.2) (2024-07-29)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap
