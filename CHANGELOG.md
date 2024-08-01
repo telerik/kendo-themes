@@ -3,6 +3,115 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.2...v9.0.0) (2024-07-29)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [9.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.1...v9.0.0-dev.2) (2024-07-29)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [9.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.0...v9.0.0-dev.1) (2024-07-22)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [9.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.2.1...v9.0.0-dev.0) (2024-07-19)
+
+
+### Features
+
+* **bootstrap:** detach utils package ([c2870e0](https://github.com/telerik/kendo-themes/commit/c2870e0c36c618a25f2c5776acc9bf5af707b4e3))
+* **classic:** detach utils package ([7b119ff](https://github.com/telerik/kendo-themes/commit/7b119ff846a4d5efe3a1abf0eec3a9e5b6560418))
+* **default:** detach utils package ([5d3910d](https://github.com/telerik/kendo-themes/commit/5d3910db126d9d70cec9c0fa2caaa04a1a981f65))
+* **fluent:** detach utils package ([69a3e9b](https://github.com/telerik/kendo-themes/commit/69a3e9b23714433a13ffb29ec04e094b1093d303))
+* **material:** detach utils package ([e5f86d9](https://github.com/telerik/kendo-themes/commit/e5f86d9f7b273cd41b87f24642c8c652e0775af6))
+* **utils:** implement responsive layout system ([f81250e](https://github.com/telerik/kendo-themes/commit/f81250ec30c701723d7b194edbee6877bf6caa44))
+
+
+### BREAKING CHANGES
+
+* **fluent:** The utilities package is now decoupled from the themes package.
+
+Effective with the R3 2024 release, the utilities package is now
+independent of the themes package. This means that, moving forward,
+components will selectively import only the utilities they require,
+rather than the entire utilities package. This adjustment does not
+impact the styling of components but is designed to improve the system's
+flexibility and modularity.
+
+For developers using utility classes for custom layouts, you will now
+need to manually import the utilities as a separate stylesheet on your
+pages. For step-by-step instructions on how to do this, please visit:
+https://www.telerik.com/design-system/docs/utils/get-started/installation/
+* **material:** The utilities package is now decoupled from the themes package.
+
+Effective with the R3 2024 release, the utilities package is now
+independent of the themes package. This means that, moving forward,
+components will selectively import only the utilities they require,
+rather than the entire utilities package. This adjustment does not
+impact the styling of components but is designed to improve the system's
+flexibility and modularity.
+
+For developers using utility classes for custom layouts, you will now
+need to manually import the utilities as a separate stylesheet on your
+pages. For step-by-step instructions on how to do this, please visit:
+https://www.telerik.com/design-system/docs/utils/get-started/installation/
+* **classic:** The utilities package is now decoupled from the themes package.
+
+Effective with the R3 2024 release, the utilities package is now
+independent of the themes package. This means that, moving forward,
+components will selectively import only the utilities they require,
+rather than the entire utilities package. This adjustment does not
+impact the styling of components but is designed to improve the system's
+flexibility and modularity.
+
+For developers using utility classes for custom layouts, you will now
+need to manually import the utilities as a separate stylesheet on your
+pages. For step-by-step instructions on how to do this, please visit:
+https://www.telerik.com/design-system/docs/utils/get-started/installation/
+* **bootstrap:** The utilities package is now decoupled from the themes package.
+
+Effective with the R3 2024 release, the utilities package is now
+independent of the themes package. This means that, moving forward,
+components will selectively import only the utilities they require,
+rather than the entire utilities package. This adjustment does not
+impact the styling of components but is designed to improve the system's
+flexibility and modularity.
+
+For developers using utility classes for custom layouts, you will now
+need to manually import the utilities as a separate stylesheet on your
+pages. For step-by-step instructions on how to do this, please visit:
+https://www.telerik.com/design-system/docs/utils/get-started/installation/
+* **default:** The utilities package is now decoupled from the themes package.
+
+Effective with the R3 2024 release, the utilities package is now
+independent of the themes package. This means that, moving forward,
+components will selectively import only the utilities they require,
+rather than the entire utilities package. This adjustment does not
+impact the styling of components but is designed to improve the system's
+flexibility and modularity.
+
+For developers using utility classes for custom layouts, you will now
+need to manually import the utilities as a separate stylesheet on your
+pages. For step-by-step instructions on how to do this, please visit:
+https://www.telerik.com/design-system/docs/utils/get-started/installation/
+
+
+
+
+
 ## [8.2.1](https://github.com/telerik/kendo-themes/compare/v8.2.0...v8.2.1) (2024-07-16)
 
 

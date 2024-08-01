@@ -29,3 +29,11 @@
 
     }
 }
+
+@mixin kendo-utils--flex-grid--grid-template-columns--responsive($key) {
+
+    // Grid template columns responsive utility classes
+    $kendo-utils-grid-template-columns: k-map-get( $kendo-utils, "grid-template-columns" ) !default;
+    @include generate-utils( grid-cols-#{$key}, grid-template-columns, $kendo-utils-grid-template-columns, $important: false );
+
+}

@@ -1,0 +1,28 @@
+@mixin kendo-utils--responsive-layout--col-gap() {
+
+    // Columns gap
+    $kendo-utils-col-gap: k-map-get( $kendo-utils, "gap" ) !default;
+
+    @each $key, $val in $kendo-utils-col-gap {
+        $_key: k-escape-class-name( $key );
+        .k-col-gap-#{$_key} {
+            --kendo-col-gap: #{$val};
+        }
+    }
+
+}
+
+@mixin kendo-utils--responsive-layout--col-gap--responsive($breakpoint) {
+
+    // Columns gap responsive
+    $kendo-utils-col-gap: k-map-get( $kendo-utils, "gap" ) !default;
+
+    @each $key, $val in $kendo-utils-col-gap {
+        $_key: k-escape-class-name( $key );
+        .k-col-gap-#{$breakpoint}-#{$_key} {
+            --kendo-col-gap: #{$val};
+        }
+    }
+}
+
+

@@ -1,0 +1,25 @@
+@import "./_container.scss";
+@import "./_row.scss";
+@import "./_col.scss";
+@import "./_col-gap.scss";
+
+
+@mixin kendo-utils--responsive-layout() {
+    @include kendo-utils--responsive-layout--container();
+    @include kendo-utils--responsive-layout--row();
+    @include kendo-utils--responsive-layout--col();
+    @include kendo-utils--responsive-layout--col-gap();
+
+    @each $key, $val in $kendo-breakpoints {
+        @include kendo-breakpoint-up($key) {
+            @include kendo-utils--responsive-layout--col--responsive($key);
+            @include kendo-utils--responsive-layout--col-gap--responsive($key);
+        }
+    }
+
+    @each $key, $val in $kendo-container-max-widths {
+        @include kendo-breakpoint-up($key) {
+            @include kendo-utils--responsive-layout--container--responsive($key, $val);
+        }
+    }
+}

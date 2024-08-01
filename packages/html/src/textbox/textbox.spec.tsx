@@ -65,6 +65,7 @@ export const Textbox = (
         prefix,
         suffix,
         separators = defaultProps.separators,
+        type,
         value,
         placeholder,
         size,
@@ -105,7 +106,7 @@ export const Textbox = (
                 {separators && <InputSeparator/>}
             </>
             }
-            <InputInnerInput placeholder={placeholder} value={value} />
+            <InputInnerInput placeholder={placeholder} value={value} type={type} />
             <InputValidationIcon
                 valid={valid}
                 invalid={invalid}

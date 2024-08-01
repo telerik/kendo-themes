@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.2...v9.0.0) (2024-07-29)
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+
+
+
+
+# [9.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.1...v9.0.0-dev.2) (2024-07-29)
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+
+
+
+
+# [9.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.0...v9.0.0-dev.1) (2024-07-22)
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+
+
+
+
+# [9.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v8.2.1...v9.0.0-dev.0) (2024-07-19)
+
+
+### Features
+
+* **bootstrap:** detach utils package ([c2870e0](https://github.com/telerik/kendo-themes/commit/c2870e0c36c618a25f2c5776acc9bf5af707b4e3))
+
+
+### BREAKING CHANGES
+
+* **bootstrap:** The utilities package is now decoupled from the themes package.
+
+Effective with the R3 2024 release, the utilities package is now
+independent of the themes package. This means that, moving forward,
+components will selectively import only the utilities they require,
+rather than the entire utilities package. This adjustment does not
+impact the styling of components but is designed to improve the system's
+flexibility and modularity.
+
+For developers using utility classes for custom layouts, you will now
+need to manually import the utilities as a separate stylesheet on your
+pages. For step-by-step instructions on how to do this, please visit:
+https://www.telerik.com/design-system/docs/utils/get-started/installation/
+
+
+
+
+
 ## [8.2.1](https://github.com/telerik/kendo-themes/compare/v8.2.0...v8.2.1) (2024-07-16)
 
 

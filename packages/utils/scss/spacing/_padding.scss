@@ -479,3 +479,12 @@
 
     }
 }
+
+@mixin kendo-utils--spacing--padding--responsive($key) {
+
+    // Padding responsive utility classes
+    $kendo-utils-padding: k-map-get( $kendo-utils, "padding" ) !default;
+    @include generate-utils( px-#{$key}, padding-inline, $kendo-utils-padding, $css-var: "spacing", $important: false );
+    @include generate-utils( py-#{$key}, padding-block, $kendo-utils-padding, $css-var: "spacing", $important: false );
+
+}
