@@ -3275,7 +3275,7 @@ This is equivalent to `height: 0.25rem;`.
 
 ### `.k-h-full`
 
-This is equivalent to `min-height: 100%;`.
+This is equivalent to `height: 100%;`.
 
 
 
@@ -6742,7 +6742,7 @@ This is equivalent to `width: 0.25rem;`.
 
 ### `.k-w-full`
 
-This is equivalent to `min-width: 100%;`.
+This is equivalent to `width: 100%;`.
 
 
 
