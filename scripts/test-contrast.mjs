@@ -49,7 +49,9 @@ const EXCLUDED_PAGES_TEXT = [
     // Loader with no panel does not cover contras requirements for its text
     `${TESTS_PATH}/loader/loader-container-overlay.html`,
     // Editor iframe test page is not actionable
-    `${TESTS_PATH}/editor/editor-iFrameContent.html`
+    `${TESTS_PATH}/editor/editor-iFrameContent.html`,
+    // Scheduler adaptive month event template text is not visible
+    `${TESTS_PATH}/scheduler/scheduler-adaptive-month.html`
 ];
 
 let count = {
