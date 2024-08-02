@@ -70,7 +70,7 @@ jobs:
       - name: Build themes for dist
         run: |
           npm run sass:flat
-          npm run dist:swatches
+          npm run sass:swatches
 
       - name: Determine correct version to publish
         run: |

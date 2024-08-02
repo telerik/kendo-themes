@@ -43,6 +43,7 @@
     "sass": "sass-build",
     "sass:standalone": "sass-build -c sass-standalone.config.js",
     "sass:swatches": "gulp dist:swatches && sass-build -c sass-swatches.config.js",
+    "sass:swatches:dist": "gulp dist:swatches",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
