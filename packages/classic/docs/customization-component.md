@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-valid-bg</td>
-    <td>Null</td>
+    <td></td>
     <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the valid items.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-valid-text</td>
-    <td>Color</td>
+    <td></td>
     <td><code>$kendo-color-success</code></td>
-    <td><span class="color-preview" style="background-color: #3ea44e"></span><code>#3ea44e</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the valid items.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-valid-border</td>
-    <td>Color</td>
+    <td></td>
     <td><code>$kendo-color-success</code></td>
-    <td><span class="color-preview" style="background-color: #3ea44e"></span><code>#3ea44e</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the valid items.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-valid-shadow</td>
-    <td>Null</td>
+    <td></td>
     <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the valid items.</div></div>
