@@ -4,7 +4,6 @@
 
 // Typography and utils
 @forward "./typography";
-@forward "./utils";
 @forward "./draggable";
 
 
@@ -167,7 +166,6 @@
 
 // Typography and utils
 @use "./typography" as *;
-@use "./utils" as *;
 @use "./draggable" as *;
 
 
@@ -356,7 +354,6 @@
 
     // Typography and utils
     @include typography-styles();
-    @include utils-styles();
 
     // Generic content
     @include icon-styles();
