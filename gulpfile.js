@@ -34,7 +34,7 @@ function flattenAll( cwds, options ) {
         if (fs.existsSync( file )) {
             fs.mkdirSync( output.path, { recursive: true } );
 
-            if (path.basename( cwd ) === 'fluent') {
+            if (path.basename( cwd ) === 'fluent' || path.basename( cwd ) === 'classic') {
                 fs.writeFileSync( path.resolve( output.path, output.filename), '@use "../scss/all.scss";');
             } else {
                 sassFlatten({ file, output, nodeModules });
