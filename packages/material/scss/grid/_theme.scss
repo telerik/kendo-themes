@@ -133,19 +133,6 @@
         }
     }
 
-    kendo-grid {
-        .k-grid-content-sticky {
-            border-color: $kendo-grid-sticky-border;
-            border-bottom-color: $kendo-grid-header-border;
-        }
-
-        .k-grid-row-sticky td,
-        .k-grid-row-sticky .k-table-td {
-            border-top-color: $kendo-grid-sticky-border;
-            border-bottom-color: $kendo-grid-sticky-border;
-        }
-    }
-
     .k-grid-header {
         .k-sorted,
         .k-link:hover {
