@@ -1,6 +1,6 @@
 @use "../core/_variables.scss" as *;
 @use "./_variables.scss" as *;
-@use "../core/typography/" as *;
+@use "../core/typography/_index.scss" as *;
 
 @mixin kendo-dock-manager--layout() {
 

@@ -1,4 +1,4 @@
-@use '../palettes' as *;
+@use '../palettes.scss' as *;
 
 @forward "@progress/kendo-theme-core/scss/color-system/functions.import.scss" with (
     $kendo-palettes: $kendo-fluent-palettes

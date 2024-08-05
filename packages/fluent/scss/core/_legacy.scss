@@ -1,4 +1,4 @@
-@use "./index" as *;
+@use "./_index.scss" as *;
 @forward "./elevation" with (
     $kendo-elevation: $kendo-elevation
 )

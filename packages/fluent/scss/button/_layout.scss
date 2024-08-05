@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "sass:math";
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-button--layout() {

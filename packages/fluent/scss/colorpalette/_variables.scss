@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 
 /// The font family of the ColorPalette.
 /// @group color-palette

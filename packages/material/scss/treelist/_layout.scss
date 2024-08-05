@@ -12,7 +12,7 @@
 
         tr.k-footer td,
         tr.k-footer-template + tr.k-footer-template td {
-            border-width: 0 0 $kendo-treelist-footer-row-border-width 0;
+            border-width: 0 0 $kendo-treelist-footer-row-border-width;
         }
     }
 

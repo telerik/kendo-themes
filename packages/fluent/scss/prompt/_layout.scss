@@ -1,5 +1,5 @@
 @use "./_variables.scss" as *;
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-prompt--layout {
 

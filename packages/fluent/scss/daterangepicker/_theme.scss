@@ -1,4 +1,4 @@
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 @use "../input/_variables.scss" as *;
 
 @mixin kendo-daterangepicker--theme() {

@@ -1,5 +1,5 @@
-@use "../core/" as *;
-@use '_variables' as *;
+@use "../core/_index.scss" as *;
+@use '_variables.scss' as *;
 
 @mixin kendo-menu--theme() {
     .k-menu:not(.k-context-menu) {
