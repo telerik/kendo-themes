@@ -1,5 +1,5 @@
-@use "../core/" as *;
-@use "../card/variables" as *;
+@use "../core/_index.scss" as *;
+@use "../card/_variables.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-timeline--theme() {

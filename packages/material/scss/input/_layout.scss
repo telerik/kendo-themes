@@ -70,7 +70,7 @@
 
         &::after {
             content: "";
-            border-width: 0 0 $_kendo-input-ripple-border-width 0;
+            border-width: 0 0 $_kendo-input-ripple-border-width;
             border-style: solid;
             border-color: inherit;
             border-radius: inherit;

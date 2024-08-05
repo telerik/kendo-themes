@@ -141,7 +141,7 @@
 
     // Toolbar
     .k-editor-toolbar {
-        border-width: 0 0 $kendo-toolbar-border-width 0;
+        border-width: 0 0 $kendo-toolbar-border-width;
         flex-shrink: 0;
 
         .k-editor-export {
@@ -396,7 +396,7 @@
 
         // Filebrowser toolbar
         .k-filebrowser-toolbar {
-            margin: k-spacing(4) 0 0 0;
+            margin: k-spacing(4) 0 0;
         }
 
         .k-upload {
@@ -423,7 +423,7 @@
             flex-flow: row wrap;
             height: 390px;
             max-height: 50vh;
-            margin: 0 0 k-spacing(4) 0;
+            margin: 0 0 k-spacing(4);
             padding-block: $kendo-padding-md-y;
             padding-inline: $kendo-padding-md-x;
             border-top-width: 0;

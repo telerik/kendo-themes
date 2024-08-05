@@ -1,13 +1,13 @@
 @use "sass:map";
 @use "sass:math";
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
 @use "../forms/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
 @use "../tabstrip/_variables.scss" as *;
 @use "./_variables.scss" as *;
-@use "../core/spacing" as *;
+@use "../core/spacing/_index.scss" as *;
 
 @mixin kendo-grid--layout() {
 

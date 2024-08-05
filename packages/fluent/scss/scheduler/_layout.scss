@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "./_variables.scss" as *;
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 
 @mixin kendo-scheduler--layout() {

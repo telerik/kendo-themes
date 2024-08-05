@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 
 /// The first base series color and its light and dark shades.
 /// @group charts

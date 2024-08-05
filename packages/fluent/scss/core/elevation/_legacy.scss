@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "./index" as *;
+@use "./index.scss" as *;
 
 /// Shadow for cards and grid item thumbnails.
 /// Equivalent to fluent depth 4.

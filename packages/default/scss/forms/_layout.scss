@@ -328,7 +328,7 @@
 
 
     .k-edit-label {
-        margin: 0 0 k-spacing(4) 0;
+        margin: 0 0 k-spacing(4);
         // TODO: do we need the input variable?
         padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
         width: 30%;
@@ -338,7 +338,7 @@
         clear: both;
     }
     .k-edit-field {
-        margin: 0 0 k-spacing(4) 0;
+        margin: 0 0 k-spacing(4);
         width: 65%;
         float: right;
         clear: right;

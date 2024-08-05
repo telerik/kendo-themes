@@ -1,6 +1,6 @@
 @use "sass:map";
 @use "sass:math";
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 @use "../grid/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
 @use "../list/_variables.scss" as *;

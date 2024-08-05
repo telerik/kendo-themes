@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 
 @mixin kendo-menu-button--layout() {

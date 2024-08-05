@@ -1,23 +1,23 @@
 @use "sass:map";
 
 // Swatch
-@use "./color-system/swatch" as *;
+@use "./color-system/_swatch.scss" as *;
 
 // Elevation
-@use "./elevation" as *;
-@forward "./elevation/legacy";
+@use "./elevation/_index.scss" as *;
+@forward "./elevation/_legacy.scss";
 
 // Typography
-@use "./typography/" as *;
+@use "./typography/_index.scss" as *;
 
 // Spacing
-@use "./spacing" as *;
+@use "./spacing/_index.scss" as *;
 
 // Radii
-@use "./border-radii/" as *;
+@use "./border-radii/_index.scss" as *;
 
 // Variables
-@forward "./variables";
+@forward "./_variables.scss";
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
     $kendo-enable-color-system: $kendo-enable-color-system !default,
@@ -67,10 +67,10 @@
     $kendo-border-radii: $kendo-border-radii !default
 );
 
-@forward "./color-system/swatch-legacy";
+@forward "./color-system/_swatch-legacy.scss";
 
 // Module System
-@use "./module-system/" as module;
+@use "./module-system/index.scss" as module;
 
 $components: null !default;
 
