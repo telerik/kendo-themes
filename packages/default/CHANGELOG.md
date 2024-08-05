@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v9.0.0...v9.0.1-dev.0) (2024-08-05)
+
+
+### Bug Fixes
+
+* **editor:** table resizing tool misalignment in non-iframe mode ([6cf8e0f](https://github.com/telerik/kendo-themes/commit/6cf8e0ff57b88e10ad18a02baf72fa6cbeed4641))
+* **window:** long titles are not truncated ([e71a3fe](https://github.com/telerik/kendo-themes/commit/e71a3fea3e569414952511872b23143f675b86d1))
+
+
+
+
+
 # [9.0.0](https://github.com/telerik/kendo-themes/compare/v9.0.0-dev.2...v9.0.0) (2024-07-29)
 
 **Note:** Version bump only for package @progress/kendo-theme-default
