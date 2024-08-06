@@ -6,10 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {
-    orientation: "horizontal"
-};
-
 export type KendoSchedulerGroupProps = {
     orientation?: "horizontal" | "vertical";
 };
@@ -19,7 +15,7 @@ export const SchedulerGroup = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
+        orientation = "horizontal",
         ...other
     } = props;
 
@@ -41,7 +37,6 @@ export const SchedulerGroup = (
 
 SchedulerGroup.states = states;
 SchedulerGroup.options = options;
-SchedulerGroup.defaultProps = defaultProps;
 SchedulerGroup.className = className;
 
 export default SchedulerGroup;

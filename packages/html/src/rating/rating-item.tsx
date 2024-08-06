@@ -19,11 +19,6 @@ export type RatingItemProps = {
     dir?: "rtl" | "ltr";
 };
 
-const defaultProps = {
-    iconType: "solid",
-};
-
-
 export const RatingItem = (
     props: RatingItemState & RatingItemProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
@@ -32,7 +27,7 @@ export const RatingItem = (
         focus,
         selected,
         disabled,
-        iconType,
+        iconType = "solid",
         dir,
         ...other
     } = props;
@@ -80,6 +75,5 @@ export const RatingItem = (
 RatingItem.states = states;
 RatingItem.options = options;
 RatingItem.className = RATINGITEM_CLASSNAME;
-RatingItem.defaultProps = defaultProps;
 
 export default RatingItem;

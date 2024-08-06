@@ -31,7 +31,6 @@ export type FontIconProps = FontIconOptions & {
     flip?: null | 'v' | 'h' | 'both';
 }
 
-const defaultProps = {};
 
 export const FontIcon = (
     props: FontIconProps & React.HTMLAttributes<HTMLSpanElement>
@@ -73,6 +72,5 @@ export const FontIcon = (
 FontIcon.states = states;
 FontIcon.options = options;
 FontIcon.className = FONTICON_CLASSNAME;
-FontIcon.defaultProps = defaultProps;
 
 export default FontIcon;

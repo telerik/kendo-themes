@@ -10,11 +10,7 @@ const states = [];
 const options = {};
 
 export type KendoColorInputOptions = {
-    mode: 'rgba' | 'rgb' | 'hsva' | 'hsv' | 'hex';
-};
-
-const defaultProps = {
-    mode: 'rgba'
+    mode?: 'rgba' | 'rgb' | 'hsva' | 'hsv' | 'hex';
 };
 
 export const ColorInput = (
@@ -23,7 +19,7 @@ export const ColorInput = (
 
 ) => {
     const {
-        mode = defaultProps.mode,
+        mode = "rgba"
     } = props;
 
     return (
@@ -118,6 +114,5 @@ export const ColorInput = (
 ColorInput.states = states;
 ColorInput.options = options;
 ColorInput.className = COLOR_INPUT_CLASSNAME;
-ColorInput.defaultProps = defaultProps;
 
 export default ColorInput;

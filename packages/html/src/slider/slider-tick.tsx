@@ -14,17 +14,13 @@ export type KendoSliderTickProps = {
     text?: string;
 };
 
-const defaultProps = {
-    label: false
-};
-
 export const SliderTick = (
     props: KendoSliderTickProps &
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
         style,
-        label = defaultProps.label,
+        label = false,
         orientation,
         large,
         text,
@@ -50,6 +46,5 @@ export const SliderTick = (
 SliderTick.states = states;
 SliderTick.options = options;
 SliderTick.className = SLIDER_TICK_CLASSNAME;
-SliderTick.defaultProps = defaultProps;
 
 export default SliderTick;

@@ -10,16 +10,12 @@ export type KendoGanttTaskProps = {
     type?: "single" | "milestone" | "summary";
 };
 
-const defaultProps = {
-    type: "single"
-};
-
 export const GanttTask = (
     props: KendoGanttTaskProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        type = defaultProps.type,
+        type = "single",
         ...other
     } = props;
 
@@ -43,6 +39,5 @@ export const GanttTask = (
 GanttTask.states = states;
 GanttTask.options = options;
 GanttTask.className = GANTTTASK_CLASSNAME;
-GanttTask.defaultProps = defaultProps;
 
 export default GanttTask;

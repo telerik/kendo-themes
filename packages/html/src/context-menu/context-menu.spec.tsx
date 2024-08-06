@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const ContextMenu = (
     props: KendoMenuListOptions &
         React.HTMLAttributes<HTMLUListElement>
@@ -34,6 +32,5 @@ export const ContextMenu = (
 ContextMenu.states = states;
 ContextMenu.options = options;
 ContextMenu.className = CONTEXTMENU_CLASSNAME;
-ContextMenu.defaultProps = defaultProps;
 
 export default ContextMenu;

@@ -27,22 +27,16 @@ const defaultToolbar =
         </TaskBoardToolbar>
     </>;
 
-const defaultProps = {
-    toolbar: defaultToolbar,
-    pane: false,
-    panePosition: "end",
-};
-
 export type KendoTaskBoardState = { [K in (typeof states)[number]]?: boolean };
 
 export const TaskBoard = (
     props: KendoTaskBoardProps & KendoTaskBoardState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        toolbar = defaultToolbar,
+        panePosition = "end",
+        pane = false,
         disabled,
-        toolbar = defaultProps.toolbar,
-        panePosition = defaultProps.panePosition,
-        pane,
         ...other
     } = props;
 
@@ -89,6 +83,5 @@ export const TaskBoard = (
 TaskBoard.states = states;
 TaskBoard.options = options;
 TaskBoard.className = TASKBOARD_CLASSNAME;
-TaskBoard.defaultProps = defaultProps;
 
 export default TaskBoard;

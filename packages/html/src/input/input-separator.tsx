@@ -6,16 +6,12 @@ export type InputSeparatorProps = {
     direction?: "horizontal" | "vertical";
 };
 
-const defaultProps = {
-    direction: "vertical"
-};
-
 export const InputSeparator = (props:
     React.HTMLAttributes<HTMLSpanElement> &
     InputSeparatorProps
 ) => {
     const {
-        direction = defaultProps.direction,
+        direction = "vertical",
         ...other
     } = props;
 

@@ -29,17 +29,13 @@ const defaultToolbarItems = [
     </ToolbarItem>
 ];
 
-const defaultProps = {
-    toolbarItems: defaultToolbarItems
-};
-
 export const ImageEditorToolbar = (
     props: KendoToolbarProps &
         KendoImageEditorToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        toolbarItems = defaultProps.toolbarItems,
+        toolbarItems = defaultToolbarItems,
         ...other
     } = props;
 
@@ -59,6 +55,5 @@ export const ImageEditorToolbar = (
 ImageEditorToolbar.states = states;
 ImageEditorToolbar.options = options;
 ImageEditorToolbar.className = IMAGEEDITORTOOLBAR_CLASSNAME;
-ImageEditorToolbar.defaultProps = defaultProps;
 
 export default ImageEditorToolbar;

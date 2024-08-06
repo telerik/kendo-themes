@@ -6,8 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const WizardSteps = (
     props: & React.HTMLAttributes<HTMLDivElement>
 ) => (
@@ -24,6 +22,5 @@ export const WizardSteps = (
 WizardSteps.states = states;
 WizardSteps.options = options;
 WizardSteps.className = WIZZARDSTEPS_CLASSNAME;
-WizardSteps.defaultProps = defaultProps;
 
 export default WizardSteps;

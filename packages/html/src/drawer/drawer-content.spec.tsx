@@ -7,10 +7,6 @@ const states = [];
 
 const options = { };
 
-const defaultProps = {
-
-} as const;
-
 export const DrawerContent = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -32,6 +28,5 @@ export const DrawerContent = (
 DrawerContent.states = states;
 DrawerContent.options = options;
 DrawerContent.className = DRAWERCONTENT_CLASSNAME;
-DrawerContent.defaultProps = defaultProps;
 
 export default DrawerContent;

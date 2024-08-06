@@ -9,8 +9,6 @@ const states = [
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoChatQuickReplyProps = {
   text?: string;
 };
@@ -45,6 +43,5 @@ export const ChatQuickReply = (
 ChatQuickReply.states = states;
 ChatQuickReply.options = options;
 ChatQuickReply.className = CHATQUICKREPLY_CLASSNAME;
-ChatQuickReply.defaultProps = defaultProps;
 
 export default ChatQuickReply;

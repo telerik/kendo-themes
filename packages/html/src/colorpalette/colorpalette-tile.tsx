@@ -17,7 +17,6 @@ export type KendoColorPaletteTileProps = {
 
 export type KendoColorPaletteTileState = { [K in (typeof states)[number]]?: boolean };
 
-
 export const ColorPaletteTile = (
     props: KendoColorPaletteTileProps &
         KendoColorPaletteTileState &

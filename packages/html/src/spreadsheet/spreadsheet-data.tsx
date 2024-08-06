@@ -11,8 +11,6 @@ export type KendoSpreadsheetDataProps = {
     activeCellIndex?: number;
 };
 
-const defaultProps = {};
-
 export const SpreadsheetData = (
     props: KendoSpreadsheetDataProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -53,6 +51,5 @@ export const SpreadsheetData = (
 SpreadsheetData.states = states;
 SpreadsheetData.options = options;
 SpreadsheetData.className = SPREADSHEETDATA_CLASSNAME;
-SpreadsheetData.defaultProps = defaultProps;
 
 export default SpreadsheetData;

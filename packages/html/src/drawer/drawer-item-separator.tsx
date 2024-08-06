@@ -7,8 +7,6 @@ const states = [];
 
 const options = { };
 
-const defaultProps = {} as const;
-
 export const DrawerItemSeparator = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -29,6 +27,5 @@ export const DrawerItemSeparator = (
 DrawerItemSeparator.states = states;
 DrawerItemSeparator.options = options;
 DrawerItemSeparator.className = DRAWERITEMSEPARATOR_CLASSNAME;
-DrawerItemSeparator.defaultProps = defaultProps;
 
 export default DrawerItemSeparator;

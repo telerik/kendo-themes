@@ -42,20 +42,14 @@ export type KendoSearchboxProps = KendoSearchboxOptions & {
 
 export type KendoSearchboxState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    showIcon: true,
-    icon: "search",
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
-};
-
 export const Searchbox = (
     props: KendoSearchboxProps &
         KendoSearchboxState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        showIcon = true,
+        icon = "search",
         value,
         placeholder,
         size,
@@ -68,8 +62,6 @@ export const Searchbox = (
         required,
         loading,
         disabled,
-        showIcon = defaultProps.showIcon,
-        icon = defaultProps.icon,
         ...other
     } = props;
 
@@ -101,6 +93,5 @@ export const Searchbox = (
 Searchbox.states = states;
 Searchbox.options = options;
 Searchbox.className = SEARCHBOX_CLASSNAME;
-Searchbox.defaultProps = defaultProps;
 
 export default Searchbox;

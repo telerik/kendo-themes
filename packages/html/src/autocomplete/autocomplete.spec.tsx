@@ -31,12 +31,6 @@ const options = {
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
 
 export type KendoAutocompleteOptions = {
     size?: (typeof options.size)[number] | null;
@@ -66,7 +60,7 @@ export const Autocomplete = (
     const {
         prefix,
         suffix,
-        separators = defaultProps.separators,
+        separators = true,
         value,
         placeholder,
         size,
@@ -160,6 +154,5 @@ export const Autocomplete = (
 Autocomplete.states = states;
 Autocomplete.options = options;
 Autocomplete.className = AUTOCOMPLETE_CLASSNAME;
-Autocomplete.defaultProps = defaultProps;
 
 export default Autocomplete;

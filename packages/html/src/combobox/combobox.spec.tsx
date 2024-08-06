@@ -27,13 +27,6 @@ const states = [
     States.readonly
 ];
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
-
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
@@ -66,9 +59,9 @@ export const Combobox = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        separators = true,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         value,
         placeholder,
         size,
@@ -169,6 +162,5 @@ export const Combobox = (
 Combobox.states = states;
 Combobox.options = options;
 Combobox.className = COMBOBOX_CLASSNAME;
-Combobox.defaultProps = defaultProps;
 
 export default Combobox;

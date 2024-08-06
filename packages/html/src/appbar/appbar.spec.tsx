@@ -20,7 +20,6 @@ const options = {
         ThemeColor.inverse
     ],
 };
-const defaultProps = {};
 
 export type KendoAppbarOptions = {
   themeColor?: (typeof options.themeColor)[number] | null;
@@ -65,6 +64,5 @@ export const Appbar = (
 Appbar.states = states;
 Appbar.options = options;
 Appbar.className = APPBAR_CLASSNAME;
-Appbar.defaultProps = defaultProps;
 
 export default Appbar;

@@ -5,7 +5,6 @@ export const TIMELINECARDCALLOUT_CLASSNAME = `k-timeline-card-callout`;
 
 const states = [];
 
-const defaultProps = {};
 
 export const TimelineCardCallout = (
     props:
@@ -30,6 +29,5 @@ export const TimelineCardCallout = (
 
 TimelineCardCallout.states = states;
 TimelineCardCallout.className = TIMELINECARDCALLOUT_CLASSNAME;
-TimelineCardCallout.defaultProps = defaultProps;
 
 export default TimelineCardCallout;

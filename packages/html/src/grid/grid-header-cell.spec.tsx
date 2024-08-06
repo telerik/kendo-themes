@@ -22,10 +22,6 @@ export type KendoGridHeaderCellProps = KendoTableThProps & {
     sortOrder?: number;
 };
 
-const defaultProps = {
-    sortIcon: "sort-asc-small"
-};
-
 export type KendoGridHeaderCellState = { [K in (typeof states)[number]]?: boolean };
 
 export const GridHeaderCell = (
@@ -34,6 +30,7 @@ export const GridHeaderCell = (
         React.HTMLAttributes<HTMLTableCellElement>
 ) => {
     const {
+        sortIcon = "sort-asc-small",
         menu,
         sortable,
         filterable,
@@ -43,7 +40,6 @@ export const GridHeaderCell = (
         hover,
         focus,
         active,
-        sortIcon = defaultProps.sortIcon,
         sortOrder,
         ...others
     } = props;
@@ -105,6 +101,5 @@ export const GridHeaderCell = (
 
 GridHeaderCell.states = states;
 GridHeaderCell.className = GRIDHEADERCELL_CLASSNAME;
-GridHeaderCell.defaultProps = defaultProps;
 
 export default GridHeaderCell;

@@ -14,10 +14,6 @@ const states = [
 
 const options = {};
 
-const defaultProps = {
-    imgPath: "/packages/html/assets/captcha.jpg",
-};
-
 export type KendoCaptchaProps = {
     value?: string;
     imgPath?: string;
@@ -31,12 +27,12 @@ export const Captcha = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        imgPath = "/packages/html/assets/captcha.jpg",
         value,
         valid,
         invalid,
         loading,
         disabled,
-        imgPath = defaultProps.imgPath,
         ...other
     } = props;
 
@@ -91,6 +87,5 @@ export const Captcha = (
 Captcha.states = states;
 Captcha.options = options;
 Captcha.className = CAPTCHA_CLASSNAME;
-Captcha.defaultProps = defaultProps;
 
 export default Captcha;

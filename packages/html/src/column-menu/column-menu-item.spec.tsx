@@ -15,8 +15,6 @@ export type KendoColumnMenuItemProps = {
     icon?: string;
 };
 
-const defaultProps = {};
-
 export type KendoColumnMenuItemState = { [K in (typeof states)[number]]?: boolean };
 
 export const ColumnMenuItem = (
@@ -51,6 +49,5 @@ export const ColumnMenuItem = (
 ColumnMenuItem.states = states;
 ColumnMenuItem.options = options;
 ColumnMenuItem.className = COLUMNMENUITEM_CLASSNAME;
-ColumnMenuItem.defaultProps = defaultProps;
 
 export default ColumnMenuItem;

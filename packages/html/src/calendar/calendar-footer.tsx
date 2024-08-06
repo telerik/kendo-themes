@@ -12,18 +12,13 @@ export type KendoCalendarFooterProps = {
     calendarFooterText?: string;
 };
 
-const defaultProps = {
-    size: Size.medium,
-    calendarFooterText: "Tuesday, October 12, 2021"
-};
-
 export const CalendarFooter = (
     props: React.HTMLAttributes<HTMLDivElement> &
         KendoCalendarFooterProps
 ) => {
     const {
-        size = defaultProps.size,
-        calendarFooterText = defaultProps.calendarFooterText,
+        size = Size.medium,
+        calendarFooterText = "Tuesday, October 12, 2021",
         ...other
     } = props;
 
@@ -36,6 +31,5 @@ export const CalendarFooter = (
 
 CalendarFooter.options = options;
 CalendarFooter.className = CALENDARFOOTER_CLASSNAME;
-CalendarFooter.defaultProps = defaultProps;
 
 export default CalendarFooter;

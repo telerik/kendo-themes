@@ -23,17 +23,13 @@ const defaultHeader =
         </div>
     </>;
 
-const defaultProps = {
-    header: defaultHeader,
-};
-
 export type KendoTaskBoardColumnState = { [K in (typeof states)[number]]?: boolean };
 
 export const TaskBoardColumn = (
     props: KendoTaskBoardColumnProps & KendoTaskBoardColumnState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        header = defaultProps.header,
+        header = defaultHeader,
         edit,
         ...other
     } = props;
@@ -65,6 +61,5 @@ export const TaskBoardColumn = (
 TaskBoardColumn.states = states;
 TaskBoardColumn.options = options;
 TaskBoardColumn.className = TASKBOARDCOLUMN_CLASSNAME;
-TaskBoardColumn.defaultProps = defaultProps;
 
 export default TaskBoardColumn;

@@ -18,10 +18,6 @@ export type KendoColorPaletteProps = {
 
 export type KendoColorPaletteState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    columns: 10
-};
-
 export const ColorPalette = (
     props: KendoColorPaletteProps &
         KendoColorPaletteState &
@@ -29,7 +25,7 @@ export const ColorPalette = (
 ) => {
     const {
         palette,
-        columns = defaultProps.columns,
+        columns = 10,
         tileSize,
         disabled,
         ...other
@@ -84,6 +80,5 @@ export const ColorPalette = (
 ColorPalette.states = states;
 ColorPalette.options = options;
 ColorPalette.className = COLORPALETTE_CLASSNAME;
-ColorPalette.defaultProps = defaultProps;
 
 export default ColorPalette;

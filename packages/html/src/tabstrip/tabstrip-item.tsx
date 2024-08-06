@@ -20,16 +20,13 @@ export type KendoTabStripItemProps = {
 
 export type KendoTabStripItemState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    value: "Item"
-};
-
 export const TabStripItem = (
     props: KendoTabStripItemProps &
         KendoTabStripItemState &
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
+        value = "Item",
         dragging,
         active,
         hover,
@@ -38,7 +35,6 @@ export const TabStripItem = (
         children,
         first,
         last,
-        value = defaultProps.value,
         ...other
     } = props;
 
@@ -69,6 +65,5 @@ export const TabStripItem = (
 TabStripItem.states = states;
 TabStripItem.options = options;
 TabStripItem.className = TABSTRIPITEM_CLASSNAME;
-TabStripItem.item = defaultProps;
 
 export default TabStripItem;

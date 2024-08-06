@@ -18,24 +18,19 @@ export type KendoOrgchartNodeProps = {
     avatarType?: string;
 };
 
-const defaultProps = {
-    buttonIcon: 'plus',
-    details: true,
-};
-
 export const OrgchartNode = (
     props: KendoOrgchartNodeProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        buttonIcon = 'plus',
+        details = true,
         title,
         subtitle,
-        details = defaultProps.details,
         color,
         lineBottom,
         lineTop,
         button,
-        buttonIcon = defaultProps.buttonIcon,
         avatar,
         avatarType,
         ...other

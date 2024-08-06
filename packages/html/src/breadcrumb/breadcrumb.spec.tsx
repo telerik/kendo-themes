@@ -17,19 +17,14 @@ export type KendoBreadcrumbProps = {
 
 export type KendoBreadcrumbState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    collapsing: 'auto',
-    size: Size.medium
-};
-
 export const Breadcrumb = (
     props: KendoBreadcrumbProps &
     KendoBreadcrumbState &
         React.HTMLAttributes<HTMLElement>
 ) => {
     const {
-        size = defaultProps.size,
-        collapsing = defaultProps.collapsing,
+        size = Size.medium,
+        collapsing = "auto",
         focus,
         ...other
     } = props;
@@ -58,6 +53,5 @@ export const Breadcrumb = (
 Breadcrumb.states = states;
 Breadcrumb.options = options;
 Breadcrumb.className = BREADCRUMB_CLASSNAME;
-Breadcrumb.defaultProps = defaultProps;
 
 export default Breadcrumb;

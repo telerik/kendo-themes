@@ -24,21 +24,11 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    flow: "vertical",
-    affixesOrientation: "horizontal",
-    resize: "both",
-    separators: true
-};
-
 export type KendoTextareaOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
     fillMode?: (typeof options.fillMode)[number] | null;
-    resize: "x" | "y" | "both" | "none";
+    resize?: "x" | "y" | "both" | "none";
 };
 
 export type KendoTextareaProps = KendoTextareaOptions & {
@@ -60,9 +50,12 @@ export const Textarea = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        flow = "vertical",
+        affixesOrientation = "horizontal",
+        resize = "both",
+        separators = true,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         rows,
         value,
         placeholder,
@@ -75,9 +68,6 @@ export const Textarea = (
         invalid,
         required,
         disabled,
-        flow = defaultProps.flow,
-        affixesOrientation,
-        resize = defaultProps.resize,
         ...other
     } = props;
 
@@ -151,6 +141,5 @@ export const Textarea = (
 Textarea.states = states;
 Textarea.options = options;
 Textarea.className = TEXTAREA_CLASSNAME;
-Textarea.defaultProps = defaultProps;
 
 export default Textarea;

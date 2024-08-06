@@ -15,26 +15,24 @@ export type KendoWizardStepProps = {
 
 export type KendoWizardStepState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    buttons: (
-        <>
-            <span className="k-wizard-buttons-left">
-                <span className="k-wizard-pager">Step 2 of 3</span>
-            </span>
-            <span className="k-wizard-buttons-right">
-                <Button>Previous</Button>
-                <Button themeColor="primary">Next</Button>
-            </span>
-        </>
-    ),
-};
+const defaultButtons = (
+    <>
+        <span className="k-wizard-buttons-left">
+            <span className="k-wizard-pager">Step 2 of 3</span>
+        </span>
+        <span className="k-wizard-buttons-right">
+            <Button>Previous</Button>
+            <Button themeColor="primary">Next</Button>
+        </span>
+    </>
+);
 
 export const WizardStep = (
     props: KendoWizardStepProps & KendoWizardStepState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
         focus,
-        buttons,
+        buttons = defaultButtons,
         ...other
     } = props;
 
@@ -63,6 +61,5 @@ export const WizardStep = (
 WizardStep.states = states;
 WizardStep.options = options;
 WizardStep.className = WIZZARDSTEP_CLASSNAME;
-WizardStep.defaultProps = defaultProps;
 
 export default WizardStep;

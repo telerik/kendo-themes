@@ -11,12 +11,6 @@ const states = [
 
 const options = {};
 
-const defaultProps = {
-    resizable: 'vertical',
-    eventPrefix: <Icon icon="arrow-rotate-cw" />,
-    eventSuffix: <><a href="#" className="k-link k-event-delete"><Icon icon="x" /></a></>
-} as const;
-
 export type KendoSchedulerEventProps = {
     inverse?: boolean;
     ongoing?: boolean;
@@ -34,15 +28,15 @@ export const SchedulerEvent = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        eventPrefix = <Icon icon="arrow-rotate-cw" />,
+        eventSuffix = <a href="#" className="k-link k-event-delete"><Icon icon="x" /></a>,
+        resizable = 'vertical',
         inverse,
         ongoing,
         multiDay,
-        resizable = defaultProps.resizable,
         hover,
         focus,
         selected,
-        eventPrefix = defaultProps.eventPrefix,
-        eventSuffix = defaultProps.eventSuffix,
         ...others
     } = props;
 
@@ -99,7 +93,6 @@ export const SchedulerEvent = (
 
 SchedulerEvent.states = states;
 SchedulerEvent.options = options;
-SchedulerEvent.defaultProps = defaultProps;
 SchedulerEvent.className = className;
 
 export default SchedulerEvent;

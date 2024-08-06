@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const FileManagerToolbar = (
     props: KendoToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -34,6 +32,5 @@ export const FileManagerToolbar = (
 FileManagerToolbar.states = states;
 FileManagerToolbar.options = options;
 FileManagerToolbar.className = FILEMANAGERTOOLBAR_CLASSNAME;
-FileManagerToolbar.defaultProps = defaultProps;
 
 export default FileManagerToolbar;

@@ -11,9 +11,6 @@ export type KendoGanttProps = {
     footerToolbar?: React.JSX.Element;
 };
 
-const defaultProps = {
-};
-
 export const Gantt = (
     props: KendoGanttProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -42,6 +39,5 @@ export const Gantt = (
 Gantt.states = states;
 Gantt.options = options;
 Gantt.className = GANTT_CLASSNAME;
-Gantt.defaultProps = defaultProps;
 
 export default Gantt;

@@ -10,7 +10,6 @@ export type KendoFilterPreviewProps = {
     fields?: Array<{name: string, value: string}>;
 }
 
-const defaultProps = {};
 
 export const FilterPreview = (
     props: KendoFilterPreviewProps &
@@ -37,7 +36,6 @@ export const FilterPreview = (
 
 FilterPreview.states = states;
 FilterPreview.options = options;
-FilterPreview.defaultProps = defaultProps;
 FilterPreview.className = FILTER_PREVIEW_CLASSNAME;
 
 export default FilterPreview;

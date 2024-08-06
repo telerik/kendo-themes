@@ -9,8 +9,6 @@ const states = [
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoListViewItemState = { [K in (typeof states)[number]]?: boolean };
 
 export const ListViewItem = (
@@ -42,6 +40,5 @@ export const ListViewItem = (
 ListViewItem.states = states;
 ListViewItem.options = options;
 ListViewItem.className = LISTVIEWITEM_CLASSNAME;
-ListViewItem.defaultProps = defaultProps;
 
 export default ListViewItem;

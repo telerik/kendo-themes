@@ -12,16 +12,12 @@ export type KendoChipListOptions = {
   size?: (typeof options.size)[number] | null;
 };
 
-const defaultProps = {
-    size: Size.medium
-};
-
 export const ChipList = (
     props: KendoChipListOptions &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = Size.medium,
         ...other
     } = props;
 
@@ -44,6 +40,5 @@ export const ChipList = (
 ChipList.states = states;
 ChipList.options = options;
 ChipList.className = CHIPLIST_CLASSNAME;
-ChipList.defaultProps = defaultProps;
 
 export default ChipList;

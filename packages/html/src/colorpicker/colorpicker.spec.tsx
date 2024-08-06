@@ -46,19 +46,13 @@ export type KendoColorPickerProps = KendoColorPickerOptions & {
 
 export type KendoColorPickerState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    arrowIconName: 'caret-alt-down',
-    size: Picker.defaultProps.size,
-    rounded: Picker.defaultProps.rounded,
-    fillMode: Picker.defaultProps.fillMode
-};
-
 export const ColorPicker = (
     props: KendoColorPickerProps &
         KendoColorPickerState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        arrowIconName = 'caret-alt-down',
         prefix,
         suffix,
         value,
@@ -73,7 +67,6 @@ export const ColorPicker = (
         required,
         disabled,
         valueIconName,
-        arrowIconName = defaultProps.arrowIconName,
         popup,
         opened,
         ...other
@@ -134,6 +127,5 @@ export const ColorPicker = (
 ColorPicker.states = states;
 ColorPicker.options = options;
 ColorPicker.className = COLORPICKER_CLASSNAME;
-ColorPicker.defaultProps = defaultProps;
 
 export default ColorPicker;

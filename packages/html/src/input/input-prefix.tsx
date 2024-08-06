@@ -6,16 +6,12 @@ export type KendoInputPrefixProps = {
     direction?: "horizontal" | "vertical";
 };
 
-const defaultProps = {
-    direction: "horizontal"
-};
-
 export const InputPrefix = (props:
     KendoInputPrefixProps &
     React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        direction = defaultProps.direction,
+        direction = "horizontal",
         ...other
     } = props;
 

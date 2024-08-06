@@ -27,25 +27,20 @@ export type KendoColorEditorProps = {
 
 export type KendoColorEditorState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    view: 'gradient',
-    palette: PALETTEPRESETS.office
-} as const;
-
 export const ColorEditor = (
     props: KendoColorEditorProps &
         KendoColorEditorState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        view = defaultProps.view,
+        view = "gradient",
+        palette = PALETTEPRESETS.office,
         color,
         currentColor,
         focus,
         focusView,
         dir,
         group,
-        palette = defaultProps.palette
     } = props;
 
     return (
@@ -87,6 +82,5 @@ export const ColorEditor = (
 ColorEditor.states = states;
 ColorEditor.options = options;
 ColorEditor.className = COLOREDITOR_CLASSNAME;
-ColorEditor.defaultProps = defaultProps;
 
 export default ColorEditor;

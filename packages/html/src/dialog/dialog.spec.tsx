@@ -14,11 +14,6 @@ const options = {
     ],
 };
 
-const defaultProps = {
-    actionButtonsAlign: "stretched",
-    modal: true
-} as const;
-
 export type KendoDialogOptions = {
   themeColor?: (typeof options.themeColor)[number] | null;
 };
@@ -36,12 +31,12 @@ export const Dialog = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        actionButtonsAlign = "stretched",
+        modal = true,
         title,
         actions,
         themeColor,
         actionButtons,
-        actionButtonsAlign = defaultProps.actionButtonsAlign,
-        modal = defaultProps.modal,
         ...other
     } = props;
 
@@ -86,6 +81,5 @@ export const Dialog = (
 Dialog.states = states;
 Dialog.options = options;
 Dialog.className = DIALOG_CLASSNAME;
-Dialog.defaultProps = defaultProps;
 
 export default Dialog;

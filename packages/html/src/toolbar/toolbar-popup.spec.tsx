@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const ToolbarPopup = (
     props: React.HTMLAttributes<HTMLElement>
 ) => {
@@ -30,6 +28,5 @@ export const ToolbarPopup = (
 ToolbarPopup.states = states;
 ToolbarPopup.options = options;
 ToolbarPopup.className = TOOLBARPOPUP_CLASSNAME;
-ToolbarPopup.defaultProps = defaultProps;
 
 export default ToolbarPopup;

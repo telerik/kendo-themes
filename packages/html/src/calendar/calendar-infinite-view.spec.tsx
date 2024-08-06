@@ -13,26 +13,17 @@ export type KendoCalendarInfiniteViewProps = {
     weekdayCellsText?: string[];
 };
 
-const defaultProps = {
-    orientation: 'vertical',
-    calendarView: 'month',
-    headerText: 'April 2018',
-    showWeekdays: true,
-    showNavigationButtons: false
-};
-
-
 export const CalendarInfiniteView = (
     props: KendoCalendarInfiniteViewProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
-        calendarView = defaultProps.calendarView,
-        headerText = defaultProps.headerText,
-        showWeekdays = defaultProps.showWeekdays,
+        orientation = 'vertical',
+        calendarView = 'month',
+        headerText = 'April 2018',
+        showWeekdays = true,
+        showNavigationButtons = false,
         showWeekNumbers,
-        showNavigationButtons = defaultProps.showNavigationButtons,
         weekdayCellsText,
         ...other
     } = props;

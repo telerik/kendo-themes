@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoSchedulerProps = {
     view?: "day" | "week" | "month" | "year" | "agenda" | "timeline";
     toolbar?: React.JSX.Element | React.JSX.Element[];
@@ -55,6 +53,5 @@ export const Scheduler = (
 Scheduler.states = states;
 Scheduler.options = options;
 Scheduler.className = SCHEDULER_CLASSNAME;
-Scheduler.defaultProps = defaultProps;
 
 export default Scheduler;

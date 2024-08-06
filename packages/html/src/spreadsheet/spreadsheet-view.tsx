@@ -20,8 +20,6 @@ export type KendoSpreadsheetViewProps = {
 
 };
 
-const defaultProps = {};
-
 export const SpreadsheetView = (
     props: KendoSpreadsheetViewProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -99,6 +97,5 @@ export const SpreadsheetView = (
 SpreadsheetView.states = states;
 SpreadsheetView.options = options;
 SpreadsheetView.className = SPREADSHEETVIEW_CLASSNAME;
-SpreadsheetView.defaultProps = defaultProps;
 
 export default SpreadsheetView;

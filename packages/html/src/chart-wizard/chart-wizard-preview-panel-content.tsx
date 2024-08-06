@@ -8,16 +8,12 @@ export type ChartWizardPreviewPanelContentProps = {
     buttonText?: string;
 };
 
-const defaultProps = {
-    buttonText: "Export"
-};
-
 export const ChartWizardPreviewPanelContent = (
     props: ChartWizardPreviewPanelContentProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        buttonText = defaultProps.buttonText,
+        buttonText = "Export",
         children
     } = props;
 
@@ -36,6 +32,5 @@ export const ChartWizardPreviewPanelContent = (
 
 ChartWizardPreviewPanelContent.states = states;
 ChartWizardPreviewPanelContent.options = options;
-ChartWizardPreviewPanelContent.defaultProps = defaultProps;
 
 export default ChartWizardPreviewPanelContent;

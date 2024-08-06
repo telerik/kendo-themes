@@ -11,7 +11,6 @@ export type KendoStepperProps = {
     dir?: "ltr" | "rtl";
 }
 
-const defaultProps = {};
 
 export const Stepper = (
     props: KendoStepperProps & React.HTMLAttributes<HTMLElement>
@@ -37,6 +36,5 @@ export const Stepper = (
 Stepper.options = options;
 Stepper.states = states;
 Stepper.className = STEPPER_CLASSNAME;
-Stepper.defaultProps = defaultProps;
 
 export default Stepper;

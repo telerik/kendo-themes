@@ -44,20 +44,14 @@ const defaultToolbar =
         </Toolbar>
 ;
 
-const defaultProps = {
-    toolbar: defaultToolbar,
-    showSearchPanel: false,
-    blank: false,
-};
-
 export const PDFViewer = (
     props: KendoPDFViewerState & KendoPDFViewerProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        toolbar = defaultToolbar,
+        showSearchPanel = false,
+        blank = false,
         disabled,
-        toolbar,
-        showSearchPanel,
-        blank,
         ...other
     } = props;
 
@@ -109,6 +103,5 @@ export const PDFViewer = (
 PDFViewer.states = states;
 PDFViewer.options = options;
 PDFViewer.className = PDFVIEWER_CLASSNAME;
-PDFViewer.defaultProps = defaultProps;
 
 export default PDFViewer;

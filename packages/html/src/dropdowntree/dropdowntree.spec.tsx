@@ -54,29 +54,22 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
 
 export type KendoDropdownTreeState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    showValue: true,
-    arrowIconName: 'caret-alt-down',
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid
-};
-
 export const DropdownTree = (
     props: KendoDropdownTreeProps &
         KendoDropdownTreeState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        showValue = true,
+        arrowIconName = 'caret-alt-down',
+        size = Size.medium,
+        rounded = Roundness.medium,
+        fillMode = FillMode.solid,
         valueIconName,
-        arrowIconName = defaultProps.arrowIconName,
         prefix,
         suffix,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -85,7 +78,6 @@ export const DropdownTree = (
         loading,
         disabled,
         readonly,
-        showValue = defaultProps.showValue,
         popup,
         opened,
         adaptive,
@@ -183,6 +175,5 @@ export const DropdownTree = (
 DropdownTree.states = states;
 DropdownTree.options = options;
 DropdownTree.className = DROPDOWNTREE_CLASSNAME;
-DropdownTree.defaultProps = defaultProps;
 
 export default DropdownTree;

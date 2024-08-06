@@ -20,10 +20,6 @@ export type KendoUploadProps = {
     status?: 'upload' | 'uploading' | 'done' | 'failed';
 };
 
-const defaultProps = {
-    actionsLayout: 'end'
-} as const;
-
 export type KendoUploadState = { [K in (typeof states)[number]]?: boolean };
 
 export const Upload = (
@@ -32,10 +28,10 @@ export const Upload = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        actionsLayout = 'end',
         async,
         empty,
         actions,
-        actionsLayout = defaultProps.actionsLayout,
         hover,
         status,
         disabled,
@@ -75,6 +71,5 @@ export const Upload = (
 Upload.states = states;
 Upload.options = options;
 Upload.className = UPLOAD_CLASSNAME;
-Upload.defaultProps = defaultProps;
 
 export default Upload;

@@ -11,16 +11,12 @@ export type KendoSplitterProps = {
     children?: React.JSX.Element | React.JSX.Element[];
 }
 
-const defaultProps = {
-    orientation: "horizontal",
-};
-
 export const Splitter = (
     props: KendoSplitterProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation,
+        orientation = "horizontal",
         children,
         ...other
     } = props;
@@ -69,6 +65,5 @@ export const Splitter = (
 
 Splitter.options = options;
 Splitter.className = SPLITTER_CLASSNAME;
-Splitter.defaultProps = defaultProps;
 
 export default Splitter;

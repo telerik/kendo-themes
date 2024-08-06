@@ -49,24 +49,17 @@ export type KendoNumericTextboxProps = KendoNumericTextboxOptions & {
 
 export type KendoNumericTextboxState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    showSpinButton: true,
-    showClearButton: true,
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
-
 export const NumericTextbox = (
     props: KendoNumericTextboxProps &
         KendoNumericTextboxState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        showSpinButton = true,
+        showClearButton = true,
+        separators = true,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         value,
         placeholder,
         size,
@@ -80,8 +73,6 @@ export const NumericTextbox = (
         loading,
         disabled,
         readonly,
-        showClearButton = defaultProps.showClearButton,
-        showSpinButton = defaultProps.showSpinButton,
         ...other
     } = props;
 
@@ -142,6 +133,5 @@ export const NumericTextbox = (
 NumericTextbox.states = states;
 NumericTextbox.options = options;
 NumericTextbox.className = NUMERICTEXTBOX_CLASSNAME;
-NumericTextbox.defaultProps = defaultProps;
 
 export default NumericTextbox;

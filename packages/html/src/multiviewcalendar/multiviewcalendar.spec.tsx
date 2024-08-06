@@ -24,22 +24,15 @@ export type KendoMultiViewCalendarProps = KendoMultiViewCalendarOptions & {
     dir?: 'ltr' | 'rtl';
 };
 
-const defaultProps = {
-    size: Size.medium,
-    calendarTitleText: 'October 2021 - November 2021',
-    orientation: 'horizontal',
-    calendarView: 'month'
-} as const;
-
 export const MultiViewCalendar = (
     props: KendoMultiViewCalendarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        orientation = defaultProps.orientation,
-        calendarView = defaultProps.calendarView,
-        calendarTitleText = defaultProps.calendarTitleText,
+        size = Size.medium,
+        calendarTitleText = 'October 2021 - November 2021',
+        orientation = 'horizontal',
+        calendarView = 'month',
         showCalendarFooter,
         showWeek,
         dir,
@@ -67,6 +60,5 @@ export const MultiViewCalendar = (
 MultiViewCalendar.states = states;
 MultiViewCalendar.options = options;
 MultiViewCalendar.className = MULTIVIEWCALENDAR_CLASSNAME;
-MultiViewCalendar.defaultProps = defaultProps;
 
 export default MultiViewCalendar;

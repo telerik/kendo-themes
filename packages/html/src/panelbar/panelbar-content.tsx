@@ -6,8 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const PanelBarContent = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -31,6 +29,5 @@ export const PanelBarContent = (
 PanelBarContent.states = states;
 PanelBarContent.options = options;
 PanelBarContent.className = PANELBARCONTENT_CLASSNAME;
-PanelBarContent.defaultProps = defaultProps;
 
 export default PanelBarContent;

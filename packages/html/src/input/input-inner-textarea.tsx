@@ -1,10 +1,5 @@
 import { classNames, optionClassNames } from '../misc';
 
-const defaultProps = {
-    value: '',
-    placeholder: ''
-};
-
 const className = `k-input-inner`;
 
 const states = [];
@@ -22,8 +17,8 @@ export const InputInnerTextarea = (
       React.HTMLAttributes<HTMLTextAreaElement>
 ) => {
     const {
-        value = defaultProps.value,
-        placeholder = defaultProps.placeholder,
+        value = '',
+        placeholder = '',
         rows,
         ...other
     } = props;

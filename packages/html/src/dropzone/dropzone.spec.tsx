@@ -18,21 +18,16 @@ export type KendoDropzoneProps = {
 
 export type KendoDropzoneState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    icon: "upload",
-    hint: "Drag and drop files here to upload",
-};
-
 export const Dropzone = (
     props: KendoDropzoneProps &
         KendoDropzoneState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        icon = "upload",
+        hint = "Drag and drop files here to upload",
         hover,
         disabled,
-        icon = defaultProps.icon,
-        hint = defaultProps.hint,
         note,
         ...other
     } = props;
@@ -62,6 +57,5 @@ export const Dropzone = (
 Dropzone.states = states;
 Dropzone.options = options;
 Dropzone.className = DROPZONE_CLASSNAME;
-Dropzone.defaultProps = defaultProps;
 
 export default Dropzone;

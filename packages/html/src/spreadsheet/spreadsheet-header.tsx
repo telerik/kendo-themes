@@ -60,18 +60,13 @@ const defaultMenuItems = ([
     <MenuItem last text="View" />,
 ]);
 
-const defaultProps = {
-    toolbarItems: defaultToolbarItems,
-    menuItems: defaultMenuItems,
-};
-
 export const SpreadsheetHeader = (
     props: KendoSpreadsheetHeaderProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        toolbarItems = defaultProps.toolbarItems,
-        menuItems = defaultProps.menuItems,
+        toolbarItems = defaultToolbarItems,
+        menuItems = defaultMenuItems,
         ...other
     } = props;
 
@@ -91,6 +86,5 @@ export const SpreadsheetHeader = (
 SpreadsheetHeader.states = states;
 SpreadsheetHeader.options = options;
 SpreadsheetHeader.className = SPREADSHEETHEADER_CLASSNAME;
-SpreadsheetHeader.defaultProps = defaultProps;
 
 export default SpreadsheetHeader;

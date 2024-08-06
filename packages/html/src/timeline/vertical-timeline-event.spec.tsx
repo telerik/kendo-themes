@@ -8,7 +8,6 @@ const states = [];
 
 const options = {};
 
-
 export type KendoVerticalTimelineEventProps = {
     date?: string;
     content?: string | React.JSX.Element;
@@ -19,25 +18,17 @@ export type KendoVerticalTimelineEventProps = {
     showCollapseButton?: boolean;
 };
 
-const defaultProps = {
-    collapsed: false,
-    reverse: false,
-    title: "Event title",
-    subtitle: "Event subtitle",
-    content: "Event content",
-};
-
 export const VerticalTimelineEvent = (
     props: KendoVerticalTimelineEventProps &
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
+        collapsed = false,
+        reverse = false,
+        title = "Event title",
+        subtitle = "Event subtitle",
+        content = "Event content",
         date,
-        content = defaultProps.content,
-        collapsed = defaultProps.collapsed,
-        reverse = defaultProps.reverse,
-        title = defaultProps.title,
-        subtitle = defaultProps.subtitle,
         showCollapseButton,
         ...other
     } = props;
@@ -74,6 +65,5 @@ export const VerticalTimelineEvent = (
 VerticalTimelineEvent.states = states;
 VerticalTimelineEvent.options = options;
 VerticalTimelineEvent.className = TIMELINEVERTICALEVENT_CLASSNAME;
-VerticalTimelineEvent.defaultProps = defaultProps;
 
 export default VerticalTimelineEvent;

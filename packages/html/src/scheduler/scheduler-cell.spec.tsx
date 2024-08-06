@@ -6,8 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultOptions = {};
-
 export type KendoSchedulerCellProps = {
     cellType?: string[];
     allDay?: boolean;
@@ -62,7 +60,6 @@ export const SchedulerCell = (
 
 SchedulerCell.states = states;
 SchedulerCell.options = options;
-SchedulerCell.defaultProps = defaultOptions;
 SchedulerCell.className = className;
 
 export default SchedulerCell;

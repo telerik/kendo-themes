@@ -32,12 +32,6 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
-};
-
 export type KendoMultiSelectTreeOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -185,6 +179,5 @@ export const MultiSelectTree = (
 MultiSelectTree.states = states;
 MultiSelectTree.options = options;
 MultiSelectTree.className = MULTISELECTTREE_CLASSNAME;
-MultiSelectTree.defaultProps = defaultProps;
 
 export default MultiSelectTree;

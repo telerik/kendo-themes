@@ -34,16 +34,12 @@ const defaultTabStripItems = (
     </>
 );
 
-const defaultProps = {
-    tabStripItems: defaultTabStripItems
-};
-
 export const SpreadsheetSheetsBar = (
     props: KendoSpreadsheetSheetsBarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        tabStripItems,
+        tabStripItems = defaultTabStripItems,
         ...other
     } = props;
 
@@ -64,6 +60,5 @@ export const SpreadsheetSheetsBar = (
 SpreadsheetSheetsBar.states = states;
 SpreadsheetSheetsBar.options = options;
 SpreadsheetSheetsBar.className = SPREADSHEETSHEETSBAR_CLASSNAME;
-SpreadsheetSheetsBar.defaultProps = defaultProps;
 
 export default SpreadsheetSheetsBar;

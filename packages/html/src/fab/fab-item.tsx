@@ -18,7 +18,6 @@ export type KendoFloatingActionButtonItemProps = {
 
 export type KendoFloatingActionButtonItemState = { [K in (typeof states)[number]]?: boolean };
 
-
 export const FloatingActionButtonItem = (
     props: KendoFloatingActionButtonItemProps &
         KendoFloatingActionButtonItemState &

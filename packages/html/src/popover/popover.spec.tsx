@@ -7,14 +7,11 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoPopoverProps = {
     callout?: null | 'top' | 'bottom' | 'left' | 'right';
     title?: string;
     body?: React.JSX.Element | React.JSX.Element[];
 };
-
 
 export const Popover = (
     props: KendoPopoverProps &
@@ -55,6 +52,5 @@ export const Popover = (
 Popover.states = states;
 Popover.options = options;
 Popover.className = POPOVER_CLASSNAME;
-Popover.defaultProps = defaultProps;
 
 export default Popover;

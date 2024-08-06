@@ -21,29 +21,20 @@ export type KendoProgressBarProps = {
 
 export type KendoProgressBarState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    indeterminate: false,
-    label: true,
-    labelPosition: 'start',
-    orientation: 'horizontal',
-    reverse: false,
-    value: "0"
-};
-
 export const ProgressBar = (
     props: KendoProgressBarProps &
         KendoProgressBarState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        indeterminate = false,
+        label = true,
+        labelPosition = 'start',
+        orientation = 'horizontal',
+        reverse = false,
+        value = "0",
         disabled,
         height,
-        indeterminate = defaultProps.indeterminate,
-        label = defaultProps.label,
-        labelPosition = defaultProps.labelPosition,
-        orientation = defaultProps.orientation,
-        reverse = defaultProps.reverse,
-        value = defaultProps.value,
         width,
         ...other
     } = props;
@@ -90,6 +81,5 @@ export const ProgressBar = (
 ProgressBar.states = states;
 ProgressBar.options = options;
 ProgressBar.className = PROGRESSBAR_CLASSNAME;
-ProgressBar.defaultProps = defaultProps;
 
 export default ProgressBar;

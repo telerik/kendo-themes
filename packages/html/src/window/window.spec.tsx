@@ -14,8 +14,6 @@ const options = {
     ],
 };
 
-const defaultProps = {};
-
 export type KendoWindowOptions = {
   themeColor?: (typeof options.themeColor)[number] | null;
 };
@@ -86,6 +84,5 @@ export const Window = (
 Window.states = states;
 Window.options = options;
 Window.className = WINDOW_CLASSNAME;
-Window.defaultProps = defaultProps;
 
 export default Window;

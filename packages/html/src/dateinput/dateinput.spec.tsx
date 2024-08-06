@@ -42,12 +42,6 @@ export type KendoDateInputProps = KendoDateInputOptions & {
 
 export type KendoDateInputState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
-};
-
 export const DateInput = (
     props: KendoDateInputProps &
         KendoDateInputState &
@@ -117,6 +111,5 @@ export const DateInput = (
 DateInput.states = states;
 DateInput.options = options;
 DateInput.className = DATEINPUT_CLASSNAME;
-DateInput.defaultProps = defaultProps;
 
 export default DateInput;

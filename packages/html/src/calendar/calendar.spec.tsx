@@ -25,25 +25,17 @@ export type KendoCalendarProps = KendoCalendarOptions & {
     dir?: 'ltr' | 'rtl';
 };
 
-const defaultProps = {
-    size: Size.medium,
-    showCalendarHeader: true,
-    orientation: 'horizontal',
-    calendarView: 'month',
-    calendarTitleText: 'October 2021',
-} as const;
-
 export const Calendar = (
     props: KendoCalendarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        orientation = defaultProps.orientation,
-        calendarView = defaultProps.calendarView,
-        calendarTitleText = defaultProps.calendarTitleText,
+        size = Size.medium,
+        showCalendarHeader = true,
+        orientation = 'horizontal',
+        calendarView = 'month',
+        calendarTitleText = 'October 2021',
         showWeek,
-        showCalendarHeader,
         showCalendarFooter,
         calendarFooterText,
         dir,
@@ -90,6 +82,5 @@ export const Calendar = (
 Calendar.states = states;
 Calendar.options = options;
 Calendar.className = CALENDAR_CLASSNAME;
-Calendar.defaultProps = defaultProps;
 
 export default Calendar;

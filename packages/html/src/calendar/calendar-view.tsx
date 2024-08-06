@@ -7,18 +7,13 @@ export type KendoCalendarViewProps = {
     calendarView?: 'month' | 'year' | 'decade' | 'century';
 };
 
-const defaultProps = {
-    orientation: 'horizontal',
-    calendarView: 'month'
-} as const;
-
 export const CalendarView = (
     props: KendoCalendarViewProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
-        calendarView = defaultProps.calendarView,
+        orientation = 'horizontal',
+        calendarView = 'month',
         ...other
     } = props;
 

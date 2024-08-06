@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const SpreadsheetToolbar = (
     props: KendoToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -36,6 +34,5 @@ export const SpreadsheetToolbar = (
 SpreadsheetToolbar.states = states;
 SpreadsheetToolbar.options = options;
 SpreadsheetToolbar.className = SPREADSHEETTOOLBAR_CLASSNAME;
-SpreadsheetToolbar.defaultProps = defaultProps;
 
 export default SpreadsheetToolbar;

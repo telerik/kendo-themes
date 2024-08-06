@@ -13,22 +13,15 @@ export type InputInnerInputProps = {
     autocomplete?: string;
 };
 
-const defaultProps = {
-    type: 'text',
-    autocomplete: 'off',
-    value: '',
-    placeholder: ''
-} as const;
-
 export const InputInnerInput = (
     props: InputInnerInputProps &
       React.HTMLAttributes<HTMLInputElement>
 ) => {
     const {
-        value = defaultProps.value,
-        type = defaultProps.type,
-        placeholder = defaultProps.placeholder,
-        autocomplete = defaultProps.autocomplete,
+        type = 'text',
+        autocomplete = 'off',
+        value = '',
+        placeholder = '',
         ...other
     } = props;
 

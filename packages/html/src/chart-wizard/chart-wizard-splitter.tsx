@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const ChartWizardSplitter = (
     props: KendoSplitterProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -34,6 +32,5 @@ export const ChartWizardSplitter = (
 ChartWizardSplitter.states = states;
 ChartWizardSplitter.options = options;
 ChartWizardSplitter.className = CHARTWIZARDSPLITTER_CLASSNAME;
-ChartWizardSplitter.defaultProps = defaultProps;
 
 export default ChartWizardSplitter;

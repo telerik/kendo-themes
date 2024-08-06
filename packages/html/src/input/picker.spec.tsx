@@ -19,7 +19,6 @@ export const pickerOptions = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-
 export type PickerState = { [K in (typeof pickerStates)[number]]?: boolean };
 
 export type PickerOptions = {
@@ -28,16 +27,13 @@ export type PickerOptions = {
   fillMode?: (typeof pickerOptions.fillMode)[number] | null;
 };
 
-const defaultProps = {
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid
-};
-
 export const Picker = (
     props: PickerOptions & PickerState & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = Size.medium,
+        rounded = Roundness.medium,
+        fillMode = FillMode.solid,
         hover,
         focus,
         disabled,
@@ -45,9 +41,6 @@ export const Picker = (
         valid,
         loading,
         readonly,
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
         ...other
     } = props;
 
@@ -68,6 +61,5 @@ export const Picker = (
 Picker.states = pickerStates;
 Picker.options = pickerOptions;
 Picker.className = PICKER_CLASSNAME;
-Picker.defaultProps = defaultProps;
 
 export default Picker;

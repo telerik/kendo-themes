@@ -21,17 +21,13 @@ export type KendoListAngularProps = KendoListAngularOptions & {
 
 export type KendoListAngularState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Size.medium
-};
-
 export const ListAngular = (
     props: KendoListAngularProps &
         KendoListAngularState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = Size.medium,
         virtualization,
         children,
         ...other
@@ -110,6 +106,5 @@ export const ListAngular = (
 ListAngular.states = states;
 ListAngular.options = options;
 ListAngular.className = LISTANGULAR_CLASSNAME;
-ListAngular.defaultProps = defaultProps;
 
 export default ListAngular;

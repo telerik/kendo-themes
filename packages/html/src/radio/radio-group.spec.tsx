@@ -10,16 +10,12 @@ export type KendoRadioGroupProps = {
     layout?: 'vertical' | 'horizontal';
 };
 
-const defaultProps = {
-    layout: 'vertical',
-};
-
 export const RadioGroup = (
     props: KendoRadioGroupProps &
         React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
-        layout = defaultProps.layout,
+        layout = 'vertical',
         ...other
     } = props;
 
@@ -42,6 +38,5 @@ export const RadioGroup = (
 RadioGroup.states = states;
 RadioGroup.options = options;
 RadioGroup.className = RADIOGROUP_CLASSNAME;
-RadioGroup.defaultProps = defaultProps;
 
 export default RadioGroup;

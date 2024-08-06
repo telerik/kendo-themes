@@ -15,8 +15,6 @@ const states = [
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoTreeviewItemProps = {
     leafClassName?: string;
     children?: React.JSX.Element | React.JSX.Element[];
@@ -137,6 +135,5 @@ export const TreeviewItem = (
 TreeviewItem.states = states;
 TreeviewItem.options = options;
 TreeviewItem.className = TREEVIEWITEM_CLASSNAME;
-TreeviewItem.defaultProps = defaultProps;
 
 export default TreeviewItem;

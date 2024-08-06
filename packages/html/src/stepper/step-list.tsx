@@ -11,17 +11,13 @@ export type KendoStepListProps = {
     orientation?: "horizontal" | "vertical";
 }
 
-const defaultProps = {
-    orientation: "horizontal",
-};
-
 export const StepList = (
     props: KendoStepListProps &
         React.HTMLAttributes<HTMLOListElement>
 ) => {
     const {
         style,
-        orientation = defaultProps.orientation,
+        orientation = "horizontal",
         ...other
     } = props;
 
@@ -44,6 +40,5 @@ export const StepList = (
 StepList.options = options;
 StepList.states = states;
 StepList.className = STEPLIST_CLASSNAME;
-StepList.defaultProps = defaultProps;
 
 export default StepList;

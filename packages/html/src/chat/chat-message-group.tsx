@@ -9,12 +9,6 @@ const states = [
 
 const options = {};
 
-const defaultProps = {
-    author: "Bruv",
-    avatar: "/packages/html/assets/avatar.jpg",
-    alt: false
-};
-
 export type KendoChatMessageGroupProps = {
     alt?: boolean;
     author?: string;
@@ -29,9 +23,9 @@ export const ChatMessageGroup = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        alt = defaultProps.alt,
-        author = defaultProps.author,
-        avatar = defaultProps.avatar,
+        author = "Bruv",
+        avatar = "/packages/html/assets/avatar.jpg",
+        alt = false,
         selected,
         ...other
     } = props;
@@ -58,6 +52,5 @@ export const ChatMessageGroup = (
 ChatMessageGroup.states = states;
 ChatMessageGroup.options = options;
 ChatMessageGroup.className = CHATMESSAGEGROUP_CLASSNAME;
-ChatMessageGroup.defaultProps = defaultProps;
 
 export default ChatMessageGroup;

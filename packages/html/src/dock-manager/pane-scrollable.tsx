@@ -19,18 +19,13 @@ const defaultPaneActions = (
     </>
 );
 
-const defaultProps = {
-    actions: defaultPaneActions,
-    title: "Title"
-};
-
 export const PaneScrollable = (
     props: KendoPaneScrollableProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        actions = defaultProps.actions,
-        title = defaultProps.title,
+        actions = defaultPaneActions,
+        title = "Title",
         children,
         ...other
     } = props;
@@ -56,6 +51,5 @@ export const PaneScrollable = (
 PaneScrollable.states = states;
 PaneScrollable.options = options;
 PaneScrollable.className = PANESCROLLABLE_CLASSNAME;
-PaneScrollable.defaultProps = defaultProps;
 
 export default PaneScrollable;

@@ -25,21 +25,16 @@ export type KendoListBoxProps = KendoListBoxOptions & {
 
 export type KendoListBoxState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Size.medium,
-    actionsPosition: 'left'
-} as const;
-
 export const ListBox = (
     props: KendoListBoxProps &
         KendoListBoxState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = Size.medium,
+        actionsPosition = 'left',
         disabled,
         children,
-        actionsPosition = defaultProps.actionsPosition,
         actions,
         dir,
         ...other
@@ -94,6 +89,5 @@ export const ListBox = (
 ListBox.states = states;
 ListBox.options = options;
 ListBox.className = LISTBOX_CLASSNAME;
-ListBox.defaultProps = defaultProps;
 
 export default ListBox;

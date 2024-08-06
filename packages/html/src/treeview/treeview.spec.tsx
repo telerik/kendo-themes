@@ -20,17 +20,13 @@ export type KendoTreeviewProps = KendoTreeviewOptions & {
 
 export type KendoTreeviewState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Size.medium
-};
-
 export const Treeview = (
     props: KendoTreeviewProps &
         KendoTreeviewState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = Size.medium,
         children,
         dir,
         ...other
@@ -90,6 +86,5 @@ export const Treeview = (
 Treeview.states = states;
 Treeview.options = options;
 Treeview.className = TREEVIEW_CLASSNAME;
-Treeview.defaultProps = defaultProps;
 
 export default Treeview;

@@ -22,22 +22,15 @@ const defaultActionButtons = (
     </>
 );
 
-const defaultProps = {
-    orientation: "vertical",
-    mode: "push",
-    actionButtons: defaultActionButtons,
-    header: "Settings"
-};
-
 export const PivotGridConfigurator = (
     props: KendoPivotGridConfiguratorProps &
     React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
-        mode = defaultProps.mode,
-        actionButtons = defaultProps.actionButtons,
-        header = defaultProps.header,
+        orientation = "vertical",
+        mode = "push",
+        actionButtons = defaultActionButtons,
+        header = "Settings",
         children,
         ...other
     } = props;
@@ -73,6 +66,5 @@ export const PivotGridConfigurator = (
 PivotGridConfigurator.states = states;
 PivotGridConfigurator.options = options;
 PivotGridConfigurator.className = PIVOTGRIDCONFIGURATOR_CLASSNAME;
-PivotGridConfigurator.defaultProps = defaultProps;
 
 export default PivotGridConfigurator;

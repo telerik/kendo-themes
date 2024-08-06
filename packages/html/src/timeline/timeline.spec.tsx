@@ -13,16 +13,12 @@ export type KendoTimelineProps = {
     alternatingMode?: boolean;
 };
 
-const defaultProps = {
-    orientation: "vertical",
-};
-
 export const Timeline = (
     props: KendoTimelineProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation,
+        orientation = "vertical",
         collapsibleEvents,
         alternatingMode,
         ...other
@@ -48,6 +44,5 @@ export const Timeline = (
 Timeline.states = states;
 Timeline.options = options;
 Timeline.className = TIMELINE_CLASSNAME;
-Timeline.defaultProps = defaultProps;
 
 export default Timeline;

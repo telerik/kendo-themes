@@ -35,7 +35,6 @@ export const CardTitle = (
     );
 };
 
-
 CardTitle.states = states;
 CardTitle.className = CARDTITLE_CLASSNAME;
 

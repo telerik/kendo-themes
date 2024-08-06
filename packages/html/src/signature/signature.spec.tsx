@@ -29,21 +29,15 @@ export type KendoSignatureProps = KendoSignatureOptions & {
 
 export type KendoSignatureState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid
-};
-
 export const Signature = (
     props: KendoSignatureProps &
         KendoSignatureState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
+        size = Size.medium,
+        rounded = Roundness.medium,
+        fillMode = FillMode.solid,
         hover,
         focus,
         valid,
@@ -132,6 +126,5 @@ export const Signature = (
 Signature.states = states;
 Signature.options = options;
 Signature.className = SIGNATURE_CLASSNAME;
-Signature.defaultProps = defaultProps;
 
 export default Signature;

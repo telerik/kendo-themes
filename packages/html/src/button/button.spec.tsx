@@ -47,25 +47,18 @@ export type KendoButtonProps = KendoButtonOptions & {
 
 export type KendoButtonState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Size.medium,
-    rounded: Roundness.medium,
-    fillMode: FillMode.solid,
-    themeColor: ThemeColor.base,
-    showArrow: false,
-    arrowIconName: "caret-alt-down"
-};
-
 export const Button = (
     props: KendoButtonProps &
         KendoButtonState &
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
-        themeColor = defaultProps.themeColor,
+        size = Size.medium,
+        rounded = Roundness.medium,
+        fillMode = FillMode.solid,
+        themeColor = ThemeColor.base,
+        showArrow = false,
+        arrowIconName = "caret-alt-down",
         hover,
         focus,
         active,
@@ -74,8 +67,6 @@ export const Button = (
         icon,
         text,
         iconClassName,
-        showArrow = defaultProps.showArrow,
-        arrowIconName = defaultProps.arrowIconName,
         ...other
     } = props;
 
@@ -131,6 +122,5 @@ export const Button = (
 Button.states = states;
 Button.options = options;
 Button.className = BUTTON_CLASSNAME;
-Button.defaultProps = defaultProps;
 
 export default Button;

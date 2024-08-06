@@ -6,8 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const FilterMenu = (
     props: React.HTMLAttributes<HTMLFormElement>
 ) => {
@@ -33,6 +31,5 @@ export const FilterMenu = (
 FilterMenu.states = states;
 FilterMenu.options = options;
 FilterMenu.className = FILTERMENU_CLASSNAME;
-FilterMenu.defaultProps = defaultProps;
 
 export default FilterMenu;

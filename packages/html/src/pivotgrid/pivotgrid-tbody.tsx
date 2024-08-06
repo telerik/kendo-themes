@@ -6,8 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const PivotGridTbody = (
     props: React.HTMLAttributes<HTMLTableSectionElement>
 ) => {
@@ -31,6 +29,5 @@ export const PivotGridTbody = (
 PivotGridTbody.states = states;
 PivotGridTbody.options = options;
 PivotGridTbody.className = PIVOTGRIDTBODY_CLASSNAME;
-PivotGridTbody.defaultProps = defaultProps;
 
 export default PivotGridTbody;

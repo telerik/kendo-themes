@@ -21,17 +21,13 @@ const defaultHeader =
         </div>
     </>;
 
-const defaultProps = {
-    header: defaultHeader,
-};
-
 export type KendoTaskBoardPaneState = { [K in (typeof states)[number]]?: boolean };
 
 export const TaskBoardPane = (
     props: KendoTaskBoardPaneProps & KendoTaskBoardPaneState & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        header = defaultProps.header,
+        header = defaultHeader,
         ...other
     } = props;
 
@@ -63,6 +59,5 @@ export const TaskBoardPane = (
 TaskBoardPane.states = states;
 TaskBoardPane.options = options;
 TaskBoardPane.className = TASKBOARDPANE_CLASSNAME;
-TaskBoardPane.defaultProps = defaultProps;
 
 export default TaskBoardPane;

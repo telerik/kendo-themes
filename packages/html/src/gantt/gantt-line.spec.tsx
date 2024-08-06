@@ -10,16 +10,12 @@ export type KendoGanttLineProps = {
     orientation?: "horizontal" | "vertical";
 };
 
-const defaultProps = {
-    orientation: "horizontal"
-};
-
 export const GanttLine = (
     props: KendoGanttLineProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
+        orientation = "horizontal",
         ...other
     } = props;
 
@@ -42,6 +38,5 @@ export const GanttLine = (
 GanttLine.states = states;
 GanttLine.options = options;
 GanttLine.className = GANTTLINE_CLASSNAME;
-GanttLine.defaultProps = defaultProps;
 
 export default GanttLine;

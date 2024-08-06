@@ -7,17 +7,12 @@ export type KendoPDFViewerPageProps = {
     height?: string;
 };
 
-const defaultProps = {
-    width: "720px",
-    height: "360px",
-};
-
 export const PDFViewerPage = (
     props: KendoPDFViewerPageProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        width,
-        height,
+        width = "720px",
+        height = "360px",
         ...other
     } = props;
 
@@ -35,6 +30,5 @@ export const PDFViewerPage = (
 };
 
 PDFViewerPage.className = PDFVIEWERPAGE_CLASSNAME;
-PDFViewerPage.defaultProps = defaultProps;
 
 export default PDFViewerPage;

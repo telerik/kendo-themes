@@ -8,12 +8,6 @@ const states = [
 
 const options = {};
 
-const defaultProps = {
-    time: 'Thu Feb 08 2018',
-    text: 'How can I help you?',
-    status: 'Seen'
-};
-
 export type KendoChatMessageProps = {
     time?: string,
     text?: string,
@@ -28,9 +22,9 @@ export const ChatMessage = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        time = defaultProps.time,
-        text = defaultProps.text,
-        status = defaultProps.status,
+        time = 'Thu Feb 08 2018',
+        text = 'How can I help you?',
+        status = 'Seen',
         selected,
         ...other
     } = props;
@@ -53,6 +47,5 @@ export const ChatMessage = (
 ChatMessage.states = states;
 ChatMessage.options = options;
 ChatMessage.className = CHATMESSAGE_CLASSNAME;
-ChatMessage.defaultProps = defaultProps;
 
 export default ChatMessage;

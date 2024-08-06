@@ -16,8 +16,6 @@ export type KendoColumnMenuExpanderProps = {
     expanded?: boolean;
 };
 
-const defaultProps = {};
-
 export const ColumnMenuExpander = (
     props: KendoColumnMenuExpanderProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -61,6 +59,5 @@ export const ColumnMenuExpander = (
 ColumnMenuExpander.states = states;
 ColumnMenuExpander.options = options;
 ColumnMenuExpander.className = COLUMNMENUEXPANDER_CLASSNAME;
-ColumnMenuExpander.defaultProps = defaultProps;
 
 export default ColumnMenuExpander;

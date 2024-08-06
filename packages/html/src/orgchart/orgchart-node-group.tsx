@@ -20,25 +20,20 @@ export type KendoOrgchartNodeGroupProps = {
 
 export type KendoOrgchartGroupState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    orientation: 'horizontal',
-    buttonIcon: 'plus',
-};
-
 export const OrgchartNodeGroup = (
     props: KendoOrgchartNodeGroupProps &
         KendoOrgchartGroupState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        orientation = 'horizontal',
+        buttonIcon = 'plus',
         title,
         subtitle,
         lineBottom,
         lineTop,
         button,
-        buttonIcon = defaultProps.buttonIcon,
         focus,
-        orientation = defaultProps.orientation,
         ...other
     } = props;
 

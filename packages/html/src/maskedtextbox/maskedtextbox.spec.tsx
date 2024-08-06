@@ -47,23 +47,16 @@ export type KendoMaskedTextboxProps = KendoMaskedTextboxOptions & {
 
 export type KendoMaskedTextboxState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    showClearButton: true,
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
-
 export const MaskedTextbox = (
     props: KendoMaskedTextboxProps &
         KendoMaskedTextboxState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        showClearButton = true,
+        separators = true,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         value,
         placeholder,
         size,
@@ -77,7 +70,6 @@ export const MaskedTextbox = (
         loading,
         disabled,
         readonly,
-        showClearButton = defaultProps.showClearButton,
         ...other
     } = props;
 
@@ -131,6 +123,5 @@ export const MaskedTextbox = (
 MaskedTextbox.states = states;
 MaskedTextbox.options = options;
 MaskedTextbox.className = MASKEDTEXTBOX_CLASSNAME;
-MaskedTextbox.defaultProps = defaultProps;
 
 export default MaskedTextbox;

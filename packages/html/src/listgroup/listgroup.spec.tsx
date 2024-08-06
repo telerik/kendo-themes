@@ -12,17 +12,13 @@ export type KendoListGroupOptions = {
     dir?: string;
 };
 
-const defaultProps = {
-    dir: 'ltr'
-};
-
 export const ListGroup = (
     props: KendoListGroupOptions &
         React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
         children,
-        dir = defaultProps.dir,
+        dir,
         ...other
     } = props;
 
@@ -57,6 +53,5 @@ export const ListGroup = (
 ListGroup.states = states;
 ListGroup.options = options;
 ListGroup.className = LISTGROUP_CLASSNAME;
-ListGroup.defaultProps = defaultProps;
 
 export default ListGroup;

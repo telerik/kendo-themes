@@ -9,8 +9,6 @@ const states = [
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoTabStripContentState = { [K in (typeof states)[number]]?: boolean };
 
 export const TabStripContent = (
@@ -44,6 +42,5 @@ export const TabStripContent = (
 TabStripContent.states = states;
 TabStripContent.options = options;
 TabStripContent.className = TABSTRIPCONTENT_CLASSNAME;
-TabStripContent.defaultProps = defaultProps;
 
 export default TabStripContent;

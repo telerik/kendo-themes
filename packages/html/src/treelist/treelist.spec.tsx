@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const TreeList = (
     props: KendoGridProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -27,6 +25,5 @@ export const TreeList = (
 TreeList.states = states;
 TreeList.options = options;
 TreeList.className = TREELIST_CLASSNAME;
-TreeList.defaultProps = defaultProps;
 
 export default TreeList;

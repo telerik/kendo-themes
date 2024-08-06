@@ -8,17 +8,10 @@ const states = [];
 
 const options = {};
 
-
 export type KendoHorizontalTimelineEventProps = {
     content?: string | React.JSX.Element;
     title?: string;
     subtitle?: string;
-};
-
-const defaultProps = {
-    title: "Event title",
-    subtitle: "Event subtitle",
-    content: "Event content"
 };
 
 export const HorizontalTimelineEvent = (
@@ -26,9 +19,9 @@ export const HorizontalTimelineEvent = (
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
-        content = defaultProps.content,
-        title = defaultProps.title,
-        subtitle = defaultProps.subtitle,
+        content = "Event content",
+        title = "Event title",
+        subtitle = "Event subtitle",
         ...other
     } = props;
 
@@ -61,6 +54,5 @@ export const HorizontalTimelineEvent = (
 HorizontalTimelineEvent.states = states;
 HorizontalTimelineEvent.options = options;
 HorizontalTimelineEvent.className = TIMELINEHORIZONTALEVENT_CLASSNAME;
-HorizontalTimelineEvent.defaultProps = defaultProps;
 
 export default HorizontalTimelineEvent;

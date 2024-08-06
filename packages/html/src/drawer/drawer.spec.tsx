@@ -7,13 +7,6 @@ const states = [];
 
 const options = { };
 
-const defaultProps = {
-    mini: false,
-    mode: "push",
-    position: "start",
-    expanded: false
-} as const;
-
 export type KendoDrawerProps = {
     items?: React.JSX.Element | React.JSX.Element[];
     expanded?: boolean;
@@ -28,11 +21,11 @@ export const Drawer = (
     React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        mini = false,
+        mode = "push",
+        position = "start",
+        expanded = false,
         items,
-        expanded,
-        mini,
-        position,
-        mode,
         width,
         ...other
     } = props;
@@ -71,6 +64,5 @@ export const Drawer = (
 Drawer.states = states;
 Drawer.options = options;
 Drawer.className = DRAWER_CLASSNAME;
-Drawer.defaultProps = defaultProps;
 
 export default Drawer;

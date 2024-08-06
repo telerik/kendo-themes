@@ -15,17 +15,13 @@ export type KendoMediaPlayerProps = {
 
 export type KendoMediaPlayerState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    title: "Media player title",
-};
-
 export const MediaPlayer = (
     props: KendoMediaPlayerProps &
         KendoMediaPlayerState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        title,
+        title = "Media player title",
         toolbarItems,
         children,
         ...other
@@ -53,6 +49,5 @@ export const MediaPlayer = (
 MediaPlayer.states = states;
 MediaPlayer.options = options;
 MediaPlayer.className = MEDIAPLAYER_CLASSNAME;
-MediaPlayer.defaultProps = defaultProps;
 
 export default MediaPlayer;

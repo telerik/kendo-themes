@@ -8,8 +8,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const ChartWizard = (
     props: KendoWindowProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -34,6 +32,5 @@ export const ChartWizard = (
 ChartWizard.states = states;
 ChartWizard.options = options;
 ChartWizard.className = CHARTWIZARD_CLASSNAME;
-ChartWizard.defaultProps = defaultProps;
 
 export default ChartWizard;

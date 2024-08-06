@@ -6,8 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoRadioItemState = { [K in (typeof states)[number]]?: boolean };
 
 export const RadioItem = (
@@ -33,6 +31,5 @@ export const RadioItem = (
 RadioItem.states = states;
 RadioItem.options = options;
 RadioItem.className = RADIOITEM_CLASSNAME;
-RadioItem.defaultProps = defaultProps;
 
 export default RadioItem;

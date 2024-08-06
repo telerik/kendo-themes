@@ -10,16 +10,12 @@ export type KendoSpreadsheetColumnHeaderProps = {
     configureSelection?: { [key: string]: "partial" | "full" | null };
 };
 
-const defaultProps = {
-    configureSelection: { A: "partial" }
-};
-
 export const SpreadsheetColumnHeader = (
     props: KendoSpreadsheetColumnHeaderProps
         & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        configureSelection = defaultProps.configureSelection,
+        configureSelection = { A: "partial" },
         ...other
     } = props;
 
@@ -96,6 +92,5 @@ export const SpreadsheetColumnHeader = (
 SpreadsheetColumnHeader.states = states;
 SpreadsheetColumnHeader.options = options;
 SpreadsheetColumnHeader.className = SPREADSHEETCOLUMNHEADER_CLASSNAME;
-SpreadsheetColumnHeader.defaultProps = defaultProps;
 
 export default SpreadsheetColumnHeader;

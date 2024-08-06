@@ -6,16 +6,12 @@ export type KendoBreadcrumbContainerProps = {
     collapsing?: null | 'auto' | 'none' | 'wrap';
 };
 
-const defaultProps = {
-    collapsing: 'auto'
-};
-
 export const BreadcrumbContainer = (
     props: KendoBreadcrumbContainerProps &
         React.HTMLAttributes<HTMLElement>
 ) => {
     const {
-        collapsing = defaultProps.collapsing,
+        collapsing = 'auto',
         ...other
     } = props;
 

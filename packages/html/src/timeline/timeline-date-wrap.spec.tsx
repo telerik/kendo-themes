@@ -10,16 +10,12 @@ export type KendoDateWrapProps = {
     date?: string;
 };
 
-const defaultProps = {
-    date: "May 25, 2008",
-};
-
 export const TimelineDateWrap = (
     props: KendoDateWrapProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        date = defaultProps.date,
+        date = "May 25, 2008",
         ...other
     } = props;
 
@@ -39,6 +35,5 @@ export const TimelineDateWrap = (
 TimelineDateWrap.states = states;
 TimelineDateWrap.options = options;
 TimelineDateWrap.className = TIMELINEDATEWRAP_CLASSNAME;
-TimelineDateWrap.defaultProps = defaultProps;
 
 export default TimelineDateWrap;

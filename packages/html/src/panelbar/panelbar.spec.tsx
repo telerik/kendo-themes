@@ -6,8 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const PanelBar = (
     props: React.HTMLAttributes<HTMLUListElement>
 ) => {
@@ -31,6 +29,5 @@ export const PanelBar = (
 PanelBar.states = states;
 PanelBar.options = options;
 PanelBar.className = PANELBAR_CLASSNAME;
-PanelBar.defaultProps = defaultProps;
 
 export default PanelBar;

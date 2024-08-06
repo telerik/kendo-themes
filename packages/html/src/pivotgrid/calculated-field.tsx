@@ -24,20 +24,14 @@ const defaultFieldActions = (
     </>
 );
 
-const defaultProps = {
-    headerContent: <div className="k-calculated-field-header-text">Date.Calendar</div>,
-    headerActions: <Button fillMode="flat" icon="x"></Button>,
-    fieldActions: defaultFieldActions
-};
-
 export const CalculatedField = (
     props: KendoCalculatedFieldProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        headerContent = defaultProps.headerContent,
-        headerActions = defaultProps.headerActions,
-        fieldActions = defaultProps.fieldActions,
+        headerContent = <div className="k-calculated-field-header-text">Date.Calendar</div>,
+        headerActions = <Button fillMode="flat" icon="x"></Button>,
+        fieldActions = defaultFieldActions,
         children,
         ...other
     } = props;
@@ -74,6 +68,5 @@ export const CalculatedField = (
 CalculatedField.states = states;
 CalculatedField.options = options;
 CalculatedField.className = CALCULATEDFIELD_CLASSNAME;
-CalculatedField.defaultProps = defaultProps;
 
 export default CalculatedField;

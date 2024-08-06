@@ -28,20 +28,16 @@ export type KendoListViewProps = {
 
 export type KendoListViewState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    pagerPosition: 'bottom'
-};
-
 export const ListView = (
     props: KendoListViewProps &
         KendoListViewState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        pagerPosition = "bottom",
         header,
         footer,
         pageable,
-        pagerPosition = defaultProps.pagerPosition,
         bordered,
         layout,
         flexDirection,
@@ -99,6 +95,5 @@ export const ListView = (
 ListView.states = states;
 ListView.options = options;
 ListView.className = LISTVIEW_CLASSNAME;
-ListView.defaultProps = defaultProps;
 
 export default ListView;

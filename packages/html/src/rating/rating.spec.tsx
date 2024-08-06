@@ -19,16 +19,12 @@ export type RatingProps = {
     dir?: "rtl" | "ltr";
 };
 
-const defaultProps = {
-    max: 5,
-};
-
 export const Rating = (
     props: RatingState & RatingProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
         value,
-        max = defaultProps.max,
+        max = 5,
         disabled,
         readonly,
         label,
@@ -80,6 +76,5 @@ export const Rating = (
 Rating.states = states;
 Rating.options = options;
 Rating.className = RATING_CLASSNAME;
-Rating.defaultProps = defaultProps;
 
 export default Rating;

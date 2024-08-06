@@ -10,8 +10,6 @@ export type KendoTileLayoutItemHintProps = {
     style?: React.CSSProperties;
 };
 
-const defaultProps = {};
-
 export const TileLayoutItemHint = (
     props: KendoTileLayoutItemHintProps & React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -25,6 +23,5 @@ export const TileLayoutItemHint = (
 TileLayoutItemHint.states = states;
 TileLayoutItemHint.options = options;
 TileLayoutItemHint.className = TILELAYOUTITEMHINT_CLASSNAME;
-TileLayoutItemHint.defaultProps = defaultProps;
 
 export default TileLayoutItemHint;

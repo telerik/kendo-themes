@@ -49,27 +49,18 @@ export type KendoAvatarProps = KendoAvatarOptions & {
 
 export type KendoAvatarState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    type: avatarType.TEXT,
-    size: Size.medium,
-    rounded: Roundness.full,
-    fillMode: FillMode.solid,
-    themeColor: ThemeColor.primary,
-    border: false
-};
-
 export const Avatar = (
     props: KendoAvatarProps &
         KendoAvatarState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
-        themeColor = defaultProps.themeColor,
-        type = defaultProps.type,
-        border = defaultProps.border,
+        size = Size.medium,
+        rounded = Roundness.full,
+        fillMode = FillMode.solid,
+        themeColor = ThemeColor.primary,
+        type = avatarType.TEXT,
+        border = false,
         ...other
     } = props;
 
@@ -100,6 +91,5 @@ export const Avatar = (
 Avatar.states = states;
 Avatar.options = options;
 Avatar.className = AVATAR_CLASSNAME;
-Avatar.defaultProps = defaultProps;
 
 export default Avatar;

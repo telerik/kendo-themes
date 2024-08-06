@@ -15,19 +15,14 @@ export type KendoMenuListOptions = {
     dir?: string;
 };
 
-const defaultProps = {
-    size: Size.medium,
-    dir: 'ltr'
-};
-
 export const MenuList = (
     props: KendoMenuListOptions &
         React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
+        size = Size.medium,
         children,
-        size = defaultProps.size,
-        dir = defaultProps.dir,
+        dir,
         ...other
     } = props;
 
@@ -69,6 +64,5 @@ export const MenuList = (
 MenuList.states = states;
 MenuList.options = options;
 MenuList.className = MENULIST_CLASSNAME;
-MenuList.defaultProps = defaultProps;
 
 export default MenuList;

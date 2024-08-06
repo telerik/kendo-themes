@@ -13,10 +13,6 @@ const states = [
 
 const options = { };
 
-const defaultProps = {
-    level: 0
-} as const;
-
 export type KendoDrawerItemProps = {
     icon?: string;
     text?: string;
@@ -34,9 +30,9 @@ export const DrawerItem = (
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
+        level = 0,
         icon,
         text,
-        level = defaultProps.level,
         hover,
         focus,
         selected,
@@ -77,6 +73,5 @@ export const DrawerItem = (
 DrawerItem.states = states;
 DrawerItem.options = options;
 DrawerItem.className = DRAWERITEM_CLASSNAME;
-DrawerItem.defaultProps = defaultProps;
 
 export default DrawerItem;

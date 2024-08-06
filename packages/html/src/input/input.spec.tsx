@@ -26,16 +26,13 @@ export type InputOptions = {
   fillMode?: (typeof options.fillMode)[number] | null;
 };
 
-export const defaultProps = {
-    size: Size.medium,
-    rounded: Size.medium,
-    fillMode: FillMode.solid
-};
-
 export const Input = (
     props: InputOptions & InputState & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = Size.medium,
+        rounded = Roundness.medium,
+        fillMode = FillMode.solid,
         hover,
         focus,
         disabled,
@@ -43,9 +40,6 @@ export const Input = (
         valid,
         loading,
         readonly,
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
         ...other
     } = props;
 
@@ -65,6 +59,5 @@ export const Input = (
 Input.states = states;
 Input.options = options;
 Input.className = INPUT_CLASSNAME;
-Input.defaultProps = defaultProps;
 
 export default Input;

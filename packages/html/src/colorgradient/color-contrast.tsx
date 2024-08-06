@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const ColorContrast = (
 ) => (
     <div className={classNames(COLOR_CONTRAST_CLASSNAME, 'k-vbox')}>
@@ -39,6 +37,5 @@ export const ColorContrast = (
 ColorContrast.states = states;
 ColorContrast.options = options;
 ColorContrast.className = COLOR_CONTRAST_CLASSNAME;
-ColorContrast.defaultProps = defaultProps;
 
 export default ColorContrast;

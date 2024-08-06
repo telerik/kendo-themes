@@ -11,8 +11,6 @@ export type KendoTaskBoardCardProps = {
     category?: boolean;
 };
 
-const defaultProps = {};
-
 export const TaskBoardCard = (
     props: KendoTaskBoardCardProps &
         KendoCardProps & KendoCardOptions & KendoCardState &
@@ -43,6 +41,5 @@ export const TaskBoardCard = (
 TaskBoardCard.states = states;
 TaskBoardCard.options = options;
 TaskBoardCard.className = TASKBOARDCARD_CLASSNAME;
-TaskBoardCard.defaultProps = defaultProps;
 
 export default TaskBoardCard;

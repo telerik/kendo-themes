@@ -21,7 +21,6 @@ export type KendoFormFieldProps = {
 
 export type KendoFormFieldState = { [K in (typeof states)[number]]?: boolean };
 
-
 export const FormField = (
     props: KendoFormFieldProps &
         KendoFormFieldState &

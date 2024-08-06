@@ -8,17 +8,13 @@ export type KendoCalendarTableHeadProps = {
     cellsText?: string[];
 };
 
-const defaultProps = {
-    cellsText: [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa' ]
-};
-
 export const CalendarTableHead = (
     props: KendoCalendarTableHeadProps &
         React.HTMLAttributes<HTMLTableSectionElement>
 ) => {
     const {
         showWeek,
-        cellsText = defaultProps.cellsText,
+        cellsText = [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa' ],
         ...other
     } = props;
 

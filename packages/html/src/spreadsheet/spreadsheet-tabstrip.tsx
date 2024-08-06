@@ -8,8 +8,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const SpreadsheetTabStrip = (
     props: KendoTabStripProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -46,6 +44,5 @@ export const SpreadsheetTabStrip = (
 SpreadsheetTabStrip.states = states;
 SpreadsheetTabStrip.options = options;
 SpreadsheetTabStrip.className = SPREADSHEETTABSTRIP_CLASSNAME;
-SpreadsheetTabStrip.defaultProps = defaultProps;
 
 export default SpreadsheetTabStrip;

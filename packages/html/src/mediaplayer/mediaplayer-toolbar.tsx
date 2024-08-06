@@ -26,17 +26,13 @@ const defaultToolbarItems = [
     <Button fillMode="flat" icon="fullscreen" className="k-fullscreen-button"></Button>
 ];
 
-const defaultProps = {
-    toolbarItems: defaultToolbarItems,
-};
-
 export const MediaPlayerToolbar = (
     props: KendoToolbarProps &
         KendoMediaPlayerToolbarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        toolbarItems = defaultProps.toolbarItems,
+        toolbarItems = defaultToolbarItems,
         ...other
     } = props;
 
@@ -56,6 +52,5 @@ export const MediaPlayerToolbar = (
 MediaPlayerToolbar.states = states;
 MediaPlayerToolbar.options = options;
 MediaPlayerToolbar.className = MEDIAPLAYERTOOLBAR_CLASSNAME;
-MediaPlayerToolbar.defaultProps = defaultProps;
 
 export default MediaPlayerToolbar;

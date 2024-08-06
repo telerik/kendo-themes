@@ -28,24 +28,18 @@ export type KendoSwitchProps = KendoSwitchOptions & {
 
 export type KendoSwitchState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Size.medium,
-    trackRounded: Roundness.full,
-    thumbRounded: Roundness.full
-};
-
 export const Switch = (
     props: KendoSwitchProps &
         KendoSwitchState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = Size.medium,
+        trackRounded = Roundness.full,
+        thumbRounded = Roundness.full,
         checked,
         onLabel,
         offLabel,
-        size = defaultProps.size,
-        trackRounded = defaultProps.trackRounded,
-        thumbRounded = defaultProps.thumbRounded,
         hover,
         focus,
         disabled,
@@ -99,6 +93,5 @@ export const Switch = (
 Switch.states = states;
 Switch.options = options;
 Switch.className = SWITCH_CLASSNAME;
-Switch.defaultProps = defaultProps;
 
 export default Switch;

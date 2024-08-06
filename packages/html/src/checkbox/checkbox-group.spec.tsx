@@ -10,16 +10,12 @@ export type KendoCheckboxGroupProps = {
     layout?: 'vertical' | 'horizontal';
 };
 
-const defaultProps = {
-    layout: 'vertical',
-};
-
 export const CheckboxGroup = (
     props: KendoCheckboxGroupProps &
         React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
-        layout = defaultProps.layout,
+        layout = "vertical",
         ...other
     } = props;
 
@@ -42,6 +38,5 @@ export const CheckboxGroup = (
 CheckboxGroup.states = states;
 CheckboxGroup.options = options;
 CheckboxGroup.className = CHECKBOXGROUP_CLASSNAME;
-CheckboxGroup.defaultProps = defaultProps;
 
 export default CheckboxGroup;

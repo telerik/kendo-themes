@@ -21,23 +21,17 @@ export type KendoChunkProgressBarProps = {
 
 export type KendoChunkProgressBarState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    chunkCount: 5,
-    orientation: 'horizontal',
-    progress: 0
-};
-
 export const ChunkProgressBar = (
     props: KendoChunkProgressBarProps &
         KendoChunkProgressBarState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        chunkCount = 5,
+        orientation = 'horizontal',
+        progress = 0,
         disabled,
-        chunkCount = defaultProps.chunkCount,
         indeterminate,
-        orientation = defaultProps.orientation,
-        progress = defaultProps.progress,
         reverse,
         ...other
     } = props;
@@ -77,6 +71,5 @@ export const ChunkProgressBar = (
 ChunkProgressBar.states = states;
 ChunkProgressBar.options = options;
 ChunkProgressBar.className = CHUNKPROGRESSBAR_CLASSNAME;
-ChunkProgressBar.defaultProps = defaultProps;
 
 export default ChunkProgressBar;

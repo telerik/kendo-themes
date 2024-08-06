@@ -6,8 +6,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const PivotGridTable = (
     props: React.HTMLAttributes<HTMLTableElement>
 ) => {
@@ -31,6 +29,5 @@ export const PivotGridTable = (
 PivotGridTable.states = states;
 PivotGridTable.options = options;
 PivotGridTable.className = PIVOTGRIDTABLE_CLASSNAME;
-PivotGridTable.defaultProps = defaultProps;
 
 export default PivotGridTable;

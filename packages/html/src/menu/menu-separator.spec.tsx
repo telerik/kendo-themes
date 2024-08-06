@@ -6,16 +6,12 @@ export type KendoMenuSeparatorProps = {
     orientation?: 'horizontal' | 'vertical';
 };
 
-const defaultProps = {
-    orientation: 'horizontal'
-};
-
 export const MenuSeparator = (
     props: KendoMenuSeparatorProps &
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
+        orientation = 'horizontal',
         ...other
     } = props;
 

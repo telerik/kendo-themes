@@ -24,25 +24,17 @@ const defaultAttribution = (
     </>
 );
 
-const defaultProps = {
-    attribution: defaultAttribution,
-    markerStyle: { zIndex: "1000", left: "500px", top: "300px" },
-    scrollContainerStyle: { transformOrigin: "left top 0px" },
-    horizontalScrollbarStyle: { transformOrigin: "left top 0px", width: "24px" },
-    verticalScrollbarStyle: { transformOrigin: "left top 0px", height: "239px" }
-};
-
 export const Map = (
     props: KendoMapProps &
         KendoMapState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        attribution = defaultProps.attribution,
-        markerStyle,
-        scrollContainerStyle,
-        horizontalScrollbarStyle,
-        verticalScrollbarStyle,
+        attribution = defaultAttribution,
+        markerStyle = { zIndex: "1000", left: "500px", top: "300px" },
+        scrollContainerStyle = { transformOrigin: "left top 0px" },
+        horizontalScrollbarStyle = { transformOrigin: "left top 0px", width: "24px" },
+        verticalScrollbarStyle = { transformOrigin: "left top 0px", height: "239px" },
         children,
         ...other
     } = props;
@@ -82,6 +74,5 @@ export const Map = (
 Map.states = states;
 Map.options = options;
 Map.className = MAP_CLASSNAME;
-Map.defaultProps = defaultProps;
 
 export default Map;

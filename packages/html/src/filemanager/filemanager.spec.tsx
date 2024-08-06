@@ -43,10 +43,6 @@ const defaultToolbar =
         </FileManagerToolbar>
     </>;
 
-const defaultProps = {
-    toolbar: defaultToolbar,
-};
-
 export const FileManager = (
     props: KendoFileManagerProps &
         KendoFileManagerState &
@@ -54,7 +50,7 @@ export const FileManager = (
 ) => {
     const {
         disabled,
-        toolbar = defaultProps.toolbar,
+        toolbar = defaultToolbar,
     } = props;
 
     return (
@@ -79,6 +75,5 @@ export const FileManager = (
 FileManager.states = states;
 FileManager.options = options;
 FileManager.className = FILEMANAGER_CLASSNAME;
-FileManager.defaultProps = defaultProps;
 
 export default FileManager;

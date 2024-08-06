@@ -11,19 +11,14 @@ export type KendoMenuProps = {
     header?: boolean | null;
 };
 
-const defaultProps = {
-    orientation: 'horizontal',
-    header: true
-};
-
 export const Menu = (
     props: KendoMenuProps &
         React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
+        orientation = "horizontal",
+        header = true,
         children,
-        orientation = defaultProps.orientation,
-        header = defaultProps.header,
         ...other
     } = props;
 
@@ -49,6 +44,5 @@ export const Menu = (
 Menu.states = states;
 Menu.options = options;
 Menu.className = MENU_CLASSNAME;
-Menu.defaultProps = defaultProps;
 
 export default Menu;

@@ -45,22 +45,17 @@ export type IconProps = IconOptions & {
     viewBox?: string;
 }
 
-const defaultProps = {
-    viewBox: '0 0 24 24',
-    type: 'svg'
-};
-
 export const Icon = (
     props: IconProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        viewBox = '0 0 24 24',
+        type = 'svg',
         size,
         themeColor,
         icon,
-        type = defaultProps.type,
         rotate,
         flip,
-        viewBox = defaultProps.viewBox,
         ...other
     } = props;
 
@@ -94,6 +89,5 @@ export const Icon = (
 
 Icon.states = states;
 Icon.options = options;
-Icon.defaultProps = defaultProps;
 
 export default Icon;

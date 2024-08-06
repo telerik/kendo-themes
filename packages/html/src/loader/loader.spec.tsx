@@ -36,20 +36,14 @@ export type KendoLoaderProps = KendoLoaderOptions & {
     animation?: 'pulsing' | 'infinite-spinner' | 'converging-spinner';
 };
 
-const defaultProps = {
-    size: Size.medium,
-    themeColor: ThemeColor.primary,
-    animation: 'pulsing'
-} as const;
-
 export const Loader = (
     props: KendoLoaderProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        themeColor = defaultProps.themeColor,
-        animation = defaultProps.animation,
+        size = Size.medium,
+        themeColor = ThemeColor.primary,
+        animation = 'pulsing',
         ...other
     } = props;
 
@@ -103,6 +97,5 @@ export const Loader = (
 Loader.states = states;
 Loader.options = options;
 Loader.className = LOADER_CLASSNAME;
-Loader.defaultProps = defaultProps;
 
 export default Loader;

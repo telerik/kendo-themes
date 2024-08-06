@@ -15,21 +15,16 @@ export type KendoTabStripProps = {
     dir?: "rtl" | "ltr";
 };
 
-const defaultProps = {
-    position: "top",
-    header: true
-};
-
 export const TabStrip = (
     props: KendoTabStripProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        position = "top",
+        header = true,
         scrollable,
         children,
         tabStripItems,
-        position = defaultProps.position,
-        header,
         dir,
         ...other
     } = props;
@@ -46,7 +41,7 @@ export const TabStrip = (
         bottom: 'horizontal',
         left: 'vertical',
         right: 'vertical'
-    };
+    } as const;
 
     return (
         <div
@@ -77,6 +72,5 @@ export const TabStrip = (
 TabStrip.states = states;
 TabStrip.options = options;
 TabStrip.className = TABSTRIP_CLASSNAME;
-TabStrip.defaultProps = defaultProps;
 
 export default TabStrip;

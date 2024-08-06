@@ -20,20 +20,15 @@ export type KendoGridProps = KendoGridOptions & {
     _renderAriaRoot?: boolean;
 };
 
-const defaultProps = {
-    size: Size.medium,
-    pagerPosition: 'bottom'
-};
-
 export const Grid = (
     props: KendoGridProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = Size.medium,
+        pagerPosition = 'bottom',
         toolbar,
         pager,
-        pagerPosition,
         groupingHeader,
         _renderAriaRoot,
         ...other
@@ -62,6 +57,5 @@ export const Grid = (
 Grid.states = states;
 Grid.options = options;
 Grid.className = GRID_CLASSNAME;
-Grid.defaultProps = defaultProps;
 
 export default Grid;

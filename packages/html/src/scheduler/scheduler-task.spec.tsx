@@ -8,11 +8,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {
-    markStyle: { backgroundColor: "gold" },
-};
-
-
 export type KendoSchedulerTaskProps = {
     text?: string;
     markStyle?: React.CSSProperties;
@@ -25,8 +20,8 @@ export const SchedulerTask = (
         & React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        markStyle = { backgroundColor: "gold" },
         text,
-        markStyle,
         recurring,
         closable,
         ...other
@@ -51,10 +46,8 @@ export const SchedulerTask = (
     );
 };
 
-
 SchedulerTask.states = states;
 SchedulerTask.options = options;
-SchedulerTask.defaultProps = defaultProps;
 SchedulerTask.className = className;
 
 export default SchedulerTask;

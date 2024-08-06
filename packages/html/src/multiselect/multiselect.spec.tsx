@@ -34,13 +34,6 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
-
 export type KendoMultiSelectOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -70,9 +63,9 @@ export const MultiSelect = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        separators = true,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         value,
         placeholder,
         tags,
@@ -184,6 +177,5 @@ export const MultiSelect = (
 MultiSelect.states = states;
 MultiSelect.options = options;
 MultiSelect.className = MULTISELECT_CLASSNAME;
-MultiSelect.defaultProps = defaultProps;
 
 export default MultiSelect;

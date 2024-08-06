@@ -8,8 +8,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export type KendoDockManagerProps = {
     toolbarItems?: React.JSX.Element | React.JSX.Element[];
     unpinnedPane?: React.JSX.Element;
@@ -54,6 +52,5 @@ export const DockManager = (
 DockManager.states = states;
 DockManager.options = options;
 DockManager.className = DOCKMANAGER_CLASSNAME;
-DockManager.defaultProps = defaultProps;
 
 export default DockManager;

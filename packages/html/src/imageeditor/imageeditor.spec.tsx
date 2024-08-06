@@ -13,8 +13,6 @@ export type KendoImageEditorProps = {
     contentHeight?: string;
 };
 
-const defaultProps = {};
-
 export const ImageEditor = (
     props: KendoImageEditorProps &
         React.HTMLAttributes<HTMLDivElement>
@@ -56,6 +54,5 @@ export const ImageEditor = (
 ImageEditor.states = states;
 ImageEditor.options = options;
 ImageEditor.className = IMAGEEDITOR_CLASSNAME;
-ImageEditor.defaultProps = defaultProps;
 
 export default ImageEditor;

@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const PivotGridConfiguratorButton = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -34,6 +32,5 @@ export const PivotGridConfiguratorButton = (
 PivotGridConfiguratorButton.states = states;
 PivotGridConfiguratorButton.options = options;
 PivotGridConfiguratorButton.className = PIVOTGRIDCONFIGURATORBUTTON_CLASSNAME;
-PivotGridConfiguratorButton.defaultProps = defaultProps;
 
 export default PivotGridConfiguratorButton;

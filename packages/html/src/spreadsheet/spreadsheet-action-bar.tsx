@@ -23,18 +23,13 @@ const defaultFormula = (
     </>
 );
 
-const defaultProps = {
-    formula: defaultFormula,
-    cellName: "B6"
-};
-
 export const SpreadsheetActionBar = (
     props: KendoSpreadsheetActionBarProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        formula = defaultProps.formula,
-        cellName = defaultProps.cellName,
+        formula = defaultFormula,
+        cellName = 'B6',
         ...other
     } = props;
 
@@ -64,6 +59,5 @@ export const SpreadsheetActionBar = (
 SpreadsheetActionBar.states = states;
 SpreadsheetActionBar.options = options;
 SpreadsheetActionBar.className = SPREADSHEETACTIONBAR_CLASSNAME;
-SpreadsheetActionBar.defaultProps = defaultProps;
 
 export default SpreadsheetActionBar;

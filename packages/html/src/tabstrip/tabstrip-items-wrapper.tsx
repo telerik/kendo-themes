@@ -9,17 +9,14 @@ const options = {};
 export type KendoTabStripItemsWrapperProps = {
     orientation?: "horizontal" | "vertical";
 };
-const defaultProps = {
-    orientation: "horizontal"
-};
 
 export const TabStripItemsWrapper = (
     props: KendoTabStripItemsWrapperProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        orientation = "horizontal",
         children,
-        orientation,
         ...other
     } = props;
 
@@ -41,6 +38,5 @@ export const TabStripItemsWrapper = (
 TabStripItemsWrapper.states = states;
 TabStripItemsWrapper.options = options;
 TabStripItemsWrapper.className = TABSTRIPITEMSWRAPPER_CLASSNAME;
-TabStripItemsWrapper.defaultProps = defaultProps;
 
 export default TabStripItemsWrapper;

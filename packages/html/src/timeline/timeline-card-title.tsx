@@ -5,7 +5,6 @@ export const TIMELINECARDTITLE_CLASSNAME = `k-card-title`;
 
 const states = [];
 
-const defaultProps = {};
 
 export type KendoTimelineCardTitleProps = {
     collapsible?: boolean;
@@ -37,6 +36,5 @@ export const TimelineCardTitle = (
 
 TimelineCardTitle.states = states;
 TimelineCardTitle.className = TIMELINECARDTITLE_CLASSNAME;
-TimelineCardTitle.defaultProps = defaultProps;
 
 export default TimelineCardTitle;

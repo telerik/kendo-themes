@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const DockNavigator = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -35,6 +33,5 @@ export const DockNavigator = (
 DockNavigator.states = states;
 DockNavigator.options = options;
 DockNavigator.className = DOCKNAVIGATOR_CLASSNAME;
-DockNavigator.defaultProps = defaultProps;
 
 export default DockNavigator;

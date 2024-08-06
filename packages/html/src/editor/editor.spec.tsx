@@ -17,10 +17,6 @@ export type KendoEditorProps = {
     toolbarResizable?: boolean;
 };
 
-const defaultProps = {
-    toolbarResizable: false
-};
-
 export type KendoEditorState = { [K in (typeof states)[number]]?: boolean };
 
 export const Editor = (
@@ -29,11 +25,11 @@ export const Editor = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        toolbarResizable = false,
         readonly,
         disabled,
         focus,
         toolbarItems,
-        toolbarResizable = defaultProps.toolbarResizable,
         resizable,
         ...other
     } = props;
@@ -70,6 +66,5 @@ export const Editor = (
 Editor.states = states;
 Editor.options = options;
 Editor.className = EDITOR_CLASSNAME;
-Editor.defaultProps = defaultProps;
 
 export default Editor;

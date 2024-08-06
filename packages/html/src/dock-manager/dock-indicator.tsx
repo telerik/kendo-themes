@@ -16,17 +16,13 @@ export type KendoDockIndicatorProps = {
 
 export type KendoDockIndicatorState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    position: "middle"
-};
-
 export const DockIndicator = (
     props: KendoDockIndicatorProps &
         KendoDockIndicatorState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        position = defaultProps.position,
+        position = "middle",
         hover,
         disabled,
         ...other
@@ -63,6 +59,5 @@ export const DockIndicator = (
 DockIndicator.states = states;
 DockIndicator.options = options;
 DockIndicator.className = DOCKINDICATOR_CLASSNAME;
-DockIndicator.defaultProps = defaultProps;
 
 export default DockIndicator;

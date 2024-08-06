@@ -26,14 +26,11 @@ export type RadioButtonOptions = {
   size?: (typeof options.size)[number] | null;
 };
 
-const defaultProps = {
-    size: Size.medium
-};
-
 export const RadioButton = (
     props: RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLInputElement>
 ) => {
     const {
+        size = Size.medium,
         id,
         checked,
         hover,
@@ -42,7 +39,6 @@ export const RadioButton = (
         invalid,
         valid,
         required,
-        size = defaultProps.size,
         ...other
     } = props;
 
@@ -68,6 +64,5 @@ export const RadioButton = (
 RadioButton.states = states;
 RadioButton.options = options;
 RadioButton.className = RADIOBUTTON_CLASSNAME;
-RadioButton.defaultProps = defaultProps;
 
 export default RadioButton;

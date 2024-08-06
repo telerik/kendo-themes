@@ -15,7 +15,6 @@ export type KendoTableRowProps = {
 
 export type KendoTableRowState = { [K in (typeof states)[number]]?: boolean };
 
-
 export const TableRow = (
     props: KendoTableRowProps &
         KendoTableRowState &

@@ -48,23 +48,16 @@ export type KendoTextboxProps = KendoTextboxOptions & {
 
 export type KendoTextboxState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    showClearButton: true,
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
-
 export const Textbox = (
     props: KendoTextboxProps &
         KendoTextboxState &
         Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
+        showClearButton = true,
+        separators = true,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         type,
         value,
         placeholder,
@@ -79,7 +72,6 @@ export const Textbox = (
         loading,
         disabled,
         readonly,
-        showClearButton = defaultProps.showClearButton,
         ...other
     } = props;
 
@@ -133,6 +125,5 @@ export const Textbox = (
 Textbox.states = states;
 Textbox.options = options;
 Textbox.className = TEXTBOX_CLASSNAME;
-Textbox.defaultProps = defaultProps;
 
 export default Textbox;

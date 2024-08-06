@@ -22,17 +22,13 @@ export type KendoListProps = KendoListOptions & {
 
 export type KendoListState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Size.medium
-};
-
 export const List = (
     props: KendoListProps &
         KendoListState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = Size.medium,
         virtualization,
         children,
         optionLabel,
@@ -112,6 +108,5 @@ export const List = (
 List.states = states;
 List.options = options;
 List.className = LIST_CLASSNAME;
-List.defaultProps = defaultProps;
 
 export default List;

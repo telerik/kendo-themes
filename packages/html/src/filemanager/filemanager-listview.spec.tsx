@@ -7,8 +7,6 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
-
 export const FileManagerListView = (
     props:
         KendoListViewProps &
@@ -39,6 +37,5 @@ export const FileManagerListView = (
 FileManagerListView.states = states;
 FileManagerListView.options = options;
 FileManagerListView.className = FILEMANAGERLISTVIEW_CLASSNAME;
-FileManagerListView.defaultProps = defaultProps;
 
 export default FileManagerListView;

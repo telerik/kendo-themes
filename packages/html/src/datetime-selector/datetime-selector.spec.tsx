@@ -23,20 +23,14 @@ export type KendoDateTimeSelectorProps = KendoDateTimeSelectorOptions & {
     actionButtons?: boolean;
 };
 
-const defaultProps = {
-    tab: 'date',
-    size: Size.medium,
-    actionButtons: true
-} as const;
-
 export const DateTimeSelector = (
     props: KendoDateTimeSelectorProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        tab = defaultProps.tab,
-        actionButtons = defaultProps.actionButtons,
+        size = Size.medium,
+        tab = "date",
+        actionButtons = true,
         dir,
         ...other
     } = props;
@@ -96,6 +90,5 @@ export const DateTimeSelector = (
 DateTimeSelector.states = states;
 DateTimeSelector.options = options;
 DateTimeSelector.className = DATETIMESELECTOR_CLASSNAME;
-DateTimeSelector.defaultProps = defaultProps;
 
 export default DateTimeSelector;

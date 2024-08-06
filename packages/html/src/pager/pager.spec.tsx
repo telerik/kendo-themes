@@ -34,37 +34,23 @@ export type KendoPagerProps = KendoPagerOptions & {
 
 export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Size.medium,
-    adaptive: false,
-    showPagerSizeInfo: true,
-    type: 'numeric',
-    pageSizes: true,
-    refresh: true,
-    previousNext: true,
-    info: "1 - 5 of 20 items",
-    itemsPerPage: 5,
-    maxPages: 6,
-    currentPage: 1,
-} as const;
-
 export const Pager = (
     props: KendoPagerProps &
         KendoPagerState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        adaptive = defaultProps.adaptive,
-        showPagerSizeInfo = defaultProps.showPagerSizeInfo,
-        itemsPerPage = defaultProps.itemsPerPage,
-        maxPages = defaultProps.maxPages,
-        currentPage = defaultProps.currentPage,
-        previousNext = defaultProps.previousNext,
-        type = defaultProps.type,
-        pageSizes = defaultProps.pageSizes,
-        refresh = defaultProps.refresh,
-        info = defaultProps.info,
+        size = Size.medium,
+        adaptive = false,
+        showPagerSizeInfo = true,
+        type = 'numeric',
+        pageSizes = true,
+        refresh = true,
+        previousNext = true,
+        info = "1 - 5 of 20 items",
+        itemsPerPage = 5,
+        maxPages = 6,
+        currentPage = 1,
         focus,
         disabled,
         dir,
@@ -236,6 +222,5 @@ export const Pager = (
 Pager.states = states;
 Pager.options = options;
 Pager.className = PAGER_CLASSNAME;
-Pager.defaultProps = defaultProps;
 
 export default Pager;
