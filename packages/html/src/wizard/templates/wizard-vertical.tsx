@@ -18,3 +18,5 @@ export const WizardVertical = ({ ...other }: any) => (
         {...other}
     />
 );
+
+export default WizardVertical;

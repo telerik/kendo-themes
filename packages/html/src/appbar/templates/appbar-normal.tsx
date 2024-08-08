@@ -29,3 +29,5 @@ export const AppbarNormal = (props) => (
     {...props} >
     </Appbar>
 );
+
+export default AppbarNormal;

@@ -58,11 +58,20 @@ jobs:
       - name: Create screenshots
         run: ./build/create-screenshots.sh ${{ matrix.theme }}
 
-      - name: Pack screenshots
-        run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
+      - name: Pack test screenshots
+        run: tar -cf test-screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
 
-      - name: Upload screenshots
+      - name: Pack template screenshots
+        run: tar -cf template-screenshots-${{ matrix.theme }}.tar templates/_output/${{ matrix.theme }}
+
+      - name: Upload test screenshots
         uses: actions/upload-artifact@v3
         with:
-          name: screenshots-${{ matrix.theme }}
-          path: screenshots-${{ matrix.theme }}.tar
+          name: test-screenshots-${{ matrix.theme }}
+          path: test-screenshots-${{ matrix.theme }}.tar
+
+      - name: Upload template screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: template-screenshots-${{ matrix.theme }}
+          path: template-screenshots-${{ matrix.theme }}.tar

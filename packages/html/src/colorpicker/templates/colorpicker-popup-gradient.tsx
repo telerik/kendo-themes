@@ -15,3 +15,5 @@ export const ColorPickerPopupGradient = ({ value, color, currentColor, ...other 
         {...other}
     />
 );
+
+export default ColorPickerPopupGradient;

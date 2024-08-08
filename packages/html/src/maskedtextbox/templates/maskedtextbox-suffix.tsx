@@ -11,3 +11,5 @@ export const MaskedTextboxSuffix = (props) => (
         {...props}
     />
 );
+
+export default MaskedTextboxSuffix;

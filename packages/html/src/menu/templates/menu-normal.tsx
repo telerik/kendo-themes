@@ -13,3 +13,5 @@ export const MenuNormal = ({ ...other }: any) => (
     {...other}
     />
 );
+
+export default MenuNormal;

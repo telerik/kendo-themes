@@ -60,3 +60,5 @@ export const DockManagerNormal = (props) => (
         {...props}
     />
 );
+
+export default DockManagerNormal;

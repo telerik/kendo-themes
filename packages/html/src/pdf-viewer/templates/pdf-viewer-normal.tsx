@@ -11,3 +11,5 @@ export const PDFViewerNormal = (props) => (
         {...props}
     />
 );
+
+export default PDFViewerNormal;

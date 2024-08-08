@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <span class="k-dropdowntree k-picker k-picker-md k-picker-solid k-rounded-md">
+        <span class="k-input-inner"></span>
+        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+            <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M256 352 128 160h256z"></path>
+                </svg>
+            </span>
+        </button>
+    </span>
+    <div class="k-animation-container k-animation-container-shown">
+        <div class="k-child-animation-container">
+            <div class="k-list-container k-dropdowntree-popup k-popup">
+                <div class="k-treeview k-treeview-md">
+                    <ul class="k-treeview-lines k-treeview-group">
+                        <li class="k-treeview-item">
+                            <span class="k-treeview-top">
+                                <span class="k-treeview-leaf">
+                                    <span class="k-treeview-leaf-text">Root 1</span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="k-treeview-item">
+                            <span class="k-treeview-bot">
+                                <span class="k-treeview-toggle">
+                                    <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 352 128 160h256z"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="k-treeview-leaf">
+                                    <span class="k-treeview-leaf-text">Root 2</span>
+                                </span>
+                            </span>
+                            <ul class="k-treeview-group">
+                                <li class="k-treeview-item">
+                                    <span class="k-treeview-top">
+                                        <span class="k-treeview-toggle">
+                                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M256 352 128 160h256z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                        <span class="k-treeview-leaf">
+                                            <span class="k-treeview-leaf-text">Child 2.1</span>
+                                        </span>
+                                    </span>
+                                    <ul class="k-treeview-group">
+                                        <li class="k-treeview-item">
+                                            <span class="k-treeview-bot">
+                                                <span class="k-treeview-leaf">
+                                                    <span class="k-treeview-leaf-text">Child 2.1.1</span>
+                                                </span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="k-treeview-item">
+                                    <span class="k-treeview-mid">
+                                        <span class="k-treeview-leaf">
+                                            <span class="k-treeview-leaf-text">Child 2.2</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="k-treeview-item">
+                                    <span class="k-treeview-bot">
+                                        <span class="k-treeview-load-more-button k-treeview-leaf">
+                                            <span class="k-treeview-leaf-text">Load more ...</span>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

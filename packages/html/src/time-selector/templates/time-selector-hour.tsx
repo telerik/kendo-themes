@@ -23,3 +23,5 @@ export const TimeSelectorHour = (props) => (
     >
     </Popup>
 );
+
+export default TimeSelectorHour;

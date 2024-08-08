@@ -61,3 +61,5 @@ export const DataTableList = (props) => (
         </TableFooter>
     </DataTable>
 );
+
+export default DataTableList;

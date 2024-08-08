@@ -18,3 +18,5 @@ export const ToolbarNormal = (props) => (
     {...props}>
     </Toolbar>
 );
+
+export default ToolbarNormal;

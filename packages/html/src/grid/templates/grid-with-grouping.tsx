@@ -93,3 +93,5 @@ export const GridWithGrouping = ({ contentClassName, ...other }: any) => (
         {...other} >
     </Grid>
 );
+
+export default GridWithGrouping;

@@ -25,3 +25,5 @@ export const DropdownTreePopup = (props) => (
         {...props}
     />
 );
+
+export default DropdownTreePopup;

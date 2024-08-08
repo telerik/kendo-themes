@@ -17,3 +17,5 @@ export const CheckboxGroupNormal = (props: any) => (
     {...props}
     />
 );
+
+export default CheckboxGroupNormal;

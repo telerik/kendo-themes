@@ -6,3 +6,5 @@ export const ColorEditorNormal = (props) => (
         {...props}
     />
 );
+
+export default ColorEditorNormal;

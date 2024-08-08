@@ -13,3 +13,5 @@ export const TimelineNormal = (props) => (
         {...props}>
     </Timeline>
 );
+
+export default TimelineNormal;

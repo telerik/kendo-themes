@@ -23,3 +23,5 @@ export const ChatWithOptions = (props) => (
         {...props}
     />
 );
+
+export default ChatWithOptions;

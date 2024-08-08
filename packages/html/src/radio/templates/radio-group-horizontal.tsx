@@ -18,3 +18,5 @@ export const RadioGroupHorizontal = ({ name, ...other }: any) => (
     {...other}
     />
 );
+
+export default RadioGroupHorizontal;

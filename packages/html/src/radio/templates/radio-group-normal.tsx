@@ -17,3 +17,5 @@ export const RadioGroupNormal = ({ name, ...other }: any) => (
     {...other}
     />
 );
+
+export default RadioGroupNormal;

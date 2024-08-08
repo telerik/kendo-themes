@@ -51,3 +51,5 @@ export const BreadcrumbCollapsingWrap = ({ dir, ...other }: any) => (
         {...other}>
     </Breadcrumb>
 );
+
+export default BreadcrumbCollapsingWrap;

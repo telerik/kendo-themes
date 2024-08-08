@@ -35,3 +35,5 @@ export const DropdownTreeFiltering = (props) => (
         {...props}
     />
 );
+
+export default DropdownTreeFiltering;

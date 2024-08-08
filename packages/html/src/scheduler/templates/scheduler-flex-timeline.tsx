@@ -112,3 +112,5 @@ export const SchedulerFlexTimeline = ({ style, ...props }: any) => (
         {...props}
     ></Scheduler>
 );
+
+export default SchedulerFlexTimeline;

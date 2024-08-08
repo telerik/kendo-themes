@@ -28,3 +28,5 @@ export const TreeviewLoadMore = (props) => (
     >
     </Treeview>
 );
+
+export default TreeviewLoadMore;

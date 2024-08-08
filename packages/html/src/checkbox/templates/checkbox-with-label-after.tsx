@@ -6,3 +6,5 @@ export const CheckboxWithLabelAfter = ({ children, id, ...other }: any) => (
         <label className={"k-checkbox-label"} htmlFor={id}>{children}</label>
     </>
 );
+
+export default CheckboxWithLabelAfter;

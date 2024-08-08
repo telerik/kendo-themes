@@ -16,3 +16,5 @@ export const VirtualListWithGrouping = (props) => (
         </ListGroup>
     </List>
 );
+
+export default VirtualListWithGrouping;

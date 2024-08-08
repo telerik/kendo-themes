@@ -67,3 +67,5 @@ export const GridWithColumnMenu = ({ contentClassName, sortable, resizable, ...o
         {...other}>
     </Grid>
 );
+
+export default GridWithColumnMenu;

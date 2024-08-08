@@ -40,3 +40,5 @@ export const CalendarInfiniteCentury = ({ firstCaption = "2000 - 2099", ...other
 
     </CalendarInfinite>
 );
+
+export default CalendarInfiniteCentury;

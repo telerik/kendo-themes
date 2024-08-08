@@ -10,3 +10,5 @@ export const ListGroupNormal = (props) => (
         {...props}
     />
 );
+
+export default ListGroupNormal;

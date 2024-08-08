@@ -6,3 +6,5 @@ export const PagerInput = (props) => (
         {...props}
     />
 );
+
+export default PagerInput;

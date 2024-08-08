@@ -123,3 +123,5 @@ export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, ...props
         {...props}
     />
 );
+
+export default MultiViewCalendarNormal;

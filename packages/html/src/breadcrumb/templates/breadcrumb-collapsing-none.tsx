@@ -37,3 +37,5 @@ export const BreadcrumbCollapsingNone = ({ dir, ...other }: any) => (
         {...other}>
     </Breadcrumb>
 );
+
+export default BreadcrumbCollapsingNone;

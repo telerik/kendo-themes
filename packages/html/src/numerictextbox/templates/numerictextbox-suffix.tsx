@@ -11,3 +11,5 @@ export const NumericTextboxSuffix = (props) => (
         {...props}
     />
 );
+
+export default NumericTextboxSuffix;

@@ -27,3 +27,5 @@ export const DropdownListGroupingFiltering = (props) => (
         {...props}
     />
 );
+
+export default DropdownListGroupingFiltering;

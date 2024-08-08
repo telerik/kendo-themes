@@ -15,3 +15,5 @@ export const MenuButtonPopup = (props) => (
         {...props}
     />
 );
+
+export default MenuButtonPopup;

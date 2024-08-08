@@ -6,11 +6,9 @@ const fs = require("fs");
 const path = require("path");
 
 const extension = `tsx`;
-const entryPoints = glob.sync(`./packages/html/src/**/tests/**/*.${extension}`, { dotRelative: true });
+const entryPoints = glob.sync(`./packages/html/src/{**/tests,!(utils)/templates}/**/*.${extension}`, { dotRelative: true });
 const index = fs.readFileSync("./packages/html/shared/index.html", "utf-8");
 
-const entiresMap = new Set();
-entryPoints.forEach((point) => entiresMap.add(point));
 
 (async() => {
     if (fs.existsSync(path.resolve("./packages/html/dist"))) {
@@ -26,7 +24,7 @@ entryPoints.forEach((point) => entiresMap.add(point));
         servedir: "./",
         port: 8000,
     });
-    const outputs = glob.sync(`./packages/html/dist/**/tests/**/app.js`, { dotRelative: false });
+    const outputs = glob.sync(`./packages/html/dist/{**/tests,!(utils)/templates}/**/app.js`, { dotRelative: false });
 
     // Then start a proxy server on port 3000
     http.createServer((req, res) => {

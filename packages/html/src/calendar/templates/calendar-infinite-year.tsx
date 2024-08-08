@@ -70,3 +70,5 @@ export const CalendarInfiniteYear = ({ firstCaption = "2021", secondCaption = "2
 
     </CalendarInfinite>
 );
+
+export default CalendarInfiniteYear;

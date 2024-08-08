@@ -11,3 +11,5 @@ export const TextareaPrefix = (props) => (
         {...props}
     />
 );
+
+export default TextareaPrefix;

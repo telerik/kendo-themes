@@ -7,3 +7,5 @@ export const ColorEditorGroup = (props) => (
         {...props}
     />
 );
+
+export default ColorEditorGroup;

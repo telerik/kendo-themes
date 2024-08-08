@@ -712,3 +712,5 @@ export const SchedulerFlexYear = ({ style, ...props }: any) => (
         {...props}
     />
 );
+
+export default SchedulerFlexYear;

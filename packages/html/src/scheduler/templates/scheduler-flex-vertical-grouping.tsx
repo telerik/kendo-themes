@@ -343,3 +343,5 @@ export const SchedulerFlexVerticalGrouping = ({ style, ...props }: any) => (
         {...props}
     />
 );
+
+export default SchedulerFlexVerticalGrouping;

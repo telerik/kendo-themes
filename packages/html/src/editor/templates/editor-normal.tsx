@@ -38,3 +38,5 @@ export const EditorNormal = (props) => (
         {...props}
     />
 );
+
+export default EditorNormal;

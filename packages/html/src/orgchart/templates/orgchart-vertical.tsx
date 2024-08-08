@@ -15,3 +15,5 @@ export const OrgchartVertical = ({ details, justifyContent, ...other }: any) => 
         {...other}
     />
 );
+
+export default OrgchartVertical;

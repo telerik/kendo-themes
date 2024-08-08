@@ -17,3 +17,5 @@ export const WizardNormal = ({ ...other }: any) => (
         {...other}
     />
 );
+
+export default WizardNormal;

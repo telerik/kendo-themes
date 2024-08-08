@@ -11,3 +11,5 @@ export const AutocompleteSuffix = (props) => (
         {...props}
     />
 );
+
+export default AutocompleteSuffix;

@@ -6,3 +6,5 @@ export const RadioButtonWithLabelBefore = ({ children, id, ...other }: any) => (
         <RadioButton {...other} id={id} />
     </>
 );
+
+export default RadioButtonWithLabelBefore;

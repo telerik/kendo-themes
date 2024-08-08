@@ -24,3 +24,5 @@ export const ChatWithToolbar = (props) => (
         {...props}
     />
 );
+
+export default ChatWithToolbar;

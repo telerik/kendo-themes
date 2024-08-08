@@ -11,3 +11,5 @@ export const TextareaSuffix = (props) => (
         {...props}
     />
 );
+
+export default TextareaSuffix;

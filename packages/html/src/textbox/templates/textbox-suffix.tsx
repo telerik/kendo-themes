@@ -11,3 +11,5 @@ export const TextboxSuffix = (props) => (
         {...props}
     />
 );
+
+export default TextboxSuffix;

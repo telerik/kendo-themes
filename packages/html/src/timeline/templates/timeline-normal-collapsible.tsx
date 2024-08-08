@@ -14,3 +14,5 @@ export const TimelineNormalCollapsible = (props) => (
         {...props}>
     </Timeline>
 );
+
+export default TimelineNormalCollapsible;

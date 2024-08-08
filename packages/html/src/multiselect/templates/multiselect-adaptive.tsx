@@ -6,3 +6,5 @@ export const MultiSelectAdaptive = (props) => (
         {...props}
     />
 );
+
+export default MultiSelectAdaptive;

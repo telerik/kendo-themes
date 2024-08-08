@@ -89,3 +89,5 @@ export const CalendarInfiniteWeekNumber = ({ firstCaption = "January 2021", seco
 
     </CalendarInfinite>
 );
+
+export default CalendarInfiniteWeekNumber;

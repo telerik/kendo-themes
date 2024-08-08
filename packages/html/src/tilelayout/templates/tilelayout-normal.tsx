@@ -14,3 +14,5 @@ export const TileLayoutNormal = (props) => (
     >
     </TileLayout>
 );
+
+export default TileLayoutNormal;

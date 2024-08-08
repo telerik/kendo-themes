@@ -7,3 +7,5 @@ export const WindowNormal = (props) => (
         } {...props}>
     </Window>
 );
+
+export default WindowNormal;

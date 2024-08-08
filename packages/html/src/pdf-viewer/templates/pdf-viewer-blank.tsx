@@ -27,3 +27,5 @@ export const PDFViewerBlank = (props) => (
         {...props}
     />
 );
+
+export default PDFViewerBlank;

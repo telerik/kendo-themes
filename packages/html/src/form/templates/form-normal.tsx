@@ -45,3 +45,5 @@ export const FormNormal = ({ size, ...other }: any) => (
         {...other}>
     </Form>
 );
+
+export default FormNormal;

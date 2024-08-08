@@ -14,3 +14,5 @@ export const ListWithGrouping = (props) => (
         </ListGroup>
     </List>
 );
+
+export default ListWithGrouping;

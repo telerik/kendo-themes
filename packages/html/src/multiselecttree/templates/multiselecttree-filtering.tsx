@@ -45,3 +45,5 @@ export const MultiSelectTreeFiltering = (props) => (
         {...props}
     />
 );
+
+export default MultiSelectTreeFiltering;

@@ -46,3 +46,5 @@ export const FormHorizontal = ({ size, ...other }: any) => (
         {...other}>
     </Form>
 );
+
+export default FormHorizontal;

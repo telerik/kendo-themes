@@ -27,3 +27,5 @@ export const TreeviewHierarchy = (props) => (
     >
     </Treeview>
 );
+
+export default TreeviewHierarchy;

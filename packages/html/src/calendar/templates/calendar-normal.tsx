@@ -63,3 +63,5 @@ export const CalendarNormal = ({ showCaptions, showOtherMonth, ...props }: any) 
         {...props}
     />
 );
+
+export default CalendarNormal;

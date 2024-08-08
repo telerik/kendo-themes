@@ -20,3 +20,5 @@ export const DropdownListFiltering = (props) => (
         {...props}
     />
 );
+
+export default DropdownListFiltering;

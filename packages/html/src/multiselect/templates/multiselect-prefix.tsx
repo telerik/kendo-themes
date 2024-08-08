@@ -17,3 +17,5 @@ export const MultiSelectPrefix = (props) => (
         {...props}
     />
 );
+
+export default MultiSelectPrefix;

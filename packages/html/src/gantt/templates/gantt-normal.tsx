@@ -796,3 +796,5 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "530px", ta
         </GanttContent>
     </Gantt>
 );
+
+export default GanttNormal;

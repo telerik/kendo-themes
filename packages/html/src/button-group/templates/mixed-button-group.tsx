@@ -10,3 +10,5 @@ export const MixedButtonGroup = (props) => (
         </>
     } />
 );
+
+export default MixedButtonGroup;

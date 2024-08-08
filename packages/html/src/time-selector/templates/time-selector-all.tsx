@@ -23,3 +23,5 @@ export const TimeSelectorAll = (props) => (
     >
     </Popup>
 );
+
+export default TimeSelectorAll;

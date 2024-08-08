@@ -11,3 +11,5 @@ export const DropdownGridPrefix = (props) => (
         {...props}
     />
 );
+
+export default DropdownGridPrefix;

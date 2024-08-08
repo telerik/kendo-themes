@@ -11,3 +11,5 @@ export const NumericTextboxPrefix = (props) => (
         {...props}
     />
 );
+
+export default NumericTextboxPrefix;

@@ -7,3 +7,5 @@ export const ColorEditorPalette = (props) => (
         {...props}
     />
 );
+
+export default ColorEditorPalette;
