@@ -6,7 +6,7 @@ export type InputSeparatorProps = {
     direction?: "horizontal" | "vertical";
 };
 
-const defaultProps = {
+const defaultOptions = {
     direction: "vertical"
 };
 
@@ -15,7 +15,7 @@ export const InputSeparator = (props:
     InputSeparatorProps
 ) => {
     const {
-        direction = defaultProps.direction,
+        direction = defaultOptions.direction,
         ...other
     } = props;
 

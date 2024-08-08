@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const ZoomControl = (
     props: React.HTMLAttributes<HTMLDivElement>
@@ -34,6 +34,6 @@ export const ZoomControl = (
 ZoomControl.states = states;
 ZoomControl.options = options;
 ZoomControl.className = ZOOMCONTROL_CLASSNAME;
-ZoomControl.defaultProps = defaultProps;
+ZoomControl.defaultOptions = defaultOptions;
 
 export default ZoomControl;

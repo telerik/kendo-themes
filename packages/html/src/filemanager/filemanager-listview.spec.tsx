@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const FileManagerListView = (
     props:
@@ -39,6 +39,6 @@ export const FileManagerListView = (
 FileManagerListView.states = states;
 FileManagerListView.options = options;
 FileManagerListView.className = FILEMANAGERLISTVIEW_CLASSNAME;
-FileManagerListView.defaultProps = defaultProps;
+FileManagerListView.defaultOptions = defaultOptions;
 
 export default FileManagerListView;

@@ -11,7 +11,7 @@ const states = [
 
 const options = {};
 
-const defaultProps = {
+const defaultOptions = {
     resizable: 'vertical',
     eventPrefix: <Icon icon="arrow-rotate-cw" />,
     eventSuffix: <><a href="#" className="k-link k-event-delete"><Icon icon="x" /></a></>
@@ -37,12 +37,12 @@ export const SchedulerEvent = (
         inverse,
         ongoing,
         multiDay,
-        resizable = defaultProps.resizable,
+        resizable = defaultOptions.resizable,
         hover,
         focus,
         selected,
-        eventPrefix = defaultProps.eventPrefix,
-        eventSuffix = defaultProps.eventSuffix,
+        eventPrefix = defaultOptions.eventPrefix,
+        eventSuffix = defaultOptions.eventSuffix,
         ...others
     } = props;
 
@@ -99,7 +99,7 @@ export const SchedulerEvent = (
 
 SchedulerEvent.states = states;
 SchedulerEvent.options = options;
-SchedulerEvent.defaultProps = defaultProps;
+SchedulerEvent.defaultOptions = defaultOptions;
 SchedulerEvent.className = className;
 
 export default SchedulerEvent;

@@ -19,7 +19,7 @@ export type RatingProps = {
     dir?: "rtl" | "ltr";
 };
 
-const defaultProps = {
+const defaultOptions = {
     max: 5,
 };
 
@@ -28,7 +28,7 @@ export const Rating = (
 ) => {
     const {
         value,
-        max = defaultProps.max,
+        max = defaultOptions.max,
         disabled,
         readonly,
         label,
@@ -80,6 +80,6 @@ export const Rating = (
 Rating.states = states;
 Rating.options = options;
 Rating.className = RATING_CLASSNAME;
-Rating.defaultProps = defaultProps;
+Rating.defaultOptions = defaultOptions;
 
 export default Rating;

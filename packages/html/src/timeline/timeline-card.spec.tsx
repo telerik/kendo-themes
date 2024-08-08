@@ -4,7 +4,7 @@ import { TimelineCardCallout } from '../timeline';
 
 const states = [];
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const TimelineCard = (
     props:
@@ -33,6 +33,6 @@ export const TimelineCard = (
 };
 
 TimelineCard.states = states;
-TimelineCard.defaultProps = defaultProps;
+TimelineCard.defaultOptions = defaultOptions;
 
 export default TimelineCard;

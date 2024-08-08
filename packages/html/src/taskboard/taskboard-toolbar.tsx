@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const TaskBoardToolbar = (
     props: KendoToolbarProps &
@@ -34,6 +34,6 @@ export const TaskBoardToolbar = (
 TaskBoardToolbar.states = states;
 TaskBoardToolbar.options = options;
 TaskBoardToolbar.className = TASKBOARDTOOLBAR_CLASSNAME;
-TaskBoardToolbar.defaultProps = defaultProps;
+TaskBoardToolbar.defaultOptions = defaultOptions;
 
 export default TaskBoardToolbar;

@@ -34,7 +34,7 @@ const defaultTabStripItems = (
     </>
 );
 
-const defaultProps = {
+const defaultOptions = {
     tabStripItems: defaultTabStripItems
 };
 
@@ -43,7 +43,7 @@ export const SpreadsheetSheetsBar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        tabStripItems,
+        tabStripItems = defaultOptions.tabStripItems,
         ...other
     } = props;
 
@@ -64,6 +64,6 @@ export const SpreadsheetSheetsBar = (
 SpreadsheetSheetsBar.states = states;
 SpreadsheetSheetsBar.options = options;
 SpreadsheetSheetsBar.className = SPREADSHEETSHEETSBAR_CLASSNAME;
-SpreadsheetSheetsBar.defaultProps = defaultProps;
+SpreadsheetSheetsBar.defaultOptions = defaultOptions;
 
 export default SpreadsheetSheetsBar;

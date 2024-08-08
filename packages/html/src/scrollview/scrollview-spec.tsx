@@ -17,7 +17,7 @@ export type KendoScrollViewProps = {
     rtl?: boolean;
 };
 
-const defaultProps = {
+const defaultOptions = {
     mode: "normal",
     views: 9,
     currentView: 5,
@@ -32,13 +32,13 @@ export const ScrollView = (
         & React.HtmlHTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        mode = defaultProps.mode,
-        views = defaultProps.views,
-        currentView = defaultProps.currentView,
-        animate = defaultProps.animate,
-        arrows = defaultProps.arrows,
-        pager = defaultProps.pager,
-        rtl = defaultProps.rtl,
+        mode = defaultOptions.mode,
+        views = defaultOptions.views,
+        currentView = defaultOptions.currentView,
+        animate = defaultOptions.animate,
+        arrows = defaultOptions.arrows,
+        pager = defaultOptions.pager,
+        rtl = defaultOptions.rtl,
         ...other
     } = props;
 
@@ -133,6 +133,6 @@ export const ScrollView = (
 ScrollView.states = states;
 ScrollView.options = options;
 ScrollView.className = SCROLLVIEW_CLASSNAME;
-ScrollView.defaultProps = defaultProps;
+ScrollView.defaultOptions = defaultOptions;
 
 export default ScrollView;

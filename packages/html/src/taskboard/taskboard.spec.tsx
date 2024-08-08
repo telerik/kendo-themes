@@ -27,7 +27,7 @@ const defaultToolbar =
         </TaskBoardToolbar>
     </>;
 
-const defaultProps = {
+const defaultOptions = {
     toolbar: defaultToolbar,
     pane: false,
     panePosition: "end",
@@ -40,9 +40,9 @@ export const TaskBoard = (
 ) => {
     const {
         disabled,
-        toolbar = defaultProps.toolbar,
-        panePosition = defaultProps.panePosition,
-        pane,
+        toolbar = defaultOptions.toolbar,
+        panePosition = defaultOptions.panePosition,
+        pane = defaultOptions.pane,
         ...other
     } = props;
 
@@ -89,6 +89,6 @@ export const TaskBoard = (
 TaskBoard.states = states;
 TaskBoard.options = options;
 TaskBoard.className = TASKBOARD_CLASSNAME;
-TaskBoard.defaultProps = defaultProps;
+TaskBoard.defaultOptions = defaultOptions;
 
 export default TaskBoard;

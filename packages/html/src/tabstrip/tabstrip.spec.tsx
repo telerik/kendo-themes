@@ -15,7 +15,7 @@ export type KendoTabStripProps = {
     dir?: "rtl" | "ltr";
 };
 
-const defaultProps = {
+const defaultOptions = {
     position: "top",
     header: true
 };
@@ -28,8 +28,8 @@ export const TabStrip = (
         scrollable,
         children,
         tabStripItems,
-        position = defaultProps.position,
-        header,
+        position = defaultOptions.position,
+        header = defaultOptions.header,
         dir,
         ...other
     } = props;
@@ -77,6 +77,6 @@ export const TabStrip = (
 TabStrip.states = states;
 TabStrip.options = options;
 TabStrip.className = TABSTRIP_CLASSNAME;
-TabStrip.defaultProps = defaultProps;
+TabStrip.defaultOptions = defaultOptions;
 
 export default TabStrip;

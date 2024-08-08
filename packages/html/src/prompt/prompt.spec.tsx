@@ -10,7 +10,7 @@ export type KendoPromptProps = {
     positionMode: "absolute" | "fixed";
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const Prompt = (
     props:
@@ -32,6 +32,6 @@ export const Prompt = (
 Prompt.states = states;
 Prompt.options = options;
 Prompt.className = PROMPT_CLASSNAME;
-Prompt.defaultProps = defaultProps;
+Prompt.defaultOptions = defaultOptions;
 
 export default Prompt;

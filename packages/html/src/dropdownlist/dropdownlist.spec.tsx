@@ -49,7 +49,7 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
 
 export type KendoDropdownListState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     showValue: true,
     arrowIconName: 'caret-alt-down',
     size: Size.medium,
@@ -63,15 +63,16 @@ export const DropdownList = (
         Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        arrowIconName = defaultOptions.arrowIconName,
+        showValue = defaultOptions.showValue,
         valueIconName,
-        arrowIconName = defaultProps.arrowIconName,
         prefix,
         suffix,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -80,7 +81,6 @@ export const DropdownList = (
         loading,
         disabled,
         readonly,
-        showValue = defaultProps.showValue,
         popup,
         opened,
         ...other
@@ -146,6 +146,6 @@ export const DropdownList = (
 DropdownList.states = states;
 DropdownList.options = options;
 DropdownList.className = DROPDOWNLIST_CLASSNAME;
-DropdownList.defaultProps = defaultProps;
+DropdownList.defaultOptions = defaultOptions;
 
 export default DropdownList;

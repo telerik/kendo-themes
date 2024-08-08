@@ -19,7 +19,7 @@ export type KendoSplitterSplitbarProps = {
 
 export type KendoSplitterSplitbarState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     orientation: "horizontal",
     draggable: true,
 };
@@ -32,8 +32,8 @@ export const SplitterSplitbar = (
     const {
         hover,
         focus,
-        orientation,
-        draggable,
+        orientation = defaultOptions.orientation,
+        draggable = defaultOptions.draggable,
         collapsePrev,
         collapseNext,
         ...other
@@ -77,6 +77,6 @@ export const SplitterSplitbar = (
 SplitterSplitbar.states = states;
 SplitterSplitbar.options = options;
 SplitterSplitbar.className = SPLITTERSPLITBAR_CLASSNAME;
-SplitterSplitbar.defaultProps = defaultProps;
+SplitterSplitbar.defaultOptions = defaultOptions;
 
 export default SplitterSplitbar;

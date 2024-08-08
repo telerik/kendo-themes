@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoPopoverProps = {
     callout?: null | 'top' | 'bottom' | 'left' | 'right';
@@ -55,6 +55,6 @@ export const Popover = (
 Popover.states = states;
 Popover.options = options;
 Popover.className = POPOVER_CLASSNAME;
-Popover.defaultProps = defaultProps;
+Popover.defaultOptions = defaultOptions;
 
 export default Popover;

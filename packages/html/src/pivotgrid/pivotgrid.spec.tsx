@@ -12,7 +12,7 @@ export type KendoPivotGridProps = {
     rowHeaders?: React.JSX.Element;
 };
 
-const defaultProps = {
+const defaultOptions = {
     emptyCell: <span className="k-pivotgrid-empty-cell" />
 };
 
@@ -21,7 +21,7 @@ export const PivotGrid = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        emptyCell,
+        emptyCell = defaultOptions.emptyCell,
         columnHeaders,
         rowHeaders,
         children,
@@ -52,6 +52,6 @@ export const PivotGrid = (
 PivotGrid.states = states;
 PivotGrid.options = options;
 PivotGrid.className = PIVOTGRID_CLASSNAME;
-PivotGrid.defaultProps = defaultProps;
+PivotGrid.defaultOptions = defaultOptions;
 
 export default PivotGrid;

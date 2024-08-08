@@ -36,7 +36,7 @@ export type KendoBadgeProps = KendoBadgeOptions & {
     align?: null | 'top-start' | 'top-end' | 'bottom-start' | 'bottom-end';
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     fillMode: FillMode.solid,
     themeColor: ThemeColor.primary,
@@ -48,11 +48,11 @@ export const Badge = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = defaultOptions.size,
+        fillMode = defaultOptions.fillMode,
+        themeColor = defaultOptions.themeColor,
+        cutoutBorder = defaultOptions.cutoutBorder,
         rounded,
-        fillMode = defaultProps.fillMode,
-        themeColor = defaultProps.themeColor,
-        cutoutBorder = defaultProps.cutoutBorder,
         position,
         align,
         ...other
@@ -85,6 +85,6 @@ export const Badge = (
 Badge.states = states;
 Badge.options = options;
 Badge.className = BADGE_CLASSNAME;
-Badge.defaultProps = defaultProps;
+Badge.defaultOptions = defaultOptions;
 
 export default Badge;

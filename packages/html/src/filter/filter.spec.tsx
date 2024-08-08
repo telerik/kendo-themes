@@ -13,7 +13,7 @@ export type KendoFilterProps = {
     showApplyButton?: boolean;
 }
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const Filter = (
     props: KendoFilterProps &
@@ -55,7 +55,7 @@ export const Filter = (
 
 Filter.states = states;
 Filter.options = options;
-Filter.defaultProps = defaultProps;
+Filter.defaultOptions = defaultOptions;
 Filter.className = FILTER_CLASSNAME;
 
 export default Filter;

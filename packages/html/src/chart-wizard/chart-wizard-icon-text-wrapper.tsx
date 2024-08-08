@@ -17,7 +17,7 @@ export type ChartWizardIconTextWrapperProps = {
 
 export type ChartWizardIconTextWrapperState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const ChartWizardIconTextWrapper = (
     props: ChartWizardIconTextWrapperProps &
@@ -55,6 +55,6 @@ export const ChartWizardIconTextWrapper = (
 ChartWizardIconTextWrapper.states = states;
 ChartWizardIconTextWrapper.options = options;
 ChartWizardIconTextWrapper.className = CHARTWIZARDICONTEXTWRAPPER_CLASSNAME;
-ChartWizardIconTextWrapper.defaultProps = defaultProps;
+ChartWizardIconTextWrapper.defaultOptions = defaultOptions;
 
 export default ChartWizardIconTextWrapper;

@@ -33,12 +33,6 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
-};
-
 export type KendoTimePickerOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -57,19 +51,26 @@ export type KendoTimePickerProps = KendoTimePickerOptions & {
 
 export type KendoTimePickerState = { [K in (typeof states)[number]]?: boolean };
 
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode
+};
+
+
 export const TimePicker = (
     props: KendoTimePickerProps &
         KendoTimePickerState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
         prefix,
         suffix,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -161,6 +162,6 @@ export const TimePicker = (
 TimePicker.states = states;
 TimePicker.options = options;
 TimePicker.className = TIMEPICKER_CLASSNAME;
-TimePicker.defaultProps = defaultProps;
+TimePicker.defaultOptions = defaultOptions;
 
 export default TimePicker;

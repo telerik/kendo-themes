@@ -26,7 +26,7 @@ export type KendoPivotGridCellProps = {
 
 export type KendoPivotGridCellState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const PivotGridCell = (
     props: KendoPivotGridCellProps &
@@ -82,6 +82,6 @@ export const PivotGridCell = (
 PivotGridCell.states = states;
 PivotGridCell.options = options;
 PivotGridCell.className = PIVOTGRIDCELL_CLASSNAME;
-PivotGridCell.defaultProps = defaultProps;
+PivotGridCell.defaultOptions = defaultOptions;
 
 export default PivotGridCell;

@@ -49,7 +49,7 @@ export type KendoMenuButtonProps = KendoMenuButtonOptions & {
 
 export type KendoMenuButtonState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     rounded: Roundness.medium,
     fillMode: FillMode.solid,
@@ -64,10 +64,10 @@ export const MenuButton = (
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
-        themeColor = defaultProps.themeColor,
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        themeColor = defaultOptions.themeColor,
         hover,
         focus,
         active,
@@ -75,8 +75,8 @@ export const MenuButton = (
         disabled,
         icon,
         text,
-        showArrow = defaultProps.showArrow,
-        arrowIconName = defaultProps.arrowIconName,
+        showArrow = defaultOptions.showArrow,
+        arrowIconName = defaultOptions.arrowIconName,
         popup,
         opened,
         ...other
@@ -117,6 +117,6 @@ export const MenuButton = (
 MenuButton.states = states;
 MenuButton.options = options;
 MenuButton.className = MENUBUTTON_CLASSNAME;
-MenuButton.defaultProps = defaultProps;
+MenuButton.defaultOptions = defaultOptions;
 
 export default MenuButton;

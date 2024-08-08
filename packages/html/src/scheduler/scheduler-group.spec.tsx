@@ -6,7 +6,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {
+const defaultOptions = {
     orientation: "horizontal"
 };
 
@@ -19,7 +19,7 @@ export const SchedulerGroup = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
+        orientation = defaultOptions.orientation,
         ...other
     } = props;
 
@@ -41,7 +41,7 @@ export const SchedulerGroup = (
 
 SchedulerGroup.states = states;
 SchedulerGroup.options = options;
-SchedulerGroup.defaultProps = defaultProps;
+SchedulerGroup.defaultOptions = defaultOptions;
 SchedulerGroup.className = className;
 
 export default SchedulerGroup;

@@ -13,7 +13,7 @@ export type KendoOrgchartGroupProps = {
     justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around';
 };
 
-const defaultProps = {
+const defaultOptions = {
     orientation: 'horizontal'
 };
 
@@ -23,7 +23,7 @@ export const OrgchartGroup = (
 ) => {
     const {
         children,
-        orientation = defaultProps.orientation,
+        orientation = defaultOptions.orientation,
         justifyContent,
         ...other
     } = props;
@@ -82,6 +82,6 @@ export const OrgchartGroup = (
 OrgchartGroup.states = states;
 OrgchartGroup.options = options;
 OrgchartGroup.className = ORGCHARTGROUP_CLASSNAME;
-OrgchartGroup.defaultProps = defaultProps;
+OrgchartGroup.defaultOptions = defaultOptions;
 
 export default OrgchartGroup;

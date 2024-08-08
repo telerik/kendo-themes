@@ -23,7 +23,7 @@ const defaultFormula = (
     </>
 );
 
-const defaultProps = {
+const defaultOptions = {
     formula: defaultFormula,
     cellName: "B6"
 };
@@ -33,8 +33,8 @@ export const SpreadsheetActionBar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        formula = defaultProps.formula,
-        cellName = defaultProps.cellName,
+        formula = defaultOptions.formula,
+        cellName = defaultOptions.cellName,
         ...other
     } = props;
 
@@ -64,6 +64,6 @@ export const SpreadsheetActionBar = (
 SpreadsheetActionBar.states = states;
 SpreadsheetActionBar.options = options;
 SpreadsheetActionBar.className = SPREADSHEETACTIONBAR_CLASSNAME;
-SpreadsheetActionBar.defaultProps = defaultProps;
+SpreadsheetActionBar.defaultOptions = defaultOptions;
 
 export default SpreadsheetActionBar;

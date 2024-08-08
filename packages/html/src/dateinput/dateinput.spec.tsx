@@ -42,10 +42,10 @@ export type KendoDateInputProps = KendoDateInputOptions & {
 
 export type KendoDateInputState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode
 };
 
 export const DateInput = (
@@ -54,11 +54,11 @@ export const DateInput = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -117,6 +117,6 @@ export const DateInput = (
 DateInput.states = states;
 DateInput.options = options;
 DateInput.className = DATEINPUT_CLASSNAME;
-DateInput.defaultProps = defaultProps;
+DateInput.defaultOptions = defaultOptions;
 
 export default DateInput;

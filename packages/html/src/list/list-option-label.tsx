@@ -11,7 +11,7 @@ const states = [
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoListOptionLabelProps = {
     text?: string;
@@ -54,6 +54,6 @@ export const ListOptionLabel = (
 ListOptionLabel.states = states;
 ListOptionLabel.options = options;
 ListOptionLabel.className = LIST_OPTIONLABEL_CLASSNAME;
-ListOptionLabel.defaultProps = defaultProps;
+ListOptionLabel.defaultOptions = defaultOptions;
 
 export default ListOptionLabel;

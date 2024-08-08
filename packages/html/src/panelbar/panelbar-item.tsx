@@ -23,7 +23,7 @@ export type KendoPanelBarItemProps = {
 
 export type PanelBarItemState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     level: 0,
     expanded: false,
     text: "Item"
@@ -35,16 +35,16 @@ export const PanelBarItem = (
     PanelBarItemState
 ) => {
     const {
+        text = defaultOptions.text,
+        level = defaultOptions.level,
+        expanded = defaultOptions.expanded,
         header,
-        level = defaultProps.level,
         hover,
         focus,
         selected,
         disabled,
-        expanded,
         icon,
         iconClass,
-        text,
         children,
         ...other
     } = props;
@@ -96,6 +96,6 @@ export const PanelBarItem = (
 PanelBarItem.states = states;
 PanelBarItem.options = options;
 PanelBarItem.className = PANELBARITEM_CLASSNAME;
-PanelBarItem.defaultProps = defaultProps;
+PanelBarItem.defaultOptions = defaultOptions;
 
 export default PanelBarItem;

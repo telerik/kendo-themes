@@ -38,7 +38,7 @@ export type SvgIconProps = SvgIconOptions & {
     icon?: SVGIcon | 'none';
 }
 
-const defaultProps = {
+const defaultOptions = {
     viewBox: '0 0 24 24'
 };
 
@@ -50,7 +50,7 @@ export const SvgIcon = (
         themeColor,
         rotate,
         flip,
-        viewBox = defaultProps.viewBox,
+        viewBox = defaultOptions.viewBox,
         icon,
         ...other
     } = props;
@@ -106,6 +106,6 @@ export const SvgIcon = (
 SvgIcon.states = states;
 SvgIcon.options = options;
 SvgIcon.className = SVGICON_CLASSNAME;
-SvgIcon.defaultProps = defaultProps;
+SvgIcon.defaultOptions = defaultOptions;
 
 export default SvgIcon;

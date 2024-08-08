@@ -11,7 +11,7 @@ export type KendoOrgchartProps = {
     height?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     width: '100%',
     height: '300px',
 };
@@ -21,8 +21,8 @@ export const Orgchart = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        width = defaultProps.width,
-        height = defaultProps.height,
+        width = defaultOptions.width,
+        height = defaultOptions.height,
         ...other
     } = props;
 
@@ -44,6 +44,6 @@ export const Orgchart = (
 Orgchart.states = states;
 Orgchart.options = options;
 Orgchart.className = ORGCHART_CLASSNAME;
-Orgchart.defaultProps = defaultProps;
+Orgchart.defaultOptions = defaultOptions;
 
 export default Orgchart;

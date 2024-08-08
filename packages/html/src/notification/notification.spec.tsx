@@ -32,7 +32,7 @@ export type KendoNotificationProps = KendoNotificationOptions & {
     icon?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     themeColor: ThemeColor.base,
     closable: false
 };
@@ -43,10 +43,10 @@ export const Notification = (
 ) => {
     const {
         actions,
-        themeColor = defaultProps.themeColor,
+        themeColor = defaultOptions.themeColor,
         text,
         icon,
-        closable = defaultProps.closable,
+        closable = defaultOptions.closable,
         ...other
     } = props;
 
@@ -86,6 +86,6 @@ export const Notification = (
 Notification.states = states;
 Notification.options = options;
 Notification.className = NOTIFICATION_CLASSNAME;
-Notification.defaultProps = defaultProps;
+Notification.defaultOptions = defaultOptions;
 
 export default Notification;

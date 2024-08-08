@@ -52,11 +52,11 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
 
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     tab: 'date',
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode
 } as const;
 
 export const DateTimePicker = (
@@ -65,13 +65,14 @@ export const DateTimePicker = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        tab = defaultOptions.tab,
         prefix,
         suffix,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -81,7 +82,6 @@ export const DateTimePicker = (
         disabled,
         readonly,
         opened,
-        tab = defaultProps.tab,
         dir,
         adaptive,
         adaptiveSettings,
@@ -156,6 +156,6 @@ export const DateTimePicker = (
 DateTimePicker.states = states;
 DateTimePicker.options = options;
 DateTimePicker.className = DATETIMEPICKER_CLASSNAME;
-DateTimePicker.defaultProps = defaultProps;
+DateTimePicker.defaultOptions = defaultOptions;
 
 export default DateTimePicker;

@@ -10,7 +10,7 @@ export type KendoGanttTaskDotProps = {
     position?: "start" | "end";
 };
 
-const defaultProps = {
+const defaultOptions = {
     position: "start"
 };
 
@@ -19,7 +19,7 @@ export const GanttTaskDot = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        position = defaultProps.position,
+        position = defaultOptions.position,
         ...other
     } = props;
 
@@ -42,6 +42,6 @@ export const GanttTaskDot = (
 GanttTaskDot.states = states;
 GanttTaskDot.options = options;
 GanttTaskDot.className = GANTTTASKWDOT_CLASSNAME;
-GanttTaskDot.defaultProps = defaultProps;
+GanttTaskDot.defaultOptions = defaultOptions;
 
 export default GanttTaskDot;

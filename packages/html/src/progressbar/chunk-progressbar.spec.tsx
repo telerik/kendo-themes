@@ -21,7 +21,7 @@ export type KendoChunkProgressBarProps = {
 
 export type KendoChunkProgressBarState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     chunkCount: 5,
     orientation: 'horizontal',
     progress: 0
@@ -34,10 +34,10 @@ export const ChunkProgressBar = (
 ) => {
     const {
         disabled,
-        chunkCount = defaultProps.chunkCount,
+        chunkCount = defaultOptions.chunkCount,
         indeterminate,
-        orientation = defaultProps.orientation,
-        progress = defaultProps.progress,
+        orientation = defaultOptions.orientation,
+        progress = defaultOptions.progress,
         reverse,
         ...other
     } = props;
@@ -77,6 +77,6 @@ export const ChunkProgressBar = (
 ChunkProgressBar.states = states;
 ChunkProgressBar.options = options;
 ChunkProgressBar.className = CHUNKPROGRESSBAR_CLASSNAME;
-ChunkProgressBar.defaultProps = defaultProps;
+ChunkProgressBar.defaultOptions = defaultOptions;
 
 export default ChunkProgressBar;

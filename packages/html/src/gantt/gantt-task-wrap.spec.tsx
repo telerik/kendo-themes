@@ -10,7 +10,7 @@ export type KendoGanttTaskWrapProps = {
     type?: "single" | "milestone" | "summary";
 };
 
-const defaultProps = {
+const defaultOptions = {
     type: "single"
 };
 
@@ -19,7 +19,7 @@ export const GanttTaskWrap = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        type = defaultProps.type,
+        type = defaultOptions.type,
         ...other
     } = props;
 
@@ -42,6 +42,6 @@ export const GanttTaskWrap = (
 GanttTaskWrap.states = states;
 GanttTaskWrap.options = options;
 GanttTaskWrap.className = GANTTTASKWRAP_CLASSNAME;
-GanttTaskWrap.defaultProps = defaultProps;
+GanttTaskWrap.defaultOptions = defaultOptions;
 
 export default GanttTaskWrap;

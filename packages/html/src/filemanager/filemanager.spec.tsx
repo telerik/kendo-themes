@@ -43,7 +43,7 @@ const defaultToolbar =
         </FileManagerToolbar>
     </>;
 
-const defaultProps = {
+const defaultOptions = {
     toolbar: defaultToolbar,
 };
 
@@ -54,7 +54,7 @@ export const FileManager = (
 ) => {
     const {
         disabled,
-        toolbar = defaultProps.toolbar,
+        toolbar = defaultOptions.toolbar,
     } = props;
 
     return (
@@ -79,6 +79,6 @@ export const FileManager = (
 FileManager.states = states;
 FileManager.options = options;
 FileManager.className = FILEMANAGER_CLASSNAME;
-FileManager.defaultProps = defaultProps;
+FileManager.defaultOptions = defaultOptions;
 
 export default FileManager;

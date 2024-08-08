@@ -15,7 +15,7 @@ const states = [
 const options = {};
 
 export type KendoColorGradientProps = {
-    mode: 'rgba' | 'rgb' | 'hsva' | 'hsv' | 'hex';
+    mode?: 'rgba' | 'rgb' | 'hsva' | 'hsv' | 'hex';
     dir?: 'ltr' | 'rtl';
     contrast?: boolean;
     hoverHandle?: boolean;
@@ -27,7 +27,7 @@ export type KendoColorGradientProps = {
 
 export type KendoColorGradientState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     mode: 'rgba',
     readonly: false,
     disabled: false,
@@ -43,18 +43,18 @@ export const ColorGradient = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        mode = defaultProps.mode,
-        readonly = defaultProps.readonly,
-        disabled = defaultProps.disabled,
+        mode = defaultOptions.mode,
+        readonly = defaultOptions.readonly,
+        disabled = defaultOptions.disabled,
+        gradientStyle = defaultOptions.gradientStyle,
+        dragHandleStyle = defaultOptions.dragHandleStyle,
+        alphaStyle = defaultOptions.alphaStyle,
+        contrast = defaultOptions.contrast,
         dir,
-        contrast = defaultProps.contrast,
         hover,
         focus,
         hoverHandle,
         focusHandle,
-        gradientStyle = defaultProps.gradientStyle,
-        dragHandleStyle = defaultProps.dragHandleStyle,
-        alphaStyle = defaultProps.alphaStyle,
     } = props;
 
     return (
@@ -97,6 +97,6 @@ export const ColorGradient = (
 ColorGradient.states = states;
 ColorGradient.options = options;
 ColorGradient.className = COLOR_GRADIENT_CLASSNAME;
-ColorGradient.defaultProps = defaultProps;
+ColorGradient.defaultOptions = defaultOptions;
 
 export default ColorGradient;

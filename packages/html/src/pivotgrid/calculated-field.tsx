@@ -24,7 +24,7 @@ const defaultFieldActions = (
     </>
 );
 
-const defaultProps = {
+const defaultOptions = {
     headerContent: <div className="k-calculated-field-header-text">Date.Calendar</div>,
     headerActions: <Button fillMode="flat" icon="x"></Button>,
     fieldActions: defaultFieldActions
@@ -35,9 +35,9 @@ export const CalculatedField = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        headerContent = defaultProps.headerContent,
-        headerActions = defaultProps.headerActions,
-        fieldActions = defaultProps.fieldActions,
+        headerContent = defaultOptions.headerContent,
+        headerActions = defaultOptions.headerActions,
+        fieldActions = defaultOptions.fieldActions,
         children,
         ...other
     } = props;
@@ -74,6 +74,6 @@ export const CalculatedField = (
 CalculatedField.states = states;
 CalculatedField.options = options;
 CalculatedField.className = CALCULATEDFIELD_CLASSNAME;
-CalculatedField.defaultProps = defaultProps;
+CalculatedField.defaultOptions = defaultOptions;
 
 export default CalculatedField;

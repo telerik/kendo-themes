@@ -29,7 +29,7 @@ export type KendoStepProps = {
 
 export type StepState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const Step = (
     props: KendoStepProps & StepState &
@@ -124,6 +124,6 @@ export const Step = (
 Step.options = options;
 Step.states = states;
 Step.className = STEP_CLASSNAME;
-Step.defaultProps = defaultProps;
+Step.defaultOptions = defaultOptions;
 
 export default Step;

@@ -10,7 +10,7 @@ export type KendoColumnMenuProps = {
     view?: 'list' | 'tabbed';
 };
 
-const defaultProps = {
+const defaultOptions = {
     view: 'list',
 };
 
@@ -19,7 +19,7 @@ export const ColumnMenu = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        view = defaultProps.view,
+        view = defaultOptions.view,
         ...other
     } = props;
 
@@ -41,6 +41,6 @@ export const ColumnMenu = (
 ColumnMenu.states = states;
 ColumnMenu.options = options;
 ColumnMenu.className = COLUMNMENU_CLASSNAME;
-ColumnMenu.defaultProps = defaultProps;
+ColumnMenu.defaultOptions = defaultOptions;
 
 export default ColumnMenu;

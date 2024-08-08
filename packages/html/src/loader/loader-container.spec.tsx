@@ -34,7 +34,7 @@ export type KendoLoaderContainerProps = KendoLoaderContainerOptions & {
     panel?: boolean;
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     themeColor: ThemeColor.primary,
     loaderType: 'pulsing',
@@ -48,12 +48,12 @@ export const LoaderContainer = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        themeColor = defaultProps.themeColor,
-        loaderType = defaultProps.loaderType,
-        position = defaultProps.position,
-        overlay = defaultProps.overlay,
-        panel = defaultProps.panel,
+        size = defaultOptions.size,
+        themeColor = defaultOptions.themeColor,
+        loaderType = defaultOptions.loaderType,
+        position = defaultOptions.position,
+        overlay = defaultOptions.overlay,
+        panel = defaultOptions.panel,
         ...other
     } = props;
 
@@ -90,6 +90,6 @@ export const LoaderContainer = (
 LoaderContainer.states = states;
 LoaderContainer.options = options;
 LoaderContainer.className = LOADERCONTAINER_CLASSNAME;
-LoaderContainer.defaultProps = defaultProps;
+LoaderContainer.defaultOptions = defaultOptions;
 
 export default LoaderContainer;

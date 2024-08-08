@@ -12,7 +12,7 @@ export type KendoDataTableOptions = {
   size?: (typeof options.size)[number] | null;
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
 };
 
@@ -21,7 +21,7 @@ export const DataTable = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = defaultOptions.size,
         ...other
     } = props;
 
@@ -44,6 +44,6 @@ export const DataTable = (
 DataTable.states = states;
 DataTable.options = options;
 DataTable.className = DATATABLE_CLASSNAME;
-DataTable.defaultProps = defaultProps;
+DataTable.defaultOptions = defaultOptions;
 
 export default DataTable;

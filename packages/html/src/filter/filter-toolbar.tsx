@@ -10,7 +10,7 @@ export type KendoFilterToolbarProps = {
     children?: React.JSX.Element | React.JSX.Element[];
 }
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const FilterToolbar = (
     props: KendoFilterToolbarProps &
@@ -27,6 +27,6 @@ export const FilterToolbar = (
 
 FilterToolbar.states = states;
 FilterToolbar.options = options;
-FilterToolbar.defaultProps = defaultProps;
+FilterToolbar.defaultOptions = defaultOptions;
 
 export default FilterToolbar;

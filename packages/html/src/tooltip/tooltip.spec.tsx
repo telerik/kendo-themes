@@ -32,7 +32,7 @@ export type KendoTooltipProps = KendoTooltipOptions & {
     icon?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     closable: false
 };
 
@@ -41,8 +41,8 @@ export const Tooltip = (
         Omit<React.HTMLAttributes<HTMLDivElement>, 'content'>
 ) => {
     const {
+        closable = defaultOptions.closable,
         callout,
-        closable,
         themeColor,
         title,
         content,
@@ -85,6 +85,6 @@ export const Tooltip = (
 Tooltip.states = states;
 Tooltip.options = options;
 Tooltip.className = TOOLTIP_CLASSNAME;
-Tooltip.defaultProps = defaultProps;
+Tooltip.defaultOptions = defaultOptions;
 
 export default Tooltip;

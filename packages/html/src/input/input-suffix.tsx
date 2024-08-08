@@ -6,7 +6,7 @@ export type KendoInputSuffixProps = {
     direction?: "horizontal" | "vertical";
 };
 
-const defaultProps = {
+const defaultOptions = {
     direction: "horizontal"
 };
 
@@ -15,7 +15,7 @@ export const InputSuffix = (props:
     React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        direction = defaultProps.direction,
+        direction = defaultOptions.direction,
         ...other
     } = props;
 

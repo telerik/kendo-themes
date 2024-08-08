@@ -25,7 +25,7 @@ export type KendoSliderProps = {
 
 export type KendoSliderState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     type: 'single',
     orientation: 'horizontal',
     readonly: false,
@@ -41,13 +41,13 @@ export const Slider = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        type = defaultProps.type,
-        orientation = defaultProps.orientation,
-        readonly = defaultProps.readonly,
-        disabled = defaultProps.disabled,
-        handlePosition = defaultProps.handlePosition,
-        showButtons = defaultProps.showButtons,
-        showTicks = defaultProps.showTicks,
+        type = defaultOptions.type,
+        orientation = defaultOptions.orientation,
+        readonly = defaultOptions.readonly,
+        disabled = defaultOptions.disabled,
+        handlePosition = defaultOptions.handlePosition,
+        showButtons = defaultOptions.showButtons,
+        showTicks = defaultOptions.showTicks,
         hover,
         focus,
         active,
@@ -123,6 +123,6 @@ export const Slider = (
 Slider.states = states;
 Slider.options = options;
 Slider.className = SLIDER_CLASSNAME;
-Slider.defaultProps = defaultProps;
+Slider.defaultOptions = defaultOptions;
 
 export default Slider;

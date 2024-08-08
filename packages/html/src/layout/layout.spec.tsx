@@ -13,7 +13,7 @@ export type KendoLayoutProps = {
     wrap?: boolean;
 };
 
-const defaultProps = {
+const defaultOptions = {
     type: null,
     orientation: null,
     alignItems: null,
@@ -27,12 +27,12 @@ export const Layout = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        type = defaultProps.type,
-        orientation = defaultProps.orientation,
-        alignItems = defaultProps.alignItems,
-        justifyContent = defaultProps.justifyContent,
-        justifyItems = defaultProps.justifyItems,
-        wrap = defaultProps.wrap,
+        type = defaultOptions.type,
+        orientation = defaultOptions.orientation,
+        alignItems = defaultOptions.alignItems,
+        justifyContent = defaultOptions.justifyContent,
+        justifyItems = defaultOptions.justifyItems,
+        wrap = defaultOptions.wrap,
         ...other
     } = props;
 

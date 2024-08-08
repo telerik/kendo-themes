@@ -8,7 +8,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {
+const defaultOptions = {
     markStyle: { backgroundColor: "gold" },
 };
 
@@ -26,7 +26,7 @@ export const SchedulerTask = (
 ) => {
     const {
         text,
-        markStyle,
+        markStyle = defaultOptions.markStyle,
         recurring,
         closable,
         ...other
@@ -54,7 +54,7 @@ export const SchedulerTask = (
 
 SchedulerTask.states = states;
 SchedulerTask.options = options;
-SchedulerTask.defaultProps = defaultProps;
+SchedulerTask.defaultOptions = defaultOptions;
 SchedulerTask.className = className;
 
 export default SchedulerTask;

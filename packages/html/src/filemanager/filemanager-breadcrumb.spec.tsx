@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const FileManagerBreadcrumb = (
     props: KendoBreadcrumbProps &
@@ -34,6 +34,6 @@ export const FileManagerBreadcrumb = (
 FileManagerBreadcrumb.states = states;
 FileManagerBreadcrumb.options = options;
 FileManagerBreadcrumb.className = FILEMANAGERBREADCRUMB_CLASSNAME;
-FileManagerBreadcrumb.defaultProps = defaultProps;
+FileManagerBreadcrumb.defaultOptions = defaultOptions;
 
 export default FileManagerBreadcrumb;

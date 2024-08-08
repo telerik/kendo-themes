@@ -33,10 +33,10 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode,
     separators: true
 };
 
@@ -68,14 +68,14 @@ export const DropdownGrid = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        separators = defaultOptions.separators,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -229,6 +229,6 @@ export const DropdownGrid = (
 DropdownGrid.states = states;
 DropdownGrid.options = options;
 DropdownGrid.className = DROPDOWNGRID_CLASSNAME;
-DropdownGrid.defaultProps = defaultProps;
+DropdownGrid.defaultOptions = defaultOptions;
 
 export default DropdownGrid;

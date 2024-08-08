@@ -26,7 +26,7 @@ const defaultToolbarItems = [
     <Button fillMode="flat" icon="fullscreen" className="k-fullscreen-button"></Button>
 ];
 
-const defaultProps = {
+const defaultOptions = {
     toolbarItems: defaultToolbarItems,
 };
 
@@ -36,7 +36,7 @@ export const MediaPlayerToolbar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        toolbarItems = defaultProps.toolbarItems,
+        toolbarItems = defaultOptions.toolbarItems,
         ...other
     } = props;
 
@@ -56,6 +56,6 @@ export const MediaPlayerToolbar = (
 MediaPlayerToolbar.states = states;
 MediaPlayerToolbar.options = options;
 MediaPlayerToolbar.className = MEDIAPLAYERTOOLBAR_CLASSNAME;
-MediaPlayerToolbar.defaultProps = defaultProps;
+MediaPlayerToolbar.defaultOptions = defaultOptions;
 
 export default MediaPlayerToolbar;

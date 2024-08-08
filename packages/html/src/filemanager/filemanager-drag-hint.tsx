@@ -12,7 +12,7 @@ export type KendoFileManagerDragHintProps = {
     icon?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     icon: "file",
 };
 
@@ -23,7 +23,7 @@ export const FileManagerDragHint = (
 ) => {
     const {
         hint,
-        icon = defaultProps.icon,
+        icon = defaultOptions.icon,
         ...other
     } = props;
 
@@ -44,6 +44,6 @@ export const FileManagerDragHint = (
 FileManagerDragHint.states = states;
 FileManagerDragHint.options = options;
 FileManagerDragHint.className = FILEMANAGERDRAGHINT_CLASSNAME;
-FileManagerDragHint.defaultProps = defaultProps;
+FileManagerDragHint.defaultOptions = defaultOptions;
 
 export default FileManagerDragHint;

@@ -24,7 +24,7 @@ const defaultAttribution = (
     </>
 );
 
-const defaultProps = {
+const defaultOptions = {
     attribution: defaultAttribution,
     markerStyle: { zIndex: "1000", left: "500px", top: "300px" },
     scrollContainerStyle: { transformOrigin: "left top 0px" },
@@ -38,11 +38,11 @@ export const Map = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        attribution = defaultProps.attribution,
-        markerStyle,
-        scrollContainerStyle,
-        horizontalScrollbarStyle,
-        verticalScrollbarStyle,
+        attribution = defaultOptions.attribution,
+        markerStyle = defaultOptions.markerStyle,
+        scrollContainerStyle = defaultOptions.scrollContainerStyle,
+        horizontalScrollbarStyle = defaultOptions.horizontalScrollbarStyle,
+        verticalScrollbarStyle = defaultOptions.verticalScrollbarStyle,
         children,
         ...other
     } = props;
@@ -82,6 +82,6 @@ export const Map = (
 Map.states = states;
 Map.options = options;
 Map.className = MAP_CLASSNAME;
-Map.defaultProps = defaultProps;
+Map.defaultOptions = defaultOptions;
 
 export default Map;

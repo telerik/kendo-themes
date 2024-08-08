@@ -11,7 +11,7 @@ export type KendoDockManagerToolbarProps = {
     toolbarItems?: React.JSX.Element | React.JSX.Element[];
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const DockManagerToolbar = (
     props: KendoToolbarProps &
@@ -39,6 +39,6 @@ export const DockManagerToolbar = (
 DockManagerToolbar.states = states;
 DockManagerToolbar.options = options;
 DockManagerToolbar.className = DOCKMANAGERTOOLBAR_CLASSNAME;
-DockManagerToolbar.defaultProps = defaultProps;
+DockManagerToolbar.defaultOptions = defaultOptions;
 
 export default DockManagerToolbar;

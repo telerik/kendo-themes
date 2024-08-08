@@ -1,13 +1,13 @@
 import { classNames } from '../misc';
 
-const className = `k-calendar-view`;
+const CALENDARVIEW_CLASSNAME = `k-calendar-view`;
 
 export type KendoCalendarViewProps = {
     orientation?: 'vertical' | 'horizontal',
     calendarView?: 'month' | 'year' | 'decade' | 'century';
 };
 
-const defaultProps = {
+const defaultOptions = {
     orientation: 'horizontal',
     calendarView: 'month'
 } as const;
@@ -17,8 +17,8 @@ export const CalendarView = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
-        calendarView = defaultProps.calendarView,
+        orientation = defaultOptions.orientation,
+        calendarView = defaultOptions.calendarView,
         ...other
     } = props;
 
@@ -27,7 +27,7 @@ export const CalendarView = (
             {...other}
             className={classNames(
                 props.className,
-                className,
+                CALENDARVIEW_CLASSNAME,
                 `k-calendar-${calendarView}view`,
                 'k-align-items-start',
                 'k-justify-content-center',
@@ -40,5 +40,8 @@ export const CalendarView = (
         </div>
     );
 };
+
+CalendarView.className = CALENDARVIEW_CLASSNAME;
+CalendarView.defaultOptions = defaultOptions;
 
 export default CalendarView;

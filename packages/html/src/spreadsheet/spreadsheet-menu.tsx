@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const SpreadsheetMenu = (
     props: KendoMenuProps &
@@ -34,6 +34,6 @@ export const SpreadsheetMenu = (
 SpreadsheetMenu.states = states;
 SpreadsheetMenu.options = options;
 SpreadsheetMenu.className = SPREADSHEETMENU_CLASSNAME;
-SpreadsheetMenu.defaultProps = defaultProps;
+SpreadsheetMenu.defaultOptions = defaultOptions;
 
 export default SpreadsheetMenu;

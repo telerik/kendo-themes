@@ -25,7 +25,7 @@ export type KendoFormProps = KendoFormOptions & {
     children?: React.JSX.Element | React.JSX.Element[];
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     layout: 'basic',
     tag: 'form'
@@ -36,14 +36,14 @@ export const Form = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = defaultOptions.size,
         orientation,
-        layout = defaultProps.layout,
+        layout = defaultOptions.layout,
         formButtons,
         cols,
         gapX,
         gapY,
-        tag = defaultProps.tag,
+        tag = defaultOptions.tag,
         children
     } = props;
 
@@ -108,7 +108,7 @@ export const Form = (
 Form.states = states;
 Form.options = options;
 Form.className = FORM_CLASSNAME;
-Form.defaultProps = defaultProps;
+Form.defaultOptions = defaultOptions;
 
 export default Form;
 

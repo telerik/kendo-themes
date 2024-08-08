@@ -6,7 +6,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const TabStripItems = (
     props: React.HTMLAttributes<HTMLUListElement>
@@ -31,6 +31,6 @@ export const TabStripItems = (
 TabStripItems.states = states;
 TabStripItems.options = options;
 TabStripItems.className = TABSTRIPITEMS_CLASSNAME;
-TabStripItems.defaultProps = defaultProps;
+TabStripItems.defaultOptions = defaultOptions;
 
 export default TabStripItems;

@@ -6,7 +6,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoSchedulerViewProps = {
     view?: "day" | "week" | "month" | "agenda" | "timeline" | "year";
@@ -42,6 +42,6 @@ export const SchedulerView = (
 SchedulerView.states = states;
 SchedulerView.options = options;
 SchedulerView.className = SCHEDULER_VIEW_CLASSNAME;
-SchedulerView.defaultProps = defaultProps;
+SchedulerView.defaultOptions = defaultOptions;
 
 export default SchedulerView;

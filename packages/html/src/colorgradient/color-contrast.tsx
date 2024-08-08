@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const ColorContrast = (
 ) => (
@@ -39,6 +39,6 @@ export const ColorContrast = (
 ColorContrast.states = states;
 ColorContrast.options = options;
 ColorContrast.className = COLOR_CONTRAST_CLASSNAME;
-ColorContrast.defaultProps = defaultProps;
+ColorContrast.defaultOptions = defaultOptions;
 
 export default ColorContrast;

@@ -42,12 +42,12 @@ export type KendoSearchboxProps = KendoSearchboxOptions & {
 
 export type KendoSearchboxState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     showIcon: true,
     icon: "search",
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode
 };
 
 export const Searchbox = (
@@ -68,8 +68,8 @@ export const Searchbox = (
         required,
         loading,
         disabled,
-        showIcon = defaultProps.showIcon,
-        icon = defaultProps.icon,
+        showIcon = defaultOptions.showIcon,
+        icon = defaultOptions.icon,
         ...other
     } = props;
 
@@ -101,6 +101,6 @@ export const Searchbox = (
 Searchbox.states = states;
 Searchbox.options = options;
 Searchbox.className = SEARCHBOX_CLASSNAME;
-Searchbox.defaultProps = defaultProps;
+Searchbox.defaultOptions = defaultOptions;
 
 export default Searchbox;

@@ -28,7 +28,7 @@ export type KendoMenuListItemProps = {
 
 export type KendoMenuListItemState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     dir: 'ltr'
 } as const;
 
@@ -49,7 +49,7 @@ export const MenuListItem = (
         last,
         showArrow,
         arrowIconName,
-        dir = defaultProps.dir,
+        dir = defaultOptions.dir,
         children,
         popup,
         ...other
@@ -117,6 +117,6 @@ export const MenuListItem = (
 MenuListItem.states = states;
 MenuListItem.options = options;
 MenuListItem.className = MENULISTITEM_CLASSNAME;
-MenuListItem.defaultProps = defaultProps;
+MenuListItem.defaultOptions = defaultOptions;
 
 export default MenuListItem;

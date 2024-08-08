@@ -17,7 +17,7 @@ export type KendoCalendarHeaderProps = {
     dir?: 'ltr' | 'rtl';
 };
 
-const defaultProps = {
+const defaultOptions = {
     calendarTitleText: 'October 2021',
     showToday: true,
     showNavigationButtons: true,
@@ -30,11 +30,11 @@ export const CalendarHeader = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        calendarTitleText = defaultProps.calendarTitleText,
-        showToday = defaultProps.showToday,
-        showNavigationButtons = defaultProps.showNavigationButtons,
-        orientation = defaultProps.orientation,
-        size = defaultProps.size,
+        calendarTitleText = defaultOptions.calendarTitleText,
+        showToday = defaultOptions.showToday,
+        showNavigationButtons = defaultOptions.showNavigationButtons,
+        orientation = defaultOptions.orientation,
+        size = defaultOptions.size,
         calendarView,
         dir,
         ...other
@@ -67,6 +67,6 @@ export const CalendarHeader = (
 
 CalendarHeader.options = options;
 CalendarHeader.className = CALENDARHEADER_CLASSNAME;
-CalendarHeader.defaultProps = defaultProps;
+CalendarHeader.defaultOptions = defaultOptions;
 
 export default CalendarHeader;

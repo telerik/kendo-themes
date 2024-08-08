@@ -20,7 +20,7 @@ export type KendoBottomNavItemProps = {
 
 export type KendoBottomNavItemState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const BottomNavItem = (
     props: KendoBottomNavItemProps &
@@ -57,6 +57,6 @@ export const BottomNavItem = (
 BottomNavItem.states = states;
 BottomNavItem.options = options;
 BottomNavItem.className = BOTTOM_NAV_ITEM_CLASSNAME;
-BottomNavItem.defaultProps = defaultProps;
+BottomNavItem.defaultOptions = defaultOptions;
 
 export default BottomNavItem;

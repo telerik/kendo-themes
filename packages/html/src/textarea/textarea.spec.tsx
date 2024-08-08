@@ -24,21 +24,11 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    flow: "vertical",
-    affixesOrientation: "horizontal",
-    resize: "both",
-    separators: true
-};
-
 export type KendoTextareaOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
     fillMode?: (typeof options.fillMode)[number] | null;
-    resize: "x" | "y" | "both" | "none";
+    resize?: "x" | "y" | "both" | "none";
 };
 
 export type KendoTextareaProps = KendoTextareaOptions & {
@@ -54,30 +44,40 @@ export type KendoTextareaProps = KendoTextareaOptions & {
 
 export type KendoTextareaState = { [K in (typeof states)[number]]?: boolean };
 
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode,
+    flow: "vertical",
+    affixesOrientation: "horizontal",
+    resize: "both",
+    separators: true
+} as const;
+
 export const Textarea = (
     props: KendoTextareaProps &
         KendoTextareaState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        separators = defaultOptions.separators,
+        affixesOrientation = defaultOptions.affixesOrientation,
+        flow = defaultOptions.flow,
+        resize = defaultOptions.resize,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         rows,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
         invalid,
         required,
         disabled,
-        flow = defaultProps.flow,
-        affixesOrientation,
-        resize = defaultProps.resize,
         ...other
     } = props;
 
@@ -151,6 +151,6 @@ export const Textarea = (
 Textarea.states = states;
 Textarea.options = options;
 Textarea.className = TEXTAREA_CLASSNAME;
-Textarea.defaultProps = defaultProps;
+Textarea.defaultOptions = defaultOptions;
 
 export default Textarea;

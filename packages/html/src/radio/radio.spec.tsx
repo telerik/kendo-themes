@@ -26,7 +26,7 @@ export type RadioButtonOptions = {
   size?: (typeof options.size)[number] | null;
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium
 };
 
@@ -42,7 +42,7 @@ export const RadioButton = (
         invalid,
         valid,
         required,
-        size = defaultProps.size,
+        size = defaultOptions.size,
         ...other
     } = props;
 
@@ -68,6 +68,6 @@ export const RadioButton = (
 RadioButton.states = states;
 RadioButton.options = options;
 RadioButton.className = RADIOBUTTON_CLASSNAME;
-RadioButton.defaultProps = defaultProps;
+RadioButton.defaultOptions = defaultOptions;
 
 export default RadioButton;

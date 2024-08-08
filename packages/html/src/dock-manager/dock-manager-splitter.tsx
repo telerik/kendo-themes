@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const DockManagerSplitter = (
     props: KendoSplitterProps &
@@ -34,6 +34,6 @@ export const DockManagerSplitter = (
 DockManagerSplitter.states = states;
 DockManagerSplitter.options = options;
 DockManagerSplitter.className = DOCKMANAGERSPLITTER_CLASSNAME;
-DockManagerSplitter.defaultProps = defaultProps;
+DockManagerSplitter.defaultOptions = defaultOptions;
 
 export default DockManagerSplitter;

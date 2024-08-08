@@ -16,7 +16,7 @@ export type KendoColumnMenuExpanderProps = {
     expanded?: boolean;
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const ColumnMenuExpander = (
     props: KendoColumnMenuExpanderProps &
@@ -61,6 +61,6 @@ export const ColumnMenuExpander = (
 ColumnMenuExpander.states = states;
 ColumnMenuExpander.options = options;
 ColumnMenuExpander.className = COLUMNMENUEXPANDER_CLASSNAME;
-ColumnMenuExpander.defaultProps = defaultProps;
+ColumnMenuExpander.defaultOptions = defaultOptions;
 
 export default ColumnMenuExpander;

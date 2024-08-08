@@ -20,7 +20,7 @@ export type KendoSpreadsheetViewProps = {
 
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const SpreadsheetView = (
     props: KendoSpreadsheetViewProps &
@@ -99,6 +99,6 @@ export const SpreadsheetView = (
 SpreadsheetView.states = states;
 SpreadsheetView.options = options;
 SpreadsheetView.className = SPREADSHEETVIEW_CLASSNAME;
-SpreadsheetView.defaultProps = defaultProps;
+SpreadsheetView.defaultOptions = defaultOptions;
 
 export default SpreadsheetView;

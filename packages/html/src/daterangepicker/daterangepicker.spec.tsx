@@ -18,7 +18,7 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoDateRangePickerOptions = {
     size?: (typeof options.size)[number] | null;
@@ -122,6 +122,6 @@ export const DateRangePicker = (
 DateRangePicker.states = states;
 DateRangePicker.options = options;
 DateRangePicker.className = DATERANGEPICKER_CLASSNAME;
-DateRangePicker.defaultProps = defaultProps;
+DateRangePicker.defaultOptions = defaultOptions;
 
 export default DateRangePicker;
