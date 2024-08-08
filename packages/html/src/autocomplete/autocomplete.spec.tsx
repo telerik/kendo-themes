@@ -31,12 +31,6 @@ const options = {
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
 
 export type KendoAutocompleteOptions = {
     size?: (typeof options.size)[number] | null;
@@ -58,20 +52,27 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
 
 export type KendoAutocompleteState = { [K in (typeof states)[number]]?: boolean };
 
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode,
+    separators: true
+};
+
 export const Autocomplete = (
     props: KendoAutocompleteProps &
         KendoAutocompleteState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        separators = defaultOptions.separators,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -160,6 +161,6 @@ export const Autocomplete = (
 Autocomplete.states = states;
 Autocomplete.options = options;
 Autocomplete.className = AUTOCOMPLETE_CLASSNAME;
-Autocomplete.defaultProps = defaultProps;
+Autocomplete.defaultOptions = defaultOptions;
 
 export default Autocomplete;

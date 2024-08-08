@@ -7,7 +7,7 @@ const states = [];
 
 const options = { };
 
-const defaultProps = {
+const defaultOptions = {
     mini: false,
     mode: "push",
     position: "start",
@@ -28,11 +28,11 @@ export const Drawer = (
     React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        expanded = defaultOptions.expanded,
+        mini = defaultOptions.mini,
+        position = defaultOptions.position,
+        mode = defaultOptions.mode,
         items,
-        expanded,
-        mini,
-        position,
-        mode,
         width,
         ...other
     } = props;
@@ -71,6 +71,6 @@ export const Drawer = (
 Drawer.states = states;
 Drawer.options = options;
 Drawer.className = DRAWER_CLASSNAME;
-Drawer.defaultProps = defaultProps;
+Drawer.defaultOptions = defaultOptions;
 
 export default Drawer;

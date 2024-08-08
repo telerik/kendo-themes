@@ -19,7 +19,7 @@ export type KendoFilePreviewProps = KendoFilePreviewOptions & {
     icon?: string;
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const FilePreview = (
     props:
@@ -53,6 +53,6 @@ export const FilePreview = (
 FilePreview.states = states;
 FilePreview.options = options;
 FilePreview.className = FILEPREVIEW_CLASSNAME;
-FilePreview.defaultProps = defaultProps;
+FilePreview.defaultOptions = defaultOptions;
 
 export default FilePreview;

@@ -8,7 +8,7 @@ const states = [
 
 const options = {};
 
-const defaultProps = {
+const defaultOptions = {
     time: 'Thu Feb 08 2018',
     text: 'How can I help you?',
     status: 'Seen'
@@ -28,9 +28,9 @@ export const ChatMessage = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        time = defaultProps.time,
-        text = defaultProps.text,
-        status = defaultProps.status,
+        time = defaultOptions.time,
+        text = defaultOptions.text,
+        status = defaultOptions.status,
         selected,
         ...other
     } = props;
@@ -53,6 +53,6 @@ export const ChatMessage = (
 ChatMessage.states = states;
 ChatMessage.options = options;
 ChatMessage.className = CHATMESSAGE_CLASSNAME;
-ChatMessage.defaultProps = defaultProps;
+ChatMessage.defaultOptions = defaultOptions;
 
 export default ChatMessage;

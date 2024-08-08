@@ -62,7 +62,7 @@ export const SchedulerCell = (
 
 SchedulerCell.states = states;
 SchedulerCell.options = options;
-SchedulerCell.defaultProps = defaultOptions;
+SchedulerCell.defaultOptions = defaultOptions;
 SchedulerCell.className = className;
 
 export default SchedulerCell;

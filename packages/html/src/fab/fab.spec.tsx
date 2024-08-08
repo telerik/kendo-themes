@@ -45,7 +45,7 @@ export type KendoFloatingActionButtonProps = KendoFloatingActionButtonOptions & 
 
 export type KendoFloatingActionButtonState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     rounded: Roundness.full,
     fillMode: FillMode.solid,
@@ -59,13 +59,13 @@ export const FloatingActionButton = (
         React.HTMLAttributes<HTMLButtonElement>
 ) => {
     const {
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
-        themeColor = defaultProps.themeColor,
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        themeColor = defaultOptions.themeColor,
         text,
         icon,
-        type = defaultProps.type,
+        type = defaultOptions.type,
         position,
         hover,
         focus,
@@ -108,6 +108,6 @@ export const FloatingActionButton = (
 FloatingActionButton.states = states;
 FloatingActionButton.options = options;
 FloatingActionButton.className = FLOATINGACTIONBUTTON_CLASSNAME;
-FloatingActionButton.defaultProps = defaultProps;
+FloatingActionButton.defaultOptions = defaultOptions;
 
 export default FloatingActionButton;

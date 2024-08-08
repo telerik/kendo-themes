@@ -21,7 +21,7 @@ export type KendoProgressBarProps = {
 
 export type KendoProgressBarState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     indeterminate: false,
     label: true,
     labelPosition: 'start',
@@ -38,12 +38,12 @@ export const ProgressBar = (
     const {
         disabled,
         height,
-        indeterminate = defaultProps.indeterminate,
-        label = defaultProps.label,
-        labelPosition = defaultProps.labelPosition,
-        orientation = defaultProps.orientation,
-        reverse = defaultProps.reverse,
-        value = defaultProps.value,
+        indeterminate = defaultOptions.indeterminate,
+        label = defaultOptions.label,
+        labelPosition = defaultOptions.labelPosition,
+        orientation = defaultOptions.orientation,
+        reverse = defaultOptions.reverse,
+        value = defaultOptions.value,
         width,
         ...other
     } = props;
@@ -90,6 +90,6 @@ export const ProgressBar = (
 ProgressBar.states = states;
 ProgressBar.options = options;
 ProgressBar.className = PROGRESSBAR_CLASSNAME;
-ProgressBar.defaultProps = defaultProps;
+ProgressBar.defaultOptions = defaultOptions;
 
 export default ProgressBar;

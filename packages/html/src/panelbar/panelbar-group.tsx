@@ -6,7 +6,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const PanelBarGroup = (
     props: React.HTMLAttributes<HTMLUListElement>
@@ -31,6 +31,6 @@ export const PanelBarGroup = (
 PanelBarGroup.states = states;
 PanelBarGroup.options = options;
 PanelBarGroup.className = PANELBARGROUP_CLASSNAME;
-PanelBarGroup.defaultProps = defaultProps;
+PanelBarGroup.defaultOptions = defaultOptions;
 
 export default PanelBarGroup;

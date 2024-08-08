@@ -13,7 +13,7 @@ const states = [
 
 const options = { };
 
-const defaultProps = {
+const defaultOptions = {
     level: 0
 } as const;
 
@@ -36,7 +36,7 @@ export const DrawerItem = (
     const {
         icon,
         text,
-        level = defaultProps.level,
+        level = defaultOptions.level,
         hover,
         focus,
         selected,
@@ -77,6 +77,6 @@ export const DrawerItem = (
 DrawerItem.states = states;
 DrawerItem.options = options;
 DrawerItem.className = DRAWERITEM_CLASSNAME;
-DrawerItem.defaultProps = defaultProps;
+DrawerItem.defaultOptions = defaultOptions;
 
 export default DrawerItem;

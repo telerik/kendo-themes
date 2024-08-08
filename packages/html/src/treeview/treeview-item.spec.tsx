@@ -15,7 +15,7 @@ const states = [
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoTreeviewItemProps = {
     leafClassName?: string;
@@ -137,6 +137,6 @@ export const TreeviewItem = (
 TreeviewItem.states = states;
 TreeviewItem.options = options;
 TreeviewItem.className = TREEVIEWITEM_CLASSNAME;
-TreeviewItem.defaultProps = defaultProps;
+TreeviewItem.defaultOptions = defaultOptions;
 
 export default TreeviewItem;

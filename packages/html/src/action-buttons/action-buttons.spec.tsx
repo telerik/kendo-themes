@@ -11,7 +11,7 @@ export type KendoActionButtonsProps = {
     orientation?: 'horizontal' | 'vertical';
 };
 
-const defaultProps = {
+const defaultOptions = {
     alignment: 'start',
     orientation: 'horizontal'
 };
@@ -21,8 +21,8 @@ export const ActionButtons = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        alignment = defaultProps.alignment,
-        orientation = defaultProps.orientation,
+        alignment = defaultOptions.alignment,
+        orientation = defaultOptions.orientation,
         ...other
     } = props;
 
@@ -45,6 +45,6 @@ export const ActionButtons = (
 ActionButtons.states = states;
 ActionButtons.options = options;
 ActionButtons.className = ACTIONBUTTONS_CLASSNAME;
-ActionButtons.defaultProps = defaultProps;
+ActionButtons.defaultOptions = defaultOptions;
 
 export default ActionButtons;

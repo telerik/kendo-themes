@@ -9,7 +9,7 @@ const options = {};
 export type KendoTabStripItemsWrapperProps = {
     orientation?: "horizontal" | "vertical";
 };
-const defaultProps = {
+const defaultOptions = {
     orientation: "horizontal"
 };
 
@@ -19,7 +19,7 @@ export const TabStripItemsWrapper = (
 ) => {
     const {
         children,
-        orientation,
+        orientation = defaultOptions.orientation,
         ...other
     } = props;
 
@@ -41,6 +41,6 @@ export const TabStripItemsWrapper = (
 TabStripItemsWrapper.states = states;
 TabStripItemsWrapper.options = options;
 TabStripItemsWrapper.className = TABSTRIPITEMSWRAPPER_CLASSNAME;
-TabStripItemsWrapper.defaultProps = defaultProps;
+TabStripItemsWrapper.defaultOptions = defaultOptions;
 
 export default TabStripItemsWrapper;

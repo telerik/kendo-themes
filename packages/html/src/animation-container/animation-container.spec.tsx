@@ -7,7 +7,7 @@ const states = [];
 const options = {};
 
 export type KendoAnimationContainerProps = {
-    positionMode: "absolute" | "fixed";
+    positionMode?: "absolute" | "fixed";
     offset?: {
         top: number | string;
         left: number | string;
@@ -15,7 +15,7 @@ export type KendoAnimationContainerProps = {
     animationStyle?: React.CSSProperties;
 };
 
-const defaultProps = {
+const defaultOptions = {
     positionMode: "absolute"
 };
 
@@ -25,7 +25,7 @@ export const AnimationContainer = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        positionMode,
+        positionMode = defaultOptions.positionMode,
         animationStyle,
         offset,
         ...other
@@ -54,6 +54,6 @@ export const AnimationContainer = (
 AnimationContainer.states = states;
 AnimationContainer.options = options;
 AnimationContainer.className = ANIMATION_CONTAINER_CLASSNAME;
-AnimationContainer.defaultProps = defaultProps;
+AnimationContainer.defaultOptions = defaultOptions;
 
 export default AnimationContainer;

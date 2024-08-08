@@ -14,7 +14,7 @@ const states = [
 
 const options = {};
 
-const defaultProps = {
+const defaultOptions = {
     imgPath: "/packages/html/assets/captcha.jpg",
 };
 
@@ -36,7 +36,7 @@ export const Captcha = (
         invalid,
         loading,
         disabled,
-        imgPath = defaultProps.imgPath,
+        imgPath = defaultOptions.imgPath,
         ...other
     } = props;
 
@@ -91,6 +91,6 @@ export const Captcha = (
 Captcha.states = states;
 Captcha.options = options;
 Captcha.className = CAPTCHA_CLASSNAME;
-Captcha.defaultProps = defaultProps;
+Captcha.defaultOptions = defaultOptions;
 
 export default Captcha;

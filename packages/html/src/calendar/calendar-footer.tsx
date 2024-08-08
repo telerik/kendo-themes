@@ -12,7 +12,7 @@ export type KendoCalendarFooterProps = {
     calendarFooterText?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     calendarFooterText: "Tuesday, October 12, 2021"
 };
@@ -22,8 +22,8 @@ export const CalendarFooter = (
         KendoCalendarFooterProps
 ) => {
     const {
-        size = defaultProps.size,
-        calendarFooterText = defaultProps.calendarFooterText,
+        size = defaultOptions.size,
+        calendarFooterText = defaultOptions.calendarFooterText,
         ...other
     } = props;
 
@@ -36,6 +36,6 @@ export const CalendarFooter = (
 
 CalendarFooter.options = options;
 CalendarFooter.className = CALENDARFOOTER_CLASSNAME;
-CalendarFooter.defaultProps = defaultProps;
+CalendarFooter.defaultOptions = defaultOptions;
 
 export default CalendarFooter;

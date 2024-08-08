@@ -13,7 +13,7 @@ export type KendoImageEditorProps = {
     contentHeight?: string;
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const ImageEditor = (
     props: KendoImageEditorProps &
@@ -56,6 +56,6 @@ export const ImageEditor = (
 ImageEditor.states = states;
 ImageEditor.options = options;
 ImageEditor.className = IMAGEEDITOR_CLASSNAME;
-ImageEditor.defaultProps = defaultProps;
+ImageEditor.defaultOptions = defaultOptions;
 
 export default ImageEditor;

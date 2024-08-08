@@ -19,7 +19,7 @@ const defaultPaneActions = (
     </>
 );
 
-const defaultProps = {
+const defaultOptions = {
     actions: defaultPaneActions,
     title: "Title"
 };
@@ -29,8 +29,8 @@ export const PaneScrollable = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        actions = defaultProps.actions,
-        title = defaultProps.title,
+        actions = defaultOptions.actions,
+        title = defaultOptions.title,
         children,
         ...other
     } = props;
@@ -56,6 +56,6 @@ export const PaneScrollable = (
 PaneScrollable.states = states;
 PaneScrollable.options = options;
 PaneScrollable.className = PANESCROLLABLE_CLASSNAME;
-PaneScrollable.defaultProps = defaultProps;
+PaneScrollable.defaultOptions = defaultOptions;
 
 export default PaneScrollable;

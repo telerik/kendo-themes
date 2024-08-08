@@ -22,7 +22,7 @@ const defaultActionButtons = (
     </>
 );
 
-const defaultProps = {
+const defaultOptions = {
     orientation: "vertical",
     mode: "push",
     actionButtons: defaultActionButtons,
@@ -34,10 +34,10 @@ export const PivotGridConfigurator = (
     React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
-        mode = defaultProps.mode,
-        actionButtons = defaultProps.actionButtons,
-        header = defaultProps.header,
+        orientation = defaultOptions.orientation,
+        mode = defaultOptions.mode,
+        actionButtons = defaultOptions.actionButtons,
+        header = defaultOptions.header,
         children,
         ...other
     } = props;
@@ -73,6 +73,6 @@ export const PivotGridConfigurator = (
 PivotGridConfigurator.states = states;
 PivotGridConfigurator.options = options;
 PivotGridConfigurator.className = PIVOTGRIDCONFIGURATOR_CLASSNAME;
-PivotGridConfigurator.defaultProps = defaultProps;
+PivotGridConfigurator.defaultOptions = defaultOptions;
 
 export default PivotGridConfigurator;

@@ -23,7 +23,7 @@ export type KendoTimeSelectorProps = KendoTimeSelectorOptions & {
     focusedColumn?: null | timeType;
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium
 } as const;
 
@@ -32,7 +32,7 @@ export const TimeSelector = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = defaultOptions.size,
         header,
         fastSelection,
         columns,
@@ -85,6 +85,6 @@ export const TimeSelector = (
 TimeSelector.states = states;
 TimeSelector.options = options;
 TimeSelector.className = TIMESELECTOR_CLASSNAME;
-TimeSelector.defaultProps = defaultProps;
+TimeSelector.defaultOptions = defaultOptions;
 
 export default TimeSelector;

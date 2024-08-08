@@ -20,7 +20,7 @@ export type KendoActionSheetProps = {
     side?: 'top' | 'right' | 'bottom' | 'left';
 }
 
-const defaultProps = {
+const defaultOptions = {
     side: 'bottom',
     fullscreen: false,
     adaptive: false,
@@ -32,15 +32,15 @@ export const ActionSheet = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        side = defaultOptions.side,
+        fullscreen = defaultOptions.fullscreen,
+        adaptive = defaultOptions.adaptive,
+        overlay = defaultOptions.overlay,
         children,
         title,
         header,
         footer,
         actions,
-        side = defaultProps.side,
-        fullscreen = defaultProps.fullscreen,
-        adaptive = defaultProps.adaptive,
-        overlay = defaultProps.overlay,
         ...other
     } = props;
 
@@ -115,6 +115,6 @@ export const ActionSheet = (
 ActionSheet.states = states;
 ActionSheet.options = options;
 ActionSheet.className = ACTIONSHEET_CLASSNAME;
-ActionSheet.defaultProps = defaultProps;
+ActionSheet.defaultOptions = defaultOptions;
 
 export default ActionSheet;

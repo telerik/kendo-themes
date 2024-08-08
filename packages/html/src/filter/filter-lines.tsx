@@ -10,7 +10,7 @@ export type KendoFilterLinesProps = {
     children?: React.JSX.Element | React.JSX.Element[];
 }
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const FilterLines = (
     props: KendoFilterLinesProps &
@@ -27,6 +27,6 @@ export const FilterLines = (
 
 FilterLines.states = states;
 FilterLines.options = options;
-FilterLines.defaultProps = defaultProps;
+FilterLines.defaultOptions = defaultOptions;
 
 export default FilterLines;

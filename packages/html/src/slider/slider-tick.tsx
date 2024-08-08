@@ -14,7 +14,7 @@ export type KendoSliderTickProps = {
     text?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     label: false
 };
 
@@ -24,7 +24,7 @@ export const SliderTick = (
 ) => {
     const {
         style,
-        label = defaultProps.label,
+        label = defaultOptions.label,
         orientation,
         large,
         text,
@@ -50,6 +50,6 @@ export const SliderTick = (
 SliderTick.states = states;
 SliderTick.options = options;
 SliderTick.className = SLIDER_TICK_CLASSNAME;
-SliderTick.defaultProps = defaultProps;
+SliderTick.defaultOptions = defaultOptions;
 
 export default SliderTick;

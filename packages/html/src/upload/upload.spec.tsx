@@ -20,7 +20,7 @@ export type KendoUploadProps = {
     status?: 'upload' | 'uploading' | 'done' | 'failed';
 };
 
-const defaultProps = {
+const defaultOptions = {
     actionsLayout: 'end'
 } as const;
 
@@ -35,7 +35,7 @@ export const Upload = (
         async,
         empty,
         actions,
-        actionsLayout = defaultProps.actionsLayout,
+        actionsLayout = defaultOptions.actionsLayout,
         hover,
         status,
         disabled,
@@ -75,6 +75,6 @@ export const Upload = (
 Upload.states = states;
 Upload.options = options;
 Upload.className = UPLOAD_CLASSNAME;
-Upload.defaultProps = defaultProps;
+Upload.defaultOptions = defaultOptions;
 
 export default Upload;

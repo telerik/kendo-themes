@@ -22,7 +22,7 @@ export type KendoExpansionPanelProps = {
 
 export type KendoExpansionPanelState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const ExpansionPanel = (
     props: KendoExpansionPanelProps &
@@ -83,6 +83,6 @@ export const ExpansionPanel = (
 ExpansionPanel.states = states;
 ExpansionPanel.options = options;
 ExpansionPanel.className = EXPANSION_PANEL_CLASSNAME;
-ExpansionPanel.defaultProps = defaultProps;
+ExpansionPanel.defaultOptions = defaultOptions;
 
 export default ExpansionPanel;

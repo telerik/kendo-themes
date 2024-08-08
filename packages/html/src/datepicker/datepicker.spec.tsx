@@ -32,10 +32,10 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode
 };
 
 export type KendoDatePickerOptions = {
@@ -63,13 +63,13 @@ export const DatePicker = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
         prefix,
         suffix,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -150,6 +150,6 @@ export const DatePicker = (
 DatePicker.states = states;
 DatePicker.options = options;
 DatePicker.className = DATEPICKER_CLASSNAME;
-DatePicker.defaultProps = defaultProps;
+DatePicker.defaultOptions = defaultOptions;
 
 export default DatePicker;

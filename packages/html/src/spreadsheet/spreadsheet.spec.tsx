@@ -6,7 +6,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const Spreadsheet = (
     props: React.HTMLAttributes<HTMLDivElement>
@@ -31,6 +31,6 @@ export const Spreadsheet = (
 Spreadsheet.states = states;
 Spreadsheet.options = options;
 Spreadsheet.className = SPREADSHEET_CLASSNAME;
-Spreadsheet.defaultProps = defaultProps;
+Spreadsheet.defaultOptions = defaultOptions;
 
 export default Spreadsheet;

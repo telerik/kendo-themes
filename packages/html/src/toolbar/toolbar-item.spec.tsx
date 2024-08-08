@@ -8,7 +8,7 @@ const states = [
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoToolbarItemState = { [K in (typeof states)[number]]?: boolean };
 
@@ -39,6 +39,6 @@ export const ToolbarItem = (
 ToolbarItem.states = states;
 ToolbarItem.options = options;
 ToolbarItem.className = TOOLBARITEM_CLASSNAME;
-ToolbarItem.defaultProps = defaultProps;
+ToolbarItem.defaultOptions = defaultOptions;
 
 export default ToolbarItem;

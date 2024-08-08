@@ -45,7 +45,7 @@ export type IconProps = IconOptions & {
     viewBox?: string;
 }
 
-const defaultProps = {
+const defaultOptions = {
     viewBox: '0 0 24 24',
     type: 'svg'
 };
@@ -57,10 +57,10 @@ export const Icon = (
         size,
         themeColor,
         icon,
-        type = defaultProps.type,
+        type = defaultOptions.type,
         rotate,
         flip,
-        viewBox = defaultProps.viewBox,
+        viewBox = defaultOptions.viewBox,
         ...other
     } = props;
 
@@ -94,6 +94,6 @@ export const Icon = (
 
 Icon.states = states;
 Icon.options = options;
-Icon.defaultProps = defaultProps;
+Icon.defaultOptions = defaultOptions;
 
 export default Icon;

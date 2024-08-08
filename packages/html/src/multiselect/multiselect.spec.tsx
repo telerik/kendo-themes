@@ -34,13 +34,6 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
-
 export type KendoMultiSelectOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -64,22 +57,29 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
 
 export type KendoMultiSelectState = { [K in (typeof states)[number]]?: boolean };
 
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode,
+    separators: true
+};
+
 export const MultiSelect = (
     props: KendoMultiSelectProps &
         KendoMultiSelectState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        separators = defaultOptions.separators,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         value,
         placeholder,
         tags,
         popup,
-        size,
-        rounded,
-        fillMode,
         showArrowButton,
         hover,
         focus,
@@ -184,6 +184,6 @@ export const MultiSelect = (
 MultiSelect.states = states;
 MultiSelect.options = options;
 MultiSelect.className = MULTISELECT_CLASSNAME;
-MultiSelect.defaultProps = defaultProps;
+MultiSelect.defaultOptions = defaultOptions;
 
 export default MultiSelect;

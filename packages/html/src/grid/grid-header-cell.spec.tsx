@@ -22,7 +22,7 @@ export type KendoGridHeaderCellProps = KendoTableThProps & {
     sortOrder?: number;
 };
 
-const defaultProps = {
+const defaultOptions = {
     sortIcon: "sort-asc-small"
 };
 
@@ -43,7 +43,7 @@ export const GridHeaderCell = (
         hover,
         focus,
         active,
-        sortIcon = defaultProps.sortIcon,
+        sortIcon = defaultOptions.sortIcon,
         sortOrder,
         ...others
     } = props;
@@ -105,6 +105,6 @@ export const GridHeaderCell = (
 
 GridHeaderCell.states = states;
 GridHeaderCell.className = GRIDHEADERCELL_CLASSNAME;
-GridHeaderCell.defaultProps = defaultProps;
+GridHeaderCell.defaultOptions = defaultOptions;
 
 export default GridHeaderCell;

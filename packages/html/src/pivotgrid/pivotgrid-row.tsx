@@ -13,7 +13,7 @@ export type KendoPivotGridRowProps = {
     columnTotal?: boolean;
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoPivotGridRowState = { [K in (typeof states)[number]]?: boolean };
 
@@ -52,6 +52,6 @@ export const PivotGridRow = (
 PivotGridRow.states = states;
 PivotGridRow.options = options;
 PivotGridRow.className = PIVOTGRIDROW_CLASSNAME;
-PivotGridRow.defaultProps = defaultProps;
+PivotGridRow.defaultOptions = defaultOptions;
 
 export default PivotGridRow;

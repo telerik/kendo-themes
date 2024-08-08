@@ -18,7 +18,7 @@ export type KendoListGroupItemProps = {
 
 export type KendoListGroupItemState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     dir: 'ltr'
 };
 
@@ -30,7 +30,7 @@ export const ListGroupItem = (
     const {
         text,
         arrowIconName,
-        dir = defaultProps.dir,
+        dir = defaultOptions.dir,
         children,
         href,
         pseudo,
@@ -64,6 +64,6 @@ export const ListGroupItem = (
 ListGroupItem.states = states;
 ListGroupItem.options = options;
 ListGroupItem.className = LISTGROUPITEM_CLASSNAME;
-ListGroupItem.defaultProps = defaultProps;
+ListGroupItem.defaultOptions = defaultOptions;
 
 export default ListGroupItem;

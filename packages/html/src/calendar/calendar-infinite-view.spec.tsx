@@ -1,7 +1,7 @@
 import { CalendarInfiniteTable, CalendarTableHead, CalendarHeader } from '.';
 import { classNames } from '../misc';
 
-const className = `k-calendar-view`;
+const CALENDARINFINITEVIEW_CLASSNAME = `k-calendar-view`;
 
 export type KendoCalendarInfiniteViewProps = {
     orientation?: 'vertical' | 'horizontal',
@@ -13,7 +13,7 @@ export type KendoCalendarInfiniteViewProps = {
     weekdayCellsText?: string[];
 };
 
-const defaultProps = {
+const defaultOptions = {
     orientation: 'vertical',
     calendarView: 'month',
     headerText: 'April 2018',
@@ -27,12 +27,12 @@ export const CalendarInfiniteView = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        orientation = defaultProps.orientation,
-        calendarView = defaultProps.calendarView,
-        headerText = defaultProps.headerText,
-        showWeekdays = defaultProps.showWeekdays,
+        orientation = defaultOptions.orientation,
+        calendarView = defaultOptions.calendarView,
+        headerText = defaultOptions.headerText,
+        showWeekdays = defaultOptions.showWeekdays,
+        showNavigationButtons = defaultOptions.showNavigationButtons,
         showWeekNumbers,
-        showNavigationButtons = defaultProps.showNavigationButtons,
         weekdayCellsText,
         ...other
     } = props;
@@ -41,7 +41,7 @@ export const CalendarInfiniteView = (
         <div
             {...other}
             className={classNames(
-                className,
+                CALENDARINFINITEVIEW_CLASSNAME,
                 `k-calendar-${calendarView}view`,
                 props.className,
                 {
@@ -77,3 +77,8 @@ export const CalendarInfiniteView = (
         </div>
     );
 };
+
+CalendarInfiniteView.className = CALENDARINFINITEVIEW_CLASSNAME;
+CalendarInfiniteView.defaultOptions = defaultOptions;
+
+export default CalendarInfiniteView;

@@ -18,7 +18,7 @@ export type KendoTileLayoutItemProps = {
     style?: React.CSSProperties;
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const TileLayoutItem = (
     props: KendoTileLayoutItemProps & React.HTMLAttributes<HTMLSpanElement>
@@ -64,6 +64,6 @@ export const TileLayoutItem = (
 TileLayoutItem.states = states;
 TileLayoutItem.options = options;
 TileLayoutItem.className = TILELAYOUTITEM_CLASSNAME;
-TileLayoutItem.defaultProps = defaultProps;
+TileLayoutItem.defaultOptions = defaultOptions;
 
 export default TileLayoutItem;

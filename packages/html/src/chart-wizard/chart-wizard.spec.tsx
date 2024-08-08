@@ -8,7 +8,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const ChartWizard = (
     props: KendoWindowProps &
@@ -34,6 +34,6 @@ export const ChartWizard = (
 ChartWizard.states = states;
 ChartWizard.options = options;
 ChartWizard.className = CHARTWIZARD_CLASSNAME;
-ChartWizard.defaultProps = defaultProps;
+ChartWizard.defaultOptions = defaultOptions;
 
 export default ChartWizard;

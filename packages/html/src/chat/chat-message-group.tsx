@@ -9,7 +9,7 @@ const states = [
 
 const options = {};
 
-const defaultProps = {
+const defaultOptions = {
     author: "Bruv",
     avatar: "/packages/html/assets/avatar.jpg",
     alt: false
@@ -29,9 +29,9 @@ export const ChatMessageGroup = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        alt = defaultProps.alt,
-        author = defaultProps.author,
-        avatar = defaultProps.avatar,
+        alt = defaultOptions.alt,
+        author = defaultOptions.author,
+        avatar = defaultOptions.avatar,
         selected,
         ...other
     } = props;
@@ -58,6 +58,6 @@ export const ChatMessageGroup = (
 ChatMessageGroup.states = states;
 ChatMessageGroup.options = options;
 ChatMessageGroup.className = CHATMESSAGEGROUP_CLASSNAME;
-ChatMessageGroup.defaultProps = defaultProps;
+ChatMessageGroup.defaultOptions = defaultOptions;
 
 export default ChatMessageGroup;

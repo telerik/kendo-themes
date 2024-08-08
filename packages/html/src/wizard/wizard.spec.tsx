@@ -15,7 +15,7 @@ export type KendoWizardProps = {
 
 export type KendoWizardState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     orientation: "horizontal",
     contentPosition: "right",
 };
@@ -25,8 +25,8 @@ export const Wizard = (
 ) => {
     const {
         disabled,
-        orientation = defaultProps.orientation,
-        contentPosition = defaultProps.contentPosition,
+        orientation = defaultOptions.orientation,
+        contentPosition = defaultOptions.contentPosition,
         ...other
     } = props;
 
@@ -50,6 +50,6 @@ export const Wizard = (
 Wizard.states = states;
 Wizard.options = options;
 Wizard.className = WIZZARD_CLASSNAME;
-Wizard.defaultProps = defaultProps;
+Wizard.defaultOptions = defaultOptions;
 
 export default Wizard;

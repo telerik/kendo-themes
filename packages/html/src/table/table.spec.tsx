@@ -8,7 +8,7 @@ const options = {
     size: [ Size.small, Size.medium, Size.large ]
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoTableOptions = {
   size?: (typeof options.size)[number] | null;
@@ -42,6 +42,6 @@ export const Table = (
 Table.states = states;
 Table.options = options;
 Table.className = TABLE_CLASSNAME;
-Table.defaultProps = defaultProps;
+Table.defaultOptions = defaultOptions;
 
 export default Table;

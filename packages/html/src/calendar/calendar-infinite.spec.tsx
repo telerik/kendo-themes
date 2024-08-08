@@ -43,11 +43,12 @@ export type KendoCalendarInfiniteProps = {
 
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     showNavigation: true,
     calendarView: 'month',
     navigationItems: defaultNavigationItems,
+    navigationMarkerConfig: defaultMarkerConfig
 } as const;
 
 export const CalendarInfinite = (
@@ -55,16 +56,16 @@ export const CalendarInfinite = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        showNavigation = defaultProps.showNavigation,
-        calendarView = defaultProps.calendarView,
+        size = defaultOptions.size,
+        showNavigation = defaultOptions.showNavigation,
+        calendarView = defaultOptions.calendarView,
+        navigationItems = defaultOptions.navigationItems,
+        navigationMarkerConfig = defaultOptions.navigationMarkerConfig,
         calendarTitleText,
         showWeekdays,
         showWeekNumbers,
         showNavigationButtons,
         calendarWeekdays,
-        navigationItems = defaultProps.navigationItems,
-        navigationMarkerConfig = defaultMarkerConfig,
-        size = defaultProps.size,
         ...other
     } = props;
 
@@ -99,6 +100,6 @@ export const CalendarInfinite = (
 
 CalendarInfinite.options = options;
 CalendarInfinite.className = CALENDARINFINITE_CLASSNAME;
-CalendarInfinite.defaultProps = defaultProps;
+CalendarInfinite.defaultOptions = defaultOptions;
 
 export default CalendarInfinite;

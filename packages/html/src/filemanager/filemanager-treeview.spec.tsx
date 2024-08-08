@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const FileManagerTreeview = (
     props: KendoTreeviewProps &
@@ -34,6 +34,6 @@ export const FileManagerTreeview = (
 FileManagerTreeview.states = states;
 FileManagerTreeview.options = options;
 FileManagerTreeview.className = FILEMANAGERTREEVIEW_CLASSNAME;
-FileManagerTreeview.defaultProps = defaultProps;
+FileManagerTreeview.defaultOptions = defaultOptions;
 
 export default FileManagerTreeview;

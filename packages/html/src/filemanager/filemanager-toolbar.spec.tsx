@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const FileManagerToolbar = (
     props: KendoToolbarProps &
@@ -34,6 +34,6 @@ export const FileManagerToolbar = (
 FileManagerToolbar.states = states;
 FileManagerToolbar.options = options;
 FileManagerToolbar.className = FILEMANAGERTOOLBAR_CLASSNAME;
-FileManagerToolbar.defaultProps = defaultProps;
+FileManagerToolbar.defaultOptions = defaultOptions;
 
 export default FileManagerToolbar;

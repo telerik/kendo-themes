@@ -26,7 +26,7 @@ export type InputOptions = {
   fillMode?: (typeof options.fillMode)[number] | null;
 };
 
-export const defaultProps = {
+export const defaultOptions = {
     size: Size.medium,
     rounded: Size.medium,
     fillMode: FillMode.solid
@@ -43,9 +43,9 @@ export const Input = (
         valid,
         loading,
         readonly,
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
         ...other
     } = props;
 
@@ -65,6 +65,6 @@ export const Input = (
 Input.states = states;
 Input.options = options;
 Input.className = INPUT_CLASSNAME;
-Input.defaultProps = defaultProps;
+Input.defaultOptions = defaultOptions;
 
 export default Input;

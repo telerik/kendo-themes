@@ -11,7 +11,7 @@ export type KendoStepListProps = {
     orientation?: "horizontal" | "vertical";
 }
 
-const defaultProps = {
+const defaultOptions = {
     orientation: "horizontal",
 };
 
@@ -21,7 +21,7 @@ export const StepList = (
 ) => {
     const {
         style,
-        orientation = defaultProps.orientation,
+        orientation = defaultOptions.orientation,
         ...other
     } = props;
 
@@ -44,6 +44,6 @@ export const StepList = (
 StepList.options = options;
 StepList.states = states;
 StepList.className = STEPLIST_CLASSNAME;
-StepList.defaultProps = defaultProps;
+StepList.defaultOptions = defaultOptions;
 
 export default StepList;

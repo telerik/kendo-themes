@@ -27,13 +27,6 @@ const states = [
     States.readonly
 ];
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode,
-    separators: true
-};
-
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
@@ -60,20 +53,27 @@ export type KendoComboboxProps = KendoComboboxOptions & {
 
 export type KendoComboboxState = { [K in (typeof states)[number]]?: boolean };
 
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode,
+    separators: true
+};
+
 export const Combobox = (
     props: KendoComboboxProps &
         KendoComboboxState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        separators = defaultOptions.separators,
         prefix,
         suffix,
-        separators = defaultProps.separators,
         value,
         placeholder,
-        size,
-        rounded,
-        fillMode,
         hover,
         focus,
         valid,
@@ -169,6 +169,6 @@ export const Combobox = (
 Combobox.states = states;
 Combobox.options = options;
 Combobox.className = COMBOBOX_CLASSNAME;
-Combobox.defaultProps = defaultProps;
+Combobox.defaultOptions = defaultOptions;
 
 export default Combobox;

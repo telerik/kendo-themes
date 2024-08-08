@@ -12,7 +12,7 @@ export type KendoListGroupOptions = {
     dir?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     dir: 'ltr'
 };
 
@@ -22,7 +22,7 @@ export const ListGroup = (
 ) => {
     const {
         children,
-        dir = defaultProps.dir,
+        dir = defaultOptions.dir,
         ...other
     } = props;
 
@@ -57,6 +57,6 @@ export const ListGroup = (
 ListGroup.states = states;
 ListGroup.options = options;
 ListGroup.className = LISTGROUP_CLASSNAME;
-ListGroup.defaultProps = defaultProps;
+ListGroup.defaultOptions = defaultOptions;
 
 export default ListGroup;

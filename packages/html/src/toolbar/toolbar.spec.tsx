@@ -27,7 +27,7 @@ export type KendoToolbarProps = KendoToolbarOptions & {
 
 export type KendoToolbarState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium
 };
 
@@ -37,7 +37,7 @@ export const Toolbar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
+        size = defaultOptions.size,
         focus,
         resizable,
         ...other
@@ -169,6 +169,6 @@ export const Toolbar = (
 Toolbar.states = states;
 Toolbar.options = options;
 Toolbar.className = TOOLBAR_CLASSNAME;
-Toolbar.defaultProps = defaultProps;
+Toolbar.defaultOptions = defaultOptions;
 
 export default Toolbar;

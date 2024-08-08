@@ -17,7 +17,7 @@ export type KendoEditorProps = {
     toolbarResizable?: boolean;
 };
 
-const defaultProps = {
+const defaultOptions = {
     toolbarResizable: false
 };
 
@@ -33,7 +33,7 @@ export const Editor = (
         disabled,
         focus,
         toolbarItems,
-        toolbarResizable = defaultProps.toolbarResizable,
+        toolbarResizable = defaultOptions.toolbarResizable,
         resizable,
         ...other
     } = props;
@@ -70,6 +70,6 @@ export const Editor = (
 Editor.states = states;
 Editor.options = options;
 Editor.className = EDITOR_CLASSNAME;
-Editor.defaultProps = defaultProps;
+Editor.defaultOptions = defaultOptions;
 
 export default Editor;

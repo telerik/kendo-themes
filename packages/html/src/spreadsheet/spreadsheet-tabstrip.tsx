@@ -8,7 +8,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const SpreadsheetTabStrip = (
     props: KendoTabStripProps &
@@ -46,6 +46,6 @@ export const SpreadsheetTabStrip = (
 SpreadsheetTabStrip.states = states;
 SpreadsheetTabStrip.options = options;
 SpreadsheetTabStrip.className = SPREADSHEETTABSTRIP_CLASSNAME;
-SpreadsheetTabStrip.defaultProps = defaultProps;
+SpreadsheetTabStrip.defaultOptions = defaultOptions;
 
 export default SpreadsheetTabStrip;

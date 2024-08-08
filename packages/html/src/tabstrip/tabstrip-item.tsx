@@ -20,7 +20,7 @@ export type KendoTabStripItemProps = {
 
 export type KendoTabStripItemState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     value: "Item"
 };
 
@@ -38,7 +38,7 @@ export const TabStripItem = (
         children,
         first,
         last,
-        value = defaultProps.value,
+        value = defaultOptions.value,
         ...other
     } = props;
 
@@ -69,6 +69,6 @@ export const TabStripItem = (
 TabStripItem.states = states;
 TabStripItem.options = options;
 TabStripItem.className = TABSTRIPITEM_CLASSNAME;
-TabStripItem.item = defaultProps;
+TabStripItem.item = defaultOptions;
 
 export default TabStripItem;

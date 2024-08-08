@@ -41,7 +41,7 @@ export type KendoChipProps = KendoChipOptions & {
 
 export type KendoChipState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     rounded: Roundness.medium,
     fillMode: FillMode.solid,
@@ -54,10 +54,10 @@ export const Chip = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
-        themeColor = defaultProps.themeColor,
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        themeColor = defaultOptions.themeColor,
         text,
         icon,
         actions,
@@ -115,6 +115,6 @@ export const Chip = (
 Chip.states = states;
 Chip.options = options;
 Chip.className = CHIP_CLASSNAME;
-Chip.defaultProps = defaultProps;
+Chip.defaultOptions = defaultOptions;
 
 export default Chip;

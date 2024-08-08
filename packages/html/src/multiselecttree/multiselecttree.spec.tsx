@@ -32,12 +32,6 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultProps = {
-    size: Input.defaultProps.size,
-    rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
-};
-
 export type KendoMultiSelectTreeOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -60,20 +54,26 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
 
 export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boolean };
 
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode
+};
+
 export const MultiSelectTree = (
     props: KendoMultiSelectTreeProps &
         KendoMultiSelectTreeState &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
         prefix,
         suffix,
         placeholder,
         tags,
         popup,
-        size,
-        rounded,
-        fillMode,
         showArrowButton,
         hover,
         focus,
@@ -185,6 +185,6 @@ export const MultiSelectTree = (
 MultiSelectTree.states = states;
 MultiSelectTree.options = options;
 MultiSelectTree.className = MULTISELECTTREE_CLASSNAME;
-MultiSelectTree.defaultProps = defaultProps;
+MultiSelectTree.defaultOptions = defaultOptions;
 
 export default MultiSelectTree;

@@ -50,7 +50,7 @@ export type KendoSplitButtonProps = KendoSplitButtonOptions & {
 
 export type KendoSplitButtonState = { [K in (typeof states)[number]]?: boolean };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     rounded: Roundness.medium,
     fillMode: FillMode.solid,
@@ -64,10 +64,10 @@ export const SplitButton = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
-        fillMode = defaultProps.fillMode,
-        themeColor = defaultProps.themeColor,
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
+        fillMode = defaultOptions.fillMode,
+        themeColor = defaultOptions.themeColor,
         hover,
         focus,
         active,
@@ -75,7 +75,7 @@ export const SplitButton = (
         disabled,
         icon,
         text,
-        arrowIconName = defaultProps.arrowIconName,
+        arrowIconName = defaultOptions.arrowIconName,
         popup,
         opened,
         ...other
@@ -130,6 +130,6 @@ export const SplitButton = (
 SplitButton.states = states;
 SplitButton.options = options;
 SplitButton.className = SPLITBUTTON_CLASSNAME;
-SplitButton.defaultProps = defaultProps;
+SplitButton.defaultOptions = defaultOptions;
 
 export default SplitButton;

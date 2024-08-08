@@ -18,7 +18,7 @@ export type KendoFileInfoProps = {
     fileDateModified?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     name: "No File Selected",
     icon: "file",
 };
@@ -30,8 +30,8 @@ export const FileInfo = (
 ) => {
     const {
         selection,
-        name = defaultProps.name,
-        icon = defaultProps.icon,
+        name = defaultOptions.name,
+        icon = defaultOptions.icon,
         fileType,
         fileSize,
         fileDateCreated,
@@ -98,6 +98,6 @@ export const FileInfo = (
 FileInfo.states = states;
 FileInfo.options = options;
 FileInfo.className = FILEINFO_CLASSNAME;
-FileInfo.defaultProps = defaultProps;
+FileInfo.defaultOptions = defaultOptions;
 
 export default FileInfo;

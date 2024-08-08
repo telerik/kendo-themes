@@ -19,7 +19,7 @@ export type KendoVerticalTimelineEventProps = {
     showCollapseButton?: boolean;
 };
 
-const defaultProps = {
+const defaultOptions = {
     collapsed: false,
     reverse: false,
     title: "Event title",
@@ -33,11 +33,11 @@ export const VerticalTimelineEvent = (
 ) => {
     const {
         date,
-        content = defaultProps.content,
-        collapsed = defaultProps.collapsed,
-        reverse = defaultProps.reverse,
-        title = defaultProps.title,
-        subtitle = defaultProps.subtitle,
+        content = defaultOptions.content,
+        collapsed = defaultOptions.collapsed,
+        reverse = defaultOptions.reverse,
+        title = defaultOptions.title,
+        subtitle = defaultOptions.subtitle,
         showCollapseButton,
         ...other
     } = props;
@@ -74,6 +74,6 @@ export const VerticalTimelineEvent = (
 VerticalTimelineEvent.states = states;
 VerticalTimelineEvent.options = options;
 VerticalTimelineEvent.className = TIMELINEVERTICALEVENT_CLASSNAME;
-VerticalTimelineEvent.defaultProps = defaultProps;
+VerticalTimelineEvent.defaultOptions = defaultOptions;
 
 export default VerticalTimelineEvent;

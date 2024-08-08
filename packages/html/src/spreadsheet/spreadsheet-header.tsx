@@ -60,7 +60,7 @@ const defaultMenuItems = ([
     <MenuItem last text="View" />,
 ]);
 
-const defaultProps = {
+const defaultOptions = {
     toolbarItems: defaultToolbarItems,
     menuItems: defaultMenuItems,
 };
@@ -70,8 +70,8 @@ export const SpreadsheetHeader = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        toolbarItems = defaultProps.toolbarItems,
-        menuItems = defaultProps.menuItems,
+        toolbarItems = defaultOptions.toolbarItems,
+        menuItems = defaultOptions.menuItems,
         ...other
     } = props;
 
@@ -91,6 +91,6 @@ export const SpreadsheetHeader = (
 SpreadsheetHeader.states = states;
 SpreadsheetHeader.options = options;
 SpreadsheetHeader.className = SPREADSHEETHEADER_CLASSNAME;
-SpreadsheetHeader.defaultProps = defaultProps;
+SpreadsheetHeader.defaultOptions = defaultOptions;
 
 export default SpreadsheetHeader;

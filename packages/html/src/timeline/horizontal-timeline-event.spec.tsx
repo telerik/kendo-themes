@@ -15,7 +15,7 @@ export type KendoHorizontalTimelineEventProps = {
     subtitle?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     title: "Event title",
     subtitle: "Event subtitle",
     content: "Event content"
@@ -26,9 +26,9 @@ export const HorizontalTimelineEvent = (
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
-        content = defaultProps.content,
-        title = defaultProps.title,
-        subtitle = defaultProps.subtitle,
+        content = defaultOptions.content,
+        title = defaultOptions.title,
+        subtitle = defaultOptions.subtitle,
         ...other
     } = props;
 
@@ -61,6 +61,6 @@ export const HorizontalTimelineEvent = (
 HorizontalTimelineEvent.states = states;
 HorizontalTimelineEvent.options = options;
 HorizontalTimelineEvent.className = TIMELINEHORIZONTALEVENT_CLASSNAME;
-HorizontalTimelineEvent.defaultProps = defaultProps;
+HorizontalTimelineEvent.defaultOptions = defaultOptions;
 
 export default HorizontalTimelineEvent;

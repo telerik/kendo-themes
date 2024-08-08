@@ -4,7 +4,7 @@ const CHARTWIZARDCHARTTYPEWRPPER_CLASSNAME = `k-chart-types-wrapper`;
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const ChartWizardChartTypesWrapper = (
     props: React.HTMLAttributes<HTMLDivElement>
@@ -22,6 +22,6 @@ export const ChartWizardChartTypesWrapper = (
 
 ChartWizardChartTypesWrapper.options = options;
 ChartWizardChartTypesWrapper.className = CHARTWIZARDCHARTTYPEWRPPER_CLASSNAME;
-ChartWizardChartTypesWrapper.defaultProps = defaultProps;
+ChartWizardChartTypesWrapper.defaultOptions = defaultOptions;
 
 export default ChartWizardChartTypesWrapper;

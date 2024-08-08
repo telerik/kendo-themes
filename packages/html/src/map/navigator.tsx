@@ -7,7 +7,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const Navigator = (
     props: React.HTMLAttributes<HTMLDivElement>
@@ -35,6 +35,6 @@ export const Navigator = (
 Navigator.states = states;
 Navigator.options = options;
 Navigator.className = NAVIGATOR_CLASSNAME;
-Navigator.defaultProps = defaultProps;
+Navigator.defaultOptions = defaultOptions;
 
 export default Navigator;

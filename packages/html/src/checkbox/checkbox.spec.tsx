@@ -29,7 +29,7 @@ export type CheckboxOptions = {
   rounded?: (typeof options.rounded)[number] | null;
 };
 
-const defaultProps = {
+const defaultOptions = {
     size: Size.medium,
     rounded: Roundness.medium
 };
@@ -47,8 +47,8 @@ export const Checkbox = (
         invalid,
         valid,
         required,
-        size = defaultProps.size,
-        rounded = defaultProps.rounded,
+        size = defaultOptions.size,
+        rounded = defaultOptions.rounded,
         ...other
     } = props;
 
@@ -74,6 +74,6 @@ export const Checkbox = (
 Checkbox.states = states;
 Checkbox.options = options;
 Checkbox.className = CHECKBOX_CLASSNAME;
-Checkbox.defaultProps = defaultProps;
+Checkbox.defaultOptions = defaultOptions;
 
 export default Checkbox;

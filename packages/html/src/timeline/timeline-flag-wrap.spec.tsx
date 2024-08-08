@@ -13,7 +13,7 @@ export type KendoFlagWrapProps = {
     year?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     year: "2020",
 };
 
@@ -22,7 +22,7 @@ export const TimelineFlagWrap = (
         React.HTMLAttributes<HTMLLIElement>
 ) => {
     const {
-        year,
+        year = defaultOptions.year,
         ...other
     } = props;
 
@@ -42,6 +42,6 @@ export const TimelineFlagWrap = (
 TimelineFlagWrap.states = states;
 TimelineFlagWrap.options = options;
 TimelineFlagWrap.className = TIMELINEFLAGWRAP_CLASSNAME;
-TimelineFlagWrap.defaultProps = defaultProps;
+TimelineFlagWrap.defaultOptions = defaultOptions;
 
 export default TimelineFlagWrap;

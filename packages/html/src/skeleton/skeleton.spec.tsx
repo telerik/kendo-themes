@@ -12,7 +12,7 @@ export type KendoSkeletonProps = {
     style?: React.CSSProperties;
 };
 
-const defaultProps = {
+const defaultOptions = {
     shape: 'text',
     animation: 'pulse'
 };
@@ -21,8 +21,8 @@ export const Skeleton = (
     props: KendoSkeletonProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        shape = defaultProps.shape,
-        animation = defaultProps.animation,
+        shape = defaultOptions.shape,
+        animation = defaultOptions.animation,
         ...other
     } = props;
 
@@ -45,6 +45,6 @@ export const Skeleton = (
 Skeleton.states = states;
 Skeleton.options = options;
 Skeleton.className = SKELETON_CLASSNAME;
-Skeleton.defaultProps = defaultProps;
+Skeleton.defaultOptions = defaultOptions;
 
 export default Skeleton;

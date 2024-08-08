@@ -18,7 +18,7 @@ export type KendoOrgchartNodeProps = {
     avatarType?: string;
 };
 
-const defaultProps = {
+const defaultOptions = {
     buttonIcon: 'plus',
     details: true,
 };
@@ -30,12 +30,12 @@ export const OrgchartNode = (
     const {
         title,
         subtitle,
-        details = defaultProps.details,
+        details = defaultOptions.details,
         color,
         lineBottom,
         lineTop,
         button,
-        buttonIcon = defaultProps.buttonIcon,
+        buttonIcon = defaultOptions.buttonIcon,
         avatar,
         avatarType,
         ...other

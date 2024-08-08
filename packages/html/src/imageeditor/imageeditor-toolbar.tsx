@@ -29,7 +29,7 @@ const defaultToolbarItems = [
     </ToolbarItem>
 ];
 
-const defaultProps = {
+const defaultOptions = {
     toolbarItems: defaultToolbarItems
 };
 
@@ -39,7 +39,7 @@ export const ImageEditorToolbar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        toolbarItems = defaultProps.toolbarItems,
+        toolbarItems = defaultOptions.toolbarItems,
         ...other
     } = props;
 
@@ -59,6 +59,6 @@ export const ImageEditorToolbar = (
 ImageEditorToolbar.states = states;
 ImageEditorToolbar.options = options;
 ImageEditorToolbar.className = IMAGEEDITORTOOLBAR_CLASSNAME;
-ImageEditorToolbar.defaultProps = defaultProps;
+ImageEditorToolbar.defaultOptions = defaultOptions;
 
 export default ImageEditorToolbar;

@@ -8,7 +8,7 @@ const states = [];
 const options = {};
 
 export type KendoPopupProps = {
-    positionMode: "absolute" | "fixed";
+    positionMode?: "absolute" | "fixed";
     offset?: {
         top: number | string;
         left: number | string;
@@ -16,9 +16,9 @@ export type KendoPopupProps = {
     animationStyle?: React.CSSProperties;
 };
 
-const defaultProps = {
+const defaultOptions = {
     positionMode: "absolute"
-};
+} as const;
 
 export const Popup = (
     props:
@@ -27,7 +27,7 @@ export const Popup = (
 ) => {
     const {
         offset,
-        positionMode,
+        positionMode = defaultOptions.positionMode,
         animationStyle,
         ...other
     } = props;
@@ -49,6 +49,6 @@ export const Popup = (
 Popup.states = states;
 Popup.options = options;
 Popup.className = POPUP_CLASSNAME;
-Popup.defaultProps = defaultProps;
+Popup.defaultOptions = defaultOptions;
 
 export default Popup;

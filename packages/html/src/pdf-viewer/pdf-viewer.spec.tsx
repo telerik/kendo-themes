@@ -44,7 +44,7 @@ const defaultToolbar =
         </Toolbar>
 ;
 
-const defaultProps = {
+const defaultOptions = {
     toolbar: defaultToolbar,
     showSearchPanel: false,
     blank: false,
@@ -55,9 +55,9 @@ export const PDFViewer = (
 ) => {
     const {
         disabled,
-        toolbar,
-        showSearchPanel,
-        blank,
+        toolbar = defaultOptions.toolbar,
+        showSearchPanel = defaultOptions.showSearchPanel,
+        blank = defaultOptions.blank,
         ...other
     } = props;
 
@@ -109,6 +109,6 @@ export const PDFViewer = (
 PDFViewer.states = states;
 PDFViewer.options = options;
 PDFViewer.className = PDFVIEWER_CLASSNAME;
-PDFViewer.defaultProps = defaultProps;
+PDFViewer.defaultOptions = defaultOptions;
 
 export default PDFViewer;

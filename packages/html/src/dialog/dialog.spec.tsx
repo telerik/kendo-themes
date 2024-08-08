@@ -14,7 +14,7 @@ const options = {
     ],
 };
 
-const defaultProps = {
+const defaultOptions = {
     actionButtonsAlign: "stretched",
     modal: true
 } as const;
@@ -40,8 +40,8 @@ export const Dialog = (
         actions,
         themeColor,
         actionButtons,
-        actionButtonsAlign = defaultProps.actionButtonsAlign,
-        modal = defaultProps.modal,
+        actionButtonsAlign = defaultOptions.actionButtonsAlign,
+        modal = defaultOptions.modal,
         ...other
     } = props;
 
@@ -86,6 +86,6 @@ export const Dialog = (
 Dialog.states = states;
 Dialog.options = options;
 Dialog.className = DIALOG_CLASSNAME;
-Dialog.defaultProps = defaultProps;
+Dialog.defaultOptions = defaultOptions;
 
 export default Dialog;

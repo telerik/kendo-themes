@@ -10,7 +10,7 @@ export type KendoFilterItemProps = {
     children?: React.JSX.Element | React.JSX.Element[];
 }
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const FilterItem = (
     props: KendoFilterItemProps & React.HTMLAttributes<HTMLUListElement>
@@ -26,6 +26,6 @@ export const FilterItem = (
 
 FilterItem.states = states;
 FilterItem.options = options;
-FilterItem.defaultProps = defaultProps;
+FilterItem.defaultOptions = defaultOptions;
 
 export default FilterItem;

@@ -11,7 +11,7 @@ export type KendoGanttTaskContentProps = {
     content?: string | React.JSX.Element | React.JSX.Element[];
 };
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export const GanttTaskContent = (
     props: KendoGanttTaskContentProps &
@@ -39,6 +39,6 @@ export const GanttTaskContent = (
 GanttTaskContent.states = states;
 GanttTaskContent.options = options;
 GanttTaskContent.className = GANTTTASKCONTENT_CLASSNAME;
-GanttTaskContent.defaultProps = defaultProps;
+GanttTaskContent.defaultOptions = defaultOptions;
 
 export default GanttTaskContent;

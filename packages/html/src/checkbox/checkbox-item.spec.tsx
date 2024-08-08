@@ -6,7 +6,7 @@ const states = [];
 
 const options = {};
 
-const defaultProps = {};
+const defaultOptions = {};
 
 export type KendoCheckboxItemState = { [K in (typeof states)[number]]?: boolean };
 
@@ -33,6 +33,6 @@ export const CheckboxItem = (
 CheckboxItem.states = states;
 CheckboxItem.options = options;
 CheckboxItem.className = CHECKBOXITEM_CLASSNAME;
-CheckboxItem.defaultProps = defaultProps;
+CheckboxItem.defaultOptions = defaultOptions;
 
 export default CheckboxItem;
