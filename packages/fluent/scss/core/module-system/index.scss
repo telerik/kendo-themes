@@ -3,13 +3,13 @@
 @use "./_components.scss" as _;
 
 $components: _.$components !default;
-$_deps: ();
+$deps: () !default;
 $_imported: ();
 
 // stylelint-disable scss/at-if-no-null
 @mixin register( $name: null, $dependencies: null ) {
     @if ( list.index( $components, $name) != null ) {
-        $_deps: map.set( $_deps, $name, $dependencies );
+        $_deps: map.set( $deps, $name, $dependencies ) !global;
 
         @if $dependencies {
             @each $dep in $dependencies {

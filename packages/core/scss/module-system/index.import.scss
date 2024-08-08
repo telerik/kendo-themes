@@ -38,7 +38,7 @@ $_imported: () !default;
 
 @mixin verify-dependencies() {
     @each $component in $kendo-components {
-        @if (k-map-has-key( $_kendo-dependencies, $component ) == false) {
+        @if (k-map-has-key( $kendo-dependencies, $component ) == false) {
             @error "Module '#{$component}' is not defined.";
         }
     }

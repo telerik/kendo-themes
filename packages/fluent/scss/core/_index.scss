@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:list";
 
 // Swatch
 @use "./color-system/swatch" as *;
@@ -72,14 +73,26 @@
 // Module System
 @use "./module-system/" as module;
 
-$components: null !default;
+@use "@progress/kendo-theme-core/scss/module-system/_dependencies" as *;
+
+// $components: null !default;
 
 @mixin core-configure($config: null) {
     @if $config {
         $_components: map.get($config, "components");
 
+        @each $component in $_components {
+            @if (map.has-key($kendo-dependencies, $component)) {
+                $_dependencies: map.get($kendo-dependencies, $component) !global;
+            }
+        }
+
         @if ($_components) {
             module.$components: $_components;
+            module.$deps: $_dependencies;
+            @each $dep in module.$deps {
+                module.$components: list.append(module.$components, $dep, comma);
+            }
         }
     }
 }
