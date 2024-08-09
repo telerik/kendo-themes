@@ -9,14 +9,12 @@ $_kendo-module-meta: (
         "badge",
         "button",
         "icon",
-        "popup",
-        // "utils/layout/position"
+        "popup"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_position.scss";
 @import "../icons/_index.scss";
 @import "../button/_index.scss";
 @import "../badge/_index.scss";

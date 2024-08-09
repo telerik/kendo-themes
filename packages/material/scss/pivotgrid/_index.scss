@@ -14,9 +14,7 @@ $_kendo-module-meta: (
         "grid",
         "icon",
         "list",
-        "treeview",
-        // "utils/flex-grid",
-        // "utils/layout/position"
+        "treeview"
     )
 );
 
@@ -26,10 +24,6 @@ $_kendo-module-meta: (
 @import "../treeview/_index.scss";
 @import "../grid/_index.scss";
 @import "../icons/_index.scss";
-// @import "../utils/_spacer.scss";
-// @import "../utils/_flex.scss";
-// @import "../utils/_grid.scss";
-// @import "../utils/_position.scss";
 @import "../list/_index.scss";
 
 

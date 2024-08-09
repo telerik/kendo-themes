@@ -8,15 +8,12 @@ $_kendo-module-meta: (
     dependencies: (
         "action-buttons",
         "button",
-        "typography",
-        // "utils/flex-grid"
+        "typography"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_flex.scss";
-// @import "../utils/_grid.scss";
 @import "../action-buttons/_index.scss";
 @import "../icons/_index.scss";
 @import "../typography/_index.scss";

@@ -6,14 +6,12 @@
 $_kendo-module-meta: (
     name: "bottom-navigation",
     dependencies: (
-        "icon",
-        // "utils/layout/position"
+        "icon"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_position.scss";
 @import "../icons/_index.scss";
 
 

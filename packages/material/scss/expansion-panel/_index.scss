@@ -7,16 +7,12 @@ $_kendo-module-meta: (
     name: "expander",
     dependencies: (
         "icon",
-        "list",
-        // "utils/layout/display",
-        // "utils/flex-grid"
+        "list"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_display.scss";
-// @import "../utils/_spacer.scss";
 @import "../icons/_index.scss";
 @import "../list/_index.scss";
 

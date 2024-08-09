@@ -7,15 +7,12 @@ $_kendo-module-meta: (
     name: "listview",
     dependencies: (
         "icon",
-        "pager",
-        // "utils/flex-grid"
+        "pager"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_flex.scss";
-// @import "../utils/_grid.scss";
 @import "../pager/_index.scss";
 @import "../icons/_index.scss";
 
