@@ -51,7 +51,7 @@
     "sass-embedded": "^1.63.6"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "node ./scripts/start-dev-server.js",
     "clean": "find . -name \"node_modules\" -type d -prune | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune -maxdepth 2 | xargs rm -rf",
