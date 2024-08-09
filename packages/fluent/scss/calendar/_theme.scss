@@ -135,37 +135,6 @@
             );
         }
 
-
-        &[dir="rtl"],
-        .k-rtl & {
-            .k-calendar-navigation {
-                box-shadow: inset 1px 0 var( --kendo-calendar-navigation-border, #{$kendo-calendar-navigation-border} );
-            }
-
-            .k-calendar-td {
-
-                &.k-range-start:hover .k-link,
-                &.k-range-start.k-hover .k-link {
-                    --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
-
-                }
-
-                &.k-range-mid:last-child:hover .k-link,
-                &.k-range-mid:last-child.k-hover .k-link,
-                &.k-range-end:hover .k-link,
-                &.k-range-end.k-hover .k-link {
-                    --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
-                }
-
-                &.k-range-mid:first-child:hover .k-link,
-                &.k-range-mid:first-child.k-hover .k-link,
-                &.k-alt + .k-range-mid:hover .k-link,
-                &.k-alt + .k-range-mid.k-hover .k-link {
-                    --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
-                }
-            }
-        }
-
         // Invalid
         &.k-invalid,
         &.k-invalid:hover,
@@ -175,6 +144,35 @@
         }
     }
 
+    .k-calendar[dir="rtl"],
+    .k-rtl .k-calendar {
+        .k-calendar-navigation {
+            box-shadow: inset 1px 0 var( --kendo-calendar-navigation-border, #{$kendo-calendar-navigation-border} );
+        }
+
+        .k-calendar-td {
+
+            &.k-range-start:hover .k-link,
+            &.k-range-start.k-hover .k-link {
+                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
+
+            }
+
+            &.k-range-mid:last-child:hover .k-link,
+            &.k-range-mid:last-child.k-hover .k-link,
+            &.k-range-end:hover .k-link,
+            &.k-range-end.k-hover .k-link {
+                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-start-range-hover-shadow, #{$kendo-calendar-start-range-hover-shadow} );
+            }
+
+            &.k-range-mid:first-child:hover .k-link,
+            &.k-range-mid:first-child.k-hover .k-link,
+            &.k-alt + .k-range-mid:hover .k-link,
+            &.k-alt + .k-range-mid.k-hover .k-link {
+                --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-end-range-hover-shadow, #{$kendo-calendar-end-range-hover-shadow} );
+            }
+        }
+    }
 
     // Scheduler integration
     .k-scheduler .k-calendar .k-other-month {

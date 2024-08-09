@@ -13,12 +13,8 @@
         padding-inline: 0;
     }
 
-    .k-menu-group,
-    .k-menu-vertical {
-
-        .k-menu-popup & {
-            padding: 0;
-        }
+    .k-menu-popup :is(.k-menu-group, .k-menu-vertical) {
+        padding: 0;
     }
 
     .k-context-menu-popup {

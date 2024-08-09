@@ -190,26 +190,26 @@
         .k-icon {
             margin-inline-start: var( --kendo-pivotgrid-configurator-button-icon-spacing, #{$kendo-pivotgrid-configurator-button-icon-spacing} );
         }
+    }
 
-        .k-flex-row &,
-        .k-flex-row-reverse & {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            writing-mode: vertical-rl;
+    .k-flex-row .k-pivotgrid-configurator-button,
+    .k-flex-row-reverse .k-pivotgrid-configurator-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-rl;
 
-            .k-icon {
-                vertical-align: baseline;
-            }
+        .k-icon {
+            vertical-align: baseline;
         }
-        .k-flex-row-reverse & > span {
-            transform: rotate(-180deg);
-        }
+    }
+    .k-flex-row-reverse .k-pivotgrid-configurator-button > span {
+        transform: rotate(-180deg);
+    }
 
-        .k-flex-col &,
-        .k-flex-col-reverse & {
-            text-align: center;
-        }
+    .k-flex-col .k-pivotgrid-configurator-button,
+    .k-flex-col-reverse .k-pivotgrid-configurator-button {
+        text-align: center;
     }
 
 
@@ -218,17 +218,24 @@
         position: absolute;
         overflow: hidden;
         z-index: 2;
+    }
 
-        .k-flex-row & {
+    .k-flex-row {
+        .k-pivotgrid-configurator-overlay {
             inset-inline-end: var( --kendo-pivotgrid-configurator-button-size, #{$kendo-pivotgrid-configurator-button-size} );
         }
-        .k-flex-row-reverse & {
+
+        &-reverse .k-pivotgrid-configurator-overlay {
             inset-inline-start: var( --kendo-pivotgrid-configurator-button-size, #{$kendo-pivotgrid-configurator-button-size} );
         }
-        .k-flex-col & {
+    }
+
+    .k-flex-col {
+        .k-pivotgrid-configurator-overlay {
             inset-block-end: var( --kendo-pivotgrid-configurator-button-size, #{$kendo-pivotgrid-configurator-button-size} );
         }
-        .k-flex-col-reverse & {
+
+        &-reverse .k-pivotgrid-configurator-overlay {
             inset-block-start: var( --kendo-pivotgrid-configurator-button-size, #{$kendo-pivotgrid-configurator-button-size} );
         }
     }
@@ -374,12 +381,9 @@
         min-width: var( --kendo-pivotgrid-configurator-vertical-width, #{$kendo-pivotgrid-configurator-vertical-width} );
     }
 
-    .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
-        .k-flex-row &,
-        .k-flex-row-reverse & {
-            border-right-width: 0;
-            border-left-width: 0;
-        }
+    :is(.k-flex-row, .k-flex-row-reverse) .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
+        border-right-width: 0;
+        border-left-width: 0;
     }
 
 
@@ -429,16 +433,15 @@
                 overflow-y: auto;
             }
         }
-
-        &.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
-            .k-flex-col &,
-            .k-flex-col-reverse & {
-                border-top-width: 0;
-                border-bottom-width: 0;
-            }
-        }
     }
 
+    .k-flex-col,
+    .k-flex-col-reverse {
+        .k-pivotgrid-configurator-horizontal.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
+            border-top-width: 0;
+            border-bottom-width: 0;
+        }
+    }
 }
 
 @mixin kendo-pivotgrid-export--layout() {

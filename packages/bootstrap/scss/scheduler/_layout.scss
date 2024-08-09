@@ -11,10 +11,6 @@
         &::before {
             display: none;
             left: 0;
-
-            .k-rtl & {
-                right: 0;
-            }
         }
 
         // Angular fix for stronger selector and smaller padding
@@ -35,4 +31,12 @@
         }
     }
 
+    .k-rtl {
+        kendo-scheduler .k-event,
+        .k-event {
+            &::before {
+                right: 0;
+            }
+        }
+    }
 }

@@ -57,14 +57,13 @@
         padding-inline: var( --kendo-fab-icon-padding-x, #{$kendo-fab-icon-padding-x} );
         padding-block: var( --kendo-fab-icon-padding-y, #{$kendo-fab-icon-padding-y} );
         box-sizing: content-box;
-
-        .k-icon-wrapper-host:not(:only-child) &,
-        &:not(:only-child) {
-            margin-inline-end: var( --kendo-fab-icon-spacing, #{$kendo-fab-icon-spacing} );
-            margin-inline-start: calc( var( --kendo-fab-icon-spacing, #{$kendo-fab-icon-spacing} ) * -1 );
-        }
     }
 
+    .k-icon-wrapper-host:not(:only-child) .k-fab-icon,
+    .k-fab-icon:not(:only-child) {
+        margin-inline-end: var( --kendo-fab-icon-spacing, #{$kendo-fab-icon-spacing} );
+        margin-inline-start: calc( var( --kendo-fab-icon-spacing, #{$kendo-fab-icon-spacing} ) * -1 );
+    }
 
     // Sizes
     @each $size, $size-props in $kendo-fab-sizes {

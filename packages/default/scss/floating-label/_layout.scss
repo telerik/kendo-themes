@@ -57,32 +57,31 @@
         &.k-empty:not(.k-focus):not(:focus-within) ::placeholder {
             color: transparent;
         }
+    }
 
-        [dir="rtl"] &,
-        .k-rtl &,
-        &[dir="rtl"] {
+    [dir="rtl"] .k-floating-label-container,
+    .k-rtl .k-floating-label-container,
+    .k-floating-label-container[dir="rtl"] {
+        > .k-floating-label {
+            transform-origin: right center;
+            transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, right $kendo-floating-label-transition;
+        }
 
+        &.k-empty {
             > .k-floating-label {
-                transform-origin: right center;
-                transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, right $kendo-floating-label-transition;
-            }
-
-            &.k-empty {
-                > .k-floating-label {
-                    left: auto;
-                    right: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
-                }
-            }
-
-            > .k-floating-label,
-            &.k-focus > .k-floating-label {
                 left: auto;
-                right: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
+                right: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
             }
-            &:focus-within > .k-floating-label {
-                left: auto;
-                right: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
-            }
+        }
+
+        > .k-floating-label,
+        &.k-focus > .k-floating-label {
+            left: auto;
+            right: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
+        }
+        &:focus-within > .k-floating-label {
+            left: auto;
+            right: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
         }
     }
 

@@ -49,12 +49,8 @@
         transform: translateX(-100%);
     }
 
-    .k-time-tab .k-datetime-selector {
-        &.k-rtl,
-        &[dir="rtl"],
-        .k-rtl &,
-        [dir="rtl"] & {
-            transform: translateX(100%);
-        }
+    :is(.k-rtl, [dir="rtl"]) .k-time-tab .k-datetime-selector,
+    .k-time-tab .k-datetime-selector:is(.k-rtl, [dir="rtl"]) {
+        transform: translateX(100%);
     }
 }

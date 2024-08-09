@@ -7,20 +7,18 @@
 
     // Floating label
     .k-floating-label-container {
-
         > .k-floating-label {
             transform-origin: left bottom;
         }
+    }
 
-        [dir="rtl"] &,
-        .k-rtl &,
-        &[dir="rtl"] {
-
-            > .k-floating-label {
-                transform-origin: right bottom;
-            }
-
+    [dir="rtl"] .k-floating-label-container,
+    .k-rtl .k-floating-label-container,
+    .k-floating-label-container[dir="rtl"] {
+        > .k-floating-label {
+            transform-origin: right bottom;
         }
+
     }
 
 }

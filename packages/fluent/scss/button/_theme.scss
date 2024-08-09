@@ -70,15 +70,15 @@
                 --INTERNAL--kendo-button-border: var( --kendo-button-selected-hover-border );
             }
         }
+    }
 
-        &:disabled,
-        &.k-disabled,
-        .k-disabled &,
-        :disabled & {
-            --INTERNAL--kendo-button-text: var( --kendo-button-disabled-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-disabled-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-disabled-border );
-        }
+    .k-button:disabled,
+    .k-button.k-disabled,
+    .k-disabled .k-button,
+    :disabled .k-button {
+        --INTERNAL--kendo-button-text: var( --kendo-button-disabled-text );
+        --INTERNAL--kendo-button-bg: var( --kendo-button-disabled-bg );
+        --INTERNAL--kendo-button-border: var( --kendo-button-disabled-border );
     }
 
     @each $fill-mode, $theme-colors in $kendo-button-theme-colors {

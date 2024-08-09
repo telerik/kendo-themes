@@ -76,9 +76,6 @@
         border-radius: 50%;
         position: relative;
 
-        .k-pdf-export & { display: none; }
-
-
         // Buttons
         .k-button {
             padding: 0;
@@ -126,8 +123,13 @@
         border: 0;
         background: none;
         display: flex;
+    }
 
-        .k-pdf-export & { display: none; }
+    .k-pdf-export {
+        .k-navigator,
+        .k-zoom-control {
+            display: none;
+        }
     }
 
 }

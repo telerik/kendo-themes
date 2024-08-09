@@ -116,24 +116,22 @@
         .k-panelbar-group .k-panelbar-toggle {
             margin-inline-end: calc( #{$kendo-panelbar-header-padding-x} - #{$kendo-panelbar-item-padding-x} );
         }
+    }
 
-
-        .k-rtl &,
-        &.k-rtl,
-        &[dir = "rtl"] {
-            .k-panelbar-group > .k-panelbar-item {
-                // Hierarchy items
-                @for $i from 1 through $kendo-panelbar-item-level-count {
-                    &.k-level-#{$i} {
-                        .k-link {
-                            padding-left: $kendo-panelbar-item-padding-x;
-                            padding-right: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
-                        }
+    .k-rtl .k-panelbar,
+    .k-panelbar.k-rtl,
+    .k-panelbar [dir = "rtl"] {
+        .k-panelbar-group > .k-panelbar-item {
+            // Hierarchy items
+            @for $i from 1 through $kendo-panelbar-item-level-count {
+                &.k-level-#{$i} {
+                    .k-link {
+                        padding-left: $kendo-panelbar-item-padding-x;
+                        padding-right: calc( #{$kendo-panelbar-item-padding-x} * #{$i} );
                     }
                 }
             }
         }
-
     }
 
 }

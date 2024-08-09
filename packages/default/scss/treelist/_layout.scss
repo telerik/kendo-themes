@@ -81,14 +81,10 @@
         .k-table-row.k-group-footer + .k-table-row.k-group-footer td {
             border-top-width: 0;
         }
+    }
 
-        &[dir = "rtl"],
-        .k-rtl & {
-            thead.k-grid-header {
-                padding-left: 0;
-            }
-        }
-
+    :is(.k-treelist-scrollable[dir="rtl"], .k-rtl .k-treelist-scrollable) thead.k-grid-header {
+        padding-left: 0;
     }
 
     .k-drag-separator {

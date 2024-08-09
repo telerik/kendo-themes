@@ -64,11 +64,10 @@
         opacity: 0;
         transform-origin: 0 0;
         transition: opacity .3s linear;
-
-        .k-map &,
-        .k-diagram & {
-            display: none;
-        }
+    }
+    .k-map .km-touch-scrollbar,
+    .k-diagram .km-touch-scrollbar {
+        display: none;
     }
     .km-vertical-scrollbar {
         height: 100%;

@@ -6,14 +6,11 @@
     @include kendo-checkbox--theme-base();
 
     // Checkbox
-    .k-checkbox-label {
-
-        // Disabled state
-        .k-checkbox:disabled + & {
-            color: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ));
-            opacity: 1;
-            filter: none;
-        }
+    // Disabled state
+    .k-checkbox:disabled + .k-checkbox-label {
+        color: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ));
+        opacity: 1;
+        filter: none;
     }
 
 }

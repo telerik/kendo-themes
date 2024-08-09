@@ -84,11 +84,10 @@
 
     .k-rating-precision-complement {
         direction: rtl;
+    }
 
-        .k-rtl &,
-        [dir="rtl"] & {
-            direction: ltr;
-        }
+    :is(.k-rtl, [dir="rtl"]) .k-rating-precision-complement {
+        direction: ltr;
     }
 
 }
