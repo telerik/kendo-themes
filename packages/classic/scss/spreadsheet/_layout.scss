@@ -1,3 +1,9 @@
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "./_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../menu/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/spreadsheet/_layout.scss";
 
 

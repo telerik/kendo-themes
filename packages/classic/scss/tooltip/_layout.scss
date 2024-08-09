@@ -1,3 +1,6 @@
+@use "../core/" as *;
+@use "../icon/_variables.scss" as *;
+@use "./_variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/tooltip/_layout.scss";
 
 

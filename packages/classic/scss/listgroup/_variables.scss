@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
+
 // Listgroup
 $kendo-listgroup-border-width: 1px !default;
 $kendo-listgroup-border-radius: k-border-radius(md) !default;

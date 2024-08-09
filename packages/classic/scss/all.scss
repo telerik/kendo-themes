@@ -1,7 +1,11 @@
-@import "./index.scss";
+@forward "./index.scss";
+@use "./index.scss" as kendo-theme;
 
 
-@if not $kendo-auto-bootstrap {
-    @include kendo-theme--config();
-    @include kendo-theme--styles();
-}
+// @if not $kendo-auto-bootstrap {
+//     @include kendo-theme--config();
+//     @include kendo-theme--styles();
+// }
+
+@include kendo-theme.config();
+@include kendo-theme.styles();

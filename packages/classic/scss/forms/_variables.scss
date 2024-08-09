@@ -1,7 +1,10 @@
-@import "../input/_variables.scss";
-@import "../tooltip/_variables.scss";
-@import "../typography/_variables.scss";
-@import "../window/_variables.scss";
+@use "sass:map";
+@use "../core/" as *;
+@use "../core/spacing" as *;
+@use "../input/_variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+@use "../typography/_variables.scss" as *;
+@use "../window/_variables.scss" as *;
 
 
 // Forms

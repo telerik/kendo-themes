@@ -207,7 +207,7 @@ $kendo-spreadsheet-insert-image-dialog-preview-width: 355px !default;
 $kendo-spreadsheet-insert-image-dialog-preview-height: 230px !default;
 /// The image of the Spreadsheet image Dialog preview.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-preview-img: "image-default.png" !default;
+$kendo-spreadsheet-insert-image-dialog-preview-img: k-map-get($_kendo-data-uris, "image-default.png") !default;
 /// The border of the Spreadsheet image Dialog preview.
 /// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-preview-border: $kendo-component-border !default;

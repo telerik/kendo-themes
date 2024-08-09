@@ -1,4 +1,6 @@
-@import "../list/_variables.scss";
+@use "sass:map";
+@use "../core/" as *;
+@use "../list/_variables.scss" as *;
 
 
 // Table

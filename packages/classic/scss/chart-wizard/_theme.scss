@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 @import "@progress/kendo-theme-default/scss/chart-wizard/_theme.scss";
 
 @mixin kendo-chart-wizard--theme() {
