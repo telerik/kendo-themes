@@ -1,11 +1,11 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "numerictextbox",
+    name: "numeric-textbox",
     dependencies: (
         "button",
-        "input",
         "floating-label",
-        "icon"
+        "icon",
+        "input"
     )
 );
 
@@ -19,9 +19,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin numerictextbox-styles() {
-    @include module.render( "numerictextbox" ) {
-        @include kendo-numerictextbox--layout();
-        @include kendo-numerictextbox--theme();
+@mixin numeric-textbox-styles() {
+    @include module.render( "numeric-textbox" ) {
+        @include kendo-numeric-textbox--layout();
+        @include kendo-numeric-textbox--theme();
     }
 }

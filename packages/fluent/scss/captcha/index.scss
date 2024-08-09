@@ -4,11 +4,11 @@
 $_kendo-module-meta: (
     name: "captcha",
     dependencies: (
-        "icon",
         "button",
+        "icon",
         "input",
-        "textbox",
-        "slider"
+        "slider",
+        "textbox"
     )
 );
 

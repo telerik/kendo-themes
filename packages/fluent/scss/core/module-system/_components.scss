@@ -24,7 +24,7 @@ $components: (
     "badge",
     "color-preview",
     "loader",
-    "color-preview",
+    "loading",
     "skeleton",
     "tooltip",
     "time-marker",
@@ -42,35 +42,35 @@ $components: (
     "slider",
 
     // Form helpers
-    "forms",
+    "form",
     "validator",
     "floating-label",
 
     // Form requirements
     "calendar",
     "popup",
-    "timeselector",
+    "time-selector",
 
     // Augmented inputs
     "autocomplete",
     "captcha",
-    "colorpalette",
-    "colorgradient",
-    "coloreditor",
-    "colorpicker",
+    "color-palette",
+    "color-gradient",
+    "color-editor",
+    "color-picker",
     "combobox",
-    "dateinput",
-    "datepicker",
-    "timepicker",
-    "timedurationpicker",
-    "datetimepicker",
-    "daterangepicker",
-    "dropdowngrid",
-    "dropdownlist",
-    "dropdowntree",
-    "maskedtextbox",
+    "date-input",
+    "date-picker",
+    "time-picker",
+    "time-duration-picker",
+    "date-time-picker",
+    "date-range-picker",
+    "dropdown-grid",
+    "dropdown-list",
+    "dropdown-tree",
+    "masked-textbox",
     "multiselect",
-    "numerictextbox",
+    "numeric-textbox",
     "rating",
     "searchbox",
     "switch",
@@ -90,7 +90,7 @@ $components: (
     "drawer",
     "notification",
     "popover",
-    "responsivepanel",
+    "responsive-panel",
     "window",
 
     // Navigation
@@ -104,11 +104,10 @@ $components: (
 
     // Layout & containers
     "card",
-    "expansion-panel",
-    "panel",
+    "expander",
     "panelbar",
     "splitter",
-    "tilelayout",
+    "tile-layout",
     "dock-manager",
     "chart-wizard",
 
@@ -119,12 +118,12 @@ $components: (
     "pivotgrid",
     "treelist",
     "filter",
-    "filemanager",
-    "taskboard",
+    "file-manager",
+    "task-board",
 
     // Editors
     "editor",
-    "imageeditor",
+    "image-editor",
 
     // Scheduling
     "gantt",
@@ -133,7 +132,7 @@ $components: (
     // Misc
     "adaptive",
     "chat",
-    "mediaplayer",
+    "media-player",
     "timeline",
     "pdf-viewer",
     "scroller",

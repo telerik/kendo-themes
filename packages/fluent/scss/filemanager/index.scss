@@ -1,18 +1,19 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "filemanager",
+    name: "file-manager",
     dependencies: (
-        "input",
-        "toolbar",
-        "upload",
-        "switch",
-        "menu",
-        "dialog",
         "breadcrumb",
-        "treeview",
-        "splitter",
+        "dialog",
         "grid",
-        "listview"
+        "icon",
+        "input",
+        "listview",
+        "menu",
+        "splitter",
+        "switch",
+        "toolbar",
+        "treeview",
+        "upload"
     )
 );
 
@@ -27,8 +28,8 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin filemanager-styles() {
-    @include module.render( "filemanager" ) {
+@mixin file-manager-styles() {
+    @include module.render( "file-manager" ) {
         @include kendo-file-manager--layout();
         @include kendo-file-manager--theme();
     }

@@ -5,8 +5,9 @@
 $_kendo-module-meta: (
     name: "date-input",
     dependencies: (
+        "floating-label",
         "icon",
-        "input",
+        "input"
     )
 );
 

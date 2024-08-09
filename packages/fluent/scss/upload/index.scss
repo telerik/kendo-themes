@@ -2,11 +2,10 @@
 $_kendo-module-meta: (
     name: "upload",
     dependencies: (
-        "icon",
-        "button",
         "action-buttons",
+        "button",
         "dropzone",
-        "toolbar"
+        "icon"
     )
 );
 

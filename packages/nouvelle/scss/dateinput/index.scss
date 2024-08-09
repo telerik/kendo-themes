@@ -3,11 +3,11 @@
 
 // Module meta
 $_kendo-module-meta: (
-    name: "dateinput",
+    name: "date-input",
     dependencies: (
-        "input",
+        "floating-label",
         "icon",
-        "button"
+        "input"
     )
 );
 
@@ -25,7 +25,7 @@ $_kendo-module-meta: (
 
 // Expose
 @mixin kendo-date-input--styles() {
-    @include module-render( "dateinput" ) {
+    @include module-render( "date-input" ) {
         @include kendo-date-input--layout();
         @include kendo-date-input--theme();
     }

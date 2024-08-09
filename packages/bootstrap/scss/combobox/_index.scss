@@ -5,10 +5,12 @@
 $_kendo-module-meta: (
     name: "combobox",
     dependencies: (
+        "button",
+        "floating-label",
         "icon",
         "input",
         "list",
-        "popup",
+        "popup"
     )
 );
 

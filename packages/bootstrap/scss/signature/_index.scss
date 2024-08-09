@@ -6,7 +6,10 @@ $_kendo-module-meta: (
     name: "signature",
     dependencies: (
         "button",
+        "color-picker",
+        "icon",
         "input",
+        "split-button"
     )
 );
 

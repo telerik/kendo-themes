@@ -6,11 +6,15 @@
 $_kendo-module-meta: (
     name: "pivotgrid",
     dependencies: (
+        "action-buttons",
+        "button",
+        "chip",
+        "form",
         "dialog",
         "grid",
         "icon",
         "list",
-        "treeview",
+        "treeview"
     )
 );
 
@@ -20,10 +24,6 @@ $_kendo-module-meta: (
 @import "../treeview/_index.scss";
 @import "../grid/_index.scss";
 @import "../icons/_index.scss";
-// @import "../utils/_spacer.scss";
-// @import "../utils/_flex.scss";
-// @import "../utils/_grid.scss";
-// @import "../utils/_position.scss";
 @import "../list/_index.scss";
 
 

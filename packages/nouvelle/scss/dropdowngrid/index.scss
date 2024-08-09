@@ -5,9 +5,11 @@
 $_kendo-module-meta: (
     name: "dropdown-grid",
     dependencies: (
-        "input",
-        "icon",
         "button",
+        "floating-label",
+        "grid",
+        "icon",
+        "input",
         "popup",
         "table"
     )

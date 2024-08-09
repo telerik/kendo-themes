@@ -5,11 +5,12 @@
 $_kendo-module-meta: (
     name: "dropdown-list",
     dependencies: (
-        "input",
-        "icon",
         "button",
-        "popup",
-        "list"
+        "floating-label",
+        "icon",
+        "input",
+        "list",
+        "popup"
     )
 );
 

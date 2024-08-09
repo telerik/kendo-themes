@@ -6,7 +6,7 @@
 $_kendo-module-meta: (
     name: "grid",
     dependencies: (
-        "actions",
+        "action-buttons",
         "autocomplete",
         "badge",
         "button",
@@ -28,8 +28,7 @@ $_kendo-module-meta: (
         "tabstrip",
         "textbox",
         "toolbar",
-        "validator",
-        "utils/layout/float",
+        "validator"
     )
 );
 

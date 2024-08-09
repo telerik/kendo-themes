@@ -1,27 +1,40 @@
 $_kendo-dependencies: (
+    action-buttons: (
+        "button",
+        "icon"
+    ),
     action-sheet: (
         "icon",
         "listgroup",
         "popup"
     ),
-    actions: (),
-    adaptive: (),
+    adaptive: (
+        "checkbox",
+        "listgroup",
+        "radio",
+        "switch",
+        "toolbar"
+    ),
     appbar: (),
     autocomplete: (
-        "button",
+        "floating-label",
         "icon",
         "input",
         "list",
         "popup"
     ),
-    avatar: (),
-    badge: (),
+    avatar: (
+        "icon"
+    ),
+    badge: (
+        "icon"
+    ),
     bottom-navigation: (
         "icon"
     ),
     breadcrumb: (
         "icon",
-        "textbox"
+        "input"
     ),
     button: (
         "badge",
@@ -29,89 +42,123 @@ $_kendo-dependencies: (
     ),
     calendar: (
         "button",
+        "icon",
         "list"
     ),
     captcha: (
         "button",
+        "icon",
+        "input",
         "slider",
         "textbox"
     ),
     card: (
-        "actions",
+        "action-buttons",
         "button",
-        // "utils/flex",
-        // "utils/grid"
+        "typography"
     ),
     chat: (
         "avatar",
+        "button",
         "card",
-        "textbox",
+        "icon",
+        "input",
         "toolbar"
     ),
     checkbox: (),
-    chip: (),
+    chip: (
+        "avatar",
+        "icon"
+    ),
     color-editor: (
-        "actions",
+        "button",
+        "action-buttons",
+        "color-gradient",
         "color-palette",
-        "color-preview",
-        "color-gradient"
+        "color-preview"
     ),
     color-gradient: (
         "button",
+        "icon",
         "numeric-textbox",
         "slider",
-        "textbox",
-        // "utils/flex"
+        "textbox"
     ),
-    color-palette: (
-        "color-preview",
-        // "utils/flex"
+    color-palette: (),
+    color-preview: (
+        "icon"
     ),
-    color-preview: (),
     color-picker: (
         "button",
         "color-editor",
+        "icon",
         "input",
         "popup"
     ),
     combobox: (
         "button",
+        "floating-label",
+        "icon",
         "input",
-        "popup",
-        "list"
+        "list",
+        "popup"
     ),
     cursor: (),
     dataviz: (
+        "icon",
         "popup",
         "tooltip"
     ),
     date-input: (
+        "floating-label",
+        "icon",
         "input"
     ),
     date-picker: (
         "button",
         "calendar",
+        "floating-label",
         "icon",
         "input",
         "popup"
     ),
     date-range-picker: (
-        "date-picker"
+        "calendar",
+        "date-input",
+        "date-picker",
+        "floating-label",
+        "icon",
+        "input",
+        "popup"
     ),
     date-time-picker: (
+        "action-buttons",
+        "button",
+        "calendar",
+        "date-input",
         "date-picker",
-        "time-picker"
+        "floating-label",
+        "icon",
+        "input",
+        "list",
+        "popup",
+        "time-selector"
     ),
     dialog: (
+        "action-buttons",
+        "button",
+        "icon",
         "window"
     ),
     draggable: (),
     drawer: (
+        "icon",
         "list",
         "overlay"
     ),
     dropdown-grid: (
         "button",
+        "floating-label",
         "grid",
         "icon",
         "input",
@@ -120,6 +167,7 @@ $_kendo-dependencies: (
     ),
     dropdown-list: (
         "button",
+        "floating-label",
         "icon",
         "input",
         "list",
@@ -127,6 +175,7 @@ $_kendo-dependencies: (
     ),
     dropdown-tree: (
         "button",
+        "floating-label",
         "icon",
         "input",
         "popup",
@@ -135,8 +184,8 @@ $_kendo-dependencies: (
     dropzone: (),
     dock-manager: (
         "splitter",
-        "toolbar",
-        "tabstrip"
+        "tabstrip",
+        "toolbar"
     ),
     chart-wizard: (
         "icon",
@@ -147,7 +196,7 @@ $_kendo-dependencies: (
         "grid",
         "tabstrip",
         "listview",
-        "forms",
+        "form",
         "combobox"
     ),
     editor: (
@@ -156,20 +205,21 @@ $_kendo-dependencies: (
         "color-picker",
         "combobox",
         "dropdown-list",
+        "file-manager",
+        "icon",
         "toolbar",
         "upload",
         "window"
     ),
     expander: (
         "icon",
-        "list",
-        // "utils/display",
-        // "utils/flex"
+        "list"
     ),
     fab: (
-        "button",
         "badge",
-        // "utils/position"
+        "button",
+        "icon",
+        "popup"
     ),
     file-manager: (
         "breadcrumb",
@@ -199,33 +249,45 @@ $_kendo-dependencies: (
         "input"
     ),
     form: (
-        "actions",
+        "action-buttons",
         "button",
-        "toolbar"
+        "validator"
     ),
     gantt: (
         "button",
         "date-time-picker",
+        "icon",
         "input",
         "numeric-textbox",
         "splitter",
+        "toolbar",
         "treelist",
         "validator",
         "window",
         "time-marker"
     ),
     grid: (
-        "actions",
+        "action-buttons",
+        "autocomplete",
+        "badge",
         "button",
         "checkbox",
+        "chip",
+        "date-time-picker",
         "dialog",
+        "dropdown-list",
+        "icon",
         "input",
         "list",
         "menu",
+        "numeric-textbox",
         "pager",
-        "popup",
+        "progressbar",
         "radio",
         "skeleton",
+        "table",
+        "tabstrip",
+        "textbox",
         "toolbar",
         "validator"
     ),
@@ -241,44 +303,61 @@ $_kendo-dependencies: (
         "button",
         "icon"
     ),
-    list: (),
+    list: (
+        "checkbox",
+        "icon"
+    ),
     listbox: (
         "button",
+        "checkbox",
+        "icon",
         "list"
     ),
-    listgroup: (),
-    listview: (
-        "pager",
-        // "utils/grid",
-        // "utils/flex"
+    listgroup: (
+        "icon"
     ),
-    loader: (),
+    listview: (
+        "icon",
+        "pager"
+    ),
+    loader: (
+        "overlay"
+    ),
     map: (
         "button",
-        "scroller",
-        // "utils/position"
+        "icon",
+        "scroller"
     ),
     masked-textbox: (
-        "button",
-        "input"
+        "icon",
+        "input",
+        "floating-label"
     ),
     media-player: (
+        "button",
+        "icon",
+        "listview",
         "slider",
         "toolbar"
     ),
     menu: (
         "button",
         "icon",
+        "list",
         "popup"
     ),
     menu-button: (
         "button",
+        "icon",
         "menu"
     ),
-    messagebox: (),
+    messagebox: (
+        "icon"
+    ),
     multiselect: (
         "button",
         "chip",
+        "floating-label",
         "icon",
         "input",
         "list",
@@ -291,51 +370,62 @@ $_kendo-dependencies: (
     ),
     numeric-textbox: (
         "button",
+        "floating-label",
         "icon",
         "input"
     ),
     orgchart: (
+        "action-buttons",
+        "avatar",
         "button",
         "card",
         "dropdown-list",
+        "form",
         "icon",
         "menu",
+        "menu-button",
         "textbox",
         "upload",
         "window"
     ),
     overlay: (),
     pager: (
+        "button",
         "dropdown-list",
-        "icon",
-        "list",
-        "toolbar"
+        "icon"
     ),
     panel: (),
     panelbar: (
-        "icon"
+        "icon",
+        "list"
     ),
     pdf-viewer: (
         "button",
         "combobox",
         "dialog",
         "dropzone",
+        "icon",
         "pager",
         "textbox",
         "toolbar",
         "window"
     ),
     pivotgrid: (
+        "action-buttons",
+        "button",
+        "chip",
+        "form",
         "dialog",
         "grid",
+        "icon",
         "list",
-        "treeview",
-        // "utils/flex",
-        // "utils/grid",
-        // "utils/position"
+        "treeview"
     ),
     popover: (
+        "action-buttons",
+        "button",
         "card",
+        "icon",
         "popup"
     ),
     popup: (),
@@ -345,48 +435,76 @@ $_kendo-dependencies: (
     rating: (
         "icon"
     ),
-    responsive-panel: (),
+    responsive-panel: (
+        "icon"
+    ),
     ripple: (),
     scheduler: (
+        "action-buttons",
+        "adaptive",
         "button",
+        "calendar",
+        "checkbox",
         "date-time-picker",
         "dialog",
         "dropdown-list",
+        "form",
+        "icon",
+        "numeric-textbox",
+        "radio",
+        "textarea",
+        "textbox",
         "toolbar",
         "tooltip",
-        "time-marker"
+        "time-marker",
+        "window"
     ),
-    scroller: (),
+    scroller: (
+        "icon"
+    ),
     scrollview: (
-        "button"
+        "button",
+        "icon"
     ),
     searchbox: (
         "button",
+        "floating-label",
+        "icon",
         "input"
     ),
     signature: (
         "button",
-        "input"
+        "color-picker",
+        "icon",
+        "input",
+        "split-button"
     ),
     skeleton: (),
     slider: (
         "button",
+        "icon",
         "tooltip"
     ),
     split-button: (
         "button",
+        "icon",
         "menu"
     ),
     splitter: (
+        "draggable",
         "icon"
     ),
     spreadsheet: (
+        "action-buttons",
         "button",
         "checkbox",
         "color-picker",
         "combobox",
         "date-time-picker",
         "dropdown-list",
+        "form",
+        "icon",
+        "input",
         "list",
         "menu",
         "radio",
@@ -404,30 +522,46 @@ $_kendo-dependencies: (
     table: (),
     tabstrip: (
         "button",
-        "icon"
+        "icon",
+        "list",
+        "menu-button"
     ),
     task-board: (
+        "action-buttons",
+        "badge",
+        "button",
         "card",
+        "dialog",
         "form",
+        "icon",
+        "input",
+        "menu",
+        "menu-button",
         "searchbox",
         "textbox",
-        "toolbar"
+        "toolbar",
+        "window"
     ),
     textarea: (
         "button",
+        "floating-label",
         "icon",
         "input"
     ),
     textbox: (
         "button",
+        "floating-label",
         "icon",
         "input"
     ),
     tile-layout: (
-        "card"
+        "button",
+        "card",
+        "icon"
     ),
     time-marker: (),
     time-duration-picker: (
+        "action-buttons",
         "button",
         "icon",
         "input",
@@ -436,8 +570,9 @@ $_kendo-dependencies: (
         "time-selector"
     ),
     time-selector: (
-        "actions",
+        "action-buttons",
         "button",
+        "icon",
         "list"
     ),
     timeline: (
@@ -446,6 +581,7 @@ $_kendo-dependencies: (
         "icon"
     ),
     time-picker: (
+        "action-buttons",
         "button",
         "icon",
         "input",
@@ -457,15 +593,17 @@ $_kendo-dependencies: (
         "button",
         "icon",
         "menu",
-        "popup"
+        "menu-button",
+        "popup",
+        "split-button"
     ),
     tooltip: (
-        "button",
         "icon",
         "popup"
     ),
     treelist: (
-        "grid"
+        "grid",
+        "icon"
     ),
     treeview: (
         "checkbox",
@@ -473,12 +611,10 @@ $_kendo-dependencies: (
     ),
     typography: (),
     upload: (
-        "actions",
+        "action-buttons",
         "button",
         "dropzone",
-        "icon",
-        "listgroup",
-        "toolbar"
+        "icon"
     ),
     utils: (),
     utils-accessibility-screen-readers: (),
@@ -574,18 +710,21 @@ $_kendo-dependencies: (
     utils-typography-vertical-align: (),
     utils-typography-white-space: (),
     validator: (
+        "icon",
         "tooltip"
     ),
     virtual-scroller: (),
     window: (
-        "actions",
+        "action-buttons",
         "button",
+        "form",
         "icon",
         "overlay"
     ),
     wizard: (
         "button",
         "form",
+        "icon",
         "stepper"
     )
 );

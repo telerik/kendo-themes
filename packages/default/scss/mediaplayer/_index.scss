@@ -6,9 +6,11 @@
 $_kendo-module-meta: (
     name: "media-player",
     dependencies: (
+        "button",
         "icon",
+        "listview",
         "slider",
-        "toolbar",
+        "toolbar"
     )
 );
 

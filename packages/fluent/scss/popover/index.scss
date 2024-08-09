@@ -3,8 +3,10 @@ $_kendo-module-meta: (
     name: "popover",
     dependencies: (
         "action-buttons",
-        "dialog",
-        "window"
+        "button",
+        "card",
+        "icon",
+        "popup"
     )
 );
 

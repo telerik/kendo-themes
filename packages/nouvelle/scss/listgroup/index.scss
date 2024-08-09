@@ -4,7 +4,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "listgroup",
-    dependencies: ()
+    dependencies: (
+        "icon"
+    )
 );
 
 

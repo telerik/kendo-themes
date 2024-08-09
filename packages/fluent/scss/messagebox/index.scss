@@ -1,7 +1,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "messagebox",
-    dependencies: ()
+    dependencies: (
+        "icon"
+    )
 );
 
 

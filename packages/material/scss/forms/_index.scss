@@ -6,9 +6,9 @@
 $_kendo-module-meta: (
     name: "form",
     dependencies: (
-        "actions",
-        "icon",
-        "toolbar",
+        "action-buttons",
+        "button",
+        "validator"
     )
 );
 

@@ -6,17 +6,14 @@
 $_kendo-module-meta: (
     name: "card",
     dependencies: (
-        "icon",
-        "actions",
-        "typography",
-        // "utils/flex-grid"
+        "action-buttons",
+        "button",
+        "typography"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_flex.scss";
-// @import "../utils/_grid.scss";
 @import "../action-buttons/_index.scss";
 @import "../icons/_index.scss";
 @import "../typography/_index.scss";

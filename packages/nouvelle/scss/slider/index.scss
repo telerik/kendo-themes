@@ -4,7 +4,11 @@
 // Module meta
 $_kendo-module-meta: (
     name: "slider",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "icon",
+        "tooltip"
+    )
 );
 
 

@@ -4,7 +4,14 @@
 // Module meta
 $_kendo-module-meta: (
     name: "toolbar",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "icon",
+        "menu",
+        "menu-button",
+        "popup",
+        "split-button"
+    )
 );
 
 

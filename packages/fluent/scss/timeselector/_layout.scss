@@ -3,7 +3,7 @@
 @use "../button/_variables.scss" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-timeselector--layout() {
+@mixin kendo-time-selector--layout() {
 
     .k-timeselector {
         border-width: var( --kendo-time-selector-border-width, $kendo-time-selector-border-width );

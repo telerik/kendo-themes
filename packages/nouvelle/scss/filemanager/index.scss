@@ -4,7 +4,20 @@
 // Module meta
 $_kendo-module-meta: (
     name: "file-manager",
-    dependencies: ()
+    dependencies: (
+        "breadcrumb",
+        "dialog",
+        "grid",
+        "icon",
+        "input",
+        "listview",
+        "menu",
+        "splitter",
+        "switch",
+        "toolbar",
+        "treeview",
+        "upload"
+    )
 );
 
 

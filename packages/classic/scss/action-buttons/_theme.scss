@@ -1,6 +1,6 @@
 @import "@progress/kendo-theme-default/scss/action-buttons/_theme.scss";
 
 
-@mixin kendo-actions--theme() {
-    @include kendo-actions--theme-base();
+@mixin kendo-action-buttons--theme() {
+    @include kendo-action-buttons--theme-base();
 }

@@ -2,8 +2,9 @@
 $_kendo-module-meta: (
     name: "drawer",
     dependencies: (
-        "overlay",
-        "icon"
+        "icon",
+        "list",
+        "overlay"
     )
 );
 

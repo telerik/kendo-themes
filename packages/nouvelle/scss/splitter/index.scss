@@ -4,7 +4,10 @@
 // Module meta
 $_kendo-module-meta: (
     name: "splitter",
-    dependencies: ()
+    dependencies: (
+        "draggable",
+        "icon"
+    )
 );
 
 

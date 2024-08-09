@@ -4,7 +4,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "media-player",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "icon",
+        "listview",
+        "slider",
+        "toolbar"
+    )
 );
 
 

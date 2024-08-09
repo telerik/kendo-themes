@@ -4,7 +4,12 @@
 // Module meta
 $_kendo-module-meta: (
     name: "wizard",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "form",
+        "icon",
+        "stepper"
+    )
 );
 
 

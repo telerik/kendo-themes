@@ -1,16 +1,14 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "dropdowngrid",
+    name: "dropdown-grid",
     dependencies: (
         "button",
-        "table",
-        "input",
         "floating-label",
-        "combobox",
+        "grid",
+        "icon",
+        "input",
         "popup",
-        "toolbar",
-        "menu",
-        "grid"
+        "table"
     )
 );
 
@@ -24,10 +22,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin dropdowngrid-styles() {
-    @include module.render( "dropdowngrid" ) {
-        @include kendo-dropdowngrid--layout();
-        @include kendo-dropdowngrid--theme();
+@mixin dropdown-grid-styles() {
+    @include module.render( "dropdown-grid" ) {
+        @include kendo-dropdown-grid--layout();
+        @include kendo-dropdown-grid--theme();
     }
 }
-
