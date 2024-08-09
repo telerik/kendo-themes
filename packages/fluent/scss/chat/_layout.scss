@@ -316,9 +316,13 @@
                 fill: currentColor;
                 display: inline-block;
             }
+        }
+    }
 
-            .k-rtl &,
-            [dir="rtl"] & {
+    .k-rtl,
+    [dir="rtl"] {
+        .k-message-box {
+            .k-button {
                 transform: scaleX(-1);
             }
         }

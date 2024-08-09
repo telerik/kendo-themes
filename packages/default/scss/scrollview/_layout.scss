@@ -44,16 +44,15 @@
         transition-timing-function: $kendo-scrollview-transition-timing-function;
         transform: translateX( calc( -100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
 
-        [dir="rtl"] &,
-        .k-rtl & {
-            transform: translateX( calc( 100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
-        }
-
         .k-scrollview-view {
             width: calc( 100% / var(--kendo-scrollview-views, 1) );
             flex: 0 0 calc( 100% / var(--kendo-scrollview-views, 1) );
         }
 
+    }
+
+    :is([dir="rtl"], .k-rtl) .k-scrollview-wrap.k-scrollview-animate {
+        transform: translateX( calc( 100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
     }
 
     .k-scrollview-nav-wrap {

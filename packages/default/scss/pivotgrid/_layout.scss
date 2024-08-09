@@ -188,24 +188,8 @@
         cursor: pointer;
         user-select: none;
 
-        .k-flex-row &,
-        .k-flex-row-reverse & {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            writing-mode: vertical-rl;
-
-            .k-icon {
-                vertical-align: baseline;
-            }
-        }
         .k-flex-row-reverse & > span {
             transform: rotate(-180deg);
-        }
-
-        .k-flex-col &,
-        .k-flex-col-reverse & {
-            text-align: center;
         }
     }
 
@@ -215,21 +199,7 @@
         position: absolute;
         overflow: hidden;
         z-index: 2;
-
-        .k-flex-row & {
-            right: $kendo-pivotgrid-configurator-button-size;
-        }
-        .k-flex-row-reverse & {
-            left: $kendo-pivotgrid-configurator-button-size;
-        }
-        .k-flex-col & {
-            bottom: $kendo-pivotgrid-configurator-button-size;
-        }
-        .k-flex-col-reverse & {
-            top: $kendo-pivotgrid-configurator-button-size;
-        }
     }
-
 
     // Panel Content
     .k-pivotgrid-configurator-header {
@@ -371,14 +341,34 @@
         min-width: $kendo-pivotgrid-configurator-vertical-width;
     }
 
-    .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
-        .k-flex-row &,
-        .k-flex-row-reverse & {
+    .k-flex-row {
+        .k-pivotgrid-configurator-overlay {
+            right: $kendo-pivotgrid-configurator-button-size;
+        }
+
+        &-reverse .k-pivotgrid-configurator-overlay {
+            left: $kendo-pivotgrid-configurator-button-size;
+        }
+    }
+
+    .k-flex-row,
+    .k-flex-row-reverse {
+        .k-pivotgrid-configurator-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl;
+
+            .k-icon {
+                vertical-align: baseline;
+            }
+        }
+
+        .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
             border-right-width: 0;
             border-left-width: 0;
         }
     }
-
 
     // Horizontal Layout
     .k-pivotgrid-configurator-horizontal {
@@ -426,16 +416,30 @@
                 overflow-y: auto;
             }
         }
+    }
 
-        &.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
-            .k-flex-col &,
-            .k-flex-col-reverse & {
-                border-top-width: 0;
-                border-bottom-width: 0;
-            }
+    .k-flex-col {
+        .k-pivotgrid-configurator-overlay {
+            bottom: $kendo-pivotgrid-configurator-button-size;
+        }
+
+        &-reverse .k-pivotgrid-configurator-overlay {
+            top: $kendo-pivotgrid-configurator-button-size;
         }
     }
 
+
+    .k-flex-col,
+    .k-flex-col-reverse {
+        .k-pivotgrid-configurator-button {
+            text-align: center;
+        }
+
+        .k-pivotgrid-configurator-horizontal.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
+            border-top-width: 0;
+            border-bottom-width: 0;
+        }
+    }
 
 
     // Pivotgrid export

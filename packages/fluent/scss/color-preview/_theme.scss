@@ -20,9 +20,9 @@
     }
 
     // Mask
-    .k-color-preview-mask::before {
-        [disabled] &,
-        .k-disabled & {
+    [disabled],
+    .k-disabled {
+        .k-color-preview-mask::before {
             @include fill(
                 $bg: var( --kendo-disabled-bg )
             );

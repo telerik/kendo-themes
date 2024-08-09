@@ -11,13 +11,12 @@
         tbody > tr:not(:only-child) > .k-header {
             border-left-color: $kendo-grid-border;
         }
-        .k-rtl & {
+    }
 
-            .k-grid-header {
-
-                tbody > tr:not(:only-child) > .k-header {
-                    border-right-color: $kendo-grid-border;
-                }
+    .k-rtl .k-gantt-timeline-pane {
+        .k-grid-header {
+            tbody > tr:not(:only-child) > .k-header {
+                border-right-color: $kendo-grid-border;
             }
         }
     }

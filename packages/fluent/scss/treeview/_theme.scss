@@ -55,18 +55,15 @@
             --INTERNAL--kendo-treeview-item-bg: var( --kendo-treeview-item-selected-bg, #{$kendo-treeview-item-selected-bg} );
             --INTERNAL--kendo-treeview-item-border: var( --kendo-treeview-item-selected-border, #{$kendo-treeview-item-selected-border} );
         }
-
-        // Disabled state
-        &:disabled,
-        &.k-disabled,
-        .k-treeview-item:disabled &,
-        .k-treeview-item.k-disabled & {
-            --INTERNAL--kendo-treeview-item-text: var( --kendo-treeview-item-disabled-text, #{$kendo-treeview-item-disabled-text} );
-            --INTERNAL--kendo-treeview-item-bg: var( --kendo-treeview-item-disabled-bg, #{$kendo-treeview-item-disabled-bg} );
-            --INTERNAL--kendo-treeview-item-border: var( --kendo-treeview-item-disabled-border, #{$kendo-treeview-item-disabled-border} );
-        }
     }
 
+    // Disabled state
+    .k-treeview-leaf:is(:disabled, .k-disabled),
+    :is(.k-treeview-item:disabled, .k-treeview-item.k-disabled) .k-treeview-leaf {
+        --INTERNAL--kendo-treeview-item-text: var( --kendo-treeview-item-disabled-text, #{$kendo-treeview-item-disabled-text} );
+        --INTERNAL--kendo-treeview-item-bg: var( --kendo-treeview-item-disabled-bg, #{$kendo-treeview-item-disabled-bg} );
+        --INTERNAL--kendo-treeview-item-border: var( --kendo-treeview-item-disabled-border, #{$kendo-treeview-item-disabled-border} );
+    }
 
     // Treeview load more button
     .k-treeview .k-treeview-load-more-button {

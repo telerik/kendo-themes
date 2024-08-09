@@ -65,14 +65,14 @@
         &:disabled,
         &[disabled] {
             @include disabled( $kendo-disabled-styling... );
-
-            [disabled] &,
-            .k-disabled & {
-                opacity: 1;
-                filter: grayscale(0);
-            }
         }
     }
+
+    :is([disabled], .k-disabled) :is(input.k-input, textarea.k-textarea):is(:disabled, [disabled]) {
+        opacity: 1;
+        filter: grayscale(0);
+    }
+
     textarea.k-textarea {
         overflow: auto;
     }
@@ -90,13 +90,12 @@
         &:disabled,
         &[disabled] {
             @include disabled( $kendo-disabled-styling... );
-
-            [disabled] &,
-            .k-disabled & {
-                opacity: 1;
-                filter: grayscale(0);
-            }
         }
+    }
+
+    :is([disabled], .k-disabled) select.k-picker:is(:disabled, [disabled]) {
+        opacity: 1;
+        filter: grayscale(0);
     }
 
 

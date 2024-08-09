@@ -20,15 +20,15 @@
         *::after {
             box-sizing: border-box;
         }
+    }
 
-        .k-rtl &,
-        &.k-rtl,
-        &[dir = "rtl"] {
-            // Expand / collapse icon
-            .k-expander-indicator {
-                margin-left: 0;
-                margin-right: $kendo-expander-indicator-margin-x;
-            }
+    .k-rtl .k-expander,
+    .k-expander.k-rtl,
+    .k-expander[dir="rtl"] {
+        // Expand / collapse icon
+        .k-expander-indicator {
+            margin-left: 0;
+            margin-right: $kendo-expander-indicator-margin-x;
         }
     }
 

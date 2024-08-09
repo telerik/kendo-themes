@@ -26,10 +26,10 @@
         transition: opacity 100ms linear, transform 500ms cubic-bezier(.4, 0, .2, 1);
         opacity: .1;
         background-color: currentColor;
+    }
 
-        .k-primary & {
-            opacity: .2;
-        }
+    .k-primary .k-ripple-blob {
+        opacity: .2;
     }
 
     .k-ripple-focus::after {

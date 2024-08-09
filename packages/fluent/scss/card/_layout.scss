@@ -75,12 +75,11 @@
         line-height: var( --kendo-card-subtitle-line-height, #{$kendo-card-subtitle-line-height} );
         font-weight: var( --kendo-card-title-font-weight, #{$kendo-card-title-font-weight} );
         margin-block-end: var( --kendo-card-subtitle-margin-bottom, #{$kendo-card-subtitle-margin-bottom} );
-
-        @at-root .k-card-title + & {
-            margin-block-start: calc( var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} ) * -1 );
-        }
     }
 
+    @at-root .k-card-title + .k-card-subtitle {
+        margin-block-start: calc( var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} ) * -1 );
+    }
 
     // Header
     .k-card-header {
@@ -144,11 +143,11 @@
         max-width: 100%;
         flex-shrink: 0;
         overflow: hidden;
+    }
 
-        .k-card-horizontal & {
-            max-width: var( --kendo-card-img-max-width, #{$kendo-card-img-max-width} );
-            object-fit: cover;
-        }
+    .k-card-horizontal .k-card-media {
+        max-width: var( --kendo-card-img-max-width, #{$kendo-card-img-max-width} );
+        object-fit: cover;
     }
 
     // Separator

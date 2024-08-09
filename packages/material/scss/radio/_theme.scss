@@ -6,14 +6,11 @@
     @include kendo-radio--theme-base();
 
     // Radio
-    .k-radio-label {
-
-        // Disabled state
-        .k-radio:disabled + & {
-            color: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ));
-            opacity: 1;
-            filter: none;
-        }
+    // Disabled state
+    .k-radio:disabled + .k-radio-label {
+        color: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ));
+        opacity: 1;
+        filter: none;
     }
 
 }

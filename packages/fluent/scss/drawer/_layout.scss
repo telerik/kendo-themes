@@ -160,16 +160,6 @@
             opacity: 0;
             transition: opacity .3s;
             pointer-events: none;
-
-            .k-drawer-start &,
-            .k-drawer-left & {
-                inset-inline-start: 0;
-            }
-
-            .k-drawer-end &,
-            .k-drawer-right & {
-                inset-inline-end: 0;
-            }
         }
 
         > .k-drawer-link {
@@ -226,6 +216,13 @@
         }
     }
 
+    :is(.k-drawer-start, .k-drawer-left) .k-drawer-item::before {
+        inset-inline-start: 0;
+    }
+
+    :is(.k-drawer-end, .k-drawer-right) .k-drawer-item::before {
+        inset-inline-end: 0;
+    }
 
     // Separator
     .k-drawer-separator {

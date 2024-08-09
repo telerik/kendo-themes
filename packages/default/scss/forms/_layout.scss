@@ -197,27 +197,23 @@
     }
 
     // RTL Adjustments
-    .k-form {
-        [dir="rtl"],
-        .k-rtl & {
-            .k-label-optional {
-                margin-left: 0;
-                margin-right: $kendo-label-optional-margin-x;
-            }
+    .k-form [dir="rtl"],
+    .k-rtl .k-form {
+        .k-label-optional {
+            margin-left: 0;
+            margin-right: $kendo-label-optional-margin-x;
         }
     }
 
-    .k-form-horizontal {
-        [dir="rtl"],
-        .k-rtl & {
-            &.k-form-field,
-            .k-form-field {
-                > .k-label,
-                > kendo-label,
-                > .k-form-label {
-                    margin-right: 0;
-                    margin-left: $kendo-horizontal-form-label-margin-x;
-                }
+    .k-form-horizontal [dir="rtl"],
+    .k-rtl .k-form-horizontal {
+        &.k-form-field,
+        .k-form-field {
+            > .k-label,
+            > kendo-label,
+            > .k-form-label {
+                margin-right: 0;
+                margin-left: $kendo-horizontal-form-label-margin-x;
             }
         }
     }
