@@ -62,12 +62,15 @@
         opacity: 0;
         transform-origin: 0 0;
         transition: opacity .3s linear;
+    }
 
-        .k-map &,
-        .k-diagram & {
+    .k-map,
+    .k-diagram {
+        .km-touch-scrollbar {
             display: none;
         }
     }
+
     .km-vertical-scrollbar {
         height: 100%;
         right: 2px;

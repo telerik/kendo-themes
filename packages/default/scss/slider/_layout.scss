@@ -272,22 +272,21 @@
         margin: 0;
         padding: 0;
         position: absolute;
-
-        .k-slider-horizontal & {
-            height: $kendo-slider-track-thickness;
-            left: 0;
-            margin-top: - k-math-div( $kendo-slider-track-thickness, 2 );
-            top: 50%;
-        }
-
-        .k-slider-vertical & {
-            bottom: 0;
-            left: 50%;
-            margin-left: - k-math-div( $kendo-slider-track-thickness, 2 );
-            width: $kendo-slider-track-thickness;
-        }
     }
 
+    .k-slider-horizontal :is(.k-slider-track, .k-slider-selection) {
+        height: $kendo-slider-track-thickness;
+        left: 0;
+        margin-top: - k-math-div( $kendo-slider-track-thickness, 2 );
+        top: 50%;
+    }
+
+    .k-slider-vertical :is(.k-slider-track, .k-slider-selection) {
+        bottom: 0;
+        left: 50%;
+        margin-left: - k-math-div( $kendo-slider-track-thickness, 2 );
+        width: $kendo-slider-track-thickness;
+    }
 
     .k-draghandle {
         background-color: transparent;
@@ -301,33 +300,37 @@
         width: $kendo-slider-draghandle-size;
         height: $kendo-slider-draghandle-size;
 
-        .k-slider-transitions.k-slider-horizontal & {
-            transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
-        }
-
-        .k-slider-transitions.k-slider-vertical & {
-            transition: bottom  $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
-        }
-
         &.k-pressed {
             transition: none;
         }
     }
 
     .k-slider-selection {
-        .k-slider-transitions.k-slider-horizontal & {
-            transition: width $kendo-slider-transition-speed $kendo-slider-transition-function;
-        }
-
-        .k-slider-transitions.k-slider-vertical & {
-            transition: height $kendo-slider-transition-speed $kendo-slider-transition-function;
-        }
-
         &.k-pressed {
             transition: none;
         }
     }
 
+    .k-slider-transitions {
+        &.k-slider-horizontal {
+            .k-draghandle {
+                transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+            }
+            .k-slider-selection {
+                transition: width $kendo-slider-transition-speed $kendo-slider-transition-function;
+            }
+        }
+
+        &.k-slider-vertical {
+            .k-draghandle {
+                transition: bottom  $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+            }
+
+            .k-slider-selection {
+                transition: height $kendo-slider-transition-speed $kendo-slider-transition-function;
+            }
+        }
+    }
 
     // Slider readonly
     .k-slider.k-readonly {
@@ -384,7 +387,7 @@
     .k-slider kendo-resize-sensor {
         position: absolute;
     }
-    
+
     // Aliases
     .k-draghandle { @extend .k-slider-thumb !optional; }
     .k-draghandle-start { @extend .k-slider-thumb-start !optional; }

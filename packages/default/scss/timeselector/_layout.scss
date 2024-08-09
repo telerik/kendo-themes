@@ -16,12 +16,11 @@
         user-select: none;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        .k-popup > & {
-            border-width: 0;
-        }
     }
 
+    .k-popup > .k-timeselector {
+        border-width: 0;
+    }
 
     // Time selector header
     .k-time-header,

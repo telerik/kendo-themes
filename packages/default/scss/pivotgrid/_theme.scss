@@ -134,24 +134,25 @@
 
 
     // Overlay mode
-    .k-pivotgrid-configurator-overlay {
-        .k-flex-row & {
+    .k-flex-row {
+        .k-pivotgrid-configurator-overlay {
             @include box-shadow( $kendo-pivotgrid-configurator-end-shadow );
         }
 
-        .k-flex-row-reverse & {
+        &-reverse .k-pivotgrid-configurator-overlay {
             @include box-shadow( $kendo-pivotgrid-configurator-start-shadow );
-        }
-
-        .k-flex-col & {
-            @include box-shadow( $kendo-pivotgrid-configurator-top-shadow );
-        }
-
-        .k-flex-col-reverse & {
-            @include box-shadow( $kendo-pivotgrid-configurator-bottom-shadow );
         }
     }
 
+    .k-flex-col {
+        .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-top-shadow );
+        }
+
+        &-reverse .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-bottom-shadow );
+        }
+    }
 
     // Legacy pivotgrid
     // TODO: remove
