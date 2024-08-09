@@ -7,14 +7,12 @@ $_kendo-module-meta: (
     dependencies: (
         "button",
         "icon",
-        "scroller",
-        // "utils/layout/position"
+        "scroller"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_position.scss";
 @import "../button/_index.scss";
 @import "../scroller/_index.scss";
 @import "../icons/_index.scss";

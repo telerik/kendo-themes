@@ -10,15 +10,12 @@ $_kendo-module-meta: (
         "icon",
         "input",
         "slider",
-        "textbox",
-        // "utils/layout/position",
-        // "utils/typography/text-color"
+        "textbox"
     )
 );
 
 
 // Dependencies
-// @import "../utils/_index.scss";
 @import "../icons/_index.scss";
 @import "../input/_index.scss";
 @import "../button/_index.scss";
