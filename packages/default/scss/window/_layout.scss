@@ -48,8 +48,10 @@
         flex-direction: row;
         flex-shrink: 0;
         align-items: center;
+    }
 
-        .k-window-minimized & {
+    .k-window-minimized {
+        .k-window-titlebar {
             border-width: 0;
         }
     }

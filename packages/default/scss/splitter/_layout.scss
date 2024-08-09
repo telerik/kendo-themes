@@ -27,12 +27,6 @@
             overflow: hidden;
         }
 
-        // Nested
-        .k-pane > & {
-            border-width: 0;
-            overflow: hidden;
-        }
-
         // Loading
         .k-pane-loading {
             position: static;
@@ -128,9 +122,16 @@
         z-index: 1;
     }
 
-    .k-pane > .k-splitter-overlay {
-        opacity: 0;
-        position: absolute;
+    .k-pane > {
+        .k-splitter {
+            border-width: 0;
+            overflow: hidden;
+        }
+
+        .k-splitter-overlay {
+            opacity: 0;
+            position: absolute;
+        }
     }
 
     // flexbox-based splitter

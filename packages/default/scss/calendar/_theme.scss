@@ -123,14 +123,6 @@
             );
         }
 
-
-        &[dir="rtl"],
-        .k-rtl & {
-            .k-calendar-navigation {
-                box-shadow: inset 1px 0 $kendo-calendar-navigation-border;
-            }
-        }
-
         // Invalid
         &.k-invalid,
         &.k-invalid:hover,
@@ -140,6 +132,12 @@
         }
     }
 
+    .k-rtl .k-calendar,
+    .k-calendar[dir="rtl"] {
+        .k-calendar-navigation {
+            box-shadow: inset 1px 0 $kendo-calendar-navigation-border;
+        }
+    }
 
     // Scheduler integration
     .k-scheduler .k-calendar .k-other-month {

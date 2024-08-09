@@ -116,11 +116,11 @@
         max-width: 100%;
         flex-shrink: 0;
         overflow: hidden;
+    }
 
-        .k-card-horizontal & {
-            max-width: $kendo-card-img-max-width;
-            object-fit: cover;
-        }
+    .k-card-horizontal .k-card-media {
+        max-width: $kendo-card-img-max-width;
+        object-fit: cover;
     }
 
 

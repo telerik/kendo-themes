@@ -454,28 +454,23 @@
             }
 
         }
+    }
 
-        // RTL
-        .k-rtl &,
-        &[dir="rtl"],
-        [dir="rtl"] & {
-
-            .k-scheduler-mobile {
-
-                .k-scheduler-toolbar {
-                    > ul > li {
-                        border: 0;
-                    }
+    // RTL
+    :is(.k-rtl .k-pane-wrapper, [dir="rtl"] .k-pane-wrapper, .k-pane-wrapper[dir="rtl"]) {
+        .k-scheduler-mobile {
+            .k-scheduler-toolbar {
+                > ul > li {
+                    border: 0;
                 }
+            }
 
-                .k-task .k-i-reload {
-                    margin-left: .5em;
-                    margin-right: 0;
-                }
+            .k-task .k-i-reload {
+                margin-left: .5em;
+                margin-right: 0;
             }
         }
     }
-
 }
 
 
