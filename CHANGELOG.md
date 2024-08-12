@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.0...v9.0.1-dev.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* **grid:** missing sticky rows styles ([c1bf80e](https://github.com/telerik/kendo-themes/commit/c1bf80ed19e21dc3dd991ec30a1480de078d9e5f))
+
+
+
+
+
 ## [9.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v9.0.0...v9.0.1-dev.0) (2024-08-05)
 
 
