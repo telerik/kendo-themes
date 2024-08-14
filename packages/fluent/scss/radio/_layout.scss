@@ -165,9 +165,16 @@
     .k-radio + .k-radio-label,
     .k-radio-wrap + .k-radio-label {
         display: inline;
-        margin-inline-start: var( --kendo-radio-label-spacing, #{ $kendo-radio-label-spacing } );
     }
 
+    .k-radio + .k-label,
+    .k-radio-wrap + .k-label,
+    .k-radio + .k-radio-label,
+    .k-radio-wrap + .k-radio-label,
+    .k-radio-label + .k-radio-wrap,
+    .k-label + .k-radio-wrap {
+        margin-inline-start: var( --kendo-radio-label-spacing, #{ $kendo-radio-label-spacing } );
+    }
 
     // Empty label
     .k-radio-label:empty {
@@ -199,7 +206,8 @@
         align-content: center;
         gap: var( --kendo-radio-list-item-gap, #{ $kendo-radio-list-item-gap } );
 
-        .k-radio-label {
+        .k-radio-label,
+        .k-radio-wrap {
             margin: 0;
         }
     }

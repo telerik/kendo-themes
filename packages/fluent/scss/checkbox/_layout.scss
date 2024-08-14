@@ -199,6 +199,14 @@
     .k-checkbox + .k-checkbox-label,
     .k-checkbox-wrap + .k-checkbox-label {
         display: inline;
+    }
+
+    .k-checkbox + .k-label,
+    .k-checkbox-wrap + .k-label,
+    .k-checkbox + .k-checkbox-label,
+    .k-checkbox-wrap + .k-checkbox-label,
+    .k-checkbox-label + .k-checkbox-wrap,
+    .k-label + .k-checkbox-wrap {
         margin-inline-start: var( --kendo-checkbox-label-margin-x, #{ $kendo-checkbox-label-margin-x } );
     }
 
@@ -231,7 +239,8 @@
         align-content: center;
         gap: k-spacing(2);
 
-        .k-checkbox-label {
+        .k-checkbox-label,
+        .k-checkbox-wrap {
             margin: 0;
         }
     }
