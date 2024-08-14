@@ -10,8 +10,16 @@ export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
-            <span>With Label Before - vertical</span>
-            <span>With Label After - vertical</span>
+            <span>Checkbox with label after</span>
+            <span>Checkbox with label before</span>
+            <div>
+                <CheckboxWithLabelAfter id="label-after">Label after</CheckboxWithLabelAfter>
+            </div>
+            <div>
+                <CheckboxWithLabelBefore id="label-before">Label before</CheckboxWithLabelBefore>
+            </div>
+            <span>CheckboxGroup with label after - vertical</span>
+            <span>CheckboxGroup with label before  - vertical</span>
             <CheckboxGroupNormal>
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="vertical-after-one">First</CheckboxWithLabelAfter>
@@ -34,8 +42,8 @@ export default () => (
                     <CheckboxWithLabelBefore id="vertical-before-thee">Third</CheckboxWithLabelBefore>
                 </CheckboxItem>
             </CheckboxGroupNormal>
-            <span>With Label Before - horizontal</span>
-            <span>With Label After - horizontal</span>
+            <span>CheckboxGroup with label after - horizontal</span>
+            <span>CheckboxGroup with label before - horizontal</span>
             <CheckboxGroupHorizontal>
                 <CheckboxItem>
                     <CheckboxWithLabelAfter id="horizontal-after-one">First</CheckboxWithLabelAfter>

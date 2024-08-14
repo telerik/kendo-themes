@@ -10,8 +10,16 @@ export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
-            <span>With Label Before - vertical</span>
-            <span>With Label After - vertical</span>
+            <span>RadioButton with label after</span>
+            <span>RadioButton with label before</span>
+            <div>
+                <RadioButtonWithLabelAfter id="label-after">Label after</RadioButtonWithLabelAfter>
+            </div>
+            <div>
+                <RadioButtonWithLabelBefore id="label-before">Label before</RadioButtonWithLabelBefore>
+            </div>
+            <span>RadioButtonGroup with label after - vertical</span>
+            <span>RadioButtonGroup with label before - vertical</span>
             <RadioGroupNormal>
                 <RadioItem>
                     <RadioButtonWithLabelAfter id="vertical-after-one" name="vertical-after">First</RadioButtonWithLabelAfter>
@@ -34,8 +42,8 @@ export default () => (
                     <RadioButtonWithLabelBefore id="vertical-before-thee" name="vertical-before">Third</RadioButtonWithLabelBefore>
                 </RadioItem>
             </RadioGroupNormal>
-            <span>With Label Before - horizontal</span>
-            <span>With Label After - horizontal</span>
+            <span>RadioButtonGroup with label after - horizontal</span>
+            <span>RadioButtonGroup with label before - horizontal</span>
             <RadioGroupHorizontal>
                 <RadioItem>
                     <RadioButtonWithLabelAfter id="horizontal-after-one" name="horizontal-after">First</RadioButtonWithLabelAfter>
