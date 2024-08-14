@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
+const { sassFlatten } = require('../scripts/sass-flatten');
 const dartSass = require('sass');
 
 const themeDir = process.cwd();
