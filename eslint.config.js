@@ -82,7 +82,7 @@ module.exports = [
             "@typescript-eslint/no-empty-function": "off",
             "@typescript-eslint/no-explicit-any": "off",
             "@typescript-eslint/no-non-null-assertion": "off",
-            "@typescript-eslint/no-unused-vars": "error",
+            "@typescript-eslint/no-unused-vars": ["error", {"varsIgnorePattern": "^_"}],
             "no-unused-vars": "off",
             "no-undef": 'off'
         }
