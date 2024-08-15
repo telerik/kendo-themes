@@ -6,7 +6,7 @@ export const PDFViewerBlank = (props) => (
     <PDFViewer blank
         toolbar={
             <Toolbar resizable>
-                <Pager disabled type="input" maxPages={1} pageSizes={false} refresh={false} info={false} />
+                <Pager disabled type="input" currentPage={1} maxPages={1} pageSizes={false} refresh={false} info={false} />
                 <span className="k-spacer"></span>
                 <ButtonGroup>
                     <Button disabled fillMode="flat" className="k-group-start" icon="zoom-out"></Button>
