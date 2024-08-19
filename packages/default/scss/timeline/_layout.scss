@@ -331,7 +331,7 @@
 
         .k-timeline-track-wrap {
             position: relative;
-            padding: k-math-div( $kendo-timeline-track-arrow-height, 2 ) 0;
+            padding: calc( #{$kendo-timeline-track-arrow-height} / 2 ) 0;
 
             &::after {
                 top: auto;
