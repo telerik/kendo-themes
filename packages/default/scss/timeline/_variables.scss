@@ -29,10 +29,10 @@ $kendo-timeline-mobile-spacing-y: k-spacing(4) !default;
 
 /// The width of the Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-width: 30px !default;
+$kendo-timeline-track-arrow-width: k-spacing(7.5) !default;
 /// The height of the Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-height: 30px !default;
+$kendo-timeline-track-arrow-height: k-spacing(7.5) !default;
 
 /// The background color of the disabled Timeline track arrow.
 /// @group timeline
@@ -46,10 +46,10 @@ $kendo-timeline-track-arrow-disabled-border: if($kendo-enable-color-system, k-co
 
 /// The size of the Timeline track.
 /// @group timeline
-$kendo-timeline-track-size: 6px !default;
+$kendo-timeline-track-size: k-spacing(1.5) !default;
 /// The bottom padding of the Timeline's track wrapper.
 /// @group timeline
-$kendo-timeline-track-wrap-padding-bottom: k-math-div( $kendo-timeline-track-size, 2 ) !default;
+$kendo-timeline-track-wrap-padding-bottom: calc( #{$kendo-timeline-track-size} / 2) !default;
 /// The border width of the Timeline track.
 /// @group timeline
 $kendo-timeline-track-border-width: 1px !default;
@@ -58,7 +58,7 @@ $kendo-timeline-track-border-width: 1px !default;
 $kendo-timeline-track-margin-bottom: k-spacing(4) !default;
 /// The bottom offset of the Timeline track.
 /// @group timeline
-$kendo-timeline-track-bottom-calc: calc(#{k-math-div( $kendo-timeline-track-arrow-height, 2 )} + #{$kendo-timeline-track-wrap-padding-bottom}) !default;
+$kendo-timeline-track-bottom-calc: calc( calc( #{$kendo-timeline-track-arrow-height} / 2) + #{$kendo-timeline-track-wrap-padding-bottom}) !default;
 /// The left offset of the Timeline track.
 /// @group timeline
 $kendo-timeline-track-start-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 * #{$kendo-timeline-track-border-width}) !default;
