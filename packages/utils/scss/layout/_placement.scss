@@ -88,13 +88,9 @@
 /// @group placement
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-placement"));
-
 @mixin kendo-utils--layout--placement() {
-    @include module-render("utils-layout-placement") {
-
+    @if not($_utils-placement) {
+        $_utils-placement: true !global;
         // Top / right / bottom / left
         $kendo-utils-placement: k-map-get( $kendo-utils, "placement" ) !default;
         @include generate-utils( top, top, $kendo-utils-placement );

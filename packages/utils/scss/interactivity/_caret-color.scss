@@ -1,12 +1,8 @@
 // TODO: docs
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-interactivity-caret-color"));
-
 @mixin kendo-utils--interactivity--caret-color() {
-    @include module-render("utils-interactivity-caret-color") {
-
+    @if not($_utils-caret-color) {
+        $_utils-caret-color: true !global;
         // Caret color utility classes
         $kendo-utils-caret-color: k-map-get( $kendo-utils, "caret-color" ) !default;
         @include generate-utils( caret, caret-color, $kendo-utils-caret-color );

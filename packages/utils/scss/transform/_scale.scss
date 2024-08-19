@@ -16,10 +16,6 @@
 /// @group transform
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-transform-scale"));
-
 // stylelint-disable scss/at-function-pattern
 @function _scale( $val ) {
     @return scale( $val );
@@ -33,8 +29,8 @@
 // stylelint-enable scss/at-function-pattern
 
 @mixin kendo-utils--transform--scale() {
-    @include module-render("utils-transform-scale") {
-
+    @if not($_utils-transform-scale) {
+        $_utils-transform-scale: true !global;
         // Scale utility classes
         $kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
         @include generate-utils( scale, transform, $kendo-utils-scale, _scale );

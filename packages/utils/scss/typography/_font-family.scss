@@ -1,11 +1,8 @@
 @import "@progress/kendo-theme-core/scss/index.import.scss";
 
-// Register
-@include module-register((name: "utils-typography-font-family"));
-
 @mixin kendo-utils--typography--font-family() {
-    @include module-render("utils-typography-font-family") {
-
+    @if not($_utils-font-family) {
+        $_utils-font-family: true !global;
         // Font family utility classes
         @include generate-utils( font-family, font-family, $kendo-font-families, $css-var: "font-family" );
 

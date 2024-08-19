@@ -16,13 +16,9 @@
 /// @group float
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-float"));
-
 @mixin kendo-utils--layout--float() {
-    @include module-render("utils-layout-float") {
-
+    @if not($_utils-float) {
+        $_utils-float: true !global;
         // Float utility classes
         $kendo-utils-float: k-map-get( $kendo-utils, "float" ) !default;
         @include generate-utils( float, float, $kendo-utils-float );

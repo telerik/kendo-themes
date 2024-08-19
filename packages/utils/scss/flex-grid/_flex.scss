@@ -22,13 +22,9 @@
 /// @group flex
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-flex"));
-
 @mixin kendo-utils--flex-grid--flex() {
-    @include module-render("utils-flex-grid-flex") {
-
+    @if not($_utils-flex) {
+        $_utils-flex: true !global;
         // Flex utility classes
         $kendo-utils-flex: k-map-get( $kendo-utils, "flex" ) !default;
         @include generate-utils( flex, flex, $kendo-utils-flex );

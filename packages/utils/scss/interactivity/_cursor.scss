@@ -22,13 +22,9 @@
 /// @group cursor
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-interactivity-cursor"));
-
 @mixin kendo-utils--interactivity--cursor() {
-    @include module-render("utils-interactivity-cursor") {
-
+    @if not($_utils-cursor) {
+        $_utils-cursor: true !global;
         // Cursor utility classes
         $kendo-utils-cursor: k-map-get( $kendo-utils, "cursor" ) !default;
         @include generate-utils( cursor, cursor, $kendo-utils-cursor );

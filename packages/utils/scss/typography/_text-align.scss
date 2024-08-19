@@ -22,13 +22,9 @@
 /// @group text-align
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-typography-text-align"));
-
 @mixin kendo-utils--typography--text-align() {
-    @include module-render("utils-typography-text-align") {
-
+    @if not($_utils-text-align) {
+        $_utils-text-align: true !global;
         // Text align utility classes
         $kendo-utils-text-align: k-map-get( $kendo-utils, "text-align" ) !default;
 

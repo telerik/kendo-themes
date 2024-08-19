@@ -34,13 +34,9 @@
 /// @group outline-style
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-outline-style"));
-
 @mixin kendo-utils--border--outline-style() {
-    @include module-render("utils-outline-style") {
-
+    @if not($_utils-outline-style) {
+        $_utils-outline-style: true !global;
         // Outline style utility classes
         $kendo-utils-outline-style: k-map-get( $kendo-utils, "outline-style" ) !default;
         @include generate-utils( outline, outline-style, $kendo-utils-outline-style );

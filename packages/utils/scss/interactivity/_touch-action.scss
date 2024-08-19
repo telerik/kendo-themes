@@ -58,13 +58,9 @@
 /// @group touch-action
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-interactivity-touch-action"));
-
 @mixin kendo-utils--interactivity--touch-action() {
-    @include module-render("utils-interactivity-touch-action") {
-
+    @if not($_utils-touch-action) {
+        $_utils-touch-action: true !global;
         // Touch-action utility classes
         $kendo-utils-touch-action: k-map-get( $kendo-utils, "touch-action" ) !default;
         @include generate-utils( touch-action, touch-action, $kendo-utils-touch-action );

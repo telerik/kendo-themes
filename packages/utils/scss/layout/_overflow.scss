@@ -88,13 +88,9 @@
 /// @group overflow
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-overflow"));
-
 @mixin kendo-utils--layout--overflow() {
-    @include module-render("utils-layout-overflow") {
-
+    @if not($_utils-overflow) {
+        $_utils-overflow: true !global;
         // Overflow utility classes
         $kendo-utils-overflow: k-map-get( $kendo-utils, "overflow" ) !default;
         @include generate-utils( overflow, overflow, $kendo-utils-overflow );

@@ -40,13 +40,9 @@
 /// @group zindex
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-zindex"));
-
 @mixin kendo-utils--layout--zindex() {
-    @include module-render("utils-layout-zindex") {
-
+    @if not($_utils-zindex) {
+        $_utils-zindex: true !global;
         // Z-index utility classes
         $kendo-utils-zindex: k-map-get( $kendo-utils, "zindex" ) !default;
         @include generate-utils( z, z-index, $kendo-utils-zindex );

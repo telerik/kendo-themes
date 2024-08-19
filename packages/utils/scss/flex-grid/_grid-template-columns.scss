@@ -16,13 +16,9 @@
 /// @group grid-template-columns
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-grid-template-columns"));
-
 @mixin kendo-utils--flex-grid--grid-template-columns() {
-    @include module-render("utils-flex-grid-grid-template-columns") {
-
+    @if not($_utils-grid-template-cols) {
+        $_utils-grid-template-cols: true !global;
         // Grid template columns utility classes
         $kendo-utils-grid-template-columns: k-map-get( $kendo-utils, "grid-template-columns" ) !default;
         @include generate-utils( grid-cols, grid-template-columns, $kendo-utils-grid-template-columns );
@@ -31,9 +27,11 @@
 }
 
 @mixin kendo-utils--flex-grid--grid-template-columns--responsive($key) {
-
-    // Grid template columns responsive utility classes
-    $kendo-utils-grid-template-columns: k-map-get( $kendo-utils, "grid-template-columns" ) !default;
-    @include generate-utils( grid-cols-#{$key}, grid-template-columns, $kendo-utils-grid-template-columns, $important: false );
+    @if not($_utils-grid-template-cols-responsive) {
+        $_utils-grid-template-cols-responsive: true !global;
+        // Grid template columns responsive utility classes
+        $kendo-utils-grid-template-columns: k-map-get( $kendo-utils, "grid-template-columns" ) !default;
+        @include generate-utils( grid-cols-#{$key}, grid-template-columns, $kendo-utils-grid-template-columns, $important: false );
+    }
 
 }

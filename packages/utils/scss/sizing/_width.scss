@@ -142,13 +142,9 @@
 /// @group width
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-sizing-width"));
-
 @mixin kendo-utils--sizing--width() {
-    @include module-render("utils-sizing-width") {
-
+    @if not($_utils-width) {
+        $_utils-width: true !global;
         // Width utility classes
         $kendo-utils-width: k-map-get( $kendo-utils, "width" ) !default;
         @include generate-utils( w, width, $kendo-utils-width );

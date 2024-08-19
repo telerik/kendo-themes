@@ -22,13 +22,9 @@
 /// @group aspect-ratio
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-aspect-ratio"));
-
 @mixin kendo-utils--layout--aspect-ratio() {
-    @include module-render("utils-layout-aspect-ratio") {
-
+    @if not($_utils-aspect-ratio) {
+        $_utils-aspect-ratio: true !global;
         // Aspect ratio utility classes
         $kendo-utils-aspect-ratio: k-map-get( $kendo-utils, "aspect-ratio" ) !default;
         @include generate-utils( ratio, aspect-ratio, $kendo-utils-aspect-ratio );

@@ -1,11 +1,8 @@
 @import "@progress/kendo-theme-core/scss/elevation/index.import.scss";
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-elevation"));
-
 @mixin kendo-utils--elevation {
-    @include module-render("utils-elevation") {
+    @if not($_utils-elevation) {
+        $_utils-elevation: true !global;
         @include generate-utils(elevation, box-shadow, $kendo-elevation, $css-var: "elevation");
     }
 }

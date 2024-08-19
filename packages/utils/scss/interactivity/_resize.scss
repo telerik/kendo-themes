@@ -22,13 +22,9 @@
 /// @group resize
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-interactivity-resize"));
-
 @mixin kendo-utils--interactivity--resize() {
-    @include module-render("utils-interactivity-resize") {
-
+    @if not($_utils-resize) {
+        $_utils-resize: true !global;
         // Resize utility classes
         $kendo-utils-resize: k-map-get( $kendo-utils, "resize" ) !default;
         @include generate-utils( resize, resize, $kendo-utils-resize );

@@ -12,13 +12,9 @@
 
 // TODO: consider globally horizontal vs h vs x
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-transform-flip"));
-
 @mixin kendo-utils--transform--flip() {
-    @include module-render("utils-transform-flip") {
-
+    @if not($_utils-transform-flip) {
+        $_utils-transform-flip: true !global;
         // Flip utility classes
         $kendo-utils-flip: k-map-get( $kendo-utils, "flip" ) !default;
         @if $kendo-utils-flip {

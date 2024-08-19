@@ -22,13 +22,9 @@
 /// @group flex-direction
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-flex-direction"));
-
 @mixin kendo-utils--flex-grid--flex-direction() {
-    @include module-render("utils-flex-grid-flex-direction") {
-
+    @if not($_utils-flex-direction) {
+        $_utils-flex-direction: true !global;
         // Flex direction utility classes
         $kendo-utils-flex-direction: k-map-get( $kendo-utils, "flex-direction" ) !default;
         @include generate-utils( flex, flex-direction, $kendo-utils-flex-direction );

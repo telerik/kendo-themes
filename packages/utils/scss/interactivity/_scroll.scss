@@ -322,13 +322,9 @@
 /// @group scroll
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-interactivity-scroll"));
-
 @mixin kendo-utils--interactivity--scroll() {
-    @include module-render("utils-interactivity-scroll") {
-
+    @if not($_utils-scroll) {
+        $_utils-scroll: true !global;
         // Scroll behavior utility classes
         $kendo-utils-scroll-behavior: k-map-get( $kendo-utils, "scroll-behavior" ) !default;
         @include generate-utils( scroll, scroll-behavior, $kendo-utils-scroll-behavior );

@@ -178,13 +178,9 @@
 /// @group gap
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-gap"));
-
 @mixin kendo-utils--flex-grid--gap() {
-    @include module-render("utils-flex-grid-gap") {
-
+    @if not($_utils-gap) {
+        $_utils-gap: true !global;
         // Gap utility classes
         $kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
         @include generate-utils( gap, gap, $kendo-utils-gap, $css-var: "spacing" );
@@ -195,11 +191,13 @@
 }
 
 @mixin kendo-utils--flex-grid--gap--responsive($key) {
-
-    // Gap responsive utility classes
-    $kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
-    @include generate-utils( gap-#{$key}, gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
-    @include generate-utils( gap-x-#{$key}, column-gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
-    @include generate-utils( gap-y-#{$key}, row-gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
+    @if not($_utils-gap-responsive) {
+        $_utils-gap-responsive: true !global;
+        // Gap responsive utility classes
+        $kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
+        @include generate-utils( gap-#{$key}, gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
+        @include generate-utils( gap-x-#{$key}, column-gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
+        @include generate-utils( gap-y-#{$key}, row-gap, $kendo-utils-gap, $css-var: "spacing", $important: false );
+    }
 
 }

@@ -58,13 +58,9 @@
 /// @group place-items
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-place-items"));
-
 @mixin kendo-utils--flex-grid--place-items() {
-    @include module-render("utils-flex-grid-place-items") {
-
+    @if not($_utils-place-items) {
+        $_utils-place-items: true !global;
         // Place items utility classes
         $kendo-utils-place-items: k-map-get( $kendo-utils, "place-items" ) !default;
         @include generate-utils( place-items, place-items, $kendo-utils-place-items );

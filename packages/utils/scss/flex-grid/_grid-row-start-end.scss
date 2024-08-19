@@ -16,13 +16,9 @@
 /// @group grid-row-start
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-grid-row-start-end"));
-
 @mixin kendo-utils--flex-grid--grid-row-start-end() {
-    @include module-render("utils-flex-grid-grid-row-start-end") {
-
+    @if not($_utils-grid-row-start-end) {
+        $_utils-grid-row-start-end: true !global;
         // Grid row start/end utility classes
         $kendo-utils-grid-row-start: k-map-get( $kendo-utils, "grid-row-start" ) !default;
         @include generate-utils( row-start, grid-row-start, $kendo-utils-grid-row-start );
@@ -47,13 +43,15 @@
 }
 
 @mixin kendo-utils--flex-grid--grid-row-start-end--responsive($key) {
+    @if not($_utils-grid-row-start-end-responsive) {
+        $_utils-grid-row-start-end-responsive: true !global;
+        // Grid row start responsive utility classes
+        $kendo-utils-grid-row-start: k-map-get( $kendo-utils, "grid-row-start" ) !default;
+        @include generate-utils( row-start-#{$key}, grid-row-start, $kendo-utils-grid-row-start, $important: false );
 
-    // Grid row start responsive utility classes
-    $kendo-utils-grid-row-start: k-map-get( $kendo-utils, "grid-row-start" ) !default;
-    @include generate-utils( row-start-#{$key}, grid-row-start, $kendo-utils-grid-row-start, $important: false );
-
-    // Grid row end responsive utility classes
-    $kendo-utils-grid-row-end: k-map-get( $kendo-utils, "grid-row-end" ) !default;
-    @include generate-utils( row-end-#{$key}, grid-row-end, $kendo-utils-grid-row-end, $important: false );
+        // Grid row end responsive utility classes
+        $kendo-utils-grid-row-end: k-map-get( $kendo-utils, "grid-row-end" ) !default;
+        @include generate-utils( row-end-#{$key}, grid-row-end, $kendo-utils-grid-row-end, $important: false );
+    }
 
 }

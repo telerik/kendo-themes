@@ -52,13 +52,9 @@
 /// @group background-position
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-background-position"));
-
 @mixin kendo-utils--background--background-position() {
-    @include module-render("utils-background-position") {
-
+    @if not($_utils-background-position) {
+        $_utils-background-position: true !global;
         // Background position utility classes
         $kendo-utils-background-position: k-map-get( $kendo-utils, "background-position" ) !default;
         @include generate-utils( bg, background-position, $kendo-utils-background-position );

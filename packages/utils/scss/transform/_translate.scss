@@ -52,10 +52,6 @@
 /// @group transform
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-transform-translate"));
-
 // stylelint-disable scss/at-function-pattern
 @function _translate( $val ) {
     @return translate( $val );
@@ -69,8 +65,8 @@
 // stylelint-enable scss/at-function-pattern
 
 @mixin kendo-utils--transform--translate() {
-    @include module-render("utils-transform-translate") {
-
+    @if not($_utils-transform-translate) {
+        $_utils-transform-translate: true !global;
         // Translate utility classes
         $kendo-utils-translate: k-map-get( $kendo-utils, "translate" ) !default;
         $kendo-utils-translate-xy: (

@@ -76,13 +76,9 @@
 /// @group place-content
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-place-content"));
-
 @mixin kendo-utils--flex-grid--place-content() {
-    @include module-render("utils-flex-grid-place-content") {
-
+    @if not($_utils-place-content) {
+        $_utils-place-content: true !global;
         // Place content utility classes
         $kendo-utils-place-content: k-map-get( $kendo-utils, "place-content" ) !default;
         @include generate-utils( place-content, place-content, $kendo-utils-place-content );

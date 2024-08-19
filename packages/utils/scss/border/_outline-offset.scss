@@ -28,13 +28,9 @@
 /// @group outline-offset
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-outline-offset"));
-
 @mixin kendo-utils--border--outline-offset() {
-    @include module-render("utils-outline-offset") {
-
+    @if not($_utils-outline-offset) {
+        $_utils-outline-offset: true !global;
         // Outline offset utility classes
         $kendo-utils-outline-offset: k-map-get( $kendo-utils, "outline-offset" ) !default;
         @include generate-utils( outline-offset, outline-offset, $kendo-utils-outline-offset );

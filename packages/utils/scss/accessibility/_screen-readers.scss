@@ -1,10 +1,6 @@
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-accessibility-screen-readers"));
-
 @mixin kendo-utils--accessibility--screen-readers() {
-    @include module-render("utils-accessibility-screen-readers") {
-
+    @if not( $_utils-accessibility-screen-readers ) {
+        $_utils-accessibility-screen-readers: true !global;
         // Screen readers utility classes
         $kendo-utils-accessibility: k-map-get( $kendo-utils, "accessibility" ) !default;
 

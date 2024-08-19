@@ -10,13 +10,9 @@
 /// @group flex-basis
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-flex-basis"));
-
 @mixin kendo-utils--flex-grid--flex-basis() {
-    @include module-render("utils-flex-grid-flex-basis") {
-
+    @if not($_utils-flex-basis) {
+        $_utils-flex-basis: true !global;
         // Flex basis utility classes
         $kendo-utils-flex-basis: k-map-get( $kendo-utils, "flex-basis" ) !default;
         @include generate-utils( basis, flex-basis, $kendo-utils-flex-basis );

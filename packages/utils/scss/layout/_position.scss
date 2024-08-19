@@ -28,14 +28,9 @@
 /// @group position
 /// @contextType css
 
-
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-position"));
-
 @mixin kendo-utils--layout--position() {
-    @include module-render("utils-layout-position") {
-
+    @if not($_utils-position) {
+        $_utils-position: true !global;
         // Position utility classes
         $kendo-utils-position: k-map-get( $kendo-utils, "position" ) !default;
         @include generate-utils( pos, position, $kendo-utils-position );
@@ -52,6 +47,6 @@
         .\!#{$kendo-prefix}fixed { @extend .\!#{$kendo-prefix}pos-fixed !optional; }
         .#{$kendo-prefix}sticky { @extend .#{$kendo-prefix}pos-sticky !optional; }
         .\!#{$kendo-prefix}sticky { @extend .\!#{$kendo-prefix}pos-sticky !optional; }
-        
+
     }
 }

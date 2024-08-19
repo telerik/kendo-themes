@@ -10,13 +10,9 @@
 /// @group text-overflow
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-typography-text-overflow"));
-
 @mixin kendo-utils--typography--text-overflow() {
-    @include module-render("utils-typography-text-overflow") {
-
+    @if not($_utils-text-overflow) {
+        $_utils-text-overflow: true !global;
         // Text overflow utility classes
         $kendo-utils-text-overflow: k-map-get( $kendo-utils, "text-overflow" ) !default;
         @include generate-utils( text, text-overflow, $kendo-utils-text-overflow );

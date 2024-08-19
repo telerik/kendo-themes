@@ -324,13 +324,9 @@
 
 @import "@progress/kendo-theme-core/scss/border-radii/index.import.scss";
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-border-radius"));
-
 @mixin kendo-utils--border--border-radius() {
-    @include module-render("utils-border-radius") {
-
+    @if not($_utils-border-radius) {
+        $_utils-border-radius: true !global;
         // Border radius utility classes
         @include generate-utils( rounded, border-radius, $kendo-border-radii, $css-var: "border-radius" );
         @include generate-utils( rounded-tl, border-top-left-radius, $kendo-border-radii, $css-var: "border-radius" );

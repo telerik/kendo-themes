@@ -10,13 +10,9 @@
 /// @group box-sizing
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-box-sizing"));
-
 @mixin kendo-utils--layout--box-sizing() {
-    @include module-render("utils-layout-box-sizing") {
-
+    @if not($_utils-box-sizing) {
+        $_utils-box-sizing: true !global;
         // box-sizing utility classes
         $kendo-utils-box-sizing: k-map-get( $kendo-utils, "box-sizing" ) !default;
         @include generate-utils( box-sizing, box-sizing, $kendo-utils-box-sizing );

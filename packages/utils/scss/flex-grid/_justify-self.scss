@@ -76,13 +76,9 @@
 /// @group justify-self
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-justify-self"));
-
 @mixin kendo-utils--flex-grid--justify-self() {
-    @include module-render("utils-flex-grid-justify-self") {
-
+    @if not($_utils-justify-self) {
+        $_utils-justify-self: true !global;
         // Justify self utility classes
         $kendo-utils-justify-self: k-map-get( $kendo-utils, "justify-self" ) !default;
         @include generate-utils( justify-self, justify-self, $kendo-utils-justify-self );

@@ -1,12 +1,8 @@
 // TODO: docs
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-spacing-space-between"));
-
 @mixin kendo-utils--spacing--space-between() {
-    @include module-render("utils-spacing-space-between") {
-
+    @if not($_utils-space-between) {
+        $_utils-space-between: true !global;
         // Space between utility classes
         $kendo-utils-space-between: k-map-get( $kendo-utils, "space-between" ) !default;
         @each $key, $value in $kendo-utils-space-between {

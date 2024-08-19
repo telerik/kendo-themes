@@ -76,13 +76,9 @@
 /// @group align-self
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-align-self"));
-
 @mixin kendo-utils--flex-grid--align-self() {
-    @include module-render("utils-flex-grid-align-self") {
-
+    @if not($_utils-align-self) {
+        $_utils-align-self: true !global;
         // Align self utility classes
         $kendo-utils-align-self: k-map-get( $kendo-utils, "align-self" ) !default;
         @include generate-utils( align-self, align-self, $kendo-utils-align-self );

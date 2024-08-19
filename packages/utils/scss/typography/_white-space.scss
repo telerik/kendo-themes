@@ -34,13 +34,9 @@
 /// @group white-space
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-typography-white-space"));
-
 @mixin kendo-utils--typography--white-space() {
-    @include module-render("utils-typography-white-space") {
-
+    @if not($_utils-white-space) {
+        $_utils-white-space: true !global;
         // White space utility classes
         $kendo-utils-white-space: k-map-get( $kendo-utils, "white-space" ) !default;
 

@@ -244,13 +244,9 @@
 /// @group border-style
 /// @contextType css
 
-// Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-border-style"));
-
 @mixin kendo-utils--border--border-style() {
-    @include module-render("utils-border-style") {
-
+    @if not($_utils-border-style) {
+        $_utils-border-style: true !global;
         // Border style utility classes
         $kendo-utils-border-style: k-map-get( $kendo-utils, "border-style" ) !default;
         @include generate-utils( border, border-style, $kendo-utils-border-style );
