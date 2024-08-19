@@ -1,27 +1,21 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "map",
-    dependencies: (
-        "button",
-        "icon",
-        "scroller"
-    )
-);
-
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../scroller/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin map-styles() {
-    @include module.render( "map" ) {
+    @if not($_map-styles) {
+        $_map-styles: true !global;
         @include kendo-map--layout();
         @include kendo-map--theme();
+        @include button-styles();
+        @include icon-styles();
+        @include scroller-styles();
     }
 }

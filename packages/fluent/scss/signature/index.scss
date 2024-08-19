@@ -1,29 +1,25 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "signature",
-    dependencies: (
-        "button",
-        "color-picker",
-        "icon",
-        "input",
-        "split-button"
-    )
-);
-
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../colorpicker/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../input/index.scss" as *;
+@use "../split-button/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin signature-styles() {
-    @include module.render( "signature" ) {
+    @if not($_signature-styles) {
+        $_signature-styles: true !global;
         @include kendo-signature--layout();
         @include kendo-signature--theme();
+        @include button-styles();
+        @include color-picker-styles();
+        @include icon-styles();
+        @include input-styles();
+        @include split-button-styles();
     }
 }

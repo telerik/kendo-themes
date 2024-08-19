@@ -1,26 +1,20 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "treelist",
-    dependencies: (
-        "grid",
-        "icon"
-    )
-);
-
+// Dependencies
+@use "../grid/index.scss" as *;
+@use "../icon/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
 
 // Expose
 @mixin treelist-styles() {
-    @include module.render( "treelist" ) {
+    @if not($_treelist-styles) {
+        $_treelist-styles: true !global;
         @include kendo-treelist--layout();
         @include kendo-treelist--theme();
+        @include grid-styles();
+        @include icon-styles();
     }
 }

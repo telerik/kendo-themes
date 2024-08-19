@@ -1,36 +1,35 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "chart-wizard",
-    dependencies: (
-        "icon",
-        "window",
-        "splitter",
-        "dataviz",
-        "expander",
-        "grid",
-        "tabstrip",
-        "listview",
-        "form",
-        "combobox"
-    )
-);
-
+// Dependencies
+@use "../icon/index.scss" as *;
+@use "../window/index.scss" as *;
+@use "../splitter/index.scss" as *;
+@use "../dataviz/index.scss" as *;
+@use "../expansion-panel/index.scss" as *;
+@use "../grid/index.scss" as *;
+@use "../tabstrip/index.scss" as *;
+@use "../listview/index.scss" as *;
+@use "../forms/index.scss" as *;
+@use "../combobox/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
-
 // Expose
 @mixin chart-wizard-styles() {
-    @include module.render( "chart-wizard" ) {
+    @if not($_chart-wizard-styles) {
+        $_chart-wizard-styles: true !global;
         @include kendo-chart-wizard--layout();
         @include kendo-chart-wizard--theme();
+        @include icon-styles();
+        @include window-styles();
+        @include splitter-styles();
+        @include dataviz-styles();
+        @include expander-styles();
+        @include grid-styles();
+        @include tabstrip-styles();
+        @include listview-styles();
+        @include form-styles();
+        @include combobox-styles();
     }
 }

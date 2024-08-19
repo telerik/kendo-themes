@@ -1,32 +1,25 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "listview",
-    dependencies: (
-        "icon",
-        "pager"
-    )
-);
-
+// Dependencies
+@use "../icon/index.scss" as *;
+@use "../pager/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin listview-styles() {
-    @include module.render( "listview" ) {
+    @if not($_listview-styles) {
+        $_listview-styles: true !global;
         @include kendo-listview--layout();
         @include kendo-listview--theme();
         @include kendo-utils--layout--display();
         @include kendo-utils--flex-grid--flex-direction();
         @include kendo-utils--flex-grid--grid-template-columns();
         @include kendo-utils--flex-grid--flex-wrap();
+        @include icon-styles();
+        @include pager-styles();
     }
 }

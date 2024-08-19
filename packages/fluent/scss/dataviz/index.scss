@@ -1,27 +1,21 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "dataviz",
-    dependencies: (
-        "icon",
-        "popup",
-        "tooltip"
-    )
-);
-
+// Dependencies
+@use "../icon/index.scss" as *;
+@use "../popup/index.scss" as *;
+@use "../tooltip/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin dataviz-styles() {
-    @include module.render( "dataviz" ) {
+    @if not($_dataviz-styles) {
+        $_dataviz-styles: true !global;
         @include kendo-dataviz--layout();
         @include kendo-dataviz--theme();
+        @include icon-styles();
+        @include popup-styles();
+        @include tooltip-styles();
     }
 }

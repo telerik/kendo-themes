@@ -1,29 +1,25 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "media-player",
-    dependencies: (
-        "button",
-        "icon",
-        "listview",
-        "slider",
-        "toolbar"
-    )
-);
-
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../listview/index.scss" as *;
+@use "../slider/index.scss" as *;
+@use "../toolbar/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin media-player-styles() {
-    @include module.render( "media-player" ) {
+    @if not($_mediaplayer-styles) {
+        $_mediaplayer-styles: true !global;
         @include kendo-media-player--layout();
         @include kendo-media-player--theme();
+        @include button-styles();
+        @include icon-styles();
+        @include listview-styles();
+        @include slider-styles();
+        @include toolbar-styles();
     }
 }

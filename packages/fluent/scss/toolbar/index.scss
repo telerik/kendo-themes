@@ -1,34 +1,31 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "toolbar",
-    dependencies: (
-        "button",
-        "icon",
-        "menu",
-        "menu-button",
-        "popup",
-        "split-button"
-    )
-);
-
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../menu/index.scss" as *;
+@use "../menu-button/index.scss" as *;
+@use "../popup/index.scss" as *;
+@use "../split-button/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin toolbar-styles() {
-    @include module.render( "toolbar" ) {
+    @if not($_toolbar-styles) {
+        $_toolbar-styles: true !global;
         @include kendo-toolbar--layout();
         @include kendo-toolbar--theme();
         @include kendo-utils--layout--overflow();
         @include kendo-utils--typography--vertical-align();
+        @include button-styles();
+        @include icon-styles();
+        @include menu-styles();
+        @include menu-button-styles();
+        @include popup-styles();
+        @include split-button-styles();
     }
 }

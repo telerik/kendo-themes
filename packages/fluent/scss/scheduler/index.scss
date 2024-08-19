@@ -1,45 +1,54 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "scheduler",
-    dependencies: (
-        "action-buttons",
-        "adaptive",
-        "button",
-        "calendar",
-        "checkbox",
-        "date-time-picker",
-        "dialog",
-        "dropdown-list",
-        "form",
-        "icon",
-        "numeric-textbox",
-        "radio",
-        "textarea",
-        "textbox",
-        "toolbar",
-        "tooltip",
-        "time-marker",
-        "window"
-    )
-);
-
+// Dependencies
+@use "../action-buttons/index.scss" as *;
+@use "../adaptive/index.scss" as *;
+@use "../button/index.scss" as *;
+@use "../calendar/index.scss" as *;
+@use "../checkbox/index.scss" as *;
+@use "../datetimepicker/index.scss" as *;
+@use "../dialog/index.scss" as *;
+@use "../dropdownlist/index.scss" as *;
+@use "../forms/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../numerictextbox/index.scss" as *;
+@use "../radio/index.scss" as *;
+@use "../textarea/index.scss" as *;
+@use "../textbox/index.scss" as *;
+@use "../toolbar/index.scss" as *;
+@use "../tooltip/index.scss" as *;
+@use "../time-marker/index.scss" as *;
+@use "../window/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin scheduler-styles() {
-    @include module.render( "scheduler" ) {
+    @if not($_scheduler-styles) {
+        $_scheduler-styles: true !global;
         @include kendo-scheduler--layout();
         @include kendo-scheduler--theme();
         @include kendo-utils--typography--text-overflow();
+        @include action-buttons-styles();
+        @include adaptive-styles();
+        @include button-styles();
+        @include calendar-styles();
+        @include checkbox-styles();
+        @include date-time-picker-styles();
+        @include dialog-styles();
+        @include dropdown-list-styles();
+        @include form-styles();
+        @include icon-styles();
+        @include numeric-textbox-styles();
+        @include radio-styles();
+        @include textarea-styles();
+        @include textbox-styles();
+        @include toolbar-styles();
+        @include tooltip-styles();
+        @include time-marker-styles();
+        @include window-styles();
     }
 }

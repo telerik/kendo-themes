@@ -1,34 +1,26 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "pivotgrid",
-    dependencies: (
-        "action-buttons",
-        "button",
-        "chip",
-        "form",
-        "dialog",
-        "grid",
-        "icon",
-        "list",
-        "treeview"
-    )
-);
-
+// Dependencies
+@use "../action-buttons/index.scss" as *;
+@use "../button/index.scss" as *;
+@use "../chip/index.scss" as *;
+@use "../forms/index.scss" as *;
+@use "../dialog/index.scss" as *;
+@use "../grid/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../list/index.scss" as *;
+@use "../treeview/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
 
 // Expose
 @mixin pivotgrid-styles() {
-    @include module.render( "pivotgrid" ) {
+    @if not($_pivotgrid-styles) {
+        $_pivotgrid-styles: true !global;
         @include kendo-pivotgrid--layout();
         @include kendo-pivotgrid-configurator--layout();
         @include kendo-pivotgrid-export--layout();
@@ -40,5 +32,14 @@ $_kendo-module-meta: (
         @include kendo-utils--layout--display();
         @include kendo-utils--layout--position();
         @include kendo-utils--flex-grid--flex-direction();
+        @include action-buttons-styles();
+        @include button-styles();
+        @include chip-styles();
+        @include form-styles();
+        @include dialog-styles();
+        @include grid-styles();
+        @include icon-styles();
+        @include list-styles();
+        @include treeview-styles();
     }
 }

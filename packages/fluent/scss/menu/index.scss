@@ -1,29 +1,23 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "menu",
-    dependencies: (
-        "button",
-        "icon",
-        "list",
-        "popup"
-    )
-);
-
-// Core module
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../list/index.scss" as *;
+@use "../popup/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin menu-styles() {
-    @include module.render( "menu" ) {
+    @if not($_menu-styles) {
+        $_menu-styles: true !global;
         @include kendo-menu--layout();
         @include kendo-menu--theme();
+        @include button-styles();
+        @include icon-styles();
+        @include list-styles();
+        @include popup-styles();
     }
 }

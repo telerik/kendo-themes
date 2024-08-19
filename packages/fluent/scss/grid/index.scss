@@ -1,34 +1,29 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "grid",
-    dependencies: (
-        "action-buttons",
-        "autocomplete",
-        "badge",
-        "button",
-        "checkbox",
-        "chip",
-        "date-time-picker",
-        "dialog",
-        "dropdown-list",
-        "icon",
-        "input",
-        "list",
-        "menu",
-        "numeric-textbox",
-        "pager",
-        "progressbar",
-        "radio",
-        "skeleton",
-        "table",
-        "tabstrip",
-        "textbox",
-        "toolbar",
-        "validator"
-    )
-);
+// Dependencies
+@use "../action-buttons/index.scss" as *;
+@use "../autocomplete/index.scss" as *;
+@use "../badge/index.scss" as *;
+@use "../button/index.scss" as *;
+@use "../checkbox/index.scss" as *;
+@use "../chip/index.scss" as *;
+@use "../datetimepicker/index.scss" as *;
+@use "../dialog/index.scss" as *;
+@use "../dropdownlist/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../input/index.scss" as *;
+@use "../list/index.scss" as *;
+@use "../menu/index.scss" as *;
+@use "../numerictextbox/index.scss" as *;
+@use "../pager/index.scss" as *;
+@use "../progressbar/index.scss" as *;
+@use "../radio/index.scss" as *;
+@use "../skeleton/index.scss" as *;
+@use "../table/index.scss" as *;
+@use "../tabstrip/index.scss" as *;
+@use "../textbox/index.scss" as *;
+@use "../toolbar/index.scss" as *;
+@use "../validator/index.scss" as *;
 
 
 // Component
@@ -36,17 +31,37 @@ $_kendo-module-meta: (
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin grid-styles() {
-    @include module.render( "grid" ) {
+    @if not($_grid-styles) {
+        $_grid-styles: true !global;
         @include kendo-grid--layout();
         @include kendo-grid--theme();
         @include kendo-utils--interactivity--touch-action();
         @include kendo-utils--interactivity--cursor();
         @include kendo-utils--layout--display();
+        @include action-buttons-styles();
+        @include autocomplete-styles();
+        @include badge-styles();
+        @include button-styles();
+        @include checkbox-styles();
+        @include chip-styles();
+        @include date-time-picker-styles();
+        @include dialog-styles();
+        @include dropdown-list-styles();
+        @include icon-styles();
+        @include input-styles();
+        @include list-styles();
+        @include menu-styles();
+        @include numeric-textbox-styles();
+        @include pager-styles();
+        @include progressbar-styles();
+        @include radio-styles();
+        @include skeleton-styles();
+        @include table-styles();
+        @include tabstrip-styles();
+        @include textbox-styles();
+        @include toolbar-styles();
+        @include validator-styles();
     }
 }

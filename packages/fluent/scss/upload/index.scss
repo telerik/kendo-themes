@@ -1,28 +1,23 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "upload",
-    dependencies: (
-        "action-buttons",
-        "button",
-        "dropzone",
-        "icon"
-    )
-);
-
+// Dependencies
+@use "../action-buttons/index.scss" as *;
+@use "../button/index.scss" as *;
+@use "../dropzone/index.scss" as *;
+@use "../icon/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin upload-styles() {
-    @include module.render( "upload" ) {
+    @if not($_upload-styles) {
+        $_upload-styles: true !global;
         @include kendo-upload--layout();
         @include kendo-upload--theme();
+        @include action-buttons-styles();
+        @include button-styles();
+        @include dropzone-styles();
+        @include icon-styles();
     }
 }

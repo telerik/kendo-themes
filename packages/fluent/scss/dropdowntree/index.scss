@@ -1,32 +1,30 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "dropdown-tree",
-    dependencies: (
-        "button",
-        "floating-label",
-        "icon",
-        "input",
-        "popup",
-        "treeview"
-    )
-);
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../floating-label/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../input/index.scss" as *;
+@use "../popup/index.scss" as *;
+@use "../treeview/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin dropdown-tree-styles() {
-    @include module.render( "dropdown-tree" ) {
+    @if not($_dropdowntree-styles) {
+        $_dropdowntree-styles: true !global;
         @include kendo-dropdown-tree--layout();
         @include kendo-dropdown-tree--theme();
         @include kendo-utils--typography--text-align();
+        @include button-styles();
+        @include floating-label-styles();
+        @include icon-styles();
+        @include input-styles();
+        @include popup-styles();
+        @include treeview-styles();
     }
 }

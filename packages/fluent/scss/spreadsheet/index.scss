@@ -1,29 +1,24 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "spreadsheet",
-    dependencies: (
-        "action-buttons",
-        "button",
-        "checkbox",
-        "color-picker",
-        "combobox",
-        "date-time-picker",
-        "dropdown-list",
-        "form",
-        "icon",
-        "input",
-        "list",
-        "menu",
-        "radio",
-        "tabstrip",
-        "toolbar",
-        "treeview",
-        "upload",
-        "window"
-    )
-);
+// Dependencies
+@use "../action-buttons/index.scss" as *;
+@use "../button/index.scss" as *;
+@use "../checkbox/index.scss" as *;
+@use "../colorpicker/index.scss" as *;
+@use "../combobox/index.scss" as *;
+@use "../datetimepicker/index.scss" as *;
+@use "../dropdownlist/index.scss" as *;
+@use "../forms/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../input/index.scss" as *;
+@use "../list/index.scss" as *;
+@use "../menu/index.scss" as *;
+@use "../radio/index.scss" as *;
+@use "../tabstrip/index.scss" as *;
+@use "../toolbar/index.scss" as *;
+@use "../treeview/index.scss" as *;
+@use "../upload/index.scss" as *;
+@use "../window/index.scss" as *;
 
 
 // Component
@@ -31,15 +26,30 @@ $_kendo-module-meta: (
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin spreadsheet-styles() {
-    @include module.render( "spreadsheet" ) {
+    @if not($_spreadsheet-styles) {
+        $_spreadsheet-styles: true !global;
         @include kendo-spreadsheet--layout();
         @include kendo-spreadsheet--theme();
         @include kendo-utils--flex-grid--order();
+        @include action-buttons-styles();
+        @include button-styles();
+        @include checkbox-styles();
+        @include color-picker-styles();
+        @include combobox-styles();
+        @include date-time-picker-styles();
+        @include dropdown-list-styles();
+        @include form-styles();
+        @include icon-styles();
+        @include input-styles();
+        @include list-styles();
+        @include menu-styles();
+        @include radio-styles();
+        @include tabstrip-styles();
+        @include toolbar-styles();
+        @include treeview-styles();
+        @include upload-styles();
+        @include window-styles();
     }
 }

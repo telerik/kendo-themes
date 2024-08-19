@@ -1,31 +1,26 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "action-sheet",
-    dependencies: (
-        "icon",
-        "listgroup",
-        "popup"
-    )
-);
-
+// Dependencies
+@use "../icon/index.scss" as *;
+@use "../listgroup/index.scss" as *;
+@use "../popup/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
 
 // Expose
 @mixin action-sheet-styles() {
-    @include module.render( "action-sheet" ) {
+    @if not($_action-sheet-styles) {
+        $_action-sheet-styles: true !global;
         @include kendo-action-sheet--layout();
         @include kendo-action-sheet--layout-jq();
         @include kendo-action-sheet--theme();
+        @include icon-styles();
+        @include listgroup-styles();
+        @include popup-styles();
         @include kendo-utils--layout--overflow();
         @include kendo-utils--typography--text-align();
     }

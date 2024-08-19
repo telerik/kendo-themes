@@ -1,26 +1,21 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "button",
-    dependencies: (
-        "badge",
-        "icon"
-    )
-);
-
+// Dependencies
+@use "../badge/index.scss" as *;
+@use "../icon/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin button-styles() {
-    @include module.render( "button" ) {
+    @if not($_button-styles) {
+        $_button-styles: true !global;
+        @include badge-styles();
+        @include icon-styles();
         @include kendo-button--layout();
         @include kendo-button--theme();
+        @include badge-styles();
+        @include icon-styles();
     }
 }

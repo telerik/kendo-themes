@@ -1,39 +1,42 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "gantt",
-    dependencies: (
-        "button",
-        "date-time-picker",
-        "icon",
-        "input",
-        "numeric-textbox",
-        "splitter",
-        "toolbar",
-        "treelist",
-        "time-marker",
-        "validator",
-        "window"
-    )
-);
-
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../datetimepicker/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../input/index.scss" as *;
+@use "../numerictextbox/index.scss" as *;
+@use "../splitter/index.scss" as *;
+@use "../toolbar/index.scss" as *;
+@use "../treelist/index.scss" as *;
+@use "../time-marker/index.scss" as *;
+@use "../validator/index.scss" as *;
+@use "../window/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin gantt-styles() {
-    @include module.render( "gantt" ) {
+    @if not($_gantt-styles) {
+        $_gantt-styles: true !global;
         @include kendo-gantt--layout();
         @include kendo-gantt--theme();
         @include kendo-utils--typography--white-space();
         @include kendo-utils--table--table-layout();
+        @include button-styles();
+        @include date-time-picker-styles();
+        @include icon-styles();
+        @include input-styles();
+        @include numeric-textbox-styles();
+        @include splitter-styles();
+        @include toolbar-styles();
+        @include treelist-styles();
+        @include time-marker-styles();
+        @include validator-styles();
+        @include window-styles();
+
     }
 }

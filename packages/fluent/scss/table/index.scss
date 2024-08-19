@@ -1,22 +1,12 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "table",
-    dependencies: ()
-);
-
-
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin table-styles() {
-    @include module.render( "table" ) {
+    @if not($_table-styles) {
+        $_table-styles: true !global;
         @include kendo-table--layout();
         @include kendo-table--theme();
     }

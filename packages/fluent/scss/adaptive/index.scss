@@ -1,32 +1,28 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "adaptive",
-    dependencies: (
-        "checkbox",
-        "listgroup",
-        "radio",
-        "switch",
-        "toolbar",
-    )
-);
-
+// Dependencies
+@use "../checkbox/index.scss" as *;
+@use "../radio/index.scss" as *;
+@use "../switch/index.scss" as *;
+@use "../toolbar/index.scss" as *;
+@use "../listgroup/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin adaptive-styles() {
-    @include module.render( "adaptive" ) {
+    @if not($_adaptive-styles) {
+        $_adaptive-styles: true !global;
         @include kendo-adaptive--layout();
         @include kendo-adaptive-grid--layout();
         @include kendo-adaptive-scheduler--layout();
         @include kendo-adaptive-common--layout();
         @include kendo-adaptive--theme();
+        @include checkbox-styles();
+        @include radio-styles();
+        @include switch-styles();
+        @include toolbar-styles();
+        @include listgroup-styles();
     }
 }

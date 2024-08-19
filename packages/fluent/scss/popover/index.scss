@@ -1,29 +1,25 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "popover",
-    dependencies: (
-        "action-buttons",
-        "button",
-        "card",
-        "icon",
-        "popup"
-    )
-);
-
+// Dependencies
+@use "../action-buttons/index.scss" as *;
+@use "../button/index.scss" as *;
+@use "../card/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../popup/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin popover-styles() {
-    @include module.render( "popover" ) {
+    @if not($_popover-styles) {
+        $_popover-styles: true !global;
         @include kendo-popover--layout();
         @include kendo-popover--theme();
+        @include action-buttons-styles();
+        @include button-styles();
+        @include card-styles();
+        @include icon-styles();
+        @include popup-styles();
     }
 }

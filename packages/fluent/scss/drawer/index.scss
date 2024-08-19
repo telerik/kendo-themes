@@ -1,12 +1,7 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "drawer",
-    dependencies: (
-        "icon",
-        "list",
-        "overlay"
-    )
-);
+// Dependencies
+@use "../icon/index.scss" as *;
+@use "../list/index.scss" as *;
+@use "../overlay/index.scss" as *;
 
 
 // Component
@@ -14,14 +9,14 @@ $_kendo-module-meta: (
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin drawer-styles() {
-    @include module.render( "drawer" ) {
+    @if not($_drawer-styles) {
+        $_drawer-styles: true !global;
         @include kendo-drawer--layout();
         @include kendo-drawer--theme();
+        @include icon-styles();
+        @include list-styles();
+        @include overlay-styles();
     }
 }

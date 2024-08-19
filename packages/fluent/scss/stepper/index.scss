@@ -1,26 +1,19 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "stepper",
-    dependencies: (
-        "icon",
-        "progressbar"
-    )
-);
-
+// Dependencies
+@use "../icon/index.scss" as *;
+@use "../progressbar/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin stepper-styles() {
-    @include module.render( "stepper" ) {
+    @if not($_stepper-styles) {
+        $_stepper-styles: true !global;
         @include kendo-stepper--layout();
         @include kendo-stepper--theme();
+        @include icon-styles();
+        @include progressbar-styles();
     }
 }

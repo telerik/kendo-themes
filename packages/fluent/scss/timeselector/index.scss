@@ -1,28 +1,23 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "time-selector",
-    dependencies: (
-        "action-buttons",
-        "button",
-        "icon",
-        "list"
-    )
-);
-
+// Dependencies
+@use "../action-buttons/index.scss" as *;
+@use "../button/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../list/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin time-selector-styles() {
-    @include module.render( "time-selector" ) {
+    @if not($_timeselector-styles) {
+        $_timeselector-styles: true !global;
         @include kendo-time-selector--layout();
         @include kendo-time-selector--theme();
+        @include action-buttons-styles();
+        @include button-styles();
+        @include icon-styles();
+        @include list-styles();
     }
 }

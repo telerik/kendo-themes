@@ -1,32 +1,27 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "tabstrip",
-    dependencies: (
-        "button",
-        "icon",
-        "list",
-        "menu-button"
-    )
-);
-
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../list/index.scss" as *;
+@use "../menu-button/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin tabstrip-styles() {
-    @include module.render( "tabstrip" ) {
+    @if not($_tabstrip-styles) {
+        $_tabstrip-styles: true !global;
         @include kendo-tabstrip--layout();
         @include kendo-tabstrip--theme();
         @include kendo-utils--layout--overflow();
         @include kendo-utils--layout--position();
+        @include button-styles();
+        @include icon-styles();
+        @include list-styles();
+        @include menu-button-styles();
     }
 }

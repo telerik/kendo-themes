@@ -1,29 +1,27 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "date-picker",
-    dependencies: (
-        "button",
-        "calendar",
-        "floating-label",
-        "icon",
-        "input",
-        "popup"
-    )
- );
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../calendar/index.scss" as *;
+@use "../floating-label/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../input/index.scss" as *;
+@use "../popup/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin date-picker-styles() {
-    @include module.render( "date-picker" ) {
+    @if not($_datepicker-styles) {
+        $_datepicker-styles: true !global;
         @include kendo-date-picker--layout();
         @include kendo-date-picker--theme();
+        @include button-styles();
+        @include calendar-styles();
+        @include floating-label-styles();
+        @include icon-styles();
+        @include input-styles();
+        @include popup-styles();
     }
 }

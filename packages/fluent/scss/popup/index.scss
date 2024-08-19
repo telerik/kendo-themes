@@ -1,22 +1,12 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "popup",
-    dependencies: ()
-);
-
-
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin popup-styles() {
-    @include module.render( "popup" ) {
+    @if not($_popup-styles) {
+        $_popup-styles: true !global;
         @include kendo-popup--layout();
         @include kendo-popup--theme();
     }

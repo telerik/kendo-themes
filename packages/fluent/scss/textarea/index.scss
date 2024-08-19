@@ -1,28 +1,20 @@
 @use "../utils/index.scss" as *;
 
-// Module meta
-$_kendo-module-meta: (
-    name: "textarea",
-    dependencies: (
-        "button",
-        "floating-label",
-        "icon",
-        "input"
-    )
-);
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../floating-label/index.scss" as *;
+@use "../icon/index.scss" as *;
+@use "../input/index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin textarea-styles() {
-    @include module.render( "textarea" ) {
+    @if not($_textarea-styles) {
+        $_textarea-styles: true !global;
         @include kendo-textarea--layout();
         @include kendo-textarea--theme();
         @include kendo-utils--flex-grid--align-items();
@@ -31,5 +23,9 @@ $_kendo-module-meta: (
         @include kendo-utils--flex-grid--flex-wrap();
         @include kendo-utils--layout--overflow();
         @include kendo-utils--interactivity--resize();
+        @include button-styles();
+        @include floating-label-styles();
+        @include icon-styles();
+        @include input-styles();
     }
 }

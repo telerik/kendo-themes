@@ -1,22 +1,12 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "overlay",
-    dependencies: ()
-);
-
-
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
-// Register
-@use "../core/module-system/index.scss" as module;
-@include module.register( $_kendo-module-meta... );
-
 // Expose
 @mixin overlay-styles() {
-    @include module.render( "overlay" ) {
+    @if not($_overlay-styles) {
+        $_overlay-styles: true !global;
         @include kendo-overlay--layout();
         @include kendo-overlay--theme();
     }
