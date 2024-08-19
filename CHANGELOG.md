@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.1...v9.0.1-dev.2) (2024-08-19)
+
+
+### Bug Fixes
+
+* **calendar:** use correct name for module ([9b13e6d](https://github.com/telerik/kendo-themes/commit/9b13e6d27ceead06dcd02b29f1ec8fcaf8bffddc))
+
+
+
+
+
 ## [9.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.0...v9.0.1-dev.1) (2024-08-12)
 
 
