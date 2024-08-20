@@ -55,7 +55,7 @@ export const ListView = (
     const pager = <Pager className={`k-listview-pager k-listview-pager-${ pagerPosition }`} />;
 
     const loader = <>
-        <div className="k-loading-mask k-opaque" style={{ height: '100%', width: '100%' }}>
+        <div className="k-loading-mask" style={{ height: '100%', width: '100%' }}>
             <span className="k-loading-text">Loading...</span>
             <div className="k-loading-image"></div>
             <div className="k-loading-color"></div>
@@ -87,9 +87,9 @@ export const ListView = (
                     [`k-grid-cols-${gridColumns}`]: gridColumns,
                 }
             )}>
-                { loading && loader }
                 { props.children }
             </div>
+            { loading && loader }
             {footer && <div className="k-listview-footer">Footer</div>}
             {pageable && pagerPosition === "bottom" && pager}
         </div>
