@@ -79,20 +79,31 @@
 
 @mixin core-configure($config: null) {
     @if $config {
-        $_components: map.get($config, "components");
+        $components: map.get($config, "components");
+        $deps: ();
 
-        @each $component in $_components {
-            @if (map.has-key($kendo-dependencies, $component)) {
-                $_dependencies: map.get($kendo-dependencies, $component) !global;
+        @each $component in $components {
+            @if map.has-key($kendo-dependencies, $component) {
+                $component-deps: map.get($kendo-dependencies, $component);
+
+                @each $dep in $component-deps {
+                    $deps: list.append($deps, $dep, comma);
+                }
             }
         }
 
-        @if ($_components) {
-            module.$components: $_components;
-            module.$deps: $_dependencies;
-            @each $dep in module.$deps {
-                module.$components: list.append(module.$components, $dep, comma);
+        // Assign collected components and dependencies
+        @if $components {
+            module.$components: $components;
+            module.$deps: $deps;
+
+            // Append all unique dependencies to the components list
+            @each $dep in $deps {
+                @if not list.index(module.$components, $dep) {
+                    module.$components: list.append(module.$components, $dep, comma);
+                }
             }
         }
     }
 }
+
