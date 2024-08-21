@@ -20,29 +20,29 @@ export default () =>(
             <section>
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuListItem text="Item 1"></MenuListItem>
+                        <MenuListItem first text="Item 1"></MenuListItem>
                         <MenuListItem text="Item 2"></MenuListItem>
-                        <MenuListItem text="Item 3"></MenuListItem>
+                        <MenuListItem last text="Item 3"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
             <section>
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuListItem text="Item 1" icon="plus"></MenuListItem>
+                        <MenuListItem first text="Item 1" icon="plus"></MenuListItem>
                         <MenuListItem text="Item 2" icon="plus"></MenuListItem>
-                        <MenuListItem text="Item 3" icon="plus"></MenuListItem>
+                        <MenuListItem last text="Item 3" icon="plus"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
             <section>
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuListItem text="Item 1"></MenuListItem>
+                        <MenuListItem first text="Item 1"></MenuListItem>
                         <MenuListItem text="Item 2"></MenuListItem>
                         <MenuListItem text="Item 3"></MenuListItem>
                         <MenuSeparator></MenuSeparator>
-                        <MenuListItem text="Item after separator" icon="plus"></MenuListItem>
+                        <MenuListItem last text="Item after separator" icon="plus"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
@@ -51,29 +51,29 @@ export default () =>(
             <section className="k-rtl" dir="rtl">
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuListItem text="Item 1"></MenuListItem>
+                        <MenuListItem first text="Item 1"></MenuListItem>
                         <MenuListItem text="Item 2"></MenuListItem>
-                        <MenuListItem text="Item 3"></MenuListItem>
+                        <MenuListItem last text="Item 3"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
             <section className="k-rtl" dir="rtl">
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuListItem text="Item 1" icon="plus"></MenuListItem>
+                        <MenuListItem first text="Item 1" icon="plus"></MenuListItem>
                         <MenuListItem text="Item 2" icon="plus"></MenuListItem>
-                        <MenuListItem text="Item 3" icon="plus"></MenuListItem>
+                        <MenuListItem last text="Item 3" icon="plus"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>
             <section className="k-rtl" dir="rtl">
                 <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuListItem text="Item 1"></MenuListItem>
+                        <MenuListItem first text="Item 1"></MenuListItem>
                         <MenuListItem text="Item 2"></MenuListItem>
                         <MenuListItem text="Item 3"></MenuListItem>
                         <MenuSeparator></MenuSeparator>
-                        <MenuListItem text="Item after separator" icon="plus"></MenuListItem>
+                        <MenuListItem last text="Item after separator" icon="plus"></MenuListItem>
                     </MenuList>
                 </ToolbarPopup>
             </section>

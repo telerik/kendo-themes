@@ -41,13 +41,13 @@ export default () =>(
 
             <Popup id="spreadsheet-context-menu-row" className="k-menu-popup k-context-menu-popup">
                 <ContextMenuNormal>
-                    <MenuListItem text="Lock Cells"></MenuListItem>
+                    <MenuListItem first text="Lock Cells"></MenuListItem>
                     <MenuListItem text="Cut"></MenuListItem>
                     <MenuListItem text="Copy"></MenuListItem>
                     <MenuListItem text="Paste"></MenuListItem>
                     <MenuListItem text="Insert Row" showArrow></MenuListItem>
                     <MenuListItem text="Delete Row"></MenuListItem>
-                    <MenuListItem text="Hide Row"></MenuListItem>
+                    <MenuListItem last text="Hide Row"></MenuListItem>
                 </ContextMenuNormal>
             </Popup>
         </div>
