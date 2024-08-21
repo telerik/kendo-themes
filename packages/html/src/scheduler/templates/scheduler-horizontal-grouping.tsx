@@ -9,11 +9,9 @@ export const SchedulerHorizontalGrouping = (...props) => (
             <SchedulerToolbar />
         }
         footer={
-            <>
-                <SchedulerToolbar footer>
-                    <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
-                </SchedulerToolbar>
-            </>
+            <SchedulerToolbar footer>
+                <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
+            </SchedulerToolbar>
         }
         children={
             <>
@@ -41,8 +39,8 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                 <SchedulerTable>
                                     <tbody>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot", "group" ]}>Meeting Room 101</SchedulerCell>
-                                            <SchedulerCell as="th" cellType={[ "slot", "group" ]}>Meeting Room 201</SchedulerCell>
+                                            <SchedulerCell as="th" cellType={["slot", "group"]}>Meeting Room 101</SchedulerCell>
+                                            <SchedulerCell as="th" cellType={["slot", "group"]}>Meeting Room 201</SchedulerCell>
                                         </tr>
                                         <tr className="k-scheduler-date-group">
                                             <SchedulerCell as="th" text="Mon 6/13" />
@@ -74,7 +72,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -82,7 +80,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -90,7 +88,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -98,7 +96,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -106,7 +104,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -114,7 +112,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -122,7 +120,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -130,7 +128,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -138,7 +136,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -146,7 +144,7 @@ export const SchedulerHorizontalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th"/>
+                                            <SchedulerCell as="th" />
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>

@@ -26,16 +26,16 @@ export const SchedulerToolbar = (
             )}
         >
             {props.children ||
-                <>
+                [
                     <ButtonGroup className="k-scheduler-navigation">
                         <Button className="k-group-start">Today</Button>
                         <Button icon="caret-alt-left"></Button>
                         <Button className="k-group-end" icon="caret-alt-right"></Button>
-                    </ButtonGroup>
+                    </ButtonGroup>,
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         Monday, June 13, 2022
-                    </Button>
-                    <span className="k-spacer"></span>
+                    </Button>,
+                    <span className="k-spacer"></span>,
                     <ButtonGroup className="k-scheduler-views">
                         <Button className="k-group-start" selected>Day</Button>
                         <Button>Week</Button>
@@ -43,7 +43,7 @@ export const SchedulerToolbar = (
                         <Button>Timeline</Button>
                         <Button className="k-group-end">Agenda</Button>
                     </ButtonGroup>
-                </>
+                ]
             }
         </Toolbar>
     );
