@@ -22,17 +22,17 @@ export default () =>(
             <section className="wrap">
                 <Popup className="k-menu-popup">
                     <ContextMenuNormal>
-                        <MenuListItem text="Item 1" selected showArrow></MenuListItem>
+                        <MenuListItem first text="Item 1" selected showArrow></MenuListItem>
                         <MenuListItem text="Item 2"></MenuListItem>
-                        <MenuListItem text="Item 3"></MenuListItem>
+                        <MenuListItem last text="Item 3"></MenuListItem>
                     </ContextMenuNormal>
                 </Popup>
 
 
                 <Popup className="k-menu-popup" offset={{ left: "100%", top: 0 }}>
                     <ContextMenuNormal>
-                        <MenuListItem text="Item 1.1"></MenuListItem>
-                        <MenuListItem text="Item 1.2"></MenuListItem>
+                        <MenuListItem first text="Item 1.1"></MenuListItem>
+                        <MenuListItem last text="Item 1.2"></MenuListItem>
                     </ContextMenuNormal>
                 </Popup>
             </section>
