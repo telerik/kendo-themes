@@ -7,9 +7,9 @@ export const MenuButtonPopup = (props) => (
         opened={true}
         popup={
             <MenuList>
+                <MenuListItem first text="Menu Item"></MenuListItem>
                 <MenuListItem text="Menu Item"></MenuListItem>
-                <MenuListItem text="Menu Item"></MenuListItem>
-                <MenuListItem text="Menu Item"></MenuListItem>
+                <MenuListItem last text="Menu Item"></MenuListItem>
             </MenuList>
         }
         {...props}
