@@ -37,6 +37,7 @@ export type KendoChipProps = KendoChipOptions & {
     icon?: string;
     actions?: React.JSX.Element | string;
     showAvatar?: boolean;
+    avatarImage?: string;
 };
 
 export type KendoChipState = { [K in (typeof states)[number]]?: boolean };
@@ -45,7 +46,8 @@ const defaultOptions = {
     size: Size.medium,
     rounded: Roundness.medium,
     fillMode: FillMode.solid,
-    themeColor: ThemeColor.base
+    themeColor: ThemeColor.base,
+    avatarImage: "/packages/html/assets/avatar.jpg"
 };
 
 export const Chip = (
@@ -62,6 +64,7 @@ export const Chip = (
         icon,
         actions,
         showAvatar,
+        avatarImage = defaultOptions.avatarImage,
         hover,
         focus,
         active,
@@ -94,7 +97,7 @@ export const Chip = (
             {icon && <Icon className="k-chip-icon" icon={icon} size="small" /> }
             {showAvatar && (
                 <Avatar className="k-chip-avatar" type="image" >
-                    <img src="/packages/html/assets/avatar.jpg" />
+                    <img src={avatarImage} />
                 </Avatar>
             )}
             <span className="k-chip-content">
