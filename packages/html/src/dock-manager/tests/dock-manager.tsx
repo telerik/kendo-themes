@@ -17,9 +17,9 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             <section>
                 <DockManagerNormal toolbarItems={[
-                    <Button fillMode="flat" size="medium">File 3</Button>,
+                    <Button fillMode="flat" size="small">File 3</Button>,
                     <ToolbarSeparator className="k-separator-horizontal"></ToolbarSeparator>,
-                    <Button fillMode="flat" size="medium">File 4</Button>
+                    <Button fillMode="flat" size="small">File 4</Button>
                 ]}>
                     <DockManagerSplitter orientation="vertical">
                         <SplitterPane flexBasis="70%">
