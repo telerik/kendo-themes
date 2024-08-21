@@ -6,16 +6,12 @@ export const SchedulerVerticalGrouping = (...props) => (
         layout="table"
         view="day"
         toolbar={
-            <>
-                <SchedulerToolbar />
-            </>
+            <SchedulerToolbar />
         }
         footer={
-            <>
-                <SchedulerToolbar footer>
-                    <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
-                </SchedulerToolbar>
-            </>
+            <SchedulerToolbar footer>
+                <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
+            </SchedulerToolbar>
         }
         children={
             <>
@@ -50,8 +46,8 @@ export const SchedulerVerticalGrouping = (...props) => (
                                 <SchedulerTable style={{ height: "1200px" }}>
                                     <tbody>
                                         <tr style={{ height: "36px" }}>
-                                            <SchedulerCell as="th" cellType={[ "slot" , "group" ]} rowspan={36}>Meeting Room 101</SchedulerCell>
-                                            <SchedulerCell as="th" cellType={[ "slot" , "group" ]} rowspan={9}>Alex</SchedulerCell>
+                                            <SchedulerCell as="th" cellType={["slot", "group"]} rowspan={36}>Meeting Room 101</SchedulerCell>
+                                            <SchedulerCell as="th" cellType={["slot", "group"]} rowspan={9}>Alex</SchedulerCell>
                                             <SchedulerCell as="th" allDay>all day</SchedulerCell>
                                         </tr>
                                         <tr>
@@ -60,7 +56,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -68,7 +64,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -76,7 +72,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -84,10 +80,10 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr style={{ height: "36px" }}>
-                                            <SchedulerCell as="th" cellType={[ "slot" , "group" ]} rowspan={8}>Bob</SchedulerCell>
+                                            <SchedulerCell as="th" cellType={["slot", "group"]} rowspan={8}>Bob</SchedulerCell>
                                             <SchedulerCell as="th" allDay>all day</SchedulerCell>
                                         </tr>
                                         <tr>
@@ -96,7 +92,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -104,7 +100,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -112,7 +108,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -120,7 +116,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -128,7 +124,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -136,7 +132,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -144,7 +140,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -152,7 +148,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -160,7 +156,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -168,7 +164,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -176,7 +172,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                         <tr>
                                             <SchedulerCell as="th">
@@ -184,7 +180,7 @@ export const SchedulerVerticalGrouping = (...props) => (
                                             </SchedulerCell>
                                         </tr>
                                         <tr>
-                                            <SchedulerCell as="th" cellType={[ "slot" ]} />
+                                            <SchedulerCell as="th" cellType={["slot"]} />
                                         </tr>
                                     </tbody>
                                 </SchedulerTable>

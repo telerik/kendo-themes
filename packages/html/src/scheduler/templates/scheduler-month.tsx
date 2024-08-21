@@ -28,13 +28,6 @@ export const SchedulerMonth = ({ style, ...props }: any) => (
                 </ButtonGroup>
             </SchedulerToolbar>
         }
-        footer={
-            <>
-                <SchedulerToolbar footer>
-                    <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
-                </SchedulerToolbar>
-            </>
-        }
         children={
             <>
                 <tbody>
