@@ -28,7 +28,7 @@ export const PromptView = (
                 props.className,
                 PROMPTVIEW_CLASSNAME,
             )}>
-            { showSearch && <Textarea rows={1} placeholder="Ask or generate content with AI"></Textarea> }
+            { showSearch && <Textarea resize="y" rows={1} placeholder="Ask or generate content with AI"></Textarea> }
             { suggestions &&
                 <div className="k-prompt-expander">
                     <IconTextButton fillMode={"flat"} icon="chevron-down">Prompt Suggestions</IconTextButton>
