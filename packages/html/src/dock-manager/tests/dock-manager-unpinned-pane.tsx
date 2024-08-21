@@ -27,7 +27,7 @@ export default () => (
                                                 <Button fillMode="flat" icon="pin"></Button>
                                                 <Button fillMode="flat" icon="more-vertical"></Button>
                                             </TabStripItem>
-                                            <TabStripItem value="File 2">
+                                            <TabStripItem last value="File 2">
                                                 <Button fillMode="flat" themeColor="primary" icon="pin"></Button>
                                                 <Button fillMode="flat" themeColor="primary" icon="more-vertical"></Button>
                                             </TabStripItem>
@@ -49,7 +49,7 @@ export default () => (
                                                         <Button fillMode="flat" icon="pin"></Button>
                                                         <Button fillMode="flat" icon="more-vertical"></Button>
                                                     </TabStripItem>
-                                                    <TabStripItem value="File 6">
+                                                    <TabStripItem last value="File 6">
                                                         <Button fillMode="flat" themeColor="primary" icon="pin"></Button>
                                                         <Button fillMode="flat" themeColor="primary" icon="more-vertical"></Button>
                                                     </TabStripItem>
