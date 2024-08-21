@@ -41,7 +41,7 @@ export const SchedulerTask = (
             )}>
             <span className="k-scheduler-mark" style={markStyle}></span>
             {recurring && <Icon icon="arrow-rotate-cw" />}
-            <span className="k-scheduler-task text">{text}</span>
+            <span className="k-scheduler-task-text">{text}</span>
             {closable &&
                 <a href="#" className="k-link k-event-delete">
                     <Icon icon="x" />
