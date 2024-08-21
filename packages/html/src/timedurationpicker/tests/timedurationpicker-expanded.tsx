@@ -1,4 +1,4 @@
-import { TimeDurationPicker } from '../../timedurationpicker';
+import { TimeDurationPickerPopup } from '../../timedurationpicker';
 
 
 const style = `
@@ -20,10 +20,10 @@ export default () =>(
             <span>TimeDurationPicker RTL</span>
 
             <div>
-                <TimeDurationPicker placeholder="02 days : 01 hours : 30 mins" opened />
+                <TimeDurationPickerPopup placeholder="02 days : 01 hours : 30 mins" />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker placeholder="02 days : 01 hours : 30 mins" opened />
+                <TimeDurationPickerPopup placeholder="02 days : 01 hours : 30 mins" />
             </div>
         </div>
 

@@ -1,4 +1,4 @@
-import { TimeDurationPicker } from '../../timedurationpicker';
+import { TimeDurationPickerNormal } from '../../timedurationpicker';
 
 
 const styles = `
@@ -16,66 +16,66 @@ export default () =>(
             <span>TimeDurationPicker RTL</span>
 
             <div>
-                <TimeDurationPicker placeholder="02 days : 01 hours : 30 mins" />
+                <TimeDurationPickerNormal placeholder="02 days : 01 hours : 30 mins" />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker placeholder="02 days : 01 hours : 30 mins" />
+                <TimeDurationPickerNormal placeholder="02 days : 01 hours : 30 mins" />
             </div>
 
             <div>
-                <TimeDurationPicker value="Normal" />
+                <TimeDurationPickerNormal value="Normal" />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker value="Normal" />
+                <TimeDurationPickerNormal value="Normal" />
             </div>
 
             <div>
-                <TimeDurationPicker value="Hover" hover />
+                <TimeDurationPickerNormal value="Hover" hover />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker value="Hover" hover />
+                <TimeDurationPickerNormal value="Hover" hover />
             </div>
 
             <div>
-                <TimeDurationPicker value="Focus" focus />
+                <TimeDurationPickerNormal value="Focus" focus />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker value="Focus" focus />
+                <TimeDurationPickerNormal value="Focus" focus />
             </div>
 
             <div>
-                <TimeDurationPicker value="Disabled" disabled />
+                <TimeDurationPickerNormal value="Disabled" disabled />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker value="Disabled" disabled />
+                <TimeDurationPickerNormal value="Disabled" disabled />
             </div>
 
             <div>
-                <TimeDurationPicker value="Invalid" invalid />
+                <TimeDurationPickerNormal value="Invalid" invalid />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker value="Invalid" invalid />
+                <TimeDurationPickerNormal value="Invalid" invalid />
             </div>
 
             <div>
-                <TimeDurationPicker value="Valid" valid />
+                <TimeDurationPickerNormal value="Valid" valid />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker value="Valid" valid />
+                <TimeDurationPickerNormal value="Valid" valid />
             </div>
 
             <div>
-                <TimeDurationPicker value="Invalid Focus" invalid focus />
+                <TimeDurationPickerNormal value="Invalid Focus" invalid focus />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker value="Invalid Focus" invalid focus />
+                <TimeDurationPickerNormal value="Invalid Focus" invalid focus />
             </div>
 
             <div>
-                <TimeDurationPicker value="Loading..." loading />
+                <TimeDurationPickerNormal value="Loading..." loading />
             </div>
             <div dir="rtl">
-                <TimeDurationPicker value="Loading..." loading />
+                <TimeDurationPickerNormal value="Loading..." loading />
             </div>
 
         </div>
