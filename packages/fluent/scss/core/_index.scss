@@ -75,6 +75,8 @@
 
 @use "@progress/kendo-theme-core/scss/module-system/_dependencies" as *;
 
+@use "@progress/kendo-theme-core/scss/module-system/_components" as *;
+
 // $components: null !default;
 
 @mixin core-configure($config: null) {
@@ -89,6 +91,11 @@
                 @each $dep in $component-deps {
                     $deps: list.append($deps, $dep, comma);
                 }
+            }
+
+            // Check for invalid input configuration
+            @if not list.index($kendo-components, $component) {
+                @error "The component \"#{$component}\" does not exist!"
             }
         }
 
