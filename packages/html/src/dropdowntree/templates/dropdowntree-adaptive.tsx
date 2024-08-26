@@ -6,3 +6,5 @@ export const DropdownTreeAdaptive = (props) => (
         {...props}
     />
 );
+
+export default DropdownTreeAdaptive;

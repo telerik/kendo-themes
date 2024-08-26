@@ -25,3 +25,5 @@ export const DrawerMini = (props) => (
         }
     </Drawer>
 );
+
+export default DrawerMini;

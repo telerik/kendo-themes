@@ -32,3 +32,5 @@ export const PromptSuggestions = (props) => (
         </PromptFooter>
     </Prompt>
 );
+
+export default PromptSuggestions;

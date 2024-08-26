@@ -67,3 +67,5 @@ export const GridWithFilterMenu = ({ contentClassName, sortable, resizable, ...o
         {...other}>
     </Grid>
 );
+
+export default GridWithFilterMenu;

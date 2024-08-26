@@ -18,3 +18,5 @@ export const SplitterNormal = (props) => (
         {...props}>
     </Splitter>
 );
+
+export default SplitterNormal;

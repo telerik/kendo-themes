@@ -34,3 +34,5 @@ export const MultiSelectTreePopup = (props) => (
         {...props}
     />
 );
+
+export default MultiSelectTreePopup;

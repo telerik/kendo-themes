@@ -13,3 +13,5 @@ export const StackLayoutNormal = ({ alignItems = "start", justifyContent = "star
         }
         {...other} />
 );
+
+export default StackLayoutNormal;

@@ -11,3 +11,5 @@ export const UploadWithActionButtons = (props) => (
         {...props}>
     </Upload>
 );
+
+export default UploadWithActionButtons;

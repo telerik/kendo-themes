@@ -21,3 +21,5 @@ export const ComboboxGrouping = (props) => (
         {...props}
     />
 );
+
+export default ComboboxGrouping;

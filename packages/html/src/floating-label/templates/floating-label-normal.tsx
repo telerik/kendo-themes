@@ -12,3 +12,5 @@ export const FloatingLabelNormal = (props) => (
     >
     </FloatingLabel>
 );
+
+export default FloatingLabelNormal;

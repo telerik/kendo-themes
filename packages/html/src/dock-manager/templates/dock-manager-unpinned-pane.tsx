@@ -70,3 +70,5 @@ export const DockManagerUnpinnedPane = (props) => (
         {...props}
     />
 );
+
+export default DockManagerUnpinnedPane;

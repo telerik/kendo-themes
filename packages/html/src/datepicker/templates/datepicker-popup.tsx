@@ -6,3 +6,5 @@ export const DatePickerPopup = (props) => (
         {...props}
     />
 );
+
+export default DatePickerPopup;

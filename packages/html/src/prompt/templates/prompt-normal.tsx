@@ -24,3 +24,5 @@ export const PromptNormal = (props) => (
         </PromptFooter>
     </Prompt>
 );
+
+export default PromptNormal;

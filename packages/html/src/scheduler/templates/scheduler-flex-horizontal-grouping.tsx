@@ -334,3 +334,5 @@ export const SchedulerFlexHorizontalGrouping = (...props) => (
         {...props}
     />
 );
+
+export default SchedulerFlexHorizontalGrouping;

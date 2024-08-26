@@ -10,3 +10,5 @@ export const IconTextButtonGroup = (props) => (
         </>
     } />
 );
+
+export default IconTextButtonGroup;

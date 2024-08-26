@@ -14,3 +14,5 @@ export const ComboboxPopup = (props) => (
         {...props}
     />
 );
+
+export default ComboboxPopup;

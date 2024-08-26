@@ -7,3 +7,5 @@ export const IconNotification = (props) => (
         {...props}
     />
 );
+
+export default IconNotification;

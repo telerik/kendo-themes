@@ -9,3 +9,5 @@ export const SliderGradientVertical = (props) => (
         {...props}>
     </Slider>
 );
+
+export default SliderGradientVertical;

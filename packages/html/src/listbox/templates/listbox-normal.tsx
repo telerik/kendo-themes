@@ -17,3 +17,5 @@ export const ListBoxNormal = (props) => (
         {...props}
     />
 );
+
+export default ListBoxNormal;

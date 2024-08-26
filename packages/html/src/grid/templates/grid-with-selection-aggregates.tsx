@@ -106,3 +106,5 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
 
     </Grid>
 );
+
+export default GridWithSelectionAggregates;

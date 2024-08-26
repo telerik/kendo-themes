@@ -21,3 +21,5 @@ export const ChatNormal = (props) => (
     {...props}
     />
 );
+
+export default ChatNormal;

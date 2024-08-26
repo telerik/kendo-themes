@@ -6,3 +6,5 @@ export const TooltipNormal = (props: any) => (
         {...props}
     />
 );
+
+export default TooltipNormal;

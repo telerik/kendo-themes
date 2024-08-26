@@ -36,3 +36,5 @@ export const PromptMoreActions = (props) => (
         </PromptContent>
     </Prompt>
 );
+
+export default PromptMoreActions;

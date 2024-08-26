@@ -11,3 +11,5 @@ export const TextboxPrefix = (props) => (
         {...props}
     />
 );
+
+export default TextboxPrefix;

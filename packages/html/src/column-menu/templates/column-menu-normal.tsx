@@ -23,3 +23,5 @@ export const ColumnMenuNormal = (props) => (
     >
     </ColumnMenu>
 );
+
+export default ColumnMenuNormal;

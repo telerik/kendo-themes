@@ -26,3 +26,5 @@ export const MenuPopup = ({ ...other }: any) => (
     {...other}
     />
 );
+
+export default MenuPopup;

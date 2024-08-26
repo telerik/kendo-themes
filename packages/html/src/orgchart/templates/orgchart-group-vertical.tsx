@@ -21,3 +21,5 @@ export const OrgchartGroupVertical = ({ details, orientation, justifyContent, ..
         {...other}
     />
 );
+
+export default OrgchartGroupVertical;

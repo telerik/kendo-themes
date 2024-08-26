@@ -11,3 +11,5 @@ export const MaskedTextboxPrefix = (props) => (
         {...props}
     />
 );
+
+export default MaskedTextboxPrefix;

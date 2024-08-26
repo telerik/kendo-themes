@@ -11,3 +11,5 @@ export const ListViewNormal = (props) => (
     {...props}>
     </ListView>
 );
+
+export default ListViewNormal;

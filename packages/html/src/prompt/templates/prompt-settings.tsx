@@ -47,3 +47,5 @@ export const PromptSettings = (props) => (
         </PromptFooter>
     </Prompt>
 );
+
+export default PromptSettings;

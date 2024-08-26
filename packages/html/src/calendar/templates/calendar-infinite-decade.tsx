@@ -66,3 +66,5 @@ export const CalendarInfiniteDecade = ({ firstCaption = "2020 - 2029", secondCap
 
     </CalendarInfinite>
 );
+
+export default CalendarInfiniteDecade;

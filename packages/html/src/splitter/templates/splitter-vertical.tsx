@@ -19,3 +19,5 @@ export const SplitterVertical = (props) => (
         {...props}>
     </Splitter>
 );
+
+export default SplitterVertical;

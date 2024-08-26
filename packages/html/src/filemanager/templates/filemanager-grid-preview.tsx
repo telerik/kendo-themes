@@ -113,3 +113,5 @@ export const FileManagerGridPreview = (props) => (
     {...props}>
     </FileManager>
 );
+
+export default FileManagerGridPreview;

@@ -37,3 +37,5 @@ export const BreadcrumbCollapsingAuto = ({ dir, ...other }: any) => (
         {...other}>
     </Breadcrumb>
 );
+
+export default BreadcrumbCollapsingAuto;

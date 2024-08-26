@@ -31,3 +31,5 @@ export const PanelBarExpandGroup = (props) => (
         {...props}
     />
 );
+
+export default PanelBarExpandGroup;

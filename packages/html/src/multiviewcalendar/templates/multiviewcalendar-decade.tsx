@@ -51,3 +51,5 @@ export const MultiViewCalendarDecade = ({ showOtherDecade, ...props }: any) => (
         {...props}
     />
 );
+
+export default MultiViewCalendarDecade;

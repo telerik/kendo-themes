@@ -40,3 +40,5 @@ export const EditorResponsiveToolbar = (props) => (
         {...props}
     />
 );
+
+export default EditorResponsiveToolbar;

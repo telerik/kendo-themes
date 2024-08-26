@@ -6,3 +6,5 @@ export const AutocompleteAdaptive = (props) => (
         {...props}
     />
 );
+
+export default AutocompleteAdaptive;

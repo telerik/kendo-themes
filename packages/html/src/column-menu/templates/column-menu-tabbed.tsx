@@ -24,3 +24,5 @@ export const ColumnMenuTabbed = (props) => (
     >
     </ColumnMenu>
 );
+
+export default ColumnMenuTabbed;

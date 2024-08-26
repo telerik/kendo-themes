@@ -6,3 +6,5 @@ export const NotificationNormal = (props) => (
         {...props}
     />
 );
+
+export default NotificationNormal;

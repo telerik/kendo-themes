@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <div class="k-upload k-upload-async">
+        <div class="k-upload-dropzone k-dropzone">
+            <div class="k-upload-button-wrap">
+                <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Select files...</span>
+                </button>
+                <input id="upload-input" class="k-hidden">
+            </div>
+            <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
+            <span class="k-upload-status"></span>
+        </div>
+        <ul class="k-upload-files">
+            <li class="k-file">
+                <div class="k-file-single">
+                    <div class="k-hidden k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 0;">
+                        <span class="k-progress-status-wrap k-progress-start"></span>
+                        <div class="k-progressbar-value k-selected">
+                            <span class="k-progress-status-wrap k-progress-start"></span>
+                        </div>
+                    </div>
+                    <span class="k-file-icon-wrapper">
+                        <span class="k-file-icon k-icon k-svg-icon k-icon-xxl k-svg-i-file-image">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M298.7 385.2S272.2 288 213.1 288s-85 128-85 128h256s-11.9-78.7-42.7-78.7-42.7 47.9-42.7 47.9M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96zM288 256c0 17.7 14.3 32 32 32s32-14.3 32-32-14.3-32-32-32-32 14.3-32 32"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="k-file-info">
+                        <span class="k-file-name">Image_With_Very_Very_Very_Very_Very_Long_Name1.png</span>
+                        <span class="k-file-size">51.23 KB</span>
+                    </div>
+                    <div class="k-upload-actions">
+                        <button class="k-upload-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="k-file">
+                <div class="k-file-single">
+                    <div class="k-hidden k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value: 0;">
+                        <span class="k-progress-status-wrap k-progress-start"></span>
+                        <div class="k-progressbar-value k-selected">
+                            <span class="k-progress-status-wrap k-progress-start"></span>
+                        </div>
+                    </div>
+                    <span class="k-file-icon-wrapper">
+                        <span class="k-file-icon k-icon k-svg-icon k-icon-xxl k-svg-i-file-image">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M298.7 385.2S272.2 288 213.1 288s-85 128-85 128h256s-11.9-78.7-42.7-78.7-42.7 47.9-42.7 47.9M352 32H96c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V128zm64 416H96V64h224v96h96zM288 256c0 17.7 14.3 32 32 32s32-14.3 32-32-14.3-32-32-32-32 14.3-32 32"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div class="k-file-info">
+                        <span class="k-file-name">Image2.jpg</span>
+                        <span class="k-file-size">106.43 KB</span>
+                    </div>
+                    <div class="k-upload-actions">
+                        <button class="k-upload-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="k-actions k-actions-end k-actions-horizontal">
+            <button class="k-clear-selected k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-text">Clear</span>
+            </button>
+            <button class="k-upload-selected k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                <span class="k-button-text">Upload</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

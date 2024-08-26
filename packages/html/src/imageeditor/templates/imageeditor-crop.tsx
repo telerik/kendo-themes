@@ -84,3 +84,5 @@ export const ImageEditorCrop = (props: any) => (
         }
         {...props} />
 );
+
+export default ImageEditorCrop;

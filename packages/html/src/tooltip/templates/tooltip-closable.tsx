@@ -7,3 +7,5 @@ export const TooltipClosable = (props) => (
         {...props}
     />
 );
+
+export default TooltipClosable;

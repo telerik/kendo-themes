@@ -20,3 +20,5 @@ export const SpreadsheetNormal = (props) => (
         {...props}
     />
 );
+
+export default SpreadsheetNormal;

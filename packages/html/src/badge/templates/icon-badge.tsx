@@ -9,3 +9,5 @@ export const IconBadge = (props) =>
         {...props}
     />
 ;
+
+export default IconBadge;

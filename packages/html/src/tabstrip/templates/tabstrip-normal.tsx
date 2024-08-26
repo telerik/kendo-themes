@@ -20,3 +20,5 @@ export const TabStripNormal = ({ children, ...other }: any) => (
         }
     </TabStrip>
 );
+
+export default TabStripNormal;

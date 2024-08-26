@@ -21,3 +21,5 @@ export const MultiSelectGrouping = (props) => (
         {...props}
     />
 );
+
+export default MultiSelectGrouping;

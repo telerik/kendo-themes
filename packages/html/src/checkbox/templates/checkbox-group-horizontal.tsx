@@ -18,3 +18,5 @@ export const CheckboxGroupHorizontal = (props: any) => (
     {...props}
     />
 );
+
+export default CheckboxGroupHorizontal;

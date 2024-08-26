@@ -6,3 +6,5 @@ export const CheckboxWithLabelBefore = ({ children, id, ...other }: any) => (
         <Checkbox id={id} {...other} />
     </>
 );
+
+export default CheckboxWithLabelBefore;

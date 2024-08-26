@@ -87,3 +87,5 @@ export const PivotGridWithConfiguratorOpened = (props) => (
         <PivotGridConfiguratorButton />
     </>
 );
+
+export default PivotGridWithConfiguratorOpened;
