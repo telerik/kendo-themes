@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1-dev.3](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.2...v9.0.1-dev.3) (2024-08-26)
+
+
+### Bug Fixes
+
+* **listview:** adjust loading mask rendering ([93cb992](https://github.com/telerik/kendo-themes/commit/93cb992c35fb9d53d507084582790b590874dc61))
+
+
+
+
+
 ## [9.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.1...v9.0.1-dev.2) (2024-08-19)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

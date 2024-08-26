@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1-dev.3](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.2...v9.0.1-dev.3) (2024-08-26)
+
+
+### Bug Fixes
+
+* importing theme in a class creates a wrong selector ([165ec66](https://github.com/telerik/kendo-themes/commit/165ec66432203f739bcee8627fe246dd9eddc8aa))
+
+
+
+
+
 ## [9.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.1...v9.0.1-dev.2) (2024-08-19)
 
 **Note:** Version bump only for package @progress/kendo-theme-default

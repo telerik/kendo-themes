@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1-dev.3](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.2...v9.0.1-dev.3) (2024-08-26)
+
+
+### Bug Fixes
+
+* importing theme in a class creates a wrong selector ([165ec66](https://github.com/telerik/kendo-themes/commit/165ec66432203f739bcee8627fe246dd9eddc8aa))
+* **listview:** adjust loading mask rendering ([93cb992](https://github.com/telerik/kendo-themes/commit/93cb992c35fb9d53d507084582790b590874dc61))
+
+
+
+
+
 ## [9.0.1-dev.2](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.1...v9.0.1-dev.2) (2024-08-19)
 
 
