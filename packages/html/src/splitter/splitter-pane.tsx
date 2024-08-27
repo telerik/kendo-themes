@@ -33,7 +33,8 @@ export const SplitterPane = (
         scrollable,
         flexBasis,
         flex = defaultOptions.flex,
-        resizable = defaultOptions.resizable,
+        collapsible: _collapsible,
+        resizable: _resizable = defaultOptions.resizable,
         pinned,
         unpinned,
         tabbed,
@@ -54,7 +55,6 @@ export const SplitterPane = (
                     [`${SPLITTERPANE_CLASSNAME}-pinned`]: pinned,
                     [`${SPLITTERPANE_CLASSNAME}-unpinned`]: unpinned,
                     [`${SPLITTERPANE_CLASSNAME}-tabbed`]: tabbed,
-                    ['']: resizable
                 },
             )}>
             {props.children}

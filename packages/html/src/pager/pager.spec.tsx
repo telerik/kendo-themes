@@ -117,7 +117,7 @@ export const Pager = (
                             'k-pager-nav',
                             'k-pager-first'
                         )}
-                        disabled
+                        disabled={currentPage === 1 && !disabled}
                         fillMode="flat"
                         size={size}
                         rounded={null}
@@ -127,7 +127,7 @@ export const Pager = (
                         className={classNames(
                             'k-pager-nav'
                         )}
-                        disabled
+                        disabled={currentPage === 1 && !disabled}
                         fillMode="flat"
                         size={size}
                         rounded={null}
@@ -178,6 +178,7 @@ export const Pager = (
                         className={classNames(
                             'k-pager-nav'
                         )}
+                        disabled={currentPage === maxPages && !disabled}
                         fillMode="flat"
                         size={size}
                         rounded={null}
@@ -189,6 +190,7 @@ export const Pager = (
                             'k-pager-nav',
                             'k-pager-last'
                         )}
+                        disabled={currentPage === maxPages && !disabled}
                         fillMode="flat"
                         size={size}
                         rounded={null}
