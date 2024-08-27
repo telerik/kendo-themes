@@ -37,7 +37,7 @@ export default () =>(
                 <ActionSheet adaptive={true} overlay={false}>
                     <ActionSheetHeader title="Toolbar title" className="k-text-center" />
                     <MenuList size="large">
-                        <MenuItem text="Left" icon="align-left"></MenuItem>
+                        <MenuItem first text="Left" icon="align-left"></MenuItem>
                         <MenuItem text="Center" icon="align-center"></MenuItem>
                         <MenuItem text="Right" icon="align-right"></MenuItem>
                         <MenuItem text="Justify" icon="align-justify"></MenuItem>
@@ -46,7 +46,7 @@ export default () =>(
                         <MenuSeparator></MenuSeparator>
                         <MenuItem text="Cut" icon="cut"></MenuItem>
                         <MenuItem text="Copy" icon="copy"></MenuItem>
-                        <MenuItem text="Paste" icon="paste"></MenuItem>
+                        <MenuItem last text="Paste" icon="paste"></MenuItem>
                     </MenuList>
                 </ActionSheet>
             </section>

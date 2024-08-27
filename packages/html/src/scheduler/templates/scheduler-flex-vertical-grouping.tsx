@@ -8,16 +8,12 @@ export const SchedulerFlexVerticalGrouping = ({ style, ...props }: any) => (
         layout="flex"
         view="day"
         toolbar={
-            <>
-                <SchedulerToolbar />
-            </>
+            <SchedulerToolbar />
         }
         footer={
-            <>
-                <SchedulerToolbar footer>
-                    <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
-                </SchedulerToolbar>
-            </>
+            <SchedulerToolbar footer>
+                <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
+            </SchedulerToolbar>
         }
         children={
             <>

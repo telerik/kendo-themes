@@ -69,13 +69,13 @@ export default () =>(
             <section>
                 <Popup id="spreadsheet-context-menu-sheets" className="k-menu-popup k-context-menu-popup">
                     <ContextMenuNormal>
-                        <MenuListItem text="Delete" icon="trash"></MenuListItem>
+                        <MenuListItem first text="Delete" icon="trash"></MenuListItem>
                         <MenuListItem text="Duplicate" icon="copy"></MenuListItem>
                         <MenuListItem text="Rename" icon="pencil"></MenuListItem>
                         <MenuListItem text="Hide" icon="eye-slash"></MenuListItem>
                         <MenuSeparator></MenuSeparator>
                         <MenuListItem text="Move Right" icon="arrow-right"></MenuListItem>
-                        <MenuListItem text="Move Left" icon="arrow-left"></MenuListItem>
+                        <MenuListItem last text="Move Left" icon="arrow-left"></MenuListItem>
                     </ContextMenuNormal>
                 </Popup>
             </section>

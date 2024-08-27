@@ -37,7 +37,7 @@ export const DockManagerNormal = (props) => (
                                                 <Button fillMode="flat" icon="pin"></Button>
                                                 <Button fillMode="flat" icon="more-vertical"></Button>
                                             </TabStripItem>
-                                            <TabStripItem value="History">
+                                            <TabStripItem last value="History">
                                                 <Button fillMode="flat" themeColor="primary" icon="pin"></Button>
                                                 <Button fillMode="flat" themeColor="primary" icon="more-vertical"></Button>
                                             </TabStripItem>

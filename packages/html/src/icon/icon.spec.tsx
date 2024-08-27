@@ -4,7 +4,7 @@ import SvgIcon from './svg-icon.spec';
 import * as SVGIcons from '@progress/kendo-svg-icons';
 
 const snakeToCamel = str =>
-    str.toLowerCase().replace(/([-_][a-z])/g, group =>
+    str.replace(/([-_][a-z0-9])/gi, group =>
         group
             .toUpperCase()
             .replace('-', '')

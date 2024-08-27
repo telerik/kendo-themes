@@ -17,9 +17,9 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             <section>
                 <DockManagerNormal toolbarItems={[
-                    <Button fillMode="flat" size="medium">File 3</Button>,
+                    <Button fillMode="flat" size="small">File 3</Button>,
                     <ToolbarSeparator className="k-separator-horizontal"></ToolbarSeparator>,
-                    <Button fillMode="flat" size="medium">File 4</Button>
+                    <Button fillMode="flat" size="small">File 4</Button>
                 ]}>
                     <DockManagerSplitter orientation="vertical">
                         <SplitterPane flexBasis="70%">
@@ -35,7 +35,7 @@ export default () => (
                                                     <Button fillMode="flat" icon="pin"></Button>
                                                     <Button fillMode="flat" icon="more-vertical"></Button>
                                                 </TabStripItem>
-                                                <TabStripItem value="File 2">
+                                                <TabStripItem last value="File 2">
                                                     <Button fillMode="flat" themeColor="primary" icon="pin"></Button>
                                                     <Button fillMode="flat" themeColor="primary" icon="more-vertical"></Button>
                                                 </TabStripItem>
@@ -57,7 +57,7 @@ export default () => (
                                                             <Button fillMode="flat" icon="pin"></Button>
                                                             <Button fillMode="flat" icon="more-vertical"></Button>
                                                         </TabStripItem>
-                                                        <TabStripItem value="File 6">
+                                                        <TabStripItem last value="File 6">
                                                             <Button fillMode="flat" themeColor="primary" icon="pin"></Button>
                                                             <Button fillMode="flat" themeColor="primary" icon="more-vertical"></Button>
                                                         </TabStripItem>

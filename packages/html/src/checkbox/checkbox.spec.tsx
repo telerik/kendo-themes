@@ -58,7 +58,7 @@ export const Checkbox = (
                 {...other}
                 id={id}
                 type="checkbox"
-                checked={checked}
+                defaultChecked={checked}
                 required={required}
                 className={classNames(
                     props.className,
