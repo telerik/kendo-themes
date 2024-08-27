@@ -9,33 +9,29 @@ export const SchedulerWeek = ({ style, ...props }: any) => (
         layout="table"
         view="week"
         toolbar={
-            <>
-                <SchedulerToolbar>
-                    <ButtonGroup className="k-scheduler-navigation">
-                        <Button className="k-group-start">Today</Button>
-                        <Button icon="caret-alt-left"></Button>
-                        <Button className="k-group-end" icon="caret-alt-right"></Button>
-                    </ButtonGroup>
-                    <Button icon="calendar" className="k-nav-current" fillMode="flat" >
-                        10/04/2022 - 10/10/2022
-                    </Button>
-                    <span className="k-spacer"></span>
-                    <ButtonGroup className="k-scheduler-views">
-                        <Button className="k-group-start">Day</Button>
-                        <Button selected>Week</Button>
-                        <Button>Month</Button>
-                        <Button>Timeline</Button>
-                        <Button className="k-group-end">Agenda</Button>
-                    </ButtonGroup>
-                </SchedulerToolbar>
-            </>
+            <SchedulerToolbar>
+                <ButtonGroup className="k-scheduler-navigation">
+                    <Button className="k-group-start">Today</Button>
+                    <Button icon="caret-alt-left"></Button>
+                    <Button className="k-group-end" icon="caret-alt-right"></Button>
+                </ButtonGroup>
+                <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                    10/04/2022 - 10/10/2022
+                </Button>
+                <span className="k-spacer"></span>
+                <ButtonGroup className="k-scheduler-views">
+                    <Button className="k-group-start">Day</Button>
+                    <Button selected>Week</Button>
+                    <Button>Month</Button>
+                    <Button>Timeline</Button>
+                    <Button className="k-group-end">Agenda</Button>
+                </ButtonGroup>
+            </SchedulerToolbar>
         }
         footer={
-            <>
-                <SchedulerToolbar footer>
-                    <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
-                </SchedulerToolbar>
-            </>
+            <SchedulerToolbar footer>
+                <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
+            </SchedulerToolbar>
         }
         children={
             <>

@@ -27,12 +27,12 @@ const defaultToolbar =
         <Toolbar resizable>
             <Pager type="input" pageSizes={false} refresh={false} info={false} />
             <span className="k-spacer"></span>
-            <ButtonGroup>
+            <ButtonGroup fillMode="flat">
                 <Button fillMode="flat" className="k-group-start" icon="zoom-out"></Button>
                 <Button fillMode="flat" className="k-group-end" icon="zoom-in"></Button>
             </ButtonGroup>
             <Combobox value="Automatic Width"></Combobox>
-            <ButtonGroup>
+            <ButtonGroup fillMode="flat">
                 <Button fillMode="flat" className="k-group-start" icon="pointer"></Button>
                 <Button fillMode="flat" className="k-group-end" icon="hand"></Button>
             </ButtonGroup>

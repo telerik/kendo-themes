@@ -10,11 +10,9 @@ export const SchedulerDay = ({ style, ...props }: any) => (
             <SchedulerToolbar />
         }
         footer={
-            <>
-                <SchedulerToolbar footer>
-                    <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
-                </SchedulerToolbar>
-            </>
+            <SchedulerToolbar footer>
+                <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
+            </SchedulerToolbar>
         }
         children={
             <>

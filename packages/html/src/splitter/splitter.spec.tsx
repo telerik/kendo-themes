@@ -1,6 +1,6 @@
 import { classNames } from '../misc';
-import SplitterPane from './splitter-pane';
-import SplitterSplitbar from './splitter-splitbar';
+import { SplitterPane, KendoSplitterPaneProps } from './splitter-pane';
+import { SplitterSplitbar } from './splitter-splitbar';
 
 const SPLITTER_CLASSNAME = 'k-splitter';
 
@@ -31,18 +31,21 @@ export const Splitter = (
         if (Array.isArray(children)) {
             children.map((child, index) => {
                 if (child.type === SplitterPane) {
-                    listChildren.push(
-                        <SplitterPane {...child.props} key={index} />,
+                    const nextChild = children[index + 1];
+                    const childProps: KendoSplitterPaneProps = child.props;
+                    const nextChildProps: KendoSplitterPaneProps = nextChild?.props;
 
-                        children[ index + 1] &&
-                        <>
-                            <SplitterSplitbar
-                                draggable = { child.props.resizable !== false && children[ index + 1 ].props.resizable !== false }
-                                collapsePrev = {child.props.collapsible }
-                                collapseNext= { children[ index + 1 ].props.collapsible }
-                                orientation={orientation}
-                            />
-                        </>
+                    listChildren.push(
+                        <SplitterPane {...childProps} key={index} />,
+
+                        nextChild &&
+                        <SplitterSplitbar
+                            key={`splitbar-${index}`}
+                            draggable={childProps.resizable !== false && nextChildProps.resizable !== false}
+                            collapsePrev={childProps.collapsible}
+                            collapseNext={nextChildProps.collapsible}
+                            orientation={orientation}
+                        />
                     );
                 } else {
                     listChildren.push(child);

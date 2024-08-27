@@ -31,12 +31,12 @@ export default () =>(
                 </WindowNormal>
                 <Popup className="k-menu-popup">
                     <ContextMenuNormal>
-                        <MenuListItem text="Item 1" showArrow></MenuListItem>
+                        <MenuListItem first text="Item 1" showArrow></MenuListItem>
                         <MenuListItem text="Item 2" showArrow></MenuListItem>
                         <MenuListItem text="Item 3" showArrow></MenuListItem>
                         <MenuListItem text="Item 4" showArrow></MenuListItem>
                         <MenuListItem text="Item 5" showArrow></MenuListItem>
-                        <MenuListItem text="Item 6" showArrow></MenuListItem>
+                        <MenuListItem last text="Item 6" showArrow></MenuListItem>
                     </ContextMenuNormal>
                 </Popup>
             </section>
