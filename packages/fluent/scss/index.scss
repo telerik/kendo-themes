@@ -1,6 +1,6 @@
-// Forward component modules
+// Forward component modules and variables
 @forward "./core/_index.scss";
-
+@forward "variables.scss";
 
 // Typography
 @forward "./typography/index.scss";
