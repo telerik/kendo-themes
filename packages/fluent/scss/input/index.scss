@@ -1,11 +1,11 @@
-// Dependencies
-@use "../button/index.scss" as *;
-@use "../icon/index.scss" as *;
-
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
+
+// Dependencies
+@use "../button/index.scss" as *;
+@use "../icon/index.scss" as *;
 
 // Expose
 @mixin input-styles() {

@@ -1,12 +1,12 @@
-// Dependencies
-@use "../splitter/index.scss" as *;
-@use "../tabstrip/index.scss" as *;
-@use "../toolbar/index.scss" as *;
-
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
+
+// Dependencies
+@use "../splitter/index.scss" as *;
+@use "../tabstrip/index.scss" as *;
+@use "../toolbar/index.scss" as *;
 
 // Expose
 @mixin dock-manager-styles() {

@@ -1,4 +1,7 @@
-@use "../utils/index.scss" as *;
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Dependencies
 @use "../action-buttons/index.scss" as *;
@@ -19,11 +22,7 @@
 @use "../tooltip/index.scss" as *;
 @use "../time-marker/index.scss" as *;
 @use "../window/index.scss" as *;
-
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
+@use "../utils/index.scss" as *;
 
 // Expose
 @mixin scheduler-styles() {

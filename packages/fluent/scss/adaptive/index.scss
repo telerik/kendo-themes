@@ -1,3 +1,8 @@
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
 // Dependencies
 @use "../checkbox/index.scss" as *;
 @use "../radio/index.scss" as *;
@@ -5,10 +10,6 @@
 @use "../toolbar/index.scss" as *;
 @use "../listgroup/index.scss" as *;
 
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
 
 // Expose
 @mixin adaptive-styles() {

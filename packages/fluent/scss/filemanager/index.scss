@@ -1,3 +1,8 @@
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
 // Dependencies
 @use "../breadcrumb/index.scss" as *;
 @use "../dialog/index.scss" as *;
@@ -11,11 +16,6 @@
 @use "../toolbar/index.scss" as *;
 @use "../treeview/index.scss" as *;
 @use "../upload/index.scss" as *;
-
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
 
 // Expose
 @mixin file-manager-styles() {

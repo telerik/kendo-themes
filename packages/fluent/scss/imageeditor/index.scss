@@ -1,14 +1,14 @@
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
 // Dependencies
 @use "../checkbox/index.scss" as *;
 @use "../dropdownlist/index.scss" as *;
 @use "../forms/index.scss" as *;
 @use "../numerictextbox/index.scss" as *;
 @use "../toolbar/index.scss" as *;
-
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
 
 // Expose
 @mixin image-editor-styles() {

@@ -1,10 +1,10 @@
-// Dependencies
-@use "../input/index.scss" as *;
-
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
+
+// Dependencies
+@use "../input/index.scss" as *;
 
 // Expose
 @mixin floating-label-styles() {

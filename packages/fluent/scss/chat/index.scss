@@ -1,3 +1,8 @@
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
 // Dependencies
 @use "../avatar/index.scss" as *;
 @use "../button/index.scss" as *;
@@ -5,11 +10,6 @@
 @use "../icon/index.scss" as *;
 @use "../input/index.scss" as *;
 @use "../toolbar/index.scss" as *;
-
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
 
 // Expose
 @mixin chat-styles() {

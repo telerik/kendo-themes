@@ -1,3 +1,8 @@
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
 // Dependencies
 @use "../input/index.scss" as *;
 @use "../floating-label/index.scss" as *;
@@ -5,10 +10,6 @@
 @use "../list/index.scss" as *;
 @use "../icon/index.scss" as *;
 
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
 
 // Expose
 @mixin autocomplete-styles() {
