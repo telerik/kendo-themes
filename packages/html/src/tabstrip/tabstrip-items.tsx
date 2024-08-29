@@ -6,13 +6,21 @@ const states = [];
 
 const options = {};
 
-const defaultOptions = {};
+const defaultOptions = {
+    tabAlignment: "start",
+};
+
+export type KendoTabStripItemsProps = {
+    tabAlignment?: string;
+};
 
 export const TabStripItems = (
-    props: React.HTMLAttributes<HTMLUListElement>
+    props: KendoTabStripItemsProps &
+        React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
         children,
+        tabAlignment,
         ...other
     } = props;
 
@@ -21,7 +29,8 @@ export const TabStripItems = (
             {...other} className={classNames(
                 props.className,
                 TABSTRIPITEMS_CLASSNAME,
-                "k-reset"
+                "k-reset",
+                `k-tabstrip-items-${tabAlignment}`
             )}>
             {children}
         </ul>

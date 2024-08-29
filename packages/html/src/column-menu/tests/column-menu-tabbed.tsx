@@ -1,4 +1,3 @@
-import { Icon } from '../../icon';
 import { ColumnMenuTabbed, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuNormal } from '../../column-menu';
 import { TabStripNormal, TabStripContent, TabStripItem } from '../..';
 
@@ -30,9 +29,9 @@ export default () =>(
                     <TabStripNormal header={false} className="k-overflow-hidden"
                         tabStripItems={
                             <>
-                                <TabStripItem value={<Icon icon="filter" />}/>
-                                <TabStripItem active value={<Icon icon="sliders" />}/>
-                                <TabStripItem value={<Icon icon="columns" />}/>
+                                <TabStripItem icon="filter" />
+                                <TabStripItem active icon="sliders" />
+                                <TabStripItem icon="columns" />
                             </>
                         }
                     >
@@ -60,8 +59,8 @@ export default () =>(
                     <TabStripNormal header={false} className="k-overflow-hidden"
                         tabStripItems={
                             <>
-                                <TabStripItem active value={<Icon icon="filter" />}/>
-                                <TabStripItem value={<Icon icon="sliders" />}/>
+                                <TabStripItem active icon="filter" />
+                                <TabStripItem icon="sliders" />
                             </>
                         }
                     >
@@ -77,7 +76,7 @@ export default () =>(
                     <TabStripNormal header={false} className="k-pos-relative"
                         tabStripItems={
                             <>
-                                <TabStripItem active value={<Icon icon="filter" />}/>
+                                <TabStripItem active icon="filter" />
                             </>
                         }
                     >

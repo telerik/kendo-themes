@@ -1,6 +1,4 @@
-import { TabStripContent, TabStripItem, TabStripNormal } from '..';
-import { Button } from '../..';
-
+import { TabStripClosable, TabStripContent, TabStripItem, TabStripNormal } from '..';
 
 export default () => (
     <>
@@ -23,22 +21,7 @@ export default () => (
             </section>
 
             <section>
-                <TabStripNormal
-                    tabStripItems={
-                        <>
-                            <TabStripItem first active value="closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last value="closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                        </>
-                    }
-                >
-                    <TabStripContent active>
-                        <div>closable items</div>
-                    </TabStripContent>
-                </TabStripNormal>
+                <TabStripClosable />
             </section>
 
             <section>
@@ -57,23 +40,7 @@ export default () => (
             </section>
 
             <section>
-                <TabStripNormal
-                    dir="rtl"
-                    tabStripItems={
-                        <>
-                            <TabStripItem first active value="closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                            <TabStripItem last value="closable">
-                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
-                            </TabStripItem>
-                        </>
-                    }
-                >
-                    <TabStripContent active>
-                        <div>closable items rtl</div>
-                    </TabStripContent>
-                </TabStripNormal>
+                <TabStripClosable dir="rtl" />
             </section>
 
             <TabStripNormal>
