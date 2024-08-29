@@ -71,6 +71,20 @@
             align-items: stretch;
             justify-items: stretch;
             outline: 0;
+
+            // Active state
+            &:active,
+            &.k-active,
+            &.k-selected {
+                font-weight: $kendo-tabstrip-item-selected-font-weight;
+            }
+        }
+
+        .k-item-actions {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
         }
 
         .k-tab-on-top {
@@ -88,6 +102,7 @@
             flex-direction: row;
             align-content: center;
             align-items: center;
+            gap: $kendo-icon-spacing;
         }
 
 
@@ -159,21 +174,6 @@
                 flex-wrap: nowrap;
                 white-space: nowrap;
                 overflow: hidden;
-            }
-
-            > .k-button {
-                padding-block: k-spacing(1);
-                padding-inline: k-spacing(1);
-                width: auto;
-                height: auto;
-                flex: none;
-                align-self: stretch;
-                aspect-ratio: auto;
-
-                .k-button-icon {
-                    min-width: auto;
-                    min-height: auto;
-                }
             }
         }
     }

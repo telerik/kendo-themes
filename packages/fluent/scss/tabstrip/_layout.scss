@@ -82,6 +82,13 @@
             }
         }
 
+        .k-item-actions {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
         .k-tab-on-top {
             z-index: 1;
         }
@@ -162,21 +169,6 @@
                 flex-wrap: nowrap;
                 white-space: nowrap;
                 overflow: hidden;
-            }
-
-            > .k-button {
-                padding-block: var( --kendo-tabstrip-scrollable-button-padding-y, #{$kendo-tabstrip-scrollable-button-padding-y} );
-                padding-inline: var( --kendo-tabstrip-scrollable-button-padding-x, #{$kendo-tabstrip-scrollable-button-padding-x} );
-                width: auto;
-                height: auto;
-                flex: none;
-                align-self: stretch;
-                aspect-ratio: auto;
-
-                .k-button-icon {
-                    min-width: auto;
-                    min-height: auto;
-                }
             }
         }
     }
