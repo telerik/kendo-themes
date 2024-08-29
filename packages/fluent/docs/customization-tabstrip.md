@@ -354,7 +354,7 @@ The following table lists the available variables for customization.
     <td><code>var(--kendo-font-weight-bold, normal)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the selected TabStrip items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the selected TabStrip items.</div></div>
     </td>
 </tr>
 <tr>
