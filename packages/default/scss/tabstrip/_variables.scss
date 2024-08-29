@@ -65,7 +65,7 @@ $kendo-tabstrip-item-gap: k-spacing(0) !default;
 $kendo-tabstrip-item-bg: null !default;
 /// The text color of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-text: $kendo-link-text !default;
+$kendo-tabstrip-item-text: $kendo-subtle-text !default;
 /// The border color of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border: null !default;
@@ -78,7 +78,7 @@ $kendo-tabstrip-item-gradient: null !default;
 $kendo-tabstrip-item-hover-bg: null !default;
 /// The text color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-text: $kendo-link-hover-text !default;
+$kendo-tabstrip-item-hover-text: $kendo-component-text !default;
 /// The border color of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-border: null !default;
@@ -91,13 +91,17 @@ $kendo-tabstrip-item-hover-gradient: null !default;
 $kendo-tabstrip-item-selected-bg: $kendo-component-bg !default;
 /// The text color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-text: $kendo-component-text !default;
+$kendo-tabstrip-item-selected-text: $kendo-link-text !default;
 /// The border color of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-border: $kendo-component-border !default;
 /// The gradient of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-gradient: null !default;
+/// The font weight of the selected TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-item-selected-font-weight: null !default;
+
 
 /// The shadow of the focused TabStrip items.
 /// @group tabstrip

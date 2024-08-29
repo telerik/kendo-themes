@@ -102,7 +102,7 @@ $kendo-tabstrip-item-selected-text: if($kendo-enable-color-system, k-color( on-a
 /// The border color of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
-/// The background gradient of the selected TabStrip items.
+/// The font weight of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 /// The shadow of the focused TabStrip items.

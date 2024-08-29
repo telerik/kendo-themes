@@ -48,9 +48,11 @@ $kendo-tabstrip-item-border-radius: k-map-get( $kendo-border-radii, md ) !defaul
 /// The focus shadow of the tabstrip item
 /// @group tabstrip
 $kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
-
+/// The font weight of the selected TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-selected-font-weight: null !default;
-
+/// The text color of the dragged TabStrip items.
+/// @group tabstrip
 $kendo-tabstrip-item-dragging-text: null !default;
 
 // Indicator
