@@ -25353,6 +25353,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-tabstrip-item-selected-font-weight</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the selected TabStrip items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tabstrip-item-focus-shadow</td>
     <td>Null</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>

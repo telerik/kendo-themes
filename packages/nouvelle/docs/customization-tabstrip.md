@@ -168,6 +168,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-tabstrip-item-selected-font-weight</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the selected TabStrip items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tabstrip-item-dragging-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the dragged TabStrip items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tabstrip-indicator-size</td>
     <td>String</td>
     <td><code>k-spacing(0.5)</code></td>
