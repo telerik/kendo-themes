@@ -3,7 +3,6 @@ export * from './spreadsheet-toolbar';
 export * from './spreadsheet-menu';
 export * from './spreadsheet-header';
 export * from './spreadsheet-action-bar';
-export * from './spreadsheet-tabstrip';
 export * from './spreadsheet-sheets-bar';
 export * from './spreadsheet-column-header';
 export * from './spreadsheet-row-header';

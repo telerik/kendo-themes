@@ -1,3 +1,4 @@
+import { Icon, IconButton } from '..';
 import { States, classNames, stateClassNames } from '../misc';
 
 export const TABSTRIPITEM_CLASSNAME = `k-item`;
@@ -13,15 +14,19 @@ const options = {};
 
 export type KendoTabStripItemProps = {
     dragging?: boolean;
-    value?: string | React.JSX.Element;
+    value?: string;
     first?: boolean;
     last?: boolean;
+    closable?: boolean;
+    icon?: string;
+    iconPosition?: "before" | "after";
+    actions?: React.JSX.Element | string;
 };
 
 export type KendoTabStripItemState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    value: "Item"
+    iconPosition: "before",
 };
 
 export const TabStripItem = (
@@ -38,7 +43,11 @@ export const TabStripItem = (
         children,
         first,
         last,
-        value = defaultOptions.value,
+        closable,
+        icon,
+        iconPosition  = defaultOptions.iconPosition,
+        value,
+        actions,
         ...other
     } = props;
 
@@ -60,7 +69,15 @@ export const TabStripItem = (
                     ["k-last"]: last,
                 }
             )}>
-            <span className="k-link">{value}</span>
+            <span className="k-link">
+                {icon && iconPosition === 'before' && <Icon icon={icon} />}
+                {value && <span className="k-link-text">{value}</span>}
+                {icon && iconPosition === 'after' && <Icon icon={icon} />}
+            </span>
+            {(actions || closable) && <span className="k-item-actions">
+                {actions}
+                {closable && <IconButton fillMode="flat" icon="x"/>}
+            </span>}
             {children}
         </li>
     );
