@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.3...v9.1.0-dev.0) (2024-09-02)
+
+
+### Bug Fixes
+
+* **html:** add missing context-menu first/last classes ([6b35f98](https://github.com/telerik/kendo-themes/commit/6b35f98a7736f66e63dcbed461f44962de760858))
+* **html:** add missing menu first/last classes ([d57f8c1](https://github.com/telerik/kendo-themes/commit/d57f8c135f6f4b8af3ce92e1521a636991d69f97))
+* **html:** correct dockmanager tabstrip first/last classes ([4191e04](https://github.com/telerik/kendo-themes/commit/4191e04c5a4bc0a3d172a79428f4c0e2ccdb4b80))
+* **html:** correct dockmanager toolbar button sizes ([c5475a3](https://github.com/telerik/kendo-themes/commit/c5475a3b1cf1e68979e1a7aad03cfdfcbbe2cdb8))
+* **html:** correct pager double disabled button state ([15c0697](https://github.com/telerik/kendo-themes/commit/15c0697b2ff79ac4e0e4ce78671c7c5dc231da4d))
+* **html:** correct pdf-viewer toolbar button-group fillmode ([dc97812](https://github.com/telerik/kendo-themes/commit/dc97812c937c5dff98e4aac47267c54f14f431e0))
+* **html:** correct scheduler toolbar-specific classes ([7849f74](https://github.com/telerik/kendo-themes/commit/7849f74d2daef4f5bfa4411e0e96f684bbeb4f7f))
+* **html:** correct typo in k-scheduler-task-text class ([67aaf25](https://github.com/telerik/kendo-themes/commit/67aaf2560fdd2ebe9df16ede244d6e12bc025831))
+* **html:** remove checkbox warnings from specs ([d8fe713](https://github.com/telerik/kendo-themes/commit/d8fe71309cb8d2d4ff3fd106d03d9ca87ae32446))
+* **html:** remove splitter warnings from specs ([6ae1777](https://github.com/telerik/kendo-themes/commit/6ae177775eb9101c2f8f3c3d1864eaa7e859c433))
+* **html:** svg icon names with numbers are not considered ([00e7bb6](https://github.com/telerik/kendo-themes/commit/00e7bb6e61f178c1e2b9fb26772e2113e14d6f36))
+
+
+### Features
+
+* **html:** add chip action template ([58ea02c](https://github.com/telerik/kendo-themes/commit/58ea02c5c0869930188cfde43db4025d78fca77e))
+* **html:** add timedurationpicker templates ([824587f](https://github.com/telerik/kendo-themes/commit/824587ff7893408bacd20d1d7b506d418e45b783))
+* **html:** make chip avatar image configurable ([7cfc7d6](https://github.com/telerik/kendo-themes/commit/7cfc7d6db3421ee49ebc379ff83d38ac2ff24005))
+
+
+
+
+
 ## [9.0.1-dev.3](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.2...v9.0.1-dev.3) (2024-08-26)
 
 

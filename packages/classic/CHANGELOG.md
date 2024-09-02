@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.3...v9.1.0-dev.0) (2024-09-02)
+
+**Note:** Version bump only for package @progress/kendo-theme-classic
+
+
+
+
+
 ## [9.0.1-dev.3](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.2...v9.0.1-dev.3) (2024-08-26)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic
