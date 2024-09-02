@@ -25,7 +25,6 @@
     }
     .k-menu { @extend .k-menu-bar !optional; }
 
-
     // Menu item
     .k-menu-item {
         border-width: 0;
@@ -35,6 +34,10 @@
         flex: none;
         position: relative;
         user-select: none;
+
+        &.k-selected {
+            font-weight: $kendo-menu-item-selected-font-weight;
+        }
     }
     .k-menu-item-content {
         display: block;
@@ -94,8 +97,8 @@
         }
 
         > .k-separator {
-            margin-block: 0;
-            margin-inline: $kendo-menu-separator-spacing;
+            margin-block: $kendo-menu-separator-margin-block;
+            margin-inline: $kendo-menu-separator-margin-inline;
             width: 0;
             height: auto;
             border-width: 0 0 0 1px;
@@ -107,6 +110,7 @@
     // Orientation -- vertical
     .k-menu-vertical {
         flex-direction: column;
+        width: 100%;
 
         > .k-menu-item + .k-menu-item {
             margin-top: $kendo-menu-item-spacing;
@@ -124,12 +128,11 @@
         }
 
         > .k-separator {
-            margin-block: $kendo-menu-separator-spacing;
+            margin-block: $kendo-menu-separator-margin-block;
             margin-inline: 0;
             height: 0;
             border-width: 1px 0 0;
             border-style: solid;
-            border-color: $kendo-component-border;
             display: block;
         }
     }
@@ -150,6 +153,10 @@
         *::after {
             box-sizing: border-box;
         }
+
+        .k-menu-item {
+            font-weight: initial;
+        }
     }
 
 
@@ -167,12 +174,11 @@
         }
 
         .k-separator {
-            margin-block: $kendo-menu-separator-spacing;
+            margin-block: $kendo-menu-separator-margin-inline;
             margin-inline: 0;
             height: 0;
             border-width: 1px 0 0;
             border-style: solid;
-            border-color: $kendo-component-border;
             display: block;
         }
     }
@@ -289,50 +295,20 @@
         margin: 0;
         padding: 0;
         border: 0;
-        position: relative;
+        display: flex;
+        align-items: center;
 
         .k-menu {
             overflow: hidden;
             flex-wrap: nowrap;
         }
+    }
 
-        .k-menu-scroll-button {
-            @include border-radius( 0 );
-            padding: 0;
-            border-width: 0;
-            border-color: inherit;
-            color: inherit;
-            background: inherit;
-            position: absolute;
+    .k-menu-scroll-wrapper-vertical {
+        flex-direction: column;
 
-            &.k-scroll-left {
-                top: 0;
-                inset-inline-start: 0;
-                height: 100%;
-                width: 16px;
-                border-right-width: 1px;
-            }
-            &.k-scroll-right {
-                top: 0;
-                inset-inline-end: 0;
-                height: 100%;
-                width: 16px;
-                border-left-width: 1px;
-            }
-            &.k-scroll-up {
-                top: 0;
-                inset-inline-start: 0;
-                width: 100%;
-                height: 16px;
-                border-bottom-width: 1px;
-            }
-            &.k-scroll-down {
-                bottom: 0;
-                inset-inline-start: 0;
-                width: 100%;
-                height: 16px;
-                border-top-width: 1px;
-            }
+        > .k-menu-scroll-button {
+            width: 100%;
         }
     }
 
