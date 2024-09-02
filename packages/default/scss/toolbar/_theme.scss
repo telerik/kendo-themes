@@ -67,8 +67,8 @@
 
             // Selected
             &.k-selected {
-                color: $kendo-menu-popup-item-expanded-text;
-                background: $kendo-menu-popup-item-expanded-bg;
+                color: $kendo-menu-popup-item-active-text;
+                background: $kendo-menu-popup-item-active-bg;
             }
 
             // Disabled state
