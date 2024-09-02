@@ -2,7 +2,7 @@
 @use "@progress/kendo-theme-core/scss/functions/index.import.scss" as functions;
 @use "@progress/kendo-theme-core/scss/color-system/_constants.scss" as constants;
 @use "./_palettes.scss" as *;
-@forward "./palettes";
+@forward "./palettes.scss";
 
 // Config
 $kendo-enable-color-system: true !default;

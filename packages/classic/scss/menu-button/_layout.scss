@@ -1,5 +1,5 @@
 @use "./_variables.scss" as *;
-@use "../button/variables" as *;
+@use "../button/variables.scss" as *;
 @import "@progress/kendo-theme-default/scss/menu-button/_layout.scss";
 
 

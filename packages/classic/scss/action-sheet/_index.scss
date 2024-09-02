@@ -1,4 +1,4 @@
-@use "../utils" as *;
+@use "../utils/index.scss" as *;
 
 // Module meta
 $_kendo-module-meta: (
@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @use "./_theme.scss" as *;
 
 // Register
-@use "../core/module-system/" as module;
+@use "../core/module-system/index.scss" as module;
 @include module.register( $_kendo-module-meta... );
 
 // Expose

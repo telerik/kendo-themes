@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 @use "../popup/_variables.scss" as *;
 @use "../icon/_variables.scss" as *;
 

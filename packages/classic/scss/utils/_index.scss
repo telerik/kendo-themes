@@ -1,4 +1,4 @@
-@use "../core" as *;
+@use "../core/_index.scss" as *;
 
 @forward "@progress/kendo-theme-utils/scss/index.import.scss" with (
     $kendo-spacing: $kendo-spacing,

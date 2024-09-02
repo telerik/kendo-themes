@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 
 // Actions
 $kendo-actions-margin-top: k-spacing(4) !default;

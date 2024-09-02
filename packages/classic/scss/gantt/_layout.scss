@@ -1,5 +1,5 @@
-@use "../core/" as *;
-@use "../core/spacing" as *;
+@use "../core/_index.scss" as *;
+@use "../core/spacing/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../table/_variables.scss" as *;
 @use "../grid/_variables.scss" as *;

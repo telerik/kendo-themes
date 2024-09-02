@@ -2,13 +2,13 @@
 @use "sass:map";
 
 // Color System
-@use "./color-system/swatch" as *;
+@use "./color-system/swatch.scss" as *;
 
 // Typography
 @use "./typography/index.import.scss" as *;
 
 // Spacing
-@use "./spacing" as *;
+@use "./spacing/_index.scss" as *;
 
 // Variables
 @forward "../_variables.scss";
@@ -56,7 +56,7 @@
 );
 
 // Backward compatibility
-@forward "./color-system/_swatch-legacy";
+@forward "./color-system/_swatch-legacy.scss";
 
 // // Expose
 // @include exports("kendo-core-styles") {
@@ -73,7 +73,7 @@
 // }
 
 // Module System
-@use "./module-system/" as module;
+@use "./module-system/_index.scss" as module;
 
 $components: null !default;
 

@@ -1,327 +1,327 @@
 // Forward component modules
-@forward "./core";
+@forward "./core/_index.scss";
 
 
 // Typography and utils
-@forward "./typography";
-@forward "./draggable";
+@forward "./typography/_index.scss";
+@forward "./draggable/_index.scss";
 
 
 // Generic content
-@forward "./icon";
-@forward "./messagebox";
+@forward "./icon/_index.scss";
+@forward "./messagebox/_index.scss";
 
 
 // Primitive components
-@forward "./action-buttons";
-@forward "./list";
-@forward "./listgroup";
-@forward "./overlay";
-@forward "./popup";
-@forward "./ripple";
-@forward "./table";
-@forward "./virtual-scroller";
+@forward "./action-buttons/_index.scss";
+@forward "./list/_index.scss";
+@forward "./listgroup/_index.scss";
+@forward "./overlay/_index.scss";
+@forward "./popup/_index.scss";
+@forward "./ripple/_index.scss";
+@forward "./table/_index.scss";
+@forward "./virtual-scroller/_index.scss";
 
 
 // Native forms
-@forward "./button";
-@forward "./split-button";
-@forward "./menu-button";
-@forward "./input";
-@forward "./textbox";
-@forward "./textarea";
-@forward "./checkbox";
-@forward "./listbox";
-@forward "./progressbar";
-@forward "./radio";
-@forward "./slider";
+@forward "./button/_index.scss";
+@forward "./split-button/_index.scss";
+@forward "./menu-button/_index.scss";
+@forward "./input/_index.scss";
+@forward "./textbox/_index.scss";
+@forward "./textarea/_index.scss";
+@forward "./checkbox/_index.scss";
+@forward "./listbox/_index.scss";
+@forward "./progressbar/_index.scss";
+@forward "./radio/_index.scss";
+@forward "./slider/_index.scss";
 
 
 // Popups and modals
-@forward "./action-sheet";
-@forward "./window";
-@forward "./dialog";
-@forward "./drawer";
-@forward "./notification";
-@forward "./popover";
-@forward "./responsivepanel";
+@forward "./action-sheet/_index.scss";
+@forward "./window/_index.scss";
+@forward "./dialog/_index.scss";
+@forward "./drawer/_index.scss";
+@forward "./notification/_index.scss";
+@forward "./popover/_index.scss";
+@forward "./responsivepanel/_index.scss";
 
 
 // Indicators
-@forward "./avatar";
-@forward "./badge";
-@forward "./chip";
-@forward "./color-preview";
-@forward "./loader";
-@forward "./skeleton";
-@forward "./tooltip";
-@forward "./time-marker/";
+@forward "./avatar/_index.scss";
+@forward "./badge/_index.scss";
+@forward "./chip/_index.scss";
+@forward "./color-preview/_index.scss";
+@forward "./loader/_index.scss";
+@forward "./skeleton/_index.scss";
+@forward "./tooltip/_index.scss";
+@forward "./time-marker/_index.scss";
 
 
 // Form helpers
-@forward "./forms";
-@forward "./validator";
-@forward "./floating-label";
+@forward "./forms/_index.scss";
+@forward "./validator/_index.scss";
+@forward "./floating-label/_index.scss";
 
 
 // Form requirements
-@forward "./calendar";
-@forward "./timeselector";
+@forward "./calendar/_index.scss";
+@forward "./timeselector/_index.scss";
 
 
 // Augmented forms
-@forward "./autocomplete";
-@forward "./captcha";
-@forward "./colorpalette";
-@forward "./colorgradient";
-@forward "./coloreditor";
-@forward "./colorpicker";
-@forward "./combobox";
-@forward "./dateinput";
-@forward "./datepicker";
-@forward "./timepicker";
-@forward "./datetimepicker";
-@forward "./daterangepicker";
-@forward "./dropdowngrid";
-@forward "./dropdownlist";
-@forward "./dropdowntree";
-@forward "./maskedtextbox";
-@forward "./multiselect";
-@forward "./numerictextbox";
-@forward "./rating";
-@forward "./searchbox";
-@forward "./switch";
-@forward "./upload";
-@forward "./dropzone";
+@forward "./autocomplete/_index.scss";
+@forward "./captcha/_index.scss";
+@forward "./colorpalette/_index.scss";
+@forward "./colorgradient/_index.scss";
+@forward "./coloreditor/_index.scss";
+@forward "./colorpicker/_index.scss";
+@forward "./combobox/_index.scss";
+@forward "./dateinput/_index.scss";
+@forward "./datepicker/_index.scss";
+@forward "./timepicker/_index.scss";
+@forward "./datetimepicker/_index.scss";
+@forward "./daterangepicker/_index.scss";
+@forward "./dropdowngrid/_index.scss";
+@forward "./dropdownlist/_index.scss";
+@forward "./dropdowntree/_index.scss";
+@forward "./maskedtextbox/_index.scss";
+@forward "./multiselect/_index.scss";
+@forward "./numerictextbox/_index.scss";
+@forward "./rating/_index.scss";
+@forward "./searchbox/_index.scss";
+@forward "./switch/_index.scss";
+@forward "./upload/_index.scss";
+@forward "./dropzone/_index.scss";
 
 
 // Command interfaces
-@forward "./appbar";
-@forward "./fab";
-@forward "./menu";
-@forward "./toolbar";
+@forward "./appbar/_index.scss";
+@forward "./fab/_index.scss";
+@forward "./menu/_index.scss";
+@forward "./toolbar/_index.scss";
 
 
 // Navigation
-@forward "./bottom-navigation";
-@forward "./breadcrumb";
-@forward "./pager";
-@forward "./stepper";
-@forward "./tabstrip";
-@forward "./treeview";
-@forward "./wizard";
+@forward "./bottom-navigation/_index.scss";
+@forward "./breadcrumb/_index.scss";
+@forward "./pager/_index.scss";
+@forward "./stepper/_index.scss";
+@forward "./tabstrip/_index.scss";
+@forward "./treeview/_index.scss";
+@forward "./wizard/_index.scss";
 
 
 // Layout & containers
-@forward "./card";
-@forward "./expansion-panel";
-@forward "./panelbar";
-@forward "./splitter";
-@forward "./tilelayout";
-@forward "./dock-manager";
-@forward "./chart-wizard";
+@forward "./card/_index.scss";
+@forward "./expansion-panel/_index.scss";
+@forward "./panelbar/_index.scss";
+@forward "./splitter/_index.scss";
+@forward "./tilelayout/_index.scss";
+@forward "./dock-manager/_index.scss";
+@forward "./chart-wizard/_index.scss";
 
 
 // Editors
-@forward "./editor";
-@forward "./imageeditor";
+@forward "./editor/_index.scss";
+@forward "./imageeditor/_index.scss";
 
 
 // Data management
-@forward "./grid";
-@forward "./listview";
-@forward "./spreadsheet";
-@forward "./pivotgrid";
-@forward "./treelist";
-@forward "./filter";
-@forward "./filemanager";
-@forward "./taskboard";
+@forward "./grid/_index.scss";
+@forward "./listview/_index.scss";
+@forward "./spreadsheet/_index.scss";
+@forward "./pivotgrid/_index.scss";
+@forward "./treelist/_index.scss";
+@forward "./filter/_index.scss";
+@forward "./filemanager/_index.scss";
+@forward "./taskboard/_index.scss";
 
 
 // Scheduling
-@forward "./gantt";
-@forward "./scheduler";
+@forward "./gantt/_index.scss";
+@forward "./scheduler/_index.scss";
 
 
 // Misc
-@forward "./adaptive";
-@forward "./chat";
-@forward "./mediaplayer";
-@forward "./timeline";
-@forward "./pdf-viewer";
-@forward "./scroller";
-@forward "./scrollview";
-@forward "./prompt";
+@forward "./adaptive/_index.scss";
+@forward "./chat/_index.scss";
+@forward "./mediaplayer/_index.scss";
+@forward "./timeline/_index.scss";
+@forward "./pdf-viewer/_index.scss";
+@forward "./scroller/_index.scss";
+@forward "./scrollview/_index.scss";
+@forward "./prompt/_index.scss";
 
 
 // Dataviz
-@forward "./dataviz";
-@forward "./map";
-@forward "./orgchart";
-@forward "./signature";
+@forward "./dataviz/_index.scss";
+@forward "./map/_index.scss";
+@forward "./orgchart/_index.scss";
+@forward "./signature/_index.scss";
 
 
 // Use component modules
-@use "./core" as *;
+@use "./core/_index.scss" as *;
 
 // Typography and utils
-@use "./typography" as *;
-@use "./draggable" as *;
+@use "./typography/_index.scss" as *;
+@use "./draggable/_index.scss" as *;
 
 
 // Generic content
-@use "./icon" as *;
-@use "./messagebox" as *;
+@use "./icon/_index.scss" as *;
+@use "./messagebox/_index.scss" as *;
 
 
 // Primitive components
-@use "./action-buttons" as *;
-@use "./list" as *;
-@use "./listgroup" as *;
-@use "./overlay" as *;
-@use "./popup" as *;
-@use "./ripple" as *;
-@use "./table" as *;
-@use "./virtual-scroller" as *;
+@use "./action-buttons/_index.scss" as *;
+@use "./list/_index.scss" as *;
+@use "./listgroup/_index.scss" as *;
+@use "./overlay/_index.scss" as *;
+@use "./popup/_index.scss" as *;
+@use "./ripple/_index.scss" as *;
+@use "./table/_index.scss" as *;
+@use "./virtual-scroller/_index.scss" as *;
 
 
 // Indicators
-@use "./avatar" as *;
-@use "./badge" as *;
-@use "./chip" as *;
-@use "./color-preview" as *;
-@use "./loader" as *;
-@use "./skeleton" as *;
-@use "./tooltip" as *;
-@use "./time-marker/" as *;
+@use "./avatar/_index.scss" as *;
+@use "./badge/_index.scss" as *;
+@use "./chip/_index.scss" as *;
+@use "./color-preview/_index.scss" as *;
+@use "./loader/_index.scss" as *;
+@use "./skeleton/_index.scss" as *;
+@use "./tooltip/_index.scss" as *;
+@use "./time-marker/_index.scss" as *;
 
 
 // Form helpers
-@use "./forms" as *;
-@use "./validator" as *;
-@use "./floating-label" as *;
+@use "./forms/_index.scss" as *;
+@use "./validator/_index.scss" as *;
+@use "./floating-label/_index.scss" as *;
 
 
 // Native forms
-@use "./button" as *;
-@use "./split-button" as *;
-@use "./menu-button" as *;
-@use "./input" as *;
-@use "./textbox" as *;
-@use "./textarea" as *;
-@use "./checkbox" as *;
-@use "./listbox" as *;
-@use "./progressbar" as *;
-@use "./radio" as *;
-@use "./slider" as *;
+@use "./button/_index.scss" as *;
+@use "./split-button/_index.scss" as *;
+@use "./menu-button/_index.scss" as *;
+@use "./input/_index.scss" as *;
+@use "./textbox/_index.scss" as *;
+@use "./textarea/_index.scss" as *;
+@use "./checkbox/_index.scss" as *;
+@use "./listbox/_index.scss" as *;
+@use "./progressbar/_index.scss" as *;
+@use "./radio/_index.scss" as *;
+@use "./slider/_index.scss" as *;
 
 
 // Form requirements
-@use "./calendar" as *;
-@use "./timeselector" as *;
+@use "./calendar/_index.scss" as *;
+@use "./timeselector/_index.scss" as *;
 
 
 // Augmented forms
-@use "./autocomplete" as *;
-@use "./captcha" as *;
-@use "./colorpalette" as *;
-@use "./colorgradient" as *;
-@use "./coloreditor" as *;
-@use "./colorpicker" as *;
-@use "./combobox" as *;
-@use "./dateinput" as *;
-@use "./datepicker" as *;
-@use "./timepicker" as *;
-@use "./timedurationpicker" as *;
-@use "./datetimepicker" as *;
-@use "./daterangepicker" as *;
-@use "./dropdowngrid" as *;
-@use "./dropdownlist" as *;
-@use "./dropdowntree" as *;
-@use "./maskedtextbox" as *;
-@use "./multiselect" as *;
-@use "./numerictextbox" as *;
-@use "./rating" as *;
-@use "./searchbox" as *;
-@use "./switch" as *;
-@use "./upload" as *;
-@use "./dropzone" as *;
+@use "./autocomplete/_index.scss" as *;
+@use "./captcha/_index.scss" as *;
+@use "./colorpalette/_index.scss" as *;
+@use "./colorgradient/_index.scss" as *;
+@use "./coloreditor/_index.scss" as *;
+@use "./colorpicker/_index.scss" as *;
+@use "./combobox/_index.scss" as *;
+@use "./dateinput/_index.scss" as *;
+@use "./datepicker/_index.scss" as *;
+@use "./timepicker/_index.scss" as *;
+@use "./timedurationpicker/_index.scss" as *;
+@use "./datetimepicker/_index.scss" as *;
+@use "./daterangepicker/_index.scss" as *;
+@use "./dropdowngrid/_index.scss" as *;
+@use "./dropdownlist/_index.scss" as *;
+@use "./dropdowntree/_index.scss" as *;
+@use "./maskedtextbox/_index.scss" as *;
+@use "./multiselect/_index.scss" as *;
+@use "./numerictextbox/_index.scss" as *;
+@use "./rating/_index.scss" as *;
+@use "./searchbox/_index.scss" as *;
+@use "./switch/_index.scss" as *;
+@use "./upload/_index.scss" as *;
+@use "./dropzone/_index.scss" as *;
 
 
 // Command interfaces
-@use "./appbar" as *;
-@use "./fab" as *;
-@use "./menu" as *;
-@use "./toolbar" as *;
+@use "./appbar/_index.scss" as *;
+@use "./fab/_index.scss" as *;
+@use "./menu/_index.scss" as *;
+@use "./toolbar/_index.scss" as *;
 
 
 // Popups and modals
-@use "./action-sheet" as *;
-@use "./dialog" as *;
-@use "./drawer" as *;
-@use "./notification" as *;
-@use "./popover" as *;
-@use "./responsivepanel" as *;
-@use "./window" as *;
+@use "./action-sheet/_index.scss" as *;
+@use "./dialog/_index.scss" as *;
+@use "./drawer/_index.scss" as *;
+@use "./notification/_index.scss" as *;
+@use "./popover/_index.scss" as *;
+@use "./responsivepanel/_index.scss" as *;
+@use "./window/_index.scss" as *;
 
 
 // Navigation
-@use "./bottom-navigation" as *;
-@use "./breadcrumb" as *;
-@use "./pager" as *;
-@use "./stepper" as *;
-@use "./tabstrip" as *;
-@use "./treeview" as *;
-@use "./wizard" as *;
+@use "./bottom-navigation/_index.scss" as *;
+@use "./breadcrumb/_index.scss" as *;
+@use "./pager/_index.scss" as *;
+@use "./stepper/_index.scss" as *;
+@use "./tabstrip/_index.scss" as *;
+@use "./treeview/_index.scss" as *;
+@use "./wizard/_index.scss" as *;
 
 
 // Layout & containers
-@use "./card" as *;
-@use "./expansion-panel" as *;
-@use "./panelbar" as *;
-@use "./splitter" as *;
-@use "./tilelayout" as *;
-@use "./dock-manager" as *;
-@use "./chart-wizard" as *;
+@use "./card/_index.scss" as *;
+@use "./expansion-panel/_index.scss" as *;
+@use "./panelbar/_index.scss" as *;
+@use "./splitter/_index.scss" as *;
+@use "./tilelayout/_index.scss" as *;
+@use "./dock-manager/_index.scss" as *;
+@use "./chart-wizard/_index.scss" as *;
 
 
 // Data management
-@use "./grid" as *;
-@use "./listview" as *;
-@use "./spreadsheet" as *;
-@use "./pivotgrid" as *;
-@use "./treelist" as *;
-@use "./filter" as *;
-@use "./filemanager" as *;
-@use "./taskboard" as *;
+@use "./grid/_index.scss" as *;
+@use "./listview/_index.scss" as *;
+@use "./spreadsheet/_index.scss" as *;
+@use "./pivotgrid/_index.scss" as *;
+@use "./treelist/_index.scss" as *;
+@use "./filter/_index.scss" as *;
+@use "./filemanager/_index.scss" as *;
+@use "./taskboard/_index.scss" as *;
 
 
 // Editors
-@use "./editor" as *;
-@use "./imageeditor" as *;
+@use "./editor/_index.scss" as *;
+@use "./imageeditor/_index.scss" as *;
 
 
 // Scheduling
-@use "./gantt" as *;
-@use "./scheduler" as *;
+@use "./gantt/_index.scss" as *;
+@use "./scheduler/_index.scss" as *;
 
 
 // Misc
-@use "./adaptive" as *;
-@use "./chat" as *;
-@use "./mediaplayer" as *;
-@use "./timeline" as *;
-@use "./pdf-viewer" as *;
-@use "./scroller" as *;
-@use "./scrollview" as *;
-@use "./prompt" as *;
+@use "./adaptive/_index.scss" as *;
+@use "./chat/_index.scss" as *;
+@use "./mediaplayer/_index.scss" as *;
+@use "./timeline/_index.scss" as *;
+@use "./pdf-viewer/_index.scss" as *;
+@use "./scroller/_index.scss" as *;
+@use "./scrollview/_index.scss" as *;
+@use "./prompt/_index.scss" as *;
 
 
 // Dataviz
-@use "./dataviz" as *;
-@use "./map" as *;
-@use "./orgchart" as *;
-@use "./signature" as *;
+@use "./dataviz/_index.scss" as *;
+@use "./map/_index.scss" as *;
+@use "./orgchart/_index.scss" as *;
+@use "./signature/_index.scss" as *;
 
 
 // Configuration

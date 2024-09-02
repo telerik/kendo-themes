@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "../core/" as *;
+@use "../core/_index.scss" as *;
 
 // Color Preview
 $kendo-color-preview-border-radius: k-border-radius(md) !default;

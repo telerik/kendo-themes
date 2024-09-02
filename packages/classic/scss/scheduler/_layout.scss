@@ -1,5 +1,5 @@
-@use "../core/" as *;
-@use "../core/spacing" as *;
+@use "../core/_index.scss" as *;
+@use "../core/spacing/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../icon/_variables.scss" as *;
