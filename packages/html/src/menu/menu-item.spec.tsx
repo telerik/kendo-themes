@@ -7,6 +7,7 @@ const states = [
     States.hover,
     States.focus,
     States.active,
+    States.selected,
     States.disabled
 ];
 
@@ -16,11 +17,12 @@ const options = {};
 export type KendoMenuItemProps = {
     text?: string;
     icon?: string;
+    iconPosition?: "before" | "after";
     first?: boolean;
     last?: boolean;
     showArrow?: boolean;
     arrowIconName?: string;
-    dir?: string;
+    dir?: "rtl" | "ltr";
     children?: React.JSX.Element[];
     popup?: React.JSX.Element;
 };
@@ -28,7 +30,7 @@ export type KendoMenuItemProps = {
 export type KendoMenuItemState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    dir: 'ltr'
+    iconPosition: 'before'
 };
 
 export const MenuItem = (
@@ -40,6 +42,7 @@ export const MenuItem = (
         hover,
         focus,
         active,
+        selected,
         disabled,
         icon,
         text,
@@ -47,7 +50,8 @@ export const MenuItem = (
         last,
         showArrow,
         arrowIconName,
-        dir = defaultOptions.dir,
+        iconPosition = defaultOptions.iconPosition,
+        dir,
         children,
         popup,
         ...other
@@ -87,6 +91,7 @@ export const MenuItem = (
                     disabled,
                     hover,
                     active,
+                    selected,
                 }),
                 {
                     ["k-first"]: first,
@@ -98,8 +103,9 @@ export const MenuItem = (
                 className={classNames(
                     "k-link k-menu-link"
                 )}>
-                {icon && <Icon className="k-menu-link-icon" icon={icon} />}
+                {icon && iconPosition === 'before' && <Icon className="k-menu-link-icon" icon={icon} />}
                 <span className="k-menu-link-text">{text}</span>
+                {icon && iconPosition === 'after' && <Icon className="k-menu-link-icon" icon={icon} />}
                 {showArrow && <span className="k-menu-expand-arrow"><Icon icon={expandArrowName} /></span>}
             </span>
             {contentTemplate}

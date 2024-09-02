@@ -1,5 +1,5 @@
 import { Popup } from '../../popup';
-import { MenuList, MenuItem, MenuNormal, MenuListItem, MenuScrollable } from '../../menu';
+import { MenuList, MenuItem, MenuVertical, MenuNormal, MenuListItem, MenuSeparator } from '..';
 
 
 const style = `
@@ -18,13 +18,14 @@ export default () =>(
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>Horizontal Menu</span>
-            <span>Horizontal Scrolling Menu</span>
+            <span>Horizontal Menu with Separators</span>
+            <span>Vertical Menu with Separators</span>
 
             <section>
                 <MenuNormal>
                     <MenuItem first text="Normal"></MenuItem>
                     <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuSeparator></MenuSeparator>
                     <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"
                     popup={
                         <>
@@ -33,6 +34,7 @@ export default () =>(
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
                                     <MenuListItem text="Hover" hover showArrow></MenuListItem>
+                                    <MenuSeparator></MenuSeparator>
                                     <MenuListItem text="Active" active showArrow></MenuListItem>
                                     <MenuListItem text="Focus" focus></MenuListItem>
                                     <MenuListItem last text="Focus & Active" active focus></MenuListItem>
@@ -47,24 +49,19 @@ export default () =>(
             </section>
 
             <section>
-                <MenuScrollable wrapperStyles={{ width: "300px" }}/>
-            </section>
-
-            <span>Horizontal Menu RTL</span>
-            <span></span>
-
-            <section>
-                <MenuNormal dir="rtl">
+                <MenuVertical>
                     <MenuItem first text="Normal"></MenuItem>
                     <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuSeparator></MenuSeparator>
                     <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"
                         popup={
                             <>
                                 <Popup className="k-menu-popup" positionMode="fixed">
-                                    <MenuList dir="rtl">
+                                    <MenuList>
                                         <MenuListItem first text="Disabled" disabled></MenuListItem>
                                         <MenuListItem text="Normal"></MenuListItem>
                                         <MenuListItem text="Hover" hover showArrow></MenuListItem>
+                                        <MenuSeparator></MenuSeparator>
                                         <MenuListItem text="Active" active showArrow></MenuListItem>
                                         <MenuListItem text="Focus" focus></MenuListItem>
                                         <MenuListItem last text="Focus & Active" active focus></MenuListItem>
@@ -75,7 +72,7 @@ export default () =>(
                     <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
                     <MenuItem last text="Disabled" disabled></MenuItem>
-                </MenuNormal>
+                </MenuVertical>
             </section>
         </div>
 

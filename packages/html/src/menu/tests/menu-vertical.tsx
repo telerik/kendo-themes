@@ -22,10 +22,12 @@ export default () =>(
                     <MenuItem text="Normal"></MenuItem>
                     <MenuItem text="Hover" hover showArrow></MenuItem>
                     <MenuItem text="Active" active showArrow></MenuItem>
+                    <MenuItem text="Selected" selected showArrow></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
                     <MenuItem text="Normal with icon" icon="folder" showArrow></MenuItem>
                     <MenuItem text="Hover with icon" icon="folder" hover showArrow></MenuItem>
                     <MenuItem text="Active with icon" icon="folder" active showArrow></MenuItem>
+                    <MenuItem text="Selected with icon" icon="folder" selected showArrow></MenuItem>
                     <MenuItem last text="Focus with icon" icon="folder" focus showArrow></MenuItem>
                 </MenuVertical>
             </section>
