@@ -1,14 +1,9 @@
 const fs = require("fs");
 const path = require("path");
-
-const { globSync } = require("glob");
 const gulp = require("gulp");
 
-const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
-const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
-const { getArg, getEnvArg } = require("@progress/kendo-theme-tasks/src/utils");
-const { createComponent } = require('@progress/kendo-theme-tasks/src/create');
-
+const { globSync } = require("glob");
+const { sassFlatten } = require('./scripts/sass-flatten');
 
 // Settings
 const paths = {
@@ -22,6 +17,14 @@ const paths = {
         dist: "dist"
     }
 };
+
+function getArg(key, argsArr) {
+    const args = argsArr || process.argv;
+    const index = args.indexOf(key);
+    const next = args[index + 1];
+
+    return (index < 0) ? null : (!next || next[0] === '-') ? true : next; // eslint-disable-line no-nested-ternary
+}
 
 // #region helpers
 function flattenAll( cwds, options ) {
@@ -147,28 +150,6 @@ function swatchJsonTransformer( json ) {
 }
 // #endregion
 
-
-// #region assets
-gulp.task("assets", function() {
-    let files = globSync(paths.sass.assets);
-    let template = fs.readFileSync('lib/data-uri.template', 'utf8');
-
-    files.forEach( file => {
-        embedFileBase64({
-            file: file,
-            output: {
-                filename: '[name].scss',
-                path: path.dirname( file )
-            },
-            template: template
-        });
-    });
-
-    return Promise.resolve();
-});
-// #endregion
-
-
 // #region dist
 function distFlat() {
     let file = paths.sass.theme;
@@ -193,23 +174,4 @@ function distSwatches() {
     return Promise.resolve();
 }
 gulp.task("dist:swatches", distSwatches);
-// #endregion
-
-// #region Components
-
-/**
- * A task that creates all the needed files for a new component.
- *
- * @example npm run create-component --name=accordion
- * @example gulp create-component --name accordion
- *
- * @param {string} [name] - The name of the new component.
- */
-gulp.task("create-component", function( done ) {
-    const name = getArg('--name') || getEnvArg('name') || null;
-
-    createComponent({ name });
-    done();
-});
-
 // #endregion
