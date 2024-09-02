@@ -1,4 +1,6 @@
+import { Button } from '..';
 import { classNames } from '../misc';
+import MenuScrollableWrapper from './menu-scrollable-wrapper.spec';
 
 export const MENU_CLASSNAME = `k-menu`;
 
@@ -9,11 +11,16 @@ const options = {};
 export type KendoMenuProps = {
     orientation?: 'horizontal' | 'vertical';
     header?: boolean | null;
+    scrollable?: boolean;
+    scrollButtonsPosition?: "around" | "start" | "end";
+    wrapperStyles?: React.CSSProperties;
+    dir?: "rtl" | "ltr";
 };
 
 const defaultOptions = {
     orientation: 'horizontal',
-    header: true
+    header: true,
+    scrollButtonsPosition: "around"
 };
 
 export const Menu = (
@@ -24,13 +31,22 @@ export const Menu = (
         children,
         orientation = defaultOptions.orientation,
         header = defaultOptions.header,
+        scrollable,
+        scrollButtonsPosition = defaultOptions.scrollButtonsPosition,
+        wrapperStyles,
+        dir,
         ...other
     } = props;
 
-    return (
+    const caretMap = {
+        horizontal: { prev: dir !== "rtl" ? "left" : "right", next:  dir !== "rtl" ? "right" : "left" },
+        vertical: { prev: "up", next: "down" },
+    };
 
+    const ulMenu = (
         <ul
             id="menu"
+            dir={dir}
             {...other}
             className={classNames(
                 props.className,
@@ -43,6 +59,39 @@ export const Menu = (
             )}>
             {children}
         </ul>
+    )
+
+    return (
+        <>
+            {scrollable ?
+                (<MenuScrollableWrapper orientation={orientation} style={wrapperStyles} dir={props.dir}>
+                    {scrollButtonsPosition === 'start' &&
+                        <>
+                            <Button fillMode="flat" rounded={null} size={"medium"}
+                                icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>
+                            <Button fillMode="flat" rounded={null} size={"medium"}
+                                icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>
+                        </>
+                    }
+                    {scrollButtonsPosition === 'around' &&
+                        <Button fillMode="flat" rounded={null} size={"medium"}
+                            icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>}
+                    {ulMenu}
+                    {scrollButtonsPosition === 'end' &&
+                        <>
+                            <Button fillMode="flat" rounded={null} size={"medium"}
+                                icon={`caret-alt-${caretMap[orientation]["prev"]}`} className="k-menu-scroll-button k-menu-scroll-button-prev"></Button>
+                            <Button fillMode="flat" rounded={null} size={"medium"}
+                                icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>
+                        </>
+                    }
+                    {scrollButtonsPosition === 'around' &&
+                        <Button fillMode="flat" rounded={null} size={"medium"}
+                            icon={`caret-alt-${caretMap[orientation]["next"]}`} className="k-menu-scroll-button k-menu-scroll-button-next"></Button>}
+                </MenuScrollableWrapper>) :
+                ulMenu
+            }
+        </>
     );
 };
 

@@ -17,11 +17,12 @@ const options = {};
 export type KendoMenuListItemProps = {
     text?: string;
     icon?: string;
+    iconPosition?: string;
     first?: boolean;
     last?: boolean;
     showArrow?: boolean;
     arrowIconName?: string;
-    dir?: string;
+    dir?: "rtl" | "ltr";
     children?: React.JSX.Element[];
     popup?: React.JSX.Element;
 };
@@ -29,7 +30,8 @@ export type KendoMenuListItemProps = {
 export type KendoMenuListItemState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    dir: 'ltr'
+    dir: 'ltr',
+    iconPosition: 'before'
 } as const;
 
 export const MenuListItem = (
@@ -49,6 +51,7 @@ export const MenuListItem = (
         last,
         showArrow,
         arrowIconName,
+        iconPosition = defaultOptions.iconPosition,
         dir = defaultOptions.dir,
         children,
         popup,
@@ -104,8 +107,9 @@ export const MenuListItem = (
                         disabled
                     }),
                 )}>
-                {icon && <Icon className="k-menu-link-icon" icon={icon} />}
+                {icon && iconPosition === 'before' && <Icon className="k-menu-link-icon" icon={icon} />}
                 <span className="k-menu-link-text">{text}</span>
+                {icon && iconPosition === 'after' && <Icon className="k-menu-link-icon" icon={icon} />}
                 {showArrow && <span className="k-menu-expand-arrow"><Icon icon={expandArrowName} /></span>}
             </span>
             {contentTemplate}

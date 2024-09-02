@@ -12,7 +12,7 @@ const options = {
 export type KendoMenuListOptions = {
     children?: React.JSX.Element | React.JSX.Element[];
     size?: (typeof options.size)[number] | null;
-    dir?: string;
+    dir?: "rtl" | "ltr";
 };
 
 const defaultOptions = {
