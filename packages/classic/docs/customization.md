@@ -14582,16 +14582,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-secondary-bg</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
-    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Loader based on the secondary theme color.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-loader-container-panel-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
