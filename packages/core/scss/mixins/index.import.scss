@@ -1,11 +1,11 @@
-@import "./_border-radius.scss";
-@import "./_box-shadow.scss";
-@import "./_disabled.scss";
-@import "./_decoration.scss";
-@import "./_focus-indicator.scss";
-@import "./_gradient.scss";
-@import "./_hide-scrollbar.scss";
-@import "./_import-once.scss";
+@forward "./_border-radius.scss";
+@forward "./_box-shadow.scss";
+@forward "./_disabled.scss";
+@forward "./_decoration.scss";
+@forward "./_focus-indicator.scss";
+@forward "./_gradient.scss";
+@forward "./_hide-scrollbar.scss";
+@forward "./_import-once.scss";
 
 @mixin background-image( $background-image: null ) {
     @if $background-image {

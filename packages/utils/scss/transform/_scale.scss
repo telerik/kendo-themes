@@ -20,26 +20,14 @@
 @import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
 @include module-register((name: "utils-transform-scale"));
 
-// stylelint-disable scss/at-function-pattern
-@function _scale( $val ) {
-    @return scale( $val );
-}
-@function _scale-x( $val ) {
-    @return scaleX( $val );
-}
-@function _scale-y( $val ) {
-    @return scaleY( $val );
-}
-// stylelint-enable scss/at-function-pattern
-
 @mixin kendo-utils--transform--scale() {
     @include module-render("utils-transform-scale") {
 
         // Scale utility classes
-        $kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
-        @include generate-utils( scale, transform, $kendo-utils-scale, _scale );
-        @include generate-utils( scale-x, transform, $kendo-utils-scale, _scale-x );
-        @include generate-utils( scale-y, transform, $kendo-utils-scale, _scale-y );
+        $kendo-utils-scale: map.get( $kendo-utils, "scale" ) !default;
+        @include generate-utils( scale, transform, $kendo-utils-scale, k-scale );
+        @include generate-utils( scale-x, transform, $kendo-utils-scale, k-scale-x );
+        @include generate-utils( scale-y, transform, $kendo-utils-scale, k-scale-y );
 
     }
 }

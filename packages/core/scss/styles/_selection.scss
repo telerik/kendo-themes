@@ -16,20 +16,20 @@
     }
 
     .k-marquee-color {
-        color: k-get-theme-color-var( neutral-160, #{$kendo-selected-text} );
-        background-color: k-get-theme-color-var( primary-60, #{$kendo-selected-bg} );
-        border-color: k-get-theme-color-var( primary-100, #{$kendo-selected-border} );
+        color: var( --kendo-marquee-text, unset );
+        background-color: var( --kendo-marquee-bg, unset );
+        border-color: var( --kendo-marquee-border, unset );
         opacity: .6;
     }
     .k-marquee-text {
-        color: k-get-theme-color-var( neutral-160, #{$kendo-selected-text} );
+        color: var( --kendo-marquee-text, unset );
     }
 
     // Text selection
     .k-text-selection {
         ::selection {
-            background-color:  if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ));
-            color: if($kendo-enable-color-system, k-color( on-primary ), $kendo-selected-text);
+            background-color: var( --kendo-text-selection-bg, unset );
+            color: var( --kendo-marquee-text, unset );
         }
     }
 

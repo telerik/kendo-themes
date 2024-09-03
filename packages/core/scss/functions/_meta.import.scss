@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 // Adapted from https://css-tricks.com/snippets/sass/advanced-type-checking/
 
 /// A wrapper around the `call()` function.
@@ -9,7 +11,7 @@
 /// @example scss - Usage
 ///   @debug k-meta-call( k-meta-get-function( "k-string-replace" ), "foo bar", "bar", "baz" ); // => "foo baz"
 @function k-meta-call( $function, $args... ) {
-    @return call( $function, $args... );
+    @return meta.call( $function, $args... );
 }
 
 /// A wrapper around the `function-exists()` function.
@@ -24,7 +26,7 @@
         @return false;
     }
 
-    @return function-exists( $name );
+    @return meta.function-exists( $name );
 }
 
 /// A wrapper around the `get-function()` function.
@@ -37,7 +39,7 @@
 /// @example scss - Usage
 ///   @debug k-meta-get-function( "k-string-replace" ); // => Function
 @function k-meta-get-function( $name, $args... ) {
-    @return get-function( $name, $args... );
+    @return meta.get-function( $name, $args... );
 }
 
 /// A wrapper around the `inspect()` function.
@@ -48,7 +50,7 @@
 /// @example scss - Usage
 ///   @debug k-meta-inspect( "foo bar" ); // => "foo bar"
 @function k-meta-inspect( $value ) {
-    @return inspect( $value );
+    @return meta.inspect( $value );
 }
 
 /// A wrapper around the `keywords()` function.
@@ -59,7 +61,7 @@
 /// @example scss - Usage
 ///   @debug k-meta-keywords( ( "foo" "bar" "baz" "qux" ) ); // => ( "foo": "bar", "baz": "qux" )
 @function k-meta-keywords( $args ) {
-    @return keywords( $args );
+    @return meta.keywords( $args );
 }
 
 /// A wrapper around the `type-of()` function.
@@ -70,7 +72,7 @@
 /// @example scss - Usage
 ///   @debug k-meta-type-of( "foo bar" ); // => "string"
 @function k-meta-type-of( $value ) {
-    @return type-of( $value );
+    @return meta.type-of( $value );
 }
 
 /// A wrapper around the `variable-exists()` function.
@@ -81,7 +83,7 @@
 /// @example scss - Usage
 ///   @debug k-meta-variable-exists( "foo" ); // => true
 @function k-meta-variable-exists( $name ) {
-    @return variable-exists( $name );
+    @return meta.variable-exists( $name );
 }
 
 /// Checks whether `$value` is a <number> CSS data type.
