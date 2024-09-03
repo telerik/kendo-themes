@@ -1,3 +1,5 @@
+@use "./_gradient.scss" as *;
+
 @mixin fill( $color: null, $bg: null, $border: null, $gradient: null ) {
     @if $border {
         border-color: $border;
@@ -13,16 +15,7 @@
     }
 }
 
-@mixin linear-gradient( $gradient: null ) {
-    @if $gradient and $kendo-enable-gradients {
-        @if $gradient == none {
-            background-image: none;
-        } @else {
-            background-image: linear-gradient( $gradient );
-        }
-    }
-}
-
-@mixin repeating-striped-gradient( $color: rgba(255,255,255,.15), $background: #FFF, $angle: 45deg, $largeStep: 2px, $smallStep: 1px) {
-    background-image: repeating-linear-gradient($angle, $background, $background $smallStep, $color $smallStep, $color $largeStep);
-}
+// TODO: Remove as we have the same mixin in _gradient.scss
+// @mixin repeating-striped-gradient( $color: rgba(255,255,255,.15), $background: #FFF, $angle: 45deg, $largeStep: 2px, $smallStep: 1px) {
+//     background-image: repeating-linear-gradient($angle, $background, $background $smallStep, $color $smallStep, $color $largeStep);
+// }

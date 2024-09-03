@@ -1,7 +1,15 @@
+@use "@progress/kendo-theme-core/scss/functions/index.import.scss" as *;
+@use "./_variables.scss" as *;
+@use "./_functions.scss" as *;
+@use "sass:meta";
+
+$kendo-prefix: k- !default;
+$kendo-important: true !default;
+
 @mixin generate-utils( $name, $props, $values, $function: "", $important: $kendo-important, $css-var: null ) {
     @if $values {
         $_props: if( k-meta-type-of($props) == list, $props, ( $props ) );
-        $_fn: if( k-meta-function-exists( $function ), k-meta-get-function( $function ), null );
+        $_fn: if( meta.function-exists( $function ), meta.get-function( $function ), null );
 
         @each $key, $val in $values {
             $_key: k-escape-class-name( $key );

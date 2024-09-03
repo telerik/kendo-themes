@@ -1,3 +1,5 @@
+@use "sass:list";
+
 /// Returns a copy of `$list` with `$val` appended to the end.
 /// @param {List} $list - The list to process.
 /// @param {Any} $val - The value to append to `$list`.
@@ -7,7 +9,7 @@
 /// @example scss - Usage
 ///   @debug k-list-append( ( "foo", "bar" ), "baz" ); // => "foo, bar, baz"
 @function k-list-append( $list, $val, $separator: auto ) {
-    @return append( $list, $val, $separator );
+    @return list.append( $list, $val, $separator );
 }
 
 /// Checks whether `$list` contains `$value`.
@@ -30,7 +32,7 @@
 /// @example scss - Usage
 ///   @debug k-list-index( ( "foo", "bar" ), "foo" ); // => 1
 @function k-list-index( $list, $value ) {
-    @return index( $list, $value );
+    @return list.index( $list, $value );
 }
 
 /// Returns whether `$list` is bracketed.
@@ -41,7 +43,7 @@
 ///   @debug k-list-is-bracketed( ( "foo", "bar" ) ); // => false
 ///   @debug k-list-is-bracketed( [ "foo", "bar" ] ); // => true
 @function k-list-is-bracketed( $list ) {
-    @return is-bracketed( $list );
+    @return list.is-bracketed( $list );
 }
 
 /// Joins two lists together.
@@ -55,7 +57,7 @@
 ///   @debug k-list-join( ( "foo", "bar" ), ( "baz", "qux" ) ); // => "foo, bar, baz, qux"
 ///   @debug k-list-join( ( "foo", "bar" ), ( "baz", "qux" ), " " ); // => "foo bar baz qux"
 @function k-list-join( $list1, $list2, $separator: auto, $bracketed: auto ) {
-    @return join( $list1, $list2, $separator, $bracketed );
+    @return list.join( $list1, $list2, $separator, $bracketed );
 }
 
 /// Returns the length of `$list`.
@@ -65,7 +67,7 @@
 /// @example scss - Usage
 ///   @debug k-list-length( ( "foo", "bar" ) ); // => 2
 @function k-list-length( $list ) {
-    @return length( $list );
+    @return list.length( $list );
 }
 
 /// Returns the nth item in `$list`.
@@ -76,7 +78,7 @@
 /// @example scss - Usage
 ///   @debug k-list-nth( ( "foo", "bar" ), 1 ); // => "foo"
 @function k-list-nth( $list, $n ) {
-    @return nth( $list, $n );
+    @return list.nth( $list, $n );
 }
 
 /// Reverse the order of items in `$list`.
@@ -109,7 +111,7 @@
 /// @example scss - Usage
 ///   @debug k-list-separator( ( "foo", "bar" ) ); // => ","
 @function k-list-separator( $list ) {
-    @return list-separator( $list );
+    @return list.list-separator( $list );
 }
 
 /// Returns a copy of `$list` with `$val` inserted at `$n`.
@@ -121,7 +123,7 @@
 /// @example scss - Usage
 ///   @debug k-list-set-nth( ( "foo", "bar" ), 1, "baz" ); // => "baz, bar"
 @function k-list-set-nth( $list, $n, $value ) {
-    @return set-nth( $list, $n, $value );
+    @return list.set-nth( $list, $n, $value );
 }
 
 /// Combines two lists into a single list of two-item lists.
@@ -132,5 +134,5 @@
 /// @example scss - Usage
 ///   @debug k-list-zip( ( "foo", "bar" ), ( "baz", "qux" ) ); // => ((foo, baz), (bar, qux))
 @function k-list-zip( $lists... ) {
-    @return zip( $lists... );
+    @return list.zip( $lists... );
 }

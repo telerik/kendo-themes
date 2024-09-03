@@ -1,27 +1,30 @@
+@use "sass:map";
+@use "../spacing/index.import.scss" as *;
+
 /// The none border radius used across the Components.
 /// @group radii
-$kendo-border-radius-none: k-map-get($kendo-spacing, 0) !default;
+$kendo-border-radius-none: map.get($kendo-spacing, 0) !default;
 /// The extra small border radius used across the Components.
 /// @group radii
-$kendo-border-radius-xs: k-map-get($kendo-spacing, 1px) !default;
+$kendo-border-radius-xs: map.get($kendo-spacing, 1px) !default;
 /// The small border radius used across the Components.
 /// @group radii
-$kendo-border-radius-sm: k-map-get($kendo-spacing, 0.5) !default;
+$kendo-border-radius-sm: map.get($kendo-spacing, 0.5) !default;
 /// The medium border radius used across the Components.
 /// @group radii
-$kendo-border-radius-md: k-map-get($kendo-spacing, 1) !default;
+$kendo-border-radius-md: map.get($kendo-spacing, 1) !default;
 /// The large border radius used across the Components.
 /// @group radii
-$kendo-border-radius-lg: k-map-get($kendo-spacing, 1.5) !default;
+$kendo-border-radius-lg: map.get($kendo-spacing, 1.5) !default;
 /// The extra large border radius used across the Components.
 /// @group radii
-$kendo-border-radius-xl: k-map-get($kendo-spacing, 2) !default;
+$kendo-border-radius-xl: map.get($kendo-spacing, 2) !default;
 /// The third largest border radius used across the Components.
 /// @group radii
-$kendo-border-radius-xxl: k-map-get($kendo-spacing, 3) !default;
+$kendo-border-radius-xxl: map.get($kendo-spacing, 3) !default;
 /// The second largest border radius used across the Components.
 /// @group radii
-$kendo-border-radius-xxxl: k-map-get($kendo-spacing, 4) !default;
+$kendo-border-radius-xxxl: map.get($kendo-spacing, 4) !default;
 /// The largest border radius used across the Components.
 /// @group radii
 $kendo-border-radius-full: 9999px !default;
@@ -44,11 +47,11 @@ $kendo-border-radii: $_default-border-radii !default;
 
 /// The global radii Map.
 /// @group radii
-$kendo-border-radii: k-map-merge($_default-border-radii, $kendo-border-radii);
+$kendo-border-radii: map.merge($_default-border-radii, $kendo-border-radii);
 
 
 @function k-border-radius($key) {
-    $_border-radius: k-map-get($kendo-border-radii, $key);
+    $_border-radius: map.get($kendo-border-radii, $key);
     @return var(--kendo-border-radius-#{$key}, $_border-radius);
 }
 
