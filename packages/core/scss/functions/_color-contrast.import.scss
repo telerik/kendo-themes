@@ -1,3 +1,7 @@
+@use "./_list.import.scss" as list;
+@use "./_math.import.scss" as math;
+@use "./_color.import.scss" as color;
+
 // Adapted from https://gist.github.com/sgomes/ccc72f71137fe29039c92c0a9fe9b657
 // Adapted from https://github.com/twbs/bootstrap/commit/03908ea37a55eaa44c12ce5694dddc1630c980b3
 
@@ -296,9 +300,9 @@ $wcag-light: white !default;
 /// @link https://www.w3.org/TR/WCAG/#dfn-relative-luminance
 /// @link https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
 @function k-color-luminance( $color ) {
-    $red: k-list-nth( $_linear-channel-values, k-color-red( $color ) + 1 );
-    $green: k-list-nth( $_linear-channel-values, k-color-green( $color ) + 1 );
-    $blue: k-list-nth( $_linear-channel-values, k-color-blue( $color ) + 1 );
+    $red: list.k-list-nth( $_linear-channel-values, color.k-color-red( $color ) + 1 );
+    $green: list.k-list-nth( $_linear-channel-values, color.k-color-green( $color ) + 1 );
+    $blue: list.k-list-nth( $_linear-channel-values, color.k-color-blue( $color ) + 1 );
 
     @return .2126 * $red + .7152 * $green + .0722 * $blue;
 }
@@ -316,7 +320,7 @@ $wcag-light: white !default;
     $backLum: k-color-luminance( $background ) + .05;
     $foreLum: k-color-luminance( $foreground ) + .05;
 
-    @return k-math-div( k-math-max( $backLum, $foreLum ), k-math-min( $backLum, $foreLum ) );
+    @return math.k-math-div( math.k-math-max( $backLum, $foreLum ), math.k-math-min( $backLum, $foreLum ) );
 }
 
 /// Checks if a color is dark
@@ -371,11 +375,11 @@ $wcag-light: white !default;
 
 // Legacy functions
 @function k-yiq-luma-information($color) {
-    $r: k-color-red($color);
-    $g: k-color-green($color);
-    $b: k-color-blue($color);
+    $r: color.k-color-red($color);
+    $g: color.k-color-green($color);
+    $b: color.k-color-blue($color);
 
-    $yiq: k-math-div( (($r * 299) + ($g * 587) + ($b * 114)), 1000 );
+    $yiq: math.k-math-div( (($r * 299) + ($g * 587) + ($b * 114)), 1000 );
 
     @return $yiq;
 }

@@ -1,3 +1,5 @@
+@use "./_meta.import.scss" as *;
+
 /// Returns the value at `$key` in `$map`.
 /// @param {Map} $map - The map to get the value from.
 /// @param {Any} $key - The key to get the value for.
@@ -125,7 +127,7 @@
     @each $key, $value in $map {
         $_key-neg: "-" + $key;
 
-        @if( k-meta-type-of($value) == number and $value != 0) {
+        @if( k-meta-type-of($value) == number and $value != 0 and $_key-neg != "-0" ) {
             $_map-neg: k-map-set($_map-neg, $_key-neg, -1 * $value );
         }
     }
