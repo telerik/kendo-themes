@@ -1,6 +1,5 @@
-@import "./_functions.import.scss";
-@import "./_mixins.import.scss";
-@import "./_swatch.scss";
-@import "./_constants.scss";
-@import "./_swatch-legacy.scss";
-// @import "./_palettes.scss";
+@forward "./_palettes.scss";
+@forward "./_swatch.scss";
+@forward "./_functions.import.scss";
+@forward "./_mixins.import.scss";
+@forward "./_constants.scss";

@@ -1,4 +1,6 @@
-@import "../functions/index.import.scss";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:math";
 
 /// The base font size across all components.
 /// @group typography
@@ -24,7 +26,7 @@ $kendo-font-size-xl: 1.25rem !default;
 
 /// The base line height across all components.
 /// @group typography
-$kendo-line-height: k-math-div( 20, 14 ) !default;
+$kendo-line-height: math.div( 20, 14 ) !default;
 /// The extra small line height across all components.
 /// @group typography
 $kendo-line-height-xs: 1 !default;
@@ -161,31 +163,31 @@ $kendo-font-sizes: $_default-font-sizes !default;
 
 /// The font sizes map
 /// @group typography
-$kendo-font-sizes: k-map-merge( $_default-font-sizes, $kendo-font-sizes );
+$kendo-font-sizes: map.merge( $_default-font-sizes, $kendo-font-sizes );
 
 $kendo-line-heights: $_default-line-heights !default;
 
 /// The line heights map
 /// @group typography
-$kendo-line-heights: k-map-merge( $_default-line-heights, $kendo-line-heights );
+$kendo-line-heights: map.merge( $_default-line-heights, $kendo-line-heights );
 
 $kendo-font-weights: $_default-font-weights !default;
 
 /// The font weights map
 /// @group typography
-$kendo-font-weights: k-map-merge( $_default-font-weights, $kendo-font-weights );
+$kendo-font-weights: map.merge( $_default-font-weights, $kendo-font-weights );
 
 $kendo-letter-spacings: $_default-letter-spacings !default;
 
 /// The letter spacings map
 /// @group typography
-$kendo-letter-spacings: k-map-merge( $_default-letter-spacings, $kendo-letter-spacings );
+$kendo-letter-spacings: map.merge( $_default-letter-spacings, $kendo-letter-spacings );
 
 $kendo-font-families: $_default-font-families !default;
 
 /// The font families map
 /// @group typography
-$kendo-font-families: k-map-merge( $_default-font-families, $kendo-font-families );
+$kendo-font-families: map.merge( $_default-font-families, $kendo-font-families );
 
 @mixin typography( $font-size: null, $font-family: null, $line-height: null, $font-weight: null, $letter-spacing: null ) {
     font-size: $font-size;
@@ -199,7 +201,7 @@ $kendo-font-families: k-map-merge( $_default-font-families, $kendo-font-families
 @mixin kendo-core--typography--styles() {
     :root {
 
-        --kendo-font-family: #{k-meta-inspect($kendo-font-family)};
+        --kendo-font-family: #{meta.inspect($kendo-font-family)};
         --kendo-font-size: #{$kendo-font-size};
         --kendo-line-height: #{$kendo-line-height};
         --kendo-font-weight: #{$kendo-font-weight};

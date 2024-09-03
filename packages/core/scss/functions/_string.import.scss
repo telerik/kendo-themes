@@ -1,4 +1,7 @@
-$svg-escaped-characters: (
+@use "sass:meta";
+@use "sass:string";
+
+$_kendo-svg-escaped-characters: (
     ("%", "%25"),
     ("<", "%3c"),
     (">", "%3e"),
@@ -6,6 +9,11 @@ $svg-escaped-characters: (
     ("(", "%28"),
     (")", "%29")
 ) !default;
+
+$_kendo-escape-class-name: (
+    ".": "\\.",
+    "/": "\\/"
+);
 
 /// Returns the first index of `$substring` in `$string`, or `null` if `$string` doesn’t contain `$substring`.
 /// @param {String} $string - The string to process.
@@ -15,7 +23,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-index( "foo bar", "bar" ); // => 5
 @function k-string-index( $string, $substring ) {
-    @return str-index( $string, $substring );
+    @return string.index( $string, $substring );
 }
 
 /// Returns a copy of `$string` with `$insert` inserted at `$index`.
@@ -27,7 +35,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-insert( "foo bar", "baz", 5 ); // => "foo baz bar"
 @function k-string-insert( $string, $insert, $index ) {
-    @return str-insert( $string, $insert, $index );
+    @return string.insert( $string, $insert, $index );
 }
 
 /// Returns the length of `$string`.
@@ -37,7 +45,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-length( "foo bar" ); // => 7
 @function k-string-length( $string ) {
-    @return str-length( $string );
+    @return string.length( $string );
 }
 
 /// Returns a copy of `$string` with quotes added.
@@ -47,7 +55,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-quote( "foo bar" ); // => "foo bar"
 @function k-string-quote( $string ) {
-    @return quote( $string );
+    @return string.quote( $string );
 }
 
 /// Returns a copy of `$string` with all occurrences of `$search`
@@ -62,7 +70,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-replace( "foo bar", "bar", "baz" ); // => "foo baz"
 @function k-string-replace( $string, $search, $replace: "" ) {
-    @if k-meta-type-of( $string ) == number {
+    @if meta.type-of( $string ) == number {
         $string: $string + "";
     }
 
@@ -84,7 +92,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-slice( "foo bar", 5 ); // => "bar"
 @function k-string-slice( $string, $start-at, $end-at: -1 ) {
-    @return str-slice( $string, $start-at, $end-at );
+    @return string.slice( $string, $start-at, $end-at );
 }
 
 /// Returns a copy of `$string` with all uppercase letters converted to lowercase.
@@ -94,7 +102,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-to-lower-case( "FOO BAR" ); // => "foo bar"
 @function k-string-to-lower-case( $string ) {
-    @return to-lower-case( $string );
+    @return string.to-lower-case( $string );
 }
 
 /// Returns a copy of `$string` with all lowercase letters converted to uppercase.
@@ -104,7 +112,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-to-upper-case( "foo bar" ); // => "FOO BAR"
 @function k-string-to-upper-case( $string ) {
-    @return to-upper-case( $string );
+    @return string.to-upper-case( $string );
 }
 
 /// Returns a unique identifier.
@@ -113,7 +121,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-unique-id(); // => UNIQUE_ID
 @function k-string-unique-id() {
-    @return unique-id();
+    @return string.unique-id();
 }
 
 /// Returns a copy of `$string` with quotes removed.
@@ -123,7 +131,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-unquote( "foo bar" ); // => foo bar
 @function k-string-unquote( $string ) {
-    @return unquote( $string );
+    @return string.unquote( $string );
 }
 
 
@@ -139,17 +147,30 @@ $svg-escaped-characters: (
 }
 
 // See https://codepen.io/kevinweber/pen/dXWoRw
-@function escape-svg($string) {
+@function k-escape-svg($string) {
     @if k-string-index($string, "data:image/svg+xml") {
-        @each $char, $encoded in $svg-escaped-characters {
+        @each $char, $encoded in $_kendo-svg-escaped-characters {
             // Do not escape the url brackets
             @if k-string-index($string, "url(") == 1 {
-                $string: url("#{str-replace(k-string-slice($string, 6, -3), $char, $encoded)}");
+                $string: url("#{k-string-replace(k-string-slice($string, 6, -3), $char, $encoded)}");
             } @else {
-                $string: str-replace($string, $char, $encoded);
+                $string: k-string-replace($string, $char, $encoded);
             }
         }
     }
 
     @return $string;
+}
+
+/// Escapes special characters in a class name
+/// @param {String} $text - The string to escape
+/// @return {String} - The escaped string
+@function k-escape-class-name( $text ) {
+    $_text: $text;
+
+    @each $char, $rep in $_kendo-escape-class-name {
+        $_text: k-string-replace( $_text, k-string-unquote( $char ), k-string-unquote( $rep ) );
+    }
+
+    @return $_text;
 }

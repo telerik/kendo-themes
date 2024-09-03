@@ -1,28 +1,37 @@
-@import "./_palettes.scss";
+@use "sass:map";
+@use "sass:list";
+@use "sass:string";
+@use "sass:meta";
+@use "../functions/_string.import.scss" as *;
+@use "../functions/_map.import.scss" as *;
+@use "../functions/_color.import.scss" as *;
+@use "./_palettes.scss" as *;
+@use "./_swatch.scss" as *;
+@use "../_variables.scss" as *;
 
 @function k-generate-theme-variant( $variant, $matrix, $src-palette-name ) {
     $result: ();
 
     @each $ui-state, $indices in $matrix {
         $prefix: if( $ui-state == DEFAULT, "", "#{$ui-state}-" );
-        $indices-count: k-list-length( $indices );
+        $indices-count: list.length( $indices );
 
-        $bg-prop: k-list-nth( $indices, 1 );
-        $text-prop: k-list-nth( $indices, 2 );
-        $border-prop: k-list-nth( $indices, 3 );
-        $gradient-prop: if( $indices-count > 3, k-list-nth( $indices, 4 ), null );
-        $shadow-prop: if( $indices-count > 4, k-list-nth( $indices, 5 ), null );
-        $outline-prop: if( $indices-count > 5, k-list-nth( $indices, 6 ), null );
+        $bg-prop: list.nth( $indices, 1 );
+        $text-prop: list.nth( $indices, 2 );
+        $border-prop: list.nth( $indices, 3 );
+        $gradient-prop: if( $indices-count > 3, list.nth( $indices, 4 ), null );
+        $shadow-prop: if( $indices-count > 4, list.nth( $indices, 5 ), null );
+        $outline-prop: if( $indices-count > 5, list.nth( $indices, 6 ), null );
 
         // Take value from the palette only if it is a number
-        $bg: if( k-meta-type-of( $bg-prop ) == number, k-get-theme-color( $src-palette-name, $bg-prop ), $bg-prop );
-        $text: if( k-meta-type-of( $text-prop ) == number, k-get-theme-color( $src-palette-name, $text-prop ), $text-prop );
-        $border: if( k-meta-type-of( $border-prop ) == number, k-get-theme-color( $src-palette-name, $border-prop ), $border-prop );
+        $bg: if( meta.type-of( $bg-prop ) == number, k-get-theme-color( $src-palette-name, $bg-prop ), $bg-prop );
+        $text: if( meta.type-of( $text-prop ) == number, k-get-theme-color( $src-palette-name, $text-prop ), $text-prop );
+        $border: if( meta.type-of( $border-prop ) == number, k-get-theme-color( $src-palette-name, $border-prop ), $border-prop );
         $gradient: $gradient-prop;
         $shadow: $shadow-prop;
         $outline: $outline-prop;
 
-        $result: k-map-merge($result, (
+        $result: map.merge($result, (
             #{$prefix}bg: $bg,
             #{$prefix}text: $text,
             #{$prefix}border: $border,
@@ -48,25 +57,25 @@
     // @debug $palette-matrix;
 
     @each $variant, $definition in $theme-matrix {
-        $tc-index: k-string-index( $variant, "THEME_COLOR" );
-        $src-palette-name: k-map-get( $definition, PALETTE );
-        $matrix: k-map-remove( $definition, PALETTE );
+        $tc-index: string.index( $variant, "THEME_COLOR" );
+        $src-palette-name: map.get( $definition, PALETTE );
+        $matrix: map.remove( $definition, PALETTE );
 
         @if ($tc-index == null ) { // stylelint-disable-line
             $tmp-result: k-generate-theme-variant( $variant, $matrix, $src-palette-name );
-            $result: k-map-merge( $result, $tmp-result);
+            $result: map.merge( $result, $tmp-result);
         } @else {
             @each $color, $palette in $palette-matrix {
                 $variant-name: k-string-replace( $variant, THEME_COLOR, $color);
-                $palette-name: k-string-unquote($src-palette-name + "");
+                $palette-name: string.unquote($src-palette-name + "");
 
                 @if ($palette-name == THEME_COLOR) {
                     $palette-name: k-string-replace( $palette-name, THEME_COLOR, $color );
-                    $palette-name: k-map-get( $palette-matrix, $palette-name );
+                    $palette-name: map.get( $palette-matrix, $palette-name );
                 }
 
                 $tmp-result: k-generate-theme-variant( $variant-name, $matrix, $palette-name );
-                $result: k-map-merge( $result, $tmp-result );
+                $result: map.merge( $result, $tmp-result );
             }
         }
     }
@@ -76,15 +85,15 @@
 
 
 @function k-get-theme-palette( $name ) {
-    @return k-map-get( $kendo-palettes, $name );
+    @return map.get( $kendo-palettes, $name );
 }
 
 @function k-get-theme-color( $palette, $hue ) {
-    @if ( k-meta-type-of( $palette ) == "map" ) {
-        @return k-map-get( $palette, $hue );
+    @if ( meta.type-of( $palette ) == "map" ) {
+        @return map.get( $palette, $hue );
     }
 
-    @return k-map-get( k-get-theme-palette( $palette ), $hue );
+    @return map.get( k-get-theme-palette( $palette ), $hue );
 }
 
 @function k-get-theme-color-var( $name, $fallback: "inherit", $prefix: "kendo-" ) {
@@ -113,7 +122,7 @@
         on-color-disabled: color-mix(in srgb, k-color( on-#{$color} ) 46%, transparent)
     );
 
-    @return if( k-map-has-key( $map, $name ), k-map-get( $map, $name ), $name );
+    @return if( map.has-key( $map, $name ), map.get( $map, $name ), $name );
 };
 
 @function k-generate-theme-variation( $theme-color, $source-palette-name, $mapping ) {
@@ -122,14 +131,14 @@
     @each $ui-state, $indices in $mapping {
         $prefix: if( $ui-state == normal, '', '#{$ui-state}-' );
 
-        $bg-prop: k-list-nth($indices, 1);
-        $text-prop: k-list-nth($indices, 2);
-        $border-prop: k-list-nth($indices, 3);
+        $bg-prop: list.nth($indices, 1);
+        $text-prop: list.nth($indices, 2);
+        $border-prop: list.nth($indices, 3);
 
         // Take value from the palette only if it is a number
-        $bg: if($kendo-enable-color-system, k-get-swatch-color( $bg-prop, $source-palette-name ), if( k-meta-type-of($bg-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$bg-prop} ), $bg-prop ));
-        $text: if($kendo-enable-color-system, k-get-swatch-color( $text-prop, $source-palette-name ), if( k-meta-type-of($text-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$text-prop} ), $text-prop ));
-        $border: if($kendo-enable-color-system, k-get-swatch-color( $border-prop, $source-palette-name ), if( k-meta-type-of($border-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$border-prop} ), $border-prop ));
+        $bg: if($kendo-enable-color-system, k-get-swatch-color( $bg-prop, $source-palette-name ), if( meta.type-of($bg-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$bg-prop} ), $bg-prop ));
+        $text: if($kendo-enable-color-system, k-get-swatch-color( $text-prop, $source-palette-name ), if( meta.type-of($text-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$text-prop} ), $text-prop ));
+        $border: if($kendo-enable-color-system, k-get-swatch-color( $border-prop, $source-palette-name ), if( meta.type-of($border-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$border-prop} ), $border-prop ));
 
 
         $temp: k-map-deep-merge( $temp, (
@@ -139,9 +148,9 @@
         ));
 
         // Add outline if provided in the map
-        @if ( k-list-length($indices) > 3 ) {
-            $outline-prop: k-list-nth($indices, 4);
-            $outline: if($kendo-enable-color-system, k-get-swatch-color( $outline-prop, $source-palette-name ), if( k-meta-type-of($outline-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$outline-prop} ), $outline-prop ));
+        @if ( list.length($indices) > 3 ) {
+            $outline-prop: list.nth($indices, 4);
+            $outline: if($kendo-enable-color-system, k-get-swatch-color( $outline-prop, $source-palette-name ), if( meta.type-of($outline-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$outline-prop} ), $outline-prop ));
 
             $temp: k-map-deep-merge( $temp, (
                 #{$prefix}outline: $outline
@@ -179,3 +188,143 @@
         @return null;
     }
 }
+
+/// Generates all color variations of a given main color
+/// @param {String} $name - The name of the main color
+/// @param {Color} $color - The color value to be assigned to the main color
+/// @param {String} $theme - The theme the colors will be generated for
+/// @return {Map} - A map with the generated keys and values
+///
+/// @group color-system
+@function k-generate-color-variations( $name, $color, $theme: null ) {
+    $result: ();
+
+    // DataViz
+    @if (
+            $name == 'series-a' or
+            $name == 'series-b' or
+            $name == 'series-c' or
+            $name == 'series-d' or
+            $name == 'series-e' or
+            $name == 'series-f'
+        ) {
+        $_variations: (
+            #{$name}: $color,
+            #{$name}-bold: k-color-mix(black, $color, 25%),
+            #{$name}-bolder: k-color-mix(black, $color, 50%),
+            #{$name}-subtle: k-color-mix(white, $color, 25%),
+            #{$name}-subtler: k-color-mix(white, $color, 50%),
+        );
+
+        $result: map.merge($result, $_variations);
+    } @else {
+        // Default
+        @if ( $theme == 'default' or $theme == null ) { // stylelint-disable-line
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 4% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 13% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-try-shade( $color, 0.5 ),
+                #{$name}-active: k-try-shade( $color, 1.5 ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 21% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 75% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 75% ), k-contrast-legacy( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 75% ), k-try-shade( $color, 25% )),
+            );
+
+            $result: map.merge($result, $_variations);
+        }
+
+        // Bootstrap
+        @if ( $theme == 'bootstrap' ) {
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-tint( $color, 30% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', $color, k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-color-darken( $color, 7.5% ),
+                #{$name}-active: k-color-darken( $color, 10% ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 21% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 84% ), k-contrast-legacy( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
+            );
+
+            $result: map.merge($result, $_variations);
+        }
+
+        // Material
+        @if ( $theme == 'material' ) {
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 12% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 16% ), k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 24% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-try-shade( $color, 0.5 ),
+                #{$name}-active: k-try-shade( $color, 1.5 ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 32% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 87% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 87% ), k-contrast-color( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 87% ), k-try-shade( $color, 50% )),
+            );
+
+            $result: map.merge($result, $_variations);
+        }
+
+        // Fluent
+        @if ( $theme == 'fluent' ) {
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-shade( $color, 2% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', k-try-shade( $color, 8% ), k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 12% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-try-shade( $color, 0.5 ),
+                #{$name}-active: k-try-shade( $color, 1.5 ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 18% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 74% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 86% ), k-contrast-legacy( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 86% ), k-try-shade( $color, 25% )),
+            );
+
+            $result: map.merge($result, $_variations);
+        }
+
+        // Classic
+        @if ( $theme == 'classic' ) {
+            $_variations: (
+                #{$name}-subtle: if( $name == 'base', k-try-tint( $color, 20% ), k-try-tint( $color, 80% )),
+                #{$name}-subtle-hover: if( $name == 'base', k-try-tint( $color, 8% ), k-try-tint($color, 65% )),
+                #{$name}-subtle-active: if( $name == 'base', k-try-shade( $color, 6% ), k-try-tint( $color, 50% )),
+                #{$name}: $color,
+                #{$name}-hover: k-try-shade( $color, 1 ),
+                #{$name}-active: k-try-shade( $color, 2 ),
+                #{$name}-emphasis: if( $name == 'base', k-try-shade( $color, 14% ), k-try-tint( $color, 25% )),
+                #{$name}-on-subtle: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 65% )),
+                on-#{$name}: if( $name == 'base', k-try-shade( $color, 84% ), k-contrast-legacy( $color )),
+                #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
+            );
+
+            $result: map.merge($result, $_variations);
+        }
+    }
+
+    @return $result;
+}
+
+/// Takes a color name from the $kendo-colors map as a parameter
+/// and returns a CSS variable with the actual color as a fallback
+/// @param {String} $key - The name of a color/key in the $kendo-colors map
+/// @return {String} - CSS variable with the actual color as a fallback
+///
+/// @group color-system
+@function k-color($key) {
+    $_color: map.get($kendo-colors, $key);
+
+    @if ($_color) {
+        @return var(--kendo-color-#{$key}, $_color);
+    } @else {
+        @error "Color Variable \`#{$key}\` does not exists in the color collection.";
+    }
+}
+
