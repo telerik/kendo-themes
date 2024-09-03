@@ -1,3 +1,5 @@
+@use "./_string.import.scss" as *;
+
 $_kendo-svg-escaped-characters: (
     ("%", "%25"),
     ("<", "%3c"),

@@ -1,7 +1,4 @@
-@import "./_functions.import.scss";
-
-// Config
-$kendo-enable-color-system: true !default;
+@use "sass:map";
 
 // Colors
 $_default_colors: (
@@ -175,7 +172,7 @@ $_default_colors: (
 /// The global default Colors map.
 /// @group color-system
 $kendo-colors: $_default-colors !default;
-$kendo-colors: k-map-merge($_default-colors, $kendo-colors);
+$kendo-colors: map.merge($_default-colors, $kendo-colors);
 
 @mixin color-system--styles() {
     :root {

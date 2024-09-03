@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 $svg-escaped-characters: (
     ("%", "%25"),
     ("<", "%3c"),
@@ -62,7 +64,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-replace( "foo bar", "bar", "baz" ); // => "foo baz"
 @function k-string-replace( $string, $search, $replace: "" ) {
-    @if k-meta-type-of( $string ) == number {
+    @if meta.type-of( $string ) == number {
         $string: $string + "";
     }
 

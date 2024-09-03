@@ -1,3 +1,8 @@
+@use "../mixins/_disabled.scss" as *;
+@use "../color-system/_swatch-legacy.scss" as *;
+@use "../spacing/index.import.scss" as *;
+@use "../_variables.scss" as *;
+
 @mixin kendo-core--styles--base() {
 
     // Disabled state
