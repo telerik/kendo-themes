@@ -1,3 +1,6 @@
+@use "../_variables.scss" as *;
+@use "./_math.import.scss" as math;
+
 $kendo-light-color-level-step: 8% !default;
 $kendo-dark-color-level-step: 16% !default;
 
@@ -6,7 +9,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @access private
 $kendo-color-level-step: 8% !default;
 
-@function k-color-level( $color, $level: 0 ) {
+@function k-color-level( $color, $level: 0) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
     $_color-level-step: if( $_dark-theme, $kendo-dark-color-level-step, $kendo-light-color-level-step );
 
@@ -15,14 +18,14 @@ $kendo-color-level-step: 8% !default;
     }
 
     $base: if( $level < 0, #ffffff, #000000 );
-    $level: k-math-abs( $level );
+    $level: math.k-math-abs( $level );
 
 
-    @if ( k-math-unit($level) == "%" ) {
+    @if ( math.k-math-unit($level) == "%" ) {
         @return k-color-mix( $base, $color, $level );
     }
 
-    @return k-color-mix( $base, $color, k-math-clamp( $level * $_color-level-step, 0%, 100% ) );
+    @return k-color-mix( $base, $color, math.k-math-clamp( $level * $_color-level-step, 0%, 100% ) );
 }
 
 /// Makes a color lighter by mixing it with white

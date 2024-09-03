@@ -1,3 +1,5 @@
+@use "sass:list";
+
 /// A list of exported modules.
 /// @access private
 $_kendo-imported-modules: () !default;
@@ -6,9 +8,9 @@ $_kendo-imported-modules: () !default;
 /// @access public
 /// @param {String} $name - The name of the exported module.
 /// @require $_kendo-imported-modules
-@mixin exports( $name ) {
-    @if (k-list-index( $_kendo-imported-modules, $name ) == null) { // stylelint-disable-line
-        $_kendo-imported-modules: k-list-append( $_kendo-imported-modules, $name ) !global;
+@mixin import-once( $name ) {
+    @if (list.index( $_kendo-imported-modules, $name ) == null) { // stylelint-disable-line
+        $_kendo-imported-modules: list.append( $_kendo-imported-modules, $name ) !global;
         @content;
     }
 }

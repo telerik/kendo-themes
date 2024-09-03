@@ -1,3 +1,6 @@
+@use "../color-system/_swatch.scss" as *;
+@use "sass:map";
+
 /// Generates all color variations of a given main color
 /// @param {String} $name - The name of the main color
 /// @param {Color} $color - The color value to be assigned to the main color
@@ -9,7 +12,7 @@
     $result: ();
 
     // DataViz
-    @if ( 
+    @if (
             $name == 'series-a' or
             $name == 'series-b' or
             $name == 'series-c' or
@@ -25,7 +28,7 @@
             #{$name}-subtler: k-color-mix(white, $color, 50%),
         );
 
-        $result: k-map-merge($result, $_variations);
+        $result: map.merge($result, $_variations);
     } @else {
         // Default
         @if ( $theme == 'default' or $theme == null ) { // stylelint-disable-line
@@ -42,7 +45,7 @@
                 #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 75% ), k-try-shade( $color, 25% )),
             );
 
-            $result: k-map-merge($result, $_variations);
+            $result: map.merge($result, $_variations);
         }
 
         // Bootstrap
@@ -60,7 +63,7 @@
                 #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
             );
 
-            $result: k-map-merge($result, $_variations);
+            $result: map.merge($result, $_variations);
         }
 
         // Material
@@ -78,7 +81,7 @@
                 #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 87% ), k-try-shade( $color, 50% )),
             );
 
-            $result: k-map-merge($result, $_variations);
+            $result: map.merge($result, $_variations);
         }
 
         // Fluent
@@ -96,7 +99,7 @@
                 #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 86% ), k-try-shade( $color, 25% )),
             );
 
-            $result: k-map-merge($result, $_variations);
+            $result: map.merge($result, $_variations);
         }
 
         // Classic
@@ -114,7 +117,7 @@
                 #{$name}-on-surface: if( $name == 'base', k-try-shade( $color, 84% ), k-try-shade( $color, 25% )),
             );
 
-            $result: k-map-merge($result, $_variations);
+            $result: map.merge($result, $_variations);
         }
     }
 
@@ -128,7 +131,7 @@
 ///
 /// @group color-system
 @function k-color($key) {
-    $_color: k-map-get($kendo-colors, $key);
+    $_color: map.get($kendo-colors, $key);
 
     @if ($_color) {
         @return var(--kendo-color-#{$key}, $_color);

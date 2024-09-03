@@ -1,4 +1,5 @@
-@import "./_palettes.scss";
+@use "./_palettes.scss" as *;
+@use "../_variables.scss" as *;
 
 @function k-generate-theme-variant( $variant, $matrix, $src-palette-name ) {
     $result: ();
