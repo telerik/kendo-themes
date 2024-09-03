@@ -6,11 +6,13 @@
 // Dependencies
 @use "../badge/index.scss" as *;
 @use "../icon/index.scss" as *;
+@use "../core/index.scss" as *;
 
 // Expose
 @mixin button-styles() {
     @if not($_button-styles) {
         $_button-styles: true !global;
+        @include core-styles();
         @include badge-styles();
         @include icon-styles();
         @include kendo-button--layout();

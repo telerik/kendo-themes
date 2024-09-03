@@ -334,34 +334,14 @@
 
 // Output styles
 @mixin styles() {
-    // Core
-    @include kendo-core--styles();
 
     // Core css variables
     @include core-styles();
 
-    // Color system css variables
-    @include color-system-styles();
-
-    // Spacing
-    @include kendo-spacing--styles();
-
-    // Elevation
-    @include kendo-elevation--styles();
     @include elevation--styles-legacy();
-
-    // Core typography
-    @include kendo-core--typography--styles();
-    // Radii
-    @include kendo-border-radius--styles();
-
-    // Typography
     @include typography-styles();
-
-    // Generic content
     @include icon-styles();
     @include messagebox-styles();
-
 
     // Primitive components
     @include action-buttons-styles();

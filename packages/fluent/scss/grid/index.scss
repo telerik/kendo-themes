@@ -33,11 +33,7 @@
 @mixin grid-styles() {
     @if not($_grid-styles) {
         $_grid-styles: true !global;
-        @include kendo-grid--layout();
-        @include kendo-grid--theme();
-        @include kendo-utils--interactivity--touch-action();
-        @include kendo-utils--interactivity--cursor();
-        @include kendo-utils--layout--display();
+        @include core-styles();
         @include action-buttons-styles();
         @include autocomplete-styles();
         @include badge-styles();
@@ -61,5 +57,11 @@
         @include textbox-styles();
         @include toolbar-styles();
         @include validator-styles();
+        @include kendo-utils--interactivity--touch-action();
+        @include kendo-utils--interactivity--cursor();
+        @include kendo-utils--layout--display();
+        @include kendo-grid--layout();
+        @include kendo-grid--theme();
+
     }
 }

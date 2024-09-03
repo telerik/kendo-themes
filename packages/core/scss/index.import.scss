@@ -8,3 +8,15 @@
 @import "./spacing/index.import.scss";
 @import "./border-radii/index.import.scss";
 @import "./_variables.scss";
+
+@mixin core-styles() {
+    @if not($_core-styles) {
+        $_core-styles: true !global;
+        @include kendo-core--styles();
+        @include color-system-styles();
+        @include kendo-spacing--styles();
+        @include kendo-elevation--styles();
+        @include kendo-core--typography--styles();
+        @include kendo-border-radius--styles();
+    }
+}
