@@ -1,7 +1,7 @@
-@import "./_background-clip.scss";
-@import "./_background-color.scss";
-@import "./_background-position.scss";
-@import "./_background-size.scss";
+@use "./_background-clip.scss" as *;
+@use "./_background-color.scss" as *;
+@use "./_background-position.scss" as *;
+@use "./_background-size.scss" as *;
 
 
 @mixin kendo-utils--background() {

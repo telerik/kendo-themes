@@ -16,15 +16,17 @@
 /// @group grid-template-rows
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-grid-template-rows"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--grid-template-rows() {
-    @include module-render("utils-flex-grid-grid-template-rows") {
+    @include import-once("utils-flex-grid-grid-template-rows") {
 
         // Grid template rows utility classes
-        $kendo-utils-grid-template-rows: k-map-get( $kendo-utils, "grid-template-rows" ) !default;
+        $kendo-utils-grid-template-rows: map.get( $kendo-utils, "grid-template-rows" ) !default;
         @include generate-utils( grid-rows, grid-template-rows, $kendo-utils-grid-template-rows );
 
     }

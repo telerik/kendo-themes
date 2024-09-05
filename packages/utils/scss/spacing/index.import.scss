@@ -1,8 +1,10 @@
-@import "@progress/kendo-theme-core/scss/spacing/index.import.scss";
+@use "@progress/kendo-theme-core/scss/spacing/index.import.scss" as *;
 
-@import "./_margin.scss";
-@import "./_padding.scss";
-@import "./_space-between.scss";
+@forward "./_margin.scss";
+
+@use "./_margin.scss" as *;
+@use "./_padding.scss" as *;
+@use "./_space-between.scss" as *;
 
 
 @mixin kendo-utils--spacing() {

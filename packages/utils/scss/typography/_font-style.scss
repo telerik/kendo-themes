@@ -10,15 +10,17 @@
 /// @group font-style
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-typography-font-style"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--typography--font-style() {
-    @include module-render("utils-typography-font-style") {
+    @include import-once("utils-typography-font-style") {
 
         // Font style utility classes
-        $kendo-utils-font-style: k-map-get( $kendo-utils, "font-style" ) !default;
+        $kendo-utils-font-style: map.get( $kendo-utils, "font-style" ) !default;
         @include generate-utils( font-style, font-style, $kendo-utils-font-style, $css-var: "font-style" );
 
     }

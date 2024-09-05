@@ -1,16 +1,30 @@
-@import "./_aspect-ratio.scss";
-@import "./_box-sizing.scss";
-@import "./_clear.scss";
-@import "./_columns.scss";
-@import "./_display.scss";
-@import "./_float.scss";
-@import "./_object-fit.scss";
-@import "./_object-position.scss";
-@import "./_overflow.scss";
-@import "./_placement.scss";
-@import "./_position.scss";
-@import "./_visibility.scss";
-@import "./_zindex.scss";
+@forward "./_aspect-ratio.scss";
+@forward "./_box-sizing.scss";
+@forward "./_clear.scss";
+@forward "./_columns.scss";
+@forward "./_display.scss";
+@forward "./_float.scss";
+@forward "./_object-fit.scss";
+@forward "./_object-position.scss";
+@forward "./_overflow.scss";
+@forward "./_placement.scss";
+@forward "./_position.scss";
+@forward "./_visibility.scss";
+@forward "./_zindex.scss";
+
+@use "./_aspect-ratio.scss" as *;
+@use "./_box-sizing.scss" as *;
+@use "./_clear.scss" as *;
+@use "./_columns.scss" as *;
+@use "./_display.scss" as *;
+@use "./_float.scss" as *;
+@use "./_object-fit.scss" as *;
+@use "./_object-position.scss" as *;
+@use "./_overflow.scss" as *;
+@use "./_placement.scss" as *;
+@use "./_position.scss" as *;
+@use "./_visibility.scss" as *;
+@use "./_zindex.scss" as *;
 
 
 @mixin kendo-utils--layout() {

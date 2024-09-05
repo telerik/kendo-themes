@@ -1,10 +1,8 @@
-@import "@progress/kendo-theme-core/scss/index.import.scss";
-
-// Register
-@include module-register((name: "utils-typography-letter-spacing"));
+@use "@progress/kendo-theme-core/scss/index.import.scss" as *;
+@use "../_globals.scss" as *;
 
 @mixin kendo-utils--typography--letter-spacing() {
-    @include module-render("utils-typography-letter-spacing") {
+    @include import-once("utils-typography-letter-spacing") {
 
         // Letter spacing utility classes
         @include generate-utils( letter-spacing, letter-spacing, $kendo-letter-spacings, $css-var: "letter-spacing" );

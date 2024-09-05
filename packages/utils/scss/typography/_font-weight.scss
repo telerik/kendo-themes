@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-core/scss/index.import.scss";
+@use "@progress/kendo-theme-core/scss/index.import.scss" as *;
 
 /// This is equivalent to `font-weight: 100;`.
 /// @example font-weight: 100;
@@ -52,13 +52,12 @@
 /// @example font-weight: 900;
 /// @name .k-font-black
 /// @group font-weight
-/// @contextType css
+/// @contextType css@use "../_globals.scss" as *;
 
-// Register
-@include module-register((name: "utils-typography-font-weight"));
+@use "../_globals.scss" as *;
 
 @mixin kendo-utils--typography--font-weight() {
-    @include module-render("utils-typography-font-weight") {
+    @include import-once("utils-typography-font-weight") {
 
         // Font weight utility classes
         @include generate-utils( font, font-weight, $kendo-font-weights, $css-var: "font-weight" );

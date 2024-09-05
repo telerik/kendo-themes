@@ -1,6 +1,6 @@
 // box shadow
 // box shadow color
-@import "./_opacity.scss";
+@use "./_opacity.scss" as *;
 
 @mixin kendo-utils--effects() {
     @include kendo-utils--effects--opacity();
