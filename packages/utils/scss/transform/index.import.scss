@@ -1,9 +1,12 @@
-@import "./_flip.scss";
-@import "./_origin.scss";
-@import "./_rotate.scss";
-@import "./_scale.scss";
-@import "./_skew.scss";
-@import "./_translate.scss";
+@forward "./_flip.scss";
+@forward "./_rotate.scss";
+
+@use "./_flip.scss" as *;
+@use "./_origin.scss" as *;
+@use "./_rotate.scss" as *;
+@use "./_scale.scss" as *;
+@use "./_skew.scss" as *;
+@use "./_translate.scss" as *;
 
 
 @mixin kendo-utils--transform() {

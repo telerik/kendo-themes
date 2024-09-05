@@ -58,15 +58,17 @@
 /// @group place-items
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-place-items"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--place-items() {
-    @include module-render("utils-flex-grid-place-items") {
+    @include import-once("utils-flex-grid-place-items") {
 
         // Place items utility classes
-        $kendo-utils-place-items: k-map-get( $kendo-utils, "place-items" ) !default;
+        $kendo-utils-place-items: map.get( $kendo-utils, "place-items" ) !default;
         @include generate-utils( place-items, place-items, $kendo-utils-place-items );
 
     }

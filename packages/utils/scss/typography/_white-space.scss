@@ -34,15 +34,17 @@
 /// @group white-space
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-typography-white-space"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--typography--white-space() {
-    @include module-render("utils-typography-white-space") {
+    @include import-once("utils-typography-white-space") {
 
         // White space utility classes
-        $kendo-utils-white-space: k-map-get( $kendo-utils, "white-space" ) !default;
+        $kendo-utils-white-space: map.get( $kendo-utils, "white-space" ) !default;
 
         @include generate-utils( white-space, white-space, $kendo-utils-white-space );
         @include generate-utils( whitespace, white-space, $kendo-utils-white-space );

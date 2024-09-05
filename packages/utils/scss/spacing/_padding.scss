@@ -460,15 +460,17 @@
 /// @group padding
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-spacing-padding"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--spacing--padding() {
-    @include module-render("utils-spacing-padding") {
+    @include import-once("utils-spacing-padding") {
 
         // Padding utility classes
-        $kendo-utils-padding: k-map-get( $kendo-utils, "padding" ) !default;
+        $kendo-utils-padding: map.get( $kendo-utils, "padding" ) !default;
         @include generate-utils( p, padding, $kendo-utils-padding, $css-var: "spacing" );
         @include generate-utils( pt, padding-top, $kendo-utils-padding, $css-var: "spacing" );
         @include generate-utils( pr, padding-right, $kendo-utils-padding, $css-var: "spacing" );
@@ -483,7 +485,7 @@
 @mixin kendo-utils--spacing--padding--responsive($key) {
 
     // Padding responsive utility classes
-    $kendo-utils-padding: k-map-get( $kendo-utils, "padding" ) !default;
+    $kendo-utils-padding: map.get( $kendo-utils, "padding" ) !default;
     @include generate-utils( px-#{$key}, padding-inline, $kendo-utils-padding, $css-var: "spacing", $important: false );
     @include generate-utils( py-#{$key}, padding-block, $kendo-utils-padding, $css-var: "spacing", $important: false );
 

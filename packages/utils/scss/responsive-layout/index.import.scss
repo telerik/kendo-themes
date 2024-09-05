@@ -1,7 +1,8 @@
-@import "./_container.scss";
-@import "./_row.scss";
-@import "./_col.scss";
-@import "./_col-gap.scss";
+@use "./_container.scss" as *;
+@use "./_row.scss" as *;
+@use "./_col.scss" as *;
+@use "./_col-gap.scss" as *;
+@use "../_globals.scss" as *;
 
 
 @mixin kendo-utils--responsive-layout() {

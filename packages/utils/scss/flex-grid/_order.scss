@@ -22,15 +22,17 @@
 /// @group order
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-order"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--order() {
-    @include module-render("utils-flex-grid-order") {
+    @include import-once("utils-flex-grid-order") {
 
         // Order utility classes
-        $kendo-utils-order: k-map-get( $kendo-utils, "order" ) !default;
+        $kendo-utils-order: map.get( $kendo-utils, "order" ) !default;
         @include generate-utils( order, order, $kendo-utils-order );
 
     }

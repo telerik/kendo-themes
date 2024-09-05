@@ -6,7 +6,7 @@
 $kendo-prefix: k- !default;
 $kendo-important: true !default;
 
-@mixin generate-utils( $name, $props, $values, $function: "", $important: $kendo-important, $css-var: null ) {
+@mixin generate-utils( $name, $props, $values, $function: "genFunc", $important: $kendo-important, $css-var: null ) {
     @if $values {
         $_props: if( k-meta-type-of($props) == list, $props, ( $props ) );
         $_fn: if( meta.function-exists( $function ), meta.get-function( $function ), null );
@@ -16,6 +16,7 @@ $kendo-important: true !default;
             $_val: if( k-meta-type-of($values) == list, $key, $val );
             $_name: k-escape-class-name( $name );
             $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
+            // @debug $_selector;
             $_custom-prop: if( $_key == DEFAULT, var( --kendo-#{$css-var}, #{$_val} ), var( --kendo-#{$css-var}-#{$_key}, #{$_val} ) );
 
             @if $important != only {
