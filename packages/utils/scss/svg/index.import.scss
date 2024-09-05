@@ -1,5 +1,5 @@
-@import "./_fill.scss";
-@import "./_stroke.scss";
+@use "./_fill.scss" as *;
+@use "./_stroke.scss" as *;
 
 @mixin kendo-utils--svg() {
     @include kendo-utils--svg--fill();

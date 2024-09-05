@@ -142,23 +142,25 @@
 /// @group height
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-sizing-height"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--sizing--height() {
-    @include module-render("utils-sizing-height") {
+    @include import-once("utils-sizing-height") {
 
         // Height utility classes
-        $kendo-utils-height: k-map-get( $kendo-utils, "height" ) !default;
+        $kendo-utils-height: map.get( $kendo-utils, "height" ) !default;
         @include generate-utils( h, height, $kendo-utils-height );
 
         // Min height utility classes
-        $kendo-utils-min-height: k-map-get( $kendo-utils, "min-height" ) !default;
+        $kendo-utils-min-height: map.get( $kendo-utils, "min-height" ) !default;
         @include generate-utils( min-h, min-height, $kendo-utils-min-height );
 
         // Max height utility classes
-        $kendo-utils-max-height: k-map-get( $kendo-utils, "max-height" ) !default;
+        $kendo-utils-max-height: map.get( $kendo-utils, "max-height" ) !default;
         @include generate-utils( max-h, max-height, $kendo-utils-max-height );
 
     }

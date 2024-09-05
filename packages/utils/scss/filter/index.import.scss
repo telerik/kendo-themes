@@ -1,4 +1,4 @@
-@import "./_backdrop.scss";
+@use "./_backdrop.scss" as *;
 
 @mixin kendo-utils--filter() {
     @include kendo-utils--filter--backdrop();

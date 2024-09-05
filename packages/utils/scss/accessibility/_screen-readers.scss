@@ -1,12 +1,14 @@
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-accessibility-screen-readers"));
+@use "@progress/kendo-theme-core/scss/mixins/_import-once.scss" as *;
+@use "../_globals.scss" as *;
+@use "sass:map";
+
 
 @mixin kendo-utils--accessibility--screen-readers() {
-    @include module-render("utils-accessibility-screen-readers") {
+    @include import-once("utils-accessibility-screen-readers") {
 
         // Screen readers utility classes
-        $kendo-utils-accessibility: k-map-get( $kendo-utils, "accessibility" ) !default;
+        $kendo-utils-accessibility: map.get( $kendo-utils, "accessibility" ) !default;
 
         @if $kendo-utils-accessibility {
             /// This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
