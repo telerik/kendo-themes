@@ -208,15 +208,17 @@
 /// @group border-width
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-border-width"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--border--border-width() {
-    @include module-render("utils-border-width") {
+    @include import-once("utils-border-width") {
 
         // Border width utility classes
-        $kendo-utils-border-width: k-map-get( $kendo-utils, "border-width" ) !default;
+        $kendo-utils-border-width: map.get( $kendo-utils, "border-width" ) !default;
         @include generate-utils( border, border-width, $kendo-utils-border-width );
         @include generate-utils( border-t, border-top-width, $kendo-utils-border-width );
         @include generate-utils( border-r, border-right-width, $kendo-utils-border-width );

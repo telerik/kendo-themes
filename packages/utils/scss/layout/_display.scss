@@ -82,15 +82,17 @@
 /// @group display
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-display"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--display() {
-    @include module-render("utils-layout-display") {
+    @include import-once("utils-layout-display") {
 
         // Display utility classes
-        $kendo-utils-display: k-map-get( $kendo-utils, "display" ) !default;
+        $kendo-utils-display: map.get( $kendo-utils, "display" ) !default;
         @include generate-utils( d, display, $kendo-utils-display );
 
 
@@ -107,7 +109,7 @@
 @mixin kendo-utils--layout--display--responsive($key) {
 
     // Display responsive utility classes
-    $kendo-utils-display: k-map-get( $kendo-utils, "display" ) !default;
+    $kendo-utils-display: map.get( $kendo-utils, "display" ) !default;
     @include generate-utils( d-#{$key}, display, $kendo-utils-display, $important: false );
 
 }

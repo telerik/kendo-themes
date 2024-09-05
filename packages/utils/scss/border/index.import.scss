@@ -1,11 +1,11 @@
-@import "./_border-color.scss";
-@import "./_border-radius.scss";
-@import "./_border-style.scss";
-@import "./_border-width.scss";
-@import "./_outline-color.scss";
-@import "./_outline-offset.scss";
-@import "./_outline-style.scss";
-@import "./_outline-width.scss";
+@use "./_border-color.scss" as *;
+@use "./_border-radius.scss" as *;
+@use "./_border-style.scss" as *;
+@use "./_border-width.scss" as *;
+@use "./_outline-color.scss" as *;
+@use "./_outline-offset.scss" as *;
+@use "./_outline-style.scss" as *;
+@use "./_outline-width.scss" as *;
 
 
 @mixin kendo-utils--border() {
