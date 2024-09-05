@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-core/scss/index.import.scss";
+@use "@progress/kendo-theme-core/scss/index.import.scss" as *;
 
 /// This is equivalent to `font-size: 10px;`.
 /// @example font-size: 10px;
@@ -30,11 +30,10 @@
 /// @group font-size
 /// @contextType css
 
-// Register
-@include module-register((name: "utils-typography-font-size"));
+@use "../_mixins.scss" as *;
 
 @mixin kendo-utils--typography--font-size() {
-    @include module-render("utils-typography-font-size") {
+    @include import-once("utils-typography-font-size") {
 
         // Font size utility classes
         @include generate-utils( font-size, font-size, $kendo-font-sizes, $css-var: "font-size" );

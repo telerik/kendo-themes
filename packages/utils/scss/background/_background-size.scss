@@ -16,15 +16,17 @@
 /// @group background-size
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-background-size"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--background--background-size() {
-    @include module-render("utils-background-size") {
+    @include import-once("utils-background-size") {
 
         // Background size utility classes
-        $kendo-utils-background-size: k-map-get( $kendo-utils, "background-size" ) !default;
+        $kendo-utils-background-size: map.get( $kendo-utils, "background-size" ) !default;
         @include generate-utils( bg, background-size, $kendo-utils-background-size );
 
     }

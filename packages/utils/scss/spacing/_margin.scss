@@ -544,15 +544,17 @@
 /// @group margin
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-spacing-margin"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--spacing--margin() {
-    @include module-render("utils-spacing-margin") {
+    @include import-once("utils-spacing-margin") {
 
         // Margin utility classes
-        $kendo-utils-margin: k-map-get( $kendo-utils, "margin" ) !default;
+        $kendo-utils-margin: map.get( $kendo-utils, "margin" ) !default;
         @include generate-utils( m, margin, $kendo-utils-margin, $css-var: "spacing" );
         @include generate-utils( mt, margin-top, $kendo-utils-margin, $css-var: "spacing" );
         @include generate-utils( mr, margin-right, $kendo-utils-margin, $css-var: "spacing" );

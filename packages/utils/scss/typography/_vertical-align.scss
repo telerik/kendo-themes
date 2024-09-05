@@ -46,15 +46,17 @@
 /// @group vertical-align
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-typography-vertical-align"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--typography--vertical-align() {
-    @include module-render("utils-typography-vertical-align") {
+    @include import-once("utils-typography-vertical-align") {
 
         // vertical-align utility classes
-        $kendo-utils-vertical-align: k-map-get( $kendo-utils, "vertical-align" ) !default;
+        $kendo-utils-vertical-align: map.get( $kendo-utils, "vertical-align" ) !default;
         @include generate-utils( align, vertical-align, $kendo-utils-vertical-align );
 
     }
