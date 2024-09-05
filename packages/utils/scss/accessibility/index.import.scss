@@ -1,4 +1,4 @@
-@import "./_screen-readers.scss";
+@use "./_screen-readers.scss" as *;
 
 @mixin kendo-utils--accessibility() {
     @include kendo-utils--accessibility--screen-readers();

@@ -1,7 +1,11 @@
+@use "../_globals.scss" as *;
+@use "@progress/kendo-theme-core/scss/functions/index.import.scss" as *;
+@use "sass:map";
+
 @mixin kendo-utils--responsive-layout--col-gap() {
 
     // Columns gap
-    $kendo-utils-col-gap: k-map-get( $kendo-utils, "gap" ) !default;
+    $kendo-utils-col-gap: map.get( $kendo-utils, "gap" ) !default;
 
     @each $key, $val in $kendo-utils-col-gap {
         $_key: k-escape-class-name( $key );
@@ -15,7 +19,7 @@
 @mixin kendo-utils--responsive-layout--col-gap--responsive($breakpoint) {
 
     // Columns gap responsive
-    $kendo-utils-col-gap: k-map-get( $kendo-utils, "gap" ) !default;
+    $kendo-utils-col-gap: map.get( $kendo-utils, "gap" ) !default;
 
     @each $key, $val in $kendo-utils-col-gap {
         $_key: k-escape-class-name( $key );

@@ -12,15 +12,17 @@
 
 // TODO: consider globally horizontal vs h vs x
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-transform-flip"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--transform--flip() {
-    @include module-render("utils-transform-flip") {
+    @include import-once("utils-transform-flip") {
 
         // Flip utility classes
-        $kendo-utils-flip: k-map-get( $kendo-utils, "flip" ) !default;
+        $kendo-utils-flip: map.get( $kendo-utils, "flip" ) !default;
         @if $kendo-utils-flip {
             .#{$kendo-prefix}flip-h { transform: scaleX( -1 ); }
             .\!#{$kendo-prefix}flip-h { transform: scaleX( -1 ) !important; } // stylelint-disable-line declaration-no-important

@@ -34,15 +34,17 @@
 /// @group stroke
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-svg-stroke"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--svg--stroke() {
-    @include module-render("utils-svg-stroke") {
+    @include import-once("utils-svg-stroke") {
 
         // stroke utility classes
-        $kendo-utils-stroke: k-map-get( $kendo-utils, "fill-stroke" ) !default;
+        $kendo-utils-stroke: map.get( $kendo-utils, "fill-stroke" ) !default;
         @include generate-utils( stroke, stroke, $kendo-utils-stroke );
 
     }

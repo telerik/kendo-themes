@@ -1,13 +1,24 @@
-@import "./_accent-color.scss";
-@import "./_appearance.scss";
-@import "./_caret-color.scss";
-@import "./_cursor.scss";
-@import "./_pointer-events.scss";
-@import "./_resize.scss";
-@import "./_scroll.scss";
-@import "./_touch-action.scss";
-@import "./_user-select.scss";
-@import "./_will-change.scss";
+@forward "./_accent-color.scss";
+@forward "./_appearance.scss";
+@forward "./_caret-color.scss";
+@forward "./_cursor.scss";
+@forward "./_pointer-events.scss";
+@forward "./_resize.scss";
+@forward "./_scroll.scss";
+@forward "./_touch-action.scss";
+@forward "./_user-select.scss";
+@forward "./_will-change.scss";
+
+@use "./_accent-color.scss" as *;
+@use "./_appearance.scss" as *;
+@use "./_caret-color.scss" as *;
+@use "./_cursor.scss" as *;
+@use "./_pointer-events.scss" as *;
+@use "./_resize.scss" as *;
+@use "./_scroll.scss" as *;
+@use "./_touch-action.scss" as *;
+@use "./_user-select.scss" as *;
+@use "./_will-change.scss" as *;
 
 
 @mixin kendo-utils--interactivity() {
