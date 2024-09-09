@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v9.1.0-dev.0...v9.1.0-dev.1) (2024-09-09)
+
+
+### Features
+
+* **html:** update tabstrip spec and tests ([7d36a44](https://github.com/telerik/kendo-themes/commit/7d36a44aca70ae3f00b022729b8c64ab0390fe78))
+
+
+
+
+
 # [9.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v9.0.1-dev.3...v9.1.0-dev.0) (2024-09-02)
 
 
