@@ -1,43 +1,20 @@
-@import "../core/_index.scss";
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "numeric-textbox",
-    dependencies: (
-        "button",
-        "floating-label",
-        "icon",
-        "input"
-    )
-);
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 
 // Dependencies
-@import "../input/_index.scss";
-@import "../floating-label/_index.scss";
-@import "../icons/_index.scss";
-
-
-// Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@use "../core/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../floating-label/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../button/_index.scss" as *;
 
 // Expose
-@mixin kendo-numeric-textbox--styles() {
-    @include module-render( "numeric-textbox" ) {
-        @include kendo-numeric-textbox--layout();
-        @include kendo-numeric-textbox--theme();
+@mixin numerictextbox-styles() {
+    @include import-once( "numerictextbox" ) {
+        @include kendo-numerictextbox--layout();
+        @include kendo-numerictextbox--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-numeric-textbox--styles();
 }
