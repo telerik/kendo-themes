@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area section {
+            height: 300px;
+        }
+        .k-animation-container {
+            position: absolute;
+            top: 100%;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>Horizontal Menu with Separators</span>
+        <span>Vertical Menu with Separators</span>
+        <section>
+            <ul id="menu" class="k-reset k-menu k-menu-horizontal k-header">
+                <li class="k-menu-item k-item k-first">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Normal</span>
+                    </span>
+                </li>
+                <li class="k-menu-item k-item k-hover">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Hover</span>
+                        <span class="k-menu-expand-arrow">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 352 128 160h256z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="k-item k-separator k-separator-horizontal"></li>
+                <li class="k-menu-item k-item k-active">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Active</span>
+                        <span class="k-menu-expand-arrow">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 352 128 160h256z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                    <div class="k-animation-container k-animation-container-shown k-animation-container-fixed">
+                        <div class="k-child-animation-container">
+                            <div class="k-menu-popup k-popup">
+                                <ul class="k-menu-group k-menu-group-md">
+                                    <li class="k-menu-item k-item k-disabled k-first">
+                                        <span class="k-link k-menu-link k-disabled">
+                                            <span class="k-menu-link-text">Disabled</span>
+                                        </span>
+                                    </li>
+                                    <li class="k-menu-item k-item">
+                                        <span class="k-link k-menu-link">
+                                            <span class="k-menu-link-text">Normal</span>
+                                        </span>
+                                    </li>
+                                    <li class="k-menu-item k-item">
+                                        <span class="k-link k-menu-link k-hover">
+                                            <span class="k-menu-link-text">Hover</span>
+                                            <span class="k-menu-expand-arrow">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M352 256 160 384V128z"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li class="k-item k-separator k-separator-horizontal"></li>
+                                    <li class="k-menu-item k-item">
+                                        <span class="k-link k-menu-link k-active">
+                                            <span class="k-menu-link-text">Active</span>
+                                            <span class="k-menu-expand-arrow">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M352 256 160 384V128z"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li class="k-menu-item k-item k-focus">
+                                        <span class="k-link k-menu-link">
+                                            <span class="k-menu-link-text">Focus</span>
+                                        </span>
+                                    </li>
+                                    <li class="k-menu-item k-item k-focus k-last">
+                                        <span class="k-link k-menu-link k-active">
+                                            <span class="k-menu-link-text">Focus &amp; Active</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="k-menu-item k-item k-selected">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Selected</span>
+                        <span class="k-menu-expand-arrow">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 352 128 160h256z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="k-menu-item k-item k-focus">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Focus</span>
+                    </span>
+                </li>
+                <li class="k-menu-item k-item k-disabled k-last">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Disabled</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul id="menu" class="k-reset k-menu k-menu-vertical k-header">
+                <li class="k-menu-item k-item k-first">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Normal</span>
+                    </span>
+                </li>
+                <li class="k-menu-item k-item k-hover">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Hover</span>
+                        <span class="k-menu-expand-arrow">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 352 128 160h256z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="k-item k-separator k-separator-horizontal"></li>
+                <li class="k-menu-item k-item k-active">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Active</span>
+                        <span class="k-menu-expand-arrow">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 352 128 160h256z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                    <div class="k-animation-container k-animation-container-shown k-animation-container-fixed">
+                        <div class="k-child-animation-container">
+                            <div class="k-menu-popup k-popup">
+                                <ul class="k-menu-group k-menu-group-md">
+                                    <li class="k-menu-item k-item k-disabled k-first">
+                                        <span class="k-link k-menu-link k-disabled">
+                                            <span class="k-menu-link-text">Disabled</span>
+                                        </span>
+                                    </li>
+                                    <li class="k-menu-item k-item">
+                                        <span class="k-link k-menu-link">
+                                            <span class="k-menu-link-text">Normal</span>
+                                        </span>
+                                    </li>
+                                    <li class="k-menu-item k-item">
+                                        <span class="k-link k-menu-link k-hover">
+                                            <span class="k-menu-link-text">Hover</span>
+                                            <span class="k-menu-expand-arrow">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M352 256 160 384V128z"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li class="k-item k-separator k-separator-horizontal"></li>
+                                    <li class="k-menu-item k-item">
+                                        <span class="k-link k-menu-link k-active">
+                                            <span class="k-menu-link-text">Active</span>
+                                            <span class="k-menu-expand-arrow">
+                                                <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M352 256 160 384V128z"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li class="k-menu-item k-item k-focus">
+                                        <span class="k-link k-menu-link">
+                                            <span class="k-menu-link-text">Focus</span>
+                                        </span>
+                                    </li>
+                                    <li class="k-menu-item k-item k-focus k-last">
+                                        <span class="k-link k-menu-link k-active">
+                                            <span class="k-menu-link-text">Focus &amp; Active</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="k-menu-item k-item k-selected">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Selected</span>
+                        <span class="k-menu-expand-arrow">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 352 128 160h256z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li class="k-menu-item k-item k-focus">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Focus</span>
+                    </span>
+                </li>
+                <li class="k-menu-item k-item k-disabled k-last">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Disabled</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
