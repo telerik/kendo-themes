@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../core/spacing/_index.scss" as *;
+
 // Filter expression builder
 
 /// The horizontal padding of the Filter.

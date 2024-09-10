@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+
+// Signature
+
 $kendo-signature-width: 246px !default;
 $kendo-signature-height: 108px !default;
 
