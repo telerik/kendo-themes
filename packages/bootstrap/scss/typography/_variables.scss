@@ -1,3 +1,9 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+// @use "bootstrap/scss/bootstrap.scss" as *;
+@use "bootstrap/scss/bootstrap.scss" as *;
+// @use "../core/color-system/_swatch.scss" as *;
+
 // Typography
 
 
@@ -243,16 +249,16 @@ $kendo-code-border: $kendo-component-border !default;
 
 /// The font size of the largest display text.
 /// @group typography
-$kendo-display1-font-size: k-map-get( $display-font-sizes, 1) !default;
+$kendo-display1-font-size: map.get( $display-font-sizes, 1) !default;
 /// The font size of the second largest display text.
 /// @group typography
-$kendo-display2-font-size: k-map-get( $display-font-sizes, 2) !default;
+$kendo-display2-font-size: map.get( $display-font-sizes, 2) !default;
 /// The font size of the third largest display text.
 /// @group typography
-$kendo-display3-font-size: k-map-get( $display-font-sizes, 3) !default;
+$kendo-display3-font-size: map.get( $display-font-sizes, 3) !default;
 /// The font size of the fourth largest display text.
 /// @group typography
-$kendo-display4-font-size: k-map-get( $display-font-sizes, 4) !default;
+$kendo-display4-font-size: map.get( $display-font-sizes, 4) !default;
 
 /// The font family of the largest display text.
 /// @group typography
