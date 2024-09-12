@@ -52,7 +52,7 @@
     "postpublish": "echo 'no postpublish for bootstrap theme'"
   },
   "dependencies": {
-    "@progress/kendo-svg-icons": "3.0.0",
+    "@progress/kendo-svg-icons": "3.1.0",
     "@progress/kendo-theme-core": "9.1.0-dev.1",
     "@progress/kendo-theme-default": "9.1.0-dev.1",
     "@progress/kendo-theme-utils": "9.1.0-dev.1",
