@@ -1,4 +1,5 @@
-@import "../list/_variables.scss";
+@use "../list/_variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 
 // CheckBox

@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
 @mixin kendo-tooltip--theme-base() {
     // Default tooltip
     .k-tooltip {
@@ -6,7 +9,7 @@
             $kendo-tooltip-bg,
             $kendo-tooltip-border
         );
-        
+
         @include box-shadow( $kendo-tooltip-shadow );
 
         .k-callout {
@@ -22,7 +25,7 @@
                 k-map-get( $props, background-color ),
                 k-map-get( $props, border )
             );
-            
+
             .k-callout {
                 color: k-map-get( $props, background-color );
             }

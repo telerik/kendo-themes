@@ -1,4 +1,5 @@
-@import "../table/_variables.scss";
+@use "../core/_index.scss" as *;
+@use "../table/_variables.scss" as *;
 
 
 // Gantt

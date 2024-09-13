@@ -1,7 +1,9 @@
-@import "../input/_variables.scss";
-@import "../tooltip/_variables.scss";
-@import "../typography/_variables.scss";
-@import "../window/_variables.scss";
+@use "../input/_variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+@use "../typography/_variables.scss" as *;
+@use "../window/_variables.scss" as *;
+@use "../core/spacing/index.import.scss" as *;
+@use "../core/_index.scss" as *;
 
 
 // Forms

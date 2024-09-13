@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-progressbar--theme-base() {
 
     @keyframes kendo-progressbar-indeterminate-animation {
