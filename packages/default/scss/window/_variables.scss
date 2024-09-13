@@ -1,4 +1,5 @@
-@import "../action-buttons/_variables.scss";
+@use "../action-buttons/_variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 // Window
 

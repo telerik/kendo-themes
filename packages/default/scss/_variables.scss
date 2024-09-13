@@ -1,53 +1,11 @@
-@import "./core/functions/index.import.scss";
-
-// Options
-$kendo-enable-rounded: true !default;
-$kendo-enable-shadows: true !default;
-$kendo-enable-gradients: true !default;
-$kendo-enable-transitions: true !default;
-$kendo-enable-focus-contrast: false !default;
 $kendo-enable-typography: false !default;
 
 $kendo-use-input-button-width: true !default;
 $kendo-use-input-spinner-width: true !default;
 $kendo-use-input-spinner-icon-offset: false !default;
 
-$kendo-auto-bootstrap: true !default;
-
-$kendo-nested-disabled: true !default;
-
-/// Icon size.
-/// @group common
-$kendo-icon-size: 16px !default;
-/// xtra small icon size.
-/// @group common
-$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
-/// Small icon size.
-/// @group common
-$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
-/// Medium icon size.
-/// @group common
-$kendo-icon-size-md: $kendo-icon-size !default;
-/// Large icon size.
-/// @group common
-$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
-/// Extra large icon size.
-/// @group common
-$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
-/// Double extra large icon size.
-/// @group common
-$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
-/// Triple extra large icon size.
-/// @group common
-$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
-
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
-
-
-// Color settings
-$kendo-is-dark-theme: false !default;
-
 
 // TODO: refactor
 /// Box shadow of focused items.

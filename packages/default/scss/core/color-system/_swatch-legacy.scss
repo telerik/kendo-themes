@@ -1,3 +1,5 @@
+@use "@progress/kendo-theme-core/scss/index.import.scss" as *;
+
 @if ($kendo-enable-color-system) {
     $kendo-color-primary: k-color( primary );
     $kendo-color-primary-contrast: k-color( on-primary );

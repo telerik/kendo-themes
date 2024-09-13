@@ -1,3 +1,8 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../listgroup/_variables.scss" as *;
+
 @mixin kendo-adaptive--layout-base() {
 
     .k-pane-wrapper {
