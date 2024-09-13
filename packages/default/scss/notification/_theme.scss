@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-notification--theme-base() {
 
     // Theme
@@ -13,9 +17,9 @@
     @each $name, $props in $kendo-notification-theme {
         .k-notification-#{$name} {
             @include fill(
-                k-map-get( $props, color ),
-                k-map-get( $props, background-color ),
-                k-map-get( $props, border )
+                map.get( $props, color ),
+                map.get( $props, background-color ),
+                map.get( $props, border )
             );
         }
     }

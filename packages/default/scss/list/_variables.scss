@@ -1,3 +1,4 @@
+@use "../core/_index.scss" as *;
 // List
 
 /// The font family of the List components.
@@ -53,6 +54,10 @@ $kendo-list-lg-header-line-height: null !default;
 /// The font weight of the List header.
 /// @group list
 $kendo-list-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+
+/// The padding of the the List filter input.
+/// @group list
+$kendo-list-filter-padding: k-spacing(2) !default;
 
 /// The horizontal padding of the List items, when no size is set.
 /// @group list

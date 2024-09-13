@@ -1,3 +1,9 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../calendar/_variables.scss" as *;
+
 // Scheduler
 
 /// The width of the border around the Scheduler.
@@ -57,7 +63,7 @@ $kendo-scheduler-event-min-height: 25px !default;
 $kendo-scheduler-event-border-radius: k-border-radius(md) !default;
 /// The line height of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-line-height: calc( #{$kendo-scheduler-event-min-height} - (2 * #{$kendo-padding-md-y}) ) !default;
+$kendo-scheduler-event-line-height: calc( #{$kendo-scheduler-event-min-height} - (2 * #{k-spacing(1)}) ) !default;
 
 /// The background color of the Scheduler event.
 /// @group scheduler
@@ -167,7 +173,7 @@ $kendo-scheduler-yearview-indicator-size: 3px !default;
 $kendo-scheduler-yearview-indicator-calc-offset-top: calc( #{$kendo-calendar-cell-size} - (#{$kendo-calendar-cell-padding-y} * 2)) !default;
 /// The left position of the days with events indicator of the year view in the Scheduler.
 /// @group scheduler
-$kendo-scheduler-yearview-indicator-calc-offset-left: calc( 50% - #{k-math-div( $kendo-scheduler-yearview-indicator-size, 2 )} ) !default;
+$kendo-scheduler-yearview-indicator-calc-offset-left: calc( 50% - #{math.div( $kendo-scheduler-yearview-indicator-size, 2 )} ) !default;
 /// The border radius of the days with events indicator of the year view in the Scheduler.
 /// @group scheduler
 $kendo-scheduler-yearview-indicator-border-radius: 50% !default;
@@ -233,3 +239,32 @@ $kendo-scheduler-tooltip-event-gap: k-spacing(1) !default;
 /// The color of the Scheduler Tooltip callout.
 /// @group scheduler
 $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-bg !default;
+
+/// The padding of the Scheduler appointments.
+/// @group scheduler
+$kendo-scheduler-appointments-padding: k-spacing(2) !default;
+
+/// The horizontal padding of the Scheduler event template.
+/// @group scheduler
+$kendo-scheduler-event-template-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Scheduler event template.
+/// @group scheduler
+$kendo-scheduler-event-template-padding-y: k-spacing(1) !default;
+
+/// The inline inset of the Scheduler event actions.
+/// @group scheduler
+$kendo-scheduler-event-actions-inset-x: k-spacing(2) !default;
+
+/// The margin of the Scheduler event indicators.
+/// @group scheduler
+$kendo-scheduler-indicators-margin: k-spacing(0.5) .4ex 0 k-spacing(1) !default;
+/// The margin of the Scheduler event indicators in rtl.
+/// @group scheduler
+$kendo-scheduler-rtl-indicators-margin: k-spacing(0.5) 0 k-spacing(1) .4ex !default;
+
+/// The inline inset of the Scheduler marquee labels.
+/// @group scheduler
+$kendo-scheduler-marquee-label-inset-x: k-spacing(1) !default;
+/// The block inset of the Scheduler marquee labels.
+/// @group scheduler
+$kendo-scheduler-marquee-label-inset-y: k-spacing(0.5) !default;

@@ -1,3 +1,14 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../table/_variables.scss" as *;
+@use "../chip/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "../menu/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../popup/_variables.scss" as *;
+
 // Grid
 $kendo-grid-border-width: 1px !default;
 $kendo-grid-font-family: var( --kendo-font-family, inherit ) !default;
@@ -47,7 +58,7 @@ $kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
 $kendo-grid-edit-cell-padding-y: calc( #{k-spacing(1.5)} / 2 ) !default;
 
 $kendo-grid-group-drop-hint-size: 6px !default;
-$kendo-grid-group-drop-hint-line-size: k-math-div( $kendo-grid-group-drop-hint-size, 3 ) !default;
+$kendo-grid-group-drop-hint-line-size: math.div( $kendo-grid-group-drop-hint-size, 3 ) !default;
 $kendo-grid-group-drop-hint-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 $kendo-grid-group-drop-hint-top: 3px !default;
 
@@ -221,7 +232,7 @@ $kendo-grid-selection-aggregates-font-weight: var( --kendo-font-weight-bold, nor
 $kendo-grid-grouping-row-bg: $kendo-base-bg !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
-$kendo-grid-sorted-icon-spacing: calc( #{$kendo-padding-md-x} - 1px ) !default;
+$kendo-grid-sorted-icon-spacing: calc( #{k-spacing(2)} - 1px ) !default;
 $kendo-grid-sorted-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( k-contrast-legacy( $kendo-grid-bg ), .02 )) !default;
 $kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
 $kendo-grid-sorting-index-font-size: var( --kendo-font-size-sm, inherit ) !default;

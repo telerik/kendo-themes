@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "./_variables.scss" as *;
+
 @mixin kendo-messagebox--theme-base() {
 
     @each $color-name, $color in $kendo-theme-colors {

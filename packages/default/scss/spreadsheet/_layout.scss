@@ -1,3 +1,10 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "../menu/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+
 @mixin kendo-spreadsheet--layout-base() {
 
     // Spreadsheet
@@ -66,7 +73,7 @@
         // move to legacy selector
         > .k-icon {
             padding-block: 0;
-            padding-inline: $kendo-padding-md-y;
+            padding-inline: $kendo-spreadsheet-formula-bar-icon-padding;
             box-sizing: content-box;
             border-width: 0 1px 0 0;
             border-style: solid;
@@ -525,7 +532,7 @@
     }
     .k-spreadsheet-filter {
         @include border-radius( k-border-radius(md) );
-        padding: $kendo-padding-y;
+        padding: $kendo-spreadsheet-filter-padding;
         line-height: 1;
         position: absolute;
         cursor: pointer;
@@ -550,11 +557,10 @@
                 color: inherit;
             }
             .k-link {
-                padding-left: calc( #{$kendo-icon-size} + calc( 2 * #{$kendo-padding-md-y} ) );
+                padding-left: $kendo-spreadsheet-filter-menu-link-padding-x;
             }
             .k-icon {
-                margin-left: calc(-1 * ( #{$kendo-icon-size} + #{$kendo-padding-md-y} ) );
-                margin-right: $kendo-padding-md-y;
+                margin: $kendo-spreadsheet-filter-menu-icon-margin;
             }
 
         }
@@ -567,7 +573,7 @@
             overflow-x: auto;
 
             .k-treeview {
-                padding: $kendo-padding-md-y;
+                padding: $kendo-spreadsheet-filter-padding;
                 overflow: visible;
             }
         }
@@ -594,7 +600,7 @@
 
             > .k-icon,
             > .k-expander-indicator {
-                margin-right: $kendo-padding-md-y;
+                margin-right: $kendo-spreadsheet-filter-padding;
             }
         }
         .k-details-content,

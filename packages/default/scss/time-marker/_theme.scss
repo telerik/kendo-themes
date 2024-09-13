@@ -1,3 +1,5 @@
+@use "./_variables.scss" as *;
+
 @mixin kendo-time-marker--theme-base() {
 
     .k-current-time {

@@ -1,3 +1,9 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 @mixin kendo-toolbar--layout-base() {
 
     // Base
@@ -134,9 +140,9 @@
 
     // Toolbar sizes
     @each $size, $size-props in $kendo-toolbar-sizes {
-        $_padding-x: k-map-get( $size-props, padding-x );
-        $_padding-y: k-map-get( $size-props, padding-y );
-        $_spacing: k-map-get( $size-props, spacing );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_spacing: map.get( $size-props, spacing );
 
         .k-toolbar-#{$size} {
             padding-block: $_padding-y;
@@ -198,8 +204,8 @@
 
     // Overflow container
     .k-overflow-container {
-        font-size: $kendo-menu-popup-md-font-size;
-        line-height: $kendo-menu-popup-md-line-height;
+        font-size: $kendo-toolbar-overflow-container-font-size;
+        line-height: $kendo-toolbar-overflow-container-line-height;
 
         > .k-item {
             border-color: inherit;
@@ -216,8 +222,8 @@
 
         // Button
         .k-overflow-button {
-            padding-block: $kendo-menu-popup-md-item-padding-y;
-            padding-inline: $kendo-menu-popup-md-item-padding-x;
+            padding-block: $kendo-toolbar-overflow-button-padding-y;
+            padding-inline: $kendo-toolbar-overflow-button-padding-x;
             width: 100%;
             height: auto;
             border-width: 0;

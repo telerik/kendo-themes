@@ -622,7 +622,7 @@
         {
             "name": "Components",
             "variables": {
-                "kendo-component-color": {
+                "kendo-component-text": {
                     "name": "Component text",
                     "type": "color",
                     "value": "#1c3a4c"

@@ -1,3 +1,10 @@
+@use "sass:math";
+@use "sass:meta";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+
 @mixin kendo-dataviz--layout-base() {
 
     // Barcode
@@ -97,8 +104,8 @@
     .k-chart-tooltip td {
         width: auto;
         text-align: start;
-        padding-block: $kendo-padding-sm-y;
-        padding-inline: $kendo-padding-sm-x;
+        padding-block: $kendo-chart-tooltip-padding-y;
+        padding-inline: $kendo-chart-tooltip-padding-x;
         line-height: var( --kendo-line-height, normal );
         vertical-align: middle;
     }
@@ -153,31 +160,31 @@
     }
 
     .k-left-handle {
-        left: - k-math-div( $kendo-chart-selection-handle-size, 2 );
+        left: - math.div( $kendo-chart-selection-handle-size, 2 );
     }
 
     .k-right-handle {
-        right: - k-math-div( $kendo-chart-selection-handle-size, 2 );
+        right: - math.div( $kendo-chart-selection-handle-size, 2 );
     }
 
     .k-left-handle div {
-        margin: -($kendo-chart-selection-handle-size) 0 0 (- k-math-div( $kendo-chart-selection-handle-size, 1.5 ));
-        padding: ($kendo-chart-selection-handle-size * 2) (k-math-div( $kendo-chart-selection-handle-size, 1.5 ) * 2) 0 0;
+        margin: -($kendo-chart-selection-handle-size) 0 0 (- math.div( $kendo-chart-selection-handle-size, 1.5 ));
+        padding: ($kendo-chart-selection-handle-size * 2) (math.div( $kendo-chart-selection-handle-size, 1.5 ) * 2) 0 0;
     }
 
     .k-right-handle div {
-        margin: -($kendo-chart-selection-handle-size) 0 0 (- k-math-div( $kendo-chart-selection-handle-size, 1.5 ));
-        padding: ($kendo-chart-selection-handle-size * 2) 0 0 (k-math-div( $kendo-chart-selection-handle-size, 1.5 ) * 2);
+        margin: -($kendo-chart-selection-handle-size) 0 0 (- math.div( $kendo-chart-selection-handle-size, 1.5 ));
+        padding: ($kendo-chart-selection-handle-size * 2) 0 0 (math.div( $kendo-chart-selection-handle-size, 1.5 ) * 2);
     }
 
     .k-left-handle.k-handle-active div {
         margin-left: -($kendo-chart-selection-handle-size * 2);
-        padding-left: ($kendo-chart-selection-handle-size * 2) + k-math-div( $kendo-chart-selection-handle-size, 1.5 );
+        padding-left: ($kendo-chart-selection-handle-size * 2) + math.div( $kendo-chart-selection-handle-size, 1.5 );
     }
 
     .k-right-handle.k-handle-active div {
         margin-left: -($kendo-chart-selection-handle-size * 2);
-        padding-right: ($kendo-chart-selection-handle-size * 2) + k-math-div( $kendo-chart-selection-handle-size, 1.5 );
+        padding-right: ($kendo-chart-selection-handle-size * 2) + math.div( $kendo-chart-selection-handle-size, 1.5 );
     }
 
     .k-mask {
@@ -327,8 +334,8 @@
 
         // Title
         .k-treemap-title {
-            padding-block: $kendo-padding-sm-y;
-            padding-inline: $kendo-padding-sm-x;
+            padding-block: $kendo-treemap-padding-y;
+            padding-inline: $kendo-treemap-padding-x;
             border-width: 0 0 1px;
             border-style: solid;
             border-color: inherit;
@@ -337,8 +344,8 @@
             background-repeat: repeat-x;
         }
         .k-treemap-title-vertical {
-            padding-block: $kendo-padding-sm-x;
-            padding-inline: $kendo-padding-sm-y;
+            padding-block: $kendo-treemap-padding-x;
+            padding-inline: $kendo-treemap-padding-y;
             width: $kendo-line-height-em;
             white-space: nowrap;
             overflow: hidden;
@@ -369,16 +376,16 @@
             right: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            top: calc( calc( #{$kendo-padding-sm-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
+            top: calc( calc( #{$kendo-treemap-padding-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            left: calc( calc( #{$kendo-padding-sm-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
+            left: calc( calc( #{$kendo-treemap-padding-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
         }
 
 
         // Leaf
         .k-leaf {
-            padding: $kendo-padding-sm-x;
+            padding: $kendo-treemap-padding-x;
         }
     }
 
@@ -481,7 +488,7 @@
     );
 
     @each $name, $value in $exported {
-        $type: k-meta-type-of($value);
+        $type: meta.type-of($value);
 
         .k-var--#{$name} {
             @if $type == "color" or $type == "string" {

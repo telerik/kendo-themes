@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // Color Preview
 $kendo-color-preview-border-radius: k-border-radius(md)!default;
 $kendo-color-preview-border-width: 1px !default;

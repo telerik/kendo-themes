@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
 @mixin kendo-form--theme-base() {
 
     .k-form,

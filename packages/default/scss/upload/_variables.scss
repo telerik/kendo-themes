@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 // Upload
 
 /// The width of the border around the Upload.
@@ -100,3 +103,7 @@ $kendo-upload-error-bg: $kendo-color-error !default;
 /// The shadow of the focused Upload button, actions and uploaded items.
 /// @group upload
 $kendo-upload-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+$kendo-upload-files-list-margin: calc( -1 * #{k-spacing(1)} ) !default;
+
+$kendo-upload-file-info-margin: k-spacing(2) !default;

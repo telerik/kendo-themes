@@ -1,3 +1,10 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../window/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
+
 @mixin kendo-editor--layout-base() {
 
     // Base
@@ -30,8 +37,8 @@
     // Inline editor
     .k-editor-inline {
         @include border-radius( k-border-radius(md) );
-        padding-block: $kendo-padding-sm-y;
-        padding-inline: $kendo-padding-sm-x;
+        padding-block: $kendo-editor-inline-padding-y;
+        padding-inline: $kendo-editor-inline-padding-x;
         border: 1px solid transparent;
         word-wrap: break-word;
         overflow: auto;
@@ -169,7 +176,7 @@
         }
 
         > .ProseMirror { // stylelint-disable-line
-            padding: $kendo-padding-md-x;
+            padding: $kendo-editor-content-padding;
             width: 100%;
             height: 100%;
             position: relative;
@@ -280,8 +287,8 @@
     // Insert table
     .k-ct-popup {
         box-sizing: border-box;
-        width: $ct-cell-size * 10 - k-math-div( $ct-cell-size, 2 );
-        padding: k-math-div( $ct-cell-size, 4 );
+        width: $ct-cell-size * 10 - math.div( $ct-cell-size, 2 );
+        padding: math.div( $ct-cell-size, 4 );
 
         .k-button {
             width: 100%;
@@ -424,8 +431,8 @@
             height: 390px;
             max-height: 50vh;
             margin: 0 0 k-spacing(4);
-            padding-block: $kendo-padding-md-y;
-            padding-inline: $kendo-padding-md-x;
+            padding-block: $kendo-editor-filebrowser-tiles-padding-y;
+            padding-inline: $kendo-editor-filebrowser-tiles-padding-x;
             border-top-width: 0;
             overflow: auto;
         }
@@ -433,8 +440,8 @@
         .k-tile {
             width: 33%;
             height: 90px;
-            padding-block: $kendo-padding-md-y;
-            padding-inline: $kendo-padding-md-x;
+            padding-block: $kendo-editor-filebrowser-tiles-padding-y;
+            padding-inline: $kendo-editor-filebrowser-tiles-padding-x;
             box-sizing: border-box;
             white-space: nowrap;
             overflow: hidden;
@@ -478,7 +485,7 @@
 
         .k-thumb {
             float: left;
-            margin-right: $kendo-padding-sm-x;
+            margin-right: $kendo-editor-filebrowser-tiles-padding-y;
         }
 
         .k-breadcrumbs-wrap {
@@ -532,8 +539,8 @@
 
             td {
                 min-width: 1px;
-                padding-block: $kendo-padding-sm-y;
-                padding-inline: $kendo-padding-sm-x;
+                padding-block: $kendo-editor-inline-padding-y;
+                padding-inline: $kendo-editor-inline-padding-x;
             }
         }
 

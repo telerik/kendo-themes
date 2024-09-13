@@ -1,4 +1,7 @@
-@import "../table/_variables.scss";
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../table/_variables.scss" as *;
 
 
 // Gantt
@@ -135,6 +138,10 @@ $kendo-gantt-task-selected-border: null !default;
 /// @group gantt
 $kendo-gantt-task-progress-selected-bg: $kendo-selected-bg !default;
 
+/// The padding of the Gantt task actions.
+/// @group gantt
+$kendo-gantt-task-actions-padding: k-spacing(0.5) !default;
+
 /// The vertical margin of the Gantt task planned line.
 /// @group gantt
 $kendo-gantt-planned-margin-y: .35em !default;
@@ -160,10 +167,10 @@ $kendo-gantt-planned-moment-height: $kendo-gantt-planned-moment-width !default;
 $kendo-gantt-planned-moment-border-radius: calc( ( #{$kendo-gantt-planned-border-width * 2} + #{$kendo-gantt-planned-moment-width} ) / 2 ) !default;
 /// The horizontal margin of the Gantt planned line dot.
 /// @group gantt
-$kendo-gantt-planned-moment-left-margin-x: calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} ) !default;
+$kendo-gantt-planned-moment-left-margin-x: calc( #{math.div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} ) !default;
 /// The horizontal margin of the Gantt milestone planned line dot.
 /// @group gantt
-$kendo-gantt-planned-milestone-moment-margin-x: k-math-div( $kendo-gantt-planned-moment-width, 2 ) !default;
+$kendo-gantt-planned-milestone-moment-margin-x: math.div( $kendo-gantt-planned-moment-width, 2 ) !default;
 
 /// The default height of the Gantt planned line.
 /// @group gantt
@@ -239,3 +246,12 @@ $kendo-gantt-validation-tooltip-valid-border: $kendo-color-success !default;
 /// The border color of the invalid Gantt validation Tooltip.
 /// @group gantt
 $kendo-gantt-validation-tooltip-invalid-border: $kendo-color-error !default;
+
+/// The horizontal padding of the Gantt task Tooltip.
+/// @group gantt
+$kendo-gantt-task-tooltip-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Gantt task Tooltip.
+/// @group gantt
+$kendo-gantt-task-tooltip-padding-y: k-spacing(1) !default;
+
+

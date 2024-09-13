@@ -1,3 +1,6 @@
+@use "./_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 @mixin kendo-color-preview--layout-base() {
 
     // Color Preview
