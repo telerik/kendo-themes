@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-stepper--theme-base() {
 
     // Base
@@ -47,7 +50,7 @@
                             k-color( app-surface ),
                             $kendo-stepper-indicator-disabled-border
                         );
-                        
+
                         &::before {
                             background-color: $kendo-stepper-indicator-disabled-bg;
                         }
@@ -121,7 +124,7 @@
                             k-color( app-surface ),
                             $kendo-stepper-indicator-done-disabled-border
                         );
-                        
+
                         &::before {
                             background-color: $kendo-stepper-indicator-done-disabled-bg;
                         }
@@ -174,7 +177,7 @@
                             k-color( app-surface ),
                             $kendo-stepper-indicator-current-disabled-border
                         );
-                        
+
                         &::before {
                             background-color: $kendo-stepper-indicator-current-disabled-bg;
                         }

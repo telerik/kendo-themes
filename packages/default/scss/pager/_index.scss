@@ -1,43 +1,22 @@
-@import "../core/_index.scss";
-
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "pager",
-    dependencies: (
-        "button",
-        "dropdown-list",
-        "icon"
-    )
-);
-
-
 // Dependencies
-@import "../dropdownlist/_index.scss";
-@import "../icons/_index.scss";
-@import "../button/_index.scss";
-
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../dropdownlist/_index.scss" as *;
+@use "../button/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-pager--styles() {
-    @include module-render( "pager" ) {
+    @include import-once( "pager" ) {
+        @include core-styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
         @include kendo-pager--layout();
         @include kendo-pager--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-pager--styles();
 }

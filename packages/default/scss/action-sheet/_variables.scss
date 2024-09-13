@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Action sheet
 
 $kendo-actionsheet-padding-x: null !default;
@@ -71,6 +73,9 @@ $kendo-actionsheet-item-disabled-border: null !default;
 $kendo-actionsheet-item-disabled-gradient: null !default;
 $kendo-actionsheet-item-disabled-shadow: null !default;
 
+$kendo-actionsheet-item-hover-background: null !default;
+$kendo-actionsheet-item-focus-background: null !default;
+$kendo-actionsheet-item-disabled-opacity: null !default;
 
 // Adaptive Actionsheet
 $kendo-adaptive-actionsheet-font-size: var( --kendo-font-size-lg, inherit ) !default;

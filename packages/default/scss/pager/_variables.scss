@@ -1,5 +1,6 @@
-@import "../list/_variables.scss";
-
+@use "../core/_index.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
 
 // Pager
 
@@ -76,6 +77,9 @@ $kendo-pager-focus-bg: null !default;
 /// The box shadow of the focused Pager.
 /// @group pager
 $kendo-pager-focus-shadow: $kendo-focus-shadow !default;
+/// The spacing between the sections of the Pager.
+/// @group pager
+$kendo-pager-section-spacing: null !default;
 
 /// The border width of the Pager items.
 /// @group pager

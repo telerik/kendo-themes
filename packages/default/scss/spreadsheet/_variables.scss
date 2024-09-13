@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
+
 // Spreadsheet
 
 /// The width of the border around the Spreadsheet.
@@ -81,6 +85,10 @@ $kendo-spreadsheet-formula-input-padding-y: $kendo-input-padding-y !default;
 /// The line height of the Spreadsheet formula input.
 /// @group spreadsheet
 $kendo-spreadsheet-formula-input-line-height: $kendo-input-line-height !default;
+
+/// The padding of the Spreadsheet formula bar icon.
+/// @group spreadsheet
+$kendo-spreadsheet-formula-bar-icon-padding: k-spacing(1) !default;
 
 /// The font family of the Spreadsheet view.
 /// @group spreadsheet
@@ -259,3 +267,11 @@ $kendo-spreadsheet-drawing-anchor-bg: if($kendo-enable-color-system, color-mix(i
 /// @group spreadsheet
 $kendo-spreadsheet-dropzone-spacing-y: k-spacing(4) !default;
 
+/// The padding of the Spreadsheet filter.
+/// @group spreadsheet
+$kendo-spreadsheet-filter-padding: k-spacing(1) !default;
+
+
+$kendo-spreadsheet-filter-menu-link-padding-x: calc( #{$kendo-icon-size} + calc( 2 * #{k-spacing(1)} ) ) !default;
+
+$kendo-spreadsheet-filter-menu-icon-margin: 0 k-spacing(1) 0 calc(-1 * ( #{$kendo-icon-size} + #{k-spacing(1)} ) ) !default;

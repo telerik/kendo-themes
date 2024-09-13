@@ -1,3 +1,8 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "sass:map";
+
 @mixin kendo-list--layout-base() {
 
     // List container
@@ -186,7 +191,7 @@
     .k-list-filter {
         display: block;
         position: relative;
-        padding: $kendo-padding-md-x;
+        padding: $kendo-list-filter-padding;
         box-sizing: border-box;
         flex: none;
     }
@@ -194,22 +199,22 @@
 
     // Switch sizes
     @each $size, $size-props in $kendo-list-sizes {
-        $_font-size: k-map-get( $size-props, font-size );
-        $_line-height: k-map-get( $size-props, line-height );
-        $_font-size: k-map-get( $size-props, font-size );
-        $_line-height: k-map-get( $size-props, line-height );
-        $_header-padding-x: k-map-get( $size-props, header-padding-x );
-        $_header-padding-y: k-map-get( $size-props, header-padding-y );
-        $_header-font-size: k-map-get( $size-props, header-font-size );
-        $_header-line-height: k-map-get( $size-props, header-line-height );
-        $_item-padding-x: k-map-get( $size-props, item-padding-x );
-        $_item-padding-y: k-map-get( $size-props, item-padding-y );
-        $_item-font-size: k-map-get( $size-props, item-font-size );
-        $_item-line-height: k-map-get( $size-props, item-line-height );
-        $_group-item-padding-x: k-map-get( $size-props, group-item-padding-x );
-        $_group-item-padding-y: k-map-get( $size-props, group-item-padding-y );
-        $_group-item-font-size: k-map-get( $size-props, group-item-font-size );
-        $_group-item-line-height: k-map-get( $size-props, group-item-line-height );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_header-padding-x: map.get( $size-props, header-padding-x );
+        $_header-padding-y: map.get( $size-props, header-padding-y );
+        $_header-font-size: map.get( $size-props, header-font-size );
+        $_header-line-height: map.get( $size-props, header-line-height );
+        $_item-padding-x: map.get( $size-props, item-padding-x );
+        $_item-padding-y: map.get( $size-props, item-padding-y );
+        $_item-font-size: map.get( $size-props, item-font-size );
+        $_item-line-height: map.get( $size-props, item-line-height );
+        $_group-item-padding-x: map.get( $size-props, group-item-padding-x );
+        $_group-item-padding-y: map.get( $size-props, group-item-padding-y );
+        $_group-item-font-size: map.get( $size-props, group-item-font-size );
+        $_group-item-line-height: map.get( $size-props, group-item-line-height );
 
         .k-list-#{$size} {
             font-size: $_font-size;

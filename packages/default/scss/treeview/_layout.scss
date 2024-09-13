@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 @mixin kendo-treeview--layout-base() {
 
     // Treeview
@@ -168,12 +173,12 @@
     }
 
     @each $size, $size-props in $kendo-treeview-sizes {
-        $_font-size: k-map-get( $size-props, font-size);
-        $_line-height: k-map-get( $size-props, line-height);
-        $_item-padding-x: k-map-get( $size-props, item-padding-x);
-        $_item-padding-y: k-map-get( $size-props, item-padding-y);
-        $_checkbox-padding-x: k-map-get( $size-props, checkbox-padding-x );
-        $_checkbox-padding-y: k-map-get( $size-props, checkbox-padding-y );
+        $_font-size: map.get( $size-props, font-size);
+        $_line-height: map.get( $size-props, line-height);
+        $_item-padding-x: map.get( $size-props, item-padding-x);
+        $_item-padding-y: map.get( $size-props, item-padding-y);
+        $_checkbox-padding-x: map.get( $size-props, checkbox-padding-x );
+        $_checkbox-padding-y: map.get( $size-props, checkbox-padding-y );
 
         .k-treeview-#{$size} {
             font-size: $_font-size;

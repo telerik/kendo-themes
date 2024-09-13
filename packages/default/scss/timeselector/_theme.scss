@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-time-selector--theme-base() {
 
     // Time selector
@@ -50,7 +54,7 @@
         &::before,
         &::after {
             $shadow-size: 3em;
-            box-shadow: 0 0 $shadow-size k-math-div( $shadow-size, 2 ) $kendo-time-selector-bg;
+            box-shadow: 0 0 $shadow-size math.div( $shadow-size, 2 ) $kendo-time-selector-bg;
         }
 
         .k-item:hover {

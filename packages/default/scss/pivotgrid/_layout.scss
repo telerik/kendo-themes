@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 @mixin kendo-pivotgrid--layout-base() {
 
     // Pivotgrid

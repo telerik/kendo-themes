@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 @mixin kendo-upload--layout-base() {
 
     .k-upload {
@@ -130,7 +134,7 @@
 
             ~ .k-clear-selected,
             ~ .k-upload-selected {
-                margin-top: -$kendo-padding-md-y;
+                margin-top: $kendo-upload-files-list-margin;
                 border-width: 0;
             }
 
@@ -183,7 +187,7 @@
 
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-info {
-            margin-inline-start: $kendo-padding-md-x;
+            margin-inline-start: $kendo-upload-file-info-margin;
             min-height: $kendo-icon-size-xxl;
             display: block;
             overflow: hidden;

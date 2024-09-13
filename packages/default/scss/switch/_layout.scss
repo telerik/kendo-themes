@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-switch--layout-base() {
 
     .k-switch {
@@ -82,13 +87,13 @@
     // Switch sizes
     @each $size, $size-props in $kendo-switch-sizes {
 
-        $_font-size: k-map-get( $size-props, font-size );
-        $_track-width: k-map-get( $size-props, track-width );
-        $_track-height: k-map-get( $size-props, track-height );
-        $_thumb-width: k-map-get( $size-props, thumb-width );
-        $_thumb-height: k-map-get( $size-props, thumb-height );
-        $_thumb-offset: k-map-get( $size-props, thumb-offset );
-        $_label-offset: k-map-get( $size-props, label-offset );
+        $_font-size: map.get( $size-props, font-size );
+        $_track-width: map.get( $size-props, track-width );
+        $_track-height: map.get( $size-props, track-height );
+        $_thumb-width: map.get( $size-props, thumb-width );
+        $_thumb-height: map.get( $size-props, thumb-height );
+        $_thumb-offset: map.get( $size-props, thumb-offset );
+        $_label-offset: map.get( $size-props, label-offset );
 
         .k-switch-#{$size} {
             width: $_track-width;
@@ -109,10 +114,10 @@
             }
 
             &.k-switch-on .k-switch-thumb-wrap {
-                left: calc( 100% - #{k-math-div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+                left: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
             }
             &.k-switch-off .k-switch-thumb-wrap {
-                left: calc( #{k-math-div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+                left: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
             }
         }
 
@@ -130,10 +135,10 @@
             }
 
             &.k-switch-on .k-switch-thumb-wrap {
-                left: calc( #{k-math-div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+                left: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
             }
             &.k-switch-off .k-switch-thumb-wrap {
-                left: calc( 100% - #{k-math-div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+                left: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
             }
         }
     }

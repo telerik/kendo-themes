@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../_variables.scss" as *;
+@use "./_variables.scss" as *;
+
 @mixin kendo-typography--layout-base() {
 
     @if $kendo-enable-typography {
@@ -32,12 +37,12 @@
 
     // Headings
     @each $heading, $heading-props in $kendo-headings {
-        $_font-size: k-map-get( $heading-props, font-size );
-        $_font-family: k-map-get( $heading-props, font-family );
-        $_line-height: k-map-get( $heading-props, line-height );
-        $_font-weight: k-map-get( $heading-props, font-weight );
-        $_letter-spacing: k-map-get( $heading-props, letter-spacing );
-        $_margin: k-map-get( $heading-props, margin );
+        $_font-size: map.get( $heading-props, font-size );
+        $_font-family: map.get( $heading-props, font-family );
+        $_line-height: map.get( $heading-props, line-height );
+        $_font-weight: map.get( $heading-props, font-weight );
+        $_letter-spacing: map.get( $heading-props, letter-spacing );
+        $_margin: map.get( $heading-props, margin );
 
         .k-#{$heading} {
             @include typography(
@@ -99,12 +104,12 @@
 
     // Display
     @each $display, $kendo-display-props in $kendo-display {
-        $_font-size: k-map-get( $kendo-display-props, font-size );
-        $_font-family: k-map-get( $kendo-display-props, font-family );
-        $_line-height: k-map-get( $kendo-display-props, line-height );
-        $_font-weight: k-map-get( $kendo-display-props, font-weight );
-        $_letter-spacing: k-map-get( $kendo-display-props, letter-spacing );
-        $_margin: k-map-get( $kendo-display-props, margin );
+        $_font-size: map.get( $kendo-display-props, font-size );
+        $_font-family: map.get( $kendo-display-props, font-family );
+        $_line-height: map.get( $kendo-display-props, line-height );
+        $_font-weight: map.get( $kendo-display-props, font-weight );
+        $_letter-spacing: map.get( $kendo-display-props, letter-spacing );
+        $_margin: map.get( $kendo-display-props, margin );
 
         .k-display-#{$display} {
             @include typography(
