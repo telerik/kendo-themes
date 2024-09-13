@@ -1,14 +1,15 @@
-@import "../input/_variables.scss";
-@import "../tooltip/_variables.scss";
-@import "../typography/_variables.scss";
-@import "../window/_variables.scss";
+@use "../input/_variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+@use "../typography/_variables.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 
 // Forms
 
 /// The padding of the inline Form.
 /// @group form
-$kendo-form-spacer: calc( #{$kendo-padding-md-x} * 2 ) !default;
+$kendo-form-spacer: calc( #{k-spacing(2)} * 2 ) !default;
 
 /// The font size of the Form.
 /// @group form
@@ -114,6 +115,14 @@ $kendo-horizontal-form-field-wrap-max-width: calc( ( 100% - #{$kendo-horizontal-
 /// @group form
 $kendo-inline-form-element-width: 25% !default;
 
+/// The horizontal padding of the inline Form field.
+/// @group form
+$kendo-inline-form-field-padding-x: 0 k-spacing(3) !default;
+
+/// The vertical padding of the inline Form field.
+/// @group form
+$kendo-inline-form-field-padding-y: calc( #{k-spacing(1)} + #{$kendo-input-border-width} ) !default;
+
 /// The invalid text color of the Form.
 /// @group form
 $kendo-forms-invalid-color: $kendo-color-error !default;
@@ -146,6 +155,21 @@ $kendo-fieldset-text: null !default;
 /// @group form
 $kendo-fieldset-border: null !default;
 
+/// The padding of the Form fieldset legend.
+/// @group form
+$kendo-fieldset-legend-padding: 0 k-spacing(2) 0 0 !default;
+/// The margin of the Form fieldset legend
+/// @group form
+$kendo-fieldset-legend-margin: calc( #{k-spacing(1.5)} * 2 ) !default;
+
+/// The margin of the Form alert error.
+/// @group form
+$kendo-form-alert-error-margin: calc( #{k-spacing(1)} * 2 ) !default;
+
+/// The margin of the Form field info.
+/// @group form
+$kendo-form-field-info-margin: k-spacing(2) !default;
+
 /// The background color of the Form legend.
 /// @group form
 $kendo-fieldset-legend-bg: null !default;
@@ -169,3 +193,4 @@ $kendo-form-sizes: (
         form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 ) !default;
+

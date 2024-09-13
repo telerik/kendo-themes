@@ -1,3 +1,5 @@
+@use "../tooltip/_variables.scss" as *;
+
 @mixin kendo-validator--layout-base() {
 
     // Validator

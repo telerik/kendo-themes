@@ -1,3 +1,9 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../popup/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 // Notification
 
 /// The row-gap between the elements in the Notification group.
@@ -46,7 +52,7 @@ $kendo-notification-icon-spacing: $kendo-icon-spacing !default;
     $_theme: ();
 
     @each $name, $color in $colors {
-        $_theme: k-map-merge(( $name: (
+        $_theme: map.merge(( $name: (
             color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )),
             background-color: $color,
             border: $color,

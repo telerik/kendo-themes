@@ -1,4 +1,6 @@
-@import "../action-buttons/_variables.scss";
+@use "sass:map";
+@use "../action-buttons/_variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 // Window
 
@@ -105,7 +107,7 @@ $kendo-window-sizes: (
 /// The theme colors map for the Window.
 /// @group window
 $kendo-window-theme-colors: (
-    "primary": k-map-get($kendo-theme-colors, "primary"),
-    "light": k-map-get($kendo-theme-colors, "light"),
-    "dark": k-map-get($kendo-theme-colors, "dark")
+    "primary": map.get($kendo-theme-colors, "primary"),
+    "light": map.get($kendo-theme-colors, "light"),
+    "dark": map.get($kendo-theme-colors, "dark")
 ) !default;

@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-fab--layout-base() {
 
     // Floating Action Button (FAB)
@@ -49,8 +53,8 @@
 
     // Sizes
     @each $size, $size-props in $kendo-fab-sizes {
-        $_padding-x: k-map-get( $size-props, padding-x );
-        $_padding-y: k-map-get( $size-props, padding-y );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
 
         .k-fab-#{$size} {
             padding: $_padding-y $_padding-x;

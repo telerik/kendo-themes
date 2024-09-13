@@ -1,4 +1,5 @@
-@import "../button/_variables.scss";
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
 
 // Card
 

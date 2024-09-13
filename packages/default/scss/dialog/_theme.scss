@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-dialog--theme-base() {
 
     // Dialog titlebar

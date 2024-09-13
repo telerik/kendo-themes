@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-action-sheet--layout-base() {
 
     // Action sheet container
@@ -258,7 +261,7 @@
         .k-actionsheet-content,
         .k-actionsheet-footer {
             margin-inline: auto;
-            width: k-string-unquote("min(100%, 360px)");
+            width: min(100%, 360px);
         }
 
         .k-list-container,

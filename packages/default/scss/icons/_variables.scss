@@ -1,0 +1,32 @@
+@use "../core/_index.scss" as *;
+
+/// The default size icon size.
+/// @group icon
+$kendo-icon-size: 16px !default;
+/// The extra small icon size.
+/// @group icon
+$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
+/// The small icon size.
+/// @group icon
+$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
+/// The medium icon size.
+/// @group icon
+$kendo-icon-size-md: $kendo-icon-size !default;
+/// The large icon size.
+/// @group icon
+$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
+/// The extra large icon size.
+/// @group icon
+$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
+/// The double extra large icon size.
+/// @group icon
+$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
+/// The triple extra large icon size.
+/// @group icon
+$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
+/// The default icon spacing.
+/// @group icon
+$kendo-icon-spacing: k-spacing(1) !default;
+/// The default icon padding.
+/// @group icon
+$kendo-icon-padding: k-spacing(1) !default;

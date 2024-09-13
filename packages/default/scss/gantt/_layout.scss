@@ -1,3 +1,11 @@
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../table/_variables.scss" as *;
+@use "../grid/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 @mixin kendo-gantt--layout-base() {
 
     $row-height: #{$kendo-line-height-em} + calc( 2 * #{$kendo-table-md-cell-padding-y} ) + #{$kendo-grid-cell-horizontal-border-width};
@@ -591,7 +599,7 @@
         text-overflow: ellipsis;
     }
     .k-task-actions {
-        padding: $kendo-padding-sm-y;
+        padding: $kendo-gantt-task-actions-padding;
         white-space: nowrap;
         display: flex;
         flex-direction: row;
@@ -622,8 +630,8 @@
 
     // Task tooltip
     .k-task-details {
-        padding-block: $kendo-padding-md-y;
-        padding-inline: $kendo-padding-md-x;
+        padding-block: $kendo-gantt-task-tooltip-padding-y;
+        padding-inline: $kendo-gantt-task-tooltip-padding-x;
         white-space: nowrap;
 
         strong {

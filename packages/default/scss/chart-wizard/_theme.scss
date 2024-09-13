@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+
 @mixin kendo-chart-wizard--theme-base() {
     .k-chart-wizard {
         .k-icon-text-wrapper {

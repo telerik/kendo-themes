@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-calendar--layout-base() {
 
     // Base
@@ -275,11 +280,11 @@
 
     // Calendar sizes
     @each $size, $size-props in $kendo-calendar-sizes {
-        $_font-size: k-map-get( $size-props, font-size );
-        $_line-height: k-map-get( $size-props, line-height );
-        $_cell-size: k-map-get( $size-props, cell-size );
-        $_cell-padding-x: k-map-get( $size-props, cell-padding-x );
-        $_cell-padding-y: k-map-get( $size-props, cell-padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_cell-size: map.get( $size-props, cell-size );
+        $_cell-padding-x: map.get( $size-props, cell-padding-x );
+        $_cell-padding-y: map.get( $size-props, cell-padding-y );
 
         $_month-cell-size: $_cell-size;
         $_year-cell-size: ( 2 * $_cell-size );
@@ -353,7 +358,7 @@
                 z-index: 1;
                 width: 150%;
                 left: -25%;
-                box-shadow: 0 0 $kendo-calendar-cell-size k-math-div( $kendo-calendar-cell-size, 2 ) $kendo-calendar-bg;
+                box-shadow: 0 0 $kendo-calendar-cell-size math.div( $kendo-calendar-cell-size, 2 ) $kendo-calendar-bg;
             }
         }
 
@@ -393,7 +398,7 @@
             width: 200%;
             left: -50%;
             $shadow-size: 3 * $kendo-calendar-navigation-item-height;
-            box-shadow: 0 0 $shadow-size k-math-div( $shadow-size, 2 ) $kendo-calendar-navigation-bg;
+            box-shadow: 0 0 $shadow-size math.div( $shadow-size, 2 ) $kendo-calendar-navigation-bg;
         }
 
         &::before { top: 0; }
