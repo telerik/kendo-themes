@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 $kendo-overlay-theme-colors: $kendo-theme-colors !default;
 
 $kendo-overlay-bg: $kendo-color-black !default;
