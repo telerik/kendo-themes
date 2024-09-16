@@ -441,14 +441,6 @@
             }
         }
 
-        .k-column-menu-group-header-text {
-            @include fill(
-                var( --kendo-grid-column-menu-group-header-text, #{$kendo-grid-column-menu-group-header-text} ),
-                var( --kendo-grid-column-menu-group-header-bg, #{$kendo-grid-column-menu-group-header-bg} ),
-                var( --kendo-grid-column-menu-group-header-border, #{$kendo-grid-column-menu-group-header-border} )
-            );
-        }
-
         .k-check-all-wrap {
             @include fill( $border: $kendo-popup-border );
         }
@@ -465,6 +457,13 @@
         background-color: var( --kendo-grid-column-menu-tabbed-bg, #{$kendo-grid-column-menu-tabbed-bg} );
     }
 
+    .k-column-menu-group-header-text {
+        @include fill(
+            var( --kendo-grid-column-menu-group-header-text, #{$kendo-grid-column-menu-group-header-text} ),
+            var( --kendo-grid-column-menu-group-header-bg, #{$kendo-grid-column-menu-group-header-bg} ),
+            var( --kendo-grid-column-menu-group-header-border, #{$kendo-grid-column-menu-group-header-border} )
+        );
+    }
 
     .k-grid-norecords-template {
         background-color: $kendo-grid-bg;

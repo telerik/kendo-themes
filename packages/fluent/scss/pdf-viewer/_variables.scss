@@ -99,3 +99,26 @@ $kendo-pdf-viewer-search-highlight-mark-bg: yellow !default;
 /// The text color of the PDFViewer icon.
 /// @group pdf-viewer
 $kendo-pdf-viewer-icon-text: $kendo-dropzone-icon-text !default;
+
+/// The vertical padding of the PDFViewer popup.
+/// @group pdf-viewer
+$kendo-pdf-viewer-popup-padding-x: k-spacing(2) !default;
+/// The horizontal padding of the PDFViewer popup.
+/// @group pdf-viewer
+$kendo-pdf-viewer-popup-padding-y: $kendo-pdf-viewer-popup-padding-x !default;
+
+/// The border color of the PDFViewer selected highlight annotation.
+/// @group pdf-viewer
+$kendo-pdf-viewer-highlight-annotation-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+/// The background color of the PDFViewer hover highlight annotation.
+/// @group pdf-viewer
+$kendo-pdf-viewer-highlight-annotation-hover-border: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
+/// The border color of the PDFViewer selected free text annotation.
+/// @group pdf-viewer
+$kendo-pdf-viewer-free-text-annotation-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+/// The placeholder text color of the PDFViewer free text annotation.
+/// @group pdf-viewer
+$kendo-pdf-viewer-free-text-annotation-placeholder-text: rgba(124, 22, 27, 0.5) !default;
+/// The text color of the PDFViewer free text annotation.
+/// @group pdf-viewer
+$kendo-pdf-viewer-free-text-annotation-text: rgba(124, 22, 27, 0.7) !default;

@@ -60,7 +60,7 @@ $kendo-toolbar-border: var( --kendo-component-border, initial ) !default;
 $kendo-toolbar-outline-text: null !default;
 /// The color of the border around the outline Toolbar.
 /// @group toolbar
-$kendo-toolbar-outline-border: var( --kendo-color-border, initial ) !default;
+$kendo-toolbar-outline-border: k-color(border) !default;
 /// The width of the border around the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-border-width: $kendo-toolbar-border-width !default;

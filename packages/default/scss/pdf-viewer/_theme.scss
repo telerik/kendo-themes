@@ -21,7 +21,7 @@
 
 
         // Canvas
-        .k-canvas {
+        .k-pdf-viewer-canvas {
             @include fill(
                 $kendo-pdf-viewer-canvas-text,
                 $kendo-pdf-viewer-canvas-bg,
@@ -44,6 +44,16 @@
             @include fill( $color: $kendo-pdf-viewer-icon-text );
         }
 
+        .k-canvas-wrapper .k-highlight-outline {
+            &.k-hover,
+            &:hover {
+                stroke: $kendo-pdf-viewer-highlight-annotation-hover-border;
+            }
+
+            &.k-selected {
+                stroke: $kendo-pdf-viewer-highlight-annotation-border;
+            }
+        }
 
         // Search
         .k-search-highlight {
@@ -52,6 +62,14 @@
 
         .k-search-highlight-mark {
             @include fill( $bg: $kendo-pdf-viewer-search-highlight-mark-bg );
+        }
+
+        .k-annotation-editor-layer .k-free-text-editor .k-internal {
+            color: $kendo-pdf-viewer-free-text-annotation-text;
+
+            &:empty::before {
+                color: $kendo-pdf-viewer-free-text-annotation-placeholder-text;
+            }
         }
 
     }

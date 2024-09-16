@@ -49,7 +49,8 @@
         }
 
         &.k-enable-panning {
-            cursor: grab;
+            cursor: grab !important; // stylelint-disable-line declaration-no-important
+
 
             span::selection {
                 background-color: transparent;
@@ -66,9 +67,34 @@
             position: relative;
             margin-block: var( --kendo-pdf-viewer-page-spacing, #{$kendo-pdf-viewer-page-spacing} );
             margin-inline: auto;
+            z-index: 1;
 
-            canvas {
-                direction: ltr;
+            // Canvas
+            .k-canvas-wrapper {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+
+                canvas {
+                    direction: ltr;
+                }
+
+                svg {
+                    transform: none;
+                }
+
+                .k-highlight {
+                    position: absolute;
+                    mix-blend-mode: multiply;
+                    fill-opacity: 1;
+
+                }
+                .k-highlight-outline {
+                    position: absolute;
+                    fill: none;
+                    stroke-width: 2px;
+                    stroke-dasharray: 2;
+                }
             }
 
             .k-text-layer {
@@ -78,16 +104,131 @@
                 opacity: .2;
                 overflow: hidden;
 
-                > span {
+                .k-marked-content > span,
+                > span, br {
                     position: absolute;
                     line-height: var( --kendo-pdf-viewer-selection-line-height, #{$kendo-pdf-viewer-selection-line-height} );
                     transform-origin: 0% 0%;
                     color: transparent;
+                    white-space: pre;
+                    cursor: text;
+                }
+
+                .k-marked-content {
+                    top: 0;
+                    height: 0;
+                }
+
+                .k-end-of-content {
+                    display: block;
+                    position: absolute;
+                    inset: 100% 0 0;
+                    z-index: 0;
+                    cursor: default;
+                    user-select: none;
                 }
 
                 .k-search-highlight-mark {
                     color: transparent;
                 }
+
+                .k-highlighting {
+                    touch-action: none;
+                }
+            }
+
+            .k-annotation-layer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform-origin: 0 0;
+                pointer-events: none;
+
+                section {
+                    position: absolute;
+                }
+
+                .k-annotation-text-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    color: transparent;
+                    user-select: none;
+                    pointer-events: none;
+                }
+            }
+
+            .k-annotation-editor-layer {
+                background: transparent;
+                position: absolute;
+                inset: 0;
+                transform-origin: 0 0;
+                cursor: auto;
+
+                .k-selected {
+                    z-index: 100000 !important; // stylelint-disable-line declaration-no-important
+                }
+
+                .k-highlight-editor {
+                    position: absolute;
+                    background: transparent;
+                    z-index: 1;
+                    cursor: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                    border: none;
+                    outline: none;
+                    pointer-events: none;
+                    transform-origin: 0 0;
+
+                    .k-internal {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        pointer-events: auto;
+                    }
+                }
+
+                .k-free-text-editor {
+                    position: absolute;
+                    background: transparent;
+                    z-index: 1;
+                    transform-origin: 0 0;
+                    cursor: text;
+                    caret-color: var( --kendo-pdf-viewer-free-text-annotation-text, #{$kendo-pdf-viewer-free-text-annotation-text} );
+                    max-width: 100%;
+                    max-height: 100%;
+                    border: solid 2px transparent;
+
+                    &.k-selected.k-draggable {
+                        cursor: move;;
+                    }
+
+                    &.k-selected .k-internal {
+                        border-radius: 0px;
+                        outline: 2px dashed var( --kendo-pdf-viewer-free-text-annotation-border, #{$kendo-pdf-viewer-free-text-annotation-border} );
+                    }
+
+                    .k-internal {
+                        background: transparent;
+                        border: none;
+                        inset: 0;
+                        overflow: visible;
+                        white-space: nowrap;
+                        user-select: none;
+                    }
+
+                    .k-internal:empty::before {
+                        content: attr(default-content);
+                    }
+                }
+            }
+
+            .k-annotation-editor-layer-disabled {
+                pointer-events: none;
             }
         }
 
@@ -149,26 +290,24 @@
         }
     }
 
-    // Toolbar in Popup
-    .k-popup > .k-toolbar {
+    // Annotation Toolbar
+    .k-pdf-viewer-annotation-editor-toolbar > .k-toolbar {
         width: min-content;
         border-bottom-width: 0;
     }
 
 
-    // Popup
-    .k-pdf-viewer-popup {
-        padding-block: $kendo-pdf-viewer-popup-padding-y;
-        padding-inline: $kendo-pdf-viewer-popup-padding-x;
-    }
+    // Annotation Editor
+    .k-pdf-viewer-annotation-editor {
+        padding-block: var(--kendo-pdf-viewer-popup-padding-y, #{$kendo-pdf-viewer-popup-padding-y} );
+        padding-inline: var(--kendo-pdf-viewer-popup-padding-x, #{$kendo-pdf-viewer-popup-padding-x} );
 
-    .k-column-menu-group-header {
-        padding-inline: 0;
-    }
+        .k-column-menu-group-header {
+            padding-inline: 0;
+        }
 
-    .k-coloreditor-font-size {
-        max-width: 85px;
-        align-self: flex-start;
+        .k-form-field {
+            margin-top: 0;
+        }
     }
-
 }
