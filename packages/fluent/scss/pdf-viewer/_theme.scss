@@ -12,7 +12,7 @@
 
 
         // Canvas
-        .k-canvas {
+        .k-pdf-viewer-canvas {
             @include fill(
                 var( --kendo-pdf-viewer-canvas-text, #{$kendo-pdf-viewer-canvas-text} ),
                 var( --kendo-pdf-viewer-canvas-bg, #{$kendo-pdf-viewer-canvas-bg} ),
@@ -39,6 +39,16 @@
             );
         }
 
+        .k-canvas-wrapper .k-highlight-outline {
+            &.k-hover,
+            &:hover {
+                stroke: var( --kendo-pdf-viewer-highlight-annotation-hover-border, #{$kendo-pdf-viewer-highlight-annotation-hover-border} );
+            }
+
+            &.k-selected {
+                stroke: var( --kendo-pdf-viewer-highlight-annotation-border, #{$kendo-pdf-viewer-highlight-annotation-border} );
+            }
+        }
 
         // Search
         .k-search-highlight {
@@ -52,7 +62,13 @@
                 $bg: var( --kendo-pdf-viewer-search-highlight-mark-bg, #{$kendo-pdf-viewer-search-highlight-mark-bg} )
             );
         }
+        .k-annotation-editor-layer .k-free-text-editor .k-internal {
+            color: var( --kendo-pdf-viewer-free-text-annotation-text, #{$kendo-pdf-viewer-free-text-annotation-text} );
 
+            &:empty::before {
+                color: var( --kendo-pdf-viewer-free-text-annotation-placeholder-text, #{$kendo-pdf-viewer-free-text-annotation-placeholder-text} );
+            }
+        }
     }
 
     .k-pdf-viewer-canvas > .k-search-panel {
