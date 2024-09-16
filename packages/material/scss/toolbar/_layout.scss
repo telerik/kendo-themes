@@ -23,6 +23,10 @@
         .k-split-button {
             @include box-shadow( none );
         }
+
+        &.k-toolbar-outline {
+            @include box-shadow( none );
+        }
     }
 
     // Overflow container

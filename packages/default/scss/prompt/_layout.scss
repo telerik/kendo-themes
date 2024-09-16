@@ -6,6 +6,12 @@
         flex-direction: column;
         position: relative;
         overflow: hidden;
+
+        // Toolbar
+        .k-toolbar {
+            border-top-width: 0;
+            border-inline-width: 0;
+        }
     }
 
     // Content

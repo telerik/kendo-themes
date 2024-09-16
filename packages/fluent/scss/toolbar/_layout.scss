@@ -87,7 +87,19 @@
             outline-width: var( --kendo-toolbar-item-focus-outline-width, #{$kendo-toolbar-item-focus-outline-width} );
             outline-style: var( --kendo-toolbar-item-focus-outline-style, #{$kendo-toolbar-item-focus-outline-style} );
         }
+    }
 
+    // Outline Toolbar
+    .k-toolbar-outline {
+        border-width: var( --kendo-toolbar-outline-border-width, #{$kendo-toolbar-outline-border-width} );
+        background: none;
+    }
+
+    // Flat Toolbar
+    .k-toolbar-flat {
+        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
+        border-inline-color: transparent !important; // stylelint-disable-line declaration-no-important
+        background: none !important;  // stylelint-disable-line declaration-no-important
     }
 
     // Toolbar group
@@ -221,16 +233,6 @@
         .k-overflow-hidden {
             display: none;
         }
-    }
-
-    // Flat Toolbar
-    .k-toolbar.k-toolbar-flat {
-        border-width: $kendo-toolbar-flat-border-width 0;
-        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
-        border-bottom-color: inherit;
-        color: inherit;
-        background: none !important;  // stylelint-disable-line declaration-no-important
-        box-shadow: none;
     }
 
 }
