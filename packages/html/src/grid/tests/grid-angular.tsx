@@ -155,7 +155,7 @@ export default () =>(
             <span className="col-3">Angular -- standalone column chooser</span>
             <section className="col-2">
                 <GridNormal pager={false} groupingHeader={false} toolbar={(
-                    <div className="k-toolbar k-grid-toolbar">
+                    <div className="k-toolbar k-toolbar-solid k-grid-toolbar">
                         <div className="k-spacer"></div>
                         <div className="k-grid-column-chooser">
                             <Button fillMode="flat" icon="columns"></Button>

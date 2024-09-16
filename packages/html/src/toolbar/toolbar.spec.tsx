@@ -5,7 +5,7 @@ import { Combobox } from '../combobox';
 import { DropdownList } from '../dropdownlist';
 import { MenuButton } from '../menu-button';
 import SplitButton from '../split-button/split-button.spec';
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
+import { classNames, optionClassNames, stateClassNames, States, Size, FillMode } from '../misc';
 
 export const TOOLBAR_CLASSNAME = `k-toolbar`;
 
@@ -14,11 +14,13 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [Size.small, Size.medium, Size.large],
+    fillMode: [FillMode.solid, FillMode.outline, FillMode.flat],
 };
 
 export type KendoToolbarOptions = {
-  size?: (typeof options.size)[number] | null;
+    size?: (typeof options.size)[number] | null;
+    fillMode?: (typeof options.fillMode)[number] | null;
 };
 
 export type KendoToolbarProps = KendoToolbarOptions & {
@@ -28,7 +30,8 @@ export type KendoToolbarProps = KendoToolbarOptions & {
 export type KendoToolbarState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Size.medium
+    size: Size.medium,
+    fillMode: FillMode.solid,
 };
 
 export const Toolbar = (
@@ -38,6 +41,7 @@ export const Toolbar = (
 ) => {
     const {
         size = defaultOptions.size,
+        fillMode = defaultOptions.fillMode,
         focus,
         resizable,
         ...other
@@ -152,6 +156,7 @@ export const Toolbar = (
                 TOOLBAR_CLASSNAME,
                 optionClassNames(TOOLBAR_CLASSNAME, {
                     size,
+                    fillMode
                 }),
                 stateClassNames(TOOLBAR_CLASSNAME, {
                     focus,
