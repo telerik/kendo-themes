@@ -2,15 +2,6 @@
 
     // Theme
     .k-toolbar {
-        @include fill(
-            $kendo-toolbar-text,
-            $kendo-toolbar-bg,
-            $kendo-toolbar-border,
-            $kendo-toolbar-gradient
-        );
-        @include box-shadow( $kendo-toolbar-shadow );
-
-
         // Separator
         .k-separator,
         .k-toolbar-separator {
@@ -28,6 +19,39 @@
         // Button group
         .k-button-group {}
 
+    }
+
+    // Solid Toolbar
+    .k-toolbar-solid {
+        @include fill(
+            $kendo-toolbar-text,
+            $kendo-toolbar-bg,
+            $kendo-toolbar-border,
+            $kendo-toolbar-gradient
+        );
+        @include box-shadow( $kendo-toolbar-shadow );
+    }
+
+    // Outline Toolbar
+    .k-toolbar-outline {
+        @include fill(
+            $color: $kendo-toolbar-outline-text,
+            $border: $kendo-toolbar-outline-border
+        );
+        @include box-shadow( $kendo-toolbar-outline-shadow );
+    }
+
+    // Flat Toolbar
+    .k-toolbar-flat {
+        @include fill(
+            $color: $kendo-toolbar-flat-text,
+            $border: $kendo-toolbar-flat-border
+        );
+        @include box-shadow( $kendo-toolbar-flat-shadow );
+
+        > .k-separator {
+            border-inline-color: $kendo-toolbar-flat-border;
+        }
     }
 
     .k-floating-toolbar,

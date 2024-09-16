@@ -101,7 +101,19 @@
             text-decoration: none;
             outline: 0;
         }
+    }
 
+    // Outline Toolbar
+    .k-toolbar-outline {
+        border-width: $kendo-toolbar-outline-border-width;
+        background: none;
+    }
+
+    // Flat Toolbar
+    .k-toolbar-flat {
+        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
+        border-inline-color: transparent !important; // stylelint-disable-line declaration-no-important
+        background: none !important;  // stylelint-disable-line declaration-no-important
     }
 
 
@@ -246,16 +258,6 @@
         .k-overflow-hidden {
             display: none;
         }
-    }
-
-    // Flat Toolbar
-    .k-toolbar.k-toolbar-flat {
-        border-width: $kendo-toolbar-flat-border-width 0;
-        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
-        border-bottom-color: inherit;
-        color: inherit;
-        background: none !important;  // stylelint-disable-line declaration-no-important
-        box-shadow: none;
     }
 
 }

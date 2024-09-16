@@ -1,13 +1,10 @@
+@use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-toolbar--theme() {
 
     // Theme
     .k-toolbar {
-        color: var( --kendo-toolbar-text, #{$kendo-toolbar-text} );
-        background-color: var( --kendo-toolbar-bg, #{$kendo-toolbar-bg} );
-        border-color: var( --kendo-toolbar-border, #{$kendo-toolbar-border} );
-
         // Separator
         .k-separator,
         .k-toolbar-separator {
@@ -20,6 +17,35 @@
             outline-color: var( --kendo-toolbar-item-focus-outline-color, #{$kendo-toolbar-item-focus-outline-color} );
         }
 
+    }
+
+    // Solid Toolbar
+    .k-toolbar-solid {
+        @include fill (
+            var( --kendo-toolbar-text, #{$kendo-toolbar-text} ),
+            var( --kendo-toolbar-bg, #{$kendo-toolbar-bg} ),
+            var( --kendo-toolbar-border, #{$kendo-toolbar-border} )
+        );
+    }
+
+    // Outline Toolbar
+    .k-toolbar-outline {
+        @include fill (
+            $color: var( --kendo-toolbar-outline-text, #{$kendo-toolbar-outline-text} ),
+            $border: var( --kendo-toolbar-outline-border, #{$kendo-toolbar-outline-border} )
+        );
+    }
+
+    // Flat Toolbar
+    .k-toolbar-flat {
+        @include fill (
+            $color: var( --kendo-toolbar-flat-text, #{$kendo-toolbar-flat-text} ),
+            $border: var( --kendo-toolbar-flat-border, #{$kendo-toolbar-flat-border} )
+        );
+
+        > .k-separator {
+            border-inline-color: var( --kendo-toolbar-flat-border, #{$kendo-toolbar-flat-border} );
+        }
     }
 
     // stylelint-disable selector-class-pattern

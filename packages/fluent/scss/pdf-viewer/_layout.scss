@@ -149,4 +149,26 @@
         }
     }
 
+    // Toolbar in Popup
+    .k-popup > .k-toolbar {
+        width: min-content;
+        border-bottom-width: 0;
+    }
+
+
+    // Popup
+    .k-pdf-viewer-popup {
+        padding-block: $kendo-pdf-viewer-popup-padding-y;
+        padding-inline: $kendo-pdf-viewer-popup-padding-x;
+    }
+
+    .k-column-menu-group-header {
+        padding-inline: 0;
+    }
+
+    .k-coloreditor-font-size {
+        max-width: 85px;
+        align-self: flex-start;
+    }
+
 }

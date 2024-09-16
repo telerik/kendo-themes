@@ -64,7 +64,7 @@ $kendo-toolbar-bg: $kendo-component-bg !default;
 $kendo-toolbar-text: $kendo-component-text !default;
 /// The color of the border around the Toolbar.
 /// @group toolbar
-$kendo-toolbar-border: null !default;
+$kendo-toolbar-border: $kendo-component-border !default;
 /// The gradient of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-gradient: null !default;
@@ -72,9 +72,41 @@ $kendo-toolbar-gradient: null !default;
 /// @group toolbar
 $kendo-toolbar-shadow: $box-shadow-depth-4 !default;
 
+/// The text color of the outline Toolbar.
+/// @group toolbar
+$kendo-toolbar-outline-text: null !default;
+/// The color of the border around the outline Toolbar.
+/// @group toolbar
+$kendo-toolbar-outline-border: currentColor !default;
+/// The gradient of the outline Toolbar.
+/// @group toolbar
+$kendo-toolbar-outline-gradient: null !default;
+/// The box shadow of the outline Toolbar.
+/// @group toolbar
+$kendo-toolbar-outline-shadow: none !default;
+/// The width of the border around the outline Toolbar.
+/// @group toolbar
+$kendo-toolbar-outline-border-width: 1px !default;
+
+/// The text color of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-text: null !default;
+/// The color of the border around the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-border: $kendo-toolbar-border !default;
+/// The gradient of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-gradient: null !default;
+/// The box shadow of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-shadow: 0 2px 0 -1px $kendo-component-border !default;
+/// Border width of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-border-width: 1px !default;
+
 /// The color of the separator border of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-separator-border: $kendo-component-border !default;
+$kendo-toolbar-separator-border: inherit !default;
 
 /// The width of the input in the Toolbar.
 /// @group toolbar
@@ -83,10 +115,6 @@ $kendo-toolbar-input-width: 10em !default;
 /// The box shadow of the focused Toolbar item.
 /// @group toolbar
 $kendo-toolbar-item-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
-
-/// Border width of the flat Toolbar.
-/// @group toolbar
-$kendo-toolbar-flat-border-width: 1px !default;
 
 /// The sizes map for the Toolbar.
 /// @group toolbar
