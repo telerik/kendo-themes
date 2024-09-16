@@ -23,13 +23,15 @@ export type KendoColorEditorProps = {
     dir?: 'ltr' | 'rtl';
     group?: boolean;
     palette?: Array<string> | any;
+    actionButtons?: boolean;
 };
 
 export type KendoColorEditorState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     view: 'gradient',
-    palette: PALETTEPRESETS.office
+    palette: PALETTEPRESETS.office,
+    actionButtons: true,
 } as const;
 
 export const ColorEditor = (
@@ -46,6 +48,7 @@ export const ColorEditor = (
         focusView,
         dir,
         group,
+        actionButtons = defaultOptions.actionButtons,
     } = props;
 
     return (
@@ -76,10 +79,10 @@ export const ColorEditor = (
             <div className="k-coloreditor-views k-vstack">
                 { view === 'gradient' ? <ColorGradient focus={focusView} /> : <ColorPalette palette={palette}/> }
             </div>
-            <ActionButtons className="k-coloreditor-footer" alignment="end" >
+            {actionButtons && <ActionButtons className="k-coloreditor-footer" alignment="end" >
                 <Button className="k-coloreditor-cancel">Cancel</Button>
                 <Button themeColor="primary" className="k-coloreditor-apply">Apply</Button>
-            </ActionButtons>
+            </ActionButtons>}
         </div>
     );
 };
