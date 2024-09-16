@@ -25,8 +25,8 @@ export const SpreadsheetToolbar = (
             className={classNames(
                 props.className,
                 SPREADSHEETTOOLBAR_CLASSNAME,
-                "k-toolbar-flat"
             )}
+            fillMode="flat"
         >
             {children}
         </Toolbar>
