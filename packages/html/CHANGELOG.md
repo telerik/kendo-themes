@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v9.1.0-dev.1...v9.1.0-dev.2) (2024-09-16)
+
+
+### Features
+
+* **html:** update menu spec to match the design revision ([a55bae5](https://github.com/telerik/kendo-themes/commit/a55bae53e876db17df7a87dbd3735eb03b569a72))
+
+
+
+
+
 # [9.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v9.1.0-dev.0...v9.1.0-dev.1) (2024-09-09)
 
 
