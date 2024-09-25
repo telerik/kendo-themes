@@ -16742,9 +16742,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-orgchart-line-v-height</td>
-    <td>Number</td>
-    <td><code>25px</code></td>
-    <td><code>25px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the OrgChart connecting line.</div></div>
@@ -23190,9 +23190,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-splitter-drag-icon-margin</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(3.5)} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-3\.5, 0.875rem) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Splitter drag handle icon.</div></div>
@@ -24176,6 +24176,16 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxxl, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Stepper label.</div></div>
     </td>
 </tr>
 <tr>
@@ -27283,9 +27293,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-timeline-track-arrow-width</td>
-    <td>Number</td>
-    <td><code>30px</code></td>
-    <td><code>30px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(7.5)</code></td>
+    <td><code>var(--kendo-spacing-7\.5, 1.875rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Timeline track arrow.</div></div>
@@ -27293,9 +27303,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-timeline-track-arrow-height</td>
-    <td>Number</td>
-    <td><code>30px</code></td>
-    <td><code>30px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(7.5)</code></td>
+    <td><code>var(--kendo-spacing-7\.5, 1.875rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Timeline track arrow.</div></div>
@@ -27333,9 +27343,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-timeline-track-size</td>
-    <td>Number</td>
-    <td><code>6px</code></td>
-    <td><code>6px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Timeline track.</div></div>
@@ -27343,9 +27353,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-timeline-track-wrap-padding-bottom</td>
-    <td>Number</td>
-    <td><code>k-math-div( $kendo-timeline-track-size, 2 )</code></td>
-    <td><code>3px</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-timeline-track-size} / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5, 0.375rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom padding of the Timeline's track wrapper.</div></div>
@@ -27374,8 +27384,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-timeline-track-bottom-calc</td>
     <td>Calculation</td>
-    <td><code>calc(#{k-math-div( $kendo-timeline-track-arrow-height, 2 )} + #{$kendo-timeline-track-wrap-padding-bottom})</code></td>
-    <td><code>calc(15px + 3px)</code></td>
+    <td><code>calc( calc( #{$kendo-timeline-track-arrow-height} / 2) + #{$kendo-timeline-track-wrap-padding-bottom})</code></td>
+    <td><code>calc(var(--kendo-spacing-7\.5, 1.875rem) / 2 + calc(var(--kendo-spacing-1\.5, 0.375rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom offset of the Timeline track.</div></div>
@@ -27385,7 +27395,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-timeline-track-start-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-track-arrow-width} - 2 * #{$kendo-timeline-track-border-width})</code></td>
-    <td><code>calc(30px - 2 * 1px)</code></td>
+    <td><code>calc(var(--kendo-spacing-7\.5, 1.875rem) - 2 * 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left offset of the Timeline track.</div></div>
@@ -27395,7 +27405,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-timeline-track-end-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-track-arrow-width} - 2 * #{$kendo-timeline-track-border-width})</code></td>
-    <td><code>calc(30px - 2 * 1px)</code></td>
+    <td><code>calc(var(--kendo-spacing-7\.5, 1.875rem) - 2 * 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The right offset of the Timeline track.</div></div>
@@ -27565,7 +27575,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-timeline-flag-margin-bottom-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-track-size} + 2 * #{$kendo-timeline-track-border-width} + #{$kendo-timeline-flag-offset-bottom} + #{$kendo-timeline-flag-callout-height})</code></td>
-    <td><code>calc(6px + 2 * 1px + 4px + 10px)</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5, 0.375rem) + 2 * 1px + 4px + 10px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Timeline flag.</div></div>
@@ -27595,7 +27605,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-timeline-vertical-padding-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-spacing-x} + (#{$kendo-timeline-flag-min-width} - #{$kendo-timeline-track-size}) / 2)</code></td>
-    <td><code>calc(var(--kendo-spacing-10, 2.5rem) + (80px - 6px) / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-10, 2.5rem) + (80px - var(--kendo-spacing-1\.5, 0.375rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical Timeline.</div></div>
@@ -27605,7 +27615,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-timeline-vertical-padding-with-dates-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-vertical-padding-calc} + #{$kendo-timeline-date-width})</code></td>
-    <td><code>calc(calc(var(--kendo-spacing-10, 2.5rem) + (80px - 6px) / 2) + 50px)</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-10, 2.5rem) + (80px - var(--kendo-spacing-1\.5, 0.375rem)) / 2) + 50px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical Timeline date.</div></div>
@@ -27615,7 +27625,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-timeline-mobile-vertical-padding-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-mobile-spacing-x} + (#{$kendo-timeline-flag-min-width} - #{$kendo-timeline-track-size}) / 2)</code></td>
-    <td><code>calc(var(--kendo-spacing-4, 1rem) + (80px - 6px) / 2)</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) + (80px - var(--kendo-spacing-1\.5, 0.375rem)) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile Timeline.</div></div>
@@ -27625,7 +27635,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-timeline-mobile-vertical-padding-with-dates-calc</td>
     <td>Calculation</td>
     <td><code>calc(#{$kendo-timeline-mobile-vertical-padding-calc} + #{$kendo-timeline-date-width})</code></td>
-    <td><code>calc(calc(var(--kendo-spacing-4, 1rem) + (80px - 6px) / 2) + 50px)</code></td>
+    <td><code>calc(calc(var(--kendo-spacing-4, 1rem) + (80px - var(--kendo-spacing-1\.5, 0.375rem)) / 2) + 50px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the vertical mobile Timeline date.</div></div>

@@ -20998,9 +20998,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-orgchart-line-v-height</td>
-    <td>Number</td>
-    <td><code>25px</code></td>
-    <td><code>25px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(6)</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the OrgChart connecting line.</div></div>
@@ -28439,6 +28439,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-label-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Stepper label.</div></div>
     </td>
 </tr>
 <tr>
