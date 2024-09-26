@@ -14,6 +14,9 @@
 // Expose
 @mixin kendo-tile-layout--styles() {
     @include import-once( "tile-layout" ) {
+        @include core-styles();
+        @include kendo-card--styles();
+        @include kendo-icon--styles();
         @include kendo-tile-layout--layout();
         @include kendo-tile-layout--theme();
         @include kendo-utils--interactivity--resize();

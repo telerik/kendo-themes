@@ -14,6 +14,9 @@
 // Expose
 @mixin kendo-listview--styles() {
     @include import-once( "listview" ) {
+        @include core-styles();
+        @include kendo-pager--styles();
+        @include kendo-icon--styles();
         @include kendo-listview--layout();
         @include kendo-listview--theme();
         @include kendo-utils--layout--display();

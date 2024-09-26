@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-radio--styles() {
     @include import-once( "radio" ) {
+        @include core-styles();
         @include kendo-radio--layout();
         @include kendo-radio--theme();
     }

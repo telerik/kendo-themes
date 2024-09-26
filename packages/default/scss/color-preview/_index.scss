@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-color-preview--styles() {
     @include import-once( "color-preview" ) {
+        @include core-styles();
         @include kendo-color-preview--layout();
         @include kendo-color-preview--theme();
     }

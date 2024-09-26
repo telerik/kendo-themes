@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-skeleton--styles() {
     @include import-once( "skeleton" ) {
+        @include core-styles();
         @include kendo-skeleton--layout();
         @include kendo-skeleton--theme();
     }

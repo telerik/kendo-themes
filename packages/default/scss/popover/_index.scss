@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-popover--styles() {
     @include import-once( "popover" ) {
+        @include core-styles();
+        @include kendo-card--styles();
+        @include kendo-popup--styles();
         @include kendo-popover--layout();
         @include kendo-popover--theme();
     }

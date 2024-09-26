@@ -14,6 +14,10 @@
 // Expose
 @mixin kendo-pager--styles() {
     @include import-once( "pager" ) {
+        @include core-styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
         @include kendo-pager--layout();
         @include kendo-pager--theme();
     }

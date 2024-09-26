@@ -20,6 +20,15 @@
 // Expose
 @mixin kendo-orgchart--styles() {
     @include import-once( "orgchart" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-form--styles();
+        @include kendo-textbox--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-upload--styles();
+        @include kendo-menu--styles();
+        @include kendo-card--styles();
+        @include kendo-window--styles();
         @include kendo-orgchart--layout();
         @include kendo-orgchart--theme();
         @include kendo-utils--layout--overflow();

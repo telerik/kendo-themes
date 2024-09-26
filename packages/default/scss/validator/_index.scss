@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-validator--styles() {
     @include import-once( "validator" ) {
+        @include core-styles();
+        @include kendo-tooltip--styles();
+        @include kendo-icon--styles();
         @include kendo-validator--layout();
         @include kendo-validator--theme();
     }

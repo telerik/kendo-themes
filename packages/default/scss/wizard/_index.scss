@@ -15,6 +15,11 @@
 // Expose
 @mixin kendo-wizard--styles() {
     @include import-once( "wizard" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-stepper--styles();
+        @include kendo-form--styles();
+        @include kendo-icon--styles();
         @include kendo-wizard--layout();
         @include kendo-wizard--theme();
     }

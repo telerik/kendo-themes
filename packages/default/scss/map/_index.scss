@@ -14,6 +14,10 @@
 // Expose
 @mixin kendo-map--styles() {
     @include import-once( "map" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-scroller--styles();
+        @include kendo-icon--styles();
         @include kendo-map--layout();
         @include kendo-map--theme();
     }

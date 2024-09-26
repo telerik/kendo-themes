@@ -12,6 +12,7 @@
 // Expose
 @mixin kendo-panel--styles() {
     @include import-once( "panel" ) {
+        @include core-styles();
         @include kendo-panel--layout();
         @include kendo-panel--theme();
     }

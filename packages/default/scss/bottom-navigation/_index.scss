@@ -13,6 +13,8 @@
 // Expose
 @mixin kendo-bottom-navigation--styles() {
     @include import-once( "bottom-navigation" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-bottom-navigation--layout();
         @include kendo-bottom-navigation--theme();
         @include kendo-utils--layout--position();

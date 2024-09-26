@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-input--styles() {
     @include import-once( "input" ) {
+        @include core-styles();
+        @include kendo-button--styles();
         @include kendo-input--layout();
         @include kendo-input--theme();
     }

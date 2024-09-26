@@ -16,6 +16,12 @@
 // Expose
 @mixin kendo-time-picker--styles() {
     @include import-once( "time-picker" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-button--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-time-selector--styles();
         @include kendo-time-picker--layout();
         @include kendo-time-picker--theme();
     }

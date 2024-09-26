@@ -16,6 +16,10 @@
 // Expose
 @mixin kendo-card--styles() {
     @include import-once( "card" ) {
+        @include core-styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-icon--styles();
+        @include kendo-typography--styles();
         @include kendo-card--layout();
         @include kendo-card--theme();
         @include kendo-utils--typography--text-overflow();

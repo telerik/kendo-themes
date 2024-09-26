@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-signature--styles() {
     @include import-once( "signature" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-input--styles();
         @include kendo-signature--layout();
         @include kendo-signature--theme();
     }
