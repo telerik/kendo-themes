@@ -14,6 +14,10 @@
 // Expose
 @mixin kendo-time-selector--styles() {
     @include import-once( "time-selector" ) {
+        @include core-styles();
+        @include kendo-list--styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-button--styles();
         @include kendo-time-selector--layout();
         @include kendo-time-selector--theme();
     }

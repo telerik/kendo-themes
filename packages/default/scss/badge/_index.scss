@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-badge--styles() {
     @include import-once( "badge" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-badge--layout();
         @include kendo-badge--theme();
     }

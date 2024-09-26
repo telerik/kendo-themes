@@ -15,6 +15,11 @@
 // Expose
 @mixin kendo-menu--styles() {
     @include import-once( "menu" ) {
+        @include core-styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
         @include kendo-menu--layout();
         @include kendo-menu--theme();
     }

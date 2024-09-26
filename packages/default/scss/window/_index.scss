@@ -16,6 +16,12 @@
 // Expose
 @mixin kendo-window--styles() {
     @include import-once( "window" ) {
+        @include core-styles();
+        @include kendo-overlay--styles();
+        @include kendo-form--styles();
+        @include kendo-button--styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-icon--styles();
         @include kendo-window--layout();
         @include kendo-window--theme();
     }

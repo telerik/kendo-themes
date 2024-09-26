@@ -15,6 +15,9 @@
 // Expose
 @mixin kendo-breadcrumb--styles() {
     @include import-once( "breadcrumb" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-icon--styles();
         @include kendo-breadcrumb--layout();
         @include kendo-breadcrumb--theme();
         @include kendo-utils--flex-grid--flex();

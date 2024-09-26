@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-progressbar--styles() {
     @include import-once( "progressbar" ) {
+        @include core-styles();
         @include kendo-progressbar--layout();
         @include kendo-progressbar--theme();
     }

@@ -14,6 +14,9 @@
 // Expose
 @mixin kendo-expander--styles() {
     @include import-once( "expander" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
         @include kendo-expander--layout();
         @include kendo-expander--theme();
         @include kendo-utils--layout--display();

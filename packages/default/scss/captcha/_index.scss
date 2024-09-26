@@ -18,6 +18,12 @@
 // Expose
 @mixin kendo-captcha--styles() {
     @include import-once( "captcha" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-input--styles();
+        @include kendo-button--styles();
+        @include kendo-textbox--styles();
+        @include kendo-slider--styles();
         @include kendo-captcha--layout();
         @include kendo-captcha--theme();
         @include kendo-utils--typography--text-color();

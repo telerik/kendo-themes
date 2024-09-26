@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-rating--styles() {
     @include import-once( "rating" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-rating--layout();
         @include kendo-rating--theme();
     }

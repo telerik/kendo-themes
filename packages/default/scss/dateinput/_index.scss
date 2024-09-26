@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-date-input--styles() {
     @include import-once( "date-input" ) {
+        @include core-styles();
+        @include kendo-input--styles();
         @include kendo-date-input--layout();
         @include kendo-date-input--theme();
     }

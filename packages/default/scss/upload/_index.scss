@@ -15,6 +15,11 @@
 // Expose
 @mixin kendo-upload--styles() {
     @include import-once( "upload" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-icon--styles();
+        @include kendo-dropzone--styles();
         @include kendo-upload--layout();
         @include kendo-upload--theme();
     }

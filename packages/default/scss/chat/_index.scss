@@ -15,6 +15,11 @@
 // Expose
 @mixin kendo-chat--styles() {
     @include import-once( "chat" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-card--styles();
+        @include kendo-icon--styles();
+        @include kendo-toolbar--styles();
         @include kendo-chat--layout();
         @include kendo-chat--theme();
     }

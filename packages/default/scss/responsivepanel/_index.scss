@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-responsive-panel--styles() {
     @include import-once( "responsive-panel" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-responsive-panel--layout();
         @include kendo-responsive-panel--theme();
     }

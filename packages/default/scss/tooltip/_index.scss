@@ -14,6 +14,9 @@
 // Expose
 @mixin kendo-tooltip--styles() {
     @include import-once( "tooltip" ) {
+        @include core-styles();
+        @include kendo-popup--styles();
+        @include kendo-icon--styles();
         @include kendo-tooltip--layout();
         @include kendo-tooltip--theme();
         @include kendo-utils--typography--text-color();

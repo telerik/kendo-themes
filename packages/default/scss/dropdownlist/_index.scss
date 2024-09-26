@@ -15,6 +15,11 @@
 // Expose
 @mixin kendo-dropdown-list--styles() {
     @include import-once( "dropdown-list" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
         @include kendo-dropdown-list--layout();
         @include kendo-dropdown-list--theme();
     }

@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-stepper--styles() {
     @include import-once( "stepper" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-progressbar--styles();
         @include kendo-stepper--layout();
         @include kendo-stepper--theme();
     }

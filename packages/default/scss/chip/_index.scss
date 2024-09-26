@@ -13,6 +13,8 @@
 // Expose
 @mixin kendo-chip--styles() {
     @include import-once( "chip" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-chip--layout();
         @include kendo-chip--theme();
         @include kendo-utils--typography--text-overflow();

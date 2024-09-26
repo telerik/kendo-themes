@@ -13,6 +13,7 @@
 // Expose
 @mixin kendo-icon--styles() {
     @include import-once( "icon" ) {
+        @include core-styles();
         @include kendo-icon--layout();
         @include kendo-icon--theme();
         @include kendo-utils--transform--rotate();

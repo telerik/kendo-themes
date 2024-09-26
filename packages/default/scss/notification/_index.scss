@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-notification--styles() {
     @include import-once( "notification" ) {
+        @include core-styles();
+        @include kendo-popup--styles();
+        @include kendo-icon--styles();
         @include kendo-notification--layout();
         @include kendo-notification--theme();
     }

@@ -12,6 +12,7 @@
 // Expose
 @mixin kendo-typography--styles() {
     @include import-once( "typography" ) {
+        @include core-styles();
         @include kendo-typography--layout();
         @include kendo-typography--theme();
         @include kendo-utils--spacing--margin();

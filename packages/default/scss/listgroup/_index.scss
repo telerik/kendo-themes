@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-listgroup--styles() {
     @include import-once( "listgroup" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-listgroup--layout();
         @include kendo-listgroup--theme();
     }

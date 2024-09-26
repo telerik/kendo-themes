@@ -15,6 +15,10 @@
 // Expose
 @mixin kendo-numeric-textbox--styles() {
     @include import-once( "numeric-textbox" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-icon--styles();
         @include kendo-numeric-textbox--layout();
         @include kendo-numeric-textbox--theme();
     }

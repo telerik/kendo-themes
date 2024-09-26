@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-treeview--styles() {
     @include import-once( "treeview" ) {
+        @include core-styles();
+        @include kendo-checkbox--styles();
+        @include kendo-icon--styles();
         @include kendo-treeview--layout();
         @include kendo-treeview--theme();
     }

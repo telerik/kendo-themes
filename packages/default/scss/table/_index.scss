@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-table--styles() {
     @include import-once( "table" ) {
+        @include core-styles();
         @include kendo-table--layout();
         @include kendo-table--theme();
     }

@@ -17,6 +17,12 @@
 // Expose
 @mixin kendo-pivotgrid--styles() {
     @include import-once( "pivotgrid" ) {
+        @include core-styles();
+        @include kendo-dialog--styles();
+        @include kendo-treeview--styles();
+        @include kendo-grid--styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
         @include kendo-pivotgrid--layout();
         @include kendo-pivotgrid--theme();
         @include kendo-utils--layout--display();

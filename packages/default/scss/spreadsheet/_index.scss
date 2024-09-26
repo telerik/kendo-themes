@@ -27,6 +27,22 @@
 // Expose
 @mixin kendo-spreadsheet--styles() {
     @include import-once( "spreadsheet" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-checkbox--styles();
+        @include kendo-radio--styles();
+        @include kendo-color-picker--styles();
+        @include kendo-combobox--styles();
+        @include kendo-date-time-picker--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-upload--styles();
+        @include kendo-menu--styles();
+        @include kendo-window--styles();
+        @include kendo-tabstrip--styles();
+        @include kendo-treeview--styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
         @include kendo-spreadsheet--layout();
         @include kendo-spreadsheet--theme();
         @include kendo-utils--flex-grid--order();

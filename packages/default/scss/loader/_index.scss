@@ -13,6 +13,8 @@
 // Expose
 @mixin kendo-loader--styles() {
     @include import-once( "loader" ) {
+        @include core-styles();
+        @include kendo-overlay--styles();
         @include kendo-loader--layout();
         @include kendo-loader--theme();
         @include kendo-utils--typography--text-color();

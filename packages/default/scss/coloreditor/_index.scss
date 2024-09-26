@@ -15,6 +15,11 @@
 // Expose
 @mixin kendo-color-editor--styles() {
     @include import-once( "color-editor" ) {
+        @include core-styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-color-preview--styles();
+        @include kendo-color-palette--styles();
+        @include kendo-color-gradient--styles();
         @include kendo-color-editor--layout();
         @include kendo-color-editor--theme();
     }

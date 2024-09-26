@@ -16,6 +16,11 @@
 // Expose
 @mixin kendo-dropdown-tree--styles() {
     @include import-once( "dropdown-tree" ) {
+        @include core-styles();
+        @include kendo-floating-label--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-multiselect--styles();
+        @include kendo-treeview--styles();
         @include kendo-dropdown-tree--layout();
         @include kendo-dropdown-tree--theme();
         @include kendo-utils--typography--text-align();

@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-treelist--styles() {
     @include import-once( "treelist" ) {
+        @include core-styles();
+        @include kendo-grid--styles();
+        @include kendo-icon--styles();
         @include kendo-treelist--layout();
         @include kendo-treelist--theme();
     }

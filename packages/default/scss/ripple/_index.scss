@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-ripple--styles() {
     @include import-once( "ripple" ) {
+        @include core-styles();
         @include kendo-ripple--layout();
         @include kendo-ripple--theme();
     }

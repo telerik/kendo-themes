@@ -14,6 +14,9 @@
 // Expose
 @mixin kendo-textarea--styles() {
     @include import-once( "textarea" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
         @include kendo-textarea--layout();
         @include kendo-textarea--theme();
         @include kendo-utils--flex-grid--align-items();

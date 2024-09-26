@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-textbox--styles() {
     @include import-once( "textbox" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
         @include kendo-textbox--layout();
         @include kendo-textbox--theme();
     }

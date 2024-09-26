@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-appbar--styles() {
     @include import-once( "appbar" ) {
+        @include core-styles();
         @include kendo-appbar--layout();
         @include kendo-appbar--theme();
     }

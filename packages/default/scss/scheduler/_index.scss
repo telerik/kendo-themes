@@ -19,6 +19,14 @@
 // Expose
 @mixin kendo-scheduler--styles() {
     @include import-once( "scheduler" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-adaptive--styles();
+        @include kendo-button--styles();
+        @include kendo-date-time-picker--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-dialog--styles();
+        @include kendo-tooltip--styles();
         @include kendo-scheduler--layout();
         @include kendo-scheduler--theme();
         @include kendo-utils--typography--text-overflow();

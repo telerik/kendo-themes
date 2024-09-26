@@ -14,6 +14,10 @@
 // Expose
 @mixin kendo-masked-textbox--styles() {
     @include import-once( "masked-textbox" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-icon--styles();
         @include kendo-masked-textbox--layout();
         @include kendo-masked-textbox--theme();
     }

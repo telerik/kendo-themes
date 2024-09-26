@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-splitter--styles() {
     @include import-once( "splitter" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-splitter--layout();
         @include kendo-splitter--theme();
     }
