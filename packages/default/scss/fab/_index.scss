@@ -15,6 +15,10 @@
 // Expose
 @mixin kendo-fab--styles() {
     @include import-once( "fab" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
+        @include kendo-badge--styles();
         @include kendo-fab--layout();
         @include kendo-fab--theme();
         @include kendo-utils--layout--position();

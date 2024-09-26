@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-popup--styles() {
     @include import-once( "popup" ) {
+        @include core-styles();
         @include kendo-popup--layout();
         @include kendo-popup--theme();
     }

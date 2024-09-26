@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-button--styles() {
     @include import-once( "button" ) {
+        @include core-styles();
+        @include kendo-badge--styles();
+        @include kendo-icon--styles();
         @include kendo-button--layout();
         @include kendo-button--theme();
     }

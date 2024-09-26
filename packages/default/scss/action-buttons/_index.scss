@@ -13,6 +13,8 @@
 // Expose
 @mixin kendo-action-buttons--styles() {
     @include import-once( "action-buttons" ) {
+        @include core-styles();
+        @include kendo-button--styles();
         @include kendo-action-buttons--layout();
         @include kendo-action-buttons--theme();
         @include kendo-utils--flex-grid--justify-content();

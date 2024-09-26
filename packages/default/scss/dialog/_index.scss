@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-dialog--styles() {
     @include import-once( "dialog" ) {
+        @include core-styles();
+        @include kendo-window--styles();
         @include kendo-dialog--layout();
         @include kendo-dialog--theme();
     }

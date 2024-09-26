@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-panelbar--styles() {
     @include import-once( "panelbar" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
         @include kendo-panelbar--layout();
         @include kendo-panelbar--theme();
     }

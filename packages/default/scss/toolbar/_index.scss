@@ -16,6 +16,11 @@
 // Expose
 @mixin kendo-toolbar--styles() {
     @include import-once( "toolbar" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-popup--styles();
+        @include kendo-menu--styles();
+        @include kendo-icon--styles();
         @include kendo-toolbar--layout();
         @include kendo-toolbar--theme();
         @include kendo-utils--layout--overflow();

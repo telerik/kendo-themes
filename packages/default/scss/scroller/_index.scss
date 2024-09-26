@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-scroller--styles() {
     @include import-once( "scroller" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-scroller--layout();
         @include kendo-scroller--theme();
     }

@@ -12,6 +12,8 @@
 // Expose
 @mixin kendo-messagebox--styles() {
     @include import-once( "messagebox" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
         @include kendo-messagebox--layout();
         @include kendo-messagebox--theme();
     }

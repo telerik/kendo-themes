@@ -17,6 +17,12 @@
 // Expose
 @mixin kendo-autocomplete--styles() {
     @include import-once( "autocomplete" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-icon--styles();
         @include kendo-autocomplete--layout();
         @include kendo-autocomplete--theme();
     }

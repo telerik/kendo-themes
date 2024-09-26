@@ -17,6 +17,13 @@
 // Expose
 @mixin kendo-time-duration-picker--styles() {
     @include import-once( "time-duration-picker" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
+        @include kendo-input--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-time-selector--styles();
         @include kendo-time-duration-picker--layout();
         @include kendo-time-duration-picker--theme();
     }

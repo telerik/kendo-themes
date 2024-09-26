@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-overlay--styles() {
     @include import-once( "overlay" ) {
+        @include core-styles();
         @include kendo-overlay--layout();
         @include kendo-overlay--theme();
     }

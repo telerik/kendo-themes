@@ -14,6 +14,10 @@
 // Expose
 @mixin kendo-media-player--styles() {
     @include import-once( "media-player" ) {
+        @include core-styles();
+        @include kendo-slider--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-icon--styles();
         @include kendo-media-player--layout();
         @include kendo-media-player--theme();
     }

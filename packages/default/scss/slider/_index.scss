@@ -14,6 +14,10 @@
 // Expose
 @mixin kendo-slider--styles() {
     @include import-once( "slider" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-tooltip--styles();
+        @include kendo-icon--styles();
         @include kendo-slider--layout();
         @include kendo-slider--theme();
     }

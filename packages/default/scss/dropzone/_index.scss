@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-dropzone--styles() {
     @include import-once( "dropzone" ) {
+        @include core-styles();
         @include kendo-dropzone--layout();
         @include kendo-dropzone--theme();
     }

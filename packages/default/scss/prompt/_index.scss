@@ -12,6 +12,7 @@
 // Expose
 @mixin kendo-prompt--styles() {
     @include import-once( "prompt" ) {
+        @include core-styles();
         @include kendo-prompt--layout();
         @include kendo-prompt--theme();
         @include kendo-utils--flex-grid--flex-direction();

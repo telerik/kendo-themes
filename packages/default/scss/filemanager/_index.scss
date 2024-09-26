@@ -23,6 +23,18 @@
 // Expose
 @mixin kendo-file-manager--styles() {
     @include import-once( "file-manager" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-upload--styles();
+        @include kendo-switch--styles();
+        @include kendo-menu--styles();
+        @include kendo-dialog--styles();
+        @include kendo-breadcrumb--styles();
+        @include kendo-treeview--styles();
+        @include kendo-splitter--styles();
+        @include kendo-grid--styles();
+        @include kendo-listview--styles();
         @include kendo-file-manager--layout();
         @include kendo-file-manager--theme();
     }

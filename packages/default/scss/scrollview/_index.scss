@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-scrollview--styles() {
     @include import-once( "scrollview" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-icon--styles();
         @include kendo-scrollview--layout();
         @include kendo-scrollview--theme();
     }

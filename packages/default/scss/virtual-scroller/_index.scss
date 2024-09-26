@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-virtual-scroller--styles() {
     @include import-once( "virtual-scroller" ) {
+        @include core-styles();
         @include kendo-virtual-scroller--layout();
         @include kendo-virtual-scroller--theme();
     }

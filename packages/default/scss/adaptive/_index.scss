@@ -16,6 +16,12 @@
 // Expose
 @mixin kendo-adaptive--styles() {
     @include import-once( "adaptive" ) {
+        @include core-styles();
+        @include kendo-listgroup--styles();
+        @include kendo-checkbox--styles();
+        @include kendo-radio--styles();
+        @include kendo-switch--styles();
+        @include kendo-toolbar--styles();
         @include kendo-adaptive--layout();
         @include kendo-adaptive--theme();
     }

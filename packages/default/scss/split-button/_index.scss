@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-split-button--styles() {
     @include import-once( "split-button" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-menu--styles();
         @include kendo-split-button--layout();
         @include kendo-split-button--theme();
     }

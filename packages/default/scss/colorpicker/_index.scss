@@ -16,6 +16,12 @@
 // Expose
 @mixin kendo-color-picker--styles() {
     @include import-once( "color-picker" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-button--styles();
+        @include kendo-color-editor--styles();
+        @include kendo-popup--styles();
+        @include kendo-icon--styles();
         @include kendo-color-picker--layout();
         @include kendo-color-picker--theme();
     }

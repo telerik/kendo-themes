@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-switch--styles() {
     @include import-once( "switch" ) {
+        @include core-styles();
         @include kendo-switch--layout();
         @include kendo-switch--theme();
     }

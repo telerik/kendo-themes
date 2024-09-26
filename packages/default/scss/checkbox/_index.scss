@@ -11,6 +11,7 @@
 // Expose
 @mixin kendo-checkbox--styles() {
     @include import-once( "checkbox" ) {
+        @include core-styles();
         @include kendo-checkbox--layout();
         @include kendo-checkbox--theme();
     }

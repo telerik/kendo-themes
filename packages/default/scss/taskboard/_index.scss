@@ -19,6 +19,14 @@
 // Expose
 @mixin kendo-task-board--styles() {
     @include import-once( "task-board" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-form--styles();
+        @include kendo-input--styles();
+        @include kendo-textbox--styles();
+        @include kendo-searchbox--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-card--styles();
         @include kendo-task-board--layout();
         @include kendo-task-board--theme();
         @include kendo-utils--typography--text-overflow();
