@@ -1,3 +1,4 @@
+@use "sass:list";
 @use "../core/_index.scss" as *;
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
@@ -81,7 +82,7 @@
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
-        top: calc( 50% + #{k-math-div( $kendo-time-list-title-height, 2 )});
+        top: calc( 50% + #{list.slash( $kendo-time-list-title-height, 2 )});
         left: 0;
         right: 0;
         transform: translateY(-50%);
@@ -120,7 +121,7 @@
                 width: 100%;
                 left: 0;
                 pointer-events: none;
-                height: calc( 50% - #{k-math-div( $kendo-time-list-highlight-height, 2 )} );
+                height: calc( 50% - #{list.slash( $kendo-time-list-highlight-height, 2 )} );
                 box-sizing: border-box;
                 border-width: 0;
                 border-style: solid;
@@ -209,7 +210,7 @@
         align-items: center;
         position: relative;
         z-index: 11;
-        top: calc( #{k-math-div( $kendo-time-list-title-height, 2 )} );
+        top: calc( #{list.slash( $kendo-time-list-title-height, 2 )} );
     }
 
 

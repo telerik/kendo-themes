@@ -1,3 +1,5 @@
+@use "sass:math";
+@use "sass:list";
 @use "../core/_index.scss" as *;
 @use "../core/spacing/index.import.scss" as *;
 @use "./variables.scss" as *;
@@ -289,8 +291,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
-            margin-inline-end: k-math-div( $kendo-icon-size, 2 );
+            margin-inline-start: calc( #{math.div( $kendo-icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
+            margin-inline-end: math.div( $kendo-icon-size, 2 );
             text-decoration: none;
         }
 
@@ -454,7 +456,7 @@
             width: $kendo-grid-group-drop-hint-line-size;
             height: calc(100% - #{$kendo-grid-group-drop-hint-size});
             top: $kendo-grid-group-drop-hint-size;
-            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-size} - #{k-math-div( $kendo-grid-group-drop-hint-line-size, 2 )} );
+            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-size} - #{math.div( $kendo-grid-group-drop-hint-line-size, 2 )} );
         }
     }
 
@@ -968,7 +970,7 @@
                     width: $_button-calc-size;
                     height: $_button-calc-size;
                     line-height: $_button-line-height;
-                    bottom: calc( #{$_header-padding-y} + #{k-math-div( $kendo-line-height-em, 2)} - #{k-math-div( $kendo-button-inner-calc-size, 2 )} );
+                    bottom: calc( #{$_header-padding-y} + #{list.slash( $kendo-line-height-em, 2)} - #{list.slash( $kendo-button-inner-calc-size, 2 )} );
                 }
             }
 
@@ -985,7 +987,7 @@
             }
 
             .k-grouping-row .k-icon {
-                margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$_cell-padding-x} );
+                margin-inline-start: calc( #{math.div( $kendo-icon-size, 2 )} - #{$_cell-padding-x} );
             }
 
             .k-grouping-dropclue {

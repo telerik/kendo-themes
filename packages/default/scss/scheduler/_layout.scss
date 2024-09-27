@@ -1,3 +1,4 @@
+@use "sass:list";
 @use "../core/_index.scss" as *;
 @use "../core/spacing/index.import.scss" as *;
 @use "./variables.scss" as *;
@@ -1032,7 +1033,7 @@
 
         .k-scheduler-yearview .k-calendar-view .k-month {
             margin-block: 0;
-            margin-inline: k-math-div( $kendo-scheduler-yearview-calendar-gap, 2 );
+            margin-inline: list.slash( $kendo-scheduler-yearview-calendar-gap, 2 );
         }
     }
 
