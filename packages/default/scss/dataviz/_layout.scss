@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../core/spacing/index.import.scss" as *;
 @use "./variables.scss" as *;
@@ -158,31 +159,31 @@
     }
 
     .k-left-handle {
-        left: - k-math-div( $kendo-chart-selection-handle-size, 2 );
+        left: - math.div( $kendo-chart-selection-handle-size, 2 );
     }
 
     .k-right-handle {
-        right: - k-math-div( $kendo-chart-selection-handle-size, 2 );
+        right: - math.div( $kendo-chart-selection-handle-size, 2 );
     }
 
     .k-left-handle div {
-        margin: -($kendo-chart-selection-handle-size) 0 0 (- k-math-div( $kendo-chart-selection-handle-size, 1.5 ));
-        padding: ($kendo-chart-selection-handle-size * 2) (k-math-div( $kendo-chart-selection-handle-size, 1.5 ) * 2) 0 0;
+        margin: -($kendo-chart-selection-handle-size) 0 0 (- math.div( $kendo-chart-selection-handle-size, 1.5 ));
+        padding: ($kendo-chart-selection-handle-size * 2) (math.div( $kendo-chart-selection-handle-size, 1.5 ) * 2) 0 0;
     }
 
     .k-right-handle div {
-        margin: -($kendo-chart-selection-handle-size) 0 0 (- k-math-div( $kendo-chart-selection-handle-size, 1.5 ));
-        padding: ($kendo-chart-selection-handle-size * 2) 0 0 (k-math-div( $kendo-chart-selection-handle-size, 1.5 ) * 2);
+        margin: -($kendo-chart-selection-handle-size) 0 0 (- math.div( $kendo-chart-selection-handle-size, 1.5 ));
+        padding: ($kendo-chart-selection-handle-size * 2) 0 0 (math.div( $kendo-chart-selection-handle-size, 1.5 ) * 2);
     }
 
     .k-left-handle.k-handle-active div {
         margin-left: -($kendo-chart-selection-handle-size * 2);
-        padding-left: ($kendo-chart-selection-handle-size * 2) + k-math-div( $kendo-chart-selection-handle-size, 1.5 );
+        padding-left: ($kendo-chart-selection-handle-size * 2) + math.div( $kendo-chart-selection-handle-size, 1.5 );
     }
 
     .k-right-handle.k-handle-active div {
         margin-left: -($kendo-chart-selection-handle-size * 2);
-        padding-right: ($kendo-chart-selection-handle-size * 2) + k-math-div( $kendo-chart-selection-handle-size, 1.5 );
+        padding-right: ($kendo-chart-selection-handle-size * 2) + math.div( $kendo-chart-selection-handle-size, 1.5 );
     }
 
     .k-mask {
