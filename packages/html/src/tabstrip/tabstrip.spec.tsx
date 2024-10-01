@@ -9,14 +9,18 @@ const options = {};
 
 export type KendoTabStripProps = {
     position?: "top" | "bottom" | "left" | "right";
+    tabAlignment?: "start" | "center" | "end" | "justify" | "stretched";
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
     scrollable?: boolean;
+    scrollButtonsPosition?: "around" | "start" | "end";
     header?: boolean | null;
     dir?: "rtl" | "ltr";
 };
 
 const defaultOptions = {
     position: "top",
+    tabAlignment: "start",
+    scrollButtonsPosition: "around",
     header: true
 };
 
@@ -29,6 +33,8 @@ export const TabStrip = (
         children,
         tabStripItems,
         position = defaultOptions.position,
+        tabAlignment = defaultOptions.tabAlignment,
+        scrollButtonsPosition = defaultOptions.scrollButtonsPosition,
         header = defaultOptions.header,
         dir,
         ...other
@@ -48,6 +54,14 @@ export const TabStrip = (
         right: 'vertical'
     };
 
+    const tabAlignmentMap = {
+        start: "start",
+        center: "center",
+        end: "end",
+        justify: "justify",
+        stretched: "stretched"
+    }
+
     return (
         <div
             dir={dir}
@@ -63,11 +77,23 @@ export const TabStrip = (
             )}>
             {position === "bottom" && children}
             <TabStripItemsWrapper orientation={orientationMap[position]}>
-                {scrollable && <Button fillMode="flat" rounded={null} size={null} icon={`caret-alt-${caretMap[position]["prev"]}`} className="k-tabstrip-prev"></Button>}
-                <TabStripItems>
+                {scrollable &&
+                    (scrollButtonsPosition === 'around' || scrollButtonsPosition === 'start') &&
+                    <Button fillMode="flat" rounded={null} size="medium" icon={`caret-alt-${caretMap[position]["prev"]}`} className="k-tabstrip-prev"></Button>
+                }
+                {scrollable && scrollButtonsPosition === 'start' &&
+                    <Button fillMode="flat" rounded={null} size="medium" icon={`caret-alt-${caretMap[position]["next"]}`} className="k-tabstrip-next"></Button>
+                }
+                <TabStripItems tabAlignment={tabAlignmentMap[tabAlignment]}>
                     {tabStripItems}
                 </TabStripItems>
-                {scrollable && <Button fillMode="flat" rounded={null} size={null} icon={`caret-alt-${caretMap[position]["next"]}`} className="k-tabstrip-next"></Button>}
+                {scrollable && scrollButtonsPosition === 'end' &&
+                    <Button fillMode="flat" rounded={null} size="medium" icon={`caret-alt-${caretMap[position]["prev"]}`} className="k-tabstrip-prev"></Button>
+                }
+                {scrollable &&
+                    (scrollButtonsPosition === 'around' || scrollButtonsPosition === 'end') &&
+                    <Button fillMode="flat" rounded={null} size="medium" icon={`caret-alt-${caretMap[position]["next"]}`} className="k-tabstrip-next"></Button>
+                }
             </TabStripItemsWrapper>
             {position !== "bottom" && children}
         </div>

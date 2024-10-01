@@ -23,27 +23,26 @@ export default () =>(
 
             <section>
                 <MenuNormal>
-                    <MenuItem first text="Disabled" disabled></MenuItem>
-                    <MenuItem text="Normal"></MenuItem>
+                    <MenuItem first text="Normal"></MenuItem>
                     <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"
-                        popup={
-                            <>
-                                <Popup className="k-menu-popup" positionMode="fixed">
-                                    <MenuList>
-                                        <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                        <MenuListItem text="Normal"></MenuListItem>
-                                        <MenuListItem text="Hover" hover showArrow></MenuListItem>
-                                        <MenuListItem text="Active" active showArrow></MenuListItem>
-                                        <MenuListItem text="Focus" focus></MenuListItem>
-                                        <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                    </MenuList>
-                                </Popup>
-                            </>
-                        }
-                    />
+                    popup={
+                        <>
+                            <Popup className="k-menu-popup" positionMode="fixed">
+                                <MenuList>
+                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
+                                    <MenuListItem text="Normal"></MenuListItem>
+                                    <MenuListItem text="Hover" hover showArrow></MenuListItem>
+                                    <MenuListItem text="Active" active showArrow></MenuListItem>
+                                    <MenuListItem text="Focus" focus></MenuListItem>
+                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
+                                </MenuList>
+                            </Popup>
+                        </>
+                    }></MenuItem>
+                    <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
-                    <MenuItem last text="Normal" icon="folder"></MenuItem>
+                    <MenuItem last text="Disabled" disabled></MenuItem>
                 </MenuNormal>
             </section>
 
@@ -56,8 +55,7 @@ export default () =>(
 
             <section>
                 <MenuNormal dir="rtl">
-                    <MenuItem first text="Disabled" disabled></MenuItem>
-                    <MenuItem text="Normal"></MenuItem>
+                    <MenuItem first text="Normal"></MenuItem>
                     <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"
                         popup={
@@ -73,10 +71,10 @@ export default () =>(
                                     </MenuList>
                                 </Popup>
                             </>
-                        }
-                    />
+                        }></MenuItem>
+                    <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
-                    <MenuItem last text="Normal" icon="folder"></MenuItem>
+                    <MenuItem last text="Disabled" disabled></MenuItem>
                 </MenuNormal>
             </section>
         </div>

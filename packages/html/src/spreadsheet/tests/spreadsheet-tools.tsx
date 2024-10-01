@@ -1,9 +1,10 @@
 import { Button } from "../../button";
 import { ButtonGroup } from "../../button-group";
 import { MenuButton } from "../../menu-button/menu-button.spec";
-import { ToolbarSeparator } from "../../toolbar";
+import { ToolbarItem, ToolbarSeparator } from "../../toolbar";
 import { Spreadsheet, SpreadsheetHeader, SpreadsheetNormal } from "..";
 import { MenuItem } from "../../menu";
+import { ColorPicker, DropdownList } from "../..";
 
 const style = `
     #test-area {
@@ -56,6 +57,42 @@ export default () => (
                         <MenuItem text="Data" />,
                         <MenuItem last text="View" />,
                     ]}
+                    toolbarItems={[
+                        <Button icon="arrow-rotate-ccw" fillMode="flat"></Button>,
+                        <Button icon="arrow-rotate-cw" fillMode="flat"></Button>,
+                        <ToolbarSeparator></ToolbarSeparator>,
+                        <Button icon="cut" fillMode="flat"></Button>,
+                        <Button icon="copy" fillMode="flat"></Button>,
+                        <Button icon="clipboard" fillMode="flat"></Button>,
+                        <ToolbarSeparator></ToolbarSeparator>,
+                        <DropdownList value="Font Name" fillMode="flat" />,
+                        <DropdownList value="Font Size" fillMode="flat" />,
+                        <ToolbarSeparator></ToolbarSeparator>,
+                        <ButtonGroup fillMode="flat">
+                            <Button className="k-group-start" icon="font-grow" fillMode="flat"></Button>
+                            <Button className="k-group-end" icon="font-shrink" fillMode="flat"></Button>
+                        </ButtonGroup>,
+                        <ToolbarSeparator></ToolbarSeparator>,
+                        <ButtonGroup fillMode="flat">
+                            <Button className="k-group-start" icon="bold" fillMode="flat"></Button>
+                            <Button icon="italic" fillMode="flat"></Button>
+                            <Button icon="underline" fillMode="flat"></Button>
+                            <Button className="k-group-end" icon="strikethrough" fillMode="flat"></Button>
+                        </ButtonGroup>,
+                        <ToolbarItem>
+                            <ColorPicker value="red" valueIconName="foreground-color" fillMode="flat" />
+                        </ToolbarItem>,
+                        <ToolbarSeparator></ToolbarSeparator>,
+                        <ToolbarItem>
+                            <ColorPicker value="fuchsia" valueIconName="droplet" fillMode="flat" />
+                        </ToolbarItem>,
+                        <ToolbarSeparator></ToolbarSeparator>,
+                        <MenuButton fillMode="flat" icon="borders-all" showArrow></MenuButton>,
+                        <ToolbarSeparator></ToolbarSeparator>,
+                        <MenuButton fillMode="flat" icon="align-left" showArrow></MenuButton>,
+                        <MenuButton fillMode="flat" icon="align-middle" showArrow></MenuButton>,
+                        <ToolbarSeparator></ToolbarSeparator>,
+                        <Button fillMode="flat" icon="text-wrap"></Button>]}
                 />
             </Spreadsheet>
 

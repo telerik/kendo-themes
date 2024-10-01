@@ -1,4 +1,4 @@
-import { Button, MenuButton, SpreadsheetTabStrip, TabStripItem } from '..';
+import { Button, MenuButton, TabStrip, TabStripItem } from '..';
 import { classNames } from '../misc';
 
 export const SPREADSHEETSHEETSBAR_CLASSNAME = `k-spreadsheet-sheets-bar`;
@@ -13,24 +13,24 @@ export type KendoSpreadsheetSheetsBarProps = {
 
 const defaultTabStripItems = (
     <>
-        <TabStripItem first value="Sheet 1">
+        <TabStripItem first value="Sheet 1" actions={
             <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-        </TabStripItem>
-        <TabStripItem value="Sheet 2">
+        }></TabStripItem>
+        <TabStripItem value="Sheet 2" actions={
             <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-        </TabStripItem>
-        <TabStripItem value="Sheet 3">
+        }></TabStripItem>
+        <TabStripItem value="Sheet 3" actions={
             <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-        </TabStripItem>
-        <TabStripItem value="Sheet 4">
+        }></TabStripItem>
+        <TabStripItem value="Sheet 4" actions={
             <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-        </TabStripItem>
-        <TabStripItem value="Sheet 5">
+        }></TabStripItem>
+        <TabStripItem value="Sheet 5" actions={
             <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-        </TabStripItem>
-        <TabStripItem last value="Sheet 6">
+        }></TabStripItem>
+        <TabStripItem last value="Sheet 6" actions={
             <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-        </TabStripItem>
+        }></TabStripItem>
     </>
 );
 
@@ -56,7 +56,13 @@ export const SpreadsheetSheetsBar = (
             )}>
             <Button className="k-spreadsheet-sheet-add" fillMode="flat" icon="plus" />
             <Button className="k-spreadsheet-sheets-menu" fillMode="flat" icon="menu" />
-            <SpreadsheetTabStrip tabStripItems={tabStripItems}/>
+            <TabStrip
+                className="k-spreadsheet-sheets"
+                tabStripItems={tabStripItems}
+                position="bottom"
+                scrollable
+                scrollButtonsPosition="end"
+                header={false} />
         </div>
     );
 };

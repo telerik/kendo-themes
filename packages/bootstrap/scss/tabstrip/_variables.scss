@@ -98,6 +98,9 @@ $kendo-tabstrip-item-selected-border: $kendo-component-border !default;
 /// The gradient of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-gradient: null !default;
+/// The font weight of the selected TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
 /// The shadow of the focused TabStrip items.
 /// @group tabstrip
@@ -112,7 +115,7 @@ $kendo-tabstrip-item-dragging-shadow: k-elevation(3) !default;
 $kendo-tabstrip-item-disabled-bg: null !default;
 /// The text color of the disabled TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-disabled-text: null !default;
+$kendo-tabstrip-item-disabled-text: $kendo-component-text !default;
 /// The border color of the disabled TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-disabled-border: null !default;

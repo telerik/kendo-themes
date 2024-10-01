@@ -42,24 +42,24 @@ export default () =>(
                 <SpreadsheetNormal style={{ height: 'auto' }}>
                     <SpreadsheetSheetsBar tabStripItems={
                         <>
-                            <TabStripItem first value="Sheet 1">
+                            <TabStripItem first value="Sheet 1" actions={
                                 <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                            </TabStripItem>
-                            <TabStripItem value="Sheet 2">
+                            }></TabStripItem>
+                            <TabStripItem value="Sheet 2" actions={
                                 <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                            </TabStripItem>
-                            <TabStripItem active value="Sheet 3">
+                            }></TabStripItem>
+                            <TabStripItem active value="Sheet 3" actions={
                                 <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                            </TabStripItem>
-                            <TabStripItem focus value="Sheet 4">
+                            }></TabStripItem>
+                            <TabStripItem focus value="Sheet 4" actions={
                                 <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                            </TabStripItem>
-                            <TabStripItem value="Sheet 5">
+                            }></TabStripItem>
+                            <TabStripItem value="Sheet 5" actions={
                                 <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                            </TabStripItem>
-                            <TabStripItem last disabled value="Sheet 6">
+                            }></TabStripItem>
+                            <TabStripItem last disabled value="Sheet 6" actions={
                                 <MenuButton size="medium" showArrow={false} icon="caret-alt-down" fillMode="flat" />
-                            </TabStripItem>
+                            }></TabStripItem>
                         </>
                     } />
                 </SpreadsheetNormal>

@@ -128,6 +128,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-stepper-label-border-radius</td>
+    <td>String</td>
+    <td><code>k-border-radius(xxl)</code></td>
+    <td><code>var(--kendo-border-radius-xxl, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Stepper label.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-stepper-inline-content-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(5)</code></td>

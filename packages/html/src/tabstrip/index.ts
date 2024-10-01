@@ -8,3 +8,4 @@ export * from './templates/tabstrip-bottom';
 export * from './templates/tabstrip-right';
 export * from './templates/tabstrip-left';
 export * from './templates/tabstrip-scrollable';
+export * from './templates/tabstrip-closable';

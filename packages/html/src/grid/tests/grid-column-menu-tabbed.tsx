@@ -1,6 +1,5 @@
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
-import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Popup } from '../../popup';
 import { ColumnMenuTabbed, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuMultiCheck, FilterMenuNormal, ColumnMenuMulticheckItem, ColumnMenuMulticheckWrap } from '../../column-menu';
@@ -33,9 +32,9 @@ export default () =>(
                         <TabStripNormal header={false} className="k-overflow-hidden"
                             tabStripItems={
                                 <>
-                                    <TabStripItem active value={<Icon icon="filter" />} />
-                                    <TabStripItem value={<Icon icon="sliders" />} />
-                                    <TabStripItem value={<Icon icon="columns" />} />
+                                    <TabStripItem active icon="filter" />
+                                    <TabStripItem icon="sliders" />
+                                    <TabStripItem icon="columns" />
                                 </>
                             }
                         >
@@ -53,9 +52,9 @@ export default () =>(
                         <TabStripNormal header={false} className="k-overflow-hidden"
                             tabStripItems={
                                 <>
-                                    <TabStripItem value={<Icon icon="filter" />} />
-                                    <TabStripItem active value={<Icon icon="sliders" />} />
-                                    <TabStripItem value={<Icon icon="columns" />} />
+                                    <TabStripItem icon="filter" />
+                                    <TabStripItem active icon="sliders" />
+                                    <TabStripItem icon="columns" />
                                 </>
                             }
                         >
@@ -86,9 +85,9 @@ export default () =>(
                         <TabStripNormal header={false} className="k-overflow-hidden"
                             tabStripItems={
                                 <>
-                                    <TabStripItem value={<Icon icon="filter" />} />
-                                    <TabStripItem value={<Icon icon="sliders" />} />
-                                    <TabStripItem active value={<Icon icon="columns" />} />
+                                    <TabStripItem icon="filter" />
+                                    <TabStripItem icon="sliders" />
+                                    <TabStripItem active icon="columns" />
                                 </>
                             }
                         >
@@ -133,8 +132,8 @@ export default () =>(
                         <TabStripNormal header={false} className="k-overflow-hidden"
                             tabStripItems={
                                 <>
-                                    <TabStripItem active value={<Icon icon="filter" />} />
-                                    <TabStripItem value={<Icon icon="sliders" />} />
+                                    <TabStripItem active icon="filter" />
+                                    <TabStripItem icon="sliders" />
                                 </>
                             }
                         >
@@ -152,7 +151,7 @@ export default () =>(
                         <TabStripNormal header={false} className="k-pos-relative"
                             tabStripItems={
                                 <>
-                                    <TabStripItem active value={<Icon icon="filter" />} />
+                                    <TabStripItem active icon="filter" />
                                 </>
                             }
                         >

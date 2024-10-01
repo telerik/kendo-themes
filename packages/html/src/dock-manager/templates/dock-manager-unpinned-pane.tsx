@@ -25,10 +25,12 @@ export const DockManagerUnpinnedPane = (props) => (
                         <TabStripNormal style={{ height: "100%" }}
                             tabStripItems={
                                 <>
-                                    <TabStripItem first value="File 1" active>
-                                        <Button fillMode="flat" icon="pin"></Button>
-                                        <Button fillMode="flat" icon="more-vertical"></Button>
-                                    </TabStripItem>
+                                    <TabStripItem first value="File 1" active actions={
+                                        <>
+                                            <Button fillMode="flat" icon="pin"></Button>
+                                            <Button fillMode="flat" icon="more-vertical"></Button>
+                                        </>
+                                    }></TabStripItem>
                                 </>
                             }
                         >
@@ -43,14 +45,18 @@ export const DockManagerUnpinnedPane = (props) => (
                                 <TabStripNormal style={{ height: "100%" }}
                                     tabStripItems={
                                         <>
-                                            <TabStripItem first value="Properties" active>
-                                                <Button fillMode="flat" icon="pin"></Button>
-                                                <Button fillMode="flat" icon="more-vertical"></Button>
-                                            </TabStripItem>
-                                            <TabStripItem last value="History">
-                                                <Button fillMode="flat" themeColor="primary" icon="pin"></Button>
-                                                <Button fillMode="flat" themeColor="primary" icon="more-vertical"></Button>
-                                            </TabStripItem>
+                                            <TabStripItem first value="Properties" active actions={
+                                                <>
+                                                    <Button fillMode="flat" icon="pin"></Button>
+                                                    <Button fillMode="flat" icon="more-vertical"></Button>
+                                                </>
+                                            }></TabStripItem>
+                                            <TabStripItem last value="History" actions={
+                                                <>
+                                                    <Button fillMode="flat" icon="pin"></Button>
+                                                    <Button fillMode="flat" icon="more-vertical"></Button>
+                                                </>
+                                            }></TabStripItem>
                                         </>
                                     }
                                 >

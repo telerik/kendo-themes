@@ -27,18 +27,29 @@
 
             &:active,
             &.k-active {
-                color: var( --kendo-menu-item-expanded-text, #{$kendo-menu-item-expanded-text} );
-                background-color: var( --kendo-menu-item-expanded-bg, #{$kendo-menu-item-expanded-bg} );
+                color: var( --kendo-menu-item-active-text, #{$kendo-menu-item-active-text} );
+                background-color: var( --kendo-menu-item-active-bg, #{$kendo-menu-item-active-bg} );
             }
 
             &.k-disabled {
                 color: var( --kendo-menu-item-disabled-text, #{$kendo-menu-item-disabled-text} );
                 background-color: var( --kendo-menu-item-disabled-bg, #{$kendo-menu-item-disabled-bg} );
             }
+
+            &.k-selected {
+                color: var( --kendo-menu-item-selected-text, #{$kendo-menu-item-selected-text} );
+                background-color: var( --kendo-menu-item-selected-bg, #{$kendo-menu-item-selected-bg} );
+            }
         }
 
         .k-link > .k-icon {
-            color: var( --kendo-menu-icon-color, $kendo-menu-icon-color );
+            color: var( --kendo-menu-icon-color, #{$kendo-menu-icon-color} );
+        }
+
+        > .k-separator {
+            @include fill(
+                $border: var( --kendo-menu-separator-border, #{$kendo-menu-separator-border} )
+            );
         }
 
     }
@@ -67,8 +78,8 @@
                 &:active,
                 &.k-active,
                 &.k-selected {
-                    color: var( --kendo-menu-popup-item-expanded-text, #{$kendo-menu-popup-item-expanded-text} );
-                    background-color: var( --kendo-menu-popup-item-expanded-bg, #{$kendo-menu-popup-item-expanded-bg} );
+                    color: var( --kendo-menu-popup-item-active-text, #{$kendo-menu-popup-item-active-text} );
+                    background-color: var( --kendo-menu-popup-item-active-bg, #{$kendo-menu-popup-item-active-bg} );
                 }
 
                 &.k-disabled {
@@ -87,6 +98,12 @@
                     outline-color: var( --kendo-menu-popup-item-focus-outline, #{$kendo-menu-popup-item-focus-outline} );
                 }
             }
+        }
+
+        > .k-separator {
+            @include fill(
+                $border: var( --kendo-menu-separator-border, #{$kendo-menu-separator-border} )
+            );
         }
     }
 

@@ -2,7 +2,7 @@
 
 /// The vertical padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-y: calc( #{$kendo-padding-md-y} * .75 ) !default;
+$kendo-tooltip-padding-y: k-spacing(.5) !default;
 /// The horizontal padding of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-padding-x: calc( #{$kendo-padding-md-x} / 2 ) !default;

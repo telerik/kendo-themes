@@ -23,14 +23,18 @@ export default () => (
                                 <TabStripNormal style={{ height: "100%" }}
                                     tabStripItems={
                                         <>
-                                            <TabStripItem first value="File 1" active>
-                                                <Button fillMode="flat" icon="pin"></Button>
-                                                <Button fillMode="flat" icon="more-vertical"></Button>
-                                            </TabStripItem>
-                                            <TabStripItem last value="File 2">
-                                                <Button fillMode="flat" themeColor="primary" icon="pin"></Button>
-                                                <Button fillMode="flat" themeColor="primary" icon="more-vertical"></Button>
-                                            </TabStripItem>
+                                            <TabStripItem first value="File 1" active actions={
+                                                <>
+                                                    <Button fillMode="flat" icon="pin"></Button>
+                                                    <Button fillMode="flat" icon="more-vertical"></Button>
+                                                </>
+                                            }></TabStripItem>
+                                            <TabStripItem last value="File 2" actions={
+                                                <>
+                                                    <Button fillMode="flat" icon="pin"></Button>
+                                                    <Button fillMode="flat" icon="more-vertical"></Button>
+                                                </>
+                                            }></TabStripItem>
                                         </>
                                     }
                                 >
@@ -45,14 +49,18 @@ export default () => (
                                         <TabStripNormal style={{ height: "100%" }}
                                             tabStripItems={
                                                 <>
-                                                    <TabStripItem first value="File 5" active>
-                                                        <Button fillMode="flat" icon="pin"></Button>
-                                                        <Button fillMode="flat" icon="more-vertical"></Button>
-                                                    </TabStripItem>
-                                                    <TabStripItem last value="File 6">
-                                                        <Button fillMode="flat" themeColor="primary" icon="pin"></Button>
-                                                        <Button fillMode="flat" themeColor="primary" icon="more-vertical"></Button>
-                                                    </TabStripItem>
+                                                    <TabStripItem first value="File 5" active actions={
+                                                        <>
+                                                            <Button fillMode="flat" icon="pin"></Button>
+                                                            <Button fillMode="flat" icon="more-vertical"></Button>
+                                                        </>
+                                                    }></TabStripItem>
+                                                    <TabStripItem last value="File 6" actions={
+                                                        <>
+                                                            <Button fillMode="flat" icon="pin"></Button>
+                                                            <Button fillMode="flat" icon="more-vertical"></Button>
+                                                        </>
+                                                    }></TabStripItem>
                                                 </>
                                             }
                                         >

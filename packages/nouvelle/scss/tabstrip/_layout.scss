@@ -160,19 +160,6 @@
                 white-space: nowrap;
                 overflow: hidden;
             }
-
-            > .k-button {
-                width: auto;
-                height: auto;
-                flex: none;
-                align-self: stretch;
-                aspect-ratio: auto;
-
-                .k-button-icon {
-                    min-width: auto;
-                    min-height: auto;
-                }
-            }
             // TODO: Think of a less verbose name
             &.k-hstack {
                 > .k-button {

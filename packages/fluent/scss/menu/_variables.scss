@@ -3,169 +3,196 @@
 @use "../list/_variables.scss"as *;
 @use "../popup/_variables.scss"as *;
 
-/// Width of the menu border.
+/// The width of the border around the Menu.
 /// @group menu
 $kendo-menu-border-width: k-spacing(0) !default;
-// Font family of the menu.
+
+// The font family of the Menu.
 /// @group menu
 $kendo-menu-font-family: var( --kendo-font-family, inherit ) !default;
-// Font size of the menu.
+// The font size of the Menu.
 /// @group menu
 $kendo-menu-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line heights used along with $kendo-font-size.
+/// The line heights of the Menu used along with $kendo-font-size.
 /// @group menu
 $kendo-menu-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Padding of menu root items.
+/// The background color of the Menu.
+/// @group menu
+$kendo-menu-bg: transparent !default;
+/// The text color of the Menu.
+/// @group menu
+$kendo-menu-text: var( --kendo-body-text, inherit ) !default;
+/// The border color of the Menu.
+/// @group menu
+$kendo-menu-border: initial !default;
+/// The shadow of the Menu.
+/// @group menu
+$kendo-menu-shadow: none !default;
+
+
+// Menu item
+
+/// The horizontal padding of Menu item.
 /// @group menu
 $kendo-menu-item-padding-x: k-spacing(2) !default;
+/// The vertical padding of the Menu item.
+/// @group menu
 $kendo-menu-item-padding-y: k-spacing(3) !default;
 
-/// Spacing between menu root items.
+/// The spacing between the Menu items.
 /// @group menu
 $kendo-menu-item-spacing: k-spacing(0) !default;
-/// Spacing between menu root items text and icons.
+/// The spacing between the Menu item text and icons.
 /// @group menu
 $kendo-menu-item-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
-/// Spacing between menu separator and items.
-/// @group menu
-$kendo-menu-separator-margin: k-spacing(1) !default;
 
-/// Separator width
+/// The font weight of the selected Menu item.
 /// @group menu
-$kendo-menu-separator-width: 1px !default;
+$kendo-menu-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
-/// The base outline of focused menu item.
+/// The text color of Menu item.
 /// @group menu
+$kendo-menu-item-text: $kendo-menu-text !default;
+/// The background color of Menu item.
+/// @group menu
+$kendo-menu-item-bg: transparent !default;
+
+/// The text color of hovered Menu item.
+/// @group menu
+$kendo-menu-item-hover-text: var( --kendo-hover-text, inherit ) !default;
+/// The background color of hovered Menu item.
+/// @group menu
+$kendo-menu-item-hover-bg: var( --kendo-hover-bg, initial ) !default;
+
+/// The text color of active Menu item.
+/// @group menu
+$kendo-menu-item-active-text: $kendo-menu-item-hover-text !default;
+/// The background color of active Menu item.
+/// @group menu
+$kendo-menu-item-active-bg: var( --kendo-selected-bg, initial ) !default;
+
+/// The text color of focused Menu item.
+/// @group menu
+$kendo-menu-item-focus-text: $kendo-menu-item-text !default;
+/// The background color of focused Menu item.
+/// @group menu
+$kendo-menu-item-focus-bg: $kendo-menu-item-bg !default;
+
+/// The outline of focused Menu item.
+/// @group menu
+$kendo-menu-item-focus-outline: var( --kendo-focus-outline, none ) !default;
 $kendo-menu-item-focus-outline-offset: calc( #{k-spacing(0.5)} * -1 ) !default;
 $kendo-menu-item-focus-outline-width: 1px !default;
 $kendo-menu-item-focus-outline-style: solid !default;
 
-/// The text color of the menu.
-/// @group menu
-$kendo-menu-text: var( --kendo-body-text, inherit ) !default;
-/// The background color of the menu.
-/// @group menu
-$kendo-menu-bg: transparent !default;
-/// The border color of the menu.
-/// @group menu
-$kendo-menu-border: initial !default;
-/// The shadow of the menu.
-/// @group menu
-$kendo-menu-shadow: none !default;
-
-/// The text color of menu items.
-/// @group menu
-$kendo-menu-item-text: $kendo-menu-text !default;
-/// The background color of menu items.
-/// @group menu
-$kendo-menu-item-bg: transparent !default;
-
-/// The text color of hover menu items.
-/// @group menu
-$kendo-menu-item-hover-text: var( --kendo-hover-text, inherit ) !default;
-/// The background color of hover menu items.
-/// @group menu
-$kendo-menu-item-hover-bg: var( --kendo-hover-bg, initial ) !default;
-
-/// The text color of focused menu items.
-/// @group menu
-$kendo-menu-item-focus-text: $kendo-menu-item-text !default;
-/// The background color of focused menu items.
-/// @group menu
-$kendo-menu-item-focus-bg: $kendo-menu-item-bg !default;
-/// The outline of focused menu items.
-/// @group menu
-$kendo-menu-item-focus-outline: var( --kendo-focus-outline, none ) !default;
-
-/// The text color of expanded menu items.
-/// @group menu
-$kendo-menu-item-expanded-text: $kendo-menu-item-hover-text !default;
-/// The background color of expanded menu items.
-/// @group menu
-$kendo-menu-item-expanded-bg: var( --kendo-selected-bg, initial ) !default;
-
-/// The text color of disabled menu items.
+/// The text color of disabled Menu item.
 /// @group menu
 $kendo-menu-item-disabled-text: var( --kendo-disabled-text, initial ) !default;
-/// The background color of disabled menu items.
+/// The background color of disabled Menu item.
 /// @group menu
 $kendo-menu-item-disabled-bg: $kendo-menu-item-bg !default;
 
-/// Horizontal padding of the menu popup.
+/// The text color of selected Menu item.
+/// @group menu
+$kendo-menu-item-selected-text: null !default;
+/// The background color of selected Menu item.
+/// @group menu
+$kendo-menu-item-selected-bg: null !default;
+
+
+// Menu Separator
+
+/// The inline margin of the horizontal Menu separator.
+/// @group menu
+$kendo-menu-separator-margin-inline: k-spacing(1);
+/// The block margin of the horizontal Menu separator.
+/// @group menu
+$kendo-menu-separator-margin-block: k-spacing(3);
+/// The width of the Menu separator.
+/// @group menu
+$kendo-menu-separator-width: 1px !default;
+/// The border color of Menu separator.
+/// @group menu
+$kendo-menu-separator-border: color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent) !default;
+
+
+// Menu Popup
+
+/// The horizontal padding of the Menu popup.
 /// @group menu
 $kendo-menu-popup-padding-x: $kendo-popup-padding-x !default;
-/// Vertical padding of the menu popup.
+/// The vertical padding of the Menu popup.
 /// @group menu
 $kendo-menu-popup-padding-y: $kendo-popup-padding-y !default;
 
-/// Width of the border around the menu popup.
+/// The width of the border around the Menu popup.
 /// @group menu
 $kendo-menu-popup-border-width: $kendo-popup-border-width !default;
 
-/// Font sizes of the menu popup.
+/// The font sizes of the Menu popup.
 /// @group menu
 $kendo-menu-popup-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-menu-popup-sm-font-size: $kendo-menu-popup-font-size !default;
 $kendo-menu-popup-md-font-size: $kendo-menu-popup-font-size !default;
 $kendo-menu-popup-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
-/// Line heights used along with $kendo-font-size.
+/// The line heights used along with $kendo-font-size.
 /// @group menu
 $kendo-menu-popup-line-height: var( --kendo-line-height, 30px ) !default;
 $kendo-menu-popup-sm-line-height: $kendo-menu-popup-line-height !default;
 $kendo-menu-popup-md-line-height: $kendo-menu-popup-line-height !default;
 $kendo-menu-popup-lg-line-height: $kendo-menu-popup-line-height !default;
 
-/// The background of the menu popup.
+/// The background color of the Menu popup.
 /// @group menu
 $kendo-menu-popup-bg: var( --kendo-component-bg, initial ) !default;
-/// The border color of the menu popup.
+/// The border color of the Menu popup.
 /// @group menu
 $kendo-menu-popup-border: initial !default;
-/// The shadow of the menu popup.
+/// The shadow of the Menu popup.
 /// @group menu
 $kendo-menu-popup-shadow: var( --kendo-box-shadow-depth-6, none ) !default;
 
-/// Horizontal padding of the menu item in popup.
+/// The horizontal padding of the Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-padding-x: k-spacing(2) !default;
 $kendo-menu-popup-sm-item-padding-x: $kendo-menu-popup-item-padding-x !default;
 $kendo-menu-popup-md-item-padding-x: $kendo-menu-popup-item-padding-x !default;
 $kendo-menu-popup-lg-item-padding-x: $kendo-menu-popup-item-padding-x !default;
-/// Vertical padding of the menu item in popup.
+/// The vertical padding of the Menu item in popup.
 /// @group menu
 $kendo-menu-popup-sm-item-padding-y: $kendo-list-sm-item-padding-y !default;
 $kendo-menu-popup-md-item-padding-y: $kendo-list-md-item-padding-y !default;
 $kendo-menu-popup-lg-item-padding-y: $kendo-list-lg-item-padding-y !default;
-/// The end padding of the menu item in popup.
+/// The end padding of the Menu item in popup.
 /// @group menu
 $kendo-menu-popup-sm-item-padding-end: calc( calc( #{$kendo-menu-popup-sm-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
 $kendo-menu-popup-md-item-padding-end: calc( calc( #{$kendo-menu-popup-md-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
 $kendo-menu-popup-lg-item-padding-end: calc( calc( #{$kendo-menu-popup-lg-item-padding-x} * 2 ) + var( --kendo-icon-size, 1rem ) ) !default;
 
-/// The start margin of the menu item expand icon.
+/// The start margin of the Menu item expand icon.
 /// @group menu
 $kendo-menu-popup-sm-item-icon-margin-start: k-spacing(0) !default;
 $kendo-menu-popup-item-icon-md-margin-start: k-spacing(0) !default;
 $kendo-menu-popup-lg-item-icon-margin-start: k-spacing(0) !default;
-/// The end margin of the menu item expand icon.
+/// The end margin of the Menu item expand icon.
 /// @group menu
 $kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) ) !default;
 $kendo-menu-popup-item-icon-md-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-md-item-padding-x}) ) !default;
 $kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-lg-item-padding-x}) ) !default;
 
-/// The base shadow of focused menu item in popup.
+/// The base shadow of focused Menu item in popup.
 /// @group menu
 $kendo-menu-popup-focus-outline-offset: $kendo-menu-item-focus-outline-offset !default;
 $kendo-menu-popup-focus-outline-width: $kendo-menu-item-focus-outline-width !default;
 $kendo-menu-popup-focus-outline-style: $kendo-menu-item-focus-outline-style !default;
 
-/// The spacing between the menu items in popup.
+/// The spacing between the Menu items in popup.
 /// @group menu
 $kendo-menu-popup-item-spacing: k-spacing(0) !default;
 
-/// Sizes map for the menu.
+/// The sizes map for the Menu.
 /// @group menu
 $kendo-menu-sizes: (
     sm: (
@@ -197,58 +224,58 @@ $kendo-menu-sizes: (
     )
 ) !default;
 
-/// The text color of the menu item in popup.
+/// The text color of the Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-text: $kendo-list-item-text !default;
-/// The background of the menu item in popup.
+/// The background color of the Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-bg: $kendo-list-item-bg !default;
 
-/// The text color of hovered menu item in popup.
+/// The text color of hovered Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-hover-text: $kendo-list-item-hover-text !default;
-/// The background of hovered menu item in popup.
+/// The background color of hovered Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-hover-bg: $kendo-list-item-hover-bg !default;
 
-/// The text color of focused menu items.
+/// The text color of focused Menu items.
 /// @group menu
 $kendo-menu-popup-item-focus-text: $kendo-menu-item-text !default;
-/// The background color of focused menu items.
+/// The background color of focused Menu items.
 /// @group menu
 $kendo-menu-popup-item-focus-bg: $kendo-menu-item-bg !default;
-/// The outline of focused menu items.
+/// The outline of focused Menu items.
 /// @group menu
 $kendo-menu-popup-item-focus-outline: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
 
-/// The text color of expanded menu item in popup.
+/// The text color of active Menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-expanded-text: $kendo-list-item-selected-text !default;
-/// The background of expanded menu item in popup.
+$kendo-menu-popup-item-active-text: $kendo-list-item-selected-text !default;
+/// The background color of active Menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-expanded-bg: $kendo-list-item-selected-bg !default;
+$kendo-menu-popup-item-active-bg: $kendo-list-item-selected-bg !default;
 
-/// The text color of disabled menu item in popup.
+/// The text color of disabled Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-disabled-text: $kendo-list-item-disabled-text !default;
-/// The background of disabled menu item in popup.
+/// The background color of disabled Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-disabled-bg: $kendo-list-item-disabled-bg !default;
 
-/// The background color of scroll menu buttons.
+/// The background color of Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-bg: var( --kendo-component-bg, $kendo-component-bg ) !default;
-/// The border color of scroll menu buttons.
+/// The border color of Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-border: var( --kendo-component-border, $kendo-component-border ) !default;
 
-/// The background color of hover scroll menu buttons.
+/// The background color of hover Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-hover-bg: null !default;
-/// The border color of scroll hover menu buttons.
+/// The border color of hover Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-hover-border: null !default;
 
-/// The color of menu items icon.
+/// The color of the Menu items icon.
 /// @group menu
 $kendo-menu-icon-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

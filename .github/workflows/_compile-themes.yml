@@ -25,7 +25,7 @@ jobs:
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: node_modules
           key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
@@ -57,7 +57,7 @@ jobs:
             packages/utils/dist/all.css
 
       - name: Upload themes
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: themes
           path: themes.tar

@@ -128,7 +128,7 @@
             z-index: 1;
         }
         .k-step-label:only-child {
-            @include border-radius( calc( (var( --kendo-stepper-indicator-height, #{$kendo-stepper-indicator-height} ) + 2 * var( --kendo-stepper-indicator-border-width, #{$kendo-stepper-indicator-border-width} )) / 2) );
+            @include border-radius( var( --kendo-stepper-label-border-radius, #{$kendo-stepper-label-border-radius} ) );
             padding-inline: var( --kendo-stepper-label-padding-x, #{$kendo-stepper-label-padding-x} );
             padding-block: var( --kendo-stepper-label-padding-y, #{$kendo-stepper-label-padding-y} );
             border-width: 0;
@@ -211,7 +211,7 @@
             text-align: center;
         }
         .k-step-indicator + .k-step-label {
-            margin-top: if($kendo-stepper-indicator-focus-offset > 0, calc( 8px - #{$kendo-stepper-indicator-focus-offset}), 8px);
+            margin-top: if($kendo-stepper-indicator-focus-offset > 0, k-spacing(1), 8px);
         }
 
         // Progressbar

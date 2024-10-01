@@ -14,18 +14,26 @@
         <section>
             <div class="k-tabstrip k-tabstrip-top k-header">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
                         <li class="k-item k-active">
-                            <span class="k-link">active</span>
+                            <span class="k-link">
+                                <span class="k-link-text">active</span>
+                            </span>
                         </li>
                         <li class="k-item k-hover">
-                            <span class="k-link">hover</span>
+                            <span class="k-link">
+                                <span class="k-link-text">hover</span>
+                            </span>
                         </li>
                         <li class="k-item k-disabled">
-                            <span class="k-link">disabled</span>
+                            <span class="k-link">
+                                <span class="k-link-text">disabled</span>
+                            </span>
                         </li>
                         <li class="k-item k-focus">
-                            <span class="k-link">focus</span>
+                            <span class="k-link">
+                                <span class="k-link-text">focus</span>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -37,43 +45,69 @@
         <section>
             <div class="k-tabstrip k-tabstrip-top k-header">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset">
-                        <li class="k-item k-active k-first">
-                            <span class="k-link">closable</span>
-                            <button class="k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                            <span class="k-item-actions">
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
                         </li>
-                        <li class="k-item k-last">
-                            <span class="k-link">closable</span>
-                            <button class="k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
+                        <li class="k-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                            <span class="k-item-actions">
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                        </li>
+                        <li class="k-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                            <span class="k-item-actions">
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
                         </li>
                     </ul>
                 </div>
                 <div class="k-tabstrip-content k-active">
-                    <div>closable items</div>
+                    <div>Closable items</div>
                 </div>
             </div>
         </section>
         <section>
             <div class="k-tabstrip k-tabstrip-top k-header">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset">
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
                         <li class="k-item k-focus k-active k-first">
-                            <span class="k-link">focus active</span>
+                            <span class="k-link">
+                                <span class="k-link-text">focus active</span>
+                            </span>
                         </li>
                         <li class="k-item k-last">
-                            <span class="k-link">normal</span>
+                            <span class="k-link">
+                                <span class="k-link-text">normal</span>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -85,51 +119,83 @@
         <section>
             <div dir="rtl" class="k-tabstrip k-tabstrip-top k-header">
                 <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset">
-                        <li class="k-item k-active k-first">
-                            <span class="k-link">closable</span>
-                            <button class="k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
+                    <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                            <span class="k-item-actions">
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
                         </li>
-                        <li class="k-item k-last">
-                            <span class="k-link">closable</span>
-                            <button class="k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                    </svg>
-                                </span>
-                            </button>
+                        <li class="k-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                            <span class="k-item-actions">
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
+                        </li>
+                        <li class="k-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                            <span class="k-item-actions">
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </span>
                         </li>
                     </ul>
                 </div>
                 <div class="k-tabstrip-content k-active">
-                    <div>closable items rtl</div>
+                    <div>Closable items</div>
                 </div>
             </div>
         </section>
         <div class="k-tabstrip k-tabstrip-top k-header">
             <div class="k-tabstrip-items-wrapper k-hstack">
-                <ul class="k-tabstrip-items k-reset">
+                <ul class="k-tabstrip-items k-reset k-tabstrip-items-start">
                     <li class="k-item k-first">
-                        <span class="k-link">First</span>
+                        <span class="k-link">
+                            <span class="k-link-text">First</span>
+                        </span>
                     </li>
                     <li class="k-item k-active">
-                        <span class="k-link">Second</span>
+                        <span class="k-link">
+                            <span class="k-link-text">Second</span>
+                        </span>
                     </li>
                     <li class="k-item">
-                        <span class="k-link">Third</span>
+                        <span class="k-link">
+                            <span class="k-link-text">Third</span>
+                        </span>
                     </li>
                     <li class="k-item">
-                        <span class="k-link">Fourth</span>
+                        <span class="k-link">
+                            <span class="k-link-text">Fourth</span>
+                        </span>
                     </li>
                     <li class="k-item k-last">
-                        <span class="k-link">Fifth</span>
+                        <span class="k-link">
+                            <span class="k-link-text">Fifth</span>
+                        </span>
                     </li>
                 </ul>
             </div>

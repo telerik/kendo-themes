@@ -1,5 +1,4 @@
 import { ColumnMenu } from "../../column-menu";
-import { Icon } from '../../icon';
 import { TabStripNormal, TabStripContent, TabStripItem } from "../../tabstrip";
 
 export const ColumnMenuTabbed = (props) => (
@@ -9,9 +8,9 @@ export const ColumnMenuTabbed = (props) => (
             <TabStripNormal header={false} className="k-pos-relative"
                 tabStripItems={
                     <>
-                        <TabStripItem active value={<Icon icon="filter" />}/>
-                        <TabStripItem value={<Icon icon="sliders" />}/>
-                        <TabStripItem value={<Icon icon="columns" />}/>
+                        <TabStripItem active icon="filter" />
+                        <TabStripItem icon="sliders" />
+                        <TabStripItem icon="columns" />
                     </>
                 }
             >

@@ -149,4 +149,4 @@ $kendo-orgchart-line-size: 1px !default;
 $kendo-orgchart-line-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
 /// The height of the OrgChart connecting line.
 /// @group orgchart
-$kendo-orgchart-line-v-height: 25px !default;
+$kendo-orgchart-line-v-height: k-spacing(6) !default;
