@@ -1,10 +1,10 @@
-import { ButtonGroup, Combobox } from '..';
+import { ButtonGroup, Combobox, MenuButton } from '..';
 import { Button } from '../button';
 import { DropzoneNormal } from '../dropzone';
 import { classNames, stateClassNames, States, } from '../misc';
 import { Pager } from '../pager';
 import { Textbox } from '../textbox';
-import { Toolbar } from '../toolbar';
+import { Toolbar, ToolbarSeparator } from '../toolbar';
 import { UploadNormal } from '../upload';
 
 export const PDFVIEWER_CLASSNAME = `k-pdf-viewer`;
@@ -17,6 +17,8 @@ const options = {};
 
 export type KendoPDFViewerProps = {
     toolbar?: React.JSX.Element;
+    annotations?: boolean;
+    annotationsToolbar?: React.JSX.Element;
     showSearchPanel?: boolean;
     blank?: boolean;
 };
@@ -24,30 +26,62 @@ export type KendoPDFViewerProps = {
 export type KendoPDFViewerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultToolbar =
-        <Toolbar resizable>
-            <Pager type="input" pageSizes={false} refresh={false} info={false} />
-            <span className="k-spacer"></span>
-            <ButtonGroup fillMode="flat">
-                <Button fillMode="flat" className="k-group-start" icon="zoom-out"></Button>
-                <Button fillMode="flat" className="k-group-end" icon="zoom-in"></Button>
-            </ButtonGroup>
-            <Combobox value="Automatic Width"></Combobox>
-            <ButtonGroup fillMode="flat">
-                <Button fillMode="flat" className="k-group-start" icon="pointer"></Button>
-                <Button fillMode="flat" className="k-group-end" icon="hand"></Button>
-            </ButtonGroup>
-            <span className="k-spacer"></span>
-            <Button fillMode="flat" icon="search"></Button>
-            <Button fillMode="flat" icon="folder-open"></Button>
-            <Button fillMode="flat" icon="download"></Button>
-            <Button fillMode="flat" icon="print"></Button>
-        </Toolbar>
+    <Toolbar resizable fillMode="flat">
+        <MenuButton icon="menu" fillMode="flat" showArrow={false} />
+        <ToolbarSeparator />
+        <Pager type="input" pageSizes={false} refresh={false} info={false} />
+        <span className="k-spacer"></span>
+        <ButtonGroup fillMode="flat">
+            <Button fillMode="flat" className="k-group-start" icon="zoom-out" />
+            <Button fillMode="flat" className="k-group-end" icon="zoom-in" />
+        </ButtonGroup>
+        <Combobox value="Automatic Width" fillMode="flat" />
+        <ButtonGroup fillMode="flat">
+            <Button fillMode="flat" className="k-group-start" icon="pointer" />
+            <Button fillMode="flat" className="k-group-end" icon="hand" />
+        </ButtonGroup>
+        <span className="k-spacer"></span>
+        <Button fillMode="flat" icon="search" />
+        {/* Toggleable button */}
+        <Button fillMode="flat" icon="edit-annotations" />
+        <Button fillMode="flat" icon="comment" />
+    </Toolbar>
+;
+
+const defaultAnnotationsToolbar =
+    <Toolbar resizable fillMode="flat">
+        {/* Toggleable button group */}
+        <ButtonGroup fillMode="flat">
+            <Button fillMode="flat" className="k-group-start" icon="highlight" />
+            <Button fillMode="flat" icon="underline" />
+            <Button fillMode="flat" className="k-group-end" icon="strikethrough" />
+        </ButtonGroup>
+        <ToolbarSeparator />
+        {/* Toggleable button */}
+        <Button fillMode="flat" icon="free-text" />
+        <ToolbarSeparator />
+        <MenuButton icon="shapes" fillMode="flat" showArrow={true} />
+        <ToolbarSeparator />
+        <MenuButton icon="stamp" fillMode="flat" showArrow={true} />
+        <ToolbarSeparator />
+        <Button fillMode="flat" icon="sticky-note" />
+        <ToolbarSeparator />
+        <Button fillMode="flat" icon="ruler-outline" />
+        <ToolbarSeparator />
+        <Button fillMode="flat" icon="comment" />
+        <ToolbarSeparator />
+        <Button fillMode="flat" icon="eraser-outline" />
+        <span className="k-spacer"></span>
+        <Button fillMode="flat" icon="x" />
+    </Toolbar>
 ;
 
 const defaultOptions = {
     toolbar: defaultToolbar,
     showSearchPanel: false,
     blank: false,
+    annotations: false,
+    annotationsToolbar: defaultAnnotationsToolbar,
 };
 
 export const PDFViewer = (
@@ -58,6 +92,8 @@ export const PDFViewer = (
         toolbar = defaultOptions.toolbar,
         showSearchPanel = defaultOptions.showSearchPanel,
         blank = defaultOptions.blank,
+        annotations,
+        annotationsToolbar = defaultOptions.annotationsToolbar,
         ...other
     } = props;
 
@@ -71,22 +107,23 @@ export const PDFViewer = (
             )}
         >
             {toolbar}
+            {annotations && annotationsToolbar}
             <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto k-enable-text-select">
 
                 {showSearchPanel &&
                 <div className="k-search-panel k-pos-sticky k-top-center">
-                    <Button fillMode="flat" icon="handle-drag" className="k-search-dialog-draghandle"></Button>
+                    <Button fillMode="flat" icon="handle-drag" className="k-search-dialog-draghandle" />
                     <Textbox
                         suffix={
-                            <Button fillMode="flat" className="k-match-case-button" icon="convert-lowercase"></Button>
+                            <Button fillMode="flat" className="k-match-case-button" icon="convert-lowercase" />
                         }
                     />
                     <span className="k-search-matches">
                         <span>0</span> of <span>0</span>
                     </span>
-                    <Button fillMode="flat" icon="arrow-up"></Button>
-                    <Button fillMode="flat" icon="arrow-down"></Button>
-                    <Button fillMode="flat" icon="x"></Button>
+                    <Button fillMode="flat" icon="arrow-up" />
+                    <Button fillMode="flat" icon="arrow-down" />
+                    <Button fillMode="flat" icon="x" />
                 </div>
                 }
 

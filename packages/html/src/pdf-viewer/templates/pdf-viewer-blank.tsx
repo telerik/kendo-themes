@@ -1,27 +1,29 @@
 import { PDFViewer } from "..";
-import { ButtonGroup, Combobox, Pager, Toolbar } from "../..";
+import { ButtonGroup, Combobox, MenuButton, Pager, Toolbar, ToolbarSeparator } from "../..";
 import { Button } from "../../button";
 
 export const PDFViewerBlank = (props) => (
     <PDFViewer blank
         toolbar={
-            <Toolbar resizable>
-                <Pager disabled type="input" currentPage={1} maxPages={1} pageSizes={false} refresh={false} info={false} />
+            <Toolbar resizable fillMode="flat">
+                <MenuButton disabled icon="menu" fillMode="flat" showArrow={false} />
+                <ToolbarSeparator />
+                <Pager disabled type="input" pageSizes={false} refresh={false} info={false} />
                 <span className="k-spacer"></span>
                 <ButtonGroup fillMode="flat">
-                    <Button disabled fillMode="flat" className="k-group-start" icon="zoom-out"></Button>
-                    <Button disabled fillMode="flat" className="k-group-end" icon="zoom-in"></Button>
+                    <Button disabled fillMode="flat" className="k-group-start" icon="zoom-out" />
+                    <Button disabled fillMode="flat" className="k-group-end" icon="zoom-in" />
                 </ButtonGroup>
-                <Combobox disabled value="Automatic Width"></Combobox>
+                <Combobox disabled value="Automatic Width" fillMode="flat" />
                 <ButtonGroup fillMode="flat">
-                    <Button disabled fillMode="flat" className="k-group-start" icon="pointer"></Button>
-                    <Button disabled fillMode="flat" className="k-group-end" icon="hand"></Button>
+                    <Button disabled fillMode="flat" className="k-group-start" icon="pointer" />
+                    <Button disabled fillMode="flat" className="k-group-end" icon="hand" />
                 </ButtonGroup>
                 <span className="k-spacer"></span>
-                <Button disabled fillMode="flat" icon="search"></Button>
-                <Button fillMode="flat" icon="folder-open"></Button>
-                <Button disabled fillMode="flat" icon="download"></Button>
-                <Button disabled fillMode="flat" icon="print"></Button>
+                <Button disabled fillMode="flat" icon="search" />
+                {/* Toggleable button */}
+                <Button disabled fillMode="flat" icon="edit-annotations" />
+                <Button disabled fillMode="flat" icon="comment" />
             </Toolbar>
         }
         {...props}
