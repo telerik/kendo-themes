@@ -30,6 +30,7 @@ export const PDFViewerPage = (
             )}
             style={{ width, height }}
         >
+            {props.children}
         </div>
     );
 };
