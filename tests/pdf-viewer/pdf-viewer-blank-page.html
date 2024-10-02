@@ -21,7 +21,15 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-pdf-viewer">
-            <div class="k-toolbar k-toolbar-md k-toolbar-resizable">
+            <div class="k-toolbar k-toolbar-md k-toolbar-flat k-toolbar-resizable">
+                <button class="k-toolbar-menu-button  k-menu-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-disabled k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-menu">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M480 32v96H32V32zM32 192v96h448v-96zm448 160H32v96h448z"></path>
+                        </svg>
+                    </span>
+                </button>
+                <div class="k-separator"></div>
                 <div class="k-pager k-pager-md k-disabled">
                     <div class="k-pager-numbers-wrap">
                         <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
@@ -43,7 +51,7 @@
                             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
                                 <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
                             </span>
-                            <span>of 1</span>
+                            <span>of 6</span>
                         </span>
                         <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-right">
@@ -78,9 +86,9 @@
                         </span>
                     </button>
                 </div>
-                <span class="k-toolbar-combobox  k-combobox k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                <span class="k-toolbar-combobox  k-combobox k-input k-input-md k-input-flat k-rounded-md k-disabled">
                     <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Automatic Width">
-                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                    <button class="k-input-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-down">
                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 352 128 160h256z"></path>
@@ -112,24 +120,17 @@
                         </svg>
                     </span>
                 </button>
-                <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-folder-open">
+                <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-disabled k-icon-button">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-edit-annotations">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M425.6 160h-246c-17.6 0-37.2 14.4-43.6 32L64 384V96h114.8l32 32H256l-64-64H64c-17.7 0-32 14.3-32 32v288c0 17.7 14.3 32 32 32h268.4c17.6 0 37.2-14.4 43.6-32l70-192c6.4-17.6-2.8-32-20.4-32M346 373.1c-2 5.5-10.1 10.9-13.6 10.9H98.1L166 202.9c2-5.5 10.1-10.9 13.6-10.9h232.3z"></path>
+                            <path d="M447.95 32H64c-17.6 0-32 14.4-32 32v416l95.99-96h127.99v-32H114.73L64 402.75V64.06l.06-.06H447.9l.06.06V224h32V64c0-17.6-14.4-32-32-32zm27.4 251.3-22.65-22.65c-6.25-6.2-16.45-6.2-22.65 0L407.4 283.3l45.29 45.3 22.65-22.65c6.2-6.25 6.2-16.45 0-22.65zm-79.24 11.3L255.98 434.75V480h45.24l140.13-140.15zM289.92 446.05l-11.3-11.3 117.49-117.5 11.3 11.3zM352 256H96v-32h256zm32-64H96v-32h288zm32-64H96V96h320zm-96 192H96v-32h224z"></path>
                         </svg>
                     </span>
                 </button>
                 <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-disabled k-icon-button">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-download">
+                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-comment">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M32 384v96h448v-96zM288 32h-64v128h-96l128 160 128-160h-96z"></path>
-                        </svg>
-                    </span>
-                </button>
-                <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-disabled k-icon-button">
-                    <span class="k-button-icon k-icon k-svg-icon k-svg-i-print">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M448 160h-32V96l-64-64H128c-17.7 0-32 14.3-32 32v96H64c-17.6 0-32 14.4-32 32v160c0 17.6 14.4 32 32 32h32v64c0 17.6 14.4 32 32 32h256c17.6 0 32-14.4 32-32v-64h32c17.6 0 32-14.4 32-32V192c0-17.6-14.4-32-32-32M128 64h192v64h64v64H128zm320 256h-64v127.9l-.1.1H128.1l-.1-.1V320H64v-32h384zm-288 0h192v32H160zm0 64h160v32H160z"></path>
+                            <path d="M448 32H64c-17.6 0-32 14.4-32 32v416l96-96h320c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32m0 319.942a1 1 0 0 1-.058.058H114.745L64 402.745V64.057a1 1 0 0 1 .057-.057h383.885q.031.027.058.057z"></path>
                         </svg>
                     </span>
                 </button>
