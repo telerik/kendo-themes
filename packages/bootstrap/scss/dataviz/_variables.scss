@@ -132,8 +132,17 @@ $kendo-chart-selection-handle-size: 22px !default;
 $kendo-chart-selection-border-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )) !default;
 $kendo-chart-selection-shadow: inset 0 1px 7px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .15 )) !default;
 
+$kendo-chart-computed-title-height: 0px !default;
 
 // TreeMap
 $kendo-treemap-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-treemap-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-treemap-line-height: var( --kendo-line-height, normal ) !default;
+
+// Chart Overlay
+$kendo-chart-overlay-bg: $kendo-base-bg !default;
+
+// No Data
+$kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
+$kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;

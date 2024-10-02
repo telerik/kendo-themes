@@ -119,6 +119,14 @@
         opacity: .8;
     }
 
+    .k-chart-overlay {
+        background-color: var( --kendo-chart-overlay-bg, #{$kendo-chart-overlay-bg} );
+
+        .k-no-data {
+            color: var( --kendo-chart-no-data-text, #{$kendo-chart-no-data-text} );
+        }
+    }
+
     // Treemap
     .k-treemap {
         @include fill(
