@@ -213,6 +213,10 @@ $kendo-selection-handle-size: 24px !default;
 /// @group charts
 $kendo-selection-border-color: var( --kendo-component-border, initial ) !default;
 
+/// The computed height of the Chart title.
+/// @group charts
+$kendo-chart-computed-title-height: 0px !default;
+
 /// The font-family of the treemap.
 /// @group charts
 $kendo-treemap-font-family: var( --kendo-font-family, inherit ) !default;
@@ -241,3 +245,22 @@ $kendo-treemap-title-text: if($kendo-enable-color-system, k-color( on-app-surfac
 /// The border color of the treemap title.
 /// @group charts
 $kendo-treemap-title-border: var( --kendo-component-border, initial ) !default;
+
+// Chart Overlay
+/// The background color of the Chart overlay.
+/// @group charts
+$kendo-chart-overlay-bg: if($kendo-enable-color-system, k-color(app-surface), $kendo-color-white) !default;
+
+// No Data
+/// The font-size of the Chart no data message.
+/// @group charts
+$kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
+/// The font-weight of the Chart no data message.
+/// @group charts
+$kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
+/// The text color of the Chart no data message.
+/// @group charts
+$kendo-chart-no-data-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
+/// The vertical padding of the Chart no data message.
+/// @group charts
+$kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;

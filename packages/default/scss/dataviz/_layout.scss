@@ -242,8 +242,29 @@
         }
     }
 
+    // Chart Overlay
+    .k-chart-overlay {
+        margin: 0;
+        width: 100%;
+        height: if( --kendo-chart-computed-title-height, calc( 100% - var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} ) ), 100% );
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 10001;
 
+        &-top {
+            top: var( --kendo-chart-computed-title-height, #{$kendo-chart-computed-title-height} );
+        }
 
+        .k-no-data {
+            min-height: auto;
+            padding-block-start: $kendo-chart-no-data-padding-y;
+            color: inherit;
+            font-size: $kendo-chart-no-data-font-size;
+            font-weight: $kendo-chart-no-data-font-weight;
+        }
+    }
 
     // Diagram
     .k-diagram {
