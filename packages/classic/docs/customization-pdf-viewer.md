@@ -357,6 +357,76 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer icon.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-pdf-viewer-popup-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PDFViewer popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-popup-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-pdf-viewer-popup-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PDFViewer popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-highlight-annotation-border</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer selected highlight annotation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-highlight-annotation-hover-border</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer hover highlight annotation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-free-text-annotation-border</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
+    <td><code>var(--kendo-color-primary, #f35800)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer selected free text annotation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-free-text-annotation-placeholder-text</td>
+    <td>Color</td>
+    <td><code>rgba(124, 22, 27, 0.5)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(124, 22, 27, 0.5)"></span><code>rgba(124, 22, 27, 0.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The placeholder text color of the PDFViewer free text annotation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-free-text-annotation-text</td>
+    <td>Color</td>
+    <td><code>rgba(124, 22, 27, 0.7)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(124, 22, 27, 0.7)"></span><code>rgba(124, 22, 27, 0.7)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer free text annotation.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
