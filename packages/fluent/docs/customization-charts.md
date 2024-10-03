@@ -448,6 +448,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chart-computed-title-height</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The computed height of the Chart title.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-treemap-font-family</td>
     <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
@@ -535,6 +545,56 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the treemap title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-overlay-bg</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color(app-surface), $kendo-color-white)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chart overlay.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-no-data-font-size</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-lg, inherit )</code></td>
+    <td><code>var(--kendo-font-size-lg, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-size of the Chart no data message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-no-data-font-weight</td>
+    <td>String</td>
+    <td><code>var( --kendo-font-weight, normal )</code></td>
+    <td><code>var(--kendo-font-weight, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-weight of the Chart no data message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-no-data-text</td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Chart no data message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chart-no-data-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing( 25 )</code></td>
+    <td><code>var(--kendo-spacing-25, 7rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chart no data message.</div></div>
     </td>
 </tr>
 </tbody>
