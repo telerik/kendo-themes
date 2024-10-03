@@ -1,0 +1,5 @@
+@import "@progress/kendo-theme-default/scss/no-data/_theme.scss";
+
+@mixin kendo-no-data--theme() {
+    @include kendo-no-data--theme-base();
+}

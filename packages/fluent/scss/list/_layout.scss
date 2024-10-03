@@ -249,22 +249,4 @@
         }
     }
 
-
-    // No data
-    .k-no-data {
-        min-height: 140px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: lighter;
-        text-align: center;
-        white-space: normal;
-    }
-
-
-    // Alias
-    .k-nodata {
-        @extend .k-no-data !optional;
-    }
-
 }

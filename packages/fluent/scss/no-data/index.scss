@@ -1,13 +1,8 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "list",
-    dependencies: (
-        "checkbox",
-        "icon",
-        "no-data"
-    )
+    name: "no-data",
+    dependencies: ()
 );
-
 
 // Component
 @forward "./_variables.scss";
@@ -19,9 +14,9 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin list-styles() {
-    @include module.render( "list" ) {
-        @include kendo-list--layout();
-        @include kendo-list--theme();
+@mixin no-data-styles() {
+    @include module.render( "no-data" ) {
+        @include kendo-no-data--layout();
+        @include kendo-no-data--theme();
     }
 }

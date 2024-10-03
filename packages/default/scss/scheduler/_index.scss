@@ -24,7 +24,8 @@ $_kendo-module-meta: (
         "toolbar",
         "tooltip",
         "time-marker",
-        "window"
+        "window",
+        "no-data"
     )
 );
 
@@ -37,6 +38,7 @@ $_kendo-module-meta: (
 @import "../dropdownlist/_index.scss";
 @import "../dialog/_index.scss";
 @import "../tooltip/_index.scss";
+@import "../no-data/_index.scss";
 
 
 // Component
