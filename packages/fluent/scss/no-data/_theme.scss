@@ -1,0 +1,9 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-no-data--theme() {
+
+    .k-no-data {
+        color: var( --kendo-no-data-text, #{$kendo-no-data-text} );
+    }
+
+}

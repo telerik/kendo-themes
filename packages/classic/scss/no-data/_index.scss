@@ -1,21 +1,13 @@
 @import "../core/_index.scss";
 
 
-
 // Module meta
 $_kendo-module-meta: (
-    name: "list",
-    dependencies: (
-        "checkbox",
-        "icon",
-        "no-data"
-    )
+    name: "no-data",
+    dependencies: ()
 );
 
-
 // Dependencies
-@import "../checkbox/_index.scss";
-@import "../no-data/_index.scss";
 
 
 // Component
@@ -23,20 +15,18 @@ $_kendo-module-meta: (
 @import "./_layout.scss";
 @import "./_theme.scss";
 
-
 // Register
 @import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
-
 // Expose
-@mixin kendo-list--styles() {
-    @include module-render( "list" ) {
-        @include kendo-list--layout();
-        @include kendo-list--theme();
+@mixin kendo-no-data--styles() {
+    @include module-render( "no-data" ) {
+        @include kendo-no-data--layout();
+        @include kendo-no-data--theme();
     }
 }
 
 @if $kendo-auto-bootstrap {
-    @include kendo-list--styles();
+    @include kendo-no-data--styles();
 }

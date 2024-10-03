@@ -6,13 +6,15 @@ $_kendo-module-meta: (
     name: "list",
     dependencies: (
         "checkbox",
-        "icon"
+        "icon",
+        "no-data"
     )
 );
 
 
 // Dependencies
 @import "../checkbox/_index.scss";
+@import "../no-data/_index.scss";
 
 
 // Component

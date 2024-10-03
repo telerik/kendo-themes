@@ -1,0 +1,12 @@
+@mixin kendo-no-data--theme-base() {
+
+    .k-no-data {
+        color: $kendo-list-no-data-text;
+    }
+
+}
+
+
+@mixin kendo-no-data--theme() {
+    @include kendo-no-data--theme-base();
+}

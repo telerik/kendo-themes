@@ -21,6 +21,7 @@
 @forward "./ripple/index.scss";
 @forward "./table/index.scss";
 @forward "./virtual-scroller/index.scss";
+@forward "./no-data/index.scss";
 
 
 // Native forms
@@ -184,6 +185,7 @@
 @use "./ripple/index.scss" as *;
 @use "./table/index.scss" as *;
 @use "./virtual-scroller/index.scss" as *;
+@use "./no-data/index.scss" as *;
 
 
 // Indicators
@@ -372,6 +374,7 @@
     @include ripple-styles();
     @include table-styles();
     @include virtual-scroller-styles();
+    @include no-data-styles();
 
 
     // Indicators
