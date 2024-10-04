@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "sass:meta";
@@ -146,7 +147,7 @@
 
 
     // Outline button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
         .k-button-outline-#{$name} {
             @include box-shadow( none );
             border-color: currentColor;
@@ -228,7 +229,7 @@
 
 
     // Flat button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
         .k-button-flat-#{$name} {
             @if $name == "base" {
                 color: inherit;
@@ -246,7 +247,7 @@
 
 
     // Link button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
         .k-button-link-#{$name} {
             color: $color;
 
@@ -301,7 +302,7 @@
 
 
     // Clear button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
+    @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
         .k-button-clear-#{$name} {
             color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color);
 
