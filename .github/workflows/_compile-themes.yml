@@ -41,7 +41,7 @@ jobs:
 
       - name: Build swatch for a11y tests
         run: |
-          npm run dist:swatches
+          npm run sass:swatches:dist
           npx sass-build build --file packages/default/dist/default-ocean-blue-a11y.scss --outFile packages/default/dist/default-ocean-blue-a11y.css
 
       - name: Pack themes
