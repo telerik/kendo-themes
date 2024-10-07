@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v9.1.0-dev.4...v9.1.0-dev.5) (2024-10-07)
+
+
+### Features
+
+* **dataviz:** add chart overlay styles ([f1f607d](https://github.com/telerik/kendo-themes/commit/f1f607d850c8d87b4ff957c384ccea7d77500c22))
+* **pdf-viewer:** add styles related to pdf annotations ([dedc15c](https://github.com/telerik/kendo-themes/commit/dedc15c2727b587e6393c45203f01e1397d1afa8))
+* **toolbar:** add fillMode option styles ([dbe414d](https://github.com/telerik/kendo-themes/commit/dbe414d2887e3824cb9c2ed9cd9ad72d86b4a7d9))
+
+
+
+
+
 # [9.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v9.1.0-dev.3...v9.1.0-dev.4) (2024-09-30)
 
 

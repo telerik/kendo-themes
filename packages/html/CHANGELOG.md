@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v9.1.0-dev.4...v9.1.0-dev.5) (2024-10-07)
+
+
+### Features
+
+* **html:** add fillMode option in the Toolbar spec ([c7c8ab2](https://github.com/telerik/kendo-themes/commit/c7c8ab22265dda7e8aa35b5af38b15809d922c0d))
+* **html:** add PDFViewer annotations spec and tests ([90b853e](https://github.com/telerik/kendo-themes/commit/90b853ed30c033d1aa226a64a852fc6de1ca431e))
+
+
+
+
+
 # [9.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v9.1.0-dev.3...v9.1.0-dev.4) (2024-09-30)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
