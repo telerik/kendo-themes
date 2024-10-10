@@ -1,8 +1,0 @@
-@use "../color-system/_swatch.scss" as *;
-@use "../_variables.scss" as *;
-
-@mixin kendo-core--styles--colors() {
-    @if ($kendo-enable-color-system) {
-        @include color-system--styles();
-    }
-}

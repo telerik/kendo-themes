@@ -3,7 +3,7 @@
 @use "../_variables.scss" as *;
 @use "./_mixins.import.scss" as *;
 @use "./_functions.import.scss" as *;
-@use "../functions/color-manipulation.import" as *;
+@use "../functions/_color.import" as *;
 
 // Root styles
 
