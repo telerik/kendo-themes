@@ -419,13 +419,13 @@ $kendo-utils: (
     ),
     "gap": map.merge( $kendo-spacing, (
         // TODO: remove this extension once we fix docs
-        xs: k-spacing("1"),
-        sm: k-spacing("2"),
-        md: k-spacing("3"),
-        lg: k-spacing("4"),
-        xl: k-spacing("6"),
-        thin: k-spacing("0.5"),
-        hair: k-spacing("1px")
+        xs: k-spacing(1),
+        sm: k-spacing(2),
+        md: k-spacing(3),
+        lg: k-spacing(4),
+        xl: k-spacing(6),
+        thin: k-spacing(0.5),
+        hair: k-spacing(1px)
     )),
     "align-content": (
         normal: normal,
@@ -561,24 +561,24 @@ $kendo-utils: (
         $kendo-spacing, k-map-negate($kendo-spacing),
         (
         // TODO: remove this extension once we fix docs
-        xs: k-spacing("1"),
-        sm: k-spacing("2"),
-        md: k-spacing("3"),
-        lg: k-spacing("4"),
-        xl: k-spacing("6"),
-        thin: k-spacing("0.5"),
-        hair: k-spacing("1px"),
+        xs: k-spacing(1),
+        sm: k-spacing(2),
+        md: k-spacing(3),
+        lg: k-spacing(4),
+        xl: k-spacing(6),
+        thin: k-spacing(0.5),
+        hair: k-spacing(1px),
         auto: auto
     )),
     "padding": map.merge( $kendo-spacing, (
         // TODO: remove this extension once we fix docs
-        xs: k-spacing("1"),
-        sm: k-spacing("2"),
-        md: k-spacing("3"),
-        lg: k-spacing("4"),
-        xl: k-spacing("6"),
-        thin: k-spacing("0.5"),
-        hair: k-spacing("1px")
+        xs: k-spacing(1),
+        sm: k-spacing(2),
+        md: k-spacing(3),
+        lg: k-spacing(4),
+        xl: k-spacing(6),
+        thin: k-spacing(0.5),
+        hair: k-spacing(1px)
     )),
     "space-between": (),
 
