@@ -1,4 +1,5 @@
 @use "@progress/kendo-theme-core/scss/index.import.scss" as *;
+
 @if ($kendo-enable-color-system) {
     $input-bg: k-color( surface-alt );
     $input-color: k-color( on-app-surface );
