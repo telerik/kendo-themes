@@ -1,6 +1,6 @@
 @import "@progress/kendo-theme-default/scss/dateinput/_layout.scss";
 
 
-@mixin kendo-date-input--layout() {
+@mixin kendo-dateinput--layout() {
     @include kendo-date-input--layout-base();
 }
