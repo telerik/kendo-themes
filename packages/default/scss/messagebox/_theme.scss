@@ -1,4 +1,5 @@
 @use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-messagebox--theme-base() {
 
