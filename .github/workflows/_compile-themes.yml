@@ -39,6 +39,7 @@ jobs:
         run: |
           npm run sass --prefix packages/core
           npm run sass --prefix packages/default
+          npm run sass --prefix packages/bootstrap
           npm run sass --prefix packages/utils
 
       - name: Build swatch for a11y tests
@@ -52,6 +53,7 @@ jobs:
           tar -cf themes.tar \
             packages/default/dist/all.css \
             packages/default/dist/default-ocean-blue-a11y.css \
+            packages/bootstrap/dist/all.css \
             packages/utils/dist/all.css
 
       - name: Upload themes
