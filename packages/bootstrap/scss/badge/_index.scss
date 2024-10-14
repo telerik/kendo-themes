@@ -9,7 +9,7 @@
 @use "../icons/_index.scss" as *;
 
 // Expose
-@mixin badge-styles() {
+@mixin kendo-badge--styles() {
     @include import-once( "badge" ) {
         @include kendo-badge--layout();
         @include kendo-badge--theme();
