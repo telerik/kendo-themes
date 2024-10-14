@@ -9,27 +9,41 @@
 
 // Primary colors
 $kendo-color-primary: if($kendo-enable-color-system, k-color( primary ), #ff6358 ) !default;
+$kendo-color-primary-lighter: if($kendo-enable-color-system, null, k-color-tint($kendo-color-primary, 2)) !default;
+$kendo-color-primary-darker: if($kendo-enable-color-system, null, k-color-shade($kendo-color-primary, 2)) !default;
 $kendo-color-primary-contrast: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy($kendo-color-primary) ) !default;
 
 // Secondary colors
 $kendo-color-secondary: if($kendo-enable-color-system, k-color( secondary ), #666666 ) !default;
+$kendo-color-secondary-lighter: if($kendo-enable-color-system, null, k-color-tint($kendo-color-secondary, 2)) !default;
+$kendo-color-secondary-darker: if($kendo-enable-color-system, null, k-color-shade($kendo-color-secondary, 2)) !default;
 $kendo-color-secondary-contrast: if($kendo-enable-color-system, k-color( on-secondary ), k-contrast-legacy($kendo-color-secondary) ) !default;
 
 // Tertiary colors
 $kendo-color-tertiary: if($kendo-enable-color-system, k-color( tertiary ), #03a9f4 ) !default;
+$kendo-color-tertiary-lighter: if($kendo-enable-color-system, null, k-color-tint($kendo-color-tertiary, 2)) !default;
+$kendo-color-tertiary-darker: if($kendo-enable-color-system, null, k-color-shade($kendo-color-tertiary, 2)) !default;
 $kendo-color-tertiary-contrast: if($kendo-enable-color-system, k-color( on-tertiary ), k-contrast-legacy($kendo-color-tertiary) ) !default;
 
 // Info colors
 $kendo-color-info: if($kendo-enable-color-system, k-color( info ), #0058e9 ) !default;
+$kendo-color-info-lighter: if($kendo-enable-color-system, null, k-color-tint($kendo-color-info, 2)) !default;
+$kendo-color-info-darker: if($kendo-enable-color-system, null, k-color-shade($kendo-color-info, 2)) !default;
 
 // Success colors
 $kendo-color-success: if($kendo-enable-color-system, k-color( success ), #37b400 ) !default;
+$kendo-color-success-lighter: if($kendo-enable-color-system, null, k-color-tint($kendo-color-success, 2)) !default;
+$kendo-color-success-darker: if($kendo-enable-color-system, null, k-color-shade($kendo-color-success, 2)) !default;
 
 // Warning colors
 $kendo-color-warning: if($kendo-enable-color-system, k-color( warning ), #ffc000 ) !default;
+$kendo-color-warning-lighter: if($kendo-enable-color-system, null, k-color-tint($kendo-color-warning, 2)) !default;
+$kendo-color-warning-darker: if($kendo-enable-color-system, null, k-color-shade($kendo-color-warning, 2)) !default;
 
 // Error colors
 $kendo-color-error: if($kendo-enable-color-system, k-color( error ), #f31700 ) !default;
+$kendo-color-error-lighter: if($kendo-enable-color-system, null, k-color-tint($kendo-color-error, 2)) !default;
+$kendo-color-error-darker: if($kendo-enable-color-system, null, k-color-shade($kendo-color-error, 2)) !default;
 
 
 $kendo-color-dark: if($kendo-enable-color-system, k-color( dark ), #424242 ) !default;
@@ -38,7 +52,7 @@ $kendo-color-dark: if($kendo-enable-color-system, k-color( dark ), #424242 ) !de
 $kendo-color-light: if($kendo-enable-color-system, k-color( light ), #ebebeb ) !default;
 
 // Inverse colors
-$kendo-color-inverse: $kendo-color-dark !default;
+$kendo-color-inverse: if($kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark) !default;
 
 // Body styles
 $kendo-body-bg: if($kendo-enable-color-system, k-color( app-surface ), #ffffff ) !default;
