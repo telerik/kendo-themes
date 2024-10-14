@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$wcag-min-contrast-ratio</td>
     <td>Number</td>
     <td><code>7</code></td>
-    <td><code>4.5</code></td>
+    <td><code>7</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The contrast ratio to reach against white, to determine if color changes from "light" to "dark".<br />Acceptable values for WCAG 2.0 are 3, 4.5 and 7.</div></div>

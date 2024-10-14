@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-body-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>constants.$kendo-color-white</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -78,6 +78,86 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-padding-x</td>
+    <td></td>
+    <td><code>k-spacing(2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-y</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-x</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-y</td>
+    <td></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-x</td>
+    <td></td>
+    <td><code>k-spacing(2)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-y</td>
+    <td></td>
+    <td><code>k-spacing(1)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-x</td>
+    <td></td>
+    <td><code>k-spacing(3)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-y</td>
+    <td></td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-base-bg</td>
     <td>String</td>
     <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
@@ -100,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-base-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-base-bg, 2 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-base-bg, 2 )</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -120,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-hover-bg</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-base-bg, 1 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-base-bg, 1 )</code></td>
     <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
 </tr>
 <tr>
@@ -140,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-hover-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-hover-bg, 2 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-hover-bg, 2 )</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -170,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-text</td>
     <td>String</td>
-    <td><code>k-contrast-legacy( $kendo-selected-bg )</code></td>
+    <td><code>functions.k-contrast-legacy( $kendo-selected-bg )</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -180,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-selected-bg, 2 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-selected-bg, 2 )</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -200,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-hover-bg</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-selected-bg, 1 )</code></td>
+    <td><code>functions.k-try-shade( $kendo-selected-bg, 1 )</code></td>
     <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
@@ -210,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-hover-text</td>
     <td>String</td>
-    <td><code>k-contrast-legacy( $kendo-selected-hover-bg )</code></td>
+    <td><code>functions.k-contrast-legacy( $kendo-selected-hover-bg )</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
