@@ -8,9 +8,11 @@
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 
+
 // Expose
 @mixin kendo-icon--styles() {
     @include import-once( "icon" ) {
+        @include core-styles();
         @include kendo-icon--layout();
         @include kendo-icon--theme();
         @include kendo-utils--transform--rotate();
