@@ -1,6 +1,0 @@
-@use 'sass:meta' as meta; // add this
-
-@forward "bootstrap/scss/bootstrap.scss";
-@use "bootstrap/scss/bootstrap.scss" as *;
-
-// @import "bootstrap/scss/bootstrap.scss";
