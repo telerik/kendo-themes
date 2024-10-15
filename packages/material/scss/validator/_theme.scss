@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/validator/_theme.scss";
+@use "@progress/kendo-theme-default/scss/validator/_theme.scss" as *;
 
 
 @mixin kendo-validator--theme() {

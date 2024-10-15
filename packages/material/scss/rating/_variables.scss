@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Rating
 
 /// The font family of the Rating.
@@ -12,21 +14,21 @@ $kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal margin of the Rating container.
 /// @group rating
-$kendo-rating-container-margin-x: calc( #{$kendo-padding-sm-x} / 2 ) !default;
+$kendo-rating-container-margin-x: calc( #{k-spacing(2)} / 2 ) !default;
 
 /// The horizontal padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-x: calc( #{$kendo-padding-sm-x} / 2 ) !default;
+$kendo-rating-item-padding-x: calc( #{k-spacing(2)} / 2 ) !default;
 /// The vertical padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-y: $kendo-padding-md-y !default;
+$kendo-rating-item-padding-y: k-spacing(1) !default;
 
 /// The horizontal margin of the Rating label.
 /// @group rating
-$kendo-rating-label-margin-x: $kendo-padding-sm-x !default;
+$kendo-rating-label-margin-x: k-spacing(2) !default;
 /// The vertical margin of the Rating label.
 /// @group rating
-$kendo-rating-label-margin-y: $kendo-padding-md-y !default;
+$kendo-rating-label-margin-y: k-spacing(1) !default;
 /// The line height of the Rating label.
 /// @group rating
 $kendo-rating-label-line-height: $kendo-line-height-lg !default;
@@ -50,3 +52,21 @@ $kendo-rating-icon-focus-shadow: 0 2px 4px rgba( black, .1 ) !default;
 /// The shadow of the focused and selected Rating icon.
 /// @group rating
 $kendo-rating-icon-focus-selected-shadow: 0 2px 4px rgba( black, .1) !default;
+
+@forward "@progress/kendo-theme-default/scss/rating/_variables.scss" with (
+    $kendo-rating-font-family: $kendo-rating-font-family,
+    $kendo-rating-font-size: $kendo-rating-font-size,
+    $kendo-rating-line-height: $kendo-rating-line-height,
+    $kendo-rating-container-margin-x: $kendo-rating-container-margin-x,
+    $kendo-rating-item-padding-x: $kendo-rating-item-padding-x,
+    $kendo-rating-item-padding-y: $kendo-rating-item-padding-y,
+    $kendo-rating-label-margin-x: $kendo-rating-label-margin-x,
+    $kendo-rating-label-margin-y: $kendo-rating-label-margin-y,
+    $kendo-rating-label-line-height: $kendo-rating-label-line-height,
+    $kendo-rating-icon-text: $kendo-rating-icon-text,
+    $kendo-rating-icon-selected-text: $kendo-rating-icon-selected-text,
+    $kendo-rating-icon-hover-text: $kendo-rating-icon-hover-text,
+    $kendo-rating-icon-focus-text: $kendo-rating-icon-focus-text,
+    $kendo-rating-icon-focus-shadow: $kendo-rating-icon-focus-shadow,
+    $kendo-rating-icon-focus-selected-shadow: $kendo-rating-icon-focus-selected-shadow
+);
