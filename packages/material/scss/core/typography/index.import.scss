@@ -19,7 +19,7 @@ $kendo-font-size-xl: 1.25rem !default;
 
 /// The base line height across all components.
 /// @group typography
-$kendo-line-height: k-math-div( 28, 14 ) !default;
+$kendo-line-height: calc(28 / 14) !default;
 /// The extra small line height across all components.
 /// @group typography
 $kendo-line-height-xs: 1 !default;
@@ -116,5 +116,3 @@ $kendo-letter-spacings: $_default-letter-spacings !default;
 /// The font families map
 /// @group typography
 $kendo-font-families: $_default-font-families !default;
-
-@import "@progress/kendo-theme-core/scss/typography/index.import.scss";
