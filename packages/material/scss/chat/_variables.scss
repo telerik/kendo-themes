@@ -156,13 +156,13 @@ $kendo-chat-bubble-text: $kendo-component-text !default;
 $kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;
 /// The box shadow of the Chat bubble.
 /// @group chat
-$kendo-chat-bubble-shadow: $box-shadow-depth-1 !default;
+$kendo-chat-bubble-shadow: k-elevation(1) !default;
 /// The shadow of the hovered Chat bubble.
 /// @group chat
-$kendo-chat-bubble-hover-shadow: $box-shadow-depth-2 !default;
+$kendo-chat-bubble-hover-shadow: k-elevation(2) !default;
 /// The shadow of the selected Chat bubble.
 /// @group chat
-$kendo-chat-bubble-selected-shadow: $box-shadow-depth-3 !default;
+$kendo-chat-bubble-selected-shadow: k-elevation(3) !default;
 
 /// The background color of the Chat alt bubble.
 /// @group chat
@@ -175,13 +175,13 @@ $kendo-chat-alt-bubble-text: if($kendo-enable-color-system, k-color( on-primary 
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
 /// The shadow of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-shadow: $box-shadow-depth-1 !default;
+$kendo-chat-alt-bubble-shadow: k-elevation(1) !default;
 /// The shadow of the hovered Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-hover-shadow: $box-shadow-depth-2 !default;
+$kendo-chat-alt-bubble-hover-shadow: k-elevation(2) !default;
 /// The shadow of the selected Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-selected-shadow: $box-shadow-depth-3 !default;
+$kendo-chat-alt-bubble-selected-shadow: k-elevation(3) !default;
 
 /// The background color of the Chat quick reply.
 /// @group chat

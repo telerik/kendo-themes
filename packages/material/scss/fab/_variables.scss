@@ -118,13 +118,13 @@ $kendo-fab-sizes: (
 
 /// The base shadow of the FAB.
 /// @group floating-action-button
-$kendo-fab-shadow: $box-shadow-depth-5 !default;
+$kendo-fab-shadow: k-elevation(5) !default;
 /// The shadow of the disabled FAB.
 /// @group floating-action-button
-$kendo-fab-disabled-shadow: $box-shadow-depth-5 !default;
+$kendo-fab-disabled-shadow: k-elevation(5) !default;
 /// The shadow of the active FAB.
 /// @group floating-action-button
-$kendo-fab-active-shadow: $box-shadow-depth-7 !default;
+$kendo-fab-active-shadow: k-elevation(7) !default;
 
 /// The base text color of the FAB item.
 /// @group floating-action-button

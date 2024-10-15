@@ -174,16 +174,16 @@ $kendo-pivotgrid-configurator-header-border: null !default;
 
 /// The shadow of the PivotGrid configurator.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-end-shadow: $box-shadow-depth-3 !default;
+$kendo-pivotgrid-configurator-end-shadow: k-elevation(3) !default;
 /// The end shadow of the PivotGrid configurator.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-start-shadow: $box-shadow-depth-3 !default;
+$kendo-pivotgrid-configurator-start-shadow: k-elevation(3) !default;
 /// The start shadow of the PivotGrid configurator.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-top-shadow: $box-shadow-depth-3 !default;
+$kendo-pivotgrid-configurator-top-shadow: k-elevation(3) !default;
 /// The top shadow of the PivotGrid configurator.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-bottom-shadow: $box-shadow-depth-3 !default;
+$kendo-pivotgrid-configurator-bottom-shadow: k-elevation(3) !default;
 
 /// The horizontal padding of the PivotGrid configurator button.
 /// @group pivotgrid

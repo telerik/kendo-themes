@@ -13,7 +13,7 @@ $kendo-drag-hint-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-tr
 $kendo-drag-hint-text: $kendo-body-text !default;
 $kendo-drag-hint-border: null !default;
 $kendo-drag-hint-gradient: null !default;
-$kendo-drag-hint-shadow: $box-shadow-depth-3 !default;
+$kendo-drag-hint-shadow: k-elevation(3) !default;
 
 $kendo-drag-hint-opacity: null !default;
 
