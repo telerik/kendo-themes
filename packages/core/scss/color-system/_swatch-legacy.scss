@@ -101,7 +101,7 @@ $kendo-subtle-text: if($kendo-enable-color-system, k-color( subtle ), #666666 ) 
 
 // Link
 $kendo-link-text: $kendo-color-primary !default;
-$kendo-link-hover-text: null !default;
+$kendo-link-hover-text: if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker) !default;
 
 // Validator
 $kendo-invalid-bg: null !default;
