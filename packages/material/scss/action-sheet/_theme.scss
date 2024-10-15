@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/action-sheet/_theme.scss";
+@use "@progress/kendo-theme-default/scss/action-sheet/_theme.scss" as *;
 
 
 @mixin kendo-action-sheet--theme() {

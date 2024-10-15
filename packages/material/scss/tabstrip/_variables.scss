@@ -1,3 +1,8 @@
+@use "sass:math";
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../list/_variables.scss" as *;
+
 // TabStrip
 
 
@@ -19,7 +24,7 @@ $kendo-tabstrip-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-tabstrip-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-line-height: k-math-div( 20, 14 ) !default;
+$kendo-tabstrip-line-height: math.div( 20, 14 ) !default;
 /// The border width around the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-border-width: 1px !default;
@@ -108,14 +113,14 @@ $kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// The shadow of the dragged TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-dragging-shadow: $box-shadow-depth-3 !default;
+$kendo-tabstrip-item-dragging-shadow: k-elevation(3) !default;
 
 /// The background color of the disabled TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-disabled-bg: null !default;
 /// The text color of the disabled TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), k-map-get( $theme, disabled-text )) !default;
+$kendo-tabstrip-item-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), map.get( $theme, disabled-text )) !default;
 /// The border color of the disabled TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-disabled-border: null !default;
@@ -158,3 +163,54 @@ $kendo-tabstrip-content-border: null !default;
 /// The border color of the focused TabStrip content.
 /// @group tabstrip
 $kendo-tabstrip-content-focus-border: $kendo-component-text !default;
+
+@forward "@progress/kendo-theme-default/scss/tabstrip/_variables.scss" with (
+    $kendo-tabstrip-wrapper-padding-x: $kendo-tabstrip-wrapper-padding-x,
+    $kendo-tabstrip-wrapper-padding-y: $kendo-tabstrip-wrapper-padding-y,
+    $kendo-tabstrip-wrapper-border-width: $kendo-tabstrip-wrapper-border-width,
+    $kendo-tabstrip-font-family: $kendo-tabstrip-font-family,
+    $kendo-tabstrip-font-size: $kendo-tabstrip-font-size,
+    $kendo-tabstrip-line-height: $kendo-tabstrip-line-height,
+    $kendo-tabstrip-border-width: $kendo-tabstrip-border-width,
+    $kendo-tabstrip-wrapper-bg: $kendo-tabstrip-wrapper-bg,
+    $kendo-tabstrip-wrapper-text: $kendo-tabstrip-wrapper-text,
+    $kendo-tabstrip-wrapper-border: $kendo-tabstrip-wrapper-border,
+    $kendo-tabstrip-bg: $kendo-tabstrip-bg,
+    $kendo-tabstrip-text: $kendo-tabstrip-text,
+    $kendo-tabstrip-border: $kendo-tabstrip-border,
+    $kendo-tabstrip-item-padding-x: $kendo-tabstrip-item-padding-x,
+    $kendo-tabstrip-item-padding-y: $kendo-tabstrip-item-padding-y,
+    $kendo-tabstrip-item-border-width: $kendo-tabstrip-item-border-width,
+    $kendo-tabstrip-item-border-radius: $kendo-tabstrip-item-border-radius,
+    $kendo-tabstrip-item-gap: $kendo-tabstrip-item-gap,
+    $kendo-tabstrip-item-bg: $kendo-tabstrip-item-bg,
+    $kendo-tabstrip-item-text: $kendo-tabstrip-item-text,
+    $kendo-tabstrip-item-border: $kendo-tabstrip-item-border,
+    $kendo-tabstrip-item-gradient: $kendo-tabstrip-item-gradient,
+    $kendo-tabstrip-item-hover-bg: $kendo-tabstrip-item-hover-bg,
+    $kendo-tabstrip-item-hover-text: $kendo-tabstrip-item-hover-text,
+    $kendo-tabstrip-item-hover-border: $kendo-tabstrip-item-hover-border,
+    $kendo-tabstrip-item-hover-gradient: $kendo-tabstrip-item-hover-gradient,
+    $kendo-tabstrip-item-selected-bg: $kendo-tabstrip-item-selected-bg,
+    $kendo-tabstrip-item-selected-text: $kendo-tabstrip-item-selected-text,
+    $kendo-tabstrip-item-selected-border: $kendo-tabstrip-item-selected-border,
+    $kendo-tabstrip-item-selected-gradient: $kendo-tabstrip-item-selected-gradient,
+    $kendo-tabstrip-item-selected-font-weight: $kendo-tabstrip-item-selected-font-weight,
+    $kendo-tabstrip-item-focus-shadow: $kendo-tabstrip-item-focus-shadow,
+    $kendo-tabstrip-item-dragging-shadow: $kendo-tabstrip-item-dragging-shadow,
+    $kendo-tabstrip-item-disabled-bg: $kendo-tabstrip-item-disabled-bg,
+    $kendo-tabstrip-item-disabled-text: $kendo-tabstrip-item-disabled-text,
+    $kendo-tabstrip-item-disabled-border: $kendo-tabstrip-item-disabled-border,
+    $kendo-tabstrip-item-disabled-gradient: $kendo-tabstrip-item-disabled-gradient,
+    $kendo-tabstrip-item-disabled-opacity: $kendo-tabstrip-item-disabled-opacity,
+    $kendo-tabstrip-item-disabled-filter: $kendo-tabstrip-item-disabled-filter,
+    $kendo-tabstrip-indicator-size: $kendo-tabstrip-indicator-size,
+    $kendo-tabstrip-indicator-color: $kendo-tabstrip-indicator-color,
+    $kendo-tabstrip-content-padding-x: $kendo-tabstrip-content-padding-x,
+    $kendo-tabstrip-content-padding-y: $kendo-tabstrip-content-padding-y,
+    $kendo-tabstrip-content-border-width: $kendo-tabstrip-content-border-width,
+    $kendo-tabstrip-content-bg: $kendo-tabstrip-content-bg,
+    $kendo-tabstrip-content-text: $kendo-tabstrip-content-text,
+    $kendo-tabstrip-content-border: $kendo-tabstrip-content-border,
+    $kendo-tabstrip-content-focus-border: $kendo-tabstrip-content-focus-border
+);

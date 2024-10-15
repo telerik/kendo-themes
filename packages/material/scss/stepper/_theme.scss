@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/stepper/_theme.scss";
+@use "@progress/kendo-theme-default/scss/stepper/_theme.scss" as *;
 
 
 @mixin kendo-stepper--theme() {

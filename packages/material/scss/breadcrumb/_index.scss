@@ -1,43 +1,23 @@
-@import "../core/_index.scss";
-@import "../utils/_index.scss";
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "breadcrumb",
-    dependencies: (
-        "icon",
-        "input"
-    )
-);
-
-
 // Dependencies
-@import "../input/_index.scss";
-@import "../icons/_index.scss";
-
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../input/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-breadcrumb--styles() {
-    @include module-render( "breadcrumb" ) {
+    @include import-once( "breadcrumb" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-icon--styles();
         @include kendo-breadcrumb--layout();
         @include kendo-breadcrumb--theme();
         @include kendo-utils--flex-grid--flex();
         @include kendo-utils--flex-grid--flex-wrap();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-breadcrumb--styles();
 }

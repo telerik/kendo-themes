@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../action-buttons/_variables.scss" as *;
+
 // Dialog
 
 /// The background color of the Dialog titlebar.
@@ -26,7 +30,18 @@ $kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
 /// The theme colors map for the Dialog.
 /// @group dialog
 $kendo-dialog-theme-colors: (
-    "primary": k-map-get($kendo-theme-colors, "primary"),
-    "light": k-map-get($kendo-theme-colors, "light"),
-    "dark": k-map-get($kendo-theme-colors, "dark")
+    "primary": map.get($kendo-theme-colors, "primary"),
+    "light": map.get($kendo-theme-colors, "light"),
+    "dark": map.get($kendo-theme-colors, "dark")
 ) !default;
+
+@forward "@progress/kendo-theme-default/scss/dialog/_variables.scss" with (
+    $kendo-dialog-titlebar-bg: $kendo-dialog-titlebar-bg,
+    $kendo-dialog-titlebar-text: $kendo-dialog-titlebar-text,
+    $kendo-dialog-titlebar-border: $kendo-dialog-titlebar-border,
+    $kendo-dialog-buttongroup-padding-x: $kendo-dialog-buttongroup-padding-x,
+    $kendo-dialog-buttongroup-padding-y: $kendo-dialog-buttongroup-padding-y,
+    $kendo-dialog-buttongroup-border-width: $kendo-dialog-buttongroup-border-width,
+    $kendo-dialog-button-spacing: $kendo-dialog-button-spacing,
+    $kendo-dialog-theme-colors: $kendo-dialog-theme-colors
+);

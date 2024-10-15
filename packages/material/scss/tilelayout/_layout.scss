@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/tilelayout/_layout.scss";
+@use "@progress/kendo-theme-default/scss/tilelayout/_layout.scss" as *;
 
 
 @mixin kendo-tile-layout--layout() {

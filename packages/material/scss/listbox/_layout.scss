@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/listbox/_layout.scss";
+@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/listbox/_layout.scss" as *;
 
 
 @mixin kendo-listbox--layout() {

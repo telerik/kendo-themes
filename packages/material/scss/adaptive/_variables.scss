@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // Adaptive Common
 $kendo-adaptive-bg: $kendo-component-bg !default;
 $kendo-adaptive-text: $kendo-component-text !default;
@@ -26,3 +29,24 @@ $kendo-adaptive-grid-sort-text: $kendo-color-primary !default;
 $kendo-adaptive-scheduler-current-text: $kendo-color-primary !default;
 $kendo-adaptive-scheduler-base-text: inherit !default;
 $kendo-adaptive-scheduler-subtle-text: $kendo-subtle-text !default;
+
+@forward "@progress/kendo-theme-default/scss/adaptive/_variables.scss" with (
+    $kendo-adaptive-bg: $kendo-adaptive-bg,
+    $kendo-adaptive-text: $kendo-adaptive-text,
+    $kendo-adaptive-border: $kendo-adaptive-border,
+    $kendo-adaptive-content-bg: $kendo-adaptive-content-bg,
+    $kendo-adaptive-content-text: $kendo-adaptive-content-text,
+    $kendo-adaptive-menu-bg: $kendo-adaptive-menu-bg,
+    $kendo-adaptive-menu-text: $kendo-adaptive-menu-text,
+    $kendo-adaptive-menu-clear-text: $kendo-adaptive-menu-clear-text,
+    $kendo-adaptive-menu-item-border: $kendo-adaptive-menu-item-border,
+    $kendo-adaptive-menu-title-text: $kendo-adaptive-menu-title-text,
+    $kendo-adaptive-border-width: $kendo-adaptive-border-width,
+    $kendo-adaptive-font-family: $kendo-adaptive-font-family,
+    $kendo-adaptive-font-size: $kendo-adaptive-font-size,
+    $kendo-adaptive-line-height: $kendo-adaptive-line-height,
+    $kendo-adaptive-grid-sort-text: $kendo-adaptive-grid-sort-text,
+    $kendo-adaptive-scheduler-current-text: $kendo-adaptive-scheduler-current-text,
+    $kendo-adaptive-scheduler-base-text: $kendo-adaptive-scheduler-base-text,
+    $kendo-adaptive-scheduler-subtle-text: $kendo-adaptive-scheduler-subtle-text
+);

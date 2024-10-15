@@ -1,5 +1,7 @@
-@import "../list/_variables.scss";
-@import "../checkbox/_variables.scss";
+@use "../core/_index.scss" as *;
+@use"../list/_variables.scss" as *;
+@use"../checkbox/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 
 // Radio button
@@ -185,3 +187,51 @@ $kendo-radio-ripple-bg: $kendo-color-primary !default;
 /// The opacity of the RadioButton ripple.
 /// @group radio
 $kendo-radio-ripple-opacity: .2 !default;
+
+@forward "@progress/kendo-theme-default/scss/radio/_variables.scss" with (
+    $kendo-radio-radius: $kendo-radio-radius,
+    $kendo-radio-border-width: $kendo-radio-border-width,
+    $kendo-radio-sm-size: $kendo-radio-sm-size,
+    $kendo-radio-md-size: $kendo-radio-md-size,
+    $kendo-radio-lg-size: $kendo-radio-lg-size,
+    $kendo-radio-sm-glyph-size: $kendo-radio-sm-glyph-size,
+    $kendo-radio-md-glyph-size: $kendo-radio-md-glyph-size,
+    $kendo-radio-lg-glyph-size: $kendo-radio-lg-glyph-size,
+    $kendo-radio-sm-ripple-size: $kendo-radio-sm-ripple-size,
+    $kendo-radio-md-ripple-size: $kendo-radio-md-ripple-size,
+    $kendo-radio-lg-ripple-size: $kendo-radio-lg-ripple-size,
+    $kendo-radio-sizes: $kendo-radio-sizes,
+    $kendo-radio-bg: $kendo-radio-bg,
+    $kendo-radio-text: $kendo-radio-text,
+    $kendo-radio-border: $kendo-radio-border,
+    $kendo-radio-hover-bg: $kendo-radio-hover-bg,
+    $kendo-radio-hover-text: $kendo-radio-hover-text,
+    $kendo-radio-hover-border: $kendo-radio-hover-border,
+    $kendo-radio-checked-bg: $kendo-radio-checked-bg,
+    $kendo-radio-checked-text: $kendo-radio-checked-text,
+    $kendo-radio-checked-border: $kendo-radio-checked-border,
+    $kendo-radio-focus-border: $kendo-radio-focus-border,
+    $kendo-radio-focus-shadow: $kendo-radio-focus-shadow,
+    $kendo-radio-focus-checked-border: $kendo-radio-focus-checked-border,
+    $kendo-radio-focus-checked-shadow: $kendo-radio-focus-checked-shadow,
+    $kendo-radio-disabled-bg: $kendo-radio-disabled-bg,
+    $kendo-radio-disabled-text: $kendo-radio-disabled-text,
+    $kendo-radio-disabled-border: $kendo-radio-disabled-border,
+    $kendo-radio-disabled-checked-bg: $kendo-radio-disabled-checked-bg,
+    $kendo-radio-disabled-checked-text: $kendo-radio-disabled-checked-text,
+    $kendo-radio-disabled-checked-border: $kendo-radio-disabled-checked-border,
+    $kendo-radio-invalid-bg: $kendo-radio-invalid-bg,
+    $kendo-radio-invalid-text: $kendo-radio-invalid-text,
+    $kendo-radio-invalid-border: $kendo-radio-invalid-border,
+    $kendo-radio-indicator-type: $kendo-radio-indicator-type,
+    $kendo-radio-glyph-font-family: $kendo-radio-glyph-font-family,
+    $kendo-radio-checked-glyph: $kendo-radio-checked-glyph,
+    $kendo-radio-checked-image: $kendo-radio-checked-image,
+    $kendo-radio-disabled-checked-image: $kendo-radio-disabled-checked-image,
+    $kendo-radio-label-margin-x: $kendo-radio-label-margin-x,
+    $kendo-radio-list-spacing: $kendo-radio-list-spacing,
+    $kendo-radio-list-item-padding-x: $kendo-radio-list-item-padding-x,
+    $kendo-radio-list-item-padding-y: $kendo-radio-list-item-padding-y,
+    $kendo-radio-ripple-bg: $kendo-radio-ripple-bg,
+    $kendo-radio-ripple-opacity: $kendo-radio-ripple-opacity
+);

@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/spreadsheet/_layout.scss";
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-default/scss/spreadsheet/_layout.scss" as *;
 
 
 @mixin kendo-spreadsheet--layout() {
