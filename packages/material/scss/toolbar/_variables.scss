@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../menu/_variables.scss" as *;
+
 // Toolbar
 
 /// The horizontal padding of the Toolbar.
@@ -54,7 +58,7 @@ $kendo-toolbar-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-toolbar-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-line-height: k-math-div( 20, 14 ) !default;
+$kendo-toolbar-line-height: math.div( 20, 14 ) !default;
 
 /// The background color of the Toolbar.
 /// @group toolbar
@@ -70,7 +74,7 @@ $kendo-toolbar-border: $kendo-component-border !default;
 $kendo-toolbar-gradient: null !default;
 /// The box shadow of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-shadow: $box-shadow-depth-4 !default;
+$kendo-toolbar-shadow: k-elevation(4) !default;
 
 /// The text color of the outline Toolbar.
 /// @group toolbar
@@ -116,6 +120,19 @@ $kendo-toolbar-input-width: 10em !default;
 /// @group toolbar
 $kendo-toolbar-item-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
 
+/// The font size of the Toolbar overflow container.
+/// @group toolbar
+$kendo-toolbar-overflow-container-font-size: $kendo-menu-popup-md-font-size !default;
+/// The line-height of the Toolbar overflow container.
+/// @group toolbar
+$kendo-toolbar-overflow-container-line-height: $kendo-menu-popup-md-line-height !default;
+/// The vertical padding of the Toolbar overflow button.
+/// @group toolbar
+$kendo-toolbar-overflow-button-padding-y: $kendo-menu-popup-md-item-padding-y !default;
+/// The horizontal padding of the Toolbar overflow button.
+/// @group toolbar
+$kendo-toolbar-overflow-button-padding-x: $kendo-menu-popup-md-item-padding-x !default;
+
 /// The sizes map for the Toolbar.
 /// @group toolbar
 $kendo-toolbar-sizes: (
@@ -135,3 +152,43 @@ $kendo-toolbar-sizes: (
         spacing: $kendo-toolbar-lg-spacing
     )
 ) !default;
+
+@forward "@progress/kendo-theme-default/scss/toolbar/_variables.scss" with (
+    $kendo-toolbar-padding-x: $kendo-toolbar-padding-x,
+    $kendo-toolbar-sm-padding-x: $kendo-toolbar-sm-padding-x,
+    $kendo-toolbar-md-padding-x: $kendo-toolbar-md-padding-x,
+    $kendo-toolbar-lg-padding-x: $kendo-toolbar-lg-padding-x,
+    $kendo-toolbar-padding-y: $kendo-toolbar-padding-y,
+    $kendo-toolbar-sm-padding-y: $kendo-toolbar-sm-padding-y,
+    $kendo-toolbar-md-padding-y: $kendo-toolbar-md-padding-y,
+    $kendo-toolbar-lg-padding-y: $kendo-toolbar-lg-padding-y,
+    $kendo-toolbar-spacing: $kendo-toolbar-spacing,
+    $kendo-toolbar-sm-spacing: $kendo-toolbar-sm-spacing,
+    $kendo-toolbar-md-spacing: $kendo-toolbar-md-spacing,
+    $kendo-toolbar-lg-spacing: $kendo-toolbar-lg-spacing,
+    $kendo-toolbar-border-width: $kendo-toolbar-border-width,
+    $kendo-toolbar-border-radius: $kendo-toolbar-border-radius,
+    $kendo-toolbar-font-family: $kendo-toolbar-font-family,
+    $kendo-toolbar-font-size: $kendo-toolbar-font-size,
+    $kendo-toolbar-line-height: $kendo-toolbar-line-height,
+    $kendo-toolbar-bg: $kendo-toolbar-bg,
+    $kendo-toolbar-text: $kendo-toolbar-text,
+    $kendo-toolbar-border: $kendo-toolbar-border,
+    $kendo-toolbar-gradient: $kendo-toolbar-gradient,
+    $kendo-toolbar-shadow: $kendo-toolbar-shadow,
+    $kendo-toolbar-outline-text: $kendo-toolbar-outline-text,
+    $kendo-toolbar-outline-border: $kendo-toolbar-outline-border,
+    $kendo-toolbar-outline-gradient: $kendo-toolbar-outline-gradient,
+    $kendo-toolbar-outline-shadow: $kendo-toolbar-outline-shadow,
+    $kendo-toolbar-outline-border-width: $kendo-toolbar-outline-border-width,
+    $kendo-toolbar-flat-text: $kendo-toolbar-flat-text,
+    $kendo-toolbar-flat-border: $kendo-toolbar-flat-border,
+    $kendo-toolbar-flat-gradient: $kendo-toolbar-flat-gradient,
+    $kendo-toolbar-flat-shadow: $kendo-toolbar-flat-shadow,
+    $kendo-toolbar-flat-border-width: $kendo-toolbar-flat-border-width,
+    $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
+    $kendo-toolbar-input-width: $kendo-toolbar-input-width,
+    $kendo-toolbar-item-shadow: $kendo-toolbar-item-shadow,
+    $kendo-toolbar-sizes: $kendo-toolbar-sizes,
+    $kendo-toolbar-overflow-container-font-size: $kendo-toolbar-overflow-container-font-size
+);

@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/bottom-navigation/_layout.scss";
+@use "@progress/kendo-theme-default/scss/bottom-navigation/_layout.scss" as *;
 
 
 @mixin kendo-bottom-navigation--layout() {

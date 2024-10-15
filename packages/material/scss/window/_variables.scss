@@ -1,4 +1,7 @@
-@import "../action-buttons/_variables.scss";
+@use "sass:math";
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use"../action-buttons/_variables.scss" as *;
 
 // Window
 
@@ -16,7 +19,7 @@ $kendo-window-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-window-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Window.
 /// @group window
-$kendo-window-line-height: k-math-div( 20, 14 )  !default;
+$kendo-window-line-height: math.div( 20, 14 )  !default;
 
 /// The horizontal padding of the Window titlebar.
 /// @group window
@@ -76,10 +79,10 @@ $kendo-window-text: $kendo-component-text !default;
 $kendo-window-border: $kendo-component-border !default;
 /// The box shadow of the Window.
 /// @group window
-$kendo-window-shadow: $box-shadow-depth-8 !default;
+$kendo-window-shadow: k-elevation(8) !default;
 /// The box shadow of the focused Window.
 /// @group window
-$kendo-window-focus-shadow: $box-shadow-depth-9 !default;
+$kendo-window-focus-shadow: k-elevation(9) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
@@ -105,7 +108,40 @@ $kendo-window-sizes: (
 /// The theme colors map for the Window.
 /// @group window
 $kendo-window-theme-colors: (
-    "primary": k-map-get($kendo-theme-colors, "primary"),
-    "light": k-map-get($kendo-theme-colors, "light"),
-    "dark": k-map-get($kendo-theme-colors, "dark")
+    "primary": map.get($kendo-theme-colors, "primary"),
+    "light": map.get($kendo-theme-colors, "light"),
+    "dark": map.get($kendo-theme-colors, "dark")
 ) !default;
+
+@forward "@progress/kendo-theme-default/scss/window/_variables.scss" with (
+    $kendo-window-border-width: $kendo-window-border-width,
+    $kendo-window-border-radius: $kendo-window-border-radius,
+    $kendo-window-font-family: $kendo-window-font-family,
+    $kendo-window-font-size: $kendo-window-font-size,
+    $kendo-window-line-height: $kendo-window-line-height,
+    $kendo-window-titlebar-padding-x: $kendo-window-titlebar-padding-x,
+    $kendo-window-titlebar-padding-y: $kendo-window-titlebar-padding-y,
+    $kendo-window-titlebar-border-width: $kendo-window-titlebar-border-width,
+    $kendo-window-titlebar-border-style: $kendo-window-titlebar-border-style,
+    $kendo-window-title-font-size: $kendo-window-title-font-size,
+    $kendo-window-title-line-height: $kendo-window-title-line-height,
+    $kendo-window-actions-gap: $kendo-window-actions-gap,
+    $kendo-window-action-opacity: $kendo-window-action-opacity,
+    $kendo-window-action-hover-opacity: $kendo-window-action-hover-opacity,
+    $kendo-window-inner-padding-x: $kendo-window-inner-padding-x,
+    $kendo-window-inner-padding-y: $kendo-window-inner-padding-y,
+    $kendo-window-buttongroup-padding-x: $kendo-window-buttongroup-padding-x,
+    $kendo-window-buttongroup-padding-y: $kendo-window-buttongroup-padding-y,
+    $kendo-window-buttongroup-border-width: $kendo-window-buttongroup-border-width,
+    $kendo-window-bg: $kendo-window-bg,
+    $kendo-window-text: $kendo-window-text,
+    $kendo-window-border: $kendo-window-border,
+    $kendo-window-shadow: $kendo-window-shadow,
+    $kendo-window-focus-shadow: $kendo-window-focus-shadow,
+    $kendo-window-titlebar-bg: $kendo-window-titlebar-bg,
+    $kendo-window-titlebar-text: $kendo-window-titlebar-text,
+    $kendo-window-titlebar-border: $kendo-window-titlebar-border,
+    $kendo-window-titlebar-gradient: $kendo-window-titlebar-gradient,
+    $kendo-window-sizes: $kendo-window-sizes,
+    $kendo-window-theme-colors: $kendo-window-theme-colors
+);

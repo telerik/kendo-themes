@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $_default-elevation: (
     1: (
         0px 1px 3px 0px rgba(0, 0, 0, 0.2),
@@ -49,5 +51,4 @@ $_default-elevation: (
 /// The global default Elevation map.
 /// @group elevation
 $kendo-elevation: $_default-elevation !default;
-
-@import "@progress/kendo-theme-core/scss/elevation/index.import.scss";
+$kendo-elevation: map.merge($_default-elevation, $kendo-elevation);

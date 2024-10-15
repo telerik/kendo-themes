@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/drawer/_layout.scss";
+@use "@progress/kendo-theme-default/scss/drawer/_layout.scss" as *;
 
 
 @mixin kendo-drawer--layout() {

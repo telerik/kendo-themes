@@ -1,3 +1,11 @@
+@use "sass:list";
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../popup/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // Menu
 
 /// The width of the border around the Menu.
@@ -60,7 +68,7 @@ $kendo-menu-item-gradient: null !default;
 
 /// The background color of hovered Menu item.
 /// @group menu
-$kendo-menu-item-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), rgba( $kendo-menu-text, $kendo-flat-button-hover-opacity * k-color-alpha( $kendo-menu-text ) )) !default;
+$kendo-menu-item-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), rgba( $kendo-menu-text, $kendo-flat-button-hover-opacity * alpha( $kendo-menu-text ) )) !default;
 /// The text color of hovered Menu item.
 /// @group menu
 $kendo-menu-item-hover-text: null !default;
@@ -73,7 +81,7 @@ $kendo-menu-item-hover-gradient: null !default;
 
 /// The background color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-bg: if($kendo-enable-color-system, k-color( base-active ), rgba( $kendo-menu-text, $kendo-flat-button-active-opacity * k-color-alpha( $kendo-menu-text ) )) !default;
+$kendo-menu-item-active-bg: if($kendo-enable-color-system, k-color( base-active ), rgba( $kendo-menu-text, $kendo-flat-button-active-opacity * alpha( $kendo-menu-text ) )) !default;
 /// The text color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-text: null !default;
@@ -215,9 +223,9 @@ $kendo-menu-popup-lg-item-icon-margin-start: $kendo-menu-popup-lg-item-padding-x
 
 /// The end margin of the Menu item expand icon.
 /// @group menu
-$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) ) !default;
-$kendo-menu-popup-md-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-md-item-padding-end} - #{k-math-div( $kendo-menu-popup-md-item-padding-x, 2 )}) ) !default;
-$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-item-padding-end} - #{k-math-div( $kendo-menu-popup-lg-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{list.slash( $kendo-menu-popup-sm-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-md-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-md-item-padding-end} - #{list.slash( $kendo-menu-popup-md-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-item-padding-end} - #{list.slash( $kendo-menu-popup-lg-item-padding-x, 2 )}) ) !default;
 
 /// The spacing between the Menu items in popup.
 /// @group menu
@@ -265,3 +273,94 @@ $kendo-menu-popup-item-active-gradient: null !default;
 /// The base shadow of focused Menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-focus-shadow: null !default;
+
+@forward "@progress/kendo-theme-default/scss/menu/_variables.scss" with (
+    $kendo-menu-border-width: $kendo-menu-border-width,
+    $kendo-menu-font-family: $kendo-menu-font-family,
+    $kendo-menu-font-size: $kendo-menu-font-size,
+    $kendo-menu-line-height: $kendo-menu-line-height,
+    $kendo-menu-bg: $kendo-menu-bg,
+    $kendo-menu-text: $kendo-menu-text,
+    $kendo-menu-border: $kendo-menu-border,
+    $kendo-menu-gradient: $kendo-menu-gradient,
+    $kendo-menu-item-padding-x: $kendo-menu-item-padding-x,
+    $kendo-menu-item-padding-y: $kendo-menu-item-padding-y,
+    $kendo-menu-item-spacing: $kendo-menu-item-spacing,
+    $kendo-menu-item-icon-spacing: $kendo-menu-item-icon-spacing,
+    $kendo-menu-item-selected-font-weight: $kendo-menu-item-selected-font-weight,
+    $kendo-menu-item-bg: $kendo-menu-item-bg,
+    $kendo-menu-item-text: $kendo-menu-item-text,
+    $kendo-menu-item-border: $kendo-menu-item-border,
+    $kendo-menu-item-gradient: $kendo-menu-item-gradient,
+    $kendo-menu-item-hover-bg: $kendo-menu-item-hover-bg,
+    $kendo-menu-item-hover-text: $kendo-menu-item-hover-text,
+    $kendo-menu-item-hover-border: $kendo-menu-item-hover-border,
+    $kendo-menu-item-hover-gradient: $kendo-menu-item-hover-gradient,
+    $kendo-menu-item-active-bg: $kendo-menu-item-active-bg,
+    $kendo-menu-item-active-text: $kendo-menu-item-active-text,
+    $kendo-menu-item-active-border: $kendo-menu-item-active-border,
+    $kendo-menu-item-active-gradient: $kendo-menu-item-active-gradient,
+    $kendo-menu-item-focus-shadow: $kendo-menu-item-focus-shadow,
+    $kendo-menu-item-selected-bg: $kendo-menu-item-selected-bg,
+    $kendo-menu-item-selected-text: $kendo-menu-item-selected-text,
+    $kendo-menu-item-selected-border: $kendo-menu-item-selected-border,
+    $kendo-menu-item-selected-gradient: $kendo-menu-item-selected-gradient,
+    $kendo-menu-scroll-button-bg: $kendo-menu-scroll-button-bg,
+    $kendo-menu-scroll-button-text: $kendo-menu-scroll-button-text,
+    $kendo-menu-scroll-button-border: $kendo-menu-scroll-button-border,
+    $kendo-menu-scroll-button-gradient: $kendo-menu-scroll-button-gradient,
+    $kendo-menu-scroll-button-hover-bg: $kendo-menu-scroll-button-hover-bg,
+    $kendo-menu-scroll-button-hover-text: $kendo-menu-scroll-button-hover-text,
+    $kendo-menu-scroll-button-hover-border: $kendo-menu-scroll-button-hover-border,
+    $kendo-menu-scroll-button-hover-gradient: $kendo-menu-scroll-button-hover-gradient,
+    $kendo-menu-separator-margin-inline: $kendo-menu-separator-margin-inline,
+    $kendo-menu-separator-margin-block: $kendo-menu-separator-margin-block,
+    $kendo-menu-separator-border: $kendo-menu-separator-border,
+    $kendo-menu-popup-padding-x: $kendo-menu-popup-padding-x,
+    $kendo-menu-popup-padding-y: $kendo-menu-popup-padding-y,
+    $kendo-menu-popup-border-width: $kendo-menu-popup-border-width,
+    $kendo-menu-popup-font-size: $kendo-menu-popup-font-size,
+    $kendo-menu-popup-sm-font-size: $kendo-menu-popup-sm-font-size,
+    $kendo-menu-popup-md-font-size: $kendo-menu-popup-md-font-size,
+    $kendo-menu-popup-lg-font-size: $kendo-menu-popup-lg-font-size,
+    $kendo-menu-popup-line-height: $kendo-menu-popup-line-height,
+    $kendo-menu-popup-sm-line-height: $kendo-menu-popup-sm-line-height,
+    $kendo-menu-popup-md-line-height: $kendo-menu-popup-md-line-height,
+    $kendo-menu-popup-lg-line-height: $kendo-menu-popup-lg-line-height,
+    $kendo-menu-popup-bg: $kendo-menu-popup-bg,
+    $kendo-menu-popup-text: $kendo-menu-popup-text,
+    $kendo-menu-popup-border: $kendo-menu-popup-border,
+    $kendo-menu-popup-gradient: $kendo-menu-popup-gradient,
+    $kendo-menu-popup-item-padding-x: $kendo-menu-popup-item-padding-x,
+    $kendo-menu-popup-sm-item-padding-x: $kendo-menu-popup-sm-item-padding-x,
+    $kendo-menu-popup-md-item-padding-x: $kendo-menu-popup-md-item-padding-x,
+    $kendo-menu-popup-lg-item-padding-x: $kendo-menu-popup-lg-item-padding-x,
+    $kendo-menu-popup-item-padding-y: $kendo-menu-popup-item-padding-y,
+    $kendo-menu-popup-sm-item-padding-y: $kendo-menu-popup-sm-item-padding-y,
+    $kendo-menu-popup-md-item-padding-y: $kendo-menu-popup-md-item-padding-y,
+    $kendo-menu-popup-lg-item-padding-y: $kendo-menu-popup-lg-item-padding-y,
+    $kendo-menu-popup-item-padding-end: $kendo-menu-popup-item-padding-end,
+    $kendo-menu-popup-sm-item-padding-end: $kendo-menu-popup-sm-item-padding-end,
+    $kendo-menu-popup-md-item-padding-end: $kendo-menu-popup-md-item-padding-end,
+    $kendo-menu-popup-lg-item-padding-end: $kendo-menu-popup-lg-item-padding-end,
+    $kendo-menu-popup-sm-item-icon-margin-start: $kendo-menu-popup-sm-item-icon-margin-start,
+    $kendo-menu-popup-md-item-icon-margin-start: $kendo-menu-popup-md-item-icon-margin-start,
+    $kendo-menu-popup-lg-item-icon-margin-start: $kendo-menu-popup-lg-item-icon-margin-start,
+    $kendo-menu-popup-sm-item-icon-margin-end: $kendo-menu-popup-sm-item-icon-margin-end,
+    $kendo-menu-popup-md-item-icon-margin-end: $kendo-menu-popup-md-item-icon-margin-end,
+    $kendo-menu-popup-lg-item-icon-margin-end: $kendo-menu-popup-lg-item-icon-margin-end,
+    $kendo-menu-popup-item-spacing: $kendo-menu-popup-item-spacing,
+    $kendo-menu-popup-item-bg: $kendo-menu-popup-item-bg,
+    $kendo-menu-popup-item-text: $kendo-menu-popup-item-text,
+    $kendo-menu-popup-item-border: $kendo-menu-popup-item-border,
+    $kendo-menu-popup-item-gradient: $kendo-menu-popup-item-gradient,
+    $kendo-menu-popup-item-hover-bg: $kendo-menu-popup-item-hover-bg,
+    $kendo-menu-popup-item-hover-text: $kendo-menu-popup-item-hover-text,
+    $kendo-menu-popup-item-hover-border: $kendo-menu-popup-item-hover-border,
+    $kendo-menu-popup-item-hover-gradient: $kendo-menu-popup-item-hover-gradient,
+    $kendo-menu-popup-item-active-bg: $kendo-menu-popup-item-active-bg,
+    $kendo-menu-popup-item-active-text: $kendo-menu-popup-item-active-text,
+    $kendo-menu-popup-item-active-border: $kendo-menu-popup-item-active-border,
+    $kendo-menu-popup-item-active-gradient: $kendo-menu-popup-item-active-gradient,
+    $kendo-menu-popup-item-focus-shadow: $kendo-menu-popup-item-focus-shadow
+);

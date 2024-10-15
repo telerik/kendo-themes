@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // ProgressBar
 
 /// The height of the ProgressBar.
@@ -72,3 +75,28 @@ $kendo-circular-progressbar-arc-stroke: $kendo-color-primary !default;
 /// The scale stroke background color of the circular ProgressBar.
 /// @group progressbar
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;
+
+@forward "@progress/kendo-theme-default/scss/progressbar/_variables.scss" with (
+    $kendo-progressbar-height: $kendo-progressbar-height,
+    $kendo-progressbar-horizontal-width: $kendo-progressbar-horizontal-width,
+    $kendo-progressbar-animation-timing: $kendo-progressbar-animation-timing,
+    $kendo-progressbar-border-width: $kendo-progressbar-border-width,
+    $kendo-progressbar-font-family: $kendo-progressbar-font-family,
+    $kendo-progressbar-font-size: $kendo-progressbar-font-size,
+    $kendo-progressbar-line-height: $kendo-progressbar-line-height,
+    $kendo-progressbar-bg: $kendo-progressbar-bg,
+    $kendo-progressbar-text: $kendo-progressbar-text,
+    $kendo-progressbar-border: $kendo-progressbar-border,
+    $kendo-progressbar-gradient: $kendo-progressbar-gradient,
+    $kendo-progressbar-value-bg: $kendo-progressbar-value-bg,
+    $kendo-progressbar-value-text: $kendo-progressbar-value-text,
+    $kendo-progressbar-value-border: $kendo-progressbar-value-border,
+    $kendo-progressbar-value-gradient: $kendo-progressbar-value-gradient,
+    $kendo-progressbar-indeterminate-bg: $kendo-progressbar-indeterminate-bg,
+    $kendo-progressbar-indeterminate-text: $kendo-progressbar-indeterminate-text,
+    $kendo-progressbar-indeterminate-border: $kendo-progressbar-indeterminate-border,
+    $kendo-progressbar-indeterminate-gradient: $kendo-progressbar-indeterminate-gradient,
+    $kendo-progressbar-chunk-border: $kendo-progressbar-chunk-border,
+    $kendo-circular-progressbar-arc-stroke: $kendo-circular-progressbar-arc-stroke,
+    $kendo-circular-progressbar-scale-stroke: $kendo-circular-progressbar-scale-stroke
+);

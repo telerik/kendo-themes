@@ -1,3 +1,7 @@
+@use "sass:list";
+@use "../core/_index.scss" as *;
+@use "../card/_variables.scss" as *;
+
 // Orgchart
 
 /// The spacing index of the OrgChart.
@@ -129,7 +133,7 @@ $kendo-orgchart-card-body-border-color: transparent !default;
 
 /// The right margin of the OrgChart Card body title wrap.
 /// @group orgchart
-$kendo-orgchart-card-body-vbox-margin-right: k-math-div( $kendo-orgchart-spacer, 2 ) !default;
+$kendo-orgchart-card-body-vbox-margin-right: list.slash( $kendo-orgchart-spacer, 2 ) !default;
 /// The min height of the OrgChart Card body title wrap.
 /// @group orgchart
 $kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;
@@ -144,3 +148,50 @@ $kendo-orgchart-line-fill: $kendo-base-border !default;
 /// The height of the OrgChart connecting line.
 /// @group orgchart
 $kendo-orgchart-line-v-height: k-spacing(6) !default;
+
+@forward "@progress/kendo-theme-default/scss/orgchart/_variables.scss" with (
+    $kendo-orgchart-spacer: $kendo-orgchart-spacer,
+    $kendo-orgchart-padding-y: $kendo-orgchart-padding-y,
+    $kendo-orgchart-padding-x: $kendo-orgchart-padding-x,
+    $kendo-orgchart-font-family: $kendo-orgchart-font-family,
+    $kendo-orgchart-font-size: $kendo-orgchart-font-size,
+    $kendo-orgchart-line-height: $kendo-orgchart-line-height,
+    $kendo-orgchart-bg: $kendo-orgchart-bg,
+    $kendo-orgchart-text: $kendo-orgchart-text,
+    $kendo-orgchart-border: $kendo-orgchart-border,
+    $kendo-orgchart-node-gap: $kendo-orgchart-node-gap,
+    $kendo-orgchart-group-gap: $kendo-orgchart-group-gap,
+    $kendo-orgchart-node-container-gap: $kendo-orgchart-node-container-gap,
+    $kendo-orgchart-node-group-padding-y: $kendo-orgchart-node-group-padding-y,
+    $kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-x,
+    $kendo-orgchart-node-group-border-width: $kendo-orgchart-node-group-border-width,
+    $kendo-orgchart-node-group-border-radius: $kendo-orgchart-node-group-border-radius,
+    $kendo-orgchart-node-group-bg: $kendo-orgchart-node-group-bg,
+    $kendo-orgchart-node-group-text: $kendo-orgchart-node-group-text,
+    $kendo-orgchart-node-group-border: $kendo-orgchart-node-group-border,
+    $kendo-orgchart-node-group-focus-border: $kendo-orgchart-node-group-focus-border,
+    $kendo-orgchart-node-group-focus-shadow: $kendo-orgchart-node-group-focus-shadow,
+    $kendo-orgchart-node-group-title-font-size: $kendo-orgchart-node-group-title-font-size,
+    $kendo-orgchart-node-group-title-margin-bottom: $kendo-orgchart-node-group-title-margin-bottom,
+    $kendo-orgchart-node-group-title-line-height: $kendo-orgchart-node-group-title-line-height,
+    $kendo-orgchart-node-group-subtitle-font-size: $kendo-orgchart-node-group-subtitle-font-size,
+    $kendo-orgchart-node-group-subtitle-margin-bottom: $kendo-orgchart-node-group-subtitle-margin-bottom,
+    $kendo-orgchart-node-group-subtitle-text: $kendo-orgchart-node-group-subtitle-text,
+    $kendo-orgchart-card-width: $kendo-orgchart-card-width,
+    $kendo-orgchart-card-padding-y: $kendo-orgchart-card-padding-y,
+    $kendo-orgchart-card-padding-x: $kendo-orgchart-card-padding-x,
+    $kendo-orgchart-card-border-width: $kendo-orgchart-card-border-width,
+    $kendo-orgchart-card-shadow: $kendo-orgchart-card-shadow,
+    $kendo-orgchart-card-focus-shadow: $kendo-orgchart-card-focus-shadow,
+    $kendo-orgchart-card-title-margin-bottom: $kendo-orgchart-card-title-margin-bottom,
+    $kendo-orgchart-card-title-font-size: $kendo-orgchart-card-title-font-size,
+    $kendo-orgchart-card-subtitle-margin-bottom: $kendo-orgchart-card-subtitle-margin-bottom,
+    $kendo-orgchart-card-subtitle-font-size: $kendo-orgchart-card-subtitle-font-size,
+    $kendo-orgchart-card-body-border-width: $kendo-orgchart-card-body-border-width,
+    $kendo-orgchart-card-body-border-color: $kendo-orgchart-card-body-border-color,
+    $kendo-orgchart-card-body-vbox-margin-right: $kendo-orgchart-card-body-vbox-margin-right,
+    $kendo-orgchart-card-body-vbox-min-height: $kendo-orgchart-card-body-vbox-min-height,
+    $kendo-orgchart-line-size: $kendo-orgchart-line-size,
+    $kendo-orgchart-line-fill: $kendo-orgchart-line-fill,
+    $kendo-orgchart-line-v-height: $kendo-orgchart-line-v-height
+);

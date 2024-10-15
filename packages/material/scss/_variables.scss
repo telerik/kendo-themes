@@ -1,80 +1,8 @@
-@import "./core/functions/index.import.scss";
-
-// Options
-$kendo-enable-rounded: true !default;
-$kendo-enable-shadows: true !default;
-$kendo-enable-gradients: false !default;
-$kendo-enable-transitions: true !default;
-$kendo-enable-focus-contrast: false !default;
 $kendo-enable-typography: false !default;
 
 $kendo-use-input-button-width: false !default;
 $kendo-use-input-spinner-width: false !default;
 $kendo-use-input-spinner-icon-offset: false !default;
-
-$kendo-auto-bootstrap: true !default;
-
-$kendo-nested-disabled: true !default;
-
-// Shadows
-
-/// Shadow for switch.
-/// Equivalent to material elevation 1.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-1: k-elevation(1) !default;
-/// Shadow for resting state of button, card and other widgets.
-/// Equivalent to material elevation 2.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-2: k-elevation(2) !default;
-/// Shadow for menu, popups and raised state of button and card.
-/// Equivalent to material elevation 3.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-3: k-elevation(3) !default;
-/// Shadow for drawers and other overlaying elements.
-/// Equivalent to material elevation 4.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-4: k-elevation(4) !default;
-/// Shadow for window and dialog.
-/// Equivalent to material elevation 6.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-5: k-elevation(5) !default;
-/// Shadow for window and dialog.
-/// Equivalent to material elevation 8.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-6: k-elevation(6) !default;
-/// Shadow for window and dialog.
-/// Equivalent to material elevation 12.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-7: k-elevation(7) !default;
-/// Shadow for window and dialog.
-/// Equivalent to material elevation 16.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-8: k-elevation(8) !default;
-/// Shadow for window and dialog.
-/// Equivalent to material elevation 24.
-/// @group shadows
-/// @deprecated Use the `$kendo-elevation` map instead.
-$box-shadow-depth-9: k-elevation(9) !default;
-
-
-// Icons
-$kendo-icon-size: 16px !default;
-
-$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
-$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
-$kendo-icon-size-md: $kendo-icon-size !default;
-$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
-$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
-$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
-$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;

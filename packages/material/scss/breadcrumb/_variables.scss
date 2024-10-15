@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 // Breadcrumb
 
 /// The width of the border around the Breadcrumb.
@@ -147,7 +151,7 @@ $kendo-breadcrumb-link-hover-border: null !default;
 
 /// The background color of the focused Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-bg: if($kendo-enable-color-system, k-color( base-active ), k-map-get( $theme, focus-bg )) !default;
+$kendo-breadcrumb-link-focus-bg: if($kendo-enable-color-system, k-color( base-active ), map.get( $theme, focus-bg )) !default;
 /// The text color of the focused Breadcrumb link.
 /// @group breadcrumb
 $kendo-breadcrumb-link-focus-text: null !default;
@@ -180,7 +184,7 @@ $kendo-breadcrumb-root-link-hover-border: null !default;
 
 /// The background color of the focused Breadcrumb root link.
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-focus-bg: if($kendo-enable-color-system, k-color( base-active ), k-map-get( $theme, focus-bg )) !default;
+$kendo-breadcrumb-root-link-focus-bg: if($kendo-enable-color-system, k-color( base-active ), map.get( $theme, focus-bg )) !default;
 /// The text color of the focused Breadcrumb root link.
 /// @group breadcrumb
 $kendo-breadcrumb-root-link-focus-text: null !default;
@@ -229,3 +233,67 @@ $kendo-breadcrumb-sizes: (
         line-height: $kendo-breadcrumb-lg-line-height
     )
 ) !default;
+
+@forward "@progress/kendo-theme-default/scss/breadcrumb/_variables.scss" with (
+    $kendo-breadcrumb-border-width: $kendo-breadcrumb-border-width,
+    $kendo-breadcrumb-margin-x: $kendo-breadcrumb-margin-x,
+    $kendo-breadcrumb-margin-y: $kendo-breadcrumb-margin-y,
+    $kendo-breadcrumb-padding-x: $kendo-breadcrumb-padding-x,
+    $kendo-breadcrumb-padding-y: $kendo-breadcrumb-padding-y,
+    $kendo-breadcrumb-font-family: $kendo-breadcrumb-font-family,
+    $kendo-breadcrumb-font-size: $kendo-breadcrumb-font-size,
+    $kendo-breadcrumb-sm-font-size: $kendo-breadcrumb-sm-font-size,
+    $kendo-breadcrumb-md-font-size: $kendo-breadcrumb-md-font-size,
+    $kendo-breadcrumb-lg-font-size: $kendo-breadcrumb-lg-font-size,
+    $kendo-breadcrumb-line-height: $kendo-breadcrumb-line-height,
+    $kendo-breadcrumb-sm-line-height: $kendo-breadcrumb-sm-line-height,
+    $kendo-breadcrumb-md-line-height: $kendo-breadcrumb-md-line-height,
+    $kendo-breadcrumb-lg-line-height: $kendo-breadcrumb-lg-line-height,
+    $kendo-breadcrumb-bg: $kendo-breadcrumb-bg,
+    $kendo-breadcrumb-text: $kendo-breadcrumb-text,
+    $kendo-breadcrumb-border: $kendo-breadcrumb-border,
+    $kendo-breadcrumb-focus-shadow: $kendo-breadcrumb-focus-shadow,
+    $kendo-breadcrumb-link-padding-x: $kendo-breadcrumb-link-padding-x,
+    $kendo-breadcrumb-sm-link-padding-x: $kendo-breadcrumb-sm-link-padding-x,
+    $kendo-breadcrumb-md-link-padding-x: $kendo-breadcrumb-md-link-padding-x,
+    $kendo-breadcrumb-lg-link-padding-x: $kendo-breadcrumb-lg-link-padding-x,
+    $kendo-breadcrumb-link-padding-y: $kendo-breadcrumb-link-padding-y,
+    $kendo-breadcrumb-sm-link-padding-y: $kendo-breadcrumb-sm-link-padding-y,
+    $kendo-breadcrumb-md-link-padding-y: $kendo-breadcrumb-md-link-padding-y,
+    $kendo-breadcrumb-lg-link-padding-y: $kendo-breadcrumb-lg-link-padding-y,
+    $kendo-breadcrumb-link-border-radius: $kendo-breadcrumb-link-border-radius,
+    $kendo-breadcrumb-icon-link-padding-y: $kendo-breadcrumb-icon-link-padding-y,
+    $kendo-breadcrumb-sm-icon-link-padding-y: $kendo-breadcrumb-sm-icon-link-padding-y,
+    $kendo-breadcrumb-md-icon-link-padding-y: $kendo-breadcrumb-md-icon-link-padding-y,
+    $kendo-breadcrumb-lg-icon-link-padding-y: $kendo-breadcrumb-lg-icon-link-padding-y,
+    $kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-icon-link-padding-x,
+    $kendo-breadcrumb-sm-icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-x,
+    $kendo-breadcrumb-md-icon-link-padding-x: $kendo-breadcrumb-md-icon-link-padding-x,
+    $kendo-breadcrumb-lg-icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-x,
+    $kendo-breadcrumb-link-icon-spacing: $kendo-breadcrumb-link-icon-spacing,
+    $kendo-breadcrumb-link-initial-text: $kendo-breadcrumb-link-initial-text,
+    $kendo-breadcrumb-link-bg: $kendo-breadcrumb-link-bg,
+    $kendo-breadcrumb-link-text: $kendo-breadcrumb-link-text,
+    $kendo-breadcrumb-link-border: $kendo-breadcrumb-link-border,
+    $kendo-breadcrumb-link-hover-bg: $kendo-breadcrumb-link-hover-bg,
+    $kendo-breadcrumb-link-hover-text: $kendo-breadcrumb-link-hover-text,
+    $kendo-breadcrumb-link-hover-border: $kendo-breadcrumb-link-hover-border,
+    $kendo-breadcrumb-link-focus-bg: $kendo-breadcrumb-link-focus-bg,
+    $kendo-breadcrumb-link-focus-text: $kendo-breadcrumb-link-focus-text,
+    $kendo-breadcrumb-link-focus-border: $kendo-breadcrumb-link-focus-border,
+    $kendo-breadcrumb-link-focus-shadow: $kendo-breadcrumb-link-focus-shadow,
+    $kendo-breadcrumb-root-link-bg: $kendo-breadcrumb-root-link-bg,
+    $kendo-breadcrumb-root-link-text: $kendo-breadcrumb-root-link-text,
+    $kendo-breadcrumb-root-link-border: $kendo-breadcrumb-root-link-border,
+    $kendo-breadcrumb-root-link-hover-bg: $kendo-breadcrumb-root-link-hover-bg,
+    $kendo-breadcrumb-root-link-hover-text: $kendo-breadcrumb-root-link-hover-text,
+    $kendo-breadcrumb-root-link-hover-border: $kendo-breadcrumb-root-link-hover-border,
+    $kendo-breadcrumb-root-link-focus-bg: $kendo-breadcrumb-root-link-focus-bg,
+    $kendo-breadcrumb-root-link-focus-text: $kendo-breadcrumb-root-link-focus-text,
+    $kendo-breadcrumb-root-link-focus-border: $kendo-breadcrumb-root-link-focus-border,
+    $kendo-breadcrumb-root-link-focus-shadow: $kendo-breadcrumb-root-link-focus-shadow,
+    $kendo-breadcrumb-current-item-bg: $kendo-breadcrumb-current-item-bg,
+    $kendo-breadcrumb-current-item-text: $kendo-breadcrumb-current-item-text,
+    $kendo-breadcrumb-current-item-border: $kendo-breadcrumb-current-item-border,
+    $kendo-breadcrumb-sizes: $kendo-breadcrumb-sizes
+);
