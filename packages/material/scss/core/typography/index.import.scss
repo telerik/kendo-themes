@@ -1,3 +1,5 @@
+@use "sass:map";
+
 /// The base font size across all components.
 /// @group typography
 $kendo-font-size: 0.875rem !default;
@@ -19,7 +21,7 @@ $kendo-font-size-xl: 1.25rem !default;
 
 /// The base line height across all components.
 /// @group typography
-$kendo-line-height: k-math-div( 28, 14 ) !default;
+$kendo-line-height: calc(28 / 14) !default;
 /// The extra small line height across all components.
 /// @group typography
 $kendo-line-height-xs: 1 !default;
@@ -104,17 +106,19 @@ $_default-font-families: (
 /// The font sizes map
 /// @group typography
 $kendo-font-sizes: $_default-font-sizes !default;
+$kendo-font-sizes: map.merge( $_default-font-sizes, $kendo-font-sizes );
 
 /// The line heights map
 /// @group typography
 $kendo-line-heights: $_default-line-heights !default;
+$kendo-line-heights: map.merge( $_default-line-heights, $kendo-line-heights );
 
 /// The letter spacings map
 /// @group typography
 $kendo-letter-spacings: $_default-letter-spacings !default;
+$kendo-letter-spacings: map.merge( $_default-letter-spacings, $kendo-letter-spacings );
 
 /// The font families map
 /// @group typography
 $kendo-font-families: $_default-font-families !default;
-
-@import "@progress/kendo-theme-core/scss/typography/index.import.scss";
+$kendo-font-families: map.merge( $_default-font-families, $kendo-font-families );

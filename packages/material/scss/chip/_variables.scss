@@ -1,4 +1,8 @@
-@import "../button/_variables.scss";
+@use "sass:map";
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use"../button/_variables.scss" as *;
 
 
 // Chip
@@ -51,7 +55,7 @@ $kendo-chip-lg-font-size: var( --kendo-font-size, inherit )  !default;
 
 /// The Chip's line height that is related to the $kendo-font-size.
 /// @group chip
-$kendo-chip-line-height: k-math-div( 18, 14 ) !default;
+$kendo-chip-line-height: math.div( 18, 14 ) !default;
 /// The small Chip's line height that is related to the $kendo-font-size.
 /// @group chip
 $kendo-chip-sm-line-height: $kendo-chip-line-height !default;
@@ -98,10 +102,10 @@ $kendo-chip-base-bg: if($kendo-enable-color-system, k-color( base-subtle ), if( 
 /// @group chip
 $kendo-chip-theme-colors: (
     "base": $kendo-chip-base-bg,
-    "error": k-map-get( $kendo-theme-colors, "error" ),
-    "info": k-map-get( $kendo-theme-colors, "info" ),
-    "warning": k-map-get( $kendo-theme-colors, "warning" ),
-    "success": k-map-get( $kendo-theme-colors, "success" )
+    "error": map.get( $kendo-theme-colors, "error" ),
+    "info": map.get( $kendo-theme-colors, "info" ),
+    "warning": map.get( $kendo-theme-colors, "warning" ),
+    "success": map.get( $kendo-theme-colors, "success" )
 ) !default;
 
 /// The base background color of the solid Chip.
@@ -177,3 +181,49 @@ $kendo-chip-list-sizes: (
     md: k-spacing(1),
     lg: k-spacing(1)
 ) !default;
+
+@forward "@progress/kendo-theme-default/scss/chip/_variables.scss" with (
+    $kendo-chip-border-width: $kendo-chip-border-width,
+    $kendo-chip-spacing: $kendo-chip-spacing,
+    $kendo-chip-padding-x: $kendo-chip-padding-x,
+    $kendo-chip-sm-padding-x: $kendo-chip-sm-padding-x,
+    $kendo-chip-md-padding-x: $kendo-chip-md-padding-x,
+    $kendo-chip-lg-padding-x: $kendo-chip-lg-padding-x,
+    $kendo-chip-padding-y: $kendo-chip-padding-y,
+    $kendo-chip-sm-padding-y: $kendo-chip-sm-padding-y,
+    $kendo-chip-md-padding-y: $kendo-chip-md-padding-y,
+    $kendo-chip-lg-padding-y: $kendo-chip-lg-padding-y,
+    $kendo-chip-font-size: $kendo-chip-font-size,
+    $kendo-chip-sm-font-size: $kendo-chip-sm-font-size,
+    $kendo-chip-md-font-size: $kendo-chip-md-font-size,
+    $kendo-chip-lg-font-size: $kendo-chip-lg-font-size,
+    $kendo-chip-line-height: $kendo-chip-line-height,
+    $kendo-chip-sm-line-height: $kendo-chip-sm-line-height,
+    $kendo-chip-md-line-height: $kendo-chip-md-line-height,
+    $kendo-chip-lg-line-height: $kendo-chip-lg-line-height,
+    $kendo-chip-calc-size: $kendo-chip-calc-size,
+    $kendo-chip-sm-calc-size: $kendo-chip-sm-calc-size,
+    $kendo-chip-sizes: $kendo-chip-sizes,
+    $kendo-chip-base-bg: $kendo-chip-base-bg,
+    $kendo-chip-theme-colors: $kendo-chip-theme-colors,
+    $kendo-chip-solid-bg: $kendo-chip-solid-bg,
+    $kendo-chip-solid-text: $kendo-chip-solid-text,
+    $kendo-chip-solid-border: $kendo-chip-solid-border,
+    $kendo-chip-solid-shadow: $kendo-chip-solid-shadow,
+    $kendo-chip-solid-gradient: $kendo-chip-solid-gradient,
+    $kendo-chip-solid-focus-bg: $kendo-chip-solid-focus-bg,
+    $kendo-chip-solid-focus-text: $kendo-chip-solid-focus-text,
+    $kendo-chip-solid-hover-bg: $kendo-chip-solid-hover-bg,
+    $kendo-chip-solid-hover-text: $kendo-chip-solid-hover-text,
+    $kendo-chip-solid-selected-bg: $kendo-chip-solid-selected-bg,
+    $kendo-chip-solid-selected-text: $kendo-chip-solid-selected-text,
+    $kendo-chip-outline-bg: $kendo-chip-outline-bg,
+    $kendo-chip-outline-text: $kendo-chip-outline-text,
+    $kendo-chip-outline-border: $kendo-chip-outline-border,
+    $kendo-chip-outline-shadow: $kendo-chip-outline-shadow,
+    $kendo-chip-outline-hover-bg: $kendo-chip-outline-hover-bg,
+    $kendo-chip-outline-hover-text: $kendo-chip-outline-hover-text,
+    $kendo-chip-outline-selected-bg: $kendo-chip-outline-selected-bg,
+    $kendo-chip-outline-selected-text: $kendo-chip-outline-selected-text,
+    $kendo-chip-list-sizes: $kendo-chip-list-sizes
+);

@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Avatar
 
 /// The border width of the Avatar.
@@ -25,3 +27,12 @@ $kendo-avatar-sizes: (
 /// The theme colors map of the Avatar.
 /// @group avatar
 $kendo-avatar-theme-colors: $kendo-theme-colors !default;
+
+@forward "@progress/kendo-theme-default/scss/avatar/_variables.scss" with (
+    $kendo-avatar-border-width: $kendo-avatar-border-width,
+    $kendo-avatar-font-family: $kendo-avatar-font-family,
+    $kendo-avatar-font-size: $kendo-avatar-font-size,
+    $kendo-avatar-line-height: $kendo-avatar-line-height,
+    $kendo-avatar-sizes: $kendo-avatar-sizes,
+    $kendo-avatar-theme-colors: $kendo-avatar-theme-colors
+);

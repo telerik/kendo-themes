@@ -1,4 +1,12 @@
+@use "../core/_index.scss" as *;
+
 $kendo-overlay-theme-colors: $kendo-theme-colors !default;
 
 $kendo-overlay-bg: $kendo-color-black !default;
 $kendo-overlay-opacity: .32 !default;
+
+@forward "@progress/kendo-theme-default/scss/overlay/_variables.scss" with (
+    $kendo-overlay-theme-colors: $kendo-overlay-theme-colors,
+    $kendo-overlay-bg: $kendo-overlay-bg,
+    $kendo-overlay-opacity: $kendo-overlay-opacity
+);

@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // Gantt
 
 /// The border width of the Gantt.
@@ -48,7 +52,7 @@ $kendo-gantt-nonwork-border: null !default;
 $kendo-gantt-line-size: 2px !default;
 /// The background fill color of the Gantt connecting lines.
 /// @group gantt
-$kendo-gantt-line-fill: if($kendo-enable-color-system, k-color( subtle ), k-color-mix( $kendo-gantt-text, $kendo-gantt-bg )) !default;
+$kendo-gantt-line-fill: if($kendo-enable-color-system, k-color( subtle ), mix( $kendo-gantt-text, $kendo-gantt-bg )) !default;
 /// The background fill of the selected Gantt connecting lines.
 /// @group gantt
 $kendo-gantt-line-selected-fill: $kendo-selected-bg !default;
@@ -87,13 +91,13 @@ $kendo-gantt-milestone-selected-border: $kendo-color-secondary !default;
 
 /// The background color of the Gantt summary.
 /// @group gantt
-$kendo-gantt-summary-bg: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-color-primary, $kendo-gantt-bg )) !default;
+$kendo-gantt-summary-bg: if($kendo-enable-color-system, k-color( primary-emphasis ), mix( $kendo-color-primary, $kendo-gantt-bg )) !default;
 /// The background color of the Gantt summary progress.
 /// @group gantt
 $kendo-gantt-summary-progress-bg: $kendo-color-primary !default;
 /// The background color of the selected Gantt summary.
 /// @group gantt
-$kendo-gantt-summary-selected-bg: if($kendo-enable-color-system, k-color( secondary-subtle-active ), k-color-mix( $kendo-color-secondary, $kendo-gantt-bg )) !default;
+$kendo-gantt-summary-selected-bg: if($kendo-enable-color-system, k-color( secondary-subtle-active ), mix( $kendo-color-secondary, $kendo-gantt-bg )) !default;
 /// The background color of the selected Gantt summary progress.
 /// @group gantt
 $kendo-gantt-summary-progress-selected-bg: $kendo-color-secondary !default;
@@ -109,7 +113,7 @@ $kendo-gantt-task-padding-y: k-spacing(1) !default;
 $kendo-gantt-task-border-width: 0px !default;
 /// The background color of the Gantt task.
 /// @group gantt
-$kendo-gantt-task-bg: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-color-primary, $kendo-gantt-bg )) !default;
+$kendo-gantt-task-bg: if($kendo-enable-color-system, k-color( primary-emphasis ), mix( $kendo-color-primary, $kendo-gantt-bg )) !default;
 /// The text color of the Gantt task.
 /// @group gantt
 $kendo-gantt-task-text: $kendo-color-primary-contrast !default;
@@ -121,7 +125,7 @@ $kendo-gantt-task-border: null !default;
 $kendo-gantt-task-progress-bg: $kendo-color-primary !default;
 /// The background color of selected the Gantt task.
 /// @group gantt
-$kendo-gantt-task-selected-bg: if($kendo-enable-color-system, k-color( secondary-subtle-active ), k-color-mix( $kendo-color-secondary, $kendo-gantt-bg )) !default;
+$kendo-gantt-task-selected-bg: if($kendo-enable-color-system, k-color( secondary-subtle-active ), mix( $kendo-color-secondary, $kendo-gantt-bg )) !default;
 /// The text color of the selected Gantt task.
 /// @group gantt
 $kendo-gantt-task-selected-text: $kendo-color-secondary-contrast !default;
@@ -131,6 +135,10 @@ $kendo-gantt-task-selected-border: null !default;
 /// The background color of the selected Gantt task progress.
 /// @group gantt
 $kendo-gantt-task-progress-selected-bg: $kendo-color-secondary !default;
+
+/// The padding of the Gantt task actions.
+/// @group gantt
+$kendo-gantt-task-actions-padding: k-spacing(0.5) !default;
 
 /// The vertical margin of the Gantt task planned line.
 /// @group gantt
@@ -157,10 +165,10 @@ $kendo-gantt-planned-moment-height: $kendo-gantt-planned-moment-width !default;
 $kendo-gantt-planned-moment-border-radius: calc( ( #{$kendo-gantt-planned-border-width * 2} + #{$kendo-gantt-planned-moment-width} ) / 2 ) !default;
 /// The horizontal margin of the Gantt planned line dot.
 /// @group gantt
-$kendo-gantt-planned-moment-left-margin-x: calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} ) !default;
+$kendo-gantt-planned-moment-left-margin-x: calc( #{math.div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} ) !default;
 /// The horizontal margin of the Gantt milestone planned line dot.
 /// @group gantt
-$kendo-gantt-planned-milestone-moment-margin-x: k-math-div( $kendo-gantt-planned-moment-width, 2 ) !default;
+$kendo-gantt-planned-milestone-moment-margin-x: math.div( $kendo-gantt-planned-moment-width, 2 ) !default;
 
 /// The default height of the Gantt planned line.
 /// @group gantt
@@ -236,3 +244,88 @@ $kendo-gantt-validation-tooltip-valid-border: $kendo-color-success !default;
 /// The border color of the invalid Gantt validation Tooltip.
 /// @group gantt
 $kendo-gantt-validation-tooltip-invalid-border: $kendo-color-error !default;
+
+/// The horizontal padding of the Gantt task Tooltip.
+/// @group gantt
+$kendo-gantt-task-tooltip-padding-x: k-spacing(4) !default;
+/// The vertical padding of the Gantt task Tooltip.
+/// @group gantt
+$kendo-gantt-task-tooltip-padding-y: k-spacing(1) !default;
+
+@forward "@progress/kendo-theme-default/scss/gantt/_variables.scss" with (
+    $kendo-gantt-border-width: $kendo-gantt-border-width,
+    $kendo-gantt-font-family: $kendo-gantt-font-family,
+    $kendo-gantt-font-size: $kendo-gantt-font-size,
+    $kendo-gantt-line-height: $kendo-gantt-line-height,
+    $kendo-gantt-bg: $kendo-gantt-bg,
+    $kendo-gantt-text: $kendo-gantt-text,
+    $kendo-gantt-border: $kendo-gantt-border,
+    $kendo-gantt-treelist-bg: $kendo-gantt-treelist-bg,
+    $kendo-gantt-treelist-text: $kendo-gantt-treelist-text,
+    $kendo-gantt-treelist-border: $kendo-gantt-treelist-border,
+    $kendo-gantt-nonwork-bg: $kendo-gantt-nonwork-bg,
+    $kendo-gantt-nonwork-text: $kendo-gantt-nonwork-text,
+    $kendo-gantt-nonwork-border: $kendo-gantt-nonwork-border,
+    $kendo-gantt-line-size: $kendo-gantt-line-size,
+    $kendo-gantt-line-fill: $kendo-gantt-line-fill,
+    $kendo-gantt-line-selected-fill: $kendo-gantt-line-selected-fill,
+    $kendo-gantt-dot-size: $kendo-gantt-dot-size,
+    $kendo-gantt-dot-spacing: $kendo-gantt-dot-spacing,
+    $kendo-gantt-dot-bg: $kendo-gantt-dot-bg,
+    $kendo-gantt-dot-border: $kendo-gantt-dot-border,
+    $kendo-gantt-dot-hover-bg: $kendo-gantt-dot-hover-bg,
+    $kendo-gantt-dot-hover-border: $kendo-gantt-dot-hover-border,
+    $kendo-gantt-milestone-bg: $kendo-gantt-milestone-bg,
+    $kendo-gantt-milestone-border: $kendo-gantt-milestone-border,
+    $kendo-gantt-milestone-selected-bg: $kendo-gantt-milestone-selected-bg,
+    $kendo-gantt-milestone-selected-border: $kendo-gantt-milestone-selected-border,
+    $kendo-gantt-summary-bg: $kendo-gantt-summary-bg,
+    $kendo-gantt-summary-progress-bg: $kendo-gantt-summary-progress-bg,
+    $kendo-gantt-summary-selected-bg: $kendo-gantt-summary-selected-bg,
+    $kendo-gantt-summary-progress-selected-bg: $kendo-gantt-summary-progress-selected-bg,
+    $kendo-gantt-task-padding-x: $kendo-gantt-task-padding-x,
+    $kendo-gantt-task-padding-y: $kendo-gantt-task-padding-y,
+    $kendo-gantt-task-border-width: $kendo-gantt-task-border-width,
+    $kendo-gantt-task-bg: $kendo-gantt-task-bg,
+    $kendo-gantt-task-text: $kendo-gantt-task-text,
+    $kendo-gantt-task-border: $kendo-gantt-task-border,
+    $kendo-gantt-task-progress-bg: $kendo-gantt-task-progress-bg,
+    $kendo-gantt-task-selected-bg: $kendo-gantt-task-selected-bg,
+    $kendo-gantt-task-selected-text: $kendo-gantt-task-selected-text,
+    $kendo-gantt-task-selected-border: $kendo-gantt-task-selected-border,
+    $kendo-gantt-task-progress-selected-bg: $kendo-gantt-task-progress-selected-bg,
+    $kendo-gantt-planned-margin-y: $kendo-gantt-planned-margin-y,
+    $kendo-gantt-planned-border-width: $kendo-gantt-planned-border-width,
+    $kendo-gantt-planned-line-height: $kendo-gantt-planned-line-height,
+    $kendo-gantt-planned-dependency-margin-y: $kendo-gantt-planned-dependency-margin-y,
+    $kendo-gantt-planned-moment-width: $kendo-gantt-planned-moment-width,
+    $kendo-gantt-planned-moment-height: $kendo-gantt-planned-moment-height,
+    $kendo-gantt-planned-moment-border-radius: $kendo-gantt-planned-moment-border-radius,
+    $kendo-gantt-planned-moment-left-margin-x: $kendo-gantt-planned-moment-left-margin-x,
+    $kendo-gantt-planned-milestone-moment-margin-x: $kendo-gantt-planned-milestone-moment-margin-x,
+    $kendo-gantt-planned-duration-height: $kendo-gantt-planned-duration-height,
+    $kendo-gantt-planned-duration-hover-height: $kendo-gantt-planned-duration-hover-height,
+    $kendo-gantt-planned-single-drag-hint-top: $kendo-gantt-planned-single-drag-hint-top,
+    $kendo-gantt-planned-summary-drag-hint-top: $kendo-gantt-planned-summary-drag-hint-top,
+    $kendo-gantt-planned-milestone-drag-hint-top: $kendo-gantt-planned-milestone-drag-hint-top,
+    $kendo-gantt-rtl-milestone-wrap-margin-x: $kendo-gantt-rtl-milestone-wrap-margin-x,
+    $kendo-gantt-rtl-milestone-planned-moment-margin-x: $kendo-gantt-rtl-milestone-planned-moment-margin-x,
+    $kendo-gantt-rtl-milestone-dot-start-margin-x: $kendo-gantt-rtl-milestone-dot-start-margin-x,
+    $kendo-gantt-planned-offset-resize-handler-margin-x: $kendo-gantt-planned-offset-resize-handler-margin-x,
+    $kendo-gantt-planned-bg: $kendo-gantt-planned-bg,
+    $kendo-gantt-planned-border: $kendo-gantt-planned-border,
+    $kendo-gantt-delayed-bg: $kendo-gantt-delayed-bg,
+    $kendo-gantt-delayed-bg-lighter: $kendo-gantt-delayed-bg-lighter,
+    $kendo-gantt-advanced-bg: $kendo-gantt-advanced-bg,
+    $kendo-gantt-advanced-bg-lighter: $kendo-gantt-advanced-bg-lighter,
+    $kendo-gantt-action-on-offset-text: $kendo-gantt-action-on-offset-text,
+    $kendo-gantt-offset-resize-handler-top: $kendo-gantt-offset-resize-handler-top,
+    $kendo-gantt-validation-tooltip-width: $kendo-gantt-validation-tooltip-width,
+    $kendo-gantt-validation-tooltip-label-width: $kendo-gantt-validation-tooltip-label-width,
+    $kendo-gantt-validation-tooltip-border: $kendo-gantt-validation-tooltip-border,
+    $kendo-gantt-validation-tooltip-valid-border: $kendo-gantt-validation-tooltip-valid-border,
+    $kendo-gantt-validation-tooltip-invalid-border: $kendo-gantt-validation-tooltip-invalid-border,
+    $kendo-gantt-task-actions-padding: $kendo-gantt-task-actions-padding,
+    $kendo-gantt-task-tooltip-padding-x: $kendo-gantt-task-tooltip-padding-x,
+    $kendo-gantt-task-tooltip-padding-y: $kendo-gantt-task-tooltip-padding-y
+);

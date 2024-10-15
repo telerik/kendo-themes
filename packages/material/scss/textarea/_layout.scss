@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/textarea/_layout.scss";
+@use "@progress/kendo-theme-default/scss/textarea/_layout.scss" as *;
 
 
 @mixin kendo-textarea--layout() {
