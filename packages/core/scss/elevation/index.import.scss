@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../functions/index.import.scss" as *;
 
 $_default-elevation: (
@@ -43,7 +44,7 @@ $_default-elevation: (
 /// @group elevation
 $kendo-elevation: $_default-elevation !default;
 
-$kendo-elevation: k-map-merge($_default-elevation, $kendo-elevation);
+$kendo-elevation: map.merge($_default-elevation, $kendo-elevation);
 
 @function k-shadow-filter($shadow) {
     $result: '';
@@ -54,7 +55,7 @@ $kendo-elevation: k-map-merge($_default-elevation, $kendo-elevation);
 }
 
 @function k-elevation($level) {
-    @return var(--kendo-elevation-#{$level}, k-map-get($kendo-elevation, $level));
+    @return var(--kendo-elevation-#{$level}, map.get($kendo-elevation, $level));
 }
 
 
