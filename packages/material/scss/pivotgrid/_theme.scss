@@ -1,4 +1,6 @@
-@import "@progress/kendo-theme-default/scss/pivotgrid/_theme.scss";
+@use "./_variables.scss" as *;
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-default/scss/pivotgrid/_theme.scss" as *;
 
 
 @mixin kendo-pivotgrid--theme() {

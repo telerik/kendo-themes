@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 // Drawer
 
 /// The background color of the Drawer.
@@ -48,7 +51,7 @@ $kendo-drawer-scrollbar-hover-color: rgba( 156, 156, 156, 1 ) !default;
 
 /// The horizontal padding of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-x: $kendo-padding-md-x !default;
+$kendo-drawer-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-y: k-spacing(3) !default;
@@ -104,3 +107,37 @@ $kendo-drawer-selected-hover-bg: $kendo-hover-bg !default;
 /// The text color of the selected and hovered Drawer item.
 /// @group drawer
 $kendo-drawer-selected-hover-text: $kendo-color-secondary !default;
+
+@forward "@progress/kendo-theme-default/scss/drawer/_variables.scss" with (
+    $kendo-drawer-bg: $kendo-drawer-bg,
+    $kendo-drawer-text: $kendo-drawer-text,
+    $kendo-drawer-border: $kendo-drawer-border,
+    $kendo-drawer-border-width: $kendo-drawer-border-width,
+    $kendo-drawer-font-family: $kendo-drawer-font-family,
+    $kendo-drawer-font-size: $kendo-drawer-font-size,
+    $kendo-drawer-line-height: $kendo-drawer-line-height,
+    $kendo-drawer-content-padding-x: $kendo-drawer-content-padding-x,
+    $kendo-drawer-content-padding-y: $kendo-drawer-content-padding-y,
+    $kendo-drawer-scrollbar-width: $kendo-drawer-scrollbar-width,
+    $kendo-drawer-scrollbar-color: $kendo-drawer-scrollbar-color,
+    $kendo-drawer-scrollbar-bg: $kendo-drawer-scrollbar-bg,
+    $kendo-drawer-scrollbar-radius: $kendo-drawer-scrollbar-radius,
+    $kendo-drawer-scrollbar-hover-color: $kendo-drawer-scrollbar-hover-color,
+    $kendo-drawer-item-padding-x: $kendo-drawer-item-padding-x,
+    $kendo-drawer-item-padding-y: $kendo-drawer-item-padding-y,
+    $kendo-drawer-item-font-size: $kendo-drawer-item-font-size,
+    $kendo-drawer-item-line-height: $kendo-drawer-item-line-height,
+    $kendo-drawer-item-level-padding-x: $kendo-drawer-item-level-padding-x,
+    $kendo-drawer-item-level-count: $kendo-drawer-item-level-count,
+    $kendo-drawer-icon-padding-x: $kendo-drawer-icon-padding-x,
+    $kendo-drawer-icon-padding-y: $kendo-drawer-icon-padding-y,
+    $kendo-drawer-mini-initial-width: $kendo-drawer-mini-initial-width,
+    $kendo-drawer-hover-bg: $kendo-drawer-hover-bg,
+    $kendo-drawer-hover-text: $kendo-drawer-hover-text,
+    $kendo-drawer-focus-bg: $kendo-drawer-focus-bg,
+    $kendo-drawer-focus-shadow: $kendo-drawer-focus-shadow,
+    $kendo-drawer-selected-bg: $kendo-drawer-selected-bg,
+    $kendo-drawer-selected-text: $kendo-drawer-selected-text,
+    $kendo-drawer-selected-hover-bg: $kendo-drawer-selected-hover-bg,
+    $kendo-drawer-selected-hover-text: $kendo-drawer-selected-hover-text
+);

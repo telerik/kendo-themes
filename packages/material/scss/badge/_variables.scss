@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Badge
 
 /// The width of the border around the Badge.
@@ -99,3 +101,29 @@ $kendo-badge-sizes: (
         min-width: $kendo-badge-lg-min-width
     )
 ) !default;
+
+@forward "@progress/kendo-theme-default/scss/badge/_variables.scss" with (
+    $kendo-badge-border-width: $kendo-badge-border-width,
+    $kendo-badge-border-radius: $kendo-badge-border-radius,
+    $kendo-badge-padding-x: $kendo-badge-padding-x,
+    $kendo-badge-sm-padding-x: $kendo-badge-sm-padding-x,
+    $kendo-badge-md-padding-x: $kendo-badge-md-padding-x,
+    $kendo-badge-lg-padding-x: $kendo-badge-lg-padding-x,
+    $kendo-badge-padding-y: $kendo-badge-padding-y,
+    $kendo-badge-sm-padding-y: $kendo-badge-sm-padding-y,
+    $kendo-badge-md-padding-y: $kendo-badge-md-padding-y,
+    $kendo-badge-lg-padding-y: $kendo-badge-lg-padding-y,
+    $kendo-badge-font-size: $kendo-badge-font-size,
+    $kendo-badge-sm-font-size: $kendo-badge-sm-font-size,
+    $kendo-badge-md-font-size: $kendo-badge-md-font-size,
+    $kendo-badge-lg-font-size: $kendo-badge-lg-font-size,
+    $kendo-badge-line-height: $kendo-badge-line-height,
+    $kendo-badge-sm-line-height: $kendo-badge-sm-line-height,
+    $kendo-badge-md-line-height: $kendo-badge-md-line-height,
+    $kendo-badge-lg-line-height: $kendo-badge-lg-line-height,
+    $kendo-badge-min-width: $kendo-badge-min-width,
+    $kendo-badge-sm-min-width: $kendo-badge-sm-min-width,
+    $kendo-badge-md-min-width: $kendo-badge-md-min-width,
+    $kendo-badge-lg-min-width: $kendo-badge-lg-min-width,
+    $kendo-badge-sizes: $kendo-badge-sizes
+);

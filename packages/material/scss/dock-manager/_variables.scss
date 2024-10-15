@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 ///  The width of the border around the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-border-width: 1px !default;
@@ -91,7 +94,7 @@ $kendo-dock-indicator-shadow: drop-shadow( 0px 1px 18px rgba(0, 0, 0, 0.12) ) dr
 
 ///  The background color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-color-mix( $kendo-color-white, $kendo-color-primary, 8% )) !default;
+$kendo-dock-indicator-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), mix( $kendo-color-white, $kendo-color-primary, 8% )) !default;
 /// The text color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
 $kendo-dock-indicator-hover-text: $kendo-color-white !default;
@@ -111,3 +114,41 @@ $kendo-dock-manager-dock-preview-bg: if($kendo-enable-color-system, color-mix(in
 /// The border color of the dropping area in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-dock-preview-border: $kendo-color-primary !default;
+
+@forward "@progress/kendo-theme-default/scss/dock-manager/_variables.scss" with (
+    $kendo-dock-manager-border-width: $kendo-dock-manager-border-width,
+    $kendo-dock-manager-border-style: $kendo-dock-manager-border-style,
+    $kendo-dock-manager-border: $kendo-dock-manager-border,
+    $kendo-dock-manager-pane-header-padding-y: $kendo-dock-manager-pane-header-padding-y,
+    $kendo-dock-manager-pane-header-padding-x: $kendo-dock-manager-pane-header-padding-x,
+    $kendo-dock-manager-pane-header-border-width: $kendo-dock-manager-pane-header-border-width,
+    $kendo-dock-manager-pane-header-border-style: $kendo-dock-manager-pane-header-border-style,
+    $kendo-dock-manager-pane-header-bg: $kendo-dock-manager-pane-header-bg,
+    $kendo-dock-manager-pane-title-padding-y: $kendo-dock-manager-pane-title-padding-y,
+    $kendo-dock-manager-pane-title-padding-x: $kendo-dock-manager-pane-title-padding-x,
+    $kendo-dock-manager-pane-title-font-family: $kendo-dock-manager-pane-title-font-family,
+    $kendo-dock-manager-pane-title-font-size: $kendo-dock-manager-pane-title-font-size,
+    $kendo-dock-manager-pane-title-line-height: $kendo-dock-manager-pane-title-line-height,
+    $kendo-dock-manager-pane-title-font-weight: $kendo-dock-manager-pane-title-font-weight,
+    $kendo-dock-manager-pane-content-padding-x: $kendo-dock-manager-pane-content-padding-x,
+    $kendo-dock-manager-pane-content-padding-y: $kendo-dock-manager-pane-content-padding-y,
+    $kendo-dock-manager-tabbed-pane-padding-y: $kendo-dock-manager-tabbed-pane-padding-y,
+    $kendo-dock-manager-tabbed-pane-padding-x: $kendo-dock-manager-tabbed-pane-padding-x,
+    $kendo-dock-manager-unpinned-container-width: $kendo-dock-manager-unpinned-container-width,
+    $kendo-dock-manager-unpinned-container-bg: $kendo-dock-manager-unpinned-container-bg,
+    $kendo-dock-manager-unpinned-container-shadow: $kendo-dock-manager-unpinned-container-shadow,
+    $kendo-dock-indicator-padding: $kendo-dock-indicator-padding,
+    $kendo-dock-indicator-bg: $kendo-dock-indicator-bg,
+    $kendo-dock-indicator-text: $kendo-dock-indicator-text,
+    $kendo-dock-indicator-outline-width: $kendo-dock-indicator-outline-width,
+    $kendo-dock-indicator-outline-style: $kendo-dock-indicator-outline-style,
+    $kendo-dock-indicator-outline: $kendo-dock-indicator-outline,
+    $kendo-dock-indicator-shadow: $kendo-dock-indicator-shadow,
+    $kendo-dock-indicator-hover-bg: $kendo-dock-indicator-hover-bg,
+    $kendo-dock-indicator-hover-text: $kendo-dock-indicator-hover-text,
+    $kendo-dock-manager-dock-preview-border-width: $kendo-dock-manager-dock-preview-border-width,
+    $kendo-dock-manager-dock-preview-border-style: $kendo-dock-manager-dock-preview-border-style,
+    $kendo-dock-manager-dock-preview-border-radius: $kendo-dock-manager-dock-preview-border-radius,
+    $kendo-dock-manager-dock-preview-bg: $kendo-dock-manager-dock-preview-bg,
+    $kendo-dock-manager-dock-preview-border: $kendo-dock-manager-dock-preview-border
+);
