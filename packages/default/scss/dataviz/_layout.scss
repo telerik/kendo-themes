@@ -1,6 +1,8 @@
 @use "sass:math";
+@use "sass:meta";
 @use "../core/_index.scss" as *;
 @use "../core/spacing/index.import.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../tooltip/_variables.scss" as *;
 
@@ -487,7 +489,7 @@
     );
 
     @each $name, $value in $exported {
-        $type: k-meta-type-of($value);
+        $type: meta.type-of($value);
 
         .k-var--#{$name} {
             @if $type == "color" or $type == "string" {
