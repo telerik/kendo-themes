@@ -46,7 +46,7 @@ $kendo-color-gradient-border: $kendo-component-border !default;
 $kendo-color-gradient-focus-border: $kendo-hover-border !default;
 /// The box shadow of the focused ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-focus-shadow: $box-shadow-depth-3 !default;
+$kendo-color-gradient-focus-shadow: k-elevation(3) !default;
 
 /// The border radius of the ColorGradient canvas.
 /// @group color-gradient

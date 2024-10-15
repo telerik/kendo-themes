@@ -70,7 +70,7 @@ $kendo-toolbar-border: $kendo-component-border !default;
 $kendo-toolbar-gradient: null !default;
 /// The box shadow of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-shadow: $box-shadow-depth-4 !default;
+$kendo-toolbar-shadow: k-elevation(4) !default;
 
 /// The text color of the outline Toolbar.
 /// @group toolbar

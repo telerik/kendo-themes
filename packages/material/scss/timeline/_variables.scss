@@ -74,7 +74,7 @@ $kendo-timeline-track-border-color: $kendo-timeline-track-bg !default;
 
 /// The shadow of the Timeline's focused track items.
 /// @group timeline
-$kendo-timeline-track-item-focus-shadow: $box-shadow-depth-2 !default;
+$kendo-timeline-track-item-focus-shadow: k-elevation(2) !default;
 
 /// The offset of the Timeline track event.
 /// @group timeline

@@ -46,7 +46,7 @@ $kendo-tooltip-border: $kendo-tooltip-bg !default;
 
 /// The box-shadow of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-shadow: $box-shadow-depth-2 !default;
+$kendo-tooltip-shadow: k-elevation(2) !default;
 
 @function tooltip-theme( $colors ) {
     $_theme: ();

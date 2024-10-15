@@ -9,7 +9,7 @@
     .k-switch {
 
         .k-switch-thumb {
-            box-shadow: $box-shadow-depth-2;
+            box-shadow: k-elevation(2);
         }
 
         // Thumb ripple

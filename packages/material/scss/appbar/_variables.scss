@@ -48,7 +48,7 @@ $kendo-appbar-dark-text: if($kendo-enable-color-system, k-color( on-dark ), k-co
 
 /// The box shadow of the AppBar.
 /// @group appbar
-$kendo-appbar-box-shadow: $box-shadow-depth-4 !default;
+$kendo-appbar-box-shadow: k-elevation(4) !default;
 /// The box shadow of the AppBar with bottom position.
 /// @group appbar
 $kendo-appbar-bottom-box-shadow: $kendo-appbar-box-shadow !default;

@@ -42,7 +42,7 @@ $kendo-card-text: $kendo-component-text !default;
 $kendo-card-border: $kendo-component-border !default;
 /// The shadow of the Card.
 /// @group card
-$kendo-card-shadow: $box-shadow-depth-1 !default;
+$kendo-card-shadow: k-elevation(1) !default;
 /// The background color of the focused Card.
 /// @group card
 $kendo-card-focus-bg: null !default;
@@ -57,7 +57,7 @@ $kendo-card-focus-border: null !default;
 
 /// The shadow of the focused Card.
 /// @group card
-$kendo-card-focus-shadow: $box-shadow-depth-3 !default;
+$kendo-card-focus-shadow: k-elevation(3) !default;
 
 /// The horizontal padding of the Card header.
 /// @group card

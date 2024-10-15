@@ -108,7 +108,7 @@ $kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// The shadow of the dragged TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-dragging-shadow: $box-shadow-depth-3 !default;
+$kendo-tabstrip-item-dragging-shadow: k-elevation(3) !default;
 
 /// The background color of the disabled TabStrip items.
 /// @group tabstrip

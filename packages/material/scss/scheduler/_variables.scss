@@ -105,7 +105,7 @@ $kendo-scheduler-event-selected-border: null !default;
 $kendo-scheduler-event-selected-gradient: null !default;
 /// The shadow of the selected Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-shadow: $box-shadow-depth-3 !default;
+$kendo-scheduler-event-selected-shadow: k-elevation(3) !default;
 
 /// The shadow of the ongoing Scheduler event.
 /// @group scheduler
@@ -199,7 +199,7 @@ $kendo-scheduler-tooltip-text: $kendo-base-text !default;
 $kendo-scheduler-tooltip-border: null !default;
 /// The shadow of the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-shadow: $box-shadow-depth-2 !default;
+$kendo-scheduler-tooltip-shadow: k-elevation(2) !default;
 
 /// The vertical margin of the Scheduler Tooltip title.
 /// @group scheduler
