@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:string";
 @use "@progress/kendo-theme-core/scss/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/functions/_map.import.scss" as *;
 
@@ -116,8 +117,8 @@ $kendo-utils: (
     "aspect-ratio": (
         auto: auto,
         "1": 1,
-        square: k-string-unquote("1 / 1"),
-        video: k-string-unquote("16 / 9")
+        square: string.unquote("1 / 1"),
+        video: string.unquote("16 / 9")
     ),
     "container": (),
     "columns": (
@@ -347,7 +348,7 @@ $kendo-utils: (
         "10": span 10 / span 10,
         "11": span 11 / span 11,
         "12": span 12 / span 12,
-        full: k-string-unquote("1 / -1"),
+        full: string.unquote("1 / -1"),
         auto: auto
     ),
     "grid-row-start": (
