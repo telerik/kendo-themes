@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // ColorEditor/FlatColorPicker
 
 /// The spacer of the ColorEditor.
@@ -37,7 +39,7 @@ $kendo-color-editor-border: $kendo-component-border !default;
 $kendo-color-editor-focus-border: $kendo-hover-border !default;
 /// The box shadow of the focused ColorEditor.
 /// @group color-editor
-$kendo-color-editor-focus-shadow: $box-shadow-depth-3 !default;
+$kendo-color-editor-focus-shadow: k-elevation(3) !default;
 
 /// The vertical padding of the ColorEditor header.
 /// @group color-editor
@@ -78,3 +80,30 @@ $kendo-color-editor-color-gradient-focus-outline: 2px !default;
 /// The outline offset of the focused ColorGradient.
 /// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline-offset: 2px !default;
+
+@forward "@progress/kendo-theme-default/scss/coloreditor/_variables.scss" with (
+    $kendo-color-editor-spacer: $kendo-color-editor-spacer,
+    $kendo-color-editor-min-width: $kendo-color-editor-min-width,
+    $kendo-color-editor-border-width: $kendo-color-editor-border-width,
+    $kendo-color-editor-border-radius: $kendo-color-editor-border-radius,
+    $kendo-color-editor-font-family: $kendo-color-editor-font-family,
+    $kendo-color-editor-font-size: $kendo-color-editor-font-size,
+    $kendo-color-editor-line-height: $kendo-color-editor-line-height,
+    $kendo-color-editor-text: $kendo-color-editor-text,
+    $kendo-color-editor-bg: $kendo-color-editor-bg,
+    $kendo-color-editor-border: $kendo-color-editor-border,
+    $kendo-color-editor-focus-border: $kendo-color-editor-focus-border,
+    $kendo-color-editor-focus-shadow: $kendo-color-editor-focus-shadow,
+    $kendo-color-editor-header-padding-y: $kendo-color-editor-header-padding-y,
+    $kendo-color-editor-header-padding-x: $kendo-color-editor-header-padding-x,
+    $kendo-color-editor-header-actions-gap: $kendo-color-editor-header-actions-gap,
+    $kendo-color-editor-color-preview-width: $kendo-color-editor-color-preview-width,
+    $kendo-color-editor-color-preview-height: $kendo-color-editor-color-preview-height,
+    $kendo-color-editor-preview-gap: $kendo-color-editor-preview-gap,
+    $kendo-color-editor-views-padding-y: $kendo-color-editor-views-padding-y,
+    $kendo-color-editor-views-padding-x: $kendo-color-editor-views-padding-x,
+    $kendo-color-editor-views-gap: $kendo-color-editor-views-gap,
+    $kendo-color-editor-color-gradient-focus-outline-color: $kendo-color-editor-color-gradient-focus-outline-color,
+    $kendo-color-editor-color-gradient-focus-outline: $kendo-color-editor-color-gradient-focus-outline,
+    $kendo-color-editor-color-gradient-focus-outline-offset: $kendo-color-editor-color-gradient-focus-outline-offset
+);

@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/dock-manager/_theme.scss";
+@use "@progress/kendo-theme-default/scss/dock-manager/_theme.scss" as *;
 
 @mixin kendo-dock-manager--theme() {
     @include kendo-dock-manager--theme-base();

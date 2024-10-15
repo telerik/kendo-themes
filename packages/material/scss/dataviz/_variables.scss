@@ -1,55 +1,56 @@
-@import "../button/_variables.scss";
-
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../core/color-system/_functions.scss" as *;
 
 // Chart
 
 /// The first base series color and its light and dark shades.
 /// @group charts
 $kendo-series-a: if($kendo-enable-color-system, k-color( series-a ), get-base-hue( purple, 500 )) !default;
-$kendo-series-a-dark: if($kendo-enable-color-system, k-color( series-a-bold ), k-color-mix(black, $kendo-series-a, 25%)) !default;
-$kendo-series-a-darker: if($kendo-enable-color-system, k-color( series-a-bolder ), k-color-mix(black, $kendo-series-a, 50%)) !default;
-$kendo-series-a-light: if($kendo-enable-color-system, k-color( series-a-subtle ), k-color-mix(white, $kendo-series-a, 25%)) !default;
-$kendo-series-a-lighter: if($kendo-enable-color-system, k-color( series-a-subtler ), k-color-mix(white, $kendo-series-a, 50%)) !default;
+$kendo-series-a-dark: if($kendo-enable-color-system, k-color( series-a-bold ), mix(black, $kendo-series-a, 25%)) !default;
+$kendo-series-a-darker: if($kendo-enable-color-system, k-color( series-a-bolder ), mix(black, $kendo-series-a, 50%)) !default;
+$kendo-series-a-light: if($kendo-enable-color-system, k-color( series-a-subtle ), mix(white, $kendo-series-a, 25%)) !default;
+$kendo-series-a-lighter: if($kendo-enable-color-system, k-color( series-a-subtler ), mix(white, $kendo-series-a, 50%)) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
 $kendo-series-b: if($kendo-enable-color-system, k-color( series-b ), get-base-hue( blue, 500 )) !default;
-$kendo-series-b-dark: if($kendo-enable-color-system, k-color( series-b-bold ), k-color-mix(black, $kendo-series-b, 25%)) !default;
-$kendo-series-b-darker: if($kendo-enable-color-system, k-color( series-b-bolder ), k-color-mix(black, $kendo-series-b, 50%)) !default;
-$kendo-series-b-light: if($kendo-enable-color-system, k-color( series-b-subtle ), k-color-mix(white, $kendo-series-b, 25%)) !default;
-$kendo-series-b-lighter: if($kendo-enable-color-system, k-color( series-b-subtler ), k-color-mix(white, $kendo-series-b, 50%)) !default;
+$kendo-series-b-dark: if($kendo-enable-color-system, k-color( series-b-bold ), mix(black, $kendo-series-b, 25%)) !default;
+$kendo-series-b-darker: if($kendo-enable-color-system, k-color( series-b-bolder ), mix(black, $kendo-series-b, 50%)) !default;
+$kendo-series-b-light: if($kendo-enable-color-system, k-color( series-b-subtle ), mix(white, $kendo-series-b, 25%)) !default;
+$kendo-series-b-lighter: if($kendo-enable-color-system, k-color( series-b-subtler ), mix(white, $kendo-series-b, 50%)) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
 $kendo-series-c: if($kendo-enable-color-system, k-color( series-c ), get-base-hue( teal, 500 )) !default;
-$kendo-series-c-dark: if($kendo-enable-color-system, k-color( series-c-bold ), k-color-mix(black, $kendo-series-c, 25%)) !default;
-$kendo-series-c-darker: if($kendo-enable-color-system, k-color( series-c-bolder ), k-color-mix(black, $kendo-series-c, 50%)) !default;
-$kendo-series-c-light: if($kendo-enable-color-system, k-color( series-c-subtle ), k-color-mix(white, $kendo-series-c, 25%)) !default;
-$kendo-series-c-lighter: if($kendo-enable-color-system, k-color( series-c-subtler ), k-color-mix(white, $kendo-series-c, 50%)) !default;
+$kendo-series-c-dark: if($kendo-enable-color-system, k-color( series-c-bold ), mix(black, $kendo-series-c, 25%)) !default;
+$kendo-series-c-darker: if($kendo-enable-color-system, k-color( series-c-bolder ), mix(black, $kendo-series-c, 50%)) !default;
+$kendo-series-c-light: if($kendo-enable-color-system, k-color( series-c-subtle ), mix(white, $kendo-series-c, 25%)) !default;
+$kendo-series-c-lighter: if($kendo-enable-color-system, k-color( series-c-subtler ), mix(white, $kendo-series-c, 50%)) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-d: if($kendo-enable-color-system, k-color( series-d ), get-base-hue( yellow, 500 )) !default;
-$kendo-series-d-dark: if($kendo-enable-color-system, k-color( series-d-bold ), k-color-mix(black, $kendo-series-d, 25%)) !default;
-$kendo-series-d-darker: if($kendo-enable-color-system, k-color( series-d-bolder ), k-color-mix(black, $kendo-series-d, 50%)) !default;
-$kendo-series-d-light: if($kendo-enable-color-system, k-color( series-d-subtle ), k-color-mix(white, $kendo-series-d, 25%)) !default;
-$kendo-series-d-lighter: if($kendo-enable-color-system, k-color( series-d-subtler ), k-color-mix(white, $kendo-series-d, 50%)) !default;
+$kendo-series-d-dark: if($kendo-enable-color-system, k-color( series-d-bold ), mix(black, $kendo-series-d, 25%)) !default;
+$kendo-series-d-darker: if($kendo-enable-color-system, k-color( series-d-bolder ), mix(black, $kendo-series-d, 50%)) !default;
+$kendo-series-d-light: if($kendo-enable-color-system, k-color( series-d-subtle ), mix(white, $kendo-series-d, 25%)) !default;
+$kendo-series-d-lighter: if($kendo-enable-color-system, k-color( series-d-subtler ), mix(white, $kendo-series-d, 50%)) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-e: if($kendo-enable-color-system, k-color( series-e ), get-base-hue( red, 500 )) !default;
-$kendo-series-e-dark: if($kendo-enable-color-system, k-color( series-e-bold ), k-color-mix(black, $kendo-series-e, 25%)) !default;
-$kendo-series-e-darker: if($kendo-enable-color-system, k-color( series-e-bolder ), k-color-mix(black, $kendo-series-e, 50%)) !default;
-$kendo-series-e-light: if($kendo-enable-color-system, k-color( series-e-subtle ), k-color-mix(white, $kendo-series-e, 25%)) !default;
-$kendo-series-e-lighter: if($kendo-enable-color-system, k-color( series-e-subtler ), k-color-mix(white, $kendo-series-e, 50%)) !default;
+$kendo-series-e-dark: if($kendo-enable-color-system, k-color( series-e-bold ), mix(black, $kendo-series-e, 25%)) !default;
+$kendo-series-e-darker: if($kendo-enable-color-system, k-color( series-e-bolder ), mix(black, $kendo-series-e, 50%)) !default;
+$kendo-series-e-light: if($kendo-enable-color-system, k-color( series-e-subtle ), mix(white, $kendo-series-e, 25%)) !default;
+$kendo-series-e-lighter: if($kendo-enable-color-system, k-color( series-e-subtler ), mix(white, $kendo-series-e, 50%)) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-f: if($kendo-enable-color-system, k-color( series-f ), get-base-hue( green, 500 )) !default;
-$kendo-series-f-dark: if($kendo-enable-color-system, k-color( series-f-bold ), k-color-mix(black, $kendo-series-f, 25%)) !default;
-$kendo-series-f-darker: if($kendo-enable-color-system, k-color( series-f-bolder ), k-color-mix(black, $kendo-series-f, 50%)) !default;
-$kendo-series-f-light: if($kendo-enable-color-system, k-color( series-f-subtle ), k-color-mix(white, $kendo-series-f, 25%)) !default;
-$kendo-series-f-lighter: if($kendo-enable-color-system, k-color( series-f-subtler ), k-color-mix(white, $kendo-series-f, 50%)) !default;
+$kendo-series-f-dark: if($kendo-enable-color-system, k-color( series-f-bold ), mix(black, $kendo-series-f, 25%)) !default;
+$kendo-series-f-darker: if($kendo-enable-color-system, k-color( series-f-bolder ), mix(black, $kendo-series-f, 50%)) !default;
+$kendo-series-f-light: if($kendo-enable-color-system, k-color( series-f-subtle ), mix(white, $kendo-series-f, 25%)) !default;
+$kendo-series-f-lighter: if($kendo-enable-color-system, k-color( series-f-subtler ), mix(white, $kendo-series-f, 50%)) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker
@@ -111,6 +112,9 @@ $kendo-chart-area-opacity: .6 !default;
 $kendo-chart-area-inactive-opacity: .1 !default;
 $kendo-chart-line-inactive-opacity: .3 !default;
 
+$kendo-chart-tooltip-padding-x: k-spacing(2) !default;
+$kendo-chart-tooltip-padding-y: k-spacing(0.5) !default;
+
 $kendo-chart-tooltip-transition: left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1) !default;
 
 $kendo-chart-bg: $kendo-component-bg !default;
@@ -139,6 +143,9 @@ $kendo-treemap-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-treemap-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-treemap-line-height: var( --kendo-line-height, normal ) !default;
 
+$kendo-treemap-padding-x: k-spacing(2) !default;
+$kendo-treemap-padding-y: k-spacing(0.5) !default;
+
 // Chart Overlay
 $kendo-chart-overlay-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-component-bg, .5 )) !default;
 
@@ -146,3 +153,111 @@ $kendo-chart-overlay-bg: if($kendo-enable-color-system, k-color( surface ), k-tr
 $kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
 $kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
+
+@forward "@progress/kendo-theme-default/scss/dataviz/_variables.scss" with (
+    $kendo-series-a: $kendo-series-a,
+    $kendo-series-a-dark: $kendo-series-a-dark,
+    $kendo-series-a-darker: $kendo-series-a-darker,
+    $kendo-series-a-light: $kendo-series-a-light,
+    $kendo-series-a-lighter: $kendo-series-a-lighter,
+    $kendo-series-b: $kendo-series-b,
+    $kendo-series-b-dark: $kendo-series-b-dark,
+    $kendo-series-b-darker: $kendo-series-b-darker,
+    $kendo-series-b-light: $kendo-series-b-light,
+    $kendo-series-b-lighter: $kendo-series-b-lighter,
+    $kendo-series-c: $kendo-series-c,
+    $kendo-series-c-dark: $kendo-series-c-dark,
+    $kendo-series-c-darker: $kendo-series-c-darker,
+    $kendo-series-c-light: $kendo-series-c-light,
+    $kendo-series-c-lighter: $kendo-series-c-lighter,
+    $kendo-series-d: $kendo-series-d,
+    $kendo-series-d-dark: $kendo-series-d-dark,
+    $kendo-series-d-darker: $kendo-series-d-darker,
+    $kendo-series-d-light: $kendo-series-d-light,
+    $kendo-series-d-lighter: $kendo-series-d-lighter,
+    $kendo-series-e: $kendo-series-e,
+    $kendo-series-e-dark: $kendo-series-e-dark,
+    $kendo-series-e-darker: $kendo-series-e-darker,
+    $kendo-series-e-light: $kendo-series-e-light,
+    $kendo-series-e-lighter: $kendo-series-e-lighter,
+    $kendo-series-f: $kendo-series-f,
+    $kendo-series-f-dark: $kendo-series-f-dark,
+    $kendo-series-f-darker: $kendo-series-f-darker,
+    $kendo-series-f-light: $kendo-series-f-light,
+    $kendo-series-f-lighter: $kendo-series-f-lighter,
+    $kendo-series-1: $kendo-series-1,
+    $kendo-series-2: $kendo-series-2,
+    $kendo-series-3: $kendo-series-3,
+    $kendo-series-4: $kendo-series-4,
+    $kendo-series-5: $kendo-series-5,
+    $kendo-series-6: $kendo-series-6,
+    $kendo-series-7: $kendo-series-7,
+    $kendo-series-8: $kendo-series-8,
+    $kendo-series-9: $kendo-series-9,
+    $kendo-series-10: $kendo-series-10,
+    $kendo-series-11: $kendo-series-11,
+    $kendo-series-12: $kendo-series-12,
+    $kendo-series-13: $kendo-series-13,
+    $kendo-series-14: $kendo-series-14,
+    $kendo-series-15: $kendo-series-15,
+    $kendo-series-16: $kendo-series-16,
+    $kendo-series-17: $kendo-series-17,
+    $kendo-series-18: $kendo-series-18,
+    $kendo-series-19: $kendo-series-19,
+    $kendo-series-20: $kendo-series-20,
+    $kendo-series-21: $kendo-series-21,
+    $kendo-series-22: $kendo-series-22,
+    $kendo-series-23: $kendo-series-23,
+    $kendo-series-24: $kendo-series-24,
+    $kendo-series-25: $kendo-series-25,
+    $kendo-series-26: $kendo-series-26,
+    $kendo-series-27: $kendo-series-27,
+    $kendo-series-28: $kendo-series-28,
+    $kendo-series-29: $kendo-series-29,
+    $kendo-series-30: $kendo-series-30,
+    $kendo-chart-border-width: $kendo-chart-border-width,
+    $kendo-chart-font-family: $kendo-chart-font-family,
+    $kendo-chart-font-size: $kendo-chart-font-size,
+    $kendo-chart-line-height: $kendo-chart-line-height,
+    $kendo-chart-sm-font-size: $kendo-chart-sm-font-size,
+    $kendo-chart-md-font-size: $kendo-chart-md-font-size,
+    $kendo-chart-lg-font-size: $kendo-chart-lg-font-size,
+    $kendo-chart-tooltip-font-size: $kendo-chart-tooltip-font-size,
+    $kendo-chart-label-font-size: $kendo-chart-label-font-size,
+    $kendo-chart-title-font-size: $kendo-chart-title-font-size,
+    $kendo-chart-pane-title-font-size: $kendo-chart-pane-title-font-size,
+    $kendo-chart-pane-title-font-weight: $kendo-chart-pane-title-font-weight,
+    $kendo-chart-major-lines: $kendo-chart-major-lines,
+    $kendo-chart-minor-lines: $kendo-chart-minor-lines,
+    $kendo-chart-inactive: $kendo-chart-inactive,
+    $kendo-chart-area-opacity: $kendo-chart-area-opacity,
+    $kendo-chart-area-inactive-opacity: $kendo-chart-area-inactive-opacity,
+    $kendo-chart-line-inactive-opacity: $kendo-chart-line-inactive-opacity,
+    $kendo-chart-tooltip-transition: $kendo-chart-tooltip-transition,
+    $kendo-chart-bg: $kendo-chart-bg,
+    $kendo-chart-text: $kendo-chart-text,
+    $kendo-chart-border: $kendo-chart-border,
+    $kendo-chart-crosshair-background: $kendo-chart-crosshair-background,
+    $kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-crosshair-shared-tooltip-color,
+    $kendo-chart-crosshair-shared-tooltip-background: $kendo-chart-crosshair-shared-tooltip-background,
+    $kendo-chart-crosshair-shared-tooltip-border: $kendo-chart-crosshair-shared-tooltip-border,
+    $kendo-chart-notes-background: $kendo-chart-notes-background,
+    $kendo-chart-notes-border: $kendo-chart-notes-border,
+    $kendo-chart-notes-lines: $kendo-chart-notes-lines,
+    $kendo-chart-error-bars-background: $kendo-chart-error-bars-background,
+    $kendo-chart-selection-handle-size: $kendo-chart-selection-handle-size,
+    $kendo-chart-selection-border-color: $kendo-chart-selection-border-color,
+    $kendo-chart-selection-shadow: $kendo-chart-selection-shadow,
+    $kendo-chart-computed-title-height: $kendo-chart-computed-title-height,
+    $kendo-treemap-font-family: $kendo-treemap-font-family,
+    $kendo-treemap-font-size: $kendo-treemap-font-size,
+    $kendo-treemap-line-height: $kendo-treemap-line-height,
+    $kendo-chart-overlay-bg: $kendo-chart-overlay-bg,
+    $kendo-chart-no-data-font-size: $kendo-chart-no-data-font-size,
+    $kendo-chart-no-data-font-weight: $kendo-chart-no-data-font-weight,
+    $kendo-chart-no-data-padding-y: $kendo-chart-no-data-padding-y,
+    $kendo-chart-tooltip-padding-x: $kendo-chart-tooltip-padding-x,
+    $kendo-chart-tooltip-padding-y: $kendo-chart-tooltip-padding-y,
+    $kendo-treemap-padding-x: $kendo-treemap-padding-x,
+    $kendo-treemap-padding-y: $kendo-treemap-padding-y
+);

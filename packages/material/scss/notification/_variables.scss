@@ -1,3 +1,9 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "./_functions.scss" as *;
+@use "../popup/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 // Notification
 
 /// The row-gap between the elements in the Notification group.
@@ -24,7 +30,7 @@ $kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-notification-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Notification.
 /// @group notification
-$kendo-notification-line-height: k-math-div( 20, 14 ) !default;
+$kendo-notification-line-height: math.div( 20, 14 ) !default;
 /// The background color of the Notification.
 /// @group notification
 $kendo-notification-bg: $kendo-component-bg !default;
@@ -42,23 +48,27 @@ $kendo-notification-shadow: $kendo-popup-shadow !default;
 /// @group notification
 $kendo-notification-icon-spacing: $kendo-icon-spacing !default;
 
-@function notification-theme( $colors ) {
-    $_theme: ();
-
-    @each $name, $color in $colors {
-        $_theme: k-map-merge(( $name: (
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color )),
-            background-color: $color,
-            border: $color,
-        )), $_theme );
-    }
-
-    @return $_theme;
-}
-
 /// The theme colors map for the Notification.
 /// @group notification
 $kendo-notification-theme-colors: $kendo-theme-colors !default;
 /// The generated theme colors map for the Notification.
 /// @group notification
 $kendo-notification-theme: notification-theme( $kendo-notification-theme-colors ) !default;
+
+@forward "@progress/kendo-theme-default/scss/notification/_variables.scss" with (
+    $kendo-notification-group-gap: $kendo-notification-group-gap,
+    $kendo-notification-padding-x: $kendo-notification-padding-x,
+    $kendo-notification-padding-y: $kendo-notification-padding-y,
+    $kendo-notification-border-width: $kendo-notification-border-width,
+    $kendo-notification-border-radius: $kendo-notification-border-radius,
+    $kendo-notification-font-family: $kendo-notification-font-family,
+    $kendo-notification-font-size: $kendo-notification-font-size,
+    $kendo-notification-line-height: $kendo-notification-line-height,
+    $kendo-notification-bg: $kendo-notification-bg,
+    $kendo-notification-text: $kendo-notification-text,
+    $kendo-notification-border: $kendo-notification-border,
+    $kendo-notification-shadow: $kendo-notification-shadow,
+    $kendo-notification-icon-spacing: $kendo-notification-icon-spacing,
+    $kendo-notification-theme-colors: $kendo-notification-theme-colors,
+    $kendo-notification-theme: $kendo-notification-theme
+);

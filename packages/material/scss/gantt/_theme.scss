@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/gantt/_theme.scss";
+@use "../grid/_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/gantt/_theme.scss" as *;
 
 
 @mixin kendo-gantt--theme() {

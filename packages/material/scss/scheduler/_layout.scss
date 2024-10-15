@@ -1,4 +1,6 @@
-@import "@progress/kendo-theme-default/scss/scheduler/_layout.scss";
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-default/scss/scheduler/_layout.scss" as *;
 
 
 @mixin kendo-scheduler--layout() {
@@ -49,18 +51,18 @@
         // Angular fix for stronger selector and smaller padding
         .k-event-template {
             & { // stylelint-disable-line
-                padding-block: $kendo-padding-sm-y;
-                padding-inline: $kendo-padding-sm-x;
+                padding-block: k-spacing(0.5);
+                padding-inline: k-spacing(2);
             }
         }
 
         .k-event-actions {
-            right: $kendo-padding-sm-x;
+            right: k-spacing(2);
         }
     }
 
     $handle-size: 2px;
-    $handle-half-size: k-math-div( $handle-size, 2 );
+    $handle-half-size: math.div( $handle-size, 2 );
 
     .k-event {
         .k-event-delete {

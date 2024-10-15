@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/mediaplayer/_layout.scss";
+@use "@progress/kendo-theme-default/scss/mediaplayer/_layout.scss" as *;
 
 
 @mixin kendo-media-player--layout() {

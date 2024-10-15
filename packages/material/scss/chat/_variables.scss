@@ -1,3 +1,9 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // Chat
 
 /// The horizontal padding of the Chat.
@@ -83,7 +89,7 @@ $kendo-chat-bubble-padding-y: k-spacing(2) !default;
 $kendo-chat-bubble-spacing: k-spacing(0.5) !default;
 /// The line height of the Chat bubble message.
 /// @group chat
-$kendo-chat-bubble-line-height: k-math-div( 20, 14 ) !default;
+$kendo-chat-bubble-line-height: math.div( 20, 14 ) !default;
 
 /// The border radius of the Chat bubble message.
 /// @group chat
@@ -153,13 +159,13 @@ $kendo-chat-bubble-text: $kendo-component-text !default;
 $kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;
 /// The box shadow of the Chat bubble.
 /// @group chat
-$kendo-chat-bubble-shadow: $box-shadow-depth-1 !default;
+$kendo-chat-bubble-shadow: k-elevation(1) !default;
 /// The shadow of the hovered Chat bubble.
 /// @group chat
-$kendo-chat-bubble-hover-shadow: $box-shadow-depth-2 !default;
+$kendo-chat-bubble-hover-shadow: k-elevation(2) !default;
 /// The shadow of the selected Chat bubble.
 /// @group chat
-$kendo-chat-bubble-selected-shadow: $box-shadow-depth-3 !default;
+$kendo-chat-bubble-selected-shadow: k-elevation(3) !default;
 
 /// The background color of the Chat alt bubble.
 /// @group chat
@@ -172,13 +178,13 @@ $kendo-chat-alt-bubble-text: if($kendo-enable-color-system, k-color( on-primary 
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
 /// The shadow of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-shadow: $box-shadow-depth-1 !default;
+$kendo-chat-alt-bubble-shadow: k-elevation(1) !default;
 /// The shadow of the hovered Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-hover-shadow: $box-shadow-depth-2 !default;
+$kendo-chat-alt-bubble-hover-shadow: k-elevation(2) !default;
 /// The shadow of the selected Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-selected-shadow: $box-shadow-depth-3 !default;
+$kendo-chat-alt-bubble-selected-shadow: k-elevation(3) !default;
 
 /// The background color of the Chat quick reply.
 /// @group chat
@@ -209,3 +215,70 @@ $kendo-chat-quick-reply-shadow-spread: null !default;
 /// The shadow opacity of the focused Chat quick reply.
 /// @group chat
 $kendo-chat-quick-reply-shadow-opacity: 0 !default;
+
+@forward "@progress/kendo-theme-default/scss/chat/_variables.scss" with (
+    $kendo-chat-padding-x: $kendo-chat-padding-x,
+    $kendo-chat-padding-y: $kendo-chat-padding-y,
+    $kendo-chat-width: $kendo-chat-width,
+    $kendo-chat-height: $kendo-chat-height,
+    $kendo-chat-border-width: $kendo-chat-border-width,
+    $kendo-chat-font-family: $kendo-chat-font-family,
+    $kendo-chat-font-size: $kendo-chat-font-size,
+    $kendo-chat-line-height: $kendo-chat-line-height,
+    $kendo-chat-item-spacing-x: $kendo-chat-item-spacing-x,
+    $kendo-chat-item-spacing-y: $kendo-chat-item-spacing-y,
+    $kendo-chat-message-list-padding-x: $kendo-chat-message-list-padding-x,
+    $kendo-chat-message-list-padding-y: $kendo-chat-message-list-padding-y,
+    $kendo-chat-message-list-spacing: $kendo-chat-message-list-spacing,
+    $kendo-chat-timestamp-font-size: $kendo-chat-timestamp-font-size,
+    $kendo-chat-timestamp-line-height: $kendo-chat-timestamp-line-height,
+    $kendo-chat-timestamp-transform: $kendo-chat-timestamp-transform,
+    $kendo-chat-timestamp-text: $kendo-chat-timestamp-text,
+    $kendo-chat-timestamp-bg: $kendo-chat-timestamp-bg,
+    $kendo-chat-message-meta-font-size: $kendo-chat-message-meta-font-size,
+    $kendo-chat-message-meta-line-height: $kendo-chat-message-meta-line-height,
+    $kendo-chat-author-font-size: $kendo-chat-author-font-size,
+    $kendo-chat-author-line-height: $kendo-chat-author-line-height,
+    $kendo-chat-bubble-padding-x: $kendo-chat-bubble-padding-x,
+    $kendo-chat-bubble-padding-y: $kendo-chat-bubble-padding-y,
+    $kendo-chat-bubble-spacing: $kendo-chat-bubble-spacing,
+    $kendo-chat-bubble-line-height: $kendo-chat-bubble-line-height,
+    $kendo-chat-bubble-border-radius: $kendo-chat-bubble-border-radius,
+    $kendo-chat-bubble-border-radius-sm: $kendo-chat-bubble-border-radius-sm,
+    $kendo-chat-avatar-size: $kendo-chat-avatar-size,
+    $kendo-chat-avatar-spacing: $kendo-chat-avatar-spacing,
+    $kendo-chat-toolbar-padding-x: $kendo-chat-toolbar-padding-x,
+    $kendo-chat-toolbar-padding-y: $kendo-chat-toolbar-padding-y,
+    $kendo-chat-toolbar-spacing: $kendo-chat-toolbar-spacing,
+    $kendo-chat-toolbar-bg: $kendo-chat-toolbar-bg,
+    $kendo-chat-toolbar-text: $kendo-chat-toolbar-text,
+    $kendo-chat-toolbar-border: $kendo-chat-toolbar-border,
+    $kendo-chat-quick-reply-padding-x: $kendo-chat-quick-reply-padding-x,
+    $kendo-chat-quick-reply-padding-y: $kendo-chat-quick-reply-padding-y,
+    $kendo-chat-quick-reply-spacing: $kendo-chat-quick-reply-spacing,
+    $kendo-chat-quick-reply-line-height: $kendo-chat-quick-reply-line-height,
+    $kendo-chat-bg: $kendo-chat-bg,
+    $kendo-chat-text: $kendo-chat-text,
+    $kendo-chat-border: $kendo-chat-border,
+    $kendo-chat-bubble-bg: $kendo-chat-bubble-bg,
+    $kendo-chat-bubble-text: $kendo-chat-bubble-text,
+    $kendo-chat-bubble-border: $kendo-chat-bubble-border,
+    $kendo-chat-bubble-shadow: $kendo-chat-bubble-shadow,
+    $kendo-chat-bubble-hover-shadow: $kendo-chat-bubble-hover-shadow,
+    $kendo-chat-bubble-selected-shadow: $kendo-chat-bubble-selected-shadow,
+    $kendo-chat-alt-bubble-bg: $kendo-chat-alt-bubble-bg,
+    $kendo-chat-alt-bubble-text: $kendo-chat-alt-bubble-text,
+    $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-border,
+    $kendo-chat-alt-bubble-shadow: $kendo-chat-alt-bubble-shadow,
+    $kendo-chat-alt-bubble-hover-shadow: $kendo-chat-alt-bubble-hover-shadow,
+    $kendo-chat-alt-bubble-selected-shadow: $kendo-chat-alt-bubble-selected-shadow,
+    $kendo-chat-quick-reply-bg: $kendo-chat-quick-reply-bg,
+    $kendo-chat-quick-reply-text: $kendo-chat-quick-reply-text,
+    $kendo-chat-quick-reply-border: $kendo-chat-quick-reply-border,
+    $kendo-chat-quick-reply-hover-bg: $kendo-chat-quick-reply-hover-bg,
+    $kendo-chat-quick-reply-hover-text: $kendo-chat-quick-reply-hover-text,
+    $kendo-chat-quick-reply-hover-border: $kendo-chat-quick-reply-hover-border,
+    $kendo-chat-quick-reply-shadow-blur: $kendo-chat-quick-reply-shadow-blur,
+    $kendo-chat-quick-reply-shadow-spread: $kendo-chat-quick-reply-shadow-spread,
+    $kendo-chat-quick-reply-shadow-opacity: $kendo-chat-quick-reply-shadow-opacity
+);

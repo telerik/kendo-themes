@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/switch/_theme.scss";
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-default/scss/switch/_theme.scss" as *;
 
 
 @mixin kendo-switch--theme() {
@@ -9,7 +10,7 @@
     .k-switch {
 
         .k-switch-thumb {
-            box-shadow: $box-shadow-depth-2;
+            box-shadow: k-elevation(2);
         }
 
         // Thumb ripple
