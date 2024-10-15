@@ -19,16 +19,19 @@
 @use "./_scrollbar.scss" as *;
 @use "./_resizing.scss" as *;
 @use "./_utils-components.scss" as *;
+@use "../mixins/index.import.scss" as *;
 
 @mixin kendo-core--styles() {
-    @include kendo-core--styles--accessibility();
-    @include kendo-core--styles--animations();
-    @include kendo-core--styles--asp-fallback();
-    @include kendo-core--styles--layout();
-    @include kendo-core--styles--normalize();
-    @include kendo-core--styles--base();
-    @include kendo-core--styles--selection();
-    @include kendo-core--styles--scrollbar();
-    @include kendo-core--styles--resizing();
-    @include kendo-core--styles--utils-components();
+    @include import-once("core--styles") {
+        @include kendo-core--styles--accessibility();
+        @include kendo-core--styles--animations();
+        @include kendo-core--styles--asp-fallback();
+        @include kendo-core--styles--layout();
+        @include kendo-core--styles--normalize();
+        @include kendo-core--styles--base();
+        @include kendo-core--styles--selection();
+        @include kendo-core--styles--scrollbar();
+        @include kendo-core--styles--resizing();
+        @include kendo-core--styles--utils-components();
+    }
 }

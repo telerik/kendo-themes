@@ -8,6 +8,7 @@
 @forward "./border-radii/index.import.scss";
 
 @use "./color-system/index.import.scss" as *;
+@use "./mixins/index.import.scss" as *;
 @use "./styles/index.import.scss" as *;
 @use "./elevation/index.import.scss" as *;
 @use "./typography/index.import.scss" as *;
@@ -15,10 +16,12 @@
 @use "./border-radii/index.import.scss" as *;
 
 @mixin core-styles() {
-    @include kendo-color-system--styles();
-    @include kendo-core--styles();
-    @include kendo-spacing--styles();
-    @include kendo-elevation--styles();
-    @include kendo-core--typography--styles();
-    @include kendo-border-radius--styles();
+    @include import-once("core-styles") {
+        @include kendo-color-system--styles();
+        @include kendo-core--styles();
+        @include kendo-spacing--styles();
+        @include kendo-elevation--styles();
+        @include kendo-core--typography--styles();
+        @include kendo-border-radius--styles();
+    }
 }
