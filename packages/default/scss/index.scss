@@ -347,9 +347,9 @@
 
     // Primitive components
     @include kendo-draggable--styles();
-    @include kendo-action-buttons--styles();
     @include kendo-list--styles();
     @include kendo-listgroup--styles();
+    @include kendo-action-buttons--styles();
     @include kendo-overlay--styles();
     @include kendo-popup--styles();
     @include kendo-ripple--styles();
