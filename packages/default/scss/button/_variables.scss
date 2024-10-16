@@ -1,5 +1,7 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // Button
 
 /// The width of the border around the Button.
