@@ -160,9 +160,9 @@
             &.k-hover {
                 @if $name == "base" {
                     @include fill(
-                        if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $color )),
-                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color )),
-                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color ))
+                        if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $color ) ),
+                        if($kendo-enable-color-system, k-color( on-base ), $color ),
+                        if($kendo-enable-color-system, k-color( on-base ), $color )
                     );
                 } @else {
                     @include fill(
@@ -191,8 +191,8 @@
                 @if $name == "base" {
                     @include fill(
                         if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $color )),
-                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color )),
-                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color ))
+                        if($kendo-enable-color-system, k-color( on-base ), $color ),
+                        if($kendo-enable-color-system, k-color( on-base ), $color )
                     );
                 } @else {
                     @include fill(
@@ -208,8 +208,8 @@
                 @if $name == "base" {
                     @include fill(
                         if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $color )),
-                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color )),
-                        if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( $color ))
+                        if($kendo-enable-color-system, k-color( on-base ), $color ),
+                        if($kendo-enable-color-system, k-color( on-base ), $color )
                     );
                 } @else {
                     @include fill(
