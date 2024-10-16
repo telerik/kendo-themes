@@ -19,6 +19,7 @@
 @forward "./ripple/_index.scss";
 @forward "./table/_index.scss";
 @forward "./virtual-scroller/_index.scss";
+@forward "./no-data/_index.scss";
 
 
 // Indicators
@@ -183,6 +184,7 @@
 @use "./ripple/_index.scss" as *;
 @use "./table/_index.scss" as *;
 @use "./virtual-scroller/_index.scss" as *;
+@use "./no-data/_index.scss" as *;
 
 
 // Indicators
@@ -355,6 +357,7 @@
     @include kendo-ripple--styles();
     @include kendo-table--styles();
     @include kendo-virtual-scroller--styles();
+    @include kendo-no-data--styles();
 
 
     // Indicators
