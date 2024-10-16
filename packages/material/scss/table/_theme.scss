@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/table/_theme.scss";
+@use "@progress/kendo-theme-default/scss/table/_theme.scss" as *;
 
 
 @mixin kendo-table--theme() {

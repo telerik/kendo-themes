@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/forms/_layout.scss";
+@use "@progress/kendo-theme-default/scss/forms/_layout.scss" as *;
 
 
 @mixin kendo-form--layout() {

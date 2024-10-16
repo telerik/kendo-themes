@@ -71,7 +71,7 @@ $kendo-upload-validation-font-size: var( --kendo-font-size-sm, inherit ) !defaul
 $kendo-upload-validation-line-height: var( --kendo-line-height-xs, normal ) !default;
 /// The horizontal spacing of the Upload status icon.
 /// @group upload
-$kendo-upload-icon-spacing: $kendo-icon-spacing !default;
+$kendo-upload-icon-spacing: k-spacing(2) !default;
 /// The color of the uploaded items icon.
 /// @group upload
 $kendo-upload-icon-color: $kendo-subtle-text !default;
@@ -100,3 +100,36 @@ $kendo-upload-error-bg: $kendo-color-error !default;
 /// The shadow of the focused Upload button, actions and uploaded items.
 /// @group upload
 $kendo-upload-focus-shadow: 0 0 0 2px rgba( black, .13 ) !default;
+
+@forward "@progress/kendo-theme-default/scss/upload/_variables.scss" with (
+    $kendo-upload-border-width: $kendo-upload-border-width,
+    $kendo-upload-font-family: $kendo-upload-font-family,
+    $kendo-upload-font-size: $kendo-upload-font-size,
+    $kendo-upload-line-height: $kendo-upload-line-height,
+    $kendo-upload-max-height: $kendo-upload-max-height,
+    $kendo-upload-text: $kendo-upload-text,
+    $kendo-upload-bg: $kendo-upload-bg,
+    $kendo-upload-border: $kendo-upload-border,
+    $kendo-upload-dropzone-padding-x: $kendo-upload-dropzone-padding-x,
+    $kendo-upload-dropzone-padding-y: $kendo-upload-dropzone-padding-y,
+    $kendo-upload-dropzone-text: $kendo-upload-dropzone-text,
+    $kendo-upload-dropzone-bg: $kendo-upload-dropzone-bg,
+    $kendo-upload-dropzone-border: $kendo-upload-dropzone-border,
+    $kendo-upload-dropzone-hover-bg: $kendo-upload-dropzone-hover-bg,
+    $kendo-upload-status-text: $kendo-upload-status-text,
+    $kendo-upload-status-text-opacity: $kendo-upload-status-text-opacity,
+    $kendo-upload-item-padding-x: $kendo-upload-item-padding-x,
+    $kendo-upload-item-padding-y: $kendo-upload-item-padding-y,
+    $kendo-upload-multiple-items-spacing: $kendo-upload-multiple-items-spacing,
+    $kendo-upload-validation-font-size: $kendo-upload-validation-font-size,
+    $kendo-upload-validation-line-height: $kendo-upload-validation-line-height,
+    $kendo-upload-icon-spacing: $kendo-upload-icon-spacing,
+    $kendo-upload-icon-color: $kendo-upload-icon-color,
+    $kendo-upload-progress-thickness: $kendo-upload-progress-thickness,
+    $kendo-upload-progress-bg: $kendo-upload-progress-bg,
+    $kendo-upload-success-text: $kendo-upload-success-text,
+    $kendo-upload-success-bg: $kendo-upload-success-bg,
+    $kendo-upload-error-text: $kendo-upload-error-text,
+    $kendo-upload-error-bg: $kendo-upload-error-bg,
+    $kendo-upload-focus-shadow: $kendo-upload-focus-shadow
+);
