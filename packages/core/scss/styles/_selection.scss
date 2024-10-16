@@ -1,4 +1,5 @@
 @use "../color-system/_swatch-legacy.scss" as *;
+@use "../color-system/_functions.import" as *;
 @use "../_variables.scss" as *;
 
 @mixin kendo-core--styles--selection() {
