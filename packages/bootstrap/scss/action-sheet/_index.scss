@@ -13,8 +13,12 @@
 
 
 // Expose
-@mixin action-sheet-styles() {
+@mixin kendo-action-sheet--styles() {
     @include import-once( "action-sheet" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-listgroup--styles();
+        @include kendo-popup--styles();
         @include kendo-action-sheet--layout();
         @include kendo-action-sheet--theme();
         @include kendo-utils--layout--overflow();

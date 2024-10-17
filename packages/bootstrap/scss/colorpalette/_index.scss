@@ -9,8 +9,9 @@
 
 
 // Expose
-@mixin color-palette-styles() {
+@mixin kendo-color-palette--styles() {
     @include import-once( "color-palette" ) {
+        @include core-styles();
         @include kendo-color-palette--layout();
         @include kendo-color-palette--theme();
     }

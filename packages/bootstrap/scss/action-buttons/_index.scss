@@ -9,9 +9,12 @@
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 
+
 // Expose
-@mixin action-buttons-styles() {
+@mixin kendo-action-buttons--styles() {
     @include import-once( "action-buttons" ) {
+        @include core-styles();
+        @include kendo-button--styles();
         @include kendo-action-buttons--layout();
         @include kendo-action-buttons--theme();
         @include kendo-utils--flex-grid--justify-content();

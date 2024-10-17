@@ -1,8 +1,8 @@
 @use "./_variables.scss" as *;
 @use "../action-buttons/_variables.scss" as *;
-@import "@progress/kendo-theme-default/scss/datetimepicker/_layout.scss";
+@use "@progress/kendo-theme-default/scss/datetimepicker/_layout.scss" as *;
 
 
-@mixin kendo-datetimepicker--layout() {
+@mixin kendo-date-time-picker--layout() {
     @include kendo-date-time-picker--layout-base();
 }

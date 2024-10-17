@@ -3,6 +3,7 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../button/_index.scss" as *;
@@ -13,9 +14,18 @@
 @use "../list/_index.scss" as *;
 @use "../icons/_index.scss" as *;
 
+
 // Expose
-@mixin multiselect-styles() {
+@mixin kendo-multiselect--styles() {
     @include import-once( "multiselect" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-input--styles();
+        @include kendo-chip--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-icon--styles();
         @include kendo-multiselect--layout();
         @include kendo-multiselect--theme();
     }

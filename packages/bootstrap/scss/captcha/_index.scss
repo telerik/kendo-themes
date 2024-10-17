@@ -4,6 +4,7 @@
 @use "./_theme.scss" as *;
 
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
@@ -15,8 +16,14 @@
 
 
 // Expose
-@mixin captcha-styles() {
+@mixin kendo-captcha--styles() {
     @include import-once( "captcha" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-input--styles();
+        @include kendo-button--styles();
+        @include kendo-textbox--styles();
+        @include kendo-slider--styles();
         @include kendo-captcha--layout();
         @include kendo-captcha--theme();
         @include kendo-utils--typography--text-color();

@@ -7,9 +7,11 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 
+
 // Expose
-@mixin dropzone-styles() {
+@mixin kendo-dropzone--styles() {
     @include import-once( "dropzone" ) {
+        @include core-styles();
         @include kendo-dropzone--layout();
         @include kendo-dropzone--theme();
     }

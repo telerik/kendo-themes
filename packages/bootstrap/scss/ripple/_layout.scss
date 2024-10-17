@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/ripple/_layout.scss";
+@use "@progress/kendo-theme-default/scss/ripple/_layout.scss" as *;
 
 
 @mixin kendo-ripple--layout() {

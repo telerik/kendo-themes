@@ -4,6 +4,7 @@
 @use "./_theme.scss" as *;
 
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
@@ -13,8 +14,12 @@
 
 
 // Expose
-@mixin card-styles() {
+@mixin kendo-card--styles() {
     @include import-once( "card" ) {
+        @include core-styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-icon--styles();
+        @include typography--styles();
         @include kendo-card--layout();
         @include kendo-card--theme();
         @include kendo-utils--typography--text-overflow();

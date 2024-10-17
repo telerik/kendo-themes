@@ -12,10 +12,13 @@
 
 
 // Expose
-@mixin expansion-panel-styles() {
-    @include import-once( "expansion-panel" ) {
-        @include kendo-expansion-panel--layout();
-        @include kendo-expansion-panel--theme();
+@mixin kendo-expander--styles() {
+    @include import-once( "expander" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
+        @include kendo-expander--layout();
+        @include kendo-expander--theme();
         @include kendo-utils--layout--display();
     }
 }

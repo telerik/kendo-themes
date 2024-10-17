@@ -3,6 +3,7 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
@@ -14,11 +15,20 @@
 @use "../toolbar/_index.scss" as *;
 @use "../card/_index.scss" as *;
 
+
 // Expose
-@mixin taskboard-styles() {
-    @include import-once( "taskboard" ) {
-        @include kendo-taskboard--layout();
-        @include kendo-taskboard--theme();
+@mixin kendo-task-board--styles() {
+    @include import-once( "task-board" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-form--styles();
+        @include kendo-input--styles();
+        @include kendo-textbox--styles();
+        @include kendo-searchbox--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-card--styles();
+        @include kendo-task-board--layout();
+        @include kendo-task-board--theme();
         @include kendo-utils--typography--text-overflow();
     }
 }

@@ -10,10 +10,15 @@
 @use "../floating-label/_index.scss" as *;
 @use "../icons/_index.scss" as *;
 
+
 // Expose
-@mixin maskedtextbox-styles() {
-    @include import-once( "maskedtextbox" ) {
-        @include kendo-maskedtextbox--layout();
-        @include kendo-maskedtextbox--theme();
+@mixin kendo-masked-textbox--styles() {
+    @include import-once( "masked-textbox" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-icon--styles();
+        @include kendo-masked-textbox--layout();
+        @include kendo-masked-textbox--theme();
     }
 }

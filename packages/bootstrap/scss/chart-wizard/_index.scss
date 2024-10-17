@@ -20,8 +20,19 @@
 
 
 // Expose
-@mixin chart-wizard-styles() {
+@mixin kendo-chart-wizard--styles() {
     @include import-once( "chart-wizard" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-window--styles();
+        @include kendo-splitter--styles();
+        @include kendo-dataviz--styles();
+        @include kendo-expander--styles();
+        @include kendo-grid--styles();
+        @include kendo-tabstrip--styles();
+        @include kendo-listview--styles();
+        @include kendo-form--styles();
+        @include kendo-combobox--styles();
         @include kendo-chart-wizard--layout();
         @include kendo-chart-wizard--theme();
     }

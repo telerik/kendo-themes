@@ -3,14 +3,19 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../menu/_index.scss" as *;
 
+
 // Expose
-@mixin split-button-styles() {
+@mixin kendo-split-button--styles() {
     @include import-once( "split-button" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-menu--styles();
         @include kendo-split-button--layout();
         @include kendo-split-button--theme();
     }

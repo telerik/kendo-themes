@@ -3,7 +3,7 @@
 @use "../button/_variables.scss" as *;
 @use "../icon/_variables.scss" as *;
 @use "../menu/_variables.scss" as *;
-@import "@progress/kendo-theme-default/scss/toolbar/_layout.scss";
+@use "@progress/kendo-theme-default/scss/toolbar/_layout.scss" as *;
 
 
 @mixin kendo-toolbar--layout() {

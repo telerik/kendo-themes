@@ -2,7 +2,7 @@
 @use "./_variables.scss" as *;
 @use "../card/_variables.scss" as *;
 @use "../icon/_variables.scss" as *;
-@import "@progress/kendo-theme-default/scss/timeline/_layout.scss";
+@use "@progress/kendo-theme-default/scss/timeline/_layout.scss" as *;
 
 
 @mixin kendo-timeline--layout() {

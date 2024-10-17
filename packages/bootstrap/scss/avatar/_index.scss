@@ -9,8 +9,9 @@
 
 
 // Expose
-@mixin avatar-styles() {
+@mixin kendo-avatar--styles() {
     @include import-once( "avatar" ) {
+        @include core-styles();
         @include kendo-avatar--layout();
         @include kendo-avatar--theme();
     }

@@ -1,6 +1,6 @@
-@import "@progress/kendo-theme-default/scss/datepicker/_theme.scss";
+@use "@progress/kendo-theme-default/scss/datepicker/_theme.scss" as *;
 
 
-@mixin kendo-datepicker--theme() {
+@mixin kendo-date-picker--theme() {
     @include kendo-date-picker--theme-base();
 }

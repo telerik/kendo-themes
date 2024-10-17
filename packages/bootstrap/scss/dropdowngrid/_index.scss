@@ -14,9 +14,15 @@
 
 
 // Expose
-@mixin dropdowngrid-styles() {
-    @include import-once( "dropdowngrid" ) {
-        @include kendo-dropdowngrid--layout();
-        @include kendo-dropdowngrid--theme();
+@mixin kendo-dropdown-grid--styles() {
+    @include import-once( "dropdown-grid" ) {
+        @include core-styles();
+        @include kendo-floating-label--styles();
+        @include kendo-icon--styles();
+        @include kendo-input--styles();
+        @include kendo-popup--styles();
+        @include kendo-table--styles();
+        @include kendo-dropdown-grid--layout();
+        @include kendo-dropdown-grid--theme();
     }
 }

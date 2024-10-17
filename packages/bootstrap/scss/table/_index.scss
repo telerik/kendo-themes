@@ -3,12 +3,15 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 
+
 // Expose
-@mixin table-styles() {
+@mixin kendo-table--styles() {
     @include import-once( "table" ) {
+        @include core-styles();
         @include kendo-table--layout();
         @include kendo-table--theme();
     }

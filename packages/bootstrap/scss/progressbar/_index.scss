@@ -3,12 +3,15 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 
+
 // Expose
-@mixin progressbar-styles() {
+@mixin kendo-progressbar--styles() {
     @include import-once( "progressbar" ) {
+        @include core-styles();
         @include kendo-progressbar--layout();
         @include kendo-progressbar--theme();
     }
