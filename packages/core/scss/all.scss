@@ -1,3 +1,4 @@
+@forward "./index.import.scss";
 @use "./index.import.scss" as *;
 
 @include core-styles();
