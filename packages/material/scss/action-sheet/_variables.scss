@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Action sheet
 
 $kendo-actionsheet-padding-x: null !default;
@@ -73,7 +75,6 @@ $kendo-actionsheet-item-disabled-shadow: null !default;
 
 $kendo-actionsheet-item-hover-background: rgba( black, .04 ) !default;
 $kendo-actionsheet-item-focus-background: rgba( black, .12 ) !default;
-$kendo-actionsheet-item-focus-shadow: null !default;
 $kendo-actionsheet-item-disabled-opacity: .42 !default;
 
 
@@ -147,7 +148,6 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-item-disabled-shadow: $kendo-actionsheet-item-disabled-shadow,
     $kendo-actionsheet-item-hover-background: $kendo-actionsheet-item-hover-background,
     $kendo-actionsheet-item-focus-background: $kendo-actionsheet-item-focus-background,
-    $kendo-actionsheet-item-focus-shadow: $kendo-actionsheet-item-focus-shadow,
     $kendo-actionsheet-item-disabled-opacity: $kendo-actionsheet-item-disabled-opacity,
     $kendo-adaptive-actionsheet-font-size: $kendo-adaptive-actionsheet-font-size,
     $kendo-adaptive-actionsheet-titlebar-border-width: $kendo-adaptive-actionsheet-titlebar-border-width,

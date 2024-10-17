@@ -10,7 +10,7 @@
 @use "../utils/_index.scss" as *;
 @use "../action-buttons/_index.scss" as *;
 @use "../icons/_index.scss" as *;
-@use "../typography/_index.scss" as *;
+// @use "../typography/_index.scss" as *;
 
 
 // Expose
@@ -19,7 +19,7 @@
         @include core-styles();
         @include kendo-action-buttons--styles();
         @include kendo-icon--styles();
-        @include kendo-typography--styles();
+        // @include kendo-typography--styles();
         @include kendo-card--layout();
         @include kendo-card--theme();
         @include kendo-utils--typography--text-overflow();

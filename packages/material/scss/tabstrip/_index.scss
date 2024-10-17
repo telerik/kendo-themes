@@ -9,7 +9,7 @@
 @use "../utils/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../icons/_index.scss" as *;
-@use "../list/_index.scss" as *;
+// @use "../list/_index.scss" as *;
 
 
 // Expose
@@ -18,7 +18,7 @@
         @include core-styles();
         @include kendo-button--styles();
         @include kendo-icon--styles();
-        @include kendo-list--styles();
+        // @include kendo-list--styles();
         @include kendo-tabstrip--layout();
         @include kendo-tabstrip--theme();
         @include kendo-utils--layout--overflow();

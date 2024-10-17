@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../menu/_variables.scss" as *;
+
 // Toolbar
 
 /// The horizontal padding of the Toolbar.
@@ -116,6 +119,19 @@ $kendo-toolbar-input-width: 10em !default;
 /// @group toolbar
 $kendo-toolbar-item-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
 
+/// The font size of the Toolbar overflow container.
+/// @group toolbar
+$kendo-toolbar-overflow-container-font-size: $kendo-menu-popup-md-font-size !default;
+/// The line-height of the Toolbar overflow container.
+/// @group toolbar
+$kendo-toolbar-overflow-container-line-height: $kendo-menu-popup-md-line-height !default;
+/// The vertical padding of the Toolbar overflow button.
+/// @group toolbar
+$kendo-toolbar-overflow-button-padding-y: $kendo-menu-popup-md-item-padding-y !default;
+/// The horizontal padding of the Toolbar overflow button.
+/// @group toolbar
+$kendo-toolbar-overflow-button-padding-x: $kendo-menu-popup-md-item-padding-x !default;
+
 /// The sizes map for the Toolbar.
 /// @group toolbar
 $kendo-toolbar-sizes: (
@@ -172,5 +188,6 @@ $kendo-toolbar-sizes: (
     $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
     $kendo-toolbar-input-width: $kendo-toolbar-input-width,
     $kendo-toolbar-item-shadow: $kendo-toolbar-item-shadow,
-    $kendo-toolbar-sizes: $kendo-toolbar-sizes
+    $kendo-toolbar-sizes: $kendo-toolbar-sizes,
+    $kendo-toolbar-overflow-container-font-size: $kendo-toolbar-overflow-container-font-size
 );

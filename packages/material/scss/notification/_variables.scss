@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../popup/_variables.scss" as *;
+@use "./_functions.scss" as *;
+
 // Notification
 
 /// The row-gap between the elements in the Notification group.
@@ -41,20 +45,6 @@ $kendo-notification-shadow: $kendo-popup-shadow !default;
 /// The horizontal spacing of the Notification icon.
 /// @group notification
 $kendo-notification-icon-spacing: k-spacing(2) !default;
-
-@function notification-theme( $colors ) {
-    $_theme: ();
-
-    @each $name, $color in $colors {
-        $_theme: k-map-merge(( $name: (
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color )),
-            background-color: $color,
-            border: $color,
-        )), $_theme );
-    }
-
-    @return $_theme;
-}
 
 /// The theme colors map for the Notification.
 /// @group notification

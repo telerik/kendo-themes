@@ -6,7 +6,7 @@
 
 // Dependencies
 @use "../core/_index.scss" as *;
-@use "../list/_index.scss" as *;
+// @use "../list/_index.scss" as *;
 @use "../action-buttons/_index.scss" as *;
 @use "../button/_index.scss" as *;
 
@@ -15,7 +15,7 @@
 @mixin kendo-time-selector--styles() {
     @include import-once( "time-selector" ) {
         @include core-styles();
-        @include kendo-list--styles();
+        // @include kendo-list--styles();
         @include kendo-action-buttons--styles();
         @include kendo-button--styles();
         @include kendo-time-selector--layout();
