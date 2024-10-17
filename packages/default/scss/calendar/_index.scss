@@ -9,7 +9,6 @@
 @use "../utils/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../icons/_index.scss" as *;
-@use "../list/_index.scss" as *;
 
 
 // Expose
@@ -18,7 +17,6 @@
         @include core-styles();
         @include kendo-button--styles();
         @include kendo-icon--styles();
-        @include kendo-list--styles();
         @include kendo-calendar--layout();
         @include kendo-calendar--theme();
         @include kendo-utils--flex-grid--align-items();
