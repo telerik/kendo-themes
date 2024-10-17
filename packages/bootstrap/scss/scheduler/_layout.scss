@@ -1,9 +1,9 @@
 @use "../core/_index.scss" as *;
-@use "../core/spacing/_index.scss" as *;
+// @use "../core/spacing/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../icon/_variables.scss" as *;
-@import "@progress/kendo-theme-default/scss/scheduler/_layout.scss";
+@use "@progress/kendo-theme-default/scss/scheduler/_layout.scss" as *;
 
 
 @mixin kendo-scheduler--layout() {
@@ -21,17 +21,17 @@
         // Angular fix for stronger selector and smaller padding
         .k-event-template {
             & { // stylelint-disable-line
-                padding-block: $kendo-padding-sm-y;
-                padding-inline: $kendo-padding-sm-x;
+                padding-block: k-spacing(1);
+                padding-inline: k-spacing(2);
                 font-size: var( --kendo-font-size-sm, inherit );
             }
         }
 
         .k-event-actions {
-            right: $kendo-padding-sm-x;
+            right: k-spacing(2);
 
             &:first-child {
-                margin: .1ex .4ex 0 $kendo-padding-sm-x;
+                margin: .1ex .4ex 0 k-spacing(2);
             }
         }
     }

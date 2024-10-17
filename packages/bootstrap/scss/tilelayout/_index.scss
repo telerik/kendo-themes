@@ -3,15 +3,20 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../card/_index.scss" as *;
 @use "../icons/_index.scss" as *;
 
+
 // Expose
-@mixin tilelayout-styles() {
-    @include import-once( "tilelayout" ) {
+@mixin kendo-tile-layout--styles() {
+    @include import-once( "tile-layout" ) {
+        @include core-styles();
+        @include kendo-card--styles();
+        @include kendo-icon--styles();
         @include kendo-tile-layout--layout();
         @include kendo-tile-layout--theme();
         @include kendo-utils--interactivity--resize();

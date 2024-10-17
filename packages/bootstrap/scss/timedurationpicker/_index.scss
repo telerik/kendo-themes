@@ -3,6 +3,7 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../icons/_index.scss" as *;
@@ -12,10 +13,18 @@
 @use "../list/_index.scss" as *;
 @use "../timeselector/_index.scss" as *;
 
+
 // Expose
-@mixin timedurationpicker-styles() {
-    @include import-once( "timedurationpicker" ) {
-        @include kendo-timedurationpicker--layout();
-        @include kendo-timedurationpicker--theme();
+@mixin kendo-time-duration-picker--styles() {
+    @include import-once( "time-duration-picker" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
+        @include kendo-input--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-time-selector--styles();
+        @include kendo-time-duration-picker--layout();
+        @include kendo-time-duration-picker--theme();
     }
 }

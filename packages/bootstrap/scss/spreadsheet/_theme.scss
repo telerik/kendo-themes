@@ -2,7 +2,7 @@
 @use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
-@import "@progress/kendo-theme-default/scss/spreadsheet/_theme.scss";
+@use "@progress/kendo-theme-default/scss/spreadsheet/_theme.scss" as *;
 
 
 @mixin kendo-spreadsheet--theme() {

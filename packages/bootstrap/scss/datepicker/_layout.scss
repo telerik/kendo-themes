@@ -1,6 +1,6 @@
-@import "@progress/kendo-theme-default/scss/datepicker/_layout.scss";
+@use "@progress/kendo-theme-default/scss/datepicker/_layout.scss" as *;
 
 
-@mixin kendo-datepicker--layout() {
+@mixin kendo-date-picker--layout() {
     @include kendo-date-picker--layout-base();
 }

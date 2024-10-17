@@ -4,17 +4,22 @@
 @use "./_theme.scss" as *;
 
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../input/_index.scss" as *;
 @use "../floating-label/_index.scss" as *;
 @use "../icons/_index.scss" as *;
-@use "../button/_index.scss" as *;
+
 
 // Expose
-@mixin numerictextbox-styles() {
-    @include import-once( "numerictextbox" ) {
-        @include kendo-numerictextbox--layout();
-        @include kendo-numerictextbox--theme();
+@mixin kendo-numeric-textbox--styles() {
+    @include import-once( "numeric-textbox" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-icon--styles();
+        @include kendo-numeric-textbox--layout();
+        @include kendo-numeric-textbox--theme();
     }
 }

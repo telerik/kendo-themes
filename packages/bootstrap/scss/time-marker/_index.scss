@@ -3,12 +3,15 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 
+
 // Expose
-@mixin time-marker-styles() {
+@mixin kendo-time-marker--styles() {
     @include import-once( "time-marker" ) {
+        @include core-styles();
         @include kendo-time-marker--layout();
         @include kendo-time-marker--theme();
     }

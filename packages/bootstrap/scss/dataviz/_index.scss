@@ -13,6 +13,9 @@
 // Expose
 @mixin kendo-dataviz--styles() {
     @include import-once( "dataviz" ) {
+        @include core-styles();
+        @include kendo-popup--styles();
+        @include kendo-tooltip--styles();
         @include kendo-dataviz--layout();
         @include kendo-dataviz--theme();
     }

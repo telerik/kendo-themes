@@ -9,8 +9,9 @@
 
 
 // Expose
-@mixin draggable-styles() {
+@mixin kendo-draggable--styles() {
     @include import-once( "draggable" ) {
+        @include core-styles();
         @include kendo-draggable--layout();
         @include kendo-draggable--theme();
     }

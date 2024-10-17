@@ -4,6 +4,7 @@
 @use "./_theme.scss" as *;
 
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../input/_index.scss" as *;
@@ -20,8 +21,20 @@
 
 
 // Expose
-@mixin filemanager-styles() {
-    @include import-once( "filemanager" ) {
+@mixin kendo-file-manager--styles() {
+    @include import-once( "file-manager" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-upload--styles();
+        @include kendo-switch--styles();
+        @include kendo-menu--styles();
+        @include kendo-dialog--styles();
+        @include kendo-breadcrumb--styles();
+        @include kendo-treeview--styles();
+        @include kendo-splitter--styles();
+        @include kendo-grid--styles();
+        @include kendo-listview--styles();
         @include kendo-file-manager--layout();
         @include kendo-file-manager--theme();
     }

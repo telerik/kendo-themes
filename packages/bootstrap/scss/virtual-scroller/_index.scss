@@ -7,9 +7,11 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 
+
 // Expose
-@mixin virtual-scroller-styles() {
+@mixin kendo-virtual-scroller--styles() {
     @include import-once( "virtual-scroller" ) {
+        @include core-styles();
         @include kendo-virtual-scroller--layout();
         @include kendo-virtual-scroller--theme();
     }
