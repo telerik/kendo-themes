@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 /// Horizontal padding of the popup.
 /// @group popup
 $kendo-popup-padding-x: null !default;
@@ -36,4 +38,19 @@ $kendo-popup-text: $kendo-component-text !default;
 $kendo-popup-border: $kendo-component-border !default;
 /// Box shadow of the popup.
 /// @group popup
-$kendo-popup-shadow: $box-shadow-depth-4 !default;
+$kendo-popup-shadow: k-elevation(4) !default;
+
+@forward "@progress/kendo-theme-default/scss/popup/_variables.scss" with (
+    $kendo-popup-padding-x: $kendo-popup-padding-x,
+    $kendo-popup-padding-y: $kendo-popup-padding-y,
+    $kendo-popup-border-width: $kendo-popup-border-width,
+    $kendo-popup-border-radius: $kendo-popup-border-radius,
+    $kendo-popup-font-size: $kendo-popup-font-size,
+    $kendo-popup-line-height: $kendo-popup-line-height,
+    $kendo-popup-content-padding-x: $kendo-popup-content-padding-x,
+    $kendo-popup-content-padding-y: $kendo-popup-content-padding-y,
+    $kendo-popup-bg: $kendo-popup-bg,
+    $kendo-popup-text: $kendo-popup-text,
+    $kendo-popup-border: $kendo-popup-border,
+    $kendo-popup-shadow: $kendo-popup-shadow
+);

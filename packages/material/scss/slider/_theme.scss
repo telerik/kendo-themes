@@ -1,4 +1,6 @@
-@import "@progress/kendo-theme-default/scss/slider/_theme.scss";
+@use "./_variables.scss" as *;
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-default/scss/slider/_theme.scss" as *;
 
 
 @mixin kendo-slider--theme() {

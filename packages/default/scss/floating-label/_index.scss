@@ -6,14 +6,12 @@
 
 // Dependencies
 @use "../core/_index.scss" as *;
-@use "../input/_index.scss" as *;
 
 
 // Expose
 @mixin kendo-floating-label--styles() {
     @include import-once( "floating-label" ) {
         @include core-styles();
-        @include kendo-input--styles();
         @include kendo-floating-label--layout();
         @include kendo-floating-label--theme();
     }

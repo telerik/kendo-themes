@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/dropzone/_layout.scss";
+@use "@progress/kendo-theme-default/scss/dropzone/_layout.scss" as *;
 
 
 @mixin kendo-dropzone--layout() {

@@ -49,5 +49,3 @@ $_default-elevation: (
 /// The global default Elevation map.
 /// @group elevation
 $kendo-elevation: $_default-elevation !default;
-
-@import "@progress/kendo-theme-core/scss/elevation/index.import.scss";

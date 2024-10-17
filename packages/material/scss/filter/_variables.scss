@@ -1,8 +1,10 @@
+@use "../core/_index.scss" as *;
+
 // Filter expression builder
 
 /// The horizontal padding of the Filter.
 /// @group filter
-$kendo-filter-padding-x: $kendo-padding-sm-x !default;
+$kendo-filter-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Filter.
 /// @group filter
 $kendo-filter-padding-y: $kendo-filter-padding-x !default;
@@ -28,3 +30,14 @@ $kendo-filter-preview-operator-text: $kendo-subtle-text !default;
 /// The box shadow of the focused Filter toolbar.
 /// @group filter
 $kendo-filter-toolbar-focus-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
+
+@forward "@progress/kendo-theme-default/scss/filter/_variables.scss" with (
+    $kendo-filter-padding-x: $kendo-filter-padding-x,
+    $kendo-filter-padding-y: $kendo-filter-padding-y,
+    $kendo-filter-bottom-margin: $kendo-filter-bottom-margin,
+    $kendo-filter-line-size: $kendo-filter-line-size,
+    $kendo-filter-operator-dropdown-width: $kendo-filter-operator-dropdown-width,
+    $kendo-filter-preview-field-text: $kendo-filter-preview-field-text,
+    $kendo-filter-preview-operator-text: $kendo-filter-preview-operator-text,
+    $kendo-filter-toolbar-focus-shadow: $kendo-filter-toolbar-focus-shadow
+);
