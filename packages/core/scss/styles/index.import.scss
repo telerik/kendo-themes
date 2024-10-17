@@ -7,7 +7,6 @@
 @forward "./_selection.scss";
 @forward "./_scrollbar.scss";
 @forward "./_resizing.scss";
-@forward "./_colors.scss";
 @forward "./_utils-components.scss";
 
 @use "./_accessibility.scss" as *;
@@ -19,11 +18,9 @@
 @use "./_selection.scss" as *;
 @use "./_scrollbar.scss" as *;
 @use "./_resizing.scss" as *;
-@use "./_colors.scss" as *;
 @use "./_utils-components.scss" as *;
 
 @mixin kendo-core--styles() {
-    @include kendo-core--styles--colors();
     @include kendo-core--styles--accessibility();
     @include kendo-core--styles--animations();
     @include kendo-core--styles--asp-fallback();
