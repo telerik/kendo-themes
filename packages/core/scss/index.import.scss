@@ -1,17 +1,14 @@
 @forward "./_variables.scss";
-@forward "./color-system/index.import.scss";
 @forward "./functions/index.import.scss";
+@forward "./color-system/index.import.scss";
 @forward "./mixins/index.import.scss";
+@forward "./spacing/index.import.scss";
 @forward "./styles/index.import.scss";
 @forward "./elevation/index.import.scss";
 @forward "./typography/index.import.scss";
-@forward "./spacing/index.import.scss";
 @forward "./border-radii/index.import.scss";
 
-@use "./_variables.scss" as *;
 @use "./color-system/index.import.scss" as *;
-@use "./functions/index.import.scss" as *;
-@use "./mixins/index.import.scss" as *;
 @use "./styles/index.import.scss" as *;
 @use "./elevation/index.import.scss" as *;
 @use "./typography/index.import.scss" as *;
@@ -19,10 +16,10 @@
 @use "./border-radii/index.import.scss" as *;
 
 @mixin core-styles() {
-        @include kendo-core--styles();
-        @include color-system-styles();
-        @include kendo-spacing--styles();
-        @include kendo-elevation--styles();
-        @include kendo-core--typography--styles();
-        @include kendo-border-radius--styles();
+    @include kendo-color-system--styles();
+    @include kendo-core--styles();
+    @include kendo-spacing--styles();
+    @include kendo-elevation--styles();
+    @include kendo-core--typography--styles();
+    @include kendo-border-radius--styles();
 }

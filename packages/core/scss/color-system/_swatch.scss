@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "./_palettes.scss" as *;
+@use "../_variables.scss" as *;
 
 // Colors
 $_default-colors: (
@@ -176,11 +177,13 @@ $kendo-colors: $_default-colors !default;
 
 $kendo-colors: map.merge($_default-colors, $kendo-colors);
 
-@mixin color-system--styles() {
-    :root {
-        @each $key, $value in $kendo-colors {
-            @if($value) {
-                --kendo-color-#{$key}: #{$value};
+@mixin kendo-color-system--styles() {
+    @if ($kendo-enable-color-system) {
+        :root {
+            @each $key, $value in $kendo-colors {
+                @if($value) {
+                    --kendo-color-#{$key}: #{$value};
+                }
             }
         }
     }
