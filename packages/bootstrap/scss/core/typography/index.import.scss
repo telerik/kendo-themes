@@ -1,3 +1,20 @@
+// @use "sass:map";
+// @use "../color-system/_swatch.scss" as *;
+// @forward "@progress/kendo-theme-core/scss/typography/index.import.scss";
+// @import "../../_bootstrap-overrides.scss";
+
+// @use "@progress/kendo-theme-core/scss/typography/index.import.scss" as *;
+// @import "bootstrap/scss/_functions.scss";
+// @import "bootstrap/scss/_variables.scss";
+// @use "sass:map";
+// @use "../../core/_index.scss" as *;
+// @use "bootstrap/scss/bootstrap.scss" as *;
+
+ // @use "bootstrap/scss/_functions.scss" as *;
+
+// @use "bootstrap/scss/_variables.scss" as *;
+// @use "@progress/kendo-theme-core/scss/typography/index.import.scss" as *;
+@use "bootstrap/scss/bootstrap.scss" as *;
 
 /// The base font size across all components.
 /// @group typography
@@ -107,5 +124,4 @@ $kendo-font-weights: $_default-font-weights !default;
 /// @group typography
 $kendo-font-families: $_default-font-families !default;
 
-@import "@progress/kendo-theme-core/scss/typography/index.import.scss";
-
+// @forward "@progress/kendo-theme-core/scss/typography/index.import.scss";

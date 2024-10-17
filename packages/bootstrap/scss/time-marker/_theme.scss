@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/time-marker/_theme.scss";
+@use "./variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/time-marker/_theme.scss" as *;
 
 
 @mixin kendo-time-marker--theme() {

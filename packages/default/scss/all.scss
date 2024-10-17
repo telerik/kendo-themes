@@ -1,4 +1,6 @@
-@forward "./index.scss";
-@use "./index.scss" as *;
+// @forward "./index.scss";
+@use "./index.scss" as * with (
+    $kendo-enable-color-system: false
+);
 
 @include kendo-theme--styles();
