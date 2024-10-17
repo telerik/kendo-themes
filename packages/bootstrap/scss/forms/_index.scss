@@ -4,17 +4,21 @@
 @use "./_theme.scss" as *;
 
 
-// Dependencies
+// Dependencies // TODO: extract variables
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
 @use "../toolbar/_index.scss" as *;
 @use "../action-buttons/_index.scss" as *;
 
+
 // Expose
-@mixin forms-styles() {
-    @include import-once( "forms" ) {
-        @include kendo-forms--layout();
-        @include kendo-forms--theme();
+@mixin kendo-form--styles() {
+    @include import-once( "form" ) {
+        @include core-styles();
+        @include kendo-toolbar--styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-form--layout();
+        @include kendo-form--theme();
         @include kendo-utils--layout--display();
         @include kendo-utils--flex-grid--gap();
         @include kendo-utils--flex-grid--grid-template-columns();

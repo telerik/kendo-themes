@@ -14,8 +14,14 @@
 
 
 // Expose
-@mixin imageeditor-styles() {
-    @include import-once( "imageeditor" ) {
+@mixin kendo-image-editor--styles() {
+    @include import-once( "image-editor" ) {
+        @include core-styles();
+        @include kendo-toolbar--styles();
+        @include kendo-form--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-numeric-textbox--styles();
+        @include kendo-checkbox--styles();
         @include kendo-image-editor--layout();
         @include kendo-image-editor--theme();
     }

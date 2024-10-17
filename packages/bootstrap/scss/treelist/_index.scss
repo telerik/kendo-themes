@@ -3,14 +3,19 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../grid/_index.scss" as *;
 @use "../icons/_index.scss" as *;
 
+
 // Expose
-@mixin treelist-styles() {
+@mixin kendo-treelist--styles() {
     @include import-once( "treelist" ) {
+        @include core-styles();
+        @include kendo-grid--styles();
+        @include kendo-icon--styles();
         @include kendo-treelist--layout();
         @include kendo-treelist--theme();
     }

@@ -11,9 +11,14 @@
 @use "../button/_index.scss" as *;
 @use "../badge/_index.scss" as *;
 
+
 // Expose
-@mixin fab-styles() {
+@mixin kendo-fab--styles() {
     @include import-once( "fab" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
+        @include kendo-badge--styles();
         @include kendo-fab--layout();
         @include kendo-fab--theme();
         @include kendo-utils--layout--position();

@@ -38,3 +38,19 @@ $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, bord
 // Generic styles
 
 // TODO: refactor once we extract drag drop as separate module
+
+
+/* @forward "@progress/kendo-theme-default/scss/scss/_variables.scss" with (
+    // $kendo-enable-shadows: $kendo-enable-shadows,
+    $kendo-enable-gradients: $kendo-enable-gradients,
+    $kendo-enable-transitions: $kendo-enable-transitions,
+    $kendo-enable-focus-contrast: $kendo-enable-focus-contrast,
+    $kendo-enable-typography: $kendo-enable-typography,
+    $kendo-use-input-button-width: $kendo-use-input-button-width,
+    $kendo-use-input-spinner-width: $kendo-use-input-spinner-width,
+    $kendo-use-input-spinner-icon-offset: $kendo-use-input-spinner-icon-offset,
+    $kendo-zindex-popup: $kendo-zindex-popup,
+    $kendo-zindex-window: $kendo-zindex-window,
+    $kendo-focus-shadow: $kendo-focus-shadow,
+    $kendo-transition: $kendo-transition
+); */

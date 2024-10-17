@@ -11,9 +11,15 @@
 @use "../list/_index.scss" as *;
 @use "../icons/_index.scss" as *;
 
+
 // Expose
-@mixin listbox-styles() {
+@mixin kendo-listbox--styles() {
     @include import-once( "listbox" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-icon--styles();
         @include kendo-listbox--layout();
         @include kendo-listbox--theme();
     }

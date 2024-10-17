@@ -13,8 +13,12 @@
 
 
 // Expose
-@mixin calendar-styles() {
+@mixin kendo-calendar--styles() {
     @include import-once( "calendar" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-icon--styles();
+        @include kendo-list--styles();
         @include kendo-calendar--layout();
         @include kendo-calendar--theme();
         @include kendo-utils--flex-grid--align-items();

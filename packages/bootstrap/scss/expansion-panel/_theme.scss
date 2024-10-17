@@ -1,8 +1,8 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@import "@progress/kendo-theme-default/scss/expansion-panel/_theme.scss";
+@use "@progress/kendo-theme-default/scss/expansion-panel/_theme.scss" as *;
 
 
-@mixin kendo-expansion-panel--theme() {
+@mixin kendo-expander--theme() {
     @include kendo-expander--theme-base();
 }

@@ -4,6 +4,7 @@
 @use "./_theme.scss" as *;
 
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
@@ -12,8 +13,11 @@
 
 
 // Expose
-@mixin breadcrumb-styles() {
+@mixin kendo-breadcrumb--styles() {
     @include import-once( "breadcrumb" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-icon--styles();
         @include kendo-breadcrumb--layout();
         @include kendo-breadcrumb--theme();
         @include kendo-utils--flex-grid--flex();

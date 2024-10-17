@@ -1,10 +1,11 @@
 @use "../core/_index.scss" as *;
-@use "../core/spacing/_index.scss" as *;
+// @use "../core/spacing/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../list/_variables.scss" as *;
 @use "../menu/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
-@import "@progress/kendo-theme-default/scss/spreadsheet/_layout.scss";
+@use "@progress/kendo-theme-default/scss/spreadsheet/_layout.scss" as *;
+@use "bootstrap/scss/bootstrap.scss" as *;
 
 @mixin kendo-spreadsheet--layout() {
 

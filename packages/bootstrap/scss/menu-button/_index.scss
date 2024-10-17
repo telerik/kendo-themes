@@ -11,8 +11,11 @@
 
 
 // Expose
-@mixin menu-button-styles() {
+@mixin kendo-menu-button--styles() {
     @include import-once( "menu-button" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-menu--styles();
         @include kendo-menu-button--layout();
         @include kendo-menu-button--theme();
     }

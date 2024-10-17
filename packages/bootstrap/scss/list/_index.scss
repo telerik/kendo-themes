@@ -1,13 +1,3 @@
-// Module meta
-$_kendo-module-meta: (
-    name: "list",
-    dependencies: (
-        "checkbox",
-        "icon",
-        "no-data"
-    )
-);
-
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
@@ -20,8 +10,10 @@ $_kendo-module-meta: (
 
 
 // Expose
-@mixin list-styles() {
+@mixin kendo-list--styles() {
     @include import-once( "list" ) {
+        @include core-styles();
+        @include kendo-checkbox--styles();
         @include kendo-list--layout();
         @include kendo-list--theme();
     }

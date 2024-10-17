@@ -16,9 +16,17 @@
 
 
 // Expose
-@mixin datetimepicker-styles() {
-    @include import-once( "datetimepicker" ) {
-        @include kendo-datetimepicker--layout();
-        @include kendo-datetimepicker--theme();
+@mixin kendo-date-time-picker--styles() {
+    @include import-once( "date-time-picker" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-button--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-calendar--styles();
+        @include kendo-time-selector--styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-date-time-picker--layout();
+        @include kendo-date-time-picker--theme();
     }
 }

@@ -15,9 +15,19 @@
 @use "../upload/_index.scss" as *;
 @use "../window/_index.scss" as *;
 
+
 // Expose
-@mixin editor-styles() {
+@mixin kendo-editor--styles() {
     @include import-once( "editor" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-checkbox--styles();
+        @include kendo-color-picker--styles();
+        @include kendo-combobox--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-upload--styles();
+        @include kendo-window--styles();
         @include kendo-editor--layout();
         @include kendo-editor--theme();
     }

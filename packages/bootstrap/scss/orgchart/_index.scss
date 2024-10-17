@@ -3,6 +3,7 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
@@ -15,9 +16,19 @@
 @use "../card/_index.scss" as *;
 @use "../window/_index.scss" as *;
 
+
 // Expose
-@mixin orgchart-styles() {
+@mixin kendo-orgchart--styles() {
     @include import-once( "orgchart" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-form--styles();
+        @include kendo-textbox--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-upload--styles();
+        @include kendo-menu--styles();
+        @include kendo-card--styles();
+        @include kendo-window--styles();
         @include kendo-orgchart--layout();
         @include kendo-orgchart--theme();
         @include kendo-utils--layout--overflow();

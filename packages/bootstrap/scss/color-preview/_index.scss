@@ -6,15 +6,12 @@
 
 // Dependencies
 @use "../core/_index.scss" as *;
-@use "../action-buttons/_index.scss" as *;
-@use "../color-preview/_index.scss" as *;
-@use "../colorpalette/_index.scss" as *;
-@use "../colorgradient/_index.scss" as *;
 
 
 // Expose
-@mixin color-preview-styles() {
+@mixin kendo-color-preview--styles() {
     @include import-once( "color-preview" ) {
+        @include core-styles();
         @include kendo-color-preview--layout();
         @include kendo-color-preview--theme();
     }

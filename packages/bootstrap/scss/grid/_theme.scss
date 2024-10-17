@@ -1,4 +1,8 @@
-@import "@progress/kendo-theme-default/scss/grid/_theme.scss";
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../popup/_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/grid/_theme.scss" as *;
 
 
 @mixin kendo-grid--theme() {

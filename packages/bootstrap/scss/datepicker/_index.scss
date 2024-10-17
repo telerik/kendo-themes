@@ -12,8 +12,12 @@
 
 
 // Expose
-@mixin datepicker-styles() {
-    @include import-once( "datepicker" ) {
+@mixin kendo-date-picker--styles() {
+    @include import-once( "date-picker" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-popup--styles();
+        @include kendo-calendar--styles();
         @include kendo-date-picker--layout();
         @include kendo-date-picker--theme();
     }

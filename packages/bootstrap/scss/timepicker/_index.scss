@@ -3,6 +3,7 @@
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 
+
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../input/_index.scss" as *;
@@ -11,10 +12,17 @@
 @use "../list/_index.scss" as *;
 @use "../timeselector/_index.scss" as *;
 
+
 // Expose
-@mixin timepicker-styles() {
-    @include import-once( "timepicker" ) {
-        @include kendo-timepicker--layout();
-        @include kendo-timepicker--theme();
+@mixin kendo-time-picker--styles() {
+    @include import-once( "time-picker" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-button--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-time-selector--styles();
+        @include kendo-time-picker--layout();
+        @include kendo-time-picker--theme();
     }
 }
