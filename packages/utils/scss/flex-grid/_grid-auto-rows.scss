@@ -22,15 +22,17 @@
 /// @group grid-auto-rows
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-grid-auto-rows"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--grid-auto-rows() {
-    @include module-render("utils-flex-grid-grid-auto-rows") {
+    @include import-once("utils-flex-grid-grid-auto-rows") {
 
         // Grid auto rows utility classes
-        $kendo-utils-grid-auto-rows: k-map-get( $kendo-utils, "grid-auto-rows" ) !default;
+        $kendo-utils-grid-auto-rows: map.get( $kendo-utils, "grid-auto-rows" ) !default;
         @include generate-utils( grid-auto-rows, grid-auto-rows, $kendo-utils-grid-auto-rows );
 
     }

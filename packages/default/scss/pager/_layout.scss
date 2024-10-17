@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-pager--layout-base() {
 
     .k-pager {
@@ -147,11 +151,11 @@
 
     // Pager sizes
     @each $size, $size-props in $kendo-pager-sizes {
-        $_padding-x: k-map-get($size-props, padding-x);
-        $_padding-y: k-map-get($size-props, padding-y);
-        $_item-group-spacing: k-map-get($size-props, item-group-spacing);
-        $_item-min-width: k-map-get($size-props, item-min-width);
-        $_pager-dropdown-width: k-map-get($size-props, pager-dropdown-width);
+        $_padding-x: map.get($size-props, padding-x);
+        $_padding-y: map.get($size-props, padding-y);
+        $_item-group-spacing: map.get($size-props, item-group-spacing);
+        $_item-min-width: map.get($size-props, item-min-width);
+        $_pager-dropdown-width: map.get($size-props, pager-dropdown-width);
 
         .k-pager-#{$size} {
             padding-inline: $_padding-x;

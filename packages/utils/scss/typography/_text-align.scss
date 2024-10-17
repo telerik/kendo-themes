@@ -22,15 +22,17 @@
 /// @group text-align
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-typography-text-align"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--typography--text-align() {
-    @include module-render("utils-typography-text-align") {
+    @include import-once("utils-typography-text-align") {
 
         // Text align utility classes
-        $kendo-utils-text-align: k-map-get( $kendo-utils, "text-align" ) !default;
+        $kendo-utils-text-align: map.get( $kendo-utils, "text-align" ) !default;
 
         @include generate-utils( text, text-align, $kendo-utils-text-align );
 

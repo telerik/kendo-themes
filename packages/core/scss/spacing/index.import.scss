@@ -1,4 +1,5 @@
-@import "../functions/index.import.scss";
+@use "sass:map";
+@use "../functions/_string.import.scss" as *;
 
 $_default-spacing: (
     0: 0px,
@@ -47,11 +48,11 @@ $_default-spacing: (
 /// @group spacing
 $kendo-spacing: $_default-spacing !default;
 
-$kendo-spacing: k-map-merge($_default-spacing, $kendo-spacing);
+$kendo-spacing: map.merge($_default-spacing, $kendo-spacing);
 
 
 @function k-spacing($step) {
-    $spacing: k-map-get($kendo-spacing, $step);
+    $spacing: map.get($kendo-spacing, $step);
     $_step: k-escape-class-name( $step );
     @return var(--kendo-spacing-#{$_step}, #{$spacing});
 }
@@ -66,7 +67,7 @@ $kendo-spacing: k-map-merge($_default-spacing, $kendo-spacing);
     }
 }
 
-$kendo-sizing: k-map-merge( $kendo-spacing, (
+$kendo-sizing: map.merge( $kendo-spacing, (
     "auto": auto,
     "1/2": 50%,
     "1/3": 33.333333%,

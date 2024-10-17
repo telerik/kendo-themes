@@ -88,15 +88,17 @@
 /// @group overflow
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-overflow"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--overflow() {
-    @include module-render("utils-layout-overflow") {
+    @include import-once("utils-layout-overflow") {
 
         // Overflow utility classes
-        $kendo-utils-overflow: k-map-get( $kendo-utils, "overflow" ) !default;
+        $kendo-utils-overflow: map.get( $kendo-utils, "overflow" ) !default;
         @include generate-utils( overflow, overflow, $kendo-utils-overflow );
         @include generate-utils( overflow-x, overflow-x, $kendo-utils-overflow );
         @include generate-utils( overflow-y, overflow-y, $kendo-utils-overflow );

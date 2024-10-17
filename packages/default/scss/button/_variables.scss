@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // Button
 
 /// The width of the border around the Button.
@@ -103,7 +107,7 @@ $kendo-button-sizes: (
 
 /// The theme colors map for the Button.
 /// @group button
-$kendo-button-theme-colors: k-map-merge(
+$kendo-button-theme-colors: map.merge(
     $kendo-theme-colors,
     ( "base": if($kendo-enable-color-system, k-color( base ), #f5f5f5) )
 ) !default;

@@ -76,15 +76,17 @@
 /// @group justify-content
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-flex-grid-justify-content"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--flex-grid--justify-content() {
-    @include module-render("utils-flex-grid-justify-content") {
+    @include import-once("utils-flex-grid-justify-content") {
 
         // Justify content utility classes
-        $kendo-utils-justify-content: k-map-get( $kendo-utils, "justify-content" ) !default;
+        $kendo-utils-justify-content: map.get( $kendo-utils, "justify-content" ) !default;
         @include generate-utils( justify-content, justify-content, $kendo-utils-justify-content );
 
 

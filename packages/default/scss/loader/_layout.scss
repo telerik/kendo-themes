@@ -1,3 +1,6 @@
+@use "./_variables.scss" as *;
+@use "../overlay/_variables.scss" as *;
+
 @mixin kendo-loader--layout-base() {
 
     .k-loader {

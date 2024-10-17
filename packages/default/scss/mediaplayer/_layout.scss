@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-media-player--layout-base() {
 
     // Base
@@ -64,7 +68,7 @@
     }
     .k-mediaplayer-volume-wrap {
         // TODO: When slider draghandle size is exposed, use it instead
-        padding: 0 k-math-div( 14px, 2 );
+        padding: 0 math.div( 14px, 2 );
         align-items: center;
     }
     .k-mediaplayer-volume {

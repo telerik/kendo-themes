@@ -1,3 +1,11 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../core/spacing/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../window/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
+
 @mixin kendo-editor--layout-base() {
 
     // Base
@@ -280,8 +288,8 @@
     // Insert table
     .k-ct-popup {
         box-sizing: border-box;
-        width: $ct-cell-size * 10 - k-math-div( $ct-cell-size, 2 );
-        padding: k-math-div( $ct-cell-size, 4 );
+        width: $ct-cell-size * 10 - math.div( $ct-cell-size, 2 );
+        padding: math.div( $ct-cell-size, 4 );
 
         .k-button {
             width: 100%;
