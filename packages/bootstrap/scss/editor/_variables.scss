@@ -1,3 +1,7 @@
+// @use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../input/_variables.scss" as *;
+
 // Editor
 
 /// The width of the border around the Еditor.
@@ -54,3 +58,23 @@ $kendo-editor-selectednode-outline-width: 2px !default;
 /// The outline color of the Editor's selected node.
 /// @group editor
 $kendo-editor-selectednode-outline-color: #88ccff !default;
+
+
+@forward "@progress/kendo-theme-default/scss/editor/_variables.scss" with (
+    $kendo-editor-border-width: $kendo-editor-border-width,
+    $kendo-editor-font-family: $kendo-editor-font-family,
+    $kendo-editor-font-size: $kendo-editor-font-size,
+    $kendo-editor-line-height: $kendo-editor-line-height,
+    $kendo-editor-placeholder-text: $kendo-editor-placeholder-text,
+    $kendo-editor-placeholder-opacity: $kendo-editor-placeholder-opacity,
+    $kendo-editor-selected-text: $kendo-editor-selected-text,
+    $kendo-editor-selected-bg: $kendo-editor-selected-bg,
+    $kendo-editor-highlighted-bg: $kendo-editor-highlighted-bg,
+    $kendo-editor-export-tool-icon-margin-x: $kendo-editor-export-tool-icon-margin-x,
+    $kendo-editor-resize-handle-size: $kendo-editor-resize-handle-size,
+    $kendo-editor-resize-handle-border-width: $kendo-editor-resize-handle-border-width,
+    $kendo-editor-resize-handle-border: $kendo-editor-resize-handle-border,
+    $kendo-editor-resize-handle-bg: $kendo-editor-resize-handle-bg,
+    $kendo-editor-selectednode-outline-width: $kendo-editor-selectednode-outline-width,
+    $kendo-editor-selectednode-outline-color: $kendo-editor-selectednode-outline-color
+);

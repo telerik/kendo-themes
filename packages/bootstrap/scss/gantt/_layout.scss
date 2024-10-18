@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/gantt/_layout.scss";
+@use "@progress/kendo-theme-default/scss/gantt/_layout.scss" as *;
 
 
 @mixin kendo-gantt--layout() {

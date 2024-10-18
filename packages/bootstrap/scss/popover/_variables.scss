@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../card/_variables.scss" as *;
+
 // Popover
 
 /// The width of the border around the Popover.
@@ -83,3 +86,33 @@ $kendo-popover-callout-bg: $kendo-popover-bg !default;
 /// The border color of the Popover callout.
 /// @group popover
 $kendo-popover-callout-border: $kendo-popover-border !default;
+
+
+@forward "@progress/kendo-theme-default/scss/popover/_variables.scss" with (
+    $kendo-popover-border-width: $kendo-popover-border-width,
+    $kendo-popover-border-style: $kendo-popover-border-style,
+    $kendo-popover-border-radius: $kendo-popover-border-radius,
+    $kendo-popover-font-family: $kendo-popover-font-family,
+    $kendo-popover-font-size: $kendo-popover-font-size,
+    $kendo-popover-line-height: $kendo-popover-line-height,
+    $kendo-popover-text: $kendo-popover-text,
+    $kendo-popover-bg: $kendo-popover-bg,
+    $kendo-popover-border: $kendo-popover-border,
+    $kendo-popover-shadow: $kendo-popover-shadow,
+    $kendo-popover-header-padding-x: $kendo-popover-header-padding-x,
+    $kendo-popover-header-padding-y: $kendo-popover-header-padding-y,
+    $kendo-popover-header-border-width: $kendo-popover-header-border-width,
+    $kendo-popover-header-border-style: $kendo-popover-header-border-style,
+    $kendo-popover-header-text: $kendo-popover-header-text,
+    $kendo-popover-header-bg: $kendo-popover-header-bg,
+    $kendo-popover-header-border: $kendo-popover-header-border,
+    $kendo-popover-body-padding-x: $kendo-popover-body-padding-x,
+    $kendo-popover-body-padding-y: $kendo-popover-body-padding-y,
+    $kendo-popover-actions-border-width: $kendo-popover-actions-border-width,
+    $kendo-popover-callout-width: $kendo-popover-callout-width,
+    $kendo-popover-callout-height: $kendo-popover-callout-height,
+    $kendo-popover-callout-border-width: $kendo-popover-callout-border-width,
+    $kendo-popover-callout-border-style: $kendo-popover-callout-border-style,
+    $kendo-popover-callout-bg: $kendo-popover-callout-bg,
+    $kendo-popover-callout-border: $kendo-popover-callout-border
+);

@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/timeline/_layout.scss";
+@use "../card/_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/timeline/_layout.scss" as *;
 
 
 @mixin kendo-timeline--layout() {

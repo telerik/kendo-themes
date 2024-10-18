@@ -1,37 +1,94 @@
-$wcag-min-contrast-ratio: 4.5 !default;
+// $wcag-min-contrast-ratio: 4.5 !default;
 
 // Color System
-@import "./color-system/_swatch.scss";
-
-@import "./typography/index.import.scss";
-
-// Variables
-@import "../_variables.scss";
+@use "./color-system/_swatch.scss" as *;
 
 // Elevation
-@import "./elevation/index.import.scss";
+@use "./elevation/index.import.scss" as *;
+
+// Typography
+@use "./typography/index.import.scss" as *;
 
 // Spacing
-@import "./spacing/index.import.scss";
+@use "./spacing/index.import.scss" as *;
 
 // Radii
-@import "./border-radii/index.import.scss";
+@use "./border-radii/index.import.scss" as *;
 
-@import "@progress/kendo-theme-core/scss/index.import.scss";
+@forward "../_variables.scss";
 
-// Backward compatibility
-@import "./color-system/_swatch-legacy.scss";
-
-// Expose
-@include exports("kendo-core-styles") {
-    @include kendo-core--styles();
-
-    // Elevation System
-    @include kendo-elevation--styles();
+// Variables
+@forward "@progress/kendo-theme-core/scss/index.import.scss" with (
+    // Elevation
+    $kendo-elevation: $kendo-elevation !default,
     // Typography
-    @include kendo-core--typography--styles();
-    // Spacing
-    @include kendo-spacing--styles();
-    // Radii
-    @include kendo-border-radius--styles();
-}
+    $kendo-font-size: $kendo-font-size !default,
+    $kendo-font-sizes: $kendo-font-sizes !default,
+    $kendo-line-height: $kendo-line-height !default,
+    $kendo-line-heights: $kendo-line-heights !default,
+    // $kendo-letter-spacings: $kendo-letter-spacings !default,
+    $kendo-font-weights: $kendo-font-weights !default,
+    $kendo-font-family: $kendo-font-family !default,
+    $kendo-font-families: $kendo-font-families !default,
+    // Border Radii
+    $kendo-border-radii: $kendo-border-radii !default,
+    // Color System New
+    $kendo-colors: $kendo-colors !default,
+    // Color System Switch
+    $kendo-enable-color-system: $kendo-enable-color-system !default,
+    // Color System Old
+    $kendo-theme-colors: $kendo-theme-colors !default,
+    $kendo-color-primary: $kendo-color-primary !default,
+    $kendo-color-primary-contrast: $kendo-color-primary-contrast !default,
+    $kendo-color-secondary: $kendo-color-secondary !default,
+    $kendo-color-tertiary: $kendo-color-tertiary !default,
+    $kendo-color-info: $kendo-color-info !default,
+    $kendo-color-success: $kendo-color-success !default,
+    $kendo-color-warning: $kendo-color-warning !default,
+    $kendo-color-error: $kendo-color-error !default,
+    $kendo-color-dark: $kendo-color-dark !default,
+    $kendo-color-light: $kendo-color-light !default,
+    $kendo-color-inverse: $kendo-color-inverse !default,
+    $kendo-body-bg: $kendo-body-bg !default,
+    $kendo-body-text: $kendo-body-text !default,
+    $kendo-subtle-text: $kendo-subtle-text !default,
+    $kendo-app-bg: $kendo-app-bg !default,
+    $kendo-app-text: $kendo-app-text !default,
+    $kendo-app-border: $kendo-app-border !default,
+    $kendo-link-text: $kendo-link-text !default,
+    $kendo-link-hover-text: $kendo-link-hover-text !default,
+    $kendo-component-bg: $kendo-component-bg !default,
+    $kendo-component-text: $kendo-component-text !default,
+    $kendo-component-border: $kendo-component-border !default,
+    $kendo-base-bg: $kendo-base-bg !default,
+    $kendo-base-text: $kendo-base-text !default,
+    $kendo-base-border: $kendo-base-border !default,
+    $kendo-base-gradient: $kendo-base-gradient !default,
+    $kendo-hover-bg: $kendo-hover-bg !default,
+    $kendo-hover-text: $kendo-hover-text !default,
+    $kendo-hover-border: $kendo-hover-border !default,
+    $kendo-hover-gradient: $kendo-hover-gradient !default,
+    $kendo-selected-bg: $kendo-selected-bg !default,
+    $kendo-selected-text: $kendo-selected-text !default,
+    $kendo-selected-border: $kendo-selected-border !default,
+    $kendo-selected-gradient: $kendo-selected-gradient !default,
+    $kendo-selected-hover-bg: $kendo-selected-hover-bg !default,
+    $kendo-selected-hover-text: $kendo-selected-hover-text !default,
+    /* $kendo-disabled-text: $kendo-disabled-text !default,
+    $kendo-disabled-bg: $kendo-disabled-bg !default,
+    $kendo-disabled-border: $kendo-disabled-border !default,
+    $kendo-disabled-opacity: $kendo-disabled-opacity !default,
+    $kendo-disabled-filter: $kendo-disabled-filter !default, */
+    $kendo-component-header-bg: $kendo-component-header-bg !default,
+    $kendo-component-header-text: $kendo-component-header-text !default,
+    $kendo-component-header-border: $kendo-component-header-border !default,
+    $kendo-component-header-gradient: $kendo-component-header-gradient !default,
+    $kendo-invalid-bg: $kendo-invalid-bg !default,
+    $kendo-invalid-text: $kendo-invalid-text !default,
+    $kendo-invalid-border: $kendo-invalid-border !default,
+    $kendo-invalid-shadow: $kendo-invalid-shadow !default
+
+);
+
+@forward "./color-system/_swatch-legacy.scss";
+

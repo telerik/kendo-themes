@@ -1,4 +1,7 @@
-@import "@progress/kendo-theme-default/scss/dialog/_layout.scss";
+// @use "../core/_index.scss" as *;
+// @use "./_variables.scss" as *;
+// @use "../window/_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/dialog/_layout.scss" as *;
 
 
 @mixin kendo-dialog--layout() {

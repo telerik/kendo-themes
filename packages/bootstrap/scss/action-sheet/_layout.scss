@@ -1,4 +1,6 @@
-@import "@progress/kendo-theme-default/scss/action-sheet/_layout.scss";
+// @use "../_variables.scss" as *;
+// @use "./_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/action-sheet/_layout.scss" as *;
 
 
 @mixin kendo-action-sheet--layout() {

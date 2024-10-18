@@ -39,12 +39,14 @@ jobs:
         run: |
           npm run sass --prefix packages/core
           npm run sass --prefix packages/default
+          npm run sass --prefix packages/bootstrap
           npm run sass --prefix packages/utils
 
       - name: Pack themes
         run: |
           tar -cf themes.tar \
             packages/default/dist/all.css \
+            packages/bootstrap/dist/all.css \
             packages/utils/dist/all.css
 
       - name: Upload themes

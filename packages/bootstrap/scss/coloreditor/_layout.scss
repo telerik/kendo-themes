@@ -1,4 +1,7 @@
-@import "@progress/kendo-theme-default/scss/coloreditor/_layout.scss";
+// @use "../core/_index.scss" as *;
+// @use "./_variables.scss" as *;
+// @use "../colorpalette/_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/coloreditor/_layout.scss" as *;
 
 
 @mixin kendo-color-editor--layout() {

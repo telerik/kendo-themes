@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Splitter
 
 /// The width of the border around the Splitter.
@@ -62,3 +64,26 @@ $kendo-splitbar-selected-bg: $kendo-selected-bg !default;
 /// The selected text color of the Splitter split bar.
 /// @group splitter
 $kendo-splitbar-selected-text: $kendo-selected-text !default;
+
+
+@forward "@progress/kendo-theme-default/scss/splitter/_variables.scss" with (
+    $kendo-splitter-border-width: $kendo-splitter-border-width,
+    $kendo-splitter-font-family: $kendo-splitter-font-family,
+    $kendo-splitter-font-size: $kendo-splitter-font-size,
+    $kendo-splitter-line-height: $kendo-splitter-line-height,
+    $kendo-splitter-bg: $kendo-splitter-bg,
+    $kendo-splitter-text: $kendo-splitter-text,
+    $kendo-splitter-border: $kendo-splitter-border,
+    $kendo-splitter-splitbar-size: $kendo-splitter-splitbar-size,
+    $kendo-splitter-drag-handle-length: $kendo-splitter-drag-handle-length,
+    $kendo-splitter-drag-handle-thickness: $kendo-splitter-drag-handle-thickness,
+    $kendo-splitter-drag-icon-margin: $kendo-splitter-drag-icon-margin,
+    $kendo-splitter-collapse-icon-padding-x: $kendo-splitter-collapse-icon-padding-x,
+    $kendo-splitter-collapse-icon-padding-y: $kendo-splitter-collapse-icon-padding-y,
+    $kendo-splitbar-bg: $kendo-splitbar-bg,
+    $kendo-splitbar-text: $kendo-splitbar-text,
+    $kendo-splitbar-hover-bg: $kendo-splitbar-hover-bg,
+    $kendo-splitbar-hover-text: $kendo-splitbar-hover-text,
+    $kendo-splitbar-selected-bg: $kendo-splitbar-selected-bg,
+    $kendo-splitbar-selected-text: $kendo-splitbar-selected-text
+);

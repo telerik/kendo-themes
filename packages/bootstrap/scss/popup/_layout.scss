@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/popup/_layout.scss";
+@use "@progress/kendo-theme-default/scss/popup/_layout.scss" as *;
 
 @mixin kendo-popup--layout() {
 
