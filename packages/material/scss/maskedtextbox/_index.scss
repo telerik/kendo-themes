@@ -1,42 +1,22 @@
-@import "../core/_index.scss";
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "masked-textbox",
-    dependencies: (
-        "icon",
-        "input",
-        "floating-label"
-    )
-);
-
-
 // Dependencies
-@import "../input/_index.scss";
-@import "../floating-label/_index.scss";
-@import "../icons/_index.scss";
-
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../floating-label/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-masked-textbox--styles() {
-    @include module-render( "masked-textbox" ) {
+    @include import-once( "masked-textbox" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-icon--styles();
         @include kendo-masked-textbox--layout();
         @include kendo-masked-textbox--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-masked-textbox--styles();
 }

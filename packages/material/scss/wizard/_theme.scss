@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/wizard/_theme.scss";
+@use "@progress/kendo-theme-default/scss/wizard/_theme.scss" as *;
 
 
 @mixin kendo-wizard--theme() {

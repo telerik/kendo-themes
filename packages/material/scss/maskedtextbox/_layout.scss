@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/maskedtextbox/_layout.scss";
+@use "@progress/kendo-theme-default/scss/maskedtextbox/_layout.scss" as *;
 
 
 @mixin kendo-masked-textbox--layout() {
