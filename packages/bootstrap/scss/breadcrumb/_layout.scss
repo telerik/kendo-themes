@@ -1,8 +1,4 @@
-@use "../_variables.scss" as *;
-@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-default/scss/breadcrumb/_layout.scss" as *;
-// @use "bootstrap/scss/bootstrap.scss" as *;
-
 @use "../_bootstrap_vars.scss" as *;
 
 @mixin kendo-breadcrumb--layout() {

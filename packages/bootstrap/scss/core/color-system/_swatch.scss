@@ -9,6 +9,7 @@
 // @use "@progress/kendo-theme-core/scss/color-system/_constants.scss" as *;
 @use "./_palettes.scss" as *;
 @use "../functions/index.import.scss" as *;
+
 @import "../../_bootstrap-overrides.scss";
 @import "bootstrap/scss/_functions.scss";
 @import "bootstrap/scss/_variables.scss";

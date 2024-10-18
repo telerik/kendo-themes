@@ -1,4 +1,4 @@
-@use "sass:map";
+@use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
 // @use "bootstrap/scss/bootstrap.scss" as *;
@@ -66,7 +66,7 @@ $kendo-input-lg-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-input-line-height: $input-line-height !default;
 /// The line height of the small Input components.
 /// @group input
-$kendo-input-sm-line-height: k-math-div( 20, 14 ) !default;
+$kendo-input-sm-line-height: math.div( 20, 14 ) !default;
 /// The line height of the medium Input components.
 /// @group input
 $kendo-input-md-line-height: var( --kendo-line-height, normal) !default;

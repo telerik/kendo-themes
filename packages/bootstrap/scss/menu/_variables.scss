@@ -1,8 +1,8 @@
-@use "sass:map";
+@use "sass:list";
 @use "../core/_index.scss" as *;
-@use "../list/_variables.scss" as *;
 @use "../popup/_variables.scss" as *;
-@use "../icon/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
 
 // Menu
 
@@ -221,9 +221,9 @@ $kendo-menu-popup-lg-item-icon-margin-start: $kendo-menu-popup-lg-item-padding-x
 
 /// The end margin of the Menu item expand icon.
 /// @group menu
-$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) ) !default;
-$kendo-menu-popup-md-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-md-item-padding-end} - #{k-math-div( $kendo-menu-popup-md-item-padding-x, 2 )}) ) !default;
-$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-item-padding-end} - #{k-math-div( $kendo-menu-popup-lg-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{list.slash( $kendo-menu-popup-sm-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-md-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-md-item-padding-end} - #{list.slash( $kendo-menu-popup-md-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-item-padding-end} - #{list.slash( $kendo-menu-popup-lg-item-padding-x, 2 )}) ) !default;
 
 /// The spacing between the Menu items in popup.
 /// @group menu
@@ -304,7 +304,7 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-item-selected-text: $kendo-menu-item-selected-text,
     $kendo-menu-item-selected-border: $kendo-menu-item-selected-border,
     $kendo-menu-item-selected-gradient: $kendo-menu-item-selected-gradient,
-    // $kendo-menu-scroll-button-bg: $kendo-menu-scroll-button-bg,
+    $kendo-menu-scroll-button-bg: $kendo-menu-scroll-button-bg,
     $kendo-menu-scroll-button-text: $kendo-menu-scroll-button-text,
     $kendo-menu-scroll-button-border: $kendo-menu-scroll-button-border,
     $kendo-menu-scroll-button-gradient: $kendo-menu-scroll-button-gradient,
@@ -312,8 +312,8 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-scroll-button-hover-text: $kendo-menu-scroll-button-hover-text,
     $kendo-menu-scroll-button-hover-border: $kendo-menu-scroll-button-hover-border,
     $kendo-menu-scroll-button-hover-gradient: $kendo-menu-scroll-button-hover-gradient,
-    // $kendo-menu-separator-margin-inline: $kendo-menu-separator-margin-inline,
-    // $kendo-menu-separator-margin-block: $kendo-menu-separator-margin-block,
+    $kendo-menu-separator-margin-inline: $kendo-menu-separator-margin-inline,
+    $kendo-menu-separator-margin-block: $kendo-menu-separator-margin-block,
     $kendo-menu-separator-border: $kendo-menu-separator-border,
     $kendo-menu-popup-padding-x: $kendo-menu-popup-padding-x,
     $kendo-menu-popup-padding-y: $kendo-menu-popup-padding-y,

@@ -1,4 +1,4 @@
-// @use "sass:map";
+@use "sass:math";
 @use "../core/_index.scss" as *;
 
 // List
@@ -17,7 +17,7 @@ $kendo-list-lg-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the List component, if no size is set.
 /// @group list
 $kendo-list-line-height: null !default;
-$kendo-list-sm-line-height: k-math-div( 20, 14 ) !default;
+$kendo-list-sm-line-height: math.div( 20, 14 ) !default;
 $kendo-list-md-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-lg-line-height: var( --kendo-line-height, normal ) !default;
 

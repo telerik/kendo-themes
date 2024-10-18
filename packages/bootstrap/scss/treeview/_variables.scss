@@ -1,4 +1,4 @@
-@use "sass:map";
+@use "sass:math";
 @use "../core/_index.scss" as *;
 
 // TreeView
@@ -23,7 +23,7 @@ $kendo-treeview-lg-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-treeview-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the small TreeView.
 /// @group treeview
-$kendo-treeview-sm-line-height: k-math-div( 20, 14 ) !default;
+$kendo-treeview-sm-line-height: math.div( 20, 14 ) !default;
 /// The line height of the medium TreeView.
 /// @group treeview
 $kendo-treeview-md-line-height: var( --kendo-line-height, normal ) !default;

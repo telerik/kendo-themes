@@ -1,6 +1,8 @@
 @use "sass:map";
+@use "sass:math";
 @use "../core/_index.scss" as *;
-@use "bootstrap/scss/bootstrap.scss" as *;
+@use "../bootstrap_vars.scss" as *;
+// @use "bootstrap/scss/bootstrap.scss" as *;
 
 
 // Button
@@ -61,7 +63,7 @@ $kendo-button-lg-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-button-line-height: $btn-line-height !default;
 /// The line height used along with the $kendo-font-size variable of the small Button.
 /// @group button
-$kendo-button-sm-line-height: k-math-div( 20, 14 ) !default;
+$kendo-button-sm-line-height: math.div( 20, 14 ) !default;
 /// The line height used along with the $kendo-font-size variable of the medium Button.
 /// @group button
 $kendo-button-md-line-height: var( --kendo-line-height, normal ) !default;
