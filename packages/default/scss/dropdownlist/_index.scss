@@ -1,9 +1,9 @@
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../input/_index.scss" as *;
-@use "../floating-label/_index.scss" as *;
 @use "../popup/_index.scss" as *;
 @use "../list/_index.scss" as *;
+@use "../floating-label/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -15,9 +15,9 @@
     @include import-once( "dropdown-list" ) {
         @include core-styles();
         @include kendo-input--styles();
-        @include kendo-floating-label--styles();
         @include kendo-popup--styles();
         @include kendo-list--styles();
+        @include kendo-floating-label--styles();
         @include kendo-dropdown-list--layout();
         @include kendo-dropdown-list--theme();
     }
