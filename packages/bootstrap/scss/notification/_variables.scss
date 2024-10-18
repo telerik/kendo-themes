@@ -1,10 +1,9 @@
-@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./_functions.scss" as *;
 @use "../popup/_variables.scss" as *;
 @use "../icon/_variables.scss" as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
-
+@use "../_bootstrap_vars.scss" as *;
 // Notification
 
 /// The row-gap between the elements in the Notification group.

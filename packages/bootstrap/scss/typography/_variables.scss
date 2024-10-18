@@ -1,8 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
-// @use "bootstrap/scss/bootstrap.scss" as *;
-@use "bootstrap/scss/bootstrap.scss" as *;
-// @use "../core/color-system/_swatch.scss" as *;
+@use "../_bootstrap_vars.scss" as *;
 
 // Typography
 

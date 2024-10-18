@@ -403,8 +403,26 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
 
+$headings-margin-bottom: $spacer * .5 !default;
+$headings-font-family: null !default;
+$headings-font-style: null !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
 
+$display-font-family: null !default;
+$display-font-style: null !default;
+$display-font-weight: 300 !default;
+$display-line-height: $headings-line-height !default;
+
+$paragraph-margin-bottom: 1rem !default;
 // scss-docs-start headings-variables
 $headings-margin-bottom: $spacer * .5 !default;
 $headings-font-family: null !default;
@@ -678,7 +696,43 @@ $card-group-margin: $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
 
 
+$badge-font-size: .75em !default;
+$badge-font-weight: $font-weight-bold !default;
+$badge-color: $white !default;
+$badge-padding-y: .35em !default;
+$badge-padding-x: .65em !default;
+$badge-border-radius: $border-radius !default;
 
+// Progress bars
+
+// scss-docs-start progress-variables
+$progress-height: 1rem !default;
+$progress-font-size: $font-size-base * .75 !default;
+$progress-bg: $gray-200 !default;
+$progress-border-radius: $border-radius !default;
+$progress-box-shadow: $box-shadow-inset !default;
+$progress-bar-color: $white !default;
+$progress-bar-bg: $primary !default;
+$progress-bar-animation-timing: 1s linear infinite !default;
+$progress-bar-transition: width .6s ease !default;
+
+// Tooltips
+
+// scss-docs-start tooltip-variables
+$tooltip-font-size: $font-size-sm !default;
+$tooltip-max-width: 200px !default;
+$tooltip-color: $white !default;
+$tooltip-bg: $black !default;
+$tooltip-border-radius: $border-radius !default;
+$tooltip-opacity: .9 !default;
+$tooltip-padding-y: $spacer * .25 !default;
+$tooltip-padding-x: $spacer * .5 !default;
+$tooltip-margin: null !default; // TODO: remove this in v6
+
+$tooltip-arrow-width: .8rem !default;
+$tooltip-arrow-height: .4rem !default;
+// fusv-disable
+$tooltip-arrow-color: null !default; // Deprecated in Bootstrap 5.2.0 for CSS variables
 
 // Close
 

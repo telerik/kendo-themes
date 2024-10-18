@@ -1,8 +1,7 @@
-@use "sass:map";
 @use "../core/_index.scss" as *;
-@use "../list/_variables.scss" as *;
 @use "../popup/_variables.scss" as *;
-@use "../icon/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
 
 // Menu
 
@@ -304,7 +303,7 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-item-selected-text: $kendo-menu-item-selected-text,
     $kendo-menu-item-selected-border: $kendo-menu-item-selected-border,
     $kendo-menu-item-selected-gradient: $kendo-menu-item-selected-gradient,
-    // $kendo-menu-scroll-button-bg: $kendo-menu-scroll-button-bg,
+    $kendo-menu-scroll-button-bg: $kendo-menu-scroll-button-bg,
     $kendo-menu-scroll-button-text: $kendo-menu-scroll-button-text,
     $kendo-menu-scroll-button-border: $kendo-menu-scroll-button-border,
     $kendo-menu-scroll-button-gradient: $kendo-menu-scroll-button-gradient,
@@ -312,8 +311,8 @@ $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
     $kendo-menu-scroll-button-hover-text: $kendo-menu-scroll-button-hover-text,
     $kendo-menu-scroll-button-hover-border: $kendo-menu-scroll-button-hover-border,
     $kendo-menu-scroll-button-hover-gradient: $kendo-menu-scroll-button-hover-gradient,
-    // $kendo-menu-separator-margin-inline: $kendo-menu-separator-margin-inline,
-    // $kendo-menu-separator-margin-block: $kendo-menu-separator-margin-block,
+    $kendo-menu-separator-margin-inline: $kendo-menu-separator-margin-inline,
+    $kendo-menu-separator-margin-block: $kendo-menu-separator-margin-block,
     $kendo-menu-separator-border: $kendo-menu-separator-border,
     $kendo-menu-popup-padding-x: $kendo-menu-popup-padding-x,
     $kendo-menu-popup-padding-y: $kendo-menu-popup-padding-y,
