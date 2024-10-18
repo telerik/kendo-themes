@@ -4,7 +4,9 @@ module.exports = {
     ],
     build: [
         {
-            entry: [ 'dist/!(_|variables)*.scss' ],
+            entry: ['dist/!(_|variables)*.scss'],
+            api: "modern",
+            compiler: "sass",
             sassOptions: {
                 minify: true
             }
