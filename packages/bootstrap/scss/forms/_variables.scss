@@ -4,8 +4,8 @@
 @use "../tooltip/_variables.scss" as *;
 @use "../typography/_variables.scss" as *;
 @use "../window/_variables.scss" as *;
-@use "bootstrap/scss/bootstrap.scss" as *;
-
+// @use "bootstrap/scss/bootstrap.scss" as *;
+@use "../_bootstrap_vars.scss" as *;
 // Forms
 
 /// The padding of the inline Form.

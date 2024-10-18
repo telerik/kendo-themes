@@ -14,7 +14,9 @@
 
 // @use "bootstrap/scss/_variables.scss" as *;
 // @use "@progress/kendo-theme-core/scss/typography/index.import.scss" as *;
-@use "bootstrap/scss/bootstrap.scss" as *;
+// @use "bootstrap/scss/bootstrap.scss" as *;
+
+@use "../../_bootstrap_vars.scss" as *;
 
 /// The base font size across all components.
 /// @group typography
