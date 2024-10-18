@@ -160,7 +160,7 @@ $kendo-timeline-circle-bg: $kendo-color-primary !default;
 
 /// The horizontal padding of the Timeline collapse arrow.
 /// @group timeline
-$kendo-timeline-collapse-arrow-padding-x: $kendo-padding-md-x !default;
+$kendo-timeline-collapse-arrow-padding-x: k-spacing(2) !default;
 
 /// The width of the Timeline event.
 /// @group timeline

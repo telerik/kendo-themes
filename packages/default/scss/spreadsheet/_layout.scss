@@ -74,7 +74,7 @@
         // move to legacy selector
         > .k-icon {
             padding-block: 0;
-            padding-inline: $kendo-padding-md-y;
+            padding-inline: k-spacing(1);
             box-sizing: content-box;
             border-width: 0 1px 0 0;
             border-style: solid;
@@ -533,7 +533,7 @@
     }
     .k-spreadsheet-filter {
         @include border-radius( k-border-radius(md) );
-        padding: $kendo-padding-y;
+        padding: k-spacing(1);
         line-height: 1;
         position: absolute;
         cursor: pointer;
@@ -558,11 +558,11 @@
                 color: inherit;
             }
             .k-link {
-                padding-left: calc( #{$kendo-icon-size} + calc( 2 * #{$kendo-padding-md-y} ) );
+                padding-left: calc( #{$kendo-icon-size} + calc( 2 * #{k-spacing(1)} ) );
             }
             .k-icon {
-                margin-left: calc(-1 * ( #{$kendo-icon-size} + #{$kendo-padding-md-y} ) );
-                margin-right: $kendo-padding-md-y;
+                margin-left: calc(-1 * ( #{$kendo-icon-size} + #{k-spacing(1)} ) );
+                margin-right: k-spacing(1);
             }
 
         }
@@ -575,7 +575,7 @@
             overflow-x: auto;
 
             .k-treeview {
-                padding: $kendo-padding-md-y;
+                padding: k-spacing(1);
                 overflow: visible;
             }
         }
@@ -602,7 +602,7 @@
 
             > .k-icon,
             > .k-expander-indicator {
-                margin-right: $kendo-padding-md-y;
+                margin-right: k-spacing(1);
             }
         }
         .k-details-content,

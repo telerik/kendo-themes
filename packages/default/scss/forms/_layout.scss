@@ -24,7 +24,7 @@
 
         > legend {
             margin-left: 0;
-            padding: 0 $kendo-padding-md-x 0 0;
+            padding: 0 k-spacing(2) 0 0;
             text-transform: uppercase;
         }
     }
@@ -119,7 +119,7 @@
 
         .k-alert-error {
             font-size: var( --kendo-font-size-sm, inherit );
-            margin-top: calc( #{$kendo-padding-md-y} * 2 );
+            margin-top: calc( #{k-spacing(1)} * 2 );
         }
 
         .k-field-info {
@@ -127,7 +127,7 @@
             font-size: var( --kendo-font-size-xs, inherit );
             line-height: 1;
             margin-block: 0;
-            margin-inline: $kendo-padding-md-x;
+            margin-inline: k-spacing(2);
         }
 
 
@@ -262,9 +262,9 @@
             text-align: start;
             font-weight: 600;
             line-height: 1;
-            margin-bottom: calc( #{$kendo-padding-lg-y} * 2 );
+            margin-bottom: calc( #{k-spacing(1.5)} * 2 );
             text-transform: uppercase;
-            padding: 0 $kendo-padding-md-x 0 0;
+            padding: 0 k-spacing(2) 0 0;
             width: auto;
         }
 
@@ -272,15 +272,15 @@
             display: flex;
             align-items: flex-start;
             text-align: start;
-            margin-bottom: calc( #{$kendo-padding-lg-y} * 2 );
+            margin-bottom: calc( #{k-spacing(1.5)} * 2 );
 
             > span:not(.k-widget) {
                 width: $kendo-inline-form-element-width;
                 text-align: end;
                 line-height: var( --kendo-line-height, normal );
                 // TODO: do we need the input variable?
-                padding: calc( #{$kendo-padding-md-y} + #{$kendo-input-border-width} ) 0;
-                padding-right: $kendo-padding-lg-x;
+                padding: calc( #{k-spacing(1)} + #{$kendo-input-border-width} ) 0;
+                padding-right: k-spacing(3);
                 align-self: center;
             }
 
@@ -294,7 +294,7 @@
 
             .k-alert-error {
                 font-size: var( --kendo-font-size-sm, inherit );
-                margin-top: calc( #{$kendo-padding-md-y} * 2 );
+                margin-top: calc( #{k-spacing(1)} * 2 );
             }
 
             .k-field-info {

@@ -99,7 +99,7 @@ $kendo-pdf-viewer-search-panel-border: $kendo-component-border !default;
 $kendo-pdf-viewer-search-panel-shadow: $kendo-window-shadow !default;
 /// The spacing of the matches container in the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-matches-spacing: $kendo-padding-sm-x !default;
+$kendo-pdf-viewer-search-panel-matches-spacing: k-spacing(1) !default;
 
 /// The line height of the PDFViewer selection.
 /// @group pdf-viewer

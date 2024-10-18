@@ -3,8 +3,8 @@
 @use "../core/_index.scss" as *;
 
 // Drag hint
-$kendo-drag-hint-padding-x: $kendo-padding-md-x !default;
-$kendo-drag-hint-padding-y: $kendo-padding-md-y !default;
+$kendo-drag-hint-padding-x: k-spacing(2) !default;
+$kendo-drag-hint-padding-y: k-spacing(1) !default;
 $kendo-drag-hint-border-width: 1px !default;
 $kendo-drag-hint-border-radius: k-border-radius(md) !default;
 $kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
