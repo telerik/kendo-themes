@@ -1,3 +1,8 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../tooltip/_index.scss" as *;
+
 // Component
 @forward "./_variables.scss";
 @use "./_layout.scss" as *;
@@ -5,9 +10,6 @@
 
 
 // Dependencies
-@use "../core/_index.scss" as *;
-@use "../tooltip/_index.scss" as *;
-@use "../icons/_index.scss" as *;
 
 
 // Expose

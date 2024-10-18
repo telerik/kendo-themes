@@ -1,19 +1,16 @@
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-
-
 // Dependencies
 @use "../core/_index.scss" as *;
-@use "../utils/_index.scss" as *;
 @use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
 @use "../input/_index.scss" as *;
 @use "../button/_index.scss" as *;
 @use "../textbox/_index.scss" as *;
 @use "../slider/_index.scss" as *;
 
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-captcha--styles() {

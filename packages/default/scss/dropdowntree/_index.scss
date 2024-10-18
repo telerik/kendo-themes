@@ -1,9 +1,3 @@
-// Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
-@use "./_theme.scss" as *;
-
-
 // Dependencies
 @use "../core/_index.scss" as *;
 @use "../utils/_index.scss" as *;
@@ -12,6 +6,10 @@
 @use "../multiselect/_index.scss" as *;
 @use "../treeview/_index.scss" as *;
 
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-dropdown-tree--styles() {
