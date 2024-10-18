@@ -4,7 +4,6 @@ const path = require("path");
 const { globSync } = require("glob");
 const gulp = require("gulp");
 
-const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
 const { getArg, getEnvArg } = require("@progress/kendo-theme-tasks/src/utils");
 const { createComponent } = require('@progress/kendo-theme-tasks/src/create');
@@ -24,25 +23,6 @@ const paths = {
 };
 
 // #region helpers
-function flattenAll( cwds, options ) {
-
-    cwds.forEach( cwd => {
-        let file = path.resolve( cwd, options.file );
-        let output = { path: path.resolve( cwd, options.output.path ), filename: 'all.scss' };
-        let nodeModules = path.resolve( cwd, '../../node_modules' );
-
-        if (fs.existsSync( file )) {
-            fs.mkdirSync( output.path, { recursive: true } );
-
-            if (path.basename( cwd ) === 'fluent') {
-                fs.writeFileSync( path.resolve( output.path, output.filename), '@use "../scss/all.scss";');
-            } else {
-                sassFlatten({ file, output, nodeModules });
-            }
-        }
-    });
-}
-
 function writeSwatches( cwds, options ) {
 
     cwds.forEach( cwd => {
@@ -103,14 +83,13 @@ function swatchJsonTransformer( json ) {
             if ( colorsMap.length ) {
                 sassContent.push(`\t$kendo-colors: (`);
                 sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
-                sassContent.push(`\t)`);
+                sassContent.push(`\t),`);
             }
 
             sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
 
             sassContent.push(`);\n`);
 
-            sassContent.push(`@include kendo-theme.config();`);
             sassContent.push(`@include kendo-theme.styles();`);
 
             return sassContent.join( '\n' );
@@ -170,24 +149,11 @@ gulp.task("assets", function() {
 
 
 // #region dist
-function distFlat() {
-    let file = paths.sass.theme;
-    let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = globSync( getArg('--theme') || paths.sass.themes );
-
-    flattenAll( themes, { file, output } );
-
-    return Promise.resolve();
-}
-gulp.task("dist:flat", distFlat);
-
 function distSwatches() {
-    let file = paths.sass.theme;
     let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = globSync( getArg('--theme') || paths.sass.themes );
     let swatches = paths.sass.swatches;
 
-    flattenAll( themes, { file, output } );
     writeSwatches( themes, { swatches, output } );
 
     return Promise.resolve();
