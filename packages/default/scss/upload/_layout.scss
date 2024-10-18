@@ -135,7 +135,7 @@
 
             ~ .k-clear-selected,
             ~ .k-upload-selected {
-                margin-top: -$kendo-padding-md-y;
+                margin-top: -k-spacing(1);
                 border-width: 0;
             }
 
@@ -188,7 +188,7 @@
 
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-info {
-            margin-inline-start: $kendo-padding-md-x;
+            margin-inline-start: k-spacing(2);
             min-height: $kendo-icon-size-xxl;
             display: block;
             overflow: hidden;

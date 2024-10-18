@@ -233,7 +233,7 @@ $kendo-grid-selection-aggregates-font-weight: var( --kendo-font-weight-bold, nor
 $kendo-grid-grouping-row-bg: $kendo-base-bg !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
-$kendo-grid-sorted-icon-spacing: calc( #{$kendo-padding-md-x} - 1px ) !default;
+$kendo-grid-sorted-icon-spacing: calc( #{k-spacing(2)} - 1px ) !default;
 $kendo-grid-sorted-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( k-contrast-legacy( $kendo-grid-bg ), .02 )) !default;
 $kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
 $kendo-grid-sorting-index-font-size: var( --kendo-font-size-sm, inherit ) !default;

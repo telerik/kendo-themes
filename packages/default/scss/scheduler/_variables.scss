@@ -64,7 +64,7 @@ $kendo-scheduler-event-min-height: 25px !default;
 $kendo-scheduler-event-border-radius: k-border-radius(md) !default;
 /// The line height of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-line-height: calc( #{$kendo-scheduler-event-min-height} - (2 * #{$kendo-padding-md-y}) ) !default;
+$kendo-scheduler-event-line-height: calc( #{$kendo-scheduler-event-min-height} - (2 * #{k-spacing(1)}) ) !default;
 
 /// The background color of the Scheduler event.
 /// @group scheduler

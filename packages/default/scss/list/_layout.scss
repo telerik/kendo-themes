@@ -1,5 +1,6 @@
-@use "../core/spacing/index.import.scss" as *;
+@use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
 @use "sass:map";
 
 @mixin kendo-list--layout-base() {
@@ -190,7 +191,7 @@
     .k-list-filter {
         display: block;
         position: relative;
-        padding: $kendo-padding-md-x;
+        padding: k-spacing(2);
         box-sizing: border-box;
         flex: none;
     }
