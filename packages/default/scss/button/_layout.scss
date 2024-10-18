@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 @mixin kendo-button--layout-base() {
 
     // Button
@@ -71,10 +76,10 @@
 
     // Sizes
     @each $size, $size-props in $kendo-button-sizes {
-        $_padding-x: k-map-get( $size-props, padding-x );
-        $_padding-y: k-map-get( $size-props, padding-y );
-        $_font-size: k-map-get( $size-props, font-size );
-        $_line-height: k-map-get( $size-props, line-height );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
 
         .k-button-#{$size} {
             padding-block: $_padding-y;

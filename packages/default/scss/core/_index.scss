@@ -1,32 +1,23 @@
-$wcag-min-contrast-ratio: 4.5 !default;
+// // Color System
+// @forward "./color-system/index.import.scss";
+// @use "./color-system/index.import.scss" as *;
+
+// // Elevation
+// @forward "./elevation/index.import.scss";
+// @use "./elevation/index.import.scss" as *;
+
+// // Typography
+// @forward "./typography/index.import.scss";
+// @use "./typography/index.import.scss" as *;
+
+// // Spacing
+// @forward "./spacing/index.import.scss";
+// @use "./spacing/index.import.scss" as *;
+
+// // Radii
+// @forward "./border-radii/index.import.scss";
+// @use "./border-radii/index.import.scss" as *;
 
 // Variables
-@import "../_variables.scss";
-
-// Color System
-@import "./color-system/_swatch.scss";
-
-// Typography
-@import "./typography/index.import.scss";
-
-// Spacing
-@import "./spacing/index.import.scss";
-
-@import "@progress/kendo-theme-core/scss/index.import.scss";
-
-// Backward compatibility
-@import "./color-system/_swatch-legacy.scss";
-
-// Expose
-@include exports("kendo-core-styles") {
-    @include kendo-core--styles();
-
-    // Elevation System
-    @include kendo-elevation--styles();
-    // Typography
-    @include kendo-core--typography--styles();
-    // Spacing
-    @include kendo-spacing--styles();
-    // Radii
-    @include kendo-border-radius--styles();
-}
+@forward "@progress/kendo-theme-core/scss/index.import.scss";
+@forward "../_variables.scss";

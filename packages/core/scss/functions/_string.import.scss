@@ -1,4 +1,6 @@
-$svg-escaped-characters: (
+@use "sass:meta";
+
+$_kendo-svg-escaped-characters: (
     ("%", "%25"),
     ("<", "%3c"),
     (">", "%3e"),
@@ -6,6 +8,11 @@ $svg-escaped-characters: (
     ("(", "%28"),
     (")", "%29")
 ) !default;
+
+$_kendo-escape-class-name: (
+    ".": "\\.",
+    "/": "\\/"
+);
 
 /// Returns the first index of `$substring` in `$string`, or `null` if `$string` doesn’t contain `$substring`.
 /// @param {String} $string - The string to process.
@@ -62,7 +69,7 @@ $svg-escaped-characters: (
 /// @example scss - Usage
 ///   @debug k-string-replace( "foo bar", "bar", "baz" ); // => "foo baz"
 @function k-string-replace( $string, $search, $replace: "" ) {
-    @if k-meta-type-of( $string ) == number {
+    @if meta.type-of( $string ) == number {
         $string: $string + "";
     }
 
@@ -139,17 +146,30 @@ $svg-escaped-characters: (
 }
 
 // See https://codepen.io/kevinweber/pen/dXWoRw
-@function escape-svg($string) {
+@function k-escape-svg($string) {
     @if k-string-index($string, "data:image/svg+xml") {
-        @each $char, $encoded in $svg-escaped-characters {
+        @each $char, $encoded in $_kendo-svg-escaped-characters {
             // Do not escape the url brackets
             @if k-string-index($string, "url(") == 1 {
-                $string: url("#{str-replace(k-string-slice($string, 6, -3), $char, $encoded)}");
+                $string: url("#{k-string-replace(k-string-slice($string, 6, -3), $char, $encoded)}");
             } @else {
-                $string: str-replace($string, $char, $encoded);
+                $string: k-string-replace($string, $char, $encoded);
             }
         }
     }
 
     @return $string;
+}
+
+/// Escapes special characters in a class name
+/// @param {String} $text - The string to escape
+/// @return {String} - The escaped string
+@function k-escape-class-name( $text ) {
+    $_text: $text;
+
+    @each $char, $rep in $_kendo-escape-class-name {
+        $_text: k-string-replace( $_text, k-string-unquote( $char ), k-string-unquote( $rep ) );
+    }
+
+    @return $_text;
 }

@@ -1,3 +1,17 @@
+@use "sass:map";
+@use "sass:math";
+@use "sass:list";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "../chip/_variables.scss" as *;
+@use "../forms/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../tabstrip/_variables.scss" as *;
+@use "../popup/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 @mixin kendo-grid--layout-base() {
 
     // Grid
@@ -278,8 +292,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
-            margin-inline-end: k-math-div( $kendo-icon-size, 2 );
+            margin-inline-start: calc( #{math.div( $kendo-icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
+            margin-inline-end: math.div( $kendo-icon-size, 2 );
             text-decoration: none;
         }
 
@@ -443,7 +457,7 @@
             width: $kendo-grid-group-drop-hint-line-size;
             height: calc(100% - #{$kendo-grid-group-drop-hint-size});
             top: $kendo-grid-group-drop-hint-size;
-            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-size} - #{k-math-div( $kendo-grid-group-drop-hint-line-size, 2 )} );
+            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-size} - #{math.div( $kendo-grid-group-drop-hint-line-size, 2 )} );
         }
     }
 
@@ -901,22 +915,22 @@
 
     // Grid Sizes
     @each $size, $size-props in $kendo-grid-sizes {
-        $_header-padding-x: k-map-get( $size-props, header-padding-x );
-        $_header-padding-y: k-map-get( $size-props, header-padding-y );
-        $_grouping-header-padding-x: k-map-get( $size-props, grouping-header-padding-x );
-        $_grouping-header-padding-y: k-map-get( $size-props, grouping-header-padding-y );
-        $_cell-padding-x: k-map-get( $size-props, cell-padding-x );
-        $_cell-padding-y: k-map-get( $size-props, cell-padding-y );
-        $_filter-cell-padding-x: k-map-get( $size-props, filter-cell-padding-x );
-        $_filter-cell-padding-y: k-map-get( $size-props, filter-cell-padding-y );
-        $_edit-cell-padding-x: k-map-get( $size-props, edit-cell-padding-x );
-        $_edit-cell-padding-y: k-map-get( $size-props, edit-cell-padding-y );
-        $_button-padding-y: k-map-get( $size-props, button-padding-y );
-        $_button-calc-size: k-map-get( $size-props, button-calc-size );
-        $_button-line-height: k-map-get( $size-props, button-line-height );
-        $_group-dropclue-height: k-map-get( $size-props, group-dropclue-height );
-        $_selection-aggregates-padding-x: k-map-get( $size-props, selection-aggregates-padding-x );
-        $_selection-aggregates-padding-y: k-map-get( $size-props, selection-aggregates-padding-y );
+        $_header-padding-x: map.get( $size-props, header-padding-x );
+        $_header-padding-y: map.get( $size-props, header-padding-y );
+        $_grouping-header-padding-x: map.get( $size-props, grouping-header-padding-x );
+        $_grouping-header-padding-y: map.get( $size-props, grouping-header-padding-y );
+        $_cell-padding-x: map.get( $size-props, cell-padding-x );
+        $_cell-padding-y: map.get( $size-props, cell-padding-y );
+        $_filter-cell-padding-x: map.get( $size-props, filter-cell-padding-x );
+        $_filter-cell-padding-y: map.get( $size-props, filter-cell-padding-y );
+        $_edit-cell-padding-x: map.get( $size-props, edit-cell-padding-x );
+        $_edit-cell-padding-y: map.get( $size-props, edit-cell-padding-y );
+        $_button-padding-y: map.get( $size-props, button-padding-y );
+        $_button-calc-size: map.get( $size-props, button-calc-size );
+        $_button-line-height: map.get( $size-props, button-line-height );
+        $_group-dropclue-height: map.get( $size-props, group-dropclue-height );
+        $_selection-aggregates-padding-x: map.get( $size-props, selection-aggregates-padding-x );
+        $_selection-aggregates-padding-y: map.get( $size-props, selection-aggregates-padding-y );
 
         .k-grid .k-grid-#{$size},
         .k-grid-#{$size} {
@@ -957,7 +971,7 @@
                     width: $_button-calc-size;
                     height: $_button-calc-size;
                     line-height: $_button-line-height;
-                    bottom: calc( #{$_header-padding-y} + #{k-math-div( $kendo-line-height-em, 2)} - #{k-math-div( $kendo-button-inner-calc-size, 2 )} );
+                    bottom: calc( #{$_header-padding-y} + #{list.slash( $kendo-line-height-em, 2)} - #{list.slash( $kendo-button-inner-calc-size, 2 )} );
                 }
             }
 
@@ -974,7 +988,7 @@
             }
 
             .k-grouping-row .k-icon {
-                margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$_cell-padding-x} );
+                margin-inline-start: calc( #{math.div( $kendo-icon-size, 2 )} - #{$_cell-padding-x} );
             }
 
             .k-grouping-dropclue {

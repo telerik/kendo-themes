@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
 @mixin kendo-draggable--layout-base() {
 
     // Layout
@@ -43,7 +47,7 @@
     .k-drop-hint-start,
     .k-drop-hint-end {
         flex-shrink: 0;
-        border-width: k-math-div( $kendo-drop-hint-arrow-size, 2 );
+        border-width: math.div( $kendo-drop-hint-arrow-size, 2 );
         border-style: solid;
         border-color: transparent;
     }
@@ -55,7 +59,7 @@
 
     .k-drop-hint-h {
         .k-drop-hint-start {
-            border-left-width: ( k-math-div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
+            border-left-width: ( math.div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
             border-left-color: $kendo-drop-hint-bg;
             border-right-width: 0;
         }
@@ -66,7 +70,7 @@
         }
 
         .k-drop-hint-end {
-            border-right-width: ( k-math-div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
+            border-right-width: ( math.div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
             border-right-color: $kendo-drop-hint-bg;
             border-left-width: 0;
         }
@@ -76,7 +80,7 @@
         flex-direction: column;
 
         .k-drop-hint-start {
-            border-top-width: ( k-math-div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
+            border-top-width: ( math.div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
             border-top-color: $kendo-drop-hint-bg;
             border-bottom-width: 0;
         }
@@ -87,7 +91,7 @@
         }
 
         .k-drop-hint-end {
-            border-bottom-width: ( k-math-div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
+            border-bottom-width: ( math.div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
             border-bottom-color: $kendo-drop-hint-bg;
             border-top-width: 0;
         }

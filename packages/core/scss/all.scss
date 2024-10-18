@@ -1,3 +1,4 @@
-@import "./index.import.scss";
+@forward "./index.import.scss";
+@use "./index.import.scss" as *;
 
-@include kendo-core--styles();
+@include core-styles();

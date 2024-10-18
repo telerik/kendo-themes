@@ -1,37 +1,20 @@
-@import "../core/_index.scss";
-@import "../utils/_index.scss";
-
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "icon",
-    dependencies: ()
-);
-
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../utils/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-icon--styles() {
-    @include module-render( "icon" ) {
+    @include import-once( "icon" ) {
+        @include core-styles();
         @include kendo-icon--layout();
         @include kendo-icon--theme();
         @include kendo-utils--transform--rotate();
         @include kendo-utils--transform--flip();
         @include kendo-utils--typography--text-color();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-icon--styles();
 }

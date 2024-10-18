@@ -244,15 +244,17 @@
 /// @group border-style
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-border-style"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--border--border-style() {
-    @include module-render("utils-border-style") {
+    @include import-once("utils-border-style") {
 
         // Border style utility classes
-        $kendo-utils-border-style: k-map-get( $kendo-utils, "border-style" ) !default;
+        $kendo-utils-border-style: map.get( $kendo-utils, "border-style" ) !default;
         @include generate-utils( border, border-style, $kendo-utils-border-style );
         @include generate-utils( border-t, border-top-style, $kendo-utils-border-style );
         @include generate-utils( border-r, border-right-style, $kendo-utils-border-style );

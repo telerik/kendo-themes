@@ -1,47 +1,26 @@
-@import "../core/_index.scss";
-
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "adaptive",
-    dependencies: (
-        "checkbox",
-        "listgroup",
-        "radio",
-        "switch",
-        "toolbar"
-    )
-);
-
-
 // Dependencies (TODO: extract variables)
-@import "../listgroup/_index.scss";
-@import "../checkbox/_index.scss";
-@import "../radio/_index.scss";
-@import "../switch/_index.scss";
-@import "../toolbar/_index.scss";
-
+@use "../core/_index.scss" as *;
+@use "../listgroup/_index.scss" as *;
+@use "../checkbox/_index.scss" as *;
+@use "../radio/_index.scss" as *;
+@use "../switch/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-adaptive--styles() {
-    @include module-render( "adaptive" ) {
+    @include import-once( "adaptive" ) {
+        @include core-styles();
+        @include kendo-listgroup--styles();
+        @include kendo-checkbox--styles();
+        @include kendo-radio--styles();
+        @include kendo-switch--styles();
+        @include kendo-toolbar--styles();
         @include kendo-adaptive--layout();
         @include kendo-adaptive--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-adaptive--styles();
 }

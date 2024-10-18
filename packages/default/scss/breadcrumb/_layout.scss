@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-breadcrumb--layout-base() {
 
     // Breadcrumb
@@ -101,12 +105,12 @@
 
     // Sizes
     @each $size, $size-props in $kendo-breadcrumb-sizes {
-        $_link-padding-x: k-map-get( $size-props, link-padding-x );
-        $_link-padding-y: k-map-get( $size-props, link-padding-y );
-        $_icon-link-padding-x: k-map-get( $size-props, icon-link-padding-x );
-        $_icon-link-padding-y: k-map-get( $size-props, icon-link-padding-y );
-        $_font-size: k-map-get( $size-props, font-size );
-        $_line-height: k-map-get( $size-props, line-height );
+        $_link-padding-x: map.get( $size-props, link-padding-x );
+        $_link-padding-y: map.get( $size-props, link-padding-y );
+        $_icon-link-padding-x: map.get( $size-props, icon-link-padding-x );
+        $_icon-link-padding-y: map.get( $size-props, icon-link-padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
 
         .k-breadcrumb-#{$size} {
             font-size: $_font-size;

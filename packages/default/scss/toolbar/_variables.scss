@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../menu/_variables.scss" as *;
+
 // Toolbar
 
 /// The horizontal padding of the Toolbar.
@@ -115,6 +119,19 @@ $kendo-toolbar-input-width: 10em !default;
 /// The box shadow of the focused Toolbar item.
 /// @group toolbar
 $kendo-toolbar-item-shadow: $kendo-button-focus-shadow !default;
+
+/// The font size of the Toolbar overflow container.
+/// @group toolbar
+$kendo-toolbar-overflow-container-font-size: $kendo-menu-popup-md-font-size !default;
+/// The line-height of the Toolbar overflow container.
+/// @group toolbar
+$kendo-toolbar-overflow-container-line-height: $kendo-menu-popup-md-line-height !default;
+/// The vertical padding of the Toolbar overflow button.
+/// @group toolbar
+$kendo-toolbar-overflow-button-padding-y: $kendo-menu-popup-md-item-padding-y !default;
+/// The horizontal padding of the Toolbar overflow button.
+/// @group toolbar
+$kendo-toolbar-overflow-button-padding-x: $kendo-menu-popup-md-item-padding-x !default;
 
 /// The sizes map for the Toolbar.
 /// @group toolbar

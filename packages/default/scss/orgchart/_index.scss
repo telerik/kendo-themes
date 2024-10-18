@@ -1,53 +1,32 @@
-@import "../core/_index.scss";
-@import "../utils/_index.scss";
-
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "orgchart",
-    dependencies: (
-        "action-buttons",
-        "avatar",
-        "button",
-        "card",
-        "dropdown-list",
-        "form",
-        "icon",
-        "menu",
-        "menu-button",
-        "textbox",
-        "upload",
-        "window"
-    )
-);
-
-
 // Dependencies
-@import "../icons/_index.scss";
-@import "../forms/_index.scss";
-@import "../textbox/_index.scss";
-@import "../dropdownlist/_index.scss";
-@import "../upload/_index.scss";
-@import "../menu/_index.scss";
-@import "../card/_index.scss";
-@import "../window/_index.scss";
-
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../forms/_index.scss" as *;
+@use "../textbox/_index.scss" as *;
+@use "../dropdownlist/_index.scss" as *;
+@use "../upload/_index.scss" as *;
+@use "../menu/_index.scss" as *;
+@use "../card/_index.scss" as *;
+@use "../window/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-orgchart--styles() {
-    @include module-render( "orgchart" ) {
+    @include import-once( "orgchart" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-form--styles();
+        @include kendo-textbox--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-upload--styles();
+        @include kendo-menu--styles();
+        @include kendo-card--styles();
+        @include kendo-window--styles();
         @include kendo-orgchart--layout();
         @include kendo-orgchart--theme();
         @include kendo-utils--layout--overflow();
@@ -55,8 +34,4 @@ $_kendo-module-meta: (
         @include kendo-utils--flex-grid--align-items();
         @include kendo-utils--flex-grid--justify-content();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-orgchart--styles();
 }

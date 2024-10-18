@@ -1,4 +1,7 @@
-@import "../button/_variables.scss";
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../button/_variables.scss" as *;
 
 
 // Chip
@@ -98,10 +101,10 @@ $kendo-chip-base-bg: if($kendo-enable-color-system, k-color( base-subtle ), $ken
 /// @group chip
 $kendo-chip-theme-colors: (
     "base": $kendo-chip-base-bg,
-    "error": k-map-get($kendo-theme-colors, "error"),
-    "info": k-map-get($kendo-theme-colors, "info"),
-    "warning": k-map-get($kendo-theme-colors, "warning"),
-    "success": k-map-get($kendo-theme-colors, "success")
+    "error": map.get($kendo-theme-colors, "error"),
+    "info": map.get($kendo-theme-colors, "info"),
+    "warning": map.get($kendo-theme-colors, "warning"),
+    "success": map.get($kendo-theme-colors, "success")
 ) !default;
 
 /// The base background color of the solid Chip.

@@ -1,14 +1,15 @@
-@import "../input/_variables.scss";
-@import "../tooltip/_variables.scss";
-@import "../typography/_variables.scss";
-@import "../window/_variables.scss";
+@use "../input/_variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+@use "../typography/_variables.scss" as *;
+@use "../window/_variables.scss" as *;
+@use "../core/_index.scss" as *;
 
 
 // Forms
 
 /// The padding of the inline Form.
 /// @group form
-$kendo-form-spacer: calc( #{$kendo-padding-md-x} * 2 ) !default;
+$kendo-form-spacer: calc( #{k-spacing(2)} * 2 ) !default;
 
 /// The font size of the Form.
 /// @group form

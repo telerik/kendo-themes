@@ -16,15 +16,17 @@
 /// @group visibility
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-visibility"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--visibility() {
-    @include module-render("utils-layout-visibility") {
+    @include import-once("utils-layout-visibility") {
 
         // Visibility utility classes
-        $kendo-utils-visibility: k-map-get( $kendo-utils, "visibility" ) !default;
+        $kendo-utils-visibility: map.get( $kendo-utils, "visibility" ) !default;
         @include generate-utils( visibility, visibility, $kendo-utils-visibility );
 
         // Legacy aliases

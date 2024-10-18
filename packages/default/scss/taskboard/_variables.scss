@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../card/_variables.scss" as *;
+
 // TaskBoard
 
 /// The spacing index of the TaskBoard.

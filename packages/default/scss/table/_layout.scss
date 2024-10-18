@@ -1,3 +1,6 @@
+@use "./_variables.scss" as *;
+@use "sass:map";
+
 @mixin kendo-table--layout-base() {
 
     // Table
@@ -221,10 +224,10 @@
 
     // Sizes
     @each $size, $size-props in $kendo-table-sizes {
-        $_font-size: k-map-get( $size-props, font-size);
-        $_line-height: k-map-get( $size-props, line-height);
-        $_cell-padding-x: k-map-get( $size-props, cell-padding-x);
-        $_cell-padding-y: k-map-get( $size-props, cell-padding-y);
+        $_font-size: map.get( $size-props, font-size);
+        $_line-height: map.get( $size-props, line-height);
+        $_cell-padding-x: map.get( $size-props, cell-padding-x);
+        $_cell-padding-y: map.get( $size-props, cell-padding-y);
 
         .k-table-#{$size} {
             font-size: $_font-size;
