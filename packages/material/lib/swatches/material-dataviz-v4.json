@@ -4,7 +4,7 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-material",
     "version": "5.1.2-dev.7",
-    "api": "legacy",
+    "api": "modern",
     "previewColors": [
         "#3f51b5",
         "#2196f3",
@@ -177,7 +177,7 @@
                     "type": "color",
                     "value": "#f48fb1"
                 }
-            }                                               
+            }
         },
         {
             "name": "Dataviz",

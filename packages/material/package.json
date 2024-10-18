@@ -41,7 +41,6 @@
     "build": "sass-build",
     "watch": "node ../../scripts/watch-theme",
     "sass": "sass-build",
-    "sass:flat": "gulp dist:flat && sass-build -c sass-flat.config.js",
     "sass:standalone": "sass-build -c sass-standalone.config.js",
     "sass:swatches": "gulp dist:swatches && sass-build -c sass-swatches.config.js",
     "docs": "node ../../scripts/sassdoc.js",

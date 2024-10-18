@@ -62,8 +62,5 @@ jobs:
       - name: Build themes using node-sass (full)
         run: npm run sass
 
-      - name: Build themes using node-sass (flat)
-        run: npm run sass:flat
-
       - name: Build swatches using node-sass
         run: npm run sass:swatches

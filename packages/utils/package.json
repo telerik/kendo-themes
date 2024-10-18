@@ -33,7 +33,6 @@
     "build": "sass-build",
     "watch": "node ../../scripts/watch-theme",
     "sass": "sass-build",
-    "sass:flat": "gulp dist:flat && sass-build -c sass-flat.config.js",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
