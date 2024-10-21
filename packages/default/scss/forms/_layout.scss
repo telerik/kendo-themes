@@ -2,7 +2,6 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../input/_variables.scss" as *;
-@use "../window/_variables.scss" as *;
 
 @mixin kendo-form--layout-base() {
 
@@ -325,7 +324,7 @@
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
         // TODO: refactor
-        margin: k-spacing(4) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
+        margin: k-spacing(4) calc(#{k-spacing(4)} * -1) calc(#{k-spacing(4)} * -1);
     }
 
 
