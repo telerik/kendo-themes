@@ -597,7 +597,7 @@
         {
             "name": "Body",
             "variables": {
-                "kendo-body-color": {
+                "kendo-body-text": {
                     "name": "Body text color",
                     "type": "color",
                     "value": "#50686e"
