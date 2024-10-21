@@ -23,6 +23,32 @@ const paths = {
 };
 
 // #region helpers
+function flattenAll( cwds, options ) {
+
+    cwds.forEach( cwd => {
+        let file = path.resolve( cwd, options.file );
+        let output = { path: path.resolve( cwd, options.output.path ), filename: 'all.scss' };
+
+        if (fs.existsSync( file )) {
+            fs.mkdirSync( output.path, { recursive: true } );
+
+            fs.writeFileSync( path.resolve( output.path, output.filename), '@use "../scss/all.scss";');
+
+        }
+    });
+};
+
+function distAll() {
+    let file = paths.sass.theme;
+    let output = { path: paths.sass.dist };
+    let themes = globSync( paths.sass.themes );
+
+    flattenAll( themes, { file, output } );
+
+    return Promise.resolve();
+}
+gulp.task("dist:all", distAll);
+
 function writeSwatches( cwds, options ) {
 
     cwds.forEach( cwd => {
