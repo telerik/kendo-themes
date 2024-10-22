@@ -33,7 +33,7 @@ $kendo-progressbar-bg: if($kendo-enable-color-system, k-color( base-subtle ), $g
 $kendo-progressbar-text: if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $gray-200 )) !default;
 /// The border color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-border: null !default;
+$kendo-progressbar-border: inherit !default;
 /// The background gradient of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-gradient: null !default;
@@ -46,7 +46,7 @@ $kendo-progressbar-value-bg: $kendo-selected-bg !default;
 $kendo-progressbar-value-text: $kendo-selected-text !default;
 /// The progress border color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-value-border: null !default;
+$kendo-progressbar-value-border: unset !default;
 /// The progress background gradient of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-value-gradient: null !default;

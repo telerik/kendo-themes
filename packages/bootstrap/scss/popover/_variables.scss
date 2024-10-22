@@ -49,13 +49,13 @@ $kendo-popover-header-border-width: $kendo-card-header-border-width !default;
 $kendo-popover-header-border-style: $kendo-popover-border-style !default;
 /// The text color of the Popover header.
 /// @group popover
-$kendo-popover-header-text: null !default;
+$kendo-popover-header-text: unset !default;
 /// The background color of the Popover header.
 /// @group popover
-$kendo-popover-header-bg: null !default;
+$kendo-popover-header-bg: unset !default;
 /// The border color of the Popover header.
 /// @group popover
-$kendo-popover-header-border: null !default;
+$kendo-popover-header-border: inherit !default;
 
 /// The horizontal padding of the Popover body.
 /// @group popover

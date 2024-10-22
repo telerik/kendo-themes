@@ -80,7 +80,7 @@ $kendo-treeview-lg-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x !de
 $kendo-treeview-sm-checkbox-padding-y: k-spacing(0.5) !default;
 /// The vertical padding of the checkbox in the medium TreeView.
 /// @group treeview
-$kendo-treeview-md-checkbox-padding-y: null !default;
+$kendo-treeview-md-checkbox-padding-y: unset !default;
 /// The vertical padding of the checkbox in the large TreeView.
 /// @group treeview
 $kendo-treeview-lg-checkbox-padding-y: null !default;

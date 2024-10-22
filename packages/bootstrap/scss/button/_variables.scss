@@ -126,7 +126,7 @@ $kendo-button-text: if($kendo-enable-color-system, k-color( on-base ), k-contras
 $kendo-button-border: $kendo-button-bg !default;
 /// The base background gradient of the Button.
 /// @group button
-$kendo-button-gradient: null !default;
+$kendo-button-gradient: none !default;
 /// The base shadow of the Button.
 /// @group button
 $kendo-button-shadow: null !default;
@@ -142,7 +142,7 @@ $kendo-button-hover-text: null !default;
 $kendo-button-hover-border: if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-button-bg, 10% )) !default;
 /// The base background gradient of the hovered Button.
 /// @group button
-$kendo-button-hover-gradient: null !default;
+$kendo-button-hover-gradient: none !default;
 /// The base shadow of the hovered Button.
 /// @group button
 $kendo-button-hover-shadow: null !default;
@@ -212,7 +212,7 @@ $kendo-button-disabled-gradient: null !default;
 $kendo-button-disabled-shadow: null !default;
 
 // Solid Button
-$kendo-solid-button-gradient: null !default;
+$kendo-solid-button-gradient: none !default;
 $kendo-solid-button-shade-function: "k-color-darken" !default;
 $kendo-solid-button-shade-text-amount: 0 !default;
 $kendo-solid-button-shade-bg-amount: 0 !default;

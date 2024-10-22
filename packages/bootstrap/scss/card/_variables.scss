@@ -57,7 +57,7 @@ $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: null !default;
+$kendo-card-focus-border: unset !default;
 
 // TODO: double-check: the default theme is not supposed to elevate the Card on focus
 

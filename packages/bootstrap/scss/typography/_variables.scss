@@ -260,16 +260,16 @@ $kendo-display4-font-size: map.get( $display-font-sizes, 4) !default;
 
 /// The font family of the largest display text.
 /// @group typography
-$kendo-display1-font-family: null !default;
+$kendo-display1-font-family: unset !default;
 /// The font family of the second largest display text.
 /// @group typography
-$kendo-display2-font-family: null !default;
+$kendo-display2-font-family: unset !default;
 /// The font family of the third largest display text.
 /// @group typography
-$kendo-display3-font-family: null !default;
+$kendo-display3-font-family: unset !default;
 /// The font family of the fourth largest display text.
 /// @group typography
-$kendo-display4-font-family: null !default;
+$kendo-display4-font-family: unset !default;
 
 /// The line height of the largest display text.
 /// @group typography
