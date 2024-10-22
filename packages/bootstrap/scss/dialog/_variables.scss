@@ -6,13 +6,13 @@
 
 /// The background color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-bg: null !default;
+$kendo-dialog-titlebar-bg: unset !default;
 /// The text color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-text: null !default;
+$kendo-dialog-titlebar-text: unset !default;
 /// The border color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-border: null !default;
+$kendo-dialog-titlebar-border: inherit !default;
 
 /// The horizontal padding of the Dialog action buttons.
 /// @group dialog

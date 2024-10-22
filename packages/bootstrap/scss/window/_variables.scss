@@ -78,17 +78,17 @@ $kendo-window-text: $kendo-component-text !default;
 $kendo-window-border: $kendo-component-border !default;
 /// The box shadow of the Window.
 /// @group window
-$kendo-window-shadow: null !default;
+$kendo-window-shadow: none !default;
 /// The box shadow of the focused Window.
 /// @group window
-$kendo-window-focus-shadow: null !default;
+$kendo-window-focus-shadow: none !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: null !default;
+$kendo-window-titlebar-bg: unset !default;
 /// The text color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-text: null !default;
+$kendo-window-titlebar-text: inherit !default;
 /// The border color of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border: $kendo-component-border !default;
