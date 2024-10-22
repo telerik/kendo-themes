@@ -18,17 +18,6 @@
     // Treeview leaf
     .k-treeview-leaf {
 
-        // Hover state
-        &:hover,
-        &.k-hover {
-            @include fill(
-                $kendo-treeview-item-hover-text,
-                $kendo-treeview-item-hover-bg,
-                $kendo-treeview-item-hover-border,
-                $kendo-treeview-item-hover-gradient
-            );
-        }
-
         // Focus state
         &:focus,
         &.k-focus {
@@ -40,13 +29,14 @@
             );
         }
 
-        // Selected state
-        &.k-selected {
+        // Selected Focus state
+        &.k-selected:focus,
+        &.k-selected.k-focus {
             @include fill(
-                $kendo-treeview-item-selected-text,
-                $kendo-treeview-item-selected-bg,
-                $kendo-treeview-item-selected-border,
-                $kendo-treeview-item-selected-gradient
+                $kendo-treeview-item-selected-focus-text,
+                $kendo-treeview-item-selected-focus-bg,
+                $kendo-treeview-item-selected-focus-border,
+                $kendo-treeview-item-selected-focus-gradient
             );
         }
     }

@@ -54,7 +54,7 @@ $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: null !default;
+$kendo-card-focus-border: $kendo-component-border !default;
 
 // TODO: double-check: the default theme is not supposed to elevate the Card on focus
 
@@ -76,7 +76,7 @@ $kendo-card-header-border-width: 1px !default;
 $kendo-card-header-bg: null !default;
 /// The text color of the Card header.
 /// @group card
-$kendo-card-header-text: null !default;
+$kendo-card-header-text: unset !default;
 /// The border color of the Card header.
 /// @group card
 $kendo-card-header-border: $kendo-card-border !default;
@@ -102,7 +102,7 @@ $kendo-card-footer-border-width: 1px !default;
 $kendo-card-footer-bg: null !default;
 /// The text color of the Card footer.
 /// @group card
-$kendo-card-footer-text: null !default;
+$kendo-card-footer-text: unset !default;
 /// The border color of the Card footer.
 /// @group card
 $kendo-card-footer-border: $kendo-card-border !default;

@@ -58,7 +58,7 @@ $kendo-menu-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !
 $kendo-menu-item-bg: rgba( $kendo-menu-text, 0 ) !default;
 /// The text color of the Menu item.
 /// @group menu
-$kendo-menu-item-text: null !default;
+$kendo-menu-item-text: unset !default;
 /// The border color of the Menu item.
 /// @group menu
 $kendo-menu-item-border: null !default;
@@ -71,7 +71,7 @@ $kendo-menu-item-gradient: null !default;
 $kendo-menu-item-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), rgba( $kendo-menu-text, $kendo-flat-button-hover-opacity * alpha( $kendo-menu-text ) )) !default;
 /// The text color of hovered Menu item.
 /// @group menu
-$kendo-menu-item-hover-text: null !default;
+$kendo-menu-item-hover-text: unset !default;
 /// The border color of hovered Menu item.
 /// @group menu
 $kendo-menu-item-hover-border: null !default;
@@ -84,7 +84,7 @@ $kendo-menu-item-hover-gradient: null !default;
 $kendo-menu-item-active-bg: if($kendo-enable-color-system, k-color( base-active ), rgba( $kendo-menu-text, $kendo-flat-button-active-opacity * alpha( $kendo-menu-text ) )) !default;
 /// The text color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-text: null !default;
+$kendo-menu-item-active-text: unset !default;
 /// The border color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-border: null !default;
@@ -94,14 +94,14 @@ $kendo-menu-item-active-gradient: null !default;
 
 /// The base shadow of focused Menu item.
 /// @group menu
-$kendo-menu-item-focus-shadow: null !default;
+$kendo-menu-item-focus-shadow: unset !default;
 
 /// The background color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-bg: null !default;
 /// The text color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-text: null !default;
+$kendo-menu-item-selected-text: unset !default;
 /// The border color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-border: null !default;
@@ -272,7 +272,7 @@ $kendo-menu-popup-item-active-gradient: null !default;
 
 /// The base shadow of focused Menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-focus-shadow: null !default;
+$kendo-menu-popup-item-focus-shadow: unset !default;
 
 @forward "@progress/kendo-theme-default/scss/menu/_variables.scss" with (
     $kendo-menu-border-width: $kendo-menu-border-width,

@@ -63,7 +63,7 @@ $kendo-treeview-lg-item-padding-y: k-spacing(2) !default;
 $kendo-treeview-item-border-width: 0px !default;
 /// The border radius of the TreeView items.
 /// @group treeview
-$kendo-treeview-item-border-radius: null !default;
+$kendo-treeview-item-border-radius: unset !default;
 
 /// The horizontal padding of the checkbox in the small TreeView.
 /// @group treeview
@@ -130,7 +130,7 @@ $kendo-treeview-border: null !default;
 $kendo-treeview-item-hover-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 )) !default;
 /// The text color of hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-hover-text: null !default;
+$kendo-treeview-item-hover-text: unset !default;
 /// The border color of hovered TreeView items.
 /// @group treeview
 $kendo-treeview-item-hover-border: null !default;
@@ -140,7 +140,7 @@ $kendo-treeview-item-hover-gradient: null !default;
 
 /// The background color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-bg: null !default;
+$kendo-treeview-item-selected-bg: unset !default;
 /// The text color of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-text: $kendo-selected-bg !default;
@@ -151,9 +151,22 @@ $kendo-treeview-item-selected-border: null !default;
 /// @group treeview
 $kendo-treeview-item-selected-gradient: null !default;
 
+/// The background color of selected and focused TreeView items.
+/// /// @group treeview
+$kendo-treeview-item-selected-focus-text: $kendo-selected-bg !default;
+/// The text color of selected and focused TreeView items.
+/// /// @group treeview
+$kendo-treeview-item-selected-focus-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 )) !default;
+/// The border color of selected and focused TreeView items.
+/// /// @group treeview
+$kendo-treeview-item-selected-focus-border: null !default;
+/// The background gradient of selected and focused TreeView items.
+/// /// @group treeview
+$kendo-treeview-item-selected-focus-gradient: null !default;
+
 /// The box shadow of focused TreeView items.
 /// @group treeview
-$kendo-treeview-item-focus-shadow: null !default;
+$kendo-treeview-item-focus-shadow: unset !default;
 
 /// The background color of the Load More button in the TreeView
 /// @group treeview

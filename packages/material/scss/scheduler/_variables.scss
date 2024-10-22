@@ -35,26 +35,26 @@ $kendo-scheduler-border: $kendo-component-border !default;
 $kendo-scheduler-toolbar-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
 /// The text color of the Scheduler ToolBar.
 /// @group scheduler
-$kendo-scheduler-toolbar-text: null !default;
+$kendo-scheduler-toolbar-text: unset !default;
 /// The border color of the Scheduler ToolBar.
 /// @group scheduler
-$kendo-scheduler-toolbar-border: null !default;
+$kendo-scheduler-toolbar-border: unset !default;
 /// The gradient of the Scheduler ToolBar.
 /// @group scheduler
-$kendo-scheduler-toolbar-gradient: null !default;
+$kendo-scheduler-toolbar-gradient: none !default;
 
 /// The background color of the Scheduler footer.
 /// @group scheduler
 $kendo-scheduler-footer-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
 /// The text color of the Scheduler footer.
 /// @group scheduler
-$kendo-scheduler-footer-text: null !default;
+$kendo-scheduler-footer-text: unset !default;
 /// The border color of the Scheduler footer.
 /// @group scheduler
-$kendo-scheduler-footer-border: null !default;
+$kendo-scheduler-footer-border: unset !default;
 /// The gradient of the Scheduler footer.
 /// @group scheduler
-$kendo-scheduler-footer-gradient: null !default;
+$kendo-scheduler-footer-gradient: none !default;
 
 /// The minimum height of the Scheduler event.
 /// @group scheduler
