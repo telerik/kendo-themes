@@ -2,7 +2,7 @@
 @use "./_palettes.scss" as *;
 @use "../functions/index.import.scss" as *;
 @use "../../_bootstrap_vars.scss" as *;
-// @import "../../_bootstrap-overrides.scss";
+// @use "../../_bootstrap-overrides.scss" as *;
 
 // Config
 $kendo-enable-color-system: true !default;
@@ -439,7 +439,7 @@ $kendo-color-primary-darker: k-color-shade( $kendo-color-primary, 2 ) !default;
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$kendo-color-primary-contrast: k-contrast-color( $kendo-color-primary ) !default;
+$kendo-color-primary-contrast: k-contrast-legacy( $kendo-color-primary ) !default;
 /// The secondary color of the theme.
 /// @group color-system
 /// @type Color
@@ -513,7 +513,7 @@ $kendo-theme-colors: (
 // Root styles
 $kendo-body-bg: #ffffff !default;
 $kendo-body-text: k-contrast-color( $kendo-body-bg, $gray-900, $gray-100 ) !default;
-$kendo-subtle-text: if( $kendo-is-dark-theme, $gray-400, $text-muted ) !default;
+$kendo-subtle-text: map.get( $kendo-palette-gray, 10 ) !default;
 $kendo-app-bg: k-try-shade( $kendo-body-bg, .25 ) !default;
 $kendo-app-text: $kendo-body-text !default;
 $kendo-app-border: if( k-is-light( $kendo-app-bg ), $gray-300, $gray-700 ) !default;
@@ -529,7 +529,8 @@ $kendo-component-bg: $kendo-body-bg !default;
 /// Text color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.
 /// @group component
-$kendo-component-text: $kendo-body-text !default;
+/// $kendo-component-text: $kendo-body-text !default;
+$kendo-component-text: k-contrast-color( $kendo-component-bg, $gray-900, $gray-100 ) !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.
 /// @group component
@@ -553,7 +554,7 @@ $kendo-hover-gradient: null !default;
 /// The background of selected items.
 $kendo-selected-bg: $kendo-color-primary !default;
 /// The text color of selected items.
-$kendo-selected-text: k-contrast-color( $kendo-selected-bg ) !default;
+$kendo-selected-text: $kendo-color-primary-contrast !default;
 /// The border color of selected items.
 $kendo-selected-border: k-try-shade( $kendo-selected-bg, 1 ) !default;
 /// The gradient background of selected items.
