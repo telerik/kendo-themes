@@ -172,7 +172,7 @@ $kendo-form-field-info-margin: k-spacing(4) !default;
 $kendo-fieldset-legend-bg: null !default;
 /// The text color of the Form legend.
 /// @group form
-$kendo-fieldset-legend-text: null !default;
+$kendo-fieldset-legend-text: unset !default;
 /// The border color of the Form legend.
 /// @group form
 $kendo-fieldset-legend-border: null !default;

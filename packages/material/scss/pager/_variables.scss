@@ -77,7 +77,7 @@ $kendo-pager-border: $kendo-component-border !default;
 $kendo-pager-focus-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-pager-bg, .5 )) !default;
 /// The box shadow of the focused Pager.
 /// @group pager
-$kendo-pager-focus-shadow: null !default;
+$kendo-pager-focus-shadow: unset !default;
 
 /// The spacing between the Pager sections.
 /// @group pager
@@ -133,7 +133,7 @@ $kendo-pager-item-focus-opacity: .12 !default;
 $kendo-pager-item-focus-bg: rgba($kendo-list-item-hover-bg, $kendo-pager-item-focus-opacity) !default;
 /// The box shadow of the focused Pager items.
 /// @group pager
-$kendo-pager-item-focus-shadow: null !default;
+$kendo-pager-item-focus-shadow: unset !default;
 
 /// The width of the Inputs in the Pager.
 /// @group pager

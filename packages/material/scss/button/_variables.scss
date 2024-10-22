@@ -124,7 +124,7 @@ $kendo-button-text: if($kendo-enable-color-system, k-color( on-base ), $kendo-ba
 $kendo-button-border: $kendo-button-bg !default;
 /// The base background gradient of the Button.
 /// @group button
-$kendo-button-gradient: null !default;
+$kendo-button-gradient: none !default;
 /// The base shadow of the Button.
 /// @group button
 $kendo-button-shadow: k-elevation(2) !default;
@@ -143,14 +143,14 @@ $kendo-button-hover-border: if($kendo-enable-color-system, k-color( base-hover )
 $kendo-button-hover-gradient: null !default;
 /// The base shadow of the hovered Button.
 /// @group button
-$kendo-button-hover-shadow: null !default;
+$kendo-button-hover-shadow: $kendo-button-shadow !default;
 
 /// The base background color of the active Button.
 /// @group button
-$kendo-button-active-bg: if($kendo-enable-color-system, k-color( base-active ), null) !default;
+$kendo-button-active-bg: if($kendo-enable-color-system, k-color( base-active ), $kendo-base-bg) !default;
 /// The base text color of the active Button.
 /// @group button
-$kendo-button-active-text: null !default;
+$kendo-button-active-text: if($kendo-enable-color-system, k-color( on-base ), $kendo-base-text) !default;
 /// The base border color of the active Button.
 /// @group button
 $kendo-button-active-border: if($kendo-enable-color-system, k-color( base-active ), null) !default;
@@ -172,10 +172,10 @@ $kendo-button-selected-text: $kendo-button-active-text !default;
 $kendo-button-selected-border: $kendo-button-active-bg !default;
 /// The base background gradient of the selected Button.
 /// @group button
-$kendo-button-selected-gradient: null !default;
+$kendo-button-selected-gradient: none !default;
 /// The base shadow of the selected Button.
 /// @group button
-$kendo-button-selected-shadow: null !default;
+$kendo-button-selected-shadow: $kendo-button-shadow !default;
 
 /// The base background of the focused Button.
 /// @group button
@@ -207,12 +207,12 @@ $kendo-button-disabled-border: if($kendo-enable-color-system, transparent, $kend
 $kendo-button-disabled-gradient: null !default;
 /// The base shadow of the disabled Button.
 /// @group button
-$kendo-button-disabled-shadow: none !default;
+$kendo-button-disabled-shadow: null !default;
 
 // Solid Button
-$kendo-solid-button-gradient: null !default;
+$kendo-solid-button-gradient: none !default;
 $kendo-solid-button-shade-function: "k-try-shade" !default;
-$kendo-solid-button-shade-text-amount: null !default;
+$kendo-solid-button-shade-text-amount: unset !default;
 $kendo-solid-button-shade-bg-amount: 0 !default;
 $kendo-solid-button-shade-border-amount: 0 !default;
 $kendo-solid-button-hover-shade-text-amount: null !default;
@@ -227,16 +227,16 @@ $kendo-solid-button-shadow-spread: unset !default;
 $kendo-solid-button-shadow-opacity: unset !default;
 
 // Outline Button
-$kendo-outline-button-shadow: null !default;
-$kendo-outline-button-shadow-blur: null !default;
-$kendo-outline-button-shadow-spread: null !default;
-$kendo-outline-button-shadow-opacity: null !default;
+$kendo-outline-button-shadow: false !default;
+$kendo-outline-button-shadow-blur: unset !default;
+$kendo-outline-button-shadow-spread: unset !default;
+$kendo-outline-button-shadow-opacity: unset !default;
 
 // Link Button
-$kendo-link-button-shadow: null !default;
-$kendo-link-button-shadow-blur: null !default;
-$kendo-link-button-shadow-spread: null !default;
-$kendo-link-button-shadow-opacity: null !default;
+$kendo-link-button-shadow: false !default;
+$kendo-link-button-shadow-blur: unset !default;
+$kendo-link-button-shadow-spread: unset !default;
+$kendo-link-button-shadow-opacity: unset !default;
 
 // Clear Button
 $kendo-clear-button-focus-opacity: .155 !default; // equal to 10% of black
@@ -255,7 +255,7 @@ $kendo-flat-button-active-opacity: .16 !default;
 $kendo-flat-button-selected-opacity: .22 !default;
 /// The opacity of the flat Button focus ring. Used to create a border for the flat Button.
 /// @group button
-$kendo-flat-button-focus-ring-opacity: null !default;
+$kendo-flat-button-focus-ring-opacity: unset !default;
 
 /// The box-shadow transition of the Button.
 /// @group button

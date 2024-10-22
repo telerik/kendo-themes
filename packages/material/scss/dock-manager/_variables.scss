@@ -55,10 +55,10 @@ $kendo-dock-manager-pane-content-padding-y: $kendo-dock-manager-pane-header-padd
 
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-tabbed-pane-padding-y: null !default;
+$kendo-dock-manager-tabbed-pane-padding-y: unset !default;
 /// The horizontal padding of the tabbed pane in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-tabbed-pane-padding-x: null !default;
+$kendo-dock-manager-tabbed-pane-padding-x: unset !default;
 
 /// The width of the unpinned pane container in the DockManager component.
 /// @group dock-manager

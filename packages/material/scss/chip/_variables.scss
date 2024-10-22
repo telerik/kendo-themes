@@ -119,7 +119,7 @@ $kendo-chip-solid-text: $kendo-button-text !default;
 $kendo-chip-solid-border: $kendo-chip-solid-bg !default;
 /// The base shadow of the solid Chip.
 /// @group chip
-$kendo-chip-solid-shadow: null !default;
+$kendo-chip-solid-shadow: unset !default;
 /// The base gradient of the solid Chip.
 /// @group chip
 $kendo-chip-solid-gradient: $kendo-button-gradient !default;
@@ -156,7 +156,7 @@ $kendo-chip-outline-text: if($kendo-enable-color-system, k-color( base-on-surfac
 $kendo-chip-outline-border: $kendo-chip-outline-text !default;
 /// The base shadow of the outline Chip.
 /// @group chip
-$kendo-chip-outline-shadow: null !default;
+$kendo-chip-outline-shadow: unset !default;
 
 /// The base background color of the hovered outline Chip.
 /// @group chip
