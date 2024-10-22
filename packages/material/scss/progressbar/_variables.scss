@@ -11,7 +11,7 @@ $kendo-progressbar-height: 5px !default;
 $kendo-progressbar-horizontal-width: 100% !default;
 /// The animation timing of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-animation-timing: null !default;
+$kendo-progressbar-animation-timing: unset !default;
 /// The width of the border around the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-border-width: 0px !default;
@@ -33,7 +33,7 @@ $kendo-progressbar-bg: if($kendo-enable-color-system, k-color( primary-subtle ),
 $kendo-progressbar-text: $kendo-component-text !default;
 /// The border color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-border: null !default;
+$kendo-progressbar-border: unset !default;
 /// The background gradient of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-gradient: null !default;
@@ -46,7 +46,7 @@ $kendo-progressbar-value-bg: $kendo-color-primary !default;
 $kendo-progressbar-value-text: $kendo-color-primary-contrast !default;
 /// The progress border color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-value-border: null !default;
+$kendo-progressbar-value-border: unset !default;
 /// The progress background gradient of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-value-gradient: null !default;

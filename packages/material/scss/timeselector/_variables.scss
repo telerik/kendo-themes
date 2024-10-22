@@ -37,7 +37,7 @@ $kendo-time-list-highlight-height: calc( calc( #{$kendo-time-selector-font-size}
 $kendo-time-list-highlight-bg: $kendo-component-bg !default;
 $kendo-time-list-highlight-border: $kendo-component-border !default;
 
-$kendo-time-list-focus-bg: null !default;
+$kendo-time-list-focus-bg: unset !default;
 
 
 // Time selector sizes

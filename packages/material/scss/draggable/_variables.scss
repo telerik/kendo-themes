@@ -5,7 +5,7 @@
 // Drag hint
 $kendo-drag-hint-padding-x: k-spacing(4) !default;
 $kendo-drag-hint-padding-y: calc( #{k-spacing(4)} / 2 ) !default;
-$kendo-drag-hint-border-width: null !default;
+$kendo-drag-hint-border-width: 0px !default;
 $kendo-drag-hint-border-radius: 9999px !default;
 $kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-drag-hint-font-family: var( --kendo-font-family, inherit ) !default;
@@ -13,7 +13,7 @@ $kendo-drag-hint-line-height: math.div( 20, 14 ) !default;
 
 $kendo-drag-hint-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-body-bg )) !default;
 $kendo-drag-hint-text: $kendo-body-text !default;
-$kendo-drag-hint-border: null !default;
+$kendo-drag-hint-border: unset !default;
 $kendo-drag-hint-gradient: null !default;
 $kendo-drag-hint-shadow: k-elevation(3) !default;
 
