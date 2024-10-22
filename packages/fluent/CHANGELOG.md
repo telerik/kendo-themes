@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v9.1.1-dev.0...v9.1.1-dev.1) (2024-10-22)
+
+
+### Bug Fixes
+
+* **menu:** scroll wrapper position ([56372b7](https://github.com/telerik/kendo-themes/commit/56372b7dccc3f04989b97d405e3aaf2e6458546f))
+
+
+
+
+
 ## [9.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v9.1.0...v9.1.1-dev.0) (2024-10-21)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
