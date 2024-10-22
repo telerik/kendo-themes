@@ -144,7 +144,7 @@ $kendo-breadcrumb-link-border: null !default;
 $kendo-breadcrumb-link-hover-bg: $kendo-hover-bg !default;
 /// The text color of the hovered Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-hover-text: null !default;
+$kendo-breadcrumb-link-hover-text: $kendo-color-primary !default;
 /// The border color of the hovered Breadcrumb link.
 /// @group breadcrumb
 $kendo-breadcrumb-link-hover-border: null !default;
@@ -154,13 +154,13 @@ $kendo-breadcrumb-link-hover-border: null !default;
 $kendo-breadcrumb-link-focus-bg: if($kendo-enable-color-system, k-color( base-active ), map.get( $theme, focus-bg )) !default;
 /// The text color of the focused Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-text: null !default;
+$kendo-breadcrumb-link-focus-text: $kendo-color-primary !default;
 /// The border color of the focused Breadcrumb link.
 /// @group breadcrumb
 $kendo-breadcrumb-link-focus-border: null !default;
 /// The box shadow of the focused Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-shadow: null !default;
+$kendo-breadcrumb-link-focus-shadow: unset !default;
 
 /// The background color of the Breadcrumb root link.
 /// @group breadcrumb
@@ -193,7 +193,7 @@ $kendo-breadcrumb-root-link-focus-text: null !default;
 $kendo-breadcrumb-root-link-focus-border: null !default;
 /// The box shadow of the focused Breadcrumb root link.
 /// @group breadcrumb
-$kendo-breadcrumb-root-link-focus-shadow: null !default;
+$kendo-breadcrumb-root-link-focus-shadow: unset !default;
 
 /// The background color of the current Breadcrumb root link.
 /// @group breadcrumb

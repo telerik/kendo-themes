@@ -78,7 +78,7 @@ $kendo-toolbar-shadow: k-elevation(4) !default;
 
 /// The text color of the outline Toolbar.
 /// @group toolbar
-$kendo-toolbar-outline-text: null !default;
+$kendo-toolbar-outline-text: unset !default;
 /// The color of the border around the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-border: currentColor !default;
@@ -87,7 +87,7 @@ $kendo-toolbar-outline-border: currentColor !default;
 $kendo-toolbar-outline-gradient: null !default;
 /// The box shadow of the outline Toolbar.
 /// @group toolbar
-$kendo-toolbar-outline-shadow: none !default;
+$kendo-toolbar-outline-shadow: null !default;
 /// The width of the border around the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-border-width: 1px !default;

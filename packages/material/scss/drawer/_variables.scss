@@ -96,7 +96,7 @@ $kendo-drawer-focus-shadow: none !default;
 
 /// The background color of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-selected-bg: null !default;
+$kendo-drawer-selected-bg: unset !default;
 /// The text color of the selected Drawer item.
 /// @group drawer
 $kendo-drawer-selected-text: $kendo-color-secondary !default;

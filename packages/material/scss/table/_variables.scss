@@ -86,7 +86,7 @@ $kendo-table-header-text: if($kendo-enable-color-system, k-color( subtle ), if( 
 $kendo-table-header-border: $kendo-table-border !default;
 /// Gradient of table headers.
 /// @group table
-$kendo-table-header-gradient: null !default;
+$kendo-table-header-gradient: none !default;
 
 
 /// Background color of table footers.

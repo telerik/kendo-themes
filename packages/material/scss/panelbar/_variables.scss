@@ -100,7 +100,7 @@ $kendo-panelbar-header-focus-border: null !default;
 $kendo-panelbar-header-focus-gradient: null !default;
 /// The shadow of the focused PanelBar header.
 /// @group panelbar
-$kendo-panelbar-header-focus-shadow: null !default;
+$kendo-panelbar-header-focus-shadow: unset !default;
 
 /// The background color of the focused and hovered PanelBar header.
 /// @group panelbar
@@ -195,7 +195,7 @@ $kendo-panelbar-item-focus-border: null !default;
 $kendo-panelbar-item-focus-gradient: null !default;
 /// The box shadow of the focused PanelBar items.
 /// @group panelbar
-$kendo-panelbar-item-focus-shadow: null !default;
+$kendo-panelbar-item-focus-shadow: unset !default;
 
 /// The background color of the focused and hovered PanelBar items.
 /// @group panelbar

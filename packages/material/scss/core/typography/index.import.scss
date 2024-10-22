@@ -38,7 +38,7 @@ $kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
 
 /// The base letter spacing across all components.
 /// @group typography
-$kendo-letter-spacing: null !default;
+$kendo-letter-spacing: unset !default;
 /// The tightest letter spacing across all components.
 /// @group typography
 $kendo-letter-spacing-tightest: -2.5px !default;

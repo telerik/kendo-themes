@@ -60,7 +60,7 @@ $kendo-checkbox-sizes: (
 
 /// The background color of the CheckBox.
 /// @group checkbox
-$kendo-checkbox-bg: null !default;
+$kendo-checkbox-bg: unset !default;
 /// The text color of the CheckBox.
 /// @group checkbox
 $kendo-checkbox-text: null !default;
@@ -103,13 +103,13 @@ $kendo-checkbox-indeterminate-border: $kendo-checkbox-checked-border !default;
 $kendo-checkbox-focus-border: null !default;
 /// The box shadow of the focused CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-shadow: null !default;
+$kendo-checkbox-focus-shadow: unset !default;
 /// The border color of the focused and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-focus-checked-border: null !default;
 /// The box shadow of the focused and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-checked-shadow: null !default;
+$kendo-checkbox-focus-checked-shadow: unset !default;
 
 /// The background color of the disabled CheckBox.
 /// @group checkbox

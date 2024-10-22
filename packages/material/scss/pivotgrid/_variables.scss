@@ -249,7 +249,7 @@ $kendo-pivotgrid-alt-text: $kendo-grid-header-text !default;
 $kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
 
 $kendo-pivotgrid-container-bg: $kendo-grid-header-bg !default;
-$kendo-pivotgrid-row-headers-bg: null !default;
+$kendo-pivotgrid-row-headers-bg: unset !default;
 
 $kendo-pivotgrid-button-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade($kendo-button-bg, 1)) !default;
 $kendo-pivotgrid-button-text: $kendo-button-text !default;

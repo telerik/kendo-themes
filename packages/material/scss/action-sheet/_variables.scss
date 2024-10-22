@@ -66,7 +66,7 @@ $kendo-actionsheet-item-focus-bg: rgba( black, .12 ) !default;
 $kendo-actionsheet-item-focus-text: null !default;
 $kendo-actionsheet-item-focus-border: null !default;
 $kendo-actionsheet-item-focus-gradient: null !default;
-$kendo-actionsheet-item-focus-shadow: null !default;
+$kendo-actionsheet-item-focus-shadow: unset !default;
 
 $kendo-actionsheet-item-disabled-bg: null !default;
 $kendo-actionsheet-item-disabled-text: null !default;

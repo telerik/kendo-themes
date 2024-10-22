@@ -630,7 +630,7 @@ $kendo-base-text: map.get( $theme, component-text ) !default;
 /// The border of the components' chrome area.
 $kendo-base-border: rgba( if( $kendo-is-dark-theme, #ffffff, #000000 ), .08 ) !default;
 /// The gradient background of the components' chrome area.
-$kendo-base-gradient: null !default;
+$kendo-base-gradient: none !default;
 
 /// The background of hovered items.
 $kendo-hover-bg: map.get( $theme, hover-bg ) !default;
@@ -639,7 +639,7 @@ $kendo-hover-text: $kendo-base-text !default;
 /// The border color of hovered items.
 $kendo-hover-border: rgba( $kendo-base-border, .15 ) !default;
 /// The gradient background of hovered items.
-$kendo-hover-gradient: null !default;
+$kendo-hover-gradient: none !default;
 
 /// The background of selected items.
 $kendo-selected-bg: $kendo-color-secondary !default;
@@ -648,12 +648,12 @@ $kendo-selected-text: $kendo-color-secondary-contrast !default;
 /// The border color of selected items.
 $kendo-selected-border: rgba( $kendo-base-border, .1 ) !default;
 /// The gradient background of selected items.
-$kendo-selected-gradient: null !default;
+$kendo-selected-gradient: none !default;
 
 $kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
 $kendo-selected-hover-text: $kendo-selected-text !default;
 $kendo-selected-hover-border: rgba( $kendo-base-border, .1 ) !default;
-$kendo-selected-hover-gradient: null !default;
+$kendo-selected-hover-gradient: none !default;
 
 // Generic styles
 
@@ -661,21 +661,21 @@ $kendo-selected-hover-gradient: null !default;
 $kendo-component-header-bg: $kendo-base-bg !default;
 $kendo-component-header-text: $kendo-base-text !default;
 $kendo-component-header-border: $kendo-base-border !default;
-$kendo-component-header-gradient: null !default;
+$kendo-component-header-gradient: none !default;
 
 // Validator
-$kendo-invalid-bg: null !default;
+$kendo-invalid-bg: unset !default;
 $kendo-invalid-text: $kendo-color-error !default;
 $kendo-invalid-border: $kendo-color-error !default;
-$kendo-invalid-shadow: null !default;
+$kendo-invalid-shadow: unset !default;
 
-$kendo-valid-bg: null !default;
+$kendo-valid-bg: unset !default;
 $kendo-valid-text: $kendo-color-success !default;
 $kendo-valid-border: $kendo-color-success !default;
-$kendo-valid-shadow: null !default;
+$kendo-valid-shadow: unset !default;
 
 // Disabled Styling
-$kendo-disabled-bg: null !default;
+$kendo-disabled-bg: unset !default;
 $kendo-disabled-text: map.get( $theme, disabled-text ) !default;
 $kendo-disabled-border: null!default;
 $kendo-disabled-opacity: .6 !default;
