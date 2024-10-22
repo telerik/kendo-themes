@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // DropZone
 
 /// The horizontal padding of the DropZone.
@@ -62,3 +65,26 @@ $kendo-dropzone-note-spacing: null !default;
 /// The text color of the DropZone note.
 /// @group dropzone
 $kendo-dropzone-note-text: $kendo-subtle-text !default;
+
+
+@forward "@progress/kendo-theme-default/scss/dropzone/_variables.scss" with (
+    $kendo-dropzone-padding-x: $kendo-dropzone-padding-x,
+    $kendo-dropzone-padding-y: $kendo-dropzone-padding-y,
+    $kendo-dropzone-border-width: $kendo-dropzone-border-width,
+    $kendo-dropzone-min-height: $kendo-dropzone-min-height,
+    $kendo-dropzone-font-family: $kendo-dropzone-font-family,
+    $kendo-dropzone-font-size: $kendo-dropzone-font-size,
+    $kendo-dropzone-line-height: $kendo-dropzone-line-height,
+    $kendo-dropzone-bg: $kendo-dropzone-bg,
+    $kendo-dropzone-text: $kendo-dropzone-text,
+    $kendo-dropzone-border: $kendo-dropzone-border,
+    $kendo-dropzone-icon-spacing: $kendo-dropzone-icon-spacing,
+    $kendo-dropzone-icon-text: $kendo-dropzone-icon-text,
+    $kendo-dropzone-icon-hover-text: $kendo-dropzone-icon-hover-text,
+    $kendo-dropzone-hint-font-size: $kendo-dropzone-hint-font-size,
+    $kendo-dropzone-hint-spacing: $kendo-dropzone-hint-spacing,
+    $kendo-dropzone-hint-text: $kendo-dropzone-hint-text,
+    $kendo-dropzone-note-font-size: $kendo-dropzone-note-font-size,
+    $kendo-dropzone-note-spacing: $kendo-dropzone-note-spacing,
+    $kendo-dropzone-note-text: $kendo-dropzone-note-text
+);

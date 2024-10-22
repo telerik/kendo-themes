@@ -1,7 +1,11 @@
-@import "../table/_variables.scss";
-
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../table/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../grid/_variables.scss" as *;
 
 // Pivot grid
+
 /// The spacer of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-spacer: k-spacing(4) !default;
@@ -258,3 +262,91 @@ $kendo-pivotgrid-button-active-text: null !default;
 
 $kendo-pivotgrid-remove-bg: null !default;
 $kendo-pivotgrid-remove-text: null !default;
+
+
+@forward "@progress/kendo-theme-default/scss/pivotgrid/_variables.scss" with (
+    $kendo-pivotgrid-spacer: $kendo-pivotgrid-spacer,
+    $kendo-pivotgrid-padding-x: $kendo-pivotgrid-padding-x,
+    $kendo-pivotgrid-padding-y: $kendo-pivotgrid-padding-y,
+    $kendo-pivotgrid-font-family: $kendo-pivotgrid-font-family,
+    $kendo-pivotgrid-font-size: $kendo-pivotgrid-font-size,
+    $kendo-pivotgrid-line-height: $kendo-pivotgrid-line-height,
+    $kendo-pivotgrid-border-width: $kendo-pivotgrid-border-width,
+    $kendo-pivotgrid-icon-spacing: $kendo-pivotgrid-icon-spacing,
+    $kendo-pivotgrid-row-header-width: $kendo-pivotgrid-row-header-width,
+    $kendo-pivotgrid-column-header-height: $kendo-pivotgrid-column-header-height,
+    $kendo-pivotgrid-cell-padding-x: $kendo-pivotgrid-cell-padding-x,
+    $kendo-pivotgrid-cell-padding-y: $kendo-pivotgrid-cell-padding-y,
+    $kendo-pivotgrid-cell-border-width: $kendo-pivotgrid-cell-border-width,
+    $kendo-pivotgrid-bg: $kendo-pivotgrid-bg,
+    $kendo-pivotgrid-text: $kendo-pivotgrid-text,
+    $kendo-pivotgrid-border: $kendo-pivotgrid-border,
+    $kendo-pivotgrid-alt-border: $kendo-pivotgrid-alt-border,
+    $kendo-pivotgrid-headers-bg: $kendo-pivotgrid-headers-bg,
+    $kendo-pivotgrid-headers-text: $kendo-pivotgrid-headers-text,
+    $kendo-pivotgrid-headers-border: $kendo-pivotgrid-headers-border,
+    $kendo-pivotgrid-total-bg: $kendo-pivotgrid-total-bg,
+    $kendo-pivotgrid-total-text: $kendo-pivotgrid-total-text,
+    $kendo-pivotgrid-total-border: $kendo-pivotgrid-total-border,
+    $kendo-pivotgrid-hover-bg: $kendo-pivotgrid-hover-bg,
+    $kendo-pivotgrid-hover-text: $kendo-pivotgrid-hover-text,
+    $kendo-pivotgrid-hover-border: $kendo-pivotgrid-hover-border,
+    $kendo-pivotgrid-selected-bg: $kendo-pivotgrid-selected-bg,
+    $kendo-pivotgrid-selected-text: $kendo-pivotgrid-selected-text,
+    $kendo-pivotgrid-selected-border: $kendo-pivotgrid-selected-border,
+    $kendo-pivotgrid-focus-shadow: $kendo-pivotgrid-focus-shadow,
+    $kendo-pivotgrid-configurator-padding-x: $kendo-pivotgrid-configurator-padding-x,
+    $kendo-pivotgrid-configurator-padding-y: $kendo-pivotgrid-configurator-padding-y,
+    $kendo-pivotgrid-configurator-border-width: $kendo-pivotgrid-configurator-border-width,
+    $kendo-pivotgrid-configurator-header-padding-x: $kendo-pivotgrid-configurator-header-padding-x,
+    $kendo-pivotgrid-configurator-header-padding-y: $kendo-pivotgrid-configurator-header-padding-y,
+    $kendo-pivotgrid-configurator-header-font-size: $kendo-pivotgrid-configurator-header-font-size,
+    $kendo-pivotgrid-configurator-header-font-weight: $kendo-pivotgrid-configurator-header-font-weight,
+    $kendo-pivotgrid-configurator-content-padding-x: $kendo-pivotgrid-configurator-content-padding-x,
+    $kendo-pivotgrid-configurator-content-padding-y: $kendo-pivotgrid-configurator-content-padding-y,
+    $kendo-pivotgrid-configurator-fields-margin-x: $kendo-pivotgrid-configurator-fields-margin-x,
+    $kendo-pivotgrid-configurator-fields-margin-y: $kendo-pivotgrid-configurator-fields-margin-y,
+    $kendo-pivotgrid-configurator-vertical-width: $kendo-pivotgrid-configurator-vertical-width,
+    $kendo-pivotgrid-configurator-horizontal-height: $kendo-pivotgrid-configurator-horizontal-height,
+    $kendo-pivotgrid-configurator-bg: $kendo-pivotgrid-configurator-bg,
+    $kendo-pivotgrid-configurator-text: $kendo-pivotgrid-configurator-text,
+    $kendo-pivotgrid-configurator-border: $kendo-pivotgrid-configurator-border,
+    $kendo-pivotgrid-configurator-header-bg: $kendo-pivotgrid-configurator-header-bg,
+    $kendo-pivotgrid-configurator-header-text: $kendo-pivotgrid-configurator-header-text,
+    $kendo-pivotgrid-configurator-header-border: $kendo-pivotgrid-configurator-header-border,
+    $kendo-pivotgrid-configurator-shadow: $kendo-pivotgrid-configurator-shadow,
+    $kendo-pivotgrid-configurator-end-shadow: $kendo-pivotgrid-configurator-end-shadow,
+    $kendo-pivotgrid-configurator-start-shadow: $kendo-pivotgrid-configurator-start-shadow,
+    $kendo-pivotgrid-configurator-top-shadow: $kendo-pivotgrid-configurator-top-shadow,
+    $kendo-pivotgrid-configurator-bottom-shadow: $kendo-pivotgrid-configurator-bottom-shadow,
+    $kendo-pivotgrid-configurator-button-padding-x: $kendo-pivotgrid-configurator-button-padding-x,
+    $kendo-pivotgrid-configurator-button-padding-y: $kendo-pivotgrid-configurator-button-padding-y,
+    $kendo-pivotgrid-configurator-button-border-width: $kendo-pivotgrid-configurator-button-border-width,
+    $kendo-pivotgrid-configurator-button-size: $kendo-pivotgrid-configurator-button-size,
+    $kendo-pivotgrid-calculated-field-padding-x: $kendo-pivotgrid-calculated-field-padding-x,
+    $kendo-pivotgrid-calculated-field-padding-y: $kendo-pivotgrid-calculated-field-padding-y,
+    $kendo-pivotgrid-calculated-field-border-width: $kendo-pivotgrid-calculated-field-border-width,
+    $kendo-pivotgrid-calculated-field-border-radius: $kendo-pivotgrid-calculated-field-border-radius,
+    $kendo-pivotgrid-calculated-field-gap: $kendo-pivotgrid-calculated-field-gap,
+    $kendo-pivotgrid-calculated-field-bg: $kendo-pivotgrid-calculated-field-bg,
+    $kendo-pivotgrid-calculated-field-text: $kendo-pivotgrid-calculated-field-text,
+    $kendo-pivotgrid-calculated-field-border: $kendo-pivotgrid-calculated-field-border,
+    $kendo-pivotgrid-calculated-field-header-bg: $kendo-pivotgrid-calculated-field-header-bg,
+    $kendo-pivotgrid-calculated-field-header-text: $kendo-pivotgrid-calculated-field-header-text,
+    $kendo-pivotgrid-calculated-field-header-border: $kendo-pivotgrid-calculated-field-header-border,
+    $kendo-pivotgrid-treeview-padding-x: $kendo-pivotgrid-treeview-padding-x,
+    $kendo-pivotgrid-treeview-padding-y: $kendo-pivotgrid-treeview-padding-y,
+    $kendo-pivotgrid-alt-bg: $kendo-pivotgrid-alt-bg,
+    $kendo-pivotgrid-alt-text: $kendo-pivotgrid-alt-text,
+    $kendo-pivotgrid-chrome-border: $kendo-pivotgrid-chrome-border,
+    $kendo-pivotgrid-container-bg: $kendo-pivotgrid-container-bg,
+    $kendo-pivotgrid-row-headers-bg: $kendo-pivotgrid-row-headers-bg,
+    $kendo-pivotgrid-button-bg: $kendo-pivotgrid-button-bg,
+    $kendo-pivotgrid-button-text: $kendo-pivotgrid-button-text,
+    $kendo-pivotgrid-button-hover-bg: $kendo-pivotgrid-button-hover-bg,
+    $kendo-pivotgrid-button-hover-text: $kendo-pivotgrid-button-hover-text,
+    $kendo-pivotgrid-button-active-bg: $kendo-pivotgrid-button-active-bg,
+    $kendo-pivotgrid-button-active-text: $kendo-pivotgrid-button-active-text,
+    $kendo-pivotgrid-remove-bg: $kendo-pivotgrid-remove-bg,
+    $kendo-pivotgrid-remove-text: $kendo-pivotgrid-remove-text
+);

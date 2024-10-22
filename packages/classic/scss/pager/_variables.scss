@@ -1,5 +1,6 @@
-@import "../list/_variables.scss";
-
+@use "../core/_index.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
 
 // Pager
 
@@ -171,3 +172,52 @@ $kendo-pager-sizes: (
         pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 ) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/pager/_variables.scss" with (
+    $kendo-pager-padding-x: $kendo-pager-padding-x,
+    $kendo-pager-sm-padding-x: $kendo-pager-sm-padding-x,
+    $kendo-pager-md-padding-x: $kendo-pager-md-padding-x,
+    $kendo-pager-lg-padding-x: $kendo-pager-lg-padding-x,
+    $kendo-pager-padding-y: $kendo-pager-padding-y,
+    $kendo-pager-sm-padding-y: $kendo-pager-sm-padding-y,
+    $kendo-pager-md-padding-y: $kendo-pager-md-padding-y,
+    $kendo-pager-lg-padding-y: $kendo-pager-lg-padding-y,
+    $kendo-pager-sm-item-min-width: $kendo-pager-sm-item-min-width,
+    $kendo-pager-md-item-min-width: $kendo-pager-md-item-min-width,
+    $kendo-pager-lg-item-min-width: $kendo-pager-lg-item-min-width,
+    $kendo-pager-sm-item-group-spacing: $kendo-pager-sm-item-group-spacing,
+    $kendo-pager-md-item-group-spacing: $kendo-pager-md-item-group-spacing,
+    $kendo-pager-lg-item-group-spacing: $kendo-pager-lg-item-group-spacing,
+    $kendo-pager-border-width: $kendo-pager-border-width,
+    $kendo-pager-font-family: $kendo-pager-font-family,
+    $kendo-pager-font-size: $kendo-pager-font-size,
+    $kendo-pager-line-height: $kendo-pager-line-height,
+    $kendo-pager-bg: $kendo-pager-bg,
+    $kendo-pager-text: $kendo-pager-text,
+    $kendo-pager-border: $kendo-pager-border,
+    $kendo-pager-focus-bg: $kendo-pager-focus-bg,
+    $kendo-pager-focus-shadow: $kendo-pager-focus-shadow,
+    $kendo-pager-section-spacing: $kendo-pager-section-spacing,
+    $kendo-pager-item-border-width: $kendo-pager-item-border-width,
+    $kendo-pager-item-border-radius: $kendo-pager-item-border-radius,
+    $kendo-pager-item-spacing: $kendo-pager-item-spacing,
+    $kendo-pager-item-bg: $kendo-pager-item-bg,
+    $kendo-pager-item-text: $kendo-pager-item-text,
+    $kendo-pager-item-border: $kendo-pager-item-border,
+    $kendo-pager-item-hover-bg: $kendo-pager-item-hover-bg,
+    $kendo-pager-item-hover-text: $kendo-pager-item-hover-text,
+    $kendo-pager-item-hover-border: $kendo-pager-item-hover-border,
+    $kendo-pager-item-selected-bg: $kendo-pager-item-selected-bg,
+    $kendo-pager-item-selected-text: $kendo-pager-item-selected-text,
+    $kendo-pager-item-selected-border: $kendo-pager-item-selected-border,
+    $kendo-pager-item-focus-opacity: $kendo-pager-item-focus-opacity,
+    $kendo-pager-item-focus-bg: $kendo-pager-item-focus-bg,
+    $kendo-pager-item-focus-shadow: $kendo-pager-item-focus-shadow,
+    $kendo-pager-number-border-radius: $kendo-pager-number-border-radius,
+    $kendo-pager-input-width: $kendo-pager-input-width,
+    $kendo-pager-sm-dropdown-width: $kendo-pager-sm-dropdown-width,
+    $kendo-pager-md-dropdown-width: $kendo-pager-md-dropdown-width,
+    $kendo-pager-lg-dropdown-width: $kendo-pager-lg-dropdown-width,
+    $kendo-pager-sizes: $kendo-pager-sizes
+);

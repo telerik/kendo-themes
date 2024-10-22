@@ -1,5 +1,12 @@
+@use "../button/_variables.scss" as *;
+
 // Menu-button
 
 /// The horizontal padding of the button arrow in the Menu Button.
 /// @group menu-button
 $kendo-menu-button-arrow-padding-x: $kendo-button-padding-y !default;
+
+
+@forward "@progress/kendo-theme-default/scss/menu-button/_variables.scss" with (
+    $kendo-menu-button-arrow-padding-x: $kendo-menu-button-arrow-padding-x
+);

@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Loader
 
 /// The border radius of the Loader segment.
@@ -123,3 +125,44 @@ $kendo-loading-opacity: .3 !default;
 /// The z-index of the Loading indicator.
 /// @group loading
 $kendo-zindex-loading: 100 !default;
+
+
+@forward "@progress/kendo-theme-default/scss/loader/_variables.scss" with (
+    $kendo-loader-segment-border-radius: $kendo-loader-segment-border-radius,
+    $kendo-loader-sm-segment-size: $kendo-loader-sm-segment-size,
+    $kendo-loader-md-segment-size: $kendo-loader-md-segment-size,
+    $kendo-loader-lg-segment-size: $kendo-loader-lg-segment-size,
+    $kendo-loader-sm-padding: $kendo-loader-sm-padding,
+    $kendo-loader-md-padding: $kendo-loader-md-padding,
+    $kendo-loader-lg-padding: $kendo-loader-lg-padding,
+    $kendo-loader-sm-spinner-3-width: $kendo-loader-sm-spinner-3-width,
+    $kendo-loader-md-spinner-3-width: $kendo-loader-md-spinner-3-width,
+    $kendo-loader-lg-spinner-3-width: $kendo-loader-lg-spinner-3-width,
+    $kendo-loader-sm-spinner-3-height: $kendo-loader-sm-spinner-3-height,
+    $kendo-loader-md-spinner-3-height: $kendo-loader-md-spinner-3-height,
+    $kendo-loader-lg-spinner-3-height: $kendo-loader-lg-spinner-3-height,
+    $kendo-loader-sm-spinner-4-width: $kendo-loader-sm-spinner-4-width,
+    $kendo-loader-md-spinner-4-width: $kendo-loader-md-spinner-4-width,
+    $kendo-loader-lg-spinner-4-width: $kendo-loader-lg-spinner-4-width,
+    $kendo-loader-sm-spinner-4-height: $kendo-loader-sm-spinner-4-height,
+    $kendo-loader-md-spinner-4-height: $kendo-loader-md-spinner-4-height,
+    $kendo-loader-lg-spinner-4-height: $kendo-loader-lg-spinner-4-height,
+    $kendo-loader-container-panel-border-width: $kendo-loader-container-panel-border-width,
+    $kendo-loader-container-panel-border-style: $kendo-loader-container-panel-border-style,
+    $kendo-loader-container-panel-border-color: $kendo-loader-container-panel-border-color,
+    $kendo-loader-container-panel-border-radius: $kendo-loader-container-panel-border-radius,
+    $kendo-loader-container-panel-bg: $kendo-loader-container-panel-bg,
+    $kendo-loader-sm-container-padding: $kendo-loader-sm-container-padding,
+    $kendo-loader-md-container-padding: $kendo-loader-md-container-padding,
+    $kendo-loader-lg-container-padding: $kendo-loader-lg-container-padding,
+    $kendo-loader-sm-container-gap: $kendo-loader-sm-container-gap,
+    $kendo-loader-md-container-gap: $kendo-loader-md-container-gap,
+    $kendo-loader-lg-container-gap: $kendo-loader-lg-container-gap,
+    $kendo-loader-sm-container-font-size: $kendo-loader-sm-container-font-size,
+    $kendo-loader-md-container-font-size: $kendo-loader-md-container-font-size,
+    $kendo-loader-lg-container-font-size: $kendo-loader-lg-container-font-size,
+    $kendo-loading-bg: $kendo-loading-bg,
+    $kendo-loading-text: $kendo-loading-text,
+    $kendo-loading-opacity: $kendo-loading-opacity,
+    $kendo-zindex-loading: $kendo-zindex-loading
+);

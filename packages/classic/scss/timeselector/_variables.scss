@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../action-buttons/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+
 // Time selector
 
 $kendo-time-selector-border-width: 1px !default;
@@ -69,3 +73,44 @@ $kendo-time-selector-sizes: (
         list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
     )
 ) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/timeselector/_variables.scss" with (
+    $kendo-time-selector-border-width: $kendo-time-selector-border-width,
+    $kendo-time-selector-font-family: $kendo-time-selector-font-family,
+    $kendo-time-selector-font-size: $kendo-time-selector-font-size,
+    $kendo-time-selector-line-height: $kendo-time-selector-line-height,
+    $kendo-time-selector-bg: $kendo-time-selector-bg,
+    $kendo-time-selector-text: $kendo-time-selector-text,
+    $kendo-time-selector-border: $kendo-time-selector-border,
+    $kendo-time-selector-header-padding-x: $kendo-time-selector-header-padding-x,
+    $kendo-time-selector-header-padding-y: $kendo-time-selector-header-padding-y,
+    $kendo-time-selector-header-border-width: $kendo-time-selector-header-border-width,
+    $kendo-time-list-width: $kendo-time-list-width,
+    $kendo-time-list-height: $kendo-time-list-height,
+    $kendo-time-list-title-font-size: $kendo-time-list-title-font-size,
+    $kendo-time-list-title-line-height: $kendo-time-list-title-line-height,
+    $kendo-time-list-title-height: $kendo-time-list-title-height,
+    $kendo-time-list-title-text: $kendo-time-list-title-text,
+    $kendo-time-list-title-focus-text: $kendo-time-list-title-focus-text,
+    $kendo-time-list-item-padding-x: $kendo-time-list-item-padding-x,
+    $kendo-time-list-item-padding-y: $kendo-time-list-item-padding-y,
+    $kendo-time-list-highlight-border-width: $kendo-time-list-highlight-border-width,
+    $kendo-time-list-highlight-height: $kendo-time-list-highlight-height,
+    $kendo-time-list-highlight-bg: $kendo-time-list-highlight-bg,
+    $kendo-time-list-highlight-border: $kendo-time-list-highlight-border,
+    $kendo-time-list-focus-bg: $kendo-time-list-focus-bg,
+    $kendo-time-selector-sm-font-size: $kendo-time-selector-sm-font-size,
+    $kendo-time-selector-sm-line-height: $kendo-time-selector-sm-line-height,
+    $kendo-time-selector-sm-list-item-padding-x: $kendo-time-selector-sm-list-item-padding-x,
+    $kendo-time-selector-sm-list-item-padding-y: $kendo-time-selector-sm-list-item-padding-y,
+    $kendo-time-selector-md-font-size: $kendo-time-selector-md-font-size,
+    $kendo-time-selector-md-line-height: $kendo-time-selector-md-line-height,
+    $kendo-time-selector-md-list-item-padding-x: $kendo-time-selector-md-list-item-padding-x,
+    $kendo-time-selector-md-list-item-padding-y: $kendo-time-selector-md-list-item-padding-y,
+    $kendo-time-selector-lg-font-size: $kendo-time-selector-lg-font-size,
+    $kendo-time-selector-lg-line-height: $kendo-time-selector-lg-line-height,
+    $kendo-time-selector-lg-list-item-padding-x: $kendo-time-selector-lg-list-item-padding-x,
+    $kendo-time-selector-lg-list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y,
+    $kendo-time-selector-sizes: $kendo-time-selector-sizes
+);
