@@ -66,26 +66,26 @@ $kendo-slider-draghandle-gradient: null !default;
 
 /// The background color of the hovered Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-hover-bg: null !default;
+$kendo-slider-draghandle-hover-bg: unset !default;
 /// The text color of the hovered Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-hover-text: null !default;
 /// The border color of the hovered Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-hover-border: null !default;
+$kendo-slider-draghandle-hover-border: unset !default;
 /// The gradient of the hovered Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-hover-gradient: null !default;
 
 /// The background color of the active Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-pressed-bg: null !default;
+$kendo-slider-draghandle-pressed-bg: unset !default;
 /// The text color of the active Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-pressed-text: null !default;
 /// The border color of the active Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-pressed-border: null !default;
+$kendo-slider-draghandle-pressed-border: unset !default;
 /// The gradient of the active Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-pressed-gradient: null !default;
@@ -119,10 +119,10 @@ $kendo-slider-disabled-opacity: .65 !default;
 
 /// The background image of the horizontal Slider tick.
 /// @group slider
-$kendo-slider-tick-horizontal-image: null !default;
+$kendo-slider-tick-horizontal-image: unset !default;
 /// The background image of the vertical Slider tick.
 /// @group slider
-$kendo-slider-tick-vertical-image: null !default;
+$kendo-slider-tick-vertical-image: unset !default;
 
 @forward "@progress/kendo-theme-default/scss/slider/_variables.scss" with (
     $kendo-slider-size: $kendo-slider-size,

@@ -75,17 +75,17 @@ $kendo-radio-border: $kendo-checkbox-border !default;
 
 /// The background color of the hovered RadioButton.
 /// @group radio
-$kendo-radio-hover-bg: null !default;
+$kendo-radio-hover-bg: unset !default;
 /// The color of the hovered RadioButton.
 /// @group radio
-$kendo-radio-hover-text: null !default;
+$kendo-radio-hover-text: unset !default;
 /// The border color of the hovered RadioButton.
 /// @group radio
-$kendo-radio-hover-border: null !default;
+$kendo-radio-hover-border: $kendo-checkbox-border !default;
 
 /// The background color of the checked RadioButton.
 /// @group radio
-$kendo-radio-checked-bg: null !default;
+$kendo-radio-checked-bg: unset !default;
 /// The color of the checked RadioButton.
 /// @group radio
 $kendo-radio-checked-text: $kendo-color-primary !default;
@@ -109,17 +109,17 @@ $kendo-radio-focus-checked-shadow: $kendo-checkbox-focus-checked-shadow !default
 
 /// The background color of the disabled RadioButton.
 /// @group radio
-$kendo-radio-disabled-bg: null !default;
+$kendo-radio-disabled-bg: unset !default;
 /// The color of the disabled RadioButton.
 /// @group radio
-$kendo-radio-disabled-text: null !default;
+$kendo-radio-disabled-text: unset !default;
 /// The border color of the disabled RadioButton.
 /// @group radio
 $kendo-radio-disabled-border: $kendo-checkbox-disabled-border !default;
 
 /// The background color of the disabled and checked RadioButton.
 /// @group radio
-$kendo-radio-disabled-checked-bg: null !default;
+$kendo-radio-disabled-checked-bg: unset !default;
 /// The color of the disabled and checked RadioButton.
 /// @group radio
 $kendo-radio-disabled-checked-text: $kendo-radio-disabled-border !default;

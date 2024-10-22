@@ -39,7 +39,7 @@ $kendo-spreadsheet-header-text: $kendo-component-text !default;
 $kendo-spreadsheet-header-border: $kendo-component-border !default;
 /// The gradient of the Spreadsheet header.
 /// @group spreadsheet
-$kendo-spreadsheet-header-gradient: null !default;
+$kendo-spreadsheet-header-gradient: none !default;
 
 /// The background color of the Spreadsheet table headers.
 /// @group spreadsheet
@@ -52,7 +52,7 @@ $kendo-spreadsheet-table-header-text: $kendo-component-header-text !default;
 $kendo-spreadsheet-table-header-border: $kendo-component-header-border !default;
 /// The gradient of the Spreadsheet table headers.
 /// @group spreadsheet
-$kendo-spreadsheet-table-header-gradient: null !default;
+$kendo-spreadsheet-table-header-gradient: none !default;
 
 /// The border width of the Spreadsheet action bar.
 /// @group spreadsheet

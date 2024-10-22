@@ -86,13 +86,13 @@ $kendo-window-focus-shadow: k-elevation(9) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: null !default;
+$kendo-window-titlebar-bg: unset !default;
 /// The text color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-text: null !default;
+$kendo-window-titlebar-text: unset !default;
 /// The border color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-border: null !default;
+$kendo-window-titlebar-border: unset !default;
 /// The background gradient of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-gradient: null !default;
