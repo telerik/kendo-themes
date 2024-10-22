@@ -100,7 +100,7 @@ $kendo-menu-item-focus-shadow: inset 0 0 0 3px if($kendo-enable-color-system, co
 $kendo-menu-item-selected-bg: null !default;
 /// The text color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-text: null !default;
+$kendo-menu-item-selected-text: if($kendo-enable-color-system, k-color( on-primary ), k-color-darken( $kendo-color-primary, 10% ))  !default;
 /// The border color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-border: null !default;

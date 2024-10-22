@@ -12,11 +12,11 @@ $kendo-switch-track-border-width: 1px !default;
 
 /// The border width of the Switch thumb.
 /// @group switch
-$kendo-switch-thumb-border-width: null !default;
+$kendo-switch-thumb-border-width: unset !default;
 
 /// The text transform of the Switch label.
 /// @group switch
-$kendo-switch-label-text-transform: null !default;
+$kendo-switch-label-text-transform: unset !default;
 
 /// The display of the Switch label.
 /// @group switch
@@ -25,9 +25,9 @@ $kendo-switch-label-display: none !default;
 /// The map with the different Switch sizes.
 /// @group switch
 $kendo-switch-sizes: (
-    sm: ( font-size: null, track-width: 48px, track-height: 26px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 3px, label-offset: null ),
-    md: ( font-size: null, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: null ),
-    lg: ( font-size: null, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: null )
+    sm: ( font-size: unset, track-width: 48px, track-height: 26px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 3px, label-offset: null ),
+    md: ( font-size: unset, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: null ),
+    lg: ( font-size: unset, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: null )
 ) !default;
 
 /// The background of the track when the Switch is not checked.
@@ -35,7 +35,7 @@ $kendo-switch-sizes: (
 $kendo-switch-off-track-bg: $kendo-component-bg !default;
 /// The text color of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-text: null !default;
+$kendo-switch-off-track-text: unset !default;
 /// The border color of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-border: if($kendo-enable-color-system, k-color( base-emphasis ), $gray-500) !default;
@@ -90,10 +90,10 @@ $kendo-switch-off-track-disabled-gradient: null !default;
 $kendo-switch-off-thumb-bg: if($kendo-enable-color-system, k-color( base-emphasis ), $gray-500) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-text: null !default;
+$kendo-switch-off-thumb-text: unset !default;
 /// The border color of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-border: null !default;
+$kendo-switch-off-thumb-border: transparent !default;
 /// The background gradient of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-gradient: null !default;
@@ -117,10 +117,10 @@ $kendo-switch-off-thumb-hover-gradient: null !default;
 $kendo-switch-on-track-bg: $kendo-color-primary !default;
 /// The text color of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-text: null !default;
+$kendo-switch-on-track-text: unset !default;
 /// The border color of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-border: $kendo-switch-on-track-bg !default;
+$kendo-switch-on-track-border: transparent !default;
 /// The background gradient of the track when the Switch is checked.
 /// @group switch
 $kendo-switch-on-track-gradient: null !default;
@@ -172,10 +172,10 @@ $kendo-switch-on-track-disabled-gradient: null !default;
 $kendo-switch-on-thumb-bg: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-switch-on-track-bg )) !default;
 /// The text color of the thumb when the Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-text: null !default;
+$kendo-switch-on-thumb-text: unset !default;
 /// The border color of the thumb when the Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-border: null !default;
+$kendo-switch-on-thumb-border: $kendo-switch-on-thumb-bg !default;
 /// The background gradient of the thumb when the Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-gradient: null !default;
