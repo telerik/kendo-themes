@@ -1,18 +1,9 @@
-// @forward "bootstrap/scss/_functions.scss";
-// @forward "bootstrap/scss/_variables.scss";
-// @use "bootstrap/scss/_functions.scss" as *;
-// @use "bootstrap/scss/_variables.scss" as *;
-// @forward "bootstrap/scss/bootstrap.scss";
 @use "sass:map";
-// @use "@progress/kendo-theme-core/scss/color-system/_constants.scss" as constants;
-// @use "@progress/kendo-theme-core/scss/functions/_map.import.scss" as *;
-// @use "@progress/kendo-theme-core/scss/color-system/_constants.scss" as *;
 @use "./_palettes.scss" as *;
 @use "../functions/index.import.scss" as *;
+@use "../../_bootstrap_vars.scss" as *;
+// @import "../../_bootstrap-overrides.scss";
 
-@import "../../_bootstrap-overrides.scss";
-@import "bootstrap/scss/_functions.scss";
-@import "bootstrap/scss/_variables.scss";
 // Config
 $kendo-enable-color-system: true !default;
 // Colors
@@ -520,7 +511,7 @@ $kendo-theme-colors: (
 ) !default;
 // Generic styles
 // Root styles
-$kendo-body-bg: $kendo-color-white !default;
+$kendo-body-bg: #ffffff !default;
 $kendo-body-text: k-contrast-color( $kendo-body-bg, $gray-900, $gray-100 ) !default;
 $kendo-subtle-text: if( $kendo-is-dark-theme, $gray-400, $text-muted ) !default;
 $kendo-app-bg: k-try-shade( $kendo-body-bg, .25 ) !default;
