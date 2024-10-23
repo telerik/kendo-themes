@@ -43,7 +43,7 @@ jobs:
         run: |
           npm run dist:all
           npm run dist:swatches
-          npx sass-build build --file packages/default/dist/default-ocean-blue-a11y.scss --outFile packages/default/dist/default-ocean-blue-a11y.css
+          npx sass --load-path=node_modules/ packages/default/dist/default-ocean-blue-a11y.scss packages/default/dist/default-ocean-blue-a11y.css
 
       - name: Pack themes
         run: |
