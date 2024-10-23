@@ -154,7 +154,7 @@ $kendo-breadcrumb-link-hover-border: null !default;
 $kendo-breadcrumb-link-focus-bg: null !default;
 /// The text color of the focused Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-text: unset !default;
+$kendo-breadcrumb-link-focus-text: $kendo-breadcrumb-link-text !default;
 /// The border color of the focused Breadcrumb link.
 /// @group breadcrumb
 $kendo-breadcrumb-link-focus-border: null !default;

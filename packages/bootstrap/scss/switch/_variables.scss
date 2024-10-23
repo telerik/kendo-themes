@@ -93,7 +93,7 @@ $kendo-switch-off-thumb-bg: if($kendo-enable-color-system, k-color( base-emphasi
 $kendo-switch-off-thumb-text: unset !default;
 /// The border color of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-border: unset !default;
+$kendo-switch-off-thumb-border: transparent !default;
 /// The background gradient of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-gradient: null !default;
@@ -120,7 +120,7 @@ $kendo-switch-on-track-bg: $kendo-color-primary !default;
 $kendo-switch-on-track-text: unset !default;
 /// The border color of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-border: $kendo-switch-on-track-bg !default;
+$kendo-switch-on-track-border: transparent !default;
 /// The background gradient of the track when the Switch is checked.
 /// @group switch
 $kendo-switch-on-track-gradient: null !default;
@@ -175,7 +175,7 @@ $kendo-switch-on-thumb-bg: if($kendo-enable-color-system, k-color( on-primary ),
 $kendo-switch-on-thumb-text: unset !default;
 /// The border color of the thumb when the Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-border: unset !default;
+$kendo-switch-on-thumb-border: $kendo-switch-on-thumb-bg !default;
 /// The background gradient of the thumb when the Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-gradient: null !default;

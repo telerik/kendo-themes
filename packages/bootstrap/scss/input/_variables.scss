@@ -1,9 +1,11 @@
 @use "sass:math";
-@use "../core/_index.scss" as *;
+
 @use "../button/_variables.scss" as *;
 // @use "bootstrap/scss/bootstrap.scss" as *;
 // @use "../_bootstrap_vars.scss" as *;
 @use "../_bootstrap_vars.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 // Input
 
 /// The default width of the Input components.
@@ -105,13 +107,13 @@ $kendo-input-sizes: (
 
 /// The background color of the Input components.
 /// @group input
-$kendo-input-bg: $input-bg !default;
+$kendo-input-bg: $kendo-component-bg !default;
 /// The text color of the Input components.
 /// @group input
-$kendo-input-text: $input-color !default;
+$kendo-input-text: k-contrast-color( $kendo-component-bg, $gray-900, $gray-300 ) !default;
 /// The border color of the Input components.
 /// @group input
-$kendo-input-border: $input-border-color !default;
+$kendo-input-border: if( k-is-light( $kendo-component-bg ), $gray-400, $gray-600 ) !default;
 /// The shadow of the Input components.
 /// @group input
 $kendo-input-shadow: null !default;
@@ -124,7 +126,7 @@ $kendo-input-hover-bg: null !default;
 $kendo-input-hover-text: null !default;
 /// The border color of the hovered Input components.
 /// @group input
-$kendo-input-hover-border: unset !default;
+$kendo-input-hover-border: $kendo-input-border !default;
 /// The shadow of the hovered Input components.
 /// @group input
 $kendo-input-hover-shadow: null !default;
@@ -137,7 +139,7 @@ $kendo-input-focus-bg: $input-focus-bg !default;
 $kendo-input-focus-text: $input-focus-color !default;
 /// The border color of the focused Input components.
 /// @group input
-$kendo-input-focus-border: $input-focus-border-color !default;
+$kendo-input-focus-border: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-tint( $kendo-selected-bg, 7 ) ) !default;
 /// The shadow of the focused Input components.
 /// @group input
 $kendo-input-focus-shadow: $input-focus-box-shadow !default;
@@ -233,7 +235,7 @@ $kendo-input-flat-focus-shadow: $kendo-input-focus-shadow !default;
 
 /// The text color of the Input placeholder.
 /// @group input
-$kendo-input-placeholder-text: $input-placeholder-color !default;
+$kendo-input-placeholder-text: $kendo-subtle-text !default;
 /// The opacity of the Input placeholder.
 /// @group input
 $kendo-input-placeholder-opacity: 1 !default;
