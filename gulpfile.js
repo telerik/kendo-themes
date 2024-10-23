@@ -121,6 +121,8 @@ function swatchJsonTransformer( json ) {
             }
 
             sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
+            // Universal variables are also included here as they are part of the a11y swatch
+            sassContent.push(universal.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
 
             sassContent.push(`);\n`);
 
