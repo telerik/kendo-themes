@@ -105,7 +105,7 @@ function swatchJsonTransformer( json ) {
         modern: () => {
             const sassContent = [];
 
-            sassContent.push(`@use "../scss/index.scss" as kendo-theme with (`);
+            sassContent.push(`@use "../scss/index.scss" as * with (`);
             sassContent.push(colorSystem.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
 
             if ( colorsMap.length ) {
@@ -118,7 +118,7 @@ function swatchJsonTransformer( json ) {
 
             sassContent.push(`);\n`);
 
-            sassContent.push(`@include kendo-theme.styles();`);
+            sassContent.push(`@include kendo-theme--styles();`);
 
             return sassContent.join( '\n' );
         },
