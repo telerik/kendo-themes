@@ -1,5 +1,6 @@
-@import "../list/_variables.scss";
-
+@use "../core/_index.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // CheckBox
 
@@ -192,3 +193,55 @@ $kendo-checkbox-ripple-bg: $kendo-checkbox-checked-bg !default;
 /// The opacity of the CheckBox' ripple.
 /// @group checkbox
 $kendo-checkbox-ripple-opacity: .25 !default;
+
+
+@forward "@progress/kendo-theme-default/scss/checkbox/_variables.scss" with (
+    $kendo-checkbox-border-width: $kendo-checkbox-border-width,
+    $kendo-checkbox-sm-size: $kendo-checkbox-sm-size,
+    $kendo-checkbox-md-size: $kendo-checkbox-md-size,
+    $kendo-checkbox-lg-size: $kendo-checkbox-lg-size,
+    $kendo-checkbox-sm-glyph-size: $kendo-checkbox-sm-glyph-size,
+    $kendo-checkbox-md-glyph-size: $kendo-checkbox-md-glyph-size,
+    $kendo-checkbox-lg-glyph-size: $kendo-checkbox-lg-glyph-size,
+    $kendo-checkbox-sm-ripple-size: $kendo-checkbox-sm-ripple-size,
+    $kendo-checkbox-md-ripple-size: $kendo-checkbox-md-ripple-size,
+    $kendo-checkbox-lg-ripple-size: $kendo-checkbox-lg-ripple-size,
+    $kendo-checkbox-sizes: $kendo-checkbox-sizes,
+    $kendo-checkbox-bg: $kendo-checkbox-bg,
+    $kendo-checkbox-text: $kendo-checkbox-text,
+    $kendo-checkbox-border: $kendo-checkbox-border,
+    $kendo-checkbox-hover-bg: $kendo-checkbox-hover-bg,
+    $kendo-checkbox-hover-text: $kendo-checkbox-hover-text,
+    $kendo-checkbox-hover-border: $kendo-checkbox-hover-border,
+    $kendo-checkbox-checked-bg: $kendo-checkbox-checked-bg,
+    $kendo-checkbox-checked-text: $kendo-checkbox-checked-text,
+    $kendo-checkbox-checked-border: $kendo-checkbox-checked-border,
+    $kendo-checkbox-indeterminate-bg: $kendo-checkbox-indeterminate-bg,
+    $kendo-checkbox-indeterminate-text: $kendo-checkbox-indeterminate-text,
+    $kendo-checkbox-indeterminate-border: $kendo-checkbox-indeterminate-border,
+    $kendo-checkbox-focus-border: $kendo-checkbox-focus-border,
+    $kendo-checkbox-focus-shadow: $kendo-checkbox-focus-shadow,
+    $kendo-checkbox-focus-checked-border: $kendo-checkbox-focus-checked-border,
+    $kendo-checkbox-focus-checked-shadow: $kendo-checkbox-focus-checked-shadow,
+    $kendo-checkbox-disabled-bg: $kendo-checkbox-disabled-bg,
+    $kendo-checkbox-disabled-text: $kendo-checkbox-disabled-text,
+    $kendo-checkbox-disabled-border: $kendo-checkbox-disabled-border,
+    $kendo-checkbox-disabled-checked-bg: $kendo-checkbox-disabled-checked-bg,
+    $kendo-checkbox-disabled-checked-text: $kendo-checkbox-disabled-checked-text,
+    $kendo-checkbox-disabled-checked-border: $kendo-checkbox-disabled-checked-border,
+    $kendo-checkbox-invalid-bg: $kendo-checkbox-invalid-bg,
+    $kendo-checkbox-invalid-text: $kendo-checkbox-invalid-text,
+    $kendo-checkbox-invalid-border: $kendo-checkbox-invalid-border,
+    $kendo-checkbox-indicator-type: $kendo-checkbox-indicator-type,
+    $kendo-checkbox-glyph-font-family: $kendo-checkbox-glyph-font-family,
+    $kendo-checkbox-checked-glyph: $kendo-checkbox-checked-glyph,
+    $kendo-checkbox-indeterminate-glyph: $kendo-checkbox-indeterminate-glyph,
+    $kendo-checkbox-checked-image: $kendo-checkbox-checked-image,
+    $kendo-checkbox-indeterminate-image: $kendo-checkbox-indeterminate-image,
+    $kendo-checkbox-label-margin-x: $kendo-checkbox-label-margin-x,
+    $kendo-checkbox-list-spacing: $kendo-checkbox-list-spacing,
+    $kendo-checkbox-list-item-padding-x: $kendo-checkbox-list-item-padding-x,
+    $kendo-checkbox-list-item-padding-y: $kendo-checkbox-list-item-padding-y,
+    $kendo-checkbox-ripple-bg: $kendo-checkbox-ripple-bg,
+    $kendo-checkbox-ripple-opacity: $kendo-checkbox-ripple-opacity
+);

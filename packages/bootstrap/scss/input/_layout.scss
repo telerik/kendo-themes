@@ -1,4 +1,6 @@
-@import "@progress/kendo-theme-default/scss/input/_layout.scss";
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/input/_layout.scss" as *;
 
 @mixin kendo-input--layout() {
 

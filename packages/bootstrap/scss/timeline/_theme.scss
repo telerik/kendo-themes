@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/timeline/_theme.scss";
+
+@use "@progress/kendo-theme-default/scss/timeline/_theme.scss" as *;
 
 
 @mixin kendo-timeline--theme() {

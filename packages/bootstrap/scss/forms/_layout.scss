@@ -1,4 +1,7 @@
-@import "@progress/kendo-theme-default/scss/forms/_layout.scss";
+@use "./_variables.scss" as *;
+@use "../input/_variables.scss" as *;
+
+@use "@progress/kendo-theme-default/scss/forms/_layout.scss" as *;
 
 @mixin kendo-form--layout() {
 
@@ -21,12 +24,12 @@
 
     .k-form {
         legend {
-            margin-bottom: $kendo-padding-md-y;
+            margin-bottom: k-spacing(2);
         }
 
         .k-field-info {
             margin-block: 0;
-            margin-inline: calc( #{$kendo-padding-md-x} / 2 );
+            margin-inline: calc( #{k-spacing(4)} / 2 );
         }
     }
 
@@ -37,14 +40,14 @@
 
         .k-form-field {
             > span:not(.k-widget) {
-                padding: calc( #{$kendo-padding-md-y} - #{$kendo-input-border-width} ) 0;
-                padding-right: $kendo-padding-md-x;
+                padding: calc( #{k-spacing(4)} - #{$kendo-input-border-width} ) 0;
+                padding-right: k-spacing(4);
             }
         }
     }
 
     .k-edit-label {
-        padding: calc( #{$kendo-padding-md-y} - #{$kendo-input-border-width} ) 0;
+        padding: calc( #{k-spacing(2)} - #{$kendo-input-border-width} ) 0;
     }
 
 }

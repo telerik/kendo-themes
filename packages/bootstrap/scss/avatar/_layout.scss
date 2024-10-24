@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/avatar/_layout.scss";
+@use "@progress/kendo-theme-default/scss/avatar/_layout.scss" as *;
 
 
 @mixin kendo-avatar--layout() {

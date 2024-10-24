@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/checkbox/_layout.scss";
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-default/scss/checkbox/_layout.scss" as *;
 
 
 @mixin kendo-checkbox--layout() {

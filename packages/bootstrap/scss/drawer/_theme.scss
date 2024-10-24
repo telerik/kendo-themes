@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/drawer/_theme.scss";
+@use "@progress/kendo-theme-default/scss/drawer/_theme.scss" as *;
 
 
 @mixin kendo-drawer--theme() {

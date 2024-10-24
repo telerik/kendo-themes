@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/progressbar/_theme.scss";
+@use "@progress/kendo-theme-default/scss/progressbar/_theme.scss" as *;
 
 
 @mixin kendo-progressbar--theme() {

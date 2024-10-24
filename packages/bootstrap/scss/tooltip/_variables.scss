@@ -1,17 +1,20 @@
+@use "../core/_index.scss" as *;
+@use "./_functions.scss" as *;
+
 // Tooltip
 
 /// The vertical padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-y: $tooltip-padding-y !default;
+$kendo-tooltip-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-x: $tooltip-padding-x !default;
+$kendo-tooltip-padding-x: k-spacing(2) !default;
 /// The width of the border around the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border-width: 0px !default;
 /// The border radius of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-border-radius: $tooltip-border-radius !default;
+$kendo-tooltip-border-radius: k-spacing(1.5) !default;
 
 /// The font family of the Tooltip.
 /// @group tooltip
@@ -32,7 +35,7 @@ $kendo-tooltip-title-line-height: var( --kendo-line-height-xs, normal ) !default
 
 /// The size of the Tooltip callout.
 /// @group tooltip
-$kendo-tooltip-callout-size: $tooltip-arrow-height !default;
+$kendo-tooltip-callout-size: calc( #{ k-spacing(8) } / 5 ) !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
@@ -48,23 +51,29 @@ $kendo-tooltip-border: $kendo-tooltip-bg !default;
 /// @group tooltip
 $kendo-tooltip-shadow: k-elevation(2) !default;
 
-@function tooltip-theme( $colors ) {
-    $_theme: ();
-
-    @each $name, $color in $colors {
-        $_theme: k-map-merge(( $name: (
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )),
-            background-color: $color,
-            border: $color,
-        )), $_theme );
-    }
-
-    @return $_theme;
-}
-
 /// The theme colors map for the Tooltip.
 /// @group tooltip
 $kendo-tooltip-theme-colors: $kendo-theme-colors !default;
 /// The generated theme colors map for the Tooltip.
 /// @group tooltip
 $kendo-tooltip-theme: tooltip-theme( $kendo-tooltip-theme-colors ) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/tooltip/_variables.scss" with (
+    $kendo-tooltip-padding-y: $kendo-tooltip-padding-y,
+    $kendo-tooltip-padding-x: $kendo-tooltip-padding-x,
+    $kendo-tooltip-border-width: $kendo-tooltip-border-width,
+    $kendo-tooltip-border-radius: $kendo-tooltip-border-radius,
+    $kendo-tooltip-font-family: $kendo-tooltip-font-family,
+    $kendo-tooltip-font-size: $kendo-tooltip-font-size,
+    $kendo-tooltip-line-height: $kendo-tooltip-line-height,
+    $kendo-tooltip-title-font-size: $kendo-tooltip-title-font-size,
+    $kendo-tooltip-title-line-height: $kendo-tooltip-title-line-height,
+    $kendo-tooltip-callout-size: $kendo-tooltip-callout-size,
+    $kendo-tooltip-bg: $kendo-tooltip-bg,
+    $kendo-tooltip-text: $kendo-tooltip-text,
+    $kendo-tooltip-border: $kendo-tooltip-border,
+    $kendo-tooltip-shadow: $kendo-tooltip-shadow,
+    $kendo-tooltip-theme-colors: $kendo-tooltip-theme-colors,
+    $kendo-tooltip-theme: $kendo-tooltip-theme
+);

@@ -1,8 +1,13 @@
+@use "sass:map";
+@use "sass:math";
+@use "../core/_index.scss" as *;
+
+
 // Button
 
 /// The width of the border around the Button.
 /// @group button
-$kendo-button-border-width: $btn-border-width !default;
+$kendo-button-border-width: 1px !default;
 
 /// The border radius of the Button.
 /// @group button
@@ -10,29 +15,29 @@ $kendo-button-border-radius: null !default;
 
 /// The horizontal padding of the Button.
 /// @group button
-$kendo-button-padding-x: $btn-padding-x !default;
+$kendo-button-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-x: $btn-padding-x-sm !default;
+$kendo-button-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-x: $btn-padding-x !default;
+$kendo-button-md-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-x: $btn-padding-x-lg !default;
+$kendo-button-lg-padding-x: k-spacing(4) !default;
 
 /// The vertical padding of the Button.
 /// @group button
-$kendo-button-padding-y: $btn-padding-y !default;
+$kendo-button-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: $btn-padding-y-sm !default;
+$kendo-button-sm-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-y: $btn-padding-y !default;
+$kendo-button-md-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-y: $btn-padding-y-lg !default;
+$kendo-button-lg-padding-y: k-spacing(2) !default;
 
 /// The font family of the Button.
 /// @group button
@@ -40,7 +45,7 @@ $kendo-button-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The font size of the Button.
 /// @group button
-$kendo-button-font-size: $btn-font-size !default;
+$kendo-button-font-size: $kendo-font-size !default;
 /// The font size of the small Button.
 /// @group button
 $kendo-button-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
@@ -53,10 +58,10 @@ $kendo-button-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// The line height used along with the $kendo-font-size variable.
 /// @group button
-$kendo-button-line-height: $btn-line-height !default;
+$kendo-button-line-height: $kendo-line-height !default;
 /// The line height used along with the $kendo-font-size variable of the small Button.
 /// @group button
-$kendo-button-sm-line-height: k-math-div( 20, 14 ) !default;
+$kendo-button-sm-line-height: math.div( 20, 14 ) !default;
 /// The line height used along with the $kendo-font-size variable of the medium Button.
 /// @group button
 $kendo-button-md-line-height: var( --kendo-line-height, normal ) !default;
@@ -103,7 +108,7 @@ $kendo-button-sizes: (
 
 /// The theme colors map for the Button.
 /// @group button
-$kendo-button-theme-colors: k-map-merge(
+$kendo-button-theme-colors: map.merge(
     $kendo-theme-colors,
     ( "base": if($kendo-enable-color-system, k-color( base ), #e4e7eb) )
 ) !default;
@@ -119,7 +124,7 @@ $kendo-button-text: if($kendo-enable-color-system, k-color( on-base ), k-contras
 $kendo-button-border: $kendo-button-bg !default;
 /// The base background gradient of the Button.
 /// @group button
-$kendo-button-gradient: null !default;
+$kendo-button-gradient: none !default;
 /// The base shadow of the Button.
 /// @group button
 $kendo-button-shadow: null !default;
@@ -135,7 +140,7 @@ $kendo-button-hover-text: null !default;
 $kendo-button-hover-border: if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-button-bg, 10% )) !default;
 /// The base background gradient of the hovered Button.
 /// @group button
-$kendo-button-hover-gradient: null !default;
+$kendo-button-hover-gradient: none !default;
 /// The base shadow of the hovered Button.
 /// @group button
 $kendo-button-hover-shadow: null !default;
@@ -205,7 +210,7 @@ $kendo-button-disabled-gradient: null !default;
 $kendo-button-disabled-shadow: null !default;
 
 // Solid Button
-$kendo-solid-button-gradient: null !default;
+$kendo-solid-button-gradient: none !default;
 $kendo-solid-button-shade-function: "k-color-darken" !default;
 $kendo-solid-button-shade-text-amount: 0 !default;
 $kendo-solid-button-shade-bg-amount: 0 !default;
@@ -255,3 +260,96 @@ $kendo-flat-button-focus-ring-opacity: .12 !default;
 /// The color transition of the Button.
 /// @group button
 $kendo-button-transition: $kendo-transition !default;
+
+
+@forward "@progress/kendo-theme-default/scss/button/_variables.scss" with (
+    $kendo-button-border-width: $kendo-button-border-width,
+    $kendo-button-border-radius: $kendo-button-border-radius,
+    $kendo-button-padding-x: $kendo-button-padding-x,
+    $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
+    $kendo-button-md-padding-x: $kendo-button-md-padding-x,
+    $kendo-button-lg-padding-x: $kendo-button-lg-padding-x,
+    $kendo-button-padding-y: $kendo-button-padding-y,
+    $kendo-button-sm-padding-y: $kendo-button-sm-padding-y,
+    $kendo-button-md-padding-y: $kendo-button-md-padding-y,
+    $kendo-button-lg-padding-y: $kendo-button-lg-padding-y,
+    $kendo-button-font-family: $kendo-button-font-family,
+    $kendo-button-font-size: $kendo-button-font-size,
+    $kendo-button-sm-font-size: $kendo-button-sm-font-size,
+    $kendo-button-md-font-size: $kendo-button-md-font-size,
+    $kendo-button-lg-font-size: $kendo-button-lg-font-size,
+    $kendo-button-line-height: $kendo-button-line-height,
+    $kendo-button-sm-line-height: $kendo-button-sm-line-height,
+    $kendo-button-md-line-height: $kendo-button-md-line-height,
+    $kendo-button-lg-line-height: $kendo-button-lg-line-height,
+    $kendo-button-calc-size: $kendo-button-calc-size,
+    $kendo-button-sm-calc-size: $kendo-button-sm-calc-size,
+    $kendo-button-md-calc-size: $kendo-button-md-calc-size,
+    $kendo-button-lg-calc-size: $kendo-button-lg-calc-size,
+    $kendo-button-inner-calc-size: $kendo-button-inner-calc-size,
+    $kendo-button-sm-inner-calc-size: $kendo-button-sm-inner-calc-size,
+    $kendo-button-md-inner-calc-size: $kendo-button-md-inner-calc-size,
+    $kendo-button-lg-inner-calc-size: $kendo-button-lg-inner-calc-size,
+    $kendo-button-sizes: $kendo-button-sizes,
+    $kendo-button-theme-colors: $kendo-button-theme-colors,
+    $kendo-button-bg: $kendo-button-bg,
+    $kendo-button-text: $kendo-button-text,
+    $kendo-button-border: $kendo-button-border,
+    $kendo-button-gradient: $kendo-button-gradient,
+    $kendo-button-shadow: $kendo-button-shadow,
+    $kendo-button-hover-bg: $kendo-button-hover-bg,
+    $kendo-button-hover-text: $kendo-button-hover-text,
+    $kendo-button-hover-border: $kendo-button-hover-border,
+    $kendo-button-hover-gradient: $kendo-button-hover-gradient,
+    $kendo-button-hover-shadow: $kendo-button-hover-shadow,
+    $kendo-button-active-bg: $kendo-button-active-bg,
+    $kendo-button-active-text: $kendo-button-active-text,
+    $kendo-button-active-border: $kendo-button-active-border,
+    $kendo-button-active-gradient: $kendo-button-active-gradient,
+    $kendo-button-active-shadow: $kendo-button-active-shadow,
+    $kendo-button-selected-bg: $kendo-button-selected-bg,
+    $kendo-button-selected-text: $kendo-button-selected-text,
+    $kendo-button-selected-border: $kendo-button-selected-border,
+    $kendo-button-selected-gradient: $kendo-button-selected-gradient,
+    $kendo-button-selected-shadow: $kendo-button-selected-shadow,
+    $kendo-button-focus-bg: $kendo-button-focus-bg,
+    $kendo-button-focus-text: $kendo-button-focus-text,
+    $kendo-button-focus-border: $kendo-button-focus-border,
+    $kendo-button-focus-gradient: $kendo-button-focus-gradient,
+    $kendo-button-focus-shadow: $kendo-button-focus-shadow,
+    $kendo-button-disabled-bg: $kendo-button-disabled-bg,
+    $kendo-button-disabled-text: $kendo-button-disabled-text,
+    $kendo-button-disabled-border: $kendo-button-disabled-border,
+    $kendo-button-disabled-gradient: $kendo-button-disabled-gradient,
+    $kendo-button-disabled-shadow: $kendo-button-disabled-shadow,
+    $kendo-solid-button-gradient: $kendo-solid-button-gradient,
+    $kendo-solid-button-shade-function: $kendo-solid-button-shade-function,
+    $kendo-solid-button-shade-text-amount: $kendo-solid-button-shade-text-amount,
+    $kendo-solid-button-shade-bg-amount: $kendo-solid-button-shade-bg-amount,
+    $kendo-solid-button-shade-border-amount: $kendo-solid-button-shade-border-amount,
+    $kendo-solid-button-hover-shade-text-amount: $kendo-solid-button-hover-shade-text-amount,
+    $kendo-solid-button-hover-shade-bg-amount: $kendo-solid-button-hover-shade-bg-amount,
+    $kendo-solid-button-hover-shade-border-amount: $kendo-solid-button-hover-shade-border-amount,
+    $kendo-solid-button-active-shade-text-amount: $kendo-solid-button-active-shade-text-amount,
+    $kendo-solid-button-active-shade-bg-amount: $kendo-solid-button-active-shade-bg-amount,
+    $kendo-solid-button-active-shade-border-amount: $kendo-solid-button-active-shade-border-amount,
+    $kendo-solid-button-shadow: $kendo-solid-button-shadow,
+    $kendo-solid-button-shadow-blur: $kendo-solid-button-shadow-blur,
+    $kendo-solid-button-shadow-spread: $kendo-solid-button-shadow-spread,
+    $kendo-solid-button-shadow-opacity: $kendo-solid-button-shadow-opacity,
+    $kendo-outline-button-shadow: $kendo-outline-button-shadow,
+    $kendo-outline-button-shadow-blur: $kendo-outline-button-shadow-blur,
+    $kendo-outline-button-shadow-spread: $kendo-outline-button-shadow-spread,
+    $kendo-outline-button-shadow-opacity: $kendo-outline-button-shadow-opacity,
+    $kendo-link-button-shadow: $kendo-link-button-shadow,
+    $kendo-link-button-shadow-blur: $kendo-link-button-shadow-blur,
+    $kendo-link-button-shadow-spread: $kendo-link-button-shadow-spread,
+    $kendo-link-button-shadow-opacity: $kendo-link-button-shadow-opacity,
+    $kendo-clear-button-focus-opacity: $kendo-clear-button-focus-opacity,
+    $kendo-flat-button-hover-opacity: $kendo-flat-button-hover-opacity,
+    $kendo-flat-button-focus-opacity: $kendo-flat-button-focus-opacity,
+    $kendo-flat-button-active-opacity: $kendo-flat-button-active-opacity,
+    $kendo-flat-button-selected-opacity: $kendo-flat-button-selected-opacity,
+    $kendo-flat-button-focus-ring-opacity: $kendo-flat-button-focus-ring-opacity,
+    $kendo-button-transition: $kendo-button-transition
+);
