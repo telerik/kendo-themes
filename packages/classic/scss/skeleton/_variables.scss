@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Skeleton
 
 /// The transform scale of the Skeleton text.
@@ -21,3 +23,13 @@ $kendo-skeleton-item-bg: if($kendo-enable-color-system, color-mix(in srgb, k-col
 /// The background color of the Skeleton wave animation.
 /// @group skeleton
 $kendo-skeleton-wave-bg: rgba( black, .04 ) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/skeleton/_variables.scss" with (
+    $kendo-skeleton-text-transform: $kendo-skeleton-text-transform,
+    $kendo-skeleton-text-border-radius: $kendo-skeleton-text-border-radius,
+    $kendo-skeleton-rect-border-radius: $kendo-skeleton-rect-border-radius,
+    $kendo-skeleton-circle-border-radius: $kendo-skeleton-circle-border-radius,
+    $kendo-skeleton-item-bg: $kendo-skeleton-item-bg,
+    $kendo-skeleton-wave-bg: $kendo-skeleton-wave-bg
+);

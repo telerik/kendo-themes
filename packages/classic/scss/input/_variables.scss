@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../button/_variables.scss" as *;
+
 // Input
 
 /// The default width of the Input components.
@@ -106,7 +110,7 @@ $kendo-input-bg: $kendo-component-bg !default;
 $kendo-input-text: $kendo-component-text !default;
 /// The border color of the Input components.
 /// @group input
-$kendo-input-border: $kendo-button-border !default;
+$kendo-input-border: $kendo-component-border !default;
 /// The shadow of the Input components.
 /// @group input
 $kendo-input-shadow: null !default;
@@ -119,7 +123,7 @@ $kendo-input-hover-bg: null !default;
 $kendo-input-hover-text: null !default;
 /// The border color of the hovered Input components.
 /// @group input
-$kendo-input-hover-border: $kendo-button-hover-border !default;
+$kendo-input-hover-border: if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-button-bg, 3 )) !default;
 /// The shadow of the hovered Input components.
 /// @group input
 $kendo-input-hover-shadow: null !default;
@@ -165,7 +169,7 @@ $kendo-input-disabled-shadow: null !default;
 $kendo-input-outline-bg: null !default;
 /// The text color of the outline Input components.
 /// @group input
-$kendo-input-outline-text: null !default;
+$kendo-input-outline-text: unset !default;
 /// The border color of the outline Input components.
 /// @group input
 $kendo-input-outline-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-button-text, .5)) !default;
@@ -257,13 +261,13 @@ $kendo-input-values-margin-x: $kendo-input-values-margin-y !default;
 
 /// The width of the Input button.
 /// @group input
-$kendo-input-button-width: null !default;
+$kendo-input-button-width: unset !default;
 /// The border width of the Input button.
 /// @group input
 $kendo-input-button-border-width: 1px !default;
 /// The width of the Input spinner button.
 /// @group input
-$kendo-input-spinner-width: null !default;
+$kendo-input-spinner-width: unset !default;
 /// The icon offset of the Input spinner button.
 /// @group input
 $kendo-input-spinner-icon-offset: null !default;
@@ -441,3 +445,132 @@ $kendo-picker-flat-hover-focus-text: null !default;
 $kendo-picker-flat-hover-focus-border: null !default;
 
 
+
+
+@forward "@progress/kendo-theme-default/scss/input/_variables.scss" with (
+    $kendo-input-default-width: $kendo-input-default-width,
+    $kendo-input-border-width: $kendo-input-border-width,
+    $kendo-input-border-height: $kendo-input-border-height,
+    $kendo-input-border-radius: $kendo-input-border-radius,
+    $kendo-input-padding-x: $kendo-input-padding-x,
+    $kendo-input-sm-padding-x: $kendo-input-sm-padding-x,
+    $kendo-input-md-padding-x: $kendo-input-md-padding-x,
+    $kendo-input-lg-padding-x: $kendo-input-lg-padding-x,
+    $kendo-input-padding-y: $kendo-input-padding-y,
+    $kendo-input-sm-padding-y: $kendo-input-sm-padding-y,
+    $kendo-input-md-padding-y: $kendo-input-md-padding-y,
+    $kendo-input-lg-padding-y: $kendo-input-lg-padding-y,
+    $kendo-input-font-family: $kendo-input-font-family,
+    $kendo-input-font-size: $kendo-input-font-size,
+    $kendo-input-sm-font-size: $kendo-input-sm-font-size,
+    $kendo-input-md-font-size: $kendo-input-md-font-size,
+    $kendo-input-lg-font-size: $kendo-input-lg-font-size,
+    $kendo-input-line-height: $kendo-input-line-height,
+    $kendo-input-sm-line-height: $kendo-input-sm-line-height,
+    $kendo-input-md-line-height: $kendo-input-md-line-height,
+    $kendo-input-lg-line-height: $kendo-input-lg-line-height,
+    $kendo-input-sizes: $kendo-input-sizes,
+    $kendo-input-bg: $kendo-input-bg,
+    $kendo-input-text: $kendo-input-text,
+    $kendo-input-border: $kendo-input-border,
+    $kendo-input-shadow: $kendo-input-shadow,
+    $kendo-input-hover-bg: $kendo-input-hover-bg,
+    $kendo-input-hover-text: $kendo-input-hover-text,
+    $kendo-input-hover-border: $kendo-input-hover-border,
+    $kendo-input-hover-shadow: $kendo-input-hover-shadow,
+    $kendo-input-focus-bg: $kendo-input-focus-bg,
+    $kendo-input-focus-text: $kendo-input-focus-text,
+    $kendo-input-focus-border: $kendo-input-focus-border,
+    $kendo-input-focus-shadow: $kendo-input-focus-shadow,
+    $kendo-input-selected-bg: $kendo-input-selected-bg,
+    $kendo-input-selected-text: $kendo-input-selected-text,
+    $kendo-input-disabled-bg: $kendo-input-disabled-bg,
+    $kendo-input-disabled-text: $kendo-input-disabled-text,
+    $kendo-input-disabled-border: $kendo-input-disabled-border,
+    $kendo-input-disabled-gradient: $kendo-input-disabled-gradient,
+    $kendo-input-disabled-shadow: $kendo-input-disabled-shadow,
+    $kendo-input-outline-bg: $kendo-input-outline-bg,
+    $kendo-input-outline-text: $kendo-input-outline-text,
+    $kendo-input-outline-border: $kendo-input-outline-border,
+    $kendo-input-outline-hover-bg: $kendo-input-outline-hover-bg,
+    $kendo-input-outline-hover-text: $kendo-input-outline-hover-text,
+    $kendo-input-outline-hover-border: $kendo-input-outline-hover-border,
+    $kendo-input-outline-focus-bg: $kendo-input-outline-focus-bg,
+    $kendo-input-outline-focus-text: $kendo-input-outline-focus-text,
+    $kendo-input-outline-focus-border: $kendo-input-outline-focus-border,
+    $kendo-input-outline-focus-shadow: $kendo-input-outline-focus-shadow,
+    $kendo-input-flat-bg: $kendo-input-flat-bg,
+    $kendo-input-flat-text: $kendo-input-flat-text,
+    $kendo-input-flat-border: $kendo-input-flat-border,
+    $kendo-input-flat-hover-bg: $kendo-input-flat-hover-bg,
+    $kendo-input-flat-hover-text: $kendo-input-flat-hover-text,
+    $kendo-input-flat-hover-border: $kendo-input-flat-hover-border,
+    $kendo-input-flat-focus-bg: $kendo-input-flat-focus-bg,
+    $kendo-input-flat-focus-text: $kendo-input-flat-focus-text,
+    $kendo-input-flat-focus-border: $kendo-input-flat-focus-border,
+    $kendo-input-flat-focus-shadow: $kendo-input-flat-focus-shadow,
+    $kendo-input-placeholder-text: $kendo-input-placeholder-text,
+    $kendo-input-placeholder-opacity: $kendo-input-placeholder-opacity,
+    $kendo-input-clear-value-text: $kendo-input-clear-value-text,
+    $kendo-input-clear-value-opacity: $kendo-input-clear-value-opacity,
+    $kendo-input-clear-value-hover-text: $kendo-input-clear-value-hover-text,
+    $kendo-input-clear-value-hover-opacity: $kendo-input-clear-value-hover-opacity,
+    $kendo-input-values-margin-y: $kendo-input-values-margin-y,
+    $kendo-input-values-margin-x: $kendo-input-values-margin-x,
+    $kendo-input-button-width: $kendo-input-button-width,
+    $kendo-input-button-border-width: $kendo-input-button-border-width,
+    $kendo-input-spinner-width: $kendo-input-spinner-width,
+    $kendo-input-spinner-icon-offset: $kendo-input-spinner-icon-offset,
+    $kendo-input-separator-text: $kendo-input-separator-text,
+    $kendo-input-separator-opacity: $kendo-input-separator-opacity,
+    $kendo-input-prefix-text: $kendo-input-prefix-text,
+    $kendo-input-suffix-text: $kendo-input-suffix-text,
+    $kendo-input-invalid-border: $kendo-input-invalid-border,
+    $kendo-input-invalid-shadow: $kendo-input-invalid-shadow,
+    $kendo-picker-bg: $kendo-picker-bg,
+    $kendo-picker-text: $kendo-picker-text,
+    $kendo-picker-border: $kendo-picker-border,
+    $kendo-picker-gradient: $kendo-picker-gradient,
+    $kendo-picker-shadow: $kendo-picker-shadow,
+    $kendo-picker-hover-bg: $kendo-picker-hover-bg,
+    $kendo-picker-hover-text: $kendo-picker-hover-text,
+    $kendo-picker-hover-border: $kendo-picker-hover-border,
+    $kendo-picker-hover-gradient: $kendo-picker-hover-gradient,
+    $kendo-picker-hover-shadow: $kendo-picker-hover-shadow,
+    $kendo-picker-focus-bg: $kendo-picker-focus-bg,
+    $kendo-picker-focus-text: $kendo-picker-focus-text,
+    $kendo-picker-focus-border: $kendo-picker-focus-border,
+    $kendo-picker-focus-gradient: $kendo-picker-focus-gradient,
+    $kendo-picker-focus-shadow: $kendo-picker-focus-shadow,
+    $kendo-picker-disabled-bg: $kendo-picker-disabled-bg,
+    $kendo-picker-disabled-text: $kendo-picker-disabled-text,
+    $kendo-picker-disabled-border: $kendo-picker-disabled-border,
+    $kendo-picker-disabled-gradient: $kendo-picker-disabled-gradient,
+    $kendo-picker-disabled-shadow: $kendo-picker-disabled-shadow,
+    $kendo-picker-outline-bg: $kendo-picker-outline-bg,
+    $kendo-picker-outline-text: $kendo-picker-outline-text,
+    $kendo-picker-outline-border: $kendo-picker-outline-border,
+    $kendo-picker-outline-hover-bg: $kendo-picker-outline-hover-bg,
+    $kendo-picker-outline-hover-text: $kendo-picker-outline-hover-text,
+    $kendo-picker-outline-hover-border: $kendo-picker-outline-hover-border,
+    $kendo-picker-outline-focus-bg: $kendo-picker-outline-focus-bg,
+    $kendo-picker-outline-focus-text: $kendo-picker-outline-focus-text,
+    $kendo-picker-outline-focus-border: $kendo-picker-outline-focus-border,
+    $kendo-picker-outline-focus-shadow: $kendo-picker-outline-focus-shadow,
+    $kendo-picker-outline-hover-focus-bg: $kendo-picker-outline-hover-focus-bg,
+    $kendo-picker-outline-hover-focus-text: $kendo-picker-outline-hover-focus-text,
+    $kendo-picker-outline-hover-focus-border: $kendo-picker-outline-hover-focus-border,
+    $kendo-picker-flat-bg: $kendo-picker-flat-bg,
+    $kendo-picker-flat-text: $kendo-picker-flat-text,
+    $kendo-picker-flat-border: $kendo-picker-flat-border,
+    $kendo-picker-flat-hover-bg: $kendo-picker-flat-hover-bg,
+    $kendo-picker-flat-hover-text: $kendo-picker-flat-hover-text,
+    $kendo-picker-flat-hover-border: $kendo-picker-flat-hover-border,
+    $kendo-picker-flat-focus-bg: $kendo-picker-flat-focus-bg,
+    $kendo-picker-flat-focus-text: $kendo-picker-flat-focus-text,
+    $kendo-picker-flat-focus-border: $kendo-picker-flat-focus-border,
+    $kendo-picker-flat-focus-shadow: $kendo-picker-flat-focus-shadow,
+    $kendo-picker-flat-hover-focus-bg: $kendo-picker-flat-hover-focus-bg,
+    $kendo-picker-flat-hover-focus-text: $kendo-picker-flat-hover-focus-text,
+    $kendo-picker-flat-hover-focus-border: $kendo-picker-flat-hover-focus-border
+);

@@ -1,6 +1,10 @@
+
+@use "sass:math";
+@use "../core/_index.scss" as *;
+
 // Drag hint
-$kendo-drag-hint-padding-x: $kendo-padding-md-x !default;
-$kendo-drag-hint-padding-y: $kendo-padding-md-y !default;
+$kendo-drag-hint-padding-x: k-spacing(2) !default;
+$kendo-drag-hint-padding-y: k-spacing(1) !default;
 $kendo-drag-hint-border-width: 1px !default;
 $kendo-drag-hint-border-radius: k-border-radius(md) !default;
 $kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
@@ -18,10 +22,34 @@ $kendo-drag-hint-opacity: null !default;
 
 // Drop hint
 $kendo-drop-hint-arrow-size: 8px !default;
-$kendo-drop-hint-arrow-spacing: k-math-div( $kendo-drop-hint-arrow-size, 2 ) !default;
+$kendo-drop-hint-arrow-spacing: math.div( $kendo-drop-hint-arrow-size, 2 ) !default;
 $kendo-drop-hint-line-h-width: 20px !default;
 $kendo-drop-hint-line-h-height: 1px !default;
 $kendo-drop-hint-line-v-width: $kendo-drop-hint-line-h-height !default;
 $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
 
 $kendo-drop-hint-bg: $kendo-color-primary !default;
+
+
+@forward "@progress/kendo-theme-default/scss/draggable/_variables.scss" with (
+    $kendo-drag-hint-padding-x: $kendo-drag-hint-padding-x,
+    $kendo-drag-hint-padding-y: $kendo-drag-hint-padding-y,
+    $kendo-drag-hint-border-width: $kendo-drag-hint-border-width,
+    $kendo-drag-hint-border-radius: $kendo-drag-hint-border-radius,
+    $kendo-drag-hint-font-size: $kendo-drag-hint-font-size,
+    $kendo-drag-hint-font-family: $kendo-drag-hint-font-family,
+    $kendo-drag-hint-line-height: $kendo-drag-hint-line-height,
+    $kendo-drag-hint-bg: $kendo-drag-hint-bg,
+    $kendo-drag-hint-text: $kendo-drag-hint-text,
+    $kendo-drag-hint-border: $kendo-drag-hint-border,
+    $kendo-drag-hint-gradient: $kendo-drag-hint-gradient,
+    $kendo-drag-hint-shadow: $kendo-drag-hint-shadow,
+    $kendo-drag-hint-opacity: $kendo-drag-hint-opacity,
+    $kendo-drop-hint-arrow-size: $kendo-drop-hint-arrow-size,
+    $kendo-drop-hint-arrow-spacing: $kendo-drop-hint-arrow-spacing,
+    $kendo-drop-hint-line-h-width: $kendo-drop-hint-line-h-width,
+    $kendo-drop-hint-line-h-height: $kendo-drop-hint-line-h-height,
+    $kendo-drop-hint-line-v-width: $kendo-drop-hint-line-v-width,
+    $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-v-height,
+    $kendo-drop-hint-bg: $kendo-drop-hint-bg
+);

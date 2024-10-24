@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/signature/_layout.scss";
+@use "@progress/kendo-theme-default/scss/signature/_layout.scss" as *;
 
 
 @mixin kendo-signature--layout() {

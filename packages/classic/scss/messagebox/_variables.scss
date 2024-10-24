@@ -1,7 +1,9 @@
+@use "../core/_index.scss" as *;
+
 // Message box
 $kendo-message-box-margin: 0 0 k-spacing(4) 0 !default;
-$kendo-message-box-padding-x: $kendo-padding-md-x !default;
-$kendo-message-box-padding-y: $kendo-padding-md-y !default;
+$kendo-message-box-padding-x: k-spacing(2) !default;
+$kendo-message-box-padding-y: k-spacing(1) !default;
 $kendo-message-box-border-width: 0 0 0 4px !default;
 
 $kendo-message-box-font-size: var( --kendo-font-size, inherit ) !default;
@@ -13,3 +15,18 @@ $kendo-message-box-border-level: -9 !default;
 
 $kendo-message-box-link-font-style: italic !default;
 $kendo-message-box-link-text-decoration: underline !default;
+
+
+@forward "@progress/kendo-theme-default/scss/messagebox/_variables.scss" with (
+    $kendo-message-box-margin: $kendo-message-box-margin,
+    $kendo-message-box-padding-x: $kendo-message-box-padding-x,
+    $kendo-message-box-padding-y: $kendo-message-box-padding-y,
+    $kendo-message-box-border-width: $kendo-message-box-border-width,
+    $kendo-message-box-font-size: $kendo-message-box-font-size,
+    $kendo-message-box-line-height: $kendo-message-box-line-height,
+    $kendo-message-box-bg-level: $kendo-message-box-bg-level,
+    $kendo-message-box-text-level: $kendo-message-box-text-level,
+    $kendo-message-box-border-level: $kendo-message-box-border-level,
+    $kendo-message-box-link-font-style: $kendo-message-box-link-font-style,
+    $kendo-message-box-link-text-decoration: $kendo-message-box-link-text-decoration
+);

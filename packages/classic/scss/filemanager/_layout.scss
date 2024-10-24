@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/filemanager/_layout.scss";
+@use "@progress/kendo-theme-default/scss/filemanager/_layout.scss" as *;
 
 
 @mixin kendo-file-manager--layout() {

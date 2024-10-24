@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 // BottomNavigation
 
 /// The horizontal padding of the BottomNavigation.
@@ -39,7 +42,7 @@ $kendo-bottom-nav-item-min-width: 72px !default;
 $kendo-bottom-nav-item-max-width: null !default;
 /// The minimum height of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-min-height: calc( #{$kendo-icon-size * 2.5} + calc( #{$kendo-padding-md-x} * 2 ) - calc( #{$kendo-bottom-nav-padding-x} * 2 ) ) !default;
+$kendo-bottom-nav-item-min-height: calc( #{$kendo-icon-size * 2.5} + calc( #{k-spacing(2)} * 2 ) - calc( #{$kendo-bottom-nav-padding-x} * 2 ) ) !default;
 /// The border radius of the BottomNavigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-border-radius: k-border-radius(md) !default;
@@ -60,3 +63,26 @@ $kendo-bottom-nav-flat-bg: $kendo-component-bg !default;
 /// The border color of the flat BottomNavigation.
 /// @group bottom-navigation
 $kendo-bottom-nav-flat-border: $kendo-component-border !default;
+
+
+@forward "@progress/kendo-theme-default/scss/bottom-navigation/_variables.scss" with (
+    $kendo-bottom-nav-padding-x: $kendo-bottom-nav-padding-x,
+    $kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-y,
+    $kendo-bottom-nav-gap: $kendo-bottom-nav-gap,
+    $kendo-bottom-nav-border-width: $kendo-bottom-nav-border-width,
+    $kendo-bottom-nav-font-family: $kendo-bottom-nav-font-family,
+    $kendo-bottom-nav-font-size: $kendo-bottom-nav-font-size,
+    $kendo-bottom-nav-line-height: $kendo-bottom-nav-line-height,
+    $kendo-bottom-nav-letter-spacing: $kendo-bottom-nav-letter-spacing,
+    $kendo-bottom-nav-item-padding-x: $kendo-bottom-nav-item-padding-x,
+    $kendo-bottom-nav-item-padding-y: $kendo-bottom-nav-item-padding-y,
+    $kendo-bottom-nav-item-min-width: $kendo-bottom-nav-item-min-width,
+    $kendo-bottom-nav-item-max-width: $kendo-bottom-nav-item-max-width,
+    $kendo-bottom-nav-item-min-height: $kendo-bottom-nav-item-min-height,
+    $kendo-bottom-nav-item-border-radius: $kendo-bottom-nav-item-border-radius,
+    $kendo-bottom-nav-item-gap: $kendo-bottom-nav-item-gap,
+    $kendo-bottom-nav-shadow: $kendo-bottom-nav-shadow,
+    $kendo-bottom-nav-flat-text: $kendo-bottom-nav-flat-text,
+    $kendo-bottom-nav-flat-bg: $kendo-bottom-nav-flat-bg,
+    $kendo-bottom-nav-flat-border: $kendo-bottom-nav-flat-border
+);

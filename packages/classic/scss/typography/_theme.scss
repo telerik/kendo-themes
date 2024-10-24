@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/typography/_theme.scss";
+@use "@progress/kendo-theme-default/scss/typography/_theme.scss" as *;
 
 
 @mixin kendo-typography--theme() {
