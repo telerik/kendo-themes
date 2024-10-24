@@ -56,6 +56,7 @@
     "clean": "find . -name \"node_modules\" -type d -prune | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune -maxdepth 2 | xargs rm -rf",
     "clean:tests": "node ./scripts/cleanup-test-results.js",
+    "dist:all": "gulp dist:all",
     "dist:swatches": "gulp dist:swatches",
     "sass": "npm run sass -ws --if-present",
     "sass:swatches": "npm run sass:swatches -ws --if-present",
