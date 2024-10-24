@@ -23,6 +23,40 @@ const paths = {
 };
 
 // #region helpers
+function flattenAll( cwds, options ) {
+
+    const fileContent =  `@forward "../scss/index.scss";\n@use "../scss/index.scss" as *;\n\n@include kendo-theme--styles();`
+
+    const utilsFileContent = `@use "../scss/index.import.scss" as *;\n\n@include kendo-utils();`
+
+    cwds.forEach( cwd => {
+        let file = path.resolve( cwd, options.file );
+        let output = { path: path.resolve( cwd, options.output.path ), filename: 'all.scss' };
+
+        if (fs.existsSync( file )) {
+            fs.mkdirSync( output.path, { recursive: true } );
+
+            if ( cwd.includes('utils') ) {
+                fs.writeFileSync(path.resolve( output.path, output.filename ), utilsFileContent);
+            } else {
+                fs.writeFileSync( path.resolve( output.path, output.filename), fileContent);
+            }
+
+        }
+    });
+};
+
+function distAll() {
+    let file = paths.sass.theme;
+    let output = { path: paths.sass.dist };
+    let themes = globSync( paths.sass.themes );
+
+    flattenAll( themes, { file, output } );
+
+    return Promise.resolve();
+}
+gulp.task("dist:all", distAll);
+
 function writeSwatches( cwds, options ) {
 
     cwds.forEach( cwd => {
