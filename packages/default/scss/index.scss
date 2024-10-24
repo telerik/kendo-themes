@@ -334,9 +334,6 @@
     // Core
     @include core-styles();
 
-    // Color system
-    @include color-system-styles();
-
 
     // Typography
     @include kendo-typography--styles();
