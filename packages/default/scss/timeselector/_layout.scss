@@ -1,3 +1,9 @@
+@use "sass:map";
+@use "sass:list";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+@use "../button/_variables.scss" as *;
+
 @mixin kendo-time-selector--layout-base() {
 
     // Time selector
@@ -77,7 +83,7 @@
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
-        top: calc( 50% + #{k-math-div( $kendo-time-list-title-height, 2 )});
+        top: calc( 50% + #{list.slash( $kendo-time-list-title-height, 2 )});
         left: 0;
         right: 0;
         transform: translateY(-50%);
@@ -116,7 +122,7 @@
                 width: 100%;
                 left: 0;
                 pointer-events: none;
-                height: calc( 50% - #{k-math-div( $kendo-time-list-highlight-height, 2 )} );
+                height: calc( 50% - #{list.slash( $kendo-time-list-highlight-height, 2 )} );
                 box-sizing: border-box;
                 border-width: 0;
                 border-style: solid;
@@ -205,16 +211,16 @@
         align-items: center;
         position: relative;
         z-index: 11;
-        top: calc( #{k-math-div( $kendo-time-list-title-height, 2 )} );
+        top: calc( #{list.slash( $kendo-time-list-title-height, 2 )} );
     }
 
 
     // Time selector sizes
     @each $size, $size-props in $kendo-time-selector-sizes {
-        $_font-size: k-map-get( $size-props, font-size );
-        $_line-height: k-map-get( $size-props, line-height );
-        $_list-item-padding-x: k-map-get( $size-props, list-item-padding-x );
-        $_list-item-padding-y: k-map-get( $size-props, list-item-padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_list-item-padding-x: map.get( $size-props, list-item-padding-x );
+        $_list-item-padding-y: map.get( $size-props, list-item-padding-y );
         $_highlight-height: calc( calc( #{$_font-size} * #{$_line-height} ) + calc( #{ $_list-item-padding-y} * 2 ) );
 
 

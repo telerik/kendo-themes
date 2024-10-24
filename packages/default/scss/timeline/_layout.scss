@@ -1,3 +1,9 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "./variables.scss" as *;
+@use "../card/_variables.scss" as *;
+
 @mixin kendo-timeline--layout-base() {
 
     .k-timeline {
@@ -219,7 +225,7 @@
         .k-timeline-circle {
             margin-top: $kendo-timeline-track-event-offset;
             transform: translate(-50%, -50%);
-            margin-right: - k-math-div( $kendo-timeline-circle-width, 2 );
+            margin-right: - math.div( $kendo-timeline-circle-width, 2 );
         }
 
         &.k-timeline-alternating {

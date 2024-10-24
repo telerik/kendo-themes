@@ -1,3 +1,9 @@
+@use "sass:list";
+@use "../core/_index.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../popup/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
 // Menu
 
 /// The width of the border around the Menu.
@@ -133,10 +139,10 @@ $kendo-menu-scroll-button-hover-gradient: null !default;
 
 /// The inline margin of the horizontal Menu separator.
 /// @group menu
-$kendo-menu-separator-margin-inline: k-spacing(1);
+$kendo-menu-separator-margin-inline: k-spacing(1) !default;
 /// The block margin of the horizontal Menu separator.
 /// @group menu
-$kendo-menu-separator-margin-block: k-spacing(1.5);
+$kendo-menu-separator-margin-block: k-spacing(1.5) !default;
 /// The border color of the Menu separator.
 /// @group menu
 $kendo-menu-separator-border: if($kendo-enable-color-system, k-color(border), $kendo-component-border) !default;
@@ -215,9 +221,9 @@ $kendo-menu-popup-lg-item-icon-margin-start: $kendo-menu-popup-lg-item-padding-x
 
 /// The end margin of the Menu item expand icon.
 /// @group menu
-$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) ) !default;
-$kendo-menu-popup-md-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-md-item-padding-end} - #{k-math-div( $kendo-menu-popup-md-item-padding-x, 2 )}) ) !default;
-$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-item-padding-end} - #{k-math-div( $kendo-menu-popup-lg-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{list.slash( $kendo-menu-popup-sm-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-md-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-md-item-padding-end} - #{list.slash( $kendo-menu-popup-md-item-padding-x, 2 )}) ) !default;
+$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-lg-item-padding-end} - #{list.slash( $kendo-menu-popup-lg-item-padding-x, 2 )}) ) !default;
 
 /// The spacing between the Menu items in popup.
 /// @group menu

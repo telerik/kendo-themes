@@ -1,32 +1,9 @@
-$wcag-min-contrast-ratio: 4.5 !default;
+// Core Index
+@forward "@progress/kendo-theme-core/scss/index.import.scss";
 
 // Variables
-@import "../_variables.scss";
+@forward "../_variables.scss";
 
-// Color System
-@import "./color-system/_swatch.scss";
+// Color System Backward Compatibility
+@forward "./color-system/_swatch-legacy.scss";
 
-// Typography
-@import "./typography/index.import.scss";
-
-// Spacing
-@import "./spacing/index.import.scss";
-
-@import "@progress/kendo-theme-core/scss/index.import.scss";
-
-// Backward compatibility
-@import "./color-system/_swatch-legacy.scss";
-
-// Expose
-@include exports("kendo-core-styles") {
-    @include kendo-core--styles();
-
-    // Elevation System
-    @include kendo-elevation--styles();
-    // Typography
-    @include kendo-core--typography--styles();
-    // Spacing
-    @include kendo-spacing--styles();
-    // Radii
-    @include kendo-border-radius--styles();
-}

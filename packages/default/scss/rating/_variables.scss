@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "../core/_index.scss" as *;
+
 // Rating
 
 /// The font family of the Rating.
@@ -12,21 +16,21 @@ $kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal margin of the Rating container.
 /// @group rating
-$kendo-rating-container-margin-x: $kendo-padding-sm-x !default;
+$kendo-rating-container-margin-x: k-spacing(1) !default;
 
 /// The horizontal padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-x: $kendo-padding-sm-x !default;
+$kendo-rating-item-padding-x: k-spacing(1) !default;
 /// The vertical padding of the Rating item.
 /// @group rating
-$kendo-rating-item-padding-y: $kendo-padding-md-y !default;
+$kendo-rating-item-padding-y: k-spacing(1) !default;
 
 /// The horizontal margin of the Rating label.
 /// @group rating
-$kendo-rating-label-margin-x: $kendo-padding-md-x !default;
+$kendo-rating-label-margin-x: k-spacing(2) !default;
 /// The vertical margin of the Rating label.
 /// @group rating
-$kendo-rating-label-margin-y: $kendo-padding-md-y !default;
+$kendo-rating-label-margin-y: k-spacing(1) !default;
 /// The line height of the Rating label.
 /// @group rating
 $kendo-rating-label-line-height: var( --kendo-line-height-lg, normal ) !default;

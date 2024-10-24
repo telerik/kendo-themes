@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+@use "sass:map";
+
 @mixin kendo-badge--layout-base() {
 
     .k-badge {
@@ -53,11 +57,11 @@
 
     // Badge sizes
     @each $size, $size-props in $kendo-badge-sizes {
-        $_padding-x: k-map-get( $size-props, padding-x );
-        $_padding-y: k-map-get( $size-props, padding-y );
-        $_font-size: k-map-get( $size-props, font-size );
-        $_line-height: k-map-get( $size-props, line-height );
-        $_min-width: k-map-get( $size-props, min-width );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_min-width: map.get( $size-props, min-width );
 
         .k-badge-#{$size} {
             padding-block: $_padding-y;

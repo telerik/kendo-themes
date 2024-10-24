@@ -22,15 +22,17 @@
 /// @group resize
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-interactivity-resize"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--interactivity--resize() {
-    @include module-render("utils-interactivity-resize") {
+    @include import-once("utils-interactivity-resize") {
 
         // Resize utility classes
-        $kendo-utils-resize: k-map-get( $kendo-utils, "resize" ) !default;
+        $kendo-utils-resize: map.get( $kendo-utils, "resize" ) !default;
         @include generate-utils( resize, resize, $kendo-utils-resize );
 
     }

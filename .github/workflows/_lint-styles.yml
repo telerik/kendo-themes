@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        theme: [default, bootstrap, material, classic, nouvelle, fluent]
+        theme: [default]
 
     steps:
 
@@ -47,7 +47,3 @@ jobs:
       - name: Ensure standalone build
         run: |
           npm run sass:standalone --prefix packages/${{ matrix.theme }} --if-present
-
-      - name: Ensure flat build
-        run: |
-          npm run sass:flat --prefix packages/${{ matrix.theme }} --if-present

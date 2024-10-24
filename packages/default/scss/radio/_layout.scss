@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
+
 @mixin kendo-radio--layout-base() {
 
     // Radio
@@ -188,9 +192,9 @@
 
     // Radio size
     @each $size, $size-props in $kendo-radio-sizes {
-        $_size: k-map-get( $size-props, size );
-        $_glyph-size: k-map-get( $size-props, glyph-size );
-        $_ripple-size: k-map-get( $size-props, ripple-size );
+        $_size: map.get( $size-props, size );
+        $_glyph-size: map.get( $size-props, glyph-size );
+        $_ripple-size: map.get( $size-props, ripple-size );
 
         .k-radio-#{$size} {
             width: $_size;

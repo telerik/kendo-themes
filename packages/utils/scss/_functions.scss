@@ -1,1 +1,40 @@
-@import "@progress/kendo-theme-core/scss/functions/index.import.scss";
+@forward "@progress/kendo-theme-core/scss/functions/index.import.scss";
+
+// stylelint-disable scss/at-function-pattern
+@function k-translate( $val ) {
+    @return translate( $val );
+}
+@function k-translate-x( $val ) {
+    @return translateX( $val );
+}
+@function k-translate-y( $val ) {
+    @return translateY( $val );
+}
+// stylelint-enable scss/at-function-pattern
+
+// stylelint-disable scss/at-function-pattern
+@function k-skew-x( $val ) {
+    @return skewX( $val );
+}
+@function k-skew-y( $val ) {
+    @return skewY( $val );
+}
+// stylelint-enable scss/at-function-pattern
+
+// stylelint-disable scss/at-function-pattern
+@function k-rotate( $val ) {
+    @return rotate( $val );
+}
+// stylelint-enable scss/at-function-pattern
+
+// stylelint-disable scss/at-function-pattern
+@function k-scale( $val ) {
+    @return scale( $val );
+}
+@function k-scale-x( $val ) {
+    @return scaleX( $val );
+}
+@function k-scale-y( $val ) {
+    @return scaleY( $val );
+}
+// stylelint-enable scss/at-function-pattern

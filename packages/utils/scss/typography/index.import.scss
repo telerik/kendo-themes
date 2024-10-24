@@ -1,23 +1,44 @@
 // font family
-@import "./_font-family.scss";
-@import "./_font-size.scss";
+@forward "./_font-family.scss";
+@forward "./_font-size.scss";
 // font smoothing
-@import "./_font-style.scss";
-@import "./_font-weight.scss";
+@forward "./_font-style.scss";
+@forward "./_font-weight.scss";
 // font variant
 // letter spacing
-@import "./_letter-spacing.scss";
+@forward "./_letter-spacing.scss";
 // line height
-@import "./_line-height.scss";
-@import "./_list-style.scss";
-@import "./_text-align.scss";
-@import "./_text-color.scss";
-@import "./_text-decoration.scss";
-@import "./_text-overflow.scss";
-@import "./_text-transform.scss";
+@forward "./_line-height.scss";
+@forward "./_list-style.scss";
+@forward "./_text-align.scss";
+@forward "./_text-color.scss";
+@forward "./_text-decoration.scss";
+@forward "./_text-overflow.scss";
+@forward "./_text-transform.scss";
 // text indent
-@import "./_vertical-align.scss";
-@import "./_white-space.scss";
+@forward "./_vertical-align.scss";
+@forward "./_white-space.scss";
+
+// font family
+@use "./_font-family.scss" as *;
+@use "./_font-size.scss" as *;
+// font smoothing
+@use "./_font-style.scss" as *;
+@use "./_font-weight.scss" as *;
+// font variant
+// letter spacing
+@use "./_letter-spacing.scss" as *;
+// line height
+@use "./_line-height.scss" as *;
+@use "./_list-style.scss" as *;
+@use "./_text-align.scss" as *;
+@use "./_text-color.scss" as *;
+@use "./_text-decoration.scss" as *;
+@use "./_text-overflow.scss" as *;
+@use "./_text-transform.scss" as *;
+// text indent
+@use "./_vertical-align.scss" as *;
+@use "./_white-space.scss" as *;
 
 
 @mixin kendo-utils--typography() {

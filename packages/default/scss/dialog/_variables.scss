@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../action-buttons/_variables.scss" as *;
+
 // Dialog
 
 /// The background color of the Dialog titlebar.
@@ -26,7 +30,7 @@ $kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
 /// The theme colors map for the Dialog.
 /// @group dialog
 $kendo-dialog-theme-colors: (
-    "primary": k-map-get($kendo-theme-colors, "primary"),
-    "light": k-map-get($kendo-theme-colors, "light"),
-    "dark": k-map-get($kendo-theme-colors, "dark")
+    "primary": map.get($kendo-theme-colors, "primary"),
+    "light": map.get($kendo-theme-colors, "light"),
+    "dark": map.get($kendo-theme-colors, "dark")
 ) !default;

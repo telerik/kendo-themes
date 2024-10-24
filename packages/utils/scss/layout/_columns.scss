@@ -76,15 +76,17 @@
 /// @group columns
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-layout-columns"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--layout--columns() {
-    @include module-render("utils-layout-columns") {
+    @include import-once("utils-layout-columns") {
 
         // columns utility classes
-        $kendo-utils-columns: k-map-get( $kendo-utils, "columns" ) !default;
+        $kendo-utils-columns: map.get( $kendo-utils, "columns" ) !default;
         @include generate-utils( columns, columns, $kendo-utils-columns );
 
     }

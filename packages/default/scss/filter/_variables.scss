@@ -1,11 +1,13 @@
+@use "../core/_index.scss" as *;
+
 // Filter expression builder
 
 /// The horizontal padding of the Filter.
 /// @group filter
-$kendo-filter-padding-x: $kendo-padding-md-x !default;
+$kendo-filter-padding-x: k-spacing(2) !default;
 /// The vertical padding of the Filter.
 /// @group filter
-$kendo-filter-padding-y: $kendo-padding-md-y !default;
+$kendo-filter-padding-y: k-spacing(1) !default;
 
 /// The bottom margin of the Filter.
 /// @group filter

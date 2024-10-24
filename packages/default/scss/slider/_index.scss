@@ -1,43 +1,22 @@
-@import "../core/_index.scss";
-
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "slider",
-    dependencies: (
-        "button",
-        "icon",
-        "tooltip"
-    )
-);
-
-
 // Dependencies
-@import "../button/_index.scss";
-@import "../tooltip/_index.scss";
-@import "../icons/_index.scss";
-
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../tooltip/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-slider--styles() {
-    @include module-render( "slider" ) {
+    @include import-once( "slider" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-tooltip--styles();
+        @include kendo-icon--styles();
         @include kendo-slider--layout();
         @include kendo-slider--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-slider--styles();
 }

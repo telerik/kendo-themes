@@ -322,20 +322,22 @@
 /// @group scroll
 /// @contextType css
 
+@use "sass:map";
+@use "../_globals.scss" as *;
+
 // Register
-@import "@progress/kendo-theme-core/scss/module-system/index.import.scss";
-@include module-register((name: "utils-interactivity-scroll"));
+@use "@progress/kendo-theme-core/scss/mixins/import-once.scss" as *;
 
 @mixin kendo-utils--interactivity--scroll() {
-    @include module-render("utils-interactivity-scroll") {
+    @include import-once("utils-interactivity-scroll") {
 
         // Scroll behavior utility classes
-        $kendo-utils-scroll-behavior: k-map-get( $kendo-utils, "scroll-behavior" ) !default;
+        $kendo-utils-scroll-behavior: map.get( $kendo-utils, "scroll-behavior" ) !default;
         @include generate-utils( scroll, scroll-behavior, $kendo-utils-scroll-behavior );
 
 
         // Scroll snap type utility classes
-        $kendo-utils-scroll-snap-type: k-map-get( $kendo-utils, "scroll-snap-type" ) !default;
+        $kendo-utils-scroll-snap-type: map.get( $kendo-utils, "scroll-snap-type" ) !default;
         @include generate-utils( scroll-snap, scroll-snap-type, $kendo-utils-scroll-snap-type );
 
         // Custom scroll snap type utility classes
@@ -344,17 +346,17 @@
 
 
         // Scroll snap stop utility classes
-        $kendo-utils-scroll-snap-stop: k-map-get( $kendo-utils, "scroll-snap-stop" ) !default;
+        $kendo-utils-scroll-snap-stop: map.get( $kendo-utils, "scroll-snap-stop" ) !default;
         @include generate-utils( scroll-snap-stop, scroll-snap-stop, $kendo-utils-scroll-snap-stop );
 
 
         // Scroll snap align utility classes
-        $kendo-utils-scroll-snap-align: k-map-get( $kendo-utils, "scroll-snap-align" ) !default;
+        $kendo-utils-scroll-snap-align: map.get( $kendo-utils, "scroll-snap-align" ) !default;
         @include generate-utils( scroll-snap-align, scroll-snap-align, $kendo-utils-scroll-snap-align );
 
 
         // Scroll margin utility classes
-        $kendo-utils-scroll-margin: k-map-get( $kendo-utils, "scroll-margin" ) !default;
+        $kendo-utils-scroll-margin: map.get( $kendo-utils, "scroll-margin" ) !default;
         @include generate-utils( scroll-m, scroll-margin, $kendo-utils-scroll-margin );
         @include generate-utils( scroll-mt, scroll-margin-top, $kendo-utils-scroll-margin );
         @include generate-utils( scroll-mr, scroll-margin-right, $kendo-utils-scroll-margin );
@@ -365,7 +367,7 @@
 
 
         // Scroll padding utility classes
-        $kendo-utils-scroll-padding: k-map-get( $kendo-utils, "scroll-padding" ) !default;
+        $kendo-utils-scroll-padding: map.get( $kendo-utils, "scroll-padding" ) !default;
         @include generate-utils( scroll-p, scroll-padding, $kendo-utils-scroll-padding );
         @include generate-utils( scroll-pt, scroll-padding-top, $kendo-utils-scroll-padding );
         @include generate-utils( scroll-pr, scroll-padding-right, $kendo-utils-scroll-padding );

@@ -1,36 +1,16 @@
-@import "../core/_index.scss";
-
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "table",
-    dependencies: ()
-);
-
-
 // Dependencies
-
+@use "../core/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-table--styles() {
-    @include module-render( "table" ) {
+    @include import-once( "table" ) {
+        @include core-styles();
         @include kendo-table--layout();
         @include kendo-table--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-table--styles();
 }

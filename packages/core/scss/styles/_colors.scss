@@ -1,5 +1,0 @@
-@mixin kendo-core--styles--colors() {
-    @if ($kendo-enable-color-system) {
-        @include color-system--styles();
-    }
-}

@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // Actions
 $kendo-actions-margin-top: k-spacing(4) !default;
 $kendo-actions-padding-x: k-spacing(2) !default;

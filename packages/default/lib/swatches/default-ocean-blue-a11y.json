@@ -4,7 +4,7 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-default",
     "version": "5.1.2-dev.7",
-    "api": "legacy",
+    "api": "modern",
     "previewColors": [
         "#ffffff",
         "#f5f5f5",
@@ -652,7 +652,7 @@
                     "type": "color",
                     "value": "#ffc0d6"
                 }
-            }                                                        
+            }
         },
         {
             "name": "Theme colors",

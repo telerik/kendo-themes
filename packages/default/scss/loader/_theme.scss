@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
+
 @mixin kendo-loader--theme-base() {
 
     @each $name, $color in $kendo-theme-colors {
