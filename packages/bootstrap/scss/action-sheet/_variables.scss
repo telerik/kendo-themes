@@ -38,7 +38,7 @@ $kendo-actionsheet-titlebar-shadow: null !default;
 
 $kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, normal ) !default;
-$kendo-actionsheet-subtitle-text: $kendo-subtle-text !default;
+$kendo-actionsheet-subtitle-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 
 
 // Actionsheet item
@@ -52,7 +52,7 @@ $kendo-actionsheet-item-title-font-weight: null !default;
 $kendo-actionsheet-item-title-text-transform: null !default;
 
 $kendo-actionsheet-item-description-font-size: .875em !default;
-$kendo-actionsheet-item-description-text: $kendo-subtle-text !default;
+$kendo-actionsheet-item-description-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 
 $kendo-actionsheet-item-hover-bg: $kendo-hover-bg !default;
 $kendo-actionsheet-item-hover-text: null !default;

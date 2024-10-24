@@ -27,7 +27,7 @@ $kendo-adaptive-grid-sort-text: $kendo-color-primary !default;
 // Adaptive Scheduler
 $kendo-adaptive-scheduler-current-text: $kendo-color-primary !default;
 $kendo-adaptive-scheduler-base-text: inherit !default;
-$kendo-adaptive-scheduler-subtle-text: $kendo-subtle-text !default;
+$kendo-adaptive-scheduler-subtle-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 
 
 @forward "@progress/kendo-theme-default/scss/adaptive/_variables.scss" with (

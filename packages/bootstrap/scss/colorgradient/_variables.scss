@@ -136,7 +136,7 @@ $kendo-color-gradient-input-gap: calc( #{$kendo-color-gradient-spacer} / 2 ) !de
 $kendo-color-gradient-input-label-gap: k-spacing(1) !default;
 /// The text color of the ColorGradient input labels.
 /// @group color-gradient
-$kendo-color-gradient-input-label-text: $kendo-subtle-text !default;
+$kendo-color-gradient-input-label-text: if($kendo-enable-color-system, k-color( secondary ) , $kendo-subtle-text) !default;
 
 /// The font weight of the ColorGradient contrast ratio text.
 /// @group color-gradient

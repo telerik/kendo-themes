@@ -1,6 +1,5 @@
 @use "../core/_index.scss" as *;
 @use "../list/_variables.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 
 // TabStrip
 
@@ -50,10 +49,10 @@ $kendo-tabstrip-border: $kendo-component-border !default;
 
 /// The horizontal padding of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-padding-x: $nav-link-padding-x !default;
+$kendo-tabstrip-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-padding-y: $nav-link-padding-y !default;
+$kendo-tabstrip-item-padding-y: k-spacing(2) !default;
 /// The border width around the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border-width: 1px !default;

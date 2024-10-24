@@ -1,8 +1,6 @@
 @use "sass:map";
 @use "./_palettes.scss" as *;
 @use "../functions/index.import.scss" as *;
-@use "../../_bootstrap_vars.scss" as *;
-// @use "../../_bootstrap-overrides.scss" as *;
 
 // Config
 $kendo-enable-color-system: true !default;
@@ -425,6 +423,25 @@ $_default-colors: (
 /// @prop {Color} series-f-subtle - The subtle series F color variable.
 /// @prop {Color} series-f-subtler - The subtler series F color variable.
 $kendo-colors: $_default-colors !default;
+
+// Adapted from Bootstrap
+$primary: #0d6efd !default;
+$secondary: #6c757d !default;
+$purple: #6f42c1 !default;
+$success: #198754 !default;
+$info: #0dcaf0 !default;
+$warning: #ffc107 !default;
+$danger: #dc3545 !default;
+$light: #f8f9fa !default;
+$dark: #212529 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$link-color: $primary !default;
+$link-hover-color: k-color-shade( $primary, 2 ) !default;
 // Legacy
 $kendo-is-dark-theme: false !default;
 // Theme colors
@@ -512,11 +529,14 @@ $kendo-theme-colors: (
 // Generic styles
 // Root styles
 $kendo-body-bg: #ffffff !default;
-$kendo-body-text: k-contrast-color( $kendo-body-bg, $gray-900, $gray-100 ) !default;
-$kendo-subtle-text: map.get( $kendo-palette-gray, 10 ) !default;
+$kendo-body-text: k-contrast-color( $kendo-body-bg, $dark, $light ) !default;
+
+$kendo-subtle-text: if( $kendo-is-dark-theme, $gray-400, $gray-600 ) !default;
+// $kendo-subtle-text: map.get( $kendo-palette-gray, 10 ) !default;
+
 $kendo-app-bg: k-try-shade( $kendo-body-bg, .25 ) !default;
 $kendo-app-text: $kendo-body-text !default;
-$kendo-app-border: if( k-is-light( $kendo-app-bg ), $gray-300, $gray-700 ) !default;
+$kendo-app-border: if( k-is-light($kendo-app-bg), rgba( $dark, .13), rgba( $light, .13)) !default;
 // Link
 $kendo-link-text: $link-color !default;
 $kendo-link-hover-text: $link-hover-color !default;
@@ -530,13 +550,13 @@ $kendo-component-bg: $kendo-body-bg !default;
 /// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.
 /// @group component
 /// $kendo-component-text: $kendo-body-text !default;
-$kendo-component-text: k-contrast-color( $kendo-component-bg, $gray-900, $gray-100 ) !default;
+$kendo-component-text: k-contrast-color( $kendo-component-bg, $dark, $light ) !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.
 /// @group component
-$kendo-component-border: if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 ) !default;
+$kendo-component-border: $kendo-app-border !default;
 /// The background of the components' chrome area.
-$kendo-base-bg: $gray-100 !default;
+$kendo-base-bg: $light !default;
 /// The text color of the components' chrome area.
 $kendo-base-text: $kendo-body-text !default;
 /// The border color of the components' chrome area.

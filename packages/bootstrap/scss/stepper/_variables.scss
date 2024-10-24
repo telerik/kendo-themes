@@ -191,7 +191,7 @@ $kendo-stepper-label-disabled-text: if($kendo-enable-color-system, color-mix(in 
 
 /// The text color of the optional Stepper label.
 /// @group stepper
-$kendo-stepper-optional-label-text: $kendo-subtle-text !default;
+$kendo-stepper-optional-label-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 /// The opacity of the optional Stepper label.
 /// @group stepper
 $kendo-stepper-optional-label-opacity: null !default;

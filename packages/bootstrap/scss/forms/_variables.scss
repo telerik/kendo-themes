@@ -2,7 +2,6 @@
 @use "../input/_variables.scss" as *;
 @use "../tooltip/_variables.scss" as *;
 @use "../typography/_variables.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 
 // Forms
 
@@ -15,7 +14,7 @@ $kendo-form-spacer: calc( #{k-spacing(4)} * 2 ) !default;
 $kendo-form-font-size: var( --kendo-font-size, inherit )  !default;
 /// The line height of the Form.
 /// @group form
-$kendo-form-line-height: $input-btn-line-height !default;
+$kendo-form-line-height: 1.5 !default;
 /// The line height of the Form in em units.
 /// @group form
 $kendo-form-line-height-em: calc( #{$kendo-form-line-height} * 1em ) !default;

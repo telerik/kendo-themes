@@ -50,7 +50,7 @@ $kendo-upload-dropzone-hover-bg: if($kendo-enable-color-system, k-color( base-su
 
 /// The text color of the Upload status message.
 /// @group upload
-$kendo-upload-status-text: $kendo-subtle-text !default;
+$kendo-upload-status-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 /// The opacity of the Upload status message.
 /// @group upload
 $kendo-upload-status-text-opacity: null !default;
