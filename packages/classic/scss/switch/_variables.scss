@@ -17,7 +17,7 @@ $kendo-switch-thumb-border-width: 1px !default;
 
 /// The text transform of the Switch label.
 /// @group switch
-$kendo-switch-label-text-transform: null !default;
+$kendo-switch-label-text-transform: unset !default;
 
 /// The display of the Switch label.
 /// @group switch
@@ -91,7 +91,7 @@ $kendo-switch-off-track-disabled-gradient: null !default;
 $kendo-switch-off-thumb-bg: if($kendo-enable-color-system, k-color( base ), k-try-shade( $kendo-switch-off-track-bg )) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-text: null !default;
+$kendo-switch-off-thumb-text: unset !default;
 /// The border color of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-border: $kendo-switch-off-track-border !default;
@@ -173,7 +173,7 @@ $kendo-switch-on-track-disabled-gradient: null !default;
 $kendo-switch-on-thumb-bg: $kendo-color-primary !default;
 /// The text color of the thumb when the Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-text: null !default;
+$kendo-switch-on-thumb-text: unset !default;
 /// The border color of the thumb when the Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-border: if($kendo-enable-color-system, k-color( primary ), k-try-shade( $kendo-switch-on-thumb-bg )) !default;

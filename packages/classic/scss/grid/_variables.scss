@@ -294,7 +294,7 @@ $kendo-grid-column-menu-group-header-padding-y: $kendo-menu-popup-md-item-paddin
 
 $kendo-grid-column-menu-group-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-grid-column-menu-group-header-line-height: var( --kendo-line-height, normal ) !default;
-$kendo-grid-column-menu-group-header-text-transform: null !default;
+$kendo-grid-column-menu-group-header-text-transform: unset !default;
 $kendo-grid-column-menu-group-header-border-bottom-width: 1px !default;
 
 $kendo-grid-column-menu-group-header-bg: null !default;

@@ -55,7 +55,7 @@ $kendo-calendar-header-border: $kendo-component-header-border !default;
 $kendo-calendar-header-gradient: $kendo-component-header-gradient !default;
 /// The shadow of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-shadow: null !default;
+$kendo-calendar-header-shadow: unset !default;
 
 /// The gap between the items in the navigation of the Calendar.
 /// @group calendar
@@ -156,10 +156,10 @@ $kendo-calendar-weekend-text: null !default;
 
 /// The style of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-style: null !default;
+$kendo-calendar-today-style: unset !default;
 /// The color of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-color: null !default;
+$kendo-calendar-today-color: unset !default;
 
 /// The background color of the week number cells in the Calendar.
 /// @group calendar
