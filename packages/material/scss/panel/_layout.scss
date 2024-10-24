@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/panel/_layout.scss";
+@use "@progress/kendo-theme-default/scss/panel/_layout.scss" as *;
 
 @mixin kendo-panel--layout() {
     @include kendo-panel--layout--base();

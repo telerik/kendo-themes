@@ -1,4 +1,5 @@
-@import "@progress/kendo-theme-default/scss/radio/_theme.scss";
+@use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-default/scss/radio/_theme.scss" as *;
 
 
 @mixin kendo-radio--theme() {

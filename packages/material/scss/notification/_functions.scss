@@ -1,0 +1,17 @@
+@use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
+@function notification-theme( $colors ) {
+    $_theme: ();
+
+    @each $name, $color in $colors {
+        $_theme: map.merge(( $name: (
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color )),
+            background-color: $color,
+            border: $color,
+        )), $_theme );
+    }
+
+    @return $_theme;
+}

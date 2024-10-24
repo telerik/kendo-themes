@@ -1,3 +1,6 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+
 // ColorGradient
 
 /// The spacer of the ColorGradient.
@@ -46,7 +49,7 @@ $kendo-color-gradient-border: $kendo-component-border !default;
 $kendo-color-gradient-focus-border: $kendo-hover-border !default;
 /// The box shadow of the focused ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-focus-shadow: $box-shadow-depth-3 !default;
+$kendo-color-gradient-focus-shadow: k-elevation(3) !default;
 
 /// The border radius of the ColorGradient canvas.
 /// @group color-gradient
@@ -102,7 +105,7 @@ $kendo-color-gradient-draghandle-bg: transparent !default;
 /// The color of the border around the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-border: rgba( white, .8 ) !default;
-/// The color of the outline around the ColorGradient canvas drag handle.
+/// The box shadow of the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-shadow: rgba( $kendo-color-black, .5) !default;
 /// The focus color of the outline around the ColorGradient canvas drag handle.
@@ -117,10 +120,10 @@ $kendo-color-gradient-draghandle-shadow: k-elevation(2) !default;
 
 /// The vertical margin of the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-canvas-draghandle-margin-y: - k-math-div( $kendo-color-gradient-draghandle-height, 2 ) !default;
+$kendo-color-gradient-canvas-draghandle-margin-y: - math.div( $kendo-color-gradient-draghandle-height, 2 ) !default;
 /// The horizontal margin of the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-canvas-draghandle-margin-x: - k-math-div( $kendo-color-gradient-draghandle-width, 2 ) !default;
+$kendo-color-gradient-canvas-draghandle-margin-x: - math.div( $kendo-color-gradient-draghandle-width, 2 ) !default;
 
 /// The width of the ColorGradient input.
 /// @group color-gradient
@@ -141,3 +144,49 @@ $kendo-color-gradient-contrast-ratio-font-weight: var( --kendo-font-weight-mediu
 /// The spacing between the items in the ColorGradient contrast tool.
 /// @group color-gradient
 $kendo-color-gradient-contrast-spacer: k-spacing(2) !default;
+
+@forward "@progress/kendo-theme-default/scss/colorgradient/_variables.scss" with (
+    $kendo-color-gradient-spacer: $kendo-color-gradient-spacer,
+    $kendo-color-gradient-width: $kendo-color-gradient-width,
+    $kendo-color-gradient-border-width: $kendo-color-gradient-border-width,
+    $kendo-color-gradient-border-radius: $kendo-color-gradient-border-radius,
+    $kendo-color-gradient-padding-y: $kendo-color-gradient-padding-y,
+    $kendo-color-gradient-padding-x: $kendo-color-gradient-padding-x,
+    $kendo-color-gradient-gap: $kendo-color-gradient-gap,
+    $kendo-color-gradient-font-family: $kendo-color-gradient-font-family,
+    $kendo-color-gradient-font-size: $kendo-color-gradient-font-size,
+    $kendo-color-gradient-line-height: $kendo-color-gradient-line-height,
+    $kendo-color-gradient-text: $kendo-color-gradient-text,
+    $kendo-color-gradient-bg: $kendo-color-gradient-bg,
+    $kendo-color-gradient-border: $kendo-color-gradient-border,
+    $kendo-color-gradient-focus-border: $kendo-color-gradient-focus-border,
+    $kendo-color-gradient-focus-shadow: $kendo-color-gradient-focus-shadow,
+    $kendo-color-gradient-canvas-border-radius: $kendo-color-gradient-canvas-border-radius,
+    $kendo-color-gradient-canvas-gap: $kendo-color-gradient-canvas-gap,
+    $kendo-color-gradient-canvas-rectangle-height: $kendo-color-gradient-canvas-rectangle-height,
+    $kendo-color-gradient-slider-track-size: $kendo-color-gradient-slider-track-size,
+    $kendo-color-gradient-slider-border-radius: $kendo-color-gradient-slider-border-radius,
+    $kendo-color-gradient-slider-draghandle-border-width: $kendo-color-gradient-slider-draghandle-border-width,
+    $kendo-color-gradient-slider-vertical-size: $kendo-color-gradient-slider-vertical-size,
+    $kendo-color-gradient-slider-horizontal-size: $kendo-color-gradient-slider-horizontal-size,
+    $kendo-color-gradient-slider-alpha-bgr: $kendo-color-gradient-slider-alpha-bgr,
+    $kendo-color-gradient-draghandle-width: $kendo-color-gradient-draghandle-width,
+    $kendo-color-gradient-draghandle-height: $kendo-color-gradient-draghandle-height,
+    $kendo-color-gradient-draghandle-border-width: $kendo-color-gradient-draghandle-border-width,
+    $kendo-color-gradient-draghandle-outline-width: $kendo-color-gradient-draghandle-outline-width,
+    $kendo-color-gradient-draghandle-border-radius: $kendo-color-gradient-draghandle-border-radius,
+    $kendo-color-gradient-draghandle-text: $kendo-color-gradient-draghandle-text,
+    $kendo-color-gradient-draghandle-bg: $kendo-color-gradient-draghandle-bg,
+    $kendo-color-gradient-draghandle-border: $kendo-color-gradient-draghandle-border,
+    $kendo-color-gradient-draghandle-shadow: $kendo-color-gradient-draghandle-shadow,
+    $kendo-color-gradient-draghandle-focus-shadow: $kendo-color-gradient-draghandle-focus-shadow,
+    $kendo-color-gradient-draghandle-hover-shadow: $kendo-color-gradient-draghandle-hover-shadow,
+    $kendo-color-gradient-canvas-draghandle-margin-y: $kendo-color-gradient-canvas-draghandle-margin-y,
+    $kendo-color-gradient-canvas-draghandle-margin-x: $kendo-color-gradient-canvas-draghandle-margin-x,
+    $kendo-color-gradient-input-width: $kendo-color-gradient-input-width,
+    $kendo-color-gradient-input-gap: $kendo-color-gradient-input-gap,
+    $kendo-color-gradient-input-label-gap: $kendo-color-gradient-input-label-gap,
+    $kendo-color-gradient-input-label-text: $kendo-color-gradient-input-label-text,
+    $kendo-color-gradient-contrast-ratio-font-weight: $kendo-color-gradient-contrast-ratio-font-weight,
+    $kendo-color-gradient-contrast-spacer: $kendo-color-gradient-contrast-spacer
+);

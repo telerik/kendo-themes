@@ -1,9 +1,12 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+
 // Listgroup
 $kendo-listgroup-border-width: 1px !default;
 $kendo-listgroup-border-radius: k-border-radius(md) !default;
 
 $kendo-listgroup-font-size: var( --kendo-font-size, inherit ) !default;
-$kendo-listgroup-line-height: k-math-div( 20, 14 ) !default;
+$kendo-listgroup-line-height: math.div( 20, 14 ) !default;
 
 $kendo-listgroup-bg: $kendo-component-bg !default;
 $kendo-listgroup-text: $kendo-component-text !default;
@@ -12,3 +15,16 @@ $kendo-listgroup-border: $kendo-component-border !default;
 $kendo-listgroup-item-padding-x: k-spacing(2) !default;
 $kendo-listgroup-item-padding-y: k-spacing(2) !default;
 $kendo-listgroup-item-border-width: 1px !default;
+
+@forward "@progress/kendo-theme-default/scss/listgroup/_variables.scss" with (
+    $kendo-listgroup-border-width: $kendo-listgroup-border-width,
+    $kendo-listgroup-border-radius: $kendo-listgroup-border-radius,
+    $kendo-listgroup-font-size: $kendo-listgroup-font-size,
+    $kendo-listgroup-line-height: $kendo-listgroup-line-height,
+    $kendo-listgroup-bg: $kendo-listgroup-bg,
+    $kendo-listgroup-text: $kendo-listgroup-text,
+    $kendo-listgroup-border: $kendo-listgroup-border,
+    $kendo-listgroup-item-padding-x: $kendo-listgroup-item-padding-x,
+    $kendo-listgroup-item-padding-y: $kendo-listgroup-item-padding-y,
+    $kendo-listgroup-item-border-width: $kendo-listgroup-item-border-width
+);

@@ -1,4 +1,6 @@
-@import "@progress/kendo-theme-default/scss/slider/_layout.scss";
+@use "sass:math";
+@use "./_variables.scss" as *;
+@use "@progress/kendo-theme-default/scss/slider/_layout.scss" as *;
 
 
 @mixin kendo-slider--layout() {
@@ -10,7 +12,7 @@
             margin: 0;
 
             &::after {
-                $tick-offset: - k-math-div( $kendo-slider-tick-size, 2 );
+                $tick-offset: - math.div( $kendo-slider-tick-size, 2 );
 
                 content: "";
                 position: absolute;

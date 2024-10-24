@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/list/_layout.scss";
+@use "@progress/kendo-theme-default/scss/list/_layout.scss" as *;
 
 
 @mixin kendo-list--layout() {
