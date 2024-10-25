@@ -1,0 +1,29 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../textbox/_index.scss" as *;
+@use "../slider/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-captcha--styles() {
+    @include import-once( "captcha" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-input--styles();
+        @include kendo-button--styles();
+        @include kendo-textbox--styles();
+        @include kendo-slider--styles();
+        @include kendo-captcha--layout();
+        @include kendo-captcha--theme();
+        @include kendo-utils--typography--text-color();
+        @include kendo-utils--layout--position();
+    }
+}

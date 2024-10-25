@@ -1,0 +1,22 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-tooltip--styles() {
+    @include import-once( "tooltip" ) {
+        @include core-styles();
+        @include kendo-popup--styles();
+        @include kendo-icon--styles();
+        @include kendo-tooltip--layout();
+        @include kendo-tooltip--theme();
+        @include kendo-utils--typography--text-color();
+    }
+}

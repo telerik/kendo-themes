@@ -216,7 +216,7 @@ $kendo-spreadsheet-sheets-remove-inline-end: k-spacing(2) !default;
 
 /// The left padding of the Spreadsheet sheets menu.
 /// @group spreadsheet
-$kendo-filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) ) !default;
+$kendo-filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * k-spacing(1) ) !default;
 
 /// The text color of the Spreadsheet filter Button.
 /// @group spreadsheet

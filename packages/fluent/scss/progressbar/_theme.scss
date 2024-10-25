@@ -1,4 +1,5 @@
 @use "../core/_index.scss" as *;
+@use "@progress/kendo-theme-core/scss/functions/index.import.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-progressbar--theme {

@@ -85,7 +85,7 @@
         gap: var( --kendo-spreadsheet-formula-bar-gap, #{$kendo-spreadsheet-formula-bar-gap} );
 
         > .k-icon {
-            padding-inline: var( --kendo-padding-y, #{$kendo-padding-md-y} );
+            padding-inline: k-spacing(1);
             padding-block: 0;
             box-sizing: content-box;
             border-width: 0 1px 0 0;
@@ -531,7 +531,7 @@
     }
     .k-spreadsheet-filter {
         @include border-radius( k-border-radius(md) );
-        padding: var( --kendo-padding-y, #{$kendo-padding-md-y} );
+        padding: k-spacing(1);
         line-height: 1;
         position: absolute;
         cursor: pointer;
@@ -559,8 +559,8 @@
                 padding-inline-start: var( --filter-menu-padding-left, #{$kendo-filter-menu-padding-left} );
             }
             .k-icon {
-                margin-inline-start: calc(-1 * ( var( --kendo-icon-size, 1rem ) + #{$kendo-padding-md-y} ) );
-                margin-inline-end: $kendo-padding-md-y;
+                margin-inline-start: calc(-1 * ( var( --kendo-icon-size, 1rem ) + #{k-spacing(1)} ) );
+                margin-inline-end: k-spacing(1);
             }
 
         }
@@ -573,7 +573,7 @@
             overflow-x: auto;
 
             .k-treeview {
-                padding: $kendo-padding-md-y;
+                padding: k-spacing(1);
                 overflow: visible;
             }
         }
@@ -600,7 +600,7 @@
 
             > .k-icon,
             > .k-expander-indicator {
-                margin-inline-end: $kendo-padding-md-y;
+                margin-inline-end: k-spacing(1);
             }
         }
         .k-details-content,

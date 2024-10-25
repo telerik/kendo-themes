@@ -117,7 +117,7 @@
             }
 
             .k-filename {
-                margin-inline-start: var( --kendo-padding-x, #{$kendo-padding-md-x} );
+                margin-inline-start: k-spacing(2);
                 flex: 1;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -133,7 +133,7 @@
 
             ~ .k-clear-selected,
             ~ .k-upload-selected {
-                margin-block-start: - var( --kendo-padding-y, #{$kendo-padding-md-y} );
+                margin-block-start: calc( -1 * #{k-spacing(1)} );
                 border-width: 0;
             }
 
@@ -186,7 +186,7 @@
 
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-info {
-            margin-inline-start: var( --kendo-padding-x, #{$kendo-padding-md-x} );
+            margin-inline-start: k-spacing(2);
             margin-inline-end: 0;
             min-height: var( --kendo-icon-size-xxl, 2rem );
             display: block;

@@ -52,7 +52,7 @@ $kendo-drawer-scrollbar-hover-color: if($kendo-enable-color-system, color-mix(in
 $kendo-drawer-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-y: var( --kendo-padding-x, #{$kendo-padding-md-x} ) !default;
+$kendo-drawer-item-padding-y: k-spacing(2) !default;
 /// The font size of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-font-size: $kendo-drawer-font-size !default;

@@ -70,10 +70,10 @@ $kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding
 
 /// The horizontal padding of the Map attribution.
 /// @group map
-$kendo-map-attribution-padding-x: $kendo-padding-sm-x !default;
+$kendo-map-attribution-padding-x: k-spacing(1) !default;
 /// The vertical padding of the Map attribution.
 /// @group map
-$kendo-map-attribution-padding-y: $kendo-padding-sm-y !default;
+$kendo-map-attribution-padding-y: k-spacing(0.5) !default;
 /// The font size of the Map attribution.
 /// @group map
 $kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75 ) !default;
