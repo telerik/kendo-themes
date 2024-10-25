@@ -1,0 +1,20 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../card/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-popover--styles() {
+    @include import-once( "popover" ) {
+        @include core-styles();
+        @include kendo-card--styles();
+        @include kendo-popup--styles();
+        @include kendo-popover--layout();
+        @include kendo-popover--theme();
+    }
+}

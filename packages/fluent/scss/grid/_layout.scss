@@ -521,10 +521,10 @@
     .k-grid-column-menu-standalone a.k-grid-filter {
         position: initial;
         display: inline-block;
-        margin-block: calc( #{$kendo-padding-md-y} * -1 );
+        margin-block: calc( #{k-spacing(1)} * -1 );
         margin-inline: 0;
-        padding-block: $kendo-padding-md-y;
-        padding-inline: $kendo-padding-md-x;
+        padding-block: k-spacing(1);
+        padding-inline: k-spacing(2);
     }
 
     // Filter row

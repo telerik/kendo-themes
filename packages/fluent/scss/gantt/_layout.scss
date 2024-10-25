@@ -624,8 +624,8 @@
 
     // Task tooltip
     .k-task-details {
-        padding-block: $kendo-padding-md-y;
-        padding-inline: $kendo-padding-md-x;
+        padding-block: k-spacing(1);
+        padding-inline: k-spacing(2);
         white-space: nowrap;
 
         strong {

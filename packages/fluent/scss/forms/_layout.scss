@@ -3,7 +3,6 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "../input/_variables.scss" as *;
-@use "../window/_variables.scss" as *;
 @use "../core/spacing/_index.scss" as *;
 
 @mixin kendo-form--layout() {
@@ -101,14 +100,14 @@
 
         .k-alert-error {
             font-size: var( --kendo-font-size-sm, #{$kendo-font-size-sm} );
-            margin-block-start: calc( var( --kendo-padding-y, #{$kendo-padding-md-y} ) * 2 );
+            margin-block-start: calc( #{k-spacing(1)} * 2 );
         }
 
         .k-field-info {
             display: inline-block;
             font-size: var( --kendo-font-size-xs, #{$kendo-font-size-xs} );
             line-height: 1;
-            margin-inline: var( --kendo-padding-x, #{$kendo-padding-md-x} );
+            margin-inline: k-spacing(2);
         }
 
 
@@ -223,9 +222,9 @@
             text-align: start;
             font-weight: 600;
             line-height: 1;
-            margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-lg-y} ) * 2 );
+            margin-block-end: calc( #{k-spacing(1.5)} * 2 );
             text-transform: uppercase;
-            padding-inline-end: var( --kendo-padding-x, #{$kendo-padding-md-x} );
+            padding-inline-end: k-spacing(2);
             width: auto;
         }
 
@@ -233,14 +232,14 @@
             display: flex;
             align-items: flex-start;
             text-align: start;
-            margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-lg-y} ) * 2 );
+            margin-block-end: calc( #{k-spacing(1.5)} * 2 );
 
             > span:not(.k-widget) {
                 width: var( --kendo-inline-form-element-width, #{$kendo-inline-form-element-width} );
                 text-align: end;
                 line-height: var( --kendo-line-height, #{$kendo-line-height-md} );
-                padding-block: calc( #{$kendo-padding-md-y} + #{$kendo-input-border-width} );
-                padding-inline-end: var( --kendo-padding-x-lg, #{$kendo-padding-lg-x} );
+                padding-block: calc( #{k-spacing(1)} + #{$kendo-input-border-width} );
+                padding-inline-end: k-spacing(3);
                 align-self: center;
             }
 
@@ -254,7 +253,7 @@
 
             .k-alert-error {
                 font-size: var( --kendo-font-size-sm, #{$kendo-font-size-sm} );
-                margin-block-start: calc( var( --kendo-padding-y, #{$kendo-padding-md-y} ) * 2 );
+                margin-block-start: calc( #{k-spacing(1)} * 2 );
             }
 
             .k-field-info {
@@ -282,7 +281,7 @@
     // Action buttons
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
-        margin: k-spacing(4) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
+        margin: k-spacing(4) calc( -1 * #{k-spacing(6)} ) calc( -1 * k-spacing(3) );
     }
 
 

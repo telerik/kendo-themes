@@ -46,7 +46,7 @@ $kendo-tabstrip-border: transparent !default;
 
 /// The horizontal padding of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-padding-x: var( --kendo-padding-x, #{$kendo-padding-md-x} ) !default;
+$kendo-tabstrip-item-padding-x: k-spacing(2) !default;
 /// The vertical padding of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-padding-y: calc( #{k-spacing(2)} + #{k-spacing(1)} ) !default;
