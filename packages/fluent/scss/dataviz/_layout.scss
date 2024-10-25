@@ -102,8 +102,8 @@
     .k-chart-tooltip td {
         width: auto;
         text-align: start;
-        padding-inline: var( --kendo-padding-x-sm, #{$kendo-padding-sm-x} );
-        padding-block: var( --kendo-padding-y-sm, #{$kendo-padding-sm-y} );
+        padding-inline: var( --kendo-chart-tooltip-padding-x, #{k-spacing(1)} );
+        padding-block: var( --kendo-chart-tooltip-padding-y, #{k-spacing(0.5)} );
         line-height: var( --kendo-chart-tooltip-line-height, #{$kendo-chart-tooltip-line-height} );
         vertical-align: middle;
     }
@@ -333,8 +333,8 @@
 
         // Title
         .k-treemap-title {
-            padding-inline: var( --kendo-padding-x-sm, #{$kendo-padding-sm-x} );
-            padding-block: var( --kendo-padding-y-sm, #{$kendo-padding-sm-y} );
+            padding-inline: var( --kendo-treemap-title-padding-x, #{k-spacing(1)} );
+            padding-block: var( --kendo-treemap-title-padding-y, #{k-spacing(0.5)} );
             border-width: 0 0 1px;
             border-style: solid;
             border-color: inherit;
@@ -343,8 +343,8 @@
             background-repeat: repeat-x;
         }
         .k-treemap-title-vertical {
-            padding-inline: var( --kendo-padding-y-sm, #{$kendo-padding-sm-y} );
-            padding-block: var( --kendo-padding-x-sm, #{$kendo-padding-sm-x} );
+            padding-inline: var( --kendo-treemap-padding-y, #{k-spacing(1)} );
+            padding-block: var( --kendo-treemap-title-padding-x, #{k-spacing(1)} );
             width: var( --kendo-line-height-em, #{$kendo-line-height-em} );
             white-space: nowrap;
             overflow: hidden;
@@ -375,16 +375,16 @@
             right: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            inset-block-start: calc( calc( #{$kendo-padding-sm-y} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
+            inset-block-start: calc( calc( #{k-spacing(0.5)} * 2 ) + calc( var( --kendo-line-height, normal ) * var( --kendo-font-size, inherit) ) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            inset-inline-start: calc( calc( #{$kendo-padding-sm-y} * 2 ) + calc( var( --kendo-line-height, normal) * var( --kendo-font-size, inherit) ) + 1px);
+            inset-inline-start: calc( calc( #{k-spacing(0.5)} * 2 ) + calc( var( --kendo-line-height, normal) * var( --kendo-font-size, inherit) ) + 1px);
         }
 
 
         // Leaf
         .k-leaf {
-            padding: var( --kendo-padding-x-sm, #{$kendo-padding-sm-x} );
+            padding: var( --kendo-treemap-leaf-padding, #{k-spacing(1)} );
         }
     }
 

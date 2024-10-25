@@ -21,65 +21,33 @@
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
     $kendo-enable-color-system: $kendo-enable-color-system !default,
+    $kendo-nested-disabled: false !default,
     // Color System
+    $_default-colors: $kendo-colors,
     $kendo-colors: $kendo-colors !default,
-    // Legacy
-    $kendo-theme-colors: $kendo-theme-colors !default,
+    // Legacy Color System
     $kendo-palettes: $kendo-palettes !default,
-    $kendo-body-bg: $kendo-body-bg !default,
-    $kendo-body-text: $kendo-body-text !default,
-    $kendo-component-bg: $kendo-component-bg !default,
-    $kendo-component-text: $kendo-component-text !default,
-    $kendo-component-border: $kendo-component-border !default,
-    $kendo-hover-bg: $kendo-hover-bg !default,
-    $kendo-hover-text: $kendo-hover-text !default,
-    $kendo-hover-border: $kendo-hover-border !default,
-    $kendo-selected-bg: $kendo-selected-bg !default,
-    $kendo-selected-text: $kendo-selected-text !default,
-    $kendo-selected-border: $kendo-selected-border !default,
-    $kendo-selected-hover-bg: $kendo-selected-hover-bg !default,
-    $kendo-selected-hover-text: $kendo-selected-hover-text !default,
-    $kendo-selected-hover-border: $kendo-selected-hover-border !default,
-    $kendo-focus-outline: $kendo-focus-outline !default,
-    $kendo-subtle-text: $kendo-subtle-text !default,
-    $kendo-link-text: $kendo-link-text !default,
-    $kendo-link-hover-text: $kendo-link-hover-text !default,
-    $kendo-invalid-bg: $kendo-invalid-bg !default,
-    $kendo-invalid-text: $kendo-invalid-text !default,
-    $kendo-invalid-border: $kendo-invalid-border !default,
-    $kendo-invalid-shadow: $kendo-invalid-shadow !default,
-    $kendo-disabled-bg: $kendo-disabled-bg !default,
-    $kendo-disabled-text: $kendo-disabled-text !default,
-    $kendo-disabled-border: $kendo-disabled-border !default,
-    $kendo-disabled-opacity: $kendo-disabled-opacity !default,
-    $kendo-disabled-filter: $kendo-disabled-filter !default,
-    $kendo-disabled-styling: $kendo-disabled-styling !default,
     // Elevation
     $_default-elevation: $kendo-elevation,
     $kendo-elevation: $kendo-elevation !default,
     // Typography
-    $kendo-letter-spacing: $kendo-letter-spacing !default,
-    $kendo-font-family: $kendo-font-family !default,
+    $_default-font-sizes: $kendo-font-sizes,
     $kendo-font-sizes: $kendo-font-sizes !default,
+    $kendo-font-size: $kendo-font-size !default,
+
+    $_default-line-heights: $kendo-line-heights,
     $kendo-line-heights: $kendo-line-heights !default,
+    $kendo-line-height: $kendo-line-height !default,
+
+    $kendo-letter-spacing: $kendo-letter-spacing !default,
+    
+    $kendo-font-family: $kendo-font-family !default,
+    // Spacing
+    $_default-spacing: $kendo-spacing,
+    $kendo-spacing: $kendo-spacing !default,
     // Radii
     $_default-border-radii: $kendo-border-radii,
     $kendo-border-radii: $kendo-border-radii !default
 );
 
 @forward "./color-system/_swatch-legacy.scss";
-
-// Module System
-@use "./module-system/index.scss" as module;
-
-$components: null !default;
-
-@mixin core-configure($config: null) {
-    @if $config {
-        $_components: map.get($config, "components");
-
-        @if ($_components) {
-            module.$components: $_components;
-        }
-    }
-}

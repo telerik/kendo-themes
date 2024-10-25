@@ -679,7 +679,7 @@
 
 
     // Agenda view
-    .k-scheduler-agendaview {
+    :where(.k-scheduler-agendaview) {
 
         .k-task {
             display: flex;

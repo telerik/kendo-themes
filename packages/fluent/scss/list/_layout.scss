@@ -190,7 +190,7 @@
     .k-list-filter {
         display: block;
         position: relative;
-        padding: var( --kendo-padding-x, #{$kendo-padding-md-x} );
+        padding: k-spacing(2);
         box-sizing: border-box;
         flex: 0 0 auto;
     }

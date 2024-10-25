@@ -1,0 +1,24 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../floating-label/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-date-range-picker--styles() {
+    @include import-once( "date-range-picker" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-popup--styles();
+        @include kendo-icon--styles();
+        @include kendo-date-range-picker--layout();
+        @include kendo-date-range-picker--theme();
+    }
+}

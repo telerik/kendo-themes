@@ -1,0 +1,22 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../dropdownlist/_index.scss" as *;
+@use "../button/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-pager--styles() {
+    @include import-once( "pager" ) {
+        @include core-styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
+        @include kendo-pager--layout();
+        @include kendo-pager--theme();
+    }
+}
