@@ -31,7 +31,7 @@ and then import it in your project styles:
 
 ```scss
 // Import the entire theme
-@import "~@progress/kendo-theme-classic/dist/all.scss";
+@use "@progress/kendo-theme-classic/scss/all.scss" as *;
 ```
 
 For more information on how to implement the Classic theme in your project, refer to the following articles:
@@ -44,12 +44,14 @@ You can customize Kendo UI Classic Theme both in terms of what gets compiled and
 
 ### Importing
 
-In your custom scss file, you can import the entirety of the theme, by importing `dist/all.scss` or pick just the styles for the components you need. The files for individual components are in `scss/` folder:
+In your custom scss file, you can import the entirety of the theme, by importing `scss/all.scss` or pick just the styles for the components you need. The files for individual components:
 
 ```scss
-// Import only PanelBar and Grid styles
-@import "~@progress/kendo-theme-classic/scss/panelbar/_index.scss";
-@import "~@progress/kendo-theme-classic/scss/grid/_index.scss";
+// Import only Button and Grid styles
+@use "@progress/kendo-theme-classic/scss/index.scss" as *;
+
+@include kendo-button--styles();
+@include kendo-grid--styles();
 ```
 
 ### SCSS Variables
@@ -63,21 +65,10 @@ We have more than 2000 variables, so it's hard to list them all. We've tried to 
 Here is a quick example on how to customize:
 
 ```scss
-// Make all inputs components with a different background color
-$input-bg: #f0f0f0;
-
-// Make the border of the grid black and slightly ticker
-$grid-border-width: 2px;
-$grid-border: #000000;
-
-// When you are finished with your customization, import the theme
-@import "@progress/kendo-theme-classic/dist/all.scss";
-
-// Note: the variables bellow this point will not take effect,
-// because the theme is already imported
-
-$grid-border: red;
-
+@use "@progress/kendo-theme-classic/scss/all.scss" as * with (
+    $kendo-button-bg: #ff0000,
+    $kendo-font-size: 20px
+);
 ```
 
 ## Integrating with third party frameworks
