@@ -111,20 +111,22 @@ function swatchJsonTransformer( json ) {
         modern: () => {
             const sassContent = [];
 
-            sassContent.push(`@use "../scss/index.scss" as * with (`);
-            sassContent.push(colorSystem.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
+            sassContent.push(`@forward "../scss/index.scss" with (`);
+            sassContent.push(colorSystem.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
 
             if ( colorsMap.length ) {
                 sassContent.push(`\t$kendo-colors: (`);
                 sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
-                sassContent.push(`\t),`);
+                sassContent.push(`\t) !default,`);
             }
 
-            sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
+            sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
             // Universal variables are also included here as they are part of the a11y swatch
-            sassContent.push(universal.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
+            sassContent.push(universal.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
 
             sassContent.push(`);\n`);
+
+            sassContent.push(`@use "../scss/index.scss" as *;\n`);
 
             sassContent.push(`@include kendo-theme--styles();`);
 
