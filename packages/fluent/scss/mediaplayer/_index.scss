@@ -1,0 +1,22 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../slider/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-media-player--styles() {
+    @include import-once( "media-player" ) {
+        @include core-styles();
+        @include kendo-slider--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-icon--styles();
+        @include kendo-media-player--layout();
+        @include kendo-media-player--theme();
+    }
+}

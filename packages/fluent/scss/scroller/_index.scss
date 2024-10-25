@@ -1,0 +1,18 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-scroller--styles() {
+    @include import-once( "scroller" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-scroller--layout();
+        @include kendo-scroller--theme();
+    }
+}

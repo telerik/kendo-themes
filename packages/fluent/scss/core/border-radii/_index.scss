@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "@progress/kendo-theme-core/scss/spacing/index.import.scss" as *;
+@use "../spacing/index.scss" as *;
 
 /// The none border radius used across the Components.
 /// @group radii

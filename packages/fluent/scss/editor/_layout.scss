@@ -41,8 +41,8 @@
     // Inline editor
     .k-editor-inline {
         @include border-radius( k-border-radius(md) );
-        padding-block: $kendo-padding-sm-y;
-        padding-inline: $kendo-padding-sm-x;
+        padding-block: k-spacing(0.5);
+        padding-inline: k-spacing(1);
         border: 1px solid transparent;
         word-wrap: break-word;
         overflow: auto;
@@ -182,7 +182,7 @@
         }
 
         > .ProseMirror { // stylelint-disable-line
-            padding: $kendo-padding-md-x;
+            padding: k-spacing(2);
             width: 100%;
             height: 100%;
             position: relative;
@@ -405,8 +405,8 @@
             height: 390px;
             max-height: 50vh;
             margin-block-end: k-spacing(4);
-            padding-block: $kendo-padding-md-y;
-            padding-inline: $kendo-padding-md-x;
+            padding-block: k-spacing(1);
+            padding-inline: k-spacing(2);
             border-top-width: 0;
             overflow: auto;
         }
@@ -414,8 +414,8 @@
         .k-tile {
             width: 33%;
             height: 90px;
-            padding-block: $kendo-padding-md-y;
-            padding-inline: $kendo-padding-md-x;
+            padding-block: k-spacing(1);
+            padding-inline: k-spacing(2);
             box-sizing: border-box;
             white-space: nowrap;
             overflow: hidden;
@@ -459,7 +459,7 @@
 
         .k-thumb {
             float: left;
-            margin-inline-end: $kendo-padding-sm-x;
+            margin-inline-end: k-spacing(1);
         }
 
         .k-breadcrumbs-wrap {
@@ -509,8 +509,8 @@
 
             td {
                 min-width: 1px;
-                padding-block: $kendo-padding-sm-y;
-                padding-inline: $kendo-padding-sm-x;
+                padding-block: k-spacing(0.5);
+                padding-inline: k-spacing(1);
             }
         }
 

@@ -129,10 +129,10 @@ $kendo-gantt-task-progress-selected-bg: if($kendo-enable-color-system, k-color( 
 
 /// The vertical padding of the Gantt task actions.
 /// @group gantt
-$kendo-gantt-task-actions-padding-y: $kendo-padding-md-y !default;
+$kendo-gantt-task-actions-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the Gantt task actions.
 /// @group gantt
-$kendo-gantt-task-actions-padding-x: $kendo-padding-md-x !default;
+$kendo-gantt-task-actions-padding-x: k-spacing(2) !default;
 
 /// The vertical margin of the Gantt task planned line.
 /// @group gantt

@@ -33,7 +33,7 @@ $kendo-box-shadow-depth-8: var( --kendo-elevation-8, none ) !default;
 /// @deprecated Use the `$kendo-elevation` map instead.
 $kendo-box-shadow-depth-9: var( --kendo-elevation-8, none ) !default;
 
-@mixin elevation--styles-legacy() {
+@mixin kendo-elevation--styles-legacy() {
     :root {
         --kendo-box-shadow-depth-1: #{$kendo-box-shadow-depth-1};
         --kendo-box-shadow-depth-2: #{$kendo-box-shadow-depth-2};

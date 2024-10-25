@@ -1,0 +1,30 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+@use "../floating-label/_index.scss" as *;
+@use "../dropdownlist/_index.scss" as *;
+@use "../multiselect/_index.scss" as *;
+@use "../treeview/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-dropdown-tree--styles() {
+    @include import-once( "dropdown-tree" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-popup--styles();
+        @include kendo-floating-label--styles();
+        @include kendo-dropdown-list--styles();
+        @include kendo-multiselect--styles();
+        @include kendo-treeview--styles();
+        @include kendo-dropdown-tree--layout();
+        @include kendo-dropdown-tree--theme();
+        @include kendo-utils--typography--text-align();
+    }
+}
