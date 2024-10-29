@@ -4,6 +4,7 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-bootstrap",
     "version": "5.1.2-dev.7",
+    "api": "modern",
     "previewColors": [
         "#ffffff",
         "#f5f5f5",
@@ -551,7 +552,7 @@
                     "type": "color",
                     "value": "#eca9a7"
                 }
-            }                                                                         
+            }
         },
         {
             "name": "Theme colors",
@@ -614,7 +615,7 @@
                 "kendo-disabled-text": {
                     "name": "Disabled text color",
                     "type": "color",
-                    "value": "#777777"
+                    "value": null
                 }
             }
         },
@@ -732,61 +733,6 @@
                     "name": "Series F",
                     "type": "color",
                     "value": "#d9534f"
-                }
-            }
-        },
-        {
-            "hidden": true,
-            "variables": {
-                "primary": {
-                    "name": "Override bootstrap primary",
-                    "type": "variable",
-                    "value": "$kendo-color-primary"
-                },
-                "gray-100": {
-                    "name": "Gray 100",
-                    "type": "color",
-                    "value": "#f5f5f5"
-                },
-                "gray-200": {
-                    "name": "Gray 200",
-                    "type": "color",
-                    "value": "#eeeeee"
-                },
-                "gray-300": {
-                    "name": "Gray 300",
-                    "type": "color",
-                    "value": "#dddddd"
-                },
-                "gray-400": {
-                    "name": "Gray 400",
-                    "type": "color",
-                    "value": "#cccccc"
-                },
-                "gray-500": {
-                    "name": "Gray 500",
-                    "type": "color",
-                    "value": "#aaaaaa"
-                },
-                "gray-600": {
-                    "name": "Gray 600",
-                    "type": "color",
-                    "value": "#777777"
-                },
-                "gray-700": {
-                    "name": "Gray 700",
-                    "type": "color",
-                    "value": "#555555"
-                },
-                "gray-800": {
-                    "name": "Gray 800",
-                    "type": "color",
-                    "value": "#333333"
-                },
-                "gray-900": {
-                    "name": "Gray 900",
-                    "type": "color",
-                    "value": "#222222"
                 }
             }
         }

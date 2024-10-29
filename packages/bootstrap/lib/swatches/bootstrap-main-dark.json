@@ -4,6 +4,7 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-bootstrap",
     "version": "5.1.2-dev.7",
+    "api": "modern",
     "previewColors": [
         "#000000",
         "#212529",
@@ -761,7 +762,7 @@
                     "type": "color",
                     "value": "#806104"
                 }
-            }                                                                                                   
+            }
         },
         {
             "name": "Theme colors",
@@ -814,7 +815,7 @@
                 "kendo-body-bg": {
                     "name": "Body background",
                     "type": "color",
-                    "value": "#000000"
+                    "value": "#212529"
                 },
                 "kendo-subtle-text": {
                     "name": "Subtle text color",
@@ -824,7 +825,7 @@
                 "kendo-disabled-text": {
                     "name": "Disabled text color",
                     "type": "color",
-                    "value": "#aaaaaa"
+                    "value": null
                 }
             }
         },
@@ -839,7 +840,7 @@
                 "kendo-component-bg": {
                     "name": "Component background",
                     "type": "color",
-                    "value": "#000000"
+                    "value": "#212529"
                 },
                 "kendo-base-text": {
                     "name": "Header text color",
@@ -884,7 +885,7 @@
                 "kendo-button-bg": {
                     "name": "Button background",
                     "type": "color",
-                    "value": "#343a40"
+                    "value": "#495057"
                 }
             }
         },
@@ -935,16 +936,6 @@
                     "name": "Series F",
                     "type": "color",
                     "value": "#dc3545"
-                }
-            }
-        },
-        {
-            "hidden": true,
-            "variables": {
-                "primary": {
-                    "name": "Override bootstrap primary",
-                    "type": "variable",
-                    "value": "$kendo-color-primary"
                 }
             }
         }

@@ -4,6 +4,7 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-bootstrap",
     "version": "5.1.2-dev.7",
+    "api": "modern",
     "previewColors": [
         "#000000",
         "#292b2c",
@@ -611,7 +612,7 @@
                     "type": "color",
                     "value": "#d5a3df"
                 }
-            }                                                                                                                 
+            }
         },
         {
             "name": "Theme colors",
@@ -656,7 +657,7 @@
         {
             "name": "Body",
             "variables": {
-                "kendo-body-color": {
+                "kendo-body-text": {
                     "name": "Body text color",
                     "type": "color",
                     "value": "#ffffff"
@@ -674,7 +675,7 @@
                 "kendo-disabled-text": {
                     "name": "Disabled text color",
                     "type": "color",
-                    "value": "#aaaaaa"
+                    "value": null
                 }
             }
         },
@@ -785,16 +786,6 @@
                     "name": "Series F",
                     "type": "color",
                     "value": "#aa46be"
-                }
-            }
-        },
-        {
-            "hidden": true,
-            "variables": {
-                "primary": {
-                    "name": "Override bootstrap primary",
-                    "type": "variable",
-                    "value": "$kendo-color-primary"
                 }
             }
         }
