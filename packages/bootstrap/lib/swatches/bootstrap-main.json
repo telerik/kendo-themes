@@ -4,6 +4,7 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-bootstrap",
     "version": "5.1.2-dev.7",
+    "api": "modern",
     "previewColors": [
         "#ffffff",
         "#f8f9fa",
@@ -84,7 +85,7 @@
                 "kendo-disabled-text": {
                     "name": "Disabled text color",
                     "type": "color",
-                    "value": "#8f8f8f"
+                    "value": null
                 }
             }
         },
