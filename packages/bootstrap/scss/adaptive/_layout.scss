@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/adaptive/_layout.scss";
+@use "@progress/kendo-theme-default/scss/adaptive/_layout.scss" as *;
 
 
 @mixin kendo-adaptive--layout() {

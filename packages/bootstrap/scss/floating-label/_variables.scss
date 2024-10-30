@@ -1,3 +1,7 @@
+// @use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../input/_variables.scss" as *;
+
 // Floating label
 
 /// The transformation scale of the Floating Label.
@@ -49,3 +53,22 @@ $kendo-floating-label-focus-bg: null !default;
 /// The text color of the focused Floating Label.
 /// @group floating-label
 $kendo-floating-label-focus-text: null !default;
+
+
+@forward "@progress/kendo-theme-default/scss/floating-label/_variables.scss" with (
+    $kendo-floating-label-scale: $kendo-floating-label-scale,
+    $kendo-floating-label-font-size: $kendo-floating-label-font-size,
+    $kendo-floating-label-max-width: $kendo-floating-label-max-width,
+    $kendo-floating-label-line-height: $kendo-floating-label-line-height,
+    $kendo-floating-label-height: $kendo-floating-label-height,
+    $kendo-floating-label-offset-x: $kendo-floating-label-offset-x,
+    $kendo-floating-label-offset-y: $kendo-floating-label-offset-y,
+    $kendo-floating-label-focus-scale: $kendo-floating-label-focus-scale,
+    $kendo-floating-label-focus-offset-x: $kendo-floating-label-focus-offset-x,
+    $kendo-floating-label-focus-offset-y: $kendo-floating-label-focus-offset-y,
+    $kendo-floating-label-transition: $kendo-floating-label-transition,
+    $kendo-floating-label-bg: $kendo-floating-label-bg,
+    $kendo-floating-label-text: $kendo-floating-label-text,
+    $kendo-floating-label-focus-bg: $kendo-floating-label-focus-bg,
+    $kendo-floating-label-focus-text: $kendo-floating-label-focus-text
+);

@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // ListView
 
 /// The horizontal padding of the ListView.
@@ -58,3 +60,25 @@ $kendo-listview-item-focus-border: null !default;
 /// The box shadow of the focused ListView items.
 /// @group listview
 $kendo-listview-item-focus-shadow: inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-listview-text, .15 )) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/listview/_variables.scss" with (
+    $kendo-listview-padding-x: $kendo-listview-padding-x,
+    $kendo-listview-padding-y: $kendo-listview-padding-y,
+    $kendo-listview-border-width: $kendo-listview-border-width,
+    $kendo-listview-font-family: $kendo-listview-font-family,
+    $kendo-listview-font-size: $kendo-listview-font-size,
+    $kendo-listview-line-height: $kendo-listview-line-height,
+    $kendo-listview-text: $kendo-listview-text,
+    $kendo-listview-bg: $kendo-listview-bg,
+    $kendo-listview-border: $kendo-listview-border,
+    $kendo-listview-item-padding-x: $kendo-listview-item-padding-x,
+    $kendo-listview-item-padding-y: $kendo-listview-item-padding-y,
+    $kendo-listview-item-selected-text: $kendo-listview-item-selected-text,
+    $kendo-listview-item-selected-bg: $kendo-listview-item-selected-bg,
+    $kendo-listview-item-selected-border: $kendo-listview-item-selected-border,
+    $kendo-listview-item-focus-text: $kendo-listview-item-focus-text,
+    $kendo-listview-item-focus-bg: $kendo-listview-item-focus-bg,
+    $kendo-listview-item-focus-border: $kendo-listview-item-focus-border,
+    $kendo-listview-item-focus-shadow: $kendo-listview-item-focus-shadow
+);

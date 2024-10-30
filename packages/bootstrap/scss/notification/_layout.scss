@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/notification/_layout.scss";
+@use "@progress/kendo-theme-default/scss/notification/_layout.scss" as *;
 
 
 @mixin kendo-notification--layout() {
