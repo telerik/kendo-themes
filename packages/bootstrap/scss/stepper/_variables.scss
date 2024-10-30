@@ -1,4 +1,5 @@
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // Stepper
 
@@ -108,7 +109,7 @@ $kendo-stepper-indicator-hover-border: null !default;
 $kendo-stepper-indicator-disabled-bg: null !default;
 /// The text color of the disabled Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), if( $kendo-is-dark-theme, $gray-600, $gray-500)) !default;
+$kendo-stepper-indicator-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), if( $kendo-is-dark-theme, #6c757d, #adb5bd)) !default;
 /// The border color of the disabled Stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-disabled-border: null !default;
@@ -118,7 +119,7 @@ $kendo-stepper-indicator-disabled-border: null !default;
 $kendo-stepper-indicator-done-bg: $kendo-color-primary !default;
 /// The text color of the Stepper's done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-stepper-indicator-done-bg )) !default;
+$kendo-stepper-indicator-done-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-stepper-indicator-done-bg )) !default;
 /// The border color of the Stepper's done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
@@ -187,11 +188,11 @@ $kendo-stepper-label-error-text: $kendo-color-error !default;
 $kendo-stepper-label-hover-text: unset !default;
 /// The text color of the disabled Stepper label.
 /// @group stepper
-$kendo-stepper-label-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), if( $kendo-is-dark-theme, $gray-600, $gray-500)) !default;
+$kendo-stepper-label-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), if( $kendo-is-dark-theme, #6c757d, #adb5bd)) !default;
 
 /// The text color of the optional Stepper label.
 /// @group stepper
-$kendo-stepper-optional-label-text: $kendo-subtle-text !default;
+$kendo-stepper-optional-label-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 /// The opacity of the optional Stepper label.
 /// @group stepper
 $kendo-stepper-optional-label-opacity: null !default;

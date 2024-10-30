@@ -1,18 +1,15 @@
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-default/scss/menu/_layout.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 
 @mixin kendo-menu--layout() {
 
     @include kendo-menu--layout-base();
 
     .k-menu.k-menu-horizontal:not(.k-context-menu) {
-        padding-block: $navbar-padding-y;
-        padding-inline: $navbar-padding-x;
+        padding-block: k-spacing(2);
     }
     .k-menu.k-menu-vertical:not(.k-context-menu) {
-        padding-block: $navbar-padding-y;
-        padding-inline: 0;
+        padding-block: k-spacing(2);
     }
 
     .k-menu-popup :is(.k-menu-group, .k-menu-vertical) {

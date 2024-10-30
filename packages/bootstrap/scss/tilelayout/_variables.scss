@@ -8,7 +8,7 @@
 $kendo-tile-layout-border-width: 0px !default;
 /// The background color of the TileLayout.
 /// @group tile-layout
-$kendo-tile-layout-bg: if($kendo-enable-color-system, k-color( surface ), $gray-100) !default;
+$kendo-tile-layout-bg: if($kendo-enable-color-system, k-color( surface ), $kendo-color-light) !default;
 
 /// The horizontal padding of the TileLayout.
 /// @group tile-layout

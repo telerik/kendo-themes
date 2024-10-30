@@ -2,7 +2,6 @@
 @use "./_functions.scss" as *;
 @use "../popup/_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 
 // Notification
 
@@ -12,16 +11,16 @@ $kendo-notification-group-gap: k-spacing(3) !default;
 
 /// The horizontal padding of the Notification.
 /// @group notification
-$kendo-notification-padding-x: $alert-padding-x !default;
+$kendo-notification-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Notification.
 /// @group notification
-$kendo-notification-padding-y: $alert-padding-y !default;
+$kendo-notification-padding-y: k-spacing(4) !default;
 /// The width of the border around the Notification.
 /// @group notification
-$kendo-notification-border-width: $alert-border-width !default;
+$kendo-notification-border-width: 1px !default;
 /// The border radius of the Notification.
 /// @group notification
-$kendo-notification-border-radius: $alert-border-radius !default;
+$kendo-notification-border-radius: k-spacing(1.5) !default;
 /// The font family of the Notification.
 /// @group notification
 $kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;

@@ -65,7 +65,7 @@ $kendo-checkbox-bg: $kendo-component-bg !default;
 $kendo-checkbox-text: null !default;
 /// The border color of CheckBox.
 /// @group checkbox
-$kendo-checkbox-border: if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-checkbox-bg ), $gray-400, $gray-600 )) !default;
+$kendo-checkbox-border: if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-checkbox-bg ), #ced4da, #6c757d )) !default;
 
 /// The background color of the hovered CheckBox.
 /// @group checkbox
@@ -82,7 +82,7 @@ $kendo-checkbox-hover-border: null !default;
 $kendo-checkbox-checked-bg: $kendo-color-primary !default;
 /// The color of the checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-checked-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-checked-bg )) !default;
+$kendo-checkbox-checked-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-checkbox-checked-bg )) !default;
 /// The border color of the checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;

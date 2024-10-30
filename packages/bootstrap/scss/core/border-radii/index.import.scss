@@ -1,14 +1,9 @@
-
-// @use "bootstrap/scss/bootstrap.scss" as *;
 @use "sass:map";
-// @forward "@progress/kendo-theme-core/scss/spacing/index.import.scss";
 @use "../spacing/index.import.scss" as *;
-@use "../../_bootstrap_vars.scss" as *;
-// @use "bootstrap/scss/bootstrap.scss" as *;
-// @use "bootstrap/scss/_variables.scss" as *;
+
 /// The global border radius used across the Components.
 /// @group radii
-$kendo-border-radius: $border-radius !default;
+$kendo-border-radius: map.get($kendo-spacing, 1.5) !default;
 /// The none border radius used across the Components.
 /// @group radii
 $kendo-border-radius-none: map.get($kendo-spacing, 0) !default;
@@ -17,13 +12,13 @@ $kendo-border-radius-none: map.get($kendo-spacing, 0) !default;
 $kendo-border-radius-xs: map.get($kendo-spacing, 0.5) !default;
 /// The small border radius used across the Components.
 /// @group radii
-$kendo-border-radius-sm: $border-radius-sm !default;
+$kendo-border-radius-sm: map.get($kendo-spacing, 1) !default;
 /// The medium border radius used across the Components.
 /// @group radii
 $kendo-border-radius-md: $kendo-border-radius !default;
 /// The large border radius used across the Components.
 /// @group radii
-$kendo-border-radius-lg: $border-radius-lg !default;
+$kendo-border-radius-lg: map.get($kendo-spacing, 2) !default;
 /// The extra large border radius used across the Components.
 /// @group radii
 $kendo-border-radius-xl: map.get($kendo-spacing, 3) !default;
@@ -39,7 +34,7 @@ $kendo-border-radius-full: 50rem !default;
 
 /// The global radii Map.
 /// @group radii
-$kendo-border-radii: (
+$_default-border-radii: (
     none: $kendo-border-radius-none,
     xs: $kendo-border-radius-xs,
     sm: $kendo-border-radius-sm,
@@ -51,4 +46,7 @@ $kendo-border-radii: (
     full: $kendo-border-radius-full
 ) !default;
 
-// @forward "@progress/kendo-theme-core/scss/border-radii/index.import.scss";
+/// The global radii Map.
+/// @group radii
+$kendo-border-radii: $_default-border-radii !default;
+$kendo-border-radii: map.merge($_default-border-radii, $kendo-border-radii);

@@ -1,6 +1,7 @@
 // @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "../input/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // Editor
 
@@ -59,6 +60,23 @@ $kendo-editor-selectednode-outline-width: 2px !default;
 /// @group editor
 $kendo-editor-selectednode-outline-color: #88ccff !default;
 
+/// The horizontal padding of the inline Editor.
+/// @group editor
+$kendo-editor-inline-padding-x: k-spacing(2) !default;
+/// The vertical padding of the inline Editor.
+/// @group editor
+$kendo-editor-inline-padding-y: k-spacing(1) !default;
+
+/// The horizontal padding of the Editor file browser tiles.
+/// @group editor
+$kendo-editor-filebrowser-tiles-padding-x: k-spacing(4) !default;
+/// The vertical padding of the Editor file browser tiles.
+/// @group editor
+$kendo-editor-filebrowser-tiles-padding-y: k-spacing(2) !default;
+
+/// The padding of the Editor content.
+/// @group editor
+$kendo-editor-content-padding: k-spacing(4) !default;
 
 @forward "@progress/kendo-theme-default/scss/editor/_variables.scss" with (
     $kendo-editor-border-width: $kendo-editor-border-width,
@@ -76,5 +94,10 @@ $kendo-editor-selectednode-outline-color: #88ccff !default;
     $kendo-editor-resize-handle-border: $kendo-editor-resize-handle-border,
     $kendo-editor-resize-handle-bg: $kendo-editor-resize-handle-bg,
     $kendo-editor-selectednode-outline-width: $kendo-editor-selectednode-outline-width,
-    $kendo-editor-selectednode-outline-color: $kendo-editor-selectednode-outline-color
+    $kendo-editor-selectednode-outline-color: $kendo-editor-selectednode-outline-color,
+    $kendo-editor-inline-padding-x: $kendo-editor-inline-padding-x,
+    $kendo-editor-inline-padding-y: $kendo-editor-inline-padding-y,
+    $kendo-editor-filebrowser-tiles-padding-x: $kendo-editor-filebrowser-tiles-padding-x,
+    $kendo-editor-filebrowser-tiles-padding-y: $kendo-editor-filebrowser-tiles-padding-y,
+    $kendo-editor-content-padding: $kendo-editor-content-padding
 );

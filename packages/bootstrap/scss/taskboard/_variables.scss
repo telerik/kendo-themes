@@ -1,5 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "../card/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // TaskBoard
 
@@ -81,7 +82,7 @@ $kendo-taskboard-column-border-width: 1px !default;
 $kendo-taskboard-column-border-radius: k-border-radius(sm) !default;
 /// The background color of the TaskBoard column.
 /// @group taskboard
-$kendo-taskboard-column-bg: if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $gray-900, $gray-100 )) !default;
+$kendo-taskboard-column-bg: if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light )) !default;
 /// The text color of the TaskBoard column.
 /// @group taskboard
 $kendo-taskboard-column-text: null !default;
