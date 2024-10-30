@@ -1,6 +1,7 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
 @use "@progress/kendo-theme-default/scss/fab/_theme.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 
 @mixin kendo-fab--theme() {
@@ -12,7 +13,7 @@
             outline: $kendo-fab-border-width $kendo-fab-outline-style $color;
             outline-offset: -$kendo-fab-border-width;
             border-color: $color;
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color ));
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
             background-color: $color;
         }
     }
@@ -22,7 +23,7 @@
         .k-fab-solid-#{$name}:hover,
         .k-fab-solid-#{$name}.k-hover {
             border-color: if($kendo-enable-color-system, k-color( #{$name}-hover ), k-color-darken( $color, 10% ));
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( k-color-darken( $color, 7.5% ) ));
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( k-color-darken( $color, 7.5% ) ));
             background-color: if($kendo-enable-color-system, k-color( #{$name}-hover ), k-color-darken( $color, 7.5% ));
         }
     }
@@ -42,7 +43,7 @@
         .k-fab-solid-#{$name}.k-selected {
             @include box-shadow( $kendo-fab-active-shadow );
             border-color: if($kendo-enable-color-system, k-color( #{$name}-active ), k-color-darken( $color, 12.5% ));
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( k-color-darken( $color, 10% ) ));
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( k-color-darken( $color, 10% ) ));
             background-color: if($kendo-enable-color-system, k-color( #{$name}-active ), k-color-darken( $color, 10% ));
         }
     }
@@ -53,7 +54,7 @@
         .k-fab-solid-#{$name}.k-disabled {
             @include box-shadow( $kendo-fab-disabled-shadow );
             background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( $name ) 65%, transparent), k-try-tint( $color, 4.5 ));
-            color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-#{$name} ) 65%, transparent), k-try-tint( k-contrast-color( $color ), 5 ));
+            color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-#{$name} ) 65%, transparent), k-try-tint( k-contrast-legacy( $color ), 5 ));
             opacity: 1;
         }
     }
@@ -85,7 +86,7 @@
         outline: $kendo-fab-border-width $kendo-fab-item-outline-style if($kendo-enable-color-system, k-color( base-hover ), k-try-darken( $kendo-fab-item-icon-border, 10% ));
         outline-offset: -$kendo-fab-border-width;
         border-color: if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-fab-item-icon-border, 10% ));
-        color: if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 7.5% ) ));
+        color: if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( k-color-darken( $kendo-fab-item-icon-bg, 7.5% ) ));
         background-color: if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-fab-item-icon-bg, 7.5% ));
     }
 
@@ -104,7 +105,7 @@
         outline: $kendo-fab-border-width solid if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
         outline-offset: -$kendo-fab-border-width;
         border-color: if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
-        color: if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 10% ) ));
+        color: if($kendo-enable-color-system, k-color( on-base ), k-contrast-legacy( k-color-darken( $kendo-fab-item-icon-bg, 10% ) ));
         background-color: if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-bg, 10% ));
     }
 

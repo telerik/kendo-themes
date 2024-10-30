@@ -1,65 +1,65 @@
-@use "../../_bootstrap_vars.scss" as *;
+@use "sass:map";
 
 /// The base font size across all components.
 /// @group typography
-$kendo-font-size: $font-size-base !default;
+$kendo-font-size: 1rem !default;
 /// The extra small font size across all components.
 /// @group typography
 $kendo-font-size-xs: ( $kendo-font-size * .75 ) !default;
 /// The small font size across all components.
 /// @group typography
-$kendo-font-size-sm: $font-size-sm !default;
+$kendo-font-size-sm: ( $kendo-font-size * .875 ) !default;
 /// The medium font size across all components.
 /// @group typography
 $kendo-font-size-md: $kendo-font-size !default;
 /// The large font size across all components.
 /// @group typography
-$kendo-font-size-lg: $font-size-lg !default;
+$kendo-font-size-lg: ( $kendo-font-size * 1.25 ) !default;
 /// The extra large font size across all components.
 /// @group typography
 $kendo-font-size-xl: ( $kendo-font-size-md * 1.5 ) !default;
 
 /// The base line height across all components.
 /// @group typography
-$kendo-line-height: $line-height-base !default;
+$kendo-line-height: 1.5 !default;
 /// The extra small line height across all components.
 /// @group typography
 $kendo-line-height-xs: 1 !default;
 /// The small line height across all components.
 /// @group typography
-$kendo-line-height-sm: $line-height-sm !default;
+$kendo-line-height-sm: 1.25 !default;
 /// The medium line height across all components.
 /// @group typography
 $kendo-line-height-md: $kendo-line-height !default;
 /// The large line height across all components.
 /// @group typography
-$kendo-line-height-lg: $line-height-lg !default;
+$kendo-line-height-lg: 2 !default;
 /// The base line height in ems across all components.
 /// @group typography
 $kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
 
 /// The light font weight across all components.
 /// @group typography
-$kendo-font-weight-light: $font-weight-light !default;
+$kendo-font-weight-light: 300 !default;
 /// The base font weight across all components.
 /// @group typography
-$kendo-font-weight-normal: $font-weight-normal !default;
+$kendo-font-weight-normal: 400 !default;
 /// The medium font weight across all components.
 /// @group typography
-$kendo-font-weight-medium: 500 !default; // TODO: use from bootstrap when we update
+$kendo-font-weight-medium: 500 !default;
 /// The semibold font weight across all components.
 /// @group typography
-$kendo-font-weight-semibold: 600 !default; // TODO: use from bootstrap when we update
+$kendo-font-weight-semibold: 600 !default;
 /// The bold font weight across all components.
 /// @group typography
-$kendo-font-weight-bold: $font-weight-bold !default;
+$kendo-font-weight-bold: 700 !default;
 
 /// The sans-serif font family across all components.
 /// @group typography
-$kendo-font-family-sans-serif: $font-family-sans-serif !default;
+$kendo-font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 /// The monospace font family across all components.
 /// @group typography
-$kendo-font-family-monospace: $font-family-monospace !default;
+$kendo-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 /// The base font family across all components.
 /// @group typography
 $kendo-font-family: $kendo-font-family-sans-serif !default;
@@ -95,17 +95,19 @@ $_default-font-families: (
 /// The font sizes map
 /// @group typography
 $kendo-font-sizes: $_default-font-sizes !default;
+$kendo-font-sizes: map.merge( $_default-font-sizes, $kendo-font-sizes );
 
 /// The line heights map
 /// @group typography
 $kendo-line-heights: $_default-line-heights !default;
+$kendo-line-heights: map.merge( $_default-line-heights, $kendo-line-heights );
 
 /// The font weights map
 /// @group typography
 $kendo-font-weights: $_default-font-weights !default;
+$kendo-font-weights: map.merge( $_default-font-weights, $kendo-font-weights );
 
 /// The font families map
 /// @group typography
 $kendo-font-families: $_default-font-families !default;
-
-// @forward "@progress/kendo-theme-core/scss/typography/index.import.scss";
+$kendo-font-families: map.merge( $_default-font-families, $kendo-font-families );

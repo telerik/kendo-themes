@@ -1,12 +1,12 @@
 @use "@progress/kendo-theme-default/scss/spreadsheet/_layout.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
+@use "../core/_index.scss" as *;
 
 @mixin kendo-spreadsheet--layout() {
 
     @include kendo-spreadsheet--layout-base();
 
     .k-spreadsheet-menu {
-        padding-inline: $navbar-padding-y;
+        padding-inline: k-spacing(2);
     }
 
     // Filter menu - Delete once new rendering is adopted R3 23

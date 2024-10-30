@@ -1,7 +1,7 @@
 @use "sass:map";
 
 $_default-palette-gray: (
-    white: #ffffff,
+    "white": #ffffff,
     1: #f8f9fa,
     2: #e9ecef,
     3: #dee2e6,
@@ -17,7 +17,7 @@ $_default-palette-gray: (
     13: #2B2F32,
     14: #212529,
     15: #121417,
-    black: #000000,
+    "black": #000000,
 );
 $_default-palette-blue: (
     1: #ecf4ff,

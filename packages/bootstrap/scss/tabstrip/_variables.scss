@@ -1,6 +1,5 @@
 @use "../core/_index.scss" as *;
 @use "../list/_variables.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 
 // TabStrip
 
@@ -50,10 +49,10 @@ $kendo-tabstrip-border: $kendo-component-border !default;
 
 /// The horizontal padding of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-padding-x: $nav-link-padding-x !default;
+$kendo-tabstrip-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-padding-y: $nav-link-padding-y !default;
+$kendo-tabstrip-item-padding-y: k-spacing(2) !default;
 /// The border width around the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border-width: 1px !default;
@@ -85,7 +84,7 @@ $kendo-tabstrip-item-hover-bg: null !default;
 $kendo-tabstrip-item-hover-text: $kendo-link-hover-text !default;
 /// The border color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-border: if($kendo-enable-color-system, k-color( base-subtle ), $gray-200) !default;
+$kendo-tabstrip-item-hover-border: if($kendo-enable-color-system, k-color( base-subtle ), #e9ecef) !default;
 /// The gradient of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-gradient: null !default;
