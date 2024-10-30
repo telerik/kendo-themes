@@ -1,3 +1,5 @@
+@use "@progress/kendo-theme-core/scss/index.import.scss" as *;
+
 @if ($kendo-enable-color-system) {
     $input-bg: k-color( surface-alt );
     $input-color: k-color( on-app-surface );
@@ -58,7 +60,6 @@
     $kendo-invalid-text: $kendo-color-error;
     $kendo-invalid-border: $kendo-color-error;
     $kendo-invalid-shadow: 0 0 0 .25rem color-mix(in srgb, k-color( error ) 25%, transparent);
-
     $kendo-theme-colors: (
         "primary": $kendo-color-primary,
         "secondary": $kendo-color-secondary,
@@ -71,7 +72,6 @@
         "light": $kendo-color-light,
         "inverse": $kendo-color-inverse,
     );
-
     $kendo-disabled-styling: (
         bg: $kendo-disabled-bg,
         color: $kendo-disabled-text,

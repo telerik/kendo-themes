@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
+
 // Slider
 /// The default size of the Slider.
 /// @group slider
@@ -120,3 +123,44 @@ $kendo-slider-tick-horizontal-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4
 /// The background image of the vertical Slider tick.
 /// @group slider
 $kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+
+
+@forward "@progress/kendo-theme-default/scss/slider/_variables.scss" with (
+    $kendo-slider-size: $kendo-slider-size,
+    $kendo-slider-tick-size: $kendo-slider-tick-size,
+    $kendo-slider-alt-size: $kendo-slider-alt-size,
+    $kendo-slider-font-family: $kendo-slider-font-family,
+    $kendo-slider-font-size: $kendo-slider-font-size,
+    $kendo-slider-line-height: $kendo-slider-line-height,
+    $kendo-slider-button-offset: $kendo-slider-button-offset,
+    $kendo-slider-button-size: $kendo-slider-button-size,
+    $kendo-slider-button-spacing: $kendo-slider-button-spacing,
+    $kendo-slider-button-focus-shadow: $kendo-slider-button-focus-shadow,
+    $kendo-slider-track-thickness: $kendo-slider-track-thickness,
+    $kendo-slider-draghandle-size: $kendo-slider-draghandle-size,
+    $kendo-slider-draghandle-border-width: $kendo-slider-draghandle-border-width,
+    $kendo-slider-draghandle-active-scale: $kendo-slider-draghandle-active-scale,
+    $kendo-slider-draghandle-active-size: $kendo-slider-draghandle-active-size,
+    $kendo-slider-draghandle-bg: $kendo-slider-draghandle-bg,
+    $kendo-slider-draghandle-text: $kendo-slider-draghandle-text,
+    $kendo-slider-draghandle-border: $kendo-slider-draghandle-border,
+    $kendo-slider-draghandle-gradient: $kendo-slider-draghandle-gradient,
+    $kendo-slider-draghandle-hover-bg: $kendo-slider-draghandle-hover-bg,
+    $kendo-slider-draghandle-hover-text: $kendo-slider-draghandle-hover-text,
+    $kendo-slider-draghandle-hover-border: $kendo-slider-draghandle-hover-border,
+    $kendo-slider-draghandle-hover-gradient: $kendo-slider-draghandle-hover-gradient,
+    $kendo-slider-draghandle-pressed-bg: $kendo-slider-draghandle-pressed-bg,
+    $kendo-slider-draghandle-pressed-text: $kendo-slider-draghandle-pressed-text,
+    $kendo-slider-draghandle-pressed-border: $kendo-slider-draghandle-pressed-border,
+    $kendo-slider-draghandle-pressed-gradient: $kendo-slider-draghandle-pressed-gradient,
+    $kendo-slider-draghandle-focus-shadow: $kendo-slider-draghandle-focus-shadow,
+    $kendo-slider-transition-speed: $kendo-slider-transition-speed,
+    $kendo-slider-transition-function: $kendo-slider-transition-function,
+    $kendo-slider-draghandle-transition-speed: $kendo-slider-draghandle-transition-speed,
+    $kendo-slider-draghandle-transition-function: $kendo-slider-draghandle-transition-function,
+    $kendo-slider-track-bg: $kendo-slider-track-bg,
+    $kendo-slider-selection-bg: $kendo-slider-selection-bg,
+    $kendo-slider-disabled-opacity: $kendo-slider-disabled-opacity,
+    $kendo-slider-tick-horizontal-image: $kendo-slider-tick-horizontal-image,
+    $kendo-slider-tick-vertical-image: $kendo-slider-tick-vertical-image
+);

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $_default-palette-gray: (
     white: #ffffff,
     1: #f8f9fa,
@@ -17,7 +19,6 @@ $_default-palette-gray: (
     15: #121417,
     black: #000000,
 );
-
 $_default-palette-blue: (
     1: #ecf4ff,
     2: #cfe2ff,
@@ -35,7 +36,6 @@ $_default-palette-blue: (
     14: #012151,
     15: #031633,
 );
-
 $_default-palette-yellow: (
     1: #fff9e6,
     2: #fff3cd,
@@ -53,7 +53,6 @@ $_default-palette-yellow: (
     14: #523e02,
     15: #332701,
 );
-
 $_default-palette-red: (
     1: #fceeef,
     2: #f8d7da,
@@ -71,7 +70,6 @@ $_default-palette-red: (
     14: #421015,
     15: #2c0b0e,
 );
-
 $_default-palette-cyan: (
     1: #e7fafe,
     2: #cff4fc,
@@ -89,7 +87,6 @@ $_default-palette-cyan: (
     14: #04414d,
     15: #032830,
 );
-
 $_default-palette-green: (
     1: #e8f3ee,
     2: #d1e7dd,
@@ -107,7 +104,6 @@ $_default-palette-green: (
     14: #0A3622,
     15: #051b11,
 );
-
 $_default-palette-indigo: (
     1: #f0e7fe,
     2: #e2d9f3,
@@ -125,7 +121,6 @@ $_default-palette-indigo: (
     14: #21143b,
     15: #160d27,
 );
-
 $_default-palette-teal: (
     1: #ebfaf6,
     2: #e8dbfd,
@@ -143,45 +138,37 @@ $_default-palette-teal: (
     14: #0a3e2e,
     15: #06281e,
 );
-
 // stylelint-disable scss/no-global-function-names
 /// The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.
 /// @group palette
 $kendo-palette-gray: $_default-palette-gray !default;
-$kendo-palette-gray: map-merge($_default-palette-gray, $kendo-palette-gray);
-
+$kendo-palette-gray: map.merge($_default-palette-gray, $kendo-palette-gray);
 /// The Blue Palette provides colors to the Primary and Series A variable groups.
 /// @group palette
 $kendo-palette-blue: $_default-palette-blue !default;
-$kendo-palette-blue: map-merge($_default-palette-blue, $kendo-palette-blue);
-
+$kendo-palette-blue: map.merge($_default-palette-blue, $kendo-palette-blue);
 /// The Yellow Palette provides colors to the Warning and Series F variable groups.
 /// @group palette
 $kendo-palette-yellow: $_default-palette-yellow !default;
-$kendo-palette-yellow: map-merge($_default-palette-yellow, $kendo-palette-yellow);
-
+$kendo-palette-yellow: map.merge($_default-palette-yellow, $kendo-palette-yellow);
 /// The Red Palette provides colors to the Error and Series E variable groups.
 /// @group palette
 $kendo-palette-red: $_default-palette-red !default;
-$kendo-palette-red: map-merge($_default-palette-red, $kendo-palette-red);
-
+$kendo-palette-red: map.merge($_default-palette-red, $kendo-palette-red);
 /// The Cyan Palette provides colors to the Info variable group.
 /// @group palette
 $kendo-palette-cyan: $_default-palette-cyan !default;
-$kendo-palette-cyan: map-merge($_default-palette-cyan, $kendo-palette-cyan);
-
+$kendo-palette-cyan: map.merge($_default-palette-cyan, $kendo-palette-cyan);
 /// The Green Palette provides colors to the Success and Series D variable groups.
 /// @group palette
 $kendo-palette-green: $_default-palette-green !default;
-$kendo-palette-green: map-merge($_default-palette-green, $kendo-palette-green);
-
+$kendo-palette-green: map.merge($_default-palette-green, $kendo-palette-green);
 /// The Indigo Palette provides colors to the Tertiary and Series B variable groups.
 /// @group palette
 $kendo-palette-indigo: $_default-palette-indigo !default;
-$kendo-palette-indigo: map-merge($_default-palette-indigo, $kendo-palette-indigo);
-
+$kendo-palette-indigo: map.merge($_default-palette-indigo, $kendo-palette-indigo);
 /// The Teal Palette provides colors to the Series C variable group.
 /// @group palette
 $kendo-palette-teal: $_default-palette-teal !default;
-$kendo-palette-teal: map-merge($_default-palette-teal, $kendo-palette-teal);
+$kendo-palette-teal: map.merge($_default-palette-teal, $kendo-palette-teal);
 // stylelint-enable scss/no-global-function-names

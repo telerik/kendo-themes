@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/taskboard/_theme.scss";
+@use "@progress/kendo-theme-default/scss/taskboard/_theme.scss" as *;
 
 
 @mixin kendo-task-board--theme() {
