@@ -1,5 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // Drawer
 
@@ -60,7 +61,7 @@ $kendo-drawer-item-padding-y: k-spacing(2) !default;
 $kendo-drawer-item-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Drawer item.
 /// @group drawer
-$kendo-drawer-item-line-height: $kendo-line-height-lg !default;
+$kendo-drawer-item-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The horizontal padding of the Drawer item in each level.
 /// @group drawer

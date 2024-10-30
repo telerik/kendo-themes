@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
-
+@use "../core/functions/index.import.scss" as *;
 
 // Chip
 
@@ -162,7 +162,7 @@ $kendo-chip-outline-shadow: 0 0 0 2px rgba( $kendo-chip-base-bg, .16 ) !default;
 $kendo-chip-outline-hover-bg: $kendo-chip-outline-text !default;
 /// The base text color of the hovered outline Chip.
 /// @group chip
-$kendo-chip-outline-hover-text: if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-color( $kendo-chip-outline-hover-bg )) !default;
+$kendo-chip-outline-hover-text: if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-legacy( $kendo-chip-outline-hover-bg )) !default;
 
 /// The base background color of the selected outline Chip.
 /// @group chip

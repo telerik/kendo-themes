@@ -1,5 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "../icons/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // Upload
 
@@ -50,7 +51,7 @@ $kendo-upload-dropzone-hover-bg: if($kendo-enable-color-system, k-color( base-su
 
 /// The text color of the Upload status message.
 /// @group upload
-$kendo-upload-status-text: $kendo-subtle-text !default;
+$kendo-upload-status-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 /// The opacity of the Upload status message.
 /// @group upload
 $kendo-upload-status-text-opacity: null !default;
@@ -104,6 +105,9 @@ $kendo-upload-error-bg: $kendo-color-error !default;
 /// @group upload
 $kendo-upload-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
+$kendo-upload-files-list-margin: calc( -1 * #{k-spacing(2)} ) !default;
+
+$kendo-upload-file-info-margin: k-spacing(4) !default;
 
 @forward "@progress/kendo-theme-default/scss/upload/_variables.scss" with (
     $kendo-upload-border-width: $kendo-upload-border-width,
@@ -135,5 +139,7 @@ $kendo-upload-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
     $kendo-upload-success-bg: $kendo-upload-success-bg,
     $kendo-upload-error-text: $kendo-upload-error-text,
     $kendo-upload-error-bg: $kendo-upload-error-bg,
-    $kendo-upload-focus-shadow: $kendo-upload-focus-shadow
+    $kendo-upload-focus-shadow: $kendo-upload-focus-shadow,
+    $kendo-upload-files-list-margin: $kendo-upload-files-list-margin,
+    $kendo-upload-file-info-margin: $kendo-upload-file-info-margin
 );

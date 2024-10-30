@@ -1,5 +1,6 @@
-// @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // DropZone
 
@@ -28,7 +29,7 @@ $kendo-dropzone-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the DropZone.
 /// @group dropzone
-$kendo-dropzone-bg: if($kendo-enable-color-system, k-color( surface ), if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 )) !default;
+$kendo-dropzone-bg: if($kendo-enable-color-system, k-color( surface ), if( k-is-light( $kendo-component-bg ), $kendo-color-light, $kendo-color-dark )) !default;
 /// The text color of the DropZone.
 /// @group dropzone
 $kendo-dropzone-text: $kendo-component-text !default;
@@ -64,7 +65,7 @@ $kendo-dropzone-note-font-size: var( --kendo-font-size-xs, inherit ) !default;
 $kendo-dropzone-note-spacing: null !default;
 /// The text color of the DropZone note.
 /// @group dropzone
-$kendo-dropzone-note-text: $kendo-subtle-text !default;
+$kendo-dropzone-note-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 
 
 @forward "@progress/kendo-theme-default/scss/dropzone/_variables.scss" with (

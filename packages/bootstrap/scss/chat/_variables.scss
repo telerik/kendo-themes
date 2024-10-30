@@ -1,7 +1,7 @@
-// @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // Chat
 
@@ -58,7 +58,7 @@ $kendo-chat-timestamp-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-chat-timestamp-transform: uppercase !default;
 /// The text color of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-text: $kendo-subtle-text !default;
+$kendo-chat-timestamp-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 /// The background color of the Chat timestamp.
 /// @group chat
 $kendo-chat-timestamp-bg: null !default;
@@ -171,7 +171,7 @@ $kendo-chat-bubble-selected-shadow: none !default;
 $kendo-chat-alt-bubble-bg: $kendo-color-primary !default;
 /// The text color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-chat-alt-bubble-bg )) !default;
+$kendo-chat-alt-bubble-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-chat-alt-bubble-bg )) !default;
 /// The border color of the Chat alt bubble.
 /// @group chat
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;

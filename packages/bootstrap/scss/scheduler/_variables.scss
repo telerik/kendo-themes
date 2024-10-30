@@ -3,6 +3,7 @@
 @use "../core/_index.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../calendar/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // Scheduler
 
@@ -240,6 +241,34 @@ $kendo-scheduler-tooltip-event-gap: k-spacing(2) !default;
 /// @group scheduler
 $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-bg !default;
 
+/// The padding of the Scheduler appointments.
+/// @group scheduler
+$kendo-scheduler-appointments-padding: k-spacing(4) !default;
+
+/// The horizontal padding of the Scheduler event template.
+/// @group scheduler
+$kendo-scheduler-event-template-padding-x: k-spacing(4) !default;
+/// The vertical padding of the Scheduler event template.
+/// @group scheduler
+$kendo-scheduler-event-template-padding-y: k-spacing(2) !default;
+
+/// The inline inset of the Scheduler event actions.
+/// @group scheduler
+$kendo-scheduler-event-actions-inset-x: k-spacing(4) !default;
+
+/// The margin of the Scheduler event indicators.
+/// @group scheduler
+$kendo-scheduler-indicators-margin: k-spacing(1) .4ex 0 k-spacing(2) !default;
+/// The margin of the Scheduler event indicators in rtl.
+/// @group scheduler
+$kendo-scheduler-rtl-indicators-margin: k-spacing(1) 0 k-spacing(2) .4ex !default;
+
+/// The inline inset of the Scheduler marquee labels.
+/// @group scheduler
+$kendo-scheduler-marquee-label-inset-x: k-spacing(2) !default;
+/// The block inset of the Scheduler marquee labels.
+/// @group scheduler
+$kendo-scheduler-marquee-label-inset-y: k-spacing(1) !default;
 
 @forward "@progress/kendo-theme-default/scss/scheduler/_variables.scss" with (
     $kendo-scheduler-border-width: $kendo-scheduler-border-width,
@@ -312,5 +341,13 @@ $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-bg !default;
     $kendo-scheduler-tooltip-event-padding-y: $kendo-scheduler-tooltip-event-padding-y,
     $kendo-scheduler-tooltip-event-border-radius: $kendo-scheduler-tooltip-event-border-radius,
     $kendo-scheduler-tooltip-event-gap: $kendo-scheduler-tooltip-event-gap,
-    $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-callout-text
+    $kendo-scheduler-tooltip-callout-text: $kendo-scheduler-tooltip-callout-text,
+    $kendo-scheduler-appointments-padding: $kendo-scheduler-appointments-padding,
+    $kendo-scheduler-event-template-padding-x: $kendo-scheduler-event-template-padding-x,
+    $kendo-scheduler-event-template-padding-y: $kendo-scheduler-event-template-padding-y,
+    $kendo-scheduler-event-actions-inset-x: $kendo-scheduler-event-actions-inset-x,
+    $kendo-scheduler-indicators-margin: $kendo-scheduler-indicators-margin,
+    $kendo-scheduler-rtl-indicators-margin: $kendo-scheduler-rtl-indicators-margin,
+    $kendo-scheduler-marquee-label-inset-x: $kendo-scheduler-marquee-label-inset-x,
+    $kendo-scheduler-marquee-label-inset-y: $kendo-scheduler-marquee-label-inset-y
 );

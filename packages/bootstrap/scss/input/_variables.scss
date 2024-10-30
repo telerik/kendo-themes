@@ -1,11 +1,9 @@
 @use "sass:math";
 
 @use "../button/_variables.scss" as *;
-// @use "bootstrap/scss/bootstrap.scss" as *;
-// @use "../_bootstrap_vars.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 @use "../core/_index.scss" as *;
 @use "../core/functions/index.import.scss" as *;
+
 // Input
 
 /// The default width of the Input components.
@@ -14,37 +12,37 @@ $kendo-input-default-width: 100% !default;
 
 /// The border width of the Input components.
 /// @group input
-$kendo-input-border-width: $input-border-width !default;
-$kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
+$kendo-input-border-width: k-spacing(1px) !default;
+$kendo-input-border-height: calc( #{ $kendo-input-border-width } * 2 ) !default;
 /// The border radius of the Input components.
 /// @group input
 $kendo-input-border-radius: null !default;
 
 /// The horizontal padding of the Input components.
 /// @group input
-$kendo-input-padding-x: $input-padding-x !default;
+$kendo-input-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the small Input components.
 /// @group input
-$kendo-input-sm-padding-x: $input-padding-x-sm !default;
+$kendo-input-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-x: $input-padding-x !default;
+$kendo-input-md-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the large Input components.
 /// @group input
-$kendo-input-lg-padding-x: $input-padding-x-lg !default;
+$kendo-input-lg-padding-x: k-spacing(4) !default;
 
 /// The vertical padding of input components.
 /// @group input
-$kendo-input-padding-y: $input-padding-y !default;
+$kendo-input-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the small Input components.
 /// @group input
-$kendo-input-sm-padding-y: $input-padding-y-sm !default;
+$kendo-input-sm-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-y: $input-padding-y !default;
+$kendo-input-md-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the large Input components.
 /// @group input
-$kendo-input-lg-padding-y: $input-padding-y-lg !default;
+$kendo-input-lg-padding-y: k-spacing(2) !default;
 
 /// The font family of input components.
 /// @group input
@@ -65,7 +63,7 @@ $kendo-input-lg-font-size: var( --kendo-font-size, inherit )  !default;
 
 /// The line height of input components.
 /// @group input
-$kendo-input-line-height: $input-line-height !default;
+$kendo-input-line-height: 1.5 !default;
 /// The line height of the small Input components.
 /// @group input
 $kendo-input-sm-line-height: math.div( 20, 14 ) !default;
@@ -110,10 +108,10 @@ $kendo-input-sizes: (
 $kendo-input-bg: $kendo-component-bg !default;
 /// The text color of the Input components.
 /// @group input
-$kendo-input-text: k-contrast-color( $kendo-component-bg, $gray-900, $gray-300 ) !default;
+$kendo-input-text: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-dark) !default;
 /// The border color of the Input components.
 /// @group input
-$kendo-input-border: if( k-is-light( $kendo-component-bg ), $gray-400, $gray-600 ) !default;
+$kendo-input-border: if($kendo-enable-color-system, k-color( border-alt ), #ced4da) !default;
 /// The shadow of the Input components.
 /// @group input
 $kendo-input-shadow: null !default;
@@ -133,16 +131,16 @@ $kendo-input-hover-shadow: null !default;
 
 /// The background color of the focused Input components.
 /// @group input
-$kendo-input-focus-bg: $input-focus-bg !default;
+$kendo-input-focus-bg: $kendo-input-bg !default;
 /// The text color of the focused Input components.
 /// @group input
-$kendo-input-focus-text: $input-focus-color !default;
+$kendo-input-focus-text: $kendo-input-text !default;
 /// The border color of the focused Input components.
 /// @group input
-$kendo-input-focus-border: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-tint( $kendo-selected-bg, 7 ) ) !default;
+$kendo-input-focus-border: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-tint( $kendo-color-primary, 50% ) ) !default;
 /// The shadow of the focused Input components.
 /// @group input
-$kendo-input-focus-shadow: $input-focus-box-shadow !default;
+$kendo-input-focus-shadow: 0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 )) !default;
 
 /// The background color of the selected Input components.
 /// @group input
@@ -175,8 +173,7 @@ $kendo-input-outline-bg: null !default;
 $kendo-input-outline-text: $kendo-base-text !default;
 /// The border color of the outline Input components.
 /// @group input
-$kendo-input-outline-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-base-text, .5 )) !default;
-
+$kendo-input-outline-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), color-mix(in srgb, $kendo-base-text 50%, transparent)) !default;
 /// The background color of the outline hovered Input components.
 /// @group input
 $kendo-input-outline-hover-bg: null !default;
@@ -185,7 +182,7 @@ $kendo-input-outline-hover-bg: null !default;
 $kendo-input-outline-hover-text: null !default;
 /// The border color of the outline hovered Input components.
 /// @group input
-$kendo-input-outline-hover-border: unset !default;
+$kendo-input-outline-hover-border: $kendo-input-outline-border !default;
 
 /// The background color of the outline focused Input components.
 /// @group input
@@ -235,7 +232,7 @@ $kendo-input-flat-focus-shadow: $kendo-input-focus-shadow !default;
 
 /// The text color of the Input placeholder.
 /// @group input
-$kendo-input-placeholder-text: $kendo-subtle-text !default;
+$kendo-input-placeholder-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 /// The opacity of the Input placeholder.
 /// @group input
 $kendo-input-placeholder-opacity: 1 !default;
@@ -282,10 +279,10 @@ $kendo-input-separator-opacity: .5 !default;
 
 /// The text color of the Input prefix.
 /// @group input
-$kendo-input-prefix-text: $kendo-subtle-text !default;
+$kendo-input-prefix-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 /// The text color of the Input suffix.
 /// @group input
-$kendo-input-suffix-text: $kendo-subtle-text !default;
+$kendo-input-suffix-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 
 /// The border color of the invalid Input components.
 /// @group input
@@ -366,8 +363,7 @@ $kendo-picker-outline-bg: null !default;
 $kendo-picker-outline-text: $kendo-button-text !default;
 /// The border color of the outline Picker components.
 /// @group picker
-$kendo-picker-outline-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-picker-outline-text, .5 )) !default;
-
+$kendo-picker-outline-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), color-mix(in srgb, $kendo-picker-outline-text 50%, transparent)) !default;
 /// The background color of the outline hovered Picker components.
 /// @group picker
 $kendo-picker-outline-hover-bg: $kendo-picker-outline-text !default;
@@ -413,13 +409,13 @@ $kendo-picker-flat-border: $kendo-button-border !default;
 
 /// The background color of the flat hovered Picker components.
 /// @group picker
-$kendo-picker-flat-hover-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( $kendo-button-text, .08 )) !default;
+$kendo-picker-flat-hover-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), color-mix(in srgb, $kendo-button-text 80%, transparent)) !default;
 /// The text color of the flat hovered Picker components.
 /// @group picker
 $kendo-picker-flat-hover-text: null !default;
 /// The border color of the flat hovered Picker components.
 /// @group picker
-$kendo-picker-flat-hover-border: unset !default;
+$kendo-picker-flat-hover-border: $kendo-picker-flat-border !default;
 
 /// The background color of the flat focused Picker components.
 /// @group picker

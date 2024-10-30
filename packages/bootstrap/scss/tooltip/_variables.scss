@@ -1,21 +1,22 @@
 @use "../core/_index.scss" as *;
 @use "./_functions.scss" as *;
-@use "../bootstrap_vars.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 
 // Tooltip
 
 /// The vertical padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-y: $tooltip-padding-y !default;
+$kendo-tooltip-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-x: $tooltip-padding-x !default;
+$kendo-tooltip-padding-x: k-spacing(2) !default;
 /// The width of the border around the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border-width: 0px !default;
 /// The border radius of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-border-radius: $tooltip-border-radius !default;
+$kendo-tooltip-border-radius: k-spacing(1.5) !default;
 
 /// The font family of the Tooltip.
 /// @group tooltip
@@ -36,14 +37,14 @@ $kendo-tooltip-title-line-height: var( --kendo-line-height-xs, normal ) !default
 
 /// The size of the Tooltip callout.
 /// @group tooltip
-$kendo-tooltip-callout-size: $tooltip-arrow-height !default;
+$kendo-tooltip-callout-size: calc( #{ k-spacing(8) } / 5 ) !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-bg: if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )) !default;
 /// The default text color of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-text: if($kendo-enable-color-system, k-color( app-surface ), k-contrast-color( $kendo-tooltip-bg )) !default;
+$kendo-tooltip-text: if($kendo-enable-color-system, k-color( app-surface ), k-contrast-legacy( $kendo-tooltip-bg )) !default;
 /// The default border color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border: $kendo-tooltip-bg !default;

@@ -1,12 +1,10 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
-// @use "bootstrap/scss/bootstrap.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 // @use "../core/spacing/_index.scss" as *;
 
 // Drag hint
-$kendo-drag-hint-padding-x: $btn-padding-x !default;
-$kendo-drag-hint-padding-y: $btn-padding-y !default;
+$kendo-drag-hint-padding-x: k-spacing(3) !default;
+$kendo-drag-hint-padding-y: k-spacing(1.5) !default;
 $kendo-drag-hint-border-width: 1px !default;
 $kendo-drag-hint-border-radius: k-border-radius(md) !default;
 $kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
