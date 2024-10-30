@@ -30,7 +30,7 @@ and then import it in your project styles:
 
 ```scss
 // Import the entire theme
-@use "~@progress/kendo-theme-fluent/scss/all.scss";
+@use "@progress/kendo-theme-fluent/scss/all.scss" as *;
 ```
 
 ## Importing
@@ -39,17 +39,10 @@ In your custom scss file, you can import the entirety of the theme, by importing
 
 ```scss
 // Import only Button and Grid styles
-@use "~@progress/kendo-theme-fluent/scss/index.scss" as kendo-theme;
+@use "@progress/kendo-theme-default/scss/index.scss" as *;
 
-@include kendo-theme.config(
-    $config: (
-        "components": (
-            "button",
-            "grid"
-        )
-    )
-);
-@include kendo-theme.styles();
+@include kendo-button--styles();
+@include kendo-grid--styles();
 ```
 
 ## SCSS Variables Customization
@@ -57,25 +50,19 @@ In your custom scss file, you can import the entirety of the theme, by importing
 The Kendo UI Fluent theme enables customization through SCSS variables as follows:
 
 ```scss
-@use "index.scss" as kendo-theme with (
+@use "@progress/kendo-theme-fluent/scss/all.scss" as kendo-theme with (
     $kendo-body-bg: beige,
     $kendo-font-size: 1rem
 );
-
-@include kendo-theme.config();
-@include kendo-theme.styles();
 ```
 
 or:
 
 ```scss
-@use "index.scss" as kendo-theme;
+@use "@progress/kendo-theme-fluent/scss/all.scss" as kendo-theme;
 
 kendo-theme.$kendo-body-bg: beige;
 kendo-theme.$kendo-font-size: 30px;
-
-@include kendo-theme.config();
-@include kendo-theme.styles();
 ```
 
 ## CSS Variables Customization
