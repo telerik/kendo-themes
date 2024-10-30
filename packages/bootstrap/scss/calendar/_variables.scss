@@ -1,6 +1,6 @@
-// @use "sass:map";
 @use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // Calendar
 
@@ -20,7 +20,6 @@ $kendo-calendar-line-height: var( --kendo-line-height, normal ) !default;
 /// The size of the cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-size: 38px !default;
-
 /// The background color of the Calendar.
 /// @group calendar
 $kendo-calendar-bg: $kendo-component-bg !default;
@@ -106,7 +105,7 @@ $kendo-calendar-header-cell-line-height: var( --kendo-line-height-lg, normal ) !
 $kendo-calendar-header-cell-bg: null !default;
 /// The text color of the header cells in the Calendar.
 /// @group calendar
-$kendo-calendar-header-cell-text: $kendo-subtle-text !default;
+$kendo-calendar-header-cell-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 /// The opacity of the header cells in the Calendar.
 /// @group calendar
 $kendo-calendar-header-cell-opacity: null !default;
@@ -132,8 +131,7 @@ $kendo-calendar-caption-font-weight: bold !default;
 
 /// The font size of the week number cells in the Calendar.
 /// @group calendar
-$kendo-calendar-week-number-font-size: $kendo-font-size-sm !default;
-
+$kendo-calendar-week-number-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The width of the Calendar view.
 /// @group calendar
 $kendo-calendar-view-width: ($kendo-calendar-cell-size * 8) !default;

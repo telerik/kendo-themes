@@ -1,15 +1,13 @@
 @use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
-@use "../bootstrap_vars.scss" as *;
-// @use "bootstrap/scss/bootstrap.scss" as *;
-
+@use "../core/functions/index.import.scss" as *;
 
 // Button
 
 /// The width of the border around the Button.
 /// @group button
-$kendo-button-border-width: $btn-border-width !default;
+$kendo-button-border-width: 1px !default;
 
 /// The border radius of the Button.
 /// @group button
@@ -17,29 +15,29 @@ $kendo-button-border-radius: null !default;
 
 /// The horizontal padding of the Button.
 /// @group button
-$kendo-button-padding-x: $btn-padding-x !default;
+$kendo-button-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-x: $btn-padding-x-sm !default;
+$kendo-button-sm-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-x: $btn-padding-x !default;
+$kendo-button-md-padding-x: k-spacing(3) !default;
 /// The horizontal padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-x: $btn-padding-x-lg !default;
+$kendo-button-lg-padding-x: k-spacing(4) !default;
 
 /// The vertical padding of the Button.
 /// @group button
-$kendo-button-padding-y: $btn-padding-y !default;
+$kendo-button-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: $btn-padding-y-sm !default;
+$kendo-button-sm-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-y: $btn-padding-y !default;
+$kendo-button-md-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-y: $btn-padding-y-lg !default;
+$kendo-button-lg-padding-y: k-spacing(2) !default;
 
 /// The font family of the Button.
 /// @group button
@@ -47,7 +45,7 @@ $kendo-button-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The font size of the Button.
 /// @group button
-$kendo-button-font-size: $btn-font-size !default;
+$kendo-button-font-size: $kendo-font-size !default;
 /// The font size of the small Button.
 /// @group button
 $kendo-button-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
@@ -60,7 +58,7 @@ $kendo-button-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// The line height used along with the $kendo-font-size variable.
 /// @group button
-$kendo-button-line-height: $btn-line-height !default;
+$kendo-button-line-height: $kendo-line-height !default;
 /// The line height used along with the $kendo-font-size variable of the small Button.
 /// @group button
 $kendo-button-sm-line-height: math.div( 20, 14 ) !default;
@@ -120,7 +118,7 @@ $kendo-button-theme-colors: map.merge(
 $kendo-button-bg: if($kendo-enable-color-system, k-color( base ), #e4e7eb) !default;
 /// The base text color of the Button.
 /// @group button
-$kendo-button-text: if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-button-bg, $gray-900 )) !default;
+$kendo-button-text: if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-button-bg, $kendo-color-dark )) !default;
 /// The base border color of the Button.
 /// @group button
 $kendo-button-border: $kendo-button-bg !default;

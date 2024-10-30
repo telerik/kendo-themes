@@ -57,6 +57,9 @@ $kendo-list-lg-header-line-height: null !default;
 /// @group list
 $kendo-list-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
+/// The padding of the the List filter input.
+/// @group list
+$kendo-list-filter-padding: k-spacing(4) !default;
 /// The horizontal padding of the List items, when no size is set.
 /// @group list
 $kendo-list-item-padding-x: null !default;
@@ -247,7 +250,7 @@ $kendo-list-group-item-shadow: null !default;
 
 /// The color of the 'Option Label' text.
 /// @group list
-$kendo-list-option-label-text: $kendo-subtle-text !default;
+$kendo-list-option-label-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 
 
 @forward "@progress/kendo-theme-default/scss/list/_variables.scss" with (
@@ -278,6 +281,7 @@ $kendo-list-option-label-text: $kendo-subtle-text !default;
     $kendo-list-md-header-line-height: $kendo-list-md-header-line-height,
     $kendo-list-lg-header-line-height: $kendo-list-lg-header-line-height,
     $kendo-list-header-font-weight: $kendo-list-header-font-weight,
+    $kendo-list-filter-padding: $kendo-list-filter-padding,
     $kendo-list-item-padding-x: $kendo-list-item-padding-x,
     $kendo-list-sm-item-padding-x: $kendo-list-sm-item-padding-x,
     $kendo-list-md-item-padding-x: $kendo-list-md-item-padding-x,

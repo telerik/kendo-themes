@@ -2,23 +2,21 @@
 @use "../core/_index.scss" as *;
 @use "../button/_variables.scss" as *;
 @use "../typography/_variables.scss" as *;
-// @use "bootstrap/scss/bootstrap.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 
 // Card
 
 /// The horizontal padding of the Card.
 /// @group card
-$kendo-card-padding-x: $card-spacer-x !default;
+$kendo-card-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Card.
 /// @group card
-$kendo-card-padding-y: $card-spacer-y !default;
+$kendo-card-padding-y: $kendo-card-padding-x !default;
 /// The width of the border around the Card.
 /// @group card
 $kendo-card-border-width: 1px !default;
 /// The border radius of the Card.
 /// @group card
-$kendo-card-border-radius: $card-border-radius !default;
+$kendo-card-border-radius: k-spacing(1.5) !default;
 /// The inner border radius of the Card.
 /// @group card
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
@@ -57,7 +55,7 @@ $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: unset !default;
+$kendo-card-focus-border: $kendo-card-border !default;
 
 // TODO: double-check: the default theme is not supposed to elevate the Card on focus
 
@@ -118,13 +116,13 @@ $kendo-card-title-margin-bottom: k-spacing(3) !default;
 $kendo-card-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The font family of the Card title.
 /// @group card
-$kendo-card-title-font-family: $headings-font-family !default;
+$kendo-card-title-font-family: null !default;
 /// The line height of the Card title.
 /// @group card
-$kendo-card-title-line-height: $headings-line-height !default;
+$kendo-card-title-line-height: 1.2 !default;
 /// The font weight of the Card title.
 /// @group card
-$kendo-card-title-font-weight: $headings-font-weight !default;
+$kendo-card-title-font-weight: $kendo-font-weight-medium !default;
 /// The letter spacing of the Card title.
 /// @group card
 $kendo-card-title-letter-spacing: null !default;
@@ -137,19 +135,19 @@ $kendo-card-subtitle-margin-bottom: k-spacing(3) !default;
 $kendo-card-subtitle-font-size: $kendo-h6-font-size !default;
 /// The font family of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-family: $headings-font-family !default;
+$kendo-card-subtitle-font-family: null !default;
 /// The line height of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-line-height: $headings-line-height !default;
+$kendo-card-subtitle-line-height: $kendo-card-title-line-height !default;
 /// The font weight of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-weight: $headings-font-weight !default;
+$kendo-card-subtitle-font-weight: $kendo-card-title-font-weight !default;
 /// The letter spacing of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-letter-spacing: null !default;
 /// The text color of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-text: $kendo-subtle-text !default;
+$kendo-card-subtitle-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 
 /// The maximum width of the Card image.
 /// @group card

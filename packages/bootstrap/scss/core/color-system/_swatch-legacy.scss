@@ -1,82 +1,274 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../functions/index.import.scss" as *;
 @use "@progress/kendo-theme-core/scss/index.import.scss" as *;
 
-@if ($kendo-enable-color-system) {
-    $input-bg: k-color( surface-alt );
-    $input-color: k-color( on-app-surface );
-    $input-border-color: k-color( border-alt );
-    $input-placeholder-color: k-color( subtle );
-    $input-focus-bg: k-color( surface-alt );
-    $input-focus-color: k-color( on-app-surface );
-    $input-focus-border-color: k-color( primary-emphasis );
-    $input-focus-box-shadow: 0 0 0 .25rem color-mix(in srgb, k-color( primary ) 25%, transparent);
-    $kendo-color-primary: k-color( primary );
-    $kendo-color-primary-contrast: k-color( on-primary );
-    $kendo-color-secondary: k-color( secondary );
-    $kendo-color-tertiary: k-color( tertiary );
-    $kendo-color-info: k-color( info );
-    $kendo-color-success: k-color( success );
-    $kendo-color-warning: k-color( warning );
-    $kendo-color-error: k-color( error );
-    $kendo-color-dark: k-color( dark );
-    $kendo-color-light: k-color( light );
-    $kendo-color-inverse: $kendo-color-dark;
-    $kendo-body-bg: k-color( app-surface );
-    $kendo-body-text: k-color( on-app-surface );
-    $kendo-subtle-text: k-color( subtle );
-    $kendo-app-bg: k-color( surface );
-    $kendo-app-text: $kendo-body-text;
-    $kendo-app-border: k-color( border );
-    $kendo-link-text: $kendo-color-primary;
-    $kendo-link-hover-text: k-color( primary-hover );
-    $kendo-component-bg: k-color( surface-alt );
-    $kendo-component-text: $kendo-body-text;
-    $kendo-component-border: $kendo-app-border;
-    $kendo-base-bg: k-color( surface );
-    $kendo-base-text: $kendo-body-text;
-    $kendo-base-border: $kendo-app-border;
-    $kendo-base-gradient: null;
-    $kendo-hover-bg: k-color( base-subtle-hover );
-    $kendo-hover-text: $kendo-base-text;
-    $kendo-hover-border: $kendo-base-border;
-    $kendo-hover-gradient: null;
-    $kendo-selected-bg: $kendo-color-primary;
-    $kendo-selected-text: $kendo-color-primary-contrast;
-    $kendo-selected-border: k-color( primary );
-    $kendo-selected-gradient: $kendo-base-gradient;
-    $kendo-selected-hover-bg: k-color( primary-hover );
-    $kendo-selected-hover-text: $kendo-selected-text;
-    $kendo-selected-hover-border: $kendo-base-border;
-    $kendo-selected-hover-gradient: $kendo-base-gradient;
-    $kendo-disabled-text: null;
-    $kendo-disabled-bg: null;
-    $kendo-disabled-border: null;
-    $kendo-disabled-opacity: .65;
-    $kendo-disabled-filter: grayscale(.1);
-    $kendo-component-header-bg: $kendo-base-bg;
-    $kendo-component-header-text: $kendo-component-text;
-    $kendo-component-header-border: $kendo-component-border;
-    $kendo-component-header-gradient: null;
-    $kendo-invalid-bg: null;
-    $kendo-invalid-text: $kendo-color-error;
-    $kendo-invalid-border: $kendo-color-error;
-    $kendo-invalid-shadow: 0 0 0 .25rem color-mix(in srgb, k-color( error ) 25%, transparent);
-    $kendo-theme-colors: (
-        "primary": $kendo-color-primary,
-        "secondary": $kendo-color-secondary,
-        "tertiary": $kendo-color-tertiary,
-        "info": $kendo-color-info,
-        "success": $kendo-color-success,
-        "warning": $kendo-color-warning,
-        "error": $kendo-color-error,
-        "dark": $kendo-color-dark,
-        "light": $kendo-color-light,
-        "inverse": $kendo-color-inverse,
-    );
-    $kendo-disabled-styling: (
-        bg: $kendo-disabled-bg,
-        color: $kendo-disabled-text,
-        border: $kendo-disabled-border,
-        opacity: $kendo-disabled-opacity,
-        filter: $kendo-disabled-filter
-    );
-}
+// Legacy
+$kendo-is-dark-theme: false !default;
+// Theme colors
+/// The color that focuses the user attention.
+/// Used for primary buttons and for elements of primary importance across the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-primary: if($kendo-enable-color-system, k-color(primary), #0d6efd) !default;
+$kendo-color-primary-lighter: if($kendo-enable-color-system, k-color(primary-subtle), k-color-tint( $kendo-color-primary, 2 )) !default;
+$kendo-color-primary-darker: if($kendo-enable-color-system, k-color(primary-active), k-color-shade( $kendo-color-primary, 2 )) !default;
+/// The color used along with the primary color denoted by $kendo-color-primary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-primary-contrast: if($kendo-enable-color-system, k-color(on-primary), k-contrast-legacy( $kendo-color-primary )) !default;
+/// The secondary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary: if($kendo-enable-color-system, k-color(secondary), #6c757d) !default;
+$kendo-color-secondary-lighter: if($kendo-enable-color-system, k-color(secondary-subtle), k-color-tint( $kendo-color-secondary, 2 )) !default;
+$kendo-color-secondary-darker: if($kendo-enable-color-system, k-color(secondary-active), k-color-shade( $kendo-color-secondary, 2 )) !default;
+/// The color used along with the secondary color denoted by $kendo-color-secondary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary-contrast: if($kendo-enable-color-system, k-color(on-secondary), k-contrast-legacy( $kendo-color-secondary )) !default;
+/// The tertiary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary: if($kendo-enable-color-system, k-color(tertiary), #6f42c1) !default;
+$kendo-color-tertiary-lighter: if($kendo-enable-color-system, k-color(tertiary-subtle), k-color-tint( $kendo-color-tertiary, 2 )) !default;
+$kendo-color-tertiary-darker: if($kendo-enable-color-system, k-color(tertiary-active), k-color-shade( $kendo-color-tertiary, 2 )) !default;
+/// The color used along with the tertiary color denoted by $kendo-color-tertiary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary-contrast: if($kendo-enable-color-system, k-color(on-primary), k-contrast-legacy( $kendo-color-tertiary )) !default;
+/// The color for informational messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-info: if($kendo-enable-color-system, k-color(info), #0dcaf0) !default;
+$kendo-color-info-lighter: if($kendo-enable-color-system, k-color(info-subtle), k-color-tint( $kendo-color-info, 2 )) !default;
+$kendo-color-info-darker: if($kendo-enable-color-system, k-color(info-active), k-color-shade( $kendo-color-info, 2 )) !default;
+/// The color for success messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-success: if($kendo-enable-color-system, k-color(success), #198754) !default;
+$kendo-color-success-lighter: if($kendo-enable-color-system, k-color(success-subtle), k-color-tint( $kendo-color-success, 2 )) !default;
+$kendo-color-success-darker: if($kendo-enable-color-system, k-color(success-active), k-color-shade( $kendo-color-success, 2 )) !default;
+/// The color for warning messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-warning: if($kendo-enable-color-system, k-color(warning), #ffc107) !default;
+$kendo-color-warning-lighter: if($kendo-enable-color-system, k-color(warning-subtle), k-color-tint( $kendo-color-warning, 2 )) !default;
+$kendo-color-warning-darker: if($kendo-enable-color-system, k-color(warning-active), k-color-shade( $kendo-color-warning, 2 )) !default;
+/// The color for error messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-error: if($kendo-enable-color-system, k-color(error), #dc3545) !default;
+$kendo-color-error-lighter: if($kendo-enable-color-system, k-color(error-subtle), k-color-tint( $kendo-color-error, 2 )) !default;
+$kendo-color-error-darker: if($kendo-enable-color-system, k-color(error-active), k-color-shade( $kendo-color-error, 2 )) !default;
+/// The dark color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-dark: if($kendo-enable-color-system, k-color(dark), #212529) !default;
+/// The light color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-light: if($kendo-enable-color-system, k-color(light), #f8f9fa) !default;
+/// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
+/// @group color-system
+$kendo-color-inverse: if( $kendo-is-dark-theme, if($kendo-enable-color-system, k-color(light), $kendo-color-light), if($kendo-enable-color-system, k-color(dark), $kendo-color-dark )) !default;
+$kendo-theme-colors: (
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse
+) !default;
+// Generic styles
+// Root styles
+$kendo-body-bg: if($kendo-enable-color-system, k-color(app-surface), $kendo-color-white) !default;
+$kendo-body-text: if($kendo-enable-color-system, k-color(on-app-surface), k-contrast-color( $kendo-body-bg, $kendo-color-dark, $kendo-color-light )) !default;
+$kendo-subtle-text: if( $kendo-is-dark-theme, if($kendo-enable-color-system, k-color(subtle), #ced4da), if($kendo-enable-color-system, k-color(subtle), #6c757d ) ) !default;
+
+$kendo-app-bg: if($kendo-enable-color-system, k-color(surface), k-try-shade( $kendo-body-bg, .25 )) !default;
+$kendo-app-text: $kendo-body-text !default;
+$kendo-app-border: if($kendo-enable-color-system, k-color(border), if(k-is-light($kendo-app-bg), rgba( $kendo-color-dark, .13), rgba( $kendo-color-light, .13))) !default;
+// Link
+$kendo-link-text: if($kendo-enable-color-system, k-color(primary), $kendo-color-primary) !default;
+$kendo-link-hover-text: if($kendo-enable-color-system, k-color(primary-hover), k-color-shade( $kendo-color-primary, 2 )) !default;
+
+// Components
+// Component
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.
+/// @group component
+$kendo-component-bg: $kendo-body-bg !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.
+/// @group component
+/// $kendo-component-text: $kendo-body-text !default;
+$kendo-component-text: $kendo-body-text !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.
+/// @group component
+$kendo-component-border: $kendo-app-border !default;
+/// The background of the components' chrome area.
+$kendo-base-bg: if($kendo-enable-color-system, k-color(light), $kendo-color-light) !default;
+/// The text color of the components' chrome area.
+$kendo-base-text: $kendo-body-text !default;
+/// The border color of the components' chrome area.
+$kendo-base-border: if($kendo-enable-color-system, $kendo-app-border, k-try-shade( $kendo-base-bg, 1 )) !default;
+/// The gradient background of the components' chrome area.
+$kendo-base-gradient: if($kendo-enable-color-system, null, none) !default;
+/// The background of hovered items.
+$kendo-hover-bg: if($kendo-enable-color-system, k-color( base-subtle-hover), #e9ecef) !default;
+/// The text color of hovered items.
+$kendo-hover-text: $kendo-base-text !default;
+/// The border color of hovered items.
+$kendo-hover-border: if($kendo-enable-color-system, $kendo-base-border, k-try-shade( $kendo-hover-bg, 1 )) !default;
+/// The gradient background of hovered items.
+$kendo-hover-gradient: if($kendo-enable-color-system, null, none) !default;
+/// The background of selected items.
+$kendo-selected-bg: if($kendo-enable-color-system, k-color(primary), $kendo-color-primary) !default;
+/// The text color of selected items.
+$kendo-selected-text: if($kendo-enable-color-system, k-color(on-primary), $kendo-color-primary-contrast) !default;
+/// The border color of selected items.
+$kendo-selected-border: if($kendo-enable-color-system, k-color(primary), k-try-shade( $kendo-selected-bg, 1 )) !default;
+/// The gradient background of selected items.
+$kendo-selected-gradient: if($kendo-enable-color-system, null, none)  !default;
+$kendo-selected-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-selected-bg, .5 )) !default;
+$kendo-selected-hover-text: $kendo-selected-text !default;
+$kendo-selected-hover-border: $kendo-base-border !default;
+$kendo-selected-hover-gradient: if($kendo-enable-color-system, null, none)  !default;
+// Header
+$kendo-component-header-bg: $kendo-base-bg !default;
+$kendo-component-header-text: $kendo-component-text !default;
+$kendo-component-header-border: $kendo-component-border !default;
+$kendo-component-header-gradient: if($kendo-enable-color-system, null, none)  !default;
+// Validator
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: $kendo-color-error !default;
+$kendo-invalid-border: $kendo-color-error !default;
+$kendo-invalid-shadow: 0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( error ) 25%, transparent), rgba( $kendo-invalid-border, .25 )) !default;
+$kendo-valid-bg: null !default;
+$kendo-valid-text: $kendo-color-success !default;
+$kendo-valid-border: $kendo-color-success !default;
+$kendo-valid-shadow: 0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( success ) 25%, transparent), rgba( $kendo-valid-border, .25 )) !default;
+
+// Disabled Styling
+$kendo-disabled-bg: null !default;
+$kendo-disabled-text: null !default;
+$kendo-disabled-border: null !default;
+$kendo-disabled-opacity: 0.65 !default;
+$kendo-disabled-filter: grayscale(0.1) !default;
+
+$kendo-disabled-styling: (
+    bg: $kendo-disabled-bg,
+    color: $kendo-disabled-text,
+    border: $kendo-disabled-border,
+    opacity: $kendo-disabled-opacity,
+    filter: $kendo-disabled-filter,
+) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/core/color-system/_swatch-legacy.scss" with (
+    $kendo-color-primary: $kendo-color-primary,
+    $kendo-color-primary-lighter: $kendo-color-primary-lighter,
+    $kendo-color-primary-darker: $kendo-color-primary-darker,
+    $kendo-color-primary-contrast: $kendo-color-primary-contrast,
+
+    $kendo-color-secondary: $kendo-color-secondary,
+    $kendo-color-secondary-lighter: $kendo-color-secondary-lighter,
+    $kendo-color-secondary-darker: $kendo-color-secondary-darker,
+    $kendo-color-secondary-contrast: $kendo-color-secondary-contrast,
+
+    $kendo-color-tertiary: $kendo-color-tertiary,
+    $kendo-color-tertiary-lighter: $kendo-color-tertiary-lighter,
+    $kendo-color-tertiary-darker: $kendo-color-tertiary-darker,
+    $kendo-color-tertiary-contrast: $kendo-color-tertiary-contrast,
+
+    $kendo-color-info: $kendo-color-info,
+    $kendo-color-info-lighter: $kendo-color-info-lighter,
+    $kendo-color-info-darker: $kendo-color-info-darker,
+
+    $kendo-color-success: $kendo-color-success,
+    $kendo-color-success-lighter: $kendo-color-success-lighter,
+    $kendo-color-success-darker: $kendo-color-success-darker,
+
+    $kendo-color-warning: $kendo-color-warning,
+    $kendo-color-warning-lighter: $kendo-color-warning-lighter,
+    $kendo-color-warning-darker: $kendo-color-warning-darker,
+
+    $kendo-color-error: $kendo-color-error,
+    $kendo-color-error-lighter: $kendo-color-error-lighter,
+    $kendo-color-error-darker: $kendo-color-error-darker,
+
+    $kendo-color-dark: $kendo-color-dark,
+
+    $kendo-color-light: $kendo-color-light,
+
+    $kendo-color-inverse: $kendo-color-inverse,
+
+    $kendo-body-bg: $kendo-body-bg,
+    $kendo-body-text: $kendo-body-text,
+
+    $kendo-subtle-text: $kendo-subtle-text,
+
+    $kendo-app-bg: $kendo-app-bg,
+    $kendo-app-text: $kendo-app-text,
+    $kendo-app-border: $kendo-app-border,
+
+    $kendo-component-bg: $kendo-component-bg,
+    $kendo-component-text: $kendo-component-text,
+    $kendo-component-border: $kendo-component-border,
+
+    $kendo-base-bg: $kendo-base-bg,
+    $kendo-base-text: $kendo-base-text,
+    $kendo-base-border: $kendo-base-border,
+    $kendo-base-gradient: $kendo-base-gradient,
+
+    $kendo-component-header-bg: $kendo-component-header-bg,
+    $kendo-component-header-text: $kendo-component-header-text,
+    $kendo-component-header-border: $kendo-component-header-border,
+    $kendo-component-header-gradient: $kendo-component-header-gradient,
+
+    $kendo-hover-bg: $kendo-hover-bg,
+    $kendo-hover-text: $kendo-hover-text,
+    $kendo-hover-border: $kendo-hover-border,
+    $kendo-hover-gradient: $kendo-hover-gradient,
+
+    $kendo-selected-bg: $kendo-selected-bg,
+    $kendo-selected-text: $kendo-selected-text,
+    $kendo-selected-border: $kendo-selected-border,
+    $kendo-selected-gradient: $kendo-selected-gradient,
+
+    $kendo-selected-hover-bg: $kendo-selected-hover-bg,
+    $kendo-selected-hover-text: $kendo-selected-hover-text,
+    $kendo-selected-hover-border: $kendo-selected-hover-border,
+    $kendo-selected-hover-gradient: $kendo-selected-hover-gradient,
+
+    $kendo-link-text: $kendo-link-text,
+    $kendo-link-hover-text: $kendo-link-hover-text,
+
+    $kendo-invalid-bg: $kendo-invalid-bg,
+    $kendo-invalid-text: $kendo-invalid-text,
+    $kendo-invalid-border: $kendo-invalid-border,
+    $kendo-invalid-shadow: $kendo-invalid-shadow,
+
+    $kendo-valid-bg: $kendo-valid-bg,
+    $kendo-valid-text: $kendo-valid-text,
+    $kendo-valid-border: $kendo-valid-border,
+    $kendo-valid-shadow: $kendo-valid-shadow,
+
+    $kendo-disabled-bg: $kendo-disabled-bg,
+    $kendo-disabled-text: $kendo-disabled-text,
+    $kendo-disabled-border: $kendo-disabled-border,
+    $kendo-disabled-opacity: $kendo-disabled-opacity,
+    $kendo-disabled-filter: $kendo-disabled-filter,
+
+    $kendo-disabled-styling: $kendo-disabled-styling,
+    $kendo-theme-colors: $kendo-theme-colors
+);

@@ -1,17 +1,17 @@
 @use "../core/_index.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
+@use "../core/functions/index.import.scss" as *;
 
 // ProgressBar
 
 /// The height of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-height: $progress-height !default;
+$kendo-progressbar-height: k-spacing(4) !default;
 /// The horizontal width of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-horizontal-width: 100% !default;
 /// The animation timing of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-animation-timing: $progress-bar-animation-timing !default;
+$kendo-progressbar-animation-timing: 1s linear infinite !default;
 /// The width of the border around the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-border-width: 0px !default;
@@ -20,17 +20,17 @@ $kendo-progressbar-border-width: 0px !default;
 $kendo-progressbar-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-font-size: $progress-font-size !default;
+$kendo-progressbar-font-size: $kendo-font-size * .75 !default;
 /// The line height of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-line-height: var( --kendo-line-height-xs, normal ) !default;
 
 /// The background color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-bg: if($kendo-enable-color-system, k-color( base-subtle ), $gray-200) !default;
+$kendo-progressbar-bg: if($kendo-enable-color-system, k-color( base-subtle ), #e9ecef) !default;
 /// The text color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-text: if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $gray-200 )) !default;
+$kendo-progressbar-text: if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( #e9ecef )) !default;
 /// The border color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-border: inherit !default;

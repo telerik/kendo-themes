@@ -26,7 +26,6 @@
 @forward "./badge/_index.scss";
 @forward "./color-preview/_index.scss";
 @forward "./loader/_index.scss";
-// @use "./loading/_index.scss";
 @forward "./skeleton/_index.scss";
 @forward "./time-marker/_index.scss";
 
@@ -196,7 +195,6 @@
 @use "./chip/_index.scss" as *;
 @use "./color-preview/_index.scss" as *;
 @use "./loader/_index.scss" as *;
-// @use "./loading/_index.scss" as *;
 @use "./skeleton/_index.scss" as *;
 @use "./time-marker/_index.scss" as *;
 
@@ -327,10 +325,6 @@
 @use "./orgchart/_index.scss" as *;
 @use "./signature/_index.scss" as *;
 
-// Configuration
-// @mixin kendo-theme--config( $config: null ) {
-// }
-
 
 // Styles
 @mixin kendo-theme--styles() {
@@ -344,16 +338,15 @@
 
 
     // Generic content
-    // @include kendo-icon--styles();
     @include kendo-messagebox--styles();
 
 
     // Primitive components
 
-    @include kendo-action-buttons--styles();
     @include kendo-draggable--styles();
     @include kendo-list--styles();
     @include kendo-listgroup--styles();
+    @include kendo-action-buttons--styles();
     @include kendo-overlay--styles();
     @include kendo-popup--styles();
     @include kendo-ripple--styles();

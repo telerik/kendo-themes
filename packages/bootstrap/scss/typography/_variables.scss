@@ -1,87 +1,85 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
-@use "../_bootstrap_vars.scss" as *;
 
 // Typography
-
 
 // Headings
 
 /// The font size of the highest level heading.
 /// @group typography
-$kendo-h1-font-size: $h1-font-size !default;
+$kendo-h1-font-size: $kendo-font-size * 2.5 !default;
 /// The font size of the second highest level heading.
 /// @group typography
-$kendo-h2-font-size: $h2-font-size !default;
+$kendo-h2-font-size: $kendo-font-size * 2 !default;
 /// The font size of the third highest level heading.
 /// @group typography
-$kendo-h3-font-size: $h3-font-size !default;
+$kendo-h3-font-size: $kendo-font-size * 1.75 !default;
 /// The font size of the fourth highest level heading.
 /// @group typography
-$kendo-h4-font-size: $h4-font-size !default;
+$kendo-h4-font-size: $kendo-font-size * 1.5 !default;
 /// The font size of the fifth highest level heading.
 /// @group typography
-$kendo-h5-font-size: $h5-font-size !default;
+$kendo-h5-font-size: $kendo-font-size * 1.25 !default;
 /// The font size of the sixth highest level heading.
 /// @group typography
-$kendo-h6-font-size: $h6-font-size !default;
+$kendo-h6-font-size: $kendo-font-size !default;
 
 /// The font family of the highest level heading.
 /// @group typography
-$kendo-h1-font-family: $headings-font-family !default;
+$kendo-h1-font-family: null !default;
 /// The font family of the second highest level heading.
 /// @group typography
-$kendo-h2-font-family: $headings-font-family !default;
+$kendo-h2-font-family: null !default;
 /// The font family of the third highest level heading.
 /// @group typography
-$kendo-h3-font-family: $headings-font-family !default;
+$kendo-h3-font-family: null !default;
 /// The font family of the fourth highest level heading.
 /// @group typography
-$kendo-h4-font-family: $headings-font-family !default;
+$kendo-h4-font-family: null !default;
 /// The font family of the fifth highest level heading.
 /// @group typography
-$kendo-h5-font-family: $headings-font-family !default;
+$kendo-h5-font-family: null !default;
 /// The font family of the sixth highest level heading.
 /// @group typography
-$kendo-h6-font-family: $headings-font-family !default;
+$kendo-h6-font-family: null !default;
 
 /// The line height of the highest level heading.
 /// @group typography
-$kendo-h1-line-height: $headings-line-height !default;
+$kendo-h1-line-height: 1.2 !default;
 /// The line height of the second highest level heading.
 /// @group typography
-$kendo-h2-line-height: $headings-line-height !default;
+$kendo-h2-line-height: 1.2 !default;
 /// The line height of the third highest level heading.
 /// @group typography
-$kendo-h3-line-height: $headings-line-height !default;
+$kendo-h3-line-height: 1.2 !default;
 /// The line height of the fourth highest level heading.
 /// @group typography
-$kendo-h4-line-height: $headings-line-height !default;
+$kendo-h4-line-height: 1.2 !default;
 /// The line height of the fifth highest level heading.
 /// @group typography
-$kendo-h5-line-height: $headings-line-height !default;
+$kendo-h5-line-height: 1.2 !default;
 /// The line height of the sixth highest level heading.
 /// @group typography
-$kendo-h6-line-height: $headings-line-height !default;
+$kendo-h6-line-height: 1.2 !default;
 
 /// The font weight of the highest level heading.
 /// @group typography
-$kendo-h1-font-weight: $headings-font-weight !default;
+$kendo-h1-font-weight: $kendo-font-weight-medium !default;
 /// The font weight of the second highest level heading.
 /// @group typography
-$kendo-h2-font-weight: $headings-font-weight !default;
+$kendo-h2-font-weight: $kendo-font-weight-medium !default;
 /// The font weight of the third highest level heading.
 /// @group typography
-$kendo-h3-font-weight: $headings-font-weight !default;
+$kendo-h3-font-weight: $kendo-font-weight-medium !default;
 /// The font weight of the fourth highest level heading.
 /// @group typography
-$kendo-h4-font-weight: $headings-font-weight !default;
+$kendo-h4-font-weight: $kendo-font-weight-medium !default;
 /// The font weight of the fifth highest level heading.
 /// @group typography
-$kendo-h5-font-weight: $headings-font-weight !default;
+$kendo-h5-font-weight: $kendo-font-weight-medium !default;
 /// The font weight of the sixth highest level heading.
 /// @group typography
-$kendo-h6-font-weight: $headings-font-weight !default;
+$kendo-h6-font-weight: $kendo-font-weight-medium !default;
 
 /// The letter spacing of the highest level heading.
 /// @group typography
@@ -104,22 +102,22 @@ $kendo-h6-letter-spacing: null !default;
 
 /// The margin of the highest level heading.
 /// @group typography
-$kendo-h1-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h1-margin: 0 0 k-spacing(2) !default;
 /// The margin of the second highest level heading.
 /// @group typography
-$kendo-h2-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h2-margin: 0 0 k-spacing(2) !default;
 /// The margin of the third highest level heading.
 /// @group typography
-$kendo-h3-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h3-margin: 0 0 k-spacing(2) !default;
 /// The margin of the fourth highest level heading.
 /// @group typography
-$kendo-h4-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h4-margin: 0 0 k-spacing(2) !default;
 /// The margin of the fifth highest level heading.
 /// @group typography
-$kendo-h5-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h5-margin: 0 0 k-spacing(2) !default;
 /// The margin of the sixth highest level heading.
 /// @group typography
-$kendo-h6-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h6-margin: 0 0 k-spacing(2) !default;
 ///
 
 /// The headings Map.
@@ -180,7 +178,7 @@ $kendo-headings: (
 
 /// The margin of the paragraph.
 /// @group typography
-$kendo-paragraph-margin: 0 0 $paragraph-margin-bottom !default;
+$kendo-paragraph-margin: 0 0 k-spacing(4) !default;
 /// The font size of the paragraph.
 /// @group typography
 $kendo-paragraph-font-size: var( --kendo-font-size, inherit )  !default;
@@ -247,16 +245,16 @@ $kendo-code-border: $kendo-component-border !default;
 
 /// The font size of the largest display text.
 /// @group typography
-$kendo-display1-font-size: map.get( $display-font-sizes, 1) !default;
+$kendo-display1-font-size: calc( #{$kendo-font-size} * 5 ) !default;
 /// The font size of the second largest display text.
 /// @group typography
-$kendo-display2-font-size: map.get( $display-font-sizes, 2) !default;
+$kendo-display2-font-size: calc( #{$kendo-font-size} * 4.5 ) !default;
 /// The font size of the third largest display text.
 /// @group typography
-$kendo-display3-font-size: map.get( $display-font-sizes, 3) !default;
+$kendo-display3-font-size: calc( #{$kendo-font-size} * 4 ) !default;
 /// The font size of the fourth largest display text.
 /// @group typography
-$kendo-display4-font-size: map.get( $display-font-sizes, 4) !default;
+$kendo-display4-font-size: calc( #{$kendo-font-size} * 3.5 ) !default;
 
 /// The font family of the largest display text.
 /// @group typography
@@ -273,29 +271,29 @@ $kendo-display4-font-family: unset !default;
 
 /// The line height of the largest display text.
 /// @group typography
-$kendo-display1-line-height: $display-line-height !default;
+$kendo-display1-line-height: 1.2 !default;
 /// The line height of the second largest display text.
 /// @group typography
-$kendo-display2-line-height: $display-line-height !default;
+$kendo-display2-line-height: 1.2 !default;
 /// The line height of the third largest display text.
 /// @group typography
-$kendo-display3-line-height: $display-line-height !default;
+$kendo-display3-line-height: 1.2 !default;
 /// The line height of the fourth largest display text.
 /// @group typography
-$kendo-display4-line-height: $display-line-height !default;
+$kendo-display4-line-height: 1.2 !default;
 
 /// The font weight of the largest display text.
 /// @group typography
-$kendo-display1-font-weight: $display-font-weight !default;
+$kendo-display1-font-weight: $kendo-font-weight-light !default;
 /// The font weight of the second largest display text.
 /// @group typography
-$kendo-display2-font-weight: $display-font-weight !default;
+$kendo-display2-font-weight: $kendo-font-weight-light !default;
 /// The font weight of the third largest display text.
 /// @group typography
-$kendo-display3-font-weight: $display-font-weight !default;
+$kendo-display3-font-weight: $kendo-font-weight-light !default;
 /// The font weight of the fourth largest display text.
 /// @group typography
-$kendo-display4-font-weight: $display-font-weight !default;
+$kendo-display4-font-weight: $kendo-font-weight-light !default;
 
 /// The letter spacing of the largest display text.
 /// @group typography
