@@ -1,3 +1,6 @@
+// @use "sass:map";
+@use "../core/_index.scss" as *;
+
 // Captcha
 
 /// The spacer of the Captcha.
@@ -45,3 +48,21 @@ $kendo-captcha-validation-message-font-size: var( --kendo-font-size-sm, inherit 
 /// The font style of the Captcha validation message.
 /// @group captcha
 $kendo-captcha-validation-message-font-style: italic !default;
+
+
+@forward "@progress/kendo-theme-default/scss/captcha/_variables.scss" with (
+    $kendo-captcha-spacer: $kendo-captcha-spacer,
+    $kendo-captcha-width: $kendo-captcha-width,
+    $kendo-captcha-font-family: $kendo-captcha-font-family,
+    $kendo-captcha-font-size: $kendo-captcha-font-size,
+    $kendo-captcha-line-height: $kendo-captcha-line-height,
+    $kendo-captcha-gap: $kendo-captcha-gap,
+    $kendo-captcha-bg: $kendo-captcha-bg,
+    $kendo-captcha-text: $kendo-captcha-text,
+    $kendo-captcha-border: $kendo-captcha-border,
+    $kendo-captcha-image-wrap-gap: $kendo-captcha-image-wrap-gap,
+    $kendo-captcha-image-controls-gap: $kendo-captcha-image-controls-gap,
+    $kendo-captcha-validation-message-margin-top: $kendo-captcha-validation-message-margin-top,
+    $kendo-captcha-validation-message-font-size: $kendo-captcha-validation-message-font-size,
+    $kendo-captcha-validation-message-font-style: $kendo-captcha-validation-message-font-style
+);

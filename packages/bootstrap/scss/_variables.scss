@@ -1,41 +1,12 @@
-@import "./core/functions/index.import.scss";
-
-// Options
-$kendo-enable-rounded: true !default;
-$kendo-enable-shadows: true !default;
-$kendo-enable-gradients: true !default;
-$kendo-enable-transitions: true !default;
-$kendo-enable-focus-contrast: false !default;
 $kendo-enable-typography: false !default;
 
 $kendo-use-input-button-width: false !default;
 $kendo-use-input-spinner-width: false !default;
 $kendo-use-input-spinner-icon-offset: false !default;
 
-$kendo-auto-bootstrap: true !default;
-
-$kendo-nested-disabled: true !default;
-
-// Icons
-$kendo-icon-size: 16px !default;
-
-$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
-$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
-$kendo-icon-size-md: $kendo-icon-size !default;
-$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
-$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
-$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
-$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
-
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
 
-// TODO: refactor
 $kendo-focus-shadow: null !default;
 
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
-
-
-// Generic styles
-
-// TODO: refactor once we extract drag drop as separate module

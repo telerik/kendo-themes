@@ -1,3 +1,6 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+
 // TreeView
 
 /// The font family of the TreeView.
@@ -20,7 +23,7 @@ $kendo-treeview-lg-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-treeview-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the small TreeView.
 /// @group treeview
-$kendo-treeview-sm-line-height: k-math-div( 20, 14 ) !default;
+$kendo-treeview-sm-line-height: math.div( 20, 14 ) !default;
 /// The line height of the medium TreeView.
 /// @group treeview
 $kendo-treeview-md-line-height: var( --kendo-line-height, normal ) !default;
@@ -186,3 +189,56 @@ $kendo-treeview-loadmore-focus-border: null !default;
 /// @group treeview
 $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !default;
 
+
+
+@forward "@progress/kendo-theme-default/scss/treeview/_variables.scss" with (
+    $kendo-treeview-font-family: $kendo-treeview-font-family,
+    $kendo-treeview-font-size: $kendo-treeview-font-size,
+    $kendo-treeview-sm-font-size: $kendo-treeview-sm-font-size,
+    $kendo-treeview-md-font-size: $kendo-treeview-md-font-size,
+    $kendo-treeview-lg-font-size: $kendo-treeview-lg-font-size,
+    $kendo-treeview-line-height: $kendo-treeview-line-height,
+    $kendo-treeview-sm-line-height: $kendo-treeview-sm-line-height,
+    $kendo-treeview-md-line-height: $kendo-treeview-md-line-height,
+    $kendo-treeview-lg-line-height: $kendo-treeview-lg-line-height,
+    $kendo-treeview-indent: $kendo-treeview-indent,
+    $kendo-treeview-item-padding-x: $kendo-treeview-item-padding-x,
+    $kendo-treeview-sm-item-padding-x: $kendo-treeview-sm-item-padding-x,
+    $kendo-treeview-md-item-padding-x: $kendo-treeview-md-item-padding-x,
+    $kendo-treeview-lg-item-padding-x: $kendo-treeview-lg-item-padding-x,
+    $kendo-treeview-item-padding-y: $kendo-treeview-item-padding-y,
+    $kendo-treeview-sm-item-padding-y: $kendo-treeview-sm-item-padding-y,
+    $kendo-treeview-md-item-padding-y: $kendo-treeview-md-item-padding-y,
+    $kendo-treeview-lg-item-padding-y: $kendo-treeview-lg-item-padding-y,
+    $kendo-treeview-item-border-width: $kendo-treeview-item-border-width,
+    $kendo-treeview-item-border-radius: $kendo-treeview-item-border-radius,
+    $kendo-treeview-sm-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x,
+    $kendo-treeview-md-checkbox-padding-x: $kendo-treeview-md-checkbox-padding-x,
+    $kendo-treeview-lg-checkbox-padding-x: $kendo-treeview-lg-checkbox-padding-x,
+    $kendo-treeview-sm-checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y,
+    $kendo-treeview-md-checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y,
+    $kendo-treeview-lg-checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y,
+    $kendo-treeview-sizes: $kendo-treeview-sizes,
+    $kendo-treeview-bg: $kendo-treeview-bg,
+    $kendo-treeview-text: $kendo-treeview-text,
+    $kendo-treeview-border: $kendo-treeview-border,
+    $kendo-treeview-item-hover-bg: $kendo-treeview-item-hover-bg,
+    $kendo-treeview-item-hover-text: $kendo-treeview-item-hover-text,
+    $kendo-treeview-item-hover-border: $kendo-treeview-item-hover-border,
+    $kendo-treeview-item-hover-gradient: $kendo-treeview-item-hover-gradient,
+    $kendo-treeview-item-selected-bg: $kendo-treeview-item-selected-bg,
+    $kendo-treeview-item-selected-text: $kendo-treeview-item-selected-text,
+    $kendo-treeview-item-selected-border: $kendo-treeview-item-selected-border,
+    $kendo-treeview-item-selected-gradient: $kendo-treeview-item-selected-gradient,
+    $kendo-treeview-item-focus-shadow: $kendo-treeview-item-focus-shadow,
+    $kendo-treeview-loadmore-bg: $kendo-treeview-loadmore-bg,
+    $kendo-treeview-loadmore-text: $kendo-treeview-loadmore-text,
+    $kendo-treeview-loadmore-border: $kendo-treeview-loadmore-border,
+    $kendo-treeview-loadmore-hover-bg: $kendo-treeview-loadmore-hover-bg,
+    $kendo-treeview-loadmore-hover-text: $kendo-treeview-loadmore-hover-text,
+    $kendo-treeview-loadmore-hover-border: $kendo-treeview-loadmore-hover-border,
+    $kendo-treeview-loadmore-focus-bg: $kendo-treeview-loadmore-focus-bg,
+    $kendo-treeview-loadmore-focus-text: $kendo-treeview-loadmore-focus-text,
+    $kendo-treeview-loadmore-focus-border: $kendo-treeview-loadmore-focus-border,
+    $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-loadmore-focus-shadow
+);

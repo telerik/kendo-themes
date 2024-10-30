@@ -1,4 +1,9 @@
-@import "../button/_variables.scss";
+// @use "sass:map";
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../typography/_variables.scss" as *;
+// @use "bootstrap/scss/bootstrap.scss" as *;
+@use "../_bootstrap_vars.scss" as *;
 
 // Card
 
@@ -182,3 +187,62 @@ $kendo-card-callout-width: 1.3em !default;
 /// The height of the Card callout.
 /// @group card
 $kendo-card-callout-height: 1.3em !default;
+
+
+@forward "@progress/kendo-theme-default/scss/card/_variables.scss" with (
+    $kendo-card-padding-x: $kendo-card-padding-x,
+    $kendo-card-padding-y: $kendo-card-padding-y,
+    $kendo-card-border-width: $kendo-card-border-width,
+    $kendo-card-border-radius: $kendo-card-border-radius,
+    $kendo-card-inner-border-radius: $kendo-card-inner-border-radius,
+    $kendo-card-font-family: $kendo-card-font-family,
+    $kendo-card-font-size: $kendo-card-font-size,
+    $kendo-card-line-height: $kendo-card-line-height,
+    $kendo-card-deck-gap: $kendo-card-deck-gap,
+    $kendo-card-bg: $kendo-card-bg,
+    $kendo-card-text: $kendo-card-text,
+    $kendo-card-border: $kendo-card-border,
+    $kendo-card-shadow: $kendo-card-shadow,
+    $kendo-card-focus-bg: $kendo-card-focus-bg,
+    $kendo-card-focus-text: $kendo-card-focus-text,
+    $kendo-card-focus-border: $kendo-card-focus-border,
+    $kendo-card-focus-shadow: $kendo-card-focus-shadow,
+    $kendo-card-header-padding-x: $kendo-card-header-padding-x,
+    $kendo-card-header-padding-y: $kendo-card-header-padding-y,
+    $kendo-card-header-border-width: $kendo-card-header-border-width,
+    $kendo-card-header-bg: $kendo-card-header-bg,
+    $kendo-card-header-text: $kendo-card-header-text,
+    $kendo-card-header-border: $kendo-card-header-border,
+    $kendo-card-body-padding-x: $kendo-card-body-padding-x,
+    $kendo-card-body-padding-y: $kendo-card-body-padding-y,
+    $kendo-card-footer-padding-x: $kendo-card-footer-padding-x,
+    $kendo-card-footer-padding-y: $kendo-card-footer-padding-y,
+    $kendo-card-footer-border-width: $kendo-card-footer-border-width,
+    $kendo-card-footer-bg: $kendo-card-footer-bg,
+    $kendo-card-footer-text: $kendo-card-footer-text,
+    $kendo-card-footer-border: $kendo-card-footer-border,
+    $kendo-card-title-margin-bottom: $kendo-card-title-margin-bottom,
+    $kendo-card-title-font-size: $kendo-card-title-font-size,
+    $kendo-card-title-font-family: $kendo-card-title-font-family,
+    $kendo-card-title-line-height: $kendo-card-title-line-height,
+    $kendo-card-title-font-weight: $kendo-card-title-font-weight,
+    $kendo-card-title-letter-spacing: $kendo-card-title-letter-spacing,
+    $kendo-card-subtitle-margin-bottom: $kendo-card-subtitle-margin-bottom,
+    $kendo-card-subtitle-font-size: $kendo-card-subtitle-font-size,
+    $kendo-card-subtitle-font-family: $kendo-card-subtitle-font-family,
+    $kendo-card-subtitle-line-height: $kendo-card-subtitle-line-height,
+    $kendo-card-subtitle-font-weight: $kendo-card-subtitle-font-weight,
+    $kendo-card-subtitle-letter-spacing: $kendo-card-subtitle-letter-spacing,
+    $kendo-card-subtitle-text: $kendo-card-subtitle-text,
+    $kendo-card-img-max-width: $kendo-card-img-max-width,
+    $kendo-card-avatar-size: $kendo-card-avatar-size,
+    $kendo-card-avatar-spacing: $kendo-card-avatar-spacing,
+    $kendo-card-actions-padding-x: $kendo-card-actions-padding-x,
+    $kendo-card-actions-padding-y: $kendo-card-actions-padding-y,
+    $kendo-card-actions-border-width: $kendo-card-actions-border-width,
+    $kendo-card-actions-gap: $kendo-card-actions-gap,
+    $kendo-card-deck-scroll-button-radius: $kendo-card-deck-scroll-button-radius,
+    $kendo-card-deck-scroll-button-offset: $kendo-card-deck-scroll-button-offset,
+    $kendo-card-callout-width: $kendo-card-callout-width,
+    $kendo-card-callout-height: $kendo-card-callout-height
+);
