@@ -1,5 +1,5 @@
-@import "@progress/kendo-theme-default/scss/breadcrumb/_layout.scss";
-
+@use "@progress/kendo-theme-default/scss/breadcrumb/_layout.scss" as *;
+@use "../_bootstrap_vars.scss" as *;
 
 @mixin kendo-breadcrumb--layout() {
 

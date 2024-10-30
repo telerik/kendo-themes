@@ -1,3 +1,4 @@
+@use "../../_bootstrap_vars.scss" as *;
 
 /// The base font size across all components.
 /// @group typography
@@ -107,5 +108,4 @@ $kendo-font-weights: $_default-font-weights !default;
 /// @group typography
 $kendo-font-families: $_default-font-families !default;
 
-@import "@progress/kendo-theme-core/scss/typography/index.import.scss";
-
+// @forward "@progress/kendo-theme-core/scss/typography/index.import.scss";

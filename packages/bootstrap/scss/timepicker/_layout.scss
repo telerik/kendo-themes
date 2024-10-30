@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/timepicker/_layout.scss";
+@use "@progress/kendo-theme-default/scss/timepicker/_layout.scss" as *;
 
 
 @mixin kendo-time-picker--layout() {
