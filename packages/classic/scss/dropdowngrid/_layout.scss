@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/dropdowngrid/_layout.scss";
+@use "@progress/kendo-theme-default/scss/dropdowngrid/_layout.scss" as *;
 
 
 @mixin kendo-dropdown-grid--layout() {

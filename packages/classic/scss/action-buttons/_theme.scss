@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/action-buttons/_theme.scss";
+@use "@progress/kendo-theme-default/scss/action-buttons/_theme.scss" as *;
 
 
 @mixin kendo-action-buttons--theme() {

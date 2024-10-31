@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/color-preview/_theme.scss";
+@use "@progress/kendo-theme-default/scss/color-preview/_theme.scss" as *;
 
 
 @mixin kendo-color-preview--theme() {

@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // Chart wizard
 
 /// The color of the area around the chart type icon.
@@ -36,3 +39,18 @@ $kendo-chart-wizard-chart-type-spacing: k-spacing(4) !default;
 /// The gap between the icon area and its text.
 /// @group chart-wizard
 $kendo-chart-wizard-icon-text-gap: k-spacing(3) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/chart-wizard/_variables.scss" with (
+    $kendo-chart-wizard-icon-area-color: $kendo-chart-wizard-icon-area-color,
+    $kendo-chart-wizard-icon-area-bg: $kendo-chart-wizard-icon-area-bg,
+    $kendo-chart-wizard-icon-area-border-radius: $kendo-chart-wizard-icon-area-border-radius,
+    $kendo-chart-wizard-icon-area-padding: $kendo-chart-wizard-icon-area-padding,
+    $kendo-chart-wizard-icon-area-focus-shadow: $kendo-chart-wizard-icon-area-focus-shadow,
+    $kendo-chart-wizard-icon-area-selected-shadow: $kendo-chart-wizard-icon-area-selected-shadow,
+    $kendo-chart-wizard-chart-type-selected-color: $kendo-chart-wizard-chart-type-selected-color,
+    $kendo-chart-wizard-preview-pane-padding: $kendo-chart-wizard-preview-pane-padding,
+    $kendo-chart-wizard-property-pane-padding: $kendo-chart-wizard-property-pane-padding,
+    $kendo-chart-wizard-chart-type-spacing: $kendo-chart-wizard-chart-type-spacing,
+    $kendo-chart-wizard-icon-text-gap: $kendo-chart-wizard-icon-text-gap
+);

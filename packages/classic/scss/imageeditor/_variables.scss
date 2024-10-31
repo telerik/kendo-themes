@@ -1,3 +1,5 @@
+@use "../core/_index.scss" as *;
+
 // ImageEditor
 $kendo-image-editor-margin-y: null !default;
 $kendo-image-editor-margin-x: null !default;
@@ -40,3 +42,38 @@ $kendo-image-editor-crop-text: null !default;
 $kendo-image-editor-crop-border: white !default;
 
 $kendo-image-editor-crop-overlay-bg: rgba( black, .3 ) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/imageeditor/_variables.scss" with (
+    $kendo-image-editor-margin-y: $kendo-image-editor-margin-y,
+    $kendo-image-editor-margin-x: $kendo-image-editor-margin-x,
+    $kendo-image-editor-padding-y: $kendo-image-editor-padding-y,
+    $kendo-image-editor-padding-x: $kendo-image-editor-padding-x,
+    $kendo-image-editor-border-width: $kendo-image-editor-border-width,
+    $kendo-image-editor-font-size: $kendo-image-editor-font-size,
+    $kendo-image-editor-line-height: $kendo-image-editor-line-height,
+    $kendo-image-editor-font-family: $kendo-image-editor-font-family,
+    $kendo-image-editor-content-border-width: $kendo-image-editor-content-border-width,
+    $kendo-image-editor-action-pane-padding-y: $kendo-image-editor-action-pane-padding-y,
+    $kendo-image-editor-action-pane-padding-x: $kendo-image-editor-action-pane-padding-x,
+    $kendo-image-editor-action-pane-width: $kendo-image-editor-action-pane-width,
+    $kendo-image-editor-crop-border-width: $kendo-image-editor-crop-border-width,
+    $kendo-image-editor-crop-border-style: $kendo-image-editor-crop-border-style,
+    $kendo-image-editor-resize-handle-margin-x: $kendo-image-editor-resize-handle-margin-x,
+    $kendo-image-editor-resize-handle-margin-y: $kendo-image-editor-resize-handle-margin-y,
+    $kendo-image-editor-resize-handle-border-width: $kendo-image-editor-resize-handle-border-width,
+    $kendo-image-editor-resize-handle-size: $kendo-image-editor-resize-handle-size,
+    $kendo-image-editor-bg: $kendo-image-editor-bg,
+    $kendo-image-editor-text: $kendo-image-editor-text,
+    $kendo-image-editor-border: $kendo-image-editor-border,
+    $kendo-image-editor-content-bg: $kendo-image-editor-content-bg,
+    $kendo-image-editor-content-text: $kendo-image-editor-content-text,
+    $kendo-image-editor-content-border: $kendo-image-editor-content-border,
+    $kendo-image-editor-action-pane-bg: $kendo-image-editor-action-pane-bg,
+    $kendo-image-editor-action-pane-text: $kendo-image-editor-action-pane-text,
+    $kendo-image-editor-action-pane-border: $kendo-image-editor-action-pane-border,
+    $kendo-image-editor-crop-bg: $kendo-image-editor-crop-bg,
+    $kendo-image-editor-crop-text: $kendo-image-editor-crop-text,
+    $kendo-image-editor-crop-border: $kendo-image-editor-crop-border,
+    $kendo-image-editor-crop-overlay-bg: $kendo-image-editor-crop-overlay-bg
+);

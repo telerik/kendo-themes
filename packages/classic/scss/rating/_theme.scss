@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/rating/_theme.scss";
+@use "@progress/kendo-theme-default/scss/rating/_theme.scss" as *;
 
 
 @mixin kendo-rating--theme() {

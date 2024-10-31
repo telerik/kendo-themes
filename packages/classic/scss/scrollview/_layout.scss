@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/scrollview/_layout.scss";
+@use "@progress/kendo-theme-default/scss/scrollview/_layout.scss" as *;
 
 
 @mixin kendo-scrollview--layout() {

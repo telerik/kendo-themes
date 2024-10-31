@@ -1,48 +1,26 @@
-@import "../core/_index.scss";
-
-
-// Module meta
-$_kendo-module-meta: (
-    name: "time-picker",
-    dependencies: (
-        "action-buttons",
-        "button",
-        "icon",
-        "input",
-        "list",
-        "popup",
-        "time-selector"
-    )
-);
-
-
 // Dependencies
-@import "../input/_index.scss";
-@import "../button/_index.scss";
-@import "../popup/_index.scss";
-@import "../list/_index.scss";
-@import "../timeselector/_index.scss";
-
+@use "../core/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../popup/_index.scss" as *;
+@use "../list/_index.scss" as *;
+@use "../timeselector/_index.scss" as *;
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
-@import "./_theme.scss";
-
-
-// Register
-@import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Expose
 @mixin kendo-time-picker--styles() {
-    @include module-render( "time-picker" ) {
+    @include import-once( "time-picker" ) {
+        @include core-styles();
+        @include kendo-input--styles();
+        @include kendo-button--styles();
+        @include kendo-popup--styles();
+        @include kendo-list--styles();
+        @include kendo-time-selector--styles();
         @include kendo-time-picker--layout();
         @include kendo-time-picker--theme();
     }
-}
-
-@if $kendo-auto-bootstrap {
-    @include kendo-time-picker--styles();
 }
