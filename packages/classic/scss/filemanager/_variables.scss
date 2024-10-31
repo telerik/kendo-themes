@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // FileManager
 
 /// The space between the FileManager items.
@@ -180,3 +184,64 @@ $kendo-file-manager-preview-icon-text: if($kendo-enable-color-system, k-color( s
 /// The border color of the FileManager preview icon.
 /// @group file-manager
 $kendo-file-manager-preview-icon-border: null !default;
+
+
+@forward "@progress/kendo-theme-default/scss/filemanager/_variables.scss" with (
+    $kendo-file-manager-spacer: $kendo-file-manager-spacer,
+    $kendo-file-manager-border-width: $kendo-file-manager-border-width,
+    $kendo-file-manager-font-family: $kendo-file-manager-font-family,
+    $kendo-file-manager-font-size: $kendo-file-manager-font-size,
+    $kendo-file-manager-line-height: $kendo-file-manager-line-height,
+    $kendo-file-manager-bg: $kendo-file-manager-bg,
+    $kendo-file-manager-text: $kendo-file-manager-text,
+    $kendo-file-manager-border: $kendo-file-manager-border,
+    $kendo-file-manager-toolbar-border-width: $kendo-file-manager-toolbar-border-width,
+    $kendo-file-manager-toolbar-bg: $kendo-file-manager-toolbar-bg,
+    $kendo-file-manager-toolbar-text: $kendo-file-manager-toolbar-text,
+    $kendo-file-manager-toolbar-border: $kendo-file-manager-toolbar-border,
+    $kendo-file-manager-toolbar-gradient: $kendo-file-manager-toolbar-gradient,
+    $kendo-file-manager-navigation-padding-x: $kendo-file-manager-navigation-padding-x,
+    $kendo-file-manager-navigation-padding-y: $kendo-file-manager-navigation-padding-y,
+    $kendo-file-manager-navigation-width: $kendo-file-manager-navigation-width,
+    $kendo-file-manager-navigation-border-width: $kendo-file-manager-navigation-border-width,
+    $kendo-file-manager-navigation-bg: $kendo-file-manager-navigation-bg,
+    $kendo-file-manager-navigation-text: $kendo-file-manager-navigation-text,
+    $kendo-file-manager-navigation-border: $kendo-file-manager-navigation-border,
+    $kendo-file-manager-breadcrumb-padding-x: $kendo-file-manager-breadcrumb-padding-x,
+    $kendo-file-manager-breadcrumb-padding-y: $kendo-file-manager-breadcrumb-padding-y,
+    $kendo-file-manager-breadcrumb-border-width: $kendo-file-manager-breadcrumb-border-width,
+    $kendo-file-manager-breadcrumb-bg: $kendo-file-manager-breadcrumb-bg,
+    $kendo-file-manager-breadcrumb-text: $kendo-file-manager-breadcrumb-text,
+    $kendo-file-manager-breadcrumb-border: $kendo-file-manager-breadcrumb-border,
+    $kendo-file-manager-listview-bg: $kendo-file-manager-listview-bg,
+    $kendo-file-manager-listview-text: $kendo-file-manager-listview-text,
+    $kendo-file-manager-listview-border: $kendo-file-manager-listview-border,
+    $kendo-file-manager-listview-item-padding-x: $kendo-file-manager-listview-item-padding-x,
+    $kendo-file-manager-listview-item-padding-y: $kendo-file-manager-listview-item-padding-y,
+    $kendo-file-manager-listview-item-width: $kendo-file-manager-listview-item-width,
+    $kendo-file-manager-listview-item-height: $kendo-file-manager-listview-item-height,
+    $kendo-file-manager-listview-item-bg: $kendo-file-manager-listview-item-bg,
+    $kendo-file-manager-listview-item-text: $kendo-file-manager-listview-item-text,
+    $kendo-file-manager-listview-item-border: $kendo-file-manager-listview-item-border,
+    $kendo-file-manager-listview-item-icon-bg: $kendo-file-manager-listview-item-icon-bg,
+    $kendo-file-manager-listview-item-icon-text: $kendo-file-manager-listview-item-icon-text,
+    $kendo-file-manager-listview-item-icon-border: $kendo-file-manager-listview-item-icon-border,
+    $kendo-file-manager-listview-item-icon-selected-bg: $kendo-file-manager-listview-item-icon-selected-bg,
+    $kendo-file-manager-listview-item-icon-selected-text: $kendo-file-manager-listview-item-icon-selected-text,
+    $kendo-file-manager-listview-item-icon-selected-border: $kendo-file-manager-listview-item-icon-selected-border,
+    $kendo-file-manager-grid-bg: $kendo-file-manager-grid-bg,
+    $kendo-file-manager-grid-text: $kendo-file-manager-grid-text,
+    $kendo-file-manager-grid-border: $kendo-file-manager-grid-border,
+    $kendo-file-manager-preview-padding-x: $kendo-file-manager-preview-padding-x,
+    $kendo-file-manager-preview-padding-y: $kendo-file-manager-preview-padding-y,
+    $kendo-file-manager-preview-width: $kendo-file-manager-preview-width,
+    $kendo-file-manager-preview-border-width: $kendo-file-manager-preview-border-width,
+    $kendo-file-manager-preview-spacing: $kendo-file-manager-preview-spacing,
+    $kendo-file-manager-preview-column-gap: $kendo-file-manager-preview-column-gap,
+    $kendo-file-manager-preview-bg: $kendo-file-manager-preview-bg,
+    $kendo-file-manager-preview-text: $kendo-file-manager-preview-text,
+    $kendo-file-manager-preview-border: $kendo-file-manager-preview-border,
+    $kendo-file-manager-preview-icon-bg: $kendo-file-manager-preview-icon-bg,
+    $kendo-file-manager-preview-icon-text: $kendo-file-manager-preview-icon-text,
+    $kendo-file-manager-preview-icon-border: $kendo-file-manager-preview-icon-border
+);

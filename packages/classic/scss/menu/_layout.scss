@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/menu/_layout.scss";
+@use "@progress/kendo-theme-default/scss/menu/_layout.scss" as *;
 
 
 @mixin kendo-menu--layout() {

@@ -1,3 +1,7 @@
+@use "../core/_index.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../core/functions/index.import.scss" as *;
+
 // ExpansionPanel
 
 /// The vertical spacing of the ExpansionPanel.
@@ -75,3 +79,29 @@ $kendo-expander-content-padding-x: k-spacing(4) !default;
 /// The vertical padding of the ExpansionPanel content.
 /// @group expander
 $kendo-expander-content-padding-y: k-spacing(4) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/expansion-panel/_variables.scss" with (
+    $kendo-expander-spacing-y: $kendo-expander-spacing-y,
+    $kendo-expander-border-width: $kendo-expander-border-width,
+    $kendo-expander-font-family: $kendo-expander-font-family,
+    $kendo-expander-font-size: $kendo-expander-font-size,
+    $kendo-expander-line-height: $kendo-expander-line-height,
+    $kendo-expander-text: $kendo-expander-text,
+    $kendo-expander-bg: $kendo-expander-bg,
+    $kendo-expander-border: $kendo-expander-border,
+    $kendo-expander-focus-shadow: $kendo-expander-focus-shadow,
+    $kendo-expander-header-padding-x: $kendo-expander-header-padding-x,
+    $kendo-expander-header-padding-y: $kendo-expander-header-padding-y,
+    $kendo-expander-header-text: $kendo-expander-header-text,
+    $kendo-expander-header-bg: $kendo-expander-header-bg,
+    $kendo-expander-header-border: $kendo-expander-header-border,
+    $kendo-expander-header-hover-bg: $kendo-expander-header-hover-bg,
+    $kendo-expander-header-focus-bg: $kendo-expander-header-focus-bg,
+    $kendo-expander-header-focus-shadow: $kendo-expander-header-focus-shadow,
+    $kendo-expander-title-text: $kendo-expander-title-text,
+    $kendo-expander-header-sub-title-text: $kendo-expander-header-sub-title-text,
+    $kendo-expander-indicator-margin-x: $kendo-expander-indicator-margin-x,
+    $kendo-expander-content-padding-x: $kendo-expander-content-padding-x,
+    $kendo-expander-content-padding-y: $kendo-expander-content-padding-y
+);

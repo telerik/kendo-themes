@@ -1,32 +1,58 @@
-$wcag-min-contrast-ratio: 4.5 !default;
-
 // Color System
-@import "./color-system/_swatch.scss";
+@use "./color-system/_swatch.scss" as *;
+
+// Elevation
+@use "./elevation/index.import.scss" as *;
 
 // Typography
-@import "./typography/index.import.scss";
-
-// Variables
-@import "../_variables.scss";
+@use "./typography/index.import.scss" as *;
 
 // Spacing
-@import "./spacing/index.import.scss";
+@use "./spacing/index.import.scss" as *;
 
-@import "@progress/kendo-theme-core/scss/index.import.scss";
+// Border Radius
+@use "./border-radii/index.import.scss" as *;
+
+// Variables
+@forward "../_variables.scss";
+
+@forward "@progress/kendo-theme-core/scss/index.import.scss" with (
+    // Color System Switch
+    $kendo-enable-color-system: $kendo-enable-color-system !default,
+    // Color System
+    $_default-colors: $kendo-colors,
+    $kendo-colors: $kendo-colors !default,
+    // Elevation
+    $_default-elevation: $kendo-elevation,
+    $kendo-elevation: $kendo-elevation !default,
+    // Typography
+    $_default-font-sizes: $kendo-font-sizes,
+    $kendo-font-sizes: $kendo-font-sizes !default,
+    $kendo-font-size: $kendo-font-size !default,
+
+    $_default-line-heights: $kendo-line-heights,
+    $kendo-line-heights: $kendo-line-heights !default,
+    $kendo-line-height: $kendo-line-height !default,
+
+    $_default-font-weights: $kendo-font-weights,
+    $kendo-font-weights: $kendo-font-weights !default,
+    $kendo-font-weight: $kendo-font-weight !default,
+
+    $_default-letter-spacings: $kendo-letter-spacings,
+    $kendo-letter-spacings: $kendo-letter-spacings !default,
+    $kendo-letter-spacing: $kendo-letter-spacing !default,
+
+    $_default-font-families: $kendo-font-families,
+    $kendo-font-families: $kendo-font-families !default,
+    $kendo-font-family: $kendo-font-family !default,
+    // Spacing
+    $_default-spacing: $kendo-spacing,
+    $kendo-spacing: $kendo-spacing !default,
+    // Border Radii
+    $_default-border-radii: $kendo-border-radii,
+    $kendo-border-radii: $kendo-border-radii !default
+);
 
 // Backward compatibility
-@import "./color-system/_swatch-legacy.scss";
+@forward "./color-system/_swatch-legacy.scss";
 
-// Expose
-@include exports("kendo-core-styles") {
-    @include kendo-core--styles();
-
-    // Elevation System
-    @include kendo-elevation--styles();
-    // Typography
-    @include kendo-core--typography--styles();
-    // Spacing
-    @include kendo-spacing--styles();
-    // Radii
-    @include kendo-border-radius--styles();
-}

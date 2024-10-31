@@ -1,3 +1,6 @@
+@use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
+
 // Toolbar
 
 /// The horizontal padding of the Toolbar.
@@ -135,3 +138,43 @@ $kendo-toolbar-sizes: (
         spacing: $kendo-toolbar-lg-spacing
     )
 ) !default;
+
+
+@forward "@progress/kendo-theme-default/scss/toolbar/_variables.scss" with (
+    $kendo-toolbar-padding-x: $kendo-toolbar-padding-x,
+    $kendo-toolbar-sm-padding-x: $kendo-toolbar-sm-padding-x,
+    $kendo-toolbar-md-padding-x: $kendo-toolbar-md-padding-x,
+    $kendo-toolbar-lg-padding-x: $kendo-toolbar-lg-padding-x,
+    $kendo-toolbar-padding-y: $kendo-toolbar-padding-y,
+    $kendo-toolbar-sm-padding-y: $kendo-toolbar-sm-padding-y,
+    $kendo-toolbar-md-padding-y: $kendo-toolbar-md-padding-y,
+    $kendo-toolbar-lg-padding-y: $kendo-toolbar-lg-padding-y,
+    $kendo-toolbar-spacing: $kendo-toolbar-spacing,
+    $kendo-toolbar-sm-spacing: $kendo-toolbar-sm-spacing,
+    $kendo-toolbar-md-spacing: $kendo-toolbar-md-spacing,
+    $kendo-toolbar-lg-spacing: $kendo-toolbar-lg-spacing,
+    $kendo-toolbar-border-width: $kendo-toolbar-border-width,
+    $kendo-toolbar-border-radius: $kendo-toolbar-border-radius,
+    $kendo-toolbar-font-family: $kendo-toolbar-font-family,
+    $kendo-toolbar-font-size: $kendo-toolbar-font-size,
+    $kendo-toolbar-line-height: $kendo-toolbar-line-height,
+    $kendo-toolbar-bg: $kendo-toolbar-bg,
+    $kendo-toolbar-text: $kendo-toolbar-text,
+    $kendo-toolbar-border: $kendo-toolbar-border,
+    $kendo-toolbar-gradient: $kendo-toolbar-gradient,
+    $kendo-toolbar-shadow: $kendo-toolbar-shadow,
+    $kendo-toolbar-outline-text: $kendo-toolbar-outline-text,
+    $kendo-toolbar-outline-border: $kendo-toolbar-outline-border,
+    $kendo-toolbar-outline-gradient: $kendo-toolbar-outline-gradient,
+    $kendo-toolbar-outline-shadow: $kendo-toolbar-outline-shadow,
+    $kendo-toolbar-outline-border-width: $kendo-toolbar-outline-border-width,
+    $kendo-toolbar-flat-text: $kendo-toolbar-flat-text,
+    $kendo-toolbar-flat-border: $kendo-toolbar-flat-border,
+    $kendo-toolbar-flat-gradient: $kendo-toolbar-flat-gradient,
+    $kendo-toolbar-flat-shadow: $kendo-toolbar-flat-shadow,
+    $kendo-toolbar-flat-border-width: $kendo-toolbar-flat-border-width,
+    $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
+    $kendo-toolbar-input-width: $kendo-toolbar-input-width,
+    $kendo-toolbar-item-shadow: $kendo-toolbar-item-shadow,
+    $kendo-toolbar-sizes: $kendo-toolbar-sizes
+);
