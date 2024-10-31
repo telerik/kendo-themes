@@ -777,20 +777,15 @@
                     "type": "shadow",
                     "value": "0 0 0 2px rgba( 0, 0, 0, .12 )"
                 },
-                "kendo-focus-inset-shadow": {
-                    "name": "Inset focus shadow",
-                    "type": "shadow",
-                    "value": "inset 0 0 0 2px rgba( 0, 0, 0, .12 )"
-                },
                 "kendo-list-item-focus-shadow": {
                     "name": "List item focus shadow",
                     "type": "shadow",
-                    "value": "$kendo-focus-inset-shadow"
+                    "value": "inset 0 0 0 2px rgba( 255, 255, 255, .75 )"
                 },
                 "kendo-treeview-item-focus-shadow": {
                     "name": "Treeview item focus shadow",
                     "type": "shadow",
-                    "value": "$kendo-focus-inset-shadow"
+                    "value": "inset 0 0 0 2px rgba( 255, 255, 255, .75 )"
                 }
             }
         }

@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/filter/_layout.scss";
+@use "@progress/kendo-theme-default/scss/filter/_layout.scss" as *;
 
 
 @mixin kendo-filter--layout() {

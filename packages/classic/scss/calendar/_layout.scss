@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/calendar/_layout.scss";
+@use "@progress/kendo-theme-default/scss/calendar/_layout.scss" as *;
 
 
 @mixin kendo-calendar--layout() {

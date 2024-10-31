@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-default/scss/pdf-viewer/_theme.scss";
+@use "@progress/kendo-theme-default/scss/pdf-viewer/_theme.scss" as *;
 
 
 @mixin kendo-pdf-viewer--theme() {
