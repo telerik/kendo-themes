@@ -5,7 +5,8 @@ export default defineConfig({
     css: {
         preprocessorOptions: {
             scss: {
-                includePaths: [ "../../node_modules" ]
+                api: "modern",
+                loadPaths: [ "../../node_modules" ]
             }
         }
     },
@@ -16,8 +17,7 @@ export default defineConfig({
                 bootstrap: resolve(__dirname, 'assets/bootstrap/index.html'),
                 material: resolve(__dirname, 'assets/material/index.html'),
                 fluent: resolve(__dirname, 'assets/fluent/index.html'),
-                classic: resolve(__dirname, 'assets/classic/index.html'),
-                nouvelle: resolve(__dirname, 'assets/nouvelle/index.html'),
+                classic: resolve(__dirname, 'assets/classic/index.html')
             }
         },
         outDir: 'dist/'

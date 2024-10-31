@@ -9,8 +9,7 @@ module.exports = {
         classic: './styles/classic.scss',
         default: './styles/default.scss',
         fluent: './styles/fluent.scss',
-        material: './styles/material.scss',
-        nouvelle: './styles/nouvelle.scss'
+        material: './styles/material.scss'
     },
 
     output: {

@@ -14,9 +14,6 @@
     },
     "fluent": {
       "source": "styles/fluent.scss"
-    },
-    "nouvelle": {
-      "source": "styles/nouvelle.scss"
     }
   },
   "scripts": {
