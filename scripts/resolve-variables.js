@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
 const dartSass = require('sass');
 
 const themeDir = process.cwd();
@@ -87,11 +86,7 @@ function prettifySassNumber(sassNumber) {
 
 if (fs.existsSync( srcFile )) {
 
-    if (path.basename( themeDir ) === 'fluent') {
-        fs.writeFileSync( path.resolve( output.path, output.filename), '@forward "../scss/all.scss";');
-    } else {
-        sassFlatten({ file: srcFile, output, nodeModules });
-    }
+    fs.writeFileSync( path.resolve( output.path, output.filename), '@forward "../scss/all.scss";');
 
     let content = {};
 
