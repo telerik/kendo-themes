@@ -28,30 +28,20 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$wcag-min-contrast-ratio</td>
-    <td>Number</td>
-    <td><code>7</code></td>
-    <td><code>4.5</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The contrast ratio to reach against white, to determine if color changes from "light" to "dark".<br />Acceptable values for WCAG 2.0 are 3, 4.5 and 7.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$wcag-dark</td>
-    <td>Color</td>
+    <td></td>
     <td><code>black</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default dark color for WCAG 2.0.</div></div>
+    <td colspan="4" class="theme-variables-description-container">
     </td>
 </tr>
 <tr>
     <td>$wcag-light</td>
-    <td>Color</td>
+    <td></td>
     <td><code>white</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default light color for WCAG 2.0.</div></div>

@@ -14,76 +14,6 @@ position: 9
 
 The following table lists the available variables for customizing the Theme Utils theme.
 
-### Common
-
-<table class="theme-variables">
-    <colgroup>
-    <col style="width: 200px; white-space:nowrap;" />
-    <col />
-    <col />
-    <col />
-</colgroup>
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Default value</th>
-        <th>Computed value</th>
-    </tr>
-</thead>
-<tbody><tr>
-    <td>$kendo-disabled-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-filter</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
-    </td>
-</tr>
-</tbody>
-</table>
-
 ### Accessibility
 
 <table class="theme-variables">
@@ -102,30 +32,20 @@ The following table lists the available variables for customizing the Theme Util
     </tr>
 </thead>
 <tbody><tr>
-    <td>$wcag-min-contrast-ratio</td>
-    <td>Number</td>
-    <td><code>7</code></td>
-    <td><code>7</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The contrast ratio to reach against white, to determine if color changes from "light" to "dark".<br />Acceptable values for WCAG 2.0 are 3, 4.5 and 7.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$wcag-dark</td>
-    <td>Color</td>
+    <td></td>
     <td><code>black</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default dark color for WCAG 2.0.</div></div>
+    <td colspan="4" class="theme-variables-description-container">
     </td>
 </tr>
 <tr>
     <td>$wcag-light</td>
-    <td>Color</td>
+    <td></td>
     <td><code>white</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default light color for WCAG 2.0.</div></div>
@@ -153,9 +73,9 @@ The following table lists the available variables for customizing the Theme Util
 </thead>
 <tbody><tr>
     <td>$kendo-border-radius-none</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 0)</code></td>
-    <td><code>0px</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 0)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The none border radius used across the Components.</div></div>
@@ -163,9 +83,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radius-xs</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 1px)</code></td>
-    <td><code>1px</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 1px)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
@@ -173,9 +93,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radius-sm</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 0.5)</code></td>
-    <td><code>0.125rem</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 0.5)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
@@ -183,9 +103,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radius-md</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 1)</code></td>
-    <td><code>0.25rem</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 1)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
@@ -193,9 +113,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radius-lg</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 1.5)</code></td>
-    <td><code>0.375rem</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 1.5)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
@@ -203,9 +123,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radius-xl</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 2)</code></td>
-    <td><code>0.5rem</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 2)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
@@ -213,9 +133,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radius-xxl</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 3)</code></td>
-    <td><code>0.75rem</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 3)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
@@ -223,9 +143,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radius-xxxl</td>
-    <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 4)</code></td>
-    <td><code>1rem</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 4)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
@@ -233,9 +153,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radius-full</td>
-    <td>Number</td>
+    <td></td>
     <td><code>9999px</code></td>
-    <td><code>9999px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
@@ -243,9 +163,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-border-radii</td>
-    <td>Map</td>
-    <td><code>k-map-merge($_default-border-radii, $kendo-border-radii)</code></td>
-    <td><ul><li>none: 0px</li><li>xs: 1px</li><li>sm: 0.125rem</li><li>md: 0.25rem</li><li>lg: 0.375rem</li><li>xl: 0.5rem</li><li>xxl: 0.75rem</li><li>xxxl: 1rem</li><li>full: 9999px</li></ul></td>
+    <td></td>
+    <td><code>map.merge($_default-border-radii, $kendo-border-radii)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global radii Map.</div></div>
@@ -273,9 +193,9 @@ The following table lists the available variables for customizing the Theme Util
 </thead>
 <tbody><tr>
     <td>$kendo-color-white</td>
-    <td>Color</td>
+    <td></td>
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color white.<br />Note: you cannot change this value.</div></div>
@@ -283,9 +203,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-color-black</td>
-    <td>Color</td>
+    <td></td>
     <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color black.<br />Note: you cannot change this value.</div></div>
@@ -293,9 +213,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-color-rgba-transparent</td>
-    <td>Color</td>
+    <td></td>
     <td><code>rgba(0, 0, 0, 0)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0)"></span><code>rgba(0, 0, 0, 0)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transparent.<br />Note: you cannot change this value.</div></div>
@@ -303,9 +223,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-gradient-transparent-to-black</td>
-    <td>Gradient</td>
+    <td></td>
     <td><code>rgba(black, 0), black</code></td>
-    <td><code>rgba(0, 0, 0, 0), black</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to black.<br />Note: you cannot change this value.</div></div>
@@ -313,9 +233,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-gradient-transparent-to-white</td>
-    <td>Gradient</td>
+    <td></td>
     <td><code>rgba(white, 0), white</code></td>
-    <td><code>rgba(255, 255, 255, 0), white</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to white.<br />Note: you cannot change this value.</div></div>
@@ -323,9 +243,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-gradient-black-to-transparent</td>
-    <td>Gradient</td>
+    <td></td>
     <td><code>black, rgba(black, 0)</code></td>
-    <td><code>black, rgba(0, 0, 0, 0)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from black to transparent.<br />Note: you cannot change this value.</div></div>
@@ -333,9 +253,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-gradient-white-to-transparent</td>
-    <td>Gradient</td>
+    <td></td>
     <td><code>white, rgba(white, 0)</code></td>
-    <td><code>white, rgba(255, 255, 255, 0)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from white to transparent.<br />Note: you cannot change this value.</div></div>
@@ -343,9 +263,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-gradient-rainbow</td>
-    <td>Gradient</td>
+    <td></td>
     <td><span class="color-preview" style="background-color: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000"></span><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
-    <td><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that cycles through the colors of the rainbow.<br />Note: you cannot change this value.</div></div>
@@ -353,9 +273,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-colors</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-colors</code></td>
-    <td><ul><li>app-surface: #ffffff</li><li>on-app-surface: #3d3d3d</li><li>subtle: #666666</li><li>surface: #fafafa</li><li>surface-alt: #ffffff</li><li>border: rgba(0, 0, 0, 0.08)</li><li>border-alt: rgba(0, 0, 0, 0.16)</li><li>base-subtle: #ebebeb</li><li>base-subtle-hover: #e0e0e0</li><li>base-subtle-active: #d6d6d6</li><li>base: #f5f5f5</li><li>base-hover: #ebebeb</li><li>base-active: #d6d6d6</li><li>base-emphasis: #c2c2c2</li><li>base-on-subtle: #3d3d3d</li><li>on-base: #3d3d3d</li><li>base-on-surface: #3d3d3d</li><li>primary-subtle: #ffeceb</li><li>primary-subtle-hover: #ffdedb</li><li>primary-subtle-active: #ffc8c4</li><li>primary: #ff6358</li><li>primary-hover: #ea5a51</li><li>primary-active: #d45349</li><li>primary-emphasis: #ff9d97</li><li>primary-on-subtle: #5c201c</li><li>on-primary: #ffffff</li><li>primary-on-surface: #ff6358</li><li>secondary-subtle: #fafafa</li><li>secondary-subtle-hover: #f5f5f5</li><li>secondary-subtle-active: #ebebeb</li><li>secondary: #666666</li><li>secondary-hover: #525252</li><li>secondary-active: #3d3d3d</li><li>secondary-emphasis: #e0e0e0</li><li>secondary-on-subtle: #141414</li><li>on-secondary: #ffffff</li><li>secondary-on-surface: #292929</li><li>tertiary-subtle: #d8f1fd</li><li>tertiary-subtle-hover: #c5eafc</li><li>tertiary-subtle-active: #a3dffb</li><li>tertiary: #03a9f4</li><li>tertiary-hover: #039ae0</li><li>tertiary-active: #028ccb</li><li>tertiary-emphasis: #61c9f9</li><li>tertiary-on-subtle: #023f5c</li><li>on-tertiary: #ffffff</li><li>tertiary-on-surface: #028ccb</li><li>info-subtle: #d2e2fb</li><li>info-subtle-hover: #bdd4f8</li><li>info-subtle-active: #80acf4</li><li>info: #0058e9</li><li>info-hover: #0052d6</li><li>info-active: #004ac2</li><li>info-emphasis: #6098f2</li><li>info-on-subtle: #002259</li><li>on-info: #ffffff</li><li>info-on-surface: #004ac2</li><li>success-subtle: #dcf0d3</li><li>success-subtle-hover: #cbe9bf</li><li>success-subtle-active: #b7e1a5</li><li>success: #37b400</li><li>success-hover: #32a500</li><li>success-active: #2d9600</li><li>success-emphasis: #81d15f</li><li>success-on-subtle: #1c5a00</li><li>on-success: #ffffff</li><li>success-on-surface: #2d9600</li><li>warning-subtle: #fff4d3</li><li>warning-subtle-hover: #ffeebd</li><li>warning-subtle-active: #ffe79e</li><li>warning: #ffc000</li><li>warning-hover: #eaaf00</li><li>warning-active: #d49f00</li><li>warning-emphasis: #ffd760</li><li>warning-on-subtle: #5e4700</li><li>on-warning: #3d3d3d</li><li>warning-on-surface: #ffc000</li><li>error-subtle: #fcddda</li><li>error-subtle-hover: #fbc8c3</li><li>error-subtle-active: #f98b80</li><li>error: #f31700</li><li>error-hover: #df1600</li><li>error-active: #ca1400</li><li>error-emphasis: #f76f60</li><li>error-on-subtle: #7a0c00</li><li>on-error: #ffffff</li><li>error-on-surface: #ca1400</li><li>light-subtle: #fafafa</li><li>light-subtle-hover: #f5f5f5</li><li>light-subtle-active: #ebebeb</li><li>light: #ebebeb</li><li>light-hover: #e0e0e0</li><li>light-active: #d6d6d6</li><li>light-emphasis: #d6d6d6</li><li>light-on-subtle: #141414</li><li>on-light: #000000</li><li>light-on-surface: #e0e0e0</li><li>dark-subtle: #c2c2c2</li><li>dark-subtle-hover: #adadad</li><li>dark-subtle-active: #999999</li><li>dark: #3d3d3d</li><li>dark-hover: #292929</li><li>dark-active: #1f1f1f</li><li>dark-emphasis: #666666</li><li>dark-on-subtle: #1f1f1f</li><li>on-dark: #ffffff</li><li>dark-on-surface: #141414</li><li>inverse-subtle: #c2c2c2</li><li>inverse-subtle-hover: #adadad</li><li>inverse-subtle-active: #999999</li><li>inverse: #3d3d3d</li><li>inverse-hover: #292929</li><li>inverse-active: #1f1f1f</li><li>inverse-emphasis: #666666</li><li>inverse-on-subtle: #1f1f1f</li><li>on-inverse: #ffffff</li><li>inverse-on-surface: #141414</li><li>series-a: #ff6358</li><li>series-a-bold: #bf4a42</li><li>series-a-bolder: #80322c</li><li>series-a-subtle: #ffb1ac</li><li>series-a-subtler: #ff8a82</li><li>series-b: #ffe162</li><li>series-b-bold: #bfa94a</li><li>series-b-bolder: #807131</li><li>series-b-subtle: #fff0b1</li><li>series-b-subtler: #ffe989</li><li>series-c: #4cd180</li><li>series-c-bold: #399d60</li><li>series-c-bolder: #266940</li><li>series-c-subtle: #a6e8c0</li><li>series-c-subtler: #79dda0</li><li>series-d: #4b5ffa</li><li>series-d-bold: #3847bc</li><li>series-d-bolder: #26307d</li><li>series-d-subtle: #a5affd</li><li>series-d-subtler: #7887fb</li><li>series-e: #ac58ff</li><li>series-e-bold: #8142bf</li><li>series-e-bolder: #562c80</li><li>series-e-subtle: #d6acff</li><li>series-e-subtler: #c182ff</li><li>series-f: #ff5892</li><li>series-f-bold: #bf426e</li><li>series-f-bolder: #802c49</li><li>series-f-subtle: #ffacc9</li><li>series-f-subtler: #ff82ae</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
@@ -383,12 +303,152 @@ The following table lists the available variables for customizing the Theme Util
 </thead>
 <tbody><tr>
     <td>$kendo-elevation</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-elevation</code></td>
-    <td><ul><li>1: 0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>2: 0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>3: 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>4: 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>5: 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>6: 0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>7: 0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>8: 0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12)</li><li>9: 0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12)</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Palette
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-palette-gray</td>
+    <td></td>
+    <td><code>$_default-palette-gray</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-coral</td>
+    <td></td>
+    <td><code>$_default-palette-coral</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Coral Palette provides colors to the Primary and Series A variable groups.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-sky-blue</td>
+    <td></td>
+    <td><code>$_default-palette-sky-blue</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Sky Blue Palette provides colors to the Tertiary variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-green</td>
+    <td></td>
+    <td><code>$_default-palette-green</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Green Palette provides colors to the Success variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-blue</td>
+    <td></td>
+    <td><code>$_default-palette-blue</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Blue Palette provides colors to the Info variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-yellow</td>
+    <td></td>
+    <td><code>$_default-palette-yellow</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Yellow Palette provides colors to the Warning variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-red</td>
+    <td></td>
+    <td><code>$_default-palette-red</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Red Palette provides colors to the Error variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-lemon-yellow</td>
+    <td></td>
+    <td><code>$_default-palette-lemon-yellow</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lemon Yellow Palette provides colors to the Series B variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-spring-green</td>
+    <td></td>
+    <td><code>$_default-palette-spring-green</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Spring Green Palette provides colors to the Series C variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-royal-blue</td>
+    <td></td>
+    <td><code>$_default-palette-royal-blue</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Royal Blue Palette provides colors to the Series D variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-lavender-purple</td>
+    <td></td>
+    <td><code>$_default-palette-lavender-purple</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lavender Purple Palette provides colors to the Series E variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-flamingo-pink</td>
+    <td></td>
+    <td><code>$_default-palette-flamingo-pink</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Flamingo Pink Palette provides colors to the Series F variable group.</div></div>
     </td>
 </tr>
 </tbody>
@@ -413,9 +473,9 @@ The following table lists the available variables for customizing the Theme Util
 </thead>
 <tbody><tr>
     <td>$kendo-spacing</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-spacing</code></td>
-    <td><ul><li>0: 0px</li><li>1: 0.25rem</li><li>2: 0.5rem</li><li>3: 0.75rem</li><li>4: 1rem</li><li>5: 1.25rem</li><li>6: 1.5rem</li><li>7: 1.75rem</li><li>8: 2rem</li><li>9: 2.25rem</li><li>10: 2.5rem</li><li>11: 2.75rem</li><li>12: 3rem</li><li>13: 3.25rem</li><li>14: 3.5rem</li><li>15: 3.75rem</li><li>16: 4rem</li><li>17: 4.25rem</li><li>18: 4.5rem</li><li>19: 4.75rem</li><li>20: 5rem</li><li>21: 5.25rem</li><li>22: 5.5rem</li><li>23: 5.75rem</li><li>24: 6rem</li><li>25: 7rem</li><li>26: 8rem</li><li>27: 9rem</li><li>28: 10rem</li><li>29: 11rem</li><li>30: 12rem</li><li>1px: 1px</li><li>0.5: 0.125rem</li><li>1.5: 0.375rem</li><li>2.5: 0.625rem</li><li>3.5: 0.875rem</li><li>4.5: 1.125rem</li><li>5.5: 1.375rem</li><li>6.5: 1.625rem</li><li>7.5: 1.875rem</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Spacing map.</div></div>
@@ -443,9 +503,9 @@ The following table lists the available variables for customizing the Theme Util
 </thead>
 <tbody><tr>
     <td>$kendo-font-size</td>
-    <td>Number</td>
+    <td></td>
     <td><code>0.875rem</code></td>
-    <td><code>0.875rem</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font size across all components.</div></div>
@@ -453,9 +513,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-size-xxs</td>
-    <td>Number</td>
+    <td></td>
     <td><code>0.5rem</code></td>
-    <td><code>0.5rem</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra extra small font size across all components.</div></div>
@@ -463,9 +523,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-size-xs</td>
-    <td>Number</td>
+    <td></td>
     <td><code>0.625rem</code></td>
-    <td><code>0.625rem</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small font size across all components.</div></div>
@@ -473,9 +533,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-size-sm</td>
-    <td>Number</td>
+    <td></td>
     <td><code>0.75rem</code></td>
-    <td><code>0.75rem</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small font size across all components.</div></div>
@@ -483,9 +543,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-size-md</td>
-    <td>Number</td>
+    <td></td>
     <td><code>$kendo-font-size</code></td>
-    <td><code>0.875rem</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium font size across all components.</div></div>
@@ -493,9 +553,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-size-lg</td>
-    <td>Number</td>
+    <td></td>
     <td><code>1rem</code></td>
-    <td><code>1rem</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large font size across all components.</div></div>
@@ -503,9 +563,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-size-xl</td>
-    <td>Number</td>
+    <td></td>
     <td><code>1.25rem</code></td>
-    <td><code>1.25rem</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large font size across all components.</div></div>
@@ -513,9 +573,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-line-height</td>
-    <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
-    <td><code>1.4285714286</code></td>
+    <td></td>
+    <td><code>math.div( 20, 14 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height across all components.</div></div>
@@ -523,9 +583,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-line-height-xs</td>
-    <td>Number</td>
+    <td></td>
     <td><code>1</code></td>
-    <td><code>1</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small line height across all components.</div></div>
@@ -533,9 +593,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-line-height-sm</td>
-    <td>Number</td>
+    <td></td>
     <td><code>1.25</code></td>
-    <td><code>1.25</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small line height across all components.</div></div>
@@ -543,9 +603,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-line-height-md</td>
-    <td>Number</td>
+    <td></td>
     <td><code>$kendo-line-height</code></td>
-    <td><code>1.4285714286</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium line height across all components.</div></div>
@@ -553,9 +613,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-line-height-lg</td>
-    <td>Number</td>
+    <td></td>
     <td><code>1.5</code></td>
-    <td><code>1.5</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large line height across all components.</div></div>
@@ -563,9 +623,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-line-height-em</td>
-    <td>Calculation</td>
+    <td></td>
     <td><code>calc( #{$kendo-line-height-md} * 1em )</code></td>
-    <td><code>calc(1.4285714286 * 1em)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height in ems across all components.</div></div>
@@ -573,9 +633,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight</td>
-    <td>Number</td>
+    <td></td>
     <td><code>400</code></td>
-    <td><code>400</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font weight across all components.</div></div>
@@ -583,9 +643,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-thin</td>
-    <td>Number</td>
+    <td></td>
     <td><code>100</code></td>
-    <td><code>100</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The thin font weight across all components.</div></div>
@@ -593,9 +653,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-extra-light</td>
-    <td>Number</td>
+    <td></td>
     <td><code>200</code></td>
-    <td><code>200</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra light font weight across all components.</div></div>
@@ -603,9 +663,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-light</td>
-    <td>Number</td>
+    <td></td>
     <td><code>300</code></td>
-    <td><code>300</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light font weight across all components.</div></div>
@@ -613,9 +673,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-normal</td>
-    <td>Number</td>
+    <td></td>
     <td><code>$kendo-font-weight</code></td>
-    <td><code>400</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The normal font weight across all components.</div></div>
@@ -623,9 +683,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-medium</td>
-    <td>Number</td>
+    <td></td>
     <td><code>500</code></td>
-    <td><code>500</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium font weight across all components.</div></div>
@@ -633,9 +693,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-semibold</td>
-    <td>Number</td>
+    <td></td>
     <td><code>600</code></td>
-    <td><code>600</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The semibold font weight across all components.</div></div>
@@ -643,9 +703,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-bold</td>
-    <td>Number</td>
+    <td></td>
     <td><code>700</code></td>
-    <td><code>700</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bold font weight across all components.</div></div>
@@ -653,9 +713,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-extra-bold</td>
-    <td>Number</td>
+    <td></td>
     <td><code>800</code></td>
-    <td><code>800</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra bold font weight across all components.</div></div>
@@ -663,9 +723,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weight-black</td>
-    <td>Number</td>
+    <td></td>
     <td><code>900</code></td>
-    <td><code>900</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The most pronounced font weight across all components.</div></div>
@@ -673,9 +733,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacing</td>
-    <td>Null</td>
+    <td></td>
     <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base letter spacing across all components.</div></div>
@@ -683,9 +743,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacing-tightest</td>
-    <td>Number</td>
+    <td></td>
     <td><code>-.15px</code></td>
-    <td><code>-0.15px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The tightest letter spacing across all components.</div></div>
@@ -693,9 +753,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacing-tighter</td>
-    <td>Number</td>
+    <td></td>
     <td><code>-.10px</code></td>
-    <td><code>-0.1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Slightly looser than the tighter letter spacing across all components.</div></div>
@@ -703,9 +763,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacing-tight</td>
-    <td>Number</td>
+    <td></td>
     <td><code>-.5px</code></td>
-    <td><code>-0.5px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Moderately tight letter spacing across all components.</div></div>
@@ -713,9 +773,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacing-normal</td>
-    <td>Number</td>
+    <td></td>
     <td><code>0px</code></td>
-    <td><code>0px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The normal letter spacing across all components.</div></div>
@@ -723,9 +783,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacing-wide</td>
-    <td>Number</td>
+    <td></td>
     <td><code>.5px</code></td>
-    <td><code>0.5px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Wide letter spacing across all components.</div></div>
@@ -733,9 +793,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacing-wider</td>
-    <td>Number</td>
+    <td></td>
     <td><code>.10px</code></td>
-    <td><code>0.1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Slightly wider than the wide letter spacing across all components.</div></div>
@@ -743,9 +803,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacing-widest</td>
-    <td>Number</td>
+    <td></td>
     <td><code>.15px</code></td>
-    <td><code>0.15px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The widest letter spacing across all components.</div></div>
@@ -753,9 +813,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-family-sans</td>
-    <td>List</td>
+    <td></td>
     <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
-    <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans font family across all components.</div></div>
@@ -763,9 +823,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-family-serif</td>
-    <td>List</td>
+    <td></td>
     <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
-    <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The serif font family across all components.</div></div>
@@ -773,9 +833,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-family-sans-serif</td>
-    <td>List</td>
+    <td></td>
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
-    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans-serif font family across all components.</div></div>
@@ -783,9 +843,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-family-monospace</td>
-    <td>List</td>
+    <td></td>
     <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
-    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The monospace font family across all components.</div></div>
@@ -793,9 +853,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-family</td>
-    <td>String</td>
+    <td></td>
     <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font family across all components.</div></div>
@@ -803,9 +863,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-sizes</td>
-    <td>Map</td>
-    <td><code>k-map-merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
-    <td><ul><li>xxs: 0.5rem</li><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
+    <td></td>
+    <td><code>map.merge( $_default-font-sizes, $kendo-font-sizes )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -813,9 +873,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-line-heights</td>
-    <td>Map</td>
-    <td><code>k-map-merge( $_default-line-heights, $kendo-line-heights )</code></td>
-    <td><ul><li>xs: 1</li><li>sm: 1.25</li><li>md: 1.4285714285714286</li><li>lg: 1.5</li></ul></td>
+    <td></td>
+    <td><code>map.merge( $_default-line-heights, $kendo-line-heights )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
@@ -823,9 +883,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-weights</td>
-    <td>Map</td>
-    <td><code>k-map-merge( $_default-font-weights, $kendo-font-weights )</code></td>
-    <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
+    <td></td>
+    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weights map</div></div>
@@ -833,9 +893,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-letter-spacings</td>
-    <td>Map</td>
-    <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
-    <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
+    <td></td>
+    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacings map</div></div>
@@ -843,9 +903,9 @@ The following table lists the available variables for customizing the Theme Util
 </tr>
 <tr>
     <td>$kendo-font-families</td>
-    <td>Map</td>
-    <td><code>k-map-merge( $_default-font-families, $kendo-font-families )</code></td>
-    <td><ul><li>sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</li><li>serif: "Times New Roman", Georgia, Garamond, Palatino, Baskerville</li><li>sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</li><li>monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</li></ul></td>
+    <td></td>
+    <td><code>map.merge( $_default-font-families, $kendo-font-families )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>
@@ -862,6 +922,13 @@ The following table lists the available variables for customizing the Theme Util
 
 
 ## Classnames
+
+
+
+### `.k-align-content-evenly`
+
+This is equivalent to `align-content: space-evenly;`.
+
 
 
 
@@ -949,9 +1016,9 @@ This is equivalent to `align-content: space-around;`.
 
 
 
-### `.k-align-content-evenly`
+### `.k-align-items-self-end`
 
-This is equivalent to `align-content: space-evenly;`.
+This is equivalent to `align-items: self-end;`.
 
 
 
@@ -1033,9 +1100,9 @@ This is equivalent to `align-items: self-start;`.
 
 
 
-### `.k-align-items-self-end`
+### `.k-align-self-self-end`
 
-This is equivalent to `align-items: self-end;`.
+This is equivalent to `align-self: self-end;`.
 
 
 
@@ -1124,9 +1191,9 @@ This is equivalent to `align-self: self-start;`.
 
 
 
-### `.k-align-self-self-end`
+### `.k-appearance-auto`
 
-This is equivalent to `align-self: self-end;`.
+This is equivalent to `appearance: auto;`.
 
 
 
@@ -1138,9 +1205,9 @@ This is equivalent to `appearance: none;`.
 
 
 
-### `.k-appearance-auto`
+### `.k-aspect-ratio-video`
 
-This is equivalent to `appearance: auto;`.
+This is equivalent to `aspect-ratio: 16 / 9;`.
 
 
 
@@ -1166,9 +1233,9 @@ This is equivalent to `aspect-ratio: 1 / 1;`.
 
 
 
-### `.k-aspect-ratio-video`
+### `.k-backdrop-blur-lg`
 
-This is equivalent to `aspect-ratio: 16 / 9;`.
+This is equivalent to `backdrop-filter: blur(12px);`.
 
 
 
@@ -1201,9 +1268,9 @@ This is equivalent to `backdrop-filter: blur(6px);`.
 
 
 
-### `.k-backdrop-blur-lg`
+### `.k-bg-clip-text`
 
-This is equivalent to `backdrop-filter: blur(12px);`.
+This is equivalent to `background-clip: text;`.
 
 
 
@@ -1229,9 +1296,9 @@ This is equivalent to `background-clip: content-box;`.
 
 
 
-### `.k-bg-clip-text`
+### `.k-bg-white`
 
-This is equivalent to `background-clip: text;`.
+This is equivalent to `background-color: white;`.
 
 
 
@@ -1257,9 +1324,9 @@ This is equivalent to `background-color: black;`.
 
 
 
-### `.k-bg-white`
+### `.k-bg-bottom-right`
 
-This is equivalent to `background-color: white;`.
+This is equivalent to `background-position: bottom right;`.
 
 
 
@@ -1320,9 +1387,9 @@ This is equivalent to `background-position: bottom left;`.
 
 
 
-### `.k-bg-bottom-right`
+### `.k-bg-contain`
 
-This is equivalent to `background-position: bottom right;`.
+This is equivalent to `background-size: contain;`.
 
 
 
@@ -1341,9 +1408,9 @@ This is equivalent to `background-size: cover;`.
 
 
 
-### `.k-bg-contain`
+### `.k-border-separate`
 
-This is equivalent to `background-size: contain;`.
+This is equivalent to `border-collapse: separate;`.
 
 
 
@@ -1355,9 +1422,9 @@ This is equivalent to `border-collapse: collapse;`.
 
 
 
-### `.k-border-separate`
+### `.k-border-white`
 
-This is equivalent to `border-collapse: separate;`.
+This is equivalent to `border-color: white;`.
 
 
 
@@ -1386,13 +1453,6 @@ This is equivalent to `border-color: transparent;`.
 ### `.k-border-black`
 
 This is equivalent to `border-color: black;`.
-
-
-
-
-### `.k-border-white`
-
-This is equivalent to `border-color: white;`.
 
 
 
@@ -1775,6 +1835,13 @@ This is equivalent to `border-left-radius: 0.5rem;`.
 
 
 
+### `.k-border-y-none`
+
+This is equivalent to `border-block-style: none;`.
+
+
+
+
 ### `.k-border-solid`
 
 This is equivalent to `border-style: solid;`.
@@ -2055,9 +2122,9 @@ This is equivalent to `border-block-style: hidden;`.
 
 
 
-### `.k-border-y-none`
+### `.k-border-y-8`
 
-This is equivalent to `border-block-style: none;`.
+This is equivalent to `border-block-width: 8px;`.
 
 
 
@@ -2300,9 +2367,9 @@ This is equivalent to `border-block-width: 4px;`.
 
 
 
-### `.k-border-y-8`
+### `.k-box-sizing-content`
 
-This is equivalent to `border-block-width: 8px;`.
+This is equivalent to `box-sizing: content-box;`.
 
 
 
@@ -2314,9 +2381,9 @@ This is equivalent to `box-sizing: border-box;`.
 
 
 
-### `.k-box-sizing-content`
+### `.k-clear-none`
 
-This is equivalent to `box-sizing: content-box;`.
+This is equivalent to `clear: none;`.
 
 
 
@@ -2342,9 +2409,9 @@ This is equivalent to `clear: both;`.
 
 
 
-### `.k-clear-none`
+### `.k-columns-auto`
 
-This is equivalent to `clear: none;`.
+This is equivalent to `columns: auto;`.The number of columns is determined by other CSS properties, such as column-width.
 
 
 
@@ -2433,9 +2500,9 @@ This is equivalent to `columns: 12;`.
 
 
 
-### `.k-columns-auto`
+### `.k-cursor-pointer`
 
-This is equivalent to `columns: auto;`.The number of columns is determined by other CSS properties, such as column-width.
+This is equivalent to `cursor: pointer;`.
 
 
 
@@ -2461,9 +2528,9 @@ This is equivalent to `cursor: default;`.
 
 
 
-### `.k-cursor-pointer`
+### `.k-d-table-cell`
 
-This is equivalent to `cursor: pointer;`.
+This is equivalent to `display: table-cell;`.
 
 
 
@@ -2559,9 +2626,9 @@ This is equivalent to `display: table-row;`.
 
 
 
-### `.k-d-table-cell`
+### `.k-fill-white`
 
-This is equivalent to `display: table-cell;`.
+This is equivalent to `fill: white;`.
 
 
 
@@ -2601,9 +2668,9 @@ This is equivalent to `fill: black;`.
 
 
 
-### `.k-fill-white`
+### `.k-flex-none`
 
-This is equivalent to `fill: white;`.
+This is equivalent to `flex: 0 0 auto;`.
 
 
 
@@ -2629,9 +2696,9 @@ This is the same as `flex: initial;` and the shorthand for the default value: `f
 
 
 
-### `.k-flex-none`
+### `.k-flex-basis-0`
 
-This is equivalent to `flex: 0 0 auto;`.
+This is equivalent to `flex-basis: 0;`.
 
 
 
@@ -2643,9 +2710,9 @@ This is equivalent to `flex-basis: auto;`.
 
 
 
-### `.k-flex-basis-0`
+### `.k-flex-col-reverse`
 
-This is equivalent to `flex-basis: 0;`.
+This is equivalent to `flex-direction: column-reverse;`.
 
 
 
@@ -2671,9 +2738,9 @@ This is equivalent to `flex-direction: column;`.
 
 
 
-### `.k-flex-col-reverse`
+### `.k-flex-grow-0`
 
-This is equivalent to `flex-direction: column-reverse;`.
+This is equivalent to `flex-grow: 0;`.
 
 
 
@@ -2685,9 +2752,9 @@ This is equivalent to `flex-grow: 1;`.
 
 
 
-### `.k-flex-grow-0`
+### `.k-flex-shrink-0`
 
-This is equivalent to `flex-grow: 0;`.
+This is equivalent to `flex-shrink: 0;`.
 
 
 
@@ -2699,9 +2766,9 @@ This is equivalent to `flex-shrink: 1;`.
 
 
 
-### `.k-flex-shrink-0`
+### `.k-flex-wrap-reverse`
 
-This is equivalent to `flex-shrink: 0;`.
+This is equivalent to `flex-wrap: wrap-reverse;`.
 
 
 
@@ -2720,9 +2787,9 @@ This is equivalent to `flex-wrap: nowrap;`.
 
 
 
-### `.k-flex-wrap-reverse`
+### `.k-float-none`
 
-This is equivalent to `flex-wrap: wrap-reverse;`.
+This is equivalent to `float: none;`.
 
 
 
@@ -2741,9 +2808,9 @@ This is equivalent to `float: right;`.
 
 
 
-### `.k-float-none`
+### `.k-font-size-xl`
 
-This is equivalent to `float: none;`.
+This is equivalent to `font-size: 20px;`.
 
 
 
@@ -2776,9 +2843,9 @@ This is equivalent to `font-size: 16px;`.
 
 
 
-### `.k-font-size-xl`
+### `.k-font-non-italic`
 
-This is equivalent to `font-size: 20px;`.
+This is equivalent to `font-style: normal;`.
 
 
 
@@ -2790,9 +2857,9 @@ This is equivalent to `font-style: italic;`.
 
 
 
-### `.k-font-non-italic`
+### `.k-font-black`
 
-This is equivalent to `font-style: normal;`.
+This is equivalent to `font-weight: 900;`.
 
 
 
@@ -2853,9 +2920,9 @@ This is equivalent to `font-weight: 800;`.
 
 
 
-### `.k-font-black`
+### `.k-gap-y-hair`
 
-This is equivalent to `font-weight: 900;`.
+This is equivalent to `row-gap: 1px;`.
 
 
 
@@ -3063,9 +3130,9 @@ This is equivalent to `row-gap: 0.125rem;`.
 
 
 
-### `.k-gap-y-hair`
+### `.k-grid-auto-cols-fr`
 
-This is equivalent to `row-gap: 1px;`.
+This is equivalent to `grid-auto-columns: minmax( 0, 1fr );`.
 
 
 
@@ -3091,9 +3158,9 @@ This is equivalent to `grid-auto-columns: max-content;`.
 
 
 
-### `.k-grid-auto-cols-fr`
+### `.k-grid-flow-unset`
 
-This is equivalent to `grid-auto-columns: minmax( 0, 1fr );`.
+This is equivalent to `grid-auto-flow: unset;`.
 
 
 
@@ -3133,9 +3200,9 @@ This is equivalent to `grid-auto-flow: col dense;`.
 
 
 
-### `.k-grid-flow-unset`
+### `.k-grid-auto-rows-fr`
 
-This is equivalent to `grid-auto-flow: unset;`.
+This is equivalent to `grid-auto-rows: minmax( 0, 1fr );`.
 
 
 
@@ -3161,9 +3228,9 @@ This is equivalent to `grid-auto-rows: max-content;`.
 
 
 
-### `.k-grid-auto-rows-fr`
+### `.k-col-start-auto`
 
-This is equivalent to `grid-auto-rows: minmax( 0, 1fr );`.
+This is equivalent to `grid-column-start: auto;`.
 
 
 
@@ -3182,9 +3249,9 @@ This is equivalent to `grid-column-start: -1;`.
 
 
 
-### `.k-col-start-auto`
+### `.k-row-start-auto`
 
-This is equivalent to `grid-column-start: auto;`.
+This is equivalent to `grid-row-start: auto;`.
 
 
 
@@ -3203,9 +3270,9 @@ This is equivalent to `grid-row-start: -1;`.
 
 
 
-### `.k-row-start-auto`
+### `.k-grid-cols-none`
 
-This is equivalent to `grid-row-start: auto;`.
+This is equivalent to `grid-template-columns: none;`.
 
 
 
@@ -3224,9 +3291,9 @@ This is equivalent to `grid-template-columns: repeat(2, minmax(0, 1fr));`.
 
 
 
-### `.k-grid-cols-none`
+### `.k-grid-rows-none`
 
-This is equivalent to `grid-template-columns: none;`.
+This is equivalent to `grid-template-rows: none;`.
 
 
 
@@ -3245,9 +3312,9 @@ This is equivalent to `grid-template-rows: repeat(2, minmax(0, 1fr));`.
 
 
 
-### `.k-grid-rows-none`
+### `.k-max-h-fit`
 
-This is equivalent to `grid-template-rows: none;`.
+This is equivalent to `max-height: fit-content;`.
 
 
 
@@ -3413,9 +3480,9 @@ This is equivalent to `max-height: max-content;`.
 
 
 
-### `.k-max-h-fit`
+### `.k-justify-content-evenly`
 
-This is equivalent to `max-height: fit-content;`.
+This is equivalent to `justify-content: space-evenly;`.
 
 
 
@@ -3504,9 +3571,9 @@ This is equivalent to `justify-content: space-around;`.
 
 
 
-### `.k-justify-content-evenly`
+### `.k-justify-items-last-baseline`
 
-This is equivalent to `justify-content: space-evenly;`.
+This is equivalent to `justify-items: last baseline;`.
 
 
 
@@ -3602,9 +3669,9 @@ This is equivalent to `justify-items: first baseline;`.
 
 
 
-### `.k-justify-items-last-baseline`
+### `.k-justify-self-last-baseline`
 
-This is equivalent to `justify-items: last baseline;`.
+This is equivalent to `justify-self: last baseline;`.
 
 
 
@@ -3693,9 +3760,9 @@ This is equivalent to `justify-self: first baseline;`.
 
 
 
-### `.k-justify-self-last-baseline`
+### `.k-list-decimal`
 
-This is equivalent to `justify-self: last baseline;`.
+This is equivalent to `list-style-type: decimal;`.The marker of list items is a number.
 
 
 
@@ -3714,9 +3781,9 @@ This is equivalent to `list-style-type: disc;`.
 
 
 
-### `.k-list-decimal`
+### `.k-my-auto`
 
-This is equivalent to `list-style-type: decimal;`.The marker of list items is a number.
+This is equivalent to `margin-block: auto;`.
 
 
 
@@ -4351,9 +4418,9 @@ This is equivalent to `margin-block: 1px;`.
 
 
 
-### `.k-my-auto`
+### `.k-object-fit-none`
 
-This is equivalent to `margin-block: auto;`.
+This is equivalent to `object-fit: none;`.
 
 
 
@@ -4393,9 +4460,9 @@ This is equivalent to `object-fit: initial;`.
 
 
 
-### `.k-object-fit-none`
+### `.k-object-position-bottom-right`
 
-This is equivalent to `object-fit: none;`.
+This is equivalent to `object-position: bottom right;`.
 
 
 
@@ -4456,9 +4523,9 @@ This is equivalent to `object-position: bottom left;`.
 
 
 
-### `.k-object-position-bottom-right`
+### `.k-opacity-1`
 
-This is equivalent to `object-position: bottom right;`.
+This is equivalent to `opacity: 1;`.
 
 
 
@@ -4470,9 +4537,9 @@ This is equivalent to `opacity: 0;`.
 
 
 
-### `.k-opacity-1`
+### `.k-order-none`
 
-This is equivalent to `opacity: 1;`.
+This is equivalent to `order: 0;`.
 
 
 
@@ -4498,9 +4565,9 @@ This is equivalent to `order: 9999;`.
 
 
 
-### `.k-order-none`
+### `.k-outline-white`
 
-This is equivalent to `order: 0;`.
+This is equivalent to `outline-color: white;`.
 
 
 
@@ -4533,9 +4600,9 @@ This is equivalent to `outline-color: black;`.
 
 
 
-### `.k-outline-white`
+### `.k-outline-offset-8`
 
-This is equivalent to `outline-color: white;`.
+This is equivalent to `outline-offset: 8px;`.
 
 
 
@@ -4568,9 +4635,9 @@ This is equivalent to `outline-offset: 4px;`.
 
 
 
-### `.k-outline-offset-8`
+### `.k-outline-none`
 
-This is equivalent to `outline-offset: 8px;`.
+This is equivalent to `outline-style: none;`.
 
 
 
@@ -4610,9 +4677,9 @@ This is equivalent to `outline-style: hidden;`.
 
 
 
-### `.k-outline-none`
+### `.k-outline-8`
 
-This is equivalent to `outline-style: none;`.
+This is equivalent to `outline-width: 8px;`.
 
 
 
@@ -4645,9 +4712,9 @@ This is equivalent to `outline-width: 4px;`.
 
 
 
-### `.k-outline-8`
+### `.k-overflow-y-clip`
 
-This is equivalent to `outline-width: 8px;`.
+This is equivalent to `overflow-y: clip;`.
 
 
 
@@ -4750,9 +4817,9 @@ This is equivalent to `overflow-y: scroll;`.
 
 
 
-### `.k-overflow-y-clip`
+### `.k-py-auto`
 
-This is equivalent to `overflow-y: clip;`.
+This is equivalent to `padding-block: auto;`.
 
 
 
@@ -5289,9 +5356,9 @@ This is equivalent to `padding-block: 1px;`.
 
 
 
-### `.k-py-auto`
+### `.k-place-content-evenly`
 
-This is equivalent to `padding-block: auto;`.
+This is equivalent to `place-content: space-evenly;`.
 
 
 
@@ -5380,9 +5447,9 @@ This is equivalent to `place-content: space-around;`.
 
 
 
-### `.k-place-content-evenly`
+### `.k-place-items-baseline`
 
-This is equivalent to `place-content: space-evenly;`.
+This is equivalent to `place-items: baseline;`.
 
 
 
@@ -5450,9 +5517,9 @@ This is equivalent to `place-items: self-end;`.
 
 
 
-### `.k-place-items-baseline`
+### `.k-place-self-baseline`
 
-This is equivalent to `place-items: baseline;`.
+This is equivalent to `place-self: baseline;`.
 
 
 
@@ -5527,9 +5594,9 @@ This is equivalent to `place-self: self-end;`.
 
 
 
-### `.k-place-self-baseline`
+### `.k-inset-y-0`
 
-This is equivalent to `place-self: baseline;`.
+This is equivalent to `inset-block: 0;`.
 
 
 
@@ -5632,9 +5699,9 @@ This is equivalent to `inset-inline: 0;`.
 
 
 
-### `.k-inset-y-0`
+### `.k-pointer-events-auto`
 
-This is equivalent to `inset-block: 0;`.
+This is equivalent to `pointer-events: auto;`.
 
 
 
@@ -5646,9 +5713,9 @@ This is equivalent to `pointer-events: none;`.
 
 
 
-### `.k-pointer-events-auto`
+### `.k-pos-sticky`
 
-This is equivalent to `pointer-events: auto;`.
+This is equivalent to `position: sticky;`.
 
 
 
@@ -5681,9 +5748,9 @@ This is equivalent to `position: fixed;`.
 
 
 
-### `.k-pos-sticky`
+### `.k-resize-y`
 
-This is equivalent to `position: sticky;`.
+This is equivalent to `resize: vertical;`.
 
 
 
@@ -5709,9 +5776,9 @@ This is equivalent to `resize: horizontal;`.
 
 
 
-### `.k-resize-y`
+### `.k-scroll-y-1`
 
-This is equivalent to `resize: vertical;`.
+This is equivalent to `scroll-padding-block: 0.25rem;`.
 
 
 
@@ -6087,9 +6154,9 @@ This is equivalent to `scroll-padding-block: 1px;`.
 
 
 
-### `.k-scroll-y-1`
+### `.k-skew-y-1`
 
-This is equivalent to `scroll-padding-block: 0.25rem;`.
+This is equivalent to `transform: skewY(1deg);`.
 
 
 
@@ -6115,9 +6182,9 @@ This is equivalent to `transform: skewY(0deg);`.
 
 
 
-### `.k-skew-y-1`
+### `.k-stroke-white`
 
-This is equivalent to `transform: skewY(1deg);`.
+This is equivalent to `stroke: white;`.
 
 
 
@@ -6157,9 +6224,9 @@ This is equivalent to `stroke: black;`.
 
 
 
-### `.k-stroke-white`
+### `.k-table-fixed`
 
-This is equivalent to `stroke: white;`.
+This is equivalent to `table-layout: fixed;`.
 
 
 
@@ -6171,9 +6238,9 @@ This is equivalent to `table-layout: auto;`.
 
 
 
-### `.k-table-fixed`
+### `.k-text-justify`
 
-This is equivalent to `table-layout: fixed;`.
+This is equivalent to `text-align: justify;`.
 
 
 
@@ -6199,9 +6266,9 @@ This is equivalent to `text-align: center;`.
 
 
 
-### `.k-text-justify`
+### `.k-text-no-underline`
 
-This is equivalent to `text-align: justify;`.
+This is equivalent to `text-decoration: none-decoration;`.
 
 
 
@@ -6227,9 +6294,9 @@ This is equivalent to `text-decoration: line-through;`.
 
 
 
-### `.k-text-no-underline`
+### `.k-text-ellipsis`
 
-This is equivalent to `text-decoration: none-decoration;`.
+This is equivalent to `text-overflow: ellipsis; white-space: nowrap; overflow: hidden;`.
 
 
 
@@ -6241,9 +6308,9 @@ This is equivalent to `text-overflow: clip;`.
 
 
 
-### `.k-text-ellipsis`
+### `.k-text-capitalize`
 
-This is equivalent to `text-overflow: ellipsis; white-space: nowrap; overflow: hidden;`.
+This is equivalent to `text-transform: capitalize;`.
 
 
 
@@ -6262,9 +6329,9 @@ This is equivalent to `text-transform: uppercase;`.
 
 
 
-### `.k-text-capitalize`
+### `.k-touch-action-manipulation`
 
-This is equivalent to `text-transform: capitalize;`.
+This is equivalent to `touch-action: manipulation;`.
 
 
 
@@ -6332,13 +6399,6 @@ This is equivalent to `touch-action: pinch-zoom;`.
 
 
 
-### `.k-touch-action-manipulation`
-
-This is equivalent to `touch-action: manipulation;`.
-
-
-
-
 ### `.k-flip-h`
 
 This is equivalent to `transform: scaleX( -1 );`.
@@ -6349,6 +6409,13 @@ This is equivalent to `transform: scaleX( -1 );`.
 ### `.k-flip-v`
 
 This is equivalent to `transform: scaleY( -1 );`.
+
+
+
+
+### `.k-rotate-315`
+
+This is equivalent to `transform: rotate( 315deg );`.
 
 
 
@@ -6402,9 +6469,9 @@ This is equivalent to `transform: rotate( 270deg );`.
 
 
 
-### `.k-rotate-315`
+### `.k-scale-2`
 
-This is equivalent to `transform: rotate( 315deg );`.
+This is equivalent to `transform: scale( 2, 2 );`.
 
 
 
@@ -6423,9 +6490,9 @@ This is equivalent to `transform: scale( 1, 1 );`.
 
 
 
-### `.k-scale-2`
+### `.k-translate-100-100`
 
-This is equivalent to `transform: scale( 2, 2 );`.
+This is equivalent to `transform: translate( 100%, 100% );`.
 
 
 
@@ -6486,9 +6553,9 @@ This is equivalent to `transform: translate( 100%, 50% );`.
 
 
 
-### `.k-translate-100-100`
+### `.k-origin-bottom-right`
 
-This is equivalent to `transform: translate( 100%, 100% );`.
+This is equivalent to `transform-origin: bottom-right;`.
 
 
 
@@ -6549,18 +6616,18 @@ This is equivalent to `transform-origin: bottom-left;`.
 
 
 
-### `.k-origin-bottom-right`
-
-This is equivalent to `transform-origin: bottom-right;`.
-
-
-
-
 ### `.#{$kendo-prefix}sr-only`
 
 This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
             @name .k-sr-only
             @group accessibility
+
+
+
+
+### `.k-user-select-contain`
+
+This is equivalent to `user-select: contain;`.
 
 
 
@@ -6593,9 +6660,9 @@ This is equivalent to `user-select: all;`.
 
 
 
-### `.k-user-select-contain`
+### `.k-align-super`
 
-This is equivalent to `user-select: contain;`.
+This is equivalent to `vertical-align: super;`.
 
 
 
@@ -6649,9 +6716,9 @@ This is equivalent to `vertical-align: sub;`.
 
 
 
-### `.k-align-super`
+### `.k-collapse`
 
-This is equivalent to `vertical-align: super;`.
+This is equivalent to `visibility: collapse;`.
 
 
 
@@ -6670,9 +6737,9 @@ This is equivalent to `visibility: hidden;`.
 
 
 
-### `.k-collapse`
+### `.k-white-space-break-spaces`
 
-This is equivalent to `visibility: collapse;`.
+This is equivalent to `white-space: break-spaces;`.
 
 
 
@@ -6712,9 +6779,9 @@ This is equivalent to `white-space: pre-line;`.
 
 
 
-### `.k-white-space-break-spaces`
+### `.k-max-w-fit`
 
-This is equivalent to `white-space: break-spaces;`.
+This is equivalent to `max-width: fit-content;`.
 
 
 
@@ -6880,9 +6947,9 @@ This is equivalent to `max-width: max-content;`.
 
 
 
-### `.k-max-w-fit`
+### `.k-z-auto`
 
-This is equivalent to `max-width: fit-content;`.
+This is equivalent to `z-index: auto;`.
 
 
 
@@ -6925,13 +6992,6 @@ This is equivalent to `z-index: 40;`.
 ### `.k-z-50`
 
 This is equivalent to `z-index: 50;`.
-
-
-
-
-### `.k-z-auto`
-
-This is equivalent to `z-index: auto;`.
 
 
 

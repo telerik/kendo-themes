@@ -301,7 +301,7 @@ The following table lists the available variables for customization.
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 4px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 75%, transparent), rgba( $kendo-slider-draghandle-border, .75 ))</code></td>
-    <td><code>0 0 4px 0 color-mix(in srgb, var(--kendo-color-primary, #f35800) 75%, transparent)</code></td>
+    <td><code>(0 0 4px 0 color-mix(in srgb, var(--kendo-color-primary, #f35800) 75%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider drag handle.</div></div>

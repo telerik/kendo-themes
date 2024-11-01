@@ -165,9 +165,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-bg</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-bg</code></td>
-    <td><code>null</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton.</div></div>
@@ -195,9 +195,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-hover-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered RadioButton.</div></div>
@@ -205,9 +205,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered RadioButton.</div></div>
@@ -215,9 +215,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-hover-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-checkbox-border</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered RadioButton.</div></div>
@@ -225,9 +225,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-checked-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the checked RadioButton.</div></div>
@@ -265,9 +265,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-focus-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-focus-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused RadioButton.</div></div>
@@ -285,9 +285,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-focus-checked-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-focus-checked-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked RadioButton.</div></div>
@@ -295,9 +295,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-disabled-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled RadioButton.</div></div>
@@ -305,9 +305,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-disabled-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the disabled RadioButton.</div></div>
@@ -325,9 +325,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-disabled-checked-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled and checked RadioButton.</div></div>
@@ -397,7 +397,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-glyph-font-family</td>
     <td>List</td>
     <td><code>"WebComponentsIcons", monospace</code></td>
-    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>("WebComponentsIcons", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the RadioButton indicator glyph.</div></div>

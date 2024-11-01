@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-family</td>
     <td>List</td>
     <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
-    <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td><code>("Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family across all components.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-sizes</td>
     <td>Map</td>
     <td><code>$_default-font-sizes</code></td>
-    <td><ul><li>xxs: 0.5rem</li><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
+    <td><ul><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -471,7 +471,7 @@ The following table lists the available variables for customization.
     <td>$kendo-h1-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the highest level heading.</div></div>
@@ -481,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-h2-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the second highest level heading.</div></div>
@@ -491,7 +491,7 @@ The following table lists the available variables for customization.
     <td>$kendo-h3-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the third highest level heading.</div></div>
@@ -501,7 +501,7 @@ The following table lists the available variables for customization.
     <td>$kendo-h4-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the fourth highest level heading.</div></div>
@@ -511,7 +511,7 @@ The following table lists the available variables for customization.
     <td>$kendo-h5-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the fifth highest level heading.</div></div>
@@ -521,7 +521,7 @@ The following table lists the available variables for customization.
     <td>$kendo-h6-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the sixth highest level heading.</div></div>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><ul><li>h1: "font-size":"32px","font-family":"var(--kendo-font-family, inherit)","line-height":"40px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h2: "font-size":"28px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h3: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"32px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h4: "font-size":"20px","font-family":"var(--kendo-font-family, inherit)","line-height":"28px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h5: "font-size":"18px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h6: "font-size":"16px","font-family":"var(--kendo-font-family, inherit)","line-height":"22px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li></ul></td>
+    <td><ul><li>h1: "font-size":"32px","font-family":"var(--kendo-font-family, inherit)","line-height":"40px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h2: "font-size":"28px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h3: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"32px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h4: "font-size":"20px","font-family":"var(--kendo-font-family, inherit)","line-height":"28px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h5: "font-size":"18px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h6: "font-size":"16px","font-family":"var(--kendo-font-family, inherit)","line-height":"22px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
@@ -590,7 +590,7 @@ The following table lists the available variables for customization.
     <td>$kendo-paragraph-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit)</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the paragraph.</div></div>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
     <td>$kendo-code-font-family</td>
     <td>List</td>
     <td><code>$kendo-font-family-monospace</code></td>
-    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td><code>(SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the code tag.</div></div>
@@ -1199,7 +1199,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-family-sans</td>
     <td>List</td>
     <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
-    <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
+    <td><code>(Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans font family across all components.</div></div>
@@ -1209,7 +1209,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-family-serif</td>
     <td>List</td>
     <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
-    <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
+    <td><code>("Times New Roman", Georgia, Garamond, Palatino, Baskerville)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The serif font family across all components.</div></div>
@@ -1219,7 +1219,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-family-sans-serif</td>
     <td>List</td>
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
-    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+    <td><code>(system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans-serif font family across all components.</div></div>
@@ -1229,7 +1229,7 @@ The following table lists the available variables for customization.
     <td>$kendo-font-family-monospace</td>
     <td>List</td>
     <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
-    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td><code>(SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The monospace font family across all components.</div></div>
@@ -1238,7 +1238,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>k-map-merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
@@ -1248,7 +1248,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
@@ -1258,8 +1258,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-families</td>
     <td>Map</td>
-    <td><code>k-map-merge( $_default-font-families, $kendo-font-families )</code></td>
-    <td><ul><li>sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</li><li>serif: "Times New Roman", Georgia, Garamond, Palatino, Baskerville</li><li>sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</li><li>monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</li></ul></td>
+    <td><code>map.merge( $_default-font-families, $kendo-font-families )</code></td>
+    <td><ul><li>sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans)</li><li>serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville)</li><li>sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</li><li>monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>

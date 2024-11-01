@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-window-border-width</td>
     <td>List</td>
     <td><code>k-spacing(1) 0 0</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem) 0 0</code></td>
+    <td><code>(var(--kendo-spacing-1, 0.25rem) 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Window.</div></div>

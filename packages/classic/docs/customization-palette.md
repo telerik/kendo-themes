@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-palette-ash-gray</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-ash-gray</code></td>
-    <td><ul><li>1: #fafafa</li><li>2: #f0f0f0</li><li>3: #ebebeb</li><li>4: #dddddd</li><li>5: #d6d6d6</li><li>6: #cacaca</li><li>7: #b6b6b6</li><li>8: #a3a3a3</li><li>9: #8f8f8f</li><li>10: #7a7a7a</li><li>11: #666666</li><li>12: #525252</li><li>13: #404040</li><li>14: #333333</li><li>15: #272727</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Ash Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-tangerine-orange</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-tangerine-orange</code></td>
-    <td><ul><li>1: #fff2eb</li><li>2: #ffe5d6</li><li>3: #ffd8c2</li><li>4: #ffcbad</li><li>5: #ffbe99</li><li>6: #ffa570</li><li>7: #ff8b47</li><li>8: #ff711f</li><li>9: #f35800</li><li>10: #e05100</li><li>11: #cc4a00</li><li>12: #b94300</li><li>13: #a53c00</li><li>14: #7a2d00</li><li>15: #3d1600</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Tangerine Orange Palette provides colors to the Primary variable group.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-dodger-blue</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-dodger-blue</code></td>
-    <td><ul><li>1: #ebf8ff</li><li>2: #d7f2ff</li><li>3: #b8e8fe</li><li>4: #9cdffe</li><li>5: #72d1fe</li><li>6: #49c4fd</li><li>7: #2cbbfd</li><li>8: #0db1fd</li><li>9: #03a9f4</li><li>10: #039be0</li><li>11: #038ecd</li><li>12: #0280b9</li><li>13: #0273a6</li><li>14: #014c6f</li><li>15: #01364e</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Dodger Blue Palette provides colors to the Tertiary variable group.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-grass-green</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-grass-green</code></td>
-    <td><ul><li>1: #f1f8f2</li><li>2: #e3f2e6</li><li>3: #d8eddc</li><li>4: #bbdfc1</li><li>5: #9ed1a6</li><li>6: #82c48c</li><li>7: #6ebb7a</li><li>8: #4db25c</li><li>9: #3ea44e</li><li>10: #399748</li><li>11: #348a42</li><li>12: #2f7d3b</li><li>13: #2a7035</li><li>14: #1f5126</li><li>15: #16391b</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Grass Green Palette provides colors to the Success variable group.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-lake-blue</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-lake-blue</code></td>
-    <td><ul><li>1: #eef6fb</li><li>2: #deeef7</li><li>3: #cce5f3</li><li>4: #a6d1ea</li><li>5: #8bc3e4</li><li>6: #6ab2dc</li><li>7: #409cd2</li><li>8: #208ccb</li><li>9: #007bc3</li><li>10: #0071b3</li><li>11: #0067a4</li><li>12: #005d94</li><li>13: #005485</li><li>14: #004166</li><li>15: #002b44</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lake Blue Palette provides colors to the Info variable group.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-honey-yellow</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-honey-yellow</code></td>
-    <td><ul><li>1: #fff7eb</li><li>2: #ffefd6</li><li>3: #ffe7c2</li><li>4: #ffdead</li><li>5: #ffd699</li><li>6: #ffc670</li><li>7: #ffb240</li><li>8: #ffa41f</li><li>9: #ff9800</li><li>10: #eb8c00</li><li>11: #d68000</li><li>12: #c27400</li><li>13: #ad6700</li><li>14: #854f00</li><li>15: #593500</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Honey Yellow Palette provides colors to the Warning variable group.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-brick-red</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-brick-red</code></td>
-    <td><ul><li>1: #fcf0ed</li><li>2: #f9e1dc</li><li>3: #f7d4cc</li><li>4: #f4c3b8</li><li>5: #f2b4a6</li><li>6: #ec8e79</li><li>7: #e35e40</li><li>8: #de4320</li><li>9: #d92800</li><li>10: #c82500</li><li>11: #b62200</li><li>12: #a51e00</li><li>13: #941b00</li><li>14: #701500</li><li>15: #4c0e00</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Brick Red Palette provides colors to the Error variable group.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-pineapple-yellow</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-pineapple-yellow</code></td>
-    <td><ul><li>1: #fffaeb</li><li>2: #fff7db</li><li>3: #fff3cc</li><li>4: #ffeeb8</li><li>5: #ffe9a2</li><li>6: #ffe38b</li><li>7: #ffdd74</li><li>8: #ffd85d</li><li>9: #ffd246</li><li>10: #eac040</li><li>11: #d4af3b</li><li>12: #bf9d35</li><li>13: #a0832c</li><li>14: #806923</li><li>15: #403412</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Pineapple Yellow provides colors to the Series B variable group.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-apple-green</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-apple-green</code></td>
-    <td><ul><li>1: #f3fbee</li><li>2: #e9f8de</li><li>3: #def4ce</li><li>4: #d2f0bd</li><li>5: #bbe99b</li><li>6: #aae382</li><li>7: #9add69</li><li>8: #89d750</li><li>9: #78d237</li><li>10: #6ec032</li><li>11: #64AF2E</li><li>12: #5a9d29</li><li>13: #4a8221</li><li>14: #3c691c</li><li>15: #1c300d</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Apple Green provides colors to the Series C variable group.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-pacific-blue</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-pacific-blue</code></td>
-    <td><ul><li>1: #ebf8fa</li><li>2: #d6f1f5</li><li>3: #c2e9ef</li><li>4: #aee2ea</li><li>5: #93d9e3</li><li>6: #75d0db</li><li>7: #5ec7d6</li><li>8: #43becf</li><li>9: #28b4c8</li><li>10: #24a6b7</li><li>11: #2197a6</li><li>12: #1e8796</li><li>13: #197480</li><li>14: #145a64</li><li>15: #0a2e33</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Pacific Blue provides colors to the Series D variable group.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-bright-blue</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-bright-blue</code></td>
-    <td><ul><li>1: #ecf2fe</li><li>2: #d8e5fd</li><li>3: #c5d8fc</li><li>4: #b1cbfb</li><li>5: #96b9fa</li><li>6: #7ba7f9</li><li>7: #6296f7</li><li>8: #4684f6</li><li>9: #2d73f5</li><li>10: #2969e1</li><li>11: #2660cc</li><li>12: #2256b8</li><li>13: #1d499a</li><li>14: #173a7b</li><li>15: #0c1e40</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Bright Blue provides colors to the Series E variable group.</div></div>
@@ -149,12 +149,122 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-palette-orchid-purple</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-orchid-purple</code></td>
-    <td><ul><li>1: #f8f0fa</li><li>2: #f1e1f5</li><li>3: #e7caed</li><li>4: #ddb3e5</li><li>5: #d5a2df</li><li>6: #c98ad6</li><li>7: #bf74ce</li><li>8: #b45dc6</li><li>9: #9d40b0</li><li>10: #9c40ae</li><li>11: #8e3b9e</li><li>12: #80358e</li><li>13: #672b73</li><li>14: #55235f</li><li>15: #28112d</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Orchid Purple provides colors to the Series F variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-gray</td>
+    <td>Map</td>
+    <td><code>$_default-palette-gray</code></td>
+    <td><ul><li>1: #fafafa</li><li>2: #f5f5f5</li><li>3: #ebebeb</li><li>4: #e0e0e0</li><li>5: #d6d6d6</li><li>6: #c2c2c2</li><li>7: #adadad</li><li>8: #999999</li><li>9: #808080</li><li>10: #666666</li><li>11: #525252</li><li>12: #3d3d3d</li><li>13: #292929</li><li>14: #1f1f1f</li><li>15: #141414</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-sky-blue</td>
+    <td>Map</td>
+    <td><code>$_default-palette-sky-blue</code></td>
+    <td><ul><li>1: #ebf8fe</li><li>2: #d8f1fd</li><li>3: #c5eafc</li><li>4: #a3dffb</li><li>5: #81d4fA</li><li>6: #61c9f9</li><li>7: #42bff7</li><li>8: #22b3f5</li><li>9: #03a9f4</li><li>10: #039ae0</li><li>11: #028ccb</li><li>12: #027fb7</li><li>13: #026999</li><li>14: #02557a</li><li>15: #023f5c</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Sky Blue Palette provides colors to the Tertiary variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-green</td>
+    <td>Map</td>
+    <td><code>$_default-palette-green</code></td>
+    <td><ul><li>1: #edf8e9</li><li>2: #dcf0d3</li><li>3: #cbe9bf</li><li>4: #b7e1a5</li><li>5: #9bda80</li><li>6: #81d15f</li><li>7: #69c740</li><li>8: #4ebe1f</li><li>9: #37b400</li><li>10: #32a500</li><li>11: #2d9600</li><li>12: #298700</li><li>13: #227100</li><li>14: #1c5a00</li><li>15: #1c5a00</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Green Palette provides colors to the Success variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-blue</td>
+    <td>Map</td>
+    <td><code>$_default-palette-blue</code></td>
+    <td><ul><li>1: #e9f0fd</li><li>2: #d2e2fb</li><li>3: #bdd4f8</li><li>4: #9ec0f6</li><li>5: #80acf4</li><li>6: #6098f2</li><li>7: #4082ef</li><li>8: #206eec</li><li>9: #0058e9</li><li>10: #0052d6</li><li>11: #004ac2</li><li>12: #0042af</li><li>13: #003892</li><li>14: #002c75</li><li>15: #002259</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Blue Palette provides colors to the Info variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-yellow</td>
+    <td>Map</td>
+    <td><code>$_default-palette-yellow</code></td>
+    <td><ul><li>1: #fffae9</li><li>2: #fff4d3</li><li>3: #ffeebd</li><li>4: #ffe79e</li><li>5: #ffe080</li><li>6: #ffd760</li><li>7: #ffd040</li><li>8: #ffc720</li><li>9: #ffc000</li><li>10: #eaaf00</li><li>11: #d49f00</li><li>12: #bf9000</li><li>13: #a07800</li><li>14: #806000</li><li>15: #5e4700</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Yellow Palette provides colors to the Warning variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-red</td>
+    <td>Map</td>
+    <td><code>$_default-palette-red</code></td>
+    <td><ul><li>1: #feeeed</li><li>2: #fcddda</li><li>3: #fbc8c3</li><li>4: #faaaa2</li><li>5: #f98b80</li><li>6: #f76f60</li><li>7: #f65140</li><li>8: #f43520</li><li>9: #f31700</li><li>10: #df1600</li><li>11: #ca1400</li><li>12: #b61100</li><li>13: #980f00</li><li>14: #7a0c00</li><li>15: #7a0c00</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Red Palette provides colors to the Error variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-lemon-yellow</td>
+    <td>Map</td>
+    <td><code>$_default-palette-lemon-yellow</code></td>
+    <td><ul><li>1: #fffcf1</li><li>2: #fffae2</li><li>3: #fff7d4</li><li>4: #fff4c2</li><li>5: #fff0b1</li><li>6: #ffed9d</li><li>7: #ffe989</li><li>8: #ffe676</li><li>9: #ffe162</li><li>10: #ead05a</li><li>11: #d4bc52</li><li>12: #bfa94a</li><li>13: #a3913f</li><li>14: #807131</li><li>15: #5c5223</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lemon Yellow Palette provides colors to the Series B variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-spring-green</td>
+    <td>Map</td>
+    <td><code>$_default-palette-spring-green</code></td>
+    <td><ul><li>1: #effaf3</li><li>2: #e0f6e8</li><li>3: #d1f1dd</li><li>4: #c0edd1</li><li>5: #a6e8c0</li><li>6: #8fe2af</li><li>7: #79dda0</li><li>8: #62d78f</li><li>9: #4cd180</li><li>10: #46c074</li><li>11: #3fae6a</li><li>12: #399d60</li><li>13: #2f834f</li><li>14: #266940</li><li>15: #1c4f30</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Spring Green Palette provides colors to the Series C variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-royal-blue</td>
+    <td>Map</td>
+    <td><code>$_default-palette-royal-blue</code></td>
+    <td><ul><li>1: #f0f2ff</li><li>2: #e1e4fe</li><li>3: #d2d7fe</li><li>4: #bbc3fd</li><li>5: #a5affd</li><li>6: #8e9bfc</li><li>7: #7887fb</li><li>8: #6173fb</li><li>9: #4b5ffa</li><li>10: #4558e5</li><li>11: #3f50d1</li><li>12: #3847bc</li><li>13: #2f3c9d</li><li>14: #26307d</li><li>15: #1c245e</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Royal Blue Palette provides colors to the Series D variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-lavender-purple</td>
+    <td>Map</td>
+    <td><code>$_default-palette-lavender-purple</code></td>
+    <td><ul><li>1: #f7f0ff</li><li>2: #f0e0ff</li><li>3: #e8d1ff</li><li>4: #dfbfff</li><li>5: #d6acff</li><li>6: #cc97ff</li><li>7: #c182ff</li><li>8: #b76dff</li><li>9: #ac58ff</li><li>10: #9e51ea</li><li>11: #8f49d4</li><li>12: #8142bf</li><li>13: #6b37a0</li><li>14: #562c80</li><li>15: #3f205e</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lavender Purple Palette provides colors to the Series E variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-flamingo-pink</td>
+    <td>Map</td>
+    <td><code>$_default-palette-flamingo-pink</code></td>
+    <td><ul><li>1: #fff0f5</li><li>2: #ffe1eb</li><li>3: #ffd1e1</li><li>4: #ffbfd6</li><li>5: #ffacc9</li><li>6: #ff97bb</li><li>7: #ff82ae</li><li>8: #ff6da0</li><li>9: #ff5892</li><li>10: #ea5186</li><li>11: #d4497a</li><li>12: #bf426e</li><li>13: #a0375c</li><li>14: #802c49</li><li>15: #5e2036</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Flamingo Pink Palette provides colors to the Series F variable group.</div></div>
     </td>
 </tr>
 </tbody>

@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-container-margin-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-sm-x} / 2 )</code></td>
+    <td><code>calc( #{k-spacing(2)} / 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-sm-x} / 2 )</code></td>
+    <td><code>calc( #{k-spacing(2)} / 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-2, 0.5rem) / 2)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-label-margin-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-label-margin-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-icon-focus-shadow</td>
     <td>List</td>
     <td><code>0 2px 4px rgba( black, .1 )</code></td>
-    <td><code>0 2px 4px rgba(0, 0, 0, 0.1)</code></td>
+    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-rating-icon-focus-selected-shadow</td>
     <td>List</td>
     <td><code>0 2px 4px rgba( black, .1)</code></td>
-    <td><code>0 2px 4px rgba(0, 0, 0, 0.1)</code></td>
+    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>

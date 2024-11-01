@@ -621,7 +621,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-calendar-cell-selected-border</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-selected-border, inherit)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-selected-border, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell.</div></div>
@@ -651,7 +651,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell when focused.</div></div>
@@ -661,7 +661,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-cell-selected-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-calendar-cell-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell when selected and focused.</div></div>
@@ -741,7 +741,7 @@ The following table lists the available variables for customization.
     <td>$kendo-infinite-calendar-header-padding-y</td>
     <td>List</td>
     <td><code>k-spacing(3) k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem) var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>(var(--kendo-spacing-3, 0.75rem) var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the navigation in the infinite Calendar.</div></div>
@@ -811,7 +811,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-start-range-hover-shadow</td>
     <td>List</td>
     <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered start range selection in the Calendar.</div></div>
@@ -821,7 +821,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-mid-range-hover-shadow</td>
     <td>List</td>
     <td><code>inset 0 -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset 0 -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered mid range selection in the Calendar.</div></div>
@@ -831,7 +831,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-end-range-hover-shadow</td>
     <td>List</td>
     <td><code>inset -1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset -1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset -1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered end range selection in the Calendar.</div></div>
@@ -841,7 +841,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-start-end-range-hover-shadow</td>
     <td>List</td>
     <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset -1px 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset -1px 1px 0 0 var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset -1px 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered start-end range selection in the Calendar.</div></div>

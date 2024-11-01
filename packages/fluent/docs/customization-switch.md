@@ -95,7 +95,7 @@ The following table lists the available variables for customization.
     <td>$kendo-switch-focus-ring</td>
     <td>List</td>
     <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>1px solid var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the focused Switch.</div></div>

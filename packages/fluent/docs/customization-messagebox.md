@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-message-box-margin</td>
     <td>List</td>
     <td><code>0 0 k-spacing(3) 0</code></td>
-    <td><code>0 0 var(--kendo-spacing-3, 0.75rem) 0</code></td>
+    <td><code>(0 0 var(--kendo-spacing-3, 0.75rem) 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin around the message box.</div></div>

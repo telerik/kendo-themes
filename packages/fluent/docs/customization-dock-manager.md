@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-manager-unpinned-container-shadow</td>
     <td>List</td>
     <td><code>25.6px 0px 57.6px 0px rgba(0, 0, 0, 0.22), 4.8px 0px 14.4px 0px rgba(0, 0, 0, 0.18)</code></td>
-    <td><code>25.6px 0px 57.6px 0px rgba(0, 0, 0, 0.22), 4.8px 0px 14.4px 0px rgba(0, 0, 0, 0.18)</code></td>
+    <td><code>(25.6px 0px 57.6px 0px rgba(0, 0, 0, 0.22), 4.8px 0px 14.4px 0px rgba(0, 0, 0, 0.18))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the unpinned pane container in the DockManager component.</div></div>
@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>$kendo-dock-indicator-shadow</td>
     <td>List</td>
     <td><code>0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 5px -1px rgba(0, 0, 0, 0.20)</code></td>
-    <td><code>0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 5px -1px rgba(0, 0, 0, 0.2)</code></td>
+    <td><code>(0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 5px -1px rgba(0, 0, 0, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the dock indicator in the DockManager component.</div></div>

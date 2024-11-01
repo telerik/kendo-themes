@@ -32,86 +32,6 @@ The following table lists the available variables for customizing the Fluent the
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-padding-x</td>
-    <td></td>
-    <td><code>k-spacing(2)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-y</td>
-    <td></td>
-    <td><code>k-spacing(1)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-sm-x</td>
-    <td></td>
-    <td><code>k-spacing(1)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small horizontal padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-sm-y</td>
-    <td></td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small vertical padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-md-x</td>
-    <td></td>
-    <td><code>k-spacing(2)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium horizontal padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-md-y</td>
-    <td></td>
-    <td><code>k-spacing(1)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium vertical padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-lg-x</td>
-    <td></td>
-    <td><code>k-spacing(3)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large horizontal padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-lg-y</td>
-    <td></td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large vertical padding.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td>Number</td>
     <td><code>$kendo-font-size-lg</code></td>
@@ -125,7 +45,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-card-brand-colors</td>
     <td>List</td>
     <td><code>( primary, error, warning, success, info )</code></td>
-    <td><code>primary, error, warning, success, info</code></td>
+    <td><code>(primary, error, warning, success, info)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme variations for the card.</div></div>
@@ -310,56 +230,6 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-disabled-bg</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-text</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-border</td>
-    <td>Color</td>
-    <td><code>null</code></td>
-    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-filter</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -381,30 +251,20 @@ The following table lists the available variables for customizing the Fluent the
     </tr>
 </thead>
 <tbody><tr>
-    <td>$wcag-min-contrast-ratio</td>
-    <td>Number</td>
-    <td><code>7</code></td>
-    <td><code>7</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The contrast ratio to reach against white, to determine if color changes from "light" to "dark".<br />Acceptable values for WCAG 2.0 are 3, 4.5 and 7.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$wcag-dark</td>
-    <td>Color</td>
+    <td></td>
     <td><code>black</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default dark color for WCAG 2.0.</div></div>
+    <td colspan="4" class="theme-variables-description-container">
     </td>
 </tr>
 <tr>
     <td>$wcag-light</td>
-    <td>Color</td>
+    <td></td>
     <td><code>white</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default light color for WCAG 2.0.</div></div>
@@ -1851,7 +1711,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-bottom-nav-border-width</td>
     <td>List</td>
     <td><code>1px 0px 0px 0px</code></td>
-    <td><code>1px 0px 0px 0px</code></td>
+    <td><code>(1px 0px 0px 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the BottomNavigation.</div></div>
@@ -2228,7 +2088,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td><code>0 0 0 1px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>(0 0 0 1px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused breadcrumb</div></div>
@@ -2448,7 +2308,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var(neutral-130)</code></td>
+    <td><code>(inset 0 0 0 1px get-theme-color-var(neutral-130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused breadcrumb link</div></div>
@@ -2648,7 +2508,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-breadcrumb-root-link-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-breadcrumb-link-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var(neutral-130)</code></td>
+    <td><code>(inset 0 0 0 1px get-theme-color-var(neutral-130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused breadcrumb root link</div></div>
@@ -3722,7 +3582,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-cell-selected-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-calendar-cell-selected-border</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-selected-border, inherit)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-selected-border, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell.</div></div>
@@ -3752,7 +3612,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell when focused.</div></div>
@@ -3762,7 +3622,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-cell-selected-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-calendar-cell-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected calendar cell when selected and focused.</div></div>
@@ -3842,7 +3702,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-infinite-calendar-header-padding-y</td>
     <td>List</td>
     <td><code>k-spacing(3) k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem) var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>(var(--kendo-spacing-3, 0.75rem) var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the navigation in the infinite Calendar.</div></div>
@@ -3912,7 +3772,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-start-range-hover-shadow</td>
     <td>List</td>
     <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered start range selection in the Calendar.</div></div>
@@ -3922,7 +3782,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-mid-range-hover-shadow</td>
     <td>List</td>
     <td><code>inset 0 -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset 0 -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered mid range selection in the Calendar.</div></div>
@@ -3932,7 +3792,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-end-range-hover-shadow</td>
     <td>List</td>
     <td><code>inset -1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset 0 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset -1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset -1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset 0 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered end range selection in the Calendar.</div></div>
@@ -3942,7 +3802,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-calendar-start-end-range-hover-shadow</td>
     <td>List</td>
     <td><code>inset 1px -1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )), inset -1px 1px 0 0 if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset -1px 1px 0 0 var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 1px -1px 0 0 var(--kendo-color-base-emphasis, #605e5c), inset -1px 1px 0 0 var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered start-end range selection in the Calendar.</div></div>
@@ -4987,7 +4847,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( primary-emphasis ), k-get-theme-color-var( primary-130 ))</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary-emphasis, #004578)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, #004578))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused area around the chart type icon.</div></div>
@@ -4997,7 +4857,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chart-wizard-icon-area-selected-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-chart-wizard-icon-area-color</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary, #0078d4)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #0078d4))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected area around the chart type icon.</div></div>
@@ -5147,7 +5007,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-chart-border-width</td>
     <td>List</td>
     <td><code>0px default</code></td>
-    <td><code>0px default</code></td>
+    <td><code>(0px default)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the chart component.</div></div>
@@ -6557,7 +6417,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-checkbox-focus-outline</td>
     <td>List</td>
     <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>1px solid var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of the focused CheckBox.</div></div>
@@ -6757,7 +6617,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-checkbox-glyph-font-family</td>
     <td>List</td>
     <td><code>"WebComponentsIcons", monospace</code></td>
-    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>("WebComponentsIcons", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the CheckBox indicator glyph.</div></div>
@@ -6786,7 +6646,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hover-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hover-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='var%28--kendo-color-on-app-surface, %23323130%29' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
@@ -6796,7 +6656,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-checked-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='var%28--kendo-color-app-surface, %23ffffff%29' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
@@ -6806,7 +6666,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-indeterminate-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-indeterminate-text}'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-indeterminate-text}'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3crect x='3' y='3' width='10' height='10' rx='2' fill='var%28--kendo-color-primary, %230078d4%29'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
@@ -6816,7 +6676,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-checked-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hover-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hover-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='var%28--kendo-color-app-surface, %23ffffff%29' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
@@ -6826,7 +6686,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-hover-indeterminate-text}'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-hover-indeterminate-text}'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3crect x='3' y='3' width='10' height='10' rx='2' fill='var%28--kendo-color-primary-hover, %23106ebe%29'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
@@ -6836,7 +6696,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-checked-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-disabled-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-disabled-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='var%28--kendo-color-app-surface, %23ffffff%29' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
@@ -6846,7 +6706,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-disabled-indeterminate-text}'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-disabled-indeterminate-text}'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3crect x='3' y='3' width='10' height='10' rx='2' fill='color-mix%28in srgb, var%28--kendo-color-on-app-surface, %23323130%29 28%25, transparent%29'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
@@ -8155,7 +8015,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-gradient-transparent-to-black</td>
     <td>Gradient</td>
     <td><code>rgba(black, 0), black</code></td>
-    <td><code>rgba(0, 0, 0, 0), black</code></td>
+    <td><code>(rgba(0, 0, 0, 0), black)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to black.<br />Note: you cannot change this value.</div></div>
@@ -8165,7 +8025,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-gradient-transparent-to-white</td>
     <td>Gradient</td>
     <td><code>rgba(white, 0), white</code></td>
-    <td><code>rgba(255, 255, 255, 0), white</code></td>
+    <td><code>(rgba(255, 255, 255, 0), white)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to white.<br />Note: you cannot change this value.</div></div>
@@ -8175,7 +8035,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-gradient-black-to-transparent</td>
     <td>Gradient</td>
     <td><code>black, rgba(black, 0)</code></td>
-    <td><code>black, rgba(0, 0, 0, 0)</code></td>
+    <td><code>(black, rgba(0, 0, 0, 0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from black to transparent.<br />Note: you cannot change this value.</div></div>
@@ -8185,7 +8045,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-gradient-white-to-transparent</td>
     <td>Gradient</td>
     <td><code>white, rgba(white, 0)</code></td>
-    <td><code>white, rgba(255, 255, 255, 0)</code></td>
+    <td><code>(white, rgba(255, 255, 255, 0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from white to transparent.<br />Note: you cannot change this value.</div></div>
@@ -8195,7 +8055,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-gradient-rainbow</td>
     <td>Gradient</td>
     <td><span class="color-preview" style="background-color: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000"></span><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
-    <td><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
+    <td><code>(#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that cycles through the colors of the rainbow.<br />Note: you cannot change this value.</div></div>
@@ -9105,7 +8965,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td><code>inset 0 0 0 2px var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -9125,7 +8985,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette hovered tile.</div></div>
@@ -9145,7 +9005,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-color-palette-tile-selected-shadow</td>
     <td>List</td>
     <td><code>$kendo-color-palette-tile-hover-shadow</code></td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette selected tile.</div></div>
@@ -9675,7 +9535,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-dock-manager-unpinned-container-shadow</td>
     <td>List</td>
     <td><code>25.6px 0px 57.6px 0px rgba(0, 0, 0, 0.22), 4.8px 0px 14.4px 0px rgba(0, 0, 0, 0.18)</code></td>
-    <td><code>25.6px 0px 57.6px 0px rgba(0, 0, 0, 0.22), 4.8px 0px 14.4px 0px rgba(0, 0, 0, 0.18)</code></td>
+    <td><code>(25.6px 0px 57.6px 0px rgba(0, 0, 0, 0.22), 4.8px 0px 14.4px 0px rgba(0, 0, 0, 0.18))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the unpinned pane container in the DockManager component.</div></div>
@@ -9745,7 +9605,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-dock-indicator-shadow</td>
     <td>List</td>
     <td><code>0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 5px -1px rgba(0, 0, 0, 0.20)</code></td>
-    <td><code>0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 5px -1px rgba(0, 0, 0, 0.2)</code></td>
+    <td><code>(0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 3px 5px -1px rgba(0, 0, 0, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the dock indicator in the DockManager component.</div></div>
@@ -9874,7 +9734,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drag-clue-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-lg-x</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -9884,7 +9744,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drag-clue-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-lg-y</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
@@ -10234,8 +10094,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-padding-y</td>
     <td>String</td>
-    <td><code>var( --kendo-padding-x, #{$kendo-padding-md-x} )</code></td>
-    <td><code>var(--kendo-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer item.</div></div>
@@ -10415,7 +10275,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-drawer-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>
@@ -11075,7 +10935,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-elevation</td>
     <td>Map</td>
     <td><code>$_default-elevation</code></td>
-    <td><ul><li>1: 0 0.3px 0.9px rgba(0, 0, 0, 0.1), 0 1.6px 3.6px rgba(0, 0, 0, 0.13)</li><li>2: 0 0.6px 1.8px rgba(0, 0, 0, 0.1), 0 3.2px 7.2px rgba(0, 0, 0, 0.13)</li><li>3: 0 0.9px 2.7px rgba(0, 0, 0, 0.1), 0 4.8px 10.8px rgba(0, 0, 0, 0.13)</li><li>4: 0 1.2px 3.6px rgba(0, 0, 0, 0.1), 0 6.4px 14.4px rgba(0, 0, 0, 0.13)</li><li>5: 0 1.8px 5.4px rgba(0, 0, 0, 0.1), 0 9.6px 21.6px rgba(0, 0, 0, 0.13)</li><li>6: 0 2.4px 7.2px rgba(0, 0, 0, 0.18), 0 12.8px 28.8px rgba(0, 0, 0, 0.22)</li><li>7: 0 3.2px 10.8px rgba(0, 0, 0, 0.18), 0 19.2px 43.2px rgba(0, 0, 0, 0.22)</li><li>8: 0 4.8px 14.4px rgba(0, 0, 0, 0.18), 0 25.6px 57.6px rgba(0, 0, 0, 0.22)</li><li>9: 0 6.4px 18px rgba(0, 0, 0, 0.18), 0 32px 72px rgba(0, 0, 0, 0.22)</li></ul></td>
+    <td><ul><li>1: (0 0.3px 0.9px rgba(0, 0, 0, 0.1), 0 1.6px 3.6px rgba(0, 0, 0, 0.13))</li><li>2: (0 0.6px 1.8px rgba(0, 0, 0, 0.1), 0 3.2px 7.2px rgba(0, 0, 0, 0.13))</li><li>3: (0 0.9px 2.7px rgba(0, 0, 0, 0.1), 0 4.8px 10.8px rgba(0, 0, 0, 0.13))</li><li>4: (0 1.2px 3.6px rgba(0, 0, 0, 0.1), 0 6.4px 14.4px rgba(0, 0, 0, 0.13))</li><li>5: (0 1.8px 5.4px rgba(0, 0, 0, 0.1), 0 9.6px 21.6px rgba(0, 0, 0, 0.13))</li><li>6: (0 2.4px 7.2px rgba(0, 0, 0, 0.18), 0 12.8px 28.8px rgba(0, 0, 0, 0.22))</li><li>7: (0 3.2px 10.8px rgba(0, 0, 0, 0.18), 0 19.2px 43.2px rgba(0, 0, 0, 0.22))</li><li>8: (0 4.8px 14.4px rgba(0, 0, 0, 0.18), 0 25.6px 57.6px rgba(0, 0, 0, 0.22))</li><li>9: (0 6.4px 18px rgba(0, 0, 0, 0.18), 0 32px 72px rgba(0, 0, 0, 0.22))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
@@ -11185,7 +11045,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-expander-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ExpansionPanel.</div></div>
@@ -11275,7 +11135,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-expander-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0px 0px 0px 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
-    <td><code>inset 0px 0px 0px 2px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0px 0px 0px 2px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel.</div></div>
@@ -11994,7 +11854,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-filter-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -12004,7 +11864,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -12780,7 +12640,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-floating-label-transition</td>
     <td>List</td>
     <td><code>.2s ease-out</code></td>
-    <td><code>0.2s ease-out</code></td>
+    <td><code>(0.2s ease-out)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Floating Label.</div></div>
@@ -12859,7 +12719,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-form-spacer</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-x} * 2 )</code></td>
+    <td><code>calc( #{k-spacing(2)} * 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
 </tr>
 <tr>
@@ -12920,7 +12780,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-form-fieldset-margin</td>
     <td>List</td>
     <td><code>2em 0 0</code></td>
-    <td><code>2em 0 0</code></td>
+    <td><code>(2em 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form fieldset.</div></div>
@@ -12940,7 +12800,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-form-legend-margin</td>
     <td>List</td>
     <td><code>0 0 k-spacing(3)</code></td>
-    <td><code>0 0 var(--kendo-spacing-3, 0.75rem)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form legend.</div></div>
@@ -12960,7 +12820,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-form-legend-border-width</td>
     <td>List</td>
     <td><code>0 0 k-spacing(0.5)</code></td>
-    <td><code>0 0 var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-0\.5, 0.125rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Form legend.</div></div>
@@ -13120,7 +12980,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-form-separator-margin</td>
     <td>List</td>
     <td><code>k-spacing(3) 0 0</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem) 0 0</code></td>
+    <td><code>(var(--kendo-spacing-3, 0.75rem) 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form separator.</div></div>
@@ -13749,7 +13609,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-actions-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -13759,7 +13619,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-actions-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -14360,7 +14220,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the Grid.</div></div>
@@ -15430,7 +15290,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-grid-column-menu-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the Grid column menu item.</div></div>
@@ -16010,7 +15870,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-image-editor-resize-handle-border-width</td>
     <td>List</td>
     <td><code>0 2px 2px 0</code></td>
-    <td><code>0 2px 2px 0</code></td>
+    <td><code>(0 2px 2px 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor resize handle border width.</div></div>
@@ -17708,7 +17568,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-list-group-item-border-width</td>
     <td>List</td>
     <td><code>1px 0 0</code></td>
-    <td><code>1px 0 0</code></td>
+    <td><code>(1px 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List group items.</div></div>
@@ -17956,7 +17816,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>
@@ -19373,7 +19233,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-attribution-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -19383,7 +19243,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-attribution-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-y</code></td>
+    <td><code>k-spacing(0.5)</code></td>
     <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
@@ -20272,7 +20132,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-message-box-margin</td>
     <td>List</td>
     <td><code>0 0 k-spacing(3) 0</code></td>
-    <td><code>0 0 var(--kendo-spacing-3, 0.75rem) 0</code></td>
+    <td><code>(0 0 var(--kendo-spacing-3, 0.75rem) 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin around the message box.</div></div>
@@ -21030,7 +20890,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-orgchart-card-body-border-width</td>
     <td>List</td>
     <td><code>2px 0 0</code></td>
-    <td><code>2px 0 0</code></td>
+    <td><code>(2px 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top border width of the OrgChart Card body.</div></div>
@@ -21874,9 +21734,9 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody><tr>
     <td>$kendo-palette-gray</td>
-    <td></td>
+    <td>Map</td>
     <td><code>$_default-palette-gray</code></td>
-    <td></td>
+    <td><ul><li>1: #fafafa</li><li>2: #f5f5f5</li><li>3: #ebebeb</li><li>4: #e0e0e0</li><li>5: #d6d6d6</li><li>6: #c2c2c2</li><li>7: #adadad</li><li>8: #999999</li><li>9: #808080</li><li>10: #666666</li><li>11: #525252</li><li>12: #3d3d3d</li><li>13: #292929</li><li>14: #1f1f1f</li><li>15: #141414</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
@@ -22000,6 +21860,116 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lime Green Palette provides colors to the Series F variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-coral</td>
+    <td>Map</td>
+    <td><code>$_default-palette-coral</code></td>
+    <td><ul><li>1: #fff6f5</li><li>2: #ffeceb</li><li>3: #ffdedb</li><li>4: #ffc8c4</li><li>5: #ffb1ac</li><li>6: #ff9d97</li><li>7: #ff8a82</li><li>8: #ff766d</li><li>9: #ff6358</li><li>10: #ea5a51</li><li>11: #d45349</li><li>12: #bf4a42</li><li>13: #a33f38</li><li>14: #80322c</li><li>15: #5c201c</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Coral Palette provides colors to the Primary and Series A variable groups.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-sky-blue</td>
+    <td>Map</td>
+    <td><code>$_default-palette-sky-blue</code></td>
+    <td><ul><li>1: #ebf8fe</li><li>2: #d8f1fd</li><li>3: #c5eafc</li><li>4: #a3dffb</li><li>5: #81d4fA</li><li>6: #61c9f9</li><li>7: #42bff7</li><li>8: #22b3f5</li><li>9: #03a9f4</li><li>10: #039ae0</li><li>11: #028ccb</li><li>12: #027fb7</li><li>13: #026999</li><li>14: #02557a</li><li>15: #023f5c</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Sky Blue Palette provides colors to the Tertiary variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-green</td>
+    <td>Map</td>
+    <td><code>$_default-palette-green</code></td>
+    <td><ul><li>1: #edf8e9</li><li>2: #dcf0d3</li><li>3: #cbe9bf</li><li>4: #b7e1a5</li><li>5: #9bda80</li><li>6: #81d15f</li><li>7: #69c740</li><li>8: #4ebe1f</li><li>9: #37b400</li><li>10: #32a500</li><li>11: #2d9600</li><li>12: #298700</li><li>13: #227100</li><li>14: #1c5a00</li><li>15: #1c5a00</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Green Palette provides colors to the Success variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-blue</td>
+    <td>Map</td>
+    <td><code>$_default-palette-blue</code></td>
+    <td><ul><li>1: #e9f0fd</li><li>2: #d2e2fb</li><li>3: #bdd4f8</li><li>4: #9ec0f6</li><li>5: #80acf4</li><li>6: #6098f2</li><li>7: #4082ef</li><li>8: #206eec</li><li>9: #0058e9</li><li>10: #0052d6</li><li>11: #004ac2</li><li>12: #0042af</li><li>13: #003892</li><li>14: #002c75</li><li>15: #002259</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Blue Palette provides colors to the Info variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-yellow</td>
+    <td>Map</td>
+    <td><code>$_default-palette-yellow</code></td>
+    <td><ul><li>1: #fffae9</li><li>2: #fff4d3</li><li>3: #ffeebd</li><li>4: #ffe79e</li><li>5: #ffe080</li><li>6: #ffd760</li><li>7: #ffd040</li><li>8: #ffc720</li><li>9: #ffc000</li><li>10: #eaaf00</li><li>11: #d49f00</li><li>12: #bf9000</li><li>13: #a07800</li><li>14: #806000</li><li>15: #5e4700</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Yellow Palette provides colors to the Warning variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-red</td>
+    <td>Map</td>
+    <td><code>$_default-palette-red</code></td>
+    <td><ul><li>1: #feeeed</li><li>2: #fcddda</li><li>3: #fbc8c3</li><li>4: #faaaa2</li><li>5: #f98b80</li><li>6: #f76f60</li><li>7: #f65140</li><li>8: #f43520</li><li>9: #f31700</li><li>10: #df1600</li><li>11: #ca1400</li><li>12: #b61100</li><li>13: #980f00</li><li>14: #7a0c00</li><li>15: #7a0c00</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Red Palette provides colors to the Error variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-lemon-yellow</td>
+    <td>Map</td>
+    <td><code>$_default-palette-lemon-yellow</code></td>
+    <td><ul><li>1: #fffcf1</li><li>2: #fffae2</li><li>3: #fff7d4</li><li>4: #fff4c2</li><li>5: #fff0b1</li><li>6: #ffed9d</li><li>7: #ffe989</li><li>8: #ffe676</li><li>9: #ffe162</li><li>10: #ead05a</li><li>11: #d4bc52</li><li>12: #bfa94a</li><li>13: #a3913f</li><li>14: #807131</li><li>15: #5c5223</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lemon Yellow Palette provides colors to the Series B variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-spring-green</td>
+    <td>Map</td>
+    <td><code>$_default-palette-spring-green</code></td>
+    <td><ul><li>1: #effaf3</li><li>2: #e0f6e8</li><li>3: #d1f1dd</li><li>4: #c0edd1</li><li>5: #a6e8c0</li><li>6: #8fe2af</li><li>7: #79dda0</li><li>8: #62d78f</li><li>9: #4cd180</li><li>10: #46c074</li><li>11: #3fae6a</li><li>12: #399d60</li><li>13: #2f834f</li><li>14: #266940</li><li>15: #1c4f30</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Spring Green Palette provides colors to the Series C variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-royal-blue</td>
+    <td>Map</td>
+    <td><code>$_default-palette-royal-blue</code></td>
+    <td><ul><li>1: #f0f2ff</li><li>2: #e1e4fe</li><li>3: #d2d7fe</li><li>4: #bbc3fd</li><li>5: #a5affd</li><li>6: #8e9bfc</li><li>7: #7887fb</li><li>8: #6173fb</li><li>9: #4b5ffa</li><li>10: #4558e5</li><li>11: #3f50d1</li><li>12: #3847bc</li><li>13: #2f3c9d</li><li>14: #26307d</li><li>15: #1c245e</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Royal Blue Palette provides colors to the Series D variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-lavender-purple</td>
+    <td>Map</td>
+    <td><code>$_default-palette-lavender-purple</code></td>
+    <td><ul><li>1: #f7f0ff</li><li>2: #f0e0ff</li><li>3: #e8d1ff</li><li>4: #dfbfff</li><li>5: #d6acff</li><li>6: #cc97ff</li><li>7: #c182ff</li><li>8: #b76dff</li><li>9: #ac58ff</li><li>10: #9e51ea</li><li>11: #8f49d4</li><li>12: #8142bf</li><li>13: #6b37a0</li><li>14: #562c80</li><li>15: #3f205e</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lavender Purple Palette provides colors to the Series E variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-flamingo-pink</td>
+    <td>Map</td>
+    <td><code>$_default-palette-flamingo-pink</code></td>
+    <td><ul><li>1: #fff0f5</li><li>2: #ffe1eb</li><li>3: #ffd1e1</li><li>4: #ffbfd6</li><li>5: #ffacc9</li><li>6: #ff97bb</li><li>7: #ff82ae</li><li>8: #ff6da0</li><li>9: #ff5892</li><li>10: #ea5186</li><li>11: #d4497a</li><li>12: #bf426e</li><li>13: #a0375c</li><li>14: #802c49</li><li>15: #5e2036</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Flamingo Pink Palette provides colors to the Series F variable group.</div></div>
     </td>
 </tr>
 </tbody>
@@ -22436,7 +22406,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused PanelBar header.</div></div>
@@ -22696,7 +22666,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-panelbar-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused PanelBar items.</div></div>
@@ -23166,7 +23136,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-pivotgrid-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
@@ -24026,7 +23996,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-progressbar-animation-timing</td>
     <td>List</td>
     <td><code>1s linear infinite</code></td>
-    <td><code>1s linear infinite</code></td>
+    <td><code>(1s linear infinite)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The animation timing of the ProgressBar.</div></div>
@@ -24296,7 +24266,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-progressbar-indeterminate-animation-horizontal</td>
     <td>List</td>
     <td><code>3s ease 0s infinite running progressbar-indeterminate-animation-horizontal</code></td>
-    <td><code>3s ease 0s infinite running progressbar-indeterminate-animation-horizontal</code></td>
+    <td><code>(3s ease 0s infinite running progressbar-indeterminate-animation-horizontal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient size of the horizontal indeterminate ProgressBar.</div></div>
@@ -24306,7 +24276,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-progressbar-indeterminate-animation-vertical</td>
     <td>List</td>
     <td><code>3s ease 0s infinite running progressbar-indeterminate-animation-vertical</code></td>
-    <td><code>3s ease 0s infinite running progressbar-indeterminate-animation-vertical</code></td>
+    <td><code>(3s ease 0s infinite running progressbar-indeterminate-animation-vertical)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient size of the vertical indeterminate ProgressBar.</div></div>
@@ -24775,7 +24745,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-radio-focus-outline</td>
     <td>List</td>
     <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>1px solid var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of the focused RadioButton.</div></div>
@@ -24905,7 +24875,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-radio-glyph-font-family</td>
     <td>List</td>
     <td><code>"WebComponentsIcons", monospace</code></td>
-    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>("WebComponentsIcons", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph font family of the RadioButton indicator.</div></div>
@@ -24924,7 +24894,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-checked-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='var%28--kendo-color-primary, %230078d4%29'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
@@ -25575,7 +25545,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scheduler-event-ongoing-shadow</td>
     <td>List</td>
     <td><code>inset 0px 0px 0px 1px #ff0000</code></td>
-    <td><code>inset 0px 0px 0px 1px #ff0000</code></td>
+    <td><code>(inset 0px 0px 0px 1px #ff0000)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ongoing Scheduler event.</div></div>
@@ -26125,7 +26095,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scrollview-pagebutton-hover-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td><code>0 0 0 1px var(--kendo-color-base, #ffffff)</code></td>
+    <td><code>(0 0 0 1px var(--kendo-color-base, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover box shadow of the ScrollView page button.</div></div>
@@ -26135,7 +26105,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scrollview-pagebutton-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the ScrollView page button.</div></div>
@@ -26145,7 +26115,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scrollview-pagebutton-primary-hover-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td><code>0 0 0 2px var(--kendo-color-base, #ffffff)</code></td>
+    <td><code>(0 0 0 2px var(--kendo-color-base, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary hover box shadow of the ScrollView page button.</div></div>
@@ -26155,7 +26125,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scrollview-pagebutton-primary-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>0 0 0 2px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(0 0 0 2px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary focus box shadow of the ScrollView page button.</div></div>
@@ -26235,7 +26205,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-scrollview-navigation-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the ScrollView navigation arrows.</div></div>
@@ -27735,7 +27705,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-action-bar-font-family</td>
     <td>List</td>
     <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td><code>(Arial, Verdana, sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet action bar.</div></div>
@@ -27795,7 +27765,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-view-font-family</td>
     <td>List</td>
     <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td><code>(Arial, Verdana, sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet view.</div></div>
@@ -27905,7 +27875,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-active-cell-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-spreadsheet-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet active cell.</div></div>
@@ -27945,7 +27915,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-auto-fill-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-spreadsheet-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet auto fill.</div></div>
@@ -28124,8 +28094,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-menu-padding-left</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) )</code></td>
-    <td><code>calc(var(--kendo-icon-size, 1rem) + 2 * var(--kendo-padding-y, var(--kendo-spacing-1, 0.25rem)))</code></td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) + 2 * k-spacing(1) )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) + 2 * var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left padding of the Spreadsheet sheets menu.</div></div>
@@ -28325,7 +28295,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2000px rgba(0, 0, 0, .5)</code></td>
-    <td><code>inset 0 0 0 2000px rgba(0, 0, 0, 0.5)</code></td>
+    <td><code>(inset 0 0 0 2000px rgba(0, 0, 0, 0.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet image Dialog preview.</div></div>
@@ -29105,7 +29075,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-stepper-content-transition-timing-function</td>
     <td>List</td>
     <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
-    <td><code>cubic-bezier(0.4, 0, 0.2, 1) 0ms</code></td>
+    <td><code>(cubic-bezier(0.4, 0, 0.2, 1) 0ms)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the Stepper transition.</div></div>
@@ -29199,7 +29169,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-switch-focus-ring</td>
     <td>List</td>
     <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>1px solid var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the focused Switch.</div></div>
@@ -30017,7 +29987,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-table-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
@@ -30236,8 +30206,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-padding-x</td>
     <td>String</td>
-    <td><code>var( --kendo-padding-x, #{$kendo-padding-md-x} )</code></td>
-    <td><code>var(--kendo-padding-x, var(--kendo-spacing-2, 0.5rem))</code></td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TabStrip items.</div></div>
@@ -30437,7 +30407,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-tabstrip-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TabStrip items.</div></div>
@@ -31587,7 +31557,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-time-list-highlight-border-width</td>
     <td>List</td>
     <td><code>1px 0px</code></td>
-    <td><code>1px 0px</code></td>
+    <td><code>(1px 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border of the selected item in the time-selector.</div></div>
@@ -33201,7 +33171,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-treeview-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of focused TreeView items.</div></div>
@@ -33361,7 +33331,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-treeview-loadmore-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-treeview-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
@@ -33531,7 +33501,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-font-family</td>
     <td>List</td>
     <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
-    <td><code>"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td><code>("Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family across all components.</div></div>
@@ -33541,7 +33511,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-font-sizes</td>
     <td>Map</td>
     <td><code>$_default-font-sizes</code></td>
-    <td><ul><li>xxs: 0.5rem</li><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
+    <td><ul><li>xs: 0.625rem</li><li>sm: 0.75rem</li><li>md: 0.875rem</li><li>lg: 1rem</li><li>xl: 1.25rem</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes map</div></div>
@@ -33841,7 +33811,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-h1-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the highest level heading.</div></div>
@@ -33851,7 +33821,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-h2-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the second highest level heading.</div></div>
@@ -33861,7 +33831,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-h3-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the third highest level heading.</div></div>
@@ -33871,7 +33841,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-h4-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the fourth highest level heading.</div></div>
@@ -33881,7 +33851,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-h5-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the fifth highest level heading.</div></div>
@@ -33891,7 +33861,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-h6-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit )</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the sixth highest level heading.</div></div>
@@ -33950,7 +33920,7 @@ The following table lists the available variables for customizing the Fluent the
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><ul><li>h1: "font-size":"32px","font-family":"var(--kendo-font-family, inherit)","line-height":"40px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h2: "font-size":"28px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h3: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"32px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h4: "font-size":"20px","font-family":"var(--kendo-font-family, inherit)","line-height":"28px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h5: "font-size":"18px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li><li>h6: "font-size":"16px","font-family":"var(--kendo-font-family, inherit)","line-height":"22px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"0 0 var(--kendo-font-size, inherit)"</li></ul></td>
+    <td><ul><li>h1: "font-size":"32px","font-family":"var(--kendo-font-family, inherit)","line-height":"40px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h2: "font-size":"28px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h3: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"32px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h4: "font-size":"20px","font-family":"var(--kendo-font-family, inherit)","line-height":"28px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h5: "font-size":"18px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li><li>h6: "font-size":"16px","font-family":"var(--kendo-font-family, inherit)","line-height":"22px","font-weight":"var(--kendo-font-weight-semibold, normal)","letter-spacing":"var(--kendo-letter-spacing, normal)","margin":"(0 0 var(--kendo-font-size, inherit))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
@@ -33960,7 +33930,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-paragraph-margin</td>
     <td>List</td>
     <td><code>0 0 var( --kendo-font-size, inherit)</code></td>
-    <td><code>0 0 var(--kendo-font-size, inherit)</code></td>
+    <td><code>(0 0 var(--kendo-font-size, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the paragraph.</div></div>
@@ -34030,7 +34000,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-code-font-family</td>
     <td>List</td>
     <td><code>$kendo-font-family-monospace</code></td>
-    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td><code>(SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the code tag.</div></div>
@@ -34569,7 +34539,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-font-family-sans</td>
     <td>List</td>
     <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
-    <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
+    <td><code>(Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans font family across all components.</div></div>
@@ -34579,7 +34549,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-font-family-serif</td>
     <td>List</td>
     <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
-    <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
+    <td><code>("Times New Roman", Georgia, Garamond, Palatino, Baskerville)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The serif font family across all components.</div></div>
@@ -34589,7 +34559,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-font-family-sans-serif</td>
     <td>List</td>
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
-    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+    <td><code>(system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans-serif font family across all components.</div></div>
@@ -34599,7 +34569,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-font-family-monospace</td>
     <td>List</td>
     <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
-    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td><code>(SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The monospace font family across all components.</div></div>
@@ -34608,7 +34578,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-font-weights</td>
     <td>Map</td>
-    <td><code>k-map-merge( $_default-font-weights, $kendo-font-weights )</code></td>
+    <td><code>map.merge( $_default-font-weights, $kendo-font-weights )</code></td>
     <td><ul><li>thin: 100</li><li>extra-light: 200</li><li>light: 300</li><li>normal: 400</li><li>medium: 500</li><li>semibold: 600</li><li>bold: 700</li></ul></td>
 </tr>
 <tr>
@@ -34618,7 +34588,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
@@ -34628,8 +34598,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-font-families</td>
     <td>Map</td>
-    <td><code>k-map-merge( $_default-font-families, $kendo-font-families )</code></td>
-    <td><ul><li>sans: Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</li><li>serif: "Times New Roman", Georgia, Garamond, Palatino, Baskerville</li><li>sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</li><li>monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</li></ul></td>
+    <td><code>map.merge( $_default-font-families, $kendo-font-families )</code></td>
+    <td><ul><li>sans: (Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans)</li><li>serif: ("Times New Roman", Georgia, Garamond, Palatino, Baskerville)</li><li>sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</li><li>monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>
@@ -34939,7 +34909,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-upload-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px rgba(0, 0, 0, .13)</code></td>
-    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.13)</code></td>
+    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Upload button, actions and uploaded items.</div></div>
@@ -34969,7 +34939,7 @@ The following table lists the available variables for customizing the Fluent the
     <td>$kendo-window-border-width</td>
     <td>List</td>
     <td><code>k-spacing(1) 0 0</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem) 0 0</code></td>
+    <td><code>(var(--kendo-spacing-1, 0.25rem) 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Window.</div></div>

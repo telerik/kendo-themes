@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-highlight-border-width</td>
     <td>List</td>
     <td><code>1px 0px</code></td>
-    <td><code>1px 0px</code></td>
+    <td><code>(1px 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border of the selected item in the time-selector.</div></div>

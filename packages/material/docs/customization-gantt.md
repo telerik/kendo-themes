@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-line-fill</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-color-mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-primary-emphasis, #97a0d7)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), k-color-mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active, #f79bb3)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-primary-emphasis, #97a0d7)</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), k-color-mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active, #f79bb3)</code></td>
 </tr>
 <tr>
@@ -435,6 +435,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt task progress.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-actions-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Gantt task actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -510,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-moment-left-margin-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} )</code></td>
+    <td><code>calc( #{math.div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} )</code></td>
     <td><code>calc(1px - calc((4px + 6px) / 2))</code></td>
 </tr>
 <tr>
@@ -520,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-milestone-moment-margin-x</td>
     <td>Number</td>
-    <td><code>k-math-div( $kendo-gantt-planned-moment-width, 2 )</code></td>
+    <td><code>math.div( $kendo-gantt-planned-moment-width, 2 )</code></td>
     <td><code>3px</code></td>
 </tr>
 <tr>
@@ -745,6 +755,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-tooltip-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Gantt task Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-tooltip-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Gantt task Tooltip.</div></div>
     </td>
 </tr>
 </tbody>

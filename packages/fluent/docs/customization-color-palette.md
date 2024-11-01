@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td><code>inset 0 0 0 2px var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>(inset 0 0 0 2px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette hovered tile.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-palette-tile-selected-shadow</td>
     <td>List</td>
     <td><code>$kendo-color-palette-tile-hover-shadow</code></td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-border, #8a8886) 10%, transparent), inset 0 0 0 4px var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette selected tile.</div></div>
