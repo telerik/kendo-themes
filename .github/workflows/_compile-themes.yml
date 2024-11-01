@@ -41,6 +41,7 @@ jobs:
 
       - name: Build swatch for a11y tests
         run: |
+          npm run dist:all
           npm run dist:swatches
           npx sass-build build --file packages/default/dist/default-ocean-blue-a11y.scss --outFile packages/default/dist/default-ocean-blue-a11y.css
 
@@ -53,7 +54,6 @@ jobs:
             packages/classic/dist/all.css \
             packages/fluent/dist/all.css \
             packages/material/dist/all.css \
-            packages/nouvelle/dist/all.css \
             packages/utils/dist/all.css
 
       - name: Upload themes
