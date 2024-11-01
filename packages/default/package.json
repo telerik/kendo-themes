@@ -37,7 +37,7 @@
   },
   "scripts": {
     "build": "sass-build",
-    "watch": "node ../../scripts/watch-theme",
+    "watch": "npx sass --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
     "sass": "sass-build",
     "sass:standalone": "sass-build -c sass-standalone.config.js",
     "sass:swatches": "gulp dist:swatches && sass-build -c sass-swatches.config.js",

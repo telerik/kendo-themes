@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "sass-build",
-    "watch": "node ../../scripts/watch-theme",
+    "watch": "npx sass --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
     "sass": "sass-build",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
