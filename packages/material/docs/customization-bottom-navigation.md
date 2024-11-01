@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-border-width</td>
     <td>List</td>
     <td><code>1px 0px 0px 0px</code></td>
-    <td><code>1px 0px 0px 0px</code></td>
+    <td><code>(1px 0px 0px 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the BottomNavigation.</div></div>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-icon-size * 2.5} + calc( #{$kendo-padding-sm-x} * 2 ) - calc( #{$kendo-bottom-nav-padding-x} * 2 ) )</code></td>
+    <td><code>calc( #{$kendo-icon-size * 2.5} + calc( #{k-spacing(2)} * 2 ) - calc( #{$kendo-bottom-nav-padding-x} * 2 ) )</code></td>
     <td><code>calc(40px + var(--kendo-spacing-2, 0.5rem) * 2 - var(--kendo-spacing-0, 0px) * 2)</code></td>
 </tr>
 <tr>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-bottom-nav-item-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the BottomNavigation item.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-item-gap</td>
     <td>List</td>
     <td><code>0 k-spacing(1)</code></td>
-    <td><code>0 var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>(0 var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the BottomNavigation item.</div></div>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-shadow</td>
     <td>String</td>
-    <td><code>$box-shadow-depth-4</code></td>
+    <td><code>k-elevation(4)</code></td>
     <td><code>var(--kendo-elevation-4, 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>

@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 18, 14 )</code></td>
+    <td><code>math.div( 18, 14 )</code></td>
     <td><code>1.2857142857</code></td>
 </tr>
 <tr>
@@ -261,10 +261,10 @@ The following table lists the available variables for customization.
     <td>Map</td>
     <td><code>(
     "base": $kendo-chip-base-bg,
-    "error": k-map-get( $kendo-theme-colors, "error" ),
-    "info": k-map-get( $kendo-theme-colors, "info" ),
-    "warning": k-map-get( $kendo-theme-colors, "warning" ),
-    "success": k-map-get( $kendo-theme-colors, "success" )
+    "error": map.get( $kendo-theme-colors, "error" ),
+    "info": map.get( $kendo-theme-colors, "info" ),
+    "warning": map.get( $kendo-theme-colors, "warning" ),
+    "success": map.get( $kendo-theme-colors, "success" )
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base-subtle, #ebebeb)</li><li>error: var(--kendo-color-error, #f31700)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>success: var(--kendo-color-success, #37b400)</li></ul></td>
 </tr>
@@ -304,9 +304,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-solid-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
@@ -314,9 +314,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-solid-gradient</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-button-gradient</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of the solid Chip.</div></div>
@@ -414,9 +414,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chip-outline-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>

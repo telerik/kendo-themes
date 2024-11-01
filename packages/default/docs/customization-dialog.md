@@ -101,9 +101,9 @@ The following table lists the available variables for customization.
     <td>$kendo-dialog-theme-colors</td>
     <td>Map</td>
     <td><code>(
-    "primary": k-map-get($kendo-theme-colors, "primary"),
-    "light": k-map-get($kendo-theme-colors, "light"),
-    "dark": k-map-get($kendo-theme-colors, "dark")
+    "primary": map.get($kendo-theme-colors, "primary"),
+    "light": map.get($kendo-theme-colors, "light"),
+    "dark": map.get($kendo-theme-colors, "dark")
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #ff6358)</li><li>light: var(--kendo-color-light, #ebebeb)</li><li>dark: var(--kendo-color-dark, #3d3d3d)</li></ul></td>
 </tr>

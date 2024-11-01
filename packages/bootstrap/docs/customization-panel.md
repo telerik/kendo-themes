@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panel-bg</td>
     <td>String</td>
     <td><code>var(--kendo-component-bg, #{$kendo-component-bg})</code></td>
-    <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-component-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Panel.</div></div>

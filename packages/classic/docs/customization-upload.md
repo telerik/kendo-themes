@@ -321,10 +321,30 @@ The following table lists the available variables for customization.
     <td>$kendo-upload-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px rgba( black, .13 )</code></td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, 0.13)</code></td>
+    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Upload button, actions and uploaded items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-upload-files-list-margin</td>
+    <td>Calculation</td>
+    <td><code>calc( -1 * #{k-spacing(1)} )</code></td>
+    <td><code>calc(-1 * var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload files list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-upload-file-info-margin</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Upload file info.</div></div>
     </td>
 </tr>
 </tbody>

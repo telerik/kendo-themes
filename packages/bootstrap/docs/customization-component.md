@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-component-bg</td>
     <td>String</td>
     <td><code>$kendo-body-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.</div></div>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-component-border</td>
     <td>String</td>
-    <td><code>if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 )</code></td>
+    <td><code>$kendo-app-border</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>

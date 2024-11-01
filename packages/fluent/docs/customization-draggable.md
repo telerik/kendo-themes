@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-lg-x</code></td>
+    <td><code>k-spacing(3)</code></td>
     <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-lg-y</code></td>
+    <td><code>k-spacing(1.5)</code></td>
     <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>

@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px rgba(0, 0, 0, .06)</code></td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, 0.06)</code></td>
+    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.06))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused CheckBox.</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-focus-checked-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 30%, transparent), rgba( $kendo-color-primary, .3 ))</code></td>
-    <td><code>0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #ff6358) 30%, transparent)</code></td>
+    <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-primary, #ff6358) 30%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked CheckBox.</div></div>
@@ -391,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-glyph-font-family</td>
     <td>List</td>
     <td><code>"WebComponentsIcons", monospace</code></td>
-    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>("WebComponentsIcons", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the CheckBox indicator glyph.</div></div>

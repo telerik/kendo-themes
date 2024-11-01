@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-animation-timing</td>
     <td>List</td>
     <td><code>1s linear infinite</code></td>
-    <td><code>1s linear infinite</code></td>
+    <td><code>(1s linear infinite)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The animation timing of the ProgressBar.</div></div>
@@ -321,7 +321,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-indeterminate-animation-horizontal</td>
     <td>List</td>
     <td><code>3s ease 0s infinite running progressbar-indeterminate-animation-horizontal</code></td>
-    <td><code>3s ease 0s infinite running progressbar-indeterminate-animation-horizontal</code></td>
+    <td><code>(3s ease 0s infinite running progressbar-indeterminate-animation-horizontal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient size of the horizontal indeterminate ProgressBar.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-progressbar-indeterminate-animation-vertical</td>
     <td>List</td>
     <td><code>3s ease 0s infinite running progressbar-indeterminate-animation-vertical</code></td>
-    <td><code>3s ease 0s infinite running progressbar-indeterminate-animation-vertical</code></td>
+    <td><code>(3s ease 0s infinite running progressbar-indeterminate-animation-vertical)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient size of the vertical indeterminate ProgressBar.</div></div>

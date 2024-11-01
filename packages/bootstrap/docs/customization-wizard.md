@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-wizard-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-x} * 1.25 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 1.25 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.25)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-wizard-content-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-x} * 2 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 2)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-wizard-content-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-y} * 4 )</code></td>
+    <td><code>calc( #{k-spacing(2)} * 4 )</code></td>
     <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 4)</code></td>
 </tr>
 <tr>

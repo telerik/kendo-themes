@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td><code>0 0 0 1px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
+    <td><code>(0 0 0 1px color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused breadcrumb</div></div>
@@ -421,7 +421,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var(neutral-130)</code></td>
+    <td><code>(inset 0 0 0 1px get-theme-color-var(neutral-130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused breadcrumb link</div></div>
@@ -621,7 +621,7 @@ The following table lists the available variables for customization.
     <td>$kendo-breadcrumb-root-link-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-breadcrumb-link-focus-shadow</code></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var(neutral-130)</code></td>
+    <td><code>(inset 0 0 0 1px get-theme-color-var(neutral-130))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused breadcrumb root link</div></div>

@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-shadow</td>
     <td>String</td>
-    <td><code>$box-shadow-depth-4</code></td>
+    <td><code>k-elevation(4)</code></td>
     <td><code>var(--kendo-elevation-4, 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
@@ -249,9 +249,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-outline-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Toolbar.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-toolbar-outline-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the outline Toolbar.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-flat-shadow</td>
     <td>List</td>
     <td><code>0 2px 0 -1px $kendo-component-border</code></td>
-    <td><code>0 2px 0 -1px var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>(0 2px 0 -1px var(--kendo-color-border, rgba(0, 0, 0, 0.12)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the flat Toolbar.</div></div>
@@ -371,10 +371,50 @@ The following table lists the available variables for customization.
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
     <td><code>0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12)</code></td>
-    <td><code>0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px rgba(0, 0, 0, 0.14), 0 1px 10px rgba(0, 0, 0, 0.12)</code></td>
+    <td><code>(0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px rgba(0, 0, 0, 0.14), 0 1px 10px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-overflow-container-font-size</td>
+    <td>String</td>
+    <td><code>$kendo-menu-popup-md-font-size</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Toolbar overflow container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-overflow-container-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-menu-popup-md-line-height</code></td>
+    <td><code>1.25</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the Toolbar overflow container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-overflow-button-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-menu-popup-md-item-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Toolbar overflow button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-overflow-button-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-menu-popup-md-item-padding-x</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Toolbar overflow button.</div></div>
     </td>
 </tr>
 <tr>

@@ -401,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-orgchart-card-body-border-width</td>
     <td>List</td>
     <td><code>2px 0 0</code></td>
-    <td><code>2px 0 0</code></td>
+    <td><code>(2px 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart Card body.</div></div>
@@ -419,9 +419,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-orgchart-card-body-vbox-margin-right</td>
-    <td>String</td>
-    <td><code>k-math-div( $kendo-orgchart-spacer, 2 )</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)/2</code></td>
+    <td>List</td>
+    <td><code>list.slash( $kendo-orgchart-spacer, 2 )</code></td>
+    <td><code>(var(--kendo-spacing-6, 1.5rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The right margin of the OrgChart Card body title wrap.</div></div>

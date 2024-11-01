@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-canvas-draghandle-margin-y</td>
     <td>Number</td>
-    <td><code>- k-math-div( $kendo-color-gradient-draghandle-height, 2 )</code></td>
+    <td><code>- math.div( $kendo-color-gradient-draghandle-height, 2 )</code></td>
     <td><code>-7px</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-canvas-draghandle-margin-x</td>
     <td>Number</td>
-    <td><code>- k-math-div( $kendo-color-gradient-draghandle-width, 2 )</code></td>
+    <td><code>- math.div( $kendo-color-gradient-draghandle-width, 2 )</code></td>
     <td><code>-7px</code></td>
 </tr>
 <tr>

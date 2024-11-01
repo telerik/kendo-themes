@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>

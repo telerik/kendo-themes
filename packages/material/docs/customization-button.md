@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-sm-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-md-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-lg-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -269,7 +269,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-theme-colors</td>
     <td>Map</td>
-    <td><code>k-map-merge(
+    <td><code>map.merge(
     $kendo-theme-colors,
     ( "base": $kendo-base-bg )
 )</code></td>
@@ -311,9 +311,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the Button.</div></div>
@@ -322,7 +322,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-shadow</td>
     <td>String</td>
-    <td><code>$box-shadow-depth-2</code></td>
+    <td><code>k-elevation(2)</code></td>
     <td><code>var(--kendo-elevation-2, 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 3px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
@@ -371,9 +371,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-hover-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-button-shadow</code></td>
+    <td><code>var(--kendo-elevation-2, 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 3px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the hovered Button.</div></div>
@@ -382,7 +382,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-active-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), null)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), $kendo-base-bg)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -391,9 +391,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-active-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( on-base ), $kendo-base-text)</code></td>
+    <td><code>var(--kendo-color-on-base, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the active Button.</div></div>
@@ -422,7 +422,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-active-shadow</td>
     <td>String</td>
-    <td><code>$box-shadow-depth-6</code></td>
+    <td><code>k-elevation(6)</code></td>
     <td><code>var(--kendo-elevation-6, 0px 5px 5px 0px rgba(0, 0, 0, 0.2), 0px 3px 14px 0px rgba(0, 0, 0, 0.12), 0px 8px 10px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
@@ -441,9 +441,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-selected-text</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-button-active-text</code></td>
-    <td><code>null</code></td>
+    <td><code>var(--kendo-color-on-base, #212121)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected Button.</div></div>
@@ -461,9 +461,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-selected-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the selected Button.</div></div>
@@ -471,9 +471,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-selected-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-button-shadow</code></td>
+    <td><code>var(--kendo-elevation-2, 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 3px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the selected Button.</div></div>
@@ -522,7 +522,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td>String</td>
-    <td><code>$box-shadow-depth-3</code></td>
+    <td><code>k-elevation(3)</code></td>
     <td><code>var(--kendo-elevation-3, 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
@@ -571,9 +571,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-disabled-shadow</td>
-    <td>String</td>
-    <td><code>none</code></td>
-    <td><code>none</code></td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the disabled Button.</div></div>
@@ -621,9 +621,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-flat-button-focus-ring-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the flat Button focus ring. Used to create a border for the flat Button.</div></div>
@@ -633,7 +633,7 @@ The following table lists the available variables for customization.
     <td>$kendo-button-transition</td>
     <td>List</td>
     <td><code>box-shadow 280ms cubic-bezier( .4, 0, .2, 1 )</code></td>
-    <td><code>box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)</code></td>
+    <td><code>(box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box-shadow transition of the Button.</div></div>

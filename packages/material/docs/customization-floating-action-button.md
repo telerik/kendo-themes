@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -343,7 +343,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-shadow</td>
     <td>String</td>
-    <td><code>$box-shadow-depth-5</code></td>
+    <td><code>k-elevation(5)</code></td>
     <td><code>var(--kendo-elevation-5, 0px 3px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
@@ -353,7 +353,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-disabled-shadow</td>
     <td>String</td>
-    <td><code>$box-shadow-depth-5</code></td>
+    <td><code>k-elevation(5)</code></td>
     <td><code>var(--kendo-elevation-5, 0px 3px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
@@ -363,7 +363,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-active-shadow</td>
     <td>String</td>
-    <td><code>$box-shadow-depth-7</code></td>
+    <td><code>k-elevation(7)</code></td>
     <td><code>var(--kendo-elevation-7, 0px 7px 8px 0px rgba(0, 0, 0, 0.2), 0px 5px 22px 0px rgba(0, 0, 0, 0.12), 0px 12px 17px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>

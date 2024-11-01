@@ -28,86 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-padding-x</td>
-    <td></td>
-    <td><code>k-spacing(2)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-y</td>
-    <td></td>
-    <td><code>k-spacing(1)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-sm-x</td>
-    <td></td>
-    <td><code>k-spacing(1)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small horizontal padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-sm-y</td>
-    <td></td>
-    <td><code>k-spacing(0.5)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small vertical padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-md-x</td>
-    <td></td>
-    <td><code>k-spacing(2)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium horizontal padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-md-y</td>
-    <td></td>
-    <td><code>k-spacing(1)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium vertical padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-lg-x</td>
-    <td></td>
-    <td><code>k-spacing(3)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large horizontal padding.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-padding-lg-y</td>
-    <td></td>
-    <td><code>k-spacing(1.5)</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large vertical padding.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-adaptive-actionsheet-font-size</td>
     <td>Number</td>
     <td><code>$kendo-font-size-lg</code></td>
@@ -121,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-card-brand-colors</td>
     <td>List</td>
     <td><code>( primary, error, warning, success, info )</code></td>
-    <td><code>primary, error, warning, success, info</code></td>
+    <td><code>(primary, error, warning, success, info)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme variations for the card.</div></div>
@@ -304,56 +224,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-bg</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>var(--kendo-color-base-subtle, #edebe9)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-text</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-border</td>
-    <td>Color</td>
-    <td><code>null</code></td>
-    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-opacity</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-filter</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
     </td>
 </tr>
 </tbody>

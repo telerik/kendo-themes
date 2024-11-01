@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-action-bar-font-family</td>
     <td>List</td>
     <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td><code>(Arial, Verdana, sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet action bar.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-view-font-family</td>
     <td>List</td>
     <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td><code>(Arial, Verdana, sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet view.</div></div>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-active-cell-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-spreadsheet-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet active cell.</div></div>
@@ -481,7 +481,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-auto-fill-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-spreadsheet-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-subtle-active, #abd1ef))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet auto fill.</div></div>
@@ -660,8 +660,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-filter-menu-padding-left</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) )</code></td>
-    <td><code>calc(var(--kendo-icon-size, 1rem) + 2 * var(--kendo-padding-y, var(--kendo-spacing-1, 0.25rem)))</code></td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) + 2 * k-spacing(1) )</code></td>
+    <td><code>calc(var(--kendo-icon-size, 1rem) + 2 * var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The left padding of the Spreadsheet sheets menu.</div></div>
@@ -861,7 +861,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2000px rgba(0, 0, 0, .5)</code></td>
-    <td><code>inset 0 0 0 2000px rgba(0, 0, 0, 0.5)</code></td>
+    <td><code>(inset 0 0 0 2000px rgba(0, 0, 0, 0.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet image Dialog preview.</div></div>

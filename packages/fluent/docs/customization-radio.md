@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-focus-outline</td>
     <td>List</td>
     <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>1px solid var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(1px solid var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of the focused RadioButton.</div></div>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-glyph-font-family</td>
     <td>List</td>
     <td><code>"WebComponentsIcons", monospace</code></td>
-    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>("WebComponentsIcons", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph font family of the RadioButton indicator.</div></div>
@@ -369,7 +369,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-checked-image</td>
     <td>String</td>
-    <td><code>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )</code></td>
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='var%28--kendo-color-primary, %230078d4%29'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>

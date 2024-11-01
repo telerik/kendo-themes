@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-action-bar-font-family</td>
     <td>List</td>
     <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td><code>(Arial, Verdana, sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet action bar.</div></div>
@@ -278,10 +278,20 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-spreadsheet-formula-bar-icon-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Spreadsheet formula bar icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-spreadsheet-view-font-family</td>
     <td>List</td>
     <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td><code>(Arial, Verdana, sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet view.</div></div>
@@ -331,7 +341,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-selection-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary, #f35800)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #f35800))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet selection.</div></div>
@@ -391,7 +401,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-active-cell-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary, #f35800)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #f35800))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet active cell.</div></div>
@@ -431,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-auto-fill-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary, #f35800)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #f35800))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet auto fill.</div></div>
@@ -671,7 +681,7 @@ The following table lists the available variables for customization.
     <td>$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2000px rgba( black, .5 )</code></td>
-    <td><code>inset 0 0 0 2000px rgba(0, 0, 0, 0.5)</code></td>
+    <td><code>(inset 0 0 0 2000px rgba(0, 0, 0, 0.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet image Dialog preview.</div></div>
@@ -815,6 +825,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the Spreadsheet DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-filter-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Spreadsheet filter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-filter-menu-link-padding-x</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-icon-size} + calc( 2 * #{k-spacing(1)} ) )</code></td>
+    <td><code>calc(16px + 2 * var(--kendo-spacing-1, 0.25rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet filter menu link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-filter-menu-icon-margin</td>
+    <td>List</td>
+    <td><code>0 k-spacing(1) 0 calc(-1 * ( #{$kendo-icon-size} + #{k-spacing(1)} ) )</code></td>
+    <td><code>(0 var(--kendo-spacing-1, 0.25rem) 0 calc(-1 * (16px + var(--kendo-spacing-1, 0.25rem))))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Spreadsheet filter menu icon.</div></div>
     </td>
 </tr>
 </tbody>

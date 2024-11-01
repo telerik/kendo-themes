@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-series-a</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-a ), $blue)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-a ), $kendo-color-primary)</code></td>
     <td><code>var(--kendo-color-series-a, #0c64e4)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-b ), $purple)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-b ), $kendo-color-tertiary)</code></td>
     <td><code>var(--kendo-color-series-b, #6f42c1)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-c ), $teal)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-c ), #20c997)</code></td>
     <td><code>var(--kendo-color-series-c, #20c997)</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-d ), $green)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-d ), $kendo-color-success)</code></td>
     <td><code>var(--kendo-color-series-d, #198754)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-e ), $yellow)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-e ), $kendo-color-warning)</code></td>
     <td><code>var(--kendo-color-series-e, #dc3545)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-f ), $red)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-f ), $kendo-color-error)</code></td>
     <td><code>var(--kendo-color-series-f, #ffc107)</code></td>
 </tr>
 <tr>

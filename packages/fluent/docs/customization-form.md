@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-form-spacer</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-x} * 2 )</code></td>
+    <td><code>calc( #{k-spacing(2)} * 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
 </tr>
 <tr>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-fieldset-margin</td>
     <td>List</td>
     <td><code>2em 0 0</code></td>
-    <td><code>2em 0 0</code></td>
+    <td><code>(2em 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form fieldset.</div></div>
@@ -111,7 +111,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-legend-margin</td>
     <td>List</td>
     <td><code>0 0 k-spacing(3)</code></td>
-    <td><code>0 0 var(--kendo-spacing-3, 0.75rem)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-3, 0.75rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form legend.</div></div>
@@ -131,7 +131,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-legend-border-width</td>
     <td>List</td>
     <td><code>0 0 k-spacing(0.5)</code></td>
-    <td><code>0 0 var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-0\.5, 0.125rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Form legend.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-separator-margin</td>
     <td>List</td>
     <td><code>k-spacing(3) 0 0</code></td>
-    <td><code>var(--kendo-spacing-3, 0.75rem) 0 0</code></td>
+    <td><code>(var(--kendo-spacing-3, 0.75rem) 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form separator.</div></div>

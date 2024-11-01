@@ -438,6 +438,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-gantt-task-actions-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Gantt task actions.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-gantt-planned-margin-y</td>
     <td>Number</td>
     <td><code>.35em</code></td>
@@ -510,7 +520,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-moment-left-margin-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} )</code></td>
+    <td><code>calc( #{math.div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} )</code></td>
     <td><code>calc(1px - calc((4px + 6px) / 2))</code></td>
 </tr>
 <tr>
@@ -520,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-milestone-moment-margin-x</td>
     <td>Number</td>
-    <td><code>k-math-div( $kendo-gantt-planned-moment-width, 2 )</code></td>
+    <td><code>math.div( $kendo-gantt-planned-moment-width, 2 )</code></td>
     <td><code>3px</code></td>
 </tr>
 <tr>
@@ -745,6 +755,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-tooltip-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Gantt task Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-tooltip-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Gantt task Tooltip.</div></div>
     </td>
 </tr>
 </tbody>

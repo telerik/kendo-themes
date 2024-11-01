@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-list-group-item-border-width</td>
     <td>List</td>
     <td><code>1px 0 0</code></td>
-    <td><code>1px 0 0</code></td>
+    <td><code>(1px 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List group items.</div></div>
@@ -459,7 +459,7 @@ The following table lists the available variables for customization.
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>

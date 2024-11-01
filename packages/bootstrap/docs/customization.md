@@ -34,8 +34,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-base-bg</td>
     <td>String</td>
-    <td><code>$gray-100</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color(light), $kendo-color-light)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -54,7 +54,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-base-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-base-bg, 1 )</code></td>
+    <td><code>if($kendo-enable-color-system, $kendo-app-border, k-try-shade( $kendo-base-bg, 1 ))</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-base-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>if($kendo-enable-color-system, null, none)</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-hover-bg</td>
     <td>String</td>
-    <td><code>$gray-200</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover), #e9ecef)</code></td>
     <td><code>var(--kendo-color-base-subtle-hover, #dee2e6)</code></td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-hover-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-hover-bg, 1 )</code></td>
+    <td><code>if($kendo-enable-color-system, $kendo-base-border, k-try-shade( $kendo-hover-bg, 1 ))</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-hover-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>if($kendo-enable-color-system, null, none)</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-selected-text</td>
     <td>String</td>
-    <td><code>k-contrast-color( $kendo-selected-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color(on-primary), $kendo-color-primary-contrast)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -134,7 +134,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-selected-border</td>
     <td>String</td>
-    <td><code>k-try-shade( $kendo-selected-bg, 1 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color(primary), k-try-shade( $kendo-selected-bg, 1 ))</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-selected-gradient</td>
     <td>Null</td>
-    <td><code>null</code></td>
+    <td><code>if($kendo-enable-color-system, null, none)</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -184,60 +184,10 @@ The following table lists the available variables for customizing the Bootstrap 
         letter-spacing: $kendo-display4-letter-spacing
     )
 )</code></td>
-    <td><ul><li>1: "font-size":"5rem","font-family":null,"line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>2: "font-size":"4.5rem","font-family":null,"line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>3: "font-size":"4rem","font-family":null,"line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>4: "font-size":"3.5rem","font-family":null,"line-height":1.2,"font-weight":300,"letter-spacing":null</li></ul></td>
+    <td><ul><li>1: "font-size":"calc(1rem * 5)","font-family":"unset","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>2: "font-size":"calc(1rem * 4.5)","font-family":"unset","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>3: "font-size":"calc(1rem * 4)","font-family":"unset","line-height":1.2,"font-weight":300,"letter-spacing":null</li><li>4: "font-size":"calc(1rem * 3.5)","font-family":"unset","line-height":1.2,"font-weight":300,"letter-spacing":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-opacity</td>
-    <td>Number</td>
-    <td><code>null</code></td>
-    <td><code>0.65</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-filter</td>
-    <td>String</td>
-    <td><code>null</code></td>
-    <td><code>grayscale(0.1)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The filter of disabled items.</div></div>
     </td>
 </tr>
 </tbody>
@@ -261,30 +211,20 @@ The following table lists the available variables for customizing the Bootstrap 
     </tr>
 </thead>
 <tbody><tr>
-    <td>$wcag-min-contrast-ratio</td>
-    <td>Number</td>
-    <td><code>7</code></td>
-    <td><code>4.5</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The contrast ratio to reach against white, to determine if color changes from "light" to "dark".<br />Acceptable values for WCAG 2.0 are 3, 4.5 and 7.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$wcag-dark</td>
-    <td>Color</td>
+    <td></td>
     <td><code>black</code></td>
-    <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
+    <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default dark color for WCAG 2.0.</div></div>
+    <td colspan="4" class="theme-variables-description-container">
     </td>
 </tr>
 <tr>
     <td>$wcag-light</td>
-    <td>Color</td>
+    <td></td>
     <td><code>white</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default light color for WCAG 2.0.</div></div>
@@ -586,9 +526,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-badge-border-radius</td>
-    <td>Number</td>
-    <td><code>$badge-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Badge.</div></div>
@@ -597,7 +537,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-padding-x</td>
     <td>Number</td>
-    <td><code>$badge-padding-x</code></td>
+    <td><code>.65em</code></td>
     <td><code>0.65em</code></td>
 </tr>
 <tr>
@@ -607,7 +547,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td>Number</td>
-    <td><code>k-math-div( $badge-padding-x, 2 )</code></td>
+    <td><code>calc( $kendo-badge-padding-x / 2 )</code></td>
     <td><code>0.325em</code></td>
 </tr>
 <tr>
@@ -617,7 +557,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-md-padding-x</td>
     <td>Number</td>
-    <td><code>$badge-padding-x</code></td>
+    <td><code>.65em</code></td>
     <td><code>0.65em</code></td>
 </tr>
 <tr>
@@ -627,7 +567,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-lg-padding-x</td>
     <td>Number</td>
-    <td><code>( $badge-padding-x * 1.5 )</code></td>
+    <td><code>calc( $kendo-badge-padding-x * 1.5 )</code></td>
     <td><code>0.975em</code></td>
 </tr>
 <tr>
@@ -637,7 +577,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-padding-y</td>
     <td>Number</td>
-    <td><code>$badge-padding-y</code></td>
+    <td><code>.35em</code></td>
     <td><code>0.35em</code></td>
 </tr>
 <tr>
@@ -647,7 +587,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-sm-padding-y</td>
     <td>Number</td>
-    <td><code>k-math-div( $badge-padding-y, 2 )</code></td>
+    <td><code>calc( $kendo-badge-padding-y / 2 )</code></td>
     <td><code>0.175em</code></td>
 </tr>
 <tr>
@@ -657,7 +597,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-md-padding-y</td>
     <td>Number</td>
-    <td><code>$badge-padding-y</code></td>
+    <td><code>.35em</code></td>
     <td><code>0.35em</code></td>
 </tr>
 <tr>
@@ -667,7 +607,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-lg-padding-y</td>
     <td>Number</td>
-    <td><code>( $badge-padding-y * 1.5 )</code></td>
+    <td><code>calc( $kendo-badge-padding-y * 1.5 )</code></td>
     <td><code>0.525em</code></td>
 </tr>
 <tr>
@@ -677,8 +617,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-font-size</td>
     <td>Number</td>
-    <td><code>$badge-font-size</code></td>
-    <td><code>0.75em</code></td>
+    <td><code>$kendo-font-size * .75</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes of the Badge.</div></div>
@@ -687,8 +627,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-sm-font-size</td>
     <td>Number</td>
-    <td><code>$badge-font-size</code></td>
-    <td><code>0.75em</code></td>
+    <td><code>$kendo-badge-font-size</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Badge.</div></div>
@@ -697,8 +637,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-md-font-size</td>
     <td>Number</td>
-    <td><code>$badge-font-size</code></td>
-    <td><code>0.75em</code></td>
+    <td><code>$kendo-badge-font-size</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Badge.</div></div>
@@ -707,8 +647,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-badge-lg-font-size</td>
     <td>Number</td>
-    <td><code>$badge-font-size</code></td>
-    <td><code>0.75em</code></td>
+    <td><code>$kendo-badge-font-size</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Badge.</div></div>
@@ -820,7 +760,7 @@ The following table lists the available variables for customizing the Bootstrap 
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"0.325em","padding-y":"0.175em","font-size":"0.75em","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.65em","padding-y":"0.35em","font-size":"0.75em","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.975em","padding-y":"0.525em","font-size":"0.75em","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"0.325em","padding-y":"0.175em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.175em * 2 + 1px * 2)"</li><li>md: "padding-x":"0.65em","padding-y":"0.35em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.35em * 2 + 1px * 2)"</li><li>lg: "padding-x":"0.975em","padding-y":"0.525em","font-size":"0.75rem","line-height":1,"min-width":"calc(1em + 0.525em * 2 + 1px * 2)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
@@ -848,9 +788,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody><tr>
     <td>$kendo-border-radius</td>
-    <td>Number</td>
-    <td><code>$border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td></td>
+    <td><code>map.get($kendo-spacing, 1.5)</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global border radius used across the Components.</div></div>
@@ -859,7 +799,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radius-none</td>
     <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 0)</code></td>
+    <td><code>map.get($kendo-spacing, 0)</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -869,8 +809,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radius-xs</td>
     <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 0.5)</code></td>
-    <td><code>0.125rem</code></td>
+    <td><code>map.get($kendo-spacing, 0.5)</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small border radius used across the Components.</div></div>
@@ -879,8 +819,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radius-sm</td>
     <td>Number</td>
-    <td><code>$border-radius-sm</code></td>
-    <td><code>0.25rem</code></td>
+    <td><code>map.get($kendo-spacing, 1)</code></td>
+    <td><code>0.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small border radius used across the Components.</div></div>
@@ -890,7 +830,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-border-radius-md</td>
     <td>Number</td>
     <td><code>$kendo-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium border radius used across the Components.</div></div>
@@ -899,8 +839,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radius-lg</td>
     <td>Number</td>
-    <td><code>$border-radius-lg</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>map.get($kendo-spacing, 2)</code></td>
+    <td><code>0.375rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large border radius used across the Components.</div></div>
@@ -909,8 +849,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radius-xl</td>
     <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 3)</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>map.get($kendo-spacing, 3)</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large border radius used across the Components.</div></div>
@@ -919,8 +859,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radius-xxl</td>
     <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 4)</code></td>
-    <td><code>1rem</code></td>
+    <td><code>map.get($kendo-spacing, 4)</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third largest border radius used across the Components.</div></div>
@@ -929,8 +869,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radius-xxxl</td>
     <td>Number</td>
-    <td><code>k-map-get($kendo-spacing, 8)</code></td>
-    <td><code>2rem</code></td>
+    <td><code>map.get($kendo-spacing, 8)</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second largest border radius used across the Components.</div></div>
@@ -940,7 +880,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-border-radius-full</td>
     <td>Number</td>
     <td><code>50rem</code></td>
-    <td><code>50rem</code></td>
+    <td><code>9999px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The largest border radius used across the Components.</div></div>
@@ -949,17 +889,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-border-radii</td>
     <td>Map</td>
-    <td><code>(
-    none: $kendo-border-radius-none,
-    xs: $kendo-border-radius-xs,
-    sm: $kendo-border-radius-sm,
-    md: $kendo-border-radius-md,
-    lg: $kendo-border-radius-lg,
-    xl: $kendo-border-radius-xl,
-    xxl: $kendo-border-radius-xxl,
-    xxxl: $kendo-border-radius-xxxl,
-    full: $kendo-border-radius-full
-)</code></td>
+    <td><code>$_default-border-radii</code></td>
     <td><ul><li>none: 0px</li><li>xs: 0.125rem</li><li>sm: 0.25rem</li><li>md: 0.375rem</li><li>lg: 0.5rem</li><li>xl: 0.75rem</li><li>xxl: 1rem</li><li>xxxl: 2rem</li><li>full: 50rem</li></ul></td>
 </tr>
 <tr>
@@ -1020,7 +950,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-bottom-nav-border-width</td>
     <td>List</td>
     <td><code>1px 0px 0px 0px</code></td>
-    <td><code>1px 0px 0px 0px</code></td>
+    <td><code>(1px 0px 0px 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the BottomNavigation.</div></div>
@@ -1110,7 +1040,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size * 2.5} + #{k-spacing(4)} - calc( #{$kendo-bottom-nav-padding-x} * 2 ) )</code></td>
-    <td><code>calc(40px + var(--kendo-spacing-4, 1rem) - var(--kendo-spacing-0, 0px) * 2)</code></td>
+    <td><code>calc(2.5rem + var(--kendo-spacing-4, 1rem) - var(--kendo-spacing-0, 0px) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>
@@ -1118,9 +1048,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-bottom-nav-item-border-radius</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the BottomNavigation item.</div></div>
@@ -1130,7 +1060,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-bottom-nav-item-gap</td>
     <td>List</td>
     <td><code>0 k-spacing(1)</code></td>
-    <td><code>0 var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>(0 var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the BottomNavigation item.</div></div>
@@ -1160,7 +1090,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-bottom-nav-flat-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat BottomNavigation.</div></div>
@@ -1309,7 +1239,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-breadcrumb-sm-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -1340,7 +1270,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-breadcrumb-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Breadcrumb.</div></div>
@@ -1370,7 +1300,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 2px 1px rgba( black, .06 )</code></td>
-    <td><code>0 0 2px 1px rgba(0, 0, 0, 0.06)</code></td>
+    <td><code>(0 0 2px 1px rgba(0, 0, 0, 0.06))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb.</div></div>
@@ -1598,9 +1528,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-hover-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Breadcrumb link.</div></div>
@@ -1638,9 +1568,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-focus-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-breadcrumb-link-text</code></td>
+    <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Breadcrumb link.</div></div>
@@ -1660,7 +1590,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 25%, transparent), rgba( $kendo-breadcrumb-text, .25 ))</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb link.</div></div>
@@ -1698,9 +1628,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-breadcrumb-root-link-hover-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Breadcrumb root link.</div></div>
@@ -1760,7 +1690,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-breadcrumb-root-link-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-breadcrumb-link-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Breadcrumb root link.</div></div>
@@ -1854,7 +1784,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-button-border-width</td>
     <td>Number</td>
-    <td><code>$btn-border-width</code></td>
+    <td><code>1px</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -1873,9 +1803,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-padding-x</td>
-    <td>Number</td>
-    <td><code>$btn-padding-x</code></td>
-    <td><code>0.75rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Button.</div></div>
@@ -1883,9 +1813,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-sm-padding-x</td>
-    <td>Number</td>
-    <td><code>$btn-padding-x-sm</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Button.</div></div>
@@ -1893,9 +1823,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-md-padding-x</td>
-    <td>Number</td>
-    <td><code>$btn-padding-x</code></td>
-    <td><code>0.75rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Button.</div></div>
@@ -1903,9 +1833,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-lg-padding-x</td>
-    <td>Number</td>
-    <td><code>$btn-padding-x-lg</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Button.</div></div>
@@ -1913,9 +1843,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-padding-y</td>
-    <td>Number</td>
-    <td><code>$btn-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Button.</div></div>
@@ -1923,9 +1853,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-sm-padding-y</td>
-    <td>Number</td>
-    <td><code>$btn-padding-y-sm</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Button.</div></div>
@@ -1933,9 +1863,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-md-padding-y</td>
-    <td>Number</td>
-    <td><code>$btn-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Button.</div></div>
@@ -1943,9 +1873,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-lg-padding-y</td>
-    <td>Number</td>
-    <td><code>$btn-padding-y-lg</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Button.</div></div>
@@ -1964,7 +1894,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-font-size</td>
     <td>Number</td>
-    <td><code>$btn-font-size</code></td>
+    <td><code>$kendo-font-size</code></td>
     <td><code>1rem</code></td>
 </tr>
 <tr>
@@ -2004,7 +1934,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-line-height</td>
     <td>Number</td>
-    <td><code>$btn-line-height</code></td>
+    <td><code>$kendo-line-height</code></td>
     <td><code>1.5</code></td>
 </tr>
 <tr>
@@ -2014,7 +1944,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-sm-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -2045,7 +1975,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-button-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( calc( #{$kendo-button-line-height} * 1em ) + calc( #{$kendo-button-padding-y} * 2 ) + #{$kendo-button-border-width * 2} )</code></td>
-    <td><code>calc(1.5 * 1em + 0.375rem * 2 + 2px)</code></td>
+    <td><code>calc(1.5 * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
@@ -2055,7 +1985,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( calc( #{$kendo-button-line-height} * 1em ) + calc( #{$kendo-button-padding-y} * 2 ) )</code></td>
-    <td><code>calc(1.5 * 1em + 0.375rem * 2)</code></td>
+    <td><code>calc(1.5 * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
@@ -2084,7 +2014,7 @@ The following table lists the available variables for customizing the Bootstrap 
         line-height: $kendo-button-lg-line-height
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"0.5rem","padding-y":"0.25rem","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286</li><li>md: "padding-x":"0.75rem","padding-y":"0.375rem","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"1rem","padding-y":"0.5rem","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286</li><li>md: "padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li><li>lg: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Button.</div></div>
@@ -2093,7 +2023,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-theme-colors</td>
     <td>Map</td>
-    <td><code>k-map-merge(
+    <td><code>map.merge(
     $kendo-theme-colors,
     ( "base": if($kendo-enable-color-system, k-color( base ), #e4e7eb) )
 )</code></td>
@@ -2116,7 +2046,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-button-bg, $gray-900 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-button-bg, $kendo-color-dark ))</code></td>
     <td><code>var(--kendo-color-on-base, #212529)</code></td>
 </tr>
 <tr>
@@ -2135,9 +2065,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the Button.</div></div>
@@ -2185,9 +2115,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-button-hover-gradient</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the hovered Button.</div></div>
@@ -2347,7 +2277,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 50%, transparent), rgba( $kendo-button-border, .5 ))</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>
@@ -2457,7 +2387,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-button-transition</td>
     <td>List</td>
     <td><code>$kendo-transition</code></td>
-    <td><code>color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out</code></td>
+    <td><code>(color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transition of the Button.</div></div>
@@ -2537,7 +2467,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-calendar-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar.</div></div>
@@ -2597,7 +2527,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the header in the Calendar.</div></div>
@@ -2786,7 +2716,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-calendar-header-cell-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -2865,9 +2795,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-calendar-week-number-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-font-size-sm</code></td>
-    <td><code>0.875rem</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the week number cells in the Calendar.</div></div>
@@ -3147,7 +3077,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td>List</td>
     <td><code>inset $kendo-button-focus-shadow</code></td>
-    <td><code>inset (0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
+    <td><code>(inset (0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused cells in the Calendar.</div></div>
@@ -3157,7 +3087,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-calendar-cell-selected-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary-active ) 50%, transparent), rgba( k-color-darken( $kendo-color-primary, 12.5% ), .5 ))</code></td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary-active, #0a58ca) 50%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-primary-active, #0a58ca) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected and focused cells in the Calendar.</div></div>
@@ -3187,7 +3117,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
     <td><code>$kendo-calendar-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar navigation.</div></div>
@@ -3549,7 +3479,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-captcha-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Captcha.</div></div>
@@ -3559,7 +3489,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-captcha-text</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Captcha.</div></div>
@@ -3569,7 +3499,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-captcha-border</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Captcha.</div></div>
@@ -3647,9 +3577,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody><tr>
     <td>$kendo-card-padding-x</td>
-    <td>Number</td>
-    <td><code>$card-spacer-x</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Card.</div></div>
@@ -3657,9 +3587,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-padding-y</td>
-    <td>Number</td>
-    <td><code>$card-spacer-y</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>$kendo-card-padding-x</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Card.</div></div>
@@ -3677,9 +3607,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-border-radius</td>
-    <td>Number</td>
-    <td><code>$card-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Card.</div></div>
@@ -3689,7 +3619,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-card-inner-border-radius</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} )</code></td>
-    <td><code>calc(0.375rem - 1px)</code></td>
+    <td><code>calc(var(--kendo-spacing-1\.5, 0.375rem) - 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inner border radius of the Card.</div></div>
@@ -3739,7 +3669,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-card-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Card.</div></div>
@@ -3797,9 +3727,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-focus-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-card-border</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Card.</div></div>
@@ -3817,9 +3747,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-header-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Card header.</div></div>
@@ -3827,9 +3757,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-header-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-padding-y</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Card header.</div></div>
@@ -3849,7 +3779,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-card-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Card header.</div></div>
@@ -3877,9 +3807,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-body-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Card body.</div></div>
@@ -3887,9 +3817,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-body-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Card body.</div></div>
@@ -3897,9 +3827,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-footer-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Card footer.</div></div>
@@ -3907,9 +3837,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-footer-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-padding-y</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Card footer.</div></div>
@@ -3929,7 +3859,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-card-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-card-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Card footer.</div></div>
@@ -3978,7 +3908,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-card-title-font-family</td>
     <td>Null</td>
-    <td><code>$headings-font-family</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -3988,7 +3918,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-card-title-line-height</td>
     <td>Number</td>
-    <td><code>$headings-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -3998,7 +3928,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-card-title-font-weight</td>
     <td>Number</td>
-    <td><code>$headings-font-weight</code></td>
+    <td><code>$kendo-font-weight-medium</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -4038,7 +3968,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-card-subtitle-font-family</td>
     <td>Null</td>
-    <td><code>$headings-font-family</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -4048,7 +3978,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-card-subtitle-line-height</td>
     <td>Number</td>
-    <td><code>$headings-line-height</code></td>
+    <td><code>$kendo-card-title-line-height</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -4058,7 +3988,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-card-subtitle-font-weight</td>
     <td>Number</td>
-    <td><code>$headings-font-weight</code></td>
+    <td><code>$kendo-card-title-font-weight</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -4078,7 +4008,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-card-subtitle-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -4107,9 +4037,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-card-avatar-spacing</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-header-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Avatar and the text in the Card.</div></div>
@@ -4259,7 +4189,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color(primary-emphasis), k-try-tint( $kendo-color-primary, 25% ))</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused area around the chart type icon.</div></div>
@@ -4269,7 +4199,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-chart-wizard-icon-area-selected-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-chart-wizard-icon-area-color</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary, #0d6efd)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #0d6efd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the selected area around the chart type icon.</div></div>
@@ -4348,7 +4278,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-series-a</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-a ), $blue)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-a ), $kendo-color-primary)</code></td>
     <td><code>var(--kendo-color-series-a, #0c64e4)</code></td>
 </tr>
 <tr>
@@ -4358,7 +4288,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-series-b</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-b ), $purple)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-b ), $kendo-color-tertiary)</code></td>
     <td><code>var(--kendo-color-series-b, #6f42c1)</code></td>
 </tr>
 <tr>
@@ -4368,7 +4298,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-series-c</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-c ), $teal)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-c ), #20c997)</code></td>
     <td><code>var(--kendo-color-series-c, #20c997)</code></td>
 </tr>
 <tr>
@@ -4378,7 +4308,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-series-d</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-d ), $green)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-d ), $kendo-color-success)</code></td>
     <td><code>var(--kendo-color-series-d, #198754)</code></td>
 </tr>
 <tr>
@@ -4388,7 +4318,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-series-e</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-e ), $yellow)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-e ), $kendo-color-warning)</code></td>
     <td><code>var(--kendo-color-series-e, #dc3545)</code></td>
 </tr>
 <tr>
@@ -4398,7 +4328,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-series-f</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-f ), $red)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-f ), $kendo-color-error)</code></td>
     <td><code>var(--kendo-color-series-f, #ffc107)</code></td>
 </tr>
 <tr>
@@ -4618,7 +4548,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chat-timestamp-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -4789,7 +4719,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-chat-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat Toolbar.</div></div>
@@ -4958,7 +4888,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chat-alt-bubble-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-chat-alt-bubble-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-chat-alt-bubble-bg ))</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -5219,7 +5149,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-checkbox-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of CheckBox.</div></div>
@@ -5238,7 +5168,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-checkbox-bg ), $gray-400, $gray-600 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-checkbox-bg ), #ced4da, #6c757d ))</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
@@ -5288,7 +5218,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-checked-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-checkbox-checked-bg ))</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -5349,7 +5279,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-checkbox-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused CheckBox.</div></div>
@@ -5369,7 +5299,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-checkbox-focus-checked-shadow</td>
     <td>List</td>
     <td><code>$kendo-checkbox-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked CheckBox.</div></div>
@@ -5479,7 +5409,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-checkbox-glyph-font-family</td>
     <td>List</td>
     <td><code>"WebComponentsIcons", monospace</code></td>
-    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>("WebComponentsIcons", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the CheckBox indicator glyph.</div></div>
@@ -5839,10 +5769,10 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Map</td>
     <td><code>(
     "base": $kendo-chip-base-bg,
-    "error": k-map-get( $kendo-theme-colors, "error" ),
-    "info": k-map-get( $kendo-theme-colors, "info" ),
-    "warning": k-map-get( $kendo-theme-colors, "warning" ),
-    "success": k-map-get( $kendo-theme-colors, "success" )
+    "error": map.get( $kendo-theme-colors, "error" ),
+    "info": map.get( $kendo-theme-colors, "info" ),
+    "warning": map.get( $kendo-theme-colors, "warning" ),
+    "success": map.get( $kendo-theme-colors, "success" )
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base, #dee2e6)</li><li>error: var(--kendo-color-error, #dc3545)</li><li>info: var(--kendo-color-info, #0dcaf0)</li><li>warning: var(--kendo-color-warning, #ffc107)</li><li>success: var(--kendo-color-success, #198754)</li></ul></td>
 </tr>
@@ -5884,7 +5814,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</code></td>
-    <td><code>0 0 0 2px rgba(var(--kendo-color-base, #dee2e6), 0.16)</code></td>
+    <td><code>(0 0 0 2px rgba(var(--kendo-color-base, #dee2e6), 0.16))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
@@ -5892,9 +5822,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-chip-solid-gradient</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-button-gradient</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of the solid Chip.</div></div>
@@ -5964,7 +5894,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-chip-outline-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the outline Chip.</div></div>
@@ -5994,7 +5924,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</code></td>
-    <td><code>0 0 0 2px rgba(var(--kendo-color-base, #dee2e6), 0.16)</code></td>
+    <td><code>(0 0 0 2px rgba(var(--kendo-color-base, #dee2e6), 0.16))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>
@@ -6013,7 +5943,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-color( $kendo-chip-outline-hover-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-legacy( $kendo-chip-outline-hover-bg ))</code></td>
     <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
@@ -6075,6 +6005,136 @@ The following table lists the available variables for customizing the Bootstrap 
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-color-primary</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(primary), #0d6efd)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-primary, #0d6efd)"></span><code>var(--kendo-color-primary, #0d6efd)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-primary-contrast</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(on-primary), k-contrast-legacy( $kendo-color-primary ))</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-on-primary, #ffffff)"></span><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $kendo-color-primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-secondary</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(secondary), #6c757d)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-secondary, #6c757d)"></span><code>var(--kendo-color-secondary, #6c757d)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The secondary color of the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-secondary-contrast</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(on-secondary), k-contrast-legacy( $kendo-color-secondary ))</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-on-secondary, #ffffff)"></span><code>var(--kendo-color-on-secondary, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $kendo-color-secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-tertiary</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(tertiary), #6f42c1)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-tertiary, #6f42c1)"></span><code>var(--kendo-color-tertiary, #6f42c1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The tertiary color of the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-tertiary-contrast</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(on-primary), k-contrast-legacy( $kendo-color-tertiary ))</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-on-primary, #ffffff)"></span><code>var(--kendo-color-on-primary, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $kendo-color-tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-info</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(info), #0dcaf0)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-info, #0dcaf0)"></span><code>var(--kendo-color-info, #0dcaf0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for informational messages and states.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-success</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(success), #198754)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-success, #198754)"></span><code>var(--kendo-color-success, #198754)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for success messages and states.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-warning</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(warning), #ffc107)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-warning, #ffc107)"></span><code>var(--kendo-color-warning, #ffc107)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for warning messages and states.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-error</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(error), #dc3545)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-error, #dc3545)"></span><code>var(--kendo-color-error, #dc3545)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for error messages and states.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-dark</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(dark), #212529)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-dark, #212529)"></span><code>var(--kendo-color-dark, #212529)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dark color of the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-light</td>
+    <td>Color</td>
+    <td><code>if($kendo-enable-color-system, k-color(light), #f8f9fa)</code></td>
+    <td><span class="color-preview" style="background-color: var(--kendo-color-light, #f8f9fa)"></span><code>var(--kendo-color-light, #f8f9fa)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light color of the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-inverse</td>
+    <td>String</td>
+    <td><code>if( $kendo-is-dark-theme, if($kendo-enable-color-system, k-color(light), $kendo-color-light), if($kendo-enable-color-system, k-color(dark), $kendo-color-dark ))</code></td>
+    <td><code>var(--kendo-color-dark, #212529)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-colors</td>
     <td>Map</td>
     <td><code>$_default-colors</code></td>
@@ -6930,136 +6990,6 @@ The following table lists the available variables for customizing the Bootstrap 
     <td colspan="2">The subtler series F color variable.</td>
 </tr>
 <tr>
-    <td>$kendo-color-primary</td>
-    <td>Color</td>
-    <td><code>$primary</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-primary, #0d6efd)"></span><code>var(--kendo-color-primary, #0d6efd)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-primary-contrast</td>
-    <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-primary )</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-on-primary, #ffffff)"></span><code>var(--kendo-color-on-primary, #ffffff)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $kendo-color-primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-secondary</td>
-    <td>Color</td>
-    <td><code>$secondary</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-secondary, #6c757d)"></span><code>var(--kendo-color-secondary, #6c757d)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The secondary color of the theme.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-secondary-contrast</td>
-    <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-secondary )</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $kendo-color-secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-tertiary</td>
-    <td>Color</td>
-    <td><code>$purple</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-tertiary, #6f42c1)"></span><code>var(--kendo-color-tertiary, #6f42c1)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The tertiary color of the theme.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-tertiary-contrast</td>
-    <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-tertiary )</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $kendo-color-tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-info</td>
-    <td>Color</td>
-    <td><code>$info</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-info, #0dcaf0)"></span><code>var(--kendo-color-info, #0dcaf0)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for informational messages and states.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-success</td>
-    <td>Color</td>
-    <td><code>$success</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-success, #198754)"></span><code>var(--kendo-color-success, #198754)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for success messages and states.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-warning</td>
-    <td>Color</td>
-    <td><code>$warning</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-warning, #ffc107)"></span><code>var(--kendo-color-warning, #ffc107)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for warning messages and states.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-error</td>
-    <td>Color</td>
-    <td><code>$danger</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-error, #dc3545)"></span><code>var(--kendo-color-error, #dc3545)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for error messages and states.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-dark</td>
-    <td>Color</td>
-    <td><code>$dark</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-dark, #212529)"></span><code>var(--kendo-color-dark, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dark color of the theme.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-light</td>
-    <td>Color</td>
-    <td><code>$light</code></td>
-    <td><span class="color-preview" style="background-color: var(--kendo-color-light, #f8f9fa)"></span><code>var(--kendo-color-light, #f8f9fa)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light color of the theme.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-inverse</td>
-    <td>String</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark )</code></td>
-    <td><code>var(--kendo-color-dark, #212529)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-white</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
@@ -7093,7 +7023,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-gradient-transparent-to-black</td>
     <td>Gradient</td>
     <td><code>rgba(black, 0), black</code></td>
-    <td><code>rgba(0, 0, 0, 0), black</code></td>
+    <td><code>(rgba(0, 0, 0, 0), black)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to black.<br />Note: you cannot change this value.</div></div>
@@ -7103,7 +7033,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-gradient-transparent-to-white</td>
     <td>Gradient</td>
     <td><code>rgba(white, 0), white</code></td>
-    <td><code>rgba(255, 255, 255, 0), white</code></td>
+    <td><code>(rgba(255, 255, 255, 0), white)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from transparent to white.<br />Note: you cannot change this value.</div></div>
@@ -7113,7 +7043,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-gradient-black-to-transparent</td>
     <td>Gradient</td>
     <td><code>black, rgba(black, 0)</code></td>
-    <td><code>black, rgba(0, 0, 0, 0)</code></td>
+    <td><code>(black, rgba(0, 0, 0, 0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from black to transparent.<br />Note: you cannot change this value.</div></div>
@@ -7123,7 +7053,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-gradient-white-to-transparent</td>
     <td>Gradient</td>
     <td><code>white, rgba(white, 0)</code></td>
-    <td><code>white, rgba(255, 255, 255, 0)</code></td>
+    <td><code>(white, rgba(255, 255, 255, 0))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that goes from white to transparent.<br />Note: you cannot change this value.</div></div>
@@ -7133,7 +7063,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-gradient-rainbow</td>
     <td>Gradient</td>
     <td><span class="color-preview" style="background-color: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000"></span><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
-    <td><code>#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000</code></td>
+    <td><code>(#ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">A gradient that cycles through the colors of the rainbow.<br />Note: you cannot change this value.</div></div>
@@ -7243,7 +7173,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-color-editor-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ColorEditor.</div></div>
@@ -7533,7 +7463,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-color-gradient-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ColorGradient.</div></div>
@@ -7561,9 +7491,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-color-gradient-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -7782,7 +7712,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-gradient-canvas-draghandle-margin-y</td>
     <td>Number</td>
-    <td><code>- k-math-div( $kendo-color-gradient-draghandle-height, 2 )</code></td>
+    <td><code>- math.div( $kendo-color-gradient-draghandle-height, 2 )</code></td>
     <td><code>-7px</code></td>
 </tr>
 <tr>
@@ -7792,7 +7722,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-gradient-canvas-draghandle-margin-x</td>
     <td>Number</td>
-    <td><code>- k-math-div( $kendo-color-gradient-draghandle-width, 2 )</code></td>
+    <td><code>- math.div( $kendo-color-gradient-draghandle-width, 2 )</code></td>
     <td><code>-7px</code></td>
 </tr>
 <tr>
@@ -7832,7 +7762,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-gradient-input-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -7933,7 +7863,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .5 )</code></td>
-    <td><code>0 0 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.5)</code></td>
+    <td><code>(0 0 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette focused tile.</div></div>
@@ -7943,7 +7873,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td>List</td>
     <td><code>0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 )</code></td>
-    <td><code>0 0 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.8)</code></td>
+    <td><code>(0 0 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.8))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette hovered tile.</div></div>
@@ -7953,7 +7883,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-color-palette-tile-selected-shadow</td>
     <td>List</td>
     <td><code>0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 )</code></td>
-    <td><code>0 1px 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px white</code></td>
+    <td><code>(0 1px 3px 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px white)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ColorPalette selected tile.</div></div>
@@ -7983,7 +7913,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-component-bg</td>
     <td>String</td>
     <td><code>$kendo-body-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.</div></div>
@@ -8002,7 +7932,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-component-border</td>
     <td>String</td>
-    <td><code>if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 )</code></td>
+    <td><code>$kendo-app-border</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
@@ -8031,9 +7961,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody><tr>
     <td>$kendo-dialog-titlebar-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Dialog titlebar.</div></div>
@@ -8041,9 +7971,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-dialog-titlebar-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Dialog titlebar.</div></div>
@@ -8051,9 +7981,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-dialog-titlebar-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Dialog titlebar.</div></div>
@@ -8103,9 +8033,9 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-dialog-theme-colors</td>
     <td>Map</td>
     <td><code>(
-    "primary": k-map-get($kendo-theme-colors, "primary"),
-    "light": k-map-get($kendo-theme-colors, "light"),
-    "dark": k-map-get($kendo-theme-colors, "dark")
+    "primary": map.get($kendo-theme-colors, "primary"),
+    "light": map.get($kendo-theme-colors, "light"),
+    "dark": map.get($kendo-theme-colors, "dark")
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>dark: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -8207,7 +8137,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-dock-manager-pane-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the pane header in the DockManager component.</div></div>
@@ -8327,7 +8257,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-dock-manager-unpinned-container-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background-color of the unpinned pane container in the DockManager component.</div></div>
@@ -8337,7 +8267,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-dock-manager-unpinned-container-shadow</td>
     <td>List</td>
     <td><code>4px 0px 5px 0px rgba(0, 0, 0, 0.04), 2px 0px 4px 0px rgba(0, 0, 0, 0.03)</code></td>
-    <td><code>4px 0px 5px 0px rgba(0, 0, 0, 0.04), 2px 0px 4px 0px rgba(0, 0, 0, 0.03)</code></td>
+    <td><code>(4px 0px 5px 0px rgba(0, 0, 0, 0.04), 2px 0px 4px 0px rgba(0, 0, 0, 0.03))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the unpinned pane container in the DockManager component.</div></div>
@@ -8357,7 +8287,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-dock-indicator-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the dock indicator in the DockManager component.</div></div>
@@ -8407,7 +8337,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-dock-indicator-shadow</td>
     <td>List</td>
     <td><code>drop-shadow( 0px 1px 18px rgba(0, 0, 0, 0.12) ) drop-shadow( 0px 6px 10px rgba(0, 0, 0, 0.14) ) drop-shadow( 0px 3px 5px rgba(0, 0, 0, 0.20) )</code></td>
-    <td><code>drop-shadow(0px 1px 18px rgba(0, 0, 0, 0.12)) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2))</code></td>
+    <td><code>(drop-shadow(0px 1px 18px rgba(0, 0, 0, 0.12)) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the dock indicator in the DockManager component.</div></div>
@@ -8507,7 +8437,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-drawer-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Drawer.</div></div>
@@ -8646,7 +8576,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-drawer-item-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -8656,7 +8586,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-drawer-item-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -8675,9 +8605,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-drawer-item-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-lg</code></td>
-    <td><code>2</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Drawer item.</div></div>
@@ -8727,7 +8657,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-drawer-mini-initial-width</td>
     <td>Calculation</td>
     <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-icon-size} )</code></td>
-    <td><code>calc(2 * var(--kendo-spacing-4, 1rem) + 16px)</code></td>
+    <td><code>calc(2 * var(--kendo-spacing-4, 1rem) + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial width of the mini Drawer.</div></div>
@@ -8767,7 +8697,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-drawer-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px rgba( black, .15 )</code></td>
-    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.15)</code></td>
+    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Drawer item.</div></div>
@@ -8946,7 +8876,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), if( k-is-light( $kendo-component-bg ), $kendo-color-light, $kendo-color-dark ))</code></td>
     <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
@@ -9056,7 +8986,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-dropzone-note-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -9243,6 +9173,56 @@ The following table lists the available variables for customizing the Bootstrap 
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the Editor's selected node.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-editor-inline-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the inline Editor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-editor-inline-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the inline Editor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-editor-filebrowser-tiles-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Editor file browser tiles.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-editor-filebrowser-tiles-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Editor file browser tiles.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-editor-content-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Editor content.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -9267,7 +9247,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-elevation</td>
     <td>Map</td>
     <td><code>$_default-elevation</code></td>
-    <td><ul><li>1: 0px 1px 2px rgba(0, 0, 0, 0.038)</li><li>2: 0px 2px 7px rgba(0, 0, 0, 0.075)</li><li>3: 0px 4px 10px rgba(0, 0, 0, 0.1)</li><li>4: 0px 6px 13px rgba(0, 0, 0, 0.125)</li><li>5: 0px 8px 16px 0px rgba(0, 0, 0, 0.15)</li><li>6: 0px 11px 24px 0px rgba(0, 0, 0, 0.159)</li><li>7: 0px 14px 36px 0px rgba(0, 0, 0, 0.168)</li><li>8: 0px 16px 48px 0px rgba(0, 0, 0, 0.176)</li><li>9: 0px 18px 60px 0px rgba(0, 0, 0, 0.185)</li></ul></td>
+    <td><ul><li>1: (0px 1px 2px rgba(0, 0, 0, 0.038))</li><li>2: (0px 2px 7px rgba(0, 0, 0, 0.075))</li><li>3: (0px 4px 10px rgba(0, 0, 0, 0.1))</li><li>4: (0px 6px 13px rgba(0, 0, 0, 0.125))</li><li>5: (0px 8px 16px 0px rgba(0, 0, 0, 0.15))</li><li>6: (0px 11px 24px 0px rgba(0, 0, 0, 0.159))</li><li>7: (0px 14px 36px 0px rgba(0, 0, 0, 0.168))</li><li>8: (0px 16px 48px 0px rgba(0, 0, 0, 0.176))</li><li>9: (0px 18px 60px 0px rgba(0, 0, 0, 0.185))</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
@@ -9357,7 +9337,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-expander-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ExpansionPanel.</div></div>
@@ -9377,7 +9357,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-expander-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel.</div></div>
@@ -9457,7 +9437,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-expander-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ExpansionPanel header.</div></div>
@@ -9476,7 +9456,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-expander-header-sub-title-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -9587,7 +9567,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-file-manager-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager.</div></div>
@@ -9767,7 +9747,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-file-manager-breadcrumb-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Breadcrumb.</div></div>
@@ -10126,7 +10106,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-filter-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -10136,7 +10116,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-filter-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -10186,7 +10166,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-filter-preview-operator-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -10197,7 +10177,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-filter-toolbar-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Filter toolbar.</div></div>
@@ -10600,7 +10580,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-fab-item-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
@@ -10780,7 +10760,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-floating-label-offset-x</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} )</code></td>
-    <td><code>calc(0.75rem + 1px)</code></td>
+    <td><code>calc(var(--kendo-spacing-3, 0.75rem) + var(--kendo-spacing-1px, 1px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Floating Label.</div></div>
@@ -10790,7 +10770,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} )</code></td>
-    <td><code>calc(calc(1.5 * var(--kendo-font-size, inherit)) + 1px + 0.375rem)</code></td>
+    <td><code>calc(calc(1.5 * var(--kendo-font-size, inherit)) + var(--kendo-spacing-1px, 1px) + var(--kendo-spacing-1\.5, 0.375rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>
@@ -10830,7 +10810,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-floating-label-transition</td>
     <td>List</td>
     <td><code>.2s ease-out</code></td>
-    <td><code>0.2s ease-out</code></td>
+    <td><code>(0.2s ease-out)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Floating Label.</div></div>
@@ -10899,7 +10879,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-form-spacer</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-x} * 2 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 2)</code></td>
 </tr>
 <tr>
@@ -10919,7 +10899,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-form-line-height</td>
     <td>Number</td>
-    <td><code>$input-btn-line-height</code></td>
+    <td><code>1.5</code></td>
     <td><code>1.5</code></td>
 </tr>
 <tr>
@@ -10960,7 +10940,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-form-fieldset-margin</td>
     <td>List</td>
     <td><code>2rem 0 0</code></td>
-    <td><code>2rem 0 0</code></td>
+    <td><code>(2rem 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form fieldset.</div></div>
@@ -10980,7 +10960,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-form-legend-margin</td>
     <td>List</td>
     <td><code>0 0 1rem</code></td>
-    <td><code>0 0 1rem</code></td>
+    <td><code>(0 0 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form legend.</div></div>
@@ -11000,7 +10980,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-form-legend-border-width</td>
     <td>List</td>
     <td><code>0 0 2px</code></td>
-    <td><code>0 0 2px</code></td>
+    <td><code>(0 0 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Form legend.</div></div>
@@ -11140,7 +11120,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-form-separator-margin</td>
     <td>List</td>
     <td><code>$kendo-form-md-rows-spacing 0 0</code></td>
-    <td><code>var(--kendo-spacing-4, 1rem) 0 0</code></td>
+    <td><code>(var(--kendo-spacing-4, 1rem) 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form separator.</div></div>
@@ -11214,6 +11194,26 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the inline Form element.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-inline-form-field-padding-x</td>
+    <td>List</td>
+    <td><code>0 k-spacing(6)</code></td>
+    <td><code>(0 var(--kendo-spacing-6, 1.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the inline Form field.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-inline-form-field-padding-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(2)} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) + var(--kendo-spacing-1px, 1px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the inline Form field.</div></div>
     </td>
 </tr>
 <tr>
@@ -11307,6 +11307,46 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-fieldset-legend-padding</td>
+    <td>List</td>
+    <td><code>0 k-spacing(4) 0 0</code></td>
+    <td><code>(0 var(--kendo-spacing-4, 1rem) 0 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Form fieldset legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-legend-margin</td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(3)} * 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-3, 0.75rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form fieldset legend</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-alert-error-margin</td>
+    <td>Calculation</td>
+    <td><code>calc( #{k-spacing(2)} * 2 )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form alert error.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-field-info-margin</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form field info.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fieldset-legend-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -11318,9 +11358,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-fieldset-legend-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form legend.</div></div>
@@ -11420,7 +11460,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-gantt-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Gantt.</div></div>
@@ -11580,7 +11620,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-gantt-dot-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-gantt-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Gantt task dot.</div></div>
@@ -11599,7 +11639,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-milestone-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), if( k-is-light( $kendo-gantt-bg ), $gray-300, $gray-700 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base ), if( k-is-light( $kendo-gantt-bg ), #dee2e6, #495057 ))</code></td>
     <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
@@ -11709,7 +11749,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), if( k-is-light( $kendo-gantt-bg ), $gray-300, $gray-700 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base ), if( k-is-light( $kendo-gantt-bg ), #dee2e6, #495057 ))</code></td>
     <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
@@ -11729,7 +11769,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-task-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-gantt-bg ), $gray-400, $gray-600 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-gantt-bg ), #ced4da, #6c757d ))</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
@@ -11739,7 +11779,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-gantt-bg ), $gray-400, $gray-600 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-gantt-bg ), #ced4da, #6c757d ))</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
@@ -11784,6 +11824,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Gantt task progress.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-actions-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Gantt task actions.</div></div>
     </td>
 </tr>
 <tr>
@@ -11859,7 +11909,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-planned-moment-left-margin-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} )</code></td>
+    <td><code>calc( #{ math.div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} )</code></td>
     <td><code>calc(1px - calc((4px + 6px) / 2))</code></td>
 </tr>
 <tr>
@@ -12096,6 +12146,26 @@ The following table lists the available variables for customizing the Bootstrap 
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Gantt validation Tooltip.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-gantt-task-tooltip-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Gantt task Tooltip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-gantt-task-tooltip-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Gantt task Tooltip.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -12118,9 +12188,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody><tr>
     <td>$kendo-grid-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-table-md-cell-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid.</div></div>
@@ -12128,9 +12198,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-table-md-cell-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid.</div></div>
@@ -12138,9 +12208,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-header-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid header.</div></div>
@@ -12148,9 +12218,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-header-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid header.</div></div>
@@ -12158,9 +12228,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-grouping-header-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid grouping header.</div></div>
@@ -12168,9 +12238,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-grouping-header-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-grouping-header-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid grouping header.</div></div>
@@ -12178,9 +12248,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-cell-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid cell.</div></div>
@@ -12188,9 +12258,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-cell-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid cell.</div></div>
@@ -12198,9 +12268,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-filter-cell-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid filter cell.</div></div>
@@ -12208,9 +12278,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-filter-cell-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-filter-cell-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Grid filter cell.</div></div>
@@ -12218,9 +12288,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-grid-edit-cell-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-grid-cell-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Grid edit cell.</div></div>
@@ -12240,7 +12310,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-grid-bg</td>
     <td>String</td>
     <td><code>$kendo-table-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid.</div></div>
@@ -12270,7 +12340,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-grid-header-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid header.</div></div>
@@ -12310,7 +12380,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-grid-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-table-footer-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid footer.</div></div>
@@ -12430,7 +12500,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-grid-selection-aggregates-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid selection aggregates container.</div></div>
@@ -12529,6 +12599,56 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Icon
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-icon-size</td>
+    <td>Number</td>
+    <td><code>1rem</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the icons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the icons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Padding of the action icons container.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Input
 
 <table class="theme-variables">
@@ -12558,9 +12678,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-border-width</td>
-    <td>Number</td>
-    <td><code>$input-border-width</code></td>
-    <td><code>1px</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1px)</code></td>
+    <td><code>var(--kendo-spacing-1px, 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Input components.</div></div>
@@ -12578,9 +12698,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-padding-x</td>
-    <td>Number</td>
-    <td><code>$input-padding-x</code></td>
-    <td><code>0.75rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Input components.</div></div>
@@ -12588,9 +12708,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-sm-padding-x</td>
-    <td>Number</td>
-    <td><code>$input-padding-x-sm</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Input components.</div></div>
@@ -12598,9 +12718,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-md-padding-x</td>
-    <td>Number</td>
-    <td><code>$input-padding-x</code></td>
-    <td><code>0.75rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Input components.</div></div>
@@ -12608,9 +12728,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-lg-padding-x</td>
-    <td>Number</td>
-    <td><code>$input-padding-x-lg</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Input components.</div></div>
@@ -12618,9 +12738,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-padding-y</td>
-    <td>Number</td>
-    <td><code>$input-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of input components.</div></div>
@@ -12628,9 +12748,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-sm-padding-y</td>
-    <td>Number</td>
-    <td><code>$input-padding-y-sm</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Input components.</div></div>
@@ -12638,9 +12758,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-md-padding-y</td>
-    <td>Number</td>
-    <td><code>$input-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Input components.</div></div>
@@ -12648,9 +12768,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-lg-padding-y</td>
-    <td>Number</td>
-    <td><code>$input-padding-y-lg</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Input components.</div></div>
@@ -12709,7 +12829,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-line-height</td>
     <td>Number</td>
-    <td><code>$input-line-height</code></td>
+    <td><code>1.5</code></td>
     <td><code>1.5</code></td>
 </tr>
 <tr>
@@ -12719,7 +12839,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-sm-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -12775,7 +12895,7 @@ The following table lists the available variables for customizing the Bootstrap 
         button-padding-y: $kendo-input-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"0.5rem","padding-y":"0.25rem","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"button-padding-x":"0.25rem","button-padding-y":"0.25rem"</li><li>md: "padding-x":"0.75rem","padding-y":"0.375rem","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"0.375rem","button-padding-y":"0.375rem"</li><li>lg: "padding-x":"1rem","padding-y":"0.5rem","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"0.5rem","button-padding-y":"0.5rem"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"button-padding-x":"var(--kendo-spacing-1, 0.25rem)","button-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-1\\.5, 0.375rem)","button-padding-y":"var(--kendo-spacing-1\\.5, 0.375rem)"</li><li>lg: "padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","button-padding-x":"var(--kendo-spacing-2, 0.5rem)","button-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
@@ -12784,8 +12904,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-bg</td>
     <td>String</td>
-    <td><code>$input-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input components.</div></div>
@@ -12794,7 +12914,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-text</td>
     <td>String</td>
-    <td><code>$input-color</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-dark)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -12804,7 +12924,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-border</td>
     <td>String</td>
-    <td><code>$input-border-color</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), #ced4da)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
@@ -12843,9 +12963,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-hover-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-input-border</code></td>
+    <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Input components.</div></div>
@@ -12864,8 +12984,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-focus-bg</td>
     <td>String</td>
-    <td><code>$input-focus-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>$kendo-input-bg</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Input components.</div></div>
@@ -12874,7 +12994,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-focus-text</td>
     <td>String</td>
-    <td><code>$input-focus-color</code></td>
+    <td><code>$kendo-input-text</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -12884,7 +13004,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-focus-border</td>
     <td>String</td>
-    <td><code>$input-focus-border-color</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-tint( $kendo-color-primary, 50% ) )</code></td>
     <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
@@ -12894,8 +13014,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-focus-shadow</td>
     <td>List</td>
-    <td><code>$input-focus-box-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
@@ -12994,7 +13114,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-base-text, .5 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), color-mix(in srgb, $kendo-base-text 50%, transparent))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -13023,9 +13143,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-outline-hover-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-input-outline-border</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 50%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered Input components.</div></div>
@@ -13065,7 +13185,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-input-outline-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
@@ -13123,9 +13243,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-flat-hover-border</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-input-hover-border</code></td>
-    <td><code>null</code></td>
+    <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Input components.</div></div>
@@ -13165,7 +13285,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-input-flat-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-input-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
@@ -13174,7 +13294,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-placeholder-text</td>
     <td>String</td>
-    <td><code>$input-placeholder-color</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -13253,9 +13373,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-button-width</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input button.</div></div>
@@ -13273,9 +13393,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-input-spinner-width</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input spinner button.</div></div>
@@ -13314,7 +13434,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-prefix-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -13324,7 +13444,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-input-suffix-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -13345,7 +13465,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-input-invalid-shadow</td>
     <td>List</td>
     <td><code>$kendo-invalid-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-error, #dc3545) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-error, #dc3545) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
@@ -13425,7 +13545,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-list-header-border-width</td>
     <td>List</td>
     <td><code>0 0 1px</code></td>
-    <td><code>0 0 1px</code></td>
+    <td><code>(0 0 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List header.</div></div>
@@ -13459,6 +13579,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the List header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-filter-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the the List filter input.</div></div>
     </td>
 </tr>
 <tr>
@@ -13525,7 +13655,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-list-group-item-border-width</td>
     <td>List</td>
     <td><code>1px 0 0</code></td>
-    <td><code>1px 0 0</code></td>
+    <td><code>(1px 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List group items.</div></div>
@@ -13624,7 +13754,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-list-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the List component.</div></div>
@@ -13682,9 +13812,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-list-header-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the List header.</div></div>
@@ -13754,7 +13884,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-list-text, .15 ))</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>
@@ -13823,7 +13953,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-list-option-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -13944,7 +14074,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-listbox-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ListBox.</div></div>
@@ -14094,7 +14224,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-listview-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ListView.</div></div>
@@ -14194,7 +14324,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-listview-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-listview-text, .15 ))</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ListView items.</div></div>
@@ -14574,7 +14704,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-loading-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Loading indicator.</div></div>
@@ -14674,7 +14804,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-map-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Map.</div></div>
@@ -14724,7 +14854,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-map-navigator-width</td>
     <td>Calculation</td>
     <td><code>calc( calc( #{$kendo-icon-size} * 3 ) + calc( #{$kendo-map-navigator-padding} * 2 ) )</code></td>
-    <td><code>calc(16px * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
+    <td><code>calc(1rem * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Map navigator.</div></div>
@@ -14734,7 +14864,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-map-navigator-height</td>
     <td>Calculation</td>
     <td><code>$kendo-map-navigator-width</code></td>
-    <td><code>calc(16px * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
+    <td><code>calc(1rem * 3 + var(--kendo-spacing-0\.5, 0.125rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Map navigator.</div></div>
@@ -14762,9 +14892,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-map-zoom-control-button-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Map zoom control.</div></div>
@@ -14772,9 +14902,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-map-zoom-control-button-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-map-zoom-control-button-padding-x</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Map zoom control.</div></div>
@@ -14783,7 +14913,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-map-attribution-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -14793,7 +14923,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-map-attribution-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-y</code></td>
+    <td><code>k-spacing(1)</code></td>
     <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
@@ -14894,7 +15024,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-media-player-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the MediaPlayer.</div></div>
@@ -14954,7 +15084,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-media-player-titlebar-text</td>
     <td>String</td>
     <td><code>$kendo-media-player-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the MediaPlayer title.</div></div>
@@ -14974,7 +15104,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-media-player-titlebar-gradient</td>
     <td>List</td>
     <td><code>if($kendo-enable-color-system, ( color-mix(in srgb, k-color( on-app-surface ) 70%, transparent), color-mix(in srgb, k-color( on-app-surface ) 0%, transparent) ), ( rgba( $kendo-media-player-text, .7 ), rgba( $kendo-media-player-text, 0 ) ))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 70%, transparent), color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 0%, transparent)</code></td>
+    <td><code>(color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 70%, transparent), color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 0%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the MediaPlayer title.</div></div>
@@ -15254,7 +15384,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-menu-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-menu-text, .15 ))</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item.</div></div>
@@ -15272,9 +15402,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-menu-item-selected-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-menu-item-text</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 76%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected Menu item.</div></div>
@@ -15393,7 +15523,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-menu-separator-margin-block</td>
     <td>String</td>
-    <td><code>k-spacing(2);</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -15464,7 +15594,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-menu-popup-bg</td>
     <td>String</td>
     <td><code>$kendo-popup-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Menu popup.</div></div>
@@ -15524,7 +15654,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-menu-popup-item-padding-end</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-menu-popup-item-padding-x} * 2 + #{$kendo-icon-size} )</code></td>
-    <td><code>calc(var(--kendo-spacing-4, 1rem) * 2 + 16px)</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) * 2 + 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the Menu item in popup.</div></div>
@@ -15543,8 +15673,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
-    <td><code>calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) )</code></td>
-    <td><code>calc(-1 * (calc(var(--kendo-spacing-4, 1rem) * 2 + 16px) - var(--kendo-spacing-4, 1rem)/2))</code></td>
+    <td><code>calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{list.slash( $kendo-menu-popup-sm-item-padding-x, 2 )}) )</code></td>
+    <td><code>calc(-1 * (calc(var(--kendo-spacing-4, 1rem) * 2 + 1rem) - var(--kendo-spacing-4, 1rem) / 2))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the Menu item expand icon.</div></div>
@@ -15684,7 +15814,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-menu-popup-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-menu-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused Menu item in popup.</div></div>
@@ -15712,9 +15842,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody><tr>
     <td>$kendo-menu-button-arrow-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button.</div></div>
@@ -15753,7 +15883,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-no-data-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -15792,9 +15922,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-notification-padding-x</td>
-    <td>Number</td>
-    <td><code>$alert-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Notification.</div></div>
@@ -15802,9 +15932,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-notification-padding-y</td>
-    <td>Number</td>
-    <td><code>$alert-padding-y</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Notification.</div></div>
@@ -15813,7 +15943,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-notification-border-width</td>
     <td>Number</td>
-    <td><code>$alert-border-width</code></td>
+    <td><code>1px</code></td>
     <td><code>1px</code></td>
 </tr>
 <tr>
@@ -15822,9 +15952,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-notification-border-radius</td>
-    <td>Number</td>
-    <td><code>$alert-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Notification.</div></div>
@@ -15864,7 +15994,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-notification-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Notification.</div></div>
@@ -16014,7 +16144,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-orgchart-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart.</div></div>
@@ -16114,7 +16244,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-orgchart-node-group-bg</td>
     <td>String</td>
     <td><code>$kendo-base-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart node group.</div></div>
@@ -16142,9 +16272,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-orgchart-node-group-focus-border</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-card-focus-border</code></td>
-    <td><code>null</code></td>
+    <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
@@ -16213,7 +16343,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-orgchart-node-group-subtitle-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -16232,9 +16362,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-orgchart-card-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-padding-y</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart Card.</div></div>
@@ -16242,9 +16372,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-orgchart-card-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-orgchart-card-padding-y</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart Card.</div></div>
@@ -16324,7 +16454,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-orgchart-card-body-border-width</td>
     <td>List</td>
     <td><code>2px 0 0</code></td>
-    <td><code>2px 0 0</code></td>
+    <td><code>(2px 0 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart Card body.</div></div>
@@ -16342,9 +16472,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-orgchart-card-body-vbox-margin-right</td>
-    <td>String</td>
-    <td><code>k-math-div( $kendo-orgchart-spacer, 2 )</code></td>
-    <td><code>var(--kendo-spacing-6, 1.5rem)/2</code></td>
+    <td>List</td>
+    <td><code>list.slash( $kendo-orgchart-spacer, 2 )</code></td>
+    <td><code>(var(--kendo-spacing-6, 1.5rem) / 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The right margin of the OrgChart Card body title wrap.</div></div>
@@ -16454,7 +16584,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pdf-viewer-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer.</div></div>
@@ -16654,7 +16784,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pdf-viewer-search-panel-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer search panel.</div></div>
@@ -16682,9 +16812,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-pdf-viewer-search-panel-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer search panel.</div></div>
@@ -16693,7 +16823,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-pdf-viewer-search-panel-matches-spacing</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -16914,7 +17044,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-sm-calc-size</code></td>
-    <td><code>calc(1.4285714286 * 1em + 0.25rem * 2 + 2px)</code></td>
+    <td><code>calc(1.4285714286 * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the small Pager.</div></div>
@@ -16924,7 +17054,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-md-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + 0.375rem * 2 + 2px)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the medium Pagers.</div></div>
@@ -16934,7 +17064,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-lg-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-lg-calc-size</code></td>
-    <td><code>calc(var(--kendo-line-height, normal) * 1em + 0.5rem * 2 + 2px)</code></td>
+    <td><code>calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the large Pagers.</div></div>
@@ -17014,7 +17144,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
@@ -17054,7 +17184,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px rgba( $kendo-color-black, .08)</code></td>
-    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager.</div></div>
@@ -17104,7 +17234,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-item-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager items.</div></div>
@@ -17204,7 +17334,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-item-focus-bg</td>
     <td>String</td>
     <td><code>$kendo-pager-item-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Pager items.</div></div>
@@ -17214,7 +17344,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-item-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-color-primary, .25))</code></td>
-    <td><code>0 0 0 3px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 3px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager items.</div></div>
@@ -17296,7 +17426,7 @@ The following table lists the available variables for customizing the Bootstrap 
         pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-spacing":"var(--kendo-spacing-3\\.5, 0.875rem)","item-min-width":"calc(1.4285714286 * 1em + 0.25rem * 2 + 2px)","pager-dropdown-width":"5em"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","item-group-spacing":"var(--kendo-spacing-4, 1rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + 0.375rem * 2 + 2px)","pager-dropdown-width":"5em"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-group-spacing":"var(--kendo-spacing-4\\.5, 1.125rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + 0.5rem * 2 + 2px)","pager-dropdown-width":"6em"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-spacing":"var(--kendo-spacing-3\\.5, 0.875rem)","item-min-width":"calc(1.4285714286 * 1em + var(--kendo-spacing-1, 0.25rem) * 2 + 2px)","pager-dropdown-width":"5em"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","item-group-spacing":"var(--kendo-spacing-4, 1rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 2px)","pager-dropdown-width":"5em"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-group-spacing":"var(--kendo-spacing-4\\.5, 1.125rem)","item-min-width":"calc(var(--kendo-line-height, normal) * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 2px)","pager-dropdown-width":"6em"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
@@ -17326,7 +17456,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-palette-gray</td>
     <td>Map</td>
     <td><code>$_default-palette-gray</code></td>
-    <td><ul><li>1: #f8f9fa</li><li>2: #e9ecef</li><li>3: #dee2e6</li><li>4: #ced4da</li><li>5: #bdc4cb</li><li>6: #adb5bd</li><li>7: #9aa3ac</li><li>8: #8b959f</li><li>9: #6c757d</li><li>10: #596169</li><li>11: #495057</li><li>12: #343a40</li><li>13: #2B2F32</li><li>14: #212529</li><li>15: #121417</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
+    <td><ul><li>1: #fafafa</li><li>2: #f5f5f5</li><li>3: #ebebeb</li><li>4: #e0e0e0</li><li>5: #d6d6d6</li><li>6: #c2c2c2</li><li>7: #adadad</li><li>8: #999999</li><li>9: #808080</li><li>10: #666666</li><li>11: #525252</li><li>12: #3d3d3d</li><li>13: #292929</li><li>14: #1f1f1f</li><li>15: #141414</li><li>white: #ffffff</li><li>black: #000000</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Gray Palette provides colors to the Base, Secondary, Light, Dark, and Inverse variable groups.</div></div>
@@ -17336,7 +17466,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-palette-blue</td>
     <td>Map</td>
     <td><code>$_default-palette-blue</code></td>
-    <td><ul><li>1: #ecf4ff</li><li>2: #cfe2ff</li><li>3: #b6d4fe</li><li>4: #9ec5fe</li><li>5: #86b6fe</li><li>6: #6ea8fe</li><li>7: #3d8bfd</li><li>8: #0d6efd</li><li>9: #0c64e4</li><li>10: #0a58ca</li><li>11: #094cae</li><li>12: #084298</li><li>13: #052c65</li><li>14: #012151</li><li>15: #031633</li></ul></td>
+    <td><ul><li>1: #e9f0fd</li><li>2: #d2e2fb</li><li>3: #bdd4f8</li><li>4: #9ec0f6</li><li>5: #80acf4</li><li>6: #6098f2</li><li>7: #4082ef</li><li>8: #206eec</li><li>9: #0058e9</li><li>10: #0052d6</li><li>11: #004ac2</li><li>12: #0042af</li><li>13: #003892</li><li>14: #002c75</li><li>15: #002259</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Blue Palette provides colors to the Primary and Series A variable groups.</div></div>
@@ -17346,7 +17476,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-palette-yellow</td>
     <td>Map</td>
     <td><code>$_default-palette-yellow</code></td>
-    <td><ul><li>1: #fff9e6</li><li>2: #fff3cd</li><li>3: #ffecb5</li><li>4: #ffe69c</li><li>5: #ffe083</li><li>6: #ffda6a</li><li>7: #ffcd39</li><li>8: #ffc107</li><li>9: #cc9a06</li><li>10: #b38705</li><li>11: #997404</li><li>12: #806104</li><li>13: #664d03</li><li>14: #523e02</li><li>15: #332701</li></ul></td>
+    <td><ul><li>1: #fffae9</li><li>2: #fff4d3</li><li>3: #ffeebd</li><li>4: #ffe79e</li><li>5: #ffe080</li><li>6: #ffd760</li><li>7: #ffd040</li><li>8: #ffc720</li><li>9: #ffc000</li><li>10: #eaaf00</li><li>11: #d49f00</li><li>12: #bf9000</li><li>13: #a07800</li><li>14: #806000</li><li>15: #5e4700</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Yellow Palette provides colors to the Warning and Series F variable groups.</div></div>
@@ -17356,7 +17486,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-palette-red</td>
     <td>Map</td>
     <td><code>$_default-palette-red</code></td>
-    <td><ul><li>1: #fceeef</li><li>2: #f8d7da</li><li>3: #f5c2c7</li><li>4: #f1aeb5</li><li>5: #ed969f</li><li>6: #ea868f</li><li>7: #e35d6a</li><li>8: #dc3545</li><li>9: #b02a37</li><li>10: #9a2530</li><li>11: #842029</li><li>12: #6e1b23</li><li>13: #58151c</li><li>14: #421015</li><li>15: #2c0b0e</li></ul></td>
+    <td><ul><li>1: #feeeed</li><li>2: #fcddda</li><li>3: #fbc8c3</li><li>4: #faaaa2</li><li>5: #f98b80</li><li>6: #f76f60</li><li>7: #f65140</li><li>8: #f43520</li><li>9: #f31700</li><li>10: #df1600</li><li>11: #ca1400</li><li>12: #b61100</li><li>13: #980f00</li><li>14: #7a0c00</li><li>15: #7a0c00</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Red Palette provides colors to the Error and Series E variable groups.</div></div>
@@ -17364,9 +17494,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-palette-cyan</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-cyan</code></td>
-    <td><ul><li>1: #e7fafe</li><li>2: #cff4fc</li><li>3: #b7eefa</li><li>4: #9eeaf9</li><li>5: #86e5f8</li><li>6: #6edff6</li><li>7: #3dd5f3</li><li>8: #0dcaf0</li><li>9: #0aa2c0</li><li>10: #098da8</li><li>11: #087990</li><li>12: #076578</li><li>13: #055160</li><li>14: #04414d</li><li>15: #032830</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Cyan Palette provides colors to the Info variable group.</div></div>
@@ -17376,7 +17506,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-palette-green</td>
     <td>Map</td>
     <td><code>$_default-palette-green</code></td>
-    <td><ul><li>1: #e8f3ee</li><li>2: #d1e7dd</li><li>3: #badbcc</li><li>4: #a3cfbb</li><li>5: #8cc3aa</li><li>6: #75b798</li><li>7: #5BAE87</li><li>8: #479F76</li><li>9: #319064</li><li>10: #198754</li><li>11: #146C43</li><li>12: #0F5132</li><li>13: #0D442A</li><li>14: #0A3622</li><li>15: #051b11</li></ul></td>
+    <td><ul><li>1: #edf8e9</li><li>2: #dcf0d3</li><li>3: #cbe9bf</li><li>4: #b7e1a5</li><li>5: #9bda80</li><li>6: #81d15f</li><li>7: #69c740</li><li>8: #4ebe1f</li><li>9: #37b400</li><li>10: #32a500</li><li>11: #2d9600</li><li>12: #298700</li><li>13: #227100</li><li>14: #1c5a00</li><li>15: #1c5a00</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Green Palette provides colors to the Success and Series D variable groups.</div></div>
@@ -17384,9 +17514,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-palette-indigo</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-indigo</code></td>
-    <td><ul><li>1: #f0e7fe</li><li>2: #e2d9f3</li><li>3: #d3c5ec</li><li>4: #c5b3e6</li><li>5: #b9a3e1</li><li>6: #a98eda</li><li>7: #8c68cd</li><li>8: #6f42c1</li><li>9: #59359a</li><li>10: #4e2f89</li><li>11: #432874</li><li>12: #36215f</li><li>13: #2c1a4d</li><li>14: #21143b</li><li>15: #160d27</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Indigo Palette provides colors to the Tertiary and Series B variable groups.</div></div>
@@ -17394,12 +17524,82 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-palette-teal</td>
-    <td>Map</td>
+    <td></td>
     <td><code>$_default-palette-teal</code></td>
-    <td><ul><li>1: #ebfaf6</li><li>2: #e8dbfd</li><li>3: #d2f4ea</li><li>4: #c1f0e2</li><li>5: #a6e9d5</li><li>6: #79dfc1</li><li>7: #4dd4ac</li><li>8: #20c997</li><li>9: #1aa179</li><li>10: #178c69</li><li>11: #13795b</li><li>12: #10654c</li><li>13: #0d503c</li><li>14: #0a3e2e</li><li>15: #06281e</li></ul></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Teal Palette provides colors to the Series C variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-coral</td>
+    <td>Map</td>
+    <td><code>$_default-palette-coral</code></td>
+    <td><ul><li>1: #fff6f5</li><li>2: #ffeceb</li><li>3: #ffdedb</li><li>4: #ffc8c4</li><li>5: #ffb1ac</li><li>6: #ff9d97</li><li>7: #ff8a82</li><li>8: #ff766d</li><li>9: #ff6358</li><li>10: #ea5a51</li><li>11: #d45349</li><li>12: #bf4a42</li><li>13: #a33f38</li><li>14: #80322c</li><li>15: #5c201c</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Coral Palette provides colors to the Primary and Series A variable groups.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-sky-blue</td>
+    <td>Map</td>
+    <td><code>$_default-palette-sky-blue</code></td>
+    <td><ul><li>1: #ebf8fe</li><li>2: #d8f1fd</li><li>3: #c5eafc</li><li>4: #a3dffb</li><li>5: #81d4fA</li><li>6: #61c9f9</li><li>7: #42bff7</li><li>8: #22b3f5</li><li>9: #03a9f4</li><li>10: #039ae0</li><li>11: #028ccb</li><li>12: #027fb7</li><li>13: #026999</li><li>14: #02557a</li><li>15: #023f5c</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Sky Blue Palette provides colors to the Tertiary variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-lemon-yellow</td>
+    <td>Map</td>
+    <td><code>$_default-palette-lemon-yellow</code></td>
+    <td><ul><li>1: #fffcf1</li><li>2: #fffae2</li><li>3: #fff7d4</li><li>4: #fff4c2</li><li>5: #fff0b1</li><li>6: #ffed9d</li><li>7: #ffe989</li><li>8: #ffe676</li><li>9: #ffe162</li><li>10: #ead05a</li><li>11: #d4bc52</li><li>12: #bfa94a</li><li>13: #a3913f</li><li>14: #807131</li><li>15: #5c5223</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lemon Yellow Palette provides colors to the Series B variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-spring-green</td>
+    <td>Map</td>
+    <td><code>$_default-palette-spring-green</code></td>
+    <td><ul><li>1: #effaf3</li><li>2: #e0f6e8</li><li>3: #d1f1dd</li><li>4: #c0edd1</li><li>5: #a6e8c0</li><li>6: #8fe2af</li><li>7: #79dda0</li><li>8: #62d78f</li><li>9: #4cd180</li><li>10: #46c074</li><li>11: #3fae6a</li><li>12: #399d60</li><li>13: #2f834f</li><li>14: #266940</li><li>15: #1c4f30</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Spring Green Palette provides colors to the Series C variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-royal-blue</td>
+    <td>Map</td>
+    <td><code>$_default-palette-royal-blue</code></td>
+    <td><ul><li>1: #f0f2ff</li><li>2: #e1e4fe</li><li>3: #d2d7fe</li><li>4: #bbc3fd</li><li>5: #a5affd</li><li>6: #8e9bfc</li><li>7: #7887fb</li><li>8: #6173fb</li><li>9: #4b5ffa</li><li>10: #4558e5</li><li>11: #3f50d1</li><li>12: #3847bc</li><li>13: #2f3c9d</li><li>14: #26307d</li><li>15: #1c245e</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Royal Blue Palette provides colors to the Series D variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-lavender-purple</td>
+    <td>Map</td>
+    <td><code>$_default-palette-lavender-purple</code></td>
+    <td><ul><li>1: #f7f0ff</li><li>2: #f0e0ff</li><li>3: #e8d1ff</li><li>4: #dfbfff</li><li>5: #d6acff</li><li>6: #cc97ff</li><li>7: #c182ff</li><li>8: #b76dff</li><li>9: #ac58ff</li><li>10: #9e51ea</li><li>11: #8f49d4</li><li>12: #8142bf</li><li>13: #6b37a0</li><li>14: #562c80</li><li>15: #3f205e</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Lavender Purple Palette provides colors to the Series E variable group.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-palette-flamingo-pink</td>
+    <td>Map</td>
+    <td><code>$_default-palette-flamingo-pink</code></td>
+    <td><ul><li>1: #fff0f5</li><li>2: #ffe1eb</li><li>3: #ffd1e1</li><li>4: #ffbfd6</li><li>5: #ffacc9</li><li>6: #ff97bb</li><li>7: #ff82ae</li><li>8: #ff6da0</li><li>9: #ff5892</li><li>10: #ea5186</li><li>11: #d4497a</li><li>12: #bf426e</li><li>13: #a0375c</li><li>14: #802c49</li><li>15: #5e2036</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Flamingo Pink Palette provides colors to the Series F variable group.</div></div>
     </td>
 </tr>
 </tbody>
@@ -17506,7 +17706,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-panel-bg</td>
     <td>String</td>
     <td><code>var(--kendo-component-bg, #{$kendo-component-bg})</code></td>
-    <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>var(--kendo-component-bg, var(--kendo-color-app-surface, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Panel.</div></div>
@@ -17686,7 +17886,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-panelbar-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar.</div></div>
@@ -17716,7 +17916,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-panelbar-header-bg</td>
     <td>String</td>
     <td><code>$kendo-panelbar-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PanelBar header.</div></div>
@@ -17836,7 +18036,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-panelbar-header-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused PanelBar header.</div></div>
@@ -18126,7 +18326,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-panelbar-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused PanelBar items.</div></div>
@@ -18424,9 +18624,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-picker-gradient</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-button-gradient</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the Picker components.</div></div>
@@ -18474,9 +18674,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-picker-hover-gradient</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-button-hover-gradient</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the hovered Picker components.</div></div>
@@ -18536,7 +18736,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-picker-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Picker components.</div></div>
@@ -18615,7 +18815,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-picker-outline-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-picker-outline-text, .5 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), color-mix(in srgb, $kendo-picker-outline-text 50%, transparent))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -18686,7 +18886,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-picker-outline-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Picker components.</div></div>
@@ -18755,7 +18955,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-picker-flat-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( $kendo-button-text, .08 ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), color-mix(in srgb, $kendo-button-text 80%, transparent))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -18774,9 +18974,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-picker-flat-hover-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-picker-flat-border</code></td>
+    <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Picker components.</div></div>
@@ -18816,7 +19016,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-picker-flat-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-picker-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Picker components.</div></div>
@@ -18974,9 +19174,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-pivotgrid-cell-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-table-md-cell-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PivotGrid cell.</div></div>
@@ -18984,9 +19184,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-pivotgrid-cell-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-table-md-cell-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PivotGrid cell.</div></div>
@@ -19006,7 +19206,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pivotgrid-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid.</div></div>
@@ -19046,7 +19246,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pivotgrid-headers-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid header.</div></div>
@@ -19166,7 +19366,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pivotgrid-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the PivotGrid.</div></div>
@@ -19306,7 +19506,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pivotgrid-configurator-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid configurator.</div></div>
@@ -19506,7 +19706,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pivotgrid-calculated-field-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid calculated field.</div></div>
@@ -19624,9 +19824,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popover-border-radius</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the Popover.</div></div>
@@ -19676,7 +19876,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-popover-bg</td>
     <td>String</td>
     <td><code>$kendo-card-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover.</div></div>
@@ -19704,9 +19904,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popover-header-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-header-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover header.</div></div>
@@ -19714,9 +19914,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popover-header-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-header-padding-y</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover header.</div></div>
@@ -19744,9 +19944,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popover-header-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Popover header.</div></div>
@@ -19754,9 +19954,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popover-header-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover header.</div></div>
@@ -19764,9 +19964,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popover-header-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Popover header.</div></div>
@@ -19774,9 +19974,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popover-body-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-body-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Popover body.</div></div>
@@ -19784,9 +19984,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popover-body-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-body-padding-y</code></td>
-    <td><code>1rem</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Popover body.</div></div>
@@ -19846,7 +20046,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-popover-callout-bg</td>
     <td>String</td>
     <td><code>$kendo-popover-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Popover callout.</div></div>
@@ -19966,7 +20166,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-popup-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the popup.</div></div>
@@ -20024,9 +20224,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody><tr>
     <td>$kendo-progressbar-height</td>
-    <td>Number</td>
-    <td><code>$progress-height</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ProgressBar.</div></div>
@@ -20045,8 +20245,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-progressbar-animation-timing</td>
     <td>List</td>
-    <td><code>$progress-bar-animation-timing</code></td>
     <td><code>1s linear infinite</code></td>
+    <td><code>(1s linear infinite)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The animation timing of the ProgressBar.</div></div>
@@ -20075,7 +20275,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-progressbar-font-size</td>
     <td>Number</td>
-    <td><code>$progress-font-size</code></td>
+    <td><code>$kendo-font-size * .75</code></td>
     <td><code>0.75rem</code></td>
 </tr>
 <tr>
@@ -20095,7 +20295,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), $gray-200)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), #e9ecef)</code></td>
     <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
@@ -20105,7 +20305,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-progressbar-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $gray-200 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( #e9ecef ))</code></td>
     <td><code>var(--kendo-color-base-on-subtle, #212529)</code></td>
 </tr>
 <tr>
@@ -20114,9 +20314,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the ProgressBar.</div></div>
@@ -20154,9 +20354,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-value-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The progress border color of the ProgressBar.</div></div>
@@ -20194,9 +20394,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-indeterminate-border</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-progressbar-border</code></td>
-    <td><code>null</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the indeterminate ProgressBar.</div></div>
@@ -20276,7 +20476,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-prompt-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt.</div></div>
@@ -20306,7 +20506,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-prompt-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt header.</div></div>
@@ -20366,7 +20566,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-prompt-content-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt content.</div></div>
@@ -20622,7 +20822,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-radio-bg</td>
     <td>String</td>
     <td><code>$kendo-checkbox-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton.</div></div>
@@ -20722,7 +20922,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-radio-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-checkbox-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused RadioButton.</div></div>
@@ -20742,7 +20942,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-radio-focus-checked-shadow</td>
     <td>List</td>
     <td><code>$kendo-checkbox-focus-checked-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked RadioButton.</div></div>
@@ -20852,7 +21052,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-radio-glyph-font-family</td>
     <td>List</td>
     <td><code>"WebComponentsIcons", monospace</code></td>
-    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>("WebComponentsIcons", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the RadioButton indicator glyph.</div></div>
@@ -21001,7 +21201,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-rating-container-margin-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -21011,7 +21211,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-rating-item-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -21021,7 +21221,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-rating-item-padding-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -21031,7 +21231,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-rating-label-margin-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -21041,7 +21241,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-rating-label-margin-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -21050,9 +21250,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-rating-label-line-height</td>
-    <td>Number</td>
-    <td><code>$kendo-line-height-lg</code></td>
-    <td><code>2</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-line-height-lg, normal )</code></td>
+    <td><code>var(--kendo-line-height-lg, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating label.</div></div>
@@ -21061,7 +21261,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-rating-icon-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -21102,7 +21302,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-rating-icon-focus-shadow</td>
     <td>List</td>
     <td><code>0 2px 4px rgba( black, .1 )</code></td>
-    <td><code>0 2px 4px rgba(0, 0, 0, 0.1)</code></td>
+    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
@@ -21112,7 +21312,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-rating-icon-focus-selected-shadow</td>
     <td>List</td>
     <td><code>0 2px 4px rgba( black, .1)</code></td>
-    <td><code>0 2px 4px rgba(0, 0, 0, 0.1)</code></td>
+    <td><code>(0 2px 4px rgba(0, 0, 0, 0.1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>
@@ -21182,7 +21382,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler.</div></div>
@@ -21212,7 +21412,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler ToolBar.</div></div>
@@ -21252,7 +21452,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler footer.</div></div>
@@ -21311,7 +21511,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-scheduler-event-line-height</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-scheduler-event-min-height} - (2 * #{$kendo-padding-sm-y}) )</code></td>
+    <td><code>calc( #{$kendo-scheduler-event-min-height} - (2 * #{k-spacing(1)}) )</code></td>
     <td><code>calc(25px - 2 * var(--kendo-spacing-1, 0.25rem))</code></td>
 </tr>
 <tr>
@@ -21462,7 +21662,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-event-selected-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 3px rgba( white, .5 )</code></td>
-    <td><code>inset 0 0 0 3px rgba(255, 255, 255, 0.5)</code></td>
+    <td><code>(inset 0 0 0 3px rgba(255, 255, 255, 0.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the selected Scheduler event.</div></div>
@@ -21472,7 +21672,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-event-ongoing-shadow</td>
     <td>List</td>
     <td><code>inset 0px 0px 0px 1px #ff0000</code></td>
-    <td><code>inset 0px 0px 0px 1px #ff0000</code></td>
+    <td><code>(inset 0px 0px 0px 1px #ff0000)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the ongoing Scheduler event.</div></div>
@@ -21641,7 +21841,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-scheduler-yearview-indicator-calc-offset-left</td>
     <td>Calculation</td>
-    <td><code>calc( 50% - #{k-math-div( $kendo-scheduler-yearview-indicator-size, 2)} )</code></td>
+    <td><code>calc( 50% - #{math.div( $kendo-scheduler-yearview-indicator-size, 2)} )</code></td>
     <td><code>calc(50% - 1.5px)</code></td>
 </tr>
 <tr>
@@ -21772,7 +21972,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-tooltip-day-font-size</td>
     <td>Calculation</td>
     <td><code>calc( var( --kendo-font-size-sm, #{$kendo-font-size-sm} ) * 2 )</code></td>
-    <td><code>calc(var(--kendo-font-size-sm, 0.875rem) * 2)</code></td>
+    <td><code>calc(var(--kendo-font-size-sm, 0.75rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the day inside the Scheduler Tooltip.</div></div>
@@ -21846,6 +22046,86 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Scheduler Tooltip callout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-appointments-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Scheduler appointments.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-template-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Scheduler event template.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-template-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Scheduler event template.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-event-actions-inset-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline inset of the Scheduler event actions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-indicators-margin</td>
+    <td>List</td>
+    <td><code>k-spacing(1) .4ex 0 k-spacing(2)</code></td>
+    <td><code>(var(--kendo-spacing-1, 0.25rem) 0.4ex 0 var(--kendo-spacing-2, 0.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Scheduler event indicators.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-rtl-indicators-margin</td>
+    <td>List</td>
+    <td><code>k-spacing(1) 0 k-spacing(2) .4ex</code></td>
+    <td><code>(var(--kendo-spacing-1, 0.25rem) 0 var(--kendo-spacing-2, 0.5rem) 0.4ex)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Scheduler event indicators in rtl.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-marquee-label-inset-x</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inline inset of the Scheduler marquee labels.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scheduler-marquee-label-inset-y</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The block inset of the Scheduler marquee labels.</div></div>
     </td>
 </tr>
 </tbody>
@@ -21922,7 +22202,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scrollview-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the ScrollView.</div></div>
@@ -21992,7 +22272,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scrollview-pagebutton-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px rgba( black, .13 )</code></td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, 0.13)</code></td>
+    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView page button.</div></div>
@@ -22062,7 +22342,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scrollview-navigation-icon-shadow</td>
     <td>List</td>
     <td><code>rgba( black, .3 ) 0 0 15px</code></td>
-    <td><code>rgba(0, 0, 0, 0.3) 0 0 15px</code></td>
+    <td><code>(rgba(0, 0, 0, 0.3) 0 0 15px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ScrollView navigation arrows.</div></div>
@@ -22342,7 +22622,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-slider-button-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider Buttons.</div></div>
@@ -22522,7 +22802,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 50%, transparent), rgba( $kendo-color-primary, .5 ))</code></td>
-    <td><code>0 0 0 3px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 50%, transparent)</code></td>
+    <td><code>(0 0 0 3px color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Slider drag handle.</div></div>
@@ -22571,7 +22851,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), $gray-200)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), #e9ecef)</code></td>
     <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
@@ -22672,7 +22952,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-split-button-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-button-focus-shadow</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 50%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the SplitButton.</div></div>
@@ -22680,9 +22960,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-split-button-arrow-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the arrow Button.</div></div>
@@ -22690,9 +22970,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-split-button-sm-arrow-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-sm-padding-y</code></td>
-    <td><code>0.25rem</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small arrow Button.</div></div>
@@ -22700,9 +22980,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-split-button-md-arrow-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-md-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium arrow Button.</div></div>
@@ -22710,9 +22990,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-split-button-lg-arrow-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-lg-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large arrow Button.</div></div>
@@ -22720,9 +23000,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-split-button-arrow-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the arrow Button.</div></div>
@@ -22730,9 +23010,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-split-button-sm-arrow-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-sm-padding-y</code></td>
-    <td><code>0.25rem</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small arrow Button.</div></div>
@@ -22740,9 +23020,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-split-button-md-arrow-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-md-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium arrow Button.</div></div>
@@ -22750,9 +23030,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-split-button-lg-arrow-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-lg-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large arrow Button.</div></div>
@@ -22822,7 +23102,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-splitter-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Splitter.</div></div>
@@ -22912,7 +23192,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-splitbar-bg</td>
     <td>String</td>
     <td><code>$kendo-base-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Splitter split bar.</div></div>
@@ -23032,7 +23312,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet.</div></div>
@@ -23062,7 +23342,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet header.</div></div>
@@ -23102,7 +23382,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-table-header-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet table headers.</div></div>
@@ -23182,7 +23462,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-action-bar-font-family</td>
     <td>List</td>
     <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td><code>(Arial, Verdana, sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet action bar.</div></div>
@@ -23210,9 +23490,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-spreadsheet-formula-input-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-input-padding-x</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Spreadsheet formula input.</div></div>
@@ -23220,9 +23500,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-spreadsheet-formula-input-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-input-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Spreadsheet formula input.</div></div>
@@ -23239,10 +23519,20 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-spreadsheet-formula-bar-icon-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Spreadsheet formula bar icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-spreadsheet-view-font-family</td>
     <td>List</td>
     <td><code>Arial, Verdana, sans-serif</code></td>
-    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td><code>(Arial, Verdana, sans-serif)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Spreadsheet view.</div></div>
@@ -23292,7 +23582,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-selection-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary, #0d6efd)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #0d6efd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet selection.</div></div>
@@ -23322,7 +23612,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-single-selection-border</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Spreadsheet single selection.</div></div>
@@ -23342,7 +23632,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-active-cell-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet active cell.</div></div>
@@ -23352,7 +23642,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-active-cell-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary, #0d6efd)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #0d6efd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet active cell.</div></div>
@@ -23392,7 +23682,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-auto-fill-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
-    <td><code>inset 0 0 0 1px var(--kendo-color-primary, #0d6efd)</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #0d6efd))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet auto fill.</div></div>
@@ -23402,7 +23692,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-auto-fill-punch-bg</td>
     <td>String</td>
     <td><code>rgba( $kendo-spreadsheet-bg, .5 )</code></td>
-    <td><code>rgba(var(--kendo-color-surface-alt, #ffffff), 0.5)</code></td>
+    <td><code>rgba(var(--kendo-color-app-surface, #ffffff), 0.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet auto fill punch.</div></div>
@@ -23462,7 +23752,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-cell-editor-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet cell editor.</div></div>
@@ -23632,7 +23922,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2000px rgba( black, .5 )</code></td>
-    <td><code>inset 0 0 0 2000px rgba(0, 0, 0, 0.5)</code></td>
+    <td><code>(inset 0 0 0 2000px rgba(0, 0, 0, 0.5))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Spreadsheet image Dialog preview.</div></div>
@@ -23652,7 +23942,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Spreadsheet image Dialog preview.</div></div>
@@ -23776,6 +24066,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical spacing of the Spreadsheet DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-filter-padding</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Spreadsheet filter.</div></div>
     </td>
 </tr>
 </tbody>
@@ -24052,7 +24352,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-stepper-indicator-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Stepper indicator.</div></div>
@@ -24121,7 +24421,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), if( $kendo-is-dark-theme, $gray-600, $gray-500))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), if( $kendo-is-dark-theme, #6c757d, #adb5bd))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 65%, transparent)</code></td>
 </tr>
 <tr>
@@ -24151,7 +24451,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-stepper-indicator-done-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-stepper-indicator-done-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-stepper-indicator-done-bg ))</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -24350,9 +24650,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-stepper-label-hover-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Stepper label.</div></div>
@@ -24361,7 +24661,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-stepper-label-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), if( $kendo-is-dark-theme, $gray-600, $gray-500))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 65%, transparent), if( $kendo-is-dark-theme, #6c757d, #adb5bd))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 65%, transparent)</code></td>
 </tr>
 <tr>
@@ -24371,7 +24671,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-stepper-optional-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -24400,9 +24700,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-stepper-optional-label-font-style</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional Stepper label.</div></div>
@@ -24482,7 +24782,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-stepper-content-transition-timing-function</td>
     <td>List</td>
     <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
-    <td><code>cubic-bezier(0.4, 0, 0.2, 1) 0ms</code></td>
+    <td><code>(cubic-bezier(0.4, 0, 0.2, 1) 0ms)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the Stepper transition.</div></div>
@@ -24530,9 +24830,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-thumb-border-width</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Switch thumb.</div></div>
@@ -24540,9 +24840,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-label-text-transform</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the Switch label.</div></div>
@@ -24562,11 +24862,11 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-switch-sizes</td>
     <td>Map</td>
     <td><code>(
-    sm: ( font-size: null, track-width: 48px, track-height: 26px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 3px, label-offset: null ),
-    md: ( font-size: null, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: null ),
-    lg: ( font-size: null, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: null )
+    sm: ( font-size: unset, track-width: 48px, track-height: 26px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 3px, label-offset: null ),
+    md: ( font-size: unset, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: null ),
+    lg: ( font-size: unset, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: null )
 )</code></td>
-    <td><ul><li>sm: "font-size":null,"track-width":"48px","track-height":"26px","thumb-width":"20px","thumb-height":"20px","thumb-offset":"3px","label-offset":null</li><li>md: "font-size":null,"track-width":"56px","track-height":"30px","thumb-width":"24px","thumb-height":"24px","thumb-offset":"3px","label-offset":null</li><li>lg: "font-size":null,"track-width":"64px","track-height":"34px","thumb-width":"28px","thumb-height":"28px","thumb-offset":"3px","label-offset":null</li></ul></td>
+    <td><ul><li>sm: "font-size":"unset","track-width":"48px","track-height":"26px","thumb-width":"20px","thumb-height":"20px","thumb-offset":"3px","label-offset":null</li><li>md: "font-size":"unset","track-width":"56px","track-height":"30px","thumb-width":"24px","thumb-height":"24px","thumb-offset":"3px","label-offset":null</li><li>lg: "font-size":"unset","track-width":"64px","track-height":"34px","thumb-width":"28px","thumb-height":"28px","thumb-offset":"3px","label-offset":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different Switch sizes.</div></div>
@@ -24576,7 +24876,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-switch-off-track-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is not checked.</div></div>
@@ -24584,9 +24884,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-off-track-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the Switch is not checked.</div></div>
@@ -24595,7 +24895,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-switch-off-track-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), $gray-500)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), #adb5bd)</code></td>
     <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
@@ -24696,7 +24996,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-switch-off-track-focus-ring</td>
     <td>List</td>
     <td><code>.25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
-    <td><code>0.25rem solid color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0.25rem solid color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is not checked.</div></div>
@@ -24705,7 +25005,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-switch-off-track-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $gray-800, $gray-200 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, #343a40, #e9ecef ))</code></td>
     <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
@@ -24745,7 +25045,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), $gray-500)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), #adb5bd)</code></td>
     <td><code>var(--kendo-color-base-emphasis, rgba(33, 37, 41, 0.34))</code></td>
 </tr>
 <tr>
@@ -24754,9 +25054,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the Switch is not checked.</div></div>
@@ -24764,9 +25064,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the Switch is not checked.</div></div>
@@ -24834,9 +25134,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-on-track-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the Switch is checked.</div></div>
@@ -24946,7 +25246,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-switch-on-track-focus-ring</td>
     <td>List</td>
     <td><code>.25rem solid if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-switch-on-track-border, .25 ))</code></td>
-    <td><code>0.25rem solid color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0.25rem solid color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is checked.</div></div>
@@ -24995,7 +25295,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-switch-on-thumb-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-switch-on-track-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-switch-on-track-bg ))</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -25004,9 +25304,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the Switch is checked.</div></div>
@@ -25014,9 +25314,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-border</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>$kendo-switch-on-thumb-bg</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the Switch is checked.</div></div>
@@ -25185,7 +25485,7 @@ The following table lists the available variables for customizing the Bootstrap 
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"0.5rem","cell-padding-y":"0.5rem"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)"</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-1, 0.25rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-2, 0.5rem)"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","cell-padding-x":"var(--kendo-spacing-2, 0.5rem)","cell-padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
@@ -25195,7 +25495,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-table-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tables.</div></div>
@@ -25225,7 +25525,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-table-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table headers.</div></div>
@@ -25265,7 +25565,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-table-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table footers.</div></div>
@@ -25295,7 +25595,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-table-group-row-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group rows in table.</div></div>
@@ -25415,7 +25715,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-table-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px rgba( $kendo-color-black, .08)</code></td>
-    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
+    <td><code>(inset 0 0 0 2px rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
@@ -25603,9 +25903,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-padding-x</td>
-    <td>Number</td>
-    <td><code>$nav-link-padding-x</code></td>
-    <td><code>1rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TabStrip items.</div></div>
@@ -25613,9 +25913,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tabstrip-item-padding-y</td>
-    <td>Number</td>
-    <td><code>$nav-link-padding-y</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TabStrip items.</div></div>
@@ -25714,7 +26014,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-tabstrip-item-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), $gray-200)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), #e9ecef)</code></td>
     <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
@@ -25735,7 +26035,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-tabstrip-item-selected-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected TabStrip items.</div></div>
@@ -25785,7 +26085,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-tabstrip-item-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-list-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused TabStrip items.</div></div>
@@ -25915,7 +26215,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-tabstrip-content-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TabStrip content.</div></div>
@@ -26214,7 +26514,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-taskboard-column-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $gray-900, $gray-100 ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light ))</code></td>
     <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
@@ -26405,7 +26705,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-taskboard-pane-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard pane.</div></div>
@@ -26543,9 +26843,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-taskboard-card-border-radius</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card.</div></div>
@@ -26555,7 +26855,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-taskboard-card-bg</td>
     <td>String</td>
     <td><code>$kendo-card-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TaskBoard Card.</div></div>
@@ -26663,9 +26963,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-focus-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #0b5cd5"></span><code>#0b5cd5</code></td>
+    <td><code>var(--kendo-color-primary-active, #0a58ca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
@@ -26673,9 +26973,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-hover-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #0b5cd5"></span><code>#0b5cd5</code></td>
+    <td><code>var(--kendo-color-primary-active, #0a58ca)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
@@ -26693,9 +26993,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-taskboard-drag-placeholder-border-radius</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-taskboard-card-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TaskBoard Card placeholder.</div></div>
@@ -26754,7 +27054,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-tile-layout-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), $gray-100)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), $kendo-color-light)</code></td>
     <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
@@ -26813,9 +27113,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tile-layout-hint-border-radius</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-card-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the TileLayout hint.</div></div>
@@ -26924,7 +27224,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-items-padding</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -26964,7 +27264,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-mobile-spacing-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -26974,7 +27274,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-mobile-spacing-y</td>
     <td>String</td>
-    <td><code>$kendo-padding-md-x</code></td>
+    <td><code>k-spacing(4)</code></td>
     <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
@@ -27143,9 +27443,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-timeline-flag-padding-x</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-padding-x</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Timeline flag.</div></div>
@@ -27153,9 +27453,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-timeline-flag-padding-y</td>
-    <td>Number</td>
+    <td>String</td>
     <td><code>$kendo-button-padding-y</code></td>
-    <td><code>0.375rem</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Timeline flag.</div></div>
@@ -27224,7 +27524,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-flag-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-timeline-flag-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-timeline-flag-bg ))</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -27364,7 +27664,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-timeline-collapse-arrow-padding-x</td>
     <td>String</td>
-    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>k-spacing(2)</code></td>
     <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
@@ -27595,7 +27895,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
@@ -27765,7 +28065,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-toolbar-item-shadow</td>
     <td>List</td>
     <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
-    <td><code>0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent)</code></td>
+    <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>
@@ -27819,9 +28119,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody><tr>
     <td>$kendo-tooltip-padding-y</td>
-    <td>Number</td>
-    <td><code>$tooltip-padding-y</code></td>
-    <td><code>0.25rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Tooltip.</div></div>
@@ -27829,9 +28129,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tooltip-padding-x</td>
-    <td>Number</td>
-    <td><code>$tooltip-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Tooltip.</div></div>
@@ -27849,9 +28149,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tooltip-border-radius</td>
-    <td>Number</td>
-    <td><code>$tooltip-border-radius</code></td>
-    <td><code>0.375rem</code></td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Tooltip.</div></div>
@@ -27891,7 +28191,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-tooltip-title-font-size</td>
     <td>Calculation</td>
     <td><code>calc( var( --kendo-font-size-sm, #{$kendo-font-size-sm} ) * 1.25 )</code></td>
-    <td><code>calc(var(--kendo-font-size-sm, 0.875rem) * 1.25)</code></td>
+    <td><code>calc(var(--kendo-font-size-sm, 0.75rem) * 1.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Tooltip title.</div></div>
@@ -27909,9 +28209,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tooltip-callout-size</td>
-    <td>Number</td>
-    <td><code>$tooltip-arrow-height</code></td>
-    <td><code>0.4rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{ k-spacing(8) } / 5 )</code></td>
+    <td><code>calc(var(--kendo-spacing-8, 2rem) / 5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the Tooltip callout.</div></div>
@@ -27930,7 +28230,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-tooltip-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), k-contrast-color( $kendo-tooltip-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), k-contrast-legacy( $kendo-tooltip-bg ))</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -28001,7 +28301,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-treelist-footer-row-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TreeList footer row.</div></div>
@@ -28100,7 +28400,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-treeview-sm-line-height</td>
     <td>Number</td>
-    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>math.div( 20, 14 )</code></td>
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
@@ -28279,9 +28579,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-treeview-md-checkbox-padding-y</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the checkbox in the medium TreeView.</div></div>
@@ -28326,7 +28626,7 @@ The following table lists the available variables for customizing the Bootstrap 
         checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3, 0.75rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":null</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3, 0.75rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":null</li></ul></td>
+    <td><ul><li>sm: "font-size":"var(--kendo-font-size-sm, inherit)","line-height":1.4285714285714286,"item-padding-x":"var(--kendo-spacing-2, 0.5rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":"var(--kendo-spacing-0\\.5, 0.125rem)"</li><li>md: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3, 0.75rem)","item-padding-y":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":"unset"</li><li>lg: "font-size":"var(--kendo-font-size, inherit)","line-height":"var(--kendo-line-height, normal)","item-padding-x":"var(--kendo-spacing-3, 0.75rem)","item-padding-y":"var(--kendo-spacing-2, 0.5rem)","checkbox-padding-x":"var(--kendo-spacing-1, 0.25rem)","checkbox-padding-y":null</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TreeView.</div></div>
@@ -28446,7 +28746,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-treeview-item-focus-shadow</td>
     <td>List</td>
     <td><code>inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-treeview-text, .15 ))</code></td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of focused TreeView items.</div></div>
@@ -28546,7 +28846,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-treeview-loadmore-focus-shadow</td>
     <td>List</td>
     <td><code>$kendo-treeview-item-focus-shadow</code></td>
-    <td><code>inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent)</code></td>
+    <td><code>(inset 0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 15%, transparent))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
@@ -28575,7 +28875,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-font-size</td>
     <td>Number</td>
-    <td><code>$font-size-base</code></td>
+    <td><code>1rem</code></td>
     <td><code>1rem</code></td>
 </tr>
 <tr>
@@ -28586,7 +28886,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-font-size-xs</td>
     <td>Number</td>
     <td><code>( $kendo-font-size * .75 )</code></td>
-    <td><code>0.75rem</code></td>
+    <td><code>0.625rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra small font size across all components.</div></div>
@@ -28595,8 +28895,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-size-sm</td>
     <td>Number</td>
-    <td><code>$font-size-sm</code></td>
-    <td><code>0.875rem</code></td>
+    <td><code>( $kendo-font-size * .875 )</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small font size across all components.</div></div>
@@ -28615,8 +28915,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-size-lg</td>
     <td>Number</td>
-    <td><code>$font-size-lg</code></td>
-    <td><code>1.25rem</code></td>
+    <td><code>( $kendo-font-size * 1.25 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large font size across all components.</div></div>
@@ -28626,7 +28926,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-font-size-xl</td>
     <td>Number</td>
     <td><code>( $kendo-font-size-md * 1.5 )</code></td>
-    <td><code>1.5rem</code></td>
+    <td><code>1.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The extra large font size across all components.</div></div>
@@ -28635,7 +28935,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-line-height</td>
     <td>Number</td>
-    <td><code>$line-height-base</code></td>
+    <td><code>1.5</code></td>
     <td><code>1.5</code></td>
 </tr>
 <tr>
@@ -28655,7 +28955,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-line-height-sm</td>
     <td>Number</td>
-    <td><code>$line-height-sm</code></td>
+    <td><code>1.25</code></td>
     <td><code>1.25</code></td>
 </tr>
 <tr>
@@ -28675,8 +28975,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-line-height-lg</td>
     <td>Number</td>
-    <td><code>$line-height-lg</code></td>
     <td><code>2</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large line height across all components.</div></div>
@@ -28695,7 +28995,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-weight-light</td>
     <td>Number</td>
-    <td><code>$font-weight-light</code></td>
+    <td><code>300</code></td>
     <td><code>300</code></td>
 </tr>
 <tr>
@@ -28705,7 +29005,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-weight-normal</td>
     <td>Number</td>
-    <td><code>$font-weight-normal</code></td>
+    <td><code>400</code></td>
     <td><code>400</code></td>
 </tr>
 <tr>
@@ -28735,7 +29035,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-weight-bold</td>
     <td>Number</td>
-    <td><code>$font-weight-bold</code></td>
+    <td><code>700</code></td>
     <td><code>700</code></td>
 </tr>
 <tr>
@@ -28745,8 +29045,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-family-sans-serif</td>
     <td>List</td>
-    <td><code>$font-family-sans-serif</code></td>
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+    <td><code>(system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans-serif font family across all components.</div></div>
@@ -28755,8 +29055,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-font-family-monospace</td>
     <td>List</td>
-    <td><code>$font-family-monospace</code></td>
     <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace</code></td>
+    <td><code>(SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The monospace font family across all components.</div></div>
@@ -28766,7 +29066,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-font-family</td>
     <td>List</td>
     <td><code>$kendo-font-family-sans-serif</code></td>
-    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+    <td><code>(system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base font family across all components.</div></div>
@@ -28806,7 +29106,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-font-families</td>
     <td>Map</td>
     <td><code>$_default-font-families</code></td>
-    <td><ul><li>sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</li><li>monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace</li></ul></td>
+    <td><ul><li>sans-serif: (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")</li><li>monospace: (SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font families map</div></div>
@@ -28815,7 +29115,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h1-font-size</td>
     <td>Number</td>
-    <td><code>$h1-font-size</code></td>
+    <td><code>$kendo-font-size * 2.5</code></td>
     <td><code>2.5rem</code></td>
 </tr>
 <tr>
@@ -28825,7 +29125,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h2-font-size</td>
     <td>Number</td>
-    <td><code>$h2-font-size</code></td>
+    <td><code>$kendo-font-size * 2</code></td>
     <td><code>2rem</code></td>
 </tr>
 <tr>
@@ -28835,7 +29135,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h3-font-size</td>
     <td>Number</td>
-    <td><code>$h3-font-size</code></td>
+    <td><code>$kendo-font-size * 1.75</code></td>
     <td><code>1.75rem</code></td>
 </tr>
 <tr>
@@ -28845,7 +29145,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h4-font-size</td>
     <td>Number</td>
-    <td><code>$h4-font-size</code></td>
+    <td><code>$kendo-font-size * 1.5</code></td>
     <td><code>1.5rem</code></td>
 </tr>
 <tr>
@@ -28855,7 +29155,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h5-font-size</td>
     <td>Number</td>
-    <td><code>$h5-font-size</code></td>
+    <td><code>$kendo-font-size * 1.25</code></td>
     <td><code>1.25rem</code></td>
 </tr>
 <tr>
@@ -28865,7 +29165,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h6-font-size</td>
     <td>Number</td>
-    <td><code>$h6-font-size</code></td>
+    <td><code>$kendo-font-size</code></td>
     <td><code>1rem</code></td>
 </tr>
 <tr>
@@ -28875,7 +29175,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h1-font-family</td>
     <td>Null</td>
-    <td><code>$headings-font-family</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -28885,7 +29185,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h2-font-family</td>
     <td>Null</td>
-    <td><code>$headings-font-family</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -28895,7 +29195,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h3-font-family</td>
     <td>Null</td>
-    <td><code>$headings-font-family</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -28905,7 +29205,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h4-font-family</td>
     <td>Null</td>
-    <td><code>$headings-font-family</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -28915,7 +29215,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h5-font-family</td>
     <td>Null</td>
-    <td><code>$headings-font-family</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -28925,7 +29225,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h6-font-family</td>
     <td>Null</td>
-    <td><code>$headings-font-family</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -28935,7 +29235,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h1-line-height</td>
     <td>Number</td>
-    <td><code>$headings-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -28945,7 +29245,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h2-line-height</td>
     <td>Number</td>
-    <td><code>$headings-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -28955,7 +29255,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h3-line-height</td>
     <td>Number</td>
-    <td><code>$headings-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -28965,7 +29265,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h4-line-height</td>
     <td>Number</td>
-    <td><code>$headings-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -28975,7 +29275,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h5-line-height</td>
     <td>Number</td>
-    <td><code>$headings-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -28985,7 +29285,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h6-line-height</td>
     <td>Number</td>
-    <td><code>$headings-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -28995,7 +29295,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h1-font-weight</td>
     <td>Number</td>
-    <td><code>$headings-font-weight</code></td>
+    <td><code>$kendo-font-weight-medium</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -29005,7 +29305,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h2-font-weight</td>
     <td>Number</td>
-    <td><code>$headings-font-weight</code></td>
+    <td><code>$kendo-font-weight-medium</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -29015,7 +29315,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h3-font-weight</td>
     <td>Number</td>
-    <td><code>$headings-font-weight</code></td>
+    <td><code>$kendo-font-weight-medium</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -29025,7 +29325,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h4-font-weight</td>
     <td>Number</td>
-    <td><code>$headings-font-weight</code></td>
+    <td><code>$kendo-font-weight-medium</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -29035,7 +29335,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h5-font-weight</td>
     <td>Number</td>
-    <td><code>$headings-font-weight</code></td>
+    <td><code>$kendo-font-weight-medium</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -29045,7 +29345,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h6-font-weight</td>
     <td>Number</td>
-    <td><code>$headings-font-weight</code></td>
+    <td><code>$kendo-font-weight-medium</code></td>
     <td><code>500</code></td>
 </tr>
 <tr>
@@ -29115,8 +29415,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h1-margin</td>
     <td>List</td>
-    <td><code>0 0 $headings-margin-bottom</code></td>
-    <td><code>0 0 0.5rem</code></td>
+    <td><code>0 0 k-spacing(2)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the highest level heading.</div></div>
@@ -29125,8 +29425,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h2-margin</td>
     <td>List</td>
-    <td><code>0 0 $headings-margin-bottom</code></td>
-    <td><code>0 0 0.5rem</code></td>
+    <td><code>0 0 k-spacing(2)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the second highest level heading.</div></div>
@@ -29135,8 +29435,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h3-margin</td>
     <td>List</td>
-    <td><code>0 0 $headings-margin-bottom</code></td>
-    <td><code>0 0 0.5rem</code></td>
+    <td><code>0 0 k-spacing(2)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the third highest level heading.</div></div>
@@ -29145,8 +29445,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h4-margin</td>
     <td>List</td>
-    <td><code>0 0 $headings-margin-bottom</code></td>
-    <td><code>0 0 0.5rem</code></td>
+    <td><code>0 0 k-spacing(2)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the fourth highest level heading.</div></div>
@@ -29155,8 +29455,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h5-margin</td>
     <td>List</td>
-    <td><code>0 0 $headings-margin-bottom</code></td>
-    <td><code>0 0 0.5rem</code></td>
+    <td><code>0 0 k-spacing(2)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the fifth highest level heading.</div></div>
@@ -29165,8 +29465,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-h6-margin</td>
     <td>List</td>
-    <td><code>0 0 $headings-margin-bottom</code></td>
-    <td><code>0 0 0.5rem</code></td>
+    <td><code>0 0 k-spacing(2)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-2, 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the sixth highest level heading.</div></div>
@@ -29225,7 +29525,7 @@ The following table lists the available variables for customizing the Bootstrap 
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><ul><li>h1: "font-size":"2.5rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h2: "font-size":"2rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h3: "font-size":"1.75rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h4: "font-size":"1.5rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h5: "font-size":"1.25rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li><li>h6: "font-size":"1rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"0 0 0.5rem"</li></ul></td>
+    <td><ul><li>h1: "font-size":"2.5rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h2: "font-size":"2rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h3: "font-size":"1.75rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h4: "font-size":"1.5rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h5: "font-size":"1.25rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h6: "font-size":"1rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
@@ -29234,8 +29534,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-paragraph-margin</td>
     <td>List</td>
-    <td><code>0 0 $paragraph-margin-bottom</code></td>
-    <td><code>0 0 1rem</code></td>
+    <td><code>0 0 k-spacing(4)</code></td>
+    <td><code>(0 0 var(--kendo-spacing-4, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the paragraph.</div></div>
@@ -29395,7 +29695,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-code-bg</td>
     <td>String</td>
     <td><code>$kendo-base-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the code tag.</div></div>
@@ -29423,9 +29723,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-display1-font-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $display-font-sizes, 1)</code></td>
-    <td><code>5rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-font-size} * 5 )</code></td>
+    <td><code>calc(1rem * 5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the largest display text.</div></div>
@@ -29433,9 +29733,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-display2-font-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $display-font-sizes, 2)</code></td>
-    <td><code>4.5rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-font-size} * 4.5 )</code></td>
+    <td><code>calc(1rem * 4.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the second largest display text.</div></div>
@@ -29443,9 +29743,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-display3-font-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $display-font-sizes, 3)</code></td>
-    <td><code>4rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-font-size} * 4 )</code></td>
+    <td><code>calc(1rem * 4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the third largest display text.</div></div>
@@ -29453,9 +29753,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-display4-font-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $display-font-sizes, 4)</code></td>
-    <td><code>3.5rem</code></td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-font-size} * 3.5 )</code></td>
+    <td><code>calc(1rem * 3.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the fourth largest display text.</div></div>
@@ -29463,9 +29763,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-display1-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the largest display text.</div></div>
@@ -29473,9 +29773,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-display2-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the second largest display text.</div></div>
@@ -29483,9 +29783,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-display3-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the third largest display text.</div></div>
@@ -29493,9 +29793,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-display4-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the fourth largest display text.</div></div>
@@ -29504,7 +29804,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-display1-line-height</td>
     <td>Number</td>
-    <td><code>$display-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -29514,7 +29814,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-display2-line-height</td>
     <td>Number</td>
-    <td><code>$display-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -29524,7 +29824,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-display3-line-height</td>
     <td>Number</td>
-    <td><code>$display-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -29534,7 +29834,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-display4-line-height</td>
     <td>Number</td>
-    <td><code>$display-line-height</code></td>
+    <td><code>1.2</code></td>
     <td><code>1.2</code></td>
 </tr>
 <tr>
@@ -29544,7 +29844,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-display1-font-weight</td>
     <td>Number</td>
-    <td><code>$display-font-weight</code></td>
+    <td><code>$kendo-font-weight-light</code></td>
     <td><code>300</code></td>
 </tr>
 <tr>
@@ -29554,7 +29854,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-display2-font-weight</td>
     <td>Number</td>
-    <td><code>$display-font-weight</code></td>
+    <td><code>$kendo-font-weight-light</code></td>
     <td><code>300</code></td>
 </tr>
 <tr>
@@ -29564,7 +29864,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-display3-font-weight</td>
     <td>Number</td>
-    <td><code>$display-font-weight</code></td>
+    <td><code>$kendo-font-weight-light</code></td>
     <td><code>300</code></td>
 </tr>
 <tr>
@@ -29574,7 +29874,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-display4-font-weight</td>
     <td>Number</td>
-    <td><code>$display-font-weight</code></td>
+    <td><code>$kendo-font-weight-light</code></td>
     <td><code>300</code></td>
 </tr>
 <tr>
@@ -29765,7 +30065,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-font-family-sans</td>
     <td>List</td>
     <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
-    <td><code>Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans</code></td>
+    <td><code>(Arial, Verdana, Tahoma, "Trebuchet MS", Helvetica, Impact, Gill Sans)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sans font family across all components.</div></div>
@@ -29775,7 +30075,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-font-family-serif</td>
     <td>List</td>
     <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
-    <td><code>"Times New Roman", Georgia, Garamond, Palatino, Baskerville</code></td>
+    <td><code>("Times New Roman", Georgia, Garamond, Palatino, Baskerville)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The serif font family across all components.</div></div>
@@ -29784,7 +30084,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
-    <td><code>k-map-merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
+    <td><code>map.merge( $_default-letter-spacings, $kendo-letter-spacings )</code></td>
     <td><ul><li>tightest: -0.15px</li><li>tighter: -0.1px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.5px</li><li>wider: 0.1px</li><li>widest: 0.15px</li></ul></td>
 </tr>
 <tr>
@@ -29875,7 +30175,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-upload-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload.</div></div>
@@ -29925,7 +30225,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload dropzone.</div></div>
@@ -29954,7 +30254,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-upload-status-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -30105,7 +30405,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-upload-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px rgba(0, 0, 0, .13)</code></td>
-    <td><code>0 0 0 2px rgba(0, 0, 0, 0.13)</code></td>
+    <td><code>(0 0 0 2px rgba(0, 0, 0, 0.13))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Upload button, actions and uploaded items.</div></div>
@@ -30205,7 +30505,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-window-titlebar-border-width</td>
     <td>List</td>
     <td><code>0 0 1px</code></td>
-    <td><code>0 0 1px</code></td>
+    <td><code>(0 0 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border of the Window titlebar.</div></div>
@@ -30325,7 +30625,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-window-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window.</div></div>
@@ -30353,9 +30653,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-window-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Window.</div></div>
@@ -30363,9 +30663,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-window-focus-shadow</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>
@@ -30373,9 +30673,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-window-titlebar-bg</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>unset</code></td>
+    <td><code>unset</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Window titlebar.</div></div>
@@ -30383,9 +30683,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-window-titlebar-text</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Window titlebar.</div></div>
@@ -30429,9 +30729,9 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-window-theme-colors</td>
     <td>Map</td>
     <td><code>(
-    "primary": k-map-get($kendo-theme-colors, "primary"),
-    "light": k-map-get($kendo-theme-colors, "light"),
-    "dark": k-map-get($kendo-theme-colors, "dark")
+    "primary": map.get($kendo-theme-colors, "primary"),
+    "light": map.get($kendo-theme-colors, "light"),
+    "dark": map.get($kendo-theme-colors, "dark")
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #0d6efd)</li><li>light: var(--kendo-color-light, #f8f9fa)</li><li>dark: var(--kendo-color-dark, #212529)</li></ul></td>
 </tr>
@@ -30462,7 +30762,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-wizard-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-x} * 1.25 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 1.25 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 1.25)</code></td>
 </tr>
 <tr>
@@ -30482,7 +30782,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-wizard-content-padding-x</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-x} * 2 )</code></td>
+    <td><code>calc( #{k-spacing(4)} * 2 )</code></td>
     <td><code>calc(var(--kendo-spacing-4, 1rem) * 2)</code></td>
 </tr>
 <tr>
@@ -30492,7 +30792,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-wizard-content-padding-y</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-padding-md-y} * 4 )</code></td>
+    <td><code>calc( #{k-spacing(2)} * 4 )</code></td>
     <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 4)</code></td>
 </tr>
 <tr>

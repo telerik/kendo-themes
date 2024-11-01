@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-hover-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td><code>0 0 0 1px var(--kendo-color-base, #ffffff)</code></td>
+    <td><code>(0 0 0 1px var(--kendo-color-base, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover box shadow of the ScrollView page button.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the ScrollView page button.</div></div>
@@ -171,7 +171,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-primary-hover-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 ))</code></td>
-    <td><code>0 0 0 2px var(--kendo-color-base, #ffffff)</code></td>
+    <td><code>(0 0 0 2px var(--kendo-color-base, #ffffff))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary hover box shadow of the ScrollView page button.</div></div>
@@ -181,7 +181,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pagebutton-primary-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>0 0 0 2px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(0 0 0 2px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The primary focus box shadow of the ScrollView page button.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-navigation-focus-shadow</td>
     <td>List</td>
     <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
-    <td><code>0 0 0 1px var(--kendo-color-base-emphasis, #605e5c)</code></td>
+    <td><code>(0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the ScrollView navigation arrows.</div></div>
