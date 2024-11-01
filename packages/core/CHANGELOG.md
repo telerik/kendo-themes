@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v9.1.1-dev.2...v10.0.0-dev.0) (2024-11-01)
+
+
+### Features
+
+* **core:** migrate to the dart-sass module system ([19bdedb](https://github.com/telerik/kendo-themes/commit/19bdedbf1dcccc2ad778c4a8dc963d7aaca9af2b))
+* **default:** migrate theme to the dart-sass module system ([b4db551](https://github.com/telerik/kendo-themes/commit/b4db55114b003f58fa81b2f95ea11f95afc0c3de))
+
+
+
+
+
 ## [9.1.1-dev.2](https://github.com/telerik/kendo-themes/compare/v9.1.1-dev.1...v9.1.1-dev.2) (2024-10-28)
 
 **Note:** Version bump only for package @progress/kendo-theme-core

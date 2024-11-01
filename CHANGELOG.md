@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v9.1.1-dev.2...v10.0.0-dev.0) (2024-11-01)
+
+
+### Features
+
+* **bootstrap:** detach the theme from twbs/bootstrap ([35ad29e](https://github.com/telerik/kendo-themes/commit/35ad29e032aa7dfe14dd8ba2d7cc2ab8634170ae))
+* **bootstrap:** migrate theme to the dart-sass module system ([0d4583b](https://github.com/telerik/kendo-themes/commit/0d4583b7af8eaf8b18320a13cb0110c67c9566fa))
+* **classic:** migrate theme to the dart-sass module system ([11f910f](https://github.com/telerik/kendo-themes/commit/11f910f4cde08d961001d6e04e24dc1404c060b4))
+* **core:** migrate to the dart-sass module system ([19bdedb](https://github.com/telerik/kendo-themes/commit/19bdedbf1dcccc2ad778c4a8dc963d7aaca9af2b))
+* **default:** migrate theme to the dart-sass module system ([b4db551](https://github.com/telerik/kendo-themes/commit/b4db55114b003f58fa81b2f95ea11f95afc0c3de))
+* **fluent:** migrate theme to the dart-sass module system ([c1d9891](https://github.com/telerik/kendo-themes/commit/c1d9891d518dcc3618eeab808521b2ce0fe9db2f))
+* **material:** migrate theme to the dart-sass module system ([a04a40c](https://github.com/telerik/kendo-themes/commit/a04a40ce0f579de32f3e62e214c53b3bb692758f))
+* **utils:** migrate to the dart-sass module system ([82f0cb5](https://github.com/telerik/kendo-themes/commit/82f0cb5d726c2f10e4315e016d419f50d6dea8be))
+
+
+### BREAKING CHANGES
+
+* **bootstrap:** Effective with the R4 2024 release, twbs/bootstrap is
+removed as a dependency of the Kendo UI Bootstrap theme. This means that
+ customizing bootstrap scss variables will no longer have an effect on
+our components, as the theme will be detached i.e. not depending upon.
+However, we will provide mostly the same look and feel through variables
+ that have the same values.
+
+In order to continue using twbs/bootstrap along with the Kendo Bootstrap
+ theme, make sure to add a it as a dependency to your project.
+
+
+
+
+
 ## [9.1.1-dev.2](https://github.com/telerik/kendo-themes/compare/v9.1.1-dev.1...v9.1.1-dev.2) (2024-10-28)
 
 **Note:** Version bump only for package kendo-themes.repo
