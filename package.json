@@ -19,7 +19,6 @@
     "@eslint/js": "^9.6.0",
     "@progress/kendo-e2e": "^4.0.0",
     "@types/node": "^22.1.0",
-    "chokidar": "^3.5.3",
     "esbuild": "^0.23.0",
     "eslint": "^9.6.0",
     "glob": "^11.0.0",
