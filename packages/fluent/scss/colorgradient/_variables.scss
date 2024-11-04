@@ -111,9 +111,6 @@ $kendo-color-gradient-draghandle-outline-width: 1px !default;
 /// The color of the border around the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-border: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
-/// The color of the outline around the ColorGradient canvas drag handle.
-/// @group color-gradient
-$kendo-color-gradient-draghandle-shadow: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
