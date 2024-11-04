@@ -10,7 +10,7 @@
     "sass functions",
     "sass mixins"
   ],
-  "main": "dist/index.css",
+  "main": "dist/all.css",
   "sass": "scss/index.import.scss",
   "files": [
     "dist/",
