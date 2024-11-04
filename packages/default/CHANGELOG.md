@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.1...v10.0.0-dev.2) (2024-11-04)
+
+
+### Features
+
+* **default:** remove margin utils from the theme ([29a211e](https://github.com/telerik/kendo-themes/commit/29a211ecffb3636d25878c2a2adda2f7f40d76ec))
+
+
+
+
+
 # [10.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.0...v10.0.0-dev.1) (2024-11-04)
 
 **Note:** Version bump only for package @progress/kendo-theme-default
