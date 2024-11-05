@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-classic",
   "description": "Sass port of less based themes for Kendo UI theme",
-  "version": "10.0.0-dev.1",
+  "version": "10.0.0-dev.2",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -38,7 +38,7 @@
   },
   "scripts": {
     "build": "sass-build",
-    "watch": "node ../../scripts/watch-theme",
+    "watch": "npx sass --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
     "sass": "sass-build",
     "sass:standalone": "sass-build -c sass-standalone.config.js",
     "sass:swatches": "gulp dist:swatches && sass-build -c sass-swatches.config.js",
@@ -52,9 +52,9 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^3.1.0",
-    "@progress/kendo-theme-core": "10.0.0-dev.1",
-    "@progress/kendo-theme-default": "10.0.0-dev.1",
-    "@progress/kendo-theme-utils": "10.0.0-dev.1"
+    "@progress/kendo-theme-core": "10.0.0-dev.2",
+    "@progress/kendo-theme-default": "10.0.0-dev.2",
+    "@progress/kendo-theme-utils": "10.0.0-dev.2"
   },
   "directories": {
     "doc": "docs",

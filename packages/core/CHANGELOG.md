@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.1...v10.0.0-dev.2) (2024-11-04)
+
+
+### Bug Fixes
+
+* **core:** change the main field to point all.css in package.json ([534da7d](https://github.com/telerik/kendo-themes/commit/534da7d87925cf2db50963aea5a3df8515c82a01))
+
+
+
+
+
 # [10.0.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.0...v10.0.0-dev.1) (2024-11-04)
 
 **Note:** Version bump only for package @progress/kendo-theme-core
