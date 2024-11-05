@@ -370,18 +370,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
-    <td><code>var(--kendo-color-border, #8a8886)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the outline around the ColorGradient canvas drag handle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-draghandle-shadow</td>
-    <td>String</td>
     <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
-    <td><code>var(--kendo-color-border, #8a8886)</code></td>
+    <td><code>var(--kendo-box-shadow-depth-2, none)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>

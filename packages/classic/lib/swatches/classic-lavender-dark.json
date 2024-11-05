@@ -671,11 +671,6 @@
                     "name": "Subtle text color",
                     "type": "color",
                     "value": "#e0e0e0"
-                },
-                "kendo-disabled-text": {
-                    "name": "Disabled text color",
-                    "type": "color",
-                    "value": "#d0d0d0"
                 }
             }
         },

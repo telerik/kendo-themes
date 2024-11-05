@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.2...v10.0.0-dev.3) (2024-11-05)
+
+
+### Bug Fixes
+
+* **colorgradient:** remove duplicated vars with invalid values ([fe5762e](https://github.com/telerik/kendo-themes/commit/fe5762e5c7b1f45980fecaa24abb3ecf0af696e4))
+
+
+
+
+
 # [10.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.1...v10.0.0-dev.2) (2024-11-04)
 
 
