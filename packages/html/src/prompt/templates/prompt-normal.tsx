@@ -8,7 +8,7 @@ export const PromptNormal = (props) => (
         {...props}
     >
         <PromptHeader>
-            <Toolbar className="k-toolbar-flat">
+            <Toolbar fillMode="flat">
                 <IconTextButton fillMode="flat" themeColor="primary" icon="sparkles" rounded="full" selected>Ask AI</IconTextButton>
                 <IconTextButton fillMode="flat" themeColor="primary" icon="comment" rounded="full">Output</IconTextButton>
                 <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full"></IconButton>
