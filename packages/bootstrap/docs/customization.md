@@ -7670,16 +7670,6 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-gradient-draghandle-shadow</td>
-    <td>Color</td>
-    <td><code>rgba( $kendo-color-black, .5)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.5)"></span><code>rgba(0, 0, 0, 0.5)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the outline around the ColorGradient canvas drag handle.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td>Color</td>
     <td><code>$kendo-color-black</code></td>
@@ -7701,9 +7691,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>k-elevation(2)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.5)"></span><code>rgba(0, 0, 0, 0.5)</code></td>
+    <td><code>var(--kendo-elevation-2, 0px 2px 7px rgba(0, 0, 0, 0.075))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
