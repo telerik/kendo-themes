@@ -292,6 +292,7 @@
             background-color: var( --kendo-grid-sticky-bg, #{$kendo-grid-sticky-bg} );
         }
 
+        .k-grid-row-sticky,
         &.k-grid-row-sticky > .k-table-td {
             border-block-color: var( --kendo-grid-sticky-border, #{$kendo-grid-sticky-border} );
             background-color: var( --kendo-grid-sticky-bg, #{$kendo-grid-sticky-bg} );
