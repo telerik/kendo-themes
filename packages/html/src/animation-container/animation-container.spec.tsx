@@ -37,6 +37,7 @@ export const AnimationContainer = (
             {...other}
             style={{ ...offset, ...props.style }}
             className={classNames(
+                props.className,
                 ANIMATION_CONTAINER_CLASSNAME,
                 "k-animation-container-shown",
                 {
