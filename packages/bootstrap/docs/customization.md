@@ -22101,8 +22101,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-scheduler-rtl-indicators-margin</td>
     <td>List</td>
-    <td><code>k-spacing(1) 0 k-spacing(2) .4ex</code></td>
-    <td><code>(var(--kendo-spacing-1, 0.25rem) 0 var(--kendo-spacing-2, 0.5rem) 0.4ex)</code></td>
+    <td><code>k-spacing(1) k-spacing(2) 0 .4ex</code></td>
+    <td><code>(var(--kendo-spacing-1, 0.25rem) var(--kendo-spacing-2, 0.5rem) 0 0.4ex)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Scheduler event indicators in rtl.</div></div>
