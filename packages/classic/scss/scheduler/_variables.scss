@@ -263,7 +263,7 @@ $kendo-scheduler-event-actions-inset-x: k-spacing(2) !default;
 $kendo-scheduler-indicators-margin: k-spacing(0.5) .4ex 0 k-spacing(1) !default;
 /// The margin of the Scheduler event indicators in rtl.
 /// @group scheduler
-$kendo-scheduler-rtl-indicators-margin: k-spacing(0.5) 0 k-spacing(1) .4ex !default;
+$kendo-scheduler-rtl-indicators-margin: k-spacing(0.5) k-spacing(1) 0 .4ex !default;
 
 /// The inline inset of the Scheduler marquee labels.
 /// @group scheduler
