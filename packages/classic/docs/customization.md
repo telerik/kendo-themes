@@ -22462,8 +22462,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-scheduler-rtl-indicators-margin</td>
     <td>List</td>
-    <td><code>k-spacing(0.5) 0 k-spacing(1) .4ex</code></td>
-    <td><code>(var(--kendo-spacing-0\.5, 0.125rem) 0 var(--kendo-spacing-1, 0.25rem) 0.4ex)</code></td>
+    <td><code>k-spacing(0.5) k-spacing(1) 0 .4ex</code></td>
+    <td><code>(var(--kendo-spacing-0\.5, 0.125rem) var(--kendo-spacing-1, 0.25rem) 0 0.4ex)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Scheduler event indicators in rtl.</div></div>
