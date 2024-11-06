@@ -123,7 +123,6 @@ function swatchJsonTransformer( json ) {
                 sassContent.push(`\t) !default,`);
             }
 
-            sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
             // Universal variables are also included here as they are part of the a11y swatch
             sassContent.push(universal.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
 
@@ -135,6 +134,7 @@ function swatchJsonTransformer( json ) {
 
             return sassContent.join( '\n' );
         },
+        // TODO remove legacy
         legacy: () => {
             const sassContent = [];
             if ( !colorSystem.length ) {
