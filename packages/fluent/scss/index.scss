@@ -457,6 +457,7 @@
     // Layout & containers
     @include kendo-card--styles();
     @include kendo-expander--styles();
+    @include kendo-panel--styles();
     @include kendo-panelbar--styles();
     @include kendo-splitter--styles();
     @include kendo-tile-layout--styles();
