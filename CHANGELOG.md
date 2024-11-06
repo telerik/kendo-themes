@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.3...v10.0.0-dev.4) (2024-11-06)
+
+
+### Bug Fixes
+
+* do not include legacy color variables in swatches ([762b711](https://github.com/telerik/kendo-themes/commit/762b711edf5b1371a4e20fc5c10dbb14cee6f9cd))
+* **grid:** fix broken sticky row styles ([6bb26e7](https://github.com/telerik/kendo-themes/commit/6bb26e74535500b1fb08b35afbf745d1368cecda))
+
+
+
+
+
 # [10.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.2...v10.0.0-dev.3) (2024-11-05)
 
 
