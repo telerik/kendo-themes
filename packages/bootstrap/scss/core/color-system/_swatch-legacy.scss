@@ -116,7 +116,7 @@ $kendo-component-text: $kendo-body-text !default;
 /// @group component
 $kendo-component-border: $kendo-app-border !default;
 /// The background of the components' chrome area.
-$kendo-base-bg: if($kendo-enable-color-system, k-color(light), $kendo-color-light) !default;
+$kendo-base-bg: if($kendo-enable-color-system, k-color(surface), $kendo-color-light) !default;
 /// The text color of the components' chrome area.
 $kendo-base-text: $kendo-body-text !default;
 /// The border color of the components' chrome area.

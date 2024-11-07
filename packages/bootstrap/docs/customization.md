@@ -34,8 +34,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tbody><tr>
     <td>$kendo-base-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(light), $kendo-color-light)</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color(surface), $kendo-color-light)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -2527,7 +2527,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-calendar-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the header in the Calendar.</div></div>
@@ -3117,7 +3117,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
     <td><code>$kendo-calendar-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Calendar navigation.</div></div>
@@ -3779,7 +3779,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-card-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Card header.</div></div>
@@ -3859,7 +3859,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-card-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-card-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Card footer.</div></div>
@@ -4719,7 +4719,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-chat-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Chat Toolbar.</div></div>
@@ -9737,7 +9737,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-file-manager-breadcrumb-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Breadcrumb.</div></div>
@@ -12330,7 +12330,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-grid-header-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid header.</div></div>
@@ -12370,7 +12370,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-grid-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-table-footer-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Grid footer.</div></div>
@@ -12490,7 +12490,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-grid-selection-aggregates-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Grid selection aggregates container.</div></div>
@@ -16234,7 +16234,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-orgchart-node-group-bg</td>
     <td>String</td>
     <td><code>$kendo-base-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart node group.</div></div>
@@ -17134,7 +17134,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
@@ -19236,7 +19236,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pivotgrid-headers-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PivotGrid header.</div></div>
@@ -20556,7 +20556,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-prompt-content-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the AIPrompt content.</div></div>
@@ -21402,7 +21402,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler ToolBar.</div></div>
@@ -21442,7 +21442,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scheduler-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-toolbar-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Scheduler footer.</div></div>
@@ -23182,7 +23182,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-splitbar-bg</td>
     <td>String</td>
     <td><code>$kendo-base-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Splitter split bar.</div></div>
@@ -23332,7 +23332,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet header.</div></div>
@@ -23372,7 +23372,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-spreadsheet-table-header-bg</td>
     <td>String</td>
     <td><code>$kendo-spreadsheet-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet table headers.</div></div>
@@ -25515,7 +25515,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-table-header-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table headers.</div></div>
@@ -25555,7 +25555,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-table-footer-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table footers.</div></div>
@@ -25585,7 +25585,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-table-group-row-bg</td>
     <td>String</td>
     <td><code>$kendo-table-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group rows in table.</div></div>
@@ -27885,7 +27885,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
@@ -28291,7 +28291,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-treelist-footer-row-bg</td>
     <td>String</td>
     <td><code>$kendo-grid-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TreeList footer row.</div></div>
@@ -29685,7 +29685,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-code-bg</td>
     <td>String</td>
     <td><code>$kendo-base-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the code tag.</div></div>
@@ -30215,7 +30215,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
     <td><code>$kendo-component-header-bg</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Upload dropzone.</div></div>
