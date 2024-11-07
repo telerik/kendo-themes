@@ -30,8 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-base-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(light), $kendo-color-light)</code></td>
-    <td><code>var(--kendo-color-light, #f8f9fa)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color(surface), $kendo-color-light)</code></td>
+    <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
