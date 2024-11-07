@@ -45,7 +45,6 @@ export const Menu = (
 
     const ulMenu = (
         <ul
-            id="menu"
             dir={dir}
             {...other}
             className={classNames(
