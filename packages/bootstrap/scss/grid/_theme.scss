@@ -191,6 +191,7 @@
             border-top-color: $kendo-grid-border;
         }
 
+        .k-grid-row-sticky,
         &.k-grid-row-sticky > .k-table-td {
             border-top-color: $kendo-grid-sticky-border;
             border-bottom-color: $kendo-grid-sticky-border;

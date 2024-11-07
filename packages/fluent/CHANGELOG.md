@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.4...v10.0.0) (2024-11-06)
+
+
+### Bug Fixes
+
+* add missing panel styles ([f30c677](https://github.com/telerik/kendo-themes/commit/f30c677b125a71663cc0367e5cc18599211880cf))
+
+
+
+
+
+# [10.0.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.3...v10.0.0-dev.4) (2024-11-06)
+
+
+### Bug Fixes
+
+* **grid:** fix broken sticky row styles ([6bb26e7](https://github.com/telerik/kendo-themes/commit/6bb26e74535500b1fb08b35afbf745d1368cecda))
+
+
+
+
+
+# [10.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.2...v10.0.0-dev.3) (2024-11-05)
+
+
+### Bug Fixes
+
+* **colorgradient:** remove duplicated vars with invalid values ([fe5762e](https://github.com/telerik/kendo-themes/commit/fe5762e5c7b1f45980fecaa24abb3ecf0af696e4))
+
+
+
+
+
 # [10.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.1...v10.0.0-dev.2) (2024-11-04)
 
 

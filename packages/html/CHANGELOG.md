@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.4...v10.0.0) (2024-11-06)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [10.0.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.3...v10.0.0-dev.4) (2024-11-06)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [10.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.2...v10.0.0-dev.3) (2024-11-05)
+
+
+### Bug Fixes
+
+* **html:** ai prompt toolbar classes ([1900795](https://github.com/telerik/kendo-themes/commit/190079570c4d41cf1b212bbe27b3a694e2ee5ec1))
+
+
+
+
+
 # [10.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.1...v10.0.0-dev.2) (2024-11-04)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

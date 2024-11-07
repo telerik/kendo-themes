@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.4...v10.0.0) (2024-11-06)
+
+
+### Bug Fixes
+
+* add missing panel styles ([f30c677](https://github.com/telerik/kendo-themes/commit/f30c677b125a71663cc0367e5cc18599211880cf))
+
+
+
+
+
+# [10.0.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.3...v10.0.0-dev.4) (2024-11-06)
+
+
+### Bug Fixes
+
+* do not include legacy color variables in swatches ([762b711](https://github.com/telerik/kendo-themes/commit/762b711edf5b1371a4e20fc5c10dbb14cee6f9cd))
+* **grid:** fix broken sticky row styles ([6bb26e7](https://github.com/telerik/kendo-themes/commit/6bb26e74535500b1fb08b35afbf745d1368cecda))
+
+
+
+
+
+# [10.0.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.2...v10.0.0-dev.3) (2024-11-05)
+
+
+### Bug Fixes
+
+* **bootstrap:** fix swatches disabled state ([b4b9b3d](https://github.com/telerik/kendo-themes/commit/b4b9b3dd969cfe60996cd8e49857ad44ac3f942f))
+* **classic:** fix swatches disabled state ([68a4c19](https://github.com/telerik/kendo-themes/commit/68a4c1976f71629634d40dcd9a9eb3b9bda9fdfc))
+* **colorgradient:** remove duplicated vars with invalid values ([fe5762e](https://github.com/telerik/kendo-themes/commit/fe5762e5c7b1f45980fecaa24abb3ecf0af696e4))
+* **default:** fix swatches disabled state ([4290e91](https://github.com/telerik/kendo-themes/commit/4290e918f79181c4ea998f80c511dbc4e8aac497))
+* **html:** ai prompt toolbar classes ([1900795](https://github.com/telerik/kendo-themes/commit/190079570c4d41cf1b212bbe27b3a694e2ee5ec1))
+* **scheduler:** recurring events have incorrect margin in rtl ([c2fdcc6](https://github.com/telerik/kendo-themes/commit/c2fdcc6c55391e7c6ea87e4863faa42805c62351))
+
+
+
+
+
 # [10.0.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.1...v10.0.0-dev.2) (2024-11-04)
 
 

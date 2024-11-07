@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-material",
   "description": "Material theme for Kendo UI",
-  "version": "10.0.0-dev.2",
+  "version": "10.0.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -52,10 +52,10 @@
     "postpublish": "echo 'no postpublish for material theme'"
   },
   "dependencies": {
-    "@progress/kendo-svg-icons": "^3.1.0",
-    "@progress/kendo-theme-core": "10.0.0-dev.2",
-    "@progress/kendo-theme-default": "10.0.0-dev.2",
-    "@progress/kendo-theme-utils": "10.0.0-dev.2"
+    "@progress/kendo-svg-icons": "^4.0.0",
+    "@progress/kendo-theme-core": "10.0.0",
+    "@progress/kendo-theme-default": "10.0.0",
+    "@progress/kendo-theme-utils": "10.0.0"
   },
   "directories": {
     "doc": "docs",
