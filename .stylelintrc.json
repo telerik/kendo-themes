@@ -62,5 +62,13 @@
         "scss/dollar-variable-empty-line-before": null,
         "scss/double-slash-comment-empty-line-before": null,
         "scss/load-no-partial-leading-underscore": null
-    }
+    },
+    "overrides": [
+        {
+            "files": "**/*_variables.scss",
+            "rules": {
+                "scss/dollar-variable-default": [ true, { "ignore": "local" } ]
+            }
+        }
+    ]
 }
