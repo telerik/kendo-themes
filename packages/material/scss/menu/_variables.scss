@@ -141,10 +141,10 @@ $kendo-menu-scroll-button-hover-gradient: null !default;
 
 /// The inline margin of the horizontal Menu separator.
 /// @group menu
-$kendo-menu-separator-margin-inline: k-spacing(1);
+$kendo-menu-separator-margin-inline: k-spacing(1) !default;
 /// The block margin of the horizontal Menu separator.
 /// @group menu
-$kendo-menu-separator-margin-block: k-spacing(1);
+$kendo-menu-separator-margin-block: k-spacing(1) !default;
 /// The border color of Menu separator.
 /// @group menu
 $kendo-menu-separator-border: if($kendo-enable-color-system, k-color(border), $kendo-component-border) !default;
