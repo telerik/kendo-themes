@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/telerik/kendo-themes/compare/v10.0.0...v10.0.1) (2024-11-08)
+
+
+### Bug Fixes
+
+* **bootstrap:** $kendo-base-bg has wrong color value ([a9a92c8](https://github.com/telerik/kendo-themes/commit/a9a92c8c353f438d05c487e258d1c5289081cd78))
+
+
+
+
+
 # [10.0.0](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.4...v10.0.0) (2024-11-06)
 
 
