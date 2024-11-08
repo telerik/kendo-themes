@@ -173,7 +173,7 @@ $kendo-pivotgrid-configurator-header-border: null !default;
 
 /// The shadow of the PivotGrid configurator.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-shadow: k-elevation(3);
+$kendo-pivotgrid-configurator-shadow: k-elevation(3) !default;
 /// The end shadow of the PivotGrid configurator.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-end-shadow: $kendo-pivotgrid-configurator-shadow !default;

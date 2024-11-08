@@ -80,10 +80,10 @@ $_default-kendo-fraction-classes: (
     '11-1': 11.1111%,
     '9-1': 9.0909%,
     '8-3': 8.3333%
-);
+) !default;
 
 $kendo-fraction-classes: $_default-kendo-fraction-classes !default;
-$kendo-fraction-classes: map.merge($_default-kendo-fraction-classes, $kendo-fraction-classes);
+$kendo-fraction-classes: map.merge($_default-kendo-fraction-classes, $kendo-fraction-classes); // stylelint-disable-line scss/dollar-variable-default
 
 $_default-kendo-breakpoints: (
     xs: 0,
@@ -95,7 +95,7 @@ $_default-kendo-breakpoints: (
 ) !default;
 
 $kendo-breakpoints: $_default-kendo-breakpoints !default;
-$kendo-breakpoints: map.merge($_default-kendo-breakpoints, $kendo-breakpoints);
+$kendo-breakpoints: map.merge($_default-kendo-breakpoints, $kendo-breakpoints); // stylelint-disable-line scss/dollar-variable-default
 
 $_default-kendo-container-max-widths: (
     sm: 540px,
@@ -106,7 +106,7 @@ $_default-kendo-container-max-widths: (
 ) !default;
 
 $kendo-container-max-widths: $_default-kendo-container-max-widths !default;
-$kendo-container-max-widths: map.merge($_default-kendo-container-max-widths, $kendo-container-max-widths);
+$kendo-container-max-widths: map.merge($_default-kendo-container-max-widths, $kendo-container-max-widths); // stylelint-disable-line scss/dollar-variable-default
 
 $kendo-utils: (
 
