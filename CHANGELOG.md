@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/telerik/kendo-themes/compare/v10.0.0...v10.0.1) (2024-11-08)
+
+
+### Bug Fixes
+
+* **bootstrap:** $kendo-base-bg has wrong color value ([a9a92c8](https://github.com/telerik/kendo-themes/commit/a9a92c8c353f438d05c487e258d1c5289081cd78))
+* **dataviz:** incorrect tooltip border radius ([747ad9b](https://github.com/telerik/kendo-themes/commit/747ad9b9ba137054e1e00db8ccd99fc84e3bdb16))
+* **html:** remove id attribute from menu spec ([4be5184](https://github.com/telerik/kendo-themes/commit/4be51840a4f7bb63c12127dc0d90bdd390f68671))
+* kendo-colors metadata ([3d756c3](https://github.com/telerik/kendo-themes/commit/3d756c31a5ecd3594622d2f54c9755c330a01166))
+
+
+
+
+
 # [10.0.0](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.4...v10.0.0) (2024-11-06)
 
 

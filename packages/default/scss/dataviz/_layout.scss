@@ -68,6 +68,7 @@
 
     .k-chart-tooltip-wrapper .k-animation-container-shown,
     .k-chart-tooltip-wrapper.k-animation-container-shown {
+        @include border-radius( k-border-radius(md) );
         transition: $kendo-chart-tooltip-transition;
     }
 
@@ -76,6 +77,7 @@
         z-index: 12000;
 
         .k-popup {
+            @include border-radius( k-border-radius(md) );
             padding: 0;
             border-width: 0;
             background: transparent;

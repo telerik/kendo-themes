@@ -66,6 +66,7 @@
 
     .k-chart-tooltip-wrapper .k-animation-container-shown,
     .k-chart-tooltip-wrapper.k-animation-container-shown {
+        @include border-radius( k-border-radius(md) );
         transition: left ease-in 80ms, top ease-in 80ms;
     }
 
@@ -74,6 +75,7 @@
         z-index: 12000;
 
         .k-popup {
+            @include border-radius( k-border-radius(md) );
             padding: 0;
             border-width: 0;
             background: transparent;

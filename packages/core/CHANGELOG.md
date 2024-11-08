@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/telerik/kendo-themes/compare/v10.0.0...v10.0.1) (2024-11-08)
+
+
+### Bug Fixes
+
+* kendo-colors metadata ([3d756c3](https://github.com/telerik/kendo-themes/commit/3d756c31a5ecd3594622d2f54c9755c330a01166))
+
+
+
+
+
 # [10.0.0](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.4...v10.0.0) (2024-11-06)
 
 **Note:** Version bump only for package @progress/kendo-theme-core

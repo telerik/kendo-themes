@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/telerik/kendo-themes/compare/v10.0.0...v10.0.1) (2024-11-08)
+
+
+### Bug Fixes
+
+* **html:** remove id attribute from menu spec ([4be5184](https://github.com/telerik/kendo-themes/commit/4be51840a4f7bb63c12127dc0d90bdd390f68671))
+
+
+
+
+
 # [10.0.0](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.4...v10.0.0) (2024-11-06)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

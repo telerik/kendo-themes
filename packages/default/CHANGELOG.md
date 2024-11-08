@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/telerik/kendo-themes/compare/v10.0.0...v10.0.1) (2024-11-08)
+
+
+### Bug Fixes
+
+* **dataviz:** incorrect tooltip border radius ([747ad9b](https://github.com/telerik/kendo-themes/commit/747ad9b9ba137054e1e00db8ccd99fc84e3bdb16))
+
+
+
+
+
 # [10.0.0](https://github.com/telerik/kendo-themes/compare/v10.0.0-dev.4...v10.0.0) (2024-11-06)
 
 
