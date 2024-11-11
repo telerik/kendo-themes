@@ -26,7 +26,7 @@ export default () =>(
                         <Button themeColor="primary">Save</Button>
                     </>
                 }>
-                    <TabStripNormal header={null}
+                    <TabStripNormal
                         tabStripItems={
                             <>
                                 <TabStripItem first active value="Print" />
@@ -138,7 +138,7 @@ export default () =>(
                         <Button themeColor="primary">Save</Button>
                     </>
                 }>
-                    <TabStripNormal header={null}
+                    <TabStripNormal
                         tabStripItems={
                             <>
                                 <TabStripItem first value="Print" />

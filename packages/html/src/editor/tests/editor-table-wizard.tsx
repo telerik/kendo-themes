@@ -37,7 +37,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <TabStripNormal header={false}
+                    <TabStripNormal
                         tabStripItems={
                             <>
                                 <TabStripItem first active value="General"/>
@@ -138,7 +138,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <TabStripNormal header={false}
+                    <TabStripNormal
                         tabStripItems={
                             <>
                                 <TabStripItem first value="General"/>
