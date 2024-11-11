@@ -1,0 +1,19 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-grid-layout--styles() {
+    @include import-once( "grid-layout" ) {
+        @include core-styles();
+        @include kendo-grid-layout--layout();
+        @include kendo-grid-layout--theme();
+        @include kendo-utils--flex-grid--align-items();
+        @include kendo-utils--flex-grid--justify-items();
+    }
+}
