@@ -38,7 +38,7 @@ export default () =>(
                     <div className="k-widget k-header k-tabstrip k-tabstrip-top k-spreadsheet-tabstrip">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset" style={{ paddingLeft: "76px" }}>
-                                <li className="k-item k-first k-tab-on-top k-active">
+                                <li className="k-item k-first k-active">
                                     <span className="k-loading k-complete"></span>
                                     <span className="k-link">Home</span>
                                 </li>
@@ -561,7 +561,7 @@ export default () =>(
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-left" className="k-tabstrip-prev"></Button>
                             <ul className="k-reset k-tabstrip-items">
-                                <li className="k-item k-active k-tab-on-top k-spreadsheet-sheets-bar-active">
+                                <li className="k-item k-active k-spreadsheet-sheets-bar-active">
                                     <span className="k-link">Food Order</span>
                                     <Button fillMode="flat" icon="x" className="k-spreadsheet-sheets-remove k-remove-tab"></Button>
                                 </li>
