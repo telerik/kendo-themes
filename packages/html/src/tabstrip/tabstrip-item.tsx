@@ -1,7 +1,7 @@
 import { Icon, IconButton } from '..';
 import { States, classNames, stateClassNames } from '../misc';
 
-export const TABSTRIPITEM_CLASSNAME = `k-item`;
+export const TABSTRIPITEM_CLASSNAME = `k-tabstrip-item`;
 
 const states = [
     States.active,
@@ -56,6 +56,7 @@ export const TabStripItem = (
             {...other}
             className={classNames(
                 props.className,
+                `k-item`,
                 TABSTRIPITEM_CLASSNAME,
                 stateClassNames(TABSTRIPITEM_CLASSNAME, {
                     hover,
