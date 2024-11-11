@@ -105,10 +105,10 @@ $kendo-menu-item-selected-bg: null !default;
 
 /// The inline margin of the horizontal Menu separator.
 /// @group menu
-$kendo-menu-separator-margin-inline: k-spacing(1);
+$kendo-menu-separator-margin-inline: k-spacing(1) !default;
 /// The block margin of the horizontal Menu separator.
 /// @group menu
-$kendo-menu-separator-margin-block: k-spacing(3);
+$kendo-menu-separator-margin-block: k-spacing(3) !default;
 /// The width of the Menu separator.
 /// @group menu
 $kendo-menu-separator-width: 1px !default;

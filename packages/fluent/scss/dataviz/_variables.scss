@@ -85,7 +85,7 @@ $kendo-series-30: $kendo-series-f-darker !default;
 
 /// The border width of the chart component.
 /// @group charts
-$kendo-chart-border-width: 0px default;
+$kendo-chart-border-width: 0px !default;
 /// The font-family of the chart component.
 /// @group charts
 $kendo-chart-font-family: var( --kendo-font-family, inherit ) !default;
