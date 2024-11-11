@@ -11,6 +11,7 @@
 @forward "./popup/_index.scss";
 @forward "./ripple/_index.scss";
 @forward "./table/_index.scss";
+@forward "./gridlayout/_index.scss";
 @forward "./virtual-scroller/_index.scss";
 @forward "./no-data/_index.scss";
 @forward "./avatar/_index.scss";
@@ -236,6 +237,7 @@
 @use "./panelbar/index.scss" as *;
 @use "./splitter/index.scss" as *;
 @use "./tilelayout/index.scss" as *;
+@use "./gridlayout/_index.scss" as *;
 @use "./dock-manager/index.scss" as *;
 @use "./chart-wizard/index.scss" as *;
 
@@ -410,6 +412,7 @@
     @include kendo-panelbar--styles();
     @include kendo-splitter--styles();
     @include kendo-tile-layout--styles();
+    @include kendo-grid-layout--styles();
     @include kendo-dock-manager--styles();
     @include kendo-chart-wizard--styles();
 
