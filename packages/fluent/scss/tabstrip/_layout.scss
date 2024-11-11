@@ -89,10 +89,6 @@
             flex-direction: row;
         }
 
-        .k-tab-on-top {
-            z-index: 1;
-        }
-
         .k-link {
             padding-inline: var( --kendo-tabstrip-item-padding-x, #{$kendo-tabstrip-item-padding-x} );
             padding-block: var( --kendo-tabstrip-item-padding-y, #{$kendo-tabstrip-item-padding-y} );
