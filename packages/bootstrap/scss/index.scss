@@ -1,16 +1,9 @@
+// Forward component modules by dependency order
+
 @forward "./core/_index.scss";
-
-
-// Typography
 @forward "./typography/_index.scss";
-
-
-// Generic content
 @forward "./icons/_index.scss";
 @forward "./messagebox/_index.scss";
-
-
-// Primitive components
 @forward "./draggable/_index.scss";
 @forward "./list/_index.scss";
 @forward "./listgroup/_index.scss";
@@ -20,18 +13,13 @@
 @forward "./table/_index.scss";
 @forward "./virtual-scroller/_index.scss";
 @forward "./no-data/_index.scss";
-
-// Indicators
 @forward "./avatar/_index.scss";
 @forward "./badge/_index.scss";
 @forward "./color-preview/_index.scss";
 @forward "./loader/_index.scss";
 @forward "./skeleton/_index.scss";
 @forward "./time-marker/_index.scss";
-
 @forward "./tooltip/_index.scss";
-
-// Native forms
 @forward "./button/_index.scss";
 @forward "./input/_index.scss";
 @forward "./floating-label/_index.scss";
@@ -43,23 +31,15 @@
 @forward "./radio/_index.scss";
 @forward "./slider/_index.scss";
 @forward "./chip/_index.scss";
-
 @forward "./action-buttons/_index.scss";
 @forward "./menu/_index.scss";
 @forward "./menu-button/_index.scss";
 @forward "./split-button/_index.scss";
 @forward "./toolbar/_index.scss";
-
-// Form helpers
 @forward "./forms/_index.scss";
 @forward "./validator/_index.scss";
-
-// Form requirements
 @forward "./calendar/_index.scss";
 @forward "./timeselector/_index.scss";
-
-
-// Augmented forms
 @forward "./autocomplete/_index.scss";
 @forward "./captcha/_index.scss";
 @forward "./colorpalette/_index.scss";
@@ -85,15 +65,9 @@
 @forward "./switch/_index.scss";
 @forward "./dropzone/_index.scss";
 @forward "./upload/_index.scss";
-
-
-// Command interfaces
 @forward "./appbar/_index.scss";
 @forward "./fab/_index.scss";
-
 @forward "./card/_index.scss";
-
-// Popups and modals
 @forward "./action-sheet/_index.scss";
 @forward "./window/_index.scss";
 @forward "./dialog/_index.scss";
@@ -101,18 +75,12 @@
 @forward "./notification/_index.scss";
 @forward "./popover/_index.scss";
 @forward "./responsivepanel/_index.scss";
-
-
-// Navigation
 @forward "./bottom-navigation/_index.scss";
 @forward "./breadcrumb/_index.scss";
 @forward "./pager/_index.scss";
 @forward "./stepper/_index.scss";
 @forward "./tabstrip/_index.scss";
 @forward "./wizard/_index.scss";
-
-
-// Layout & containers
 @forward "./expansion-panel/_index.scss";
 @forward "./panel/_index.scss";
 @forward "./panelbar/_index.scss";
@@ -122,31 +90,16 @@
 @forward "./adaptive/_index.scss";
 @forward "./grid/_index.scss";
 @forward "./listview/_index.scss";
-
-
-// Data management
-
-
 @forward "./spreadsheet/_index.scss";
 @forward "./pivotgrid/_index.scss";
 @forward "./treelist/_index.scss";
 @forward "./filter/_index.scss";
 @forward "./filemanager/_index.scss";
 @forward "./taskboard/_index.scss";
-
-
-// Editors
 @forward "./editor/_index.scss";
 @forward "./imageeditor/_index.scss";
-
-
-// Scheduling
 @forward "./gantt/_index.scss";
 @forward "./scheduler/_index.scss";
-
-
-// Misc
-
 @forward "./chat/_index.scss";
 @forward "./mediaplayer/_index.scss";
 @forward "./timeline/_index.scss";
@@ -154,9 +107,6 @@
 @forward "./scroller/_index.scss";
 @forward "./scrollview/_index.scss";
 @forward "./prompt/_index.scss";
-
-
-// Dataviz
 @forward "./dataviz/_index.scss";
 @forward "./chart-wizard/_index.scss";
 @forward "./map/_index.scss";
@@ -164,6 +114,7 @@
 @forward "./signature/_index.scss";
 
 
+// Use component modules
 @use "./core/_index.scss" as *;
 
 

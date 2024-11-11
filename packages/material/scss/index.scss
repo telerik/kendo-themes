@@ -1,4 +1,4 @@
-// Forward components by dependency order
+// Forward component modules by dependency order
 
 @forward "./core/_index.scss";
 @forward "./typography/_index.scss";
@@ -114,8 +114,7 @@
 @forward "./signature/_index.scss";
 
 
-// Use components by groups
-
+// Use component modules
 @use "./core/_index.scss" as *;
 
 
