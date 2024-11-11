@@ -2,8 +2,8 @@ name: CI Weekly
 
 on:
   schedule:
-    # Run at 00:20 every Monday
-    - cron: '20 0 * * Mon'
+    # Run at 07:20 every Monday
+    - cron: '20 7 * * Mon'
   workflow_dispatch:
 
 jobs:
