@@ -1,0 +1,10 @@
+@mixin kendo-stack-layout--theme-base() {
+
+    // StackLayout
+    .k-stack-layout {}
+
+}
+
+@mixin kendo-stack-layout--theme() {
+    @include kendo-stack-layout--theme-base();
+}
