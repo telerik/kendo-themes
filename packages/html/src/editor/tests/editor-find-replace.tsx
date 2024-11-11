@@ -36,7 +36,7 @@ export default () =>(
 
             <section>
                 <WindowNormal title="Find and Replace" actions={[ 'x' ]}>
-                    <TabStripNormal header={false} className="k-editor-find-replace"
+                    <TabStripNormal className="k-editor-find-replace"
                         tabStripItems={
                             <>
                                 <TabStripItem className="k-tab-on-top" value="Find" active />
@@ -76,7 +76,7 @@ export default () =>(
 
             <section>
                 <WindowNormal className="k-editor-window" title="Find and Replace" actions={[ 'x' ]}>
-                    <TabStripNormal header={false} className="k-editor-find-replace"
+                    <TabStripNormal className="k-editor-find-replace"
                         tabStripItems={
                             <>
                                 <TabStripItem value="Find" />

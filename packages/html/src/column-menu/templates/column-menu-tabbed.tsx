@@ -5,7 +5,7 @@ export const ColumnMenuTabbed = (props) => (
     <ColumnMenu
         view="tabbed"
         children={
-            <TabStripNormal header={false} className="k-pos-relative"
+            <TabStripNormal className="k-pos-relative"
                 tabStripItems={
                     <>
                         <TabStripItem active icon="filter" />

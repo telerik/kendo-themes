@@ -29,7 +29,7 @@ export default () =>(
                         <Button icon="trash" fillMode="flat" themeColor="primary">Delete</Button>
                     </>
                 }>
-                    <TabStripNormal header={false}
+                    <TabStripNormal
                         tabStripItems={
                             <>
                                 <TabStripItem first active value="General" />
