@@ -47,6 +47,10 @@
         > .k-notification-content {
             flex: 1 1 auto;
         }
+
+        > .k-notification-status {
+            flex-shrink: 0;
+        }
     }
 
     .k-notification-actions {
