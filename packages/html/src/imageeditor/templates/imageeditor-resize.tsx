@@ -1,6 +1,6 @@
 import { ImageEditor } from "..";
 import { Button } from "../../button";
-import { Checkbox } from "../../checkbox";
+import { CheckboxWithLabelAfter } from "../../checkbox";
 import { DropdownList } from "../../dropdownlist";
 import { FormNormal, Fieldset, FormField } from "../../form";
 import { NumericTextbox } from "../../numerictextbox";
@@ -53,8 +53,7 @@ export const ImageEditorResize = (props: any) => (
                     />
                     <FormField
                         colSpan="2"
-                        label="Lock aspect ratio:"
-                        editor={ <Checkbox /> }
+                        editor={ <CheckboxWithLabelAfter>Lock aspect ratio</CheckboxWithLabelAfter> }
                     />
                 </Fieldset>
             </FormNormal>
