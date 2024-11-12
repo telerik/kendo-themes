@@ -6,3 +6,4 @@ export * from "./templates/checkbox-with-label-before";
 export * from "./templates/checkbox-group-horizontal";
 export * from "./templates/checkbox-group-normal";
 export * from "./templates/checkbox-normal";
+export * from "./templates/checkbox-checked";

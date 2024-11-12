@@ -1,4 +1,4 @@
-import { Checkbox, CheckboxNormal } from '../../checkbox';
+import { Checkbox, CheckboxChecked } from '../../checkbox';
 
 
 const styles = `
@@ -21,15 +21,15 @@ export default () =>(
                 <>
                     <span>{rounded || 'none'}</span>
                     <span>
-                        <CheckboxNormal size="small" rounded={rounded} checked />
+                        <CheckboxChecked size="small" rounded={rounded} />
                         checkbox
                     </span>
                     <span>
-                        <CheckboxNormal size="medium" rounded={rounded} checked />
+                        <CheckboxChecked size="medium" rounded={rounded} />
                         checkbox
                     </span>
                     <span>
-                        <CheckboxNormal size="large" rounded={rounded} checked />
+                        <CheckboxChecked size="large" rounded={rounded} />
                         checkbox
                     </span>
                 </>
