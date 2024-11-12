@@ -132,7 +132,7 @@ export const DateTimePicker = (
                 />
             </Input>
             { opened &&
-                <Popup className={`k-${tab === "time" ? "list" : "calendar"}-container k-datetimepicker-popup`} dir={dir}>
+                <Popup className="k-datetime-container k-datetimepicker-popup" dir={dir}>
                     <DateTimeSelector tab={tab} dir={dir} />
                 </Popup>
             }
@@ -146,7 +146,10 @@ export const DateTimePicker = (
 
                     <DateTimeSelector size="large" tab={tab} actionButtons={false} />
 
-                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
+                    <ActionSheetFooter>
+                        <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
+                        <Button text="Cancel" size="large" themeColor="base" className="k-time-cancel" />
+                    </ActionSheetFooter>
                 </ActionSheet>
             }
         </>
