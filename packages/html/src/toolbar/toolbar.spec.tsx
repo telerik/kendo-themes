@@ -1,4 +1,4 @@
-import { Button } from '../button';
+import { Button, IconButton, IconTextButton } from '../button';
 import { ButtonGroup } from '../button-group';
 import { ColorPicker } from '../colorpicker';
 import { Combobox } from '../combobox';
@@ -67,6 +67,22 @@ export const Toolbar = (
                     {...child.props}
                     className={`k-toolbar-button ${child.props.className ? child.props.className : ''}`}
                 ></Button>
+            );
+        } else if (child.type === IconTextButton) {
+            tempToolbarChildren.push(
+                <IconTextButton
+                    key={`${index}-${new Date().getTime()}`}
+                    {...child.props}
+                    className={`k-toolbar-button ${child.props.className ? child.props.className : ''}`}
+                ></IconTextButton>
+            );
+        } else if (child.type === IconButton) {
+            tempToolbarChildren.push(
+                <IconButton
+                    key={`${index}-${new Date().getTime()}`}
+                    {...child.props}
+                    className={`k-toolbar-button ${child.props.className ? child.props.className : ''}`}
+                ></IconButton>
             );
         } else if (child.type === MenuButton) {
             tempToolbarChildren.push(
