@@ -18,7 +18,9 @@ export type KendoPivotGridProps = {
 };
 
 const defaultOptions = {
-    emptyCell: <span className="k-pivotgrid-empty-cell" />,
+    emptyCell: <span className="k-pivotgrid-empty-cell">
+                <span className="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+            </span>,
     configuratorDisplay: "none",
     configuratorPosition: "right"
 };
