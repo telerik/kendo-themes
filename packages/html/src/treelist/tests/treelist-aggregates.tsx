@@ -24,7 +24,7 @@ export default () =>(
                                         <col />
                                     </colgroup>
                                     <TableTbody>
-                                        <TableRow className="k-treelist-group">
+                                        <TableRow>
                                             <TableTd style={{ whiteSpace: "nowrap" }}>
                                                 <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                                 Daryl Sweeney
@@ -63,7 +63,7 @@ export default () =>(
                                                 <col />
                                             </colgroup>
                                             <TableTbody>
-                                                <TableRow className="k-treelist-group">
+                                                <TableRow>
                                                     <TableTd>
                                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                                         Daryl Sweeney

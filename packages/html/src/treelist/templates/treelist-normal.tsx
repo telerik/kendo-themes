@@ -33,7 +33,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                             <col />
                         </colgroup>
                         <TableTbody>
-                            <TableRow className="k-treelist-group">
+                            <TableRow>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
                                     Daryl
@@ -41,7 +41,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                 <TableTd>Sweeney</TableTd>
                                 <TableTd>CEO</TableTd>
                             </TableRow>
-                            <TableRow className="k-treelist-group k-alt" alt>
+                            <TableRow className="k-alt" alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
@@ -50,7 +50,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                 <TableTd>Wooten</TableTd>
                                 <TableTd>Chief Technical Officer</TableTd>
                             </TableRow>
-                            <TableRow className="k-treelist-group">
+                            <TableRow>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
@@ -60,7 +60,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                 <TableTd>Weber</TableTd>
                                 <TableTd>VP, Engineering</TableTd>
                             </TableRow>
-                            <TableRow className="k-treelist-group k-alt" alt>
+                            <TableRow className="k-alt" alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>

@@ -68,7 +68,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                             <col />
                                         </colgroup>
                                         <TableTbody>
-                                            <TableRow className="k-treelist-group">
+                                            <TableRow>
                                                 <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>7</TableTd>
                                                 <TableTd>
@@ -85,7 +85,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                     Project Kickoff
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow className="k-treelist-group">
+                                            <TableRow>
                                                 <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>11</TableTd>
                                                 <TableTd>
