@@ -59,7 +59,7 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "530px", ta
                             </GridHeader>
                             <GridContainer>
                                 <GridContent style={{ height: gridContentHeight }}>
-                                    <GridTable className="k-selectable" style={{ minWidth: "250px" }}>
+                                    <GridTable style={{ minWidth: "250px" }}>
                                         <colgroup>
                                             <col style={{ width: '50px' }} />
                                             <col />
