@@ -87,7 +87,7 @@ export default () =>(
             <GridWithGrouping className="telerik-blazor" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
+                        <Chip text="Id" actions={ <ChipAction type="remove"/> }/>
                     </ChipList>
                 </GridGroupingHeader>
             )}>
@@ -188,8 +188,8 @@ export default () =>(
             <GridWithGrouping className="telerik-blazor" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
-                        <Chip actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip text="Id" actions={ <ChipAction type="remove"/> } />
+                        <Chip text="Name" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}>

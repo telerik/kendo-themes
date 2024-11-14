@@ -8,18 +8,18 @@ export const GridWithGrouping = ({ contentClassName, ...other }: any) => (
         groupingHeader={(
             <GridGroupingHeader dropClue>
                 <ChipList>
-                    <Chip icon="sort-asc-small" actions={
+                    <Chip icon="sort-asc-small" text="ID" actions={
                         <>
                             <ChipAction type="more"/>
                             <ChipAction type="remove"/>
                         </>
-                    }>ID</Chip>
-                    <Chip icon="sort-desc-small" actions={
+                    }/>
+                    <Chip icon="sort-desc-small" text="Name" actions={
                         <>
                             <ChipAction type="more"/>
                             <ChipAction type="remove"/>
                         </>
-                    }>Name</Chip>
+                    } />
                 </ChipList>
             </GridGroupingHeader>
         )}
