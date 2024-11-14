@@ -11,7 +11,7 @@ export default () =>(
                     <div className="k-pane">
                         <div className="k-view k-widget">
                             <div className="k-stretched-view k-content">
-                                <Grid className="k-grid-display-block k-grid-mobile k-editable" pager={(
+                                <Grid className="k-grid-display-block k-grid-mobile" pager={(
                                     <GridPager adaptive info={false} pageSizes={false} />
                                 )}>
                                 </Grid>
@@ -27,7 +27,7 @@ export default () =>(
                     <div className="k-pane">
                         <div className="k-view k-widget">
                             <div className="k-stretched-view k-content">
-                                <Grid className="k-grid-display-block k-grid-mobile k-editable" pager={(
+                                <Grid className="k-grid-display-block k-grid-mobile" pager={(
                                     <GridPager adaptive info={false} pageSizes={false} dir="rtl" />
                                 )}>
                                 </Grid>
