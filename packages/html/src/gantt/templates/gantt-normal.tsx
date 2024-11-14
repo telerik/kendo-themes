@@ -65,7 +65,7 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "180px", ta
                                             <col />
                                         </colgroup>
                                         <TableTbody>
-                                            <TableRow className="k-treelist-group">
+                                            <TableRow>
                                                 <TableTd>7</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="caret-alt-down" />
@@ -80,7 +80,7 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "180px", ta
                                                     Project Kickoff
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow className="k-treelist-group">
+                                            <TableRow>
                                                 <TableTd>11</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="none" />
