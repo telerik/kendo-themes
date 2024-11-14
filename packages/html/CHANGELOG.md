@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.0.2-dev.0...v10.1.0-dev.0) (2024-11-14)
+
+
+### Features
+
+* **html:** add propertygrid spec ([e728b14](https://github.com/telerik/kendo-themes/commit/e728b1454a5ec3525809a4e0b91860f6d68e7cea))
+
+
+
+
+
 ## [10.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v10.0.1...v10.0.2-dev.0) (2024-11-11)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
