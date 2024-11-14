@@ -61,7 +61,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "530
                             </GridHeader>
                             <GridContainer>
                                 <GridContent style={{ height: gridContentHeight }}>
-                                    <GridTable className="k-selectable" style={{ minWidth: "250px" }}>
+                                    <GridTable style={{ minWidth: "250px" }}>
                                         <colgroup>
                                             <col className="k-drag-col" />
                                             <col style={{ width: '50px' }} />
