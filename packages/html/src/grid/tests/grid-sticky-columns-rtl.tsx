@@ -17,7 +17,7 @@ export default () =>(
             <GridWithStickyColumns className="k-rtl" style={{ height: "700px", width: "500px" }} groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>shipName</Chip>
+                        <Chip icon="sort-asc-small" text="shipName" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}

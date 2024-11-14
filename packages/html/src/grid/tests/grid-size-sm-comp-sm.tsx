@@ -293,8 +293,8 @@ export default () =>(
                 <GridNormal size="small" className="k-grid-no-scrollbar" pager={false} groupingHeader={(
                     <GridGroupingHeader dropClue>
                         <ChipList size="small">
-                            <Chip size="small" icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                            <Chip size="small" icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                            <Chip size="small" icon="sort-asc-small" text="Price" actions={ <ChipAction type="remove"/> } />
+                            <Chip size="small" icon="sort-desc-small" text="Name" actions={ <ChipAction type="remove"/> } />
                         </ChipList>
                     </GridGroupingHeader>
                 )}>

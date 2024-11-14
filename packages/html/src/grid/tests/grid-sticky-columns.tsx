@@ -11,7 +11,7 @@ export default () =>(
             <GridWithStickyColumns className="k-telerik-blazor">
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip actions={ <ChipAction type="remove"/> }>Active Projects</Chip>
+                        <Chip text="Active Projects" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
                 <GridHeader>

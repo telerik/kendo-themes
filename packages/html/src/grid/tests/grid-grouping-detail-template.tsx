@@ -87,7 +87,7 @@ export default () =>(
             <GridWithGrouping dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
+                        <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}>
@@ -188,8 +188,8 @@ export default () =>(
             <GridWithGrouping dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
+                        <Chip icon="sort-asc-small" text="Name" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}>
@@ -312,8 +312,8 @@ export default () =>(
             <GridWithGrouping dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
+                        <Chip icon="sort-asc-small" text="Name" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}>
