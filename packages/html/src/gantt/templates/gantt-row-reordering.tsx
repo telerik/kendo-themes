@@ -51,7 +51,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                         </colgroup>
                                         <TableThead>
                                             <TableRow>
-                                                <GridHeaderCell className="k-drag-cell"></GridHeaderCell>
+                                                <GridHeaderCell></GridHeaderCell>
                                                 <GridHeaderCell menu={menu} rowspan={1} columnTitle="ID"></GridHeaderCell>
                                                 <GridHeaderCell menu={menu} rowspan={1} columnTitle="Title"></GridHeaderCell>
                                             </TableRow>

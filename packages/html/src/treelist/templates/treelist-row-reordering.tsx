@@ -15,7 +15,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                         </colgroup>
                         <TableThead>
                             <TableRow>
-                                <GridHeaderCell className="k-drag-cell"></GridHeaderCell>
+                                <GridHeaderCell></GridHeaderCell>
                                 <GridHeaderCell menu={menu} columnTitle="First Name"></GridHeaderCell>
                                 <GridHeaderCell menu={menu} columnTitle="Last Name"></GridHeaderCell>
                                 <GridHeaderCell menu={menu} columnTitle="Position"></GridHeaderCell>

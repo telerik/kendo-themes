@@ -144,7 +144,7 @@ export default () =>(
                                 </colgroup>
                                 <TableThead>
                                     <TableRow>
-                                        <GridHeaderCell className="k-drag-cell"></GridHeaderCell>
+                                        <GridHeaderCell></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Company Name"></GridHeaderCell>
                                         <GridHeaderCell columnTitle="Country"></GridHeaderCell>
                                     </TableRow>
