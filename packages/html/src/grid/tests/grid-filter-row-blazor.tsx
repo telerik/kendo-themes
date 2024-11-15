@@ -71,7 +71,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-pos-relative">
                             <div className="k-virtual-position">
                                 <GridTable style={{ height: 'auto' }}>
@@ -194,7 +194,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-pos-relative">
                             <div className="k-virtual-position">
                                 <GridTable style={{ height: 'auto' }}>

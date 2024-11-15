@@ -6,7 +6,7 @@ import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
-            <GridWithStickyColumns contentClassName="k-virtual-content" style={{ height: "400px", width: "500px" }} />
+            <GridWithStickyColumns style={{ height: "400px", width: "500px" }} />
 
             <GridWithStickyColumns className="k-telerik-blazor">
                 <GridGroupingHeader>
@@ -39,7 +39,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div style={{ position: "relative" }}>
                             <div className="k-virtual-position">
                                 <GridTable style={{ height: 'auto' }}>

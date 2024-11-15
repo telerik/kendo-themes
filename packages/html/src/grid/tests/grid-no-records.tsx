@@ -59,7 +59,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>

@@ -53,7 +53,7 @@ export default () =>(
                 <TreeListAggregates style={{ height: "200px" }}
                     gridContent={
                         <>
-                            <GridContent className="k-virtual-content">
+                            <GridContent>
                                 <GridTable>
                                     <div className="k-grid-table-wrap">
                                         <GridTable>

@@ -146,7 +146,7 @@ export default () =>(
                             <div></div>
                         </div>
                     </div>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>

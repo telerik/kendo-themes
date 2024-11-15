@@ -87,7 +87,7 @@ export const Pager = (
             </Button>
         );
         options.push(
-            <option>{i}</option>
+            <option selected={i === currentPage ? true : false}>{i}</option>
         );
     }
 
