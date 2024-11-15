@@ -112,7 +112,6 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container"><div></div></div>
                     </GridContent>
                 </GridContainer>
             </>

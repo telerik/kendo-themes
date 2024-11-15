@@ -64,9 +64,6 @@ export default () =>(
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container">
-                            <div style={{ height: '0px' }}></div>
-                        </div>
                     </div>
                     <GridContent style={{ width: "447px" }}>
                         <div className="k-grid-table-wrap" style={{ position: "relative" }}>
@@ -92,9 +89,6 @@ export default () =>(
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
-                        </div>
-                        <div className="k-height-container">
-                            <div style={{ height: '0px' }}></div>
                         </div>
                     </GridContent>
                 </GridContainer>

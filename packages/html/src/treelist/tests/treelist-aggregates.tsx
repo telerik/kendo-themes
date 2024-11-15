@@ -84,9 +84,6 @@ export default () =>(
                                             </TableTbody>
                                         </GridTable>
                                     </div>
-                                    <div className="k-height-container">
-                                        <div style={{ height: '0px' }}></div>
-                                    </div>
                                 </GridTable>
                             </GridContent>
                         </>
