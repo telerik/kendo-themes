@@ -114,7 +114,6 @@ export default () => (
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container"><div></div></div>
                     </GridContent>
                 </GridContainer>
             </GridWithStickyColumns>
@@ -263,9 +262,6 @@ export default () => (
                                     </TableTbody>
                                 </GridTable>
                             </div>
-                        </div>
-                        <div className="k-height-container">
-                            <div></div>
                         </div>
                     </GridContent>
                 </GridContainer>

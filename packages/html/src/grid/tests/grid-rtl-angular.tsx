@@ -62,10 +62,6 @@ export default () =>(
                                     </TableTbody>
                                 </GridTable>
                             </div>
-                            <div className="k-height-container">
-                                {/* set height to scroll height (virtual scrolling) */}
-                                <div style={{ height: '0px' }}></div>
-                            </div>
                         </GridContent>
                     </GridContainer>
                 </GridNormal>
@@ -131,9 +127,6 @@ export default () =>(
                                         </TableRow>
                                     </TableTbody>
                                 </GridTable>
-                            </div>
-                            <div className="k-height-container">
-                                <div></div>
                             </div>
                         </GridContent>
                     </GridContainer>

@@ -142,9 +142,6 @@ export default () =>(
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container">
-                            <div></div>
-                        </div>
                     </div>
                     <GridContent>
                         <div className="k-grid-table-wrap">
@@ -220,7 +217,6 @@ export default () =>(
                             </GridTable>
                         </div>
                         <div></div>
-                        <div className="k-height-container"><div></div></div>
                     </GridContent>
                 </GridContainer>
                 <GridFooter>
