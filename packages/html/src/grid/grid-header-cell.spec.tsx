@@ -55,7 +55,7 @@ export const GridHeaderCell = (
                 props.className,
                 GRIDHEADERCELL_CLASSNAME,
                 {
-                    [`k-filterable`]: menu && filterable || menu === "filter",
+                    [`k-filterable`]: menu || filterable,
                     [`k-sorted`]: sortable,
                     [`k-grid-header-sticky`]: sticky,
                     [`k-touch-action-none`]: resizable
