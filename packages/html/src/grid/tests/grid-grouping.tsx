@@ -53,7 +53,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -137,7 +137,7 @@ export default () =>(
             <span>angular with grouping</span>
             <span>jquery with grouping</span>
 
-            <GridWithGrouping className="k-grid-no-scrollbar" contentClassName="k-virtual-content" toolbar={(
+            <GridWithGrouping className="k-grid-no-scrollbar" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>

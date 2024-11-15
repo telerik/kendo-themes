@@ -80,7 +80,7 @@ export default () => (
                             </TableTbody>
                         </GridTable>
                     </div>
-                    <GridContent className="k-virtual-content" style={{ width: "605px", height: "320px" }}>
+                    <GridContent style={{ width: "605px", height: "320px" }}>
                         <GridTable>
                             <colgroup>
                                 <col style={{ width: "300px" }} />

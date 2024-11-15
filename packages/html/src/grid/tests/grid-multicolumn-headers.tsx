@@ -68,7 +68,7 @@ export default () =>(
                             <div style={{ height: '0px' }}></div>
                         </div>
                     </div>
-                    <GridContent className="k-virtual-content" style={{ width: "447px" }}>
+                    <GridContent style={{ width: "447px" }}>
                         <div className="k-grid-table-wrap" style={{ position: "relative" }}>
                             <GridTable style={{ transform: "translateY(0px)", width: "900px" }}>
                                 <colgroup>

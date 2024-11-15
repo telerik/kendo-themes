@@ -34,7 +34,7 @@ export default () =>(
                         </div>
                     </GridHeader>
                     <GridContainer>
-                        <GridContent className="k-virtual-content">
+                        <GridContent>
                             <div style={{ position: "relative" }}>
                                 <GridTable>
                                     <colgroup>
