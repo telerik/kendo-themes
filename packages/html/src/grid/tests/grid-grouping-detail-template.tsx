@@ -51,12 +51,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox id="k-grid0-checkbox0" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>1</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>1</TableTd>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -64,12 +64,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox id="k-grid0-checkbox0" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>2</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>2</TableTd>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -143,12 +143,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>1</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>1</TableTd>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -165,12 +165,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>2</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>2</TableTd>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -258,12 +258,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>1</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>1</TableTd>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -290,12 +290,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>2</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>2</TableTd>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -382,12 +382,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="minus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>1</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>1</TableTd>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -420,12 +420,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="minus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>2</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>2</TableTd>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
