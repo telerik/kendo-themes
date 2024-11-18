@@ -88,7 +88,7 @@ export default () =>(
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -187,7 +187,7 @@ export default () =>(
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>

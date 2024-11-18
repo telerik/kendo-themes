@@ -124,7 +124,7 @@ export default () => (
                         <Chip text="Active Projects" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -139,8 +139,8 @@ export default () => (
                                 <TableRow>
                                     <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-header-sticky" columnTitle="Team" colspan={1} style={{ left: '0px', right: '0px' }}></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-header-sticky" columnTitle="Active Projects" colspan={1}></GridHeaderCell>
+                                    <GridHeaderCell sticky columnTitle="Team" colspan={1} style={{ left: '0px', right: '0px' }}></GridHeaderCell>
+                                    <GridHeaderCell sticky columnTitle="Active Projects" colspan={1}></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Salary"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="On Vacation"></GridHeaderCell>
                                 </TableRow>

@@ -2,18 +2,31 @@ import { classNames } from '../misc';
 
 const className = `k-grid-header`;
 
+export type KendoGridHeaderProps = {
+    draggable?: boolean;
+};
+
 export const GridHeader = (
-    props: React.HTMLAttributes<HTMLDivElement>
-) => (
-    <div
-        {...props}
-        className={classNames(
-            props.className,
-            className,
-        )}
-    >
+    props: KendoGridHeaderProps &
+    React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        draggable
+    } = props;
 
-        {props.children}
+    return (
 
-    </div>
-);
+        <div
+            {...props}
+            className={classNames(
+                props.className,
+                className,
+                {[`k-grid-draggable-header`]: draggable},
+            )}
+        >
+
+            {props.children}
+
+        </div>
+    );
+};
