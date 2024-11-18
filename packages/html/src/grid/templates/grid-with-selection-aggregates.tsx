@@ -69,39 +69,43 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
                         </GridTable>
                     </GridContent>
                 </GridContainer>
-                <div className="k-selection-aggregates k-grid-selection-aggregates">
-                    { aggregated ?
-                        <>
-                            <div className="k-selection-aggregates-item">
-                                <span className="k-selection-aggregates-item-text">Sum:</span>
-                                <span className="k-selection-aggregates-item-value">122.00</span>
-                            </div>
-                            <div className="k-selection-aggregates-item">
-                                <span className="k-selection-aggregates-item-text">Avg:</span>
-                                <span className="k-selection-aggregates-item-value">30.50</span>
-                            </div>
-                            <div className="k-selection-aggregates-item">
-                                <span className="k-selection-aggregates-item-text">Min:</span>
-                                <span className="k-selection-aggregates-item-value">13</span>
-                            </div>
-                            <div className="k-selection-aggregates-item">
-                                <span className="k-selection-aggregates-item-text">Max:</span>
-                                <span className="k-selection-aggregates-item-value">53</span>
-                            </div>
-                            <div className="k-selection-aggregates-item">
-                                <span className="k-selection-aggregates-item-text">Count:</span>
-                                <span className="k-selection-aggregates-item-value">8</span>
-                            </div>
-                        </>
-                        :
-                        <div className="k-selection-aggregates-item">
-                            <span className="k-selection-aggregates-item-text">Count:</span>
-                            <span className="k-selection-aggregates-item-value">0</span>
-                        </div>
-                    }
-                </div>
             </>
         )}
+        gridSelectionAggregates={
+            (
+                <div className="k-selection-aggregates k-grid-selection-aggregates">
+                { aggregated ?
+                    <>
+                        <div className="k-selection-aggregates-item">
+                            <span className="k-selection-aggregates-item-text">Sum:</span>
+                            <span className="k-selection-aggregates-item-value">122.00</span>
+                        </div>
+                        <div className="k-selection-aggregates-item">
+                            <span className="k-selection-aggregates-item-text">Avg:</span>
+                            <span className="k-selection-aggregates-item-value">30.50</span>
+                        </div>
+                        <div className="k-selection-aggregates-item">
+                            <span className="k-selection-aggregates-item-text">Min:</span>
+                            <span className="k-selection-aggregates-item-value">13</span>
+                        </div>
+                        <div className="k-selection-aggregates-item">
+                            <span className="k-selection-aggregates-item-text">Max:</span>
+                            <span className="k-selection-aggregates-item-value">53</span>
+                        </div>
+                        <div className="k-selection-aggregates-item">
+                            <span className="k-selection-aggregates-item-text">Count:</span>
+                            <span className="k-selection-aggregates-item-value">8</span>
+                        </div>
+                    </>
+                    :
+                    <div className="k-selection-aggregates-item">
+                        <span className="k-selection-aggregates-item-text">Count:</span>
+                        <span className="k-selection-aggregates-item-value">0</span>
+                    </div>
+                }
+            </div>
+            )
+        }
         {...other}>
 
     </Grid>
