@@ -295,7 +295,7 @@ export default () =>(
                         </ChipList>
                     </GridGroupingHeader>
                 )}>
-                    <GridHeader>
+                    <GridHeader draggable>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable size="small">
                                 <colgroup>

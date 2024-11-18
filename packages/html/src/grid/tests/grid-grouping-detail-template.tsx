@@ -11,7 +11,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
             <span>Base</span>
             <GridNormal dir="ltr" pager={false}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -27,8 +27,8 @@ export default () =>(
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox id="k-grid0-select-all" />
                                     </GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -88,7 +88,7 @@ export default () =>(
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -106,8 +106,8 @@ export default () =>(
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -179,7 +179,7 @@ export default () =>(
             </GridWithGrouping>
 
             <span>Two Groups</span>
-            <GridWithGrouping dir="ltr"groupingHeader={(
+            <GridWithGrouping dir="ltr" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
@@ -187,7 +187,7 @@ export default () =>(
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -207,8 +207,8 @@ export default () =>(
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -308,7 +308,7 @@ export default () =>(
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -328,8 +328,8 @@ export default () =>(
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>

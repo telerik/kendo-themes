@@ -23,7 +23,7 @@ export default () =>(
             )}
             pager={( <GridPager adaptive pageSizes={false} dir="rtl" info={false} />
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable style={{ width: "1434px" }}>
                             <colgroup>

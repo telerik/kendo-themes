@@ -25,7 +25,7 @@ export const GridWithGrouping = ({ contentClassName, ...other }: any) => (
         )}
         children={(
             <>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
