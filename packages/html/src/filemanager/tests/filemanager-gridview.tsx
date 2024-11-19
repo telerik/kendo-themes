@@ -67,7 +67,7 @@ export default () =>(
                                                 <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
                                                 <TableTd>0</TableTd>
                                             </TableRow>
-                                            <TableRow className="k-master-row k-alt" alt selected>
+                                            <TableRow className="k-master-row" alt selected>
                                                 <TableTd>
                                                     <FilePreview name="file.png" icon="file" />
                                                 </TableTd>

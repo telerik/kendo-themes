@@ -41,7 +41,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd>CEO</TableTd>
                                 <TableTd>February 7, 2012</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="caret-alt-right" />
@@ -59,7 +59,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd>Chief Product Officer</TableTd>
                                 <TableTd>November 30, 2014</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down" />
@@ -88,7 +88,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd></TableTd>
                                 <TableTd>Last employee hired on July 30, 2015</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="caret-alt-right" />

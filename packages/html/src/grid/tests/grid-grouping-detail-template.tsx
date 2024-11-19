@@ -60,7 +60,7 @@ export default () =>(
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt" role="row">
+                                    <TableRow alt className="k-master-row" role="row">
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
@@ -157,7 +157,7 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt" role="row">
+                                    <TableRow alt className="k-master-row" role="row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
@@ -278,7 +278,7 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt" role="row">
+                                    <TableRow alt className="k-master-row" role="row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-hierarchy-cell">
@@ -405,7 +405,7 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt k-expanded" role="row">
+                                    <TableRow alt className="k-master-row k-expanded" role="row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-hierarchy-cell">
@@ -420,7 +420,7 @@ export default () =>(
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-detail-row k-alt" role="row">
+                                    <TableRow alt className="k-detail-row" role="row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-hierarchy-cell"></TableTd>

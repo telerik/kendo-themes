@@ -100,7 +100,7 @@ export default () =>(
                                                 </span>
                                             </TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />
@@ -220,7 +220,7 @@ export default () =>(
                                                 </span>
                                             </TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />

@@ -47,7 +47,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                 <TableTd>Sweeney</TableTd>
                                 <TableTd>CEO</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd className="k-drag-cell">
                                     <Icon icon="reorder"/>
                                 </TableTd>
@@ -72,7 +72,7 @@ export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other 
                                 <TableTd>Weber</TableTd>
                                 <TableTd>VP, Engineering</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd className="k-drag-cell">
                                     <Icon icon="reorder"/>
                                 </TableTd>

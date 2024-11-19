@@ -41,7 +41,7 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
                                     <TableTd>false</TableTd>
                                     <TableTd>0</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>Chang</TableTd>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>17</TableTd>
                                     <TableTd>false</TableTd>
@@ -53,7 +53,7 @@ export const GridWithSelectionAggregates = ({ aggregated = false, contentClassNa
                                     <TableTd>false</TableTd>
                                     <TableTd>70</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                     <TableTd className={ aggregated ? "k-selected" : "" }>53</TableTd>
                                     <TableTd>false</TableTd>

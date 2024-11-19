@@ -41,7 +41,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                 <TableTd>Sweeney</TableTd>
                                 <TableTd>CEO</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
@@ -60,7 +60,7 @@ export const TreeListNormal = ({ gridHeader, gridContent, menu, ...other }: any)
                                 <TableTd>Weber</TableTd>
                                 <TableTd>VP, Engineering</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>

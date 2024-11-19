@@ -72,7 +72,7 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "180px", ta
                                                     Software validation, research and implementation
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow className="k-alt" alt>
+                                            <TableRow alt>
                                                 <TableTd>18</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="none" />
@@ -88,7 +88,7 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "180px", ta
                                                     Research
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow className="k-alt" alt>
+                                            <TableRow alt>
                                                 <TableTd>19</TableTd>
                                                 <TableTd>
                                                     <Icon className="k-treelist-toggle" icon="none" />
@@ -145,9 +145,9 @@ export const GanttNormal = ({ flexBasis = "30%", gridContentHeight = "180px", ta
                                         </colgroup>
                                         <TableTbody>
                                             <TableRow><TableTd></TableTd></TableRow>
-                                            <TableRow className="k-alt" alt><TableTd></TableTd></TableRow>
+                                            <TableRow alt><TableTd></TableTd></TableRow>
                                             <TableRow><TableTd></TableTd></TableRow>
-                                            <TableRow className="k-alt" alt><TableTd></TableTd></TableRow>
+                                            <TableRow alt><TableTd></TableTd></TableRow>
                                             <TableRow><TableTd></TableTd></TableRow>
                                         </TableTbody>
                                     </GanttRowsTable>

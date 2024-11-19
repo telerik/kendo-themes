@@ -89,7 +89,7 @@ export const FileManagerGrid = (props) => (
                                             <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
                                             <TableTd>0</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd>
                                                 <FilePreview name="file.png" icon="file" />
                                             </TableTd>

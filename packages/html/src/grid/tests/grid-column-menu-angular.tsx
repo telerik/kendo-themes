@@ -46,7 +46,7 @@ export default () =>(
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt">
+                                    <TableRow alt className="k-master-row">
                                         <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -103,7 +103,7 @@ export default () =>(
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt">
+                                    <TableRow alt className="k-master-row">
                                         <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -160,7 +160,7 @@ export default () =>(
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt">
+                                    <TableRow alt className="k-master-row">
                                         <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
