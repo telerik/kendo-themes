@@ -62,7 +62,7 @@ export const GridWithEditRow = (props) => (
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>Chang</TableTd>
                                         <TableTd>19</TableTd>
                                         <TableTd>false</TableTd>

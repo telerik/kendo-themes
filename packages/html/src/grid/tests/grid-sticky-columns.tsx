@@ -70,7 +70,7 @@ export default () =>(
                                             <TableTd colspan={1}>1429</TableTd>
                                             <TableTd colspan={1}>True</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd colspan={1}>Employee 4</TableTd>
                                             <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '0px' }}>
@@ -109,7 +109,7 @@ export default () =>(
                                             <TableTd colspan={1}>2307</TableTd>
                                             <TableTd colspan={1}>False</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd colspan={1}>Employee 2</TableTd>
                                             <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '0px' }}>
@@ -129,7 +129,7 @@ export default () =>(
                                             <TableTd colspan={1}>4593</TableTd>
                                             <TableTd colspan={1}>False</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd colspan={1}>Employee 5</TableTd>
                                             <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '0px' }}>

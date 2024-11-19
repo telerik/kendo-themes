@@ -38,7 +38,7 @@ export const GridWithFilterMenu = ({ contentClassName, sortable, resizable, ...o
                                     <TableTd>Redmond</TableTd>
                                     <TableTd>CEO</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>Margaret Peacock</TableTd>
                                     <TableTd>Tacoma</TableTd>
                                     <TableTd>CTO</TableTd>
@@ -48,7 +48,7 @@ export const GridWithFilterMenu = ({ contentClassName, sortable, resizable, ...o
                                     <TableTd>Boston</TableTd>
                                     <TableTd>Web Designer</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>Laura Peacock</TableTd>
                                     <TableTd>Seattle</TableTd>
                                     <TableTd>Accountant</TableTd>

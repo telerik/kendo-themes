@@ -44,7 +44,7 @@ export const GridHierarchy = ({ containerClassName, ...other }: any) => (
                                     <TableTd>Beverages</TableTd>
                                     <TableTd>Soft drinks, coffees, teas, beers and ales</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt k-expanded" alt>
+                                <TableRow className="k-master-row k-expanded" alt>
                                     <TableTd className="k-hierarchy-cell">
                                         <Icon icon="caret-alt-down" />
                                     </TableTd>
@@ -88,7 +88,7 @@ export const GridHierarchy = ({ containerClassName, ...other }: any) => (
                                                                 <TableTd colspan={1}>Aniseed Syrup</TableTd>
                                                                 <TableTd colspan={1}>$10.00</TableTd>
                                                             </TableRow>
-                                                            <TableRow alt className="k-master-row k-alt">
+                                                            <TableRow alt className="k-master-row">
                                                                 <TableTd colspan={1}>2</TableTd>
                                                                 <TableTd colspan={1}>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                                                 <TableTd colspan={1}>$22.00</TableTd>

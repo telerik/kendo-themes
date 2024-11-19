@@ -51,7 +51,7 @@ export default () =>(
                                             Chai
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row" alt style={{ height: "37px" }}>
                                         <TableTd colspan={1}>
                                             Chang
                                         </TableTd>
@@ -77,7 +77,7 @@ export default () =>(
                                         <TableTd colspan={1}>18</TableTd>
                                         <TableTd colspan={1}>false</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row" alt style={{ height: "37px" }}>
                                         <TableTd colspan={1}>17</TableTd>
                                         <TableTd colspan={1}>19</TableTd>
                                         <TableTd colspan={1}>false</TableTd>

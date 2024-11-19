@@ -64,7 +64,7 @@ export default () =>(
                                             <TableTd>false</TableTd>
                                             <TableTd>10 boxes x 20 bags</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
@@ -88,7 +88,7 @@ export default () =>(
                                             <TableTd>false</TableTd>
                                             <TableTd>12 - 550 ml bottles</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-selected k-alt" alt>
+                                        <TableRow className="k-master-row k-selected" alt>
                                             <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
@@ -112,7 +112,7 @@ export default () =>(
                                             <TableTd>true</TableTd>
                                             <TableTd>36 boxes</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-hover k-alt" alt>
+                                        <TableRow className="k-master-row k-hover" alt>
                                             <TableTd className="k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
@@ -136,7 +136,7 @@ export default () =>(
                                             <TableTd>false</TableTd>
                                             <TableTd>12 - 1 lb pkgs</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-hover k-alt" alt>
+                                        <TableRow className="k-master-row k-hover" alt>
                                             <TableTd className="k-grid-content-sticky" style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
@@ -160,7 +160,7 @@ export default () =>(
                                             <TableTd>true</TableTd>
                                             <TableTd>18 - 500 g pkgs.</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-grid-content-sticky" style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
@@ -184,7 +184,7 @@ export default () =>(
                                             <TableTd>false</TableTd>
                                             <TableTd>1 kg pkg.</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-grid-content-sticky" style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>
@@ -208,7 +208,7 @@ export default () =>(
                                             <TableTd>false</TableTd>
                                             <TableTd>2 kg box</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-grid-content-sticky" style={{ left: '0px', right: "240px" }}>
                                                 <Icon icon="unpin" />
                                             </TableTd>

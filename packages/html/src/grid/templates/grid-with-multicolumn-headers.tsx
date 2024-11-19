@@ -47,7 +47,7 @@ export const GridWithMultiColumnHeaders = ({ headerWrapClassName, contentClassNa
                                     <TableTd>39</TableTd>
                                     <TableTd>18</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>2</TableTd>
                                     <TableTd>Chang</TableTd>
                                     <TableTd>17</TableTd>
@@ -59,7 +59,7 @@ export const GridWithMultiColumnHeaders = ({ headerWrapClassName, contentClassNa
                                     <TableTd>13</TableTd>
                                     <TableTd>10</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>4</TableTd>
                                     <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                     <TableTd>53</TableTd>

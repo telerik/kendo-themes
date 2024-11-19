@@ -66,7 +66,7 @@ export default () =>(
                                         <TableTd>$18.00</TableTd>
                                         <TableTd>Beverages</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Chang</TableTd>
                                         <TableTd>$19.00</TableTd>
@@ -122,7 +122,7 @@ export default () =>(
                                     <TableTd>$18.00</TableTd>
                                     <TableTd>Beverages</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>2</TableTd>
                                     <TableTd>Chang</TableTd>
                                     <TableTd>$19.00</TableTd>

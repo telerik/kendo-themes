@@ -55,7 +55,7 @@ export default () =>(
                                             <Button>Cancel</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
@@ -131,7 +131,7 @@ export default () =>(
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>

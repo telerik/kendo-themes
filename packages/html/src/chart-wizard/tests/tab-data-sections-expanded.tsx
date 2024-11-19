@@ -50,7 +50,7 @@ export default () => (
                                                         <Button icon="trash" fillMode="flat"></Button>
                                                     </TableTd>
                                                 </TableRow>
-                                                <TableRow className="k-master-row k-alt" alt>
+                                                <TableRow className="k-master-row" alt>
                                                     <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
                                                     <TableTd>Series Name</TableTd>
                                                     <TableTd className="k-command-cell">
@@ -64,7 +64,7 @@ export default () => (
                                                         <Button icon="trash" fillMode="flat"></Button>
                                                     </TableTd>
                                                 </TableRow>
-                                                <TableRow className="k-master-row k-alt" alt>
+                                                <TableRow className="k-master-row" alt>
                                                     <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
                                                     <TableTd>Series Name</TableTd>
                                                     <TableTd className="k-command-cell">

@@ -76,7 +76,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                     Software validation, research and implementation
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow className="k-alt" alt>
+                                            <TableRow alt>
                                                 <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>18</TableTd>
                                                 <TableTd>
@@ -94,7 +94,7 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                                     Research
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow className="k-alt" alt>
+                                            <TableRow alt>
                                                 <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
                                                 <TableTd>19</TableTd>
                                                 <TableTd>
@@ -153,9 +153,9 @@ export const GanttRowReordering = ({ flexBasis = "30%", gridContentHeight = "180
                                         </colgroup>
                                         <TableTbody>
                                             <TableRow><TableTd></TableTd></TableRow>
-                                            <TableRow className="k-alt" alt><TableTd></TableTd></TableRow>
+                                            <TableRow alt><TableTd></TableTd></TableRow>
                                             <TableRow><TableTd></TableTd></TableRow>
-                                            <TableRow className="k-alt" alt><TableTd></TableTd></TableRow>
+                                            <TableRow alt><TableTd></TableTd></TableRow>
                                             <TableRow><TableTd></TableTd></TableRow>
                                         </TableTbody>
                                     </GanttRowsTable>

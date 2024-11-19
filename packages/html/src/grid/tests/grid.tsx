@@ -40,7 +40,7 @@ export default () =>(
                                         <TableTd>1</TableTd>
                                         <TableTd>Row</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Alt row</TableTd>
                                     </TableRow>
@@ -50,7 +50,7 @@ export default () =>(
                                     This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>4</TableTd>
                                         <TableTd><SkeletonNormal animation={false} /></TableTd>
                                     </TableRow>
@@ -114,7 +114,7 @@ export default () =>(
                                             </div>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt k-master-row">
+                                    <TableRow alt className="k-master-row">
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="caret-alt-right" />
                                         </TableTd>
@@ -166,7 +166,7 @@ export default () =>(
                                         <TableTd>Alfreds Futterkiste</TableTd>
                                         <TableTd>Germany</TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-alt k-master-row">
+                                    <TableRow alt className="k-master-row">
                                         <TableTd className="k-drag-cell"><Icon icon="reorder" /></TableTd>
                                         <TableTd>Ana Trujillo Emparedados y helados</TableTd>
                                         <TableTd>Mexico</TableTd>
