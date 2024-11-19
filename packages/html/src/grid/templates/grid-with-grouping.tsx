@@ -3,10 +3,10 @@ import { Chip, ChipList, ChipAction } from '../../chip';
 import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableRow, TableTd, TableTbody } from '../../table';
 
-export const GridWithGrouping = ({ contentClassName, ...other }: any) => (
+export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) => (
     <Grid _renderAriaRoot
         groupingHeader={(
-            <GridGroupingHeader dropClue>
+            <GridGroupingHeader dropClue={dropClue} >
                 <ChipList>
                     <Chip icon="sort-asc-small" text="ID" actions={
                         <>

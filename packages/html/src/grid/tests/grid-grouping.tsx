@@ -137,7 +137,7 @@ export default () =>(
             <span>angular with grouping</span>
             <span>jquery with grouping</span>
 
-            <GridWithGrouping className="k-grid-no-scrollbar" toolbar={(
+            <GridWithGrouping dropClue className="k-grid-no-scrollbar" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -148,7 +148,7 @@ export default () =>(
                 </GridToolbar>
             )}/>
 
-            <GridWithGrouping _renderAriaRoot={false} className="k-grid-no-scrollbar k-grid-display-block" toolbar={(
+            <GridWithGrouping _renderAriaRoot={false} dropClue className="k-grid-no-scrollbar k-grid-display-block" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>

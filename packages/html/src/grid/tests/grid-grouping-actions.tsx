@@ -23,7 +23,7 @@ export default () => (
         <style>{styles}</style>
         <div id="test-area">
             <section>
-                <GridWithGrouping className="k-grid-no-scrollbar"></GridWithGrouping>
+                <GridWithGrouping dropClue className="k-grid-no-scrollbar"></GridWithGrouping>
             </section>
 
             <Popup className="k-grid-columnmenu-popup">

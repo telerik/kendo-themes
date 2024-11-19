@@ -81,7 +81,7 @@ export default () =>(
                 </GridContainer>
             </GridNormal>
             <h3>Single Group</h3>
-            <GridWithGrouping className="telerik-blazor" groupingHeader={(
+            <GridWithGrouping dropClue className="telerik-blazor" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip text="Id" actions={ <ChipAction type="remove"/> }/>
@@ -179,7 +179,7 @@ export default () =>(
                 </GridContainer>
             </GridWithGrouping>
             <h3>Two Groups</h3>
-            <GridWithGrouping className="telerik-blazor" groupingHeader={(
+            <GridWithGrouping dropClue className="telerik-blazor" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip text="Id" actions={ <ChipAction type="remove"/> } />
