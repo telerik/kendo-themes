@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "sass:math";
 @use "sass:map";
 @use "../core/_index.scss" as *;
@@ -138,7 +139,7 @@ $kendo-stepper-indicator-done-hover-border: null !default;
 
 /// The background color of the Stepper's disabled done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%)) !default;
+$kendo-stepper-indicator-done-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), color.mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%)) !default;
 /// The text color of the Stepper's disabled done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-disabled-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-stepper-indicator-done-bg )) !default;

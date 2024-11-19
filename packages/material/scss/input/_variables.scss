@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../core/functions/index.import.scss" as *;
@@ -154,7 +155,7 @@ $kendo-input-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-co
 $kendo-input-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 27%, transparent), $kendo-disabled-text) !default;
 /// The border color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( $kendo-component-border, math.div( alpha( $kendo-component-border ), 2 ) )) !default;
+$kendo-input-disabled-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( $kendo-component-border, math.div( color.alpha( $kendo-component-border ), 2 ) )) !default;
 /// The gradient of the disabled Input components.
 /// @group input
 $kendo-input-disabled-gradient: null !default;
