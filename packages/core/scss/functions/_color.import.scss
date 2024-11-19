@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "sass:math";
 @use "sass:list";
 @use "sass:meta";
@@ -14,7 +15,7 @@ $kendo-dark-color-level-step: 16% !default;
 ///   @debug k-color-alpha( rgba( 0, 0, 0, 0.5 ) ); // => 0.5
 ///   @debug k-color-alpha( #000 ); // => 1
 @function k-color-alpha( $color ) {
-    @return alpha( $color );
+    @return color.alpha( $color );
 }
 
 /// Returns the red channel of a color.
@@ -24,7 +25,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-red( #ff0000 ); // => 255
 @function k-color-red( $color ) {
-    @return red( $color );
+    @return math.round(color.channel( $color, "red" ));
 }
 
 /// Returns the green channel of a color.
@@ -34,7 +35,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-green( #00ff00 ); // => 255
 @function k-color-green( $color ) {
-    @return green( $color );
+    @return math.round(color.channel( $color, "green" ));
 }
 
 /// Returns the blue channel of a color.
@@ -44,7 +45,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-blue( #0000ff ); // => 255
 @function k-color-blue( $color ) {
-    @return blue( $color );
+    @return math.round(color.channel( $color, "blue" ));
 }
 
 /// Returns the hue of a color.
@@ -54,7 +55,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-hue( #e1d7d2 ); // => 20deg
 @function k-color-hue( $color ) {
-    @return hue( $color );
+    @return color.channel( $color, "hue" );
 }
 
 /// Returns the saturation of a color.
@@ -64,7 +65,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-saturation( #e1d7d2 ); // => 20%
 @function k-color-saturation( $color ) {
-    @return saturation( $color );
+    @return color.channel( $color, "saturation" );
 }
 
 /// Returns the lightness of a color.
@@ -74,7 +75,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-lightness( #e1d7d2 ); // => 80%
 @function k-color-lightness( $color ) {
-    @return lightness( $color );
+    @return color.channel( $color, "lightness" );
 }
 
 /// Returns a color that is a mix of two colors.
@@ -86,7 +87,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-mix( #f00, #00f ); // => #800080
 @function k-color-mix( $color1, $color2, $weight: 50% ) {
-    @return mix( $color1, $color2, $weight );
+    @return color.mix( $color1, $color2, $weight );
 }
 
 /// Makes a color darker by decreasing its lightness.
@@ -97,7 +98,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-darken( #f00, 10% ); // => #e60000
 @function k-color-darken( $color, $amount) {
-    @return darken( $color, $amount );
+    @return color.adjust( $color, $lightness: - $amount );
 }
 
 /// Makes a color lighter by increasing its lightness.
@@ -108,7 +109,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-lighten( #f00, 10% ); // => #ff1a1a
 @function k-color-lighten( $color, $amount) {
-    @return lighten( $color, $amount );
+    @return color.adjust( $color, $lightness: $amount );
 }
 
 /// Increases or decreases the hue of a color.
@@ -119,7 +120,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-adjust-hue( #f00, 10deg ); // => #ff1a00
 @function k-color-adjust-hue( $color, $degrees ) {
-    @return adjust-hue( $color, $degrees );
+    @return color.adjust( $color, $hue: $degrees );
 }
 
 /// Increases the saturation of a color.
@@ -130,7 +131,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-saturate( #f00, 10% ); // => #ff3333
 @function k-color-saturate( $color, $amount ) {
-    @return saturate( $color, $amount );
+    @return color.adjust( $color, $saturation: $amount );
 }
 
 /// Decreases the saturation of a color.
@@ -141,7 +142,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-desaturate( #f00, 10% ); // => #e60000
 @function k-color-desaturate( $color, $amount ) {
-    @return desaturate( $color, $amount );
+    @return color.adjust( $color, $saturation: - $amount );
 }
 
 /// Returns a gray color with the same lightness as the input color.
@@ -151,7 +152,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-grayscale( #f00 ); // => #808080
 @function k-color-grayscale( $color ) {
-    @return grayscale( $color );
+    @return color.grayscale( $color );
 }
 
 /// Returns the RGB complement of a color. This identical to adjusting the hue
@@ -162,7 +163,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-complement( #f00 ); // => #00ffff
 @function k-color-complement( $color ) {
-    @return complement( $color );
+    @return color.complement( $color );
 }
 
 /// Returns the inverse of a color.
@@ -172,7 +173,7 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-invert( #f00 ); // => #00ffff
 @function k-color-invert( $color ) {
-    @return invert( $color );
+    @return color.invert( $color );
 }
 
 /// Set a specific jump point for requesting color jumps

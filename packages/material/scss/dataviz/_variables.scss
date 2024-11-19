@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../core/_index.scss" as *;
 @use "../core/functions/index.import.scss" as *;
 @use "../core/color-system/_functions.scss" as *;
@@ -7,50 +8,50 @@
 /// The first base series color and its light and dark shades.
 /// @group charts
 $kendo-series-a: if($kendo-enable-color-system, k-color( series-a ), get-base-hue( purple, 500 )) !default;
-$kendo-series-a-dark: if($kendo-enable-color-system, k-color( series-a-bold ), mix(black, $kendo-series-a, 25%)) !default;
-$kendo-series-a-darker: if($kendo-enable-color-system, k-color( series-a-bolder ), mix(black, $kendo-series-a, 50%)) !default;
-$kendo-series-a-light: if($kendo-enable-color-system, k-color( series-a-subtle ), mix(white, $kendo-series-a, 25%)) !default;
-$kendo-series-a-lighter: if($kendo-enable-color-system, k-color( series-a-subtler ), mix(white, $kendo-series-a, 50%)) !default;
+$kendo-series-a-dark: if($kendo-enable-color-system, k-color( series-a-bold ), color.mix(black, $kendo-series-a, 25%)) !default;
+$kendo-series-a-darker: if($kendo-enable-color-system, k-color( series-a-bolder ), color.mix(black, $kendo-series-a, 50%)) !default;
+$kendo-series-a-light: if($kendo-enable-color-system, k-color( series-a-subtle ), color.mix(white, $kendo-series-a, 25%)) !default;
+$kendo-series-a-lighter: if($kendo-enable-color-system, k-color( series-a-subtler ), color.mix(white, $kendo-series-a, 50%)) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
 $kendo-series-b: if($kendo-enable-color-system, k-color( series-b ), get-base-hue( blue, 500 )) !default;
-$kendo-series-b-dark: if($kendo-enable-color-system, k-color( series-b-bold ), mix(black, $kendo-series-b, 25%)) !default;
-$kendo-series-b-darker: if($kendo-enable-color-system, k-color( series-b-bolder ), mix(black, $kendo-series-b, 50%)) !default;
-$kendo-series-b-light: if($kendo-enable-color-system, k-color( series-b-subtle ), mix(white, $kendo-series-b, 25%)) !default;
-$kendo-series-b-lighter: if($kendo-enable-color-system, k-color( series-b-subtler ), mix(white, $kendo-series-b, 50%)) !default;
+$kendo-series-b-dark: if($kendo-enable-color-system, k-color( series-b-bold ), color.mix(black, $kendo-series-b, 25%)) !default;
+$kendo-series-b-darker: if($kendo-enable-color-system, k-color( series-b-bolder ), color.mix(black, $kendo-series-b, 50%)) !default;
+$kendo-series-b-light: if($kendo-enable-color-system, k-color( series-b-subtle ), color.mix(white, $kendo-series-b, 25%)) !default;
+$kendo-series-b-lighter: if($kendo-enable-color-system, k-color( series-b-subtler ), color.mix(white, $kendo-series-b, 50%)) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
 $kendo-series-c: if($kendo-enable-color-system, k-color( series-c ), get-base-hue( teal, 500 )) !default;
-$kendo-series-c-dark: if($kendo-enable-color-system, k-color( series-c-bold ), mix(black, $kendo-series-c, 25%)) !default;
-$kendo-series-c-darker: if($kendo-enable-color-system, k-color( series-c-bolder ), mix(black, $kendo-series-c, 50%)) !default;
-$kendo-series-c-light: if($kendo-enable-color-system, k-color( series-c-subtle ), mix(white, $kendo-series-c, 25%)) !default;
-$kendo-series-c-lighter: if($kendo-enable-color-system, k-color( series-c-subtler ), mix(white, $kendo-series-c, 50%)) !default;
+$kendo-series-c-dark: if($kendo-enable-color-system, k-color( series-c-bold ), color.mix(black, $kendo-series-c, 25%)) !default;
+$kendo-series-c-darker: if($kendo-enable-color-system, k-color( series-c-bolder ), color.mix(black, $kendo-series-c, 50%)) !default;
+$kendo-series-c-light: if($kendo-enable-color-system, k-color( series-c-subtle ), color.mix(white, $kendo-series-c, 25%)) !default;
+$kendo-series-c-lighter: if($kendo-enable-color-system, k-color( series-c-subtler ), color.mix(white, $kendo-series-c, 50%)) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-d: if($kendo-enable-color-system, k-color( series-d ), get-base-hue( yellow, 500 )) !default;
-$kendo-series-d-dark: if($kendo-enable-color-system, k-color( series-d-bold ), mix(black, $kendo-series-d, 25%)) !default;
-$kendo-series-d-darker: if($kendo-enable-color-system, k-color( series-d-bolder ), mix(black, $kendo-series-d, 50%)) !default;
-$kendo-series-d-light: if($kendo-enable-color-system, k-color( series-d-subtle ), mix(white, $kendo-series-d, 25%)) !default;
-$kendo-series-d-lighter: if($kendo-enable-color-system, k-color( series-d-subtler ), mix(white, $kendo-series-d, 50%)) !default;
+$kendo-series-d-dark: if($kendo-enable-color-system, k-color( series-d-bold ), color.mix(black, $kendo-series-d, 25%)) !default;
+$kendo-series-d-darker: if($kendo-enable-color-system, k-color( series-d-bolder ), color.mix(black, $kendo-series-d, 50%)) !default;
+$kendo-series-d-light: if($kendo-enable-color-system, k-color( series-d-subtle ), color.mix(white, $kendo-series-d, 25%)) !default;
+$kendo-series-d-lighter: if($kendo-enable-color-system, k-color( series-d-subtler ), color.mix(white, $kendo-series-d, 50%)) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-e: if($kendo-enable-color-system, k-color( series-e ), get-base-hue( red, 500 )) !default;
-$kendo-series-e-dark: if($kendo-enable-color-system, k-color( series-e-bold ), mix(black, $kendo-series-e, 25%)) !default;
-$kendo-series-e-darker: if($kendo-enable-color-system, k-color( series-e-bolder ), mix(black, $kendo-series-e, 50%)) !default;
-$kendo-series-e-light: if($kendo-enable-color-system, k-color( series-e-subtle ), mix(white, $kendo-series-e, 25%)) !default;
-$kendo-series-e-lighter: if($kendo-enable-color-system, k-color( series-e-subtler ), mix(white, $kendo-series-e, 50%)) !default;
+$kendo-series-e-dark: if($kendo-enable-color-system, k-color( series-e-bold ), color.mix(black, $kendo-series-e, 25%)) !default;
+$kendo-series-e-darker: if($kendo-enable-color-system, k-color( series-e-bolder ), color.mix(black, $kendo-series-e, 50%)) !default;
+$kendo-series-e-light: if($kendo-enable-color-system, k-color( series-e-subtle ), color.mix(white, $kendo-series-e, 25%)) !default;
+$kendo-series-e-lighter: if($kendo-enable-color-system, k-color( series-e-subtler ), color.mix(white, $kendo-series-e, 50%)) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
 $kendo-series-f: if($kendo-enable-color-system, k-color( series-f ), get-base-hue( green, 500 )) !default;
-$kendo-series-f-dark: if($kendo-enable-color-system, k-color( series-f-bold ), mix(black, $kendo-series-f, 25%)) !default;
-$kendo-series-f-darker: if($kendo-enable-color-system, k-color( series-f-bolder ), mix(black, $kendo-series-f, 50%)) !default;
-$kendo-series-f-light: if($kendo-enable-color-system, k-color( series-f-subtle ), mix(white, $kendo-series-f, 25%)) !default;
-$kendo-series-f-lighter: if($kendo-enable-color-system, k-color( series-f-subtler ), mix(white, $kendo-series-f, 50%)) !default;
+$kendo-series-f-dark: if($kendo-enable-color-system, k-color( series-f-bold ), color.mix(black, $kendo-series-f, 25%)) !default;
+$kendo-series-f-darker: if($kendo-enable-color-system, k-color( series-f-bolder ), color.mix(black, $kendo-series-f, 50%)) !default;
+$kendo-series-f-light: if($kendo-enable-color-system, k-color( series-f-subtle ), color.mix(white, $kendo-series-f, 25%)) !default;
+$kendo-series-f-lighter: if($kendo-enable-color-system, k-color( series-f-subtler ), color.mix(white, $kendo-series-f, 50%)) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker
