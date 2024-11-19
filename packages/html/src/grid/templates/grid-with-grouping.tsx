@@ -76,7 +76,7 @@ export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) 
                                         </p>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
+                                <TableRow className="k-master-row" alt>
                                     <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                     <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                     <TableTd colspan={0}>2</TableTd>
