@@ -81,7 +81,7 @@ export default () =>(
             </GridNormal>
 
             <span>Single Group</span>
-            <GridWithGrouping dir="ltr"groupingHeader={(
+            <GridWithGrouping dropClue dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
@@ -179,7 +179,7 @@ export default () =>(
             </GridWithGrouping>
 
             <span>Two Groups</span>
-            <GridWithGrouping dir="ltr" groupingHeader={(
+            <GridWithGrouping dropClue dir="ltr" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
@@ -300,7 +300,7 @@ export default () =>(
                 </GridContainer>
             </GridWithGrouping>
             <span>Expanded Template</span>
-            <GridWithGrouping dir="ltr"groupingHeader={(
+            <GridWithGrouping dropClue dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
                         <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
