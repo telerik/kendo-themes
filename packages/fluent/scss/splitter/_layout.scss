@@ -46,6 +46,7 @@
         outline: 0;
         position: absolute;
         user-select: none;
+        touch-action: none;
         display: flex;
         align-items: center;
         justify-content: center;
