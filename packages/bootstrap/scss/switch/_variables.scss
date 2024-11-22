@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../core/_index.scss" as *;
 @use "../core/functions/index.import.scss" as *;
 
@@ -65,7 +66,7 @@ $kendo-switch-off-track-focus-bg: null !default;
 $kendo-switch-off-track-focus-text: null !default;
 /// The border color of the track when the focused Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-border: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-switch-off-track-bg, $kendo-color-primary )) !default;
+$kendo-switch-off-track-focus-border: if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-switch-off-track-bg, $kendo-color-primary )) !default;
 /// The background gradient of the track when the focused Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-focus-gradient: null !default;
