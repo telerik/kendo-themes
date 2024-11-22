@@ -9297,7 +9297,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-color-mix( $kendo-color-primary, #ffffff, 20% ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), color.mix( $kendo-color-primary, #ffffff, 20% ))</code></td>
     <td><code>var(--kendo-color-primary-subtle, #fff2eb)</code></td>
 </tr>
 <tr>
@@ -24872,7 +24872,7 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60% ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), color.mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60% ))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #f35800) 60%, transparent)</code></td>
 </tr>
 <tr>

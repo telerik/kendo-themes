@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-line-fill</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), color.mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-primary-emphasis, #97a0d7)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), color.mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active, #f79bb3)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-primary-emphasis, #97a0d7)</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), color.mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active, #f79bb3)</code></td>
 </tr>
 <tr>

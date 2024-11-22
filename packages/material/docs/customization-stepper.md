@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), color.mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 60%, transparent)</code></td>
 </tr>
 <tr>

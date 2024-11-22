@@ -34,7 +34,7 @@ k-color-luminance($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L602-L608
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L603-L609
 @function k-color-luminance($color) {
     $red: list.nth( $_linear-channel-values, k-color-red( $color ) + 1 );
     $green: list.nth( $_linear-channel-values, k-color-green( $color ) + 1 );
@@ -70,7 +70,7 @@ k-color-contrast-ratio($background, $foreground) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L619-L624
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L620-L625
 @function k-color-contrast-ratio($background, $foreground) {
     $backLum: k-color-luminance( $background ) + .05;
     $foreLum: k-color-luminance( $foreground ) + .05;
@@ -102,7 +102,7 @@ k-is-dark($color) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L631-L633
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L632-L634
 @function k-is-dark($color) {
     @return if( k-color-luminance( $color ) < .5, true, false );
 }
@@ -131,7 +131,7 @@ k-is-light($color) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L640-L642
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L641-L643
 @function k-is-light($color) {
     @return if( k-color-luminance( $color ) < .5, false, true );
 }
@@ -170,7 +170,7 @@ k-contrast-color($background, $dark, $light, $min-ratio) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L654-L673
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L655-L674
 @function k-contrast-color($background, $dark, $light, $min-ratio) {
     $foregrounds: $light, $dark, #ffffff, #000000;
     $max-ratio: 0;
@@ -222,7 +222,7 @@ k-generate-color-variations($name, $color, $theme) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L199-L313
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L200-L314
 @function k-generate-color-variations($name, $color, $theme) {
     $result: ();
 
@@ -237,10 +237,10 @@ k-generate-color-variations($name, $color, $theme) // => Map
         ) {
         $_variations: (
             #{$name}: $color,
-            #{$name}-bold: k-color-mix(black, $color, 25%),
-            #{$name}-bolder: k-color-mix(black, $color, 50%),
-            #{$name}-subtle: k-color-mix(white, $color, 25%),
-            #{$name}-subtler: k-color-mix(white, $color, 50%),
+            #{$name}-bold: color.mix(black, $color, 25%),
+            #{$name}-bolder: color.mix(black, $color, 50%),
+            #{$name}-subtle: color.mix(white, $color, 25%),
+            #{$name}-subtler: color.mix(white, $color, 50%),
         );
 
         $result: map.merge($result, $_variations);
@@ -364,7 +364,7 @@ k-color($key) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L321-L329
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/color-system/_functions.import.scss#L322-L330
 @function k-color($key) {
     $_color: map.get($kendo-colors, $key);
 
@@ -408,7 +408,7 @@ k-color-tint($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L211-L213
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L212-L214
 @function k-color-tint($color, $level) {
     @return k-color-level( $color, -$level );
 }
@@ -446,7 +446,7 @@ k-color-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L224-L226
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L225-L227
 @function k-color-shade($color, $level) {
     @return k-color-level( $color, $level );
 }
@@ -478,7 +478,7 @@ k-try-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L234-L242
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L235-L243
 @function k-try-shade($color, $level) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
 
@@ -516,7 +516,7 @@ k-try-tint($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L250-L258
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L251-L259
 @function k-try-tint($color, $level) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
 
@@ -554,7 +554,7 @@ k-try-darken($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L266-L273
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L267-L274
 @function k-try-darken($color, $level) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
 
@@ -591,7 +591,7 @@ k-try-lighten($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L281-L288
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L282-L289
 @function k-try-lighten($color, $level) {
     $_dark-theme: if( meta.variable-exists( kendo-is-dark-theme ), $_is-dark-theme, false );
 
@@ -634,7 +634,7 @@ k-rgba-to-mix($color, $bg) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L299-L303
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L300-L304
 @function k-rgba-to-mix($color, $bg) {
     $percent: k-color-alpha( $color ) * 100%;
 
@@ -672,9 +672,9 @@ k-color-alpha($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L16-L18
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L17-L19
 @function k-color-alpha($color) {
-    @return alpha( $color );
+    @return color.alpha( $color );
 }
 ```
 
@@ -707,9 +707,9 @@ k-color-red($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L26-L28
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L27-L29
 @function k-color-red($color) {
-    @return red( $color );
+    @return math.round(color.channel( $color, "red" ));
 }
 ```
 
@@ -742,9 +742,9 @@ k-color-green($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L36-L38
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L37-L39
 @function k-color-green($color) {
-    @return green( $color );
+    @return math.round(color.channel( $color, "green" ));
 }
 ```
 
@@ -777,9 +777,9 @@ k-color-blue($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L46-L48
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L47-L49
 @function k-color-blue($color) {
-    @return blue( $color );
+    @return math.round(color.channel( $color, "blue" ));
 }
 ```
 
@@ -812,9 +812,9 @@ k-color-hue($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L56-L58
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L57-L59
 @function k-color-hue($color) {
-    @return hue( $color );
+    @return color.channel( $color, "hue" );
 }
 ```
 
@@ -847,9 +847,9 @@ k-color-saturation($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L66-L68
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L67-L69
 @function k-color-saturation($color) {
-    @return saturation( $color );
+    @return color.channel( $color, "saturation" );
 }
 ```
 
@@ -882,9 +882,9 @@ k-color-lightness($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L76-L78
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L77-L79
 @function k-color-lightness($color) {
-    @return lightness( $color );
+    @return color.channel( $color, "lightness" );
 }
 ```
 
@@ -923,9 +923,9 @@ k-color-mix($color1, $color2, $weight) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L88-L90
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L89-L91
 @function k-color-mix($color1, $color2, $weight) {
-    @return mix( $color1, $color2, $weight );
+    @return color.mix( $color1, $color2, $weight );
 }
 ```
 
@@ -961,9 +961,9 @@ k-color-darken($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L99-L101
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L100-L102
 @function k-color-darken($color, $amount) {
-    @return darken( $color, $amount );
+    @return color.adjust( $color, $lightness: - $amount );
 }
 ```
 
@@ -999,9 +999,9 @@ k-color-lighten($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L110-L112
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L111-L113
 @function k-color-lighten($color, $amount) {
-    @return lighten( $color, $amount );
+    @return color.adjust( $color, $lightness: $amount );
 }
 ```
 
@@ -1037,9 +1037,9 @@ k-color-adjust-hue($color, $degrees) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L121-L123
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L122-L124
 @function k-color-adjust-hue($color, $degrees) {
-    @return adjust-hue( $color, $degrees );
+    @return color.adjust( $color, $hue: $degrees );
 }
 ```
 
@@ -1075,9 +1075,9 @@ k-color-saturate($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L132-L134
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L133-L135
 @function k-color-saturate($color, $amount) {
-    @return saturate( $color, $amount );
+    @return color.adjust( $color, $saturation: $amount );
 }
 ```
 
@@ -1113,9 +1113,9 @@ k-color-desaturate($color, $amount) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L143-L145
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L144-L146
 @function k-color-desaturate($color, $amount) {
-    @return desaturate( $color, $amount );
+    @return color.adjust( $color, $saturation: - $amount );
 }
 ```
 
@@ -1148,9 +1148,9 @@ k-color-grayscale($color) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L153-L155
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L154-L156
 @function k-color-grayscale($color) {
-    @return grayscale( $color );
+    @return color.grayscale( $color );
 }
 ```
 
@@ -1184,9 +1184,9 @@ k-color-complement($color) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L164-L166
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L165-L167
 @function k-color-complement($color) {
-    @return complement( $color );
+    @return color.complement( $color );
 }
 ```
 
@@ -1219,9 +1219,9 @@ k-color-invert($color) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L174-L176
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages/core/scss/functions/_color.import.scss#L175-L177
 @function k-color-invert($color) {
-    @return invert( $color );
+    @return color.invert( $color );
 }
 ```
 
