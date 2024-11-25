@@ -329,9 +329,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-h1-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the highest level heading.</div></div>
@@ -339,9 +339,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-h2-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the second highest level heading.</div></div>
@@ -349,9 +349,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-h3-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the third highest level heading.</div></div>
@@ -359,9 +359,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-h4-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the fourth highest level heading.</div></div>
@@ -369,9 +369,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-h5-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the fifth highest level heading.</div></div>
@@ -379,9 +379,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-h6-font-family</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the sixth highest level heading.</div></div>
@@ -680,7 +680,7 @@ The following table lists the available variables for customization.
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><ul><li>h1: "font-size":"2.5rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h2: "font-size":"2rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h3: "font-size":"1.75rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h4: "font-size":"1.5rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h5: "font-size":"1.25rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h6: "font-size":"1rem","font-family":null,"line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li></ul></td>
+    <td><ul><li>h1: "font-size":"2.5rem","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h2: "font-size":"2rem","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h3: "font-size":"1.75rem","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h4: "font-size":"1.5rem","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h5: "font-size":"1.25rem","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li><li>h6: "font-size":"1rem","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":500,"letter-spacing":null,"margin":"(0 0 var(--kendo-spacing-2, 0.5rem))"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
@@ -919,8 +919,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display1-font-family</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the largest display text.</div></div>
@@ -929,8 +929,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display2-font-family</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the second largest display text.</div></div>
@@ -939,8 +939,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display3-font-family</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the third largest display text.</div></div>
@@ -949,8 +949,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-display4-font-family</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the fourth largest display text.</div></div>

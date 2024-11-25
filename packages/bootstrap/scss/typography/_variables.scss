@@ -26,22 +26,22 @@ $kendo-h6-font-size: $kendo-font-size !default;
 
 /// The font family of the highest level heading.
 /// @group typography
-$kendo-h1-font-family: null !default;
+$kendo-h1-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font family of the second highest level heading.
 /// @group typography
-$kendo-h2-font-family: null !default;
+$kendo-h2-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font family of the third highest level heading.
 /// @group typography
-$kendo-h3-font-family: null !default;
+$kendo-h3-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font family of the fourth highest level heading.
 /// @group typography
-$kendo-h4-font-family: null !default;
+$kendo-h4-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font family of the fifth highest level heading.
 /// @group typography
-$kendo-h5-font-family: null !default;
+$kendo-h5-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font family of the sixth highest level heading.
 /// @group typography
-$kendo-h6-font-family: null !default;
+$kendo-h6-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The line height of the highest level heading.
 /// @group typography
@@ -258,16 +258,16 @@ $kendo-display4-font-size: calc( #{$kendo-font-size} * 3.5 ) !default;
 
 /// The font family of the largest display text.
 /// @group typography
-$kendo-display1-font-family: unset !default;
+$kendo-display1-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font family of the second largest display text.
 /// @group typography
-$kendo-display2-font-family: unset !default;
+$kendo-display2-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font family of the third largest display text.
 /// @group typography
-$kendo-display3-font-family: unset !default;
+$kendo-display3-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font family of the fourth largest display text.
 /// @group typography
-$kendo-display4-font-family: unset !default;
+$kendo-display4-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The line height of the largest display text.
 /// @group typography
