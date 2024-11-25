@@ -91,6 +91,7 @@
         padding-block: $kendo-input-padding-y;
         padding-inline: $kendo-input-padding-x;
         appearance: auto;
+        align-items: center;
 
         &:disabled,
         &[disabled] {
