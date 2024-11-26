@@ -523,12 +523,15 @@
         position: relative;
         z-index: 50;
     }
+
     .k-spreadsheet .k-filter-range {
         border-width: 2px;
         border-style: solid;
         position: absolute;
         box-sizing: border-box;
+        pointer-events: none;
     }
+
     .k-spreadsheet-filter {
         @include border-radius( k-border-radius(md) );
         padding: k-spacing(1);
