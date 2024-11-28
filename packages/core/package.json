@@ -29,9 +29,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "sass-build",
+    "sass": "npm run sass:compile:all",
+    "sass:compile:all": "npx sass --no-source-map --load-path=../../node_modules ./scss/all.scss ./dist/all.css",
     "watch": "npx sass --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
-    "sass": "sass-build",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
