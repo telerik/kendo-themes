@@ -59,8 +59,5 @@ jobs:
       - name: Ensure standalone build
         run: npm run sass:standalone
 
-      - name: Build themes using node-sass (full)
-        run: npm run sass
-
-      - name: Build swatches using node-sass
-        run: npm run sass:swatches
+      - name: Build themes for dist
+        run: npm run sass:dist

@@ -59,10 +59,9 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
-      - name: Build swatches
+      - name: Build themes for dist
         run: |
-            npm run sass
-            npm run sass:swatches
+            npm run sass:dist
 
       - name: Checkout artifact repository
         uses: actions/checkout@v4
