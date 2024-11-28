@@ -19,7 +19,7 @@
 // Variables
 @forward "./_variables.scss";
 
-@forward "@progress/kendo-theme-core/scss/index.import.scss" with (
+@forward "@progress/kendo-theme-core/scss/index.scss" with (
     $kendo-enable-color-system: $kendo-enable-color-system !default,
     $kendo-nested-disabled: false !default,
     // Color System
@@ -40,7 +40,7 @@
     $kendo-line-height: $kendo-line-height !default,
 
     $kendo-letter-spacing: $kendo-letter-spacing !default,
-    
+
     $kendo-font-family: $kendo-font-family !default,
     // Spacing
     $_default-spacing: $kendo-spacing,

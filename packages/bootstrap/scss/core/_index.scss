@@ -16,7 +16,7 @@
 @forward "../_variables.scss";
 
 // Variables
-@forward "@progress/kendo-theme-core/scss/index.import.scss" with (
+@forward "@progress/kendo-theme-core/scss/index.scss" with (
     // Color System Switch
     $kendo-enable-color-system: $kendo-enable-color-system !default,
     // Color System
