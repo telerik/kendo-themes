@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "sass:map";
 @use "sass:list";
 @use "sass:string";
@@ -210,10 +211,10 @@
         ) {
         $_variations: (
             #{$name}: $color,
-            #{$name}-bold: k-color-mix(black, $color, 25%),
-            #{$name}-bolder: k-color-mix(black, $color, 50%),
-            #{$name}-subtle: k-color-mix(white, $color, 25%),
-            #{$name}-subtler: k-color-mix(white, $color, 50%),
+            #{$name}-bold: color.mix(black, $color, 25%),
+            #{$name}-bolder: color.mix(black, $color, 50%),
+            #{$name}-subtle: color.mix(white, $color, 25%),
+            #{$name}-subtler: color.mix(white, $color, 50%),
         );
 
         $result: map.merge($result, $_variations);

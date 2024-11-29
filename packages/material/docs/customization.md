@@ -8116,7 +8116,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), mix( $kendo-color-white, $kendo-color-primary, 8% ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), color.mix( $kendo-color-white, $kendo-color-primary, 8% ))</code></td>
     <td><code>var(--kendo-color-primary-hover, #3a4ba7)</code></td>
 </tr>
 <tr>
@@ -8866,7 +8866,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), mix($kendo-color-primary, #ffffff, 20%))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), color.mix($kendo-color-primary, #ffffff, 20%))</code></td>
     <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
 </tr>
 <tr>
@@ -11279,7 +11279,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-line-fill</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), color.mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -11399,7 +11399,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-primary-emphasis, #97a0d7)</code></td>
 </tr>
 <tr>
@@ -11419,7 +11419,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), color.mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active, #f79bb3)</code></td>
 </tr>
 <tr>
@@ -11469,7 +11469,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-primary-emphasis, #97a0d7)</code></td>
 </tr>
 <tr>
@@ -11509,7 +11509,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), color.mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active, #f79bb3)</code></td>
 </tr>
 <tr>
@@ -12854,7 +12854,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( $kendo-component-border, math.div( alpha( $kendo-component-border ), 2 ) ))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( $kendo-component-border, math.div( color.alpha( $kendo-component-border ), 2 ) ))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 3%, transparent)</code></td>
 </tr>
 <tr>
@@ -15034,7 +15034,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-menu-item-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), rgba( $kendo-menu-text, $kendo-flat-button-hover-opacity * alpha( $kendo-menu-text ) ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-hover ), rgba( $kendo-menu-text, $kendo-flat-button-hover-opacity * color.alpha( $kendo-menu-text ) ))</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -15074,7 +15074,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-menu-item-active-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( $kendo-menu-text, $kendo-flat-button-active-opacity * alpha( $kendo-menu-text ) ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( $kendo-menu-text, $kendo-flat-button-active-opacity * color.alpha( $kendo-menu-text ) ))</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -19116,7 +19116,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), darken( $kendo-pivotgrid-bg, 7% ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-hover ), color.adjust( $kendo-pivotgrid-bg, $lightness: - 7% ))</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -24302,7 +24302,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), color.mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 60%, transparent)</code></td>
 </tr>
 <tr>

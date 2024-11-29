@@ -9086,7 +9086,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-color-mix( $kendo-color-primary, #ffffff, 20% ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), color.mix( $kendo-color-primary, #ffffff, 20% ))</code></td>
     <td><code>var(--kendo-color-primary-subtle, #cfe2ff)</code></td>
 </tr>
 <tr>
@@ -11549,7 +11549,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-line-fill</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-color-mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-base ), color.mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-on-base, #212529)</code></td>
 </tr>
 <tr>
@@ -11669,7 +11669,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-color-mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), color.mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -11689,7 +11689,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), k-color-mix( $kendo-selected-bg, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), color.mix( $kendo-selected-bg, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-primary-subtle-active, #9ec5fe)</code></td>
 </tr>
 <tr>
@@ -11779,7 +11779,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), k-color-mix( $kendo-selected-bg, $kendo-gantt-bg ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), color.mix( $kendo-selected-bg, $kendo-gantt-bg ))</code></td>
     <td><code>var(--kendo-color-primary-subtle-active, #9ec5fe)</code></td>
 </tr>
 <tr>
@@ -24491,7 +24491,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
+    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), color.mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 60%, transparent)</code></td>
 </tr>
 <tr>
@@ -24965,7 +24965,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-switch-off-track-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-switch-off-track-bg, $kendo-color-primary ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-switch-off-track-bg, $kendo-color-primary ))</code></td>
     <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>

@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pivotgrid-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), darken( $kendo-pivotgrid-bg, 7% ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-hover ), color.adjust( $kendo-pivotgrid-bg, $lightness: - 7% ))</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>

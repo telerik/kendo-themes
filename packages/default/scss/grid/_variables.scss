@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "../core/functions/index.import.scss" as *;
@@ -262,7 +263,7 @@ $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
 $kendo-grid-sticky-footer-hover-bg: $kendo-grid-hover-bg !default;
 
-$kendo-grid-sticky-selected-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), k-color-mix($kendo-selected-bg, #ffffff, 25%)) !default;
+$kendo-grid-sticky-selected-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), color.mix($kendo-selected-bg, #ffffff, 25%)) !default;
 $kendo-grid-sticky-selected-alt-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 24%, transparent), k-color-shade($kendo-grid-sticky-selected-bg, .4)) !default;
 
 // Must be a solid color

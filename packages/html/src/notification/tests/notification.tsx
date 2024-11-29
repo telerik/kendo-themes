@@ -16,7 +16,7 @@ const styles = `
 export default () => (
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid k-grid-cols-5">
 
             <span className="k-colspan-all k-col-span-full">LTR</span>
             <div>
@@ -39,6 +39,11 @@ export default () => (
                     <IconNotificationClosable text="Closable notification with icon" />
                 </AnimationContainer>
             </div>
+            <div>
+                <AnimationContainer>
+                    <IconNotificationClosable text="Closable notification with icon and very long text start ............. ............ .................... .......... ............ end" />
+                </AnimationContainer>
+            </div>
 
             <span className="k-colspan-all k-col-span-full">RTL</span>
             <div dir="rtl">
@@ -59,6 +64,11 @@ export default () => (
             <div dir="rtl">
                 <AnimationContainer>
                     <IconNotificationClosable text="Closable notification with icon" />
+                </AnimationContainer>
+            </div>
+            <div dir="rtl">
+                <AnimationContainer>
+                    <IconNotificationClosable text="Closable notification with icon and very long text start ............. ............ .................... .......... ............ end" />
                 </AnimationContainer>
             </div>
 

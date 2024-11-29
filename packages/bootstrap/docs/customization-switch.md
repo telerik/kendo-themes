@@ -194,7 +194,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-mix( $kendo-switch-off-track-bg, $kendo-color-primary ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-switch-off-track-bg, $kendo-color-primary ))</code></td>
     <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>

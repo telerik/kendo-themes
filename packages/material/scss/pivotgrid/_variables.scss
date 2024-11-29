@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../core/_index.scss" as *;
 @use"../table/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
@@ -86,7 +87,7 @@ $kendo-pivotgrid-total-border: $kendo-component-header-border !default;
 
 /// The hover background color of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), darken( $kendo-pivotgrid-bg, 7% )) !default;
+$kendo-pivotgrid-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), color.adjust( $kendo-pivotgrid-bg, $lightness: - 7% )) !default;
 /// The hover text color of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-hover-text: null !default;
