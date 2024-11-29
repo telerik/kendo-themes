@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.1...v10.1.0-dev.2) (2024-11-25)
+
+
+### Features
+
+* **grid-layout:** add component module ([7fc165a](https://github.com/telerik/kendo-themes/commit/7fc165a4db7bbc8bc85838c5e934d3d8bf346ae8))
+* **stack-layout:** add component module ([5438509](https://github.com/telerik/kendo-themes/commit/5438509666b9ccb658720ab2d1d277b8469b00f2))
+
+
+
+
+
 # [10.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.0...v10.1.0-dev.1) (2024-11-18)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic
