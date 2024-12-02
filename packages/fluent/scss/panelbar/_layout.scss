@@ -123,12 +123,14 @@
             // Hierarchy items
             @for $i from 1 through $kendo-panelbar-item-level-count {
                 &.k-level-#{$i} {
+                    --INTERNAL--kendo-panelbar-link-spacing: calc( #{k-spacing(3)} * #{$i} );
+                    --INTERNAL--kendo-panelbar-item-padding: var( --kendo-panelbar-item-padding-x-start, #{$kendo-panelbar-item-padding-x-start} );
                     .k-link {
-                        padding-inline-start: calc( var( --kendo-panelbar-item-padding-x-start, #{$kendo-panelbar-item-padding-x-start} ) + ( #{k-spacing(3)} * #{$i} ));
+                        padding-inline-start: calc( var( --INTERNAL--kendo-panelbar-item-padding ) + var( --INTERNAL--kendo-panelbar-link-spacing ) );
                     }
 
                     .k-panelbar-item-icon:first-child {
-                        inset-inline-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) + ( #{k-spacing(3)} * #{$i} ));
+                        inset-inline-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) + var( --INTERNAL--kendo-panelbar-link-spacing ) );
                     }
                 }
             }
