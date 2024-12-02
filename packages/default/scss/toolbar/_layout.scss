@@ -132,12 +132,6 @@
     }
 
 
-    // Angular specific
-    .k-toolbar-renderer {
-        display: inline-block;
-        border-color: inherit;
-    }
-
     // Toolbar sizes
     @each $size, $size-props in $kendo-toolbar-sizes {
         $_padding-x: map.get( $size-props, padding-x );

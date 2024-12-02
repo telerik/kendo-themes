@@ -26,7 +26,7 @@ export default () =>(
 
             <section>
                 <ColumnMenuTabbed>
-                    <TabStripNormal header={false} className="k-overflow-hidden"
+                    <TabStripNormal className="k-overflow-hidden"
                         tabStripItems={
                             <>
                                 <TabStripItem icon="filter" />
@@ -56,7 +56,7 @@ export default () =>(
 
             <section>
                 <ColumnMenuTabbed>
-                    <TabStripNormal header={false} className="k-overflow-hidden"
+                    <TabStripNormal className="k-overflow-hidden"
                         tabStripItems={
                             <>
                                 <TabStripItem active icon="filter" />
@@ -73,7 +73,7 @@ export default () =>(
 
             <section>
                 <ColumnMenuTabbed>
-                    <TabStripNormal header={false} className="k-pos-relative"
+                    <TabStripNormal className="k-pos-relative"
                         tabStripItems={
                             <>
                                 <TabStripItem active icon="filter" />
