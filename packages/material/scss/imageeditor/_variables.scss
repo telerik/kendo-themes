@@ -15,7 +15,7 @@ $kendo-image-editor-content-border-width: 1px !default;
 
 $kendo-image-editor-action-pane-padding-y: k-spacing(8) !default;
 $kendo-image-editor-action-pane-padding-x: k-spacing(4) !default;
-$kendo-image-editor-action-pane-width: if( $kendo-image-editor-content-border-width == null, 240px, calc(240px + #{$kendo-image-editor-content-border-width}) ) !default;
+$kendo-image-editor-action-pane-width: if( $kendo-image-editor-content-border-width == null, 280px, calc(280px + #{$kendo-image-editor-content-border-width}) ) !default;
 
 $kendo-image-editor-crop-border-width: 1px !default;
 $kendo-image-editor-crop-border-style: dashed !default;
