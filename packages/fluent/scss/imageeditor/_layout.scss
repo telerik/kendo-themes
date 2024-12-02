@@ -112,14 +112,16 @@
 
         .k-resize-n,
         .k-resize-s {
-            left: calc( 50% - var( --kendo-image-editor-resize-left-offset, #{$kendo-image-editor-resize-left-offset} ) );
+            --INTERNAL--kendo-image-editor-resize-left-offset: var( --kendo-image-editor-resize-left-offset, #{$kendo-image-editor-resize-left-offset} );
+            left: calc( 50% - var( --INTERNAL--kendo-image-editor-resize-left-offset ) );
             width: var( --kendo-image-editor-resize-handle-size, #{$kendo-image-editor-resize-handle-size} );
             height: 0;
         }
 
         .k-resize-w,
         .k-resize-e {
-            top: calc( 50% - var( --kendo-image-editor-resize-top-offset, #{$kendo-image-editor-resize-top-offset} ) );
+            --INTERNAL--kendo-image-editor-resize-top-offset: var( --kendo-image-editor-resize-top-offset, #{$kendo-image-editor-resize-top-offset} );
+            top: calc( 50% - var( --INTERNAL--kendo-image-editor-resize-top-offset ) );
             width: 0;
             height: var( --kendo-image-editor-resize-handle-size, #{$kendo-image-editor-resize-handle-size} );
         }

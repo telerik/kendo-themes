@@ -165,9 +165,10 @@
         }
 
         .k-contrast-validation {
+            --INTERNAL--kendo-color-gradient-contrast-spacing: var( --kendo-color-gradient-contrast-spacing,  #{$kendo-color-gradient-contrast-spacing} );
             display: inline-flex;
             align-items: center;
-            gap: calc( var( --kendo-color-gradient-contrast-spacing,  #{$kendo-color-gradient-contrast-spacing} ) / 2 );
+            gap: calc( var( --INTERNAL--kendo-color-gradient-contrast-spacing ) / 2 );
 
             .k-icon {
                 vertical-align: middle;
