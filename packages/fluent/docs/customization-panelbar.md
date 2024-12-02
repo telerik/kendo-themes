@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-padding-x-start</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 2 + var(--kendo-icon-size, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal start padding of the PanelBar header.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-padding-x-start</td>
     <td>Calculation</td>
-    <td><code>calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, 1rem ) )</code></td>
-    <td><code>calc(var(--kendo-panelbar-icon-spacing, var(--kendo-spacing-2, 0.5rem)) * 2 + var(--kendo-icon-size, 1rem))</code></td>
+    <td><code>calc( #{$kendo-panelbar-icon-spacing} * 2 + var( --kendo-icon-size, 1rem ) )</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 2 + var(--kendo-icon-size, 1rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PanelBar items.</div></div>
