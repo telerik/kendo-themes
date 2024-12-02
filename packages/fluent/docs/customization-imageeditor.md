@@ -230,8 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-image-editor-action-pane-width</td>
     <td>Number</td>
-    <td><code>if( $kendo-image-editor-content-border-width == 0, 240px, calc( 240px + #{$kendo-image-editor-content-border-width}) )</code></td>
-    <td><code>240px</code></td>
+    <td><code>if( $kendo-image-editor-content-border-width == 0, 270px, calc( 270px + #{$kendo-image-editor-content-border-width}) )</code></td>
+    <td><code>270px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Imageeditor action pane width.</div></div>
