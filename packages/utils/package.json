@@ -31,7 +31,9 @@
   },
   "scripts": {
     "sass": "npm run sass:compile:all",
+    "sass:dist": "gulp dist:swatches --theme packages/utils && npm run sass:compile:dist",
     "sass:compile:all": "npx sass --no-source-map --load-path=../../node_modules ./scss/all.scss ./dist/all.css",
+    "sass:compile:dist": "npx sass --style=compressed --no-source-map --load-path=../../node_modules ./dist:dist",
     "watch": "npx sass --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
