@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="k-grid-container">
-                    <div class="k-virtual-content k-grid-content">
+                    <div class="k-grid-content">
                         <div style="position: relative;">
                             <table class="k-grid-table k-table k-table-md" style="width: 1100px;">
                                 <colgroup>
@@ -84,7 +84,7 @@
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
                                         <td colspan="1" class="k-table-td">10</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Chang</td>
                                         <td colspan="1" class="k-table-td">17</td>
                                         <td colspan="1" class="k-table-td">$19.00</td>
@@ -98,7 +98,7 @@
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">70</td>
                                         <td colspan="1" class="k-table-td">25</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Chef Anton's Cajun Seasoning</td>
                                         <td colspan="1" class="k-table-td">53</td>
                                         <td colspan="1" class="k-table-td">$22.00</td>
@@ -112,7 +112,7 @@
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
                                         <td colspan="1" class="k-table-td">0</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Grandma's Boysenberry Spread</td>
                                         <td colspan="1" class="k-table-td">120</td>
                                         <td colspan="1" class="k-table-td">$25.00</td>
@@ -126,7 +126,7 @@
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
                                         <td colspan="1" class="k-table-td">10</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Northwoods Cranberry Sauce</td>
                                         <td colspan="1" class="k-table-td">6</td>
                                         <td colspan="1" class="k-table-td">$40.00</td>
@@ -140,7 +140,7 @@
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
                                         <td colspan="1" class="k-table-td">0</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 250px; border-right-width: 1px;">Ikura</td>
                                         <td colspan="1" class="k-table-td">31</td>
                                         <td colspan="1" class="k-table-td">$31.00</td>
@@ -149,9 +149,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        <div class="k-height-container">
-                            <div></div>
                         </div>
                     </div>
                 </div>
@@ -162,7 +159,9 @@
                 <div class="k-grouping-header">
                     <div class="k-chip-list k-chip-list-md">
                         <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
-                            <span class="k-chip-content">Active Projects</span>
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Active Projects</span>
+                            </span>
                             <span class="k-chip-actions">
                                 <span class="k-chip-action k-chip-remove-action">
                                     <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
@@ -176,7 +175,7 @@
                     </div>
                     <div class="k-grouping-drop-container"></div>
                 </div>
-                <div class="k-grid-header">
+                <div draggable="true" class="k-grid-header k-grid-draggable-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table k-table-md">
                             <colgroup>
@@ -197,14 +196,14 @@
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" class="k-grid-header-sticky k-header k-table-th" style="left: 0px; right: 0px;">
+                                    <th colspan="1" class="k-header k-grid-header-sticky k-table-th" style="left: 0px; right: 0px;">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Team</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th colspan="1" class="k-grid-header-sticky k-header k-table-th">
+                                    <th colspan="1" class="k-header k-grid-header-sticky k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Active Projects</span>
@@ -231,7 +230,7 @@
                     </div>
                 </div>
                 <div class="k-grid-container">
-                    <div class="k-virtual-content k-grid-content">
+                    <div class="k-grid-content">
                         <div style="position: relative;">
                             <div class="k-virtual-position">
                                 <table class="k-grid-table k-table k-table-md" style="height: auto;">
@@ -264,7 +263,7 @@
                                             <td colspan="1" class="k-table-td">1429</td>
                                             <td colspan="1" class="k-table-td">True</td>
                                         </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                        <tr class="k-master-row k-table-row k-table-alt-row">
                                             <td class="k-table-group-td k-group-cell k-table-td"></td>
                                             <td colspan="1" class="k-table-td">Employee 4</td>
                                             <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 0px;">Team 1</td>
@@ -301,7 +300,7 @@
                                             <td colspan="1" class="k-table-td">2307</td>
                                             <td colspan="1" class="k-table-td">False</td>
                                         </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                        <tr class="k-master-row k-table-row k-table-alt-row">
                                             <td class="k-table-group-td k-group-cell k-table-td"></td>
                                             <td colspan="1" class="k-table-td">Employee 2</td>
                                             <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 0px;">Team 2 (Selected)</td>
@@ -317,7 +316,7 @@
                                             <td colspan="1" class="k-table-td">4593</td>
                                             <td colspan="1" class="k-table-td">False</td>
                                         </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                        <tr class="k-master-row k-table-row k-table-alt-row">
                                             <td class="k-table-group-td k-group-cell k-table-td"></td>
                                             <td colspan="1" class="k-table-td">Employee 5</td>
                                             <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 0px;">Team 2</td>
@@ -336,9 +335,6 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
-                        <div class="k-height-container">
-                            <div></div>
                         </div>
                     </div>
                 </div>
