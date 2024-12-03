@@ -9,10 +9,10 @@ const states = [];
 const options = {};
 
 export type KendoActionSheetProps = {
-    children: React.JSX.Element | React.JSX.Element[],
+    children?: React.JSX.Element | React.JSX.Element[];
     title?: string;
-    header?: typeof ActionSheetHeader;
-    footer?: string | typeof ActionSheetFooter;
+    header?: React.JSX.Element;
+    footer?: string | React.JSX.Element;
     actions?: string[];
     fullscreen?: boolean;
     adaptive?: boolean;
@@ -68,7 +68,7 @@ export const ActionSheet = (
                     return true;
             }
         })
-        : children.type === ActionSheetItems
+        : children?.type === ActionSheetItems
             ? children
             : <></>;
 
