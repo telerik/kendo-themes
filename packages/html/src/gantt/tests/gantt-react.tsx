@@ -134,7 +134,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />18
@@ -169,7 +169,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className=" k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
@@ -221,7 +221,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
@@ -264,7 +264,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
@@ -312,7 +312,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
@@ -353,7 +353,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
@@ -401,7 +401,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="none" />
@@ -451,7 +451,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-right" />
@@ -485,7 +485,7 @@ export default () =>(
                                         </GanttTask>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" style={{ height: "40px" }} alt>
+                                <TableRow className="k-master-row" style={{ height: "40px" }} alt>
                                     <TableTd className="k-grid-content-sticky k-text-nowrap" colspan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon className="k-treelist-toggle" icon="none" />
                                         <Icon className="k-treelist-toggle" icon="caret-alt-right" />

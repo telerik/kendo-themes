@@ -49,7 +49,7 @@ export default () =>(
                                 <TableTd className="k-focus">Focus</TableTd>
                                 <TableTd className="k-selected">Selected</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
@@ -71,7 +71,7 @@ export default () =>(
                                 <TableTd className="k-focus">Hover + Focus</TableTd>
                                 <TableTd className="k-selected">Hover + Selected</TableTd>
                             </TableRow>
-                            <TableRow className="k-hover k-alt" alt>
+                            <TableRow className="k-hover" alt>
                                 <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
@@ -93,7 +93,7 @@ export default () =>(
                                 <TableTd>N/A</TableTd>
                                 <TableTd className="k-selected">Focus + Selected</TableTd>
                             </TableRow>
-                            <TableRow className="k-focus k-alt" alt>
+                            <TableRow className="k-focus" alt>
                                 <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
@@ -115,7 +115,7 @@ export default () =>(
                                 <TableTd className="k-focus">Selected + Focus</TableTd>
                                 <TableTd>N/A</TableTd>
                             </TableRow>
-                            <TableRow className="k-selected k-alt" alt>
+                            <TableRow className="k-selected" alt>
                                 <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
@@ -137,7 +137,7 @@ export default () =>(
                                 <TableTd className="k-focus">Hover + Selected + Focus</TableTd>
                                 <TableTd>N/A</TableTd>
                             </TableRow>
-                            <TableRow className="k-hover k-selected k-alt" alt>
+                            <TableRow className="k-hover k-selected" alt>
                                 <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>

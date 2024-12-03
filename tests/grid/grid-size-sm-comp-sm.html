@@ -64,7 +64,7 @@
                                         <td class="k-table-td">1</td>
                                         <td class="k-table-td">Row</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
                                         <td class="k-table-td">2</td>
                                         <td class="k-table-td">Alt row</td>
                                     </tr>
@@ -72,7 +72,7 @@
                                         <td class="k-table-td">3</td>
                                         <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
                                         <td class="k-table-td">4</td>
                                         <td class="k-table-td">
                                             <span class="k-skeleton k-skeleton-text"></span>
@@ -444,7 +444,7 @@
                                             <div style="background: rgb(204, 204, 204); padding: 10px;">Nested content</div>
                                         </td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row">
                                         <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-caret-alt-right">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -600,7 +600,7 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr class="k-master-row k-grid-edit-row k-alt k-table-row k-table-alt-row">
+                                    <tr class="k-master-row k-grid-edit-row k-table-row k-table-alt-row">
                                         <td class="k-dirty-cell k-table-td">
                                             <span class="k-dirty"></span>LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
                                         </td>
@@ -667,7 +667,9 @@
                                     <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                                 </svg>
                             </span>
-                            <span class="k-chip-content">Price</span>
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Price</span>
+                            </span>
                             <span class="k-chip-actions">
                                 <span class="k-chip-action k-chip-remove-action">
                                     <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
@@ -684,7 +686,9 @@
                                     <path d="M352 288 240 416 128 288h96V64h32v224z"></path>
                                 </svg>
                             </span>
-                            <span class="k-chip-content">Name</span>
+                            <span class="k-chip-content">
+                                <span class="k-chip-label">Name</span>
+                            </span>
                             <span class="k-chip-actions">
                                 <span class="k-chip-action k-chip-remove-action">
                                     <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
@@ -699,7 +703,7 @@
                     <div class="k-grouping-drop-container"></div>
                 </div>
                 <div class="k-grid-aria-root">
-                    <div class="k-grid-header">
+                    <div draggable="true" class="k-grid-header k-grid-draggable-header">
                         <div class="k-grid-header-wrap">
                             <table class="k-grid-header-table k-table k-table-sm">
                                 <colgroup>

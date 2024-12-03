@@ -38,7 +38,7 @@ export const GridWithColumnMenu = ({ contentClassName, sortable, resizable, ...o
                                     <TableTd>Chai</TableTd>
                                     <TableTd>Beverages</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>2</TableTd>
                                     <TableTd>Chang</TableTd>
                                     <TableTd>Beverages</TableTd>
@@ -48,7 +48,7 @@ export const GridWithColumnMenu = ({ contentClassName, sortable, resizable, ...o
                                     <TableTd>Aniseed Syrup</TableTd>
                                     <TableTd>Condiments</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>4</TableTd>
                                     <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                     <TableTd>Condiments</TableTd>

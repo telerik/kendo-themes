@@ -53,7 +53,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -66,7 +66,7 @@ export default () =>(
                                         <TableTd>$18.00</TableTd>
                                         <TableTd>Beverages</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Chang</TableTd>
                                         <TableTd>$19.00</TableTd>
@@ -122,7 +122,7 @@ export default () =>(
                                     <TableTd>$18.00</TableTd>
                                     <TableTd>Beverages</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>2</TableTd>
                                     <TableTd>Chang</TableTd>
                                     <TableTd>$19.00</TableTd>
@@ -137,7 +137,7 @@ export default () =>(
             <span>angular with grouping</span>
             <span>jquery with grouping</span>
 
-            <GridWithGrouping className="k-grid-no-scrollbar" contentClassName="k-virtual-content" toolbar={(
+            <GridWithGrouping dropClue className="k-grid-no-scrollbar" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -148,7 +148,7 @@ export default () =>(
                 </GridToolbar>
             )}/>
 
-            <GridWithGrouping _renderAriaRoot={false} className="k-grid-no-scrollbar k-grid-display-block" toolbar={(
+            <GridWithGrouping _renderAriaRoot={false} dropClue className="k-grid-no-scrollbar k-grid-display-block" toolbar={(
                 <GridToolbar>
                     <Button>Button</Button>
                     <ButtonGroup>

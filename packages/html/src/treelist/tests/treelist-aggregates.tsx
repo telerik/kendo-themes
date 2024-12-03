@@ -24,7 +24,7 @@ export default () =>(
                                         <col />
                                     </colgroup>
                                     <TableTbody>
-                                        <TableRow className="k-treelist-group">
+                                        <TableRow>
                                             <TableTd style={{ whiteSpace: "nowrap" }}>
                                                 <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                                 Daryl Sweeney
@@ -53,7 +53,7 @@ export default () =>(
                 <TreeListAggregates style={{ height: "200px" }}
                     gridContent={
                         <>
-                            <GridContent className="k-virtual-content">
+                            <GridContent>
                                 <GridTable>
                                     <div className="k-grid-table-wrap">
                                         <GridTable>
@@ -63,7 +63,7 @@ export default () =>(
                                                 <col />
                                             </colgroup>
                                             <TableTbody>
-                                                <TableRow className="k-treelist-group">
+                                                <TableRow>
                                                     <TableTd>
                                                         <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                                         Daryl Sweeney
@@ -83,9 +83,6 @@ export default () =>(
                                                 </TableRow>
                                             </TableTbody>
                                         </GridTable>
-                                    </div>
-                                    <div className="k-height-container">
-                                        <div style={{ height: '0px' }}></div>
                                     </div>
                                 </GridTable>
                             </GridContent>

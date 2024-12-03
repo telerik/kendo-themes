@@ -58,7 +58,7 @@ export default () =>(
                                             <MultiSelect placeholder="Multiselect..." />
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-grid-edit-row k-alt" alt>
+                                    <TableRow className="k-master-row k-grid-edit-row" alt>
                                         <TableTd>RTL</TableTd>
                                         <TableTd>
                                             <Autocomplete placeholder="Autocomplete..." className="k-rtl" />
@@ -122,7 +122,7 @@ export default () =>(
                                             <DateInput placeholder="DateInput..." />
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-grid-edit-row k-alt" alt>
+                                    <TableRow className="k-master-row k-grid-edit-row" alt>
                                         <TableTd>RTL</TableTd>
                                         <TableTd>
                                             <DatePicker placeholder="DatePicker..." className="k-rtl"/>
@@ -180,7 +180,7 @@ export default () =>(
                                         </TableTd>
                                         <TableTd></TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-grid-edit-row k-alt" alt>
+                                    <TableRow className="k-master-row k-grid-edit-row" alt>
                                         <TableTd>RTL</TableTd>
                                         <TableTd>
                                             <NumericTextbox placeholder="Numeric..." className="k-rtl" />

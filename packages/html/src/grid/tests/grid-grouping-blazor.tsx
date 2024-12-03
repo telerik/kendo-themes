@@ -34,7 +34,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-pos-relative">
                             <div className="k-virtual-position">
                                 <GridTable role="grid" style={{ height: 'auto' }}>
@@ -59,7 +59,7 @@ export default () =>(
                                                 </span>
                                             </TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />
@@ -77,21 +77,18 @@ export default () =>(
                                 </GridTable>
                             </div>
                         </div>
-                        <div className="k-height-container">
-                            <div></div>
-                        </div>
                     </GridContent>
                 </GridContainer>
             </GridNormal>
             <h3>Single Group</h3>
-            <GridWithGrouping className="telerik-blazor" groupingHeader={(
+            <GridWithGrouping dropClue className="telerik-blazor" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
+                        <Chip text="Id" actions={ <ChipAction type="remove"/> }/>
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -116,7 +113,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-pos-relative">
                             <div className="k-virtual-position">
                                 <GridTable role="grid" style={{ height: 'auto' }}>
@@ -159,7 +156,7 @@ export default () =>(
                                                 </p>
                                             </TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd colspan={0}>
                                                 <span>
@@ -178,22 +175,19 @@ export default () =>(
                                 </GridTable>
                             </div>
                         </div>
-                        <div className="k-height-container">
-                            <div></div>
-                        </div>
                     </GridContent>
                 </GridContainer>
             </GridWithGrouping>
             <h3>Two Groups</h3>
-            <GridWithGrouping className="telerik-blazor" groupingHeader={(
+            <GridWithGrouping dropClue className="telerik-blazor" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
-                        <Chip actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip text="Id" actions={ <ChipAction type="remove"/> } />
+                        <Chip text="Name" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -220,7 +214,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-pos-relative">
                             <div className="k-virtual-position">
                                 <GridTable role="grid" style={{ height: 'auto' }}>
@@ -283,7 +277,7 @@ export default () =>(
                                                 </p>
                                             </TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd colspan={0}>
@@ -302,9 +296,6 @@ export default () =>(
                                     </TableTbody>
                                 </GridTable>
                             </div>
-                        </div>
-                        <div className="k-height-container">
-                            <div></div>
                         </div>
                     </GridContent>
                 </GridContainer>

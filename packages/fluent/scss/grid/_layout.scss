@@ -845,9 +845,9 @@
         }
 
         .k-grid-row-sticky td.k-grid-content-sticky,
-        .k-grid-row-sticky.k-alt td.k-grid-content-sticky,
+        .k-grid-row-sticky.k-table-alt-row td.k-grid-content-sticky,
         .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
-        .k-grid-row-sticky.k-alt .k-table-td.k-grid-content-sticky {
+        .k-grid-row-sticky.k-table-alt-row .k-table-td.k-grid-content-sticky {
             z-index: 3;
         }
 

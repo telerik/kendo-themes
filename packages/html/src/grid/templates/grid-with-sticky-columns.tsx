@@ -46,7 +46,7 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
                                         <TableTd colspan={1}>10</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt>
+                                    <TableRow className="k-master-row" role="row" alt>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chang</TableTd>
                                         <TableTd colspan={1}>17</TableTd>
                                         <TableTd colspan={1}>$19.00</TableTd>
@@ -60,7 +60,7 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>70</TableTd>
                                         <TableTd colspan={1}>25</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt>
+                                    <TableRow className="k-master-row" role="row" alt>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                         <TableTd colspan={1}>53</TableTd>
                                         <TableTd colspan={1}>$22.00</TableTd>
@@ -74,7 +74,7 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
                                         <TableTd colspan={1}>0</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt >
+                                    <TableRow className="k-master-row" role="row" alt >
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Grandma&apos;s Boysenberry Spread</TableTd>
                                         <TableTd colspan={1}>120</TableTd>
                                         <TableTd colspan={1}>$25.00</TableTd>
@@ -88,7 +88,7 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
                                         <TableTd colspan={1}>10</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt>
+                                    <TableRow className="k-master-row" role="row" alt>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Northwoods Cranberry Sauce</TableTd>
                                         <TableTd colspan={1}>6</TableTd>
                                         <TableTd colspan={1}>$40.00</TableTd>
@@ -102,7 +102,7 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
                                         <TableTd colspan={1}>0</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt>
+                                    <TableRow className="k-master-row" role="row" alt>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Ikura</TableTd>
                                         <TableTd colspan={1}>31</TableTd>
                                         <TableTd colspan={1}>$31.00</TableTd>
@@ -112,7 +112,6 @@ export const GridWithStickyColumns = ({ contentClassName, ...other }: any) => (
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container"><div></div></div>
                     </GridContent>
                 </GridContainer>
             </>

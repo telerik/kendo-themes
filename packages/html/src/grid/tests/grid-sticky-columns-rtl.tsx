@@ -17,13 +17,13 @@ export default () =>(
             <GridWithStickyColumns className="k-rtl" style={{ height: "700px", width: "500px" }} groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>shipName</Chip>
+                        <Chip icon="sort-asc-small" text="shipName" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}
             pager={( <GridPager adaptive pageSizes={false} dir="rtl" info={false} />
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable style={{ width: "1434px" }}>
                             <colgroup>
@@ -52,7 +52,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div style={{ position: "relative" }}>
                             <GridTable style={{ width: "1434px" }}>
                                 <colgroup>
@@ -81,7 +81,7 @@ export default () =>(
                                         <TableTd colspan={1}>Tuesday, January 16, 1996</TableTd>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '200px' }}>10279</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt role="row">
+                                    <TableRow className="k-master-row" alt role="row">
                                         <TableTd className="k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></TableTd>
                                         <TableTd className="k-hierarchy-cell"><Icon icon="plus" /></TableTd>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '90px', right: '0px' }}>LEHMS</TableTd>
@@ -106,7 +106,7 @@ export default () =>(
                                         <TableTd colspan={1}>Tuesday, January 30, 1996</TableTd>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '200px' }}>10271</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt role="row">
+                                    <TableRow className="k-master-row" alt role="row">
                                         <TableTd className="k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></TableTd>
                                         <TableTd className="k-hierarchy-cell"><Icon icon="plus" /></TableTd>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '90px', right: '0px' }}>SPLIR</TableTd>
@@ -131,7 +131,7 @@ export default () =>(
                                         <TableTd colspan={1}>Wednesday, January 31, 1996</TableTd>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '200px' }}>10266</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt role="row">
+                                    <TableRow className="k-master-row" alt role="row">
                                         <TableTd className="k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></TableTd>
                                         <TableTd className="k-hierarchy-cell"><Icon icon="plus" /></TableTd>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '90px', right: '0px' }}>WARTH</TableTd>
@@ -144,7 +144,6 @@ export default () =>(
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container"><div></div></div>
                     </GridContent>
                 </GridContainer>
             </GridWithStickyColumns>

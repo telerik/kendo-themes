@@ -110,7 +110,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                     <TableTd>18</TableTd>
                                     <TableTd>false</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>2</TableTd>
                                     <TableTd>Chang</TableTd>
                                     <TableTd>24 - 12 oz bottles</TableTd>
@@ -124,7 +124,7 @@ export const GridWithFilterRow = ({ contentClassName, ...other }: any) => (
                                     <TableTd>10</TableTd>
                                     <TableTd>false</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>4</TableTd>
                                     <TableTd>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                     <TableTd>48 - 6 oz jars</TableTd>

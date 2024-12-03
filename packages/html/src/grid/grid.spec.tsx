@@ -17,6 +17,7 @@ export type KendoGridProps = KendoGridOptions & {
     pager?: React.JSX.Element;
     pagerPosition?: 'top' | 'bottom';
     groupingHeader?: React.JSX.Element;
+    gridSelectionAggregates?: React.JSX.Element;
     _renderAriaRoot?: boolean;
 };
 
@@ -35,6 +36,7 @@ export const Grid = (
         toolbar,
         pager,
         groupingHeader,
+        gridSelectionAggregates,
         _renderAriaRoot,
         ...other
     } = props;
@@ -54,6 +56,7 @@ export const Grid = (
             { props.children && _renderAriaRoot ?
                 <div className="k-grid-aria-root">{props.children}</div> : props.children
             }
+            {gridSelectionAggregates}
             {pagerPosition === 'bottom' && pager}
         </div>
     );

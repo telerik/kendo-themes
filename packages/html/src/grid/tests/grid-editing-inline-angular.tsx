@@ -34,7 +34,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -44,34 +44,31 @@ export default () =>(
                                 </colgroup>
                                 <TableTbody>
                                     <TableRow className="k-master-row k-grid-edit-row" role="row">
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Textbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button>Update</Button>
                                             <Button>Cancel</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                    <TableRow className="k-master-row" alt>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             Product2
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button>Edit</Button>
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
-                        </div>
-                        <div className="k-height-container">
-                            <div></div>
                         </div>
                     </GridContent>
                 </GridContainer>
@@ -103,7 +100,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -123,34 +120,31 @@ export default () =>(
                                         </TableTd>
                                     </TableRow>
                                     <TableRow className="k-master-row">
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             Product1
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button>Edit</Button>
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                    <TableRow className="k-master-row" alt>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             Product2
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button>Edit</Button>
                                             <Button>Remove</Button>
                                         </TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
-                        </div>
-                        <div className="k-height-container">
-                            <div></div>
                         </div>
                     </GridContent>
                 </GridContainer>

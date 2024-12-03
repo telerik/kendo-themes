@@ -92,7 +92,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -156,7 +156,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -220,7 +220,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -284,7 +284,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -348,7 +348,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -392,7 +392,7 @@ export default () =>(
                                                 <TableTd>Row: 1, Col: 9</TableTd>
                                                 <TableTd>Row: 1, Col: 10</TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>Row: 2, Col: 1</TableTd>
                                                 <TableTd>Row: 2, Col: 2</TableTd>
                                                 <TableTd>Row: 2, Col: 3</TableTd>
@@ -512,7 +512,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -576,7 +576,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -640,7 +640,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -704,7 +704,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -768,7 +768,7 @@ export default () =>(
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>
                                                     <SkeletonNormal animation={false} />
                                                 </TableTd>
@@ -812,7 +812,7 @@ export default () =>(
                                                 <TableTd>Row: 1, Col: 9</TableTd>
                                                 <TableTd>Row: 1, Col: 10</TableTd>
                                             </TableRow>
-                                            <TableRow alt className="k-master-row k-alt" style={{ height: "60px" }}>
+                                            <TableRow alt className="k-master-row" style={{ height: "60px" }}>
                                                 <TableTd>Row: 2, Col: 1</TableTd>
                                                 <TableTd>Row: 2, Col: 2</TableTd>
                                                 <TableTd>Row: 2, Col: 3</TableTd>

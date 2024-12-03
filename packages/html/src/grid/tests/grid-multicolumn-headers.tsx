@@ -51,7 +51,7 @@ export default () =>(
                                             Chai
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row" alt style={{ height: "37px" }}>
                                         <TableTd colspan={1}>
                                             Chang
                                         </TableTd>
@@ -64,11 +64,8 @@ export default () =>(
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container">
-                            <div style={{ height: '0px' }}></div>
-                        </div>
                     </div>
-                    <GridContent className="k-virtual-content" style={{ width: "447px" }}>
+                    <GridContent style={{ width: "447px" }}>
                         <div className="k-grid-table-wrap" style={{ position: "relative" }}>
                             <GridTable style={{ transform: "translateY(0px)", width: "900px" }}>
                                 <colgroup>
@@ -80,7 +77,7 @@ export default () =>(
                                         <TableTd colspan={1}>18</TableTd>
                                         <TableTd colspan={1}>false</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt style={{ height: "37px" }}>
+                                    <TableRow className="k-master-row" alt style={{ height: "37px" }}>
                                         <TableTd colspan={1}>17</TableTd>
                                         <TableTd colspan={1}>19</TableTd>
                                         <TableTd colspan={1}>false</TableTd>
@@ -92,9 +89,6 @@ export default () =>(
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
-                        </div>
-                        <div className="k-height-container">
-                            <div style={{ height: '0px' }}></div>
                         </div>
                     </GridContent>
                 </GridContainer>

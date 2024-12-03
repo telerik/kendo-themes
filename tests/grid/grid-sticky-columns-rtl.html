@@ -27,7 +27,9 @@
                                 <path d="M256 192v224h-32V192h-96L240 64l112 128z"></path>
                             </svg>
                         </span>
-                        <span class="k-chip-content">shipName</span>
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">shipName</span>
+                        </span>
                         <span class="k-chip-actions">
                             <span class="k-chip-action k-chip-remove-action">
                                 <span class="k-icon k-svg-icon k-icon-sm k-svg-i-x-circle">
@@ -42,7 +44,7 @@
                 <div class="k-grouping-drop-container"></div>
             </div>
             <div class="k-grid-aria-root">
-                <div class="k-grid-header">
+                <div draggable="true" class="k-grid-header k-grid-draggable-header">
                     <div class="k-grid-header-wrap">
                         <table class="k-grid-header-table k-table k-table-md" style="width: 1434px;">
                             <colgroup>
@@ -114,7 +116,7 @@
                     </div>
                 </div>
                 <div class="k-grid-container">
-                    <div class="k-virtual-content k-grid-content">
+                    <div class="k-grid-content">
                         <div style="position: relative;">
                             <table class="k-grid-table k-table k-table-md" style="width: 1434px;">
                                 <colgroup>
@@ -155,7 +157,7 @@
                                         <td colspan="1" class="k-table-td">Tuesday, January 16, 1996</td>
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10279</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
@@ -198,7 +200,7 @@
                                         <td colspan="1" class="k-table-td">Tuesday, January 30, 1996</td>
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10271</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
@@ -241,7 +243,7 @@
                                         <td colspan="1" class="k-table-td">Wednesday, January 31, 1996</td>
                                         <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10266</td>
                                     </tr>
-                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                    <tr class="k-master-row k-table-row k-table-alt-row" role="row">
                                         <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
                                         <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
@@ -259,9 +261,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        <div class="k-height-container">
-                            <div></div>
                         </div>
                     </div>
                 </div>

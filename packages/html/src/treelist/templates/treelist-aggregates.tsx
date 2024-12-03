@@ -33,7 +33,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                             <col />
                         </colgroup>
                         <TableTbody>
-                            <TableRow className="k-treelist-group">
+                            <TableRow>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                     Daryl Sweeney
@@ -41,7 +41,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd>CEO</TableTd>
                                 <TableTd>February 7, 2012</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt k-treelist-group" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="caret-alt-right" />
@@ -50,7 +50,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd>Chief Technical Officer</TableTd>
                                 <TableTd>March 3, 2010</TableTd>
                             </TableRow>
-                            <TableRow className="k-treelist-group">
+                            <TableRow>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="caret-alt-right" />
@@ -59,7 +59,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd>Chief Product Officer</TableTd>
                                 <TableTd>November 30, 2014</TableTd>
                             </TableRow>
-                            <TableRow className="k-treelist-group k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down" />
@@ -68,7 +68,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd>Chief Process Officer</TableTd>
                                 <TableTd>February 25, 2010</TableTd>
                             </TableRow>
-                            <TableRow className="k-treelist-group">
+                            <TableRow>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="none" />
@@ -88,7 +88,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd></TableTd>
                                 <TableTd>Last employee hired on July 30, 2015</TableTd>
                             </TableRow>
-                            <TableRow className="k-alt k-treelist-group" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="caret-alt-right" />
@@ -97,7 +97,7 @@ export const TreeListAggregates = ({ gridHeader, gridContent, menu, ...other }: 
                                 <TableTd>Chief Financial Officer</TableTd>
                                 <TableTd>August 17, 2015</TableTd>
                             </TableRow>
-                            <TableRow className="k-treelist-group">
+                            <TableRow>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none" />
                                     <Icon className="k-treelist-toggle" icon="caret-alt-right" />

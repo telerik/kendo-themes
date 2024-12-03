@@ -91,7 +91,7 @@ export default () =>(
                                                         <NumericTextbox value="40"/>
                                                     </TableTd>
                                                 </TableRow>
-                                                <TableRow className="k-alt" alt>
+                                                <TableRow alt>
                                                     <TableTd>
                                                         <span className="k-checkbox-wrap">
                                                             <Checkbox />
@@ -111,7 +111,7 @@ export default () =>(
                                                     <TableTd>Grid Cell</TableTd>
                                                     <TableTd>Grid Cell</TableTd>
                                                 </TableRow>
-                                                <TableRow className="k-alt" alt>
+                                                <TableRow alt>
                                                     <TableTd>
                                                         <span className="k-checkbox-wrap">
                                                             <Checkbox />
@@ -131,7 +131,7 @@ export default () =>(
                                                     <TableTd className="k-table-td">Grid Cell</TableTd>
                                                     <TableTd className="k-table-td">Grid Cell</TableTd>
                                                 </TableRow>
-                                                <TableRow className="k-alt" alt>
+                                                <TableRow alt>
                                                     <TableTd className="k-table-td">
                                                         <span className="k-checkbox-wrap">
                                                             <Checkbox />

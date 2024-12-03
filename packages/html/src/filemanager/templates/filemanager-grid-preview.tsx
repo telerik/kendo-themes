@@ -53,7 +53,7 @@ export const FileManagerGridPreview = (props) => (
                         </BreadcrumbContainer>
                     </FileManagerBreadcrumb>
 
-                    <Grid _renderAriaRoot className="k-filemanager-grid k-grid-display-block k-editable">
+                    <Grid _renderAriaRoot className="k-filemanager-grid k-grid-display-block">
                         <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <GridHeaderTable>
@@ -89,7 +89,7 @@ export const FileManagerGridPreview = (props) => (
                                             <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
                                             <TableTd>0</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd>
                                                 <FilePreview name="file.png" icon="file" />
                                             </TableTd>

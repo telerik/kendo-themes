@@ -28,7 +28,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -38,20 +38,20 @@ export default () =>(
                                 </colgroup>
                                 <TableTbody>
                                     <TableRow className="k-master-row">
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt">
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                    <TableRow alt className="k-master-row">
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -85,7 +85,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -95,20 +95,20 @@ export default () =>(
                                 </colgroup>
                                 <TableTbody>
                                     <TableRow className="k-master-row">
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt">
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                    <TableRow alt className="k-master-row">
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -142,7 +142,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -152,20 +152,20 @@ export default () =>(
                                 </colgroup>
                                 <TableTbody>
                                     <TableRow className="k-master-row">
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt">
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                    <TableRow alt className="k-master-row">
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
