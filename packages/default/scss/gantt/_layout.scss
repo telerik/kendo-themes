@@ -473,7 +473,7 @@
         position: absolute;
         bottom: 0;
         // display: none;
-        cursor: e-resize;
+        cursor: ew-resize;
         visibility: hidden;
     }
     .k-task-wrap:hover .k-task-draghandle {
@@ -551,18 +551,28 @@
             opacity: .5;
             z-index: 2;
             visibility: hidden;
+            cursor: ew-resize;
         }
+
         .k-resize-handle::before {
             position: absolute;
             top: 2px;
             bottom: 2px;
         }
-        .k-resize-w { left: 0; }
+
+        .k-resize-w {
+            left: 0;
+        }
+
         .k-resize-w::before {
             left: 2px;
             border-left-width: 1px;
         }
-        .k-resize-e { right: 0; }
+
+        .k-resize-e {
+            right: 0;
+        }
+
         .k-resize-e::before {
             right: 2px;
             border-left-width: 1px;
