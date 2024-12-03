@@ -26,8 +26,8 @@ export const ImageEditorCrop = (props: any) => (
         actionPane={
             <FormNormal tag="div" className="k-imageeditor-pane-form" formButtons={
                 <>
-                    <Button themeColor="primary">Confirm</Button>
-                    <Button>Cancel</Button>
+                    <Button themeColor="primary" icon="check">Confirm</Button>
+                    <Button icon="cancel-outline">Cancel</Button>
                 </>
             }>
                 <Fieldset layout="grid" legend="Crop Image" cols={2} gapX={2}>
@@ -56,7 +56,7 @@ export const ImageEditorCrop = (props: any) => (
                         label="Height:"
                         editor={ <NumericTextbox showClearButton={false} value="68" /> }
                     />
-                    <FormField
+                   <FormField
                         colSpan="2"
                         editor={ <CheckboxWithLabelAfter>Lock aspect ratio</CheckboxWithLabelAfter> }
                     />

@@ -26,8 +26,8 @@ export const ImageEditorResize = (props: any) => (
         actionPane={
             <FormNormal tag="div" className="k-imageeditor-pane-form" formButtons={
                 <>
-                    <Button themeColor="primary">Confirm</Button>
-                    <Button>Cancel</Button>
+                    <Button themeColor="primary" icon="check">Confirm</Button>
+                    <Button icon="cancel-outline">Cancel</Button>
                 </>
             }>
                 <Fieldset layout="grid" legend="Resize Image" cols={2} gapX={2}>
