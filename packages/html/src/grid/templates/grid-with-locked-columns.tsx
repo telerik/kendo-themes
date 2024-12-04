@@ -53,7 +53,7 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                     <TableTd>10248</TableTd>
                                     <TableTd>Vins et alcools Chevalier</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>10249</TableTd>
                                     <TableTd>Toms Spezialitäten</TableTd>
                                 </TableRow>
@@ -61,7 +61,7 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                     <TableTd>10250</TableTd>
                                     <TableTd>Hanari Carnes</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>10251</TableTd>
                                     <TableTd>Victuailles en stock</TableTd>
                                 </TableRow>
@@ -69,7 +69,7 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                     <TableTd>10252</TableTd>
                                     <TableTd>Suprêmes délices</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>10253</TableTd>
                                     <TableTd>Toms Spezialitäten</TableTd>
                                 </TableRow>
@@ -77,7 +77,7 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                     <TableTd>10254</TableTd>
                                     <TableTd>Hanari Carnes</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>10255</TableTd>
                                     <TableTd>Victuailles en stock</TableTd>
                                 </TableRow>
@@ -97,7 +97,7 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                     <TableTd>Reims</TableTd>
                                     <TableTd>59 rue de l&apos;Abbaye</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>Germany</TableTd>
                                     <TableTd>Münster</TableTd>
                                     <TableTd>Luisenstr. 48</TableTd>
@@ -107,7 +107,7 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                     <TableTd>Rio de Janeiro</TableTd>
                                     <TableTd>Rua do Paço, 67</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>France</TableTd>
                                     <TableTd>Lyon</TableTd>
                                     <TableTd>2, rue du Commerce</TableTd>
@@ -117,7 +117,7 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                     <TableTd>Charleroi</TableTd>
                                     <TableTd>Boulevard Tirou, 255</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>Germany</TableTd>
                                     <TableTd>Münster</TableTd>
                                     <TableTd>Luisenstr. 48</TableTd>
@@ -127,7 +127,7 @@ export const GridWithLockedColumns = ({ className, headerWrapClassName, contentC
                                     <TableTd>Rio de Janeiro</TableTd>
                                     <TableTd>Rua do Paço, 67</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>France</TableTd>
                                     <TableTd>Lyon</TableTd>
                                     <TableTd>2, rue du Commerce</TableTd>

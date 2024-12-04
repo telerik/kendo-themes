@@ -69,7 +69,7 @@ export const ExpansionPanel = (
             <div className={classNames(
                 'k-expander-content-wrapper',
                 {
-                    'k-d-none': !expanded
+                    'k-hidden': !expanded
                 }
             )}>
                 <div className="k-expander-content" style={contentStyle}>

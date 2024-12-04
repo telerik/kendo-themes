@@ -1,6 +1,6 @@
 import { CheckboxWithLabelAfter } from '../templates/checkbox-with-label-after';
 import { CheckboxNormal } from '../templates/checkbox-normal';
-
+import { CheckboxChecked } from '../templates/checkbox-checked';
 
 const styles = `
     .k-ripple-container .k-checkbox:focus::after,
@@ -24,7 +24,7 @@ export default () =>(
             </div>
             <div>
                 <label className="k-checkbox-label">
-                    <CheckboxNormal checked />
+                    <CheckboxChecked />
                     Checked
                 </label>
             </div>
@@ -33,7 +33,7 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
-                    <CheckboxNormal checked />
+                    <CheckboxChecked />
                     Checked
                 </label>
             </div>
@@ -43,7 +43,7 @@ export default () =>(
             </div>
             <div>
                 <label className="k-checkbox-label">
-                    <CheckboxNormal disabled checked />
+                    <CheckboxChecked disabled />
                     Checked
                 </label>
             </div>
@@ -52,7 +52,7 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
-                    <CheckboxNormal disabled checked />
+                    <CheckboxChecked disabled />
                     Checked
                 </label>
             </div>
@@ -195,7 +195,7 @@ export default () =>(
             </div>
             <div>
                 <label className="k-checkbox-label">
-                    <CheckboxNormal checked />
+                    <CheckboxChecked />
                     Long label Vivamus a arcu lacus. Integer augue leo.
                 </label>
             </div>
@@ -204,7 +204,7 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
-                    <CheckboxNormal checked />
+                    <CheckboxChecked />
                     Long label Vivamus a arcu lacus. Integer augue leo.
                 </label>
             </div>

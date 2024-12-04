@@ -35,7 +35,7 @@ export default () =>(
                                             }
                                         />
                                     </Toolbar>
-                                    <div className="k-grid k-grid-md k-alt" style={{ height: "363px" }}>
+                                    <div className="k-grid k-grid-md" style={{ height: "363px" }}>
                                         <table className="k-table k-table-md">
                                             <colgroup>
                                                 <col />
@@ -92,7 +92,7 @@ export default () =>(
                                                                     </span>
                                                                 </span>
                                                             </th>
-                                                            <th className="k-table-th k-header k-alt" colSpan={1} rowSpan={2}>
+                                                            <th className="k-table-th k-header" colSpan={1} rowSpan={2}>
                                                                 <span className="k-cell-inner">
                                                                     <span className="k-link">
                                                                         <span className="k-column-title">All Periods</span>
@@ -195,7 +195,7 @@ export default () =>(
                                                         <td className="k-table-td">$603,610.94</td>
                                                         <td className="k-table-td">$805,067.19</td>
                                                         <td className="k-table-td">$400,951.86</td>
-                                                        <td className="k-table-td k-alt">$2,011,265.92</td>
+                                                        <td className="k-table-td">$2,011,265.92</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

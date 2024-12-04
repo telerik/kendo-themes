@@ -3,29 +3,29 @@ import { Chip, ChipList, ChipAction } from '../../chip';
 import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridGroupingHeader, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableRow, TableTd, TableTbody } from '../../table';
 
-export const GridWithGrouping = ({ contentClassName, ...other }: any) => (
+export const GridWithGrouping = ({ dropClue, contentClassName, ...other }: any) => (
     <Grid _renderAriaRoot
         groupingHeader={(
-            <GridGroupingHeader dropClue>
+            <GridGroupingHeader dropClue={dropClue} >
                 <ChipList>
-                    <Chip icon="sort-asc-small" actions={
+                    <Chip icon="sort-asc-small" text="ID" actions={
                         <>
                             <ChipAction type="more"/>
                             <ChipAction type="remove"/>
                         </>
-                    }>ID</Chip>
-                    <Chip icon="sort-desc-small" actions={
+                    }/>
+                    <Chip icon="sort-desc-small" text="Name" actions={
                         <>
                             <ChipAction type="more"/>
                             <ChipAction type="remove"/>
                         </>
-                    }>Name</Chip>
+                    } />
                 </ChipList>
             </GridGroupingHeader>
         )}
         children={(
             <>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -76,7 +76,7 @@ export const GridWithGrouping = ({ contentClassName, ...other }: any) => (
                                         </p>
                                     </TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row">
+                                <TableRow className="k-master-row" alt>
                                     <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                     <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                     <TableTd colspan={0}>2</TableTd>

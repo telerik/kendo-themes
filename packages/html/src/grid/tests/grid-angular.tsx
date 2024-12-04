@@ -33,7 +33,7 @@ export default () =>(
                         </div>
                     </GridHeader>
                     <GridContainer>
-                        <GridContent className="k-virtual-content">
+                        <GridContent>
                             <div className="k-grid-table-wrap">
                                 <GridTable>
                                     <colgroup>
@@ -45,7 +45,7 @@ export default () =>(
                                             <TableTd>1</TableTd>
                                             <TableTd>Row</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd>2</TableTd>
                                             <TableTd>Alt row</TableTd>
                                         </TableRow>
@@ -55,16 +55,12 @@ export default () =>(
                                             This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
                                             </TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd>4</TableTd>
                                             <TableTd><SkeletonNormal animation={false}/></TableTd>
                                         </TableRow>
                                     </TableTbody>
                                 </GridTable>
-                            </div>
-                            <div className="k-height-container">
-                                {/* set height to scroll height (virtual scrolling) */}
-                                <div style={{ height: '0px' }}></div>
                             </div>
                         </GridContent>
                     </GridContainer>
@@ -100,7 +96,7 @@ export default () =>(
                         </div>
                     </GridHeader>
                     <GridContainer>
-                        <GridContent className="k-virtual-content">
+                        <GridContent>
                             <div className="k-grid-table-wrap">
                                 <GridTable>
                                     <colgroup>
@@ -130,7 +126,7 @@ export default () =>(
                                                 </div>
                                             </TableTd>
                                         </TableRow>
-                                        <TableRow alt className="k-master-row k-alt">
+                                        <TableRow alt className="k-master-row">
                                             <TableTd className="k-hierarchy-cell">
                                                 <Icon icon="caret-alt-right" />
                                             </TableTd>
@@ -143,9 +139,6 @@ export default () =>(
                                         </TableRow>
                                     </TableTbody>
                                 </GridTable>
-                            </div>
-                            <div className="k-height-container">
-                                <div></div>
                             </div>
                         </GridContent>
                     </GridContainer>
@@ -181,7 +174,7 @@ export default () =>(
                         </div>
                     </GridHeader>
                     <GridContainer>
-                        <GridContent className="k-virtual-content">
+                        <GridContent>
                             <div className="k-grid-table-wrap">
                                 <GridTable>
                                     <colgroup>
@@ -195,21 +188,18 @@ export default () =>(
                                             <TableTd>18</TableTd>
                                             <TableTd>10 boxes x 20 bags</TableTd>
                                         </TableRow>
-                                        <TableRow alt className="k-master-row k-alt">
+                                        <TableRow alt className="k-master-row">
                                             <TableTd>Chang</TableTd>
                                             <TableTd>19</TableTd>
                                             <TableTd>24 - 12 oz bottles</TableTd>
                                         </TableRow>
-                                        <TableRow alt className="k-master-row k-alt">
+                                        <TableRow alt className="k-master-row">
                                             <TableTd>Aniseed Syrup</TableTd>
                                             <TableTd>20</TableTd>
                                             <TableTd>24 - 12 oz bottles</TableTd>
                                         </TableRow>
                                     </TableTbody>
                                 </GridTable>
-                            </div>
-                            <div className="k-height-container">
-                                <div></div>
                             </div>
                         </GridContent>
                     </GridContainer>

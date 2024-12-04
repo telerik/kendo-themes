@@ -35,7 +35,7 @@ export const PropertyGridNormal = ({ content, ...other }: any) => (
                                 </TableTd>
                                 <TableTd><b>medium</b></TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     themeColor
@@ -49,7 +49,7 @@ export const PropertyGridNormal = ({ content, ...other }: any) => (
                                 </TableTd>
                                 <TableTd><b>solid</b></TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     rounded
@@ -63,7 +63,7 @@ export const PropertyGridNormal = ({ content, ...other }: any) => (
                                 </TableTd>
                                 <TableTd><Icon icon="star" /></TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>
                                     font
@@ -78,7 +78,7 @@ export const PropertyGridNormal = ({ content, ...other }: any) => (
                                 </TableTd>
                                 <TableTd><b>400</b></TableTd>
                             </TableRow>
-                            <TableRow className="k-alt" alt>
+                            <TableRow alt>
                                 <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>

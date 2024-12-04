@@ -38,16 +38,16 @@ export default () =>(
 
             <span>localized</span>
             <section>
-                <SwitchNormal onLabel="On" offLabel="Off" />
+                <SwitchNormal />
             </section>
             <section>
-                <SwitchChecked onLabel="On" offLabel="Off" />
+                <SwitchChecked />
             </section>
             <section dir="rtl">
-                <SwitchNormal onLabel="On" offLabel="Off" />
+                <SwitchNormal />
             </section>
             <section dir="rtl">
-                <SwitchChecked onLabel="On" offLabel="Off" />
+                <SwitchChecked />
             </section>
         </div>
     </>

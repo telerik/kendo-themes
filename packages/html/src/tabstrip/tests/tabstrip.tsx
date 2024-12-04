@@ -12,7 +12,7 @@ export default () => (
                             <TabStripLeft
                                 tabStripItems={
                                     <>
-                                        <TabStripItem first className="k-tab-on-top" active value="Inner First" />
+                                        <TabStripItem first active value="Inner First" />
                                         <TabStripItem last value="Inner Second" />
                                     </>
                                 }>

@@ -31,8 +31,8 @@ export default () =>(
 
                     { Switch.options.size.map((size) => (
                         <div className="wrapper">
-                            <SwitchChecked onLabel="On" size={size} trackRounded={roundness} thumbRounded={roundness} />
-                            <SwitchNormal offLabel="Off" size={size} trackRounded={roundness} thumbRounded={roundness} />
+                            <SwitchChecked size={size} trackRounded={roundness} thumbRounded={roundness} />
+                            <SwitchNormal size={size} trackRounded={roundness} thumbRounded={roundness} />
                         </div>
                     ))}
                 </>

@@ -57,7 +57,7 @@ export default () =>(
                                         <TableTd>1</TableTd>
                                         <TableTd>Row</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Alt row</TableTd>
                                     </TableRow>
@@ -67,7 +67,7 @@ export default () =>(
                                         This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>4</TableTd>
                                         <TableTd><SkeletonNormal animation={false} /></TableTd>
                                     </TableRow>
@@ -190,7 +190,7 @@ export default () =>(
                                             </div>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt">
+                                    <TableRow alt className="k-master-row">
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="caret-alt-right" />
                                         </TableTd>
@@ -260,7 +260,7 @@ export default () =>(
                                             <Button size="small" icon="cancel">Cancel</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-grid-edit-row k-alt">
+                                    <TableRow alt className="k-master-row k-grid-edit-row">
                                         <TableTd className="k-dirty-cell">
                                             <span className="k-dirty"></span>
                                         LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
@@ -293,12 +293,12 @@ export default () =>(
                 <GridNormal size="small" className="k-grid-no-scrollbar" pager={false} groupingHeader={(
                     <GridGroupingHeader dropClue>
                         <ChipList size="small">
-                            <Chip size="small" icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                            <Chip size="small" icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                            <Chip size="small" icon="sort-asc-small" text="Price" actions={ <ChipAction type="remove"/> } />
+                            <Chip size="small" icon="sort-desc-small" text="Name" actions={ <ChipAction type="remove"/> } />
                         </ChipList>
                     </GridGroupingHeader>
                 )}>
-                    <GridHeader>
+                    <GridHeader draggable>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable size="small">
                                 <colgroup>

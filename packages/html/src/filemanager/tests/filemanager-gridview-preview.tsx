@@ -31,7 +31,7 @@ export default () =>(
                             </BreadcrumbContainer>
                         </FileManagerBreadcrumb>
 
-                        <Grid _renderAriaRoot className="k-filemanager-grid k-grid-display-block k-editable">
+                        <Grid _renderAriaRoot className="k-filemanager-grid k-grid-display-block">
                             <GridHeader>
                                 <div className="k-grid-header-wrap k-auto-scrollable">
                                     <GridHeaderTable>
@@ -67,7 +67,7 @@ export default () =>(
                                                 <TableTd>13/12/2019 at 12:22:04 PM</TableTd>
                                                 <TableTd>0</TableTd>
                                             </TableRow>
-                                            <TableRow className="k-master-row k-alt" alt selected>
+                                            <TableRow className="k-master-row" alt selected>
                                                 <TableTd>
                                                     <FilePreview name="file.png" icon="file" />
                                                 </TableTd>
@@ -111,7 +111,7 @@ export default () =>(
                             </BreadcrumbContainer>
                         </FileManagerBreadcrumb>
 
-                        <Grid _renderAriaRoot className="k-filemanager-grid k-grid-display-block k-editable">
+                        <Grid _renderAriaRoot className="k-filemanager-grid k-grid-display-block">
                             <GridHeader>
                                 <div className="k-grid-header-wrap k-auto-scrollable">
                                     <GridHeaderTable>

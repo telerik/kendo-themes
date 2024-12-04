@@ -13,7 +13,6 @@ export type KendoTabStripProps = {
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
     scrollable?: boolean;
     scrollButtonsPosition?: "around" | "start" | "end";
-    header?: boolean | null;
     dir?: "rtl" | "ltr";
 };
 
@@ -21,7 +20,6 @@ const defaultOptions = {
     position: "top",
     tabAlignment: "start",
     scrollButtonsPosition: "around",
-    header: true
 };
 
 export const TabStrip = (
@@ -35,7 +33,6 @@ export const TabStrip = (
         position = defaultOptions.position,
         tabAlignment = defaultOptions.tabAlignment,
         scrollButtonsPosition = defaultOptions.scrollButtonsPosition,
-        header = defaultOptions.header,
         dir,
         ...other
     } = props;
@@ -72,7 +69,6 @@ export const TabStrip = (
                 {
                     [`${TABSTRIP_CLASSNAME}-${position}`]: position,
                     [`${TABSTRIP_CLASSNAME}-scrollable`]: scrollable,
-                    ["k-header"]: header,
                 },
             )}>
             {position === "bottom" && children}

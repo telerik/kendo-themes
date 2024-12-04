@@ -34,7 +34,7 @@ export default () =>(
                         </div>
                     </GridHeader>
                     <GridContainer>
-                        <GridContent className="k-virtual-content">
+                        <GridContent>
                             <div style={{ position: "relative" }}>
                                 <GridTable>
                                     <colgroup>
@@ -54,7 +54,7 @@ export default () =>(
                                             <TableTd colspan={1}>39</TableTd>
                                             <TableTd><Checkbox /></TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={1}>2</TableTd>
                                             <TableTd colspan={1}>Chang</TableTd>
                                             <TableTd colspan={1}>Beverages</TableTd>
@@ -70,7 +70,7 @@ export default () =>(
                                             <TableTd colspan={1}>13</TableTd>
                                             <TableTd><Checkbox /></TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={1}>4</TableTd>
                                             <TableTd colspan={1}>Chef Anton&apos;s Cajun Seasoning</TableTd>
                                             <TableTd colspan={1}>Condiments</TableTd>
@@ -86,7 +86,7 @@ export default () =>(
                                             <TableTd colspan={1}>0</TableTd>
                                             <TableTd><Checkbox /></TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={1}>6</TableTd>
                                             <TableTd colspan={1}>Grandma&apos;s Boysenberry Spread</TableTd>
                                             <TableTd colspan={1}>Condiments</TableTd>
@@ -102,7 +102,7 @@ export default () =>(
                                             <TableTd colspan={1}>15</TableTd>
                                             <TableTd><Checkbox /></TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={1}>8</TableTd>
                                             <TableTd colspan={1}>Northwoods Cranberry Sauce</TableTd>
                                             <TableTd colspan={1}>Condiments</TableTd>
@@ -118,7 +118,7 @@ export default () =>(
                                             <TableTd colspan={1}>29</TableTd>
                                             <TableTd><Checkbox /></TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={1}>10</TableTd>
                                             <TableTd colspan={1}>Ikura</TableTd>
                                             <TableTd colspan={1}>Seafood</TableTd>
@@ -134,7 +134,7 @@ export default () =>(
                                             <TableTd colspan={1}>22</TableTd>
                                             <TableTd><Checkbox /></TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={1}>12</TableTd>
                                             <TableTd colspan={1}>Queso Manchego La Pastora</TableTd>
                                             <TableTd colspan={1}>Dairy Products</TableTd>
@@ -150,7 +150,7 @@ export default () =>(
                                             <TableTd colspan={1}>24</TableTd>
                                             <TableTd><Checkbox /></TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd colspan={1}>14</TableTd>
                                             <TableTd colspan={1}>Tofu</TableTd>
                                             <TableTd colspan={1}>Produce</TableTd>
@@ -160,9 +160,6 @@ export default () =>(
                                         </TableRow>
                                     </TableTbody>
                                 </GridTable>
-                            </div>
-                            <div className="k-height-container">
-                                <div></div>
                             </div>
                         </GridContent>
                     </GridContainer>

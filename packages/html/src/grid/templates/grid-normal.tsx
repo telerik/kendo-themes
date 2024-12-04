@@ -45,7 +45,7 @@ export const GridNormal = ({ contentClassName, ...other }: any) => (
                                     <TableTd>Alfreds Futterkiste</TableTd>
                                     <TableTd>Germany</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>Ana Trujillo</TableTd>
                                     <TableTd>Owner</TableTd>
                                     <TableTd>Anna Trujillo Emparedados y helados</TableTd>
@@ -57,7 +57,7 @@ export const GridNormal = ({ contentClassName, ...other }: any) => (
                                     <TableTd>Around the Horn</TableTd>
                                     <TableTd>UK</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd>Christina Berglund</TableTd>
                                     <TableTd>Office Administrator</TableTd>
                                     <TableTd>Berglunds snabbköp</TableTd>

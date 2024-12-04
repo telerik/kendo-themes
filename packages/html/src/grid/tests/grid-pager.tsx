@@ -39,7 +39,7 @@ export default () =>(
                                         <TableTd>1</TableTd>
                                         <TableTd>Row</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Alt row</TableTd>
                                     </TableRow>
@@ -82,16 +82,12 @@ export default () =>(
                                             <TableTd>1</TableTd>
                                             <TableTd>Row</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd>2</TableTd>
                                             <TableTd>Alt row</TableTd>
                                         </TableRow>
                                     </TableTbody>
                                 </GridTable>
-                            </div>
-                            <div className="k-height-container">
-                                {/* set height to scroll height (virtual scrolling) */}
-                                <div style={{ height: '0px' }}></div>
                             </div>
                         </GridContent>
                     </GridContainer>
@@ -135,7 +131,7 @@ export default () =>(
                                         <TableTd>1</TableTd>
                                         <TableTd>Row</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" alt>
+                                    <TableRow className="k-master-row" alt>
                                         <TableTd>2</TableTd>
                                         <TableTd>Alt row</TableTd>
                                     </TableRow>
@@ -181,16 +177,12 @@ export default () =>(
                                             <TableTd>1</TableTd>
                                             <TableTd>Row</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd>2</TableTd>
                                             <TableTd>Alt row</TableTd>
                                         </TableRow>
                                     </TableTbody>
                                 </GridTable>
-                            </div>
-                            <div className="k-height-container">
-                                {/* set height to scroll height (virtual scrolling) */}
-                                <div style={{ height: '0px' }}></div>
                             </div>
                         </GridContent>
                     </GridContainer>

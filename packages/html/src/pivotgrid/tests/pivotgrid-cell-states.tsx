@@ -8,7 +8,9 @@ export default () => (
             <section>
                 <PivotGridNormal
                     emptyCell={
-                        <span className="k-pivotgrid-empty-cell k-focus" />
+                        <span className="k-pivotgrid-empty-cell k-focus">
+                            <span className="k-sr-only">PivotGrid component. Use the arrow keys to navigate.</span>
+                        </span>
                     }
                     rowHeaders={
                         <PivotGridTable>

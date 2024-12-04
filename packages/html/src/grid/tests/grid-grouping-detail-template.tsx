@@ -11,7 +11,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
             <span>Base</span>
             <GridNormal dir="ltr" pager={false}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -27,8 +27,8 @@ export default () =>(
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox id="k-grid0-select-all" />
                                     </GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -36,7 +36,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -51,47 +51,44 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox id="k-grid0-checkbox0" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>1</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>1</TableTd>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt" role="row">
+                                    <TableRow alt className="k-master-row" role="row">
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox id="k-grid0-checkbox0" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>2</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>2</TableTd>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container">
-                            <div></div>
-                        </div>
                     </GridContent>
                 </GridContainer>
             </GridNormal>
 
             <span>Single Group</span>
-            <GridWithGrouping dir="ltr"groupingHeader={(
+            <GridWithGrouping dropClue dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
+                        <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -109,8 +106,8 @@ export default () =>(
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -118,7 +115,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -143,12 +140,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>1</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>1</TableTd>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -160,40 +157,37 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt" role="row">
+                                    <TableRow alt className="k-master-row" role="row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>2</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>2</TableTd>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container">
-                            <div></div>
-                        </div>
                     </GridContent>
                 </GridContainer>
             </GridWithGrouping>
 
             <span>Two Groups</span>
-            <GridWithGrouping dir="ltr"groupingHeader={(
+            <GridWithGrouping dropClue dir="ltr" groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
+                        <Chip icon="sort-asc-small" text="Name" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -213,8 +207,8 @@ export default () =>(
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -222,7 +216,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -258,12 +252,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>1</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>1</TableTd>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -284,40 +278,37 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt" role="row">
+                                    <TableRow alt className="k-master-row" role="row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="plus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>2</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>2</TableTd>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container">
-                            <div></div>
-                        </div>
                     </GridContent>
                 </GridContainer>
             </GridWithGrouping>
             <span>Expanded Template</span>
-            <GridWithGrouping dir="ltr"groupingHeader={(
+            <GridWithGrouping dropClue dir="ltr"groupingHeader={(
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
-                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" text="ID" actions={ <ChipAction type="remove"/> } />
+                        <Chip icon="sort-asc-small" text="Name" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
             )}>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -337,8 +328,8 @@ export default () =>(
                                     <GridHeaderCell rowspan={1} colspan={1}>
                                         <Checkbox />
                                     </GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-draggable-header" rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="ID"></GridHeaderCell>
+                                    <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
                                     <GridHeaderCell rowspan={1} colspan={1} columnTitle="Command"></GridHeaderCell>
                                 </TableRow>
                             </TableThead>
@@ -346,7 +337,7 @@ export default () =>(
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div className="k-grid-table-wrap">
                             <GridTable>
                                 <colgroup>
@@ -382,12 +373,12 @@ export default () =>(
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="minus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>1</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product1</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>1</TableTd>
+                                        <TableTd colspan={1}>Product1</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
@@ -414,22 +405,22 @@ export default () =>(
                                             </p>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-master-row k-alt k-expanded" role="row">
+                                    <TableRow alt className="k-master-row k-expanded" role="row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-hierarchy-cell">
                                             <Icon icon="minus" />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>
+                                        <TableTd colspan={1}>
                                             <Checkbox />
                                         </TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>2</TableTd>
-                                        <TableTd className="k-touch-action-auto" colspan={1}>Product2</TableTd>
-                                        <TableTd className="k-touch-action-auto k-command-cell" colspan={1}>
+                                        <TableTd colspan={1}>2</TableTd>
+                                        <TableTd colspan={1}>Product2</TableTd>
+                                        <TableTd className="k-command-cell" colspan={1}>
                                             <Button icon="trash">Delete</Button>
                                         </TableTd>
                                     </TableRow>
-                                    <TableRow alt className="k-detail-row k-alt" role="row">
+                                    <TableRow alt className="k-detail-row" role="row">
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                         <TableTd className="k-hierarchy-cell"></TableTd>
@@ -437,9 +428,6 @@ export default () =>(
                                     </TableRow>
                                 </TableTbody>
                             </GridTable>
-                        </div>
-                        <div className="k-height-container">
-                            <div></div>
                         </div>
                     </GridContent>
                 </GridContainer>

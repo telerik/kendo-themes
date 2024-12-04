@@ -30,7 +30,7 @@ export default () => (
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div style={{ position: "relative" }}>
                             <GridTable style={{ width: "1100px" }}>
                                 <colgroup>
@@ -48,7 +48,7 @@ export default () => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
                                         <TableTd colspan={1}>10</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt>
+                                    <TableRow className="k-master-row" role="row" alt>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chang</TableTd>
                                         <TableTd colspan={1}>17</TableTd>
                                         <TableTd colspan={1}>$19.00</TableTd>
@@ -62,7 +62,7 @@ export default () => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>70</TableTd>
                                         <TableTd colspan={1}>25</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt selected>
+                                    <TableRow className="k-master-row" role="row" alt selected>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chef Anton&apos;s (Alt Selected)</TableTd>
                                         <TableTd colspan={1}>53</TableTd>
                                         <TableTd colspan={1}>$22.00</TableTd>
@@ -76,7 +76,7 @@ export default () => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
                                         <TableTd colspan={1}>0</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt selected hover>
+                                    <TableRow className="k-master-row" role="row" alt selected hover>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Grandma&apos;s (Alt Selected + Hover) </TableTd>
                                         <TableTd colspan={1}>120</TableTd>
                                         <TableTd colspan={1}>$25.00</TableTd>
@@ -90,7 +90,7 @@ export default () => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
                                         <TableTd colspan={1}>10</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt>
+                                    <TableRow className="k-master-row" role="row" alt>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Northwoods Cranberry Sauce</TableTd>
                                         <TableTd colspan={1}>6</TableTd>
                                         <TableTd colspan={1}>$40.00</TableTd>
@@ -104,7 +104,7 @@ export default () => (
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</TableTd>
                                         <TableTd colspan={1}>0</TableTd>
                                     </TableRow>
-                                    <TableRow className="k-master-row k-alt" role="row" alt>
+                                    <TableRow className="k-master-row" role="row" alt>
                                         <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Ikura</TableTd>
                                         <TableTd colspan={1}>31</TableTd>
                                         <TableTd colspan={1}>$31.00</TableTd>
@@ -114,7 +114,6 @@ export default () => (
                                 </TableTbody>
                             </GridTable>
                         </div>
-                        <div className="k-height-container"><div></div></div>
                     </GridContent>
                 </GridContainer>
             </GridWithStickyColumns>
@@ -122,10 +121,10 @@ export default () => (
             <GridWithStickyColumns className="k-telerik-blazor">
                 <GridGroupingHeader>
                     <ChipList>
-                        <Chip actions={ <ChipAction type="remove"/> }>Active Projects</Chip>
+                        <Chip text="Active Projects" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
-                <GridHeader>
+                <GridHeader draggable>
                     <div className="k-grid-header-wrap">
                         <GridHeaderTable>
                             <colgroup>
@@ -140,8 +139,8 @@ export default () => (
                                 <TableRow>
                                     <GridHeaderCell colspan={1} rowspan={1} className="k-group-cell"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-header-sticky" columnTitle="Team" colspan={1} style={{ left: '0px', right: '0px' }}></GridHeaderCell>
-                                    <GridHeaderCell className="k-grid-header-sticky" columnTitle="Active Projects" colspan={1}></GridHeaderCell>
+                                    <GridHeaderCell sticky columnTitle="Team" colspan={1} style={{ left: '0px', right: '0px' }}></GridHeaderCell>
+                                    <GridHeaderCell sticky columnTitle="Active Projects" colspan={1}></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="Salary"></GridHeaderCell>
                                     <GridHeaderCell colspan={1} columnTitle="On Vacation"></GridHeaderCell>
                                 </TableRow>
@@ -150,7 +149,7 @@ export default () => (
                     </div>
                 </GridHeader>
                 <GridContainer>
-                    <GridContent className="k-virtual-content">
+                    <GridContent>
                         <div style={{ position: "relative" }}>
                             <div className="k-virtual-position">
                                 <GridTable style={{ height: 'auto' }}>
@@ -181,7 +180,7 @@ export default () => (
                                             <TableTd colspan={1}>1429</TableTd>
                                             <TableTd colspan={1}>True</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd colspan={1}>Employee 4</TableTd>
                                             <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '0px' }}>
@@ -220,7 +219,7 @@ export default () => (
                                             <TableTd colspan={1}>2307</TableTd>
                                             <TableTd colspan={1}>False</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt selected>
+                                        <TableRow className="k-master-row" alt selected>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd colspan={1}>Employee 2</TableTd>
                                             <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '0px' }}>
@@ -240,7 +239,7 @@ export default () => (
                                             <TableTd colspan={1}>4593</TableTd>
                                             <TableTd colspan={1}>False</TableTd>
                                         </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
+                                        <TableRow className="k-master-row" alt>
                                             <TableTd className="k-table-group-td k-group-cell"></TableTd>
                                             <TableTd colspan={1}>Employee 5</TableTd>
                                             <TableTd className="k-grid-content-sticky" colspan={1} style={{ left: '0px', right: '0px' }}>
@@ -263,9 +262,6 @@ export default () => (
                                     </TableTbody>
                                 </GridTable>
                             </div>
-                        </div>
-                        <div className="k-height-container">
-                            <div></div>
                         </div>
                     </GridContent>
                 </GridContainer>

@@ -17,7 +17,7 @@ export const GridWithRowReordering = ({ contentClassName, ...other }: any) => (
                             </colgroup>
                             <TableThead>
                                 <TableRow>
-                                    <GridHeaderCell className="k-drag-cell"></GridHeaderCell>
+                                    <GridHeaderCell></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Product Id"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Unit Price"></GridHeaderCell>
                                     <GridHeaderCell columnTitle="Discontinued"></GridHeaderCell>
@@ -43,7 +43,7 @@ export const GridWithRowReordering = ({ contentClassName, ...other }: any) => (
                                     <TableTd>false</TableTd>
                                     <TableTd>Condiments</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
                                     <TableTd>Alice Mutton</TableTd>
                                     <TableTd>39</TableTd>
@@ -57,7 +57,7 @@ export const GridWithRowReordering = ({ contentClassName, ...other }: any) => (
                                     <TableTd>true</TableTd>
                                     <TableTd>Meat/Poultry</TableTd>
                                 </TableRow>
-                                <TableRow className="k-master-row k-alt" alt>
+                                <TableRow className="k-master-row" alt>
                                     <TableTd className="k-drag-cell"><Icon icon="reorder"/></TableTd>
                                     <TableTd>Gorgonzola Telino</TableTd>
                                     <TableTd>12.5</TableTd>
