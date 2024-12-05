@@ -170,25 +170,34 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
+                --INTERNAL--kendo-loader-canvas-width: var( --kendo-loader-sm-spinner-3-width, #{$kendo-loader-sm-spinner-3-width} );
+                --INTERNAL--kendo-loader-canvas-height: var( --kendo-loader-sm-spinner-3-height, #{$kendo-loader-sm-spinner-3-height} );
+                --INTERNAL--kendo-loader-canvas-size:  var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} );
                 margin: calc( var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} ) / 2 );
-                width: calc( var( --kendo-loader-sm-spinner-3-width, #{$kendo-loader-sm-spinner-3-width} ) - var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} ) );
-                height: calc( var( --kendo-loader-sm-spinner-3-height, #{$kendo-loader-sm-spinner-3-height} ) - var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} ) );
+                width: calc( var( --INTERNAL--kendo-loader-canvas-width ) - var( --INTERNAL--kendo-loader-canvas-size ) );
+                height: calc( var( --INTERNAL--kendo-loader-canvas-height ) - var( --INTERNAL--kendo-loader-canvas-size ) );
             }
         }
 
         &.k-loader-md {
             .k-loader-canvas {
+                --INTERNAL--kendo-loader-canvas-width: var( --kendo-loader-md-spinner-3-width, #{$kendo-loader-md-spinner-3-width} );
+                --INTERNAL--kendo-loader-canvas-height: var( --kendo-loader-md-spinner-3-height, #{$kendo-loader-md-spinner-3-height} );
+                --INTERNAL--kendo-loader-canvas-size:  var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} );
                 margin: calc( var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} ) / 2 );
-                width: calc( var( --kendo-loader-md-spinner-3-width, #{$kendo-loader-md-spinner-3-width} ) - var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} ) );
-                height: calc( var( --kendo-loader-md-spinner-3-height, #{$kendo-loader-md-spinner-3-height} ) - var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} ) );
+                width: calc( var( --INTERNAL--kendo-loader-canvas-width ) - var( --INTERNAL--kendo-loader-canvas-size ) );
+                height: calc( var( --INTERNAL--kendo-loader-canvas-height ) - var( --INTERNAL--kendo-loader-canvas-size ) );
             }
         }
 
         &.k-loader-lg {
             .k-loader-canvas {
+                --INTERNAL--kendo-loader-canvas-width: var( --kendo-loader-lg-spinner-3-width, #{$kendo-loader-lg-spinner-3-width} );
+                --INTERNAL--kendo-loader-canvas-height: var( --kendo-loader-lg-spinner-3-height, #{$kendo-loader-lg-spinner-3-height} );
+                --INTERNAL--kendo-loader-canvas-size:  var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} );
                 margin: calc( var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} ) / 2 );
-                width: calc( var( --kendo-loader-lg-spinner-3-width, #{$kendo-loader-lg-spinner-3-width} ) - var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} ) );
-                height: calc( var( --kendo-loader-lg-spinner-3-height, #{$kendo-loader-lg-spinner-3-height} ) - var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} ) );
+                width: calc( var( --INTERNAL--kendo-loader-canvas-width ) - var( --INTERNAL--kendo-loader-canvas-size ) );
+                height: calc( var( --INTERNAL--kendo-loader-canvas-height ) - var( --INTERNAL--kendo-loader-canvas-size ) );
             }
         }
     }

@@ -44,6 +44,3 @@ jobs:
         run: |
           npm run stylelint
 
-      - name: Ensure standalone build
-        run: |
-          npm run sass:standalone --prefix packages/${{ matrix.theme }} --if-present

@@ -16,7 +16,7 @@ To run it, execute `npm start` and navigate to <http://localhost:3000/>
 The following npm commands are available for building the themes:
 
 * To build all themes run `npm run sass`.
-* To build all swatches run `npm run sass:swatches`.
+* To build all swatches run `npm run sass:dist`.
 
 There are additional commands, which can be found in [`package.json`](package.json) and [`gulpfile.js`](gulpfile.js).
 

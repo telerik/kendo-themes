@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-form-spacer</td>
-    <td>Calculation</td>
-    <td><code>calc( #{k-spacing(2)} * 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the inline Form.</div></div>

@@ -7,12 +7,10 @@ const gulp = require("gulp");
 // Settings
 const paths = {
     sass: {
-        all: "packages/*/scss/**/*.scss",
-        assets: "packages/*/scss/**/*.{png,gif,ttf,woff}",
-        themes: "packages/!(html)",
+        themes: "packages/!(html|nouvelle)",
         theme: "scss/all.scss",
         swatches: "lib/swatches/*.json",
-        inline: "dist/all.scss",
+        standalone: "scss/**/_index.scss",
         dist: "dist"
     }
 };
@@ -26,11 +24,10 @@ function getArg(key, argsArr) {
 }
 
 // #region helpers
-function flattenAll( cwds, options ) {
-
+function copyFilesToDist( cwds, options ) {
     const fileContent =  `@forward "../scss/index.scss";\n@use "../scss/index.scss" as *;\n\n@include kendo-theme--styles();`
-
     const utilsFileContent = `@use "../scss/index.import.scss" as *;\n\n@include kendo-utils();`
+    const coreFileContent = `@use "../scss/index.scss" as *;\n\n@include core-styles();`
 
     cwds.forEach( cwd => {
         let file = path.resolve( cwd, options.file );
@@ -41,24 +38,15 @@ function flattenAll( cwds, options ) {
 
             if ( cwd.includes('utils') ) {
                 fs.writeFileSync(path.resolve( output.path, output.filename ), utilsFileContent);
-            } else {
+            } else if ( cwd.includes('core') ) {
+                fs.writeFileSync(path.resolve( output.path, output.filename ), coreFileContent);
+            }else {
                 fs.writeFileSync( path.resolve( output.path, output.filename), fileContent);
             }
 
         }
     });
 };
-
-function distAll() {
-    let file = paths.sass.theme;
-    let output = { path: paths.sass.dist };
-    let themes = globSync( paths.sass.themes );
-
-    flattenAll( themes, { file, output } );
-
-    return Promise.resolve();
-}
-gulp.task("dist:all", distAll);
 
 function writeSwatches( cwds, options ) {
 
@@ -167,16 +155,17 @@ function swatchJsonTransformer( json ) {
 }
 // #endregion
 
-
 // #region dist
-function distSwatches() {
-    let output = { path: getArg('--output-path') || paths.sass.dist };
+function sassDist() {
+    let file = paths.sass.theme;
+    let output = { path: paths.sass.dist };
     let themes = globSync( getArg('--theme') || paths.sass.themes );
     let swatches = paths.sass.swatches;
 
+    copyFilesToDist( themes, { file, output } );
     writeSwatches( themes, { swatches, output } );
 
     return Promise.resolve();
 }
-gulp.task("dist:swatches", distSwatches);
+gulp.task("sass:dist", sassDist);
 // #endregion
