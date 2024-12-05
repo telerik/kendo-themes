@@ -1,10 +1,11 @@
 @use "sass:meta";
+@use "sass:string";
 @use "../all.scss";
 
 $_vars: meta.module-variables("all");
 
 body {
     @each $key, $val in $_vars {
-        var: k-resolve-var( unquote($key), meta.type-of( $val ), $val ); // stylelint-disable-line
+        var: k-resolve-var( string.unquote($key), meta.type-of( $val ), $val ); // stylelint-disable-line
     }
 }
