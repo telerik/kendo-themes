@@ -42,7 +42,7 @@
     "sass:dist": "gulp dist:swatches --theme packages/material && npm run sass:compile:dist && npm run css:prefix",
     "sass:compile:all": "npx sass --no-source-map --load-path=../../node_modules ./scss/all.scss ./dist/all.css",
     "sass:compile:dist": "npx sass --style=compressed --no-source-map --load-path=../../node_modules ./dist:dist",
-    "sass:watch": "npx sass --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
+    "sass:watch": "npx sass --no-source-map --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
     "sass:standalone": "gulp sass:standalone --theme packages/material",
     "css:prefix": "npx postcss --replace ./dist/**/*.css",
     "docs": "node ../../scripts/sassdoc.js",
