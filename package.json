@@ -55,7 +55,6 @@
     "clean:tests": "node ./scripts/cleanup-test-results.js",
     "sass": "npm run sass -ws --if-present",
     "sass:dist": "npm run sass:dist -ws --if-present",
-    "sass:standalone": "npm run sass:standalone -ws --if-present",
     "build": "npm run sass && npm run build:scripts",
     "build:scripts": "npm run build --prefix packages/html",
     "build:tests": "npm run build:tests --prefix packages/html",
