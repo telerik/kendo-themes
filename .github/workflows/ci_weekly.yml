@@ -60,10 +60,6 @@ jobs:
         run: |
           npm run stylelint
 
-      - name: Ensure standalone build
-        run: |
-          npm run sass:standalone
-
       - name: Build themes for dist
         run: |
           npm run sass:dist

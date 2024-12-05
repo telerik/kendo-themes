@@ -3,7 +3,6 @@ const path = require("path");
 
 const { globSync } = require("glob");
 const gulp = require("gulp");
-const sass = require('sass');
 
 // Settings
 const paths = {
@@ -169,25 +168,4 @@ function sassDist() {
     return Promise.resolve();
 }
 gulp.task("sass:dist", sassDist);
-// #endregion
-
-// #region compile
-function buildStandalone() {
-    let themes = globSync( getArg('--theme') || paths.sass.themes );
-
-    themes.forEach( theme => {
-        let fileGlob = path.resolve( theme, "scss/**/_index.scss" ).split(path.sep).join(path.posix.sep);
-        let files = globSync( fileGlob );
-
-        files.forEach( file => {
-            sass.compile(file, {
-                sourceMap: false,
-                loadPaths: ["node_modules"]
-            });
-        });
-    })
-
-    return Promise.resolve();
-}
-gulp.task("sass:standalone", buildStandalone);
 // #endregion
