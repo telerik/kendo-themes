@@ -41,7 +41,7 @@ jobs:
 
       - name: Build swatch for a11y tests
         run: |
-          npx gulp dist:swatches --theme packages/default
+          npx gulp sass:dist --theme packages/default
           npx sass --load-path=node_modules/ packages/default/dist/default-ocean-blue-a11y.scss packages/default/dist/default-ocean-blue-a11y.css
 
       - name: Pack themes

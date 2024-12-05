@@ -157,7 +157,7 @@ function swatchJsonTransformer( json ) {
 // #endregion
 
 // #region dist
-function distSwatches() {
+function sassDist() {
     let file = paths.sass.theme;
     let output = { path: paths.sass.dist };
     let themes = globSync( getArg('--theme') || paths.sass.themes );
@@ -168,7 +168,7 @@ function distSwatches() {
 
     return Promise.resolve();
 }
-gulp.task("dist:swatches", distSwatches);
+gulp.task("sass:dist", sassDist);
 // #endregion
 
 // #region compile

@@ -30,7 +30,7 @@
   },
   "scripts": {
     "sass": "npm run sass:compile:all",
-    "sass:dist": "gulp dist:swatches --theme packages/core && npm run sass:compile:dist",
+    "sass:dist": "gulp sass:dist --theme packages/core && npm run sass:compile:dist",
     "sass:compile:all": "npx sass --no-source-map --load-path=../../node_modules ./scss/all.scss ./dist/all.css",
     "sass:compile:dist": "npx sass --style=compressed --no-source-map --load-path=../../node_modules ./dist:dist",
     "sass:watch": "npx sass --no-source-map --load-path=../../node_modules --watch ./scss/all.scss ./dist/all.css",
