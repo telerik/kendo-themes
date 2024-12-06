@@ -30,7 +30,8 @@
             );
             @include border-radius( 50% );
 
-            &:hover {
+            &:hover,
+            &.k-hover {
                 @include fill(
                     $kendo-slider-draghandle-hover-text,
                     $kendo-slider-draghandle-hover-bg,
@@ -39,7 +40,9 @@
                 );
             }
 
+            // TODO: remove k-pressed and rely on k-active
             &:active,
+            &.k-active,
             &.k-pressed {
                 @include fill(
                     $kendo-slider-draghandle-pressed-text,
