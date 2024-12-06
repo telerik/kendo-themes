@@ -9,6 +9,7 @@
 @use "../window/_index.scss" as *;
 @use "../splitter/_index.scss" as *;
 @use "../treelist/_index.scss" as *;
+@use "../time-marker/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";
@@ -27,6 +28,7 @@
         @include kendo-window--styles();
         @include kendo-splitter--styles();
         @include kendo-treelist--styles();
+        @include kendo-time-marker--styles();
         @include kendo-gantt--layout();
         @include kendo-gantt--theme();
         @include kendo-utils--typography--white-space();
