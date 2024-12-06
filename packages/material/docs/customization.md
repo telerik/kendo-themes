@@ -22522,8 +22522,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-hover-bg</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Slider drag handle.</div></div>
@@ -22542,8 +22542,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-hover-border</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Slider drag handle.</div></div>
@@ -22562,8 +22562,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-pressed-bg</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active Slider drag handle.</div></div>
@@ -22582,8 +22582,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-pressed-border</td>
     <td>String</td>
-    <td><code>unset</code></td>
-    <td><code>unset</code></td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the active Slider drag handle.</div></div>
