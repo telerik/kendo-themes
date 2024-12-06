@@ -10,6 +10,7 @@
             $kendo-input-bg,
             $kendo-input-border
         );
+        @include box-shadow( $kendo-input-shadow );
 
         // Hover
         &:hover,
