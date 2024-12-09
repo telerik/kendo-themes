@@ -74,6 +74,10 @@ $kendo-toolbar-gradient: null !default;
 /// The box shadow of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-shadow: null !default;
+/// The left and right scroll overlay of the Toolbar.
+/// @group toolbar
+$kendo-toolbar-scroll-overlay: $kendo-toolbar-bg, if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The text color of the outline Toolbar.
 /// @group toolbar
@@ -90,6 +94,10 @@ $kendo-toolbar-outline-shadow: null !default;
 /// The width of the border around the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-border-width: $kendo-toolbar-border-width !default;
+/// The left and right scroll overlay of the outline Toolbar.
+/// @group toolbar
+$kendo-toolbar-outline-scroll-overlay: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The text color of the flat Toolbar.
 /// @group toolbar
@@ -106,6 +114,10 @@ $kendo-toolbar-flat-shadow: null !default;
 /// Border width of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-border-width: 1px !default;
+/// The left and right scroll overlay of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-scroll-overlay: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The color of the separator border of the Toolbar.
 /// @group toolbar
