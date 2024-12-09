@@ -6,7 +6,8 @@
 
     @include kendo-toolbar--layout-base();
 
-    .k-toolbar {
+    .k-toolbar,
+    .k-toolbar-popup {
 
         // Button
         .k-button {
