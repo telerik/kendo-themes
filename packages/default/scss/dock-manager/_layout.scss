@@ -157,6 +157,10 @@
         z-index: 10;
     }
 
+    .k-dock-manager-window:has(.k-pane) .k-window-content {
+        padding: 0;
+    }
+
 }
 
 @mixin kendo-dock-navigator--layout() {
