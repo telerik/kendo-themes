@@ -39,6 +39,44 @@
             flex-wrap: nowrap;
         }
 
+        &.k-toolbar-scrollable {
+            flex-wrap: nowrap;
+            position: relative;
+
+            &::before {
+                content: '';
+                height: 100%;
+                width: 46px;
+                position: absolute;
+                inset-inline-start: 0;
+                z-index: 3;
+            }
+
+            &::after {
+                content: '';
+                height: 100%;
+                width: 46px;
+                position: absolute;
+                inset-inline-end: 0;
+                z-index: 3;
+            }
+
+            &.k-toolbar-scrollable-start::before {
+                display: none;
+            }
+
+            &.k-toolbar-scrollable-end::after {
+                display: none;
+            }
+        }
+
+        &.k-toolbar-scrollable-buttons {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+
         > * {
             flex-shrink: 0;
             display: inline-flex;
@@ -77,12 +115,6 @@
             width: min-content;
         }
 
-        // Overflow anchor
-        .k-toolbar-overflow-button {
-            margin-inline-start: auto;
-        }
-
-
         // Separator
         .k-separator,
         .k-toolbar-separator {
@@ -93,6 +125,10 @@
             align-self: center;
         }
 
+        // Overflow separator
+        .k-toolbar-overflow-separator {
+            margin-inline-start: auto;
+        }
 
         // Spacer
         .k-toolbar-spacer {
@@ -108,6 +144,30 @@
             outline: 0;
         }
     }
+
+    .k-toolbar-items {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: $kendo-toolbar-spacing;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+
+    .k-toolbar-scrollable .k-toolbar-items {
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .k-toolbar-popup .k-toolbar-items {
+        flex-wrap: wrap;
+    }
+
 
     // Outline Toolbar
     .k-toolbar-outline {
@@ -148,9 +208,23 @@
                 margin-inline-start: calc( #{$_spacing} * -1 );
             }
 
+            &.k-toolbar-scrollable::before {
+                inset-inline-start: $_spacing;
+            }
+
             > * > label {
                 margin-inline-end: $_spacing;
             }
+
+            .k-toolbar-items {
+                gap: $_spacing;
+            }
+        }
+
+        .k-toolbar-popup-#{$size} .k-toolbar-items {
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
+            gap: $_spacing;
         }
     }
     // Remove once we decide to not size empty containers
