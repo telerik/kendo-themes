@@ -1,13 +1,19 @@
 import { Button, TabStripItems, TabStripItemsWrapper } from '..';
-import { classNames } from '../misc';
+import { classNames, optionClassNames, Size } from '../misc';
 
 export const TABSTRIP_CLASSNAME = `k-tabstrip`;
 
 const states = [];
 
-const options = {};
+const options = {
+    size: [ Size.small, Size.medium, Size.large ]
+};
 
-export type KendoTabStripProps = {
+export type KendoTabStripOptions = {
+    size?: (typeof options.size)[number] | null;
+};
+
+export type KendoTabStripProps = KendoTabStripOptions & {
     position?: "top" | "bottom" | "left" | "right";
     tabAlignment?: "start" | "center" | "end" | "justify" | "stretched";
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
@@ -17,6 +23,7 @@ export type KendoTabStripProps = {
 };
 
 const defaultOptions = {
+    size: Size.medium,
     position: "top",
     tabAlignment: "start",
     scrollButtonsPosition: "around",
@@ -27,6 +34,7 @@ export const TabStrip = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        size = defaultOptions.size,
         scrollable,
         children,
         tabStripItems,
@@ -70,6 +78,7 @@ export const TabStrip = (
                     [`${TABSTRIP_CLASSNAME}-${position}`]: position,
                     [`${TABSTRIP_CLASSNAME}-scrollable`]: scrollable,
                 },
+                optionClassNames(TABSTRIP_CLASSNAME, {size})
             )}>
             {position === "bottom" && children}
             <TabStripItemsWrapper orientation={orientationMap[position]}>
