@@ -19,7 +19,7 @@ export default () => (
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <TabStripNormal scrollable scrollButtonsPosition="end">
+                <TabStripNormal scrollable scrollButtons="end">
                     <TabStripContent active>
                         <div>Top scrollable</div>
                     </TabStripContent>
@@ -27,7 +27,7 @@ export default () => (
             </section>
 
             <section>
-                <TabStripBottom scrollable scrollButtonsPosition="end">
+                <TabStripBottom scrollable scrollButtons="end">
                     <TabStripContent active>
                         <div>Bottom scrollable</div>
                     </TabStripContent>
@@ -35,7 +35,7 @@ export default () => (
             </section>
 
             <section>
-                <TabStripLeft scrollable scrollButtonsPosition="end">
+                <TabStripLeft scrollable scrollButtons="end">
                     <TabStripContent active>
                         <div>Left scrollable</div>
                     </TabStripContent>
@@ -43,7 +43,7 @@ export default () => (
             </section>
 
             <section>
-                <TabStripRight scrollable scrollButtonsPosition="end">
+                <TabStripRight scrollable scrollButtons="end">
                     <TabStripContent active>
                         <div>Right scrollable</div>
                     </TabStripContent>
