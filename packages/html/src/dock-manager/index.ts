@@ -6,3 +6,6 @@ export * from './dock-navigator';
 export * from './pane-scrollable';
 export * from './templates/dock-manager-normal';
 export * from './templates/dock-manager-unpinned-pane';
+export * from './templates/dock-manager-floating-pane';
+export * from './templates/dock-manager-floating-pane-with-tabstrip';
+export * from './templates/dock-manager-floating-pane-with-splitter';
