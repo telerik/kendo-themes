@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../core/_index.scss" as *;
+@use "../button/_variables.scss" as *;
 
 /// The horizontal padding of the small Toolbar.
 /// @group toolbar
@@ -31,6 +32,16 @@ $kendo-toolbar-md-spacing: k-spacing(2) !default;
 /// @group toolbar
 $kendo-toolbar-lg-spacing: k-spacing(2) !default;
 
+/// The height of the small Toolbar button separator.
+/// @group toolbar
+$kendo-toolbar-sm-separator-height: $kendo-button-sm-calc-size !default;
+/// The height of the medium Toolbar button separator.
+/// @group toolbar
+$kendo-toolbar-md-separator-height: $kendo-button-md-calc-size !default;
+/// The height of the large Toolbar button separator.
+/// @group toolbar
+$kendo-toolbar-lg-separator-height: $kendo-button-lg-calc-size !default;
+
 /// The width of the border around the Toolbar.
 /// @group toolbar
 $kendo-toolbar-border-width: 1px !default;
@@ -54,6 +65,10 @@ $kendo-toolbar-text: var( --kendo-component-text, inherit ) !default;
 /// The color of the border around the Toolbar.
 /// @group toolbar
 $kendo-toolbar-border: var( --kendo-component-border, initial ) !default;
+/// The left and right scroll overlay of the Toolbar.
+/// @group toolbar
+$kendo-toolbar-scroll-overlay: $kendo-toolbar-bg, if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The text color of the outline Toolbar.
 /// @group toolbar
@@ -64,6 +79,10 @@ $kendo-toolbar-outline-border: k-color(border) !default;
 /// The width of the border around the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-border-width: $kendo-toolbar-border-width !default;
+/// The left and right scroll overlay of the outline Toolbar.
+/// @group toolbar
+$kendo-toolbar-outline-scroll-overlay: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The text color of the flat Toolbar.
 /// @group toolbar
@@ -74,6 +93,10 @@ $kendo-toolbar-flat-border: $kendo-toolbar-border !default;
 /// Border width of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-border-width: 1px !default;
+/// The left and right scroll overlay of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-scroll-overlay: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The color of the separator border of the Toolbar.
 /// @group toolbar
@@ -99,16 +122,19 @@ $kendo-toolbar-sizes: (
     sm: (
         padding-x: $kendo-toolbar-sm-padding-x,
         padding-y: $kendo-toolbar-sm-padding-y,
-        spacing: $kendo-toolbar-sm-spacing
+        spacing: $kendo-toolbar-sm-spacing,
+        separator-height: $kendo-toolbar-sm-separator-height
     ),
     md: (
         padding-x: $kendo-toolbar-md-padding-x,
         padding-y: $kendo-toolbar-md-padding-y,
-        spacing: $kendo-toolbar-md-spacing
+        spacing: $kendo-toolbar-md-spacing,
+        separator-height: $kendo-toolbar-md-separator-height
     ),
     lg: (
         padding-x: $kendo-toolbar-lg-padding-x,
         padding-y: $kendo-toolbar-lg-padding-y,
-        spacing: $kendo-toolbar-lg-spacing
+        spacing: $kendo-toolbar-lg-spacing,
+        separator-height: $kendo-toolbar-lg-separator-height
     )
 ) !default;

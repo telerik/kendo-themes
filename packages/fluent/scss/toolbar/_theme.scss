@@ -5,11 +5,6 @@
 
     // Theme
     .k-toolbar {
-        // Separator
-        .k-separator,
-        .k-toolbar-separator {
-            border-color: var( --kendo-toolbar-separator-border, #{$kendo-toolbar-separator-border} );
-        }
 
         // Template item
         .k-toolbar-item:focus,
@@ -19,6 +14,16 @@
 
     }
 
+    // Separator
+    .k-toolbar .k-separator,
+    .k-toolbar-separator {
+        border-color: var( --kendo-toolbar-separator-border, #{$kendo-toolbar-separator-border} );
+    }
+
+    .k-toolbar-items {
+        border-color: inherit;
+    }
+
     // Solid Toolbar
     .k-toolbar-solid {
         @include fill (
@@ -26,6 +31,20 @@
             var( --kendo-toolbar-bg, #{$kendo-toolbar-bg} ),
             var( --kendo-toolbar-border, #{$kendo-toolbar-border} )
         );
+
+        &.k-toolbar-scrollable-overlay {
+            &::before {
+                background: linear-gradient(90deg, var( --kendo-toolbar-scroll-overlay, #{$kendo-toolbar-scroll-overlay} ));
+            }
+
+            &::after {
+                background: linear-gradient(270deg, var( --kendo-toolbar-scroll-overlay, #{$kendo-toolbar-scroll-overlay} ));
+            }
+        }
+    }
+
+    .k-toolbar-items-list-solid {
+        border-color:  var( --kendo-toolbar-border, #{$kendo-toolbar-border} );
     }
 
     // Outline Toolbar
@@ -34,6 +53,20 @@
             $color: var( --kendo-toolbar-outline-text, #{$kendo-toolbar-outline-text} ),
             $border: var( --kendo-toolbar-outline-border, #{$kendo-toolbar-outline-border} )
         );
+
+        &.k-toolbar-scrollable-overlay {
+            &::before {
+                background: linear-gradient(90deg, var( --kendo-toolbar-outline-scroll-overlay, #{$kendo-toolbar-outline-scroll-overlay} ));
+            }
+
+            &::after {
+                background: linear-gradient(270deg, var( --kendo-toolbar-outline-scroll-overlay, #{$kendo-toolbar-outline-scroll-overlay} ));
+            }
+        }
+    }
+
+    .k-toolbar-items-list-outline {
+        border-color:  var( --kendo-toolbar-outline-border, #{$kendo-toolbar-outline-border} );
     }
 
     // Flat Toolbar
@@ -43,9 +76,24 @@
             $border: var( --kendo-toolbar-flat-border, #{$kendo-toolbar-flat-border} )
         );
 
-        > .k-separator {
+        > .k-separator,
+        .k-toolbar-separator {
             border-inline-color: var( --kendo-toolbar-flat-border, #{$kendo-toolbar-flat-border} );
         }
+
+        &.k-toolbar-scrollable-overlay {
+            &::before {
+                background: linear-gradient(90deg, var( --kendo-toolbar-flat-scroll-overlay, #{$kendo-toolbar-flat-scroll-overlay} ));
+            }
+
+            &::after {
+                background: linear-gradient(270deg, var( --kendo-toolbar-flat-scroll-overlay, #{$kendo-toolbar-flat-scroll-overlay} ));
+            }
+        }
+    }
+
+    .k-toolbar-items-list-flat {
+        border-color:  var( --kendo-toolbar-flat-border, #{$kendo-toolbar-flat-border} );
     }
 
     // stylelint-disable selector-class-pattern
@@ -95,7 +143,40 @@
                 color: inherit;
             }
         }
+    }
 
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        .k-toolbar-scrollable-overlay {
+            &::before {
+                background: linear-gradient(270deg, var( --kendo-toolbar-scroll-overlay, #{$kendo-toolbar-scroll-overlay} ));
+            }
+
+            &::after {
+                background: linear-gradient(90deg, var( --kendo-toolbar-scroll-overlay, #{$kendo-toolbar-scroll-overlay} ));
+            }
+
+            &.k-toolbar-outline {
+                &::before {
+                    background: linear-gradient(270deg, var( --kendo-toolbar-outline-scroll-overlay, #{$kendo-toolbar-outline-scroll-overlay} ));
+                }
+
+                &::after {
+                    background: linear-gradient(90deg, var( --kendo-toolbar-outline-scroll-overlay, #{$kendo-toolbar-outline-scroll-overlay} ));
+                }
+            }
+
+            &.k-toolbar-flat {
+                &::before {
+                    background: linear-gradient(270deg, var( --kendo-toolbar-flat-scroll-overlay, #{$kendo-toolbar-flat-scroll-overlay} ));
+                }
+
+                &::after {
+                    background: linear-gradient(90deg, var( --kendo-toolbar-flat-scroll-overlay, #{$kendo-toolbar-flat-scroll-overlay} ));
+                }
+            }
+        }
     }
 
 }
