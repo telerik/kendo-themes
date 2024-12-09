@@ -34,6 +34,16 @@
             $kendo-toolbar-gradient
         );
         @include box-shadow( $kendo-toolbar-shadow );
+
+        &.k-toolbar-scrollable {
+            &::before {
+                background: linear-gradient(90deg, $kendo-toolbar-bg, rgba(255, 255, 255, 0));
+            }
+
+            &::after {
+                background: linear-gradient(270deg, $kendo-toolbar-bg, rgba(255, 255, 255, 0));
+            }
+        }
     }
 
     // Outline Toolbar
@@ -55,6 +65,19 @@
 
         > .k-separator {
             border-inline-color: $kendo-toolbar-flat-border;
+        }
+    }
+
+    .k-toolbar-outline,
+    .k-toolbar-flat {
+        &.k-toolbar-scrollable {
+            &::before {
+                background: linear-gradient(90deg, $kendo-toolbar-bg, rgba(255, 255, 255, 0));
+            }
+
+            &::after {
+                background: linear-gradient(270deg, $kendo-toolbar-bg, rgba(255, 255, 255, 0));
+            }
         }
     }
 
