@@ -154,6 +154,10 @@
         border-radius: var( --kendo-dock-manager-dock-preview-border-radius, #{$kendo-dock-manager-dock-preview-border-radius} );
     }
 
+    .k-dock-manager-window:has(.k-pane) .k-window-content {
+        padding: 0;
+    }
+
 }
 
 @mixin  kendo-dock-indicator--layout() {
