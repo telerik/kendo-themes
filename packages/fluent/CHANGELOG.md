@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.3...v10.1.0-dev.4) (2024-12-09)
+
+
+### Bug Fixes
+
+* add missing time-marker dependency ([40b704c](https://github.com/telerik/kendo-themes/commit/40b704c8ae5faf0fc23d74255852f3a313f6b58a))
+* **fluent:** replace k-alt with k-table-alt-row ([9c721bc](https://github.com/telerik/kendo-themes/commit/9c721bc79a09a108931c6876e2cc30c26cd819b7))
+* **gantt:** tasks resizing indicators should point both left and right ([a969ece](https://github.com/telerik/kendo-themes/commit/a969eceac23a0d720c975d1306ca0d5ac806057a))
+* **html:** remove angular specific styles and specs from toolbar ([99bd6a9](https://github.com/telerik/kendo-themes/commit/99bd6a90b8f97e5263d7523bd2216a2f74f1bea0))
+* **html:** remove k-tab-on-top class from tabstrip ([97b8fbe](https://github.com/telerik/kendo-themes/commit/97b8fbee00f7c6ea394cbb2868b00b4013fa9dd1))
+* **imageeditor:** widen the action pane to fit action buttons with icons ([1d8800d](https://github.com/telerik/kendo-themes/commit/1d8800d2871fd4654ab7a15d45bdf04e70a6fdfc))
+* **splitter:** add touch-action: none style to splitbar ([ec493ac](https://github.com/telerik/kendo-themes/commit/ec493ac93e9b232a2761fd9eb9dff78c0a7511dc))
+
+
+
+
+
 # [10.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.2...v10.1.0-dev.3) (2024-12-02)
 
 

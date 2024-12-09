@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.3...v10.1.0-dev.4) (2024-12-09)
+
+
+### Bug Fixes
+
+* add missing time-marker dependency ([40b704c](https://github.com/telerik/kendo-themes/commit/40b704c8ae5faf0fc23d74255852f3a313f6b58a))
+
+
+
+
+
 # [10.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.2...v10.1.0-dev.3) (2024-12-02)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic
