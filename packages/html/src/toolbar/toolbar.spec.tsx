@@ -6,6 +6,7 @@ import { DropdownList } from '../dropdownlist';
 import { MenuButton } from '../menu-button';
 import SplitButton from '../split-button/split-button.spec';
 import { classNames, optionClassNames, stateClassNames, States, Size, FillMode } from '../misc';
+import { ToolbarSeparator } from './toolbar-separator';
 
 export const TOOLBAR_CLASSNAME = `k-toolbar`;
 
@@ -25,6 +26,10 @@ export type KendoToolbarOptions = {
 
 export type KendoToolbarProps = KendoToolbarOptions & {
     resizable?: boolean;
+    scrollable?: boolean;
+    scrollButtons?: 'hidden' | 'start' | 'end' | 'around';
+    scrollingPosition?: 'start' | 'end';
+    section?: boolean;
 };
 
 export type KendoToolbarState = { [K in (typeof states)[number]]?: boolean };
@@ -44,6 +49,10 @@ export const Toolbar = (
         fillMode = defaultOptions.fillMode,
         focus,
         resizable,
+        scrollable,
+        scrollButtons,
+        scrollingPosition,
+        section,
         ...other
     } = props;
 
@@ -179,10 +188,51 @@ export const Toolbar = (
                 }),
                 {
                     [`${TOOLBAR_CLASSNAME}-resizable`]: resizable,
+                    [`${TOOLBAR_CLASSNAME}-scrollable`]: scrollable,
+                    [`${TOOLBAR_CLASSNAME}-scrollable-overlay`]: (scrollable && (scrollButtons === 'hidden' || !scrollButtons)),
+                    [`${TOOLBAR_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition,
+                    [`${TOOLBAR_CLASSNAME}-section`]: section,
                 }
             )}
         >
-            {toolbarChildren}
+            {!scrollable && toolbarChildren}
+
+            {scrollable && (scrollButtons === 'hidden' || !scrollButtons) &&
+               <span className='k-toolbar-items k-toolbar-items-scroll'>{toolbarChildren}</span>
+            }
+
+            {scrollable && scrollButtons === 'start' &&
+                <>
+                    <ButtonGroup>
+                        <Button fillMode={fillMode} size={size} icon="caret-alt-left" className="k-toolbar-prev"></Button>
+                        <Button fillMode={fillMode} size={size} icon="caret-alt-right" className="k-toolbar-next"></Button>
+                    </ButtonGroup>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
+                    <div className="k-toolbar-items k-toolbar-items-scroll">{toolbarChildren}</div>
+                </>
+            }
+
+            {scrollable && scrollButtons === 'end' &&
+                <>
+                    <div className="k-toolbar-items k-toolbar-items-scroll">{toolbarChildren}</div>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
+                    <ButtonGroup>
+                        <Button fillMode={fillMode} size={size} icon="caret-alt-left" className="k-toolbar-prev"></Button>
+                        <Button fillMode={fillMode} size={size} icon="caret-alt-right" className="k-toolbar-next"></Button>
+                    </ButtonGroup>
+                </>
+            }
+
+            {scrollable && scrollButtons === 'around' &&
+                <>
+                    <Button fillMode={fillMode} size={size} icon="caret-alt-left" className="k-toolbar-prev"></Button>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
+                    <div className="k-toolbar-items k-toolbar-items-scroll">{toolbarChildren}</div>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
+                    <Button fillMode={fillMode} size={size} icon="caret-alt-right" className="k-toolbar-next"></Button>
+                </>
+            }
+
         </div>
     );
 };

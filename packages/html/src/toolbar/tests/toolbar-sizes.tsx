@@ -30,6 +30,7 @@ export default () =>(
                                 <ColorPicker size={size} />
                             </ToolbarItem>
                             <Switch size={size} checked />
+                            <ToolbarSeparator className="k-toolbar-button-separator" />
                             <Button size={size} icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                         </ToolbarResizable>
                     </section>

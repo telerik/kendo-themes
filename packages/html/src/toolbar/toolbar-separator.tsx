@@ -1,7 +1,7 @@
 import { classNames } from '../misc';
 
-const className = `k-separator`;
+const className = `k-toolbar-separator`;
 
 export const ToolbarSeparator = (props: React.HTMLAttributes<HTMLSpanElement>) => (
-    <div className={classNames(className, props.className)}></div>
+    <div className={classNames(className, props.className, 'k-separator')}></div>
 );
