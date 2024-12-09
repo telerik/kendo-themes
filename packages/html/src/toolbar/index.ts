@@ -4,3 +4,5 @@ export * from './toolbar-item.spec';
 export * from './toolbar-popup.spec';
 export * from './templates/toolbar-normal';
 export * from './templates/toolbar-resizable';
+export * from './templates/toolbar-scrollable';
+export * from './templates/toolbar-section';
