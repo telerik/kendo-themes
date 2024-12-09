@@ -2,7 +2,7 @@ import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { ActionSheet, ActionSheetHeader } from '../../action-sheet';
 import { MenuItem, MenuSeparator, MenuList } from '../../menu';
-import { ToolbarResizable } from '..';
+import { ToolbarResizable, ToolbarSeparator } from '..';
 
 const styles = `
     #test-area {
@@ -32,6 +32,7 @@ export default () =>(
                         <Button size="large" icon="align-center">Center</Button>
                         <Button className="k-group-end" size="large" icon="align-right">Right</Button>
                     </ButtonGroup>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
                     <Button size="large" icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </ToolbarResizable>
                 <ActionSheet adaptive={true} overlay={false}>
