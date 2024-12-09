@@ -31,6 +31,7 @@ export default () =>(
                         <ColorPicker />
                     </ToolbarItem>
                     <Switch checked />
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </ToolbarResizable>
             </section>
@@ -55,6 +56,7 @@ export default () =>(
                         <ColorPicker />
                     </ToolbarItem>
                     <Switch checked />
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </ToolbarResizable>
             </section>
@@ -76,6 +78,7 @@ export default () =>(
                     <Button icon="bold" active></Button>
                     <Button icon="bold" selected></Button>
                     <Button icon="bold" disabled></Button>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} hover></Button>
                 </ToolbarResizable>
             </section>
@@ -87,6 +90,7 @@ export default () =>(
                     <Button icon="align-left" active>Active</Button>
                     <Button icon="align-left" selected>Selected</Button>
                     <Button icon="align-left" disabled>Disabled</Button>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} focus></Button>
                 </ToolbarResizable>
             </section>
@@ -98,6 +102,7 @@ export default () =>(
                     <Button themeColor="primary" icon="align-left" active>Active</Button>
                     <Button themeColor="primary" icon="align-left" selected>Selected</Button>
                     <Button themeColor="primary" icon="align-left" disabled>Disabled</Button>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} active></Button>
                 </ToolbarResizable>
             </section>
@@ -112,6 +117,7 @@ export default () =>(
                         <Button className="k-group-start" icon="align-left" disabled focus>Button 1</Button>
                         <Button className="k-group-end" icon="align-center" disabled>Button 2</Button>
                     </ButtonGroup>
+                    <ToolbarSeparator className="k-toolbar-button-separator" />
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} disabled focus></Button>
                 </ToolbarResizable>
             </section>
