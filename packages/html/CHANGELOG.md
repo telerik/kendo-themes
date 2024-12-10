@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.3...v10.1.0-dev.4) (2024-12-09)
+
+
+### Bug Fixes
+
+* **html:** add checkbox checked template ([dfcaf0c](https://github.com/telerik/kendo-themes/commit/dfcaf0cef91e19701e7e0aaee6e7deffe4d9173e))
+* **html:** add chip label to Grid chips ([c9de930](https://github.com/telerik/kendo-themes/commit/c9de9308257c4f1fb3b44e1fe112ecc7fa16860e))
+* **html:** add icons to ImageEditor action pane buttons ([d6e7c9d](https://github.com/telerik/kendo-themes/commit/d6e7c9d571a594102b22475e3155376aa707c6a8))
+* **html:** add k-filterable class to header cell with column menu in Grid ([c9ef117](https://github.com/telerik/kendo-themes/commit/c9ef11732f3a551e00f877d2434c6727852c0f69))
+* **html:** add k-grid-aria-root to Treelist in Gantt ([e09d493](https://github.com/telerik/kendo-themes/commit/e09d493ce8c0cf17f9a47866b38bf6ee1e426152))
+* **html:** add k-grid-draggable-header to Grid groupable header ([342b7f0](https://github.com/telerik/kendo-themes/commit/342b7f0f3f997823d0ce8b17956bacd312893269))
+* **html:** add k-sr-only span inside empty Pivotgrid cell ([c57509f](https://github.com/telerik/kendo-themes/commit/c57509fcbdf0c0dcfa85167fa825e02d566f1acd))
+* **html:** add k-tabstrip-item class to tabstrip item element ([40d95f3](https://github.com/telerik/kendo-themes/commit/40d95f3a7acfca6634c071a818e64da875017889))
+* **html:** add toolbar-button class to toolbar buttons in AI prompt ([58f3cea](https://github.com/telerik/kendo-themes/commit/58f3cea6edc2d39d9bf2fed5ef22ec5071227a49))
+* **html:** fix alt row in Grid grouping template ([a7da1fd](https://github.com/telerik/kendo-themes/commit/a7da1fd45b6f92fc6f481224d7cf334a6b79df4b))
+* **html:** move Grid selection aggregates outside of aria-root ([848b733](https://github.com/telerik/kendo-themes/commit/848b73316eac22334c710ae1dc2e033638c89011))
+* **html:** move on/off Switch label to templates ([86f6d15](https://github.com/telerik/kendo-themes/commit/86f6d1556ec3711bbc5df295089aaf781ab43be4))
+* **html:** remove angular specific styles and specs from toolbar ([99bd6a9](https://github.com/telerik/kendo-themes/commit/99bd6a90b8f97e5263d7523bd2216a2f74f1bea0))
+* **html:** remove Grid grouping drop clue from templates ([d1edb3b](https://github.com/telerik/kendo-themes/commit/d1edb3bc6c6f7603de3bf4d95cf5eea360d62708))
+* **html:** remove k-alt from Grid row ([5981f19](https://github.com/telerik/kendo-themes/commit/5981f19c48d045311d658a1727aca8815697ee36))
+* **html:** remove k-drag-cell from header empty cell in Grid, Treelist and Gantt ([a974de9](https://github.com/telerik/kendo-themes/commit/a974de96cb31beb4fbb94d9ccd75658db8c69d6d))
+* **html:** remove k-editable class from Grid and Filemanager ([34f133f](https://github.com/telerik/kendo-themes/commit/34f133f4da429cc87c9f1c0eddfc3494b8a868c0))
+* **html:** remove k-header class from tabstrip ([9642807](https://github.com/telerik/kendo-themes/commit/96428076b2f93fca13d201b2e16af7c031d0b687))
+* **html:** remove k-height-container from Grid ([c85350d](https://github.com/telerik/kendo-themes/commit/c85350d6dd5cb6470c4349c10767bebd3f30e9f4))
+* **html:** remove k-selectable class from Gantt ([4b88313](https://github.com/telerik/kendo-themes/commit/4b88313b0f6cf6ae3f8bb985b34c4eb198ad81d9))
+* **html:** remove k-tab-on-top class from tabstrip ([97b8fbe](https://github.com/telerik/kendo-themes/commit/97b8fbee00f7c6ea394cbb2868b00b4013fa9dd1))
+* **html:** remove k-treelist-group class from Treelist ([a1eccf1](https://github.com/telerik/kendo-themes/commit/a1eccf10250e52fb3e0315221e0fb7a6c59f1dfa))
+* **html:** remove k-virtual-content from Grid ([84cf6ce](https://github.com/telerik/kendo-themes/commit/84cf6cea5401f0b4c038b1d56dfc7ad2bff204e6))
+* **html:** removed k-touch-action-auto from Grid cells ([c0990f4](https://github.com/telerik/kendo-themes/commit/c0990f46f9cf672ddb5fb3d02be6c4e7807e6d69))
+* **html:** update DateTimePicker container class and adaptive buttons classes ([186ef38](https://github.com/telerik/kendo-themes/commit/186ef38a1239871effffe7e3eff35dde08dd1ad3))
+* **html:** update hidden class in expansion panel ([631ca6a](https://github.com/telerik/kendo-themes/commit/631ca6a2b82d8a4d8c1322b563a30d886de2c698))
+* **html:** update ImageEditor action pane checkbox label ([fc71db8](https://github.com/telerik/kendo-themes/commit/fc71db8073b42b6dc83ed686f24383ff6c5a6ec0))
+
+
+
+
+
 # [10.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.2...v10.1.0-dev.3) (2024-12-02)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

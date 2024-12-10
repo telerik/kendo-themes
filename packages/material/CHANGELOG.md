@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.3...v10.1.0-dev.4) (2024-12-09)
+
+
+### Bug Fixes
+
+* add missing time-marker dependency ([40b704c](https://github.com/telerik/kendo-themes/commit/40b704c8ae5faf0fc23d74255852f3a313f6b58a))
+* **imageeditor:** widen the action pane to fit action buttons with icons ([1d8800d](https://github.com/telerik/kendo-themes/commit/1d8800d2871fd4654ab7a15d45bdf04e70a6fdfc))
+* **slider:** incorrect draghandle states ([1081b23](https://github.com/telerik/kendo-themes/commit/1081b23a519a9af0144c0f6755932af29f35eb06))
+
+
+
+
+
 # [10.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.2...v10.1.0-dev.3) (2024-12-02)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
