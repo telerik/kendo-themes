@@ -34,6 +34,26 @@ $kendo-tabstrip-line-height: var( --kendo-line-height, normal ) !default;
 /// The border width around the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-border-width: 0px !default;
+
+/// The font size of the small TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-sm-font-size: $kendo-tabstrip-font-size !default;
+/// The line height of the small TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-sm-line-height: $kendo-tabstrip-line-height !default;
+/// The font size of the medium TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-md-font-size: $kendo-tabstrip-font-size !default;
+/// The line height of the medium TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-md-line-height: $kendo-tabstrip-line-height !default;
+/// The font size of the large TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-lg-font-size: $kendo-tabstrip-font-size !default;
+/// The line height of the large TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-lg-line-height: $kendo-tabstrip-line-height !default;
+
 /// The background color of the TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-bg: transparent !default;
@@ -49,7 +69,7 @@ $kendo-tabstrip-border: transparent !default;
 $kendo-tabstrip-item-padding-x: k-spacing(2) !default;
 /// The vertical padding of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-padding-y: calc( #{k-spacing(2)} + #{k-spacing(1)} ) !default;
+$kendo-tabstrip-item-padding-y: k-spacing(3) !default;
 /// The border width around the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border-width: 0px !default;
@@ -59,6 +79,26 @@ $kendo-tabstrip-item-border-radius: k-border-radius(md) !default;
 /// The gap between the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-gap: k-spacing(2) !default;
+
+/// The horizontal padding of the small TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-sm-item-padding-x: k-spacing(2) !default;
+/// The vertical padding of the small TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-sm-item-padding-y: k-spacing(2.5) !default;
+/// The horizontal padding of the medium TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-md-item-padding-x: $kendo-tabstrip-item-padding-x !default;
+/// The vertical padding of the medium TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-md-item-padding-y: $kendo-tabstrip-item-padding-y !default;
+/// The horizontal padding of the large TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-lg-item-padding-x: k-spacing(2) !default;
+/// The vertical padding of the large TabStrip items.
+/// @group tabstrip
+$kendo-tabstrip-lg-item-padding-y: k-spacing(3.5) !default;
+
 ///  The background color of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-bg: transparent !default;
@@ -149,3 +189,30 @@ $kendo-tabstrip-scrollable-button-padding-x: k-spacing(1) !default;
 // The vertical button padding of the scrollable TabStrip.
 /// @group tabstrip
 $kendo-tabstrip-scrollable-button-padding-y: k-spacing(1) !default;
+
+/// The left and right scroll overlay of the TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-scroll-overlay: if($kendo-enable-color-system, k-color( app-surface ), rgba( $kendo-color-white, 0)), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
+/// The size map of the TabStrip.
+/// @group tabstrip
+$kendo-tabstrip-sizes: (
+    sm: (
+        font-size: $kendo-tabstrip-sm-font-size,
+        line-height: $kendo-tabstrip-sm-line-height,
+        item-padding-x: $kendo-tabstrip-sm-item-padding-x,
+        item-padding-y: $kendo-tabstrip-sm-item-padding-y
+    ),
+    md: (
+        font-size: $kendo-tabstrip-md-font-size,
+        line-height: $kendo-tabstrip-md-line-height,
+        item-padding-x: $kendo-tabstrip-md-item-padding-x,
+        item-padding-y: $kendo-tabstrip-md-item-padding-y
+    ),
+    lg: (
+        font-size: $kendo-tabstrip-lg-font-size,
+        line-height: $kendo-tabstrip-lg-line-height,
+        item-padding-x: $kendo-tabstrip-lg-item-padding-x,
+        item-padding-y: $kendo-tabstrip-lg-item-padding-y
+    )
+) !default;
