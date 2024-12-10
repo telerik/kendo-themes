@@ -25,6 +25,10 @@
 
     }
 
+    .k-toolbar-items {
+        border-color: inherit;
+    }
+
     // Solid Toolbar
     .k-toolbar-solid {
         @include fill(
@@ -34,6 +38,16 @@
             $kendo-toolbar-gradient
         );
         @include box-shadow( $kendo-toolbar-shadow );
+
+        &.k-toolbar-scrollable {
+            &::before {
+                background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
+            }
+        }
     }
 
     // Outline Toolbar
@@ -43,6 +57,16 @@
             $border: $kendo-toolbar-outline-border
         );
         @include box-shadow( $kendo-toolbar-outline-shadow );
+
+        &.k-toolbar-scrollable {
+            &::before {
+                background: linear-gradient(90deg, $kendo-toolbar-outline-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(270deg, $kendo-toolbar-outline-scroll-overlay);
+            }
+        }
     }
 
     // Flat Toolbar
@@ -53,8 +77,20 @@
         );
         @include box-shadow( $kendo-toolbar-flat-shadow );
 
-        > .k-separator {
+
+        > .k-separator,
+        .k-toolbar-separator {
             border-inline-color: $kendo-toolbar-flat-border;
+        }
+
+        &.k-toolbar-scrollable {
+            &::before {
+                background: linear-gradient(90deg, $kendo-toolbar-flat-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(270deg, $kendo-toolbar-flat-scroll-overlay);
+            }
         }
     }
 

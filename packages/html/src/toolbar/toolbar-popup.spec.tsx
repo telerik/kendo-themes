@@ -1,19 +1,33 @@
-import { classNames } from '../misc';
+import { classNames, optionClassNames, Size } from '../misc';
 import { Popup } from '../popup';
 
 export const TOOLBARPOPUP_CLASSNAME = `k-toolbar-popup`;
 
 const states = [];
 
-const options = {};
+const options = {
+    size: [Size.small, Size.medium, Size.large],
+};
 
-const defaultOptions = {};
+export type KendoToolbarPopupProps = {
+    size?: (typeof options.size)[number] | null;
+    section?: boolean;
+};
+
+const defaultOptions = {
+    size: Size.medium,
+};
 
 export const ToolbarPopup = (
-    props: React.HTMLAttributes<HTMLElement>
+    props: KendoToolbarPopupProps &
+    React.HTMLAttributes<HTMLElement>
 ) => {
 
-    const { ...other } = props;
+    const {
+        size=defaultOptions.size,
+        section,
+        ...other
+    } = props;
 
     return (
         <Popup
@@ -21,8 +35,15 @@ export const ToolbarPopup = (
             className={classNames(
                 props.className,
                 TOOLBARPOPUP_CLASSNAME,
+                optionClassNames(TOOLBARPOPUP_CLASSNAME, {
+                    size
+                })
             )}>
-            {props.children}
+             {section
+                ? <span className='k-toolbar-items'>{props.children}</span>
+                : props.children
+            }
+
         </Popup>
     );
 };
