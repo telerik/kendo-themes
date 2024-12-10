@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
@@ -373,6 +374,23 @@
             > .k-tabstrip-content { order: 0; }
         }
 
+    }
+
+     // TabStrip sizes
+     @each $size, $size-props in $kendo-tabstrip-sizes {
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_item-padding-x: map.get( $size-props, item-padding-x );
+        $_item-padding-y: map.get( $size-props, item-padding-y );
+
+        .k-tabstrip-#{$size} {
+            .k-tabstrip-items .k-link {
+                font-size: $_font-size;
+                line-height: $_line-height;
+                padding-block: $_item-padding-y;
+                padding-inline: $_item-padding-x;
+            }
+        }
     }
 
 }
