@@ -1,5 +1,6 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
+import { MenuButton } from '../menu-button';
 import { classNames, optionClassNames, ThemeColor } from '../misc';
 
 export const WINDOW_CLASSNAME = `k-window`;
@@ -60,7 +61,20 @@ export const Window = (
                     {actions && <>
                         <div className="k-window-titlebar-actions">
                             {actions.map(actionName =>
-                                <Button key={actionName} icon={actionName} fillMode="flat" className="k-window-titlebar-action"></Button>
+                                actionName === "more-vertical" ?
+                                    <MenuButton
+                                        key={actionName}
+                                        icon={actionName}
+                                        fillMode="flat"
+                                        showArrow={false}
+                                        className="k-window-titlebar-action"
+                                    ></MenuButton> :
+                                    <Button
+                                        key={actionName}
+                                        icon={actionName}
+                                        fillMode="flat"
+                                        className="k-window-titlebar-action"
+                                    ></Button>
                             )}
                         </div>
                     </>}
