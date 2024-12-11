@@ -26,6 +26,13 @@
 
     // Checkbox indicator
     .k-checkbox::before {
+        @if $kendo-checkbox-indicator-type == "image" {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            mask-repeat: no-repeat;
+        }
         @if $kendo-checkbox-indicator-type == "glyph" {
             content: $kendo-checkbox-checked-glyph;
             width: 1em;
@@ -40,12 +47,14 @@
         }
     }
 
-
     // Checked state
     .k-checkbox:checked,
     .k-checkbox.k-checked {
         @if $kendo-checkbox-indicator-type == "image" {
-            background-image: $kendo-checkbox-checked-image;
+            &::before {
+                background-color: currentColor;
+                mask-image: $kendo-checkbox-checked-image;
+            }
         }
 
         @if $kendo-checkbox-indicator-type == "glyph" {
@@ -60,7 +69,10 @@
     .k-checkbox:indeterminate,
     .k-checkbox.k-indeterminate {
         @if $kendo-checkbox-indicator-type == "image" {
-            background-image: $kendo-checkbox-indeterminate-image;
+            &::before {
+                background-color: currentColor;
+                mask-image: $kendo-checkbox-indeterminate-image;
+            }
         }
 
         @if $kendo-checkbox-indicator-type == "glyph" {

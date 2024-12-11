@@ -23,10 +23,6 @@
         position: relative;
         cursor: pointer;
         -webkit-appearance: none;
-
-        @if $kendo-checkbox-indicator-type == "image" {
-            background-size: var( --INTERNAL--kendo-checkbox-indicator-size, 100% );
-        }
     }
 
 
@@ -59,6 +55,16 @@
             top: 50%;
             left: 50%;
         }
+
+        @if $kendo-checkbox-indicator-type == "image" {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            mask-size: var( --INTERNAL--kendo-checkbox-indicator-size, 100% );
+            mask-position: center;
+            mask-repeat: no-repeat;
+        }
     }
 
 
@@ -66,7 +72,10 @@
     .k-checkbox:hover,
     .k-checkbox.k-hover {
         @if $kendo-checkbox-indicator-type == "image" {
-            background-image: var( --kendo-checkbox-hover-image, #{ $kendo-checkbox-hover-image } );
+            &::before {
+                background-color: currentColor;
+                mask-image: var( --kendo-checkbox-hover-image, #{ $kendo-checkbox-hover-image } );
+            }
         }
 
         @if $kendo-checkbox-indicator-type == "pseudo" {
@@ -94,7 +103,10 @@
     .k-checkbox:checked,
     .k-checkbox.k-checked {
         @if $kendo-checkbox-indicator-type == "image" {
-            background-image: var( --kendo-checkbox-checked-image, #{ $kendo-checkbox-checked-image } );
+            &::before {
+                background-color: currentColor;
+                mask-image: var( --kendo-checkbox-checked-image, #{ $kendo-checkbox-checked-image } );
+            }
         }
 
         @if $kendo-checkbox-indicator-type == "pseudo" {
@@ -115,8 +127,11 @@
     .k-checkbox:indeterminate,
     .k-checkbox.k-indeterminate {
         @if $kendo-checkbox-indicator-type == "image" {
-            background-image: var( --kendo-checkbox-indeterminate-image, #{ $kendo-checkbox-indeterminate-image } );
-            background-size: var( --INTERNAL--kendo-checkbox-indeterminate-size, 100% );
+            &::before {
+                background-color: currentColor;
+                mask-image: var( --kendo-checkbox-indeterminate-image, #{ $kendo-checkbox-indeterminate-image } );
+                mask-size: var( --INTERNAL--kendo-checkbox-indeterminate-size, 100% );
+            }
         }
 
         @if $kendo-checkbox-indicator-type == "pseudo" {
@@ -136,7 +151,11 @@
     .k-checkbox:indeterminate:hover,
     .k-checkbox.k-indeterminate.k-hover {
         @if $kendo-checkbox-indicator-type == "image" {
-            background-image: var( --kendo-checkbox-hover-indeterminate-image, #{ $kendo-checkbox-hover-indeterminate-image } );
+            &::before {
+                background-color: currentColor;
+                mask-image: var( --kendo-checkbox-hover-indeterminate-image, #{ $kendo-checkbox-hover-indeterminate-image } );
+            }
+
         }
     }
 
@@ -145,13 +164,19 @@
     .k-checkbox:checked:disabled,
     .k-checkbox.k-checked.k-disabled {
         @if $kendo-checkbox-indicator-type == "image" {
-            background-image: var( --kendo-checkbox-disabled-checked-image, #{ $kendo-checkbox-disabled-checked-image } );
+            &::before {
+                background-color: currentColor;
+                mask-image: var( --kendo-checkbox-disabled-checked-image, #{ $kendo-checkbox-disabled-checked-image } );
+            }
         }
     }
     .k-checkbox:indeterminate:disabled,
     .k-checkbox.k-indeterminate.k-disabled {
         @if $kendo-checkbox-indicator-type == "image" {
-            background-image: var( --kendo-checkbox-disabled-indeterminate-image, #{ $kendo-checkbox-disabled-indeterminate-image } );
+            &::before {
+                background-color: currentColor;
+                mask-image: var( --kendo-checkbox-disabled-indeterminate-image, #{ $kendo-checkbox-disabled-indeterminate-image } );
+            }
         }
     }
 
