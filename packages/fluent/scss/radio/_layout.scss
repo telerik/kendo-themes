@@ -25,10 +25,6 @@
         position: relative;
         cursor: pointer;
         -webkit-appearance: none;
-
-        @if $kendo-radio-indicator-type == "image" {
-            background-size: var( --INTERNAL--kendo-checkbox-indicator-size, 100% );
-        }
     }
 
 
@@ -61,6 +57,15 @@
             top: 50%;
             left: 50%;
         }
+
+        @if $kendo-radio-indicator-type == "image" {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            mask-size: var( --INTERNAL--kendo-checkbox-indicator-size, 100% );
+            mask-repeat: no-repeat;
+        }
     }
 
 
@@ -68,7 +73,10 @@
     .k-radio:hover,
     .k-radio.k-hover {
         @if $kendo-radio-indicator-type == "image" {
-            background-image: var( --kendo-radio-hover-image, #{ $kendo-radio-hover-image } );
+            &::before {
+                background-color: currentColor;
+                mask-image: var( --kendo-radio-hover-image, #{ $kendo-radio-hover-image } );
+            }
         }
 
         @if $kendo-radio-indicator-type == "pseudo" {
@@ -96,7 +104,10 @@
     .k-radio:checked,
     .k-radio.k-checked {
         @if $kendo-radio-indicator-type == "image" {
-            background-image: var( --kendo-radio-checked-image, #{ $kendo-radio-checked-image } );
+            &::before {
+                background-color: currentColor;
+                mask-image: var( --kendo-radio-checked-image, #{ $kendo-radio-checked-image } );
+            }
         }
 
         @if $kendo-radio-indicator-type == "pseudo" {
