@@ -160,10 +160,10 @@ $kendo-checkbox-indeterminate-glyph: "\e121" !default;
 
 /// The image for a checked CheckBox indicator.
 /// @group checkbox
-$kendo-checkbox-checked-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
+$kendo-checkbox-checked-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#ffffff' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
 /// The image for a indeterminate CheckBox indicator.
 /// @group checkbox
-$kendo-checkbox-indeterminate-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") ) !default;
+$kendo-checkbox-indeterminate-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#ff6358' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") ) !default;
 
 
 // CheckBox label
