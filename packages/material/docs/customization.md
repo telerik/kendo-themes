@@ -5308,8 +5308,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-checkbox-disabled-checked-bg ))</code></td>
-    <td><code>var(--kendo-color-on-base, #212121)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-disabled-checked-bg ))</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled and checked CheckBox.</div></div>
@@ -5398,8 +5398,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-checked-image</td>
     <td>String</td>
-    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") )</code></td>
-    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath fill='none' stroke='var%28--kendo-color-on-primary, %23ffffff%29' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/%3e%3c/svg%3e")</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#ffffff' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") )</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath fill='none' stroke='%23ffffff' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image for a checked CheckBox indicator.</div></div>
@@ -5408,8 +5408,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-indeterminate-image</td>
     <td>String</td>
-    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-width='3' d='M4 10h12'/></svg>") )</code></td>
-    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='var%28--kendo-color-on-primary, %23ffffff%29' stroke-width='3' d='M4 10h12'/%3e%3c/svg%3e")</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#ffffff' stroke-width='3' d='M4 10h12'/></svg>") )</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-width='3' d='M4 10h12'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image for a indeterminate CheckBox indicator.</div></div>
@@ -20872,8 +20872,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-radio-checked-image</td>
     <td>String</td>
-    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )</code></td>
-    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='var%28--kendo-color-primary, %233f51b5%29'/%3e%3c/svg%3e")</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#ffffff'/></svg>") )</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='%23ffffff'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the checked RadioButton indicator.</div></div>
@@ -20882,8 +20882,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-radio-disabled-checked-image</td>
     <td>String</td>
-    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-disabled-checked-text}'/></svg>") )</code></td>
-    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='var%28--kendo-color-base-emphasis, %23adadad%29'/%3e%3c/svg%3e")</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#adadad'/></svg>") )</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='%23adadad'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the disabled and checked RadioButton indicator.</div></div>

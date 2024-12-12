@@ -330,8 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-checkbox-disabled-checked-bg ))</code></td>
-    <td><code>var(--kendo-color-on-base, #212121)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-disabled-checked-bg ))</code></td>
+    <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled and checked CheckBox.</div></div>
@@ -420,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-checked-image</td>
     <td>String</td>
-    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") )</code></td>
-    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath fill='none' stroke='var%28--kendo-color-on-primary, %23ffffff%29' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/%3e%3c/svg%3e")</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#ffffff' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") )</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath fill='none' stroke='%23ffffff' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image for a checked CheckBox indicator.</div></div>
@@ -430,8 +430,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-indeterminate-image</td>
     <td>String</td>
-    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-width='3' d='M4 10h12'/></svg>") )</code></td>
-    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='var%28--kendo-color-on-primary, %23ffffff%29' stroke-width='3' d='M4 10h12'/%3e%3c/svg%3e")</code></td>
+    <td><code>k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#ffffff' stroke-width='3' d='M4 10h12'/></svg>") )</code></td>
+    <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-width='3' d='M4 10h12'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image for a indeterminate CheckBox indicator.</div></div>
