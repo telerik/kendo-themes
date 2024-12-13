@@ -18,7 +18,7 @@ The output pages contain static HTML that represents:
 To generate screenshots for a specific theme:
 
 1. Build the theme with `npm run sass`.
-1. Run `npm run create-screenshots <theme>`, substituting `<theme>` with a theme name.
+1. Run `npm run test:create-screenshots <theme>`, substituting `<theme>` with a theme name.
 
 These steps will create new screenshots in `tests/_output`. Note that due to platform differences, all of the files will be marked as changed.
 
