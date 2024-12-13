@@ -38,8 +38,8 @@ jobs:
 
       - name: Lint scripts
         run: |
-          npm run eslint
+          npm run lint:scripts
 
       - name: Check types
         run: |
-          npm run check-types
+          npm run typecheck -w packages/html

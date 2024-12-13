@@ -114,7 +114,7 @@ jobs:
         env:
           HEADLESS: 'true'
         run: |
-          npm run render-test-pages
+          npm run test:render-test-pages
 
       - name: Pack test pages
         env:

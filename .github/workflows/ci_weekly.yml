@@ -42,15 +42,15 @@ jobs:
 
       - name: Lint scripts
         run: |
-          npm run eslint
+          npm run lint:scripts
 
       - name: Check types
         run: |
-          npm run check-types
+          npm run typecheck -w packages/html
 
       - name: Build scripts
         run: |
-          npm run build:scripts
+          npm run build
 
       - name: Build test pages
         run: |
@@ -58,7 +58,7 @@ jobs:
 
       - name: Lint styles
         run: |
-          npm run stylelint
+          npm run lint:styles
 
       - name: Build themes for dist
         run: |

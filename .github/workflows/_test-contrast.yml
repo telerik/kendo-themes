@@ -73,7 +73,7 @@ jobs:
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
       - name: Test contrast (${{ matrix.chunk }} of ${{ matrix.max-chunks }})
-        run: xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test-contrast
+        run: xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test:contrast
         env:
           MAX_CHUNKS: ${{ inputs.max-chunks }}
           CURRENT_CHUNK: ${{ matrix.chunk }}
