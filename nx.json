@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "develop",
+  "workspaceLayout": {
+    "libsDir": "packages"
+  },
+  "targetDefaults": {
+    "lint": {
+      "cache": true,
+      "executor": "nx:run-script",
+      "options": {
+        "script": "lint"
+      }
+    },
+    "build": {
+      "cache": true
+    },
+    "build:tests": {
+      "cache": true
+    },
+    "sass": {
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/dist/**/*.css"
+      ]
+    },
+    "sass:dist": {
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/dist/**/*.css",
+        "{projectRoot}/dist/**/*.scss"
+      ]
+    },
+    "docs": {
+      "cache": true
+    }
+  }
+}
