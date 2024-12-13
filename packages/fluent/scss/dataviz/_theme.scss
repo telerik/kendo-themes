@@ -3,53 +3,6 @@
 
 @mixin kendo-dataviz--theme() {
 
-    // Exported variables
-    // stylelint-disable selector-class-pattern
-    .k-var--chart-inactive {
-        @include fill( $bg: var( --kendo-chart-inactive-bg, #{$kendo-chart-inactive-bg} ) );
-    }
-
-    .k-var--chart-major-lines {
-        @include fill( $bg: var( --kendo-chart-major-lines, #{$kendo-chart-major-lines} ) );
-    }
-
-    .k-var--chart-minor-lines {
-        @include fill( $bg: var( --kendo-chart-minor-lines, #{$kendo-chart-minor-lines} ) );
-    }
-
-    .k-var--chart-area-opacity {
-        opacity: var( --kendo-chart-area-opacity, #{$kendo-chart-area-opacity} );
-    }
-
-    .k-var--chart-area-inactive-opacity {
-        opacity: var( --kendo-chart-area-inactive-opacity, #{$kendo-chart-area-inactive-opacity} );
-    }
-
-    .k-var--chart-line-inactive-opacity {
-        opacity: var( --kendo-chart-line-inactive-opacity, #{$kendo-chart-line-inactive-opacity} );
-    }
-
-    .k-var--chart-notes-background {
-        @include fill( $bg: var( --kendo-chart-notes-background, #{$kendo-chart-notes-background} ) );
-    }
-
-    .k-var--chart-notes-border {
-        @include fill( $bg: var( --kendo-chart-notes-border, #{$kendo-chart-notes-border} ) );
-    }
-
-    .k-var--chart-notes-lines {
-        @include fill( $bg: var( --kendo-chart-notes-lines, #{$kendo-chart-notes-lines} ) );
-    }
-
-    .k-var--chart-crosshair-background {
-        @include fill( $bg: var( --kendo-chart-crosshair-background, #{$kendo-chart-crosshair-background} ) );
-    }
-
-    .k-var--chart-error-bars-background {
-        @include fill( $bg: var( --kendo-error-bars-background, #{$kendo-color-error-bars-background} ) );
-    }
-    // stylelint-enable selector-class-pattern
-
     // Elements
     .k-chart,
     .k-sparkline,

@@ -15,26 +15,6 @@
         }
     }
 
-    // Exported variables
-    // stylelint-disable selector-class-pattern
-    .k-var--chart-font {
-        font-size: var( --kendo-chart-font-size, #{$kendo-chart-font-size} );
-    }
-
-    .k-var--chart-title-font {
-        font-size: var( --kendo-chart-title-font-size, #{$kendo-chart-title-font-size} );
-    }
-
-    .k-var--chart-pane-title-font {
-        font-size: var( --kendo-chart-pane-title-font-size, #{$kendo-chart-pane-title-font-size} );
-        font-weight: var( --kendo-chart-pane-title-font-weight, #{$kendo-chart-pane-title-font-weight} );
-    }
-
-    .k-var--chart-label-font {
-        font-size: var( --kendo-chart-label-font-size, #{$kendo-chart-label-font-size} );
-    }
-    // stylelint-enable selector-class-pattern
-
     // Elements
     .k-chart,
     .k-sparkline,
@@ -422,8 +402,6 @@
         base: $kendo-component-bg,
         background: $kendo-component-bg,
 
-        border-radius: k-border-radius(md),
-
         normal-background: $kendo-component-bg,
         normal-text-color: $kendo-component-text,
         hover-background: $kendo-hover-bg,
@@ -475,22 +453,49 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-series-f,
-        gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-30 ))
+        gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-30 )),
+
+        font-size: $kendo-chart-font-size,
+        title-font-size: $kendo-chart-title-font-size,
+        pane-title-font-size: $kendo-chart-pane-title-font-size,
+        pane-title-font-weight: $kendo-chart-pane-title-font-weight,
+        label-font-size: $kendo-chart-label-font-size,
+
+        inactive: $kendo-chart-inactive-bg,
+        major-lines: $kendo-chart-major-lines,
+        minor-lines: $kendo-chart-minor-lines,
+        area-opacity: $kendo-chart-area-opacity,
+        area-inactive-opacity: $kendo-chart-area-inactive-opacity,
+        line-inactive-opacity: $kendo-chart-line-inactive-opacity,
+        notes-background: $kendo-chart-notes-background,
+        notes-border: $kendo-chart-notes-border,
+        notes-lines: $kendo-chart-notes-lines,
+        crosshair-background: $kendo-chart-crosshair-background,
+        error-bars-background: $kendo-color-error-bars-background,
+
     );
+
+    .k-chart {
+        @each $name, $value in $exported {
+            --kendo-chart-#{$name}: #{$value};
+        }
+    }
 
     @each $name, $value in $exported {
         $type: meta.type-of($value);
 
         .k-var--#{$name} {
-            @if $type == "color" {
+            @if $type == "color" or $type == "string" and string.index($value, "color") {
                 // background-color can store any color
-                background-color: $value;
-            } @else if $type == "string" and string.slice( $value, 1, 4 ) == "var(" {
-                background-color: $value;
-            } @else if $type == "number" {
-                // margin-top can store positive & negative values
-                margin-top: $value;
+                background-color: var(--kendo-chart-#{$name});
+            } @else if string.index($name, "font-size") {
+                font-size: var(--kendo-chart-#{$name});
+            } @else if string.index($name, "font-weight") {
+                font-weight: var(--kendo-chart-#{$name});
+            } @else if string.index($name, "opacity") {
+                opacity: var(--kendo-chart-#{$name});
             }
+
         }
     }
 
