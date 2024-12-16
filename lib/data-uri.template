@@ -1,3 +1,0 @@
-@include exports("<base>") {
-    @include register-data-uri("<base>", "data:<mime>;base64,<base64>");
-}
