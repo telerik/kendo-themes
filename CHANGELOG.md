@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.4...v10.1.0-dev.5) (2024-12-16)
+
+
+### Bug Fixes
+
+* **input:** allow base input box-shadow customization ([3eb5d9b](https://github.com/telerik/kendo-themes/commit/3eb5d9b3cc014ae106257ce1de208572eb265b01))
+* **pdf-viewer:** link annotations are not clickable ([11857c2](https://github.com/telerik/kendo-themes/commit/11857c2010e00e43f318821b14039df76cee410b))
+
+
+
+
+
 # [10.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.3...v10.1.0-dev.4) (2024-12-09)
 
 
