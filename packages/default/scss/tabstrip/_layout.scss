@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "../icons/_variables.scss" as *;
 @use "./variables.scss" as *;
@@ -169,11 +170,94 @@
     // Scrolling
     .k-tabstrip-scrollable {
         > .k-tabstrip-items-wrapper {
-
             > .k-tabstrip-items {
                 flex-wrap: nowrap;
                 white-space: nowrap;
                 overflow: hidden;
+
+                &.k-tabstrip-items-scroll {
+                    scrollbar-width: none;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &.k-tabstrip-top,
+        &.k-tabstrip-bottom {
+            .k-tabstrip-items.k-tabstrip-items-scroll {
+                overflow-x: auto;
+            }
+        }
+
+        &.k-tabstrip-left,
+        &.k-tabstrip-right {
+            .k-tabstrip-items.k-tabstrip-items-scroll {
+                overflow-y: auto;
+            }
+        }
+    }
+
+    .k-tabstrip-scrollable-overlay {
+        .k-tabstrip-items-wrapper {
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: 3;
+            }
+        }
+
+        &.k-tabstrip-top,
+        &.k-tabstrip-bottom {
+            .k-tabstrip-items-wrapper {
+                &::before,
+                &::after {
+                    height: 100%;
+                    aspect-ratio: 1;
+                }
+                &::before {
+                    inset-inline-start: 0;
+                }
+
+                &::after {
+                    inset-inline-end: 0;
+                }
+            }
+        }
+
+        &.k-tabstrip-left,
+        &.k-tabstrip-right {
+            .k-tabstrip-items-wrapper {
+                &::before,
+                &::after {
+                    width: 100%;
+                }
+                &::before {
+                    inset-block-start: 0;
+                }
+
+                &::after {
+                    inset-block-end: 0;
+                }
+            }
+        }
+
+        &.k-tabstrip-scrollable-start {
+            .k-tabstrip-items-wrapper {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        &.k-tabstrip-scrollable-end {
+            .k-tabstrip-items-wrapper {
+                &::after {
+                    display: none;
+                }
             }
         }
     }
@@ -373,6 +457,30 @@
             > .k-tabstrip-content { order: 0; }
         }
 
+    }
+
+     // TabStrip sizes
+     @each $size, $size-props in $kendo-tabstrip-sizes {
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_item-padding-x: map.get( $size-props, item-padding-x );
+        $_item-padding-y: map.get( $size-props, item-padding-y );
+
+        .k-tabstrip-#{$size} {
+            .k-tabstrip-items .k-link {
+                font-size: $_font-size;
+                line-height: $_line-height;
+                padding-block: $_item-padding-y;
+                padding-inline: $_item-padding-x;
+            }
+
+            :is(&.k-tabstrip-left, &.k-tabstrip-right):is(.k-tabstrip-scrollable-overlay) :is(.k-tabstrip-items-wrapper){
+                &::before,
+                &::after {
+                    height: calc( ($_line-height * 1em) + ($kendo-tabstrip-border-width * 2) + ($_item-padding-y * 2) );
+                }
+            }
+        }
     }
 
 }
