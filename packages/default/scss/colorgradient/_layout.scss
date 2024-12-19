@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "sass:math";
 @use "../core/_index.scss" as *;
 @use "./variables.scss" as *;
@@ -44,7 +45,8 @@
 
         .k-hsv-gradient {
             @include border-radius( $kendo-color-gradient-canvas-border-radius );
-            height: $kendo-color-gradient-canvas-rectangle-height;
+            // height: 100%;
+            // height: $kendo-color-gradient-canvas-rectangle-height;
         }
 
         .k-hsv-draghandle {
@@ -60,7 +62,7 @@
         .k-hsv-controls {
             position: relative;
             flex-shrink: 0;
-            gap: $kendo-color-gradient-canvas-gap;
+            // gap: $kendo-color-gradient-canvas-gap;
         }
     }
 
@@ -78,10 +80,9 @@
 
     // Sliders
     .k-colorgradient-slider {
-
         &.k-slider-vertical {
             width: $kendo-color-gradient-slider-track-size;
-            height: $kendo-color-gradient-slider-vertical-size;
+            // height: $kendo-color-gradient-slider-vertical-size;
             flex: 0 0 $kendo-color-gradient-slider-track-size;
         }
         &.k-slider-vertical .k-slider-track {
@@ -124,6 +125,60 @@
         }
     }
 
+    // ColorGradient sizes
+    @each $size, $size-props in $kendo-color-gradient-sizes {
+        // $_vertical-slider-width: map.get( $size-props, width );
+        $_vertical-slider-height: map.get( $size-props, height );
+        $_rectangle-height: map.get( $size-props, rectangle-height );
+        $_input-width: map.get( $size-props, width );
+        $_canvas-gap: map.get( $size-props, gap );
+        // $_horizontal-slider-width: map.get( $size-props, width );
+        // $_horizontal-slider-height: map.get( $size-props, width );
+
+        .k-colorgradient-#{$size} {
+            .k-colorgradient-inputs {
+                .k-numerictextbox {
+                    width: $_input-width;
+                }
+            }
+
+            .k-colorgradient-canvas {
+                gap: $_canvas-gap;
+
+                .k-hsv-gradient {
+                    // height: 100%;
+                    height: $_rectangle-height;
+                }
+
+                .k-slider-vertical {
+                    height: $_vertical-slider-height;
+                }
+
+                .k-hsv-controls {
+                    gap: $_canvas-gap;
+                }
+            }
+        }
+
+        /* .k-colorgradient-canvas-#{$size} {
+            gap: $_canvas-gap;
+
+            .k-slider-vertical {
+                height: $_vertical-slider-height;
+            }
+
+            .k-hsv-controls {
+                gap: $_canvas-gap;
+            }
+
+            .k-hsv-gradient {
+                // @include border-radius( $kendo-color-gradient-canvas-border-radius );
+                // height: $kendo-color-gradient-canvas-rectangle-height;
+            }
+        } */
+    }
+
+
     // Inputs
     .k-colorgradient-inputs {
         gap: $kendo-color-gradient-input-gap;
@@ -137,7 +192,7 @@
         }
 
         .k-numerictextbox {
-            width: $kendo-color-gradient-input-width;
+            // width: $kendo-color-gradient-input-width;
         }
 
         .k-input-inner {
@@ -189,6 +244,24 @@
         pointer-events: none;
     }
 
+    .k-actionsheet-content .k-colorgradient-lg .k-colorgradient-canvas .k-hsv-gradient {
+        aspect-ratio: 1;
+        height: 100%;
+    }
+
+    .k-actionsheet-content {
+        .k-coloreditor {
+            border: 0;
+
+            .k-coloreditor-header {
+                padding: 0;
+            }
+
+            .k-coloreditor-views {
+                padding-inline: 0;
+            }
+        }
+    }
 }
 
 

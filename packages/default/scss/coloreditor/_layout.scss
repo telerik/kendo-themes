@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./variables.scss" as *;
 @use "../colorpalette/_variables.scss" as *;
@@ -7,7 +8,7 @@
     // ColorEditor/FlatColorPicker
     .k-coloreditor {
         @include border-radius( $kendo-color-editor-border-radius );
-        min-width: $kendo-color-editor-min-width;
+        // min-width: $kendo-color-editor-min-width;
         border-width: $kendo-color-editor-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -44,9 +45,48 @@
         position: relative;
         z-index: 1;
     }
-    .k-coloreditor-preview .k-color-preview {
+
+    /* .k-coloreditor-preview .k-color-preview {
         width: $kendo-color-editor-color-preview-width;
         height: $kendo-color-editor-color-preview-height;
+    } */
+
+    // ColorPreview sizes
+    @each $size, $size-props in $kendo-color-editor-sizes {
+        $_min-width: map.get( $size-props, min-width );
+        $_width: map.get( $size-props, width );
+        $_height: map.get( $size-props, height );
+        $_header-padding-x: map.get( $size-props, header-padding-x );
+        $_header-padding-y: map.get( $size-props, header-padding-y );
+        $_views-padding-x: map.get( $size-props, views-padding-x );
+        $_views-padding-y: map.get( $size-props, views-padding-y );
+        $_footer-padding-x: map.get( $size-props, footer-padding-x );
+        $_footer-padding-y: map.get( $size-props, footer-padding-y );
+
+        .k-coloreditor-#{$size} {
+            // min-width: $_min-width;
+        }
+
+        .k-coloreditor-preview .k-color-preview-#{$size} {
+            width: $_width;
+            height: $_height;
+        }
+
+        .k-coloreditor-#{$size} {
+            .k-coloreditor-header {
+                padding: $_header-padding-y $_header-padding-x 0;
+            }
+
+            .k-coloreditor-views {
+                padding-block: $_views-padding-y;
+                padding-inline: $_views-padding-x;
+            }
+
+            .k-coloreditor-footer {
+                padding-block: $_footer-padding-y;
+                padding-inline: $_footer-padding-x;
+            }
+        }
     }
 
     // Views
@@ -72,9 +112,22 @@
             align-self: center;
         }
 
-        .k-colorpalette-tile {
+        /* .k-colorpalette-tile {
             width: var(--kendo-color-preview-width, $kendo-color-palette-tile-width);
             height: var(--kendo-color-preview-height, $kendo-color-palette-tile-height);
+        } */
+    }
+
+     // ColorPreview sizes
+     @each $size, $size-props in $kendo-color-palette-sizes {
+        $_tile-width: map.get( $size-props, width );
+        $_tile-height: map.get( $size-props, height );
+
+        .k-coloreditor-#{$size} {
+            .k-colorpalette-tile {
+                width: $_tile-width;
+                height: $_tile-height;
+            }
         }
     }
 
@@ -83,6 +136,18 @@
         margin: 0;
     }
 
+    .k-actionsheet-content .k-coloreditor {
+        // border: 1px solid red !important;
+        // width: 100%;
+    }
+
+    .k-actionsheet-content {
+        .k-coloreditor {
+
+            min-width: calc($kendo-color-editor-lg-min-width - calc( 2 * #{$kendo-color-editor-lg-views-padding-x} ));
+
+        }
+    }
 }
 
 
