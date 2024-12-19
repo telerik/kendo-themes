@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./variables.scss" as *;
 @use "../colorpalette/_variables.scss" as *;
@@ -44,9 +45,45 @@
         position: relative;
         z-index: 1;
     }
+
     .k-coloreditor-preview .k-color-preview {
         width: $kendo-color-editor-color-preview-width;
         height: $kendo-color-editor-color-preview-height;
+    }
+
+    // ColorPreview sizes
+    @each $size, $size-props in $kendo-color-editor-sizes {
+        $_min-width: map.get( $size-props, min-width );
+        $_header-padding-x: map.get( $size-props, header-padding-x );
+        $_header-padding-y: map.get( $size-props, header-padding-y );
+        $_views-padding-x: map.get( $size-props, views-padding-x );
+        $_views-padding-y: map.get( $size-props, views-padding-y );
+        $_preview-gap: map.get( $size-props, preview-gap );
+        $_preview-width: map.get( $size-props, preview-width );
+        $_preview-height: map.get( $size-props, preview-height );
+
+        .k-coloreditor-#{$size} {
+            min-width: $_min-width;
+
+            .k-coloreditor-header {
+                padding: $_header-padding-y $_header-padding-x 0;
+            }
+
+            .k-coloreditor-views {
+                padding-block: $_views-padding-y;
+                padding-inline: $_views-padding-x;
+            }
+
+            .k-coloreditor-preview {
+                gap: $_preview-gap;
+
+                .k-color-preview {
+                    width: $_preview-width;
+                    height: $_preview-height;
+                }
+            }
+        }
+
     }
 
     // Views
@@ -78,11 +115,23 @@
         }
     }
 
+    // ColorPalette sizes
+    @each $size, $size-props in $kendo-color-palette-sizes {
+        $_tile-width: map.get( $size-props, width );
+        $_tile-height: map.get( $size-props, height );
+
+        .k-coloreditor-#{$size} {
+            .k-colorpalette-tile {
+                width: $_tile-width;
+                height: $_tile-height;
+            }
+        }
+    }
+
     // Footer
     .k-coloreditor-footer.k-actions {
         margin: 0;
     }
-
 }
 
 
