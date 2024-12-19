@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../misc';
+import { classNames, stateClassNames, States, Size, optionClassNames } from '../misc';
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
 import { ButtonGroup } from '../button-group';
@@ -13,9 +13,15 @@ const states = [
     States.focus
 ];
 
-const options = {};
+const options = {
+    size: [ Size.small, Size.medium, Size.large ],
+};
 
-export type KendoColorEditorProps = {
+export type KendoColorEditorOptions = {
+    size?: (typeof options.size)[number] | null;
+};
+
+export type KendoColorEditorProps = KendoColorEditorOptions & {
     view?: 'gradient' | 'palette';
     color?: string;
     currentColor?: string;
@@ -24,14 +30,17 @@ export type KendoColorEditorProps = {
     group?: boolean;
     palette?: Array<string> | any;
     actionButtons?: boolean;
+    canvasOrientation?: 'horizontal' | 'vertical';
 };
 
 export type KendoColorEditorState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
+    size: Size.medium,
     view: 'gradient',
     palette: PALETTEPRESETS.office,
     actionButtons: true,
+    canvasOrientation: 'horizontal'
 } as const;
 
 export const ColorEditor = (
@@ -40,6 +49,7 @@ export const ColorEditor = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        size = defaultOptions.size,
         view = defaultOptions.view,
         palette = defaultOptions.palette,
         color,
@@ -49,6 +59,7 @@ export const ColorEditor = (
         dir,
         group,
         actionButtons = defaultOptions.actionButtons,
+        canvasOrientation = defaultOptions.canvasOrientation,
     } = props;
 
     return (
@@ -56,20 +67,21 @@ export const ColorEditor = (
             props.className,
             'k-flatcolorpicker',
             COLOREDITOR_CLASSNAME,
-            stateClassNames(COLOREDITOR_CLASSNAME, { focus })
+            optionClassNames(COLOREDITOR_CLASSNAME, { size }),
+            stateClassNames(COLOREDITOR_CLASSNAME, { focus }),
         )} dir={dir}>
             <div className="k-coloreditor-header k-hstack">
                 <div className="k-coloreditor-header-actions k-hstack">
                     { group &&
                         <ButtonGroup fillMode="flat">
-                            <Button className="k-group-start" fillMode="flat" icon="droplet-slider" selected={ view === 'gradient' }></Button>
-                            <Button className="k-group-end" fillMode="flat" icon="palette" selected={ view === 'palette' }></Button>
+                            <Button className="k-group-start" size={size} fillMode="flat" icon="droplet-slider" selected={ view === 'gradient' }></Button>
+                            <Button className="k-group-end" size={size} fillMode="flat" icon="palette" selected={ view === 'palette' }></Button>
                         </ButtonGroup>
                     }
                 </div>
                 <div className="k-spacer"></div>
                 <div className="k-coloreditor-header-actions k-hstack">
-                    <Button fillMode="flat" icon="droplet-slash"></Button>
+                    <Button fillMode="flat" icon="droplet-slash" size={size}></Button>
                     <div className="k-coloreditor-preview k-vstack">
                         <ColorPreview className="k-coloreditor-preview-color" color={color} />
                         <ColorPreview className="k-coloreditor-current-color" color={currentColor} />
@@ -77,11 +89,11 @@ export const ColorEditor = (
                 </div>
             </div>
             <div className="k-coloreditor-views k-vstack">
-                { view === 'gradient' ? <ColorGradient focus={focusView} /> : <ColorPalette palette={palette}/> }
+                { view === 'gradient' ? <ColorGradient focus={focusView} size={size} canvasOrientation={canvasOrientation} /> : <ColorPalette palette={palette} /> }
             </div>
             {actionButtons && <ActionButtons className="k-coloreditor-footer" alignment="end" >
-                <Button className="k-coloreditor-cancel">Cancel</Button>
-                <Button themeColor="primary" className="k-coloreditor-apply">Apply</Button>
+                <Button className="k-coloreditor-cancel" size={size}>Cancel</Button>
+                <Button themeColor="primary" size={size} className="k-coloreditor-apply">Apply</Button>
             </ActionButtons>}
         </div>
     );

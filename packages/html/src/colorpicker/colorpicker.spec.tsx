@@ -8,6 +8,10 @@ import {
 import { Button } from '../button';
 import { ColorPreview } from '../color-preview';
 import { Popup } from '../popup';
+import { ActionSheet, ActionSheetHeader, ActionSheetFooter, KendoActionSheetProps } from '../action-sheet';
+
+import { ColorEditor } from "../coloreditor";
+
 
 export const COLORPICKER_CLASSNAME = `k-colorpicker`;
 
@@ -42,6 +46,8 @@ export type KendoColorPickerProps = KendoColorPickerOptions & {
     arrowIconName?: string;
     popup?: React.JSX.Element;
     opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
 };
 
 export type KendoColorPickerState = { [K in (typeof states)[number]]?: boolean };
@@ -76,6 +82,8 @@ export const ColorPicker = (
         valueIconName,
         popup,
         opened,
+        adaptive,
+        adaptiveSettings,
         ...other
     } = props;
 
@@ -126,6 +134,20 @@ export const ColorPicker = (
                 <Popup className="k-colorpicker-popup">
                     {popup}
                 </Popup>
+            }
+             { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        title="Choose Color">
+                    </ActionSheetHeader>
+                    <ColorEditor canvasOrientation="vertical"
+                        size="large"
+                        actionButtons={false}
+                        group
+                    />
+                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
+                </ActionSheet>
             }
         </>
     );
