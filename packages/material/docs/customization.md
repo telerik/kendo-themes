@@ -1954,8 +1954,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-calc-size</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-button-line-height * 1em} + calc( #{$kendo-button-padding-y} * 2 ) + #{$kendo-button-border-width * 2} )</code></td>
-    <td><code>calc(1.4285714286em + var(--kendo-spacing-2, 0.5rem) * 2 + 2px)</code></td>
+    <td><code>calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )</code></td>
+    <td><code>calc(1.4285714286 * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
@@ -1964,8 +1964,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
-    <td><code>calc( #{$kendo-button-line-height * 1em} + calc( #{$kendo-button-padding-y} * 2 ) )</code></td>
-    <td><code>calc(1.4285714286em + var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
+    <td><code>calc( ( #{$kendo-button-line-height} * 1em ) + ( #{$kendo-button-padding-y} * 2 ) )</code></td>
+    <td><code>calc(1.4285714286 * 1em + var(--kendo-spacing-2, 0.5rem) * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
@@ -12657,6 +12657,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-input-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( ( #{$kendo-input-line-height} * 1em ) + ( #{$kendo-input-padding-y} * 2 ) + ( #{$kendo-input-border-width * 2} ) )</code></td>
+    <td><code>calc(1.25 * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + (2px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Input.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -15794,6 +15804,146 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### OneTimePassword
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-otp-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1.5)</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the items in the OTP.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-sm-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the items in the small OTP.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-md-gap</td>
+    <td>String</td>
+    <td><code>$kendo-otp-gap</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the items in the medium OTP.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-lg-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the items in the large OTP.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-separator-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-otp-gap</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OTP separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-sm-separator-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-otp-sm-gap</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small OTP separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-md-separator-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-otp-separator-padding-x</code></td>
+    <td><code>var(--kendo-spacing-1\.5, 0.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium OTP separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-lg-separator-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-otp-lg-gap</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large OTP separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-input-width</td>
+    <td>Calculation</td>
+    <td><code>$kendo-input-calc-size</code></td>
+    <td><code>calc(1.25 * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + (2px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OTP separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-sm-input-width</td>
+    <td>Calculation</td>
+    <td><code>$kendo-input-sm-calc-size</code></td>
+    <td><code>calc(1.25 * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + (2px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small OTP separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-md-input-width</td>
+    <td>Calculation</td>
+    <td><code>$kendo-otp-input-width</code></td>
+    <td><code>calc(1.25 * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + (2px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium OTP separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-otp-lg-input-width</td>
+    <td>Calculation</td>
+    <td><code>$kendo-input-lg-calc-size</code></td>
+    <td><code>calc(1.5 * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + (2px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large OTP separator.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Orgchart
 
 <table class="theme-variables">
@@ -16775,7 +16925,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-sm-calc-size</code></td>
-    <td><code>calc(1.4285714286em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 2px)</code></td>
+    <td><code>calc(1.4285714286 * 1em + var(--kendo-spacing-1\.5, 0.375rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the small Pager.</div></div>
@@ -16785,7 +16935,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-pager-md-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-calc-size</code></td>
-    <td><code>calc(1.4285714286em + var(--kendo-spacing-2, 0.5rem) * 2 + 2px)</code></td>
+    <td><code>calc(1.4285714286 * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the medium Pagers.</div></div>
@@ -16795,7 +16945,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-pager-lg-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-lg-calc-size</code></td>
-    <td><code>calc(1.4285714286em + var(--kendo-spacing-2\.5, 0.625rem) * 2 + 2px)</code></td>
+    <td><code>calc(1.4285714286 * 1em + var(--kendo-spacing-2\.5, 0.625rem) * 2 + 1px * 2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the large Pagers.</div></div>
@@ -17157,7 +17307,7 @@ The following table lists the available variables for customizing the Material t
         pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )</code></td>
-    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-spacing":"var(--kendo-spacing-1\\.5, 0.375rem)","item-min-width":"calc(1.4285714286em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 2px)","pager-dropdown-width":"5em"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","item-group-spacing":"var(--kendo-spacing-2, 0.5rem)","item-min-width":"calc(1.4285714286em + var(--kendo-spacing-2, 0.5rem) * 2 + 2px)","pager-dropdown-width":"5em"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-group-spacing":"var(--kendo-spacing-2\\.5, 0.625rem)","item-min-width":"calc(1.4285714286em + var(--kendo-spacing-2\\.5, 0.625rem) * 2 + 2px)","pager-dropdown-width":"5em"</li></ul></td>
+    <td><ul><li>sm: "padding-x":"var(--kendo-spacing-1, 0.25rem)","padding-y":"var(--kendo-spacing-1, 0.25rem)","item-group-spacing":"var(--kendo-spacing-1\\.5, 0.375rem)","item-min-width":"calc(1.4285714286 * 1em + var(--kendo-spacing-1\\.5, 0.375rem) * 2 + 1px * 2)","pager-dropdown-width":"5em"</li><li>md: "padding-x":"var(--kendo-spacing-2, 0.5rem)","padding-y":"var(--kendo-spacing-2, 0.5rem)","item-group-spacing":"var(--kendo-spacing-2, 0.5rem)","item-min-width":"calc(1.4285714286 * 1em + var(--kendo-spacing-2, 0.5rem) * 2 + 1px * 2)","pager-dropdown-width":"5em"</li><li>lg: "padding-x":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-y":"var(--kendo-spacing-2\\.5, 0.625rem)","item-group-spacing":"var(--kendo-spacing-2\\.5, 0.625rem)","item-min-width":"calc(1.4285714286 * 1em + var(--kendo-spacing-2\\.5, 0.625rem) * 2 + 1px * 2)","pager-dropdown-width":"5em"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
