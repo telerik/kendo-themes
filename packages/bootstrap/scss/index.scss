@@ -114,6 +114,7 @@
 @forward "./map/_index.scss";
 @forward "./orgchart/_index.scss";
 @forward "./signature/_index.scss";
+@forward "./otp/_index.scss";
 
 
 // Use component modules
@@ -202,6 +203,7 @@
 @use "./switch/_index.scss" as *;
 @use "./upload/_index.scss" as *;
 @use "./dropzone/_index.scss" as *;
+@use "./otp/_index.scss" as *;
 // Command interfaces
 
 @use "./action-buttons/_index.scss" as *;
@@ -375,6 +377,7 @@
     @include kendo-switch--styles();
     @include kendo-upload--styles();
     @include kendo-dropzone--styles();
+    @include kendo-otp--styles();
 
 
     // Command interfaces

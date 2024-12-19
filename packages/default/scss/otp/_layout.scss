@@ -1,0 +1,41 @@
+@use "sass:map";
+@use "./_variables.scss" as *;
+@use "../core/_index.scss" as *;
+@use "../input/_variables.scss" as *;
+
+@mixin kendo-otp--layout-base() {
+    // OTP
+    .k-otp {
+        display: flex;
+        width: min-content;
+        align-items: center;
+        flex-direction: row;
+
+        .k-otp-input > .k-input-inner {
+            text-align: center;
+            padding-inline: 0;
+        }
+    }
+
+    @each $size, $size-props in $kendo-otp-sizes {
+        $_gap: map.get($size-props, gap);
+        $_separator-padding-x: map.get($size-props, separator-padding-x);
+        $_input-width: map.get($size-props, input-width);
+
+        .k-otp-#{$size} {
+            gap: $_gap;
+
+            .k-otp-input {
+                min-width: $_input-width;
+            }
+
+            .k-otp-separator:not(:empty) {
+                padding-inline: $_separator-padding-x;
+            }
+        }
+    }
+}
+
+@mixin kendo-otp--layout() {
+    @include kendo-otp--layout-base();
+}
