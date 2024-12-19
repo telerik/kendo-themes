@@ -26,6 +26,25 @@ $kendo-color-palette-tile-width: k-spacing(6) !default;
 /// The height of the ColorPalette tile.
 /// @group color-palette
 $kendo-color-palette-tile-height: $kendo-color-palette-tile-width !default;
+/// The width of the small ColorPalette tile.
+/// @group color-palette
+$kendo-color-palette-tile-sm-width: k-spacing(5.5) !default;
+/// The height of the small ColorPalette tile.
+/// @group color-palette
+$kendo-color-palette-tile-sm-height: $kendo-color-palette-tile-sm-width !default;
+/// The width of the medium ColorPalette tile.
+/// @group color-palette
+$kendo-color-palette-tile-md-width: $kendo-color-palette-tile-width !default;
+/// The height of the medium ColorPalette tile.
+/// @group color-palette
+$kendo-color-palette-tile-md-height: $kendo-color-palette-tile-height !default;
+/// The width of the large ColorPalette tile.
+/// @group color-palette
+$kendo-color-palette-tile-lg-width: k-spacing(8) !default;
+/// The height of the large ColorPalette tile.
+/// @group color-palette
+$kendo-color-palette-tile-lg-height: $kendo-color-palette-tile-lg-width !default;
+
 /// The outline color of the ColorPalette focused tile.
 /// @group color-palette
 $kendo-color-palette-tile-focus-outline: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
@@ -47,3 +66,20 @@ $kendo-color-palette-tile-selected-shadow: $kendo-color-palette-tile-hover-shado
 /// The outline color of the ColorPalette selected hover tile.
 /// @group color-palette
 $kendo-color-palette-tile-selected-hover-outline: $kendo-color-palette-tile-focus-outline !default;
+
+/// The size map of the ColorPalette.
+/// @group color-palette
+$kendo-color-palette-sizes: (
+    sm: (
+        width: $kendo-color-palette-tile-sm-width,
+        height: $kendo-color-palette-tile-sm-height
+    ),
+    md: (
+        width: $kendo-color-palette-tile-md-width,
+        height: $kendo-color-palette-tile-md-height
+    ),
+    lg: (
+        width: $kendo-color-palette-tile-lg-width,
+        height: $kendo-color-palette-tile-lg-height
+    )
+) !default;
