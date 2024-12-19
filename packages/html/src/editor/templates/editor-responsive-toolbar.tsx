@@ -1,6 +1,7 @@
 import { Editor } from '..';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
+import { ToolbarSeparator } from '../../toolbar';
 
 export const EditorResponsiveToolbar = (props) => (
     <Editor toolbarResizable
@@ -30,6 +31,7 @@ export const EditorResponsiveToolbar = (props) => (
                 <Button icon="align-right"></Button>
                 <Button className="k-group-end" icon="align-justify"></Button>
             </ButtonGroup>,
+            <ToolbarSeparator className="k-toolbar-button-separator" />,
             <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
         ]}
         children={

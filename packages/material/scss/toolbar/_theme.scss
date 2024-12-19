@@ -8,7 +8,8 @@
 
     @include kendo-toolbar--theme-base();
 
-    .k-toolbar {
+    .k-toolbar,
+    .k-toolbar-popup {
 
         .k-button-solid-base {
             background-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));

@@ -6,42 +6,55 @@
 
 /// The horizontal padding of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-padding-x: null !default;
+$kendo-toolbar-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the small Toolbar.
 /// @group toolbar
 $kendo-toolbar-sm-padding-x: k-spacing(1) !default;
 /// The horizontal padding of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-padding-x: k-spacing(2) !default;
+$kendo-toolbar-md-padding-x: $kendo-toolbar-padding-x !default;
 /// The horizontal padding of the large Toolbar.
 /// @group toolbar
 $kendo-toolbar-lg-padding-x: k-spacing(2.5) !default;
 
 /// The vertical padding of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-padding-y: null !default;
+$kendo-toolbar-padding-y: k-spacing(2) !default;
 /// The vertical padding of the small Toolbar.
 /// @group toolbar
 $kendo-toolbar-sm-padding-y: k-spacing(1) !default;
 /// The vertical padding of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-padding-y: k-spacing(2) !default;
+$kendo-toolbar-md-padding-y: $kendo-toolbar-padding-y !default;
 /// The vertical padding of the large Toolbar.
 /// @group toolbar
 $kendo-toolbar-lg-padding-y: k-spacing(2.5) !default;
 
 /// The spacing between the Toolbar tools.
 /// @group toolbar
-$kendo-toolbar-spacing: null !default;
+$kendo-toolbar-spacing: k-spacing(2) !default;
 /// The spacing between the tools of the small Toolbar.
 /// @group toolbar
 $kendo-toolbar-sm-spacing: k-spacing(1.5) !default;
 /// The spacing between the tools of the medium Toolbar.
 /// @group toolbar
-$kendo-toolbar-md-spacing: k-spacing(2) !default;
+$kendo-toolbar-md-spacing: $kendo-toolbar-spacing !default;
 /// The spacing between the tools of the large Toolbar.
 /// @group toolbar
 $kendo-toolbar-lg-spacing: k-spacing(2.5) !default;
+
+/// The height of the Toolbar button separator.
+/// @group toolbar
+$kendo-toolbar-separator-height: $kendo-button-md-calc-size !default;
+/// The height of the small Toolbar button separator.
+/// @group toolbar
+$kendo-toolbar-sm-separator-height: $kendo-button-sm-calc-size !default;
+/// The height of the medium Toolbar button separator.
+/// @group toolbar
+$kendo-toolbar-md-separator-height: $kendo-toolbar-separator-height !default;
+/// The height of the large Toolbar button separator.
+/// @group toolbar
+$kendo-toolbar-lg-separator-height: $kendo-button-lg-calc-size !default;
 
 /// The width of the border around the Toolbar.
 /// @group toolbar
@@ -75,6 +88,10 @@ $kendo-toolbar-gradient: null !default;
 /// The box shadow of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-shadow: null !default;
+/// The left and right scroll overlay of the Toolbar.
+/// @group toolbar
+$kendo-toolbar-scroll-overlay: $kendo-toolbar-bg, if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The text color of the outline Toolbar.
 /// @group toolbar
@@ -91,6 +108,10 @@ $kendo-toolbar-outline-shadow: null !default;
 /// The width of the border around the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-border-width: $kendo-toolbar-border-width !default;
+/// The left and right scroll overlay of the outline Toolbar.
+/// @group toolbar
+$kendo-toolbar-outline-scroll-overlay: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The text color of the flat Toolbar.
 /// @group toolbar
@@ -107,6 +128,10 @@ $kendo-toolbar-flat-shadow: null !default;
 /// Border width of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-border-width: 1px !default;
+/// The left and right scroll overlay of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-scroll-overlay: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+
 
 /// The color of the separator border of the Toolbar.
 /// @group toolbar
@@ -126,17 +151,20 @@ $kendo-toolbar-sizes: (
     sm: (
         padding-x: $kendo-toolbar-sm-padding-x,
         padding-y: $kendo-toolbar-sm-padding-y,
-        spacing: $kendo-toolbar-sm-spacing
+        spacing: $kendo-toolbar-sm-spacing,
+        separator-height: $kendo-toolbar-sm-separator-height
     ),
     md: (
         padding-x: $kendo-toolbar-md-padding-x,
         padding-y: $kendo-toolbar-md-padding-y,
-        spacing: $kendo-toolbar-md-spacing
+        spacing: $kendo-toolbar-md-spacing,
+        separator-height: $kendo-toolbar-md-separator-height
     ),
     lg: (
         padding-x: $kendo-toolbar-lg-padding-x,
         padding-y: $kendo-toolbar-lg-padding-y,
-        spacing: $kendo-toolbar-lg-spacing
+        spacing: $kendo-toolbar-lg-spacing,
+        separator-height: $kendo-toolbar-lg-separator-height
     )
 ) !default;
 

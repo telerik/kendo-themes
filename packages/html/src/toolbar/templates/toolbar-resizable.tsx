@@ -3,6 +3,7 @@ import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { MenuButton } from '../../menu-button';
 import { SplitButton } from '../../split-button';
+import { ToolbarSeparator } from "../toolbar-separator";
 
 export const ToolbarResizable = (props) => (
     <Toolbar resizable children={[
@@ -14,6 +15,7 @@ export const ToolbarResizable = (props) => (
             <Button icon="align-center">Center</Button>
             <Button className="k-group-end" icon="align-right">Right</Button>
         </ButtonGroup>,
+        <ToolbarSeparator className="k-toolbar-button-separator" />,
         <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
     ]}
     {...props}>

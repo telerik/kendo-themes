@@ -6,13 +6,6 @@
 
     // Theme
     .k-toolbar {
-        // Separator
-        .k-separator,
-        .k-toolbar-separator {
-            border-color: $kendo-toolbar-separator-border;
-        }
-
-
         // Template item
         .k-toolbar-item:focus,
         .k-toolbar-item.k-focus {
@@ -25,6 +18,16 @@
 
     }
 
+    .k-toolbar-items {
+        border-color: inherit;
+    }
+
+    // Separator
+    .k-toolbar .k-separator,
+    .k-toolbar-separator {
+        border-color: $kendo-toolbar-separator-border;
+    }
+
     // Solid Toolbar
     .k-toolbar-solid {
         @include fill(
@@ -34,6 +37,20 @@
             $kendo-toolbar-gradient
         );
         @include box-shadow( $kendo-toolbar-shadow );
+
+        &.k-toolbar-scrollable-overlay {
+            &::before {
+                background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
+            }
+        }
+    }
+
+    .k-toolbar-items-list-solid {
+        border-color: $kendo-toolbar-border;
     }
 
     // Outline Toolbar
@@ -43,6 +60,20 @@
             $border: $kendo-toolbar-outline-border
         );
         @include box-shadow( $kendo-toolbar-outline-shadow );
+
+        &.k-toolbar-scrollable-overlay {
+            &::before {
+                background: linear-gradient(90deg, $kendo-toolbar-outline-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(270deg, $kendo-toolbar-outline-scroll-overlay);
+            }
+        }
+    }
+
+    .k-toolbar-items-list-outline {
+        border-color: $kendo-toolbar-outline-border;
     }
 
     // Flat Toolbar
@@ -53,9 +84,25 @@
         );
         @include box-shadow( $kendo-toolbar-flat-shadow );
 
-        > .k-separator {
+
+        > .k-separator,
+        .k-toolbar-separator {
             border-inline-color: $kendo-toolbar-flat-border;
         }
+
+        &.k-toolbar-scrollable-overlay {
+            &::before {
+                background: linear-gradient(90deg, $kendo-toolbar-flat-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(270deg, $kendo-toolbar-flat-scroll-overlay);
+            }
+        }
+    }
+
+    .k-toolbar-items-list-flat {
+        border-color: $kendo-toolbar-flat-border;
     }
 
     .k-floating-toolbar,
@@ -106,6 +153,40 @@
             }
         }
 
+    }
+
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        .k-toolbar-scrollable-overlay {
+            &::before {
+                background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
+            }
+
+            &::after {
+                background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
+            }
+
+            &.k-toolbar-outline {
+                &::before {
+                    background: linear-gradient(270deg, $kendo-toolbar-outline-scroll-overlay);
+                }
+
+                &::after {
+                    background: linear-gradient(90deg, $kendo-toolbar-outline-scroll-overlay);
+                }
+            }
+
+            &.k-toolbar-flat {
+                &::before {
+                    background: linear-gradient(270deg, $kendo-toolbar-flat-scroll-overlay);
+                }
+
+                &::after {
+                    background: linear-gradient(90deg, $kendo-toolbar-flat-scroll-overlay);
+                }
+            }
+        }
     }
 
 }
