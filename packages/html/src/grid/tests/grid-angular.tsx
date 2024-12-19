@@ -4,7 +4,7 @@ import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
 import { Popup } from '../../popup';
 import { SkeletonNormal } from '../../skeleton';
-import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable } from '../../grid';
+import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridToolbar } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
@@ -148,12 +148,12 @@ export default () =>(
             <span className="col-3">Angular -- standalone column chooser</span>
             <section className="col-2">
                 <GridNormal pager={false} groupingHeader={false} toolbar={(
-                    <div className="k-toolbar k-toolbar-solid k-grid-toolbar">
+                    <GridToolbar>
                         <div className="k-spacer"></div>
                         <div className="k-grid-column-chooser">
                             <Button fillMode="flat" icon="columns"></Button>
                         </div>
-                    </div>
+                    </GridToolbar>
                 )}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
@@ -193,7 +193,7 @@ export default () =>(
                                             <TableTd>19</TableTd>
                                             <TableTd>24 - 12 oz bottles</TableTd>
                                         </TableRow>
-                                        <TableRow alt className="k-master-row">
+                                        <TableRow className="k-master-row">
                                             <TableTd>Aniseed Syrup</TableTd>
                                             <TableTd>20</TableTd>
                                             <TableTd>24 - 12 oz bottles</TableTd>
