@@ -32,7 +32,7 @@ export const ColorPreview = (
                 {
                     'k-icon-color-preview': iconName,
                     'k-no-color': !color
-                },
+                }
             )}
         >
             {iconName && (
