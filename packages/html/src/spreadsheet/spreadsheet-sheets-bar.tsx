@@ -61,7 +61,7 @@ export const SpreadsheetSheetsBar = (
                 tabStripItems={tabStripItems}
                 position="bottom"
                 scrollable
-                scrollButtonsPosition="end" />
+                scrollButtons="end" />
         </div>
     );
 };
