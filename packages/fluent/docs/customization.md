@@ -5324,7 +5324,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-error-bars-background</td>
+    <td>$kendo-chart-error-bars-background</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( neutral-110 ))</code></td>
     <td><code>var(--kendo-color-error, #c2666b)</code></td>
