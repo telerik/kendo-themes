@@ -10,4 +10,3 @@ export * from './templates/tabstrip-left';
 export * from './templates/tabstrip-scrollable';
 export * from './templates/tabstrip-closable';
 export * from './templates/tabstrip-scrollable-buttons-hidden';
-export * from './templates/tabstrip-left-scrollable-buttons-hidden';
