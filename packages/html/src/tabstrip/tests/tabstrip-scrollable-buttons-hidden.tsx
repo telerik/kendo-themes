@@ -1,4 +1,4 @@
-import { TabStripContent, TabStripScrollableButtonsHidden, TabStripLeftScrollableButtonsHidden } from '..';
+import { TabStripContent, TabStripItem, TabStripScrollableButtonsHidden } from '..';
 
 const style = ``;
 
@@ -11,8 +11,20 @@ export default () => (
             <span>Horizontal orientation</span>
             <span></span>
             <span></span>
-             <section>
-                <TabStripScrollableButtonsHidden>
+            <section>
+                <TabStripScrollableButtonsHidden
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Horizontal - Scrollable - No Buttons Scroll Start</div>
                     </TabStripContent>
@@ -20,7 +32,19 @@ export default () => (
             </section>
 
             <section>
-                <TabStripScrollableButtonsHidden scrollingPosition="end">
+                <TabStripScrollableButtonsHidden scrollingPosition="end"
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Horizontal - Scrollable - No Buttons Scroll End</div>
                     </TabStripContent>
@@ -29,7 +53,19 @@ export default () => (
 
 
             <section>
-                <TabStripScrollableButtonsHidden scrollingPosition={null}>
+                <TabStripScrollableButtonsHidden scrollingPosition={null}
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Horizontal - Scrollable - No Buttons Scroll Both</div>
                     </TabStripContent>
@@ -40,28 +76,64 @@ export default () => (
             <span></span>
             <span></span>
             <section>
-                <TabStripLeftScrollableButtonsHidden>
+                <TabStripScrollableButtonsHidden position="left"
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Vertical - Scrollable - No Buttons Scroll Start</div>
                     </TabStripContent>
-                </TabStripLeftScrollableButtonsHidden>
+                </TabStripScrollableButtonsHidden>
             </section>
 
             <section>
-                <TabStripLeftScrollableButtonsHidden scrollingPosition="end">
+                <TabStripScrollableButtonsHidden position="left" scrollingPosition="end"
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Vertical - Scrollable - No Buttons Scroll End</div>
                     </TabStripContent>
-                </TabStripLeftScrollableButtonsHidden>
+                </TabStripScrollableButtonsHidden>
             </section>
 
 
             <section>
-                <TabStripLeftScrollableButtonsHidden scrollingPosition={null}>
+                <TabStripScrollableButtonsHidden position="left" scrollingPosition={null}
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Vertical - Scrollable - No Buttons Scroll both</div>
                     </TabStripContent>
-                </TabStripLeftScrollableButtonsHidden>
+                </TabStripScrollableButtonsHidden>
             </section>
 
             <span>Horizontal orientation - RTL</span>
@@ -69,7 +141,19 @@ export default () => (
             <span></span>
 
             <section>
-                <TabStripScrollableButtonsHidden dir="rtl">
+                <TabStripScrollableButtonsHidden dir="rtl"
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Horizontal - Scrollable - No Buttons Scroll Start</div>
                     </TabStripContent>
@@ -77,7 +161,19 @@ export default () => (
             </section>
 
             <section>
-                <TabStripScrollableButtonsHidden scrollingPosition="end" dir="rtl">
+                <TabStripScrollableButtonsHidden scrollingPosition="end" dir="rtl"
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Horizontal - Scrollable - No Buttons Scroll End</div>
                     </TabStripContent>
@@ -86,7 +182,19 @@ export default () => (
 
 
             <section>
-                <TabStripScrollableButtonsHidden scrollingPosition={null} dir="rtl">
+                <TabStripScrollableButtonsHidden scrollingPosition={null} dir="rtl"
+                    tabStripItems={
+                        <>
+                            <TabStripItem first value="First" />
+                            <TabStripItem value="Second" />
+                            <TabStripItem active value="Third" />
+                            <TabStripItem value="Fourth" />
+                            <TabStripItem value="Fifth - last visible" />
+                            <TabStripItem value="Sixth" />
+                            <TabStripItem last value="Last Very Long item" />
+                        </>
+                    }
+                >
                     <TabStripContent active>
                         <div>Horizontal - Scrollable - No Buttons Scroll Both</div>
                     </TabStripContent>
