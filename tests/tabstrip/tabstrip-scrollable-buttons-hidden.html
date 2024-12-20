@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style></style>
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+        <span>Horizontal orientation</span>
+        <span></span>
+        <span></span>
+        <section>
+            <div class="k-tabstrip k-tabstrip-top k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-scrollable-start k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Horizontal - Scrollable - No Buttons Scroll Start</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-tabstrip k-tabstrip-top k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-scrollable-end k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Horizontal - Scrollable - No Buttons Scroll End</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-tabstrip k-tabstrip-top k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Horizontal - Scrollable - No Buttons Scroll Both</div>
+                </div>
+            </div>
+        </section>
+        <span>Vertical orientation</span>
+        <span></span>
+        <span></span>
+        <section>
+            <div class="k-tabstrip k-tabstrip-left k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-scrollable-start k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-vstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Vertical - Scrollable - No Buttons Scroll Start</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-tabstrip k-tabstrip-left k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-scrollable-end k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-vstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Vertical - Scrollable - No Buttons Scroll End</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-tabstrip k-tabstrip-left k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-vstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Vertical - Scrollable - No Buttons Scroll both</div>
+                </div>
+            </div>
+        </section>
+        <span>Horizontal orientation - RTL</span>
+        <span></span>
+        <span></span>
+        <section>
+            <div dir="rtl" class="k-tabstrip k-tabstrip-top k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-scrollable-start k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Horizontal - Scrollable - No Buttons Scroll Start</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div dir="rtl" class="k-tabstrip k-tabstrip-top k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-scrollable-end k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Horizontal - Scrollable - No Buttons Scroll End</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div dir="rtl" class="k-tabstrip k-tabstrip-top k-tabstrip-scrollable k-tabstrip-scrollable-overlay k-tabstrip-md">
+                <div class="k-tabstrip-items-wrapper k-hstack">
+                    <ul class="k-tabstrip-items-scroll k-tabstrip-items k-reset k-tabstrip-items-start">
+                        <li class="k-item k-tabstrip-item k-first">
+                            <span class="k-link">
+                                <span class="k-link-text">First</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Second</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-active">
+                            <span class="k-link">
+                                <span class="k-link-text">Third</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fourth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Fifth - last visible</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item">
+                            <span class="k-link">
+                                <span class="k-link-text">Sixth</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-tabstrip-item k-last">
+                            <span class="k-link">
+                                <span class="k-link-text">Last Very Long item</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="k-tabstrip-content k-active">
+                    <div>Horizontal - Scrollable - No Buttons Scroll Both</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
