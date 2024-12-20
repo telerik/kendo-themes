@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 800px;
+            grid-template-columns: 80px repeat(2, 1fr);
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span></span>
+        <span>TextBox</span>
+        <span>TextBox RTL</span>
+        <span>normal</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                </span>
+            </div>
+        </div>
+        <span>placeholder</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="#" autocomplete="off" value="">
+                </span>
+            </div>
+        </div>
+        <span>normal</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <span>hover</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-hover">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-hover">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <span>focus</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-focus">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-focus">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <span>valid</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-valid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <span>invalid</span>
+        <div>
+            <div class="k-otp k-otp-md k-invalid">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md k-invalid">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <span>required</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span required="" class="k-otp-input k-input k-input-md k-input-outline k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <span>disabled</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <span>readonly</span>
+        <div>
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-readonly">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <span>invalid focus</span>
+        <div>
+            <div class="k-otp k-otp-md k-invalid">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid k-focus">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-otp k-otp-md k-invalid">
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid k-focus">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <div class="k-otp-separator">-</div>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+                <span class="k-otp-input k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
