@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-inline-form-field-padding-y</td>
     <td>Calculation</td>
     <td><code>calc( #{k-spacing(2)} + #{$kendo-input-border-width} )</code></td>
-    <td><code>calc(var(--kendo-spacing-2, 0.5rem) + var(--kendo-spacing-1px, 1px))</code></td>
+    <td><code>calc(var(--kendo-spacing-2, 0.5rem) + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the inline Form field.</div></div>

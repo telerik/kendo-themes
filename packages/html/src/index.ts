@@ -63,6 +63,7 @@ export * from './searchbox/index';
 export * from './switch/index';
 export * from './upload/index';
 export * from './dropzone/index';
+export * from './otp/index';
 
 // Command interfaces
 export * from './fab/index';

@@ -1,0 +1,12 @@
+@use "sass:map";
+
+@mixin kendo-otp--theme-base() {
+
+    // OTP
+    .k-otp {};
+
+}
+
+@mixin kendo-otp--theme() {
+    @include kendo-otp--theme-base();
+}
