@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.6](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.5...v10.1.0-dev.6) (2024-12-23)
+
+
+### Bug Fixes
+
+* **html:** use GridToolbar in angular grid test ([79859ba](https://github.com/telerik/kendo-themes/commit/79859ba74a0fddad3db5d0fe1dd5cf45a6f30fca))
+
+
+### Features
+
+* **dock-manager:** add support for floating panes ([dbbce4b](https://github.com/telerik/kendo-themes/commit/dbbce4b76336ff09369b5e328a00357fe50e582d))
+* **html:** add otp spec ([592948b](https://github.com/telerik/kendo-themes/commit/592948b64583e47e30108cf32008bc20430c6fbf))
+* **html:** add toolbar adaptive specs ([72570d2](https://github.com/telerik/kendo-themes/commit/72570d2ccdf7dfcfc025a0fd9519336f650c25d0))
+* **html:** enhance TabStrip rendering with sizing options and hidden scroll buttons ([74220b4](https://github.com/telerik/kendo-themes/commit/74220b402245696b7ad4356f29dacb905f394e6b))
+
+
+
+
+
 # [10.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.4...v10.1.0-dev.5) (2024-12-16)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0-dev.6](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.5...v10.1.0-dev.6) (2024-12-23)
+
+
+### Bug Fixes
+
+* **checkbox:** svg check icon always uses fallback color ([9e40412](https://github.com/telerik/kendo-themes/commit/9e404128d1751f2e72946d92b40bdc875d74cd1f))
+* **radio:** svg check icon always uses fallback color ([7696f64](https://github.com/telerik/kendo-themes/commit/7696f646ce2b458c9274e6ceae093c982782ef59))
+
+
+### Features
+
+* **otp:** add component styles ([42c071b](https://github.com/telerik/kendo-themes/commit/42c071b33278f50118e4be96824b6de154ba8057))
+* **tabstrip:** add styles for different sizes and hidden scroll buttons ([c493dd3](https://github.com/telerik/kendo-themes/commit/c493dd30c2cd1c1dbaeda537529b22e73854765c))
+* **toolbar:** add adaptive styles ([97e3731](https://github.com/telerik/kendo-themes/commit/97e3731e3c0d5086872983be1be5b2a77c1daaad))
+
+
+
+
+
 # [10.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.4...v10.1.0-dev.5) (2024-12-16)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
