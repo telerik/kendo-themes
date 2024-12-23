@@ -8102,6 +8102,36 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-editor-sm-min-width</td>
+    <td>Number</td>
+    <td><code>236px</code></td>
+    <td><code>236px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-min-width</td>
+    <td>Number</td>
+    <td><code>$kendo-color-editor-min-width</code></td>
+    <td><code>260px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-min-width</td>
+    <td>Number</td>
+    <td><code>360px</code></td>
+    <td><code>360px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-editor-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -8242,6 +8272,66 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-editor-sm-header-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-header-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-header-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-header-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-header-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-header-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-header-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-header-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-header-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-header-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-editor-color-preview-width</td>
     <td>Number</td>
     <td><code>34px</code></td>
@@ -8272,6 +8362,96 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-editor-sm-preview-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the small ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-preview-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-preview-spacing</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the medium ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-preview-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the large ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-color-preview-width</td>
+    <td>Number</td>
+    <td><code>34px</code></td>
+    <td><code>34px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-color-preview-height</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-color-preview-width</td>
+    <td>Number</td>
+    <td><code>$kendo-color-editor-color-preview-width</code></td>
+    <td><code>34px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-color-preview-height</td>
+    <td>Number</td>
+    <td><code>$kendo-color-editor-color-preview-height</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-color-preview-width</td>
+    <td>Number</td>
+    <td><code>34px</code></td>
+    <td><code>34px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-color-preview-height</td>
+    <td>Number</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-editor-views-padding-y</td>
     <td>String</td>
     <td><code>$kendo-color-editor-spacer</code></td>
@@ -8299,6 +8479,96 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-views-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-views-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-views-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-views-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the small ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-views-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-views-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-views-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-views-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-views-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-views-spacing</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the medium ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-views-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-views-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-views-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the large ColorEditor views container.</div></div>
     </td>
 </tr>
 <tr>
@@ -8349,6 +8619,48 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        min-width: $kendo-color-editor-sm-min-width,
+        header-padding-x: $kendo-color-editor-sm-header-padding-x,
+        header-padding-y: $kendo-color-editor-sm-header-padding-y,
+        views-padding-x: $kendo-color-editor-sm-views-padding-x,
+        views-padding-y: $kendo-color-editor-sm-views-padding-y,
+        preview-spacing: $kendo-color-editor-sm-preview-spacing,
+        preview-width: $kendo-color-editor-sm-color-preview-width,
+        preview-height: $kendo-color-editor-sm-color-preview-height,
+
+    ),
+    md: (
+        min-width: $kendo-color-editor-md-min-width,
+        header-padding-x: $kendo-color-editor-md-header-padding-x,
+        header-padding-y: $kendo-color-editor-md-header-padding-y,
+        views-padding-x: $kendo-color-editor-md-views-padding-x,
+        views-padding-y: $kendo-color-editor-md-views-padding-y,
+        preview-spacing: $kendo-color-editor-md-preview-spacing,
+        preview-width: $kendo-color-editor-md-color-preview-width,
+        preview-height: $kendo-color-editor-md-color-preview-height,
+    ),
+    lg: (
+        min-width: $kendo-color-editor-lg-min-width,
+        header-padding-x: $kendo-color-editor-lg-header-padding-x,
+        header-padding-y: $kendo-color-editor-lg-header-padding-y,
+        views-padding-x: $kendo-color-editor-lg-views-padding-x,
+        views-padding-y: $kendo-color-editor-lg-views-padding-y,
+        preview-spacing: $kendo-color-editor-lg-preview-spacing,
+        preview-width: $kendo-color-editor-lg-color-preview-width,
+        preview-height: $kendo-color-editor-lg-color-preview-height,
+    )
+)</code></td>
+    <td><ul><li>sm: "min-width":"236px","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","views-padding-x":"var(--kendo-spacing-2, 0.5rem)","views-padding-y":"var(--kendo-spacing-2, 0.5rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"12px"</li><li>md: "min-width":"260px","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","views-padding-x":"var(--kendo-spacing-2, 0.5rem)","views-padding-y":"var(--kendo-spacing-2, 0.5rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"14px"</li><li>lg: "min-width":"360px","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","views-padding-x":"var(--kendo-spacing-4, 1rem)","views-padding-y":"var(--kendo-spacing-4, 1rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"16px"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorEditor preview.</div></div>
     </td>
 </tr>
 </tbody>
@@ -8512,6 +8824,66 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-sm-width</td>
+    <td>Number</td>
+    <td><code>226px</code></td>
+    <td><code>226px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-width</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-width</code></td>
+    <td><code>260px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-width</td>
+    <td>Number</td>
+    <td><code>360px</code></td>
+    <td><code>360px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-spacing</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the sections of the small ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-spacing</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the sections of the medium ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the sections of the large ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-focus-border</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 ))</code></td>
@@ -8553,9 +8925,9 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td>$kendo-color-gradient-canvas-spacing</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-color-gradient-spacer} / 2 )</code></td>
-    <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the ColorGradient canvas.</div></div>
@@ -8569,6 +8941,66 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>164px</code></td>
+    <td><code>164px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the small ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
+    <td><code>180px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the medium ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>256px</code></td>
+    <td><code>256px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the large ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-canvas-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-canvas-spacing</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the small ColorGradient canvas.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-canvas-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-canvas-spacing</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the medium ColorGradient canvas.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-canvas-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the large ColorGradient canvas.</div></div>
     </td>
 </tr>
 <tr>
@@ -8659,6 +9091,36 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the ColorGradient alpha slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>164px</code></td>
+    <td><code>164px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorGradient vertical slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-slider-vertical-size</code></td>
+    <td><code>180px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorGradient vertical slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>256px</code></td>
+    <td><code>256px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorGradient vertical slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -8822,6 +9284,36 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-sm-input-width</td>
+    <td>Number</td>
+    <td><code>43.5px</code></td>
+    <td><code>43.5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorGradient input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-input-width</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-input-width</code></td>
+    <td><code>48px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorGradient input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-input-width</td>
+    <td>Number</td>
+    <td><code>50.5px</code></td>
+    <td><code>50.5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorGradient input.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-contrast-ratio-font-weight</td>
     <td>String</td>
     <td><code>var( --kendo-font-weight-bold, normal )</code></td>
@@ -8839,6 +9331,41 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the ColorGradient contrast tool.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        width: $kendo-color-gradient-sm-width,
+        vertical-slider-height: $kendo-color-gradient-sm-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-sm-canvas-rectangle-height,
+        input-width: $kendo-color-gradient-sm-input-width,
+        spacing: $kendo-color-gradient-sm-spacing,
+        canvas-spacing: $kendo-color-gradient-sm-canvas-spacing
+    ),
+    md: (
+        width: $kendo-color-gradient-md-width,
+        vertical-slider-height: $kendo-color-gradient-md-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-md-canvas-rectangle-height,
+        input-width: $kendo-color-gradient-md-input-width,
+        spacing: $kendo-color-gradient-md-spacing,
+        canvas-spacing: $kendo-color-gradient-md-canvas-spacing
+    ),
+    lg: (
+        width: $kendo-color-gradient-lg-width,
+        vertical-slider-height: $kendo-color-gradient-lg-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-lg-canvas-rectangle-height,
+        input-width: $kendo-color-gradient-lg-input-width,
+        spacing: $kendo-color-gradient-lg-spacing,
+        canvas-spacing: $kendo-color-gradient-lg-canvas-spacing
+    )
+)</code></td>
+    <td><ul><li>sm: "width":"226px","vertical-slider-height":"164px","rectangle-height":"164px","input-width":"43.5px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)"</li><li>md: "width":"260px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"48px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)"</li><li>lg: "width":"360px","vertical-slider-height":"256px","rectangle-height":"256px","input-width":"50.5px","spacing":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-spacing":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorGradient.</div></div>
     </td>
 </tr>
 </tbody>
@@ -8942,6 +9469,66 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-palette-tile-sm-width</td>
+    <td>String</td>
+    <td><code>k-spacing(5.5)</code></td>
+    <td><code>var(--kendo-spacing-5\.5, 1.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-sm-height</td>
+    <td>String</td>
+    <td><code>$kendo-color-palette-tile-sm-width</code></td>
+    <td><code>var(--kendo-spacing-5\.5, 1.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-md-width</td>
+    <td>String</td>
+    <td><code>$kendo-color-palette-tile-width</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-md-height</td>
+    <td>String</td>
+    <td><code>$kendo-color-palette-tile-height</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-lg-width</td>
+    <td>String</td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8, 2rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-lg-height</td>
+    <td>String</td>
+    <td><code>$kendo-color-palette-tile-lg-width</code></td>
+    <td><code>var(--kendo-spacing-8, 2rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-palette-tile-focus-outline</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
@@ -9009,6 +9596,29 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the ColorPalette selected hover tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        width: $kendo-color-palette-tile-sm-width,
+        height: $kendo-color-palette-tile-sm-height
+    ),
+    md: (
+        width: $kendo-color-palette-tile-md-width,
+        height: $kendo-color-palette-tile-md-height
+    ),
+    lg: (
+        width: $kendo-color-palette-tile-lg-width,
+        height: $kendo-color-palette-tile-lg-height
+    )
+)</code></td>
+    <td><ul><li>sm: "width":"var(--kendo-spacing-5\\.5, 1.375rem)","height":"var(--kendo-spacing-5\\.5, 1.375rem)"</li><li>md: "width":"var(--kendo-spacing-6, 1.5rem)","height":"var(--kendo-spacing-6, 1.5rem)"</li><li>lg: "width":"var(--kendo-spacing-8, 2rem)","height":"var(--kendo-spacing-8, 2rem)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorPalette.</div></div>
     </td>
 </tr>
 </tbody>

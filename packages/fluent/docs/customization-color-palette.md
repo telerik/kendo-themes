@@ -108,6 +108,66 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-palette-tile-sm-width</td>
+    <td>String</td>
+    <td><code>k-spacing(5.5)</code></td>
+    <td><code>var(--kendo-spacing-5\.5, 1.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-sm-height</td>
+    <td>String</td>
+    <td><code>$kendo-color-palette-tile-sm-width</code></td>
+    <td><code>var(--kendo-spacing-5\.5, 1.375rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-md-width</td>
+    <td>String</td>
+    <td><code>$kendo-color-palette-tile-width</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-md-height</td>
+    <td>String</td>
+    <td><code>$kendo-color-palette-tile-height</code></td>
+    <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-lg-width</td>
+    <td>String</td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8, 2rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-tile-lg-height</td>
+    <td>String</td>
+    <td><code>$kendo-color-palette-tile-lg-width</code></td>
+    <td><code>var(--kendo-spacing-8, 2rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorPalette tile.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-palette-tile-focus-outline</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
@@ -175,6 +235,29 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the ColorPalette selected hover tile.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-palette-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        width: $kendo-color-palette-tile-sm-width,
+        height: $kendo-color-palette-tile-sm-height
+    ),
+    md: (
+        width: $kendo-color-palette-tile-md-width,
+        height: $kendo-color-palette-tile-md-height
+    ),
+    lg: (
+        width: $kendo-color-palette-tile-lg-width,
+        height: $kendo-color-palette-tile-lg-height
+    )
+)</code></td>
+    <td><ul><li>sm: "width":"var(--kendo-spacing-5\\.5, 1.375rem)","height":"var(--kendo-spacing-5\\.5, 1.375rem)"</li><li>md: "width":"var(--kendo-spacing-6, 1.5rem)","height":"var(--kendo-spacing-6, 1.5rem)"</li><li>lg: "width":"var(--kendo-spacing-8, 2rem)","height":"var(--kendo-spacing-8, 2rem)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorPalette.</div></div>
     </td>
 </tr>
 </tbody>
