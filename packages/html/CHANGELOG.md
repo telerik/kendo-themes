@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.6...v10.1.0) (2024-12-23)
+
+
+### Features
+
+* **html:** add colorPicker sizing and adaptive rendering ([63d31ce](https://github.com/telerik/kendo-themes/commit/63d31ce8b582092b36f74a87e066a90d175892e9))
+
+
+
+
+
 # [10.1.0-dev.6](https://github.com/telerik/kendo-themes/compare/v10.1.0-dev.5...v10.1.0-dev.6) (2024-12-23)
 
 
