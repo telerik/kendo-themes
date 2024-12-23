@@ -158,6 +158,66 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-sm-width</td>
+    <td>Number</td>
+    <td><code>226px</code></td>
+    <td><code>226px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-width</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-width</code></td>
+    <td><code>272px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-width</td>
+    <td>Number</td>
+    <td><code>324px</code></td>
+    <td><code>324px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-gap</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-gap</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the sections of the small ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-gap</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-gap</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the sections of the medium ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the sections of the large ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-focus-border</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -205,6 +265,66 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>182px</code></td>
+    <td><code>182px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the small ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
+    <td><code>180px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the medium ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-canvas-rectangle-height</td>
+    <td>Number</td>
+    <td><code>268px</code></td>
+    <td><code>268px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the large ColorGradient canvas hsv rectangle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-canvas-gap</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-canvas-gap</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the small ColorGradient canvas.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-canvas-gap</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-canvas-gap</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the medium ColorGradient canvas.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-canvas-gap</td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items of the large ColorGradient canvas.</div></div>
     </td>
 </tr>
 <tr>
@@ -265,6 +385,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the ColorGradient alpha slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>182px</code></td>
+    <td><code>182px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorGradient vertical slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-slider-vertical-size</code></td>
+    <td><code>180px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorGradient vertical slider.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-slider-vertical-size</td>
+    <td>Number</td>
+    <td><code>268px</code></td>
+    <td><code>268px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorGradient vertical slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -409,9 +559,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-color-gradient-input-gap</td>
-    <td>Calculation</td>
-    <td><code>calc( #{$kendo-color-gradient-spacer} / 1.5 )</code></td>
-    <td><code>calc(var(--kendo-spacing-3, 0.75rem) / 1.5)</code></td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the ColorGradient inputs.</div></div>
@@ -438,6 +588,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-sm-input-width</td>
+    <td>Number</td>
+    <td><code>42px</code></td>
+    <td><code>42px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorGradient input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-input-width</td>
+    <td>Number</td>
+    <td><code>$kendo-color-gradient-input-width</code></td>
+    <td><code>46px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorGradient input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-input-width</td>
+    <td>Number</td>
+    <td><code>62.5px</code></td>
+    <td><code>62.5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorGradient input.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-contrast-ratio-font-weight</td>
     <td>String</td>
     <td><code>var( --kendo-font-weight-bold, normal )</code></td>
@@ -455,6 +635,41 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the ColorGradient contrast tool.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        width: $kendo-color-gradient-sm-width,
+        vertical-slider-height: $kendo-color-gradient-sm-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-sm-canvas-rectangle-height,
+        input-width: $kendo-color-gradient-sm-input-width,
+        gap: $kendo-color-gradient-sm-gap,
+        canvas-gap: $kendo-color-gradient-sm-canvas-gap
+    ),
+    md: (
+        width: $kendo-color-gradient-md-width,
+        vertical-slider-height: $kendo-color-gradient-md-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-md-canvas-rectangle-height,
+        input-width: $kendo-color-gradient-md-input-width,
+        gap: $kendo-color-gradient-md-gap,
+        canvas-gap: $kendo-color-gradient-md-canvas-gap
+    ),
+    lg: (
+        width: $kendo-color-gradient-lg-width,
+        vertical-slider-height: $kendo-color-gradient-lg-slider-vertical-size,
+        rectangle-height: $kendo-color-gradient-lg-canvas-rectangle-height,
+        input-width: $kendo-color-gradient-lg-input-width,
+        gap: $kendo-color-gradient-lg-gap,
+        canvas-gap: $kendo-color-gradient-lg-canvas-gap
+    )
+)</code></td>
+    <td><ul><li>sm: "width":"226px","vertical-slider-height":"182px","rectangle-height":"182px","input-width":"42px","gap":"var(--kendo-spacing-3, 0.75rem)","canvas-gap":"var(--kendo-spacing-3, 0.75rem)"</li><li>md: "width":"272px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"46px","gap":"var(--kendo-spacing-3, 0.75rem)","canvas-gap":"var(--kendo-spacing-3, 0.75rem)"</li><li>lg: "width":"324px","vertical-slider-height":"268px","rectangle-height":"268px","input-width":"62.5px","gap":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-gap":"var(--kendo-spacing-4\\.5, 1.125rem)"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorGradient.</div></div>
     </td>
 </tr>
 </tbody>

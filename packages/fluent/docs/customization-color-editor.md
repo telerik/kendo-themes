@@ -48,6 +48,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-editor-sm-min-width</td>
+    <td>Number</td>
+    <td><code>236px</code></td>
+    <td><code>236px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-min-width</td>
+    <td>Number</td>
+    <td><code>$kendo-color-editor-min-width</code></td>
+    <td><code>260px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-min-width</td>
+    <td>Number</td>
+    <td><code>360px</code></td>
+    <td><code>360px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-editor-border-width</td>
     <td>Number</td>
     <td><code>1px</code></td>
@@ -188,6 +218,66 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-editor-sm-header-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-header-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-header-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-header-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-header-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-header-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-header-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-header-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-header-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-header-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large ColorEditor header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-editor-color-preview-width</td>
     <td>Number</td>
     <td><code>34px</code></td>
@@ -218,6 +308,96 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-editor-sm-preview-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the small ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-preview-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-preview-spacing</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the medium ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-preview-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the large ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-color-preview-width</td>
+    <td>Number</td>
+    <td><code>34px</code></td>
+    <td><code>34px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-color-preview-height</td>
+    <td>Number</td>
+    <td><code>12px</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-color-preview-width</td>
+    <td>Number</td>
+    <td><code>$kendo-color-editor-color-preview-width</code></td>
+    <td><code>34px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-color-preview-height</td>
+    <td>Number</td>
+    <td><code>$kendo-color-editor-color-preview-height</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-color-preview-width</td>
+    <td>Number</td>
+    <td><code>34px</code></td>
+    <td><code>34px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-color-preview-height</td>
+    <td>Number</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorEditor preview.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-editor-views-padding-y</td>
     <td>String</td>
     <td><code>$kendo-color-editor-spacer</code></td>
@@ -245,6 +425,96 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-views-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(2)</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-views-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-views-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sm-views-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the small ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-views-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-views-padding-y</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-views-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-views-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-md-views-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-color-editor-views-spacing</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the medium ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-views-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-views-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large ColorEditor views container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-lg-views-spacing</td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the large ColorEditor views container.</div></div>
     </td>
 </tr>
 <tr>
@@ -295,6 +565,48 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline offset of the focused ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-editor-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        min-width: $kendo-color-editor-sm-min-width,
+        header-padding-x: $kendo-color-editor-sm-header-padding-x,
+        header-padding-y: $kendo-color-editor-sm-header-padding-y,
+        views-padding-x: $kendo-color-editor-sm-views-padding-x,
+        views-padding-y: $kendo-color-editor-sm-views-padding-y,
+        preview-spacing: $kendo-color-editor-sm-preview-spacing,
+        preview-width: $kendo-color-editor-sm-color-preview-width,
+        preview-height: $kendo-color-editor-sm-color-preview-height,
+
+    ),
+    md: (
+        min-width: $kendo-color-editor-md-min-width,
+        header-padding-x: $kendo-color-editor-md-header-padding-x,
+        header-padding-y: $kendo-color-editor-md-header-padding-y,
+        views-padding-x: $kendo-color-editor-md-views-padding-x,
+        views-padding-y: $kendo-color-editor-md-views-padding-y,
+        preview-spacing: $kendo-color-editor-md-preview-spacing,
+        preview-width: $kendo-color-editor-md-color-preview-width,
+        preview-height: $kendo-color-editor-md-color-preview-height,
+    ),
+    lg: (
+        min-width: $kendo-color-editor-lg-min-width,
+        header-padding-x: $kendo-color-editor-lg-header-padding-x,
+        header-padding-y: $kendo-color-editor-lg-header-padding-y,
+        views-padding-x: $kendo-color-editor-lg-views-padding-x,
+        views-padding-y: $kendo-color-editor-lg-views-padding-y,
+        preview-spacing: $kendo-color-editor-lg-preview-spacing,
+        preview-width: $kendo-color-editor-lg-color-preview-width,
+        preview-height: $kendo-color-editor-lg-color-preview-height,
+    )
+)</code></td>
+    <td><ul><li>sm: "min-width":"236px","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","views-padding-x":"var(--kendo-spacing-2, 0.5rem)","views-padding-y":"var(--kendo-spacing-2, 0.5rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"12px"</li><li>md: "min-width":"260px","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","views-padding-x":"var(--kendo-spacing-2, 0.5rem)","views-padding-y":"var(--kendo-spacing-2, 0.5rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"14px"</li><li>lg: "min-width":"360px","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","views-padding-x":"var(--kendo-spacing-4, 1rem)","views-padding-y":"var(--kendo-spacing-4, 1rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"16px"</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorEditor preview.</div></div>
     </td>
 </tr>
 </tbody>
