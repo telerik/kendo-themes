@@ -11,7 +11,7 @@ export type KendoPivotGridProps = {
     emptyCell?: React.JSX.Element;
     columnHeaders?: React.JSX.Element;
     rowHeaders?: React.JSX.Element;
-    configurator?: JSX.Element;
+    configurator?: React.JSX.Element;
     configuratorDisplay?: "none" | "closed" | "opened";
     configuratorPosition?: "left" | "bottom" | "right" | "top";
 
