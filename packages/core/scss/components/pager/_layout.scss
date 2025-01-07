@@ -1,0 +1,191 @@
+@use "sass:map";
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-pager--layout-base() {
+
+    .k-pager {
+        padding: 0;
+        border-width: $kendo-pager-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-pager-font-family;
+        font-size: $kendo-pager-font-size;
+        line-height: $kendo-pager-line-height;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        cursor: default;
+        flex: 0 0 auto;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+
+    // Base pager section
+    %base-pager-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    // Base pager item
+    %base-pager-item {
+        color: inherit;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &:hover {
+            z-index: 2;
+        }
+        &.k-disabled {
+            color: inherit;
+        }
+    }
+
+
+    // Pager items
+    .k-pager-nav {
+        @extend %base-pager-item !optional;
+    }
+
+
+    // Pager numbers
+    .k-pager-numbers-wrap {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        select.k-dropdown-list {
+            width: $kendo-pager-md-dropdown-width;
+        }
+    }
+    .k-pager-numbers {
+        display: flex;
+        flex-direction: row;
+
+        // Selected state
+        .k-selected {
+            cursor: inherit;
+            z-index: 2;
+        }
+    }
+
+
+    // Spacing between items
+    .k-pager-nav + .k-pager-nav,
+    .k-pager-nav + .k-pager-numbers-wrap,
+    .k-pager-numbers-wrap + .k-pager-nav {
+        @if ($kendo-pager-item-spacing) {
+            margin-left: $kendo-pager-item-spacing;
+        }
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-pager-nav + .k-pager-nav,
+        .k-pager-nav + .k-pager-numbers-wrap,
+        .k-pager-numbers-wrap + .k-pager-nav {
+            @if ($kendo-pager-item-spacing) {
+                margin-left: 0;
+                margin-right: $kendo-pager-item-spacing;
+            }
+        }
+    }
+
+
+    // Pager input
+    .k-pager-input {
+        @extend %base-pager-section !optional;
+        gap: 1ex;
+
+        .k-textbox,
+        .k-numerictextbox {
+            margin-block: 0;
+            width: $kendo-pager-input-width;
+        }
+    }
+
+
+    // Pager sizes
+    .k-pager-sizes {
+        @extend %base-pager-section !optional;
+        gap: 1ex;
+
+        .k-input-inner,
+        .k-input-value-text {
+            text-overflow: clip;
+        }
+    }
+
+
+    // Pager info
+    .k-pager-info {
+        @extend %base-pager-section !optional;
+        text-align: end;
+        justify-content: flex-end;
+        flex: 1 1 0%;
+        order: 9;
+    }
+
+
+    // Pager refresh
+    .k-pager-refresh {
+        margin-inline-start: auto;
+        color: inherit;
+        order: 10;
+    }
+
+    // Pager sizes
+    @each $size, $size-props in $kendo-pager-sizes {
+        $_padding-x: map.get($size-props, padding-x);
+        $_padding-y: map.get($size-props, padding-y);
+        $_item-group-spacing: map.get($size-props, item-group-spacing);
+        $_item-min-width: map.get($size-props, item-min-width);
+        $_pager-dropdown-width: map.get($size-props, pager-dropdown-width);
+
+        .k-pager-#{$size} {
+            padding-inline: $_padding-x;
+            padding-block: $_padding-y;
+            gap: $_item-group-spacing;
+
+            .k-pager-numbers-wrap {
+                .k-button {
+                    min-width: $_item-min-width;
+                }
+
+                .k-pager-input,
+                > select.k-dropdown-list {
+                    margin-inline-start: $_item-group-spacing;
+                    margin-inline-end: $_item-group-spacing;
+                }
+            }
+
+            .k-pager-sizes {
+                .k-dropdown-list,
+                > select {
+                    width: $_pager-dropdown-width;
+                }
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-pager--layout() {
+    @include kendo-pager--layout-base();
+}

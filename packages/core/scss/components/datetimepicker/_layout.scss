@@ -1,0 +1,56 @@
+@use "./variables.scss" as *;
+@use "../action-buttons/_variables.scss" as *;
+
+@mixin kendo-date-time-picker--layout-base() {
+
+    // Datetime container
+    .k-datetime-container {}
+
+    // Datetime selector
+    .k-datetime-selector {
+        display: flex;
+        transition: transform .2s;
+    }
+
+    // Wrap
+    .k-datetime-wrap {
+        width: $kendo-datetime-width;
+        overflow: hidden;
+
+        .k-datetime-buttongroup {
+            padding-block: $kendo-actions-padding-y;
+            padding-inline: $kendo-actions-padding-x;
+        }
+
+        .k-calendar,
+        .k-timeselector {
+            width: 100%;
+            border-width: 0;
+        }
+    }
+
+    // Inner wrap
+    .k-datetime-calendar-wrap,
+    .k-datetime-time-wrap {
+        text-align: center;
+        flex: 0 0 $kendo-datetime-width;
+    }
+
+    // Tabs
+    .k-date-tab .k-datetime-selector {
+        transform: translateX(0);
+    }
+    .k-time-tab .k-datetime-selector {
+        transform: translateX(-100%);
+    }
+
+    :is(.k-rtl, [dir="rtl"]) .k-time-tab .k-datetime-selector,
+    .k-time-tab .k-datetime-selector:is(.k-rtl, [dir="rtl"]) {
+        transform: translateX(100%);
+    }
+}
+
+
+@mixin kendo-date-time-picker--layout() {
+    @include kendo-date-time-picker--layout-base();
+}

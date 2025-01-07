@@ -1,0 +1,30 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../slider/_index.scss" as *;
+@use "../textbox/_index.scss" as *;
+@use "../numerictextbox/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-color-gradient--styles() {
+    @include import-once( "color-gradient" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-button--styles();
+        @include kendo-slider--styles();
+        @include kendo-textbox--styles();
+        @include kendo-numeric-textbox--styles();
+        @include kendo-color-gradient--layout();
+        @include kendo-color-gradient--theme();
+        @include kendo-utils--flex-grid--flex();
+        @include kendo-utils--flex-grid--align-self();
+        @include kendo-utils--typography--text-color();
+    }
+}

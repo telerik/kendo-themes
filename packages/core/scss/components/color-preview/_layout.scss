@@ -1,0 +1,84 @@
+@use "./_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
+@mixin kendo-color-preview--layout-base() {
+
+    // Color Preview
+    .k-color-preview {
+        width: 100%;
+        height: 100%;
+        border-width: $kendo-color-preview-border-width;
+        border-radius: $kendo-color-preview-border-radius;
+        box-sizing: border-box;
+        border-style: solid;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        position: relative;
+        overflow: hidden;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+
+    // Current Color
+    .k-coloreditor-current-color {
+        cursor: pointer;
+    }
+
+
+    // Icon color preview
+    .k-icon-color-preview {
+        border-width: 0;
+        border-radius: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+
+        .k-color-preview-mask {
+            width: calc( #{$kendo-icon-size} - 2px );
+            height: 2px;
+        }
+    }
+
+
+    // Color Preview Mask
+    .k-color-preview-mask {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .k-color-preview-mask::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: $kendo-color-preview-transparent-color-image;
+        background-size: contain;
+        background-position: 0 0;
+    }
+
+
+    // No Color
+    .k-no-color .k-color-preview-mask::before {
+        content: "";
+        background-color: $kendo-color-preview-no-color-bg;
+        background-image: $kendo-color-preview-no-color-image;
+        background-size: 100% 100%;
+        background-position: 0 0;
+    }
+
+}
+
+
+@mixin kendo-color-preview--layout() {
+    @include kendo-color-preview--layout-base();
+}

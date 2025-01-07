@@ -1,0 +1,56 @@
+@mixin kendo-ripple--layout-base() {
+
+    .k-ripple-target {
+        position: relative;
+    }
+
+    .k-ripple {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .k-ripple-blob {
+        pointer-events: none;
+        position: absolute;
+        border-radius: 50%;
+        padding: 0;
+        transform: translate(-50%, -50%) scale(0);
+        transition: opacity 100ms linear, transform 500ms cubic-bezier(.4, 0, .2, 1);
+        opacity: .1;
+        background-color: currentColor;
+    }
+
+    .k-primary .k-ripple-blob {
+        opacity: .2;
+    }
+
+    .k-ripple-focus::after {
+        visibility: visible;
+        animation: ripple 600ms ease-out;
+    }
+
+    @keyframes ripple {
+        0% {
+            transform: translate(-50%, -50%) scale(0);
+        }
+        20% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        100% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+}
+
+
+@mixin kendo-ripple--layout() {
+    @include kendo-ripple--layout-base();
+}

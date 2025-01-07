@@ -1,0 +1,175 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-switch--theme-base() {
+
+    // Switch
+    .k-switch {}
+
+
+    // Switch OFF
+    .k-switch-off {
+
+        // Normal state
+        .k-switch-track {
+            @include fill(
+                $kendo-switch-off-track-text,
+                $kendo-switch-off-track-bg,
+                $kendo-switch-off-track-border,
+                $kendo-switch-off-track-gradient
+            );
+        }
+        .k-switch-thumb {
+            @include fill(
+                $kendo-switch-off-thumb-text,
+                $kendo-switch-off-thumb-bg,
+                $kendo-switch-off-thumb-border,
+                $kendo-switch-off-thumb-gradient
+            );
+        }
+
+        // Hover
+        &:hover,
+        &.k-hover {
+            .k-switch-track {
+                @include fill(
+                    $kendo-switch-off-track-hover-text,
+                    $kendo-switch-off-track-hover-bg,
+                    $kendo-switch-off-track-hover-border,
+                    $kendo-switch-off-track-hover-gradient
+                );
+            }
+
+            .k-switch-thumb {
+                @include fill(
+                    $kendo-switch-off-thumb-hover-text,
+                    $kendo-switch-off-thumb-hover-bg,
+                    $kendo-switch-off-thumb-hover-border,
+                    $kendo-switch-off-thumb-hover-gradient
+                );
+            }
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            .k-switch-track {
+                @include fill(
+                    $kendo-switch-off-track-focus-text,
+                    $kendo-switch-off-track-focus-bg,
+                    $kendo-switch-off-track-focus-border,
+                    $kendo-switch-off-track-focus-gradient
+                );
+                @if $kendo-enable-focus-contrast {
+                    @include box-shadow( 0 0 0 2px if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )) );
+                } @else {
+                    outline: $kendo-switch-off-track-focus-ring;
+                }
+            }
+        }
+
+        // Disabled
+        &:disabled,
+        &.k-disabled {
+            .k-switch-track {
+                @include fill(
+                    $kendo-switch-off-track-disabled-text,
+                    $kendo-switch-off-track-disabled-bg,
+                    $kendo-switch-off-track-disabled-border,
+                    $kendo-switch-off-track-disabled-gradient
+                );
+            }
+        }
+
+        .k-switch-label-on {
+            color: transparent;
+        }
+    }
+
+
+    // Switch ON
+    .k-switch-on {
+
+        // Normal state
+        .k-switch-track {
+            @include fill(
+                $kendo-switch-on-track-text,
+                $kendo-switch-on-track-bg,
+                $kendo-switch-on-track-border,
+                $kendo-switch-on-track-gradient
+            );
+        }
+        .k-switch-thumb {
+            @include fill(
+                $kendo-switch-on-thumb-text,
+                $kendo-switch-on-thumb-bg,
+                $kendo-switch-on-thumb-border,
+                $kendo-switch-on-thumb-gradient
+            );
+        }
+
+        // Hover
+        &:hover,
+        &.k-hover {
+            .k-switch-track {
+                @include fill(
+                    $kendo-switch-on-track-hover-text,
+                    $kendo-switch-on-track-hover-bg,
+                    $kendo-switch-on-track-hover-border,
+                    $kendo-switch-on-track-hover-gradient
+                );
+            }
+
+            .k-switch-thumb {
+                @include fill(
+                    $kendo-switch-on-thumb-hover-text,
+                    $kendo-switch-on-thumb-hover-bg,
+                    $kendo-switch-on-thumb-hover-border,
+                    $kendo-switch-on-thumb-hover-gradient
+                );
+            }
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            .k-switch-track {
+                @include fill(
+                    $kendo-switch-on-track-focus-text,
+                    $kendo-switch-on-track-focus-bg,
+                    $kendo-switch-on-track-focus-border,
+                    $kendo-switch-on-track-focus-gradient
+                );
+                @if $kendo-enable-focus-contrast {
+                    @include box-shadow( 0 0 0 2px if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )) );
+                } @else {
+                    outline: $kendo-switch-on-track-focus-ring;
+                }
+            }
+        }
+
+        // Disabled
+        &:disabled,
+        &.k-disabled {
+            .k-switch-track {
+                @include fill(
+                    $kendo-switch-on-track-disabled-text,
+                    $kendo-switch-on-track-disabled-bg,
+                    $kendo-switch-on-track-disabled-border,
+                    $kendo-switch-on-track-disabled-gradient
+                );
+            }
+        }
+
+        .k-switch-label-off {
+            color: transparent;
+        }
+    }
+
+}
+
+
+@mixin kendo-switch--theme() {
+    @include kendo-switch--theme-base();
+}

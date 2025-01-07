@@ -1,0 +1,233 @@
+@use "sass:map";
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../spacing/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-radio--layout-base() {
+
+    // Radio
+    .k-radio {
+        @include border-radius( $kendo-radio-radius );
+        margin: 0;
+        padding: 0;
+        line-height: initial;
+        border-width: $kendo-radio-border-width;
+        border-style: solid;
+        outline: 0;
+        box-sizing: border-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        flex: none;
+        vertical-align: middle;
+        position: relative;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+
+
+    // Radio indicator
+    .k-radio::before {
+        @if $kendo-radio-indicator-type == "glyph" {
+            content: $kendo-radio-checked-glyph;
+            width: 1em;
+            height: 1em;
+            font-family: $kendo-radio-glyph-font-family;
+            line-height: 1;
+            transform: scale(0) translate(-50%, -50%);
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        @if $kendo-radio-indicator-type == "image" {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            mask-repeat: no-repeat;
+        }
+    }
+
+
+    // Checked state
+    .k-radio:checked,
+    .k-radio.k-checked {
+        @if $kendo-radio-indicator-type == "image" {
+            &::before {
+                background-color: currentColor;
+                mask-image: $kendo-radio-checked-image;
+            }
+        }
+
+        @if $kendo-radio-indicator-type == "glyph" {
+            &::before {
+                transform: scale(1) translate(-50%, -50%);
+            }
+        }
+    }
+
+
+    // Disabled state
+    .k-radio:disabled,
+    .k-radio.k-disabled {
+        @include disabled( $kendo-disabled-styling... );
+    }
+    .k-radio:disabled:checked,
+    .k-radio.k-disabled.k-checked {
+        @if $kendo-radio-indicator-type == "image" {
+            background-image: $kendo-radio-disabled-checked-image;
+        }
+    }
+
+
+    // Radio wrap
+    .k-radio-wrap {
+        flex: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        gap: 0;
+        align-items: center;
+        align-self: start;
+        vertical-align: middle;
+        position: relative;
+
+        &::before {
+            content: "\200b";
+            width: 0px;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+
+    // Radio label
+    .k-radio-label {
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: $kendo-radio-label-margin-x;
+        vertical-align: middle;
+        position: relative;
+        cursor: pointer;
+
+        .k-ripple {
+            // Hide ripple temporarily
+            visibility: hidden !important; // stylelint-disable-line declaration-no-important
+        }
+    }
+    .k-radio + .k-label,
+    .k-radio-wrap + .k-label,
+    .k-radio + .k-radio-label,
+    .k-radio-wrap + .k-radio-label {
+        display: inline;
+        margin-inline-start: $kendo-radio-label-margin-x;
+    }
+
+
+    // Empty label
+    .k-radio-label:empty {
+        display: none !important; // stylelint-disable-line declaration-no-important
+    }
+    .k-radio-label.k-no-text {
+        min-width: 1px;
+    }
+
+
+    // Radio list
+    .k-radio-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
+        list-style: none;
+    }
+    .k-radio-item,
+    .k-radio-list-item {
+        padding-block: $kendo-radio-list-item-padding-y;
+        padding-inline: $kendo-radio-list-item-padding-x;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+        gap: k-spacing(1);
+
+        .k-radio-label {
+            margin: 0;
+        }
+    }
+    .k-radio-list-horizontal,
+    .k-radio-list.k-list-horizontal {
+        display: flex;
+        flex-flow: row wrap;
+        gap: $kendo-radio-list-spacing;
+    }
+
+
+    // Ripple
+    .k-ripple-container {
+        .k-radio::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 100%;
+            z-index: -1;
+            transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
+            transform: translate(-50%, -50%) scale(0);
+            transform-origin: center center;
+        }
+
+        .k-radio:focus,
+        .k-radio.k-focus {
+            box-shadow: none !important; // stylelint-disable-line declaration-no-important
+        }
+
+        .k-radio:disabled::after,
+        .k-radio.k-disabled::after {
+            display: none;
+        }
+
+        .k-radio:disabled::after,
+        .k-radio.k-disabled::after {
+            display: none;
+        }
+    }
+
+
+    // Radio size
+    @each $size, $size-props in $kendo-radio-sizes {
+        $_size: map.get( $size-props, size );
+        $_glyph-size: map.get( $size-props, glyph-size );
+        $_ripple-size: map.get( $size-props, ripple-size );
+
+        .k-radio-#{$size} {
+            width: $_size;
+            height: $_size;
+
+            &::before {
+                font-size: $_glyph-size;
+            }
+        }
+        .k-ripple-container {
+            .k-radio-#{$size}::after {
+                width: $_ripple-size;
+                height: $_ripple-size;
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-radio--layout() {
+    @include kendo-radio--layout-base();
+}

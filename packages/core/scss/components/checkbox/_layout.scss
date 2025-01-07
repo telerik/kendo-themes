@@ -1,0 +1,237 @@
+@use "sass:map";
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../spacing/index.import.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-checkbox--layout-base() {
+
+    // Checkbox
+    .k-checkbox {
+        margin: 0;
+        padding: 0;
+        line-height: initial;
+        border-width: $kendo-checkbox-border-width;
+        border-style: solid;
+        outline: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        flex: none;
+        vertical-align: middle;
+        position: relative;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+
+
+    // Checkbox indicator
+    .k-checkbox::before {
+        @if $kendo-checkbox-indicator-type == "image" {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            mask-repeat: no-repeat;
+        }
+        @if $kendo-checkbox-indicator-type == "glyph" {
+            content: $kendo-checkbox-checked-glyph;
+            width: 1em;
+            height: 1em;
+            font-family: $kendo-checkbox-glyph-font-family;
+            line-height: 1;
+            transform: translate(-50%, -50%) scale(0);
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+
+    // Checked state
+    .k-checkbox:checked,
+    .k-checkbox.k-checked {
+        @if $kendo-checkbox-indicator-type == "image" {
+            &::before {
+                background-color: currentColor;
+                mask-image: $kendo-checkbox-checked-image;
+            }
+        }
+
+        @if $kendo-checkbox-indicator-type == "glyph" {
+            &::before {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    }
+
+
+    // Indeterminate state
+    .k-checkbox:indeterminate,
+    .k-checkbox.k-indeterminate {
+        @if $kendo-checkbox-indicator-type == "image" {
+            &::before {
+                background-color: currentColor;
+                mask-image: $kendo-checkbox-indeterminate-image;
+            }
+        }
+
+        @if $kendo-checkbox-indicator-type == "glyph" {
+            &::before {
+                content: $kendo-checkbox-indeterminate-glyph;
+                transform: scale(1) translate(-50%, -50%);
+            }
+        }
+    }
+
+
+    // Disabled state
+    .k-checkbox:disabled,
+    .k-checkbox.k-disabled {
+        @include disabled( $kendo-disabled-styling... );
+    }
+
+
+    // Checkbox wrap
+    .k-checkbox-wrap {
+        flex: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        gap: 0;
+        align-items: center;
+        align-self: flex-start;
+        vertical-align: middle;
+        position: relative;
+
+        &::before {
+            content: "\200b";
+            width: 0px;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+
+    // Checkbox label
+    .k-checkbox-label {
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: $kendo-checkbox-label-margin-x;
+        vertical-align: middle;
+        position: relative;
+        cursor: pointer;
+
+        .k-ripple {
+            // Hide ripple temporarily
+            visibility: hidden !important; // stylelint-disable-line declaration-no-important
+        }
+    }
+    .k-checkbox + .k-label,
+    .k-checkbox-wrap + .k-label,
+    .k-checkbox + .k-checkbox-label,
+    .k-checkbox-wrap + .k-checkbox-label {
+        display: inline;
+        margin-inline-start: $kendo-checkbox-label-margin-x;
+    }
+
+
+    // Empty label
+    .k-checkbox-label:empty {
+        display: none !important; // stylelint-disable-line declaration-no-important
+    }
+    .k-checkbox-label.k-no-text {
+        min-width: 1px;
+    }
+
+
+    // Checkbox list
+    .k-checkbox-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
+        list-style: none;
+    }
+    .k-checkbox-item,
+    .k-checkbox-list-item {
+        padding-block: $kendo-checkbox-list-item-padding-y;
+        padding-inline: $kendo-checkbox-list-item-padding-x;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+        gap: k-spacing(1);
+
+        .k-checkbox-label {
+            margin: 0;
+        }
+    }
+    .k-checkbox-list-horizontal,
+    .k-checkbox-list.k-list-horizontal {
+        display: flex;
+        flex-flow: row wrap;
+        gap: $kendo-checkbox-list-spacing;
+    }
+
+
+    // Ripple
+    .k-ripple-container {
+        .k-checkbox::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 100%;
+            z-index: -1;
+            transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
+            transform: translate(-50%, -50%) scale(0);
+            transform-origin: center center;
+        }
+
+        .k-checkbox:focus,
+        .k-checkbox.k-focus {
+            box-shadow: none !important; // stylelint-disable-line declaration-no-important
+        }
+
+        .k-checkbox:disabled::after,
+        .k-checkbox.k-disabled::after {
+            display: none;
+        }
+    }
+
+
+    // Checkbox size
+    @each $size, $size-props in $kendo-checkbox-sizes {
+        $_size: map.get( $size-props, size );
+        $_glyph-size: map.get( $size-props, glyph-size );
+        $_ripple-size: map.get( $size-props, ripple-size );
+
+        .k-checkbox-#{$size} {
+            width: $_size;
+            height: $_size;
+
+            &::before {
+                font-size: $_glyph-size;
+            }
+        }
+        .k-ripple-container {
+            .k-checkbox-#{$size}::after {
+                width: $_ripple-size;
+                height: $_ripple-size;
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-checkbox--layout() {
+    @include kendo-checkbox--layout-base();
+}

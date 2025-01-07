@@ -1,0 +1,53 @@
+@use "../../color-system/_constants.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-tile-layout--layout-base() {
+
+    .k-tilelayout {
+        border-width: $kendo-tile-layout-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        display: grid;
+        position: relative;
+        padding: $kendo-tile-layout-padding-y $kendo-tile-layout-padding-x;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        .k-card {
+            @include box-shadow( none );
+            border-width: $kendo-tile-layout-card-border-width;
+        }
+    }
+
+    .k-tilelayout-item {
+        position: relative;
+        z-index: 0;
+    }
+
+    .k-layout-item-hint {
+        @include border-radius( $kendo-tile-layout-hint-border-radius );
+        border-width: $kendo-tile-layout-hint-border-width;
+        border-style: solid;
+        position: relative;
+
+        &.k-layout-item-hint-resize {
+            z-index: 3;
+        }
+    }
+
+    .k-tilelayout-item-header.k-card-header {
+        z-index: 0;
+    }
+
+    .k-tilelayout-item-body {
+        min-height: 0;
+    }
+
+}
+
+
+@mixin kendo-tile-layout--layout() {
+    @include kendo-tile-layout--layout-base();
+}

@@ -1,0 +1,95 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-floating-label--layout-base() {
+
+
+    // Floating label
+    .k-floating-label-container {
+        padding-top: $kendo-floating-label-height;
+        box-sizing: border-box;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+        flex-direction: column;
+        justify-content: stretch;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        > .k-floating-label {
+            max-width: $kendo-floating-label-max-width;
+            font-size: $kendo-floating-label-font-size;
+            line-height: $kendo-floating-label-line-height;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: absolute;
+            top: var(--kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y});
+            left: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
+            overflow: hidden;
+            cursor: text;
+            transform-origin: left center;
+            transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, left $kendo-floating-label-transition;
+        }
+
+
+        &.k-empty {
+            > .k-floating-label {
+                top: var(--kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y});
+                left: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
+                transform: scale( $kendo-floating-label-scale );
+                pointer-events: none;
+            }
+        }
+
+        > .k-floating-label,
+        &.k-focus > .k-floating-label {
+            top: var(--kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y});
+            left: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
+            transform: scale( $kendo-floating-label-focus-scale );
+        }
+        &:focus-within > .k-floating-label {
+            top: var(--kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y});
+            left: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
+            transform: scale( $kendo-floating-label-focus-scale );
+        }
+
+        &.k-empty:not(.k-focus):not(:focus-within) ::placeholder {
+            color: transparent;
+        }
+    }
+
+    [dir="rtl"] .k-floating-label-container,
+    .k-rtl .k-floating-label-container,
+    .k-floating-label-container[dir="rtl"] {
+        > .k-floating-label {
+            transform-origin: right center;
+            transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, right $kendo-floating-label-transition;
+        }
+
+        &.k-empty {
+            > .k-floating-label {
+                left: auto;
+                right: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
+            }
+        }
+
+        > .k-floating-label,
+        &.k-focus > .k-floating-label {
+            left: auto;
+            right: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
+        }
+        &:focus-within > .k-floating-label {
+            left: auto;
+            right: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
+        }
+    }
+
+}
+
+
+@mixin kendo-floating-label--layout() {
+    @include kendo-floating-label--layout-base();
+}

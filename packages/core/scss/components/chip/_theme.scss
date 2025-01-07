@@ -1,0 +1,154 @@
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-chip--theme-base() {
+
+    // Solid
+    @each $name, $color in $kendo-chip-theme-colors {
+        .k-chip-solid-#{$name} {
+
+            @if ($name == "base") {
+                @include fill(
+                    $kendo-chip-solid-text,
+                    $kendo-chip-solid-bg,
+                    $kendo-chip-solid-border,
+                    $kendo-chip-solid-gradient
+                );
+
+                &:focus,
+                &.k-focus {
+                    @include fill( $bg: $kendo-chip-solid-focus-bg );
+                    @include focus-indicator( $kendo-chip-solid-shadow );
+                }
+
+                &:hover,
+                &.k-hover {
+                    @include fill( $bg: $kendo-chip-solid-hover-bg );
+                }
+
+                &.k-selected {
+                    @include fill( $bg: $kendo-chip-solid-selected-bg );
+                }
+            } @else {
+                @include fill(
+                    if($kendo-enable-color-system, k-color( #{$name}-on-subtle ), k-try-shade( $color, 65% )),
+                    if($kendo-enable-color-system, k-color( #{$name}-subtle ), k-try-tint( $color, 80% )),
+                    if($kendo-enable-color-system, k-color( #{$name}-emphasis ), k-try-tint( $color, 25% )),
+                    $kendo-chip-solid-gradient
+                );
+
+                &:focus,
+                &.k-focus {
+                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( $name ) 16%, transparent), rgba( $color, .16 )) );
+                }
+
+                &:hover,
+                &.k-hover {
+                    @include fill( $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-hover ), k-try-tint($color, 65% )) );
+                }
+
+                &.k-selected {
+                    @include fill( $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-active ), k-try-tint( $color, 50% )) );
+                }
+            }
+        }
+    }
+
+
+    // Outline
+    @each $name, $color in $kendo-chip-theme-colors {
+        .k-chip-outline-#{$name} {
+            @if ($name == "base") {
+                @include fill(
+                    $kendo-chip-outline-text,
+                    transparent,
+                    $kendo-chip-outline-border
+                );
+
+                &:focus,
+                &.k-focus {
+                    @include focus-indicator( $kendo-chip-outline-shadow );
+                }
+
+                &:hover,
+                &.k-hover {
+                    @include fill(
+                        $color: $kendo-chip-outline-hover-text,
+                        $bg: $kendo-chip-outline-hover-bg
+                    );
+                }
+
+                &.k-selected {
+                    @include fill(
+                        $color: $kendo-chip-outline-selected-text,
+                        $bg: $kendo-chip-outline-selected-bg
+                    );
+                }
+            } @else if ($name == "warning") {
+                @include fill(
+                    if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text)),
+                    if($kendo-enable-color-system, transparent, if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
+                    if($kendo-enable-color-system, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
+                );
+
+                &:focus,
+                &.k-focus {
+                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( $name ) 16%, transparent), if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 ))) );
+                }
+
+                &:hover,
+                &.k-hover {
+                    @include fill(
+                        $color: if($kendo-enable-color-system, k-color( on-#{$name} ), if( $kendo-is-dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) )),
+                        $bg: if($kendo-enable-color-system, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
+                    );
+                }
+
+                &.k-selected {
+                    @include fill(
+                        $color: if($kendo-enable-color-system, k-color( on-#{$name} ), if( $kendo-is-dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) )),
+                        $bg: if($kendo-enable-color-system, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
+                    );
+                }
+            } @else {
+                @include fill(
+                    if($kendo-enable-color-system, k-color( #{$name}-on-surface ), k-try-shade( $color, 25% )),
+                    if($kendo-enable-color-system, transparent, if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
+                    if($kendo-enable-color-system, k-color( #{$name}-on-surface ), k-try-shade( $color, 25% ))
+                );
+
+                &:focus,
+                &.k-focus {
+                    @include focus-indicator( 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( $name ) 16%, transparent), if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 ))) );
+                }
+
+                &:hover,
+                &.k-hover {
+                    @include fill(
+                        if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( k-try-shade( $color, 25% ) )),
+                        if($kendo-enable-color-system, k-color( #{$name}-hover ), k-try-shade( $color, 25% )),
+                        if($kendo-enable-color-system, k-color( #{$name}-hover ), k-try-shade( $color, 25% ))
+                    );
+                }
+
+                &.k-selected {
+                    @include fill(
+                        if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( k-try-shade( $color, 25% ) )),
+                        if($kendo-enable-color-system, k-color( #{$name}-active ), k-try-shade( $color, 25% )),
+                        if($kendo-enable-color-system, k-color( #{$name}-active ), k-try-shade( $color, 25% ))
+                    );
+                }
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-chip--theme() {
+    @include kendo-chip--theme-base();
+}

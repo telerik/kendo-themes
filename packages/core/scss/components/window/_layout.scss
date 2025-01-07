@@ -1,0 +1,179 @@
+@use "sass:list";
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-window--layout-base() {
+
+    .k-window {
+        @include border-radius( $kendo-window-border-radius );
+        padding: 0;
+        border-width: $kendo-window-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-window-font-family;
+        font-size: $kendo-window-font-size;
+        line-height: $kendo-window-line-height;
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10002;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        // overlay during dragging
+        // .k-overlay {
+        //    position: absolute;
+        //    opacity: 0;
+        // }
+    }
+    .k-window.k-window-maximized {
+        max-width: 100vw;
+        max-height: 100vh;
+        box-shadow: none;
+    }
+
+
+    // Window sizes
+    @each $size, $width in $kendo-window-sizes {
+        .k-window-#{$size} { width: $width; }
+    }
+
+
+    // Title bar
+    .k-window-titlebar {
+        @include border-top-radius( $kendo-window-border-radius );
+        padding-block: $kendo-window-titlebar-padding-y;
+        padding-inline: $kendo-window-titlebar-padding-x;
+        border-width: $kendo-window-titlebar-border-width;
+        border-style: $kendo-window-titlebar-border-style;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        align-items: center;
+    }
+
+    .k-window-minimized {
+        .k-window-titlebar {
+            border-width: 0;
+        }
+    }
+
+    // Title bar title text
+    .k-window-title {
+        padding-block: .5em;
+        padding-inline: 0;
+        margin-block: -.5em;
+        margin-inline: 0;
+        font-size: $kendo-window-title-font-size;
+        line-height: $kendo-window-title-line-height;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: default;
+        flex: 1;
+
+        &:empty::before {
+            content: "\200b";
+        }
+    }
+
+
+    // Actions
+    .k-window-titlebar-actions {
+        margin-block: -5em;
+        margin-inline: 0;
+        margin-inline-end: calc( #{$kendo-window-titlebar-padding-y} - #{$kendo-window-titlebar-padding-x} );
+        line-height: 1;
+        display: flex;
+        gap: $kendo-window-actions-gap;
+        flex-flow: row nowrap;
+        flex-shrink: 0;
+        align-items: center;
+        vertical-align: top;
+    }
+    .k-window-titlebar-action {
+        flex-shrink: 0;
+        opacity: $kendo-window-action-opacity;
+    }
+    .k-window-titlebar-action:hover {
+        opacity: $kendo-window-action-hover-opacity;
+    }
+
+
+    // Content
+    .k-window-content,
+    .k-prompt-container {
+        padding-block: $kendo-window-inner-padding-y;
+        padding-inline: $kendo-window-inner-padding-x;
+        border-width: 0;
+        border-color: inherit;
+        color: inherit;
+        background: none;
+        outline: 0;
+        overflow: auto;
+        position: relative;
+        flex: 1 1 auto;
+    }
+    .k-window-content + .k-prompt-container {
+        margin-top: - list.slash( $kendo-window-inner-padding-y, 2 );
+    }
+    .k-window-content:first-child {
+        padding-top: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );
+    }
+    .k-window-content:last-child {
+        padding-bottom: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );
+    }
+
+    .k-window-iframecontent {
+        padding: 0;
+        overflow: visible;
+
+        .k-content-frame {
+            vertical-align: top;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // Buttons Layout
+    .k-window-actions {
+        @include border-bottom-radius( $kendo-window-border-radius );
+        padding-block: $kendo-window-buttongroup-padding-y;
+        padding-inline: $kendo-window-buttongroup-padding-x;
+        border-width: $kendo-window-buttongroup-border-width 0 0;
+        border-style: solid;
+        border-color: inherit;
+        flex: 0 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+    // Prompt
+    .k-prompt-container {
+
+        > .k-textarea {
+            width: 100%;
+        }
+
+    }
+
+    // Resize Handles
+    .k-window { // stylelint-disable-line
+        .k-resize-n { top: 0; }
+        .k-resize-e { right: 0; }
+        .k-resize-s { bottom: 0; }
+        .k-resize-w { left: 0; }
+    }
+
+}
+
+
+@mixin kendo-window--layout() {
+    @include kendo-window--layout-base();
+}

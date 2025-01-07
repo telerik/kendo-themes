@@ -1,0 +1,11 @@
+@mixin kendo-menu-button--theme-base() {
+
+    // Menu button
+    .k-menu-button {}
+
+}
+
+
+@mixin kendo-menu-button--theme() {
+    @include kendo-menu-button--theme-base();
+}

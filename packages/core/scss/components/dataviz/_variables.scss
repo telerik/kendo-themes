@@ -1,0 +1,148 @@
+// Chart
+
+/// The first base series color and its light and dark shades.
+/// @group charts
+$kendo-series-a: null !default;
+$kendo-series-a-dark: null !default;
+$kendo-series-a-darker: null !default;
+$kendo-series-a-light: null !default;
+$kendo-series-a-lighter: null !default;
+
+/// The second base series color and its light and dark shades.
+/// @group charts
+$kendo-series-b: null !default;
+$kendo-series-b-dark: null !default;
+$kendo-series-b-darker: null !default;
+$kendo-series-b-light: null !default;
+$kendo-series-b-lighter: null !default;
+
+/// The third base series color and its light and dark shades.
+/// @group charts
+$kendo-series-c: null !default;
+$kendo-series-c-dark: null !default;
+$kendo-series-c-darker: null !default;
+$kendo-series-c-light: null !default;
+$kendo-series-c-lighter: null !default;
+
+/// The fourth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-d: null !default;
+$kendo-series-d-dark: null !default;
+$kendo-series-d-darker: null !default;
+$kendo-series-d-light: null !default;
+$kendo-series-d-lighter: null !default;
+
+/// The fifth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-e: null !default;
+$kendo-series-e-dark: null !default;
+$kendo-series-e-darker: null !default;
+$kendo-series-e-light: null !default;
+$kendo-series-e-lighter: null !default;
+
+/// The sixth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-f: null !default;
+$kendo-series-f-dark: null !default;
+$kendo-series-f-darker: null !default;
+$kendo-series-f-light: null !default;
+$kendo-series-f-lighter: null !default;
+
+/// The series colors in order:
+/// base, light, dark, lighter, darker
+/// @group charts
+$kendo-series-1: null !default;
+$kendo-series-2: null !default;
+$kendo-series-3: null !default;
+$kendo-series-4: null !default;
+$kendo-series-5: null !default;
+$kendo-series-6: null !default;
+$kendo-series-7: null !default;
+$kendo-series-8: null !default;
+$kendo-series-9: null !default;
+$kendo-series-10: null !default;
+$kendo-series-11: null !default;
+$kendo-series-12: null !default;
+$kendo-series-13: null !default;
+$kendo-series-14: null !default;
+$kendo-series-15: null !default;
+$kendo-series-16: null !default;
+$kendo-series-17: null !default;
+$kendo-series-18: null !default;
+$kendo-series-19: null !default;
+$kendo-series-20: null !default;
+$kendo-series-21: null !default;
+$kendo-series-22: null !default;
+$kendo-series-23: null !default;
+$kendo-series-24: null !default;
+$kendo-series-25: null !default;
+$kendo-series-26: null !default;
+$kendo-series-27: null !default;
+$kendo-series-28: null !default;
+$kendo-series-29: null !default;
+$kendo-series-30: null !default;
+
+$kendo-chart-border-width: null !default;
+$kendo-chart-font-family: null !default;
+$kendo-chart-font-size: null !default;
+$kendo-chart-line-height: null !default;
+$kendo-chart-tooltip-font-size: null !default;
+$kendo-chart-label-font-size: null !default;
+$kendo-chart-title-font-size: null !default;
+$kendo-chart-pane-title-font-size: null !default;
+$kendo-chart-pane-title-font-weight: null !default;
+
+/// The color of the Chart grid lines (major).
+/// @group charts
+$kendo-chart-major-lines: null !default;
+
+/// The color of the Chart grid lines (minor).
+/// @group charts
+$kendo-chart-minor-lines: null !default;
+
+$kendo-chart-inactive: null !default;
+$kendo-chart-area-opacity: null !default;
+$kendo-chart-area-inactive-opacity: null !default;
+$kendo-chart-line-inactive-opacity: null !default;
+
+$kendo-chart-tooltip-padding-x: null !default;
+$kendo-chart-tooltip-padding-y: null !default;
+
+$kendo-chart-tooltip-transition: null !default;
+
+$kendo-chart-bg: null !default;
+$kendo-chart-text: null !default;
+$kendo-chart-border: null !default;
+
+$kendo-chart-crosshair-background: null !default;
+$kendo-chart-crosshair-shared-tooltip-color: null !default;
+$kendo-chart-crosshair-shared-tooltip-background: null !default;
+$kendo-chart-crosshair-shared-tooltip-border: null !default;
+
+$kendo-chart-notes-background: null !default;
+$kendo-chart-notes-border: null !default;
+$kendo-chart-notes-lines: null !default;
+
+$kendo-chart-error-bars-background: null !default;
+
+$kendo-chart-selection-handle-size: null !default;
+$kendo-chart-selection-border-color: null !default;
+$kendo-chart-selection-shadow: null !default;
+
+$kendo-chart-computed-title-height: null !default;
+
+// TreeMap
+$kendo-treemap-font-family: null !default;
+$kendo-treemap-font-size: null !default;
+$kendo-treemap-line-height: null !default;
+
+$kendo-treemap-padding-x: null !default;
+$kendo-treemap-padding-y: null !default;
+
+// Chart Overlay
+$kendo-chart-overlay-bg: null !default;
+
+// No Data
+$kendo-chart-no-data-font-size: null !default;
+$kendo-chart-no-data-font-weight: null !default;
+$kendo-chart-no-data-padding-y: null !default;

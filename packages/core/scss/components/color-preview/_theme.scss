@@ -1,0 +1,25 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-color-preview--theme-base() {
+
+    // Color Preview
+    .k-color-preview {
+        @include fill(
+            $kendo-color-preview-text,
+            $kendo-color-preview-bg,
+            $kendo-color-preview-border
+        );
+
+        &:hover,
+        &.k-hover {
+            @include fill( $border: $kendo-color-preview-hover-border );
+        }
+    }
+
+}
+
+
+@mixin kendo-color-preview--theme() {
+    @include kendo-color-preview--theme-base();
+}

@@ -1,0 +1,129 @@
+@use "sass:map";
+@use "../../typography/index.import.scss" as *;
+@use "./_variables.scss" as *;
+@use "../../_variables.scss" as *;
+
+@mixin kendo-typography--layout-base() {
+
+    @if $kendo-enable-typography {
+        body { @extend .k-body !optional; }
+        h1 { @extend .k-h1 !optional; }
+        h2 { @extend .k-h2 !optional; }
+        h3 { @extend .k-h3 !optional; }
+        h4 { @extend .k-h4 !optional; }
+        h5 { @extend .k-h5 !optional; }
+        h6 { @extend .k-h6 !optional; }
+        p { @extend .k-paragraph !optional; }
+        pre { @extend .k-pre !optional; }
+        code { @extend .k-code !optional; }
+    }
+
+    // TODO delete k-typography class for R1 2022
+    .k-body,
+    .k-typography {
+        @include typography(
+            var( --kendo-font-size, inherit ),
+            var( --kendo-font-family, inherit ),
+            var( --kendo-line-height, normal ),
+            var( --kendo-font-weight-normal, normal ),
+            var( --kendo-letter-spacing, normal )
+        );
+        margin: 0;
+
+        p {
+            margin: $kendo-paragraph-margin;
+        }
+    }
+
+    // Headings
+    @each $heading, $heading-props in $kendo-headings {
+        $_font-size: map.get( $heading-props, font-size );
+        $_font-family: map.get( $heading-props, font-family );
+        $_line-height: map.get( $heading-props, line-height );
+        $_font-weight: map.get( $heading-props, font-weight );
+        $_letter-spacing: map.get( $heading-props, letter-spacing );
+        $_margin: map.get( $heading-props, margin );
+
+        .k-#{$heading} {
+            @include typography(
+                var( --kendo-#{$heading}-font-size, #{$_font-size} ),
+                var( --kendo-#{$heading}-font-family, #{$_font-family} ),
+                var( --kendo-#{$heading}-line-height, #{$_line-height} ),
+                var( --kendo-#{$heading}-font-weight, #{$_font-weight} ),
+                var( --kendo-#{$heading}-letter-spacing, #{$_letter-spacing} ),
+            );
+            margin: var( --kendo-#{$heading}-margin, #{$_margin} );
+        }
+    }
+
+    // Paragraph
+    .k-paragraph {
+        @include typography(
+            var( --kendo-paragraph-font-size, #{$kendo-paragraph-font-size}),
+            var( --kendo-paragraph-font-family, #{$kendo-paragraph-font-family}),
+            var( --kendo-paragraph-line-height, #{$kendo-paragraph-line-height}),
+            var( --kendo-paragraph-font-weight, #{$kendo-paragraph-font-weight}),
+            var( --kendo-paragraph-letter-spacing, #{$kendo-paragraph-letter-spacing})
+        );
+        margin: var( --kendo-paragraph-margin, #{$kendo-paragraph-margin});
+    }
+
+    // Code snippet
+    .k-pre,
+    .k-code {
+        @include typography(
+            var( --kendo-code-font-size, #{$kendo-code-font-size}),
+            var( --kendo-code-font-family, #{$kendo-code-font-family}),
+            var( --kendo-code-line-height, #{$kendo-code-line-height}),
+            var( --kendo-code-font-weight, #{$kendo-code-font-weight}),
+            var( --kendo-code-letter-spacing, #{$kendo-code-letter-spacing})
+        );
+        border-style: solid;
+        border-width: $kendo-code-border-width;
+    }
+
+    .k-pre {
+        padding-block: $kendo-pre-padding-y;
+        padding-inline: $kendo-pre-padding-x;
+        overflow: auto;
+    }
+
+    .k-pre > .k-code {
+        padding: 0;
+        border-width: 0;
+        border-color: transparent;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+    .k-code {
+        padding-block: $kendo-code-padding-y;
+        padding-inline: $kendo-code-padding-x;
+    }
+
+    // Display
+    @each $display, $kendo-display-props in $kendo-display {
+        $_font-size: map.get( $kendo-display-props, font-size );
+        $_font-family: map.get( $kendo-display-props, font-family );
+        $_line-height: map.get( $kendo-display-props, line-height );
+        $_font-weight: map.get( $kendo-display-props, font-weight );
+        $_letter-spacing: map.get( $kendo-display-props, letter-spacing );
+        $_margin: map.get( $kendo-display-props, margin );
+
+        .k-display-#{$display} {
+            @include typography(
+                var( --kendo-display#{$display}-font-size, #{$_font-size} ),
+                var( --kendo-display#{$display}-font-family, #{$_font-family} ),
+                var( --kendo-display#{$display}-line-height, #{$_line-height} ),
+                var( --kendo-display#{$display}-font-weight, #{$_font-weight} ),
+                var( --kendo-display#{$display}-letter-spacing, #{$_letter-spacing} ),
+            );
+        }
+    }
+}
+
+
+@mixin kendo-typography--layout() {
+    @include kendo-typography--layout-base();
+}

@@ -1,0 +1,28 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../action-buttons/_index.scss" as *;
+@use "../dropzone/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+
+// Dependencies
+
+
+// Expose
+@mixin kendo-upload--styles() {
+    @include import-once( "upload" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-action-buttons--styles();
+        @include kendo-icon--styles();
+        @include kendo-dropzone--styles();
+        @include kendo-upload--layout();
+        @include kendo-upload--theme();
+    }
+}

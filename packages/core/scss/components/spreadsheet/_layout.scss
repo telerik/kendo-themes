@@ -1,0 +1,913 @@
+@use "../../color-system/_constants.scss" as *;
+@use "../../spacing/index.import.scss" as *;
+@use "../../border-radii/index.import.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../list/_variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "../menu/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+
+@mixin kendo-spreadsheet--layout-base() {
+
+    // Spreadsheet
+    .k-spreadsheet {
+        width: 100%;
+        height: 600px;
+        border-width: $kendo-spreadsheet-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-spreadsheet-font-family;
+        font-size: $kendo-spreadsheet-font-size;
+        line-height: $kendo-spreadsheet-line-height;
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        .k-vertical-align-center {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .k-vertical-align-bottom {
+            position: relative;
+            top: 100%;
+            transform: translateY( -100% );
+        }
+    }
+
+    // Toolbar
+    .k-spreadsheet-toolbar {
+        border-top-width: 0;
+        border-inline-width: 0;
+    }
+
+    // Action bar
+    .k-spreadsheet-action-bar {
+        border-width: 0 0 $kendo-spreadsheet-action-bar-border-width;
+        border-style: solid;
+        border-color: inherit;
+        padding-block: $kendo-spreadsheet-action-bar-padding-y;
+        padding-inline: $kendo-spreadsheet-action-bar-padding-x;
+        font-size: $kendo-spreadsheet-action-bar-font-size;
+        font-family: $kendo-spreadsheet-action-bar-font-family;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: $kendo-spreadsheet-action-bar-spacing;
+    }
+    // Todo check
+    .k-spreadsheet-name-editor {
+        width: 10em;
+    }
+    .k-spreadsheet-formula-bar {
+        min-width: 0px;
+        border-color: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        gap: $kendo-spreadsheet-formula-bar-gap;
+
+        // move to legacy selector
+        > .k-icon {
+            padding-block: 0;
+            padding-inline: $kendo-spreadsheet-formula-bar-icon-padding;
+            box-sizing: content-box;
+            border-width: 0 1px 0 0;
+            border-style: solid;
+            border-color: inherit;
+            flex-shrink: 0;
+        }
+
+        // add k-hidden from component
+        .k-tooltip,
+        .k-group-header,
+        .k-list-scroller {
+            display: none;
+        }
+
+        .k-spreadsheet-formula-input {
+            padding-block: $kendo-spreadsheet-formula-input-padding-y;
+            padding-inline: $kendo-spreadsheet-formula-input-padding-x;
+            line-height: $kendo-spreadsheet-formula-input-line-height;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &.k-spreadsheet-array-formula {
+                &::before {
+                    content: "{";
+                    font-weight: 700;
+                }
+                &::after {
+                    content: "}";
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .k-spreadsheet-formula-input {
+        outline: 0;
+        white-space: pre;
+        flex: 1;
+        box-sizing: border-box;
+
+        > .k-syntax-func.k-syntax-at-point,
+        > .k-syntax-bool.k-syntax-at-point,
+        > .k-syntax-ref.k-syntax-at-point,
+        > .k-syntax-str.k-syntax-at-point,
+        > .k-syntax-num.k-syntax-at-point {
+            text-decoration: underline;
+        }
+
+        > .k-series-a,
+        > .k-series-b,
+        > .k-series-c,
+        > .k-series-d {
+            background-color: transparent;
+        }
+    }
+    .k-spreadsheet-formula-list {
+        min-width: 100px;
+
+        .k-item {
+            padding-block: $kendo-list-md-item-padding-y;
+            padding-inline: $kendo-list-md-item-padding-x;
+        }
+    }
+    .k-syntax-func,
+    .k-syntax-startexp {
+        font-weight: bold;
+    }
+
+
+    // Cell editor
+    .k-spreadsheet-cell-editor {
+        padding-block: $kendo-spreadsheet-cell-editor-padding-y;
+        padding-inline: $kendo-spreadsheet-cell-editor-padding-x;
+        line-height: $kendo-spreadsheet-cell-editor-line-height;
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        z-index: 100;
+    }
+
+
+    // Sheets bar
+    .k-spreadsheet-sheets-bar {
+        padding-block-end: $kendo-spreadsheet-sheets-bar-padding-y;
+        padding-inline: $kendo-spreadsheet-sheets-bar-padding-x;
+        border-width: $kendo-spreadsheet-sheets-bar-border-width 0 0;
+        border-style: solid;
+        border-color: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    .k-spreadsheet-sheets {
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+    .k-spreadsheet-sheets .k-tabstrip-items-wrapper {
+        border-width: 0;
+    }
+
+    .k-spreadsheet-sheets-bar-add {
+        align-self: center;
+
+        &:not(:hover) {
+            border-color: transparent;
+            color: inherit;
+            background: none;
+        }
+    }
+
+    .k-spreadsheet-sheets-items {
+        flex: 1;
+        overflow: hidden;
+
+        .k-tabstrip-items-wrapper {
+            margin: 0;
+            border-width: 0;
+        }
+
+        .k-item {
+            .k-link {
+                display: inline-block;
+            }
+
+            .k-spreadsheet-sheets-remove {
+                margin-right: k-spacing(2);
+                margin-left: calc( #{k-spacing(2)} * -1 );
+                padding: 0;
+                line-height: 1;
+                display: inline-flex;
+                flex-direction: row;
+                vertical-align: middle;
+                align-self: center;
+            }
+        }
+    }
+
+
+    // Spreadsheet view
+    .k-spreadsheet-view {
+        height: auto !important; // stylelint-disable-line declaration-no-important
+        border-color: inherit;
+        font-size: $kendo-spreadsheet-view-font-size;
+        font-family: $kendo-spreadsheet-view-font-family;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+
+        // disabled cells in the Spreadsheet should allow navigation if link is used
+        .k-disabled {
+            pointer-events: auto;
+        }
+    }
+
+    .k-spreadsheet-fixed-container {
+        width: calc( 100% - var(--kendo-scrollbar-width, #{$kendo-scrollbar-width}) );
+        height: calc( 100% - var(--kendo-scrollbar-width, #{$kendo-scrollbar-width}) );
+        border-color: inherit;
+        box-sizing: border-box;
+        user-select: none;
+        position: absolute;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    // todo check if used - probably not
+    .k-spreadsheet-overflow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        border-color: inherit;
+    }
+
+    .k-spreadsheet-pane {
+        padding: 0 1px 0 0;
+        border-width: 2px 0 0 2px;
+        border-style: solid;
+        border-color: inherit;
+        box-sizing: border-box;
+        position: absolute;
+        overflow: hidden;
+
+        @each $side in (top, left) {
+            &.k-#{$side} { border-#{$side}-width: 0; }
+        }
+
+    }
+
+    .k-spreadsheet-top-corner {
+        border-width: 0 1px 1px 0;
+        border-style: solid;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: 6px solid transparent;
+            border-right-color: inherit;
+            border-bottom-color: inherit;
+        }
+    }
+
+    .k-spreadsheet-scroller {
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        position: absolute;
+        z-index: 1;
+
+        @media (hover: none), (pointer: coarse) {
+            // on touch devices we want this to stay on top.
+            z-index: 3;
+        }
+    }
+
+
+    // Grid lines
+    .k-spreadsheet-haxis,
+    .k-spreadsheet-vaxis {
+        border: 0 solid;
+        border-color: inherit;
+        position: absolute;
+    }
+    .k-spreadsheet-haxis {
+        border-width: 1px 0 0;
+        left: 0;
+    }
+    .k-spreadsheet-vaxis {
+        border-width: 0 0 0 1px;
+        top: 0;
+    }
+
+
+    // Row / Column headers
+    .k-spreadsheet-row-header,
+    .k-spreadsheet-column-header {
+        text-align: center;
+        z-index: 100;
+
+        > div {
+            position: relative;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: inherit;
+
+            &::after {
+                content: "";
+                border-width: 0;
+                border-style: solid;
+                border-color: inherit;
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .k-spreadsheet-row-header {
+        position: relative;
+    }
+    .k-spreadsheet-column-header {
+        position: absolute;
+    }
+    .k-spreadsheet-row-header > div {
+        border-top-width: 1px;
+
+        &:first-child { border-top-width: 0; }
+    }
+    .k-spreadsheet-row-header > .k-selection-partial,
+    .k-spreadsheet-row-header > .k-selection-full {
+        &::after {
+            border-right-width: 2px;
+            display: block;
+        }
+    }
+    .k-spreadsheet-column-header > div {
+        border-left-width: 1px;
+
+        &:first-child { border-left-width: 0; }
+    }
+    .k-spreadsheet-column-header > .k-selection-partial,
+    .k-spreadsheet-column-header > .k-selection-full {
+        &::after {
+            border-bottom-width: 2px;
+            display: block;
+        }
+    }
+
+
+    // Spreadsheet data
+    .k-spreadsheet-data {
+        border-color: inherit;
+        cursor: cell;
+        position: relative;
+    }
+
+
+    // Cells
+    .k-spreadsheet-cell {
+        padding-block: $kendo-spreadsheet-cell-padding-y;
+        padding-inline: $kendo-spreadsheet-cell-padding-x;
+        box-sizing: border-box;
+        position: absolute;
+        line-height: normal;
+        white-space: pre;
+        overflow: hidden;
+    }
+    .k-spreadsheet-merged-cells-wrapper {
+        position: relative;
+    }
+
+    .k-spreadsheet-disabled-mask {
+        position: absolute;
+    }
+
+    // Selection
+    .k-spreadsheet .k-selection-wrapper {
+        position: relative;
+        cursor: cell;
+    }
+    .k-spreadsheet .k-spreadsheet-selection {
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        position: absolute;
+    }
+    .k-spreadsheet .k-spreadsheet-selection-highlight {
+        border-width: 2px;
+        border-style: dashed;
+        box-sizing: border-box;
+        position: absolute;
+    }
+    .k-spreadsheet .k-spreadsheet-editor-button {
+        position: absolute;
+        padding: 0;
+        z-index: 60;
+    }
+
+    .k-spreadsheet-active-cell {
+        // always show exact active cell border, regardless of inline cell styles
+        outline-color: transparent !important; // stylelint-disable-line declaration-no-important
+        z-index: 10;
+    }
+
+    .k-spreadsheet .k-auto-fill-wrapper {
+        position: relative;
+    }
+    .k-spreadsheet .k-auto-fill,
+    .k-spreadsheet .k-auto-fill-punch,
+    .k-spreadsheet .k-auto-fill-br-hint {
+        box-sizing: border-box;
+        position: absolute;
+    }
+    .k-spreadsheet .k-auto-fill {
+        border-width: 1px;
+        border-style: solid;
+        cursor: crosshair;
+    }
+
+    .k-spreadsheet .k-single-selection {}
+    .k-spreadsheet .k-single-selection::after {
+        content: "";
+        margin-bottom: -4px;
+        margin-right: -4px;
+        width: 6px;
+        height: 6px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 300;
+        cursor: crosshair;
+    }
+
+    .k-spreadsheet .k-selection-full,
+    .k-spreadsheet .k-selection-partial {
+        &::after {
+            display: none;
+        }
+    }
+
+
+    // Autofill
+    .k-spreadsheet .k-autofill-wrapper {
+        position: relative;
+        cursor: cell;
+    }
+
+
+    // Border rendering
+    .k-spreadsheet-vborder {
+        position: absolute;
+        border-left-style: solid;
+        border-left-width: 1px;
+    }
+
+    .k-spreadsheet-hborder {
+        position: absolute;
+        border-top-style: solid;
+        border-top-width: 1px;
+    }
+
+
+    // Comments
+    .k-spreadsheet-has-comment::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        inset-inline-end: 0;
+        inset-inline-start: auto;
+        border-width: 3px;
+        border-style: solid;
+    }
+
+
+    // Validation
+    .k-spreadsheet-cell .k-dirty {
+        inset-inline-start: 0;
+        inset-inline-end: auto;
+    }
+
+
+    // Filter button
+    .k-spreadsheet .k-filter-wrapper {
+        position: relative;
+        z-index: 50;
+    }
+
+    .k-spreadsheet .k-filter-range {
+        border-width: 2px;
+        border-style: solid;
+        position: absolute;
+        box-sizing: border-box;
+        pointer-events: none;
+    }
+
+    .k-spreadsheet-filter {
+        @include border-radius( k-border-radius(md) );
+        padding: $kendo-spreadsheet-filter-padding;
+        line-height: 1;
+        position: absolute;
+        cursor: pointer;
+
+        .k-icon { vertical-align: middle; }
+    }
+
+
+    // Filter menu
+    .k-spreadsheet-filter-menu {
+        width: 280px;
+
+        .k-animation-container {
+            position: relative;
+        }
+
+        > .k-menu,
+        > .k-menu.k-menu-vertical {
+            border-width: 0;
+
+            .k-item {
+                color: inherit;
+            }
+            .k-link {
+                padding-left: $kendo-spreadsheet-filter-menu-link-padding-x;
+            }
+            .k-icon {
+                margin: $kendo-spreadsheet-filter-menu-icon-margin;
+            }
+
+        }
+
+        .k-spreadsheet-value-treeview-wrapper {
+            height: 200px;
+            border-width: 1px;
+            border-style: solid;
+            overflow-y: scroll;
+            overflow-x: auto;
+
+            .k-treeview {
+                padding: $kendo-spreadsheet-filter-padding;
+                overflow: visible;
+            }
+        }
+
+        // Details
+        .k-details,
+        .k-expander {
+            padding: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
+            border-color: inherit;
+        }
+        .k-expander {
+            border: 0;
+            background: inherit;
+        }
+        .k-details-summary,
+        .k-columnmenu-item {
+            padding-block: $kendo-menu-popup-item-padding-y;
+            padding-inline: $kendo-menu-popup-item-padding-x;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            > .k-icon,
+            > .k-expander-indicator {
+                margin-right: $kendo-spreadsheet-filter-padding;
+            }
+        }
+        .k-details-content,
+        .k-columnmenu-item-content {
+            padding: k-spacing(2);
+            display: flex;
+            flex-flow: column nowrap;
+            gap: k-spacing(2);
+
+            .k-filter-and {
+                width: min-content;
+                align-self: flex-start;
+            }
+        }
+
+        .k-actions {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    // Spreadsheet toolbar
+    .k-spreadsheet-popup {
+        padding: 0;
+
+        .k-separator {
+            display: block;
+        }
+
+        .k-reset-color,
+        .k-custom-color {
+            @include border-radius( 0 );
+            width: 100%;
+            border-width: 0;
+            box-sizing: border-box;
+            display: flex;
+        }
+        .k-reset-color { border-bottom-width: 1px; }
+        .k-custom-color { border-top-width: 1px; }
+        .k-spreadsheet-border-type-palette {
+            padding: k-spacing(2);
+            display: grid;
+            grid-template-columns: repeat(5, max-content);
+            gap: k-spacing(2);
+        }
+    }
+
+
+    .k-spreadsheet-clipboard,
+    .k-spreadsheet-clipboard-paste {
+        margin: 0;
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        border: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+
+
+    // Spreadsheet window
+    .k-spreadsheet-window .k-external-dropzone {
+        margin-block-end: $kendo-spreadsheet-dropzone-spacing-y;
+    }
+
+    .k-spreadsheet-window .k-edit-form-container {
+        width: auto;
+        min-width: 0;
+    }
+
+
+    // Format preview window
+    .k-spreadsheet-format-cells {
+
+        .k-spreadsheet-preview {
+            margin-top: k-spacing(2);
+            text-align: center;
+        }
+
+        .k-list-scroller {
+            margin-top: k-spacing(2);
+            height: 210px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: inherit;
+        }
+    }
+
+
+    // Export dialog
+    .k-export-config {
+        clear: both;
+        position: relative;
+
+        &::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+
+        .k-edit-field {
+            margin-left: 5%;
+            width: 45%;
+            float: left;
+        }
+
+        .k-page-orientation {
+            position: absolute;
+            right: 0;
+            top: k-spacing(2);
+
+            .k-font-icon {
+                font-size: 6em;
+            }
+            .k-svg-icon {
+                width: 6em;
+                height: 6em;
+            }
+        }
+    }
+
+
+    // Insert comment dialog
+    .k-spreadsheet-insert-comment textarea {
+        height: auto;
+    }
+
+    // Insert image dialog - Delete after new rendering adoption R3 23
+    .k-spreadsheet-insert-image-dialog {
+        @include border-radius( $kendo-spreadsheet-insert-image-dialog-preview-border-radius );
+        border-style: $kendo-spreadsheet-insert-image-dialog-border-style;
+        border-width: $kendo-spreadsheet-insert-image-dialog-border-width;
+
+        label {
+            display: flex;
+            justify-content: center;
+            min-width: 100%;
+            width: $kendo-spreadsheet-insert-image-dialog-preview-width;
+            height: $kendo-spreadsheet-insert-image-dialog-preview-height;
+            background-image: url(#{$kendo-spreadsheet-insert-image-dialog-preview-img});
+            background-size: auto 70%;
+            background-position: 50% 30%;
+            background-repeat: no-repeat;
+
+            div {
+                display: flex;
+                align-self: flex-end;
+                margin-bottom: $kendo-spreadsheet-insert-image-dialog-text-margin-bottom;
+                pointer-events: none;
+            }
+
+            input {
+                display: none;
+            }
+        }
+
+        .k-spreadsheet-has-image {
+            background-size: auto 90%;
+            background-position: 50% 50%;
+
+            &:hover div,
+            &.k-hover div {
+                margin: 0;
+                align-self: center;
+                opacity: 1;
+            }
+
+            div {
+                opacity: 0;
+            }
+        }
+    }
+
+
+
+    // Spreadsheet drawing
+    .k-spreadsheet-drawing {
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 101;
+
+        &.k-spreadsheet-active-drawing {
+            outline-style: $kendo-spreadsheet-drawing-outline-style;
+            outline-width: $kendo-spreadsheet-drawing-outline-width;
+        }
+
+        .k-spreadsheet-drawing-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            cursor: move;
+        }
+
+        .k-spreadsheet-drawing-handle {
+            width: $kendo-spreadsheet-drawing-handle-width;
+            height: $kendo-spreadsheet-drawing-handle-height;
+            border-style: $kendo-spreadsheet-drawing-handle-border-style;
+            border-width: $kendo-spreadsheet-drawing-handle-border-width;
+            border-radius: $kendo-spreadsheet-drawing-handle-border-radius;
+            position: absolute;
+            transform: translate(-50%, -50%);
+
+            // stylelint-disable declaration-block-single-line-max-declarations, selector-class-pattern
+            &.N { left: 50%; top: 0; cursor: ns-resize; }
+            &.NE { left: 100%; top: 0; cursor: nesw-resize; }
+            &.E { left: 100%; top: 50%; cursor: ew-resize; }
+            &.SE { left: 100%; top: 100%; cursor: nwse-resize; }
+            &.S { left: 50%; top: 100%; cursor: ns-resize; }
+            &.SW { left: 0; top: 100%; cursor: nesw-resize; }
+            &.W { left: 0; top: 50%; cursor: ew-resize; }
+            &.NW { left: 0; top: 0; cursor: nwse-resize; }
+            // stylelint-enable declaration-block-single-line-max-declarations, selector-class-pattern
+        }
+
+        .k-spreadsheet-insert-image-dialog {
+            .k-spreadsheet-has-image {
+                &:hover,
+                &.k-hover {
+                    border-radius: $kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius;
+                }
+            }
+        }
+    }
+
+
+    // Legacy styles
+    .k-spreadsheet-legacy {
+        .k-spreadsheet,
+        .k-spreadsheet-action-bar,
+        .k-spreadsheet-view {
+            font-size: 12px;
+        }
+
+        .k-spreadsheet-cell {
+            padding: 1px;
+        }
+
+        .k-spreadsheet-filter {
+            padding: 0px;
+        }
+
+        .k-filter-range {
+            border-width: 1px;
+        }
+
+        .k-spreadsheet .k-spreadsheet-selection-highlight {
+            border-width: 1px;
+            border-style: solid;
+        }
+    }
+
+    // Tabstrip
+    .k-spreadsheet .k-tabstrip-wrapper {
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: inherit;
+        position: relative;
+    }
+
+    .k-spreadsheet-quick-access-toolbar {
+        padding: $kendo-toolbar-md-padding-y;
+        display: inline-flex;
+        flex-direction: row;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .k-spreadsheet-tabstrip {
+        padding-top: $kendo-toolbar-md-padding-y;
+        position: relative;
+        z-index: 1;
+    }
+    .k-spreadsheet-tabstrip .k-tabstrip-items-wrapper {
+        margin: 0;
+    }
+    .k-spreadsheet-tabstrip .k-loading {
+        display: none;
+    }
+    .k-spreadsheet-tabstrip .k-content,
+    .k-spreadsheet-tabstrip .k-tabstrip-content {
+        @include border-radius( 0 );
+        padding: 0;
+        border-width: 0;
+        overflow: hidden;
+    }
+
+}
+
+
+@mixin kendo-spreadsheet--layout() {
+    @include kendo-spreadsheet--layout-base();
+}

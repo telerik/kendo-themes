@@ -1,0 +1,122 @@
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-bottom-navigation--layout-base() {
+
+    // Bottom Navigation
+    .k-bottom-nav {
+        padding-block: $kendo-bottom-nav-padding-y;
+        padding-inline: $kendo-bottom-nav-padding-x;
+        width: 100%;
+        border-width: 0;
+        border-style: solid;
+        border-color: transparent;
+        box-sizing: border-box;
+        font-size: $kendo-bottom-nav-font-size;
+        line-height: $kendo-bottom-nav-line-height;
+        font-family: $kendo-bottom-nav-font-family;
+        letter-spacing: $kendo-bottom-nav-letter-spacing;
+        display: flex;
+        flex-flow: row nowrap;
+        white-space: nowrap;
+        gap: $kendo-bottom-nav-gap;
+        overflow: hidden;
+        outline: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    .k-bottom-nav-border {
+        border-width: $kendo-bottom-nav-border-width;
+    }
+
+    // TODO: do we even use this?
+    .k-bottom-nav-shadow {
+        box-shadow: $kendo-bottom-nav-shadow;
+    }
+
+    // Items
+    .k-bottom-nav-item {
+        padding-block: $kendo-bottom-nav-item-padding-y;
+        padding-inline: $kendo-bottom-nav-item-padding-x;
+        min-width: $kendo-bottom-nav-item-min-width;
+        max-width: $kendo-bottom-nav-item-max-width;
+        min-height: $kendo-bottom-nav-item-min-height;
+        border-width: 0;
+        border-radius: $kendo-bottom-nav-item-border-radius;
+        box-sizing: border-box;
+        font: inherit;
+        display: inline-flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+        gap: $kendo-bottom-nav-item-gap;
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+        background-color: inherit;
+        border-color: inherit;
+        outline: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        > .k-bottom-nav-link {
+            margin-block: calc( #{$kendo-bottom-nav-item-padding-y} * -1 );
+            margin-inline: calc( #{$kendo-bottom-nav-item-padding-x} * -1 );
+            padding-block: $kendo-bottom-nav-item-padding-y;
+            padding-inline: $kendo-bottom-nav-item-padding-x;
+            width: 100%;
+            color: inherit;
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 1 0 auto;
+            align-items: center;
+            justify-content: center;
+            outline: 0;
+        }
+    }
+    .k-bottom-nav-item.k-disabled {
+        background-color: initial;
+    }
+
+    .k-bottom-nav-item-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+
+    // Horizontal Item Layout
+    .k-bottom-nav-item-flow-horizontal .k-bottom-nav-item {
+        flex-flow: row nowrap;
+    }
+
+    // Vertical Item Layout
+    .k-bottom-nav-item-flow-vertical .k-bottom-nav-item {
+        flex-direction: column;
+    }
+
+    // Positioning
+    .k-bottom-nav.k-pos-fixed {
+        bottom: 0;
+        z-index: 1;
+    }
+
+}
+
+
+@mixin kendo-bottom-navigation--layout() {
+    @include kendo-bottom-navigation--layout-base();
+}

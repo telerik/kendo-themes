@@ -1,0 +1,10 @@
+@mixin kendo-ripple--theme-base() {
+
+    .k-ripple {}
+
+}
+
+
+@mixin kendo-ripple--theme() {
+    @include kendo-ripple--theme-base();
+}

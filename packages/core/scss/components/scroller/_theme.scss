@@ -1,0 +1,12 @@
+@mixin kendo-scroller--theme-base() {
+
+    .km-touch-scrollbar {
+        background-color: #333333;
+    }
+
+}
+
+
+@mixin kendo-scroller--theme() {
+    @include kendo-scroller--theme-base();
+}

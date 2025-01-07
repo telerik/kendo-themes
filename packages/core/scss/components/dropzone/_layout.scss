@@ -1,0 +1,49 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-dropzone--layout-base() {
+
+    // Dropzone
+    .k-external-dropzone {
+        height: $kendo-dropzone-min-height;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    // Dropzone inner
+    .k-dropzone-inner {
+        padding-block: $kendo-dropzone-padding-y;
+        padding-inline: $kendo-dropzone-padding-x;
+        border-width: $kendo-dropzone-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        font-size: $kendo-dropzone-font-size;
+        font-family: $kendo-dropzone-font-family;
+        line-height: $kendo-dropzone-line-height;
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .k-dropzone-icon {
+            margin-bottom: $kendo-dropzone-icon-spacing;
+        }
+
+        .k-dropzone-hint {
+            margin-bottom: $kendo-dropzone-hint-spacing;
+            font-size: $kendo-dropzone-hint-font-size;
+        }
+
+        .k-dropzone-note {
+            margin-bottom: $kendo-dropzone-note-spacing;
+            font-size: $kendo-dropzone-note-font-size;
+        }
+    }
+
+}
+
+
+@mixin kendo-dropzone--layout() {
+    @include kendo-dropzone--layout-base();
+}

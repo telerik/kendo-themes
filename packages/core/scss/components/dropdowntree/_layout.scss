@@ -1,0 +1,44 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-dropdown-tree--layout-base() {
+
+    // Dropdown tree
+    .k-dropdown-tree {}
+
+    // Dropdowntree popup
+    .k-popup-dropdowntree, // remove legacy class once updated in components
+    .k-dropdowntree-popup,
+    .k-multiselecttree-popup {
+        .k-treeview {
+            padding-block: calc( #{$kendo-dropdowntree-popup-padding-y} / 2 );
+            padding-inline: calc( #{$kendo-dropdowntree-popup-padding-x} / 2 );
+        }
+
+        .k-check-all {
+            padding-block: $kendo-dropdowntree-popup-padding-y;
+            padding-inline: $kendo-dropdowntree-popup-padding-x;
+        }
+    }
+
+    .k-multiselecttree {
+        .k-input-values {
+            width: auto;
+            max-width: 100%;
+        }
+
+        .k-input-inner::before {
+            content: "\200b";
+            width: 0px;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+}
+
+
+@mixin kendo-dropdown-tree--layout() {
+    @include kendo-dropdown-tree--layout-base();
+}

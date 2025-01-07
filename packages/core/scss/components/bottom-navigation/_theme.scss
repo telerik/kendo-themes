@@ -1,0 +1,65 @@
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-bottom-navigation--theme-base() {
+
+    // Solid
+    @each $name, $color in $kendo-theme-colors {
+        .k-bottom-nav-solid-#{$name} {
+            @include fill(
+                $color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-#{$name} ) 65%, transparent), k-true-mix( $color, k-contrast-legacy( $color ), 35%)),
+                $bg: $color
+            );
+
+            .k-bottom-nav-item.k-focus,
+            .k-bottom-nav-item:focus {
+                @include fill( $bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-#{$name} ) 12.5%, transparent), rgba(k-true-mix( $color, k-contrast-legacy( $color ), 35%), .2)));
+            }
+
+            .k-bottom-nav-item.k-selected {
+                @include fill( $color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )) );
+            }
+        }
+        // TODO: remove when suites update class names
+        .k-bottom-nav-solid.k-bottom-nav-#{$name} {
+            @extend .k-bottom-nav-solid-#{$name} !optional;
+        }
+    }
+
+    // Flat
+    @each $name, $color in $kendo-theme-colors {
+        .k-bottom-nav-flat-#{$name} {
+            @include fill(
+                $kendo-bottom-nav-flat-text,
+                $kendo-bottom-nav-flat-bg,
+                $kendo-bottom-nav-flat-border
+            );
+
+            .k-bottom-nav-item.k-focus,
+            .k-bottom-nav-item:focus {
+                @include fill( $bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 5%, transparent), rgba($kendo-bottom-nav-flat-text, .05)) );
+            }
+
+            .k-bottom-nav-item.k-selected {
+                @if $name == "secondary" or $name == "light" {
+                    @include fill( $color: if($kendo-enable-color-system, k-color( #{$name} ), k-try-shade($color, 3)) );
+                } @else {
+                    @include fill( $color: $color );
+                }
+            }
+        }
+        .k-bottom-nav-flat.k-bottom-nav-#{$name} {
+            @extend .k-bottom-nav-flat-#{$name} !optional;
+        }
+    }
+
+}
+
+
+@mixin kendo-bottom-navigation--theme() {
+    @include kendo-bottom-navigation--theme-base();
+}

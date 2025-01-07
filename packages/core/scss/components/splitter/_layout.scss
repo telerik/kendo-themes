@@ -1,0 +1,196 @@
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-splitter--layout-base() {
+
+    // Base
+    .k-splitter {
+        height: 300px;
+        border-width: $kendo-splitter-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-splitter-font-family;
+        font-size: $kendo-splitter-font-size;
+        line-height: $kendo-splitter-line-height;
+        display: block;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        // Pane
+        .k-pane {
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .k-scrollable {
+            overflow: auto;
+        }
+        .k-splitter-resizing {
+            overflow: hidden;
+        }
+
+        // Loading
+        .k-pane-loading {
+            position: static;
+            top: 50%;
+            left: 50%;
+        }
+
+    }
+
+
+    // Splitbar
+    .k-ghost-splitbar,
+    .k-splitbar {
+        border-style: solid;
+        outline: 0;
+        position: absolute;
+        user-select: none;
+        touch-action: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .k-collapse-prev,
+        .k-collapse-next {
+            cursor: pointer;
+            padding: $kendo-splitter-collapse-icon-padding-y $kendo-splitter-collapse-icon-padding-x;
+        }
+
+    }
+
+    .k-splitbar-draggable-horizontal { cursor: col-resize; }
+    .k-splitbar-draggable-vertical { cursor: row-resize; }
+
+    .k-ghost-splitbar-horizontal,
+    .k-splitbar-horizontal {
+        width: $kendo-splitter-splitbar-size;
+        border-width: 0;
+        background-repeat: repeat-y;
+        flex-direction: column;
+        top: 0;
+    }
+    .k-ghost-splitbar-vertical,
+    .k-splitbar-vertical {
+        height: $kendo-splitter-splitbar-size;
+        border-width: 0;
+        background-repeat: repeat-x;
+        flex-direction: row;
+        left: 0;
+    }
+
+    .k-splitbar-static-horizontal { width: 1px; }
+    .k-splitbar-static-vertical { height: 1px; }
+
+    .k-splitbar-draggable-horizontal .k-resize-handle {
+        width: $kendo-splitter-drag-handle-thickness;
+        height: $kendo-splitter-drag-handle-length;
+        position: static;
+        z-index: 1;
+    }
+
+    .k-splitbar .k-resize-handle {
+        display: none;
+        background-color: currentColor;
+    }
+
+    .k-splitbar-draggable-horizontal,
+    .k-splitbar-draggable-vertical {
+
+        .k-resize-handle {
+            display: block;
+        }
+    }
+
+    .k-splitbar-horizontal .k-collapse-prev {
+        margin-bottom: $kendo-splitter-drag-icon-margin;
+    }
+
+    .k-splitbar-horizontal .k-collapse-next {
+        margin-top: $kendo-splitter-drag-icon-margin;
+    }
+
+    .k-splitbar-vertical .k-collapse-prev {
+        margin-right: $kendo-splitter-drag-icon-margin;
+    }
+
+    .k-splitbar-vertical .k-collapse-next {
+        margin-left: $kendo-splitter-drag-icon-margin;
+    }
+
+    .k-splitbar-draggable-vertical .k-resize-handle {
+        width: $kendo-splitter-drag-handle-length;
+        height: $kendo-splitter-drag-handle-thickness;
+        position: static;
+        z-index: 1;
+    }
+
+    .k-pane > {
+        .k-splitter {
+            border-width: 0;
+            overflow: hidden;
+        }
+
+        .k-splitter-overlay {
+            opacity: 0;
+            position: absolute;
+        }
+    }
+
+    // flexbox-based splitter
+
+    .k-splitter-flex {
+        display: flex;
+        width: 100%;
+        height: auto;
+
+        .k-pane {
+            position: relative;
+            flex: 1 1 auto;
+            min-width: 0;
+            max-width: 100%;
+            min-height: 0;
+            max-height: 100%;
+            height: 100%; // allows nested elements to use height: 100%
+        }
+
+        .k-pane-static {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        .k-pane-flex {
+            display: flex;
+        }
+
+        .k-splitbar {
+            position: static;
+            flex: 0 0 auto;
+        }
+
+        .k-pane,
+        .k-pane-flex {
+            &.k-hidden,
+            &[hidden] {
+                // hidden panes need to be zero-width to allow pane animation
+                flex: 0 1 0% !important; // stylelint-disable-line declaration-no-important
+                overflow: hidden !important; // stylelint-disable-line declaration-no-important
+                display: block !important; // stylelint-disable-line declaration-no-important
+            }
+        }
+
+        &.k-splitter-horizontal {
+            flex-direction: row;
+        }
+        &.k-splitter-vertical {
+            flex-direction: column;
+        }
+    }
+
+}
+
+
+@mixin kendo-splitter--layout() {
+    @include kendo-splitter--layout-base();
+}

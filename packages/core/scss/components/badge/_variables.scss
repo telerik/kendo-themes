@@ -1,0 +1,79 @@
+// Badge
+
+/// The width of the border around the Badge.
+/// @group badge
+$kendo-badge-border-width: null !default;
+
+/// The border radius of the Badge.
+/// @group badge
+$kendo-badge-border-radius: null !default;
+
+
+/// The horizontal padding of the Badge.
+/// @group badge
+$kendo-badge-padding-x: null !default;
+/// The horizontal padding of the small Badge.
+/// @group badge
+$kendo-badge-sm-padding-x: null !default;
+/// The horizontal padding of the medium Badge.
+/// @group badge
+$kendo-badge-md-padding-x: null !default;
+/// The horizontal padding of the large Badge.
+/// @group badge
+$kendo-badge-lg-padding-x: null !default;
+
+/// The vertical padding of the Badge.
+/// @group badge
+$kendo-badge-padding-y: null !default;
+/// The vertical padding of the small Badge.
+/// @group badge
+$kendo-badge-sm-padding-y: null !default;
+/// The vertical padding of the medium Badge.
+/// @group badge
+$kendo-badge-md-padding-y: null !default;
+/// The vertical padding of the large Badge.
+/// @group badge
+$kendo-badge-lg-padding-y: null !default;
+
+/// The font sizes of the Badge.
+/// @group badge
+$kendo-badge-font-size: null !default;
+/// The font size of the small Badge.
+/// @group badge
+$kendo-badge-sm-font-size: null !default;
+/// The font size of the medium Badge.
+/// @group badge
+$kendo-badge-md-font-size: var( --kendo-font-size-xs, inherit )!default;
+/// The font size of the large Badge.
+/// @group badge
+$kendo-badge-lg-font-size: null !default;
+
+/// The line heights used along with the $kendo-font-size variable.
+/// @group badge
+$kendo-badge-line-height: null !default;
+/// The line height used along with the $kendo-font-size variable of the small Badge.
+/// @group badge
+$kendo-badge-sm-line-height: null !default;
+/// The line height used along with the $kendo-font-size variable of the medium Badge.
+/// @group badge
+$kendo-badge-md-line-height: null !default;
+/// The line height used along with the $kendo-font-size variable of the large Badge.
+/// @group badge
+$kendo-badge-lg-line-height: null !default;
+
+/// The calculated minimum width of the circular Badge.
+/// @group badge
+$kendo-badge-min-width: null !default;
+/// The calculated minimum width of the small circular Badge.
+/// @group badge
+$kendo-badge-sm-min-width: null !default;
+/// The calculated minimum width of the medium circular Badge.
+/// @group badge
+$kendo-badge-md-min-width: null !default;
+/// The calculated minimum width of the large circular Badge.
+/// @group badge
+$kendo-badge-lg-min-width: null !default;
+
+/// The sizes map for the Badge.
+/// @group badge
+$kendo-badge-sizes: null !default;

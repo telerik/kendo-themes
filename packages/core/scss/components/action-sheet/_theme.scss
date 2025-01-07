@@ -1,0 +1,105 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-action-sheet--theme-base() {
+
+    // Actionsheet
+    .k-actionsheet {
+        @include fill(
+            $kendo-actionsheet-text,
+            $kendo-actionsheet-bg,
+            $kendo-actionsheet-border
+        );
+        @include box-shadow( $kendo-actionsheet-shadow );
+    }
+
+
+    // Actionsheet header
+    .k-actionsheet-titlebar {
+        @include fill(
+            $kendo-actionsheet-titlebar-text,
+            $kendo-actionsheet-titlebar-bg,
+            $kendo-actionsheet-titlebar-border,
+            $kendo-actionsheet-titlebar-gradient
+        );
+        @include box-shadow( $kendo-actionsheet-titlebar-shadow );
+    }
+    .k-actionsheet-subtitle {
+        @include fill( $color: $kendo-actionsheet-subtitle-text );
+    }
+
+
+    // Actionsheet items
+    .k-actionsheet-items {}
+
+
+    // Actionsheet item
+    .k-actionsheet-item {
+
+
+        // Hover state
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-actionsheet-item-hover-text,
+                $kendo-actionsheet-item-hover-bg,
+                $kendo-actionsheet-item-hover-border,
+                $kendo-actionsheet-item-hover-gradient
+            );
+            @include box-shadow( $kendo-actionsheet-item-hover-shadow );
+        }
+
+
+        // Focus state
+        &:focus,
+        &.k-focus {
+            @include fill(
+                $kendo-actionsheet-item-focus-text,
+                $kendo-actionsheet-item-focus-bg,
+                $kendo-actionsheet-item-focus-border,
+                $kendo-actionsheet-item-focus-gradient
+            );
+            @include focus-indicator( $kendo-actionsheet-item-focus-shadow );
+        }
+
+
+        // Disabled state
+        &:disabled,
+        &.k-disabled {
+            @include fill(
+                $kendo-actionsheet-item-disabled-text,
+                $kendo-actionsheet-item-disabled-bg,
+                $kendo-actionsheet-item-disabled-border,
+                $kendo-actionsheet-item-disabled-gradient
+            );
+            @include box-shadow( $kendo-actionsheet-item-disabled-shadow );
+        }
+    }
+
+
+    // Actionsheet item description
+    .k-actionsheet-item-description {
+        @include fill( $color: $kendo-actionsheet-item-description-text );
+    }
+
+
+    // Actionsheet action
+    .k-actionsheet-action {}
+
+    // Actionsheet separator
+    .k-actionsheet .k-hr {
+        border-color: $kendo-actionsheet-border;
+    }
+
+
+    // Adaptive Actionsheet
+    .k-adaptive-actionsheet .k-actionsheet-titlebar {
+        @include fill( $border: $kendo-adaptive-actionsheet-titlebar-border );
+    }
+
+}
+
+
+@mixin kendo-action-sheet--theme() {
+    @include kendo-action-sheet--theme-base();
+}

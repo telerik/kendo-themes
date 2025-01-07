@@ -1,0 +1,37 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../window/_index.scss" as *;
+@use "../splitter/_index.scss" as *;
+@use "../dataviz/_index.scss" as *;
+@use "../expansion-panel/_index.scss" as *;
+@use "../grid/_index.scss" as *;
+@use "../tabstrip/_index.scss" as *;
+@use "../listview/_index.scss" as *;
+@use "../forms/_index.scss" as *;
+@use "../combobox/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-chart-wizard--styles() {
+    @include import-once( "chart-wizard" ) {
+        @include core-styles();
+        @include kendo-icon--styles();
+        @include kendo-window--styles();
+        @include kendo-splitter--styles();
+        @include kendo-dataviz--styles();
+        @include kendo-expander--styles();
+        @include kendo-grid--styles();
+        @include kendo-tabstrip--styles();
+        @include kendo-listview--styles();
+        @include kendo-form--styles();
+        @include kendo-combobox--styles();
+        @include kendo-chart-wizard--layout();
+        @include kendo-chart-wizard--theme();
+    }
+}

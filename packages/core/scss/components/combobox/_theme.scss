@@ -1,0 +1,11 @@
+@mixin kendo-combobox--theme-base() {
+
+    // Combobox
+    .k-combobox {}
+
+}
+
+
+@mixin kendo-combobox--theme() {
+    @include kendo-combobox--theme-base();
+}

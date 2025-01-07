@@ -1,0 +1,98 @@
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-rating--layout-base() {
+
+    .k-rating {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        box-sizing: border-box;
+        outline: 0;
+        background: none;
+        font-family: $kendo-rating-font-family;
+        font-size: $kendo-rating-font-size;
+        line-height: $kendo-rating-line-height;
+        display: inline-flex;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        &.k-readonly {
+            pointer-events: none;
+        }
+    }
+
+    .k-rating-container {
+        flex: 0 1 auto;
+        position: relative;
+        margin-block: 0;
+        margin-inline: $kendo-rating-container-margin-x;
+
+        .k-rating-item {
+            display: inline-flex;
+            position: relative;
+            padding-block: $kendo-rating-item-padding-y;
+            padding-inline: $kendo-rating-item-padding-x;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0;
+            outline: 0;
+            overflow: hidden;
+            transition: color 200ms ease-out 0s;
+
+            * {
+                pointer-events: none;
+            }
+
+            .k-rating-precision-part,
+            .k-rating-precision-complement {
+                display: inherit;
+                position: absolute;
+                top: $kendo-rating-item-padding-y;
+                left: $kendo-rating-item-padding-x;
+                overflow: hidden;
+            }
+
+            .k-rating-precision-complement {
+                direction: rtl;
+            }
+
+            svg {
+                fill: currentColor;
+            }
+        }
+    }
+
+    .k-rating-label {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        line-height: $kendo-rating-label-line-height;
+        margin-block: $kendo-rating-label-margin-y;
+        margin-inline: $kendo-rating-label-margin-x;
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-rating-precision-part {
+            left: auto;
+            right: $kendo-rating-item-padding-x;
+        }
+
+        .k-rating-item .k-rating-precision-complement {
+            direction: ltr;
+        }
+    }
+
+}
+
+
+@mixin kendo-rating--layout() {
+    @include kendo-rating--layout-base();
+}

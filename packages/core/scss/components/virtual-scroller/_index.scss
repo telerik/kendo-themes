@@ -1,0 +1,20 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+
+// Dependencies
+
+
+// Expose
+@mixin kendo-virtual-scroller--styles() {
+    @include import-once( "virtual-scroller" ) {
+        @include core-styles();
+        @include kendo-virtual-scroller--layout();
+        @include kendo-virtual-scroller--theme();
+    }
+}

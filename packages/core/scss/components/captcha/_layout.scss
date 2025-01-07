@@ -1,0 +1,69 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-captcha--layout-base() {
+
+    // Captcha
+    .k-captcha {
+        width: $kendo-captcha-width;
+        box-sizing: border-box;
+        font-size: $kendo-captcha-font-size;
+        font-family: $kendo-captcha-font-family;
+        line-height: $kendo-captcha-line-height;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: $kendo-captcha-gap;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    // Image
+    .k-captcha-image-wrap {
+        position: relative;
+        gap: $kendo-captcha-image-wrap-gap;
+    }
+
+    .k-captcha-image-controls {
+        position: relative;
+        gap: $kendo-captcha-image-controls-gap;
+    }
+
+    .k-captcha-image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .k-captcha-image > img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    // Loading
+    .k-captcha-loading .k-captcha-image {
+        height: auto;
+    }
+
+    // Volume Control
+    .k-captcha-volume-control {
+        height: 100%;
+    }
+
+    // Verification Success
+    .k-captcha-validation-message {
+        margin-top: $kendo-captcha-validation-message-margin-top;
+        font-size: $kendo-captcha-validation-message-font-size;
+        font-style: $kendo-captcha-validation-message-font-style;
+    }
+
+}
+
+
+@mixin kendo-captcha--layout() {
+    @include kendo-captcha--layout-base();
+}

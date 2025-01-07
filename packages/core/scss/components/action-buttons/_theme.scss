@@ -1,0 +1,21 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-action-buttons--theme-base() {
+
+    // Actions
+    .k-actions {
+        @include fill(
+            $kendo-actions-text,
+            $kendo-actions-bg,
+            $kendo-actions-border,
+            $kendo-actions-gradient
+        );
+    }
+
+}
+
+
+@mixin kendo-action-buttons--theme() {
+    @include kendo-action-buttons--theme-base();
+}

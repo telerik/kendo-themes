@@ -1,0 +1,37 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../button/_index.scss" as *;
+@use "../input/_index.scss" as *;
+@use "../validator/_index.scss" as *;
+@use "../datetimepicker/_index.scss" as *;
+@use "../numerictextbox/_index.scss" as *;
+@use "../window/_index.scss" as *;
+@use "../splitter/_index.scss" as *;
+@use "../treelist/_index.scss" as *;
+@use "../time-marker/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-gantt--styles() {
+    @include import-once( "gantt" ) {
+        @include core-styles();
+        @include kendo-button--styles();
+        @include kendo-input--styles();
+        @include kendo-validator--styles();
+        @include kendo-date-time-picker--styles();
+        @include kendo-numeric-textbox--styles();
+        @include kendo-window--styles();
+        @include kendo-splitter--styles();
+        @include kendo-treelist--styles();
+        @include kendo-time-marker--styles();
+        @include kendo-gantt--layout();
+        @include kendo-gantt--theme();
+        @include kendo-utils--typography--white-space();
+        @include kendo-utils--table--table-layout();
+    }
+}

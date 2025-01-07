@@ -1,0 +1,252 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../border-radii/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "../../spacing/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-progressbar--layout-base() {
+
+    // Base
+    .k-progressbar {
+        @include border-radius( k-border-radius(md) );
+        --kendo-progressbar-value: 0;
+        border-width: $kendo-progressbar-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-progressbar-font-family;
+        font-size: $kendo-progressbar-font-size;
+        line-height: $kendo-progressbar-line-height;
+        display: inline-grid;
+        vertical-align: middle;
+        position: relative;
+        overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+        // Selection
+        > .k-progressbar-value {
+            border-width: 0;
+            border-style: solid;
+            display: flex;
+            overflow: hidden;
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+        }
+
+
+        // Chunks
+        > .k-progressbar-chunks {
+            border-width: inherit;
+            border-style: inherit;
+            white-space: nowrap;
+            display: flex;
+            align-items: stretch;
+            flex: 1;
+            gap: 1px;
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+        }
+        .k-progressbar-chunk {
+            display: block;
+            border-width: 0;
+            flex: 1;
+        }
+
+    }
+
+
+    // Status
+    .k-progress-status-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+
+        &.k-progress-start { justify-content: flex-start; }
+        &.k-progress-center { justify-content: center; }
+        &.k-progress-end { justify-content: flex-end; }
+    }
+    .k-progress-status {
+        padding-block: 0;
+        padding-inline: k-spacing(2);
+        min-width: 10px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+
+    // Horizontal
+    .k-progressbar-horizontal {
+        width: $kendo-progressbar-horizontal-width;
+        height: var( --kendo-progressbar-height, #{$kendo-progressbar-height} );
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+
+
+        .k-progress-status-wrap {
+            flex-direction: row;
+        }
+
+        > .k-progressbar-value {
+            width: calc( var( --kendo-progressbar-value, 0 ) * 1% );
+            flex-direction: row;
+
+            > .k-progress-status-wrap {
+                width: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) );
+            }
+        }
+
+
+        // Chunks
+        > .k-progressbar-chunks {
+            flex-direction: row;
+        }
+
+        // Horizontal reverse
+        &.k-progressbar-reverse {
+
+            > .k-progressbar-value {
+                flex-direction: row-reverse;
+                justify-self: flex-end;
+            }
+
+            > .k-progressbar-chunks {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+
+    // Vertical
+    .k-progressbar-vertical {
+        width: var( --kendo-progressbar-height, #{$kendo-progressbar-height} );
+        height: 27em;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+
+
+        .k-progress-status-wrap {
+            flex-direction: column-reverse;
+        }
+        .k-progress-status {
+            writing-mode: vertical-lr;
+        }
+
+        > .k-progressbar-value {
+            height: calc( var( --kendo-progressbar-value, 0 ) * 1% );
+            flex-direction: column-reverse;
+            align-self: flex-end;
+            align-items: flex-end;
+
+            > .k-progress-status-wrap {
+                height: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) );
+            }
+        }
+
+
+        // Chunk
+        > .k-progressbar-chunks {
+            flex-direction: column-reverse;
+        }
+
+        // Vertical reverse
+        &.k-progressbar-reverse {
+            flex-direction: column;
+
+            > .k-progressbar-value {
+                flex-direction: column;
+                align-self: flex-start;
+            }
+
+            > .k-progressbar-chunks {
+                flex-direction: column;
+            }
+        }
+    }
+
+
+    // Indeterminate
+    .k-progressbar-indeterminate {
+        .k-progress-status-wrap,
+        .k-progressbar-value,
+        .k-progressbar-chunk {
+            display: none;
+        }
+    }
+
+
+    // Blazor specific
+    .telerik-blazor.k-progressbar-horizontal {
+
+        > .k-progressbar-value,
+        > .k-progressbar-value > .k-progress-status-wrap {
+            transition: width .1s ease-in-out;
+        }
+    }
+
+
+    // RTL
+    .k-rtl .k-progressbar,
+    .k-progressbar[dir="rtl"] {
+        direction: rtl;
+    }
+
+
+    // Circular progressbar
+    .k-circular-progressbar {
+        display: inline-block;
+        text-align: start;
+        position: relative;
+    }
+
+    .k-circular-progressbar-surface {
+        height: 100%;
+
+        & > div {
+            width: 100%;
+            height: 100%;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .k-circular-progressbar-scale {
+        fill: none;
+    }
+
+    .k-circular-progressbar-arc {
+        transform-box: fill-box;
+        transform-origin: center center;
+        transform: rotate(-90deg);
+        stroke-linecap: round;
+        fill: none;
+    }
+
+    .k-circular-progressbar-label {
+        position: absolute;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+
+@mixin kendo-progressbar--layout() {
+    @include kendo-progressbar--layout-base();
+}

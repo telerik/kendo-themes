@@ -1,0 +1,96 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-radio--theme-base() {
+
+    // Radio
+    .k-radio {
+        @include fill(
+            $kendo-radio-text,
+            $kendo-radio-bg,
+            $kendo-radio-border
+        );
+    }
+
+
+    // Hover state
+    .k-radio:hover,
+    .k-radio.k-hover {
+        @include fill(
+            $kendo-radio-hover-text,
+            $kendo-radio-hover-bg,
+            $kendo-radio-hover-border
+        );
+    }
+
+
+    // Focus state
+    .k-radio:focus,
+    .k-radio.k-focus {
+        @include fill( $border: $kendo-radio-focus-border );
+        @include focus-indicator( $kendo-radio-focus-shadow );
+    }
+
+
+    // Invalid state
+    .k-radio.k-invalid,
+    .k-radio.ng-invalid.ng-touched,
+    .k-radio.ng-invalid.ng-dirty {
+        @include fill( $border: $kendo-radio-invalid-border );
+    }
+    .k-radio.k-invalid + .k-radio-label,
+    .k-radio.ng-invalid.ng-touched + .k-radio-label,
+    .k-radio.ng-invalid.ng-dirty + .k-radio-label {
+        @include fill( $color: $kendo-radio-invalid-text );
+    }
+
+
+    // Checked
+    .k-radio:checked,
+    .k-radio.k-checked {
+        @include fill(
+            $kendo-radio-checked-text,
+            $kendo-radio-checked-bg,
+            $kendo-radio-checked-border
+        );
+    }
+    .k-radio:checked:focus,
+    .k-radio.k-checked.k-focus {
+        @include fill( $border: $kendo-radio-focus-checked-border );
+        @include focus-indicator( $kendo-radio-focus-checked-shadow );
+    }
+
+
+    // Disabled
+    .k-radio:disabled,
+    .k-radio.k-disabled {
+        @include fill(
+            $kendo-radio-disabled-text,
+            $kendo-radio-disabled-bg,
+            $kendo-radio-disabled-border
+        );
+    }
+    .k-radio:checked:disabled,
+    .k-radio.k-checked.k-disabled {
+        @include fill(
+            $kendo-radio-disabled-checked-text,
+            $kendo-radio-disabled-checked-bg,
+            $kendo-radio-disabled-checked-border
+        );
+    }
+
+
+    // Ripple
+    .k-ripple-container {
+        .k-radio::after {
+            background: $kendo-radio-ripple-bg;
+            opacity: $kendo-radio-ripple-opacity;
+        }
+    }
+
+}
+
+
+@mixin kendo-radio--theme() {
+    @include kendo-radio--theme-base();
+}

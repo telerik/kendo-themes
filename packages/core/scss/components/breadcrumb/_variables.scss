@@ -1,0 +1,205 @@
+// Breadcrumb
+
+/// The width of the border around the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-border-width: null !default;
+
+/// The horizontal margin of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-margin-x: null !default;
+/// The vertical margin of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-margin-y: null !default;
+/// The horizontal padding of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-padding-x: null !default;
+/// The vertical padding of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-padding-y: null !default;
+
+/// The font family of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-font-family: null !default;
+
+/// The font size of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-font-size: null !default;
+/// The font size of the small Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-sm-font-size: null !default;
+/// The font size of the medium Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-md-font-size: null !default;
+/// The font size of the large Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-lg-font-size: null !default;
+
+/// The line-height of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-line-height: null !default;
+/// The line-height of the small Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-sm-line-height: null !default;
+/// The line-height of the medium Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-md-line-height: null !default;
+/// The line-height of the height Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-lg-line-height: null !default;
+
+/// The base background of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-bg: null !default;
+/// The base text color of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-text: null !default;
+/// The base border color of the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-border: null !default;
+
+/// The box shadow of the focused Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-focus-shadow: null !default;
+
+/// The horizontal padding of the Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-padding-x: null !default;
+/// The horizontal padding of the small Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-sm-link-padding-x: null !default;
+/// The horizontal padding of the medium Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-md-link-padding-x: null !default;
+/// The horizontal padding of the large Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-lg-link-padding-x: null !default;
+
+/// The vertical padding of the Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-padding-y: null !default;
+/// The vertical padding of the small Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-sm-link-padding-y: null !default;
+/// The vertical padding of the medium Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-md-link-padding-y: null !default;
+/// The vertical padding of the large Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-lg-link-padding-y: null !default;
+
+/// The border-radius of the Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-border-radius: null !default;
+
+/// The vertical padding of the Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-icon-link-padding-y: null !default;
+/// The vertical padding of the small Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-sm-icon-link-padding-y: null !default;
+/// The vertical padding of the medium Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-md-icon-link-padding-y: null !default;
+/// The vertical padding of the large Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-lg-icon-link-padding-y: null !default;
+
+/// The horizontal padding of the Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-icon-link-padding-x: null !default;
+/// The horizontal padding of the small Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-sm-icon-link-padding-x: null !default;
+/// The horizontal padding of the medium Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-md-icon-link-padding-x: null !default;
+/// The horizontal padding of the large Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-lg-icon-link-padding-x: null !default;
+
+/// The text color of the Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-initial-text: null !default;
+/// The spacing of the Breadcrumb link icon.
+/// @group breadcrumb
+$kendo-breadcrumb-link-icon-spacing: null !default;
+
+/// The background color of the Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-bg: null !default;
+/// The text color of the Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-text: null !default;
+/// The border color of the Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-border: null !default;
+
+/// The background color of the hovered Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-hover-bg: null !default;
+/// The text color of the hovered Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-hover-text: null !default;
+/// The border color of the hovered Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-hover-border: null !default;
+
+/// The background color of the focused Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-focus-bg: null !default;
+/// The text color of the focused Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-focus-text: null !default;
+/// The border color of the focused Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-focus-border: null !default;
+/// The box shadow of the focused Breadcrumb link.
+/// @group breadcrumb
+$kendo-breadcrumb-link-focus-shadow: null !default;
+
+/// The background color of the Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-bg: null !default;
+/// The text color of the Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-text: null !default;
+/// The border color of the Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-border: null !default;
+
+/// The background color of the hovered Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-hover-bg: null !default;
+/// The text color of the hovered Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-hover-text: null !default;
+/// The border color of the hovered Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-hover-border: null !default;
+
+/// The background color of the focused Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-focus-bg: null !default;
+/// The text color of the focused Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-focus-text: null !default;
+/// The border color of the focused Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-focus-border: null !default;
+/// The box shadow of the focused Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-root-link-focus-shadow: null !default;
+
+/// The background color of the current Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-current-item-bg: null !default;
+/// The text color of the current Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-current-item-text: null !default;
+/// The border color of the current Breadcrumb root link.
+/// @group breadcrumb
+$kendo-breadcrumb-current-item-border: null !default;
+
+/// The sizes map for the Breadcrumb.
+/// @group breadcrumb
+$kendo-breadcrumb-sizes: null !default;

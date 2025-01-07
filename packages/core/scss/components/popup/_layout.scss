@@ -1,0 +1,85 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../border-radii/index.import.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-popup--layout-base() {
+
+    // Animation Container
+    .k-animation-container {
+        position: absolute;
+        overflow: hidden;
+        z-index: 100;
+
+        &-fixed {
+            position: fixed;
+        }
+
+        &-relative {
+            position: relative;
+            display: inline-block;
+        }
+    }
+
+    .k-animation-container {
+        @include border-bottom-radius-only( $kendo-border-radius-md );
+    }
+
+    .k-animation-container-shown {
+        overflow: visible;
+    }
+
+    // Popup
+    .k-popup {
+        @include border-radius( $kendo-popup-border-radius );
+        margin: 0;
+        padding: 0;
+        // padding-block: $kendo-popup-padding-y;
+        // padding-inline: $kendo-popup-padding-x;
+        border-width: $kendo-popup-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        font-size: $kendo-popup-font-size;
+        line-height: $kendo-popup-line-height;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .k-item {
+            outline: none;
+        }
+    }
+
+    .k-popup > .k-colorpalette {
+        padding-block: $kendo-popup-content-padding-y;
+        padding-inline: $kendo-popup-content-padding-x;
+    }
+
+    // Transparent popup
+    .k-popup.k-popup-transparent {
+        border-width: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    // Flush popup
+    .k-popup.k-popup-flush {
+        padding: 0;
+    }
+
+    // Child components
+    .k-popup > .k-widget,
+    .k-popup > .k-coloreditor {
+        border-width: 0;
+    }
+
+    // Legacy shadow
+    .k-shadow {
+        box-shadow: $kendo-popup-shadow;
+    }
+
+}
+
+
+@mixin kendo-popup--layout() {
+    @include kendo-popup--layout-base();
+}

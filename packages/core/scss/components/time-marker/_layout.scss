@@ -1,0 +1,23 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-time-marker--layout-base() {
+
+    .k-current-time {
+        width: $kendo-current-time-width;
+        position: absolute;
+
+        &.k-current-time-arrow-left,
+        &.k-current-time-arrow-right,
+        &.k-current-time-arrow-down {
+            width: 0;
+            height: 0;
+            background: transparent;
+            border: 4px solid transparent;
+        }
+    }
+
+}
+
+@mixin kendo-time-marker--layout() {
+    @include kendo-time-marker--layout-base();
+}

@@ -1,0 +1,10 @@
+@mixin kendo-date-picker--layout-base() {
+
+    // Date picker
+    .k-datepicker {}
+
+}
+
+@mixin kendo-date-picker--layout() {
+    @include kendo-date-picker--layout-base();
+}

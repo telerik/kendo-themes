@@ -1,0 +1,15 @@
+@mixin kendo-numeric-textbox--layout-base() {
+
+    // Numeric textbox
+    .k-numeric-textbox {}
+
+
+    // Alias
+    .k-numerictextbox { @extend .k-numeric-textbox !optional; }
+
+}
+
+
+@mixin kendo-numeric-textbox--layout() {
+    @include kendo-numeric-textbox--layout-base();
+}

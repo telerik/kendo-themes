@@ -1,0 +1,43 @@
+@mixin kendo-dropdown-list--layout-base() {
+
+    // Dropdown list
+    .k-dropdown-list {}
+
+
+    // Native select
+    select.k-dropdown-list {}
+
+
+    // Dropdown operator
+    .k-dropdown-operator {
+        width: min-content;
+        flex: none;
+
+        .k-input-button {
+            border-width: 0;
+            width: min-content;
+        }
+
+        .k-input-button .k-button-icon {
+            width: auto;
+            aspect-ratio: 1;
+        }
+
+        .k-input-inner {
+            display: none;
+        }
+    }
+
+
+    // Legacy aliases
+    .k-dropdown,
+    .k-dropdownlist {
+        @extend .k-dropdown-list !optional;
+    }
+
+}
+
+
+@mixin kendo-dropdown-list--layout() {
+    @include kendo-dropdown-list--layout-base();
+}

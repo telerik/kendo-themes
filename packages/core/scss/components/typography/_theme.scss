@@ -1,0 +1,29 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-typography--theme-base() {
+
+    .k-body {
+        @include fill(
+            $kendo-body-text,
+            $kendo-body-bg
+        );
+    }
+
+    // Code snippet
+    .k-pre,
+    .k-code {
+        @include fill(
+            $kendo-code-text,
+            $kendo-code-bg,
+            $kendo-code-border
+        );
+    }
+
+}
+
+
+@mixin kendo-typography--theme() {
+    @include kendo-typography--theme-base();
+}

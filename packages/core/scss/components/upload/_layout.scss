@@ -1,0 +1,254 @@
+@use "../../color-system/_constants.scss" as *;
+@use "../../spacing/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
+@mixin kendo-upload--layout-base() {
+
+    .k-upload {
+        border-width: $kendo-upload-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-upload-font-family;
+        font-size: $kendo-upload-font-size;
+        line-height: $kendo-upload-line-height;
+        position: relative;
+        display: block;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-upload-button {
+            min-width: 7em;
+        }
+
+        // Drop zone
+        .k-dropzone,
+        .k-upload-dropzone {
+            padding-block: $kendo-upload-dropzone-padding-y;
+            padding-inline: $kendo-upload-dropzone-padding-x;
+            border-width: 0;
+            text-align: end;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            background-color: transparent;
+
+            .k-dropzone-hint {
+                font-style: normal;
+                font-weight: normal;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: relative;
+                flex: 1;
+            }
+
+            .k-upload-status {
+                font-weight: normal;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                > .k-icon {
+                    margin-inline-end: $kendo-upload-icon-spacing;
+                }
+            }
+
+            .k-upload-status + .k-dropzone-hint {
+                display: none;
+            }
+        }
+
+        .k-dropzone-active {
+            .k-upload-status {
+                display: none;
+            }
+
+            .k-upload-status + .k-dropzone-hint {
+                display: block;
+            }
+        }
+
+        // Upload files list
+        .k-upload-files {
+            max-height: $kendo-upload-max-height;
+            overflow-y: auto;
+            margin: 0;
+            padding: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
+            border-color: inherit;
+            list-style: none;
+
+            .k-file-multiple,
+            .k-file-single {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .k-file-single {
+                align-items: center;
+            }
+
+            .k-file-multiple {
+                align-items: flex-start;
+            }
+
+            .k-file {
+                padding: $kendo-upload-item-padding-y $kendo-upload-item-padding-x calc(#{$kendo-upload-item-padding-y} + #{$kendo-upload-progress-thickness});
+                border-width: 0 0 1px;
+                border-style: solid;
+                outline: none;
+                display: flex;
+                align-items: flex-start;
+                position: relative;
+            }
+
+            .k-file:last-child {
+                border-width: 0;
+            }
+
+            .k-filename {
+                margin-left: k-spacing(4);
+                flex: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                position: relative;
+            }
+
+            .k-upload-pct {
+                margin-block: 0;
+                margin-inline: $kendo-upload-icon-spacing;
+                font-weight: normal;
+                vertical-align: middle;
+            }
+
+            ~ .k-clear-selected,
+            ~ .k-upload-selected {
+                margin-top: $kendo-upload-files-list-margin;
+                border-width: 0;
+            }
+
+            ~ .k-upload-selected {
+                border-left-width: 1px;
+                border-left-style: solid;
+                margin-left: -1px;
+            }
+
+            .k-file-name,
+            .k-file-size,
+            .k-file-validation-message,
+            .k-file-summary {
+                display: block;
+            }
+
+            .k-file-name {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                position: relative;
+            }
+
+            .k-file-size,
+            .k-file-summary,
+            .k-file-validation-message {
+                font-size: $kendo-upload-validation-font-size;
+                line-height: $kendo-upload-validation-line-height;
+            }
+
+
+            .k-file-icon-wrapper {
+
+                .k-file-state {
+                    position: absolute;
+                }
+            }
+
+            .k-file-state {
+                visibility: hidden;
+            }
+        }
+
+        .k-upload-files .k-file-info {
+            min-height: $kendo-icon-size-xxl;
+            display: block;
+            overflow: hidden;
+            flex: 1 0 0;
+        }
+
+        .k-multiple-files-wrapper,
+        .k-file-single > .k-file-info {
+            margin-inline-start: $kendo-upload-file-info-margin;
+            min-height: $kendo-icon-size-xxl;
+            display: block;
+            overflow: hidden;
+            flex: 1 0 0;
+        }
+
+        .k-multiple-files-wrapper {
+            .k-file-info {
+                margin-bottom: $kendo-upload-multiple-items-spacing;
+                display: block;
+            }
+
+            .k-file-summary {
+                margin-top: calc( calc( #{$kendo-upload-multiple-items-spacing} / 3) * -1 );
+            }
+        }
+
+        .k-progressbar {
+            --kendo-progressbar-height: #{$kendo-upload-progress-thickness};
+            position: absolute;
+            left: $kendo-upload-item-padding-x;
+            right: $kendo-upload-item-padding-x;
+            bottom: calc( #{$kendo-upload-item-padding-y} / 2 );
+            width: auto;
+        }
+
+        // Action buttons
+        .k-actions {
+            border-top-width: 1px;
+        }
+
+    }
+
+    .k-upload-button-wrap {
+        position: relative;
+        direction: ltr;
+
+        input {
+            // font should not depend on outside styles, otherwise upload may break
+            font: 170px monospace !important; // stylelint-disable-line declaration-no-important
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        input[disabled],
+        input.k-disabled {
+            visibility: hidden;
+        }
+    }
+
+}
+
+
+@mixin kendo-upload--layout() {
+    @include kendo-upload--layout-base();
+}

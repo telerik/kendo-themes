@@ -1,0 +1,11 @@
+@mixin kendo-autocomplete--layout-base() {
+
+    // Autocomplete
+    .k-autocomplete {}
+
+}
+
+
+@mixin kendo-autocomplete--layout() {
+    @include kendo-autocomplete--layout-base();
+}

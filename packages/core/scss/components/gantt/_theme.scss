@@ -1,0 +1,286 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-gantt--theme-base() {
+
+    // Gantt
+    .k-gantt {
+        @include fill(
+            $kendo-gantt-text,
+            $kendo-gantt-bg,
+            $kendo-gantt-border
+        );
+
+        // React gantt
+        .k-treelist-scrollable {
+            .k-task-milestone .k-task-milestone-content {
+                @include fill(
+                    $bg: $kendo-gantt-milestone-bg,
+                    $border: $kendo-gantt-milestone-border
+                );
+            }
+            .k-task-milestone.k-selected .k-task-milestone-content {
+                @include fill(
+                    $bg: $kendo-gantt-milestone-selected-bg,
+                    $border: $kendo-gantt-milestone-selected-border
+                );
+            }
+        }
+
+        .k-gantt-dependencies-svg {
+            polyline {
+                fill: none;
+                stroke: $kendo-gantt-line-fill;
+            }
+
+            polyline.k-selected {
+                stroke: $kendo-gantt-line-selected-fill;
+            }
+        }
+    }
+
+    // Header and footer
+    .k-gantt-header {}
+    .k-gantt-footer {
+        @include box-shadow( none );
+    }
+    .k-gantt-toolbar {}
+
+
+    // Treelist
+    .k-gantt-treelist {
+        @include fill(
+            $kendo-gantt-treelist-text,
+            $kendo-gantt-treelist-bg,
+            $kendo-gantt-treelist-border
+        );
+
+        .k-treelist,
+        .k-grid-content {
+            background-color: transparent;
+        }
+    }
+
+
+    // Rows and colls
+    .k-gantt-rows {}
+    .k-gantt-columns {}
+
+
+    // Non work hours
+    .k-gantt .k-nonwork-hour {
+        @include fill(
+            $kendo-gantt-nonwork-text,
+            $kendo-gantt-nonwork-bg,
+            $kendo-gantt-nonwork-border
+        );
+    }
+
+
+    // Task dot
+    .k-task-dot {}
+    .k-task-dot::before {
+        @include fill(
+            $bg: $kendo-gantt-dot-bg,
+            $border: $kendo-gantt-dot-border
+        );
+    }
+    .k-task-dot:hover::before,
+    .k-task-dot.k-hover::before {
+        @include fill(
+            $bg: $kendo-gantt-dot-hover-bg,
+            $border: $kendo-gantt-dot-hover-border
+        );
+    }
+
+
+    // Milestone
+    .k-task-milestone {
+        @include fill(
+            $bg: $kendo-gantt-milestone-bg,
+            $border: $kendo-gantt-milestone-border
+        );
+
+        &.k-task-delayed {
+            @include repeating-striped-gradient($kendo-gantt-delayed-bg, $kendo-body-bg, 90deg, 4px, 2px);
+        }
+
+        &.k-task-advanced {
+            @include fill(
+                $bg: $kendo-gantt-advanced-bg
+            );
+        }
+    }
+    .k-task-milestone.k-selected {
+        background-image: none;
+        @include fill(
+            $bg: $kendo-gantt-milestone-selected-bg,
+            $border: $kendo-gantt-milestone-selected-border
+        );
+    }
+
+
+    // Summary
+    .k-task-summary {
+        color: $kendo-gantt-summary-bg;
+
+        &.k-task-delayed {
+            color: $kendo-gantt-delayed-bg-lighter;
+        }
+
+        &.k-task-advanced {
+            color: $kendo-gantt-advanced-bg-lighter;
+        }
+    }
+    .k-task-summary-complete {
+        color: $kendo-gantt-summary-progress-bg;
+    }
+    .k-task-delayed .k-task-summary-complete {
+        color: $kendo-gantt-delayed-bg;
+    }
+    .k-task-advanced .k-task-summary-complete {
+        color: $kendo-gantt-advanced-bg;
+    }
+    .k-task-summary.k-selected {
+        color: $kendo-gantt-summary-selected-bg;
+
+        .k-task-summary-complete {
+            color: $kendo-gantt-summary-progress-selected-bg;
+        }
+    }
+
+
+    // Tasks
+    .k-task-single {
+        @include fill(
+            $kendo-gantt-task-text,
+            $kendo-gantt-task-bg,
+            $kendo-gantt-task-border
+        );
+
+        &.k-task-delayed {
+            @include fill(
+                $bg: $kendo-gantt-delayed-bg-lighter
+            );
+        }
+
+        &.k-task-advanced {
+            @include fill(
+                $bg: $kendo-gantt-advanced-bg-lighter
+            );
+        }
+
+        .k-task-complete {
+            background-color: $kendo-gantt-task-progress-bg;
+        }
+    }
+    .k-task-delayed .k-task-complete {
+        @include fill(
+            $bg: $kendo-gantt-delayed-bg
+        );
+    }
+    .k-task-advanced .k-task-complete {
+        @include fill(
+            $bg: $kendo-gantt-advanced-bg
+        );
+    }
+    .k-task-single.k-selected {
+        @include fill(
+            $kendo-gantt-task-selected-text,
+            $kendo-gantt-task-selected-bg,
+            $kendo-gantt-task-selected-border
+        );
+
+        .k-task-complete {
+            background-color: $kendo-gantt-task-progress-selected-bg;
+        }
+    }
+
+    // Dependency Lines
+    .k-gantt-line {
+        color: $kendo-gantt-line-fill;
+    }
+    .k-gantt-line.k-selected {
+        color: $kendo-gantt-line-selected-fill;
+    }
+
+    // Planned element
+    .k-task-planned {
+        .k-task-moment {
+            @include fill(
+                $bg: transparent,
+                $border: $kendo-gantt-planned-border
+            );
+        }
+        .k-task-duration {
+            @include fill(
+                $bg: $kendo-gantt-planned-bg
+            );
+        }
+        &:hover .k-task-moment {
+            @include fill(
+                $bg: $kendo-gantt-planned-bg
+            );
+        }
+    }
+
+    // Delay offset
+    .k-task-offset {
+        @include repeating-striped-gradient($kendo-gantt-delayed-bg, $kendo-body-bg, 135deg, 4px, 2px);
+
+        .k-resize-e::before {
+            @include fill(
+                $border: $kendo-gantt-action-on-offset-text
+            );
+        }
+
+        .k-task-actions {
+            color: $kendo-gantt-action-on-offset-text;
+        }
+    }
+
+    .k-task-offset:hover {
+        @include repeating-striped-gradient($kendo-gantt-delayed-bg-lighter, $kendo-body-bg, 135deg, 4px, 2px);
+    }
+
+    .k-pdf-export .k-task-offset {
+        background-color: $kendo-gantt-delayed-bg;
+    }
+
+    // Tooltips
+    .k-offset-tooltip-delayed {
+        @include fill(
+            $bg: $kendo-gantt-delayed-bg
+        );
+    }
+
+    .k-planned-tooltip {
+        @include fill(
+            $bg: $kendo-gantt-planned-bg
+        );
+    }
+
+    .k-gantt-tooltip-validation {
+        &::before {
+            background-color: $kendo-gantt-validation-tooltip-border;
+        }
+    }
+    .k-gantt-tooltip-valid {
+        &::before {
+            background-color: $kendo-gantt-validation-tooltip-valid-border;
+        }
+    }
+    .k-gantt-tooltip-invalid {
+        &::before {
+            background-color: $kendo-gantt-validation-tooltip-invalid-border;
+        }
+    }
+
+}
+
+
+@mixin kendo-gantt--theme() {
+    @include kendo-gantt--theme-base();
+}

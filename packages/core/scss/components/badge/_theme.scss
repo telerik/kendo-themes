@@ -1,0 +1,34 @@
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../_variables.scss" as *;
+
+@mixin kendo-badge--theme-base() {
+
+    // Solid badges
+    @each $name, $color in $kendo-theme-colors {
+        .k-badge-solid-#{$name} {
+            border-color: $color;
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
+            background-color: $color;
+        }
+    }
+
+    // Outline badges
+    .k-badge-outline {
+        border-color: currentColor;
+        background-color: transparent;
+    }
+
+    @each $name, $color in $kendo-theme-colors {
+        .k-badge-outline-#{$name} {
+            color: $color;
+        }
+    }
+
+}
+
+
+@mixin kendo-badge--theme() {
+    @include kendo-badge--theme-base();
+}

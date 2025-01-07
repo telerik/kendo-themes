@@ -1,0 +1,78 @@
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../card/_variables.scss" as *;
+
+@mixin kendo-timeline--theme-base() {
+
+    .k-timeline {
+        .k-timeline-flag {
+            color: $kendo-timeline-flag-text;
+            background-color: $kendo-timeline-flag-bg;
+        }
+
+        .k-timeline-circle {
+            background-color: $kendo-timeline-circle-bg;
+        }
+
+        .k-timeline-card {
+            .k-card-header {
+                background-color: $kendo-card-bg;
+                color: $kendo-card-text;
+            }
+
+            .k-card-body {
+
+                // Scrollbar styles for Mozilla
+                scrollbar-color: $kendo-card-border $kendo-card-bg;
+
+                // Scrollbar styles for Chrome, Safari and Opera
+                &::-webkit-scrollbar-track {
+                    background: $kendo-card-bg;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: $kendo-card-border;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                    background: $kendo-hover-border;
+                }
+            }
+        }
+
+        // TODO: remove
+        .k-timeline-date {
+            color: $kendo-body-text;
+        }
+
+        .k-timeline-arrow.k-disabled {
+            opacity: 1; // The arrow button in disabled mode should have a solid background
+            color: $kendo-timeline-track-arrow-disabled-text;
+            background-color: $kendo-timeline-track-arrow-disabled-bg;
+            border-color: $kendo-timeline-track-arrow-disabled-border;
+        }
+    }
+
+    .k-timeline-vertical,
+    .k-timeline-horizontal .k-timeline-track-wrap {
+        &::after {
+            background-color: $kendo-timeline-track-bg;
+            border-color: $kendo-timeline-track-border-color;
+        }
+    }
+
+    .k-timeline-horizontal .k-timeline-flag::after {
+        background-color: $kendo-timeline-flag-bg;
+    }
+
+    .k-timeline-track-item.k-focus .k-timeline-circle {
+        @include focus-indicator( $kendo-timeline-track-item-focus-shadow );
+    }
+
+}
+
+
+@mixin kendo-timeline--theme() {
+    @include kendo-timeline--theme-base();
+}

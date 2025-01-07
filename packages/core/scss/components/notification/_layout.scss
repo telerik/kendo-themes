@@ -1,0 +1,79 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-notification--layout-base() {
+
+    // Base
+    .k-notification-group {
+        max-height: 100%;
+        display: inline-flex;
+        flex-flow: column-reverse wrap;
+        position: fixed;
+        z-index: 1000;
+        gap: $kendo-notification-group-gap 0;
+    }
+
+    // Needed due to the specifics in the implementation of animations in Angular
+    .k-notification-container-animating {
+        overflow: hidden;
+    }
+
+    .k-notification {
+        @include border-radius( $kendo-notification-border-radius );
+        padding-block: $kendo-notification-padding-y;
+        padding-inline: $kendo-notification-padding-x;
+        border-width: $kendo-notification-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-notification-font-family;
+        font-size: $kendo-notification-font-size;
+        line-height: $kendo-notification-line-height;
+        cursor: default;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $kendo-notification-icon-spacing;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        > .k-notification-content {
+            flex: 1 1 auto;
+        }
+
+        > .k-notification-status {
+            flex-shrink: 0;
+        }
+    }
+
+    .k-notification-actions {
+        flex: none;
+        display: flex;
+        gap: $kendo-notification-icon-spacing;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
+        cursor: pointer;
+    }
+    .k-notification-action {
+        flex: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
+    }
+
+}
+
+
+@mixin kendo-notification--layout() {
+    @include kendo-notification--layout-base();
+}

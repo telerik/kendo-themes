@@ -1,0 +1,26 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-pager--theme-base() {
+
+    // Pager
+    .k-pager {
+        @include fill(
+            $kendo-pager-text,
+            $kendo-pager-bg,
+            $kendo-pager-border
+        );
+
+        &:focus,
+        &.k-focus {
+            @include fill( $bg: $kendo-pager-focus-bg );
+            @include focus-indicator( $kendo-pager-focus-shadow, true );
+        }
+    }
+
+}
+
+
+@mixin kendo-pager--theme() {
+    @include kendo-pager--theme-base();
+}

@@ -1,0 +1,30 @@
+// Filter expression builder
+
+/// The horizontal padding of the Filter.
+/// @group filter
+$kendo-filter-padding-x: null !default;
+/// The vertical padding of the Filter.
+/// @group filter
+$kendo-filter-padding-y: null !default;
+
+/// The bottom margin of the Filter.
+/// @group filter
+$kendo-filter-bottom-margin: null !default;
+/// The width of the line that connects the Filter items.
+/// @group filter
+$kendo-filter-line-size: null !default;
+
+/// The width of the dropdown elements in the Filter items.
+/// @group filter
+$kendo-filter-operator-dropdown-width: null !default;
+
+/// The text color of the Filter preview field.
+/// @group filter
+$kendo-filter-preview-field-text: null !default;
+/// The text color of the Filter preview operator.
+/// @group filter
+$kendo-filter-preview-operator-text: null !default;
+
+/// The box shadow of the focused Filter toolbar.
+/// @group filter
+$kendo-filter-toolbar-focus-shadow: null !default;

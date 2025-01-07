@@ -1,0 +1,108 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../motion/index.import.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-chat--theme-base() {
+
+    // Chat
+    .k-chat {
+        @include fill(
+            $kendo-chat-text,
+            $kendo-chat-bg,
+            $kendo-chat-border
+        );
+
+
+        // Message meta
+        .k-timestamp {
+            @include fill(
+                $kendo-chat-timestamp-text,
+                $kendo-chat-timestamp-bg
+            );
+        }
+        .k-author {
+            font-weight: bold;
+        }
+
+
+        // Bubbles
+        .k-chat-bubble {
+            @include fill(
+                $kendo-chat-bubble-text,
+                $kendo-chat-bubble-bg,
+                $kendo-chat-bubble-border
+            );
+            @include box-shadow( $kendo-chat-bubble-shadow );
+            transition: $kendo-transition;
+            order: -1;
+
+            a { color: $kendo-link-text; }
+            a:hover { color: $kendo-link-hover-text; }
+        }
+        .k-chat-bubble:hover {
+            @include box-shadow( $kendo-chat-bubble-hover-shadow );
+        }
+        .k-selected .k-chat-bubble {
+            @include box-shadow( $kendo-chat-bubble-selected-shadow );
+        }
+
+        .k-alt .k-chat-bubble {
+            @include fill(
+                $kendo-chat-alt-bubble-text,
+                $kendo-chat-alt-bubble-bg,
+                $kendo-chat-alt-bubble-border
+            );
+            @include box-shadow( $kendo-chat-alt-bubble-shadow );
+        }
+        .k-alt .k-chat-bubble:hover {
+            @include box-shadow( $kendo-chat-alt-bubble-hover-shadow );
+        }
+        .k-alt .k-selected .k-chat-bubble {
+            @include box-shadow( $kendo-chat-alt-bubble-selected-shadow );
+        }
+
+
+        // Quick replies
+        .k-quick-reply {
+            @include fill(
+                $kendo-chat-quick-reply-text,
+                $kendo-chat-quick-reply-bg,
+                $kendo-chat-quick-reply-border
+            );
+
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    $kendo-chat-quick-reply-hover-text,
+                    $kendo-chat-quick-reply-hover-bg,
+                    $kendo-chat-quick-reply-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( 0 0 $kendo-chat-quick-reply-shadow-blur $kendo-chat-quick-reply-shadow-spread if($kendo-enable-color-system, color-mix(in srgb, k-color( 'primary' ) ( $kendo-chat-quick-reply-shadow-opacity * 100% ), transparent), rgba( $kendo-color-primary, $kendo-chat-quick-reply-shadow-opacity )), true, true );
+            }
+        }
+    }
+
+
+    // Toolbar
+    .k-chat-toolbar,
+    .k-chat .k-toolbar-box {
+        @include fill(
+            $kendo-chat-toolbar-text,
+            $kendo-chat-toolbar-bg,
+            $kendo-chat-toolbar-border
+        );
+    }
+
+}
+
+
+@mixin kendo-chat--theme() {
+    @include kendo-chat--theme-base();
+}

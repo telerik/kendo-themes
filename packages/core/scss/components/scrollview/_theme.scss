@@ -1,0 +1,96 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-scrollview--theme-base() {
+
+   .k-scrollview {
+        @include fill(
+            $kendo-scrollview-text,
+            $kendo-scrollview-bg,
+            $kendo-scrollview-border
+        );
+
+        &.k-scrollview-dark {
+            kendo-scrollview-pager,
+            .k-scrollview-nav-wrap {
+                background-color: $kendo-scrollview-dark-bg;
+            }
+            .k-scrollview-next,
+            .k-scrollview-prev {
+                color: $kendo-scrollview-dark-bg;
+
+            }
+        }
+
+        &.k-scrollview-light {
+            kendo-scrollview-pager,
+            .k-scrollview-nav-wrap {
+                background-color: $kendo-scrollview-light-bg;
+            }
+
+        }
+    }
+
+    .k-scrollview:focus,
+    .k-scrollview-wrap:focus {
+        outline: none;
+
+    }
+    .k-scrollview-elements {
+        color: $kendo-scrollview-navigation-color;
+    }
+
+    .k-scrollview-next,
+    .k-scrollview-prev {
+        color: $kendo-scrollview-navigation-color;
+        background-color: $kendo-scrollview-navigation-bg;
+        text-shadow: $kendo-scrollview-navigation-icon-shadow;
+        opacity: $kendo-scrollview-navigation-default-opacity;
+        outline-width: 0;
+        -webkit-tap-highlight-color: $kendo-scrollview-arrow-tap-highlight-color;
+
+        &:focus,
+        &.k-focus {
+            color: $kendo-scrollview-navigation-color;
+            opacity: $kendo-scrollview-navigation-hover-opacity;
+
+            .k-icon::before {
+                @include focus-indicator( $kendo-scrollview-pagebutton-shadow );
+            }
+        }
+
+        &:hover,
+        &.k-hover {
+            color: $kendo-scrollview-navigation-color;
+            opacity: $kendo-scrollview-navigation-hover-opacity;
+
+        }
+    }
+
+    // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
+    .k-scrollview-nav > .k-link {
+        background: $kendo-scrollview-pagebutton-bg;
+        border: $kendo-scrollview-pagebutton-border;
+
+        &.k-primary {
+            background: $kendo-scrollview-pagebutton-primary-bg;
+            border: $kendo-scrollview-pagebutton-primary-border;
+        }
+
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-scrollview-pagebutton-shadow );
+        }
+
+        &:hover,
+        &.k-hover {
+            box-shadow: $kendo-scrollview-pagebutton-shadow;
+        }
+    }
+
+}
+
+
+@mixin kendo-scrollview--theme() {
+    @include kendo-scrollview--theme-base();
+}

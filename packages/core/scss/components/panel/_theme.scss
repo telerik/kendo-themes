@@ -1,0 +1,35 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-panel--theme--base() {
+    // Panels
+    .k-block,
+    .k-panel {
+        @include fill(
+            $kendo-panel-text,
+            $kendo-panel-bg,
+            $kendo-panel-border
+        );
+
+        > .k-header {
+            @include fill(
+                var( --kendo-component-text, #{$kendo-component-text} ),
+                var( --kendo-component-bg, #{$kendo-component-bg} ),
+                var( --kendo-component-border, #{$kendo-component-border} )
+            );
+        }
+    }
+
+    :where(.k-content) {
+        @include fill(
+            $kendo-panel-text,
+            $kendo-panel-bg,
+            $kendo-panel-border
+        );
+    }
+}
+
+@mixin kendo-panel--theme() {
+    @include kendo-panel--theme--base();
+}

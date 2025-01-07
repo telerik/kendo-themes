@@ -1,0 +1,109 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-checkbox--theme-base() {
+
+    // Checkbox
+    .k-checkbox {
+        @include fill(
+            $kendo-checkbox-text,
+            $kendo-checkbox-bg,
+            $kendo-checkbox-border
+        );
+    }
+
+
+    // Hover state
+    .k-checkbox:hover,
+    .k-checkbox.k-hover {
+        @include fill(
+            $kendo-checkbox-hover-text,
+            $kendo-checkbox-hover-bg,
+            $kendo-checkbox-hover-border
+        );
+    }
+
+
+    // Focus state
+    .k-checkbox:focus,
+    .k-checkbox.k-focus {
+        @include fill( $border: $kendo-checkbox-focus-border );
+        @include focus-indicator( $kendo-checkbox-focus-shadow );
+    }
+
+
+    // Indeterminate
+    .k-checkbox:indeterminate,
+    .k-checkbox.k-indeterminate {
+        @include fill(
+            $kendo-checkbox-indeterminate-text,
+            $kendo-checkbox-indeterminate-bg,
+            $kendo-checkbox-indeterminate-border
+        );
+    }
+
+
+    // Checked
+    .k-checkbox:checked,
+    .k-checkbox.k-checked {
+        @include fill(
+            $kendo-checkbox-checked-text,
+            $kendo-checkbox-checked-bg,
+            $kendo-checkbox-checked-border
+        );
+    }
+    .k-checkbox:checked:focus,
+    .k-checkbox.k-checked.k-focus {
+        @include fill( $border: $kendo-checkbox-focus-checked-border );
+        @include focus-indicator( $kendo-checkbox-focus-checked-shadow );
+    }
+
+
+    // Disabled
+    .k-checkbox:disabled,
+    .k-checkbox.k-disabled {
+        @include fill(
+            $kendo-checkbox-disabled-text,
+            $kendo-checkbox-disabled-bg,
+            $kendo-checkbox-disabled-border
+        );
+    }
+    .k-checkbox:checked:disabled,
+    .k-checkbox:indeterminate:disabled,
+    .k-checkbox.k-checked.k-disabled,
+    .k-checkbox.k-indeterminate.k-disabled {
+        @include fill(
+            $kendo-checkbox-disabled-checked-text,
+            $kendo-checkbox-disabled-checked-bg,
+            $kendo-checkbox-disabled-checked-border
+        );
+    }
+
+
+    // Invalid
+    .k-checkbox.k-invalid {
+        @include fill( $border: $kendo-checkbox-invalid-border );
+    }
+    .k-checkbox.k-invalid + .k-checkbox-label {
+        @include fill( $color: $kendo-checkbox-invalid-text );
+    }
+
+
+    // Ripple
+    .k-checkbox-wrap .k-ripple-blob {
+        color: $kendo-checkbox-ripple-bg;
+        opacity: $kendo-checkbox-ripple-opacity;
+    }
+    .k-ripple-container {
+        .k-checkbox::after {
+            background: $kendo-checkbox-ripple-bg;
+            opacity: $kendo-checkbox-ripple-opacity;
+        }
+    }
+
+}
+
+
+@mixin kendo-checkbox--theme() {
+    @include kendo-checkbox--theme-base();
+}

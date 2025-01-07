@@ -1,0 +1,122 @@
+
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./variables.scss" as *;
+@use "../button/_variables.scss" as *;
+
+@mixin kendo-dataviz--theme-base() {
+
+    // Elements
+    .k-chart,
+    .k-sparkline,
+    .k-stockchart {
+        @include fill(
+            $kendo-chart-text,
+            transparent,
+            $kendo-chart-border
+        );
+
+        .k-popup {
+            background: transparent;
+        }
+    }
+
+
+    // Tooltip
+    // TODO
+    .k-chart-tooltip {
+        color: $kendo-color-white;
+    }
+    .k-chart-tooltip-inverse {
+        color: $kendo-color-black;
+    }
+
+    .k-chart-crosshair-tooltip,
+    .k-chart-shared-tooltip {
+        color: $kendo-chart-crosshair-shared-tooltip-color;
+        background-color: $kendo-chart-crosshair-shared-tooltip-background;
+        border-color: $kendo-chart-crosshair-shared-tooltip-border;
+    }
+
+    .k-selection {
+        border-color: $kendo-chart-selection-border-color;
+        box-shadow: $kendo-chart-selection-shadow;
+    }
+
+    .k-selection-bg {
+        background-color: transparent;
+    }
+
+    .k-handle {
+        cursor: e-resize;
+
+        // TODO: refactor and remove button dependency
+        @include fill(
+            $kendo-button-text,
+            $kendo-button-bg,
+            $kendo-button-border,
+            $kendo-button-gradient
+        );
+
+        &:hover {
+            @include fill(
+                $kendo-button-hover-text,
+                $kendo-button-hover-bg,
+                $kendo-button-hover-border,
+                $kendo-button-hover-gradient
+            );
+        }
+    }
+
+    .k-handle div {
+        background-color: transparent;
+    }
+
+    .k-mask {
+        background-color: $kendo-component-bg;
+        opacity: .8;
+    }
+
+    .k-chart-overlay {
+        background-color: $kendo-chart-overlay-bg;
+    }
+
+
+    // Treemap
+    .k-treemap {
+        @include fill(
+            $kendo-component-text,
+            $kendo-component-bg,
+            $kendo-component-border
+        );
+
+        // Title
+        .k-treemap-title {
+            @include fill(
+                $kendo-component-header-text,
+                $kendo-component-header-bg,
+                $kendo-component-header-border,
+                $kendo-component-header-gradient
+            );
+        }
+
+        // Leaf
+        .k-leaf {
+            color: $kendo-component-bg;
+        }
+        .k-leaf.k-inverse {
+            color: $kendo-component-text;
+        }
+        .k-leaf:hover,
+        .k-leaf.k-hover {
+            box-shadow: inset 0 0 0 3px $kendo-component-border;
+        }
+    }
+
+}
+
+
+@mixin kendo-dataviz--theme() {
+    @include kendo-dataviz--theme-base();
+}

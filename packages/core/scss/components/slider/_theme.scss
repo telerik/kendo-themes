@@ -1,0 +1,87 @@
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "../../border-radii/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-slider--theme-base() {
+
+    // Slider
+    .k-slider {
+        // TODO: extract variables
+        color: $kendo-component-text;
+
+        .k-slider-track,
+        .k-slider-selection {
+            @include border-radius( k-border-radius(md) );
+        }
+
+        .k-slider-track {
+            @include fill( $bg: $kendo-slider-track-bg );
+        }
+
+        .k-slider-selection {
+            @include fill( $bg: $kendo-slider-selection-bg );
+        }
+
+        .k-draghandle {
+            @include fill(
+                $kendo-slider-draghandle-text,
+                $kendo-slider-draghandle-bg,
+                $kendo-slider-draghandle-border,
+                $kendo-slider-draghandle-gradient
+            );
+            @include border-radius( 50% );
+
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    $kendo-slider-draghandle-hover-text,
+                    $kendo-slider-draghandle-hover-bg,
+                    $kendo-slider-draghandle-hover-border,
+                    $kendo-slider-draghandle-hover-gradient
+                );
+            }
+
+            // TODO: remove k-pressed and rely on k-active
+            &:active,
+            &.k-active,
+            &.k-pressed {
+                @include fill(
+                    $kendo-slider-draghandle-pressed-text,
+                    $kendo-slider-draghandle-pressed-bg,
+                    $kendo-slider-draghandle-pressed-border,
+                    $kendo-slider-draghandle-pressed-gradient
+                );
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-slider-draghandle-focus-shadow );
+            }
+        }
+
+        &.k-focus {
+            .k-draghandle {
+                @include focus-indicator( $kendo-slider-draghandle-focus-shadow );
+            }
+        }
+
+        &.k-disabled {
+            opacity: $kendo-slider-disabled-opacity;
+        }
+    }
+
+    .k-slider-horizontal .k-tick {
+        @include background-image( $kendo-slider-tick-horizontal-image );
+    }
+
+    .k-slider-vertical .k-tick {
+        @include background-image( $kendo-slider-tick-vertical-image );
+    }
+
+}
+
+
+@mixin kendo-slider--theme() {
+    @include kendo-slider--theme-base();
+}

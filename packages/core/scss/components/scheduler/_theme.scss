@@ -1,0 +1,244 @@
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-scheduler--theme-base() {
+
+    // Appearance
+    .k-scheduler {
+        @include fill(
+            $kendo-scheduler-text,
+            $kendo-scheduler-bg,
+            $kendo-scheduler-border
+        );
+    }
+
+    // Header and footer
+    .k-scheduler-toolbar {
+        @include fill(
+            $kendo-scheduler-toolbar-text,
+            $kendo-scheduler-toolbar-bg,
+            $kendo-scheduler-toolbar-border,
+            $kendo-scheduler-toolbar-gradient
+        );
+    }
+    .k-scheduler-footer {
+        @include fill(
+            $kendo-scheduler-footer-text,
+            $kendo-scheduler-footer-bg,
+            $kendo-scheduler-footer-border,
+            $kendo-scheduler-footer-gradient
+        );
+    }
+
+    .k-scheduler-header {
+        background-color: $kendo-base-bg;
+    }
+
+    .k-scheduler-header-wrap {
+        background-color: $kendo-scheduler-bg;
+    }
+
+
+    // Scheduler navigation
+    .k-scheduler-navigation {}
+
+
+    // View switcher
+    .k-scheduler-views {}
+
+
+    // Scheduler footer
+    .k-scheduler-footer {}
+
+
+    // Scheduler content
+    .k-scheduler-content {}
+    .k-scheduler-nonwork,
+    .k-scheduler .k-nonwork-hour {
+        @include fill(
+            $kendo-scheduler-nonwork-text,
+            $kendo-scheduler-nonwork-bg
+        );
+    }
+    .k-scheduler-other-month,
+    .k-scheduler .k-other-month {
+        @include fill(
+            $kendo-scheduler-othermonth-text,
+            $kendo-scheduler-othermonth-bg
+        );
+    }
+
+    .k-scheduler-layout td.k-selected,
+    .k-scheduler-layout .k-scheduler-cell.k-selected {
+        background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25));
+    }
+
+    .k-scheduler-layout-flex {
+        .k-scheduler-head,
+        .k-sticky-cell {
+            background-color: $kendo-scheduler-bg;
+        }
+    }
+
+
+    // Events
+    .k-event {
+        @include fill(
+            $kendo-scheduler-event-text,
+            $kendo-scheduler-event-bg,
+            $kendo-scheduler-event-border,
+            $kendo-scheduler-event-gradient
+        );
+        @include box-shadow( $kendo-scheduler-event-shadow );
+
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-scheduler-event-hover-text,
+                $kendo-scheduler-event-hover-bg,
+                $kendo-scheduler-event-hover-border,
+                $kendo-scheduler-event-hover-gradient
+            );
+            @include box-shadow( $kendo-scheduler-event-hover-shadow );
+        }
+
+        &.k-selected {
+            @include fill(
+                $kendo-scheduler-event-selected-text,
+                $kendo-scheduler-event-selected-bg,
+                $kendo-scheduler-event-selected-border,
+                $kendo-scheduler-event-selected-gradient
+            );
+            @include box-shadow( $kendo-scheduler-event-selected-shadow );
+        }
+
+        &.k-event-inverse {
+            color: if($kendo-enable-color-system, if($kendo-enable-focus-contrast, black, k-color( on-app-surface )), k-contrast-legacy( $kendo-scheduler-event-text ));
+        }
+
+        &.k-event-ongoing {
+            @include box-shadow( $kendo-scheduler-event-ongoing-shadow );
+        }
+    }
+
+
+    // Drag hint
+    .k-event-drag-hint {}
+
+
+    // Resizing
+    .k-scheduler-marquee {}
+    .k-scheduler-marquee::before,
+    .k-scheduler-marquee::after {
+        border-color: $kendo-color-primary;
+    }
+
+    // Edit dialog
+    .k-scheduler-edit-dialog {
+        .k-dialog-actions {
+            border-color: $kendo-scheduler-border;
+        }
+    }
+
+
+
+    // Day view
+    .k-scheduler-dayview {}
+
+
+    // Workweek view
+    .k-scheduler-workWeekview {} // stylelint-disable-line
+
+
+    // Week view
+    .k-scheduler-weekview {}
+
+
+    // Month view
+    .k-scheduler-monthview {}
+
+
+    // Agenda view
+    .k-scheduler-agendaview {
+
+        // Hover
+        .k-scheduler-content tr:hover,
+        .k-scheduler-content tr.k-hover,
+        .k-scheduler-content .k-scheduler-row:hover,
+        .k-scheduler-content .k-scheduler-row.k-hover {
+            @include fill(
+                $kendo-hover-text,
+                $kendo-hover-bg,
+                $kendo-hover-border,
+                $kendo-hover-gradient
+            );
+        }
+
+        .k-scheduler-content tr:hover .k-scheduler-datecolumn,
+        .k-scheduler-content tr:hover .k-scheduler-groupcolumn,
+        .k-scheduler-content tr.k-hover .k-scheduler-datecolumn,
+        .k-scheduler-content tr.k-hover .k-scheduler-groupcolumn {
+            @include fill(
+                $kendo-scheduler-text,
+                $kendo-scheduler-bg,
+                $kendo-scheduler-border
+            );
+        }
+
+        // Selected
+        .k-scheduler-content tr.k-selected {
+            background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25));
+        }
+        .k-scheduler-content tr.k-selected .k-scheduler-datecolumn,
+        .k-scheduler-content tr.k-selected .k-scheduler-groupcolumn {
+            background-color: $kendo-scheduler-bg;
+        }
+    }
+
+
+    // Timeline view
+    .k-scheduler-timelineview {}
+
+
+    // Year view
+    .k-scheduler-yearview {
+
+        .k-day-indicator {
+            @include fill( $bg: $kendo-scheduler-yearview-indicator-bg );
+        }
+
+        .k-selected .k-day-indicator {
+            @include fill( $bg: $kendo-scheduler-yearview-indicator-selected-bg );
+        }
+    }
+
+
+
+    // Scheduler tooltip
+    .k-tooltip.k-scheduler-tooltip {
+        @include fill(
+            $kendo-scheduler-tooltip-text,
+            $kendo-scheduler-tooltip-bg,
+            $kendo-scheduler-tooltip-border
+        );
+        @include box-shadow( $kendo-scheduler-tooltip-shadow );
+
+        .k-callout {
+            @include fill( $color: $kendo-scheduler-tooltip-callout-text );
+        }
+    }
+
+
+    // Scheduler edit form
+    .k-scheduler-edit-form {}
+
+}
+
+
+@mixin kendo-scheduler--theme() {
+    @include kendo-scheduler--theme-base();
+}

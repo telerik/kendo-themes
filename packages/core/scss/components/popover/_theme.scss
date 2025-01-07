@@ -1,0 +1,46 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-popover--theme-base() {
+
+    // Popover
+    .k-popover {
+        @include box-shadow( $kendo-popover-shadow );
+
+        @include fill(
+            $kendo-popover-text,
+            $kendo-popover-bg,
+            $kendo-popover-border
+        );
+    }
+
+    .k-popover-inner {
+        background-color: inherit;
+        border-color: inherit;
+    }
+
+    // Header
+    .k-popover-header {
+        @include fill(
+            $kendo-popover-header-text,
+            $kendo-popover-header-bg,
+            $kendo-popover-header-border
+        );
+    }
+
+    // Callout
+    .k-popover-callout {
+        @include fill(
+            $bg: inherit,
+            $border: inherit
+        );
+
+        @include box-shadow( inherit )
+    }
+
+}
+
+
+@mixin kendo-popover--theme() {
+    @include kendo-popover--theme-base();
+}

@@ -1,0 +1,32 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-color-editor--theme-base() {
+
+    // ColorEditor/FlatColorPicker
+    .k-coloreditor {
+        @include fill(
+            $kendo-color-editor-text,
+            $kendo-color-editor-bg,
+            $kendo-color-editor-border
+        );
+    }
+
+    .k-coloreditor:focus,
+    .k-coloreditor.k-focus {
+        @include fill( $border: $kendo-color-editor-focus-border );
+        @include focus-indicator( $kendo-color-editor-focus-shadow );
+    }
+
+    .k-coloreditor .k-colorgradient:focus,
+    .k-coloreditor .k-colorgradient.k-focus {
+        box-shadow: none;
+        outline-color: $kendo-color-editor-color-gradient-focus-outline-color;
+    }
+
+}
+
+
+@mixin kendo-color-editor--theme() {
+    @include kendo-color-editor--theme-base();
+}

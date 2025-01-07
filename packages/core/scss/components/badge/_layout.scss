@@ -1,0 +1,154 @@
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./_variables.scss" as *;
+@use "sass:map";
+
+@mixin kendo-badge--layout-base() {
+
+    .k-badge {
+        padding: 0;
+        border-width: $kendo-badge-border-width;
+        border-style: solid;
+        border-color: transparent;
+        box-sizing: border-box;
+        color: inherit;
+        background-color: transparent;
+        font: inherit;
+        text-align: center;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+    .k-badge > * {
+        color: inherit;
+    }
+
+
+    // Links
+    a.k-badge,
+    .k-badge > a {
+        text-decoration: none;
+    }
+    a.k-badge:hover,
+    .k-badge > a:hover {
+        text-decoration: underline;
+    }
+
+
+    // Icon
+    .k-badge-icon {
+        max-width: 1em;
+        max-height: 1em;
+        font-size: inherit;
+    }
+    .k-badge-icon.k-svg-icon svg {
+        fill: currentColor;
+    }
+
+
+    // Badge sizes
+    @each $size, $size-props in $kendo-badge-sizes {
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_min-width: map.get( $size-props, min-width );
+
+        .k-badge-#{$size} {
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
+            font-size: $_font-size;
+            line-height: $_line-height;
+            min-width: $_min-width;
+
+            &:empty {
+                padding: $_padding-y;
+                min-width: auto;
+             }
+        }
+    }
+
+    kendo-badge-container {
+        display: inline-block;
+    }
+
+    // Badge position
+    .k-badge-container {
+        position: relative;
+        overflow: visible;
+    }
+    @each $placement, $translate in ("inside": null, "edge": 50, "outside": 100) {
+
+        .k-badge-#{$placement} {
+            position: absolute;
+            z-index: 9999;
+
+            &.k-top-start {
+                @if $translate {
+                    transform: translate( -1% * $translate, -1% * $translate );
+                }
+            }
+            &.k-top-end {
+                @if $translate {
+                    transform: translate( 1% * $translate, -1% * $translate );
+                }
+            }
+            &.k-bottom-start {
+                @if $translate {
+                    transform: translate( -1% * $translate, 1% * $translate );
+                }
+            }
+            &.k-bottom-end {
+                @if $translate {
+                    transform: translate( 1% * $translate, 1% * $translate );
+                }
+            }
+        }
+
+        .k-rtl .k-badge-#{$placement},
+        [dir="rtl"].k-badge-#{$placement},
+        [dir="rtl"] .k-badge-#{$placement} {
+            &.k-top-start {
+                @if $translate {
+                    transform: translate( 1% * $translate, -1% * $translate );
+                }
+            }
+            &.k-top-end {
+                @if $translate {
+                    transform: translate( -1% * $translate, -1% * $translate );
+                }
+            }
+            &.k-bottom-start {
+                @if $translate {
+                    transform: translate( 1% * $translate, 1% * $translate );
+                }
+            }
+            &.k-bottom-end {
+                @if $translate {
+                    transform: translate( -1% * $translate, 1% * $translate );
+                }
+            }
+        }
+    }
+
+
+    // Border cutout
+    .k-badge-border-cutout {
+        box-shadow: 0 0 0 2px $kendo-component-bg;
+    }
+
+}
+
+
+@mixin kendo-badge--layout() {
+    @include kendo-badge--layout-base();
+}

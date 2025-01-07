@@ -1,0 +1,31 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-skeleton--theme-base() {
+
+    .k-skeleton {
+        @include fill( $bg: $kendo-skeleton-item-bg );
+    }
+
+
+    // Skeleton wave
+    .k-skeleton-wave {
+
+        .k-skeleton::after,
+        &.k-skeleton::after {
+            background-image: linear-gradient(
+                to right,
+                transparent,
+                $kendo-skeleton-wave-bg,
+                transparent
+            );
+        }
+
+    }
+
+}
+
+
+@mixin kendo-skeleton--theme() {
+    @include kendo-skeleton--theme-base();
+}

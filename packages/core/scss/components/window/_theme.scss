@@ -1,0 +1,48 @@
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-window--theme-base() {
+
+    // Window
+    .k-window {
+        @include fill(
+            $kendo-window-text,
+            $kendo-window-bg,
+            $kendo-window-border
+        );
+        @include box-shadow( $kendo-window-shadow );
+    }
+
+    .k-window:focus,
+    .k-window.k-focus {
+        @include focus-indicator( $kendo-window-focus-shadow );
+    }
+
+
+    // Titlebar
+    .k-window-titlebar {
+        @include fill(
+            $kendo-window-titlebar-text,
+            $kendo-window-titlebar-bg,
+            $kendo-window-titlebar-border,
+            $kendo-window-titlebar-gradient
+        );
+    }
+
+    // Window theme colors
+    @each $name, $color in $kendo-window-theme-colors {
+        .k-window-#{$name} .k-window-titlebar {
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
+            background-color: $color;
+        }
+    }
+
+}
+
+
+@mixin kendo-window--theme() {
+    @include kendo-window--theme-base();
+}

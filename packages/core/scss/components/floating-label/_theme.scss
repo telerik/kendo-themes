@@ -1,0 +1,36 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-floating-label--theme-base() {
+
+    // Floating label
+    .k-floating-label-container {
+
+        > .k-floating-label {
+            @include fill(
+                $color: $kendo-floating-label-text,
+                $bg: $kendo-floating-label-bg
+            );
+        }
+
+        &.k-focus > .k-floating-label {
+            @include fill(
+                $color: $kendo-floating-label-focus-text,
+                $bg: $kendo-floating-label-focus-bg
+            );
+        }
+
+        &.k-invalid > .k-floating-label,
+        &.ng-invalid.ng-touched > .k-floating-label,
+        &.ng-invalid.ng-dirty > .k-floating-label {
+            @include fill ( $color: $kendo-invalid-text );
+        }
+    }
+
+}
+
+
+@mixin kendo-floating-label--theme() {
+    @include kendo-floating-label--theme-base();
+}

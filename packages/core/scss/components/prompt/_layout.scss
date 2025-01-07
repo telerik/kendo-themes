@@ -1,0 +1,78 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-prompt--layout-base() {
+
+    // Prompt
+    .k-prompt {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+        // Toolbar
+        .k-toolbar {
+            border-top-width: 0;
+            border-inline-width: 0;
+        }
+    }
+
+    // Content
+    .k-prompt-content {
+        padding-block: $kendo-prompt-content-padding-y;
+        padding-inline: $kendo-prompt-content-padding-x;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        gap: $kendo-prompt-content-spacing;
+        overflow: auto;
+    }
+
+    .k-prompt-view {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        gap: $kendo-prompt-content-spacing;
+    }
+
+    // Prompt Expander
+    .k-prompt-expander {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-start;
+        gap: $kendo-prompt-expander-spacing;
+    }
+
+    .k-prompt-expander-content {
+        display: flex;
+        flex-flow: column;
+        flex: 0 0 auto;
+        gap: $kendo-prompt-expander-spacing;
+        align-self: stretch;
+    }
+
+    .k-prompt-suggestion {
+        border-width: 1px;
+        border-style: solid;
+        border-radius: $kendo-prompt-suggestion-border-radius;
+        padding-block: $kendo-prompt-suggestion-padding-y;
+        padding-inline: $kendo-prompt-suggestion-padding-x;
+        cursor: pointer;
+    }
+
+    .k-prompt-setting {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // Actions
+    .k-prompt-actions.k-actions {
+        margin: 0;
+    }
+
+}
+
+
+@mixin kendo-prompt--layout() {
+    @include kendo-prompt--layout-base();
+}

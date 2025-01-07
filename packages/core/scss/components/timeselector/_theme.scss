@@ -1,0 +1,82 @@
+@use "sass:math";
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-time-selector--theme-base() {
+
+    // Time selector
+    .k-timeselector {
+        @include fill(
+            $kendo-time-selector-text,
+            $kendo-time-selector-bg,
+            $kendo-time-selector-border
+        );
+    }
+
+
+    // Time selector header
+    .k-time-header,
+    .k-time-selector-header {
+
+        .k-time-now {
+            // TODO: use a variable
+            color: $kendo-link-text;
+        }
+        .k-time-now:hover {
+            // TODO: use a variable
+            color: $kendo-link-hover-text;
+        }
+    }
+
+
+    // Time list wrapper
+    .k-time-list-wrapper {
+
+        .k-title {
+            color: $kendo-time-list-title-text;
+        }
+
+        &.k-focus {
+            .k-title {
+                color: $kendo-time-list-title-focus-text;
+            }
+
+            &::before,
+            &::after {
+                background-color: $kendo-time-list-focus-bg;
+            }
+        }
+    }
+
+
+    // Time list
+    .k-time-list {
+        &::before,
+        &::after {
+            $shadow-size: 3em;
+            box-shadow: 0 0 $shadow-size math.div( $shadow-size, 2 ) $kendo-time-selector-bg;
+        }
+
+        .k-item:hover {
+            color: $kendo-color-primary;
+        }
+    }
+
+    .k-time-container {
+        background: transparent;
+    }
+
+    .k-time-highlight {
+        @include fill(
+            $bg: $kendo-time-list-highlight-bg,
+            $border: $kendo-time-list-highlight-border
+        );
+    }
+
+}
+
+
+@mixin kendo-time-selector--theme() {
+    @include kendo-time-selector--theme-base();
+}

@@ -1,0 +1,406 @@
+@use "sass:math";
+@use "sass:list";
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+
+@mixin kendo-slider--layout-base() {
+
+    // Slider
+    .k-slider {
+        border: 0;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-slider-font-family;
+        font-size: $kendo-slider-font-size;
+        line-height: $kendo-slider-line-height;
+        background: none;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-label {
+            width: auto;
+            font-size: .92em;
+            line-height: 1;
+            white-space: nowrap;
+            position: absolute;
+        }
+
+        .k-tick,
+        .k-slider-track {
+            cursor: pointer;
+        }
+
+        .k-tick {
+            background-color: transparent;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+
+        &.k-disabled {
+            .k-tick,
+            .k-slider-track,
+            .k-draghandle {
+                cursor: default;
+            }
+        }
+    }
+
+    // New rendering
+    .k-slider {
+        width: min-content;
+        height: min-content;
+        gap: calc( #{$kendo-slider-draghandle-size} / 2 );
+
+        .k-button {
+            flex: none;
+        }
+        .k-slider-track-wrap {
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: inherit;
+            position: relative;
+            touch-action: none;
+
+            .k-slider-items {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                // For some reason, Safari does not understand `flex-basis: 100%`
+                // See telerik/kendo-themes#2197
+                // flex-basis: 100%;
+                flex: 1 1 100%;
+                display: flex;
+                flex-flow: inherit;
+                justify-content: space-between;
+                user-select: none;
+            }
+            .k-tick {
+                flex: 0 0 1px;
+            }
+
+            .k-tick-horizontal {
+                width: 1px;
+                min-height: 100%;
+            }
+
+            .k-tick-vertical {
+                width: 100%;
+                min-height: 1px;
+            }
+
+            .k-draghandle {
+                position: absolute;
+            }
+        }
+
+        &-horizontal {
+            .k-slider-track-wrap {
+                height: 26px;
+
+                .k-slider-track {
+                    width: 100%;
+                }
+
+                .k-draghandle {
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .k-draghandle:focus,
+                .k-draghandle:active {
+                    transform: translate(-50%, -50%) scale($kendo-slider-draghandle-active-scale);
+                }
+
+                .k-slider-selection {
+                    width: calc( (var(--kendo-slider-end, 0) - var(--kendo-slider-start, 0)) * 1% );
+                    inset-inline-start: calc( var(--kendo-slider-start, 0) * 1% );
+                }
+                .k-draghandle-start {
+                    inset-inline-start: calc( var(--kendo-slider-start, 0) * 1% );
+                }
+                .k-draghandle-end {
+                    inset-inline-start: calc( var(--kendo-slider-end, 0) * 1% );
+                }
+            }
+        }
+
+        &-vertical {
+            .k-slider-track-wrap {
+                width: 26px;
+
+                .k-slider-track {
+                    height: 100%;
+                }
+                .k-draghandle {
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                }
+                .k-draghandle:focus,
+                .k-draghandle:active {
+                    transform: translate(-50%, 50%) scale($kendo-slider-draghandle-active-scale);
+                }
+
+                .k-slider-selection {
+                    bottom: calc( var(--kendo-slider-start, 0) * 1% );
+                    height: calc( (var(--kendo-slider-end, 0) - var(--kendo-slider-start, 0)) * 1% );
+                }
+                .k-draghandle-start {
+                    bottom: calc( var(--kendo-slider-start, 0) * 1% );
+                }
+                .k-draghandle-end {
+                    bottom: calc( var(--kendo-slider-end, 0) * 1% );
+                }
+            }
+        }
+
+    }
+
+
+    // Slider vertical
+    .k-slider-vertical {
+        height: $kendo-slider-size;
+        flex-flow: column-reverse nowrap;
+
+        .k-tick {
+            text-align: end;
+            margin-left: 2px;
+        }
+
+        .k-slider-topleft .k-tick {
+            text-align: start;
+        }
+
+        // ticks
+
+        .k-tick { background-position: -94px center; }
+        .k-slider-topleft .k-tick { background-position: -124px center; }
+        .k-slider-bottomright .k-tick { background-position: -154px center; }
+
+        .k-tick-large {
+            display: flex;
+            align-items: center;
+            background-position: -4px center;
+        }
+
+        .k-slider-topleft .k-tick-large { background-position: -34px center; }
+        .k-slider-bottomright .k-tick-large { background-position: -64px center; }
+
+        .k-first { background-position: -94px 100%; }
+        .k-tick-large.k-first { background-position: -4px 100%; }
+        .k-slider-topleft .k-first { background-position: -124px 100%; }
+        .k-slider-topleft .k-tick-large.k-first { background-position: -34px 100%; }
+        .k-slider-bottomright .k-first { background-position: -154px 100%; }
+        .k-slider-bottomright .k-tick-large.k-first { background-position: -64px 100%; }
+
+        .k-last { background-position: -94px 0; }
+        .k-tick-large.k-last { background-position: -4px 0; }
+        .k-slider-topleft .k-last { background-position: -124px 0; }
+        .k-slider-topleft .k-tick-large.k-last { background-position: -34px 0; }
+        .k-slider-bottomright .k-last { background-position: -154px 0; }
+        .k-slider-bottomright .k-tick-large.k-last { background-position: -64px 0; }
+
+        // labels
+
+        .k-label {
+            text-align: start;
+            inset-inline-start: 120%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .k-first .k-label { top: 100%; }
+        .k-last .k-label { top: 0; }
+
+        .k-slider-topleft .k-label {
+            inset-inline-start: auto;
+            inset-inline-end: 120%;
+        }
+
+    }
+
+
+    // Slider horizontal
+    .k-slider-horizontal {
+        width: $kendo-slider-size;
+        flex-flow: row nowrap;
+
+        .k-tick { background-position: center -92px; }
+        .k-slider-topleft .k-tick { background-position: center -122px; }
+        .k-slider-bottomright .k-tick { background-position: center -152px; }
+
+        .k-tick-large { background-position: center -2px; }
+        .k-slider-topleft .k-tick-large { background-position: center -32px; }
+        .k-slider-bottomright .k-tick-large { background-position: center -62px; }
+
+        .k-first { background-position: 0 -92px; }
+        .k-tick-large.k-first { background-position: 0 -2px; }
+        .k-slider-topleft .k-first { background-position: 0 -122px; }
+        .k-slider-topleft .k-tick-large.k-first { background-position: 0 -32px; }
+        .k-slider-bottomright .k-first { background-position: 0 -152px; }
+        .k-slider-bottomright .k-tick-large.k-first { background-position: 0 -62px; }
+
+        .k-last { background-position: 100% -92px; }
+        .k-tick-large.k-last { background-position: 100% -2px; }
+        .k-slider-topleft .k-last { background-position: 100% -122px; }
+        .k-slider-topleft .k-tick-large.k-last { background-position: 100% -32px; }
+        .k-slider-bottomright .k-last { background-position: 100% -152px; }
+        .k-slider-bottomright .k-tick-large.k-last { background-position: 100% -62px; }
+
+        // labels
+
+        .k-label {
+            inset-inline-start: 50%;
+            bottom: -1.2em;
+            transform: translateX(-50%);
+        }
+        .k-first .k-label { inset-inline-start: 0; }
+        .k-last .k-label { inset-inline-start: 100%; }
+
+        .k-slider-topleft .k-label {
+            top: -1.2em;
+        }
+    }
+
+    .k-slider-track,
+    .k-slider-selection {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+
+    .k-slider-horizontal :is(.k-slider-track, .k-slider-selection) {
+        height: $kendo-slider-track-thickness;
+        left: 0;
+        margin-top: - math.div( $kendo-slider-track-thickness, 2 );
+        top: 50%;
+    }
+
+    .k-slider-vertical :is(.k-slider-track, .k-slider-selection) {
+        bottom: 0;
+        left: 50%;
+        margin-left: - math.div( $kendo-slider-track-thickness, 2 );
+        width: $kendo-slider-track-thickness;
+    }
+
+    .k-draghandle {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border-style: solid;
+        border-width: $kendo-slider-draghandle-border-width;
+        outline: 0;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        width: $kendo-slider-draghandle-size;
+        height: $kendo-slider-draghandle-size;
+
+        &.k-pressed {
+            transition: none;
+        }
+    }
+
+    .k-slider-selection {
+        &.k-pressed {
+            transition: none;
+        }
+    }
+
+    .k-slider-transitions {
+        &.k-slider-horizontal {
+            .k-draghandle {
+                transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+            }
+            .k-slider-selection {
+                transition: width $kendo-slider-transition-speed $kendo-slider-transition-function;
+            }
+        }
+
+        &.k-slider-vertical {
+            .k-draghandle {
+                transition: bottom  $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+            }
+
+            .k-slider-selection {
+                transition: height $kendo-slider-transition-speed $kendo-slider-transition-function;
+            }
+        }
+    }
+
+    // Slider readonly
+    .k-slider.k-readonly {
+        .k-button,
+        .k-slider-track,
+        .k-tick,
+        .k-draghandle {
+            pointer-events: none;
+        }
+    }
+
+
+    // Slider tooltip
+    .k-slider-tooltip {
+        .k-callout-n,
+        .k-callout-s {
+            margin-inline-start: - list.slash( $kendo-tooltip-callout-size, 2 );
+        }
+
+        .k-callout-w,
+        .k-callout-e {
+            margin-top: - list.slash( $kendo-tooltip-callout-size, 2 );
+        }
+    }
+
+    // RTL
+    .k-slider-rtl {
+        &.k-slider-horizontal {
+
+            .k-draghandle {
+                transform: translate(50%, -50%);
+            }
+
+            .k-draghandle:focus,
+            .k-draghandle:active {
+                transform: if( $kendo-slider-draghandle-active-scale, translate(50%, -50%) scale($kendo-slider-draghandle-active-scale), null );
+            }
+
+            .k-label {
+                transform: translateX(50%);
+            }
+        }
+    }
+
+    .k-slider[dir="rtl"],
+    [dir="rtl"] .k-slider,
+    .k-slider.k-rtl,
+    .k-rtl .k-slider {
+        @extend .k-slider-rtl !optional;
+    }
+
+
+    // Angular specific
+    .k-slider kendo-resize-sensor {
+        position: absolute;
+    }
+
+    // Aliases
+    .k-draghandle { @extend .k-slider-thumb !optional; }
+    .k-draghandle-start { @extend .k-slider-thumb-start !optional; }
+    .k-draghandle-end { @extend .k-slider-thumb-end !optional; }
+}
+
+
+@mixin kendo-slider--layout() {
+    @include kendo-slider--layout-base();
+}

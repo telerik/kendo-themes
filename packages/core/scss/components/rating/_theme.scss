@@ -1,0 +1,48 @@
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-rating--theme-base() {
+
+    .k-rating {
+        color: $kendo-component-text;
+
+        &:focus,
+        &.k-focus {
+
+            .k-rating-item {
+                > .k-icon {
+                    filter: drop-shadow( $kendo-rating-icon-focus-shadow );
+                }
+
+                &.k-selected > .k-icon {
+                    filter: drop-shadow( $kendo-rating-icon-focus-selected-shadow );
+                }
+            }
+        }
+    }
+
+    .k-rating-item {
+        color: $kendo-rating-icon-text;
+
+        &.k-selected {
+            color: $kendo-rating-icon-selected-text;
+
+            &:focus,
+            &.k-focus {
+                color: $kendo-rating-icon-focus-text;
+            }
+        }
+
+        &:hover,
+        &.k-hover {
+            color: $kendo-rating-icon-hover-text;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+@mixin kendo-rating--theme() {
+    @include kendo-rating--theme-base();
+}

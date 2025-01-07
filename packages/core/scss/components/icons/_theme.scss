@@ -1,0 +1,6 @@
+@mixin kendo-icon--theme-base() {}
+
+
+@mixin kendo-icon--theme() {
+    @include kendo-icon--theme-base();
+}

@@ -1,0 +1,91 @@
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-listbox--layout-base() {
+
+    .k-listbox {
+        width: $kendo-listbox-width;
+        height: $kendo-listbox-default-height;
+        border-width: 0;
+        outline: 0;
+        font-family: $kendo-listbox-font-family;
+        font-size: $kendo-listbox-font-size;
+        line-height: $kendo-listbox-line-height;
+        vertical-align: top;
+        background-color: transparent;
+        display: inline-flex;
+        gap: $kendo-listbox-spacing;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        .k-listbox-actions {
+            display: flex;
+            gap: $kendo-listbox-button-spacing;
+        }
+
+        &.k-listbox-actions-left,
+        &.k-listbox-actions-right {
+            flex-direction: row;
+
+            .k-listbox-actions {
+                flex-direction: column;
+            }
+        }
+
+        &.k-listbox-actions-right {
+            flex-direction: row-reverse;
+        }
+
+        &.k-listbox-actions-top,
+        &.k-listbox-actions-bottom {
+            flex-direction: column;
+
+            .k-listbox-actions {
+                flex-direction: row;
+            }
+        }
+
+        &.k-listbox-actions-bottom {
+            flex-direction: column-reverse;
+        }
+
+        .k-list-scroller {
+            width: 100%;
+            min-height: 0;
+            height: inherit;
+            border-width: $kendo-listbox-border-width;
+            border-style: solid;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: column nowrap;
+
+            .k-list-scroller {
+                border-width: 0;
+            }
+
+            .k-list {
+                height: inherit;
+                background: transparent;
+            }
+        }
+
+        .k-drop-hint {
+            border-top-width: $kendo-listbox-drop-hint-width;
+            border-top-style: solid;
+        }
+
+        .k-ghost {
+            opacity: .5;
+        }
+    }
+
+    .k-item {
+        cursor: default;
+    }
+
+}
+
+
+@mixin kendo-listbox--layout() {
+    @include kendo-listbox--layout-base();
+}

@@ -1,0 +1,33 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../icons/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+@use "../combobox/_index.scss" as *;
+@use "../toolbar/_index.scss" as *;
+@use "../dialog/_index.scss" as *;
+@use "../pager/_index.scss" as *;
+@use "../dropzone/_index.scss" as *;
+@use "../window/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-pdf-viewer--styles() {
+    @include import-once( "pdf-viewer" ) {
+        @include core-styles();
+        @include kendo-combobox--styles();
+        @include kendo-toolbar--styles();
+        @include kendo-dialog--styles();
+        @include kendo-pager--styles();
+        @include kendo-icon--styles();
+        @include kendo-dropzone--styles();
+        @include kendo-window--styles();
+        @include kendo-pdf-viewer--layout();
+        @include kendo-pdf-viewer--theme();
+        @include kendo-utils--layout--overflow();
+        @include kendo-utils--layout--position();
+    }
+}

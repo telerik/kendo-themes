@@ -1,0 +1,155 @@
+// Primary colors
+$kendo-color-primary: null !default;
+$kendo-color-primary-lighter: null !default;
+$kendo-color-primary-darker: null !default;
+$kendo-color-primary-contrast: null !default;
+
+// Secondary colors
+$kendo-color-secondary: null !default;
+$kendo-color-secondary-lighter: null !default;
+$kendo-color-secondary-darker: null !default;
+$kendo-color-secondary-contrast: null !default;
+
+// Tertiary colors
+$kendo-color-tertiary: null !default;
+$kendo-color-tertiary-lighter: null !default;
+$kendo-color-tertiary-darker: null !default;
+$kendo-color-tertiary-contrast: null !default;
+
+// Info colors
+$kendo-color-info: null !default;
+$kendo-color-info-lighter: null !default;
+$kendo-color-info-darker: null !default;
+
+// Success colors
+$kendo-color-success: null !default;
+$kendo-color-success-lighter: null !default;
+$kendo-color-success-darker: null !default;
+
+// Warning colors
+$kendo-color-warning: null !default;
+$kendo-color-warning-lighter: null !default;
+$kendo-color-warning-darker: null !default;
+
+// Error colors
+$kendo-color-error: null !default;
+$kendo-color-error-lighter: null !default;
+$kendo-color-error-darker: null !default;
+
+
+$kendo-color-dark: null !default;
+
+// Light colors
+$kendo-color-light: null !default;
+
+// Inverse colors
+$kendo-color-inverse: null !default;
+
+// Body styles
+$kendo-body-bg: null !default;
+$kendo-body-text: null !default;
+
+// App styles
+$kendo-app-bg: null !default;
+$kendo-app-text: $kendo-body-text !default;
+$kendo-app-border: null !default;
+
+// Component styles
+$kendo-component-bg: null !default;
+$kendo-component-text: $kendo-body-text  !default;
+$kendo-component-border: null !default;
+
+$kendo-base-bg: null !default;
+$kendo-base-text: $kendo-body-text !default;
+$kendo-base-border: $kendo-app-border !default;
+$kendo-base-gradient: null !default;
+
+// States styles
+$kendo-hover-bg: null !default;
+$kendo-hover-text: $kendo-base-text !default;
+$kendo-hover-border: $kendo-base-border !default;
+$kendo-hover-gradient: $kendo-base-gradient !default;
+
+$kendo-selected-bg: $kendo-color-primary !default;
+$kendo-selected-text: $kendo-color-primary-contrast !default;
+$kendo-selected-border: $kendo-base-border !default;
+$kendo-selected-gradient: $kendo-base-gradient !default;
+
+$kendo-selected-hover-bg: null !default;
+$kendo-selected-hover-text: $kendo-selected-text !default;
+$kendo-selected-hover-border: $kendo-base-border !default;
+$kendo-selected-hover-gradient: $kendo-base-gradient  !default;
+
+$kendo-component-header-bg: $kendo-base-bg !default;
+$kendo-component-header-text: $kendo-base-text !default;
+$kendo-component-header-border: $kendo-base-border !default;
+$kendo-component-header-gradient: null !default;
+
+$kendo-focus-outline: null !default;
+
+$kendo-subtle-text: null !default;
+
+// Link
+$kendo-link-text: $kendo-color-primary !default;
+$kendo-link-hover-text: null !default;
+
+// Validator
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: $kendo-color-error !default;
+$kendo-invalid-border: $kendo-color-error !default;
+$kendo-invalid-shadow: null !default;
+
+$kendo-valid-bg: null !default;
+$kendo-valid-text: $kendo-color-success !default;
+$kendo-valid-border: $kendo-color-success !default;
+$kendo-valid-shadow: null !default;
+
+// Disabled Styling
+
+/// The background color of disabled items.
+$kendo-disabled-bg: null !default;
+/// The text color of disabled items.
+$kendo-disabled-text: null !default;
+/// The border color of disabled items.
+$kendo-disabled-border: null !default;
+/// The opacity of disabled items.
+$kendo-disabled-opacity: null !default;
+/// The filter of disabled items.
+$kendo-disabled-filter: null !default;
+
+$kendo-disabled-styling: (
+    bg: $kendo-disabled-bg,
+    color: $kendo-disabled-text,
+    border: $kendo-disabled-border,
+    opacity: $kendo-disabled-opacity,
+    filter: $kendo-disabled-filter
+) !default;
+
+$kendo-theme-colors: (
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse,
+) !default;
+
+:root {
+    --kendo-disabled-text: #{$kendo-disabled-text};
+    --kendo-disabled-bg: #{$kendo-disabled-bg};
+    --kendo-disabled-border: #{$kendo-disabled-border};
+    --kendo-disabled-opacity: #{$kendo-disabled-opacity};
+    --kendo-disabled-filter: #{$kendo-disabled-filter};
+
+    --kendo-hr-border: #{$kendo-component-border};
+
+    --kendo-marquee-text: #{$kendo-selected-text};
+    --kendo-marquee-bg: #{$kendo-selected-bg};
+    --kendo-marquee-border: #{$kendo-selected-border};
+
+    --kendo-text-selection-bg: #{$kendo-color-primary};
+}
