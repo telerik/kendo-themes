@@ -281,6 +281,10 @@
             .k-item {
                 @include border-top-radius( $kendo-tabstrip-item-border-radius );
                 border-bottom-width: 0;
+
+                .k-link {
+                    justify-content: center;
+                }
             }
             .k-item:active,
             .k-item.k-active {
@@ -304,6 +308,10 @@
             .k-item {
                 @include border-bottom-radius( $kendo-tabstrip-item-border-radius );
                 border-top-width: 0;
+
+                .k-link {
+                    justify-content: center;
+                }
             }
             .k-item:active,
             .k-item.k-active {
