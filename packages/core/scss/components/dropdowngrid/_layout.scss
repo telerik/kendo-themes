@@ -1,0 +1,20 @@
+@mixin kendo-dropdown-grid--layout-base() {
+
+    // Dropdown grid
+    .k-dropdown-grid {}
+
+
+    // Dropdown grid popup
+    .k-dropdowngrid-popup {
+        overflow: hidden;
+    }
+    .k-dropdowngrid-popup > .k-data-table {
+        border-width: 0;
+    }
+
+}
+
+
+@mixin kendo-dropdown-grid--layout() {
+    @include kendo-dropdown-grid--layout-base();
+}

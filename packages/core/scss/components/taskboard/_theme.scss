@@ -1,0 +1,117 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-task-board--theme-base() {
+
+    // TaskBoard
+    .k-taskboard {
+        @include fill(
+            $kendo-taskboard-text,
+            $kendo-taskboard-bg,
+            $kendo-taskboard-border
+        );
+    }
+
+    // Toolbar
+    .k-taskboard-toolbar {
+        @include fill(
+            $kendo-taskboard-toolbar-text,
+            $kendo-taskboard-toolbar-bg,
+            $kendo-taskboard-toolbar-border,
+            $kendo-taskboard-toolbar-gradient
+        );
+    }
+
+    // Columns
+    .k-taskboard-column {
+        @include fill(
+            $kendo-taskboard-column-text,
+            $kendo-taskboard-column-bg,
+            $kendo-taskboard-column-border
+        );
+    }
+    .k-taskboard-column:focus,
+    .k-taskboard-column.k-focus {
+        @include fill(
+            $kendo-taskboard-column-focus-text,
+            $kendo-taskboard-column-focus-bg,
+            $kendo-taskboard-column-focus-border
+        );
+    }
+
+    .k-taskboard-column-header {
+        @include fill( $color: $kendo-taskboard-column-header-text );
+    }
+
+    // Preview/Edit Pane
+    .k-taskboard-pane {
+        @include fill (
+            $kendo-taskboard-pane-text,
+            $kendo-taskboard-pane-bg,
+            $kendo-taskboard-pane-border
+        );
+    }
+
+    .k-taskboard-pane-header {
+        @include fill( $color: $kendo-taskboard-pane-header-text );
+    }
+
+    // Cards
+    .k-taskboard-card {
+        @include fill(
+            $kendo-taskboard-card-text,
+            $kendo-taskboard-card-bg,
+            $kendo-taskboard-card-border
+        );
+        @include box-shadow( $kendo-taskboard-card-shadow );
+
+        .k-card-title {
+            @include fill( $color: $kendo-taskboard-card-header-text );
+
+            &:focus,
+            &.k-focus {
+                @include fill( $color: $kendo-taskboard-card-header-focus-text );
+            }
+
+            &:hover,
+            &.k-hover {
+                @include fill( $color: $kendo-taskboard-card-header-hover-text );
+            }
+        }
+
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-taskboard-card-focus-shadow );
+            @include fill( $border: $kendo-taskboard-card-focus-border );
+        }
+
+        &:hover,
+        &.k-hover {
+            @include fill( $border: $kendo-taskboard-card-hover-border );
+        }
+
+        &.k-selected {
+            @include fill( $border: $kendo-taskboard-card-selected-border );
+            @include box-shadow( $kendo-taskboard-card-selected-shadow );
+        }
+
+        &.k-disabled {
+            @include disabled( $kendo-disabled-styling... );
+        }
+    }
+
+    // Card Drag Placeholder
+    .k-taskboard-drag-placeholder {
+        @include fill(
+            $bg: $kendo-taskboard-drag-placeholder-bg,
+            $border: $kendo-taskboard-drag-placeholder-border
+        );
+    }
+
+}
+
+
+@mixin kendo-task-board--theme() {
+    @include kendo-task-board--theme-base();
+}

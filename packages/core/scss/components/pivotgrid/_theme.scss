@@ -1,0 +1,251 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./variables.scss" as *;
+@use "../popup/_variables.scss" as *;
+
+@mixin kendo-pivotgrid--theme-base() {
+
+    // PivotGrid
+    .k-pivotgrid {
+        @include fill (
+            $kendo-pivotgrid-text,
+            $kendo-pivotgrid-bg,
+            $kendo-pivotgrid-border
+        );
+    }
+
+    .k-pivotgrid-column-headers,
+    .k-pivotgrid-row-headers,
+    .k-pivotgrid-empty-cell {
+        @include fill (
+            $kendo-pivotgrid-headers-text,
+            $kendo-pivotgrid-headers-bg,
+            $kendo-pivotgrid-headers-border
+        );
+    }
+
+    .k-pivotgrid-empty-cell {
+        @include fill (
+            $border: $kendo-pivotgrid-alt-border
+        );
+    }
+
+    .k-pivotgrid-row-headers .k-pivotgrid-row .k-pivotgrid-cell:last-child {
+        border-right-color: $kendo-pivotgrid-alt-border;
+    }
+
+    .k-pivotgrid-column-headers .k-pivotgrid-column-total:nth-last-of-type(2) .k-pivotgrid-cell:not(.k-pivotgrid-expanded),
+    .k-pivotgrid-column-headers .k-pivotgrid-row:last-child {
+        border-bottom-color: $kendo-pivotgrid-alt-border;
+    }
+
+
+    .k-pivotgrid-header-total,
+    .k-pivotgrid-total {
+        @include fill (
+            $kendo-pivotgrid-total-text,
+            $kendo-pivotgrid-total-bg,
+            $kendo-pivotgrid-total-border
+        );
+    }
+
+
+    // Hover state
+    .k-pivotgrid-row-headers tbody > .k-pivotgrid-row:hover,
+    .k-pivotgrid-row-headers tbody > .k-pivotgrid-row.k-hover,
+    .k-pivotgrid-column-headers tbody > .k-pivotgrid-row:hover,
+    .k-pivotgrid-column-headers tbody > .k-pivotgrid-row.k-hover,
+    .k-pivotgrid-values tbody > .k-pivotgrid-row:hover,
+    .k-pivotgrid-values tbody > .k-pivotgrid-row.k-hover {
+        @include fill (
+            $kendo-pivotgrid-hover-text,
+            $kendo-pivotgrid-hover-bg,
+            $kendo-pivotgrid-hover-border
+        );
+    }
+
+    // Focus state
+    .k-pivotgrid-cell:focus,
+    .k-pivotgrid-cell.k-focus,
+    .k-pivotgrid-empty-cell:focus,
+    .k-pivotgrid-empty-cell.k-focus,
+    .k-master-row > .k-pivotgrid-cell:focus,
+    .k-grouping-row > .k-pivotgrid-cell:focus,
+    .k-detail-row > .k-pivotgrid-cell:focus,
+    .k-group-footer > .k-pivotgrid-cell:focus {
+        @include focus-indicator( $kendo-pivotgrid-focus-shadow, true );
+    }
+
+    // Selected state
+    .k-pivotgrid-cell.k-selected,
+    .k-pivotgrid-row.k-selected > .k-pivotgrid-cell {
+        @include fill (
+            $kendo-pivotgrid-selected-text,
+            $kendo-pivotgrid-selected-bg,
+            $kendo-pivotgrid-selected-border
+        );
+    }
+
+
+    // Pivotgrid configurator
+    .k-pivotgrid-configurator-button,
+    .k-pivotgrid-configurator-panel {
+        @include fill (
+            $kendo-pivotgrid-configurator-text,
+            $kendo-pivotgrid-configurator-bg,
+            $kendo-pivotgrid-configurator-border
+        );
+    }
+
+    .k-pivotgrid-configurator-header {
+        @include fill(
+            $kendo-pivotgrid-configurator-header-text,
+            $kendo-pivotgrid-configurator-header-bg,
+            $kendo-pivotgrid-configurator-header-border
+        );
+    }
+
+    .k-pivotgrid-configurator-content .k-fields-list-wrapper {
+        @include fill(
+            $border: $kendo-pivotgrid-configurator-border
+        );
+    }
+
+
+    // Calculated field
+    .k-calculated-field {
+        @include fill (
+            $kendo-pivotgrid-calculated-field-text,
+            $kendo-pivotgrid-calculated-field-bg,
+            $kendo-pivotgrid-calculated-field-border
+        );
+    }
+
+    .k-calculated-field-header {
+        @include fill(
+            $kendo-pivotgrid-calculated-field-header-text,
+            $kendo-pivotgrid-calculated-field-header-bg,
+            $kendo-pivotgrid-calculated-field-header-border
+        );
+    }
+
+    .k-filter-menu .k-calculated-item {
+        @include fill( $border: $kendo-popup-border );
+    }
+
+    .k-pivotgrid-configurator-content .k-form-field-wrapper {
+        @include fill( $border: $kendo-component-border );
+    }
+
+
+    // Overlay mode
+    .k-flex-row {
+        .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-end-shadow );
+        }
+
+        &-reverse .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-start-shadow );
+        }
+    }
+
+    .k-flex-col {
+        .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-top-shadow );
+        }
+
+        &-reverse .k-pivotgrid-configurator-overlay {
+            @include box-shadow( $kendo-pivotgrid-configurator-bottom-shadow );
+        }
+    }
+
+    // Legacy pivotgrid
+    // TODO: remove
+    .k-pivot {
+        @include fill (
+            $kendo-pivotgrid-text,
+            $kendo-pivotgrid-bg,
+            $kendo-pivotgrid-border
+        );
+    }
+    .k-pivot-table {
+        border-color: $kendo-pivotgrid-border;
+    }
+
+    // Pivotgrid header
+    .k-pivot-rowheaders {
+        @include fill(
+            $kendo-pivotgrid-headers-text,
+            $kendo-pivotgrid-headers-bg,
+            $kendo-pivotgrid-headers-border
+        );
+    }
+
+
+    // Pivotgrid toolbar
+    .k-pivot-toolbar {
+        @include fill(
+            $kendo-pivotgrid-headers-text,
+            $kendo-pivotgrid-headers-bg,
+            $kendo-pivotgrid-headers-border
+        );
+
+        .k-empty {
+            color: $kendo-subtle-text;
+        }
+    }
+
+    .k-pivot .k-alt {
+        background-color: $kendo-pivotgrid-alt-bg;
+    }
+
+    .k-pivot-toolbar,
+    .k-pivot-table,
+    .k-pivot-rowheaders > .k-grid td:first-child,
+    .k-pivot-table .k-grid-header .k-header.k-first {
+        border-color: $kendo-pivotgrid-chrome-border;
+    }
+
+    .k-header.k-alt {
+        background-color: $kendo-pivotgrid-row-headers-bg;
+    }
+
+    .k-pivot-layout .k-grid-footer {
+        color: $kendo-pivotgrid-alt-text;
+        background-color: $kendo-pivotgrid-alt-bg;
+    }
+
+    // KPI icons
+    .k-i-kpi-trend-increase,
+    .k-i-kpi-trend-decrease,
+    .k-i-kpi-trend-equal {
+        color: inherit;
+    }
+
+    .k-i-kpi-status-hold {
+        color: $kendo-color-warning;
+    }
+
+    .k-i-kpi-status-deny {
+        color: $kendo-color-error;
+    }
+
+    .k-i-kpi-status-open {
+        color: $kendo-color-success;
+    }
+
+
+    // Configurator
+    .k-pivotgrid-configurator-panel.kendo-jquery {
+
+        .k-column-fields {
+            border-color: $kendo-component-border;
+        }
+    }
+
+}
+
+
+@mixin kendo-pivotgrid--theme() {
+    @include kendo-pivotgrid--theme-base();
+}

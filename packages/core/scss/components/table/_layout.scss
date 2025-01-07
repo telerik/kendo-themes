@@ -1,0 +1,293 @@
+@use "./_variables.scss" as *;
+@use "sass:map";
+
+@mixin kendo-table--layout-base() {
+
+    // Table
+    .k-table {
+        width: 100%;
+        max-width: none;
+        border-width: $kendo-table-border-width;
+        border-style: solid;
+        font-size: $kendo-table-font-size;
+        line-height: $kendo-table-line-height;
+        text-align: start;
+        border-collapse: collapse;
+        border-spacing: 0;
+        empty-cells: show;
+        outline: none;
+    }
+
+
+    // Data table
+    .k-data-table {
+        border-width: $kendo-table-border-width;
+        border-style: solid;
+
+        .k-table {
+            table-layout: fixed;
+        }
+    }
+
+
+    // Table native parts
+    .k-table-thead,
+    .k-table-tbody,
+    .k-table-tfoot,
+    .k-table-row,
+    .k-table-alt-row {
+        border-color: inherit;
+        text-align: inherit;
+    }
+    .k-table-th,
+    .k-table-td {
+        padding-block: $kendo-table-cell-padding-y;
+        padding-inline: $kendo-table-cell-padding-x;
+        border-width: 0 0 $kendo-table-cell-horizontal-border-width $kendo-table-cell-vertical-border-width;
+        border-style: solid;
+        border-color: inherit;
+        box-sizing: border-box;
+        font-weight: normal;
+        text-align: inherit;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: table-cell;
+        overflow: hidden;
+        position: relative;
+
+        &:first-child {
+            border-left-width: 0;
+        }
+    }
+    .k-table-th {
+        border-bottom-width: 1px;
+    }
+
+
+    // Table header
+    .k-table-header {
+        padding-inline-end: var(--kendo-scrollbar-width);
+        border-width: 0 0 1px;
+        border-style: solid;
+        box-sizing: border-box;
+
+        .k-table {
+            border-width: 0;
+        }
+    }
+    .k-table-header-wrap {
+        margin-right: -1px;
+        width: 100%;
+        border-width: 0 $kendo-table-cell-vertical-border-width 0 0;
+        border-style: solid;
+        border-color: inherit;
+        overflow: hidden;
+    }
+    .k-table-header,
+    .k-table-header-wrap {
+        > .k-table {
+            margin-bottom: -1px;
+        }
+    }
+    .k-table-group-sticky-header {
+        flex: none;
+
+        .k-table-th {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            align-content: center;
+        }
+    }
+
+
+    // Table list
+    .k-table-list {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: none;
+        border-width: 0;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: fixed;
+        empty-cells: show;
+        list-style: none;
+        outline: none;
+
+        .k-table-row {
+            position: relative;
+        }
+
+        .k-table-row,
+        .k-table-group-row {
+            width: 100%;
+            box-sizing: border-box;
+            display: table-row;
+        }
+        .k-table-row.k-first {
+            border-top: 1px solid currentColor;
+        }
+
+        .k-table-th,
+        .k-table-td {
+            vertical-align: middle;
+        }
+
+        .k-table-group-row {
+            position: sticky;
+
+            &::before {
+                content: "\200b";
+                padding-block: $kendo-table-cell-padding-y;
+                padding-inline: 0;
+                width: 0;
+                display: block;
+                overflow: hidden;
+            }
+
+            .k-table-th {
+                width: 100%;
+                border-color: inherit;
+                color: inherit;
+                background-color: inherit;
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        // stylelint-disable declaration-no-important
+        .k-table-spacer-td {
+            padding: 0 !important;
+            width: 0 !important;
+            border-left-width: 0 !important;
+            border-right-width: 0 !important;
+        }
+        .k-table-group-td {
+            padding: 0 !important;
+            width: 0 !important;
+            border-left-width: 0 !important;
+            border-right-width: 0 !important;
+            overflow: visible;
+
+            > span {
+                font-size: .75em;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        // stylelint-enable declaration-no-important
+    }
+
+
+    // Virtualization
+    .k-virtual-table .k-table-row,
+    .k-virtual-table .k-table-group-row {
+        position: absolute;
+        width: 100%;
+    }
+
+
+    // Table scroller
+    .k-table-scroller {
+        position: relative;
+        overflow: auto;
+
+        > .k-table {
+            border-width: 0;
+        }
+    }
+
+
+    // Table footer
+    .k-table-footer {
+        padding-inline-end: var(--kendo-scrollbar-width);
+        border-width: 1px 0 0;
+        border-style: solid;
+        box-sizing: border-box;
+
+        .k-table {
+            border-width: 0;
+        }
+    }
+    .k-table-footer-wrap {
+        margin-right: -1px;
+        width: 100%;
+        border-width: 0 $kendo-table-cell-vertical-border-width 0 0;
+        border-style: solid;
+        border-color: inherit;
+        overflow: hidden;
+    }
+
+
+    // Sizes
+    @each $size, $size-props in $kendo-table-sizes {
+        $_font-size: map.get( $size-props, font-size);
+        $_line-height: map.get( $size-props, line-height);
+        $_cell-padding-x: map.get( $size-props, cell-padding-x);
+        $_cell-padding-y: map.get( $size-props, cell-padding-y);
+
+        .k-table-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+        }
+
+        .k-table-#{$size} .k-table-th,
+        .k-table-#{$size} .k-table-td {
+            padding-block: $_cell-padding-y;
+            padding-inline: $_cell-padding-x;
+        }
+
+        .k-table-#{$size} .k-table-list .k-table-group-td > span {
+            padding-block: 0;
+            padding-inline: calc( #{$_cell-padding-x} / 2 );
+        }
+
+        .k-table-#{$size} .k-table-list .k-table-group-row::before {
+            padding-block: $_cell-padding-y;
+            padding-inline: 0;
+        }
+    }
+
+
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        &.k-table,
+        .k-table {
+
+            .k-table-th,
+            .k-table-td {
+                border-left-width: 0;
+                border-right-width: $kendo-table-cell-vertical-border-width;
+
+                &:first-child {
+                    border-right-width: 0;
+                }
+            }
+
+            .k-table-header-wrap,
+            .k-table-footer-wrap {
+                margin-right: 0;
+                margin-left: -1px;
+                border-left-width: $kendo-table-cell-vertical-border-width;
+                border-right-width: 0;
+            }
+        }
+
+        .k-table-list {
+            .k-table-group-td > span {
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-table--layout() {
+    @include kendo-table--layout-base();
+}

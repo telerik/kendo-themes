@@ -1,0 +1,169 @@
+@use "./_variables.scss" as *;
+@use "sass:map";
+
+@mixin kendo-chip--layout-base() {
+
+    // Chip
+    .k-chip {
+        padding-block: $kendo-chip-padding-y;
+        padding-inline: $kendo-chip-padding-x;
+        border-width: $kendo-chip-border-width;
+        border-style: solid;
+        outline: 0;
+        font-family: var( --kendo-font-family, inherit );
+        font-size: $kendo-chip-font-size;
+        line-height: $kendo-chip-line-height;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: $kendo-chip-spacing;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        user-select: none;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-selected-icon-wrapper {
+            display: none !important; // stylelint-disable-line declaration-no-important
+        }
+    }
+
+
+    // Chip content
+    .k-chip-content {
+        padding-block: .5em;
+        padding-inline: 0;
+        margin-block: -.5em;
+        margin-inline: 0;
+        min-width: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        overflow: hidden;
+        flex: 1 1 auto;
+
+        // Adjustment for kendo-icon-wrapper
+        .k-icon-wrapper-host {
+            display: initial;
+        }
+    }
+    .k-chip-content:first-child {
+        margin-inline-start: $kendo-chip-spacing;
+    }
+    .k-chip-content:last-child {
+        margin-inline-end: $kendo-chip-spacing;
+    }
+
+
+    // Chip text
+    .k-chip-text,
+    .k-chip-label {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1 1 auto;
+    }
+
+
+    // Chip avatar
+    .k-chip-avatar {
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        flex: none;
+    }
+
+
+    // Chip icon
+    .k-chip-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+    }
+
+
+    // Actions
+    .k-chip-actions {
+        margin-block: -5em;
+        margin-inline: 0;
+        flex: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
+    }
+    .k-chip-action {
+        flex: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
+    }
+
+
+    // Legacy chip icons
+    .k-remove-icon {
+        font-size: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+    }
+
+
+    // Chip list
+    .k-chip-list {
+        min-width: 0px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+    }
+
+    // Sizes
+    @each $size, $size-props in $kendo-chip-sizes {
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_avatar-size: 1em;
+
+        .k-chip-#{$size} {
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
+            font-size: $_font-size;
+            line-height: $_line-height;
+
+            .k-chip-action {
+                padding: $_padding-y;
+            }
+        }
+
+        .k-chip-avatar {
+            width: $_avatar-size;
+            height: $_avatar-size;
+            flex-basis: $_avatar-size;
+        }
+
+    }
+
+    // Sizes
+    @each $name, $size in $kendo-chip-list-sizes {
+        .k-chip-list-#{$name} {
+            gap: $size;
+        }
+    }
+
+}
+
+
+@mixin kendo-chip--layout() {
+    @include kendo-chip--layout-base();
+}

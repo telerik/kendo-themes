@@ -1,0 +1,164 @@
+@use "sass:map";
+@use "sass:math";
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-switch--layout-base() {
+
+    .k-switch {
+        box-sizing: border-box;
+        font-family: $kendo-switch-font-family;
+        outline: 0;
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        line-height: 1;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        [type="checkbox"] {
+            display: none;
+        }
+
+        &[aria-readonly="true"] {
+            pointer-events: none;
+        }
+    }
+
+
+    // Readonly
+    .k-switch.k-readonly {
+        pointer-events: none;
+    }
+
+
+    // Switch track
+    .k-switch-track {
+        border-width: $kendo-switch-track-border-width;
+        border-style: if( $kendo-switch-track-border-width == null, null, solid );
+        outline: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 0 auto;
+        position: relative;
+        transition: background-color 200ms ease-in-out;
+    }
+
+
+    // Switch thumb
+    .k-switch-thumb-wrap {
+        width: 0;
+        height: 0;
+        overflow: visible;
+        position: absolute;
+        transition: left 200ms ease-in-out;
+        top: 50%;
+    }
+    .k-switch-thumb {
+        border-width: $kendo-switch-thumb-border-width;
+        border-style: if( $kendo-switch-thumb-border-width == null, null, solid );
+        display: block;
+        position: absolute;
+        transform: translate( -50%, -50% );
+    }
+
+
+    // Switch label
+    .k-switch-label-on,
+    .k-switch-label-off {
+        text-transform: $kendo-switch-label-text-transform;
+        display: $kendo-switch-label-display;
+        position: absolute;
+        top: 50%;
+        transform: translateY( -50% );
+        overflow: hidden;
+    }
+
+
+    // Switch sizes
+    @each $size, $size-props in $kendo-switch-sizes {
+
+        $_font-size: map.get( $size-props, font-size );
+        $_track-width: map.get( $size-props, track-width );
+        $_track-height: map.get( $size-props, track-height );
+        $_thumb-width: map.get( $size-props, thumb-width );
+        $_thumb-height: map.get( $size-props, thumb-height );
+        $_thumb-offset: map.get( $size-props, thumb-offset );
+        $_label-offset: map.get( $size-props, label-offset );
+
+        .k-switch-#{$size} {
+            width: $_track-width;
+            height: $_track-height;
+            font-size: $_font-size;
+
+            .k-switch-track {
+                width: $_track-width;
+                height: $_track-height;
+            }
+
+            .k-switch-label-on { left: $_label-offset; }
+            .k-switch-label-off { right: $_label-offset; }
+
+            .k-switch-thumb {
+                width: $_thumb-width;
+                height: $_thumb-height;
+            }
+
+            &.k-switch-on .k-switch-thumb-wrap {
+                left: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+            }
+            &.k-switch-off .k-switch-thumb-wrap {
+                left: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+            }
+        }
+
+        .k-switch-#{$size}[dir="rtl"],
+        [dir="rtl"] .k-switch-#{$size},
+        .k-rtl .k-switch-#{$size} {
+
+            .k-switch-label-on {
+                left: auto;
+                right: $_label-offset;
+            }
+            .k-switch-label-off {
+                right: auto;
+                left: $_label-offset;
+            }
+
+            &.k-switch-on .k-switch-thumb-wrap {
+                left: calc( #{math.div( $_thumb-width, 2 )} + #{$_thumb-offset} );
+            }
+            &.k-switch-off .k-switch-thumb-wrap {
+                left: calc( 100% - #{math.div( $_thumb-width, 2 )} - #{$_thumb-offset} );
+            }
+        }
+    }
+
+
+    // RTL
+    .k-switch[dir="rtl"],
+    [dir="rtl"] .k-switch,
+    .k-switch.k-rtl,
+    .k-rtl .k-switch {
+
+        .k-switch-thumb {
+            transform: translate( 50%, -50% );
+        }
+
+    }
+
+}
+
+
+@mixin kendo-switch--layout() {
+    @include kendo-switch--layout-base();
+}

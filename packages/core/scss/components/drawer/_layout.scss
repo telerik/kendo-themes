@@ -1,0 +1,207 @@
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-drawer--layout-base() {
+
+    // Container
+    .k-drawer-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+    }
+
+    kendo-drawer.k-drawer,
+    kendo-drawer .k-drawer-wrapper {
+        transition: none;
+    }
+
+
+    // Drawer
+    .k-drawer {
+        height: 100%;
+        max-width: 100%;
+        border-width: 0;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-drawer-font-family;
+        font-size: $kendo-drawer-font-size;
+        line-height: $kendo-drawer-line-height;
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 auto;
+        transition: all 300ms ease-in-out;
+        overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-drawer-mini &.k-drawer-start,
+        .k-drawer-expanded &.k-drawer-start {
+            border-inline-end-width: $kendo-drawer-border-width;
+        }
+
+        .k-drawer-mini &.k-drawer-end,
+        .k-drawer-expanded &.k-drawer-end {
+            border-inline-start-width: $kendo-drawer-border-width;
+        }
+
+
+        // Position
+        &.k-drawer-start {
+            top: 0;
+            inset-inline-start: 0;
+        }
+        &.k-drawer-end {
+            top: 0;
+            inset-inline-end: 0;
+        }
+    }
+
+
+    // Content
+    .k-drawer-content {
+        flex: 1 1 auto;
+        overflow: auto;
+        padding-block: $kendo-drawer-content-padding-y;
+        padding-inline: $kendo-drawer-content-padding-x;
+    }
+
+
+    // Overlay
+    .k-drawer-overlay {
+        .k-drawer {
+            max-width: 80vw; // limit width
+            position: fixed;
+            z-index: 10002;
+            border: 0;
+        }
+
+        > .k-overlay {
+            display: none;
+        }
+        &.k-drawer-expanded > .k-overlay {
+            display: block;
+        }
+    }
+
+
+    // Push drawer
+    .k-drawer-push {
+        display: flex;
+        flex-direction: row;
+
+        .k-drawer {
+            height: auto;
+            position: relative;
+            align-self: stretch;
+        }
+
+        &:has(.k-drawer.k-drawer-end) {
+            flex-direction: row-reverse;
+        }
+    }
+
+
+    // Drawer items
+    .k-drawer-wrapper {
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-width: thin; // Scrollbar styles for Mozilla
+        transition: all 300ms ease-in-out;
+
+        // Scrollbar styles for Chrome, Safari and Opera
+        &::-webkit-scrollbar {
+            width: $kendo-drawer-scrollbar-width;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: $kendo-drawer-scrollbar-radius;
+        }
+    }
+    .k-drawer-items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .k-drawer-item {
+        padding-block: $kendo-drawer-item-padding-y;
+        padding-inline: $kendo-drawer-item-padding-x;
+        outline: 0;
+        color: inherit;
+        font-size: $kendo-drawer-item-font-size;
+        line-height: $kendo-drawer-item-line-height;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: $kendo-drawer-item-padding-x;
+        cursor: pointer;
+
+        > .k-drawer-link {
+            margin-block: calc( #{$kendo-drawer-item-padding-y} * -1 );
+            margin-inline: calc( #{$kendo-drawer-item-padding-x} * -1 );
+            padding-block: $kendo-drawer-item-padding-y;
+            padding-inline: $kendo-drawer-item-padding-x;
+            color: inherit;
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 1 0 auto;
+            gap: $kendo-drawer-item-padding-x;
+        }
+
+        .k-icon {
+            flex-shrink: 0;
+            padding-inline: $kendo-drawer-icon-padding-x;
+            padding-block: $kendo-drawer-icon-padding-y;
+            box-sizing: content-box;
+
+            &.k-i-none {
+                margin: 0;
+            }
+        }
+
+        .k-item-text {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .k-drawer-toggle {
+            margin-inline-start: auto;
+            cursor: pointer;
+            display: flex;
+        }
+
+        // Hierarchy items
+        @for $i from 1 through $kendo-drawer-item-level-count {
+            &.k-level-#{$i} {
+                padding-inline-start: calc(( #{$i} + 1) * #{$kendo-drawer-item-level-padding-x}) ;
+            }
+        }
+    }
+
+
+    // Separator
+    .k-drawer-separator {
+        padding: 0;
+        height: 1px;
+    }
+
+
+    // Mini mode
+    .k-drawer-mini .k-drawer-wrapper {
+        width: $kendo-drawer-mini-initial-width;
+    }
+}
+
+
+@mixin kendo-drawer--layout() {
+    @include kendo-drawer--layout-base();
+}

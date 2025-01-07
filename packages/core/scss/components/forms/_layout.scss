@@ -1,0 +1,386 @@
+@use "sass:map";
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../spacing/index.import.scss" as *;
+@use "./_variables.scss" as *;
+@use "../input/_variables.scss" as *;
+
+@mixin kendo-form--layout-base() {
+
+    // Common
+    .k-form,
+    .k-form-inline {
+        font-size: $kendo-form-font-size;
+        line-height: $kendo-form-line-height;
+    }
+
+
+    // Fieldset
+    .k-fieldset {
+        margin: $kendo-fieldset-margin;
+        border-width: 1px 0 0;
+        border-style: solid;
+        padding: 25px 0 0;
+
+        > legend {
+            margin-left: 0;
+            padding: $kendo-fieldset-legend-padding;
+            text-transform: uppercase;
+        }
+    }
+
+
+    // Label
+    kendo-label > .k-label {
+        margin: 0;
+    }
+
+    .k-label-optional {
+        margin-left: $kendo-label-optional-margin-x;
+        font-size: $kendo-label-optional-font-size;
+        font-style: $kendo-label-optional-font-style;
+        align-self: center;
+    }
+
+    .k-label-empty {
+        &::before {
+            content: "";
+            display: inline-block;
+        }
+    }
+
+
+
+    // Vertical Form
+    .k-form {
+        border: 0;
+
+        .k-form-field > .k-label,
+        .k-form-field > kendo-label,
+        .k-form-label {
+            margin-bottom: $kendo-form-label-margin-bottom;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .k-label + .k-radio {
+            margin-left: 0;
+        }
+
+        .k-form-fieldset {
+            margin: $kendo-form-fieldset-margin;
+            padding: $kendo-form-fieldset-padding;
+            border: 0;
+
+            > * {
+                &:not(.k-hidden):first-child,
+                &.k-hidden + :not(.k-hidden) {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .k-form-legend {
+            margin: $kendo-form-legend-margin;
+            padding: $kendo-form-legend-padding;
+            border-width: $kendo-form-legend-border-width;
+            border-style: $kendo-form-legend-border-style;
+            width: $kendo-form-legend-width;
+            font-size: $kendo-form-legend-font-size;
+            text-transform: $kendo-form-legend-text-transform;
+        }
+
+
+        // Form group
+        .k-form-group {
+            padding: 0;
+        }
+
+        > * {
+            &:not(.k-hidden):first-child,
+            &.k-hidden + :not(.k-hidden) {
+                margin-top: 0;
+            }
+        }
+
+
+        // Form field
+        .k-form-field,
+        .k-form-field-wrap {
+            display: block;
+        }
+
+        .k-form-field-disabled {
+            .k-label,
+            .k-form-label {
+                @include disabled( $kendo-disabled-styling... );
+            }
+        }
+
+        .k-alert-error {
+            font-size: var( --kendo-font-size-sm, inherit );
+            margin-top: $kendo-form-alert-error-margin;
+        }
+
+        .k-field-info {
+            display: inline-block;
+            font-size: var( --kendo-font-size-xs, inherit );
+            line-height: 1;
+            margin-block: 0;
+            margin-inline: $kendo-form-field-info-margin;
+        }
+
+
+        .k-multiselect,
+        .k-floating-label-container,
+        .k-daterangepicker .k-dateinput,
+        .k-signature {
+            display: inline-flex;
+            width: 100%;
+        }
+    }
+
+    // Form Buttons Container
+    .k-form-buttons {
+        @extend .k-actions !optional;
+        padding: 0;
+        overflow: visible;
+    }
+
+    // Form Hint/Error Messages
+    .k-form-hint,
+    .k-form-error {
+        margin-top: $kendo-form-hint-margin-top;
+        display: flex;
+        font-size: $kendo-form-hint-font-size;
+        font-style: $kendo-form-hint-font-style;
+    }
+
+    .k-text-start,
+    .k-buttons-start {
+        justify-content: flex-start;
+    }
+
+    .k-text-end,
+    .k-buttons-end {
+        justify-content: flex-end;
+    }
+
+    // Form Separator
+    .k-form-separator {
+        margin: $kendo-form-separator-margin;
+        border-width: 1px 0 0;
+        border-style: solid;
+        display: block;
+        flex: 0 0 auto;
+    }
+
+    // Horizontal Form
+    .k-form-horizontal {
+        .k-form-field {
+            display: flex;
+
+            > .k-label,
+            > kendo-label,
+            > .k-form-label {
+                margin-right: $kendo-horizontal-form-label-margin-x;
+                padding-top: $kendo-horizontal-form-label-padding-top;
+                width: $kendo-horizontal-form-label-width;
+                text-align: end;
+                flex-direction: column;
+                align-items: $kendo-horizontal-form-label-align;
+                justify-content: flex-start;
+            }
+            .k-label-optional {
+                margin: 0;
+                align-self: inherit;
+            }
+        }
+
+        .k-form-field-wrap {
+            max-width: $kendo-horizontal-form-field-wrap-max-width;
+            flex: 1 1 auto;
+        }
+    }
+
+    // RTL Adjustments
+    .k-form [dir="rtl"],
+    .k-rtl .k-form {
+        .k-label-optional {
+            margin-left: 0;
+            margin-right: $kendo-label-optional-margin-x;
+        }
+    }
+
+    .k-form-horizontal [dir="rtl"],
+    .k-rtl .k-form-horizontal {
+        &.k-form-field,
+        .k-form-field {
+            > .k-label,
+            > kendo-label,
+            > .k-form-label {
+                margin-right: 0;
+                margin-left: $kendo-horizontal-form-label-margin-x;
+            }
+        }
+    }
+
+    // Sizes
+    @each $size, $size-props in $kendo-form-sizes {
+        $_form-rows-spacing: map.get($size-props, form-rows-spacing);
+
+        .k-form-#{$size} {
+            .k-form-field,
+            .k-form-buttons {
+                margin-top: $_form-rows-spacing;
+            }
+        }
+    }
+
+
+    // Scheduler
+    .k-form-inline {
+        padding: $kendo-form-spacer;
+
+        fieldset {
+            border-width: 1px 0 0;
+            border-style: solid;
+            margin: calc( #{$kendo-form-spacer} * 2 ) 0;
+            padding: 0;
+
+            &:first-child:first-of-type {
+                margin-top: 0;
+            }
+
+            &:last-child:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        legend {
+            font-size: var( --kendo-font-size-sm, inherit );
+            text-align: start;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: $kendo-fieldset-legend-margin;
+            text-transform: uppercase;
+            padding: $kendo-fieldset-legend-padding;
+            width: auto;
+        }
+
+        .k-form-field {
+            display: flex;
+            align-items: flex-start;
+            text-align: start;
+            margin-bottom: $kendo-fieldset-legend-margin;
+
+            > span:not(.k-widget) {
+                width: $kendo-inline-form-element-width;
+                text-align: end;
+                line-height: var( --kendo-line-height, normal );
+                padding-block: $kendo-inline-form-field-padding-y;
+                padding-inline: $kendo-inline-form-field-padding-x;
+                align-self: center;
+            }
+
+            > input {
+                align-self: center;
+            }
+
+            > input:not(.k-checkbox):not(.k-radio) {
+                flex: 1 1 auto;
+            }
+
+            .k-alert-error {
+                font-size: var( --kendo-font-size-sm, inherit );
+                margin-top: $kendo-form-alert-error-margin;
+            }
+
+            .k-field-info {
+                display: block;
+                font-size: var( --kendo-font-size-xs, inherit );
+                line-height: 1;
+                margin: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+
+
+    // Edit form
+    .k-edit-form-container {
+        width: 400px;
+        min-width: 400px;
+        border-color: inherit;
+        position: relative;
+    }
+
+
+    // Action buttons
+    .k-popup-edit-form > .k-actions,
+    .k-edit-form-container .k-actions {
+        // TODO: refactor
+        margin: k-spacing(4) calc(#{k-spacing(4)} * -1) calc(#{k-spacing(4)} * -1);
+    }
+
+
+    .k-edit-label {
+        margin: 0 0 k-spacing(4);
+        // TODO: do we need the input variable?
+        padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
+        width: 30%;
+        line-height: $kendo-form-line-height;
+        text-align: end;
+        float: left;
+        clear: both;
+    }
+    .k-edit-field {
+        margin: 0 0 k-spacing(4);
+        width: 65%;
+        float: right;
+        clear: right;
+        position: relative;
+
+        &.k-no-editor {
+            // TODO: do we need the input variable?
+            padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
+        }
+    }
+
+    .k-edit-field {
+
+        > .k-widget {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"]:not(.k-radio),
+        input[type="checkbox"]:not(.k-checkbox) {
+            margin-right: .4ex;
+        }
+
+        .k-radio-label,
+        .k-checkbox-label {
+            margin-right: k-spacing(4);
+        }
+
+        > .k-reset > li + li {
+            margin-top: k-spacing(2);
+        }
+
+        .k-reset .k-widget {
+            margin: 0 .4ex 0 1ex;
+        }
+    }
+
+}
+
+
+@mixin kendo-form--layout() {
+    @include kendo-form--layout-base();
+}

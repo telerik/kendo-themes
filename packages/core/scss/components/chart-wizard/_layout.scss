@@ -1,0 +1,46 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-chart-wizard--layout-base() {
+    // Chart wizard
+    .k-chart-wizard {
+        .k-icon-text-wrapper {
+            display: flex;
+            align-items: center;
+            gap: $kendo-chart-wizard-icon-text-gap;
+        }
+
+        .k-icon-background-area {
+            display: flex;
+            padding: $kendo-chart-wizard-icon-area-padding;
+            border-radius: $kendo-chart-wizard-icon-area-border-radius;
+        }
+    }
+
+    .k-chart-types-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: $kendo-chart-wizard-chart-type-spacing;
+    }
+
+    .k-chart-wizard-splitter {
+        height: 100%;
+
+        .k-tabstrip {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .k-chart-wizard-preview-pane {
+        padding: $kendo-chart-wizard-preview-pane-padding;
+    }
+
+    .k-chart-wizard-property-pane {
+        padding: $kendo-chart-wizard-property-pane-padding;
+    }
+}
+
+
+@mixin kendo-chart-wizard--layout() {
+    @include kendo-chart-wizard--layout-base();
+}

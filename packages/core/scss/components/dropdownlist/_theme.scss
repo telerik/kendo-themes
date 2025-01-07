@@ -1,0 +1,14 @@
+@mixin kendo-dropdown-list--theme-base() {
+
+    // Dropdown list
+    .k-dropdown-list {}
+
+    // Native select
+    select.k-dropdown-list {}
+
+}
+
+
+@mixin kendo-dropdown-list--theme() {
+    @include kendo-dropdown-list--theme-base();
+}

@@ -1,0 +1,146 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-listview--layout-base() {
+
+    // Listview
+    .k-listview {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-listview-font-family;
+        font-size: $kendo-listview-font-size;
+        line-height: $kendo-listview-line-height;
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .k-listview-bordered {
+        border-width: $kendo-listview-border-width;
+    }
+
+
+    // Header
+    .k-listview-header {
+        border-width: 0;
+        border-style: solid;
+        border-color: inherit;
+    }
+    .k-listview-bordered > .k-listview-header {
+        border-bottom-width: $kendo-listview-border-width;
+    }
+
+
+    // Listview content
+    .k-listview-content {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        flex-grow: 1;
+        position: relative;
+        overflow: auto;
+
+        &::after {
+            height: 0;
+            clear: both;
+            display: block;
+        }
+    }
+    .k-listview-content.k-d-flex,
+    .k-listview-content.k-d-grid {
+        &::after { display: none; }
+    }
+    .k-listview-content-padding-rectangle {
+        padding-block: $kendo-listview-padding-y;
+        padding-inline: $kendo-listview-padding-x;
+    }
+    .k-listview-content-padding-square {
+        padding: $kendo-listview-padding-y;
+    }
+
+
+    // Listview item
+    .k-listview-item {
+        padding: 0;
+        border-width: 0;
+        outline: 0;
+        border-style: solid;
+        box-sizing: border-box;
+        flex-shrink: 0;
+    }
+    .k-listview-item-padding-rectangle {
+        padding-block: $kendo-listview-item-padding-y;
+        padding-inline: $kendo-listview-item-padding-x;
+    }
+    .k-listview-item-padding-rectangle .k-listview-link {
+        margin-block: (-$kendo-listview-item-padding-y);
+        margin-inline: (-$kendo-listview-item-padding-x);
+        padding-block: $kendo-listview-item-padding-y;
+        padding-inline: $kendo-listview-item-padding-x;
+    }
+    .k-listview-item-padding-square {
+        padding: $kendo-listview-item-padding-y;
+    }
+    .k-listview-item-padding-square .k-listview-link {
+        margin: (-$kendo-listview-item-padding-y);
+        padding: $kendo-listview-item-padding-y;
+    }
+
+
+    // Listview footer
+    .k-listview-footer {
+        border-width: 0;
+        border-style: solid;
+        border-color: inherit;
+    }
+    .k-listview-bordered > .k-listview-footer {
+        border-top-width: $kendo-listview-border-width;
+    }
+
+
+    // Listview pager
+    .k-listview-pager {
+        border-width: 0;
+        border-color: inherit;
+    }
+    .k-listview-bordered > .k-listview-pager-top {
+        border-block-end-width: var( --kendo-listview-border-width, #{$kendo-listview-border-width} );
+    }
+    .k-listview-bordered > .k-listview-pager-bottom {
+        border-block-start-width: var( --kendo-listview-border-width, #{$kendo-listview-border-width} );
+    }
+
+
+    // Borders
+    .k-listview-borders-all {
+        .k-listview-item {
+            border-width: 1px;
+        }
+    }
+    .k-listview-borders-horizontal {
+        .k-listview-item {
+            border-top-width: 1px;
+        }
+        .k-listview-item:first-child {
+            border-top-width: 0;
+        }
+    }
+    .k-listview-borders-vertical {
+        .k-listview-item {
+            border-left-width: 1px;
+        }
+        .k-listview-item:first-child {
+            border-left-width: 0;
+        }
+    }
+
+}
+
+
+@mixin kendo-listview--layout() {
+    @include kendo-listview--layout-base();
+}

@@ -1,0 +1,222 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-task-board--layout-base() {
+
+    // TaskBoard
+    .k-taskboard {
+        padding-block: $kendo-taskboard-padding-y;
+        padding-inline: $kendo-taskboard-padding-x;
+        box-sizing: border-box;
+        font-size: $kendo-taskboard-font-size;
+        font-family: $kendo-taskboard-font-family;
+        line-height: $kendo-taskboard-line-height;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    // Toolbar
+    .k-taskboard-toolbar {
+        padding-block: $kendo-taskboard-toolbar-padding-y;
+        padding-inline: $kendo-taskboard-toolbar-padding-x;
+        border-width: 0;
+        box-shadow: none;
+        background: none;
+    }
+
+    // Content
+    .k-taskboard-content {
+        padding: 0 $kendo-taskboard-toolbar-padding-x $kendo-taskboard-content-padding-y;
+        display: flex;
+        position: relative;
+        flex: 1 1 auto;
+        overflow-x: auto;
+    }
+
+    // Columns
+    .k-taskboard-columns-container {
+        outline: none;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        gap: $kendo-taskboard-columns-container-gap;
+        overflow-x: visible;
+    }
+
+    .k-taskboard-column {
+        width: $kendo-taskboard-column-width;
+        border-width: $kendo-taskboard-column-border-width;
+        border-radius: $kendo-taskboard-column-border-radius;
+        border-style: solid;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .k-taskboard-column-header {
+        padding-block: $kendo-taskboard-column-header-padding-y;
+        padding-inline: $kendo-taskboard-column-header-padding-x;
+        font-weight: $kendo-taskboard-column-header-font-weight;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: $kendo-taskboard-column-header-gap;
+    }
+
+    .k-taskboard-column-header-actions {
+        display: inline-flex;
+        flex-shrink: 0;
+        align-self: flex-start;
+        gap: $kendo-taskboard-column-header-actions-gap;
+    }
+
+    .k-taskboard-column-cards-container {
+        margin-bottom: $kendo-taskboard-column-container-spacing-y;
+        padding-block: $kendo-taskboard-column-container-padding-y;
+        padding-inline: $kendo-taskboard-column-container-padding-x;
+        outline: none;
+        overflow: auto;
+        flex: 1 1 auto;
+    }
+
+    .k-taskboard-column-cards {
+        padding-block: $kendo-taskboard-column-cards-padding-y;
+        padding-inline: $kendo-taskboard-column-cards-padding-x;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: $kendo-taskboard-column-cards-gap 0;
+    }
+
+    // Edit/New Columns
+    .k-taskboard-column-new {
+        // TODO: we need better way
+        // max-height: $kendo-taskboard-column-new-calc-height;
+    }
+
+    .k-taskboard-column-new,
+    .k-taskboard-column-edit {
+        .k-taskboard-column-header {
+            font-weight: inherit;
+        }
+
+        .k-taskboard-column-header-text {
+            flex: 1 1 100%;
+        }
+    }
+
+    // Preview/Edit Pane
+    .k-taskboard-pane {
+        padding-block: $kendo-taskboard-pane-padding-y;
+        padding-inline: $kendo-taskboard-pane-padding-x;
+        width: $kendo-taskboard-pane-width;
+        border-width: $kendo-taskboard-pane-border-width;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .k-taskboard-pane-header {
+        padding-block: $kendo-taskboard-pane-header-padding-y;
+        padding-inline: $kendo-taskboard-pane-header-padding-x;
+        font-weight: $kendo-taskboard-pane-header-font-weight;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .k-taskboard-pane-header-text {
+        word-break: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .k-taskboard-pane-header-actions {
+        flex-shrink: 0;
+        align-self: flex-start;
+    }
+
+    .k-taskboard-pane-content {
+        padding-block: $kendo-taskboard-pane-content-padding-y;
+        padding-inline: $kendo-taskboard-pane-content-padding-x;
+        overflow: auto;
+        flex: 1 1 auto;
+    }
+
+    .k-taskboard-pane-actions {
+        padding-block: $kendo-taskboard-pane-actions-padding-y;
+        padding-inline: $kendo-taskboard-pane-actions-padding-x;
+    }
+
+    .k-taskboard-pane-start {
+        right: auto;
+        left: 0;
+    }
+
+    // Cards
+    .k-taskboard-card {
+        @include border-radius( $kendo-taskboard-card-border-radius );
+        border-width: $kendo-taskboard-card-border-width;
+
+        &.k-taskboard-card-category {
+            border-inline-start-width: $kendo-taskboard-card-category-border-width;
+        }
+
+        .k-card-header
+        .k-card-body,
+        .k-card-footer {
+            padding-block: $kendo-taskboard-card-padding-y;
+            padding-inline: $kendo-taskboard-card-padding-x;
+        }
+
+        .k-card-header {
+            align-items: center;
+        }
+
+        .k-card-title {
+            font-size: inherit;
+            font-weight: inherit;
+            word-break: normal;
+            overflow-wrap: anywhere;
+
+            &:focus,
+            &.k-focus,
+            &:hover,
+            &.k-hover {
+                text-decoration: underline;
+            }
+        }
+
+        .k-card-header-actions {
+            align-self: flex-start;
+        }
+    }
+
+    // Card Drag Placeholder
+    .k-taskboard-drag-placeholder {
+        @include border-radius( $kendo-taskboard-drag-placeholder-border-radius );
+        border-width: $kendo-taskboard-drag-placeholder-border-width;
+        border-style: solid;
+        position: relative;
+    }
+
+}
+
+
+@mixin kendo-task-board--layout() {
+    @include kendo-task-board--layout-base();
+}

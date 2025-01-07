@@ -1,0 +1,85 @@
+@use "./_variables.scss" as *;
+
+@use "@progress/kendo-svg-icons/scss/index.scss" as * with (
+    $ki-icon-size: $kendo-icon-size
+);
+
+@mixin kendo-icon--layout-base() {
+
+    @include kendo-svg-icon-styles();
+
+    // Icon wrap
+    .k-icon-wrap {
+        flex: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        gap: 0;
+        align-items: center;
+        align-self: flex-start;
+        vertical-align: middle;
+        position: relative;
+
+        &::before {
+            content: "\200b";
+            width: 0;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    // kendo-icon-wrapper component
+    .k-icon-wrapper-host {
+        display: contents;
+    }
+
+    .k-icon-with-modifier {
+        position: relative;
+        margin: .25em;
+    }
+
+    .k-icon.k-icon-modifier {
+        width: 1em;
+        height: 1em;
+        position: absolute;
+        font-size: .5em;
+        bottom: 0;
+        right: 0;
+        margin: 0 -.5em -.5em 0;
+    }
+
+    .k-i-none::before {
+        content: "";
+        display: none;
+    }
+
+    .k-icon-action {
+        display: inline-flex;
+        padding: $kendo-icon-padding;
+        line-height: 1;
+        align-items: center;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+    .k-sprite {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        font-size: 0;
+        line-height: 0;
+        text-align: center;
+    }
+
+    .k-image {
+        display: inline-block;
+    }
+}
+
+
+@mixin kendo-icon--layout() {
+    @include kendo-icon--layout-base();
+}

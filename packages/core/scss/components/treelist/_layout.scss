@@ -1,0 +1,114 @@
+@use "../icons/_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-treelist--layout-base() {
+
+    // Base
+    .k-treelist {
+        &.k-grid-display-block.k-grid-lockedcolumns {
+            display: block;
+        }
+
+        .k-status {
+            padding-block: .4em;
+            padding-inline: .6em;
+            line-height: 1.6em;
+
+            // TODO: see what this does and use a better name
+            .k-loading {
+                vertical-align: baseline;
+                margin-right: 5px;
+
+                // TODO
+                display: none;
+            }
+        }
+
+        tr.k-hidden {
+            display: none;
+        }
+
+        .k-treelist-dragging,
+        .k-treelist-dragging .k-hover {
+            cursor: default;
+        }
+
+        .k-drop-hint {
+            transform: translate(0, -50%);
+        }
+
+        .k-table-row.k-footer td,
+        .k-table-row.k-footer-template td,
+        .k-table-row.k-footer .k-table-td,
+        .k-table-row.k-footer-template .k-table-td {
+            border-width: $kendo-treelist-footer-row-border-width 0;
+            border-style: solid;
+            font-weight: bold;
+        }
+
+        .k-table-row.k-footer + .k-table-row.k-footer td,
+        .k-table-row.k-footer + .k-table-row.k-footer .k-table-td {
+            border-top-width: 0;
+        }
+    }
+
+
+    // Sticky headers
+    .k-treelist-scrollable {
+        > .k-table,
+        .k-grid-header .k-table-row,
+        .k-grid-header .k-table-th {
+            background-color: inherit;
+        }
+
+        .k-grid-toolbar {
+            position: sticky;
+            z-index: 3;
+            top: 0;
+            left: 0;
+        }
+
+        .k-grid-header .k-table-th {
+            position: sticky;
+            z-index: 1;
+        }
+
+        .k-grid-header .k-table-th.k-grid-header-sticky {
+            z-index: 3;
+        }
+
+        thead.k-grid-header {
+            padding-right: 0;
+        }
+
+        .k-table-row.k-group-footer + .k-table-row.k-group-footer td {
+            border-top-width: 0;
+        }
+    }
+
+    :is(.k-treelist-scrollable[dir="rtl"], .k-rtl .k-treelist-scrollable) thead.k-grid-header {
+        padding-left: 0;
+    }
+
+    .k-drag-separator {
+        display: inline-block;
+        border-right: 1px solid;
+        height: 1em;
+        vertical-align: top;
+        margin-block: 0;
+        margin-inline: .5em;
+    }
+
+    .k-treelist-toggle {
+        margin-block: calc( #{$kendo-icon-padding} * -1 );
+        padding: $kendo-icon-padding;
+        box-sizing: content-box;
+        cursor: pointer;
+    }
+
+}
+
+
+@mixin kendo-treelist--layout() {
+    @include kendo-treelist--layout-base();
+}

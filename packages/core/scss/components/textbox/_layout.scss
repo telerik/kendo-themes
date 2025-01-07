@@ -1,0 +1,11 @@
+@mixin kendo-textbox--layout-base() {
+
+    // Textbox
+    .k-textbox {}
+
+}
+
+
+@mixin kendo-textbox--layout() {
+    @include kendo-textbox--layout-base();
+}

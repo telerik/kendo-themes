@@ -1,0 +1,11 @@
+@mixin kendo-textarea--theme-base() {
+
+    // Textarea
+    .k-textarea {}
+
+}
+
+
+@mixin kendo-textarea--theme() {
+    @include kendo-textarea--theme-base();
+}

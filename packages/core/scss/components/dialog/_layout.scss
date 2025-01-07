@@ -1,0 +1,78 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../window/_variables.scss" as *;
+
+@mixin kendo-dialog--layout-base() {
+
+    .k-dialog-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        outline: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10001;
+
+        .k-dialog {
+            position: relative;
+        }
+    }
+
+    .k-dialog {
+        padding: 0;
+        position: fixed;
+        box-sizing: border-box;
+
+        // Centered
+        &.k-dialog-centered {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        .k-multiselect {
+            width: 100%;
+        }
+    }
+
+
+    // Titlebar
+    .k-dialog-titlebar {}
+    .k-dialog-title {}
+
+
+    // Actions
+    .k-dialog-titlebar-actions {}
+    .k-dialog-action {}
+
+
+    // Content
+    .k-dialog-content {}
+
+
+    // Buttons
+    .k-dialog-actions {
+        @include border-bottom-radius( $kendo-window-border-radius );
+        padding-block: $kendo-dialog-buttongroup-padding-y;
+        padding-inline: $kendo-dialog-buttongroup-padding-x;
+        border-width: $kendo-dialog-buttongroup-border-width 0 0;
+        border-style: solid;
+        border-color: inherit;
+        flex: 0 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: $kendo-dialog-button-spacing;
+        overflow: hidden;
+    }
+
+}
+
+
+@mixin kendo-dialog--layout() {
+    @include kendo-dialog--layout-base();
+}

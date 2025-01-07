@@ -1,0 +1,24 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-popup--theme-base() {
+
+    .k-popup {
+        @include fill(
+            $kendo-popup-text,
+            $kendo-popup-bg,
+            $kendo-popup-border
+        );
+        @include box-shadow( $kendo-popup-shadow );
+    }
+
+    .k-animation-container {
+        @include border-bottom-radius-only( k-border-radius(md) );
+    }
+
+}
+
+
+@mixin kendo-popup--theme() {
+    @include kendo-popup--theme-base();
+}

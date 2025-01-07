@@ -1,0 +1,243 @@
+@use "./variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
+@mixin kendo-file-manager--layout-base() {
+
+    // File Manager
+    .k-filemanager {
+        border-width: $kendo-file-manager-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        font-family: $kendo-file-manager-font-family;
+        font-size: $kendo-file-manager-font-size;
+        line-height: $kendo-file-manager-line-height;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+
+    // Toolbar
+    .k-filemanager-header {
+        border-color: inherit;
+    }
+    .k-filemanager-toolbar {
+        border-width: 0;
+        border-bottom-width: $kendo-file-manager-toolbar-border-width;
+        border-color: inherit;
+        flex-shrink: 0;
+        z-index: 1;
+    }
+
+
+    // Content Wrapper
+    .k-filemanager-content-container {
+        border-color: inherit;
+        box-sizing: border-box;
+        flex: 1 1 0%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        overflow: hidden;
+    }
+
+    .k-filemanager-splitter {
+        border-width: 0;
+    }
+
+
+    // Navigation
+    .k-filemanager-navigation {
+        padding-block: $kendo-file-manager-navigation-padding-y;
+        padding-inline: $kendo-file-manager-navigation-padding-x;
+        width: $kendo-file-manager-navigation-width;
+        border-width: 0;
+        border-right-width: $kendo-file-manager-navigation-border-width;
+        border-style: solid;
+        border-color: inherit;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        overflow: auto;
+    }
+    .k-filemanager-treeview {
+        overflow: visible;
+    }
+
+
+    // Content
+    .k-filemanager-content {
+        border-color: inherit;
+        flex: 1 1 0%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        overflow: hidden;
+    }
+
+    // Filemanager view
+    .k-filemanager-view {
+        overflow: auto;
+    }
+
+    // Breadcrumb
+    .k-filemanager-breadcrumb {
+        border-width: 0;
+        border-bottom-width: $kendo-file-manager-breadcrumb-border-width;
+        padding-block: $kendo-file-manager-breadcrumb-padding-y;
+        padding-inline: $kendo-file-manager-breadcrumb-padding-x;
+        flex-shrink: 0;
+    }
+
+
+    // Filemanager listview
+    .k-filemanager-listview {
+        border-width: 0;
+        flex: 1 1 0%;
+
+        // Listview item
+        .k-listview-item {
+            padding-block: $kendo-file-manager-listview-item-padding-y;
+            padding-inline: $kendo-file-manager-listview-item-padding-x;
+            width: $kendo-file-manager-listview-item-width;
+            height: $kendo-file-manager-listview-item-height;
+            text-align: center;
+        }
+
+        // File preview
+        .k-file-preview {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        // File name
+        .k-file-name {
+            margin-top: calc( #{$kendo-file-manager-spacer} / 2 );
+            display: block;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        // Edit mode
+        .k-file-edit-input input {
+            width: 100%;
+        }
+    }
+
+
+    // Filemanager grid
+    .k-filemanager-grid {
+        border-width: 0;
+        flex: 1 1 0%;
+
+        // File preview
+        .k-file-preview {
+            margin-right: $kendo-icon-spacing;
+            display: inline-flex;
+            flex-direction: row;
+            vertical-align: middle;
+        }
+
+        // File icon
+        .k-file-icon {}
+
+        // File name
+        .k-file-name {
+            display: inline-flex;
+            flex-direction: row;
+            vertical-align: middle;
+        }
+    }
+
+
+    // Filemanager preview
+    .k-filemanager-preview {
+        padding: calc( #{$kendo-file-manager-preview-padding-y} * 3) $kendo-file-manager-preview-padding-x $kendo-file-manager-preview-padding-y;
+        width: $kendo-file-manager-preview-width;
+        min-height: calc( calc( #{$kendo-file-manager-preview-padding-y} * 4 ) + calc( #{$kendo-icon-size-xxxl} * 2 ) + calc( #{$kendo-file-manager-preview-spacing} * 3 ) );
+        border-width: 0;
+        border-left-width: $kendo-file-manager-preview-border-width;
+        border-style: solid;
+        border-color: inherit;
+        box-sizing: border-box;
+        text-align: center;
+        overflow-y: auto;
+        flex-shrink: 0;
+
+        // File preview
+        .k-file-preview {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        // File name
+        .k-file-name {
+            margin-top: $kendo-file-manager-preview-spacing;
+            display: block;
+        }
+        .k-no-file-selected {}
+        .k-single-file-selected { font-weight: bold; }
+        .k-multiple-files-selected { font-weight: bold; }
+
+        // File Meta
+        .k-file-meta {
+            margin: $kendo-file-manager-preview-spacing 0 0;
+            box-sizing: border-box;
+            text-align: start;
+            display: flex;
+            flex-flow: row wrap;
+            grid-column-gap: $kendo-file-manager-preview-column-gap;
+        }
+        .k-file-meta-label {
+            display: inline-block;
+        }
+        .k-file-meta-value {
+            margin: 0;
+        }
+        .k-file-type {
+            text-transform: capitalize;
+        }
+        .k-line-break {
+            margin: $kendo-file-manager-preview-spacing 0 0;
+            width: 100%;
+            flex: 1 1 100%;
+            flex-flow: row nowrap;
+        }
+    }
+
+
+    // Resizing Handle
+    .k-filemanager .k-splitbar {
+        flex-shrink: 0;
+        display: inline-flex;
+        position: relative;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: inherit;
+    }
+
+
+    // Upload Dialog
+    .k-filemanager-upload-dialog .k-upload-files {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+
+    // Drag Hint
+    // TODO: use drag-hint styles
+    .k-filemanager-drag-hint {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: $kendo-icon-spacing;
+    }
+
+}
+
+
+@mixin kendo-file-manager--layout() {
+    @include kendo-file-manager--layout-base();
+}

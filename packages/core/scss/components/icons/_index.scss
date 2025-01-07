@@ -1,0 +1,20 @@
+// Dependencies
+@use "../core/_index.scss" as *;
+@use "../utils/_index.scss" as *;
+
+// Component
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
+
+// Expose
+@mixin kendo-icon--styles() {
+    @include import-once( "icon" ) {
+        @include core-styles();
+        @include kendo-icon--layout();
+        @include kendo-icon--theme();
+        @include kendo-utils--transform--rotate();
+        @include kendo-utils--transform--flip();
+        @include kendo-utils--typography--text-color();
+    }
+}

@@ -1,0 +1,39 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-appbar--theme-base() {
+
+    .k-appbar {
+        @include box-shadow( $kendo-appbar-box-shadow );
+    }
+    .k-appbar-bottom {
+        @include box-shadow( $kendo-appbar-bottom-box-shadow );
+    }
+
+
+    // AppBar theme colors
+    @each $name, $color in $kendo-theme-colors {
+        .k-appbar-#{$name} {
+            @if $name == "light" {
+                color: $kendo-appbar-light-text;
+                background-color: $kendo-appbar-light-bg;
+            } @else if $name == "dark" {
+                color: $kendo-appbar-dark-text;
+                background-color: $kendo-appbar-dark-bg;
+            } @else {
+                color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
+                background-color: $color;
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-appbar--theme() {
+    @include kendo-appbar--theme-base();
+}

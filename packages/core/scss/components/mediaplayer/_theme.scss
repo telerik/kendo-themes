@@ -1,0 +1,30 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-media-player--theme-base() {
+
+    // Theme
+    .k-mediaplayer {
+        @include fill(
+            $kendo-media-player-text,
+            $kendo-media-player-bg,
+            $kendo-media-player-border
+        );
+    }
+
+
+    // Title bar
+    .k-mediaplayer-titlebar {
+        color: $kendo-media-player-titlebar-text;
+        background-image: linear-gradient( $kendo-media-player-titlebar-gradient );
+        text-shadow: 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-media-player-text, .5 ));
+    }
+
+}
+
+
+@mixin kendo-media-player--theme() {
+    @include kendo-media-player--theme-base();
+}

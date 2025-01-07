@@ -1,0 +1,31 @@
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-dialog--theme-base() {
+
+    // Dialog titlebar
+    .k-dialog-titlebar {
+        @include fill(
+            $kendo-dialog-titlebar-text,
+            $kendo-dialog-titlebar-bg,
+            $kendo-dialog-titlebar-border
+        );
+    }
+
+    // Dialog theme colors
+    @each $name, $color in $kendo-dialog-theme-colors {
+        .k-dialog-#{$name} .k-dialog-titlebar {
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
+            background-color: $color;
+        }
+    }
+
+}
+
+
+@mixin kendo-dialog--theme() {
+    @include kendo-dialog--theme-base();
+}

@@ -1,0 +1,11 @@
+@mixin kendo-date-input--theme-base() {
+
+    // Date input
+    .k-dateinput {}
+
+}
+
+
+@mixin kendo-date-input--theme() {
+    @include kendo-date-input--theme-base();
+}

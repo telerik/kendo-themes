@@ -1,0 +1,122 @@
+@use "sass:map";
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../colorpalette/_variables.scss" as *;
+
+@mixin kendo-color-editor--layout-base() {
+
+    // ColorEditor/FlatColorPicker
+    .k-coloreditor {
+        @include border-radius( $kendo-color-editor-border-radius );
+        min-width: $kendo-color-editor-min-width;
+        border-width: $kendo-color-editor-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-size: $kendo-color-editor-font-size;
+        font-family: $kendo-color-editor-font-family;
+        line-height: $kendo-color-editor-line-height;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    // Header
+    .k-coloreditor-header {
+        padding: $kendo-color-editor-header-padding-y $kendo-color-editor-header-padding-x 0;
+    }
+
+    .k-coloreditor-header-actions {
+        gap: $kendo-color-editor-header-actions-gap;
+    }
+
+    .k-coloreditor-preview {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: $kendo-color-editor-preview-gap;
+        position: relative;
+        z-index: 1;
+    }
+
+    .k-coloreditor-preview .k-color-preview {
+        width: $kendo-color-editor-color-preview-width;
+        height: $kendo-color-editor-color-preview-height;
+    }
+
+    // ColorPreview sizes
+    @each $size, $size-props in $kendo-color-editor-sizes {
+        $_min-width: map.get( $size-props, min-width );
+        $_header-padding-x: map.get( $size-props, header-padding-x );
+        $_header-padding-y: map.get( $size-props, header-padding-y );
+        $_views-padding-x: map.get( $size-props, views-padding-x );
+        $_views-padding-y: map.get( $size-props, views-padding-y );
+        $_preview-gap: map.get( $size-props, preview-gap );
+        $_preview-width: map.get( $size-props, preview-width );
+        $_preview-height: map.get( $size-props, preview-height );
+
+        .k-coloreditor-#{$size} {
+            min-width: $_min-width;
+
+            .k-coloreditor-header {
+                padding: $_header-padding-y $_header-padding-x 0;
+            }
+
+            .k-coloreditor-views {
+                padding-block: $_views-padding-y;
+                padding-inline: $_views-padding-x;
+            }
+
+            .k-coloreditor-preview {
+                gap: $_preview-gap;
+
+                .k-color-preview {
+                    width: $_preview-width;
+                    height: $_preview-height;
+                }
+            }
+        }
+
+    }
+
+    // Views
+    .k-coloreditor-views {
+        min-width: calc( var(--kendo-color-preview-width, #{$kendo-color-palette-tile-width}) * var(--kendo-color-preview-columns, 10) );
+        padding-block: $kendo-color-editor-views-padding-y;
+        padding-inline: $kendo-color-editor-views-padding-x;
+        gap: $kendo-color-editor-views-gap;
+
+        .k-colorgradient {
+            padding: 0;
+            width: auto;
+            border-width: 0;
+        }
+        .k-colorgradient:focus,
+        .k-colorgradient.k-focus {
+            outline: $kendo-color-editor-color-gradient-focus-outline dotted;
+            outline-offset: $kendo-color-editor-color-gradient-focus-outline-offset;
+            border-radius: 0;
+        }
+
+        .k-colorpalette {
+            align-self: center;
+        }
+    }
+
+    // Footer
+    .k-coloreditor-footer.k-actions {
+        margin: 0;
+    }
+}
+
+
+@mixin kendo-color-editor--layout() {
+    @include kendo-color-editor--layout-base();
+}

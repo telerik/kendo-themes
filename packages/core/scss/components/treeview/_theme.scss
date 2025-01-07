@@ -1,0 +1,87 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-treeview--theme-base() {
+
+    // Treeview
+    .k-treeview {
+        @include fill(
+            $kendo-treeview-text,
+            $kendo-treeview-bg,
+            $kendo-treeview-border
+        );
+    }
+
+
+    // Treeview item
+    .k-treeview-item {}
+
+
+    // Treeview leaf
+    .k-treeview-leaf {
+
+        // Hover state
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-treeview-item-hover-text,
+                $kendo-treeview-item-hover-bg,
+                $kendo-treeview-item-hover-border,
+                $kendo-treeview-item-hover-gradient
+            );
+        }
+
+        // Focus state
+        &:focus,
+        &.k-focus {
+            @include focus-indicator( $kendo-treeview-item-focus-shadow, true );
+        }
+
+        // Selected state
+        &.k-selected {
+            @include fill(
+                $kendo-treeview-item-selected-text,
+                $kendo-treeview-item-selected-bg,
+                $kendo-treeview-item-selected-border,
+                $kendo-treeview-item-selected-gradient
+            );
+        }
+    }
+
+
+    // Treeview load more button
+    .k-treeview .k-treeview-load-more-button {
+        @include fill(
+            $kendo-treeview-loadmore-text,
+            $kendo-treeview-loadmore-bg,
+            $kendo-treeview-loadmore-border
+        );
+
+        // Hover state
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-treeview-loadmore-hover-text,
+                $kendo-treeview-loadmore-hover-bg,
+                $kendo-treeview-loadmore-hover-border
+            );
+        }
+
+        // Focus state
+        &:focus,
+        &.k-focus {
+            @include fill(
+                $kendo-treeview-loadmore-focus-text,
+                $kendo-treeview-loadmore-focus-bg,
+                $kendo-treeview-loadmore-focus-border
+            );
+            @include focus-indicator( $kendo-treeview-loadmore-focus-shadow, true );
+        }
+    }
+
+}
+
+
+@mixin kendo-treeview--theme() {
+    @include kendo-treeview--theme-base();
+}

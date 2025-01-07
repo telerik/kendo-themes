@@ -1,0 +1,129 @@
+@use "sass:list";
+@use "./variables.scss" as *;
+
+@mixin kendo-wizard--layout-base() {
+
+    // Wizard
+    .k-wizard {
+        padding-block: $kendo-wizard-padding-y;
+        padding-inline: $kendo-wizard-padding-x;
+        border-width: $kendo-wizard-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-size: $kendo-wizard-font-size;
+        line-height: $kendo-wizard-line-height;
+        font-family: $kendo-wizard-font-family;
+        position: relative;
+        color: inherit;
+        background: none;
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+
+        .k-wizard-steps {
+            box-sizing: border-box;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .k-wizard-step {
+            box-sizing: border-box;
+            padding: calc(#{list.slash( $kendo-wizard-content-padding-x, 4 )} + 2px);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+
+            &:focus,
+            &.k-focus {
+                outline-width: 1px;
+                outline-style: dotted;
+                outline-offset: -1px;
+            }
+        }
+
+        .k-wizard-content {
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .k-wizard-buttons {
+            margin-top: $kendo-wizard-content-padding-y;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+
+            .k-button {
+                margin-right: $kendo-wizard-buttons-margin-x;
+            }
+
+            .k-wizard-pager {
+                vertical-align: middle;
+            }
+        }
+
+        .k-wizard-buttons-right {
+            .k-button:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        .k-stepper {
+            .k-step-list-vertical {
+                .k-step {
+                    flex: 1 0 auto;
+                }
+            }
+
+            .k-step-indicator {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .k-wizard-horizontal {
+        flex-direction: column;
+
+        .k-wizard-steps {
+            margin-top: $kendo-wizard-content-padding-y;
+        }
+
+        .k-wizard-steps,
+        .k-wizard-content {
+            flex: 1 1 auto;
+        }
+    }
+
+    .k-wizard-vertical {
+
+        .k-wizard-steps {
+            margin-left: $kendo-wizard-content-padding-x;
+            flex: 1 0 0%;
+        }
+
+        .k-wizard-content {
+            flex: 1 1 0%;
+        }
+
+    }
+
+    .k-wizard-left {
+        flex-direction: row-reverse;
+
+        .k-wizard-steps {
+            margin-right: $kendo-wizard-content-padding-x;
+            margin-left: 0;
+        }
+    }
+
+}
+
+
+@mixin kendo-wizard--layout() {
+    @include kendo-wizard--layout-base();
+}

@@ -1,0 +1,105 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-breadcrumb--theme-base() {
+
+    // Breadcrumb
+    .k-breadcrumb {
+        @include fill(
+            $kendo-breadcrumb-text,
+            $kendo-breadcrumb-bg,
+            $kendo-breadcrumb-border
+        );
+
+        &:focus,
+        &.k-focus {
+            @include box-shadow( $kendo-breadcrumb-focus-shadow );
+        }
+    }
+
+
+    // Breadcrumb link
+    .k-breadcrumb-link {
+        @include fill(
+            $kendo-breadcrumb-link-text,
+            $kendo-breadcrumb-link-bg,
+            $kendo-breadcrumb-link-border
+        );
+
+        // Hovered state
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-breadcrumb-link-hover-text,
+                $kendo-breadcrumb-link-hover-bg,
+                $kendo-breadcrumb-link-hover-border
+            );
+        }
+
+        // Focused state
+        &:focus,
+        &.k-focus {
+            @include fill(
+                $kendo-breadcrumb-link-focus-text,
+                $kendo-breadcrumb-link-focus-bg,
+                $kendo-breadcrumb-link-focus-border
+            );
+            @include focus-indicator( $kendo-breadcrumb-link-focus-shadow );
+        }
+    }
+
+
+    // Breadcrumb root link
+    .k-breadcrumb-root-link {
+        @include fill(
+            $kendo-breadcrumb-root-link-text,
+            $kendo-breadcrumb-root-link-bg,
+            $kendo-breadcrumb-root-link-border
+        );
+
+        // Hovered state
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-breadcrumb-root-link-hover-text,
+                $kendo-breadcrumb-root-link-hover-bg,
+                $kendo-breadcrumb-root-link-hover-border
+            );
+        }
+
+        // Focused state
+        &:focus,
+        &.k-focus {
+            @include fill(
+                $kendo-breadcrumb-root-link-focus-text,
+                $kendo-breadcrumb-root-link-focus-bg,
+                $kendo-breadcrumb-root-link-focus-border
+            );
+            @include focus-indicator( $kendo-breadcrumb-root-link-focus-shadow );
+        }
+    }
+
+
+    // Breadcrumb current (last) item
+    .k-breadcrumb-current-item {
+        .k-breadcrumb-link {
+            @include fill(
+                $kendo-breadcrumb-current-item-text,
+                $kendo-breadcrumb-current-item-bg,
+                $kendo-breadcrumb-current-item-border
+            );
+        }
+    }
+
+
+    // Alias
+    .k-breadcrumb-last-item {
+        @extend .k-breadcrumb-current-item !optional;
+    }
+
+}
+
+
+@mixin kendo-breadcrumb--theme() {
+    @include kendo-breadcrumb--theme-base();
+}

@@ -1,0 +1,99 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-popover--layout-base() {
+
+    // Popover
+    .k-popover {
+        @include border-radius( $kendo-popover-border-radius );
+        padding: 0;
+        border-width: $kendo-popover-border-width;
+        border-style: $kendo-popover-border-style;
+        box-sizing: border-box;
+        outline: 0;
+        font-size: $kendo-popover-font-size;
+        font-family: $kendo-popover-font-family;
+        line-height: $kendo-popover-line-height;
+        display: flex;
+        flex-flow: column nowrap;
+        z-index: 12000;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    .k-popover-inner {
+        height: inherit;
+        position: relative;
+        border-radius: inherit;
+        border-color: inherit;
+    }
+
+    // Header
+    .k-popover-header {
+        @include border-top-radius( $kendo-popover-border-radius );
+        padding-block: $kendo-popover-header-padding-y;
+        padding-inline: $kendo-popover-header-padding-x;
+        border-width: 0 0 $kendo-popover-header-border-width;
+        border-style: $kendo-popover-header-border-style;
+        border-color: inherit;
+    }
+
+    // Body
+    .k-popover-body {
+        padding-block: $kendo-popover-body-padding-y;
+        padding-inline: $kendo-popover-body-padding-x;
+    }
+
+    // Actions
+    .k-popover-actions {
+        border-width: $kendo-popover-actions-border-width 0 0;
+    }
+
+
+    // Popover callout
+    .k-popover-callout {
+        margin: 0;
+        width: $kendo-popover-callout-width;
+        height: $kendo-popover-callout-height;
+        border-width: $kendo-popover-callout-border-width;
+        border-style: $kendo-popover-callout-border-style;
+        position: absolute;
+
+        &.k-callout-n {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &.k-callout-e {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%) rotate(-45deg);
+        }
+
+        &.k-callout-s {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%) rotate(45deg);
+        }
+
+        &.k-callout-w {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+
+}
+
+
+@mixin kendo-popover--layout() {
+    @include kendo-popover--layout-base();
+}

@@ -1,0 +1,38 @@
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-filter--theme-base() {
+
+    .k-filter {
+        color: $kendo-component-text;
+
+        .k-filter-preview-field {
+            color: $kendo-filter-preview-field-text;
+        }
+
+        .k-filter-preview-operator {
+            color: $kendo-filter-preview-operator-text;
+        }
+
+        // The last selector targets the Angular rendering
+        .k-filter-item::before,
+        .k-filter-toolbar::before,
+        .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
+        .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
+            background-color: $kendo-component-border;
+        }
+
+        // Focus
+        .k-toolbar:focus,
+        .k-toolbar.k-focus {
+            @include focus-indicator( $kendo-filter-toolbar-focus-shadow );
+        }
+    }
+
+}
+
+
+@mixin kendo-filter--theme() {
+    @include kendo-filter--theme-base();
+}

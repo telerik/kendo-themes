@@ -1,0 +1,120 @@
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-appbar--layout-base() {
+
+    // Appbar
+    .k-appbar {
+        margin-block: $kendo-appbar-margin-y;
+        margin-inline: $kendo-appbar-margin-x;
+        padding-block: $kendo-appbar-padding-y;
+        padding-inline: $kendo-appbar-padding-x;
+        border-width: $kendo-appbar-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-appbar-font-family;
+        font-size: $kendo-appbar-font-size;
+        line-height: $kendo-appbar-line-height;
+        list-style: none;
+        display: flex;
+        gap: $kendo-appbar-gap;
+        flex-flow: row wrap;
+        align-items: center;
+        overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        > * {
+            flex-shrink: 0;
+        }
+
+        // Appbar section
+        .k-appbar-section {
+            display: inline-flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+
+        // Appbar Spacer
+        .k-appbar-spacer {
+            flex: 1 0 auto;
+        }
+        .k-appbar-spacer-sized {
+            flex-grow: 0;
+        }
+
+
+        // Separator
+        .k-appbar-separator {
+            margin: 0;
+            width: 0;
+            min-height: 1em;
+            border-style: solid;
+            border-width: 0 0 0 1px;
+            display: inline-block;
+        }
+
+
+        // Input
+        .k-input,
+        .k-picker {
+            width: 10em;
+        }
+        .k-color-picker {
+            width: min-content;
+        }
+
+    }
+
+
+    // Static appbar
+    .k-appbar-static {
+        position: static;
+    }
+
+
+    // Sticky appbar
+    .k-appbar-sticky {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: $kendo-appbar-zindex;
+    }
+
+
+    // Fixed appbar
+    .k-appbar-fixed {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+
+    // Appbar position
+    .k-appbar-top {
+        top: 0;
+        bottom: auto;
+    }
+    .k-appbar-bottom {
+        top: auto;
+        bottom: 0;
+
+        &.k-appbar-fixed {
+            bottom: 0;
+        }
+    }
+
+}
+
+
+@mixin kendo-appbar--layout() {
+    @include kendo-appbar--layout-base();
+}

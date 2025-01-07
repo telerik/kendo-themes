@@ -1,0 +1,11 @@
+@mixin kendo-time-picker--theme-base() {
+
+    // Time picker
+    .k-time-picker {}
+
+}
+
+
+@mixin kendo-time-picker--theme() {
+    @include kendo-time-picker--theme-base();
+}

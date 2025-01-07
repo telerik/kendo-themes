@@ -1,0 +1,325 @@
+@use "../../color-system/_constants.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-menu--layout-base() {
+
+    // Menu bar
+    .k-menu-bar {
+        border-width: $kendo-menu-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-menu-font-family;
+        font-size: $kendo-menu-font-size;
+        line-height: $kendo-menu-line-height;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        position: relative;
+        cursor: default;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+    .k-menu { @extend .k-menu-bar !optional; }
+
+    // Menu item
+    .k-menu-item {
+        border-width: 0;
+        outline: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: none;
+        position: relative;
+        user-select: none;
+
+        &.k-selected {
+            font-weight: $kendo-menu-item-selected-font-weight;
+        }
+    }
+    .k-menu-item-content {
+        display: block;
+        height: auto;
+        overflow: visible;
+
+        .k-actions {
+            margin-top: 0;
+        }
+    }
+
+
+    // Menu link
+    .k-menu-link {
+        padding-block: $kendo-menu-item-padding-y;
+        padding-inline: $kendo-menu-item-padding-x;
+        outline: 0;
+        color: inherit;
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+        gap: $kendo-menu-item-icon-spacing;
+        align-items: center;
+        position: relative;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+
+    // Menu item text
+    .k-menu-link-text {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    // Expand arrow
+    .k-menu-expand-arrow {
+        margin-inline-end: calc( #{$kendo-icon-spacing} * -1 );
+        display: inline-flex;
+        flex-flow: row wrap;
+        align-items: center;
+        flex: none;
+        position: relative;
+    }
+
+
+    // Orientation -- horizontal
+    .k-menu-horizontal {
+        flex-direction: row;
+
+        > .k-menu-item + .k-menu-item {
+            margin-inline-start: $kendo-menu-item-spacing;
+        }
+
+        > .k-separator {
+            margin-block: $kendo-menu-separator-margin-block;
+            margin-inline: $kendo-menu-separator-margin-inline;
+            width: 0;
+            height: auto;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+        }
+    }
+
+
+    // Orientation -- vertical
+    .k-menu-vertical {
+        flex-direction: column;
+        width: 100%;
+
+        > .k-menu-item + .k-menu-item {
+            margin-top: $kendo-menu-item-spacing;
+        }
+
+        > .k-menu-item > .k-menu-link {
+            padding-block: $kendo-menu-popup-item-padding-y;
+            padding-inline: $kendo-menu-popup-item-padding-x;
+            padding-inline-end: $kendo-menu-popup-item-padding-end;
+        }
+
+        > .k-menu-item > .k-menu-link > .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-md-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-md-item-icon-margin-end;
+        }
+
+        > .k-separator {
+            margin-block: $kendo-menu-separator-margin-block;
+            margin-inline: 0;
+            height: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
+            display: block;
+        }
+    }
+
+
+    // Menu popup
+    .k-menu-popup {
+        padding-block: $kendo-menu-popup-padding-y;
+        padding-inline: $kendo-menu-popup-padding-x;
+        box-sizing: border-box;
+        border-width: $kendo-menu-popup-border-width;
+        border-style: solid;
+        overflow: auto;
+        max-height: 80vh;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-menu-item {
+            font-weight: initial;
+        }
+    }
+
+
+    // Sub menu
+    .k-menu-group {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+
+        .k-menu-item + .k-menu-item {
+            margin-top: $kendo-menu-popup-item-spacing;
+        }
+
+        .k-separator {
+            margin-block: $kendo-menu-separator-margin-inline;
+            margin-inline: 0;
+            height: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
+            display: block;
+        }
+    }
+    .k-menu-popup .k-menu-group {
+        position: relative;
+    }
+
+
+    // Sizes
+    .k-menu-group-sm {
+        font-size: $kendo-menu-popup-sm-font-size;
+        line-height: $kendo-menu-popup-sm-line-height;
+
+        // jquery popup overrides those
+        .k-menu-item {
+            font-size: $kendo-menu-popup-sm-font-size;
+            line-height: $kendo-menu-popup-sm-line-height;
+        }
+
+        .k-menu-link {
+            padding-block: $kendo-menu-popup-sm-item-padding-y;
+            padding-inline: $kendo-menu-popup-sm-item-padding-x;
+            padding-inline-end: $kendo-menu-popup-sm-item-padding-end;
+        }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-sm-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-sm-item-icon-margin-end;
+        }
+    }
+    .k-menu-group-md {
+        font-size: $kendo-menu-popup-md-font-size;
+        line-height: $kendo-menu-popup-md-line-height;
+
+        // jquery popup overrides those
+        .k-menu-item {
+            font-size: $kendo-menu-popup-md-font-size;
+            line-height: $kendo-menu-popup-md-line-height;
+        }
+
+        .k-menu-link {
+            padding-block: $kendo-menu-popup-md-item-padding-y;
+            padding-inline: $kendo-menu-popup-md-item-padding-x;
+            padding-inline-end: $kendo-menu-popup-md-item-padding-end;
+        }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-md-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-md-item-icon-margin-end;
+        }
+    }
+    .k-menu-group-lg {
+        font-size: $kendo-menu-popup-lg-font-size;
+        line-height: $kendo-menu-popup-lg-line-height;
+
+        // jquery popup overrides those
+        .k-menu-item {
+            font-size: $kendo-menu-popup-lg-font-size;
+            line-height: $kendo-menu-popup-lg-line-height;
+        }
+
+        .k-menu-link {
+            padding-block: $kendo-menu-popup-lg-item-padding-y;
+            padding-inline: $kendo-menu-popup-lg-item-padding-x;
+            padding-inline-end: $kendo-menu-popup-lg-item-padding-end;
+        }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-lg-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end;
+        }
+    }
+
+
+    // Context menu
+    .k-popups-wrapper {
+        position: relative;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .k-context-menu {
+        margin: 0;
+        padding-block: $kendo-menu-popup-padding-y;
+        padding-inline: $kendo-menu-popup-padding-x;
+        border-width: $kendo-menu-popup-border-width;
+        border-style: solid;
+
+        &.k-menu-horizontal {
+            padding-block: $kendo-menu-popup-padding-x;
+            padding-inline: $kendo-menu-popup-padding-y;
+        }
+    }
+    .k-animation-container .k-context-menu.k-menu-horizontal {
+        // kendo-jquery adds `display: block` via js and we need to override it.
+        display: flex !important; // stylelint-disable-line declaration-no-important
+        flex-wrap: nowrap;
+    }
+    .k-context-menu-popup {
+        z-index: 12000;
+
+        .k-context-menu {
+            border-width: 0;
+        }
+    }
+    .k-popup .k-context-menu,
+    .k-context-menu-popup .k-context-menu {
+        border-width: 0;
+    }
+
+
+    // Scrolling
+    .k-menu-scroll-wrapper {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .k-menu {
+            overflow: hidden;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .k-menu-scroll-wrapper-vertical {
+        flex-direction: column;
+
+        > .k-menu-scroll-button {
+            width: 100%;
+        }
+    }
+
+}
+
+
+@mixin kendo-menu--layout() {
+    @include kendo-menu--layout-base();
+}

@@ -1,0 +1,145 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-menu--theme-base() {
+
+    .k-menu:not(.k-context-menu) {
+        @include fill(
+            $kendo-menu-text,
+            $kendo-menu-bg,
+            $kendo-menu-border,
+            $kendo-menu-gradient
+        );
+
+        > .k-item {
+            @include fill(
+                $kendo-menu-item-text,
+                $kendo-menu-item-bg,
+                $kendo-menu-item-border,
+                $kendo-menu-item-gradient
+            );
+
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    $kendo-menu-item-hover-text,
+                    $kendo-menu-item-hover-bg,
+                    $kendo-menu-item-hover-border,
+                    $kendo-menu-item-hover-gradient
+                );
+            }
+
+            &:active,
+            &.k-active {
+                @include fill(
+                    $kendo-menu-item-active-text,
+                    $kendo-menu-item-active-bg,
+                    $kendo-menu-item-active-border,
+                    $kendo-menu-item-active-gradient
+                );
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-menu-item-focus-shadow, true );
+            }
+
+            &.k-selected {
+                @include fill(
+                    $kendo-menu-item-selected-text,
+                    $kendo-menu-item-selected-bg,
+                    $kendo-menu-item-selected-border,
+                    $kendo-menu-item-selected-gradient
+                );
+            }
+        }
+
+        > .k-separator {
+            @include fill(
+                $border: $kendo-menu-separator-border
+            );
+        }
+    }
+
+    .k-menu-group,
+    .k-menu.k-context-menu {
+        @include fill(
+            $kendo-menu-popup-text,
+            $kendo-menu-popup-bg,
+            $kendo-menu-popup-border,
+            $kendo-menu-popup-gradient
+        );
+
+        .k-item > .k-link {
+            @include fill(
+                $kendo-menu-popup-item-text,
+                $kendo-menu-popup-item-bg,
+                $kendo-menu-popup-item-border,
+                $kendo-menu-popup-item-gradient
+            );
+
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    $kendo-menu-popup-item-hover-text,
+                    $kendo-menu-popup-item-hover-bg,
+                    $kendo-menu-popup-item-hover-border,
+                    $kendo-menu-popup-item-hover-gradient
+                );
+            }
+
+            &:active,
+            &.k-active,
+            &.k-selected {
+                @include fill(
+                    $kendo-menu-popup-item-active-text,
+                    $kendo-menu-popup-item-active-bg,
+                    $kendo-menu-popup-item-active-border,
+                    $kendo-menu-popup-item-active-gradient
+                );
+            }
+        }
+
+        .k-item:focus,
+        .k-item.k-focus {
+            > .k-link {
+                @include focus-indicator( $kendo-menu-popup-item-focus-shadow, true );
+            }
+        }
+
+        > .k-separator {
+            @include fill(
+                $border: $kendo-menu-separator-border
+            );
+        }
+    }
+
+
+    // Scrolling
+    .k-menu-scroll-wrapper .k-menu-scroll-button {
+        @include fill(
+            $kendo-menu-scroll-button-text,
+            $kendo-menu-scroll-button-bg,
+            $kendo-menu-scroll-button-border,
+            $kendo-menu-scroll-button-gradient
+        );
+
+        &:hover {
+            @include fill(
+                $kendo-menu-scroll-button-hover-text,
+                $kendo-menu-scroll-button-hover-bg,
+                $kendo-menu-scroll-button-hover-border,
+                $kendo-menu-scroll-button-hover-gradient
+            );
+
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+
+@mixin kendo-menu--theme() {
+    @include kendo-menu--theme-base();
+}

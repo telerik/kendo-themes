@@ -1,0 +1,22 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-draggable--theme-base() {
+
+    // Drag hint
+    .k-drag-clue {
+        @include fill(
+            $kendo-drag-hint-text,
+            $kendo-drag-hint-bg,
+            $kendo-drag-hint-border,
+            $kendo-drag-hint-gradient
+        );
+        @include box-shadow( $kendo-drag-hint-shadow );
+    }
+
+}
+
+
+@mixin kendo-draggable--theme() {
+    @include kendo-draggable--theme-base();
+}

@@ -1,0 +1,45 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-form--theme-base() {
+
+    .k-form,
+    .k-form-inline {
+        @include fill( $color: $kendo-body-text );
+
+        fieldset {
+            legend {
+                @include fill( $color: $kendo-fieldset-legend-text );
+            }
+        }
+
+        .k-form-legend {
+            @include fill( $border: $kendo-form-legend-border-color );
+        }
+
+        .k-field-info {
+            @include fill( $color: $kendo-subtle-text );
+        }
+
+        .k-alert-error {
+            @include fill( $color: $kendo-color-error );
+        }
+    }
+
+    .k-form-error,
+    .k-text-error,
+    .k-form-field-error .k-label {
+        @include fill( $color: $kendo-color-error );
+    }
+
+    .k-form-separator {
+        @include fill( $border: $kendo-form-separator-border-color );
+    }
+
+}
+
+
+@mixin kendo-form--theme() {
+    @include kendo-form--theme-base();
+}

@@ -1,0 +1,122 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "../icons/_variables.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-tooltip--layout-base() {
+
+    .k-tooltip {
+        @include border-radius( $kendo-tooltip-border-radius );
+        margin: 0;
+        padding-block: $kendo-tooltip-padding-y;
+        padding-inline: $kendo-tooltip-padding-x;
+        border-width: $kendo-tooltip-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        background-repeat: repeat-x;
+        outline: 0;
+        font-family: $kendo-tooltip-font-family;
+        font-size: $kendo-tooltip-font-size;
+        line-height: $kendo-tooltip-line-height;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        position: absolute;
+        z-index: 12000;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    .k-tooltip-icon {
+        margin-inline-end: $kendo-icon-spacing;
+        flex-shrink: 0;
+    }
+
+    .k-tooltip-title {
+        margin-bottom: .25em;
+        font-size: $kendo-tooltip-title-font-size;
+        line-height: $kendo-tooltip-title-line-height;
+    }
+
+    .k-tooltip-content {
+        align-self: stretch;
+        flex: 1 1 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .k-tooltip-button {
+        margin-inline-start: $kendo-icon-spacing;
+        flex-shrink: 0;
+
+        .k-icon {
+            color: inherit;
+            vertical-align: top;
+        }
+    }
+
+
+    // Callout
+    .k-callout {
+        width: calc( #{$kendo-tooltip-callout-size} * 2);
+        height: calc( #{$kendo-tooltip-callout-size} * 2);
+        border-width: $kendo-tooltip-callout-size;
+        border-style: solid;
+        border-color: transparent;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    // TODO:
+    // Some implementations rely on margin + transform-rotate to position callout
+    // Remove margin tweaking and uncomment when their implementation is fixed.
+
+    .k-callout-n {
+        margin-left: calc( #{$kendo-tooltip-callout-size} * -1 );
+        border-bottom-color: currentColor;
+        // top: 0;
+        top: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2 );
+        left: 50%;
+        // transform: translate(-50%, -100%);
+        pointer-events: none;
+    }
+    .k-callout-e {
+        margin-top: calc( #{$kendo-tooltip-callout-size} * -1 );
+        border-left-color: currentColor;
+        top: 50%;
+        // right: 0;
+        right: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2 );
+        // transform: translate(100%, -50%);
+        pointer-events: none;
+    }
+    .k-callout-s {
+        margin-left: calc( #{$kendo-tooltip-callout-size} * -1 );
+        border-top-color: currentColor;
+        // bottom: 0;
+        bottom: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
+        left: 50%;
+        // transform: translate(-50%, 100%);
+        pointer-events: none;
+    }
+    .k-callout-w {
+        margin-top: calc( #{$kendo-tooltip-callout-size} * -1 );
+        border-right-color: currentColor;
+        top: 50%;
+        // left: 0;
+        left: calc( calc( #{$kendo-tooltip-callout-size} * -1 ) * 2);
+        // transform: translate(-100%, -50%);
+        pointer-events: none;
+    }
+
+}
+
+
+@mixin kendo-tooltip--layout() {
+    @include kendo-tooltip--layout-base();
+}

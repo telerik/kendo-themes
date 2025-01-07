@@ -1,0 +1,48 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-listview--theme-base() {
+
+    // Listview
+    .k-listview {
+        @include fill(
+            $kendo-listview-text,
+            $kendo-listview-bg,
+            $kendo-listview-border
+        );
+    }
+
+
+    // Listview content
+    .k-listview-content {
+
+        > .k-focus {
+            @include fill(
+                $kendo-listview-item-focus-text,
+                $kendo-listview-item-focus-bg,
+                $kendo-listview-item-focus-border
+            );
+            @include focus-indicator( $kendo-listview-item-focus-shadow, true );
+        }
+
+        > .k-selected {
+            @include fill(
+                $kendo-listview-item-selected-text,
+                $kendo-listview-item-selected-bg,
+                $kendo-listview-item-selected-border
+            );
+        }
+
+    }
+
+    // List item
+    .k-listview-item {
+        border-color: $kendo-listview-border;
+    }
+
+}
+
+
+@mixin kendo-listview--theme() {
+    @include kendo-listview--theme-base();
+}

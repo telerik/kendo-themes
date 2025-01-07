@@ -1,0 +1,485 @@
+@use "../../color-system/_constants.scss" as *;
+@use "../../spacing/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../listgroup/_variables.scss" as *;
+
+@mixin kendo-adaptive--layout-base() {
+
+    .k-pane-wrapper {
+        border-width: $kendo-adaptive-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-adaptive-font-family;
+        font-size: $kendo-adaptive-font-size;
+        line-height: $kendo-adaptive-line-height;
+        display: block;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        .k-pane {
+            width: 100%;
+            height: 100%;
+            user-select: none;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        .k-view {
+            top: 0;
+            left: 0;
+            position: relative;
+            border: 0;
+            box-sizing: border-box;
+            outline: 0;
+            font-family: $kendo-adaptive-font-family;
+            font-size: $kendo-adaptive-font-size;
+            line-height: $kendo-adaptive-line-height;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            align-items: stretch;
+            align-content: stretch;
+            vertical-align: top;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+        }
+
+        .k-content {
+            min-height: 1px;
+            flex: 1;
+            align-items: stretch;
+            display: block;
+            width: auto;
+            overflow: hidden;
+            position: relative;
+        }
+    }
+
+
+
+
+    // Grid specific styles
+    .k-pane-wrapper { // stylelint-disable-line
+
+        > div.k-pane {
+            box-shadow: none;
+            font-weight: normal;
+        }
+
+        .k-popup-edit-form,
+        .k-grid-edit-form,
+        .k-grid-header-menu,
+        .k-grid-filter-menu {
+
+            .k-content {
+                overflow-y: auto;
+
+                > .k-scroll-container {
+                    position: absolute;
+                    width: 100%;
+                    min-height: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        .k-grid-edit-form {
+
+            .k-popup-edit-form,
+            .k-edit-form-container {
+                width: auto;
+                min-width: auto;
+            }
+        }
+    }
+
+    .k-grid.k-grid-mobile {
+        border-width: 0;
+    }
+
+    .k-grid-mobile {
+        .k-resize-handle-inner::before {
+            content: "\e01e";
+            position: absolute;
+            font: 16px/1 "WebComponentsIcons"; // stylelint-disable-line
+            // The Calc is needed due to the the negative margin
+            // that removes the double bottom border of the header
+            top: calc(50% - 1px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: .2em;
+        }
+
+        .k-header a {
+            user-select: none;
+        }
+    }
+
+
+
+
+    // Scheduler specific styles
+    .k-pane-wrapper { // stylelint-disable-line
+
+        .k-scheduler-edit-form {
+
+            .k-recur-view {
+                padding: 0;
+                flex-direction: column;
+                align-items: stretch;
+
+                > .k-listgroup-form-row {
+                    margin: 0;
+                }
+            }
+
+            .k-recur-items-wrap {
+                width: 100%;
+                margin-block: -1px;
+                margin-inline: 0;
+            }
+
+            .k-scheduler-recur-end-wrap {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .k-scheduler {
+        &.k-scheduler-mobile {
+            border-width: 0;
+        }
+    }
+
+    .k-scheduler-mobile {
+
+        th {
+            font-weight: normal;
+        }
+
+        .k-event:hover .k-resize-handle {
+            visibility: hidden;
+        }
+
+        .k-scheduler-toolbar {
+            padding-block: $kendo-toolbar-md-padding-y;
+            padding-inline: $kendo-toolbar-md-padding-x;
+
+            > * {
+                margin: 0;
+            }
+
+            &::before {
+                display: none;
+            }
+
+            .k-scheduler-navigation {
+                width: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                margin: 0;
+
+                .k-nav-current {
+                    line-height: 1;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    gap: 0;
+                }
+            }
+
+            .k-scheduler-views-wrapper {
+                .k-views-dropdown {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .k-scheduler-footer {
+            padding-block: $kendo-toolbar-md-padding-y;
+            padding-inline: $kendo-toolbar-md-padding-x;
+            display: flex;
+            justify-content: space-between;
+
+            > * {
+                margin: 0;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .k-scheduler-monthview {
+
+            .k-hidden {
+                height: 40px;
+            }
+
+            .k-scheduler-table td {
+                height: 40px;
+                vertical-align: top;
+                text-align: center;
+            }
+
+            .k-events-container {
+                position: absolute;
+                text-align: center;
+                height: 6px;
+                line-height: 6px;
+            }
+
+            .k-event {
+                position: static;
+                padding: 4px;
+                border-radius: 50%;
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                min-height: 0;
+                margin: 1px;
+            }
+        }
+
+        // Removing the "Days" header from the Mobile Scheduler will break the Web Scheduler
+        // Thus, the below selector is needed
+        .k-scheduler-dayview .k-mobile-header {
+
+            &.k-mobile-horizontal-header .k-scheduler-times table tr:first-child {
+                display: none;
+            }
+
+            .k-scheduler-header .k-scheduler-date-group {
+                display: none;
+            }
+        }
+
+        .k-scheduler-header-wrap > div {
+            overflow: visible;
+        }
+
+        .k-scheduler-agendaview {
+            .k-mobile-header {
+                display: none;
+            }
+
+            .k-scheduler-table {
+                table-layout: auto;
+
+                .k-scheduler-groupcolumn {
+                    width: 1%;
+                }
+
+                td {
+                    white-space: normal;
+                }
+            }
+        }
+
+        .k-mobile-header {
+            .k-scheduler-table td,
+            .k-scheduler-table th {
+                height: 1.5em;
+            }
+        }
+
+        .k-time-text,
+        .k-time-period {
+            display: block;
+            line-height: 1;
+        }
+
+        .k-time-period {
+            font-size: .7em;
+        }
+
+        .k-scheduler-table td,
+        .k-scheduler-table th {
+            height: 2em;
+            vertical-align: middle;
+        }
+
+        .k-scheduler-datecolumn-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .k-task {
+            display: flex;
+            align-items: center;
+            gap: .5em;
+
+            .k-scheduler-mark {
+                border-radius: 50%;
+                margin: 0;
+            }
+
+            .k-scheduler-task-text {
+                flex: 1 1 0%;
+            }
+        }
+
+        .k-scheduler-times,
+        .k-scheduler-agenda {
+
+            .k-scheduler-group-cell,
+            .k-scheduler-groupcolumn {
+                vertical-align: top;
+
+                .k-scheduler-group-text {
+                    writing-mode: vertical-lr;
+                    transform: rotate(180deg);
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .k-scrollbar-h tr + tr .k-scheduler-times {
+            border-bottom-width: 0;
+        }
+    }
+
+
+
+
+    // Common styles for the Adaptive Layout
+    .k-pane-wrapper { // stylelint-disable-line
+
+        .k-appbar {
+            padding: k-spacing(1);
+        }
+
+        .k-list-title,
+        .k-filter-help-text {
+            padding-block: $kendo-listgroup-item-padding-y;
+            padding-inline: $kendo-listgroup-item-padding-x;
+            display: block;
+        }
+
+        .k-listgroup-title {
+            padding-block: $kendo-listgroup-item-padding-y;
+            padding-inline: $kendo-listgroup-item-padding-x;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .k-listgroup {
+
+            .k-listgroup-item {
+                border-color: inherit;
+            }
+        }
+        .k-listgroup + .k-listgroup {
+            margin-top: k-spacing(4);
+        }
+
+        // Column menu
+        .k-column-menu {
+            padding: k-spacing(2);
+            display: flex;
+            flex-flow: column nowrap;
+            gap: k-spacing(2);
+
+            .k-filter-item .k-filterable * {
+                pointer-events: none;
+            }
+
+            .k-list-title,
+            .k-listgroup-title {
+                padding: 0;
+            }
+
+            .k-listgroup {
+                margin-inline: calc( #{k-spacing(2)} * -1 );
+            }
+        }
+
+        // Filter menu
+        .k-filter-menu {
+            padding: k-spacing(2);
+            display: flex;
+            flex-flow: column nowrap;
+            gap: k-spacing(2);
+
+            .k-list-title {
+                padding: 0;
+            }
+
+            .k-list-filter {
+                padding: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                gap: inherit;
+            }
+
+            .k-filter-tools {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: inherit;
+            }
+
+            .k-listgroup {
+                margin-inline: calc( #{k-spacing(2)} * -1 );
+            }
+        }
+
+        .k-popup-edit-form {
+
+            .k-recur-editor-wrap {
+                display: flex;
+            }
+
+            .k-mobiletimezoneeditor {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+                flex: 1 1 auto;
+            }
+        }
+
+        .k-multicheck-wrap.k-listgroup {
+            overflow-y: auto;
+        }
+
+        // Pager
+        .k-pager-wrap.k-pager-sm,
+        .k-pager.k-pager-sm {
+            justify-content: center;
+
+            .k-pager-refresh {
+                display: none;
+            }
+
+        }
+    }
+
+    // RTL
+    :is(.k-rtl .k-pane-wrapper, [dir="rtl"] .k-pane-wrapper, .k-pane-wrapper[dir="rtl"]) {
+        .k-scheduler-mobile {
+            .k-scheduler-toolbar {
+                > ul > li {
+                    border: 0;
+                }
+            }
+
+            .k-task .k-i-reload {
+                margin-left: .5em;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+@mixin kendo-adaptive--layout() {
+    @include kendo-adaptive--layout-base();
+}

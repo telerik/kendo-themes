@@ -1,0 +1,98 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-filter--layout-base() {
+
+    .k-filter {
+        box-sizing: border-box;
+        border-width: 0;
+        display: inline-block;
+        background-color: transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style-type: none;
+            }
+        }
+
+        .k-filter-container,
+        .k-filter-preview {
+            margin-block-end: $kendo-filter-bottom-margin;
+        }
+
+        .k-filter-lines,
+        .k-filter-item {
+            padding-inline-start: $kendo-filter-padding-x;
+        }
+
+        .k-filter-toolbar {
+            display: inline-flex;
+            position: relative;
+            padding-block: $kendo-filter-padding-y;
+            padding-inline: 0;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: $kendo-filter-padding-x;
+                height: $kendo-filter-line-size;
+                inset-block-start: 50%;
+                inset-inline-start: calc( #{$kendo-filter-padding-x} * -1 );
+            }
+
+            .k-toolbar {
+                border-style: solid;
+            }
+        }
+        .k-filter-operator .k-dropdown-list {
+            width: $kendo-filter-operator-dropdown-width;
+        }
+
+        .k-filter-item {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: $kendo-filter-line-size;
+                height: 100%;
+                inset-block-start: calc( #{$kendo-filter-padding-y} * -1 );
+                inset-inline-start: 0;
+            }
+        }
+
+        // The second selector targets the Angular rendering
+        .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
+        .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
+            content: "";
+            position: absolute;
+            width: $kendo-filter-line-size;
+            inset-block-start: calc( calc( #{$kendo-filter-padding-y} * -1 ) - #{$kendo-filter-line-size} );
+            inset-block-end: 50%;
+            inset-inline-start: calc( #{$kendo-filter-padding-x} * -1 );
+        }
+
+        // The forth and fifth selectors targets the Angular rendering
+        .k-filter-group-main::before,
+        .k-filter-group-main > .k-filter-toolbar::before,
+        .k-filter-group-main > .k-filter-toolbar::after,
+        .k-filter-group-main > * > .k-filter-toolbar::before,
+        .k-filter-group-main > * > .k-filter-toolbar::after,
+        .k-filter-lines .k-filter-item:last-child::before {
+            display: none;
+        }
+    }
+
+}
+
+
+@mixin kendo-filter--layout() {
+    @include kendo-filter--layout-base();
+}

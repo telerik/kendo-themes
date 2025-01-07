@@ -1,0 +1,28 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-panel--layout--base() {
+        // Panels
+        .k-block,
+        .k-panel {
+            @include border-radius( $kendo-panel-border-radius );
+            padding: 0;
+            border-width: $kendo-panel-border-width;
+            border-style: $kendo-panel-border-style;
+            box-sizing: border-box;
+
+            > .k-header {
+                @include border-top-radius( $kendo-panel-border-radius );
+                padding-inline: $kendo-panel-header-padding-inline;
+                padding-block: $kendo-panel-header-padding-block;
+            }
+            > .k-content {
+                padding-inline: $kendo-panel-content-padding-inline;
+                padding-block: $kendo-panel-content-padding-block;
+            }
+        }
+}
+
+@mixin kendo-panel--layout() {
+    @include kendo-panel--layout--base();
+}

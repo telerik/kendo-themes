@@ -1,0 +1,18 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-treelist--theme-base() {
+
+    // Theme
+    .k-treelist {
+        tr.k-footer,
+        tr.k-footer-template {
+            background-color: $kendo-treelist-footer-row-bg;
+        }
+    }
+
+}
+
+
+@mixin kendo-treelist--theme() {
+    @include kendo-treelist--theme-base();
+}

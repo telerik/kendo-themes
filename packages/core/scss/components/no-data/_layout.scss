@@ -1,0 +1,26 @@
+@use "./variables.scss" as *;
+
+@mixin kendo-no-data--layout-base() {
+
+        .k-no-data {
+            min-height: $kendo-no-data-min-height;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: lighter;
+            text-align: center;
+            white-space: normal;
+        }
+
+
+        // Alias
+        .k-nodata {
+            @extend .k-no-data !optional;
+        }
+
+
+}
+
+@mixin kendo-no-data--layout() {
+    @include kendo-no-data--layout-base();
+}

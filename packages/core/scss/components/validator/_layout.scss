@@ -1,0 +1,30 @@
+@use "../tooltip/_variables.scss" as *;
+
+@mixin kendo-validator--layout-base() {
+
+    // Validator
+    .k-validator {}
+
+
+    // Validator tooltip
+    .k-validator-tooltip {
+        margin-top: calc( #{$kendo-tooltip-callout-size} + #{$kendo-tooltip-border-width} );
+        width: auto;
+        white-space: normal;
+        display: flex;
+        align-items: center;
+        // NOTE: This works around popup / tooltip stacking issue
+        z-index: 9999;
+
+        // .k-callout-n { inset-inline-start: 16px; }
+    }
+    .k-grid .k-validator-tooltip {
+        max-width: 300px;
+    }
+
+}
+
+
+@mixin kendo-validator--layout() {
+    @include kendo-validator--layout-base();
+}

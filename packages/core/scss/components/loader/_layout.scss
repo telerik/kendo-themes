@@ -1,0 +1,587 @@
+@use "./_variables.scss" as *;
+@use "../overlay/_variables.scss" as *;
+
+@mixin kendo-loader--layout-base() {
+
+    .k-loader {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+
+        // Prevents the inline elements from being displaced.
+        // A good example is the 'pulsing' loader inside a button.
+        line-height: 0;
+    }
+
+    .k-loader-canvas {
+        display: flex;
+        position: relative;
+    }
+
+    // Loader segment
+    .k-loader-segment {
+        border-radius: $kendo-loader-segment-border-radius;
+        background-color: currentColor;
+        position: absolute;
+    }
+
+    // Loader sizes
+    .k-loader-sm {
+        padding: $kendo-loader-sm-padding;
+
+        .k-loader-segment {
+            width: $kendo-loader-sm-segment-size;
+            height: $kendo-loader-sm-segment-size;
+        }
+    }
+    .k-loader-md {
+        padding: $kendo-loader-md-padding;
+
+        .k-loader-segment {
+            width: $kendo-loader-md-segment-size;
+            height: $kendo-loader-md-segment-size;
+        }
+    }
+    .k-loader-lg {
+        padding: $kendo-loader-lg-padding;
+
+        .k-loader-segment {
+            width: $kendo-loader-lg-segment-size;
+            height: $kendo-loader-lg-segment-size;
+        }
+    }
+
+
+
+
+    // Loader pulsing 2
+    @keyframes pulsing-2-segment {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.5); }
+        100% { transform: scale(1); }
+    }
+
+
+    // Component
+    .k-loader-pulsing-2 {
+
+        .k-loader-canvas {
+            align-items: center;
+        }
+
+        .k-loader-segment:nth-child(1) {
+            left: 0;
+            transform: scale( 1.5 );
+            transform-origin: 0 50%;
+            animation: pulsing-2-segment 1s ease infinite;
+            animation-delay: -.5s;
+        }
+        .k-loader-segment:nth-child(2) {
+            right: 0;
+            transform-origin: 100% 50%;
+            animation: pulsing-2-segment 1s ease infinite;
+        }
+
+        &.k-loader-sm {
+            .k-loader-canvas {
+                width: calc( #{$kendo-loader-sm-segment-size} * 3 );
+                height: calc( #{$kendo-loader-sm-segment-size} * 1.5 );
+            }
+        }
+
+        &.k-loader-md {
+            .k-loader-canvas {
+                width: calc( #{$kendo-loader-md-segment-size} * 3 );
+                height: calc( #{$kendo-loader-md-segment-size} * 1.5 );
+            }
+        }
+
+        &.k-loader-lg {
+            .k-loader-canvas {
+                width: calc( #{$kendo-loader-lg-segment-size} * 3 );
+                height: calc( #{$kendo-loader-lg-segment-size} * 1.5 );
+            }
+        }
+    }
+
+
+
+
+    // Loader spinner 3
+    @keyframes spinner-3-segment {
+        0% {
+            top: 0;
+            left: 50%;
+        }
+
+        33.3333% {
+            top: 100%;
+            left: 0;
+        }
+
+        66.6666% {
+            top: 100%;
+            left: 100%;
+        }
+
+        100% {
+            top: 0;
+            left: 50%;
+        }
+    }
+
+
+    // Component
+    .k-loader-spinner-3 {
+
+        // Note: Until we can provide a css variables solution, or something better:
+        // * the dot center is on the exact point of angle
+        // * offset dots by artifically reduce dimentions by 1 dot size
+        // * compensate by setting margin on all sides half a dot size
+
+        .k-loader-segment {
+            transform: translate( -50%, -50% );
+        }
+        .k-loader-segment:nth-child(1) {
+            top: 0;
+            left: 50%;
+            animation: spinner-3-segment 2s ease infinite;
+        }
+        .k-loader-segment:nth-child(2) {
+            top: 100%;
+            left: 0;
+            animation: spinner-3-segment 2s ease infinite;
+            animation-delay: calc( -2s / 3 );
+        }
+        .k-loader-segment:nth-child(3) {
+            top: 100%;
+            left: 100%;
+            animation: spinner-3-segment 2s ease infinite;
+            animation-delay: calc( -4s / 3 );
+        }
+
+
+        &.k-loader-sm {
+            .k-loader-canvas {
+                margin: calc( #{$kendo-loader-sm-segment-size} / 2 );
+                width: calc( #{$kendo-loader-sm-spinner-3-width} - #{$kendo-loader-sm-segment-size} );
+                height: calc( #{$kendo-loader-sm-spinner-3-height} - #{$kendo-loader-sm-segment-size} );
+            }
+        }
+
+        &.k-loader-md {
+            .k-loader-canvas {
+                margin: calc( #{ $kendo-loader-md-segment-size} / 2 );
+                width: calc( #{$kendo-loader-md-spinner-3-width} - #{$kendo-loader-md-segment-size} );
+                height: calc( #{$kendo-loader-md-spinner-3-height} - #{$kendo-loader-md-segment-size} );
+            }
+        }
+
+        &.k-loader-lg {
+            .k-loader-canvas {
+                margin: calc( #{$kendo-loader-lg-segment-size} / 2 );
+                width: calc( #{$kendo-loader-lg-spinner-3-width} - #{$kendo-loader-lg-segment-size} );
+                height: calc( #{$kendo-loader-lg-spinner-3-height} - #{$kendo-loader-lg-segment-size} );
+            }
+        }
+    }
+
+
+
+
+    // Loader spinner 4
+    @keyframes spinner-4-segment-1 {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        33.3% {
+            top: 0;
+            left: 0;
+            transform: translateX(0) translateY(0);
+        }
+
+        66.6% {
+            top: 0;
+            left: 0;
+            transform: translateX(0) translateY(0);
+        }
+
+        100% {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    @keyframes spinner-4-segment-2 {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        33.3% {
+            top: 0;
+            left: 100%;
+            transform: translateX(-100%) translateY(0);
+        }
+
+        66.6% {
+            top: 0;
+            left: 100%;
+            transform: translateX(-100%) translateY(0);
+        }
+
+        100% {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    @keyframes spinner-4-segment-3 {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        33.3% {
+            top: 100%;
+            left: 100%;
+            transform: translateX(-100%) translateY(-100%);
+        }
+
+        66.6% {
+            top: 100%;
+            left: 100%;
+            transform: translateX(-100%) translateY(-100%);
+        }
+
+        100% {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    @keyframes spinner-4-segment-4 {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        33.3% {
+            top: 100%;
+            left: 0;
+            transform: translateX(0) translateY(-100%);
+        }
+
+        66.6% {
+            top: 100%;
+            left: 0;
+            transform: translateX(0) translateY(-100%);
+        }
+
+        100% {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    @keyframes spinner-4 {
+        0% {
+            transform: rotate(0);
+        }
+
+        33.3% {
+            transform: rotate(0);
+        }
+
+        66.6% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+
+    .k-loader-spinner-4 {
+        .k-loader-canvas {
+            animation: spinner-4 1.833s ease infinite;
+        }
+
+        .k-loader-segment {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+            &:nth-child(1) {
+                animation: spinner-4-segment-1 1.833s ease infinite;
+            }
+
+            &:nth-child(2) {
+                animation: spinner-4-segment-2 1.833s ease infinite;
+            }
+
+            &:nth-child(3) {
+                animation: spinner-4-segment-3 1.833s ease infinite;
+            }
+
+            &:nth-child(4) {
+                animation: spinner-4-segment-4 1.833s ease infinite;
+            }
+        }
+
+        &.k-loader-sm {
+            .k-loader-canvas {
+                width: $kendo-loader-sm-spinner-4-width;
+                height: $kendo-loader-sm-spinner-4-height;
+            }
+        }
+
+        &.k-loader-md {
+            .k-loader-canvas {
+                width: $kendo-loader-md-spinner-4-width;
+                height: $kendo-loader-md-spinner-4-height;
+            }
+        }
+
+        &.k-loader-lg {
+            .k-loader-canvas {
+                width: $kendo-loader-lg-spinner-4-width;
+                height: $kendo-loader-lg-spinner-4-height;
+            }
+        }
+    }
+
+
+
+
+    // Loader container
+    .k-loader-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20001;
+
+        .k-loader {
+            padding: 0;
+        }
+    }
+
+    .k-loader-container,
+    .k-loader-container-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    // TODO: use k-overlay as a base class in rendering
+    .k-loader-container-overlay {
+        opacity: $kendo-overlay-opacity;
+    }
+
+    .k-loader-container-inner {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    .k-loader-container-panel {
+        border-width: $kendo-loader-container-panel-border-width;
+        border-style: $kendo-loader-container-panel-border-style;
+        border-radius: $kendo-loader-container-panel-border-radius;
+    }
+
+    // Loader Container Sizes
+    .k-loader-container-sm {
+        .k-loader-container-inner {
+            padding: $kendo-loader-sm-container-padding;
+            gap: $kendo-loader-sm-container-gap;
+        }
+
+        .k-loader-container-label {
+            font-size: $kendo-loader-sm-container-font-size;
+        }
+    }
+    .k-loader-container-md {
+        .k-loader-container-inner {
+            padding: $kendo-loader-md-container-padding;
+            gap: $kendo-loader-md-container-gap;
+        }
+
+        .k-loader-container-label {
+            font-size: $kendo-loader-md-container-font-size;
+        }
+    }
+    .k-loader-container-lg {
+        .k-loader-container-inner {
+            padding: $kendo-loader-lg-container-padding;
+            gap: $kendo-loader-lg-container-gap;
+        }
+
+        .k-loader-container-label {
+            font-size: $kendo-loader-lg-container-font-size;
+        }
+    }
+
+    // Loader Position
+    .k-loader-top {
+        .k-loader-container-inner {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    .k-loader-end {
+        .k-loader-container-label {
+            order: -1;
+        }
+    }
+
+}
+
+// Legacy implementation of the loading icon inside inputs and pickers
+// Replace with loader component
+@mixin kendo-loading--layout-base() {
+
+    // Loading mask
+    .k-loading-mask,
+    .k-loading-image,
+    .k-loading-color {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        *,
+        *::before,
+        *::after,
+        &::before,
+        &::after {
+            box-sizing: border-box;
+        }
+    }
+
+    .k-loading-mask {
+        z-index: $kendo-zindex-loading;
+
+        &.k-opaque {
+            .k-loading-color {
+                opacity: 1;
+            }
+        }
+    }
+    .k-loading-text {
+        text-indent: -4000px;
+        text-align: center;
+        position: absolute;
+        color: $kendo-loading-text;
+    }
+    .k-loading-image {
+        z-index: 2;
+        color: $kendo-loading-text;
+    }
+    .k-loading-color {
+        background-color: $kendo-loading-bg;
+        opacity: $kendo-loading-opacity;
+    }
+
+    // Loading indicator
+    .k-i-loading {
+        width: 1em;
+        height: 1em;
+        line-height: 1;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        position: relative;
+        background-color: transparent;
+        box-sizing: border-box;
+        color: $kendo-loading-text;
+
+        &::before,
+        &::after {
+            box-sizing: border-box;
+        }
+    }
+
+    .k-i-loading::before,
+    .k-i-loading::after,
+    .k-loading-image::before,
+    .k-loading-image::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: inline-block;
+        content: "";
+        box-sizing: inherit;
+        border-radius: 50%;
+        border-width: .05em;
+        border-style: solid;
+        border-color: currentColor;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        background-color: transparent;
+    }
+
+    .k-icon.k-i-loading::before,
+    .k-icon.k-i-loading::after {
+        content: "";
+    }
+
+    .k-i-loading::before,
+    .k-loading-image::before {
+        margin-top: -.5em;
+        margin-left: -.5em;
+        width: 1em;
+        height: 1em;
+        animation: k-loading-animation .7s linear infinite;
+    }
+
+    .k-i-loading::after,
+    .k-loading-image::after {
+        margin-top: -.25em;
+        margin-left: -.25em;
+        width: .5em;
+        height: .5em;
+        animation: k-loading-animation reverse 1.4s linear infinite;
+    }
+
+    .k-loading-image::before,
+    .k-loading-image::after {
+        content: "";
+        // See https://github.com/telerik/kendo-themes/issues/1925
+        border-width: 1px; // TODO: Remove once we drop IE support
+        border-width: clamp( .015em, 1px, 1px );
+        font-size: 4em;
+    }
+
+    // Loading animation
+    @keyframes k-loading-animation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+}
+
+@mixin kendo-loader--layout() {
+    @include kendo-loader--layout-base();
+    @include kendo-loading--layout-base();
+}

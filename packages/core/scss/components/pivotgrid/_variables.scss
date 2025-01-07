@@ -1,0 +1,259 @@
+// Pivot grid
+/// The spacer of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-spacer: null !default;
+/// The horizontal padding of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-padding-x: null !default;
+/// The vertical of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-padding-y: null !default;
+/// The font family of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-font-family: null !default;
+/// The font size of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-font-size: null !default;
+/// The line height of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-line-height: null !default;
+/// The border width of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-border-width: null !default;
+/// The icon spacing of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-icon-spacing: null !default;
+
+/// The default width of the PivotGrid row header.
+/// @group pivotgrid
+$kendo-pivotgrid-row-header-width: null !default;
+/// The default height of the PivotGrid column header.
+/// @group pivotgrid
+$kendo-pivotgrid-column-header-height: null !default;
+
+/// The horizontal padding of the PivotGrid cell.
+/// @group pivotgrid
+$kendo-pivotgrid-cell-padding-x: null !default;
+/// The vertical padding of the PivotGrid cell.
+/// @group pivotgrid
+$kendo-pivotgrid-cell-padding-y: null !default;
+/// The border width of the PivotGrid cell.
+/// @group pivotgrid
+$kendo-pivotgrid-cell-border-width: null !default;
+
+/// The background color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-bg: null !default;
+/// The text color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-text: null !default;
+/// The border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-border: null !default;
+
+/// The alt border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-alt-border: null !default;
+
+/// The background color of the PivotGrid header.
+/// @group pivotgrid
+$kendo-pivotgrid-headers-bg: null !default;
+/// The text color of the PivotGrid header.
+/// @group pivotgrid
+$kendo-pivotgrid-headers-text: null !default;
+/// The border color of the PivotGrid header.
+/// @group pivotgrid
+$kendo-pivotgrid-headers-border: null !default;
+
+/// The background color of the PivotGrid total cells.
+/// @group pivotgrid
+$kendo-pivotgrid-total-bg: null !default;
+/// The text color of the PivotGrid total cells.
+/// @group pivotgrid
+$kendo-pivotgrid-total-text: null !default;
+/// The border color of the PivotGrid total cells.
+/// @group pivotgrid
+$kendo-pivotgrid-total-border: null !default;
+
+/// The hover background color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-hover-bg: null !default;
+/// The hover text color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-hover-text: null !default;
+/// The hover border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-hover-border: null !default;
+
+/// The selected background color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-selected-bg: null !default;
+/// The selected text color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-selected-text: null !default;
+/// The selected border color of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-selected-border: null !default;
+
+/// The focus shadow of the PivotGrid.
+/// @group pivotgrid
+$kendo-pivotgrid-focus-shadow: null !default;
+
+
+// Pivotgrid Configurator
+/// The horizontal padding of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-padding-x: null !default;
+/// The vertical padding of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-padding-y: null !default;
+/// The border width of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-border-width: null !default;
+
+/// The horizontal padding of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-padding-x: null !default;
+/// The vertical padding of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-padding-y: null !default;
+/// The font size of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-font-size: null !default;
+/// The font weight of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-font-weight: null !default;
+
+/// The horizontal padding of the PivotGrid configurator content.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-content-padding-x: null !default;
+/// The vertical padding of the PivotGrid configurator content.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-content-padding-y: null !default;
+
+/// The horizontal margin of the PivotGrid configurator fields.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-fields-margin-x: null !default;
+/// The vertical margin of the PivotGrid configurator fields.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-fields-margin-y: null !default;
+
+/// The default width of the PivotGrid vertical configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-vertical-width: null !default;
+/// The default height of the PivotGrid horizontal configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-horizontal-height: null !default;
+
+/// The background color of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-bg: null !default;
+/// The text color of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-text: null !default;
+/// The border color of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-border: null !default;
+
+/// The background color of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-bg: null !default;
+/// The text color of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-text: null !default;
+/// The border color of the PivotGrid configurator header.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-header-border: null !default;
+
+/// The shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-shadow: null !default;
+/// The end shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-end-shadow: null !default; // -3px 0px 6px rgba(0, 0, 0, .16)
+/// The start shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-start-shadow: null !default; // 3px 0px 6px rgba(0, 0, 0, .16)
+/// The top shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-top-shadow: null !default; // 0px -3px 6px rgba(0, 0, 0, .16)
+/// The bottom shadow of the PivotGrid configurator.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-bottom-shadow: null !default; // 0px 3px 6px rgba(0, 0, 0, .16)
+
+/// The horizontal padding of the PivotGrid configurator button.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-button-padding-x: null !default;
+/// The vertical padding of the PivotGrid configurator button.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-button-padding-y: null !default;
+/// The border width of the PivotGrid configurator button.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-button-border-width: null !default;
+/// The size of the PivotGrid configurator button.
+/// @group pivotgrid
+$kendo-pivotgrid-configurator-button-size: null !default;
+
+
+// Calculated fields
+/// The horizontal padding of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-padding-x: null !default;
+/// The vertical padding of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-padding-y: null !default;
+/// The border width of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-border-width: null !default;
+/// The border radius of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-border-radius: null !default;
+/// The spacing of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-gap: null !default;
+
+/// The background color of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-bg: null !default;
+/// The text color of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-text: null !default;
+/// The border color of the PivotGrid calculated field.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-border: null !default;
+
+/// The background color of the PivotGrid calculated field header.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-header-bg: null !default;
+/// The text color of the PivotGrid calculated field header.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-header-text: null !default;
+/// The border color of the PivotGrid calculated field header.
+/// @group pivotgrid
+$kendo-pivotgrid-calculated-field-header-border: null !default;
+
+
+/// The horizontal padding of the PivotGrid treeview.
+/// @group pivotgrid
+$kendo-pivotgrid-treeview-padding-x: null !default;
+/// The vertical padding of the PivotGrid treeview.
+/// @group pivotgrid
+$kendo-pivotgrid-treeview-padding-y: null !default;
+
+// Legacy variables
+$kendo-pivotgrid-alt-bg: null !default;
+$kendo-pivotgrid-alt-text: null !default;
+$kendo-pivotgrid-chrome-border: null !default;
+
+$kendo-pivotgrid-container-bg: null !default;
+$kendo-pivotgrid-row-headers-bg: null !default;
+
+$kendo-pivotgrid-button-bg: null !default;
+$kendo-pivotgrid-button-text: null !default;
+$kendo-pivotgrid-button-hover-bg: null !default;
+$kendo-pivotgrid-button-hover-text: null !default;
+$kendo-pivotgrid-button-active-bg: null !default;
+$kendo-pivotgrid-button-active-text: null !default;
+
+$kendo-pivotgrid-remove-bg: null !default;
+$kendo-pivotgrid-remove-text: null !default;

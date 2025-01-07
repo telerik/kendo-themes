@@ -1,0 +1,52 @@
+@use "../../spacing/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../input/_variables.scss" as *;
+
+@mixin kendo-date-range-picker--layout-base() {
+
+    // Daterange picker
+    .k-daterange-picker {
+        width: $kendo-input-default-width;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        gap: k-spacing(2);
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-dateinput {
+            width: $kendo-daterange-picker-input-width;
+        }
+    }
+
+
+    // Angular specific
+    kendo-daterange {
+        // @extend .k-daterangepicker !optional;
+    }
+
+
+    // React specific
+    .k-daterangepicker-wrap {
+        display: inherit;
+        flex-flow: inherit;
+        align-items: inherit;
+        gap: inherit;
+    }
+
+
+    // Alias
+    .k-daterangepicker {
+        @extend .k-daterange-picker !optional;
+    }
+
+}
+
+
+@mixin kendo-date-range-picker--layout() {
+    @include kendo-date-range-picker--layout-base();
+}

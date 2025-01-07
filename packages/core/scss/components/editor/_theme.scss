@@ -1,0 +1,109 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-editor--theme-base() {
+
+    .k-editor {
+        @include fill(
+            $kendo-component-text,
+            $kendo-component-bg,
+            $kendo-component-border
+        );
+
+        &.k-readonly {
+            .k-editor-content.k-focus {
+                outline-color: $kendo-body-text;
+            }
+        }
+    }
+
+    // Inline Editor
+    .k-editor-inline {
+
+        .k-table {
+            &,
+            & td {
+                border-color: #cccccc;
+            }
+        }
+
+        .k-element-resize-handle-wrapper {
+            background-color: #ffffff;
+            border-color: #000000;
+        }
+
+        .k-column-resize-handle-wrapper {
+            .k-column-resize-handle {
+                .k-column-resize-marker {
+                    background-color: #00b0ff;
+                }
+            }
+        }
+
+        .k-row-resize-handle-wrapper {
+            .k-row-resize-marker {
+                background-color: #00b0ff;
+            }
+        }
+
+        // Hover & Active state
+        &:hover,
+        &.k-hover,
+        &.k-active {
+            border-color: $kendo-component-border;
+        }
+    }
+
+    // Resizable images
+    .k-editor-resize-handle {
+        background-color: $kendo-editor-resize-handle-bg;
+        border-color: $kendo-editor-resize-handle-border;
+    }
+    .ProseMirror-selectednode { // stylelint-disable-line
+        outline-color: $kendo-editor-selectednode-outline-color;
+    }
+
+
+    // Insert table
+    .k-ct-popup {
+        .k-selected {
+            @include fill( $kendo-selected-text, $kendo-selected-bg, $kendo-selected-border, none );
+        }
+    }
+
+    // Content
+    .k-editor-content {
+
+        // Selection
+        .k-text-selected,
+        &::selection {
+            @include fill (
+                $color: $kendo-editor-selected-text,
+                $bg: $kendo-editor-selected-bg
+            );
+        }
+
+        .k-text-highlighted {
+            @include fill (
+                $bg: $kendo-editor-highlighted-bg
+            );
+        }
+
+        // Table styles
+        td,
+        th {
+            border-color: #dddddd;
+        }
+
+        .selectedCell::after { // stylelint-disable-line
+            background-color: rgba(200, 200, 255, .4);
+        }
+    }
+
+}
+
+
+@mixin kendo-editor--theme() {
+    @include kendo-editor--theme-base();
+}

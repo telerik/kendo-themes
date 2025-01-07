@@ -1,0 +1,49 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-expander--theme-base() {
+
+    .k-expander {
+        @include fill(
+            $kendo-expander-text,
+            $kendo-expander-bg,
+            $kendo-expander-border
+        );
+
+        &.k-focus {
+            @include focus-indicator( $kendo-expander-focus-shadow, true );
+        }
+    }
+
+    .k-expander-header {
+        @include fill(
+            $kendo-expander-header-text,
+            $kendo-expander-header-bg,
+            $kendo-expander-header-border
+        );
+        outline: none;
+
+        &:hover,
+        &.k-hover {
+            background-color: $kendo-expander-header-hover-bg;
+        }
+
+        &.k-focus {
+            @include focus-indicator( $kendo-expander-header-focus-shadow, true );
+            background-color: $kendo-expander-header-focus-bg;
+        }
+    }
+
+    .k-expander-title {
+        color: $kendo-expander-title-text;
+    }
+
+    .k-expander-sub-title {
+        color: $kendo-expander-header-sub-title-text;
+    }
+}
+
+
+@mixin kendo-expander--theme() {
+    @include kendo-expander--theme-base();
+}

@@ -1,0 +1,17 @@
+@mixin kendo-time-picker--layout-base() {
+
+    // Time picker
+    .k-time-picker {}
+
+
+    // Legacy aliases
+    .k-timepicker {
+        @extend .k-time-picker !optional;
+    }
+
+}
+
+
+@mixin kendo-time-picker--layout() {
+    @include kendo-time-picker--layout-base();
+}

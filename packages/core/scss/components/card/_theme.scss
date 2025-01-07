@@ -1,0 +1,111 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-card--theme-base() {
+
+    // Card
+    .k-card {
+        @include fill(
+            $kendo-card-text,
+            $kendo-card-bg,
+            $kendo-card-border
+        );
+        @include box-shadow( $kendo-card-shadow );
+
+        .k-card-inner {
+            background-color: inherit;
+            border-color: inherit;
+        }
+
+        &:focus,
+        &.k-focus {
+            @include fill(
+                $kendo-card-focus-text,
+                $kendo-card-focus-bg,
+                $kendo-card-focus-border
+            );
+            @include focus-indicator( $kendo-card-focus-shadow );
+        }
+
+        &.k-selected {
+            @include box-shadow( $kendo-card-focus-shadow );
+        }
+    }
+
+
+    // Card actions
+    .k-card-actions {
+        border-color: $kendo-card-border;
+    }
+
+
+    // Header
+    .k-card-header {
+        @include fill( $kendo-card-header-text, $kendo-card-header-bg, $kendo-card-header-border );
+    }
+
+
+    // Footer
+    .k-card-footer {
+        @include fill( $kendo-card-footer-text, $kendo-card-footer-bg, $kendo-card-footer-border );
+    }
+
+
+    // Separator
+    .k-card-separator,
+    .k-card .k-separator {
+        border-color: $kendo-card-border;
+    }
+
+
+    // TODO: refactor
+    .k-card-subtitle {
+        color: $kendo-card-subtitle-text;
+    }
+
+
+    // Card theme colors
+    @each $name, $color in $kendo-theme-colors {
+        .k-card-#{$name} {
+            background-color: if($kendo-enable-color-system, k-color( #{$name}-subtle ), k-color-tint($color, 10));
+            color: if($kendo-enable-color-system, k-color( #{$name}-on-subtle ), k-color-shade($color, 6));
+            border-color: if($kendo-enable-color-system, k-color( #{$name}-emphasis ), k-color-tint($color, 9));
+
+            .k-card-subtitle {
+                color: inherit;
+            }
+        }
+    }
+
+
+    .k-card-wrap {
+        &:focus,
+        &.k-focus,
+        &.k-selected {
+            > .k-card {
+                @include focus-indicator( $kendo-card-focus-shadow );
+            }
+        }
+    }
+
+
+    // Card callout
+    .k-card-callout {
+        @include fill(
+            $bg: inherit,
+            $border: inherit
+        );
+
+        @include box-shadow( inherit );
+    }
+
+}
+
+
+@mixin kendo-card--theme() {
+    @include kendo-card--theme-base();
+}

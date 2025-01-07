@@ -1,0 +1,141 @@
+@use "sass:map";
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-breadcrumb--layout-base() {
+
+    // Breadcrumb
+    .k-breadcrumb {
+        margin-block: $kendo-breadcrumb-margin-y;
+        margin-inline: $kendo-breadcrumb-margin-x;
+        padding-block: $kendo-breadcrumb-padding-y;
+        padding-inline: $kendo-breadcrumb-padding-x;
+        border-width: $kendo-breadcrumb-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-breadcrumb-font-family;
+        display: flex;
+        flex-direction: row;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+
+    // Breadcrumb container
+    .k-breadcrumb-container,
+    .k-breadcrumb-root-item-container {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+    }
+
+    .k-breadcrumb-root-item-container {
+        align-items: flex-start;
+        flex-shrink: 0;
+    }
+
+
+    // Breadcrumb item
+    .k-breadcrumb-item {
+        vertical-align: middle;
+        display: inline-flex;
+        flex-direction: row;
+        flex: none;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+    // Breadcrumb root item
+    .k-breadcrumb-root-item {
+        flex-shrink: 0;
+    }
+
+
+    // Breadcrumb links
+    .k-breadcrumb-link,
+    .k-breadcrumb-root-link {
+        @include border-radius( $kendo-breadcrumb-link-border-radius );
+        color: $kendo-breadcrumb-link-initial-text;
+        text-decoration: none;
+        white-space: nowrap;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        align-self: stretch;
+        overflow: hidden;
+        transition: $kendo-transition;
+    }
+
+    .k-breadcrumb-link > .k-image,
+    .k-breadcrumb-icontext-link .k-icon {
+        margin-inline-end: $kendo-breadcrumb-link-icon-spacing;
+    }
+
+
+    // Breadcrumb delimiter
+    .k-breadcrumb-delimiter,
+    .k-breadcrumb-delimiter-icon {
+        color: inherit;
+        opacity: $kendo-disabled-opacity;
+    }
+
+
+    // Editing
+    .k-breadcrumb-input-container {
+        width: 100%;
+
+        .k-breadcrumb-input-container {
+            border-color: transparent;
+        }
+    }
+
+
+    // Sizes
+    @each $size, $size-props in $kendo-breadcrumb-sizes {
+        $_link-padding-x: map.get( $size-props, link-padding-x );
+        $_link-padding-y: map.get( $size-props, link-padding-y );
+        $_icon-link-padding-x: map.get( $size-props, icon-link-padding-x );
+        $_icon-link-padding-y: map.get( $size-props, icon-link-padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+
+        .k-breadcrumb-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+
+
+            .k-breadcrumb-link,
+            .k-breadcrumb-root-link {
+                padding-block: $_link-padding-y;
+                padding-inline: $_link-padding-x;
+            }
+
+            .k-breadcrumb-icon-link {
+                padding-block: $_icon-link-padding-y;
+                padding-inline: $_icon-link-padding-x;
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-breadcrumb--layout() {
+    @include kendo-breadcrumb--layout-base();
+}

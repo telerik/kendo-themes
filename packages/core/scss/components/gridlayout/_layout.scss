@@ -1,0 +1,10 @@
+@mixin kendo-grid-layout--layout-base() {
+
+    // GridLayout
+    .k-grid-layout {}
+
+}
+
+@mixin kendo-grid-layout--layout() {
+    @include kendo-grid-layout--layout-base();
+}

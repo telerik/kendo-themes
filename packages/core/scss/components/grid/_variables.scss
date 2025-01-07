@@ -1,0 +1,281 @@
+// Grid
+$kendo-grid-border-width: null !default;
+$kendo-grid-font-family: null !default;
+$kendo-grid-font-size: null !default;
+$kendo-grid-line-height: null !default;
+
+/// The horizontal padding of the Grid.
+/// @group grid
+$kendo-grid-padding-x: null !default;
+/// The vertical padding of the Grid.
+/// @group grid
+$kendo-grid-padding-y: null !default;
+
+/// The horizontal padding of the Grid header.
+/// @group grid
+$kendo-grid-header-padding-x: null !default;
+/// The vertical padding of the Grid header.
+/// @group grid
+$kendo-grid-header-padding-y: null !default;
+
+/// The horizontal padding of the Grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-padding-x: null !default;
+/// The vertical padding of the Grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-padding-y: null !default;
+
+/// The horizontal padding of the Grid cell.
+/// @group grid
+$kendo-grid-cell-padding-x: null !default;
+/// The vertical padding of the Grid cell.
+/// @group grid
+$kendo-grid-cell-padding-y: null !default;
+
+/// The horizontal padding of the Grid filter cell.
+/// @group grid
+$kendo-grid-filter-cell-padding-x: null !default;
+/// The vertical padding of the Grid filter cell.
+/// @group grid
+$kendo-grid-filter-cell-padding-y: null !default;
+
+/// The horizontal padding of the Grid edit cell.
+/// @group grid
+$kendo-grid-edit-cell-padding-x: null !default;
+/// The vertical padding of the Grid filter cell.
+/// @group grid
+$kendo-grid-edit-cell-padding-y: null !default;
+
+$kendo-grid-group-drop-hint-size: null !default;
+$kendo-grid-group-drop-hint-line-size: null !default;
+$kendo-grid-group-drop-hint-height: null !default;
+$kendo-grid-group-drop-hint-top: null !default;
+
+$kendo-grid-sm-padding-x: null !default;
+$kendo-grid-sm-padding-y: null !default;
+$kendo-grid-sm-header-padding-x: null !default;
+$kendo-grid-sm-header-padding-y: null !default;
+$kendo-grid-sm-grouping-header-padding-x: null !default;
+$kendo-grid-sm-grouping-header-padding-y: null !default;
+$kendo-grid-sm-cell-padding-x: null !default;
+$kendo-grid-sm-cell-padding-y: null !default;
+$kendo-grid-sm-filter-cell-padding-x: null !default;
+$kendo-grid-sm-filter-cell-padding-y: null !default;
+$kendo-grid-sm-edit-cell-padding-x: null !default;
+$kendo-grid-sm-edit-cell-padding-y: null !default;
+$kendo-grid-sm-group-dropclue-height: null !default;
+$kendo-grid-sm-selection-aggregates-padding-x: null !default;
+$kendo-grid-sm-selection-aggregates-padding-y: null !default;
+
+$kendo-grid-md-padding-x: null !default;
+$kendo-grid-md-padding-y: null !default;
+$kendo-grid-md-header-padding-x: null !default;
+$kendo-grid-md-header-padding-y: null !default;
+$kendo-grid-md-grouping-header-padding-x: null !default;
+$kendo-grid-md-grouping-header-padding-y: null !default;
+$kendo-grid-md-cell-padding-x: null !default;
+$kendo-grid-md-cell-padding-y: null !default;
+$kendo-grid-md-filter-cell-padding-x: null !default;
+$kendo-grid-md-filter-cell-padding-y: null !default;
+$kendo-grid-md-edit-cell-padding-x: null !default;
+$kendo-grid-md-edit-cell-padding-y: null !default;
+$kendo-grid-md-group-dropclue-height: null !default;
+$kendo-grid-md-selection-aggregates-padding-x: null !default;
+$kendo-grid-md-selection-aggregates-padding-y: null !default;
+
+
+// Kendo Grid sizes
+$kendo-grid-sizes: null !default;
+
+$kendo-grid-header-font-size: null !default;
+$kendo-grid-header-first-border: null !default;
+$kendo-grid-header-menu-icon-spacing: null !default;
+
+$kendo-grid-filterable-icon-spacing: null !default;
+
+$kendo-grid-toolbar-border-width: null !default;
+
+$kendo-grid-cell-horizontal-border-width: null !default;
+$kendo-grid-cell-vertical-border-width: null !default;
+
+/// The background color of the Grid.
+/// @group grid
+$kendo-grid-bg: null !default;
+/// The text color of the Grid.
+/// @group grid
+$kendo-grid-text: null !default;
+/// The border color of the Grid.
+/// @group grid
+$kendo-grid-border: null !default;
+
+/// The background color of Grid header.
+/// @group grid
+$kendo-grid-header-bg: null !default;
+/// The text color of Grid header.
+/// @group grid
+$kendo-grid-header-text: null !default;
+/// The border color of Grid header.
+/// @group grid
+$kendo-grid-header-border: null !default;
+/// The background gradient of Grid header.
+/// @group grid
+$kendo-grid-header-gradient: null !default;
+
+/// The background color of Grid footer.
+/// @group grid
+$kendo-grid-footer-bg: null !default;
+/// The text color of Grid footer.
+/// @group grid
+$kendo-grid-footer-text: null !default;
+/// The border color of Grid footer.
+/// @group grid
+$kendo-grid-footer-border: null !default;
+
+/// The background color of the Grid alternating rows.
+/// @group grid
+$kendo-grid-alt-bg: null !default;
+/// The text color of the Grid alternating rows.
+/// @group grid
+$kendo-grid-alt-text: null !default;
+/// The border color of the Grid alternating rows.
+/// @group grid
+$kendo-grid-alt-border: null !default;
+
+/// The background color of hovered Grid rows.
+/// @group grid
+$kendo-grid-hover-bg: null !default;
+/// The text color of hovered Grid rows.
+/// @group grid
+$kendo-grid-hover-text: null !default;
+/// The border color of hovered Grid rows.
+/// @group grid
+$kendo-grid-hover-border: null !default;
+
+/// The background color of selected Grid rows.
+/// @group grid
+$kendo-grid-selected-bg: null !default;
+/// The text color of selected Grid rows.
+/// @group grid
+$kendo-grid-selected-text: null !default;
+/// The border color of selected Grid rows.
+/// @group grid
+$kendo-grid-selected-border: null !default;
+
+/// The background color of the Grid selection aggregates container.
+/// @group grid
+$kendo-grid-selection-aggregates-bg: null !default;
+/// The text color of the Grid selection aggregates container.
+/// @group grid
+$kendo-grid-selection-aggregates-text: null !default;
+/// The border color of the Grid selection aggregates container.
+/// @group grid
+$kendo-grid-selection-aggregates-border: null !default;
+/// The border width of the Grid selection aggregates container.
+/// @group grid
+$kendo-grid-selection-aggregates-border-width: null !default;
+/// The spacing between the selection aggregates items.
+/// @group grid
+$kendo-grid-selection-aggregates-spacing: null !default;
+/// The line height of the Grid selection aggregates container.
+/// @group grid
+$kendo-grid-selection-aggregates-line-height: null !default;
+/// The font weight of the Grid selection aggregates container.
+/// @group grid
+$kendo-grid-selection-aggregates-font-weight: null !default;
+
+$kendo-grid-grouping-row-bg: null !default;
+$kendo-grid-grouping-row-text: null !default;
+
+$kendo-grid-sorted-icon-spacing: null !default;
+$kendo-grid-sorted-bg: null !default;
+$kendo-grid-sorting-indicator-text: null !default;
+$kendo-grid-sorting-index-font-size: null !default;
+$kendo-grid-sorting-index-height: null !default;
+$kendo-grid-sorting-index-spacing-y: null !default;
+$kendo-grid-sorting-index-spacing-x: null !default;
+
+
+$kendo-grid-focus-shadow: null !default;
+
+$kendo-grid-command-cell-button-spacing: null !default;
+// be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
+$kendo-grid-command-cell-padding-y: null !default;
+
+// Must be a solid color
+$kendo-grid-sticky-bg: null !default;
+$kendo-grid-sticky-text: null !default;
+$kendo-grid-sticky-border: null !default;
+
+// Must be a solid color
+$kendo-grid-sticky-alt-bg: null !default;
+
+$kendo-grid-sticky-header-bg: null !default;
+$kendo-grid-sticky-header-text: null !default;
+$kendo-grid-sticky-header-border: null !default;
+
+$kendo-grid-sticky-footer-bg: null !default;
+$kendo-grid-sticky-footer-hover-bg: null !default;
+
+$kendo-grid-sticky-selected-bg: null !default;
+$kendo-grid-sticky-selected-alt-bg: null !default;
+
+// Must be a solid color
+$kendo-grid-sticky-hover-bg: null !default;
+$kendo-grid-sticky-selected-hover-bg: null !default;
+
+$kendo-grid-column-menu-width: null !default;
+$kendo-grid-column-menu-max-width: null !default;
+
+$kendo-grid-filter-menu-check-all-border-bottom-width: null !default;
+
+$kendo-grid-filter-menu-item-spacing-x: null !default;
+$kendo-grid-filter-menu-item-spacing-y: null !default;
+
+$kendo-grid-column-menu-popup-padding-x: null !default;
+$kendo-grid-column-menu-popup-padding-y: null !default;
+
+$kendo-grid-column-menu-item-padding-x: null !default;
+$kendo-grid-column-menu-item-padding-y: null !default;
+
+$kendo-grid-column-menu-list-item-padding-x: null !default;
+$kendo-grid-column-menu-list-item-padding-y: null !default;
+
+$kendo-grid-column-menu-items-wrap-padding-x: null !default;
+$kendo-grid-column-menu-items-wrap-padding-y: null !default;
+
+$kendo-grid-column-menu-group-header-padding-x: null !default;
+$kendo-grid-column-menu-group-header-padding-y: null !default;
+
+$kendo-grid-column-menu-group-header-font-size: null !default;
+$kendo-grid-column-menu-group-header-line-height: null !default;
+$kendo-grid-column-menu-group-header-text-transform: null !default;
+$kendo-grid-column-menu-group-header-border-bottom-width: null !default;
+
+$kendo-grid-column-menu-group-header-bg: null !default;
+$kendo-grid-column-menu-group-header-text: null !default;
+$kendo-grid-column-menu-group-header-border: null !default;
+
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: null !default;
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: null !default;
+
+$kendo-grid-column-menu-tabbed-bg: null !default;
+
+$kendo-grid-drag-cell-width: null !default;
+
+$kendo-grid-row-inner-height: null !default;
+
+$kendo-grid-hierarchy-col-width: null !default;
+
+$kendo-grid-grouping-row-border-top: null !default;
+$kendo-grid-group-footer-border-y: null !default;
+$kendo-grid-group-footer-second-cell-border: null !default;
+
+/// The background color of the Grid row resize indicator.
+/// @group grid
+$kendo-grid-row-resizer-hover-bg: null !default;
+/// The background color of the active Grid row resize indicator.
+/// @group grid
+$kendo-grid-row-resizer-active-bg: null !default;
+/// The height of the Grid row resize indicator.
+/// @group grid
+$kendo-grid-row-resizer-height: null !default;

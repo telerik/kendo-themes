@@ -1,0 +1,87 @@
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-expander--layout-base() {
+
+    // Base
+    .k-expander {
+        border-width: $kendo-expander-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        overflow: hidden;
+        outline: 0;
+        font-family: $kendo-expander-font-family;
+        font-size: $kendo-expander-font-size;
+        line-height: $kendo-expander-line-height;
+        display: flex;
+        flex-direction: column;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    .k-rtl .k-expander,
+    .k-expander.k-rtl,
+    .k-expander[dir="rtl"] {
+        // Expand / collapse icon
+        .k-expander-indicator {
+            margin-left: 0;
+            margin-right: $kendo-expander-indicator-margin-x;
+        }
+    }
+
+    // Header
+    .k-expander-header {
+        padding-block: $kendo-expander-header-padding-y;
+        padding-inline: $kendo-expander-header-padding-x;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    // Expander spacer
+    .k-expander-spacer {
+        flex: 1 1 auto;
+    }
+
+    // Title
+    .k-expander-title {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    // Expand / collapse icon
+    .k-expander-indicator {
+        margin-left: $kendo-expander-indicator-margin-x;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // Expander content
+    .k-expander-content {
+        padding-block: $kendo-expander-content-padding-y;
+        padding-inline: $kendo-expander-content-padding-x;
+    }
+
+    // Multiple expanders
+    .k-expander + .k-expander.k-expanded,
+    .k-expander.k-expanded + .k-expander {
+        margin-top: $kendo-expander-spacing-y;
+    }
+
+    .k-expander:not(.k-expanded) + .k-expander:not(.k-expanded) {
+        border-top-width: 0;
+    }
+}
+
+
+@mixin kendo-expander--layout() {
+    @include kendo-expander--layout-base();
+}

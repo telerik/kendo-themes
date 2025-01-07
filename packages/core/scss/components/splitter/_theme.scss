@@ -1,0 +1,43 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-splitter--theme-base() {
+
+    // Splitter
+    .k-splitter {
+        @include fill(
+            $kendo-splitter-text,
+            $kendo-splitter-bg,
+            $kendo-splitter-border
+        );
+    }
+
+    // Splitbar
+    .k-splitbar {
+        color: $kendo-splitbar-text;
+        background-color: $kendo-splitbar-bg;
+    }
+    .k-splitbar:hover,
+    .k-splitbar.k-hover,
+    .k-splitbar-horizontal-hover,
+    .k-splitbar-vertical-hover {
+        color: $kendo-splitbar-hover-text;
+        background-color: $kendo-splitbar-hover-bg;
+    }
+    .k-splitbar:focus,
+    .k-splitbar.k-focus {
+        color: $kendo-splitbar-selected-text;
+        background: $kendo-splitbar-selected-bg;
+    }
+
+    // Ghost splitbar
+    .k-ghost-splitbar {
+        background-color: $kendo-splitbar-hover-bg;
+    }
+
+}
+
+
+@mixin kendo-splitter--theme() {
+    @include kendo-splitter--theme-base();
+}

@@ -1,0 +1,170 @@
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-scrollview--layout-base() {
+
+    .k-scrollview {
+        border-width: $kendo-scrollview-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $kendo-scrollview-font-family;
+        font-size: $kendo-scrollview-font-size;
+        line-height: $kendo-scrollview-line-height;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+    }
+
+    .k-scrollview-wrap {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        cursor: default;
+        white-space: nowrap;
+
+        > .k-scrollview-view {
+            display: inline-block;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        img {
+            user-select: none;
+        }
+
+    }
+
+    .k-scrollview-wrap.k-scrollview-animate {
+        width: calc( var(--kendo-scrollview-views, 1) * 100% );
+        transition-duration: $kendo-scrollview-transition-duration;
+        transition-timing-function: $kendo-scrollview-transition-timing-function;
+        transform: translateX( calc( -100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
+
+        .k-scrollview-view {
+            width: calc( 100% / var(--kendo-scrollview-views, 1) );
+            flex: 0 0 calc( 100% / var(--kendo-scrollview-views, 1) );
+        }
+
+    }
+
+    :is([dir="rtl"], .k-rtl) .k-scrollview-wrap.k-scrollview-animate {
+        transform: translateX( calc( 100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
+    }
+
+    .k-scrollview-nav-wrap {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: $kendo-scrollview-pager-offset;
+        height: $kendo-scrollview-pager-height;
+        text-align: center;
+    }
+
+    kendo-scrollview.k-scrollview kendo-scrollview-pager {
+        pointer-events: none;
+    }
+
+    kendo-scrollview.k-scrollview .k-scrollview-nav {
+        pointer-events: initial;
+    }
+
+    .k-scrollview-nav {
+        margin: 0;
+        padding: $kendo-scrollview-pager-item-spacing;
+        max-width: 100%;
+        box-sizing: border-box;
+        line-height: 0;
+        text-align: center;
+        white-space: nowrap;
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        pointer-events: initial;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .k-scrollview-nav > .k-link {
+        margin-block: 0;
+        margin-inline: calc( #{$kendo-scrollview-pager-item-spacing} / 2 );
+        padding: 0;
+        width: $kendo-scrollview-pagebutton-size;
+        height: $kendo-scrollview-pagebutton-size;
+        border-width: $kendo-scrollview-pager-item-border-width;
+        border-style: solid;
+        border-radius: 50%;
+        box-sizing: content-box;
+        display: inline-block;
+        position: relative;
+        flex: 0 0 auto;
+        cursor: pointer;
+        pointer-events: all;
+        vertical-align: top;
+
+        &::before {
+            content: "";
+            width: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-spacing} );
+            height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-spacing} );
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: initial;
+            border-radius: 0;
+        }
+    }
+
+    .k-scrollview-next,
+    .k-scrollview-prev {
+        display: table;
+        position: absolute;
+        padding: 0;
+        height: 60%;
+        top: 20%;
+        text-decoration: none;
+        user-select: none;
+        cursor: pointer;
+
+        .k-icon {
+            display: table-cell;
+            overflow: visible;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+            font-weight: normal;
+        }
+    }
+
+    .k-scrollview-prev {
+        inset-inline-start: 0;
+    }
+
+    .k-scrollview-next {
+        inset-inline-end: 0;
+    }
+
+
+    .k-scrollview-animation {
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+
+@mixin kendo-scrollview--layout() {
+    @include kendo-scrollview--layout-base();
+}

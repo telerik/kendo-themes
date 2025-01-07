@@ -1,0 +1,214 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-panelbar--theme-base() {
+
+    // Panelbar
+    .k-panelbar {
+        @include fill(
+            $kendo-panelbar-text,
+            $kendo-panelbar-bg,
+            $kendo-panelbar-border
+        );
+
+
+        // Root
+        > .k-panelbar-header {
+
+            &.k-expanded.k-level-0 > .k-link  {
+                @include fill(
+                    $kendo-panelbar-header-expanded-text,
+                    $kendo-panelbar-header-expanded-bg,
+                    $kendo-panelbar-header-expanded-border,
+                    $kendo-panelbar-header-expanded-gradient
+                );
+            }
+
+            // Normal
+            > .k-link {
+                @include fill(
+                    $kendo-panelbar-header-text,
+                    $kendo-panelbar-header-bg,
+                    $kendo-panelbar-header-border,
+                    $kendo-panelbar-header-gradient
+                );
+
+                .k-icon,
+                .k-panelbar-item-icon {
+                    color: $kendo-panelbar-text;
+                }
+            }
+
+            // Hover
+            > .k-link:hover,
+            > .k-link.k-hover {
+                @include fill(
+                    $kendo-panelbar-header-hover-text,
+                    $kendo-panelbar-header-hover-bg,
+                    $kendo-panelbar-header-hover-border,
+                    $kendo-panelbar-header-hover-gradient
+                );
+            }
+
+            // Focus
+            > .k-link:focus,
+            > .k-link.k-focus {
+                @include fill(
+                    $kendo-panelbar-header-focus-text,
+                    $kendo-panelbar-header-focus-bg,
+                    $kendo-panelbar-header-focus-border,
+                    $kendo-panelbar-header-focus-gradient
+                );
+                @include focus-indicator( $kendo-panelbar-header-focus-shadow, true );
+            }
+
+            // Focus & Hover
+            > .k-link:focus:hover,
+            > .k-link.k-focus.k-hover {
+                @include fill(
+                    $kendo-panelbar-header-hover-focus-text,
+                    $kendo-panelbar-header-hover-focus-bg,
+                    $kendo-panelbar-header-hover-focus-border,
+                    $kendo-panelbar-header-hover-focus-gradient
+                );
+            }
+
+            // Selected
+            > .k-link.k-selected {
+                @include fill(
+                    $kendo-panelbar-header-selected-text,
+                    $kendo-panelbar-header-selected-bg,
+                    $kendo-panelbar-header-selected-border,
+                    $kendo-panelbar-header-selected-gradient
+                );
+
+                .k-icon,
+                .k-panelbar-item-icon {
+                    color: inherit;
+                }
+            }
+
+            // Selected Hover
+            > .k-link.k-selected:hover,
+            > .k-link.k-selected.k-hover {
+                @include fill(
+                    $kendo-panelbar-header-selected-hover-text,
+                    $kendo-panelbar-header-selected-hover-bg,
+                    $kendo-panelbar-header-selected-hover-border,
+                    $kendo-panelbar-header-selected-hover-gradient
+                );
+            }
+
+            // Selected Focus
+            > .k-link.k-selected:focus,
+            > .k-link.k-selected.k-focus {
+                @include fill(
+                    $kendo-panelbar-header-selected-focus-text,
+                    $kendo-panelbar-header-selected-focus-bg,
+                    $kendo-panelbar-header-selected-focus-border,
+                    $kendo-panelbar-header-selected-focus-gradient
+                );
+            }
+
+            // Selected Focus & Hover
+            > .k-link.k-selected:hover:focus,
+            > .k-link.k-selected.k-hover.k-focus {
+                @include fill(
+                    $kendo-panelbar-header-selected-hover-focus-text,
+                    $kendo-panelbar-header-selected-hover-focus-bg,
+                    $kendo-panelbar-header-selected-hover-focus-border,
+                    $kendo-panelbar-header-selected-hover-focus-gradient
+                );
+            }
+        }
+
+
+        // Sub
+        .k-panelbar-group {
+
+            // Hover
+            > .k-panelbar-item > .k-link:hover,
+            > .k-panelbar-item > .k-link.k-hover {
+                @include fill(
+                    $kendo-panelbar-item-hover-text,
+                    $kendo-panelbar-item-hover-bg,
+                    $kendo-panelbar-item-hover-border,
+                    $kendo-panelbar-item-hover-gradient
+                );
+            }
+
+            // Focus
+            > .k-panelbar-item > .k-link:focus,
+            > .k-panelbar-item > .k-link.k-focus {
+                @include fill(
+                    $kendo-panelbar-item-focus-text,
+                    $kendo-panelbar-item-focus-bg,
+                    $kendo-panelbar-item-focus-border,
+                    $kendo-panelbar-item-focus-gradient
+                );
+                @include focus-indicator( $kendo-panelbar-item-focus-shadow, true );
+            }
+
+            // Focus & Hover
+            > .k-panelbar-item > .k-link:focus:hover,
+            > .k-panelbar-item > .k-link.k-focus.k-hover {
+                @include fill(
+                    $kendo-panelbar-item-hover-focus-text,
+                    $kendo-panelbar-item-hover-focus-bg,
+                    $kendo-panelbar-item-hover-focus-border,
+                    $kendo-panelbar-item-hover-focus-gradient
+                );
+            }
+
+            // Selected
+            > .k-panelbar-item > .k-link.k-selected {
+                @include fill(
+                    $kendo-panelbar-item-selected-text,
+                    $kendo-panelbar-item-selected-bg,
+                    $kendo-panelbar-item-selected-border,
+                    $kendo-panelbar-item-selected-gradient
+                );
+            }
+
+            // Selected Hover
+            > .k-panelbar-item > .k-link.k-selected:hover,
+            > .k-panelbar-item > .k-link.k-selected.k-hover {
+                @include fill(
+                    $kendo-panelbar-item-selected-hover-text,
+                    $kendo-panelbar-item-selected-hover-bg,
+                    $kendo-panelbar-item-selected-hover-border,
+                    $kendo-panelbar-item-selected-hover-gradient
+                );
+            }
+
+            // Selected Focus
+            > .k-panelbar-item > .k-link.k-selected:focus,
+            > .k-panelbar-item > .k-link.k-selected.k-focus {
+                @include fill(
+                    $kendo-panelbar-item-selected-focus-text,
+                    $kendo-panelbar-item-selected-focus-bg,
+                    $kendo-panelbar-item-selected-focus-border,
+                    $kendo-panelbar-item-selected-focus-gradient
+                );
+            }
+
+            // Selected Focus & Hover
+            > .k-panelbar-item > .k-link.k-selected:focus:hover,
+            > .k-panelbar-item > .k-link.k-selected.k-focus.k-hover {
+                @include fill(
+                    $kendo-panelbar-item-selected-hover-focus-text,
+                    $kendo-panelbar-item-selected-hover-focus-bg,
+                    $kendo-panelbar-item-selected-hover-focus-border,
+                    $kendo-panelbar-item-selected-hover-focus-gradient
+                );
+            }
+        }
+
+    }
+
+}
+
+
+@mixin kendo-panelbar--theme() {
+    @include kendo-panelbar--theme-base();
+}

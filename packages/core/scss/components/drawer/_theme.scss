@@ -1,0 +1,68 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-drawer--theme-base() {
+
+    .k-drawer {
+        @include fill(
+            $kendo-drawer-text,
+            $kendo-drawer-bg,
+            $kendo-drawer-border
+        );
+    }
+
+    // Drawer items
+    .k-drawer-wrapper {
+        scrollbar-color: $kendo-drawer-scrollbar-color $kendo-drawer-scrollbar-bg;
+
+        &::-webkit-scrollbar-track {
+            background: $kendo-drawer-scrollbar-bg;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $kendo-drawer-scrollbar-color;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: $kendo-drawer-scrollbar-hover-color;
+        }
+    }
+    .k-drawer-item {
+
+        &:hover,
+        &.k-hover {
+            color: $kendo-drawer-hover-text;
+            background-color: $kendo-drawer-hover-bg;
+        }
+
+        &:focus,
+        &.k-focus {
+            background-color: $kendo-drawer-focus-bg;
+            @include focus-indicator( $kendo-drawer-focus-shadow, true );
+
+            &:hover,
+            &.k-hover {
+                color: $kendo-drawer-hover-text;
+                background-color: $kendo-drawer-hover-bg;
+            }
+        }
+
+        &.k-selected {
+            color: $kendo-drawer-selected-text;
+            background-color: $kendo-drawer-selected-bg;
+
+            &:hover,
+            &.k-hover {
+                color: $kendo-drawer-selected-hover-text;
+                background-color: $kendo-drawer-selected-hover-bg;
+            }
+        }
+    }
+    .k-drawer-separator {
+        background-color: $kendo-drawer-border;
+    }
+
+}
+
+
+@mixin kendo-drawer--theme() {
+    @include kendo-drawer--theme-base();
+}

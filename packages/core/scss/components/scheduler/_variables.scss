@@ -1,0 +1,264 @@
+// Scheduler
+
+/// The width of the border around the Scheduler.
+/// @group scheduler
+$kendo-scheduler-border-width: null !default;
+/// The font family of the Scheduler.
+/// @group scheduler
+$kendo-scheduler-font-family: null !default;
+/// The font size of the Scheduler.
+/// @group scheduler
+$kendo-scheduler-font-size: null !default;
+/// The line height of the Scheduler.
+/// @group scheduler
+$kendo-scheduler-line-height: null !default;
+
+/// The background color of the Scheduler.
+/// @group scheduler
+$kendo-scheduler-bg: null !default;
+/// The text color of the Scheduler.
+/// @group scheduler
+$kendo-scheduler-text: null !default;
+/// The border color of the Scheduler.
+/// @group scheduler
+$kendo-scheduler-border: null !default;
+
+/// The background color of the Scheduler ToolBar.
+/// @group scheduler
+$kendo-scheduler-toolbar-bg: null !default;
+/// The text color of the Scheduler ToolBar.
+/// @group scheduler
+$kendo-scheduler-toolbar-text: null !default;
+/// The border color of the Scheduler ToolBar.
+/// @group scheduler
+$kendo-scheduler-toolbar-border: null !default;
+/// The gradient of the Scheduler ToolBar.
+/// @group scheduler
+$kendo-scheduler-toolbar-gradient: null !default;
+
+/// The background color of the Scheduler footer.
+/// @group scheduler
+$kendo-scheduler-footer-bg: null !default;
+/// The text color of the Scheduler footer.
+/// @group scheduler
+$kendo-scheduler-footer-text: null !default;
+/// The border color of the Scheduler footer.
+/// @group scheduler
+$kendo-scheduler-footer-border: null !default;
+/// The gradient of the Scheduler footer.
+/// @group scheduler
+$kendo-scheduler-footer-gradient: null !default;
+
+/// The minimum height of the Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-min-height: null !default;
+/// The border radius of the Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-border-radius: null !default;
+/// The line height of the Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-line-height: null !default;
+
+/// The background color of the Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-bg: null !default;
+/// The text color of the Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-text: null !default;
+/// The border color of the Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-border: null !default;
+/// The gradient of the Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-gradient: null !default;
+/// The shadow of the Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-shadow: null !default;
+
+/// The background color of the hovered Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-hover-bg: null !default;
+/// The text color of the hovered Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-hover-text: null !default;
+/// The border color of the hovered Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-hover-border: null !default;
+/// The gradient of the hovered Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-hover-gradient: null !default;
+/// The shadow of the hovered Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-hover-shadow: null !default;
+
+/// The background color of the selected Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-selected-bg: null !default;
+/// The text color of the selected Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-selected-text: null !default;
+/// The border color of the selected Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-selected-border: null !default;
+/// The gradient of the selected Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-selected-gradient: null !default;
+/// The shadow of the selected Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-selected-shadow: null !default;
+
+/// The shadow of the ongoing Scheduler event.
+/// @group scheduler
+$kendo-scheduler-event-ongoing-shadow: null !default;
+
+/// The horizontal padding of the Scheduler cell.
+/// @group scheduler
+$kendo-scheduler-cell-padding-x: null !default;
+/// The vertical padding of the Scheduler cell.
+/// @group scheduler
+$kendo-scheduler-cell-padding-y: null !default;
+/// The height of the Scheduler cell.
+/// @group scheduler
+$kendo-scheduler-cell-height: null !default;
+/// The width of the Scheduler date column.
+/// @group scheduler
+$kendo-scheduler-datecolumn-width: null !default;
+/// The width of the Scheduler time column.
+/// @group scheduler
+$kendo-scheduler-timecolumn-width: null !default;
+
+/// The background color of the non-working hours in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-nonwork-bg: null !default;
+/// The text color of the non-working hours in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-nonwork-text: null !default;
+
+/// The background color of the weekends in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-weekend-bg: null !default;
+/// The text color of the weekends in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-weekend-text: null !default;
+
+/// The background color of the preceding/subsequent month cells in the Calendar.
+/// @group scheduler
+$kendo-scheduler-othermonth-bg: null !default;
+/// The text color of the preceding/subsequent month cells in the Calendar.
+/// @group scheduler
+$kendo-scheduler-othermonth-text: null !default;
+
+/// The horizontal padding of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-padding-x: null !default;
+/// The vertical padding of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-padding-y: null !default;
+
+/// The spacing between the calendars of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-calendar-gap: null !default;
+
+/// The days with events indicator size of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-indicator-size: null !default;
+/// The top position of the days with events indicator of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-indicator-calc-offset-top: null !default;
+/// The left position of the days with events indicator of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-indicator-calc-offset-left: null !default;
+/// The border radius of the days with events indicator of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-indicator-border-radius: null !default;
+/// The background color of the days with events indicator of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-indicator-bg: null !default;
+/// The background color of the selected days with events indicator of the year view in the Scheduler.
+/// @group scheduler
+$kendo-scheduler-yearview-indicator-selected-bg: null !default;
+
+/// The horizontal padding of the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-padding-x: null !default;
+/// The vertical padding of the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-padding-y: null !default;
+/// The width of the border of the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-border-width: null !default;
+/// The background color of the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-bg: null !default;
+/// The text color of the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-text: null !default;
+/// The border color of the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-border: null !default;
+/// The shadow of the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-shadow: null !default;
+
+/// The vertical margin of the Scheduler Tooltip title.
+/// @group scheduler
+$kendo-scheduler-tooltip-title-margin-y: null !default;
+/// The font size of the month inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-month-font-size: null !default;
+/// The font size of the day inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-day-font-size: null !default;
+
+/// The max height of the events inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-events-max-height: null !default;
+/// The spacing between the events inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-events-gap: null !default;
+
+/// The horizontal padding of the events inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-event-padding-x: null !default;
+/// The vertical padding of the events inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-event-padding-y: null !default;
+/// The border radius of the events inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-event-border-radius: null !default;
+/// The spacing between the events items inside the Scheduler Tooltip.
+/// @group scheduler
+$kendo-scheduler-tooltip-event-gap: null !default;
+
+/// The color of the Scheduler Tooltip callout.
+/// @group scheduler
+$kendo-scheduler-tooltip-callout-text: null !default;
+
+/// The padding of the Scheduler appointments.
+/// @group scheduler
+$kendo-scheduler-appointments-padding: null !default;
+
+/// The horizontal padding of the Scheduler event template.
+/// @group scheduler
+$kendo-scheduler-event-template-padding-x: null !default;
+/// The vertical padding of the Scheduler event template.
+/// @group scheduler
+$kendo-scheduler-event-template-padding-y: null !default;
+
+/// The inline inset of the Scheduler event actions.
+/// @group scheduler
+$kendo-scheduler-event-actions-inset-x: null !default;
+
+/// The margin of the Scheduler event indicators.
+/// @group scheduler
+$kendo-scheduler-indicators-margin: null !default;
+/// The margin of the Scheduler event indicators in rtl.
+/// @group scheduler
+$kendo-scheduler-rtl-indicators-margin: null !default;
+
+/// The inline inset of the Scheduler marquee labels.
+/// @group scheduler
+$kendo-scheduler-marquee-label-inset-x: null !default;
+/// The block inset of the Scheduler marquee labels.
+/// @group scheduler
+$kendo-scheduler-marquee-label-inset-y: null !default;

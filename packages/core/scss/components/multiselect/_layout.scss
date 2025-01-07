@@ -1,0 +1,11 @@
+@mixin kendo-multiselect--layout-base() {
+
+    // Multiselect
+    .k-multiselect {}
+
+}
+
+
+@mixin kendo-multiselect--layout() {
+    @include kendo-multiselect--layout-base();
+}

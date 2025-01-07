@@ -1,0 +1,41 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-split-button--layout-base() {
+
+    // Split button
+    .k-split-button {}
+
+    // Split button arrow
+    .k-split-button .k-split-button-arrow {
+        padding-block: $kendo-split-button-arrow-padding-y;
+        padding-inline: $kendo-split-button-arrow-padding-x;
+        width: auto;
+        aspect-ratio: auto;
+        flex: none;
+
+        &.k-button-sm {
+            padding-block: $kendo-split-button-sm-arrow-padding-y;
+            padding-inline: $kendo-split-button-sm-arrow-padding-x;
+        }
+
+        &.k-button-md {
+            padding-block: $kendo-split-button-md-arrow-padding-y;
+            padding-inline: $kendo-split-button-md-arrow-padding-x;
+        }
+
+        &.k-button-lg {
+            padding-block: $kendo-split-button-lg-arrow-padding-y;
+            padding-inline: $kendo-split-button-lg-arrow-padding-x;
+        }
+
+        .k-button-icon {
+            min-width: 0;
+        }
+    }
+
+}
+
+
+@mixin kendo-split-button--layout() {
+    @include kendo-split-button--layout-base();
+}

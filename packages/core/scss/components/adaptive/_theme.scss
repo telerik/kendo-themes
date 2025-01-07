@@ -1,0 +1,105 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_swatch-legacy.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-adaptive--theme-base() {
+
+    .k-pane-wrapper,
+    .k-view {
+        @include fill(
+            $kendo-adaptive-text,
+            $kendo-adaptive-bg,
+            $kendo-adaptive-border
+        );
+    }
+
+    .k-pane-wrapper .k-pane {
+
+        > .k-view > .k-content {
+            background-position: 50% 50%;
+            background-color: $kendo-adaptive-content-bg;
+        }
+
+        .k-grid-mobile {
+
+            .k-column-active + th.k-header {
+                border-left-color: $kendo-body-text;
+            }
+
+            .k-resize-handle-inner::before {
+                background-color: $kendo-base-bg;
+            }
+        }
+
+        .k-scheduler-mobile {
+
+            .k-nav-current {
+                color: $kendo-adaptive-scheduler-current-text;
+            }
+
+            .k-scheduler-times,
+            .k-scheduler-header,
+            .k-scheduler-groupcolumn,
+            .k-mobile-scheduler-agendadate {
+                color: $kendo-adaptive-scheduler-base-text;
+            }
+
+            .k-time-period,
+            .k-mobile-scheduler-agendaweekday {
+                color: $kendo-adaptive-scheduler-subtle-text;
+            }
+
+            .k-scheduler-times,
+            .k-scheduler-header,
+            .k-scheduler-header-wrap,
+            .k-scheduler-datecolumn,
+            .k-scheduler-groupcolumn,
+            .k-scheduler-group-cell,
+            .k-scheduler-header-all-day {
+                background-color: $kendo-adaptive-content-bg;
+            }
+
+            .k-scheduler-toolbar .k-scheduler-tools > li {
+                display: inline-block;
+                background-color: inherit;
+            }
+        }
+
+        .k-grid-edit-form,
+        .k-grid-header-menu,
+        .k-grid-filter-menu,
+        .k-scheduler-edit-form {
+
+            .k-item,
+            .k-link {
+                color: $kendo-base-text;
+            }
+
+            .k-clear,
+            .k-select-all,
+            .k-scheduler-delete,
+            .k-scheduler-resetSeries { // stylelint-disable-line
+                color: $kendo-adaptive-menu-clear-text;
+            }
+
+        }
+
+        .k-column-menu {
+
+            .k-listgroup-item.k-selected {
+                color: $kendo-adaptive-grid-sort-text;
+                background: none;
+            }
+            .k-listgroup-item.k-selected .k-link {
+                color: inherit;
+            }
+        }
+
+    }
+
+}
+
+
+@mixin kendo-adaptive--theme() {
+    @include kendo-adaptive--theme-base();
+}

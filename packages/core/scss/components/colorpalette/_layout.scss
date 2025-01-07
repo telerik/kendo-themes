@@ -1,0 +1,76 @@
+@use "sass:map";
+@use "../../color-system/_constants.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-color-palette--layout-base() {
+
+    // ColorPalette
+    .k-colorpalette {
+        border-width: 0;
+        box-sizing: border-box;
+        outline: 0;
+        font-size: $kendo-color-palette-font-size;
+        font-family: $kendo-color-palette-font-family;
+        line-height: $kendo-color-palette-line-height;
+        display: inline-flex;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    // Table
+    .k-colorpalette-table {
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        position: relative;
+    }
+
+    // Tile
+    .k-colorpalette-tile {
+        width: $kendo-color-palette-tile-width;
+        height: $kendo-color-palette-tile-height;
+        box-sizing: border-box;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover,
+        &.k-hover {
+            position: relative;
+            z-index: 101;
+        }
+
+        &:focus,
+        &.k-focus,
+        &.k-selected,
+        &.k-selected:hover {
+            position: relative;
+            z-index: 100;
+        }
+    }
+
+    // ColorPalette sizes
+    @each $size, $size-props in $kendo-color-palette-sizes {
+        $_tile-width: map.get( $size-props, width );
+        $_tile-height: map.get( $size-props, height );
+
+        .k-colorpalette-#{$size} {
+            .k-colorpalette-tile {
+                width: $_tile-width;
+                height: $_tile-height;
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-color-palette--layout() {
+    @include kendo-color-palette--layout-base();
+}

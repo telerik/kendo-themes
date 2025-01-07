@@ -1,0 +1,150 @@
+@use "../../spacing/index.import.scss" as *;
+@use "sass:map";
+@use "./variables.scss" as *;
+
+@mixin kendo-fab--layout-base() {
+
+    // Floating Action Button (FAB)
+    .k-fab {
+        padding: 0;
+        border-width: 0;
+        border-style: solid;
+        border-color: transparent;
+        box-sizing: border-box;
+        color: inherit;
+        background-color: transparent;
+        font-size: $kendo-fab-font-size;
+        line-height: $kendo-fab-line-height;
+        font-family: $kendo-fab-font-family;
+        text-align: center;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        outline: none;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    // FAB Icon
+    .k-fab-icon {
+        padding-inline: $kendo-fab-icon-padding-x;
+        padding-block: $kendo-fab-icon-padding-y;
+        box-sizing: content-box;
+    }
+
+    .k-icon-wrapper-host:not(:only-child) .k-fab-icon,
+    .k-fab-icon:not(:only-child) {
+        margin-inline-end: $kendo-fab-icon-spacing;
+        margin-inline-start: calc( #{$kendo-fab-icon-spacing} * -1 );
+    }
+
+    // Sizes
+    @each $size, $size-props in $kendo-fab-sizes {
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+
+        .k-fab-#{$size} {
+            padding: $_padding-y $_padding-x;
+        }
+
+    }
+
+    // Items
+    .k-fab-items {
+        margin: 0;
+        padding-block: $kendo-fab-items-padding-y;
+        padding-inline: $kendo-fab-items-padding-x;
+        display: flex;
+    }
+
+    .k-fab-items-bottom {
+        flex-direction: column;
+    }
+    .k-fab-items-bottom .k-fab-item:last-child {
+        margin-block-end: 0;
+    }
+
+    .k-fab-items-top {
+        flex-direction: column-reverse;
+    }
+    .k-fab-items-top .k-fab-item:first-child {
+        margin-block-end: 0;
+    }
+
+    .k-fab-item {
+        list-style-type: none;
+        margin-block-end: k-spacing(2);
+        outline: none;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+
+        &.k-text-right {
+            flex-direction: row;
+
+            .k-fab-item-text {
+                // Needed for fab item positioning in RTL
+                margin-right: k-spacing(2);
+            }
+        }
+        &.k-text-left {
+            flex-direction: row-reverse;
+
+            .k-fab-item-text {
+                // Needed for fab item positioning in RTL
+                margin-left: k-spacing(2);
+            }
+        }
+    }
+
+    .k-fab-item-text {
+        padding-block: $kendo-fab-item-text-padding-y;
+        padding-inline: $kendo-fab-item-text-padding-x;
+        border-width: $kendo-fab-item-text-border-width;
+        border-radius: $kendo-fab-item-text-border-radius;
+        font-size: $kendo-fab-item-text-font-size;
+        line-height: $kendo-fab-item-text-line-height;
+    }
+
+    .k-fab-item-icon {
+        padding-block: $kendo-fab-item-icon-padding-y;
+        padding-inline: $kendo-fab-item-icon-padding-x;
+        border-width: $kendo-fab-item-icon-border-width;
+        border-radius: $kendo-fab-item-icon-border-radius;
+        box-sizing: content-box;
+        outline: none;
+    }
+
+
+
+    .k-rtl .k-fab-popup,
+    [dir="rtl"] .k-fab-popup {
+        .k-fab-item.k-text-left {
+            flex-direction: row;
+        }
+
+        .k-fab-item.k-text-right {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+
+@mixin kendo-fab--layout() {
+    @include kendo-fab--layout-base();
+}

@@ -1,0 +1,11 @@
+@mixin kendo-date-range-picker--theme-base() {
+
+    // Date range picker
+    .k-daterangepicker {}
+
+}
+
+
+@mixin kendo-date-range-picker--theme() {
+    @include kendo-date-range-picker--theme-base();
+}

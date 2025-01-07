@@ -1,0 +1,298 @@
+@use "../../color-system/_constants.scss" as *;
+@use "../../spacing/index.import.scss" as *;
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../icons/_variables.scss" as *;
+
+@mixin kendo-stepper--layout-base() {
+
+    // Base
+    .k-stepper {
+        margin-block: $kendo-stepper-margin-y;
+        margin-inline: $kendo-stepper-margin-x;
+        padding-block: $kendo-stepper-padding-y;
+        padding-inline: $kendo-stepper-padding-x;
+        border-width: $kendo-stepper-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-size: $kendo-stepper-font-size;
+        line-height: $kendo-stepper-line-height;
+        font-family: $kendo-stepper-font-family;
+        display: block;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
+        // TODO: remove those once k-widget styles are removed. Link: https://github.com/telerik/kendo-themes/issues/1359
+        color: inherit;
+        background: none;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+        // Step list
+        .k-step-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            position: relative;
+            z-index: 1;
+        }
+
+
+        // Step
+        .k-step { }
+
+
+        // Step link
+        .k-step-link {
+            outline: none;
+            color: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        // Step indicator
+        .k-step-indicator {
+            @include border-radius( $kendo-stepper-indicator-border-radius );
+            margin: if($kendo-stepper-indicator-focus-offset > 0, $kendo-stepper-indicator-focus-offset, null);
+            width: $kendo-stepper-indicator-width;
+            height: $kendo-stepper-indicator-height;
+            border-width: $kendo-stepper-indicator-border-width;
+            border-style: solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: none;
+            position: relative;
+            z-index: 1;
+            overflow: visible;
+            transition-property: color, background-color, border-color;
+            transition-duration: .4s;
+            transition-timing-function: ease-in-out;
+
+            &::before {
+                @include border-radius( $kendo-stepper-indicator-border-radius );
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            &::after {
+                @include border-radius( 100% );
+                content: "";
+                border-width: $kendo-stepper-indicator-focus-border-width;
+                border-style: solid;
+                border-color: inherit;
+                pointer-events: none;
+                display: none;
+                position: absolute;
+                top: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
+                right: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
+                bottom: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
+                left: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
+                z-index: 2;
+            }
+        }
+
+        .k-step.k-focus,
+        .k-step-link:focus {
+            .k-step-indicator::after {
+                display: block;
+            }
+        }
+
+
+        // Step label
+        .k-step-label {
+            max-width: clamp(100%, 10em, 100%);
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        .k-step-label:only-child {
+            @include border-radius( $kendo-stepper-label-border-radius );
+            padding-block: $kendo-stepper-label-padding-y;
+            padding-inline: $kendo-stepper-label-padding-x;
+            border-width: 0;
+        }
+        .k-step-label .k-step-text {
+            max-width: calc(10em - (#{$kendo-icon-size} + #{$kendo-icon-spacing}));
+            flex-grow: 1;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .k-step-label .k-icon  {
+            margin-left: $kendo-icon-spacing;
+        }
+
+        .k-step-current .k-step-label {
+            font-weight: bold;
+        }
+
+
+        // Optional label
+        .k-step-label-optional {
+            flex-basis: 100%;
+            font-size: $kendo-stepper-optional-label-font-size;
+            font-style: $kendo-stepper-optional-label-font-style;
+            opacity: $kendo-stepper-optional-label-opacity;
+        }
+
+
+        .k-step-disabled,
+        .k-step.k-disabled {
+            opacity: 1;
+            pointer-events: none;
+
+            .k-step-link { cursor: default; }
+
+            .k-step-label-optional {
+                color: inherit;
+            }
+        }
+
+
+        // Progressbar
+        .k-progressbar {
+            pointer-events: none;
+            z-index: 0;
+            overflow: visible;
+        }
+
+        .k-progressbar-horizontal {
+            grid-row: 1 / -1;
+        }
+
+        .k-progressbar-vertical {
+            position: absolute;
+        }
+    }
+
+
+    // Horizontal
+    .k-step-list-horizontal {
+        flex-direction: row;
+        grid-row: 1;
+
+        .k-step {
+            flex: 1 0 auto;
+            text-align: center;
+        }
+
+        .k-step-link {
+            margin: auto;
+            max-width: 10em;
+            flex-direction: column;
+        }
+
+        // Label
+        .k-step-label {
+            text-align: center;
+        }
+        .k-step-indicator + .k-step-label {
+            margin-top: if($kendo-stepper-indicator-focus-offset > 0, k-spacing(1), 8px);
+        }
+
+        // Progressbar
+        & ~ .k-progressbar {
+            width: 100%;
+            height: $kendo-stepper-progressbar-size;
+            top: calc(((#{$kendo-stepper-indicator-height} + 2 * #{$kendo-stepper-indicator-focus-size}) / 2) + #{$kendo-stepper-indicator-focus-size} / 2);
+        }
+    }
+
+    // Vertical
+    .k-step-list-vertical {
+        flex-direction: column;
+
+        .k-step {
+            min-height: calc((#{$kendo-stepper-indicator-width} + 2 * #{$kendo-stepper-indicator-border-width} + 2 * #{$kendo-stepper-indicator-focus-size}) + 20px);
+        }
+
+        // Label
+        .k-step-label {
+            justify-content: flex-start;
+        }
+        .k-step-indicator + .k-step-label {
+            margin-left: $kendo-stepper-label-margin-x;
+        }
+
+
+        // Progressbar
+        & ~ .k-progressbar {
+            width: $kendo-stepper-progressbar-size;
+            height: 100%;
+            min-height: 20px;
+            left: calc((#{$kendo-stepper-indicator-width} + 2 * #{$kendo-stepper-indicator-border-width} + 2 * #{$kendo-stepper-indicator-focus-size}) / 2);
+        }
+
+        // Inline content
+        .k-step-content {
+            height: 0;
+            overflow: hidden;
+            transition: $kendo-stepper-content-transition-property $kendo-stepper-content-transition-duration $kendo-stepper-content-transition-timing-function;
+        }
+
+        .k-step-current .k-step-content {
+            height: auto;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: $kendo-stepper-indicator-width + 2 * $kendo-stepper-indicator-border-width;
+            padding-block: $kendo-stepper-inline-content-padding-x;
+            padding-inline: $kendo-stepper-inline-content-padding-y;
+        }
+    }
+
+
+    // Stepper rtl
+    .k-rtl .k-stepper,
+    .k-stepper[dir="rtl"] {
+        direction: rtl;
+
+        .k-step-label .k-icon {
+            margin-left: 0;
+            margin-right: $kendo-icon-spacing;
+        }
+
+        // Horizontal
+        .k-step-list-horizontal { }
+
+
+        // Vertical
+        .k-step-list-vertical {
+            .k-step-indicator + .k-step-label {
+                margin-left: 0;
+                margin-right: $kendo-stepper-label-margin-x;
+            }
+
+            & ~ .k-progressbar {
+                left: auto;
+                right: calc((#{$kendo-stepper-indicator-width} + 2 * #{$kendo-stepper-indicator-border-width} + 2 * #{$kendo-stepper-indicator-focus-size}) / 2);
+            }
+        }
+    }
+
+}
+
+
+@mixin kendo-stepper--layout() {
+    @include kendo-stepper--layout-base();
+}

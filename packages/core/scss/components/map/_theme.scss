@@ -1,0 +1,39 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+@use "../button/_variables.scss" as *;
+
+@mixin kendo-map--theme-base() {
+
+    // Map theme
+    .k-map {
+        @include fill(
+            $kendo-map-text,
+            $kendo-map-bg,
+            $kendo-map-border
+        );
+
+        .k-navigator {
+            @include fill(
+                $kendo-button-text,
+                $kendo-button-bg,
+                $kendo-button-border,
+                $kendo-button-gradient
+            );
+            @include box-shadow( $kendo-button-shadow );
+        }
+
+        .k-marker {
+            color: $kendo-map-marker-fill;
+        }
+
+        .k-attribution {
+            background-color: $kendo-map-attribution-bg;
+        }
+    }
+
+}
+
+
+@mixin kendo-map--theme() {
+    @include kendo-map--theme-base();
+}

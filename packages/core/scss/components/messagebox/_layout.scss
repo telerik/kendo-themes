@@ -1,0 +1,28 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-messagebox--layout-base() {
+
+    // Base
+    .k-messagebox {
+        margin: $kendo-message-box-margin;
+        padding-block: $kendo-message-box-padding-y;
+        padding-inline: $kendo-message-box-padding-x;
+        border-width: $kendo-message-box-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        font-size: $kendo-message-box-font-size;
+        line-height: $kendo-message-box-line-height;
+
+        a {
+            color: inherit;
+            font-style: $kendo-message-box-link-font-style;
+            text-decoration: $kendo-message-box-link-text-decoration;
+        }
+    }
+
+}
+
+
+@mixin kendo-messagebox--layout() {
+    @include kendo-messagebox--layout-base();
+}

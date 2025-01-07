@@ -1,0 +1,60 @@
+@use "../../mixins/index.import.scss" as *;
+@use "../../functions/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
+@use "../../_variables.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-progressbar--theme-base() {
+
+    @keyframes kendo-progressbar-indeterminate-animation {
+        from { background-position: 0 0; }
+        to { background-position: $kendo-progressbar-height 0; }
+    }
+
+    .k-progressbar {
+        @include fill( $kendo-progressbar-text, $kendo-progressbar-bg, $kendo-progressbar-border, $kendo-progressbar-gradient );
+
+        .k-selected {
+            @include fill( $kendo-progressbar-value-text, $kendo-progressbar-value-bg, $kendo-progressbar-value-border, $kendo-progressbar-value-gradient );
+        }
+    }
+
+    // Chunk progressbar
+    .k-chunk-progressbar {
+        // TODO uncomment for 2023 R1
+        // background-color: k-if-var( $progressbar-chunk-border, transparent );
+        background-color: transparent;
+    }
+    .k-progressbar-chunk {
+        background-color: $kendo-progressbar-bg;
+
+        .k-selected {
+            background-color: $kendo-progressbar-value-bg;
+        }
+    }
+
+    .k-progressbar-indeterminate {
+        @include fill( $kendo-progressbar-indeterminate-text, $kendo-progressbar-indeterminate-bg, $kendo-progressbar-indeterminate-border );
+        @include striped-gradient( if($kendo-enable-color-system, color-mix(in srgb, k-color( base-emphasis ) 55%, transparent), k-color-shade($kendo-progressbar-indeterminate-bg)) );
+        background-size: $kendo-progressbar-height $kendo-progressbar-height;
+        animation: kendo-progressbar-indeterminate-animation $kendo-progressbar-animation-timing;
+    }
+
+
+    // Circular progressbar
+    .k-circular-progressbar-scale {
+        stroke: $kendo-circular-progressbar-scale-stroke;
+    }
+
+    .k-circular-progressbar-arc {
+        stroke: $kendo-circular-progressbar-arc-stroke;
+        transition: stroke .5s ease;
+    }
+
+}
+
+
+@mixin kendo-progressbar--theme() {
+    @include kendo-progressbar--theme-base();
+}

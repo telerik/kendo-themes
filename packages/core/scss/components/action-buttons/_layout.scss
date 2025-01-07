@@ -1,0 +1,72 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-action-buttons--layout-base() {
+
+    // Actions
+    .k-actions {
+        padding-block: $kendo-actions-padding-y;
+        padding-inline: $kendo-actions-padding-x;
+        box-sizing: border-box;
+        border-width: $kendo-actions-border-width 0 0 0;
+        border-style: solid;
+        border-color: inherit;
+        flex-shrink: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: $kendo-actions-button-spacing;
+        overflow: hidden;
+        // TODO: remove
+        clear: both;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+
+    // Actions in popup
+    .k-popup .k-actions {
+        margin-top: $kendo-actions-margin-top;
+    }
+
+    // Actions align
+    .k-actions-start {
+        justify-content: flex-start;
+    }
+    .k-actions-center {
+        justify-content: center;
+    }
+    .k-actions-end {
+        justify-content: flex-end;
+    }
+    .k-actions-stretched > * {
+        flex: 1 0 0%;
+    }
+
+
+    // Actions orientation
+    .k-actions-horizontal {
+        width: 100%;
+        flex-flow: row nowrap;
+    }
+    .k-actions-vertical {
+        flex-flow: column nowrap;
+    }
+
+
+    // Aliases
+    .k-edit-buttons,
+    .k-action-buttons,
+    .k-columnmenu-actions {
+        @extend .k-actions !optional;
+    }
+
+}
+
+
+@mixin kendo-action-buttons--layout() {
+    @include kendo-action-buttons--layout-base();
+}

@@ -1,0 +1,117 @@
+@use "../../mixins/index.import.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin kendo-orgchart--layout-base() {
+
+    // OrgChart
+    .k-orgchart {
+        width: 100%;
+        padding-block: $kendo-orgchart-padding-x;
+        padding-inline: $kendo-orgchart-padding-y;
+        box-sizing: border-box;
+        font-size: $kendo-orgchart-font-size;
+        font-family: $kendo-orgchart-font-family;
+        line-height: $kendo-orgchart-line-height;
+        overflow: auto;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    .k-orgchart-container {
+        margin-block: 0;
+        margin-inline: auto;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    // Nodes
+    .k-orgchart-group {
+        gap: $kendo-orgchart-group-gap;
+    }
+
+    .k-orgchart-group.k-vstack > .k-orgchart-node-container {
+        gap: 0;
+    }
+
+    .k-orgchart-node-container {
+        gap: $kendo-orgchart-node-gap;
+    }
+
+    .k-orgchart-node-group-container {
+        @include border-radius( $kendo-orgchart-node-group-border-radius );
+        padding-block: $kendo-orgchart-node-group-padding-y;
+        padding-inline: $kendo-orgchart-node-group-padding-x;
+        border-width: $kendo-orgchart-node-group-border-width;
+        border-style: solid;
+        outline: 0;
+    }
+
+    .k-orgchart-node-group-title {
+        margin: 0 0 $kendo-orgchart-node-group-title-margin-bottom;
+        font-size: $kendo-orgchart-node-group-title-font-size;
+        line-height: $kendo-orgchart-node-group-title-line-height;
+    }
+
+    .k-orgchart-node-group-subtitle {
+        margin: 0 0 $kendo-orgchart-node-group-subtitle-margin-bottom;
+        font-size: $kendo-orgchart-node-group-subtitle-font-size;
+    }
+
+    // Card
+    .k-orgchart-card {
+        width: $kendo-orgchart-card-width;
+        border-width: $kendo-orgchart-card-border-width;
+
+        .k-card-title {
+            margin: 0 0 $kendo-orgchart-card-title-margin-bottom;
+            font-size: $kendo-orgchart-card-title-font-size;
+        }
+
+        .k-card-subtitle {
+            margin: 0 0 $kendo-orgchart-card-subtitle-margin-bottom;
+            font-size: $kendo-orgchart-card-subtitle-font-size;
+        }
+
+        .k-card-body {
+            border-width: $kendo-orgchart-card-body-border-width;
+            border-style: solid;
+            flex-grow: 0;
+        }
+        .k-card-body .k-card-title-wrap {
+            margin: 0 $kendo-orgchart-card-body-vbox-margin-right 0 0;
+            min-width: 0;
+            min-height: $kendo-orgchart-card-body-vbox-min-height;
+        }
+    }
+
+    // Lines
+    .k-orgchart-line {
+        background-color: currentColor;
+    }
+
+    .k-orgchart-line-h {
+        height: $kendo-orgchart-line-size;
+    }
+
+    .k-orgchart-line-v {
+        margin-block: 0;
+        margin-inline: auto;
+        width: $kendo-orgchart-line-size;
+        height: $kendo-orgchart-line-v-height;
+    }
+
+    // Buttons
+    .k-orgchart-button {
+        z-index: 1;
+    }
+}
+
+
+@mixin kendo-orgchart--layout() {
+    @include kendo-orgchart--layout-base();
+}

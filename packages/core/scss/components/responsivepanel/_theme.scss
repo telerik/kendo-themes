@@ -1,0 +1,10 @@
+@mixin kendo-responsive-panel--theme-base() {
+
+    .k-rpanel {}
+
+}
+
+
+@mixin kendo-responsive-panel--theme() {
+    @include kendo-responsive-panel--theme-base();
+}
