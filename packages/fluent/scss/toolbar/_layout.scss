@@ -43,30 +43,30 @@
             flex-wrap: nowrap;
             position: relative;
             margin-inline-start: calc( var( --INTERNAL--kendo-toolbar-spacing, 0 ) * -1 );
+        }
 
-            &.k-toolbar-scrollable-overlay {
-                &::before {
-                    content: '';
-                    height: 100%;
-                    aspect-ratio: 1;
-                    position: absolute;
-                    inset-inline-start: 0;
-                    z-index: 3;
-                }
+        &.k-toolbar-scrollable-overlay {
 
-                &::after {
-                    content: '';
-                    height: 100%;
-                    aspect-ratio: 1;
-                    position: absolute;
-                    inset-inline-end: 0;
-                    z-index: 3;
-                }
+            &::before,
+            &::after {
+                content: '';
+                height: 100%;
+                aspect-ratio: 1;
+                position: absolute;
+                z-index: 3;
+            }
 
-                &.k-toolbar-scrollable-start::before,
-                &.k-toolbar-scrollable-end::after {
-                    display: none;
-                }
+            &::before {
+                inset-inline-start: var( --INTERNAL--kendo-toolbar-spacing, 0 );
+            }
+
+            &::after {
+                inset-inline-end: 0;
+            }
+
+            &.k-toolbar-scrollable-start::before,
+            &.k-toolbar-scrollable-end::after {
+                display: none;
             }
         }
 
