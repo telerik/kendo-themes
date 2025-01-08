@@ -60,7 +60,7 @@ $kendo-otp-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/otp/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/otp/_variables.scss" with (
     $kendo-otp-gap: $kendo-otp-gap,
     $kendo-otp-sm-gap: $kendo-otp-sm-gap,
     $kendo-otp-md-gap: $kendo-otp-md-gap,

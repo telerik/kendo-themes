@@ -249,7 +249,7 @@ $kendo-taskboard-drag-placeholder-bg: if($kendo-enable-color-system, color-mix(i
 $kendo-taskboard-drag-placeholder-border: $kendo-component-border !default;
 
 
-@forward "@progress/kendo-theme-default/scss/taskboard/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/taskboard/_variables.scss" with (
     $kendo-taskboard-spacer: $kendo-taskboard-spacer,
     $kendo-taskboard-padding-y: $kendo-taskboard-padding-y,
     $kendo-taskboard-padding-x: $kendo-taskboard-padding-x,

@@ -202,7 +202,7 @@ $kendo-color-editor-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/coloreditor/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/coloreditor/_variables.scss" with (
     $kendo-color-editor-spacer: $kendo-color-editor-spacer,
     $kendo-color-editor-min-width: $kendo-color-editor-min-width,
     $kendo-color-editor-sm-min-width: $kendo-color-editor-sm-min-width,
@@ -253,5 +253,6 @@ $kendo-color-editor-sizes: (
     $kendo-color-editor-lg-views-gap: $kendo-color-editor-lg-views-gap,
     $kendo-color-editor-color-gradient-focus-outline-color: $kendo-color-editor-color-gradient-focus-outline-color,
     $kendo-color-editor-color-gradient-focus-outline: $kendo-color-editor-color-gradient-focus-outline,
-    $kendo-color-editor-color-gradient-focus-outline-offset: $kendo-color-editor-color-gradient-focus-outline-offset
+    $kendo-color-editor-color-gradient-focus-outline-offset: $kendo-color-editor-color-gradient-focus-outline-offset,
+    $kendo-color-editor-sizes: $kendo-color-editor-sizes
 );

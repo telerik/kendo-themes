@@ -54,7 +54,7 @@ $kendo-floating-label-focus-bg: null !default;
 $kendo-floating-label-focus-text: null !default;
 
 
-@forward "@progress/kendo-theme-default/scss/floating-label/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/floating-label/_variables.scss" with (
     $kendo-floating-label-scale: $kendo-floating-label-scale,
     $kendo-floating-label-font-size: $kendo-floating-label-font-size,
     $kendo-floating-label-max-width: $kendo-floating-label-max-width,

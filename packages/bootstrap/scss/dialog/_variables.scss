@@ -36,7 +36,7 @@ $kendo-dialog-theme-colors: (
 ) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/dialog/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (
     $kendo-dialog-titlebar-bg: $kendo-dialog-titlebar-bg,
     $kendo-dialog-titlebar-text: $kendo-dialog-titlebar-text,
     $kendo-dialog-titlebar-border: $kendo-dialog-titlebar-border,

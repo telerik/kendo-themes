@@ -41,7 +41,7 @@ $kendo-chart-wizard-chart-type-spacing: k-spacing(6) !default;
 $kendo-chart-wizard-icon-text-gap: k-spacing(3) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/chart-wizard/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/chart-wizard/_variables.scss" with (
     $kendo-chart-wizard-icon-area-color: $kendo-chart-wizard-icon-area-color,
     $kendo-chart-wizard-icon-area-bg: $kendo-chart-wizard-icon-area-bg,
     $kendo-chart-wizard-icon-area-border-radius: $kendo-chart-wizard-icon-area-border-radius,

@@ -45,7 +45,7 @@ $kendo-media-player-titlebar-border: null !default;
 $kendo-media-player-titlebar-gradient: if($kendo-enable-color-system, ( color-mix(in srgb, k-color( on-app-surface ) 70%, transparent), color-mix(in srgb, k-color( on-app-surface ) 0%, transparent) ), ( rgba( $kendo-media-player-text, .7 ), rgba( $kendo-media-player-text, 0 ) )) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/mediaplayer/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/mediaplayer/_variables.scss" with (
     $kendo-media-player-border-width: $kendo-media-player-border-width,
     $kendo-media-player-font-family: $kendo-media-player-font-family,
     $kendo-media-player-font-size: $kendo-media-player-font-size,

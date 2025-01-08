@@ -6,7 +6,7 @@ $kendo-overlay-bg: $kendo-color-black !default;
 $kendo-overlay-opacity: .5 !default;
 
 
-@forward "@progress/kendo-theme-default/scss/overlay/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/overlay/_variables.scss" with (
     $kendo-overlay-theme-colors: $kendo-overlay-theme-colors,
     $kendo-overlay-bg: $kendo-overlay-bg,
     $kendo-overlay-opacity: $kendo-overlay-opacity

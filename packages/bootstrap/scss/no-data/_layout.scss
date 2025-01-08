@@ -1,4 +1,4 @@
-@use "@progress/kendo-theme-default/scss/no-data/_layout.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/no-data/_layout.scss" as *;
 
 @mixin kendo-no-data--layout() {
     @include kendo-no-data--layout-base();

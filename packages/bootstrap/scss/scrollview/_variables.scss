@@ -95,7 +95,7 @@ $kendo-scrollview-transition-duration: .3s !default;
 $kendo-scrollview-transition-timing-function: ease-in-out !default;
 
 
-@forward "@progress/kendo-theme-default/scss/scrollview/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/scrollview/_variables.scss" with (
     $kendo-scrollview-border-width: $kendo-scrollview-border-width,
     $kendo-scrollview-font-family: $kendo-scrollview-font-family,
     $kendo-scrollview-font-size: $kendo-scrollview-font-size,

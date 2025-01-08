@@ -110,7 +110,7 @@ $kendo-drawer-selected-hover-bg: if($kendo-enable-color-system, k-color( primary
 $kendo-drawer-selected-hover-text: $kendo-selected-text !default;
 
 
-@forward "@progress/kendo-theme-default/scss/drawer/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/drawer/_variables.scss" with (
     $kendo-drawer-bg: $kendo-drawer-bg,
     $kendo-drawer-text: $kendo-drawer-text,
     $kendo-drawer-border: $kendo-drawer-border,

@@ -75,7 +75,7 @@ $kendo-time-selector-sizes: (
 ) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/timeselector/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/timeselector/_variables.scss" with (
     $kendo-time-selector-border-width: $kendo-time-selector-border-width,
     $kendo-time-selector-font-family: $kendo-time-selector-font-family,
     $kendo-time-selector-font-size: $kendo-time-selector-font-size,

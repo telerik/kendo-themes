@@ -16,7 +16,7 @@ $kendo-listgroup-item-padding-y: k-spacing(2) !default;
 $kendo-listgroup-item-border-width: $kendo-listgroup-border-width !default;
 
 
-@forward "@progress/kendo-theme-default/scss/listgroup/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/listgroup/_variables.scss" with (
     $kendo-listgroup-border-width: $kendo-listgroup-border-width,
     $kendo-listgroup-border-radius: $kendo-listgroup-border-radius,
     $kendo-listgroup-font-size: $kendo-listgroup-font-size,
