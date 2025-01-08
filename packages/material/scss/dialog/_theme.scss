@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
-@use "@progress/kendo-theme-default/scss/dialog/_theme.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/dialog/_theme.scss" as *;
 
 
 @mixin kendo-dialog--theme() {

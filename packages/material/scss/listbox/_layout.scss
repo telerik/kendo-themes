@@ -1,5 +1,5 @@
 @use "./_variables.scss" as *;
-@use "@progress/kendo-theme-default/scss/listbox/_layout.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/listbox/_layout.scss" as *;
 
 
 @mixin kendo-listbox--layout() {

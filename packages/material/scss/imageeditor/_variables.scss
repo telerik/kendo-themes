@@ -43,7 +43,7 @@ $kendo-image-editor-crop-border: white !default;
 
 $kendo-image-editor-crop-overlay-bg: rgba( black, .3 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/imageeditor/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/imageeditor/_variables.scss" with (
     $kendo-image-editor-margin-y: $kendo-image-editor-margin-y,
     $kendo-image-editor-margin-x: $kendo-image-editor-margin-x,
     $kendo-image-editor-padding-y: $kendo-image-editor-padding-y,

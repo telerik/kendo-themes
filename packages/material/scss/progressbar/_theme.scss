@@ -1,5 +1,5 @@
 @use "./_variables.scss" as *;
-@use "@progress/kendo-theme-default/scss/progressbar/_theme.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/progressbar/_theme.scss" as *;
 
 @function _translate($direction, $value) { // stylelint-disable-line
     @return if($direction == horizontal, translateX($value), translateY($value));

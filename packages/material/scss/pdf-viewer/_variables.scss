@@ -139,7 +139,7 @@ $kendo-pdf-viewer-free-text-annotation-placeholder-text: rgba(124, 22, 27, 0.5) 
 /// @group pdf-viewer
 $kendo-pdf-viewer-free-text-annotation-text: rgba(124, 22, 27, 0.7) !default;
 
-@forward "@progress/kendo-theme-default/scss/pdf-viewer/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/pdf-viewer/_variables.scss" with (
     $kendo-pdf-viewer-border-width: $kendo-pdf-viewer-border-width,
     $kendo-pdf-viewer-font-family: $kendo-pdf-viewer-font-family,
     $kendo-pdf-viewer-font-size: $kendo-pdf-viewer-font-size,

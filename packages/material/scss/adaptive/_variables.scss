@@ -30,7 +30,7 @@ $kendo-adaptive-scheduler-current-text: $kendo-color-primary !default;
 $kendo-adaptive-scheduler-base-text: inherit !default;
 $kendo-adaptive-scheduler-subtle-text: $kendo-subtle-text !default;
 
-@forward "@progress/kendo-theme-default/scss/adaptive/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/adaptive/_variables.scss" with (
     $kendo-adaptive-bg: $kendo-adaptive-bg,
     $kendo-adaptive-text: $kendo-adaptive-text,
     $kendo-adaptive-border: $kendo-adaptive-border,

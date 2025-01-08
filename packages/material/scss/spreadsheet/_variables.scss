@@ -278,7 +278,7 @@ $kendo-spreadsheet-filter-menu-link-padding-x: calc( #{$kendo-icon-size} + calc(
 
 $kendo-spreadsheet-filter-menu-icon-margin: 0 k-spacing(1) 0 calc(-1 * ( #{$kendo-icon-size} + #{k-spacing(1)} ) ) !default;
 
-@forward "@progress/kendo-theme-default/scss/spreadsheet/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/spreadsheet/_variables.scss" with (
     $kendo-spreadsheet-border-width: $kendo-spreadsheet-border-width,
     $kendo-spreadsheet-font-family: $kendo-spreadsheet-font-family,
     $kendo-spreadsheet-font-size: $kendo-spreadsheet-font-size,
@@ -304,6 +304,7 @@ $kendo-spreadsheet-filter-menu-icon-margin: 0 k-spacing(1) 0 calc(-1 * ( #{$kend
     $kendo-spreadsheet-formula-input-padding-x: $kendo-spreadsheet-formula-input-padding-x,
     $kendo-spreadsheet-formula-input-padding-y: $kendo-spreadsheet-formula-input-padding-y,
     $kendo-spreadsheet-formula-input-line-height: $kendo-spreadsheet-formula-input-line-height,
+    $kendo-spreadsheet-formula-bar-icon-padding: $kendo-spreadsheet-formula-bar-icon-padding,
     $kendo-spreadsheet-view-font-family: $kendo-spreadsheet-view-font-family,
     $kendo-spreadsheet-view-font-size: $kendo-spreadsheet-view-font-size,
     $kendo-spreadsheet-selection-bg: $kendo-spreadsheet-selection-bg,

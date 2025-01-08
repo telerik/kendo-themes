@@ -216,7 +216,7 @@ $kendo-chat-quick-reply-shadow-spread: unset !default;
 /// @group chat
 $kendo-chat-quick-reply-shadow-opacity: 0 !default;
 
-@forward "@progress/kendo-theme-default/scss/chat/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/chat/_variables.scss" with (
     $kendo-chat-padding-x: $kendo-chat-padding-x,
     $kendo-chat-padding-y: $kendo-chat-padding-y,
     $kendo-chat-width: $kendo-chat-width,

@@ -30,7 +30,7 @@ $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
 
 $kendo-drop-hint-bg: $kendo-color-primary !default;
 
-@forward "@progress/kendo-theme-default/scss/draggable/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/draggable/_variables.scss" with (
     $kendo-drag-hint-padding-x: $kendo-drag-hint-padding-x,
     $kendo-drag-hint-padding-y: $kendo-drag-hint-padding-y,
     $kendo-drag-hint-border-width: $kendo-drag-hint-border-width,

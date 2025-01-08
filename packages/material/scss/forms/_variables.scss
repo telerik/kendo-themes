@@ -191,7 +191,7 @@ $kendo-form-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/forms/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/forms/_variables.scss" with (
     $kendo-form-spacer: $kendo-form-spacer,
     $kendo-form-font-size: $kendo-form-font-size,
     $kendo-form-line-height: $kendo-form-line-height,

@@ -157,7 +157,7 @@ $kendo-table-selected-text: null !default;
 /// @group table
 $kendo-table-selected-border: null !default;
 
-@forward "@progress/kendo-theme-default/scss/table/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/table/_variables.scss" with (
     $kendo-table-border-width: $kendo-table-border-width,
     $kendo-table-cell-vertical-border-width: $kendo-table-cell-vertical-border-width,
     $kendo-table-cell-horizontal-border-width: $kendo-table-cell-horizontal-border-width,

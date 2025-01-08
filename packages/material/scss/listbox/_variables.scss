@@ -52,7 +52,7 @@ $kendo-listbox-drop-hint-width: 2px !default;
 /// @group listbox
 $kendo-listbox-drop-hint-border-width: 2px !default;
 
-@forward "@progress/kendo-theme-default/scss/listbox/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/listbox/_variables.scss" with (
     $kendo-listbox-spacing: $kendo-listbox-spacing,
     $kendo-listbox-button-spacing: $kendo-listbox-button-spacing,
     $kendo-listbox-width: $kendo-listbox-width,

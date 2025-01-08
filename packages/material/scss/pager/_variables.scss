@@ -175,7 +175,7 @@ $kendo-pager-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/pager/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/pager/_variables.scss" with (
     $kendo-pager-padding-x: $kendo-pager-padding-x,
     $kendo-pager-sm-padding-x: $kendo-pager-sm-padding-x,
     $kendo-pager-md-padding-x: $kendo-pager-md-padding-x,

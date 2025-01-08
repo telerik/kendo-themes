@@ -1,6 +1,6 @@
 @use "sass:math";
 @use "../core/_index.scss" as *;
-@use "@progress/kendo-theme-default/scss/scheduler/_layout.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/scheduler/_layout.scss" as *;
 
 
 @mixin kendo-scheduler--layout() {

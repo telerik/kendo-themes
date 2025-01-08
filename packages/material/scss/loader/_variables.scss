@@ -126,7 +126,7 @@ $kendo-loading-opacity: .3 !default;
 /// @group loading
 $kendo-zindex-loading: 100 !default;
 
-@forward "@progress/kendo-theme-default/scss/loader/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/loader/_variables.scss" with (
     $kendo-loader-segment-border-radius: $kendo-loader-segment-border-radius,
     $kendo-loader-sm-segment-size: $kendo-loader-sm-segment-size,
     $kendo-loader-md-segment-size: $kendo-loader-md-segment-size,

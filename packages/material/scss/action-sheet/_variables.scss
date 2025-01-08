@@ -92,7 +92,7 @@ $kendo-adaptive-actionsheet-content-padding-x: k-spacing(4) !default;
 $kendo-adaptive-actionsheet-footer-padding-y: k-spacing(2) !default;
 $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
 
-@forward "@progress/kendo-theme-default/scss/action-sheet/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/action-sheet/_variables.scss" with (
     $kendo-actionsheet-padding-x: $kendo-actionsheet-padding-x,
     $kendo-actionsheet-padding-y: $kendo-actionsheet-padding-y,
     $kendo-actionsheet-width: $kendo-actionsheet-width,

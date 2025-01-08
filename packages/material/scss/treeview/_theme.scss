@@ -1,6 +1,6 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
-@use "@progress/kendo-theme-default/scss/treeview/_theme.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/treeview/_theme.scss" as *;
 
 
 @mixin kendo-treeview--theme() {

@@ -16,7 +16,7 @@ $kendo-message-box-border-level: -9 !default;
 $kendo-message-box-link-font-style: normal !default;
 $kendo-message-box-link-text-decoration: underline !default;
 
-@forward "@progress/kendo-theme-default/scss/messagebox/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/messagebox/_variables.scss" with (
     $kendo-message-box-margin: $kendo-message-box-margin,
     $kendo-message-box-padding-x: $kendo-message-box-padding-x,
     $kendo-message-box-padding-y: $kendo-message-box-padding-y,

@@ -253,7 +253,7 @@ $kendo-list-group-item-shadow: null !default;
 /// @group list
 $kendo-list-option-label-text: $kendo-subtle-text !default;
 
-@forward "@progress/kendo-theme-default/scss/list/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/list/_variables.scss" with (
     $kendo-list-font-family: $kendo-list-font-family,
     $kendo-list-font-size: $kendo-list-font-size,
     $kendo-list-sm-font-size: $kendo-list-sm-font-size,

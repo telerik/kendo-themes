@@ -182,7 +182,7 @@ $kendo-chip-list-sizes: (
     lg: k-spacing(1)
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/chip/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/chip/_variables.scss" with (
     $kendo-chip-border-width: $kendo-chip-border-width,
     $kendo-chip-spacing: $kendo-chip-spacing,
     $kendo-chip-padding-x: $kendo-chip-padding-x,

@@ -328,7 +328,7 @@ $kendo-grid-row-resizer-active-bg: $kendo-color-primary !default;
 /// @group grid
 $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
 
-@forward "@progress/kendo-theme-default/scss/grid/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
     $kendo-grid-border-width: $kendo-grid-border-width,
     $kendo-grid-font-family: $kendo-grid-font-family,
     $kendo-grid-font-size: $kendo-grid-font-size,

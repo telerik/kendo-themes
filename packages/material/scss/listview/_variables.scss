@@ -62,7 +62,7 @@ $kendo-listview-item-focus-border: null !default;
 /// @group listview
 $kendo-listview-item-focus-shadow: unset !default;
 
-@forward "@progress/kendo-theme-default/scss/listview/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/listview/_variables.scss" with (
     $kendo-listview-padding-x: $kendo-listview-padding-x,
     $kendo-listview-padding-y: $kendo-listview-padding-y,
     $kendo-listview-border-width: $kendo-listview-border-width,

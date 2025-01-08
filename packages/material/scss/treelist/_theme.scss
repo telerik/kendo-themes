@@ -1,5 +1,5 @@
 @use "./_variables.scss" as *;
-@use "@progress/kendo-theme-default/scss/treelist/_theme.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/treelist/_theme.scss" as *;
 
 @mixin kendo-treelist--theme() {
 

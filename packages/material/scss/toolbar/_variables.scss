@@ -182,7 +182,7 @@ $kendo-toolbar-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/toolbar/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/toolbar/_variables.scss" with (
     $kendo-toolbar-padding-x: $kendo-toolbar-padding-x,
     $kendo-toolbar-sm-padding-x: $kendo-toolbar-sm-padding-x,
     $kendo-toolbar-md-padding-x: $kendo-toolbar-md-padding-x,
@@ -195,6 +195,7 @@ $kendo-toolbar-sizes: (
     $kendo-toolbar-sm-spacing: $kendo-toolbar-sm-spacing,
     $kendo-toolbar-md-spacing: $kendo-toolbar-md-spacing,
     $kendo-toolbar-lg-spacing: $kendo-toolbar-lg-spacing,
+    $kendo-toolbar-separator-height: $kendo-toolbar-separator-height,
     $kendo-toolbar-border-width: $kendo-toolbar-border-width,
     $kendo-toolbar-border-radius: $kendo-toolbar-border-radius,
     $kendo-toolbar-font-family: $kendo-toolbar-font-family,
@@ -218,6 +219,12 @@ $kendo-toolbar-sizes: (
     $kendo-toolbar-separator-border: $kendo-toolbar-separator-border,
     $kendo-toolbar-input-width: $kendo-toolbar-input-width,
     $kendo-toolbar-item-shadow: $kendo-toolbar-item-shadow,
-    $kendo-toolbar-sizes: $kendo-toolbar-sizes,
-    $kendo-toolbar-overflow-container-font-size: $kendo-toolbar-overflow-container-font-size
+    $kendo-toolbar-scroll-overlay: $kendo-toolbar-scroll-overlay,
+    $kendo-toolbar-flat-scroll-overlay: $kendo-toolbar-flat-scroll-overlay,
+    $kendo-toolbar-outline-scroll-overlay: $kendo-toolbar-outline-scroll-overlay,
+    $kendo-toolbar-overflow-container-font-size: $kendo-toolbar-overflow-container-font-size,
+    $kendo-toolbar-overflow-container-line-height: $kendo-toolbar-overflow-container-line-height,
+    $kendo-toolbar-overflow-button-padding-y: $kendo-toolbar-overflow-button-padding-y,
+    $kendo-toolbar-overflow-button-padding-x: $kendo-toolbar-overflow-button-padding-x,
+    $kendo-toolbar-sizes: $kendo-toolbar-sizes
 );
