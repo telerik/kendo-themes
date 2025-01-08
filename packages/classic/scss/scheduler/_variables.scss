@@ -273,7 +273,7 @@ $kendo-scheduler-marquee-label-inset-x: k-spacing(1) !default;
 $kendo-scheduler-marquee-label-inset-y: k-spacing(0.5) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/scheduler/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/scheduler/_variables.scss" with (
     $kendo-scheduler-border-width: $kendo-scheduler-border-width,
     $kendo-scheduler-font-family: $kendo-scheduler-font-family,
     $kendo-scheduler-font-size: $kendo-scheduler-font-size,

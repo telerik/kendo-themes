@@ -1,4 +1,4 @@
-@use "@progress/kendo-theme-default/scss/gridlayout/_layout.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/gridlayout/_layout.scss" as *;
 
 @mixin kendo-grid-layout--layout() {
     @include kendo-grid-layout--layout-base();

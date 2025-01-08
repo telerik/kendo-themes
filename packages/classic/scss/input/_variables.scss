@@ -451,10 +451,12 @@ $kendo-picker-flat-hover-focus-text: null !default;
 /// @group picker
 $kendo-picker-flat-hover-focus-border: null !default;
 
+$kendo-use-input-button-width: false !default;
+$kendo-use-input-spinner-width: false !default;
+$kendo-use-input-spinner-icon-offset: false !default;
 
 
-
-@forward "@progress/kendo-theme-default/scss/input/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/input/_variables.scss" with (
     $kendo-input-default-width: $kendo-input-default-width,
     $kendo-input-border-width: $kendo-input-border-width,
     $kendo-input-border-height: $kendo-input-border-height,
@@ -583,5 +585,8 @@ $kendo-picker-flat-hover-focus-border: null !default;
     $kendo-picker-flat-focus-shadow: $kendo-picker-flat-focus-shadow,
     $kendo-picker-flat-hover-focus-bg: $kendo-picker-flat-hover-focus-bg,
     $kendo-picker-flat-hover-focus-text: $kendo-picker-flat-hover-focus-text,
-    $kendo-picker-flat-hover-focus-border: $kendo-picker-flat-hover-focus-border
+    $kendo-picker-flat-hover-focus-border: $kendo-picker-flat-hover-focus-border,
+    $kendo-use-input-button-width: $kendo-use-input-button-width,
+    $kendo-use-input-spinner-width: $kendo-use-input-spinner-width,
+    $kendo-use-input-spinner-icon-offset: $kendo-use-input-spinner-icon-offset
 );

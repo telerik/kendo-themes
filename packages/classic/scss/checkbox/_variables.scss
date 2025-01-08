@@ -195,7 +195,7 @@ $kendo-checkbox-ripple-bg: $kendo-checkbox-checked-bg !default;
 $kendo-checkbox-ripple-opacity: .25 !default;
 
 
-@forward "@progress/kendo-theme-default/scss/checkbox/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/checkbox/_variables.scss" with (
     $kendo-checkbox-border-width: $kendo-checkbox-border-width,
     $kendo-checkbox-sm-size: $kendo-checkbox-sm-size,
     $kendo-checkbox-md-size: $kendo-checkbox-md-size,

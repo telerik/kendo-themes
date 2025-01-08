@@ -336,7 +336,7 @@ $kendo-display: (
 ) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/typography/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/typography/_variables.scss" with (
     $kendo-h1-font-size: $kendo-h1-font-size,
     $kendo-h2-font-size: $kendo-h2-font-size,
     $kendo-h3-font-size: $kendo-h3-font-size,

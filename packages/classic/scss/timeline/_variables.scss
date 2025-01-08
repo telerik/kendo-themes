@@ -172,7 +172,7 @@ $kendo-timeline-event-height: 600px !default;
 $kendo-timeline-event-min-height-calc: calc(2 * (#{$kendo-timeline-track-event-offset} - #{$kendo-card-border-width})) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/timeline/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/timeline/_variables.scss" with (
     $kendo-timeline-spacing-x: $kendo-timeline-spacing-x,
     $kendo-timeline-spacing-y: $kendo-timeline-spacing-y,
     $kendo-timeline-items-padding: $kendo-timeline-items-padding,

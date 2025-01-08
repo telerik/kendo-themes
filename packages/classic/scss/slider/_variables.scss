@@ -125,7 +125,7 @@ $kendo-slider-tick-horizontal-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4
 $kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
 
 
-@forward "@progress/kendo-theme-default/scss/slider/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/slider/_variables.scss" with (
     $kendo-slider-size: $kendo-slider-size,
     $kendo-slider-tick-size: $kendo-slider-tick-size,
     $kendo-slider-alt-size: $kendo-slider-alt-size,

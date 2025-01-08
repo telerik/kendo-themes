@@ -41,7 +41,7 @@ $kendo-popup-border: $kendo-component-border !default;
 $kendo-popup-shadow: k-elevation(4) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/popup/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/popup/_variables.scss" with (
     $kendo-popup-padding-x: $kendo-popup-padding-x,
     $kendo-popup-padding-y: $kendo-popup-padding-y,
     $kendo-popup-border-width: $kendo-popup-border-width,

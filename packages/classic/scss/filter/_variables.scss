@@ -32,7 +32,7 @@ $kendo-filter-preview-operator-text: $kendo-subtle-text !default;
 $kendo-filter-toolbar-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .08) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/filter/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (
     $kendo-filter-padding-x: $kendo-filter-padding-x,
     $kendo-filter-padding-y: $kendo-filter-padding-y,
     $kendo-filter-bottom-margin: $kendo-filter-bottom-margin,

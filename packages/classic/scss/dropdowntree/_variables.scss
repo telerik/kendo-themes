@@ -10,7 +10,7 @@ $kendo-dropdowntree-popup-padding-x: k-spacing(2) !default;
 $kendo-dropdowntree-popup-padding-y: k-spacing(2) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/dropdowntree/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/dropdowntree/_variables.scss" with (
     $kendo-dropdowntree-popup-padding-x: $kendo-dropdowntree-popup-padding-x,
     $kendo-dropdowntree-popup-padding-y: $kendo-dropdowntree-popup-padding-y
 );

@@ -245,7 +245,7 @@ $kendo-theme-colors: (
     "inverse": $kendo-color-inverse
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/core/color-system/_swatch-legacy.scss" with (
+@forward "@progress/kendo-theme-core/scss/color-system/_swatch-legacy.scss" with (
     $kendo-color-primary: $kendo-color-primary,
     $kendo-color-primary-lighter: $kendo-color-primary-lighter,
     $kendo-color-primary-darker: $kendo-color-primary-darker,

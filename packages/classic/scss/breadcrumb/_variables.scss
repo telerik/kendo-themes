@@ -233,7 +233,7 @@ $kendo-breadcrumb-sizes: (
 ) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/breadcrumb/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/breadcrumb/_variables.scss" with (
     $kendo-breadcrumb-border-width: $kendo-breadcrumb-border-width,
     $kendo-breadcrumb-margin-x: $kendo-breadcrumb-margin-x,
     $kendo-breadcrumb-margin-y: $kendo-breadcrumb-margin-y,

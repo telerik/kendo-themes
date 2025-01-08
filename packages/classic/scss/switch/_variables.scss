@@ -195,7 +195,7 @@ $kendo-switch-on-thumb-hover-border: if($kendo-enable-color-system, k-color( pri
 $kendo-switch-on-thumb-hover-gradient: null !default;
 
 
-@forward "@progress/kendo-theme-default/scss/switch/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/switch/_variables.scss" with (
     $kendo-switch-font-family: $kendo-switch-font-family,
     $kendo-switch-track-border-width: $kendo-switch-track-border-width,
     $kendo-switch-thumb-border-width: $kendo-switch-thumb-border-width,

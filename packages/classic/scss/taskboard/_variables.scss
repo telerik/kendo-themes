@@ -231,10 +231,10 @@ $kendo-taskboard-card-selected-shadow: none !default;
 $kendo-taskboard-card-header-text: $kendo-color-primary !default;
 /// The text color of the hovered TaskBoard Card header text.
 /// @group taskboard
-$kendo-taskboard-card-header-focus-text: $kendo-color-primary-darker !default;
+$kendo-taskboard-card-header-focus-text: if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker) !default;
 /// The text color of the focused TaskBoard Card header text.
 /// @group taskboard
-$kendo-taskboard-card-header-hover-text: $kendo-color-primary-darker !default;
+$kendo-taskboard-card-header-hover-text: if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker) !default;
 
 /// The border width of the TaskBoard Card placeholder.
 /// @group taskboard
@@ -250,7 +250,7 @@ $kendo-taskboard-drag-placeholder-bg: rgba( white, .2 ) !default;
 $kendo-taskboard-drag-placeholder-border: $kendo-component-border !default;
 
 
-@forward "@progress/kendo-theme-default/scss/taskboard/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/taskboard/_variables.scss" with (
     $kendo-taskboard-spacer: $kendo-taskboard-spacer,
     $kendo-taskboard-padding-y: $kendo-taskboard-padding-y,
     $kendo-taskboard-padding-x: $kendo-taskboard-padding-x,

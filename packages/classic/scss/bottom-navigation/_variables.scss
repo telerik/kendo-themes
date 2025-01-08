@@ -65,7 +65,7 @@ $kendo-bottom-nav-flat-bg: $kendo-component-bg !default;
 $kendo-bottom-nav-flat-border: $kendo-component-border !default;
 
 
-@forward "@progress/kendo-theme-default/scss/bottom-navigation/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/bottom-navigation/_variables.scss" with (
     $kendo-bottom-nav-padding-x: $kendo-bottom-nav-padding-x,
     $kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-y,
     $kendo-bottom-nav-gap: $kendo-bottom-nav-gap,

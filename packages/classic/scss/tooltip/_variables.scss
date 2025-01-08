@@ -60,7 +60,7 @@ $kendo-tooltip-theme-colors: $kendo-theme-colors !default;
 $kendo-tooltip-theme: tooltip-theme( $kendo-tooltip-theme-colors ) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/tooltip/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/tooltip/_variables.scss" with (
     $kendo-tooltip-padding-y: $kendo-tooltip-padding-y,
     $kendo-tooltip-padding-x: $kendo-tooltip-padding-x,
     $kendo-tooltip-border-width: $kendo-tooltip-border-width,
