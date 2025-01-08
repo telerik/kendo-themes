@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/_index.scss" as *;
 @use "./variables.scss" as *;
 
@@ -51,6 +52,19 @@
         &.k-selected:hover {
             position: relative;
             z-index: 100;
+        }
+    }
+
+    // ColorPalette sizes
+    @each $size, $size-props in $kendo-color-palette-sizes {
+        $_tile-width: map.get( $size-props, width );
+        $_tile-height: map.get( $size-props, height );
+
+        .k-colorpalette-#{$size} {
+            .k-colorpalette-tile {
+                width: $_tile-width;
+                height: $_tile-height;
+            }
         }
     }
 

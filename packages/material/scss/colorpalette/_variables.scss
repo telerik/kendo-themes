@@ -20,22 +20,22 @@ $kendo-color-palette-tile-width: k-spacing(6) !default;
 $kendo-color-palette-tile-height: $kendo-color-palette-tile-width !default;
 // The width of the small ColorPalette tile.
 /// @group color-palette
-$kendo-color-palette-tile-sm-width: k-spacing(5.5) !default;
+$kendo-color-palette-sm-tile-width: k-spacing(5.5) !default;
 /// The height of the small ColorPalette tile.
 /// @group color-palette
-$kendo-color-palette-tile-sm-height: $kendo-color-palette-tile-sm-width !default;
+$kendo-color-palette-sm-tile-height: $kendo-color-palette-sm-tile-width !default;
 /// The width of the medium ColorPalette tile.
 /// @group color-palette
-$kendo-color-palette-tile-md-width: $kendo-color-palette-tile-width !default;
+$kendo-color-palette-md-tile-width: $kendo-color-palette-tile-width !default;
 /// The height of the medium ColorPalette tile.
 /// @group color-palette
-$kendo-color-palette-tile-md-height: $kendo-color-palette-tile-height !default;
+$kendo-color-palette-md-tile-height: $kendo-color-palette-tile-height !default;
 /// The width of the large ColorPalette tile.
 /// @group color-palette
-$kendo-color-palette-tile-lg-width: k-spacing(8) !default;
+$kendo-color-palette-lg-tile-width: k-spacing(8) !default;
 /// The height of the large ColorPalette tile.
 /// @group color-palette
-$kendo-color-palette-tile-lg-height: $kendo-color-palette-tile-lg-width !default;
+$kendo-color-palette-lg-tile-height: $kendo-color-palette-lg-tile-width !default;
 /// The shadow of the ColorPalette focused tile.
 /// @group color-palette
 $kendo-color-palette-tile-focus-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .5 ) !default;
@@ -50,16 +50,16 @@ $kendo-color-palette-tile-selected-shadow: 0 1px 3px 1px rgba( black, .3 ), inse
 /// @group color-palette
 $kendo-color-palette-sizes: (
     sm: (
-        width: $kendo-color-palette-tile-sm-width,
-        height: $kendo-color-palette-tile-sm-height
+        width: $kendo-color-palette-sm-tile-width,
+        height: $kendo-color-palette-sm-tile-height
     ),
     md: (
-        width: $kendo-color-palette-tile-md-width,
-        height: $kendo-color-palette-tile-md-height
+        width: $kendo-color-palette-md-tile-width,
+        height: $kendo-color-palette-md-tile-height
     ),
     lg: (
-        width: $kendo-color-palette-tile-lg-width,
-        height: $kendo-color-palette-tile-lg-height
+        width: $kendo-color-palette-lg-tile-width,
+        height: $kendo-color-palette-lg-tile-height
     )
 ) !default;
 
@@ -69,12 +69,12 @@ $kendo-color-palette-sizes: (
     $kendo-color-palette-line-height: $kendo-color-palette-line-height,
     $kendo-color-palette-tile-width: $kendo-color-palette-tile-width,
     $kendo-color-palette-tile-height: $kendo-color-palette-tile-height,
-    $kendo-color-palette-tile-sm-width: $kendo-color-palette-tile-sm-width,
-    $kendo-color-palette-tile-sm-height: $kendo-color-palette-tile-sm-height,
-    $kendo-color-palette-tile-md-width: $kendo-color-palette-tile-md-width,
-    $kendo-color-palette-tile-md-height: $kendo-color-palette-tile-md-height,
-    $kendo-color-palette-tile-lg-width: $kendo-color-palette-tile-lg-width,
-    $kendo-color-palette-tile-lg-height: $kendo-color-palette-tile-lg-height,
+    $kendo-color-palette-sm-tile-width: $kendo-color-palette-sm-tile-width,
+    $kendo-color-palette-sm-tile-height: $kendo-color-palette-sm-tile-height,
+    $kendo-color-palette-md-tile-width: $kendo-color-palette-md-tile-width,
+    $kendo-color-palette-md-tile-height: $kendo-color-palette-md-tile-height,
+    $kendo-color-palette-lg-tile-width: $kendo-color-palette-lg-tile-width,
+    $kendo-color-palette-lg-tile-height: $kendo-color-palette-lg-tile-height,
     $kendo-color-palette-tile-focus-shadow: $kendo-color-palette-tile-focus-shadow,
     $kendo-color-palette-tile-hover-shadow: $kendo-color-palette-tile-hover-shadow,
     $kendo-color-palette-tile-selected-shadow: $kendo-color-palette-tile-selected-shadow
