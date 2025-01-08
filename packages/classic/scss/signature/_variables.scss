@@ -53,7 +53,7 @@ $kendo-signature-actions-gap: k-spacing(1) !default;
 $kendo-signature-maximized-line-width: 3px !default;
 
 
-@forward "@progress/kendo-theme-default/scss/signature/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/signature/_variables.scss" with (
     $kendo-signature-width: $kendo-signature-width,
     $kendo-signature-height: $kendo-signature-height,
     $kendo-signature-lg-min-height: $kendo-signature-lg-min-height,

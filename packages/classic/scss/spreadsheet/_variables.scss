@@ -282,7 +282,7 @@ $kendo-spreadsheet-filter-menu-link-padding-x: calc( #{$kendo-icon-size} + calc(
 $kendo-spreadsheet-filter-menu-icon-margin: 0 k-spacing(1) 0 calc(-1 * ( #{$kendo-icon-size} + #{k-spacing(1)} ) ) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/spreadsheet/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/spreadsheet/_variables.scss" with (
     $kendo-spreadsheet-border-width: $kendo-spreadsheet-border-width,
     $kendo-spreadsheet-font-family: $kendo-spreadsheet-font-family,
     $kendo-spreadsheet-font-size: $kendo-spreadsheet-font-size,

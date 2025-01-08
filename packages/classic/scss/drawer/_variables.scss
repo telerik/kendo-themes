@@ -111,7 +111,7 @@ $kendo-drawer-selected-hover-bg: $kendo-selected-hover-bg !default;
 $kendo-drawer-selected-hover-text: $kendo-selected-hover-text !default;
 
 
-@forward "@progress/kendo-theme-default/scss/drawer/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/drawer/_variables.scss" with (
     $kendo-drawer-bg: $kendo-drawer-bg,
     $kendo-drawer-text: $kendo-drawer-text,
     $kendo-drawer-border: $kendo-drawer-border,

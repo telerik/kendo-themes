@@ -226,7 +226,7 @@ $kendo-tabstrip-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/tabstrip/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/tabstrip/_variables.scss" with (
     $kendo-tabstrip-wrapper-padding-x: $kendo-tabstrip-wrapper-padding-x,
     $kendo-tabstrip-wrapper-padding-y: $kendo-tabstrip-wrapper-padding-y,
     $kendo-tabstrip-wrapper-border-width: $kendo-tabstrip-wrapper-border-width,
@@ -287,5 +287,6 @@ $kendo-tabstrip-sizes: (
     $kendo-tabstrip-content-text: $kendo-tabstrip-content-text,
     $kendo-tabstrip-content-border: $kendo-tabstrip-content-border,
     $kendo-tabstrip-content-focus-border: $kendo-tabstrip-content-focus-border,
-    $kendo-tabstrip-scroll-overlay: $kendo-tabstrip-scroll-overlay
+    $kendo-tabstrip-scroll-overlay: $kendo-tabstrip-scroll-overlay,
+    $kendo-tabstrip-sizes: $kendo-tabstrip-sizes
 );

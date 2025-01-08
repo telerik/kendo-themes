@@ -261,7 +261,7 @@ $kendo-flat-button-focus-ring-opacity: .12 !default;
 $kendo-button-transition: color .2s ease-in-out !default;
 
 
-@forward "@progress/kendo-theme-default/scss/button/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-border-radius: $kendo-button-border-radius,
     $kendo-button-padding-x: $kendo-button-padding-x,

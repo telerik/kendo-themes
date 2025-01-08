@@ -63,7 +63,7 @@ $kendo-color-palette-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/colorpalette/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/colorpalette/_variables.scss" with (
     $kendo-color-palette-font-family: $kendo-color-palette-font-family,
     $kendo-color-palette-font-size: $kendo-color-palette-font-size,
     $kendo-color-palette-line-height: $kendo-color-palette-line-height,
@@ -77,5 +77,6 @@ $kendo-color-palette-sizes: (
     $kendo-color-palette-lg-tile-height: $kendo-color-palette-lg-tile-height,
     $kendo-color-palette-tile-focus-shadow: $kendo-color-palette-tile-focus-shadow,
     $kendo-color-palette-tile-hover-shadow: $kendo-color-palette-tile-hover-shadow,
-    $kendo-color-palette-tile-selected-shadow: $kendo-color-palette-tile-selected-shadow
+    $kendo-color-palette-tile-selected-shadow: $kendo-color-palette-tile-selected-shadow,
+    $kendo-color-palette-sizes: $kendo-color-palette-sizes
 );

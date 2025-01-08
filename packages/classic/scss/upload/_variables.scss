@@ -112,7 +112,7 @@ $kendo-upload-files-list-margin: calc( -1 * #{k-spacing(1)} ) !default;
 $kendo-upload-file-info-margin: k-spacing(2) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/upload/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/upload/_variables.scss" with (
     $kendo-upload-border-width: $kendo-upload-border-width,
     $kendo-upload-font-family: $kendo-upload-font-family,
     $kendo-upload-font-size: $kendo-upload-font-size,

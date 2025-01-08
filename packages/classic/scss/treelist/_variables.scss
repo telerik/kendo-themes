@@ -10,7 +10,7 @@ $kendo-treelist-footer-row-bg: $kendo-grid-hover-bg !default;
 $kendo-treelist-footer-row-border-width: 1px !default;
 
 
-@forward "@progress/kendo-theme-default/scss/treelist/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/treelist/_variables.scss" with (
     $kendo-treelist-footer-row-bg: $kendo-treelist-footer-row-bg,
     $kendo-treelist-footer-row-border-width: $kendo-treelist-footer-row-border-width
 );

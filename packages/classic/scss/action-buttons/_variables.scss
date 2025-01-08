@@ -13,7 +13,7 @@ $kendo-actions-border: null !default;
 $kendo-actions-gradient: null !default;
 
 
-@forward "@progress/kendo-theme-default/scss/action-buttons/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/action-buttons/_variables.scss" with (
     $kendo-actions-margin-top: $kendo-actions-margin-top,
     $kendo-actions-padding-x: $kendo-actions-padding-x,
     $kendo-actions-padding-y: $kendo-actions-padding-y,

@@ -173,7 +173,7 @@ $kendo-fab-item-outline-width: k-spacing(0.5) !default;
 $kendo-fab-item-outline-color: rgba(0, 0, 0, .08) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/fab/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/fab/_variables.scss" with (
     $kendo-fab-border-width: $kendo-fab-border-width,
     $kendo-fab-border-radius: $kendo-fab-border-radius,
     $kendo-fab-font-family: $kendo-fab-font-family,

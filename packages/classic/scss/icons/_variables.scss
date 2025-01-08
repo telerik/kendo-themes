@@ -30,3 +30,16 @@ $kendo-icon-spacing: k-spacing(1) !default;
 /// The default icon padding.
 /// @group icon
 $kendo-icon-padding: k-spacing(1) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/icons/_variables.scss" with (
+    $kendo-icon-size: $kendo-icon-size,
+    $kendo-icon-size-xs: $kendo-icon-size-xs,
+    $kendo-icon-size-sm: $kendo-icon-size-sm,
+    $kendo-icon-size-md: $kendo-icon-size-md,
+    $kendo-icon-size-lg: $kendo-icon-size-lg,
+    $kendo-icon-size-xl: $kendo-icon-size-xl,
+    $kendo-icon-size-xxl: $kendo-icon-size-xxl,
+    $kendo-icon-size-xxxl: $kendo-icon-size-xxxl,
+    $kendo-icon-spacing: $kendo-icon-spacing,
+    $kendo-icon-padding: $kendo-icon-padding
+);

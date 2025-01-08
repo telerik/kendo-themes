@@ -115,7 +115,7 @@ $kendo-dock-manager-dock-preview-bg: if($kendo-enable-color-system, color-mix(in
 $kendo-dock-manager-dock-preview-border: $kendo-color-primary !default;
 
 
-@forward "@progress/kendo-theme-default/scss/dock-manager/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/dock-manager/_variables.scss" with (
     $kendo-dock-manager-border-width: $kendo-dock-manager-border-width,
     $kendo-dock-manager-border-style: $kendo-dock-manager-border-style,
     $kendo-dock-manager-border: $kendo-dock-manager-border,

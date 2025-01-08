@@ -67,7 +67,7 @@ $kendo-dropzone-note-spacing: null !default;
 $kendo-dropzone-note-text: $kendo-subtle-text !default;
 
 
-@forward "@progress/kendo-theme-default/scss/dropzone/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/dropzone/_variables.scss" with (
     $kendo-dropzone-padding-x: $kendo-dropzone-padding-x,
     $kendo-dropzone-padding-y: $kendo-dropzone-padding-y,
     $kendo-dropzone-border-width: $kendo-dropzone-border-width,

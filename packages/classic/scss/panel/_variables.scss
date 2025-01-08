@@ -37,7 +37,7 @@ $kendo-panel-bg: var(--kendo-component-bg, #{$kendo-component-bg}) !default;
 $kendo-panel-border: var(--kendo-component-border, #{$kendo-component-border}) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/panel/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/panel/_variables.scss" with (
     $kendo-panel-border-radius: $kendo-panel-border-radius,
     $kendo-panel-border-width: $kendo-panel-border-width,
     $kendo-panel-border-style: $kendo-panel-border-style,

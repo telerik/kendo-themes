@@ -185,7 +185,7 @@ $kendo-card-callout-width: 20px !default;
 $kendo-card-callout-height: 20px !default;
 
 
-@forward "@progress/kendo-theme-default/scss/card/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/card/_variables.scss" with (
     $kendo-card-padding-x: $kendo-card-padding-x,
     $kendo-card-padding-y: $kendo-card-padding-y,
     $kendo-card-border-width: $kendo-card-border-width,

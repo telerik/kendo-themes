@@ -77,7 +77,7 @@ $kendo-circular-progressbar-arc-stroke: $kendo-color-primary !default;
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;
 
 
-@forward "@progress/kendo-theme-default/scss/progressbar/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/progressbar/_variables.scss" with (
     $kendo-progressbar-height: $kendo-progressbar-height,
     $kendo-progressbar-horizontal-width: $kendo-progressbar-horizontal-width,
     $kendo-progressbar-animation-timing: $kendo-progressbar-animation-timing,

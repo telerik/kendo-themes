@@ -56,7 +56,7 @@ $kendo-notification-theme-colors: $kendo-theme-colors !default;
 $kendo-notification-theme: notification-theme( $kendo-notification-theme-colors ) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/notification/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/notification/_variables.scss" with (
     $kendo-notification-group-gap: $kendo-notification-group-gap,
     $kendo-notification-padding-x: $kendo-notification-padding-x,
     $kendo-notification-padding-y: $kendo-notification-padding-y,

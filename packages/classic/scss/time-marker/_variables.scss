@@ -6,7 +6,7 @@ $kendo-current-time-width: 1px !default;
 $kendo-current-time-color: #ff0000 !default;
 
 
-@forward "@progress/kendo-theme-default/scss/time-marker/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/time-marker/_variables.scss" with (
     $kendo-current-time-width: $kendo-current-time-width,
     $kendo-current-time-color: $kendo-current-time-color
 );
