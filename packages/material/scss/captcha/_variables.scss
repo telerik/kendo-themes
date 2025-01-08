@@ -48,7 +48,7 @@ $kendo-captcha-validation-message-font-size: var( --kendo-font-size-sm, inherit 
 /// @group captcha
 $kendo-captcha-validation-message-font-style: italic !default;
 
-@forward "@progress/kendo-theme-default/scss/captcha/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/captcha/_variables.scss" with (
     $kendo-captcha-spacer: $kendo-captcha-spacer,
     $kendo-captcha-width: $kendo-captcha-width,
     $kendo-captcha-font-family: $kendo-captcha-font-family,

@@ -188,7 +188,7 @@ $kendo-radio-ripple-bg: $kendo-color-primary !default;
 /// @group radio
 $kendo-radio-ripple-opacity: .2 !default;
 
-@forward "@progress/kendo-theme-default/scss/radio/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/radio/_variables.scss" with (
     $kendo-radio-radius: $kendo-radio-radius,
     $kendo-radio-border-width: $kendo-radio-border-width,
     $kendo-radio-sm-size: $kendo-radio-sm-size,

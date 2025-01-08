@@ -56,7 +56,7 @@ $kendo-appbar-box-shadow: k-elevation(4) !default;
 /// @group appbar
 $kendo-appbar-bottom-box-shadow: $kendo-appbar-box-shadow !default;
 
-@forward "@progress/kendo-theme-default/scss/appbar/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/appbar/_variables.scss" with (
     $kendo-appbar-margin-x: $kendo-appbar-margin-x,
     $kendo-appbar-margin-y: $kendo-appbar-margin-y,
     $kendo-appbar-padding-x: $kendo-appbar-padding-x,

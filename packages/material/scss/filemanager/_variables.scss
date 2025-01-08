@@ -185,7 +185,7 @@ $kendo-file-manager-preview-icon-text: if($kendo-enable-color-system, k-color( s
 /// @group file-manager
 $kendo-file-manager-preview-icon-border: null !default;
 
-@forward "@progress/kendo-theme-default/scss/filemanager/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/filemanager/_variables.scss" with (
     $kendo-file-manager-spacer: $kendo-file-manager-spacer,
     $kendo-file-manager-border-width: $kendo-file-manager-border-width,
     $kendo-file-manager-font-family: $kendo-file-manager-font-family,

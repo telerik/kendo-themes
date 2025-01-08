@@ -262,7 +262,7 @@ $kendo-pivotgrid-button-active-text: $kendo-button-text !default;
 $kendo-pivotgrid-remove-bg: $kendo-pivotgrid-button-text !default;
 $kendo-pivotgrid-remove-text: $kendo-pivotgrid-button-bg !default;
 
-@forward "@progress/kendo-theme-default/scss/pivotgrid/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/pivotgrid/_variables.scss" with (
     $kendo-pivotgrid-spacer: $kendo-pivotgrid-spacer,
     $kendo-pivotgrid-padding-x: $kendo-pivotgrid-padding-x,
     $kendo-pivotgrid-padding-y: $kendo-pivotgrid-padding-y,

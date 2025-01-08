@@ -359,7 +359,7 @@ $kendo-calendar-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/calendar/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/calendar/_variables.scss" with (
     $kendo-calendar-border-width: $kendo-calendar-border-width,
     $kendo-calendar-font-family: $kendo-calendar-font-family,
     $kendo-calendar-font-size: $kendo-calendar-font-size,

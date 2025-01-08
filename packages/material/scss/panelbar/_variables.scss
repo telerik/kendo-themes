@@ -275,7 +275,7 @@ $kendo-panelbar-header-expanded-border: null !default;
 /// @group panelbar
 $kendo-panelbar-header-expanded-gradient: null !default;
 
-@forward "@progress/kendo-theme-default/scss/panelbar/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/panelbar/_variables.scss" with (
     $kendo-panelbar-padding-x: $kendo-panelbar-padding-x,
     $kendo-panelbar-padding-y: $kendo-panelbar-padding-y,
     $kendo-panelbar-font-family: $kendo-panelbar-font-family,

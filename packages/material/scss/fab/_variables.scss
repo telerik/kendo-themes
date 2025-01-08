@@ -157,7 +157,7 @@ $kendo-fab-item-disabled-shadow: $kendo-fab-disabled-shadow !default;
 /// @group floating-action-button
 $kendo-fab-item-active-shadow: $kendo-fab-active-shadow !default;
 
-@forward "@progress/kendo-theme-default/scss/fab/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/fab/_variables.scss" with (
     $kendo-fab-border-width: $kendo-fab-border-width,
     $kendo-fab-border-radius: $kendo-fab-border-radius,
     $kendo-fab-font-family: $kendo-fab-font-family,

@@ -53,7 +53,7 @@ $kendo-rating-icon-focus-shadow: 0 2px 4px rgba( black, .1 ) !default;
 /// @group rating
 $kendo-rating-icon-focus-selected-shadow: 0 2px 4px rgba( black, .1) !default;
 
-@forward "@progress/kendo-theme-default/scss/rating/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/rating/_variables.scss" with (
     $kendo-rating-font-family: $kendo-rating-font-family,
     $kendo-rating-font-size: $kendo-rating-font-size,
     $kendo-rating-line-height: $kendo-rating-line-height,

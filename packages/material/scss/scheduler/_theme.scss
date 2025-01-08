@@ -1,7 +1,7 @@
 @use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
 @use "../floating-label/_variables.scss" as *;
-@use "@progress/kendo-theme-default/scss/scheduler/_theme.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/scheduler/_theme.scss" as *;
 
 
 @mixin kendo-scheduler--theme() {

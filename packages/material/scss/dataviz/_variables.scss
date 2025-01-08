@@ -152,7 +152,7 @@ $kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-chart-no-data-font-weight: var( --kendo-font-weight, normal ) !default;
 $kendo-chart-no-data-padding-y: k-spacing( 25 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/dataviz/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/dataviz/_variables.scss" with (
     $kendo-series-a: $kendo-series-a,
     $kendo-series-a-dark: $kendo-series-a-dark,
     $kendo-series-a-darker: $kendo-series-a-darker,

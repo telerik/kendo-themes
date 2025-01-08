@@ -261,7 +261,7 @@ $kendo-flat-button-focus-ring-opacity: unset !default;
 /// @group button
 $kendo-button-transition: box-shadow 280ms cubic-bezier( .4, 0, .2, 1 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/button/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-border-radius: $kendo-button-border-radius,
     $kendo-button-padding-x: $kendo-button-padding-x,

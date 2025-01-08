@@ -87,7 +87,7 @@ $kendo-popover-callout-bg: $kendo-popover-bg !default;
 /// @group popover
 $kendo-popover-callout-border: $kendo-popover-border !default;
 
-@forward "@progress/kendo-theme-default/scss/popover/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/popover/_variables.scss" with (
     $kendo-popover-border-width: $kendo-popover-border-width,
     $kendo-popover-border-style: $kendo-popover-border-style,
     $kendo-popover-border-radius: $kendo-popover-border-radius,

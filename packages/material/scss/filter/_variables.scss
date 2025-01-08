@@ -31,7 +31,7 @@ $kendo-filter-preview-operator-text: $kendo-subtle-text !default;
 /// @group filter
 $kendo-filter-toolbar-focus-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
 
-@forward "@progress/kendo-theme-default/scss/filter/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (
     $kendo-filter-padding-x: $kendo-filter-padding-x,
     $kendo-filter-padding-y: $kendo-filter-padding-y,
     $kendo-filter-bottom-margin: $kendo-filter-bottom-margin,

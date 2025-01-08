@@ -1,4 +1,4 @@
-@use "@progress/kendo-theme-default/scss/otp/_theme.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/otp/_theme.scss" as *;
 
 @mixin kendo-otp--theme() {
     @include kendo-otp--theme-base();

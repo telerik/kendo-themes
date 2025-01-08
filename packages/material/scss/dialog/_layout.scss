@@ -1,6 +1,6 @@
 @use "sass:list";
 @use "../window/_variables.scss" as *;
-@use "@progress/kendo-theme-default/scss/dialog/_layout.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/dialog/_layout.scss" as *;
 
 
 @mixin kendo-dialog--layout() {

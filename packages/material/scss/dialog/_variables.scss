@@ -35,7 +35,7 @@ $kendo-dialog-theme-colors: (
     "dark": map.get($kendo-theme-colors, "dark")
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/dialog/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (
     $kendo-dialog-titlebar-bg: $kendo-dialog-titlebar-bg,
     $kendo-dialog-titlebar-text: $kendo-dialog-titlebar-text,
     $kendo-dialog-titlebar-border: $kendo-dialog-titlebar-border,

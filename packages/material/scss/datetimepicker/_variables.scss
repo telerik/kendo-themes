@@ -3,6 +3,6 @@
 // DateTime
 $kendo-datetime-width: calc( calc( #{$kendo-calendar-cell-size} * 8 ) + calc( #{$kendo-infinite-calendar-view-padding-x} * 2 )) !default;
 
-@forward "@progress/kendo-theme-default/scss/datetimepicker/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/datetimepicker/_variables.scss" with (
     $kendo-datetime-width: $kendo-datetime-width
 );

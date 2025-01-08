@@ -1,5 +1,5 @@
 @use "../core/_index.scss" as *;
-@use "@progress/kendo-theme-default/scss/floating-label/_theme.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/floating-label/_theme.scss" as *;
 
 
 @mixin kendo-floating-label--theme() {

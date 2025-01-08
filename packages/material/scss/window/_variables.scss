@@ -113,7 +113,7 @@ $kendo-window-theme-colors: (
     "dark": map.get($kendo-theme-colors, "dark")
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/window/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (
     $kendo-window-border-width: $kendo-window-border-width,
     $kendo-window-border-radius: $kendo-window-border-radius,
     $kendo-window-font-family: $kendo-window-font-family,

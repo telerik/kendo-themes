@@ -197,7 +197,7 @@ $kendo-checkbox-ripple-bg: $kendo-color-primary !default;
 /// @group checkbox
 $kendo-checkbox-ripple-opacity: .2 !default;
 
-@forward "@progress/kendo-theme-default/scss/checkbox/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/checkbox/_variables.scss" with (
     $kendo-checkbox-border-width: $kendo-checkbox-border-width,
     $kendo-checkbox-sm-size: $kendo-checkbox-sm-size,
     $kendo-checkbox-md-size: $kendo-checkbox-md-size,

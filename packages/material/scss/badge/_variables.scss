@@ -102,7 +102,7 @@ $kendo-badge-sizes: (
     )
 ) !default;
 
-@forward "@progress/kendo-theme-default/scss/badge/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/badge/_variables.scss" with (
     $kendo-badge-border-width: $kendo-badge-border-width,
     $kendo-badge-border-radius: $kendo-badge-border-radius,
     $kendo-badge-padding-x: $kendo-badge-padding-x,

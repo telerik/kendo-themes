@@ -67,7 +67,7 @@ $kendo-prompt-suggestion-border: $kendo-component-border !default;
 /// @group prompt
 $kendo-prompt-suggestion-shadow: k-elevation(1) !default;
 
-@forward "@progress/kendo-theme-default/scss/prompt/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/prompt/_variables.scss" with (
     $kendo-prompt-text: $kendo-prompt-text,
     $kendo-prompt-bg: $kendo-prompt-bg,
     $kendo-prompt-border: $kendo-prompt-border,

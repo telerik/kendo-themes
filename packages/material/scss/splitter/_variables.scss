@@ -66,7 +66,7 @@ $kendo-splitbar-selected-bg: $kendo-color-primary !default;
 /// @group splitter
 $kendo-splitbar-selected-text: $kendo-color-primary-contrast !default;
 
-@forward "@progress/kendo-theme-default/scss/splitter/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/splitter/_variables.scss" with (
     $kendo-splitter-border-width: $kendo-splitter-border-width,
     $kendo-splitter-font-family: $kendo-splitter-font-family,
     $kendo-splitter-font-size: $kendo-splitter-font-size,

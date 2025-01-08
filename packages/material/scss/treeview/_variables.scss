@@ -202,7 +202,7 @@ $kendo-treeview-loadmore-focus-border: null !default;
 $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !default;
 
 
-@forward "@progress/kendo-theme-default/scss/treeview/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/treeview/_variables.scss" with (
     $kendo-treeview-font-family: $kendo-treeview-font-family,
     $kendo-treeview-font-size: $kendo-treeview-font-size,
     $kendo-treeview-sm-font-size: $kendo-treeview-sm-font-size,
