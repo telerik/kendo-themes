@@ -273,7 +273,7 @@ $kendo-menu-popup-item-active-gradient: null !default;
 $kendo-menu-popup-item-focus-shadow: $kendo-menu-item-focus-shadow !default;
 
 
-@forward "@progress/kendo-theme-default/scss/menu/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/menu/_variables.scss" with (
     $kendo-menu-border-width: $kendo-menu-border-width,
     $kendo-menu-font-family: $kendo-menu-font-family,
     $kendo-menu-font-size: $kendo-menu-font-size,

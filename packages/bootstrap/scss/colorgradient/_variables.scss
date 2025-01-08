@@ -255,7 +255,7 @@ $kendo-color-gradient-sizes: (
 ) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/colorgradient/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/colorgradient/_variables.scss" with (
     $kendo-color-gradient-spacer: $kendo-color-gradient-spacer,
     $kendo-color-gradient-width: $kendo-color-gradient-width,
     $kendo-color-gradient-sm-width: $kendo-color-gradient-sm-width,
@@ -323,5 +323,6 @@ $kendo-color-gradient-sizes: (
     $kendo-color-gradient-md-input-width: $kendo-color-gradient-md-input-width,
     $kendo-color-gradient-lg-input-width: $kendo-color-gradient-lg-input-width,
     $kendo-color-gradient-contrast-ratio-font-weight: $kendo-color-gradient-contrast-ratio-font-weight,
-    $kendo-color-gradient-contrast-spacer: $kendo-color-gradient-contrast-spacer
+    $kendo-color-gradient-contrast-spacer: $kendo-color-gradient-contrast-spacer,
+    $kendo-color-gradient-sizes: $kendo-color-gradient-sizes
 );

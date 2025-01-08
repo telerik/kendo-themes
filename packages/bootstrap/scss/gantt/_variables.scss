@@ -252,7 +252,7 @@ $kendo-gantt-task-tooltip-padding-x: k-spacing(4) !default;
 /// @group gantt
 $kendo-gantt-task-tooltip-padding-y: k-spacing(2) !default;
 
-@forward "@progress/kendo-theme-default/scss/gantt/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/gantt/_variables.scss" with (
     $kendo-gantt-border-width: $kendo-gantt-border-width,
     $kendo-gantt-font-family: $kendo-gantt-font-family,
     $kendo-gantt-font-size: $kendo-gantt-font-size,

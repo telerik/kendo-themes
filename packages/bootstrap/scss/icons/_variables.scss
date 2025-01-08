@@ -20,7 +20,7 @@ $kendo-icon-spacing: k-spacing(2) !default;
 /// @group icon
 $kendo-icon-padding: k-spacing(1) !default;
 
-@forward "@progress/kendo-theme-default/scss/icons/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/icons/_variables.scss" with (
     $kendo-icon-size: $kendo-icon-size,
     $kendo-icon-size-xs: $kendo-icon-size-xs,
     $kendo-icon-size-sm: $kendo-icon-size-sm,

@@ -7,6 +7,6 @@
 $kendo-menu-button-arrow-padding-x: $kendo-button-padding-y !default;
 
 
-@forward "@progress/kendo-theme-default/scss/menu-button/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/menu-button/_variables.scss" with (
     $kendo-menu-button-arrow-padding-x: $kendo-menu-button-arrow-padding-x
 );

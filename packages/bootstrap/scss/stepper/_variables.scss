@@ -231,7 +231,7 @@ $kendo-stepper-content-transition-duration: 300ms !default;
 $kendo-stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms !default;
 
 
-@forward "@progress/kendo-theme-default/scss/stepper/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/stepper/_variables.scss" with (
     $kendo-stepper-margin-x: $kendo-stepper-margin-x,
     $kendo-stepper-margin-y: $kendo-stepper-margin-y,
     $kendo-stepper-padding-x: $kendo-stepper-padding-x,

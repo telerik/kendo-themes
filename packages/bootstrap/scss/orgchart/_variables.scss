@@ -152,7 +152,7 @@ $kendo-orgchart-line-fill: $kendo-base-border !default;
 $kendo-orgchart-line-v-height: k-spacing(6) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/orgchart/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/orgchart/_variables.scss" with (
     $kendo-orgchart-spacer: $kendo-orgchart-spacer,
     $kendo-orgchart-padding-y: $kendo-orgchart-padding-y,
     $kendo-orgchart-padding-x: $kendo-orgchart-padding-x,

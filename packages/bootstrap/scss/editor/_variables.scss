@@ -78,7 +78,7 @@ $kendo-editor-filebrowser-tiles-padding-y: k-spacing(2) !default;
 /// @group editor
 $kendo-editor-content-padding: k-spacing(4) !default;
 
-@forward "@progress/kendo-theme-default/scss/editor/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/editor/_variables.scss" with (
     $kendo-editor-border-width: $kendo-editor-border-width,
     $kendo-editor-font-family: $kendo-editor-font-family,
     $kendo-editor-font-size: $kendo-editor-font-size,

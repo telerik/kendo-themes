@@ -1,6 +1,6 @@
 @use "../core/_index.scss" as *;
 @use "./_variables.scss" as *;
-@use "@progress/kendo-theme-default/scss/input/_layout.scss" as *;
+@use "@progress/kendo-theme-core/scss/components/input/_layout.scss" as *;
 
 @mixin kendo-input--layout() {
 

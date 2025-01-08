@@ -80,7 +80,7 @@ $kendo-expander-content-padding-x: k-spacing(6) !default;
 $kendo-expander-content-padding-y: k-spacing(6) !default;
 
 
-@forward "@progress/kendo-theme-default/scss/expansion-panel/_variables.scss" with (
+@forward "@progress/kendo-theme-core/scss/components/expansion-panel/_variables.scss" with (
     $kendo-expander-spacing-y: $kendo-expander-spacing-y,
     $kendo-expander-border-width: $kendo-expander-border-width,
     $kendo-expander-font-family: $kendo-expander-font-family,
