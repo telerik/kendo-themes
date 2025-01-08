@@ -132,10 +132,14 @@
         $_rectangle-height: map.get( $size-props, rectangle-height );
         $_input-width: map.get( $size-props, input-width );
         $_canvas-gap: map.get( $size-props, canvas-gap );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
 
         .k-colorgradient-#{$size} {
             width: $_width;
             gap: $_gap;
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
 
             .k-colorgradient-inputs {
                 .k-numerictextbox {

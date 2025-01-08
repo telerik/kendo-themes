@@ -112,24 +112,6 @@
             .k-colorpalette {
                 align-self: center;
             }
-
-            .k-colorpalette-tile {
-                width: var( --kendo-color-preview-width, $kendo-color-palette-tile-width );
-                height: var( --kendo-color-preview-height, $kendo-color-palette-tile-height );
-            }
-        }
-
-        // ColorPalette sizes
-        @each $size, $size-props in $kendo-color-palette-sizes {
-            $_tile-width: map.get( $size-props, width );
-            $_tile-height: map.get( $size-props, height );
-
-            .k-coloreditor-#{$size} {
-                .k-colorpalette-tile {
-                    width: $_tile-width;
-                    height: $_tile-height;
-                }
-            }
         }
 
         // Footer
