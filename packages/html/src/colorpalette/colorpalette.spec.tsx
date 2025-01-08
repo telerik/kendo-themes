@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../misc';
+import { classNames, stateClassNames, States, Size, optionClassNames } from '../misc';
 import { ColorPaletteRow } from './colorpalette-row';
 import { ColorPaletteTile } from './colorpalette-tile';
 
@@ -8,9 +8,15 @@ const states = [
     States.disabled
 ];
 
-const options = {};
+const options = {
+    size: [ Size.small, Size.medium, Size.large ]
+};
 
-export type KendoColorPaletteProps = {
+export type KendoColorPaletteOptions = {
+    size?: (typeof options.size)[number] | null;
+};
+
+export type KendoColorPaletteProps = KendoColorPaletteOptions & {
     palette?: Array<string> | any;
     columns?: number;
     tileSize?: string;
@@ -19,7 +25,8 @@ export type KendoColorPaletteProps = {
 export type KendoColorPaletteState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    columns: 10
+    columns: 10,
+    size: Size.medium
 };
 
 export const ColorPalette = (
@@ -28,6 +35,7 @@ export const ColorPalette = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        size = defaultOptions.size,
         palette,
         columns = defaultOptions.columns,
         tileSize,
@@ -69,6 +77,7 @@ export const ColorPalette = (
                 stateClassNames(COLORPALETTE_CLASSNAME, {
                     disabled,
                 }),
+                optionClassNames(COLORPALETTE_CLASSNAME, { size }),
             )}>
 
             <table className="k-colorpalette-table">
