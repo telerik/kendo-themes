@@ -271,6 +271,10 @@
 
             .k-item {
                 margin-block-end: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
+
+                .k-link {
+                    justify-content: center;
+                }
             }
 
         }
@@ -282,8 +286,11 @@
 
             .k-item {
                 margin-block-start: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
-            }
 
+                .k-link {
+                    justify-content: center;
+                }
+            }
         }
     }
     .k-tabstrip-left {
@@ -337,7 +344,6 @@
     .k-tabstrip-items-stretched > * {
         flex: 1 0 0;
     }
-
 
     // Selected indicator
     @if ($kendo-tabstrip-indicator-size) {
