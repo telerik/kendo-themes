@@ -42,32 +42,31 @@
         &.k-toolbar-scrollable {
             flex-wrap: nowrap;
             position: relative;
+        }
 
-            &.k-toolbar-scrollable-overlay {
-                &::before {
-                    content: '';
-                    height: 100%;
-                    aspect-ratio: 1;
-                    position: absolute;
-                    inset-inline-start: 0;
-                    z-index: 3;
-                }
+        &.k-toolbar-scrollable-overlay {
 
-                &::after {
-                    content: '';
-                    height: 100%;
-                    aspect-ratio: 1;
-                    position: absolute;
-                    inset-inline-end: 0;
-                    z-index: 3;
-                }
-
-                &.k-toolbar-scrollable-start::before,
-                &.k-toolbar-scrollable-end::after {
-                    display: none;
-                }
+            &::before,
+            &::after {
+                content: '';
+                height: 100%;
+                aspect-ratio: 1;
+                position: absolute;
+                z-index: 3;
             }
 
+            &::before {
+                inset-inline-start: 0;
+            }
+
+            &::after {
+                inset-inline-end: 0;
+            }
+
+            &.k-toolbar-scrollable-start::before,
+            &.k-toolbar-scrollable-end::after {
+                display: none;
+            }
         }
 
         > * {
