@@ -1,9 +1,4 @@
-@mixin kendo-date-input--layout-base() {
-
-    // Date input
-    .k-dateinput {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/dateinput/_layout.scss" as *;
 
 
 @mixin kendo-date-input--layout() {

@@ -1,15 +1,4 @@
-@mixin kendo-time-picker--layout-base() {
-
-    // Time picker
-    .k-time-picker {}
-
-
-    // Legacy aliases
-    .k-timepicker {
-        @extend .k-time-picker !optional;
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/timepicker/_layout.scss" as *;
 
 
 @mixin kendo-time-picker--layout() {

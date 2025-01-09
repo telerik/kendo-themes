@@ -1,9 +1,4 @@
-@mixin kendo-time-picker--theme-base() {
-
-    // Time picker
-    .k-time-picker {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/timepicker/_theme.scss" as *;
 
 
 @mixin kendo-time-picker--theme() {

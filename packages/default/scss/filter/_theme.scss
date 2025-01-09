@@ -1,35 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "./variables.scss" as *;
-
-@mixin kendo-filter--theme-base() {
-
-    .k-filter {
-        color: $kendo-component-text;
-
-        .k-filter-preview-field {
-            color: $kendo-filter-preview-field-text;
-        }
-
-        .k-filter-preview-operator {
-            color: $kendo-filter-preview-operator-text;
-        }
-
-        // The last selector targets the Angular rendering
-        .k-filter-item::before,
-        .k-filter-toolbar::before,
-        .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
-        .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
-            background-color: $kendo-component-border;
-        }
-
-        // Focus
-        .k-toolbar:focus,
-        .k-toolbar.k-focus {
-            @include focus-indicator( $kendo-filter-toolbar-focus-shadow );
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/filter/_theme.scss" as *;
 
 
 @mixin kendo-filter--theme() {

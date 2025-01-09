@@ -1,9 +1,5 @@
-@mixin kendo-date-picker--layout-base() {
+@use "@progress/kendo-theme-core/scss/components/datepicker/_layout.scss" as *;
 
-    // Date picker
-    .k-datepicker {}
-
-}
 
 @mixin kendo-date-picker--layout() {
     @include kendo-date-picker--layout-base();

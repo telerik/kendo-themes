@@ -1,22 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "./_variables.scss" as *;
-
-@mixin kendo-popup--theme-base() {
-
-    .k-popup {
-        @include fill(
-            $kendo-popup-text,
-            $kendo-popup-bg,
-            $kendo-popup-border
-        );
-        @include box-shadow( $kendo-popup-shadow );
-    }
-
-    .k-animation-container {
-        @include border-bottom-radius-only( k-border-radius(md) );
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/popup/_theme.scss" as *;
 
 
 @mixin kendo-popup--theme() {

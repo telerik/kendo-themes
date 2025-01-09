@@ -1,30 +1,4 @@
-@use "sass:map";
-@use "../core/_index.scss" as *;
-@use "./variables.scss" as *;
-
-@mixin kendo-notification--theme-base() {
-
-    // Theme
-    .k-notification {
-        @include fill(
-            $kendo-notification-text,
-            $kendo-notification-bg,
-            $kendo-notification-border
-        );
-        @include box-shadow( $kendo-notification-shadow );
-    }
-
-    @each $name, $props in $kendo-notification-theme {
-        .k-notification-#{$name} {
-            @include fill(
-                map.get( $props, color ),
-                map.get( $props, background-color ),
-                map.get( $props, border )
-            );
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/notification/_theme.scss" as *;
 
 
 @mixin kendo-notification--theme() {

@@ -1,18 +1,4 @@
-@mixin kendo-dropdown-grid--layout-base() {
-
-    // Dropdown grid
-    .k-dropdown-grid {}
-
-
-    // Dropdown grid popup
-    .k-dropdowngrid-popup {
-        overflow: hidden;
-    }
-    .k-dropdowngrid-popup > .k-data-table {
-        border-width: 0;
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/dropdowngrid/_layout.scss" as *;
 
 
 @mixin kendo-dropdown-grid--layout() {

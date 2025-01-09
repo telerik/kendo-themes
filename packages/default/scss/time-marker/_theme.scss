@@ -1,24 +1,4 @@
-@use "./_variables.scss" as *;
-
-@mixin kendo-time-marker--theme-base() {
-
-    .k-current-time {
-        background: $kendo-current-time-color;
-
-        &.k-current-time-arrow-left {
-            border-right-color: $kendo-current-time-color;
-        }
-
-        &.k-current-time-arrow-right {
-            border-left-color: $kendo-current-time-color;
-        }
-
-        &.k-current-time-arrow-down {
-            border-top-color: $kendo-current-time-color;
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/time-marker/_theme.scss" as *;
 
 
 @mixin kendo-time-marker--theme() {

@@ -113,3 +113,41 @@ $kendo-dock-manager-dock-preview-bg: if($kendo-enable-color-system, color-mix(in
 /// The border color of the dropping area in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-dock-preview-border: $kendo-color-primary !default;
+
+@forward "@progress/kendo-theme-core/scss/components/dock-manager/_variables.scss" with (
+    $kendo-dock-manager-border-width: $kendo-dock-manager-border-width,
+    $kendo-dock-manager-border-style: $kendo-dock-manager-border-style,
+    $kendo-dock-manager-border: $kendo-dock-manager-border,
+    $kendo-dock-manager-pane-header-padding-y: $kendo-dock-manager-pane-header-padding-y,
+    $kendo-dock-manager-pane-header-padding-x: $kendo-dock-manager-pane-header-padding-x,
+    $kendo-dock-manager-pane-header-border-width: $kendo-dock-manager-pane-header-border-width,
+    $kendo-dock-manager-pane-header-border-style: $kendo-dock-manager-pane-header-border-style,
+    $kendo-dock-manager-pane-header-bg: $kendo-dock-manager-pane-header-bg,
+    $kendo-dock-manager-pane-title-padding-y: $kendo-dock-manager-pane-title-padding-y,
+    $kendo-dock-manager-pane-title-padding-x: $kendo-dock-manager-pane-title-padding-x,
+    $kendo-dock-manager-pane-title-font-family: $kendo-dock-manager-pane-title-font-family,
+    $kendo-dock-manager-pane-title-font-size: $kendo-dock-manager-pane-title-font-size,
+    $kendo-dock-manager-pane-title-line-height: $kendo-dock-manager-pane-title-line-height,
+    $kendo-dock-manager-pane-title-font-weight: $kendo-dock-manager-pane-title-font-weight,
+    $kendo-dock-manager-pane-content-padding-x: $kendo-dock-manager-pane-content-padding-x,
+    $kendo-dock-manager-pane-content-padding-y: $kendo-dock-manager-pane-content-padding-y,
+    $kendo-dock-manager-tabbed-pane-padding-y: $kendo-dock-manager-tabbed-pane-padding-y,
+    $kendo-dock-manager-tabbed-pane-padding-x: $kendo-dock-manager-tabbed-pane-padding-x,
+    $kendo-dock-manager-unpinned-container-width: $kendo-dock-manager-unpinned-container-width,
+    $kendo-dock-manager-unpinned-container-bg: $kendo-dock-manager-unpinned-container-bg,
+    $kendo-dock-manager-unpinned-container-shadow: $kendo-dock-manager-unpinned-container-shadow,
+    $kendo-dock-indicator-padding: $kendo-dock-indicator-padding,
+    $kendo-dock-indicator-bg: $kendo-dock-indicator-bg,
+    $kendo-dock-indicator-text: $kendo-dock-indicator-text,
+    $kendo-dock-indicator-outline-width: $kendo-dock-indicator-outline-width,
+    $kendo-dock-indicator-outline-style: $kendo-dock-indicator-outline-style,
+    $kendo-dock-indicator-outline: $kendo-dock-indicator-outline,
+    $kendo-dock-indicator-shadow: $kendo-dock-indicator-shadow,
+    $kendo-dock-indicator-hover-bg: $kendo-dock-indicator-hover-bg,
+    $kendo-dock-indicator-hover-text: $kendo-dock-indicator-hover-text,
+    $kendo-dock-manager-dock-preview-border-width: $kendo-dock-manager-dock-preview-border-width,
+    $kendo-dock-manager-dock-preview-border-style: $kendo-dock-manager-dock-preview-border-style,
+    $kendo-dock-manager-dock-preview-border-radius: $kendo-dock-manager-dock-preview-border-radius,
+    $kendo-dock-manager-dock-preview-bg: $kendo-dock-manager-dock-preview-bg,
+    $kendo-dock-manager-dock-preview-border: $kendo-dock-manager-dock-preview-border
+);

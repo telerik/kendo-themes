@@ -55,3 +55,22 @@ $kendo-appbar-box-shadow: k-elevation(4) !default;
 /// The box shadow of the AppBar with bottom position.
 /// @group appbar
 $kendo-appbar-bottom-box-shadow: $kendo-appbar-box-shadow !default;
+
+@forward "@progress/kendo-theme-core/scss/components/appbar/_variables.scss" with (
+    $kendo-appbar-margin-x: $kendo-appbar-margin-x,
+    $kendo-appbar-margin-y: $kendo-appbar-margin-y,
+    $kendo-appbar-padding-x: $kendo-appbar-padding-x,
+    $kendo-appbar-padding-y: $kendo-appbar-padding-y,
+    $kendo-appbar-border-width: $kendo-appbar-border-width,
+    $kendo-appbar-zindex: $kendo-appbar-zindex,
+    $kendo-appbar-font-family: $kendo-appbar-font-family,
+    $kendo-appbar-font-size: $kendo-appbar-font-size,
+    $kendo-appbar-line-height: $kendo-appbar-line-height,
+    $kendo-appbar-gap: $kendo-appbar-gap,
+    $kendo-appbar-light-bg: $kendo-appbar-light-bg,
+    $kendo-appbar-light-text: $kendo-appbar-light-text,
+    $kendo-appbar-dark-bg: $kendo-appbar-dark-bg,
+    $kendo-appbar-dark-text: $kendo-appbar-dark-text,
+    $kendo-appbar-box-shadow: $kendo-appbar-box-shadow,
+    $kendo-appbar-bottom-box-shadow: $kendo-appbar-bottom-box-shadow
+);

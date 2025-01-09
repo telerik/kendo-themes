@@ -34,3 +34,14 @@ $kendo-dialog-theme-colors: (
     "light": map.get($kendo-theme-colors, "light"),
     "dark": map.get($kendo-theme-colors, "dark")
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (
+    $kendo-dialog-titlebar-bg: $kendo-dialog-titlebar-bg,
+    $kendo-dialog-titlebar-text: $kendo-dialog-titlebar-text,
+    $kendo-dialog-titlebar-border: $kendo-dialog-titlebar-border,
+    $kendo-dialog-buttongroup-padding-x: $kendo-dialog-buttongroup-padding-x,
+    $kendo-dialog-buttongroup-padding-y: $kendo-dialog-buttongroup-padding-y,
+    $kendo-dialog-buttongroup-border-width: $kendo-dialog-buttongroup-border-width,
+    $kendo-dialog-button-spacing: $kendo-dialog-button-spacing,
+    $kendo-dialog-theme-colors: $kendo-dialog-theme-colors
+);

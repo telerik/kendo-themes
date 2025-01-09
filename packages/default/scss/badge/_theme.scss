@@ -1,30 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
-
-@mixin kendo-badge--theme-base() {
-
-    // Solid badges
-    @each $name, $color in $kendo-theme-colors {
-        .k-badge-solid-#{$name} {
-            border-color: $color;
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
-            background-color: $color;
-        }
-    }
-
-    // Outline badges
-    .k-badge-outline {
-        border-color: currentColor;
-        background-color: transparent;
-    }
-
-    @each $name, $color in $kendo-theme-colors {
-        .k-badge-outline-#{$name} {
-            color: $color;
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/badge/_theme.scss" as *;
 
 
 @mixin kendo-badge--theme() {

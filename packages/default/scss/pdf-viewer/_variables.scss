@@ -137,6 +137,46 @@ $kendo-pdf-viewer-free-text-annotation-placeholder-text: rgba(124, 22, 27, 0.5) 
 /// The text color of the PDFViewer free text annotation.
 /// @group pdf-viewer
 $kendo-pdf-viewer-free-text-annotation-text: rgba(124, 22, 27, 0.5) !default;
-/// The text color of the PDFViewer free text annotation.
-/// @group pdf-viewer
-$kendo-pdf-viewer-free-text-annotation-text: rgba(124, 22, 27, 0.7) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/pdf-viewer/_variables.scss" with (
+    $kendo-pdf-viewer-border-width: $kendo-pdf-viewer-border-width,
+    $kendo-pdf-viewer-font-family: $kendo-pdf-viewer-font-family,
+    $kendo-pdf-viewer-font-size: $kendo-pdf-viewer-font-size,
+    $kendo-pdf-viewer-line-height: $kendo-pdf-viewer-line-height,
+    $kendo-pdf-viewer-bg: $kendo-pdf-viewer-bg,
+    $kendo-pdf-viewer-text: $kendo-pdf-viewer-text,
+    $kendo-pdf-viewer-border: $kendo-pdf-viewer-border,
+    $kendo-pdf-viewer-toolbar-bg: $kendo-pdf-viewer-toolbar-bg,
+    $kendo-pdf-viewer-toolbar-text: $kendo-pdf-viewer-toolbar-text,
+    $kendo-pdf-viewer-toolbar-border: $kendo-pdf-viewer-toolbar-border,
+    $kendo-pdf-viewer-toolbar-gradient: $kendo-pdf-viewer-toolbar-gradient,
+    $kendo-pdf-viewer-canvas-bg: $kendo-pdf-viewer-canvas-bg,
+    $kendo-pdf-viewer-canvas-text: $kendo-pdf-viewer-canvas-text,
+    $kendo-pdf-viewer-canvas-border: $kendo-pdf-viewer-canvas-border,
+    $kendo-pdf-viewer-page-spacing: $kendo-pdf-viewer-page-spacing,
+    $kendo-pdf-viewer-page-bg: $kendo-pdf-viewer-page-bg,
+    $kendo-pdf-viewer-page-text: $kendo-pdf-viewer-page-text,
+    $kendo-pdf-viewer-page-border: $kendo-pdf-viewer-page-border,
+    $kendo-pdf-viewer-page-shadow: $kendo-pdf-viewer-page-shadow,
+    $kendo-pdf-viewer-search-panel-padding-x: $kendo-pdf-viewer-search-panel-padding-x,
+    $kendo-pdf-viewer-search-panel-padding-y: $kendo-pdf-viewer-search-panel-padding-y,
+    $kendo-pdf-viewer-search-panel-spacing: $kendo-pdf-viewer-search-panel-spacing,
+    $kendo-pdf-viewer-search-panel-border-width: $kendo-pdf-viewer-search-panel-border-width,
+    $kendo-pdf-viewer-search-panel-border-radius: $kendo-pdf-viewer-search-panel-border-radius,
+    $kendo-pdf-viewer-search-panel-bg: $kendo-pdf-viewer-search-panel-bg,
+    $kendo-pdf-viewer-search-panel-text: $kendo-pdf-viewer-search-panel-text,
+    $kendo-pdf-viewer-search-panel-border: $kendo-pdf-viewer-search-panel-border,
+    $kendo-pdf-viewer-search-panel-shadow: $kendo-pdf-viewer-search-panel-shadow,
+    $kendo-pdf-viewer-search-panel-matches-spacing: $kendo-pdf-viewer-search-panel-matches-spacing,
+    $kendo-pdf-viewer-selection-line-height: $kendo-pdf-viewer-selection-line-height,
+    $kendo-pdf-viewer-search-highlight-bg: $kendo-pdf-viewer-search-highlight-bg,
+    $kendo-pdf-viewer-search-highlight-mark-bg: $kendo-pdf-viewer-search-highlight-mark-bg,
+    $kendo-pdf-viewer-icon-text: $kendo-pdf-viewer-icon-text,
+    $kendo-pdf-viewer-popup-padding-x: $kendo-pdf-viewer-popup-padding-x,
+    $kendo-pdf-viewer-popup-padding-y: $kendo-pdf-viewer-popup-padding-y,
+    $kendo-pdf-viewer-highlight-annotation-border: $kendo-pdf-viewer-highlight-annotation-border,
+    $kendo-pdf-viewer-highlight-annotation-hover-border: $kendo-pdf-viewer-highlight-annotation-hover-border,
+    $kendo-pdf-viewer-free-text-annotation-border: $kendo-pdf-viewer-free-text-annotation-border,
+    $kendo-pdf-viewer-free-text-annotation-placeholder-text: $kendo-pdf-viewer-free-text-annotation-placeholder-text,
+    $kendo-pdf-viewer-free-text-annotation-text: $kendo-pdf-viewer-free-text-annotation-text
+);

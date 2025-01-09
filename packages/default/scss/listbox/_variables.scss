@@ -50,3 +50,21 @@ $kendo-listbox-drop-hint-width: 1px !default;
 /// The width of the border around the ListBox drop hint.
 /// @group listbox
 $kendo-listbox-drop-hint-border-width: null !default;
+
+@forward "@progress/kendo-theme-core/scss/components/listbox/_variables.scss" with (
+    $kendo-listbox-spacing: $kendo-listbox-spacing,
+    $kendo-listbox-button-spacing: $kendo-listbox-button-spacing,
+    $kendo-listbox-width: $kendo-listbox-width,
+    $kendo-listbox-default-height: $kendo-listbox-default-height,
+    $kendo-listbox-border-width: $kendo-listbox-border-width,
+    $kendo-listbox-font-family: $kendo-listbox-font-family,
+    $kendo-listbox-font-size: $kendo-listbox-font-size,
+    $kendo-listbox-line-height: $kendo-listbox-line-height,
+    $kendo-listbox-text: $kendo-listbox-text,
+    $kendo-listbox-bg: $kendo-listbox-bg,
+    $kendo-listbox-border: $kendo-listbox-border,
+    $kendo-listbox-item-padding-x: $kendo-listbox-item-padding-x,
+    $kendo-listbox-item-padding-y: $kendo-listbox-item-padding-y,
+    $kendo-listbox-drop-hint-width: $kendo-listbox-drop-hint-width,
+    $kendo-listbox-drop-hint-border-width: $kendo-listbox-drop-hint-border-width
+);

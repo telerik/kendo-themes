@@ -144,18 +144,79 @@ $kendo-theme-colors: (
     "inverse": $kendo-color-inverse,
 ) !default;
 
-:root {
-    --kendo-disabled-text: #{$kendo-disabled-text};
-    --kendo-disabled-bg: #{$kendo-disabled-bg};
-    --kendo-disabled-border: #{$kendo-disabled-border};
-    --kendo-disabled-opacity: #{$kendo-disabled-opacity};
-    --kendo-disabled-filter: #{$kendo-disabled-filter};
-
-    --kendo-hr-border: #{$kendo-component-border};
-
-    --kendo-marquee-text: #{$kendo-selected-text};
-    --kendo-marquee-bg: #{$kendo-selected-bg};
-    --kendo-marquee-border: #{$kendo-selected-border};
-
-    --kendo-text-selection-bg: #{$kendo-color-primary};
-}
+@forward "@progress/kendo-theme-core/scss/color-system/_swatch-legacy.scss" with (
+    $kendo-color-primary: $kendo-color-primary,
+    $kendo-color-primary-lighter: $kendo-color-primary-lighter,
+    $kendo-color-primary-darker: $kendo-color-primary-darker,
+    $kendo-color-primary-contrast: $kendo-color-primary-contrast,
+    $kendo-color-secondary: $kendo-color-secondary,
+    $kendo-color-secondary-lighter: $kendo-color-secondary-lighter,
+    $kendo-color-secondary-darker: $kendo-color-secondary-darker,
+    $kendo-color-secondary-contrast: $kendo-color-secondary-contrast,
+    $kendo-color-tertiary: $kendo-color-tertiary,
+    $kendo-color-tertiary-lighter: $kendo-color-tertiary-lighter,
+    $kendo-color-tertiary-darker: $kendo-color-tertiary-darker,
+    $kendo-color-tertiary-contrast: $kendo-color-tertiary-contrast,
+    $kendo-color-info: $kendo-color-info,
+    $kendo-color-info-lighter: $kendo-color-info-lighter,
+    $kendo-color-info-darker: $kendo-color-info-darker,
+    $kendo-color-success: $kendo-color-success,
+    $kendo-color-success-lighter: $kendo-color-success-lighter,
+    $kendo-color-success-darker: $kendo-color-success-darker,
+    $kendo-color-warning: $kendo-color-warning,
+    $kendo-color-warning-lighter: $kendo-color-warning-lighter,
+    $kendo-color-warning-darker: $kendo-color-warning-darker,
+    $kendo-color-error: $kendo-color-error,
+    $kendo-color-error-lighter: $kendo-color-error-lighter,
+    $kendo-color-error-darker: $kendo-color-error-darker,
+    $kendo-color-dark: $kendo-color-dark,
+    $kendo-color-light: $kendo-color-light,
+    $kendo-color-inverse: $kendo-color-inverse,
+    $kendo-body-bg: $kendo-body-bg,
+    $kendo-body-text: $kendo-body-text,
+    $kendo-app-bg: $kendo-app-bg,
+    $kendo-app-text: $kendo-app-text,
+    $kendo-app-border: $kendo-app-border,
+    $kendo-component-bg: $kendo-component-bg,
+    $kendo-component-text: $kendo-component-text,
+    $kendo-component-border: $kendo-component-border,
+    $kendo-base-bg: $kendo-base-bg,
+    $kendo-base-text: $kendo-base-text,
+    $kendo-base-border: $kendo-base-border,
+    $kendo-base-gradient: $kendo-base-gradient,
+    $kendo-hover-bg: $kendo-hover-bg,
+    $kendo-hover-text: $kendo-hover-text,
+    $kendo-hover-border: $kendo-hover-border,
+    $kendo-hover-gradient: $kendo-hover-gradient,
+    $kendo-selected-bg: $kendo-selected-bg,
+    $kendo-selected-text: $kendo-selected-text,
+    $kendo-selected-border: $kendo-selected-border,
+    $kendo-selected-gradient: $kendo-selected-gradient,
+    $kendo-selected-hover-bg: $kendo-selected-hover-bg,
+    $kendo-selected-hover-text: $kendo-selected-hover-text,
+    $kendo-selected-hover-border: $kendo-selected-hover-border,
+    $kendo-selected-hover-gradient: $kendo-selected-hover-gradient,
+    $kendo-component-header-bg: $kendo-component-header-bg,
+    $kendo-component-header-text: $kendo-component-header-text,
+    $kendo-component-header-border: $kendo-component-header-border,
+    $kendo-component-header-gradient: $kendo-component-header-gradient,
+    $kendo-focus-outline: $kendo-focus-outline,
+    $kendo-subtle-text: $kendo-subtle-text,
+    $kendo-link-text: $kendo-link-text,
+    $kendo-link-hover-text: $kendo-link-hover-text,
+    $kendo-invalid-bg: $kendo-invalid-bg,
+    $kendo-invalid-text: $kendo-invalid-text,
+    $kendo-invalid-border: $kendo-invalid-border,
+    $kendo-invalid-shadow: $kendo-invalid-shadow,
+    $kendo-valid-bg: $kendo-valid-bg,
+    $kendo-valid-text: $kendo-valid-text,
+    $kendo-valid-border: $kendo-valid-border,
+    $kendo-valid-shadow: $kendo-valid-shadow,
+    $kendo-disabled-bg: $kendo-disabled-bg,
+    $kendo-disabled-text: $kendo-disabled-text,
+    $kendo-disabled-border: $kendo-disabled-border,
+    $kendo-disabled-opacity: $kendo-disabled-opacity,
+    $kendo-disabled-filter: $kendo-disabled-filter,
+    $kendo-disabled-styling: $kendo-disabled-styling,
+    $kendo-theme-colors: $kendo-theme-colors
+);

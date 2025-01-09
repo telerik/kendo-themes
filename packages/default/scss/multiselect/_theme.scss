@@ -1,9 +1,4 @@
-@mixin kendo-multiselect--theme-base() {
-
-    // Multiselect
-    .k-multiselect {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/multiselect/_theme.scss" as *;
 
 
 @mixin kendo-multiselect--theme() {

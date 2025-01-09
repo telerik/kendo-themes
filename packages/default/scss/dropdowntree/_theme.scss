@@ -1,9 +1,4 @@
-@mixin kendo-dropdown-tree--theme-base() {
-
-    // Dropdown tree
-    .k-dropdown-tree {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/dropdowntree/_theme.scss" as *;
 
 
 @mixin kendo-dropdown-tree--theme() {

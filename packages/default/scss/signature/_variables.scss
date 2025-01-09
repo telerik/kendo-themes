@@ -49,3 +49,30 @@ $kendo-signature-sizes: (
 
 $kendo-signature-actions-gap: k-spacing(1) !default;
 $kendo-signature-maximized-line-width: 3px !default;
+
+@forward "@progress/kendo-theme-core/scss/components/signature/_variables.scss" with (
+    $kendo-signature-width: $kendo-signature-width,
+    $kendo-signature-height: $kendo-signature-height,
+    $kendo-signature-lg-min-height: $kendo-signature-lg-min-height,
+    $kendo-signature-maximized-width: $kendo-signature-maximized-width,
+    $kendo-signature-maximized-height: $kendo-signature-maximized-height,
+    $kendo-signature-padding-x: $kendo-signature-padding-x,
+    $kendo-signature-sm-padding-x: $kendo-signature-sm-padding-x,
+    $kendo-signature-md-padding-x: $kendo-signature-md-padding-x,
+    $kendo-signature-lg-padding-x: $kendo-signature-lg-padding-x,
+    $kendo-signature-padding-y: $kendo-signature-padding-y,
+    $kendo-signature-sm-padding-y: $kendo-signature-sm-padding-y,
+    $kendo-signature-md-padding-y: $kendo-signature-md-padding-y,
+    $kendo-signature-lg-padding-y: $kendo-signature-lg-padding-y,
+    $kendo-signature-line-width: $kendo-signature-line-width,
+    $kendo-signature-line-style: $kendo-signature-line-style,
+    $kendo-signature-line-color: $kendo-signature-line-color,
+    $kendo-signature-line-size: $kendo-signature-line-size,
+    $kendo-signature-sm-line-size: $kendo-signature-sm-line-size,
+    $kendo-signature-md-line-size: $kendo-signature-md-line-size,
+    $kendo-signature-lg-line-size: $kendo-signature-lg-line-size,
+    $kendo-signature-line-bottom-offset: $kendo-signature-line-bottom-offset,
+    $kendo-signature-sizes: $kendo-signature-sizes,
+    $kendo-signature-actions-gap: $kendo-signature-actions-gap,
+    $kendo-signature-maximized-line-width: $kendo-signature-maximized-line-width
+);

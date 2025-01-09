@@ -1,9 +1,4 @@
-@mixin kendo-combobox--theme-base() {
-
-    // Combobox
-    .k-combobox {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/combobox/_theme.scss" as *;
 
 
 @mixin kendo-combobox--theme() {

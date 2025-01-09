@@ -1,9 +1,4 @@
-@mixin kendo-validator--theme-base() {
-
-    // Validator
-    .k-validator {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/validator/_theme.scss" as *;
 
 
 @mixin kendo-validator--theme() {

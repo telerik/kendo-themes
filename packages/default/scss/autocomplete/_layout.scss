@@ -1,9 +1,4 @@
-@mixin kendo-autocomplete--layout-base() {
-
-    // Autocomplete
-    .k-autocomplete {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/autocomplete/_layout.scss" as *;
 
 
 @mixin kendo-autocomplete--layout() {

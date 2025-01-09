@@ -7,3 +7,8 @@ $kendo-no-data-min-height: 140px !default;
 /// The color of the 'No Data' text.
 /// @group no-data
 $kendo-no-data-text: $kendo-subtle-text !default;
+
+@forward "@progress/kendo-theme-core/scss/components/no-data/_variables.scss" with (
+    $kendo-no-data-min-height: $kendo-no-data-min-height,
+    $kendo-no-data-text: $kendo-no-data-text
+);

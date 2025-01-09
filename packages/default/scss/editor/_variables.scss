@@ -77,3 +77,27 @@ $kendo-editor-filebrowser-tiles-padding-y: k-spacing(1) !default;
 /// The padding of the Editor content.
 /// @group editor
 $kendo-editor-content-padding: k-spacing(2) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/editor/_variables.scss" with (
+    $kendo-editor-border-width: $kendo-editor-border-width,
+    $kendo-editor-font-family: $kendo-editor-font-family,
+    $kendo-editor-font-size: $kendo-editor-font-size,
+    $kendo-editor-line-height: $kendo-editor-line-height,
+    $kendo-editor-placeholder-text: $kendo-editor-placeholder-text,
+    $kendo-editor-placeholder-opacity: $kendo-editor-placeholder-opacity,
+    $kendo-editor-selected-text: $kendo-editor-selected-text,
+    $kendo-editor-selected-bg: $kendo-editor-selected-bg,
+    $kendo-editor-highlighted-bg: $kendo-editor-highlighted-bg,
+    $kendo-editor-export-tool-icon-margin-x: $kendo-editor-export-tool-icon-margin-x,
+    $kendo-editor-resize-handle-size: $kendo-editor-resize-handle-size,
+    $kendo-editor-resize-handle-border-width: $kendo-editor-resize-handle-border-width,
+    $kendo-editor-resize-handle-border: $kendo-editor-resize-handle-border,
+    $kendo-editor-resize-handle-bg: $kendo-editor-resize-handle-bg,
+    $kendo-editor-selectednode-outline-width: $kendo-editor-selectednode-outline-width,
+    $kendo-editor-selectednode-outline-color: $kendo-editor-selectednode-outline-color,
+    $kendo-editor-inline-padding-x: $kendo-editor-inline-padding-x,
+    $kendo-editor-inline-padding-y: $kendo-editor-inline-padding-y,
+    $kendo-editor-filebrowser-tiles-padding-x: $kendo-editor-filebrowser-tiles-padding-x,
+    $kendo-editor-filebrowser-tiles-padding-y: $kendo-editor-filebrowser-tiles-padding-y,
+    $kendo-editor-content-padding: $kendo-editor-content-padding
+);

@@ -40,3 +40,16 @@ $kendo-tile-layout-hint-bg: rgba(255, 255, 255, .2) !default;
 
 
 
+
+@forward "@progress/kendo-theme-core/scss/components/tilelayout/_variables.scss" with (
+    $kendo-tile-layout-border-width: $kendo-tile-layout-border-width,
+    $kendo-tile-layout-bg: $kendo-tile-layout-bg,
+    $kendo-tile-layout-padding-x: $kendo-tile-layout-padding-x,
+    $kendo-tile-layout-padding-y: $kendo-tile-layout-padding-y,
+    $kendo-tile-layout-card-border-width: $kendo-tile-layout-card-border-width,
+    $kendo-tile-layout-card-focus-shadow: $kendo-tile-layout-card-focus-shadow,
+    $kendo-tile-layout-hint-border-width: $kendo-tile-layout-hint-border-width,
+    $kendo-tile-layout-hint-border-radius: $kendo-tile-layout-hint-border-radius,
+    $kendo-tile-layout-hint-border: $kendo-tile-layout-hint-border,
+    $kendo-tile-layout-hint-bg: $kendo-tile-layout-hint-bg
+);

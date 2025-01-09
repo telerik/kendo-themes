@@ -59,3 +59,19 @@ $kendo-otp-sizes: (
         input-width: $kendo-otp-lg-input-width
     )
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/otp/_variables.scss" with (
+    $kendo-otp-gap: $kendo-otp-gap,
+    $kendo-otp-sm-gap: $kendo-otp-sm-gap,
+    $kendo-otp-md-gap: $kendo-otp-md-gap,
+    $kendo-otp-lg-gap: $kendo-otp-lg-gap,
+    $kendo-otp-separator-padding-x: $kendo-otp-separator-padding-x,
+    $kendo-otp-sm-separator-padding-x: $kendo-otp-sm-separator-padding-x,
+    $kendo-otp-md-separator-padding-x: $kendo-otp-md-separator-padding-x,
+    $kendo-otp-lg-separator-padding-x: $kendo-otp-lg-separator-padding-x,
+    $kendo-otp-input-width: $kendo-otp-input-width,
+    $kendo-otp-sm-input-width: $kendo-otp-sm-input-width,
+    $kendo-otp-md-input-width: $kendo-otp-md-input-width,
+    $kendo-otp-lg-input-width: $kendo-otp-lg-input-width,
+    $kendo-otp-sizes: $kendo-otp-sizes
+);

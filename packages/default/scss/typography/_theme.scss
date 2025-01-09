@@ -1,27 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "../core/mixins/index.import.scss" as *;
-@use "./_variables.scss" as *;
-
-@mixin kendo-typography--theme-base() {
-
-    .k-body {
-        @include fill(
-            $kendo-body-text,
-            $kendo-body-bg
-        );
-    }
-
-    // Code snippet
-    .k-pre,
-    .k-code {
-        @include fill(
-            $kendo-code-text,
-            $kendo-code-bg,
-            $kendo-code-border
-        );
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/typography/_theme.scss" as *;
 
 
 @mixin kendo-typography--theme() {

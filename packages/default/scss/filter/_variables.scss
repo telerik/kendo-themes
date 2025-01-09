@@ -30,3 +30,14 @@ $kendo-filter-preview-operator-text: $kendo-subtle-text !default;
 /// The box shadow of the focused Filter toolbar.
 /// @group filter
 $kendo-filter-toolbar-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .08) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (
+    $kendo-filter-padding-x: $kendo-filter-padding-x,
+    $kendo-filter-padding-y: $kendo-filter-padding-y,
+    $kendo-filter-bottom-margin: $kendo-filter-bottom-margin,
+    $kendo-filter-line-size: $kendo-filter-line-size,
+    $kendo-filter-operator-dropdown-width: $kendo-filter-operator-dropdown-width,
+    $kendo-filter-preview-field-text: $kendo-filter-preview-field-text,
+    $kendo-filter-preview-operator-text: $kendo-filter-preview-operator-text,
+    $kendo-filter-toolbar-focus-shadow: $kendo-filter-toolbar-focus-shadow
+);
