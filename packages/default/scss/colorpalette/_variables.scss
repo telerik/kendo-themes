@@ -63,3 +63,21 @@ $kendo-color-palette-sizes: (
         height: $kendo-color-palette-lg-tile-height
     )
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/colorpalette/_variables.scss" with (
+    $kendo-color-palette-font-family: $kendo-color-palette-font-family,
+    $kendo-color-palette-font-size: $kendo-color-palette-font-size,
+    $kendo-color-palette-line-height: $kendo-color-palette-line-height,
+    $kendo-color-palette-tile-width: $kendo-color-palette-tile-width,
+    $kendo-color-palette-tile-height: $kendo-color-palette-tile-height,
+    $kendo-color-palette-sm-tile-width: $kendo-color-palette-sm-tile-width,
+    $kendo-color-palette-sm-tile-height: $kendo-color-palette-sm-tile-height,
+    $kendo-color-palette-md-tile-width: $kendo-color-palette-md-tile-width,
+    $kendo-color-palette-md-tile-height: $kendo-color-palette-md-tile-height,
+    $kendo-color-palette-lg-tile-width: $kendo-color-palette-lg-tile-width,
+    $kendo-color-palette-lg-tile-height: $kendo-color-palette-lg-tile-height,
+    $kendo-color-palette-tile-focus-shadow: $kendo-color-palette-tile-focus-shadow,
+    $kendo-color-palette-tile-hover-shadow: $kendo-color-palette-tile-hover-shadow,
+    $kendo-color-palette-tile-selected-shadow: $kendo-color-palette-tile-selected-shadow,
+    $kendo-color-palette-sizes: $kendo-color-palette-sizes
+);

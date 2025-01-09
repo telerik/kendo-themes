@@ -1,15 +1,4 @@
-@use "./variables.scss" as *;
-
-@mixin kendo-wizard--theme-base() {
-
-    .k-wizard-step {
-        &:focus,
-        &.k-focus {
-            outline-color: $kendo-wizard-step-focus-border;
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/wizard/_theme.scss" as *;
 
 
 @mixin kendo-wizard--theme() {

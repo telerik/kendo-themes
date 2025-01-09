@@ -1,9 +1,4 @@
-@mixin kendo-searchbox--theme-base() {
-
-    // Searchbox
-    .k-searchbox {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/searchbox/_theme.scss" as *;
 
 
 @mixin kendo-searchbox--theme() {

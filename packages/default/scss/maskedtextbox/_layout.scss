@@ -1,9 +1,4 @@
-@mixin kendo-masked-textbox--layout-base() {
-
-    // Masked textbox
-    .k-maskedtextbox {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/maskedtextbox/_layout.scss" as *;
 
 
 @mixin kendo-masked-textbox--layout() {

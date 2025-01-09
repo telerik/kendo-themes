@@ -1,13 +1,4 @@
-@mixin kendo-numeric-textbox--layout-base() {
-
-    // Numeric textbox
-    .k-numeric-textbox {}
-
-
-    // Alias
-    .k-numerictextbox { @extend .k-numeric-textbox !optional; }
-
-}
+@use "@progress/kendo-theme-core/scss/components/numerictextbox/_layout.scss" as *;
 
 
 @mixin kendo-numeric-textbox--layout() {

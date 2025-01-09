@@ -28,3 +28,26 @@ $kendo-drop-hint-line-v-width: $kendo-drop-hint-line-h-height !default;
 $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
 
 $kendo-drop-hint-bg: $kendo-color-primary !default;
+
+@forward "@progress/kendo-theme-core/scss/components/draggable/_variables.scss" with (
+    $kendo-drag-hint-padding-x: $kendo-drag-hint-padding-x,
+    $kendo-drag-hint-padding-y: $kendo-drag-hint-padding-y,
+    $kendo-drag-hint-border-width: $kendo-drag-hint-border-width,
+    $kendo-drag-hint-border-radius: $kendo-drag-hint-border-radius,
+    $kendo-drag-hint-font-size: $kendo-drag-hint-font-size,
+    $kendo-drag-hint-font-family: $kendo-drag-hint-font-family,
+    $kendo-drag-hint-line-height: $kendo-drag-hint-line-height,
+    $kendo-drag-hint-bg: $kendo-drag-hint-bg,
+    $kendo-drag-hint-text: $kendo-drag-hint-text,
+    $kendo-drag-hint-border: $kendo-drag-hint-border,
+    $kendo-drag-hint-gradient: $kendo-drag-hint-gradient,
+    $kendo-drag-hint-shadow: $kendo-drag-hint-shadow,
+    $kendo-drag-hint-opacity: $kendo-drag-hint-opacity,
+    $kendo-drop-hint-arrow-size: $kendo-drop-hint-arrow-size,
+    $kendo-drop-hint-arrow-spacing: $kendo-drop-hint-arrow-spacing,
+    $kendo-drop-hint-line-h-width: $kendo-drop-hint-line-h-width,
+    $kendo-drop-hint-line-h-height: $kendo-drop-hint-line-h-height,
+    $kendo-drop-hint-line-v-width: $kendo-drop-hint-line-v-width,
+    $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-v-height,
+    $kendo-drop-hint-bg: $kendo-drop-hint-bg
+);

@@ -1,27 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
-@use "./variables.scss" as *;
-
-@mixin kendo-dialog--theme-base() {
-
-    // Dialog titlebar
-    .k-dialog-titlebar {
-        @include fill(
-            $kendo-dialog-titlebar-text,
-            $kendo-dialog-titlebar-bg,
-            $kendo-dialog-titlebar-border
-        );
-    }
-
-    // Dialog theme colors
-    @each $name, $color in $kendo-dialog-theme-colors {
-        .k-dialog-#{$name} .k-dialog-titlebar {
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
-            background-color: $color;
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/dialog/_theme.scss" as *;
 
 
 @mixin kendo-dialog--theme() {

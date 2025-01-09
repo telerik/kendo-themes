@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "./_functions.scss" as *;
 @use "../core/_index.scss" as *;
 @use "../core/functions/index.import.scss" as *;
 
@@ -52,23 +53,28 @@ $kendo-tooltip-border: $kendo-tooltip-bg !default;
 /// @group tooltip
 $kendo-tooltip-shadow: k-elevation(2) !default;
 
-@function tooltip-theme( $colors ) {
-    $_theme: ();
-
-    @each $name, $color in $colors {
-        $_theme: map.merge(( $name: (
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )),
-            background-color: $color,
-            border: $color,
-        )), $_theme );
-    }
-
-    @return $_theme;
-}
-
 /// The theme colors map for the Tooltip.
 /// @group tooltip
 $kendo-tooltip-theme-colors: $kendo-theme-colors !default;
 /// The generated theme colors map for the Tooltip.
 /// @group tooltip
 $kendo-tooltip-theme: tooltip-theme( $kendo-tooltip-theme-colors ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/tooltip/_variables.scss" with (
+    $kendo-tooltip-padding-y: $kendo-tooltip-padding-y,
+    $kendo-tooltip-padding-x: $kendo-tooltip-padding-x,
+    $kendo-tooltip-border-width: $kendo-tooltip-border-width,
+    $kendo-tooltip-border-radius: $kendo-tooltip-border-radius,
+    $kendo-tooltip-font-family: $kendo-tooltip-font-family,
+    $kendo-tooltip-font-size: $kendo-tooltip-font-size,
+    $kendo-tooltip-line-height: $kendo-tooltip-line-height,
+    $kendo-tooltip-title-font-size: $kendo-tooltip-title-font-size,
+    $kendo-tooltip-title-line-height: $kendo-tooltip-title-line-height,
+    $kendo-tooltip-callout-size: $kendo-tooltip-callout-size,
+    $kendo-tooltip-bg: $kendo-tooltip-bg,
+    $kendo-tooltip-text: $kendo-tooltip-text,
+    $kendo-tooltip-border: $kendo-tooltip-border,
+    $kendo-tooltip-shadow: $kendo-tooltip-shadow,
+    $kendo-tooltip-theme-colors: $kendo-tooltip-theme-colors,
+    $kendo-tooltip-theme: $kendo-tooltip-theme
+);

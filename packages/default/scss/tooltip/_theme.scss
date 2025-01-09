@@ -1,39 +1,4 @@
-@use "sass:map";
-@use "../core/_index.scss" as *;
-@use "./_variables.scss" as *;
-
-@mixin kendo-tooltip--theme-base() {
-    // Default tooltip
-    .k-tooltip {
-        @include fill(
-            $kendo-tooltip-text,
-            $kendo-tooltip-bg,
-            $kendo-tooltip-border
-        );
-
-        @include box-shadow( $kendo-tooltip-shadow );
-
-        .k-callout {
-            color: $kendo-tooltip-bg;
-        }
-    }
-
-    // Tooltip variants
-    @each $name, $props in $kendo-tooltip-theme {
-        .k-tooltip-#{$name} {
-            @include fill(
-                map.get( $props, color ),
-                map.get( $props, background-color ),
-                map.get( $props, border )
-            );
-
-            .k-callout {
-                color: map.get( $props, background-color );
-            }
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/tooltip/_theme.scss" as *;
 
 
 @mixin kendo-tooltip--theme() {

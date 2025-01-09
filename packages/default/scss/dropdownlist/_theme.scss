@@ -1,12 +1,4 @@
-@mixin kendo-dropdown-list--theme-base() {
-
-    // Dropdown list
-    .k-dropdown-list {}
-
-    // Native select
-    select.k-dropdown-list {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/dropdownlist/_theme.scss" as *;
 
 
 @mixin kendo-dropdown-list--theme() {

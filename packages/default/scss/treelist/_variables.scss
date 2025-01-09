@@ -8,3 +8,8 @@ $kendo-treelist-footer-row-bg: $kendo-grid-hover-bg !default;
 /// The border width of the TreeList footer row.
 /// @group treelist
 $kendo-treelist-footer-row-border-width: 1px !default;
+
+@forward "@progress/kendo-theme-core/scss/components/treelist/_variables.scss" with (
+    $kendo-treelist-footer-row-bg: $kendo-treelist-footer-row-bg,
+    $kendo-treelist-footer-row-border-width: $kendo-treelist-footer-row-border-width
+);

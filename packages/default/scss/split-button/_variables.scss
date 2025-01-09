@@ -31,3 +31,15 @@ $kendo-split-button-md-arrow-padding-y: $kendo-button-md-padding-y !default;
 /// The vertical padding of the large arrow Button.
 /// @group split-button
 $kendo-split-button-lg-arrow-padding-y: $kendo-button-lg-padding-y !default;
+
+@forward "@progress/kendo-theme-core/scss/components/split-button/_variables.scss" with (
+    $kendo-split-button-focus-shadow: $kendo-split-button-focus-shadow,
+    $kendo-split-button-arrow-padding-x: $kendo-split-button-arrow-padding-x,
+    $kendo-split-button-sm-arrow-padding-x: $kendo-split-button-sm-arrow-padding-x,
+    $kendo-split-button-md-arrow-padding-x: $kendo-split-button-md-arrow-padding-x,
+    $kendo-split-button-lg-arrow-padding-x: $kendo-split-button-lg-arrow-padding-x,
+    $kendo-split-button-arrow-padding-y: $kendo-split-button-arrow-padding-y,
+    $kendo-split-button-sm-arrow-padding-y: $kendo-split-button-sm-arrow-padding-y,
+    $kendo-split-button-md-arrow-padding-y: $kendo-split-button-md-arrow-padding-y,
+    $kendo-split-button-lg-arrow-padding-y: $kendo-split-button-lg-arrow-padding-y
+);

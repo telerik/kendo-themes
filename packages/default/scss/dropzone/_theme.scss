@@ -1,39 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "./variables.scss" as *;
-
-@mixin kendo-dropzone--theme-base() {
-
-    // Dropzone
-    .k-dropzone-inner {
-        @include fill(
-            $kendo-dropzone-text,
-            $kendo-dropzone-bg,
-            $kendo-dropzone-border
-        );
-
-        .k-icon,
-        .k-dropzone-icon {
-            color: $kendo-dropzone-icon-text;
-        }
-        .k-dropzone-hint {
-            color: $kendo-dropzone-hint-text;
-        }
-        .k-dropzone-note {
-            color: $kendo-dropzone-note-text;
-        }
-    }
-
-
-    // Hover
-    .k-external-dropzone-hover {
-
-        .k-icon,
-        .k-dropzone-icon {
-            color: $kendo-dropzone-icon-hover-text;
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/dropzone/_theme.scss" as *;
 
 
 @mixin kendo-dropzone--theme() {

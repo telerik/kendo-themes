@@ -1,11 +1,6 @@
-@mixin kendo-textarea--theme-base() {
-
-    // Textarea
-    .k-textarea {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/textarea/_theme.scss" as *;
 
 
 @mixin kendo-textarea--theme() {
-    @include kendo-textarea--theme-base();
+    @include  kendo-textarea--theme-base();
 }

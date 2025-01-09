@@ -111,3 +111,36 @@ $kendo-window-theme-colors: (
     "light": map.get($kendo-theme-colors, "light"),
     "dark": map.get($kendo-theme-colors, "dark")
 ) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (
+    $kendo-window-border-width: $kendo-window-border-width,
+    $kendo-window-border-radius: $kendo-window-border-radius,
+    $kendo-window-font-family: $kendo-window-font-family,
+    $kendo-window-font-size: $kendo-window-font-size,
+    $kendo-window-line-height: $kendo-window-line-height,
+    $kendo-window-titlebar-padding-x: $kendo-window-titlebar-padding-x,
+    $kendo-window-titlebar-padding-y: $kendo-window-titlebar-padding-y,
+    $kendo-window-titlebar-border-width: $kendo-window-titlebar-border-width,
+    $kendo-window-titlebar-border-style: $kendo-window-titlebar-border-style,
+    $kendo-window-title-font-size: $kendo-window-title-font-size,
+    $kendo-window-title-line-height: $kendo-window-title-line-height,
+    $kendo-window-actions-gap: $kendo-window-actions-gap,
+    $kendo-window-action-opacity: $kendo-window-action-opacity,
+    $kendo-window-action-hover-opacity: $kendo-window-action-hover-opacity,
+    $kendo-window-inner-padding-x: $kendo-window-inner-padding-x,
+    $kendo-window-inner-padding-y: $kendo-window-inner-padding-y,
+    $kendo-window-buttongroup-padding-x: $kendo-window-buttongroup-padding-x,
+    $kendo-window-buttongroup-padding-y: $kendo-window-buttongroup-padding-y,
+    $kendo-window-buttongroup-border-width: $kendo-window-buttongroup-border-width,
+    $kendo-window-bg: $kendo-window-bg,
+    $kendo-window-text: $kendo-window-text,
+    $kendo-window-border: $kendo-window-border,
+    $kendo-window-shadow: $kendo-window-shadow,
+    $kendo-window-focus-shadow: $kendo-window-focus-shadow,
+    $kendo-window-titlebar-bg: $kendo-window-titlebar-bg,
+    $kendo-window-titlebar-text: $kendo-window-titlebar-text,
+    $kendo-window-titlebar-border: $kendo-window-titlebar-border,
+    $kendo-window-titlebar-gradient: $kendo-window-titlebar-gradient,
+    $kendo-window-sizes: $kendo-window-sizes,
+    $kendo-window-theme-colors: $kendo-window-theme-colors
+);

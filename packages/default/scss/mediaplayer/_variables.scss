@@ -44,3 +44,19 @@ $kendo-media-player-titlebar-border: null !default;
 /// The gradient of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-gradient: if($kendo-enable-color-system, ( color-mix(in srgb, k-color( on-app-surface ) 70%, transparent), color-mix(in srgb, k-color( on-app-surface ) 0%, transparent) ), ( rgba( $kendo-media-player-text, .7 ), rgba( $kendo-media-player-text, 0 ) )) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/mediaplayer/_variables.scss" with (
+    $kendo-media-player-border-width: $kendo-media-player-border-width,
+    $kendo-media-player-font-family: $kendo-media-player-font-family,
+    $kendo-media-player-font-size: $kendo-media-player-font-size,
+    $kendo-media-player-line-height: $kendo-media-player-line-height,
+    $kendo-media-player-bg: $kendo-media-player-bg,
+    $kendo-media-player-text: $kendo-media-player-text,
+    $kendo-media-player-border: $kendo-media-player-border,
+    $kendo-media-player-titlebar-padding-x: $kendo-media-player-titlebar-padding-x,
+    $kendo-media-player-titlebar-padding-y: $kendo-media-player-titlebar-padding-y,
+    $kendo-media-player-titlebar-bg: $kendo-media-player-titlebar-bg,
+    $kendo-media-player-titlebar-text: $kendo-media-player-titlebar-text,
+    $kendo-media-player-titlebar-border: $kendo-media-player-titlebar-border,
+    $kendo-media-player-titlebar-gradient: $kendo-media-player-titlebar-gradient
+);

@@ -107,3 +107,38 @@ $kendo-upload-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 $kendo-upload-files-list-margin: calc( -1 * #{k-spacing(1)} ) !default;
 
 $kendo-upload-file-info-margin: k-spacing(2) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/upload/_variables.scss" with (
+    $kendo-upload-border-width: $kendo-upload-border-width,
+    $kendo-upload-font-family: $kendo-upload-font-family,
+    $kendo-upload-font-size: $kendo-upload-font-size,
+    $kendo-upload-line-height: $kendo-upload-line-height,
+    $kendo-upload-max-height: $kendo-upload-max-height,
+    $kendo-upload-text: $kendo-upload-text,
+    $kendo-upload-bg: $kendo-upload-bg,
+    $kendo-upload-border: $kendo-upload-border,
+    $kendo-upload-dropzone-padding-x: $kendo-upload-dropzone-padding-x,
+    $kendo-upload-dropzone-padding-y: $kendo-upload-dropzone-padding-y,
+    $kendo-upload-dropzone-text: $kendo-upload-dropzone-text,
+    $kendo-upload-dropzone-bg: $kendo-upload-dropzone-bg,
+    $kendo-upload-dropzone-border: $kendo-upload-dropzone-border,
+    $kendo-upload-dropzone-hover-bg: $kendo-upload-dropzone-hover-bg,
+    $kendo-upload-status-text: $kendo-upload-status-text,
+    $kendo-upload-status-text-opacity: $kendo-upload-status-text-opacity,
+    $kendo-upload-item-padding-x: $kendo-upload-item-padding-x,
+    $kendo-upload-item-padding-y: $kendo-upload-item-padding-y,
+    $kendo-upload-multiple-items-spacing: $kendo-upload-multiple-items-spacing,
+    $kendo-upload-validation-font-size: $kendo-upload-validation-font-size,
+    $kendo-upload-validation-line-height: $kendo-upload-validation-line-height,
+    $kendo-upload-icon-spacing: $kendo-upload-icon-spacing,
+    $kendo-upload-icon-color: $kendo-upload-icon-color,
+    $kendo-upload-progress-thickness: $kendo-upload-progress-thickness,
+    $kendo-upload-progress-bg: $kendo-upload-progress-bg,
+    $kendo-upload-success-text: $kendo-upload-success-text,
+    $kendo-upload-success-bg: $kendo-upload-success-bg,
+    $kendo-upload-error-text: $kendo-upload-error-text,
+    $kendo-upload-error-bg: $kendo-upload-error-bg,
+    $kendo-upload-focus-shadow: $kendo-upload-focus-shadow,
+    $kendo-upload-files-list-margin: $kendo-upload-files-list-margin,
+    $kendo-upload-file-info-margin: $kendo-upload-file-info-margin
+);

@@ -1,23 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "./_variables.scss" as *;
-
-@mixin kendo-color-preview--theme-base() {
-
-    // Color Preview
-    .k-color-preview {
-        @include fill(
-            $kendo-color-preview-text,
-            $kendo-color-preview-bg,
-            $kendo-color-preview-border
-        );
-
-        &:hover,
-        &.k-hover {
-            @include fill( $border: $kendo-color-preview-hover-border );
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/color-preview/_theme.scss" as *;
 
 
 @mixin kendo-color-preview--theme() {

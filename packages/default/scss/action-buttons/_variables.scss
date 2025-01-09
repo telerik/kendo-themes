@@ -11,3 +11,15 @@ $kendo-actions-bg: null !default;
 $kendo-actions-text: null !default;
 $kendo-actions-border: null !default;
 $kendo-actions-gradient: null !default;
+
+@forward "@progress/kendo-theme-core/scss/components/action-buttons/_variables.scss" with (
+    $kendo-actions-margin-top: $kendo-actions-margin-top,
+    $kendo-actions-padding-x: $kendo-actions-padding-x,
+    $kendo-actions-padding-y: $kendo-actions-padding-y,
+    $kendo-actions-border-width: $kendo-actions-border-width,
+    $kendo-actions-button-spacing: $kendo-actions-button-spacing,
+    $kendo-actions-bg: $kendo-actions-bg,
+    $kendo-actions-text: $kendo-actions-text,
+    $kendo-actions-border: $kendo-actions-border,
+    $kendo-actions-gradient: $kendo-actions-gradient
+);

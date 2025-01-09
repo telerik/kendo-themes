@@ -33,3 +33,16 @@ $kendo-panel-bg: var(--kendo-component-bg, #{$kendo-component-bg}) !default;
 /// The color of the border around the Panel.
 /// @group panel
 $kendo-panel-border: var(--kendo-component-border, #{$kendo-component-border}) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/panel/_variables.scss" with (
+    $kendo-panel-border-radius: $kendo-panel-border-radius,
+    $kendo-panel-border-width: $kendo-panel-border-width,
+    $kendo-panel-border-style: $kendo-panel-border-style,
+    $kendo-panel-header-padding-inline: $kendo-panel-header-padding-inline,
+    $kendo-panel-header-padding-block: $kendo-panel-header-padding-block,
+    $kendo-panel-content-padding-inline: $kendo-panel-content-padding-inline,
+    $kendo-panel-content-padding-block: $kendo-panel-content-padding-block,
+    $kendo-panel-text: $kendo-panel-text,
+    $kendo-panel-bg: $kendo-panel-bg,
+    $kendo-panel-border: $kendo-panel-border
+);

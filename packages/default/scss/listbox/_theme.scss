@@ -1,23 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "./variables.scss" as *;
-
-@mixin kendo-listbox--theme-base() {
-
-    // Listbox
-    .k-listbox {
-        .k-list-scroller {
-            @include fill(
-                $kendo-listbox-text,
-                $kendo-listbox-bg,
-                $kendo-listbox-border
-            );
-        }
-        .k-drop-hint {
-            border-top-color: $kendo-color-primary;
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/listbox/_theme.scss" as *;
 
 
 @mixin kendo-listbox--theme() {

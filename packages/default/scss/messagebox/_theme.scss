@@ -1,28 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "../core/functions/index.import.scss" as *;
-@use "./_variables.scss" as *;
-
-@mixin kendo-messagebox--theme-base() {
-
-    @each $color-name, $color in $kendo-theme-colors {
-        .k-messagebox-#{$color-name} {
-            @if $color-name == "inverse" {
-                @include fill(
-                    if($kendo-enable-color-system, k-color( dark-on-subtle ), k-color-level( $color, $kendo-message-box-text-level )),
-                    if($kendo-enable-color-system, k-color( dark-subtle ), k-color-level( $color, $kendo-message-box-bg-level )),
-                    if($kendo-enable-color-system, k-color( dark-hover ), k-color-level( $color, $kendo-message-box-border-level ))
-                );
-            } @else {
-                @include fill(
-                    if($kendo-enable-color-system, k-color( #{$color-name}-on-subtle ), k-color-level( $color, $kendo-message-box-text-level )),
-                    if($kendo-enable-color-system, k-color( #{$color-name}-subtle ), k-color-level( $color, $kendo-message-box-bg-level )),
-                    if($kendo-enable-color-system, k-color( #{$color-name}-emphasis ), k-color-level( $color, $kendo-message-box-border-level ))
-                );
-            }
-        }
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/messagebox/_theme.scss" as *;
 
 
 @mixin kendo-messagebox--theme() {

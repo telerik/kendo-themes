@@ -1,9 +1,4 @@
-@mixin kendo-time-duration-picker--theme-base() {
-
-    // Time duration picker
-    .k-time-duration-picker {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/timedurationpicker/_theme.scss" as *;
 
 
 @mixin kendo-time-duration-picker--theme() {

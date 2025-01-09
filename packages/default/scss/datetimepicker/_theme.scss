@@ -1,9 +1,4 @@
-@mixin kendo-date-time-picker--theme-base() {
-
-    // Datetime picker
-    .k-datetimepicker {}
-
-}
+@use "@progress/kendo-theme-core/scss/components/datetimepicker/_theme.scss" as *;
 
 
 @mixin kendo-date-time-picker--theme() {

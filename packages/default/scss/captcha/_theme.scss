@@ -1,18 +1,4 @@
-@use "../core/_index.scss" as *;
-@use "./variables.scss" as *;
-
-@mixin kendo-captcha--theme-base() {
-
-    // Captcha
-    .k-captcha {
-        @include fill(
-            $kendo-captcha-text,
-            $kendo-captcha-bg,
-            $kendo-captcha-border
-        );
-    }
-
-}
+@use "@progress/kendo-theme-core/scss/components/captcha/_theme.scss" as *;
 
 
 @mixin kendo-captcha--theme() {
