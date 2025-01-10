@@ -7112,8 +7112,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-editor-sm-min-width</td>
     <td>Number</td>
-    <td><code>252px</code></td>
-    <td><code>252px</code></td>
+    <td><code>266px</code></td>
+    <td><code>266px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
@@ -7635,7 +7635,7 @@ The following table lists the available variables for customizing the Bootstrap 
         preview-height: $kendo-color-editor-lg-color-preview-height,
     )
 )</code></td>
-    <td><ul><li>sm: "min-width":"252px","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","views-padding-x":"var(--kendo-spacing-4, 1rem)","views-padding-y":"var(--kendo-spacing-4, 1rem)","preview-gap":"var(--kendo-spacing-1, 0.25rem)","preview-width":"32px","preview-height":"10px"</li><li>md: "min-width":"328px","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","views-padding-x":"var(--kendo-spacing-4, 1rem)","views-padding-y":"var(--kendo-spacing-4, 1rem)","preview-gap":"var(--kendo-spacing-1, 0.25rem)","preview-width":"32px","preview-height":"12px"</li><li>lg: "min-width":"362px","header-padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","header-padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","views-padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","views-padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","preview-gap":"var(--kendo-spacing-1, 0.25rem)","preview-width":"32px","preview-height":"12px"</li></ul></td>
+    <td><ul><li>sm: "min-width":"266px","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","views-padding-x":"var(--kendo-spacing-4, 1rem)","views-padding-y":"var(--kendo-spacing-4, 1rem)","preview-gap":"var(--kendo-spacing-1, 0.25rem)","preview-width":"32px","preview-height":"10px"</li><li>md: "min-width":"328px","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","views-padding-x":"var(--kendo-spacing-4, 1rem)","views-padding-y":"var(--kendo-spacing-4, 1rem)","preview-gap":"var(--kendo-spacing-1, 0.25rem)","preview-width":"32px","preview-height":"12px"</li><li>lg: "min-width":"362px","header-padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","header-padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","views-padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","views-padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","preview-gap":"var(--kendo-spacing-1, 0.25rem)","preview-width":"32px","preview-height":"12px"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorEditor.</div></div>
@@ -7792,6 +7792,66 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-sm-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-padding-y</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-spacer</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-padding-y</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4.5)</code></td>
+    <td><code>var(--kendo-spacing-4\.5, 1.125rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-sm-width</td>
     <td>Number</td>
     <td><code>266px</code></td>
@@ -7904,8 +7964,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-gradient-sm-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>186px</code></td>
-    <td><code>186px</code></td>
+    <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the small ColorGradient canvas hsv rectangle.</div></div>
@@ -8024,8 +8084,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-gradient-sm-slider-vertical-size</td>
     <td>Number</td>
-    <td><code>186px</code></td>
-    <td><code>186px</code></td>
+    <td><code>$kendo-color-gradient-slider-vertical-size</code></td>
+    <td><code>180px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorGradient vertical slider.</div></div>
@@ -8244,8 +8304,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-gradient-lg-input-width</td>
     <td>Number</td>
-    <td><code>62.5px</code></td>
-    <td><code>62.5px</code></td>
+    <td><code>62px</code></td>
+    <td><code>62px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorGradient input.</div></div>
@@ -8281,7 +8341,9 @@ The following table lists the available variables for customizing the Bootstrap 
         rectangle-height: $kendo-color-gradient-sm-canvas-rectangle-height,
         input-width: $kendo-color-gradient-sm-input-width,
         gap: $kendo-color-gradient-sm-gap,
-        canvas-gap: $kendo-color-gradient-sm-canvas-gap
+        canvas-gap: $kendo-color-gradient-sm-canvas-gap,
+        padding-x: $kendo-color-gradient-sm-padding-x,
+        padding-y: $kendo-color-gradient-sm-padding-y
     ),
     md: (
         width: $kendo-color-gradient-md-width,
@@ -8289,7 +8351,9 @@ The following table lists the available variables for customizing the Bootstrap 
         rectangle-height: $kendo-color-gradient-md-canvas-rectangle-height,
         input-width: $kendo-color-gradient-md-input-width,
         gap: $kendo-color-gradient-md-gap,
-        canvas-gap: $kendo-color-gradient-md-canvas-gap
+        canvas-gap: $kendo-color-gradient-md-canvas-gap,
+        padding-x: $kendo-color-gradient-md-padding-x,
+        padding-y: $kendo-color-gradient-md-padding-y
     ),
     lg: (
         width: $kendo-color-gradient-lg-width,
@@ -8297,10 +8361,12 @@ The following table lists the available variables for customizing the Bootstrap 
         rectangle-height: $kendo-color-gradient-lg-canvas-rectangle-height,
         input-width: $kendo-color-gradient-lg-input-width,
         gap: $kendo-color-gradient-lg-gap,
-        canvas-gap: $kendo-color-gradient-lg-canvas-gap
+        canvas-gap: $kendo-color-gradient-lg-canvas-gap,
+        padding-x: $kendo-color-gradient-lg-padding-x,
+        padding-y: $kendo-color-gradient-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "width":"266px","vertical-slider-height":"186px","rectangle-height":"186px","input-width":"42px","gap":"var(--kendo-spacing-4, 1rem)","canvas-gap":"var(--kendo-spacing-3, 0.75rem)"</li><li>md: "width":"328px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"56px","gap":"var(--kendo-spacing-4, 1rem)","canvas-gap":"var(--kendo-spacing-3, 0.75rem)"</li><li>lg: "width":"362px","vertical-slider-height":"268px","rectangle-height":"268px","input-width":"62.5px","gap":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-gap":"var(--kendo-spacing-4\\.5, 1.125rem)"</li></ul></td>
+    <td><ul><li>sm: "width":"266px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"42px","gap":"var(--kendo-spacing-4, 1rem)","canvas-gap":"var(--kendo-spacing-3, 0.75rem)","padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>md: "width":"328px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"56px","gap":"var(--kendo-spacing-4, 1rem)","canvas-gap":"var(--kendo-spacing-3, 0.75rem)","padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "width":"362px","vertical-slider-height":"268px","rectangle-height":"268px","input-width":"62px","gap":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-gap":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorGradient.</div></div>
@@ -8377,7 +8443,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-sm-width</td>
+    <td>$kendo-color-palette-sm-tile-width</td>
     <td>String</td>
     <td><code>k-spacing(5.5)</code></td>
     <td><code>var(--kendo-spacing-5\.5, 1.375rem)</code></td>
@@ -8387,9 +8453,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-sm-height</td>
+    <td>$kendo-color-palette-sm-tile-height</td>
     <td>String</td>
-    <td><code>$kendo-color-palette-tile-sm-width</code></td>
+    <td><code>$kendo-color-palette-sm-tile-width</code></td>
     <td><code>var(--kendo-spacing-5\.5, 1.375rem)</code></td>
 </tr>
 <tr>
@@ -8397,7 +8463,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-md-width</td>
+    <td>$kendo-color-palette-md-tile-width</td>
     <td>String</td>
     <td><code>$kendo-color-palette-tile-width</code></td>
     <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
@@ -8407,7 +8473,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-md-height</td>
+    <td>$kendo-color-palette-md-tile-height</td>
     <td>String</td>
     <td><code>$kendo-color-palette-tile-height</code></td>
     <td><code>var(--kendo-spacing-6, 1.5rem)</code></td>
@@ -8417,7 +8483,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-lg-width</td>
+    <td>$kendo-color-palette-lg-tile-width</td>
     <td>String</td>
     <td><code>k-spacing(8)</code></td>
     <td><code>var(--kendo-spacing-8, 2rem)</code></td>
@@ -8427,9 +8493,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-color-palette-tile-lg-height</td>
+    <td>$kendo-color-palette-lg-tile-height</td>
     <td>String</td>
-    <td><code>$kendo-color-palette-tile-lg-width</code></td>
+    <td><code>$kendo-color-palette-lg-tile-width</code></td>
     <td><code>var(--kendo-spacing-8, 2rem)</code></td>
 </tr>
 <tr>
@@ -8471,16 +8537,16 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Map</td>
     <td><code>(
     sm: (
-        width: $kendo-color-palette-tile-sm-width,
-        height: $kendo-color-palette-tile-sm-height
+        width: $kendo-color-palette-sm-tile-width,
+        height: $kendo-color-palette-sm-tile-height
     ),
     md: (
-        width: $kendo-color-palette-tile-md-width,
-        height: $kendo-color-palette-tile-md-height
+        width: $kendo-color-palette-md-tile-width,
+        height: $kendo-color-palette-md-tile-height
     ),
     lg: (
-        width: $kendo-color-palette-tile-lg-width,
-        height: $kendo-color-palette-tile-lg-height
+        width: $kendo-color-palette-lg-tile-width,
+        height: $kendo-color-palette-lg-tile-height
     )
 )</code></td>
     <td><ul><li>sm: "width":"var(--kendo-spacing-5\\.5, 1.375rem)","height":"var(--kendo-spacing-5\\.5, 1.375rem)"</li><li>md: "width":"var(--kendo-spacing-6, 1.5rem)","height":"var(--kendo-spacing-6, 1.5rem)"</li><li>lg: "width":"var(--kendo-spacing-8, 2rem)","height":"var(--kendo-spacing-8, 2rem)"</li></ul></td>

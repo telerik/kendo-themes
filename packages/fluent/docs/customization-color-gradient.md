@@ -168,10 +168,70 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-sm-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-padding-y</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-sm-padding-x</td>
+    <td>Calculation</td>
+    <td><code>$kendo-color-gradient-padding-x</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-color-gradient-padding-y</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-md-padding-x</td>
+    <td>Calculation</td>
+    <td><code>$kendo-color-gradient-padding-x</code></td>
+    <td><code>calc(var(--kendo-spacing-4, 1rem) / 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-padding-y</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-lg-padding-x</td>
+    <td>String</td>
+    <td><code>k-spacing(4)</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large ColorGradient.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-sm-width</td>
     <td>Number</td>
-    <td><code>226px</code></td>
-    <td><code>226px</code></td>
+    <td><code>236px</code></td>
+    <td><code>236px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorGradient.</div></div>
@@ -190,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-lg-width</td>
     <td>Number</td>
-    <td><code>360px</code></td>
-    <td><code>360px</code></td>
+    <td><code>362px</code></td>
+    <td><code>362px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorGradient.</div></div>
@@ -630,8 +690,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-sm-input-width</td>
     <td>Number</td>
-    <td><code>43.5px</code></td>
-    <td><code>43.5px</code></td>
+    <td><code>43px</code></td>
+    <td><code>43px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small ColorGradient input.</div></div>
@@ -650,8 +710,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-lg-input-width</td>
     <td>Number</td>
-    <td><code>50.5px</code></td>
-    <td><code>50.5px</code></td>
+    <td><code>68px</code></td>
+    <td><code>68px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large ColorGradient input.</div></div>
@@ -687,7 +747,9 @@ The following table lists the available variables for customization.
         rectangle-height: $kendo-color-gradient-sm-canvas-rectangle-height,
         input-width: $kendo-color-gradient-sm-input-width,
         spacing: $kendo-color-gradient-sm-spacing,
-        canvas-spacing: $kendo-color-gradient-sm-canvas-spacing
+        canvas-spacing: $kendo-color-gradient-sm-canvas-spacing,
+        padding-x: $kendo-color-gradient-sm-padding-x,
+        padding-y: $kendo-color-gradient-sm-padding-y
     ),
     md: (
         width: $kendo-color-gradient-md-width,
@@ -695,7 +757,9 @@ The following table lists the available variables for customization.
         rectangle-height: $kendo-color-gradient-md-canvas-rectangle-height,
         input-width: $kendo-color-gradient-md-input-width,
         spacing: $kendo-color-gradient-md-spacing,
-        canvas-spacing: $kendo-color-gradient-md-canvas-spacing
+        canvas-spacing: $kendo-color-gradient-md-canvas-spacing,
+        padding-x: $kendo-color-gradient-md-padding-x,
+        padding-y: $kendo-color-gradient-md-padding-y
     ),
     lg: (
         width: $kendo-color-gradient-lg-width,
@@ -703,10 +767,12 @@ The following table lists the available variables for customization.
         rectangle-height: $kendo-color-gradient-lg-canvas-rectangle-height,
         input-width: $kendo-color-gradient-lg-input-width,
         spacing: $kendo-color-gradient-lg-spacing,
-        canvas-spacing: $kendo-color-gradient-lg-canvas-spacing
+        canvas-spacing: $kendo-color-gradient-lg-canvas-spacing,
+        padding-x: $kendo-color-gradient-lg-padding-x,
+        padding-y: $kendo-color-gradient-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "width":"226px","vertical-slider-height":"164px","rectangle-height":"164px","input-width":"43.5px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)"</li><li>md: "width":"260px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"48px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)"</li><li>lg: "width":"360px","vertical-slider-height":"256px","rectangle-height":"256px","input-width":"50.5px","spacing":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-spacing":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
+    <td><ul><li>sm: "width":"236px","vertical-slider-height":"164px","rectangle-height":"164px","input-width":"43px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)","padding-x":"calc(var(--kendo-spacing-4, 1rem) / 2)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>md: "width":"260px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"48px","spacing":"var(--kendo-spacing-4, 1rem)","canvas-spacing":"var(--kendo-spacing-2, 0.5rem)","padding-x":"calc(var(--kendo-spacing-4, 1rem) / 2)","padding-y":"var(--kendo-spacing-4, 1rem)"</li><li>lg: "width":"362px","vertical-slider-height":"256px","rectangle-height":"256px","input-width":"68px","spacing":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-spacing":"var(--kendo-spacing-4, 1rem)","padding-x":"var(--kendo-spacing-4, 1rem)","padding-y":"var(--kendo-spacing-4, 1rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorGradient.</div></div>
