@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-editor-lg-min-width</td>
     <td>Number</td>
-    <td><code>360px</code></td>
-    <td><code>360px</code></td>
+    <td><code>362px</code></td>
+    <td><code>362px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the ColorEditor.</div></div>
@@ -603,7 +603,7 @@ The following table lists the available variables for customization.
         preview-height: $kendo-color-editor-lg-color-preview-height,
     )
 )</code></td>
-    <td><ul><li>sm: "min-width":"236px","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","views-padding-x":"var(--kendo-spacing-2, 0.5rem)","views-padding-y":"var(--kendo-spacing-2, 0.5rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"12px"</li><li>md: "min-width":"260px","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","views-padding-x":"var(--kendo-spacing-2, 0.5rem)","views-padding-y":"var(--kendo-spacing-2, 0.5rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"14px"</li><li>lg: "min-width":"360px","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","views-padding-x":"var(--kendo-spacing-4, 1rem)","views-padding-y":"var(--kendo-spacing-4, 1rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"16px"</li></ul></td>
+    <td><ul><li>sm: "min-width":"236px","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","views-padding-x":"var(--kendo-spacing-2, 0.5rem)","views-padding-y":"var(--kendo-spacing-2, 0.5rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"12px"</li><li>md: "min-width":"260px","header-padding-x":"var(--kendo-spacing-2, 0.5rem)","header-padding-y":"var(--kendo-spacing-2, 0.5rem)","views-padding-x":"var(--kendo-spacing-2, 0.5rem)","views-padding-y":"var(--kendo-spacing-2, 0.5rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"14px"</li><li>lg: "min-width":"362px","header-padding-x":"var(--kendo-spacing-4, 1rem)","header-padding-y":"var(--kendo-spacing-4, 1rem)","views-padding-x":"var(--kendo-spacing-4, 1rem)","views-padding-y":"var(--kendo-spacing-4, 1rem)","preview-spacing":"var(--kendo-spacing-1, 0.25rem)","preview-width":"34px","preview-height":"16px"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorEditor preview.</div></div>
