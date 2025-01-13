@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.1.1-dev.1...v10.2.0-dev.0) (2025-01-13)
+
+
+### Bug Fixes
+
+* **tabstrip:** center content in stretched horizontal tabs ([00c1f6a](https://github.com/telerik/kendo-themes/commit/00c1f6a950a797f714573f7ccfa4600fed5307e8))
+* **tabstrip:** move rtl styles inside mixin ([98df004](https://github.com/telerik/kendo-themes/commit/98df00432123b2854d1145dd0c56bc48e8acd68d))
+* **toolbar:** fix scrollable overlay starting point ([6fa6ce3](https://github.com/telerik/kendo-themes/commit/6fa6ce3e6e8143a411987d5690f202413848bad1))
+* update sizing related styles for ColorEditor, ColorGradient, ColorPalette ([9b235c2](https://github.com/telerik/kendo-themes/commit/9b235c23216acdf4c75367df0f3a5b8419b8054c))
+
+
+
+
+
 ## [10.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v10.1.1-dev.0...v10.1.1-dev.1) (2025-01-06)
 
 **Note:** Version bump only for package @progress/kendo-theme-default

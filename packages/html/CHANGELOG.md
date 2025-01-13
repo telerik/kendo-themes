@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.1.1-dev.1...v10.2.0-dev.0) (2025-01-13)
+
+
+### Features
+
+* **html:** add ColorPalette sizing ([836bb7f](https://github.com/telerik/kendo-themes/commit/836bb7fc8a5814b7ef494acea282cf74ee672d88))
+
+
+
+
+
 ## [10.1.1-dev.1](https://github.com/telerik/kendo-themes/compare/v10.1.1-dev.0...v10.1.1-dev.1) (2025-01-06)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
