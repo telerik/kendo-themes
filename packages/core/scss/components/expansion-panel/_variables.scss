@@ -1,77 +1,33 @@
 // ExpansionPanel
 
-/// The vertical spacing of the ExpansionPanel.
-/// @group expander
 $kendo-expander-spacing-y: null !default;
-/// The width of the border around the ExpansionPanel.
-/// @group expander
 $kendo-expander-border-width: null !default;
-/// The font family of the ExpansionPanel.
-/// @group expander
 $kendo-expander-font-family: null !default;
-/// The font size of the ExpansionPanel.
-/// @group expander
 $kendo-expander-font-size: null !default;
-/// The hine height of the ExpansionPanel.
-/// @group expander
 $kendo-expander-line-height: null !default;
 
-/// The text color of the ExpansionPanel.
-/// @group expander
 $kendo-expander-text: null !default;
-/// The background color of the ExpansionPanel.
-/// @group expander
 $kendo-expander-bg: null !default;
-/// The border color of the ExpansionPanel.
-/// @group expander
 $kendo-expander-border: null !default;
 
-/// The box shadow of the focused ExpansionPanel.
-/// @group expander
 $kendo-expander-focus-shadow: null !default;
 
-/// The horizontal padding of the ExpansionPanel header.
-/// @group expander
 $kendo-expander-header-padding-x: null !default;
-/// The vertical padding of the ExpansionPanel header.
-/// @group expander
 $kendo-expander-header-padding-y: null !default;
 
-/// The text color of the ExpansionPanel header.
-/// @group expander
 $kendo-expander-header-text: null !default;
-/// The background color of the ExpansionPanel header.
-/// @group expander
 $kendo-expander-header-bg: null !default;
-/// The border color of the ExpansionPanel header.
-/// @group expander
 $kendo-expander-header-border: null !default;
 
-/// The background color of the hovered ExpansionPanel header.
-/// @group expander
 $kendo-expander-header-hover-bg: null !default;
-/// The background color of the focused ExpansionPanel header.
-/// @group expander
 $kendo-expander-header-focus-bg: null !default;
-/// The box shadow of the focused ExpansionPanel header.
-/// @group expander
 $kendo-expander-header-focus-shadow: null !default;
 
-/// The text color of the ExpansionPanel title.
-/// @group expander
 $kendo-expander-title-text: null !default;
 
-/// The text color of the ExpansionPanel sub-title.
-/// @group expander
 $kendo-expander-header-sub-title-text: null !default;
 
-/// The horizontal margin of the ExpansionPanel indicator.
-/// @group expander
 $kendo-expander-indicator-margin-x: null !default;
 
-/// The horizontal padding of the ExpansionPanel content.
-/// @group expander
 $kendo-expander-content-padding-x: null !default;
-/// The vertical padding of the ExpansionPanel content.
-/// @group expander
 $kendo-expander-content-padding-y: null !default;

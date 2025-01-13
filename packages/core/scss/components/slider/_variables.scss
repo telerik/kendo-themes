@@ -1,122 +1,48 @@
 // Slider
-/// The default size of the Slider.
-/// @group slider
 $kendo-slider-size: null !default;
-/// The default size of the Slider tick.
-/// @group slider
 $kendo-slider-tick-size: null !default;
-/// The default size of the Slider's track wrap.
-/// @group slider
 $kendo-slider-alt-size: null !default;
 
-/// The font family of the Slider.
-/// @group slider
 $kendo-slider-font-family: null !default;
-/// The font size of the Slider.
-/// @group slider
 $kendo-slider-font-size: null !default;
-/// The line height of the Slider.
-/// @group slider
 $kendo-slider-line-height: null !default;
 
-/// The offset of the Slider Buttons.
-/// @group slider
 $kendo-slider-button-offset: null !default;
-/// The size of the Slider Buttons.
-/// @group slider
 $kendo-slider-button-size: null !default;
-/// The spacing of the Slider Buttons.
-/// @group slider
 $kendo-slider-button-spacing: null !default;
-/// The shadow of the focused Slider Buttons.
-/// @group slider
 $kendo-slider-button-focus-shadow: null !default;
 
-/// The thickness of the Slider track.
-/// @group slider
 $kendo-slider-track-thickness: null !default;
-/// The size of the Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-size: null !default;
-/// The border width of the Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-border-width: null !default;
-/// The transition scale of the active Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-active-scale: null !default;
-/// The size of the active Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-active-size: null !default;
 
-/// The background color of the Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-bg: null !default;
-/// The text color of the Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-text: null !default;
-/// The border color of the Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-border: null !default;
-/// The gradient of the Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-gradient: null !default;
 
-/// The background color of the hovered Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-hover-bg: null !default;
-/// The text color of the hovered Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-hover-text: null !default;
-/// The border color of the hovered Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-hover-border: null !default;
-/// The gradient of the hovered Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-hover-gradient: null !default;
 
-/// The background color of the active Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-pressed-bg: null !default;
-/// The text color of the active Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-pressed-text: null !default;
-/// The border color of the active Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-pressed-border: null !default;
-/// The gradient of the active Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-pressed-gradient: null !default;
 
-/// The shadow of the focused Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-focus-shadow: null !default;
 
-/// The transition speed of the Slider.
-/// @group slider
 $kendo-slider-transition-speed: null !default;
-/// The transition function of the Slider.
-/// @group slider
 $kendo-slider-transition-function: null !default;
-/// The transition speed of the Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-transition-speed: null !default;
-/// The transition function of the Slider drag handle.
-/// @group slider
 $kendo-slider-draghandle-transition-function: null !default;
 
-/// The background color of the Slider track.
-/// @group slider
 $kendo-slider-track-bg: null !default;
-/// The background color of the Slider's track selection.
-/// @group slider
 $kendo-slider-selection-bg: null !default;
-/// @group slider
-/// The opacity of the disabled Slider.
 $kendo-slider-disabled-opacity: null !default;
 
-/// The background image of the horizontal Slider tick.
-/// @group slider
 $kendo-slider-tick-horizontal-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
-/// The background image of the vertical Slider tick.
-/// @group slider
 $kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;

@@ -1,45 +1,19 @@
 // Notification
 
-/// The row-gap between the elements in the Notification group.
-/// @group notification
 $kendo-notification-group-gap: null !default;
 
-/// The horizontal padding of the Notification.
-/// @group notification
 $kendo-notification-padding-x: null !default;
-/// The vertical padding of the Notification.
-/// @group notification
 $kendo-notification-padding-y: null !default;
-/// The width of the border around the Notification.
-/// @group notification
 $kendo-notification-border-width: null !default;
-/// The border radius of the Notification.
-/// @group notification
 $kendo-notification-border-radius: k-border-radius(md)!default;
-/// The font family of the Notification.
-/// @group notification
 $kendo-notification-font-family: null !default;
-/// The font size of the Notification.
-/// @group notification
 $kendo-notification-font-size: null !default;
-/// The line height of the Notification.
-/// @group notification
 $kendo-notification-line-height: null !default;
-/// The background color of the Notification.
-/// @group notification
 $kendo-notification-bg: null !default;
-/// The text color of the Notification.
-/// @group notification
 $kendo-notification-text: null !default;
-/// The border color of the Notification.
-/// @group notification
 $kendo-notification-border: null !default;
-/// The box shadow of the Notification.
-/// @group notification
 $kendo-notification-shadow: null !default;
 
-/// The horizontal spacing of the Notification icon.
-/// @group notification
 $kendo-notification-icon-spacing: null !default;
 
 @function notification-theme( $colors ) {
@@ -56,9 +30,5 @@ $kendo-notification-icon-spacing: null !default;
     @return $_theme;
 }
 
-/// The theme colors map for the Notification.
-/// @group notification
 $kendo-notification-theme-colors: null !default;
-/// The generated theme colors map for the Notification.
-/// @group notification
 $kendo-notification-theme: null !default;

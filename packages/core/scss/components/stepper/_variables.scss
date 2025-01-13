@@ -1,227 +1,92 @@
 // Stepper
 
-/// The horizontal margin the Stepper.
-/// @group stepper
 $kendo-stepper-margin-x: null !default;
-/// The vertical margin the Stepper.
-/// @group stepper
 $kendo-stepper-margin-y: null !default;
-/// The horizontal padding the Stepper.
-/// @group stepper
 $kendo-stepper-padding-x: null !default;
-/// The vertical padding the Stepper.
-/// @group stepper
 $kendo-stepper-padding-y: null !default;
-/// The horizontal margin the Stepper label.
-/// @group stepper
 $kendo-stepper-label-margin-x: null !default;
-/// The horizontal padding the Stepper label.
-/// @group stepper
 $kendo-stepper-label-padding-x: null !default;
-/// The vertical padding the Stepper label.
-/// @group stepper
 $kendo-stepper-label-padding-y: null !default;
-/// The border radius of the Stepper label.
-/// @group stepper
 $kendo-stepper-label-border-radius: null !default;
-/// The width of the border around the Stepper.
-/// @group stepper
 $kendo-stepper-border-width: null !default;
 
-/// The horizontal padding of the Stepper content.
-/// @group stepper
 $kendo-stepper-inline-content-padding-x: null !default;
-/// The vertical padding of the Stepper content.
-/// @group stepper
 $kendo-stepper-inline-content-padding-y: null !default;
 
 // The font size of the Stepper.
-/// @group stepper
 $kendo-stepper-font-size: null !default;
 // The line height of the Stepper.
-/// @group stepper
 $kendo-stepper-line-height: null !default;
 // The font family of the Stepper.
-/// @group stepper
 $kendo-stepper-font-family: null !default;
 
-/// The background color of the Stepper.
-/// @group stepper
 $kendo-stepper-bg: null !default;
-/// The text color of the Stepper.
-/// @group stepper
 $kendo-stepper-text: null !default;
-/// The border color of the Stepper.
-/// @group stepper
 $kendo-stepper-border: null !default;
 
-/// The width of the Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-width: null !default;
-/// The height of the Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-height: null !default;
-/// The border width of the Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-border-width: null !default;
-/// The border radius of the Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-border-radius: null !default;
 
-/// The border width of the focused Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-focus-border-width: null !default;
-/// The size of the focused Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-focus-size: null !default;
-/// The offset of the Stepper's focused indicator.
-/// @group stepper
 $kendo-stepper-indicator-focus-offset: null !default;
-/// The calculated offset of the Stepper's focused indicator.
-/// @group stepper
 $kendo-stepper-indicator-focus-calc-offset: null !default;
 
-/// The background color of the Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-bg: null !default;
-/// The text color of the Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-text: null !default;
-/// The border color of the Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-border: null !default;
 
-/// The background color of the hovered Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-hover-bg: null !default;
-/// The text color of the hovered Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-hover-text: null !default;
-/// The border color of the hovered Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-hover-border: null !default;
 
-/// The background color of the disabled Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-disabled-bg: null !default;
-/// The text color of the disabled Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-disabled-text: null !default;
-/// The border color of the disabled Stepper indicator.
-/// @group stepper
 $kendo-stepper-indicator-disabled-border: null !default;
 
-/// The background color of the Stepper's done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-bg: null !default;
-/// The text color of the Stepper's done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-text: null !default;
-/// The border color of the Stepper's done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-border: null !default;
 
-/// The background color of the Stepper's hovered done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-hover-bg: null !default;
-/// The text color of the Stepper's hovered done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-hover-text: null !default;
-/// The border color of the Stepper's hovered done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-hover-border: null !default;
 
-/// The background color of the Stepper's disabled done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-disabled-bg: null !default;
-/// The text color of the Stepper's disabled done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-disabled-text: null !default;
-/// The border color of the Stepper's disabled done indicator.
-/// @group stepper
 $kendo-stepper-indicator-done-disabled-border: null !default;
 
-/// The background color of the Stepper current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-bg: null !default;
-/// The text color of the Stepper current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-text: null !default;
-/// The border color of the Stepper current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-border: null !default;
 
-/// The background color of the Stepper's hovered current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-hover-bg: null !default;
-/// The text color of the Stepper's hovered current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-hover-text: null !default;
-/// The border color of the Stepper's hovered current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-hover-border: null !default;
 
-/// The background color of the Stepper's disabled current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-disabled-bg: null !default;
-/// The text color of the Stepper's disabled current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-disabled-text: null !default;
-/// The border color of the Stepper's disabled current indicator.
-/// @group stepper
 $kendo-stepper-indicator-current-disabled-border: null !default;
 
-/// The text color of the Stepper label.
-/// @group stepper
 $kendo-stepper-label-text: null !default;
-/// The success text color of the Stepper label.
-/// @group stepper
 $kendo-stepper-label-success-text: null !default;
-/// The error text color of the Stepper label.
-/// @group stepper
 $kendo-stepper-label-error-text: null !default;
-/// The text color of the hovered Stepper label.
-/// @group stepper
 $kendo-stepper-label-hover-text: null !default;
-/// The text color of the disabled Stepper label.
-/// @group stepper
 $kendo-stepper-label-disabled-text: null !default;
 
-/// The text color of the optional Stepper label.
-/// @group stepper
 $kendo-stepper-optional-label-text: null !default;
-/// The opacity of the optional Stepper label.
-/// @group stepper
 $kendo-stepper-optional-label-opacity: null !default;
-/// The font size of the optional Stepper label.
-/// @group stepper
 $kendo-stepper-optional-label-font-size: null !default;
-/// The font style of the optional Stepper label.
-/// @group stepper
 $kendo-stepper-optional-label-font-style: null !default;
 
-/// The size of the Stepper ProgressBar.
-/// @group stepper
 $kendo-stepper-progressbar-size: null !default;
-/// The background color of the Stepper ProgressBar.
-/// @group stepper
 $kendo-stepper-progressbar-bg: null !default;
-/// The text color of the Stepper ProgressBar.
-/// @group stepper
 $kendo-stepper-progressbar-text: null !default;
-/// The background color of the selected Stepper ProgressBar.
-/// @group stepper
 $kendo-stepper-progressbar-fill-bg: null !default;
-/// The text color of the selected Stepper ProgressBar.
-/// @group stepper
 $kendo-stepper-progressbar-fill-text: null !default;
 
-/// The property name of the Stepper transition.
-/// @group stepper
 $kendo-stepper-content-transition-property: null !default;
-/// The duration of the Stepper transition.
-/// @group stepper
 $kendo-stepper-content-transition-duration: null !default;
-/// The timing function of the Stepper transition.
-/// @group stepper
 $kendo-stepper-content-transition-timing-function: null !default;

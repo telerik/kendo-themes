@@ -1,101 +1,41 @@
 // Window
 
-/// The width of the border around the Window.
-/// @group window
 $kendo-window-border-width: null !default;
-/// The border radius of the Window.
-/// @group window
 $kendo-window-border-radius: null !default;
-/// The font family of the Window.
-/// @group window
 $kendo-window-font-family: null !default;
-/// The font size of the Window.
-/// @group window
 $kendo-window-font-size: null !default;
-/// The line height of the Window.
-/// @group window
 $kendo-window-line-height: null !default;
 
-/// The horizontal padding of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-padding-x: null !default;
-/// The vertical padding of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-padding-y: null !default;
-/// The width of the border of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-border-width: null !default;
-/// The style of the border of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-border-style: null !default;
 
-/// The font size of the title of the Window.
-/// @group window
 $kendo-window-title-font-size: null !default;
-/// The line height of the title of the Window.
-/// @group window
 $kendo-window-title-line-height: null !default;
 
-/// The spacing between the buttons in the Window titlebar.
-/// @group window
 $kendo-window-actions-gap: null !default;
-/// The opacity of the buttons in the Window titlebar.
-/// @group window
 $kendo-window-action-opacity: null !default;
-/// The opacity of the hovered buttons in the Window titlebar.
-/// @group window
 $kendo-window-action-hover-opacity: null !default;
 
-/// The horizontal padding of the content of the Window.
-/// @group window
 $kendo-window-inner-padding-x: null !default;
-/// The vertical padding of the content of the Window.
-/// @group window
 $kendo-window-inner-padding-y: null !default;
 
-/// The horizontal padding of the Window action buttons.
-/// @group window
 $kendo-window-buttongroup-padding-x: null !default;
-/// The vertical padding of the Window action buttons.
-/// @group window
 $kendo-window-buttongroup-padding-y: null !default;
-/// The width of the top border of the Window action buttons.
-/// @group window
 $kendo-window-buttongroup-border-width: null !default;
 
-/// The background color of the Window.
-/// @group window
 $kendo-window-bg: null !default;
-/// The text color of the Window.
-/// @group window
 $kendo-window-text: null !default;
-/// The border color of the Window.
-/// @group window
 $kendo-window-border: null !default;
-/// The box shadow of the Window.
-/// @group window
 $kendo-window-shadow: null !default;
-/// The box shadow of the focused Window.
-/// @group window
 $kendo-window-focus-shadow: null !default;
 
-/// The background color of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-bg: null !default;
-/// The text color of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-text: null !default;
-/// The border color of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-border: null !default;
-/// The background gradient of the Window titlebar.
-/// @group window
 $kendo-window-titlebar-gradient: null !default;
 
-/// The map of the width for the different Window sizes.
-/// @group window
 $kendo-window-sizes: null !default;
 
-/// The theme colors map for the Window.
-/// @group window
 $kendo-window-theme-colors: null !default;

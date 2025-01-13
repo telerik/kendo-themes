@@ -1,175 +1,81 @@
 // CheckBox
 
-/// The border width of the CheckBox.
-/// @group checkbox
 $kendo-checkbox-border-width: null !default;
 
-/// The size of a small CheckBox.
-/// @group checkbox
 $kendo-checkbox-sm-size: null !default;
-/// The size of a medium CheckBox.
-/// @group checkbox
 $kendo-checkbox-md-size: null !default;
-/// The size of a large CheckBox.
-/// @group checkbox
 $kendo-checkbox-lg-size: null !default;
 
-/// The glyph size of a small CheckBox.
-/// @group checkbox
 $kendo-checkbox-sm-glyph-size: null !default;
-/// The glyph size of a medium CheckBox.
-/// @group checkbox
 $kendo-checkbox-md-glyph-size: null !default;
-/// The glyph size of a large CheckBox.
-/// @group checkbox
 $kendo-checkbox-lg-glyph-size: null !default;
 
-/// The ripple size of a small CheckBox.
-/// @group checkbox
 $kendo-checkbox-sm-ripple-size: null !default;
-/// The ripple size of a medium CheckBox.
-/// @group checkbox
 $kendo-checkbox-md-ripple-size: null !default;
-/// The ripple size of a large CheckBox.
-/// @group checkbox
 $kendo-checkbox-lg-ripple-size: null !default;
 
 // A map with the different CheckBox sizes.
 $kendo-checkbox-sizes: null !default;
 
-/// The background color of the CheckBox.
-/// @group checkbox
 $kendo-checkbox-bg: null !default;
-/// The text color of the CheckBox.
-/// @group checkbox
 $kendo-checkbox-text: null !default;
-/// The border color of the CheckBox.
-/// @group checkbox
 $kendo-checkbox-border: null !default;
 
-/// The background color of the hovered CheckBox.
-/// @group checkbox
 $kendo-checkbox-hover-bg: null !default;
-/// The text color of the hovered CheckBox.
-/// @group checkbox
 $kendo-checkbox-hover-text: null !default;
-/// The border color of the hovered CheckBox.
-/// @group checkbox
 $kendo-checkbox-hover-border: null !default;
 
-/// The background color of the checked CheckBox.
-/// @group checkbox
 $kendo-checkbox-checked-bg: null !default;
-/// The text color of the checked CheckBox.
-/// @group checkbox
 $kendo-checkbox-checked-text: null !default;
-/// The border color of the checked CheckBox.
-/// @group checkbox
 $kendo-checkbox-checked-border: null !default;
 
-/// The background color of the indeterminate CheckBox.
-/// @group checkbox
 $kendo-checkbox-indeterminate-bg: null !default;
-/// The text color of the indeterminate CheckBox.
-/// @group checkbox
 $kendo-checkbox-indeterminate-text: null !default;
-/// The border color of the indeterminate CheckBox.
-/// @group checkbox
 $kendo-checkbox-indeterminate-border: null !default;
 
-/// The border color of the focused CheckBox.
-/// @group checkbox
 $kendo-checkbox-focus-border: null !default;
-/// The box shadow of the focused CheckBox.
-/// @group checkbox
 $kendo-checkbox-focus-shadow: null !default;
-/// The border color of the focused and checked CheckBox.
-/// @group checkbox
 $kendo-checkbox-focus-checked-border: null !default;
-/// The box shadow of the focused and checked CheckBox.
-/// @group checkbox
 $kendo-checkbox-focus-checked-shadow: null !default;
 
-/// The background color of the disabled CheckBox.
-/// @group checkbox
 $kendo-checkbox-disabled-bg: null !default;
-/// The text color of the disabled CheckBox.
-/// @group checkbox
 $kendo-checkbox-disabled-text: null !default;
-/// The border color of the disabled CheckBox.
-/// @group checkbox
 $kendo-checkbox-disabled-border: null !default;
 
-/// The background color of the disabled and checked CheckBox.
-/// @group checkbox
 $kendo-checkbox-disabled-checked-bg: null !default;
-/// The text color of the disabled and checked CheckBox.
-/// @group checkbox
 $kendo-checkbox-disabled-checked-text: null !default;
-/// The border color of the disabled and checked CheckBox.
-/// @group checkbox
 $kendo-checkbox-disabled-checked-border: null !default;
 
-/// The background color of an invalid CheckBox.
-/// @group checkbox
 $kendo-checkbox-invalid-bg: null !default;
-/// The text color of an invalid CheckBox.
-/// @group checkbox
 $kendo-checkbox-invalid-text: null !default;
-/// The border color of an invalid CheckBox.
-/// @group checkbox
 $kendo-checkbox-invalid-border: null !default;
 
 
 // CheckBox indicator
 
-/// The type of the CheckBox indicator.
-/// @group checkbox
 $kendo-checkbox-indicator-type: null !default;
 
-/// The font family of the CheckBox indicator glyph.
-/// @group checkbox
 $kendo-checkbox-glyph-font-family: null !default;
-/// The glyph of the CheckBox indicator.
-/// @group checkbox
 $kendo-checkbox-checked-glyph: null !default;
-/// The glyph of the indeterminate CheckBox indicator.
-/// @group checkbox
 $kendo-checkbox-indeterminate-glyph: null !default;
 
-/// The image for a checked CheckBox indicator.
-/// @group checkbox
 $kendo-checkbox-checked-image: null !default;
-/// The image for a indeterminate CheckBox indicator.
-/// @group checkbox
 $kendo-checkbox-indeterminate-image: null !default;
 
 
 // CheckBox label
 
-/// The horizontal margin of the CheckBox inside a label.
-/// @group checkbox
 $kendo-checkbox-label-margin-x: null !default;
 
 
 // CheckBox list
 
-/// The spacing between the items in a horizontal CheckBox list.
-/// @group checkbox
 $kendo-checkbox-list-spacing: null !default;
-/// The horizontal padding of the CheckBox list items.
-/// @group checkbox
 $kendo-checkbox-list-item-padding-x: null !default;
-/// The vertical padding of the CheckBox list items.
-/// @group checkbox
 $kendo-checkbox-list-item-padding-y: null !default;
 
 
 // CheckBox ripple
 
-/// The background color of the CheckBox' ripple.
-/// @group checkbox
 $kendo-checkbox-ripple-bg: null !default;
-/// The opacity of the CheckBox' ripple.
-/// @group checkbox
 $kendo-checkbox-ripple-opacity: null !default;

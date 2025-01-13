@@ -1,56 +1,41 @@
 // Chart
 
-/// The first base series color and its light and dark shades.
-/// @group charts
 $kendo-series-a: null !default;
 $kendo-series-a-dark: null !default;
 $kendo-series-a-darker: null !default;
 $kendo-series-a-light: null !default;
 $kendo-series-a-lighter: null !default;
 
-/// The second base series color and its light and dark shades.
-/// @group charts
 $kendo-series-b: null !default;
 $kendo-series-b-dark: null !default;
 $kendo-series-b-darker: null !default;
 $kendo-series-b-light: null !default;
 $kendo-series-b-lighter: null !default;
 
-/// The third base series color and its light and dark shades.
-/// @group charts
 $kendo-series-c: null !default;
 $kendo-series-c-dark: null !default;
 $kendo-series-c-darker: null !default;
 $kendo-series-c-light: null !default;
 $kendo-series-c-lighter: null !default;
 
-/// The fourth base series color and its light and dark shades.
-/// @group charts
 $kendo-series-d: null !default;
 $kendo-series-d-dark: null !default;
 $kendo-series-d-darker: null !default;
 $kendo-series-d-light: null !default;
 $kendo-series-d-lighter: null !default;
 
-/// The fifth base series color and its light and dark shades.
-/// @group charts
 $kendo-series-e: null !default;
 $kendo-series-e-dark: null !default;
 $kendo-series-e-darker: null !default;
 $kendo-series-e-light: null !default;
 $kendo-series-e-lighter: null !default;
 
-/// The sixth base series color and its light and dark shades.
-/// @group charts
 $kendo-series-f: null !default;
 $kendo-series-f-dark: null !default;
 $kendo-series-f-darker: null !default;
 $kendo-series-f-light: null !default;
 $kendo-series-f-lighter: null !default;
 
-/// The series colors in order:
-/// base, light, dark, lighter, darker
-/// @group charts
 $kendo-series-1: null !default;
 $kendo-series-2: null !default;
 $kendo-series-3: null !default;
@@ -92,12 +77,8 @@ $kendo-chart-title-font-size: null !default;
 $kendo-chart-pane-title-font-size: null !default;
 $kendo-chart-pane-title-font-weight: null !default;
 
-/// The color of the Chart grid lines (major).
-/// @group charts
 $kendo-chart-major-lines: null !default;
 
-/// The color of the Chart grid lines (minor).
-/// @group charts
 $kendo-chart-minor-lines: null !default;
 
 $kendo-chart-inactive: null !default;

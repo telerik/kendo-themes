@@ -1,29 +1,15 @@
 // Table
 
-/// The width of the table border.
-/// @group table
 $kendo-table-border-width: null !default;
-/// The width of vertical border of table cells.
-/// @group table
 $kendo-table-cell-vertical-border-width: null !default;
-/// The width of horizontal border of table cells.
-/// @group table
 $kendo-table-cell-horizontal-border-width: null !default;
 
-/// The font size of the table if no size is specified.
-/// @group table
 $kendo-table-font-size: null !default;
 
-/// The line-height of the table if no size is specified.
-/// @group table
 $kendo-table-line-height: null !default;
 
-/// The horizontal padding of the cells in the table if no size is specified.
-/// @group table
 $kendo-table-cell-padding-x: null !default;
 
-/// The vertical padding of the cells in the table if no size is specified.
-/// @group table
 $kendo-table-cell-padding-y: null !default;
 
 $kendo-table-sm-cell-padding-x: null !default;
@@ -35,99 +21,45 @@ $kendo-table-md-cell-padding-y: null !default;
 $kendo-table-lg-cell-padding-x: null !default;
 $kendo-table-lg-cell-padding-y: null !default;
 
-/// The sizes of the table.
-/// @group table
 $kendo-table-sizes: null !default;
 
 
-/// Background color of tables.
-/// @group table
 $kendo-table-bg: null !default;
-/// Text color of tables.
-/// @group table
 $kendo-table-text: null !default;
-/// Border color of tables.
-/// @group table
 $kendo-table-border: null !default;
 
 
-/// Background color of table headers.
-/// @group table
 $kendo-table-header-bg: null !default;
-/// Text color of table headers.
-/// @group table
 $kendo-table-header-text: null !default;
-/// Border color of table headers.
-/// @group table
 $kendo-table-header-border: null !default;
-/// Gradient of table headers.
-/// @group table
 $kendo-table-header-gradient: null !default;
 
 
-/// Background color of table footers.
-/// @group table
 $kendo-table-footer-bg: null !default;
-/// Text color of table footers.
-/// @group table
 $kendo-table-footer-text: null !default;
-/// Border color of table footers.
-/// @group table
 $kendo-table-footer-border: null !default;
 
 
-/// Background color of group rows in table.
-/// @group table
 $kendo-table-group-row-bg: null !default;
-/// Text color of group rows in table.
-/// @group table
 $kendo-table-group-row-text: null !default;
-/// Border color of group rows in table.
-/// @group table
 $kendo-table-group-row-border: null !default;
 
-/// Background color of alternating rows in table.
-/// @group table
 $kendo-table-alt-row-bg: null !default;
-/// Text color of alternating rows in table.
-/// @group table
 $kendo-table-alt-row-text: null !default;
-/// Border color of alternating rows in table.
-/// @group table
 $kendo-table-alt-row-border: null !default;
 
 
-/// Background color of hovered rows in table.
-/// @group table
 $kendo-table-hover-bg: null !default;
-/// Text color of hovered rows in table.
-/// @group table
 $kendo-table-hover-text: null !default;
-/// Border color of hovered rows in table.
-/// @group table
 $kendo-table-hover-border: null !default;
 
 
-/// Background color of focused rows in table.
-/// @group table
 $kendo-table-focus-bg: null !default;
-/// Text color of focused rows in table.
-/// @group table
 $kendo-table-focus-text: null !default;
-/// Border color of focused rows in table.
-/// @group table
 $kendo-table-focus-border: null !default;
-/// Box shadow of focused rows in table.
-/// @group table
 $kendo-table-focus-shadow: null !default;
 
 
-/// Background color of selected rows in table.
-/// @group table
 $kendo-table-selected-bg: null !default;
-/// Text color of selected rows in table.
-/// @group table
 $kendo-table-selected-text: null !default;
-/// Border color of selected rows in table.
-/// @group table
 $kendo-table-selected-border: null !default;

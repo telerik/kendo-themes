@@ -1,104 +1,44 @@
 // Upload
 
-/// The width of the border around the Upload.
-/// @group upload
 $kendo-upload-border-width: null !default;
-/// The font family of the Upload.
-/// @group upload
 $kendo-upload-font-family: null !default;
-/// The font size of the Upload.
-/// @group upload
 $kendo-upload-font-size: null !default;
-/// The line height of the Upload.
-/// @group upload
 $kendo-upload-line-height: null !default;
-/// The maximum height of the list with uploaded items.
-/// @group upload
 $kendo-upload-max-height: null !default;
 
-/// The text color of the Upload.
-/// @group upload
 $kendo-upload-text: null !default;
-/// The background color of the Upload.
-/// @group upload
 $kendo-upload-bg: null !default;
-/// The border color of the Upload.
-/// @group upload
 $kendo-upload-border: null !default;
 
-/// The horizontal padding of the Upload dropzone.
-/// @group upload
 $kendo-upload-dropzone-padding-x: null !default;
-/// The vertical padding of the Upload dropzone.
-/// @group upload
 $kendo-upload-dropzone-padding-y: null !default;
-/// The text color of the Upload dropzone.
-/// @group upload
 $kendo-upload-dropzone-text: null !default;
-/// The background color of the Upload dropzone.
-/// @group upload
 $kendo-upload-dropzone-bg: null !default;
-/// The border color of the Upload dropzone.
-/// @group upload
 $kendo-upload-dropzone-border: null !default;
-/// The background color of the hovered Upload dropzone.
-/// @group upload
 $kendo-upload-dropzone-hover-bg: null !default;
 
-/// The text color of the Upload status message.
-/// @group upload
 $kendo-upload-status-text: null !default;
-/// The opacity of the Upload status message.
-/// @group upload
 $kendo-upload-status-text-opacity: null !default;
 
-/// The horizontal padding of an uploaded item.
-/// @group upload
 $kendo-upload-item-padding-x: null !default;
-/// The vertical padding of an uploaded item.
-/// @group upload
 $kendo-upload-item-padding-y: null !default;
 
-/// The vertical spacing between uploaded batch items.
-/// @group upload
 $kendo-upload-multiple-items-spacing: null !default;
 
-/// The font size of the Upload validation message.
-/// @group upload
 $kendo-upload-validation-font-size: null !default;
-/// The line height of the Upload validation message.
-/// @group upload
 $kendo-upload-validation-line-height: null !default;
-/// The horizontal spacing of the Upload status icon.
-/// @group upload
 $kendo-upload-icon-spacing: null !default;
-/// The color of the uploaded items icon.
-/// @group upload
 $kendo-upload-icon-color: null !default;
 
-/// The thickness of the Upload progress bar.
-/// @group upload
 $kendo-upload-progress-thickness: null !default;
-/// The background color of the Upload progress bar.
-/// @group upload
 $kendo-upload-progress-bg: null !default;
 
-/// The success text color of the Upload.
-/// @group upload
 $kendo-upload-success-text: null !default;
-/// The success background color of the Upload progress bar.
-/// @group upload
 $kendo-upload-success-bg: null !default;
 
-/// The error text color of the Upload.
-/// @group upload
 $kendo-upload-error-text: null !default;
-/// The error background color of the Upload progress bar.
-/// @group upload
 $kendo-upload-error-bg: null !default;
 
-/// The shadow of the focused Upload button, actions and uploaded items.
-/// @group upload
 $kendo-upload-focus-shadow: null !default;
 
 $kendo-upload-files-list-margin: null !default;

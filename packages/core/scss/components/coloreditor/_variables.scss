@@ -1,167 +1,63 @@
 // ColorEditor/FlatColorPicker
 
-/// The spacer of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-spacer: null !default;
 
-/// The minimum width of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-min-width: null !default;
-/// The minimum width of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-sm-min-width: null !default;
-/// The minimum width of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-md-min-width: null !default;
-/// The minimum width of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-lg-min-width: null !default;
-/// The width of the border around the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-border-width: null !default;
-/// The border radius of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-border-radius: null !default;
-/// The font family of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-font-family: null !default;
-/// The font size of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-font-size: null !default;
-/// The line height of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-line-height: null !default;
-/// The text color of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-text: null !default;
-/// The background color of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-bg: null !default;
-/// The border color of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-border: null !default;
 
-/// The border color of the focused ColorEditor.
-/// @group color-editor
 $kendo-color-editor-focus-border: null !default;
 // TODO: does this ever get focused? Isn't it always in a popup?
-/// The box shadow of the focused ColorEditor.
-/// @group color-editor
 $kendo-color-editor-focus-shadow: null !default; // 1px 1px 7px 1px rgba(0, 0, 0, .3)
 
-/// The vertical padding of the ColorEditor header.
-/// @group color-editor
 $kendo-color-editor-header-padding-y: null !default;
-/// The horizontal padding of the ColorEditor header.
-/// @group color-editor
 $kendo-color-editor-header-padding-x: null !default;
-/// The spacing between the ColorEditor header actions.
-/// @group color-editor
 $kendo-color-editor-header-actions-gap: null !default;
-/// The vertical padding of the small ColorEditor header.
-/// @group color-editor
 $kendo-color-editor-sm-header-padding-y: null !default;
-/// The horizontal padding of the small ColorEditor header.
-/// @group color-editor
 $kendo-color-editor-sm-header-padding-x: null !default;
-/// The vertical padding of the medium ColorEditor header.
-/// @group color-editor
 $kendo-color-editor-md-header-padding-y: null !default;
-/// The horizontal padding of the medium ColorEditor header.
-/// @group color-editor
 $kendo-color-editor-md-header-padding-x: null !default;
-/// The vertical padding of the large ColorEditor header.
-/// @group color-editor
 $kendo-color-editor-lg-header-padding-y: null !default;
-/// The horizontal padding of the large ColorEditor header.
-/// @group color-editor
 $kendo-color-editor-lg-header-padding-x: null !default;
 
-/// The width of the ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-color-preview-width: null !default;
-/// The height of the ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-color-preview-height: null !default;
-/// The spacing between the colors in the ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-preview-gap: null !default;
-/// The spacing between the colors in the small ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-sm-preview-gap: null !default;
-/// The spacing between the colors in the medium ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-md-preview-gap: null !default;
-/// The spacing between the colors in the large ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-lg-preview-gap: null !default;
 
-/// The width of the small ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-sm-color-preview-width: null !default;
-/// The height of the small ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-sm-color-preview-height: null !default;
-/// The width of the medium ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-md-color-preview-width: null !default;
-/// The height of the medium ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-md-color-preview-height: null !default;
-/// The width of the large ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-lg-color-preview-width: null !default;
-/// The height of the large ColorEditor preview.
-/// @group color-editor
 $kendo-color-editor-lg-color-preview-height: null !default;
 
-/// The vertical padding of the ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-views-padding-y: null !default;
-/// The horizontal padding of the ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-views-padding-x: null !default;
-/// The spacing of the ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-views-gap: null !default;
-/// The vertical padding of the small ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-sm-views-padding-y: null !default;
-/// The horizontal padding of the small ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-sm-views-padding-x: null !default;
-/// The spacing of the small ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-sm-views-gap: null !default;
-/// The vertical padding of the medium ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-md-views-padding-y: null !default;
-/// The horizontal padding of the medium ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-md-views-padding-x: null !default;
-/// The spacing of the medium ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-md-views-gap: null !default;
-/// The vertical padding of the large ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-lg-views-padding-y: null !default;
-/// The horizontal padding of the large ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-lg-views-padding-x: null !default;
-/// The spacing of the large ColorEditor views container.
-/// @group color-editor
 $kendo-color-editor-lg-views-gap: null !default;
 
-/// The outline color of the focused ColorGradient.
-/// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline-color: null !default;
-/// The outline width of the focused ColorGradient.
-/// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline: null !default;
-/// The outline offset of the focused ColorGradient.
-/// @group color-editor
 $kendo-color-editor-color-gradient-focus-outline-offset: null !default;
 
-/// The size map of the ColorEditor.
-/// @group color-editor
 $kendo-color-editor-sizes: () !default;
