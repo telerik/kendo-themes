@@ -1,162 +1,64 @@
 // TreeView
 
-/// The font family of the TreeView.
-/// @group treeview
 $kendo-treeview-font-family: null !default;
-/// The font size of the TreeView.
-/// @group treeview
 $kendo-treeview-font-size: null !default;
-/// The font size of the small TreeView.
-/// @group treeview
 $kendo-treeview-sm-font-size: null !default;
-/// The font size of the medium TreeView.
-/// @group treeview
 $kendo-treeview-md-font-size: null !default;
-/// The font size of the large TreeView.
-/// @group treeview
 $kendo-treeview-lg-font-size: null !default;
-/// The line height of the TreeView.
-/// @group treeview
 $kendo-treeview-line-height: null !default;
-/// The line height of the small TreeView.
-/// @group treeview
 $kendo-treeview-sm-line-height: null !default;
-/// The line height of the medium TreeView.
-/// @group treeview
 $kendo-treeview-md-line-height: null !default;
-/// The line height of the large TreeView.
-/// @group treeview
 $kendo-treeview-lg-line-height: null !default;
-/// The indentation of child groups in the TreeView.
-/// @group treeview
 $kendo-treeview-indent: null !default;
 
-/// The horizontal padding of the TreeView items.
-/// @group treeview
 $kendo-treeview-item-padding-x: null !default;
-/// The horizontal padding of the small TreeView items.
-/// @group treeview
 $kendo-treeview-sm-item-padding-x: null !default;
-/// The horizontal padding of the medium TreeView items.
-/// @group treeview
 $kendo-treeview-md-item-padding-x: null !default;
-/// The horizontal padding of the large TreeView items.
-/// @group treeview
 $kendo-treeview-lg-item-padding-x: null !default;
-/// The vertical padding of the TreeView items.
-/// @group treeview
 $kendo-treeview-item-padding-y: null !default;
-/// The vertical padding of the small TreeView items.
-/// @group treeview
 $kendo-treeview-sm-item-padding-y: null !default;
-/// The vertical padding of the medium TreeView items.
-/// @group treeview
 $kendo-treeview-md-item-padding-y: null !default;
-/// The vertical padding of the large TreeView items.
-/// @group treeview
 $kendo-treeview-lg-item-padding-y: null !default;
-/// The border width of the TreeView items.
-/// @group treeview
 $kendo-treeview-item-border-width: null !default;
-/// The border radius of the TreeView items.
-/// @group treeview
 $kendo-treeview-item-border-radius: null !default;
 
-/// The horizontal padding of the checkbox in the small TreeView.
-/// @group treeview
 $kendo-treeview-sm-checkbox-padding-x: null !default;
-/// The horizontal padding of the checkbox in the medium TreeView.
-/// @group treeview
 $kendo-treeview-md-checkbox-padding-x: null !default;
-/// The horizontal padding of the checkbox in the large TreeView.
-/// @group treeview
 $kendo-treeview-lg-checkbox-padding-x: null !default;
-/// The vertical padding of the checkbox in the small TreeView.
-/// @group treeview
 $kendo-treeview-sm-checkbox-padding-y: null !default;
-/// The vertical padding of the checkbox in the medium TreeView.
-/// @group treeview
 $kendo-treeview-md-checkbox-padding-y: null !default;
-/// The vertical padding of the checkbox in the large TreeView.
-/// @group treeview
 $kendo-treeview-lg-checkbox-padding-y: null !default;
 
 
-/// The sizes map of the TreeView.
-/// @group treeview
 $kendo-treeview-sizes: null !default;
 
 
-/// The background color of the TreeView.
-/// @group treeview
 $kendo-treeview-bg: null !default;
-/// The text color of the TreeView.
-/// @group treeview
 $kendo-treeview-text: null !default;
-/// The border color of the TreeView.
-/// @group treeview
 $kendo-treeview-border: null !default;
 
-/// The background color of hovered TreeView items.
-/// @group treeview
 $kendo-treeview-item-hover-bg: null !default;
-/// The text color of hovered TreeView items.
-/// @group treeview
 $kendo-treeview-item-hover-text: null !default;
-/// The border color of hovered TreeView items.
-/// @group treeview
 $kendo-treeview-item-hover-border: null !default;
-/// The background gradient of hovered TreeView items.
-/// @group treeview
 $kendo-treeview-item-hover-gradient: null !default;
 
-/// The background color of selected TreeView items.
-/// @group treeview
 $kendo-treeview-item-selected-bg: null !default;
-/// The text color of selected TreeView items.
-/// @group treeview
 $kendo-treeview-item-selected-text: null !default;
-/// The border color of selected TreeView items.
-/// @group treeview
 $kendo-treeview-item-selected-border: null !default;
-/// The background gradient of selected TreeView items.
-/// @group treeview
 $kendo-treeview-item-selected-gradient: null !default;
 
-/// The box shadow of focused TreeView items.
-/// @group treeview
 $kendo-treeview-item-focus-shadow: null !default;
 
-/// The background color of the Load More button in the TreeView
-/// @group treeview
 $kendo-treeview-loadmore-bg: null !default;
-/// The text color of the Load More button in the TreeView
-/// @group treeview
 $kendo-treeview-loadmore-text: null !default;
-/// The border color of the Load More button in the TreeView
-/// @group treeview
 $kendo-treeview-loadmore-border: null !default;
 
-/// The background color of the hovered Load More button in the TreeView
-/// @group treeview
 $kendo-treeview-loadmore-hover-bg: null !default;
-/// The text color of the hovered Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-hover-text: null !default;
-/// The border color of the hovered Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-hover-border: null !default;
 
-/// The background color of the focused Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-focus-bg: null !default;
-/// The text color of the focused Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-focus-text: null !default;
-/// The border color of the focused Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-focus-border: null !default;
-/// The box shadow of the focused Load More button in the TreeView.
-/// @group treeview
 $kendo-treeview-loadmore-focus-shadow: null !default;
 

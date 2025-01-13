@@ -1,156 +1,62 @@
 // Toolbar
 
-/// The horizontal padding of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-padding-x: null !default;
-/// The horizontal padding of the small Toolbar.
-/// @group toolbar
 $kendo-toolbar-sm-padding-x: null !default;
-/// The horizontal padding of the medium Toolbar.
-/// @group toolbar
 $kendo-toolbar-md-padding-x: null !default;
-/// The horizontal padding of the large Toolbar.
-/// @group toolbar
 $kendo-toolbar-lg-padding-x: null !default;
 
-/// The vertical padding of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-padding-y: null !default;
-/// The vertical padding of the small Toolbar.
-/// @group toolbar
 $kendo-toolbar-sm-padding-y: null !default;
-/// The vertical padding of the medium Toolbar.
-/// @group toolbar
 $kendo-toolbar-md-padding-y: null !default;
-/// The vertical padding of the large Toolbar.
-/// @group toolbar
 $kendo-toolbar-lg-padding-y: null !default;
 
-/// The spacing between the Toolbar tools.
-/// @group toolbar
 $kendo-toolbar-spacing: null !default;
-/// The spacing between the tools of the small Toolbar.
-/// @group toolbar
 $kendo-toolbar-sm-spacing: null !default;
-/// The spacing between the tools of the medium Toolbar.
-/// @group toolbar
 $kendo-toolbar-md-spacing: null !default;
-/// The spacing between the tools of the large Toolbar.
-/// @group toolbar
 $kendo-toolbar-lg-spacing: null !default;
 
-/// The height of the Toolbar button separator.
-/// @group toolbar
 $kendo-toolbar-separator-height: null !default;
-/// The height of the small Toolbar button separator.
-/// @group toolbar
 $kendo-toolbar-sm-separator-height: null !default;
-/// The height of the medium Toolbar button separator.
-/// @group toolbar
 $kendo-toolbar-md-separator-height: null !default;
-/// The height of the large Toolbar button separator.
-/// @group toolbar
 $kendo-toolbar-lg-separator-height: null !default;
 
-/// The width of the border around the Toolbar.
-/// @group toolbar
 $kendo-toolbar-border-width: null !default;
-/// The border radius of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-border-radius: null !default;
 
-/// The font family of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-font-family: null !default;
-/// The font size of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-font-size: null !default;
-/// The line height of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-line-height: null !default;
 
-/// The background color of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-bg: null !default;
-/// The text color of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-text: null !default;
-/// The color of the border around the Toolbar.
-/// @group toolbar
 $kendo-toolbar-border: null !default;
-/// The gradient of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-gradient: null !default;
-/// The box shadow of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-shadow: null !default;
-/// The left and right scroll overlay of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-scroll-overlay: null !default;
 
-/// The text color of the outline Toolbar.
-/// @group toolbar
 $kendo-toolbar-outline-text: null !default;
-/// The color of the border around the outline Toolbar.
-/// @group toolbar
 $kendo-toolbar-outline-border: null !default;
-/// The gradient of the outline Toolbar.
-/// @group toolbar
 $kendo-toolbar-outline-gradient: null !default;
-/// The box shadow of the outline Toolbar.
-/// @group toolbar
 $kendo-toolbar-outline-shadow: null !default;
-/// The width of the border around the outline Toolbar.
-/// @group toolbar
 $kendo-toolbar-outline-border-width: null !default;
-/// The left and right scroll overlay of the outline Toolbar.
-/// @group toolbar
 $kendo-toolbar-outline-scroll-overlay: null !default;
 
-/// The text color of the flat Toolbar.
-/// @group toolbar
 $kendo-toolbar-flat-text: null !default;
-/// The color of the border around the flat Toolbar.
-/// @group toolbar
 $kendo-toolbar-flat-border: null !default;
-/// The gradient of the flat Toolbar.
-/// @group toolbar
 $kendo-toolbar-flat-gradient: null !default;
-/// The box shadow of the flat Toolbar.
-/// @group toolbar
 $kendo-toolbar-flat-shadow: null !default;
-/// Border width of the flat Toolbar.
-/// @group toolbar
 $kendo-toolbar-flat-border-width: null !default;
-/// The left and right scroll overlay of the flat Toolbar.
-/// @group toolbar
 $kendo-toolbar-flat-scroll-overlay: null !default;
 
-/// The color of the separator border of the Toolbar.
-/// @group toolbar
 $kendo-toolbar-separator-border: null !default;
 
-/// The width of the input in the Toolbar.
-/// @group toolbar
 $kendo-toolbar-input-width: null !default;
 
-/// The box shadow of the focused Toolbar item.
-/// @group toolbar
 $kendo-toolbar-item-shadow: null !default;
 
-/// The font size of the Toolbar overflow container.
-/// @group toolbar
 $kendo-toolbar-overflow-container-font-size: null !default;
-/// The line-height of the Toolbar overflow container.
-/// @group toolbar
 $kendo-toolbar-overflow-container-line-height: null !default;
-/// The vertical padding of the Toolbar overflow button.
-/// @group toolbar
 $kendo-toolbar-overflow-button-padding-y: null !default;
-/// The horizontal padding of the Toolbar overflow button.
-/// @group toolbar
 $kendo-toolbar-overflow-button-padding-x: null !default;
 
-/// The sizes map for the Toolbar.
-/// @group toolbar
 $kendo-toolbar-sizes: null !default;

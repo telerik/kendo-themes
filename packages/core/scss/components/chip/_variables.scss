@@ -1,147 +1,63 @@
 // Chip
 
-/// The width of the border around the Chip.
-/// @group chip
 $kendo-chip-border-width: null !default;
-/// The spacing between the text and the icons of the Chip.
-/// @group chip
 $kendo-chip-spacing: null !default;
 
-/// The horizontal padding of the Chip.
-/// @group chip
 $kendo-chip-padding-x: null !default;
-/// The horizontal padding of the small Chip.
-/// @group chip
 $kendo-chip-sm-padding-x: null !default;
-/// The horizontal padding of the medium Chip.
-/// @group chip
 $kendo-chip-md-padding-x: null !default;
-/// The horizontal padding of the large Chip.
-/// @group chip
 $kendo-chip-lg-padding-x: null !default;
 
-/// The vertical padding of the Chip.
-/// @group chip
 $kendo-chip-padding-y: null !default;
-/// The vertical padding of the small Chip.
-/// @group chip
 $kendo-chip-sm-padding-y: null !default;
-/// The vertical padding of the medium Chip.
-/// @group chip
 $kendo-chip-md-padding-y: null !default;
-/// The vertical padding of the large Chip.
-/// @group chip
 $kendo-chip-lg-padding-y: null !default;
 
-/// The font size of the Chip.
-/// @group chip
 $kendo-chip-font-size: null !default;
-/// The font size of the small Chip.
-/// @group chip
 $kendo-chip-sm-font-size: null !default;
-/// The font size of the medium Chip.
-/// @group chip
 $kendo-chip-md-font-size: null !default;
-/// The font size of the large Chip.
-/// @group chip
 $kendo-chip-lg-font-size: null !default;
 
-/// The Chip's line height that is related to the $kendo-font-size.
-/// @group chip
 $kendo-chip-line-height: null !default;
-/// The small Chip's line height that is related to the $kendo-font-size.
-/// @group chip
 $kendo-chip-sm-line-height: null !default;
-/// The medium Chip's line height that is related to the $kendo-font-size.
-/// @group chip
 $kendo-chip-md-line-height: null !default;
-/// The large Chip's line height that is related to the $kendo-font-size.
-/// @group chip
 $kendo-chip-lg-line-height: null !default;
 
-/// The calculated height of the Chip.
-/// @group chip
 $kendo-chip-calc-size: null !default;
 $kendo-chip-sm-calc-size: null !default;
 
-/// The map with the sizes of the Chip.
-/// @group chip
 $kendo-chip-sizes: null !default;
 
-/// The base background of the Chip.
-/// @group chip
 $kendo-chip-base-bg: null !default;
 
-/// The theme colors map for the Chip.
-/// @group chip
 $kendo-chip-theme-colors: null !default;
 
-/// The base background color of the solid Chip.
-/// @group chip
 $kendo-chip-solid-bg: null !default;
-/// The base text color of the solid Chip.
-/// @group chip
 $kendo-chip-solid-text: null !default;
-/// The base border color of the solid Chip.
-/// @group chip
 $kendo-chip-solid-border: null !default;
-/// The base shadow of the solid Chip.
-/// @group chip
 $kendo-chip-solid-shadow: null !default;
-/// The base gradient of the solid Chip.
-/// @group chip
 $kendo-chip-solid-gradient: null !default;
 
-/// The base background color of the focused solid Chip.
-/// @group chip
 $kendo-chip-solid-focus-bg: null !default;
-/// The base text color of the focused solid Chip.
-/// @group chip
 $kendo-chip-solid-focus-text: null !default;
 
-/// The base background color of the hovered solid Chip.
-/// @group chip
 $kendo-chip-solid-hover-bg: null !default;
-/// The base text color of the hovered solid Chip.
-/// @group chip
 $kendo-chip-solid-hover-text: null !default;
 
-/// The base background color of the selected solid Chip.
-/// @group chip
 $kendo-chip-solid-selected-bg: null !default;
-/// The base text color of the selected solid Chip.
-/// @group chip
 $kendo-chip-solid-selected-text: null !default;
 
-/// The base background color of the outline Chip.
-/// @group chip
 $kendo-chip-outline-bg: null !default;
-/// The base text color of the outline Chip.
-/// @group chip
 $kendo-chip-outline-text: null !default;
-/// The base border color of the outline Chip.
-/// @group chip
 $kendo-chip-outline-border: null !default;
-/// The base shadow of the outline Chip.
-/// @group chip
 $kendo-chip-outline-shadow: null !default;
 
-/// The base background color of the hovered outline Chip.
-/// @group chip
 $kendo-chip-outline-hover-bg: null !default;
-/// The base text color of the hovered outline Chip.
-/// @group chip
 $kendo-chip-outline-hover-text: null !default;
 
-/// The base background color of the selected outline Chip.
-/// @group chip
 $kendo-chip-outline-selected-bg: null !default;
-/// The base text color of the selected outline Chip.
-/// @group chip
 $kendo-chip-outline-selected-text: null !default;
 
 // Chip List
 
-/// The sizes of the Chip list.
-/// @group chip
 $kendo-chip-list-sizes: null !default;

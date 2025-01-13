@@ -1,92 +1,36 @@
 // ScrollView
 
-/// The width of the border around the ScrollView.
-/// @group scrollview
 $kendo-scrollview-border-width: null !default;
-/// The font family of the ScrollView.
-/// @group scrollview
 $kendo-scrollview-font-family: null !default;
-/// The font size of the ScrollView.
-/// @group scrollview
 $kendo-scrollview-font-size: null !default;
-/// The line height of the ScrollView.
-/// @group scrollview
 $kendo-scrollview-line-height: null !default;
 
-/// The text color of the ScrollView.
-/// @group scrollview
 $kendo-scrollview-text: null !default;
-/// The background color of the ScrollView.
-/// @group scrollview
 $kendo-scrollview-bg: null !default;
-/// The border color of the ScrollView.
-/// @group scrollview
 $kendo-scrollview-border: null !default;
 
-/// The size of the ScrollView page button.
-/// @group scrollview
 $kendo-scrollview-pagebutton-size: null !default;
-/// The background color of the ScrollView page button.
-/// @group scrollview
 $kendo-scrollview-pagebutton-bg: null !default;
-/// The border color of the ScrollView page button.
-/// @group scrollview
 $kendo-scrollview-pagebutton-border: null !default;
-/// The primary background color of the ScrollView page button.
-/// @group scrollview
 $kendo-scrollview-pagebutton-primary-bg: null !default;
-/// The primary border color of the ScrollView page button.
-/// @group scrollview
 $kendo-scrollview-pagebutton-primary-border: null !default;
-/// The box shadow of the ScrollView page button.
-/// @group scrollview
 $kendo-scrollview-pagebutton-shadow: null !default;
 
-/// The offset of the ScrollView pager.
-/// @group scrollview
 $kendo-scrollview-pager-offset: null !default;
-/// The spacing between the ScrollView pager items.
-/// @group scrollview
 $kendo-scrollview-pager-item-spacing: null !default;
-/// The border width of the ScrollView pager items.
-/// @group scrollview
 $kendo-scrollview-pager-item-border-width: null !default;
-/// The height of the ScrollView pager.
-/// @group scrollview
 $kendo-scrollview-pager-height: null !default;
 
-/// The text color of the highlight over the tapped ScrollView navigation arrows.
-/// @group scrollview
 $kendo-scrollview-arrow-tap-highlight-color: null !default;
-/// The color of the ScrollView navigation arrows.
-/// @group scrollview
 $kendo-scrollview-navigation-color: null !default;
-/// The box shadow of the ScrollView navigation arrows.
-/// @group scrollview
 $kendo-scrollview-navigation-icon-shadow: null !default;
-/// The background color of the ScrollView navigation.
-/// @group scrollview
 $kendo-scrollview-navigation-bg: null !default;
-/// The opacity of the ScrollView navigation.
-/// @group scrollview
 $kendo-scrollview-navigation-default-opacity: null !default;
-/// The hover opacity of the ScrollView navigation.
-/// @group scrollview
 $kendo-scrollview-navigation-hover-opacity: null !default;
-/// The hover background color of the ScrollView navigation arrows.
-/// @group scrollview
 $kendo-scrollview-navigation-hover-span-bg: null !default;
 
-/// The background color of the ScrollView pager in light mode.
-/// @group scrollview
 $kendo-scrollview-light-bg: null !default;
-/// The background color of the ScrollView pager in dark mode.
-/// @group scrollview
 $kendo-scrollview-dark-bg: null !default;
 
-/// The duration of the ScrollView transition.
-/// @group scrollview
 $kendo-scrollview-transition-duration: null !default;
-/// The timing function of the ScrollView transition.
-/// @group scrollview
 $kendo-scrollview-transition-timing-function: null !default;
