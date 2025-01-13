@@ -15,26 +15,6 @@
         }
     }
 
-    // Exported variables
-    // stylelint-disable selector-class-pattern
-    .k-var--chart-font {
-        font-size: var( --kendo-chart-font-size, #{$kendo-chart-font-size} );
-    }
-
-    .k-var--chart-title-font {
-        font-size: var( --kendo-chart-title-font-size, #{$kendo-chart-title-font-size} );
-    }
-
-    .k-var--chart-pane-title-font {
-        font-size: var( --kendo-chart-pane-title-font-size, #{$kendo-chart-pane-title-font-size} );
-        font-weight: var( --kendo-chart-pane-title-font-weight, #{$kendo-chart-pane-title-font-weight} );
-    }
-
-    .k-var--chart-label-font {
-        font-size: var( --kendo-chart-label-font-size, #{$kendo-chart-label-font-size} );
-    }
-    // stylelint-enable selector-class-pattern
-
     // Elements
     .k-chart,
     .k-sparkline,
@@ -422,19 +402,8 @@
         base: $kendo-component-bg,
         background: $kendo-component-bg,
 
-        border-radius: k-border-radius(md),
-
         normal-background: $kendo-component-bg,
         normal-text-color: $kendo-component-text,
-        hover-background: $kendo-hover-bg,
-        hover-text-color: $kendo-hover-text,
-        selected-background: $kendo-selected-bg,
-        selected-text-color: $kendo-selected-text,
-
-        success: if($kendo-enable-color-system, k-color( success ), k-get-theme-color( success, 100 )),
-        info: if($kendo-enable-color-system, k-color( info ), k-get-theme-color( info, 100 )),
-        warning: if($kendo-enable-color-system, k-color( warning ), k-get-theme-color( warning, 100 )),
-        error: if($kendo-enable-color-system, k-color( error ), k-get-theme-color( error, 100 )),
 
         series-a: $kendo-series-a,
         series-b: $kendo-series-b,
@@ -475,22 +444,112 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-series-f,
-        gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-30 ))
+        gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-30 )),
+
+        chart-font-size: $kendo-chart-font-size,
+        chart-title-font-size: $kendo-chart-title-font-size,
+        chart-pane-title-font-size: $kendo-chart-pane-title-font-size,
+        chart-pane-title-font-weight: $kendo-chart-pane-title-font-weight,
+        chart-label-font-size: $kendo-chart-label-font-size,
+
+        chart-inactive: $kendo-chart-inactive-bg,
+        chart-major-lines: $kendo-chart-major-lines,
+        chart-minor-lines: $kendo-chart-minor-lines,
+        chart-area-opacity: $kendo-chart-area-opacity,
+        chart-area-inactive-opacity: $kendo-chart-area-inactive-opacity,
+        chart-line-inactive-opacity: $kendo-chart-line-inactive-opacity,
+        chart-notes-background: $kendo-chart-notes-background,
+        chart-notes-border: $kendo-chart-notes-border,
+        chart-notes-lines: $kendo-chart-notes-lines,
+        chart-crosshair-background: $kendo-chart-crosshair-background,
+        chart-error-bars-background: $kendo-chart-error-bars-background,
+
     );
 
+    // TODO: remove in favor of CSS variables once all suites are updated
     @each $name, $value in $exported {
         $type: meta.type-of($value);
 
         .k-var--#{$name} {
-            @if $type == "color" {
+            @if $type == "color" or $type == "string" and string.index($value, "color") {
                 // background-color can store any color
-                background-color: $value;
-            } @else if $type == "string" and string.slice( $value, 1, 4 ) == "var(" {
-                background-color: $value;
-            } @else if $type == "number" {
-                // margin-top can store positive & negative values
-                margin-top: $value;
+                background-color: #{$value};
+            } @else if string.index($name, "font-size") {
+                font-size: #{$value};
+            } @else if string.index($name, "font-weight") {
+                font-weight: #{$value};
+            } @else if string.index($name, "opacity") {
+                opacity: #{$value};
             }
+
+        }
+    }
+
+    $_css-vars: (
+        chart-primary-contrast: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white),
+        chart-bg: $kendo-chart-bg,
+        chart-text: $kendo-chart-text,
+
+        chart-font-size: $kendo-chart-font-size,
+        chart-title-font-size: $kendo-chart-title-font-size,
+        chart-pane-title-font-size: $kendo-chart-pane-title-font-size,
+        chart-pane-title-font-weight: $kendo-chart-pane-title-font-weight,
+        chart-label-font-size: $kendo-chart-label-font-size,
+
+        chart-inactive: $kendo-chart-inactive-bg,
+        chart-major-lines: $kendo-chart-major-lines,
+        chart-minor-lines: $kendo-chart-minor-lines,
+        chart-area-opacity: $kendo-chart-area-opacity,
+        chart-area-inactive-opacity: $kendo-chart-area-inactive-opacity,
+        chart-line-inactive-opacity: $kendo-chart-line-inactive-opacity,
+        chart-notes-bg: $kendo-chart-notes-background,
+        chart-notes-border: $kendo-chart-notes-border,
+        chart-notes-lines: $kendo-chart-notes-lines,
+        chart-crosshair-bg: $kendo-chart-crosshair-background,
+        chart-error-bars-bg: $kendo-chart-error-bars-background,
+
+        chart-series-1: $kendo-series-1,
+        chart-series-2: $kendo-series-2,
+        chart-series-3: $kendo-series-3,
+        chart-series-4: $kendo-series-4,
+        chart-series-5: $kendo-series-5,
+        chart-series-6: $kendo-series-6,
+        chart-series-7: $kendo-series-7,
+        chart-series-8: $kendo-series-8,
+        chart-series-9: $kendo-series-9,
+        chart-series-10: $kendo-series-10,
+        chart-series-11: $kendo-series-11,
+        chart-series-12: $kendo-series-12,
+        chart-series-13: $kendo-series-13,
+        chart-series-14: $kendo-series-14,
+        chart-series-15: $kendo-series-15,
+        chart-series-16: $kendo-series-16,
+        chart-series-17: $kendo-series-17,
+        chart-series-18: $kendo-series-18,
+        chart-series-19: $kendo-series-19,
+        chart-series-20: $kendo-series-20,
+        chart-series-21: $kendo-series-21,
+        chart-series-22: $kendo-series-22,
+        chart-series-23: $kendo-series-23,
+        chart-series-24: $kendo-series-24,
+        chart-series-25: $kendo-series-25,
+        chart-series-26: $kendo-series-26,
+        chart-series-27: $kendo-series-27,
+        chart-series-28: $kendo-series-28,
+        chart-series-29: $kendo-series-29,
+        chart-series-30: $kendo-series-30,
+
+        chart-gauge-pointer: $kendo-series-f,
+        chart-gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-30 ))
+
+    );
+
+    .k-chart,
+    .k-diagram,
+    .k-gauge,
+    .k-sparkline {
+        @each $name, $value in $_css-vars {
+            --kendo-#{$name}: #{$value};
         }
     }
 

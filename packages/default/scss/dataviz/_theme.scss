@@ -5,53 +5,6 @@
 
 @mixin kendo-dataviz--theme-base() {
 
-    // Exported variables
-    // stylelint-disable  selector-class-pattern
-    .k-var--chart-inactive {
-        background-color: $kendo-chart-inactive;
-    }
-
-    .k-var--chart-major-lines {
-        background-color: $kendo-chart-major-lines;
-    }
-
-    .k-var--chart-minor-lines {
-        background-color: $kendo-chart-minor-lines;
-    }
-
-    .k-var--chart-area-opacity {
-        opacity: $kendo-chart-area-opacity;
-    }
-
-    .k-var--chart-area-inactive-opacity {
-        opacity: $kendo-chart-area-inactive-opacity;
-    }
-
-    .k-var--chart-line-inactive-opacity {
-        opacity: $kendo-chart-line-inactive-opacity;
-    }
-
-    .k-var--chart-notes-background {
-        background-color: $kendo-chart-notes-background;
-    }
-
-    .k-var--chart-notes-border {
-        background-color: $kendo-chart-notes-border;
-    }
-
-    .k-var--chart-notes-lines {
-        background-color: $kendo-chart-notes-lines;
-    }
-
-    .k-var--chart-crosshair-background {
-        background-color: $kendo-chart-crosshair-background;
-    }
-
-    .k-var--chart-error-bars-background {
-        background-color: $kendo-chart-error-bars-background;
-    }
-    // stylelint-enable  selector-class-pattern
-
     // Elements
     .k-chart,
     .k-sparkline,

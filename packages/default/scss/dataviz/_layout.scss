@@ -1,3 +1,4 @@
+@use "sass:string";
 @use "sass:math";
 @use "sass:meta";
 @use "../core/_index.scss" as *;
@@ -15,27 +16,6 @@
             height: 150px;
         }
     }
-
-
-    // Exported variables
-    // stylelint-disable selector-class-pattern
-    .k-var--chart-font {
-        font-size: $kendo-chart-font-size;
-    }
-
-    .k-var--chart-title-font {
-        font-size: $kendo-chart-title-font-size;
-    }
-
-    .k-var--chart-pane-title-font {
-        font-size: $kendo-chart-pane-title-font-size;
-        font-weight: $kendo-chart-pane-title-font-weight;
-    }
-
-    .k-var--chart-label-font {
-        font-size: $kendo-chart-label-font-size;
-    }
-    // stylelint-enable selector-class-pattern
 
     // Elements
     .k-chart,
@@ -427,25 +407,15 @@
 
 
     // export variables to allow use in scripts
+    // TODO: remove in favor of $_css-vars once all suites are updated
     $exported: (
         primary: $kendo-color-primary,
         primary-contrast: $kendo-color-primary-contrast,
         base: $kendo-base-bg,
         background: $kendo-chart-bg,
 
-        border-radius: k-border-radius(md),
-
         normal-background: $kendo-base-bg,
         normal-text-color: $kendo-base-text,
-        hover-background: $kendo-hover-bg,
-        hover-text-color: $kendo-hover-text,
-        selected-background: $kendo-selected-bg,
-        selected-text-color: $kendo-selected-text,
-
-        success: $kendo-color-success,
-        info: $kendo-color-info,
-        warning: $kendo-color-warning,
-        error: $kendo-color-error,
 
         series-a: $kendo-series-a,
         series-b: $kendo-series-b,
@@ -486,20 +456,113 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-color-primary,
-        gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-chart-bg ))
+        gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-chart-bg )),
+
+        chart-font-size: $kendo-chart-font-size,
+        chart-title-font-size: $kendo-chart-title-font-size,
+        chart-pane-title-font-size: $kendo-chart-pane-title-font-size,
+        chart-pane-title-font-weight: $kendo-chart-pane-title-font-weight,
+        chart-label-font-size: $kendo-chart-label-font-size,
+
+        chart-inactive: $kendo-chart-inactive,
+        chart-major-lines: $kendo-chart-major-lines,
+        chart-minor-lines: $kendo-chart-minor-lines,
+        chart-area-opacity: $kendo-chart-area-opacity,
+        chart-area-inactive-opacity: $kendo-chart-area-inactive-opacity,
+        chart-line-inactive-opacity: $kendo-chart-line-inactive-opacity,
+        chart-notes-background: $kendo-chart-notes-background,
+        chart-notes-border: $kendo-chart-notes-border,
+        chart-notes-lines: $kendo-chart-notes-lines,
+        chart-crosshair-background: $kendo-chart-crosshair-background,
+        chart-error-bars-background: $kendo-chart-error-bars-background,
+
     );
 
+    // TODO: remove in favor of CSS variables once all suites are updated
     @each $name, $value in $exported {
         $type: meta.type-of($value);
 
         .k-var--#{$name} {
-            @if $type == "color" or $type == "string" {
+            @if $type == "color" or $type == "string" and string.index($value, "color") {
                 // background-color can store any color
-                background-color: $value;
-            } @else if $type == "number" {
-                // margin-top can store positive & negative values
-                margin-top: $value;
+                background-color: #{$value};
+            } @else if string.index($name, "font-size") {
+                font-size: #{$value};
+            } @else if string.index($name, "font-weight") {
+                font-weight: #{$value};
+            } @else if string.index($name, "opacity") {
+                opacity: #{$value};
             }
+
+        }
+    }
+
+    $_css-vars: (
+        chart-primary-bg: $kendo-color-primary,
+        chart-primary-contrast: $kendo-color-primary-contrast,
+        chart-bg: $kendo-chart-bg,
+        chart-text: $kendo-chart-text,
+
+        chart-font-size: $kendo-chart-font-size,
+        chart-title-font-size: $kendo-chart-title-font-size,
+        chart-pane-title-font-size: $kendo-chart-pane-title-font-size,
+        chart-pane-title-font-weight: $kendo-chart-pane-title-font-weight,
+        chart-label-font-size: $kendo-chart-label-font-size,
+
+        chart-inactive: $kendo-chart-inactive,
+        chart-major-lines: $kendo-chart-major-lines,
+        chart-minor-lines: $kendo-chart-minor-lines,
+        chart-area-opacity: $kendo-chart-area-opacity,
+        chart-area-inactive-opacity: $kendo-chart-area-inactive-opacity,
+        chart-line-inactive-opacity: $kendo-chart-line-inactive-opacity,
+        chart-notes-bg: $kendo-chart-notes-background,
+        chart-notes-border: $kendo-chart-notes-border,
+        chart-notes-lines: $kendo-chart-notes-lines,
+        chart-crosshair-bg: $kendo-chart-crosshair-background,
+        chart-error-bars-bg: $kendo-chart-error-bars-background,
+
+        chart-series-1: $kendo-series-1,
+        chart-series-2: $kendo-series-2,
+        chart-series-3: $kendo-series-3,
+        chart-series-4: $kendo-series-4,
+        chart-series-5: $kendo-series-5,
+        chart-series-6: $kendo-series-6,
+        chart-series-7: $kendo-series-7,
+        chart-series-8: $kendo-series-8,
+        chart-series-9: $kendo-series-9,
+        chart-series-10: $kendo-series-10,
+        chart-series-11: $kendo-series-11,
+        chart-series-12: $kendo-series-12,
+        chart-series-13: $kendo-series-13,
+        chart-series-14: $kendo-series-14,
+        chart-series-15: $kendo-series-15,
+        chart-series-16: $kendo-series-16,
+        chart-series-17: $kendo-series-17,
+        chart-series-18: $kendo-series-18,
+        chart-series-19: $kendo-series-19,
+        chart-series-20: $kendo-series-20,
+        chart-series-21: $kendo-series-21,
+        chart-series-22: $kendo-series-22,
+        chart-series-23: $kendo-series-23,
+        chart-series-24: $kendo-series-24,
+        chart-series-25: $kendo-series-25,
+        chart-series-26: $kendo-series-26,
+        chart-series-27: $kendo-series-27,
+        chart-series-28: $kendo-series-28,
+        chart-series-29: $kendo-series-29,
+        chart-series-30: $kendo-series-30,
+
+        chart-gauge-pointer: $kendo-color-primary,
+        chart-gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-chart-bg ))
+
+    );
+
+    .k-chart,
+    .k-diagram,
+    .k-gauge,
+    .k-sparkline {
+        @each $name, $value in $_css-vars {
+            --kendo-#{$name}: #{$value};
         }
     }
 

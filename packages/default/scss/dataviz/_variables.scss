@@ -90,12 +90,9 @@ $kendo-chart-border-width: 0px !default;
 $kendo-chart-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-chart-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-chart-line-height: var( --kendo-line-height, normal ) !default;
-$kendo-chart-sm-font-size: 11px !default;
-$kendo-chart-md-font-size: 12px !default;
-$kendo-chart-lg-font-size: 16px !default;
 $kendo-chart-tooltip-font-size: calc( #{$kendo-font-size} * .929) !default;
-$kendo-chart-label-font-size: .857em !default;
-$kendo-chart-title-font-size: 1.143em !default;
+$kendo-chart-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chart-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-chart-pane-title-font-size: $kendo-chart-label-font-size !default;
 $kendo-chart-pane-title-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 
