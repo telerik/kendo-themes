@@ -92,9 +92,6 @@ $kendo-chart-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font-size of the chart component.
 /// @group charts
 $kendo-chart-font-size: var( --kendo-font-size, inherit ) !default;
-$kendo-chart-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
-$kendo-chart-md-font-size: var( --kendo-font-size, inherit ) !default;
-$kendo-chart-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The line-height of the chart component.
 /// @group charts
 $kendo-chart-line-height: var( --kendo-line-height, normal ) !default;
@@ -204,7 +201,7 @@ $kendo-chart-handle-hover-border: var( --kendo-hover-border, initial ) !default;
 
 /// The color of the chart error bars.
 /// @group charts
-$kendo-color-error-bars-background: if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( neutral-110 )) !default;
+$kendo-chart-error-bars-background: if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// The size of the selection handle of the chart component.
 /// @group charts
