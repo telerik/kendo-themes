@@ -12,10 +12,6 @@
         @include box-shadow( $kendo-popup-shadow );
     }
 
-    .k-animation-container {
-        @include border-bottom-radius-only( k-border-radius(md) );
-    }
-
 }
 
 
