@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.0...v10.2.0-dev.1) (2025-01-20)
+
+
+### Features
+
+* **dataviz:** enable css variable support ([71f0b38](https://github.com/telerik/kendo-themes/commit/71f0b388929e69da2ac3b74a1e452eba92c4088d))
+
+
+
+
+
 # [10.2.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.1.1-dev.1...v10.2.0-dev.0) (2025-01-13)
 
 
