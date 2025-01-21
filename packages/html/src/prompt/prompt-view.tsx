@@ -31,7 +31,7 @@ export const PromptView = (
             { showSearch && <Textarea resize="y" rows={1} placeholder="Ask or generate content with AI"></Textarea> }
             { suggestions &&
                 <div className="k-prompt-expander">
-                    <IconTextButton fillMode={"flat"} icon="chevron-down">Prompt Suggestions</IconTextButton>
+                    <IconTextButton fillMode={"flat"} icon="chevron-up">Prompt Suggestions</IconTextButton>
                     <div className="k-prompt-expander-content">
                         <>{suggestions}</>
                     </div>
@@ -39,7 +39,7 @@ export const PromptView = (
             }
             { settings &&
                 <div className="k-prompt-expander">
-                    <IconTextButton fillMode={"flat"} icon="chevron-down">Settings</IconTextButton>
+                    <IconTextButton fillMode={"flat"} icon="chevron-up">Settings</IconTextButton>
                     <div className="k-prompt-expander-content">
                         {settings}
                     </div>
