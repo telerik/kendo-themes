@@ -7,7 +7,7 @@ export default () =>(
 
             <span className="k-colspan-all k-col-span-full">Toolbar Buttons Around</span>
             <section className="k-colspan-all k-col-span-full">
-                <ToolbarScrollable scrollButtons="around" />
+                <ToolbarScrollable />
             </section>
 
             <span className="k-colspan-all k-col-span-full">Toolbar Buttons Start</span>

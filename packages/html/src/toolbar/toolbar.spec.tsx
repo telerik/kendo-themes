@@ -37,6 +37,7 @@ export type KendoToolbarState = { [K in (typeof states)[number]]?: boolean };
 const defaultOptions = {
     size: Size.medium,
     fillMode: FillMode.solid,
+    scrollButtons: 'around'
 };
 
 export const Toolbar = (
@@ -189,7 +190,7 @@ export const Toolbar = (
                 {
                     [`${TOOLBAR_CLASSNAME}-resizable`]: resizable,
                     [`${TOOLBAR_CLASSNAME}-scrollable`]: scrollable,
-                    [`${TOOLBAR_CLASSNAME}-scrollable-overlay`]: (scrollable && (scrollButtons === 'hidden' || !scrollButtons)),
+                    [`${TOOLBAR_CLASSNAME}-scrollable-overlay`]: (scrollable && scrollButtons === 'hidden'),
                     [`${TOOLBAR_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition,
                     [`${TOOLBAR_CLASSNAME}-section`]: section,
                 }
@@ -197,7 +198,7 @@ export const Toolbar = (
         >
             {!scrollable && toolbarChildren}
 
-            {scrollable && (scrollButtons === 'hidden' || !scrollButtons) &&
+            {scrollable && scrollButtons === 'hidden' &&
                <span className='k-toolbar-items k-toolbar-items-scroll'>{toolbarChildren}</span>
             }
 
@@ -223,7 +224,7 @@ export const Toolbar = (
                 </>
             }
 
-            {scrollable && scrollButtons === 'around' &&
+            {scrollable && (scrollButtons === 'around' || !scrollButtons) &&
                 <>
                     <Button fillMode={fillMode} size={size} icon="caret-alt-left" className="k-toolbar-prev"></Button>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
