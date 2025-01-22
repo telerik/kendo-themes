@@ -5,8 +5,9 @@ import { Combobox } from '../combobox';
 import { DropdownList } from '../dropdownlist';
 import { MenuButton } from '../menu-button';
 import SplitButton from '../split-button/split-button.spec';
-import { classNames, optionClassNames, stateClassNames, States, Size, FillMode } from '../misc';
+import { classNames, optionClassNames, stateClassNames, States, Size, FillMode, ThemeColor, Roundness } from '../misc';
 import { ToolbarSeparator } from './toolbar-separator';
+import { Icon } from '../icon';
 
 export const TOOLBAR_CLASSNAME = `k-toolbar`;
 
@@ -204,9 +205,33 @@ export const Toolbar = (
 
             {scrollable && scrollButtons === 'start' &&
                 <>
-                    <ButtonGroup>
-                        <Button fillMode={fillMode} size={size} icon="caret-alt-left" className="k-toolbar-prev"></Button>
-                        <Button fillMode={fillMode} size={size} icon="caret-alt-right" className="k-toolbar-next"></Button>
+                     <ButtonGroup>
+                        <span className={classNames(
+                            'k-toolbar-prev',
+                            'k-button',
+                            optionClassNames('k-button', {
+                                size,
+                                fillMode,
+                                themeColor: ThemeColor.base,
+                                rounded: Roundness.medium
+                            }),
+                            'k-icon-button',
+                        )}>
+                            <Icon className='k-button-icon' icon= "caret-alt-left" />
+                        </span>
+                        <span className={classNames(
+                            'k-toolbar-next',
+                            'k-button',
+                            optionClassNames('k-button', {
+                                size,
+                                fillMode,
+                                themeColor: ThemeColor.base,
+                                rounded: Roundness.medium
+                            }),
+                            'k-icon-button',
+                        )}>
+                            <Icon className='k-button-icon' icon= "caret-alt-right" />
+                        </span>
                     </ButtonGroup>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
                     <div className="k-toolbar-items k-toolbar-items-scroll">{toolbarChildren}</div>
@@ -218,19 +243,67 @@ export const Toolbar = (
                     <div className="k-toolbar-items k-toolbar-items-scroll">{toolbarChildren}</div>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
                     <ButtonGroup>
-                        <Button fillMode={fillMode} size={size} icon="caret-alt-left" className="k-toolbar-prev"></Button>
-                        <Button fillMode={fillMode} size={size} icon="caret-alt-right" className="k-toolbar-next"></Button>
+                        <span className={classNames(
+                            'k-toolbar-prev',
+                            'k-button',
+                            optionClassNames('k-button', {
+                                size,
+                                fillMode,
+                                themeColor: ThemeColor.base,
+                                rounded: Roundness.medium
+                            }),
+                            'k-icon-button',
+                        )}>
+                            <Icon className='k-button-icon' icon= "caret-alt-left" />
+                        </span>
+                        <span className={classNames(
+                            'k-toolbar-next',
+                            'k-button',
+                            optionClassNames('k-button', {
+                                size,
+                                fillMode,
+                                themeColor: ThemeColor.base,
+                                rounded: Roundness.medium
+                            }),
+                            'k-icon-button',
+                        )}>
+                            <Icon className='k-button-icon' icon= "caret-alt-right" />
+                        </span>
                     </ButtonGroup>
                 </>
             }
 
             {scrollable && (scrollButtons === 'around' || !scrollButtons) &&
                 <>
-                    <Button fillMode={fillMode} size={size} icon="caret-alt-left" className="k-toolbar-prev"></Button>
+                    <span className={classNames(
+                        'k-toolbar-prev',
+                        'k-button',
+                        optionClassNames('k-button', {
+                            size,
+                            fillMode,
+                            themeColor: ThemeColor.base,
+                            rounded: Roundness.medium
+                        }),
+                        'k-icon-button',
+                    )}>
+                        <Icon className='k-button-icon' icon= "caret-alt-left" />
+                    </span>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
                     <div className="k-toolbar-items k-toolbar-items-scroll">{toolbarChildren}</div>
                     <ToolbarSeparator className="k-toolbar-button-separator" />
-                    <Button fillMode={fillMode} size={size} icon="caret-alt-right" className="k-toolbar-next"></Button>
+                    <span className={classNames(
+                        'k-toolbar-next',
+                        'k-button',
+                        optionClassNames('k-button', {
+                            size,
+                            fillMode,
+                            themeColor: ThemeColor.base,
+                            rounded: Roundness.medium
+                        }),
+                        'k-icon-button',
+                    )}>
+                        <Icon className='k-button-icon' icon= "caret-alt-right" />
+                    </span>
                 </>
             }
 
