@@ -105,7 +105,7 @@ $kendo-chart-tooltip-line-height: var( --kendo-line-height-sm, normal ) !default
 
 /// The font-size of the label of the chart component.
 /// @group chart
-$kendo-chart-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chart-label-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// The font-size of the title of the chart component.
 /// @group charts
