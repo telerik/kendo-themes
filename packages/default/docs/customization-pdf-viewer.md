@@ -427,16 +427,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer free text annotation.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-pdf-viewer-free-text-annotation-text</td>
-    <td>Color</td>
-    <td><code>rgba(124, 22, 27, 0.7)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(124, 22, 27, 0.5)"></span><code>rgba(124, 22, 27, 0.5)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer free text annotation.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

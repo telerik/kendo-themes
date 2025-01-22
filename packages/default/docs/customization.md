@@ -42,16 +42,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-transition</td>
-    <td>List</td>
-    <td><code>color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out</code></td>
-    <td><code>(color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transition used across all components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-disabled-bg</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -13958,26 +13948,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-prefix-text</td>
-    <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
-    <td><code>var(--kendo-color-subtle, #666666)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input prefix.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-suffix-text</td>
-    <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
-    <td><code>var(--kendo-color-subtle, #666666)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input suffix.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-input-invalid-border</td>
     <td>String</td>
     <td><code>$kendo-invalid-border</code></td>
@@ -17600,16 +17570,6 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-pdf-viewer-free-text-annotation-text</td>
     <td>Color</td>
     <td><code>rgba(124, 22, 27, 0.5)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(124, 22, 27, 0.5)"></span><code>rgba(124, 22, 27, 0.5)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer free text annotation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pdf-viewer-free-text-annotation-text</td>
-    <td>Color</td>
-    <td><code>rgba(124, 22, 27, 0.7)</code></td>
     <td><span class="color-preview" style="background-color: rgba(124, 22, 27, 0.5)"></span><code>rgba(124, 22, 27, 0.5)</code></td>
 </tr>
 <tr>

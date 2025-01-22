@@ -28319,9 +28319,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-focus-text</td>
-    <td>Null</td>
-    <td><code>$kendo-color-primary-darker</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered TaskBoard Card header text.</div></div>
@@ -28329,9 +28329,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-taskboard-card-header-hover-text</td>
-    <td>Null</td>
-    <td><code>$kendo-color-primary-darker</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker)</code></td>
+    <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused TaskBoard Card header text.</div></div>
@@ -29495,6 +29495,46 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-overflow-container-font-size</td>
+    <td>String</td>
+    <td><code>$kendo-menu-popup-md-font-size</code></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Toolbar overflow container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-overflow-container-line-height</td>
+    <td>String</td>
+    <td><code>$kendo-menu-popup-md-line-height</code></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the Toolbar overflow container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-overflow-button-padding-y</td>
+    <td>String</td>
+    <td><code>$kendo-menu-popup-md-item-padding-y</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Toolbar overflow button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-overflow-button-padding-x</td>
+    <td>String</td>
+    <td><code>$kendo-menu-popup-md-item-padding-x</code></td>
+    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Toolbar overflow button.</div></div>
     </td>
 </tr>
 <tr>
