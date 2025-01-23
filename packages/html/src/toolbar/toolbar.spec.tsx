@@ -29,7 +29,7 @@ export type KendoToolbarProps = KendoToolbarOptions & {
     resizable?: boolean;
     scrollable?: boolean;
     scrollButtons?: 'hidden' | 'start' | 'end' | 'around';
-    scrollingPosition?: 'start' | 'end';
+    scrollingPosition?: 'start' | 'end' | 'both';
     section?: boolean;
 };
 
@@ -192,7 +192,7 @@ export const Toolbar = (
                     [`${TOOLBAR_CLASSNAME}-resizable`]: resizable,
                     [`${TOOLBAR_CLASSNAME}-scrollable`]: scrollable,
                     [`${TOOLBAR_CLASSNAME}-scrollable-overlay`]: (scrollable && scrollButtons === 'hidden'),
-                    [`${TOOLBAR_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition,
+                    [`${TOOLBAR_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition && scrollingPosition !== 'both',
                     [`${TOOLBAR_CLASSNAME}-section`]: section,
                 }
             )}

@@ -19,7 +19,7 @@ export type KendoTabStripProps = KendoTabStripOptions & {
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
     scrollable?: boolean;
     scrollButtons?: "around" | "start" | "end" | "hidden";
-    scrollingPosition?: "start" | "end";
+    scrollingPosition?: "start" | "end" | "both";
     dir?: "rtl" | "ltr";
 };
 
@@ -80,7 +80,7 @@ export const TabStrip = (
                     [`${TABSTRIP_CLASSNAME}-${position}`]: position,
                     [`${TABSTRIP_CLASSNAME}-scrollable`]: scrollable,
                     [`${TABSTRIP_CLASSNAME}-scrollable-overlay`]: (scrollable && (scrollButtons === 'hidden' || !scrollButtons) ),
-                    [`${TABSTRIP_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition,
+                    [`${TABSTRIP_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition  && scrollingPosition !== 'both',
                 },
                 optionClassNames(TABSTRIP_CLASSNAME, {size})
             )}>
