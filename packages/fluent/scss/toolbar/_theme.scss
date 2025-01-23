@@ -146,35 +146,32 @@
     }
 
     // RTL
-    .k-rtl,
-    [dir="rtl"] {
-        .k-toolbar-scrollable-overlay {
+    :is(.k-rtl .k-toolbar-scrollable-overlay, [dir="rtl"] .k-toolbar-scrollable-overlay, .k-toolbar-scrollable-overlay.k-rtl, .k-toolbar-scrollable-overlay[dir="rtl"] ) {
+        &::before {
+            background: linear-gradient(270deg, var(--kendo-toolbar-scroll-overlay, #{$kendo-toolbar-scroll-overlay}));
+        }
+
+        &::after {
+            background: linear-gradient(90deg, var(--kendo-toolbar-scroll-overlay, #{$kendo-toolbar-scroll-overlay}));
+        }
+
+        &.k-toolbar-outline {
             &::before {
-                background: linear-gradient(270deg, var( --kendo-toolbar-scroll-overlay, #{$kendo-toolbar-scroll-overlay} ));
+                background: linear-gradient(270deg, var(--kendo-toolbar-outline-scroll-overlay, #{$kendo-toolbar-outline-scroll-overlay}));
             }
 
             &::after {
-                background: linear-gradient(90deg, var( --kendo-toolbar-scroll-overlay, #{$kendo-toolbar-scroll-overlay} ));
+                background: linear-gradient(90deg, var(--kendo-toolbar-outline-scroll-overlay, #{$kendo-toolbar-outline-scroll-overlay}));
+            }
+        }
+
+        &.k-toolbar-flat {
+            &::before {
+                background: linear-gradient(270deg, var(--kendo-toolbar-flat-scroll-overlay, #{$kendo-toolbar-flat-scroll-overlay}));
             }
 
-            &.k-toolbar-outline {
-                &::before {
-                    background: linear-gradient(270deg, var( --kendo-toolbar-outline-scroll-overlay, #{$kendo-toolbar-outline-scroll-overlay} ));
-                }
-
-                &::after {
-                    background: linear-gradient(90deg, var( --kendo-toolbar-outline-scroll-overlay, #{$kendo-toolbar-outline-scroll-overlay} ));
-                }
-            }
-
-            &.k-toolbar-flat {
-                &::before {
-                    background: linear-gradient(270deg, var( --kendo-toolbar-flat-scroll-overlay, #{$kendo-toolbar-flat-scroll-overlay} ));
-                }
-
-                &::after {
-                    background: linear-gradient(90deg, var( --kendo-toolbar-flat-scroll-overlay, #{$kendo-toolbar-flat-scroll-overlay} ));
-                }
+            &::after {
+                background: linear-gradient(90deg, var(--kendo-toolbar-flat-scroll-overlay, #{$kendo-toolbar-flat-scroll-overlay}));
             }
         }
     }
