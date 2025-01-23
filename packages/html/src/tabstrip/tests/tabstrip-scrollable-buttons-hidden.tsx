@@ -53,7 +53,7 @@ export default () => (
 
 
             <section>
-                <TabStripScrollableButtonsHidden scrollingPosition={null}
+                <TabStripScrollableButtonsHidden scrollingPosition="both"
                     tabStripItems={
                         <>
                             <TabStripItem first value="First" />
@@ -117,7 +117,7 @@ export default () => (
 
 
             <section>
-                <TabStripScrollableButtonsHidden position="left" scrollingPosition={null}
+                <TabStripScrollableButtonsHidden position="left" scrollingPosition="both"
                     tabStripItems={
                         <>
                             <TabStripItem first value="First" />
@@ -182,7 +182,7 @@ export default () => (
 
 
             <section>
-                <TabStripScrollableButtonsHidden scrollingPosition={null} dir="rtl"
+                <TabStripScrollableButtonsHidden scrollingPosition="both" dir="rtl"
                     tabStripItems={
                         <>
                             <TabStripItem first value="First" />

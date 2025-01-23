@@ -52,7 +52,7 @@ export default () =>(
                     </section>
                     <span className="k-colspan-all k-col-span-full">{fillMode} with overlay</span>
                     <section className="k-colspan-all k-col-span-full">
-                      <ToolbarScrollableButtonsHidden fillMode={fillMode}>
+                      <ToolbarScrollableButtonsHidden scrollingPosition="both" fillMode={fillMode}>
                           <Button icon="arrow-rotate-ccw" fillMode={fillMode}></Button>
                           <Button icon="arrow-rotate-cw" fillMode={fillMode}></Button>
                           <ToolbarSeparator></ToolbarSeparator>

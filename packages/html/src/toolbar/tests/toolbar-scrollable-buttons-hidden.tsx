@@ -17,12 +17,12 @@ export default () =>(
 
             <span className="k-colspan-all k-col-span-full">Toolbar Hidden Buttons Scroll Middle</span>
             <section className="k-colspan-all k-col-span-full">
-                <ToolbarScrollableButtonsHidden scrollingPosition={null} />
+                <ToolbarScrollableButtonsHidden scrollingPosition="both" />
             </section>
 
             <span className="k-colspan-all k-col-span-full">Toolbar Hidden Buttons Scroll Middle RTL</span>
             <section className="k-colspan-all k-col-span-full" dir="rtl">
-                <ToolbarScrollableButtonsHidden scrollingPosition={null} />
+                <ToolbarScrollableButtonsHidden scrollingPosition="both" />
             </section>
 
         </div>
