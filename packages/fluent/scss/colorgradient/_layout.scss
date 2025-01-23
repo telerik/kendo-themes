@@ -64,6 +64,10 @@
             flex-shrink: 0;
             gap: var( --kendo-color-gradient-canvas-spacing, #{$kendo-color-gradient-canvas-spacing} );
         }
+
+        &.k-vstack {
+            padding-inline: calc( ($kendo-color-gradient-draghandle-width + $kendo-color-gradient-draghandle-border-width) / 2 );
+        }
     }
 
     // DragHandle
