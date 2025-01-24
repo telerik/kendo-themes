@@ -44,6 +44,15 @@ $_tc-avatar-matrix: (
     )
 ) !default;
 
+$_tc-avatar-base-matrix: (
+    solid: (
+        normal:  if($kendo-enable-color-system, (color, on-color, border), ($kendo-color-white, 160, 110)),
+    ),
+    outline: (
+        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 160, currentColor)),
+    )
+) !default;
+
 $_tc-avatar-warning-matrix: (
     solid: (
         normal: if($kendo-enable-color-system, (color, on-color, color), (100, k-get-theme-color-var( neutral-160 ), 100))
@@ -82,6 +91,13 @@ $kendo-avatar-theme-colors: () !default;
             k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
         );
     };
+}
+
+@each $fill-mode, $ui-states in $_tc-avatar-base-matrix {
+    $kendo-avatar-theme-colors: map.deep-merge(
+        $kendo-avatar-theme-colors,
+        k-generate-fill-mode-theme-variation( $fill-mode, base, if($kendo-enable-color-system, base, neutral), $ui-states )
+    );
 }
 
 @each $fill-mode, $ui-states in $_tc-avatar-warning-matrix {
