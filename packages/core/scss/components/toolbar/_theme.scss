@@ -156,39 +156,35 @@
     }
 
     // RTL
-    .k-rtl,
-    [dir="rtl"] {
-        .k-toolbar-scrollable-overlay {
+    :is(.k-rtl .k-toolbar-scrollable-overlay, [dir="rtl"] .k-toolbar-scrollable-overlay, .k-toolbar-scrollable-overlay.k-rtl, .k-toolbar-scrollable-overlay[dir="rtl"] ) {
+        &::before {
+            background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
+        }
+
+        &::after {
+            background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
+        }
+
+        &.k-toolbar-outline {
             &::before {
-                background: linear-gradient(270deg, $kendo-toolbar-scroll-overlay);
+                background: linear-gradient(270deg, $kendo-toolbar-outline-scroll-overlay);
             }
 
             &::after {
-                background: linear-gradient(90deg, $kendo-toolbar-scroll-overlay);
+                background: linear-gradient(90deg, $kendo-toolbar-outline-scroll-overlay);
+            }
+        }
+
+        &.k-toolbar-flat {
+            &::before {
+                background: linear-gradient(270deg, $kendo-toolbar-flat-scroll-overlay);
             }
 
-            &.k-toolbar-outline {
-                &::before {
-                    background: linear-gradient(270deg, $kendo-toolbar-outline-scroll-overlay);
-                }
-
-                &::after {
-                    background: linear-gradient(90deg, $kendo-toolbar-outline-scroll-overlay);
-                }
-            }
-
-            &.k-toolbar-flat {
-                &::before {
-                    background: linear-gradient(270deg, $kendo-toolbar-flat-scroll-overlay);
-                }
-
-                &::after {
-                    background: linear-gradient(90deg, $kendo-toolbar-flat-scroll-overlay);
-                }
+            &::after {
+                background: linear-gradient(90deg, $kendo-toolbar-flat-scroll-overlay);
             }
         }
     }
-
 }
 
 
