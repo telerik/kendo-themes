@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "../../color-system/_functions.import.scss" as *;
 @use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../functions/index.import.scss" as *;
 @use "../../color-system/_functions.import.scss" as *;
@@ -6,7 +8,7 @@
 @mixin kendo-badge--theme-base() {
 
     // Solid badges
-    @each $name, $color in $kendo-theme-colors {
+    @each $name, $color in map.merge( $kendo-theme-colors, ( "base": if($kendo-enable-color-system, k-color( base ), $kendo-base-bg) )) {
         .k-badge-solid-#{$name} {
             border-color: $color;
             color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
