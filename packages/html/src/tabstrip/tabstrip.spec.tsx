@@ -1,5 +1,5 @@
-import { Button, TabStripItems, TabStripItemsWrapper } from '..';
-import { classNames, optionClassNames, Size } from '../misc';
+import { Icon, TabStripItems, TabStripItemsWrapper } from '..';
+import { classNames, FillMode, optionClassNames, Size, ThemeColor } from '../misc';
 
 export const TABSTRIP_CLASSNAME = `k-tabstrip`;
 
@@ -19,7 +19,7 @@ export type KendoTabStripProps = KendoTabStripOptions & {
     tabStripItems?: React.JSX.Element | React.JSX.Element[];
     scrollable?: boolean;
     scrollButtons?: "around" | "start" | "end" | "hidden";
-    scrollingPosition?: "start" | "end";
+    scrollingPosition?: "start" | "end" | "both";
     dir?: "rtl" | "ltr";
 };
 
@@ -80,7 +80,7 @@ export const TabStrip = (
                     [`${TABSTRIP_CLASSNAME}-${position}`]: position,
                     [`${TABSTRIP_CLASSNAME}-scrollable`]: scrollable,
                     [`${TABSTRIP_CLASSNAME}-scrollable-overlay`]: (scrollable && (scrollButtons === 'hidden' || !scrollButtons) ),
-                    [`${TABSTRIP_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition,
+                    [`${TABSTRIP_CLASSNAME}-scrollable-${scrollingPosition}`]: scrollingPosition  && scrollingPosition !== 'both',
                 },
                 optionClassNames(TABSTRIP_CLASSNAME, {size})
             )}>
@@ -88,21 +88,69 @@ export const TabStrip = (
             <TabStripItemsWrapper orientation={orientationMap[position]}>
                 {scrollable &&
                     (scrollButtons === 'around' || scrollButtons === 'start') &&
-                    <Button fillMode="flat" rounded={null} size={size} icon={`caret-alt-${caretMap[position]["prev"]}`} className="k-tabstrip-prev"></Button>
+                    <span className={classNames(
+                        'k-tabstrip-prev',
+                        'k-button',
+                        optionClassNames('k-button', {
+                            size,
+                            fillMode: FillMode.flat,
+                            themeColor: ThemeColor.base,
+                            rounded: null
+                        }),
+                        'k-icon-button',
+                    )}>
+                        <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["prev"]}`} />
+                    </span>
                 }
                 {scrollable && scrollButtons === 'start' &&
-                    <Button fillMode="flat" rounded={null} size={size} icon={`caret-alt-${caretMap[position]["next"]}`} className="k-tabstrip-next"></Button>
+                    <span className={classNames(
+                        'k-tabstrip-next',
+                        'k-button',
+                        optionClassNames('k-button', {
+                            size,
+                            fillMode: FillMode.flat,
+                            themeColor: ThemeColor.base,
+                            rounded: null
+                        }),
+                        'k-icon-button',
+                    )}>
+                        <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
+                    </span>
                 }
                 <TabStripItems className={classNames({[`k-tabstrip-items-scroll`]: scrollable && scrollButtons === 'hidden'})}
                 tabAlignment={tabAlignmentMap[tabAlignment]}>
                     {tabStripItems}
                 </TabStripItems>
                 {scrollable && scrollButtons === 'end' &&
-                    <Button fillMode="flat" rounded={null} size={size} icon={`caret-alt-${caretMap[position]["prev"]}`} className="k-tabstrip-prev"></Button>
+                    <span className={classNames(
+                        'k-tabstrip-prev',
+                        'k-button',
+                        optionClassNames('k-button', {
+                            size,
+                            fillMode: FillMode.flat,
+                            themeColor: ThemeColor.base,
+                            rounded: null
+                        }),
+                        'k-icon-button',
+                    )}>
+                        <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["prev"]}`} />
+                    </span>
                 }
                 {scrollable &&
                     (scrollButtons === 'around' || scrollButtons === 'end') &&
-                    <Button fillMode="flat" rounded={null} size={size} icon={`caret-alt-${caretMap[position]["next"]}`} className="k-tabstrip-next"></Button>
+                    <span className={classNames(
+                        'k-tabstrip-next',
+                        'k-button',
+                        optionClassNames('k-button', {
+                            size,
+                            fillMode: FillMode.flat,
+                            themeColor: ThemeColor.base,
+                            rounded: null
+                        }),
+                        'k-icon-button',
+                    )}>
+                        <Icon className='k-button-icon' icon={`caret-alt-${caretMap[position]["next"]}`} />
+                    </span>
                 }
             </TabStripItemsWrapper>
             {position !== "bottom" && children}

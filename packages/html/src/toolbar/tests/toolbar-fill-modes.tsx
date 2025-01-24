@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { ColorPicker } from '../../colorpicker';
 import { ButtonGroup } from '../../button-group';
-import { ToolbarItem, ToolbarSeparator, ToolbarResizable, Toolbar, ToolbarScrollable } from '../../toolbar';
+import { ToolbarItem, ToolbarSeparator, ToolbarResizable, Toolbar, ToolbarScrollableButtonsHidden } from '../../toolbar';
 
 import { Combobox, MenuButton } from '../..';
 
@@ -52,7 +52,7 @@ export default () =>(
                     </section>
                     <span className="k-colspan-all k-col-span-full">{fillMode} with overlay</span>
                     <section className="k-colspan-all k-col-span-full">
-                      <ToolbarScrollable fillMode={fillMode}>
+                      <ToolbarScrollableButtonsHidden scrollingPosition="both" fillMode={fillMode}>
                           <Button icon="arrow-rotate-ccw" fillMode={fillMode}></Button>
                           <Button icon="arrow-rotate-cw" fillMode={fillMode}></Button>
                           <ToolbarSeparator></ToolbarSeparator>
@@ -88,7 +88,7 @@ export default () =>(
                           <MenuButton fillMode={fillMode} icon="align-middle" showArrow></MenuButton>
                           <ToolbarSeparator></ToolbarSeparator>
                           <Button fillMode={fillMode} icon="text-wrap"></Button>
-                      </ToolbarScrollable>
+                      </ToolbarScrollableButtonsHidden>
                     </section>
                 </>
             ))}
