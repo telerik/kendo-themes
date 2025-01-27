@@ -24,7 +24,6 @@ export type KendoMenuItemProps = {
     arrowIconName?: string;
     dir?: "rtl" | "ltr";
     children?: React.JSX.Element[];
-    popup?: React.JSX.Element;
 };
 
 export type KendoMenuItemState = { [K in (typeof states)[number]]?: boolean };
@@ -53,7 +52,6 @@ export const MenuItem = (
         iconPosition = defaultOptions.iconPosition,
         dir,
         children,
-        popup,
         ...other
     } = props;
 
@@ -109,7 +107,6 @@ export const MenuItem = (
                 {showArrow && <span className="k-menu-expand-arrow"><Icon icon={expandArrowName} /></span>}
             </span>
             {contentTemplate}
-            {popup}
         </li>
     );
 };
