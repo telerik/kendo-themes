@@ -15,6 +15,7 @@ export type KendoMenuProps = {
     scrollButtonsPosition?: "around" | "start" | "end";
     wrapperStyles?: React.CSSProperties;
     dir?: "rtl" | "ltr";
+    popup?: React.JSX.Element;
 };
 
 const defaultOptions = {
@@ -35,6 +36,7 @@ export const Menu = (
         scrollButtonsPosition = defaultOptions.scrollButtonsPosition,
         wrapperStyles,
         dir,
+        popup,
         ...other
     } = props;
 
@@ -90,6 +92,7 @@ export const Menu = (
                 </MenuScrollableWrapper>) :
                 ulMenu
             }
+            {popup}
         </>
     );
 };

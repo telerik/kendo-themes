@@ -22,14 +22,9 @@ export default () =>(
             <span>Vertical Menu with Separators</span>
 
             <section>
-                <MenuNormal>
-                    <MenuItem first text="Normal"></MenuItem>
-                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
-                    <MenuSeparator></MenuSeparator>
-                    <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"
-                    popup={
+                <MenuNormal popup={
                         <>
-                            <Popup className="k-menu-popup" positionMode="fixed">
+                            <Popup className="k-menu-popup" offset={{ left: "175px", top: "auto" }}>
                                 <MenuList>
                                     <MenuListItem first text="Disabled" disabled></MenuListItem>
                                     <MenuListItem text="Normal"></MenuListItem>
@@ -41,7 +36,11 @@ export default () =>(
                                 </MenuList>
                             </Popup>
                         </>
-                    }></MenuItem>
+                    }>
+                    <MenuItem first text="Normal"></MenuItem>
+                    <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
+                    <MenuSeparator></MenuSeparator>
+                    <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
                     <MenuItem last text="Disabled" disabled></MenuItem>
@@ -49,26 +48,25 @@ export default () =>(
             </section>
 
             <section>
-                <MenuVertical>
+                <MenuVertical popup={
+                        <>
+                            <Popup className="k-menu-popup" offset={{ left: "520px", top: "160px" }}>
+                                <MenuList>
+                                    <MenuListItem first text="Disabled" disabled></MenuListItem>
+                                    <MenuListItem text="Normal"></MenuListItem>
+                                    <MenuListItem text="Hover" hover showArrow></MenuListItem>
+                                    <MenuSeparator></MenuSeparator>
+                                    <MenuListItem text="Active" active showArrow></MenuListItem>
+                                    <MenuListItem text="Focus" focus></MenuListItem>
+                                    <MenuListItem last text="Focus & Active" active focus></MenuListItem>
+                                </MenuList>
+                            </Popup>
+                        </>
+                    }>
                     <MenuItem first text="Normal"></MenuItem>
                     <MenuItem text="Hover" hover showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuSeparator></MenuSeparator>
-                    <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"
-                        popup={
-                            <>
-                                <Popup className="k-menu-popup" positionMode="fixed">
-                                    <MenuList>
-                                        <MenuListItem first text="Disabled" disabled></MenuListItem>
-                                        <MenuListItem text="Normal"></MenuListItem>
-                                        <MenuListItem text="Hover" hover showArrow></MenuListItem>
-                                        <MenuSeparator></MenuSeparator>
-                                        <MenuListItem text="Active" active showArrow></MenuListItem>
-                                        <MenuListItem text="Focus" focus></MenuListItem>
-                                        <MenuListItem last text="Focus & Active" active focus></MenuListItem>
-                                    </MenuList>
-                                </Popup>
-                            </>
-                        }></MenuItem>
+                    <MenuItem text="Active" active showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Selected" selected showArrow arrowIconName="caret-alt-down"></MenuItem>
                     <MenuItem text="Focus" focus></MenuItem>
                     <MenuItem last text="Disabled" disabled></MenuItem>
