@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.1...v10.2.0-dev.2) (2025-01-27)
+
+
+### Bug Fixes
+
+* **colorgradient:** slider draghandle is cut off in adaptive mode ([910224a](https://github.com/telerik/kendo-themes/commit/910224a74b539d5b9f15794466568c4e53a973ac))
+* **dataviz:** chart legend font-size is incorrect ([bb15b00](https://github.com/telerik/kendo-themes/commit/bb15b00b8b07f8903049c32e9980d0c7983d8552))
+* **html:** fix toolbar and tabstrip scrollingPosition prop ([8849fa9](https://github.com/telerik/kendo-themes/commit/8849fa9ff030487e7041fbdd12d61cae6776a657))
+* **html:** replace toolbar and tabstrip scroll buttons with spans ([a5756b0](https://github.com/telerik/kendo-themes/commit/a5756b0baacf33391b02d0208b2b009954e5b74d))
+* **html:** toolbar scroll buttons should be around by default ([6917fb0](https://github.com/telerik/kendo-themes/commit/6917fb0d230818bd1ebeb276317b010c927b5db2))
+* **html:** wrong icon for expanded suggestions and settings ([2d6dde1](https://github.com/telerik/kendo-themes/commit/2d6dde1a38e50057472bffd2f484fd5649aceab4))
+* **tabstrip:** correct scrollable overlay in rtl ([7bb5f50](https://github.com/telerik/kendo-themes/commit/7bb5f503901263426b16851360ae9fdc0d6d7d72))
+* **tabstrip:** items wrapper should not shrink ([b59c5fb](https://github.com/telerik/kendo-themes/commit/b59c5fb43fe51116b16ca419786b7ab793850d5e))
+* **toolbar:** correct scrollable overlay in rtl ([0f0c298](https://github.com/telerik/kendo-themes/commit/0f0c2988f6a76323764e2b5806c40a04282ed8d5))
+
+
+
+
+
 # [10.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.0...v10.2.0-dev.1) (2025-01-20)
 
 

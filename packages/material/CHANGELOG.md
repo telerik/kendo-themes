@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.1...v10.2.0-dev.2) (2025-01-27)
+
+
+### Bug Fixes
+
+* **dataviz:** chart legend font-size is incorrect ([bb15b00](https://github.com/telerik/kendo-themes/commit/bb15b00b8b07f8903049c32e9980d0c7983d8552))
+
+
+
+
+
 # [10.2.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.0...v10.2.0-dev.1) (2025-01-20)
 
 
