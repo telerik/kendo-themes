@@ -44,12 +44,14 @@ export type KendoTextboxProps = KendoTextboxOptions & {
     placeholder?: string;
     autocomplete?: string;
     showClearButton?: boolean;
+    showValidationIcon?: boolean;
 };
 
 export type KendoTextboxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     showClearButton: true,
+    showValidationIcon: true,
     size: Input.defaultOptions.size,
     rounded: Input.defaultOptions.rounded,
     fillMode: Input.defaultOptions.fillMode,
@@ -67,6 +69,7 @@ export const Textbox = (
         fillMode = defaultOptions.fillMode,
         separators = defaultOptions.separators,
         showClearButton = defaultOptions.showClearButton,
+        showValidationIcon = defaultOptions.showValidationIcon,
         prefix,
         suffix,
         type,
@@ -107,11 +110,11 @@ export const Textbox = (
             </>
             }
             <InputInnerInput placeholder={placeholder} value={value} type={type} />
-            <InputValidationIcon
+            { showValidationIcon && <InputValidationIcon
                 valid={valid}
                 invalid={invalid}
                 loading={loading}
-                disabled={disabled} />
+                disabled={disabled} />}
             <InputLoadingIcon
                 loading={loading}
                 disabled={disabled} />
