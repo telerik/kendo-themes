@@ -55,15 +55,10 @@
 
     // Chip content
     .k-chip-content {
-        padding-block: .5em;
-        padding-inline: 0;
-        margin-block: -.5em;
-        margin-inline: 0;
         min-width: 0;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        overflow: hidden;
         flex: 1 1 auto;
 
         // Adjustment for kendo-icon-wrapper
@@ -82,6 +77,10 @@
     // Chip text
     .k-chip-text,
     .k-chip-label {
+        padding-block: .5em;
+        padding-inline: 0;
+        margin-block: -.5em;
+        margin-inline: 0;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
