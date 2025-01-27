@@ -1,5 +1,5 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
-import { Input, InputInnerInput } from '../input';
+import { Textbox } from '../textbox';
 
 export const ONETIMEPASSWORDINPUT_CLASSNAME = `k-otp-input`;
 
@@ -35,9 +35,9 @@ export type KendoOneTimePasswordInputProps = KendoOneTimePasswordInputOptions & 
 export type KendoOneTimePasswordInputState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
-    size: Input.defaultOptions.size,
-    rounded: Input.defaultOptions.rounded,
-    fillMode: Input.defaultOptions.fillMode,
+    size: Textbox.defaultOptions.size,
+    rounded: Textbox.defaultOptions.rounded,
+    fillMode: Textbox.defaultOptions.fillMode,
 };
 
 export const OneTimePasswordInput = (
@@ -64,11 +64,14 @@ export const OneTimePasswordInput = (
 
 
     return (
-        <Input
+        <Textbox
             {...other}
             size={size}
             rounded={rounded}
             fillMode={fillMode}
+            type={type}
+            value={value}
+            placeholder={placeholder}
             hover={hover}
             focus={focus}
             valid={valid}
@@ -76,12 +79,13 @@ export const OneTimePasswordInput = (
             required={required}
             disabled={disabled}
             readonly={readonly}
+            showClearButton={false}
+            showValidationIcon={false}
             className={classNames(props.className,
                 ONETIMEPASSWORDINPUT_CLASSNAME
             )}
         >
-            <InputInnerInput placeholder={placeholder} value={value} type={type} />
-        </Input>
+        </Textbox>
     );
 };
 
