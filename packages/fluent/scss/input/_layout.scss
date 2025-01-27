@@ -193,7 +193,7 @@
 
     // Icon picker
     .k-icon-picker {
-        .k-input-inner {
+        > .k-input-inner {
             padding: 0;
             box-sizing: content-box;
             justify-content: center;
@@ -548,7 +548,7 @@
                 width: if( $kendo-use-input-spinner-width, var( --kendo-input-spinner-width, #{$_button-width} ), auto );
             }
 
-            &.k-icon-picker .k-input-inner {
+            &.k-icon-picker > .k-input-inner {
                 width: var( --kendo-input-icon-picker-width, #{$_button-width} );
             }
 
