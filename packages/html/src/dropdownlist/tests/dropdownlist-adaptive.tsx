@@ -1,5 +1,6 @@
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
 import { List, ListItem } from '../../list';
+import DropdownList from '../dropdownlist.spec';
 
 
 const styles = `
@@ -24,6 +25,7 @@ export default () =>(
             <span>full screen</span>
 
             <section>
+                <DropdownList />
                 <ActionSheet adaptive={true}>
                     <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actions={[ "x" ]} filter={true} />
                     <div className="k-list-container">
@@ -45,6 +47,7 @@ export default () =>(
             </section>
 
             <section>
+                <DropdownList />
                 <ActionSheet adaptive={true} fullscreen={true}>
                     <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actions={[ "x" ]} filter={true} />
                     <div className="k-list-container">
