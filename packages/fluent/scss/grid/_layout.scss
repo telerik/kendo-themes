@@ -255,6 +255,11 @@
         }
     }
 
+    .k-grid-resizable {
+        resize: both;
+        overflow: auto;
+    }
+
     // Toolbar
     .k-grid-toolbar {
         border-width: 0 0 var( --kendo-grid-toolbar-border-width, #{$kendo-grid-toolbar-border-width} );
