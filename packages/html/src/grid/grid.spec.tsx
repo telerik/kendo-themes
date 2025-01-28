@@ -19,6 +19,7 @@ export type KendoGridProps = KendoGridOptions & {
     groupingHeader?: React.JSX.Element;
     gridSelectionAggregates?: React.JSX.Element;
     _renderAriaRoot?: boolean;
+    resizable?: boolean;
 };
 
 const defaultOptions = {
@@ -38,6 +39,7 @@ export const Grid = (
         groupingHeader,
         gridSelectionAggregates,
         _renderAriaRoot,
+        resizable,
         ...other
     } = props;
 
@@ -48,6 +50,9 @@ export const Grid = (
             className={classNames(
                 props.className,
                 GRID_CLASSNAME,
+                {
+                    [`${GRID_CLASSNAME}-resizable`]: resizable,
+                },
                 optionClassNames(GRID_CLASSNAME, { size })
             )}>
             {toolbar}
