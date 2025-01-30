@@ -200,7 +200,7 @@ export const Toolbar = (
             {!scrollable && toolbarChildren}
 
             {scrollable && scrollButtons === 'hidden' &&
-               <span className='k-toolbar-items k-toolbar-items-scroll'>{toolbarChildren}</span>
+               <div className='k-toolbar-items k-toolbar-items-scroll'>{toolbarChildren}</div>
             }
 
             {scrollable && scrollButtons === 'start' &&
