@@ -182,7 +182,7 @@
 
     // Icon picker
     .k-icon-picker {
-        .k-input-inner {
+        > .k-input-inner {
             padding: $kendo-input-padding-y;
             // TODO we need better way
             // width: $kendo-input-inner-calc-height;
@@ -531,7 +531,7 @@
                 }
             }
 
-            &.k-icon-picker .k-input-inner {
+            &.k-icon-picker > .k-input-inner {
                 width: calc( ( #{ $_line-height} * 1em ) );
                 height: calc( ( #{ $_line-height} * 1em ) );
                 padding: $_padding-y;
