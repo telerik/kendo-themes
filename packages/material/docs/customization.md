@@ -7300,8 +7300,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-color-preview-width</td>
     <td>Number</td>
-    <td><code>32px</code></td>
-    <td><code>32px</code></td>
+    <td><code>34px</code></td>
+    <td><code>34px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the ColorEditor preview.</div></div>
@@ -7310,8 +7310,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-color-preview-height</td>
     <td>Number</td>
-    <td><code>12px</code></td>
-    <td><code>12px</code></td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ColorEditor preview.</div></div>
@@ -7320,8 +7320,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-preview-gap</td>
     <td>String</td>
-    <td><code>k-spacing(1)</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the ColorEditor preview.</div></div>
@@ -7330,8 +7330,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-sm-preview-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>k-spacing(0.5)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the small ColorEditor preview.</div></div>
@@ -7341,7 +7341,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-color-editor-md-preview-gap</td>
     <td>String</td>
     <td><code>$kendo-color-editor-preview-gap</code></td>
-    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
+    <td><code>var(--kendo-spacing-0\.5, 0.125rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the medium ColorEditor preview.</div></div>
@@ -7350,8 +7350,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-lg-preview-gap</td>
     <td>String</td>
-    <td><code>k-spacing(2)</code></td>
-    <td><code>var(--kendo-spacing-2, 0.5rem)</code></td>
+    <td><code>k-spacing(1)</code></td>
+    <td><code>var(--kendo-spacing-1, 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the colors in the large ColorEditor preview.</div></div>
@@ -7370,8 +7370,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-sm-color-preview-height</td>
     <td>Number</td>
-    <td><code>12px</code></td>
-    <td><code>12px</code></td>
+    <td><code>14px</code></td>
+    <td><code>14px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorEditor preview.</div></div>
@@ -7381,7 +7381,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-color-editor-md-color-preview-width</td>
     <td>Number</td>
     <td><code>$kendo-color-editor-color-preview-width</code></td>
-    <td><code>32px</code></td>
+    <td><code>34px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium ColorEditor preview.</div></div>
@@ -7391,7 +7391,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-color-editor-md-color-preview-height</td>
     <td>Number</td>
     <td><code>$kendo-color-editor-color-preview-height</code></td>
-    <td><code>12px</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorEditor preview.</div></div>
@@ -7410,8 +7410,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-lg-color-preview-height</td>
     <td>Number</td>
-    <td><code>16px</code></td>
-    <td><code>16px</code></td>
+    <td><code>18px</code></td>
+    <td><code>18px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorEditor preview.</div></div>
@@ -7603,7 +7603,7 @@ The following table lists the available variables for customizing the Material t
         preview-height: $kendo-color-editor-lg-color-preview-height,
     )
 )</code></td>
-    <td><ul><li>sm: "min-width":"278px","header-padding-x":"var(--kendo-spacing-3, 0.75rem)","header-padding-y":"var(--kendo-spacing-3, 0.75rem)","views-padding-x":"var(--kendo-spacing-3, 0.75rem)","views-padding-y":"var(--kendo-spacing-3, 0.75rem)","preview-gap":"var(--kendo-spacing-2, 0.5rem)","preview-width":"34px","preview-height":"12px"</li><li>md: "min-width":"294px","header-padding-x":"var(--kendo-spacing-3, 0.75rem)","header-padding-y":"var(--kendo-spacing-3, 0.75rem)","views-padding-x":"var(--kendo-spacing-3, 0.75rem)","views-padding-y":"var(--kendo-spacing-3, 0.75rem)","preview-gap":"var(--kendo-spacing-1, 0.25rem)","preview-width":"32px","preview-height":"12px"</li><li>lg: "min-width":"364px","header-padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","header-padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","views-padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","views-padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","preview-gap":"var(--kendo-spacing-2, 0.5rem)","preview-width":"42px","preview-height":"16px"</li></ul></td>
+    <td><ul><li>sm: "min-width":"278px","header-padding-x":"var(--kendo-spacing-3, 0.75rem)","header-padding-y":"var(--kendo-spacing-3, 0.75rem)","views-padding-x":"var(--kendo-spacing-3, 0.75rem)","views-padding-y":"var(--kendo-spacing-3, 0.75rem)","preview-gap":"var(--kendo-spacing-0\\.5, 0.125rem)","preview-width":"34px","preview-height":"14px"</li><li>md: "min-width":"294px","header-padding-x":"var(--kendo-spacing-3, 0.75rem)","header-padding-y":"var(--kendo-spacing-3, 0.75rem)","views-padding-x":"var(--kendo-spacing-3, 0.75rem)","views-padding-y":"var(--kendo-spacing-3, 0.75rem)","preview-gap":"var(--kendo-spacing-0\\.5, 0.125rem)","preview-width":"34px","preview-height":"16px"</li><li>lg: "min-width":"364px","header-padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","header-padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","views-padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","views-padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)","preview-gap":"var(--kendo-spacing-1, 0.25rem)","preview-width":"42px","preview-height":"18px"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorEditor.</div></div>
@@ -7922,41 +7922,11 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-gradient-canvas-rectangle-height</td>
     <td>Number</td>
-    <td><code>180px</code></td>
-    <td><code>180px</code></td>
+    <td><code>100%</code></td>
+    <td><code>100%</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the ColorGradient canvas hsv rectangle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-sm-canvas-rectangle-height</td>
-    <td>Number</td>
-    <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
-    <td><code>180px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the small ColorGradient canvas hsv rectangle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-md-canvas-rectangle-height</td>
-    <td>Number</td>
-    <td><code>$kendo-color-gradient-canvas-rectangle-height</code></td>
-    <td><code>180px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the medium ColorGradient canvas hsv rectangle.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-lg-canvas-rectangle-height</td>
-    <td>Number</td>
-    <td><code>270px</code></td>
-    <td><code>270px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height the large ColorGradient canvas hsv rectangle.</div></div>
     </td>
 </tr>
 <tr>
@@ -8022,8 +7992,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-gradient-slider-vertical-size</td>
     <td>Number</td>
-    <td><code>180px</code></td>
-    <td><code>180px</code></td>
+    <td><code>100%</code></td>
+    <td><code>100%</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ColorGradient vertical slider.</div></div>
@@ -8047,36 +8017,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background image of the ColorGradient alpha slider.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-sm-slider-vertical-size</td>
-    <td>Number</td>
-    <td><code>$kendo-color-gradient-slider-vertical-size</code></td>
-    <td><code>180px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the small ColorGradient vertical slider.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-md-slider-vertical-size</td>
-    <td>Number</td>
-    <td><code>$kendo-color-gradient-slider-vertical-size</code></td>
-    <td><code>180px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the medium ColorGradient vertical slider.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-gradient-lg-slider-vertical-size</td>
-    <td>Number</td>
-    <td><code>270px</code></td>
-    <td><code>270px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the large ColorGradient vertical slider.</div></div>
     </td>
 </tr>
 <tr>
@@ -8305,8 +8245,6 @@ The following table lists the available variables for customizing the Material t
     <td><code>(
     sm: (
         width: $kendo-color-gradient-sm-width,
-        vertical-slider-height: $kendo-color-gradient-sm-slider-vertical-size,
-        rectangle-height: $kendo-color-gradient-sm-canvas-rectangle-height,
         input-width: $kendo-color-gradient-sm-input-width,
         gap: $kendo-color-gradient-sm-gap,
         canvas-gap: $kendo-color-gradient-sm-canvas-gap,
@@ -8315,8 +8253,6 @@ The following table lists the available variables for customizing the Material t
     ),
     md: (
         width: $kendo-color-gradient-md-width,
-        vertical-slider-height: $kendo-color-gradient-md-slider-vertical-size,
-        rectangle-height: $kendo-color-gradient-md-canvas-rectangle-height,
         input-width: $kendo-color-gradient-md-input-width,
         gap: $kendo-color-gradient-md-gap,
         canvas-gap: $kendo-color-gradient-md-canvas-gap,
@@ -8325,8 +8261,6 @@ The following table lists the available variables for customizing the Material t
     ),
     lg: (
         width: $kendo-color-gradient-lg-width,
-        vertical-slider-height: $kendo-color-gradient-lg-slider-vertical-size,
-        rectangle-height: $kendo-color-gradient-lg-canvas-rectangle-height,
         input-width: $kendo-color-gradient-lg-input-width,
         gap: $kendo-color-gradient-lg-gap,
         canvas-gap: $kendo-color-gradient-lg-canvas-gap,
@@ -8334,7 +8268,7 @@ The following table lists the available variables for customizing the Material t
         padding-y: $kendo-color-gradient-lg-padding-y
     )
 )</code></td>
-    <td><ul><li>sm: "width":"278px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"46px","gap":"var(--kendo-spacing-2\\.5, 0.625rem)","canvas-gap":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-3, 0.75rem)"</li><li>md: "width":"294px","vertical-slider-height":"180px","rectangle-height":"180px","input-width":"50px","gap":"var(--kendo-spacing-3, 0.75rem)","canvas-gap":"var(--kendo-spacing-3, 0.75rem)","padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-3, 0.75rem)"</li><li>lg: "width":"364px","vertical-slider-height":"270px","rectangle-height":"270px","input-width":"62px","gap":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-gap":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)"</li></ul></td>
+    <td><ul><li>sm: "width":"278px","input-width":"46px","gap":"var(--kendo-spacing-2\\.5, 0.625rem)","canvas-gap":"var(--kendo-spacing-2\\.5, 0.625rem)","padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-3, 0.75rem)"</li><li>md: "width":"294px","input-width":"50px","gap":"var(--kendo-spacing-3, 0.75rem)","canvas-gap":"var(--kendo-spacing-3, 0.75rem)","padding-x":"var(--kendo-spacing-3, 0.75rem)","padding-y":"var(--kendo-spacing-3, 0.75rem)"</li><li>lg: "width":"364px","input-width":"62px","gap":"var(--kendo-spacing-4\\.5, 1.125rem)","canvas-gap":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-x":"var(--kendo-spacing-4\\.5, 1.125rem)","padding-y":"var(--kendo-spacing-4\\.5, 1.125rem)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map of the ColorGradient.</div></div>
