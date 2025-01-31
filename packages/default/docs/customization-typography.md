@@ -837,6 +837,45 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-display</td>
+    <td>Map</td>
+    <td><code>(
+    1: (
+        font-size: $kendo-display1-font-size,
+        font-family: $kendo-display1-font-family,
+        line-height: $kendo-display1-line-height,
+        font-weight: $kendo-display1-font-weight,
+        letter-spacing: $kendo-display1-letter-spacing
+    ),
+    2: (
+        font-size: $kendo-display2-font-size,
+        font-family: $kendo-display2-font-family,
+        line-height: $kendo-display2-line-height,
+        font-weight: $kendo-display2-font-weight,
+        letter-spacing: $kendo-display2-letter-spacing
+    ),
+    3: (
+        font-size: $kendo-display3-font-size,
+        font-family: $kendo-display3-font-family,
+        line-height: $kendo-display3-line-height,
+        font-weight: $kendo-display3-font-weight,
+        letter-spacing: $kendo-display3-letter-spacing
+    ),
+    4: (
+        font-size: $kendo-display4-font-size,
+        font-family: $kendo-display4-font-family,
+        line-height: $kendo-display4-line-height,
+        font-weight: $kendo-display4-font-weight,
+        letter-spacing: $kendo-display4-letter-spacing
+    )
+)</code></td>
+    <td><ul><li>1: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 8)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":null</li><li>2: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 7)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":null</li><li>3: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 6)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":null</li><li>4: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 5)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":null</li></ul></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-font-size</td>
     <td>Number</td>
     <td><code>0.875rem</code></td>
