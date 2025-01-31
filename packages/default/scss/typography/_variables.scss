@@ -306,6 +306,7 @@ $kendo-display3-letter-spacing: null !default;
 $kendo-display4-letter-spacing: null !default;
 
 /// The displays Map.
+/// @group typography
 $kendo-display: (
     1: (
         font-size: $kendo-display1-font-size,
