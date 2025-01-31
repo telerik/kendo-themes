@@ -46,6 +46,7 @@
 
         .k-hsv-gradient {
             @include border-radius( $kendo-color-gradient-canvas-border-radius );
+            aspect-ratio: 1;
             height: $kendo-color-gradient-canvas-rectangle-height;
         }
 
@@ -133,8 +134,6 @@
     @each $size, $size-props in $kendo-color-gradient-sizes {
         $_width: map.get( $size-props, width );
         $_gap: map.get( $size-props, gap );
-        $_vertical-slider-height: map.get( $size-props, vertical-slider-height );
-        $_rectangle-height: map.get( $size-props, rectangle-height );
         $_input-width: map.get( $size-props, input-width );
         $_canvas-gap: map.get( $size-props, canvas-gap );
         $_padding-x: map.get( $size-props, padding-x );
@@ -154,14 +153,6 @@
 
             .k-colorgradient-canvas {
                 gap: $_canvas-gap;
-
-                .k-hsv-gradient {
-                    height: $_rectangle-height;
-                }
-
-                .k-slider-vertical {
-                    height: $_vertical-slider-height;
-                }
 
                 .k-hsv-controls {
                     gap: $_canvas-gap;

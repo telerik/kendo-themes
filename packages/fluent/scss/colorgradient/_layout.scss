@@ -46,6 +46,7 @@
 
         .k-hsv-gradient {
             height: var( --kendo-color-gradient-canvas-rectangle-height, #{$kendo-color-gradient-canvas-rectangle-height} );
+            aspect-ratio: 1;
         }
 
         .k-hsv-draghandle {
@@ -138,8 +139,6 @@
     @each $size, $size-props in $kendo-color-gradient-sizes {
         $_width: map.get( $size-props, width );
         $_spacing: map.get( $size-props, spacing );
-        $_vertical-slider-height: map.get( $size-props, vertical-slider-height );
-        $_rectangle-height: map.get( $size-props, rectangle-height );
         $_input-width: map.get( $size-props, input-width );
         $_canvas-spacing: map.get( $size-props, canvas-spacing );
         $_padding-x: map.get( $size-props, padding-x );
@@ -159,14 +158,6 @@
 
             .k-colorgradient-canvas {
                 gap: $_canvas-spacing;
-
-                .k-hsv-gradient {
-                    height: $_rectangle-height;
-                }
-
-                .k-slider-vertical {
-                    height: $_vertical-slider-height;
-                }
 
                 .k-hsv-controls {
                     gap: $_canvas-spacing;
