@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.2...v10.2.0-dev.3) (2025-02-03)
+
+
+### Bug Fixes
+
+* **dataviz:** revert chart label font-size ([85305da](https://github.com/telerik/kendo-themes/commit/85305daf740ba6791f4ec51842ac238c69699444))
+
+
+
+
+
 # [10.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.1...v10.2.0-dev.2) (2025-01-27)
 
 

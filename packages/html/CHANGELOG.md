@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.2...v10.2.0-dev.3) (2025-02-03)
+
+
+### Bug Fixes
+
+* **html:** menu popup should be rendered on a root level ([997173c](https://github.com/telerik/kendo-themes/commit/997173c47290a1b9345456dc458c86610b6fca8d))
+* **html:** toolbar scrollable items container should be a div ([e6f0b64](https://github.com/telerik/kendo-themes/commit/e6f0b64ce1e79057460a28586539bca9f3335dcf))
+* **html:** use textbox for otp input ([ebda767](https://github.com/telerik/kendo-themes/commit/ebda76700a4270badfb01c4bcc7f4c6d66e39420))
+
+
+### Features
+
+* **html:** add grid resizable option and test ([9961392](https://github.com/telerik/kendo-themes/commit/9961392f9c935b679f3dc1f5d7d8f99694969b52))
+
+
+
+
+
 # [10.2.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.1...v10.2.0-dev.2) (2025-01-27)
 
 
