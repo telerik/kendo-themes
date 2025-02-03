@@ -54,7 +54,6 @@
   "dependencies": {
     "@progress/kendo-svg-icons": "^4.0.0",
     "@progress/kendo-theme-core": "10.2.0-dev.3",
-    "@progress/kendo-theme-default": "10.2.0-dev.3",
     "@progress/kendo-theme-utils": "10.2.0-dev.3"
   },
   "directories": {
