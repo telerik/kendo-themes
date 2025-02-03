@@ -53,7 +53,7 @@
             }
 
             .k-input-suffix {
-                color: var( --kendo-input-prefix-disabled-text, #{$kendo-input-prefix-disabled-text} );
+                color: var( --kendo-input-suffix-disabled-text, #{$kendo-input-suffix-disabled-text} );
             }
 
             @if($kendo-enable-color-system) {
