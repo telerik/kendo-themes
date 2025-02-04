@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.3...v10.2.0) (2025-02-04)
+
+
+### Bug Fixes
+
+* **fluent:** use correct variable for input suffix disabled text ([9b51e50](https://github.com/telerik/kendo-themes/commit/9b51e500a10d5084fa11ce1512048e1470cac49b))
+
+
+
+
+
 # [10.2.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.2...v10.2.0-dev.3) (2025-02-03)
 
 
