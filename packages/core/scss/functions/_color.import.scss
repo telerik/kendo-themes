@@ -25,7 +25,10 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-red( #ff0000 ); // => 255
 @function k-color-red( $color ) {
-    @return math.round(color.channel( $color, "red" ));
+    @if meta.function-exists("channel", "color") {
+        @return math.round(color.channel( $color, "red" ));
+    }
+    @return red( $color );
 }
 
 /// Returns the green channel of a color.
@@ -35,7 +38,10 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-green( #00ff00 ); // => 255
 @function k-color-green( $color ) {
-    @return math.round(color.channel( $color, "green" ));
+    @if meta.function-exists("channel", "color") {
+        @return math.round(color.channel( $color, "green" ));
+    }
+    @return green( $color );
 }
 
 /// Returns the blue channel of a color.
@@ -45,7 +51,10 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-blue( #0000ff ); // => 255
 @function k-color-blue( $color ) {
-    @return math.round(color.channel( $color, "blue" ));
+    @if meta.function-exists("channel", "color") {
+        @return math.round(color.channel( $color, "blue" ));
+    }
+    @return blue( $color );
 }
 
 /// Returns the hue of a color.
@@ -55,7 +64,10 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-hue( #e1d7d2 ); // => 20deg
 @function k-color-hue( $color ) {
-    @return color.channel( $color, "hue" );
+    @if meta.function-exists("channel", "color") {
+        @return color.channel( $color, "hue" );
+    }
+    @return  hue( $color );
 }
 
 /// Returns the saturation of a color.
@@ -65,7 +77,10 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-saturation( #e1d7d2 ); // => 20%
 @function k-color-saturation( $color ) {
-    @return color.channel( $color, "saturation" );
+    @if meta.function-exists("channel", "color") {
+        @return color.channel( $color, "saturation" );
+    }
+    @return saturation( $color );
 }
 
 /// Returns the lightness of a color.
@@ -75,7 +90,10 @@ $kendo-dark-color-level-step: 16% !default;
 /// @example scss - Usage
 ///   @debug k-color-lightness( #e1d7d2 ); // => 80%
 @function k-color-lightness( $color ) {
-    @return color.channel( $color, "lightness" );
+    @if meta.function-exists("channel", "color") {
+        @return color.channel( $color, "lightness" );
+    }
+    @return lightness( $color );
 }
 
 /// Returns a color that is a mix of two colors.
