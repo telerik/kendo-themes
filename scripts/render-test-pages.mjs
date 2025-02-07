@@ -26,6 +26,10 @@ async function loadUrl(browser, url) {
     }, 10000, `Failed to load ${url}`, 500);
 }
 
+function trimScriptTag(content) {
+    return content.replace(/<script src=".\/app.js">.*?<\/script>/g, '');
+}
+
 const browser = new Browser();
 const server = createServer({
     root: './',
@@ -47,7 +51,7 @@ server.listen(PORT, HOST, async() => {
         fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
         await snapshotMarkup(browser.driver, 'html', outputPath, {
-            template: (output) => `<!doctype html>${output}`,
+            template: (output) => `<!doctype html>${trimScriptTag(output)}`,
             preserveAttributes: true,
             preserveCommentNodes: true,
             beautifyOptions: {
