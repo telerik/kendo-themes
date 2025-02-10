@@ -11,6 +11,10 @@
             var( --kendo-table-bg, #{$kendo-table-bg} ),
             var( --kendo-table-border, #{$kendo-table-border} )
         );
+
+        .k-table-td-row-span {
+            box-shadow: var( --kendo-table-cell-row-span-shadow, #{$kendo-table-cell-row-span-shadow} )
+        }
     }
 
     // Table header

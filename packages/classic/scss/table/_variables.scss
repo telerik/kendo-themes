@@ -157,6 +157,10 @@ $kendo-table-selected-text: null !default;
 /// @group table
 $kendo-table-selected-border: null !default;
 
+/// The box shadow of the row spanned cells.
+/// @group table
+$kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;
+
 
 @forward "@progress/kendo-theme-core/scss/components/table/_variables.scss" with (
     $kendo-table-border-width: $kendo-table-border-width,
@@ -198,5 +202,6 @@ $kendo-table-selected-border: null !default;
     $kendo-table-focus-shadow: $kendo-table-focus-shadow,
     $kendo-table-selected-bg: $kendo-table-selected-bg,
     $kendo-table-selected-text: $kendo-table-selected-text,
-    $kendo-table-selected-border: $kendo-table-selected-border
+    $kendo-table-selected-border: $kendo-table-selected-border,
+    $kendo-table-cell-row-span-shadow: $kendo-table-cell-row-span-shadow
 );
