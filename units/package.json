@@ -1,0 +1,13 @@
+{
+  "name": "units",
+  "version": "1.0.0",
+  "scripts": {
+    "test:default": "jest default",
+    "test:bootstrap": "jest bootstrap",
+    "test:material": "jest material",
+    "test:classic": "jest classic",
+    "test:fluent": "jest fluent",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  }
+}

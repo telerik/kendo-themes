@@ -17,6 +17,17 @@ jobs:
     name: Compile themes
     uses: ./.github/workflows/_compile-themes.yml
 
+  test-units:
+    name: Test units
+    uses: ./.github/workflows/_test-units.yml
+
+  ci-test-units:
+    name: Status check > Test units
+    runs-on: ubuntu-latest
+    needs: [ test-units ]
+    steps:
+      - name: Done
+        run: echo "Done!"
 
   render-test-pages:
     name: Render test pages
