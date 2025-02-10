@@ -5,6 +5,7 @@ const className = `k-table-td`;
 export type KendoTableTdProps = {
     text?: string;
     colspan?: any;
+    rowspan?: any;
 };
 
 export const TableTd = (
@@ -14,6 +15,7 @@ export const TableTd = (
     const {
         text,
         colspan,
+        rowspan,
         ...other
     } = props;
 
@@ -24,6 +26,7 @@ export const TableTd = (
     return (
         <td
             colSpan={colspan}
+            rowSpan={rowspan}
             {...other}
             className={classNames(
                 props.className,
