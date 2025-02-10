@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v10.2.0...v10.2.1-dev.0) (2025-02-10)
+
+**Note:** Version bump only for package @progress/kendo-theme-fluent
+
+
+
+
+
 # [10.2.0](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.3...v10.2.0) (2025-02-04)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.2.1-dev.0](https://github.com/telerik/kendo-themes/compare/v10.2.0...v10.2.1-dev.0) (2025-02-10)
+
+
+### Bug Fixes
+
+* **core:** color.channel functions should be backwards compatible ([b870e07](https://github.com/telerik/kendo-themes/commit/b870e07de9d15e3866edb8ff24b859aabaad05ad))
+
+
+
+
+
 # [10.2.0](https://github.com/telerik/kendo-themes/compare/v10.2.0-dev.3...v10.2.0) (2025-02-04)
 
 **Note:** Version bump only for package @progress/kendo-theme-core
