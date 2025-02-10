@@ -185,3 +185,7 @@ $kendo-table-selected-hover-text: $kendo-table-selected-text !default;
 /// Hover border color of selected rows in table.
 /// @group table
 $kendo-table-selected-hover-border: $kendo-table-selected-border !default;
+
+/// The box shadow of the row spanned cells.
+/// @group table
+$kendo-table-cell-row-span-shadow: inset 0 0 0 1px $kendo-table-border !default;

@@ -9,6 +9,10 @@
         border-color: $kendo-table-border;
         color: $kendo-table-text;
         background-color: $kendo-table-bg;
+
+        .k-table-td-row-span {
+            box-shadow: $kendo-table-cell-row-span-shadow;
+        }
     }
 
 
