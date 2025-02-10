@@ -88,6 +88,11 @@
             );
         }
 
+        .k-table-td-row-span {
+            box-shadow: $kendo-grid-cell-row-span;
+            box-shadow: var( --kendo-grid-cell-row-span, #{$kendo-grid-cell-row-span} )
+        }
+
         // Selected state
         td.k-selected,
         .k-table-row.k-selected > td,
