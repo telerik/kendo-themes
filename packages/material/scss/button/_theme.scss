@@ -12,12 +12,6 @@
         .k-button-solid-#{$name} {
             @include box-shadow( $kendo-button-shadow );
 
-            // These 3 lines can be deleted once we
-            // stop supporting the old color system.
-            color: if( $name == "base", $kendo-button-text, if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color )) );
-            background-color: if( $name == "base", $kendo-button-bg, if($kendo-enable-color-system, k-color( $name ), $color) );
-            border-color: if( $name == "base", $kendo-button-bg, if($kendo-enable-color-system, k-color( $name ), $color) );
-
             // Hover state
             &:hover,
             &.k-hover {
@@ -27,8 +21,8 @@
             // Focus state
             &:focus,
             &.k-focus {
-                background-color: if($kendo-enable-color-system, k-color( #{$name}-hover ), null);
-                border-color: if($kendo-enable-color-system, k-color( #{$name}-hover ), null);
+                background-color: k-color( #{$name}-hover );
+                border-color: k-color( #{$name}-hover );
                 @include box-shadow( $kendo-button-focus-shadow );
             }
 
@@ -55,14 +49,7 @@
     // Outline button
     @each $name, $color in $kendo-button-theme-colors {
         .k-button-outline-#{$name} {
-
-            // The "base" case can be deleted once we
-            // stop supporting the old color system.
-            @if $name == "base" {
-                color: if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-button-text)
-            } @else {
-                color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color)
-            }
+            color: k-color(#{$name}-on-surface);
 
             &:hover,
             &.k-hover,
@@ -71,13 +58,7 @@
             &:active,
             &.k-active,
             &.k-selected {
-                // The "base" case can be deleted once we
-                // stop supporting the old color system.
-                @if $name == "base" {
-                    color: if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-button-text)
-                } @else {
-                    color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color)
-                }
+                color: k-color(#{$name}-on-surface);
             }
 
             // Disabled state

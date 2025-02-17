@@ -1,5 +1,4 @@
 // Options
-$kendo-enable-color-system: true !default;
 $kendo-is-dark-theme: false !default;
 $kendo-enable-shadows: true !default;
 $kendo-enable-rounded: true !default;
@@ -14,3 +13,10 @@ $kendo-enable-typography: false !default;
 $equilateral-index: 1.7320508076 !default;
 $equilateral-height: 0.8660254038 !default;
 // stylelint-enable number-max-precision
+$kendo-disabled-styling: (
+    bg: null,
+    color: null,
+    border: null,
+    opacity: .6,
+    filter: grayscale(.1)
+) !default;

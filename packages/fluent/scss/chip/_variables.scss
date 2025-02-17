@@ -25,19 +25,19 @@ $kendo-chip-avatar-height: 1em !default;
 $kendo-chip-avatar-flex-basis: 1em !default;
 /// The text color of the disabled Chip.
 /// @group chip
-$kendo-chip-disabled-text: var( --kendo-disabled-text, inherit ) !default;
+$kendo-chip-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
 /// The background color of the solid disabled Chip.
 /// @group chip
-$kendo-chip-solid-disabled-bg: var( --kendo-disabled-bg, transparent ) !default;
+$kendo-chip-solid-disabled-bg: k-color( base-subtle ) !default;
 /// The border color of the solid disabled Chip.
 /// @group chip
-$kendo-chip-solid-disabled-border: var( --kendo-disabled-border, inherit ) !default;
+$kendo-chip-solid-disabled-border: transparent !default;
 /// The background color of the outline disabled Chip.
 /// @group chip
-$kendo-chip-outline-disabled-bg: var( $kendo-component-bg, transparent ) !default;
+$kendo-chip-outline-disabled-bg: var( k-color( surface-alt ), transparent ) !default;
 /// The border color of the outline disabled Chip.
 /// @group chip
-$kendo-chip-outline-disabled-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 )) !default;
+$kendo-chip-outline-disabled-border: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
 
 /// The offset of the outline focused Chip.
 /// @group chip
@@ -125,66 +125,66 @@ $kendo-chip-brand-colors: ( error, success, info ) !default;
 // The color matrix for the base Chip
 $_tc-base-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-subtle), (20, 160, 20)),
-        hover: if($kendo-enable-color-system, (color-subtle-hover, color-on-subtle, color-subtle-hover), (30, 190, 30)),
-        focus: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-on-subtle), (20, 160, 130)),
-        focus-hover: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-on-subtle), (20, 190, 130)),
-        selected: if($kendo-enable-color-system, (k-color( primary ), k-color( on-primary ), k-color( primary )), (k-get-theme-color-var( primary-100 ), $kendo-color-white, k-get-theme-color-var( primary-100 ))),
-        selected-hover: if($kendo-enable-color-system, (k-color( primary ), k-color( on-primary ), k-color( primary )), (k-get-theme-color-var( primary-100 ), $kendo-color-white, k-get-theme-color-var( primary-100 ))),
-        disabled: if($kendo-enable-color-system, (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent), (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit )))
+        normal: (color-subtle, color-on-subtle, color-subtle),
+        hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
+        focus: (color-subtle, color-on-subtle, color-on-subtle),
+        focus-hover: (color-subtle, color-on-subtle, color-on-subtle),
+        selected: (k-color( primary ), k-color( on-primary ), k-color( primary )),
+        selected-hover: (k-color( primary ), k-color( on-primary ), k-color( primary )),
+        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 160, currentColor)),
-        hover: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface), (190, $kendo-color-white, 190)),
-        focus: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor, inherit), (transparent, 160, currentColor, inherit)),
-        focus-hover: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface, inherit), (190, $kendo-color-white, 190, inherit)),
-        selected: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface), (190, $kendo-color-white, 190)),
-        selected-hover: if($kendo-enable-color-system, (color-subtle, color-on-surface, color-on-subtle), (20, 190, 110)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)), (initial, var( --kendo-disabled-text, inherit ), 90))
+        normal: (transparent, color-on-surface, currentColor),
+        hover: (color-on-surface, app-surface, color-on-surface),
+        focus: (transparent, color-on-surface, currentColor, inherit),
+        focus-hover: (color-on-surface, app-surface, color-on-surface, inherit),
+        selected: (color-on-surface, app-surface, color-on-surface),
+        selected-hover: (color-subtle, color-on-surface, color-on-subtle),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
     ),
 ) !default;
 
 // The color matrix for the error, success and info Chips
 $_tc-brand-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-subtle), (20, 160, 20)),
-        hover: if($kendo-enable-color-system, (color-subtle-hover, color-on-subtle, color-subtle-hover), (30, 190, 30)),
-        focus: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-on-subtle), (20, 160, 160)),
-        focus-hover: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-on-subtle), (20, 190, 160)),
-        selected: if($kendo-enable-color-system, (color-subtle-active, color-on-subtle, color-subtle-active), (40, 190, 40)),
-        selected-hover: if($kendo-enable-color-system, (color-subtle-hover, color-on-subtle, color-subtle-hover), (30, 190, 30)),
-        disabled: if($kendo-enable-color-system, (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent), (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit )))
+        normal: (color-subtle, color-on-subtle, color-subtle),
+        hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
+        focus: (color-subtle, color-on-subtle, color-on-subtle),
+        focus-hover: (color-subtle, color-on-subtle, color-on-subtle),
+        selected: (color-subtle-active, color-on-subtle, color-subtle-active),
+        selected-hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
+        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 160, currentColor)),
-        hover: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface), (190, $kendo-color-white, 190)),
-        focus: if($kendo-enable-color-system, (transparent, color-on-surface, color-on-surface, inherit), (transparent, 160, 160, inherit)),
-        focus-hover: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface, inherit), (190, $kendo-color-white, 190, inherit)),
-        selected: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface), (190, $kendo-color-white, 190)),
-        selected-hover: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface), (190, $kendo-color-white, 190)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)), (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit )))
+        normal: (transparent, color-on-surface, currentColor),
+        hover: (color-on-surface, app-surface, color-on-surface),
+        focus: (transparent, color-on-surface, color-on-surface, inherit),
+        focus-hover: (color-on-surface, app-surface, color-on-surface, inherit),
+        selected: (color-on-surface, app-surface, color-on-surface),
+        selected-hover: (color-on-surface, app-surface, color-on-surface),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
     )
 ) !default;
 
 // The color matrix for the warning Chips
 $_tc-warning-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-subtle), (20, k-get-theme-color-var( grey-160 ), 20)),
-        hover: if($kendo-enable-color-system, (color-subtle-hover, color-on-subtle, color-subtle-hover), (30, k-get-theme-color-var( grey-190 ), 30)),
-        focus: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-on-subtle), (20, k-get-theme-color-var( grey-160 ), 160)),
-        focus-hover: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-on-subtle), (20, k-get-theme-color-var( grey-190 ), 160)),
-        selected: if($kendo-enable-color-system, (color-subtle-active, color-on-subtle, color-subtle-active), (40, k-get-theme-color-var( grey-190 ), 40)),
-        selected-hover: if($kendo-enable-color-system, (color-subtle-hover, color-on-subtle, color-subtle-hover), (30, k-get-theme-color-var( grey-190 ), 30)),
-        disabled: if($kendo-enable-color-system, (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent), (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit )))
+        normal: (color-subtle, color-on-subtle, color-subtle),
+        hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
+        focus: (color-subtle, color-on-subtle, color-on-subtle),
+        focus-hover: (color-subtle, color-on-subtle, color-on-subtle),
+        selected: (color-subtle-active, color-on-subtle, color-subtle-active),
+        selected-hover: (color-subtle-hover, color-on-subtle, color-subtle-hover),
+        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 160, currentColor)),
-        hover: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface), (190, $kendo-color-white, 190)),
-        focus: if($kendo-enable-color-system, (transparent, color-on-surface, color-on-surface, inherit), (transparent, 160, 160, inherit)),
-        focus-hover: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface, inherit), (190, $kendo-color-white, 190, inherit)),
-        selected: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface), (190, $kendo-color-white, 190)),
-        selected-hover: if($kendo-enable-color-system, (color-on-surface, app-surface, color-on-surface), (190, $kendo-color-white, 190)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)), (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit )))
+        normal: (transparent, color-on-surface, currentColor),
+        hover: (color-on-surface, app-surface, color-on-surface),
+        focus: (transparent, color-on-surface, color-on-surface, inherit),
+        focus-hover: (color-on-surface, app-surface, color-on-surface, inherit),
+        selected: (color-on-surface, app-surface, color-on-surface),
+        selected-hover: (color-on-surface, app-surface, color-on-surface),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
     )
 ) !default;
 
@@ -195,7 +195,7 @@ $kendo-chip-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-base-matrix {
     $kendo-chip-theme-colors: map.deep-merge(
         $kendo-chip-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, base, if($kendo-enable-color-system, base, neutral), $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, base, base, $ui-states )
     );
 }
 

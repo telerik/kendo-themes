@@ -7,11 +7,11 @@
     @include kendo-bottom-navigation--theme-base();
 
     // Flat
-    @each $name, $color in $kendo-theme-colors {
+    @each $name, $color in $kendo-bottom-navigation-theme-colors {
         .k-bottom-nav-flat-#{$name} {
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), rgba($kendo-bottom-nav-flat-text, .05)) );
+                @include fill( $bg: color-mix(in srgb, k-color( on-app-surface ) 6%, transparent));
             }
         }
     }

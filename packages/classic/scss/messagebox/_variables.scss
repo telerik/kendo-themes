@@ -16,6 +16,19 @@ $kendo-message-box-border-level: -9 !default;
 $kendo-message-box-link-font-style: italic !default;
 $kendo-message-box-link-text-decoration: underline !default;
 
+$kendo-message-box-theme-colors: (
+    "primary": k-color( primary ),
+     "secondary": k-color( secondary ),
+     "tertiary": k-color( tertiary ),
+     "info": k-color( info ),
+     "success": k-color( success ),
+     "warning": k-color( warning ),
+     "error": k-color( error ),
+     "dark": k-color( dark ),
+     "light": k-color( light ),
+     "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+) !default;
+
 
 @forward "@progress/kendo-theme-core/scss/components/messagebox/_variables.scss" with (
     $kendo-message-box-margin: $kendo-message-box-margin,
@@ -28,5 +41,6 @@ $kendo-message-box-link-text-decoration: underline !default;
     $kendo-message-box-text-level: $kendo-message-box-text-level,
     $kendo-message-box-border-level: $kendo-message-box-border-level,
     $kendo-message-box-link-font-style: $kendo-message-box-link-font-style,
-    $kendo-message-box-link-text-decoration: $kendo-message-box-link-text-decoration
+    $kendo-message-box-link-text-decoration: $kendo-message-box-link-text-decoration,
+    $kendo-message-box-theme-colors: $kendo-message-box-theme-colors
 );

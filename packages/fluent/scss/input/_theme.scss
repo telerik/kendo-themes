@@ -56,11 +56,9 @@
                 color: var( --kendo-input-suffix-disabled-text, #{$kendo-input-suffix-disabled-text} );
             }
 
-            @if($kendo-enable-color-system) {
-                .k-input-button {
-                    color: inherit;
-                    background: none;
-                }
+            .k-input-button {
+                color: inherit;
+                background: none;
             }
         }
 

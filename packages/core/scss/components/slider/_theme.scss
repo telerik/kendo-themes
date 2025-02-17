@@ -1,4 +1,4 @@
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "../../mixins/index.import.scss" as *;
 @use "../../border-radii/index.import.scss" as *;
 @use "./variables.scss" as *;
@@ -8,7 +8,7 @@
     // Slider
     .k-slider {
         // TODO: extract variables
-        color: $kendo-component-text;
+        color: k-color( on-app-surface );
 
         .k-slider-track,
         .k-slider-selection {

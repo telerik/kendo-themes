@@ -22,7 +22,7 @@ $kendo-menu-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-menu-bg: transparent !default;
 /// The text color of the Menu.
 /// @group menu
-$kendo-menu-text: var( --kendo-body-text, inherit ) !default;
+$kendo-menu-text: k-color( on-app-surface ) !default;
 /// The border color of the Menu.
 /// @group menu
 $kendo-menu-border: initial !default;
@@ -60,17 +60,17 @@ $kendo-menu-item-bg: transparent !default;
 
 /// The text color of hovered Menu item.
 /// @group menu
-$kendo-menu-item-hover-text: var( --kendo-hover-text, inherit ) !default;
+$kendo-menu-item-hover-text: k-color( on-base ) !default;
 /// The background color of hovered Menu item.
 /// @group menu
-$kendo-menu-item-hover-bg: var( --kendo-hover-bg, initial ) !default;
+$kendo-menu-item-hover-bg: k-color( base-hover ) !default;
 
 /// The text color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-text: $kendo-menu-item-hover-text !default;
 /// The background color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-bg: var( --kendo-selected-bg, initial ) !default;
+$kendo-menu-item-active-bg: k-color( base-active ) !default;
 
 /// The text color of focused Menu item.
 /// @group menu
@@ -81,14 +81,14 @@ $kendo-menu-item-focus-bg: $kendo-menu-item-bg !default;
 
 /// The outline of focused Menu item.
 /// @group menu
-$kendo-menu-item-focus-outline: var( --kendo-focus-outline, none ) !default;
+$kendo-menu-item-focus-outline: k-color( base-emphasis ) !default;
 $kendo-menu-item-focus-outline-offset: calc( #{k-spacing(0.5)} * -1 ) !default;
 $kendo-menu-item-focus-outline-width: 1px !default;
 $kendo-menu-item-focus-outline-style: solid !default;
 
 /// The text color of disabled Menu item.
 /// @group menu
-$kendo-menu-item-disabled-text: var( --kendo-disabled-text, initial ) !default;
+$kendo-menu-item-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
 /// The background color of disabled Menu item.
 /// @group menu
 $kendo-menu-item-disabled-bg: $kendo-menu-item-bg !default;
@@ -146,7 +146,7 @@ $kendo-menu-popup-lg-line-height: $kendo-menu-popup-line-height !default;
 
 /// The background color of the Menu popup.
 /// @group menu
-$kendo-menu-popup-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-menu-popup-bg: k-color( surface-alt ) !default;
 /// The border color of the Menu popup.
 /// @group menu
 $kendo-menu-popup-border: initial !default;
@@ -246,7 +246,7 @@ $kendo-menu-popup-item-focus-text: $kendo-menu-item-text !default;
 $kendo-menu-popup-item-focus-bg: $kendo-menu-item-bg !default;
 /// The outline of focused Menu items.
 /// @group menu
-$kendo-menu-popup-item-focus-outline: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
+$kendo-menu-popup-item-focus-outline: k-color( base-emphasis ) !default;
 
 /// The text color of active Menu item in popup.
 /// @group menu
@@ -264,10 +264,10 @@ $kendo-menu-popup-item-disabled-bg: $kendo-list-item-disabled-bg !default;
 
 /// The background color of Menu scroll buttons.
 /// @group menu
-$kendo-menu-scroll-button-bg: var( --kendo-component-bg, $kendo-component-bg ) !default;
+$kendo-menu-scroll-button-bg: k-color( surface-alt ) !default;
 /// The border color of Menu scroll buttons.
 /// @group menu
-$kendo-menu-scroll-button-border: var( --kendo-component-border, $kendo-component-border ) !default;
+$kendo-menu-scroll-button-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 
 /// The background color of hover Menu scroll buttons.
 /// @group menu
@@ -278,4 +278,4 @@ $kendo-menu-scroll-button-hover-border: null !default;
 
 /// The color of the Menu items icon.
 /// @group menu
-$kendo-menu-icon-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+$kendo-menu-icon-color: k-color( primary ) !default;

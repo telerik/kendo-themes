@@ -12,8 +12,8 @@
     .k-actions {
 
         .k-button-solid-base {
-            background-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
-            border-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
+            background-color: k-color( base-subtle );
+            border-color: k-color( base-subtle );
         }
 
     }

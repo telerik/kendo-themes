@@ -19,13 +19,9 @@
 @use "./motion/_index.scss" as *;
 
 @forward "@progress/kendo-theme-core/scss/index.scss" with (
-    $kendo-enable-color-system: $kendo-enable-color-system !default,
-    $kendo-nested-disabled: false !default,
     // Color System
     $_default-colors: $kendo-colors,
     $kendo-colors: $kendo-colors !default,
-    // Legacy Color System
-    $kendo-palettes: $kendo-palettes !default,
     // Elevation
     $_default-elevation: $kendo-elevation,
     $kendo-elevation: $kendo-elevation !default,
@@ -48,6 +44,13 @@
     $_default-border-radii: $kendo-border-radii,
     $kendo-border-radii: $kendo-border-radii !default,
     $kendo-transition: $kendo-transition !default,
+
+    $kendo-disabled-styling: (
+        bg: k-color( base-subtle ),
+        color: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent),
+        border: transparent,
+        opacity: null,
+        filter: null
+    ) !default,
 );
 
-@forward "./color-system/_swatch-legacy.scss";

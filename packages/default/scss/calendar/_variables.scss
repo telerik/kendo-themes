@@ -22,13 +22,13 @@ $kendo-calendar-cell-size: 32px !default;
 
 /// The background color of the Calendar.
 /// @group calendar
-$kendo-calendar-bg: $kendo-component-bg !default;
+$kendo-calendar-bg: k-color( surface-alt ) !default;
 /// The text color of the Calendar.
 /// @group calendar
-$kendo-calendar-text: $kendo-component-text !default;
+$kendo-calendar-text: k-color( on-app-surface ) !default;
 /// The border color of the Calendar.
 /// @group calendar
-$kendo-calendar-border: $kendo-component-border !default;
+$kendo-calendar-border: k-color( border ) !default;
 
 /// The horizontal padding of the header in the Calendar.
 /// @group calendar
@@ -43,16 +43,16 @@ $kendo-calendar-header-border-width: 1px !default;
 
 /// The background color of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-bg: $kendo-component-header-bg !default;
+$kendo-calendar-header-bg: k-color( surface )!default;
 /// The text color of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-text: $kendo-component-header-text !default;
+$kendo-calendar-header-text: k-color( on-app-surface ) !default;
 /// The border color of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-border: $kendo-component-header-border !default;
+$kendo-calendar-header-border: k-color( border ) !default;
 /// The gradient of the header in the Calendar.
 /// @group calendar
-$kendo-calendar-header-gradient: $kendo-component-header-gradient !default;
+$kendo-calendar-header-gradient: null !default;
 // TODO: variable is used, but the selector using it is not! Potentially remove;
 /// The shadow of the header in the Calendar.
 /// @group calendar
@@ -108,7 +108,7 @@ $kendo-calendar-header-cell-line-height: 2 !default;
 $kendo-calendar-header-cell-bg: null !default;
 /// The text color of the header cells in the Calendar.
 /// @group calendar
-$kendo-calendar-header-cell-text: $kendo-subtle-text !default;
+$kendo-calendar-header-cell-text: k-color( subtle ) !default;
 /// The opacity of the header cells in the Calendar.
 /// @group calendar
 $kendo-calendar-header-cell-opacity: null !default;
@@ -159,7 +159,7 @@ $kendo-calendar-weekend-text: null !default;
 $kendo-calendar-today-style: color !default;
 /// The color of the current day in the Calendar.
 /// @group calendar
-$kendo-calendar-today-color: $kendo-color-primary !default;
+$kendo-calendar-today-color: k-color( primary ) !default;
 
 /// The background color of the week number cells in the Calendar.
 /// @group calendar
@@ -190,36 +190,36 @@ $kendo-calendar-cell-gradient: null !default;
 
 /// The background color of the hovered cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: $kendo-hover-bg !default;
+$kendo-calendar-cell-hover-bg: k-color( base-hover ) !default;
 /// The text color of the hovered cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-hover-text: $kendo-hover-text !default;
+$kendo-calendar-cell-hover-text: k-color( on-app-surface ) !default;
 /// The border color of the hovered cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-hover-border: $kendo-hover-border !default;
+$kendo-calendar-cell-hover-border: k-color( border ) !default;
 /// The gradient of the hovered cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-hover-gradient: null !default;
 
 /// The background color of the selected cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-selected-bg: $kendo-selected-bg !default;
+$kendo-calendar-cell-selected-bg: k-color( primary ) !default;
 /// The text color of the selected cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-selected-text: $kendo-selected-text !default;
+$kendo-calendar-cell-selected-text: k-color( on-primary ) !default;
 /// The border color of the selected cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-selected-border: $kendo-selected-border !default;
+$kendo-calendar-cell-selected-border: k-color( border ) !default;
 /// The gradient of the selected cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-selected-gradient: null !default;
 
 /// The background color of the selected and hovered cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-bg: $kendo-selected-hover-bg !default;
+$kendo-calendar-cell-selected-hover-bg: k-color( primary-hover ) !default;
 /// The text color of the selected and hovered cells in the Calendar.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-text: $kendo-selected-hover-text !default;
+$kendo-calendar-cell-selected-hover-text: k-color( on-primary ) !default;
 /// The border color of the selected and hovered cells in the Calendar.
 /// @group calendar
 $kendo-calendar-cell-selected-hover-border: null !default;
@@ -254,7 +254,7 @@ $kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
 
 /// The text color of the hovered items in the Calendar navigation.
 /// @group calendar
-$kendo-calendar-navigation-hover-text: $kendo-link-hover-text !default;
+$kendo-calendar-navigation-hover-text: k-color( primary-hover ) !default;
 
 /// The horizontal padding of the header in the Infinite Calendar.
 /// @group calendar

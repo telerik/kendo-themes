@@ -1,3 +1,5 @@
+@use "../color-system/_functions.import.scss" as *;
+
 @mixin kendo-core--styles--selection() {
 
     // Marquee
@@ -16,9 +18,9 @@
     }
 
     .k-marquee-color {
-        color: var( --kendo-marquee-text, unset );
-        background-color: var( --kendo-marquee-bg, unset );
-        border-color: var( --kendo-marquee-border, unset );
+        color: k-color( on-primary );
+        background-color: k-color( primary );
+        border-color: k-color( border );
         opacity: .6;
     }
     .k-marquee-text {
@@ -28,7 +30,7 @@
     // Text selection
     .k-text-selection {
         ::selection {
-            background-color: var( --kendo-text-selection-bg, unset );
+            background-color: k-color( primary );
             color: var( --kendo-marquee-text, unset );
         }
     }

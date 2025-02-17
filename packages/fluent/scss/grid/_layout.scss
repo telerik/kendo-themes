@@ -1325,7 +1325,7 @@
     .k-columnmenu-item-wrapper + .k-columnmenu-item-wrapper,
     .k-column-menu-footer {
         border-top: 1px solid;
-        border-top-color: var( --kendo-component-border, inherit );
+        border-top-color: color-mix(in srgb, k-color( border ) 16%, transparent);
     }
 
     .k-columnmenu-item-content {

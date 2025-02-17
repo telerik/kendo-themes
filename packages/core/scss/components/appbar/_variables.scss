@@ -1,3 +1,5 @@
+@use "../../color-system/_swatch.scss" as *;
+
 // AppBar
 
 $kendo-appbar-margin-x: null !default;
@@ -20,3 +22,5 @@ $kendo-appbar-dark-text: null !default;
 
 $kendo-appbar-box-shadow: null !default;
 $kendo-appbar-bottom-box-shadow: null !default;
+
+$kendo-appbar-theme-colors: null !default;

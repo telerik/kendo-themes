@@ -34,13 +34,13 @@ $kendo-card-deck-gap: k-spacing(4) !default;
 
 /// The background color of the Card.
 /// @group card
-$kendo-card-bg: $kendo-component-bg !default;
+$kendo-card-bg: k-color( surface-alt ) !default;
 /// The text color of the Card.
 /// @group card
-$kendo-card-text: $kendo-component-text !default;
+$kendo-card-text: k-color( on-app-surface ) !default;
 /// The border color of the Card.
 /// @group card
-$kendo-card-border: $kendo-component-border !default;
+$kendo-card-border: k-color( border ) !default;
 /// The shadow of the Card.
 /// @group card
 $kendo-card-shadow: k-elevation(1) !default;
@@ -75,10 +75,10 @@ $kendo-card-header-border-width: 1px !default;
 $kendo-card-header-bg: null !default;
 /// The text color of the Card header.
 /// @group card
-$kendo-card-header-text: $kendo-component-header-text !default;
+$kendo-card-header-text: k-color( on-app-surface ) !default;
 /// The border color of the Card header.
 /// @group card
-$kendo-card-header-border: $kendo-component-header-border !default;
+$kendo-card-header-border: k-color( border ) !default;
 
 /// The horizontal padding of the Card body.
 /// @group card
@@ -101,10 +101,10 @@ $kendo-card-footer-border-width: 1px !default;
 $kendo-card-footer-bg: null !default;
 /// The text color of the Card footer.
 /// @group card
-$kendo-card-footer-text: $kendo-component-header-text !default;
+$kendo-card-footer-text: k-color( on-app-surface ) !default;
 /// The border color of the Card footer.
 /// @group card
-$kendo-card-footer-border: $kendo-component-header-border !default;
+$kendo-card-footer-border: k-color( border ) !default;
 
 /// The bottom margin of the Card title.
 /// @group card
@@ -145,7 +145,7 @@ $kendo-card-subtitle-font-weight: var( --kendo-font-weight-normal, normal ) !def
 $kendo-card-subtitle-letter-spacing: null !default;
 /// The text color of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-text: $kendo-subtle-text !default;
+$kendo-card-subtitle-text: k-color( subtle ) !default;
 
 /// The maximum width of the Card image.
 /// @group card
@@ -183,6 +183,20 @@ $kendo-card-callout-width: 20px !default;
 /// The height of the Card callout.
 /// @group card
 $kendo-card-callout-height: 20px !default;
+
+$kendo-card-theme-colors: (
+    "primary": k-color( primary ),
+    "secondary": k-color( secondary ),
+    "tertiary": k-color( tertiary ),
+    "info": k-color( info ),
+    "success": k-color( success ),
+    "warning": k-color( warning ),
+    "error": k-color( error ),
+    "dark": k-color( dark ),
+    "light": k-color( light ),
+    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+) !default;
+
 
 
 @forward "@progress/kendo-theme-core/scss/components/card/_variables.scss" with (
@@ -240,5 +254,6 @@ $kendo-card-callout-height: 20px !default;
     $kendo-card-deck-scroll-button-radius: $kendo-card-deck-scroll-button-radius,
     $kendo-card-deck-scroll-button-offset: $kendo-card-deck-scroll-button-offset,
     $kendo-card-callout-width: $kendo-card-callout-width,
-    $kendo-card-callout-height: $kendo-card-callout-height
+    $kendo-card-callout-height: $kendo-card-callout-height,
+    $kendo-card-theme-colors: $kendo-card-theme-colors
 );

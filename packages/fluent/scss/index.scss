@@ -293,9 +293,6 @@
     // Core
     @include core-styles();
 
-    // Color system css variables
-    @include color-system-styles();
-
     @include kendo-elevation--styles-legacy();
 
     // Typography

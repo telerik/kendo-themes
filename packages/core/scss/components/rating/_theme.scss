@@ -1,10 +1,10 @@
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-rating--theme-base() {
 
     .k-rating {
-        color: $kendo-component-text;
+        color: k-color( on-app-surface );
 
         &:focus,
         &.k-focus {

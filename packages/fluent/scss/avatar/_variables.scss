@@ -30,44 +30,44 @@ $kendo-avatar-brand-colors: (
     error: error,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
  ) !default;
 
 // Matrices with Avatar theme colors in the order: bg, color, border
 $_tc-avatar-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))
+        normal: (color, on-color, color)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (on-color, color, color), ($kendo-color-white, 100, 100))
+        normal: (on-color, color, color)
     )
 ) !default;
 
 $_tc-avatar-warning-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (100, k-get-theme-color-var( neutral-160 ), 100))
+        normal: (color, on-color, color)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (app-surface, color, color), ($kendo-color-white, 100, 100))
+        normal: (app-surface, color, color)
     )
 ) !default;
 
 $_tc-avatar-dark-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))
+        normal: (color, on-color, color)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (on-color, color, color), ($kendo-color-white, 160, 160))
+        normal: (on-color, color, color)
     )
 ) !default;
 
 $_tc-avatar-light-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (50, $kendo-color-white, 50))
+        normal: (color, on-color, color)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (app-surface, color, color), ($kendo-color-white, 50, 50))
+        normal: (app-surface, color, color)
     )
 ) !default;
 
@@ -94,13 +94,13 @@ $kendo-avatar-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-avatar-dark-matrix {
     $kendo-avatar-theme-colors: map.deep-merge(
         $kendo-avatar-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, dark, dark, $ui-states )
     );
 }
 
 @each $fill-mode, $ui-states in $_tc-avatar-light-matrix {
     $kendo-avatar-theme-colors: map.deep-merge(
         $kendo-avatar-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, light, if($kendo-enable-color-system, light, neutral), $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, light, light, $ui-states )
     );
 }

@@ -1,6 +1,6 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
@@ -214,8 +214,8 @@
                 @include focus-indicator( inset 0 0 0 2px rgba( $kendo-color-black, .1 ), true );
             }
             &.k-active {
-                color: $kendo-selected-text;
-                background-color: $kendo-selected-bg;
+                color: k-color( on-primary );
+                background-color: k-color( primary );
             }
         }
 
@@ -285,15 +285,12 @@
         &.k-table-row.k-selected .k-table-td.k-grid-row-sticky,
         &.k-table-row td.k-grid-content-sticky.k-selected,
         &.k-table-row .k-table-td.k-grid-content-sticky.k-selected {
-            @if($kendo-enable-color-system) {
-                @include fill( $bg: $kendo-grid-sticky-bg );
+            @include fill( $bg: $kendo-grid-sticky-bg );
 
-                &::before {
-                    @include fill( $bg: $kendo-grid-sticky-selected-bg );
-                }
-            } @else {
+            &::before {
                 @include fill( $bg: $kendo-grid-sticky-selected-bg );
             }
+
         }
 
         &.k-selected.k-table-alt-row td.k-grid-content-sticky,
@@ -301,13 +298,9 @@
         &.k-selected.k-table-alt-row .k-table-td.k-grid-row-sticky,
         &.k-table-alt-row td.k-grid-content-sticky.k-selected,
         &.k-table-alt-row .k-table-td.k-grid-content-sticky.k-selected {
-            @if($kendo-enable-color-system) {
-                @include fill( $bg: $kendo-grid-sticky-alt-bg );
+            @include fill( $bg: $kendo-grid-sticky-alt-bg );
 
-                &::before {
-                    @include fill( $bg: $kendo-grid-sticky-selected-alt-bg );
-                }
-            } @else {
+            &::before {
                 @include fill( $bg: $kendo-grid-sticky-selected-alt-bg );
             }
         }
@@ -335,13 +328,9 @@
         &.k-hover td.k-grid-content-sticky.k-selected,
         &:hover .k-table-td.k-grid-content-sticky.k-selected,
         &.k-hover .k-table-td.k-grid-content-sticky.k-selected {
-            @if($kendo-enable-color-system) {
-                background-color: $kendo-grid-sticky-hover-bg;
+            background-color: $kendo-grid-sticky-hover-bg;
 
-                &::before {
-                    background-color: $kendo-grid-sticky-selected-hover-bg;
-                }
-            } @else {
+            &::before {
                 background-color: $kendo-grid-sticky-selected-hover-bg;
             }
         }

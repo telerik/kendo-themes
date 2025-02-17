@@ -107,36 +107,45 @@ $kendo-button-sizes: (
 
 /// The theme colors map for the Button.
 /// @group button
-$kendo-button-theme-colors: map.merge(
-    $kendo-theme-colors,
-    ( "base": $kendo-base-bg )
+$kendo-button-theme-colors: (
+    "base": k-color( base ),
+    "primary": k-color( primary ),
+    "secondary": k-color( secondary ),
+    "tertiary": k-color( tertiary ),
+    "info": k-color( info ),
+    "success": k-color( success ),
+    "warning": k-color( warning ),
+    "error": k-color( error ),
+    "dark": k-color( dark ),
+    "light": k-color( light ),
+    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark ))
 ) !default;
 
 /// The base background of the Button.
 /// @group button
-$kendo-button-bg: if($kendo-enable-color-system, k-color( base ), $kendo-base-bg) !default;
+$kendo-button-bg: k-color( base ) !default;
 /// The base text color of the Button.
 /// @group button
-$kendo-button-text: if($kendo-enable-color-system, k-color( on-base ), $kendo-base-text) !default;
+$kendo-button-text: k-color( on-base ) !default;
 /// The base border color of the Button.
 /// @group button
-$kendo-button-border: if($kendo-enable-color-system, k-color( border ), k-try-shade( $kendo-button-bg, 2 )) !default;
+$kendo-button-border: k-color( border ) !default;
 /// The base background gradient of the Button.
 /// @group button
-$kendo-button-gradient: $kendo-base-gradient !default;
+$kendo-button-gradient: null !default;
 /// The base shadow of the Button.
 /// @group button
 $kendo-button-shadow: null !default;
 
 /// The base background of the hovered Button.
 /// @group button
-$kendo-button-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-button-bg, 1 )) !default;
+$kendo-button-hover-bg: k-color( base-hover ) !default;
 /// The base text color of the hovered Button.
 /// @group button
 $kendo-button-hover-text: null !default;
 /// The base border color of the hovered Button.
 /// @group button
-$kendo-button-hover-border: if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-button-bg, 3 )) !default;
+$kendo-button-hover-border: k-color( border-alt ) !default;
 /// The base background gradient of the hovered Button.
 /// @group button
 $kendo-button-hover-gradient: null !default;
@@ -146,13 +155,13 @@ $kendo-button-hover-shadow: null !default;
 
 /// The base background color of the active Button.
 /// @group button
-$kendo-button-active-bg: if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-button-bg, 2 )) !default;
+$kendo-button-active-bg: k-color( base-active ) !default;
 /// The base text color of the active Button.
 /// @group button
 $kendo-button-active-text: null !default;
 /// The base border color of the active Button.
 /// @group button
-$kendo-button-active-border: if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-button-bg, 4 )) !default;
+$kendo-button-active-border: k-color( border-alt ) !default;
 /// The base background gradient of the active Button.
 /// @group button
 $kendo-button-active-gradient: null !default;
@@ -162,10 +171,10 @@ $kendo-button-active-shadow: null !default;
 
 /// The base background color of the selected Button.
 /// @group button
-$kendo-button-selected-bg: $kendo-color-primary !default;
+$kendo-button-selected-bg: k-color( primary ) !default;
 /// The text color of the selected Button.
 /// @group button
-$kendo-button-selected-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-button-selected-bg )) !default;
+$kendo-button-selected-text: k-color( on-primary ) !default;
 /// The border color of the selected Button.
 /// @group button
 $kendo-button-selected-border: $kendo-button-selected-bg !default;
@@ -190,7 +199,7 @@ $kendo-button-focus-border: null !default;
 $kendo-button-focus-gradient: null !default;
 /// The base shadow of the focused Button.
 /// @group button
-$kendo-button-focus-shadow: 0 0 4px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 75%, transparent), rgba( $kendo-button-border, .75 )) !default;
+$kendo-button-focus-shadow: 0 0 4px 0 color-mix(in srgb, k-color( border ) 75%, transparent) !default;
 
 /// The base background of the disabled Button.
 /// @group button
@@ -209,7 +218,7 @@ $kendo-button-disabled-gradient: null !default;
 $kendo-button-disabled-shadow: null !default;
 
 // Solid Button
-$kendo-solid-button-gradient: $kendo-base-gradient !default;
+$kendo-solid-button-gradient: null !default;
 $kendo-solid-button-shade-function: "k-try-shade" !default;
 $kendo-solid-button-shade-text-amount: 0 !default;
 $kendo-solid-button-shade-bg-amount: 0 !default;

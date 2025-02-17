@@ -63,13 +63,13 @@ $kendo-pager-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the Pager.
 /// @group pager
-$kendo-pager-bg: $kendo-component-header-bg !default;
+$kendo-pager-bg: k-color( surface ) !default;
 /// The text color of the Pager.
 /// @group pager
-$kendo-pager-text: $kendo-component-header-text !default;
+$kendo-pager-text: k-color( on-app-surface ) !default;
 /// The border color of the Pager.
 /// @group pager
-$kendo-pager-border: $kendo-component-border !default;
+$kendo-pager-border: k-color( border ) !default;
 
 /// The background color of the focused Pager.
 /// @group pager

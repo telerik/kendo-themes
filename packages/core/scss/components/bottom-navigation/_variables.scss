@@ -1,3 +1,5 @@
+@use "../../color-system/_swatch.scss" as *;
+
 // BottomNavigation
 
 $kendo-bottom-nav-padding-x: null !default;
@@ -22,3 +24,5 @@ $kendo-bottom-nav-shadow: null !default;
 $kendo-bottom-nav-flat-text: null !default;
 $kendo-bottom-nav-flat-bg: null !default;
 $kendo-bottom-nav-flat-border: null !default;
+
+$kendo-bottom-navigation-theme-colors: null !default;

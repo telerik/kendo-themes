@@ -1,7 +1,7 @@
 
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../button/_variables.scss" as *;
 
@@ -74,7 +74,7 @@
     }
 
     .k-mask {
-        background-color: $kendo-component-bg;
+        background-color: k-color( surface-alt );
         opacity: .8;
     }
 
@@ -86,31 +86,30 @@
     // Treemap
     .k-treemap {
         @include fill(
-            $kendo-component-text,
-            $kendo-component-bg,
-            $kendo-component-border
+            $kendo-treemap-text,
+            $kendo-treemap-bg,
+            $kendo-treemap-border
         );
 
         // Title
         .k-treemap-title {
             @include fill(
-                $kendo-component-header-text,
-                $kendo-component-header-bg,
-                $kendo-component-header-border,
-                $kendo-component-header-gradient
+                $kendo-treemap-title-text,
+                $kendo-treemap-title-bg,
+                $kendo-treemap-title-border
             );
         }
 
         // Leaf
         .k-leaf {
-            color: $kendo-component-bg;
+            color: k-color( surface-alt );
         }
         .k-leaf.k-inverse {
-            color: $kendo-component-text;
+            color: k-color( on-app-surface );
         }
         .k-leaf:hover,
         .k-leaf.k-hover {
-            box-shadow: inset 0 0 0 3px $kendo-component-border;
+            box-shadow: inset 0 0 0 3px k-color( border );
         }
     }
 

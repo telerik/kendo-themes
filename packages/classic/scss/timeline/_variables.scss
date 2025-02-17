@@ -41,13 +41,13 @@ $kendo-timeline-track-arrow-height: k-spacing(7.5) !default;
 
 /// The background color of the disabled Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( base ) 60%, transparent), k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% )) !default;
+$kendo-timeline-track-arrow-disabled-bg: color-mix(in srgb, k-color( base ) 60%, transparent) !default;
 /// The text color of the disabled Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 60%, transparent), k-true-mix( $kendo-button-text, $kendo-body-bg, 65% )) !default;
+$kendo-timeline-track-arrow-disabled-text: color-mix(in srgb, k-color( on-base ) 60%, transparent) !default;
 /// The border color of the disabled Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-disabled-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 15%, transparent), k-true-mix( #000000, $kendo-body-bg, 4.8% )) !default;
+$kendo-timeline-track-arrow-disabled-border: color-mix(in srgb, k-color( border ) 15%, transparent) !default;
 
 /// The size of the Timeline track.
 /// @group timeline
@@ -108,10 +108,10 @@ $kendo-timeline-mobile-flag-max-width: calc(#{$kendo-timeline-flag-min-width} + 
 $kendo-timeline-horizontal-flag-min-width: 60px !default;
 /// The background color of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-bg: $kendo-color-primary !default;
+$kendo-timeline-flag-bg: k-color( primary ) !default;
 /// The text color of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-timeline-flag-bg )) !default;
+$kendo-timeline-flag-text: k-color( on-primary ) !default;
 
 /// The width of the Timeline's flag callout.
 /// @group timeline
@@ -155,7 +155,7 @@ $kendo-timeline-circle-width: 16px !default;
 $kendo-timeline-circle-height: 16px !default;
 /// The background color of the Timeline circle.
 /// @group timeline
-$kendo-timeline-circle-bg: $kendo-color-primary !default;
+$kendo-timeline-circle-bg: k-color( primary ) !default;
 
 /// The horizontal padding of the Timeline collapse arrow.
 /// @group timeline

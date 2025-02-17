@@ -27,7 +27,7 @@
 
     }
 
-    @each $theme-color, $color-props in $kendo-theme-colors {
+    @each $theme-color, $color-props in $kendo-messagebox-theme-colors {
 
         $_text: currentColor;
         $_bg: map.get( $color-props, bg );

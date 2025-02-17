@@ -36,13 +36,13 @@ $kendo-card-deck-gap: k-spacing(4) !default;
 
 /// The background color of the Card.
 /// @group card
-$kendo-card-bg: $kendo-component-bg !default;
+$kendo-card-bg: k-color(surface-alt) !default;
 /// The text color of the Card.
 /// @group card
-$kendo-card-text: $kendo-component-text !default;
+$kendo-card-text: k-color(on-app-surface) !default;
 /// The border color of the Card.
 /// @group card
-$kendo-card-border: $kendo-component-border !default;
+$kendo-card-border: k-color(border) !default;
 /// The shadow of the Card.
 /// @group card
 $kendo-card-shadow: k-elevation(1) !default;
@@ -54,7 +54,7 @@ $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 /// The border color of the focused Card.
 /// @group card
-$kendo-card-focus-border: $kendo-component-border !default;
+$kendo-card-focus-border: k-color(border) !default;
 
 // TODO: double-check: the default theme is not supposed to elevate the Card on focus
 
@@ -146,7 +146,7 @@ $kendo-card-subtitle-font-weight: 500 !default;
 $kendo-card-subtitle-letter-spacing: null !default;
 /// The text color of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-text: $kendo-subtle-text !default;
+$kendo-card-subtitle-text: k-color(subtle) !default;
 
 /// The maximum width of the Card image.
 /// @group card
@@ -184,6 +184,19 @@ $kendo-card-callout-width: 20px !default;
 /// The height of the Card callout.
 /// @group card
 $kendo-card-callout-height: 20px !default;
+
+$kendo-card-theme-colors: (
+    "primary": k-color( primary ),
+    "secondary": k-color( secondary ),
+    "tertiary": k-color( tertiary ),
+    "info": k-color( info ),
+    "success": k-color( success ),
+    "warning": k-color( warning ),
+    "error": k-color( error ),
+    "dark": k-color( dark ),
+    "light": k-color( light ),
+    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/card/_variables.scss" with (
     $kendo-card-padding-x: $kendo-card-padding-x,
@@ -240,5 +253,6 @@ $kendo-card-callout-height: 20px !default;
     $kendo-card-deck-scroll-button-radius: $kendo-card-deck-scroll-button-radius,
     $kendo-card-deck-scroll-button-offset: $kendo-card-deck-scroll-button-offset,
     $kendo-card-callout-width: $kendo-card-callout-width,
-    $kendo-card-callout-height: $kendo-card-callout-height
+    $kendo-card-callout-height: $kendo-card-callout-height,
+    $kendo-card-theme-colors: $kendo-card-theme-colors
 );

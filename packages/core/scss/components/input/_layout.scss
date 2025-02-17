@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 

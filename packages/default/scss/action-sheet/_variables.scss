@@ -16,9 +16,9 @@ $kendo-actionsheet-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-actionsheet-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-actionsheet-line-height: var( --kendo-line-height, normal ) !default;
 
-$kendo-actionsheet-bg: $kendo-component-bg !default;
-$kendo-actionsheet-text: $kendo-component-text !default;
-$kendo-actionsheet-border: $kendo-component-border !default;
+$kendo-actionsheet-bg: k-color( surface-alt ) !default;
+$kendo-actionsheet-text: k-color( on-app-surface ) !default;
+$kendo-actionsheet-border: k-color( border ) !default;
 $kendo-actionsheet-shadow: k-elevation(7) !default;
 
 
@@ -33,19 +33,19 @@ $kendo-actionsheet-titlebar-gap: k-spacing(4) !default;
 
 $kendo-actionsheet-titlebar-bg: null !default;
 $kendo-actionsheet-titlebar-text: null !default;
-$kendo-actionsheet-titlebar-border: $kendo-component-border !default;
+$kendo-actionsheet-titlebar-border: k-color( border ) !default;
 $kendo-actionsheet-titlebar-gradient: null !default;
 $kendo-actionsheet-titlebar-shadow: null !default;
 
 $kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, normal ) !default;
-$kendo-actionsheet-subtitle-text: $kendo-subtle-text !default;
+$kendo-actionsheet-subtitle-text: k-color( subtle ) !default;
 
 $kendo-actionsheet-footer-border-width: 1px !default;
 
 $kendo-actionsheet-footer-bg: null !default;
 $kendo-actionsheet-footer-text: null !default;
-$kendo-actionsheet-footer-border: $kendo-component-border !default;
+$kendo-actionsheet-footer-border: k-color( border ) !default;
 $kendo-actionsheet-footer-gradient: null !default;
 $kendo-actionsheet-footer-shadow: null !default;
 
@@ -60,9 +60,9 @@ $kendo-actionsheet-item-title-font-weight: null !default;
 $kendo-actionsheet-item-title-text-transform: null !default;
 
 $kendo-actionsheet-item-description-font-size: .875em !default;
-$kendo-actionsheet-item-description-text: $kendo-subtle-text !default;
+$kendo-actionsheet-item-description-text: k-color( subtle ) !default;
 
-$kendo-actionsheet-item-hover-bg: $kendo-hover-bg !default;
+$kendo-actionsheet-item-hover-bg: k-color( base-hover ) !default;
 $kendo-actionsheet-item-hover-text: null !default;
 $kendo-actionsheet-item-hover-border: null !default;
 $kendo-actionsheet-item-hover-gradient: null !default;
@@ -88,6 +88,7 @@ $kendo-actionsheet-item-disabled-opacity: null !default;
 $kendo-adaptive-actionsheet-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-adaptive-actionsheet-titlebar-padding-y: k-spacing(4) !default;
 $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-y !default;
+$kendo-adaptive-actionsheet-titlebar-border: k-color( border ) !default;
 
 $kendo-adaptive-actionsheet-content-padding-y: k-spacing(2) !default;
 $kendo-adaptive-actionsheet-content-padding-x: k-spacing(4) !default;

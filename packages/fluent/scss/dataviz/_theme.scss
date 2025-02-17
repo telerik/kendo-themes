@@ -68,7 +68,7 @@
     }
 
     .k-mask {
-        background-color: var( --kendo-component-bg, initial );
+        background-color: k-color( surface-alt );
         opacity: .8;
     }
 
@@ -99,10 +99,10 @@
 
         // Leaf
         .k-leaf {
-            @include fill( $color: var( --kendo-component-bg, initial ) );
+            @include fill( $color: k-color( surface-alt ) );
         }
         .k-leaf.k-inverse {
-            @include fill( $color: var( --kendo-component-text, initial ) );
+            @include fill( $color: k-color( on-app-surface ) );
         }
         .k-leaf:hover,
         .k-leaf.k-hover {

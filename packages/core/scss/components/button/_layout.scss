@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 
@@ -188,13 +188,6 @@
         > .k-button:last-child:not(:only-child) {
             border-start-start-radius: 0;
             border-end-start-radius: 0;
-        }
-
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            opacity: 1;
-            filter: none;
         }
     }
 

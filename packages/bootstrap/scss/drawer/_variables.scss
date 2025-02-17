@@ -6,13 +6,13 @@
 
 /// The background color of the Drawer.
 /// @group drawer
-$kendo-drawer-bg: $kendo-component-bg !default;
+$kendo-drawer-bg: k-color(app-surface) !default;
 /// The text color of the Drawer.
 /// @group drawer
-$kendo-drawer-text: $kendo-component-text !default;
+$kendo-drawer-text: k-color(on-app-surface) !default;
 /// The border color of the Drawer.
 /// @group drawer
-$kendo-drawer-border: $kendo-component-border !default;
+$kendo-drawer-border: k-color(border) !default;
 /// The border width of the Drawer.
 /// @group drawer
 $kendo-drawer-border-width: 1px !default;
@@ -83,31 +83,31 @@ $kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{
 
 /// The background color of the hovered Drawer item.
 /// @group drawer
-$kendo-drawer-hover-bg: $kendo-hover-bg !default;
+$kendo-drawer-hover-bg: k-color( base-subtle-hover) !default;
 /// The text color of the hovered Drawer item.
 /// @group drawer
-$kendo-drawer-hover-text: $kendo-hover-text !default;
+$kendo-drawer-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused Drawer item.
 /// @group drawer
-$kendo-drawer-focus-bg: $kendo-hover-bg !default;
+$kendo-drawer-focus-bg: k-color( base-subtle-hover) !default;
 /// The box shadow of the focused Drawer item.
 /// @group drawer
 $kendo-drawer-focus-shadow: inset 0 0 0 2px rgba( black, .15 ) !default;
 
 /// The background color of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-selected-bg: $kendo-selected-bg !default;
+$kendo-drawer-selected-bg: k-color(primary) !default;
 /// The text color of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-selected-text: $kendo-selected-text !default;
+$kendo-drawer-selected-text: k-color(on-primary) !default;
 
 /// The background color of the selected and hovered Drawer item.
 /// @group drawer
-$kendo-drawer-selected-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-selected-bg, 1 )) !default;
+$kendo-drawer-selected-hover-bg: k-color( primary-hover ) !default;
 /// The text color of the selected and hovered Drawer item.
 /// @group drawer
-$kendo-drawer-selected-hover-text: $kendo-selected-text !default;
+$kendo-drawer-selected-hover-text: k-color(on-primary) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/drawer/_variables.scss" with (

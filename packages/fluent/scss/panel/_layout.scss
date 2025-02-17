@@ -14,9 +14,9 @@
         > .k-header {
             @include border-top-radius( $kendo-panel-border-radius );
             @include fill(
-                var( --kendo-component-text, #{$kendo-component-text} ),
-                var( --kendo-component-bg, #{$kendo-component-bg} ),
-                var( --kendo-component-border, #{$kendo-component-border} )
+                k-color( on-app-surface ),
+                k-color( surface-alt ),
+                color-mix(in srgb, k-color( border ) 16%, transparent)
             );
             padding-inline: $kendo-panel-header-padding-inline;
             padding-block: $kendo-panel-header-padding-block;

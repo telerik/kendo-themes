@@ -57,7 +57,7 @@ $kendo-chat-timestamp-line-height: var( --kendo-line-height-lg, normal ) !defaul
 $kendo-chat-timestamp-transform: uppercase !default;
 /// The text color of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-text: $kendo-subtle-text !default;
+$kendo-chat-timestamp-text: k-color( subtle ) !default;
 /// The background color of the Chat timestamp.
 /// @group chat
 $kendo-chat-timestamp-bg: null !default;
@@ -138,20 +138,20 @@ $kendo-chat-quick-reply-line-height: $kendo-chat-bubble-line-height !default;
 
 /// The background color of the Chat.
 /// @group chat
-$kendo-chat-bg: $kendo-app-bg !default;
+$kendo-chat-bg: k-color( surface ) !default;
 /// The text color of the Chat.
 /// @group chat
-$kendo-chat-text: $kendo-app-text !default;
+$kendo-chat-text: k-color( on-app-surface ) !default;
 /// The border color of the Chat.
 /// @group chat
-$kendo-chat-border: $kendo-app-border !default;
+$kendo-chat-border: k-color( border ) !default;
 
 /// The background color of the Chat bubble.
 /// @group chat
-$kendo-chat-bubble-bg: $kendo-component-bg !default;
+$kendo-chat-bubble-bg: k-color( surface-alt ) !default;
 /// The text color of the Chat bubble.
 /// @group chat
-$kendo-chat-bubble-text: $kendo-component-text !default;
+$kendo-chat-bubble-text: k-color( on-app-surface ) !default;
 /// The border color of the Chat bubble.
 /// @group chat
 $kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;
@@ -167,10 +167,10 @@ $kendo-chat-bubble-selected-shadow: k-elevation(3) !default;
 
 /// The background color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-bg: $kendo-color-primary !default;
+$kendo-chat-alt-bubble-bg: k-color( primary ) !default;
 /// The text color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-chat-alt-bubble-bg )) !default;
+$kendo-chat-alt-bubble-text: k-color( on-primary ) !default;
 /// The border color of the Chat alt bubble.
 /// @group chat
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
@@ -189,20 +189,20 @@ $kendo-chat-alt-bubble-selected-shadow: k-elevation(3) !default;
 $kendo-chat-quick-reply-bg: transparent !default;
 /// The text color of the Chat quick reply.
 /// @group chat
-$kendo-chat-quick-reply-text: $kendo-color-primary !default;
+$kendo-chat-quick-reply-text: k-color( primary ) !default;
 /// The border color of the Chat quick reply.
 /// @group chat
-$kendo-chat-quick-reply-border: $kendo-color-primary !default;
+$kendo-chat-quick-reply-border: k-color( primary ) !default;
 
 /// The background color of the hovered Chat quick reply.
 /// @group chat
-$kendo-chat-quick-reply-hover-bg: $kendo-color-primary !default;
+$kendo-chat-quick-reply-hover-bg: k-color( primary ) !default;
 /// The text color of the hovered Chat quick reply.
 /// @group chat
-$kendo-chat-quick-reply-hover-text: $kendo-color-primary-contrast !default;
+$kendo-chat-quick-reply-hover-text: k-color( on-primary ) !default;
 /// The border color of the hovered Chat quick reply.
 /// @group chat
-$kendo-chat-quick-reply-hover-border: $kendo-color-primary !default;
+$kendo-chat-quick-reply-hover-border: k-color( primary ) !default;
 
 /// The shadow blur of the focused Chat quick reply.
 /// @group chat

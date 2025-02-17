@@ -24,13 +24,13 @@ $kendo-orgchart-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-orgchart-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-bg: $kendo-component-bg !default;
+$kendo-orgchart-bg: k-color( surface-alt ) !default;
 /// The text color of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-text: $kendo-component-text !default;
+$kendo-orgchart-text: k-color( on-app-surface ) !default;
 /// The border color of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-border: $kendo-component-border !default;
+$kendo-orgchart-border: k-color( border ) !default;
 
 /// The spacing of the OrgChart node.
 /// @group orgchart
@@ -56,13 +56,13 @@ $kendo-orgchart-node-group-border-width: 1px !default;
 $kendo-orgchart-node-group-border-radius: k-border-radius(md) !default;
 /// The background color of the OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-bg: $kendo-base-bg !default;
+$kendo-orgchart-node-group-bg: k-color( surface ) !default;
 /// The text color of the OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-text: $kendo-base-text !default;
+$kendo-orgchart-node-group-text: k-color( on-app-surface ) !default;
 /// The border color of the OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-border: $kendo-base-border !default;
+$kendo-orgchart-node-group-border: k-color( border ) !default;
 
 /// The border color of the focused OrgChart node group.
 /// @group orgchart
@@ -91,7 +91,7 @@ $kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit )
 
 /// The line height of the OrgChart node group subtitle.
 /// @group orgchart
-$kendo-orgchart-node-group-subtitle-text: $kendo-subtle-text !default;
+$kendo-orgchart-node-group-subtitle-text: k-color( subtle ) !default;
 
 /// The width of the OrgChart Card.
 /// @group orgchart
@@ -145,7 +145,7 @@ $kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;
 $kendo-orgchart-line-size: 1px !default;
 /// The fill color of the OrgChart connecting line.
 /// @group orgchart
-$kendo-orgchart-line-fill: $kendo-base-border !default;
+$kendo-orgchart-line-fill: k-color( border ) !default;
 
 /// The height of the OrgChart connecting line.
 /// @group orgchart
