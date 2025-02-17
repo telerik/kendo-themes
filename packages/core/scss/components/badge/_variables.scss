@@ -17,7 +17,7 @@ $kendo-badge-lg-padding-y: null !default;
 
 $kendo-badge-font-size: null !default;
 $kendo-badge-sm-font-size: null !default;
-$kendo-badge-md-font-size: var( --kendo-font-size-xs, inherit )!default;
+$kendo-badge-md-font-size: null !default;
 $kendo-badge-lg-font-size: null !default;
 
 $kendo-badge-line-height: null !default;
@@ -31,3 +31,5 @@ $kendo-badge-md-min-width: null !default;
 $kendo-badge-lg-min-width: null !default;
 
 $kendo-badge-sizes: null !default;
+
+$kendo-badge-theme-colors: null !default;

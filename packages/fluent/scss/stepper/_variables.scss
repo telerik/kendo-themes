@@ -19,7 +19,7 @@ $kendo-stepper-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-stepper-bg: transparent !default;
 /// The text color of the Stepper.
 /// @group stepper
-$kendo-stepper-text: var( --kendo-component-text, initial ) !default;
+$kendo-stepper-text: k-color( on-app-surface ) !default;
 /// The border color of the Stepper.
 /// @group stepper
 $kendo-stepper-border: transparent !default;
@@ -72,47 +72,47 @@ $kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-foc
 
 /// The background color of the Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-stepper-indicator-bg: k-color( surface-alt ) !default;
 /// The text color of the Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-text: var( --kendo-component-text, initial ) !default;
+$kendo-stepper-indicator-text: k-color( on-app-surface ) !default;
 /// The border color of the Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
+$kendo-stepper-indicator-border: k-color( border ) !default;
 
 /// The background color of the hovered Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-hover-bg: var( --kendo-hover-bg, initial ) !default;
+$kendo-stepper-indicator-hover-bg: k-color( base-hover ) !default;
 /// The text color of the hovered Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-hover-text: var( --kendo-hover-text, initial ) !default;
+$kendo-stepper-indicator-hover-text: k-color( on-base ) !default;
 /// The border color of the hovered Stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-hover-border: $kendo-stepper-indicator-border !default;
 
 /// The background color of the disabled Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-disabled-bg: var( --kendo-disabled-bg, initial ) !default;
+$kendo-stepper-indicator-disabled-bg: k-color( base-subtle ) !default;
 /// The text color of the disabled Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-disabled-text: var( --kendo-disabled-text, initial) !default;
+$kendo-stepper-indicator-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
 /// The border color of the disabled Stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-disabled-border: var( --kendo-disabled-border, initial ) !default;
+$kendo-stepper-indicator-disabled-border: transparent !default;
 
 /// The background color of the Stepper's done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+$kendo-stepper-indicator-done-bg: k-color( primary ) !default;
 /// The text color of the Stepper's done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-text: if($kendo-enable-color-system, k-color( on-primary ), $kendo-color-white) !default;
+$kendo-stepper-indicator-done-text: k-color( on-primary ) !default;
 /// The border color of the Stepper's done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
 
 /// The background color of the Stepper's hovered done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
+$kendo-stepper-indicator-done-hover-bg: k-color( primary-hover ) !default;
 /// The text color of the Stepper's hovered done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-hover-text: $kendo-stepper-indicator-done-text !default;
@@ -122,17 +122,17 @@ $kendo-stepper-indicator-done-hover-border: $kendo-stepper-indicator-done-hover-
 
 /// The background color of the Stepper's disabled done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 22%, transparent), k-get-theme-color-var( primary-30 )) !default;
+$kendo-stepper-indicator-done-disabled-bg: color-mix(in srgb, k-color( primary ) 22%, transparent) !default;
 /// The text color of the Stepper's disabled done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-disabled-text: var( --kendo-disabled-text, initial ) !default;
+$kendo-stepper-indicator-done-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
 /// The border color of the Stepper's disabled done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-disabled-border: var( --kendo-disabled-border, initial ) !default;
+$kendo-stepper-indicator-done-disabled-border: transparent !default;
 
 /// The background color of the Stepper current indicator.
 /// @group stepper
-$kendo-stepper-indicator-current-bg: if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 )) !default;
+$kendo-stepper-indicator-current-bg: k-color( primary-active ) !default;
 /// The text color of the Stepper current indicator.
 /// @group stepper
 $kendo-stepper-indicator-current-text: $kendo-stepper-indicator-done-text !default;
@@ -165,23 +165,23 @@ $kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-done-
 $kendo-stepper-label-text: inherit !default;
 /// The success text color of the Stepper label.
 /// @group stepper
-$kendo-stepper-label-success-text: if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 )) !default;
+$kendo-stepper-label-success-text: k-color( success-on-surface ) !default;
 /// The error text color of the Stepper label.
 /// @group stepper
-$kendo-stepper-label-error-text: if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 )) !default;
+$kendo-stepper-label-error-text: k-color( error-on-surface ) !default;
 /// The text color of the hovered Stepper label.
 /// @group stepper
 $kendo-stepper-label-hover-text: $kendo-stepper-text !default;
 /// The text color of the disabled Stepper label.
 /// @group stepper
-$kendo-stepper-label-disabled-text: var( --kendo-disabled-text, initial ) !default;
+$kendo-stepper-label-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
 /// The font weight of the disabled Stepper label.
 /// @group stepper
 $kendo-stepper-current-label-font-weight: var( --kendo-font-weight-bold, bold ) !default;
 
 /// The text color of the optional Stepper label.
 /// @group stepper
-$kendo-stepper-optional-label-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
+$kendo-stepper-optional-label-text: k-color( subtle ) !default;
 /// The font size of the optional Stepper label.
 /// @group stepper
 $kendo-stepper-optional-label-font-size: inherit !default;

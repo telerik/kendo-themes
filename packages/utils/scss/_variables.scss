@@ -65,8 +65,6 @@ $kendo-elevation: () !default;
 
 $kendo-colors: () !default;
 
-$kendo-enable-color-system: true !default;
-
 $_default-kendo-fraction-classes: (
     '91-6': 91.6666%,
     '83-3': 83.3333%,
@@ -653,7 +651,7 @@ $kendo-utils: (
         start,
         end
     ),
-    "text-color": map.merge( if( $kendo-enable-color-system, $kendo-util-colors, $kendo-theme-colors ), (
+    "text-color": map.merge( $kendo-util-colors , (
         "inherit": inherit,
         "current": currentColor,
         "transparent": transparent,
@@ -708,7 +706,7 @@ $kendo-utils: (
         content: content-box,
         text: text
     ),
-    "background-color": map.merge( if( $kendo-enable-color-system, $kendo-util-colors, $kendo-theme-colors ), (
+    "background-color": map.merge( $kendo-util-colors, (
         "inherit": inherit,
         "transparent": transparent,
         "black": black,
@@ -751,7 +749,7 @@ $kendo-utils: (
         hidden,
         none
     ),
-    "border-color": map.merge( if( $kendo-enable-color-system, $kendo-util-colors, $kendo-theme-colors ), (
+    "border-color": map.merge( $kendo-util-colors, (
         "inherit": inherit,
         "current": currentColor,
         "transparent": transparent,
@@ -777,7 +775,7 @@ $kendo-utils: (
         outset,
         none
     ),
-    "outline-color": map.merge( if( $kendo-enable-color-system, $kendo-util-colors, $kendo-theme-colors ), (
+    "outline-color": map.merge( $kendo-util-colors, (
         "inherit": inherit,
         "current": currentColor,
         "transparent": transparent,

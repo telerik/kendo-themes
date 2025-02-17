@@ -25,10 +25,10 @@ $kendo-menu-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-menu-bg: transparent !default;
 /// The text color of the Menu
 /// @group menu
-$kendo-menu-text: $kendo-component-header-text !default;
+$kendo-menu-text: k-color(on-app-surface) !default;
 /// The border color of the Menu.
 /// @group menu
-$kendo-menu-border: $kendo-component-header-border !default;
+$kendo-menu-border: k-color(border) !default;
 /// The background gradient of the Menu.
 /// @group menu
 $kendo-menu-gradient: null !default;
@@ -57,7 +57,7 @@ $kendo-menu-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !
 $kendo-menu-item-bg: null !default;
 /// The text color of the Menu item.
 /// @group menu
-$kendo-menu-item-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 76%, transparent), rgba( $kendo-menu-text, .76 )) !default;
+$kendo-menu-item-text: color-mix(in srgb, k-color( on-app-surface ) 76%, transparent) !default;
 /// The border color of the Menu item.
 /// @group menu
 $kendo-menu-item-border: null !default;
@@ -70,7 +70,7 @@ $kendo-menu-item-gradient: null !default;
 $kendo-menu-item-hover-bg: null !default;
 /// The text color of hovered Menu item.
 /// @group menu
-$kendo-menu-item-hover-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 93%, transparent), rgba( $kendo-menu-text, .93 )) !default;
+$kendo-menu-item-hover-text: color-mix(in srgb, k-color( on-app-surface ) 93%, transparent) !default;
 /// The border color of hovered Menu item.
 /// @group menu
 $kendo-menu-item-hover-border: null !default;
@@ -83,7 +83,7 @@ $kendo-menu-item-hover-gradient: null !default;
 $kendo-menu-item-active-bg: null !default;
 /// The text color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 100%, transparent), rgba( $kendo-menu-text, 1 )) !default;
+$kendo-menu-item-active-text: color-mix(in srgb, k-color( on-app-surface ) 100%, transparent) !default;
 /// The border color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-border: null !default;
@@ -93,7 +93,7 @@ $kendo-menu-item-active-gradient: null !default;
 
 /// The base shadow of focused Menu item.
 /// @group menu
-$kendo-menu-item-focus-shadow: inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-menu-text, .15 )) !default;
+$kendo-menu-item-focus-shadow: inset 0 0 0 3px color-mix(in srgb, k-color( on-app-surface ) 15%, transparent) !default;
 
 /// The background color of selected Menu item.
 /// @group menu
@@ -113,7 +113,7 @@ $kendo-menu-item-selected-gradient: null !default;
 $kendo-menu-scroll-button-bg: $kendo-menu-bg !default;
 /// The text color of the Menu scroll buttons.
 /// @group menu
-$kendo-menu-scroll-button-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-menu-text, .5 )) !default;
+$kendo-menu-scroll-button-text: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
 /// The border color of the Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-border: $kendo-menu-border !default;
@@ -126,7 +126,7 @@ $kendo-menu-scroll-button-gradient: null !default;
 $kendo-menu-scroll-button-hover-bg: null !default;
 /// The text color of hovered Menu scroll buttons.
 /// @group menu
-$kendo-menu-scroll-button-hover-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 70%, transparent), rgba( $kendo-menu-text, .7 )) !default;
+$kendo-menu-scroll-button-hover-text: color-mix(in srgb, k-color( on-app-surface ) 70%, transparent) !default;
 /// The border color of hovered Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-hover-border: null !default;
@@ -145,7 +145,7 @@ $kendo-menu-separator-margin-inline: k-spacing(1) !default;
 $kendo-menu-separator-margin-block: k-spacing(2) !default;
 /// The border color of Menu separator.
 /// @group menu
-$kendo-menu-separator-border: if($kendo-enable-color-system, k-color(border), $kendo-component-border) !default;
+$kendo-menu-separator-border: k-color(border) !default;
 
 
 // Menu popup

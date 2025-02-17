@@ -120,14 +120,14 @@ $kendo-treeview-sizes: (
 $kendo-treeview-bg: null !default;
 /// The text color of the TreeView.
 /// @group treeview
-$kendo-treeview-text: $kendo-component-text !default;
+$kendo-treeview-text: k-color(on-app-surface) !default;
 /// The border color of the TreeView.
 /// @group treeview
 $kendo-treeview-border: null !default;
 
 /// The background color of hovered TreeView.
 /// @group treeview
-$kendo-treeview-item-hover-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 )) !default;
+$kendo-treeview-item-hover-bg: color-mix(in srgb, k-color( on-app-surface ) 7%, transparent) !default;
 /// The text color of hovered TreeView items.
 /// @group treeview
 $kendo-treeview-item-hover-text: unset !default;
@@ -143,7 +143,7 @@ $kendo-treeview-item-hover-gradient: null !default;
 $kendo-treeview-item-selected-bg: unset !default;
 /// The text color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-text: $kendo-selected-bg !default;
+$kendo-treeview-item-selected-text: k-color(secondary) !default;
 /// The border color of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-border: null !default;
@@ -153,10 +153,10 @@ $kendo-treeview-item-selected-gradient: null !default;
 
 /// The background color of selected and focused TreeView items.
 /// /// @group treeview
-$kendo-treeview-item-selected-focus-text: $kendo-selected-bg !default;
+$kendo-treeview-item-selected-focus-text: k-color(secondary) !default;
 /// The text color of selected and focused TreeView items.
 /// /// @group treeview
-$kendo-treeview-item-selected-focus-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 )) !default;
+$kendo-treeview-item-selected-focus-bg: color-mix(in srgb, k-color( on-app-surface ) 7%, transparent) !default;
 /// The border color of selected and focused TreeView items.
 /// /// @group treeview
 $kendo-treeview-item-selected-focus-border: null !default;

@@ -11,15 +11,15 @@
 
             @if ($name == "info") {
                 @include fill (
-                    $color: if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text)),
-                    $border: if($kendo-enable-color-system, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
+                    $color: k-color( on-app-surface ),
+                    $border: $color
                 );
 
                 &:hover,
                 &.k-hover,
                 &.k-selected {
                     @include fill(
-                        if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-contrast-color($color), $kendo-chip-outline-text)),
+                        k-color( on-app-surface ),
                         $color,
                         $color
                     );

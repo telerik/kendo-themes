@@ -82,7 +82,7 @@
             }
 
             &.k-disabled {
-                --kendo-calendar-cell-text: var( --kendo-disabled-text, inherit );
+                --kendo-calendar-cell-text: color-mix(in srgb, #{k-color(on-app-surface)} 46%, transparent);
             }
         }
 
@@ -140,7 +140,7 @@
         &.k-invalid:hover,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: var( --kendo-invalid-border, inherit );
+            border-color: k-color( error-emphasis );
         }
     }
 
@@ -200,7 +200,7 @@
             }
 
             &.k-disabled {
-                --kendo-calendar-cell-text: var( --kendo-disabled-text, inherit );
+                --kendo-calendar-cell-text: color-mix(in srgb, #{k-color(on-app-surface)} 46%, transparent);
             }
 
             &:hover .k-link,

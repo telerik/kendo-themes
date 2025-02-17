@@ -34,7 +34,7 @@
             .k-step-link:focus  {
                 // Labels only
                 .k-step-label:only-child {
-                    @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) var( --kendo-component-border, initial ) );
+                    @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) color-mix(in srgb, k-color( border ) 16%, transparent) );
                 }
             }
 
@@ -42,22 +42,14 @@
             &:disabled,
             &.k-disabled {
                 .k-step-indicator {
-                    @if($kendo-enable-color-system) {
-                        @include fill(
-                            var( --kendo-stepper-indicator-disabled-text, #{$kendo-stepper-indicator-disabled-text} ),
-                            k-color( app-surface ),
-                            var( --kendo-stepper-indicator-disabled-border, #{$kendo-stepper-indicator-disabled-border} )
-                        );
+                    @include fill(
+                        var( --kendo-stepper-indicator-disabled-text, #{$kendo-stepper-indicator-disabled-text} ),
+                        k-color( app-surface ),
+                        var( --kendo-stepper-indicator-disabled-border, #{$kendo-stepper-indicator-disabled-border} )
+                    );
 
-                        &::before {
-                            background-color: var( --kendo-stepper-indicator-disabled-bg, #{$kendo-stepper-indicator-disabled-bg} );
-                        }
-                    } @else {
-                        @include fill(
-                            var( --kendo-stepper-indicator-disabled-text, #{$kendo-stepper-indicator-disabled-text} ),
-                            var( --kendo-stepper-indicator-disabled-bg, #{$kendo-stepper-indicator-disabled-bg} ),
-                            var( --kendo-stepper-indicator-disabled-border, #{$kendo-stepper-indicator-disabled-border} )
-                        );
+                    &::before {
+                        background-color: var( --kendo-stepper-indicator-disabled-bg, #{$kendo-stepper-indicator-disabled-bg} );
                     }
                 }
 
@@ -74,13 +66,13 @@
             );
         }
         .k-step-indicator::after {
-            @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) var( --kendo-component-bg, initial ) );
+            @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) k-color( surface-alt ) );
         }
         .k-step-label:only-child {
             @include fill(
-                var( --kendo-component-text, initial ),
-                var( --kendo-component-bg, transparent ),
-                var( --kendo-component-border, initial )
+                k-color( on-app-surface ),
+                k-color( surface-alt ),
+                color-mix(in srgb, k-color( border ) 16%, transparent)
             );
         }
 
@@ -116,22 +108,14 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @if($kendo-enable-color-system) {
-                        @include fill(
-                            var( --kendo-stepper-indicator-done-disabled-text, #{$kendo-stepper-indicator-done-disabled-text} ),
-                            k-color( app-surface ),
-                            var( --kendo-stepper-indicator-done-disabled-border, #{$kendo-stepper-indicator-done-disabled-border} )
-                        );
+                    @include fill(
+                        var( --kendo-stepper-indicator-done-disabled-text, #{$kendo-stepper-indicator-done-disabled-text} ),
+                        k-color( app-surface ),
+                        var( --kendo-stepper-indicator-done-disabled-border, #{$kendo-stepper-indicator-done-disabled-border} )
+                    );
 
-                        &::before {
-                            background-color: var( --kendo-stepper-indicator-done-disabled-bg, #{$kendo-stepper-indicator-done-disabled-bg} );
-                        }
-                    } @else {
-                        @include fill(
-                            var( --kendo-stepper-indicator-done-disabled-text, #{$kendo-stepper-indicator-done-disabled-text} ),
-                            var( --kendo-stepper-indicator-done-disabled-bg, #{$kendo-stepper-indicator-done-disabled-bg} ),
-                            var( --kendo-stepper-indicator-done-disabled-border, #{$kendo-stepper-indicator-done-disabled-border} )
-                        );
+                    &::before {
+                        background-color: var( --kendo-stepper-indicator-done-disabled-bg, #{$kendo-stepper-indicator-done-disabled-bg} );
                     }
                 }
 
@@ -173,22 +157,14 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @if($kendo-enable-color-system) {
-                        @include fill(
-                            var( --kendo-stepper-indicator-current-disabled-text, #{$kendo-stepper-indicator-current-disabled-text} ),
-                            k-color( app-surface ),
-                            var( --kendo-stepper-indicator-current-disabled-border, #{$kendo-stepper-indicator-current-disabled-border} )
-                        );
+                    @include fill(
+                        var( --kendo-stepper-indicator-current-disabled-text, #{$kendo-stepper-indicator-current-disabled-text} ),
+                        k-color( app-surface ),
+                        var( --kendo-stepper-indicator-current-disabled-border, #{$kendo-stepper-indicator-current-disabled-border} )
+                    );
 
-                        &::before {
-                            background-color: var( --kendo-stepper-indicator-current-disabled-bg, #{$kendo-stepper-indicator-current-disabled-bg} );
-                        }
-                    } @else {
-                        @include fill(
-                            var( --kendo-stepper-indicator-current-disabled-text, #{$kendo-stepper-indicator-current-disabled-text} ),
-                            var( --kendo-stepper-indicator-current-disabled-bg, #{$kendo-stepper-indicator-current-disabled-bg} ),
-                            var( --kendo-stepper-indicator-current-disabled-border, #{$kendo-stepper-indicator-current-disabled-border} )
-                        );
+                    &::before {
+                        background-color: var( --kendo-stepper-indicator-current-disabled-bg, #{$kendo-stepper-indicator-current-disabled-bg} );
                     }
                 }
             }

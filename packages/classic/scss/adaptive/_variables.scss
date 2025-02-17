@@ -2,20 +2,20 @@
 @use "../core/functions/index.import.scss" as *;
 
 // Adaptive
-$kendo-adaptive-bg: $kendo-component-bg !default;
-$kendo-adaptive-text: $kendo-component-text !default;
-$kendo-adaptive-border: $kendo-component-border !default;
+$kendo-adaptive-bg: k-color( surface-alt ) !default;
+$kendo-adaptive-text: k-color( on-app-surface ) !default;
+$kendo-adaptive-border: k-color( border ) !default;
 
-$kendo-adaptive-content-bg: $kendo-app-bg !default;
-$kendo-adaptive-content-text: $kendo-app-text !default;
+$kendo-adaptive-content-bg: k-color( app-surface ) !default;
+$kendo-adaptive-content-text: k-color( on-app-surface ) !default;
 
-$kendo-adaptive-menu-bg: $kendo-color-primary !default;
-$kendo-adaptive-menu-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-adaptive-menu-bg )) !default;
+$kendo-adaptive-menu-bg: k-color( primary ) !default;
+$kendo-adaptive-menu-text: k-color( on-primary ) !default;
 
-$kendo-adaptive-menu-clear-text: $kendo-color-primary !default;
+$kendo-adaptive-menu-clear-text: k-color( primary ) !default;
 
-$kendo-adaptive-menu-item-border: $kendo-component-border !default;
-$kendo-adaptive-menu-title-text: $kendo-component-text !default;
+$kendo-adaptive-menu-item-border: k-color( border ) !default;
+$kendo-adaptive-menu-title-text: k-color( on-app-surface ) !default;
 
 $kendo-adaptive-border-width: 1px !default;
 $kendo-adaptive-font-family: var( --kendo-font-family, inherit ) !default;
@@ -24,13 +24,13 @@ $kendo-adaptive-line-height: var( --kendo-line-height, normal ) !default;
 
 
 // Adaptive Grid
-$kendo-adaptive-grid-sort-text: $kendo-color-primary !default;
+$kendo-adaptive-grid-sort-text: k-color( primary ) !default;
 
 
 // Adaptive Scheduler
-$kendo-adaptive-scheduler-current-text: $kendo-color-primary !default;
+$kendo-adaptive-scheduler-current-text: k-color( primary ) !default;
 $kendo-adaptive-scheduler-base-text: inherit !default;
-$kendo-adaptive-scheduler-subtle-text: $kendo-subtle-text !default;
+$kendo-adaptive-scheduler-subtle-text: k-color( subtle ) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/adaptive/_variables.scss" with (

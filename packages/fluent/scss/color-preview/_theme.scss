@@ -24,7 +24,7 @@
     .k-disabled {
         .k-color-preview-mask::before {
             @include fill(
-                $bg: var( --kendo-disabled-bg )
+                $bg: k-color( base-subtle )
             );
         }
     }

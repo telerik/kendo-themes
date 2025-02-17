@@ -7,9 +7,9 @@ $kendo-listgroup-border-radius: k-spacing(1) !default;
 $kendo-listgroup-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-listgroup-line-height: var( --kendo-line-height, normal ) !default;
 
-$kendo-listgroup-bg: $kendo-component-bg !default;
-$kendo-listgroup-text: $kendo-component-text !default;
-$kendo-listgroup-border: $kendo-component-border !default;
+$kendo-listgroup-bg: k-color(app-surface) !default;
+$kendo-listgroup-text: k-color(on-app-surface) !default;
+$kendo-listgroup-border: k-color(border) !default;
 
 $kendo-listgroup-item-padding-x: k-spacing(4) !default;
 $kendo-listgroup-item-padding-y: k-spacing(2) !default;

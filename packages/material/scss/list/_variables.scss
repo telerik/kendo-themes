@@ -182,13 +182,13 @@ $kendo-list-sizes: (
 
 /// The background color of the List component.
 /// @group list
-$kendo-list-bg: $kendo-component-bg !default;
+$kendo-list-bg: k-color(surface-alt) !default;
 /// The text color of the List component.
 /// @group list
-$kendo-list-text: $kendo-component-text !default;
+$kendo-list-text: k-color(on-app-surface) !default;
 /// The border color of the List component.
 /// @group list
-$kendo-list-border: $kendo-component-border !default;
+$kendo-list-border: k-color(border) !default;
 
 
 /// The background color of the List header.
@@ -214,10 +214,10 @@ $kendo-list-item-text: null !default;
 
 /// The background color of the hovered List items.
 /// @group list
-$kendo-list-item-hover-bg: $kendo-hover-bg !default;
+$kendo-list-item-hover-bg: k-color( base-hover) !default;
 /// The text color of the hovered List items.
 /// @group list
-$kendo-list-item-hover-text: $kendo-hover-text !default;
+$kendo-list-item-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused List items.
 /// @group list
@@ -231,10 +231,10 @@ $kendo-list-item-focus-shadow: unset !default;
 
 /// The background color of the selected List items.
 /// @group list
-$kendo-list-item-selected-bg: $kendo-component-bg !default;
+$kendo-list-item-selected-bg: k-color(surface-alt) !default;
 /// The text color of the selected List items.
 /// @group list
-$kendo-list-item-selected-text: $kendo-color-secondary !default;
+$kendo-list-item-selected-text: k-color(secondary) !default;
 
 /// The background color of the List group items.
 /// @group list
@@ -251,7 +251,7 @@ $kendo-list-group-item-shadow: null !default;
 
 /// The color of the 'Option Label' text.
 /// @group list
-$kendo-list-option-label-text: $kendo-subtle-text !default;
+$kendo-list-option-label-text: k-color(subtle) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/list/_variables.scss" with (
     $kendo-list-font-family: $kendo-list-font-family,

@@ -1,19 +1,19 @@
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-editor--theme-base() {
 
     .k-editor {
         @include fill(
-            $kendo-component-text,
-            $kendo-component-bg,
-            $kendo-component-border
+            k-color( on-app-surface ),
+            k-color( surface-alt ),
+            k-color( border )
         );
 
         &.k-readonly {
             .k-editor-content.k-focus {
-                outline-color: $kendo-body-text;
+                outline-color: k-color( on-app-surface );
             }
         }
     }
@@ -51,7 +51,7 @@
         &:hover,
         &.k-hover,
         &.k-active {
-            border-color: $kendo-component-border;
+            border-color: k-color( border );
         }
     }
 
@@ -68,7 +68,7 @@
     // Insert table
     .k-ct-popup {
         .k-selected {
-            @include fill( $kendo-selected-text, $kendo-selected-bg, $kendo-selected-border, none );
+            @include fill( $kendo-editor-ct-cell-text, $kendo-editor-ct-cell-bg, $kendo-editor-ct-cell-border, none );
         }
     }
 

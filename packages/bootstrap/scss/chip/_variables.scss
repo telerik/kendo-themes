@@ -101,10 +101,10 @@ $kendo-chip-base-bg: $kendo-button-bg !default;
 /// @group chip
 $kendo-chip-theme-colors: (
     "base": $kendo-chip-base-bg,
-    "error": map.get( $kendo-theme-colors, "error" ),
-    "info": map.get( $kendo-theme-colors, "info" ),
-    "warning": map.get( $kendo-theme-colors, "warning" ),
-    "success": map.get( $kendo-theme-colors, "success" )
+    "error": k-color( error ),
+    "info": k-color( info ),
+    "warning": k-color( warning ),
+    "success": k-color( success )
 ) !default;
 
 /// The base background color of the solid Chip.
@@ -146,10 +146,10 @@ $kendo-chip-solid-selected-text: null !default;
 
 /// The base background color of the outline Chip.
 /// @group chip
-$kendo-chip-outline-bg: $kendo-component-bg !default;
+$kendo-chip-outline-bg: k-color(app-surface) !default;
 /// The base text color of the outline Chip.
 /// @group chip
-$kendo-chip-outline-text: if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-chip-solid-text) !default;
+$kendo-chip-outline-text: k-color( base-on-surface ) !default;
 /// The base border color of the outline Chip.
 /// @group chip
 $kendo-chip-outline-border: $kendo-chip-outline-text !default;
@@ -162,7 +162,7 @@ $kendo-chip-outline-shadow: 0 0 0 2px rgba( $kendo-chip-base-bg, .16 ) !default;
 $kendo-chip-outline-hover-bg: $kendo-chip-outline-text !default;
 /// The base text color of the hovered outline Chip.
 /// @group chip
-$kendo-chip-outline-hover-text: if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-legacy( $kendo-chip-outline-hover-bg )) !default;
+$kendo-chip-outline-hover-text: k-color( base-subtle ) !default;
 
 /// The base background color of the selected outline Chip.
 /// @group chip

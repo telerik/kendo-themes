@@ -1,0 +1,11 @@
+@use "../core/_index.scss" as *;
+
+$kendo-marquee-text: k-color(on-app-surface) !default;
+$kendo-marquee-bg: color-mix(in srgb, k-color(primary) 55%, white 45%) !default;
+$kendo-marquee-border: k-color(primary) !default;
+
+@forward "@progress/kendo-theme-core/scss/components/marquee/_variables.scss" with (
+    $kendo-marquee-text: $kendo-marquee-text,
+    $kendo-marquee-bg: $kendo-marquee-bg,
+    $kendo-marquee-border: $kendo-marquee-border
+);

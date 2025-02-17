@@ -40,10 +40,10 @@ $kendo-tooltip-callout-size: 6px !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-bg: if($kendo-enable-color-system, k-color( on-app-surface ), rgba( k-contrast-color( $kendo-body-bg ), .75 )) !default;
+$kendo-tooltip-bg: k-color( on-app-surface ) !default;
 /// The default text color of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-text: if($kendo-enable-color-system, k-color( app-surface ), k-contrast-color( $kendo-tooltip-bg )) !default;
+$kendo-tooltip-text: k-color( app-surface ) !default;
 /// The default border color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border: $kendo-tooltip-bg !default;
@@ -54,7 +54,18 @@ $kendo-tooltip-shadow: k-elevation(2) !default;
 
 /// The theme colors map for the Tooltip.
 /// @group tooltip
-$kendo-tooltip-theme-colors: $kendo-theme-colors !default;
+$kendo-tooltip-theme-colors: (
+    "primary": k-color( primary ),
+    "secondary": k-color( secondary ),
+    "tertiary": k-color( tertiary ),
+    "info": k-color( info ),
+    "success": k-color( success ),
+    "warning": k-color( warning ),
+    "error": k-color( error ),
+    "dark": k-color( dark ),
+    "light": k-color( light ),
+    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark ))
+) !default;
 /// The generated theme colors map for the Tooltip.
 /// @group tooltip
 $kendo-tooltip-theme: tooltip-theme( $kendo-tooltip-theme-colors ) !default;

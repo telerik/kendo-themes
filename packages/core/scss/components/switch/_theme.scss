@@ -1,4 +1,5 @@
 @use "../../mixins/index.import.scss" as *;
+@use "../../color-system/_constants.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
@@ -62,7 +63,7 @@
                     $kendo-switch-off-track-focus-gradient
                 );
                 @if $kendo-enable-focus-contrast {
-                    @include box-shadow( 0 0 0 2px if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )) );
+                    @include box-shadow( 0 0 0 2px k-color( on-app-surface ));
                 } @else {
                     outline: $kendo-switch-off-track-focus-ring;
                 }
@@ -142,7 +143,7 @@
                     $kendo-switch-on-track-focus-gradient
                 );
                 @if $kendo-enable-focus-contrast {
-                    @include box-shadow( 0 0 0 2px if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )) );
+                    @include box-shadow( 0 0 0 2px k-color( on-app-surface ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ));
                 } @else {
                     outline: $kendo-switch-on-track-focus-ring;
                 }

@@ -18,7 +18,7 @@
     // Dialog theme colors
     @each $name, $color in $kendo-dialog-theme-colors {
         .k-dialog-#{$name} .k-dialog-titlebar {
-            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
+            color: k-color( on-#{$name} );
             background-color: $color;
         }
     }

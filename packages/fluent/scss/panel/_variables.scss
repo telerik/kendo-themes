@@ -27,10 +27,10 @@ $kendo-panel-content-padding-block: k-spacing(1) !default;
 
 /// The text color of the Panel.
 /// @group panel
-$kendo-panel-text: var(--kendo-component-text, #{$kendo-component-text}) !default;
+$kendo-panel-text: k-color( on-app-surface ) !default;
 /// The background color of the Panel.
 /// @group panel
-$kendo-panel-bg: var(--kendo-component-bg, #{$kendo-component-bg}) !default;
+$kendo-panel-bg: k-color( surface-alt ) !default;
 /// The color of the border around the Panel.
 /// @group panel
-$kendo-panel-border: var(--kendo-component-border, #{$kendo-component-border}) !default;
+$kendo-panel-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;

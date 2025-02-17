@@ -1,5 +1,5 @@
+@use "../../color-system/_functions.import.scss" as *;
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-adaptive--theme-base() {
@@ -23,11 +23,11 @@
         .k-grid-mobile {
 
             .k-column-active + th.k-header {
-                border-left-color: $kendo-body-text;
+                border-left-color: k-color( on-app-surface );
             }
 
             .k-resize-handle-inner::before {
-                background-color: $kendo-base-bg;
+                background-color: k-color( surface );
             }
         }
 
@@ -72,7 +72,7 @@
 
             .k-item,
             .k-link {
-                color: $kendo-base-text;
+                color: k-color( on-app-surface );
             }
 
             .k-clear,

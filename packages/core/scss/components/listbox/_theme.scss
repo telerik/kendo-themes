@@ -1,5 +1,5 @@
+@use "../../color-system/_functions.import.scss" as *;
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-listbox--theme-base() {
@@ -14,7 +14,7 @@
             );
         }
         .k-drop-hint {
-            border-top-color: $kendo-color-primary;
+            border-top-color: k-color( primary );
         }
     }
 

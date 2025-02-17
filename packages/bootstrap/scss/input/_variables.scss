@@ -112,13 +112,13 @@ $kendo-input-sizes: (
 
 /// The background color of the Input components.
 /// @group input
-$kendo-input-bg: $kendo-component-bg !default;
+$kendo-input-bg: k-color(app-surface) !default;
 /// The text color of the Input components.
 /// @group input
-$kendo-input-text: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-dark) !default;
+$kendo-input-text: k-color( on-app-surface ) !default;
 /// The border color of the Input components.
 /// @group input
-$kendo-input-border: if($kendo-enable-color-system, k-color( border-alt ), #ced4da) !default;
+$kendo-input-border: k-color( border-alt ) !default;
 /// The shadow of the Input components.
 /// @group input
 $kendo-input-shadow: null !default;
@@ -144,10 +144,10 @@ $kendo-input-focus-bg: $kendo-input-bg !default;
 $kendo-input-focus-text: $kendo-input-text !default;
 /// The border color of the focused Input components.
 /// @group input
-$kendo-input-focus-border: if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-tint( $kendo-color-primary, 50% ) ) !default;
+$kendo-input-focus-border: k-color( primary-emphasis ) !default;
 /// The shadow of the focused Input components.
 /// @group input
-$kendo-input-focus-shadow: 0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 )) !default;
+$kendo-input-focus-shadow: 0 0 0 .25rem color-mix(in srgb, k-color( primary ) 25%, transparent) !default;
 
 /// The background color of the selected Input components.
 /// @group input
@@ -177,10 +177,10 @@ $kendo-input-disabled-shadow: null !default;
 $kendo-input-outline-bg: null !default;
 /// The text color of the outline Input components.
 /// @group input
-$kendo-input-outline-text: $kendo-base-text !default;
+$kendo-input-outline-text: k-color(on-app-surface) !default;
 /// The border color of the outline Input components.
 /// @group input
-$kendo-input-outline-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), color-mix(in srgb, $kendo-base-text 50%, transparent)) !default;
+$kendo-input-outline-border: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
 /// The background color of the outline hovered Input components.
 /// @group input
 $kendo-input-outline-hover-bg: null !default;
@@ -239,7 +239,7 @@ $kendo-input-flat-focus-shadow: $kendo-input-focus-shadow !default;
 
 /// The text color of the Input placeholder.
 /// @group input
-$kendo-input-placeholder-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
+$kendo-input-placeholder-text: k-color( subtle ) !default;
 /// The opacity of the Input placeholder.
 /// @group input
 $kendo-input-placeholder-opacity: 1 !default;
@@ -279,24 +279,24 @@ $kendo-input-spinner-icon-offset: null !default;
 
 /// The color of the Input separator.
 /// @group input
-$kendo-input-separator-text: $kendo-component-border !default;
+$kendo-input-separator-text: k-color(border) !default;
 /// The opacity of the Input separator.
 /// @group input
 $kendo-input-separator-opacity: .5 !default;
 
 /// The text color of the Input prefix.
 /// @group input
-$kendo-input-prefix-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
+$kendo-input-prefix-text: k-color( subtle ) !default;
 /// The text color of the Input suffix.
 /// @group input
-$kendo-input-suffix-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
+$kendo-input-suffix-text: k-color( subtle ) !default;
 
 /// The border color of the invalid Input components.
 /// @group input
-$kendo-input-invalid-border: $kendo-invalid-border !default;
+$kendo-input-invalid-border: k-color(error) !default;
 /// The shadow of the invalid Input components.
 /// @group input
-$kendo-input-invalid-shadow: $kendo-invalid-shadow !default;
+$kendo-input-invalid-shadow: 0 0 0 .25rem color-mix(in srgb, k-color( error ) 25%, transparent) !default;
 
 /// The background color of the Picker components.
 /// @group picker
@@ -370,13 +370,13 @@ $kendo-picker-outline-bg: null !default;
 $kendo-picker-outline-text: $kendo-button-text !default;
 /// The border color of the outline Picker components.
 /// @group picker
-$kendo-picker-outline-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), color-mix(in srgb, $kendo-picker-outline-text 50%, transparent)) !default;
+$kendo-picker-outline-border: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
 /// The background color of the outline hovered Picker components.
 /// @group picker
 $kendo-picker-outline-hover-bg: $kendo-picker-outline-text !default;
 /// The text color of the outline hovered Picker components.
 /// @group picker
-$kendo-picker-outline-hover-text: if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-color( $kendo-picker-outline-hover-bg )) !default;
+$kendo-picker-outline-hover-text: k-color( base-subtle ) !default;
 /// The border color of the outline hovered Picker components.
 /// @group picker
 $kendo-picker-outline-hover-border: $kendo-picker-outline-hover-bg !default;
@@ -416,7 +416,7 @@ $kendo-picker-flat-border: $kendo-button-border !default;
 
 /// The background color of the flat hovered Picker components.
 /// @group picker
-$kendo-picker-flat-hover-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), color-mix(in srgb, $kendo-button-text 80%, transparent)) !default;
+$kendo-picker-flat-hover-bg: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
 /// The text color of the flat hovered Picker components.
 /// @group picker
 $kendo-picker-flat-hover-text: null !default;

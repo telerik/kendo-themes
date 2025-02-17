@@ -1,5 +1,5 @@
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../popup/_variables.scss" as *;
 
@@ -134,7 +134,7 @@
     }
 
     .k-pivotgrid-configurator-content .k-form-field-wrapper {
-        @include fill( $border: $kendo-component-border );
+        @include fill( $border: k-color( border ) );
     }
 
 
@@ -191,7 +191,7 @@
         );
 
         .k-empty {
-            color: $kendo-subtle-text;
+            color: k-color( subtle );
         }
     }
 
@@ -223,15 +223,15 @@
     }
 
     .k-i-kpi-status-hold {
-        color: $kendo-color-warning;
+        color: k-color( warning );
     }
 
     .k-i-kpi-status-deny {
-        color: $kendo-color-error;
+        color: k-color( error );
     }
 
     .k-i-kpi-status-open {
-        color: $kendo-color-success;
+        color: k-color( success );
     }
 
 
@@ -239,7 +239,7 @@
     .k-pivotgrid-configurator-panel.kendo-jquery {
 
         .k-column-fields {
-            border-color: $kendo-component-border;
+            border-color: k-color( border );
         }
     }
 

@@ -23,13 +23,13 @@ $kendo-listview-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The text color of the ListView.
 /// @group listview
-$kendo-listview-text: $kendo-component-text !default;
+$kendo-listview-text: k-color(on-app-surface) !default;
 /// The background color of the ListView.
 /// @group listview
-$kendo-listview-bg: $kendo-component-bg !default;
+$kendo-listview-bg: k-color(app-surface) !default;
 /// The border color of the ListView.
 /// @group listview
-$kendo-listview-border: $kendo-component-border !default;
+$kendo-listview-border: k-color(border) !default;
 
 /// The horizontal padding of the ListView items.
 /// @group listview
@@ -43,7 +43,7 @@ $kendo-listview-item-padding-y: k-spacing(1) !default;
 $kendo-listview-item-selected-text: null !default;
 /// The background color of the selected ListView items.
 /// @group listview
-$kendo-listview-item-selected-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-selected-bg, .25 )) !default;
+$kendo-listview-item-selected-bg: color-mix(in srgb, k-color( primary ) 25%, transparent) !default;
 /// The border color of the selected ListView items.
 /// @group listview
 $kendo-listview-item-selected-border: null !default;
@@ -59,7 +59,7 @@ $kendo-listview-item-focus-bg: null !default;
 $kendo-listview-item-focus-border: null !default;
 /// The box shadow of the focused ListView items.
 /// @group listview
-$kendo-listview-item-focus-shadow: inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( $kendo-listview-text, .15 )) !default;
+$kendo-listview-item-focus-shadow: inset 0 0 0 3px color-mix(in srgb, k-color( on-app-surface ) 15%, transparent) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/listview/_variables.scss" with (

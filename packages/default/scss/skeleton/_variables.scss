@@ -16,7 +16,7 @@ $kendo-skeleton-rect-border-radius: 0 !default;
 /// @group skeleton
 $kendo-skeleton-circle-border-radius: 9999px !default;
 
-$kendo-skeleton-item-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $kendo-color-inverse, .2 )) !default;
+$kendo-skeleton-item-bg: color-mix(in srgb, k-color( on-app-surface ) 20%, transparent) !default;
 
 $kendo-skeleton-wave-bg: rgba( black, .04 ) !default;
 

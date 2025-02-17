@@ -80,8 +80,8 @@
 
         .k-disabled:not(.k-selected) {
             @include fill (
-                $bg: var( --kendo-disabled-bg, inherit ),
-                $border: var( --kendo-disabled-border, inherit )
+                $bg: k-color( base-subtle ),
+                $border: transparent
             );
         }
     }

@@ -67,4 +67,4 @@ $kendo-floating-label-focus-text: inherit !default;
 
 /// The invalid text color of the Floating Label.
 /// @group floating-label
-$kendo-floating-label-invalid-text: var( --kendo-invalid-text, #{$kendo-invalid-text} ) !default;
+$kendo-floating-label-invalid-text: k-color( error-on-surface ) !default;

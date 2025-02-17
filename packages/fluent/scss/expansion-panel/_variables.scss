@@ -19,27 +19,27 @@ $kendo-expander-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The text color of the ExpansionPanel.
 /// @group expander
-$kendo-expander-text: var( --kendo-component-text, initial ) !default;
+$kendo-expander-text: k-color( on-app-surface ) !default;
 /// The background color of the ExpansionPanel.
 /// @group expander
-$kendo-expander-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
+$kendo-expander-bg: k-color( surface ) !default;
 /// The border color of the ExpansionPanel.
 /// @group expander
-$kendo-expander-border: var( --kendo-component-border, initial ) !default;
+$kendo-expander-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 /// The box shadow of the ExpansionPanel.
 /// @group expander
-$kendo-expander-shadow: inset 0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 16%, transparent), k-get-theme-color-var( neutral-30 )) !default;
+$kendo-expander-shadow: inset 0 0 0 2px color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 
 /// The background color of the expanded ExpansionPanel.
 /// @group expander
-$kendo-expander-expanded-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-expander-expanded-bg: k-color( surface-alt ) !default;
 
 /// The text color of the disabled ExpansionPanel.
 /// @group expander
-$kendo-expander-disabled-text: var( --kendo-disabled-text, initial ) !default;
+$kendo-expander-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
 /// The background color of the disabled ExpansionPanel.
 /// @group expander
-$kendo-expander-disabled-bg: var( --kendo-disabled-bg, initial ) !default;
+$kendo-expander-disabled-bg: k-color( base-subtle ) !default;
 
 /// The offset of the focused ExpansionPanel.
 /// @group expander
@@ -52,14 +52,14 @@ $kendo-expander-focus-outline-width: 1px !default;
 $kendo-expander-focus-outline-style: solid !default;
 /// The outline color of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-outline: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
+$kendo-expander-focus-outline: k-color( base-emphasis ) !default;
 
 /// The background color of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-expander-focus-bg: k-color( surface-alt ) !default;
 /// The box shadow of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-shadow: inset 0px 0px 0px 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
+$kendo-expander-focus-shadow: inset 0px 0px 0px 2px k-color( base-emphasis ) !default;
 
 /// The horizontal padding of the ExpansionPanel header.
 /// @group expander
@@ -70,22 +70,22 @@ $kendo-expander-header-padding-y: k-spacing(3) !default;
 
 /// The text color of the ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+$kendo-expander-header-text: k-color( primary ) !default;
 /// The background color of the ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-bg: inherit !default;
 
 /// The background color of the hovered ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 )) !default;
+$kendo-expander-header-hover-bg: k-color( base-hover ) !default;
 
 /// The text color of the ExpansionPanel title.
 /// @group expander
-$kendo-expander-title-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+$kendo-expander-title-text: k-color( primary ) !default;
 
 /// The text color of the ExpansionPanel sub-title.
 /// @group expander
-$kendo-expander-header-sub-title-text: var( --kendo-subtle-text, initial ) !default;
+$kendo-expander-header-sub-title-text: k-color( subtle ) !default;
 
 /// The horizontal margin of the ExpansionPanel indicator.
 /// @group expander

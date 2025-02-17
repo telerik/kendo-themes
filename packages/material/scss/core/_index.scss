@@ -17,7 +17,6 @@
 @forward "../_variables.scss";
 
 @forward "@progress/kendo-theme-core/scss/index.scss" with (
-    $kendo-enable-color-system: $kendo-enable-color-system !default,
     // Color System
     $_default-colors: $kendo-colors,
     $kendo-colors: $kendo-colors !default,
@@ -46,7 +45,13 @@
     // Spacing
     $_default-spacing: $kendo-spacing,
     $kendo-spacing: $kendo-spacing !default,
+
+    $kendo-disabled-styling: (
+        bg: null,
+        color: k-color( on-app-surface ),
+        border: null,
+        opacity: 0.6,
+        filter: grayscale(0.1)
+    ) !default,
 );
 
-// Backward compatibility
-@forward "./color-system/_swatch-legacy.scss";

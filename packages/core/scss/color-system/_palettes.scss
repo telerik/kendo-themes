@@ -280,5 +280,3 @@ $kendo-palette-lavender-purple: map.merge($_default-palette-lavender-purple, $ke
 $kendo-palette-flamingo-pink: $_default-palette-flamingo-pink !default;
 $kendo-palette-flamingo-pink: map.merge($_default-palette-flamingo-pink, $kendo-palette-flamingo-pink);
 // stylelint-enable scss/no-global-function-names
-
-$kendo-palettes: () !default;

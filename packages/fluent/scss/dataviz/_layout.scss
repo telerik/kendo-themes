@@ -398,12 +398,12 @@
 
     // export variables to allow use in scripts
     $exported: (
-        primary-contrast: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white),
-        base: $kendo-component-bg,
-        background: $kendo-component-bg,
+        primary-contrast: k-color( app-surface ),
+        base: k-color( surface-alt ),
+        background: k-color( surface-alt ),
 
-        normal-background: $kendo-component-bg,
-        normal-text-color: $kendo-component-text,
+        normal-background: k-color( surface-alt ),
+        normal-text-color: k-color( on-app-surface ),
 
         series-a: $kendo-series-a,
         series-b: $kendo-series-b,
@@ -444,7 +444,7 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-series-f,
-        gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-30 )),
+        gauge-track: k-color( base-emphasis ),
 
         chart-font-size: $kendo-chart-font-size,
         chart-title-font-size: $kendo-chart-title-font-size,
@@ -486,7 +486,7 @@
     }
 
     $_css-vars: (
-        chart-primary-contrast: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white),
+        chart-primary-contrast: k-color( app-surface ),
         chart-bg: $kendo-chart-bg,
         chart-text: $kendo-chart-text,
 
@@ -540,7 +540,7 @@
         chart-series-30: $kendo-series-30,
 
         chart-gauge-pointer: $kendo-series-f,
-        chart-gauge-track: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-30 ))
+        chart-gauge-track: k-color( base-emphasis )
 
     );
 

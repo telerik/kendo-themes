@@ -259,7 +259,7 @@
         }
 
         &.k-disabled {
-            color: var( --kendo-disabled-text, inherit );
+            color: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent);
         }
     }
 

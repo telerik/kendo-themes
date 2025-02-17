@@ -37,16 +37,16 @@ $kendo-rating-label-line-height: $kendo-line-height-lg !default;
 
 /// The text color of the Rating icon.
 /// @group rating
-$kendo-rating-icon-text: $kendo-component-text !default;
+$kendo-rating-icon-text: k-color( on-app-surface ) !default;
 /// The text color of the selected Rating icon.
 /// @group rating
-$kendo-rating-icon-selected-text: $kendo-selected-bg !default;
+$kendo-rating-icon-selected-text: k-color( primary ) !default;
 /// The text color of the hovered Rating icon.
 /// @group rating
-$kendo-rating-icon-hover-text: $kendo-selected-bg !default;
+$kendo-rating-icon-hover-text: k-color( primary ) !default;
 /// The text color of the focused Rating icon.
 /// @group rating
-$kendo-rating-icon-focus-text: $kendo-selected-bg !default;
+$kendo-rating-icon-focus-text: k-color( primary ) !default;
 
 /// The shadow of the focused Rating icon.
 /// @group rating

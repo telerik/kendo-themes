@@ -30,59 +30,59 @@
                 &:focus,
                 &.k-focus {
                     @include box-shadow( none );
-                    @include fill( $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-active ), k-try-tint( $color, 88% )) );
+                    @include fill( $bg: k-color( #{$name}-subtle-active ));
                 }
             } @else if ($name == "warning") {
                 @include fill(
-                    $color: if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), k-color( on-app-surface )))
+                    $color: k-color( on-app-surface )
                 );
 
                 &:focus,
                 &.k-focus {
                     @include box-shadow( none );
-                    @include fill( $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-active ), k-try-tint( $color, 65% )) );
+                    @include fill( $bg: k-color( #{$name}-subtle-active ));
                 }
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-hover ), k-try-tint( $color, 80% )),
-                        $color: if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), k-color( on-app-surface )))
+                        $bg: k-color( #{$name}-subtle-hover ),
+                        $color: k-color( on-app-surface )
                     );
                 }
 
                 &.k-selected {
                     @include fill(
-                        $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-active ), k-try-tint( $color, 65% )),
-                        $color: if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), k-color( on-app-surface )))
+                        $bg: k-color( #{$name}-subtle-active ),
+                        $color: k-color( on-app-surface )
                     );
                 }
             } @else {
                 @include fill(
-                    $color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), k-try-shade( $color, 50% ))
+                    $color: k-color( #{$name}-on-surface )
                 );
 
                 &:focus,
                 &.k-focus {
                     @include box-shadow( none );
                     @include fill(
-                        $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-active ), k-try-tint( $color, 65% )),
-                        $color: if($kendo-enable-color-system, k-color( #{$name}-on-subtle ), k-try-shade( $color, 50% ))
+                        $bg: k-color( #{$name}-subtle-active ),
+                        $color: k-color( #{$name}-on-subtle )
                     );
                 }
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-hover ), k-try-tint( $color, 80% )),
-                        $color: if($kendo-enable-color-system, k-color( #{$name}-on-subtle ), k-try-shade( $color, 50% ))
+                        $bg: k-color( #{$name}-subtle-hover ),
+                        $color: k-color( #{$name}-on-subtle )
                     );
                 }
 
                 &.k-selected {
                     @include fill(
-                        $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-active ), k-try-tint( $color, 65% )),
-                        $color: if($kendo-enable-color-system, k-color( #{$name}-on-subtle ), k-try-shade( $color, 50% ))
+                        $bg: k-color( #{$name}-subtle-active ),
+                        $color: k-color( #{$name}-on-subtle )
                     );
                 }
             }

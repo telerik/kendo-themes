@@ -1,5 +1,5 @@
+@use "../../color-system/_functions.import.scss" as *;
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-panel--theme--base() {
@@ -14,9 +14,9 @@
 
         > .k-header {
             @include fill(
-                var( --kendo-component-text, #{$kendo-component-text} ),
-                var( --kendo-component-bg, #{$kendo-component-bg} ),
-                var( --kendo-component-border, #{$kendo-component-border} )
+                k-color( on-app-surface ),
+                k-color( surface-alt ),
+                k-color( border )
             );
         }
     }

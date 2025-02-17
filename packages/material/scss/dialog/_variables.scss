@@ -30,9 +30,9 @@ $kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
 /// The theme colors map for the Dialog.
 /// @group dialog
 $kendo-dialog-theme-colors: (
-    "primary": map.get($kendo-theme-colors, "primary"),
-    "light": map.get($kendo-theme-colors, "light"),
-    "dark": map.get($kendo-theme-colors, "dark")
+    "primary": k-color( primary ),
+    "light": k-color( light ),
+    "dark": k-color( dark )
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/dialog/_variables.scss" with (

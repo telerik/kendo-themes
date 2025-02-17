@@ -20,13 +20,13 @@ $kendo-file-manager-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-file-manager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the FileManager.
 /// @group file-manager
-$kendo-file-manager-bg: var( --kendo-component-bg, transparent ) !default;
+$kendo-file-manager-bg: k-color( surface-alt ) !default;
 /// The text color of the FileManager.
 /// @group file-manager
-$kendo-file-manager-text: var( --kendo-component-text, inherit ) !default;
+$kendo-file-manager-text: k-color( on-app-surface ) !default;
 /// The border color of the FileManager.
 /// @group file-manager
-$kendo-file-manager-border: var( --kendo-component-border, inherit ) !default;
+$kendo-file-manager-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 
 /// The border width of the FileManager Toolbar.
 /// @group file-manager
@@ -110,7 +110,7 @@ $kendo-file-manager-listview-item-height: 120px !default;
 $kendo-file-manager-listview-item-icon-bg: transparent !default;
 /// The text color of the FileManager ListView item icon.
 /// @group file-manager
-$kendo-file-manager-listview-item-icon-text: var( --kendo-subtle-text, inherit ) !default;
+$kendo-file-manager-listview-item-icon-text: k-color( subtle ) !default;
 /// The border color of the FileManager ListView item icon.
 /// @group file-manager
 $kendo-file-manager-listview-item-icon-border: inherit !default;
@@ -176,7 +176,7 @@ $kendo-file-manager-preview-border: inherit !default;
 $kendo-file-manager-preview-icon-bg: transparent !default;
 /// The text color of the FileManager preview icon.
 /// @group file-manager
-$kendo-file-manager-preview-icon-text: var( --kendo-subtle-text, inherit ) !default;
+$kendo-file-manager-preview-icon-text: k-color( subtle ) !default;
 /// The border color of the FileManager preview icon.
 /// @group file-manager
 $kendo-file-manager-preview-icon-border: inherit !default;

@@ -1,5 +1,5 @@
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-upload--theme-base() {
@@ -88,7 +88,7 @@
         .k-file-size,
         .k-file-validation-message,
         .k-file-summary {
-            color: $kendo-subtle-text;
+            color: k-color( subtle );
         }
 
         .k-multiple-files-wrapper .k-file-summary {
@@ -99,7 +99,7 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: $kendo-invalid-border;
+            border-color: k-color( error )
         }
     }
 
