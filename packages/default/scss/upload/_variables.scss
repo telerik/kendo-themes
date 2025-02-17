@@ -21,13 +21,13 @@ $kendo-upload-max-height: 300px !default;
 
 /// The text color of the Upload.
 /// @group upload
-$kendo-upload-text: $kendo-component-text !default;
+$kendo-upload-text: k-color( on-app-surface ) !default;
 /// The background color of the Upload.
 /// @group upload
-$kendo-upload-bg: $kendo-component-bg !default;
+$kendo-upload-bg: k-color( surface-alt ) !default;
 /// The border color of the Upload.
 /// @group upload
-$kendo-upload-border: $kendo-component-border !default;
+$kendo-upload-border: k-color( border ) !default;
 
 /// The horizontal padding of the Upload dropzone.
 /// @group upload
@@ -37,20 +37,20 @@ $kendo-upload-dropzone-padding-x: k-spacing(2) !default;
 $kendo-upload-dropzone-padding-y: k-spacing(2) !default;
 /// The text color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-text: $kendo-component-header-text !default;
+$kendo-upload-dropzone-text: k-color( on-app-surface ) !default;
 /// The background color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-bg: $kendo-component-header-bg !default;
+$kendo-upload-dropzone-bg: k-color( surface )!default;
 /// The border color of the Upload dropzone.
 /// @group upload
 $kendo-upload-dropzone-border: $kendo-upload-border !default;
 /// The background color of the hovered Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-hover-bg: $kendo-hover-bg !default;
+$kendo-upload-dropzone-hover-bg: k-color( base-hover ) !default;
 
 /// The text color of the Upload status message.
 /// @group upload
-$kendo-upload-status-text: $kendo-subtle-text !default;
+$kendo-upload-status-text: k-color( subtle ) !default;
 /// The opacity of the Upload status message.
 /// @group upload
 $kendo-upload-status-text-opacity: null !default;
@@ -77,28 +77,28 @@ $kendo-upload-validation-line-height: var( --kendo-line-height-xs, normal ) !def
 $kendo-upload-icon-spacing: $kendo-icon-spacing !default;
 /// The color of the uploaded items icon.
 /// @group upload
-$kendo-upload-icon-color: $kendo-subtle-text !default;
+$kendo-upload-icon-color: k-color( subtle ) !default;
 
 /// The thickness of the Upload progress bar.
 /// @group upload
 $kendo-upload-progress-thickness: 2px !default;
 /// The background color of the Upload progress bar.
 /// @group upload
-$kendo-upload-progress-bg: $kendo-color-info !default;
+$kendo-upload-progress-bg: k-color( info ) !default;
 
 /// The success text color of the Upload.
 /// @group upload
-$kendo-upload-success-text: $kendo-color-success !default;
+$kendo-upload-success-text: k-color( success ) !default;
 /// The success background color of the Upload progress bar.
 /// @group upload
-$kendo-upload-success-bg: $kendo-color-success !default;
+$kendo-upload-success-bg: k-color( success ) !default;
 
 /// The error text color of the Upload.
 /// @group upload
-$kendo-upload-error-text: $kendo-color-error !default;
+$kendo-upload-error-text: k-color( error ) !default;
 /// The error background color of the Upload progress bar.
 /// @group upload
-$kendo-upload-error-bg: $kendo-color-error !default;
+$kendo-upload-error-bg: k-color( error ) !default;
 
 /// The shadow of the focused Upload button, actions and uploaded items.
 /// @group upload
