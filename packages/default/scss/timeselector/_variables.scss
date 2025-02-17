@@ -9,9 +9,9 @@ $kendo-time-selector-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-time-selector-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-time-selector-line-height: var( --kendo-line-height, normal ) !default;
 
-$kendo-time-selector-bg: $kendo-component-bg !default;
-$kendo-time-selector-text: $kendo-component-text !default;
-$kendo-time-selector-border: $kendo-component-border !default;
+$kendo-time-selector-bg: k-color( surface-alt ) !default;
+$kendo-time-selector-text: k-color( on-app-surface ) !default;
+$kendo-time-selector-border: k-color( border ) !default;
 
 $kendo-time-selector-header-padding-x: $kendo-actions-padding-x !default;
 $kendo-time-selector-header-padding-y: $kendo-actions-padding-y !default;
@@ -25,16 +25,16 @@ $kendo-time-list-height: 240px !default;
 $kendo-time-list-title-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-time-list-title-line-height: var( --kendo-line-height-lg, normal ) !default;
 $kendo-time-list-title-height: calc( ( #{$kendo-time-list-title-font-size} ) * ( #{$kendo-time-list-title-line-height} ) ) !default;
-$kendo-time-list-title-text: $kendo-subtle-text !default;
-$kendo-time-list-title-focus-text: $kendo-component-text !default;
+$kendo-time-list-title-text: k-color( subtle ) !default;
+$kendo-time-list-title-focus-text: k-color( on-app-surface ) !default;
 
 $kendo-time-list-item-padding-x: $kendo-list-md-item-padding-x !default;
 $kendo-time-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
 $kendo-time-list-highlight-border-width: 1px 0px !default;
 $kendo-time-list-highlight-height: calc( calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} ) + calc( #{$kendo-time-list-item-padding-y} * 2 ) ) !default;
-$kendo-time-list-highlight-bg: $kendo-component-bg !default;
-$kendo-time-list-highlight-border: $kendo-component-border !default;
+$kendo-time-list-highlight-bg: k-color( surface-alt ) !default;
+$kendo-time-list-highlight-border: k-color( border ) !default;
 
 $kendo-time-list-focus-bg: rgba(0, 0, 0, .04) !default;
 
@@ -76,6 +76,9 @@ $kendo-time-selector-sizes: (
     )
 ) !default;
 
+$kendo-time-selector-now-button-text: k-color(primary) !default;
+$kendo-time-selector-now-button-hover-text: k-color(primary-hover) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/timeselector/_variables.scss" with (
     $kendo-time-selector-border-width: $kendo-time-selector-border-width,
     $kendo-time-selector-font-family: $kendo-time-selector-font-family,
@@ -114,5 +117,7 @@ $kendo-time-selector-sizes: (
     $kendo-time-selector-lg-line-height: $kendo-time-selector-lg-line-height,
     $kendo-time-selector-lg-list-item-padding-x: $kendo-time-selector-lg-list-item-padding-x,
     $kendo-time-selector-lg-list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y,
-    $kendo-time-selector-sizes: $kendo-time-selector-sizes
+    $kendo-time-selector-sizes: $kendo-time-selector-sizes,
+    $kendo-time-selector-now-button-text: $kendo-time-selector-now-button-text,
+    $kendo-time-selector-now-button-hover-text: $kendo-time-selector-now-button-hover-text
 );
