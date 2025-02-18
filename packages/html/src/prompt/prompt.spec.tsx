@@ -6,15 +6,10 @@ const states = [];
 
 const options = {};
 
-export type KendoPromptProps = {
-    positionMode: "absolute" | "fixed";
-};
-
 const defaultOptions = {};
 
 export const Prompt = (
     props:
-        KendoPromptProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {

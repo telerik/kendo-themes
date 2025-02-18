@@ -11,3 +11,4 @@ export * from './templates/prompt-settings';
 export * from './templates/prompt-output';
 export * from './templates/prompt-more-actions';
 export * from './templates/prompt-popup';
+export * from './templates/prompt-inline';
