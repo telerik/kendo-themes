@@ -1,7 +1,6 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../motion/index.import.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
@@ -93,7 +92,7 @@
     .k-breadcrumb-delimiter,
     .k-breadcrumb-delimiter-icon {
         color: inherit;
-        opacity: $kendo-disabled-opacity;
+        opacity: map.get( $kendo-disabled-styling, opacity );
     }
 
 

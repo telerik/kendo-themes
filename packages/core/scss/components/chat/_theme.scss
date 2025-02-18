@@ -1,5 +1,4 @@
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../motion/index.import.scss" as *;
 @use "../../color-system/_functions.import.scss" as *;
 @use "../../_variables.scss" as *;
@@ -39,8 +38,8 @@
             transition: $kendo-transition;
             order: -1;
 
-            a { color: $kendo-link-text; }
-            a:hover { color: $kendo-link-hover-text; }
+            a { color: k-color( primary ); }
+            a:hover { color: k-color( primary-hover ); }
         }
         .k-chat-bubble:hover {
             @include box-shadow( $kendo-chat-bubble-hover-shadow );
@@ -84,7 +83,7 @@
 
             &:focus,
             &.k-focus {
-                @include focus-indicator( 0 0 $kendo-chat-quick-reply-shadow-blur $kendo-chat-quick-reply-shadow-spread if($kendo-enable-color-system, color-mix(in srgb, k-color( 'primary' ) ( $kendo-chat-quick-reply-shadow-opacity * 100% ), transparent), rgba( $kendo-color-primary, $kendo-chat-quick-reply-shadow-opacity )), true, true );
+                @include focus-indicator( 0 0 $kendo-chat-quick-reply-shadow-blur $kendo-chat-quick-reply-shadow-spread color-mix(in srgb, k-color( 'primary' ) ( $kendo-chat-quick-reply-shadow-opacity * 100% ), transparent), true, true );
             }
         }
     }

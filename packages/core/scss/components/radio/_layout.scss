@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../spacing/index.import.scss" as *;
+@use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-radio--layout-base() {

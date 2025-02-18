@@ -1,7 +1,6 @@
 @use "../../color-system/_functions.import.scss" as *;
 @use "../../mixins/index.import.scss" as *;
 @use "../../functions/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
@@ -35,7 +34,7 @@
     }
 
     .k-scheduler-header {
-        background-color: $kendo-base-bg;
+        background-color: $kendo-scheduler-header-bg;
     }
 
     .k-scheduler-header-wrap {
@@ -74,7 +73,7 @@
 
     .k-scheduler-layout td.k-selected,
     .k-scheduler-layout .k-scheduler-cell.k-selected {
-        background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25));
+        background-color: color-mix(in srgb, k-color( primary ) 25%, transparent);
     }
 
     .k-scheduler-layout-flex {
@@ -117,7 +116,7 @@
         }
 
         &.k-event-inverse {
-            color: if($kendo-enable-color-system, if($kendo-enable-focus-contrast, black, k-color( on-app-surface )), k-contrast-legacy( $kendo-scheduler-event-text ));
+            color: if($kendo-enable-focus-contrast, black, k-color( on-app-surface ));
         }
 
         &.k-event-ongoing {
@@ -134,7 +133,7 @@
     .k-scheduler-marquee {}
     .k-scheduler-marquee::before,
     .k-scheduler-marquee::after {
-        border-color: $kendo-color-primary;
+        border-color: k-color( primary );
     }
 
     // Edit dialog
@@ -171,10 +170,10 @@
         .k-scheduler-content .k-scheduler-row:hover,
         .k-scheduler-content .k-scheduler-row.k-hover {
             @include fill(
-                $kendo-hover-text,
-                $kendo-hover-bg,
-                $kendo-hover-border,
-                $kendo-hover-gradient
+                k-color( on-app-surface ),
+                k-color( base-hover ),
+                k-color( border ),
+                null
             );
         }
 
@@ -191,7 +190,7 @@
 
         // Selected
         .k-scheduler-content tr.k-selected {
-            background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25));
+            background-color: color-mix(in srgb, k-color( primary ) 25%, transparent);
         }
         .k-scheduler-content tr.k-selected .k-scheduler-datecolumn,
         .k-scheduler-content tr.k-selected .k-scheduler-groupcolumn {
