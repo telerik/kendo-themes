@@ -58,6 +58,7 @@
         @include kendo-grid--layout();
         @include kendo-grid--theme();
         @include kendo-utils--interactivity--touch-action();
+        @include kendo-utils--interactivity--user-select();
         @include kendo-utils--interactivity--cursor();
         @include kendo-utils--layout--display();
     }
