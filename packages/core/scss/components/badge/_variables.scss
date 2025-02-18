@@ -1,3 +1,5 @@
+@use "../../color-system/_swatch.scss" as *;
+
 // Badge
 
 $kendo-badge-border-width: null !default;
@@ -31,3 +33,5 @@ $kendo-badge-md-min-width: null !default;
 $kendo-badge-lg-min-width: null !default;
 
 $kendo-badge-sizes: null !default;
+
+$kendo-badge-theme-colors: null !default;
