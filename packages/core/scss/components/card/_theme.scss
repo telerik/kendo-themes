@@ -1,6 +1,5 @@
 @use "../../mixins/index.import.scss" as *;
 @use "../../functions/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../color-system/_functions.import.scss" as *;
 @use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
@@ -54,6 +53,10 @@
         @include fill( $kendo-card-footer-text, $kendo-card-footer-bg, $kendo-card-footer-border );
     }
 
+    // Body
+    .k-card-body {
+        border-color: inherit;
+    }
 
     // Separator
     .k-card-separator,
@@ -69,11 +72,11 @@
 
 
     // Card theme colors
-    @each $name, $color in $kendo-theme-colors {
+    @each $name, $color in $kendo-card-theme-colors {
         .k-card-#{$name} {
-            background-color: if($kendo-enable-color-system, k-color( #{$name}-subtle ), k-color-tint($color, 10));
-            color: if($kendo-enable-color-system, k-color( #{$name}-on-subtle ), k-color-shade($color, 6));
-            border-color: if($kendo-enable-color-system, k-color( #{$name}-emphasis ), k-color-tint($color, 9));
+            background-color: k-color( #{$name}-subtle );
+            color: k-color( #{$name}-on-subtle );
+            border-color: k-color( #{$name}-emphasis );
 
             .k-card-subtitle {
                 color: inherit;

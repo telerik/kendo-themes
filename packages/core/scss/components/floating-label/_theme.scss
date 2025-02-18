@@ -1,5 +1,5 @@
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-floating-label--theme-base() {
@@ -24,7 +24,7 @@
         &.k-invalid > .k-floating-label,
         &.ng-invalid.ng-touched > .k-floating-label,
         &.ng-invalid.ng-dirty > .k-floating-label {
-            @include fill ( $color: $kendo-invalid-text );
+            @include fill ( $color: k-color( error ) );
         }
     }
 

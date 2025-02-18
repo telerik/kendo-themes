@@ -424,6 +424,20 @@ $_default-colors: (
 $kendo-colors: $_default-colors !default;
 $kendo-colors: map.merge($_default-colors, $kendo-colors);
 
+$kendo-component-colors: (
+    "primary": k-color( primary ),
+    "secondary": k-color( secondary ),
+    "tertiary": k-color( tertiary ),
+    "info": k-color( info ),
+    "success": k-color( success ),
+    "warning": k-color( warning ),
+    "error": k-color( error ),
+    "dark": k-color( dark ),
+    "light": k-color( light ),
+    "inverse": k-color( inverse )
+
+) !default;
+
 @mixin kendo-color-system--styles() {
     @if ($kendo-enable-color-system) {
         :root {

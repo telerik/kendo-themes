@@ -1,6 +1,6 @@
-@use "../../color-system/_swatch-legacy.scss" as *;
-@use "./_variables.scss" as *;
 @use "sass:map";
+@use "../../color-system/_functions.import.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-badge--layout-base() {
 
@@ -143,7 +143,7 @@
 
     // Border cutout
     .k-badge-border-cutout {
-        box-shadow: 0 0 0 2px $kendo-component-bg;
+        box-shadow: 0 0 0 2px k-color( surface-alt );
     }
 
 }
