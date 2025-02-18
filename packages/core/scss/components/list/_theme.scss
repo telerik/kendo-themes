@@ -64,7 +64,7 @@
         &.k-selected:hover,
         &.k-selected.k-hover {
             color: $kendo-list-item-selected-text;
-            background-color: if($kendo-enable-color-system, k-color( primary-hover ), k-color-shade( $kendo-list-item-selected-bg ));
+            background-color: k-color( primary-hover );
         }
     }
 
