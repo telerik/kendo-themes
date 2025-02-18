@@ -36,6 +36,10 @@
             background-color: $kendo-grid-hover-bg;
         }
 
+        .k-table-td-row-span {
+            box-shadow: $kendo-grid-cell-row-span;
+        }
+
         // Selected state
         .k-table-th.k-selected,
         td.k-selected,

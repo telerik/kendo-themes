@@ -12992,6 +12992,16 @@ The following table lists the available variables for customizing the Material t
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Grid row resize indicator.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-grid-cell-row-span</td>
+    <td>List</td>
+    <td><code>inset 0 0 0 1px $kendo-table-border</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-border, rgba(0, 0, 0, 0.12)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the row spanned cells.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

@@ -328,6 +328,10 @@ $kendo-grid-row-resizer-active-bg: $kendo-color-primary !default;
 /// @group grid
 $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
 
+/// The box shadow of the row spanned cells.
+/// @group grid
+$kendo-grid-cell-row-span: inset 0 0 0 1px $kendo-table-border !default;
+
 
 @forward "@progress/kendo-theme-core/scss/components/grid/_variables.scss" with (
     $kendo-grid-border-width: $kendo-grid-border-width,
@@ -472,5 +476,6 @@ $kendo-grid-row-resizer-height: k-spacing(0.5) !default;
     $kendo-grid-group-footer-second-cell-border: $kendo-grid-group-footer-second-cell-border,
     $kendo-grid-row-resizer-hover-bg: $kendo-grid-row-resizer-hover-bg,
     $kendo-grid-row-resizer-active-bg: $kendo-grid-row-resizer-active-bg,
-    $kendo-grid-row-resizer-height: $kendo-grid-row-resizer-height
+    $kendo-grid-row-resizer-height: $kendo-grid-row-resizer-height,
+    $kendo-grid-cell-row-span: $kendo-grid-cell-row-span
 );
