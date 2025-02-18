@@ -13,10 +13,6 @@ jobs:
   run:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        theme: [default, bootstrap, material, classic, fluent]
-
     steps:
 
       - name: Checkout branch
