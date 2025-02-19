@@ -123,7 +123,7 @@
         td,
         .k-table-td {
             border-block-end-width: $kendo-grid-cell-horizontal-border-width;
-            white-space: unset;
+            white-space: nowrap;
             vertical-align: middle;
         }
 
