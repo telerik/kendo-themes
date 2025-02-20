@@ -1,5 +1,5 @@
 
-import { classNames, stateClassNames, States } from '../misc';
+import { classNames, stateClassNames, States, ThemeColor } from '../misc';
 import { Icon } from '../icon';
 
 export const DRAWERITEM_CLASSNAME = `k-drawer-item`;
@@ -11,7 +11,20 @@ const states = [
     States.disabled
 ];
 
-const options = { };
+const options = {
+    iconThemeColor: [
+        ThemeColor.base,
+        ThemeColor.primary,
+        ThemeColor.secondary,
+        ThemeColor.tertiary,
+        ThemeColor.success,
+        ThemeColor.warning,
+        ThemeColor.error,
+        ThemeColor.info,
+        ThemeColor.light,
+        ThemeColor.dark
+    ],
+};
 
 const defaultOptions = {
     level: 0
@@ -19,6 +32,7 @@ const defaultOptions = {
 
 export type KendoDrawerItemProps = {
     icon?: string;
+    iconThemeColor?: (typeof options.iconThemeColor)[number];
     text?: string;
     link?: boolean;
     expanded?: boolean;
@@ -35,6 +49,7 @@ export const DrawerItem = (
 ) => {
     const {
         icon,
+        iconThemeColor,
         text,
         level = defaultOptions.level,
         hover,
@@ -59,7 +74,7 @@ export const DrawerItem = (
                 [`k-level-${level}`]: level || level === 0
             }
         )}>
-            {icon && ( <Icon icon= {icon}/> )}
+            {icon && ( <Icon icon= {icon} themeColor={iconThemeColor} /> )}
             {text && ( <span className="k-item-text">{text}</span> )}
             {hasChildren && (
                 <>
