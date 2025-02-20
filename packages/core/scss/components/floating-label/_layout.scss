@@ -1,8 +1,8 @@
+@use "sass:map";
 @use "./_variables.scss" as *;
+// @use "../input/_variables.scss" as *;
 
 @mixin kendo-floating-label--layout-base() {
-
-
     // Floating label
     .k-floating-label-container {
         padding-top: $kendo-floating-label-height;
@@ -34,30 +34,82 @@
             transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, left $kendo-floating-label-transition;
         }
 
-
         &.k-empty {
+            > .k-floating-label {
+                transform: scale($kendo-floating-label-scale);
+                pointer-events: none;
+            }
+        }
+
+        // outside
+        &.k-empty.k-label-position-outside {
             > .k-floating-label {
                 top: var(--kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y});
                 left: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
-                transform: scale( $kendo-floating-label-scale );
-                pointer-events: none;
+            }
+        }
+
+        // focus
+        &.k-empty.k-label-position-border {
+            > .k-floating-label {
+                top: var(--kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y});
+                left: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
+            }
+        }
+
+        // within
+        &.k-empty.k-label-position-within {
+            > .k-floating-label {
+                top: var(--kendo-floating-label-offset-y, #{"15px"});
+                left: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
             }
         }
 
         > .k-floating-label,
         &.k-focus > .k-floating-label {
-            top: var(--kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y});
-            left: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
-            transform: scale( $kendo-floating-label-focus-scale );
+            transform: scale($kendo-floating-label-focus-scale);
         }
         &:focus-within > .k-floating-label {
+            transform: scale($kendo-floating-label-focus-scale);
+        }
+
+        //focus outside
+        &.k-label-position-outside > .k-floating-label,
+        &:focus-within.k-label-position-outside > .k-floating-label,
+        &.k-focus.k-label-position-outside > .k-floating-label {
             top: var(--kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y});
             left: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
-            transform: scale( $kendo-floating-label-focus-scale );
+            transform: scale($kendo-floating-label-focus-scale);
+        }
+
+        //focus border
+        &.k-label-position-border > .k-floating-label,
+        &:focus-within.k-label-position-border > .k-floating-label,
+        &.k-focus.k-label-position-border > .k-floating-label {
+            top: var(--kendo-floating-label-focus-offset-y, #{"10px"});
+            left: var(--kendo-floating-label-focus-offset-x, #{"5px"});
+            transform: scale($kendo-floating-label-focus-scale);
+            background-color: var(--kendo-color-app-surface);
+        }
+
+        //focus within
+        &.k-label-position-within > .k-floating-label,
+        &:focus-within.k-label-position-within > .k-floating-label,
+        &.k-focus.k-label-position-within > .k-floating-label {
+            top: var(--kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y});
+            left: var(--kendo-floating-label-focus-offset-x, #{"8px"});
+            transform: scale($kendo-floating-label-focus-scale);
         }
 
         &.k-empty:not(.k-focus):not(:focus-within) ::placeholder {
             color: transparent;
+        }
+
+        &.k-label-position-within {
+            padding-top: 0;
+            .k-input-inner {
+                padding-top: $kendo-floating-label-height;
+            }
         }
     }
 
@@ -87,8 +139,18 @@
         }
     }
 
-}
+    // @each $size, $size-props in $kendo-input-sizes {
+    //     $_padding-x: map.get($size-props, padding-x);
+    //     $_padding-y: map.get($size-props, padding-y);
+    //     $_font-size: map.get($size-props, font-size);
+    //     $_line-height: map.get($size-props, line-height);
 
+    //     .k-floating-label-container:has(.k-input-#{$size}) {
+    //         --kendo-floating-label-offset-x: calc(#{$kendo-input-border-width} + #{$_padding-x});
+    //         --kendo-floating-label-offset-y: calc((#{$_line-height} * #{$_font-size}) + #{$kendo-input-border-width} + #{$_padding-y});
+    //     }
+    // }
+}
 
 @mixin kendo-floating-label--layout() {
     @include kendo-floating-label--layout-base();
