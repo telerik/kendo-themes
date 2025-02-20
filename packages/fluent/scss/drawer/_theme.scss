@@ -65,6 +65,10 @@
                     var( --kendo-drawer-item-hover-text, #{$kendo-drawer-item-hover-text} ),
                     var( --kendo-drawer-item-hover-bg, #{$kendo-drawer-item-hover-bg} )
                 );
+
+                .k-icon {
+                    color: var( --kendo-drawer-item-hover-icon-text, #{$kendo-drawer-item-hover-icon-text} );
+                }
             }
         }
 
@@ -84,6 +88,10 @@
                     var( --kendo-drawer-item-selected-hover-text, #{$kendo-drawer-item-selected-hover-text} ),
                     var( --kendo-drawer-item-selected-hover-bg, #{$kendo-drawer-item-selected-hover-bg} )
                 );
+
+                .k-icon {
+                    color: var( --kendo-drawer-item-selected-hover-text, #{$kendo-drawer-item-selected-hover-text} );
+                }
             }
         }
     }
