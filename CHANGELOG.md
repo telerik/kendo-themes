@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.2.1-dev.1...v10.3.0-dev.0) (2025-02-24)
+
+
+### Features
+
+* **html:** add AI Powered Editor Inline Prompt spec ([91967e5](https://github.com/telerik/kendo-themes/commit/91967e58d7f85eb0e67926de81231ece3990cbd2))
+
+
+
+
+
 ## [10.2.1-dev.1](https://github.com/telerik/kendo-themes/compare/v10.2.1-dev.0...v10.2.1-dev.1) (2025-02-17)
 
 **Note:** Version bump only for package kendo-themes.repo
