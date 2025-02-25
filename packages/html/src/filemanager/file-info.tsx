@@ -36,13 +36,16 @@ export const FileInfo = (
         fileSize,
         fileDateCreated,
         fileDateModified,
+        ...other
     } = props;
 
     return (
-        <div className={classNames(
-            props.className,
-            FILEINFO_CLASSNAME,
-        )}>
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                FILEINFO_CLASSNAME,
+            )}>
 
             <FilePreview
                 className={classNames(

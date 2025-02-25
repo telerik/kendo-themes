@@ -25,7 +25,7 @@ export default () =>(
                     <>
                     <div>
                         <div>{size}</div>
-                        <ColorEditorGroup color="rgba(0,0,0, 0.5)" size={size} orientation="vertical"/>
+                        <ColorEditorGroup color="rgba(0,0,0, 0.5)" size={size}/>
                     </div>
                     </>
                 )))

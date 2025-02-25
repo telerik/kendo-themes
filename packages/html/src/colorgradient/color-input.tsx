@@ -29,10 +29,13 @@ export const ColorInput = (
     const {
         mode = defaultOptions.mode,
         size,
+        ...other
     } = props;
 
     return (
-        <div className={classNames(COLOR_INPUT_CLASSNAME, 'k-hstack')}>
+        <div
+            {...other}
+            className={classNames(COLOR_INPUT_CLASSNAME, 'k-hstack')}>
             <div className="k-vstack">
                 <Button fillMode="flat" icon="caret-alt-expand" className="k-colorgradient-toggle-mode" size={size} />
             </div>

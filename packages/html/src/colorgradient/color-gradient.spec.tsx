@@ -69,20 +69,23 @@ export const ColorGradient = (
         hoverHandle,
         focusHandle,
         canvasOrientation = defaultOptions.canvasOrientation,
+        ...other
     } = props;
 
     return (
-        <div className={classNames(
-            props.className,
-            COLOR_GRADIENT_CLASSNAME,
-            optionClassNames(COLOR_GRADIENT_CLASSNAME, {size}),
-            stateClassNames(COLOR_GRADIENT_CLASSNAME, {
-                hover,
-                focus,
-                readonly,
-                disabled
-            })
-        )} dir={dir}>
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                COLOR_GRADIENT_CLASSNAME,
+                optionClassNames(COLOR_GRADIENT_CLASSNAME, {size}),
+                stateClassNames(COLOR_GRADIENT_CLASSNAME, {
+                    hover,
+                    focus,
+                    readonly,
+                    disabled
+                })
+            )} dir={dir}>
             {
                 !canvasOrientation || canvasOrientation === 'horizontal' &&
                 <div className="k-colorgradient-canvas k-hstack">

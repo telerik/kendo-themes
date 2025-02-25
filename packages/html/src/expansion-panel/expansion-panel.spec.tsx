@@ -37,22 +37,25 @@ export const ExpansionPanel = (
         focus,
         disabled,
         dir,
-        contentStyle
+        contentStyle,
+        ...other
     } = props;
 
     return (
-        <div className={classNames(
-            props.className,
-            EXPANSION_PANEL_CLASSNAME,
-            stateClassNames(EXPANSION_PANEL_CLASSNAME, {
-                hover,
-                focus,
-                disabled
-            }),
-            {
-                'k-expanded': expanded,
-            }
-        )} dir={dir}>
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                EXPANSION_PANEL_CLASSNAME,
+                stateClassNames(EXPANSION_PANEL_CLASSNAME, {
+                    hover,
+                    focus,
+                    disabled
+                }),
+                {
+                    'k-expanded': expanded,
+                }
+            )} dir={dir}>
             <div className={classNames(
                 'k-expander-header',
                 stateClassNames(EXPANSION_PANEL_CLASSNAME, {
@@ -63,7 +66,7 @@ export const ExpansionPanel = (
                 <span className="k-spacer"></span>
                 <div className="k-expander-sub-title">{subtitle}</div>
                 <span className="k-expander-indicator">
-                    { !expanded ? <Icon icon="chevron-down" /> : <Icon icon="chevron-up" /> }
+                    {!expanded ? <Icon icon="chevron-down" /> : <Icon icon="chevron-up" />}
                 </span>
             </div>
             <div className={classNames(
