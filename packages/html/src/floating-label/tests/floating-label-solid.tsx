@@ -38,6 +38,16 @@ export default () =>(
                 </FloatingLabelNormal>
             </div>
             <div>
+                <FloatingLabelNormal label="Label optional" optional>
+                    <TextboxNormal />
+                </FloatingLabelNormal>
+            </div>
+            <div dir="rtl">
+                <FloatingLabelNormal label="Label optional" optional>
+                    <TextboxNormal />
+                </FloatingLabelNormal>
+            </div>
+            <div>
                 <FloatingLabelNormal label="Label with placeholder focused" focus>
                     <TextboxNormal placeholder="placeholder" focus />
                 </FloatingLabelNormal>
