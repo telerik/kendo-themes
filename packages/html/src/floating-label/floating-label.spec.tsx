@@ -19,6 +19,7 @@ export type FloatingLabelState = { [K in (typeof states)[number]]?: boolean };
 
 export type KendoFloatingLabelProps = {
     label?: string;
+    optional?: boolean;
 };
 
 export const FloatingLabel = (
@@ -32,6 +33,7 @@ export const FloatingLabel = (
         valid,
         empty,
         label,
+        optional,
         ...other
     } = props;
 
@@ -48,6 +50,7 @@ export const FloatingLabel = (
             { label && (
                 <label className="k-floating-label">
                     {label}
+                    {optional && <span className="k-label-optional">(Optional)</span>}
                 </label>
             )}
         </span>
