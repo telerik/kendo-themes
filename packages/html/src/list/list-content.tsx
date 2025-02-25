@@ -12,10 +12,13 @@ export const ListContent = (
 ) => {
     const {
         virtualization,
+        ...other
     } = props;
 
     return (
-        <div className={classNames(className, props.className)}>
+        <div
+            {...other}
+            className={classNames(className, props.className)}>
             <ul className={classNames('k-list-ul')}>
                 {props.children}
             </ul>

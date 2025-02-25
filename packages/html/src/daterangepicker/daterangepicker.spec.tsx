@@ -5,6 +5,7 @@ import { Button } from '../button';
 import { MultiViewCalendarNormal } from '../multiviewcalendar';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
+import { Input } from '../input';
 
 export const DATERANGEPICKER_CLASSNAME = `k-daterangepicker`;
 
@@ -18,7 +19,11 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
-const defaultOptions = {};
+const defaultOptions = {
+    size: Input.defaultOptions.size,
+    rounded: Input.defaultOptions.rounded,
+    fillMode: Input.defaultOptions.fillMode
+};
 
 export type KendoDateRangePickerOptions = {
     size?: (typeof options.size)[number] | null;

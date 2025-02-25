@@ -45,6 +45,7 @@ export const ProgressBar = (
         reverse = defaultOptions.reverse,
         value = defaultOptions.value,
         width,
+        style,
         ...other
     } = props;
 
@@ -62,7 +63,13 @@ export const ProgressBar = (
                     [`${PROGRESSBAR_CLASSNAME}-indeterminate`]: indeterminate,
                     [`${PROGRESSBAR_CLASSNAME}-reverse`]: reverse,
                 }
-            )} style={ orientation === "horizontal" ? { "--kendo-progressbar-value": value, height: height } as React.CSSProperties : { "--kendo-progressbar-value": value, width: width } as React.CSSProperties } >
+            )}
+            style={{
+                ...style,
+                "--kendo-progressbar-value": value,
+                [orientation === "horizontal" ? "height" : "width"]: orientation === "horizontal" ? height : width
+            } as React.CSSProperties}
+        >
             <span className={classNames(
                 'k-progress-status-wrap',
                 {

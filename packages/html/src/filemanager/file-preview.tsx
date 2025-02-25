@@ -30,13 +30,16 @@ export const FilePreview = (
         size,
         icon,
         name,
+        ...other
     } = props;
 
     return (
         <>
-            <span className={classNames(
-                FILEPREVIEW_CLASSNAME,
-            )}>
+            <span
+                {...other}
+                className={classNames(
+                    FILEPREVIEW_CLASSNAME,
+                )}>
                 <Icon className="k-file-icon"
                     icon={icon}
                     size={size}

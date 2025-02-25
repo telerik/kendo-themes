@@ -60,16 +60,19 @@ export const ColorEditor = (
         group,
         actionButtons = defaultOptions.actionButtons,
         canvasOrientation = defaultOptions.canvasOrientation,
+        ...other
     } = props;
 
     return (
-        <div className={classNames(
-            props.className,
-            'k-flatcolorpicker',
-            COLOREDITOR_CLASSNAME,
-            optionClassNames(COLOREDITOR_CLASSNAME, { size }),
-            stateClassNames(COLOREDITOR_CLASSNAME, { focus }),
-        )} dir={dir}>
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                'k-flatcolorpicker',
+                COLOREDITOR_CLASSNAME,
+                optionClassNames(COLOREDITOR_CLASSNAME, { size }),
+                stateClassNames(COLOREDITOR_CLASSNAME, { focus }),
+            )} dir={dir}>
             <div className="k-coloreditor-header k-hstack">
                 <div className="k-coloreditor-header-actions k-hstack">
                     { group &&

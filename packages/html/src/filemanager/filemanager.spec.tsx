@@ -55,16 +55,19 @@ export const FileManager = (
     const {
         disabled,
         toolbar = defaultOptions.toolbar,
+        ...other
     } = props;
 
     return (
-        <div className={classNames(
-            props.className,
-            FILEMANAGER_CLASSNAME,
-            stateClassNames(FILEMANAGER_CLASSNAME, {
-                disabled
-            }),
-        )}>
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                FILEMANAGER_CLASSNAME,
+                stateClassNames(FILEMANAGER_CLASSNAME, {
+                    disabled
+                }),
+            )}>
             <div className="k-filemanager-header">
                 {toolbar}
             </div>
