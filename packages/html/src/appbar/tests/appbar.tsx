@@ -22,7 +22,6 @@ const styles = `
         margin: 0;
         display: flex;
     }
-
     li {
         margin: 0 12px;
     }
