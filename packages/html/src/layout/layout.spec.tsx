@@ -5,6 +5,7 @@ const states = [];
 const options = {};
 
 export type KendoLayoutProps = {
+    gap?: string;
     type?: null | 'stack' | 'flex' | 'grid';
     orientation?: null | 'horizontal' | 'vertical';
     alignItems?: null | 'start' | 'center' | 'end' | 'stretch';
@@ -27,18 +28,21 @@ export const Layout = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        gap,
         type = defaultOptions.type,
         orientation = defaultOptions.orientation,
         alignItems = defaultOptions.alignItems,
         justifyContent = defaultOptions.justifyContent,
         justifyItems = defaultOptions.justifyItems,
         wrap = defaultOptions.wrap,
+        style,
         ...other
     } = props;
 
     return (
         <div
             {...other}
+            style={{ gap: gap, ...style }}
             className={classNames(
                 props.className,
                 {
