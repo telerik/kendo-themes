@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-chart-wizard-icon-area-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-area-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary-subtle), k-try-tint( $kendo-color-primary, 80% ))</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
     <td><code>var(--kendo-color-primary-subtle, #ffeceb)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color(primary-emphasis), k-try-tint( $kendo-color-primary, 25% ))</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, #ff9d97))</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-wizard-chart-type-selected-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>

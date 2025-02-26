@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../mixins/_disabled.scss" as *;
 @use "../spacing/index.import.scss" as *;
 @use "../_variables.scss" as *;
@@ -9,11 +10,11 @@
     .k-widget[disabled],
     .k-disabled {
         @include disabled(
-            $color: var( --kendo-disabled-text, unset),
-            $bg: var( --kendo-disabled-bg, unset),
-            $border: var( --kendo-disabled-border, unset),
-            $opacity: var( --kendo-disabled-opacity, unset),
-            $filter: var( --kendo-disabled-filter, unset)
+            $color: map.get( $kendo-disabled-styling, color ),
+            $bg: map.get( $kendo-disabled-styling, bg ),
+            $border: map.get( $kendo-disabled-styling, border ),
+            $opacity: map.get( $kendo-disabled-styling, opacity ),
+            $filter: map.get( $kendo-disabled-styling, filter )
         );
 
         .k-link {
@@ -38,7 +39,7 @@
         height: 0;
         border-width: 1px 0 0;
         border-style: solid;
-        border-color: var( --kendo-hr-border, unset );
+        border-color: inherit;
         display: block;
         float: none;
         clear: both;
