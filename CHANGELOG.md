@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.3.0-dev.0...v10.3.0-dev.1) (2025-03-03)
+
+
+### Bug Fixes
+
+* **grid:** include missing utils for user selection ([56e8291](https://github.com/telerik/kendo-themes/commit/56e8291f21cbcbd27e612969b166a6e5a7053a04))
+
+
+### Features
+
+* **html:** add gap prop to grid/stack layout ([d3c00b6](https://github.com/telerik/kendo-themes/commit/d3c00b6cbbc22262d3ea713ec2c6eb3d150d6f80))
+* **html:** add optional prop to floating label ([e841457](https://github.com/telerik/kendo-themes/commit/e841457c01977c272f3c6f0ce9d7e03b329cd447))
+
+
+
+
+
 # [10.3.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.2.1-dev.1...v10.3.0-dev.0) (2025-02-24)
 
 
