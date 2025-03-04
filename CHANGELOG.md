@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.3.0](https://github.com/telerik/kendo-themes/compare/v10.3.0-dev.1...v10.3.0) (2025-03-04)
+
+
+### Features
+
+* **grid:** add styles for row spanned cells ([1fd80ac](https://github.com/telerik/kendo-themes/commit/1fd80ac912d1d584abdb8262d034aa945bf31f25))
+* **html:** update Table spec for row spanned cells ([99f6cd1](https://github.com/telerik/kendo-themes/commit/99f6cd10d82cee71c85a87450ef1fbfec01d1b1a))
+
+
+
+
+
 # [10.3.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.3.0-dev.0...v10.3.0-dev.1) (2025-03-03)
 
 
