@@ -483,4 +483,7 @@
 
     }
 
+    .k-columnmenu-indicators {
+        @include fill( $color: var( --kendo-grid-sort-indicator-order-text, #{$kendo-grid-sort-indicator-order-text} ) );
+    }
 }

@@ -1266,6 +1266,27 @@
                 align-items: center;
             }
         }
+
+        .k-columnmenu-indicators {
+            padding-inline: k-spacing(1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        // TODO: Check if k-columnmenu-item should not be flex by default
+        .k-columnmenu-item:has(> .k-columnmenu-item-actions, > .k-columnmenu-indicators) {
+            display: flex;
+            align-items: center;
+        }
+
+        .k-columnmenu-drag-handle {
+            margin-inline-end: k-spacing(1.5);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: move;
+        }
     }
     .k-column-menu-tabbed {
         border-radius: $kendo-tabstrip-item-border-radius $kendo-tabstrip-item-border-radius 0 0;
@@ -1339,7 +1360,8 @@
         }
     }
 
-    .k-columnmenu-item-wrapper + .k-columnmenu-item-wrapper {
+    .k-columnmenu-item-wrapper + .k-columnmenu-item-wrapper,
+    .k-column-menu-footer {
         border-top: 1px solid;
         border-top-color: $kendo-popup-border;
     }
