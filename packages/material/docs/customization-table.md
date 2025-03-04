@@ -386,6 +386,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in table.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-table-cell-row-span-shadow</td>
+    <td>List</td>
+    <td><code>inset 0 0 0 1px $kendo-table-border</code></td>
+    <td><code>(inset 0 0 0 1px var(--kendo-color-border, rgba(0, 0, 0, 0.12)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the row spanned cells.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
