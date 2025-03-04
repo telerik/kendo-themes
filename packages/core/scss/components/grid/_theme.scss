@@ -90,7 +90,7 @@
             color: $kendo-grid-hover-text;
             background-color: $kendo-grid-hover-bg;
         }
-        
+
         // Selected state
         td.k-selected,
         .k-table-row.k-selected > td,
@@ -448,6 +448,10 @@
             @include fill( $bg: $kendo-grid-row-resizer-active-bg );
         }
 
+    }
+
+    .k-columnmenu-indicators {
+        color: $kendo-grid-sorting-indicator-text;
     }
 
 }
