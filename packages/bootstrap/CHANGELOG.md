@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.3.1](https://github.com/telerik/kendo-themes/compare/v10.3.1-dev.0...v10.3.1) (2025-03-05)
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+
+
+
+
 ## [10.3.1-dev.0](https://github.com/telerik/kendo-themes/compare/v10.3.0...v10.3.1-dev.0) (2025-03-05)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap
