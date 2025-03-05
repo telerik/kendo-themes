@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-themes-html",
   "description": "A collection of HTML helpers used for developing Kendo UI themes",
-  "version": "10.3.0",
+  "version": "10.3.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -53,8 +53,8 @@
     "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
+    "@types/react": "^19.0.8",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "@types/react": "^19.0.8"
+    "react-dom": "^19.0.0"
   }
 }

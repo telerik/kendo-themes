@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.3.1-dev.0](https://github.com/telerik/kendo-themes/compare/v10.3.0...v10.3.1-dev.0) (2025-03-05)
+
+
+### Bug Fixes
+
+* **html:** add React and reactDom as peer and dev dependencies ([6d0d281](https://github.com/telerik/kendo-themes/commit/6d0d28142e148edcfcaebe46cd5db3d49b924814))
+
+
+
+
+
 # [10.3.0](https://github.com/telerik/kendo-themes/compare/v10.3.0-dev.1...v10.3.0) (2025-03-04)
 
 
