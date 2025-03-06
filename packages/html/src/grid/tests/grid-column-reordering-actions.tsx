@@ -26,24 +26,24 @@ export default () =>(
             <Popup className="k-grid-columnmenu-popup">
                 <ColumnMenuNormal>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
-                        <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                        <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                        <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuExpander itemText="Columns" itemIcon="columns" />
+                        <ColumnMenuExpander itemText="Columns" itemStartIcon="columns" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuExpander itemText="Filter" itemIcon="filter" />
+                        <ColumnMenuExpander itemText="Filter" itemStartIcon="filter" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuItem text="Group column" icon="group" />
+                        <ColumnMenuItem text="Group column" startIcon="group" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuItem text="Autosize this column" icon="max-width" />
-                        <ColumnMenuItem text="Autosize all columns" icon="display-inline-flex" />
+                        <ColumnMenuItem text="Autosize this column" startIcon="max-width" />
+                        <ColumnMenuItem text="Autosize all columns" startIcon="display-inline-flex" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuExpander itemText="Set column position" itemIcon="set-column-position" expanded={true} itemContent={
+                        <ColumnMenuExpander itemText="Set column position" itemStartIcon="set-column-position" expanded={true} itemContent={
                             <>
                                 <div className="k-column-list-wrapper">
                                     <div className="k-column-list" style={{ maxHeight: "260px", overflowY: "hidden" }}>
