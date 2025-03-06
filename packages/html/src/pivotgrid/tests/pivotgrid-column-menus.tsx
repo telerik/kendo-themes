@@ -21,14 +21,14 @@ export default () =>(
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuNormal>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
-                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                            <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" />
+                            <ColumnMenuExpander itemText="Include fields" itemStartIcon="grid-layout" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Filter fields" itemIcon="filter" />
+                            <ColumnMenuExpander itemText="Filter fields" itemStartIcon="filter" />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </Popup>
@@ -39,17 +39,17 @@ export default () =>(
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuNormal>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
-                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                            <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" />
+                            <ColumnMenuExpander itemText="Include fields" itemStartIcon="grid-layout" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Move to Columns" icon="columns" className="k-disabled" />
-                            <ColumnMenuItem text="Move to Rows" icon="rows" />
-                            <ColumnMenuItem text="Move previous" icon="arrow-left" className="k-disabled" />
-                            <ColumnMenuItem text="Move next" icon="arrow-right" />
+                            <ColumnMenuItem text="Move to Columns" startIcon="columns" className="k-disabled" />
+                            <ColumnMenuItem text="Move to Rows" startIcon="rows" />
+                            <ColumnMenuItem text="Move previous" startIcon="arrow-left" className="k-disabled" />
+                            <ColumnMenuItem text="Move next" startIcon="arrow-right" />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </Popup>
@@ -60,17 +60,17 @@ export default () =>(
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuNormal>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
-                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                            <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" />
+                            <ColumnMenuExpander itemText="Include fields" itemStartIcon="grid-layout" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Move to Columns" icon="columns" />
-                            <ColumnMenuItem text="Move to Rows" icon="rows" className="k-disabled" />
-                            <ColumnMenuItem text="Move previous" icon="arrow-left" className="k-disabled" />
-                            <ColumnMenuItem text="Move next" icon="arrow-right" />
+                            <ColumnMenuItem text="Move to Columns" startIcon="columns" />
+                            <ColumnMenuItem text="Move to Rows" startIcon="rows" className="k-disabled" />
+                            <ColumnMenuItem text="Move previous" startIcon="arrow-left" className="k-disabled" />
+                            <ColumnMenuItem text="Move next" startIcon="arrow-right" />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </Popup>
@@ -81,11 +81,11 @@ export default () =>(
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuNormal>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
-                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                            <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" expanded={true} itemContent={
+                            <ColumnMenuExpander itemText="Include fields" itemStartIcon="grid-layout" expanded={true} itemContent={
                                 <>
                                     <div className="k-column-list-wrapper">
                                         <div className="k-column-list">
@@ -147,7 +147,7 @@ export default () =>(
                             }/>
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Filter fields" itemIcon="filter" />
+                            <ColumnMenuExpander itemText="Filter fields" itemStartIcon="filter" />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </Popup>
@@ -159,11 +159,11 @@ export default () =>(
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuNormal>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
-                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                            <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" expanded={true} itemContent={
+                            <ColumnMenuExpander itemText="Include fields" itemStartIcon="grid-layout" expanded={true} itemContent={
                                 <>
                                     <div className="k-column-list-wrapper">
                                         <div className="k-column-list">
@@ -196,7 +196,7 @@ export default () =>(
                             }/>
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Filter fields" itemIcon="filter" />
+                            <ColumnMenuExpander itemText="Filter fields" itemStartIcon="filter" />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </Popup>
@@ -207,14 +207,14 @@ export default () =>(
                 <Popup className="k-grid-columnmenu-popup">
                     <ColumnMenuNormal>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
-                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                            <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" />
+                            <ColumnMenuExpander itemText="Include fields" itemStartIcon="grid-layout" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Filter fields" itemIcon="filter" expanded={true} itemContent={
+                            <ColumnMenuExpander itemText="Filter fields" itemStartIcon="filter" expanded={true} itemContent={
                                 <FilterMenuNormal />
                             }/>
                         </ColumnMenuItemWrapper>

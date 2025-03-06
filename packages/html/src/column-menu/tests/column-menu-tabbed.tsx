@@ -37,14 +37,14 @@ export default () =>(
                     >
                         <TabStripContent active>
                             <ColumnMenuItemWrapper>
-                                <ColumnMenuItem text="Item 1" icon="sort-asc-small" />
-                                <ColumnMenuItem text="Item 2" icon="sort-desc-small" />
+                                <ColumnMenuItem text="Item 1" startIcon="sort-asc-small" />
+                                <ColumnMenuItem text="Item 2" startIcon="sort-desc-small" />
                             </ColumnMenuItemWrapper>
                             <ColumnMenuItemWrapper>
-                                <ColumnMenuItem text="Item 3" icon="group" />
+                                <ColumnMenuItem text="Item 3" startIcon="group" />
                             </ColumnMenuItemWrapper>
                             <ColumnMenuItemWrapper>
-                                <ColumnMenuExpander itemText="Expandable item" itemIcon="set-column-position" />
+                                <ColumnMenuExpander itemText="Expandable item" itemStartIcon="set-column-position" />
                             </ColumnMenuItemWrapper>
                         </TabStripContent>
                     </TabStripNormal>

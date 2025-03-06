@@ -21,12 +21,12 @@ export default () =>(
             <Popup className="k-card-columnmenu-popup">
                 <ColumnMenuNormal>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuItem text="Move to prev column" icon="caret-alt-left" />
-                        <ColumnMenuItem text="Move to next column" icon="caret-alt-right" />
-                        <ColumnMenuItem text="Move up" icon="caret-alt-up" />
-                        <ColumnMenuItem text="Move down" icon="caret-alt-down" />
-                        <ColumnMenuItem text="Move top" icon="caret-alt-to-top" />
-                        <ColumnMenuItem text="Move bottom" icon="caret-alt-to-bottom" />
+                        <ColumnMenuItem text="Move to prev column" startIcon="caret-alt-left" />
+                        <ColumnMenuItem text="Move to next column" startIcon="caret-alt-right" />
+                        <ColumnMenuItem text="Move up" startIcon="caret-alt-up" />
+                        <ColumnMenuItem text="Move down" startIcon="caret-alt-down" />
+                        <ColumnMenuItem text="Move top" startIcon="caret-alt-to-top" />
+                        <ColumnMenuItem text="Move bottom" startIcon="caret-alt-to-bottom" />
                     </ColumnMenuItemWrapper>
                 </ColumnMenuNormal>
             </Popup>

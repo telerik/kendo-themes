@@ -60,18 +60,18 @@ export default () =>(
                         >
                             <TabStripContent active>
                                 <ColumnMenuItemWrapper>
-                                    <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
-                                    <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                                    <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                                    <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                                 </ColumnMenuItemWrapper>
                                 <ColumnMenuItemWrapper>
-                                    <ColumnMenuItem text="Group column" icon="group" />
+                                    <ColumnMenuItem text="Group column" startIcon="group" />
                                 </ColumnMenuItemWrapper>
                                 <ColumnMenuItemWrapper>
-                                    <ColumnMenuItem text="Autosize this column" icon="max-width" />
-                                    <ColumnMenuItem text="Autosize all columns" icon="display-inline-flex" />
+                                    <ColumnMenuItem text="Autosize this column" startIcon="max-width" />
+                                    <ColumnMenuItem text="Autosize all columns" startIcon="display-inline-flex" />
                                 </ColumnMenuItemWrapper>
                                 <ColumnMenuItemWrapper>
-                                    <ColumnMenuExpander itemText="Set column position" itemIcon="set-column-position" />
+                                    <ColumnMenuExpander itemText="Set column position" itemStartIcon="set-column-position" />
                                 </ColumnMenuItemWrapper>
                             </TabStripContent>
                         </TabStripNormal>

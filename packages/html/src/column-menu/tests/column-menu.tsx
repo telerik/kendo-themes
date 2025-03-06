@@ -31,11 +31,11 @@ export default () =>(
             <section>
                 <ColumnMenuNormal>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuItem text="Item 1" icon="sort-asc-small" />
-                        <ColumnMenuItem text="Item 2" icon="sort-desc-small" />
+                        <ColumnMenuItem text="Item 1" startIcon="sort-asc-small" />
+                        <ColumnMenuItem text="Item 2" startIcon="sort-desc-small" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuExpander itemText="Expanded item" itemIcon="columns" expanded={true} itemContent={
+                        <ColumnMenuExpander itemText="Expanded item" itemStartIcon="columns" expanded={true} itemContent={
                             <>
                                 <div className="k-column-list-wrapper">
                                     <div className="k-column-list">
@@ -61,10 +61,10 @@ export default () =>(
                         }/>
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuExpander itemText="Expandable item" itemIcon="filter" />
+                        <ColumnMenuExpander itemText="Expandable item" itemStartIcon="filter" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuItem text="Non-expandable item" icon="group" />
+                        <ColumnMenuItem text="Non-expandable item" startIcon="group" />
                     </ColumnMenuItemWrapper>
                 </ColumnMenuNormal>
             </section>
@@ -72,11 +72,11 @@ export default () =>(
             <section>
                 <ColumnMenuNormal>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuItem text="Item 1" icon="sort-asc-small" />
-                        <ColumnMenuItem text="Item 2" icon="sort-desc-small" />
+                        <ColumnMenuItem text="Item 1" startIcon="sort-asc-small" />
+                        <ColumnMenuItem text="Item 2" startIcon="sort-desc-small" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuExpander itemText="Expanded item" itemIcon="columns" expanded={true} itemContent={
+                        <ColumnMenuExpander itemText="Expanded item" itemStartIcon="columns" expanded={true} itemContent={
                             <>
                                 <div className="k-column-list-wrapper">
                                     <div className="k-column-list">
@@ -106,10 +106,10 @@ export default () =>(
                         }/>
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuExpander itemText="Expandable item" itemIcon="filter" />
+                        <ColumnMenuExpander itemText="Expandable item" itemStartIcon="filter" />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
-                        <ColumnMenuItem text="Non-expandable item" icon="group" />
+                        <ColumnMenuItem text="Non-expandable item" startIcon="group" />
                     </ColumnMenuItemWrapper>
                 </ColumnMenuNormal>
             </section>
