@@ -41,7 +41,7 @@ $kendo-button-lg-padding-y: k-spacing(2.5) !default;
 
 /// The font family of the Button.
 /// @group button
-$kendo-button-font-family: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-button-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The font size of the Button.
 /// @group button
