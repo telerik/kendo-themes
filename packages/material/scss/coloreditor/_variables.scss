@@ -81,29 +81,29 @@ $kendo-color-editor-lg-header-padding-x: k-spacing(4.5) !default;
 
 /// The width of the ColorEditor preview.
 /// @group color-editor
-$kendo-color-editor-color-preview-width: 32px !default;
+$kendo-color-editor-color-preview-width: 34px !default;
 /// The height of the ColorEditor preview.
 /// @group color-editor
-$kendo-color-editor-color-preview-height: 12px !default;
+$kendo-color-editor-color-preview-height: 16px !default;
 /// The spacing between the colors in the ColorEditor preview.
 /// @group color-editor
-$kendo-color-editor-preview-gap: k-spacing(1) !default;
+$kendo-color-editor-preview-gap: k-spacing(0.5) !default;
 /// The spacing between the colors in the small ColorEditor preview.
 /// @group color-editor
-$kendo-color-editor-sm-preview-gap: k-spacing(2) !default;
+$kendo-color-editor-sm-preview-gap: k-spacing(0.5) !default;
 /// The spacing between the colors in the medium ColorEditor preview.
 /// @group color-editor
 $kendo-color-editor-md-preview-gap: $kendo-color-editor-preview-gap !default;
 /// The spacing between the colors in the large ColorEditor preview.
 /// @group color-editor
-$kendo-color-editor-lg-preview-gap: k-spacing(2) !default;
+$kendo-color-editor-lg-preview-gap: k-spacing(1) !default;
 
 /// The width of the small ColorEditor preview.
 /// @group color-editor
 $kendo-color-editor-sm-color-preview-width: 34px !default;
 /// The height of the small ColorEditor preview.
 /// @group color-editor
-$kendo-color-editor-sm-color-preview-height: 12px !default;
+$kendo-color-editor-sm-color-preview-height: 14px !default;
 /// The width of the medium ColorEditor preview.
 /// @group color-editor
 $kendo-color-editor-md-color-preview-width: $kendo-color-editor-color-preview-width !default;
@@ -115,7 +115,7 @@ $kendo-color-editor-md-color-preview-height: $kendo-color-editor-color-preview-h
 $kendo-color-editor-lg-color-preview-width: 42px !default;
 /// The height of the large ColorEditor preview.
 /// @group color-editor
-$kendo-color-editor-lg-color-preview-height: 16px !default;
+$kendo-color-editor-lg-color-preview-height: 18px !default;
 
 /// The vertical padding of the ColorEditor views container.
 /// @group color-editor
