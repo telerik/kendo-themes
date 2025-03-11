@@ -39,6 +39,9 @@
     .k-actions-end {
         justify-content: flex-end;
     }
+    .k-actions-justify {
+        justify-content: space-between;
+    }
     .k-actions-stretched > * {
         flex: 1 0 0%;
     }
@@ -50,5 +53,6 @@
     }
     .k-actions-vertical {
         flex-flow: column nowrap;
+        align-items: normal;
     }
 }
