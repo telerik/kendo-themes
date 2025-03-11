@@ -62,13 +62,14 @@
         max-height: var( --kendo-actionsheet-max-height, #{$kendo-actionsheet-max-height} );
         border-width: 0;
         border-style: solid;
-        border-color: transparent;
         box-sizing: border-box;
         font-size: $kendo-actionsheet-font-size;
         font-family: $kendo-actionsheet-font-family;
         line-height: $kendo-actionsheet-line-height;
         overflow: hidden;
         position: relative;
+        display: flex;
+        flex-flow: column nowrap;
 
         *,
         *::before,
@@ -82,10 +83,8 @@
     .k-actionsheet-titlebar {
         padding-block: $kendo-actionsheet-titlebar-padding-y;
         padding-inline: $kendo-actionsheet-titlebar-padding-x;
-        border-width: 0;
         border-bottom-width: if( $kendo-actionsheet-titlebar-border-width, $kendo-actionsheet-titlebar-border-width, null );
-        border-style: solid;
-        border-color: transparent;
+        border-bottom-style: solid;
         font-size: $kendo-actionsheet-titlebar-font-size;
         font-family: $kendo-actionsheet-titlebar-font-family;
         line-height: $kendo-actionsheet-titlebar-line-height;
@@ -124,6 +123,8 @@
     // Actionsheet footer
     .k-actionsheet-footer {
         flex: none;
+        border-top-width: $kendo-actionsheet-footer-border-width;
+        border-top-style: solid;
     }
 
 
@@ -235,14 +236,9 @@
         width: 100%;
         font-size: $kendo-adaptive-actionsheet-font-size;
 
-        // TMP: this should be moved to action sheet
-        display: flex;
-        flex-flow: column nowrap;
-
         .k-actionsheet-titlebar {
             padding-block: $kendo-adaptive-actionsheet-titlebar-padding-y;
             padding-inline: $kendo-adaptive-actionsheet-titlebar-padding-x;
-            border-bottom-width: $kendo-adaptive-actionsheet-titlebar-border-width;
         }
 
         .k-actionsheet-content {

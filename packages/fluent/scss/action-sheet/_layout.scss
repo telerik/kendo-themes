@@ -71,6 +71,8 @@
         line-height: var( --kendo-actionsheet-line-height, #{$kendo-actionsheet-line-height} );
         overflow: hidden;
         position: relative;
+        display: flex;
+        flex-flow: column nowrap;
 
         *,
         *::before,
@@ -91,10 +93,8 @@
     .k-actionsheet-header {
         padding-inline: var( --kendo-actionsheet-header-padding-x, #{$kendo-actionsheet-header-padding-x} );
         padding-block: var( --kendo-actionsheet-header-padding-y, #{$kendo-actionsheet-header-padding-y} );
-        border-width: 0;
         border-bottom-width: var( --kendo-actionsheet-header-border-width, #{$kendo-actionsheet-header-border-width} );
-        border-style: solid;
-        border-color: transparent;
+        border-bottom-style: solid;
         box-sizing: border-box;
         font-size: var( --kendo-actionsheet-header-font-size, #{$kendo-actionsheet-header-font-size} );
         font-family: var( --kendo-actionsheet-header-font-family, #{$kendo-actionsheet-header-font-family} );
@@ -144,6 +144,8 @@
     // Actionsheet footer
     .k-actionsheet-footer {
         flex: none;
+        border-top-width: $kendo-actionsheet-footer-border-width;
+        border-top-style: solid;
     }
 
 
@@ -262,14 +264,9 @@
         width: 100%;
         font-size: $kendo-adaptive-actionsheet-font-size;
 
-        // TMP: this should be moved to action sheet
-        display: flex;
-        flex-flow: column nowrap;
-
         .k-actionsheet-titlebar {
             padding-inline: var( --kendo-adaptive-actionsheet-header-padding-x, #{$kendo-adaptive-actionsheet-header-padding-x} );
             padding-block: var( --kendo-adaptive-actionsheet-header-padding-y, #{$kendo-adaptive-actionsheet-header-padding-y} );
-            border-bottom-width: var( --kendo-adaptive-actionsheet-header-border-width, #{$kendo-adaptive-actionsheet-header-border-width} );
         }
 
         .k-actionsheet-content {

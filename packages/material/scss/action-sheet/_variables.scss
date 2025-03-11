@@ -26,7 +26,7 @@ $kendo-actionsheet-shadow: k-elevation(7) !default;
 // Actionsheet header
 $kendo-actionsheet-titlebar-padding-x: k-spacing(4) !default;
 $kendo-actionsheet-titlebar-padding-y: k-spacing(2) !default;
-$kendo-actionsheet-titlebar-border-width: null !default;
+$kendo-actionsheet-titlebar-border-width: 1px !default;
 $kendo-actionsheet-titlebar-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-actionsheet-titlebar-font-family: null !default;
 $kendo-actionsheet-titlebar-line-height: 1.25 !default;
@@ -34,7 +34,7 @@ $kendo-actionsheet-titlebar-gap: k-spacing(4) !default;
 
 $kendo-actionsheet-titlebar-bg: null !default;
 $kendo-actionsheet-titlebar-text: null !default;
-$kendo-actionsheet-titlebar-border: null !default;
+$kendo-actionsheet-titlebar-border: $kendo-component-border !default;
 $kendo-actionsheet-titlebar-gradient: null !default;
 $kendo-actionsheet-titlebar-shadow: null !default;
 
@@ -42,6 +42,13 @@ $kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !def
 $kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, normal ) !default;
 $kendo-actionsheet-subtitle-text: $kendo-subtle-text !default;
 
+$kendo-actionsheet-footer-border-width: 1px !default;
+
+$kendo-actionsheet-footer-bg: null !default;
+$kendo-actionsheet-footer-text: null !default;
+$kendo-actionsheet-footer-border: $kendo-component-border !default;
+$kendo-actionsheet-footer-gradient: null !default;
+$kendo-actionsheet-footer-shadow: null !default;
 
 // Actionsheet item
 $kendo-actionsheet-item-min-height: 40px !default;
@@ -81,10 +88,8 @@ $kendo-actionsheet-item-disabled-opacity: .42 !default;
 
 // Adaptive Actionsheet
 $kendo-adaptive-actionsheet-font-size: var( --kendo-font-size-lg, inherit ) !default;
-$kendo-adaptive-actionsheet-titlebar-border-width: 1px !default;
 $kendo-adaptive-actionsheet-titlebar-padding-y: k-spacing(4) !default;
 $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-y !default;
-$kendo-adaptive-actionsheet-titlebar-border: $kendo-component-border !default;
 
 $kendo-adaptive-actionsheet-content-padding-y: k-spacing(2) !default;
 $kendo-adaptive-actionsheet-content-padding-x: k-spacing(4) !default;
@@ -122,6 +127,12 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-titlebar-shadow: $kendo-actionsheet-titlebar-shadow,
     $kendo-actionsheet-subtitle-font-size: $kendo-actionsheet-subtitle-font-size,
     $kendo-actionsheet-subtitle-line-height: $kendo-actionsheet-subtitle-line-height,
+    $kendo-actionsheet-footer-border-width: $kendo-actionsheet-footer-border-width,
+    $kendo-actionsheet-footer-bg: $kendo-actionsheet-footer-bg,
+    $kendo-actionsheet-footer-text: $kendo-actionsheet-footer-text,
+    $kendo-actionsheet-footer-border: $kendo-actionsheet-footer-border,
+    $kendo-actionsheet-footer-gradient: $kendo-actionsheet-footer-gradient,
+    $kendo-actionsheet-footer-shadow: $kendo-actionsheet-footer-shadow,
     $kendo-actionsheet-subtitle-text: $kendo-actionsheet-subtitle-text,
     $kendo-actionsheet-item-min-height: $kendo-actionsheet-item-min-height,
     $kendo-actionsheet-item-padding-x: $kendo-actionsheet-item-padding-x,
@@ -151,10 +162,8 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-item-focus-background: $kendo-actionsheet-item-focus-background,
     $kendo-actionsheet-item-disabled-opacity: $kendo-actionsheet-item-disabled-opacity,
     $kendo-adaptive-actionsheet-font-size: $kendo-adaptive-actionsheet-font-size,
-    $kendo-adaptive-actionsheet-titlebar-border-width: $kendo-adaptive-actionsheet-titlebar-border-width,
     $kendo-adaptive-actionsheet-titlebar-padding-y: $kendo-adaptive-actionsheet-titlebar-padding-y,
     $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-x,
-    $kendo-adaptive-actionsheet-titlebar-border: $kendo-adaptive-actionsheet-titlebar-border,
     $kendo-adaptive-actionsheet-content-padding-y: $kendo-adaptive-actionsheet-content-padding-y,
     $kendo-adaptive-actionsheet-content-padding-x: $kendo-adaptive-actionsheet-content-padding-x,
     $kendo-adaptive-actionsheet-footer-padding-y: $kendo-adaptive-actionsheet-footer-padding-y,

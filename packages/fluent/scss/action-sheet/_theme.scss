@@ -19,6 +19,12 @@
         border-color: var( --kendo-actionsheet-header-border, #{$kendo-actionsheet-header-border} );
         @include box-shadow( var( --kendo-actionsheet-header-shadow, #{$kendo-actionsheet-header-shadow} ) );
     }
+    .k-actionsheet-footer {
+        color: var( --kendo-actionsheet-footer-text, #{$kendo-actionsheet-footer-text} );
+        background-color: var( --kendo-actionsheet-footer-bg, #{$kendo-actionsheet-footer-bg} );
+        border-color: var( --kendo-actionsheet-footer-border, #{$kendo-actionsheet-footer-border} );
+        @include box-shadow( var( --kendo-actionsheet-footer-shadow, #{$kendo-actionsheet-footer-shadow} ) );
+    }
     .k-actionsheet-subtitle-text {
         color: var( --kendo-actionsheet-subtitle-text, #{$kendo-actionsheet-subtitle-text} );
     }
@@ -92,11 +98,6 @@
     // Actionsheet separator
     .k-actionsheet .k-hr {
         border-color: var( --kendo-actionsheet-border, #{$kendo-actionsheet-border} );
-    }
-
-    // Adaptive Actionsheet
-    .k-adaptive-actionsheet .k-actionsheet-titlebar {
-            border-color: var( --kendo-adaptive-actionsheet-header-border, #{$kendo-adaptive-actionsheet-header-border} );
     }
 
 }
