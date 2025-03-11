@@ -26,9 +26,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoDropdownTreeOptions = {
@@ -143,16 +143,17 @@ export const DropdownTree = (
                     fillMode={props.fillMode}
                 />
             </Picker>
-            { opened && popup &&
+            {opened && popup &&
                 <Popup className="k-list-container k-dropdowntree-popup" dir={dir}>
                     {popup}
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader actions={[ 'x' ]}>
-                        <div className="k-text-center">Select value</div>
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Select value" />
+                    }
+                >
                     <Treeview size="large">
                         <TreeviewItem top text="Root 1" />
                         <TreeviewItem text="Root 2" expanded>

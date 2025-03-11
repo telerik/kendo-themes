@@ -1,6 +1,6 @@
 import { classNames } from '../misc';
-import { ActionSheetHeader, ActionSheetItems, ActionSheetFooter } from '../action-sheet';
 import { AnimationContainer } from '../animation-container';
+import { ActionSheetHeader, ActionSheetFooter } from '..';
 
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;
 
@@ -10,10 +10,8 @@ const options = {};
 
 export type KendoActionSheetProps = {
     children?: React.JSX.Element | React.JSX.Element[];
-    title?: string;
-    header?: React.JSX.Element;
-    footer?: string | React.JSX.Element;
-    actions?: string[];
+    header?: React.ReactElement<typeof ActionSheetHeader>;
+    footer?: React.ReactElement<typeof ActionSheetFooter>;
     fullscreen?: boolean;
     adaptive?: boolean;
     overlay?: boolean;
@@ -37,51 +35,24 @@ export const ActionSheet = (
         adaptive = defaultOptions.adaptive,
         overlay = defaultOptions.overlay,
         children,
-        title,
         header,
         footer,
-        actions,
         ...other
     } = props;
 
-    const _ActionSheetHeader = title
-        ? <ActionSheetHeader title={title} />
-        : header
-            ? header
-            : Array.isArray(children) && children.find((child) => child.type === ActionSheetHeader);
-
-    const _ActionSheetFooter = actions
-        ? <ActionSheetFooter className="k-actions" actions={actions} />
-        : footer
-            ? typeof footer === 'string'
-                ? <ActionSheetFooter>{footer}</ActionSheetFooter>
-                : footer
-            : Array.isArray(children) && children.find((child) => child.type === ActionSheetFooter);
-
-    const _ActionSheetContent = Array.isArray(children)
-        ? children.filter(child => {
-            switch (child.type) {
-                case ActionSheetHeader:
-                case ActionSheetFooter:
-                    return false;
-                default:
-                    return true;
-            }
-        })
-        : children?.type === ActionSheetItems
-            ? children
-            : <></>;
+    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} {...header?.props} />;
+    const _ActionSheetFooter = footer?.type === ActionSheetFooter && <ActionSheetFooter {...footer?.props} />;
 
     return (
         <div className="k-actionsheet-container">
             {overlay && <div className="k-overlay"></div>}
             <AnimationContainer
                 animationStyle={{
-                    [`${ fullscreen === true ? 'top' : side }`]: 0,
-                    [`${ fullscreen === true ? 'width' : null }`]: '100%',
-                    [`${ fullscreen === true ? 'height' : null }`]: '100%',
-                    [`${ side === 'top' || side === 'bottom' ? 'width' : null }`]: '100%',
-                    [`${ side === 'left' || side === 'right' ? 'height' : null }`]: '100%'
+                    [`${fullscreen === true ? 'top' : side}`]: 0,
+                    [`${fullscreen === true ? 'width' : null}`]: '100%',
+                    [`${fullscreen === true ? 'height' : null}`]: '100%',
+                    [`${side === 'top' || side === 'bottom' ? 'width' : null}`]: '100%',
+                    [`${side === 'left' || side === 'right' ? 'height' : null}`]: '100%'
                 }}>
                 <div
                     {...other}
@@ -96,13 +67,8 @@ export const ActionSheet = (
                     )}>
                     <>
                         {_ActionSheetHeader}
-                        <div className={classNames(
-                            'k-actionsheet-content',
-                            {
-                                '!k-overflow-hidden': adaptive
-                            }
-                        )}>
-                            {_ActionSheetContent}
+                        <div className="k-actionsheet-content">
+                            {children}
                         </div>
                         {_ActionSheetFooter}
                     </>

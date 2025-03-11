@@ -27,9 +27,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoDateTimePickerOptions = {
@@ -131,25 +131,29 @@ export const DateTimePicker = (
                     fillMode={fillMode}
                 />
             </Input>
-            { opened &&
+            {opened &&
                 <Popup className="k-datetime-container k-datetimepicker-popup" dir={dir}>
                     <DateTimeSelector tab={tab} dir={dir} />
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Select Date & Time"
-                        subTitle="DD / MM / YY">
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            title="Select Date & Time"
+                            subTitle="DD / MM / YY">
+                        </ActionSheetHeader>
+                    }
+                    footer={
 
+                        <ActionSheetFooter>
+                            <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
+                            <Button text="Cancel" size="large" themeColor="base" className="k-time-cancel" />
+                        </ActionSheetFooter>
+                    }
+                >
                     <DateTimeSelector size="large" tab={tab} actionButtons={false} />
-
-                    <ActionSheetFooter>
-                        <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
-                        <Button text="Cancel" size="large" themeColor="base" className="k-time-cancel" />
-                    </ActionSheetFooter>
                 </ActionSheet>
             }
         </>

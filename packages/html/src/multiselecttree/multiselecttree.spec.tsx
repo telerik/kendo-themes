@@ -27,9 +27,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoMultiSelectTreeOptions = {
@@ -142,18 +142,21 @@ export const MultiSelectTree = (
                     />
                 )}
             </Input>
-            { opened && popup &&
+            {opened && popup &&
                 <Popup className="k-multiselecttree-popup" dir={dir}>
                     {popup}
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        filter
-                        actions={[ 'x' ]}
-                        title="Select value">
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            filter
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            title="Select value">
+                        </ActionSheetHeader>
+                    }
+                >
                     <Treeview size="large">
                         <TreeviewItem top text="Root 1" />
                         <TreeviewItem text="Root 2" expanded>

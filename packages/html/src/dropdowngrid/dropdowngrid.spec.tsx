@@ -28,9 +28,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 const defaultOptions = {
@@ -114,10 +114,10 @@ export const DropdownGrid = (
                 )}
             >
                 {prefix &&
-                <>
-                    <InputPrefix>{prefix}</InputPrefix>
-                    {separators && <InputSeparator/>}
-                </>
+                    <>
+                        <InputPrefix>{prefix}</InputPrefix>
+                        {separators && <InputSeparator />}
+                    </>
                 }
                 <InputInnerInput placeholder={placeholder} value={value} />
                 <InputValidationIcon
@@ -134,10 +134,10 @@ export const DropdownGrid = (
                     readonly={readonly}
                     value={value} />
                 {suffix &&
-                <>
-                    {separators && <InputSeparator/>}
-                    <InputSuffix>{suffix}</InputSuffix>
-                </>
+                    <>
+                        {separators && <InputSeparator />}
+                        <InputSuffix>{suffix}</InputSuffix>
+                    </>
                 }
                 <Button
                     className="k-input-button"
@@ -147,18 +147,20 @@ export const DropdownGrid = (
                     fillMode={fillMode}
                 />
             </Input>
-            { opened && popup &&
+            {opened && popup &&
                 <Popup className="k-dropdowngrid-popup">
                     {popup}
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        filter={true}
-                        title="Select Item">
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            filter={true}
+                            title="Select Item">
+                        </ActionSheetHeader>
+                    }>
                     <div className="k-list-container">
                         <DataTable size="large">
                             <TableHeader>

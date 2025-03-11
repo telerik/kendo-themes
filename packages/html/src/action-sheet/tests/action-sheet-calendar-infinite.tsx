@@ -1,4 +1,5 @@
 import { ActionSheet, ActionSheetHeader } from '..';
+import { Button } from '../../button';
 import { CalendarInfiniteNormal } from '../../calendar';
 
 
@@ -25,19 +26,20 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <ActionSheet adaptive={true}>
-                    <ActionSheetHeader actions={[ 'x' ]}>
-                        <div className="k-text-center">Select date</div>
-                    </ActionSheetHeader>
+                <ActionSheet adaptive={true}
+                    header={
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Select date" />
+
+                    }>
                     <CalendarInfiniteNormal size="large" showNavigation={false} />
                 </ActionSheet>
             </section>
 
             <section>
-                <ActionSheet adaptive={true} fullscreen={true}>
-                    <ActionSheetHeader actions={[ 'x' ]}>
-                        <div className="k-text-center">Select date</div>
-                    </ActionSheetHeader>
+                <ActionSheet adaptive={true} fullscreen={true}
+                    header={
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Select date" />
+                    }>
                     <CalendarInfiniteNormal size="large" showNavigation={false} />
                 </ActionSheet>
             </section>

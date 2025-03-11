@@ -18,7 +18,7 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -27,13 +27,21 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <ActionSheet adaptive={true}>
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Select Date & Time"
-                        subTitle="DD / MM / YY">
-                    </ActionSheetHeader>
-
+                <ActionSheet adaptive={true}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            title="Select Date & Time"
+                            subTitle="DD / MM / YY">
+                        </ActionSheetHeader>
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Set" size="large" themeColor="primary" />
+                        </ActionSheetFooter>
+                    }
+                >
                     <div className="k-datetime-wrap k-date-tab">
                         <div className="k-datetime-buttongroup">
                             <div className="k-button-group k-button-group-stretched">
@@ -50,19 +58,25 @@ export default () =>(
                             </div>
                         </div>
                     </div>
-
-                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
                 </ActionSheet>
             </section>
 
             <section>
-                <ActionSheet adaptive={true} fullscreen={true}>
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Select Date & Time"
-                        subTitle="DD / MM / YY">
-                    </ActionSheetHeader>
-
+                <ActionSheet adaptive={true} fullscreen={true}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            title="Select Date & Time"
+                            subTitle="DD / MM / YY">
+                        </ActionSheetHeader>
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Set" size="large" themeColor="primary" />
+                        </ActionSheetFooter>
+                    }
+                >
                     <div className="k-datetime-wrap k-time-tab">
                         <div className="k-datetime-buttongroup">
                             <div className="k-button-group k-button-group-stretched">
@@ -74,16 +88,14 @@ export default () =>(
                             <div className="k-datetime-calendar-wrap">
                             </div>
                             <div className="k-datetime-time-wrap">
-                                <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
+                                <TimeSelector size="large" columns={["HH", "mm", "ss", "tt"]} focusedColumn="HH" header={(
                                     <TimeSelectorHeader title="10:00:00 АМ">
                                         <Button fillMode="flat" className="k-time-now">Now</Button>
                                     </TimeSelectorHeader>
-                                )}/>
+                                )} />
                             </div>
                         </div>
                     </div>
-
-                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
                 </ActionSheet>
             </section>
         </div>

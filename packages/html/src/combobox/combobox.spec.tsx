@@ -28,9 +28,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoComboboxOptions = {
@@ -108,10 +108,10 @@ export const Combobox = (
                 className={classNames(props.className, COMBOBOX_CLASSNAME)}
             >
                 {prefix &&
-                <>
-                    <InputPrefix>{prefix}</InputPrefix>
-                    {separators && <InputSeparator/>}
-                </>
+                    <>
+                        <InputPrefix>{prefix}</InputPrefix>
+                        {separators && <InputSeparator />}
+                    </>
                 }
                 <InputInnerInput placeholder={placeholder} value={value} />
                 <InputValidationIcon
@@ -128,10 +128,10 @@ export const Combobox = (
                     readonly={readonly}
                     value={value} />
                 {suffix &&
-                <>
-                    {separators && <InputSeparator/>}
-                    <InputSuffix>{suffix}</InputSuffix>
-                </>
+                    <>
+                        {separators && <InputSeparator />}
+                        <InputSuffix>{suffix}</InputSuffix>
+                    </>
                 }
                 <Button
                     className="k-input-button"
@@ -141,18 +141,21 @@ export const Combobox = (
                     fillMode={fillMode}
                 />
             </Input>
-            { opened && popup &&
+            {opened && popup &&
                 <Popup className="k-list-container k-combobox-popup">
                     {popup}
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        filter={true}
-                        title="Select Item">
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            filter={true}
+                            title="Select Item">
+                        </ActionSheetHeader>
+                    }
+                >
                     <div className="k-list-container">
                         <List size="large">
                             <ListItem text="List item" />

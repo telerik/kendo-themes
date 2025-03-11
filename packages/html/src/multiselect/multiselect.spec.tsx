@@ -29,9 +29,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoMultiSelectOptions = {
@@ -114,10 +114,10 @@ export const MultiSelect = (
                 className={classNames(props.className, MULTISELECT_CLASSNAME)}
             >
                 {prefix &&
-                <>
-                    <InputPrefix>{prefix}</InputPrefix>
-                    {separators && <InputSeparator/>}
-                </>
+                    <>
+                        <InputPrefix>{prefix}</InputPrefix>
+                        {separators && <InputSeparator />}
+                    </>
                 }
                 <div className="k-input-values">
                     <ChipList size={size}>
@@ -125,7 +125,7 @@ export const MultiSelect = (
                             {tags}
                         </>
                     </ChipList>
-                    <InputInnerInput placeholder={placeholder} value={value}/>
+                    <InputInnerInput placeholder={placeholder} value={value} />
                 </div>
                 <InputValidationIcon
                     valid={valid}
@@ -141,10 +141,10 @@ export const MultiSelect = (
                     readonly={readonly}
                     value={tags ? 'value' : ''} />
                 {suffix &&
-                <>
-                    {separators && <InputSeparator/>}
-                    <InputSuffix>{suffix}</InputSuffix>
-                </>
+                    <>
+                        {separators && <InputSeparator />}
+                        <InputSuffix>{suffix}</InputSuffix>
+                    </>
                 }
                 {showArrowButton && (
                     <Button
@@ -156,18 +156,21 @@ export const MultiSelect = (
                     />
                 )}
             </Input>
-            { opened && popup &&
+            {opened && popup &&
                 <Popup className="k-list-container k-multiselect-popup">
                     {popup}
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        filter={true}
-                        title="Select Item">
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            filter={true}
+                            title="Select Item">
+                        </ActionSheetHeader>
+                    }
+                >
                     <div className="k-list-container">
                         <List size="large">
                             <ListItem text="List item" />

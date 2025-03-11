@@ -25,9 +25,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoColorPickerOptions = {
@@ -130,23 +130,31 @@ export const ColorPicker = (
                     fillMode={fillMode}
                 />
             </Picker>
-            { opened && popup &&
+            {opened && popup &&
                 <Popup className="k-colorpicker-popup">
                     {popup}
                 </Popup>
             }
-             { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Choose Color">
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            title="Choose Color">
+                        </ActionSheetHeader>
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Set" size="large" themeColor="primary" />
+                        </ActionSheetFooter>
+                    }
+                >
                     <ColorEditor canvasOrientation="vertical"
                         size="large"
                         actionButtons={false}
                         group
                     />
-                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
                 </ActionSheet>
             }
         </>
