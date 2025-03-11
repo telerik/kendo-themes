@@ -623,8 +623,8 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-header-border</td>
     <td>String</td>
-    <td><code>inherit</code></td>
-    <td><code>inherit</code></td>
+    <td><code>var( --kendo-component-border, initial )</code></td>
+    <td><code>var(--kendo-component-border, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the action sheet header.</div></div>
@@ -668,6 +668,56 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the action sheet subtitle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-footer-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the action sheet footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-footer-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the action sheet footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-footer-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the action sheet footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-footer-border</td>
+    <td>String</td>
+    <td><code>var( --kendo-component-border, initial )</code></td>
+    <td><code>var(--kendo-component-border, initial)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the action sheet footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-actionsheet-footer-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the action sheet footer.</div></div>
     </td>
 </tr>
 <tr>
@@ -911,16 +961,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-adaptive-actionsheet-header-border-width</td>
-    <td>Number</td>
-    <td><code>1px</code></td>
-    <td><code>1px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the adaptive action sheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-adaptive-actionsheet-header-padding-y</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -938,16 +978,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the adaptive action sheet titlebar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-adaptive-actionsheet-header-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the adaptive action sheet titlebar.</div></div>
     </td>
 </tr>
 <tr>
