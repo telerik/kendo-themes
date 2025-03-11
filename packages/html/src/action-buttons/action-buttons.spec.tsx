@@ -7,7 +7,7 @@ const states = [];
 const options = {};
 
 export type KendoActionButtonsProps = {
-    alignment?: 'start' | 'center' | 'end' | 'stretched';
+    alignment?: 'start' | 'center' | 'end' | 'stretched' | 'justify';
     orientation?: 'horizontal' | 'vertical';
 };
 
