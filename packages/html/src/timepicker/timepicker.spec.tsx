@@ -28,9 +28,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoTimePickerOptions = {
@@ -127,32 +127,40 @@ export const TimePicker = (
                     fillMode={fillMode}
                 />
             </Input>
-            { opened &&
+            {opened &&
                 <Popup className="k-list-container k-timepicker-popup">
-                    <TimeSelector columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="mm" header={(
+                    <TimeSelector columns={["HH", "mm", "ss", "tt"]} focusedColumn="mm" header={(
                         <TimeSelectorHeader title="10:00:00 AM">
                             <Button fillMode="flat" className="k-time-now">Now</Button>
                         </TimeSelectorHeader>
-                    )}/>
+                    )} />
                     <ActionButtons alignment="stretched" className="k-time-footer">
                         <Button themeColor="primary" className="k-time-accept">Set</Button>
                         <Button className="k-time-cancel">Cancel</Button>
                     </ActionButtons>
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Set Time"
-                        subTitle="DD / MM / YY">
-                    </ActionSheetHeader>
-                    <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            title="Set Time"
+                            subTitle="DD / MM / YY">
+                        </ActionSheetHeader>
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Set time" size="large" themeColor="primary" />
+                        </ActionSheetFooter>
+                    }
+                >
+                    <TimeSelector size="large" columns={["HH", "mm", "ss", "tt"]} focusedColumn="HH" header={(
                         <TimeSelectorHeader title="10:00:00 АМ">
                             <Button size="large" fillMode="flat" className="k-time-now">Now</Button>
                         </TimeSelectorHeader>
-                    )}/>
-                    <ActionSheetFooter actions={[ 'Cancel', '!Set time' ]} />
+                    )} />
                 </ActionSheet>
             }
         </>

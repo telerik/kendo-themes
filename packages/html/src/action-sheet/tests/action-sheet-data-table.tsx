@@ -1,4 +1,5 @@
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
+import { Button } from '../../button';
 import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../../table';
 
 
@@ -16,7 +17,7 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -25,12 +26,21 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <ActionSheet adaptive={true}>
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        filter={true}
-                        title="Select Item">
-                    </ActionSheetHeader>
+                <ActionSheet adaptive={true}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            filter={true}
+                            title="Select Item">
+                        </ActionSheetHeader>
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Apply" size="large" themeColor="primary" />
+                            <Button text="Cancel" size="large" themeColor="base" />
+                        </ActionSheetFooter>
+                    }
+                >
                     <div className="k-list-container">
                         <DataTable size="large">
                             <TableHeader>
@@ -92,17 +102,25 @@ export default () =>(
                             </TableFooter>
                         </DataTable>
                     </div>
-                    <ActionSheetFooter actions={[ '!Apply', 'Cancel' ]} />
                 </ActionSheet>
             </section>
 
             <section>
-                <ActionSheet adaptive={true} fullscreen={true}>
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        filter={true}
-                        title="Select Item">
-                    </ActionSheetHeader>
+                <ActionSheet adaptive={true} fullscreen={true}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            filter={true}
+                            title="Select Item">
+                        </ActionSheetHeader>
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Apply" size="large" themeColor="primary" />
+                            <Button text="Cancel" size="large" themeColor="base" />
+                        </ActionSheetFooter>
+                    }
+                >
                     <div className="k-list-container">
                         <DataTable size="large">
                             <TableHeader>
@@ -164,7 +182,6 @@ export default () =>(
                             </TableFooter>
                         </DataTable>
                     </div>
-                    <ActionSheetFooter actions={[ '!Apply', 'Cancel' ]} />
                 </ActionSheet>
             </section>
 

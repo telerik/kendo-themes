@@ -12,6 +12,7 @@ import {
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { List, ListItem } from '../list';
+import { Button } from '../button';
 
 export const AUTOCOMPLETE_CLASSNAME = `k-autocomplete`;
 
@@ -27,9 +28,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline],
 };
 
 export type KendoAutocompleteOptions = {
@@ -107,10 +108,10 @@ export const Autocomplete = (
                 className={classNames(props.className, AUTOCOMPLETE_CLASSNAME)}
             >
                 {prefix &&
-                <>
-                    <InputPrefix>{prefix}</InputPrefix>
-                    {separators && <InputSeparator/>}
-                </>
+                    <>
+                        <InputPrefix>{prefix}</InputPrefix>
+                        {separators && <InputSeparator />}
+                    </>
                 }
                 <InputInnerInput placeholder={placeholder} value={value} />
                 <InputValidationIcon
@@ -127,24 +128,27 @@ export const Autocomplete = (
                     readonly={readonly}
                     value={value} />
                 {suffix &&
-                <>
-                    {separators && <InputSeparator/>}
-                    <InputSuffix>{suffix}</InputSuffix>
-                </>
+                    <>
+                        {separators && <InputSeparator />}
+                        <InputSuffix>{suffix}</InputSuffix>
+                    </>
                 }
             </Input>
-            { opened && popup &&
+            {opened && popup &&
                 <Popup className="k-list-container k-autocomplete-popup">
                     {popup}
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        filter={true}
-                        title="Select Item">
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            filter={true}
+                            title="Select Item">
+                        </ActionSheetHeader>
+                    }
+                >
                     <div className="k-list-container">
                         <List size="large">
                             <ListItem text="List item" />

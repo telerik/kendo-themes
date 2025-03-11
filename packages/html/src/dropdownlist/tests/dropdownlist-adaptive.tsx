@@ -1,4 +1,5 @@
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
+import { Button } from '../../button';
 import { List, ListItem } from '../../list';
 import DropdownList from '../dropdownlist.spec';
 
@@ -16,7 +17,7 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -26,8 +27,17 @@ export default () =>(
 
             <section>
                 <DropdownList />
-                <ActionSheet adaptive={true}>
-                    <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actions={[ "x" ]} filter={true} />
+                <ActionSheet adaptive={true}
+                    header={
+                        <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actionsEnd={<Button icon="x" size="large" fillMode="flat" />} filter={true} />
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Select" size="large" themeColor="primary" />
+                        </ActionSheetFooter>
+                    }
+                >
                     <div className="k-list-container">
                         <List size="large">
                             <ListItem text="List item" />
@@ -42,14 +52,22 @@ export default () =>(
                             <ListItem text="Checkbox icon" showCheckbox showIcon iconName="gear" />
                         </List>
                     </div>
-                    <ActionSheetFooter actions={[ "Cancel", "!Select" ]} />
                 </ActionSheet>
             </section>
 
             <section>
                 <DropdownList />
-                <ActionSheet adaptive={true} fullscreen={true}>
-                    <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actions={[ "x" ]} filter={true} />
+                <ActionSheet adaptive={true} fullscreen={true}
+                    header={
+                        <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actionsEnd={<Button icon="x" size="large" fillMode="flat" />} filter={true} />
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Cancel" size="large" themeColor="base" />
+                            <Button text="Select" size="large" themeColor="primary" />
+                        </ActionSheetFooter>
+                    }
+                >
                     <div className="k-list-container">
                         <List size="large">
                             <ListItem text="List item" />
@@ -64,7 +82,6 @@ export default () =>(
                             <ListItem text="Checkbox icon" showCheckbox showIcon iconName="gear" />
                         </List>
                     </div>
-                    <ActionSheetFooter actions={[ "Cancel", "!Select" ]} />
                 </ActionSheet>
             </section>
         </div>

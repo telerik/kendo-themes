@@ -26,13 +26,14 @@ export default () => (
 
             <section>
                 <ActionSheetNormal
+                    adaptive
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" fillMode="flat" />} actionsEnd={<Button icon="x" fillMode="flat" />} title="Header" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Header" />
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button text="Primary" themeColor="primary" />
-                            <Button text="Secondary" themeColor="base" />
+                            <Button size="large" text="Secondary" themeColor="base" />
+                            <Button size="large" text="Primary" themeColor="primary" />
                         </ActionSheetFooter>
                     }
                 >
@@ -52,13 +53,14 @@ export default () => (
 
             <section className="k-rtl">
                 <ActionSheetNormal
+                    adaptive
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" fillMode="flat" />} actionsEnd={<Button icon="x" fillMode="flat" />} title="Header" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Header" />
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button text="Primary" themeColor="primary" />
-                            <Button text="Secondary" themeColor="base" />
+                            <Button size="large" text="Secondary" themeColor="base" />
+                            <Button size="large" text="Primary" themeColor="primary" />
                         </ActionSheetFooter>
                     }
                 >

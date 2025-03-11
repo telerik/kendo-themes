@@ -27,9 +27,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 const defaultOptions = {
@@ -128,18 +128,21 @@ export const DatePicker = (
                     fillMode={fillMode}
                 />
             </Input>
-            { opened &&
+            {opened &&
                 <Popup className="k-calendar-container k-datepicker-popup">
                     <CalendarNormal dir={dir} />
                 </Popup>
             }
-            { adaptive &&
-                <ActionSheet adaptive={true} {...adaptiveSettings} >
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Select Dates"
-                        subTitle="DD / MM / YY">
-                    </ActionSheetHeader>
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
+                            title="Select Dates"
+                            subTitle="DD / MM / YY">
+                        </ActionSheetHeader>
+                    }
+                >
                     <CalendarNormal size="large"></CalendarNormal>
                 </ActionSheet>
             }
