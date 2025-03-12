@@ -10,7 +10,9 @@ const options = {};
 
 export type KendoColumnMenuExpanderProps = {
     itemText?: string;
-    itemIcon?: string;
+    itemStartIcon?: string;
+    itemEndIcon?: string;
+    itemSortIndex?: number;
     expanderIcon?: string;
     itemContent?: React.JSX.Element;
     expanded?: boolean;
@@ -24,7 +26,9 @@ export const ColumnMenuExpander = (
 ) => {
     const {
         itemText,
-        itemIcon,
+        itemStartIcon,
+        itemEndIcon,
+        itemSortIndex,
         expanded,
         itemContent,
         expanderIcon,
@@ -46,7 +50,7 @@ export const ColumnMenuExpander = (
                 props.className,
                 COLUMNMENUEXPANDER_CLASSNAME
             )}>
-            <ColumnMenuItem text={itemText} icon={itemIcon}>
+            <ColumnMenuItem text={itemText} startIcon={itemStartIcon} endIcon={itemEndIcon} sortIndex={itemSortIndex}>
                 <span className="k-spacer"></span>
                 <span className="k-expander-indicator">
                     {icon}

@@ -12,7 +12,11 @@ const options = {};
 
 export type KendoColumnMenuItemProps = {
     text?: string;
-    icon?: string;
+    startIcon?: string;
+    endIcon?: string;
+    sortIndex?: number;
+    actions?: React.JSX.Element | string;
+    draggable?: boolean;
 };
 
 const defaultOptions = {};
@@ -27,7 +31,11 @@ export const ColumnMenuItem = (
         focus,
         selected,
         text,
-        icon,
+        startIcon,
+        endIcon,
+        sortIndex,
+        actions,
+        draggable,
         ...other
     } = props;
 
@@ -42,8 +50,26 @@ export const ColumnMenuItem = (
                     selected,
                 })
             )}>
-            <Icon icon={icon} />{text}
+            {draggable &&
+                <span className="k-columnmenu-drag-handle" >
+                    <Icon icon="handle-drag"/>
+                </span>
+            }
+            {startIcon && <Icon icon={startIcon} />}
+            {text}
+            {endIcon &&
+                <span className="k-columnmenu-indicators">
+                    <Icon icon={endIcon} />
+                    {sortIndex && <span className="k-sort-index">{sortIndex}</span>}
+                </span>
+            }
             {props.children}
+            {actions &&
+                <>
+                    <span className="k-spacer"></span>
+                    <span className="k-columnmenu-item-actions">{actions}</span>
+                </>
+            }
         </div>
     );
 };

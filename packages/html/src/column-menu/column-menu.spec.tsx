@@ -1,17 +1,24 @@
-import { classNames } from '../misc';
+import { classNames, optionClassNames, Size } from '../misc';
 
 export const COLUMNMENU_CLASSNAME = `k-column-menu`;
 
 const states = [];
 
-const options = {};
+const options = {
+    size: [ Size.small, Size.medium, Size.large ]
+};
 
-export type KendoColumnMenuProps = {
+export type KendoColumnMenuOptions = {
+    size?: (typeof options.size)[number] | null;
+}
+
+export type KendoColumnMenuProps = KendoColumnMenuOptions & {
     view?: 'list' | 'tabbed';
 };
 
 const defaultOptions = {
     view: 'list',
+    size: Size.medium
 };
 
 export const ColumnMenu = (
@@ -20,6 +27,7 @@ export const ColumnMenu = (
 ) => {
     const {
         view = defaultOptions.view,
+        size = defaultOptions.size,
         ...other
     } = props;
 
@@ -29,6 +37,9 @@ export const ColumnMenu = (
             className={classNames(
                 props.className,
                 COLUMNMENU_CLASSNAME,
+                optionClassNames(COLUMNMENU_CLASSNAME, {
+                    size,
+                }),
                 {
                     'k-column-menu-tabbed': view === 'tabbed'
                 },

@@ -6,6 +6,7 @@ export * from './filter-menu.spec';
 export * from './column-menu-multicheck-wrap';
 export * from './column-menu-multicheck-item';
 export * from './column-menu-expander.spec';
+export * from './column-menu-item-action';
 export * from './templates/column-menu-normal';
 export * from './templates/column-menu-tabbed';
 export * from './templates/filter-menu-normal';
