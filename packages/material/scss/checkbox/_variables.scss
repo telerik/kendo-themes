@@ -39,22 +39,35 @@ $kendo-checkbox-md-ripple-size: 300% !default;
 /// @group checkbox
 $kendo-checkbox-lg-ripple-size: 300% !default;
 
+/// The hover and focus indicator size of a small CheckBox.
+/// @group checkbox
+$kendo-checkbox-sm-indicator-size: k-spacing(7) !default;
+/// The hover and focus indicator size of a medium CheckBox.
+/// @group checkbox
+$kendo-checkbox-md-indicator-size: k-spacing(8) !default;
+/// The hover and focus indicator size of a large CheckBox.
+/// @group checkbox
+$kendo-checkbox-lg-indicator-size: k-spacing(9) !default;
+
 // A map with the different CheckBox sizes.
 $kendo-checkbox-sizes: (
     sm: (
         size: $kendo-checkbox-sm-size,
         glyph-size: $kendo-checkbox-sm-glyph-size,
-        ripple-size: $kendo-checkbox-sm-ripple-size
+        ripple-size: $kendo-checkbox-sm-ripple-size,
+        indicator-size: $kendo-checkbox-sm-indicator-size
     ),
     md: (
         size: $kendo-checkbox-md-size,
         glyph-size: $kendo-checkbox-md-glyph-size,
-        ripple-size: $kendo-checkbox-md-ripple-size
+        ripple-size: $kendo-checkbox-md-ripple-size,
+        indicator-size: $kendo-checkbox-md-indicator-size
     ),
     lg: (
         size: $kendo-checkbox-lg-size,
         glyph-size: $kendo-checkbox-lg-glyph-size,
-        ripple-size: $kendo-checkbox-lg-ripple-size
+        ripple-size: $kendo-checkbox-lg-ripple-size,
+        indicator-size: $kendo-checkbox-lg-indicator-size
     )
 ) !default;
 
@@ -66,7 +79,7 @@ $kendo-checkbox-bg: unset !default;
 $kendo-checkbox-text: null !default;
 /// The border color of the CheckBox.
 /// @group checkbox
-$kendo-checkbox-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 )) !default;
+$kendo-checkbox-border: k-color( subtle ) !default;
 
 /// The background color of the hovered CheckBox.
 /// @group checkbox
@@ -77,6 +90,12 @@ $kendo-checkbox-hover-text: null !default;
 /// The border color of the hovered CheckBox.
 /// @group checkbox
 $kendo-checkbox-hover-border: null !default;
+/// The indicator background color of the hovered CheckBox.
+/// @group checkbox
+$kendo-checkbox-hover-indicator-bg: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
+/// The indicator background color of the hovered checked CheckBox.
+/// @group checkbox
+$kendo-checkbox-hover-checked-indicator-bg: color-mix(in srgb, k-color( primary ) 8%, transparent) !default;
 
 /// The background color of the checked CheckBox.
 /// @group checkbox
@@ -104,12 +123,18 @@ $kendo-checkbox-focus-border: null !default;
 /// The box shadow of the focused CheckBox.
 /// @group checkbox
 $kendo-checkbox-focus-shadow: unset !default;
+/// The indicator background color of the focused CheckBox.
+/// @group checkbox
+$kendo-checkbox-focus-indicator-bg: color-mix(in srgb, k-color( on-app-surface ) 12%, transparent) !default;
 /// The border color of the focused and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-focus-checked-border: null !default;
 /// The box shadow of the focused and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-focus-checked-shadow: unset !default;
+/// The indicator background color of the focused checked CheckBox.
+/// @group checkbox
+$kendo-checkbox-focus-checked-indicator-bg: color-mix(in srgb, k-color( primary ) 12%, transparent) !default;
 
 /// The background color of the disabled CheckBox.
 /// @group checkbox
@@ -119,7 +144,7 @@ $kendo-checkbox-disabled-bg: null !default;
 $kendo-checkbox-disabled-text: null !default;
 /// The border color of the disabled CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-border: if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-component-bg, 4 )) !default;
+$kendo-checkbox-disabled-border: color-mix(in srgb, k-color( subtle ) 32%, transparent) !default;
 
 
 /// The background color of the disabled and checked CheckBox.
@@ -208,6 +233,9 @@ $kendo-checkbox-ripple-opacity: .2 !default;
     $kendo-checkbox-sm-ripple-size: $kendo-checkbox-sm-ripple-size,
     $kendo-checkbox-md-ripple-size: $kendo-checkbox-md-ripple-size,
     $kendo-checkbox-lg-ripple-size: $kendo-checkbox-lg-ripple-size,
+    $kendo-checkbox-sm-indicator-size: $kendo-checkbox-sm-indicator-size,
+    $kendo-checkbox-md-indicator-size: $kendo-checkbox-md-indicator-size,
+    $kendo-checkbox-lg-indicator-size: $kendo-checkbox-lg-indicator-size,
     $kendo-checkbox-sizes: $kendo-checkbox-sizes,
     $kendo-checkbox-bg: $kendo-checkbox-bg,
     $kendo-checkbox-text: $kendo-checkbox-text,
@@ -215,6 +243,8 @@ $kendo-checkbox-ripple-opacity: .2 !default;
     $kendo-checkbox-hover-bg: $kendo-checkbox-hover-bg,
     $kendo-checkbox-hover-text: $kendo-checkbox-hover-text,
     $kendo-checkbox-hover-border: $kendo-checkbox-hover-border,
+    $kendo-checkbox-hover-indicator-bg: $kendo-checkbox-hover-indicator-bg,
+    $kendo-checkbox-hover-checked-indicator-bg: $kendo-checkbox-hover-checked-indicator-bg,
     $kendo-checkbox-checked-bg: $kendo-checkbox-checked-bg,
     $kendo-checkbox-checked-text: $kendo-checkbox-checked-text,
     $kendo-checkbox-checked-border: $kendo-checkbox-checked-border,
@@ -223,8 +253,10 @@ $kendo-checkbox-ripple-opacity: .2 !default;
     $kendo-checkbox-indeterminate-border: $kendo-checkbox-indeterminate-border,
     $kendo-checkbox-focus-border: $kendo-checkbox-focus-border,
     $kendo-checkbox-focus-shadow: $kendo-checkbox-focus-shadow,
+    $kendo-checkbox-focus-indicator-bg: $kendo-checkbox-focus-indicator-bg,
     $kendo-checkbox-focus-checked-border: $kendo-checkbox-focus-checked-border,
     $kendo-checkbox-focus-checked-shadow: $kendo-checkbox-focus-checked-shadow,
+    $kendo-checkbox-focus-checked-indicator-bg: $kendo-checkbox-focus-checked-indicator-bg,
     $kendo-checkbox-disabled-bg: $kendo-checkbox-disabled-bg,
     $kendo-checkbox-disabled-text: $kendo-checkbox-disabled-text,
     $kendo-checkbox-disabled-border: $kendo-checkbox-disabled-border,
