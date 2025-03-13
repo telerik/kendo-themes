@@ -169,6 +169,13 @@
                     width: 100%;
                     height: 100%;
                 }
+
+                .k-text-widget-annotation .k-annotation-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                }
             }
 
             .k-annotation-editor-layer {
