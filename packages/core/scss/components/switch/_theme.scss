@@ -80,6 +80,15 @@
                     $kendo-switch-off-track-disabled-gradient
                 );
             }
+
+            .k-switch-thumb {
+                @include fill(
+                    $kendo-switch-off-thumb-disabled-text,
+                    $kendo-switch-off-thumb-disabled-bg,
+                    $kendo-switch-off-thumb-disabled-border,
+                    $kendo-switch-off-thumb-disabled-gradient
+                );
+            }
         }
 
         .k-switch-label-on {
@@ -158,6 +167,15 @@
                     $kendo-switch-on-track-disabled-bg,
                     $kendo-switch-on-track-disabled-border,
                     $kendo-switch-on-track-disabled-gradient
+                );
+            }
+
+            .k-switch-thumb {
+                @include fill(
+                    $kendo-switch-on-thumb-disabled-text,
+                    $kendo-switch-on-thumb-disabled-bg,
+                    $kendo-switch-on-thumb-disabled-border,
+                    $kendo-switch-on-thumb-disabled-gradient
                 );
             }
         }

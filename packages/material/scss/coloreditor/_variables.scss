@@ -36,13 +36,13 @@ $kendo-color-editor-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-color-editor-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the ColorEditor.
 /// @group color-editor
-$kendo-color-editor-text: $kendo-component-text !default;
+$kendo-color-editor-text: k-color( on-app-surface ) !default;
 /// The background color of the ColorEditor.
 /// @group color-editor
-$kendo-color-editor-bg: $kendo-component-bg !default;
+$kendo-color-editor-bg: k-color( surface ) !default;
 /// The border color of the ColorEditor.
 /// @group color-editor
-$kendo-color-editor-border: $kendo-component-border !default;
+$kendo-color-editor-border: k-color( border ) !default;
 
 /// The border color of the focused ColorEditor.
 /// @group color-editor
