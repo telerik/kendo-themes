@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" data-role="kendo-theme-utils" href="/packages/utils/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area>section {
+            height: 230px;
+            outline: 1px dotted;
+            overflow: hidden;
+            position: relative;
+            transform: translateZ(0);
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
+                        <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Action Buttons Start</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content">
+                                <div class="k-list-ul">
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-start k-actions-horizontal k-actionsheet-footer">
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
+                        <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Action Buttons End</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content">
+                                <div class="k-list-ul">
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-end k-actions-horizontal k-actionsheet-footer">
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
+                        <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Action Buttons Center</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content">
+                                <div class="k-list-ul">
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-center k-actions-horizontal k-actionsheet-footer">
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
+                        <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Action Buttons Stretch</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content">
+                                <div class="k-list-ul">
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
+                        <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Action Buttons Justify</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content">
+                                <div class="k-list-ul">
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-justify k-actions-horizontal k-actionsheet-footer">
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
+                        <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Action Buttons Vertical</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content">
+                                <div class="k-list-ul">
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="k-actionsheet-item">
+                                        <span class="k-actionsheet-action">
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Item</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-start k-actions-vertical k-actionsheet-footer">
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
