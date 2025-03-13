@@ -19,7 +19,6 @@
         @include kendo-popup--styles();
         @include kendo-action-sheet--layout();
         @include kendo-action-sheet--theme();
-        @include kendo-utils--layout--overflow();
         @include kendo-utils--typography--text-align();
     }
 }
