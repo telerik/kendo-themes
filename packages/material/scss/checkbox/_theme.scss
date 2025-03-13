@@ -1,3 +1,4 @@
+@use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/checkbox/_theme.scss" as *;
 
@@ -5,6 +6,55 @@
 @mixin kendo-checkbox--theme() {
 
     @include kendo-checkbox--theme-base();
+
+    .k-checkbox {
+        &:hover,
+        &.k-hover {
+            &::after {
+                background-color: $kendo-checkbox-hover-indicator-bg;
+            }
+
+            &:checked,
+            &.k-checked {
+                &::after {
+                    background-color: $kendo-checkbox-hover-checked-indicator-bg;
+                }
+            }
+        }
+
+        &:focus,
+        &.k-focus {
+            &::after {
+                background-color: $kendo-checkbox-focus-indicator-bg;
+            }
+
+            &:checked,
+            &.k-checked {
+                &::after {
+                    background-color: $kendo-checkbox-focus-checked-indicator-bg;
+                }
+            }
+        }
+
+    }
+
+    .k-ripple-container .k-checkbox {
+        &:hover,
+        &.k-hover,
+        &:focus,
+        &.k-focus {
+            &::after {
+                background: $kendo-checkbox-ripple-bg;
+            }
+
+            &:checked,
+            &.k-checked {
+                &::after {
+                    background: $kendo-checkbox-ripple-bg;
+                }
+            }
+        }
+    }
 
     // Checkbox
     // Disabled state
