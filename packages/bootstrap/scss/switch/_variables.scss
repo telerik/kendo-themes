@@ -113,6 +113,19 @@ $kendo-switch-off-thumb-hover-border: null !default;
 /// @group switch
 $kendo-switch-off-thumb-hover-gradient: null !default;
 
+/// The background of the thumb when the disabled Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-disabled-bg: null !default;
+/// The text color of the thumb when the disabled Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-disabled-text: null !default;
+/// The border color of the thumb when the disabled Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-disabled-border: null !default;
+/// The background gradient of the thumb when the disabled Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-disabled-gradient: null !default;
+
 
 /// The background of the track when the Switch is checked.
 /// @group switch
@@ -195,6 +208,19 @@ $kendo-switch-on-thumb-hover-border: null !default;
 /// @group switch
 $kendo-switch-on-thumb-hover-gradient: null !default;
 
+/// The background of the thumb when the disabled Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-disabled-bg: null !default;
+/// The text color of the thumb when the disabled Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-disabled-text: null !default;
+/// The border color of the thumb when the disabled Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-disabled-border: null !default;
+/// The background gradient of the thumb when the disabled Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-disabled-gradient: null !default;
+
 
 @forward "@progress/kendo-theme-core/scss/components/switch/_variables.scss" with (
     $kendo-switch-font-family: $kendo-switch-font-family,
@@ -228,6 +254,10 @@ $kendo-switch-on-thumb-hover-gradient: null !default;
     $kendo-switch-off-thumb-hover-text: $kendo-switch-off-thumb-hover-text,
     $kendo-switch-off-thumb-hover-border: $kendo-switch-off-thumb-hover-border,
     $kendo-switch-off-thumb-hover-gradient: $kendo-switch-off-thumb-hover-gradient,
+    $kendo-switch-off-thumb-disabled-bg: $kendo-switch-off-thumb-disabled-bg,
+    $kendo-switch-off-thumb-disabled-text: $kendo-switch-off-thumb-disabled-text,
+    $kendo-switch-off-thumb-disabled-border: $kendo-switch-off-track-disabled-border,
+    $kendo-switch-off-thumb-disabled-gradient: $kendo-switch-off-thumb-disabled-gradient,
     $kendo-switch-on-track-bg: $kendo-switch-on-track-bg,
     $kendo-switch-on-track-text: $kendo-switch-on-track-text,
     $kendo-switch-on-track-border: $kendo-switch-on-track-border,
@@ -252,5 +282,9 @@ $kendo-switch-on-thumb-hover-gradient: null !default;
     $kendo-switch-on-thumb-hover-bg: $kendo-switch-on-thumb-hover-bg,
     $kendo-switch-on-thumb-hover-text: $kendo-switch-on-thumb-hover-text,
     $kendo-switch-on-thumb-hover-border: $kendo-switch-on-thumb-hover-border,
-    $kendo-switch-on-thumb-hover-gradient: $kendo-switch-on-thumb-hover-gradient
+    $kendo-switch-on-thumb-hover-gradient: $kendo-switch-on-thumb-hover-gradient,
+    $kendo-switch-on-thumb-disabled-bg: $kendo-switch-on-thumb-disabled-bg,
+    $kendo-switch-on-thumb-disabled-text: $kendo-switch-on-thumb-disabled-text,
+    $kendo-switch-on-thumb-disabled-border: $kendo-switch-on-track-disabled-border,
+    $kendo-switch-on-thumb-disabled-gradient: $kendo-switch-on-thumb-disabled-gradient,
 );
