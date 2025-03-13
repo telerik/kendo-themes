@@ -1,5 +1,6 @@
+@use "sass:map";
+@use "./variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/switch/_layout.scss" as *;
-
 
 @mixin kendo-switch--layout() {
 
@@ -11,8 +12,6 @@
         // Thumb ripple
         .k-switch-thumb::before {
             content: "";
-            width: 200%;
-            height: 200%;
             border-radius: 100%;
             display: none;
             opacity: 0;
@@ -29,7 +28,7 @@
         &.k-hover {
             .k-switch-thumb::before {
                 display: block;
-                opacity: .04;
+                opacity: .08;
             }
         }
 
@@ -38,8 +37,24 @@
         &.k-focus {
             .k-switch-thumb::before {
                 display: block;
-                opacity: .12;
+                opacity: .2;
             }
+        }
+
+        &:disabled,
+        &.k-disabled {
+            opacity: 1;
+        }
+    }
+
+    // Switch sizes
+    @each $size, $size-props in $kendo-switch-sizes {
+
+        $_thumb-indicator-size: map.get( $size-props, thumb-indicator-size );
+
+        .k-switch-#{$size} .k-switch-thumb::before {
+            width: $_thumb-indicator-size;
+            height: $_thumb-indicator-size;
         }
     }
 }

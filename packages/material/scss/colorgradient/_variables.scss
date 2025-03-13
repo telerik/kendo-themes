@@ -36,13 +36,13 @@ $kendo-color-gradient-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-color-gradient-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-text: $kendo-component-text !default;
+$kendo-color-gradient-text: k-color( on-app-surface ) !default;
 /// The background color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-bg: $kendo-component-bg !default;
+$kendo-color-gradient-bg: k-color( surface ) !default;
 /// The border color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-border: $kendo-component-border !default;
+$kendo-color-gradient-border: k-color( border ) !default;
 
 /// The vertical padding of the small ColorGradient.
 /// @group color-gradient

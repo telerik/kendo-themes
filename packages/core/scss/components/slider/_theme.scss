@@ -54,6 +54,11 @@
                 );
             }
 
+            &:hover,
+            &.k-hover {
+                @include focus-indicator( $kendo-slider-draghandle-hover-shadow );
+            }
+
             &:focus,
             &.k-focus {
                 @include focus-indicator( $kendo-slider-draghandle-focus-shadow );
