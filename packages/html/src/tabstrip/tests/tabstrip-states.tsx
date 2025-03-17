@@ -28,13 +28,14 @@ export default () => (
                 <TabStripNormal
                     tabStripItems={
                         <>
-                            <TabStripItem first active focus value="focus active" />
-                            <TabStripItem last value="normal" />
+                            <TabStripItem first active hover value="hover active" />
+                            <TabStripItem value="normal" />
+                            <TabStripItem last active focus value="focus active" />
                         </>
                     }
                 >
                     <TabStripContent active>
-                        <div>focus active item</div>
+                        <div>active item states</div>
                     </TabStripContent>
                 </TabStripNormal>
             </section>
