@@ -8,7 +8,7 @@ $kendo-switch-font-family: null !default;
 
 /// The border width of the Switch track.
 /// @group switch
-$kendo-switch-track-border-width: 0px !default;
+$kendo-switch-track-border-width: 2px !default;
 
 /// The border width of the Switch thumb.
 /// @group switch
@@ -25,20 +25,20 @@ $kendo-switch-label-display: none !default;
 /// The map with the different Switch sizes.
 /// @group switch
 $kendo-switch-sizes: (
-    sm: ( font-size: null, track-width: 26px, track-height:  12px, thumb-width: 16px, thumb-height: 16px, thumb-offset: -2px, label-offset: 0px ),
-    md: ( font-size: null, track-width: 32px, track-height:  14px, thumb-width: 20px, thumb-height: 20px, thumb-offset: -3px, label-offset: 0px ),
-    lg: ( font-size: null, track-width: 38px, track-height:  16px, thumb-width: 24px, thumb-height: 24px, thumb-offset: -4px, label-offset: 0px )
+    sm: ( font-size: null, track-width: 52px, track-height:  28px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 4px, label-offset: 0px, thumb-indicator-size: 36px ),
+    md: ( font-size: null, track-width: 52px, track-height:  32px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 4px, label-offset: 0px, thumb-indicator-size: 40px ),
+    lg: ( font-size: null, track-width: 60px, track-height:  36px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 4px, label-offset: 0px, thumb-indicator-size: 44px )
 ) !default;
 
 /// The background of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-bg: color-mix(in srgb, k-color(on-app-surface) 38%, transparent) !default;
+$kendo-switch-off-track-bg: k-color(base) !default;
 /// The text color of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-text: unset !default;
 /// The border color of the track when the Switch is not checked
 /// @group switch
-$kendo-switch-off-track-border: unset !default;
+$kendo-switch-off-track-border: k-color(base-emphasis) !default;
 /// The background gradient of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-gradient: null !default;
@@ -74,20 +74,20 @@ $kendo-switch-off-track-focus-ring: unset !default;
 
 /// The background of the track when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-disabled-bg: null !default;
+$kendo-switch-off-track-disabled-bg: color-mix(in srgb, k-color(base) 38%, transparent) !default;
 /// The text color of the track when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-disabled-text: null !default;
+$kendo-switch-off-track-disabled-text: color-mix(in srgb, k-color(on-app-surface) 38%, transparent) !default;
 /// The border color of the track when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-disabled-border: null !default;
+$kendo-switch-off-track-disabled-border: color-mix(in srgb, k-color(base-emphasis) 38%, transparent) !default;
 /// The background gradient of the track when the disabled Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-bg: k-color(app-surface) !default;
+$kendo-switch-off-thumb-bg: k-color(base-emphasis) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-text: unset !default;
@@ -111,16 +111,29 @@ $kendo-switch-off-thumb-hover-border: null !default;
 /// @group switch
 $kendo-switch-off-thumb-hover-gradient: null !default;
 
+/// The background of the thumb when the disabled Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-disabled-bg: color-mix(in srgb, k-color(base-emphasis) 38%, transparent) !default;
+/// The text color of the thumb when the disabled Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-disabled-text: null !default;
+/// The border color of the thumb when the disabled Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-disabled-border: null !default;
+/// The background gradient of the thumb when the disabled Switch is not checked.
+/// @group switch
+$kendo-switch-off-thumb-disabled-gradient: null !default;
+
 
 /// The background of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-bg: color-mix(in srgb, k-color(primary) 44%, transparent) !default;
+$kendo-switch-on-track-bg: k-color(primary) !default;
 /// The text color of the track when the Switch is checked.
 /// @group switch
 $kendo-switch-on-track-text: unset !default;
 /// The border color of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-border: unset !default;
+$kendo-switch-on-track-border: k-color(primary) !default;
 /// The background gradient of the track when the Switch is checked.
 /// @group switch
 $kendo-switch-on-track-gradient: null !default;
@@ -156,20 +169,20 @@ $kendo-switch-on-track-focus-ring: unset !default;
 
 /// The background of the track when the disabled Switch is checked.
 /// @group switch
-$kendo-switch-on-track-disabled-bg: null !default;
+$kendo-switch-on-track-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 /// The text color of the track when the disabled Switch is checked.
 /// @group switch
 $kendo-switch-on-track-disabled-text: null !default;
 /// The border color of the track when the disabled Switch is checked.
 /// @group switch
-$kendo-switch-on-track-disabled-border: null !default;
+$kendo-switch-on-track-disabled-border: transparent !default;
 /// The background gradient of the track when the disabled Switch is checked.
 /// @group switch
 $kendo-switch-on-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-bg: k-color(primary) !default;
+$kendo-switch-on-thumb-bg: k-color(primary-subtle) !default;
 /// The text color of the thumb when the Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-text: unset !default;
@@ -192,6 +205,19 @@ $kendo-switch-on-thumb-hover-border: null !default;
 /// The background gradient of the thumb when the hovered Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-hover-gradient: null !default;
+
+/// The background of the thumb when the disabled Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-disabled-bg: k-color(app-surface) !default;
+/// The text color of the thumb when the disabled Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-disabled-text: null !default;
+/// The border color of the thumb when the disabled Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-disabled-border: null !default;
+/// The background gradient of the thumb when the disabled Switch is checked.
+/// @group switch
+$kendo-switch-on-thumb-disabled-gradient: null !default;
 
 @forward "@progress/kendo-theme-core/scss/components/switch/_variables.scss" with (
     $kendo-switch-font-family: $kendo-switch-font-family,
@@ -225,6 +251,10 @@ $kendo-switch-on-thumb-hover-gradient: null !default;
     $kendo-switch-off-thumb-hover-text: $kendo-switch-off-thumb-hover-text,
     $kendo-switch-off-thumb-hover-border: $kendo-switch-off-thumb-hover-border,
     $kendo-switch-off-thumb-hover-gradient: $kendo-switch-off-thumb-hover-gradient,
+    $kendo-switch-off-thumb-disabled-bg: $kendo-switch-off-thumb-disabled-bg,
+    $kendo-switch-off-thumb-disabled-text: $kendo-switch-off-thumb-disabled-text,
+    $kendo-switch-off-thumb-disabled-border: $kendo-switch-off-track-disabled-border,
+    $kendo-switch-off-thumb-disabled-gradient: $kendo-switch-off-thumb-disabled-gradient,
     $kendo-switch-on-track-bg: $kendo-switch-on-track-bg,
     $kendo-switch-on-track-text: $kendo-switch-on-track-text,
     $kendo-switch-on-track-border: $kendo-switch-on-track-border,
@@ -249,5 +279,9 @@ $kendo-switch-on-thumb-hover-gradient: null !default;
     $kendo-switch-on-thumb-hover-bg: $kendo-switch-on-thumb-hover-bg,
     $kendo-switch-on-thumb-hover-text: $kendo-switch-on-thumb-hover-text,
     $kendo-switch-on-thumb-hover-border: $kendo-switch-on-thumb-hover-border,
-    $kendo-switch-on-thumb-hover-gradient: $kendo-switch-on-thumb-hover-gradient
+    $kendo-switch-on-thumb-hover-gradient: $kendo-switch-on-thumb-hover-gradient,
+    $kendo-switch-on-thumb-disabled-bg: $kendo-switch-on-thumb-disabled-bg,
+    $kendo-switch-on-thumb-disabled-text: $kendo-switch-on-thumb-disabled-text,
+    $kendo-switch-on-thumb-disabled-border: $kendo-switch-on-track-disabled-border,
+    $kendo-switch-on-thumb-disabled-gradient: $kendo-switch-on-thumb-disabled-gradient,
 );

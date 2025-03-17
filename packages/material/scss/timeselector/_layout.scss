@@ -1,6 +1,44 @@
+@use "sass:map";
+@use "sass:list";
 @use "@progress/kendo-theme-core/scss/components/timeselector/_layout.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-time-selector--layout() {
     @include kendo-time-selector--layout-base();
+
+    .k-time-list-wrapper {
+        .k-title {
+            font-weight: var( --kendo-font-weight, normal );
+        }
+
+        &.k-focus {
+            &::before,
+            &::after {
+                height: calc( 50% - (calc( #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height})) / 2);
+            }
+        }
+    }
+
+    // Time selector header
+    .k-time-header,
+    .k-time-selector-header {
+        .k-time-now {
+            border-width: $kendo-time-selector-border-width;
+        }
+    }
+
+    .k-time-list-container {
+        padding: 0 k-spacing(3);
+    }
+
+    // Time list highlight
+    .k-time-highlight,
+    .k-time-list-highlight {
+        width: auto;
+        border-radius: k-border-radius(xxxl);
+        left: k-spacing(3);
+        right: k-spacing(3);
+    }
 }

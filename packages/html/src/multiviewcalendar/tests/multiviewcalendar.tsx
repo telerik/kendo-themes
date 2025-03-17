@@ -1,37 +1,43 @@
 import { MultiViewCalendarNormal, MultiViewCalendarYear, MultiViewCalendarDecade, MultiViewCalendarCentury, MultiViewCalendarWithWeeks } from '../../multiviewcalendar';
 
+const styles = `
+    #test-area {
+        max-width: 1240px;
+    }
+`;
 
 export default () => (
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-2">
+        <style>{styles}</style>
+        <div id="test-area" className="k-d-grid k-grid-cols-2 k-gap-4">
 
             <section>
-                <span>Month View</span>
+                <div>Month View</div>
                 <MultiViewCalendarNormal/>
             </section>
 
             <section>
-                <span>Month View with Week Numbers</span>
+                <div>Month View with Week Numbers</div>
                 <MultiViewCalendarWithWeeks calendarTitleText="October 2021 - November 2021"/>
             </section>
 
             <section>
-                <span>Year View</span>
+                <div>Year View</div>
                 <MultiViewCalendarYear/>
             </section>
 
             <section>
-                <span>Decade View</span>
+                <div>Decade View</div>
                 <MultiViewCalendarDecade/>
             </section>
 
             <section>
-                <span>Century View</span>
+                <div>Century View</div>
                 <MultiViewCalendarCentury/>
             </section>
 
             <section>
-                <span>With Footer</span>
+                <div>With Footer</div>
                 <MultiViewCalendarNormal showCalendarFooter/>
             </section>
 

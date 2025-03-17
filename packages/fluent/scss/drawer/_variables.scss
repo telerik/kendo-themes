@@ -47,18 +47,30 @@ $kendo-drawer-scrollbar-radius: 20px !default;
 /// @group drawer
 $kendo-drawer-scrollbar-hover-color: color-mix(in srgb, k-color(on-app-surface) 60%, transparent) !default;
 
+/// The horizontal padding of the Drawer items.
+/// @group drawer
+$kendo-drawer-items-padding-x: 0 !default;
+/// The vertical padding of the Drawer items.
+/// @group drawer
+$kendo-drawer-items-padding-y: 0 !default;
 /// The horizontal padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-y: k-spacing(2) !default;
+/// The spacing between the items in the Drawer item.
+/// @group drawer
+$kendo-drawer-item-spacing: $kendo-drawer-item-padding-x !default;
 /// The font size of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-font-size: $kendo-drawer-font-size !default;
 /// The line height of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-line-height: var( --kendo-line-height-lg, normal ) !default;
+/// The font weight of the Drawer item.
+/// @group drawer
+$kendo-drawer-item-font-weight: var( --kendo-font-weight, normal ) !default;
 
 /// The horizontal padding of the Drawer item in each level.
 /// @group drawer
@@ -66,6 +78,9 @@ $kendo-drawer-item-level-padding-x: $kendo-drawer-item-padding-x !default;
 /// The count of the Drawer item levels.
 /// @group drawer
 $kendo-drawer-item-level-count: 5 !default;
+/// The border radius of the Drawer item.
+/// @group drawer
+$kendo-drawer-item-border-radius: null !default;
 
 /// The horizontal padding of the Drawer icon.
 /// @group drawer
@@ -136,3 +151,6 @@ $kendo-drawer-item-selected-hover-bg: k-color(base-subtle-active) !default;
 /// The text color of the selected and hovered Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-hover-text: k-color(on-base) !default;
+/// The background color of the selected and focused Drawer item.
+/// @group drawer
+$kendo-drawer-item-selected-focus-bg: null !default;

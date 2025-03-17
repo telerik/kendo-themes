@@ -1,55 +1,8 @@
-@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/toolbar/_layout.scss" as *;
 
 
 @mixin kendo-toolbar--layout() {
 
     @include kendo-toolbar--layout-base();
-
-    .k-toolbar,
-    .k-toolbar-popup {
-
-        // Button
-        .k-button {
-            @include box-shadow( none );
-        }
-
-
-        // Button group
-        .k-button-group {
-            @include box-shadow( none );
-        }
-
-
-        // Split button
-        .k-split-button {
-            @include box-shadow( none );
-        }
-
-        &.k-toolbar-outline {
-            @include box-shadow( none );
-        }
-    }
-
-    // Overflow container
-    .k-overflow-container {
-
-        .k-button {
-            @include box-shadow( none );
-            font-weight: normal;
-            text-transform: unset;
-
-            &::before {
-                display: none;
-            }
-
-            &:disabled,
-            &.k-disabled {
-                opacity: .6;
-                filter: grayscale(.1);
-            }
-        }
-
-    }
 
 }

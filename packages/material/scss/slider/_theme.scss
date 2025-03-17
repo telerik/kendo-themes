@@ -10,21 +10,12 @@
     .k-slider {
         cursor: pointer;
 
-        .k-slider-track,
-        .k-slider-selection {
-            border-radius: 0;
-        }
-
         .k-tick::after {
-            @include fill( $bg: k-color(on-app-surface) );
+            @include fill( $bg: $kendo-slider-tick-marker-bg );
         }
 
         .k-draghandle {
             box-sizing: border-box;
-
-            &:focus {
-                @include box-shadow( $kendo-slider-draghandle-focus-shadow );
-            }
         }
 
         &.k-disabled {

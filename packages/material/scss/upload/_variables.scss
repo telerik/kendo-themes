@@ -15,7 +15,7 @@ $kendo-upload-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-upload-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Upload.
 /// @group upload
-$kendo-upload-line-height: math.div( 20, 14 ) !default;
+$kendo-upload-line-height: var( --kendo-line-height, normal ) !default;
 /// The maximum height of the list with uploaded items.
 /// @group upload
 $kendo-upload-max-height: 300px !default;
@@ -25,7 +25,7 @@ $kendo-upload-max-height: 300px !default;
 $kendo-upload-text: k-color(on-app-surface) !default;
 /// The background color of the Upload.
 /// @group upload
-$kendo-upload-bg: k-color(surface-alt) !default;
+$kendo-upload-bg: k-color(surface) !default;
 /// The border color of the Upload.
 /// @group upload
 $kendo-upload-border: k-color(border) !default;
@@ -41,7 +41,7 @@ $kendo-upload-dropzone-padding-y: k-spacing(2) !default;
 $kendo-upload-dropzone-text: k-color(on-app-surface) !default;
 /// The background color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-bg: k-color(app-surface) !default;
+$kendo-upload-dropzone-bg: k-color(surface) !default;
 /// The border color of the Upload dropzone.
 /// @group upload
 $kendo-upload-dropzone-border: $kendo-upload-border !default;

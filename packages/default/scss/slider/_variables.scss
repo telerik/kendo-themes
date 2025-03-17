@@ -76,6 +76,9 @@ $kendo-slider-draghandle-hover-border: k-color(primary) !default;
 /// The gradient of the hovered Slider drag handle.
 /// @group slider
 $kendo-slider-draghandle-hover-gradient: null !default;
+/// The shadow of the hovered Slider drag handle.
+/// @group slider
+$kendo-slider-draghandle-hover-shadow: null !default;
 
 /// The background color of the active Slider drag handle.
 /// @group slider
@@ -124,6 +127,10 @@ $kendo-slider-tick-horizontal-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4
 /// @group slider
 $kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
 
+/// The background color of the Slider tick marker.
+/// @group slider
+$kendo-slider-tick-marker-bg: null !default;
+
 @forward "@progress/kendo-theme-core/scss/components/slider/_variables.scss" with (
     $kendo-slider-size: $kendo-slider-size,
     $kendo-slider-tick-size: $kendo-slider-tick-size,
@@ -148,6 +155,7 @@ $kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uA
     $kendo-slider-draghandle-hover-text: $kendo-slider-draghandle-hover-text,
     $kendo-slider-draghandle-hover-border: $kendo-slider-draghandle-hover-border,
     $kendo-slider-draghandle-hover-gradient: $kendo-slider-draghandle-hover-gradient,
+    $kendo-slider-draghandle-hover-shadow: $kendo-slider-draghandle-hover-shadow,
     $kendo-slider-draghandle-pressed-bg: $kendo-slider-draghandle-pressed-bg,
     $kendo-slider-draghandle-pressed-text: $kendo-slider-draghandle-pressed-text,
     $kendo-slider-draghandle-pressed-border: $kendo-slider-draghandle-pressed-border,
@@ -161,5 +169,6 @@ $kendo-slider-tick-vertical-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uA
     $kendo-slider-selection-bg: $kendo-slider-selection-bg,
     $kendo-slider-disabled-opacity: $kendo-slider-disabled-opacity,
     $kendo-slider-tick-horizontal-image: $kendo-slider-tick-horizontal-image,
-    $kendo-slider-tick-vertical-image: $kendo-slider-tick-vertical-image
+    $kendo-slider-tick-vertical-image: $kendo-slider-tick-vertical-image,
+    $kendo-slider-tick-marker-bg: $kendo-slider-tick-marker-bg
 );

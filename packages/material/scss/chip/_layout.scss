@@ -1,6 +1,16 @@
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/chip/_layout.scss" as *;
 
 
 @mixin kendo-chip--layout() {
     @include kendo-chip--layout-base();
+
+    .k-chip {
+        &:focus,
+        &.k-focus {
+            outline-style: solid;
+            outline-width: calc( (#{$kendo-chip-border-width} * 2 ));
+            outline-offset: calc( (#{$kendo-chip-border-width} * 2 ) * -1);
+        }
+    }
 }

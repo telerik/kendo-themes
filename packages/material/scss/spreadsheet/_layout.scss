@@ -1,4 +1,3 @@
-@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/spreadsheet/_layout.scss" as *;
 
 
@@ -6,46 +5,12 @@
 
     @include kendo-spreadsheet--layout-base();
 
-    // Quick access toolbar
-    .k-spreadsheet-quick-access-toolbar {
-        padding: k-spacing(1);
-
-        .k-button {
-            border-radius: 50%;
-            color: inherit;
-            background: none;
-            box-shadow: none;
-        }
-
-    }
-
     // Spreadsheet tabstrip
     .k-spreadsheet-tabstrip {
         padding-top: 0;
 
         .k-tabstrip-items-wrapper {
             border-width: 0;
-        }
-    }
-
-    // Spreadsheet footer
-    .k-spreadsheet-sheets-bar {
-
-        .k-spreadsheet-sheets-bar-add {
-            margin: k-spacing(1);
-            border-radius: 50%;
-            color: inherit;
-            background: none;
-            box-shadow: none;
-        }
-
-    }
-
-    // Selection
-    .k-spreadsheet .k-selection-full,
-    .k-spreadsheet .k-selection-partial {
-        &::after {
-            display: block;
         }
     }
 }

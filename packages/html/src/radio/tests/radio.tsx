@@ -1,4 +1,4 @@
-import { RadioButton, RadioButtonWithLabelAfter, RadioButtonInsideLabel } from '../../radio';
+import { RadioButtonWithLabelAfter, RadioButtonInsideLabel } from '../../radio';
 
 const styles = `
     .k-ripple-container .k-radio:focus::after,
@@ -16,7 +16,7 @@ export default () =>(
             <span dir="rtl">Radio button RTL</span>
             <span dir="rtl">In label RTL</span>
 
-            {[ 'unchecked', ...RadioButton.states ].map((state) => (
+            {[ 'unchecked', 'checked' ].map((state) => (
                 <>
                     <div>
                         <RadioButtonWithLabelAfter id={'rad-' + [ state ]} { ...{ [state]: true }}>{state}</RadioButtonWithLabelAfter>
@@ -34,30 +34,17 @@ export default () =>(
                 </>
             ))}
 
-            <div>
-                <RadioButtonWithLabelAfter id="rad-disabled-checked" disabled checked>disabled checked</RadioButtonWithLabelAfter>
-            </div>
-            <div>
-                <RadioButtonInsideLabel disabled checked >disabled checked</RadioButtonInsideLabel>
-            </div>
-            <div dir="rtl">
-                <RadioButtonWithLabelAfter id="rad-disabled-checked-rtl" disabled checked>disabled checked</RadioButtonWithLabelAfter>
-            </div>
-            <div dir="rtl">
-                <RadioButtonInsideLabel disabled checked >disabled checked</RadioButtonInsideLabel>
-            </div>
-
             <div className="k-ripple-container">
-                <RadioButtonWithLabelAfter id="rad-ripple" focus>ripple</RadioButtonWithLabelAfter>
+                <RadioButtonWithLabelAfter id="rad-ripple" focus className="k-ripple-focus">ripple</RadioButtonWithLabelAfter>
             </div>
             <div className="k-ripple-container">
-                <RadioButtonInsideLabel focus >ripple</RadioButtonInsideLabel>
+                <RadioButtonInsideLabel focus className="k-ripple-focus" >ripple</RadioButtonInsideLabel>
             </div>
             <div className="k-ripple-container" dir="rtl">
-                <RadioButtonWithLabelAfter id="rad-ripple-rtl" focus>ripple</RadioButtonWithLabelAfter>
+                <RadioButtonWithLabelAfter id="rad-ripple-rtl" focus className="k-ripple-focus">ripple</RadioButtonWithLabelAfter>
             </div>
             <div className="k-ripple-container" dir="rtl">
-                <RadioButtonInsideLabel focus >ripple</RadioButtonInsideLabel>
+                <RadioButtonInsideLabel focus className="k-ripple-focus">ripple</RadioButtonInsideLabel>
             </div>
 
             <div>

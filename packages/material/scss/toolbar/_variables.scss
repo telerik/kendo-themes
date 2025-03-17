@@ -36,7 +36,7 @@ $kendo-toolbar-lg-padding-y: k-spacing(2.5) !default;
 $kendo-toolbar-spacing: k-spacing(2) !default;
 /// The spacing between the tools of the small Toolbar.
 /// @group toolbar
-$kendo-toolbar-sm-spacing: k-spacing(1.5) !default;
+$kendo-toolbar-sm-spacing: k-spacing(1) !default;
 /// The spacing between the tools of the medium Toolbar.
 /// @group toolbar
 $kendo-toolbar-md-spacing: $kendo-toolbar-spacing !default;
@@ -59,7 +59,7 @@ $kendo-toolbar-lg-separator-height: $kendo-button-lg-calc-size !default;
 
 /// The width of the border around the Toolbar.
 /// @group toolbar
-$kendo-toolbar-border-width: 0 !default;
+$kendo-toolbar-border-width: 1px !default;
 /// The border radius of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-border-radius: null !default;
@@ -72,23 +72,23 @@ $kendo-toolbar-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-toolbar-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-line-height: math.div( 20, 14 ) !default;
+$kendo-toolbar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-bg: k-color(surface-alt) !default;
+$kendo-toolbar-bg: k-color(surface) !default;
 /// The text color of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-text: k-color(on-app-surface) !default;
+$kendo-toolbar-text: k-color(base-on-subtle) !default;
 /// The color of the border around the Toolbar.
 /// @group toolbar
-$kendo-toolbar-border: k-color(border) !default;
+$kendo-toolbar-border: $kendo-toolbar-bg !default;
 /// The gradient of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-gradient: null !default;
 /// The box shadow of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-shadow: k-elevation(4) !default;
+$kendo-toolbar-shadow: null !default;
 /// The left and right scroll overlay of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-scroll-overlay: $kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
@@ -96,10 +96,10 @@ $kendo-toolbar-scroll-overlay: $kendo-toolbar-bg, color-mix(in srgb, k-color(app
 
 /// The text color of the outline Toolbar.
 /// @group toolbar
-$kendo-toolbar-outline-text: unset !default;
+$kendo-toolbar-outline-text: k-color(base-on-subtle) !default;
 /// The color of the border around the outline Toolbar.
 /// @group toolbar
-$kendo-toolbar-outline-border: currentColor !default;
+$kendo-toolbar-outline-border: color-mix(in srgb, k-color(on-app-surface) 44%, transparent) !default;
 /// The gradient of the outline Toolbar.
 /// @group toolbar
 $kendo-toolbar-outline-gradient: null !default;
@@ -116,16 +116,16 @@ $kendo-toolbar-outline-scroll-overlay: k-color(app-surface), color-mix(in srgb, 
 
 /// The text color of the flat Toolbar.
 /// @group toolbar
-$kendo-toolbar-flat-text: null !default;
+$kendo-toolbar-flat-text: k-color(base-on-subtle) !default;
 /// The color of the border around the flat Toolbar.
 /// @group toolbar
-$kendo-toolbar-flat-border: $kendo-toolbar-border !default;
+$kendo-toolbar-flat-border: k-color(border) !default;
 /// The gradient of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-gradient: null !default;
 /// The box shadow of the flat Toolbar.
 /// @group toolbar
-$kendo-toolbar-flat-shadow: 0 2px 0 -1px k-color(border) !default;
+$kendo-toolbar-flat-shadow: null !default;
 /// Border width of the flat Toolbar.
 /// @group toolbar
 $kendo-toolbar-flat-border-width: 1px !default;
@@ -136,7 +136,7 @@ $kendo-toolbar-flat-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-c
 
 /// The color of the separator border of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-separator-border: inherit !default;
+$kendo-toolbar-separator-border: k-color(border) !default;
 
 /// The width of the input in the Toolbar.
 /// @group toolbar
@@ -144,7 +144,7 @@ $kendo-toolbar-input-width: 10em !default;
 
 /// The box shadow of the focused Toolbar item.
 /// @group toolbar
-$kendo-toolbar-item-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
+$kendo-toolbar-item-shadow: null !default;
 
 /// The font size of the Toolbar overflow container.
 /// @group toolbar

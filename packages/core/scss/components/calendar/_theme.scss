@@ -128,6 +128,10 @@
             );
         }
 
+        .k-calendar-navigation-marker {
+            color: $kendo-calendar-navigation-marker-text;
+        }
+
         // Invalid
         &.k-invalid,
         &.k-invalid:hover,
@@ -159,7 +163,6 @@
     .k-calendar { // stylelint-disable-line
 
         $kendo-calendar-range-gap: k-spacing(1px) !default;
-        $kendo-calendar-range-bg: color-mix(in srgb, k-color(primary) 25%, transparent);
         $kendo-calendar-range-split-size: 5px !default;
 
         .k-range-start,

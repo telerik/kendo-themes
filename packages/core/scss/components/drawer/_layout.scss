@@ -125,7 +125,8 @@
     }
     .k-drawer-items {
         margin: 0;
-        padding: 0;
+        padding-block: $kendo-drawer-items-padding-y;
+        padding-inline: $kendo-drawer-items-padding-x;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -134,13 +135,16 @@
     .k-drawer-item {
         padding-block: $kendo-drawer-item-padding-y;
         padding-inline: $kendo-drawer-item-padding-x;
+        border-radius: $kendo-drawer-item-border-radius;
         outline: 0;
         color: inherit;
         font-size: $kendo-drawer-item-font-size;
         line-height: $kendo-drawer-item-line-height;
+        font-weight: $kendo-drawer-item-font-weight;
         display: flex;
         flex-flow: row nowrap;
-        gap: $kendo-drawer-item-padding-x;
+        gap: $kendo-drawer-item-spacing;
+        align-items: center;
         cursor: pointer;
 
         > .k-drawer-link {

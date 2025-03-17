@@ -24,7 +24,7 @@ $kendo-orgchart-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-orgchart-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the OrgChart.
 /// @group orgchart
-$kendo-orgchart-bg: k-color(surface-alt) !default;
+$kendo-orgchart-bg: k-color(app-surface) !default;
 /// The text color of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-text: k-color(on-app-surface) !default;
@@ -102,10 +102,10 @@ $kendo-orgchart-card-padding-y: $kendo-card-padding-y !default;
 $kendo-orgchart-card-padding-x: $kendo-orgchart-card-padding-y !default;
 /// The border width of the OrgChart Card.
 /// @group orgchart
-$kendo-orgchart-card-border-width: 1px !default;
+$kendo-orgchart-card-border-width: null !default;
 /// The shadow of the OrgChart Card.
 /// @group orgchart
-$kendo-orgchart-card-shadow: none !default;
+$kendo-orgchart-card-shadow: null !default;
 /// The shadow of the focused OrgChart Card.
 /// @group orgchart
 $kendo-orgchart-card-focus-shadow: $kendo-orgchart-node-group-focus-shadow !default;

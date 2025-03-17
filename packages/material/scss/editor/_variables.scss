@@ -58,14 +58,14 @@ $kendo-editor-resize-handle-bg: #ffffff !default;
 $kendo-editor-selectednode-outline-width: 2px !default;
 /// The outline color of the Editor's selected node.
 /// @group editor
-$kendo-editor-selectednode-outline-color: #88ccff !default;
+$kendo-editor-selectednode-outline-color: k-color(primary) !default;
 
 /// The horizontal padding of the inline Editor.
 /// @group editor
-$kendo-editor-inline-padding-x: k-spacing(2) !default;
+$kendo-editor-inline-padding-x: k-spacing(4) !default;
 /// The vertical padding of the inline Editor.
 /// @group editor
-$kendo-editor-inline-padding-y: k-spacing(0.5) !default;
+$kendo-editor-inline-padding-y: k-spacing(4) !default;
 
 /// The horizontal padding of the Editor file browser tiles.
 /// @group editor
@@ -76,7 +76,7 @@ $kendo-editor-filebrowser-tiles-padding-y: k-spacing(1) !default;
 
 /// The padding of the Editor content.
 /// @group editor
-$kendo-editor-content-padding: k-spacing(4) !default;
+$kendo-editor-content-padding: k-spacing(2) !default;
 
 $kendo-editor-ct-cell-text: k-color(on-secondary) !default;
 $kendo-editor-ct-cell-bg: k-color(secondary) !default;

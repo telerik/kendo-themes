@@ -5,11 +5,11 @@
     "base": "@progress/kendo-theme-material",
     "version": "5.1.2-dev.7",
     "previewColors": [
-        "#ffffff",
-        "#e0e0e0",
-        "#3f51b5",
-        "#e91e63",
-        "#252525"
+        "#FEFBFF",
+        "#F7F3FA",
+        "#65558F",
+        "#E8DEF8",
+        "#1D1B20"
     ],
     "components": [],
     "groups": []

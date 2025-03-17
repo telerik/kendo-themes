@@ -1,20 +1,8 @@
-@use "./_variables.scss" as *;
-@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/pivotgrid/_theme.scss" as *;
 
 
 @mixin kendo-pivotgrid--theme() {
 
     @include kendo-pivotgrid--theme-base();
-
-    // Hover and Focus state have the same bg color
-    .k-pivotgrid-cell:focus,
-    .k-pivotgrid-cell.k-focus,
-    .k-master-row > .k-pivotgrid-cell:focus,
-    .k-grouping-row > .k-pivotgrid-cell:focus,
-    .k-detail-row > .k-pivotgrid-cell:focus,
-    .k-group-footer > .k-pivotgrid-cell:focus {
-        @include fill ( $bg: $kendo-pivotgrid-hover-bg );
-    }
 
 }

@@ -6,14 +6,65 @@
 
     @include kendo-bottom-navigation--theme-base();
 
-    // Flat
+    .k-bottom-nav {
+        .k-bottom-nav-item.k-selected {
+            font-weight: var(--kendo-font-weight-bold, normal );
+        }
+    }
+
+    // Solid
     @each $name, $color in $kendo-bottom-navigation-theme-colors {
-        .k-bottom-nav-flat-#{$name} {
+        .k-bottom-nav-solid-#{$name} {
+            @include fill(
+                $color: k-color( on-#{$name} )
+            );
+
             .k-bottom-nav-item.k-focus,
-            .k-bottom-nav-item:focus {
-                @include fill( $bg: color-mix(in srgb, k-color( on-app-surface ) 6%, transparent));
+            .k-bottom-nav-item:focus,
+            .k-bottom-nav-item.k-selected {
+                @include fill( $bg: k-color( #{$name}-active ));
             }
         }
     }
 
+    // Flat
+    @each $name, $color in $kendo-bottom-navigation-theme-colors {
+        .k-bottom-nav-flat-#{$name} {
+            @if $name == "primary"  {
+                color: k-color( subtle );
+            } @else {
+                $color: k-color( #{$name}-on-surface );
+            }
+
+            @if $name == "primary" or $name == "secondary" {
+                background: k-color( surface );
+            } @else if $name == "light" {
+                background: k-color( dark-subtle );
+            } @else if $name == "dark"  {
+                background: k-color( light-subtle );
+            } @else {
+                background: k-color( #{$name}-subtle );
+            }
+
+            .k-bottom-nav-item.k-focus,
+            .k-bottom-nav-item:focus,
+            .k-bottom-nav-item.k-selected {
+                background: color-mix(in srgb, currentColor 12%, transparent);
+            }
+
+            .k-bottom-nav-item.k-selected {
+                @if $name == "primary"  {
+                    @include fill(
+                        $color: k-color( on-secondary),
+                        $bg: k-color( secondary )
+                    );
+                } @else {
+                    @include fill(
+                        $color: k-color( #{$name}-on-surface),
+                        $bg: color-mix(in srgb, currentColor 12%, transparent)
+                    );
+                }
+            }
+        }
+    }
 }

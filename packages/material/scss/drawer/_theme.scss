@@ -6,15 +6,4 @@
 
     @include kendo-drawer--theme-base();
 
-    .k-drawer-item {
-        &.k-selected {
-
-            &:focus,
-            &.k-focus {
-                background-color: $kendo-drawer-focus-bg;
-                box-shadow: $kendo-drawer-focus-shadow;
-            }
-        }
-    }
-
 }

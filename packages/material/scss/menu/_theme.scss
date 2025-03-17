@@ -7,39 +7,14 @@
 
     @include kendo-menu--theme-base();
 
-    .k-menu:not(.k-context-menu) {
-
-        // Root items
-        > .k-menu-item {
-
-            // Focus state
-            &:focus,
-            &.k-focus {
-                @include fill(
-                    $kendo-menu-item-hover-text,
-                    $kendo-menu-item-hover-bg,
-                    $kendo-menu-item-hover-border,
-                    $kendo-menu-item-hover-gradient
-                );
-            }
-
-        }
-    }
-
     // Subitems
     .k-menu-group,
     .k-context-menu {
         .k-menu-item {
-
             // Focus state
             &:focus,
             &.k-focus {
-                @include fill(
-                    $kendo-menu-popup-item-hover-text,
-                    $kendo-menu-popup-item-hover-bg,
-                    $kendo-menu-popup-item-hover-border,
-                    $kendo-menu-popup-item-hover-gradient
-                );
+                box-shadow: $kendo-menu-item-focus-shadow;
             }
         }
     }

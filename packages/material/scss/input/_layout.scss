@@ -32,12 +32,6 @@
             background: none;
             border-color: transparent;
         }
-
-        &:disabled,
-        &[disabled],
-        &.k-disabled  {
-            border-bottom-style: dashed;
-        }
     }
 
 
@@ -45,18 +39,20 @@
     .k-input,
     .k-picker {
 
+        .k-button {
+            &:hover,
+            &.k-hover,
+            &:focus,
+            &.k-focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+
         &:disabled,
         &[disabled],
         &.k-disabled {
-            opacity: 1;
             filter: none;
-        }
-
-        .k-input-button,
-        .k-input-spinner .k-spinner-increase,
-        .k-input-spinner .k-spinner-decrease,
-        .k-input-values .k-chip {
-            color: inherit;
         }
     }
 

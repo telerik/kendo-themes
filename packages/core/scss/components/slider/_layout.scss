@@ -283,14 +283,14 @@
     .k-slider-horizontal :is(.k-slider-track, .k-slider-selection) {
         height: $kendo-slider-track-thickness;
         left: 0;
-        margin-top: - math.div( $kendo-slider-track-thickness, 2 );
+        margin-top: calc( #{$kendo-slider-track-thickness} / -2 );
         top: 50%;
     }
 
     .k-slider-vertical :is(.k-slider-track, .k-slider-selection) {
         bottom: 0;
         left: 50%;
-        margin-left: - math.div( $kendo-slider-track-thickness, 2 );
+        margin-left: calc( #{$kendo-slider-track-thickness} / -2 );
         width: $kendo-slider-track-thickness;
     }
 

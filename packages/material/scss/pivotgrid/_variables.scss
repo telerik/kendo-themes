@@ -67,7 +67,7 @@ $kendo-pivotgrid-alt-border: k-color(border-alt) !default;
 
 /// The background color of the PivotGrid header.
 /// @group pivotgrid
-$kendo-pivotgrid-headers-bg: color-mix(in srgb, k-color(app-surface) 2%, transparent) !default;
+$kendo-pivotgrid-headers-bg: k-color(surface) !default;
 /// The text color of the PivotGrid header.
 /// @group pivotgrid
 $kendo-pivotgrid-headers-text: k-color(on-app-surface) !default;
@@ -77,7 +77,7 @@ $kendo-pivotgrid-headers-border: k-color(border) !default;
 
 /// The background color of the PivotGrid total cells.
 /// @group pivotgrid
-$kendo-pivotgrid-total-bg: k-color(base-subtle) !default;
+$kendo-pivotgrid-total-bg: k-color(app-surface) !default;
 /// The text color of the PivotGrid total cells.
 /// @group pivotgrid
 $kendo-pivotgrid-total-text: k-color(on-app-surface) !default;
@@ -87,7 +87,7 @@ $kendo-pivotgrid-total-border: k-color(border) !default;
 
 /// The hover background color of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-hover-bg: k-color(base-hover) !default;
+$kendo-pivotgrid-hover-bg: color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 /// The hover text color of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-hover-text: null !default;
@@ -97,7 +97,7 @@ $kendo-pivotgrid-hover-border: null !default;
 
 /// The selected background color of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-selected-bg: color-mix(in srgb, k-color(base-active) 25%, transparent) !default;
+$kendo-pivotgrid-selected-bg: color-mix(in srgb, k-color(on-app-surface) 25%, transparent) !default;
 /// The selected text color of the PivotGrid.
 /// @group pivotgrid
 $kendo-pivotgrid-selected-text: null !default;

@@ -11,7 +11,7 @@ $kendo-popup-padding-y: null !default;
 $kendo-popup-border-width: 0px !default;
 /// Border radius of the popup.
 /// @group popup
-$kendo-popup-border-radius: null !default;
+$kendo-popup-border-radius: k-border-radius(md) !default;
 
 /// Font size of the popup.
 /// @group popup
@@ -22,14 +22,14 @@ $kendo-popup-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Horizontal padding of the popup content.
 /// @group popup
-$kendo-popup-content-padding-x: k-spacing(2) !default;
+$kendo-popup-content-padding-x: k-spacing(4) !default;
 /// Vertical padding of the popup content.
 /// @group popup
-$kendo-popup-content-padding-y: k-spacing(2) !default;
+$kendo-popup-content-padding-y: k-spacing(4) !default;
 
 /// Background color of the popup.
 /// @group popup
-$kendo-popup-bg: k-color(surface-alt) !default;
+$kendo-popup-bg: k-color(surface) !default;
 /// Text color of the popup.
 /// @group popup
 $kendo-popup-text: k-color(on-app-surface) !default;
@@ -38,7 +38,7 @@ $kendo-popup-text: k-color(on-app-surface) !default;
 $kendo-popup-border: k-color(border) !default;
 /// Box shadow of the popup.
 /// @group popup
-$kendo-popup-shadow: k-elevation(4) !default;
+$kendo-popup-shadow: k-elevation(2) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/popup/_variables.scss" with (
     $kendo-popup-padding-x: $kendo-popup-padding-x,

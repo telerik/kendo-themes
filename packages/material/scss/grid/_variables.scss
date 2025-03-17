@@ -27,12 +27,12 @@ $kendo-grid-padding-y: $kendo-table-md-cell-padding-y !default;
 $kendo-grid-header-padding-x: $kendo-grid-padding-x !default;
 /// The vertical padding of the Grid header.
 /// @group grid
-$kendo-grid-header-padding-y: k-spacing(4) !default;
+$kendo-grid-header-padding-y: $kendo-grid-padding-y !default;
 
 
 /// The horizontal padding of the Grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-x: k-spacing(2) !default;
+$kendo-grid-grouping-header-padding-x: $kendo-grid-padding-x !default;
 /// The vertical padding of the Grid grouping header.
 /// @group grid
 $kendo-grid-grouping-header-padding-y: $kendo-grid-grouping-header-padding-x !default;
@@ -56,26 +56,26 @@ $kendo-grid-filter-cell-padding-y: $kendo-grid-padding-y !default;
 $kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
 /// The vertical padding of the Grid filter cell.
 /// @group grid
-$kendo-grid-edit-cell-padding-y: k-spacing(1.5) !default;
+$kendo-grid-edit-cell-padding-y: k-spacing(2) !default;
 
 $kendo-grid-group-drop-hint-size: 6px !default;
-$kendo-grid-group-drop-hint-line-size: math.div( $kendo-grid-group-drop-hint-size, 3 ) !default;
+$kendo-grid-group-drop-hint-line-size: calc( #{$kendo-grid-group-drop-hint-size} / 3 ) !default;
 $kendo-grid-group-drop-hint-height: $kendo-chip-calc-size !default;
-$kendo-grid-group-drop-hint-top: calc( ( #{$kendo-chip-calc-size} + calc( #{$kendo-grid-grouping-header-padding-y} * 2 ) - #{$kendo-grid-group-drop-hint-height} ) / 2) !default;
+$kendo-grid-group-drop-hint-top: null !default;
 
 
-$kendo-grid-sm-padding-x: k-spacing(2.5) !default;
-$kendo-grid-sm-padding-y: k-spacing(1) !default;
+$kendo-grid-sm-padding-x: k-spacing(2) !default;
+$kendo-grid-sm-padding-y: k-spacing(2) !default;
 $kendo-grid-sm-header-padding-x: $kendo-grid-sm-padding-x !default;
-$kendo-grid-sm-header-padding-y: k-spacing(2.5) !default;
-$kendo-grid-sm-grouping-header-padding-x: k-spacing(1.5) !default;
+$kendo-grid-sm-header-padding-y: $kendo-grid-sm-padding-y !default;
+$kendo-grid-sm-grouping-header-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-grouping-header-padding-y: $kendo-grid-sm-grouping-header-padding-x !default;
 $kendo-grid-sm-cell-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-padding-x !default;
-$kendo-grid-sm-filter-cell-padding-y: k-spacing(2) !default;
+$kendo-grid-sm-filter-cell-padding-y: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
-$kendo-grid-sm-edit-cell-padding-y: k-spacing(1) !default;
+$kendo-grid-sm-edit-cell-padding-y: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 $kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-padding-y !default;
@@ -135,7 +135,7 @@ $kendo-grid-sizes: (
     ),
 ) !default;
 
-$kendo-grid-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-grid-header-font-size: var( --kendo-font-size-md, inherit ) !default;
 $kendo-grid-header-first-border: 1px !default;
 $kendo-grid-header-menu-icon-spacing: k-spacing(3.5) !default;
 
@@ -234,7 +234,7 @@ $kendo-grid-grouping-row-bg: transparent !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
 $kendo-grid-sorted-icon-spacing: k-spacing(1) !default;
-$kendo-grid-sorted-bg: color-mix(in srgb, k-color(on-app-surface) 5%, transparent) !default;
+$kendo-grid-sorted-bg: color-mix(in srgb, k-color( on-app-surface ) 5%, transparent) !default;
 $kendo-grid-sorting-indicator-text: $kendo-grid-header-text !default;
 $kendo-grid-sorting-index-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
@@ -250,7 +250,7 @@ $kendo-grid-command-cell-padding-y: calc( #{$kendo-grid-cell-padding-y} - (#{$ke
 // Must be a solid color
 $kendo-grid-sticky-bg: $kendo-grid-bg !default;
 $kendo-grid-sticky-text: $kendo-grid-text !default;
-$kendo-grid-sticky-border: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+$kendo-grid-sticky-border: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
 
 // Must be a solid color
 $kendo-grid-sticky-alt-bg: $kendo-grid-sticky-bg !default;
@@ -262,12 +262,12 @@ $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 $kendo-grid-sticky-footer-bg: $kendo-grid-sticky-header-bg !default;
 $kendo-grid-sticky-footer-hover-bg: $kendo-grid-sticky-footer-bg !default;
 
-$kendo-grid-sticky-selected-bg: color-mix(in srgb, k-color(primary) 12%, transparent) !default;
+$kendo-grid-sticky-selected-bg: color-mix(in srgb, k-color( primary ) 12%, transparent) !default;
 $kendo-grid-sticky-selected-alt-bg: $kendo-grid-sticky-selected-bg !default;
 
 // Must be a solid color
-$kendo-grid-sticky-hover-bg: k-color(base-hover) !default;
-$kendo-grid-sticky-selected-hover-bg: color-mix(in srgb, k-color(primary) 12%, transparent) !default;
+$kendo-grid-sticky-hover-bg: k-color( base-hover ) !default;
+$kendo-grid-sticky-selected-hover-bg: color-mix(in srgb, k-color( primary ) 12%, transparent) !default;
 
 $kendo-grid-column-menu-width: 250px !default;
 $kendo-grid-column-menu-max-width: 320px !default;
@@ -306,7 +306,7 @@ $kendo-grid-column-menu-group-header-border: $kendo-popup-border !default;
 $kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: k-spacing(0) !default;
 $kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: k-spacing(2) !default;
 
-$kendo-grid-column-menu-tabbed-bg: k-color(app-surface) !default;
+$kendo-grid-column-menu-tabbed-bg: k-color( base ) !default;
 
 $kendo-grid-drag-cell-width: ($kendo-icon-size * 3) !default;
 
@@ -320,10 +320,10 @@ $kendo-grid-group-footer-second-cell-border: 0px !default;
 
 /// The background color of the Grid row resize indicator.
 /// @group grid
-$kendo-grid-row-resizer-hover-bg: color-mix(in srgb, k-color(on-base) 20%, transparent) !default;
+$kendo-grid-row-resizer-hover-bg: color-mix(in srgb, k-color( on-base ) 20%, transparent) !default;
 /// The background color of the active Grid row resize indicator.
 /// @group grid
-$kendo-grid-row-resizer-active-bg: k-color(primary) !default;
+$kendo-grid-row-resizer-active-bg: k-color( primary ) !default;
 /// The height of the Grid row resize indicator.
 /// @group grid
 $kendo-grid-row-resizer-height: k-spacing(0.5) !default;

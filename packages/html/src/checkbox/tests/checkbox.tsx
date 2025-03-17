@@ -39,25 +39,6 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabelAfter id="ch2" disabled checked >Checked</CheckboxWithLabelAfter>
-            </div>
-            <div>
-                <label className="k-checkbox-label">
-                    <CheckboxChecked disabled />
-                    Checked
-                </label>
-            </div>
-            <div dir="rtl">
-                <CheckboxWithLabelAfter id="ch2-rtl" disabled checked >Checked</CheckboxWithLabelAfter>
-            </div>
-            <div dir="rtl">
-                <label className="k-checkbox-label">
-                    <CheckboxChecked disabled />
-                    Checked
-                </label>
-            </div>
-
-            <div>
                 <CheckboxWithLabelAfter id="ch3" >Unchecked</CheckboxWithLabelAfter>
             </div>
             <div>
@@ -72,25 +53,6 @@ export default () =>(
             <div dir="rtl">
                 <label className="k-checkbox-label">
                     <CheckboxNormal />
-                    Unchecked
-                </label>
-            </div>
-
-            <div>
-                <CheckboxWithLabelAfter id="ch4" disabled >Unchecked</CheckboxWithLabelAfter>
-            </div>
-            <div>
-                <label className="k-checkbox-label">
-                    <CheckboxNormal disabled />
-                    Unchecked
-                </label>
-            </div>
-            <div dir="rtl">
-                <CheckboxWithLabelAfter id="ch4-rtl" disabled >Unchecked</CheckboxWithLabelAfter>
-            </div>
-            <div dir="rtl">
-                <label className="k-checkbox-label">
-                    <CheckboxNormal disabled />
                     Unchecked
                 </label>
             </div>
@@ -114,78 +76,21 @@ export default () =>(
                 </label>
             </div>
 
-            <div>
-                <CheckboxWithLabelAfter id="chIndDis" indeterminate disabled >Indeterminate</CheckboxWithLabelAfter>
-            </div>
-            <div>
-                <label className="k-checkbox-label">
-                    <CheckboxNormal indeterminate disabled />
-                    Indeterminate
-                </label>
-            </div>
-            <div dir="rtl">
-                <CheckboxWithLabelAfter id="chIndDis-rtl" indeterminate disabled >Indeterminate</CheckboxWithLabelAfter>
-            </div>
-            <div dir="rtl">
-                <label className="k-checkbox-label">
-                    <CheckboxNormal indeterminate disabled />
-                    Indeterminate
-                </label>
-            </div>
-
-            <div>
-                <CheckboxWithLabelAfter id="chError" invalid required >Invalid</CheckboxWithLabelAfter>
-            </div>
-            <div>
-                <label className="k-checkbox-label">
-                    <CheckboxNormal invalid required/>
-                    Invalid
-                </label>
-            </div>
-            <div dir="rtl">
-                <CheckboxWithLabelAfter id="chError-rtl" invalid required >Invalid</CheckboxWithLabelAfter>
-            </div>
-            <div dir="rtl">
-                <label className="k-checkbox-label">
-                    <CheckboxNormal invalid required/>
-                    Invalid
-                </label>
-            </div>
-
-            <div>
-                <CheckboxWithLabelAfter id="chFocus" focus >Focus</CheckboxWithLabelAfter>
-            </div>
-            <div>
-                <label className="k-checkbox-label">
-                    <CheckboxNormal focus/>
-                    Focus
-                </label>
-            </div>
-            <div dir="rtl">
-                <CheckboxWithLabelAfter id="chFocus-rtl" focus >Focus</CheckboxWithLabelAfter>
-            </div>
-            <div dir="rtl">
-                <label className="k-checkbox-label">
-                    <CheckboxNormal focus/>
-                    Focus
-                </label>
-            </div>
-
             <div className="k-ripple-container">
-                <CheckboxWithLabelAfter id="chRipple" focus >Ripple</CheckboxWithLabelAfter>
+                <CheckboxWithLabelAfter id="chRipple" focus className="k-ripple-focus">Ripple</CheckboxWithLabelAfter>
             </div>
             <div className="k-ripple-container">
                 <label className="k-checkbox-label">
-                    <CheckboxNormal focus/>
+                    <CheckboxNormal focus className="k-ripple-focus" />
                     Ripple
                 </label>
             </div>
             <div className="k-ripple-container" dir="rtl">
-                <CheckboxWithLabelAfter id="chRipple-rtl" focus >Ripple</CheckboxWithLabelAfter>
+                <CheckboxWithLabelAfter id="chRipple-rtl" focus className="k-ripple-focus">Ripple</CheckboxWithLabelAfter>
             </div>
             <div className="k-ripple-container" dir="rtl">
                 <label className="k-checkbox-label">
-                    <CheckboxNormal focus/>
+                    <CheckboxNormal focus className="k-ripple-focus" />
                     Ripple
                 </label>
             </div>

@@ -220,6 +220,9 @@
         $_group-item-padding-y: map.get( $size-props, group-item-padding-y );
         $_group-item-font-size: map.get( $size-props, group-item-font-size );
         $_group-item-line-height: map.get( $size-props, group-item-line-height );
+        $_filter-padding-x: map.get( $size-props, filter-padding-x );
+        $_filter-padding-y: map.get( $size-props, filter-padding-y );
+
 
         .k-list-#{$size} {
             --INTERNAL--kendo-list-font-size: var( --kendo-list-#{$size}-font-size, #{$_font-size} );
@@ -230,6 +233,11 @@
                 --INTERNAL--kendo-list-header-padding-y: var( --kendo-list-#{$size}-header-padding-y, #{$_header-padding-y} );
                 --INTERNAL--kendo-list-header-font-size: var( --kendo-list-#{$size}-header-font-size, #{$_header-font-size} );
                 --INTERNAL--kendo-list-header-line-height: var( --kendo-list-#{$size}-header-line-height, #{$_header-line-height} );
+            }
+
+            .k-list-filter {
+                padding-inline: $_filter-padding-x;
+                padding-block: $_filter-padding-y;
             }
 
             .k-list-item {

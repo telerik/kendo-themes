@@ -69,6 +69,10 @@ $kendo-chip-md-padding-y: k-spacing(1) !default;
 /// @group chip
 $kendo-chip-lg-padding-y: k-spacing(1.5) !default;
 
+/// The font weight of the Chip.
+/// @group chip
+$kendo-chip-font-weight: var( --kendo-font-weight-normal, normal ) !default;
+
 /// The font size of the small Chip.
 /// @group chip
 $kendo-chip-sm-font-size: var( --kendo-font-size, inherit ) !default;

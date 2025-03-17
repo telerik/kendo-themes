@@ -8,7 +8,7 @@
 $kendo-treeview-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the TreeView.
 /// @group treeview
-$kendo-treeview-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-treeview-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the small TreeView.
 /// @group treeview
 $kendo-treeview-sm-font-size: var( --kendo-font-size, inherit ) !default;
@@ -17,19 +17,19 @@ $kendo-treeview-sm-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-treeview-md-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font size of the large TreeView.
 /// @group treeview
-$kendo-treeview-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-treeview-lg-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the TreeView.
 /// @group treeview
-$kendo-treeview-line-height: 1.25 !default;
+$kendo-treeview-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the small TreeView.
 /// @group treeview
-$kendo-treeview-sm-line-height: math.div( 20, 14 ) !default;
+$kendo-treeview-sm-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the medium TreeView.
 /// @group treeview
-$kendo-treeview-md-line-height: math.div( 20, 14 ) !default;
+$kendo-treeview-md-line-height: var( --kendo-line-height, normal ) !default;
 /// The line height of the large TreeView.
 /// @group treeview
-$kendo-treeview-lg-line-height: 1.5 !default;
+$kendo-treeview-lg-line-height: var( --kendo-line-height, normal ) !default;
 /// The indentation of child groups in the TreeView.
 /// @group treeview
 $kendo-treeview-indent: 24px !default;
@@ -48,41 +48,41 @@ $kendo-treeview-md-item-padding-x: k-spacing(4) !default;
 $kendo-treeview-lg-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the TreeView items.
 /// @group treeview
-$kendo-treeview-item-padding-y: k-spacing(2) !default;
+$kendo-treeview-item-padding-y: k-spacing(2.5) !default;
 /// The vertical padding of the small TreeView items.
 /// @group treeview
-$kendo-treeview-sm-item-padding-y: k-spacing(1.5) !default;
+$kendo-treeview-sm-item-padding-y: k-spacing(2) !default;
 /// The vertical padding of the medium TreeView items.
 /// @group treeview
-$kendo-treeview-md-item-padding-y: k-spacing(2) !default;
+$kendo-treeview-md-item-padding-y: k-spacing(2.5) !default;
 /// The vertical padding of the large TreeView items.
 /// @group treeview
-$kendo-treeview-lg-item-padding-y: k-spacing(2) !default;
+$kendo-treeview-lg-item-padding-y: k-spacing(3) !default;
 /// The border width of the TreeView items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0px !default;
 /// The border radius of the TreeView items.
 /// @group treeview
-$kendo-treeview-item-border-radius: unset !default;
+$kendo-treeview-item-border-radius: k-border-radius(md) !default;
 
 /// The horizontal padding of the checkbox in the small TreeView.
 /// @group treeview
-$kendo-treeview-sm-checkbox-padding-x: k-spacing(1) !default;
+$kendo-treeview-sm-checkbox-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the checkbox in the medium TreeView.
 /// @group treeview
-$kendo-treeview-md-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x !default;
+$kendo-treeview-md-checkbox-padding-x: k-spacing(2) !default;
 /// The horizontal padding of the checkbox in the large TreeView.
 /// @group treeview
-$kendo-treeview-lg-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x !default;
+$kendo-treeview-lg-checkbox-padding-x: k-spacing(2) !default;
 /// The vertical padding of the checkbox in the small TreeView.
 /// @group treeview
-$kendo-treeview-sm-checkbox-padding-y: k-spacing(0.5) !default;
+$kendo-treeview-sm-checkbox-padding-y: k-spacing(1) !default;
 /// The vertical padding of the checkbox in the medium TreeView.
 /// @group treeview
-$kendo-treeview-md-checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y !default;
+$kendo-treeview-md-checkbox-padding-y: k-spacing(1.5) !default;
 /// The vertical padding of the checkbox in the large TreeView.
 /// @group treeview
-$kendo-treeview-lg-checkbox-padding-y: null !default;
+$kendo-treeview-lg-checkbox-padding-y: k-spacing(2) !default;
 
 
 /// The sizes map of the TreeView.
@@ -127,10 +127,10 @@ $kendo-treeview-border: null !default;
 
 /// The background color of hovered TreeView.
 /// @group treeview
-$kendo-treeview-item-hover-bg: color-mix(in srgb, k-color(on-app-surface) 7%, transparent) !default;
+$kendo-treeview-item-hover-bg: color-mix(in srgb, currentColor 8%, transparent) !default;
 /// The text color of hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-hover-text: unset !default;
+$kendo-treeview-item-hover-text: inherit !default;
 /// The border color of hovered TreeView items.
 /// @group treeview
 $kendo-treeview-item-hover-border: null !default;
@@ -140,10 +140,10 @@ $kendo-treeview-item-hover-gradient: null !default;
 
 /// The background color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-bg: unset !default;
+$kendo-treeview-item-selected-bg: null !default;
 /// The text color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-text: k-color(secondary) !default;
+$kendo-treeview-item-selected-text: k-color(primary) !default;
 /// The border color of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-border: null !default;
@@ -153,10 +153,10 @@ $kendo-treeview-item-selected-gradient: null !default;
 
 /// The background color of selected and focused TreeView items.
 /// /// @group treeview
-$kendo-treeview-item-selected-focus-text: k-color(secondary) !default;
+$kendo-treeview-item-selected-focus-text: inherit !default;
 /// The text color of selected and focused TreeView items.
 /// /// @group treeview
-$kendo-treeview-item-selected-focus-bg: color-mix(in srgb, k-color(on-app-surface) 7%, transparent) !default;
+$kendo-treeview-item-selected-focus-bg: null !default;
 /// The border color of selected and focused TreeView items.
 /// /// @group treeview
 $kendo-treeview-item-selected-focus-border: null !default;
@@ -166,7 +166,7 @@ $kendo-treeview-item-selected-focus-gradient: null !default;
 
 /// The box shadow of focused TreeView items.
 /// @group treeview
-$kendo-treeview-item-focus-shadow: unset !default;
+$kendo-treeview-item-focus-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent) !default;
 
 /// The background color of the Load More button in the TreeView
 /// @group treeview

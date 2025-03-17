@@ -64,7 +64,7 @@ $kendo-scheduler-event-min-height: 25px !default;
 $kendo-scheduler-event-border-radius: k-border-radius(md) !default;
 /// The line height of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-line-height: calc( #{$kendo-scheduler-event-min-height} - (2 * #{k-spacing(0.5)}) ) !default;
+$kendo-scheduler-event-line-height: calc( $kendo-scheduler-event-min-height - k-spacing(1) )!default;
 
 /// The background color of the Scheduler event.
 /// @group scheduler
@@ -120,10 +120,10 @@ $kendo-scheduler-event-ongoing-shadow: inset 0px 0px 0px 1px #ff0000 !default;
 
 /// The horizontal padding of the Scheduler cell.
 /// @group scheduler
-$kendo-scheduler-cell-padding-x: k-spacing(2) !default;
+$kendo-scheduler-cell-padding-x: k-spacing(3) !default;
 /// The vertical padding of the Scheduler cell.
 /// @group scheduler
-$kendo-scheduler-cell-padding-y: k-spacing(2) !default;
+$kendo-scheduler-cell-padding-y: k-spacing(3) !default;
 /// The height of the Scheduler cell.
 /// @group scheduler
 $kendo-scheduler-cell-height: calc( var( --kendo-line-height, normal) * 1rem) !default;
@@ -200,7 +200,7 @@ $kendo-scheduler-tooltip-border-width: 0 !default;
 $kendo-scheduler-tooltip-bg: k-color(on-primary) !default;
 /// The text color of the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-text: k-color(on-app-surface) !default;
+$kendo-scheduler-tooltip-text: k-color(on-base) !default;
 /// The border color of the Scheduler Tooltip.
 /// @group scheduler
 $kendo-scheduler-tooltip-border: null !default;

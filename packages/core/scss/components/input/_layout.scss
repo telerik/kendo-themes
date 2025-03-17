@@ -518,11 +518,7 @@
                 box-sizing: content-box;
             }
         }
-        .k-dropdown-operator.k-picker-#{$size} {
-            .k-input-button {
-                padding: $_padding-y;
-            }
-        }
+
         select.k-picker-#{$size} {
             padding-block: $_padding-y;
             padding-inline: $_padding-x;

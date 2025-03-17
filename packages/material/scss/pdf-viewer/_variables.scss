@@ -22,7 +22,7 @@ $kendo-pdf-viewer-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the PDFViewer.
 /// @group pdf-viewer
-$kendo-pdf-viewer-bg: k-color(surface-alt) !default;
+$kendo-pdf-viewer-bg: k-color(surface) !default;
 /// The text color of the PDFViewer.
 /// @group pdf-viewer
 $kendo-pdf-viewer-text: k-color(on-app-surface) !default;
@@ -87,7 +87,7 @@ $kendo-pdf-viewer-search-panel-border-width: 1px !default;
 $kendo-pdf-viewer-search-panel-border-radius: k-spacing(1) !default;
 /// The background color of the PDFViewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-bg: k-color(surface-alt) !default;
+$kendo-pdf-viewer-search-panel-bg: k-color(surface) !default;
 /// The text color of the PDFViewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-text: k-color(on-app-surface) !default;
@@ -103,7 +103,7 @@ $kendo-pdf-viewer-search-panel-matches-spacing: k-spacing(2) !default;
 
 /// The line height of the PDFViewer selection.
 /// @group pdf-viewer
-$kendo-pdf-viewer-selection-line-height: $kendo-line-height-sm !default;
+$kendo-pdf-viewer-selection-line-height: var( --kendo-line-height-sm, normal ) !default;
 
 /// The background color of the PDFViewer highlight.
 /// @group pdf-viewer

@@ -5,22 +5,22 @@
 
 /// The font size of the highest level heading.
 /// @group typography
-$kendo-h1-font-size: 96px !default;
+$kendo-h1-font-size: 57px !default;
 /// The font size of the second highest level heading.
 /// @group typography
-$kendo-h2-font-size: 60px !default;
+$kendo-h2-font-size: 45px !default;
 /// The font size of the third highest level heading.
 /// @group typography
-$kendo-h3-font-size: 48px !default;
+$kendo-h3-font-size: 36px !default;
 /// The font size of the fourth highest level heading.
 /// @group typography
-$kendo-h4-font-size: 34px !default;
+$kendo-h4-font-size: 32px !default;
 /// The font size of the fifth highest level heading.
 /// @group typography
-$kendo-h5-font-size: 24px !default;
+$kendo-h5-font-size: 28px !default;
 /// The font size of the sixth highest level heading.
 /// @group typography
-$kendo-h6-font-size: 20px !default;
+$kendo-h6-font-size: 24px !default;
 
 /// The font family of the highest level heading.
 /// @group typography
@@ -43,22 +43,22 @@ $kendo-h6-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The line height of the highest level heading.
 /// @group typography
-$kendo-h1-line-height: 112px !default;
+$kendo-h1-line-height: 64px !default;
 /// The line height of the second highest level heading.
 /// @group typography
-$kendo-h2-line-height: 72px !default;
+$kendo-h2-line-height: 52px !default;
 /// The line height of the third highest level heading.
 /// @group typography
-$kendo-h3-line-height: 56px !default;
+$kendo-h3-line-height: 44px !default;
 /// The line height of the fourth highest level heading.
 /// @group typography
-$kendo-h4-line-height: 36px !default;
+$kendo-h4-line-height: 40px !default;
 /// The line height of the fifth highest level heading.
 /// @group typography
-$kendo-h5-line-height: 24px !default;
+$kendo-h5-line-height: 36px !default;
 /// The line height of the sixth highest level heading.
 /// @group typography
-$kendo-h6-line-height: 24px !default;
+$kendo-h6-line-height: 32px !default;
 
 /// The font weight of the highest level heading.
 /// @group typography
@@ -84,19 +84,19 @@ $kendo-h6-font-weight: var( --kendo-font-weight-medium, normal ) !default;
 $kendo-h1-letter-spacing: var( --kendo-letter-spacing-tighter, normal ) !default;
 /// The letter spacing of the second highest level heading.
 /// @group typography
-$kendo-h2-letter-spacing: var( --kendo-letter-spacing-tight, normal ) !default;
+$kendo-h2-letter-spacing: var( --kendo-letter-spacing-normal, normal ) !default;
 /// The letter spacing of the third highest level heading.
 /// @group typography
 $kendo-h3-letter-spacing: var( --kendo-letter-spacing-normal, normal ) !default;
 /// The letter spacing of the fourth highest level heading.
 /// @group typography
-$kendo-h4-letter-spacing: var( --kendo-letter-spacing-wider, normal ) !default;
+$kendo-h4-letter-spacing: var( --kendo-letter-spacing-normal, normal ) !default;
 /// The letter spacing of the fifth highest level heading.
 /// @group typography
 $kendo-h5-letter-spacing: var( --kendo-letter-spacing-normal, normal ) !default;
 /// The letter spacing of the sixth highest level heading.
 /// @group typography
-$kendo-h6-letter-spacing: var( --kendo-letter-spacing-wide, normal ) !default;
+$kendo-h6-letter-spacing: var( --kendo-letter-spacing-normal, normal ) !default;
 
 
 /// The margin of the highest level heading.
@@ -201,7 +201,7 @@ $kendo-paragraph-letter-spacing: .0313em !default;
 $kendo-code-font-size: var( --kendo-font-size, inherit ) !default;
 /// The font family of the code tag.
 /// @group typography
-$kendo-code-font-family: var( --kendo-font-family-monospace, normal ) !default;
+$kendo-code-font-family: var( --kendo-font-family, normal ) !default;
 /// The line height of the code tag.
 /// @group typography
 $kendo-code-line-height: var( --kendo-line-height, normal ) !default;
@@ -210,7 +210,7 @@ $kendo-code-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-code-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 /// The letter spacing of the code tag.
 /// @group typography
-$kendo-code-letter-spacing: null !default;
+$kendo-code-letter-spacing: var( --kendo-letter-spacing-wider, normal ) !default;
 
 /// The horizontal padding of the code tag.
 /// @group typography
@@ -242,16 +242,16 @@ $kendo-code-border: k-color(border) !default;
 
 /// The font size of the largest display text.
 /// @group typography
-$kendo-display1-font-size: calc( var( --kendo-font-size, .875rem ) * 9.5 ) !default;
+$kendo-display1-font-size: 140px !default;
 /// The font size of the second largest display text.
 /// @group typography
-$kendo-display2-font-size: calc( var( --kendo-font-size, .875rem ) * 8.75 ) !default;
+$kendo-display2-font-size: 112px !default;
 /// The font size of the third largest display text.
 /// @group typography
-$kendo-display3-font-size: calc( var( --kendo-font-size, .875rem ) * 8 ) !default;
+$kendo-display3-font-size: 90px !default;
 /// The font size of the fourth largest display text.
 /// @group typography
-$kendo-display4-font-size: calc( var( --kendo-font-size, .875rem ) * 7.25 ) !default;
+$kendo-display4-font-size: 72px !default;
 
 /// The font family of the largest display text.
 /// @group typography

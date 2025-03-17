@@ -19,7 +19,7 @@ $kendo-map-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// The background color of the Map.
 /// @group map
-$kendo-map-bg: k-color(surface-alt) !default;
+$kendo-map-bg: k-color(app-surface) !default;
 /// The text color of the Map.
 /// @group map
 $kendo-map-text: k-color(on-app-surface) !default;
@@ -35,7 +35,7 @@ $kendo-map-navigator-margin: k-spacing(4) !default;
 $kendo-map-navigator-padding: k-spacing(0.5) !default;
 /// The width of the Map navigator.
 /// @group map
-$kendo-map-navigator-width: calc( calc( #{$kendo-icon-size} * 3) + calc( #{$kendo-map-navigator-padding} * 2 ) ) !default;
+$kendo-map-navigator-width: calc( #{$kendo-icon-size} * 3 + #{$kendo-map-navigator-padding} * 2 ) !default;
 /// The height of the Map navigator.
 /// @group map
 $kendo-map-navigator-height: $kendo-map-navigator-width !default;
