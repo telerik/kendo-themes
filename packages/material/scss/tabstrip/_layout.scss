@@ -1,3 +1,4 @@
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/tabstrip/_layout.scss" as *;
 
 
@@ -5,12 +6,107 @@
 
     @include kendo-tabstrip--layout-base();
 
-    .k-tabstrip-items {
-        text-transform: uppercase;
+    .k-tabstrip-items .k-item {
+        font-weight: var( --kendo-font-weight-medium, medium );
     }
 
-    .k-tabstrip-left .k-tabstrip-items .k-link {
-        justify-content: flex-end;
+    .k-tabstrip .k-tabstrip-items-wrapper .k-item.k-active::after {
+        border-width: 0;
     }
 
+    .k-tabstrip-items .k-item-actions {
+        align-self: center;
+    }
+
+    .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item:active,
+    .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item.k-active {
+        margin-bottom: 0;
+        border-bottom-width: 0;
+    }
+
+    .k-tabstrip-top,
+    .k-tabstrip-bottom {
+        .k-tabstrip-items-wrapper {
+            .k-item::after {
+                display: none;
+            }
+
+            .k-item .k-link {
+                position: relative;
+            }
+
+            .k-item .k-link::after {
+                content: "";
+                display: none;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: $kendo-tabstrip-indicator-size;
+                margin: 0 $kendo-tabstrip-item-padding-x;
+                pointer-events: none;
+            }
+            .k-item.k-active .k-link::after {
+                display: block;
+            }
+
+            .k-item > .k-link {
+                z-index: 1;
+            }
+        }
+    }
+
+    .k-tabstrip-right,
+    .k-tabstrip-left {
+        .k-tabstrip-items-wrapper {
+            .k-item::after {
+                content: "";
+                display: none;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                pointer-events: none;
+                width: $kendo-tabstrip-indicator-size;
+                height: auto;
+                margin: $kendo-tabstrip-item-padding-y 0;
+            }
+            .k-item.k-active::after {
+                display: block;
+            }
+        }
+    }
+
+    // Variants
+    .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item .k-link::after {
+        top: auto;
+    }
+
+    .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
+        left: auto;
+    }
+
+    .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
+        right: auto;
+    }
+
+    .k-tabstrip-top .k-tabstrip-items-wrapper .k-item.k-active .k-link::after {
+        border-radius: var( --kendo-border-radius-full, 9999px ) var( --kendo-border-radius-full, 9999px ) 0 0;
+    }
+
+    .k-tabstrip-bottom .k-tabstrip-items-wrapper .k-item.k-active .k-link::after {
+        border-radius: 0 0 var( --kendo-border-radius-full, 9999px ) var( --kendo-border-radius-full, 9999px );
+    }
+
+    .k-tabstrip-left .k-tabstrip-items-wrapper .k-item.k-active::after {
+        border-radius: var( --kendo-border-radius-full, 9999px ) 0 0 var( --kendo-border-radius-full, 9999px );
+    }
+
+    .k-tabstrip-right .k-tabstrip-items-wrapper .k-item.k-active::after {
+        border-radius: 0 var( --kendo-border-radius-full, 9999px ) var( --kendo-border-radius-full, 9999px ) 0;
+    }
 }
