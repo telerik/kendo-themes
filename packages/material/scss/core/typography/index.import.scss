@@ -21,13 +21,13 @@ $kendo-font-size-xl: 1.25rem !default;
 
 /// The base line height across all components.
 /// @group typography
-$kendo-line-height: calc(28 / 14) !default;
+$kendo-line-height: calc(20 / 14) !default;
 /// The extra small line height across all components.
 /// @group typography
 $kendo-line-height-xs: 1 !default;
 /// The small line height across all components.
 /// @group typography
-$kendo-line-height-sm: 1.2 !default;
+$kendo-line-height-sm: 1.33 !default;
 /// The medium line height across all components.
 /// @group typography
 $kendo-line-height-md: $kendo-line-height !default;
@@ -43,25 +43,25 @@ $kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
 $kendo-letter-spacing: null !default;
 /// The tightest letter spacing across all components.
 /// @group typography
-$kendo-letter-spacing-tightest: -2.5px !default;
+$kendo-letter-spacing-tightest: -.5px !default;
 /// Slightly looser than the tighter letter spacing across all components.
 /// @group typography
-$kendo-letter-spacing-tighter: -1.5px !default;
+$kendo-letter-spacing-tighter: -.25px !default;
 /// Moderately tight letter spacing across all components.
 /// @group typography
-$kendo-letter-spacing-tight: -.5px !default;
+$kendo-letter-spacing-tight: -.1px !default;
 /// The normal letter spacing across all components.
 /// @group typography
-$kendo-letter-spacing-normal: 0px !default;
+$kendo-letter-spacing-normal: .25px !default;
 /// Wide letter spacing across all components
 /// @group typography
-$kendo-letter-spacing-wide: .15px !default;
+$kendo-letter-spacing-wide: .1px !default;
 /// Slightly wider than the wide letter spacing across all components.
 /// @group typography
 $kendo-letter-spacing-wider: .25px !default;
 /// The widest letter spacing across all components.
 /// @group typography
-$kendo-letter-spacing-widest: .35px !default;
+$kendo-letter-spacing-widest: .5px !default;
 
 /// The sans-serif font family across all components.
 /// @group typography
