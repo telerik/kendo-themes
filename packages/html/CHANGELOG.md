@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.4.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.3.2-dev.1...v10.4.0-dev.0) (2025-03-17)
+
+
+### Features
+
+* **action-buttons:** enhance alignments and positions ([4376f29](https://github.com/telerik/kendo-themes/commit/4376f29640b459dd9341b86253ea04a15dd9a347))
+* **html:** enhance action-sheet specs ([867749f](https://github.com/telerik/kendo-themes/commit/867749f24d8618e5df47b219e5efa768e1a4846e))
+
+
+
+
+
 ## [10.3.2-dev.1](https://github.com/telerik/kendo-themes/compare/v10.3.2-dev.0...v10.3.2-dev.1) (2025-03-10)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

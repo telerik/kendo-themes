@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.4.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.3.2-dev.1...v10.4.0-dev.0) (2025-03-17)
+
+
+### Bug Fixes
+
+* **pdf-viewer:** add missing annotation styles ([08fb856](https://github.com/telerik/kendo-themes/commit/08fb85614ace765672121cb3f2f79d8fb6508ed2))
+
+
+### Features
+
+* **action-buttons:** enhance alignments and positions ([4376f29](https://github.com/telerik/kendo-themes/commit/4376f29640b459dd9341b86253ea04a15dd9a347))
+* **action-sheet:** enhance component styles ([ad12206](https://github.com/telerik/kendo-themes/commit/ad12206c377b17a6bfb5eb226d64355b6d2a4917))
+
+
+
+
+
 ## [10.3.2-dev.1](https://github.com/telerik/kendo-themes/compare/v10.3.2-dev.0...v10.3.2-dev.1) (2025-03-10)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
