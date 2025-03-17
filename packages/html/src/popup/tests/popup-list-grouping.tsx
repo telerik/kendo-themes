@@ -15,7 +15,7 @@ const style = `
     }
 
     .k-popup {
-        height: 200px;
+        height: 260px;
     }
 
     .k-popup .k-list-container {
