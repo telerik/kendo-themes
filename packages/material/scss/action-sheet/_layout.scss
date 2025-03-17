@@ -3,4 +3,10 @@
 
 @mixin kendo-action-sheet--layout() {
     @include kendo-action-sheet--layout-base();
+
+    .k-actionsheet-action {
+        .k-icon-wrap {
+            align-self: center;
+        }
+    }
 }

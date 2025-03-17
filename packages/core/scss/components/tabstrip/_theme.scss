@@ -94,9 +94,21 @@
     // Selected indicator
     @if ($kendo-tabstrip-indicator-size) {
 
-        .k-tabstrip-items-wrapper {
-            .k-item.k-active::after {
-                border-color: $kendo-tabstrip-indicator-color;
+        .k-tabstrip-top,
+        .k-tabstrip-bottom {
+            > .k-tabstrip-items-wrapper {
+                .k-item.k-active .k-link::after {
+                    background: $kendo-tabstrip-indicator-color;
+                }
+            }
+        }
+
+        .k-tabstrip-left,
+        .k-tabstrip-right {
+            > .k-tabstrip-items-wrapper {
+                .k-item.k-active::after {
+                    background: $kendo-tabstrip-indicator-color;
+                }
             }
         }
     }

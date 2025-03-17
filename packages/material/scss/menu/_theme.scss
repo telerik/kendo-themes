@@ -15,14 +15,13 @@
             // Focus state
             &:focus,
             &.k-focus {
-                @include fill(
-                    $kendo-menu-item-hover-text,
-                    $kendo-menu-item-hover-bg,
-                    $kendo-menu-item-hover-border,
-                    $kendo-menu-item-hover-gradient
-                );
+                /* @include fill(
+                    $kendo-menu-item-active-text,
+                    $kendo-menu-item-active-bg,
+                    $kendo-menu-item-active-border,
+                    $kendo-menu-item-active-gradient
+                ); */
             }
-
         }
     }
 
@@ -30,16 +29,26 @@
     .k-menu-group,
     .k-context-menu {
         .k-menu-item {
-
+            &:active,
+            &.k-active {
+                @include fill(
+                    /* $kendo-menu-item-active-text,
+                    $kendo-menu-item-active-bg,
+                    $kendo-menu-item-active-border,
+                    $kendo-menu-item-active-gradient
+                    */
+                );
+            }
             // Focus state
             &:focus,
             &.k-focus {
-                @include fill(
-                    $kendo-menu-popup-item-hover-text,
+                 @include fill(
+                    /* $kendo-menu-popup-item-hover-text,
                     $kendo-menu-popup-item-hover-bg,
                     $kendo-menu-popup-item-hover-border,
-                    $kendo-menu-popup-item-hover-gradient
+                    $kendo-menu-popup-item-hover-gradient */
                 );
+                box-shadow: $kendo-menu-item-focus-shadow;
             }
         }
     }

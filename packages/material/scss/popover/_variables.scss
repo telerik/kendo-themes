@@ -5,7 +5,7 @@
 
 /// The width of the border around the Popover.
 /// @group popover
-$kendo-popover-border-width: 1px !default;
+$kendo-popover-border-width: 0 !default;
 /// The style of the border around the Popover.
 /// @group popover
 $kendo-popover-border-style: solid !default;
@@ -24,16 +24,16 @@ $kendo-popover-line-height: $kendo-card-line-height !default;
 
 /// The text color of the Popover.
 /// @group popover
-$kendo-popover-text: $kendo-component-text !default;
+$kendo-popover-text: k-color( on-app-surface ) !default;
 /// The background color of the Popover.
 /// @group popover
-$kendo-popover-bg: $kendo-component-bg !default;
+$kendo-popover-bg: k-color( surface ) !default;
 /// The border color of the Popover.
 /// @group popover
-$kendo-popover-border: $kendo-component-border !default;
+$kendo-popover-border: k-color( border ) !default;
 /// The box shadow of the Popover.
 /// @group popover
-$kendo-popover-shadow: $kendo-card-shadow !default;
+$kendo-popover-shadow: k-elevation(2) !default;
 
 /// The horizontal padding of the Popover header.
 /// @group popover

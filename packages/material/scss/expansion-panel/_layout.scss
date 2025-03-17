@@ -3,4 +3,9 @@
 
 @mixin kendo-expander--layout() {
     @include kendo-expander--layout-base();
+
+    .k-expander-title {
+        text-transform: none;
+    }
+
 }
