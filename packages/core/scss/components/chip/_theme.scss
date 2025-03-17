@@ -55,6 +55,14 @@
                     @include fill( $bg: if($kendo-enable-color-system, k-color( #{$name}-subtle-active ), k-try-tint( $color, 50% )) );
                 }
             }
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-chip-disabled-text;
+                background-color: $kendo-chip-disabled-bg;
+                border-color: $kendo-chip-disabled-border;
+            }
         }
     }
 
@@ -142,6 +150,13 @@
                         if($kendo-enable-color-system, k-color( #{$name}-active ), k-try-shade( $color, 25% ))
                     );
                 }
+            }
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-chip-disabled-text;
+                border-color: $kendo-chip-disabled-text;
             }
         }
     }

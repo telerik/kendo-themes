@@ -11,6 +11,7 @@
         border-style: solid;
         outline: 0;
         font-family: var( --kendo-font-family, inherit );
+        font-weight: $kendo-chip-font-weight;
         font-size: $kendo-chip-font-size;
         line-height: $kendo-chip-line-height;
         display: inline-flex;
