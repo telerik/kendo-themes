@@ -1,6 +1,6 @@
 import { Icon } from '../../icon';
 import { Chip, ChipList, ChipAction } from '../../chip';
-import { GridWithStickyColumns, GridGroupingHeader, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridPager } from '../../grid';
+import { GridWithStickyColumns, GridGroupingHeader, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 const styles = `
@@ -20,8 +20,6 @@ export default () =>(
                         <Chip icon="sort-asc-small" text="shipName" actions={ <ChipAction type="remove"/> } />
                     </ChipList>
                 </GridGroupingHeader>
-            )}
-            pager={( <GridPager adaptive pageSizes={false} dir="rtl" info={false} />
             )}>
                 <GridHeader draggable>
                     <div className="k-grid-header-wrap">
