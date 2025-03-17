@@ -145,6 +145,7 @@ $kendo-tabstrip-item-selected-border: if($kendo-enable-color-system, k-color( pr
 /// The font weight of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+
 /// The shadow of the focused TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;

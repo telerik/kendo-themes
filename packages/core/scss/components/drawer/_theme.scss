@@ -54,6 +54,11 @@
                 color: $kendo-drawer-selected-hover-text;
                 background-color: $kendo-drawer-selected-hover-bg;
             }
+
+            &:focus,
+            &.k-focus {
+                background-color: $kendo-drawer-selected-focus-bg;
+            }
         }
     }
     .k-drawer-separator {
