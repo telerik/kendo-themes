@@ -184,6 +184,7 @@
     }
     .k-actionsheet-item-description {
         font-size: $kendo-actionsheet-item-description-font-size;
+        line-height: $kendo-actionsheet-item-description-line-height;
     }
 
 
@@ -250,6 +251,7 @@
         max-width: 100%;
         width: 100%;
         font-size: $kendo-adaptive-actionsheet-font-size;
+        line-height: $kendo-adaptive-actionsheet-line-height;
 
         .k-actionsheet-titlebar {
             padding-block: $kendo-adaptive-actionsheet-titlebar-padding-y;

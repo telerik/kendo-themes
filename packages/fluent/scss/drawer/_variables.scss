@@ -47,12 +47,21 @@ $kendo-drawer-scrollbar-radius: 20px !default;
 /// @group drawer
 $kendo-drawer-scrollbar-hover-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 60%, transparent), k-get-theme-color-var( neutral-110 )) !default;
 
+/// The horizontal padding of the Drawer items.
+/// @group drawer
+$kendo-drawer-items-padding-x: 0 !default;
+/// The vertical padding of the Drawer items.
+/// @group drawer
+$kendo-drawer-items-padding-y: 0 !default;
 /// The horizontal padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-y: k-spacing(2) !default;
+/// The spacing between the items in the Drawer item.
+/// @group drawer
+$kendo-drawer-item-spacing: $kendo-drawer-item-padding-x !default;
 /// The font size of the Drawer item.
 /// @group drawer
 $kendo-drawer-item-font-size: $kendo-drawer-font-size !default;
@@ -66,6 +75,9 @@ $kendo-drawer-item-level-padding-x: $kendo-drawer-item-padding-x !default;
 /// The count of the Drawer item levels.
 /// @group drawer
 $kendo-drawer-item-level-count: 5 !default;
+/// The border radius of the Drawer item.
+/// @group drawer
+$kendo-drawer-item-border-radius: null !default;
 
 /// The horizontal padding of the Drawer icon.
 /// @group drawer
@@ -136,3 +148,7 @@ $kendo-drawer-item-selected-hover-bg: var( --kendo-selected-hover-bg, inherit ) 
 /// The text color of the selected and hovered Drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-hover-text: var( --kendo-selected-hover-text, inherit ) !default;
+
+/// The background color of the selected and focused Drawer item.
+/// @group drawer
+$kendo-drawer-item-selected-focus-bg: null !default;

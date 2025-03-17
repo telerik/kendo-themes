@@ -59,6 +59,7 @@ $kendo-actionsheet-item-title-font-weight: null !default;
 $kendo-actionsheet-item-title-text-transform: null !default;
 
 $kendo-actionsheet-item-description-font-size: .875em !default;
+$kendo-actionsheet-item-description-line-height: null !default;
 $kendo-actionsheet-item-description-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
 
 $kendo-actionsheet-item-hover-bg: $kendo-hover-bg !default;
@@ -82,6 +83,7 @@ $kendo-actionsheet-item-disabled-shadow: null !default;
 
 // Adaptive Actionsheet
 $kendo-adaptive-actionsheet-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-adaptive-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
 $kendo-adaptive-actionsheet-titlebar-padding-y: k-spacing(4) !default;
 $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-y !default;
 
@@ -137,6 +139,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-item-title-font-weight: $kendo-actionsheet-item-title-font-weight,
     $kendo-actionsheet-item-title-text-transform: $kendo-actionsheet-item-title-text-transform,
     $kendo-actionsheet-item-description-font-size: $kendo-actionsheet-item-description-font-size,
+    $kendo-actionsheet-item-description-line-height: $kendo-actionsheet-item-description-line-height,
     $kendo-actionsheet-item-description-text: $kendo-actionsheet-item-description-text,
     $kendo-actionsheet-item-hover-bg: $kendo-actionsheet-item-hover-bg,
     $kendo-actionsheet-item-hover-text: $kendo-actionsheet-item-hover-text,
@@ -154,6 +157,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-item-disabled-gradient: $kendo-actionsheet-item-disabled-gradient,
     $kendo-actionsheet-item-disabled-shadow: $kendo-actionsheet-item-disabled-shadow,
     $kendo-adaptive-actionsheet-font-size: $kendo-adaptive-actionsheet-font-size,
+    $kendo-adaptive-actionsheet-line-height: $kendo-adaptive-actionsheet-line-height,
     $kendo-adaptive-actionsheet-titlebar-padding-y: $kendo-adaptive-actionsheet-titlebar-padding-y,
     $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-x,
     $kendo-adaptive-actionsheet-content-padding-y: $kendo-adaptive-actionsheet-content-padding-y,
