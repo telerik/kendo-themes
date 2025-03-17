@@ -43,6 +43,9 @@ $kendo-button-lg-padding-y: k-spacing(2) !default;
 /// The font family of the Button.
 /// @group button
 $kendo-button-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font weight of the Button.
+/// @group button
+$kendo-button-font-weight: var( --kendo-font-weight-normal, normal ) !default;
 
 /// The font size of the Button.
 /// @group button
@@ -275,6 +278,7 @@ $kendo-button-transition: $kendo-transition !default;
     $kendo-button-md-padding-y: $kendo-button-md-padding-y,
     $kendo-button-lg-padding-y: $kendo-button-lg-padding-y,
     $kendo-button-font-family: $kendo-button-font-family,
+    $kendo-button-font-weight: $kendo-button-font-weight,
     $kendo-button-font-size: $kendo-button-font-size,
     $kendo-button-sm-font-size: $kendo-button-sm-font-size,
     $kendo-button-md-font-size: $kendo-button-md-font-size,
