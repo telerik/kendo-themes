@@ -125,7 +125,8 @@
     }
     .k-drawer-items {
         margin: 0;
-        padding: 0;
+        padding: $kendo-drawer-items-padding-y $kendo-drawer-items-padding-x;
+        border-radius: $kendo-drawer-item-border-radius;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -143,7 +144,7 @@
         display: flex;
         align-items: center;
         flex-flow: row nowrap;
-        gap: var( --kendo-drawer-item-padding-x, #{$kendo-drawer-item-padding-x} );
+        gap: var( --kendo-drawer-item-spacing, #{$kendo-drawer-item-spacing} );
         cursor: pointer;
 
         &::before {
