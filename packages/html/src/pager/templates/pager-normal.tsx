@@ -1,3 +1,3 @@
-import Pager from "../pager.spec";
+import { Pager, KendoPagerProps } from "../pager.spec";
 
-export const PagerNormal = (props) => <Pager {...props} />;
+export const PagerNormal = (props: KendoPagerProps) => <Pager {...props} />;

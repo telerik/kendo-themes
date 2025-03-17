@@ -19,8 +19,9 @@ export type KendoPagerOptions = {
 };
 
 export type KendoPagerProps = KendoPagerOptions & {
-    adaptive?: boolean;
-    showPagerSizeInfo?: boolean;
+    pagerSizeInfo?: boolean;
+    pageTitleInfo?: boolean;
+    maxPagesInfo?: boolean;
     type?: 'numeric' | 'input';
     pageSizes?: boolean;
     refresh?: boolean;
@@ -36,8 +37,9 @@ export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultOptions = {
     size: Size.medium,
-    adaptive: false,
-    showPagerSizeInfo: true,
+    pagerSizeInfo: true,
+    pageTitleInfo: true,
+    maxPagesInfo: true,
     type: 'numeric',
     pageSizes: true,
     refresh: true,
@@ -55,8 +57,9 @@ export const Pager = (
 ) => {
     const {
         size = defaultOptions.size,
-        adaptive = defaultOptions.adaptive,
-        showPagerSizeInfo = defaultOptions.showPagerSizeInfo,
+        pagerSizeInfo = defaultOptions.pagerSizeInfo,
+        pageTitleInfo = defaultOptions.pageTitleInfo,
+        maxPagesInfo = defaultOptions.maxPagesInfo,
         itemsPerPage = defaultOptions.itemsPerPage,
         maxPages = defaultOptions.maxPages,
         currentPage = defaultOptions.currentPage,
@@ -136,7 +139,7 @@ export const Pager = (
                     </Button>
                 </>
                 }
-                { type === 'numeric' && !adaptive &&
+                { type === 'numeric' &&
                     <div
                         className={classNames(
                             'k-pager-numbers'
@@ -144,33 +147,14 @@ export const Pager = (
                         {pageButtons}
                     </div>
                 }
-                { type === 'numeric' &&
-                    <select
-                        className={classNames(
-                            'k-picker',
-                            'k-picker-solid',
-                            'k-dropdown-list',
-                            'k-dropdown',
-                            'k-rounded-md',
-                            optionClassNames('k-picker', {
-                                size,
-                            }),
-                            {
-                                ['k-hidden']: !adaptive
-                            }
-                        )}
-                    >
-                        {options}
-                    </select>
-                }
                 { type === 'input' &&
                     <span
                         className={classNames(
                             'k-pager-input'
                         )}>
-                        { !adaptive && <span>Page</span> }
+                        { pageTitleInfo && <span>Page</span> }
                         <NumericTextbox value={`${currentPage}`} size={size} showSpinButton={false} showClearButton={false}></NumericTextbox>
-                        { !adaptive && <span>{`of ${maxPages}`}</span> }
+                        <span>{ maxPagesInfo && `of ${maxPages}`}</span>
                     </span> }
                 {previousNext &&
                 <>
@@ -206,7 +190,7 @@ export const Pager = (
                         'k-pager-sizes'
                     )}>
                     <DropdownList value={`${itemsPerPage}`} size={size} />
-                    { showPagerSizeInfo &&
+                    { pagerSizeInfo &&
                         <span>items per page</span>
                     }
                 </span>
