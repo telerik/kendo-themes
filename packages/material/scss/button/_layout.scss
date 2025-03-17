@@ -10,38 +10,35 @@
 
     // Button
     .k-button {
-        text-transform: uppercase;
-        font-weight: 500;
-
-        &::before {
+        /* &::before {
             display: block;
             transition: opacity .4s cubic-bezier( .25, .8, .25, 1 );
         }
         &::after {
             display: none !important; // stylelint-disable-line declaration-no-important
-        }
+        } */
 
         &:disabled,
         &[disabled],
         &.k-disabled {
-            opacity: 1;
-            filter: none;
+            // opacity: 1;
+            // filter: none;
         }
     }
 
     // Solid button
     .k-button-solid {
-        &::before {
+        /* &::before {
             @if($kendo-enable-color-system) {
                 display: none;
             }
-        }
+        } */
     }
 
     // Outline button
     .k-button-outline {
-        background-color: transparent !important; // stylelint-disable-line declaration-no-important
-        box-shadow: none !important; // stylelint-disable-line declaration-no-important
+        // background-color: transparent !important; // stylelint-disable-line declaration-no-important
+        // box-shadow: none !important; // stylelint-disable-line declaration-no-important
     }
 
 
@@ -53,14 +50,14 @@
         &.k-active,
         &.k-selected {
             &::before {
-                opacity: 0;
+                // opacity: 0;
             }
         }
 
         &:focus,
         &.k-focus {
             &::before {
-                opacity: $kendo-flat-button-focus-opacity;
+                // opacity: $kendo-flat-button-focus-opacity;
             }
         }
     }
@@ -70,7 +67,7 @@
     .k-button-clear,
     .k-button.k-clear {
         &::before {
-            display: none;
+            // display: none;
         }
 
 
@@ -78,7 +75,7 @@
         &.k-focus,
         &:active {
             &::before {
-                display: block;
+                // display: block;
             }
         }
     }
@@ -92,7 +89,7 @@
     .k-overflow-button,
     .k-overflow-group {
         &.k-button-group {
-            line-height: inherit;
+            // line-height: inherit;
         }
     }
 

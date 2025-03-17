@@ -15,29 +15,29 @@ $kendo-button-border-radius: null !default;
 
 /// The horizontal padding of the Button.
 /// @group button
-$kendo-button-padding-x: k-spacing(4) !default;
+$kendo-button-padding-x: k-spacing(6) !default;
 /// The horizontal padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-x: k-spacing(4) !default;
+$kendo-button-sm-padding-x: k-spacing(6) !default;
 /// The horizontal padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-x: k-spacing(4) !default;
+$kendo-button-md-padding-x: $kendo-button-padding-x !default;
 /// The horizontal padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-x: k-spacing(4) !default;
+$kendo-button-lg-padding-x: k-spacing(6) !default;
 
 /// The vertical padding of the Button.
 /// @group button
-$kendo-button-padding-y: k-spacing(2) !default;
+$kendo-button-padding-y: calc( k-spacing(4.5) / 2 ) !default;
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: k-spacing(1.5) !default;
+$kendo-button-sm-padding-y: calc( k-spacing(3.5) / 2 ) !default;
 /// The vertical padding of the medium Button.
 /// @group button
-$kendo-button-md-padding-y: k-spacing(2) !default;
+$kendo-button-md-padding-y: $kendo-button-padding-y !default;
 /// The vertical padding of the large Button.
 /// @group button
-$kendo-button-lg-padding-y: k-spacing(2.5) !default;
+$kendo-button-lg-padding-y: calc( k-spacing(5.5) / 2 ) !default;
 
 /// The font family of the Button.
 /// @group button
@@ -127,7 +127,7 @@ $kendo-button-border: $kendo-button-bg !default;
 $kendo-button-gradient: none !default;
 /// The base shadow of the Button.
 /// @group button
-$kendo-button-shadow: k-elevation(2) !default;
+$kendo-button-shadow: null !default;
 
 /// The base background of the hovered Button.
 /// @group button
@@ -143,7 +143,7 @@ $kendo-button-hover-border: if($kendo-enable-color-system, k-color( base-hover )
 $kendo-button-hover-gradient: null !default;
 /// The base shadow of the hovered Button.
 /// @group button
-$kendo-button-hover-shadow: $kendo-button-shadow !default;
+$kendo-button-hover-shadow: k-elevation(1) !default;
 
 /// The base background color of the active Button.
 /// @group button
@@ -159,7 +159,7 @@ $kendo-button-active-border: if($kendo-enable-color-system, k-color( base-active
 $kendo-button-active-gradient: null !default;
 /// The base shadow of the active Button.
 /// @group button
-$kendo-button-active-shadow: k-elevation(6) !default;
+$kendo-button-active-shadow: null !default;
 
 /// The base background color of the selected Button.
 /// @group button
@@ -175,7 +175,7 @@ $kendo-button-selected-border: $kendo-button-active-bg !default;
 $kendo-button-selected-gradient: none !default;
 /// The base shadow of the selected Button.
 /// @group button
-$kendo-button-selected-shadow: $kendo-button-shadow !default;
+$kendo-button-selected-shadow: null !default;
 
 /// The base background of the focused Button.
 /// @group button
@@ -191,7 +191,7 @@ $kendo-button-focus-border: if($kendo-enable-color-system, k-color( base-hover )
 $kendo-button-focus-gradient: null !default;
 /// The base shadow of the focused Button.
 /// @group button
-$kendo-button-focus-shadow: k-elevation(3) !default;
+$kendo-button-focus-shadow: inset 0 0 0 2px if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-component-bg, .5 )) !default;
 
 /// The base background color of the disabled Button.
 /// @group button

@@ -14,9 +14,9 @@
 
             // These 3 lines can be deleted once we
             // stop supporting the old color system.
-            color: if( $name == "base", $kendo-button-text, if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color )) );
-            background-color: if( $name == "base", $kendo-button-bg, if($kendo-enable-color-system, k-color( $name ), $color) );
-            border-color: if( $name == "base", $kendo-button-bg, if($kendo-enable-color-system, k-color( $name ), $color) );
+            // color: if( $name == "base", $kendo-button-text, if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color )) );
+            // background-color: if( $name == "base", $kendo-button-bg, if($kendo-enable-color-system, k-color( $name ), $color) );
+            // border-color: if( $name == "base", $kendo-button-bg, if($kendo-enable-color-system, k-color( $name ), $color) );
 
             // Hover state
             &:hover,
@@ -74,16 +74,16 @@
                 // The "base" case can be deleted once we
                 // stop supporting the old color system.
                 @if $name == "base" {
-                    color: if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-button-text)
+                    // color: if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-button-text)
                 } @else {
-                    color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color)
+                    // color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color)
                 }
             }
 
             // Disabled state
             &:disabled,
             &.k-disabled {
-                color: $kendo-button-disabled-text;
+                // color: $kendo-button-disabled-text;
             }
         }
     }
@@ -91,14 +91,14 @@
 
     // Link button
     @each $name, $color in $kendo-button-theme-colors {
-        .k-button-link-#{$name} {
+        /* .k-button-link-#{$name} {
 
             // Disabled state
             &:disabled,
             &.k-disabled {
                 color: $kendo-button-disabled-text;
             }
-        }
+        } */
     }
 
 
