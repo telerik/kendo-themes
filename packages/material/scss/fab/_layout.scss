@@ -6,7 +6,7 @@
     @include kendo-fab--layout-base();
 
     .k-fab-text {
-        text-transform: uppercase;
+        font-weight: var(--kendo-font-weight-md, 500);
     }
 
 }

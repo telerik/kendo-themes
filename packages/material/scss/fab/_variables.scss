@@ -19,33 +19,33 @@ $kendo-fab-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-fab-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the FAB.
 /// @group floating-action-button
-$kendo-fab-line-height: math.div( 20, 14 ) !default;
+$kendo-fab-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal padding of the FAB.
 /// @group floating-action-button
-$kendo-fab-padding-x: k-spacing(4) !default;
+$kendo-fab-padding-x: k-spacing(4.5) !default;
 /// The horizontal padding of the small FAB.
 /// @group floating-action-button
-$kendo-fab-sm-padding-x: calc( #{$kendo-fab-padding-x} / 2 ) !default;
+$kendo-fab-sm-padding-x: k-spacing(2.5) !default;
 /// The horizontal padding of the medium FAB.
 /// @group floating-action-button
 $kendo-fab-md-padding-x: $kendo-fab-padding-x !default;
 /// The horizontal padding of the large FAB.
 /// @group floating-action-button
-$kendo-fab-lg-padding-x: calc( #{$kendo-fab-padding-x} * 1.5 ) !default;
+$kendo-fab-lg-padding-x: k-spacing(8) !default;
 
 /// The vertical padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-y: $kendo-fab-padding-x !default;
 /// The vertical padding of the small FAB.
 /// @group floating-action-button
-$kendo-fab-sm-padding-y: calc( #{$kendo-fab-padding-y} / 2 ) !default;
+$kendo-fab-sm-padding-y: $kendo-fab-sm-padding-x !default;
 /// The vertical padding of the medium FAB.
 /// @group floating-action-button
 $kendo-fab-md-padding-y: $kendo-fab-padding-y !default;
 /// The vertical padding of the large FAB.
 /// @group floating-action-button
-$kendo-fab-lg-padding-y: calc( #{$kendo-fab-padding-y} * 1.5 ) !default;
+$kendo-fab-lg-padding-y: $kendo-fab-lg-padding-x !default;
 
 /// The horizontal padding of the FAB icon.
 /// @group floating-action-button
@@ -55,7 +55,7 @@ $kendo-fab-icon-padding-x: k-spacing(0.5) !default;
 $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;
 /// The spacing FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-spacing: calc( #{k-spacing(1)} * 1.5 ) !default;
+$kendo-fab-icon-spacing: k-spacing(1.5) !default;
 
 /// The horizontal padding of the FAB items.
 /// @group floating-action-button
@@ -130,20 +130,20 @@ $kendo-fab-sizes: (
 
 /// The base shadow of the FAB.
 /// @group floating-action-button
-$kendo-fab-shadow: k-elevation(5) !default;
+$kendo-fab-shadow: k-elevation(3) !default;
 /// The shadow of the disabled FAB.
 /// @group floating-action-button
-$kendo-fab-disabled-shadow: k-elevation(5) !default;
+$kendo-fab-disabled-shadow: none !default;
 /// The shadow of the active FAB.
 /// @group floating-action-button
-$kendo-fab-active-shadow: k-elevation(7) !default;
+$kendo-fab-active-shadow: k-elevation(3) !default;
 
 /// The base text color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-text: k-color(on-app-surface) !default;
 /// The base background color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-bg: k-color(surface-alt) !default;
+$kendo-fab-item-bg: k-color(surface) !default;
 /// The base border color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-border: k-color(border) !default;

@@ -8,25 +8,7 @@
 
     @include kendo-grid--theme-base();
 
-    $kendo-grid-filter-button-focus: rgba( black, .12 ) !default;
-
     .k-grid {
-
-        .k-table {
-            td:focus,
-            td.k-focus,
-            th:focus,
-            th.k-focus {
-                &::after {
-                    background-color: $kendo-grid-hover-bg;
-                }
-            }
-        }
-
-        .k-grid-pager:focus,
-        .k-grid-pager.k-focus {
-            color: inherit;
-        }
 
         .k-table-th,
         td,
@@ -66,37 +48,6 @@
     }
 
     .k-grid-header {
-        .k-sorted,
-        .k-link:hover {
-            color: $kendo-grid-text;
-
-            > .k-icon {
-                color: inherit;
-            }
-        }
-
-        .k-grid-filter,
-        .k-table-th-column-menu,
-        .k-grid-header-menu,
-        .k-hierarchy-cell .k-icon {
-            &:hover {
-                color: $kendo-grid-text;
-                background-color: transparent;
-            }
-
-            &:focus,
-            &.k-focus {
-                color: $kendo-grid-text;
-                background-color: $kendo-grid-filter-button-focus;
-                box-shadow: none;
-            }
-
-            &.k-active {
-                color: k-color(on-primary);
-                background-color: k-color(primary);
-            }
-        }
-
         .k-table-thead > .k-table-row:not(:only-child) > .k-table-th,
         .k-table-thead > .k-table-row:not(:only-child) > .k-table-td {
             border-inline-start-color: $kendo-grid-border;
@@ -127,7 +78,6 @@
         }
     }
 
-    .k-grouping-dropclue,
     .k-reorder-cue {
         border-color: k-color(primary);
 
@@ -141,16 +91,23 @@
         }
     }
 
-    .k-resize-handle:hover .k-resize-handle-inner {
+    .k-grouping-dropclue {
+        &::before {
+            border-color: k-color(primary) transparent transparent;
+        }
+
+        &::after {
+            background-color: k-color(primary);
+        }
+    }
+
+    .k-resize-handle:hover .k-resize-handle-inner,
+    .k-reorder-cue {
         background-color: k-color(primary);
     }
 
     .k-column-resizer:hover {
         color: k-color(primary);
-    }
-
-    .k-reorder-cue {
-        background-color: k-color(primary);
     }
 
     .k-columnmenu-item {

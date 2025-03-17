@@ -30,14 +30,14 @@ $kendo-expander-border: k-color(border) !default;
 
 /// The box shadow of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
+$kendo-expander-focus-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent) !default;
 
 /// The horizontal padding of the ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-padding-x: k-spacing(6) !default;
 /// The vertical padding of the ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-padding-y: k-spacing(3) !default;
+$kendo-expander-header-padding-y: k-spacing(3.5) !default;
 
 /// The text color of the ExpansionPanel header.
 /// @group expander
@@ -51,17 +51,17 @@ $kendo-expander-header-border: null !default;
 
 /// The background color of the hovered ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-hover-bg: rgba( black, .04 ) !default;
+$kendo-expander-header-hover-bg: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent)  !default;
 /// The background color of the focused ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-focus-bg: rgba( black, .12 ) !default;
+$kendo-expander-header-focus-bg: null !default;
 /// The box shadow of the focused ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-focus-shadow: none !default;
+$kendo-expander-header-focus-shadow: inset 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent) !default;
 
 /// The text color of the ExpansionPanel title.
 /// @group expander
-$kendo-expander-title-text: k-color(secondary) !default;
+$kendo-expander-title-text: k-color(on-app-surface) !default;
 
 /// The text color of the ExpansionPanel sub-title.
 /// @group expander

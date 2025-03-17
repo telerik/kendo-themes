@@ -1,31 +1,8 @@
-@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/action-buttons/_layout.scss" as *;
 
 
 @mixin kendo-action-buttons--layout() {
 
     @include kendo-action-buttons--layout-base();
-
-    // Actions
-    .k-actions {
-
-        // Button
-        .k-button {
-            @include box-shadow( none );
-        }
-
-
-        // Button group
-        .k-button-group {
-            @include box-shadow( none );
-        }
-
-
-        // Split button
-        .k-split-button {
-            @include box-shadow( none );
-        }
-
-    }
 
 }

@@ -6,6 +6,12 @@
     @include kendo-table--layout-base();
 
     .k-table {
+
+        th,
+        .k-table-th{
+            font-weight: var( --kendo-font-weight-semibold, 600 );
+        }
+
         td:focus,
         td.k-focus,
         th:focus,

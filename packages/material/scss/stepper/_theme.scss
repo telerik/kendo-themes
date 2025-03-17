@@ -1,6 +1,14 @@
 @use "@progress/kendo-theme-core/scss/components/stepper/_theme.scss" as *;
+@use "../core/_index.scss" as *;
+@use "./variables.scss" as *;
 
 
 @mixin kendo-stepper--theme() {
     @include kendo-stepper--theme-base();
+
+    .k-stepper {
+        .k-step-label:only-child {
+            background-color: k-color( app-surface );
+        }
+    }
 }

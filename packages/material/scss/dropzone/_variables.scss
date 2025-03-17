@@ -25,11 +25,11 @@ $kendo-dropzone-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-dropzone-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the DropZone.
 /// @group dropzone
-$kendo-dropzone-line-height: math.div( 20, 14 ) !default;
+$kendo-dropzone-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the DropZone.
 /// @group dropzone
-$kendo-dropzone-bg: k-color(base-subtle) !default;
+$kendo-dropzone-bg: k-color(surface) !default;
 /// The text color of the DropZone.
 /// @group dropzone
 $kendo-dropzone-text: k-color(on-app-surface) !default;

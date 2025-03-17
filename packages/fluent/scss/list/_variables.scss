@@ -49,6 +49,20 @@ $kendo-list-lg-header-line-height: var( --kendo-line-height, normal ) !default;
 /// @group list
 $kendo-list-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
+/// The horizontal padding of the List filter, when no size is set.
+/// @group list
+$kendo-list-filter-padding-x: k-spacing(2) !default;
+$kendo-list-sm-filter-padding-x: $kendo-list-filter-padding-x !default;
+$kendo-list-md-filter-padding-x: $kendo-list-filter-padding-x !default;
+$kendo-list-lg-filter-padding-x: $kendo-list-filter-padding-x !default;
+
+/// The vertical padding of the List filter, when no size is set.
+/// @group list
+$kendo-list-filter-padding-y: $kendo-list-filter-padding-x !default;
+$kendo-list-sm-filter-padding-y: $kendo-list-filter-padding-x !default;
+$kendo-list-md-filter-padding-y: $kendo-list-filter-padding-x !default;
+$kendo-list-lg-filter-padding-y: $kendo-list-filter-padding-x !default;
+
 /// The horizontal padding of the List items.
 /// @group list
 $kendo-list-sm-item-padding-x: k-spacing(2) !default;
@@ -147,7 +161,9 @@ $kendo-list-sizes: (
         group-item-padding-x: $kendo-list-sm-group-item-padding-x,
         group-item-padding-y: $kendo-list-sm-group-item-padding-y,
         group-item-font-size: $kendo-list-sm-group-item-font-size,
-        group-item-line-height: $kendo-list-sm-group-item-line-height
+        group-item-line-height: $kendo-list-sm-group-item-line-height,
+        filter-padding-x: $kendo-list-sm-filter-padding-x,
+        filter-padding-y: $kendo-list-sm-filter-padding-y
     ),
     md: (
         font-size: $kendo-list-md-font-size,
@@ -166,7 +182,9 @@ $kendo-list-sizes: (
         group-item-padding-x: $kendo-list-md-group-item-padding-x,
         group-item-padding-y: $kendo-list-md-group-item-padding-y,
         group-item-font-size: $kendo-list-md-group-item-font-size,
-        group-item-line-height: $kendo-list-md-group-item-line-height
+        group-item-line-height: $kendo-list-md-group-item-line-height,
+        filter-padding-x: $kendo-list-md-filter-padding-x,
+        filter-padding-y: $kendo-list-md-filter-padding-y
     ),
     lg: (
         font-size: $kendo-list-lg-font-size,
@@ -185,7 +203,9 @@ $kendo-list-sizes: (
         group-item-padding-x: $kendo-list-lg-group-item-padding-x,
         group-item-padding-y: $kendo-list-lg-group-item-padding-y,
         group-item-font-size: $kendo-list-lg-group-item-font-size,
-        group-item-line-height: $kendo-list-lg-group-item-line-height
+        group-item-line-height: $kendo-list-lg-group-item-line-height,
+        filter-padding-x: $kendo-list-lg-filter-padding-x,
+        filter-padding-y: $kendo-list-lg-filter-padding-y
     )
 ) !default;
 

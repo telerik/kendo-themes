@@ -6,14 +6,14 @@ $kendo-listgroup-border-width: 1px !default;
 $kendo-listgroup-border-radius: k-border-radius(md) !default;
 
 $kendo-listgroup-font-size: var( --kendo-font-size, inherit ) !default;
-$kendo-listgroup-line-height: math.div( 20, 14 ) !default;
+$kendo-listgroup-line-height: var( --kendo-line-height, inherit ) !default;
 
-$kendo-listgroup-bg: k-color(surface-alt) !default;
+$kendo-listgroup-bg: k-color(surface) !default;
 $kendo-listgroup-text: k-color(on-app-surface) !default;
 $kendo-listgroup-border: k-color(border) !default;
 
-$kendo-listgroup-item-padding-x: k-spacing(2) !default;
-$kendo-listgroup-item-padding-y: k-spacing(2) !default;
+$kendo-listgroup-item-padding-x: k-spacing(4) !default;
+$kendo-listgroup-item-padding-y: k-spacing(3) !default;
 $kendo-listgroup-item-border-width: 1px !default;
 
 @forward "@progress/kendo-theme-core/scss/components/listgroup/_variables.scss" with (

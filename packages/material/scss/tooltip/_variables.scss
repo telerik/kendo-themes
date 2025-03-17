@@ -7,10 +7,10 @@
 
 /// The vertical padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-y: k-spacing(.5) !default;
+$kendo-tooltip-padding-y: k-spacing(1) !default;
 /// The horizontal padding of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-padding-x: calc( #{k-spacing(4)} / 2 ) !default;
+$kendo-tooltip-padding-x: k-spacing(2) !default;
 /// The width of the border around the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border-width: 0px !default;
@@ -26,11 +26,11 @@ $kendo-tooltip-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-tooltip-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The line height of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-line-height: math.div( 20, 14 ) !default;
+$kendo-tooltip-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The font size of the Tooltip title.
 /// @group tooltip
-$kendo-tooltip-title-font-size: calc( var( --kendo-font-size-sm, .75rem ) * 1.25 ) !default;
+$kendo-tooltip-title-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The line height of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-line-height: var( --kendo-line-height-xs, normal ) !default;
@@ -41,10 +41,10 @@ $kendo-tooltip-callout-size: 6px !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-bg: color-mix(in srgb, k-color(on-app-surface) 70%, transparent 30%) !default;
+$kendo-tooltip-bg: k-color(inverse-on-surface) !default;
 /// The default text color of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-text: k-color(app-surface) !default;
+$kendo-tooltip-text: k-color(on-inverse) !default;
 /// The default border color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border: $kendo-tooltip-bg !default;

@@ -1,5 +1,3 @@
-@use "./_variables.scss" as *;
-@use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/treeview/_theme.scss" as *;
 
 
@@ -7,37 +5,10 @@
 
     @include kendo-treeview--theme-base();
 
-    // Treeview
-    .k-treeview {}
-
-
-    // Treeview item
-    .k-treeview-item {}
-
-
     // Treeview leaf
     .k-treeview-leaf {
-
-        // Focus state
-        &:focus,
-        &.k-focus {
-            @include fill(
-                $kendo-treeview-item-hover-text,
-                $kendo-treeview-item-hover-bg,
-                $kendo-treeview-item-hover-border,
-                $kendo-treeview-item-hover-gradient
-            );
-        }
-
-        // Selected Focus state
-        &.k-selected:focus,
-        &.k-selected.k-focus {
-            @include fill(
-                $kendo-treeview-item-selected-focus-text,
-                $kendo-treeview-item-selected-focus-bg,
-                $kendo-treeview-item-selected-focus-border,
-                $kendo-treeview-item-selected-focus-gradient
-            );
+        &.k-selected {
+            font-weight: var( --kendo-font-weight-semibold, 600 );
         }
     }
 

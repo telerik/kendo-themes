@@ -1,6 +1,10 @@
 import { TimeSelectorAll, TimeSelectorHour, TimeSelectorMinute } from "../../time-selector";
 
 const style = `
+    #test-area {
+        max-width: 1240px;
+    }
+
     .k-animation-container {
         width: min-content;
         max-width: 100%;

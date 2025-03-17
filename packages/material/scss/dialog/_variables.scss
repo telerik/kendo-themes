@@ -22,10 +22,14 @@ $kendo-dialog-buttongroup-padding-x: $kendo-actions-padding-x !default;
 $kendo-dialog-buttongroup-padding-y: $kendo-actions-padding-y !default;
 /// The width of the top border of the Dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-border-width: 1px !default;
+$kendo-dialog-buttongroup-border-width: 0 !default;
 /// The spacing between the Dialog action buttons.
 /// @group dialog
 $kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
+
+/// The background color of the Dialog.
+/// @group dialog
+$kendo-dialog-bg: k-color( surface ) !default;
 
 /// The theme colors map for the Dialog.
 /// @group dialog
@@ -43,5 +47,6 @@ $kendo-dialog-theme-colors: (
     $kendo-dialog-buttongroup-padding-y: $kendo-dialog-buttongroup-padding-y,
     $kendo-dialog-buttongroup-border-width: $kendo-dialog-buttongroup-border-width,
     $kendo-dialog-button-spacing: $kendo-dialog-button-spacing,
+    $kendo-dialog-bg: $kendo-dialog-bg,
     $kendo-dialog-theme-colors: $kendo-dialog-theme-colors
 );

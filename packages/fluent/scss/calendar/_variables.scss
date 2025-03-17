@@ -13,6 +13,9 @@ $kendo-calendar-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Calendar.
 /// @group calendar
 $kendo-calendar-line-height: var( --kendo-line-height, normal ) !default;
+/// The border-radius of the Calendar.
+/// @group calendar
+$kendo-calendar-border-radius: 0 !default;
 
 /// The size of the calendar cell.
 /// @group calendar
@@ -159,6 +162,12 @@ $kendo-calendar-today-hover-bg: k-color(primary-hover) !default;
 /// The border radius of the calendar today cell.
 /// @group calendar
 $kendo-calendar-today-border-radius: 9999px !default;
+/// The font weight of the current day in the Calendar.
+/// @group calendar
+$kendo-calendar-today-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+/// The box shadow of the current day in the Calendar.
+/// @group calendar
+$kendo-calendar-today-box-shadow: null !default;
 
 /// The background color of the calendar week number cell.
 /// @group calendar
@@ -238,6 +247,9 @@ $kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
 /// The text color of the hovered items in the calendar navigation.
 /// @group calendar
 $kendo-calendar-navigation-hover-text: k-color(primary-hover) !default;
+/// The text color of the marker in the Calendar navigation.
+/// @group calendar
+$kendo-calendar-navigation-marker-text: currentColor !default;
 
 
 // Infinite calendar

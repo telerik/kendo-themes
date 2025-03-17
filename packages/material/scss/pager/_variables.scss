@@ -64,7 +64,7 @@ $kendo-pager-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the Pager.
 /// @group pager
-$kendo-pager-bg: k-color(surface-alt) !default;
+$kendo-pager-bg: k-color(surface) !default;
 /// The text color of the Pager.
 /// @group pager
 $kendo-pager-text: k-color(subtle) !default;
@@ -88,7 +88,7 @@ $kendo-pager-section-spacing: $kendo-pager-padding-x !default;
 $kendo-pager-item-border-width: 0px !default;
 /// The border radius of the Pager items.
 /// @group pager
-$kendo-pager-item-border-radius: 5em !default;
+$kendo-pager-item-border-radius: k-border-radius( md ) !default;
 /// The spacing around the Pager items.
 /// @group pager
 $kendo-pager-item-spacing: k-spacing(0) !default;
@@ -116,7 +116,7 @@ $kendo-pager-item-hover-border: null !default;
 $kendo-pager-item-selected-bg: k-color(primary) !default;
 /// The text color of the selected Pager items.
 /// @group pager
-$kendo-pager-item-selected-text: k-color(on-primary) !default;
+$kendo-pager-item-selected-text: k-color(primary-on-surface) !default;
 /// The border color of the selected Pager items.
 /// @group pager
 $kendo-pager-item-selected-border: null !default;
@@ -130,7 +130,7 @@ $kendo-pager-number-border-radius: $kendo-pager-item-border-radius !default;
 $kendo-pager-item-focus-opacity: .12 !default;
 /// The background color of the focused Pager items.
 /// @group pager
-$kendo-pager-item-focus-bg: rgba($kendo-list-item-hover-bg, $kendo-pager-item-focus-opacity) !default;
+$kendo-pager-item-focus-bg: transparent  !default;
 /// The box shadow of the focused Pager items.
 /// @group pager
 $kendo-pager-item-focus-shadow: unset !default;

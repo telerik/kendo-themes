@@ -16,7 +16,7 @@ $kendo-card-padding-y: k-spacing(3) !default;
 $kendo-card-border-width: 0px !default;
 /// The border radius of the Card.
 /// @group card
-$kendo-card-border-radius: k-border-radius(md) !default;
+$kendo-card-border-radius: k-border-radius(xl) !default;
 /// The inner border radius of the Card.
 /// @group card
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
@@ -36,7 +36,7 @@ $kendo-card-deck-gap: k-spacing(4) !default;
 
 /// The background color of the Card.
 /// @group card
-$kendo-card-bg: k-color(surface-alt) !default;
+$kendo-card-bg: k-color(surface) !default;
 /// The text color of the Card.
 /// @group card
 $kendo-card-text: k-color(on-app-surface) !default;
@@ -70,7 +70,7 @@ $kendo-card-header-padding-x: $kendo-card-padding-x !default;
 $kendo-card-header-padding-y: $kendo-card-padding-y !default;
 /// The bottom border width of the Card header.
 /// @group card
-$kendo-card-header-border-width: 1px !default;
+$kendo-card-header-border-width: 0 !default;
 /// The background color of the Card header.
 /// @group card
 $kendo-card-header-bg: null !default;
@@ -96,7 +96,7 @@ $kendo-card-footer-padding-x: $kendo-card-padding-x !default;
 $kendo-card-footer-padding-y: $kendo-card-padding-y !default;
 /// The top border width of the Card footer.
 /// @group card
-$kendo-card-footer-border-width: 1px !default;
+$kendo-card-footer-border-width: 0 !default;
 /// The background color of the Card footer.
 /// @group card
 $kendo-card-footer-bg: null !default;
@@ -109,26 +109,26 @@ $kendo-card-footer-border: $kendo-card-border !default;
 
 /// The bottom margin of the Card title.
 /// @group card
-$kendo-card-title-margin-bottom: k-spacing(3) !default;
+$kendo-card-title-margin-bottom: k-spacing(1) !default;
 /// The font size of the Card title.
 /// @group card
-$kendo-card-title-font-size: $kendo-h5-font-size !default;
+$kendo-card-title-font-size: $kendo-font-size-lg !default;
 /// The font family of the Card title.
 /// @group card
 $kendo-card-title-font-family: var( --kendo-font-family, inherit ) !default;
 /// The line height of the Card title.
 /// @group card
-$kendo-card-title-line-height: 1.25 !default;
+$kendo-card-title-line-height: $kendo-line-height-lg !default;
 /// The font weight of the Card title.
 /// @group card
 $kendo-card-title-font-weight: 500 !default;
 /// The letter spacing of the Card title.
 /// @group card
-$kendo-card-title-letter-spacing: null !default;
+$kendo-card-title-letter-spacing: $kendo-letter-spacing-widest !default;
 
 /// The bottom margin of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-margin-bottom: k-spacing(3) !default;
+$kendo-card-subtitle-margin-bottom: k-spacing(2) !default;
 /// The font size of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-font-size: var( --kendo-font-size, inherit )  !default;
@@ -137,13 +137,13 @@ $kendo-card-subtitle-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-card-subtitle-font-family: var( --kendo-font-family, inherit ) !default;
 /// The line height of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-line-height: math.div( 20, 14 ) !default;
+$kendo-card-subtitle-line-height: $kendo-line-height !default;
 /// The font weight of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-font-weight: 500 !default;
+$kendo-card-subtitle-font-weight: $kendo-font-weight-normal !default;
 /// The letter spacing of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-letter-spacing: null !default;
+$kendo-card-subtitle-letter-spacing: $kendo-letter-spacing-wider !default;
 /// The text color of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-text: k-color(subtle) !default;
@@ -160,13 +160,13 @@ $kendo-card-avatar-spacing: $kendo-card-header-padding-x !default;
 
 /// The horizontal padding of the Card actions.
 /// @group card
-$kendo-card-actions-padding-x: k-spacing(2) !default;
+$kendo-card-actions-padding-x: k-spacing(4) !default;
 /// The vertical padding of the Card actions.
 /// @group card
-$kendo-card-actions-padding-y: k-spacing(2) !default;
+$kendo-card-actions-padding-y: k-spacing(4) !default;
 /// The top border width of the Card actions.
 /// @group card
-$kendo-card-actions-border-width: 1px !default;
+$kendo-card-actions-border-width: 0 !default;
 /// The spacing between the Card actions.
 /// @group card
 $kendo-card-actions-gap: k-spacing(2) !default;

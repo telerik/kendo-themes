@@ -31,14 +31,14 @@ $kendo-table-cell-padding-x: null !default;
 /// @group table
 $kendo-table-cell-padding-y: null !default;
 
-$kendo-table-sm-cell-padding-x: k-spacing(2.5) !default;
-$kendo-table-sm-cell-padding-y: k-spacing(1) !default;
+$kendo-table-sm-cell-padding-x: k-spacing(2) !default;
+$kendo-table-sm-cell-padding-y: k-spacing(2) !default;
 
-$kendo-table-md-cell-padding-x: k-spacing(6) !default;
-$kendo-table-md-cell-padding-y: k-spacing(2.5) !default;
+$kendo-table-md-cell-padding-x: k-spacing(3) !default;
+$kendo-table-md-cell-padding-y: k-spacing(3) !default;
 
-$kendo-table-lg-cell-padding-x: k-spacing(6) !default;
-$kendo-table-lg-cell-padding-y: k-spacing(2.5) !default;
+$kendo-table-lg-cell-padding-x: k-spacing(4) !default;
+$kendo-table-lg-cell-padding-y: k-spacing(4) !default;
 
 /// The sizes of the table.
 /// @group table
@@ -77,10 +77,10 @@ $kendo-table-border: k-color(border) !default;
 
 /// Background color of table headers.
 /// @group table
-$kendo-table-header-bg: $kendo-table-bg !default;
+$kendo-table-header-bg: k-color(surface) !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: k-color(subtle) !default;
+$kendo-table-header-text: k-color(on-app-surface) !default;
 /// Border color of table headers.
 /// @group table
 $kendo-table-header-border: $kendo-table-border !default;
@@ -149,7 +149,7 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: color-mix(in srgb, k-color(primary) 12%, transparent) !default;
+$kendo-table-selected-bg: color-mix(in srgb, k-color(primary) 20%, transparent) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: null !default;

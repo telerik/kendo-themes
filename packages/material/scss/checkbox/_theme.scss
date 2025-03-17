@@ -1,3 +1,4 @@
+@use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/checkbox/_theme.scss" as *;
 
@@ -6,12 +7,120 @@
 
     @include kendo-checkbox--theme-base();
 
+    .k-checkbox {
+        &:hover,
+        &.k-hover {
+            &::after {
+                opacity: .08;
+                background-color: k-color(on-app-surface);
+            }
+
+            &:checked,
+            &.k-checked,
+            &.k-indeterminate {
+                &::after {
+                    background-color: k-color(primary);
+                }
+            }
+
+            &.k-invalid::after {
+                background-color: k-color(error);
+            }
+        }
+
+        &:focus,
+        &.k-focus {
+            &::after {
+                opacity: .12;
+                background-color: k-color(on-app-surface);
+            }
+
+            &:checked,
+            &.k-checked,
+            &.k-indeterminate {
+                &::after {
+                    background-color: k-color(primary);
+                }
+            }
+
+            &.k-invalid::after {
+                background-color: k-color(error);
+            }
+        }
+
+    }
+
+    .k-ripple-focus.k-checkbox {
+
+        &:hover,
+        &.k-hover,
+        &:focus,
+        &.k-focus,
+        &.k-indeterminate {
+            &::after,
+            &:checked::after,
+            &.k-checked::after,
+            &.k-invalid::after {
+                background: $kendo-checkbox-ripple-bg;
+                opacity: $kendo-checkbox-ripple-opacity;
+            }
+        }
+
+        /* Checkbox Ripple animation */
+
+        &::after {
+            animation: ripple-checkbox 225ms cubic-bezier(0, 0, 0.2, 1);
+        }
+
+        &:checked,
+        &.k-checked,
+        &.k-indeterminate {
+            &::after {
+                animation: ripple-checkbox-checked 225ms cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+
+
+        @keyframes ripple-checkbox {
+            0% {
+                background: radial-gradient(circle, $kendo-checkbox-ripple-bg 0%, k-color(primary) 50%);
+                opacity: 0.08;
+            }
+            50% {
+                background: radial-gradient(circle, $kendo-checkbox-ripple-bg 50%, k-color(primary) 100%);
+                opacity: $kendo-checkbox-ripple-opacity;
+            }
+            100% {
+                background: radial-gradient(circle, k-color(primary) 0%, k-color(primary) 100%);
+                opacity: .12;
+            }
+        }
+
+        @keyframes ripple-checkbox-checked {
+            0% {
+                background: radial-gradient(circle, $kendo-checkbox-ripple-bg 0%, k-color(on-app-surface) 50%);
+                opacity: 0.08;
+            }
+            50% {
+                background: radial-gradient(circle, $kendo-checkbox-ripple-bg 50%, k-color(on-app-surface) 100%);
+                opacity: $kendo-checkbox-ripple-opacity;
+            }
+            100% {
+                background: radial-gradient(circle, k-color(on-app-surface) 0%, k-color(on-app-surface) 100%);
+                opacity: .12;
+            }
+        }
+    }
+
     // Checkbox
     // Disabled state
-    .k-checkbox:disabled + .k-checkbox-label {
-        color: k-color(subtle);
-        opacity: 1;
-        filter: none;
+    .k-checkbox {
+        &:disabled,
+        &.k-disabled {
+            &.k-invalid {
+                border-color: $kendo-checkbox-disabled-border;
+            }
+        }
     }
 
 }

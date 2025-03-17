@@ -3,7 +3,7 @@ import { SplitButton, TextSplitButton, IconTextSplitButton, IconSplitButton } fr
 const styles = `
     #test-area {
         max-width: 1240px;
-        grid-template-columns: 80px 320px 320px 1fr;
+        grid-template-columns: 60px 350px 350px 1fr;
     }
     .wrapper {
         display: flex;

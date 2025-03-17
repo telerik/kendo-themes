@@ -1,13 +1,13 @@
 @use "../core/_index.scss" as *;
-@use"../input/_variables.scss" as *;
-@use"../tooltip/_variables.scss" as *;
-@use"../typography/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+@use "../typography/_variables.scss" as *;
 
 // Forms
 
 /// The padding of the inline Form.
 /// @group form
-$kendo-form-spacer: calc( #{k-spacing(4)} * 2 ) !default;
+$kendo-form-spacer: k-spacing(8) !default;
 
 /// The font size of the Form.
 /// @group form
@@ -94,7 +94,7 @@ $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;
 
 /// The top padding of the label in the horizontal Form.
 /// @group form
-$kendo-horizontal-form-label-padding-top: calc( #{k-spacing(2.5)} / 2 ) !default;
+$kendo-horizontal-form-label-padding-top: k-spacing(2.5) !default;
 /// The horizontal margin of the label in the horizontal Form.
 /// @group form
 $kendo-horizontal-form-label-margin-x: k-spacing(2.5) !default;

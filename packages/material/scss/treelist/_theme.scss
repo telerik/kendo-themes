@@ -5,27 +5,22 @@
 
     @include kendo-treelist--theme-base();
 
-    .k-treelist {
-        tr.k-footer,
-        tr.k-footer-template {
-            &:hover {
-                background-color: $kendo-treelist-footer-row-bg;
-            }
-        }
-    }
-
     // Sticky headers
     .k-treelist-scrollable {
-        .k-grid-toolbar,
-        .k-grid-header,
-        .k-grid-header tr:hover {
-            background-color: inherit;
-        }
-
         .k-group-footer td,
         .k-grouping-row td,
         tbody .k-group-cell {
             background-color: $kendo-treelist-footer-row-bg;
+        }
+
+        .k-group-footer.k-table-row {
+            &:hover,
+            &.k-hover {
+                td,
+                .k-table-td {
+                   background-color: transparent
+                }
+            }
         }
     }
 

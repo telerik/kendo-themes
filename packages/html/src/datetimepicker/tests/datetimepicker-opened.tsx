@@ -3,7 +3,7 @@ import { DateTimePickerPopup } from '../../datetimepicker';
 
 const styles = `
     #test-area {
-        max-width: 740px;
+        max-width: 860px;
     }
 
     #test-area > div {

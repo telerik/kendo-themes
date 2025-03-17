@@ -43,7 +43,7 @@ $kendo-progressbar-gradient: null !default;
 $kendo-progressbar-value-bg: k-color(primary) !default;
 /// The progress text color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-value-text: k-color(on-primary) !default;
+$kendo-progressbar-value-text: k-color(on-app-surface) !default;
 /// The progress border color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-value-border: unset !default;
@@ -66,7 +66,7 @@ $kendo-progressbar-indeterminate-gradient: null !default;
 
 /// The border color of the chunk ProgressBar.
 /// @group progressbar
-$kendo-progressbar-chunk-border: k-color(surface-alt) !default;
+$kendo-progressbar-chunk-border: k-color(surface) !default;
 
 // Circular Progressbar
 /// The arc stroke color of the circular ProgressBar.

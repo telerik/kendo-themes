@@ -9,16 +9,9 @@
     // Switch
     .k-switch {
 
-        .k-switch-thumb {
-            box-shadow: k-elevation(2);
-        }
-
         // Thumb ripple
-        &.k-switch-on .k-switch-thumb::before {
-            background-color: inherit;
-        }
-        &.k-switch-off .k-switch-thumb::before {
-            background-color: k-color(on-app-surface);
+        .k-switch-thumb::before {
+            background-color: k-color(primary);
         }
     }
 

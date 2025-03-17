@@ -89,7 +89,7 @@ $kendo-chat-bubble-padding-y: k-spacing(2) !default;
 $kendo-chat-bubble-spacing: k-spacing(0.5) !default;
 /// The line height of the Chat bubble message.
 /// @group chat
-$kendo-chat-bubble-line-height: math.div( 20, 14 ) !default;
+$kendo-chat-bubble-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The border radius of the Chat bubble message.
 /// @group chat
@@ -116,7 +116,7 @@ $kendo-chat-toolbar-padding-y: $kendo-toolbar-md-padding-y !default;
 $kendo-chat-toolbar-spacing: $kendo-toolbar-md-spacing !default;
 /// The background color of the Chat Toolbar.
 /// @group chat
-$kendo-chat-toolbar-bg: k-color(surface) !default;
+$kendo-chat-toolbar-bg: $kendo-toolbar-bg !default;
 /// The text color of the Chat Toolbar.
 /// @group chat
 $kendo-chat-toolbar-text: $kendo-toolbar-text !default;
@@ -140,7 +140,7 @@ $kendo-chat-quick-reply-line-height: $kendo-chat-bubble-line-height !default;
 
 /// The background color of the Chat.
 /// @group chat
-$kendo-chat-bg: k-color(app-surface) !default;
+$kendo-chat-bg: k-color(surface) !default;
 /// The text color of the Chat.
 /// @group chat
 $kendo-chat-text: k-color(on-app-surface) !default;
@@ -153,7 +153,7 @@ $kendo-chat-border: k-color(border) !default;
 $kendo-chat-bubble-bg: k-color(surface-alt) !default;
 /// The text color of the Chat bubble.
 /// @group chat
-$kendo-chat-bubble-text: k-color(on-app-surface) !default;
+$kendo-chat-bubble-text: k-color(on-base) !default;
 /// The border color of the Chat bubble.
 /// @group chat
 $kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;

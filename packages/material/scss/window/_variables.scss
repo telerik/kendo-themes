@@ -10,7 +10,7 @@
 $kendo-window-border-width: 0px !default;
 /// The border radius of the Window.
 /// @group window
-$kendo-window-border-radius: 4px !default;
+$kendo-window-border-radius: k-border-radius(xxxl) !default;
 /// The font family of the Window.
 /// @group window
 $kendo-window-font-family: var( --kendo-font-family, inherit ) !default;
@@ -19,14 +19,14 @@ $kendo-window-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-window-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line height of the Window.
 /// @group window
-$kendo-window-line-height: math.div( 20, 14 )  !default;
+$kendo-window-line-height: var( --kendo-line-height, normal )  !default;
 
 /// The horizontal padding of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-padding-x: k-spacing(6) !default;
 /// The vertical padding of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-padding-y: k-spacing(4) !default;
+$kendo-window-titlebar-padding-y: k-spacing(5) !default;
 /// The width of the border of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border-width: 0px !default;
@@ -36,7 +36,7 @@ $kendo-window-titlebar-border-style: solid !default;
 
 /// The font size of the title of the Window.
 /// @group window
-$kendo-window-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-window-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
 /// The line height of the title of the Window.
 /// @group window
 $kendo-window-title-line-height: var( --kendo-line-height-lg, normal ) !default;
@@ -56,7 +56,7 @@ $kendo-window-action-hover-opacity: null !default;
 $kendo-window-inner-padding-x: k-spacing(6) !default;
 /// The vertical padding of the content of the Window.
 /// @group window
-$kendo-window-inner-padding-y: k-spacing(2) !default;
+$kendo-window-inner-padding-y: k-spacing(4) !default;
 
 /// The horizontal padding of the Window action buttons.
 /// @group window
@@ -79,14 +79,14 @@ $kendo-window-text: k-color(on-app-surface) !default;
 $kendo-window-border: k-color(border) !default;
 /// The box shadow of the Window.
 /// @group window
-$kendo-window-shadow: k-elevation(8) !default;
+$kendo-window-shadow: k-elevation(3) !default;
 /// The box shadow of the focused Window.
 /// @group window
-$kendo-window-focus-shadow: k-elevation(9) !default;
+$kendo-window-focus-shadow: k-elevation(4) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: unset !default;
+$kendo-window-titlebar-bg: k-color( surface ) !default;
 /// The text color of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-text: unset !default;

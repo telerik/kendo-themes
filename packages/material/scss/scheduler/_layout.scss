@@ -7,51 +7,13 @@
 
     @include kendo-scheduler--layout-base();
 
-
-    .k-scheduler-footer {
-        border-top-width: 1px;
-    }
-
-
-    // Scheduler navigation
-    .k-scheduler-navigation {}
-
-
-    // View switcher
-    .k-scheduler-views {}
-
-
-    // View header
-    .k-scheduler-header {
-        text-align: start;
-
-        th,
-        td {
-            font-size: var( --kendo-font-size-sm, inherit );
-        }
-    }
-
-
-    // Times header
-    .k-scheduler-times {
-        font-size: var( --kendo-font-size-sm, inherit );
-    }
-
-
     // Appointments
     kendo-scheduler .k-event,
     .k-event {
 
-        &.k-selected {
-            &::before {
-                display: block;
-            }
-        }
-
         // Angular fix for stronger selector and smaller padding
         .k-event-template {
             & { // stylelint-disable-line
-                padding-block: k-spacing(0.5);
                 padding-inline: k-spacing(2);
             }
         }
@@ -66,16 +28,9 @@
 
     .k-event {
         .k-event-delete {
+            margin-block-start: k-spacing(1);
             border-radius: 50%;
-            display: inline-block;
-            font-size: var( --kendo-font-size-sm, inherit );
-            line-height: normal;
-
-            .k-icon {
-                padding: calc( var( --kendo-font-size, .875rem) - var( --kendo-font-size-sm, .75rem) );
-                box-sizing: content-box;
-                vertical-align: unset;
-            }
+            display: flex;
         }
 
         .k-resize-handle {
@@ -108,52 +63,10 @@
 
     .k-more-events {
         border-width: 0;
-        box-shadow: none;
     }
 
     .k-scheduler-layout-flex .k-scheduler-cell {
         min-height: $kendo-line-height-em;
-    }
-
-    // Month view
-    .k-scheduler-monthview {
-        .k-scheduler-table td {
-            height: 85px;
-        }
-    }
-
-
-    .k-scheduler-edit-form {
-
-        .k-edit-label {
-            width: auto;
-            margin-bottom: .5em;
-
-            label { margin-bottom: 0; }
-        }
-
-        .k-edit-field {
-            width: auto;
-            align-items: center;
-        }
-
-    }
-
-    .k-edit-field .k-reset {
-        width: 100%;
-    }
-    .k-edit-field .k-widget {
-        font-size: inherit;
-    }
-    .k-edit-field .k-reset .k-widget {
-        margin-right: 0;
-    }
-
-    .k-scheduler-timezones .k-edit-field > div {
-        width: 100%;
-    }
-    .k-scheduler-timezones .k-edit-field .k-widget {
-        width: 45%;
     }
 
 }
