@@ -292,7 +292,7 @@ export default () => (
                         <DropdownList size="large" value="Contains" />
                         <NumericTextbox size="large" />
                         <ButtonGroup>
-                            <Button size="large">Add</Button>
+                            <Button size="large">And</Button>
                             <Button size="large">Or</Button>
                         </ButtonGroup>
                         <DropdownList size="large" value="Contains" />

@@ -123,7 +123,7 @@ export default () => (
                                         <DropdownList value="Contains" />
                                         <NumericTextbox />
                                         <ButtonGroup>
-                                            <Button>Add</Button>
+                                            <Button>And</Button>
                                             <Button>Or</Button>
                                         </ButtonGroup>
                                         <DropdownList value="Contains" />
