@@ -182,6 +182,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter>
                             <Button icon="x" size="large" disabled >Clear sorting</Button>
+                            <Button icon="check" size="large" themeColor="primary">Done</Button>
                         </ActionSheetFooter>
                     }
                 >
@@ -203,10 +204,7 @@ export default () => (
                         <>
                             <GridToolbar>
                                 <Button size="large" icon="filter" />
-                                <div className="k-badge-container">
-                                    <Button selected size="large" icon="arrows-swap" />
-                                    <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder />
-                                </div>
+                                <Button selected size="large" icon="arrows-swap" />
                                 <Button size="large" icon="group" />
                             </GridToolbar>
                         </>
@@ -231,7 +229,7 @@ export default () => (
                                             <TableRow>
                                                 <GridHeaderCell columnTitle="Header Name 1"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header Name 2"></GridHeaderCell>
-                                                <GridHeaderCell columnTitle="Header Name 3" sortable sortIcon="sort-asc-small"></GridHeaderCell>
+                                                <GridHeaderCell columnTitle="Header Name 3"></GridHeaderCell>
                                                 <GridHeaderCell columnTitle="Header Name 4"></GridHeaderCell>
                                             </TableRow>
                                         </TableThead>
@@ -281,6 +279,7 @@ export default () => (
                     footer={
                         <ActionSheetFooter>
                             <Button icon="x" size="large" >Clear sorting</Button>
+                            <Button icon="check" size="large" themeColor="primary">Done</Button>
                         </ActionSheetFooter>
                     }
                 >
@@ -288,8 +287,8 @@ export default () => (
                         <ColumnMenuItemWrapper>
                             <ColumnMenuItem text="Header Name 1" />
                             <ColumnMenuItem text="Header Name 2" />
-                            <ColumnMenuItem text="Header Name 3" endIcon="sort-asc-small" />
-                            <ColumnMenuItem text="Header Name 4" />
+                            <ColumnMenuItem text="Header Name 3" endIcon="sort-asc-small" sortIndex={1} />
+                            <ColumnMenuItem text="Header Name 4" endIcon="sort-desc-small" sortIndex={2} />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </ActionSheetNormal>
@@ -303,7 +302,7 @@ export default () => (
                             <GridToolbar>
                                 <Button size="large" icon="filter" />
                                 <div className="k-badge-container">
-                                    <Button selected size="large" icon="arrows-swap" />
+                                    <Button size="large" icon="arrows-swap" />
                                     <Badge position="edge" rounded="full" align="top-end" size="medium" cutoutBorder />
                                 </div>
                                 <Button size="large" icon="group" />
@@ -372,26 +371,6 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal
-                    adaptive
-                    header={
-                        <ActionSheetHeader actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />} title="Sort by" />
-                    }
-                    footer={
-                        <ActionSheetFooter>
-                            <Button icon="x" size="large" >Clear sorting</Button>
-                        </ActionSheetFooter>
-                    }
-                >
-                    <ColumnMenuNormal size="large">
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 1" />
-                            <ColumnMenuItem text="Header Name 2" />
-                            <ColumnMenuItem text="Header Name 3" endIcon="sort-asc-small" sortIndex={1} />
-                            <ColumnMenuItem text="Header Name 4" endIcon="sort-desc-small" sortIndex={2} />
-                        </ColumnMenuItemWrapper>
-                    </ColumnMenuNormal>
-                </ActionSheetNormal>
             </section>
         </div>
     </>
