@@ -1,0 +1,7 @@
+@mixin kendo-column-menu--theme-base() {
+    .k-column-menu {}
+}
+
+@mixin kendo-column-menu--theme() {
+    @include kendo-column-menu--theme-base();
+}

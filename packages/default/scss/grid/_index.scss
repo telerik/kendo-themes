@@ -23,6 +23,7 @@
 @use "../list/_index.scss" as *;
 @use "../table/_index.scss" as *;
 @use "../tabstrip/_index.scss" as *;
+@use "../column-menu/_index.scss" as *;
 
 // Component
 @forward "./_variables.scss";

@@ -1,0 +1,31 @@
+@use "sass:map";
+@use "_variables.scss" as *;
+
+@mixin kendo-column-menu--layout-base() {
+    .k-column-menu {}
+
+    // Sizes
+    @each $size, $value in $kendo-column-menu-sizes {
+        $_padding-x: map.get($value, padding-x);
+        $_padding-y: map.get($value, padding-y);
+        $_font-size: map.get($value, font-size);
+        $_line-height: map.get($value, line-height);
+
+        .k-column-menu-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+
+            .k-columnmenu-item,
+            .k-column-list-item {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+                font-size: $_font-size;
+                line-height: $_line-height;
+            }
+        }
+    }
+}
+
+@mixin kendo-column-menu--layout() {
+    @include kendo-column-menu--layout-base();
+}

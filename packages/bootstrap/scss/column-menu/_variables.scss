@@ -1,0 +1,69 @@
+@use "sass:math";
+@use "../core/_index.scss" as *;
+
+$kendo-column-menu-item-padding-x: k-spacing(4) !default;
+$kendo-column-menu-item-padding-y: k-spacing(1) !default;
+
+$kendo-column-menu-item-sm-padding-x: $kendo-column-menu-item-padding-x !default;
+$kendo-column-menu-item-sm-padding-y: k-spacing(1) !default;
+
+$kendo-column-menu-item-md-padding-x: $kendo-column-menu-item-padding-x !default;
+$kendo-column-menu-item-md-padding-y: $kendo-column-menu-item-padding-y !default;
+
+$kendo-column-menu-item-lg-padding-x: $kendo-column-menu-item-padding-x !default;
+$kendo-column-menu-item-lg-padding-y: k-spacing(2) !default;
+
+$kendo-column-menu-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-column-menu-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-column-menu-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-column-menu-lg-font-size: var( --kendo-font-size, inherit ) !default;
+
+$kendo-column-menu-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-column-menu-sm-line-height: math.div( 20, 14 ) !default;
+$kendo-column-menu-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-column-menu-lg-line-height: var( --kendo-line-height, normal ) !default;
+
+$kendo-column-menu-font-family: var( --kendo-font-family, inherit ) !default;
+
+$kendo-column-menu-sizes: (
+    sm: (
+        padding-x: $kendo-column-menu-item-sm-padding-x,
+        padding-y: $kendo-column-menu-item-sm-padding-y,
+        font-size: $kendo-column-menu-sm-font-size,
+        line-height: $kendo-column-menu-sm-line-height
+    ),
+    md: (
+        padding-x: $kendo-column-menu-item-md-padding-x,
+        padding-y: $kendo-column-menu-item-md-padding-y,
+        font-size: $kendo-column-menu-md-font-size,
+        line-height: $kendo-column-menu-md-line-height
+    ),
+    lg: (
+        padding-x: $kendo-column-menu-item-lg-padding-x,
+        padding-y: $kendo-column-menu-item-lg-padding-y,
+        font-size: $kendo-column-menu-lg-font-size,
+        line-height: $kendo-column-menu-lg-line-height
+    )
+) !default;
+
+
+@forward "@progress/kendo-theme-core/scss/components/column-menu/_variables.scss" with (
+    $kendo-column-menu-font-size: $kendo-column-menu-font-size,
+    $kendo-column-menu-sm-font-size: $kendo-column-menu-sm-font-size,
+    $kendo-column-menu-md-font-size: $kendo-column-menu-md-font-size,
+    $kendo-column-menu-lg-font-size: $kendo-column-menu-lg-font-size,
+    $kendo-column-menu-line-height: $kendo-column-menu-line-height,
+    $kendo-column-menu-sm-line-height: $kendo-column-menu-sm-line-height,
+    $kendo-column-menu-md-line-height: $kendo-column-menu-md-line-height,
+    $kendo-column-menu-lg-line-height: $kendo-column-menu-lg-line-height,
+    $kendo-column-menu-font-family: $kendo-column-menu-font-family,
+    $kendo-column-menu-item-padding-x: $kendo-column-menu-item-padding-x,
+    $kendo-column-menu-item-padding-y: $kendo-column-menu-item-padding-y,
+    $kendo-column-menu-item-sm-padding-x: $kendo-column-menu-item-sm-padding-x,
+    $kendo-column-menu-item-sm-padding-y: $kendo-column-menu-item-sm-padding-y,
+    $kendo-column-menu-item-md-padding-x: $kendo-column-menu-item-md-padding-x,
+    $kendo-column-menu-item-md-padding-y: $kendo-column-menu-item-md-padding-y,
+    $kendo-column-menu-item-lg-padding-x: $kendo-column-menu-item-lg-padding-x,
+    $kendo-column-menu-item-lg-padding-y: $kendo-column-menu-item-lg-padding-y,
+    $kendo-column-menu-sizes: $kendo-column-menu-sizes
+);
