@@ -9,7 +9,7 @@ on:
 jobs:
 
   ci-weekly:
-    runs-on: ubuntu-22.04-4-cores
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
