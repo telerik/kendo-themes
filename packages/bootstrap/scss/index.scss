@@ -115,6 +115,7 @@
 @forward "./orgchart/_index.scss";
 @forward "./signature/_index.scss";
 @forward "./otp/_index.scss";
+@forward "./column-menu/_index.scss";
 
 
 // Use component modules
@@ -141,6 +142,7 @@
 @use "./table/_index.scss" as *;
 @use "./virtual-scroller/_index.scss" as *;
 @use "./no-data/_index.scss" as *;
+@use "./column-menu/_index.scss" as *;
 
 // Indicators
 
@@ -311,6 +313,7 @@
     @include kendo-table--styles();
     @include kendo-virtual-scroller--styles();
     @include kendo-no-data--styles();
+    @include kendo-column-menu--styles();
 
 
     // Indicators
