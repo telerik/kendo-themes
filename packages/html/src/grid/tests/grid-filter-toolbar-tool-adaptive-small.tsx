@@ -38,7 +38,7 @@ export default () => (
                     }
                     pager={
                         <>
-                            <GridPager adaptive type="input" size="large" pageSizes={false} info={false} refresh={false} style={{ width: "360px" }}/>
+                            <GridPager type="input" size="large" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
@@ -114,7 +114,7 @@ export default () => (
                     }
                     pager={
                         <>
-                            <GridPager adaptive type="input" size="large" pageSizes={false} info={false} refresh={false} style={{ width: "360px" }}/>
+                            <GridPager type="input" size="large" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
@@ -217,7 +217,7 @@ export default () => (
                     }
                     pager={
                         <>
-                            <GridPager adaptive type="input" size="large" pageSizes={false} info={false} refresh={false} style={{ width: "360px" }}/>
+                            <GridPager type="input" size="large" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
@@ -320,7 +320,7 @@ export default () => (
                     }
                     pager={
                         <>
-                            <GridPager adaptive type="input" size="large" pageSizes={false} info={false} refresh={false} style={{ width: "360px" }}/>
+                            <GridPager type="input" size="large" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
