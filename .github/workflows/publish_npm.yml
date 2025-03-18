@@ -6,7 +6,7 @@ on:
 jobs:
 
   release-stable:
-    runs-on: ubuntu-22.04-4-cores
+    runs-on: ubuntu-latest
     environment: upload
 
     permissions:
