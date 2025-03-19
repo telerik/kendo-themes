@@ -5,4 +5,8 @@
 
 @mixin kendo-drawer--layout() {
     @include kendo-drawer--layout-base();
+
+    .k-drawer-items {
+        padding: k-spacing(3);
+    }
 }

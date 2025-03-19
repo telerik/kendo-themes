@@ -25,23 +25,23 @@ $kendo-input-padding-x: k-spacing(4) !default;
 $kendo-input-sm-padding-x: k-spacing(4) !default;
 /// The horizontal padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-x: k-spacing(4) !default;
+$kendo-input-md-padding-x: $kendo-input-padding-x !default;
 /// The horizontal padding of the large Input components.
 /// @group input
 $kendo-input-lg-padding-x: k-spacing(4) !default;
 
 /// The vertical padding of the Input components.
 /// @group input
-$kendo-input-padding-y: k-spacing(2) !default;
+$kendo-input-padding-y: calc( k-spacing(1.5) + k-spacing(1px) ) !default;
 /// The vertical padding of the small Input components.
 /// @group input
-$kendo-input-sm-padding-y: k-spacing(1.5) !default;
+$kendo-input-sm-padding-y: calc( k-spacing(1) + k-spacing(1px) ) !default;
 /// The vertical padding of the medium Input components.
 /// @group input
-$kendo-input-md-padding-y: k-spacing(2) !default;
+$kendo-input-md-padding-y: $kendo-input-padding-y !default;
 /// The vertical padding of the large Input components.
 /// @group input
-$kendo-input-lg-padding-y: k-spacing(2) !default;
+$kendo-input-lg-padding-y: calc( k-spacing(2) + k-spacing(1px) ) !default;
 
 /// The font family of the Input components.
 /// @group input
@@ -55,23 +55,23 @@ $kendo-input-font-size: var( --kendo-font-size-lg, inherit ) !default;
 $kendo-input-sm-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The font size of the medium Input components.
 /// @group input
-$kendo-input-md-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-input-md-font-size: $kendo-input-font-size !default;
 /// The font size of the large Input components.
 /// @group input
 $kendo-input-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
 /// The line height of the Input components.
 /// @group input
-$kendo-input-line-height: 1.25 !default;
+$kendo-input-line-height: var( --kendo-line-height-lg, inherit ) !default;
 /// The line height of the small Input components.
 /// @group input
-$kendo-input-sm-line-height: 1.25 !default;
+$kendo-input-sm-line-height: var( --kendo-line-height-lg, inherit ) !default;
 /// The line height of the medium Input components.
 /// @group input
-$kendo-input-md-line-height: 1.25 !default;
+$kendo-input-md-line-height: $kendo-input-line-height !default;
 /// The line height of the large Input components.
 /// @group input
-$kendo-input-lg-line-height: 1.5 !default;
+$kendo-input-lg-line-height: var( --kendo-line-height-lg, inherit ) !default;
 
 /// The calculated height of the Input.
 /// @group input
@@ -88,7 +88,7 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        button-padding-x: k-spacing(1),
+        button-padding-x: calc( k-spacing(2) + k-spacing(1px) ),
         button-padding-y: $kendo-input-sm-padding-y
     ),
     md: (
@@ -96,7 +96,7 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        button-padding-x: k-spacing(1),
+        button-padding-x: calc( k-spacing(2.5) + k-spacing(1px) ),
         button-padding-y: $kendo-input-md-padding-y
     ),
     lg: (
@@ -104,7 +104,7 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-lg-padding-y,
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
-        button-padding-x: k-spacing(1),
+        button-padding-x: calc( k-spacing(3) + k-spacing(1px) ),
         button-padding-y: $kendo-input-lg-padding-y
     )
 ) !default;
