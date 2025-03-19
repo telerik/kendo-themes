@@ -11,6 +11,10 @@ import {
 
 
 const styles = `
+    #test-area {
+        max-width: 1240px;
+    }
+
     #empty-cells .k-calendar-table {
         transform: translateY(-35px);
     }
