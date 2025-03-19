@@ -94,9 +94,9 @@ export const ColorEditor = (
             <div className="k-coloreditor-views k-vstack">
                 { view === 'gradient' ? <ColorGradient focus={focusView} size={size} canvasOrientation={canvasOrientation} /> : <ColorPalette palette={palette} size={size} /> }
             </div>
-            {actionButtons && <ActionButtons className="k-coloreditor-footer" alignment="end" >
-                <Button className="k-coloreditor-cancel" size={size}>Cancel</Button>
+            {actionButtons && <ActionButtons className="k-coloreditor-footer" alignment="start" >
                 <Button themeColor="primary" size={size} className="k-coloreditor-apply">Apply</Button>
+                <Button className="k-coloreditor-cancel" size={size}>Cancel</Button>
             </ActionButtons>}
         </div>
     );

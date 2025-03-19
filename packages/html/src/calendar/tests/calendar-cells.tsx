@@ -1,8 +1,19 @@
 import { Calendar, CalendarCell, CalendarTable, CalendarTableRow, CalendarWithWeeks, CalendarYear } from '../../calendar';
 
+const styles = `
+    #test-area {
+        max-width: 1240px;
+    }
+    .wrapper {
+        display: flex;
+        gap: 8px;
+    }
+`;
+
 
 export default () => (
     <>
+        <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
             <span>Calendar cell states</span>
