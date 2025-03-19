@@ -57,7 +57,7 @@ export default () =>(
             </section>
             <section>
                 <SliderRange className="slider-range">
-                    <SliderTick label large text="0"/>
+                    <SliderTick className="k-first" label large text="0"/>
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
@@ -77,12 +77,12 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
-                    <SliderTick label large text="100"/>
+                    <SliderTick className="k-last" label large text="100"/>
                 </SliderRange>
             </section>
             <section dir="rtl">
                 <SliderNormal className="slider-normal" dir="rtl">
-                    <SliderTick label large text="0"/>
+                    <SliderTick className="k-first" label large text="0"/>
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
@@ -102,12 +102,12 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
-                    <SliderTick label large text="100"/>
+                    <SliderTick className="k-last" label large text="100"/>
                 </SliderNormal>
             </section>
             <section dir="rtl">
                 <SliderRange className="slider-range" dir="rtl">
-                    <SliderTick label large text="0"/>
+                    <SliderTick className="k-first" label large text="0"/>
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
@@ -127,14 +127,14 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
-                    <SliderTick label large text="100"/>
+                    <SliderTick className="k-last" label large text="100"/>
                 </SliderRange>
             </section>
 
 
             <section>
                 <SliderVertical className="slider-normal">
-                    <SliderTick label large text="0"/>
+                    <SliderTick className="k-first" label large text="0"/>
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
@@ -154,12 +154,12 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
-                    <SliderTick label large text="100"/>
+                    <SliderTick className="k-last" label large text="100"/>
                 </SliderVertical>
             </section>
             <section>
                 <SliderRangeVertical className="slider-range">
-                    <SliderTick label large text="0"/>
+                    <SliderTick className="k-first" label large text="0"/>
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
@@ -179,12 +179,12 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
-                    <SliderTick label large text="100"/>
+                    <SliderTick className="k-last" label large text="100"/>
                 </SliderRangeVertical>
             </section>
             <section dir="rtl">
                 <SliderVertical className="slider-normal" dir="rtl">
-                    <SliderTick label large text="0"/>
+                    <SliderTick className="k-first" label large text="0"/>
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
@@ -204,12 +204,12 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
-                    <SliderTick label large text="100"/>
+                    <SliderTick className="k-last" label large text="100"/>
                 </SliderVertical>
             </section>
             <section dir="rtl">
                 <SliderRangeVertical dir="rtl" className="slider-range">
-                    <SliderTick label large text="0"/>
+                    <SliderTick className="k-first" label large text="0"/>
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
@@ -229,7 +229,7 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick />
-                    <SliderTick label large text="100"/>
+                    <SliderTick className="k-last" label large text="100"/>
                 </SliderRangeVertical>
             </section>
 
