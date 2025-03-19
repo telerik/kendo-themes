@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.4.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.4.0-dev.2...v10.4.0-dev.3) (2025-03-19)
+
+
+### Features
+
+* **html:** enhance column-menu spec ([21ef3dc](https://github.com/telerik/kendo-themes/commit/21ef3dc72c0b1b9b769deb2fc4641459c857d99b))
+* **html:** enhance pager spec ([fec7c6c](https://github.com/telerik/kendo-themes/commit/fec7c6c044b1b702a14e34b037eddb327c3692c0))
+
+
+
+
+
 # [10.4.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.4.0-dev.1...v10.4.0-dev.2) (2025-03-17)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

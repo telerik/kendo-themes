@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.4.0-dev.3](https://github.com/telerik/kendo-themes/compare/v10.4.0-dev.2...v10.4.0-dev.3) (2025-03-19)
+
+
+### Features
+
+* enhance column-menu styles ([261541b](https://github.com/telerik/kendo-themes/commit/261541b6ac8a20391081858d43808c4c6c2b5624))
+
+
+
+
+
 # [10.4.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.4.0-dev.1...v10.4.0-dev.2) (2025-03-17)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
