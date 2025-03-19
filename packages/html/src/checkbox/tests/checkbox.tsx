@@ -39,21 +39,21 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabelAfter id="ch2" disabled checked >Checked</CheckboxWithLabelAfter>
+                <CheckboxWithLabelAfter id="ch2" disabled checked >Checked Disabled</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
                     <CheckboxChecked disabled />
-                    Checked
+                    Checked Disabled
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabelAfter id="ch2-rtl" disabled checked >Checked</CheckboxWithLabelAfter>
+                <CheckboxWithLabelAfter id="ch2-rtl" disabled checked >Checked Disabled</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
                     <CheckboxChecked disabled />
-                    Checked
+                    Checked Disabled
                 </label>
             </div>
 
@@ -77,21 +77,21 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabelAfter id="ch4" disabled >Unchecked</CheckboxWithLabelAfter>
+                <CheckboxWithLabelAfter id="ch4" disabled >Unchecked Disabled</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
                     <CheckboxNormal disabled />
-                    Unchecked
+                    Unchecked Disabled
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabelAfter id="ch4-rtl" disabled >Unchecked</CheckboxWithLabelAfter>
+                <CheckboxWithLabelAfter id="ch4-rtl" disabled >Unchecked Disabled</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
                     <CheckboxNormal disabled />
-                    Unchecked
+                    Unchecked Disabled
                 </label>
             </div>
 
@@ -115,21 +115,21 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabelAfter id="chIndDis" indeterminate disabled >Indeterminate</CheckboxWithLabelAfter>
+                <CheckboxWithLabelAfter id="chIndDis" indeterminate disabled >Indeterminate Disabled</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
                     <CheckboxNormal indeterminate disabled />
-                    Indeterminate
+                    Indeterminate Disabled
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabelAfter id="chIndDis-rtl" indeterminate disabled >Indeterminate</CheckboxWithLabelAfter>
+                <CheckboxWithLabelAfter id="chIndDis-rtl" indeterminate disabled >Indeterminate Disabled</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
                     <CheckboxNormal indeterminate disabled />
-                    Indeterminate
+                    Indeterminate Disabled
                 </label>
             </div>
 
@@ -153,6 +153,45 @@ export default () =>(
             </div>
 
             <div>
+                <CheckboxWithLabelAfter id="chFocus" hover >Hover</CheckboxWithLabelAfter>
+            </div>
+            <div>
+                <label className="k-checkbox-label">
+                    <CheckboxNormal hover />
+                    Hover
+                </label>
+            </div>
+            <div dir="rtl">
+                <CheckboxWithLabelAfter id="chFocus-rtl" hover >Hover</CheckboxWithLabelAfter>
+            </div>
+            <div dir="rtl">
+                <label className="k-checkbox-label">
+                    <CheckboxNormal hover />
+                    Hover
+                </label>
+            </div>
+
+            <div>
+                <CheckboxWithLabelAfter id="chFocus" hover checked >Hover Checked</CheckboxWithLabelAfter>
+            </div>
+            <div>
+                <label className="k-checkbox-label">
+                    <CheckboxNormal hover checked />
+                    Hover Checked
+                </label>
+            </div>
+            <div dir="rtl">
+                <CheckboxWithLabelAfter id="chFocus-rtl" hover checked >Hover Checked</CheckboxWithLabelAfter>
+            </div>
+            <div dir="rtl">
+                <label className="k-checkbox-label">
+                    <CheckboxNormal hover checked />
+                    Hover Checked
+                </label>
+            </div>
+
+
+            <div>
                 <CheckboxWithLabelAfter id="chFocus" focus >Focus</CheckboxWithLabelAfter>
             </div>
             <div>
@@ -168,6 +207,25 @@ export default () =>(
                 <label className="k-checkbox-label">
                     <CheckboxNormal focus/>
                     Focus
+                </label>
+            </div>
+
+            <div>
+                <CheckboxWithLabelAfter id="chFocus" focus checked >Focus Checked</CheckboxWithLabelAfter>
+            </div>
+            <div>
+                <label className="k-checkbox-label">
+                    <CheckboxNormal focus checked />
+                    Focus Checked
+                </label>
+            </div>
+            <div dir="rtl">
+                <CheckboxWithLabelAfter id="chFocus-rtl" focus checked >Focus Checked</CheckboxWithLabelAfter>
+            </div>
+            <div dir="rtl">
+                <label className="k-checkbox-label">
+                    <CheckboxNormal focus checked />
+                    Focus Checked
                 </label>
             </div>
 
