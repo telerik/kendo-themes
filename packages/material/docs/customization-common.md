@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-calendar-navigation-hover-text</td>
     <td>String</td>
     <td><code>$kendo-link-hover-text</code></td>
-    <td><code>var(--kendo-color-secondary-hover, #d31857)</code></td>
+    <td><code>var(--kendo-color-secondary-hover, #DED4EE)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered items in the Calendar navigation.</div></div>
@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-tertiary</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, k-color(tertiary), material-color($tertiary-palette, main))</code></td>
-    <td><code>var(--kendo-color-tertiary, #00695c)</code></td>
+    <td><code>var(--kendo-color-tertiary, #7D5260)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Tertiary colors</div></div>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-item-selected-focus-text</td>
     <td>String</td>
     <td><code>$kendo-selected-bg</code></td>
-    <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
+    <td><code>var(--kendo-color-secondary, #E8DEF8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected and focused TreeView items.<br /> @group treeview</div></div>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-item-selected-focus-bg</td>
     <td>String</td>
     <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 ))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 7%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 7%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected and focused TreeView items.<br /> @group treeview</div></div>

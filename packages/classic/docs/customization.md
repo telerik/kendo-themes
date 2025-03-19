@@ -5187,6 +5187,36 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-sm-indicator-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover and focus indicator size of a small CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-md-indicator-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover and focus indicator size of a medium CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-lg-indicator-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover and focus indicator size of a large CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-bg</td>
     <td>String</td>
     <td><code>$kendo-component-bg</code></td>
@@ -5244,6 +5274,26 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-hover-indicator-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indicator background color of the hovered CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-hover-checked-indicator-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indicator background color of the hovered checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -5327,6 +5377,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-focus-indicator-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indicator background color of the focused CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-focus-checked-border</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -5344,6 +5404,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-checked-indicator-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indicator background color of the focused checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -9451,6 +9521,26 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-items-padding-x</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Drawer items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-items-padding-y</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-item-padding-x</td>
     <td>String</td>
     <td><code>k-spacing(4)</code></td>
@@ -9468,6 +9558,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-spacing</td>
+    <td>String</td>
+    <td><code>$kendo-drawer-item-padding-x</code></td>
+    <td><code>var(--kendo-spacing-4, 1rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in the Drawer item.</div></div>
     </td>
 </tr>
 <tr>
@@ -9508,6 +9608,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The count of the Drawer item levels.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-item-border-radius</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Drawer item.</div></div>
     </td>
 </tr>
 <tr>
@@ -9601,16 +9711,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$kendo-drawer-selected-hover-bg</td>
-    <td>String</td>
-    <td><code>$kendo-selected-hover-bg</code></td>
-    <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and hovered Drawer item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-drawer-selected-hover-text</td>
     <td>String</td>
     <td><code>$kendo-selected-hover-text</code></td>
@@ -9618,6 +9718,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected and hovered Drawer item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-selected-focus-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected and focused Drawer item.</div></div>
     </td>
 </tr>
 </tbody>
@@ -16455,6 +16565,26 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of hovered Menu scroll buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-icon-padding-x</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Menu icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-icon-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Menu icon.</div></div>
     </td>
 </tr>
 <tr>

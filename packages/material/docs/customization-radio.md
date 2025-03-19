@@ -187,7 +187,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-border</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the RadioButton.</div></div>
@@ -217,7 +217,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-hover-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-border</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered RadioButton.</div></div>
@@ -237,7 +237,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-checked-text</td>
     <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked RadioButton.</div></div>
@@ -247,7 +247,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-checked-border</td>
     <td>String</td>
     <td><code>$kendo-radio-checked-text</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the checked RadioButton.</div></div>
@@ -317,7 +317,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-disabled-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-disabled-border</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle, #49454F) 32%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled RadioButton.</div></div>
@@ -337,7 +337,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-disabled-checked-text</td>
     <td>String</td>
     <td><code>$kendo-radio-disabled-border</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle, #49454F) 32%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the disabled and checked RadioButton.</div></div>
@@ -347,7 +347,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-disabled-checked-border</td>
     <td>String</td>
     <td><code>$kendo-radio-disabled-border</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle, #49454F) 32%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled and checked RadioButton.</div></div>
@@ -367,7 +367,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-invalid-text</td>
     <td>String</td>
     <td><code>$kendo-checkbox-invalid-text</code></td>
-    <td><code>var(--kendo-color-error, #f31700)</code></td>
+    <td><code>var(--kendo-color-error, #B3261E)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the invalid RadioButton.</div></div>
@@ -377,7 +377,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-invalid-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-invalid-border</code></td>
-    <td><code>var(--kendo-color-error, #f31700)</code></td>
+    <td><code>var(--kendo-color-error, #B3261E)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid RadioButton.</div></div>
@@ -477,7 +477,7 @@ The following table lists the available variables for customization.
     <td>$kendo-radio-ripple-bg</td>
     <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple..</div></div>

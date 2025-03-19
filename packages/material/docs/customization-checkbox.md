@@ -128,6 +128,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-sm-indicator-size</td>
+    <td>String</td>
+    <td><code>k-spacing(7)</code></td>
+    <td><code>var(--kendo-spacing-7, 1.75rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover and focus indicator size of a small CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-md-indicator-size</td>
+    <td>String</td>
+    <td><code>k-spacing(8)</code></td>
+    <td><code>var(--kendo-spacing-8, 2rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover and focus indicator size of a medium CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-lg-indicator-size</td>
+    <td>String</td>
+    <td><code>k-spacing(9)</code></td>
+    <td><code>var(--kendo-spacing-9, 2.25rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover and focus indicator size of a large CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-bg</td>
     <td>String</td>
     <td><code>unset</code></td>
@@ -150,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 ))</code></td>
-    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
+    <td><code>k-color( subtle )</code></td>
+    <td><code>var(--kendo-color-subtle, #49454F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the CheckBox.</div></div>
@@ -188,10 +218,30 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-hover-indicator-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color( on-app-surface ) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 8%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indicator background color of the hovered CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-hover-checked-indicator-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color( primary ) 8%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #65558F) 8%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indicator background color of the hovered checked CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-checked-bg</td>
     <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the checked CheckBox.</div></div>
@@ -211,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-checked-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-bg</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the checked CheckBox.</div></div>
@@ -221,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-indeterminate-bg</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-bg</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the indeterminate CheckBox.</div></div>
@@ -241,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-indeterminate-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-checked-border</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the indeterminate CheckBox.</div></div>
@@ -268,6 +318,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-focus-indicator-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color( on-app-surface ) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #1D1B20) 12%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indicator background color of the focused CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-focus-checked-border</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -285,6 +345,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked CheckBox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-checked-indicator-bg</td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color( primary ) 12%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #65558F) 12%, transparent)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indicator background color of the focused checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -310,8 +380,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-component-bg, 4 ))</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
+    <td><code>color-mix(in srgb, k-color( subtle ) 32%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle, #49454F) 32%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled CheckBox.</div></div>
@@ -321,7 +391,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-disabled-checked-bg</td>
     <td>String</td>
     <td><code>$kendo-checkbox-disabled-border</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle, #49454F) 32%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled and checked CheckBox.</div></div>
@@ -341,7 +411,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-disabled-checked-border</td>
     <td>String</td>
     <td><code>$kendo-checkbox-disabled-checked-bg</code></td>
-    <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-subtle, #49454F) 32%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled and checked CheckBox.</div></div>
@@ -361,7 +431,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-invalid-text</td>
     <td>String</td>
     <td><code>$kendo-invalid-text</code></td>
-    <td><code>var(--kendo-color-error, #f31700)</code></td>
+    <td><code>var(--kendo-color-error, #B3261E)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of an invalid CheckBox.</div></div>
@@ -371,7 +441,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-invalid-border</td>
     <td>String</td>
     <td><code>$kendo-invalid-border</code></td>
-    <td><code>var(--kendo-color-error, #f31700)</code></td>
+    <td><code>var(--kendo-color-error, #B3261E)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of an invalid CheckBox.</div></div>
@@ -481,7 +551,7 @@ The following table lists the available variables for customization.
     <td>$kendo-checkbox-ripple-bg</td>
     <td>String</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
+    <td><code>var(--kendo-color-primary, #65558F)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the CheckBox' ripple.</div></div>

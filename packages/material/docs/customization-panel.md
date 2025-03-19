@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panel-text</td>
     <td>String</td>
     <td><code>var(--kendo-component-text, #{$kendo-component-text})</code></td>
-    <td><code>var(--kendo-component-text, var(--kendo-color-on-app-surface, #212121))</code></td>
+    <td><code>var(--kendo-component-text, var(--kendo-color-on-app-surface, #1D1B20))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Panel.</div></div>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-panel-border</td>
     <td>String</td>
     <td><code>var(--kendo-component-border, #{$kendo-component-border})</code></td>
-    <td><code>var(--kendo-component-border, var(--kendo-color-border, rgba(0, 0, 0, 0.12)))</code></td>
+    <td><code>var(--kendo-component-border, var(--kendo-color-border, rgba(29, 27, 32, 0.12)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Panel.</div></div>

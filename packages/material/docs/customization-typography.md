@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-line-height</td>
     <td>Number</td>
-    <td><code>calc(28 / 14)</code></td>
-    <td><code>2</code></td>
+    <td><code>calc(20 / 14)</code></td>
+    <td><code>1.4285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height across all components.</div></div>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-line-height-sm</td>
     <td>Number</td>
-    <td><code>1.2</code></td>
+    <td><code>1.33</code></td>
     <td><code>1.25</code></td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-height-md</td>
     <td>Number</td>
     <td><code>$kendo-line-height</code></td>
-    <td><code>2</code></td>
+    <td><code>1.4285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium line height across all components.</div></div>
@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-height-em</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-line-height} * 1em )</code></td>
-    <td><code>calc(2 * 1em)</code></td>
+    <td><code>calc(1.4285714286 * 1em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base line height in ems across all components.</div></div>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacing-tightest</td>
     <td>Number</td>
-    <td><code>-2.5px</code></td>
+    <td><code>-.5px</code></td>
     <td><code>-0.15px</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacing-tighter</td>
     <td>Number</td>
-    <td><code>-1.5px</code></td>
+    <td><code>-.25px</code></td>
     <td><code>-0.1px</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacing-tight</td>
     <td>Number</td>
-    <td><code>-.5px</code></td>
+    <td><code>-.1px</code></td>
     <td><code>-0.5px</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacing-normal</td>
     <td>Number</td>
-    <td><code>0px</code></td>
+    <td><code>.25px</code></td>
     <td><code>0px</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacing-wide</td>
     <td>Number</td>
-    <td><code>.15px</code></td>
+    <td><code>.1px</code></td>
     <td><code>0.5px</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-letter-spacing-widest</td>
     <td>Number</td>
-    <td><code>.35px</code></td>
+    <td><code>.5px</code></td>
     <td><code>0.15px</code></td>
 </tr>
 <tr>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-line-heights</td>
     <td>Map</td>
     <td><code>$_default-line-heights</code></td>
-    <td><ul><li>xs: 1</li><li>sm: 1.2</li><li>md: 2</li><li>lg: 1.5</li></ul></td>
+    <td><ul><li>xs: 1</li><li>sm: 1.33</li><li>md: 1.4285714285714286</li><li>lg: 1.5</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights map</div></div>
@@ -281,7 +281,7 @@ The following table lists the available variables for customization.
     <td>$kendo-letter-spacings</td>
     <td>Map</td>
     <td><code>$_default-letter-spacings</code></td>
-    <td><ul><li>tightest: -2.5px</li><li>tighter: -1.5px</li><li>tight: -0.5px</li><li>normal: 0px</li><li>wide: 0.15px</li><li>wider: 0.25px</li><li>widest: 0.35px</li></ul></td>
+    <td><ul><li>tightest: -0.5px</li><li>tighter: -0.25px</li><li>tight: -0.1px</li><li>normal: 0.25px</li><li>wide: 0.1px</li><li>wider: 0.25px</li><li>widest: 0.5px</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacings map</div></div>
@@ -300,8 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h1-font-size</td>
     <td>Number</td>
-    <td><code>96px</code></td>
-    <td><code>96px</code></td>
+    <td><code>57px</code></td>
+    <td><code>57px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the highest level heading.</div></div>
@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-font-size</td>
     <td>Number</td>
-    <td><code>60px</code></td>
-    <td><code>60px</code></td>
+    <td><code>45px</code></td>
+    <td><code>45px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the second highest level heading.</div></div>
@@ -320,8 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-font-size</td>
     <td>Number</td>
-    <td><code>48px</code></td>
-    <td><code>48px</code></td>
+    <td><code>36px</code></td>
+    <td><code>36px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the third highest level heading.</div></div>
@@ -330,8 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-font-size</td>
     <td>Number</td>
-    <td><code>34px</code></td>
-    <td><code>34px</code></td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the fourth highest level heading.</div></div>
@@ -340,8 +340,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-font-size</td>
     <td>Number</td>
-    <td><code>24px</code></td>
-    <td><code>24px</code></td>
+    <td><code>28px</code></td>
+    <td><code>28px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the fifth highest level heading.</div></div>
@@ -350,8 +350,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-font-size</td>
     <td>Number</td>
-    <td><code>20px</code></td>
-    <td><code>20px</code></td>
+    <td><code>24px</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the sixth highest level heading.</div></div>
@@ -420,8 +420,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h1-line-height</td>
     <td>Number</td>
-    <td><code>112px</code></td>
-    <td><code>112px</code></td>
+    <td><code>64px</code></td>
+    <td><code>64px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the highest level heading.</div></div>
@@ -430,8 +430,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-line-height</td>
     <td>Number</td>
-    <td><code>72px</code></td>
-    <td><code>72px</code></td>
+    <td><code>52px</code></td>
+    <td><code>52px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the second highest level heading.</div></div>
@@ -440,8 +440,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h3-line-height</td>
     <td>Number</td>
-    <td><code>56px</code></td>
-    <td><code>56px</code></td>
+    <td><code>44px</code></td>
+    <td><code>44px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the third highest level heading.</div></div>
@@ -450,8 +450,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-line-height</td>
     <td>Number</td>
-    <td><code>36px</code></td>
-    <td><code>36px</code></td>
+    <td><code>40px</code></td>
+    <td><code>40px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the fourth highest level heading.</div></div>
@@ -460,8 +460,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h5-line-height</td>
     <td>Number</td>
-    <td><code>24px</code></td>
-    <td><code>24px</code></td>
+    <td><code>36px</code></td>
+    <td><code>36px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the fifth highest level heading.</div></div>
@@ -470,8 +470,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-line-height</td>
     <td>Number</td>
-    <td><code>24px</code></td>
-    <td><code>24px</code></td>
+    <td><code>32px</code></td>
+    <td><code>32px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the sixth highest level heading.</div></div>
@@ -550,8 +550,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h2-letter-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-letter-spacing-tight, normal )</code></td>
-    <td><code>var(--kendo-letter-spacing-tight, normal)</code></td>
+    <td><code>var( --kendo-letter-spacing-normal, normal )</code></td>
+    <td><code>var(--kendo-letter-spacing-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the second highest level heading.</div></div>
@@ -570,8 +570,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h4-letter-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-letter-spacing-wider, normal )</code></td>
-    <td><code>var(--kendo-letter-spacing-wider, normal)</code></td>
+    <td><code>var( --kendo-letter-spacing-normal, normal )</code></td>
+    <td><code>var(--kendo-letter-spacing-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the fourth highest level heading.</div></div>
@@ -590,8 +590,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-h6-letter-spacing</td>
     <td>String</td>
-    <td><code>var( --kendo-letter-spacing-wide, normal )</code></td>
-    <td><code>var(--kendo-letter-spacing-wide, normal)</code></td>
+    <td><code>var( --kendo-letter-spacing-normal, normal )</code></td>
+    <td><code>var(--kendo-letter-spacing-normal, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the sixth highest level heading.</div></div>
@@ -710,7 +710,7 @@ The following table lists the available variables for customization.
         margin: $kendo-h6-margin
     )
 )</code></td>
-    <td><ul><li>h1: "font-size":"96px","font-family":"var(--kendo-font-family, inherit)","line-height":"112px","font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)","margin":"(0 0 12px)"</li><li>h2: "font-size":"60px","font-family":"var(--kendo-font-family, inherit)","line-height":"72px","font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tight, normal)","margin":"(0 0 12px)"</li><li>h3: "font-size":"48px","font-family":"var(--kendo-font-family, inherit)","line-height":"56px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"(0 0 12px)"</li><li>h4: "font-size":"34px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-wider, normal)","margin":"(0 0 12px)"</li><li>h5: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"(0 0 12px)"</li><li>h6: "font-size":"20px","font-family":"var(--kendo-font-family, inherit)","line-height":"24px","font-weight":"var(--kendo-font-weight-medium, normal)","letter-spacing":"var(--kendo-letter-spacing-wide, normal)","margin":"(0 0 12px)"</li></ul></td>
+    <td><ul><li>h1: "font-size":"57px","font-family":"var(--kendo-font-family, inherit)","line-height":"64px","font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)","margin":"(0 0 12px)"</li><li>h2: "font-size":"45px","font-family":"var(--kendo-font-family, inherit)","line-height":"52px","font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"(0 0 12px)"</li><li>h3: "font-size":"36px","font-family":"var(--kendo-font-family, inherit)","line-height":"44px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"(0 0 12px)"</li><li>h4: "font-size":"32px","font-family":"var(--kendo-font-family, inherit)","line-height":"40px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"(0 0 12px)"</li><li>h5: "font-size":"28px","font-family":"var(--kendo-font-family, inherit)","line-height":"36px","font-weight":"var(--kendo-font-weight-normal, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"(0 0 12px)"</li><li>h6: "font-size":"24px","font-family":"var(--kendo-font-family, inherit)","line-height":"32px","font-weight":"var(--kendo-font-weight-medium, normal)","letter-spacing":"var(--kendo-letter-spacing-normal, normal)","margin":"(0 0 12px)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The headings Map.</div></div>
@@ -779,8 +779,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-font-family</td>
     <td>String</td>
-    <td><code>var( --kendo-font-family-monospace, normal )</code></td>
-    <td><code>var(--kendo-font-family-monospace, normal)</code></td>
+    <td><code>var( --kendo-font-family, normal )</code></td>
+    <td><code>var(--kendo-font-family, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the code tag.</div></div>
@@ -808,9 +808,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-code-letter-spacing</td>
-    <td>Null</td>
-    <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td>String</td>
+    <td><code>var( --kendo-letter-spacing-wider, normal )</code></td>
+    <td><code>var(--kendo-letter-spacing-wider, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The letter spacing of the code tag.</div></div>
@@ -870,7 +870,7 @@ The following table lists the available variables for customization.
     <td>$kendo-code-bg</td>
     <td>String</td>
     <td><code>$kendo-base-bg</code></td>
-    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
+    <td><code>var(--kendo-color-app-surface, #FEFBFF)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the code tag.</div></div>
@@ -880,7 +880,7 @@ The following table lists the available variables for customization.
     <td>$kendo-code-text</td>
     <td>String</td>
     <td><code>$kendo-component-text</code></td>
-    <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #1D1B20)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the code tag.</div></div>
@@ -890,7 +890,7 @@ The following table lists the available variables for customization.
     <td>$kendo-code-border</td>
     <td>String</td>
     <td><code>$kendo-component-border</code></td>
-    <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
+    <td><code>var(--kendo-color-border, rgba(29, 27, 32, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the code tag.</div></div>
@@ -898,9 +898,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-display1-font-size</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-font-size, .875rem ) * 9.5 )</code></td>
-    <td><code>calc(var(--kendo-font-size, 0.875rem) * 9.5)</code></td>
+    <td>Number</td>
+    <td><code>140px</code></td>
+    <td><code>140px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the largest display text.</div></div>
@@ -908,9 +908,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-display2-font-size</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-font-size, .875rem ) * 8.75 )</code></td>
-    <td><code>calc(var(--kendo-font-size, 0.875rem) * 8.75)</code></td>
+    <td>Number</td>
+    <td><code>112px</code></td>
+    <td><code>112px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the second largest display text.</div></div>
@@ -918,9 +918,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-display3-font-size</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-font-size, .875rem ) * 8 )</code></td>
-    <td><code>calc(var(--kendo-font-size, 0.875rem) * 8)</code></td>
+    <td>Number</td>
+    <td><code>90px</code></td>
+    <td><code>90px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the third largest display text.</div></div>
@@ -928,9 +928,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-display4-font-size</td>
-    <td>Calculation</td>
-    <td><code>calc( var( --kendo-font-size, .875rem ) * 7.25 )</code></td>
-    <td><code>calc(var(--kendo-font-size, 0.875rem) * 7.25)</code></td>
+    <td>Number</td>
+    <td><code>72px</code></td>
+    <td><code>72px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the fourth largest display text.</div></div>
@@ -1129,7 +1129,7 @@ The following table lists the available variables for customization.
         letter-spacing: $kendo-display4-letter-spacing
     )
 )</code></td>
-    <td><ul><li>1: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 9.5)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>2: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 8.75)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>3: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 8)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>4: "font-size":"calc(var(--kendo-font-size, 0.875rem) * 7.25)","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li></ul></td>
+    <td><ul><li>1: "font-size":"140px","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>2: "font-size":"112px","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>3: "font-size":"90px","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li><li>4: "font-size":"72px","font-family":"var(--kendo-font-family, inherit)","line-height":1.2,"font-weight":"var(--kendo-font-weight-light, normal)","letter-spacing":"var(--kendo-letter-spacing-tighter, normal)"</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The displays Map.</div></div>
