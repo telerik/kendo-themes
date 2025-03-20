@@ -1,7 +1,9 @@
 import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable, GridPager } from "../";
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
+import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal } from "../../action-sheet";
+import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuNormal } from "../../column-menu";
 import { Button } from "../../button";
-import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal, Badge, ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuNormal } from "../..";
+import { Badge } from "../../badge";
 
 const styles = `
     #test-area {

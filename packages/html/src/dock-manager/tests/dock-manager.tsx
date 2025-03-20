@@ -1,5 +1,8 @@
-import { Button, ToolbarSeparator, TabStripNormal, TabStripContent, TabStripItem, SplitterPane } from "../..";
 import { DockManagerNormal, PaneScrollable, DockManagerSplitter } from "../";
+import { Button } from "../../button";
+import { SplitterPane } from "../../splitter";
+import { TabStripNormal, TabStripItem, TabStripContent } from "../../tabstrip";
+import { ToolbarSeparator } from "../../toolbar";
 
 const styles = `
     #test-area {

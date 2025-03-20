@@ -1,7 +1,7 @@
 import { FilePreview, FileManagerBreadcrumb, FileManagerTreeview, FileInfo, FileManagerListView, FileManagerPreview } from '..';
-import { ListViewItem } from '../..';
 import { BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
 import { Icon } from '../../icon';
+import { ListViewItem } from '../../listview';
 import { Splitter, SplitterPane } from '../../splitter';
 import { TreeviewItem } from '../../treeview';
 

@@ -1,8 +1,9 @@
 import { TaskBoardPane, TaskBoardToolbar } from '.';
-import { FormField, FormNormal, Textbox } from '..';
 import { Button } from '../button';
+import { FormNormal, FormField } from '../form';
 import { States, classNames, stateClassNames } from '../misc';
 import { Searchbox } from '../searchbox';
+import { Textbox } from '../textbox';
 
 export const TASKBOARD_CLASSNAME = `k-taskboard`;
 

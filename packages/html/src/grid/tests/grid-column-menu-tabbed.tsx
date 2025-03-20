@@ -3,7 +3,7 @@ import { Button } from '../../button';
 import { Searchbox } from '../../searchbox';
 import { Popup } from '../../popup';
 import { ColumnMenuTabbed, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuMultiCheck, FilterMenuNormal, ColumnMenuMulticheckItem, ColumnMenuMulticheckWrap } from '../../column-menu';
-import { TabStripContent, TabStripItem, TabStripNormal } from '../..';
+import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
 
 const styles = `
     .k-animation-container,

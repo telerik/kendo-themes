@@ -6,7 +6,7 @@ import { EditorNormal } from '../../editor';
 import { WindowNormal } from '../../window';
 import { ButtonGroup } from '../../button-group';
 import { FormField, FormNormal } from '../../form';
-import { TabStripNormal, TabStripContent, TabStripItem } from '../..';
+import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
 
 
 const styles = `

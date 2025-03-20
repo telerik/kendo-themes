@@ -4,7 +4,8 @@ import { MenuButton } from "../../menu-button/menu-button.spec";
 import { ToolbarItem, ToolbarSeparator } from "../../toolbar";
 import { Spreadsheet, SpreadsheetHeader, SpreadsheetNormal } from "..";
 import { MenuItem } from "../../menu";
-import { ColorPicker, DropdownList } from "../..";
+import { ColorPicker } from "../../colorpicker";
+import { DropdownList } from "../../dropdownlist";
 
 const style = `
     #test-area {

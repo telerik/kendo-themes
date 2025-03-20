@@ -1,4 +1,5 @@
-import { Button, DialogNonModal } from '../..';
+import { Button } from "../../button";
+import { DialogNonModal } from "../../dialog";
 
 const styles = `
     #test-area {

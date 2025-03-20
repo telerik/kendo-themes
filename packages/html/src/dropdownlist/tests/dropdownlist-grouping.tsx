@@ -1,4 +1,5 @@
-import { DropdownListGrouping, DropdownListGroupingModern } from "../..";
+import { DropdownListGrouping } from "../templates/dropdownlist-grouping";
+import { DropdownListGroupingModern } from "../templates/dropdownlist-grouping-modern";
 
 const styles = `
     #test-area {

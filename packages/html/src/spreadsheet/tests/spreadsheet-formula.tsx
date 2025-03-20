@@ -1,5 +1,5 @@
 import { Spreadsheet, SpreadsheetActionBar, SpreadsheetHeader, SpreadsheetSheetsBar, SpreadsheetView } from "..";
-import { Button } from "../..";
+import Button from "../../button/button.spec";
 
 const style = `
     #test-area {

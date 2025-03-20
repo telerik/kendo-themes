@@ -1,5 +1,5 @@
-import { ContextMenu } from "..";
-import { MenuListItem } from "../..";
+import { ContextMenu } from "../context-menu.spec";
+import { MenuListItem } from "../../menu/menu-list-item.spec";
 
 export const ContextMenuNormal = (props) => (
     <ContextMenu

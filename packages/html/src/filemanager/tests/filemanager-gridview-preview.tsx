@@ -1,10 +1,10 @@
 import { FilePreview, FileManagerBreadcrumb, FileManagerTreeview, FileInfo, FileManagerGridPreview } from '..';
-import { TableRow, TableTbody, TableTd, TableThead } from '../..';
 import { BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
 import { Icon } from '../../icon';
 import { Splitter, SplitterPane } from '../../splitter';
 import { TreeviewItem } from '../../treeview';
 import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from "../../grid";
+import { TableThead, TableRow, TableTbody, TableTd } from '../../table';
 
 
 export default () =>(

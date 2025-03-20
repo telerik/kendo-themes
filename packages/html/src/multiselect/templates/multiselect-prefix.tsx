@@ -1,6 +1,6 @@
 import MultiSelect from "../multiselect.spec";
 import { Icon } from '../../icon';
-import { Chip, ChipAction } from "../..";
+import { Chip, ChipAction } from "../../chip";
 
 export const MultiSelectPrefix = (props) => (
     <MultiSelect

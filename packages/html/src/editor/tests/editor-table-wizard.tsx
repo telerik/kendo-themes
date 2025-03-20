@@ -1,4 +1,3 @@
-import { Popup, TabStripNormal, TabStripContent, TabStripItem } from '../..';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
@@ -6,6 +5,8 @@ import { DropdownList } from '../../dropdownlist';
 import { FormNormal, FormField, Fieldset } from '../../form';
 import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
+import { Popup } from '../../popup';
+import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
 import { Textarea } from '../../textarea';
 import { Textbox } from '../../textbox';
 import { WindowNormal } from '../../window';

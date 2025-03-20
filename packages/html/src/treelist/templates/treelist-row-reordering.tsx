@@ -1,5 +1,7 @@
 import { TreeList } from "..";
-import { GridContainer, GridContent, GridHeader, GridHeaderCell, GridHeaderTable, GridTable, Icon, TableRow, TableTbody, TableTd, TableThead } from "../..";
+import { GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from "../../grid";
+import { Icon } from "../../icon";
+import { TableThead, TableRow, TableTbody, TableTd } from "../../table";
 
 export const TreeListRowReordering = ({ gridHeader, gridContent, menu, ...other }: any) => (
     <TreeList id="treelist" _renderAriaRoot {...other} >

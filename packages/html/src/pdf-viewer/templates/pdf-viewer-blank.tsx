@@ -1,6 +1,10 @@
 import { PDFViewer } from "..";
-import { ButtonGroup, Combobox, MenuButton, Pager, Toolbar, ToolbarSeparator } from "../..";
 import { Button } from "../../button";
+import { ButtonGroup } from "../../button-group";
+import { Combobox } from "../../combobox";
+import { MenuButton } from "../../menu-button";
+import { Pager } from "../../pager";
+import { Toolbar, ToolbarSeparator } from "../../toolbar";
 
 export const PDFViewerBlank = (props) => (
     <PDFViewer blank

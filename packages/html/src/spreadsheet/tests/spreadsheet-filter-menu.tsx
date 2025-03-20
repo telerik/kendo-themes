@@ -4,7 +4,7 @@ import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 import { AnimationContainer } from '../../animation-container';
-import { ColumnMenuItem, ColumnMenuItemWrapper } from '../..';
+import { ColumnMenuItemWrapper, ColumnMenuItem } from '../../column-menu';
 
 
 const style = `
