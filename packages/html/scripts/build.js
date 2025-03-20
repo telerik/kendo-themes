@@ -7,7 +7,7 @@ const components = globSync("./src/**/*.tsx", { dotRelative: true });
 components.push("./src/index.ts");
 
 const commonConfig = {
-    logLevel: "error",
+    logLevel: "verbose",
     entryPoints: components,
     jsx: "automatic",
     bundle: true,
