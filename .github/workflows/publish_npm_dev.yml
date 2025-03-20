@@ -50,7 +50,7 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 22.x
           registry-url: 'https://registry.npmjs.org'
         env:
           NODE_AUTH_TOKEN: ${{ steps.import-secrets.outputs.NPM_TOKEN }}
