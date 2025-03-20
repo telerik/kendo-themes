@@ -39,11 +39,11 @@
   },
   "scripts": {
     "start": "node ./scripts/start",
-    "build": "node ./scripts/build.js && npm run typegen",
+    "build": "node ./scripts/build.js",
     "typegen": "npx tsc --emitDeclarationOnly --declaration --declarationDir dist/types/",
     "typecheck": "npx tsc --noEmit --emitDeclarationOnly false --project tsconfig.json ",
     "build:tests": "node ./scripts/build-tests.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run typegen"
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^4.0.0"

@@ -63,6 +63,9 @@ jobs:
           npm run sass:dist
           npm run docs
 
+      - name: Build html for dist
+        run: npm run build
+
       - name: Lerna publish
         run: npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes --concurrency 1
         env:
