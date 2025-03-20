@@ -1,5 +1,6 @@
-import { ActionButtons, Button } from "../..";
 import { Popover } from "..";
+import { ActionButtons } from "../../action-buttons";
+import { Button } from "../../button";
 
 export const PopoverNormal = (props) => (
     <Popover
