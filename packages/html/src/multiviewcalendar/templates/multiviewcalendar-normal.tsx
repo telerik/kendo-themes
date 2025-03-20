@@ -1,6 +1,5 @@
 import { MultiViewCalendar } from "..";
-import { CalendarCell, CalendarTable } from "../..";
-import { CalendarTableRow } from "../..";
+import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
 
 export const MultiViewCalendarNormal = ({ showCaptions, showOtherMonth, ...props }: any) => (
     <MultiViewCalendar calendarView="month"

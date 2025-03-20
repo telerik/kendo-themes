@@ -1,4 +1,4 @@
-import { Button } from '..';
+import { Button } from '../button';
 import { classNames } from '../misc';
 import MenuScrollableWrapper from './menu-scrollable-wrapper.spec';
 

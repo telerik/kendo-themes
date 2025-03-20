@@ -1,4 +1,8 @@
-import { Button, MenuButton, MenuList, MenuListItem, MenuSeparator, Popup, Toolbar } from '../..';
+import { Button } from "../../button";
+import { MenuList, MenuListItem, MenuSeparator } from "../../menu";
+import { MenuButton } from "../../menu-button";
+import { Popup } from "../../popup";
+import { Toolbar } from "../../toolbar";
 
 const styles = `
     #test-area {

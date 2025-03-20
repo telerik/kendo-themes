@@ -1,4 +1,4 @@
-import { Button } from "../..";
+import { Button } from "../../button";
 import Dialog from "../dialog.spec";
 
 export const DialogNormal = (props) => (

@@ -1,6 +1,5 @@
 import { MultiViewCalendar } from "..";
-import { CalendarCell, CalendarTable } from "../..";
-import { CalendarTableRow } from "../..";
+import { CalendarTable, CalendarTableRow, CalendarCell } from "../../calendar";
 
 export const MultiViewCalendarCentury = ({ showOtherCentury, ...props }: any) => (
     <MultiViewCalendar calendarView="century" calendarTitleText="1900 - 2099"

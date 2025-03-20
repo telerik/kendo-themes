@@ -1,5 +1,5 @@
-import { SliderNormal } from '..';
 import { classNames } from '../misc';
+import { SliderNormal } from '../slider';
 import { MediaPlayerToolbar } from './mediaplayer-toolbar';
 
 export const MEDIAPLAYER_CLASSNAME = `k-mediaplayer`;

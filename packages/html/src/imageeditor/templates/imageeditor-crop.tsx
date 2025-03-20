@@ -1,10 +1,11 @@
 import { ImageEditor } from "..";
-import { ButtonGroup, ToolbarItem, ToolbarSeparator } from "../..";
 import { Button } from "../../button";
+import { ButtonGroup } from "../../button-group";
 import { CheckboxWithLabelAfter } from "../../checkbox";
 import { DropdownList } from "../../dropdownlist";
 import { FormNormal, Fieldset, FormField } from "../../form";
 import { NumericTextbox } from "../../numerictextbox";
+import { ToolbarSeparator, ToolbarItem } from "../../toolbar";
 
 export const ImageEditorCrop = (props: any) => (
     <ImageEditor

@@ -1,5 +1,7 @@
-import { Icon, TabStripItems, TabStripItemsWrapper } from '..';
+import { Icon } from '../icon';
 import { classNames, FillMode, optionClassNames, Size, ThemeColor } from '../misc';
+import TabStripItems from './tabstrip-items';
+import TabStripItemsWrapper from './tabstrip-items-wrapper';
 
 export const TABSTRIP_CLASSNAME = `k-tabstrip`;
 

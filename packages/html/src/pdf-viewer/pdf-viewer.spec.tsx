@@ -1,6 +1,8 @@
-import { ButtonGroup, Combobox, MenuButton } from '..';
 import { Button } from '../button';
+import { ButtonGroup } from '../button-group';
+import { Combobox } from '../combobox';
 import { DropzoneNormal } from '../dropzone';
+import { MenuButton } from '../menu-button';
 import { classNames, stateClassNames, States, } from '../misc';
 import { Pager } from '../pager';
 import { Textbox } from '../textbox';

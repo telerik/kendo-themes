@@ -1,5 +1,9 @@
-import { Button, ButtonGroup, Combobox, Pager, Toolbar } from '../..';
+import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
+import { Combobox } from '../../combobox';
+import { Pager } from '../../pager';
 import { PDFViewerNormal } from '../../pdf-viewer';
+import { Toolbar } from '../../toolbar';
 
 const styles = `
     #test-area .k-pdf-viewer {

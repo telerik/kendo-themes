@@ -1,5 +1,5 @@
-import { SplitterPane, SplitterSplitbar } from '..';
 import { classNames } from '../misc';
+import { SplitterPane, SplitterSplitbar } from '../splitter';
 import { DockManagerToolbar } from './dock-manager-toolbar';
 
 export const DOCKMANAGER_CLASSNAME = `k-dock-manager`;

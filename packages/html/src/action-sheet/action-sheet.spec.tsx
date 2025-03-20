@@ -1,6 +1,7 @@
 import { classNames } from '../misc';
 import { AnimationContainer } from '../animation-container';
-import { ActionSheetHeader, ActionSheetFooter } from '..';
+import { ActionSheetFooter } from './actionsheet-footer';
+import { ActionSheetHeader } from './actionsheet-header';
 
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;
 

@@ -1,5 +1,5 @@
 import { ColumnMenuTabbed, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuNormal } from '../../column-menu';
-import { TabStripNormal, TabStripContent, TabStripItem } from '../..';
+import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
 
 const styles = `
     .k-animation-container,

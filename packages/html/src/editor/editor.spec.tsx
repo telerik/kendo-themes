@@ -1,5 +1,6 @@
-import { EditorContent, EditorToolbar } from '..';
 import { classNames, stateClassNames, States } from '../misc';
+import { EditorContent } from './editor-content';
+import { EditorToolbar } from './editor-toolbar';
 
 export const EDITOR_CLASSNAME = `k-editor`;
 

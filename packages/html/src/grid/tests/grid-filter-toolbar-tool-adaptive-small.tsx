@@ -1,7 +1,12 @@
 import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable, GridPager } from "../";
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
+import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal } from "../../action-sheet";
+import { ColumnMenuExpander, ColumnMenuItemWrapper, ColumnMenuNormal, FilterMenu } from "../../column-menu";
+import { NumericTextbox } from "../../numerictextbox";
+import { ButtonGroup } from "../../button-group";
+import { DropdownList } from "../../dropdownlist";
 import { Button } from "../../button";
-import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal, Badge, ButtonGroup, ColumnMenuExpander, ColumnMenuItemWrapper, ColumnMenuNormal, DropdownList, FilterMenu, NumericTextbox } from "../..";
+import { Badge } from "../../badge";
 
 const styles = `
     #test-area {
