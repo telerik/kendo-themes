@@ -64,7 +64,7 @@ jobs:
           npm run docs
 
       - name: Lerna publish
-        run: npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes --concurrency 1
+        run: npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
         env:
           GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
