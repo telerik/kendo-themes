@@ -39,6 +39,10 @@ jobs:
         run: |
           npm run sass
 
+      - name: Build HTML
+        run: |
+          npm run build
+
       - name: Build swatch for a11y tests
         run: |
           npx gulp sass:dist --theme packages/default
