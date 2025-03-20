@@ -41,7 +41,7 @@ jobs:
 
       - name: Build HTML
         run: |
-          npm run build
+          npm run build --verbose
 
       - name: Build swatch for a11y tests
         run: |
