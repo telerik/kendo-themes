@@ -1,5 +1,6 @@
-import { TaskBoardCard, TaskBoardColumn } from '../..';
 import { CardBody, CardHeader } from '../../card';
+import TaskBoardCard from '../taskboard-card';
+import TaskBoardColumn from '../taskboard-column';
 
 
 export default () =>(

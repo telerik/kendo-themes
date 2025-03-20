@@ -1,7 +1,9 @@
-import { TaskBoard, TaskBoardCard, TaskBoardColumn } from '../..';
 import { Button } from '../../button';
 import { CardBody, CardHeader } from '../../card';
 import { Textbox } from '../../textbox';
+import TaskBoardCard from '../taskboard-card';
+import TaskBoardColumn from '../taskboard-column';
+import TaskBoard from '../taskboard.spec';
 
 const style = `
     #test-area {

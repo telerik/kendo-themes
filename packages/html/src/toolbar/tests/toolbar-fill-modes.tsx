@@ -2,8 +2,9 @@ import { Button } from '../../button';
 import { ColorPicker } from '../../colorpicker';
 import { ButtonGroup } from '../../button-group';
 import { ToolbarItem, ToolbarSeparator, ToolbarResizable, Toolbar, ToolbarScrollableButtonsHidden } from '../../toolbar';
+import { Combobox } from '../../combobox';
+import { MenuButton } from '../../menu-button';
 
-import { Combobox, MenuButton } from '../..';
 
 export default () =>(
     <>

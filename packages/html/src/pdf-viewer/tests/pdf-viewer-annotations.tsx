@@ -1,5 +1,10 @@
+import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
+import { Combobox } from '../../combobox';
+import { MenuButton } from '../../menu-button';
+import { Pager } from '../../pager';
 import { PDFViewerWithAnnotations } from '../../pdf-viewer';
-import { Button, ButtonGroup, Combobox, MenuButton, Pager, Toolbar, ToolbarSeparator } from '../..';
+import { Toolbar, ToolbarSeparator } from '../../toolbar';
 
 const styles = `
     #test-area .k-pdf-viewer {

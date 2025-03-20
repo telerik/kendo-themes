@@ -1,5 +1,5 @@
 import { TabStripContent, TabStripItem, TabStripNormal } from '..';
-import { Button } from '../..';
+import { Button } from '../../button';
 
 
 export default () => (

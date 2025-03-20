@@ -1,6 +1,7 @@
 import { MultiSelect, MultiSelectNormal, MultiSelectPrefix, MultiSelectSuffix } from '..';
+import { TextButton } from '../../button';
+import { Chip, ChipAction } from '../../chip';
 import { Icon } from '../../icon';
-import { Chip, ChipAction, TextButton } from '../..';
 
 const styles = `
     #test-area {

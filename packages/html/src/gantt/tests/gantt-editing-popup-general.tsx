@@ -5,7 +5,7 @@ import { DateTimePicker } from '../../datetimepicker';
 import { NumericTextbox } from '../../numerictextbox';
 import { DropdownList } from '../../dropdownlist';
 import { FormNormal, FormField } from '../../form';
-import { TabStripNormal, TabStripContent, TabStripItem } from '../..';
+import { TabStripNormal, TabStripItem, TabStripContent } from '../../tabstrip';
 
 
 const styles = `

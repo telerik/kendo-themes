@@ -1,5 +1,6 @@
 import { Autocomplete, AutocompleteNormal, AutocompletePrefix, AutocompleteSuffix } from '..';
-import { Icon, TextButton } from '../..';
+import { TextButton } from '../../button';
+import { Icon } from '../../icon';
 
 const styles = `
     #test-area {
