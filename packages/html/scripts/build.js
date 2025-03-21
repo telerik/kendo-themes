@@ -11,7 +11,7 @@ const commonConfig = {
     entryPoints: components,
     jsx: "automatic",
     bundle: true,
-    minify: false,
+    minify: true,
     sourcemap: false,
     external: [ "react", "react-dom", "@progress/kendo-svg-icons" ],
 };
