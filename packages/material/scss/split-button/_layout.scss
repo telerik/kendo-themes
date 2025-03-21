@@ -1,6 +1,18 @@
+@use "sass:map";
+@use "../button/_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/split-button/_layout.scss" as *;
 
 
 @mixin kendo-split-button--layout() {
     @include kendo-split-button--layout-base();
+
+    @each $size, $size-props in $kendo-button-sizes {
+        $_padding-x: map.get( $size-props, padding-x );
+
+        .k-split-button {
+            .k-button-#{$size}:not(.k-split-button-arrow) {
+                padding-inline: calc( $_padding-x / 2) ;
+            }
+        }
+    }
 }
