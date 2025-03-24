@@ -3,7 +3,7 @@ const fs = require("fs");
 const p = require("path");
 const { globSync } = require("glob");
 
-const components = globSync("./src/**/*.tsx", { dotRelative: true, ignore: ["./src/**/tests/*.tsx"] });
+const components = globSync("./src/**/*.tsx", { dotRelative: true, ignore: ["./src/utils/**/*.tsx", "./src/**/tests/*.tsx"] });
 components.push("./src/index.ts");
 
 const commonConfig = {
