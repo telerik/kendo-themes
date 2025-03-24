@@ -16,6 +16,11 @@
         &::after {
             box-shadow: none;
         }
+
+        &::before,
+        &::after {
+            box-shadow: none;
+        }
     }
 
 }
