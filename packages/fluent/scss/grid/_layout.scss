@@ -1254,14 +1254,6 @@
             display: flex;
             align-items: center;
         }
-
-        .k-columnmenu-drag-handle {
-            margin-inline-end: k-spacing(1.5);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            cursor: move;
-        }
     }
     .k-column-menu-tabbed {
         border-radius: var( --kendo-tabstrip-item-border-radius, #{$kendo-tabstrip-item-border-radius} ) var( --kendo-tabstrip-item-border-radius, #{$kendo-tabstrip-item-border-radius} ) 0 0;
