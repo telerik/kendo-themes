@@ -10,22 +10,44 @@
 
     // Calendar
     .k-calendar {
+        .k-content {
+            background-color: transparent;
+        }
 
         .k-focus .k-link {
-            @include fill(
-                $kendo-calendar-cell-hover-text,
-                $kendo-calendar-cell-hover-bg,
-                $kendo-calendar-cell-hover-border
-            );
-        }
-        .k-selected.k-focus .k-link {
-            @include fill(
-                $kendo-calendar-cell-selected-text,
-                if($kendo-enable-color-system, $kendo-calendar-cell-selected-bg, k-try-tint($kendo-calendar-cell-selected-bg)),
-                $kendo-calendar-cell-selected-border
-            );
+            background-color: color-mix(in srgb, k-color( on-app-surface ) 12%, transparent);
         }
 
+        .k-range-start {
+            background: linear-gradient(to right, transparent 0%, k-color(secondary) 50%, k-color(secondary) 100%);
+        }
+
+        .k-range-end {
+            background: linear-gradient(to left, transparent 0%, k-color(secondary) 50%, k-color(secondary) 100%);
+        }
+
+        .k-range-mid {
+            background-color: k-color( secondary );
+        }
+
+        // Calendar navigation
+        .k-calendar-navigation {
+            li:hover,
+            li.k-hover {
+                background-color: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent);
+            }
+        }
+    }
+
+    .k-rtl .k-calendar,
+    .k-calendar[dir="rtl"] {
+        .k-range-start {
+            background: linear-gradient(to left, transparent 0%, k-color(secondary) 50%, k-color(secondary) 100%);
+        }
+
+        .k-range-end {
+            background: linear-gradient(to right, transparent 0%, k-color(secondary) 50%, k-color(secondary) 100%);
+        }
     }
 
 }
