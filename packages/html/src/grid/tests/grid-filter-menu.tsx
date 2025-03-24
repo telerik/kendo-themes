@@ -34,8 +34,8 @@ export default () =>(
                             <DropdownList value="Is equal to" />
                             <NumericTextbox />
                             <ActionButtons alignment="stretched">
-                                <Button themeColor="primary">Filter</Button>
-                                <Button>Clear</Button>
+                                <Button icon="filter" themeColor="primary">Filter</Button>
+                                <Button icon="filter-clear">Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>

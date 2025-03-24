@@ -140,8 +140,8 @@ export default () =>(
                                         </div>
                                     </div>
                                     <ActionButtons alignment="stretched">
-                                        <Button themeColor="primary">Apply</Button>
-                                        <Button>Reset</Button>
+                                        <Button icon="check" themeColor="primary">Apply</Button>
+                                        <Button icon="arrow-rotate-ccw">Reset</Button>
                                     </ActionButtons>
                                 </>
                             }/>
@@ -189,8 +189,8 @@ export default () =>(
                                         </div>
                                     </div>
                                     <ActionButtons alignment="stretched">
-                                        <Button themeColor="primary">Apply</Button>
-                                        <Button>Reset</Button>
+                                        <Button icon="check" themeColor="primary">Apply</Button>
+                                        <Button icon="arrow-rotate-ccw">Reset</Button>
                                     </ActionButtons>
                                 </>
                             }/>

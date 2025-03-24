@@ -14,8 +14,8 @@ export const FilterMenuNormal = (props) => (
                 <DropdownList value="Contains" />
                 <Textbox placeholder="Filter..." />
                 <ActionButtons alignment="stretched">
-                    <Button themeColor="primary">Filter</Button>
-                    <Button>Clear</Button>
+                    <Button icon="filter" themeColor="primary">Filter</Button>
+                    <Button icon="filter-clear">Clear</Button>
                 </ActionButtons>
             </>
         }
