@@ -12,6 +12,7 @@
         block-size: var( --INTERNAL--kendo-calendar-height, min-content );
         border-width: var( --kendo-calendar-border-width, #{$kendo-calendar-border-width} );
         border-style: solid;
+        border-radius: var( --kendo-calendar-border-radius, #{$kendo-calendar-border-radius} );;
         box-sizing: border-box;
         outline: 0;
         font-family: var( --kendo-calendar-font-family, #{$kendo-calendar-font-family} );
@@ -182,7 +183,7 @@
         overflow: hidden;
 
         .k-today {
-            font-weight: bold;
+            font-weight: var( --kendo-calendar-today-font-weight, #{$kendo-calendar-today-font-weight} );
         }
 
 
