@@ -17,8 +17,8 @@ export const FilterMenuMultiCheck = (props) => (
                 </ColumnMenuMulticheckWrap>
                 <div className="k-filter-selected-items">0 selected items</div>
                 <ActionButtons alignment="stretched">
-                    <Button themeColor="primary">Apply</Button>
-                    <Button>Clear</Button>
+                    <Button icon="filter" themeColor="primary">Filter</Button>
+                    <Button icon="filter-clear">Clear</Button>
                 </ActionButtons>
             </>
         }

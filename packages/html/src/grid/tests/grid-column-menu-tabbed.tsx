@@ -112,8 +112,8 @@ export default () =>(
                                     </ColumnMenuMulticheckWrap>
                                     <div className="k-filter-selected-items">0 selected items</div>
                                     <ActionButtons alignment="stretched">
-                                        <Button themeColor="primary">Apply</Button>
-                                        <Button>Clear</Button>
+                                        <Button icon="check" themeColor="primary">Apply</Button>
+                                        <Button icon="arrow-rotate-ccw">Reset</Button>
                                     </ActionButtons>
                                 </FilterMenuMultiCheck>
                             </TabStripContent>
