@@ -129,6 +129,10 @@
             );
         }
 
+        .k-calendar-navigation-marker {
+            color: $kendo-calendar-navigation-marker-text;
+        }
+
         // Invalid
         &.k-invalid,
         &.k-invalid:hover,
