@@ -21,6 +21,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        border-radius: inherit;
         font-family: $kendo-list-font-family;
         font-size: $kendo-list-font-size;
         line-height: $kendo-list-line-height;
@@ -160,9 +161,6 @@
 
     // List item group label
     .k-list-item-group-label {
-        padding-block: 0;
-        padding-inline: .5em;
-        font-size: .75em;
         position: absolute;
         top: 0;
         inset-inline-end: 0;
@@ -197,7 +195,8 @@
     .k-list-filter {
         display: block;
         position: relative;
-        padding: $kendo-list-filter-padding;
+        padding-inline: $kendo-list-filter-padding-x;
+        padding-block: $kendo-list-filter-padding-y;
         box-sizing: border-box;
         flex: none;
     }
@@ -221,6 +220,12 @@
         $_group-item-padding-y: map.get( $size-props, group-item-padding-y );
         $_group-item-font-size: map.get( $size-props, group-item-font-size );
         $_group-item-line-height: map.get( $size-props, group-item-line-height );
+        $_group-label-padding-x: map.get( $size-props, item-group-label-padding-x );
+        $_group-label-padding-y: map.get( $size-props, item-group-label-padding-y );
+        $_group-label-font-size: map.get( $size-props, item-group-label-font-size );
+        $_group-label-line-height: map.get( $size-props, item-group-label-line-height );
+        $_filter-padding-x: map.get( $size-props, filter-padding-x );
+        $_filter-padding-y: map.get( $size-props, filter-padding-y );
 
         .k-list-#{$size} {
             font-size: $_font-size;
@@ -232,6 +237,11 @@
                 padding-inline: $_header-padding-x;
                 font-size: $_header-font-size;
                 line-height: $_header-line-height;
+            }
+
+            .k-list-filter {
+                padding-inline: $_filter-padding-x;
+                padding-block: $_filter-padding-y;
             }
 
             .k-list-item {
@@ -246,6 +256,13 @@
                 padding-inline: $_group-item-padding-x;
                 font-size: $_group-item-font-size;
                 line-height: $_group-item-line-height;
+            }
+
+            .k-list-item-group-label {
+                padding-block: $_group-label-padding-y;
+                padding-inline: $_group-label-padding-x;
+                font-size: $_group-label-font-size;
+                line-height: $_group-label-line-height;
             }
         }
     }
