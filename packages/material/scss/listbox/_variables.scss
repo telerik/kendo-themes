@@ -30,13 +30,13 @@ $kendo-listbox-line-height: $kendo-list-md-line-height !default;
 
 /// The text color of the ListBox.
 /// @group listbox
-$kendo-listbox-text: $kendo-component-text !default;
+$kendo-listbox-text: k-color( on-app-surface ) !default;
 /// The background color of the ListBox.
 /// @group listbox
-$kendo-listbox-bg: $kendo-component-bg !default;
+$kendo-listbox-bg: k-color( app-surface ) !default;
 /// The border color of the ListBox.
 /// @group listbox
-$kendo-listbox-border: $kendo-component-border !default;
+$kendo-listbox-border: k-color( border ) !default;
 
 /// The inline padding of the ListBox item.
 /// @group listbox
