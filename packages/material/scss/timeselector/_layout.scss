@@ -1,5 +1,6 @@
 @use "@progress/kendo-theme-core/scss/components/timeselector/_layout.scss" as *;
 @use "../core/_index.scss" as *;
+@use "./_variables.scss" as *;
 
 
 @mixin kendo-time-selector--layout() {
@@ -8,6 +9,14 @@
     .k-time-list-wrapper {
         .k-title {
             font-weight: var( --kendo-font-weight, normal );
+        }
+    }
+
+    // Time selector header
+    .k-time-header,
+    .k-time-selector-header {
+        .k-time-now {
+            border-width: $kendo-time-selector-border-width;
         }
     }
 
