@@ -6,6 +6,7 @@ export * from './list-header';
 export * from './list-group';
 export * from './list-group-item';
 export * from './list-option-label';
+export * from './list-custom-value';
 export * from "./templates/list-normal";
 export * from "./templates/list-virtualization";
 export * from "./templates/list-grouping";
