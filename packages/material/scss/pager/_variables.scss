@@ -130,7 +130,7 @@ $kendo-pager-number-border-radius: $kendo-pager-item-border-radius !default;
 $kendo-pager-item-focus-opacity: .12 !default;
 /// The background color of the focused Pager items.
 /// @group pager
-$kendo-pager-item-focus-bg: rgba($kendo-list-item-hover-bg, $kendo-pager-item-focus-opacity) !default;
+$kendo-pager-item-focus-bg: transparent  !default; // ToDo - checkrgba($kendo-list-item-hover-bg, $kendo-pager-item-focus-opacity)
 /// The box shadow of the focused Pager items.
 /// @group pager
 $kendo-pager-item-focus-shadow: unset !default;
