@@ -18,6 +18,7 @@ export type KendoListProps = KendoListOptions & {
     virtualization?: boolean;
     children?: React.JSX.Element[];
     optionLabel?: React.JSX.Element;
+    customValue?: React.JSX.Element;
 };
 
 export type KendoListState = { [K in (typeof states)[number]]?: boolean };
@@ -36,6 +37,7 @@ export const List = (
         virtualization,
         children,
         optionLabel,
+        customValue,
         ...other
     } = props;
 
@@ -103,6 +105,7 @@ export const List = (
                 }
             )}>
             {optionLabel}
+            {customValue}
             {listGroup}
             {listContent}
         </div>
