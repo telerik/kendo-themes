@@ -5,7 +5,8 @@ export const COLUMNMENUITEM_ACTION_CLASSNAME = `k-columnmenu-item-action`;
 
 export enum columnMenuItemActionType {
     REMOVE = 'remove',
-    ADD = 'add'
+    ADD = 'add',
+    DRAG = 'drag'
 };
 
 export type KendoColumnMenuItemActionProps = {
@@ -29,6 +30,9 @@ export const ColumnMenuItemAction = (
             break;
         case columnMenuItemActionType.ADD:
             icon = <Icon themeColor="primary" icon="plus-circle" size="medium" />;
+            break;
+        case columnMenuItemActionType.DRAG:
+            icon = <Icon icon="handle-drag" size="medium" />;
             break;
         default:
             return <Icon icon={type} size="medium" />;
