@@ -23,10 +23,12 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <TimePickerAdaptive />
+                <div className="k-label">Label</div>
+                <TimePickerAdaptive adaptiveTitle="Label" />
             </section>
             <section>
-                <TimePickerAdaptive adaptiveSettings={{ fullscreen: true }} />
+                <div className="k-label">Label</div>
+                <TimePickerAdaptive adaptiveTitle="Label" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

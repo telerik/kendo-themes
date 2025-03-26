@@ -23,10 +23,24 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <MultiSelectTreeAdaptive />
+                <div className="k-label">Label</div>
+                <MultiSelectTreeAdaptive adaptiveTitle="Label" placeholder="Placeholder" />
             </section>
             <section>
-                <MultiSelectTreeAdaptive adaptiveSettings={{ fullscreen: true }} />
+                <div className="k-label">Label</div>
+                <MultiSelectTreeAdaptive adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
+            </section>
+
+            <span>partial (filter)</span>
+            <span>full screen (filter)</span>
+
+            <section>
+                 <div className="k-label">Label</div>
+                <MultiSelectTreeAdaptive adaptiveFilter adaptiveTitle="Label" placeholder="Placeholder" />
+            </section>
+            <section>
+                 <div className="k-label">Label</div>
+                <MultiSelectTreeAdaptive adaptiveFilter adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>
