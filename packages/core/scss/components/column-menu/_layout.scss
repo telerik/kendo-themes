@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "../../spacing/index.import.scss" as *;
 @use "_variables.scss" as *;
 
 @mixin kendo-column-menu--layout-base() {
@@ -23,6 +24,28 @@
                 line-height: $_line-height;
             }
         }
+    }
+
+    .k-columnmenu-item-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: k-spacing(2);
+        margin-block: calc( k-spacing(1) * -1);
+        pointer-events: none;
+    }
+
+    .k-columnmenu-item-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        padding: k-spacing(1);
+    }
+
+    .k-columnmenu-item-drag-action {
+        pointer-events: auto;
+        cursor: move;
     }
 }
 
