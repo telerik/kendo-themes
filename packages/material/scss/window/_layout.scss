@@ -3,4 +3,18 @@
 
 @mixin kendo-window--layout() {
     @include kendo-window--layout-base();
+
+    .k-window-minimized {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .k-window-title,
+    .k-window-titlebar-actions {
+        margin-block: 0;
+    }
+
+    .k-window-title {
+        padding-block: 0;
+    }
 }

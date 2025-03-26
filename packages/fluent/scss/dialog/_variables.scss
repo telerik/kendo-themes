@@ -48,6 +48,10 @@ $kendo-dialog-buttongroup-spacing: k-spacing(3) !default;
 /// @group dialog
 $kendo-dialog-button-spacing: k-spacing(2) !default; // $kendo-actions-padding-y
 
+/// The background color of the Dialog.
+/// @group dialog
+$kendo-dialog-bg: k-color( app-surface ) !default;
+
 /// The box shadow around the Dialog.
 /// @group dialog
 $kendo-dialog-shadow: var( --kendo-box-shadow-depth-8, none ) !default;
