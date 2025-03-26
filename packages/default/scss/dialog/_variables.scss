@@ -27,6 +27,10 @@ $kendo-dialog-buttongroup-border-width: 1px !default;
 /// @group dialog
 $kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
 
+/// The background color of the Dialog.
+/// @group dialog
+$kendo-dialog-bg: k-color( app-surface ) !default;
+
 /// The theme colors map for the Dialog.
 /// @group dialog
 $kendo-dialog-theme-colors: (
@@ -43,5 +47,6 @@ $kendo-dialog-theme-colors: (
     $kendo-dialog-buttongroup-padding-y: $kendo-dialog-buttongroup-padding-y,
     $kendo-dialog-buttongroup-border-width: $kendo-dialog-buttongroup-border-width,
     $kendo-dialog-button-spacing: $kendo-dialog-button-spacing,
+    $kendo-dialog-bg: $kendo-dialog-bg,
     $kendo-dialog-theme-colors: $kendo-dialog-theme-colors
 );
