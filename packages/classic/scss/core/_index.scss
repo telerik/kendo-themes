@@ -53,6 +53,3 @@
     $kendo-border-radii: $kendo-border-radii !default,
 );
 
-// Backward compatibility
-@forward "./color-system/_swatch-legacy.scss";
-
