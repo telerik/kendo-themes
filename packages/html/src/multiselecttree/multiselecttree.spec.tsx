@@ -50,6 +50,9 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     dir?: 'ltr' | 'rtl';
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;
+    adaptiveTitle?: string;
+    adaptiveSubtitle?: string;
+    adaptiveFilter?: boolean;
 };
 
 export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boolean };
@@ -87,6 +90,9 @@ export const MultiSelectTree = (
         dir,
         adaptive,
         adaptiveSettings,
+        adaptiveTitle,
+        adaptiveSubtitle,
+        adaptiveFilter,
         ...other
     } = props;
 
@@ -151,10 +157,12 @@ export const MultiSelectTree = (
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            filter
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
-                            title="Select value">
-                        </ActionSheetHeader>
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            filter={adaptiveFilter}
+                            inputPlaceholder={placeholder}
+                            title={adaptiveTitle}
+                            subtitle={adaptiveSubtitle}
+                        />
                     }
                 >
                     <Treeview size="large">

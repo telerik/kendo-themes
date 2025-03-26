@@ -24,10 +24,12 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <DateTimePickerAdaptive tab="date" />
+                 <div className="k-label">Label</div>
+                <DateTimePickerAdaptive adaptiveTitle="Label" tab="date" />
             </section>
             <section>
-                <DateTimePickerAdaptive tab="time" adaptiveSettings={{ fullscreen: true }} />
+                 <div className="k-label">Label</div>
+                <DateTimePickerAdaptive adaptiveTitle="Label" tab="time" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

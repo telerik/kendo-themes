@@ -48,6 +48,8 @@ export type KendoColorPickerProps = KendoColorPickerOptions & {
     opened?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;
+    adaptiveTitle?: string;
+    adaptiveSubtitle?: string;
 };
 
 export type KendoColorPickerState = { [K in (typeof states)[number]]?: boolean };
@@ -84,6 +86,8 @@ export const ColorPicker = (
         opened,
         adaptive,
         adaptiveSettings,
+        adaptiveTitle,
+        adaptiveSubtitle,
         ...other
     } = props;
 
@@ -139,9 +143,10 @@ export const ColorPicker = (
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
-                            title="Choose Color">
-                        </ActionSheetHeader>
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            title={adaptiveTitle}
+                            subtitle={adaptiveSubtitle}
+                        />
                     }
                     footer={
                         <ActionSheetFooter>

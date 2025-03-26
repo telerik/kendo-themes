@@ -24,10 +24,24 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <DropdownTreeAdaptive />
+                 <div className="k-label">Label</div>
+                <DropdownTreeAdaptive adaptiveTitle="Label" />
             </section>
             <section>
-                <DropdownTreeAdaptive adaptiveSettings={{ fullscreen: true }} />
+                 <div className="k-label">Label</div>
+                <DropdownTreeAdaptive adaptiveTitle="Label" adaptiveSettings={{ fullscreen: true }} />
+            </section>
+
+            <span>partial (filter)</span>
+            <span>full screen (filter)</span>
+
+            <section>
+                 <div className="k-label">Label</div>
+                <DropdownTreeAdaptive adaptiveFilter adaptiveTitle="Label" />
+            </section>
+            <section>
+                 <div className="k-label">Label</div>
+                <DropdownTreeAdaptive adaptiveFilter adaptiveTitle="Label" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

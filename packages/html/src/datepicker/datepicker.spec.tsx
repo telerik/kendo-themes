@@ -52,6 +52,8 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
     opened?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;
+    adaptiveTitle?: string;
+    adaptiveSubtitle?: string;
     dir?: 'ltr' | 'rtl';
 };
 
@@ -81,6 +83,8 @@ export const DatePicker = (
         opened,
         adaptive,
         adaptiveSettings,
+        adaptiveTitle,
+        adaptiveSubtitle,
         dir,
         ...other
     } = props;
@@ -137,10 +141,10 @@ export const DatePicker = (
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
-                            title="Select Dates"
-                            subTitle="DD / MM / YY">
-                        </ActionSheetHeader>
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            title={adaptiveTitle}
+                            subtitle={adaptiveSubtitle}
+                        />
                     }
                 >
                     <CalendarNormal size="large"></CalendarNormal>

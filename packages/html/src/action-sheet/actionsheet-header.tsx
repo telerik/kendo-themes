@@ -1,16 +1,21 @@
 import { Searchbox } from '../searchbox';
 import { classNames } from '../misc';
+import { Textbox } from '../textbox';
 
 export const ACTIONSHEETHEADER_CLASSNAME = `k-actionsheet-titlebar`;
 
 export type KendoActionSheetHeaderProps = {
     title?: string;
-    subTitle?: string;
+    subtitle?: string;
     actionsStart?: React.JSX.Element | React.JSX.Element[];
     actionsEnd?: React.JSX.Element | React.JSX.Element[];
     filter?: boolean;
+    input?: boolean;
+    inputPlaceholder?: string;
     adaptive?: boolean;
 }
+
+const defaultOptions = {};
 
 export const ActionSheetHeader = (
     props: KendoActionSheetHeaderProps &
@@ -18,10 +23,12 @@ export const ActionSheetHeader = (
 ) => {
     const {
         title,
-        subTitle,
+        subtitle,
         actionsStart,
         actionsEnd,
         filter,
+        input,
+        inputPlaceholder,
         adaptive,
         children,
         ...other
@@ -34,18 +41,18 @@ export const ActionSheetHeader = (
                 props.className,
                 ACTIONSHEETHEADER_CLASSNAME
             )}>
-            <div className="k-actionsheet-titlebar-group k-hbox">
+            <div className="k-actionsheet-titlebar-group">
                 {actionsStart && (
                     <div className="k-actionsheet-actions">
                         {actionsStart}
                     </div>
                 )}
-                {!children && (title || subTitle) && (
+                {!children &&
                     <div className="k-actionsheet-title">
                         {title && <div className="k-text-center">{title}</div>}
-                        {subTitle && <div className="k-actionsheet-subtitle k-text-center">{subTitle}</div>}
+                        {subtitle && <div className="k-actionsheet-subtitle k-text-center">{subtitle}</div>}
                     </div>
-                )}
+                }
                 {children && <div className="k-actionsheet-title">{children}</div>}
                 {actionsEnd && (
                     <div className="k-actionsheet-actions">
@@ -53,11 +60,20 @@ export const ActionSheetHeader = (
                     </div>
                 )}
             </div>
-            {filter && (
+            {(input || filter) && (
                 <div className="k-actionsheet-titlebar-group k-actionsheet-filter">
-                    <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} />
+                    {input ? (
+                        <Textbox placeholder={inputPlaceholder} size={adaptive ? "large" : "medium"} />
+                    ) : (
+                        <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} />
+                    )}
                 </div>
             )}
         </div>
     );
 };
+
+ActionSheetHeader.className = ACTIONSHEETHEADER_CLASSNAME;
+ActionSheetHeader.defaultOptions = defaultOptions;
+
+export default ActionSheetHeader;

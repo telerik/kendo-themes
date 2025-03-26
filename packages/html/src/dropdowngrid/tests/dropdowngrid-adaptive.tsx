@@ -23,10 +23,12 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <DropdownGridAdaptive />
+                 <div className="k-label">Label</div>
+                <DropdownGridAdaptive adaptiveTitle="Label" placeholder="Placeholder" />
             </section>
             <section>
-                <DropdownGridAdaptive adaptiveSettings={{ fullscreen: true }} />
+                 <div className="k-label">Label</div>
+                <DropdownGridAdaptive adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

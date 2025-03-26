@@ -1,16 +1,14 @@
-import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
-import { Button } from '../../button';
-import { List, ListItem } from '../../list';
-import DropdownList from '../dropdownlist.spec';
+import { DropdownListAdaptive } from '../templates/dropdownlist-adaptive';
 
 
 const styles = `
     #test-area {
-        --kendo-actionsheet-height: 400px;
-        --kendo-actionsheet-max-height: 400px;
+        --kendo-actionsheet-height: 500px;
+        --kendo-actionsheet-max-height: 500px;
     }
     #test-area > section {
         height: 600px;
+        outline: 1px dotted;
         overflow: hidden;
         position: relative;
         transform: translateZ(0);
@@ -26,63 +24,24 @@ export default () => (
             <span>full screen</span>
 
             <section>
-                <DropdownList />
-                <ActionSheet adaptive={true}
-                    header={
-                        <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actionsEnd={<Button icon="x" size="large" fillMode="flat" />} filter={true} />
-                    }
-                    footer={
-                        <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" />
-                            <Button text="Select" size="large" themeColor="primary" />
-                        </ActionSheetFooter>
-                    }
-                >
-                    <div className="k-list-container">
-                        <List size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="Hover" hover />
-                            <ListItem text="Focus" focus />
-                            <ListItem text="Selected" selected />
-                            <ListItem text="Hover selected" hover selected />
-                            <ListItem text="Disabled" disabled />
-                            <ListItem text="List item with very long text, that spans on multiple lines" />
-                            <ListItem text="Checkbox" showCheckbox />
-                            <ListItem text="Icon" showIcon iconName="gear" />
-                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="gear" />
-                        </List>
-                    </div>
-                </ActionSheet>
+                <div className="k-label">Label</div>
+                <DropdownListAdaptive adaptiveTitle="Label" />
+            </section>
+            <section>
+                <div className="k-label">Label</div>
+                <DropdownListAdaptive adaptiveTitle="Label" adaptiveSettings={{ fullscreen: true }} />
             </section>
 
+            <span>partial (filter)</span>
+            <span>full screen (filter)</span>
+
             <section>
-                <DropdownList />
-                <ActionSheet adaptive={true} fullscreen={true}
-                    header={
-                        <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actionsEnd={<Button icon="x" size="large" fillMode="flat" />} filter={true} />
-                    }
-                    footer={
-                        <ActionSheetFooter>
-                            <Button text="Cancel" size="large" themeColor="base" />
-                            <Button text="Select" size="large" themeColor="primary" />
-                        </ActionSheetFooter>
-                    }
-                >
-                    <div className="k-list-container">
-                        <List size="large">
-                            <ListItem text="List item" />
-                            <ListItem text="Hover" hover />
-                            <ListItem text="Focus" focus />
-                            <ListItem text="Selected" selected />
-                            <ListItem text="Hover selected" hover selected />
-                            <ListItem text="Disabled" disabled />
-                            <ListItem text="List item with very long text, that spans on multiple lines" />
-                            <ListItem text="Checkbox" showCheckbox />
-                            <ListItem text="Icon" showIcon iconName="gear" />
-                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="gear" />
-                        </List>
-                    </div>
-                </ActionSheet>
+                <div className="k-label">Label</div>
+                <DropdownListAdaptive adaptiveFilter adaptiveTitle="Label" />
+            </section>
+            <section>
+                <div className="k-label">Label</div>
+                <DropdownListAdaptive adaptiveFilter adaptiveTitle="Label" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
 

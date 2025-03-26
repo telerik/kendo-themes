@@ -14,7 +14,7 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -23,10 +23,12 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <ComboboxAdaptive />
+                <div className="k-label">Label</div>
+                <ComboboxAdaptive adaptiveTitle="Label" placeholder="Placeholder" />
             </section>
             <section>
-                <ComboboxAdaptive adaptiveSettings={{ fullscreen: true }} />
+                <div className="k-label">Label</div>
+                <ComboboxAdaptive adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

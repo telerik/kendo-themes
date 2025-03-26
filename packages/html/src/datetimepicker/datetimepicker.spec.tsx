@@ -48,6 +48,8 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
     dir?: 'ltr' | 'rtl';
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;
+    adaptiveTitle?: string;
+    adaptiveSubtitle?: string;
 };
 
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -85,6 +87,8 @@ export const DateTimePicker = (
         dir,
         adaptive,
         adaptiveSettings,
+        adaptiveTitle,
+        adaptiveSubtitle,
         ...other
     } = props;
 
@@ -140,16 +144,16 @@ export const DateTimePicker = (
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
-                            title="Select Date & Time"
-                            subTitle="DD / MM / YY">
-                        </ActionSheetHeader>
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            title={adaptiveTitle}
+                            subtitle={adaptiveSubtitle}
+                        />
                     }
                     footer={
 
                         <ActionSheetFooter>
-                            <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
                             <Button text="Cancel" size="large" themeColor="base" className="k-time-cancel" />
+                            <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
                         </ActionSheetFooter>
                     }
                 >

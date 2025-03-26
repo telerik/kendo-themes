@@ -53,6 +53,8 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     opened?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;
+    adaptiveTitle?: string;
+    adaptiveSubtitle?: string;
 };
 
 export type KendoMultiSelectState = { [K in (typeof states)[number]]?: boolean };
@@ -92,6 +94,8 @@ export const MultiSelect = (
         opened,
         adaptive,
         adaptiveSettings,
+        adaptiveTitle,
+        adaptiveSubtitle,
         ...other
     } = props;
 
@@ -165,10 +169,12 @@ export const MultiSelect = (
                 <ActionSheet adaptive={true} {...adaptiveSettings}
                     header={
                         <ActionSheetHeader
-                            actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
-                            filter={true}
-                            title="Select Item">
-                        </ActionSheetHeader>
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            input={true}
+                            inputPlaceholder={placeholder}
+                            title={adaptiveTitle}
+                            subtitle={adaptiveSubtitle}
+                        />
                     }
                 >
                     <div className="k-list-container">
