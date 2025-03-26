@@ -9,6 +9,7 @@
         position: absolute;
         overflow: hidden;
         z-index: 100;
+        outline: none;
 
         &-fixed {
             position: fixed;
