@@ -5,6 +5,7 @@
 @mixin kendo-dialog--theme() {
 
     .k-dialog {
+        background-color: var( --kendo-dialog-bg, #{$kendo-dialog-bg} );
         @include box-shadow( var( --kendo-dialog-shadow, #{$kendo-dialog-shadow} ) );
     }
 
