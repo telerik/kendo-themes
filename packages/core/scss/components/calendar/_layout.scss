@@ -135,7 +135,7 @@
     .k-calendar-header {
         padding-block: $kendo-calendar-header-padding-y;
         padding-inline: $kendo-calendar-header-padding-x;
-        min-width: ($kendo-calendar-cell-size * 8);
+        min-width: var( --INTERNAL--kendo-calendar-view-width, #{$kendo-calendar-view-width});
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -167,7 +167,7 @@
         padding-block: 0;
         padding-inline: $kendo-calendar-header-padding-x;
         // setting width / height prevents layout changes in meta views
-        width: $kendo-calendar-view-width;
+        width: var( --INTERNAL--kendo-calendar-view-width, #{$kendo-calendar-view-width});
         inline-size: var( --INTERNAL--kendo-calendar-view-width, #{$kendo-calendar-view-width});
         min-height: $kendo-calendar-view-height;
         box-sizing: content-box;
@@ -188,8 +188,8 @@
         $_month-cell-size: $kendo-calendar-cell-size;
 
         .k-calendar-td {
-            width: $_month-cell-size;
-            height: $_month-cell-size;
+            width: var( --INTERNAL--kendo-calendar-cell-size, #{$_month-cell-size} );
+            height: var( --INTERNAL--kendo-calendar-cell-size, #{$_month-cell-size} );
             inline-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_month-cell-size} );
             block-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_month-cell-size} );
         }
@@ -202,8 +202,8 @@
         $_year-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
-            width: $_year-cell-size;
-            height: $_year-cell-size;
+            width: var( --INTERNAL--kendo-calendar-cell-size, #{$_year-cell-size} );
+            height: var( --INTERNAL--kendo-calendar-cell-size, #{$_year-cell-size} );
             inline-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_year-cell-size} );
             block-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_year-cell-size} );
         }
@@ -216,8 +216,8 @@
         $_decade-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
-            width: $_decade-cell-size;
-            height: $_decade-cell-size;
+            width: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );
+            height: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );;
             inline-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );
             block-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_decade-cell-size} );
         }
@@ -230,8 +230,8 @@
         $_century-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
-            width: $_century-cell-size;
-            height: $_century-cell-size;
+            width: var( --INTERNAL--kendo-calendar-cell-size, #{$_century-cell-size} );
+            height: var( --INTERNAL--kendo-calendar-cell-size, #{$_century-cell-size} );
             inline-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_century-cell-size} );
             block-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_century-cell-size} );
         }
