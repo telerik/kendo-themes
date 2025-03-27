@@ -61,10 +61,10 @@ $kendo-tabstrip-wrapper-border: null !default;
 $kendo-tabstrip-bg: null !default;
 /// The text color of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-text: $kendo-component-text !default;
+$kendo-tabstrip-text: k-color(on-app-surface) !default;
 /// The border color of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-border: $kendo-component-border !default;
+$kendo-tabstrip-border: k-color(border) !default;
 
 /// The horizontal padding of the TabStrip items.
 /// @group tabstrip
@@ -105,7 +105,7 @@ $kendo-tabstrip-lg-item-padding-y: k-spacing(2.5) !default;
 $kendo-tabstrip-item-bg: null !default;
 /// The text color of the TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-text: $kendo-link-text !default;
+$kendo-tabstrip-item-text: k-color(primary) !default;
 /// The border color of the TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-border: null !default;
@@ -118,23 +118,23 @@ $kendo-tabstrip-item-gradient: null !default;
 $kendo-tabstrip-item-hover-bg: null !default;
 /// The text color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-text: $kendo-link-hover-text !default;
+$kendo-tabstrip-item-hover-text: k-color(primary-hover) !default;
 /// The border color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-border: if($kendo-enable-color-system, k-color( base-subtle ), #e9ecef) !default;
+$kendo-tabstrip-item-hover-border: k-color( base-subtle ) !default;
 /// The gradient of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-gradient: null !default;
 
 /// The background color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-bg: $kendo-component-bg !default;
+$kendo-tabstrip-item-selected-bg: k-color(app-surface) !default;
 /// The text color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-text: $kendo-component-text !default;
+$kendo-tabstrip-item-selected-text: k-color(on-app-surface) !default;
 /// The border color of the selected TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-selected-border: $kendo-component-border !default;
+$kendo-tabstrip-item-selected-border: k-color(border) !default;
 /// The gradient of the selected TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-selected-gradient: null !default;
@@ -155,7 +155,7 @@ $kendo-tabstrip-item-dragging-shadow: k-elevation(3) !default;
 $kendo-tabstrip-item-disabled-bg: null !default;
 /// The text color of the disabled TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-disabled-text: $kendo-component-text !default;
+$kendo-tabstrip-item-disabled-text: k-color(on-app-surface) !default;
 /// The border color of the disabled TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-disabled-border: null !default;
@@ -188,20 +188,20 @@ $kendo-tabstrip-content-border-width: $kendo-tabstrip-border-width !default;
 
 /// The background color of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-bg: $kendo-component-bg !default;
+$kendo-tabstrip-content-bg: k-color(app-surface) !default;
 /// The text color of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-text: $kendo-component-text !default;
+$kendo-tabstrip-content-text: k-color(on-app-surface) !default;
 /// The border color of the TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-border: $kendo-component-border !default;
+$kendo-tabstrip-content-border: k-color(border) !default;
 /// The border color of the focused TabStrip content.
 /// @group tabstrip
-$kendo-tabstrip-content-focus-border: $kendo-component-text !default;
+$kendo-tabstrip-content-focus-border: k-color(on-app-surface) !default;
 
 /// The left and right scroll overlay of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-scroll-overlay: if($kendo-enable-color-system, k-color( app-surface ), rgba( $kendo-color-white, 0)), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0)) !default;
+$kendo-tabstrip-scroll-overlay: k-color( app-surface ), color-mix(in srgb, k-color( app-surface ) 0%, transparent) !default;
 
 /// The size map of the TabStrip.
 /// @group tabstrip
