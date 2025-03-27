@@ -33,106 +33,108 @@
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
                         <div class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
-                            <div class="k-actionsheet-titlebar">
-                                <div class="k-actionsheet-titlebar-group k-hbox">
-                                    <div class="k-actionsheet-title">
-                                        <div class="k-text-center">Select Item</div>
+                            <div class="k-actionsheet-view">
+                                <div class="k-actionsheet-titlebar">
+                                    <div class="k-actionsheet-titlebar-group k-hbox">
+                                        <div class="k-actionsheet-title">
+                                            <div class="k-text-center">Select Item</div>
+                                        </div>
+                                        <div class="k-actionsheet-actions">
+                                            <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="k-actionsheet-actions">
-                                        <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
+                                        <span class="k-searchbox k-input k-input-lg k-input-solid k-rounded-md">
+                                            <span class="k-input-icon k-icon k-svg-icon k-svg-i-search">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                    <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192"></path>
                                                 </svg>
                                             </span>
-                                        </button>
+                                            <input type="text" class="k-input-inner" placeholder="Filter" autocomplete="off" value="">
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
-                                    <span class="k-searchbox k-input k-input-lg k-input-solid k-rounded-md">
-                                        <span class="k-input-icon k-icon k-svg-icon k-svg-i-search">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192"></path>
-                                            </svg>
-                                        </span>
-                                        <input type="text" class="k-input-inner" placeholder="Filter" autocomplete="off" value="">
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="k-actionsheet-content">
-                                <div class="k-list-container">
-                                    <div class="k-data-table k-table-lg">
-                                        <div class="k-table-header">
-                                            <div class="k-table-header-wrap">
-                                                <table class="k-table">
-                                                    <colgroup>
-                                                        <col style="width: 50px;">
-                                                        <col style="width: 160px;">
-                                                        <col>
-                                                    </colgroup>
-                                                    <thead class="k-table-thead">
-                                                        <tr class="k-table-row">
-                                                            <th class="k-table-th">ID</th>
-                                                            <th class="k-table-th">Name</th>
-                                                            <th class="k-table-th">Job Title</th>
-                                                        </tr>
-                                                    </thead>
-                                                </table>
+                                <div class="k-actionsheet-content">
+                                    <div class="k-list-container">
+                                        <div class="k-data-table k-table-lg">
+                                            <div class="k-table-header">
+                                                <div class="k-table-header-wrap">
+                                                    <table class="k-table">
+                                                        <colgroup>
+                                                            <col style="width: 50px;">
+                                                            <col style="width: 160px;">
+                                                            <col>
+                                                        </colgroup>
+                                                        <thead class="k-table-thead">
+                                                            <tr class="k-table-row">
+                                                                <th class="k-table-th">ID</th>
+                                                                <th class="k-table-th">Name</th>
+                                                                <th class="k-table-th">Job Title</th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="k-table-group-sticky-header">
+                                                <span class="k-table-th">Initial group</span>
+                                            </div>
+                                            <div class="k-table-body k-table-scroller">
+                                                <ul class="k-table k-table-list">
+                                                    <li class="k-table-row">
+                                                        <span class="k-table-td" style="width: 50px;">1</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 1.2</span>
+                                                        <span class="k-table-td">Data 1.3</span>
+                                                    </li>
+                                                    <li class="k-table-row k-table-alt-row">
+                                                        <span class="k-table-td" style="width: 50px;">2</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 2.2 (alt)</span>
+                                                        <span class="k-table-td">Data 2.3</span>
+                                                    </li>
+                                                    <li class="k-table-row">
+                                                        <span class="k-table-td" style="width: 50px;">3</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 3.2</span>
+                                                        <span class="k-table-td">Data 3.3</span>
+                                                    </li>
+                                                    <li class="k-table-group-row">
+                                                        <span class="k-table-th">Group</span>
+                                                    </li>
+                                                    <li class="k-table-row">
+                                                        <span class="k-table-td" style="width: 50px;">4</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 4.2</span>
+                                                        <span class="k-table-td">Data 4.3</span>
+                                                    </li>
+                                                    <li class="k-table-row k-table-alt-row">
+                                                        <span class="k-table-td" style="width: 50px;">5</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 5.2 (alt)</span>
+                                                        <span class="k-table-td">Data 5.3</span>
+                                                    </li>
+                                                    <li class="k-table-row">
+                                                        <span class="k-table-td" style="width: 50px;">6</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 6.2</span>
+                                                        <span class="k-table-td">Data 6.3</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="k-table-footer">
+                                                <span class="k-table-td">30 records in total</span>
                                             </div>
                                         </div>
-                                        <div class="k-table-group-sticky-header">
-                                            <span class="k-table-th">Initial group</span>
-                                        </div>
-                                        <div class="k-table-body k-table-scroller">
-                                            <ul class="k-table k-table-list">
-                                                <li class="k-table-row">
-                                                    <span class="k-table-td" style="width: 50px;">1</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 1.2</span>
-                                                    <span class="k-table-td">Data 1.3</span>
-                                                </li>
-                                                <li class="k-table-row k-table-alt-row">
-                                                    <span class="k-table-td" style="width: 50px;">2</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 2.2 (alt)</span>
-                                                    <span class="k-table-td">Data 2.3</span>
-                                                </li>
-                                                <li class="k-table-row">
-                                                    <span class="k-table-td" style="width: 50px;">3</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 3.2</span>
-                                                    <span class="k-table-td">Data 3.3</span>
-                                                </li>
-                                                <li class="k-table-group-row">
-                                                    <span class="k-table-th">Group</span>
-                                                </li>
-                                                <li class="k-table-row">
-                                                    <span class="k-table-td" style="width: 50px;">4</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 4.2</span>
-                                                    <span class="k-table-td">Data 4.3</span>
-                                                </li>
-                                                <li class="k-table-row k-table-alt-row">
-                                                    <span class="k-table-td" style="width: 50px;">5</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 5.2 (alt)</span>
-                                                    <span class="k-table-td">Data 5.3</span>
-                                                </li>
-                                                <li class="k-table-row">
-                                                    <span class="k-table-td" style="width: 50px;">6</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 6.2</span>
-                                                    <span class="k-table-td">Data 6.3</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="k-table-footer">
-                                            <span class="k-table-td">30 records in total</span>
-                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
-                                    <span class="k-button-text">Apply</span>
-                                </button>
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
-                                    <span class="k-button-text">Cancel</span>
-                                </button>
+                                <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                    <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Apply</span>
+                                    </button>
+                                    <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Cancel</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -145,106 +147,108 @@
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
                         <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                            <div class="k-actionsheet-titlebar">
-                                <div class="k-actionsheet-titlebar-group k-hbox">
-                                    <div class="k-actionsheet-title">
-                                        <div class="k-text-center">Select Item</div>
+                            <div class="k-actionsheet-view">
+                                <div class="k-actionsheet-titlebar">
+                                    <div class="k-actionsheet-titlebar-group k-hbox">
+                                        <div class="k-actionsheet-title">
+                                            <div class="k-text-center">Select Item</div>
+                                        </div>
+                                        <div class="k-actionsheet-actions">
+                                            <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="k-actionsheet-actions">
-                                        <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
+                                    <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
+                                        <span class="k-searchbox k-input k-input-lg k-input-solid k-rounded-md">
+                                            <span class="k-input-icon k-icon k-svg-icon k-svg-i-search">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                                    <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192"></path>
                                                 </svg>
                                             </span>
-                                        </button>
+                                            <input type="text" class="k-input-inner" placeholder="Filter" autocomplete="off" value="">
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="k-actionsheet-titlebar-group k-actionsheet-filter">
-                                    <span class="k-searchbox k-input k-input-lg k-input-solid k-rounded-md">
-                                        <span class="k-input-icon k-icon k-svg-icon k-svg-i-search">
-                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192"></path>
-                                            </svg>
-                                        </span>
-                                        <input type="text" class="k-input-inner" placeholder="Filter" autocomplete="off" value="">
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="k-actionsheet-content">
-                                <div class="k-list-container">
-                                    <div class="k-data-table k-table-lg">
-                                        <div class="k-table-header">
-                                            <div class="k-table-header-wrap">
-                                                <table class="k-table">
-                                                    <colgroup>
-                                                        <col style="width: 50px;">
-                                                        <col style="width: 160px;">
-                                                        <col>
-                                                    </colgroup>
-                                                    <thead class="k-table-thead">
-                                                        <tr class="k-table-row">
-                                                            <th class="k-table-th">ID</th>
-                                                            <th class="k-table-th">Name</th>
-                                                            <th class="k-table-th">Job Title</th>
-                                                        </tr>
-                                                    </thead>
-                                                </table>
+                                <div class="k-actionsheet-content">
+                                    <div class="k-list-container">
+                                        <div class="k-data-table k-table-lg">
+                                            <div class="k-table-header">
+                                                <div class="k-table-header-wrap">
+                                                    <table class="k-table">
+                                                        <colgroup>
+                                                            <col style="width: 50px;">
+                                                            <col style="width: 160px;">
+                                                            <col>
+                                                        </colgroup>
+                                                        <thead class="k-table-thead">
+                                                            <tr class="k-table-row">
+                                                                <th class="k-table-th">ID</th>
+                                                                <th class="k-table-th">Name</th>
+                                                                <th class="k-table-th">Job Title</th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="k-table-group-sticky-header">
+                                                <span class="k-table-th">Initial group</span>
+                                            </div>
+                                            <div class="k-table-body k-table-scroller">
+                                                <ul class="k-table k-table-list">
+                                                    <li class="k-table-row">
+                                                        <span class="k-table-td" style="width: 50px;">1</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 1.2</span>
+                                                        <span class="k-table-td">Data 1.3</span>
+                                                    </li>
+                                                    <li class="k-table-row k-table-alt-row">
+                                                        <span class="k-table-td" style="width: 50px;">2</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 2.2 (alt)</span>
+                                                        <span class="k-table-td">Data 2.3</span>
+                                                    </li>
+                                                    <li class="k-table-row">
+                                                        <span class="k-table-td" style="width: 50px;">3</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 3.2</span>
+                                                        <span class="k-table-td">Data 3.3</span>
+                                                    </li>
+                                                    <li class="k-table-group-row">
+                                                        <span class="k-table-th">Group</span>
+                                                    </li>
+                                                    <li class="k-table-row">
+                                                        <span class="k-table-td" style="width: 50px;">4</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 4.2</span>
+                                                        <span class="k-table-td">Data 4.3</span>
+                                                    </li>
+                                                    <li class="k-table-row k-table-alt-row">
+                                                        <span class="k-table-td" style="width: 50px;">5</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 5.2 (alt)</span>
+                                                        <span class="k-table-td">Data 5.3</span>
+                                                    </li>
+                                                    <li class="k-table-row">
+                                                        <span class="k-table-td" style="width: 50px;">6</span>
+                                                        <span class="k-table-td" style="width: 160px;">Data 6.2</span>
+                                                        <span class="k-table-td">Data 6.3</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="k-table-footer">
+                                                <span class="k-table-td">30 records in total</span>
                                             </div>
                                         </div>
-                                        <div class="k-table-group-sticky-header">
-                                            <span class="k-table-th">Initial group</span>
-                                        </div>
-                                        <div class="k-table-body k-table-scroller">
-                                            <ul class="k-table k-table-list">
-                                                <li class="k-table-row">
-                                                    <span class="k-table-td" style="width: 50px;">1</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 1.2</span>
-                                                    <span class="k-table-td">Data 1.3</span>
-                                                </li>
-                                                <li class="k-table-row k-table-alt-row">
-                                                    <span class="k-table-td" style="width: 50px;">2</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 2.2 (alt)</span>
-                                                    <span class="k-table-td">Data 2.3</span>
-                                                </li>
-                                                <li class="k-table-row">
-                                                    <span class="k-table-td" style="width: 50px;">3</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 3.2</span>
-                                                    <span class="k-table-td">Data 3.3</span>
-                                                </li>
-                                                <li class="k-table-group-row">
-                                                    <span class="k-table-th">Group</span>
-                                                </li>
-                                                <li class="k-table-row">
-                                                    <span class="k-table-td" style="width: 50px;">4</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 4.2</span>
-                                                    <span class="k-table-td">Data 4.3</span>
-                                                </li>
-                                                <li class="k-table-row k-table-alt-row">
-                                                    <span class="k-table-td" style="width: 50px;">5</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 5.2 (alt)</span>
-                                                    <span class="k-table-td">Data 5.3</span>
-                                                </li>
-                                                <li class="k-table-row">
-                                                    <span class="k-table-td" style="width: 50px;">6</span>
-                                                    <span class="k-table-td" style="width: 160px;">Data 6.2</span>
-                                                    <span class="k-table-td">Data 6.3</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="k-table-footer">
-                                            <span class="k-table-td">30 records in total</span>
-                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
-                                    <span class="k-button-text">Apply</span>
-                                </button>
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
-                                    <span class="k-button-text">Cancel</span>
-                                </button>
+                                <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                    <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Apply</span>
+                                    </button>
+                                    <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Cancel</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
