@@ -50,7 +50,7 @@ export default () =>(
             </section>
 
             <section>
-                <DialogNormal title="Scrolling" actionButtonsAlign="end" style={{ height: "170px" }} >
+                <DialogNormal title="Scrolling" actionButtonsAlign="end" style={{ height: "220px" }} >
                     <p>Dialog content template with long text and vertical scrolling.</p>
                     <p>Dialog content template with long text and vertical scrolling.</p>
                     <p>Dialog content template with long text and vertical scrolling.</p>
