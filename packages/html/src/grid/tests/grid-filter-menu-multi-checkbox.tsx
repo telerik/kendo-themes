@@ -20,7 +20,7 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -44,8 +44,8 @@ export default () =>(
                             </ul>
                             <div className="k-filter-selected-items">0 selected items</div>
                             <ActionButtons alignment="stretched">
-                                <Button themeColor="primary">Filter</Button>
-                                <Button>Clear</Button>
+                                <Button icon="filter" themeColor="primary">Filter</Button>
+                                <Button icon="filter-clear">Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>
@@ -65,8 +65,8 @@ export default () =>(
                             </ul>
                             <div className="k-filter-selected-items">0 selected items</div>
                             <ActionButtons alignment="stretched">
-                                <Button themeColor="primary">Filter</Button>
-                                <Button>Clear</Button>
+                                <Button icon="filter" themeColor="primary">Filter</Button>
+                                <Button icon="filter-clear">Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>
@@ -87,8 +87,8 @@ export default () =>(
                                 <li className="k-item"><label className="k-label k-checkbox-label"><Checkbox /><span>is undefined</span></label></li>
                             </ul>
                             <ActionButtons alignment="stretched">
-                                <Button themeColor="primary">Filter</Button>
-                                <Button>Clear</Button>
+                                <Button icon="filter" themeColor="primary">Filter</Button>
+                                <Button icon="filter-clear">Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>
@@ -106,8 +106,8 @@ export default () =>(
                                 <li className="k-item"><label className="k-label k-checkbox-label"><Checkbox /><span>is undefined</span></label></li>
                             </ul>
                             <ActionButtons alignment="stretched">
-                                <Button themeColor="primary">Filter</Button>
-                                <Button>Clear</Button>
+                                <Button icon="filter" themeColor="primary">Filter</Button>
+                                <Button icon="filter-clear">Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>
