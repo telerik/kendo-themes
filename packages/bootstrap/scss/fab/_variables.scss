@@ -98,7 +98,18 @@ $kendo-fab-item-icon-border-radius: 50% !default;
 
 /// The theme colors map for the FAB.
 /// @group floating-action-button
-$kendo-fab-theme-colors: $kendo-theme-colors !default;
+$kendo-fab-theme-colors:  (
+    "primary": k-color( primary ),
+    "secondary": k-color( secondary ),
+    "tertiary": k-color( tertiary ),
+    "info": k-color( info ),
+    "success": k-color( success ),
+    "warning": k-color( warning ),
+    "error": k-color( error ),
+    "dark": k-color( dark ),
+    "light": k-color( light ),
+    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark ))
+) !default;
 
 /// The size map for the FAB.
 /// @group floating-action-button
@@ -135,13 +146,13 @@ $kendo-fab-outline-width: 3px !default;
 
 /// The base text color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-text: $kendo-component-text !default;
+$kendo-fab-item-text: k-color(on-app-surface) !default;
 /// The base background color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-bg: $kendo-component-bg !default;
+$kendo-fab-item-bg: k-color(app-surface) !default;
 /// The base border color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-border: $kendo-component-border !default;
+$kendo-fab-item-border: k-color(border) !default;
 
 /// The base text color of the FAB item icon.
 /// @group floating-action-button

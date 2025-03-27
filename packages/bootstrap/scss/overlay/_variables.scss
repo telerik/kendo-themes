@@ -1,13 +1,23 @@
 @use "../core/_index.scss" as *;
 
-$kendo-overlay-theme-colors: $kendo-theme-colors !default;
+$kendo-overlay-theme-colors: (
+    "primary": k-color( primary ),
+    "secondary": k-color( secondary ),
+    "tertiary": k-color( tertiary ),
+    "info": k-color( info ),
+    "success": k-color( success ),
+    "warning": k-color( warning ),
+    "error": k-color( error ),
+    "dark": k-color( dark ),
+    "light": k-color( light ),
+    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+) !default;
 
 $kendo-overlay-bg: $kendo-color-black !default;
 $kendo-overlay-opacity: .5 !default;
 
-
 @forward "@progress/kendo-theme-core/scss/components/overlay/_variables.scss" with (
     $kendo-overlay-theme-colors: $kendo-overlay-theme-colors,
     $kendo-overlay-bg: $kendo-overlay-bg,
-    $kendo-overlay-opacity: $kendo-overlay-opacity
+    $kendo-overlay-opacity: $kendo-overlay-opacity,
 );
