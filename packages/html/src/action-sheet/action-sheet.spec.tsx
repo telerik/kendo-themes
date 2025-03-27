@@ -2,6 +2,7 @@ import { classNames } from '../misc';
 import { AnimationContainer } from '../animation-container';
 import { ActionSheetFooter } from './actionsheet-footer';
 import { ActionSheetHeader } from './actionsheet-header';
+import { ActionSheetView } from './actionsheet-view';
 
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;
 
@@ -16,6 +17,7 @@ export type KendoActionSheetProps = {
     fullscreen?: boolean;
     adaptive?: boolean;
     overlay?: boolean;
+    template?: React.JSX.Element | React.JSX.Element[];
     side?: 'top' | 'right' | 'bottom' | 'left';
 }
 
@@ -35,14 +37,12 @@ export const ActionSheet = (
         fullscreen = defaultOptions.fullscreen,
         adaptive = defaultOptions.adaptive,
         overlay = defaultOptions.overlay,
+        template,
         children,
         header,
         footer,
         ...other
     } = props;
-
-    const _ActionSheetHeader = header?.type === ActionSheetHeader && <ActionSheetHeader adaptive={adaptive} {...header?.props} />;
-    const _ActionSheetFooter = footer?.type === ActionSheetFooter && <ActionSheetFooter {...footer?.props} />;
 
     return (
         <div className="k-actionsheet-container">
@@ -66,13 +66,11 @@ export const ActionSheet = (
                             'k-adaptive-actionsheet': adaptive
                         },
                     )}>
-                    <>
-                        {_ActionSheetHeader}
-                        <div className="k-actionsheet-content">
+                    {template ? template :
+                        <ActionSheetView header={header} footer={footer} adaptive={adaptive} {...props}>
                             {children}
-                        </div>
-                        {_ActionSheetFooter}
-                    </>
+                        </ActionSheetView>
+                    }
                 </div>
             </AnimationContainer>
         </div>
