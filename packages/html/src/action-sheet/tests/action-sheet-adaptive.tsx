@@ -28,7 +28,7 @@ export default () => (
                 <ActionSheetNormal
                     adaptive
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Header" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Title" subtitle="Subtitle" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -55,7 +55,7 @@ export default () => (
                 <ActionSheetNormal
                     adaptive
                     header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Header" />
+                        <ActionSheetHeader actionsStart={<Button icon="chevron-right" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Title" subtitle="Subtitle" />
                     }
                     footer={
                         <ActionSheetFooter>
