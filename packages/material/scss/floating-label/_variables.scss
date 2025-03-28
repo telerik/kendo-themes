@@ -44,14 +44,14 @@ $kendo-floating-label-transition: .15s cubic-bezier( .4, 0, .2, 1 ) !default;
 $kendo-floating-label-bg: null !default;
 /// The text color of the Floating Label.
 /// @group floating-label
-$kendo-floating-label-text: $kendo-subtle-text !default;
+$kendo-floating-label-text: k-color(subtle) !default;
 
 /// The background color of the focused Floating Label.
 /// @group floating-label
 $kendo-floating-label-focus-bg: null !default;
 /// The text color of the focused Floating Label.
 /// @group floating-label
-$kendo-floating-label-focus-text: $kendo-color-primary !default;
+$kendo-floating-label-focus-text: k-color(primary) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/floating-label/_variables.scss" with (
     $kendo-floating-label-scale: $kendo-floating-label-scale,

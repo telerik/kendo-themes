@@ -102,6 +102,19 @@ $kendo-badge-sizes: (
     )
 ) !default;
 
+$kendo-badge-theme-colors: (
+    "primary": k-color( primary ),
+    "secondary": k-color( secondary ),
+    "tertiary": k-color( tertiary ),
+    "info": k-color( info ),
+    "success": k-color( success ),
+    "warning": k-color( warning ),
+    "error": k-color( error ),
+    "dark": k-color( dark ),
+    "light": k-color( light ),
+    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/badge/_variables.scss" with (
     $kendo-badge-border-width: $kendo-badge-border-width,
     $kendo-badge-border-radius: $kendo-badge-border-radius,
@@ -125,5 +138,6 @@ $kendo-badge-sizes: (
     $kendo-badge-sm-min-width: $kendo-badge-sm-min-width,
     $kendo-badge-md-min-width: $kendo-badge-md-min-width,
     $kendo-badge-lg-min-width: $kendo-badge-lg-min-width,
-    $kendo-badge-sizes: $kendo-badge-sizes
+    $kendo-badge-sizes: $kendo-badge-sizes,
+    $kendo-badge-theme-colors: $kendo-badge-theme-colors
 );
