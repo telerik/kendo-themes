@@ -71,8 +71,15 @@
         line-height: var( --kendo-actionsheet-line-height, #{$kendo-actionsheet-line-height} );
         overflow: hidden;
         position: relative;
+        // TODO: Remove once k-actionsheet-view is adopted in all suites.
         display: flex;
         flex-flow: column nowrap;
+
+        .k-actionsheet-view {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 100%;
+        }
 
         *,
         *::before,
