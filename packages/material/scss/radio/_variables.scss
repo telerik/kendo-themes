@@ -88,7 +88,7 @@ $kendo-radio-hover-border: $kendo-checkbox-border !default;
 $kendo-radio-checked-bg: unset !default;
 /// The color of the checked RadioButton.
 /// @group radio
-$kendo-radio-checked-text: $kendo-color-primary !default;
+$kendo-radio-checked-text: k-color(primary) !default;
 /// The border color of the checked RadioButton.
 /// @group radio
 $kendo-radio-checked-border: $kendo-radio-checked-text !default;
@@ -183,7 +183,7 @@ $kendo-radio-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
 /// The background color of the RadioButton ripple..
 /// @group radio
-$kendo-radio-ripple-bg: $kendo-color-primary !default;
+$kendo-radio-ripple-bg: k-color(primary) !default;
 /// The opacity of the RadioButton ripple.
 /// @group radio
 $kendo-radio-ripple-opacity: .2 !default;

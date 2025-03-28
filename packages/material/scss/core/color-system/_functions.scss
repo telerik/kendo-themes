@@ -91,14 +91,14 @@
 }
 
 // Creates a container object for a light theme to be given to individual component theme mixins.
-@function material-theme($kendo-color-primary, $kendo-color-secondary, $theme-type, $material-dark-complimentary, $material-light-complimentary, $warn) {
-    $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
-    @return map.merge(
-        (
-            primary: $kendo-color-primary,
-            secondary: $kendo-color-secondary,
-            warn: $warn,
-        ),
-        $complimentary
-    );
-}
+// @function material-theme(k-color(primary), k-color(secondary), $theme-type, $material-dark-complimentary, $material-light-complimentary, $warn) {
+//     $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
+//     @return map.merge(
+//         (
+//             primary: k-color(primary),
+//             secondary: k-color(secondary),
+//             warn: $warn,
+//         ),
+//         $complimentary
+//     );
+// }

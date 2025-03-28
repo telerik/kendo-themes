@@ -46,7 +46,7 @@ $kendo-form-legend-border-width: 0 0 2px !default;
 $kendo-form-legend-border-style: solid !default;
 /// The border color of the Form legend.
 /// @group form
-$kendo-form-legend-border-color: $kendo-component-border !default;
+$kendo-form-legend-border-color: k-color(border) !default;
 /// The width of the Form legend.
 /// @group form
 $kendo-form-legend-width: 100% !default;
