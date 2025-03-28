@@ -55,6 +55,8 @@
     }
 
     .k-notification-actions {
+        padding-inline: $kendo-notification-actions-padding-x;
+        padding-block: $kendo-notification-actions-padding-y;
         flex: none;
         display: flex;
         gap: $kendo-notification-icon-spacing;
