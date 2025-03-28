@@ -162,6 +162,7 @@ export const DropdownGrid = (
                         <ActionSheetHeader
                             actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
                             input={true}
+                            inputValue={value}
                             inputPlaceholder={placeholder}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}

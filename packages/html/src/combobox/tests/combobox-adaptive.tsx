@@ -30,6 +30,18 @@ export default () => (
                 <div className="k-label">Label</div>
                 <ComboboxAdaptive adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
             </section>
+
+            <span>partial (custom value)</span>
+            <span>full screen (custom value)</span>
+
+            <section>
+                <div className="k-label">Label</div>
+                <ComboboxAdaptive adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" />
+            </section>
+            <section>
+                <div className="k-label">Label</div>
+                <ComboboxAdaptive adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
+            </section>
         </div>
     </>
 );

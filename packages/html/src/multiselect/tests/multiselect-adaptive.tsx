@@ -14,7 +14,7 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -23,12 +23,24 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                 <div className="k-label">Label</div>
-                <MultiSelectAdaptive adaptiveTitle="Label"  placeholder="Placeholder" />
+                <div className="k-label">Label</div>
+                <MultiSelectAdaptive adaptiveTitle="Label" placeholder="Placeholder" />
             </section>
             <section>
-                 <div className="k-label">Label</div>
-                <MultiSelectAdaptive adaptiveTitle="Label"  placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
+                <div className="k-label">Label</div>
+                <MultiSelectAdaptive adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
+            </section>
+
+            <span>partial (custom value)</span>
+            <span>full screen (custom value)</span>
+
+            <section>
+                <div className="k-label">Label</div>
+                <MultiSelectAdaptive adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" />
+            </section>
+            <section>
+                <div className="k-label">Label</div>
+                <MultiSelectAdaptive adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>
