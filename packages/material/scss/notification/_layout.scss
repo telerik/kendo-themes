@@ -1,6 +1,11 @@
 @use "@progress/kendo-theme-core/scss/components/notification/_layout.scss" as *;
+@use "./variables.scss" as *;
 
 
 @mixin kendo-notification--layout() {
     @include kendo-notification--layout-base();
+
+    .k-notification-actions {
+        margin-block: calc( (#{$kendo-notification-actions-padding-y} / 2) * -1) ;
+    }
 }
