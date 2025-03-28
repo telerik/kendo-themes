@@ -26,6 +26,13 @@ $kendo-notification-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The line height of the Notification.
 /// @group notification
 $kendo-notification-line-height: var( --kendo-line-height, normal ) !default;
+/// The horizontal padding of the Notification actions.
+/// @group notification
+$kendo-notification-actions-padding-x: null !default;
+/// The vertical padding of the Notification actions.
+/// @group notification
+$kendo-notification-actions-padding-y: $kendo-notification-actions-padding-x !default;
+
 /// The background color of the Notification.
 /// @group notification
 $kendo-notification-bg: var( --kendo-component-bg, inherit ) !default;
