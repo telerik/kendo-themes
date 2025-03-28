@@ -11,7 +11,7 @@ import {
 } from '../input';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListItem } from '../list';
+import { List, ListCustomValue, ListItem } from '../list';
 import { Button } from '../button';
 
 export const AUTOCOMPLETE_CLASSNAME = `k-autocomplete`;
@@ -51,6 +51,7 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     adaptiveSettings?: KendoActionSheetProps;
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
+    adaptiveCustomValue?: boolean;
 };
 
 export type KendoAutocompleteState = { [K in (typeof states)[number]]?: boolean };
@@ -90,6 +91,7 @@ export const Autocomplete = (
         adaptiveSettings,
         adaptiveTitle,
         adaptiveSubtitle,
+        adaptiveCustomValue,
         ...other
     } = props;
 
@@ -149,6 +151,7 @@ export const Autocomplete = (
                         <ActionSheetHeader
                             actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
                             input={true}
+                            inputValue={value}
                             inputPlaceholder={placeholder}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
@@ -156,7 +159,7 @@ export const Autocomplete = (
                     }
                 >
                     <div className="k-list-container">
-                        <List size="large">
+                        <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
                             <ListItem text="List item" />
                             <ListItem text="List item" />
                             <ListItem text="List item" />

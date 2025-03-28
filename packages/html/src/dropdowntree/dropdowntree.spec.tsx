@@ -160,6 +160,7 @@ export const DropdownTree = (
                     <ActionSheetHeader
                         actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
                         filter={adaptiveFilter}
+                        inputValue={value}
                         inputPlaceholder={placeholder}
                         title={adaptiveTitle}
                         subtitle={adaptiveSubtitle}

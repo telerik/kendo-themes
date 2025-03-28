@@ -13,7 +13,7 @@ import { Button } from '../button';
 import { ChipList } from '../chip';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
-import { List, ListItem } from '../list';
+import { List, ListCustomValue, ListItem } from '../list';
 
 export const MULTISELECT_CLASSNAME = `k-multiselect`;
 
@@ -55,6 +55,7 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     adaptiveSettings?: KendoActionSheetProps;
     adaptiveTitle?: string;
     adaptiveSubtitle?: string;
+    adaptiveCustomValue?: boolean;
 };
 
 export type KendoMultiSelectState = { [K in (typeof states)[number]]?: boolean };
@@ -96,6 +97,7 @@ export const MultiSelect = (
         adaptiveSettings,
         adaptiveTitle,
         adaptiveSubtitle,
+        adaptiveCustomValue,
         ...other
     } = props;
 
@@ -171,6 +173,7 @@ export const MultiSelect = (
                         <ActionSheetHeader
                             actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
                             input={true}
+                            inputValue={value}
                             inputPlaceholder={placeholder}
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
@@ -178,7 +181,8 @@ export const MultiSelect = (
                     }
                 >
                     <div className="k-list-container">
-                        <List size="large">
+                        <List customValue={adaptiveCustomValue ? <ListCustomValue text={`Use "${value}"`}/> : undefined} size="large">
+
                             <ListItem text="List item" />
                             <ListItem text="List item" />
                             <ListItem text="List item" />

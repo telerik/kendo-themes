@@ -11,6 +11,7 @@ export type KendoActionSheetHeaderProps = {
     actionsEnd?: React.JSX.Element | React.JSX.Element[];
     filter?: boolean;
     input?: boolean;
+    inputValue?: string;
     inputPlaceholder?: string;
     adaptive?: boolean;
 }
@@ -28,6 +29,7 @@ export const ActionSheetHeader = (
         actionsEnd,
         filter,
         input,
+        inputValue,
         inputPlaceholder,
         adaptive,
         children,
@@ -63,7 +65,7 @@ export const ActionSheetHeader = (
             {(input || filter) && (
                 <div className="k-actionsheet-titlebar-group k-actionsheet-filter">
                     {input ? (
-                        <Textbox placeholder={inputPlaceholder} size={adaptive ? "large" : "medium"} />
+                        <Textbox value={inputValue} placeholder={inputPlaceholder} size={adaptive ? "large" : "medium"} />
                     ) : (
                         <Searchbox placeholder="Filter" size={adaptive ? "large" : "medium"} />
                     )}
