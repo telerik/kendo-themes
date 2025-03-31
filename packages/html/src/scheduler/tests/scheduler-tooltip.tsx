@@ -1,4 +1,5 @@
 import { AnimationContainer } from '../../animation-container';
+import { NoData } from '../../nodata';
 import { TooltipNormal } from '../../tooltip';
 
 const style = `
@@ -71,7 +72,7 @@ export default () =>(
                                 <div className="k-month">Jan</div>
                                 <div className="k-link k-day !k-text-primary">29</div>
                             </div>
-                            <div className="k-no-data k-text-center">No events on this date.</div>
+                            <NoData className="k-text-center">No events on this date.</NoData>
                         </>}>
                     </TooltipNormal>
                 </AnimationContainer>
