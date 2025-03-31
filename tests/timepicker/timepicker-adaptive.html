@@ -28,6 +28,7 @@
         <span>partial</span>
         <span>full screen</span>
         <section>
+            <div class="k-label">Label</div>
             <span class="k-timepicker k-input k-input-md k-input-solid k-rounded-md">
                 <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -43,181 +44,182 @@
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
                         <div class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
-                            <div class="k-actionsheet-titlebar">
-                                <div class="k-actionsheet-titlebar-group k-hbox">
-                                    <div class="k-actionsheet-title">
-                                        <div class="k-text-center">Set Time</div>
-                                        <div class="k-actionsheet-subtitle k-text-center">DD / MM / YY</div>
-                                    </div>
-                                    <div class="k-actionsheet-actions">
-                                        <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-actionsheet-content">
-                                <div class="k-timeselector k-timeselector-lg">
-                                    <div class="k-time-header">
-                                        <span class="k-title">10:00:00 АМ</span>
-                                        <button class="k-time-now k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md">
-                                            <span class="k-button-text">Now</span>
-                                        </button>
-                                    </div>
-                                    <div class="k-time-list-container">
-                                        <span class="k-time-highlight"></span>
-                                        <div class="k-time-list-wrapper k-focus">
-                                            <span class="k-title">Hour</span>
-                                            <div class="k-time-list">
-                                                <div class="k-content k-scrollable k-time-container">
-                                                    <ul class="k-reset" style="transform: translateY(97px);">
-                                                        <li class="k-item">
-                                                            <span>00</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>01</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>02</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>03</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>04</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>05</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>06</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>07</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>08</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>09</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="k-scrollable-placeholder"></div>
-                                                </div>
-                                            </div>
+                            <div class="k-actionsheet-view">
+                                <div class="k-actionsheet-titlebar">
+                                    <div class="k-actionsheet-titlebar-group">
+                                        <div class="k-actionsheet-title">
+                                            <div class="k-text-center">Label</div>
                                         </div>
-                                        <div class="k-time-separator">:</div>
-                                        <div class="k-time-list-wrapper">
-                                            <span class="k-title">Minute</span>
-                                            <div class="k-time-list">
-                                                <div class="k-content k-scrollable k-time-container">
-                                                    <ul class="k-reset" style="transform: translateY(97px);">
-                                                        <li class="k-item">
-                                                            <span>00</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>01</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>02</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>03</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>04</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>05</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>06</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>07</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>08</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>09</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="k-scrollable-placeholder"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="k-time-separator">:</div>
-                                        <div class="k-time-list-wrapper">
-                                            <span class="k-title">Second</span>
-                                            <div class="k-time-list">
-                                                <div class="k-content k-scrollable k-time-container">
-                                                    <ul class="k-reset" style="transform: translateY(97px);">
-                                                        <li class="k-item">
-                                                            <span>00</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>01</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>02</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>03</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>04</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>05</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>06</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>07</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>08</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>09</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="k-scrollable-placeholder"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="k-time-list-wrapper">
-                                            <span class="k-title">AM/PM</span>
-                                            <div class="k-time-list">
-                                                <div class="k-content k-scrollable k-time-container">
-                                                    <ul class="k-reset" style="transform: translateY(97px);">
-                                                        <li class="k-item">
-                                                            <span>AM</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>PM</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="k-scrollable-placeholder"></div>
-                                                </div>
-                                            </div>
+                                        <div class="k-actionsheet-actions">
+                                            <button class="k-button k-button-lg k-button-flat k-button-flat-primary k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-check">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
-                                    <span class="k-button-text">Cancel</span>
-                                </button>
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
-                                    <span class="k-button-text">Set time</span>
-                                </button>
+                                <div class="k-actionsheet-content">
+                                    <div class="k-timeselector k-timeselector-lg">
+                                        <div class="k-time-header">
+                                            <span class="k-title">10:00:00 АМ</span>
+                                            <button class="k-time-now k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md">
+                                                <span class="k-button-text">Now</span>
+                                            </button>
+                                        </div>
+                                        <div class="k-time-list-container">
+                                            <span class="k-time-highlight"></span>
+                                            <div class="k-time-list-wrapper k-focus">
+                                                <span class="k-title">Hour</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>00</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>01</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>02</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>03</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>04</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>05</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>06</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>07</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>08</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>09</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-separator">:</div>
+                                            <div class="k-time-list-wrapper">
+                                                <span class="k-title">Minute</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>00</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>01</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>02</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>03</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>04</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>05</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>06</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>07</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>08</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>09</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-separator">:</div>
+                                            <div class="k-time-list-wrapper">
+                                                <span class="k-title">Second</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>00</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>01</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>02</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>03</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>04</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>05</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>06</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>07</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>08</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>09</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-list-wrapper">
+                                                <span class="k-title">AM/PM</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>AM</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>PM</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                    <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Cancel</span>
+                                    </button>
+                                    <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Set time</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -225,6 +227,7 @@
             </div>
         </section>
         <section>
+            <div class="k-label">Label</div>
             <span class="k-timepicker k-input k-input-md k-input-solid k-rounded-md">
                 <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -240,181 +243,182 @@
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
                         <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                            <div class="k-actionsheet-titlebar">
-                                <div class="k-actionsheet-titlebar-group k-hbox">
-                                    <div class="k-actionsheet-title">
-                                        <div class="k-text-center">Set Time</div>
-                                        <div class="k-actionsheet-subtitle k-text-center">DD / MM / YY</div>
-                                    </div>
-                                    <div class="k-actionsheet-actions">
-                                        <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-x">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="k-actionsheet-content">
-                                <div class="k-timeselector k-timeselector-lg">
-                                    <div class="k-time-header">
-                                        <span class="k-title">10:00:00 АМ</span>
-                                        <button class="k-time-now k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md">
-                                            <span class="k-button-text">Now</span>
-                                        </button>
-                                    </div>
-                                    <div class="k-time-list-container">
-                                        <span class="k-time-highlight"></span>
-                                        <div class="k-time-list-wrapper k-focus">
-                                            <span class="k-title">Hour</span>
-                                            <div class="k-time-list">
-                                                <div class="k-content k-scrollable k-time-container">
-                                                    <ul class="k-reset" style="transform: translateY(97px);">
-                                                        <li class="k-item">
-                                                            <span>00</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>01</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>02</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>03</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>04</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>05</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>06</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>07</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>08</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>09</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="k-scrollable-placeholder"></div>
-                                                </div>
-                                            </div>
+                            <div class="k-actionsheet-view">
+                                <div class="k-actionsheet-titlebar">
+                                    <div class="k-actionsheet-titlebar-group">
+                                        <div class="k-actionsheet-title">
+                                            <div class="k-text-center">Label</div>
                                         </div>
-                                        <div class="k-time-separator">:</div>
-                                        <div class="k-time-list-wrapper">
-                                            <span class="k-title">Minute</span>
-                                            <div class="k-time-list">
-                                                <div class="k-content k-scrollable k-time-container">
-                                                    <ul class="k-reset" style="transform: translateY(97px);">
-                                                        <li class="k-item">
-                                                            <span>00</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>01</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>02</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>03</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>04</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>05</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>06</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>07</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>08</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>09</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="k-scrollable-placeholder"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="k-time-separator">:</div>
-                                        <div class="k-time-list-wrapper">
-                                            <span class="k-title">Second</span>
-                                            <div class="k-time-list">
-                                                <div class="k-content k-scrollable k-time-container">
-                                                    <ul class="k-reset" style="transform: translateY(97px);">
-                                                        <li class="k-item">
-                                                            <span>00</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>01</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>02</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>03</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>04</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>05</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>06</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>07</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>08</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>09</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="k-scrollable-placeholder"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="k-time-list-wrapper">
-                                            <span class="k-title">AM/PM</span>
-                                            <div class="k-time-list">
-                                                <div class="k-content k-scrollable k-time-container">
-                                                    <ul class="k-reset" style="transform: translateY(97px);">
-                                                        <li class="k-item">
-                                                            <span>AM</span>
-                                                        </li>
-                                                        <li class="k-item">
-                                                            <span>PM</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="k-scrollable-placeholder"></div>
-                                                </div>
-                                            </div>
+                                        <div class="k-actionsheet-actions">
+                                            <button class="k-button k-button-lg k-button-flat k-button-flat-primary k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-svg-icon k-svg-i-check">
+                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                        <path d="M434.7 82.7 480 128 192 416 32 256l45.3-45.3L192 325.5z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
-                                    <span class="k-button-text">Cancel</span>
-                                </button>
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
-                                    <span class="k-button-text">Set time</span>
-                                </button>
+                                <div class="k-actionsheet-content">
+                                    <div class="k-timeselector k-timeselector-lg">
+                                        <div class="k-time-header">
+                                            <span class="k-title">10:00:00 АМ</span>
+                                            <button class="k-time-now k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md">
+                                                <span class="k-button-text">Now</span>
+                                            </button>
+                                        </div>
+                                        <div class="k-time-list-container">
+                                            <span class="k-time-highlight"></span>
+                                            <div class="k-time-list-wrapper k-focus">
+                                                <span class="k-title">Hour</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>00</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>01</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>02</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>03</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>04</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>05</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>06</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>07</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>08</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>09</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-separator">:</div>
+                                            <div class="k-time-list-wrapper">
+                                                <span class="k-title">Minute</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>00</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>01</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>02</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>03</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>04</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>05</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>06</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>07</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>08</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>09</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-separator">:</div>
+                                            <div class="k-time-list-wrapper">
+                                                <span class="k-title">Second</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>00</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>01</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>02</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>03</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>04</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>05</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>06</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>07</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>08</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>09</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-list-wrapper">
+                                                <span class="k-title">AM/PM</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>AM</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>PM</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                    <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Cancel</span>
+                                    </button>
+                                    <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Set time</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

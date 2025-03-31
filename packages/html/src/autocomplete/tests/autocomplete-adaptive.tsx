@@ -23,10 +23,24 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <AutocompleteAdaptive />
+                <div className="k-label">Label</div>
+                <AutocompleteAdaptive adaptiveTitle="Label" placeholder="Placeholder"/>
             </section>
             <section>
-                <AutocompleteAdaptive adaptiveSettings={{ fullscreen: true }} />
+                <div className="k-label">Label</div>
+                <AutocompleteAdaptive adaptiveTitle="Label" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }} />
+            </section>
+
+            <span>partial (custom value)</span>
+            <span>full screen (custom value)</span>
+
+            <section>
+                <div className="k-label">Label</div>
+                <AutocompleteAdaptive adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder"/>
+            </section>
+            <section>
+                <div className="k-label">Label</div>
+                <AutocompleteAdaptive adaptiveCustomValue adaptiveTitle="Label" value="Value" placeholder="Placeholder" adaptiveSettings={{ fullscreen: true }}/>
             </section>
         </div>
     </>

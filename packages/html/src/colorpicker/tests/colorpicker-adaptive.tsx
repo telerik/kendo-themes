@@ -24,11 +24,13 @@ export default () =>(
             <span className="k-colspan-2 k-col-span-2">full screen</span>
 
             <section className="k-colspan-3 k-col-span-3">
-                <ColorPicker adaptive={true} />
+                <div className="k-label">Label</div>
+                <ColorPicker adaptive={true} adaptiveTitle="Label" />
             </section>
 
             <section className="k-colspan-2 k-col-span-2">
-                <ColorPicker adaptive={true} adaptiveSettings={{ fullscreen: true }} />
+                <div className="k-label">Label</div>
+                <ColorPicker adaptive={true} adaptiveTitle="Label" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

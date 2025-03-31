@@ -131,6 +131,12 @@
         column-gap: 0;
     }
 
+    .k-list-custom-value {
+        @extend .k-list-item !optional;
+        font-style: italic;
+        position: sticky;
+    }
+
 
     // List group item
     .k-list-group-item {

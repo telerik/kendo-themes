@@ -9,6 +9,8 @@ import {
     InputValidationIcon
 } from '../input';
 import { Popup } from '../popup';
+import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
+import { List, ListItem } from '../list';
 
 export const DROPDOWNLIST_CLASSNAME = `k-dropdownlist`;
 
@@ -24,9 +26,9 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
+    size: [Size.small, Size.medium, Size.large],
+    rounded: [Roundness.small, Roundness.medium, Roundness.large, Roundness.full],
+    fillMode: [FillMode.solid, FillMode.flat, FillMode.outline]
 };
 
 export type KendoDropdownListOptions = {
@@ -45,6 +47,11 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
     showValue?: boolean;
     popup?: React.JSX.Element;
     opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
+    adaptiveTitle?: string;
+    adaptiveSubtitle?: string;
+    adaptiveFilter?: boolean;
 };
 
 export type KendoDropdownListState = { [K in (typeof states)[number]]?: boolean };
@@ -83,6 +90,11 @@ export const DropdownList = (
         readonly,
         popup,
         opened,
+        adaptive,
+        adaptiveSettings,
+        adaptiveTitle,
+        adaptiveSubtitle,
+        adaptiveFilter,
         ...other
     } = props;
 
@@ -134,10 +146,32 @@ export const DropdownList = (
                     fillMode={props.fillMode}
                 />
             </Picker>
-            { opened && popup &&
+            {opened && popup &&
                 <Popup className="k-list-container k-dropdownlist-popup">
                     {popup}
                 </Popup>
+            }
+            {adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings}
+                    header={
+                        <ActionSheetHeader
+                            actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                            filter={adaptiveFilter}
+                            inputValue={value}
+                            inputPlaceholder={placeholder}
+                            title={adaptiveTitle}
+                            subtitle={adaptiveSubtitle}
+                        />
+                    }
+                >
+                    <div className="k-list-container">
+                        <List size="large">
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                        </List>
+                    </div>
+                </ActionSheet>
             }
         </>
     );

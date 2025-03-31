@@ -14,7 +14,7 @@ const styles = `
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -23,11 +23,13 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <DatePickerAdaptive />
+                <div className="k-label">Label</div>
+                <DatePickerAdaptive adaptiveTitle="Label" />
             </section>
 
             <section>
-                <DatePickerAdaptive adaptiveSettings={{ fullscreen: true }} />
+                <div className="k-label">Label</div>
+                <DatePickerAdaptive adaptiveTitle="Label" adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

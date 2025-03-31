@@ -32,7 +32,7 @@ export default () => (
                         <ActionSheetHeader
                             actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
                             title="Select Date & Time"
-                            subTitle="DD / MM / YY">
+                            subtitle="DD / MM / YY">
                         </ActionSheetHeader>
                     }
                     footer={
@@ -67,7 +67,7 @@ export default () => (
                         <ActionSheetHeader
                             actionsEnd={<Button icon="x" size="large" fillMode="flat" />}
                             title="Select Date & Time"
-                            subTitle="DD / MM / YY">
+                            subtitle="DD / MM / YY">
                         </ActionSheetHeader>
                     }
                     footer={

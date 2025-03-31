@@ -181,7 +181,7 @@ export default () => (
                     fullscreen
                     adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Columns visibility" subTitle="Selected fields are visible" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Columns visibility" subtitle="Selected fields are visible" />
                     }
                     footer={
                         <ActionSheetFooter>
@@ -278,7 +278,7 @@ export default () => (
                     fullscreen
                     adaptive
                     header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Columns visibility" subTitle="Selected fields are visible" />
+                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Columns visibility" subtitle="Selected fields are visible" />
                     }
                     footer={
                         <ActionSheetFooter>

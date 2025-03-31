@@ -6,3 +6,5 @@ export * from "./templates/combobox-grouping-modern";
 export * from "./templates/combobox-adaptive";
 export * from "./templates/combobox-prefix";
 export * from "./templates/combobox-suffix";
+export * from "./templates/combobox-custom-value";
+export * from "./templates/combobox-grouping-modern-custom-value";

@@ -6,5 +6,7 @@ export * from "./templates/multiselect-arrow-button";
 export * from "./templates/multiselect-adaptive";
 export * from "./templates/multiselect-grouping";
 export * from "./templates/multiselect-grouping-modern";
+export * from "./templates/multiselect-grouping-modern-custom-value";
 export * from "./templates/multiselect-prefix";
 export * from "./templates/multiselect-suffix";
+export * from "./templates/multiselect-custom-value";

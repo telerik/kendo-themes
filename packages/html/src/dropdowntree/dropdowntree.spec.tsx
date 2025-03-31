@@ -49,6 +49,9 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     opened?: boolean;
     adaptive?: boolean;
     adaptiveSettings?: KendoActionSheetProps;
+    adaptiveTitle?: string;
+    adaptiveSubtitle?: string;
+    adaptiveFilter?: boolean;
     dir?: 'ltr' | 'rtl';
 };
 
@@ -90,6 +93,9 @@ export const DropdownTree = (
         opened,
         adaptive,
         adaptiveSettings,
+        adaptiveTitle,
+        adaptiveSubtitle,
+        adaptiveFilter,
         dir,
         ...other
     } = props;
@@ -150,9 +156,16 @@ export const DropdownTree = (
             }
             {adaptive &&
                 <ActionSheet adaptive={true} {...adaptiveSettings}
-                    header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Select value" />
-                    }
+                header={
+                    <ActionSheetHeader
+                        actionsEnd={<Button icon="check" themeColor="primary" size="large" fillMode="flat" />}
+                        filter={adaptiveFilter}
+                        inputValue={value}
+                        inputPlaceholder={placeholder}
+                        title={adaptiveTitle}
+                        subtitle={adaptiveSubtitle}
+                    />
+                }
                 >
                     <Treeview size="large">
                         <TreeviewItem top text="Root 1" />
