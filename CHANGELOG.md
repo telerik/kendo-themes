@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.5.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.4.1-dev.0...v10.5.0-dev.0) (2025-03-31)
+
+
+### Features
+
+* **actionsheet:** add actionsheet view styles ([4d17368](https://github.com/telerik/kendo-themes/commit/4d1736868c0b47e66fd5e8656c24f91abd0af4f3))
+* add styles for custom values in MultiSelect, AutoComplete and Combobox ([9c4f9f6](https://github.com/telerik/kendo-themes/commit/9c4f9f68db4ef880cad722b419d416d69b689db7))
+* **html:** add actionsheet view wrapper ([147678f](https://github.com/telerik/kendo-themes/commit/147678f14a2540eb924e4f72781c4f2f196abceb))
+* **html:** provide rendering for allow custom values in select-based components ([9992e0e](https://github.com/telerik/kendo-themes/commit/9992e0e4fc096488a42f6bcad7d8c77d75cd478a))
+
+
+
+
+
 ## [10.4.1-dev.0](https://github.com/telerik/kendo-themes/compare/v10.4.0...v10.4.1-dev.0) (2025-03-24)
 
 **Note:** Version bump only for package kendo-themes.repo
