@@ -1,3 +1,5 @@
+import { NoData } from "../../nodata";
+
 export default () => (
   <>
     <div id="test-area" className="k-d-grid k-grid-cols-1">
@@ -158,7 +160,7 @@ export default () => (
           </g>
         </svg>
         <div className="k-chart-overlay k-chart-overlay-top" style={{ "--kendo-chart-computed-title-height": "60px" } as React.CSSProperties}>
-          <div className="k-no-data">No data available</div>
+          <NoData>No data available</NoData>
         </div>
       </div>
 
@@ -319,7 +321,7 @@ export default () => (
           </g>
         </svg>
         <div className="k-chart-overlay" style={{ "--kendo-chart-computed-title-height": "58px" } as React.CSSProperties}>
-          <div className="k-no-data">No data available</div>
+          <NoData>No data available</NoData>
         </div>
       </div>
     </div>
