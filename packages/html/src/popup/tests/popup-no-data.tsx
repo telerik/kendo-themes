@@ -1,4 +1,4 @@
-import { List } from '../../list';
+import { List, ListItem } from '../../list';
 import { Searchbox } from '../../searchbox';
 import { Popup } from '../../popup';
 
@@ -50,6 +50,40 @@ export default () =>(
                         <Searchbox placeholder="Filter..." />
                     </div>
                     <List>
+                    </List>
+                </Popup>
+            </section>
+
+            <span>w/ filtering and data for screen readers</span>
+            <span>w/ filtering and data for screen readers (rtl)</span>
+
+            <span></span>
+            <span></span>
+
+            <section>
+                <Popup className="k-list-container">
+                    <div className="k-list-filter">
+                        <Searchbox placeholder="Filter..." />
+                    </div>
+                    <List screenReaders>
+                        <ListItem text="List item" />
+                        <ListItem text="List item" />
+                        <ListItem text="List item" />
+                        <ListItem text="List item" />
+                    </List>
+                </Popup>
+            </section>
+
+            <section dir="rtl">
+                <Popup className="k-list-container">
+                    <div className="k-list-filter">
+                        <Searchbox placeholder="Filter..." />
+                    </div>
+                    <List screenReaders>
+                        <ListItem text="List item" />
+                        <ListItem text="List item" />
+                        <ListItem text="List item" />
+                        <ListItem text="List item" />
                     </List>
                 </Popup>
             </section>

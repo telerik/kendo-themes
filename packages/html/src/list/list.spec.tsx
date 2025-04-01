@@ -19,6 +19,7 @@ export type KendoListProps = KendoListOptions & {
     children?: React.JSX.Element[];
     optionLabel?: React.JSX.Element;
     customValue?: React.JSX.Element;
+    screenReaders?: boolean;
 };
 
 export type KendoListState = { [K in (typeof states)[number]]?: boolean };
@@ -38,12 +39,14 @@ export const List = (
         children,
         optionLabel,
         customValue,
+        screenReaders,
         ...other
     } = props;
 
     let listHeader: string | undefined;
     let listGroup: string | number | boolean | React.JSX.Element | null | undefined;
     let listContent: string | number | boolean | React.JSX.Element | null | undefined;
+    let listNoData: React.JSX.Element | undefined;
     const listChildren : React.JSX.Element[] = [];
 
     if (children) {
@@ -85,10 +88,11 @@ export const List = (
             } else if ( child.type === ListItem ) {
                 listChildren.push( <ListItem key={`${child.type}-${index}`} {...child.props} /> );
                 listContent = <ListContent virtualization={virtualization}>{listChildren}</ListContent>;
+                screenReaders && (listNoData = <NoData className="k-sr-only">{listChildren.length} items found.</NoData>);
             }
         });
     } else {
-        listContent = <NoData>No data found.</NoData>;
+        listNoData = <NoData>No data found.</NoData>;
     }
 
     return (
@@ -108,6 +112,7 @@ export const List = (
             {customValue}
             {listGroup}
             {listContent}
+            {listNoData}
         </div>
     );
 };
