@@ -5,6 +5,9 @@
 @use "./variables.scss" as *;
 
 @mixin kendo-dialog--theme-base() {
+    .k-dialog {
+        background-color: $kendo-dialog-bg;
+    }
 
     // Dialog titlebar
     .k-dialog-titlebar {

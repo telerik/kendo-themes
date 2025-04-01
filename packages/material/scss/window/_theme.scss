@@ -3,4 +3,9 @@
 
 @mixin kendo-window--theme() {
     @include kendo-window--theme-base();
+
+    .k-window-minimized {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }
