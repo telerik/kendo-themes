@@ -17,10 +17,10 @@
     .k-time-selector-header {
 
         .k-time-now {
-            color: var( --kendo-link-text, inherit );
+            color: k-color( primary );
         }
         .k-time-now:hover {
-            color: var( --kendo-link-hover-text, inherit );
+            color: k-color( primary-hover );
         }
     }
 
@@ -48,7 +48,7 @@
     // Time list
     .k-time-list {
         .k-item:hover {
-            color: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-120 ));
+            color: k-color( primary-hover );
         }
     }
 

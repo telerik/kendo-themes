@@ -37,9 +37,9 @@
 
         &.k-disabled {
             @include disabled(
-                var( --kendo-disabled-text, inherit ),
+                color-mix(in srgb, k-color( on-app-surface ) 46%, transparent),
                 inherit,
-                var( --kendo-disabled-border, inherit )
+                transparent
             );
         }
     }

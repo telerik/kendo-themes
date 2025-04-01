@@ -5,7 +5,7 @@
 
     .k-form,
     .k-form-inline {
-        @include fill( $color: var( --kendo-form-text, #{$kendo-body-text} ) );
+        @include fill( $color: var( --kendo-form-text, #{k-color( on-app-surface )} ) );
 
         fieldset {
             legend {
@@ -18,7 +18,7 @@
         }
 
         .k-field-info {
-            @include fill( $color: var( --kendo-field-info-text, #{$kendo-subtle-text} ) );
+            @include fill( $color: var( --kendo-field-info-text, #{k-color( subtle )} ) );
         }
 
         .k-alert-error {

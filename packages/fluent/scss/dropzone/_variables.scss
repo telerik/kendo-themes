@@ -26,23 +26,23 @@ $kendo-dropzone-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the DropZone.
 /// @group dropzone
-$kendo-dropzone-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
+$kendo-dropzone-bg: k-color( surface ) !default;
 /// Text color of the dropzone.
 /// @group dropzone
-$kendo-dropzone-text: var( --kendo-component-text, inherit ) !default;
+$kendo-dropzone-text: k-color( on-app-surface ) !default;
 /// The border color of the DropZone.
 /// @group dropzone
-$kendo-dropzone-border: var( --kendo-component-border, initial ) !default;
+$kendo-dropzone-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 
 /// The spacing below the DropZone icon.
 /// @group dropzone
 $kendo-dropzone-icon-spacing: k-spacing(6) !default;
 /// The text color of the DropZone icon.
 /// @group dropzone
-$kendo-dropzone-icon-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-90 )) !default;
+$kendo-dropzone-icon-text: k-color( subtle ) !default;
 /// Text color of the icon when the dropzone is hovered.
 /// @group dropzone
-$kendo-dropzone-icon-hover-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+$kendo-dropzone-icon-hover-text: k-color( primary ) !default;
 
 /// The font size of the DropZone hint.
 /// @group dropzone
@@ -68,4 +68,4 @@ $kendo-dropzone-note-font-weight: inherit !default;
 $kendo-dropzone-note-spacing: k-spacing(0) !default;
 /// The text color of the DropZone note.
 /// @group dropzone
-$kendo-dropzone-note-text: var( --kendo-subtle-text, inherit ) !default;
+$kendo-dropzone-note-text: k-color( subtle ) !default;
