@@ -90,7 +90,7 @@
         .k-file-size,
         .k-file-validation-message,
         .k-file-summary {
-            color: var( --kendo-subtle-text, inherit);
+            color: k-color( subtle );
         }
 
         .k-multiple-files-wrapper .k-file-summary {
@@ -101,7 +101,7 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: var( --kendo-invalid-border, inherit);
+            border-color: k-color( error-emphasis );
         }
     }
 }

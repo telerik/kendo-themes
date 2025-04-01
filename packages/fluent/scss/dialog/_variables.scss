@@ -7,13 +7,13 @@ $kendo-dialog-border-width: 0 !default;
 
 /// The background color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-dialog-titlebar-bg: k-color( surface-alt ) !default;
 /// The text color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-text: var( --kendo-component-text, initial ) !default;
+$kendo-dialog-titlebar-text: k-color( on-app-surface ) !default;
 /// The border color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-border: var( --kendo-component-border, initial ) !default;
+$kendo-dialog-titlebar-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 /// The width of the border around the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-border-width: 0 !default;
@@ -59,15 +59,15 @@ $kendo-dialog-brand-colors: (
 
 // Matrix with dialog theme colors in the order: bg, color, border
 $_tc-dialog-matrix: (
-    (normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))),
+    (normal: (color, on-color, color)),
 ) !default;
 
 $_tc-dialog-dark-matrix: (
-    (normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))),
+    (normal: (color, on-color, color)),
 ) !default;
 
 $_tc-dialog-light-matrix: (
-    (normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))),
+    (normal: (color, on-color, color)),
 ) !default;
 
 /// The theme colors map for the Dialog.
@@ -85,13 +85,13 @@ $kendo-dialog-theme-colors: () !default;
 @each $ui-states in $_tc-dialog-dark-matrix {
     $kendo-dialog-theme-colors: map.deep-merge(
         $kendo-dialog-theme-colors,
-        k-generate-theme-variation( dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
+        k-generate-theme-variation( dark, dark, $ui-states )
     );
 }
 
 @each $ui-states in $_tc-dialog-light-matrix {
     $kendo-dialog-theme-colors: map.deep-merge(
         $kendo-dialog-theme-colors,
-        k-generate-theme-variation( light, if($kendo-enable-color-system, light, neutral), $ui-states )
+        k-generate-theme-variation( light, light, $ui-states )
     );
 }

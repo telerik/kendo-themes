@@ -20,11 +20,11 @@
 
         .k-grid-mobile {
             .k-column-active + th.k-header {
-                border-left-color: var( --kendo-component-bg, inherit );
+                border-left-color: k-color( surface-alt );
             }
 
             .k-resize-handle-inner::before {
-                background-color: var( --kendo-component-bg, inherit );
+                background-color: k-color( surface-alt );
             }
         }
 
@@ -67,7 +67,7 @@
         .k-scheduler-edit-form {
             .k-item,
             .k-link {
-                color: var( --kendo-component-text, inherit );
+                color: k-color( on-app-surface );
             }
 
             .k-clear,

@@ -60,14 +60,14 @@
 
         &.k-disabled {
             @include fill(
-                var( --kendo-disabled-text, inherit ),
-                var( --kendo-disabled-bg, inherit ),
-                var( --kendo-disabled-border, inherit )
+                color-mix(in srgb, k-color( on-app-surface ) 46%, transparent),
+                k-color( base-subtle ),
+                transparent
 
             );
 
             .k-card-header {
-                @include fill( $color: var( --kendo-disabled-text, inherit ) );
+                @include fill( $color: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) );
             }
         }
     }

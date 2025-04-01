@@ -98,24 +98,13 @@
     }
 
     // Selected state
-    @if($kendo-enable-color-system) {
-        .k-table-tbody .k-table-row.k-selected > .k-table-td,
-        .k-table-list .k-table-row.k-selected {
-            @include fill (
-                var( --kendo-table-selected-text, #{$kendo-table-selected-text} ),
-                var( --kendo-table-selected-bg, #{$kendo-table-selected-bg} ),
-                var( --kendo-table-selected-border, #{$kendo-table-selected-border} )
-            );
-        }
-    } @else {
-        .k-table-tbody .k-table-row.k-selected,
-        .k-table-list .k-table-row.k-selected {
-            @include fill (
-                var( --kendo-table-selected-text, #{$kendo-table-selected-text} ),
-                var( --kendo-table-selected-bg, #{$kendo-table-selected-bg} ),
-                var( --kendo-table-selected-border, #{$kendo-table-selected-border} )
-            );
-        }
+    .k-table-tbody .k-table-row.k-selected > .k-table-td,
+    .k-table-list .k-table-row.k-selected {
+        @include fill (
+            var( --kendo-table-selected-text, #{$kendo-table-selected-text} ),
+            var( --kendo-table-selected-bg, #{$kendo-table-selected-bg} ),
+            var( --kendo-table-selected-border, #{$kendo-table-selected-border} )
+        );
     }
 
 }
