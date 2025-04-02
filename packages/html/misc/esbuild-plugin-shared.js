@@ -10,7 +10,7 @@ module.exports = ({ dir: sharedDir, main: mainFile }) => ({
         build.initialOptions.entryPoints = entryPoints;
 
         // Esbuild will parse this to a GO Regex which causes Windows paths to fail.
-        const entryPointsRegex = new RegExp(`(${entryPoints.map(e => e.replace(/\\/g, '[\\\\]')).join("|")})`, 'g');
+        const entryPointsRegex = new RegExp(`(${entryPoints.map(e => e.replace(/\\/g, "\\\\")).join("|")})`);
 
         const sharedMain = p.join(sharedDir, mainFile);
         const sharedApp = fs.readFileSync(sharedMain, "utf-8");
