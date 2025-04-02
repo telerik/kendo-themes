@@ -68,14 +68,17 @@
         line-height: $kendo-actionsheet-line-height;
         overflow: hidden;
         position: relative;
-        // TODO: Remove once k-actionsheet-view is adopted in all suites.
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
 
         .k-actionsheet-view {
             display: flex;
             flex-flow: column nowrap;
-            height: 100%;
+            flex: 0 0 100%;
+        }
+
+        .k-actionsheet-view.k-actionsheet-view-animated {
+            transform: translateX(calc(-100% * (var(--kendo-actionsheet-view-current, 1) - 1)));
         }
 
         *,
@@ -395,6 +398,9 @@
         .k-actionsheet-bottom {
             transform: translateX( 50% );
         }
+    }
+    :is([dir="rtl"], .k-rtl) .k-actionsheet-view.k-actionsheet-view-animated {
+        transform: translateX(calc(100% * (var(--kendo-actionsheet-view-current, 1) - 1)))
     }
 
 }
