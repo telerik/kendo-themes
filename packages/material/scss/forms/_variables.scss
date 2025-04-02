@@ -1,13 +1,13 @@
 @use "../core/_index.scss" as *;
-@use"../input/_variables.scss" as *;
-@use"../tooltip/_variables.scss" as *;
-@use"../typography/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+@use "../typography/_variables.scss" as *;
 
 // Forms
 
 /// The padding of the inline Form.
 /// @group form
-$kendo-form-spacer: calc( #{k-spacing(4)} * 2 ) !default;
+$kendo-form-spacer: k-spacing(8) !default;
 
 /// The font size of the Form.
 /// @group form
@@ -46,7 +46,7 @@ $kendo-form-legend-border-width: 0 0 2px !default;
 $kendo-form-legend-border-style: solid !default;
 /// The border color of the Form legend.
 /// @group form
-$kendo-form-legend-border-color: $kendo-component-border !default;
+$kendo-form-legend-border-color: k-color( border ) !default;
 /// The width of the Form legend.
 /// @group form
 $kendo-form-legend-width: 100% !default;
