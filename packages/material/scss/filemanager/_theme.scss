@@ -3,4 +3,8 @@
 
 @mixin kendo-file-manager--theme() {
     @include kendo-file-manager--theme-base();
+
+    .k-filemanager-breadcrumb {
+        border-color: transparent;
+    }
 }
