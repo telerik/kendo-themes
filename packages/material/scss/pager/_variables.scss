@@ -64,17 +64,17 @@ $kendo-pager-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the Pager.
 /// @group pager
-$kendo-pager-bg: $kendo-component-bg !default;
+$kendo-pager-bg: k-color( surface ) !default;
 /// The text color of the Pager.
 /// @group pager
-$kendo-pager-text: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text )) !default;
+$kendo-pager-text: k-color( subtle ) !default;
 /// The border color of the Pager.
 /// @group pager
-$kendo-pager-border: $kendo-component-border !default;
+$kendo-pager-border: k-color( border ) !default;
 
 /// The background color of the focused Pager.
 /// @group pager
-$kendo-pager-focus-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-pager-bg, .5 )) !default;
+$kendo-pager-focus-bg: k-color( surface ) !default;
 /// The box shadow of the focused Pager.
 /// @group pager
 $kendo-pager-focus-shadow: unset !default;
@@ -88,7 +88,7 @@ $kendo-pager-section-spacing: $kendo-pager-padding-x !default;
 $kendo-pager-item-border-width: 0px !default;
 /// The border radius of the Pager items.
 /// @group pager
-$kendo-pager-item-border-radius: 5em !default;
+$kendo-pager-item-border-radius: k-border-radius( md ) !default;
 /// The spacing around the Pager items.
 /// @group pager
 $kendo-pager-item-spacing: k-spacing(0) !default;
@@ -113,10 +113,10 @@ $kendo-pager-item-hover-text: $kendo-pager-text !default;
 $kendo-pager-item-hover-border: null !default;
 /// The background color of the selected Pager items.
 /// @group pager
-$kendo-pager-item-selected-bg: $kendo-color-primary !default;
+$kendo-pager-item-selected-bg: k-color( primary ) !default;
 /// The text color of the selected Pager items.
 /// @group pager
-$kendo-pager-item-selected-text: $kendo-color-primary-contrast !default;
+$kendo-pager-item-selected-text: k-color( primary-on-surface ) !default;
 /// The border color of the selected Pager items.
 /// @group pager
 $kendo-pager-item-selected-border: null !default;
