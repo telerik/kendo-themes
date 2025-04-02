@@ -15,6 +15,7 @@ export type KendoActionSheetViewProps = {
     header?: React.ReactElement<typeof ActionSheetHeader>;
     footer?: React.ReactElement<typeof ActionSheetFooter>;
     adaptive?: boolean;
+    animated?: boolean;
 }
 
 export const ActionSheetView = (
@@ -23,6 +24,7 @@ export const ActionSheetView = (
 ) => {
     const {
         adaptive,
+        animated,
         children,
         header,
         footer,
@@ -36,7 +38,11 @@ export const ActionSheetView = (
         <div {...other}
             className={classNames(
                 props.className,
-                ACTIONSHEETVIEW_CLASSNAME)}
+                ACTIONSHEETVIEW_CLASSNAME,
+                {
+                    [`${ACTIONSHEETVIEW_CLASSNAME}-animated`]: animated,
+                }
+            )}
         >
             {_ActionSheetHeader}
             <div className="k-actionsheet-content" >
