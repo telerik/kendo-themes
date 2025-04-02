@@ -21,20 +21,20 @@ $kendo-file-manager-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-file-manager-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the FileManager.
 /// @group file-manager
-$kendo-file-manager-bg: $kendo-component-bg !default;
+$kendo-file-manager-bg: k-color( app-surface ) !default;
 /// The text color of the FileManager.
 /// @group file-manager
-$kendo-file-manager-text: $kendo-component-text !default;
+$kendo-file-manager-text: k-color( on-app-surface ) !default;
 /// The border color of the FileManager.
 /// @group file-manager
-$kendo-file-manager-border: $kendo-component-border !default;
+$kendo-file-manager-border: k-color( border ) !default;
 
 /// The border width of the FileManager Toolbar.
 /// @group file-manager
 $kendo-file-manager-toolbar-border-width: $kendo-file-manager-border-width !default;
 /// The background color of the FileManager Toolbar.
 /// @group file-manager
-$kendo-file-manager-toolbar-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
+$kendo-file-manager-toolbar-bg: k-color( surface ) !default;
 /// The text color of the FileManager Toolbar.
 /// @group file-manager
 $kendo-file-manager-toolbar-text: null !default;
@@ -123,7 +123,7 @@ $kendo-file-manager-listview-item-border: null !default;
 $kendo-file-manager-listview-item-icon-bg: null !default;
 /// The text color of the FileManager ListView item icon.
 /// @group file-manager
-$kendo-file-manager-listview-item-icon-text: if($kendo-enable-color-system, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4)) !default;
+$kendo-file-manager-listview-item-icon-text: k-color( subtle ) !default;
 /// The border color of the FileManager ListView item icon.
 /// @group file-manager
 $kendo-file-manager-listview-item-icon-border: null !default;
@@ -180,7 +180,7 @@ $kendo-file-manager-preview-border: null !default;
 $kendo-file-manager-preview-icon-bg: null !default;
 /// The text color of the FileManager preview icon.
 /// @group file-manager
-$kendo-file-manager-preview-icon-text: if($kendo-enable-color-system, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4)) !default;
+$kendo-file-manager-preview-icon-text: k-color( subtle ) !default;
 /// The border color of the FileManager preview icon.
 /// @group file-manager
 $kendo-file-manager-preview-icon-border: null !default;
