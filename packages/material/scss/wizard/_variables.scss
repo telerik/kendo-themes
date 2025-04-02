@@ -4,16 +4,16 @@
 
 /// The horizontal padding of the Wizard.
 /// @group wizard
-$kendo-wizard-padding-x: calc( #{k-spacing(4)} * 1.25 ) !default;
+$kendo-wizard-padding-x: k-spacing(5) !default;
 /// The vertical padding of the Wizard.
 /// @group wizard
 $kendo-wizard-padding-y: $kendo-wizard-padding-x !default;
 /// The horizontal padding of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-x: calc( #{k-spacing(4)} * 2 ) !default;
+$kendo-wizard-content-padding-x: k-spacing(8) !default;
 /// The vertical padding of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-y: calc( #{k-spacing(1)} * 8 ) !default;
+$kendo-wizard-content-padding-y: k-spacing(8) !default;
 /// The horizontal margin of the Wizard's Button container.
 /// @group wizard
 $kendo-wizard-buttons-margin-x: k-spacing(2.5) !default;
