@@ -1,6 +1,6 @@
 import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable, GridPager } from "../";
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
-import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal } from "../../action-sheet";
+import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal, ActionSheetView } from "../../action-sheet";
 import { ColumnMenuExpander, ColumnMenuItemWrapper, ColumnMenuNormal, FilterMenu } from "../../column-menu";
 import { NumericTextbox } from "../../numerictextbox";
 import { ButtonGroup } from "../../button-group";
@@ -179,31 +179,59 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal
+                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" }}
                     adaptive
-                    header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
-                    }
-                    footer={
-                        <ActionSheetFooter>
-                            <Button icon="filter-clear" size="large" disabled>Clear all filters</Button>
-                        </ActionSheetFooter>
+                    template={
+                        <>
+                            <ActionSheetView animated adaptive
+                                header={
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                }
+                                footer={
+                                    <ActionSheetFooter>
+                                        <Button icon="filter-clear" size="large" disabled>Clear all filters</Button>
+                                    </ActionSheetFooter>
+                                }
+                            >
+                                <ColumnMenuNormal size="large">
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 1" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 2" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 3" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 4" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                </ColumnMenuNormal>
+                            </ActionSheetView>
+                            <ActionSheetView animated adaptive
+                                header={
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                }
+                                footer={
+                                    <ActionSheetFooter>
+                                        <Button size="large" icon="filter-clear">Clear</Button>
+                                        <Button size="large" themeColor="primary" icon="filter">Filter</Button>
+                                    </ActionSheetFooter>
+                                }>
+                                <FilterMenu>
+                                    <DropdownList size="large" value="Contains" />
+                                    <NumericTextbox size="large" />
+                                    <ButtonGroup>
+                                        <Button size="large">And</Button>
+                                        <Button size="large">Or</Button>
+                                    </ButtonGroup>
+                                    <DropdownList size="large" value="Contains" />
+                                    <NumericTextbox size="large" />
+                                </FilterMenu>
+                            </ActionSheetView>
+                        </>
                     }
                 >
-                    <ColumnMenuNormal size="large">
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Header Name 1" expanderIcon="chevron-right" />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Header Name 2" expanderIcon="chevron-right" />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Header Name 3" expanderIcon="chevron-right" />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Header Name 4" expanderIcon="chevron-right" />
-                        </ColumnMenuItemWrapper>
-                    </ColumnMenuNormal>
                 </ActionSheetNormal>
             </section>
 
@@ -281,28 +309,59 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal
+                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "2" }}
                     adaptive
-                    header={
-                        <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
-                    }
-                    footer={
-                        <ActionSheetFooter>
-                            <Button size="large" icon="filter-clear">Clear</Button>
-                            <Button size="large" themeColor="primary" icon="filter">Filter</Button>
-                        </ActionSheetFooter>
+                    template={
+                        <>
+                            <ActionSheetView animated adaptive
+                                header={
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                }
+                                footer={
+                                    <ActionSheetFooter>
+                                        <Button icon="filter-clear" size="large" disabled>Clear all filters</Button>
+                                    </ActionSheetFooter>
+                                }
+                            >
+                                <ColumnMenuNormal size="large">
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 1" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 2" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 3" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 4" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                </ColumnMenuNormal>
+                            </ActionSheetView>
+                            <ActionSheetView animated adaptive
+                                header={
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                }
+                                footer={
+                                    <ActionSheetFooter>
+                                        <Button size="large" icon="filter-clear">Clear</Button>
+                                        <Button size="large" themeColor="primary" icon="filter">Filter</Button>
+                                    </ActionSheetFooter>
+                                }>
+                                <FilterMenu>
+                                    <DropdownList size="large" value="Contains" />
+                                    <NumericTextbox size="large" />
+                                    <ButtonGroup>
+                                        <Button size="large">And</Button>
+                                        <Button size="large">Or</Button>
+                                    </ButtonGroup>
+                                    <DropdownList size="large" value="Contains" />
+                                    <NumericTextbox size="large" />
+                                </FilterMenu>
+                            </ActionSheetView>
+                        </>
                     }
                 >
-                    <FilterMenu>
-                        <DropdownList size="large" value="Contains" />
-                        <NumericTextbox size="large" />
-                        <ButtonGroup>
-                            <Button size="large">And</Button>
-                            <Button size="large">Or</Button>
-                        </ButtonGroup>
-                        <DropdownList size="large" value="Contains" />
-                        <NumericTextbox size="large" />
-                    </FilterMenu>
                 </ActionSheetNormal>
             </section>
 
@@ -383,31 +442,59 @@ export default () => (
                         </>
                     }
                 ></Grid>
-                <ActionSheetNormal
+                <ActionSheetNormal style={{ "--kendo-actionsheet-view-current": "1" }}
                     adaptive
-                    header={
-                        <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
-                    }
-                    footer={
-                        <ActionSheetFooter>
-                            <Button icon="filter-clear" size="large">Clear all filters</Button>
-                        </ActionSheetFooter>
+                    template={
+                        <>
+                            <ActionSheetView animated adaptive
+                                header={
+                                    <ActionSheetHeader actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by" />
+                                }
+                                footer={
+                                    <ActionSheetFooter>
+                                        <Button icon="filter-clear" size="large">Clear all filters</Button>
+                                    </ActionSheetFooter>
+                                }
+                            >
+                                <ColumnMenuNormal size="large">
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 1" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 2" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 3" itemEndIcon="filter" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                    <ColumnMenuItemWrapper>
+                                        <ColumnMenuExpander itemText="Header Name 4" expanderIcon="chevron-right" />
+                                    </ColumnMenuItemWrapper>
+                                </ColumnMenuNormal>
+                            </ActionSheetView>
+                            <ActionSheetView animated adaptive
+                                header={
+                                    <ActionSheetHeader actionsStart={<Button icon="chevron-left" size="large" fillMode="flat" />} actionsEnd={<Button icon="x" size="large" fillMode="flat" />} title="Filter by Header Name 3" />
+                                }
+                                footer={
+                                    <ActionSheetFooter>
+                                        <Button size="large" icon="filter-clear">Clear</Button>
+                                        <Button size="large" themeColor="primary" icon="filter">Filter</Button>
+                                    </ActionSheetFooter>
+                                }>
+                                <FilterMenu>
+                                    <DropdownList size="large" value="Contains" />
+                                    <NumericTextbox size="large" />
+                                    <ButtonGroup>
+                                        <Button size="large">And</Button>
+                                        <Button size="large">Or</Button>
+                                    </ButtonGroup>
+                                    <DropdownList size="large" value="Contains" />
+                                    <NumericTextbox size="large" />
+                                </FilterMenu>
+                            </ActionSheetView>
+                        </>
                     }
                 >
-                    <ColumnMenuNormal size="large">
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Header Name 1" expanderIcon="chevron-right" />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Header Name 2" expanderIcon="chevron-right" />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Header Name 3" itemEndIcon="filter" expanderIcon="chevron-right" />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuExpander itemText="Header Name 4" expanderIcon="chevron-right" />
-                        </ColumnMenuItemWrapper>
-                    </ColumnMenuNormal>
                 </ActionSheetNormal>
             </section>
         </div>
