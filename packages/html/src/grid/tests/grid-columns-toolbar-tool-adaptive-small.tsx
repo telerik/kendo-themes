@@ -2,7 +2,8 @@ import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridCon
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
 import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal } from "../../action-sheet";
 import { Button } from "../../button";
-import { Treeview, TreeviewItem } from "../../treeview";
+import { Checkbox } from "../../checkbox";
+import { ColumnMenuNormal } from "../../column-menu";
 
 const styles = `
     #test-area {
@@ -190,12 +191,28 @@ export default () => (
                         </ActionSheetFooter>
                     }
                 >
-                    <Treeview size="large">
-                        <TreeviewItem showCheckbox checked disabled top text="Header Name 1" />
-                        <TreeviewItem showCheckbox text="Header Name 2" />
-                        <TreeviewItem showCheckbox text="Header Name 3" />
-                        <TreeviewItem showCheckbox bottom text="Header Name 4" />
-                    </Treeview>
+                    <ColumnMenuNormal size="large">
+                        <div className="k-column-list-wrapper">
+                            <div className="k-column-list">
+                                <label className="k-column-list-item k-disabled">
+                                    <Checkbox checked />
+                                    <span className="k-checkbox-label">Header Name 1</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 2</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 3</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </ColumnMenuNormal>
                 </ActionSheetNormal>
             </section>
 
@@ -287,12 +304,28 @@ export default () => (
                         </ActionSheetFooter>
                     }
                 >
-                    <Treeview size="large">
-                        <TreeviewItem showCheckbox checked top text="Header Name 1" />
-                        <TreeviewItem showCheckbox checked text="Header Name 2" />
-                        <TreeviewItem showCheckbox text="Header Name 3" />
-                        <TreeviewItem showCheckbox bottom text="Header Name 4" />
-                    </Treeview>
+                    <ColumnMenuNormal size="large">
+                        <div className="k-column-list-wrapper">
+                            <div className="k-column-list">
+                                <label className="k-column-list-item">
+                                    <Checkbox checked />
+                                    <span className="k-checkbox-label">Header Name 1</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox checked />
+                                    <span className="k-checkbox-label">Header Name 2</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 3</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </ColumnMenuNormal>
                 </ActionSheetNormal>
             </section>
 
