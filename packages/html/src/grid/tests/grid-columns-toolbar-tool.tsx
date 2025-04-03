@@ -3,7 +3,8 @@ import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
 import { Popup } from "../../popup";
 import { Button } from "../../button";
 import { ActionButtons } from "../../action-buttons";
-import { Treeview, TreeviewItem } from "../../treeview";
+import { Checkbox } from "../../checkbox";
+import { ColumnMenuNormal } from "../../column-menu";
 
 const styles = `
     .k-grid {
@@ -104,12 +105,28 @@ export default () => (
                     }
                 ></Grid>
                 <Popup className="k-grid-columnmenu-popup">
-                    <Treeview>
-                        <TreeviewItem showCheckbox checked disabled top text="Header Name 1" />
-                        <TreeviewItem showCheckbox text="Header Name 2" />
-                        <TreeviewItem showCheckbox text="Header Name 3" />
-                        <TreeviewItem showCheckbox bottom text="Header Name 4" />
-                    </Treeview>
+                    <ColumnMenuNormal>
+                        <div className="k-column-list-wrapper">
+                            <div className="k-column-list">
+                                <label className="k-column-list-item k-disabled">
+                                    <Checkbox checked />
+                                    <span className="k-checkbox-label">Header Name 1</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 2</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 3</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </ColumnMenuNormal>
                     <ActionButtons alignment="stretched" className="k-column-menu-footer">
                         <Button icon="check" themeColor="primary">Apply</Button>
                         <Button icon="arrow-rotate-ccw">Reset</Button>
@@ -194,12 +211,28 @@ export default () => (
                     }
                 ></Grid>
                 <Popup className="k-grid-columnmenu-popup">
-                    <Treeview>
-                        <TreeviewItem showCheckbox checked top text="Header Name 1" />
-                        <TreeviewItem showCheckbox checked text="Header Name 2" />
-                        <TreeviewItem showCheckbox text="Header Name 3" />
-                        <TreeviewItem showCheckbox bottom text="Header Name 4" />
-                    </Treeview>
+                    <ColumnMenuNormal>
+                        <div className="k-column-list-wrapper">
+                            <div className="k-column-list">
+                                <label className="k-column-list-item">
+                                    <Checkbox checked />
+                                    <span className="k-checkbox-label">Header Name 1</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox checked />
+                                    <span className="k-checkbox-label">Header Name 2</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 3</span>
+                                </label>
+                                <label className="k-column-list-item">
+                                    <Checkbox />
+                                    <span className="k-checkbox-label">Header Name 4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </ColumnMenuNormal>
                     <ActionButtons alignment="stretched" className="k-column-menu-footer">
                         <Button icon="check" themeColor="primary">Apply</Button>
                         <Button icon="arrow-rotate-ccw">Reset</Button>
