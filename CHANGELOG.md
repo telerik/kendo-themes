@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.6.0-dev.0](https://github.com/telerik/kendo-themes/compare/v10.5.0...v10.6.0-dev.0) (2025-04-03)
+
+
+### Features
+
+* **actionsheet:** add animated view styles ([048ea8c](https://github.com/telerik/kendo-themes/commit/048ea8ccd503b02448e12028fb7d50df20388455))
+
+
+
+
+
 # [10.5.0](https://github.com/telerik/kendo-themes/compare/v10.5.0-dev.0...v10.5.0) (2025-03-31)
 
 
