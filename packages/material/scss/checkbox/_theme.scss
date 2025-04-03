@@ -1,3 +1,4 @@
+@use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/checkbox/_theme.scss" as *;
 
@@ -6,12 +7,77 @@
 
     @include kendo-checkbox--theme-base();
 
+    .k-checkbox {
+        &:hover,
+        &.k-hover {
+            &::after {
+                opacity: .08;
+                background-color: k-color( on-app-surface );
+            }
+
+            &:checked,
+            &.k-checked {
+                &::after {
+                    background-color: k-color( primary );
+                }
+            }
+
+            &.k-invalid::after {
+                background-color: k-color( error );
+            }
+        }
+
+        &:focus,
+        &.k-focus {
+            &::after {
+                opacity: .12;
+                background-color: k-color( on-app-surface );
+            }
+
+            &:checked,
+            &.k-checked {
+                &::after {
+                    background-color: k-color( primary );
+                }
+            }
+
+            &.k-invalid::after {
+                background-color: k-color( error );
+            }
+        }
+
+    }
+
+    .k-ripple-focus.k-checkbox {
+        &:hover,
+        &.k-hover,
+        &:focus,
+        &.k-focus {
+            &::after,
+            &:checked::after,
+            &.k-checked::after,
+            &.k-invalid::after {
+                background: $kendo-checkbox-ripple-bg;
+                opacity: $kendo-checkbox-ripple-opacity;
+            }
+        }
+    }
+
     // Checkbox
     // Disabled state
-    .k-checkbox:disabled + .k-checkbox-label {
-        color: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ));
-        opacity: 1;
-        filter: none;
+    .k-checkbox {
+        &:disabled,
+        &.k-disabled {
+            & + .k-checkbox-label {
+                color: k-color( subtle );
+                opacity: 1;
+                filter: none;
+            }
+
+            &.k-invalid {
+                border-color: $kendo-checkbox-disabled-border;
+            }
+        }
     }
 
 }

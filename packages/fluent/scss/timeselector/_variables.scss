@@ -34,6 +34,15 @@ $kendo-time-selector-header-padding-y: k-spacing(3) !default;
 /// Width of the border around the time-selector header.
 /// @group time-selector
 $kendo-time-selector-header-border-width: 0px !default;
+/// The text color of the title in the time-selector header.
+/// @group time-selector
+$kendo-time-selector-header-title-text: unset !default;
+/// The text color of the time now in the time-selector header.
+/// @group time-selector
+$kendo-time-selector-header-time-now-text: $kendo-link-text !default;
+/// The hover text color of the time now in the time-selector header.
+/// @group time-selector
+$kendo-time-selector-header-time-now-hover-text: $kendo-link-hover-text !default;
 
 /// Visibility of the time-selector separator.
 /// @group time-selector

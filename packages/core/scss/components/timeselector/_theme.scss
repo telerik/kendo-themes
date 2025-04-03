@@ -18,14 +18,15 @@
     // Time selector header
     .k-time-header,
     .k-time-selector-header {
+        .k-title {
+            color: $kendo-time-selector-header-title-text;
+        }
 
         .k-time-now {
-            // TODO: use a variable
-            color: $kendo-link-text;
+            color: $kendo-time-selector-header-time-now-text;
         }
         .k-time-now:hover {
-            // TODO: use a variable
-            color: $kendo-link-hover-text;
+            color: $kendo-time-selector-header-time-now-hover-text;
         }
     }
 
