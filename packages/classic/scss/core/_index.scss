@@ -51,3 +51,11 @@
     $kendo-border-radii: $kendo-border-radii !default,
 );
 
+// Global disabled styles
+:root {
+    --kendo-disabled-text: unset;
+    --kendo-disabled-bg: unset;
+    --kendo-disabled-border: unset;
+    --kendo-disabled-opacity: .6;
+    --kendo-disabled-filter: grayscale(.1);
+}

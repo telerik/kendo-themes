@@ -92,7 +92,7 @@
     .k-breadcrumb-delimiter,
     .k-breadcrumb-delimiter-icon {
         color: inherit;
-        opacity: map.get( $kendo-disabled-styling, opacity );
+        opacity: var(--kendo-disabled-opacity, unset);
     }
 
 

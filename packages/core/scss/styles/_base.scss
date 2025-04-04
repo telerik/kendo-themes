@@ -7,14 +7,14 @@
 
     // Disabled state
     .k-disabled,
-    .k-widget[disabled],
-    .k-disabled {
+    [disabled],
+    :disabled {
         @include disabled(
-            $color: map.get( $kendo-disabled-styling, color ),
-            $bg: map.get( $kendo-disabled-styling, bg ),
-            $border: map.get( $kendo-disabled-styling, border ),
-            $opacity: map.get( $kendo-disabled-styling, opacity ),
-            $filter: map.get( $kendo-disabled-styling, filter )
+            $color: var(--kendo-disabled-text, unset),
+            $bg: var(--kendo-disabled-bg, unset),
+            $border: var(--kendo-disabled-border, unset),
+            $opacity: var(--kendo-disabled-opacity, unset),
+            $filter: var(--kendo-disabled-filter, unset)
         );
 
         .k-link {
