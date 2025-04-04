@@ -3,4 +3,8 @@
 
 @mixin kendo-prompt--layout() {
     @include kendo-prompt--layout-base();
+
+    .k-prompt-suggestion {
+        border: 0;
+    }
 }
