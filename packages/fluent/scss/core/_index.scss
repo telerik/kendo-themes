@@ -44,13 +44,13 @@
     $_default-border-radii: $kendo-border-radii,
     $kendo-border-radii: $kendo-border-radii !default,
     $kendo-transition: $kendo-transition !default,
-
-    $kendo-disabled-styling: (
-        bg: k-color( base-subtle ),
-        color: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent),
-        border: transparent,
-        opacity: null,
-        filter: null
-    ) !default,
 );
 
+// Global disabled styles
+:root {
+    --kendo-disabled-text: color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent);
+    --kendo-disabled-bg: var(--kendo-color-base-subtle, #edebe9);
+    --kendo-disabled-border: transparent;
+    --kendo-disabled-opacity: unset;
+    --kendo-disabled-filter: unset;
+}

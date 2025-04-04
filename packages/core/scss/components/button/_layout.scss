@@ -1,7 +1,6 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
 @use "../../color-system/_constants.scss" as *;
-@use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 
@@ -39,7 +38,7 @@
 
         &:disabled,
         &.k-disabled {
-            @include disabled( $kendo-disabled-styling... );
+            box-shadow: none;
         }
 
         &::-moz-focus-inner {
