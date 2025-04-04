@@ -12,7 +12,7 @@
     .k-upload {
         .k-upload-button {
             @include box-shadow( none );
-            background-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-upload-dropzone-bg ));
+            background-color: k-color( base-subtle );
         }
     }
 

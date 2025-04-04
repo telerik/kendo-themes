@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../color-system/_constants.scss" as *;
+@use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 @use "../icons/_variables.scss" as *;
 
@@ -68,16 +68,6 @@
     textarea.k-textarea {
         padding-block: $kendo-input-padding-y;
         padding-inline: $kendo-input-padding-x;
-
-        &:disabled,
-        &[disabled] {
-            @include disabled( $kendo-disabled-styling... );
-        }
-    }
-
-    :is([disabled], .k-disabled) :is(input.k-input, textarea.k-textarea):is(:disabled, [disabled]) {
-        opacity: 1;
-        filter: grayscale(0);
     }
 
     textarea.k-textarea {
@@ -94,16 +84,6 @@
         padding-inline: $kendo-input-padding-x;
         appearance: auto;
         align-items: center;
-
-        &:disabled,
-        &[disabled] {
-            @include disabled( $kendo-disabled-styling... );
-        }
-    }
-
-    :is([disabled], .k-disabled) select.k-picker:is(:disabled, [disabled]) {
-        opacity: 1;
-        filter: grayscale(0);
     }
 
 

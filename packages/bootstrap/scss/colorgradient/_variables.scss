@@ -36,13 +36,13 @@ $kendo-color-gradient-font-size: var( --kendo-font-size, inherit )  !default;
 $kendo-color-gradient-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-text: $kendo-component-text !default;
+$kendo-color-gradient-text: k-color(on-app-surface) !default;
 /// The background color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-bg: $kendo-component-bg !default;
+$kendo-color-gradient-bg: k-color(app-surface) !default;
 /// The border color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-border: $kendo-component-border !default;
+$kendo-color-gradient-border: k-color(border) !default;
 
 /// The vertical padding of the small ColorGradient.
 /// @group color-gradient
@@ -85,7 +85,7 @@ $kendo-color-gradient-lg-gap: k-spacing(4.5) !default;
 
 /// The border color of the focused ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-focus-border: $kendo-hover-border !default;
+$kendo-color-gradient-focus-border: k-color(border) !default;
 /// The box shadow of the focused ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-focus-shadow: none !default;
@@ -200,7 +200,7 @@ $kendo-color-gradient-input-gap: calc( #{$kendo-color-gradient-spacer} / 2 ) !de
 $kendo-color-gradient-input-label-gap: k-spacing(1) !default;
 /// The text color of the ColorGradient input labels.
 /// @group color-gradient
-$kendo-color-gradient-input-label-text: if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text) !default;
+$kendo-color-gradient-input-label-text: k-color( subtle ) !default;
 
 /// The width of the small ColorGradient input.
 /// @group color-gradient

@@ -1,5 +1,5 @@
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-input--theme-base() {
@@ -63,7 +63,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $kendo-invalid-text;
+                color: k-color( error );
             }
 
             &:focus,
@@ -152,7 +152,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $kendo-invalid-text;
+                color: k-color( error );
             }
 
             &:focus,
@@ -236,7 +236,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $kendo-invalid-text;
+                color: k-color( error );
             }
 
             &:focus,
@@ -331,7 +331,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $kendo-invalid-text;
+                color: k-color( error );
             }
 
             &:focus,
@@ -402,7 +402,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $kendo-invalid-text;
+                color: k-color( error );
             }
 
             &:focus,
@@ -497,7 +497,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $kendo-invalid-text;
+                color: k-color( error );
             }
 
             &:focus,

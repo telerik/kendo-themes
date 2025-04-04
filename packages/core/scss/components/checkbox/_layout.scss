@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../spacing/index.import.scss" as *;
+@use "../../_variables.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-checkbox--layout-base() {
@@ -83,13 +83,6 @@
                 transform: scale(1) translate(-50%, -50%);
             }
         }
-    }
-
-
-    // Disabled state
-    .k-checkbox:disabled,
-    .k-checkbox.k-disabled {
-        @include disabled( $kendo-disabled-styling... );
     }
 
 

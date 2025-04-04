@@ -111,13 +111,13 @@ $kendo-input-sizes: (
 
 /// The background color of the Input components.
 /// @group input
-$kendo-input-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-component-bg, .5 )) !default;
+$kendo-input-bg: k-color( surface ) !default;
 /// The text color of the Input components.
 /// @group input
-$kendo-input-text: $kendo-component-text !default;
+$kendo-input-text: k-color(on-app-surface) !default;
 /// The border color of the Input components.
 /// @group input
-$kendo-input-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( $kendo-component-border, .38 )) !default;
+$kendo-input-border: color-mix(in srgb, k-color( on-app-surface ) 44%, transparent) !default;
 /// The shadow of the Input components.
 /// @group input
 $kendo-input-shadow: null !default;
@@ -143,7 +143,7 @@ $kendo-input-focus-bg: null !default;
 $kendo-input-focus-text: null !default;
 /// The border color of the focused Input components.
 /// @group input
-$kendo-input-focus-border: $kendo-color-primary !default;
+$kendo-input-focus-border: k-color(primary) !default;
 /// The shadow of the focused Input components.
 /// @group input
 $kendo-input-focus-shadow: unset !default;
@@ -156,13 +156,13 @@ $kendo-input-selected-bg: null !default;
 $kendo-input-selected-text: null !default;
 /// The background color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-bg: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), k-try-shade( $kendo-component-bg, .25 )) !default;
+$kendo-input-disabled-bg: color-mix(in srgb, k-color( on-app-surface ) 3%, transparent) !default;
 /// The text color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-text: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 27%, transparent), $kendo-disabled-text) !default;
+$kendo-input-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 27%, transparent) !default;
 /// The border color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( $kendo-component-border, math.div( color.alpha( $kendo-component-border ), 2 ) )) !default;
+$kendo-input-disabled-border: color-mix(in srgb, k-color( on-app-surface ) 3%, transparent) !default;
 /// The gradient of the disabled Input components.
 /// @group input
 $kendo-input-disabled-gradient: null !default;
@@ -238,7 +238,7 @@ $kendo-input-flat-focus-shadow: $kendo-input-focus-shadow !default;
 
 /// The text color of the Input placeholder.
 /// @group input
-$kendo-input-placeholder-text: $kendo-subtle-text !default;
+$kendo-input-placeholder-text: k-color(subtle) !default;
 /// The opacity of the Input placeholder.
 /// @group input
 $kendo-input-placeholder-opacity: 1 !default;
@@ -279,24 +279,24 @@ $kendo-input-spinner-icon-offset: null !default;
 
 /// The color of the Input separator.
 /// @group input
-$kendo-input-separator-text: $kendo-component-border !default;
+$kendo-input-separator-text: k-color(border) !default;
 /// The opacity of the Input separator.
 /// @group input
 $kendo-input-separator-opacity: .5 !default;
 
 /// The text color of the Input prefix.
 /// @group input
-$kendo-input-prefix-text: $kendo-subtle-text !default;
+$kendo-input-prefix-text: k-color(subtle) !default;
 /// The text color of the Input suffix.
 /// @group input
-$kendo-input-suffix-text: $kendo-subtle-text !default;
+$kendo-input-suffix-text: k-color(subtle) !default;
 
 /// The border color of the invalid Input components.
 /// @group input
-$kendo-input-invalid-border: $kendo-invalid-border !default;
+$kendo-input-invalid-border: k-color(error) !default;
 /// The shadow of the invalid Input components.
 /// @group input
-$kendo-input-invalid-shadow: $kendo-invalid-shadow !default;
+$kendo-input-invalid-shadow: null !default;
 
 /// The background color of the Picker components.
 /// @group picker

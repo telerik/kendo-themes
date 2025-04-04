@@ -3,13 +3,13 @@
 
 /// The background color of the Badge.
 /// @group badge
-$kendo-badge-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-badge-bg: k-color( surface-alt ) !default;
 /// The text color of the Badge.
 /// @group badge
-$kendo-badge-text: var( --kendo-component-text, initial ) !default;
+$kendo-badge-text: k-color( on-app-surface ) !default;
 /// The border color of the Badge.
 /// @group badge
-$kendo-badge-border: var( --kendo-component-border, initial ) !default;
+$kendo-badge-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 
 /// The border width of the Badge.
 /// @group badge
@@ -104,44 +104,44 @@ $kendo-badge-brand-colors: (
     error: error,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
  ) !default;
 
 // Matrices with Badge theme colors in the order: bg, color, border
 $_tc-badge-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))
+        normal: (color, on-color, color)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color, color), ($kendo-color-white, 100, 100))
+        normal: (transparent, color, color)
     )
 ) !default;
 
 $_tc-badge-warning-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (100, k-get-theme-color-var( neutral-160 ), 100))
+        normal: (color, on-color, color)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color, color), ($kendo-color-white, 100, 100))
+        normal: (transparent, color, color)
     )
 ) !default;
 
 $_tc-badge-dark-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))
+        normal: (color, on-color, color)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color, color), ($kendo-color-white, 160, 160))
+        normal: (transparent, color, color)
     )
 ) !default;
 
 $_tc-badge-light-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))
+        normal: (color, on-color, color)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color, color), ($kendo-color-white, 50, 50))
+        normal: (transparent, color, color)
     )
 ) !default;
 
@@ -168,13 +168,13 @@ $kendo-badge-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-badge-dark-matrix {
     $kendo-badge-theme-colors: map.deep-merge(
         $kendo-badge-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, dark, dark, $ui-states )
     );
 }
 
 @each $fill-mode, $ui-states in $_tc-badge-light-matrix {
     $kendo-badge-theme-colors: map.deep-merge(
         $kendo-badge-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, light, if($kendo-enable-color-system, light, neutral), $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, light, light, $ui-states )
     );
 }

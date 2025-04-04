@@ -35,20 +35,20 @@ $kendo-color-editor-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-color-editor-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the ColorEditor.
 /// @group color-editor
-$kendo-color-editor-text: var( --kendo-component-text, initial ) !default;
+$kendo-color-editor-text: k-color( on-app-surface ) !default;
 /// The background color of the ColorEditor.
 /// @group color-editor
-$kendo-color-editor-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-color-editor-bg: k-color( surface-alt ) !default;
 /// The border color of the ColorEditor.
 /// @group color-editor
-$kendo-color-editor-border: var( --kendo-component-border, initial ) !default;
+$kendo-color-editor-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 /// The box shadow of the ColorEditor.
 /// @group color-editor
 $kendo-color-editor-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 
 /// The border color of the focused ColorEditor.
 /// @group color-editor
-$kendo-color-editor-focus-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 10%, transparent), k-get-theme-color-var( neutral-20 )) !default;
+$kendo-color-editor-focus-border: color-mix(in srgb, k-color( border ) 10%, transparent) !default;
 /// The box shadow of the focused ColorEditor.
 /// @group color-editor
 $kendo-color-editor-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;

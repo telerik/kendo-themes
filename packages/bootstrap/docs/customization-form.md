@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-form-legend-border-color</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-forms-invalid-color</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #dc3545)</code></td>
 </tr>
 <tr>

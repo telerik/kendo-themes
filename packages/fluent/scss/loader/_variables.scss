@@ -88,13 +88,13 @@ $kendo-loader-container-panel-border-width: 1px !default;
 $kendo-loader-container-panel-border-style: solid !default;
 /// The border color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-border-color: var( --kendo-component-border, initial ) !default;
+$kendo-loader-container-panel-border-color: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 /// The border radius of the container panel.
 /// @group loader
 $kendo-loader-container-panel-border-radius: k-border-radius(md) !default;
 /// The background color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
+$kendo-loader-container-panel-bg: k-color( app-surface ) !default;
 
 /// The horizontal padding of the small Loader container.
 /// @group loader
@@ -140,7 +140,7 @@ $kendo-loader-lg-container-font-size: var( --kendo-font-size-lg, inherit ) !defa
 /// @group loader
 $kendo-loader-brand-colors: (
     primary: primary,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
     error: error,
     success: success,
@@ -150,15 +150,15 @@ $kendo-loader-brand-colors: (
 
  // Matrix with loader theme colors in the order: bg, color, border
 $_tc-loader-matrix: (
-    (normal: if($kendo-enable-color-system, (color, null, null), (100, null, null))),
+    (normal: (color, null, null)),
 ) !default;
 
 $_tc-loader-dark-matrix: (
-    (normal: if($kendo-enable-color-system, (color, null, null), (160, null, null))),
+    (normal: (color, null, null)),
 ) !default;
 
 $_tc-loader-light-matrix: (
-    (normal: if($kendo-enable-color-system, (color, null, null), (50, null, null))),
+    (normal: (color, null, null)),
 ) !default;
 
 /// The theme colors map for the Loader variations.
@@ -177,21 +177,21 @@ $kendo-loader-theme-colors: () !default;
 @each $ui-states in $_tc-loader-dark-matrix {
     $kendo-loader-theme-colors: map.deep-merge(
         $kendo-loader-theme-colors,
-        k-generate-theme-variation( dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
+        k-generate-theme-variation( dark, dark, $ui-states )
     );
 }
 
 @each $ui-states in $_tc-loader-light-matrix {
     $kendo-loader-theme-colors: map.deep-merge(
         $kendo-loader-theme-colors,
-        k-generate-theme-variation( light, if($kendo-enable-color-system, light, neutral), $ui-states )
+        k-generate-theme-variation( light, light, $ui-states )
     );
 }
 
 // Loading indicator
 /// The background color of the Loading indicator.
 /// @group loading
-$kendo-loading-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-loading-bg: k-color( surface-alt ) !default;
 /// The text color of the Loading indicator.
 /// @group loading
 $kendo-loading-text: currentColor !default;

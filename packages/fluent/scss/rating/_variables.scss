@@ -23,10 +23,10 @@ $kendo-rating-item-padding-x: k-spacing(0.5) !default;
 $kendo-rating-item-padding-y: k-spacing(2) !default;
 /// The text color of the Rating item.
 /// @group rating
-$kendo-rating-item-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
+$kendo-rating-item-text: k-color( subtle ) !default;
 /// The text color of the hovered Rating item.
 /// @group rating
-$kendo-rating-item-hover-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
+$kendo-rating-item-hover-text: k-color( primary ) !default;
 /// The text color of the focused Rating item.
 /// @group rating
 $kendo-rating-item-focus-text: $kendo-rating-item-text !default;
@@ -41,7 +41,7 @@ $kendo-rating-item-focus-outline-style: solid !default;
 $kendo-rating-item-focus-outline: currentColor !default;
 /// The text color of the selected Rating item.
 /// @group rating
-$kendo-rating-item-selected-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
+$kendo-rating-item-selected-text: k-color( on-app-surface ) !default;
 /// The text color of the selected and hovered Rating item.
 /// @group rating
-$kendo-rating-item-selected-hover-text: if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 )) !default;
+$kendo-rating-item-selected-hover-text: k-color( primary-active ) !default;

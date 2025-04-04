@@ -32,9 +32,7 @@
     // Solid button
     .k-button-solid {
         &::before {
-            @if($kendo-enable-color-system) {
-                display: none;
-            }
+            display: none;
         }
     }
 

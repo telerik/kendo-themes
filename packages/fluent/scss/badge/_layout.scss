@@ -149,7 +149,7 @@
 
     // Border cutout
     .k-badge-border-cutout {
-        box-shadow: 0 0 0 2px var( --kendo-component-bg, inherit );
+        box-shadow: 0 0 0 2px k-color( surface-alt );
     }
 
 }

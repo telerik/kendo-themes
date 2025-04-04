@@ -118,7 +118,7 @@
 
                 &:disabled,
                 &.k-disabled {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
+                    --INTERNAL--kendo-panelbar-header-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent);
 
                     .k-icon,
                     .k-panelbar-item-icon {
@@ -132,7 +132,7 @@
                 background-color: transparent;
 
                 > .k-link {
-                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
+                    --INTERNAL--kendo-panelbar-header-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent);
                 }
 
                 .k-icon,
@@ -216,7 +216,7 @@
                 }
 
                 &.k-disabled {
-                    --INTERNAL--kendo-panelbar-item-text: var( --kendo-disabled-text, inherit );
+                    --INTERNAL--kendo-panelbar-item-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent);
 
                     .k-icon,
                     .k-panelbar-item-icon {
@@ -230,7 +230,7 @@
                 background-color: transparent;
 
                 > .k-link {
-                    --INTERNAL--kendo-panelbar-item-text: var( --kendo-disabled-text, inherit );
+                    --INTERNAL--kendo-panelbar-item-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent);
                 }
 
                 .k-icon,

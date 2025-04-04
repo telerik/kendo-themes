@@ -19,13 +19,13 @@ $kendo-scrollview-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The text color of the ScrollView.
 /// @group scrollview
-$kendo-scrollview-text: $kendo-component-text !default;
+$kendo-scrollview-text: k-color( on-app-surface ) !default;
 /// The background color of the ScrollView.
 /// @group scrollview
-$kendo-scrollview-bg: $kendo-component-bg !default;
+$kendo-scrollview-bg: k-color( surface-alt ) !default;
 /// The border color of the ScrollView.
 /// @group scrollview
-$kendo-scrollview-border: $kendo-component-border !default;
+$kendo-scrollview-border: k-color( border ) !default;
 
 /// The size of the ScrollView page button.
 /// @group scrollview
@@ -38,10 +38,10 @@ $kendo-scrollview-pagebutton-bg: $kendo-button-bg !default;
 $kendo-scrollview-pagebutton-border: $kendo-button-border !default;
 /// The primary background color of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-primary-bg: $kendo-color-primary !default;
+$kendo-scrollview-pagebutton-primary-bg: k-color( primary ) !default;
 /// The primary border color of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-primary-border: if($kendo-enable-color-system, k-color( primary ), k-try-shade( $kendo-color-primary, 2 )) !default;
+$kendo-scrollview-pagebutton-primary-border: k-color( primary ) !default;
 /// The box shadow of the ScrollView page button.
 /// @group scrollview
 $kendo-scrollview-pagebutton-shadow: 0 0 0 2px rgba( black, .13 ) !default;
