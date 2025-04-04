@@ -113,7 +113,13 @@
         .k-form-field-disabled {
             .k-label,
             .k-form-label {
-                @include disabled( $kendo-disabled-styling... );
+                @include disabled(
+                    $color: var(--kendo-disabled-text, unset),
+                    $bg: var(--kendo-disabled-bg, unset),
+                    $border: var(--kendo-disabled-border, unset),
+                    $opacity: var(--kendo-disabled-opacity, unset),
+                    $filter: var(--kendo-disabled-filter, unset)
+                );
             }
         }
 
