@@ -44,12 +44,13 @@
     // Spacing
     $_default-spacing: $kendo-spacing,
     $kendo-spacing: $kendo-spacing !default,
-
-    $kendo-disabled-styling: (
-        bg: null,
-        color: null,
-        border: null,
-        opacity: .65,
-        filter: grayscale(.1)
-    ) !default
 );
+
+// Global disabled styles
+:root {
+    --kendo-disabled-text: unset;
+    --kendo-disabled-bg: unset;
+    --kendo-disabled-border: unset;
+    --kendo-disabled-opacity: .65;
+    --kendo-disabled-filter: grayscale(.1);
+}
