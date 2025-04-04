@@ -7,51 +7,51 @@
 
 /// The first base series color and its light and dark shades.
 /// @group charts
-$kendo-series-a: if($kendo-enable-color-system, k-color( series-a ), get-base-hue( purple, 500 )) !default;
-$kendo-series-a-dark: if($kendo-enable-color-system, k-color( series-a-bold ), color.mix(black, $kendo-series-a, 25%)) !default;
-$kendo-series-a-darker: if($kendo-enable-color-system, k-color( series-a-bolder ), color.mix(black, $kendo-series-a, 50%)) !default;
-$kendo-series-a-light: if($kendo-enable-color-system, k-color( series-a-subtle ), color.mix(white, $kendo-series-a, 25%)) !default;
-$kendo-series-a-lighter: if($kendo-enable-color-system, k-color( series-a-subtler ), color.mix(white, $kendo-series-a, 50%)) !default;
+$kendo-series-a: k-color( series-a ) !default;
+$kendo-series-a-dark: k-color( series-a-bold ) !default;
+$kendo-series-a-darker: k-color( series-a-bolder ) !default;
+$kendo-series-a-light: k-color( series-a-subtle ) !default;
+$kendo-series-a-lighter: k-color( series-a-subtler ) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
-$kendo-series-b: if($kendo-enable-color-system, k-color( series-b ), get-base-hue( blue, 500 )) !default;
-$kendo-series-b-dark: if($kendo-enable-color-system, k-color( series-b-bold ), color.mix(black, $kendo-series-b, 25%)) !default;
-$kendo-series-b-darker: if($kendo-enable-color-system, k-color( series-b-bolder ), color.mix(black, $kendo-series-b, 50%)) !default;
-$kendo-series-b-light: if($kendo-enable-color-system, k-color( series-b-subtle ), color.mix(white, $kendo-series-b, 25%)) !default;
-$kendo-series-b-lighter: if($kendo-enable-color-system, k-color( series-b-subtler ), color.mix(white, $kendo-series-b, 50%)) !default;
+$kendo-series-b: k-color( series-b ) !default;
+$kendo-series-b-dark: k-color( series-b-bold ) !default;
+$kendo-series-b-darker: k-color( series-b-bolder ) !default;
+$kendo-series-b-light: k-color( series-b-subtle ) !default;
+$kendo-series-b-lighter: k-color( series-b-subtler ) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
-$kendo-series-c: if($kendo-enable-color-system, k-color( series-c ), get-base-hue( teal, 500 )) !default;
-$kendo-series-c-dark: if($kendo-enable-color-system, k-color( series-c-bold ), color.mix(black, $kendo-series-c, 25%)) !default;
-$kendo-series-c-darker: if($kendo-enable-color-system, k-color( series-c-bolder ), color.mix(black, $kendo-series-c, 50%)) !default;
-$kendo-series-c-light: if($kendo-enable-color-system, k-color( series-c-subtle ), color.mix(white, $kendo-series-c, 25%)) !default;
-$kendo-series-c-lighter: if($kendo-enable-color-system, k-color( series-c-subtler ), color.mix(white, $kendo-series-c, 50%)) !default;
+$kendo-series-c: k-color( series-c ) !default;
+$kendo-series-c-dark: k-color( series-c-bold ) !default;
+$kendo-series-c-darker: k-color( series-c-bolder ) !default;
+$kendo-series-c-light: k-color( series-c-subtle ) !default;
+$kendo-series-c-lighter: k-color( series-c-subtler ) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-d: if($kendo-enable-color-system, k-color( series-d ), get-base-hue( yellow, 500 )) !default;
-$kendo-series-d-dark: if($kendo-enable-color-system, k-color( series-d-bold ), color.mix(black, $kendo-series-d, 25%)) !default;
-$kendo-series-d-darker: if($kendo-enable-color-system, k-color( series-d-bolder ), color.mix(black, $kendo-series-d, 50%)) !default;
-$kendo-series-d-light: if($kendo-enable-color-system, k-color( series-d-subtle ), color.mix(white, $kendo-series-d, 25%)) !default;
-$kendo-series-d-lighter: if($kendo-enable-color-system, k-color( series-d-subtler ), color.mix(white, $kendo-series-d, 50%)) !default;
+$kendo-series-d: k-color( series-d ) !default;
+$kendo-series-d-dark: k-color( series-d-bold ) !default;
+$kendo-series-d-darker: k-color( series-d-bolder ) !default;
+$kendo-series-d-light: k-color( series-d-subtle ) !default;
+$kendo-series-d-lighter: k-color( series-d-subtler ) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-e: if($kendo-enable-color-system, k-color( series-e ), get-base-hue( red, 500 )) !default;
-$kendo-series-e-dark: if($kendo-enable-color-system, k-color( series-e-bold ), color.mix(black, $kendo-series-e, 25%)) !default;
-$kendo-series-e-darker: if($kendo-enable-color-system, k-color( series-e-bolder ), color.mix(black, $kendo-series-e, 50%)) !default;
-$kendo-series-e-light: if($kendo-enable-color-system, k-color( series-e-subtle ), color.mix(white, $kendo-series-e, 25%)) !default;
-$kendo-series-e-lighter: if($kendo-enable-color-system, k-color( series-e-subtler ), color.mix(white, $kendo-series-e, 50%)) !default;
+$kendo-series-e: k-color( series-e ) !default;
+$kendo-series-e-dark: k-color( series-e-bold ) !default;
+$kendo-series-e-darker: k-color( series-e-bolder ) !default;
+$kendo-series-e-light: k-color( series-e-subtle ) !default;
+$kendo-series-e-lighter: k-color( series-e-subtler ) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-f: if($kendo-enable-color-system, k-color( series-f ), get-base-hue( green, 500 )) !default;
-$kendo-series-f-dark: if($kendo-enable-color-system, k-color( series-f-bold ), color.mix(black, $kendo-series-f, 25%)) !default;
-$kendo-series-f-darker: if($kendo-enable-color-system, k-color( series-f-bolder ), color.mix(black, $kendo-series-f, 50%)) !default;
-$kendo-series-f-light: if($kendo-enable-color-system, k-color( series-f-subtle ), color.mix(white, $kendo-series-f, 25%)) !default;
-$kendo-series-f-lighter: if($kendo-enable-color-system, k-color( series-f-subtler ), color.mix(white, $kendo-series-f, 50%)) !default;
+$kendo-series-f: k-color( series-f ) !default;
+$kendo-series-f-dark: k-color( series-f-bold ) !default;
+$kendo-series-f-darker: k-color( series-f-bolder ) !default;
+$kendo-series-f-light: k-color( series-f-subtle ) !default;
+$kendo-series-f-lighter: k-color( series-f-subtler ) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker
@@ -99,13 +99,13 @@ $kendo-chart-pane-title-font-weight: var( --kendo-font-weight-normal, normal ) !
 
 /// The color of the Chart grid lines (major).
 /// @group charts
-$kendo-chart-major-lines: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )) !default;
+$kendo-chart-major-lines: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
 
 /// The color of the Chart grid lines (minor).
 /// @group charts
-$kendo-chart-minor-lines: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 )) !default;
+$kendo-chart-minor-lines: color-mix(in srgb, k-color( on-app-surface ) 4%, transparent) !default;
 
-$kendo-chart-inactive: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( $kendo-body-text, .5 )) !default;
+$kendo-chart-inactive: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
 $kendo-chart-area-opacity: .6 !default;
 $kendo-chart-area-inactive-opacity: .1 !default;
 $kendo-chart-line-inactive-opacity: .3 !default;
@@ -115,24 +115,24 @@ $kendo-chart-tooltip-padding-y: k-spacing(0.5) !default;
 
 $kendo-chart-tooltip-transition: left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1) !default;
 
-$kendo-chart-bg: $kendo-component-bg !default;
-$kendo-chart-text: $kendo-component-text !default;
-$kendo-chart-border: $kendo-component-border !default;
+$kendo-chart-bg: k-color( surface ) !default;
+$kendo-chart-text: k-color( on-app-surface ) !default;
+$kendo-chart-border: k-color( border ) !default;
 
-$kendo-chart-crosshair-background: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 )) !default;
+$kendo-chart-crosshair-background: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
 $kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-text !default;
-$kendo-chart-crosshair-shared-tooltip-background: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-chart-bg, 1 )) !default;
-$kendo-chart-crosshair-shared-tooltip-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )) !default;
+$kendo-chart-crosshair-shared-tooltip-background: k-color( base-subtle ) !default;
+$kendo-chart-crosshair-shared-tooltip-border: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
 
-$kendo-chart-notes-background: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 )) !default;
-$kendo-chart-notes-border: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 )) !default;
-$kendo-chart-notes-lines: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 )) !default;
+$kendo-chart-notes-background: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
+$kendo-chart-notes-border: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
+$kendo-chart-notes-lines: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
 
-$kendo-chart-error-bars-background: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 )) !default;
+$kendo-chart-error-bars-background: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
 
 $kendo-chart-selection-handle-size: 22px !default;
-$kendo-chart-selection-border-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )) !default;
-$kendo-chart-selection-shadow: inset 0 1px 7px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 15%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .15 )) !default;
+$kendo-chart-selection-border-color: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
+$kendo-chart-selection-shadow: inset 0 1px 7px color-mix(in srgb, k-color( on-app-surface ) 15%, transparent) !default;
 
 $kendo-chart-computed-title-height: 0px !default;
 
@@ -145,7 +145,7 @@ $kendo-treemap-padding-x: k-spacing(2) !default;
 $kendo-treemap-padding-y: k-spacing(0.5) !default;
 
 // Chart Overlay
-$kendo-chart-overlay-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-component-bg, .5 )) !default;
+$kendo-chart-overlay-bg: k-color( surface ) !default;
 
 // No Data
 $kendo-chart-no-data-font-size: var( --kendo-font-size-lg, inherit ) !default;
