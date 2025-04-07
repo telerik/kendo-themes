@@ -5,31 +5,9 @@
 @mixin kendo-spreadsheet--theme() {
     @include kendo-spreadsheet--theme-base();
 
-    // Spreadsheet header
-    .k-spreadsheet > .k-tabstrip-wrapper {
-
-        .k-tabstrip-items-wrapper {
-            color: $kendo-color-primary-contrast;
-            background-color: $kendo-color-primary;
-        }
-        .k-tabstrip-items .k-item {
-            color: inherit;
-        }
-        .k-tabstrip-items .k-item.k-active::after {
-            border-color: $kendo-color-primary-contrast;
-        }
-    }
-
-    // Quick access toolbar
-    .k-spreadsheet-quick-access-toolbar {
-        color: $kendo-color-primary-contrast;
-        background-color: $kendo-color-primary;
-    }
-
-    // Selection
-    .k-spreadsheet .k-selection-full,
-    .k-spreadsheet .k-selection-partial {
-        &::after { border-color: $kendo-color-secondary; }
+    .k-spreadsheet-action-bar,
+    .k-spreadsheet-view {
+        background-color: k-color( surface-alt );
     }
 
 }

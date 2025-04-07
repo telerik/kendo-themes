@@ -7,14 +7,4 @@
 
     @include kendo-pivotgrid--theme-base();
 
-    // Hover and Focus state have the same bg color
-    .k-pivotgrid-cell:focus,
-    .k-pivotgrid-cell.k-focus,
-    .k-master-row > .k-pivotgrid-cell:focus,
-    .k-grouping-row > .k-pivotgrid-cell:focus,
-    .k-detail-row > .k-pivotgrid-cell:focus,
-    .k-group-footer > .k-pivotgrid-cell:focus {
-        @include fill ( $bg: $kendo-pivotgrid-hover-bg );
-    }
-
 }
