@@ -1,0 +1,6 @@
+@use "@progress/kendo-theme-core/scss/components/marquee/_layout.scss" as *;
+
+
+@mixin kendo-marquee--layout() {
+    @include kendo-marquee--layout-base();
+}

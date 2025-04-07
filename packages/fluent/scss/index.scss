@@ -116,6 +116,7 @@
 @forward "./signature/_index.scss";
 @forward "./otp/_index.scss";
 @forward "./column-menu/_index.scss";
+@forward "./marquee/_index.scss";
 
 
 // Use component modules
@@ -153,6 +154,7 @@
 @use "./skeleton/index.scss" as *;
 @use "./tooltip/index.scss" as *;
 @use "./time-marker/index.scss" as *;
+@use "./marquee/_index.scss" as *;
 
 
 // Form helpers
@@ -328,6 +330,7 @@
     @include kendo-skeleton--styles();
     @include kendo-tooltip--styles();
     @include kendo-time-marker--styles();
+    @include kendo-marquee--styles();
 
 
     // Form helpers
