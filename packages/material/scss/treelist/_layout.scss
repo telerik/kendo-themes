@@ -5,22 +5,4 @@
 @mixin kendo-treelist--layout() {
 
     @include kendo-treelist--layout-base();
-
-    .k-treelist {
-        tr.k-footer-template td {
-            border-width: $kendo-treelist-footer-row-border-width 0;
-        }
-
-        tr.k-footer td,
-        tr.k-footer-template + tr.k-footer-template td {
-            border-width: 0 0 $kendo-treelist-footer-row-border-width;
-        }
-    }
-
-    .k-treelist-scrollable {
-        tr.k-group-footer td {
-            border-bottom-width: $kendo-treelist-footer-row-border-width;
-        }
-    }
-
 }

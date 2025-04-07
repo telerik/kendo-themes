@@ -10,13 +10,13 @@
 
     .k-scheduler-layout td.k-selected,
     .k-scheduler-layout .k-scheduler-cell.k-selected {
-        background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( secondary ) 25%, transparent), rgba($kendo-selected-bg, .25));
+        background-color: color-mix(in srgb, k-color( secondary ) 25%, transparent);
     }
 
     // Agenda view
     .k-scheduler-agendaview {
         .k-scheduler-content tr.k-selected {
-            background-color: if($kendo-enable-color-system, color-mix(in srgb, k-color( secondary ) 25%, transparent), rgba($kendo-selected-bg, .25));
+            background-color: color-mix(in srgb, k-color( secondary ) 25%, transparent);
         }
     }
 
@@ -32,7 +32,7 @@
 
         .k-resize-handle::before {
             // TODO: $kendo-scheduler-content-area-bg
-            background-color: $kendo-color-primary-contrast;
+            background-color: k-color( on-primary );
         }
     }
 
