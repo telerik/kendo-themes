@@ -5,29 +5,33 @@
 @mixin kendo-table--layout() {
     @include kendo-table--layout-base();
 
-    @if($kendo-enable-color-system) {
-        .k-table {
-            td:focus,
-            td.k-focus,
-            th:focus,
-            th.k-focus {
-                position: relative;
+    .k-table {
 
-                &::after {
-                    content: "";
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    pointer-events: none;
-                }
-            }
+        th,
+        .k-table-th{
+            font-weight: var( --kendo-font-weight-semibold, 600 );
+        }
 
-            td.k-grid-content-sticky,
-            td.k-grid-header-sticky {
-                position: sticky;
+        td:focus,
+        td.k-focus,
+        th:focus,
+        th.k-focus {
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
             }
+        }
+
+        td.k-grid-content-sticky,
+        td.k-grid-header-sticky {
+            position: sticky;
         }
     }
 }
