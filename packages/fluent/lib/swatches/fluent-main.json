@@ -4,7 +4,6 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-fluent",
     "version": "5.1.2-dev.7",
-    "api": "modern",
     "previewColors": [
         "#ffffff",
         "#f5f5f5",
@@ -13,16 +12,5 @@
         "#424242"
     ],
     "components": [],
-    "groups": [
-        {
-            "name": "New color system",
-            "colorSystem": {
-                "kendo-enable-color-system": {
-                    "name": "New color system",
-                    "type": "boolean",
-                    "value": true
-                }
-            }
-        }
-    ]
+    "groups": []
 }
