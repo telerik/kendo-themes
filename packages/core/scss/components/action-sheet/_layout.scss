@@ -69,7 +69,12 @@
         overflow: hidden;
         position: relative;
         display: flex;
-        flex-flow: row nowrap;
+
+        // Leave only "flex-flow: row nowrap;" here after the suites adopt the "k-actionsheet-view" element.
+        flex-flow: column nowrap;
+        &:has(> .k-actionsheet-view) {
+            flex-flow: row nowrap;
+        }
 
         .k-actionsheet-view {
             display: flex;
