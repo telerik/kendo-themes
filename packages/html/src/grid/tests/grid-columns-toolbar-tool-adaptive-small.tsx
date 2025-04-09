@@ -2,8 +2,7 @@ import { Grid, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridCon
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
 import { ActionSheetFooter, ActionSheetHeader, ActionSheetNormal } from "../../action-sheet";
 import { Button } from "../../button";
-import { Checkbox } from "../../checkbox";
-import { ColumnMenuNormal } from "../../column-menu";
+import { ColumnList, ColumnListItem } from "../../column-menu";
 
 const styles = `
     #test-area {
@@ -191,28 +190,12 @@ export default () => (
                         </ActionSheetFooter>
                     }
                 >
-                    <ColumnMenuNormal size="large">
-                        <div className="k-column-list-wrapper">
-                            <div className="k-column-list">
-                                <label className="k-column-list-item k-disabled">
-                                    <Checkbox checked />
-                                    <span className="k-checkbox-label">Header Name 1</span>
-                                </label>
-                                <label className="k-column-list-item">
-                                    <Checkbox />
-                                    <span className="k-checkbox-label">Header Name 2</span>
-                                </label>
-                                <label className="k-column-list-item">
-                                    <Checkbox />
-                                    <span className="k-checkbox-label">Header Name 3</span>
-                                </label>
-                                <label className="k-column-list-item">
-                                    <Checkbox />
-                                    <span className="k-checkbox-label">Header Name 4</span>
-                                </label>
-                            </div>
-                        </div>
-                    </ColumnMenuNormal>
+                    <ColumnList size="large">
+                        <ColumnListItem checked disabled label="Header Name 1" />
+                        <ColumnListItem label="Header Name 2" />
+                        <ColumnListItem label="Header Name 3" />
+                        <ColumnListItem label="Header Name 4" />
+                    </ColumnList>
                 </ActionSheetNormal>
             </section>
 
@@ -304,28 +287,12 @@ export default () => (
                         </ActionSheetFooter>
                     }
                 >
-                    <ColumnMenuNormal size="large">
-                        <div className="k-column-list-wrapper">
-                            <div className="k-column-list">
-                                <label className="k-column-list-item">
-                                    <Checkbox checked />
-                                    <span className="k-checkbox-label">Header Name 1</span>
-                                </label>
-                                <label className="k-column-list-item">
-                                    <Checkbox checked />
-                                    <span className="k-checkbox-label">Header Name 2</span>
-                                </label>
-                                <label className="k-column-list-item">
-                                    <Checkbox />
-                                    <span className="k-checkbox-label">Header Name 3</span>
-                                </label>
-                                <label className="k-column-list-item">
-                                    <Checkbox />
-                                    <span className="k-checkbox-label">Header Name 4</span>
-                                </label>
-                            </div>
-                        </div>
-                    </ColumnMenuNormal>
+                    <ColumnList size="large">
+                        <ColumnListItem checked label="Header Name 1" />
+                        <ColumnListItem checked label="Header Name 2" />
+                        <ColumnListItem label="Header Name 3" />
+                        <ColumnListItem label="Header Name 4" />
+                    </ColumnList>
                 </ActionSheetNormal>
             </section>
 

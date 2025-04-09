@@ -1,7 +1,6 @@
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
-import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuExpander, ColumnMenuNormal } from '../../column-menu';
+import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuExpander, ColumnMenuNormal, ColumnList, ColumnListItem } from '..';
 
 const styles = `
     .k-animation-container,
@@ -36,29 +35,13 @@ export default () =>(
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
                         <ColumnMenuExpander itemText="Expanded item" itemStartIcon="columns" expanded={true} itemContent={
-                            <>
-                                <div className="k-column-list-wrapper">
-                                    <div className="k-column-list">
-                                        <label className="k-column-list-item">
-                                            <Checkbox />
-                                            <span className="k-checkbox-label">Column 1</span>
-                                        </label>
-                                        <label className="k-column-list-item k-focus">
-                                            <Checkbox />
-                                            <span className="k-checkbox-label">Column 2</span>
-                                        </label>
-                                        <label className="k-column-list-item">
-                                            <Checkbox />
-                                            <span className="k-checkbox-label">Column 3</span>
-                                        </label>
-                                        <label className="k-column-list-item">
-                                            <Checkbox />
-                                            <span className="k-checkbox-label">Column 4</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </>
-                        }/>
+                            <ColumnList>
+                                <ColumnListItem label="Column 1" />
+                                <ColumnListItem focus label="Column 2" />
+                                <ColumnListItem label="Column 3" />
+                                <ColumnListItem label="Column 4" />
+                            </ColumnList>
+                        } />
                     </ColumnMenuItemWrapper>
                     <ColumnMenuItemWrapper>
                         <ColumnMenuExpander itemText="Expandable item" itemStartIcon="filter" />
@@ -78,26 +61,12 @@ export default () =>(
                     <ColumnMenuItemWrapper>
                         <ColumnMenuExpander itemText="Expanded item" itemStartIcon="columns" expanded={true} itemContent={
                             <>
-                                <div className="k-column-list-wrapper">
-                                    <div className="k-column-list">
-                                        <label className="k-column-list-item">
-                                            <Checkbox />
-                                            <span className="k-checkbox-label">Column 1</span>
-                                        </label>
-                                        <label className="k-column-list-item k-focus">
-                                            <Checkbox />
-                                            <span className="k-checkbox-label">Column 2</span>
-                                        </label>
-                                        <label className="k-column-list-item">
-                                            <Checkbox />
-                                            <span className="k-checkbox-label">Column 3</span>
-                                        </label>
-                                        <label className="k-column-list-item">
-                                            <Checkbox />
-                                            <span className="k-checkbox-label">Column 4</span>
-                                        </label>
-                                    </div>
-                                </div>
+                                <ColumnList>
+                                    <ColumnListItem label="Column 1" />
+                                    <ColumnListItem focus label="Column 2" />
+                                    <ColumnListItem label="Column 3" />
+                                    <ColumnListItem label="Column 4" />
+                                </ColumnList>
                                 <ActionButtons alignment="stretched">
                                     <Button themeColor="primary">Apply</Button>
                                     <Button>Reset</Button>

@@ -1,4 +1,6 @@
 export * from './column-menu.spec';
+export * from './column-list.spec';
+export * from './column-list-item';
 export * from './column-menu-item.spec';
 export * from './column-menu-item-wrapper';
 export * from './column-menu-item-content';

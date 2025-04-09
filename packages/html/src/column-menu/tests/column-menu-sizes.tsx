@@ -1,9 +1,8 @@
-import { Checkbox } from "../../checkbox";
 import ColumnMenu from "../column-menu.spec";
 import ColumnMenuExpander from "../column-menu-expander.spec";
 import { ColumnMenuItemWrapper } from "../column-menu-item-wrapper";
 import ColumnMenuItem from "../column-menu-item.spec";
-import { ColumnMenuNormal } from "../templates/column-menu-normal";
+import { ColumnListItem, ColumnList, ColumnMenuNormal } from ".."
 
 export default () => (
     <>
@@ -22,29 +21,13 @@ export default () => (
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
                             <ColumnMenuExpander itemText="Expanded item" itemStartIcon="columns" expanded={true} itemContent={
-                                <>
-                                    <div className="k-column-list-wrapper">
-                                        <div className="k-column-list">
-                                            <label className="k-column-list-item">
-                                                <Checkbox />
-                                                <span className="k-checkbox-label">Column 1</span>
-                                            </label>
-                                            <label className="k-column-list-item k-focus">
-                                                <Checkbox />
-                                                <span className="k-checkbox-label">Column 2</span>
-                                            </label>
-                                            <label className="k-column-list-item">
-                                                <Checkbox />
-                                                <span className="k-checkbox-label">Column 3</span>
-                                            </label>
-                                            <label className="k-column-list-item">
-                                                <Checkbox />
-                                                <span className="k-checkbox-label">Column 4</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </>
-                            }/>
+                                <ColumnList size={size}>
+                                    <ColumnListItem label="Column 1" />
+                                    <ColumnListItem focus label="Column 2" />
+                                    <ColumnListItem label="Column 3" />
+                                    <ColumnListItem label="Column 4" />
+                                </ColumnList>
+                            } />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
                             <ColumnMenuExpander itemText="Expandable item" itemStartIcon="filter" />

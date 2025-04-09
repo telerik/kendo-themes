@@ -3,10 +3,9 @@ import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
 import { Button } from "../../button";
 import { ActionSheetNormal, ActionSheetHeader, ActionSheetFooter, ActionSheetView } from "../../action-sheet";
 import { ButtonGroup } from "../../button-group";
-import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenu } from "../../column-menu";
+import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenu, ColumnList, ColumnListItem } from "../../column-menu";
 import { DropdownList } from "../../dropdownlist";
 import { NumericTextbox } from "../../numerictextbox";
-import { Checkbox } from "../../checkbox";
 
 const styles = `
     #test-area {
@@ -426,28 +425,12 @@ export default () => (
                                         <Button icon="check" size="large" themeColor="primary">Apply</Button>
                                     </ActionSheetFooter>
                                 }>
-                                <ColumnMenuNormal size="large">
-                                    <div className="k-column-list-wrapper">
-                                        <div className="k-column-list">
-                                            <label className="k-column-list-item">
-                                                <Checkbox checked />
-                                                <span className="k-checkbox-label">Header Name 1</span>
-                                            </label>
-                                            <label className="k-column-list-item">
-                                                <Checkbox checked />
-                                                <span className="k-checkbox-label">Header Name 2</span>
-                                            </label>
-                                            <label className="k-column-list-item">
-                                                <Checkbox />
-                                                <span className="k-checkbox-label">Header Name 3</span>
-                                            </label>
-                                            <label className="k-column-list-item">
-                                                <Checkbox />
-                                                <span className="k-checkbox-label">Header Name 4</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </ColumnMenuNormal>
+                                <ColumnList size="large">
+                                    <ColumnListItem checked label="Header Name 1" />
+                                    <ColumnListItem checked label="Header Name 2" />
+                                    <ColumnListItem label="Header Name 3" />
+                                    <ColumnListItem label="Header Name 4" />
+                                </ColumnList>
                             </ActionSheetView>
                         </>
                     }
