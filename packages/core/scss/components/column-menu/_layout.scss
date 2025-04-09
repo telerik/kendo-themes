@@ -16,7 +16,18 @@
             font-size: $_font-size;
             line-height: $_line-height;
 
-            .k-columnmenu-item,
+            .k-columnmenu-item {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+                font-size: $_font-size;
+                line-height: $_line-height;
+            }
+        }
+
+        .k-column-list-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+
             .k-column-list-item {
                 padding-block: $_padding-y;
                 padding-inline: $_padding-x;
