@@ -67,6 +67,8 @@
     @each $name, $color in $kendo-button-theme-colors {
         .k-button-outline-#{$name},
         .k-button-link-#{$name} {
+            color: k-color( #{$name}-on-surface );
+
             &:active,
             &.k-active,
             &.k-selected {
@@ -85,7 +87,7 @@
     // Outline button
     @each $name, $color in $kendo-button-theme-colors {
         .k-button-outline-#{$name} {
-            color: k-color( #{$name}-on-surface );
+            // color: k-color( #{$name}-on-surface );
 
             @if $name == "base" or $name == "primary"  {
                 border-color: k-color( base-emphasis );
@@ -100,7 +102,6 @@
             &:active,
             &.k-active,
             &.k-selected {
-                // color: k-color( #{$name}-on-surface );
                 @if $name == "base" or $name == "primary"  {
                     border-color: k-color( base-emphasis );
                 } @else if $name == "secondary" {
@@ -108,19 +109,7 @@
                 } @else {
                     border-color: k-color( #{$name}-on-surface );
                 }
-
             }
-
-            /* &:active,
-            &.k-active,
-            &.k-selected {
-                background-color: if( $name == "base" or $name == "secondary", color-mix(in srgb, currentColor 12%, transparent), color-mix(in srgb, k-color( $name ) 12%, transparent));
-            }
-
-            &:hover,
-            &.k-hover {
-                background-color: if( $name == "base" or $name == "secondary", color-mix(in srgb, currentColor 8%, transparent), color-mix(in srgb, k-color( $name ) 8%, transparent));
-            } */
 
             &:focus,
             &.k-focus {
@@ -152,12 +141,22 @@
         }
     }
 
+     // Clear button
+     @each $name, $color in $kendo-button-theme-colors {
+        .k-button-clear-#{$name} {
+            &:focus,
+            &.k-focus {
+                outline: 0;
+            }
+        }
+    }
+
 
     // Link button
     @each $name, $color in $kendo-button-theme-colors {
         .k-button-link-#{$name} {
             text-decoration: underline;
-            color: k-color( #{$name}-on-surface );
+            // color: k-color( #{$name}-on-surface );
 
             &:hover,
             &.k-hover,
@@ -187,17 +186,6 @@
     // Button group
     .k-button-group {
         @include box-shadow( $kendo-button-shadow );
-
-        .k-button {
-            // @include box-shadow( none );
-        }
-
-        // Disabled state
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            @include box-shadow( none );
-        }
     }
 
 
