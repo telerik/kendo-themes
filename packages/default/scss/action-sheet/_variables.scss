@@ -87,6 +87,7 @@ $kendo-actionsheet-item-disabled-opacity: null !default;
 
 // Adaptive Actionsheet
 $kendo-adaptive-actionsheet-font-size: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-adaptive-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
 $kendo-adaptive-actionsheet-titlebar-padding-y: k-spacing(4) !default;
 $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-y !default;
 
@@ -162,6 +163,7 @@ $kendo-adaptive-actionsheet-footer-padding-x: k-spacing(4) !default;
     $kendo-actionsheet-item-focus-background: $kendo-actionsheet-item-focus-background,
     $kendo-actionsheet-item-disabled-opacity: $kendo-actionsheet-item-disabled-opacity,
     $kendo-adaptive-actionsheet-font-size: $kendo-adaptive-actionsheet-font-size,
+    $kendo-adaptive-actionsheet-line-height: $kendo-adaptive-actionsheet-line-height,
     $kendo-adaptive-actionsheet-titlebar-padding-y: $kendo-adaptive-actionsheet-titlebar-padding-y,
     $kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-x,
     $kendo-adaptive-actionsheet-content-padding-y: $kendo-adaptive-actionsheet-content-padding-y,
