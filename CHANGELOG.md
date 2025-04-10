@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.6.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.1...v10.6.0-dev.2) (2025-04-10)
+
+
+### Bug Fixes
+
+* **calendar:** wrong width in different sizes ([aa4062c](https://github.com/telerik/kendo-themes/commit/aa4062c5cec400416720ef2aa835df50a313beeb))
+
+
+### Features
+
+* add column-list size styles ([0bcd319](https://github.com/telerik/kendo-themes/commit/0bcd3194033f6be56437ea8e5da6c2672363660f))
+* **html:** add column-list spec ([7f9bc11](https://github.com/telerik/kendo-themes/commit/7f9bc111ae595f3e4ed622537bc7f9b088882694))
+
+
+
+
+
 # [10.6.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.0...v10.6.0-dev.1) (2025-04-07)
 
 **Note:** Version bump only for package kendo-themes.repo

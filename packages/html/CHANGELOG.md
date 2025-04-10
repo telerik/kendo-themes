@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.6.0-dev.2](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.1...v10.6.0-dev.2) (2025-04-10)
+
+
+### Features
+
+* **html:** add column-list spec ([7f9bc11](https://github.com/telerik/kendo-themes/commit/7f9bc111ae595f3e4ed622537bc7f9b088882694))
+
+
+
+
+
 # [10.6.0-dev.1](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.0...v10.6.0-dev.1) (2025-04-07)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
