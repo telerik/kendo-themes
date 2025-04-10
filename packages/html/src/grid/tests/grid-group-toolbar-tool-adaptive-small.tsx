@@ -2,7 +2,7 @@ import { GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
 import { Button } from "../../button";
 import { ActionSheetNormal, ActionSheetHeader, ActionSheetFooter } from "../../action-sheet";
-import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuItemAction } from "../../column-menu";
+import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem } from "../../column-menu";
 
 
 const styles = `
@@ -183,10 +183,10 @@ export default () => (
                 >
                     <ColumnMenuNormal size="large">
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 1" actionsEnd={<ColumnMenuItemAction type="add" />} />
-                            <ColumnMenuItem text="Header Name 2" actionsEnd={<ColumnMenuItemAction type="add" />} />
-                            <ColumnMenuItem text="Header Name 3" actionsEnd={<ColumnMenuItemAction type="add" />} />
-                            <ColumnMenuItem text="Header Name 4" actionsEnd={<ColumnMenuItemAction type="add" />} />
+                            <ColumnMenuItem text="Header Name 1" />
+                            <ColumnMenuItem text="Header Name 2" />
+                            <ColumnMenuItem text="Header Name 3" />
+                            <ColumnMenuItem text="Header Name 4" />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </ActionSheetNormal>
@@ -277,12 +277,12 @@ export default () => (
                 >
                     <ColumnMenuNormal size="large">
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 1" actionsEnd={<ColumnMenuItemAction type="remove" />} />
+                            <ColumnMenuItem text="Header Name 1" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 2" actionsEnd={<ColumnMenuItemAction type="add" />} />
-                            <ColumnMenuItem text="Header Name 3" actionsEnd={<ColumnMenuItemAction type="add" />} />
-                            <ColumnMenuItem text="Header Name 4" actionsEnd={<ColumnMenuItemAction type="add" />} />
+                            <ColumnMenuItem text="Header Name 2" />
+                            <ColumnMenuItem text="Header Name 3" />
+                            <ColumnMenuItem text="Header Name 4" />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </ActionSheetNormal>
@@ -373,12 +373,12 @@ export default () => (
                 >
                     <ColumnMenuNormal size="large">
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem actionsStart={ <ColumnMenuItemAction type="drag" /> } text="Header Name 1" actionsEnd={<ColumnMenuItemAction type="remove" />} />
-                            <ColumnMenuItem actionsStart={ <ColumnMenuItemAction type="drag" /> } text="Header Name 2" actionsEnd={<ColumnMenuItemAction type="remove" />} />
+                            <ColumnMenuItem text="Header Name 1" />
+                            <ColumnMenuItem text="Header Name 2" />
                         </ColumnMenuItemWrapper>
                         <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 3" actionsEnd={<ColumnMenuItemAction type="add" />} />
-                            <ColumnMenuItem text="Header Name 4" actionsEnd={<ColumnMenuItemAction type="add" />} />
+                            <ColumnMenuItem text="Header Name 3" />
+                            <ColumnMenuItem text="Header Name 4" />
                         </ColumnMenuItemWrapper>
                     </ColumnMenuNormal>
                 </ActionSheetNormal>
