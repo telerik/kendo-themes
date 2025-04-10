@@ -27,14 +27,14 @@ $kendo-editor-placeholder-opacity: $kendo-input-placeholder-opacity !default;
 
 /// The selected text color of the Editor.
 /// @group editor
-$kendo-editor-selected-text: $kendo-color-primary-contrast !default;
+$kendo-editor-selected-text: k-color(on-primary) !default;
 /// The selected background color of the Editor.
 /// @group editor
-$kendo-editor-selected-bg: $kendo-color-primary !default;
+$kendo-editor-selected-bg: k-color(primary) !default;
 
 /// The highlighted background color of the Editor.
 /// @group editor
-$kendo-editor-highlighted-bg: if($kendo-enable-color-system, k-color( primary-subtle ), color.mix($kendo-color-primary, #ffffff, 20%)) !default;
+$kendo-editor-highlighted-bg: k-color( primary-subtle ) !default;
 
 /// The horizontal margin of the Editor's export tool icon.
 /// @group editor
@@ -78,6 +78,10 @@ $kendo-editor-filebrowser-tiles-padding-y: k-spacing(1) !default;
 /// @group editor
 $kendo-editor-content-padding: k-spacing(4) !default;
 
+$kendo-editor-ct-cell-text: k-color( on-secondary ) !default;
+$kendo-editor-ct-cell-bg: k-color( secondary ) !default;
+$kendo-editor-ct-cell-border: k-color( border ) !default;
+
 @forward "@progress/kendo-theme-core/scss/components/editor/_variables.scss" with (
     $kendo-editor-border-width: $kendo-editor-border-width,
     $kendo-editor-font-family: $kendo-editor-font-family,
@@ -99,5 +103,8 @@ $kendo-editor-content-padding: k-spacing(4) !default;
     $kendo-editor-inline-padding-y: $kendo-editor-inline-padding-y,
     $kendo-editor-filebrowser-tiles-padding-x: $kendo-editor-filebrowser-tiles-padding-x,
     $kendo-editor-filebrowser-tiles-padding-y: $kendo-editor-filebrowser-tiles-padding-y,
-    $kendo-editor-content-padding: $kendo-editor-content-padding
+    $kendo-editor-content-padding: $kendo-editor-content-padding,
+    $kendo-editor-ct-cell-text: $kendo-editor-ct-cell-text,
+    $kendo-editor-ct-cell-bg: $kendo-editor-ct-cell-bg,
+    $kendo-editor-ct-cell-border: $kendo-editor-ct-cell-border
 );

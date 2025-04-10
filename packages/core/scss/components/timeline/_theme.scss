@@ -1,4 +1,3 @@
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../mixins/index.import.scss" as *;
 @use "./variables.scss" as *;
 @use "../card/_variables.scss" as *;
@@ -36,14 +35,14 @@
                 }
 
                 &::-webkit-scrollbar-thumb:hover {
-                    background: $kendo-hover-border;
+                    background: k-color( border );
                 }
             }
         }
 
         // TODO: remove
         .k-timeline-date {
-            color: $kendo-body-text;
+            color: k-color( on-app-surface );
         }
 
         .k-timeline-arrow.k-disabled {

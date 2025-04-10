@@ -126,7 +126,7 @@ $kendo-button-brand-colors: (
     error: error,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
 ) !default;
 
@@ -136,236 +136,236 @@ $kendo-button-brand-colors: (
 // The color matrix for the base Button
 $_tc-base-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, border), ($kendo-color-white, 160, 110)),
-        hover: if($kendo-enable-color-system, (color-hover, on-color, border), (20, 190, 110)),
-        focus: if($kendo-enable-color-system, (color, on-color, border, on-color), ($kendo-color-white, 160, 110, 130)),
-        focus-hover: if($kendo-enable-color-system, (color-hover, on-color, border, on-color), (20, 190, 110, 130)),
-        active: if($kendo-enable-color-system, (color-active, on-color, border), (30, 190, 110)),
-        active-hover: if($kendo-enable-color-system, (color-hover, on-color, border), (20, 190, 110)),
-        disabled: if($kendo-enable-color-system, (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent), (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit )))
+        normal: (color, on-color, border),
+        hover: (color-hover, on-color, border),
+        focus: (color, on-color, border, on-color),
+        focus-hover: (color-hover, on-color, border, on-color),
+        active: (color-active, on-color, border),
+        active-hover: (color-hover, on-color, border),
+        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 160, currentColor)),
-        hover: if($kendo-enable-color-system, (on-color, color, on-color), (190, $kendo-color-white, 190)),
-        focus: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor, inherit), (transparent, 160, currentColor, inherit)),
-        focus-hover: if($kendo-enable-color-system, (on-color, color, on-color, inherit), (190, $kendo-color-white, 190, inherit)),
-        active: if($kendo-enable-color-system, (on-color, color, on-color), (190, $kendo-color-white, 190)),
-        active-hover: if($kendo-enable-color-system, (on-color, color, on-color), (20, 190, 110)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)), (initial, var( --kendo-disabled-text, inherit ), 90))
+        normal: (transparent, color-on-surface, currentColor),
+        hover: (on-color, color, on-color),
+        focus: (transparent, color-on-surface, currentColor, inherit),
+        focus-hover: (on-color, color, on-color, inherit),
+        active: (on-color, color, on-color),
+        active-hover: (on-color, color, on-color),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
     ),
     link: (
-        normal: if($kendo-enable-color-system, (transparent, on-color, transparent), (transparent, 160, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, on-color, transparent), (transparent, 190, transparent)),
-        focus: if($kendo-enable-color-system, (transparent, on-color, transparent, color-subtle-active), (transparent, 160, transparent, 30)),
-        focus-hover: if($kendo-enable-color-system, (transparent, on-color, color-subtle-active, transparent), (transparent, 190, 30, transparent)),
-        active: if($kendo-enable-color-system, (transparent, on-color, transparent), (transparent, 190, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, on-color, transparent), (transparent, 190, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, on-color, transparent),
+        hover: (transparent, on-color, transparent),
+        focus: (transparent, on-color, transparent, color-subtle-active),
+        focus-hover: (transparent, on-color, color-subtle-active, transparent),
+        active: (transparent, on-color, transparent),
+        active-hover: (transparent, on-color, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     ),
     clear: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 160, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 190, transparent)),
-        focus: if($kendo-enable-color-system, (color-subtle, color-on-surface, transparent, color-active), (30, 160, transparent, 130)),
-        focus-hover:  if($kendo-enable-color-system, (transparent, color-on-surface, transparent, color-active), (transparent, 190, transparent, 130)),
-        active: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 190, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 190, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color-on-surface, transparent),
+        hover: (transparent, color-on-surface, transparent),
+        focus: (color-subtle, color-on-surface, transparent, color-active),
+        focus-hover:  (transparent, color-on-surface, transparent, color-active),
+        active: (transparent, color-on-surface, transparent),
+        active-hover: (transparent, color-on-surface, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     )
 ) !default;
 
 // The color matrix for primary, error, success, info, secondary, tertiary Buttons
 $_tc-brand-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100)),
-        hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover), (110, $kendo-color-white, 110)),
-        focus: if($kendo-enable-color-system, (color, on-color, color, inherit), (100, $kendo-color-white, 100, inherit)),
-        focus-hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover, inherit), (110, $kendo-color-white, 110, inherit)),
-        active: if($kendo-enable-color-system, (color-active, on-color, color-active), (120, $kendo-color-white, 120)),
-        active-hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover), (110, $kendo-color-white, 110)),
-        disabled: if($kendo-enable-color-system, (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent), (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit )))
+        normal: (color, on-color, color),
+        hover: (color-hover, on-color, color-hover),
+        focus: (color, on-color, color, inherit),
+        focus-hover: (color-hover, on-color, color-hover, inherit),
+        active: (color-active, on-color, color-active),
+        active-hover: (color-hover, on-color, color-hover),
+        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
     ),
     flat: (
-        normal: if($kendo-enable-color-system, (initial, color-on-surface, transparent), (initial, 100, transparent)),
-        hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent), (10, 110, transparent)),
-        focus: if($kendo-enable-color-system, (initial, color-on-surface, transparent, color-subtle-active), (initial, 100, transparent, 30)),
-        focus-hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent, color-subtle-active), (10, 110, transparent, 30)),
-        active: if($kendo-enable-color-system, (color-subtle-hover, color-hover, transparent), (20, 110, transparent)),
-        active-hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent), (10, 110, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), initial))
+        normal: (initial, color-on-surface, transparent),
+        hover: (color-subtle, color-hover, transparent),
+        focus: (initial, color-on-surface, transparent, color-subtle-active),
+        focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
+        active: (color-subtle-hover, color-hover, transparent),
+        active-hover: (color-subtle, color-hover, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 100, currentColor)),
-        hover: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100)),
-        focus: if($kendo-enable-color-system, (transparent, color-on-surface, color, inherit), (transparent, 100, 100, inherit)),
-        focus-hover: if($kendo-enable-color-system, (color, on-color, color, inherit), (100, $kendo-color-white, 100, inherit)),
-        active: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100)),
-        active-hover: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)), (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit )))
+        normal: (transparent, color-on-surface, currentColor),
+        hover: (color, on-color, color),
+        focus: (transparent, color-on-surface, color, inherit),
+        focus-hover: (color, on-color, color, inherit),
+        active: (color, on-color, color),
+        active-hover: (color, on-color, color),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
     ),
     link: (
-        normal: if($kendo-enable-color-system, (transparent, color, transparent), (transparent, 100, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-hover, transparent), (transparent, 130, transparent)),
-        focus: if($kendo-enable-color-system, (transparent, color, transparent, color-subtle-active), (transparent, 100, transparent, 30)),
-        focus-hover: if($kendo-enable-color-system, (transparent, color-hover, transparent, color-subtle-active), (transparent, 130, transparent, 30)),
-        active: if($kendo-enable-color-system, (transparent, color-active, transparent), (transparent, 140, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-hover, transparent), (transparent, 130, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color, transparent),
+        hover: (transparent, color-hover, transparent),
+        focus: (transparent, color, transparent, color-subtle-active),
+        focus-hover: (transparent, color-hover, transparent, color-subtle-active),
+        active: (transparent, color-active, transparent),
+        active-hover: (transparent, color-hover, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     ),
     clear: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 100, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 110, transparent)),
-        focus: if($kendo-enable-color-system, (color-subtle, color-on-surface, transparent), (20, 100, transparent)),
-        focus-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 110, transparent)),
-        active: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 120, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 110, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color-on-surface, transparent),
+        hover: (transparent, color-on-surface, transparent),
+        focus: (color-subtle, color-on-surface, transparent),
+        focus-hover: (transparent, color-on-surface, transparent),
+        active: (transparent, color-on-surface, transparent),
+        active-hover: (transparent, color-on-surface, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     )
 ) !default;
 
 // The color matrix for warning Buttons
 $_tc-warning-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (100, k-get-theme-color-var( neutral-160 ), 100)),
-        hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover), (110, k-get-theme-color-var( neutral-190 ), 110)),
-        focus: if($kendo-enable-color-system, (color, on-color, color, app-surface), (100, k-get-theme-color-var( neutral-160 ), 100, $kendo-color-white)),
-        focus-hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover, app-surface), (110, k-get-theme-color-var( neutral-190 ), 110, $kendo-color-white)),
-        active: if($kendo-enable-color-system, (color-active, on-color, color-active), (120, k-get-theme-color-var( neutral-190 ), 120)),
-        active-hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover), (110, k-get-theme-color-var( neutral-190 ), 110)),
-        disabled: if($kendo-enable-color-system, (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent), (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit )))
+        normal: (color, on-color, color),
+        hover: (color-hover, on-color, color-hover),
+        focus: (color, on-color, color, app-surface),
+        focus-hover: (color-hover, on-color, color-hover, app-surface),
+        active: (color-active, on-color, color-active),
+        active-hover: (color-hover, on-color, color-hover),
+        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
     ),
     flat: (
-        normal: if($kendo-enable-color-system, (initial, color-on-surface, transparent), (initial, 100, transparent)),
-        hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent), (10, 110, transparent)),
-        focus: if($kendo-enable-color-system, (initial, color-on-surface, transparent, color-subtle-active), (initial, 100, transparent, 30)),
-        focus-hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent, color-subtle-active), (10, 110, transparent, 30)),
-        active: if($kendo-enable-color-system, (color-subtle-hover, color-hover, transparent), (20, 110, transparent)),
-        active-hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent), (10, 110, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), initial))
+        normal: (initial, color-on-surface, transparent),
+        hover: (color-subtle, color-hover, transparent),
+        focus: (initial, color-on-surface, transparent, color-subtle-active),
+        focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
+        active: (color-subtle-hover, color-hover, transparent),
+        active-hover: (color-subtle, color-hover, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 100, currentColor)),
-        hover: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-black, 100)),
-        focus: if($kendo-enable-color-system, (transparent, color-on-surface, color-on-surface, inherit), (transparent, 100, 100, inherit)),
-        focus-hover: if($kendo-enable-color-system, (color, on-color, color, inherit), (100, $kendo-color-black, 100, inherit)),
-        active: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-black, 100)),
-        active-hover: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-black, 100)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)), (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit )))
+        normal: (transparent, color-on-surface, currentColor),
+        hover: (color, on-color, color),
+        focus: (transparent, color-on-surface, color-on-surface, inherit),
+        focus-hover: (color, on-color, color, inherit),
+        active: (color, on-color, color),
+        active-hover: (color, on-color, color),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
     ),
     link: (
-        normal: if($kendo-enable-color-system, (transparent, color, transparent), (transparent, 100, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-hover, transparent), (transparent, 130, transparent)),
-        focus: if($kendo-enable-color-system, (transparent, color, color-subtle-active), (transparent, 100, 30)),
-        focus-hover: if($kendo-enable-color-system, (transparent, color-hover, transparent, color-subtle-active), (transparent, 130, transparent, 30)),
-        active: if($kendo-enable-color-system, (transparent, color-active, transparent), (transparent, 140, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-hover, transparent), (transparent, 130, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color, transparent),
+        hover: (transparent, color-hover, transparent),
+        focus: (transparent, color, color-subtle-active),
+        focus-hover: (transparent, color-hover, transparent, color-subtle-active),
+        active: (transparent, color-active, transparent),
+        active-hover: (transparent, color-hover, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial),
     ),
     clear: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 100, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 110, transparent)),
-        focus: if($kendo-enable-color-system, (color-subtle, color-on-surface, transparent), (20, 100, transparent)),
-        focus-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 110, transparent)),
-        active: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 120, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 110, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color-on-surface, transparent),
+        hover: (transparent, color-on-surface, transparent),
+        focus: (color-subtle, color-on-surface, transparent),
+        focus-hover: (transparent, color-on-surface, transparent),
+        active: (transparent, color-on-surface, transparent),
+        active-hover: (transparent, color-on-surface, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial),
     )
 ) !default;
 
 // The color matrix for dark Buttons
 $_tc-dark-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160)),
-        hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover), (170, $kendo-color-white, 170)),
-        focus: if($kendo-enable-color-system, (color, on-color, color, on-color), (160, $kendo-color-white, 160, $kendo-color-white)),
-        focus-hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover, on-color), (170, $kendo-color-white, 170, $kendo-color-white)),
-        active: if($kendo-enable-color-system, (color-active, on-color, color-active), (180, $kendo-color-white, 180)),
-        active-hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover), (170, $kendo-color-white, 170)),
-        disabled: if($kendo-enable-color-system, (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent), (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit )))
+        normal: (color, on-color, color),
+        hover: (color-hover, on-color, color-hover),
+        focus: (color, on-color, color, on-color),
+        focus-hover: (color-hover, on-color, color-hover, on-color),
+        active: (color-active, on-color, color-active),
+        active-hover: (color-hover, on-color, color-hover),
+        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent),
     ),
     flat: (
-        normal: if($kendo-enable-color-system, (initial, color-on-surface, transparent), (initial, 160, transparent)),
-        hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent), (10, 170, transparent)),
-        focus: if($kendo-enable-color-system, (initial, color-on-surface, transparent, color-subtle-active), (initial, 160, transparent, 30)),
-        focus-hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent, color-subtle-active), (10, 170, transparent, 30)),
-        active: if($kendo-enable-color-system, (color-subtle-hover, color-hover, transparent), (20, 170, transparent)),
-        active-hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent), (10, 170, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), initial))
+        normal: (initial, color-on-surface, transparent),
+        hover: (color-subtle, color-hover, transparent),
+        focus: (initial, color-on-surface, transparent, color-subtle-active),
+        focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
+        active: (color-subtle-hover, color-hover, transparent),
+        active-hover: (color-subtle, color-hover, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 160, currentColor)),
-        hover: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160)),
-        focus: if($kendo-enable-color-system, (transparent, color-on-surface, color, inherit), (transparent, 160, 160, inherit)),
-        focus-hover: if($kendo-enable-color-system, (color, on-color, color, inherit), (160, $kendo-color-white, 160, inherit)),
-        active: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160)),
-        active-hover: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)), (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit )))
+        normal: (transparent, color-on-surface, currentColor),
+        hover: (color, on-color, color),
+        focus: (transparent, color-on-surface, color, inherit),
+        focus-hover: (color, on-color, color, inherit),
+        active: (color, on-color, color),
+        active-hover: (color, on-color, color),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
     ),
     link: (
-        normal: if($kendo-enable-color-system, (transparent, color, transparent), (transparent, 160, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-hover, transparent), (transparent, 170, transparent)),
-        focus: if($kendo-enable-color-system, (transparent, color, color-subtle-active), (transparent, 160, 30)),
-        focus-hover: if($kendo-enable-color-system, (transparent, color-hover, transparent, color-subtle-active), (transparent, 170, transparent, 30)),
-        active: if($kendo-enable-color-system, (transparent, color-active, transparent), (transparent, 170, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-hover, transparent), (transparent, 170, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color, transparent),
+        hover: (transparent, color-hover, transparent),
+        focus: (transparent, color, color-subtle-active),
+        focus-hover: (transparent, color-hover, transparent, color-subtle-active),
+        active: (transparent, color-active, transparent),
+        active-hover: (transparent, color-hover, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     ),
     clear: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 160, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 170, transparent)),
-        focus: if($kendo-enable-color-system, (color-subtle, color-on-surface, transparent), (20, 160, transparent)),
-        focus-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 170, transparent)),
-        active: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 170, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 170, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color-on-surface, transparent),
+        hover: (transparent, color-on-surface, transparent),
+        focus: (color-subtle, color-on-surface, transparent),
+        focus-hover: (transparent, color-on-surface, transparent),
+        active: (transparent, color-on-surface, transparent),
+        active-hover: (transparent, color-on-surface, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     )
 ) !default;
 
 // The color matrix for light Buttons
 $_tc-light-matrix: (
     solid: (
-        normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50)),
-        hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover), (60, 190, 60)),
-        focus: if($kendo-enable-color-system, (color, on-color, color, app-surface), (50, 160, 50, $kendo-color-white)),
-        focus-hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover, app-surface), (60, 190, 60, $kendo-color-white)),
-        active: if($kendo-enable-color-system, (color-active, on-color, color-active), (70, 190, 70)),
-        active-hover: if($kendo-enable-color-system, (color-hover, on-color, color-hover), (60, 190, 60)),
-        disabled: if($kendo-enable-color-system, (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent), (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit )))
+        normal: (color, on-color, color),
+        hover: (color-hover, on-color, color-hover),
+        focus: (color, on-color, color, app-surface),
+        focus-hover: (color-hover, on-color, color-hover, app-surface),
+        active: (color-active, on-color, color-active),
+        active-hover: (color-hover, on-color, color-hover),
+        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
     ),
     flat: (
-        normal: if($kendo-enable-color-system, (initial, color-on-surface, transparent), (initial, 50, transparent)),
-        hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent), (10, 60, transparent)),
-        focus: if($kendo-enable-color-system, (initial, color-on-surface, transparent, color-subtle-active), (initial, 50, transparent, 30)),
-        focus-hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent, color-subtle-active), (10, 60, transparent, 30)),
-        active: if($kendo-enable-color-system, (color-subtle-hover, color-hover, transparent), (20, 60, transparent)),
-        active-hover: if($kendo-enable-color-system, (color-subtle, color-hover, transparent), (10, 60, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), initial))
+        normal: (initial, color-on-surface, transparent),
+        hover: (color-subtle, color-hover, transparent),
+        focus: (initial, color-on-surface, transparent, color-subtle-active),
+        focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
+        active: (color-subtle-hover, color-hover, transparent),
+        active-hover: (color-subtle, color-hover, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     ),
     outline: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, currentColor), (transparent, 50, currentColor)),
-        hover: if($kendo-enable-color-system, (color, on-color, color), (50, $kendo-color-white, 50)),
-        focus: if($kendo-enable-color-system, (transparent, color-on-surface, color, inherit), (transparent, 50, 50, inherit)),
-        focus-hover: if($kendo-enable-color-system, (color, on-color, color, inherit), (50, $kendo-color-white, 50, inherit)),
-        active: if($kendo-enable-color-system, (color, on-color, color), (50, $kendo-color-white, 50)),
-        active-hover: if($kendo-enable-color-system, (color, on-color, color), (50, $kendo-color-white, 50)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)), (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit )))
+        normal: (transparent, color-on-surface, currentColor),
+        hover: (color, on-color, color),
+        focus: (transparent, color-on-surface, color, inherit),
+        focus-hover: (color, on-color, color, inherit),
+        active: (color, on-color, color),
+        active-hover: (color, on-color, color),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)),
     ),
     link: (
-        normal: if($kendo-enable-color-system, (transparent, color, transparent), (transparent, 50, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-hover, transparent), (transparent, 60, transparent)),
-        focus: if($kendo-enable-color-system, (transparent, color, color-subtle-active), (transparent, 50, 30)),
-        focus-hover: if($kendo-enable-color-system, (transparent, color-hover, transparent, color-subtle-active), (transparent, 60, transparent, 30)),
-        active: if($kendo-enable-color-system, (transparent, color-active, transparent), (transparent, 60, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-hover, transparent), (transparent, 60, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color, transparent),
+        hover: (transparent, color-hover, transparent),
+        focus: (transparent, color, color-subtle-active),
+        focus-hover: (transparent, color-hover, transparent, color-subtle-active),
+        active: (transparent, color-active, transparent),
+        active-hover: (transparent, color-hover, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     ),
     clear: (
-        normal: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 50, transparent)),
-        hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 60, transparent)),
-        focus: if($kendo-enable-color-system, (color-subtle, color-on-surface, transparent), (20, 50, transparent)),
-        focus-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 60, transparent)),
-        active: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 60, transparent)),
-        active-hover: if($kendo-enable-color-system, (transparent, color-on-surface, transparent), (transparent, 60, transparent)),
-        disabled: if($kendo-enable-color-system, (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial), (initial, var( --kendo-disabled-text, inherit ), transparent))
+        normal: (transparent, color-on-surface, transparent),
+        hover: (transparent, color-on-surface, transparent),
+        focus: (color-subtle, color-on-surface, transparent),
+        focus-hover: (transparent, color-on-surface, transparent),
+        active: (transparent, color-on-surface, transparent),
+        active-hover: (transparent, color-on-surface, transparent),
+        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
     )
 ) !default;
 
@@ -377,7 +377,7 @@ $kendo-button-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-base-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, base, if($kendo-enable-color-system, base, neutral), $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, base, base, $ui-states )
     );
 }
 
@@ -403,7 +403,7 @@ $kendo-button-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-dark-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, dark, dark, $ui-states )
     );
 }
 
@@ -411,6 +411,6 @@ $kendo-button-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-light-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, light, if($kendo-enable-color-system, light, neutral), $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, light, light, $ui-states )
     );
 }

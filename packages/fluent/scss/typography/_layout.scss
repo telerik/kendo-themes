@@ -25,8 +25,8 @@
             var( --kendo-letter-spacing, normal ),
         );
         @include fill(
-            var( --kendo-body-text, initial ),
-            var( --kendo-body-bg, initial )
+            k-color( on-app-surface ),
+            k-color( app-surface )
         );
         margin: 0;
 
