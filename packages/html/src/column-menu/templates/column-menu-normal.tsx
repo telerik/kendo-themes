@@ -5,8 +5,8 @@ export const ColumnMenuNormal = (props) => (
         children={
             <>
                 <ColumnMenuItemWrapper>
-                    <ColumnMenuItem text="Sort Ascending" startIcon="sort-asc-small" />
-                    <ColumnMenuItem text="Sort Descending" startIcon="sort-desc-small" />
+                    <ColumnMenuItem text="Sort ascending" startIcon="sort-asc-small" />
+                    <ColumnMenuItem text="Sort descending" startIcon="sort-desc-small" />
                 </ColumnMenuItemWrapper>
                 <ColumnMenuItemWrapper>
                     <ColumnMenuExpander itemText="Columns" itemStartIcon="columns" />
