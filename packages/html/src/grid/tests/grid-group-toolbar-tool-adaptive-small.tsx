@@ -2,7 +2,7 @@ import { GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
 import { Button } from "../../button";
 import { ActionSheetNormal, ActionSheetHeader, ActionSheetFooter } from "../../action-sheet";
-import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem } from "../../column-menu";
+import { GroupMenu, GroupMenuItemWrapper, GroupMenuItem, GroupMenuItemAction } from "../../column-menu";
 
 
 const styles = `
@@ -181,14 +181,14 @@ export default () => (
                         </ActionSheetFooter>
                     }
                 >
-                    <ColumnMenuNormal size="large">
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 1" />
-                            <ColumnMenuItem text="Header Name 2" />
-                            <ColumnMenuItem text="Header Name 3" />
-                            <ColumnMenuItem text="Header Name 4" />
-                        </ColumnMenuItemWrapper>
-                    </ColumnMenuNormal>
+                    <GroupMenu size="large">
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 1" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 2" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 3" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 4" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                        </GroupMenuItemWrapper>
+                    </GroupMenu>
                 </ActionSheetNormal>
             </section>
 
@@ -275,16 +275,16 @@ export default () => (
                         </ActionSheetFooter>
                     }
                 >
-                    <ColumnMenuNormal size="large">
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 1" />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 2" />
-                            <ColumnMenuItem text="Header Name 3" />
-                            <ColumnMenuItem text="Header Name 4" />
-                        </ColumnMenuItemWrapper>
-                    </ColumnMenuNormal>
+                    <GroupMenu size="large">
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 1" actionsEnd={ <GroupMenuItemAction type="remove" /> } />
+                        </GroupMenuItemWrapper>
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 2" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 3" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 4" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                        </GroupMenuItemWrapper>
+                    </GroupMenu>
                 </ActionSheetNormal>
             </section>
 
@@ -371,16 +371,16 @@ export default () => (
                         </ActionSheetFooter>
                     }
                 >
-                    <ColumnMenuNormal size="large">
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 1" />
-                            <ColumnMenuItem text="Header Name 2" />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 3" />
-                            <ColumnMenuItem text="Header Name 4" />
-                        </ColumnMenuItemWrapper>
-                    </ColumnMenuNormal>
+                    <GroupMenu size="large">
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 1" actionsStart={ <GroupMenuItemAction type="drag" /> } actionsEnd={ <GroupMenuItemAction type="remove" /> } />
+                            <GroupMenuItem text="Header Name 2" actionsStart={ <GroupMenuItemAction type="drag" /> } actionsEnd={ <GroupMenuItemAction type="remove" /> } />
+                        </GroupMenuItemWrapper>
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 3" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 4" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                        </GroupMenuItemWrapper>
+                    </GroupMenu>
                 </ActionSheetNormal>
             </section>
         </div>
