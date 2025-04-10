@@ -27,7 +27,7 @@ export default () => (
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
 
-            <span>Column Visibility Single Column</span>
+            <span>Columns Single Column</span>
             <section>
                 <Grid
                     className="k-grid-no-scrollbar"
@@ -117,7 +117,7 @@ export default () => (
                 </Popup>
             </section>
 
-            <span>Column Visibility Multiple Columns</span>
+            <span>Columns Multiple Columns</span>
             <section>
                 <Grid
                     className="k-grid-no-scrollbar"
