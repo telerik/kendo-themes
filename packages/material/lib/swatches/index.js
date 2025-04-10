@@ -1,6 +1,8 @@
 module.exports.main = require('./material-main.json');
 module.exports.mainDark = require('./material-main-dark.json');
 module.exports.aquaDark = require('./material-aqua-dark.json');
+module.exports.two = require('./material-2.json');
+module.exports.twoDark = require('./material-2-dark.json');
 module.exports.arctic = require('./material-arctic.json');
 module.exports.burntTeal = require('./material-burnt-teal.json');
 module.exports.eggplant = require('./material-eggplant.json');
