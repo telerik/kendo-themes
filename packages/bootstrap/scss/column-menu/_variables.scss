@@ -46,6 +46,12 @@ $kendo-column-menu-sizes: (
     )
 ) !default;
 
+// Group Menu
+$kendo-group-menu-item-action-hover-bg: color-mix(in srgb, currentColor 4%, transparent) !default;
+$kendo-group-menu-item-action-selected-bg: color-mix(in srgb, currentColor 16%, transparent) !default;
+$kendo-group-menu-item-add-action-text: k-color(primary) !default;
+$kendo-group-menu-item-border: k-color(border) !default;
+
 
 @forward "@progress/kendo-theme-core/scss/components/column-menu/_variables.scss" with (
     $kendo-column-menu-font-size: $kendo-column-menu-font-size,
@@ -65,5 +71,10 @@ $kendo-column-menu-sizes: (
     $kendo-column-menu-item-md-padding-y: $kendo-column-menu-item-md-padding-y,
     $kendo-column-menu-item-lg-padding-x: $kendo-column-menu-item-lg-padding-x,
     $kendo-column-menu-item-lg-padding-y: $kendo-column-menu-item-lg-padding-y,
-    $kendo-column-menu-sizes: $kendo-column-menu-sizes
+    $kendo-column-menu-sizes: $kendo-column-menu-sizes,
+    // Group Menu
+    $kendo-group-menu-item-action-hover-bg: $kendo-group-menu-item-action-hover-bg,
+    $kendo-group-menu-item-action-selected-bg: $kendo-group-menu-item-action-selected-bg,
+    $kendo-group-menu-item-add-action-text: $kendo-group-menu-item-add-action-text,
+    $kendo-group-menu-item-border: $kendo-group-menu-item-border
 );
