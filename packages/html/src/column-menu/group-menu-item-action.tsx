@@ -1,20 +1,20 @@
 import { Icon } from '../icon';
 import { classNames } from '../misc';
 
-export const COLUMNMENUITEM_ACTION_CLASSNAME = `k-columnmenu-item-action`;
+export const GROUPMENUITEM_ACTION_CLASSNAME = `k-group-menu-item-action`;
 
-export enum columnMenuItemActionType {
+export enum groupMenuItemActionType {
     REMOVE = 'remove',
     ADD = 'add',
     DRAG = 'drag'
 };
 
-export type KendoColumnMenuItemActionProps = {
-    type?: columnMenuItemActionType | string;
+export type KendoGroupMenuItemActionProps = {
+    type?: groupMenuItemActionType | string;
 };
 
-export const ColumnMenuItemAction = (
-    props: KendoColumnMenuItemActionProps &
+export const GroupMenuItemAction = (
+    props: KendoGroupMenuItemActionProps &
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
@@ -25,13 +25,13 @@ export const ColumnMenuItemAction = (
     let icon;
 
     switch (type) {
-        case columnMenuItemActionType.REMOVE:
+        case groupMenuItemActionType.REMOVE:
             icon = <Icon icon="x-circle" size="medium" />;
             break;
-        case columnMenuItemActionType.ADD:
+        case groupMenuItemActionType.ADD:
             icon = <Icon themeColor="primary" icon="plus-circle" size="medium" />;
             break;
-        case columnMenuItemActionType.DRAG:
+        case groupMenuItemActionType.DRAG:
             icon = <Icon icon="handle-drag" size="medium" />;
             break;
         default:
@@ -43,8 +43,8 @@ export const ColumnMenuItemAction = (
             {...other}
             className={classNames(
                 props.className,
-                COLUMNMENUITEM_ACTION_CLASSNAME,
-                `k-columnmenu-item-${type}-action`
+                GROUPMENUITEM_ACTION_CLASSNAME,
+                `k-group-menu-item-${type}-action`
             )}
         >
             {icon}

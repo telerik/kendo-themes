@@ -1,7 +1,7 @@
 import {GridNormal, GridToolbar, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable } from "../";
 import { TableThead, TableTbody, TableRow, TableTd } from "../../table";
 import { Popup } from "../../popup";
-import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuItemAction } from "../../column-menu";
+import { GroupMenu, GroupMenuItemWrapper, GroupMenuItem, GroupMenuItemAction } from "../../column-menu";
 import { Button } from "../../button";
 import {  ActionButtons } from "../../action-buttons";
 
@@ -99,17 +99,17 @@ export default () => (
                     }
                 ></GridNormal>
                 <Popup className="k-grid-columnmenu-popup">
-                    <ColumnMenuNormal>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 1" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                            <ColumnMenuItem text="Header Name 2" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                            <ColumnMenuItem text="Header Name 3" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                            <ColumnMenuItem text="Header Name 4" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                        </ColumnMenuItemWrapper>
+                    <GroupMenu>
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 1" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 2" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 3" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 4" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                        </GroupMenuItemWrapper>
                         <ActionButtons alignment="stretched" className="k-column-menu-footer">
                             <Button icon="x" disabled>Clear grouping</Button>
                         </ActionButtons>
-                    </ColumnMenuNormal>
+                    </GroupMenu>
                 </Popup>
             </section>
 
@@ -185,19 +185,19 @@ export default () => (
                     }
                 ></GridNormal>
                 <Popup className="k-grid-columnmenu-popup">
-                    <ColumnMenuNormal>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 1" actionsEnd={ <ColumnMenuItemAction type="remove" /> } />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 2" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                            <ColumnMenuItem text="Header Name 3" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                            <ColumnMenuItem text="Header Name 4" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                        </ColumnMenuItemWrapper>
+                    <GroupMenu>
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 1" actionsEnd={ <GroupMenuItemAction type="remove" /> } />
+                        </GroupMenuItemWrapper>
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 2" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 3" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 4" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                        </GroupMenuItemWrapper>
                         <ActionButtons alignment="stretched" className="k-column-menu-footer">
                             <Button icon="x">Clear grouping</Button>
                         </ActionButtons>
-                    </ColumnMenuNormal>
+                    </GroupMenu>
                 </Popup>
             </section>
 
@@ -273,19 +273,19 @@ export default () => (
                     }
                 ></GridNormal>
                 <Popup className="k-grid-columnmenu-popup">
-                    <ColumnMenuNormal>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem actionsStart={ <ColumnMenuItemAction type="drag" /> } text="Header Name 1" actionsEnd={ <ColumnMenuItemAction type="remove" /> } />
-                            <ColumnMenuItem actionsStart={ <ColumnMenuItemAction type="drag" /> } text="Header Name 2" actionsEnd={ <ColumnMenuItemAction type="remove" /> } />
-                        </ColumnMenuItemWrapper>
-                        <ColumnMenuItemWrapper>
-                            <ColumnMenuItem text="Header Name 3" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                            <ColumnMenuItem text="Header Name 4" actionsEnd={ <ColumnMenuItemAction type="add" /> } />
-                        </ColumnMenuItemWrapper>
+                    <GroupMenu>
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 1" actionsStart={ <GroupMenuItemAction type="drag" /> } actionsEnd={ <GroupMenuItemAction type="remove" /> } />
+                            <GroupMenuItem text="Header Name 2" actionsStart={ <GroupMenuItemAction type="drag" /> } actionsEnd={ <GroupMenuItemAction type="remove" /> } />
+                        </GroupMenuItemWrapper>
+                        <GroupMenuItemWrapper>
+                            <GroupMenuItem text="Header Name 3" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                            <GroupMenuItem text="Header Name 4" actionsEnd={ <GroupMenuItemAction type="add" /> } />
+                        </GroupMenuItemWrapper>
                         <ActionButtons alignment="stretched" className="k-column-menu-footer">
                             <Button icon="x">Clear grouping</Button>
                         </ActionButtons>
-                    </ColumnMenuNormal>
+                    </GroupMenu>
                 </Popup>
             </section>
         </div>
