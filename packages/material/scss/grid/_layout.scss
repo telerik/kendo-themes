@@ -10,8 +10,8 @@
     // Grid
     .k-grid {
 
-        .k-group-footer td,
-        .k-group-footer .k-table-td {
+        .k-table .k-group-footer td,
+        .k-table .k-group-footer .k-table-td {
             border-top-width: 0;
         }
 
@@ -24,20 +24,17 @@
     .k-grid-header {
 
         .k-table-th {
-            font-weight: 700;
+            font-weight: var( --kendo-font-weight-semibold, 600 );
 
             .k-grid-filter {
-                font-weight: normal;
+                font-weight: var( --kendo-font-weight-normal, 400 );
             }
         }
 
-        .k-grid-filter {
-            border-radius: 50%;
-        }
-
+        .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu  {
-            border-radius: 50%;
+            border-radius: k-border-radius( md );
         }
 
         .k-resizable-columns .k-table-th:not(.k-group-cell) {
