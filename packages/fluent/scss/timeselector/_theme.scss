@@ -15,12 +15,15 @@
     // Time selector header
     .k-time-header,
     .k-time-selector-header {
+        .k-title {
+            color:  var( --kendo-time-selector-header-title-text, $kendo-time-selector-header-title-text );
+        }
 
         .k-time-now {
-            color: var( --kendo-link-text, inherit );
+            color: var( --$kendo-time-selector-header-time-now-text, $kendo-time-selector-header-time-now-text );
         }
         .k-time-now:hover {
-            color: var( --kendo-link-hover-text, inherit );
+            color: var( --$kendo-time-selector-header-time-now-hover-text, $kendo-time-selector-header-time-now-hover-text );
         }
     }
 

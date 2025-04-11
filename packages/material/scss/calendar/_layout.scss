@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "./_variables.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/calendar/_layout.scss" as *;
 
 
@@ -5,25 +7,20 @@
 
     @include kendo-calendar--layout-base();
 
-    // Calendar
     .k-calendar {
+        .k-range-start,
+        .k-range-end {
+            border-radius: 0;
 
-        .k-title,
-        .k-calendar-title {
-            font-weight: 500;
-            text-transform: none;
-        }
-        .k-calendar-caption,
-        .k-calendar-view th,
-        .k-calendar-view .k-calendar-th,
-        .k-meta-header,
-        .k-month-header {
-            font-weight: 500;
-        }
-        .k-calendar-view tbody th,
-        .k-calendar-view .k-calendar-tbody .k-calendar-th {
-            font-weight: 700;
+            .k-link {
+                border-radius: $kendo-calendar-range-cell-border-radius;
+            }
         }
     }
 
+     // Calendar in popup
+    .k-calendar-container,
+    .k-datetime-container {
+        border-radius: $kendo-calendar-border-radius;
+    }
 }

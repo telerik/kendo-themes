@@ -11,7 +11,7 @@
     .k-list-item {
         &.k-selected:hover,
         &.k-selected.k-hover {
-            background-color: if($kendo-enable-color-system, k-color( base-active ), k-color-shade( $kendo-list-item-selected-bg ));
+            background-color: $kendo-list-item-hover-bg;
         }
     }
 }

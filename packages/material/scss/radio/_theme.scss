@@ -1,3 +1,4 @@
+@use "./_variables.scss" as *;
 @use "../core/_index.scss" as *;
 @use "@progress/kendo-theme-core/scss/components/radio/_theme.scss" as *;
 
@@ -6,12 +7,72 @@
 
     @include kendo-radio--theme-base();
 
+    .k-radio {
+        &:hover,
+        &.k-hover {
+            &::after {
+                opacity: .08;
+                background-color: k-color( on-app-surface );
+            }
+
+            &:checked,
+            &.k-checked {
+                &::after {
+                    background-color: k-color( primary );
+                }
+            }
+
+            &.k-invalid::after {
+                background-color: k-color( error );
+            }
+        }
+
+        &:focus,
+        &.k-focus {
+            &::after {
+                opacity: .12;
+                background-color: k-color( on-app-surface );
+            }
+
+            &:checked,
+            &.k-checked {
+                &::after {
+                    background-color: k-color( primary );
+                }
+            }
+
+            &.k-invalid::after {
+                background-color: k-color( on-app-surface );
+            }
+        }
+
+    }
+
+    .k-ripple-focus.k-checkbox {
+        &:hover,
+        &.k-hover,
+        &:focus,
+        &.k-focus {
+            &::after,
+            &:checked::after,
+            &.k-checked::after,
+            &.k-invalid::after {
+                background: $kendo-radio-ripple-bg;
+                opacity: $kendo-radio-ripple-opacity;
+            }
+        }
+    }
+
     // Radio
     // Disabled state
     .k-radio:disabled + .k-radio-label {
-        color: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ));
+        color: k-color( subtle );
         opacity: 1;
         filter: none;
+
+        &.k-invalid {
+            border-color: $kendo-radio-disabled-border;
+        }
     }
 
 }

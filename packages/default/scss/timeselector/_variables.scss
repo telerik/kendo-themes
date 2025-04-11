@@ -16,6 +16,9 @@ $kendo-time-selector-border: $kendo-component-border !default;
 $kendo-time-selector-header-padding-x: $kendo-actions-padding-x !default;
 $kendo-time-selector-header-padding-y: $kendo-actions-padding-y !default;
 $kendo-time-selector-header-border-width: 0px !default;
+$kendo-time-selector-header-title-text: unset !default;
+$kendo-time-selector-header-time-now-text: $kendo-link-text !default;
+$kendo-time-selector-header-time-now-hover-text: $kendo-link-hover-text !default;
 
 $kendo-time-selector-fast-selection-gap: null !default;
 
@@ -88,6 +91,9 @@ $kendo-time-selector-sizes: (
     $kendo-time-selector-header-padding-y: $kendo-time-selector-header-padding-y,
     $kendo-time-selector-header-border-width: $kendo-time-selector-header-border-width,
     $kendo-time-selector-fast-selection-gap: $kendo-time-selector-fast-selection-gap,
+    $kendo-time-selector-header-title-text: $kendo-time-selector-header-title-text,
+    $kendo-time-selector-header-time-now-text: $kendo-time-selector-header-time-now-text,
+    $kendo-time-selector-header-time-now-hover-text: $kendo-time-selector-header-time-now-hover-text,
     $kendo-time-list-width: $kendo-time-list-width,
     $kendo-time-list-height: $kendo-time-list-height,
     $kendo-time-list-title-font-size: $kendo-time-list-title-font-size,
