@@ -27,14 +27,14 @@ $kendo-editor-placeholder-opacity: $kendo-input-placeholder-opacity !default;
 
 /// The selected text color of the Editor.
 /// @group editor
-$kendo-editor-selected-text: $kendo-color-primary-contrast !default;
+$kendo-editor-selected-text: k-color(on-primary) !default;
 /// The selected background color of the Editor.
 /// @group editor
-$kendo-editor-selected-bg: $kendo-color-primary !default;
+$kendo-editor-selected-bg: k-color(primary) !default;
 
 /// The highlighted background color of the Editor.
 /// @group editor
-$kendo-editor-highlighted-bg: if($kendo-enable-color-system, k-color( primary-subtle ), color.mix($kendo-color-primary, #ffffff, 20%)) !default;
+$kendo-editor-highlighted-bg: k-color( primary-subtle ) !default;
 
 /// The horizontal margin of the Editor's export tool icon.
 /// @group editor
@@ -58,14 +58,14 @@ $kendo-editor-resize-handle-bg: #ffffff !default;
 $kendo-editor-selectednode-outline-width: 2px !default;
 /// The outline color of the Editor's selected node.
 /// @group editor
-$kendo-editor-selectednode-outline-color: #88ccff !default;
+$kendo-editor-selectednode-outline-color: k-color(primary) !default;
 
 /// The horizontal padding of the inline Editor.
 /// @group editor
-$kendo-editor-inline-padding-x: k-spacing(2) !default;
+$kendo-editor-inline-padding-x: k-spacing(4) !default;
 /// The vertical padding of the inline Editor.
 /// @group editor
-$kendo-editor-inline-padding-y: k-spacing(0.5) !default;
+$kendo-editor-inline-padding-y: k-spacing(4) !default;
 
 /// The horizontal padding of the Editor file browser tiles.
 /// @group editor
@@ -76,7 +76,7 @@ $kendo-editor-filebrowser-tiles-padding-y: k-spacing(1) !default;
 
 /// The padding of the Editor content.
 /// @group editor
-$kendo-editor-content-padding: k-spacing(4) !default;
+$kendo-editor-content-padding: k-spacing(2) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/editor/_variables.scss" with (
     $kendo-editor-border-width: $kendo-editor-border-width,
