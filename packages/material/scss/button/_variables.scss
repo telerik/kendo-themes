@@ -198,10 +198,10 @@ $kendo-button-focus-shadow: null !default;
 
 /// The base background color of the disabled Button.
 /// @group button
-$kendo-button-disabled-bg: color-mix(in srgb, k-color( on-app-surface ) 9%, transparent) !default;
+$kendo-button-disabled-bg: color-mix(in srgb, k-color( on-app-surface ) 12%, transparent) !default;
 /// The base text color of the disabled Button.
 /// @group button
-$kendo-button-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 32%, transparent) !default;
+$kendo-button-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 38%, transparent) !default;
 /// The base border color of the disabled Button.
 /// @group button
 $kendo-button-disabled-border: $kendo-button-disabled-bg !default;

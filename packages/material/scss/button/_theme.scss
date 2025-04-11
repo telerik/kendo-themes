@@ -114,6 +114,13 @@
                 box-shadow: inset 0 0 0 calc( #{$kendo-button-border-width} * 3 ) k-color( app-surface ),
                             inset 0 0 0 calc( #{$kendo-button-border-width} * 5 ) k-color( #{$name}-on-surface );
             }
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-button-disabled-text;
+                border-color: $kendo-button-disabled-text;
+            }
         }
     }
 
@@ -150,7 +157,6 @@
     @each $name, $color in $kendo-button-theme-colors {
         .k-button-link-#{$name} {
             text-decoration: underline;
-            // color: k-color( #{$name}-on-surface );
 
             &:hover,
             &.k-hover,
@@ -167,7 +173,7 @@
             // Disabled state
             &:disabled,
             &.k-disabled {
-                // color: $kendo-button-disabled-text;
+                color: $kendo-button-disabled-text;
             }
         }
     }
