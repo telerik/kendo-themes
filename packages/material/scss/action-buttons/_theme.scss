@@ -8,14 +8,4 @@
 
     @include kendo-action-buttons--theme-base();
 
-    // Actions
-    .k-actions {
-
-        .k-button-solid-base {
-            background-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
-            border-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
-        }
-
-    }
-
 }
