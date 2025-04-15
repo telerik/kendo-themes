@@ -11684,6 +11684,66 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-floating-label-border-scale</td>
+    <td>Number</td>
+    <td><code>.85</code></td>
+    <td><code>0.85</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-border-height</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-height} * #{$kendo-floating-label-border-scale} )</code></td>
+    <td><code>calc(calc(var(--kendo-line-height, normal) * var(--kendo-font-size, inherit)) * 0.85)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-border-offset-x</td>
+    <td>String</td>
+    <td><code>k-spacing(3)</code></td>
+    <td><code>var(--kendo-spacing-3, 0.75rem)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-border-padding</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Border Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-inside-scale</td>
+    <td>Number</td>
+    <td><code>.85</code></td>
+    <td><code>0.85</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the Inside Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-inside-height</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-height} * #{$kendo-floating-label-border-scale} )</code></td>
+    <td><code>calc(calc(var(--kendo-line-height, normal) * var(--kendo-font-size, inherit)) * 0.85)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Inside Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-floating-label-transition</td>
     <td>List</td>
     <td><code>.2s ease-out</code></td>
@@ -11731,6 +11791,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-border-bg</td>
+    <td>String</td>
+    <td><code>k-color( surface-alt )</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Border Floating Label.</div></div>
     </td>
 </tr>
 </tbody>
