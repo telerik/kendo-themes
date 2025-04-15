@@ -1,3 +1,4 @@
+@use "../core/_index.scss" as *;
 @use "../input/_variables.scss" as *;
 
 // Floating label
@@ -34,6 +35,26 @@ $kendo-floating-label-focus-offset-x: 0 !default;
 /// @group floating-label
 $kendo-floating-label-focus-offset-y: 0 !default;
 
+/// The transformation scale of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-scale: .85 !default;
+// The height of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-height: calc( #{$kendo-floating-label-height} * #{$kendo-floating-label-border-scale} ) !default;
+/// The horizontal offset of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-offset-x: k-spacing(3) !default;
+/// The padding of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-padding: null !default;
+
+/// The transformation scale of the Inside Floating Label.
+/// @group floating-label
+$kendo-floating-label-inside-scale: .85 !default;
+/// The height of the Inside Floating Label.
+/// @group floating-label
+$kendo-floating-label-inside-height: calc( #{$kendo-floating-label-height} * #{$kendo-floating-label-border-scale} ) !default;
+
 /// The transition of the Floating Label.
 /// @group floating-label
 $kendo-floating-label-transition: .2s ease-out !default;
@@ -52,6 +73,9 @@ $kendo-floating-label-focus-bg: null !default;
 /// @group floating-label
 $kendo-floating-label-focus-text: null !default;
 
+/// The background color of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-bg: k-color( surface-alt ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/floating-label/_variables.scss" with (
     $kendo-floating-label-scale: $kendo-floating-label-scale,
@@ -64,9 +88,16 @@ $kendo-floating-label-focus-text: null !default;
     $kendo-floating-label-focus-scale: $kendo-floating-label-focus-scale,
     $kendo-floating-label-focus-offset-x: $kendo-floating-label-focus-offset-x,
     $kendo-floating-label-focus-offset-y: $kendo-floating-label-focus-offset-y,
+    $kendo-floating-label-border-scale: $kendo-floating-label-border-scale,
+    $kendo-floating-label-border-height: $kendo-floating-label-border-height,
+    $kendo-floating-label-border-offset-x: $kendo-floating-label-border-offset-x,
+    $kendo-floating-label-border-padding: $kendo-floating-label-border-padding,
+    $kendo-floating-label-inside-scale: $kendo-floating-label-inside-scale,
+    $kendo-floating-label-inside-height: $kendo-floating-label-inside-height,
     $kendo-floating-label-transition: $kendo-floating-label-transition,
     $kendo-floating-label-bg: $kendo-floating-label-bg,
     $kendo-floating-label-text: $kendo-floating-label-text,
     $kendo-floating-label-focus-bg: $kendo-floating-label-focus-bg,
-    $kendo-floating-label-focus-text: $kendo-floating-label-focus-text
+    $kendo-floating-label-focus-text: $kendo-floating-label-focus-text,
+    $kendo-floating-label-border-bg: $kendo-floating-label-border-bg
 );

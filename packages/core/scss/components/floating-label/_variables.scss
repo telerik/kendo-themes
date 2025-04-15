@@ -12,6 +12,14 @@ $kendo-floating-label-focus-scale: null !default;
 $kendo-floating-label-focus-offset-x: null !default;
 $kendo-floating-label-focus-offset-y: null !default;
 
+$kendo-floating-label-border-scale: null !default;
+$kendo-floating-label-border-height: null !default;
+$kendo-floating-label-border-offset-x: null !default;
+$kendo-floating-label-border-padding: null !default;
+
+$kendo-floating-label-inside-scale: null !default;
+$kendo-floating-label-inside-height: null !default;
+
 $kendo-floating-label-transition: null !default;
 
 $kendo-floating-label-bg: null !default;
@@ -19,3 +27,5 @@ $kendo-floating-label-text: null !default;
 
 $kendo-floating-label-focus-bg: null !default;
 $kendo-floating-label-focus-text: null !default;
+
+$kendo-floating-label-border-bg: k-color( surface-alt ) !default;
