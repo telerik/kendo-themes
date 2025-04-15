@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../../mixins/index.import.scss" as *;
 @use "../../functions/index.import.scss" as *;
 @use "../../color-system/_swatch-legacy.scss" as *;
@@ -16,7 +17,7 @@
 
 
     // AppBar theme colors
-    @each $name, $color in $kendo-theme-colors {
+    @each $name, $color in map.merge( $kendo-theme-colors, ( "base": if($kendo-enable-color-system, k-color( base ), $kendo-base-bg) )) {
         .k-appbar-#{$name} {
             @if $name == "light" {
                 color: $kendo-appbar-light-text;
