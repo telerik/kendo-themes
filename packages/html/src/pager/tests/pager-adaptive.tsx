@@ -7,7 +7,9 @@ const styles = `
         grid-template-columns: 120px 1fr;
     }
 
+    /* These styles are used to test the pager items hiding order threshold */
     #test-area > .k-pager {
+        flex-wrap: nowrap;
         width: min-content;
     }
 `;

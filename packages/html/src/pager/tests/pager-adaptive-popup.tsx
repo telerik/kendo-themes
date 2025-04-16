@@ -6,8 +6,7 @@ import { PagerInput } from '../templates/pager-input';
 
 const styles = `
     #test-area {
-        grid-template-columns: repeat(2, min-content);
-        max-width: min-content;
+        grid-template-columns: 550px 350px;
         --kendo-actionsheet-height: 400px;
         --kendo-actionsheet-max-height: 400px;
     }
@@ -29,7 +28,7 @@ export default () => (
             <span>resolutions &lt;= 500</span>
 
             <section>
-                <PagerInput refresh={false} />
+                <PagerInput pageTitleInfo={false} refresh={false} info={false} />
                 <ActionSheet
                     adaptive
                     header={
@@ -50,7 +49,7 @@ export default () => (
             </section>
 
             <section>
-                <PagerInput pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} />
+                <PagerInput pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                 <ActionSheet
                     adaptive
                     fullscreen
