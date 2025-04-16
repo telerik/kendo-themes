@@ -33,7 +33,7 @@ export default () => (
                     className="k-grid-no-scrollbar"
                     pager={
                         <>
-                            <GridPager itemsPerPage={3} refresh={false} info={false} />
+                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
@@ -100,7 +100,7 @@ export default () => (
                     className="k-grid-no-scrollbar"
                     pager={
                         <>
-                            <GridPager itemsPerPage={3} refresh={false} info={false} />
+                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
