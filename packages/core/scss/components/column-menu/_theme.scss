@@ -1,5 +1,21 @@
+@use "../../color-system/_functions.import.scss" as *;
+
 @mixin kendo-column-menu--theme-base() {
     .k-column-menu {}
+
+    .k-group-menu-item-action.k-hover,
+    .k-group-menu-item-action:hover {
+        background-color: color-mix(in srgb, currentColor 4%, transparent);
+    }
+
+    .k-group-menu-item-action.k-selected,
+    .k-group-menu-item-action:active {
+        background-color: color-mix(in srgb, currentColor 16%, transparent);
+    }
+
+    .k-group-menu-item-action.k-group-menu-item-add-action {
+        color: k-color(primary);
+    }
 }
 
 @mixin kendo-column-menu--theme() {
