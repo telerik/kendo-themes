@@ -20,6 +20,7 @@ export type FloatingLabelState = { [K in (typeof states)[number]]?: boolean };
 export type KendoFloatingLabelProps = {
     label?: string;
     optional?: boolean;
+    position?: 'outside' | 'inside'  | 'border';
 };
 
 export const FloatingLabel = (
@@ -34,6 +35,7 @@ export const FloatingLabel = (
         empty,
         label,
         optional,
+        position,
         ...other
     } = props;
 
@@ -43,6 +45,7 @@ export const FloatingLabel = (
             className={classNames(
                 props.className,
                 FLOATINGLABEL_CLASSNAME,
+                position && `k-floating-label-${position}`,
                 stateClassNames(FLOATINGLABEL_CLASSNAME, { hover, focus, disabled, empty, valid, invalid }),
             )}
         >

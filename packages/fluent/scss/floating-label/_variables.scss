@@ -49,6 +49,31 @@ $kendo-floating-label-focus-offset-y: 0 !default;
 /// @group floating-label
 $kendo-floating-label-transition: .2s ease-out !default;
 
+// The transformation scale of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-scale: .85 !default;
+
+// The height of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-height: calc( #{$kendo-floating-label-height} * #{$kendo-floating-label-border-scale} ) !default;
+
+/// The horizontal offset of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-offset-x: k-spacing(2) !default;
+
+/// The padding of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-padding: null !default;
+
+/// The transformation scale of the Inside Floating Label.
+/// @group floating-label
+$kendo-floating-label-inside-scale: .85 !default;
+
+/// The height of the Inside Floating Label.
+/// @group floating-label
+$kendo-floating-label-inside-height: calc( #{$kendo-floating-label-height} * #{$kendo-floating-label-border-scale} ) !default;
+
+
 /// The background color of the Floating Label.
 /// @group floating-label
 $kendo-floating-label-bg: inherit !default;
@@ -68,3 +93,7 @@ $kendo-floating-label-focus-text: inherit !default;
 /// The invalid text color of the Floating Label.
 /// @group floating-label
 $kendo-floating-label-invalid-text: var( --kendo-invalid-text, #{$kendo-invalid-text} ) !default;
+
+/// The background color of the Border Floating Label.
+/// @group floating-label
+$kendo-floating-label-border-bg: k-color( surface-alt ) !default;

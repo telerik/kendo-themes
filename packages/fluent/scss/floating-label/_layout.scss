@@ -1,4 +1,6 @@
+@use "sass:map";
 @use "./_variables.scss" as *;
+@use "../input/_variables.scss" as *;
 
 @mixin kendo-floating-label--layout() {
 
@@ -61,6 +63,58 @@
         &[disabled],
         &.k-disabled  {
             background: none;
+        }
+    }
+
+    .k-floating-label-border {
+        --kendo-floating-label-focus-offset-x: #{$kendo-floating-label-border-offset-x};
+        padding-top: calc( #{$kendo-floating-label-border-height} / 2 );
+
+        &.k-focus,
+        &:focus-within {
+            .k-floating-label {
+                transform: scale( $kendo-floating-label-border-scale );
+                padding: $kendo-floating-label-border-padding;
+            }
+        }
+
+        // Support for input sizes
+        @each $size, $size-props in $kendo-input-sizes {
+            $_padding-y: map.get( $size-props, padding-y );
+
+            .k-input-#{$size} {
+                & + .k-floating-label {
+                    --kendo-floating-label-offset-y: calc( #{$kendo-floating-label-border-height} / 2 + #{$kendo-input-border-width} + #{$_padding-y});
+                }
+            }
+        }
+    }
+
+    .k-floating-label-inside {
+        --kendo-floating-label-offset-y: calc( 50% - #{$kendo-floating-label-height} / 2);
+        padding-top: 0;
+
+        &.k-focus,
+        &:focus-within {
+            .k-floating-label {
+                transform: scale( $kendo-floating-label-inside-scale );
+            }
+        }
+
+         // Sizing
+         @each $size, $size-props in $kendo-input-sizes {
+            $_padding-y: map.get( $size-props, padding-y );
+            $_padding-x: map.get( $size-props, padding-x );
+
+            .k-input-#{$size} {
+                .k-input-inner {
+                    padding-top: calc( $_padding-y + $kendo-floating-label-inside-height );
+                }
+
+                & + .k-floating-label {
+                    --kendo-floating-label-focus-offset-x: #{$_padding-x};
+                }
+            }
         }
     }
 
