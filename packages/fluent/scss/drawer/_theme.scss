@@ -85,6 +85,13 @@
                     var( --kendo-drawer-item-selected-hover-bg, #{$kendo-drawer-item-selected-hover-bg} )
                 );
             }
+
+            &:focus,
+            &.k-focus {
+                @include fill(
+                    var( --kendo-drawer-item-selected-focus-bg, #{$kendo-drawer-item-selected-focus-bg} )
+                );
+            }
         }
     }
     .k-drawer-separator {

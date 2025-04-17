@@ -10,14 +10,16 @@
     // Time selector
     .k-timeselector {}
 
-
     // Time list
     .k-time-list {
-        .k-item:hover {
-            @include fill(
-                $kendo-list-item-hover-text,
-                $kendo-list-item-hover-bg
-            );
+        &::before,
+        &::after {
+            box-shadow: none;
+        }
+
+        &::before,
+        &::after {
+            box-shadow: none;
         }
     }
 

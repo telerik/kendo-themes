@@ -11,7 +11,7 @@ $kendo-filter-padding-y: $kendo-filter-padding-x !default;
 
 /// The bottom margin of the Filter.
 /// @group filter
-$kendo-filter-bottom-margin: 2.1em !default;
+$kendo-filter-bottom-margin: k-spacing(7.5) !default;
 /// The width of the line that connects the Filter items.
 /// @group filter
 $kendo-filter-line-size: 1px !default;
@@ -22,14 +22,14 @@ $kendo-filter-operator-dropdown-width: 15em !default;
 
 /// The text color of the Filter preview field.
 /// @group filter
-$kendo-filter-preview-field-text: $kendo-color-primary !default;
+$kendo-filter-preview-field-text: k-color( primary ) !default;
 /// The text color of the Filter preview operator.
 /// @group filter
-$kendo-filter-preview-operator-text: $kendo-subtle-text !default;
+$kendo-filter-preview-operator-text: k-color( subtle ) !default;
 
 /// The box shadow of the focused Filter toolbar.
 /// @group filter
-$kendo-filter-toolbar-focus-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
+$kendo-filter-toolbar-focus-shadow: null !default;
 
 @forward "@progress/kendo-theme-core/scss/components/filter/_variables.scss" with (
     $kendo-filter-padding-x: $kendo-filter-padding-x,

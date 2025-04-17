@@ -197,7 +197,11 @@ $kendo-actionsheet-item-disabled-border: var( --kendo-disabled-border, inherit )
 // Adaptive Actionsheet
 
 /// Font size of the adaptive action sheet.
+/// @group action-sheet
 $kendo-adaptive-actionsheet-font-size: $kendo-font-size-lg !default;
+/// The line height of the adaptive action sheet.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
 
 /// Vertical padding of the adaptive action sheet titlebar.
 /// @group action-sheet

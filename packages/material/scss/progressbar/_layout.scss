@@ -6,15 +6,22 @@
 
     @include kendo-progressbar--layout-base();
 
-    $kendo-progressbar-status-font-size: 11px !default;
     $kendo-progressbar-indeterminate-animation-timing: 2s infinite !default;
 
     .k-progressbar {
-        @include border-radius( 0 );
+        @include border-radius( k-border-radius(full) );
         overflow: visible;
 
-        .k-progress-status-wrap {
-            font-size: $kendo-progressbar-status-font-size;
+        .k-progressbar-value {
+            border-radius: inherit;
+        }
+
+        > .k-progressbar-chunks {
+            gap: k-spacing( 1.5 );
+        }
+
+        .k-progressbar-chunk {
+            @include border-radius( k-border-radius(full) );
         }
     }
 

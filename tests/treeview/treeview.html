@@ -10,6 +10,12 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            grid-template-columns: 250px 250px auto auto;
+        }
+
+    </style>
     <div id="test-area" class="k-d-grid k-grid-cols-4">
         <span>states</span>
         <span>states (rtl)</span>
@@ -41,8 +47,29 @@
                     </li>
                     <li class="k-treeview-item">
                         <span class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-hover k-focus">
+                                <span class="k-treeview-leaf-text">Hover + Focus</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item">
+                        <span class="k-treeview-mid">
                             <span class="k-treeview-leaf k-selected">
                                 <span class="k-treeview-leaf-text">Selected</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item">
+                        <span class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-hover k-selected">
+                                <span class="k-treeview-leaf-text">Selected + Hover</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item">
+                        <span class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-hover k-focus k-selected">
+                                <span class="k-treeview-leaf-text">Selected + Hover + Focus</span>
                             </span>
                         </span>
                     </li>
@@ -103,8 +130,29 @@
                     </li>
                     <li class="k-treeview-item">
                         <span class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-hover k-focus">
+                                <span class="k-treeview-leaf-text">Hover + Focus</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item">
+                        <span class="k-treeview-mid">
                             <span class="k-treeview-leaf k-selected">
                                 <span class="k-treeview-leaf-text">Selected</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item">
+                        <span class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-hover k-selected">
+                                <span class="k-treeview-leaf-text">Selected + Hover</span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="k-treeview-item">
+                        <span class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-hover k-focus k-selected">
+                                <span class="k-treeview-leaf-text">Selected + Hover + Focus</span>
                             </span>
                         </span>
                     </li>

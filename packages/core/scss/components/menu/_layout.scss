@@ -84,6 +84,7 @@
     // Expand arrow
     .k-menu-expand-arrow {
         margin-inline-end: calc( #{$kendo-icon-spacing} * -1 );
+        padding: $kendo-menu-icon-padding-y $kendo-menu-icon-padding-x;
         display: inline-flex;
         flex-flow: row wrap;
         align-items: center;

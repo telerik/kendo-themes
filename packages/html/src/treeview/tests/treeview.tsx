@@ -1,7 +1,14 @@
 import { TreeviewItem, TreeviewNormal, TreeviewHierarchy, TreeviewIcons, TreeviewCheckboxes } from '../../treeview';
 
+const style = `
+    #test-area {
+        grid-template-columns: 250px 250px auto auto;
+    }
+`;
+
 export default () =>(
     <>
+        <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
             <span>states</span>
@@ -14,7 +21,10 @@ export default () =>(
                     <TreeviewItem top text="Normal" />
                     <TreeviewItem text="Hover" hover />
                     <TreeviewItem text="Focus" focus/>
+                    <TreeviewItem text="Hover + Focus" hover focus/>
                     <TreeviewItem text="Selected" selected/>
+                    <TreeviewItem text="Selected + Hover" selected hover/>
+                    <TreeviewItem text="Selected + Hover + Focus" selected hover focus/>
                     <TreeviewItem text="Selected focus" selected focus/>
                     <TreeviewItem text="Disabled" disabled/>
                     <TreeviewItem text="Disabled focus" disabled focus/>
@@ -26,7 +36,10 @@ export default () =>(
                     <TreeviewItem top text="Normal" />
                     <TreeviewItem text="Hover" hover />
                     <TreeviewItem text="Focus" focus/>
+                    <TreeviewItem text="Hover + Focus" hover focus/>
                     <TreeviewItem text="Selected" selected/>
+                    <TreeviewItem text="Selected + Hover" selected hover/>
+                    <TreeviewItem text="Selected + Hover + Focus" selected hover focus/>
                     <TreeviewItem text="Selected focus" selected focus/>
                     <TreeviewItem text="Disabled" disabled/>
                     <TreeviewItem text="Disabled focus" disabled focus/>

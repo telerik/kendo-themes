@@ -8,19 +8,10 @@
 
     // Insert table
     .k-ct-popup {
-        line-height: normal;
+        line-height: var( --kendo-line-height, normal);
 
         .k-status {
-            line-height: var( --kendo-line-height, inherit);
-        }
-    }
-
-    .k-editor-export {
-        text-transform: uppercase;
-        font-size: var( --kendo-font-size, inherit );
-
-        .k-icon {
-            margin-left: $kendo-editor-export-tool-icon-margin-x;
+            line-height: var( --kendo-line-height, normal);
         }
     }
 }

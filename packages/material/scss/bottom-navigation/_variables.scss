@@ -5,35 +5,35 @@
 
 /// The horizontal padding of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-padding-x: k-spacing(0) !default;
+$kendo-bottom-nav-padding-x: k-spacing(2) !default;
 /// The vertical padding of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-x !default;
+$kendo-bottom-nav-padding-y: k-spacing(3) !default;
 /// The spacing between the BottomNavigation items.
 /// @group bottom-navigation
-$kendo-bottom-nav-gap: $kendo-bottom-nav-padding-x !default;
+$kendo-bottom-nav-gap: k-spacing(2) !default;
 /// The width of the border around the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-border-width: 1px 0px 0px 0px !default;
+$kendo-bottom-nav-border-width: 0 !default;
 /// The font family of the BottomNavigation.
 /// @group bottom-navigation
 $kendo-bottom-nav-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font size of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-bottom-nav-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// The line height of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-line-height: var( --kendo-line-height-xs, normal ) !default;
+$kendo-bottom-nav-line-height: var( --kendo-line-height-sm, normal ) !default;
 /// The letter spacing of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-letter-spacing: .2px !default;
+$kendo-bottom-nav-letter-spacing: var( --kendo-letter-spacing, normal ) !default;
 
 /// The horizontal padding of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-x: k-spacing(2) !default;
+$kendo-bottom-nav-item-padding-x: k-spacing(2.5) !default;
 /// The vertical padding of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-y: k-spacing(0) !default;
+$kendo-bottom-nav-item-padding-y: k-spacing(1) !default;
 /// The minimum width of the BottomNavigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-min-width: 72px !default;
@@ -42,27 +42,27 @@ $kendo-bottom-nav-item-min-width: 72px !default;
 $kendo-bottom-nav-item-max-width: null !default;
 /// The minimum height of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-min-height: calc( #{$kendo-icon-size * 2.5} + calc( #{k-spacing(2)} * 2 ) - calc( #{$kendo-bottom-nav-padding-x} * 2 ) ) !default;
+$kendo-bottom-nav-item-min-height: calc( #{$kendo-icon-size * 2.5} + calc( #{$kendo-bottom-nav-item-padding-y} * 4 ) ) !default;
 /// The border radius of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-border-radius: unset !default;
+$kendo-bottom-nav-item-border-radius: k-border-radius(xxl) !default;
 /// The spacing of the BottomNavigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-gap: 0 k-spacing(1) !default;
+$kendo-bottom-nav-item-gap: k-spacing(2) !default;
 
 /// The box shadow of the BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-shadow: k-elevation(4) !default;
+$kendo-bottom-nav-shadow: null !default;
 
 /// The text color of the flat BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-flat-text: $kendo-component-text !default;
+$kendo-bottom-nav-flat-text: k-color( subtle ) !default;
 /// The background color of the flat BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-flat-bg: $kendo-component-bg !default;
+$kendo-bottom-nav-flat-bg: k-color( surface ) !default;
 /// The border color of the flat BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-flat-border: $kendo-component-border !default;
+$kendo-bottom-nav-flat-border: null !default;
 
 @forward "@progress/kendo-theme-core/scss/components/bottom-navigation/_variables.scss" with (
     $kendo-bottom-nav-padding-x: $kendo-bottom-nav-padding-x,
