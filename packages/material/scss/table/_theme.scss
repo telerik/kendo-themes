@@ -7,41 +7,15 @@
 
     @include kendo-table--theme-base();
 
-    @if($kendo-enable-color-system) {
-        .k-table .k-table-tbody {
-            td:focus,
-            td.k-focus,
-            th:focus,
-            th.k-focus {
-                &::after {
-                    background-color: $kendo-table-hover-bg;
-                }
-            }
-        }
-    } @else {
-
-        // Selected state
-        .k-table-tbody .k-table-row.k-selected,
-        .k-table-tbody .k-table-cell.k-selected {
-            color: $kendo-table-selected-text;
-            background-color: $kendo-table-selected-bg;
-        }
-
-        .k-table-tbody .k-table-row.k-selected > td {
-            color: inherit;
-            background-color: transparent;
-        }
-
-        .k-table .k-table-tbody {
-            td:focus,
-            td.k-focus,
-            th:focus,
-            th.k-focus {
-                color: inherit;
+    .k-table .k-table-tbody {
+        td:focus,
+        td.k-focus,
+        th:focus,
+        th.k-focus {
+            &::after {
                 background-color: $kendo-table-hover-bg;
             }
         }
-
     }
 
 }

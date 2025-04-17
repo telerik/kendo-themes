@@ -1,6 +1,6 @@
 @use "sass:math";
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
+@use "../../color-system/_functions.import.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-time-selector--theme-base() {
@@ -21,11 +21,11 @@
 
         .k-time-now {
             // TODO: use a variable
-            color: $kendo-link-text;
+            color: $kendo-time-selector-now-button-text;
         }
         .k-time-now:hover {
             // TODO: use a variable
-            color: $kendo-link-hover-text;
+            color: $kendo-time-selector-now-button-hover-text;
         }
     }
 
@@ -59,7 +59,7 @@
         }
 
         .k-item:hover {
-            color: $kendo-color-primary;
+            color: k-color( primary );
         }
     }
 

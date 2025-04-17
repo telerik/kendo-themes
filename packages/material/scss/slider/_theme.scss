@@ -16,7 +16,7 @@
         }
 
         .k-tick::after {
-            @include fill( $bg: $kendo-body-text );
+            @include fill( $bg: k-color(on-app-surface) );
         }
 
         .k-draghandle {

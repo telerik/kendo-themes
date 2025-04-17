@@ -9,7 +9,7 @@
     // Checkbox
     // Disabled state
     .k-checkbox:disabled + .k-checkbox-label {
-        color: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ));
+        color: k-color( subtle );
         opacity: 1;
         filter: none;
     }

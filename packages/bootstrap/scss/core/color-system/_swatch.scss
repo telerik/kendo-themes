@@ -1,8 +1,6 @@
 @use "sass:map";
 @use "./_palettes.scss" as *;
 
-// Config
-$kendo-enable-color-system: true !default;
 // Colors
 $_default-colors: (
     // Misc

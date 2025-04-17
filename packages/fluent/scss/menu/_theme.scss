@@ -109,7 +109,7 @@
 
     .k-menu-scroll-wrapper .k-menu-scroll-button {
         border-color: var( --kendo-menu-scroll-btn-bg, transparent );
-        background-color: var( --kendo-menu-scroll-btn-bg, var( --kendo-body-bg, #{$kendo-body-bg} ) );
+        background-color: var( --kendo-menu-scroll-btn-bg, #{k-color( app-surface )} );
     }
 }
 

@@ -69,13 +69,13 @@ $kendo-window-buttongroup-border-width: 1px !default;
 
 /// The background color of the Window.
 /// @group window
-$kendo-window-bg: $kendo-component-bg !default;
+$kendo-window-bg: k-color( surface-alt ) !default;
 /// The text color of the Window.
 /// @group window
-$kendo-window-text: $kendo-component-text !default;
+$kendo-window-text: k-color( on-app-surface ) !default;
 /// The border color of the Window.
 /// @group window
-$kendo-window-border: $kendo-component-border !default;
+$kendo-window-border: k-color( border ) !default;
 /// The box shadow of the Window.
 /// @group window
 $kendo-window-shadow: k-elevation(8) !default;
@@ -85,16 +85,16 @@ $kendo-window-focus-shadow: k-elevation(9) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: $kendo-component-header-bg !default;
+$kendo-window-titlebar-bg: k-color( surface ) !default;
 /// The text color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-text: $kendo-component-header-text !default;
+$kendo-window-titlebar-text: k-color( on-app-surface ) !default;
 /// The border color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-border: $kendo-component-header-border !default;
+$kendo-window-titlebar-border: k-color( border ) !default;
 /// The background gradient of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-gradient: $kendo-component-header-gradient !default;
+$kendo-window-titlebar-gradient: null !default;
 
 /// The map of the width for the different Window sizes.
 /// @group window
@@ -107,9 +107,9 @@ $kendo-window-sizes: (
 /// The theme colors map for the Window.
 /// @group window
 $kendo-window-theme-colors: (
-    "primary": map.get($kendo-theme-colors, "primary"),
-    "light": map.get($kendo-theme-colors, "light"),
-    "dark": map.get($kendo-theme-colors, "dark")
+    "primary": k-color( primary ),
+    "light": k-color( light ),
+    "dark": k-color( dark )
 ) !default;
 
 

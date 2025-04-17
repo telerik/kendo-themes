@@ -28,13 +28,13 @@ $kendo-notification-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-notification-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the Notification.
 /// @group notification
-$kendo-notification-bg: var( --kendo-component-bg, inherit ) !default;
+$kendo-notification-bg: k-color( surface-alt ) !default;
 /// The text color of the Notification.
 /// @group notification
-$kendo-notification-text: var( --kendo-component-text, inherit ) !default;
+$kendo-notification-text: k-color( on-app-surface ) !default;
 /// The border color of the Notification.
 /// @group notification
-$kendo-notification-border: var( --kendo-component-border, inherit ) !default;
+$kendo-notification-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
 /// The box shadow of the Notification.
 /// @group notification
 $kendo-notification-box-shadow: none !default;
@@ -47,7 +47,7 @@ $kendo-notification-icon-spacing: k-spacing(2) !default;
 $kendo-notification-close-icon-spacing: k-spacing(4) !default;
 /// The color of the Notification icon.
 /// @group notification
-$kendo-notification-icon-text: var( --kendo-component-text, inherit ) !default;
+$kendo-notification-icon-text: k-color( on-app-surface ) !default;
 
 /// The theme variations for the Notification.
 /// @group notification
@@ -57,21 +57,21 @@ $kendo-notification-brand-colors: (
     warning: warning,
     success: success,
     info: info,
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
 ) !default;
 
 // Matrix with notification theme colors in the order: bg, color, border
 $_tc-notification-matrix: (
-    (normal: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-subtle), (20, 190, 20))),
+    (normal: (color-subtle, color-on-subtle, color-subtle)),
 ) !default;
 
 $_tc-notification-dark-matrix: (
-    (normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))),
+    (normal: (color, on-color, color)),
 ) !default;
 
 $_tc-notification-light-matrix: (
-    (normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))),
+    (normal: (color, on-color, color)),
 ) !default;
 
 /// The theme colors map for the Notification variations.
@@ -90,13 +90,13 @@ $kendo-notification-theme-colors: () !default;
 @each $ui-states in $_tc-notification-dark-matrix {
     $kendo-notification-theme-colors: map.deep-merge(
         $kendo-notification-theme-colors,
-        k-generate-theme-variation( dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
+        k-generate-theme-variation( dark, dark, $ui-states )
     );
 }
 
 @each $ui-states in $_tc-notification-light-matrix {
     $kendo-notification-theme-colors: map.deep-merge(
         $kendo-notification-theme-colors,
-        k-generate-theme-variation( light, if($kendo-enable-color-system, light, neutral), $ui-states )
+        k-generate-theme-variation( light, light, $ui-states )
     );
 }

@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../mixins/index.import.scss" as *;
-@use "../../color-system/_swatch-legacy.scss" as *;
 @use "../../spacing/index.import.scss" as *;
+@use "../../_variables.scss" as *;
 @use "./variables.scss" as *;
 
 @mixin kendo-radio--layout-base() {
@@ -72,10 +72,6 @@
 
 
     // Disabled state
-    .k-radio:disabled,
-    .k-radio.k-disabled {
-        @include disabled( $kendo-disabled-styling... );
-    }
     .k-radio:disabled:checked,
     .k-radio.k-disabled.k-checked {
         @if $kendo-radio-indicator-type == "image" {

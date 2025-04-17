@@ -131,11 +131,11 @@
     }
 
     .k-filter-menu .k-calculated-item {
-        @include fill( $border: var( --kendo-component-border, inherit ) );
+        @include fill( $border: color-mix(in srgb, k-color( border ) 16%, transparent) );
     }
 
     .k-pivotgrid-configurator-content .k-form-field-wrapper {
-        @include fill( $border: var( --kendo-component-border, inherit ) );
+        @include fill( $border: color-mix(in srgb, k-color( border ) 16%, transparent) );
     }
 
 }
@@ -172,7 +172,7 @@
         );
 
         .k-empty {
-            color: var( --kendo-subtle-text, inherit );
+            color: k-color( subtle );
         }
     }
 
@@ -211,7 +211,7 @@
     // Configurator
     .k-pivotgrid-configurator-panel.kendo-jquery {
         .k-column-fields {
-            border-color: var( --kendo-component-border, inherit );
+            border-color: color-mix(in srgb, k-color( border ) 16%, transparent);
         }
     }
 

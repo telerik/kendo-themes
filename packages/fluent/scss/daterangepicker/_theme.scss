@@ -9,7 +9,7 @@
         &[disabled],
         &.k-disabled {
             @include disabled(
-                $color: var( --kendo-daterange-picker-disabled-text, var( --kendo-disabled-text, inherit ) ),
+                $color: var( --kendo-daterange-picker-disabled-text, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) ),
                 $bg: var( --kendo-daterange-picker-disabled-bg, transparent ),
                 $border: var( --kendo-daterange-picker-disabled-border, currentColor )
             );

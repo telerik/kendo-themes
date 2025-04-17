@@ -33,6 +33,10 @@
         &.k-selected {
             --INTERNAL--kendo-card-shadow: var( --kendo-card-focus-shadow, #{$kendo-card-focus-shadow} );
         }
+
+        .k-hr {
+            border-color: var( --kendo-card-border, #{$kendo-card-border} );
+        }
     }
 
 

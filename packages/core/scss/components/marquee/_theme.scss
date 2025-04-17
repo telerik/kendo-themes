@@ -1,0 +1,27 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-marquee--theme-base() {
+    // Marquee
+    .k-marquee-color {
+        color: $kendo-marquee-text;
+        background-color: $kendo-marquee-bg;
+        border-color: $kendo-marquee-border;
+        opacity: .6;
+    }
+    .k-marquee-text {
+        color: $kendo-marquee-text;
+    }
+
+    // Text selection
+    .k-text-selection {
+        ::selection {
+            background-color: $kendo-marquee-bg;
+            color: $kendo-marquee-text;
+        }
+    }
+}
+
+
+@mixin kendo-marquee--theme() {
+    @include kendo-marquee--theme-base();
+}
