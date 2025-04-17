@@ -1,6 +1,10 @@
 import { MultiViewCalendarNormal, MultiViewCalendarYear, MultiViewCalendarDecade, MultiViewCalendarCentury, MultiViewCalendarWithWeeks } from '../../multiviewcalendar';
 
 const style = `
+    #test-area {
+        max-width: 1240px;
+    }
+
     section {
         display: flex;
         flex-direction: column;

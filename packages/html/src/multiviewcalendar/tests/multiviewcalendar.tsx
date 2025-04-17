@@ -1,8 +1,16 @@
 import { MultiViewCalendarNormal, MultiViewCalendarYear, MultiViewCalendarDecade, MultiViewCalendarCentury, MultiViewCalendarWithWeeks } from '../../multiviewcalendar';
 
+const styles = `
+    #test-area {
+        max-width: 1240px;
+        padding: 0;
+        gap: 4px;
+    }
+`;
 
 export default () => (
     <>
+        <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
