@@ -40,7 +40,7 @@ export default () => (
                     }
                     pager={
                         <>
-                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} />
+                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
@@ -116,7 +116,7 @@ export default () => (
                     }
                     pager={
                         <>
-                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} />
+                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
@@ -213,7 +213,7 @@ export default () => (
                     }
                     pager={
                         <>
-                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} />
+                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={
@@ -313,7 +313,7 @@ export default () => (
                     }
                     pager={
                         <>
-                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} />
+                            <GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} />
                         </>
                     }
                     children={

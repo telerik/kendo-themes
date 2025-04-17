@@ -2,7 +2,7 @@ import { GridNormal, GridHeader, GridContainer, GridContent, GridHeaderTable, Gr
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
-export default () =>(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
@@ -10,7 +10,7 @@ export default () =>(
             <span>Angular grid</span>
 
             <section>
-                <GridNormal _renderAriaRoot={false} groupingHeader={false} className="k-grid-no-scrollbar" pager={( <GridPager className="k-focus" /> )}>
+                <GridNormal _renderAriaRoot={false} groupingHeader={false} className="k-grid-no-scrollbar" pager={(<GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} className="k-focus" />)}>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
@@ -51,13 +51,13 @@ export default () =>(
             </section>
 
             <section>
-                <GridNormal className="k-grid-no-scrollbar" groupingHeader={false} pager={( <GridPager className="k-focus" /> )}>
+                <GridNormal className="k-grid-no-scrollbar" groupingHeader={false} pager={(<GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} className="k-focus" />)}>
                     {/* add padding-left or -right for scrollbar width */}
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
                                 <colgroup>
-                                    <col style={{ width: "100px" }}/>
+                                    <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
                                 <TableThead>
@@ -101,7 +101,7 @@ export default () =>(
             <section>
                 <GridNormal className="k-grid-no-scrollbar"
                     _renderAriaRoot={false} groupingHeader={false}
-                    pagerPosition="top" pager={ <GridPager className="k-grid-pager-top" />
+                    pagerPosition="top" pager={<GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} className="k-grid-pager-top" />
                     }>
                     <GridHeader>
                         <div className="k-grid-header-wrap">
@@ -145,14 +145,14 @@ export default () =>(
             <section>
                 <GridNormal className="k-grid-no-scrollbar"
                     groupingHeader={false} pagerPosition="top"
-                    pager={ <GridPager className="k-grid-pager-top" />
+                    pager={<GridPager type="input" pageTitleInfo={false} refresh={false} info={false} pagerSizeInfo={false} pageSizes={false} className="k-grid-pager-top" />
                     }>
                     {/* add padding-left or -right for scrollbar width */}
                     <GridHeader>
                         <div className="k-grid-header-wrap">
                             <GridHeaderTable>
                                 <colgroup>
-                                    <col style={{ width: "100px" }}/>
+                                    <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
                                 <TableThead>
