@@ -1,9 +1,23 @@
-import { classNames } from '../misc';
+import { classNames, Size } from '../misc';
 import { Checkbox } from '../checkbox';
 
 const className = `k-item`;
 
-export type KendoColumnMenuMulticheckItemProps = {
+const options = {
+    size: [Size.small, Size.medium, Size.large]
+};
+
+const states = [];
+
+const defaultOptions = {
+    size: Size.medium
+};
+
+export type KendoColumnMenuMulticheckItemOptions = {
+    size?: (typeof options.size)[number] | null;
+}
+
+export type KendoColumnMenuMulticheckItemProps = KendoColumnMenuMulticheckItemOptions & {
     text: string;
 }
 
@@ -13,6 +27,7 @@ export const ColumnMenuMulticheckItem = (
 ) => {
     const {
         text,
+        size,
         ...other
     } = props;
 
@@ -25,8 +40,14 @@ export const ColumnMenuMulticheckItem = (
             )}
         >
             <label className="k-label k-checkbox-label">
-                <Checkbox /><span>{text}</span>
+                <Checkbox size={size} /><span>{text}</span>
             </label>
         </li>
     );
 };
+
+ColumnMenuMulticheckItem.states = states;
+ColumnMenuMulticheckItem.options = options;
+ColumnMenuMulticheckItem.defaultOptions = defaultOptions;
+
+export default ColumnMenuMulticheckItem;
