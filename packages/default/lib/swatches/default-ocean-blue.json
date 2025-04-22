@@ -645,7 +645,7 @@
         },
         {
             "name": "Button",
-            "universal": {
+            "variables": {
                 "kendo-flat-button-hover-opacity": {
                     "name": "Flat Button hover opacity",
                     "type": "number",
@@ -665,7 +665,7 @@
         },
         {
             "name": "Inputs",
-            "universal": {
+            "variables": {
                 "kendo-input-clear-value-opacity": {
                     "name": "Input clear value button opacity",
                     "type": "number",

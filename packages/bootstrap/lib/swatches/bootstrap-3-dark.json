@@ -605,7 +605,7 @@
         },
         {
             "name": "Button",
-            "universal": {
+            "variables": {
                 "kendo-button-border": {
                     "name": "Button background",
                     "type": "color",

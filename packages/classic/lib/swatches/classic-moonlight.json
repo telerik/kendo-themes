@@ -605,7 +605,7 @@
         },
         {
             "hidden": true,
-            "universal": {
+            "variables": {
                 "kendo-enable-rounded": {
                     "name": "Enable rounded corners",
                     "type": "boolean",
