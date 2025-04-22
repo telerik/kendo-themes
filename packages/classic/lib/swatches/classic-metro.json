@@ -555,7 +555,7 @@
         },
         {
             "hidden": true,
-            "universal": {
+            "variables": {
                 "kendo-enable-gradients": {
                     "name": "Enable gradients",
                     "type": "boolean",

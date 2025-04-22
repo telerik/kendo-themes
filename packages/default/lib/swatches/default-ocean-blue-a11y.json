@@ -645,7 +645,7 @@
         },
         {
             "name": "Button",
-            "universal": {
+            "variables": {
                 "kendo-flat-button-hover-opacity": {
                     "name": "Flat Button hover opacity",
                     "type": "number",
@@ -681,9 +681,7 @@
                     "name": "Scheduler event selected background",
                     "type": "color",
                     "value": "#0f6190"
-                }
-            },
-            "universal": {
+                },
                 "kendo-enable-focus-contrast": {
                     "name": "Enable focus indicator contrast",
                     "type": "boolean",

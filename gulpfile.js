@@ -70,7 +70,6 @@ function writeSwatches( cwds, options ) {
 
 function swatchJsonTransformer( json ) {
     const variables = [];
-    const universal = [];
     const colorSystem = [];
     const colorsMap = [];
     const sassContent = [];
@@ -96,12 +95,6 @@ function swatchJsonTransformer( json ) {
                     variables.push({ name: name, value: meta.value });
                 }
             }
-
-            if (group.universal) {
-                for ( const [ name, meta ] of Object.entries(group.universal) ) {
-                    universal.push({ name: name, value: meta.value });
-                }
-            }
         }
     });
 
@@ -114,8 +107,7 @@ function swatchJsonTransformer( json ) {
         sassContent.push(`\t) !default,`);
     }
 
-    // Universal variables are also included here as they are part of the a11y swatch
-    sassContent.push(universal.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
+    sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
 
     sassContent.push(`);\n`);
 
