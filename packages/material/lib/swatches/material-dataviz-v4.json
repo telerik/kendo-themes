@@ -4,7 +4,6 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-material",
     "version": "5.1.2-dev.7",
-    "api": "modern",
     "previewColors": [
         "#3f51b5",
         "#2196f3",
@@ -14,16 +13,6 @@
     ],
     "components": [],
     "groups": [
-        {
-            "name": "New color system",
-            "colorSystem": {
-                "kendo-enable-color-system": {
-                    "name": "New color system",
-                    "type": "boolean",
-                    "value": true
-                }
-            }
-        },
         {
             "name": "New theme colors",
             "colorsMap": {
@@ -176,41 +165,6 @@
                     "name": "Series F Subtler",
                     "type": "color",
                     "value": "#f48fb1"
-                }
-            }
-        },
-        {
-            "name": "Dataviz",
-            "variables": {
-                "kendo-series-a": {
-                    "name": "Series A",
-                    "type": "color",
-                    "value": "#3f51b5"
-                },
-                "kendo-series-b": {
-                    "name": "Series B",
-                    "type": "color",
-                    "value": "#2196f3"
-                },
-                "kendo-series-c": {
-                    "name": "Series C",
-                    "type": "color",
-                    "value": "#43a047"
-                },
-                "kendo-series-d": {
-                    "name": "Series D",
-                    "type": "color",
-                    "value": "#ffc107"
-                },
-                "kendo-series-e": {
-                    "name": "Series E",
-                    "type": "color",
-                    "value": "#ff5722"
-                },
-                "kendo-series-f": {
-                    "name": "Series F",
-                    "type": "color",
-                    "value": "#e91e63"
                 }
             }
         }

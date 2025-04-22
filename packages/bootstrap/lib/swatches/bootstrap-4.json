@@ -4,7 +4,6 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-bootstrap",
     "version": "5.1.2-dev.7",
-    "api": "modern",
     "previewColors": [
         "#ffffff",
         "#f8f9fa",
@@ -14,16 +13,6 @@
     ],
     "components": [],
     "groups": [
-        {
-            "name": "New color system",
-            "colorSystem": {
-                "kendo-enable-color-system": {
-                    "name": "New color system",
-                    "type": "boolean",
-                    "value": true
-                }
-            }
-        },
         {
             "name": "New theme colors",
             "colorsMap": {
@@ -551,176 +540,6 @@
                     "name": "Series F Subtler",
                     "type": "color",
                     "value": "#eca9a7"
-                }
-            }
-        },
-        {
-            "name": "Theme colors",
-            "variables": {
-                "kendo-is-dark-theme": {
-                    "name": "Dark theme",
-                    "type": "boolean",
-                    "value": false
-                },
-                "kendo-color-primary": {
-                    "name": "Primary",
-                    "type": "color",
-                    "value": "#007bff"
-                },
-                "kendo-color-secondary": {
-                    "name": "Secondary",
-                    "type": "color",
-                    "value": "#6c757d"
-                },
-                "kendo-color-info": {
-                    "name": "Info",
-                    "type": "color",
-                    "value": "#17a2b8"
-                },
-                "kendo-color-success": {
-                    "name": "Success",
-                    "type": "color",
-                    "value": "#28a745"
-                },
-                "kendo-color-warning": {
-                    "name": "Warning",
-                    "type": "color",
-                    "value": "#ffc107"
-                },
-                "kendo-color-error": {
-                    "name": "Error",
-                    "type": "color",
-                    "value": "#dc3545"
-                }
-            }
-        },
-        {
-            "name": "Body",
-            "variables": {
-                "kendo-body-text": {
-                    "name": "Body text color",
-                    "type": "color",
-                    "value": "#212529"
-                },
-                "kendo-body-bg": {
-                    "name": "Body background",
-                    "type": "color",
-                    "value": "#ffffff"
-                },
-                "kendo-subtle-text": {
-                    "name": "Subtle text color",
-                    "type": "color",
-                    "value": "#6c757d"
-                }
-            }
-        },
-        {
-            "name": "Components",
-            "variables": {
-                "kendo-component-text": {
-                    "name": "Component text color",
-                    "type": "color",
-                    "value": "#212529"
-                },
-                "kendo-component-bg": {
-                    "name": "Component background",
-                    "type": "color",
-                    "value": "#ffffff"
-                },
-                "kendo-base-text": {
-                    "name": "Header text color",
-                    "type": "color",
-                    "value": "#212529"
-                },
-                "kendo-base-bg": {
-                    "name": "Header background",
-                    "type": "color",
-                    "value": "#f8f9fa"
-                },
-                "kendo-hover-text": {
-                    "name": "Hover text color",
-                    "type": "color",
-                    "value": "#16181b"
-                },
-                "kendo-hover-bg": {
-                    "name": "Hover background",
-                    "type": "color",
-                    "value": "#e9ecef"
-                },
-                "kendo-selected-text": {
-                    "name": "Selected text color",
-                    "type": "color",
-                    "value": "#ffffff"
-                },
-                "kendo-selected-bg": {
-                    "name": "Selected background",
-                    "type": "color",
-                    "value": "#007bff"
-                }
-            }
-        },
-        {
-            "name": "Button",
-            "variables": {
-                "kendo-button-text": {
-                    "name": "Button text color",
-                    "type": "color",
-                    "value": "#212529"
-                },
-                "kendo-button-bg": {
-                    "name": "Button background",
-                    "type": "color",
-                    "value": "#e4e7eb"
-                }
-            }
-        },
-        {
-            "name": "Link",
-            "variables": {
-                "kendo-link-text": {
-                    "name": "Link text color",
-                    "type": "color",
-                    "value": "#007bff"
-                },
-                "kendo-link-hover-text": {
-                    "name": "Link hover text color",
-                    "type": "color",
-                    "value": "#0056b3"
-                }
-            }
-        },
-        {
-            "name": "Dataviz",
-            "variables": {
-                "kendo-series-a": {
-                    "name": "Series A",
-                    "type": "color",
-                    "value": "#0275d8"
-                },
-                "kendo-series-b": {
-                    "name": "Series B",
-                    "type": "color",
-                    "value": "#5bc0de"
-                },
-                "kendo-series-c": {
-                    "name": "Series C",
-                    "type": "color",
-                    "value": "#5cb85c"
-                },
-                "kendo-series-d": {
-                    "name": "Series D",
-                    "type": "color",
-                    "value": "#f0ad4e"
-                },
-                "kendo-series-e": {
-                    "name": "Series E",
-                    "type": "color",
-                    "value": "#e67d4a"
-                },
-                "kendo-series-f": {
-                    "name": "Series F",
-                    "type": "color",
-                    "value": "#d9534f"
                 }
             }
         }

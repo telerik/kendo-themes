@@ -73,6 +73,13 @@ function swatchJsonTransformer( json ) {
     const universal = [];
     const colorSystem = [];
     const colorsMap = [];
+    const sassContent = [];
+
+    // If there are no groups, we need to include the default variation of the theme
+    if ( json.groups.length === 0) {
+        sassContent.push(`@forward "../scss/index.scss";\n@use "../scss/index.scss" as *;\n\n@include kendo-theme--styles();`);
+        return sassContent.join( '\n' );
+    }
 
     json.groups.forEach( (group) => {
         if ( group.colorsMap ) {
@@ -83,7 +90,7 @@ function swatchJsonTransformer( json ) {
             for ( const [ name, meta ] of Object.entries(group.colorSystem) ) {
                 colorSystem.push({ name: name, value: meta.value });
             }
-        } else {
+        } else  {
             if (group.variables) {
                 for ( const [ name, meta ] of Object.entries(group.variables) ) {
                     variables.push({ name: name, value: meta.value });
@@ -98,60 +105,26 @@ function swatchJsonTransformer( json ) {
         }
     });
 
-    const templates = {
-        modern: () => {
-            const sassContent = [];
+    sassContent.push(`@forward "../scss/index.scss" with (`);
+    sassContent.push(colorSystem.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
 
-            sassContent.push(`@forward "../scss/index.scss" with (`);
-            sassContent.push(colorSystem.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
-
-            if ( colorsMap.length ) {
-                sassContent.push(`\t$kendo-colors: (`);
-                sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
-                sassContent.push(`\t) !default,`);
-            }
-
-            // Universal variables are also included here as they are part of the a11y swatch
-            sassContent.push(universal.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
-
-            sassContent.push(`);\n`);
-
-            sassContent.push(`@use "../scss/index.scss" as *;\n`);
-
-            sassContent.push(`@include kendo-theme--styles();`);
-
-            return sassContent.join( '\n' );
-        },
-        // TODO remove legacy
-        legacy: () => {
-            const sassContent = [];
-            if ( !colorSystem.length ) {
-                sassContent.push(`$kendo-enable-color-system: false;\n`);
-            }
-            sassContent.push(colorSystem.map( (variable) => `$${variable.name}: ${variable.value};`).join( '\n' ));
-
-            if ( colorsMap.length ) {
-                sassContent.push(`\n$kendo-colors: (`);
-                sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
-                sassContent.push(`);\n`);
-            }
-
-            sassContent.push(`@if not ($kendo-enable-color-system) {`);
-            sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value} !global;`).join( '\n' ));
-            sassContent.push(`};`);
-
-            sassContent.push(universal.map( (variable) => `$${variable.name}: ${variable.value};`).join( '\n' ));
-            sassContent.push(`\n@import "all.scss";`);
-
-            return sassContent.join( '\n' );
-        }
-    };
-
-    if ( json.api === 'modern' ) {
-        return templates.modern();
+    if ( colorsMap.length ) {
+        sassContent.push(`\t$kendo-colors: (`);
+        sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
+        sassContent.push(`\t) !default,`);
     }
 
-    return templates.legacy();
+    // Universal variables are also included here as they are part of the a11y swatch
+    sassContent.push(universal.map( (variable) => `\t$${variable.name}: ${variable.value} !default,`).join( '\n' ));
+
+    sassContent.push(`);\n`);
+
+    sassContent.push(`@use "../scss/index.scss" as *;\n`);
+
+    sassContent.push(`@include kendo-theme--styles();`);
+
+    return sassContent.join( '\n' );
+
 }
 // #endregion
 
