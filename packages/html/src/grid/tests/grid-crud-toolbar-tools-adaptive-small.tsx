@@ -208,7 +208,7 @@ export default () => (
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button icon="cancel" size="large" disabled >Cancel</Button>
+                            <Button icon="cancel" size="large">Cancel</Button>
                             <Button icon="save" size="large" themeColor="primary">Save</Button>
                         </ActionSheetFooter>
                     }
@@ -399,7 +399,7 @@ export default () => (
                     }
                     footer={
                         <ActionSheetFooter>
-                            <Button icon="cancel" size="large" disabled >Cancel</Button>
+                            <Button icon="cancel" size="large">Cancel</Button>
                             <Button icon="save" size="large" themeColor="primary">Save</Button>
                         </ActionSheetFooter>
                     }
