@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.6.0-dev.5](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.4...v10.6.0-dev.5) (2025-04-24)
+
+
+### Features
+
+* **html:** add group-menu spec ([de269cc](https://github.com/telerik/kendo-themes/commit/de269cc35bb46a8583a0be3acf6f4de81aa7f32e))
+
+
+
+
+
 # [10.6.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.3...v10.6.0-dev.4) (2025-04-21)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

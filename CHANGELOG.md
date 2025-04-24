@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.6.0-dev.5](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.4...v10.6.0-dev.5) (2025-04-24)
+
+
+### Bug Fixes
+
+* remove columnlist max-height in actionsheet ([f347ec3](https://github.com/telerik/kendo-themes/commit/f347ec3e1bd5c84ac23baa0b05b4eaf7d0d31f3a))
+
+
+### Features
+
+* add group-menu styles ([9d69c61](https://github.com/telerik/kendo-themes/commit/9d69c61c0aa95b837424ac6f3ab015454f9ade6e))
+* **html:** add group-menu spec ([de269cc](https://github.com/telerik/kendo-themes/commit/de269cc35bb46a8583a0be3acf6f4de81aa7f32e))
+* **pager:** enable wrapping for the pager component ([cdc46db](https://github.com/telerik/kendo-themes/commit/cdc46db3831679683b3e49c36ecceb36fb258611))
+
+
+
+
+
 # [10.6.0-dev.4](https://github.com/telerik/kendo-themes/compare/v10.6.0-dev.3...v10.6.0-dev.4) (2025-04-21)
 
 **Note:** Version bump only for package kendo-themes.repo
