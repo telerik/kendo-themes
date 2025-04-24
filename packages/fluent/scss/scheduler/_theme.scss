@@ -71,7 +71,7 @@
 
     .k-scheduler-layout td.k-selected,
     .k-scheduler-layout .k-scheduler-cell.k-selected {
-        background-color: k-color( base-active );
+        background-color: k-color(base-active);
     }
 
     .k-scheduler-layout-flex {
@@ -227,7 +227,7 @@
         }
 
         .k-tooltip-title .k-day {
-            color: k-color( primary-emphasis );
+            color: k-color(primary-emphasis);
         }
     }
 }

@@ -4,7 +4,7 @@
 @mixin kendo-rating--theme-base() {
 
     .k-rating {
-        color: k-color( on-app-surface );
+        color: k-color(on-app-surface);
 
         &:focus,
         &.k-focus {

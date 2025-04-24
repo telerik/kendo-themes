@@ -34,10 +34,10 @@ $kendo-progressbar-padding-y: k-spacing(0) !default;
 
 /// The background color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-bg: k-color( base-subtle ) !default;
+$kendo-progressbar-bg: k-color(base-subtle) !default;
 /// The text color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-text: k-color( on-app-surface ) !default;
+$kendo-progressbar-text: k-color(on-app-surface) !default;
 /// The border color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-border: $kendo-progressbar-bg !default;
@@ -47,10 +47,10 @@ $kendo-progressbar-gradient: null !default;
 
 /// The progress background color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-value-bg: k-color( primary ) !default;
+$kendo-progressbar-value-bg: k-color(primary) !default;
 /// The progress text color of the ProgressBar.
 /// @group progressbar
-$kendo-progressbar-value-text: k-color( on-app-surface ) !default;
+$kendo-progressbar-value-text: k-color(on-app-surface) !default;
 /// The progress border color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-value-border: $kendo-progressbar-value-bg !default;
@@ -67,33 +67,33 @@ $kendo-progressbar-vertical-status-offset: calc( (#{$kendo-progressbar-font-size
 
 /// The background color of the disabled ProgressBar.
 /// @group progressbar
-$kendo-progressbar-disabled-bg: color-mix(in srgb, k-color( on-app-surface ) 6%, transparent) !default;
+$kendo-progressbar-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 6%, transparent) !default;
 /// The text color of the disabled ProgressBar.
 /// @group progressbar
-$kendo-progressbar-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-progressbar-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 /// The border color of the disabled ProgressBar.
 /// @group progressbar
 $kendo-progressbar-disabled-border: $kendo-progressbar-disabled-bg !default;
 
 /// The progress background color of the disabled ProgressBar.
 /// @group progressbar
-$kendo-progressbar-value-disabled-bg: k-color( primary-subtle ) !default;
+$kendo-progressbar-value-disabled-bg: k-color(primary-subtle) !default;
 
 /// The background color of the indeterminate ProgressBar.
 /// @group progressbar
-$kendo-progressbar-indeterminate-bg: k-color( base-subtle ) !default;
+$kendo-progressbar-indeterminate-bg: k-color(base-subtle) !default;
 /// The text color of the indeterminate ProgressBar.
 /// @group progressbar
 $kendo-progressbar-indeterminate-text: $kendo-progressbar-text !default;
 /// The border color of the indeterminate ProgressBar.
 /// @group progressbar
-$kendo-progressbar-indeterminate-border: k-color( base-subtle ) !default;
+$kendo-progressbar-indeterminate-border: k-color(base-subtle) !default;
 /// The background gradient of the horizontal indeterminate ProgressBar.
 /// @group progressbar
-$kendo-progressbar-indeterminate-gradient-horizontal: linear-gradient(270deg, k-color( base-subtle ) 15%, k-color( primary ) 50%, k-color( base-subtle ) 85%)  !default;
+$kendo-progressbar-indeterminate-gradient-horizontal: linear-gradient(270deg, k-color(base-subtle) 15%, k-color(primary) 50%, k-color(base-subtle) 85%)  !default;
 /// The background gradient of the vertical indeterminate ProgressBar.
 /// @group progressbar
-$kendo-progressbar-indeterminate-gradient-vertical: linear-gradient(180deg, k-color( base-subtle ) 15%, k-color( primary ) 50% k-color( base-subtle ) 85%) !default;
+$kendo-progressbar-indeterminate-gradient-vertical: linear-gradient(180deg, k-color(base-subtle) 15%, k-color(primary) 50% k-color(base-subtle) 85%) !default;
 /// The gradient size of the horizontal indeterminate ProgressBar.
 /// @group progressbar
 $kendo-progressbar-indeterminate-animation-horizontal: 3s ease 0s infinite running progressbar-indeterminate-animation-horizontal !default;
@@ -103,12 +103,12 @@ $kendo-progressbar-indeterminate-animation-vertical: 3s ease 0s infinite running
 
 /// The border color of the chunk ProgressBar.
 /// @group progressbar
-$kendo-progressbar-chunk-border: k-color( app-surface ) !default;
+$kendo-progressbar-chunk-border: k-color(app-surface) !default;
 
 // Circular Progressbar
 /// The arc stroke color of the circular ProgressBar.
 /// @group progressbar
-$kendo-circular-progressbar-arc-stroke: k-color( primary ) !default;
+$kendo-circular-progressbar-arc-stroke: k-color(primary) !default;
 /// The scale stroke background color of the circular ProgressBar.
 /// @group progressbar
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;

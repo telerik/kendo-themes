@@ -36,10 +36,10 @@ $kendo-wizard-content-padding-x: k-spacing(0) !default;
 $kendo-wizard-content-padding-y: k-spacing(0) !default;
 /// The text color of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-text: k-color( on-app-surface ) !default;
+$kendo-wizard-content-text: k-color(on-app-surface) !default;
 /// The background color of the Wizard content.
 /// @group wizard
-$kendo-wizard-content-bg: k-color( surface-alt ) !default;
+$kendo-wizard-content-bg: k-color(surface-alt) !default;
 
 /// The horizontal margin of the Wizard's Button container.
 /// @group wizard
@@ -50,4 +50,4 @@ $kendo-wizard-buttons-margin-y: k-spacing(6) !default;
 
 /// The outline of the focused Wizard step.
 /// @group wizard
-$kendo-wizard-step-focus-border: k-color( base-emphasis ) !default;
+$kendo-wizard-step-focus-border: k-color(base-emphasis) !default;

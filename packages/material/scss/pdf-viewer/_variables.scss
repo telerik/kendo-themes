@@ -32,7 +32,7 @@ $kendo-pdf-viewer-border: k-color(border) !default;
 
 /// The background color of the PDFViewer Toolbar.
 /// @group pdf-viewer
-$kendo-pdf-viewer-toolbar-bg: k-color( surface ) !default;
+$kendo-pdf-viewer-toolbar-bg: k-color(surface) !default;
 /// The text color of the PDFViewer Toolbar.
 /// @group pdf-viewer
 $kendo-pdf-viewer-toolbar-text: null !default;
@@ -128,7 +128,7 @@ $kendo-pdf-viewer-popup-padding-y: $kendo-pdf-viewer-popup-padding-x !default;
 $kendo-pdf-viewer-highlight-annotation-border: k-color(primary) !default;
 /// The background color of the PDFViewer hover highlight annotation.
 /// @group pdf-viewer
-$kendo-pdf-viewer-highlight-annotation-hover-border: k-color( primary-hover ) !default;
+$kendo-pdf-viewer-highlight-annotation-hover-border: k-color(primary-hover) !default;
 /// The border color of the PDFViewer selected free text annotation.
 /// @group pdf-viewer
 $kendo-pdf-viewer-free-text-annotation-border: k-color(primary) !default;

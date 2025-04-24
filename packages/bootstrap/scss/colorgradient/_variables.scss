@@ -200,7 +200,7 @@ $kendo-color-gradient-input-gap: calc( #{$kendo-color-gradient-spacer} / 2 ) !de
 $kendo-color-gradient-input-label-gap: k-spacing(1) !default;
 /// The text color of the ColorGradient input labels.
 /// @group color-gradient
-$kendo-color-gradient-input-label-text: k-color( subtle ) !default;
+$kendo-color-gradient-input-label-text: k-color(subtle) !default;
 
 /// The width of the small ColorGradient input.
 /// @group color-gradient

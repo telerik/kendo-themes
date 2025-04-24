@@ -259,7 +259,7 @@
         }
 
         &.k-disabled {
-            color: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent);
+            color: color-mix(in srgb, k-color(on-app-surface) 46%, transparent);
         }
     }
 

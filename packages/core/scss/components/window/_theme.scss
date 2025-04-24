@@ -35,7 +35,7 @@
     // Window theme colors
     @each $name, $color in $kendo-window-theme-colors {
         .k-window-#{$name} .k-window-titlebar {
-            color: k-color( on-#{$name} );
+            color: k-color(on-#{$name});
             background-color: $color;
         }
     }

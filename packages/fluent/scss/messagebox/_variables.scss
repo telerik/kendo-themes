@@ -34,35 +34,35 @@ $kendo-message-box-link-font-style: normal !default;
 $kendo-message-box-link-decoration: underline !default;
 /// Text color of the message box links.
 /// @group messagebox
-$kendo-message-box-link-text: k-color( primary ) !default;
+$kendo-message-box-link-text: k-color(primary) !default;
 /// Hover text color of the message box links.
 /// @group messagebox
-$kendo-message-box-link-hover-text: k-color( primary-hover ) !default;
+$kendo-message-box-link-hover-text: k-color(primary-hover) !default;
 
 $kendo-messagebox-theme-colors: (
     primary: (
-        text: k-color( primary-emphasis ),
-        bg: k-color( primary-subtle ),
-        border: k-color( primary-subtle ),
+        text: k-color(primary-emphasis),
+        bg: k-color(primary-subtle),
+        border: k-color(primary-subtle),
     ),
     info: (
-        text: k-color( info-on-surface ),
-        bg: k-color( info-subtle ),
-        border: k-color( info-subtle ),
+        text: k-color(info-on-surface),
+        bg: k-color(info-subtle),
+        border: k-color(info-subtle),
     ),
     success: (
-        text: k-color( success-on-surface ),
-        bg: k-color( success-subtle ),
-        border: k-color( success-subtle ),
+        text: k-color(success-on-surface),
+        bg: k-color(success-subtle),
+        border: k-color(success-subtle),
     ),
     warning: (
-        text: k-color( warning-on-surface ),
-        bg: k-color( warning-subtle ),
-        border: k-color( warning-subtle ),
+        text: k-color(warning-on-surface),
+        bg: k-color(warning-subtle),
+        border: k-color(warning-subtle),
     ),
     error: (
-        text: k-color( error-on-surface ),
-        bg: k-color( error-subtle ),
-        border: k-color( error-subtle ),
+        text: k-color(error-on-surface),
+        bg: k-color(error-subtle),
+        border: k-color(error-subtle),
     ),
 ) !default;

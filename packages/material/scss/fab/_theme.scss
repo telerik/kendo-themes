@@ -11,7 +11,7 @@
         .k-fab-solid-#{$name} {
             @include box-shadow($kendo-fab-shadow);
             border-color: $color;
-            color: k-color( on-#{$name} );
+            color: k-color(on-#{$name});
             background-color: $color;
         }
     }
@@ -20,8 +20,8 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-hover.k-fab-solid-#{$name},
         .k-fab-solid-#{$name}:hover {
-            border-color: k-color( #{$name}-hover );
-            background-color: k-color( #{$name}-hover );
+            border-color: k-color(#{$name}-hover);
+            background-color: k-color(#{$name}-hover);
         }
     }
 
@@ -29,8 +29,8 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-focus.k-fab-solid-#{$name},
         .k-fab-solid-#{$name}:focus {
-            border-color: k-color( #{$name}-active );
-            background-color: k-color( #{$name}-active );
+            border-color: k-color(#{$name}-active);
+            background-color: k-color(#{$name}-active);
         }
     }
 
@@ -39,8 +39,8 @@
         .k-active.k-fab-solid-#{$name},
         .k-selected.k-fab-solid-#{$name},
         .k-fab-solid-#{$name}:active {
-            border-color: k-color( #{$name}-active );
-            background-color: k-color( #{$name}-active );
+            border-color: k-color(#{$name}-active);
+            background-color: k-color(#{$name}-active);
             box-shadow: $kendo-fab-active-shadow;
         }
     }
@@ -51,8 +51,8 @@
         .k-fab-solid-#{$name}:disabled {
             @include box-shadow($kendo-fab-disabled-shadow);
             border-color: transparent;
-            background-color: color-mix(in srgb, k-color( on-app-surface ) 9%, transparent);
-            color: color-mix(in srgb, k-color( on-app-surface ) 32%, transparent);
+            background-color: color-mix(in srgb, k-color(on-app-surface) 9%, transparent);
+            color: color-mix(in srgb, k-color(on-app-surface) 32%, transparent);
             opacity: 1;
         }
     }
@@ -78,25 +78,25 @@
     // Hover state
     .k-fab-item.k-hover .k-fab-item-icon,
     .k-fab-item:hover .k-fab-item-icon {
-        border-color: k-color( base-hover );
-        background-color: k-color( base-hover );
-        color: k-color( on-base );
+        border-color: k-color(base-hover);
+        background-color: k-color(base-hover);
+        color: k-color(on-base);
     }
 
     // Focus state
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
-        border-color: k-color( base-active );
-        background-color: k-color( base-active );
-        color: k-color( on-base );
+        border-color: k-color(base-active);
+        background-color: k-color(base-active);
+        color: k-color(on-base);
     }
 
     // Active state
     .k-fab-item.k-active .k-fab-item-icon,
     .k-fab-item:active .k-fab-item-icon {
         @include box-shadow($kendo-fab-item-active-shadow);
-        border-color: k-color( base );
-        background-color: k-color( base );
+        border-color: k-color(base);
+        background-color: k-color(base);
     }
 
     // Disabled state
@@ -107,8 +107,8 @@
         .k-fab-item-text,
         .k-fab-item-icon {
             @include box-shadow($kendo-fab-item-disabled-shadow);
-            background-color: color-mix(in srgb, k-color( base ) 60%, transparent);
-            color: color-mix(in srgb, k-color( on-base ) 60%, transparent);
+            background-color: color-mix(in srgb, k-color(base) 60%, transparent);
+            color: color-mix(in srgb, k-color(on-base) 60%, transparent);
         }
     }
 

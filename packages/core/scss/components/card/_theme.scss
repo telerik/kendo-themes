@@ -74,9 +74,9 @@
     // Card theme colors
     @each $name, $color in $kendo-card-theme-colors {
         .k-card-#{$name} {
-            background-color: k-color( #{$name}-subtle );
-            color: k-color( #{$name}-on-subtle );
-            border-color: k-color( #{$name}-emphasis );
+            background-color: k-color(#{$name}-subtle);
+            color: k-color(#{$name}-on-subtle);
+            border-color: k-color(#{$name}-emphasis);
 
             .k-card-subtitle {
                 color: inherit;

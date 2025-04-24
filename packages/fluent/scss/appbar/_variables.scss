@@ -35,13 +35,13 @@ $kendo-appbar-spacing: k-spacing(2) !default;
 
 /// The text color of the AppBar.
 /// @group appbar
-$kendo-appbar-text: k-color( on-app-surface ) !default;
+$kendo-appbar-text: k-color(on-app-surface) !default;
 /// The background color of the AppBar.
 /// @group appbar
-$kendo-appbar-bg: k-color( surface ) !default;
+$kendo-appbar-bg: k-color(surface) !default;
 /// The border color of the AppBar.
 /// @group appbar
-$kendo-appbar-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-appbar-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The theme variations for the AppBar.
 /// @group appbar

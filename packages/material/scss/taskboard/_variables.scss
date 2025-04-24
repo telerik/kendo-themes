@@ -82,7 +82,7 @@ $kendo-taskboard-column-border-width: 1px !default;
 $kendo-taskboard-column-border-radius: k-border-radius(md) !default;
 /// The background color of the TaskBoard column.
 /// @group taskboard
-$kendo-taskboard-column-bg: k-color( surface ) !default;
+$kendo-taskboard-column-bg: k-color(surface) !default;
 /// The text color of the TaskBoard column.
 /// @group taskboard
 $kendo-taskboard-column-text: null !default;
@@ -98,7 +98,7 @@ $kendo-taskboard-column-focus-bg: null !default;
 $kendo-taskboard-column-focus-text: null !default;
 /// The border color of the focused TaskBoard column.
 /// @group taskboard
-$kendo-taskboard-column-focus-border: k-color( border-alt ) !default;
+$kendo-taskboard-column-focus-border: k-color(border-alt) !default;
 
 /// The vertical padding of the TaskBoard column header.
 /// @group taskboard
@@ -209,11 +209,11 @@ $kendo-taskboard-card-category-border-width: 4px !default;
 
 /// The border color of the hovered TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-hover-border: k-color( border-alt ) !default;
+$kendo-taskboard-card-hover-border: k-color(border-alt) !default;
 
 /// The border color of the focused TaskBoard Card.
 /// @group taskboard
-$kendo-taskboard-card-focus-border: k-color( border-alt ) !default;
+$kendo-taskboard-card-focus-border: k-color(border-alt) !default;
 /// The shadow of the focused TaskBoard Card.
 /// @group taskboard
 $kendo-taskboard-card-focus-shadow: none !default;

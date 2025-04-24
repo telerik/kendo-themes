@@ -91,19 +91,19 @@ $kendo-input-spinner-icon-offset: null !default;
 
 /// The text color of the solid Input components.
 /// @group input
-$kendo-input-solid-text: k-color( on-app-surface ) !default;
+$kendo-input-solid-text: k-color(on-app-surface) !default;
 
 /// The background color of the solid Input components.
 /// @group input
-$kendo-input-solid-bg: k-color( app-surface ) !default;
+$kendo-input-solid-bg: k-color(app-surface) !default;
 
 /// The border color of the solid Input components.
 /// @group input
-$kendo-input-solid-border: k-color( border ) !default;
+$kendo-input-solid-border: k-color(border) !default;
 
 /// The text color of the hovered solid Input components.
 /// @group input
-$kendo-input-solid-hover-text: k-color( on-app-surface ) !default;
+$kendo-input-solid-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered solid Input components.
 /// @group input
@@ -111,7 +111,7 @@ $kendo-input-solid-hover-bg: $kendo-input-solid-bg !default;
 
 /// The border color of the hovered solid Input components.
 /// @group input
-$kendo-input-solid-hover-border: k-color( border-alt ) !default;
+$kendo-input-solid-hover-border: k-color(border-alt) !default;
 
 /// The text color of the focused solid Input components.
 /// @group input
@@ -123,7 +123,7 @@ $kendo-input-solid-focus-bg: $kendo-input-solid-bg !default;
 
 /// The border color of the focused solid Input components.
 /// @group input
-$kendo-input-solid-focus-border: k-color( primary ) !default;
+$kendo-input-solid-focus-border: k-color(primary) !default;
 
 /// The text color of the hovered and focused solid Input components.
 /// @group input
@@ -139,11 +139,11 @@ $kendo-input-solid-hover-focus-border: $kendo-input-solid-focus-border !default;
 
 /// The text color of the disabled solid Input components.
 /// @group input
-$kendo-input-solid-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-input-solid-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the disabled solid Input components.
 /// @group input
-$kendo-input-solid-disabled-bg: k-color( base-subtle ) !default;
+$kendo-input-solid-disabled-bg: k-color(base-subtle) !default;
 
 /// The border color of the disabled solid Input components.
 /// @group input
@@ -151,39 +151,39 @@ $kendo-input-solid-disabled-border: transparent !default;
 
 /// The text color of the outline Input components.
 /// @group input
-$kendo-input-outline-text: k-color( on-app-surface ) !default;
+$kendo-input-outline-text: k-color(on-app-surface) !default;
 
 /// The background color of the outline Input components.
 /// @group input
-$kendo-input-outline-bg: k-color( app-surface ) !default;
+$kendo-input-outline-bg: k-color(app-surface) !default;
 
 /// The border color of the outline Input components.
 /// @group input
-$kendo-input-outline-border: k-color( border ) !default;
+$kendo-input-outline-border: k-color(border) !default;
 
 /// The text color of the hovered outline Input components.
 /// @group input
-$kendo-input-outline-hover-text: k-color( on-app-surface ) !default;
+$kendo-input-outline-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered outline Input components.
 /// @group input
-$kendo-input-outline-hover-bg: k-color( app-surface ) !default;
+$kendo-input-outline-hover-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered outline Input components.
 /// @group input
-$kendo-input-outline-hover-border: k-color( border-alt ) !default;
+$kendo-input-outline-hover-border: k-color(border-alt) !default;
 
 /// The text color of the focused outline Input components.
 /// @group input
-$kendo-input-outline-focus-text: k-color( on-app-surface ) !default;
+$kendo-input-outline-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused outline Input components.
 /// @group input
-$kendo-input-outline-focus-bg: k-color( app-surface ) !default;
+$kendo-input-outline-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused outline Input components.
 /// @group input
-$kendo-input-outline-focus-border: k-color( primary ) !default;
+$kendo-input-outline-focus-border: k-color(primary) !default;
 
 /// The text color of the hovered and focused outline Input components.
 /// @group input
@@ -199,7 +199,7 @@ $kendo-input-outline-hover-focus-border: $kendo-input-outline-focus-border !defa
 
 /// The text color of the disabled outline Input components.
 /// @group input
-$kendo-input-outline-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-input-outline-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the disabled outline Input components.
 /// @group input
@@ -207,43 +207,43 @@ $kendo-input-outline-disabled-bg: none !default;
 
 /// The border color of the disabled outline Input components.
 /// @group input
-$kendo-input-outline-disabled-border: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-input-outline-disabled-border: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The text color of the flat Input components.
 /// @group input
-$kendo-input-flat-text: k-color( on-app-surface ) !default;
+$kendo-input-flat-text: k-color(on-app-surface) !default;
 
 /// The background color of the flat Input components.
 /// @group input
-$kendo-input-flat-bg: k-color( app-surface ) !default;
+$kendo-input-flat-bg: k-color(app-surface) !default;
 
 /// The border color of the flat Input components.
 /// @group input
-$kendo-input-flat-border: k-color( border ) !default;
+$kendo-input-flat-border: k-color(border) !default;
 
 /// The text color of the hovered flat Input components.
 /// @group input
-$kendo-input-flat-hover-text: k-color( on-app-surface ) !default;
+$kendo-input-flat-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered flat Input components.
 /// @group input
-$kendo-input-flat-hover-bg: k-color( app-surface ) !default;
+$kendo-input-flat-hover-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered flat Input components.
 /// @group input
-$kendo-input-flat-hover-border: k-color( border-alt ) !default;
+$kendo-input-flat-hover-border: k-color(border-alt) !default;
 
 /// The text color of the focused flat Input components.
 /// @group input
-$kendo-input-flat-focus-text: k-color( on-app-surface ) !default;
+$kendo-input-flat-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused flat Input components.
 /// @group input
-$kendo-input-flat-focus-bg: k-color( app-surface ) !default;
+$kendo-input-flat-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused flat Input components.
 /// @group input
-$kendo-input-flat-focus-border: k-color( primary ) !default;
+$kendo-input-flat-focus-border: k-color(primary) !default;
 
 /// The text color of the hovered and focused flat Input components.
 /// @group input
@@ -259,7 +259,7 @@ $kendo-input-flat-hover-focus-border: $kendo-input-flat-focus-border !default;
 
 /// The text color of the disabled flat Input components.
 /// @group input
-$kendo-input-flat-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-input-flat-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the disabled flat Input components.
 /// @group input
@@ -267,43 +267,43 @@ $kendo-input-flat-disabled-bg: none !default;
 
 /// The border color of the disabled flat Input components.
 /// @group input
-$kendo-input-flat-disabled-border: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-input-flat-disabled-border: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The text color of the solid Picker components.
 /// @group input
-$kendo-picker-solid-text: k-color( on-app-surface ) !default;
+$kendo-picker-solid-text: k-color(on-app-surface) !default;
 
 /// The background color of the solid Picker components.
 /// @group input
-$kendo-picker-solid-bg: k-color( app-surface ) !default;
+$kendo-picker-solid-bg: k-color(app-surface) !default;
 
 /// The border color of the solid Picker components.
 /// @group input
-$kendo-picker-solid-border: k-color( border ) !default;
+$kendo-picker-solid-border: k-color(border) !default;
 
 /// The text color of the hovered solid Picker components.
 /// @group input
-$kendo-picker-solid-hover-text: k-color( on-app-surface ) !default;
+$kendo-picker-solid-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of hovered the solid Picker components.
 /// @group input
-$kendo-picker-solid-hover-bg: k-color( app-surface ) !default;
+$kendo-picker-solid-hover-bg: k-color(app-surface) !default;
 
 /// The border color of the hovered solid Picker components.
 /// @group input
-$kendo-picker-solid-hover-border: k-color( border-alt ) !default;
+$kendo-picker-solid-hover-border: k-color(border-alt) !default;
 
 /// The text color of the focused solid Picker components.
 /// @group input
-$kendo-picker-solid-focus-text: k-color( on-app-surface ) !default;
+$kendo-picker-solid-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused solid Picker components.
 /// @group input
-$kendo-picker-solid-focus-bg: k-color( app-surface ) !default;
+$kendo-picker-solid-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused solid Picker components.
 /// @group input
-$kendo-picker-solid-focus-border: k-color( primary )  !default;
+$kendo-picker-solid-focus-border: k-color(primary)  !default;
 
 /// The text color of the hovered and focused solid Picker components.
 /// @group input
@@ -319,11 +319,11 @@ $kendo-picker-solid-hover-focus-border: $kendo-picker-solid-focus-border !defaul
 
 /// The text color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-solid-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-picker-solid-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-solid-disabled-bg: color-mix(in srgb, k-color( on-app-surface ) 9%, transparent) !default;
+$kendo-picker-solid-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 9%, transparent) !default;
 
 /// The border color of the disabled solid Picker components.
 /// @group input
@@ -331,7 +331,7 @@ $kendo-picker-solid-disabled-border: transparent !default;
 
 /// The text color of the outline Picker components.
 /// @group input
-$kendo-picker-outline-text: k-color( on-app-surface ) !default;
+$kendo-picker-outline-text: k-color(on-app-surface) !default;
 
 /// The background color of the outline Picker components.
 /// @group input
@@ -339,15 +339,15 @@ $kendo-picker-outline-bg: none !default;
 
 /// The border color of the outline Picker components.
 /// @group input
-$kendo-picker-outline-border: k-color( on-app-surface ) !default;
+$kendo-picker-outline-border: k-color(on-app-surface) !default;
 
 /// The text color of the hovered outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-text: k-color( app-surface ) !default;
+$kendo-picker-outline-hover-text: k-color(app-surface) !default;
 
 /// The background color of the hovered outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-bg: k-color( on-app-surface ) !default;
+$kendo-picker-outline-hover-bg: k-color(on-app-surface) !default;
 
 /// The border color of the hovered outline Picker components.
 /// @group input
@@ -355,31 +355,31 @@ $kendo-picker-outline-hover-border: $kendo-picker-outline-hover-bg!default;
 
 /// The text color of the focused outline Picker components.
 /// @group input
-$kendo-picker-outline-focus-text: k-color( on-app-surface ) !default;
+$kendo-picker-outline-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused outline Picker components.
 /// @group input
-$kendo-picker-outline-focus-bg: k-color( app-surface ) !default;
+$kendo-picker-outline-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused outline Picker components.
 /// @group input
-$kendo-picker-outline-focus-border: k-color( primary ) !default;
+$kendo-picker-outline-focus-border: k-color(primary) !default;
 
 /// The text color of the hovered and focused outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-focus-text: k-color( app-surface ) !default;
+$kendo-picker-outline-hover-focus-text: k-color(app-surface) !default;
 
 /// The background color of the hovered and focused outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-focus-bg: k-color( on-app-surface ) !default;
+$kendo-picker-outline-hover-focus-bg: k-color(on-app-surface) !default;
 
 /// The border color of the hovered and focused outline Picker components.
 /// @group input
-$kendo-picker-outline-hover-focus-border: k-color( primary ) !default;
+$kendo-picker-outline-hover-focus-border: k-color(primary) !default;
 
 /// The text color of the disabled outline Picker components.
 /// @group input
-$kendo-picker-outline-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-picker-outline-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the disabled outline Picker components.
 /// @group input
@@ -391,7 +391,7 @@ $kendo-picker-outline-disabled-border: $kendo-picker-outline-disabled-text!defau
 
 /// The text color of the flat Picker components.
 /// @group input
-$kendo-picker-flat-text: k-color( on-app-surface ) !default;
+$kendo-picker-flat-text: k-color(on-app-surface) !default;
 
 /// The background color of the flat Picker components.
 /// @group input
@@ -399,31 +399,31 @@ $kendo-picker-flat-bg: none !default;
 
 /// The border color of the flat Picker components.
 /// @group input
-$kendo-picker-flat-border: k-color( border ) !default;
+$kendo-picker-flat-border: k-color(border) !default;
 
 /// The text color of the hovered flat Picker components.
 /// @group input
-$kendo-picker-flat-hover-text: k-color( on-app-surface ) !default;
+$kendo-picker-flat-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the hovered flat Picker components.
 /// @group input
-$kendo-picker-flat-hover-bg: k-color( base-hover ) !default;
+$kendo-picker-flat-hover-bg: k-color(base-hover) !default;
 
 /// The border color of the hovered flat Picker components.
 /// @group input
-$kendo-picker-flat-hover-border: k-color( border-alt ) !default;
+$kendo-picker-flat-hover-border: k-color(border-alt) !default;
 
 /// The text color of the focused flat Picker components.
 /// @group input
-$kendo-picker-flat-focus-text: k-color( on-app-surface ) !default;
+$kendo-picker-flat-focus-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused flat Picker components.
 /// @group input
-$kendo-picker-flat-focus-bg: k-color( app-surface ) !default;
+$kendo-picker-flat-focus-bg: k-color(app-surface) !default;
 
 /// The border color of the focused flat Picker components.
 /// @group input
-$kendo-picker-flat-focus-border: k-color( primary ) !default;
+$kendo-picker-flat-focus-border: k-color(primary) !default;
 
 /// The text color of the hovered and focused flat Picker components.
 /// @group input
@@ -439,7 +439,7 @@ $kendo-picker-flat-hover-focus-border: $kendo-picker-flat-border !default;
 
 /// The text color of the disabled flat Picker components.
 /// @group input
-$kendo-picker-flat-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-picker-flat-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the disabled flat Picker components.
 /// @group input
@@ -604,47 +604,47 @@ $kendo-input-theme-colors: (
 
 /// The background color of the Input prefix.
 /// @group input
-$kendo-input-prefix-bg: k-color( base-subtle ) !default;
+$kendo-input-prefix-bg: k-color(base-subtle) !default;
 
 /// The background color of the Input suffix.
 /// @group input
-$kendo-input-suffix-bg: k-color( base-subtle ) !default;
+$kendo-input-suffix-bg: k-color(base-subtle) !default;
 
 /// The color of the Input separator.
 /// @group input
-$kendo-input-separator-text: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-input-separator-text: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The text color of the Input prefix.
 /// @group input
-$kendo-input-prefix-text: color-mix(in srgb, k-color( border-alt ) 76%, transparent) !default;
+$kendo-input-prefix-text: color-mix(in srgb, k-color(border-alt) 76%, transparent) !default;
 /// The text color of the Input suffix.
 /// @group input
-$kendo-input-suffix-text: color-mix(in srgb, k-color( border-alt ) 76%, transparent) !default;
+$kendo-input-suffix-text: color-mix(in srgb, k-color(border-alt) 76%, transparent) !default;
 
 /// The text color of the disabled Input prefix.
 /// @group input
-$kendo-input-prefix-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 28%, transparent) !default;
+$kendo-input-prefix-disabled-text: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
 /// The text color of the disabled Input suffix.
 /// @group input
-$kendo-input-suffix-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 28%, transparent) !default;
+$kendo-input-suffix-disabled-text: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
 
 /// The border color of the invalid Input components.
 /// @group input
-$kendo-input-invalid-border: k-color( error-emphasis ) !default;
+$kendo-input-invalid-border: k-color(error-emphasis) !default;
 /// The text color of the invalid Input components.
 /// @group input
-$kendo-input-invalid-text: k-color( error-on-surface ) !default;
+$kendo-input-invalid-text: k-color(error-on-surface) !default;
 
 /// The text color of the Input placeholder.
 /// @group input
-$kendo-input-placeholder-text: k-color( subtle ) !default;
+$kendo-input-placeholder-text: k-color(subtle) !default;
 /// The opacity of the Input placeholder.
 /// @group input
 $kendo-input-placeholder-opacity: 1 !default;
 
 /// The color of the Input clear value icon.
 /// @group input
-$kendo-input-clear-value-text: k-color( subtle ) !default;
+$kendo-input-clear-value-text: k-color(subtle) !default;
 /// The opacity of the Input clear value icon.
 /// @group input
 $kendo-input-clear-value-opacity: .6 !default;

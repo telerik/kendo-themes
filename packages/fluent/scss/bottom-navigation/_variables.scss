@@ -82,10 +82,10 @@ $_tc-bottom-nav-matrix: (
         disabled: (inherit, on-color-disabled, transparent)
     ),
     flat: (
-        normal: (app-surface, on-app-surface, color-mix(in srgb, k-color( border ) 16%, transparent)),
+        normal: (app-surface, on-app-surface, color-mix(in srgb, k-color(border) 16%, transparent)),
         focus: (inherit, color, transparent, color),
         active: (inherit, color, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     )
 ) !default;
 
@@ -100,7 +100,7 @@ $_tc-bottom-nav-warning-matrix: (
         normal: (app-surface, on-app-surface, color),
         focus: (inherit, color, transparent, color),
         active: (inherit, color, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     )
 ) !default;
 
@@ -115,7 +115,7 @@ $_tc-bottom-nav-dark-matrix: (
         normal: (app-surface, on-app-surface, color),
         focus: (inherit, color, transparent, color),
         active: (inherit, color, transparent),
-        disabled: (inherit, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (inherit, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     )
 ) !default;
 
@@ -130,7 +130,7 @@ $_tc-bottom-nav-light-matrix: (
         normal: (app-surface, on-app-surface, transparent),
         focus: (inherit, color, transparent, color),
         active: (inherit, color, transparent),
-        disabled: (inherit, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (inherit, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     )
 ) !default;
 

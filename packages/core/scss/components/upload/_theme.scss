@@ -88,7 +88,7 @@
         .k-file-size,
         .k-file-validation-message,
         .k-file-summary {
-            color: k-color( subtle );
+            color: k-color(subtle);
         }
 
         .k-multiple-files-wrapper .k-file-summary {
@@ -99,7 +99,7 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: k-color( error )
+            border-color: k-color(error)
         }
     }
 

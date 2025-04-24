@@ -21,8 +21,8 @@
             // Focus state
             &:focus,
             &.k-focus {
-                background-color: k-color( #{$name}-hover );
-                border-color: k-color( #{$name}-hover );
+                background-color: k-color(#{$name}-hover);
+                border-color: k-color(#{$name}-hover);
                 @include box-shadow( $kendo-button-focus-shadow );
             }
 

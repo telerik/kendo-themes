@@ -147,7 +147,7 @@ $kendo-card-subtitle-font-weight: $kendo-card-title-font-weight !default;
 $kendo-card-subtitle-letter-spacing: null !default;
 /// The text color of the Card subtitle.
 /// @group card
-$kendo-card-subtitle-text: k-color( subtle ) !default;
+$kendo-card-subtitle-text: k-color(subtle) !default;
 
 /// The maximum width of the Card image.
 /// @group card
@@ -187,16 +187,16 @@ $kendo-card-callout-width: 1.3em !default;
 $kendo-card-callout-height: 1.3em !default;
 
 $kendo-card-theme-colors: (
-    "primary": k-color( primary ),
-    "secondary": k-color( secondary ),
-    "tertiary": k-color( tertiary ),
-    "info": k-color( info ),
-    "success": k-color( success ),
-    "warning": k-color( warning ),
-    "error": k-color( error ),
-    "dark": k-color( dark ),
-    "light": k-color( light ),
-    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/card/_variables.scss" with (

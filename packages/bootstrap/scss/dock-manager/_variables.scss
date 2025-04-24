@@ -111,7 +111,7 @@ $kendo-dock-manager-dock-preview-border-style: dashed !default;
 $kendo-dock-manager-dock-preview-border-radius: k-border-radius(sm) !default;
 /// The background color of the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-bg: color-mix(in srgb, k-color( primary ) 16%, transparent) !default;
+$kendo-dock-manager-dock-preview-bg: color-mix(in srgb, k-color(primary) 16%, transparent) !default;
 /// The border color of the dropping area in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-dock-preview-border: k-color(primary) !default;

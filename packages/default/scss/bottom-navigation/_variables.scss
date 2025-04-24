@@ -56,25 +56,25 @@ $kendo-bottom-nav-shadow: k-elevation(4) !default;
 
 /// The text color of the flat BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-flat-text: k-color( on-app-surface ) !default;
+$kendo-bottom-nav-flat-text: k-color(on-app-surface) !default;
 /// The background color of the flat BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-flat-bg: k-color( surface-alt ) !default;
+$kendo-bottom-nav-flat-bg: k-color(surface-alt) !default;
 /// The border color of the flat BottomNavigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-flat-border: k-color( border ) !default;
+$kendo-bottom-nav-flat-border: k-color(border) !default;
 
 $kendo-bottom-navigation-theme-colors: (
-    "primary": k-color( primary ),
-    "secondary": k-color( secondary ),
-    "tertiary": k-color( tertiary ),
-    "info": k-color( info ),
-    "success": k-color( success ),
-    "warning": k-color( warning ),
-    "error": k-color( error ),
-    "dark": k-color( dark ),
-    "light": k-color( light ),
-    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/bottom-navigation/_variables.scss" with (

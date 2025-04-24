@@ -119,33 +119,33 @@ $kendo-treeview-sizes: (
 $kendo-treeview-bg: null !default;
 /// The text color of the TreeView.
 /// @group treeview
-$kendo-treeview-text: k-color( on-app-surface ) !default;
+$kendo-treeview-text: k-color(on-app-surface) !default;
 /// The border color of the TreeView.
 /// @group treeview
 $kendo-treeview-border: null !default;
 
 /// The background color of hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-hover-bg: k-color( base-hover ) !default;
+$kendo-treeview-item-hover-bg: k-color(base-hover) !default;
 /// The text color of hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-hover-text: k-color( on-app-surface ) !default;
+$kendo-treeview-item-hover-text: k-color(on-app-surface) !default;
 /// The border color of hovered TreeView items.
 /// @group treeview
-$kendo-treeview-item-hover-border: k-color( border ) !default;
+$kendo-treeview-item-hover-border: k-color(border) !default;
 /// The background gradient of hovered TreeView items.
 /// @group treeview
 $kendo-treeview-item-hover-gradient: null !default;
 
 /// The background color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-bg: k-color( primary ) !default;
+$kendo-treeview-item-selected-bg: k-color(primary) !default;
 /// The text color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-text: k-color( on-primary ) !default;
+$kendo-treeview-item-selected-text: k-color(on-primary) !default;
 /// The border color of selected TreeView items.
 /// @group treeview
-$kendo-treeview-item-selected-border: k-color( primary ) !default;
+$kendo-treeview-item-selected-border: k-color(primary) !default;
 /// The background gradient of selected TreeView items.
 /// @group treeview
 $kendo-treeview-item-selected-gradient: null !default;
@@ -159,7 +159,7 @@ $kendo-treeview-item-focus-shadow: $kendo-focus-shadow !default;
 $kendo-treeview-loadmore-bg: transparent !default;
 /// The text color of the Load More button in the TreeView.
 /// @group treeview
-$kendo-treeview-loadmore-text: k-color( primary ) !default;
+$kendo-treeview-loadmore-text: k-color(primary) !default;
 /// The border color of the Load More button in the TreeView.
 /// @group treeview
 $kendo-treeview-loadmore-border: null !default;
@@ -169,7 +169,7 @@ $kendo-treeview-loadmore-border: null !default;
 $kendo-treeview-loadmore-hover-bg: transparent !default;
 /// The text color of the hovered Load More button in the TreeView.
 /// @group treeview
-$kendo-treeview-loadmore-hover-text: k-color( primary-hover ) !default;
+$kendo-treeview-loadmore-hover-text: k-color(primary-hover) !default;
 /// The border color of the hovered Load More button in the TreeView.
 /// @group treeview
 $kendo-treeview-loadmore-hover-border: null !default;
@@ -179,7 +179,7 @@ $kendo-treeview-loadmore-hover-border: null !default;
 $kendo-treeview-loadmore-focus-bg: transparent !default;
 /// The text color of the focused Load More button in the TreeView.
 /// @group treeview
-$kendo-treeview-loadmore-focus-text: k-color( primary-hover ) !default;
+$kendo-treeview-loadmore-focus-text: k-color(primary-hover) !default;
 /// The border color of the focused Load More button in the TreeView.
 /// @group treeview
 $kendo-treeview-loadmore-focus-border: null !default;

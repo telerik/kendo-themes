@@ -18,17 +18,17 @@ $kendo-scheduler-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-bg: k-color( surface-alt ) !default;
+$kendo-scheduler-bg: k-color(surface-alt) !default;
 /// The text color of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-text: k-color( on-app-surface ) !default;
+$kendo-scheduler-text: k-color(on-app-surface) !default;
 /// The border color of the Scheduler.
 /// @group scheduler
-$kendo-scheduler-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-scheduler-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The background color of the selected row in Scheduler.
 /// @group scheduler
-$kendo-scheduler-selected-bg: k-color( primary-subtle ) !default;
+$kendo-scheduler-selected-bg: k-color(primary-subtle) !default;
 /// The text color of the selected row in Scheduler.
 /// @group scheduler
 $kendo-scheduler-selected-text: $kendo-scheduler-text !default;
@@ -80,10 +80,10 @@ $kendo-scheduler-event-min-height: calc( #{$kendo-scheduler-line-height} + 2 * #
 
 /// The background color of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-bg: k-color( primary ) !default;
+$kendo-scheduler-event-bg: k-color(primary) !default;
 /// The text color of the Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-text: k-color( app-surface ) !default;
+$kendo-scheduler-event-text: k-color(app-surface) !default;
 /// The border color of the Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-border: $kendo-scheduler-event-bg !default;
@@ -96,13 +96,13 @@ $kendo-scheduler-event-shadow: null !default;
 
 /// The background color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-bg: k-color( base-hover ) !default;
+$kendo-scheduler-event-hover-bg: k-color(base-hover) !default;
 /// The text color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-text: k-color( on-base ) !default;
+$kendo-scheduler-event-hover-text: k-color(on-base) !default;
 /// The border color of the hovered Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-hover-border: color-mix(in srgb, k-color( border ) 10%, transparent) !default;
+$kendo-scheduler-event-hover-border: color-mix(in srgb, k-color(border) 10%, transparent) !default;
 /// The gradient of the hovered Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-hover-gradient: null !default;
@@ -112,7 +112,7 @@ $kendo-scheduler-event-hover-shadow: null !default;
 
 /// The background color of the selected Scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-bg: k-color( primary-active ) !default;
+$kendo-scheduler-event-selected-bg: k-color(primary-active) !default;
 /// The text color of the selected Scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-selected-text: $kendo-scheduler-event-text !default;
@@ -148,7 +148,7 @@ $kendo-scheduler-timecolumn-width: 11em !default;
 
 /// The background color of the non-working hours in the Scheduler.
 /// @group scheduler
-$kendo-scheduler-nonwork-bg: k-color( surface ) !default;
+$kendo-scheduler-nonwork-bg: k-color(surface) !default;
 /// The text color of the non-working hours in the Scheduler.
 /// @group scheduler
 $kendo-scheduler-nonwork-text: null !default;
@@ -162,7 +162,7 @@ $kendo-scheduler-weekend-text: null !default;
 
 /// The background color of the preceding/subsequent month cells in the Calendar.
 /// @group scheduler
-$kendo-scheduler-othermonth-bg: k-color( surface ) !default;
+$kendo-scheduler-othermonth-bg: k-color(surface) !default;
 /// The text color of the preceding/subsequent month cells in the Calendar.
 /// @group scheduler
 $kendo-scheduler-othermonth-text: null !default;
@@ -192,10 +192,10 @@ $kendo-scheduler-yearview-indicator-calc-offset-left: calc( 50% - (#{$kendo-sche
 $kendo-scheduler-yearview-indicator-border-radius: 50% !default;
 /// The background color of the days with events indicator of the year view in the Scheduler.
 /// @group scheduler
-$kendo-scheduler-yearview-indicator-bg: k-color( primary ) !default;
+$kendo-scheduler-yearview-indicator-bg: k-color(primary) !default;
 /// The background color of the selected days with events indicator of the year view in the Scheduler.
 /// @group scheduler
-$kendo-scheduler-yearview-indicator-selected-bg: k-color( app-surface ) !default;
+$kendo-scheduler-yearview-indicator-selected-bg: k-color(app-surface) !default;
 
 /// The horizontal padding of the Scheduler Tooltip.
 /// @group scheduler
@@ -208,10 +208,10 @@ $kendo-scheduler-tooltip-padding-y: $kendo-scheduler-tooltip-padding-x !default;
 $kendo-scheduler-tooltip-border-width: 0 !default;
 /// The background color of the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-bg: k-color( app-surface ) !default;
+$kendo-scheduler-tooltip-bg: k-color(app-surface) !default;
 /// The text color of the Scheduler Tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-text: k-color( subtle ) !default;
+$kendo-scheduler-tooltip-text: k-color(subtle) !default;
 /// The border color of the Scheduler Tooltip.
 /// @group scheduler
 $kendo-scheduler-tooltip-border: null !default;
@@ -263,4 +263,4 @@ $kendo-scheduler-more-btn-height: 13px !default;
 
 /// The color of the Scheduler marquee.
 /// @group scheduler
-$kendo-scheduler-marquee-color: k-color( primary ) !default;
+$kendo-scheduler-marquee-color: k-color(primary) !default;

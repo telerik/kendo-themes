@@ -224,7 +224,7 @@
             }
             &:focus,
             &.k-focus {
-                box-shadow: inset 0 0 0 2px color-mix(in srgb, k-color( on-app-surface ) 10%, transparent);
+                box-shadow: inset 0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 10%, transparent);
             }
             &.k-active {
                 @include fill(

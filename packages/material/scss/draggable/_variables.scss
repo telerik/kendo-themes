@@ -11,7 +11,7 @@ $kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-drag-hint-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-drag-hint-line-height: math.div( 20, 14 ) !default;
 
-$kendo-drag-hint-bg: k-color( base-subtle ) !default;
+$kendo-drag-hint-bg: k-color(base-subtle) !default;
 $kendo-drag-hint-text: k-color(on-app-surface) !default;
 $kendo-drag-hint-border: unset !default;
 $kendo-drag-hint-gradient: null !default;

@@ -32,7 +32,7 @@ $kendo-switch-sizes: (
 
 /// The background of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-bg: color-mix(in srgb, k-color( on-app-surface ) 38%, transparent) !default;
+$kendo-switch-off-track-bg: color-mix(in srgb, k-color(on-app-surface) 38%, transparent) !default;
 /// The text color of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-text: unset !default;
@@ -87,7 +87,7 @@ $kendo-switch-off-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-bg: k-color( app-surface ) !default;
+$kendo-switch-off-thumb-bg: k-color(app-surface) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-text: unset !default;
@@ -114,7 +114,7 @@ $kendo-switch-off-thumb-hover-gradient: null !default;
 
 /// The background of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-bg: color-mix(in srgb, k-color( primary ) 44%, transparent) !default;
+$kendo-switch-on-track-bg: color-mix(in srgb, k-color(primary) 44%, transparent) !default;
 /// The text color of the track when the Switch is checked.
 /// @group switch
 $kendo-switch-on-track-text: unset !default;

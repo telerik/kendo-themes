@@ -3,13 +3,13 @@
 
 /// The background color of the Badge.
 /// @group badge
-$kendo-badge-bg: k-color( surface-alt ) !default;
+$kendo-badge-bg: k-color(surface-alt) !default;
 /// The text color of the Badge.
 /// @group badge
-$kendo-badge-text: k-color( on-app-surface ) !default;
+$kendo-badge-text: k-color(on-app-surface) !default;
 /// The border color of the Badge.
 /// @group badge
-$kendo-badge-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-badge-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The border width of the Badge.
 /// @group badge

@@ -127,7 +127,7 @@ $kendo-treeview-border: null !default;
 
 /// The background color of hovered TreeView.
 /// @group treeview
-$kendo-treeview-item-hover-bg: color-mix(in srgb, k-color( on-app-surface ) 7%, transparent) !default;
+$kendo-treeview-item-hover-bg: color-mix(in srgb, k-color(on-app-surface) 7%, transparent) !default;
 /// The text color of hovered TreeView items.
 /// @group treeview
 $kendo-treeview-item-hover-text: unset !default;
@@ -156,7 +156,7 @@ $kendo-treeview-item-selected-gradient: null !default;
 $kendo-treeview-item-selected-focus-text: k-color(secondary) !default;
 /// The text color of selected and focused TreeView items.
 /// /// @group treeview
-$kendo-treeview-item-selected-focus-bg: color-mix(in srgb, k-color( on-app-surface ) 7%, transparent) !default;
+$kendo-treeview-item-selected-focus-bg: color-mix(in srgb, k-color(on-app-surface) 7%, transparent) !default;
 /// The border color of selected and focused TreeView items.
 /// /// @group treeview
 $kendo-treeview-item-selected-focus-border: null !default;

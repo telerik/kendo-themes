@@ -21,19 +21,19 @@ $kendo-filter-operator-dropdown-width: 15em !default;
 
 /// The text color of the Filter.
 /// @group filter
-$kendo-filter-text: k-color( on-app-surface ) !default;
+$kendo-filter-text: k-color(on-app-surface) !default;
 
 /// The text color of the Filter preview field.
 /// @group filter
-$kendo-filter-preview-field-text: k-color( primary ) !default;
+$kendo-filter-preview-field-text: k-color(primary) !default;
 /// The text color of the Filter preview operator.
 /// @group filter
-$kendo-filter-preview-operator-text: k-color( subtle ) !default;
+$kendo-filter-preview-operator-text: k-color(subtle) !default;
 
 /// The background color of the line that connects the Filter items.
 /// @group filter
-$kendo-filter-line-bg: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-filter-line-bg: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The border color of the focused Filter.
 /// @group filter
-$kendo-filter-toolbar-focus-border: k-color( base-emphasis ) !default;
+$kendo-filter-toolbar-focus-border: k-color(base-emphasis) !default;

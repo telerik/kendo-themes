@@ -6,13 +6,13 @@
 
 /// The background color of the Drawer.
 /// @group drawer
-$kendo-drawer-bg: k-color( surface-alt ) !default;
+$kendo-drawer-bg: k-color(surface-alt) !default;
 /// The text color of the Drawer.
 /// @group drawer
-$kendo-drawer-text: k-color( on-app-surface ) !default;
+$kendo-drawer-text: k-color(on-app-surface) !default;
 /// The border color of the Drawer.
 /// @group drawer
-$kendo-drawer-border: k-color( border ) !default;
+$kendo-drawer-border: k-color(border) !default;
 /// The border width of the Drawer.
 /// @group drawer
 $kendo-drawer-border-width: 1px !default;
@@ -84,10 +84,10 @@ $kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{
 
 /// The background color of the hovered Drawer item.
 /// @group drawer
-$kendo-drawer-hover-bg: k-color( base-hover ) !default;
+$kendo-drawer-hover-bg: k-color(base-hover) !default;
 /// The text color of the hovered Drawer item.
 /// @group drawer
-$kendo-drawer-hover-text: k-color( on-app-surface ) !default;
+$kendo-drawer-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused Drawer item.
 /// @group drawer
@@ -98,17 +98,17 @@ $kendo-drawer-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// The background color of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-selected-bg: k-color( primary ) !default;
+$kendo-drawer-selected-bg: k-color(primary) !default;
 /// The text color of the selected Drawer item.
 /// @group drawer
-$kendo-drawer-selected-text: k-color( on-primary ) !default;
+$kendo-drawer-selected-text: k-color(on-primary) !default;
 
 /// The background color of the selected and hovered Drawer item.
 /// @group drawer
-$kendo-drawer-selected-hover-bg: k-color( primary-hover ) !default;
+$kendo-drawer-selected-hover-bg: k-color(primary-hover) !default;
 /// The text color of the selected and hovered Drawer item.
 /// @group drawer
-$kendo-drawer-selected-hover-text: k-color( on-primary ) !default;
+$kendo-drawer-selected-hover-text: k-color(on-primary) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/drawer/_variables.scss" with (

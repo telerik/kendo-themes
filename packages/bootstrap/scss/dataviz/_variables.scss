@@ -6,51 +6,51 @@
 
 /// The first base series color and its light and dark shades.
 /// @group charts
-$kendo-series-a: k-color( series-a )!default;
-$kendo-series-a-dark: k-color( series-a-bold )!default;
-$kendo-series-a-darker: k-color( series-a-bolder ) !default;
-$kendo-series-a-light: k-color( series-a-subtle ) !default;
-$kendo-series-a-lighter: k-color( series-a-subtler ) !default;
+$kendo-series-a: k-color(series-a)!default;
+$kendo-series-a-dark: k-color(series-a-bold)!default;
+$kendo-series-a-darker: k-color(series-a-bolder) !default;
+$kendo-series-a-light: k-color(series-a-subtle) !default;
+$kendo-series-a-lighter: k-color(series-a-subtler) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
-$kendo-series-b: k-color( series-b ) !default;
-$kendo-series-b-dark: k-color( series-b-bold ) !default;
-$kendo-series-b-darker: k-color( series-b-bolder ) !default;
-$kendo-series-b-light: k-color( series-b-subtle ) !default;
-$kendo-series-b-lighter: k-color( series-b-subtler ) !default;
+$kendo-series-b: k-color(series-b) !default;
+$kendo-series-b-dark: k-color(series-b-bold) !default;
+$kendo-series-b-darker: k-color(series-b-bolder) !default;
+$kendo-series-b-light: k-color(series-b-subtle) !default;
+$kendo-series-b-lighter: k-color(series-b-subtler) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
-$kendo-series-c: k-color( series-c ) !default;
-$kendo-series-c-dark: k-color( series-c-bold ) !default;
-$kendo-series-c-darker: k-color( series-c-bolder ) !default;
-$kendo-series-c-light: k-color( series-c-subtle ) !default;
-$kendo-series-c-lighter: k-color( series-c-subtler ) !default;
+$kendo-series-c: k-color(series-c) !default;
+$kendo-series-c-dark: k-color(series-c-bold) !default;
+$kendo-series-c-darker: k-color(series-c-bolder) !default;
+$kendo-series-c-light: k-color(series-c-subtle) !default;
+$kendo-series-c-lighter: k-color(series-c-subtler) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-d: k-color( series-d ) !default;
-$kendo-series-d-dark: k-color( series-d-bold ) !default;
-$kendo-series-d-darker: k-color( series-d-bolder ) !default;
-$kendo-series-d-light: k-color( series-d-subtle ) !default;
-$kendo-series-d-lighter: k-color( series-d-subtler ) !default;
+$kendo-series-d: k-color(series-d) !default;
+$kendo-series-d-dark: k-color(series-d-bold) !default;
+$kendo-series-d-darker: k-color(series-d-bolder) !default;
+$kendo-series-d-light: k-color(series-d-subtle) !default;
+$kendo-series-d-lighter: k-color(series-d-subtler) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-e: k-color( series-e ) !default;
-$kendo-series-e-dark: k-color( series-e-bold ) !default;
-$kendo-series-e-darker: k-color( series-e-bolder ) !default;
-$kendo-series-e-light: k-color( series-e-subtle ) !default;
-$kendo-series-e-lighter: k-color( series-e-subtler ) !default;
+$kendo-series-e: k-color(series-e) !default;
+$kendo-series-e-dark: k-color(series-e-bold) !default;
+$kendo-series-e-darker: k-color(series-e-bolder) !default;
+$kendo-series-e-light: k-color(series-e-subtle) !default;
+$kendo-series-e-lighter: k-color(series-e-subtler) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-f: k-color( series-f ) !default;
-$kendo-series-f-dark: k-color( series-f-bold ) !default;
-$kendo-series-f-darker: k-color( series-f-bolder ) !default;
-$kendo-series-f-light: k-color( series-f-subtle ) !default;
-$kendo-series-f-lighter: k-color( series-f-subtler ) !default;
+$kendo-series-f: k-color(series-f) !default;
+$kendo-series-f-dark: k-color(series-f-bold) !default;
+$kendo-series-f-darker: k-color(series-f-bolder) !default;
+$kendo-series-f-light: k-color(series-f-subtle) !default;
+$kendo-series-f-lighter: k-color(series-f-subtler) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker
@@ -98,13 +98,13 @@ $kendo-chart-pane-title-font-weight: var( --kendo-font-weight-normal, normal ) !
 
 /// The color of the Chart grid lines (major).
 /// @group charts
-$kendo-chart-major-lines: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
+$kendo-chart-major-lines: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 
 /// The color of the Chart grid lines (minor).
 /// @group charts
-$kendo-chart-minor-lines: color-mix(in srgb, k-color( on-app-surface ) 4%, transparent) !default;
+$kendo-chart-minor-lines: color-mix(in srgb, k-color(on-app-surface) 4%, transparent) !default;
 
-$kendo-chart-inactive: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
+$kendo-chart-inactive: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 $kendo-chart-area-opacity: .6 !default;
 $kendo-chart-area-inactive-opacity: .1 !default;
 $kendo-chart-line-inactive-opacity: .3 !default;
@@ -118,20 +118,20 @@ $kendo-chart-bg: k-color(app-surface) !default;
 $kendo-chart-text: k-color(on-app-surface) !default;
 $kendo-chart-border: k-color(border) !default;
 
-$kendo-chart-crosshair-background: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
+$kendo-chart-crosshair-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 $kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-text !default;
-$kendo-chart-crosshair-shared-tooltip-background: k-color( base-subtle ) !default;
-$kendo-chart-crosshair-shared-tooltip-border: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
+$kendo-chart-crosshair-shared-tooltip-background: k-color(base-subtle) !default;
+$kendo-chart-crosshair-shared-tooltip-border: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 
-$kendo-chart-notes-background: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
-$kendo-chart-notes-border: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
-$kendo-chart-notes-lines: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
+$kendo-chart-notes-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+$kendo-chart-notes-border: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
+$kendo-chart-notes-lines: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 
-$kendo-chart-error-bars-background: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
+$kendo-chart-error-bars-background: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 
 $kendo-chart-selection-handle-size: 22px !default;
-$kendo-chart-selection-border-color: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
-$kendo-chart-selection-shadow: inset 0 1px 7px color-mix(in srgb, k-color( on-app-surface ) 15%, transparent) !default;
+$kendo-chart-selection-border-color: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
+$kendo-chart-selection-shadow: inset 0 1px 7px color-mix(in srgb, k-color(on-app-surface) 15%, transparent) !default;
 
 $kendo-chart-computed-title-height: 0px !default;
 
@@ -143,13 +143,13 @@ $kendo-treemap-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-treemap-padding-x: k-spacing(2) !default;
 $kendo-treemap-padding-y: k-spacing(1) !default;
 
-$kendo-treemap-text: k-color( on-app-surface ) !default;
-$kendo-treemap-bg: k-color( surface-alt ) !default;
-$kendo-treemap-border: k-color( border ) !default;
+$kendo-treemap-text: k-color(on-app-surface) !default;
+$kendo-treemap-bg: k-color(surface-alt) !default;
+$kendo-treemap-border: k-color(border) !default;
 
-$kendo-treemap-title-text: k-color( on-app-surface ) !default;
-$kendo-treemap-title-bg: k-color( surface ) !default;
-$kendo-treemap-title-border: k-color( border ) !default;
+$kendo-treemap-title-text: k-color(on-app-surface) !default;
+$kendo-treemap-title-bg: k-color(surface) !default;
+$kendo-treemap-title-border: k-color(border) !default;
 
 // Chart Overlay
 $kendo-chart-overlay-bg: k-color(surface) !default;

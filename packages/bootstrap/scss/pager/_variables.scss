@@ -103,7 +103,7 @@ $kendo-pager-item-border: k-color(border) !default;
 
 /// The background color of the hovered Pager items.
 /// @group pager
-$kendo-pager-item-hover-bg: k-color( base-subtle-hover) !default;
+$kendo-pager-item-hover-bg: k-color(base-subtle-hover) !default;
 /// The text color of the hovered Pager items.
 /// @group pager
 $kendo-pager-item-hover-text: k-color(primary-hover) !default;
@@ -127,7 +127,7 @@ $kendo-pager-item-focus-opacity: null !default;
 $kendo-pager-item-focus-bg: $kendo-pager-item-bg !default;
 /// The box shadow of the focused Pager items.
 /// @group pager
-$kendo-pager-item-focus-shadow: 0 0 0 3px color-mix(in srgb, k-color( primary ) 25%, transparent) !default;
+$kendo-pager-item-focus-shadow: 0 0 0 3px color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 /// The border radius of the Pager numbers.
 /// @group pager

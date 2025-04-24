@@ -25,7 +25,7 @@ $kendo-menu-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-menu-bg: transparent !default;
 /// The text color of the Menu.
 /// @group menu
-$kendo-menu-text: k-color( on-app-surface ) !default;
+$kendo-menu-text: k-color(on-app-surface) !default;
 /// The border color of the Menu.
 /// @group menu
 $kendo-menu-border: null !default;
@@ -57,7 +57,7 @@ $kendo-menu-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !
 $kendo-menu-item-bg: null !default;
 /// The text color of the Menu item.
 /// @group menu
-$kendo-menu-item-text: k-color( subtle ) !default;
+$kendo-menu-item-text: k-color(subtle) !default;
 /// The border color of the Menu item.
 /// @group menu
 $kendo-menu-item-border: null !default;
@@ -70,7 +70,7 @@ $kendo-menu-item-gradient: null !default;
 $kendo-menu-item-hover-bg: null !default;
 /// The text color of hovered Menu item.
 /// @group menu
-$kendo-menu-item-hover-text: k-color( on-app-surface ) !default;
+$kendo-menu-item-hover-text: k-color(on-app-surface) !default;
 /// The border color of hovered Menu item.
 /// @group menu
 $kendo-menu-item-hover-border: null !default;
@@ -83,7 +83,7 @@ $kendo-menu-item-hover-gradient: null !default;
 $kendo-menu-item-active-bg: null !default;
 /// The text color of active Menu item.
 /// @group menu
-$kendo-menu-item-active-text: k-color( primary ) !default;
+$kendo-menu-item-active-text: k-color(primary) !default;
 /// The border color of active Menu item.
 /// @group menu
 $kendo-menu-item-active-border: null !default;
@@ -100,7 +100,7 @@ $kendo-menu-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 $kendo-menu-item-selected-bg: null !default;
 /// The text color of selected Menu item.
 /// @group menu
-$kendo-menu-item-selected-text: k-color( primary ) !default;
+$kendo-menu-item-selected-text: k-color(primary) !default;
 /// The border color of selected Menu item.
 /// @group menu
 $kendo-menu-item-selected-border: null !default;
@@ -113,7 +113,7 @@ $kendo-menu-item-selected-gradient: null !default;
 $kendo-menu-scroll-button-bg: null !default;
 /// The text color of the Menu scroll buttons.
 /// @group menu
-$kendo-menu-scroll-button-text: k-color( subtle ) !default;
+$kendo-menu-scroll-button-text: k-color(subtle) !default;
 /// The border color of the Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-border: null !default;
@@ -126,7 +126,7 @@ $kendo-menu-scroll-button-gradient: null !default;
 $kendo-menu-scroll-button-hover-bg: null !default;
 /// The text color of hovered Menu scroll buttons.
 /// @group menu
-$kendo-menu-scroll-button-hover-text: k-color( on-app-surface ) !default;
+$kendo-menu-scroll-button-hover-text: k-color(on-app-surface) !default;
 /// The border color of hovered Menu scroll buttons.
 /// @group menu
 $kendo-menu-scroll-button-hover-border: null !default;

@@ -16,21 +16,21 @@ $kendo-media-player-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-bg: k-color( surface-alt ) !default;
+$kendo-media-player-bg: k-color(surface-alt) !default;
 /// The text color of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-text: k-color( on-app-surface ) !default;
+$kendo-media-player-text: k-color(on-app-surface) !default;
 /// The border color of the MediaPlayer.
 /// @group mediaplayer
-$kendo-media-player-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-media-player-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The background color of the MediaPlayer overlay.
 /// @group mediaplayer
-$kendo-media-player-overlay-bg: k-color( base-emphasis ) !default;
+$kendo-media-player-overlay-bg: k-color(base-emphasis) !default;
 
 /// The border color of the MediaPlayer button.
 /// @group mediaplayer
-$kendo-media-player-quality-border: k-color( border ) !default;
+$kendo-media-player-quality-border: k-color(border) !default;
 
 /// The font size of the MediaPlayer title.
 /// @group mediaplayer
@@ -43,7 +43,7 @@ $kendo-media-player-titlebar-padding-x: k-spacing(2) !default;
 $kendo-media-player-titlebar-padding-y: k-spacing(2) !default;
 /// The background color of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-titlebar-bg: color-mix(in srgb, k-color( on-app-surface ) 40%, transparent) !default;
+$kendo-media-player-titlebar-bg: color-mix(in srgb, k-color(on-app-surface) 40%, transparent) !default;
 /// The text color of the MediaPlayer title.
 /// @group mediaplayer
 $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;

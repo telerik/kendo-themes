@@ -76,17 +76,17 @@
 
     @each $name, $color in $kendo-button-theme-colors {
         @if ($name != "base") {
-            $_button-text: k-color( on-#{$name} );
-            $_button-bg: k-color( $name );
-            $_button-border: k-color( $name );
+            $_button-text: k-color(on-#{$name});
+            $_button-bg: k-color($name);
+            $_button-border: k-color($name);
 
             $_button-hover-text: null;
-            $_button-hover-bg: k-color( #{$name}-hover );
-            $_button-hover-border: k-color( #{$name}-hover );
+            $_button-hover-bg: k-color(#{$name}-hover);
+            $_button-hover-border: k-color(#{$name}-hover);
 
             $_button-active-text: null;
-            $_button-active-bg: k-color( #{$name}-active );
-            $_button-active-border: k-color( #{$name}-active );
+            $_button-active-bg: k-color(#{$name}-active);
+            $_button-active-border: k-color(#{$name}-active);
 
             .k-button-solid-#{$name} {
                 @include fill(
@@ -154,7 +154,7 @@
         .k-button-outline-#{$name} {
             @include box-shadow( none );
             border-color: currentColor;
-            color: k-color( #{$name}-on-surface );
+            color: k-color(#{$name}-on-surface);
             background-color: transparent;
 
             // Hover state
@@ -237,7 +237,7 @@
             @if $name == "base" {
                 color: inherit;
             } @else {
-                color: k-color( #{$name}-on-surface );
+                color: k-color(#{$name}-on-surface);
             }
 
             // Disabled state
@@ -258,9 +258,9 @@
             &:hover,
             &.k-hover {
                 @if $name == "base" {
-                    color: k-color( on-app-surface );
+                    color: k-color(on-app-surface);
                 } @else {
-                    color: k-color( #{$name}-hover );
+                    color: k-color(#{$name}-hover);
                 }
             }
 
@@ -280,18 +280,18 @@
             &:active,
             &.k-active {
                 @if $name == "base" {
-                    color: k-color( on-app-surface );
+                    color: k-color(on-app-surface);
                 } @else {
-                    color: k-color( #{$name}-active );
+                    color: k-color(#{$name}-active);
                 }
             }
 
             // Selected
             &.k-selected {
                 @if $name == "base" {
-                    color: k-color( on-app-surface );
+                    color: k-color(on-app-surface);
                 } @else {
-                    color: k-color( #{$name}-active );
+                    color: k-color(#{$name}-active);
                 }
             }
 
@@ -307,7 +307,7 @@
     // Clear button
     @each $name, $color in map.merge( $kendo-button-theme-colors, ( "base": k-color( on-app-surface ) ) ) {
         .k-button-clear-#{$name} {
-            color: k-color( #{$name}-on-surface );
+            color: k-color(#{$name}-on-surface);
 
             &:focus,
             &.k-focus,

@@ -121,7 +121,7 @@ $kendo-tabstrip-item-hover-bg: null !default;
 $kendo-tabstrip-item-hover-text: k-color(primary-hover) !default;
 /// The border color of the hovered TabStrip items.
 /// @group tabstrip
-$kendo-tabstrip-item-hover-border: k-color( base-subtle ) !default;
+$kendo-tabstrip-item-hover-border: k-color(base-subtle) !default;
 /// The gradient of the hovered TabStrip items.
 /// @group tabstrip
 $kendo-tabstrip-item-hover-gradient: null !default;
@@ -201,7 +201,7 @@ $kendo-tabstrip-content-focus-border: k-color(on-app-surface) !default;
 
 /// The left and right scroll overlay of the TabStrip.
 /// @group tabstrip
-$kendo-tabstrip-scroll-overlay: k-color( app-surface ), color-mix(in srgb, k-color( app-surface ) 0%, transparent) !default;
+$kendo-tabstrip-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
 
 /// The size map of the TabStrip.
 /// @group tabstrip

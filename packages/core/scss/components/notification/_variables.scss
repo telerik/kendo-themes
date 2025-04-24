@@ -21,7 +21,7 @@ $kendo-notification-icon-spacing: null !default;
 
     @each $name, $color in $colors {
         $_theme: map.merge(( $name: (
-            color: k-color( on-#{$name} ),
+            color: k-color(on-#{$name}),
             background-color: $color,
             border: $color,
         )), $_theme );

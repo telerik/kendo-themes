@@ -36,13 +36,13 @@ $kendo-color-gradient-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The text color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-text: k-color( on-app-surface ) !default;
+$kendo-color-gradient-text: k-color(on-app-surface) !default;
 /// The background color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-bg: k-color( surface-alt ) !default;
+$kendo-color-gradient-bg: k-color(surface-alt) !default;
 /// The border color of the ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-color-gradient-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The box shadow of the ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
@@ -88,7 +88,7 @@ $kendo-color-gradient-lg-spacing: k-spacing(4.5) !default;
 
 /// The border color of the focused ColorGradient.
 /// @group color-gradient
-$kendo-color-gradient-focus-border: color-mix(in srgb, k-color( border ) 10%, transparent) !default;
+$kendo-color-gradient-focus-border: color-mix(in srgb, k-color(border) 10%, transparent) !default;
 /// The box shadow of the focused ColorGradient.
 /// @group color-gradient
 $kendo-color-gradient-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
@@ -127,7 +127,7 @@ $kendo-color-gradient-lg-canvas-spacing: k-spacing(4) !default;
 
 /// The border color of the ColorGradient canvas hsv rectangle.
 /// @group color-gradient
-$kendo-color-gradient-canvas-rectangle-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-color-gradient-canvas-rectangle-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-canvas-draghandle-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
@@ -143,7 +143,7 @@ $kendo-color-gradient-slider-border-radius: k-border-radius(md) !default;
 $kendo-color-gradient-slider-border-width: 0 !default;
 /// The color of the border around the ColorGradient slider.
 /// @group color-gradient
-$kendo-color-gradient-slider-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-color-gradient-slider-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The height of the ColorGradient vertical slider.
 /// @group color-gradient
@@ -178,19 +178,19 @@ $kendo-color-gradient-draghandle-border-width: 2px !default;
 $kendo-color-gradient-draghandle-outline-width: 1px !default;
 /// The color of the border around the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-border: k-color( app-surface ) !default;
+$kendo-color-gradient-draghandle-border: k-color(app-surface) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group color-gradient
 $kendo-color-gradient-draghandle-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 /// The color of the border around the focused ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-focus-border: k-color( app-surface ) !default;
+$kendo-color-gradient-draghandle-focus-border: k-color(app-surface) !default;
 /// The focus color of the outline around the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-focus-shadow: k-color( base-emphasis ) !default;
+$kendo-color-gradient-draghandle-focus-shadow: k-color(base-emphasis) !default;
 /// The hover color of the outline around the ColorGradient canvas drag handle.
 /// @group color-gradient
-$kendo-color-gradient-draghandle-hover-shadow: k-color( base-emphasis ) !default;
+$kendo-color-gradient-draghandle-hover-shadow: k-color(base-emphasis) !default;
 
 /// The vertical offset of the ColorGradient canvas drag handle.
 /// @group color-gradient
@@ -213,7 +213,7 @@ $kendo-color-gradient-input-label-font-size: var( --kendo-font-size-sm, inherit 
 $kendo-color-gradient-input-label-spacing: calc( #{$kendo-color-gradient-spacer} / 4 ) !default;
 /// The text color of the ColorGradient input labels.
 /// @group color-gradient
-$kendo-color-gradient-input-label-text: k-color( subtle ) !default;
+$kendo-color-gradient-input-label-text: k-color(subtle) !default;
 
 /// The width of the small ColorGradient input.
 /// @group color-gradient

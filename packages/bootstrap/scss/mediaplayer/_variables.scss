@@ -42,7 +42,7 @@ $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
 $kendo-media-player-titlebar-border: null !default;
 /// The gradient of the MediaPlayer title.
 /// @group mediaplayer
-$kendo-media-player-titlebar-gradient: color-mix(in srgb, k-color( on-app-surface ) 70%, transparent), color-mix(in srgb, k-color( on-app-surface ) 0%, transparent) !default;
+$kendo-media-player-titlebar-gradient: color-mix(in srgb, k-color(on-app-surface) 70%, transparent), color-mix(in srgb, k-color(on-app-surface) 0%, transparent) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/mediaplayer/_variables.scss" with (

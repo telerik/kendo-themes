@@ -43,13 +43,13 @@ $kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Pager.
 /// @group pager
-$kendo-pager-bg: k-color( surface ) !default;
+$kendo-pager-bg: k-color(surface) !default;
 /// The text color of the Pager.
 /// @group pager
-$kendo-pager-text: k-color( on-app-surface ) !default;
+$kendo-pager-text: k-color(on-app-surface) !default;
 /// The border color of the Pager.
 /// @group pager
-$kendo-pager-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-pager-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The background color of the focused Pager.
 /// @group pager
@@ -59,7 +59,7 @@ $kendo-pager-focus-bg: var( --kendo-pager-bg, #{$kendo-pager-bg}) !default;
 $kendo-pager-focus-text: var( --kendo-pager-text, #{$kendo-pager-text}) !default;
 /// The border color of the focused Pager.
 /// @group pager
-$kendo-pager-focus-border: k-color( border ) !default;
+$kendo-pager-focus-border: k-color(border) !default;
 
 /// The border radius of the Pager items.
 /// @group pager
@@ -80,11 +80,11 @@ $kendo-pager-lg-item-group-spacing: k-spacing(2) !default;
 
 /// The text color of the Pagers' sizes label.
 /// @group pager
-$kendo-pager-sizes-label-text: k-color( on-app-surface ) !default;
+$kendo-pager-sizes-label-text: k-color(on-app-surface) !default;
 
 /// The text color of the Pagers' info label.
 /// @group pager
-$kendo-pager-info-label-text: k-color( subtle ) !default;
+$kendo-pager-info-label-text: k-color(subtle) !default;
 
 /// The width of the Inputs in the Pager.
 /// @group pager

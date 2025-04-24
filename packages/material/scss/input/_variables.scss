@@ -111,13 +111,13 @@ $kendo-input-sizes: (
 
 /// The background color of the Input components.
 /// @group input
-$kendo-input-bg: k-color( surface ) !default;
+$kendo-input-bg: k-color(surface) !default;
 /// The text color of the Input components.
 /// @group input
 $kendo-input-text: k-color(on-app-surface) !default;
 /// The border color of the Input components.
 /// @group input
-$kendo-input-border: color-mix(in srgb, k-color( on-app-surface ) 44%, transparent) !default;
+$kendo-input-border: color-mix(in srgb, k-color(on-app-surface) 44%, transparent) !default;
 /// The shadow of the Input components.
 /// @group input
 $kendo-input-shadow: null !default;
@@ -156,13 +156,13 @@ $kendo-input-selected-bg: null !default;
 $kendo-input-selected-text: null !default;
 /// The background color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-bg: color-mix(in srgb, k-color( on-app-surface ) 3%, transparent) !default;
+$kendo-input-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 3%, transparent) !default;
 /// The text color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 27%, transparent) !default;
+$kendo-input-disabled-text: color-mix(in srgb, k-color(on-app-surface) 27%, transparent) !default;
 /// The border color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-border: color-mix(in srgb, k-color( on-app-surface ) 3%, transparent) !default;
+$kendo-input-disabled-border: color-mix(in srgb, k-color(on-app-surface) 3%, transparent) !default;
 /// The gradient of the disabled Input components.
 /// @group input
 $kendo-input-disabled-gradient: null !default;

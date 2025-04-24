@@ -9,9 +9,9 @@ $kendo-time-selector-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-time-selector-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-time-selector-line-height: var( --kendo-line-height, normal ) !default;
 
-$kendo-time-selector-bg: k-color( surface-alt ) !default;
-$kendo-time-selector-text: k-color( on-app-surface ) !default;
-$kendo-time-selector-border: k-color( border ) !default;
+$kendo-time-selector-bg: k-color(surface-alt) !default;
+$kendo-time-selector-text: k-color(on-app-surface) !default;
+$kendo-time-selector-border: k-color(border) !default;
 
 $kendo-time-selector-header-padding-x: $kendo-actions-padding-x !default;
 $kendo-time-selector-header-padding-y: $kendo-actions-padding-y !default;
@@ -23,16 +23,16 @@ $kendo-time-list-height: 240px !default;
 $kendo-time-list-title-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-time-list-title-line-height: var( --kendo-line-height-lg, normal ) !default;
 $kendo-time-list-title-height: calc( #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} ) !default;
-$kendo-time-list-title-text: k-color( subtle ) !default;
-$kendo-time-list-title-focus-text: k-color( on-app-surface ) !default;
+$kendo-time-list-title-text: k-color(subtle) !default;
+$kendo-time-list-title-focus-text: k-color(on-app-surface) !default;
 
 $kendo-time-list-item-padding-x: $kendo-list-md-item-padding-x !default;
 $kendo-time-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
 $kendo-time-list-highlight-border-width: 1px 0px !default;
 $kendo-time-list-highlight-height: calc( calc( #{$kendo-time-selector-font-size} * #{$kendo-time-selector-line-height} ) + calc( #{$kendo-time-list-item-padding-y} * 2 ) ) !default;
-$kendo-time-list-highlight-bg: k-color( surface-alt ) !default;
-$kendo-time-list-highlight-border: k-color( border ) !default;
+$kendo-time-list-highlight-bg: k-color(surface-alt) !default;
+$kendo-time-list-highlight-border: k-color(border) !default;
 
 $kendo-time-list-focus-bg: rgba( black, .04 ) !default;
 

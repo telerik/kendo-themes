@@ -18,13 +18,13 @@ $kendo-listgroup-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Background color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-bg: k-color( surface-alt ) !default;
+$kendo-listgroup-bg: k-color(surface-alt) !default;
 /// Text color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-text: k-color( on-app-surface ) !default;
+$kendo-listgroup-text: k-color(on-app-surface) !default;
 /// Border color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-listgroup-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// Horizontal padding of the listgroup items.
 /// @group listgroup

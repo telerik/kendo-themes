@@ -44,7 +44,7 @@ $kendo-listview-item-padding-y: k-spacing(1) !default;
 $kendo-listview-item-selected-text: null !default;
 /// The background color of the selected ListView items.
 /// @group listview
-$kendo-listview-item-selected-bg: k-color( base-active ) !default;
+$kendo-listview-item-selected-bg: k-color(base-active) !default;
 /// The border color of the selected ListView items.
 /// @group listview
 $kendo-listview-item-selected-border: null !default;
@@ -54,7 +54,7 @@ $kendo-listview-item-selected-border: null !default;
 $kendo-listview-item-focus-text: null !default;
 /// The background color of the focused ListView items.
 /// @group listview
-$kendo-listview-item-focus-bg: k-color( base-active ) !default;
+$kendo-listview-item-focus-bg: k-color(base-active) !default;
 /// The border color of the focused ListView items.
 /// @group listview
 $kendo-listview-item-focus-border: null !default;

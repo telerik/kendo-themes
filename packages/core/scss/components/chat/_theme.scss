@@ -38,8 +38,8 @@
             transition: $kendo-transition;
             order: -1;
 
-            a { color: k-color( primary ); }
-            a:hover { color: k-color( primary-hover ); }
+            a { color: k-color(primary); }
+            a:hover { color: k-color(primary-hover); }
         }
         .k-chat-bubble:hover {
             @include box-shadow( $kendo-chat-bubble-hover-shadow );

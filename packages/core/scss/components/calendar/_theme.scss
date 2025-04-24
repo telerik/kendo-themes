@@ -133,7 +133,7 @@
         &.k-invalid:hover,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: k-color( error );
+            border-color: k-color(error);
         }
     }
 
@@ -159,7 +159,7 @@
     .k-calendar { // stylelint-disable-line
 
         $kendo-calendar-range-gap: k-spacing(1px) !default;
-        $kendo-calendar-range-bg: color-mix(in srgb, k-color( primary ) 25%, transparent);
+        $kendo-calendar-range-bg: color-mix(in srgb, k-color(primary) 25%, transparent);
         $kendo-calendar-range-split-size: 5px !default;
 
         .k-range-start,

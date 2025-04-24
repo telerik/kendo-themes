@@ -67,14 +67,14 @@ $kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-pager-bg: k-color(surface-alt) !default;
 /// The text color of the Pager.
 /// @group pager
-$kendo-pager-text: k-color( subtle ) !default;
+$kendo-pager-text: k-color(subtle) !default;
 /// The border color of the Pager.
 /// @group pager
 $kendo-pager-border: k-color(border) !default;
 
 /// The background color of the focused Pager.
 /// @group pager
-$kendo-pager-focus-bg: k-color( surface ) !default;
+$kendo-pager-focus-bg: k-color(surface) !default;
 /// The box shadow of the focused Pager.
 /// @group pager
 $kendo-pager-focus-shadow: unset !default;

@@ -41,10 +41,10 @@ $kendo-timeline-track-arrow-height: k-spacing(9) !default;
 
 /// The background color of the disabled Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-disabled-bg: color-mix(in srgb, k-color( on-app-surface ) 9%, transparent) !default;
+$kendo-timeline-track-arrow-disabled-bg: color-mix(in srgb, k-color(on-app-surface) 9%, transparent) !default;
 /// The text color of the disabled Timeline track arrow.
 /// @group timeline
-$kendo-timeline-track-arrow-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 32%, transparent) !default;
+$kendo-timeline-track-arrow-disabled-text: color-mix(in srgb, k-color(on-app-surface) 32%, transparent) !default;
 /// The border color of the disabled Timeline track arrow.
 /// @group timeline
 $kendo-timeline-track-arrow-disabled-border: transparent !default;
@@ -72,7 +72,7 @@ $kendo-timeline-track-start-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 
 $kendo-timeline-track-end-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 * #{$kendo-timeline-track-border-width}) !default;
 /// The background color of the Timeline track.
 /// @group timeline
-$kendo-timeline-track-bg: k-color( base-subtle ) !default;
+$kendo-timeline-track-bg: k-color(base-subtle) !default;
 /// The border color of the Timeline track.
 /// @group timeline
 $kendo-timeline-track-border-color: $kendo-timeline-track-bg !default;
@@ -111,7 +111,7 @@ $kendo-timeline-horizontal-flag-min-width: 60px !default;
 $kendo-timeline-flag-bg: k-color(primary) !default;
 /// The text color of the Timeline flag.
 /// @group timeline
-$kendo-timeline-flag-text: k-color( on-primary ) !default;
+$kendo-timeline-flag-text: k-color(on-primary) !default;
 
 /// The width of the Timeline's flag callout.
 /// @group timeline

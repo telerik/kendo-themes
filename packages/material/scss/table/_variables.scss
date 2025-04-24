@@ -80,7 +80,7 @@ $kendo-table-border: k-color(border) !default;
 $kendo-table-header-bg: $kendo-table-bg !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: k-color( subtle ) !default;
+$kendo-table-header-text: k-color(subtle) !default;
 /// Border color of table headers.
 /// @group table
 $kendo-table-header-border: $kendo-table-border !default;
@@ -124,7 +124,7 @@ $kendo-table-alt-row-border: null !default;
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: color-mix(in srgb, k-color( on-app-surface ) 8%, transparent) !default;
+$kendo-table-hover-bg: color-mix(in srgb, k-color(on-app-surface) 8%, transparent) !default;
 /// Text color of hovered rows in table.
 /// @group table
 $kendo-table-hover-text: null !default;
@@ -149,7 +149,7 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: color-mix(in srgb, k-color( primary ) 12%, transparent) !default;
+$kendo-table-selected-bg: color-mix(in srgb, k-color(primary) 12%, transparent) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: null !default;

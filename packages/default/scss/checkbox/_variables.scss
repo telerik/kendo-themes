@@ -60,13 +60,13 @@ $kendo-checkbox-sizes: (
 
 /// The background color of the CheckBox.
 /// @group checkbox
-$kendo-checkbox-bg: k-color( surface-alt ) !default;
+$kendo-checkbox-bg: k-color(surface-alt) !default;
 /// The text color of the CheckBox.
 /// @group checkbox
 $kendo-checkbox-text: null !default;
 /// The border color of the CheckBox.
 /// @group checkbox
-$kendo-checkbox-border: k-color( border ) !default;
+$kendo-checkbox-border: k-color(border) !default;
 
 /// The background color of the hovered CheckBox.
 /// @group checkbox
@@ -80,10 +80,10 @@ $kendo-checkbox-hover-border: null !default;
 
 /// The background color of the checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-checked-bg: k-color( primary ) !default;
+$kendo-checkbox-checked-bg: k-color(primary) !default;
 /// The text color of the checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-checked-text: k-color( on-primary ) !default;
+$kendo-checkbox-checked-text: k-color(on-primary) !default;
 /// The border color of the checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
@@ -109,7 +109,7 @@ $kendo-checkbox-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 $kendo-checkbox-focus-checked-border: null !default;
 /// The box shadow of the focused and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-checked-shadow: 0 0 0 2px color-mix(in srgb, k-color( primary ) 30%, transparent) !default;
+$kendo-checkbox-focus-checked-shadow: 0 0 0 2px color-mix(in srgb, k-color(primary) 30%, transparent) !default;
 
 /// The background color of the disabled CheckBox.
 /// @group checkbox
@@ -136,10 +136,10 @@ $kendo-checkbox-disabled-checked-border: null !default;
 $kendo-checkbox-invalid-bg: null !default;
 /// The text color of an invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-text: k-color( error ) !default;
+$kendo-checkbox-invalid-text: k-color(error) !default;
 /// The border color of an invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-border: k-color( error ) !default;
+$kendo-checkbox-invalid-border: k-color(error) !default;
 
 
 // CheckBox indicator

@@ -69,13 +69,13 @@ $kendo-window-buttongroup-border-width: 1px !default;
 
 /// The background color of the Window.
 /// @group window
-$kendo-window-bg: k-color( surface-alt ) !default;
+$kendo-window-bg: k-color(surface-alt) !default;
 /// The text color of the Window.
 /// @group window
-$kendo-window-text: k-color( on-app-surface ) !default;
+$kendo-window-text: k-color(on-app-surface) !default;
 /// The border color of the Window.
 /// @group window
-$kendo-window-border: k-color( border ) !default;
+$kendo-window-border: k-color(border) !default;
 /// The box shadow of the Window.
 /// @group window
 $kendo-window-shadow: k-elevation(8) !default;
@@ -85,10 +85,10 @@ $kendo-window-focus-shadow: k-elevation(9) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: k-color( surface )!default;
+$kendo-window-titlebar-bg: k-color(surface)!default;
 /// The text color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-text: k-color( on-app-surface ) !default;
+$kendo-window-titlebar-text: k-color(on-app-surface) !default;
 /// The border color of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border: inherit !default;
@@ -107,9 +107,9 @@ $kendo-window-sizes: (
 /// The theme colors map for the Window.
 /// @group window
 $kendo-window-theme-colors: (
-    "primary": k-color( primary ),
-    "light": k-color( light ),
-    "dark": k-color( dark )
+    "primary": k-color(primary),
+    "light": k-color(light),
+    "dark": k-color(dark)
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (

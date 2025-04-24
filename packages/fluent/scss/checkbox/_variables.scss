@@ -40,40 +40,40 @@ $kendo-checkbox-sizes: (
 
 /// The background color of the CheckBox.
 /// @group checkbox
-$kendo-checkbox-bg: k-color( surface-alt ) !default;
+$kendo-checkbox-bg: k-color(surface-alt) !default;
 /// The text color of the CheckBox.
 /// @group checkbox
 $kendo-checkbox-text: transparent !default;
 /// The border color of the CheckBox.
 /// @group checkbox
-$kendo-checkbox-border: k-color( border-alt ) !default;
+$kendo-checkbox-border: k-color(border-alt) !default;
 
 /// The background color of the hovered CheckBox.
 /// @group checkbox
 $kendo-checkbox-hover-bg: $kendo-checkbox-bg !default;
 /// The text color of the hovered CheckBox.
 /// @group checkbox
-$kendo-checkbox-hover-text: k-color( on-app-surface ) !default;
+$kendo-checkbox-hover-text: k-color(on-app-surface) !default;
 /// The border color of the hovered CheckBox.
 /// @group checkbox
 $kendo-checkbox-hover-border: $kendo-checkbox-border !default;
 
 /// The background color of the checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-checked-bg: k-color( primary ) !default;
+$kendo-checkbox-checked-bg: k-color(primary) !default;
 /// The text color of the checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-checked-text: k-color( app-surface ) !default;
+$kendo-checkbox-checked-text: k-color(app-surface) !default;
 /// The border color of the checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
 
 /// The background of the hovered and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-hover-checked-bg: k-color( primary-hover ) !default;
+$kendo-checkbox-hover-checked-bg: k-color(primary-hover) !default;
 /// The text color of the hovered and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-hover-checked-text: k-color( app-surface ) !default;
+$kendo-checkbox-hover-checked-text: k-color(app-surface) !default;
 /// The border color of the hovered and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-hover-checked-border: $kendo-checkbox-hover-checked-bg !default;
@@ -86,7 +86,7 @@ $kendo-checkbox-focus-border: null !default;
 $kendo-checkbox-focus-shadow: null !default;
 /// The outline of the focused CheckBox.
 /// @group checkbox
-$kendo-checkbox-focus-outline: 1px solid k-color( base-emphasis ) !default;
+$kendo-checkbox-focus-outline: 1px solid k-color(base-emphasis) !default;
 $kendo-checkbox-focus-outline-offset: 2px !default;
 
 /// The background color of the indeterminate CheckBox.
@@ -94,37 +94,37 @@ $kendo-checkbox-focus-outline-offset: 2px !default;
 $kendo-checkbox-indeterminate-bg: $kendo-checkbox-bg !default;
 /// The text color of the indeterminate CheckBox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-text: k-color( primary ) !default;
+$kendo-checkbox-indeterminate-text: k-color(primary) !default;
 /// The border color of the indeterminate CheckBox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-border: k-color( primary ) !default;
+$kendo-checkbox-indeterminate-border: k-color(primary) !default;
 
 /// The background color of the hovered and indeterminate CheckBox.
 /// @group checkbox
 $kendo-checkbox-hover-indeterminate-bg: $kendo-checkbox-bg !default;
 /// The text color of the hovered and indeterminate CheckBox.
 /// @group checkbox
-$kendo-checkbox-hover-indeterminate-text: k-color( primary-hover ) !default;
+$kendo-checkbox-hover-indeterminate-text: k-color(primary-hover) !default;
 /// The border color of the hovered and indeterminate CheckBox.
 /// @group checkbox
-$kendo-checkbox-hover-indeterminate-border: k-color( primary-hover ) !default;
+$kendo-checkbox-hover-indeterminate-border: k-color(primary-hover) !default;
 
 /// The background color of the disabled CheckBox.
 /// @group checkbox
 $kendo-checkbox-disabled-bg: $kendo-checkbox-bg !default;
 /// The text color of the disabled CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 28%, transparent) !default;
+$kendo-checkbox-disabled-text: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
 /// The border color of the disabled CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-border: color-mix(in srgb, k-color( on-app-surface ) 28%, transparent) !default;
+$kendo-checkbox-disabled-border: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
 
 /// The background color of the disabled and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-checked-bg: color-mix(in srgb, k-color( on-app-surface ) 28%, transparent) !default;
+$kendo-checkbox-disabled-checked-bg: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
 /// The text color of the disabled and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-checked-text: k-color( app-surface ) !default;
+$kendo-checkbox-disabled-checked-text: k-color(app-surface) !default;
 /// The border color of the disabled and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-disabled-checked-border: transparent !default;
@@ -134,20 +134,20 @@ $kendo-checkbox-disabled-checked-border: transparent !default;
 $kendo-checkbox-disabled-indeterminate-bg: $kendo-checkbox-bg !default;
 /// The border color of the disabled and indeterminate CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-indeterminate-text: color-mix(in srgb, k-color( on-app-surface ) 28%, transparent) !default;
+$kendo-checkbox-disabled-indeterminate-text: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
 /// The border color of the disabled and indeterminate CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-indeterminate-border: color-mix(in srgb, k-color( on-app-surface ) 28%, transparent) !default;
+$kendo-checkbox-disabled-indeterminate-border: color-mix(in srgb, k-color(on-app-surface) 28%, transparent) !default;
 
 /// The background color of an invalid CheckBox.
 /// @group checkbox
 $kendo-checkbox-invalid-bg: $kendo-checkbox-bg !default;
 /// The text color of an invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-text: k-color( error-on-surface ) !default;
+$kendo-checkbox-invalid-text: k-color(error-on-surface) !default;
 /// The border color of an invalid CheckBox.
 /// @group checkbox
-$kendo-checkbox-invalid-border: k-color( error-emphasis ) !default;
+$kendo-checkbox-invalid-border: k-color(error-emphasis) !default;
 
 
 // Checkbox indicator
@@ -213,7 +213,7 @@ $kendo-checkbox-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
 /// The background color of the CheckBox' ripple.
 /// @group checkbox
-$kendo-checkbox-ripple-bg: k-color( primary ) !default;
+$kendo-checkbox-ripple-bg: k-color(primary) !default;
 /// The opacity of the CheckBox' ripple.
 /// @group checkbox
 $kendo-checkbox-ripple-opacity: .25 !default;

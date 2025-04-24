@@ -17,13 +17,13 @@ $kendo-time-selector-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Background color of the time-selector.
 /// @group time-selector
-$kendo-time-selector-bg: k-color( surface-alt ) !default;
+$kendo-time-selector-bg: k-color(surface-alt) !default;
 /// Text color of the time-selector.
 /// @group time-selector
-$kendo-time-selector-text: k-color( on-app-surface ) !default;
+$kendo-time-selector-text: k-color(on-app-surface) !default;
 /// Border color of the time-selector.
 /// @group time-selector
-$kendo-time-selector-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-time-selector-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// Horizontal padding of the time-selector header.
 /// @group time-selector
@@ -60,7 +60,7 @@ $kendo-time-list-title-height: calc( #{$kendo-time-list-title-spacing} + #{$kend
 
 /// Text color of the time-selector titles.
 /// @group time-selector
-$kendo-time-list-title-text: k-color( subtle ) !default;
+$kendo-time-list-title-text: k-color(subtle) !default;
 /// Text color of the focused time-selector titles.
 /// @group time-selector
 $kendo-time-list-title-focus-text: $kendo-time-selector-text !default;

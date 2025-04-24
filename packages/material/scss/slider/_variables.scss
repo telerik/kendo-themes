@@ -92,7 +92,7 @@ $kendo-slider-draghandle-pressed-gradient: null !default;
 
 /// The shadow of the focused Slider drag handle.
 /// @group slider
-$kendo-slider-draghandle-focus-shadow: 0 0 0 11px color-mix(in srgb, k-color( primary ) 25%, transparent) !default;
+$kendo-slider-draghandle-focus-shadow: 0 0 0 11px color-mix(in srgb, k-color(primary) 25%, transparent) !default;
 
 /// The transition speed of the Slider.
 /// @group slider
@@ -109,7 +109,7 @@ $kendo-slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !def
 
 /// The background color of the Slider track.
 /// @group slider
-$kendo-slider-track-bg: k-color( primary-subtle ) !default;
+$kendo-slider-track-bg: k-color(primary-subtle) !default;
 /// The background color of the Slider's track selection.
 /// @group slider
 $kendo-slider-selection-bg: k-color(primary) !default;

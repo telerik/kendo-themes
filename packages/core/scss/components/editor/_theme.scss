@@ -13,7 +13,7 @@
 
         &.k-readonly {
             .k-editor-content.k-focus {
-                outline-color: k-color( on-app-surface );
+                outline-color: k-color(on-app-surface);
             }
         }
     }
@@ -51,7 +51,7 @@
         &:hover,
         &.k-hover,
         &.k-active {
-            border-color: k-color( border );
+            border-color: k-color(border);
         }
     }
 

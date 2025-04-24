@@ -88,13 +88,13 @@ $kendo-loader-container-panel-border-width: 1px !default;
 $kendo-loader-container-panel-border-style: solid !default;
 /// The border color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-border-color: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-loader-container-panel-border-color: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The border radius of the container panel.
 /// @group loader
 $kendo-loader-container-panel-border-radius: k-border-radius(md) !default;
 /// The background color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-bg: k-color( app-surface ) !default;
+$kendo-loader-container-panel-bg: k-color(app-surface) !default;
 
 /// The horizontal padding of the small Loader container.
 /// @group loader
@@ -191,7 +191,7 @@ $kendo-loader-theme-colors: () !default;
 // Loading indicator
 /// The background color of the Loading indicator.
 /// @group loading
-$kendo-loading-bg: k-color( surface-alt ) !default;
+$kendo-loading-bg: k-color(surface-alt) !default;
 /// The text color of the Loading indicator.
 /// @group loading
 $kendo-loading-text: currentColor !default;

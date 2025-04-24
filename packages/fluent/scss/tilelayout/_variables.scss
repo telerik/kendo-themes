@@ -8,7 +8,7 @@
 $kendo-tile-layout-border-width: 0px !default;
 /// The background color of the TileLayout.
 /// @group tile-layout
-$kendo-tile-layout-bg: k-color( surface ) !default;
+$kendo-tile-layout-bg: k-color(surface) !default;
 
 /// The horizontal padding of the TileLayout.
 /// @group tile-layout
@@ -26,7 +26,7 @@ $kendo-tile-layout-hint-border-width: 1px !default;
 $kendo-tile-layout-hint-border-radius: var( --kendo-border-radius-lg, initial ) !default;
 /// The color of the border around the TileLayout hint.
 /// @group tile-layout
-$kendo-tile-layout-hint-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-tile-layout-hint-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The background color of the TileLayout hint.
 /// @group tile-layout
 $kendo-tile-layout-hint-bg: rgba(255, 255, 255, .2) !default;

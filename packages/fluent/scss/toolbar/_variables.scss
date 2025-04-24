@@ -58,16 +58,16 @@ $kendo-toolbar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The background color of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-bg: k-color( surface ) !default;
+$kendo-toolbar-bg: k-color(surface) !default;
 /// The text color of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-text: k-color( on-app-surface ) !default;
+$kendo-toolbar-text: k-color(on-app-surface) !default;
 /// The color of the border around the Toolbar.
 /// @group toolbar
-$kendo-toolbar-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-toolbar-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The left and right scroll overlay of the Toolbar.
 /// @group toolbar
-$kendo-toolbar-scroll-overlay: $kendo-toolbar-bg, color-mix(in srgb, k-color( app-surface ) 0%, transparent) !default;
+$kendo-toolbar-scroll-overlay: $kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
 
 
 /// The text color of the outline Toolbar.
@@ -81,7 +81,7 @@ $kendo-toolbar-outline-border: k-color(border) !default;
 $kendo-toolbar-outline-border-width: $kendo-toolbar-border-width !default;
 /// The left and right scroll overlay of the outline Toolbar.
 /// @group toolbar
-$kendo-toolbar-outline-scroll-overlay: k-color( app-surface ), color-mix(in srgb, k-color( app-surface ) 0%, transparent) !default;
+$kendo-toolbar-outline-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
 
 
 /// The text color of the flat Toolbar.
@@ -95,7 +95,7 @@ $kendo-toolbar-flat-border: $kendo-toolbar-border !default;
 $kendo-toolbar-flat-border-width: 1px !default;
 /// The left and right scroll overlay of the flat Toolbar.
 /// @group toolbar
-$kendo-toolbar-flat-scroll-overlay: k-color( app-surface ), color-mix(in srgb, k-color( app-surface ) 0%, transparent) !default;
+$kendo-toolbar-flat-scroll-overlay: k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent) !default;
 
 
 /// The color of the separator border of the Toolbar.
@@ -114,7 +114,7 @@ $kendo-toolbar-item-focus-outline-width: 1px !default;
 $kendo-toolbar-item-focus-outline-style: solid !default;
 /// The border color of the focused Toolbar item.
 /// @group toolbar
-$kendo-toolbar-item-focus-outline-color: k-color( base-emphasis ) !default;
+$kendo-toolbar-item-focus-outline-color: k-color(base-emphasis) !default;
 
 /// The sizes map for the Toolbar.
 /// @group toolbar

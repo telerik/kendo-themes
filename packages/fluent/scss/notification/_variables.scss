@@ -28,13 +28,13 @@ $kendo-notification-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-notification-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the Notification.
 /// @group notification
-$kendo-notification-bg: k-color( surface-alt ) !default;
+$kendo-notification-bg: k-color(surface-alt) !default;
 /// The text color of the Notification.
 /// @group notification
-$kendo-notification-text: k-color( on-app-surface ) !default;
+$kendo-notification-text: k-color(on-app-surface) !default;
 /// The border color of the Notification.
 /// @group notification
-$kendo-notification-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-notification-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The box shadow of the Notification.
 /// @group notification
 $kendo-notification-box-shadow: none !default;
@@ -47,7 +47,7 @@ $kendo-notification-icon-spacing: k-spacing(2) !default;
 $kendo-notification-close-icon-spacing: k-spacing(4) !default;
 /// The color of the Notification icon.
 /// @group notification
-$kendo-notification-icon-text: k-color( on-app-surface ) !default;
+$kendo-notification-icon-text: k-color(on-app-surface) !default;
 
 /// The theme variations for the Notification.
 /// @group notification

@@ -37,17 +37,17 @@ $kendo-appbar-gap: k-spacing(2) !default;
 
 /// The background color of the AppBar based on light theme color.
 /// @group appbar
-$kendo-appbar-light-bg: k-color( light ) !default;
+$kendo-appbar-light-bg: k-color(light) !default;
 /// The text color of the AppBar based on light theme color.
 /// @group appbar
-$kendo-appbar-light-text: k-color( on-light ) !default;
+$kendo-appbar-light-text: k-color(on-light) !default;
 
 /// The background color of the AppBar based on dark theme color.
 /// @group appbar
-$kendo-appbar-dark-bg: k-color( dark ) !default;
+$kendo-appbar-dark-bg: k-color(dark) !default;
 /// The text color of the AppBar based on dark theme colorr.
 /// @group appbar
-$kendo-appbar-dark-text: k-color( on-dark ) !default;
+$kendo-appbar-dark-text: k-color(on-dark) !default;
 
 /// The box shadow of the AppBar.
 /// @group appbar
@@ -57,16 +57,16 @@ $kendo-appbar-box-shadow: k-elevation(4) !default;
 $kendo-appbar-bottom-box-shadow: k-elevation(4) !default;
 
 $kendo-appbar-theme-colors: (
-    "primary": k-color( primary ),
-    "secondary": k-color( secondary ),
-    "tertiary": k-color( tertiary ),
-    "info": k-color( info ),
-    "success": k-color( success ),
-    "warning": k-color( warning ),
-    "error": k-color( error ),
-    "dark": k-color( dark ),
-    "light": k-color( light ),
-    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/appbar/_variables.scss" with (
