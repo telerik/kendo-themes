@@ -24,27 +24,49 @@
                 line-height: $_line-height;
             }
         }
+
+        .k-group-menu-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+
+            .k-group-menu-item {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-x;
+                font-size: $_font-size;
+                line-height: $_line-height;
+            }
+        }
     }
 
-    .k-columnmenu-item-actions {
+    .k-group-menu .k-group-menu-item-wrap + .k-group-menu-item-wrap {
+        border-top: 1px solid;
+    }
+
+    .k-group-menu-item {
+        display: flex;
+        user-select: none;
+        gap: k-spacing(1);
+    }
+
+    .k-group-menu-item-actions {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: k-spacing(2);
         margin-block: calc( k-spacing(1) * -1);
         pointer-events: none;
     }
 
-    .k-columnmenu-item-action {
+    .k-group-menu-item-action {
         display: flex;
         align-items: center;
         justify-content: center;
-        pointer-events: none;
         padding: k-spacing(1);
+        border-radius: k-border-radius(md);
+        pointer-events: auto;
+        cursor: pointer;
     }
 
-    .k-columnmenu-item-drag-action {
-        pointer-events: auto;
+    .k-group-menu-item-drag-action {
         cursor: move;
     }
 }

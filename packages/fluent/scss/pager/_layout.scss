@@ -17,6 +17,7 @@
         line-height: var( --kendo-pager-line-height, #{$kendo-pager-line-height} );
         white-space: nowrap;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: var( --INTERNAL--kendo-pager-spacing, 0 );
         position: relative;

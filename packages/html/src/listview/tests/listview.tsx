@@ -12,7 +12,7 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid">
 
             <section>
                 <span>Listview - bottom pager</span>

@@ -1,5 +1,26 @@
+@use "../../color-system/_functions.import.scss" as *;
+@use "./_variables.scss" as *;
+
 @mixin kendo-column-menu--theme-base() {
     .k-column-menu {}
+
+    .k-group-menu-item-action:not(.k-group-menu-item-drag-action).k-hover,
+    .k-group-menu-item-action:not(.k-group-menu-item-drag-action):hover {
+        background-color: $kendo-group-menu-item-action-hover-bg;
+    }
+
+    .k-group-menu-item-action:not(.k-group-menu-item-drag-action).k-selected,
+    .k-group-menu-item-action:not(.k-group-menu-item-drag-action):active {
+        background-color: $kendo-group-menu-item-action-selected-bg;
+    }
+
+    .k-group-menu-item-action.k-group-menu-item-add-action {
+        color: $kendo-group-menu-item-add-action-text;
+    }
+
+    .k-group-menu .k-group-menu-item-wrap + .k-group-menu-item-wrap {
+        border-top-color: $kendo-group-menu-item-border;
+    }
 }
 
 @mixin kendo-column-menu--theme() {

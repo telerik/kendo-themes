@@ -15,8 +15,6 @@ export type KendoColumnMenuItemProps = {
     startIcon?: string;
     endIcon?: string;
     sortIndex?: number;
-    actionsStart?: React.JSX.Element | string;
-    actionsEnd?: React.JSX.Element | string;
 };
 
 const defaultOptions = {};
@@ -34,8 +32,6 @@ export const ColumnMenuItem = (
         startIcon,
         endIcon,
         sortIndex,
-        actionsStart,
-        actionsEnd,
         ...other
     } = props;
 
@@ -50,11 +46,6 @@ export const ColumnMenuItem = (
                     selected,
                 })
             )}>
-            {actionsStart &&
-                <>
-                    <span className="k-columnmenu-item-actions">{actionsStart}</span>
-                </>
-            }
             {startIcon && <Icon icon={startIcon} />}
             {text}
             {endIcon &&
@@ -64,12 +55,6 @@ export const ColumnMenuItem = (
                 </span>
             }
             {props.children}
-            {actionsEnd &&
-                <>
-                    <span className="k-spacer"></span>
-                    <span className="k-columnmenu-item-actions">{actionsEnd}</span>
-                </>
-            }
         </div>
     );
 };

@@ -73,6 +73,12 @@
         border-width: 0;
     }
 
+    .k-popup .k-column-list {
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
     // Legacy shadow
     .k-shadow {
         box-shadow: $kendo-popup-shadow;
