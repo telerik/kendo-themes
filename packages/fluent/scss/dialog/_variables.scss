@@ -7,13 +7,13 @@ $kendo-dialog-border-width: 0 !default;
 
 /// The background color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-bg: k-color( surface-alt ) !default;
+$kendo-dialog-titlebar-bg: k-color(surface-alt) !default;
 /// The text color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-text: k-color( on-app-surface ) !default;
+$kendo-dialog-titlebar-text: k-color(on-app-surface) !default;
 /// The border color of the Dialog titlebar.
 /// @group dialog
-$kendo-dialog-titlebar-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-dialog-titlebar-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The width of the border around the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-border-width: 0 !default;

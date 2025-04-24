@@ -214,8 +214,8 @@
                 @include focus-indicator( inset 0 0 0 2px rgba( $kendo-color-black, .1 ), true );
             }
             &.k-active {
-                color: k-color( on-primary );
-                background-color: k-color( primary );
+                color: k-color(on-primary);
+                background-color: k-color(primary);
             }
         }
 

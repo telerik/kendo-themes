@@ -39,13 +39,13 @@ $kendo-actionsheet-line-height: var( --kendo-line-height, inherit ) !default;
 
 /// Background color of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-bg: k-color( surface-alt ) !default;
+$kendo-actionsheet-bg: k-color(surface-alt) !default;
 /// Text color of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-text: k-color( on-app-surface ) !default;
+$kendo-actionsheet-text: k-color(on-app-surface) !default;
 /// Border color of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-actionsheet-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// Box shadow of the action sheet.
 /// @group action-sheet
 $kendo-actionsheet-shadow: var( --kendo-box-shadow-depth-7, none ) !default;
@@ -81,7 +81,7 @@ $kendo-actionsheet-header-bg: inherit !default;
 $kendo-actionsheet-header-text: inherit !default;
 /// Border color of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-actionsheet-header-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// Box shadow of the action sheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-shadow: none !default;
@@ -94,7 +94,7 @@ $kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !def
 $kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, inherit ) !default;
 /// Text color of the action sheet subtitle.
 /// @group action-sheet
-$kendo-actionsheet-subtitle-text: k-color( subtle ) !default;
+$kendo-actionsheet-subtitle-text: k-color(subtle) !default;
 
 /// Border width of the action sheet footer.
 /// @group action-sheet
@@ -108,7 +108,7 @@ $kendo-actionsheet-footer-bg: null !default;
 $kendo-actionsheet-footer-text: null !default;
 /// Border color of the action sheet footer.
 /// @group action-sheet
-$kendo-actionsheet-footer-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-actionsheet-footer-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// Box shadow of the action sheet footer.
 /// @group action-sheet
 $kendo-actionsheet-footer-shadow: null !default;
@@ -131,7 +131,7 @@ $kendo-actionsheet-item-spacing: k-spacing(2) !default;
 
 /// Color of the action sheet item icon.
 /// @group action-sheet
-$kendo-actionsheet-item-icon-color: k-color( primary ) !default;
+$kendo-actionsheet-item-icon-color: k-color(primary) !default;
 
 /// Font weight of the action sheet item text.
 /// @group action-sheet
@@ -145,14 +145,14 @@ $kendo-actionsheet-item-title-text-transform: none !default;
 $kendo-actionsheet-item-description-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// Color of the action sheet item description.
 /// @group action-sheet
-$kendo-actionsheet-item-description-text: k-color( subtle ) !default;
+$kendo-actionsheet-item-description-text: k-color(subtle) !default;
 
 /// Hover background color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-bg: k-color( base-hover ) !default;
+$kendo-actionsheet-item-hover-bg: k-color(base-hover) !default;
 /// Hover text color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-hover-text: k-color( on-base ) !default;
+$kendo-actionsheet-item-hover-text: k-color(on-base) !default;
 /// Hover border color of the action sheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-hover-border: inherit !default;
@@ -188,7 +188,7 @@ $kendo-actionsheet-item-focus-hover-border: $kendo-actionsheet-item-hover-border
 $kendo-actionsheet-item-disabled-bg: $kendo-actionsheet-bg !default;
 /// Disabled text color of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-disabled-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-actionsheet-item-disabled-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 /// Disabled border color of the action sheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-disabled-border: transparent !default;

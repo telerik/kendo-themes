@@ -39,10 +39,10 @@ $kendo-tooltip-callout-size: k-spacing(2) !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-bg: k-color( app-surface ) !default;
+$kendo-tooltip-bg: k-color(app-surface) !default;
 /// The default text color of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-text: k-color( on-app-surface ) !default;
+$kendo-tooltip-text: k-color(on-app-surface) !default;
 /// The default border color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border: transparent !default;
@@ -52,7 +52,7 @@ $kendo-tooltip-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 
 /// The text color of the Tooltip button.
 /// @group tooltip
-$kendo-tooltip-button-text: k-color( subtle ) !default;
+$kendo-tooltip-button-text: k-color(subtle) !default;
 
 /// Theme variations for the tooltip.
 $kendo-tooltip-brand-colors: (

@@ -30,13 +30,13 @@ $kendo-popup-content-padding-y: k-spacing(2) !default;
 
 /// Background color of the popup.
 /// @group popup
-$kendo-popup-bg: k-color( surface-alt ) !default;
+$kendo-popup-bg: k-color(surface-alt) !default;
 /// Text color of the popup.
 /// @group popup
-$kendo-popup-text: k-color( on-app-surface ) !default;
+$kendo-popup-text: k-color(on-app-surface) !default;
 /// Border color of the popup.
 /// @group popup
-$kendo-popup-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-popup-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// Box shadow around the popup.
 /// @group popup
 $kendo-popup-shadow: var( --kendo-box-shadow-depth-4, none ) !default;

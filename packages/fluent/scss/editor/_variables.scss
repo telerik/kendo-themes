@@ -16,13 +16,13 @@ $kendo-editor-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-editor-line-height: var( --kendo-line-height, normal ) !default;
 /// The text color of the Editor.
 /// @group editor
-$kendo-editor-text: k-color( on-app-surface ) !default;
+$kendo-editor-text: k-color(on-app-surface) !default;
 /// The background color of the Editor.
 /// @group editor
-$kendo-editor-bg: k-color( surface-alt ) !default;
+$kendo-editor-bg: k-color(surface-alt) !default;
 /// The color of the border around Editor.
 /// @group editor
-$kendo-editor-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-editor-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The text color of the Еditor's placeholder.
 /// @group editor
 $kendo-editor-placeholder-text: var( --kendo-input-placeholder-text, #{$kendo-input-placeholder-text} ) !default;
@@ -31,7 +31,7 @@ $kendo-editor-placeholder-text: var( --kendo-input-placeholder-text, #{$kendo-in
 $kendo-editor-placeholder-opacity: var( --kendo-input-placeholder-opacity, #{$kendo-input-placeholder-opacity} ) !default;
 /// The outline color of the Editor's content.
 /// @group editor
-$kendo-editor-content-outline-color: k-color( on-app-surface ) !default;
+$kendo-editor-content-outline-color: k-color(on-app-surface) !default;
 /// The horizontal margin of the Editor's export tool icon.
 /// @group editor
 $kendo-editor-export-tool-icon-margin-x: k-spacing(1) !default;
@@ -41,13 +41,13 @@ $kendo-editor-selectednode-outline-width: k-spacing(0.5) !default;
 
 /// The selected text color of the Editor.
 /// @group editor
-$kendo-editor-selected-text: k-color( app-surface ) !default;
+$kendo-editor-selected-text: k-color(app-surface) !default;
 /// The selected background color of the Editor.
 /// @group editor
-$kendo-editor-selected-bg: k-color( primary ) !default;
+$kendo-editor-selected-bg: k-color(primary) !default;
 /// The highlighted background color of the Editor.
 /// @group editor
-$kendo-editor-highlighted-bg: color-mix(in srgb, k-color( primary ) 55%, transparent) !default;
+$kendo-editor-highlighted-bg: color-mix(in srgb, k-color(primary) 55%, transparent) !default;
 
 /// The size of the Editor's resize handle.
 /// @group editor
@@ -57,21 +57,21 @@ $kendo-editor-resize-handle-size: k-spacing(2) !default;
 $kendo-editor-resize-handle-border-width: 1px !default;
 /// The border color of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-border: k-color( on-app-surface ) !default;
+$kendo-editor-resize-handle-border: k-color(on-app-surface) !default;
 /// The background color of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-bg: k-color( app-surface ) !default;
+$kendo-editor-resize-handle-bg: k-color(app-surface) !default;
 
 /// The outline color of the Editor's selected node.
 /// @group editor
-$kendo-editor-selectednode-outline-color: k-color( primary ) !default;
+$kendo-editor-selectednode-outline-color: k-color(primary) !default;
 
 /// The border color of the Inline Editor data cell.
 /// @group editor
-$kendo-editor-inline-td-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-editor-inline-td-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The hover border color of the Inline Editor.
 /// @group editor
-$kendo-editor-inline-hover-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-editor-inline-hover-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 // Insert table
 /// The size of the cell in the Insert table popup.
@@ -79,10 +79,10 @@ $kendo-editor-inline-hover-border: color-mix(in srgb, k-color( border ) 16%, tra
 $ct-cell-size: 20px !default;
 /// The text color of the selected cells in the Insert table popup.
 /// @group editor
-$kendo-editor-ct-popup-text: k-color( on-base ) !default;
+$kendo-editor-ct-popup-text: k-color(on-base) !default;
 /// The background color of the selected cells in the Insert table popup.
 /// @group editor
-$kendo-editor-ct-popup-bg: k-color( base-active ) !default;
+$kendo-editor-ct-popup-bg: k-color(base-active) !default;
 /// The border color of the selected cells in the Insert table popup.
 /// @group editor
-$kendo-editor-ct-popup-border: color-mix(in srgb, k-color( border-alt ) 76%, transparent) !default;
+$kendo-editor-ct-popup-border: color-mix(in srgb, k-color(border-alt) 76%, transparent) !default;

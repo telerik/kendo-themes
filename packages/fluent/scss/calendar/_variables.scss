@@ -20,13 +20,13 @@ $kendo-calendar-cell-size: 28px !default;
 
 /// The background color of the Calendar.
 /// @group calendar
-$kendo-calendar-bg: k-color( surface-alt ) !default;
+$kendo-calendar-bg: k-color(surface-alt) !default;
 /// The text color of the Calendar.
 /// @group calendar
-$kendo-calendar-text: k-color( on-app-surface ) !default;
+$kendo-calendar-text: k-color(on-app-surface) !default;
 /// The border color of the Calendar.
 /// @group calendar
-$kendo-calendar-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-calendar-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The horizontal padding of the calendar header.
 /// @group calendar
@@ -41,7 +41,7 @@ $kendo-calendar-header-min-width: ($kendo-calendar-cell-size * 8) !default;
 
 /// The background color of the calendar header.
 /// @group calendar
-$kendo-calendar-header-bg: k-color( surface ) !default; // $kendo-component-header-bg
+$kendo-calendar-header-bg: k-color(surface) !default; // $kendo-component-header-bg
 /// The text color of the calendar header.
 /// @group calendar
 $kendo-calendar-header-text: $kendo-calendar-text !default; // $kendo-component-header-text
@@ -121,7 +121,7 @@ $kendo-calendar-caption-line-height: normal !default;
 $kendo-calendar-caption-font-weight: bold !default;
 /// The text color of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-color: k-color( subtle ) !default;
+$kendo-calendar-caption-color: k-color(subtle) !default;
 
 /// The width of the Calendar view.
 /// @group calendar
@@ -146,16 +146,16 @@ $kendo-calendar-weekend-text: inherit !default;
 
 /// The text color of the calendar today cell.
 /// @group calendar
-$kendo-calendar-today-text: k-color( app-surface ) !default; // use contrast function
+$kendo-calendar-today-text: k-color(app-surface) !default; // use contrast function
 /// The background color of the calendar today cell.
 /// @group calendar
-$kendo-calendar-today-bg: k-color( primary ) !default;
+$kendo-calendar-today-bg: k-color(primary) !default;
 /// The text color of the calendar today cell when hovered.
 /// @group calendar
-$kendo-calendar-today-hover-text: k-color( app-surface ) !default;  // use contrast function
+$kendo-calendar-today-hover-text: k-color(app-surface) !default;  // use contrast function
 /// The background color of the calendar today cell when hovered.
 /// @group calendar
-$kendo-calendar-today-hover-bg: k-color( primary-hover ) !default;
+$kendo-calendar-today-hover-bg: k-color(primary-hover) !default;
 /// The border radius of the calendar today cell.
 /// @group calendar
 $kendo-calendar-today-border-radius: 9999px !default;
@@ -165,14 +165,14 @@ $kendo-calendar-today-border-radius: 9999px !default;
 $kendo-calendar-week-number-bg: inherit !default;
 /// The text color of the calendar week number cell.
 /// @group calendar
-$kendo-calendar-week-number-text: k-color( subtle ) !default;
+$kendo-calendar-week-number-text: k-color(subtle) !default;
 
 /// The background color of the other months calendar cells.
 /// @group calendar
 $kendo-calendar-other-month-bg: inherit !default;
 /// The text color of the other months calendar cells.
 /// @group calendar
-$kendo-calendar-other-month-text: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-calendar-other-month-text: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 
 /// The background color of the calendar cells.
 /// @group calendar
@@ -183,34 +183,34 @@ $kendo-calendar-cell-text: inherit !default;
 
 /// The background color of the calendar cells when hovered.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: k-color( base-hover ) !default;
+$kendo-calendar-cell-hover-bg: k-color(base-hover) !default;
 /// The text color of the calendar cells when hovered.
 /// @group calendar
-$kendo-calendar-cell-hover-text: k-color( on-base ) !default;
+$kendo-calendar-cell-hover-text: k-color(on-base) !default;
 
 /// The background color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-bg: k-color( base-active ) !default;
+$kendo-calendar-cell-selected-bg: k-color(base-active) !default;
 /// The text color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-text: k-color( on-base ) !default;
+$kendo-calendar-cell-selected-text: k-color(on-base) !default;
 /// The border color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-border: color-mix(in srgb, k-color( border-alt ) 76%, transparent) !default;
+$kendo-calendar-cell-selected-border: color-mix(in srgb, k-color(border-alt) 76%, transparent) !default;
 /// The shadow of the selected calendar cell.
 /// @group calendar
 $kendo-calendar-cell-selected-shadow: inset 0 0 0 1px $kendo-calendar-cell-selected-border !default;
 
 /// The background color of the selected calendar cell when hovered.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-bg: k-color( base-subtle-active ) !default;
+$kendo-calendar-cell-selected-hover-bg: k-color(base-subtle-active) !default;
 /// The text color of the selected calendar cell when hovered.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-text: k-color( on-base ) !default;
+$kendo-calendar-cell-selected-hover-text: k-color(on-base) !default;
 
 /// The shadow of the selected calendar cell when focused.
 /// @group calendar
-$kendo-calendar-cell-focus-shadow: inset 0 0 0 1px k-color( base-emphasis ) !default;
+$kendo-calendar-cell-focus-shadow: inset 0 0 0 1px k-color(base-emphasis) !default;
 /// The shadow of the selected calendar cell when selected and focused.
 /// @group calendar
 $kendo-calendar-cell-selected-focus-shadow: $kendo-calendar-cell-focus-shadow !default;
@@ -227,7 +227,7 @@ $kendo-calendar-navigation-item-height: 2em !default;
 
 /// The background color of the navigation in the infinite Calendar.
 /// @group calendar
-$kendo-calendar-navigation-bg: k-color( surface ) !default;
+$kendo-calendar-navigation-bg: k-color(surface) !default;
 /// The text color of the navigation in the infinite Calendar.
 /// @group calendar
 $kendo-calendar-navigation-text: $kendo-calendar-header-text !default;
@@ -237,7 +237,7 @@ $kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
 
 /// The text color of the hovered items in the calendar navigation.
 /// @group calendar
-$kendo-calendar-navigation-hover-text: k-color( primary-hover ) !default;
+$kendo-calendar-navigation-hover-text: k-color(primary-hover) !default;
 
 
 // Infinite calendar
@@ -264,25 +264,25 @@ $kendo-infinite-calendar-view-height: ( $kendo-calendar-cell-size * 9 ) !default
 // Range calendar
 /// The background color of the range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-range-bg: k-color( base-active ) !default;
+$kendo-calendar-range-bg: k-color(base-active) !default;
 /// The text color of the range selection in the Calendar.
 /// @group calendar
 $kendo-calendar-range-text: inherit !default;
 /// The border color of the range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-range-border: k-color( base-emphasis ) !default;
+$kendo-calendar-range-border: k-color(base-emphasis) !default;
 /// The shadow of the hovered start range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-start-range-hover-shadow: inset 1px -1px 0 0 k-color( base-emphasis ), inset 0 1px 0 0 k-color( base-emphasis ) !default;
+$kendo-calendar-start-range-hover-shadow: inset 1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) !default;
 /// The shadow of the hovered mid range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-mid-range-hover-shadow: inset 0 -1px 0 0 k-color( base-emphasis ), inset 0 1px 0 0 k-color( base-emphasis ) !default;
+$kendo-calendar-mid-range-hover-shadow: inset 0 -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) !default;
 /// The shadow of the hovered end range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-end-range-hover-shadow: inset -1px -1px 0 0 k-color( base-emphasis ), inset 0 1px 0 0 k-color( base-emphasis ) !default;
+$kendo-calendar-end-range-hover-shadow: inset -1px -1px 0 0 k-color(base-emphasis), inset 0 1px 0 0 k-color(base-emphasis) !default;
 /// The shadow of the hovered start-end range selection in the Calendar.
 /// @group calendar
-$kendo-calendar-start-end-range-hover-shadow: inset 1px -1px 0 0 k-color( base-emphasis ), inset -1px 1px 0 0 k-color( base-emphasis ) !default;
+$kendo-calendar-start-end-range-hover-shadow: inset 1px -1px 0 0 k-color(base-emphasis), inset -1px 1px 0 0 k-color(base-emphasis) !default;
 
 
 // Calendar sizes

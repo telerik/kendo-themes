@@ -108,9 +108,9 @@ $kendo-window-sizes: (
 /// The theme colors map for the Window.
 /// @group window
 $kendo-window-theme-colors: (
-    "primary": k-color( primary ),
-    "light": k-color( light ),
-    "dark": k-color( dark )
+    "primary": k-color(primary),
+    "light": k-color(light),
+    "dark": k-color(dark)
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/window/_variables.scss" with (

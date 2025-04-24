@@ -65,16 +65,16 @@ $kendo-bottom-nav-flat-bg: k-color(app-surface) !default;
 $kendo-bottom-nav-flat-border: k-color(border) !default;
 
 $kendo-bottom-navigation-theme-colors: (
-    "primary": k-color( primary ),
-    "secondary": k-color( secondary ),
-    "tertiary": k-color( tertiary ),
-    "info": k-color( info ),
-    "success": k-color( success ),
-    "warning": k-color( warning ),
-    "error": k-color( error ),
-    "dark": k-color( dark ),
-    "light": k-color( light ),
-    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark )),
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark)),
 ) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/bottom-navigation/_variables.scss" with (

@@ -116,7 +116,7 @@ $kendo-chat-toolbar-padding-y: $kendo-toolbar-md-padding-y !default;
 $kendo-chat-toolbar-spacing: $kendo-toolbar-md-spacing !default;
 /// The background color of the Chat Toolbar.
 /// @group chat
-$kendo-chat-toolbar-bg: k-color( surface ) !default;
+$kendo-chat-toolbar-bg: k-color(surface) !default;
 /// The text color of the Chat Toolbar.
 /// @group chat
 $kendo-chat-toolbar-text: $kendo-toolbar-text !default;
@@ -172,7 +172,7 @@ $kendo-chat-bubble-selected-shadow: k-elevation(3) !default;
 $kendo-chat-alt-bubble-bg: k-color(primary) !default;
 /// The text color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-text: k-color( on-primary ) !default;
+$kendo-chat-alt-bubble-text: k-color(on-primary) !default;
 /// The border color of the Chat alt bubble.
 /// @group chat
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;

@@ -231,10 +231,10 @@ $kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
 /// @group grid
 $kendo-grid-selection-aggregates-font-weight: var( --kendo-font-weight-bold, normal )!default;
 
-$kendo-grid-grouping-row-bg: k-color( base-subtle ) !default;
+$kendo-grid-grouping-row-bg: k-color(base-subtle) !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
-$kendo-grid-sorted-bg: color-mix(in srgb, k-color( on-app-surface ) 2%, transparent) !default;
+$kendo-grid-sorted-bg: color-mix(in srgb, k-color(on-app-surface) 2%, transparent) !default;
 $kendo-grid-sorting-indicator-text: k-color(primary) !default;
 $kendo-grid-sorting-index-font-size: ($kendo-icon-size * .75) !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
@@ -252,10 +252,10 @@ $kendo-grid-command-cell-padding-y: calc( #{$kendo-grid-cell-padding-y} - (#{$ke
 // Must be a solid color
 $kendo-grid-sticky-bg: $kendo-grid-bg !default;
 $kendo-grid-sticky-text: $kendo-grid-text !default;
-$kendo-grid-sticky-border: color-mix(in srgb, k-color( on-app-surface ) 50%, transparent) !default;
+$kendo-grid-sticky-border: color-mix(in srgb, k-color(on-app-surface) 50%, transparent) !default;
 
 // Must be a solid color
-$kendo-grid-sticky-alt-bg: k-color( base-subtle )!default;
+$kendo-grid-sticky-alt-bg: k-color(base-subtle)!default;
 
 $kendo-grid-sticky-header-bg: $kendo-grid-header-bg !default;
 $kendo-grid-sticky-header-text: $kendo-grid-header-text !default;
@@ -264,12 +264,12 @@ $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
 $kendo-grid-sticky-footer-hover-bg: $kendo-grid-sticky-footer-bg !default;
 
-$kendo-grid-sticky-selected-bg: color-mix(in srgb, k-color( primary ) 25%, transparent) !default;
-$kendo-grid-sticky-selected-alt-bg: color-mix(in srgb, k-color( primary ) 24%, transparent) !default;
+$kendo-grid-sticky-selected-bg: color-mix(in srgb, k-color(primary) 25%, transparent) !default;
+$kendo-grid-sticky-selected-alt-bg: color-mix(in srgb, k-color(primary) 24%, transparent) !default;
 
 // Must be a solid color
-$kendo-grid-sticky-hover-bg: k-color( base-subtle-hover ) !default;
-$kendo-grid-sticky-selected-hover-bg: color-mix(in srgb, k-color( primary ) 24%, transparent) !default;
+$kendo-grid-sticky-hover-bg: k-color(base-subtle-hover) !default;
+$kendo-grid-sticky-selected-hover-bg: color-mix(in srgb, k-color(primary) 24%, transparent) !default;
 
 $kendo-grid-column-menu-width: 250px !default;
 $kendo-grid-column-menu-max-width: 320px !default;
@@ -320,7 +320,7 @@ $kendo-grid-group-footer-second-cell-border: 1px !default;
 
 /// The background color of the Grid row resize indicator.
 /// @group grid
-$kendo-grid-row-resizer-hover-bg: color-mix(in srgb, k-color( on-base ) 20%, transparent) !default;
+$kendo-grid-row-resizer-hover-bg: color-mix(in srgb, k-color(on-base) 20%, transparent) !default;
 /// The background color of the active Grid row resize indicator.
 /// @group grid
 $kendo-grid-row-resizer-active-bg: k-color(primary) !default;

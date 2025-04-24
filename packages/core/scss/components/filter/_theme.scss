@@ -5,7 +5,7 @@
 @mixin kendo-filter--theme-base() {
 
     .k-filter {
-        color: k-color( on-app-surface );
+        color: k-color(on-app-surface);
 
         .k-filter-preview-field {
             color: $kendo-filter-preview-field-text;
@@ -20,7 +20,7 @@
         .k-filter-toolbar::before,
         .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
         .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
-            background-color: k-color( border );
+            background-color: k-color(border);
         }
 
         // Focus

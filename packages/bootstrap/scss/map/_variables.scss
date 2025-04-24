@@ -64,7 +64,7 @@ $kendo-map-attribution-padding-y: k-spacing(1) !default;
 $kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75 ) !default;
 /// The background color of the Map attribution.
 /// @group map
-$kendo-map-attribution-bg: color-mix(in srgb, k-color( app-surface ) 80%, transparent) !default;
+$kendo-map-attribution-bg: color-mix(in srgb, k-color(app-surface) 80%, transparent) !default;
 
 /// The fill color of the Map marker.
 /// @group map

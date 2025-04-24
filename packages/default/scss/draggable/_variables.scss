@@ -10,9 +10,9 @@ $kendo-drag-hint-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-drag-hint-font-family: var( --kendo-font-family, inherit ) !default;
 $kendo-drag-hint-line-height: var( --kendo-line-height, normal ) !default;
 
-$kendo-drag-hint-bg: k-color( surface ) !default;
-$kendo-drag-hint-text: k-color( on-app-surface ) !default;
-$kendo-drag-hint-border: k-color( border ) !default;
+$kendo-drag-hint-bg: k-color(surface) !default;
+$kendo-drag-hint-text: k-color(on-app-surface) !default;
+$kendo-drag-hint-border: k-color(border) !default;
 $kendo-drag-hint-gradient: null !default;
 $kendo-drag-hint-shadow: null !default;
 
@@ -27,7 +27,7 @@ $kendo-drop-hint-line-h-height: 1px !default;
 $kendo-drop-hint-line-v-width: $kendo-drop-hint-line-h-height !default;
 $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
 
-$kendo-drop-hint-bg: k-color( primary ) !default;
+$kendo-drop-hint-bg: k-color(primary) !default;
 
 @forward "@progress/kendo-theme-core/scss/components/draggable/_variables.scss" with (
     $kendo-drag-hint-padding-x: $kendo-drag-hint-padding-x,

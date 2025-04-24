@@ -74,7 +74,7 @@ $kendo-loader-container-panel-border-width: 1px !default;
 $kendo-loader-container-panel-border-style: solid !default;
 /// The border color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-border-color: k-color( border ) !default;
+$kendo-loader-container-panel-border-color: k-color(border) !default;
 /// The border radius of the container panel.
 /// @group loader
 $kendo-loader-container-panel-border-radius: k-border-radius(md) !default;
@@ -115,7 +115,7 @@ $kendo-loader-lg-container-font-size: var( --kendo-font-size-lg, inherit ) !defa
 // Loading indicator
 /// The background color of the Loading indicator.
 /// @group loading
-$kendo-loading-bg: k-color( surface-alt ) !default;
+$kendo-loading-bg: k-color(surface-alt) !default;
 /// The text color of the Loading indicator.
 /// @group loading
 $kendo-loading-text: currentColor !default;
@@ -127,16 +127,16 @@ $kendo-loading-opacity: .3 !default;
 $kendo-zindex-loading: 100 !default;
 
 $kendo-loader-theme-colors: (
-    "primary": k-color( primary ),
-    "secondary": k-color( secondary ),
-    "tertiary": k-color( tertiary ),
-    "info": k-color( info ),
-    "success": k-color( success ),
-    "warning": k-color( warning ),
-    "error": k-color( error ),
-    "dark": k-color( dark ),
-    "light": k-color( light ),
-    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark ))
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
 ) !default;
 
 

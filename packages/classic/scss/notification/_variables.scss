@@ -33,13 +33,13 @@ $kendo-notification-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-notification-line-height: var( --kendo-line-height, normal ) !default;
 /// The background color of the Notification.
 /// @group notification
-$kendo-notification-bg: k-color( surface-alt ) !default;
+$kendo-notification-bg: k-color(surface-alt) !default;
 /// The text color of the Notification.
 /// @group notification
-$kendo-notification-text: k-color( on-app-surface ) !default;
+$kendo-notification-text: k-color(on-app-surface) !default;
 /// The border color of the Notification.
 /// @group notification
-$kendo-notification-border: k-color( border ) !default;
+$kendo-notification-border: k-color(border) !default;
 /// The box shadow of the Notification.
 /// @group notification
 $kendo-notification-shadow: $kendo-popup-shadow !default;
@@ -51,16 +51,16 @@ $kendo-notification-icon-spacing: $kendo-icon-spacing !default;
 /// The theme colors map for the Notification.
 /// @group notification
 $kendo-notification-theme-colors: (
-    "primary": k-color( primary ),
-    "secondary": k-color( secondary ),
-    "tertiary": k-color( tertiary ),
-    "info": k-color( info ),
-    "success": k-color( success ),
-    "warning": k-color( warning ),
-    "error": k-color( error ),
-    "dark": k-color( dark ),
-    "light": k-color( light ),
-    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark ))
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
 ) !default;
 /// The generated theme colors map for the Notification.
 /// @group notification

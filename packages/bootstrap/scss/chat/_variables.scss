@@ -58,7 +58,7 @@ $kendo-chat-timestamp-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-chat-timestamp-transform: uppercase !default;
 /// The text color of the Chat timestamp.
 /// @group chat
-$kendo-chat-timestamp-text: k-color( subtle ) !default;
+$kendo-chat-timestamp-text: k-color(subtle) !default;
 /// The background color of the Chat timestamp.
 /// @group chat
 $kendo-chat-timestamp-bg: null !default;
@@ -171,7 +171,7 @@ $kendo-chat-bubble-selected-shadow: none !default;
 $kendo-chat-alt-bubble-bg: k-color(primary) !default;
 /// The text color of the Chat alt bubble.
 /// @group chat
-$kendo-chat-alt-bubble-text: k-color( on-primary ) !default;
+$kendo-chat-alt-bubble-text: k-color(on-primary) !default;
 /// The border color of the Chat alt bubble.
 /// @group chat
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;

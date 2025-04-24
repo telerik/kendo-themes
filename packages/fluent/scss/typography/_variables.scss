@@ -230,13 +230,13 @@ $kendo-code-border-width: 1px !default;
 
 /// The background color of the code tag.
 /// @group typography
-$kendo-code-bg: k-color( surface-alt ) !default;
+$kendo-code-bg: k-color(surface-alt) !default;
 /// The text color of the code tag.
 /// @group typography
-$kendo-code-text: k-color( on-app-surface ) !default;
+$kendo-code-text: k-color(on-app-surface) !default;
 /// The border color of the code tag.
 /// @group typography
-$kendo-code-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-code-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 // Display
 

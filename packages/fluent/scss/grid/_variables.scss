@@ -236,7 +236,7 @@ $kendo-grid-header-text: $kendo-table-header-text !default;
 $kendo-grid-header-border: $kendo-table-header-border !default;
 /// The background color of Grid header icons.
 /// @group grid
-$kendo-grid-header-icon-text: k-color( subtle ) !default;
+$kendo-grid-header-icon-text: k-color(subtle) !default;
 
 // The background color of Grid footer.
 /// @group grid
@@ -336,13 +336,13 @@ $kendo-grid-sort-index-spacing-x: k-spacing(0.5) !default;
 $kendo-grid-sort-icon-spacing: var( --kendo-icon-lg-spacing, .5rem ) !default;
 /// The text color of the Grid sort indicator.
 /// @group grid
-$kendo-grid-sort-indicator-text: k-color( subtle ) !default;
+$kendo-grid-sort-indicator-text: k-color(subtle) !default;
 /// The text color of the Grid sort order indicator.
 /// @group grid
-$kendo-grid-sort-indicator-order-text: k-color( primary ) !default;
+$kendo-grid-sort-indicator-order-text: k-color(primary) !default;
 /// The background color of the sorted Grid cells.
 /// @group grid
-$kendo-grid-sorted-bg: k-color( surface ) !default;
+$kendo-grid-sorted-bg: k-color(surface) !default;
 
 /// The horizontal padding of the Grid command cells.
 /// @group grid
@@ -368,16 +368,16 @@ $kendo-grid-group-indicator-border-radius: k-border-radius(md) !default;
 $kendo-grid-group-indicator-gap: $kendo-table-cell-padding-y !default;
 /// The text color of the Grid group indicator.
 /// @group grid
-$kendo-grid-group-indicator-text: k-color( on-app-surface ) !default;
+$kendo-grid-group-indicator-text: k-color(on-app-surface) !default;
 /// The background color of the Grid group indicator.
 /// @group grid
-$kendo-grid-group-indicator-bg: k-color( surface-alt ) !default;
+$kendo-grid-group-indicator-bg: k-color(surface-alt) !default;
 /// The border color of the Grid group indicator.
 /// @group grid
-$kendo-grid-group-indicator-border: k-color( border ) !default;
+$kendo-grid-group-indicator-border: k-color(border) !default;
 /// The text color of the Grid group indicator icon.
 /// @group grid
-$kendo-grid-group-indicator-icon-text: k-color( subtle ) !default;
+$kendo-grid-group-indicator-icon-text: k-color(subtle) !default;
 
 /// The horizontal border width of the Grid group footer.
 /// @group grid
@@ -388,20 +388,20 @@ $kendo-grid-group-footer-border-width-x: 0px !default;
 
 /// The text color of the Grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-bg: k-color( primary ) !default;
+$kendo-grid-group-drop-hint-bg: k-color(primary) !default;
 
 /// The border width of the Grid sticky cell.
 /// @group grid
 $kendo-grid-sticky-cell-border-width: $kendo-grid-border-width !default;
 /// The background color of the Grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-bg: k-color( surface-alt ) !default;
+$kendo-grid-sticky-bg: k-color(surface-alt) !default;
 /// The text color of the Grid sticky cell.
 /// @group grid
 $kendo-grid-sticky-text: $kendo-grid-text !default;
 /// The border color of the Grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-border: color-mix(in srgb, k-color( border ) 80%, transparent) !default;
+$kendo-grid-sticky-border: color-mix(in srgb, k-color(border) 80%, transparent) !default;
 /// The alt background color of the Grid sticky cell.
 /// @group grid
 $kendo-grid-sticky-alt-bg: $kendo-grid-sticky-bg !default;
@@ -457,13 +457,13 @@ $kendo-grid-column-menu-spacing: k-spacing(2) !default;
 $kendo-grid-column-menu-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 /// The background color of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-bg: k-color( surface-alt ) !default;
+$kendo-grid-column-menu-bg: k-color(surface-alt) !default;
 /// The text color of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-text: k-color( on-app-surface ) !default;
+$kendo-grid-column-menu-text: k-color(on-app-surface) !default;
 /// The border color of the Grid column menu.
 /// @group grid
-$kendo-grid-column-menu-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-grid-column-menu-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The font size of the Grid column menu checkbox container.
 /// @group grid
@@ -543,13 +543,13 @@ $kendo-grid-column-menu-group-header-text-transform: uppercase !default;
 
 /// The background color of the Grid column menu group.
 /// @group grid
-$kendo-grid-column-menu-group-header-bg: k-color( surface-alt ) !default;
+$kendo-grid-column-menu-group-header-bg: k-color(surface-alt) !default;
 /// The text color of the Grid column menu group.
 /// @group grid
-$kendo-grid-column-menu-group-header-text: k-color( on-app-surface ) !default;
+$kendo-grid-column-menu-group-header-text: k-color(on-app-surface) !default;
 /// The border color of the Grid column menu group.
 /// @group grid
-$kendo-grid-column-menu-group-header-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-grid-column-menu-group-header-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 
 /// The horizontal padding of the tabstrip content in the Grid tabbed column menu.
 /// @group grid
@@ -574,10 +574,10 @@ $kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo
 
 /// The background color of the Grid row resize indicator.
 /// @group grid
-$kendo-grid-row-resizer-hover-bg: color-mix(in srgb, k-color( on-app-surface ) 46%, transparent) !default;
+$kendo-grid-row-resizer-hover-bg: color-mix(in srgb, k-color(on-app-surface) 46%, transparent) !default;
 /// The background color of the active Grid row resize indicator.
 /// @group grid
-$kendo-grid-row-resizer-active-bg: k-color( primary ) !default;
+$kendo-grid-row-resizer-active-bg: k-color(primary) !default;
 /// The height of the Grid row resize indicator.
 /// @group grid
 $kendo-grid-row-resizer-height: k-spacing(0.5) !default;

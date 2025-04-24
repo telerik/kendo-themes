@@ -36,14 +36,14 @@
                 }
 
                 &::-webkit-scrollbar-thumb:hover {
-                    background: k-color( border );
+                    background: k-color(border);
                 }
             }
         }
 
         // TODO: remove
         .k-timeline-date {
-            color: k-color( on-app-surface );
+            color: k-color(on-app-surface);
         }
 
         .k-timeline-arrow.k-disabled {

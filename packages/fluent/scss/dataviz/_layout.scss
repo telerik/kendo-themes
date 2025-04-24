@@ -398,12 +398,12 @@
 
     // export variables to allow use in scripts
     $exported: (
-        primary-contrast: k-color( app-surface ),
-        base: k-color( surface-alt ),
-        background: k-color( surface-alt ),
+        primary-contrast: k-color(app-surface),
+        base: k-color(surface-alt),
+        background: k-color(surface-alt),
 
-        normal-background: k-color( surface-alt ),
-        normal-text-color: k-color( on-app-surface ),
+        normal-background: k-color(surface-alt),
+        normal-text-color: k-color(on-app-surface),
 
         series-a: $kendo-series-a,
         series-b: $kendo-series-b,
@@ -444,7 +444,7 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-series-f,
-        gauge-track: k-color( base-emphasis ),
+        gauge-track: k-color(base-emphasis),
 
         chart-font-size: $kendo-chart-font-size,
         chart-title-font-size: $kendo-chart-title-font-size,
@@ -486,7 +486,7 @@
     }
 
     $_css-vars: (
-        chart-primary-contrast: k-color( app-surface ),
+        chart-primary-contrast: k-color(app-surface),
         chart-bg: $kendo-chart-bg,
         chart-text: $kendo-chart-text,
 
@@ -540,7 +540,7 @@
         chart-series-30: $kendo-series-30,
 
         chart-gauge-pointer: $kendo-series-f,
-        chart-gauge-track: k-color( base-emphasis )
+        chart-gauge-track: k-color(base-emphasis)
 
     );
 

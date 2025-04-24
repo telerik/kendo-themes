@@ -142,7 +142,7 @@ $_tc-base-matrix: (
         focus-hover: (color-hover, on-color, border, on-color),
         active: (color-active, on-color, border),
         active-hover: (color-hover, on-color, border),
-        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
+        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
     ),
     outline: (
         normal: (transparent, color-on-surface, currentColor),
@@ -151,7 +151,7 @@ $_tc-base-matrix: (
         focus-hover: (on-color, color, on-color, inherit),
         active: (on-color, color, on-color),
         active-hover: (on-color, color, on-color),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
     ),
     link: (
         normal: (transparent, on-color, transparent),
@@ -160,7 +160,7 @@ $_tc-base-matrix: (
         focus-hover: (transparent, on-color, color-subtle-active, transparent),
         active: (transparent, on-color, transparent),
         active-hover: (transparent, on-color, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     ),
     clear: (
         normal: (transparent, color-on-surface, transparent),
@@ -169,7 +169,7 @@ $_tc-base-matrix: (
         focus-hover:  (transparent, color-on-surface, transparent, color-active),
         active: (transparent, color-on-surface, transparent),
         active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     )
 ) !default;
 
@@ -182,7 +182,7 @@ $_tc-brand-matrix: (
         focus-hover: (color-hover, on-color, color-hover, inherit),
         active: (color-active, on-color, color-active),
         active-hover: (color-hover, on-color, color-hover),
-        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
+        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
     ),
     flat: (
         normal: (initial, color-on-surface, transparent),
@@ -191,7 +191,7 @@ $_tc-brand-matrix: (
         focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
         active: (color-subtle-hover, color-hover, transparent),
         active-hover: (color-subtle, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     ),
     outline: (
         normal: (transparent, color-on-surface, currentColor),
@@ -200,7 +200,7 @@ $_tc-brand-matrix: (
         focus-hover: (color, on-color, color, inherit),
         active: (color, on-color, color),
         active-hover: (color, on-color, color),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
     ),
     link: (
         normal: (transparent, color, transparent),
@@ -209,7 +209,7 @@ $_tc-brand-matrix: (
         focus-hover: (transparent, color-hover, transparent, color-subtle-active),
         active: (transparent, color-active, transparent),
         active-hover: (transparent, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     ),
     clear: (
         normal: (transparent, color-on-surface, transparent),
@@ -218,7 +218,7 @@ $_tc-brand-matrix: (
         focus-hover: (transparent, color-on-surface, transparent),
         active: (transparent, color-on-surface, transparent),
         active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     )
 ) !default;
 
@@ -231,7 +231,7 @@ $_tc-warning-matrix: (
         focus-hover: (color-hover, on-color, color-hover, app-surface),
         active: (color-active, on-color, color-active),
         active-hover: (color-hover, on-color, color-hover),
-        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
+        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
     ),
     flat: (
         normal: (initial, color-on-surface, transparent),
@@ -240,7 +240,7 @@ $_tc-warning-matrix: (
         focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
         active: (color-subtle-hover, color-hover, transparent),
         active-hover: (color-subtle, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     ),
     outline: (
         normal: (transparent, color-on-surface, currentColor),
@@ -249,7 +249,7 @@ $_tc-warning-matrix: (
         focus-hover: (color, on-color, color, inherit),
         active: (color, on-color, color),
         active-hover: (color, on-color, color),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
     ),
     link: (
         normal: (transparent, color, transparent),
@@ -258,7 +258,7 @@ $_tc-warning-matrix: (
         focus-hover: (transparent, color-hover, transparent, color-subtle-active),
         active: (transparent, color-active, transparent),
         active-hover: (transparent, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial),
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial),
     ),
     clear: (
         normal: (transparent, color-on-surface, transparent),
@@ -267,7 +267,7 @@ $_tc-warning-matrix: (
         focus-hover: (transparent, color-on-surface, transparent),
         active: (transparent, color-on-surface, transparent),
         active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial),
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial),
     )
 ) !default;
 
@@ -280,7 +280,7 @@ $_tc-dark-matrix: (
         focus-hover: (color-hover, on-color, color-hover, on-color),
         active: (color-active, on-color, color-active),
         active-hover: (color-hover, on-color, color-hover),
-        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent),
+        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent),
     ),
     flat: (
         normal: (initial, color-on-surface, transparent),
@@ -289,7 +289,7 @@ $_tc-dark-matrix: (
         focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
         active: (color-subtle-hover, color-hover, transparent),
         active-hover: (color-subtle, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     ),
     outline: (
         normal: (transparent, color-on-surface, currentColor),
@@ -298,7 +298,7 @@ $_tc-dark-matrix: (
         focus-hover: (color, on-color, color, inherit),
         active: (color, on-color, color),
         active-hover: (color, on-color, color),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent))
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent))
     ),
     link: (
         normal: (transparent, color, transparent),
@@ -307,7 +307,7 @@ $_tc-dark-matrix: (
         focus-hover: (transparent, color-hover, transparent, color-subtle-active),
         active: (transparent, color-active, transparent),
         active-hover: (transparent, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     ),
     clear: (
         normal: (transparent, color-on-surface, transparent),
@@ -316,7 +316,7 @@ $_tc-dark-matrix: (
         focus-hover: (transparent, color-on-surface, transparent),
         active: (transparent, color-on-surface, transparent),
         active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     )
 ) !default;
 
@@ -329,7 +329,7 @@ $_tc-light-matrix: (
         focus-hover: (color-hover, on-color, color-hover, app-surface),
         active: (color-active, on-color, color-active),
         active-hover: (color-hover, on-color, color-hover),
-        disabled: (color-mix(in srgb, k-color( on-app-surface ) 6%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), transparent)
+        disabled: (color-mix(in srgb, k-color(on-app-surface) 6%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent), transparent)
     ),
     flat: (
         normal: (initial, color-on-surface, transparent),
@@ -338,7 +338,7 @@ $_tc-light-matrix: (
         focus-hover: (color-subtle, color-hover, transparent, color-subtle-active),
         active: (color-subtle-hover, color-hover, transparent),
         active-hover: (color-subtle, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     ),
     outline: (
         normal: (transparent, color-on-surface, currentColor),
@@ -347,7 +347,7 @@ $_tc-light-matrix: (
         focus-hover: (color, on-color, color, inherit),
         active: (color, on-color, color),
         active-hover: (color, on-color, color),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), color-mix(in srgb, k-color( on-app-surface ) 46%, transparent)),
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), color-mix(in srgb, k-color(on-app-surface) 46%, transparent)),
     ),
     link: (
         normal: (transparent, color, transparent),
@@ -356,7 +356,7 @@ $_tc-light-matrix: (
         focus-hover: (transparent, color-hover, transparent, color-subtle-active),
         active: (transparent, color-active, transparent),
         active-hover: (transparent, color-hover, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     ),
     clear: (
         normal: (transparent, color-on-surface, transparent),
@@ -365,7 +365,7 @@ $_tc-light-matrix: (
         focus-hover: (transparent, color-on-surface, transparent),
         active: (transparent, color-on-surface, transparent),
         active-hover: (transparent, color-on-surface, transparent),
-        disabled: (initial, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), initial)
+        disabled: (initial, color-mix(in srgb, k-color(on-app-surface) 46%, transparent), initial)
     )
 ) !default;
 

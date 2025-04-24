@@ -103,24 +103,24 @@
 
 @function k-get-swatch-color( $name, $color ) {
     $map: (
-        app-surface: k-color( app-surface ),
-        on-app-surface: k-color( on-app-surface ),
-        subtle: k-color( subtle ),
-        surface: k-color( surface ),
-        surface-alt: k-color( surface-alt ),
-        border: k-color( border ),
-        border-alt: k-color( border-alt ),
-        color-subtle: k-color( #{$color}-subtle ),
-        color-subtle-hover: k-color( #{$color}-subtle-hover ),
-        color-subtle-active: k-color( #{$color}-subtle-active ),
-        color: k-color( #{$color} ),
-        color-hover: k-color( #{$color}-hover ),
-        color-active: k-color( #{$color}-active ),
-        color-emphasis: k-color( #{$color}-emphasis ),
-        color-on-subtle: k-color( #{$color}-on-subtle ),
-        on-color: k-color( on-#{$color} ),
-        color-on-surface: k-color( #{$color}-on-surface ),
-        on-color-disabled: color-mix(in srgb, k-color( on-#{$color} ) 46%, transparent)
+        app-surface: k-color(app-surface),
+        on-app-surface: k-color(on-app-surface),
+        subtle: k-color(subtle),
+        surface: k-color(surface),
+        surface-alt: k-color(surface-alt),
+        border: k-color(border),
+        border-alt: k-color(border-alt),
+        color-subtle: k-color(#{$color}-subtle),
+        color-subtle-hover: k-color(#{$color}-subtle-hover),
+        color-subtle-active: k-color(#{$color}-subtle-active),
+        color: k-color(#{$color}),
+        color-hover: k-color(#{$color}-hover),
+        color-active: k-color(#{$color}-active),
+        color-emphasis: k-color(#{$color}-emphasis),
+        color-on-subtle: k-color(#{$color}-on-subtle),
+        on-color: k-color(on-#{$color}),
+        color-on-surface: k-color(#{$color}-on-surface),
+        on-color-disabled: color-mix(in srgb, k-color(on-#{$color}) 46%, transparent)
     );
 
     @return if( map.has-key( $map, $name ), map.get( $map, $name ), $name );

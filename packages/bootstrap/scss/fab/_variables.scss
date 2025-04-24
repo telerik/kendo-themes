@@ -99,16 +99,16 @@ $kendo-fab-item-icon-border-radius: 50% !default;
 /// The theme colors map for the FAB.
 /// @group floating-action-button
 $kendo-fab-theme-colors:  (
-    "primary": k-color( primary ),
-    "secondary": k-color( secondary ),
-    "tertiary": k-color( tertiary ),
-    "info": k-color( info ),
-    "success": k-color( success ),
-    "warning": k-color( warning ),
-    "error": k-color( error ),
-    "dark": k-color( dark ),
-    "light": k-color( light ),
-    "inverse": if($kendo-is-dark-theme, k-color( light ), k-color( dark ))
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
 ) !default;
 
 /// The size map for the FAB.

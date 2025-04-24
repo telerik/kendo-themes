@@ -24,13 +24,13 @@ $kendo-popover-line-height: $kendo-window-line-height !default;
 
 /// The text color of the Popover.
 /// @group popover
-$kendo-popover-text: k-color( on-app-surface ) !default;
+$kendo-popover-text: k-color(on-app-surface) !default;
 /// The background color of the Popover.
 /// @group popover
-$kendo-popover-bg: k-color( surface-alt ) !default;
+$kendo-popover-bg: k-color(surface-alt) !default;
 /// The border color of the Popover.
 /// @group popover
-$kendo-popover-border: color-mix(in srgb, k-color( border ) 16%, transparent) !default;
+$kendo-popover-border: color-mix(in srgb, k-color(border) 16%, transparent) !default;
 /// The box shadow of the Popover.
 /// @group popover
 $kendo-popover-shadow: var( --kendo-box-shadow-depth-6, none ) !default;

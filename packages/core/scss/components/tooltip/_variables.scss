@@ -25,7 +25,7 @@ $kendo-tooltip-shadow: null !default;
 
     @each $name, $color in $colors {
         $_theme: map.merge(( $name: (
-            color: k-color( on-#{$name} ),
+            color: k-color(on-#{$name}),
             background-color: $color,
             border: $color,
         )), $_theme );

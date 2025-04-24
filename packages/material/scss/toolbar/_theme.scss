@@ -12,34 +12,34 @@
     .k-toolbar-popup {
 
         .k-button-solid-base {
-            background-color: k-color( base-subtle );
-            border-color: k-color( base-subtle );
+            background-color: k-color(base-subtle);
+            border-color: k-color(base-subtle);
 
             // Hover state
             &:hover,
             &.k-hover {
-                background-color: k-color( base-subtle-hover );
-                border-color: k-color( base-subtle-hover );
+                background-color: k-color(base-subtle-hover);
+                border-color: k-color(base-subtle-hover);
             }
 
             // Focus state
             &:focus,
             &.k-focus {
-                background-color: k-color( base-subtle-hover );
-                border-color: k-color( base-subtle-hover );
+                background-color: k-color(base-subtle-hover);
+                border-color: k-color(base-subtle-hover);
             }
 
             // Active state
             &:active,
             &.k-active {
-                background-color: k-color( base-subtle-active );
-                border-color: k-color( base-subtle-active );
+                background-color: k-color(base-subtle-active);
+                border-color: k-color(base-subtle-active);
             }
 
             // Selected state
             &.k-selected {
-                background-color: k-color( base-subtle-active );
-                border-color: k-color( base-subtle-active );
+                background-color: k-color(base-subtle-active);
+                border-color: k-color(base-subtle-active);
             }
 
             &.k-input-button,

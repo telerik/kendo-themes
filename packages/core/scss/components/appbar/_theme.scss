@@ -24,7 +24,7 @@
                 color: $kendo-appbar-dark-text;
                 background-color: $kendo-appbar-dark-bg;
             } @else {
-                color: k-color( on-#{$name} );
+                color: k-color(on-#{$name});
                 background-color: $color;
             }
         }

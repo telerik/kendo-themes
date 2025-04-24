@@ -35,13 +35,13 @@ $kendo-drag-clue-opacity: .8 !default;
 
 /// Text color of the drag clue.
 /// @group draggable
-$kendo-drag-clue-text: k-color( on-base ) !default;
+$kendo-drag-clue-text: k-color(on-base) !default;
 /// Background color of the drag clue.
 /// @group draggable
-$kendo-drag-clue-bg: k-color( base-active ) !default;
+$kendo-drag-clue-bg: k-color(base-active) !default;
 /// Border color of the drag clue.
 /// @group draggable
-$kendo-drag-clue-border: color-mix(in srgb, k-color( border-alt ) 76%, transparent) !default;
+$kendo-drag-clue-border: color-mix(in srgb, k-color(border-alt) 76%, transparent) !default;
 /// Gradient of the drag clue.
 /// @group draggable
 $kendo-drag-clue-gradient: null !default;
@@ -70,4 +70,4 @@ $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
 
 /// Background-color of the drop hint.
 /// @group draggable
-$kendo-drop-hint-bg: k-color( primary ) !default;
+$kendo-drop-hint-bg: k-color(primary) !default;

@@ -56,7 +56,7 @@ $kendo-orgchart-node-group-border-width: 1px !default;
 $kendo-orgchart-node-group-border-radius: k-border-radius(md) !default;
 /// The background color of the OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-bg: k-color( surface ) !default;
+$kendo-orgchart-node-group-bg: k-color(surface) !default;
 /// The text color of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-text: k-color(on-app-surface) !default;
@@ -69,7 +69,7 @@ $kendo-orgchart-node-group-border: k-color(border) !default;
 $kendo-orgchart-node-group-focus-border: $kendo-orgchart-node-group-border !default;
 /// The shadow of the focused OrgChart node group.
 /// @group orgchart
-$kendo-orgchart-node-group-focus-shadow: 0 2px 4px -1px color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), 0 4px 5px 0 color-mix(in srgb, k-color( on-app-surface ) 14%, transparent), 0 1px 10px 0 color-mix(in srgb, k-color( on-app-surface ) 12%, transparent) !default;
+$kendo-orgchart-node-group-focus-shadow: 0 2px 4px -1px color-mix(in srgb, k-color(on-app-surface) 20%, transparent), 0 4px 5px 0 color-mix(in srgb, k-color(on-app-surface) 14%, transparent), 0 1px 10px 0 color-mix(in srgb, k-color(on-app-surface) 12%, transparent) !default;
 
 /// The font size of the OrgChart node group title.
 /// @group orgchart

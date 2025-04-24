@@ -48,7 +48,7 @@ $kendo-form-legend-border-width: 0 0 2px !default;
 $kendo-form-legend-border-style: solid !default;
 /// The border color of the Form legend.
 /// @group form
-$kendo-form-legend-border-color: k-color( border ) !default;
+$kendo-form-legend-border-color: k-color(border) !default;
 /// The width of the Form legend.
 /// @group form
 $kendo-form-legend-width: 100% !default;
@@ -125,7 +125,7 @@ $kendo-inline-form-field-padding-y: calc( #{k-spacing(1)} + #{$kendo-input-borde
 
 /// The invalid text color of the Form.
 /// @group form
-$kendo-forms-invalid-color: k-color( error ) !default;
+$kendo-forms-invalid-color: k-color(error) !default;
 
 
 /// The horizontal margin of the optional label in the Form.
@@ -175,7 +175,7 @@ $kendo-form-field-info-margin: k-spacing(2) !default;
 $kendo-fieldset-legend-bg: null !default;
 /// The text color of the Form legend.
 /// @group form
-$kendo-fieldset-legend-text: k-color( on-app-surface ) !default;
+$kendo-fieldset-legend-text: k-color(on-app-surface) !default;
 /// The border color of the Form legend.
 /// @group form
 $kendo-fieldset-legend-border: null !default;

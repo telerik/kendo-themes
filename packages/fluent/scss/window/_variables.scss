@@ -72,13 +72,13 @@ $kendo-window-buttongroup-spacing: k-spacing(3) !default;
 
 /// The background color of the Window.
 /// @group window
-$kendo-window-bg: k-color( surface-alt ) !default;
+$kendo-window-bg: k-color(surface-alt) !default;
 /// The text color of the Window.
 /// @group window
-$kendo-window-text: k-color( on-app-surface ) !default;
+$kendo-window-text: k-color(on-app-surface) !default;
 /// The border color of the Window.
 /// @group window
-$kendo-window-border: k-color( primary ) !default;
+$kendo-window-border: k-color(primary) !default;
 /// The box shadow of the Window.
 /// @group window
 $kendo-window-shadow: var( --kendo-box-shadow-depth-8, none ) !default;
@@ -88,13 +88,13 @@ $kendo-window-focus-shadow: var( --kendo-box-shadow-depth-9, none ) !default;
 
 /// The background color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: k-color( surface-alt ) !default; // $kendo-component-header-bg
+$kendo-window-titlebar-bg: k-color(surface-alt) !default; // $kendo-component-header-bg
 /// The text color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-text: k-color( primary ) !default; // $kendo-component-header-text
+$kendo-window-titlebar-text: k-color(primary) !default; // $kendo-component-header-text
 /// The border color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-border: k-color( primary ) !default;
+$kendo-window-titlebar-border: k-color(primary) !default;
 
 /// The map of the width of the different Window sizes.
 /// @group window

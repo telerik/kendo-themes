@@ -82,14 +82,14 @@ $kendo-drawer-mini-initial-width: calc(2 * #{$kendo-drawer-item-padding-x} + #{$
 
 /// The background color of the hovered Drawer item.
 /// @group drawer
-$kendo-drawer-hover-bg: k-color( base-hover) !default;
+$kendo-drawer-hover-bg: k-color(base-hover) !default;
 /// The text color of the hovered Drawer item.
 /// @group drawer
 $kendo-drawer-hover-text: k-color(on-app-surface) !default;
 
 /// The background color of the focused Drawer item.
 /// @group drawer
-$kendo-drawer-focus-bg: k-color( base-hover) !default;
+$kendo-drawer-focus-bg: k-color(base-hover) !default;
 /// The box shadow of the focused Drawer item.
 /// @group drawer
 $kendo-drawer-focus-shadow: none !default;
@@ -103,7 +103,7 @@ $kendo-drawer-selected-text: k-color(secondary) !default;
 
 /// The background color of the selected and hovered Drawer item.
 /// @group drawer
-$kendo-drawer-selected-hover-bg: k-color( base-hover) !default;
+$kendo-drawer-selected-hover-bg: k-color(base-hover) !default;
 /// The text color of the selected and hovered Drawer item.
 /// @group drawer
 $kendo-drawer-selected-hover-text: k-color(secondary) !default;

@@ -9,7 +9,7 @@ $kendo-adaptive-content-bg: k-color(surface) !default;
 $kendo-adaptive-content-text: k-color(on-app-surface) !default;
 
 $kendo-adaptive-menu-bg: k-color(primary) !default;
-$kendo-adaptive-menu-text: k-color( on-primary ) !default;
+$kendo-adaptive-menu-text: k-color(on-primary) !default;
 
 $kendo-adaptive-menu-clear-text: k-color(primary) !default;
 
@@ -27,7 +27,7 @@ $kendo-adaptive-grid-sort-text: k-color(primary) !default;
 // Adaptive Scheduler
 $kendo-adaptive-scheduler-current-text: k-color(primary) !default;
 $kendo-adaptive-scheduler-base-text: inherit !default;
-$kendo-adaptive-scheduler-subtle-text: k-color( subtle ) !default;
+$kendo-adaptive-scheduler-subtle-text: k-color(subtle) !default;
 
 
 @forward "@progress/kendo-theme-core/scss/components/adaptive/_variables.scss" with (
