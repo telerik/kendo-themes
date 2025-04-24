@@ -1167,14 +1167,12 @@
         }
     }
 
-    .k-popup .k-multicheck-wrap {
+    .k-multicheck-wrap {
         margin: 0;
         padding: 0;
-        max-height: 300px;
         font-size: var( --kendo-grid-column-menu-multicheck-font-size, #{$kendo-grid-column-menu-multicheck-font-size} );
         line-height: var( --kendo-grid-column-menu-multicheck-line-height, #{$kendo-grid-column-menu-multicheck-line-height} );
         white-space: nowrap;
-        overflow: auto;
         list-style: none;
 
         .k-item,

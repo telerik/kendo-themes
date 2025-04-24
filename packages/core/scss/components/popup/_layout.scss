@@ -79,6 +79,11 @@
         overflow-y: auto;
     }
 
+    .k-popup .k-multicheck-wrap {
+        max-height: 300px;
+        overflow: auto;
+    }
+
     // Legacy shadow
     .k-shadow {
         box-shadow: $kendo-popup-shadow;
