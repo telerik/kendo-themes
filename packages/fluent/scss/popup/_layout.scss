@@ -71,4 +71,10 @@
         box-shadow: none;
     }
 
+    .k-popup .k-column-list {
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
 }
