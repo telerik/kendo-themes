@@ -6,11 +6,11 @@
     "version": "5.1.2-dev.7",
     "api": "modern",
     "previewColors": [
-        "#ffffff",
-        "#f5f5f5",
-        "#ff6358",
-        "#d6534a",
-        "#424242"
+        "#1b1a19",
+        "#21201f",
+        "#2899f5",
+        "#a19f9d",
+        "#f3f2f1"
     ],
     "components": [],
     "groups": [
@@ -762,7 +762,7 @@
                     "type": "color",
                     "value": "#006635"
                 }
-            }               
+            }
         }
     ]
 }

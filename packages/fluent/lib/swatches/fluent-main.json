@@ -7,10 +7,10 @@
     "api": "modern",
     "previewColors": [
         "#ffffff",
-        "#f5f5f5",
-        "#ff6358",
-        "#d6534a",
-        "#424242"
+        "#faf9f8",
+        "#0078d4",
+        "#979593",
+        "#323130"
     ],
     "components": [],
     "groups": [
