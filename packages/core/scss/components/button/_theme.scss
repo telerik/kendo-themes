@@ -90,8 +90,8 @@
 
             .k-button-solid-#{$name} {
                 @include fill(
-                    $_button-text,
-                    $_button-bg,
+                    var( --kendo-button-solid-#{$name}-text, #{$_button-text} ),
+                    var( --kendo-button-solid-#{$name}-bg, #{$_button-bg} ),
                     $_button-border,
                     $kendo-solid-button-gradient
                 );
@@ -331,10 +331,24 @@
     // Button group
     .k-button-group {}
 
-
 }
 
 
 @mixin kendo-button--theme() {
     @include kendo-button--theme-base();
+
+    /* @each $fill-mode, $theme-colors in $kendo-button-theme-colors {
+        @each $theme-color, $color-props in $theme-colors {
+            $_text-color: map.get( $color-props, text );
+            $_bg: map.get( $color-props, bg );
+            $_border-color: map.get( $color-props, border );
+
+            .k-button-#{$fill-mode}-#{$theme-color} {
+
+                --kendo-button-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );
+                --kendo-button-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
+                --kendo-button-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-border, #{$_border-color} );
+            }
+        }
+    } */
 }

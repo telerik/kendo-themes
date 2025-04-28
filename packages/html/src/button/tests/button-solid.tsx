@@ -5,6 +5,10 @@ const styles = `
     #test-area {
         grid-template-columns: 120px repeat(6, 1fr);
     }
+
+    :root {
+        --kendo-button-solid-primary-bg: purple;
+    }
 `;
 
 export default () => (

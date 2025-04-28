@@ -272,6 +272,24 @@ $kendo-flat-button-focus-ring-opacity: .12 !default;
 /// @group button
 $kendo-button-transition: color .2s ease-in-out !default;
 
+
+/* $kendo-button-brand-colors: (
+    primary: primary,
+    error: error,
+    success: success,
+    info: info,
+    secondary: secondary,
+    tertiary: tertiary,
+) !default;
+
+$_tc-brand-matrix: (
+    solid: (
+        normal: (color, on-color, border),
+        hover: (color-hover, on-color, border),
+    )
+) !default; */
+
+
 @forward "@progress/kendo-theme-core/scss/components/button/_variables.scss" with (
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-border-radius: $kendo-button-border-radius,
@@ -362,5 +380,18 @@ $kendo-button-transition: color .2s ease-in-out !default;
     $kendo-flat-button-active-opacity: $kendo-flat-button-active-opacity,
     $kendo-flat-button-selected-opacity: $kendo-flat-button-selected-opacity,
     $kendo-flat-button-focus-ring-opacity: $kendo-flat-button-focus-ring-opacity,
-    $kendo-button-transition: $kendo-button-transition
+    $kendo-button-transition: $kendo-button-transition,
+    // $kendo-button-brand-colors: $kendo-button-brand-colors,
+    // $_tc-brand-matrix: $_tc-brand-matrix
 );
+
+// The map for the brand theme colors
+
+/* @each $fill-mode, $ui-states in $_tc-brand-matrix {
+    @each $brand-color, $palette in $kendo-button-brand-colors {
+        $kendo-button-theme-colors: map.deep-merge(
+            $kendo-button-theme-colors,
+            k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
+        )
+    }
+} */

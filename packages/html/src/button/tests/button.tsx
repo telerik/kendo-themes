@@ -4,6 +4,10 @@ const styles = `
     #test-area {
         grid-template-columns: 120px repeat(6, 1fr);
     }
+
+    :root {
+        --kendo-button-border-width: 5px;
+    }
 `;
 
 export default () => (
