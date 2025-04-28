@@ -52,6 +52,13 @@
         }
     }
 
+    .k-grid-footer {
+        td,
+        .k-table-td {
+            border-block-end-width: 0;
+        }
+    }
+
     .k-cell-inner {
         .k-grid-filter,
         .k-header-column-menu,

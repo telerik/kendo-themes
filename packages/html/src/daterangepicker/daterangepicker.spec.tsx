@@ -4,7 +4,7 @@ import { FloatingLabel } from '../floating-label';
 import { Button } from '../button';
 import { MultiViewCalendarNormal } from '../multiviewcalendar';
 import { Popup } from '../popup';
-import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
+import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 import { Input } from '../input';
 
 export const DATERANGEPICKER_CLASSNAME = `k-daterangepicker`;
@@ -120,6 +120,12 @@ export const DateRangePicker = (
                             title={adaptiveTitle}
                             subtitle={adaptiveSubtitle}
                         />
+                    }
+                    footer={
+                        <ActionSheetFooter>
+                            <Button text="Cancel" size="large" themeColor="base" className="k-time-cancel" />
+                            <Button text="Set" size="large" themeColor="primary" className="k-time-accept" />
+                        </ActionSheetFooter>
                     }
                 >
                     <div className="k-scrollable-wrap">
