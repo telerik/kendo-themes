@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-header-bg</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f8f9fa)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-upload-dropzone-bg, .2 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-status-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-icon-color</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-progress-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-info</code></td>
+    <td><code>k-color(info)</code></td>
     <td><code>var(--kendo-color-info, #0dcaf0)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-text</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #198754)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #198754)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-text</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #dc3545)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #dc3545)</code></td>
 </tr>
 <tr>

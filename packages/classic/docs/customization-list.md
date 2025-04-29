@@ -289,7 +289,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -299,7 +299,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
 </tr>
 <tr>
@@ -389,7 +389,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-hover-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
@@ -429,7 +429,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -439,7 +439,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -489,7 +489,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-option-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #666666)</code></td>
 </tr>
 <tr>

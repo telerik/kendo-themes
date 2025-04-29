@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-border</td>
     <td>String</td>
-    <td><code>$kendo-base-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-pane-header-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-indicator-bg</td>
     <td>String</td>
-    <td><code>$kendo-base-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-indicator-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), color.mix( $kendo-color-white, $kendo-color-primary, 8% ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #3a4ba7)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 16%, transparent), rgba( $kendo-color-primary, .16 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-dock-preview-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>

@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-prompt-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-header-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-header-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-content-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-content-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-header-bg</code></td>
+    <td><code>k-color(surface)!default</code></td>
     <td><code>var(--kendo-color-surface, #fafafa)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-content-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-suggestion-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-suggestion-bg</td>
     <td>String</td>
-    <td><code>$kendo-body-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-prompt-suggestion-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>

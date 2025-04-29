@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>List</td>
-    <td><code>$kendo-toolbar-bg, if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-surface-alt, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-outline-scroll-overlay</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-flat-shadow</td>
     <td>List</td>
-    <td><code>0 2px 0 -1px $kendo-component-border</code></td>
+    <td><code>0 2px 0 -1px k-color(border)</code></td>
     <td><code>(0 2px 0 -1px var(--kendo-color-border, rgba(0, 0, 0, 0.12)))</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-flat-scroll-overlay</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>

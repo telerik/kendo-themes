@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-nonwork-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 3%, transparent), rgba( k-contrast-color( $kendo-gantt-bg ), .025 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-base) 3%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-base, #212529) 3%, transparent)</code></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-line-fill</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-base ), color.mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(on-base)</code></td>
     <td><code>var(--kendo-color-on-base, #212529)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-line-selected-fill</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-milestone-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), if( k-is-light( $kendo-gantt-bg ), #dee2e6, #495057 ))</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-milestone-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-gantt-milestone-bg, 2 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-milestone-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-milestone-selected-border</td>
     <td>String</td>
-    <td><code>$kendo-selected-border</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), color.mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), color.mix( $kendo-selected-bg, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
     <td><code>var(--kendo-color-primary-subtle-active, #9ec5fe)</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-progress-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), if( k-is-light( $kendo-gantt-bg ), #dee2e6, #495057 ))</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base, #dee2e6)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-gantt-task-bg ))</code></td>
+    <td><code>k-color(on-base)</code></td>
     <td><code>var(--kendo-color-on-base, #212529)</code></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-gantt-bg ), #ced4da, #6c757d ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-gantt-bg ), #ced4da, #6c757d ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle-active ), color.mix( $kendo-selected-bg, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(primary-subtle-active)</code></td>
     <td><code>var(--kendo-color-primary-subtle-active, #9ec5fe)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-selected-border</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-progress-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -630,7 +630,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -650,7 +650,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #dc3545)</code></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-bg-lighter</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-emphasis ), k-color-tint( $kendo-gantt-delayed-bg, 5 ))</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
     <td><code>var(--kendo-color-error-emphasis, rgba(220, 53, 69, 0.4))</code></td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-advanced-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #198754)</code></td>
 </tr>
 <tr>
@@ -680,7 +680,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-advanced-bg-lighter</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success-emphasis ), k-color-tint( $kendo-gantt-advanced-bg, 5 ))</code></td>
+    <td><code>k-color(success-emphasis)</code></td>
     <td><code>var(--kendo-color-success-emphasis, rgba(25, 135, 84, 0.4))</code></td>
 </tr>
 <tr>
@@ -740,7 +740,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-valid-border</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #198754)</code></td>
 </tr>
 <tr>
@@ -750,7 +750,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #dc3545)</code></td>
 </tr>
 <tr>

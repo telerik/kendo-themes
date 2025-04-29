@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-text</td>
     <td>String</td>
-    <td><code>$kendo-link-text</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-panelbar-header-bg, .5 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 1.5 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 2 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-secondary)</code></td>
     <td><code>var(--kendo-color-on-secondary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-hover ), k-try-tint($kendo-panelbar-header-selected-bg, .95))</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
     <td><code>var(--kendo-color-secondary-hover, #d31857)</code></td>
 </tr>
 <tr>
@@ -450,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-header-selected-bg, 3))</code></td>
+    <td><code>k-color(secondary-active)</code></td>
     <td><code>var(--kendo-color-secondary-active, #c01650)</code></td>
 </tr>
 <tr>
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-header-selected-bg, 3.95))</code></td>
+    <td><code>k-color(secondary-active)</code></td>
     <td><code>var(--kendo-color-secondary-active, #c01650)</code></td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-panelbar-bg, .5 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -570,7 +570,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 1.5 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -620,7 +620,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 2 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-secondary)</code></td>
     <td><code>var(--kendo-color-on-secondary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -700,7 +700,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-hover ), k-try-tint($kendo-panelbar-item-selected-bg, .95))</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
     <td><code>var(--kendo-color-secondary-hover, #d31857)</code></td>
 </tr>
 <tr>
@@ -740,7 +740,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-item-selected-bg, 3))</code></td>
+    <td><code>k-color(secondary-active)</code></td>
     <td><code>var(--kendo-color-secondary-active, #c01650)</code></td>
 </tr>
 <tr>
@@ -780,7 +780,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-item-selected-bg, 3.95))</code></td>
+    <td><code>k-color(secondary-active)</code></td>
     <td><code>var(--kendo-color-secondary-active, #c01650)</code></td>
 </tr>
 <tr>

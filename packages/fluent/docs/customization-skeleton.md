@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 23%, transparent), k-get-theme-color-var( neutral-50 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 23%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 23%, transparent)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-wave-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base, #ffffff)</code></td>
 </tr>
 <tr>

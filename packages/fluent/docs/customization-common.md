@@ -183,7 +183,7 @@ The following table lists the available variables for customization.
     <td>$kendo-tooltip-brand-colors</td>
     <td>Map</td>
     <td><code>(
-    secondary: if($kendo-enable-color-system, secondary, neutral),
+    secondary: secondary,
     tertiary: tertiary,
     success: success,
     warning: warning,

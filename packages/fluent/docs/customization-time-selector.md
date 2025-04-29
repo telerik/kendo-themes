@@ -70,8 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the time-selector.</div></div>
@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the time-selector.</div></div>
@@ -90,8 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-selector-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the time-selector.</div></div>
@@ -200,8 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-time-list-title-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the time-selector titles.</div></div>
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-title-focus-text</td>
     <td>String</td>
     <td><code>$kendo-time-selector-text</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the focused time-selector titles.</div></div>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-highlight-bg</td>
     <td>String</td>
     <td><code>$kendo-time-selector-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selected item in the time-selector.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-time-list-highlight-border</td>
     <td>String</td>
     <td><code>$kendo-time-selector-border</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selected item in the time-selector.</div></div>

@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-focus-ring</td>
     <td>List</td>
-    <td><code>0 0 3px 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 25%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 ))</code></td>
+    <td><code>0 0 3px 1px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
     <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 25%, transparent))</code></td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), k-try-shade( $kendo-switch-off-track-bg ))</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -294,7 +294,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-gradient</td>
     <td>Null</td>
-    <td><code>$kendo-base-gradient</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -304,7 +304,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-switch-off-thumb-bg ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #dddddd)</code></td>
 </tr>
 <tr>
@@ -344,7 +344,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -354,7 +354,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -364,7 +364,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -464,7 +464,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-focus-ring</td>
     <td>List</td>
-    <td><code>0 0 3px 1px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 25%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 ))</code></td>
+    <td><code>0 0 3px 1px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
     <td><code>(0 0 3px 1px color-mix(in srgb, var(--kendo-color-on-app-surface, #272727) 25%, transparent))</code></td>
 </tr>
 <tr>
@@ -514,7 +514,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -534,7 +534,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-try-shade( $kendo-switch-on-thumb-bg ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -544,7 +544,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-gradient</td>
     <td>Null</td>
-    <td><code>$kendo-base-gradient</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -554,7 +554,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-switch-on-thumb-bg ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
@@ -574,7 +574,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-switch-on-thumb-hover-bg ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>

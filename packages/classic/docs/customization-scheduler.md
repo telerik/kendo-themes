@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-color-tint( $kendo-selected-bg, 2 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-event-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-nonwork-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-scheduler-bg, .5 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #f0f0f0)</code></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-othermonth-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-scheduler-bg, .5 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #f0f0f0)</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-yearview-indicator-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-yearview-indicator-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-tooltip-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-tooltip-text</td>
     <td>String</td>
-    <td><code>$kendo-base-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>

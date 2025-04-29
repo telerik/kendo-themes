@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-header-cell-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-today-color</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -570,7 +570,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-hover-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-hover-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-calendar-cell-selected-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -640,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-calendar-cell-selected-bg, .5 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #3a4ba7)</code></td>
 </tr>
 <tr>
@@ -720,7 +720,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-true-mix( $kendo-calendar-text, $kendo-calendar-bg, 3))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>

@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( base-subtle ) 65%, transparent), k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% ))</code></td>
+    <td><code>color-mix(in srgb, k-color(base-subtle) 65%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-base-subtle, #e9ecef) 65%, transparent)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 65%, transparent), k-true-mix( $kendo-button-text, $kendo-body-bg, 65% ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-base) 65%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-base, #212529) 65%, transparent)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( border ) 15%, transparent), k-true-mix( $kendo-button-border, $kendo-body-bg, 65% ))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 15%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-border, rgba(33, 37, 41, 0.13)) 15%, transparent)</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), $kendo-button-bg)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #e9ecef)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-timeline-flag-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-circle-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>

@@ -445,7 +445,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -455,8 +455,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
@@ -465,7 +465,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -475,8 +475,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered FAB item.</div></div>
@@ -485,8 +485,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered FAB item.</div></div>
@@ -495,7 +495,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -505,7 +505,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -515,8 +515,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-focus-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, inherit )</code></td>
-    <td><code>var(--kendo-component-bg, inherit)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused FAB item.</div></div>
@@ -525,7 +525,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>
@@ -535,8 +535,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-active-text</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-text, inherit )</code></td>
-    <td><code>var(--kendo-selected-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the active FAB item.</div></div>
@@ -545,8 +545,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-active-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, inherit )</code></td>
-    <td><code>var(--kendo-selected-bg, inherit)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the active FAB item.</div></div>
@@ -555,7 +555,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-active-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #8a8886)</code></td>
 </tr>
 <tr>

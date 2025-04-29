@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-text</td>
     <td>String</td>
-    <td><code>$kendo-link-text</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-link-hover-text</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 25%, transparent), rgba( $kendo-breadcrumb-text, .25 ))</code></td>
+    <td><code>inset 0 0 0 3px color-mix(in srgb, k-color(on-app-surface) 25%, transparent)</code></td>
     <td><code>(inset 0 0 0 3px color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 25%, transparent))</code></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-root-link-text</td>
     <td>String</td>
-    <td><code>$kendo-link-text</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-root-link-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-link-hover-text</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #0c64e4)</code></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-current-item-text</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #6c757d)</code></td>
 </tr>
 <tr>

@@ -236,7 +236,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-checked-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -476,7 +476,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-ripple-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>

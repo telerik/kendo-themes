@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-base-bg, 1 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-text</td>
     <td>String</td>
-    <td><code>$kendo-base-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-border</td>
     <td>String</td>
-    <td><code>$kendo-base-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-dropzone-text, 4 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-icon-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-note-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>

@@ -249,7 +249,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-base-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), $kendo-button-bg)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -261,10 +261,10 @@ The following table lists the available variables for customization.
     <td>Map</td>
     <td><code>(
     "base": $kendo-chip-base-bg,
-    "error": map.get($kendo-theme-colors, "error"),
-    "info": map.get($kendo-theme-colors, "info"),
-    "warning": map.get($kendo-theme-colors, "warning"),
-    "success": map.get($kendo-theme-colors, "success")
+    "error": k-color(error),
+    "info": k-color(info),
+    "warning": k-color(warning),
+    "success": k-color(success)
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base-subtle, #ebebeb)</li><li>error: var(--kendo-color-error, #f31700)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>success: var(--kendo-color-success, #37b400)</li></ul></td>
 </tr>
@@ -305,7 +305,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) ))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
 </tr>
 <tr>
@@ -345,7 +345,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), $kendo-button-hover-bg)</code></td>
+    <td><code>k-color(base-subtle-hover)</code></td>
     <td><code>var(--kendo-color-base-subtle-hover, #e0e0e0)</code></td>
 </tr>
 <tr>
@@ -385,7 +385,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -395,7 +395,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-chip-solid-text)</code></td>
+    <td><code>k-color(base-on-surface)</code></td>
     <td><code>var(--kendo-color-base-on-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) ))</code></td>
+    <td><code>0 0 0 2px color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
     <td><code>(0 0 0 2px color-mix(in srgb, var(--kendo-color-on-app-surface, #3d3d3d) 8%, transparent))</code></td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $kendo-chip-outline-hover-bg ))</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base, #f5f5f5)</code></td>
 </tr>
 <tr>

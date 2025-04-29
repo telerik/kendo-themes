@@ -275,7 +275,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -285,7 +285,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-dark)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -295,7 +295,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), #ced4da)</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(33, 37, 41, 0.2))</code></td>
 </tr>
 <tr>
@@ -375,7 +375,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-color-tint( $kendo-color-primary, 50% ) )</code></td>
+    <td><code>k-color(primary-emphasis)</code></td>
     <td><code>var(--kendo-color-primary-emphasis, rgba(13, 110, 253, 0.4))</code></td>
 </tr>
 <tr>
@@ -385,7 +385,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>
@@ -475,7 +475,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-text</td>
     <td>String</td>
-    <td><code>$kendo-base-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212529)</code></td>
 </tr>
 <tr>
@@ -485,7 +485,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 50%, transparent), color-mix(in srgb, $kendo-base-text 50%, transparent))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 50%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212529) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -665,7 +665,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-placeholder-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -785,7 +785,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-separator-text</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(33, 37, 41, 0.13))</code></td>
 </tr>
 <tr>
@@ -805,7 +805,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-prefix-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -815,7 +815,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-suffix-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -825,7 +825,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-invalid-border</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #dc3545)</code></td>
 </tr>
 <tr>
@@ -835,7 +835,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-invalid-shadow</td>
     <td>List</td>
-    <td><code>$kendo-invalid-shadow</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(error) 25%, transparent)</code></td>
     <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-error, #dc3545) 25%, transparent))</code></td>
 </tr>
 <tr>

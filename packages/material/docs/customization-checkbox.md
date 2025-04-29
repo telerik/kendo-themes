@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 44%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-checked-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-checked-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-component-bg, 4 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-disabled-checked-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-invalid-text</td>
     <td>String</td>
-    <td><code>$kendo-invalid-text</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-invalid-border</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-ripple-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>

@@ -140,8 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the action sheet.</div></div>
@@ -150,8 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, initial )</code></td>
-    <td><code>var(--kendo-component-text, initial)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the action sheet.</div></div>
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the action sheet.</div></div>
@@ -270,8 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-header-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the action sheet header.</div></div>
@@ -310,8 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-subtitle-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the action sheet subtitle.</div></div>
@@ -350,8 +350,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-footer-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, initial )</code></td>
-    <td><code>var(--kendo-component-border, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the action sheet footer.</div></div>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-icon-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-110 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -460,8 +460,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-description-text</td>
     <td>String</td>
-    <td><code>var( --kendo-subtle-text, inherit )</code></td>
-    <td><code>var(--kendo-subtle-text, inherit)</code></td>
+    <td><code>k-color(subtle)</code></td>
+    <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the action sheet item description.</div></div>
@@ -470,8 +470,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, inherit )</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the action sheet item.</div></div>
@@ -480,8 +480,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the action sheet item.</div></div>
@@ -551,7 +551,7 @@ The following table lists the available variables for customization.
     <td>$kendo-actionsheet-item-focus-hover-bg</td>
     <td>String</td>
     <td><code>$kendo-actionsheet-item-hover-bg</code></td>
-    <td><code>var(--kendo-hover-bg, inherit)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus and hover background color of the action sheet item.</div></div>
@@ -561,7 +561,7 @@ The following table lists the available variables for customization.
     <td>$kendo-actionsheet-item-focus-hover-text</td>
     <td>String</td>
     <td><code>$kendo-actionsheet-item-hover-text</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus and hover text color of the action sheet item.</div></div>
@@ -581,7 +581,7 @@ The following table lists the available variables for customization.
     <td>$kendo-actionsheet-item-disabled-bg</td>
     <td>String</td>
     <td><code>$kendo-actionsheet-bg</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Disabled background color of the action sheet item.</div></div>
@@ -590,8 +590,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actionsheet-item-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, inherit )</code></td>
-    <td><code>var(--kendo-disabled-text, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Disabled text color of the action sheet item.</div></div>
@@ -599,9 +599,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-actionsheet-item-disabled-border</td>
-    <td>String</td>
-    <td><code>var( --kendo-disabled-border, inherit )</code></td>
-    <td><code>var(--kendo-disabled-border, inherit)</code></td>
+    <td>Color</td>
+    <td><code>transparent</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Disabled border color of the action sheet item.</div></div>

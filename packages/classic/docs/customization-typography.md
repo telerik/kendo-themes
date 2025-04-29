@@ -1019,7 +1019,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-bg</td>
     <td>String</td>
-    <td><code>$kendo-base-bg</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f0f0f0)</code></td>
 </tr>
 <tr>
@@ -1029,7 +1029,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #272727)</code></td>
 </tr>
 <tr>
@@ -1039,7 +1039,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-code-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, #cacaca)</code></td>
 </tr>
 <tr>

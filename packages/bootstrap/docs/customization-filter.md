@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-filter-preview-field-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0d6efd)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-filter-preview-operator-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ) , $kendo-subtle-text)</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #596169)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-filter-toolbar-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>0 0 0 .25rem color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>(0 0 0 0.25rem color-mix(in srgb, var(--kendo-color-primary, #0d6efd) 25%, transparent))</code></td>
 </tr>
 <tr>

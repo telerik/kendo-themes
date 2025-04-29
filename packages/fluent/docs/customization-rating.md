@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-rating-item-selected-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #005a9e)</code></td>
 </tr>
 <tr>

@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tooltip-bg</td>
-    <td>Color</td>
-    <td><code>material-color( gray, 700, .9 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9)"></span><code>rgba(97, 97, 97, 0.9)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 70%, transparent 30%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 70%, transparent 30%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default background of the Tooltip.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tooltip-text</td>
-    <td>Color</td>
-    <td><code>get-base-contrast( gray, 700 )</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td>String</td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default text color of the Tooltip.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tooltip-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-tooltip-bg</code></td>
-    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9)"></span><code>rgba(97, 97, 97, 0.9)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 70%, transparent 30%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border color of the Tooltip.</div></div>
@@ -170,7 +170,18 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-theme-colors</td>
     <td>Map</td>
-    <td><code>$kendo-theme-colors</code></td>
+    <td><code>(
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+)</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>secondary: var(--kendo-color-secondary, #e51a5f)</li><li>tertiary: var(--kendo-color-tertiary, #00695c)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>success: var(--kendo-color-success, #37b400)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>error: var(--kendo-color-error, #f31700)</li><li>dark: var(--kendo-color-dark, #424242)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>inverse: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>
 <tr>

@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-outline-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 50%, transparent), rgba( $kendo-picker-outline-text, .5))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-base) 50%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-base, #3d3d3d) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-outline-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), k-contrast-legacy( $kendo-picker-outline-hover-bg ))</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-flat-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 4%, transparent), rgba( $kendo-button-text, .04 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-base) 4%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-base, #3d3d3d) 4%, transparent)</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-flat-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), rgba( $kendo-button-border, .16 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.16))</code></td>
 </tr>
 <tr>

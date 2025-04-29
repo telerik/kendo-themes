@@ -44,31 +44,11 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-navigation-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-link-hover-text</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
     <td><code>var(--kendo-color-secondary-hover, #d31857)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered items in the Calendar navigation.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$elevation</td>
-    <td>Color</td>
-    <td><code>map.get($theme, elevation)</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of shadows</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-tertiary</td>
-    <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(tertiary), material-color($tertiary-palette, main))</code></td>
-    <td><code>var(--kendo-color-tertiary, #00695c)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Tertiary colors</div></div>
     </td>
 </tr>
 <tr>
@@ -133,7 +113,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-treeview-item-selected-focus-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -143,7 +123,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-treeview-item-selected-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 7%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 7%, transparent)</code></td>
 </tr>
 <tr>
@@ -343,7 +323,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-light-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-light</code></td>
+    <td><code>k-color(light)</code></td>
     <td><code>var(--kendo-color-light, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -353,7 +333,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-light-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-light ), k-contrast-color( $kendo-color-light ))</code></td>
+    <td><code>k-color(on-light)</code></td>
     <td><code>var(--kendo-color-on-light, #000000)</code></td>
 </tr>
 <tr>
@@ -363,7 +343,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-dark-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-dark</code></td>
+    <td><code>k-color(dark)</code></td>
     <td><code>var(--kendo-color-dark, #424242)</code></td>
 </tr>
 <tr>
@@ -373,7 +353,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-dark-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-dark ), k-contrast-color( $kendo-color-dark ))</code></td>
+    <td><code>k-color(on-dark)</code></td>
     <td><code>var(--kendo-color-on-dark, #ffffff)</code></td>
 </tr>
 <tr>
@@ -477,7 +457,18 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-avatar-theme-colors</td>
     <td>Map</td>
-    <td><code>$kendo-theme-colors</code></td>
+    <td><code>(
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+)</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>secondary: var(--kendo-color-secondary, #e51a5f)</li><li>tertiary: var(--kendo-color-tertiary, #00695c)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>success: var(--kendo-color-success, #37b400)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>error: var(--kendo-color-error, #f31700)</li><li>dark: var(--kendo-color-dark, #424242)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>inverse: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>
 <tr>
@@ -1059,7 +1050,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-bottom-nav-flat-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -1069,7 +1060,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-bottom-nav-flat-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -1079,7 +1070,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-bottom-nav-flat-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -1249,7 +1240,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -1259,7 +1250,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -1269,7 +1260,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -1489,7 +1480,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-link-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -1509,7 +1500,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-link-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -1519,7 +1510,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-link-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -1539,7 +1530,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-link-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), map.get( $theme, focus-bg ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -1549,7 +1540,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-link-focus-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -1609,7 +1600,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-root-link-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -1639,7 +1630,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-root-link-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), map.get( $theme, focus-bg ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -2003,11 +1994,20 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-theme-colors</td>
     <td>Map</td>
-    <td><code>map.merge(
-    $kendo-theme-colors,
-    ( "base": $kendo-base-bg )
+    <td><code>(
+    "base": k-color(base),
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
 )</code></td>
-    <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>secondary: var(--kendo-color-secondary, #e51a5f)</li><li>tertiary: var(--kendo-color-tertiary, #00695c)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>success: var(--kendo-color-success, #37b400)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>error: var(--kendo-color-error, #f31700)</li><li>dark: var(--kendo-color-dark, #424242)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>inverse: var(--kendo-color-dark, #424242)</li><li>base: var(--kendo-color-app-surface, #ffffff)</li></ul></td>
+    <td><ul><li>base: var(--kendo-color-base, #ffffff)</li><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>secondary: var(--kendo-color-secondary, #e51a5f)</li><li>tertiary: var(--kendo-color-tertiary, #00695c)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>success: var(--kendo-color-success, #37b400)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>error: var(--kendo-color-error, #f31700)</li><li>dark: var(--kendo-color-dark, #424242)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>inverse: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>
@@ -2016,7 +2016,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base ), $kendo-base-bg)</code></td>
+    <td><code>k-color(base)</code></td>
     <td><code>var(--kendo-color-base, #ffffff)</code></td>
 </tr>
 <tr>
@@ -2026,7 +2026,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-base ), $kendo-base-text)</code></td>
+    <td><code>k-color(on-base)</code></td>
     <td><code>var(--kendo-color-on-base, #212121)</code></td>
 </tr>
 <tr>
@@ -2066,7 +2066,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), null)</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -2086,7 +2086,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), null)</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -2116,7 +2116,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-active-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), $kendo-base-bg)</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -2126,7 +2126,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-active-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-base ), $kendo-base-text)</code></td>
+    <td><code>k-color(on-base)</code></td>
     <td><code>var(--kendo-color-on-base, #212121)</code></td>
 </tr>
 <tr>
@@ -2136,7 +2136,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-active-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), null)</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -2216,7 +2216,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), null)</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -2236,7 +2236,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), null)</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -2266,7 +2266,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), k-try-shade( $kendo-body-bg, 12% ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 9%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 9%, transparent)</code></td>
 </tr>
 <tr>
@@ -2276,7 +2276,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), $kendo-disabled-text)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 32%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 32%, transparent)</code></td>
 </tr>
 <tr>
@@ -2286,7 +2286,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-disabled-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, transparent, $kendo-button-disabled-bg)</code></td>
+    <td><code>transparent</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -2446,7 +2446,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -2456,7 +2456,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -2466,7 +2466,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -2516,7 +2516,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -2526,7 +2526,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-header-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -2696,7 +2696,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-header-cell-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -2836,7 +2836,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-today-color</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -2926,7 +2926,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-cell-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -2936,7 +2936,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-cell-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-hover-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -2946,7 +2946,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-cell-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-hover-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -2966,7 +2966,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-cell-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -2976,7 +2976,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-cell-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-calendar-cell-selected-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -3006,7 +3006,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-cell-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-calendar-cell-selected-bg, .5 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #3a4ba7)</code></td>
 </tr>
 <tr>
@@ -3086,7 +3086,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-calendar-navigation-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-true-mix( $kendo-calendar-text, $kendo-calendar-bg, 3))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -3438,7 +3438,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-captcha-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -3448,7 +3448,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-captcha-text</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -3458,7 +3458,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-captcha-border</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -3628,7 +3628,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-card-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -3638,7 +3638,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-card-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -3648,7 +3648,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-card-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -3688,7 +3688,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-card-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -3968,7 +3968,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-card-subtitle-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -4108,7 +4108,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-chart-wizard-icon-area-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -4118,7 +4118,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-wizard-icon-area-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary-subtle), k-try-tint( $kendo-color-primary, 80% ))</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
     <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
 </tr>
 <tr>
@@ -4148,7 +4148,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-wizard-icon-area-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color(primary-emphasis), k-try-tint( $kendo-color-primary, 25% ))</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary-emphasis, #97a0d7))</code></td>
 </tr>
 <tr>
@@ -4168,7 +4168,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-wizard-chart-type-selected-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -4238,7 +4238,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-series-a</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-a ), get-base-hue( purple, 500 ))</code></td>
+    <td><code>k-color(series-a)</code></td>
     <td><code>var(--kendo-color-series-a, #9c27b0)</code></td>
 </tr>
 <tr>
@@ -4248,7 +4248,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-b</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-b ), get-base-hue( blue, 500 ))</code></td>
+    <td><code>k-color(series-b)</code></td>
     <td><code>var(--kendo-color-series-b, #2196f3)</code></td>
 </tr>
 <tr>
@@ -4258,7 +4258,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-c</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-c ), get-base-hue( teal, 500 ))</code></td>
+    <td><code>k-color(series-c)</code></td>
     <td><code>var(--kendo-color-series-c, #009688)</code></td>
 </tr>
 <tr>
@@ -4268,7 +4268,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-d</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-d ), get-base-hue( yellow, 500 ))</code></td>
+    <td><code>k-color(series-d)</code></td>
     <td><code>var(--kendo-color-series-d, #ffeb3b)</code></td>
 </tr>
 <tr>
@@ -4278,7 +4278,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-e</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-e ), get-base-hue( red, 500 ))</code></td>
+    <td><code>k-color(series-e)</code></td>
     <td><code>var(--kendo-color-series-e, #f44336)</code></td>
 </tr>
 <tr>
@@ -4288,7 +4288,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-f</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( series-f ), get-base-hue( green, 500 ))</code></td>
+    <td><code>k-color(series-f)</code></td>
     <td><code>var(--kendo-color-series-f, #4caf50)</code></td>
 </tr>
 <tr>
@@ -4308,7 +4308,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -4318,7 +4318,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 4%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 4%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 4%, transparent)</code></td>
 </tr>
 <tr>
@@ -4508,7 +4508,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-timestamp-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -4678,7 +4678,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-toolbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -4748,7 +4748,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-bg</td>
     <td>String</td>
-    <td><code>$kendo-app-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -4758,7 +4758,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -4768,7 +4768,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -4778,7 +4778,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-bubble-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -4788,7 +4788,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-bubble-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -4838,7 +4838,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-alt-bubble-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -4848,7 +4848,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-alt-bubble-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-chat-alt-bubble-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -4908,7 +4908,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-quick-reply-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -4918,7 +4918,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-quick-reply-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -4928,7 +4928,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-quick-reply-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -4938,7 +4938,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-quick-reply-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -4948,7 +4948,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chat-quick-reply-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -5128,7 +5128,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 44%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
 </tr>
 <tr>
@@ -5168,7 +5168,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-checked-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -5178,7 +5178,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-checked-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -5288,7 +5288,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-component-bg, 4 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #adadad)</code></td>
 </tr>
 <tr>
@@ -5308,7 +5308,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-disabled-checked-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -5338,7 +5338,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-invalid-text</td>
     <td>String</td>
-    <td><code>$kendo-invalid-text</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -5348,7 +5348,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-invalid-border</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -5458,7 +5458,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-ripple-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -5717,7 +5717,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-base-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -5729,10 +5729,10 @@ The following table lists the available variables for customizing the Material t
     <td>Map</td>
     <td><code>(
     "base": $kendo-chip-base-bg,
-    "error": map.get( $kendo-theme-colors, "error" ),
-    "info": map.get( $kendo-theme-colors, "info" ),
-    "warning": map.get( $kendo-theme-colors, "warning" ),
-    "success": map.get( $kendo-theme-colors, "success" )
+    "error": k-color(error),
+    "info": k-color(info),
+    "warning": k-color(warning),
+    "success": k-color(success)
 )</code></td>
     <td><ul><li>base: var(--kendo-color-base-subtle, #ebebeb)</li><li>error: var(--kendo-color-error, #f31700)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>success: var(--kendo-color-success, #37b400)</li></ul></td>
 </tr>
@@ -5743,7 +5743,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-solid-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $kendo-button-bg, k-try-tint( $kendo-chip-base-bg, 92% )))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -5793,7 +5793,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-solid-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 80% ))</code></td>
+    <td><code>k-color(base-subtle-active)</code></td>
     <td><code>var(--kendo-color-base-subtle-active, #c2c2c2)</code></td>
 </tr>
 <tr>
@@ -5813,7 +5813,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-solid-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-tint( $kendo-chip-base-bg, 84% ))</code></td>
+    <td><code>k-color(base-subtle-hover)</code></td>
     <td><code>var(--kendo-color-base-subtle-hover, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -5833,7 +5833,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-solid-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 76% ))</code></td>
+    <td><code>k-color(base-subtle-active)</code></td>
     <td><code>var(--kendo-color-base-subtle-active, #c2c2c2)</code></td>
 </tr>
 <tr>
@@ -5853,7 +5853,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -5863,7 +5863,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-on-surface ), $kendo-chip-solid-text)</code></td>
+    <td><code>k-color(base-on-surface)</code></td>
     <td><code>var(--kendo-color-base-on-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -5893,7 +5893,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-tint( $kendo-chip-base-bg, 92% ))</code></td>
+    <td><code>k-color(base-subtle-hover)</code></td>
     <td><code>var(--kendo-color-base-subtle-hover, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -5903,7 +5903,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $kendo-chip-outline-hover-bg ))</code></td>
+    <td><code>k-color(base-on-subtle)</code></td>
     <td><code>var(--kendo-color-base-on-subtle, #212121)</code></td>
 </tr>
 <tr>
@@ -5913,7 +5913,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 84% ))</code></td>
+    <td><code>k-color(base-subtle-active)</code></td>
     <td><code>var(--kendo-color-base-subtle-active, #c2c2c2)</code></td>
 </tr>
 <tr>
@@ -7022,7 +7022,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -7032,7 +7032,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -7042,7 +7042,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -7052,7 +7052,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-editor-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-hover-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -7594,7 +7594,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-gradient-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -7604,7 +7604,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-gradient-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -7614,7 +7614,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-gradient-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -7744,7 +7744,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-gradient-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-hover-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -8104,7 +8104,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-color-gradient-input-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -8479,9 +8479,9 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-dialog-theme-colors</td>
     <td>Map</td>
     <td><code>(
-    "primary": map.get($kendo-theme-colors, "primary"),
-    "light": map.get($kendo-theme-colors, "light"),
-    "dark": map.get($kendo-theme-colors, "dark")
+    "primary": k-color(primary),
+    "light": k-color(light),
+    "dark": k-color(dark)
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>dark: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>
@@ -8532,7 +8532,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-manager-border</td>
     <td>String</td>
-    <td><code>$kendo-base-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -8582,7 +8582,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-manager-pane-header-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -8732,7 +8732,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-indicator-bg</td>
     <td>String</td>
-    <td><code>$kendo-base-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -8742,7 +8742,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-indicator-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -8792,7 +8792,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), color.mix( $kendo-color-white, $kendo-color-primary, 8% ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #3a4ba7)</code></td>
 </tr>
 <tr>
@@ -8842,7 +8842,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 16%, transparent), rgba( $kendo-color-primary, .16 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 16%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 16%, transparent)</code></td>
 </tr>
 <tr>
@@ -8852,7 +8852,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-manager-dock-preview-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -8882,7 +8882,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-drawer-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -8892,7 +8892,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drawer-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -8902,7 +8902,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drawer-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -9112,7 +9112,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drawer-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -9122,7 +9122,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drawer-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-hover-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -9132,7 +9132,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drawer-focus-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -9162,7 +9162,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drawer-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -9172,7 +9172,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drawer-selected-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -9182,7 +9182,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-drawer-selected-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -9322,7 +9322,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-base-bg, 1 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -9332,7 +9332,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dropzone-text</td>
     <td>String</td>
-    <td><code>$kendo-base-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -9342,7 +9342,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dropzone-border</td>
     <td>String</td>
-    <td><code>$kendo-base-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -9362,7 +9362,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-dropzone-text, 4 ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -9372,7 +9372,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dropzone-icon-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -9432,7 +9432,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dropzone-note-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -9522,7 +9522,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-editor-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -9532,7 +9532,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-editor-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -9542,7 +9542,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), color.mix($kendo-color-primary, #ffffff, 20%))</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
     <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
 </tr>
 <tr>
@@ -9772,7 +9772,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-expander-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -9782,7 +9782,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-expander-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -9792,7 +9792,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-expander-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -9892,7 +9892,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-expander-title-text</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -9902,7 +9902,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-expander-header-sub-title-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -10012,7 +10012,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -10022,7 +10022,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -10032,7 +10032,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -10052,7 +10052,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-toolbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -10332,7 +10332,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-listview-item-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -10512,7 +10512,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-preview-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -10602,7 +10602,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-filter-preview-field-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -10612,7 +10612,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-filter-preview-operator-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -10932,7 +10932,18 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-fab-theme-colors</td>
     <td>Map</td>
-    <td><code>$kendo-theme-colors</code></td>
+    <td><code>(
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+)</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>secondary: var(--kendo-color-secondary, #e51a5f)</li><li>tertiary: var(--kendo-color-tertiary, #00695c)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>success: var(--kendo-color-success, #37b400)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>error: var(--kendo-color-error, #f31700)</li><li>dark: var(--kendo-color-dark, #424242)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>inverse: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>
 <tr>
@@ -10995,7 +11006,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-fab-item-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -11005,7 +11016,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-fab-item-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -11015,7 +11026,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-fab-item-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -11225,7 +11236,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-floating-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -11245,7 +11256,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-floating-label-focus-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -11395,7 +11406,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-form-legend-border-color</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -11855,7 +11866,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -11865,7 +11876,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -11875,7 +11886,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -11915,7 +11926,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-nonwork-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 3%, transparent), rgba( k-contrast-color( $kendo-gantt-bg ), .025 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-base) 3%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-base, #212121) 3%, transparent)</code></td>
 </tr>
 <tr>
@@ -11955,7 +11966,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-line-fill</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), color.mix( $kendo-gantt-text, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -11965,7 +11976,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-line-selected-fill</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -12035,7 +12046,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-milestone-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -12045,7 +12056,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-milestone-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -12055,7 +12066,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-milestone-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -12065,7 +12076,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-milestone-selected-border</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -12075,7 +12086,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(primary-emphasis)</code></td>
     <td><code>var(--kendo-color-primary-emphasis, #97a0d7)</code></td>
 </tr>
 <tr>
@@ -12085,7 +12096,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-summary-progress-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -12095,7 +12106,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), color.mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(secondary-subtle-active)</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active, #f79bb3)</code></td>
 </tr>
 <tr>
@@ -12105,7 +12116,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-summary-progress-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -12145,7 +12156,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), color.mix( $kendo-color-primary, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(primary-emphasis)</code></td>
     <td><code>var(--kendo-color-primary-emphasis, #97a0d7)</code></td>
 </tr>
 <tr>
@@ -12155,7 +12166,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-task-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -12175,7 +12186,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -12185,7 +12196,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-subtle-active ), color.mix( $kendo-color-secondary, $kendo-gantt-bg ))</code></td>
+    <td><code>k-color(secondary-subtle-active)</code></td>
     <td><code>var(--kendo-color-secondary-subtle-active, #f79bb3)</code></td>
 </tr>
 <tr>
@@ -12194,9 +12205,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-gantt-task-selected-text</td>
-    <td>String</td>
-    <td><code>$kendo-color-secondary-contrast</code></td>
-    <td><code>var(--kendo-color-on-secondary, #ffffff)</code></td>
+    <td>List</td>
+    <td><code>k-color(secondary)-contrast</code></td>
+    <td><code>(var(--kendo-color-secondary, #e51a5f) -contrast)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Gantt task.</div></div>
@@ -12215,7 +12226,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-task-progress-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -12415,7 +12426,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-planned-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -12435,7 +12446,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-delayed-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -12445,7 +12456,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-delayed-bg-lighter</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( error-emphasis ), k-color-tint($kendo-gantt-delayed-bg, 5))</code></td>
+    <td><code>k-color(error-emphasis)</code></td>
     <td><code>var(--kendo-color-error-emphasis, #fc8d83)</code></td>
 </tr>
 <tr>
@@ -12455,7 +12466,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-advanced-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #37b400)</code></td>
 </tr>
 <tr>
@@ -12465,7 +12476,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-advanced-bg-lighter</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( success-emphasis ), k-color-tint($kendo-gantt-advanced-bg, 5))</code></td>
+    <td><code>k-color(success-emphasis)</code></td>
     <td><code>var(--kendo-color-success-emphasis, #93d775)</code></td>
 </tr>
 <tr>
@@ -12525,7 +12536,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-validation-tooltip-valid-border</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #37b400)</code></td>
 </tr>
 <tr>
@@ -12535,7 +12546,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -12965,7 +12976,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-grid-row-resizer-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-base ) 20%, transparent), rgba( k-contrast-color( $kendo-grid-bg ), .24 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-base) 20%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-base, #212121) 20%, transparent)</code></td>
 </tr>
 <tr>
@@ -12975,7 +12986,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-grid-row-resizer-active-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -13380,7 +13391,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-component-bg, .5 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -13390,7 +13401,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -13400,7 +13411,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 44%, transparent), rgba( $kendo-component-border, .38 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 44%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 44%, transparent)</code></td>
 </tr>
 <tr>
@@ -13480,7 +13491,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -13520,7 +13531,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), k-try-shade( $kendo-component-bg, .25 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 3%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 3%, transparent)</code></td>
 </tr>
 <tr>
@@ -13530,7 +13541,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 27%, transparent), $kendo-disabled-text)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 27%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 27%, transparent)</code></td>
 </tr>
 <tr>
@@ -13540,7 +13551,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 3%, transparent), rgba( $kendo-component-border, math.div( color.alpha( $kendo-component-border ), 2 ) ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 3%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 3%, transparent)</code></td>
 </tr>
 <tr>
@@ -13770,7 +13781,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-placeholder-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -13890,7 +13901,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-separator-text</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -13910,7 +13921,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-prefix-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -13920,7 +13931,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-suffix-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -13930,7 +13941,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-invalid-border</td>
     <td>String</td>
-    <td><code>$kendo-invalid-border</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -13940,7 +13951,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-invalid-shadow</td>
     <td>Null</td>
-    <td><code>$kendo-invalid-shadow</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -14170,7 +14181,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14180,7 +14191,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -14190,7 +14201,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -14260,7 +14271,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-item-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -14270,7 +14281,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-item-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-hover-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -14310,7 +14321,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-item-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14320,7 +14331,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-color-secondary</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -14370,7 +14381,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-list-option-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -14480,7 +14491,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listbox-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -14490,7 +14501,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listbox-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14500,7 +14511,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listbox-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -14630,7 +14641,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listview-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -14640,7 +14651,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listview-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -14650,7 +14661,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listview-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -14690,7 +14701,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( k-contrast-color( $kendo-listview-bg ), .04 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -14720,7 +14731,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listview-item-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( k-contrast-color( $kendo-listview-bg ), .08 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -14980,7 +14991,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-loader-container-panel-border-color</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -15120,7 +15131,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-loading-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -15220,7 +15231,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-map-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -15230,7 +15241,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-map-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -15240,7 +15251,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-map-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -15360,7 +15371,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-map-attribution-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 80%, transparent), rgba( $kendo-map-bg, .8 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(app-surface) 80%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 80%, transparent)</code></td>
 </tr>
 <tr>
@@ -15370,7 +15381,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-map-marker-fill</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -15440,7 +15451,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-media-player-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -15450,7 +15461,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-media-player-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -15460,7 +15471,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-media-player-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -15520,7 +15531,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-media-player-titlebar-gradient</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, ( color-mix(in srgb, k-color( on-app-surface ) 70%, transparent), color-mix(in srgb, k-color( on-app-surface ) 0%, transparent) ), ( rgba( $kendo-media-player-text, .7 ), rgba( $kendo-media-player-text, 0 ) ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 70%, transparent), color-mix(in srgb, k-color(on-app-surface) 0%, transparent)</code></td>
     <td><code>(color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 70%, transparent), color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -15600,7 +15611,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-menu-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -15720,7 +15731,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-menu-item-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), rgba( $kendo-menu-text, $kendo-flat-button-hover-opacity * color.alpha( $kendo-menu-text ) ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -15760,7 +15771,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-menu-item-active-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( $kendo-menu-text, $kendo-flat-button-active-opacity * color.alpha( $kendo-menu-text ) ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -15850,7 +15861,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-menu-scroll-button-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -15860,7 +15871,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-menu-scroll-button-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -15950,7 +15961,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-menu-separator-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(border), $kendo-component-border)</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -16300,7 +16311,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-no-data-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -16410,7 +16421,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-notification-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -16420,7 +16431,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-notification-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -16430,7 +16441,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-notification-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -16460,7 +16471,18 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-notification-theme-colors</td>
     <td>Map</td>
-    <td><code>$kendo-theme-colors</code></td>
+    <td><code>(
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+)</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>secondary: var(--kendo-color-secondary, #e51a5f)</li><li>tertiary: var(--kendo-color-tertiary, #00695c)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>success: var(--kendo-color-success, #37b400)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>error: var(--kendo-color-error, #f31700)</li><li>dark: var(--kendo-color-dark, #424242)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>inverse: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>
 <tr>
@@ -16700,7 +16722,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -16710,7 +16732,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -16720,7 +16742,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -16800,7 +16822,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-node-group-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -16810,7 +16832,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-node-group-text</td>
     <td>String</td>
-    <td><code>$kendo-base-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -16820,7 +16842,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-node-group-border</td>
     <td>String</td>
-    <td><code>$kendo-base-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -16840,7 +16862,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-node-group-focus-shadow</td>
     <td>List</td>
-    <td><code>0 2px 4px -1px if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $elevation, .2 )), 0 4px 5px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 14%, transparent), rgba( $elevation, .14 )), 0 1px 10px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 12%, transparent), rgba( $elevation, .12 ))</code></td>
+    <td><code>0 2px 4px -1px color-mix(in srgb, k-color(on-app-surface) 20%, transparent), 0 4px 5px 0 color-mix(in srgb, k-color(on-app-surface) 14%, transparent), 0 1px 10px 0 color-mix(in srgb, k-color(on-app-surface) 12%, transparent)</code></td>
     <td><code>(0 2px 4px -1px color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 20%, transparent), 0 4px 5px 0 color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 14%, transparent), 0 1px 10px 0 color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 12%, transparent))</code></td>
 </tr>
 <tr>
@@ -17060,7 +17082,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-orgchart-line-fill</td>
     <td>String</td>
-    <td><code>$kendo-base-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -17140,7 +17162,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17150,7 +17172,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -17160,7 +17182,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -17170,7 +17192,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-toolbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .25 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -17210,7 +17232,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-canvas-bg</td>
     <td>String</td>
-    <td><code>$kendo-app-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17260,7 +17282,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-page-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -17270,7 +17292,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-page-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -17340,7 +17362,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-search-panel-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17350,7 +17372,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-search-panel-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -17360,7 +17382,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-search-panel-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -17400,7 +17422,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-search-highlight-bg</td>
     <td>String</td>
-    <td><code>$kendo-body-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -17450,7 +17472,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-highlight-annotation-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -17460,7 +17482,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-highlight-annotation-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), $kendo-color-primary-darker)</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #3a4ba7)</code></td>
 </tr>
 <tr>
@@ -17470,7 +17492,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-free-text-annotation-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color(primary), $kendo-color-primary)</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -17700,7 +17722,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pager-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -17710,7 +17732,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pager-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -17720,7 +17742,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pager-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -17730,7 +17752,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pager-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-pager-bg, .5 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -17850,7 +17872,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pager-item-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -17860,7 +17882,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pager-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -18312,7 +18334,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panel-text</td>
     <td>String</td>
-    <td><code>var(--kendo-component-text, #{$kendo-component-text})</code></td>
+    <td><code>var(--kendo-component-text, #{k-color(on-app-surface)})</code></td>
     <td><code>var(--kendo-component-text, var(--kendo-color-on-app-surface, #212121))</code></td>
 </tr>
 <tr>
@@ -18322,7 +18344,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panel-bg</td>
     <td>String</td>
-    <td><code>var(--kendo-component-bg, #{$kendo-component-bg})</code></td>
+    <td><code>var(--kendo-component-bg, #{k-color(surface-alt)})</code></td>
     <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
 </tr>
 <tr>
@@ -18332,7 +18354,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panel-border</td>
     <td>String</td>
-    <td><code>var(--kendo-component-border, #{$kendo-component-border})</code></td>
+    <td><code>var(--kendo-component-border, #{k-color(border)})</code></td>
     <td><code>var(--kendo-component-border, var(--kendo-color-border, rgba(0, 0, 0, 0.12)))</code></td>
 </tr>
 <tr>
@@ -18502,7 +18524,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -18512,7 +18534,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -18522,7 +18544,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -18542,7 +18564,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-text</td>
     <td>String</td>
-    <td><code>$kendo-link-text</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -18572,7 +18594,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-panelbar-header-bg, .5 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -18612,7 +18634,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 1.5 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -18662,7 +18684,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 2 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -18702,7 +18724,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -18712,7 +18734,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-secondary)</code></td>
     <td><code>var(--kendo-color-on-secondary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -18742,7 +18764,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-hover ), k-try-tint($kendo-panelbar-header-selected-bg, .95))</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
     <td><code>var(--kendo-color-secondary-hover, #d31857)</code></td>
 </tr>
 <tr>
@@ -18782,7 +18804,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-header-selected-bg, 3))</code></td>
+    <td><code>k-color(secondary-active)</code></td>
     <td><code>var(--kendo-color-secondary-active, #c01650)</code></td>
 </tr>
 <tr>
@@ -18822,7 +18844,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-header-selected-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-header-selected-bg, 3.95))</code></td>
+    <td><code>k-color(secondary-active)</code></td>
     <td><code>var(--kendo-color-secondary-active, #c01650)</code></td>
 </tr>
 <tr>
@@ -18862,7 +18884,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-panelbar-bg, .5 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -18902,7 +18924,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 1.5 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -18952,7 +18974,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 2 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #d6d6d6)</code></td>
 </tr>
 <tr>
@@ -18992,7 +19014,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -19002,7 +19024,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-text</code></td>
+    <td><code>k-color(on-secondary)</code></td>
     <td><code>var(--kendo-color-on-secondary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -19032,7 +19054,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-hover ), k-try-tint($kendo-panelbar-item-selected-bg, .95))</code></td>
+    <td><code>k-color(secondary-hover)</code></td>
     <td><code>var(--kendo-color-secondary-hover, #d31857)</code></td>
 </tr>
 <tr>
@@ -19072,7 +19094,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-item-selected-bg, 3))</code></td>
+    <td><code>k-color(secondary-active)</code></td>
     <td><code>var(--kendo-color-secondary-active, #c01650)</code></td>
 </tr>
 <tr>
@@ -19112,7 +19134,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-panelbar-item-selected-hover-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-item-selected-bg, 3.95))</code></td>
+    <td><code>k-color(secondary-active)</code></td>
     <td><code>var(--kendo-color-secondary-active, #c01650)</code></td>
 </tr>
 <tr>
@@ -19842,7 +19864,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -19852,7 +19874,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -19862,7 +19884,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -19872,7 +19894,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-alt-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-pivotgrid-border, 2 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
@@ -19882,7 +19904,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-headers-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 2%, transparent), rgba( $kendo-component-header-bg, .02 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(app-surface) 2%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 2%, transparent)</code></td>
 </tr>
 <tr>
@@ -19892,7 +19914,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-headers-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -19902,7 +19924,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-headers-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -19912,7 +19934,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-total-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-pivotgrid-bg, 1 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -19922,7 +19944,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-total-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -19932,7 +19954,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-total-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -19942,7 +19964,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), color.adjust( $kendo-pivotgrid-bg, $lightness: - 7% ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -19972,7 +19994,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( base-active ) 25%, transparent), rgba( k-contrast-color( $kendo-pivotgrid-bg ), .04 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(base-active) 25%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-base-active, #d6d6d6) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -20142,7 +20164,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-configurator-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -20152,7 +20174,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-configurator-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -20162,7 +20184,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-configurator-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -20182,7 +20204,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-configurator-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -20332,7 +20354,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-calculated-field-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -20342,7 +20364,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-calculated-field-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -20352,7 +20374,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-calculated-field-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -20372,7 +20394,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pivotgrid-calculated-field-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -20492,7 +20514,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-popover-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -20502,7 +20524,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-popover-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -20512,7 +20534,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-popover-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -20792,7 +20814,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-popup-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -20802,7 +20824,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-popup-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -20812,7 +20834,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-popup-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -20922,7 +20944,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-try-tint( $kendo-color-primary, 8 ))</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
     <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
 </tr>
 <tr>
@@ -20932,7 +20954,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-progressbar-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -20962,7 +20984,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-progressbar-value-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -20972,7 +20994,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-progressbar-value-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -21042,7 +21064,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-progressbar-chunk-border</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -21052,7 +21074,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-circular-progressbar-arc-stroke</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -21092,7 +21114,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-prompt-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -21102,7 +21124,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -21112,7 +21134,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -21122,7 +21144,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -21132,7 +21154,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-header-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -21142,7 +21164,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-header-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -21182,7 +21204,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-content-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -21192,7 +21214,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-content-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-header-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -21202,7 +21224,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-content-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -21252,7 +21274,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-suggestion-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -21262,7 +21284,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-suggestion-bg</td>
     <td>String</td>
-    <td><code>$kendo-body-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -21272,7 +21294,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-prompt-suggestion-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -21518,7 +21540,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-radio-checked-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -21758,7 +21780,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-radio-ripple-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -21888,7 +21910,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-rating-icon-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -21898,7 +21920,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-rating-icon-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-darker</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
@@ -21908,7 +21930,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-rating-icon-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-darker</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
@@ -21918,7 +21940,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-rating-icon-focus-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-darker</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
@@ -22008,7 +22030,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -22018,7 +22040,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -22028,7 +22050,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -22038,7 +22060,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-toolbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -22078,7 +22100,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-footer-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -22148,7 +22170,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-event-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -22158,7 +22180,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-event-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-scheduler-event-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -22248,7 +22270,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-event-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-try-tint( $kendo-color-primary, 1 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
@@ -22258,7 +22280,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-event-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-scheduler-event-selected-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -22358,7 +22380,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-nonwork-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-scheduler-bg, .5 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -22398,7 +22420,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-othermonth-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-scheduler-bg, .5 ))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -22488,7 +22510,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-yearview-indicator-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -22498,7 +22520,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-yearview-indicator-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -22538,7 +22560,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-tooltip-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -22548,7 +22570,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scheduler-tooltip-text</td>
     <td>String</td>
-    <td><code>$kendo-base-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -22818,7 +22840,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scrollview-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -22828,7 +22850,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scrollview-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -22838,7 +22860,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scrollview-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -22878,7 +22900,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -22888,7 +22910,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23118,7 +23140,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 20%, transparent), rgba( $kendo-color-inverse, .2 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 20%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 20%, transparent)</code></td>
 </tr>
 <tr>
@@ -23308,7 +23330,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23318,7 +23340,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -23328,7 +23350,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23348,7 +23370,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23368,7 +23390,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-hover-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23388,7 +23410,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-pressed-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23408,7 +23430,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-pressed-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23428,7 +23450,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 11px if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>0 0 0 11px color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>(0 0 0 11px color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 25%, transparent))</code></td>
 </tr>
 <tr>
@@ -23478,7 +23500,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-try-tint( $kendo-color-primary, 8 ))</code></td>
+    <td><code>k-color(primary-subtle)</code></td>
     <td><code>var(--kendo-color-primary-subtle, #d1d5ee)</code></td>
 </tr>
 <tr>
@@ -23488,7 +23510,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-slider-selection-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23728,7 +23750,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-splitter-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -23738,7 +23760,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-splitter-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -23748,7 +23770,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-splitter-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -23818,7 +23840,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-splitbar-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-splitter-bg, 1 ))</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -23828,7 +23850,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-splitbar-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -23838,7 +23860,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-splitbar-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-splitbar-bg, .5 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -23858,7 +23880,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-splitbar-selected-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -23868,7 +23890,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-splitbar-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-contrast</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -23938,7 +23960,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -23948,7 +23970,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -23958,7 +23980,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -23968,7 +23990,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -23978,7 +24000,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -23988,7 +24010,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-header-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -24007,9 +24029,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-spreadsheet-table-header-bg</td>
-    <td>Color</td>
-    <td><code>material-color( gray, 100 )</code></td>
-    <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
+    <td>String</td>
+    <td><code>k-color(surface)</code></td>
+    <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Spreadsheet table headers.</div></div>
@@ -24018,7 +24040,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-table-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -24028,7 +24050,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-table-header-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -24178,7 +24200,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-selection-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -24198,7 +24220,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-selection-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -24208,7 +24230,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-selection-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-color-primary</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #3f51b5))</code></td>
 </tr>
 <tr>
@@ -24218,7 +24240,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-single-selection-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -24258,7 +24280,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-active-cell-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -24268,7 +24290,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-active-cell-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-color-primary</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #3f51b5))</code></td>
 </tr>
 <tr>
@@ -24278,7 +24300,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-auto-fill-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba( $kendo-color-primary, .25 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -24298,7 +24320,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-auto-fill-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -24308,7 +24330,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-auto-fill-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-color-primary</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #3f51b5))</code></td>
 </tr>
 <tr>
@@ -24318,7 +24340,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-auto-fill-punch-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 50%, transparent), rgba( $kendo-component-bg, .5 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(app-surface) 50%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 50%, transparent)</code></td>
 </tr>
 <tr>
@@ -24408,7 +24430,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-resize-handle-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -24418,7 +24440,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-cell-comment-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -24428,7 +24450,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-cell-dirty-border</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -24528,7 +24550,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -24568,7 +24590,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -24618,7 +24640,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-outline-color</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -24628,7 +24650,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-border-color</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -24638,7 +24660,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -24678,7 +24700,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-spreadsheet-drawing-anchor-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( secondary ) 25%, transparent), rgba( $kendo-selected-bg, .25 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(secondary) 25%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-secondary, #e51a5f) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -24878,7 +24900,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -24978,7 +25000,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -24988,7 +25010,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -24998,7 +25020,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -25008,7 +25030,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-stepper-indicator-bg ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -25048,7 +25070,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), if($kendo-is-dark-theme, $light-disabled-text, $dark-disabled-text ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 32%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 32%, transparent)</code></td>
 </tr>
 <tr>
@@ -25068,7 +25090,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-done-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -25078,7 +25100,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-done-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-stepper-indicator-done-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -25098,7 +25120,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-done-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-stepper-indicator-done-bg ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #3a4ba7)</code></td>
 </tr>
 <tr>
@@ -25128,7 +25150,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 60%, transparent), color.mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 60%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 60%, transparent)</code></td>
 </tr>
 <tr>
@@ -25138,7 +25160,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-stepper-indicator-done-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -25258,7 +25280,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-label-success-text</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #37b400)</code></td>
 </tr>
 <tr>
@@ -25268,7 +25290,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-label-error-text</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -25288,7 +25310,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-label-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), map.get( $theme, disabled-text ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 32%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 32%, transparent)</code></td>
 </tr>
 <tr>
@@ -25298,7 +25320,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-stepper-optional-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -25502,7 +25524,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-off-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 38%, transparent), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .38 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 38%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 38%, transparent)</code></td>
 </tr>
 <tr>
@@ -25672,7 +25694,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white ))</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -25752,7 +25774,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 44%, transparent), rgba( $kendo-color-primary, .54 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 44%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 44%, transparent)</code></td>
 </tr>
 <tr>
@@ -25922,7 +25944,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-on-thumb-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -26121,7 +26143,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -26131,7 +26153,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -26141,7 +26163,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -26161,7 +26183,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -26281,7 +26303,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .07 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -26351,7 +26373,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 12%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .04 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 12%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 12%, transparent)</code></td>
 </tr>
 <tr>
@@ -26581,7 +26603,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -26591,7 +26613,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -26721,7 +26743,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-item-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -26751,7 +26773,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-item-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -26761,7 +26783,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-item-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-body-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -26801,7 +26823,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-body-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -26871,7 +26893,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-item-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), map.get( $theme, disabled-text ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 32%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 32%, transparent)</code></td>
 </tr>
 <tr>
@@ -26931,7 +26953,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-indicator-color</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -27001,7 +27023,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-content-focus-border</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -27011,7 +27033,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tabstrip-scroll-overlay</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), rgba( $kendo-color-white, 0)), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -27310,7 +27332,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-column-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -27360,7 +27382,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-column-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-base-border, 2.5 ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
@@ -27420,7 +27442,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-column-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -27500,7 +27522,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-pane-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -27510,7 +27532,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-pane-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -27520,7 +27542,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-pane-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -27560,7 +27582,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-pane-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -27670,7 +27692,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-card-border</td>
     <td>String</td>
-    <td><code>$kendo-base-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -27700,7 +27722,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-card-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-taskboard-card-border, 10% ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
@@ -27710,7 +27732,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-card-focus-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-taskboard-card-border, 9% ))</code></td>
+    <td><code>k-color(border-alt)</code></td>
     <td><code>var(--kendo-color-border-alt, rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
@@ -27729,9 +27751,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-taskboard-card-selected-border</td>
-    <td>Color</td>
-    <td><code>$kendo-color-primary-lighter</code></td>
-    <td><span class="color-preview" style="background-color: #7986cb"></span><code>#7986cb</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(primary) 60%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 60%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of the selected TaskBoard Card.</div></div>
@@ -27750,7 +27772,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-card-header-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -27760,7 +27782,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-card-header-focus-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-darker</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
@@ -27770,7 +27792,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-card-header-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-color-primary-darker</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #354498)</code></td>
 </tr>
 <tr>
@@ -27810,7 +27832,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-taskboard-drag-placeholder-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -27850,7 +27872,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tile-layout-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light))</code></td>
+    <td><code>k-color(surface)</code></td>
     <td><code>var(--kendo-color-surface, #f5f5f5)</code></td>
 </tr>
 <tr>
@@ -27920,7 +27942,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tile-layout-hint-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -28100,7 +28122,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 9%, transparent), k-true-mix(#000000, $kendo-body-bg, 8%))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 9%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 9%, transparent)</code></td>
 </tr>
 <tr>
@@ -28110,7 +28132,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 32%, transparent), k-true-mix($kendo-button-text, $kendo-body-bg, 65%))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 32%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 32%, transparent)</code></td>
 </tr>
 <tr>
@@ -28120,7 +28142,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-timeline-track-arrow-disabled-border</td>
     <td>Color</td>
-    <td><code>if($kendo-enable-color-system, transparent, k-true-mix($kendo-button-border, $kendo-body-bg, 65%))</code></td>
+    <td><code>transparent</code></td>
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
@@ -28200,7 +28222,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), #e0e0e0)</code></td>
+    <td><code>k-color(base-subtle)</code></td>
     <td><code>var(--kendo-color-base-subtle, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -28310,7 +28332,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-timeline-flag-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -28320,7 +28342,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-timeline-flag-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-timeline-flag-bg ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -28450,7 +28472,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-timeline-circle-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #3f51b5)</code></td>
 </tr>
 <tr>
@@ -28730,7 +28752,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -28740,7 +28762,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -28750,7 +28772,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -28780,7 +28802,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-scroll-overlay</td>
     <td>List</td>
-    <td><code>$kendo-toolbar-bg, if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>$kendo-toolbar-bg, color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-surface-alt, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -28840,7 +28862,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-outline-scroll-overlay</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -28880,7 +28902,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-flat-shadow</td>
     <td>List</td>
-    <td><code>0 2px 0 -1px $kendo-component-border</code></td>
+    <td><code>0 2px 0 -1px k-color(border)</code></td>
     <td><code>(0 2px 0 -1px var(--kendo-color-border, rgba(0, 0, 0, 0.12)))</code></td>
 </tr>
 <tr>
@@ -28900,7 +28922,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-toolbar-flat-scroll-overlay</td>
     <td>List</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white), if($kendo-enable-color-system, color-mix(in srgb, k-color( app-surface ) 0%, transparent), rgba( $kendo-color-white, 0))</code></td>
+    <td><code>k-color(app-surface), color-mix(in srgb, k-color(app-surface) 0%, transparent)</code></td>
     <td><code>(var(--kendo-color-app-surface, #ffffff), color-mix(in srgb, var(--kendo-color-app-surface, #ffffff) 0%, transparent))</code></td>
 </tr>
 <tr>
@@ -29128,9 +29150,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-tooltip-bg</td>
-    <td>Color</td>
-    <td><code>material-color( gray, 700, .9 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9)"></span><code>rgba(97, 97, 97, 0.9)</code></td>
+    <td>String</td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 70%, transparent 30%)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 70%, transparent 30%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default background of the Tooltip.</div></div>
@@ -29138,9 +29160,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-tooltip-text</td>
-    <td>Color</td>
-    <td><code>get-base-contrast( gray, 700 )</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td>String</td>
+    <td><code>k-color(app-surface)</code></td>
+    <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default text color of the Tooltip.</div></div>
@@ -29148,9 +29170,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-tooltip-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-tooltip-bg</code></td>
-    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9)"></span><code>rgba(97, 97, 97, 0.9)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 70%, transparent 30%)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border color of the Tooltip.</div></div>
@@ -29169,7 +29191,18 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tooltip-theme-colors</td>
     <td>Map</td>
-    <td><code>$kendo-theme-colors</code></td>
+    <td><code>(
+    "primary": k-color(primary),
+    "secondary": k-color(secondary),
+    "tertiary": k-color(tertiary),
+    "info": k-color(info),
+    "success": k-color(success),
+    "warning": k-color(warning),
+    "error": k-color(error),
+    "dark": k-color(dark),
+    "light": k-color(light),
+    "inverse": if($kendo-is-dark-theme, k-color(light), k-color(dark))
+)</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>secondary: var(--kendo-color-secondary, #e51a5f)</li><li>tertiary: var(--kendo-color-tertiary, #00695c)</li><li>info: var(--kendo-color-info, #0058e9)</li><li>success: var(--kendo-color-success, #37b400)</li><li>warning: var(--kendo-color-warning, #ffc000)</li><li>error: var(--kendo-color-error, #f31700)</li><li>dark: var(--kendo-color-dark, #424242)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>inverse: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>
 <tr>
@@ -29554,7 +29587,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-treeview-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -29574,7 +29607,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 7%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 7%, transparent)</code></td>
 </tr>
 <tr>
@@ -29624,7 +29657,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-treeview-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>
@@ -30623,7 +30656,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-code-bg</td>
     <td>String</td>
-    <td><code>$kendo-base-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -30633,7 +30666,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-code-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -30643,7 +30676,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-code-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -31102,7 +31135,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -31112,7 +31145,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -31122,7 +31155,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -31152,7 +31185,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-dropzone-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -31162,7 +31195,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-header-bg</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -31182,7 +31215,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-dropzone-hover-bg</td>
     <td>String</td>
-    <td><code>$kendo-hover-bg</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #ebebeb)</code></td>
 </tr>
 <tr>
@@ -31192,7 +31225,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-status-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -31272,7 +31305,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-icon-color</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -31292,7 +31325,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-progress-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-info</code></td>
+    <td><code>k-color(info)</code></td>
     <td><code>var(--kendo-color-info, #0058e9)</code></td>
 </tr>
 <tr>
@@ -31302,7 +31335,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-success-text</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #37b400)</code></td>
 </tr>
 <tr>
@@ -31312,7 +31345,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-success-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-success</code></td>
+    <td><code>k-color(success)</code></td>
     <td><code>var(--kendo-color-success, #37b400)</code></td>
 </tr>
 <tr>
@@ -31322,7 +31355,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-error-text</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -31332,7 +31365,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-upload-error-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -31562,7 +31595,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-window-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -31572,7 +31605,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-window-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -31582,7 +31615,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-window-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -31667,9 +31700,9 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-window-theme-colors</td>
     <td>Map</td>
     <td><code>(
-    "primary": map.get($kendo-theme-colors, "primary"),
-    "light": map.get($kendo-theme-colors, "light"),
-    "dark": map.get($kendo-theme-colors, "dark")
+    "primary": k-color(primary),
+    "light": k-color(light),
+    "dark": k-color(dark)
 )</code></td>
     <td><ul><li>primary: var(--kendo-color-primary, #3f51b5)</li><li>light: var(--kendo-color-light, #f5f5f5)</li><li>dark: var(--kendo-color-dark, #424242)</li></ul></td>
 </tr>

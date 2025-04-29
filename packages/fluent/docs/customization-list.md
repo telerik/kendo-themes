@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-icon-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -328,8 +328,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, transparent )</code></td>
-    <td><code>var(--kendo-component-bg, transparent)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the List component.</div></div>
@@ -338,8 +338,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-text</td>
     <td>String</td>
-    <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td><code>var(--kendo-component-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List component.</div></div>
@@ -348,8 +348,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td><code>var(--kendo-component-border, inherit)</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the List component.</div></div>
@@ -358,7 +358,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-header-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -398,7 +398,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -408,7 +408,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -418,7 +418,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 ))</code></td>
+    <td><code>k-color(base-hover)</code></td>
     <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
@@ -428,7 +428,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -438,7 +438,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-focus-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -448,7 +448,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-focus-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -458,7 +458,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>inset 0 0 0 1px k-color(base-emphasis)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-base-emphasis, #605e5c))</code></td>
 </tr>
 <tr>
@@ -468,7 +468,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-40 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
@@ -478,7 +478,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -488,7 +488,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-50 ))</code></td>
+    <td><code>k-color(base-active)</code></td>
     <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
@@ -498,7 +498,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-hover-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-disabled-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -518,7 +518,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-disabled-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 46%, transparent), k-get-theme-color-var( neutral-90 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -528,7 +528,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-group-item-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
+    <td><code>k-color(app-surface)</code></td>
     <td><code>var(--kendo-color-app-surface, #ffffff)</code></td>
 </tr>
 <tr>
@@ -538,7 +538,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-group-item-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>
@@ -568,7 +568,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-option-label-text</td>
     <td>String</td>
-    <td><code>$kendo-subtle-text</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #605e5c)</code></td>
 </tr>
 <tr>
@@ -578,7 +578,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-option-label-disabled-text</td>
     <td>String</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
@@ -588,7 +588,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-no-data-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>

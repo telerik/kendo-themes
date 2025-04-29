@@ -335,7 +335,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -355,7 +355,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 7%, transparent), rgba( $kendo-treeview-text, .07 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 7%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 7%, transparent)</code></td>
 </tr>
 <tr>
@@ -405,7 +405,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-selected-text</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(secondary)</code></td>
     <td><code>var(--kendo-color-secondary, #e51a5f)</code></td>
 </tr>
 <tr>

@@ -80,8 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-text</td>
     <td>String</td>
-    <td><code>var( --kendo-body-text, inherit )</code></td>
-    <td><code>var(--kendo-body-text, inherit)</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Menu.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-menu-item-text</td>
     <td>String</td>
     <td><code>$kendo-menu-text</code></td>
-    <td><code>var(--kendo-body-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of Menu item.</div></div>
@@ -180,8 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-hover-text</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-text, inherit )</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>k-color(on-base)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered Menu item.</div></div>
@@ -190,8 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-hover-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-hover-bg, initial )</code></td>
-    <td><code>var(--kendo-hover-bg, initial)</code></td>
+    <td><code>k-color(base-hover)</code></td>
+    <td><code>var(--kendo-color-base-hover, #f3f2f1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered Menu item.</div></div>
@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-menu-item-active-text</td>
     <td>String</td>
     <td><code>$kendo-menu-item-hover-text</code></td>
-    <td><code>var(--kendo-hover-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-base, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active Menu item.</div></div>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-active-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-selected-bg, initial )</code></td>
-    <td><code>var(--kendo-selected-bg, initial)</code></td>
+    <td><code>k-color(base-active)</code></td>
+    <td><code>var(--kendo-color-base-active, #edebe9)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active Menu item.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-menu-item-focus-text</td>
     <td>String</td>
     <td><code>$kendo-menu-item-text</code></td>
-    <td><code>var(--kendo-body-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focused Menu item.</div></div>
@@ -240,8 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-focus-outline</td>
     <td>String</td>
-    <td><code>var( --kendo-focus-outline, none )</code></td>
-    <td><code>var(--kendo-focus-outline, none)</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
+    <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of focused Menu item.</div></div>
@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-item-disabled-text</td>
     <td>String</td>
-    <td><code>var( --kendo-disabled-text, initial )</code></td>
-    <td><code>var(--kendo-disabled-text, initial)</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 46%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #323130) 46%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled Menu item.</div></div>
@@ -380,8 +380,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, initial )</code></td>
-    <td><code>var(--kendo-component-bg, initial)</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Menu popup.</div></div>
@@ -559,7 +559,7 @@ The following table lists the available variables for customization.
     <td>$kendo-menu-popup-item-focus-text</td>
     <td>String</td>
     <td><code>$kendo-menu-item-text</code></td>
-    <td><code>var(--kendo-body-text, inherit)</code></td>
+    <td><code>var(--kendo-color-on-app-surface, #323130)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focused Menu items.</div></div>
@@ -578,7 +578,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-focus-outline</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #605e5c)</code></td>
 </tr>
 <tr>
@@ -628,8 +628,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-scroll-button-bg</td>
     <td>String</td>
-    <td><code>var( --kendo-component-bg, $kendo-component-bg )</code></td>
-    <td><code>var(--kendo-component-bg, var(--kendo-color-surface-alt, #ffffff))</code></td>
+    <td><code>k-color(surface-alt)</code></td>
+    <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of Menu scroll buttons.</div></div>
@@ -638,8 +638,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-scroll-button-border</td>
     <td>String</td>
-    <td><code>var( --kendo-component-border, $kendo-component-border )</code></td>
-    <td><code>var(--kendo-component-border, color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent))</code></td>
+    <td><code>color-mix(in srgb, k-color(border) 16%, transparent)</code></td>
+    <td><code>color-mix(in srgb, var(--kendo-color-border, #8a8886) 16%, transparent)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of Menu scroll buttons.</div></div>
@@ -668,7 +668,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-icon-color</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #0078d4)</code></td>
 </tr>
 <tr>

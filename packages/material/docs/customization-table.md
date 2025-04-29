@@ -129,7 +129,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #212121)</code></td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ))</code></td>
+    <td><code>k-color(subtle)</code></td>
     <td><code>var(--kendo-color-subtle, #757575)</code></td>
 </tr>
 <tr>
@@ -289,7 +289,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( on-app-surface ) 8%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .07 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(on-app-surface) 8%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-on-app-surface, #212121) 8%, transparent)</code></td>
 </tr>
 <tr>
@@ -359,7 +359,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 12%, transparent), rgba( k-contrast-color( $kendo-table-bg ), .04 ))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 12%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #3f51b5) 12%, transparent)</code></td>
 </tr>
 <tr>

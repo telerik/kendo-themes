@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-text</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-color-primary ))</code></td>
+    <td><code>k-color(on-primary)</code></td>
     <td><code>var(--kendo-color-on-primary, #ffffff)</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary ), k-try-shade( $kendo-color-primary, 2 ))</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-hover-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-color-primary, 1 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-hover-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-slider-draghandle-hover-bg, 2 ))</code></td>
+    <td><code>k-color(primary-hover)</code></td>
     <td><code>var(--kendo-color-primary-hover, #e05100)</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-pressed-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-try-shade( $kendo-color-primary, 2 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #cc4a00)</code></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-pressed-border</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-try-shade( $kendo-slider-draghandle-pressed-bg, 2 ))</code></td>
+    <td><code>k-color(primary-active)</code></td>
     <td><code>var(--kendo-color-primary-active, #cc4a00)</code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 4px 0 if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 75%, transparent), rgba( $kendo-slider-draghandle-border, .75 ))</code></td>
+    <td><code>0 0 4px 0 color-mix(in srgb, k-color(primary) 75%, transparent)</code></td>
     <td><code>(0 0 4px 0 color-mix(in srgb, var(--kendo-color-primary, #f35800) 75%, transparent))</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-component-bg, 1 ))</code></td>
+    <td><code>k-color(base-emphasis)</code></td>
     <td><code>var(--kendo-color-base-emphasis, #cacaca)</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-selection-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #f35800)</code></td>
 </tr>
 <tr>

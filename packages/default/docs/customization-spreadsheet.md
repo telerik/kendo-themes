@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-text</td>
     <td>String</td>
-    <td><code>$kendo-component-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-header-bg</td>
     <td>String</td>
-    <td><code>$kendo-component-header-bg</code></td>
+    <td><code>k-color(surface)!default</code></td>
     <td><code>var(--kendo-color-surface, #fafafa)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-header-text</td>
     <td>String</td>
-    <td><code>$kendo-component-header-text</code></td>
+    <td><code>k-color(on-app-surface)</code></td>
     <td><code>var(--kendo-color-on-app-surface, #3d3d3d)</code></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-header-border</td>
     <td>String</td>
-    <td><code>$kendo-component-header-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-header-gradient</td>
     <td>Null</td>
-    <td><code>$kendo-component-header-gradient</code></td>
+    <td><code>null</code></td>
     <td><code>null</code></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-selection-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-selection-border</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-selection-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #ff6358))</code></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-single-selection-bg</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-partial-selection-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-active-cell-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #ff6358))</code></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-auto-fill-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 25%, transparent)</code></td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-auto-fill-border</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-auto-fill-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 1px $kendo-selected-bg</code></td>
+    <td><code>inset 0 0 0 1px k-color(primary)</code></td>
     <td><code>(inset 0 0 0 1px var(--kendo-color-primary, #ff6358))</code></td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-resize-handle-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -550,7 +550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-cell-comment-border</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-cell-dirty-border</td>
     <td>String</td>
-    <td><code>$kendo-color-error</code></td>
+    <td><code>k-color(error)</code></td>
     <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-preview-border</td>
     <td>String</td>
-    <td><code>$kendo-component-border</code></td>
+    <td><code>k-color(border)</code></td>
     <td><code>var(--kendo-color-border, rgba(0, 0, 0, 0.08))</code></td>
 </tr>
 <tr>
@@ -700,7 +700,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td>String</td>
-    <td><code>$kendo-component-bg</code></td>
+    <td><code>k-color(surface-alt)</code></td>
     <td><code>var(--kendo-color-surface-alt, #ffffff)</code></td>
 </tr>
 <tr>
@@ -750,7 +750,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-outline-color</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -760,7 +760,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-border-color</td>
     <td>String</td>
-    <td><code>$kendo-selected-bg</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -770,7 +770,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-bg</td>
     <td>String</td>
-    <td><code>$kendo-color-primary</code></td>
+    <td><code>k-color(primary)</code></td>
     <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
@@ -810,7 +810,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-spreadsheet-drawing-anchor-bg</td>
     <td>String</td>
-    <td><code>if($kendo-enable-color-system, color-mix(in srgb, k-color( primary ) 25%, transparent), rgba($kendo-selected-bg, .25))</code></td>
+    <td><code>color-mix(in srgb, k-color(primary) 25%, transparent)</code></td>
     <td><code>color-mix(in srgb, var(--kendo-color-primary, #ff6358) 25%, transparent)</code></td>
 </tr>
 <tr>
